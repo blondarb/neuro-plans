@@ -1,5 +1,5 @@
 // Firebase Comments Widget for Neuro Plans
-// Anonymous comments with upvote/downvote
+// Anonymous comments with upvote/downvote and inline section comments
 
 (async function() {
   console.log('[Comments] Initializing Firebase comments widget...');
@@ -38,6 +38,9 @@
     const db = getFirestore(app);
     console.log('[Comments] Firebase initialized');
 
+    // Store all comments for the page
+    let allComments = [];
+
     // Get current page identifier
     function getPageId() {
       const path = window.location.pathname
@@ -46,7 +49,6 @@
         .replace(/\.md$/, '')
         .replace(/^_/, '')
         .replace(/_$/, '') || 'home';
-      console.log('[Comments] Page ID:', path);
       return path;
     }
 
@@ -86,9 +88,31 @@
     }
 
     // Create comment HTML
-    function createCommentHTML(comment, id) {
+    function createCommentHTML(comment, id, compact = false) {
       const voteHistory = getVoteHistory();
       const userVote = voteHistory[id];
+
+      if (compact) {
+        return `
+          <div class="comment-item compact" data-id="${id}">
+            <div class="comment-header">
+              <span class="comment-author">${escapeHtml(comment.author || 'Anonymous')}</span>
+              <span class="comment-date">${formatDate(comment.createdAt)}</span>
+            </div>
+            <div class="comment-body">${escapeHtml(comment.body)}</div>
+            <div class="comment-actions">
+              <button class="vote-btn upvote ${userVote === 'up' ? 'voted' : ''}" data-id="${id}" data-vote="up">
+                <span>👍</span>
+                <span class="vote-count">${comment.upvotes || 0}</span>
+              </button>
+              <button class="vote-btn downvote ${userVote === 'down' ? 'voted' : ''}" data-id="${id}" data-vote="down">
+                <span>👎</span>
+                <span class="vote-count">${comment.downvotes || 0}</span>
+              </button>
+            </div>
+          </div>
+        `;
+      }
 
       return `
         <div class="comment-item" data-id="${id}">
@@ -112,23 +136,18 @@
       `;
     }
 
-    // Load comments for current page
-    async function loadComments() {
+    // Get comments for a specific section
+    function getCommentsForSection(sectionName) {
+      return allComments.filter(c => c.section === sectionName);
+    }
+
+    // Load all comments for current page
+    async function loadAllComments() {
       const pageId = getPageId();
-      const commentList = document.getElementById('comment-list');
-      const commentCount = document.getElementById('comment-count');
-
-      if (!commentList) {
-        console.log('[Comments] No comment-list element found');
-        return;
-      }
-
-      commentList.innerHTML = '<div class="loading-spinner"></div>';
 
       try {
-        console.log('[Comments] Loading comments for page:', pageId);
+        console.log('[Comments] Loading all comments for page:', pageId);
 
-        // Simple query without orderBy to avoid index requirement
         const q = query(
           collection(db, 'comments'),
           where('pageId', '==', pageId)
@@ -137,44 +156,303 @@
         const snapshot = await getDocs(q);
         console.log('[Comments] Found', snapshot.size, 'comments');
 
-        if (snapshot.empty) {
-          commentList.innerHTML = '<div class="no-comments">No comments yet. Be the first to share your feedback!</div>';
-          if (commentCount) commentCount.textContent = '0';
-          return;
-        }
-
-        // Sort comments client-side
-        const comments = [];
+        allComments = [];
         snapshot.forEach(docSnap => {
-          comments.push({ id: docSnap.id, ...docSnap.data() });
+          allComments.push({ id: docSnap.id, ...docSnap.data() });
         });
 
         // Sort by createdAt descending (newest first)
-        comments.sort((a, b) => {
+        allComments.sort((a, b) => {
           const aTime = a.createdAt?.toMillis?.() || 0;
           const bTime = b.createdAt?.toMillis?.() || 0;
           return bTime - aTime;
         });
 
-        let html = '';
-        comments.forEach(comment => {
-          html += createCommentHTML(comment, comment.id);
-        });
-
-        commentList.innerHTML = html;
-        if (commentCount) commentCount.textContent = comments.length.toString();
-
-        // Attach vote handlers
-        attachVoteHandlers();
+        return allComments;
 
       } catch (error) {
         console.error('[Comments] Error loading comments:', error);
-        commentList.innerHTML = `<div class="no-comments">Unable to load comments: ${error.message}</div>`;
+        return [];
       }
     }
 
-    // Submit a new comment
-    async function submitComment(event) {
+    // Update comment counts on all section badges
+    function updateSectionBadges() {
+      document.querySelectorAll('.inline-comment-btn').forEach(btn => {
+        const section = btn.dataset.section;
+        const count = getCommentsForSection(section).length;
+        const badge = btn.querySelector('.comment-badge');
+        if (badge) {
+          badge.textContent = count;
+          badge.style.display = count > 0 ? 'inline-flex' : 'none';
+        }
+      });
+
+      // Update main comment count
+      const commentCount = document.getElementById('comment-count');
+      if (commentCount) {
+        commentCount.textContent = `(${allComments.length})`;
+      }
+    }
+
+    // Render comments in the main list
+    function renderMainCommentList() {
+      const commentList = document.getElementById('comment-list');
+      if (!commentList) return;
+
+      if (allComments.length === 0) {
+        commentList.innerHTML = '<div class="no-comments">No comments yet. Be the first to share your feedback!</div>';
+        return;
+      }
+
+      let html = '';
+      allComments.forEach(comment => {
+        html += createCommentHTML(comment, comment.id);
+      });
+
+      commentList.innerHTML = html;
+      attachVoteHandlers();
+    }
+
+    // Create inline comment popup for a section
+    function showInlineCommentPopup(sectionName, anchorElement) {
+      // Remove any existing popup
+      closeAllPopups();
+
+      const sectionComments = getCommentsForSection(sectionName);
+
+      const popup = document.createElement('div');
+      popup.className = 'inline-comment-popup';
+      popup.innerHTML = `
+        <div class="popup-header">
+          <span class="popup-title">💬 Comments: ${escapeHtml(sectionName)}</span>
+          <button class="popup-close" title="Close">&times;</button>
+        </div>
+        <div class="popup-comments">
+          ${sectionComments.length === 0
+            ? '<div class="no-section-comments">No comments on this section yet.</div>'
+            : sectionComments.map(c => createCommentHTML(c, c.id, true)).join('')
+          }
+        </div>
+        <form class="popup-form">
+          <input type="text" class="popup-author" placeholder="Your name (optional)" maxlength="50">
+          <textarea class="popup-body" placeholder="Add your feedback on this section..." required maxlength="1000"></textarea>
+          <div class="popup-actions">
+            <button type="submit" class="popup-submit">Submit</button>
+            <button type="button" class="popup-cancel">Cancel</button>
+          </div>
+        </form>
+      `;
+
+      // Position popup near the anchor
+      document.body.appendChild(popup);
+
+      const rect = anchorElement.getBoundingClientRect();
+      const popupRect = popup.getBoundingClientRect();
+
+      // Position below the heading, aligned left
+      let top = rect.bottom + window.scrollY + 8;
+      let left = rect.left + window.scrollX;
+
+      // Keep within viewport
+      if (left + popupRect.width > window.innerWidth - 20) {
+        left = window.innerWidth - popupRect.width - 20;
+      }
+      if (left < 20) left = 20;
+
+      popup.style.top = `${top}px`;
+      popup.style.left = `${left}px`;
+
+      // Attach event handlers
+      popup.querySelector('.popup-close').addEventListener('click', closeAllPopups);
+      popup.querySelector('.popup-cancel').addEventListener('click', closeAllPopups);
+
+      popup.querySelector('.popup-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const author = popup.querySelector('.popup-author').value.trim() || 'Anonymous';
+        const body = popup.querySelector('.popup-body').value.trim();
+
+        if (!body) return;
+
+        const submitBtn = popup.querySelector('.popup-submit');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting...';
+
+        try {
+          await addDoc(collection(db, 'comments'), {
+            pageId: getPageId(),
+            author: author,
+            body: body,
+            section: sectionName,
+            upvotes: 0,
+            downvotes: 0,
+            createdAt: serverTimestamp()
+          });
+
+          // Reload comments and update UI
+          await loadAllComments();
+          updateSectionBadges();
+          renderMainCommentList();
+          closeAllPopups();
+
+          // Show toast
+          showToast('Comment added successfully!');
+
+        } catch (error) {
+          console.error('[Comments] Error submitting:', error);
+          alert('Failed to submit comment: ' + error.message);
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Submit';
+        }
+      });
+
+      // Attach vote handlers in popup
+      popup.querySelectorAll('.vote-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const commentId = btn.dataset.id;
+          const voteType = btn.dataset.vote;
+          handleVote(commentId, voteType);
+        });
+      });
+
+      // Close on click outside
+      setTimeout(() => {
+        document.addEventListener('click', handleOutsideClick);
+      }, 100);
+    }
+
+    function handleOutsideClick(e) {
+      const popup = document.querySelector('.inline-comment-popup');
+      const btn = e.target.closest('.inline-comment-btn');
+      if (popup && !popup.contains(e.target) && !btn) {
+        closeAllPopups();
+      }
+    }
+
+    function closeAllPopups() {
+      document.querySelectorAll('.inline-comment-popup').forEach(p => p.remove());
+      document.removeEventListener('click', handleOutsideClick);
+    }
+
+    function showToast(message) {
+      const toast = document.createElement('div');
+      toast.className = 'comment-toast';
+      toast.textContent = message;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.classList.add('show'), 10);
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+      }, 2500);
+    }
+
+    // Handle voting
+    async function handleVote(commentId, voteType) {
+      const voteHistory = getVoteHistory();
+      const previousVote = voteHistory[commentId];
+
+      if (previousVote === voteType) return;
+
+      const commentRef = doc(db, 'comments', commentId);
+
+      try {
+        const updates = {};
+
+        if (voteType === 'up') {
+          updates.upvotes = increment(1);
+        } else {
+          updates.downvotes = increment(1);
+        }
+
+        if (previousVote === 'up') {
+          updates.upvotes = increment(-1);
+        } else if (previousVote === 'down') {
+          updates.downvotes = increment(-1);
+        }
+
+        await updateDoc(commentRef, updates);
+        saveVote(commentId, voteType);
+
+        // Update all instances of this comment in the UI
+        document.querySelectorAll(`.comment-item[data-id="${commentId}"]`).forEach(commentEl => {
+          const upBtn = commentEl.querySelector('.vote-btn.upvote');
+          const downBtn = commentEl.querySelector('.vote-btn.downvote');
+
+          upBtn.classList.toggle('voted', voteType === 'up');
+          downBtn.classList.toggle('voted', voteType === 'down');
+
+          const upCount = upBtn.querySelector('.vote-count');
+          const downCount = downBtn.querySelector('.vote-count');
+
+          if (voteType === 'up') {
+            upCount.textContent = parseInt(upCount.textContent) + 1;
+            if (previousVote === 'down') {
+              downCount.textContent = parseInt(downCount.textContent) - 1;
+            }
+          } else {
+            downCount.textContent = parseInt(downCount.textContent) + 1;
+            if (previousVote === 'up') {
+              upCount.textContent = parseInt(upCount.textContent) - 1;
+            }
+          }
+        });
+
+      } catch (error) {
+        console.error('[Comments] Error voting:', error);
+      }
+    }
+
+    // Attach vote handlers to buttons
+    function attachVoteHandlers() {
+      document.querySelectorAll('.comment-list .vote-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const commentId = btn.dataset.id;
+          const voteType = btn.dataset.vote;
+          handleVote(commentId, voteType);
+        });
+      });
+    }
+
+    // Add inline comment buttons to section headings
+    function addInlineCommentButtons() {
+      const headings = document.querySelectorAll('h2, h3');
+
+      headings.forEach(heading => {
+        const text = heading.textContent.trim();
+
+        // Skip comment-related headings
+        if (text.includes('Comments') || text.includes('Feedback') || text.includes('Change Log')) {
+          return;
+        }
+
+        // Skip if already has a button
+        if (heading.querySelector('.inline-comment-btn')) {
+          return;
+        }
+
+        const btn = document.createElement('button');
+        btn.className = 'inline-comment-btn';
+        btn.dataset.section = text;
+        btn.title = `Comment on "${text}"`;
+        btn.innerHTML = `
+          <span class="comment-icon">💬</span>
+          <span class="comment-badge" style="display: none;">0</span>
+        `;
+
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          showInlineCommentPopup(text, heading);
+        });
+
+        heading.appendChild(btn);
+      });
+
+      console.log('[Comments] Added inline comment buttons to', headings.length, 'headings');
+    }
+
+    // Submit from main form
+    async function submitMainComment(event) {
       event.preventDefault();
 
       const form = event.target;
@@ -192,7 +470,6 @@
       submitBtn.textContent = 'Submitting...';
 
       try {
-        console.log('[Comments] Submitting comment...');
         await addDoc(collection(db, 'comments'), {
           pageId: getPageId(),
           author: author,
@@ -203,13 +480,11 @@
           createdAt: serverTimestamp()
         });
 
-        console.log('[Comments] Comment submitted successfully');
-
-        // Reset form
         form.reset();
-
-        // Reload comments
-        await loadComments();
+        await loadAllComments();
+        updateSectionBadges();
+        renderMainCommentList();
+        showToast('Comment added successfully!');
 
       } catch (error) {
         console.error('[Comments] Error submitting comment:', error);
@@ -220,87 +495,14 @@
       }
     }
 
-    // Handle voting
-    async function handleVote(commentId, voteType) {
-      const voteHistory = getVoteHistory();
-      const previousVote = voteHistory[commentId];
-
-      // If clicking same vote, do nothing (can't un-vote)
-      if (previousVote === voteType) return;
-
-      const commentRef = doc(db, 'comments', commentId);
-
-      try {
-        const updates = {};
-
-        // Add new vote
-        if (voteType === 'up') {
-          updates.upvotes = increment(1);
-        } else {
-          updates.downvotes = increment(1);
-        }
-
-        // Remove previous vote if exists
-        if (previousVote === 'up') {
-          updates.upvotes = increment(-1);
-        } else if (previousVote === 'down') {
-          updates.downvotes = increment(-1);
-        }
-
-        await updateDoc(commentRef, updates);
-
-        // Save vote locally
-        saveVote(commentId, voteType);
-
-        // Update UI
-        const commentEl = document.querySelector(`.comment-item[data-id="${commentId}"]`);
-        if (commentEl) {
-          const upBtn = commentEl.querySelector('.vote-btn.upvote');
-          const downBtn = commentEl.querySelector('.vote-btn.downvote');
-
-          // Update button states
-          upBtn.classList.toggle('voted', voteType === 'up');
-          downBtn.classList.toggle('voted', voteType === 'down');
-
-          // Update counts
-          const upCount = upBtn.querySelector('.vote-count');
-          const downCount = downBtn.querySelector('.vote-count');
-
-          if (voteType === 'up') {
-            upCount.textContent = parseInt(upCount.textContent) + 1;
-            if (previousVote === 'down') {
-              downCount.textContent = parseInt(downCount.textContent) - 1;
-            }
-          } else {
-            downCount.textContent = parseInt(downCount.textContent) + 1;
-            if (previousVote === 'up') {
-              upCount.textContent = parseInt(upCount.textContent) - 1;
-            }
-          }
-        }
-
-      } catch (error) {
-        console.error('[Comments] Error voting:', error);
-      }
-    }
-
-    // Attach vote handlers to buttons
-    function attachVoteHandlers() {
-      document.querySelectorAll('.vote-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const commentId = btn.dataset.id;
-          const voteType = btn.dataset.vote;
-          handleVote(commentId, voteType);
-        });
-      });
-    }
-
     // Get sections from current page for dropdown
     function getSections() {
       const sections = [];
       document.querySelectorAll('h2, h3').forEach(heading => {
-        const text = heading.textContent.trim();
-        if (text && !text.includes('Comments') && !text.includes('Feedback')) {
+        const text = heading.textContent.trim()
+          .replace(/💬\s*\d*$/, '') // Remove any trailing comment icons
+          .trim();
+        if (text && !text.includes('Comments') && !text.includes('Feedback') && !text.includes('Change Log')) {
           sections.push(text);
         }
       });
@@ -308,14 +510,23 @@
     }
 
     // Initialize comment widget
-    function initComments() {
+    async function initComments() {
+      // Check if we're on a page with comments container
       const container = document.getElementById('comments-container');
+
+      // Add inline buttons to all section headings regardless of container
+      addInlineCommentButtons();
+
+      // Load all comments
+      await loadAllComments();
+      updateSectionBadges();
+
       if (!container) {
-        console.log('[Comments] No comments-container element found on this page');
+        console.log('[Comments] No comments-container, inline comments only');
         return;
       }
 
-      console.log('[Comments] Found comments-container, initializing widget');
+      console.log('[Comments] Found comments-container, initializing full widget');
 
       const sections = getSections();
       const sectionOptions = sections.length > 0
@@ -324,7 +535,8 @@
 
       container.innerHTML = `
         <div class="comment-section">
-          <h3>💬 Feedback & Comments <span id="comment-count" style="font-weight: normal; color: #64748b;">(0)</span></h3>
+          <h3>💬 All Feedback & Comments <span id="comment-count" style="font-weight: normal; color: #64748b;">(${allComments.length})</span></h3>
+          <p class="comment-tip">Tip: Click the 💬 icon next to any section heading to comment directly on that section.</p>
 
           <form class="comment-form" id="comment-form">
             <input type="text" id="comment-author" placeholder="Your name (optional)" maxlength="50">
@@ -344,10 +556,10 @@
       `;
 
       // Attach form handler
-      document.getElementById('comment-form').addEventListener('submit', submitComment);
+      document.getElementById('comment-form').addEventListener('submit', submitMainComment);
 
-      // Load existing comments
-      loadComments();
+      // Render comments
+      renderMainCommentList();
     }
 
     // Initialize when DOM is ready
@@ -359,15 +571,16 @@
 
     // Export for use in other scripts
     window.NeuroComments = {
-      loadComments,
-      submitComment,
+      loadAllComments,
+      updateSectionBadges,
+      renderMainCommentList,
+      showInlineCommentPopup,
       handleVote
     };
 
   } catch (error) {
     console.error('[Comments] Fatal error initializing comments:', error);
 
-    // Show error in the container if it exists
     const container = document.getElementById('comments-container');
     if (container) {
       container.innerHTML = `
