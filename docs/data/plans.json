@@ -1,0 +1,1705 @@
+{
+  "Status Epilepticus": {
+    "version": "1.2",
+    "icd10": "G40.901, G41.0, G41.1, G41.2",
+    "scope": "Management of convulsive and non-convulsive status epilepticus in adults",
+    "sections": {
+      "Laboratory Workup": {
+        "Core Labs": [
+          {
+            "item": "Point-of-care glucose",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Hypoglycemia is immediately reversible cause"
+          },
+          {
+            "item": "CBC with differential",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Infection screen, baseline before ASMs"
+          },
+          {
+            "item": "CMP (BMP + LFTs)",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Electrolyte abnormalities, renal/hepatic function for ASM dosing"
+          },
+          {
+            "item": "Magnesium",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Hypomagnesemia lowers seizure threshold"
+          },
+          {
+            "item": "Calcium (ionized if available)",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Hypocalcemia can cause seizures"
+          },
+          {
+            "item": "Phosphorus",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Hypophosphatemia lowers seizure threshold"
+          },
+          {
+            "item": "Blood gas (ABG or VBG)",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Acidosis, oxygenation, ventilation status"
+          },
+          {
+            "item": "Lactate",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Elevated in prolonged seizure; marker of severity"
+          },
+          {
+            "item": "Urine drug screen",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Illicit drugs, withdrawal states"
+          },
+          {
+            "item": "ASM levels (if on therapy)",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Subtherapeutic levels as precipitant"
+          },
+          {
+            "item": "Pregnancy test (women of childbearing age)",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Eclampsia; affects ASM choice"
+          }
+        ],
+        "Extended Workup": [
+          {
+            "item": "Ammonia",
+            "ED": "URGENT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Hepatic encephalopathy, valproate toxicity"
+          },
+          {
+            "item": "TSH",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "-",
+            "ICU": "URGENT",
+            "rationale": "Thyroid storm/myxedema"
+          },
+          {
+            "item": "Troponin",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Cardiac stress from prolonged seizure"
+          },
+          {
+            "item": "CPK/CK",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Rhabdomyolysis from prolonged convulsions"
+          }
+        ]
+      },
+      "Imaging & Studies": {
+        "Essential": [
+          {
+            "item": "CT head without contrast",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Mass, hemorrhage, stroke, herniation"
+          },
+          {
+            "item": "Continuous EEG (cEEG) monitoring",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Seizure burden, treatment response, NCSE detection"
+          },
+          {
+            "item": "Chest X-ray",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Aspiration risk, ETT placement confirmation"
+          }
+        ],
+        "Extended": [
+          {
+            "item": "MRI brain with and without contrast",
+            "ED": "-",
+            "HOSP": "URGENT",
+            "OPD": "-",
+            "ICU": "URGENT",
+            "rationale": "Encephalitis, stroke, tumor, cortical injury"
+          },
+          {
+            "item": "CT angiography head/neck",
+            "ED": "URGENT",
+            "HOSP": "URGENT",
+            "OPD": "-",
+            "ICU": "URGENT",
+            "rationale": "If stroke suspected - large vessel occlusion"
+          }
+        ]
+      },
+      "Treatment": {
+        "Stabilization": [
+          {
+            "item": "Airway positioning/management",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "Head-tilt chin-lift, oral airway, prepare for intubation",
+            "rationale": "Protect airway"
+          },
+          {
+            "item": "Supplemental oxygen",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "Non-rebreather 15 L/min",
+            "rationale": "Maintain O2 sat >94%"
+          },
+          {
+            "item": "IV access (two large-bore)",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "18G or larger x2",
+            "rationale": "Medication administration"
+          },
+          {
+            "item": "Dextrose 50% IV",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "50 mL IV push (25g) if glucose <70 or unknown",
+            "rationale": "Correct hypoglycemia"
+          },
+          {
+            "item": "Thiamine IV",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "100-500 mg IV BEFORE or WITH glucose",
+            "rationale": "Prevent Wernicke encephalopathy"
+          }
+        ],
+        "First-Line (Benzodiazepines)": [
+          {
+            "item": "Lorazepam IV",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "4 mg IV push over 2 min; may repeat x1 in 5 min; max 8 mg total",
+            "rationale": "First-line if IV access available"
+          },
+          {
+            "item": "Midazolam IM",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "10 mg IM single dose (if no IV access)",
+            "rationale": "First-line if no IV access"
+          },
+          {
+            "item": "Midazolam intranasal",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "5 mg per nostril (10 mg total)",
+            "rationale": "Alternative if no IV/IM access"
+          }
+        ],
+        "Second-Line ASMs": [
+          {
+            "item": "Levetiracetam IV",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "50-60 mg/kg IV (max 4500 mg) over 10-15 min",
+            "rationale": "Preferred - fewest drug interactions, no cardiac monitoring"
+          },
+          {
+            "item": "Fosphenytoin IV",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "20 mg PE/kg IV at 150 mg PE/min",
+            "rationale": "Alternative - requires cardiac monitoring"
+          },
+          {
+            "item": "Valproate IV",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "40 mg/kg IV (max 3000 mg) over 10 min",
+            "rationale": "Alternative - AVOID in pregnancy"
+          },
+          {
+            "item": "Lacosamide IV",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "400 mg IV over 15 min",
+            "rationale": "Alternative - check ECG for PR interval"
+          }
+        ],
+        "Refractory SE (Anesthetics)": [
+          {
+            "item": "Midazolam infusion",
+            "ED": "URGENT",
+            "HOSP": "-",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "Load 0.2 mg/kg bolus; then 0.1 mg/kg/hr, titrate to burst suppression; max 2 mg/kg/hr",
+            "rationale": "First-line anesthetic for RSE"
+          },
+          {
+            "item": "Ketamine infusion",
+            "ED": "URGENT",
+            "HOSP": "-",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "Load 1-2 mg/kg bolus; then 1-5 mg/kg/hr",
+            "rationale": "Consider EARLY - more effective when given early"
+          },
+          {
+            "item": "Propofol infusion",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "Load 1-2 mg/kg; then 20-200 mcg/kg/min; limit <48h at high dose",
+            "rationale": "Alternative - monitor for propofol infusion syndrome"
+          }
+        ]
+      },
+      "Referrals & Consults": {
+        "Consults": [
+          {
+            "item": "Neurology/Epilepsy STAT consult",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "All cases of SE"
+          },
+          {
+            "item": "Neurocritical care consult",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "RSE/SRSE, need for anesthetic infusions"
+          },
+          {
+            "item": "ICU admission",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "-",
+            "rationale": "All SE requiring second-line agents"
+          },
+          {
+            "item": "Infectious disease consult",
+            "ED": "-",
+            "HOSP": "URGENT",
+            "OPD": "-",
+            "ICU": "URGENT",
+            "rationale": "If CNS infection suspected"
+          }
+        ]
+      }
+    }
+  },
+  "New Onset Seizure": {
+    "version": "1.1",
+    "icd10": "R56.9, G40.909",
+    "scope": "Initial evaluation and management of first-time unprovoked seizure",
+    "sections": {
+      "Laboratory Workup": {
+        "Core Labs": [
+          {
+            "item": "Point-of-care glucose",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Hypoglycemia is immediately reversible"
+          },
+          {
+            "item": "CBC with differential",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "ROUTINE",
+            "ICU": "STAT",
+            "rationale": "Infection screen, baseline before ASMs"
+          },
+          {
+            "item": "CMP (BMP + LFTs)",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "ROUTINE",
+            "ICU": "STAT",
+            "rationale": "Electrolyte abnormalities, renal/hepatic function"
+          },
+          {
+            "item": "Magnesium",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "ROUTINE",
+            "ICU": "STAT",
+            "rationale": "Hypomagnesemia lowers seizure threshold"
+          },
+          {
+            "item": "Urine drug screen",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "ROUTINE",
+            "ICU": "STAT",
+            "rationale": "Illicit drugs and withdrawal states"
+          },
+          {
+            "item": "Blood alcohol level",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Alcohol intoxication or withdrawal"
+          },
+          {
+            "item": "Prolactin level",
+            "ED": "STAT",
+            "HOSP": "-",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Elevated if drawn within 10-20 min; helps distinguish from PNES"
+          }
+        ],
+        "Extended Workup": [
+          {
+            "item": "TSH",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Thyroid dysfunction can affect seizure threshold"
+          },
+          {
+            "item": "Ammonia",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "-",
+            "ICU": "URGENT",
+            "rationale": "Hepatic encephalopathy, urea cycle disorders"
+          },
+          {
+            "item": "B12 level",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Deficiency associated with seizures"
+          }
+        ]
+      },
+      "Imaging & Studies": {
+        "Essential": [
+          {
+            "item": "CT head without contrast",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Mass, hemorrhage, stroke, calcification"
+          },
+          {
+            "item": "MRI brain with epilepsy protocol",
+            "ED": "URGENT",
+            "HOSP": "URGENT",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Tumor, mesial temporal sclerosis, cortical dysplasia"
+          },
+          {
+            "item": "EEG (routine)",
+            "ED": "URGENT",
+            "HOSP": "URGENT",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Epileptiform discharges, focal slowing"
+          }
+        ]
+      },
+      "Treatment": {
+        "Acute Management": [
+          {
+            "item": "Lorazepam IV/IM (if actively seizing)",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "2-4 mg IV/IM; may repeat x1",
+            "rationale": "Abort active seizure"
+          }
+        ],
+        "Maintenance ASMs": [
+          {
+            "item": "Levetiracetam",
+            "ED": "ROUTINE",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE",
+            "dosing": "500 mg PO BID; titrate to 1000-1500 mg BID",
+            "rationale": "First-line for most patients; broad spectrum"
+          },
+          {
+            "item": "Lamotrigine",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "25 mg PO daily x2 weeks, then titrate slowly; target 200-400 mg/day",
+            "rationale": "Alternative; requires slow titration (SJS risk)"
+          },
+          {
+            "item": "Lacosamide",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "50 mg PO BID; titrate to 100-200 mg BID",
+            "rationale": "Alternative; check ECG"
+          }
+        ]
+      },
+      "Referrals & Consults": {
+        "Consults": [
+          {
+            "item": "Neurology consult",
+            "ED": "URGENT",
+            "HOSP": "URGENT",
+            "OPD": "-",
+            "ICU": "URGENT",
+            "rationale": "All first seizures"
+          },
+          {
+            "item": "Epilepsy clinic follow-up",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Within 2-4 weeks"
+          }
+        ]
+      },
+      "Patient Instructions": {
+        "Safety": [
+          {
+            "item": "Driving restrictions",
+            "ED": "ROUTINE",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "No driving until cleared (state laws vary: 3-12 months)"
+          },
+          {
+            "item": "Seizure precautions",
+            "ED": "ROUTINE",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Avoid heights, swimming alone, operating machinery"
+          },
+          {
+            "item": "Medication adherence",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Take ASM consistently; do not stop abruptly"
+          }
+        ]
+      }
+    }
+  },
+  "MS - New Diagnosis": {
+    "version": "2.2",
+    "icd10": "G35",
+    "scope": "Initial diagnostic workup and management of suspected or newly confirmed MS",
+    "sections": {
+      "Laboratory Workup": {
+        "Core Labs": [
+          {
+            "item": "CBC with differential",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "ROUTINE",
+            "ICU": "STAT",
+            "rationale": "Infection screen, baseline before steroids"
+          },
+          {
+            "item": "CMP",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "ROUTINE",
+            "ICU": "STAT",
+            "rationale": "Metabolic screen, renal function"
+          },
+          {
+            "item": "TSH",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Thyroid disease mimics MS"
+          },
+          {
+            "item": "Vitamin B12",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "B12 deficiency causes myelopathy"
+          },
+          {
+            "item": "ESR",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Inflammatory/vasculitis screen"
+          },
+          {
+            "item": "CRP",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Inflammatory marker"
+          },
+          {
+            "item": "Urinalysis",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "ROUTINE",
+            "ICU": "STAT",
+            "rationale": "UTI as symptom trigger"
+          },
+          {
+            "item": "Blood glucose",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "ROUTINE",
+            "ICU": "STAT",
+            "rationale": "Pre-steroid baseline"
+          }
+        ],
+        "Extended Workup": [
+          {
+            "item": "Vitamin D (25-OH)",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Low levels associated with MS risk/activity"
+          },
+          {
+            "item": "ANA",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Lupus/connective tissue disease screen"
+          },
+          {
+            "item": "Mayo CDS1 Panel (AQP4-IgG + MOG-IgG)",
+            "ED": "URGENT",
+            "HOSP": "URGENT",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Combined NMO/MOGAD screen; cell-based assay is gold standard"
+          },
+          {
+            "item": "HIV",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "HIV-associated myelopathy/encephalopathy"
+          },
+          {
+            "item": "RPR/VDRL",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Neurosyphilis mimics MS"
+          },
+          {
+            "item": "Lyme serology",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Endemic areas; neuroborreliosis"
+          }
+        ]
+      },
+      "Imaging & Studies": {
+        "Essential": [
+          {
+            "item": "MRI brain with and without contrast (MS protocol)",
+            "ED": "URGENT",
+            "HOSP": "URGENT",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Periventricular, juxtacortical, infratentorial lesions; gadolinium enhancement = active"
+          },
+          {
+            "item": "MRI C-spine with and without contrast",
+            "ED": "URGENT",
+            "HOSP": "URGENT",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Cord lesions (short segment, peripheral, dorsal)"
+          },
+          {
+            "item": "MRI T-spine with and without contrast",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Cord lesions"
+          }
+        ],
+        "Extended": [
+          {
+            "item": "Visual evoked potentials (VEP)",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Prolonged P100 latency (subclinical optic nerve involvement)"
+          },
+          {
+            "item": "OCT (Optical coherence tomography)",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "RNFL thinning (prior optic neuritis)"
+          },
+          {
+            "item": "MRI orbits with contrast",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "If optic neuritis suspected"
+          }
+        ],
+        "Lumbar Puncture": [
+          {
+            "item": "Opening pressure",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Rule out elevated ICP"
+          },
+          {
+            "item": "Cell count (tubes 1 and 4)",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Inflammation, rule out infection"
+          },
+          {
+            "item": "Protein",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Elevated in inflammation"
+          },
+          {
+            "item": "Oligoclonal bands (CSF AND serum)",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Intrathecal IgG synthesis; ≥2 CSF-specific bands"
+          },
+          {
+            "item": "IgG index",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Intrathecal antibody synthesis; >0.7 = elevated"
+          }
+        ]
+      },
+      "Treatment": {
+        "Acute/Emergent": [
+          {
+            "item": "Methylprednisolone IV",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "1000 mg IV daily × 3-5 days",
+            "rationale": "First-line for acute attacks"
+          },
+          {
+            "item": "Omeprazole",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "20-40 mg daily during steroids",
+            "rationale": "GI prophylaxis"
+          },
+          {
+            "item": "Insulin sliding scale",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "Per protocol if glucose >180 mg/dL",
+            "rationale": "Steroid-induced hyperglycemia"
+          }
+        ],
+        "Second-Line (Steroid-Refractory)": [
+          {
+            "item": "Plasmapheresis (PLEX)",
+            "ED": "-",
+            "HOSP": "URGENT",
+            "OPD": "-",
+            "ICU": "URGENT",
+            "dosing": "5-7 exchanges over 10-14 days",
+            "rationale": "For steroid-refractory attacks"
+          },
+          {
+            "item": "IVIG",
+            "ED": "-",
+            "HOSP": "URGENT",
+            "OPD": "-",
+            "ICU": "URGENT",
+            "dosing": "0.4 g/kg/day × 5 days",
+            "rationale": "Alternative if PLEX contraindicated"
+          }
+        ],
+        "Symptomatic - Spasticity": [
+          {
+            "item": "Baclofen",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE",
+            "dosing": "Start 5 mg TID; increase by 5 mg/dose every 3 days; max 80 mg/day",
+            "rationale": "First-line for spasticity; do NOT stop abruptly"
+          },
+          {
+            "item": "Tizanidine",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE",
+            "dosing": "Start 2 mg qHS or TID; max 36 mg/day",
+            "rationale": "Alternative; monitor LFTs"
+          }
+        ],
+        "Symptomatic - Neuropathic Pain": [
+          {
+            "item": "Gabapentin",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE",
+            "dosing": "Start 300 mg qHS; target 900-1800 mg TID; max 3600 mg/day",
+            "rationale": "First-line for neuropathic pain"
+          },
+          {
+            "item": "Pregabalin",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE",
+            "dosing": "Start 75 mg BID; max 300 mg BID",
+            "rationale": "Alternative; adjust for renal function"
+          },
+          {
+            "item": "Duloxetine",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "Start 30 mg daily × 1 week; increase to 60 mg; max 120 mg/day",
+            "rationale": "First-line SNRI for neuropathic pain"
+          }
+        ],
+        "Symptomatic - Fatigue": [
+          {
+            "item": "Amantadine",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "100 mg every morning; may add 100 mg early afternoon; max 200 mg/day",
+            "rationale": "First-line for MS fatigue"
+          },
+          {
+            "item": "Modafinil",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "Start 100 mg every morning; max 400 mg/day",
+            "rationale": "Alternative; Schedule IV controlled"
+          }
+        ],
+        "Symptomatic - Walking": [
+          {
+            "item": "Dalfampridine",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "10 mg q12h exactly 12 hours apart; max 20 mg/day",
+            "rationale": "For walking impairment; avoid if seizure history"
+          }
+        ]
+      },
+      "Referrals & Consults": {
+        "Consults": [
+          {
+            "item": "MS specialist/Neuroimmunology referral",
+            "ED": "URGENT",
+            "HOSP": "URGENT",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "All new MS diagnoses for DMT discussion"
+          },
+          {
+            "item": "Neuro-ophthalmology referral",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Optic neuritis, visual symptoms, OCT baseline"
+          },
+          {
+            "item": "Physical therapy consult",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE",
+            "rationale": "Gait dysfunction, lower extremity weakness, falls"
+          },
+          {
+            "item": "Occupational therapy consult",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Upper extremity dysfunction, ADL impairment"
+          },
+          {
+            "item": "Speech therapy for swallow evaluation",
+            "ED": "-",
+            "HOSP": "URGENT",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Brainstem involvement, dysphagia, dysarthria"
+          },
+          {
+            "item": "Urology referral",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Urgency, frequency, retention, recurrent UTI"
+          },
+          {
+            "item": "Psychiatry/Psychology referral",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Depression, anxiety, adjustment to diagnosis"
+          }
+        ]
+      },
+      "Patient Instructions": {
+        "Safety & Education": [
+          {
+            "item": "Return precautions: rapid vision loss, sudden weakness, difficulty breathing, urinary retention",
+            "ED": "ROUTINE",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Know when to seek emergency care"
+          },
+          {
+            "item": "Avoid driving until cleared by neurology",
+            "ED": "ROUTINE",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Safety during acute symptoms"
+          },
+          {
+            "item": "Heat may temporarily worsen symptoms (Uhthoff phenomenon)",
+            "ED": "ROUTINE",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "This is not a new attack"
+          },
+          {
+            "item": "Expect temporary steroid side effects: insomnia, mood changes, increased appetite",
+            "ED": "ROUTINE",
+            "HOSP": "ROUTINE",
+            "OPD": "-",
+            "ICU": "-",
+            "rationale": "Set expectations"
+          },
+          {
+            "item": "Do not stop baclofen or tizanidine abruptly",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Risk of withdrawal/rebound spasticity"
+          },
+          {
+            "item": "Vaccinations before DMT initiation",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Especially live vaccines"
+          }
+        ],
+        "Lifestyle": [
+          {
+            "item": "Smoking cessation",
+            "ED": "ROUTINE",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Smoking accelerates MS progression and disability"
+          },
+          {
+            "item": "Vitamin D supplementation 2000-5000 IU daily",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Target serum 25-OH vitamin D >40 ng/mL"
+          },
+          {
+            "item": "Regular aerobic exercise 150 min/week",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Improves fatigue, mood, function"
+          },
+          {
+            "item": "Avoid excessive heat exposure",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Hot tubs, saunas, prolonged direct sun"
+          }
+        ]
+      }
+    }
+  },
+  "Peripheral Neuropathy": {
+    "version": "1.2",
+    "icd10": "G62.9, G60.9, G62.0, G62.1, G63",
+    "scope": "Initial diagnostic workup and symptomatic management of suspected or newly diagnosed peripheral neuropathy",
+    "sections": {
+      "Laboratory Workup": {
+        "Core Labs": [
+          {
+            "item": "CBC with differential",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "ROUTINE",
+            "ICU": "STAT",
+            "rationale": "Anemia (B12), infection, malignancy screen"
+          },
+          {
+            "item": "CMP (BMP + LFTs)",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "ROUTINE",
+            "ICU": "STAT",
+            "rationale": "Renal dysfunction (uremic neuropathy), hepatic disease"
+          },
+          {
+            "item": "Fasting glucose",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "ROUTINE",
+            "ICU": "STAT",
+            "rationale": "Diabetes screening"
+          },
+          {
+            "item": "HbA1c",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Diabetes/prediabetes (most common cause)"
+          },
+          {
+            "item": "Vitamin B12",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "B12 deficiency neuropathy"
+          },
+          {
+            "item": "Methylmalonic acid (MMA)",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "If B12 borderline (200-400); more sensitive"
+          },
+          {
+            "item": "TSH",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Hypothyroidism causes neuropathy"
+          },
+          {
+            "item": "ESR",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Inflammatory/vasculitic process"
+          },
+          {
+            "item": "CRP",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Inflammatory marker"
+          }
+        ],
+        "Extended Workup": [
+          {
+            "item": "Oral glucose tolerance test (2-hour)",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Detects IGT missed by FBG/HbA1c; high yield in idiopathic neuropathy"
+          },
+          {
+            "item": "SPEP with immunofixation",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Monoclonal gammopathy (MGUS, myeloma)"
+          },
+          {
+            "item": "Free light chains (kappa/lambda)",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "AL amyloidosis, light chain deposition"
+          },
+          {
+            "item": "Vitamin B1 (thiamine)",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Alcoholism, malnutrition, bariatric surgery"
+          },
+          {
+            "item": "Vitamin B6 (pyridoxine)",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Deficiency OR toxicity (>200 mg/day) causes neuropathy"
+          },
+          {
+            "item": "HIV antibody",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "HIV-associated distal sensory polyneuropathy"
+          },
+          {
+            "item": "Hepatitis B and C",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "HBV-associated PAN, HCV cryoglobulinemia"
+          },
+          {
+            "item": "ANA",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Connective tissue disease screen"
+          },
+          {
+            "item": "Anti-SSA/SSB (Ro/La)",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Sjögren syndrome (small fiber)"
+          }
+        ],
+        "Specialized": [
+          {
+            "item": "Anti-ganglioside antibodies (GM1, GD1a, GD1b, GQ1b)",
+            "ED": "-",
+            "HOSP": "EXT",
+            "OPD": "EXT",
+            "ICU": "-",
+            "rationale": "If motor-predominant or acute onset (GBS variants)"
+          },
+          {
+            "item": "Paraneoplastic panel",
+            "ED": "-",
+            "HOSP": "EXT",
+            "OPD": "EXT",
+            "ICU": "-",
+            "rationale": "Subacute sensory neuronopathy, weight loss, smoking"
+          },
+          {
+            "item": "Genetic testing (CMT panel, TTR gene)",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "EXT",
+            "ICU": "-",
+            "rationale": "Hereditary neuropathy, familial amyloidosis"
+          },
+          {
+            "item": "Skin punch biopsy for IENFD",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "EXT",
+            "ICU": "-",
+            "rationale": "Small fiber neuropathy confirmation"
+          }
+        ]
+      },
+      "Imaging & Studies": {
+        "Essential": [
+          {
+            "item": "NCS/EMG",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Pattern determines axonal vs demyelinating, distribution, severity"
+          }
+        ],
+        "Extended": [
+          {
+            "item": "MRI spine (cervical/lumbar) with contrast",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "If radiculopathy, myelopathy, or polyradiculopathy suspected"
+          },
+          {
+            "item": "MRI lumbar plexus with contrast",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Lumbosacral plexopathy, asymmetric proximal weakness"
+          },
+          {
+            "item": "Autonomic function testing",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Autonomic symptoms (orthostasis, anhidrosis, GI dysmotility)"
+          },
+          {
+            "item": "Chest X-ray",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Lung cancer (paraneoplastic), sarcoidosis"
+          }
+        ],
+        "Lumbar Puncture": [
+          {
+            "item": "Opening pressure",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Rule out elevated ICP"
+          },
+          {
+            "item": "Cell count",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Inflammation, infection"
+          },
+          {
+            "item": "Protein",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Albuminocytologic dissociation in GBS/CIDP"
+          },
+          {
+            "item": "Glucose",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "Infection, carcinomatous meningitis"
+          },
+          {
+            "item": "Cytology",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Leptomeningeal carcinomatosis"
+          }
+        ]
+      },
+      "Treatment": {
+        "Acute/Emergent": [
+          {
+            "item": "Thiamine IV (if alcoholic or malnourished)",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "500 mg IV TID × 3 days, then 250 mg IV daily × 3-5 days",
+            "rationale": "Correct thiamine deficiency"
+          },
+          {
+            "item": "Vitamin B12 IM (if deficient)",
+            "ED": "URGENT",
+            "HOSP": "URGENT",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "dosing": "1000 mcg IM daily × 7 days, then weekly × 4 weeks, then monthly",
+            "rationale": "B12 replacement"
+          },
+          {
+            "item": "Glucose control optimization",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "ROUTINE",
+            "ICU": "STAT",
+            "dosing": "Per diabetes protocol; target HbA1c <7%",
+            "rationale": "Most important modifiable factor"
+          }
+        ],
+        "Neuropathic Pain - First-Line": [
+          {
+            "item": "Gabapentin",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE",
+            "dosing": "Start 300 mg qHS; target 900-1800 mg TID; max 3600 mg/day; adjust for renal function",
+            "rationale": "First-line for neuropathic pain"
+          },
+          {
+            "item": "Pregabalin",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE",
+            "dosing": "Start 75 mg BID; max 300 mg BID; adjust for renal function",
+            "rationale": "First-line; Schedule V controlled"
+          },
+          {
+            "item": "Duloxetine",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "Start 30 mg daily × 1 week; increase to 60 mg; max 120 mg/day",
+            "rationale": "First-line SNRI, especially for diabetic neuropathy"
+          }
+        ],
+        "Neuropathic Pain - Second-Line": [
+          {
+            "item": "Amitriptyline",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "Start 10-25 mg qHS; max 150 mg qHS; ECG if >100 mg/day",
+            "rationale": "Second-line; avoid in elderly (anticholinergic)"
+          },
+          {
+            "item": "Nortriptyline",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "Start 10-25 mg qHS; max 150 mg qHS",
+            "rationale": "Fewer anticholinergic effects than amitriptyline"
+          },
+          {
+            "item": "Venlafaxine XR",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "Start 37.5-75 mg daily; max 225 mg daily",
+            "rationale": "Alternative SNRI"
+          },
+          {
+            "item": "Carbamazepine",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "Start 100 mg BID; max 1200 mg/day; HLA-B*1502 screening",
+            "rationale": "For trigeminal neuralgia, lancinating pain"
+          }
+        ],
+        "Topical Treatments": [
+          {
+            "item": "Lidocaine 5% patch",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE",
+            "dosing": "Apply 1-3 patches for 12 hours on, 12 hours off",
+            "rationale": "Localized neuropathic pain"
+          },
+          {
+            "item": "Capsaicin cream 0.025-0.075%",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "Apply TID-QID; takes 2-4 weeks for effect",
+            "rationale": "Initial burning decreases with use"
+          },
+          {
+            "item": "Capsaicin 8% patch (Qutenza)",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "Applied by healthcare provider for 30-60 minutes; repeat every 3 months",
+            "rationale": "For refractory localized pain"
+          }
+        ],
+        "Autonomic Dysfunction": [
+          {
+            "item": "Midodrine",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE",
+            "dosing": "Start 2.5 mg TID; max 10 mg TID; avoid within 4h of bedtime",
+            "rationale": "Orthostatic hypotension"
+          },
+          {
+            "item": "Fludrocortisone",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE",
+            "dosing": "Start 0.1 mg daily; max 0.3 mg daily",
+            "rationale": "Orthostatic hypotension; monitor K+"
+          },
+          {
+            "item": "Droxidopa (Northera)",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "Start 100 mg TID; max 600 mg TID",
+            "rationale": "Neurogenic orthostatic hypotension"
+          }
+        ],
+        "Disease-Specific": [
+          {
+            "item": "IVIG",
+            "ED": "-",
+            "HOSP": "URGENT",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "dosing": "2 g/kg over 2-5 days (induction); maintenance 0.4-1 g/kg every 2-4 weeks",
+            "rationale": "CIDP, MMN, GBS"
+          },
+          {
+            "item": "Plasma exchange (PLEX)",
+            "ED": "-",
+            "HOSP": "URGENT",
+            "OPD": "-",
+            "ICU": "URGENT",
+            "dosing": "5-7 exchanges over 10-14 days",
+            "rationale": "CIDP, GBS"
+          },
+          {
+            "item": "Prednisone",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "dosing": "1 mg/kg/day (max 80 mg) × 4-6 weeks; taper over 3-6 months",
+            "rationale": "CIDP, vasculitic neuropathy"
+          }
+        ]
+      },
+      "Referrals & Consults": {
+        "Consults": [
+          {
+            "item": "Neuromuscular neurology referral",
+            "ED": "URGENT",
+            "HOSP": "URGENT",
+            "OPD": "ROUTINE",
+            "ICU": "URGENT",
+            "rationale": "All new neuropathy diagnoses for etiology workup"
+          },
+          {
+            "item": "EMG referral",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "NCS/EMG for characterization"
+          },
+          {
+            "item": "Physical therapy consult",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE",
+            "rationale": "Balance and gait, falls prevention"
+          },
+          {
+            "item": "Podiatry referral",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Diabetic neuropathy, foot care, orthotics"
+          },
+          {
+            "item": "Endocrinology referral",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Diabetes management optimization"
+          },
+          {
+            "item": "Pain management referral",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Refractory neuropathic pain, spinal cord stimulator evaluation"
+          },
+          {
+            "item": "Hematology/Oncology referral",
+            "ED": "-",
+            "HOSP": "URGENT",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Paraproteinemic neuropathy, suspected malignancy, amyloidosis"
+          },
+          {
+            "item": "Genetic counseling referral",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Suspected hereditary neuropathy (CMT, hATTR)"
+          }
+        ]
+      },
+      "Patient Instructions": {
+        "Safety & Foot Care": [
+          {
+            "item": "Return precautions: sudden severe weakness, difficulty breathing, rapid progression",
+            "ED": "ROUTINE",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Know when to seek emergency care"
+          },
+          {
+            "item": "Inspect feet daily for cuts, blisters, or wounds",
+            "ED": "ROUTINE",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Early wound detection"
+          },
+          {
+            "item": "Wear well-fitting, protective footwear at all times",
+            "ED": "ROUTINE",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Never barefoot"
+          },
+          {
+            "item": "Test bath water temperature before entering",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Avoid burns due to impaired sensation"
+          },
+          {
+            "item": "Use night lights and handrails to prevent falls",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Fall prevention"
+          },
+          {
+            "item": "Do not stop gabapentin/pregabalin abruptly",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Taper under medical guidance"
+          }
+        ],
+        "Lifestyle": [
+          {
+            "item": "Strict glycemic control (HbA1c <7%)",
+            "ED": "ROUTINE",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Most important modifiable factor"
+          },
+          {
+            "item": "Complete alcohol cessation",
+            "ED": "ROUTINE",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Alcoholic neuropathy is reversible if early"
+          },
+          {
+            "item": "Smoking cessation",
+            "ED": "ROUTINE",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Microvascular disease worsens neuropathy"
+          },
+          {
+            "item": "Regular exercise as tolerated",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Improves circulation, glycemic control, reduces pain"
+          },
+          {
+            "item": "B12 supplementation if on metformin",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Metformin depletes B12"
+          },
+          {
+            "item": "Avoid excessive vitamin B6 (>100 mg/day)",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "B6 toxicity causes neuropathy"
+          }
+        ]
+      }
+    }
+  }
+}

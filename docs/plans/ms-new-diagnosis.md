@@ -418,3 +418,7 @@ SECTION B: REFERENCE (Expand as Needed)
 
 **v1.0 (January 13, 2026)**
 - Initial creation
+
+---
+
+<div id="comments-container"></div>

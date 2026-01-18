@@ -744,3 +744,7 @@ DAY 7+: ONGOING MANAGEMENT
 
 **v1.0 (January 15, 2026)**
 - Initial template creation
+
+---
+
+<div id="comments-container"></div>

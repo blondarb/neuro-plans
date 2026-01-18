@@ -373,3 +373,7 @@ SECTION B: REFERENCE (Expand as Needed)
 - Extensive differential diagnosis including syncope, PNES, cardiac causes
 - Complete patient instructions including driving, safety, seizure first aid
 - Setting-appropriate coverage across ED, HOSP, OPD, ICU
+
+---
+
+<div id="comments-container"></div>

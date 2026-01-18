@@ -407,3 +407,7 @@ SECTION B: REFERENCE (Expand as Needed)
 - Comprehensive referral list including podiatry, pain management, genetic counseling
 - Detailed patient instructions for foot care and fall prevention
 - Lifestyle modifications emphasizing glycemic control and alcohol cessation
+
+---
+
+<div id="comments-container"></div>
