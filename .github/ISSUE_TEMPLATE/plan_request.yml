@@ -1,0 +1,134 @@
+name: Plan Request
+description: Request a new clinical decision support plan for a neurological diagnosis
+title: "[Plan Request]: "
+labels: ["plan-request", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Request a New Clinical Plan
+
+        Use this form to request a clinical decision support plan for a neurological diagnosis.
+        Plans are evidence-based templates covering workup, treatment, and monitoring.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Diagnosis Category
+      description: Select the category that best fits this diagnosis
+      options:
+        - Seizure & Epilepsy
+        - Stroke & Cerebrovascular
+        - Headache
+        - Demyelinating Diseases
+        - Neuromuscular Disorders
+        - Neuropathy
+        - Movement Disorders
+        - Dementia & Cognitive Disorders
+        - CNS Infections
+        - Neuro-Oncology
+        - Spinal Cord Disorders
+        - Autoimmune & Inflammatory
+        - Functional & Psychiatric
+        - Neurocritical Care
+        - Other / Miscellaneous
+    validations:
+      required: true
+
+  - type: input
+    id: diagnosis
+    attributes:
+      label: Diagnosis Name
+      description: The specific diagnosis or clinical scenario
+      placeholder: e.g., "Guillain-Barré Syndrome" or "Myasthenia Gravis - Exacerbation"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scenario
+    attributes:
+      label: Clinical Scenario
+      description: What clinical context should the plan address?
+      options:
+        - New Diagnosis (full workup + treatment initiation)
+        - Acute/Exacerbation (acute management focus)
+        - Chronic/Maintenance (long-term management)
+        - Refractory/Complex (second-line therapies)
+        - General Evaluation (broad DDx approach)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: settings
+    attributes:
+      label: Care Settings
+      description: Which settings should this plan cover? (Select all that apply)
+      options:
+        - label: Emergency Department (ED)
+        - label: Hospital/Inpatient (HOSP)
+        - label: Outpatient/Clinic (OPD)
+        - label: Intensive Care Unit (ICU)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Suggested Priority
+      description: How urgently is this plan needed?
+      options:
+        - HIGH - Common/critical diagnosis, frequently encountered
+        - MEDIUM - Important but less common
+        - LOW - Rare or subspecialty-focused
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Clinical Rationale
+      description: Why is this plan needed? Any specific gaps or use cases?
+      placeholder: |
+        - Frequently encountered in teleneurology consults
+        - Current practice varies significantly
+        - Time-sensitive diagnosis with specific protocol needs
+    validations:
+      required: false
+
+  - type: textarea
+    id: key-elements
+    attributes:
+      label: Key Elements to Include
+      description: Any specific tests, treatments, or considerations that should be included?
+      placeholder: |
+        - Specific diagnostic criteria
+        - Must-include medications
+        - Important contraindications
+        - Monitoring requirements
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Reference Guidelines
+      description: Any specific guidelines or references to incorporate?
+      placeholder: |
+        - AAN guidelines
+        - Society recommendations
+        - Key papers
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: acknowledgment
+    attributes:
+      label: Acknowledgment
+      description: Please confirm the following
+      options:
+        - label: I have checked that this plan does not already exist in the repository
+          required: true
+        - label: I understand that plans require physician review before clinical use
+          required: true

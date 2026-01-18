@@ -1,0 +1,117 @@
+---
+title: Style Guide
+---
+
+# Clinical Plan Style Guide
+
+Guidelines for creating and maintaining clinical decision support templates.
+
+## Core Principles
+
+1. **Evidence-Based** - Recommendations should be grounded in current guidelines and literature
+2. **Actionable** - Each item should be a clear, specific action
+3. **Setting-Aware** - Consider applicability across ED, Hospital, Outpatient, and ICU settings
+4. **Safe** - Include contraindications, monitoring requirements, and safety checks
+5. **No PHI** - Never include patient-identifiable information
+
+## Document Structure
+
+All plans follow an 8-section format:
+
+### Section A: Action Items (Primary)
+
+1. **Laboratory Workup** (1A Core, 1B Extended, 1C Specialized)
+2. **Diagnostic Imaging & Studies** (2A Essential, 2B Extended, 2C Specialized)
+3. **Treatment** (3A Acute, 3B Symptomatic, 3C Maintenance, 3D Disease-Modifying)
+4. **Other Recommendations** (4A Referrals, 4B Patient Instructions, 4C Lifestyle)
+
+### Section B: Reference (Supporting)
+
+5. **Differential Diagnosis**
+6. **Monitoring Parameters**
+7. **Disposition Criteria**
+8. **Evidence & References**
+
+## Table Format
+
+Use the multi-column setting-priority format:
+
+### Labs/Studies Table
+
+```markdown
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CBC  | STAT | STAT | ROUTINE | STAT | Infection screen | Normal |
+```
+
+### Treatment Table
+
+```markdown
+| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
+|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+| Drug Name | STAT | STAT | ROUTINE | STAT | 10 mg PO daily | Allergy | LFTs |
+```
+
+## Priority Levels
+
+| Priority | Meaning | When to Use |
+|----------|---------|-------------|
+| STAT | Immediate | Time-critical actions |
+| URGENT | Within hours | Important but not emergent |
+| ROUTINE | Standard timing | Scheduled/non-urgent |
+| EXT | Extended/atypical | Specialized or second-line |
+| - | Not applicable | Setting doesn't apply |
+
+## Writing Guidelines
+
+### Be Specific
+
+- **Good:** "Levetiracetam 500 mg PO BID, titrate to 1500 mg BID over 2 weeks"
+- **Bad:** "Start anti-seizure medication"
+
+### One Drug Per Row
+
+Each medication gets its own table row with complete dosing information.
+
+### Include Contraindications
+
+Always note absolute and relative contraindications.
+
+### Use Plain Language for Patient Instructions
+
+Section 4B should be understandable by patients and families.
+
+## Medication Formatting
+
+- Include: Generic name, route, dose, frequency, titration schedule, maximum dose
+- Include: Contraindications, monitoring requirements
+- Example: "Gabapentin 300 mg PO TID; titrate by 300 mg/day every 3-5 days to 1800-3600 mg/day divided TID | CrCl adjustment required | Monitor sedation, edema"
+
+## Quality Standards
+
+- Target validation score: 90%+ (54/60 across 6 domains)
+- All plans require physician review before clinical use
+- Update plans when new guidelines are published
+
+## Version Control
+
+- Use semantic versioning (v1.0, v1.1, v2.0)
+- Minor changes: +0.1 (typos, clarifications)
+- Major changes: +1.0 (new sections, significant clinical updates)
+- Document all changes in the Change Log section
+
+## YAML Frontmatter
+
+All plan files require frontmatter:
+
+```yaml
+---
+title: "Diagnosis Name"
+description: "Brief description of what the plan covers"
+version: "1.0"
+setting: "ED, HOSP, OPD, ICU"
+tags:
+  - category
+  - subcategory
+---
+```
