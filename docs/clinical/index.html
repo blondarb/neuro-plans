@@ -69,14 +69,50 @@
       text-decoration: none;
     }
 
-    .back-link {
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 16px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+
+    .back-btn:hover {
+      background: var(--primary-dark);
+    }
+
+    .header-divider {
+      color: var(--border);
+    }
+
+    .header-nav {
+      display: flex;
+      gap: 16px;
+    }
+
+    .nav-link {
       color: var(--text-light);
       text-decoration: none;
       font-size: 0.9rem;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: all 0.2s;
     }
 
-    .back-link:hover {
+    .nav-link:hover {
       color: var(--primary);
+      background: var(--bg-secondary);
     }
 
     /* Controls */
@@ -469,8 +505,15 @@
 
   <header class="header">
     <div class="header-content">
-      <a href="../" class="logo">🧠 Neuro Plans</a>
-      <a href="../" class="back-link">← Back to Plans</a>
+      <div class="header-left">
+        <a href="../" class="back-btn">← Home</a>
+        <span class="header-divider">|</span>
+        <span class="logo">🧠 Clinical Plan Builder</span>
+      </div>
+      <nav class="header-nav">
+        <a href="../plans/" class="nav-link">Review Plans</a>
+        <a href="../" class="nav-link">All Resources</a>
+      </nav>
     </div>
   </header>
 

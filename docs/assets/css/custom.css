@@ -342,3 +342,66 @@
   background: #1e293b;
   color: #94a3b8;
 }
+
+/* Navigation Improvements */
+
+/* Highlight the Clinical Tool link in nav */
+.md-nav__link[href*="clinical"] {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: white !important;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin: 4px 0;
+}
+
+.md-nav__link[href*="clinical"]:hover {
+  background: linear-gradient(135deg, #4338ca 0%, #6d28d9 100%);
+}
+
+.md-nav__link[href*="clinical"]::before {
+  content: "🔧 ";
+}
+
+/* Section headers in navigation */
+.md-nav__item--nested > .md-nav__link {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item--nested > .md-nav__link {
+  color: #f1f5f9;
+}
+
+/* Add visual separation between nav sections */
+.md-nav__list > .md-nav__item--nested {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+[data-md-color-scheme="slate"] .md-nav__list > .md-nav__item--nested {
+  border-top-color: #334155;
+}
+
+/* First nav item shouldn't have top border */
+.md-nav__list > .md-nav__item:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+/* Make plan links more readable */
+.md-nav__item .md-nav__link {
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.md-nav__item .md-nav__link:hover {
+  background: #f1f5f9;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link:hover {
+  background: #334155;
+}
