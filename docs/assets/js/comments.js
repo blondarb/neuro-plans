@@ -685,22 +685,30 @@
     }
 
     /**
+     * Normalize section name by removing pilcrow (¶) and trimming whitespace
+     */
+    function normalizeSectionName(name) {
+      if (!name) return '';
+      return name.replace(/¶/g, '').trim();
+    }
+
+    /**
      * Update TOC badges to show which sections have comments
      * Shows badges on the right-side table of contents (section links within the page)
      * Only shows badge on sections that have comments
      */
     function updateTocCommentBadges() {
       try {
-        // Group comments by section name
+        // Group comments by normalized section name
         const commentCountsBySection = {};
         allComments.forEach(comment => {
-          const section = comment.section;
+          const section = normalizeSectionName(comment.section);
           if (section) {
             commentCountsBySection[section] = (commentCountsBySection[section] || 0) + 1;
           }
         });
 
-        console.log('[Comments] Comment counts by section:', commentCountsBySection);
+        console.log('[Comments] Comment counts by section (normalized):', commentCountsBySection);
 
         // Find the right-side table of contents (MkDocs Material uses .md-sidebar--secondary for the right TOC)
         // The TOC links are anchor links to headings on the current page
@@ -711,12 +719,16 @@
         }
 
         // Find all TOC links (these link to #anchor on the current page)
-        tocContainer.querySelectorAll('.md-nav__link').forEach(link => {
+        const tocLinks = tocContainer.querySelectorAll('.md-nav__link');
+        console.log('[Comments] Found', tocLinks.length, 'TOC links');
+
+        tocLinks.forEach(link => {
           const href = link.getAttribute('href');
           if (!href || !href.startsWith('#')) return;
 
-          // Get the section name from the link text
-          const sectionName = link.textContent.trim();
+          // Get the section name from the link text and normalize it
+          const rawText = link.textContent.trim();
+          const sectionName = normalizeSectionName(rawText);
 
           // Remove any existing badge first
           const existingBadge = link.querySelector('.toc-comment-badge');
@@ -724,8 +736,18 @@
             existingBadge.remove();
           }
 
-          // Check if this section has comments
-          const count = commentCountsBySection[sectionName] || 0;
+          // Check if this section has comments (try exact match first, then partial)
+          let count = commentCountsBySection[sectionName] || 0;
+
+          // If no exact match, try to find a partial match (for cases where section names differ slightly)
+          if (count === 0) {
+            for (const [storedSection, c] of Object.entries(commentCountsBySection)) {
+              if (storedSection.includes(sectionName) || sectionName.includes(storedSection)) {
+                count = c;
+                break;
+              }
+            }
+          }
 
           if (count > 0) {
             const badge = document.createElement('span');
@@ -735,7 +757,7 @@
             badge.title = tooltipText;
             badge.setAttribute('data-tooltip', tooltipText);
             link.appendChild(badge);
-            console.log('[Comments] Added TOC badge for section:', sectionName, '=', count);
+            console.log('[Comments] TOC badge added:', sectionName, '=', count);
           }
         });
 
