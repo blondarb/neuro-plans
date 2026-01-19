@@ -905,34 +905,36 @@
     // Reinitialize comments on page change
     function reinitializeOnNavigation() {
       const newPage = window.location.pathname;
-      console.log('[Comments] reinitializeOnNavigation called. newPage:', newPage, 'currentPage:', currentPage, 'isReinitializing:', isReinitializing);
 
-      if (newPage !== currentPage) {
-        if (isReinitializing) {
-          console.log('[Comments] Already reinitializing, skipping');
-          return;
-        }
-        console.log('[Comments] Page changed from', currentPage, 'to', newPage);
-        currentPage = newPage;
-        isReinitializing = true;
-
-        // Small delay to let MkDocs finish rendering the new content
-        setTimeout(async () => {
-          try {
-            await fullReinitialize();
-          } catch (err) {
-            console.error('[Comments] Error during reinitialize:', err);
-          } finally {
-            // Always reset the flag, even on error
-            setTimeout(() => {
-              isReinitializing = false;
-              console.log('[Comments] Reinit flag reset, ready for next navigation');
-            }, 300);
-          }
-        }, 250); // Slightly longer delay for content to load
-      } else {
-        console.log('[Comments] Same page, skipping reinit');
+      // Skip if same page or already reinitializing
+      if (newPage === currentPage) {
+        return; // Same page, no action needed
       }
+
+      if (isReinitializing) {
+        console.log('[Comments] Already reinitializing, queued check for:', newPage);
+        // Queue another check in case URL changes during reinit
+        setTimeout(() => reinitializeOnNavigation(), 400);
+        return;
+      }
+
+      console.log('[Comments] PAGE CHANGED:', currentPage, '->', newPage);
+      currentPage = newPage;
+      isReinitializing = true;
+
+      // Delay to let MkDocs finish rendering the new content
+      setTimeout(async () => {
+        try {
+          await fullReinitialize();
+        } catch (err) {
+          console.error('[Comments] Error during reinitialize:', err);
+        } finally {
+          // Always reset the flag after a delay
+          setTimeout(() => {
+            isReinitializing = false;
+          }, 300);
+        }
+      }, 250);
     }
 
     // ========================================
@@ -942,9 +944,8 @@
 
     // Method 1: Listen for popstate (browser back/forward)
     window.addEventListener('popstate', () => {
-      console.log('[Comments] popstate event fired');
+      console.log('[Comments] popstate event fired, URL:', window.location.pathname);
       setTimeout(() => {
-        currentPage = ''; // Force reinit
         reinitializeOnNavigation();
       }, 150);
     });
@@ -953,11 +954,10 @@
     // This is the official way to detect instant navigation in MkDocs Material
     if (typeof document$ !== 'undefined') {
       document$.subscribe(() => {
-        console.log('[Comments] document$ subscription fired');
+        console.log('[Comments] document$ subscription fired, URL:', window.location.pathname);
         setTimeout(() => {
-          currentPage = ''; // Force reinit
           reinitializeOnNavigation();
-        }, 100);
+        }, 150);
       });
     }
 
@@ -966,7 +966,7 @@
       console.log('[Comments] hashchange fired');
     });
 
-    // Method 4: Listen for clicks on navigation links and force reinit
+    // Method 4: Listen for clicks on navigation links
     document.addEventListener('click', (e) => {
       const link = e.target.closest('a[href]');
       if (link) {
@@ -974,21 +974,13 @@
         // Internal link (not anchor, not external)
         if (href && !href.startsWith('#') && !href.startsWith('http') && !href.startsWith('javascript')) {
           console.log('[Comments] Internal link clicked:', href);
-          // Schedule multiple reinit attempts
+          // Schedule reinit check after navigation completes
           setTimeout(() => {
-            if (window.location.pathname !== currentPage) {
-              console.log('[Comments] Nav link click: URL changed, reinitializing');
-              currentPage = ''; // Force
-              reinitializeOnNavigation();
-            }
-          }, 200);
+            reinitializeOnNavigation();
+          }, 300);
           setTimeout(() => {
-            if (window.location.pathname !== currentPage) {
-              console.log('[Comments] Nav link click (delayed): URL changed, reinitializing');
-              currentPage = ''; // Force
-              reinitializeOnNavigation();
-            }
-          }, 500);
+            reinitializeOnNavigation();
+          }, 600);
         }
       }
     });
@@ -1006,9 +998,8 @@
                 if (node.nodeType === 1 && (node.tagName === 'ARTICLE' || node.querySelector && node.querySelector('h1, h2'))) {
                   console.log('[Comments] Content replaced (article/heading detected)');
                   setTimeout(() => {
-                    currentPage = ''; // Force
                     reinitializeOnNavigation();
-                  }, 100);
+                  }, 150);
                   return;
                 }
               }
