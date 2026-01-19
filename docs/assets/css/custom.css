@@ -1149,15 +1149,25 @@ h3:has(.inline-comment-btn) {
 .md-typeset table:not([class]) th,
 .md-typeset table:not([class]) td {
   padding: 6px 8px;
+}
+
+/* Tables with 5+ columns: nowrap for data columns, wrap for first column */
+.md-typeset table:not([class]):has(th:nth-child(5)) th,
+.md-typeset table:not([class]):has(th:nth-child(5)) td {
   white-space: nowrap;
 }
 
-/* First column (item name) can wrap */
-.md-typeset table:not([class]) td:first-child,
-.md-typeset table:not([class]) th:first-child {
+.md-typeset table:not([class]):has(th:nth-child(5)) td:first-child,
+.md-typeset table:not([class]):has(th:nth-child(5)) th:first-child {
   white-space: normal;
   min-width: 120px;
   max-width: 200px;
+}
+
+/* Tables with 4 or fewer columns: allow all columns to wrap */
+.md-typeset table:not([class]):not(:has(th:nth-child(5))) th,
+.md-typeset table:not([class]):not(:has(th:nth-child(5))) td {
+  white-space: normal;
 }
 
 /* Narrow the right TOC to give more room to content */
