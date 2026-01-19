@@ -864,7 +864,8 @@
 
     // Full reinitialization function
     async function fullReinitialize() {
-      console.log('[Comments] Full reinitialize called for:', window.location.pathname);
+      const pageId = getPageId();
+      console.log('[Comments] Full reinitialize called for:', window.location.pathname, '(pageId:', pageId, ')');
 
       // Reset comments array for new page
       allComments = [];
@@ -872,12 +873,20 @@
       // Remove old inline buttons (they have stale event handlers)
       document.querySelectorAll('.inline-comment-btn').forEach(btn => btn.remove());
 
+      // Remove old TOC badges
+      document.querySelectorAll('.toc-comment-badge').forEach(badge => badge.remove());
+
+      // Wait a moment for DOM to settle
+      await new Promise(resolve => setTimeout(resolve, 50));
+
       // Reinitialize
       await initComments();
-      updateTocCommentBadges();
-      updateLeftNavBadges();
 
-      console.log('[Comments] Reinitialize complete, comments loaded:', allComments.length);
+      // Update badges
+      updateTocCommentBadges();
+      await updateLeftNavBadges();
+
+      console.log('[Comments] Reinitialize complete for', pageId, '- comments loaded:', allComments.length);
     }
 
     // Reinitialize comments on page change
@@ -903,69 +912,112 @@
     // ========================================
     // MULTIPLE NAVIGATION DETECTION METHODS
     // ========================================
+    // MkDocs Material instant navigation is tricky - we use multiple methods
 
-    // Method 1: MkDocs Material instant navigation event
-    document.addEventListener('DOMContentLoaded', () => {
-      // This runs on initial load
-      console.log('[Comments] DOMContentLoaded fired');
-    });
-
-    // Method 2: Listen for popstate (browser back/forward)
+    // Method 1: Listen for popstate (browser back/forward)
     window.addEventListener('popstate', () => {
       console.log('[Comments] popstate event fired');
-      setTimeout(reinitializeOnNavigation, 150);
+      setTimeout(() => {
+        currentPage = ''; // Force reinit
+        reinitializeOnNavigation();
+      }, 150);
     });
 
-    // Method 3: Observe the article/content area being replaced
-    // This is the most reliable method for MkDocs Material instant navigation
+    // Method 2: MkDocs Material subscription-based navigation
+    // This is the official way to detect instant navigation in MkDocs Material
+    if (typeof document$ !== 'undefined') {
+      document$.subscribe(() => {
+        console.log('[Comments] document$ subscription fired');
+        setTimeout(() => {
+          currentPage = ''; // Force reinit
+          reinitializeOnNavigation();
+        }, 100);
+      });
+    }
+
+    // Method 3: Watch for URL hash changes
+    window.addEventListener('hashchange', () => {
+      console.log('[Comments] hashchange fired');
+    });
+
+    // Method 4: Listen for clicks on navigation links and force reinit
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('a[href]');
+      if (link) {
+        const href = link.getAttribute('href');
+        // Internal link (not anchor, not external)
+        if (href && !href.startsWith('#') && !href.startsWith('http') && !href.startsWith('javascript')) {
+          console.log('[Comments] Internal link clicked:', href);
+          // Schedule multiple reinit attempts
+          setTimeout(() => {
+            if (window.location.pathname !== currentPage) {
+              console.log('[Comments] Nav link click: URL changed, reinitializing');
+              currentPage = ''; // Force
+              reinitializeOnNavigation();
+            }
+          }, 200);
+          setTimeout(() => {
+            if (window.location.pathname !== currentPage) {
+              console.log('[Comments] Nav link click (delayed): URL changed, reinitializing');
+              currentPage = ''; // Force
+              reinitializeOnNavigation();
+            }
+          }, 500);
+        }
+      }
+    });
+
+    // Method 5: Observe the main content container being replaced
     const setupContentObserver = () => {
-      const article = document.querySelector('article.md-content__inner');
-      if (article) {
-        const parentObserver = new MutationObserver((mutations) => {
-          // Check if the article content was replaced (instant navigation)
+      // MkDocs Material replaces the content inside .md-content
+      const contentContainer = document.querySelector('.md-content');
+      if (contentContainer) {
+        const observer = new MutationObserver((mutations) => {
+          // Only trigger if h1 or h2 changed (indicating new page)
           for (const mutation of mutations) {
-            if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
-              // Content was replaced, check if URL changed
-              if (window.location.pathname !== currentPage) {
-                console.log('[Comments] Content replaced, triggering reinit');
-                reinitializeOnNavigation();
+            if (mutation.type === 'childList') {
+              for (const node of mutation.addedNodes) {
+                if (node.nodeType === 1 && (node.tagName === 'ARTICLE' || node.querySelector && node.querySelector('h1, h2'))) {
+                  console.log('[Comments] Content replaced (article/heading detected)');
+                  setTimeout(() => {
+                    currentPage = ''; // Force
+                    reinitializeOnNavigation();
+                  }, 100);
+                  return;
+                }
               }
             }
           }
         });
-
-        // Observe the parent of the article for when the article gets replaced
-        if (article.parentNode) {
-          parentObserver.observe(article.parentNode, { childList: true });
-          console.log('[Comments] Content observer set up on article parent');
-        }
+        observer.observe(contentContainer, { childList: true, subtree: true });
+        console.log('[Comments] Content observer set up on .md-content');
       }
     };
 
     // Set up content observer
     setupContentObserver();
 
-    // Method 4: Listen for clicks on navigation links
-    document.addEventListener('click', (e) => {
-      const link = e.target.closest('a[href]');
-      if (link && !link.getAttribute('href').startsWith('#') && !link.getAttribute('href').startsWith('http')) {
-        // Internal navigation link clicked, schedule reinitialization
-        setTimeout(() => {
-          if (window.location.pathname !== currentPage) {
-            console.log('[Comments] Nav link clicked, new page detected');
-            reinitializeOnNavigation();
-          }
-        }, 300);
-      }
-    });
-
-    // Method 5: Periodic check as ultimate fallback (every 1 second)
+    // Method 6: Periodic check as fallback (every 500ms for reliability)
     setInterval(() => {
-      if (window.location.pathname !== currentPage && !isReinitializing) {
-        console.log('[Comments] Periodic check detected page change');
+      const newPath = window.location.pathname;
+      if (newPath !== currentPage && !isReinitializing) {
+        console.log('[Comments] Periodic check detected page change:', currentPage, '->', newPath);
         reinitializeOnNavigation();
       }
-    }, 1000);
+    }, 500);
+
+    // Method 7: Also check when the page title changes (another indicator of navigation)
+    const titleObserver = new MutationObserver(() => {
+      const newPath = window.location.pathname;
+      if (newPath !== currentPage && !isReinitializing) {
+        console.log('[Comments] Title change detected, reinitializing');
+        reinitializeOnNavigation();
+      }
+    });
+    const titleEl = document.querySelector('title');
+    if (titleEl) {
+      titleObserver.observe(titleEl, { childList: true, characterData: true, subtree: true });
+    }
 
   } catch (error) {
     console.error('[Comments] Fatal error initializing comments:', error);
