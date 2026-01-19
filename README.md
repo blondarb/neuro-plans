@@ -37,6 +37,7 @@ An interactive web-based tool for building customized clinical plans:
 - **Selected Items Sidebar** - Build and export custom plans
 - **Editable Items** - Click to customize text
 - **Clinical Notes Banner** - Plan-level notes in collapsible section
+- **Clickable Citations** - Evidence sources link directly to PubMed
 
 ### Review Mode (Comment System)
 
@@ -47,10 +48,10 @@ An interactive web-based tool for building customized clinical plans:
 ### AI-Powered Skills Pipeline
 
 Five skills for generating and validating plans:
-1. **Builder** - Generates comprehensive plans from diagnosis
+1. **Builder** - Generates comprehensive plans from diagnosis (includes citation links)
 2. **Checker** - Validates against 6 quality domains (target 90%+)
 3. **Rebuilder** - Applies corrections from checker
-4. **Citation Verifier** - Validates medical references
+4. **Citation Verifier** - Validates medical references and adds PubMed links
 5. **ICD/Synonym Enricher** - Adds billing codes and synonyms
 
 ## Repository Structure
@@ -179,6 +180,13 @@ These templates are decision support tools, not clinical guidelines. They requir
 
 ### January 2026
 
+**Clickable Citation Links (v1.6)**
+- Evidence & References section now includes clickable PubMed links
+- Clinical Plan Builder renders markdown links as clickable HTML
+- Citation Verifier skill (v1.1) now captures source URLs during verification
+- Builder skill updated to require citation links in all new templates
+- Link priority: PubMed > DOI > Organization website > Publisher > Google Scholar
+
 **Clinical Plan Builder Enhancements**
 - Progressive disclosure UI with icon-based tooltips (v1.5)
 - Icon types: rationale (ℹ️), timing (⏱), target (🎯), contraindications (⚠️), monitoring (📊)
@@ -186,6 +194,7 @@ These templates are decision support tools, not clinical guidelines. They requir
 - Click-to-edit functionality for selected items
 - Dosing shown in selected items sidebar
 - Custom item creation capability
+- `renderMarkdownLinks()` function for evidence table citations
 
 **JSON Schema Documentation**
 - Added Clinical Tool JSON Schema to Builder skill
@@ -193,10 +202,13 @@ These templates are decision support tools, not clinical guidelines. They requir
 - Safety-critical field guidance for medications
 
 **Data Updates**
+- Status Epilepticus v1.6: Added clickable PubMed links to all evidence citations
 - Status Epilepticus v1.5: Added timing, target, contraindications, monitoring fields
 - Full metadata for imaging, first-line benzodiazepines, second-line ASMs, anesthetics
 
 **Skills Pipeline**
+- Citation Verifier v1.1: Added source link capture and template integration workflow
+- Builder skill: Added Builder Principle #14 requiring citation links
 - Added Comment Review skill for processing website feedback
 - Auto-push workflow for drafts after pipeline completion
 
