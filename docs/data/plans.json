@@ -1,6 +1,6 @@
 {
   "Status Epilepticus": {
-    "version": "1.4",
+    "version": "1.5",
     "icd10": "G40.901, G41.0, G41.1, G41.2, G41.8, G41.9",
     "scope": "Management of convulsive status epilepticus (CSE) and non-convulsive status epilepticus (NCSE) in adults. Covers staged treatment protocol from emergent benzodiazepines through refractory and super-refractory phases.",
     "definitions": [
@@ -190,7 +190,9 @@
             "HOSP": "STAT",
             "OPD": "-",
             "ICU": "STAT",
-            "rationale": "Mass, hemorrhage, stroke, herniation"
+            "rationale": "Rule out structural cause requiring intervention",
+            "timing": "As soon as patient stabilized; do not delay treatment",
+            "target": "Mass lesion, hemorrhage, stroke, midline shift, herniation"
           },
           {
             "item": "Continuous EEG (cEEG) monitoring",
@@ -198,7 +200,9 @@
             "HOSP": "STAT",
             "OPD": "-",
             "ICU": "STAT",
-            "rationale": "Seizure burden, treatment response, NCSE detection"
+            "rationale": "Essential - up to 48% have NCSE after convulsive SE controlled",
+            "timing": "Initiate within 1 hour of presentation; continue 24-48h after clinical seizure control",
+            "target": "Electrographic seizure activity, burst suppression pattern, NCSE"
           },
           {
             "item": "Chest X-ray",
@@ -206,7 +210,8 @@
             "HOSP": "STAT",
             "OPD": "-",
             "ICU": "STAT",
-            "rationale": "Aspiration risk, ETT placement confirmation"
+            "rationale": "Aspiration risk high with prolonged seizure and altered consciousness",
+            "target": "Aspiration pneumonia, ETT position if intubated"
           }
         ],
         "Extended": [
@@ -216,7 +221,10 @@
             "HOSP": "URGENT",
             "OPD": "-",
             "ICU": "URGENT",
-            "rationale": "Encephalitis, stroke, tumor, cortical injury"
+            "rationale": "Superior for encephalitis, subtle lesions, NORSE workup",
+            "timing": "When stable enough for MRI; within 24-48h if possible",
+            "target": "Encephalitis (temporal lobe signal), stroke, tumor, hippocampal injury",
+            "contraindications": "Pacemaker, metal implants - check MRI safety"
           },
           {
             "item": "CT angiography head/neck",
@@ -224,7 +232,9 @@
             "HOSP": "URGENT",
             "OPD": "-",
             "ICU": "URGENT",
-            "rationale": "If stroke suspected - large vessel occlusion"
+            "rationale": "If stroke suspected as cause of SE",
+            "target": "Large vessel occlusion, dissection",
+            "contraindications": "Contrast allergy (premedicate); renal insufficiency (hydrate)"
           }
         ]
       },
@@ -284,7 +294,11 @@
             "OPD": "-",
             "ICU": "STAT",
             "dosing": "4 mg IV push over 2 min; may repeat x1 in 5 min; max 8 mg total",
-            "rationale": "First-line if IV access available"
+            "rationale": "First-line if IV access available; Class I evidence",
+            "timing": "Administer within 5 min of seizure onset",
+            "target": "Cessation of clinical and electrographic seizure activity",
+            "contraindications": "Acute narrow-angle glaucoma; severe respiratory depression without ventilator support",
+            "monitoring": "Respiratory status, BP, sedation level; have airway equipment ready"
           },
           {
             "item": "Midazolam IM",
@@ -293,7 +307,10 @@
             "OPD": "-",
             "ICU": "STAT",
             "dosing": "10 mg IM single dose (if no IV access)",
-            "rationale": "First-line if no IV access"
+            "rationale": "First-line if no IV access; RAMPART trial showed non-inferior to IV lorazepam",
+            "timing": "Administer immediately if no IV access",
+            "target": "Cessation of clinical seizure activity",
+            "monitoring": "Respiratory status; onset 5-15 min"
           },
           {
             "item": "Midazolam intranasal",
@@ -302,7 +319,9 @@
             "OPD": "-",
             "ICU": "STAT",
             "dosing": "5 mg per nostril (10 mg total)",
-            "rationale": "Alternative if no IV/IM access"
+            "rationale": "Alternative if no IV/IM access; useful for bystander administration",
+            "timing": "Administer immediately; onset 10-15 min",
+            "target": "Cessation of clinical seizure activity"
           }
         ],
         "Second-Line ASMs": [
@@ -313,7 +332,11 @@
             "OPD": "-",
             "ICU": "STAT",
             "dosing": "50-60 mg/kg IV (max 4500 mg) over 10-15 min",
-            "rationale": "Preferred - fewest drug interactions, no cardiac monitoring"
+            "rationale": "Preferred - fewest drug interactions, no cardiac monitoring needed",
+            "timing": "Give at 5-10 min if BZD fails; infuse over 10-15 min",
+            "target": "Seizure cessation; therapeutic level not needed acutely",
+            "contraindications": "None absolute; reduce dose if CrCl <50",
+            "monitoring": "None required during acute administration"
           },
           {
             "item": "Fosphenytoin IV",
@@ -322,7 +345,11 @@
             "OPD": "-",
             "ICU": "STAT",
             "dosing": "20 mg PE/kg IV at 150 mg PE/min",
-            "rationale": "Alternative - requires cardiac monitoring"
+            "rationale": "Alternative - equivalent efficacy per ESETT",
+            "timing": "Give at 5-10 min if BZD fails; infusion takes ~15 min",
+            "target": "Total phenytoin level 10-20 mcg/mL; free level 1-2 mcg/mL",
+            "contraindications": "2nd/3rd degree AV block; sinus bradycardia; Adams-Stokes syndrome",
+            "monitoring": "Continuous cardiac monitoring during infusion; BP q5min"
           },
           {
             "item": "Valproate IV",
@@ -331,7 +358,11 @@
             "OPD": "-",
             "ICU": "STAT",
             "dosing": "40 mg/kg IV (max 3000 mg) over 10 min",
-            "rationale": "Alternative - AVOID in pregnancy"
+            "rationale": "Alternative - equivalent efficacy per ESETT",
+            "timing": "Give at 5-10 min if BZD fails",
+            "target": "Seizure cessation; level 80-120 mcg/mL",
+            "contraindications": "PREGNANCY (teratogenic); hepatic disease; urea cycle disorders; mitochondrial disease (POLG mutations)",
+            "monitoring": "LFTs, ammonia if altered mental status persists"
           },
           {
             "item": "Lacosamide IV",
@@ -340,7 +371,11 @@
             "OPD": "-",
             "ICU": "STAT",
             "dosing": "400 mg IV over 15 min",
-            "rationale": "Alternative - check ECG for PR interval"
+            "rationale": "Alternative - not in ESETT but increasingly used",
+            "timing": "Give at 5-10 min if BZD fails",
+            "target": "Seizure cessation",
+            "contraindications": "2nd/3rd degree AV block without pacemaker; PR interval >200ms",
+            "monitoring": "ECG - check PR interval before and after"
           }
         ],
         "Refractory SE (Anesthetics)": [
@@ -351,7 +386,11 @@
             "OPD": "-",
             "ICU": "STAT",
             "dosing": "Load 0.2 mg/kg bolus; then 0.1 mg/kg/hr, titrate to burst suppression; max 2 mg/kg/hr",
-            "rationale": "First-line anesthetic for RSE"
+            "rationale": "First-line anesthetic for RSE; less hypotension than propofol",
+            "timing": "Initiate at 20-60 min if still seizing after second-line ASM",
+            "target": "Burst suppression on cEEG (1-2 bursts per 10 sec)",
+            "contraindications": "None absolute in RSE",
+            "monitoring": "cEEG continuous; BP, HR continuous; sedation assessment q4h"
           },
           {
             "item": "Ketamine infusion",
@@ -360,7 +399,11 @@
             "OPD": "-",
             "ICU": "STAT",
             "dosing": "Load 1-2 mg/kg bolus; then 1-5 mg/kg/hr",
-            "rationale": "Consider EARLY - more effective when given early"
+            "rationale": "NMDA antagonist - different mechanism; GIVE EARLY for better outcomes",
+            "timing": "Consider early in RSE, not just SRSE; can combine with midazolam",
+            "target": "Seizure cessation; may not need burst suppression",
+            "contraindications": "Severe uncontrolled HTN; conditions where increased ICP is harmful",
+            "monitoring": "cEEG; BP (may cause hypertension); secretions"
           },
           {
             "item": "Propofol infusion",
@@ -369,7 +412,11 @@
             "OPD": "-",
             "ICU": "STAT",
             "dosing": "Load 1-2 mg/kg; then 20-200 mcg/kg/min; limit <48h at high dose",
-            "rationale": "Alternative - monitor for propofol infusion syndrome"
+            "rationale": "Alternative - rapid onset/offset but risk of PRIS",
+            "timing": "Initiate at 20-60 min if still seizing",
+            "target": "Burst suppression on cEEG",
+            "contraindications": "Propofol allergy; caution in children; caution if >48h needed",
+            "monitoring": "PROPOFOL INFUSION SYNDROME: check triglycerides, lactate, CPK daily; limit duration"
           }
         ]
       },
