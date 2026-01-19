@@ -20,6 +20,7 @@
       getDocs,
       doc,
       updateDoc,
+      deleteDoc,
       query,
       where,
       orderBy,
@@ -112,6 +113,7 @@
             <div class="comment-header">
               <span class="comment-author">${escapeHtml(comment.author || 'Anonymous')}</span>
               <span class="comment-date">${formatDate(comment.createdAt)}</span>
+              <button class="delete-btn" data-id="${id}" title="Delete comment">🗑️</button>
             </div>
             <div class="comment-body">${escapeHtml(comment.body)}</div>
             <div class="comment-actions">
@@ -133,6 +135,7 @@
           <div class="comment-header">
             <span class="comment-author">${escapeHtml(comment.author || 'Anonymous')}</span>
             <span class="comment-date">${formatDate(comment.createdAt)}</span>
+            <button class="delete-btn" data-id="${id}" title="Delete comment">🗑️</button>
           </div>
           ${comment.section ? `<span class="comment-section-tag">Re: ${escapeHtml(comment.section)}</span>` : ''}
           <div class="comment-body">${escapeHtml(comment.body)}</div>
@@ -329,6 +332,14 @@
         });
       });
 
+      // Attach delete handlers in popup
+      popup.querySelectorAll('.delete-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const commentId = btn.dataset.id;
+          handleDelete(commentId);
+        });
+      });
+
       // Close on click outside
       setTimeout(() => {
         document.addEventListener('click', handleOutsideClick);
@@ -416,6 +427,86 @@
       }
     }
 
+    /**
+     * Show delete confirmation dialog
+     * Returns a promise that resolves to true if user confirms, false otherwise
+     */
+    function showDeleteConfirmation() {
+      return new Promise((resolve) => {
+        // Create overlay
+        const overlay = document.createElement('div');
+        overlay.className = 'delete-confirm-overlay';
+        overlay.innerHTML = `
+          <div class="delete-confirm-dialog">
+            <div class="delete-confirm-icon">⚠️</div>
+            <h3 class="delete-confirm-title">Delete Comment?</h3>
+            <p class="delete-confirm-message">
+              This action is <strong>permanent</strong> and cannot be undone.
+            </p>
+            <p class="delete-confirm-warning">
+              Please only delete comments that you created. Do not delete other people's comments.
+            </p>
+            <div class="delete-confirm-actions">
+              <button class="delete-confirm-cancel">Cancel</button>
+              <button class="delete-confirm-delete">Delete Permanently</button>
+            </div>
+          </div>
+        `;
+
+        document.body.appendChild(overlay);
+
+        // Animate in
+        requestAnimationFrame(() => overlay.classList.add('show'));
+
+        // Handle buttons
+        overlay.querySelector('.delete-confirm-cancel').addEventListener('click', () => {
+          overlay.classList.remove('show');
+          setTimeout(() => overlay.remove(), 200);
+          resolve(false);
+        });
+
+        overlay.querySelector('.delete-confirm-delete').addEventListener('click', () => {
+          overlay.classList.remove('show');
+          setTimeout(() => overlay.remove(), 200);
+          resolve(true);
+        });
+
+        // Close on overlay click
+        overlay.addEventListener('click', (e) => {
+          if (e.target === overlay) {
+            overlay.classList.remove('show');
+            setTimeout(() => overlay.remove(), 200);
+            resolve(false);
+          }
+        });
+      });
+    }
+
+    /**
+     * Handle comment deletion with confirmation
+     */
+    async function handleDelete(commentId) {
+      const confirmed = await showDeleteConfirmation();
+      if (!confirmed) return;
+
+      try {
+        const commentRef = doc(db, 'comments', commentId);
+        await deleteDoc(commentRef);
+
+        // Reload comments and update UI
+        await loadAllComments();
+        updateSectionBadges();
+        renderMainCommentList();
+        updateTocCommentBadges();
+        closeAllPopups();
+
+        showToast('Comment deleted');
+      } catch (error) {
+        console.error('[Comments] Error deleting comment:', error);
+        alert('Failed to delete comment: ' + error.message);
+      }
+    }
+
     // Attach vote handlers to buttons
     function attachVoteHandlers() {
       document.querySelectorAll('.comment-list .vote-btn').forEach(btn => {
@@ -423,6 +514,14 @@
           const commentId = btn.dataset.id;
           const voteType = btn.dataset.vote;
           handleVote(commentId, voteType);
+        });
+      });
+
+      // Attach delete handlers
+      document.querySelectorAll('.comment-list .delete-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const commentId = btn.dataset.id;
+          handleDelete(commentId);
         });
       });
     }
@@ -583,7 +682,10 @@
       initComments();
     }
 
-    // Update TOC badges to show which pages have comments
+    /**
+     * Update TOC badges to show which pages have comments
+     * Only shows badge on the exact matching page, not partial matches
+     */
     async function updateTocCommentBadges() {
       try {
         // Get all comments grouped by pageId
@@ -612,9 +714,10 @@
             .replace(/\.html$/, '')
             .replace(/\.md$/, '')
             .replace(/^_/, '')
-            .replace(/_$/, '');
+            .replace(/_$/, '')
+            .replace(/_index$/, ''); // Remove trailing _index
 
-          // Try multiple pageId formats since path can vary
+          // Build exact match variations only (no partial matching)
           const pageIdVariations = [
             pageId,
             'neuro-plans_' + pageId,
@@ -622,23 +725,18 @@
             pageId.replace(/^drafts_/, 'neuro-plans_drafts_')
           ];
 
+          // Only exact matches - no partial matching
           let count = 0;
           for (const variant of pageIdVariations) {
             if (commentCountsByPage[variant]) {
               count = commentCountsByPage[variant];
+              console.log('[Comments] Matched', variant, 'with count', count);
               break;
             }
           }
 
-          // Also check for partial matches in the pageId
-          if (count === 0) {
-            for (const [key, val] of Object.entries(commentCountsByPage)) {
-              if (key.includes(pageId) || pageId.includes(key)) {
-                count = val;
-                break;
-              }
-            }
-          }
+          // REMOVED: Partial matching logic that was causing false positives
+          // The old code would match any pageId that contained or was contained by another
 
           // Check for existing badge or create one
           let badge = link.querySelector('.toc-comment-badge');
