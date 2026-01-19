@@ -1175,14 +1175,41 @@ h3:has(.inline-comment-btn) {
   }
 }
 
-/* Priority badges - smaller */
+/* Priority badges - compact for venue columns */
 .priority-stat,
 .priority-urgent,
 .priority-routine,
 .priority-ext,
 .priority-na {
+  font-size: 0.55rem;
+  padding: 1px 3px;
+  letter-spacing: -0.3px;
+}
+
+/* ========================================
+   VENUE COLUMNS (ED, HOSP, OPD, ICU)
+   Positioned as last 4 columns in tables
+   ======================================== */
+
+/* Venue columns - center-aligned, narrow, compact */
+.md-typeset table:not([class]) th:nth-last-child(-n+4),
+.md-typeset table:not([class]) td:nth-last-child(-n+4) {
+  text-align: center;
+  min-width: 35px;
+  max-width: 55px;
+  padding: 4px 5px;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+/* Venue column headers - slightly smaller */
+.md-typeset table:not([class]) th:nth-last-child(-n+4) {
   font-size: 0.65rem;
-  padding: 1px 5px;
+  background: #e2e8f0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th:nth-last-child(-n+4) {
+  background: #475569;
 }
 
 /* Medium screens */
@@ -1201,8 +1228,17 @@ h3:has(.inline-comment-btn) {
   .priority-routine,
   .priority-ext,
   .priority-na {
-    font-size: 0.6rem;
-    padding: 1px 4px;
+    font-size: 0.5rem;
+    padding: 1px 2px;
+  }
+
+  /* Venue columns even more compact on medium screens */
+  .md-typeset table:not([class]) th:nth-last-child(-n+4),
+  .md-typeset table:not([class]) td:nth-last-child(-n+4) {
+    min-width: 30px;
+    max-width: 45px;
+    padding: 3px 4px;
+    font-size: 0.55rem;
   }
 
   /* Reduce legend size */

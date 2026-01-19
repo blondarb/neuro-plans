@@ -57,35 +57,35 @@ SECTION A: ACTION ITEMS
 
 ### 1A. Essential/Core Labs
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
 
 ## 2. DIAGNOSTIC IMAGING & STUDIES
 
 ### 2A. Essential/First-line
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 
 ### 2B. Extended
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 
 ### 2C. Rare/Specialized
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 
 ## 3. TREATMENT
 
@@ -93,23 +93,23 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ### 3B. Symptomatic Treatments
 
-| Treatment | Indication | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|------------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ### 3C. Second-line/Refractory
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ### 3D. Disease-Modifying or Chronic Therapies (if applicable)
 
-| Treatment | Route | ED | HOSP | OPD | ICU | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring |
-|-----------|-------|:--:|:----:|:---:|:---:|--------|---------------------------|-------------------|------------|
+| Treatment | Route | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ## Treatment Section Guidance
 
@@ -119,13 +119,13 @@ SECTION A: ACTION ITEMS
 
 Ã¢ÂÅ’ **Wrong:**
 ```
-| SSRIs | Depression | - | ROUTINE | ROUTINE | - | Per drug | Various | Monitor mood |
+| SSRIs | Depression | Per drug | Various | Monitor mood | — | ROUTINE | ROUTINE | — |
 ```
 
 Ã¢Å“â€¦ **Correct:**
 ```
-| Sertraline | Depression | - | ROUTINE | ROUTINE | - | Start 50 mg daily; increase by 25-50 mg q1-2wk; max 200 mg | Concurrent MAOIs | Suicidality monitoring |
-| Escitalopram | Depression | - | ROUTINE | ROUTINE | - | Start 10 mg daily; max 20 mg | Concurrent MAOIs; QT prolongation | QTc if risk factors |
+| Sertraline | Depression | Start 50 mg daily; increase by 25-50 mg q1-2wk; max 200 mg | Concurrent MAOIs | Suicidality monitoring | — | ROUTINE | ROUTINE | — |
+| Escitalopram | Depression | Start 10 mg daily; max 20 mg | Concurrent MAOIs; QT prolongation | QTc if risk factors | — | ROUTINE | ROUTINE | — |
 ```
 
 ### Dosing Requirements
@@ -194,8 +194,8 @@ Use Section 3D with expanded columns when the diagnosis has chronic disease-modi
 
 ### 4A. Referrals & Consults
 
-| Recommendation | ED | HOSP | OPD | ICU | Indication |
-|----------------|:--:|:----:|:---:|:---:|------------|
+| Recommendation | Indication | ED | HOSP | OPD | ICU |
+|----------------|------------|:--:|:----:|:---:|:---:|
 
 ### 4B. Patient Instructions
 
@@ -218,10 +218,10 @@ SECTION B: REFERENCE (Expand as Needed)
 
 ## 6. MONITORING PARAMETERS
 
-*Venue column indicates where monitoring is typically ordered/initiated. Most monitoring continues in outpatient setting.*
+*Venue columns indicate where monitoring is typically ordered/initiated. Most monitoring continues in outpatient setting.*
 
-| Parameter | ED | HOSP | OPD | ICU | Frequency | Target/Threshold | Action if Abnormal |
-|-----------|:--:|:----:|:---:|:---:|-----------|------------------|-------------------|
+| Parameter | Frequency | Target/Threshold | Action if Abnormal | ED | HOSP | OPD | ICU |
+|-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
 
 ## 7. DISPOSITION CRITERIA
 
