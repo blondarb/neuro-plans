@@ -1,10 +1,67 @@
 <!DOCTYPE html>
+<!--
+================================================================================
+CLINICAL PLAN BUILDER - Interactive Clinical Decision Support Tool
+================================================================================
+
+Version: 1.5
+Last Updated: January 19, 2026
+Repository: https://github.com/blondarb/neuro-plans
+
+OVERVIEW:
+  This tool allows clinicians to build customized clinical plans by selecting
+  items from evidence-based templates. Plans are filtered by care setting
+  (ED, Hospital, Outpatient, ICU) and priority level (STAT, URGENT, ROUTINE).
+
+ARCHITECTURE:
+  - Data Source: /docs/data/plans.json (JSON format)
+  - Styling: Inline CSS with CSS custom properties for theming
+  - No external dependencies (vanilla JavaScript)
+
+KEY FEATURES:
+  1. Setting/Priority Filters - Filter items by clinical context
+  2. Progressive Disclosure - Icon-based tooltips for detailed metadata
+  3. Selected Items Sidebar - Build and export custom plans
+  4. Click-to-Edit - Customize item text before export
+  5. Custom Items - Add free-text items to any section
+  6. Clinical Notes Banner - Collapsible plan-level notes
+
+ICON SYSTEM (Progressive Disclosure):
+  Items display metadata via hoverable icons. Icons only appear if the
+  corresponding field exists in the JSON data:
+
+  | Icon | Field              | Color   | Purpose                          |
+  |------|--------------------|---------|----------------------------------|
+  | ℹ️   | rationale          | Blue    | Clinical reasoning/evidence      |
+  | ⏱    | timing             | Amber   | When to perform/administer       |
+  | 🎯   | target             | Green   | Expected findings/goals          |
+  | ⚠️   | contraindications  | Red*    | Safety warnings (*pulsing)       |
+  | 📊   | monitoring         | Purple  | Required monitoring parameters   |
+
+JSON SCHEMA:
+  See /skills/neuro-builder-SKILL.md "Clinical Tool JSON Schema" section
+  for complete field documentation.
+
+CHANGELOG:
+  v1.5 (Jan 19, 2026) - Progressive disclosure with icon tooltips
+  v1.4 (Jan 19, 2026) - Clinical notes banner, custom items
+  v1.3 (Jan 19, 2026) - Click-to-edit, dosing in sidebar
+  v1.2 (Jan 18, 2026) - Collapsible sections, reference sections
+  v1.1 (Jan 18, 2026) - Basic filtering and selection
+  v1.0 (Jan 18, 2026) - Initial implementation
+
+================================================================================
+-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clinical Plan Builder | Neuro Plans</title>
   <style>
+    /*
+     * CSS CUSTOM PROPERTIES (Design Tokens)
+     * Centralized color and spacing definitions for consistent theming
+     */
     :root {
       --primary: #4f46e5;
       --primary-dark: #4338ca;
@@ -32,6 +89,7 @@
       --success-bg: #ecfdf5;
     }
 
+    /* Reset */
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
@@ -43,7 +101,9 @@
 
     .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
 
-    /* Header */
+    /* =====================================================
+       HEADER - Sticky navigation with back button
+       ===================================================== */
     .header {
       background: var(--bg);
       border-bottom: 1px solid var(--border);
@@ -74,7 +134,9 @@
     }
     .back-btn:hover { background: var(--primary-dark); }
 
-    /* Controls */
+    /* =====================================================
+       CONTROLS - Plan selector, venue tabs, icon legend
+       ===================================================== */
     .controls {
       background: var(--bg);
       border-radius: 12px;
@@ -105,11 +167,13 @@
     .venue-tab:hover { border-color: var(--primary); }
     .venue-tab.active { background: var(--primary); border-color: var(--primary); color: white; }
 
-    /* Main Layout */
+    /* =====================================================
+       LAYOUT - Main grid with plan content and sidebar
+       ===================================================== */
     .main-layout { display: grid; grid-template-columns: 1fr 380px; gap: 20px; }
     @media (max-width: 1024px) { .main-layout { grid-template-columns: 1fr; } }
 
-    /* Plan Content */
+    /* Plan Content Container */
     .plan-content {
       background: var(--bg);
       border-radius: 12px;
@@ -117,7 +181,10 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
 
-    /* Clinical Notes Banner */
+    /* =====================================================
+       CLINICAL NOTES BANNER
+       Collapsible banner showing plan-level notes (from JSON "notes" field)
+       ===================================================== */
     .clinical-notes-banner {
       background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
       border: 1px solid #bae6fd;
@@ -234,6 +301,17 @@
       margin-left: 26px;
       margin-top: 6px;
     }
+
+    /* =====================================================
+       PROGRESSIVE DISCLOSURE ICONS
+       Hoverable icons that reveal metadata tooltips.
+       Each icon type corresponds to a JSON field:
+         - rationale: Clinical reasoning/evidence
+         - timing: When to perform/administer
+         - target: Expected findings or goals
+         - contraindications: Safety warnings (pulsing animation)
+         - monitoring: Required monitoring parameters
+       ===================================================== */
     .info-icon {
       position: relative;
       width: 22px;
@@ -706,12 +784,41 @@
 </div>
 
 <script>
+  /**
+   * =======================================================================
+   * CLINICAL PLAN BUILDER - JavaScript Application
+   * =======================================================================
+   *
+   * ARCHITECTURE:
+   *   - Loads plan data from /docs/data/plans.json
+   *   - Renders sections based on selected venue (ED, HOSP, OPD, ICU)
+   *   - Tracks selected items in Map for sidebar display
+   *   - Supports custom item creation and item text editing
+   *
+   * STATE VARIABLES:
+   *   - plansData: Object containing all loaded plans from JSON
+   *   - currentDiagnosis: Currently selected plan name
+   *   - currentVenue: Active setting filter (ED, HOSP, OPD, ICU)
+   *   - selectedItems: Map of selected items (key: sectionName|itemName)
+   *   - customItems: Map of user-created custom items
+   *
+   * KEY FUNCTIONS:
+   *   - loadPlans(): Fetches and parses plans.json
+   *   - renderPlan(): Builds HTML for current plan/venue
+   *   - toggleItem(): Handles item selection/deselection
+   *   - updateSelectedList(): Refreshes sidebar with selections
+   *   - copyToClipboard(): Exports plan as formatted text
+   * =======================================================================
+   */
+
+  // Application State
   let plansData = {};
   let currentDiagnosis = null;
   let currentVenue = null;
-  let selectedItems = new Map();
-  let customItems = new Map();
+  let selectedItems = new Map();  // Key: "sectionName|itemName", Value: display object
+  let customItems = new Map();    // Key: "sectionName|customText", Value: display object
 
+  // DOM Element References
   const diagnosisSelect = document.getElementById('diagnosis-select');
   const venueTabs = document.getElementById('venue-tabs');
   const planContent = document.getElementById('plan-content');
@@ -721,6 +828,9 @@
   const copyBtn = document.getElementById('copy-btn');
   const clearBtn = document.getElementById('clear-btn');
 
+  /**
+   * Load plans data from JSON file and populate diagnosis selector
+   */
   async function loadPlans() {
     try {
       const response = await fetch('../data/plans.json');
@@ -753,6 +863,11 @@
     }
   });
 
+  /**
+   * Map priority string to CSS class for color coding
+   * @param {string} p - Priority value (STAT, URGENT, ROUTINE, EXT, or -)
+   * @returns {string|null} CSS class name or null if not applicable
+   */
   function getPriorityClass(p) {
     if (!p || p === '-') return null;
     const pl = p.toLowerCase();
@@ -763,12 +878,23 @@
     return null;
   }
 
+  /**
+   * Safely escape HTML to prevent XSS
+   */
   function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
   }
 
+  /**
+   * Render the plan for the current diagnosis and venue
+   * Builds HTML including:
+   *   - Clinical notes banner (if plan.notes exists)
+   *   - Sections with items filtered by venue
+   *   - Icon tooltips for metadata (rationale, timing, target, contraindications, monitoring)
+   *   - Custom item input fields per subsection
+   */
   function renderPlan() {
     const plan = plansData[currentDiagnosis];
     if (!plan || !plan.sections) {

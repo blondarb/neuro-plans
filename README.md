@@ -17,26 +17,67 @@ Plans are organized by care setting (ED, Hospital, Outpatient, ICU) with priorit
 ## Quick Links
 
 - **Website:** https://blondarb.github.io/neuro-plans/
+- **Clinical Plan Builder:** https://blondarb.github.io/neuro-plans/clinical/
 - **Request a Plan:** [Submit Issue](https://github.com/blondarb/neuro-plans/issues/new?template=plan_request.yml)
+
+## Features
+
+### Clinical Plan Builder (Interactive Tool)
+
+An interactive web-based tool for building customized clinical plans:
+
+- **Filter by Setting** - ED, Hospital, Outpatient, ICU
+- **Filter by Priority** - STAT, URGENT, ROUTINE
+- **Progressive Disclosure** - Essential info visible; details on hover via icons:
+  - ℹ️ Rationale (blue) - Clinical reasoning and evidence basis
+  - ⏱ Timing (amber) - When to perform/administer
+  - 🎯 Target (green) - Expected findings or goals
+  - ⚠️ Contraindications (red, pulsing) - Safety warnings
+  - 📊 Monitoring (purple) - Required monitoring parameters
+- **Selected Items Sidebar** - Build and export custom plans
+- **Editable Items** - Click to customize text
+- **Clinical Notes Banner** - Plan-level notes in collapsible section
+
+### Review Mode (Comment System)
+
+- Section-specific comments with Firebase backend
+- TOC badges showing comment counts
+- Physician review workflow for draft → approved status
+
+### AI-Powered Skills Pipeline
+
+Five skills for generating and validating plans:
+1. **Builder** - Generates comprehensive plans from diagnosis
+2. **Checker** - Validates against 6 quality domains (target 90%+)
+3. **Rebuilder** - Applies corrections from checker
+4. **Citation Verifier** - Validates medical references
+5. **ICD/Synonym Enricher** - Adds billing codes and synonyms
 
 ## Repository Structure
 
 ```
 neuro-clinical-plans/
-├── docs/                    # MkDocs source files
-│   ├── index.md            # Home page
-│   ├── plans/              # Clinical plan pages
-│   ├── skills/             # AI skill documentation
-│   └── references/         # Supporting references
-├── plans/                   # Source plan files (canonical)
-├── skills/                  # AI skill definitions
-├── references/              # Reference materials
-├── schemas/                 # JSON schemas (future)
-├── scripts/                 # Build scripts
-├── .github/
-│   ├── ISSUE_TEMPLATE/     # Plan request form
-│   └── workflows/          # GitHub Actions
-└── mkdocs.yml              # MkDocs configuration
+├── docs/
+│   ├── index.md                # Home page
+│   ├── clinical/
+│   │   └── index.html          # Clinical Plan Builder (interactive tool)
+│   ├── data/
+│   │   └── plans.json          # JSON data for Clinical Tool
+│   ├── plans/                  # Approved clinical plan pages
+│   ├── drafts/                 # Plans pending review
+│   ├── skills/                 # AI skill documentation (public)
+│   ├── references/             # Supporting references
+│   └── assets/css/custom.css   # Custom styling
+├── skills/                     # AI skill definitions (source)
+│   ├── neuro-builder-SKILL.md
+│   ├── neuro-checker-SKILL.md
+│   ├── neuro-rebuilder-SKILL.md
+│   ├── neuro-citation-verifier-SKILL.md
+│   ├── neuro-cpt-synonym-enricher-SKILL.md
+│   └── neuro-comment-review-SKILL.md
+├── references/                 # Reference materials
+├── scripts/                    # Build scripts
+└── mkdocs.yml                  # MkDocs configuration
 ```
 
 ## Workflow
@@ -133,6 +174,36 @@ See [Template Tracker](docs/references/tracker.md) for full roadmap.
 ## Disclaimer
 
 These templates are decision support tools, not clinical guidelines. They require physician review and adaptation to individual patient circumstances. Always apply clinical judgment.
+
+## Changelog
+
+### January 2026
+
+**Clinical Plan Builder Enhancements**
+- Progressive disclosure UI with icon-based tooltips (v1.5)
+- Icon types: rationale (ℹ️), timing (⏱), target (🎯), contraindications (⚠️), monitoring (📊)
+- Collapsible clinical notes banner for plan-level notes
+- Click-to-edit functionality for selected items
+- Dosing shown in selected items sidebar
+- Custom item creation capability
+
+**JSON Schema Documentation**
+- Added Clinical Tool JSON Schema to Builder skill
+- Documents all fields that display as icons
+- Safety-critical field guidance for medications
+
+**Data Updates**
+- Status Epilepticus v1.5: Added timing, target, contraindications, monitoring fields
+- Full metadata for imaging, first-line benzodiazepines, second-line ASMs, anesthetics
+
+**Skills Pipeline**
+- Added Comment Review skill for processing website feedback
+- Auto-push workflow for drafts after pipeline completion
+
+**Comment System**
+- Section-specific inline comments with Firebase
+- TOC badges showing comment counts per section
+- Draft/approved status workflow
 
 ## License
 
