@@ -1,8 +1,60 @@
 {
   "Status Epilepticus": {
-    "version": "1.2",
-    "icd10": "G40.901, G41.0, G41.1, G41.2",
-    "scope": "Management of convulsive and non-convulsive status epilepticus in adults",
+    "version": "1.4",
+    "icd10": "G40.901, G41.0, G41.1, G41.2, G41.8, G41.9",
+    "scope": "Management of convulsive status epilepticus (CSE) and non-convulsive status epilepticus (NCSE) in adults. Covers staged treatment protocol from emergent benzodiazepines through refractory and super-refractory phases.",
+    "definitions": [
+      {"term": "Status Epilepticus (SE)", "definition": "Seizure lasting >5 minutes OR ≥2 seizures without return to baseline between episodes"},
+      {"term": "Refractory SE (RSE)", "definition": "SE continuing after adequate doses of initial benzodiazepine AND one second-line ASM"},
+      {"term": "Super-Refractory SE (SRSE)", "definition": "SE continuing ≥24 hours after anesthetic initiation, including cases that recur during anesthetic weaning"},
+      {"term": "NORSE", "definition": "New-Onset Refractory Status Epilepticus - RSE without clear acute/active structural, toxic, or metabolic cause in a patient without prior epilepsy"},
+      {"term": "FIRES", "definition": "Febrile Infection-Related Epilepsy Syndrome - subset of NORSE with febrile illness ≥24 hours before SE onset"}
+    ],
+    "differential": [
+      {"diagnosis": "Psychogenic non-epileptic status", "features": "Preserved awareness, asynchronous movements, eye closure, pelvic thrusting, prolonged duration with minimal post-ictal period", "tests": "Video EEG, normal cEEG during event"},
+      {"diagnosis": "Convulsive syncope", "features": "Brief (< 30 sec), occurs with LOC, myoclonic jerks possible", "tests": "History of prodrome, rapid recovery, normal EEG"},
+      {"diagnosis": "Movement disorders", "features": "Non-rhythmic, preserved awareness, stereotyped pattern", "tests": "EEG normal during movements"},
+      {"diagnosis": "Rigors (sepsis)", "features": "Associated with fever/chills, rhythmic shaking, preserves awareness", "tests": "Infectious workup, temperature"},
+      {"diagnosis": "Decerebrate/decorticate posturing", "features": "Associated with structural brain injury, sustained posturing", "tests": "Imaging, cEEG"},
+      {"diagnosis": "Neuroleptic malignant syndrome", "features": "Rigidity, hyperthermia, AMS, autonomic instability", "tests": "CPK, medication history"},
+      {"diagnosis": "Serotonin syndrome", "features": "Hyperreflexia, clonus, agitation, fever", "tests": "Medication history, clinical features"}
+    ],
+    "notes": [
+      "SE is a medical emergency with ~20% mortality; rapid treatment is critical",
+      "Every 5-minute delay in treatment associated with worse outcomes",
+      "cEEG monitoring essential - up to 48% of patients have non-convulsive seizures after convulsive SE controlled",
+      "Levetiracetam dosing: ESETT used 60 mg/kg; 40 mg/kg also acceptable per recent evidence",
+      "Ketamine timing: Earlier administration (in RSE, not just SRSE) correlates with better outcomes. Consider using early or in combination with midazolam",
+      "NORSE/FIRES: ~50% remain cryptogenic; start immunotherapy within 72 hours even without confirmed etiology. Ketogenic diet by Day 7",
+      "Propofol infusion syndrome: metabolic acidosis, rhabdomyolysis, cardiac failure - limit propofol to <48h at high doses",
+      "Always have airway equipment ready; many second-line and all third-line agents cause respiratory depression"
+    ],
+    "evidence": [
+      {"recommendation": "Benzodiazepines first-line for SE", "level": "Class I, Level A", "source": "Neurocritical Care Society 2012; AES Guidelines 2016"},
+      {"recommendation": "Lorazepam preferred IV benzodiazepine", "level": "Class I, Level A", "source": "Alldredge et al. NEJM 2001"},
+      {"recommendation": "IM midazolam non-inferior to IV lorazepam", "level": "Class I, Level A", "source": "RAMPART Trial, Silbergleit et al. NEJM 2012"},
+      {"recommendation": "Second-line agents (LEV, VPA, fPHT) equivalent efficacy", "level": "Class I, Level A", "source": "ESETT Trial, Kapur et al. NEJM 2019;381:2103-2113"},
+      {"recommendation": "Levetiracetam 60 mg/kg dosing", "level": "Class I, Level A", "source": "ESETT Trial"},
+      {"recommendation": "cEEG monitoring in RSE", "level": "Class I, Level B", "source": "NCS Guidelines 2012"},
+      {"recommendation": "Ketamine in RSE/SRSE", "level": "Class IIb, Level B", "source": "Multiple case series; 2024 systematic reviews"},
+      {"recommendation": "Earlier ketamine = better outcomes", "level": "Class II, Level B", "source": "2024 two-center study; systematic reviews"},
+      {"recommendation": "NORSE first-line immunotherapy within 72h", "level": "Class IIa, Level C", "source": "International Consensus, Wickström et al. Epilepsia 2022"},
+      {"recommendation": "Ketogenic diet by Day 7 in NORSE", "level": "Class IIa, Level C", "source": "International Consensus 2022; FIRES case series"}
+    ],
+    "appendices": [
+      {
+        "title": "Time-Based Treatment Algorithm",
+        "content": "TIME 0-5 MIN: STABILIZATION + EMERGENT TREATMENT\n• ABCs: Airway, Breathing, Circulation\n• Glucose check → Dextrose if low + Thiamine\n• IV access x 2\n• Lorazepam 0.1 mg/kg IV (max 4 mg) OR Midazolam 10 mg IM\n• May repeat BZD x1 in 5 min\n\nTIME 5-20 MIN: URGENT/SECOND-LINE (if still seizing)\n• Choose ONE:\n  - Levetiracetam 40-60 mg/kg IV (max 4500 mg)\n  - Fosphenytoin 20 mg PE/kg IV at 150 mg PE/min\n  - Valproate 40 mg/kg IV (max 3000 mg) - avoid in pregnancy\n  - Lacosamide 400 mg IV\n• Start cEEG monitoring\n• CT head if not done\n\nTIME 20-60 MIN: REFRACTORY SE (if still seizing)\n• Requires ICU and intubation\n• Initiate anesthetic infusion:\n  - Midazolam: Load 0.2 mg/kg → 0.1-2 mg/kg/hr\n  - Propofol: Load 1-2 mg/kg → 20-200 mcg/kg/min\n  - Ketamine: Load 1-2 mg/kg → 1-5 mg/kg/hr ← Consider EARLY\n• Target burst suppression on cEEG\n\nTIME >24 HOURS ON ANESTHETICS: SUPER-REFRACTORY SE\n• Add additional ASMs (topiramate, perampanel)\n• Combine anesthetics (midazolam + ketamine)\n• If NORSE/FIRES → See NORSE Protocol\n• Consider ketogenic diet\n• Goals of care discussion"
+      },
+      {
+        "title": "NORSE/FIRES Immunotherapy Timeline",
+        "content": "DAY 0-3: FIRST-LINE IMMUNOTHERAPY\n• Methylprednisolone 1000 mg IV daily × 3-5 days\n• ± IVIG 0.4 g/kg/day × 5 days (can start simultaneously)\n• Continue ASMs and anesthetics as needed\n\nDAY 3-7: ESCALATE IF NO RESPONSE\n• Add IVIG if not started\n• Consider PLEX (5-7 exchanges)\n• Do not wait for autoimmune results\n\nDAY 7: KEY DECISION POINT\n• Initiate ketogenic diet\n• If first-line inadequate → Start second-line:\n  - Rituximab 375 mg/m² weekly × 4\n  - OR Cyclophosphamide 750-1000 mg/m² monthly\n• Continue supportive care\n\nDAY 7+: ONGOING MANAGEMENT\n• Continue second-line immunotherapy\n• Maintain ketogenic diet\n• Consider tocilizumab or anakinra if refractory\n• Goals of care discussion if no improvement"
+      },
+      {
+        "title": "Rapid Protocol (3 AM Protocol)",
+        "content": "STEP 1: STABILIZATION (Time 0)\n☐ Call Neurology STAT; alert ICU\n☐ Position patient, protect head\n☐ Oxygen: Non-rebreather 15 L/min\n☐ IV access: Two large-bore IVs\n☐ Cardiac monitor\n☐ Fingerstick glucose → Dextrose 50% 50mL + Thiamine 100mg if low/unknown\n\nSTEP 2: FIRST-LINE BENZODIAZEPINE (Time 0-5 min)\n• IV access: Lorazepam 4 mg IV push over 2 min\n• No IV: Midazolam 10 mg IM\n• No IV/IM: Midazolam 5 mg each nostril\n→ Wait 5 min. Still seizing? Repeat x1\n→ Wait 5 more min. Still seizing? GO TO STEP 3\n🚫 DO NOT give a third dose of benzodiazepine\n\nSTEP 3: SECOND-LINE ASM (Time 5-20 min)\nDEFAULT: Levetiracetam\n• 50 kg = 2500 mg IV over 10 min\n• 60 kg = 3000 mg IV\n• 70 kg = 3500 mg IV\n• 80 kg = 4000 mg IV\n• ≥90 kg = 4500 mg IV (max)\n\nALTERNATIVES:\n• Already on LEV at home → Fosphenytoin 20 mg PE/kg IV\n• Pregnant → Use Levetiracetam (avoid valproate)\n• Cardiac disease → Use Levetiracetam (avoid fosphenytoin/lacosamide)\n\n🚨 Still seizing at 20 min? → CALL ICU NOW, proceed to RSE protocol"
+      }
+    ],
     "sections": {
       "Laboratory Workup": {
         "Core Labs": [

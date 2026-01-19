@@ -16,33 +16,25 @@
       --routine-bg: #dbeafe;
       --ext: #7c3aed;
       --ext-bg: #f3e8ff;
-      --gray: #6b7280;
-      --gray-bg: #f3f4f6;
       --border: #e5e7eb;
       --text: #1f2937;
       --text-light: #6b7280;
       --bg: #ffffff;
       --bg-secondary: #f9fafb;
+      --custom-bg: #fef3c7;
+      --custom-border: #fcd34d;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background: var(--bg-secondary);
       color: var(--text);
       line-height: 1.5;
     }
 
-    .container {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+    .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
 
     /* Header */
     .header {
@@ -53,7 +45,6 @@
       top: 0;
       z-index: 100;
     }
-
     .header-content {
       max-width: 1400px;
       margin: 0 auto;
@@ -61,20 +52,8 @@
       justify-content: space-between;
       align-items: center;
     }
-
-    .logo {
-      font-weight: 700;
-      font-size: 1.25rem;
-      color: var(--primary);
-      text-decoration: none;
-    }
-
-    .header-left {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
+    .header-left { display: flex; align-items: center; gap: 12px; }
+    .logo { font-weight: 700; font-size: 1.25rem; color: var(--primary); }
     .back-btn {
       display: inline-flex;
       align-items: center;
@@ -85,35 +64,8 @@
       border-radius: 6px;
       font-weight: 500;
       font-size: 0.9rem;
-      transition: background 0.2s;
     }
-
-    .back-btn:hover {
-      background: var(--primary-dark);
-    }
-
-    .header-divider {
-      color: var(--border);
-    }
-
-    .header-nav {
-      display: flex;
-      gap: 16px;
-    }
-
-    .nav-link {
-      color: var(--text-light);
-      text-decoration: none;
-      font-size: 0.9rem;
-      padding: 8px 12px;
-      border-radius: 6px;
-      transition: all 0.2s;
-    }
-
-    .nav-link:hover {
-      color: var(--primary);
-      background: var(--bg-secondary);
-    }
+    .back-btn:hover { background: var(--primary-dark); }
 
     /* Controls */
     .controls {
@@ -123,26 +75,9 @@
       margin-bottom: 20px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
-
-    .controls-row {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      align-items: end;
-    }
-
-    .control-group {
-      flex: 1;
-      min-width: 200px;
-    }
-
-    .control-group label {
-      display: block;
-      font-weight: 500;
-      margin-bottom: 6px;
-      font-size: 0.9rem;
-    }
-
+    .controls-row { display: flex; gap: 20px; flex-wrap: wrap; align-items: end; }
+    .control-group { flex: 1; min-width: 200px; }
+    .control-group label { display: block; font-weight: 500; margin-bottom: 6px; font-size: 0.9rem; }
     .control-group select {
       width: 100%;
       padding: 10px 12px;
@@ -150,21 +85,8 @@
       border-radius: 8px;
       font-size: 1rem;
       background: var(--bg);
-      cursor: pointer;
     }
-
-    .control-group select:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
-    }
-
-    /* Venue Tabs */
-    .venue-tabs {
-      display: flex;
-      gap: 8px;
-    }
-
+    .venue-tabs { display: flex; gap: 8px; }
     .venue-tab {
       padding: 10px 20px;
       border: 2px solid var(--border);
@@ -172,31 +94,13 @@
       background: var(--bg);
       font-weight: 500;
       cursor: pointer;
-      transition: all 0.2s;
     }
-
-    .venue-tab:hover {
-      border-color: var(--primary);
-    }
-
-    .venue-tab.active {
-      background: var(--primary);
-      border-color: var(--primary);
-      color: white;
-    }
+    .venue-tab:hover { border-color: var(--primary); }
+    .venue-tab.active { background: var(--primary); border-color: var(--primary); color: white; }
 
     /* Main Layout */
-    .main-layout {
-      display: grid;
-      grid-template-columns: 1fr 400px;
-      gap: 20px;
-    }
-
-    @media (max-width: 1024px) {
-      .main-layout {
-        grid-template-columns: 1fr;
-      }
-    }
+    .main-layout { display: grid; grid-template-columns: 1fr 380px; gap: 20px; }
+    @media (max-width: 1024px) { .main-layout { grid-template-columns: 1fr; } }
 
     /* Plan Content */
     .plan-content {
@@ -206,395 +110,198 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
 
-    .section {
-      margin-bottom: 32px;
-    }
-
-    .section:last-child {
-      margin-bottom: 0;
-    }
-
+    /* Section */
+    .section { margin-bottom: 28px; }
     .section-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       padding-bottom: 8px;
       border-bottom: 2px solid var(--border);
     }
+    .section-title { font-size: 1.1rem; font-weight: 600; }
 
-    .section-title {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--text);
-      margin: 0;
-    }
-
-    .add-item-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 6px 12px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      font-size: 0.8rem;
-      color: var(--text-light);
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .add-item-btn:hover {
-      background: var(--primary);
-      color: white;
-      border-color: var(--primary);
-    }
-
-    .subsection {
-      margin-bottom: 20px;
-    }
-
-    .subsection-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
+    /* Subsection */
+    .subsection { margin-bottom: 16px; }
     .subsection-title {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 600;
       color: var(--text-light);
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      margin: 0;
+      margin-bottom: 8px;
     }
 
     /* Items */
-    .item-list {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
+    .item-list { display: flex; flex-direction: column; gap: 6px; }
     .item {
       display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      padding: 12px;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
       background: var(--bg-secondary);
-      border-radius: 8px;
+      border-radius: 6px;
       cursor: pointer;
-      transition: all 0.2s;
       border: 2px solid transparent;
+      transition: all 0.15s;
     }
+    .item:hover { background: #f0f0f5; }
+    .item.selected { background: #e0e7ff; border-color: #a5b4fc; }
+    .item.custom { background: var(--custom-bg); border-color: var(--custom-border); }
+    .item.custom.selected { background: #fde68a; border-color: #f59e0b; }
+    .item input[type="checkbox"] { width: 16px; height: 16px; cursor: pointer; flex-shrink: 0; }
+    .item-name { flex: 1; font-size: 0.9rem; }
 
-    .item:hover {
-      background: #f0f0f5;
-    }
-
-    .item.selected {
-      background: #e0e7ff;
-      border-color: #a5b4fc;
-    }
-
-    .item.custom-item {
-      background: #fef3c7;
-      border-color: #fcd34d;
-    }
-
-    .item.custom-item.selected {
-      background: #fde68a;
-      border-color: #f59e0b;
-    }
-
-    .item input[type="checkbox"] {
-      width: 18px;
-      height: 18px;
-      margin-top: 2px;
-      cursor: pointer;
-      flex-shrink: 0;
-    }
-
-    .item-content {
-      flex: 1;
-      min-width: 0;
-    }
-
-    .item-name {
-      font-weight: 500;
-      margin-bottom: 4px;
-    }
-
-    .item-details {
-      font-size: 0.85rem;
-      color: var(--text-light);
-    }
-
-    /* Priority Badges */
+    /* Priority badges */
     .priority {
       display: inline-block;
-      padding: 2px 8px;
+      padding: 2px 6px;
       border-radius: 4px;
       font-weight: 600;
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       text-transform: uppercase;
-      margin-right: 8px;
+      margin-right: 6px;
     }
+    .priority-stat { background: var(--stat-bg); color: var(--stat); }
+    .priority-urgent { background: var(--urgent-bg); color: var(--urgent); }
+    .priority-routine { background: var(--routine-bg); color: var(--routine); }
+    .priority-ext { background: var(--ext-bg); color: var(--ext); }
 
-    .priority-stat {
-      background: var(--stat-bg);
-      color: var(--stat);
-    }
-
-    .priority-urgent {
-      background: var(--urgent-bg);
-      color: var(--urgent);
-    }
-
-    .priority-routine {
-      background: var(--routine-bg);
-      color: var(--routine);
-    }
-
-    .priority-ext {
-      background: var(--ext-bg);
-      color: var(--ext);
-    }
-
-    /* Add Custom Item Form */
-    .add-item-form {
-      display: none;
-      padding: 12px;
-      background: #fffbeb;
-      border: 1px dashed #f59e0b;
-      border-radius: 8px;
-      margin-top: 8px;
-    }
-
-    .add-item-form.show {
-      display: block;
-    }
-
-    .add-item-form input,
-    .add-item-form textarea {
-      width: 100%;
-      padding: 8px 10px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      font-size: 0.9rem;
-      margin-bottom: 8px;
-      font-family: inherit;
-    }
-
-    .add-item-form textarea {
-      min-height: 60px;
-      resize: vertical;
-    }
-
-    .add-item-form-actions {
+    /* Add Item Input - Always visible under each section */
+    .add-item-input {
       display: flex;
       gap: 8px;
-      justify-content: flex-end;
-    }
-
-    .add-item-form-btn {
-      padding: 6px 14px;
+      margin-top: 8px;
+      padding: 8px;
+      background: #fffbeb;
+      border: 1px dashed var(--custom-border);
       border-radius: 6px;
-      font-size: 0.85rem;
-      cursor: pointer;
-      transition: all 0.2s;
     }
-
-    .add-item-form-btn.primary {
-      background: var(--primary);
-      color: white;
-      border: none;
-    }
-
-    .add-item-form-btn.primary:hover {
-      background: var(--primary-dark);
-    }
-
-    .add-item-form-btn.secondary {
-      background: white;
-      color: var(--text);
+    .add-item-input input {
+      flex: 1;
+      padding: 8px 10px;
       border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: 0.85rem;
     }
-
-    .add-item-form-btn.secondary:hover {
-      background: var(--bg-secondary);
-    }
+    .add-item-input input:focus { outline: none; border-color: var(--primary); }
+    .add-item-input input::placeholder { color: #9ca3af; }
 
     /* Sidebar */
-    .sidebar {
-      position: sticky;
-      top: 80px;
-      height: fit-content;
-    }
-
+    .sidebar { position: sticky; top: 80px; height: fit-content; }
     .sidebar-card {
       background: var(--bg);
       border-radius: 12px;
-      padding: 20px;
+      padding: 16px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
-
     .sidebar-title {
       font-weight: 600;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
     .selected-count {
       background: var(--primary);
       color: white;
       padding: 2px 8px;
       border-radius: 12px;
-      font-size: 0.8rem;
-    }
-
-    .selected-list {
-      max-height: 400px;
-      overflow-y: auto;
-      margin-bottom: 16px;
-    }
-
-    /* Selected Items with Section Groups */
-    .selected-section-group {
-      margin-bottom: 16px;
-    }
-
-    .selected-section-group:last-child {
-      margin-bottom: 0;
-    }
-
-    .selected-section-label {
       font-size: 0.75rem;
+    }
+
+    /* Selected Items - Clean list, just names, click to edit */
+    .selected-list { max-height: 350px; overflow-y: auto; }
+    .selected-section { margin-bottom: 12px; }
+    .selected-section:last-child { margin-bottom: 0; }
+    .selected-section-label {
+      font-size: 0.7rem;
       font-weight: 600;
       color: var(--primary);
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       padding-bottom: 4px;
       border-bottom: 1px solid var(--border);
     }
-
     .selected-item {
       display: flex;
-      align-items: flex-start;
-      gap: 8px;
-      padding: 10px;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 8px;
       background: var(--bg-secondary);
-      border-radius: 6px;
-      margin-bottom: 6px;
-      font-size: 0.85rem;
+      border-radius: 4px;
+      margin-bottom: 4px;
+      font-size: 0.8rem;
     }
-
-    .selected-item.custom {
-      background: #fef3c7;
-    }
-
-    .selected-item-content {
+    .selected-item.custom { background: var(--custom-bg); }
+    .selected-item-text {
       flex: 1;
-      min-width: 0;
+      cursor: text;
+      padding: 2px 4px;
+      border-radius: 3px;
+      min-height: 20px;
     }
-
-    .selected-item-name {
-      font-weight: 500;
-      margin-bottom: 2px;
-    }
-
-    .selected-item-name.editing {
-      background: white;
-      border: 1px solid var(--primary);
-      border-radius: 4px;
-      padding: 4px 8px;
+    .selected-item-text:hover { background: rgba(79, 70, 229, 0.1); }
+    .selected-item-text:focus {
       outline: none;
-      width: 100%;
-      display: block;
-    }
-
-    .selected-item-details {
-      font-size: 0.75rem;
-      color: var(--text-light);
-    }
-
-    .selected-item-details.editing {
       background: white;
-      border: 1px solid var(--primary);
-      border-radius: 4px;
-      padding: 4px 8px;
-      outline: none;
-      width: 100%;
-      display: block;
-      margin-top: 4px;
+      box-shadow: 0 0 0 2px var(--primary);
     }
-
-    .selected-item-actions {
-      display: flex;
-      gap: 4px;
-      flex-shrink: 0;
-    }
-
-    .selected-item-btn {
+    .selected-item-remove {
       background: none;
       border: none;
       color: var(--text-light);
       cursor: pointer;
-      font-size: 0.9rem;
-      padding: 2px 6px;
-      border-radius: 4px;
-      transition: all 0.2s;
+      font-size: 1rem;
+      padding: 0 4px;
+      opacity: 0.5;
     }
-
-    .selected-item-btn:hover {
-      background: var(--bg);
-      color: var(--primary);
-    }
-
-    .selected-item-btn.delete:hover {
-      color: var(--stat);
-    }
-
-    .edit-hint {
-      font-size: 0.7rem;
-      color: var(--text-light);
-      margin-top: 8px;
-      padding: 8px;
-      background: var(--bg-secondary);
-      border-radius: 4px;
-      text-align: center;
-    }
+    .selected-item-remove:hover { opacity: 1; color: var(--stat); }
 
     /* Notes */
     .notes-textarea {
       width: 100%;
-      min-height: 80px;
-      padding: 12px;
+      min-height: 60px;
+      padding: 10px;
       border: 1px solid var(--border);
-      border-radius: 8px;
+      border-radius: 6px;
       font-family: inherit;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       resize: vertical;
-      margin-bottom: 12px;
     }
+    .notes-textarea:focus { outline: none; border-color: var(--primary); }
 
-    .notes-textarea:focus {
-      outline: none;
-      border-color: var(--primary);
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      width: 100%;
+      font-size: 0.9rem;
     }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-secondary { background: var(--bg-secondary); color: var(--text); border: 1px solid var(--border); }
+    .btn-secondary:hover { background: var(--border); }
 
-    /* References & Appendix Section */
+    /* References Section - Collapsible */
     .references-section {
       margin-top: 32px;
       border-top: 2px solid var(--border);
-      padding-top: 24px;
+      padding-top: 20px;
     }
-
+    .collapsible {
+      margin-bottom: 8px;
+    }
     .collapsible-header {
       display: flex;
       justify-content: space-between;
@@ -603,118 +310,101 @@
       padding: 12px 16px;
       background: var(--bg-secondary);
       border-radius: 8px;
-      margin-bottom: 8px;
-      transition: all 0.2s;
-    }
-
-    .collapsible-header:hover {
-      background: #e5e7eb;
-    }
-
-    .collapsible-header h3 {
-      margin: 0;
-      font-size: 1rem;
       font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      font-size: 0.95rem;
+      transition: background 0.2s;
     }
-
-    .collapsible-icon {
-      transition: transform 0.2s;
-    }
-
-    .collapsible-header.open .collapsible-icon {
-      transform: rotate(180deg);
-    }
-
+    .collapsible-header:hover { background: #e5e7eb; }
+    .collapsible-icon { transition: transform 0.2s; }
+    .collapsible.open .collapsible-icon { transform: rotate(180deg); }
     .collapsible-content {
       display: none;
       padding: 16px;
       background: var(--bg-secondary);
-      border-radius: 8px;
-      margin-bottom: 8px;
+      border-radius: 0 0 8px 8px;
+      margin-top: -8px;
+      padding-top: 24px;
     }
+    .collapsible.open .collapsible-content { display: block; }
 
-    .collapsible-content.show {
-      display: block;
-    }
-
-    .reference-item {
+    /* Reference Content Styling */
+    .ref-item {
       padding: 8px 0;
       border-bottom: 1px solid var(--border);
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
+    .ref-item:last-child { border-bottom: none; }
+    .ref-term { font-weight: 600; color: var(--primary); }
+    .ref-definition { color: var(--text); margin-left: 8px; }
 
-    .reference-item:last-child {
-      border-bottom: none;
-    }
-
-    .reference-item strong {
-      color: var(--primary);
-    }
-
-    /* Buttons */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.2s;
+    /* Differential Table */
+    .diff-table {
       width: 100%;
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background: var(--primary-dark);
-    }
-
-    .btn-secondary {
-      background: var(--bg-secondary);
-      color: var(--text);
-      border: 1px solid var(--border);
-    }
-
-    .btn-secondary:hover {
-      background: var(--border);
-    }
-
-    /* Priority Legend */
-    .priority-legend {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      padding: 12px;
-      background: var(--bg-secondary);
-      border-radius: 8px;
+      border-collapse: collapse;
       font-size: 0.8rem;
+      margin-top: 8px;
+    }
+    .diff-table th, .diff-table td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .diff-table th { background: var(--bg); font-weight: 600; }
+
+    /* Evidence Table */
+    .evidence-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+      margin-top: 8px;
+    }
+    .evidence-table th, .evidence-table td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .evidence-table th { background: var(--bg); font-weight: 600; }
+    .evidence-level {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      background: #dbeafe;
+      color: #1e40af;
     }
 
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 6px;
+    /* Notes List */
+    .notes-list { list-style: none; }
+    .notes-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.85rem;
+      position: relative;
+      padding-left: 16px;
     }
-
-    /* Empty State */
-    .empty-state {
-      text-align: center;
-      padding: 60px 20px;
-      color: var(--text-light);
+    .notes-list li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: bold;
     }
+    .notes-list li:last-child { border-bottom: none; }
 
-    .empty-state h3 {
-      margin-bottom: 8px;
-      color: var(--text);
+    /* Appendix Content */
+    .appendix-content {
+      background: white;
+      padding: 16px;
+      border-radius: 6px;
+      font-family: 'Monaco', 'Menlo', monospace;
+      font-size: 0.8rem;
+      white-space: pre-wrap;
+      line-height: 1.6;
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid var(--border);
+      margin-top: 8px;
     }
 
     /* Toast */
@@ -726,718 +416,473 @@
       color: white;
       padding: 12px 20px;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       z-index: 1000;
       animation: slideIn 0.3s ease;
     }
-
     @keyframes slideIn {
-      from {
-        transform: translateY(20px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
 
-    /* Plan Meta Info */
-    .plan-meta {
+    /* Empty State */
+    .empty-state { text-align: center; padding: 60px 20px; color: var(--text-light); }
+    .empty-state h3 { margin-bottom: 8px; color: var(--text); }
+
+    /* Priority Legend */
+    .priority-legend {
       display: flex;
-      gap: 16px;
       flex-wrap: wrap;
-      padding: 12px 16px;
+      gap: 12px;
+      padding: 10px;
       background: var(--bg-secondary);
-      border-radius: 8px;
-      margin-bottom: 24px;
-      font-size: 0.85rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      margin-top: 12px;
     }
-
-    .plan-meta-item {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .plan-meta-item strong {
-      color: var(--text);
-    }
-
-    .plan-meta-item span {
-      color: var(--text-light);
-    }
+    .legend-item { display: flex; align-items: center; gap: 4px; }
   </style>
 </head>
 <body>
 
-  <header class="header">
-    <div class="header-content">
-      <div class="header-left">
-        <a href="../" class="back-btn">← Home</a>
-        <span class="header-divider">|</span>
-        <span class="logo">Clinical Plan Builder</span>
-      </div>
-      <nav class="header-nav">
-        <a href="../plans/" class="nav-link">Review Plans</a>
-        <a href="../" class="nav-link">All Resources</a>
-      </nav>
+<header class="header">
+  <div class="header-content">
+    <div class="header-left">
+      <a href="../" class="back-btn">← Home</a>
+      <span class="logo">Clinical Plan Builder</span>
     </div>
-  </header>
+  </div>
+</header>
 
-  <div class="container">
-    <!-- Controls -->
-    <div class="controls">
-      <div class="controls-row">
-        <div class="control-group">
-          <label for="diagnosis-select">Diagnosis</label>
-          <select id="diagnosis-select">
-            <option value="">Select a diagnosis...</option>
-          </select>
-        </div>
-        <div class="control-group">
-          <label>Care Setting</label>
-          <div class="venue-tabs" id="venue-tabs">
-            <button class="venue-tab" data-venue="ED">ED</button>
-            <button class="venue-tab" data-venue="HOSP">Hospital</button>
-            <button class="venue-tab" data-venue="OPD">Outpatient</button>
-            <button class="venue-tab" data-venue="ICU">ICU</button>
-          </div>
-        </div>
+<div class="container">
+  <div class="controls">
+    <div class="controls-row">
+      <div class="control-group">
+        <label for="diagnosis-select">Diagnosis</label>
+        <select id="diagnosis-select">
+          <option value="">Select a diagnosis...</option>
+        </select>
       </div>
-      <div class="priority-legend" style="margin-top: 16px;">
-        <div class="legend-item"><span class="priority priority-stat">STAT</span> Immediate</div>
-        <div class="legend-item"><span class="priority priority-urgent">URGENT</span> Within hours</div>
-        <div class="legend-item"><span class="priority priority-routine">ROUTINE</span> Standard</div>
-        <div class="legend-item"><span class="priority priority-ext">EXT</span> Extended/atypical</div>
+      <div class="control-group">
+        <label>Care Setting</label>
+        <div class="venue-tabs" id="venue-tabs">
+          <button class="venue-tab" data-venue="ED">ED</button>
+          <button class="venue-tab" data-venue="HOSP">Hospital</button>
+          <button class="venue-tab" data-venue="OPD">Outpatient</button>
+          <button class="venue-tab" data-venue="ICU">ICU</button>
+        </div>
       </div>
     </div>
-
-    <!-- Main Layout -->
-    <div class="main-layout">
-      <!-- Plan Content -->
-      <div class="plan-content" id="plan-content">
-        <div class="empty-state">
-          <h3>Select a Diagnosis</h3>
-          <p>Choose a diagnosis and care setting to view the clinical plan.</p>
-        </div>
-      </div>
-
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <div class="sidebar-card">
-          <div class="sidebar-title">
-            Selected Items
-            <span class="selected-count" id="selected-count">0</span>
-          </div>
-          <div class="selected-list" id="selected-list">
-            <p style="color: var(--text-light); font-size: 0.9rem;">No items selected</p>
-          </div>
-          <div class="edit-hint">Click the pencil icon to edit any item</div>
-        </div>
-
-        <div class="sidebar-card">
-          <div class="sidebar-title">Additional Notes</div>
-          <textarea class="notes-textarea" id="notes" placeholder="Add any additional notes or modifications..."></textarea>
-        </div>
-
-        <button class="btn btn-primary" id="copy-btn" style="margin-bottom: 12px;">
-          Copy to Clipboard
-        </button>
-        <button class="btn btn-secondary" id="clear-btn">
-          Clear Selection
-        </button>
-      </div>
+    <div class="priority-legend">
+      <div class="legend-item"><span class="priority priority-stat">STAT</span> Immediate</div>
+      <div class="legend-item"><span class="priority priority-urgent">URGENT</span> Within hours</div>
+      <div class="legend-item"><span class="priority priority-routine">ROUTINE</span> Standard</div>
+      <div class="legend-item"><span class="priority priority-ext">EXT</span> Extended</div>
     </div>
   </div>
 
-  <script>
-    // State
-    let plansData = {};
-    let currentDiagnosis = null;
-    let currentVenue = null;
-    let selectedItems = new Map(); // Changed to Map to store item data with edits
-    let customItems = new Map(); // Store custom added items
+  <div class="main-layout">
+    <div class="plan-content" id="plan-content">
+      <div class="empty-state">
+        <h3>Select a Diagnosis</h3>
+        <p>Choose a diagnosis and care setting to view the clinical plan.</p>
+      </div>
+    </div>
 
-    // DOM Elements
-    const diagnosisSelect = document.getElementById('diagnosis-select');
-    const venueTabs = document.getElementById('venue-tabs');
-    const planContent = document.getElementById('plan-content');
-    const selectedList = document.getElementById('selected-list');
-    const selectedCount = document.getElementById('selected-count');
-    const notesTextarea = document.getElementById('notes');
-    const copyBtn = document.getElementById('copy-btn');
-    const clearBtn = document.getElementById('clear-btn');
-
-    // Load plans data
-    async function loadPlans() {
-      try {
-        const response = await fetch('../data/plans.json');
-        plansData = await response.json();
-        populateDiagnosisSelect();
-      } catch (error) {
-        console.error('Error loading plans:', error);
-        planContent.innerHTML = `
-          <div class="empty-state">
-            <h3>Unable to Load Plans</h3>
-            <p>Please try refreshing the page.</p>
-          </div>
-        `;
-      }
-    }
-
-    // Populate diagnosis dropdown
-    function populateDiagnosisSelect() {
-      const diagnoses = Object.keys(plansData);
-      diagnoses.forEach(diagnosis => {
-        const option = document.createElement('option');
-        option.value = diagnosis;
-        option.textContent = diagnosis;
-        diagnosisSelect.appendChild(option);
-      });
-    }
-
-    // Handle diagnosis change
-    diagnosisSelect.addEventListener('change', (e) => {
-      currentDiagnosis = e.target.value;
-      selectedItems.clear();
-      customItems.clear();
-      updateSelectedList();
-      if (currentDiagnosis && currentVenue) {
-        renderPlan();
-      }
-    });
-
-    // Handle venue change
-    venueTabs.addEventListener('click', (e) => {
-      if (e.target.classList.contains('venue-tab')) {
-        venueTabs.querySelectorAll('.venue-tab').forEach(tab => tab.classList.remove('active'));
-        e.target.classList.add('active');
-        currentVenue = e.target.dataset.venue;
-        if (currentDiagnosis && currentVenue) {
-          renderPlan();
-        }
-      }
-    });
-
-    // Get priority class
-    function getPriorityClass(priority) {
-      if (!priority || priority === '-') return null;
-      const p = priority.toLowerCase();
-      if (p === 'stat') return 'priority-stat';
-      if (p === 'urgent') return 'priority-urgent';
-      if (p === 'routine') return 'priority-routine';
-      if (p === 'ext') return 'priority-ext';
-      return null;
-    }
-
-    // Render plan content
-    function renderPlan() {
-      const plan = plansData[currentDiagnosis];
-      if (!plan || !plan.sections) {
-        planContent.innerHTML = '<div class="empty-state"><h3>No data available</h3></div>';
-        return;
-      }
-
-      let html = '';
-
-      // Plan Meta Info
-      html += `
-        <div class="plan-meta">
-          <div class="plan-meta-item"><strong>Version:</strong> <span>${plan.version || 'N/A'}</span></div>
-          <div class="plan-meta-item"><strong>ICD-10:</strong> <span>${plan.icd10 || 'N/A'}</span></div>
+    <div class="sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-title">
+          Selected Items
+          <span class="selected-count" id="selected-count">0</span>
         </div>
-      `;
+        <div class="selected-list" id="selected-list">
+          <p style="color: var(--text-light); font-size: 0.85rem;">No items selected</p>
+        </div>
+      </div>
 
-      for (const [sectionName, subsections] of Object.entries(plan.sections)) {
-        let sectionHasItems = false;
-        let sectionHtml = `
-          <div class="section" data-section="${sectionName}">
-            <div class="section-header">
-              <h2 class="section-title">${sectionName}</h2>
-              <button class="add-item-btn" data-section="${sectionName}">+ Add Item</button>
-            </div>
-        `;
+      <div class="sidebar-card">
+        <div class="sidebar-title">Additional Notes</div>
+        <textarea class="notes-textarea" id="notes" placeholder="Add notes..."></textarea>
+      </div>
 
-        for (const [subsectionName, items] of Object.entries(subsections)) {
-          // Filter items for current venue
-          const filteredItems = items.filter(item => {
-            const priority = item[currentVenue];
-            return priority && priority !== '-';
-          });
+      <button class="btn btn-primary" id="copy-btn" style="margin-bottom: 8px;">Copy to Clipboard</button>
+      <button class="btn btn-secondary" id="clear-btn">Clear Selection</button>
+    </div>
+  </div>
+</div>
 
-          if (filteredItems.length === 0) continue;
-          sectionHasItems = true;
+<script>
+  let plansData = {};
+  let currentDiagnosis = null;
+  let currentVenue = null;
+  let selectedItems = new Map();
+  let customItems = new Map();
 
-          const subsectionId = `${sectionName}__${subsectionName}`;
-          sectionHtml += `
-            <div class="subsection" data-subsection="${subsectionId}">
-              <div class="subsection-header">
-                <h3 class="subsection-title">${subsectionName}</h3>
-              </div>
-              <div class="item-list">
-          `;
+  const diagnosisSelect = document.getElementById('diagnosis-select');
+  const venueTabs = document.getElementById('venue-tabs');
+  const planContent = document.getElementById('plan-content');
+  const selectedList = document.getElementById('selected-list');
+  const selectedCount = document.getElementById('selected-count');
+  const notesTextarea = document.getElementById('notes');
+  const copyBtn = document.getElementById('copy-btn');
+  const clearBtn = document.getElementById('clear-btn');
 
-          filteredItems.forEach((item, index) => {
-            const itemId = `${sectionName}__${subsectionName}__${index}`;
-            const priority = item[currentVenue];
-            const priorityClass = getPriorityClass(priority);
-            const isSelected = selectedItems.has(itemId);
+  async function loadPlans() {
+    try {
+      const response = await fetch('../data/plans.json');
+      plansData = await response.json();
+      Object.keys(plansData).forEach(d => {
+        const opt = document.createElement('option');
+        opt.value = d;
+        opt.textContent = d;
+        diagnosisSelect.appendChild(opt);
+      });
+    } catch (e) {
+      planContent.innerHTML = '<div class="empty-state"><h3>Unable to Load Plans</h3></div>';
+    }
+  }
 
-            sectionHtml += `
-              <div class="item ${isSelected ? 'selected' : ''}" data-id="${itemId}" data-section="${sectionName}" data-subsection="${subsectionName}">
-                <input type="checkbox" ${isSelected ? 'checked' : ''}>
-                <div class="item-content">
-                  <div class="item-name">
-                    ${priorityClass ? `<span class="priority ${priorityClass}">${priority}</span>` : ''}
-                    ${item.item || item.name || item.treatment || 'Item'}
-                  </div>
-                  ${item.rationale ? `<div class="item-details">${item.rationale}</div>` : ''}
-                  ${item.dosing ? `<div class="item-details"><strong>Dosing:</strong> ${item.dosing}</div>` : ''}
-                </div>
-              </div>
-            `;
-          });
+  diagnosisSelect.addEventListener('change', e => {
+    currentDiagnosis = e.target.value;
+    selectedItems.clear();
+    customItems.clear();
+    updateSelectedList();
+    if (currentDiagnosis && currentVenue) renderPlan();
+  });
 
-          sectionHtml += '</div>'; // Close item-list
+  venueTabs.addEventListener('click', e => {
+    if (e.target.classList.contains('venue-tab')) {
+      venueTabs.querySelectorAll('.venue-tab').forEach(t => t.classList.remove('active'));
+      e.target.classList.add('active');
+      currentVenue = e.target.dataset.venue;
+      if (currentDiagnosis && currentVenue) renderPlan();
+    }
+  });
 
-          // Add form for custom items in this subsection
-          sectionHtml += `
-            <div class="add-item-form" id="add-form-${subsectionId.replace(/\s+/g, '_')}">
-              <input type="text" placeholder="Item name (e.g., Serum ferritin)" class="custom-item-name">
-              <textarea placeholder="Details/rationale (optional)" class="custom-item-details"></textarea>
-              <div class="add-item-form-actions">
-                <button class="add-item-form-btn secondary cancel-add">Cancel</button>
-                <button class="add-item-form-btn primary confirm-add" data-section="${sectionName}" data-subsection="${subsectionName}">Add Item</button>
-              </div>
-            </div>
-          `;
+  function getPriorityClass(p) {
+    if (!p || p === '-') return null;
+    const pl = p.toLowerCase();
+    if (pl === 'stat') return 'priority-stat';
+    if (pl === 'urgent') return 'priority-urgent';
+    if (pl === 'routine') return 'priority-routine';
+    if (pl === 'ext') return 'priority-ext';
+    return null;
+  }
 
-          sectionHtml += '</div>'; // Close subsection
-        }
+  function renderPlan() {
+    const plan = plansData[currentDiagnosis];
+    if (!plan || !plan.sections) {
+      planContent.innerHTML = '<div class="empty-state"><h3>No data available</h3></div>';
+      return;
+    }
 
-        // Render custom items for this section
-        const sectionCustomItems = [...customItems.entries()].filter(([id, item]) => item.section === sectionName);
-        if (sectionCustomItems.length > 0) {
-          sectionHtml += `
-            <div class="subsection">
-              <h3 class="subsection-title">Custom Items</h3>
-              <div class="item-list">
-          `;
-          sectionCustomItems.forEach(([customId, customItem]) => {
-            const isSelected = selectedItems.has(customId);
-            sectionHtml += `
-              <div class="item custom-item ${isSelected ? 'selected' : ''}" data-id="${customId}" data-section="${sectionName}" data-custom="true">
-                <input type="checkbox" ${isSelected ? 'checked' : ''}>
-                <div class="item-content">
-                  <div class="item-name">${customItem.name}</div>
-                  ${customItem.details ? `<div class="item-details">${customItem.details}</div>` : ''}
-                </div>
-              </div>
-            `;
-          });
-          sectionHtml += '</div></div>';
-        }
+    let html = '';
 
-        sectionHtml += '</div>'; // Close section
+    // Sections
+    for (const [sectionName, subsections] of Object.entries(plan.sections)) {
+      let sectionHasItems = false;
+      let sectionHtml = `<div class="section" data-section="${sectionName}">
+        <div class="section-header"><h2 class="section-title">${sectionName}</h2></div>`;
 
-        if (sectionHasItems || sectionCustomItems.length > 0) {
-          html += sectionHtml;
-        }
+      for (const [subsectionName, items] of Object.entries(subsections)) {
+        const filtered = items.filter(item => {
+          const p = item[currentVenue];
+          return p && p !== '-';
+        });
+        if (!filtered.length) continue;
+        sectionHasItems = true;
+
+        sectionHtml += `<div class="subsection"><div class="subsection-title">${subsectionName}</div><div class="item-list">`;
+        filtered.forEach((item, idx) => {
+          const itemId = `${sectionName}__${subsectionName}__${idx}`;
+          const priority = item[currentVenue];
+          const pc = getPriorityClass(priority);
+          const sel = selectedItems.has(itemId);
+          const name = item.item || item.name || item.treatment || 'Item';
+
+          sectionHtml += `<div class="item ${sel ? 'selected' : ''}" data-id="${itemId}" data-section="${sectionName}" data-subsection="${subsectionName}">
+            <input type="checkbox" ${sel ? 'checked' : ''}>
+            <div class="item-name">${pc ? `<span class="priority ${pc}">${priority}</span>` : ''}${name}</div>
+          </div>`;
+        });
+        sectionHtml += '</div></div>';
       }
 
-      // References & Appendix Section (Collapsible)
-      html += `
-        <div class="references-section">
+      // Custom items for this section
+      const sectionCustom = [...customItems.entries()].filter(([id, item]) => item.section === sectionName);
+      if (sectionCustom.length) {
+        sectionHtml += `<div class="subsection"><div class="subsection-title">Custom Items</div><div class="item-list">`;
+        sectionCustom.forEach(([cid, citem]) => {
+          const sel = selectedItems.has(cid);
+          sectionHtml += `<div class="item custom ${sel ? 'selected' : ''}" data-id="${cid}" data-section="${sectionName}" data-custom="true">
+            <input type="checkbox" ${sel ? 'checked' : ''}>
+            <div class="item-name">${citem.name}</div>
+          </div>`;
+        });
+        sectionHtml += '</div></div>';
+      }
+
+      // Add item input - always visible
+      sectionHtml += `<div class="add-item-input">
+        <input type="text" placeholder="Add custom item to ${sectionName}..." data-section="${sectionName}" class="custom-input">
+      </div>`;
+
+      sectionHtml += '</div>';
+      if (sectionHasItems || sectionCustom.length) html += sectionHtml;
+    }
+
+    // References Section
+    html += `<div class="references-section">`;
+
+    // Definitions
+    if (plan.definitions && plan.definitions.length) {
+      html += `<div class="collapsible">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <span>Definitions</span><span class="collapsible-icon">▼</span>
+        </div>
+        <div class="collapsible-content">`;
+      plan.definitions.forEach(d => {
+        html += `<div class="ref-item"><span class="ref-term">${d.term}:</span><span class="ref-definition">${d.definition}</span></div>`;
+      });
+      html += `</div></div>`;
+    }
+
+    // Differential
+    if (plan.differential && plan.differential.length) {
+      html += `<div class="collapsible">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <span>Differential Diagnosis</span><span class="collapsible-icon">▼</span>
+        </div>
+        <div class="collapsible-content">
+          <table class="diff-table">
+            <tr><th>Diagnosis</th><th>Features</th><th>Tests</th></tr>`;
+      plan.differential.forEach(d => {
+        html += `<tr><td><strong>${d.diagnosis}</strong></td><td>${d.features}</td><td>${d.tests}</td></tr>`;
+      });
+      html += `</table></div></div>`;
+    }
+
+    // Notes
+    if (plan.notes && plan.notes.length) {
+      html += `<div class="collapsible">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <span>Clinical Notes</span><span class="collapsible-icon">▼</span>
+        </div>
+        <div class="collapsible-content"><ul class="notes-list">`;
+      plan.notes.forEach(n => {
+        html += `<li>${n}</li>`;
+      });
+      html += `</ul></div></div>`;
+    }
+
+    // Evidence
+    if (plan.evidence && plan.evidence.length) {
+      html += `<div class="collapsible">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <span>Evidence & References</span><span class="collapsible-icon">▼</span>
+        </div>
+        <div class="collapsible-content">
+          <table class="evidence-table">
+            <tr><th>Recommendation</th><th>Level</th><th>Source</th></tr>`;
+      plan.evidence.forEach(e => {
+        html += `<tr><td>${e.recommendation}</td><td><span class="evidence-level">${e.level}</span></td><td>${e.source}</td></tr>`;
+      });
+      html += `</table></div></div>`;
+    }
+
+    // Appendices
+    if (plan.appendices && plan.appendices.length) {
+      plan.appendices.forEach(app => {
+        html += `<div class="collapsible">
           <div class="collapsible-header" onclick="toggleCollapsible(this)">
-            <h3><span class="collapsible-icon">▼</span> References & Evidence</h3>
+            <span>${app.title}</span><span class="collapsible-icon">▼</span>
           </div>
           <div class="collapsible-content">
-            <div class="reference-item">
-              <strong>Scope:</strong> ${plan.scope || 'Not specified'}
-            </div>
-            <div class="reference-item">
-              <strong>ICD-10 Codes:</strong> ${plan.icd10 || 'Not specified'}
-            </div>
-            <div class="reference-item">
-              <strong>Version:</strong> ${plan.version || 'N/A'}
-            </div>
-            <p style="margin-top: 12px; font-size: 0.85rem; color: var(--text-light);">
-              For detailed references and citations, view the full plan documentation in the Plans section.
-            </p>
+            <div class="appendix-content">${app.content}</div>
           </div>
-
-          <div class="collapsible-header" onclick="toggleCollapsible(this)">
-            <h3><span class="collapsible-icon">▼</span> Appendices</h3>
-          </div>
-          <div class="collapsible-content">
-            <p style="font-size: 0.85rem; color: var(--text-light);">
-              Appendices including rapid protocols, dosing tables, and algorithms are available in the full plan documentation.
-              <br><br>
-              <a href="../plans/" style="color: var(--primary);">View Full Plans →</a>
-            </p>
-          </div>
-        </div>
-      `;
-
-      planContent.innerHTML = html || '<div class="empty-state"><h3>No items for this venue</h3></div>';
-
-      // Attach click handlers for items
-      planContent.querySelectorAll('.item').forEach(item => {
-        item.addEventListener('click', (e) => {
-          if (e.target.tagName === 'INPUT') return; // Let checkbox handle itself
-          toggleItemSelection(item);
-        });
-
-        item.querySelector('input[type="checkbox"]').addEventListener('change', () => {
-          toggleItemSelection(item);
-        });
+        </div>`;
       });
+    }
 
-      // Attach handlers for add item buttons
-      planContent.querySelectorAll('.add-item-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const section = btn.dataset.section;
-          // Find first subsection form in this section
-          const sectionEl = btn.closest('.section');
-          const form = sectionEl.querySelector('.add-item-form');
-          if (form) {
-            form.classList.toggle('show');
-            if (form.classList.contains('show')) {
-              form.querySelector('.custom-item-name').focus();
-            }
-          }
-        });
+    html += `</div>`;
+
+    planContent.innerHTML = html || '<div class="empty-state"><h3>No items for this venue</h3></div>';
+
+    // Attach item click handlers
+    planContent.querySelectorAll('.item').forEach(item => {
+      item.addEventListener('click', e => {
+        if (e.target.tagName === 'INPUT') return;
+        toggleItem(item);
       });
+      item.querySelector('input[type="checkbox"]').addEventListener('change', () => toggleItem(item));
+    });
 
-      // Attach handlers for form buttons
-      planContent.querySelectorAll('.cancel-add').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const form = btn.closest('.add-item-form');
-          form.classList.remove('show');
-          form.querySelector('.custom-item-name').value = '';
-          form.querySelector('.custom-item-details').value = '';
-        });
-      });
-
-      planContent.querySelectorAll('.confirm-add').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const form = btn.closest('.add-item-form');
-          const name = form.querySelector('.custom-item-name').value.trim();
-          const details = form.querySelector('.custom-item-details').value.trim();
-          const section = btn.dataset.section;
-          const subsection = btn.dataset.subsection;
-
-          if (!name) {
-            showToast('Please enter an item name');
-            return;
-          }
-
-          // Create custom item
-          const customId = `custom__${section}__${Date.now()}`;
-          const customItem = {
-            name,
-            details,
-            section,
-            subsection,
-            isCustom: true
-          };
-
-          customItems.set(customId, customItem);
-          selectedItems.set(customId, { ...customItem, editedName: name, editedDetails: details });
-
-          // Clear and hide form
-          form.classList.remove('show');
-          form.querySelector('.custom-item-name').value = '';
-          form.querySelector('.custom-item-details').value = '';
-
-          // Re-render
+    // Attach custom input handlers - press Enter to add
+    planContent.querySelectorAll('.custom-input').forEach(input => {
+      input.addEventListener('keydown', e => {
+        if (e.key === 'Enter' && input.value.trim()) {
+          const section = input.dataset.section;
+          const name = input.value.trim();
+          const cid = `custom__${section}__${Date.now()}`;
+          const citem = { name, section, isCustom: true };
+          customItems.set(cid, citem);
+          selectedItems.set(cid, { ...citem, editedName: name });
+          input.value = '';
           renderPlan();
           updateSelectedList();
-          showToast('Custom item added');
-        });
+          showToast('Item added');
+        }
       });
+    });
+  }
+
+  window.toggleCollapsible = function(header) {
+    header.parentElement.classList.toggle('open');
+  };
+
+  function toggleItem(itemEl) {
+    const id = itemEl.dataset.id;
+    const cb = itemEl.querySelector('input[type="checkbox"]');
+    const section = itemEl.dataset.section;
+    const subsection = itemEl.dataset.subsection || '';
+    const isCustom = itemEl.dataset.custom === 'true';
+
+    if (selectedItems.has(id)) {
+      selectedItems.delete(id);
+      itemEl.classList.remove('selected');
+      cb.checked = false;
+    } else {
+      let itemData;
+      if (isCustom) {
+        itemData = customItems.get(id);
+      } else {
+        const plan = plansData[currentDiagnosis];
+        const items = plan.sections[section]?.[subsection] || [];
+        const idx = parseInt(id.split('__').pop());
+        itemData = items[idx];
+      }
+      if (itemData) {
+        const name = itemData.item || itemData.name || itemData.treatment || itemData.name || 'Item';
+        selectedItems.set(id, { ...itemData, section, subsection, isCustom, editedName: name });
+      }
+      itemEl.classList.add('selected');
+      cb.checked = true;
+    }
+    updateSelectedList();
+  }
+
+  function updateSelectedList() {
+    selectedCount.textContent = selectedItems.size;
+    if (!selectedItems.size) {
+      selectedList.innerHTML = '<p style="color: var(--text-light); font-size: 0.85rem;">No items selected</p>';
+      return;
     }
 
-    // Toggle item selection
-    function toggleItemSelection(itemEl) {
-      const id = itemEl.dataset.id;
-      const checkbox = itemEl.querySelector('input[type="checkbox"]');
-      const section = itemEl.dataset.section;
-      const subsection = itemEl.dataset.subsection || '';
-      const isCustom = itemEl.dataset.custom === 'true';
+    const grouped = {};
+    selectedItems.forEach((item, id) => {
+      const sec = item.section || 'Other';
+      if (!grouped[sec]) grouped[sec] = [];
+      grouped[sec].push({ id, ...item });
+    });
 
-      if (selectedItems.has(id)) {
+    let html = '';
+    for (const [sec, items] of Object.entries(grouped)) {
+      html += `<div class="selected-section"><div class="selected-section-label">${sec}</div>`;
+      items.forEach(item => {
+        html += `<div class="selected-item ${item.isCustom ? 'custom' : ''}" data-id="${item.id}">
+          <span class="selected-item-text" contenteditable="true" data-id="${item.id}">${item.editedName}</span>
+          <button class="selected-item-remove" data-id="${item.id}">×</button>
+        </div>`;
+      });
+      html += '</div>';
+    }
+    selectedList.innerHTML = html;
+
+    // Attach remove handlers
+    selectedList.querySelectorAll('.selected-item-remove').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const id = btn.dataset.id;
         selectedItems.delete(id);
-        itemEl.classList.remove('selected');
-        checkbox.checked = false;
-      } else {
-        // Get item data
-        let itemData;
-        if (isCustom) {
-          itemData = customItems.get(id);
-        } else {
-          const plan = plansData[currentDiagnosis];
-          const subsectionItems = plan.sections[section]?.[subsection] || [];
-          const index = parseInt(id.split('__').pop());
-          itemData = subsectionItems[index];
+        const itemEl = planContent.querySelector(`.item[data-id="${id}"]`);
+        if (itemEl) {
+          itemEl.classList.remove('selected');
+          itemEl.querySelector('input[type="checkbox"]').checked = false;
         }
+        updateSelectedList();
+      });
+    });
 
-        if (itemData) {
-          selectedItems.set(id, {
-            ...itemData,
-            section,
-            subsection,
-            isCustom,
-            editedName: itemData.item || itemData.name || itemData.treatment || itemData.name,
-            editedDetails: itemData.dosing || itemData.rationale || itemData.details || ''
-          });
+    // Attach inline edit handlers - click directly to edit
+    selectedList.querySelectorAll('.selected-item-text').forEach(span => {
+      span.addEventListener('blur', () => {
+        const id = span.dataset.id;
+        const item = selectedItems.get(id);
+        if (item) {
+          item.editedName = span.textContent.trim() || item.editedName;
+          selectedItems.set(id, item);
         }
-
-        itemEl.classList.add('selected');
-        checkbox.checked = true;
-      }
-
-      updateSelectedList();
-    }
-
-    // Collapsible toggle function
-    window.toggleCollapsible = function(header) {
-      header.classList.toggle('open');
-      const content = header.nextElementSibling;
-      content.classList.toggle('show');
-    };
-
-    // Update selected items list with section grouping
-    function updateSelectedList() {
-      selectedCount.textContent = selectedItems.size;
-
-      if (selectedItems.size === 0) {
-        selectedList.innerHTML = '<p style="color: var(--text-light); font-size: 0.9rem;">No items selected</p>';
-        return;
-      }
-
-      // Group items by section
-      const grouped = {};
-      selectedItems.forEach((item, id) => {
-        const section = item.section || 'Other';
-        if (!grouped[section]) grouped[section] = [];
-        grouped[section].push({ id, ...item });
       });
-
-      let html = '';
-      for (const [section, items] of Object.entries(grouped)) {
-        html += `
-          <div class="selected-section-group">
-            <div class="selected-section-label">${section}</div>
-        `;
-
-        items.forEach(item => {
-          const isCustom = item.isCustom;
-          html += `
-            <div class="selected-item ${isCustom ? 'custom' : ''}" data-id="${item.id}">
-              <div class="selected-item-content">
-                <div class="selected-item-name" data-field="name">${item.editedName || item.item || item.name || item.treatment || 'Item'}</div>
-                ${item.editedDetails ? `<div class="selected-item-details" data-field="details">${item.editedDetails}</div>` : ''}
-              </div>
-              <div class="selected-item-actions">
-                <button class="selected-item-btn edit" title="Edit item" data-id="${item.id}">✏️</button>
-                <button class="selected-item-btn delete" title="Remove item" data-id="${item.id}">×</button>
-              </div>
-            </div>
-          `;
-        });
-
-        html += '</div>';
-      }
-
-      selectedList.innerHTML = html;
-
-      // Attach handlers
-      selectedList.querySelectorAll('.selected-item-btn.delete').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const id = btn.dataset.id;
-          selectedItems.delete(id);
-
-          // Update checkbox in main view
-          const itemEl = planContent.querySelector(`.item[data-id="${id}"]`);
-          if (itemEl) {
-            itemEl.classList.remove('selected');
-            itemEl.querySelector('input[type="checkbox"]').checked = false;
-          }
-
-          updateSelectedList();
-        });
-      });
-
-      selectedList.querySelectorAll('.selected-item-btn.edit').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const id = btn.dataset.id;
-          const itemEl = btn.closest('.selected-item');
-          const nameEl = itemEl.querySelector('.selected-item-name');
-          const detailsEl = itemEl.querySelector('.selected-item-details');
-
-          // Check if already editing
-          if (nameEl.classList.contains('editing')) {
-            // Save edits
-            saveItemEdits(id, nameEl, detailsEl);
-          } else {
-            // Enter edit mode
-            enterEditMode(id, nameEl, detailsEl);
-          }
-        });
-      });
-    }
-
-    // Enter edit mode for an item
-    function enterEditMode(id, nameEl, detailsEl) {
-      const item = selectedItems.get(id);
-      if (!item) return;
-
-      // Convert name to input
-      const nameInput = document.createElement('input');
-      nameInput.type = 'text';
-      nameInput.className = 'selected-item-name editing';
-      nameInput.value = item.editedName || nameEl.textContent;
-      nameEl.replaceWith(nameInput);
-      nameInput.focus();
-      nameInput.select();
-
-      // Convert details to textarea if exists
-      if (detailsEl) {
-        const detailsInput = document.createElement('textarea');
-        detailsInput.className = 'selected-item-details editing';
-        detailsInput.value = item.editedDetails || detailsEl.textContent;
-        detailsEl.replaceWith(detailsInput);
-      } else {
-        // Add details input if none exists
-        const detailsInput = document.createElement('textarea');
-        detailsInput.className = 'selected-item-details editing';
-        detailsInput.placeholder = 'Add details...';
-        detailsInput.value = '';
-        nameInput.after(detailsInput);
-      }
-
-      // Update button to save icon
-      const editBtn = nameInput.closest('.selected-item').querySelector('.selected-item-btn.edit');
-      editBtn.textContent = '✓';
-      editBtn.title = 'Save changes';
-
-      // Handle Enter key to save
-      nameInput.addEventListener('keydown', (e) => {
+      span.addEventListener('keydown', e => {
         if (e.key === 'Enter') {
           e.preventDefault();
-          saveItemEdits(id, nameInput, nameInput.nextElementSibling);
+          span.blur();
         }
       });
-    }
+    });
+  }
 
-    // Save item edits
-    function saveItemEdits(id, nameInput, detailsInput) {
-      const item = selectedItems.get(id);
-      if (!item) return;
+  function generateOutput() {
+    if (!selectedItems.size) return '';
+    let out = `CLINICAL PLAN: ${currentDiagnosis}\nSetting: ${currentVenue}\nGenerated: ${new Date().toLocaleString()}\n${'─'.repeat(50)}\n\n`;
 
-      const newName = nameInput.value.trim() || item.editedName;
-      const newDetails = detailsInput ? detailsInput.value.trim() : '';
-
-      // Update stored item
-      item.editedName = newName;
-      item.editedDetails = newDetails;
-      selectedItems.set(id, item);
-
-      // Update display
-      updateSelectedList();
-      showToast('Item updated');
-    }
-
-    // Generate output text with section labels
-    function generateOutput() {
-      if (selectedItems.size === 0) return '';
-
-      let output = `CLINICAL PLAN: ${currentDiagnosis}\n`;
-      output += `Setting: ${currentVenue}\n`;
-      output += `Generated: ${new Date().toLocaleString()}\n`;
-      output += '─'.repeat(50) + '\n\n';
-
-      // Group by section
-      const grouped = {};
-      selectedItems.forEach((item, id) => {
-        const section = item.section || 'Other';
-        if (!grouped[section]) grouped[section] = [];
-        grouped[section].push(item);
-      });
-
-      for (const [section, items] of Object.entries(grouped)) {
-        output += `## ${section}\n`;
-        items.forEach(item => {
-          const name = item.editedName || item.item || item.name || item.treatment || 'Item';
-          const priority = item[currentVenue] || '';
-          const details = item.editedDetails || item.dosing || item.rationale || '';
-
-          if (priority) {
-            output += `• [${priority}] ${name}\n`;
-          } else {
-            output += `• ${name}\n`;
-          }
-
-          if (details) {
-            output += `  ${details}\n`;
-          }
-        });
-        output += '\n';
-      }
-
-      const notes = notesTextarea.value.trim();
-      if (notes) {
-        output += `## Additional Notes\n${notes}\n`;
-      }
-
-      return output;
-    }
-
-    // Copy to clipboard
-    copyBtn.addEventListener('click', () => {
-      const output = generateOutput();
-      if (!output) {
-        showToast('No items selected');
-        return;
-      }
-
-      navigator.clipboard.writeText(output).then(() => {
-        showToast('Copied to clipboard!');
-      }).catch(() => {
-        showToast('Failed to copy');
-      });
+    const grouped = {};
+    selectedItems.forEach((item, id) => {
+      const sec = item.section || 'Other';
+      if (!grouped[sec]) grouped[sec] = [];
+      grouped[sec].push(item);
     });
 
-    // Clear selection
-    clearBtn.addEventListener('click', () => {
-      selectedItems.clear();
-      customItems.clear();
-      notesTextarea.value = '';
-      renderPlan();
-      updateSelectedList();
-    });
-
-    // Toast notification
-    function showToast(message) {
-      const existing = document.querySelector('.toast');
-      if (existing) existing.remove();
-
-      const toast = document.createElement('div');
-      toast.className = 'toast';
-      toast.textContent = message;
-      document.body.appendChild(toast);
-
-      setTimeout(() => toast.remove(), 3000);
+    for (const [sec, items] of Object.entries(grouped)) {
+      out += `## ${sec}\n`;
+      items.forEach(item => {
+        const name = item.editedName || 'Item';
+        const priority = item[currentVenue] || '';
+        out += priority ? `• [${priority}] ${name}\n` : `• ${name}\n`;
+      });
+      out += '\n';
     }
 
-    // Initialize
-    loadPlans();
-  </script>
+    const notes = notesTextarea.value.trim();
+    if (notes) out += `## Additional Notes\n${notes}\n`;
+    return out;
+  }
+
+  copyBtn.addEventListener('click', () => {
+    const out = generateOutput();
+    if (!out) { showToast('No items selected'); return; }
+    navigator.clipboard.writeText(out).then(() => showToast('Copied!')).catch(() => showToast('Failed'));
+  });
+
+  clearBtn.addEventListener('click', () => {
+    selectedItems.clear();
+    customItems.clear();
+    notesTextarea.value = '';
+    renderPlan();
+    updateSelectedList();
+  });
+
+  function showToast(msg) {
+    const existing = document.querySelector('.toast');
+    if (existing) existing.remove();
+    const t = document.createElement('div');
+    t.className = 'toast';
+    t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(() => t.remove(), 2500);
+  }
+
+  loadPlans();
+</script>
 
 </body>
 </html>
