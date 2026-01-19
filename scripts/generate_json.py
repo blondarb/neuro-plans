@@ -552,17 +552,26 @@ class ParityChecker:
         return parity_ok, self.discrepancies
 
     def _count_markdown_items(self) -> dict:
-        """Count items in each markdown section by parsing tables."""
+        """Count items in each markdown section by parsing tables.
+
+        This method carefully tracks section boundaries to avoid counting:
+        - Appendix tables (algorithm timelines, etc.)
+        - Change log entries
+        - Notes sections
+        - Timeline/overview tables that aren't actionable items
+        """
         counts = {}
         content = self.markdown_path.read_text(encoding='utf-8')
         lines = content.split('\n')
 
         # Track current section
-        current_section = None
         current_subsection = None
         in_table = False
         item_count = 0
+        in_valid_section = False  # Track if we're in a countable section
+        skip_next_table = False   # For skipping timeline tables
 
+        # Patterns for sections we want to count (Sections 1-8)
         section_patterns = [
             (r'##?\s*1[.\s]+LABORATORY', 'Laboratory Workup'),
             (r'###?\s*1A', 'Core Labs'),
@@ -591,37 +600,93 @@ class ParityChecker:
             (r'##?\s*8[.\s]+EVIDENCE', 'Evidence & References'),
         ]
 
-        for line in lines:
+        # Patterns that indicate we should STOP counting (end of main content)
+        stop_patterns = [
+            r'##?\s*APPENDIX',
+            r'##?\s*NOTES\s*$',
+            r'##?\s*CHANGE\s*LOG',
+            r'##?\s*---\s*$',  # Horizontal rule often separates sections
+        ]
+
+        # Patterns for subsection headers within NORSE that we should skip counting
+        # These are overview/timeline tables, not treatment items
+        skip_table_patterns = [
+            r'####?\s*Timeline-Based Protocol',
+        ]
+
+        for i, line in enumerate(lines):
+            # Check if we hit a stop pattern (end of countable content)
+            for pattern in stop_patterns:
+                if re.search(pattern, line, re.IGNORECASE):
+                    # Save current count before stopping
+                    if current_subsection and item_count > 0:
+                        counts[current_subsection] = counts.get(current_subsection, 0) + item_count
+                    in_valid_section = False
+                    current_subsection = None
+                    item_count = 0
+                    break
+
+            if not in_valid_section and current_subsection is None:
+                # Check if we're entering a valid section
+                pass
+
+            # Check for skip-table patterns (like Timeline-Based Protocol)
+            for pattern in skip_table_patterns:
+                if re.search(pattern, line, re.IGNORECASE):
+                    skip_next_table = True
+                    break
+
             # Check for section headers
+            matched_section = False
             for pattern, section_name in section_patterns:
                 if re.search(pattern, line, re.IGNORECASE):
                     # Save previous subsection count
                     if current_subsection and item_count > 0:
-                        counts[current_subsection] = item_count
+                        counts[current_subsection] = counts.get(current_subsection, 0) + item_count
                     current_subsection = section_name
                     item_count = 0
                     in_table = False
+                    in_valid_section = True
+                    skip_next_table = False  # Reset skip flag on new section
+                    matched_section = True
                     break
 
-            # Count table rows (items)
-            if line.strip().startswith('|'):
+            if matched_section:
+                continue
+
+            # Check for sub-subsection headers (#### First-Line Immunotherapy, etc.)
+            # These indicate a new table is coming - reset skip flag if it's a treatment table
+            if re.match(r'####\s+(?:First-Line|Second-Line)\s+Immunotherapy', line, re.IGNORECASE):
+                skip_next_table = False  # These ARE treatment tables, don't skip
+
+            # Count table rows (items) only if we're in a valid section
+            if in_valid_section and current_subsection and line.strip().startswith('|'):
+                # Check if this is a new table after a skip pattern
+                if skip_next_table:
+                    # Check if we've moved past the table (non-table line encountered)
+                    # For now, just skip until we see a new subsection header
+                    continue
+
                 cells = [c.strip() for c in line.split('|')[1:-1]]
                 # Skip header rows and separator rows
                 if cells and not all(set(c) <= {'-', ':', ' '} for c in cells):
                     # Skip rows where first cell is a header-like word
                     first_cell = cells[0].lower() if cells else ''
                     header_words = ['test', 'study', 'treatment', 'medication', 'recommendation',
-                                   'parameter', 'disposition', 'alternative diagnosis', 'diagnosis']
+                                   'parameter', 'disposition', 'alternative diagnosis', 'diagnosis',
+                                   'timing', 'intervention']  # Added timing/intervention for timeline tables
                     if first_cell and first_cell not in header_words and not first_cell.startswith('---'):
-                        item_count += 1
-                        in_table = True
+                        # Additional check: skip timeline entries like "Day 0-3", "Day 7", etc.
+                        if not re.match(r'\*?\*?day\s+\d', first_cell, re.IGNORECASE):
+                            item_count += 1
+                            in_table = True
             elif in_table and not line.strip().startswith('|') and line.strip():
-                # End of table - but keep counting if next table
-                pass
+                # End of table
+                skip_next_table = False  # Reset after table ends
 
         # Save final subsection
         if current_subsection and item_count > 0:
-            counts[current_subsection] = item_count
+            counts[current_subsection] = counts.get(current_subsection, 0) + item_count
 
         return counts
 
@@ -656,16 +721,17 @@ class ParityChecker:
         if not plan_data:
             return counts
 
-        # Count items in sections
+        # Count items in sections (accumulate for duplicate subsection names)
         sections = plan_data.get('sections', {})
         if isinstance(sections, dict):
             for section_name, section_data in sections.items():
                 if isinstance(section_data, dict):
                     for subsection_name, items in section_data.items():
                         if isinstance(items, list):
-                            counts[subsection_name] = len(items)
+                            # Accumulate counts for subsections with same name
+                            counts[subsection_name] = counts.get(subsection_name, 0) + len(items)
                 elif isinstance(section_data, list):
-                    counts[section_name] = len(section_data)
+                    counts[section_name] = counts.get(section_name, 0) + len(section_data)
 
         # Also check top-level arrays
         for key in ['differential', 'evidence', 'notes', 'definitions']:

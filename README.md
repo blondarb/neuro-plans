@@ -69,6 +69,9 @@ python scripts/generate_json.py docs/plans/status-epilepticus.md --validate-only
 # Merge into plans.json
 python scripts/generate_json.py docs/plans/status-epilepticus.md --merge
 
+# Check parity between markdown and existing JSON
+python scripts/generate_json.py docs/plans/status-epilepticus.md --check-parity
+
 # Process all plans
 python scripts/generate_json.py --all --merge
 ```
@@ -79,6 +82,7 @@ Features:
 - Built-in validation with detailed reports
 - Checks medication safety fields (dosing, contraindications)
 - Merge mode for updating `docs/data/plans.json`
+- **Parity checking** to verify markdown and JSON item counts match
 
 ## Repository Structure
 
