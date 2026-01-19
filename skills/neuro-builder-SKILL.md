@@ -539,6 +539,111 @@ See `references/lp-reference.md` for comprehensive LP panels organized by diagno
 - Advanced molecular testing (BioFire ME Panel, mNGS/Delve Detect, CSF cfDNA for tumors)
 - Therapeutic LP protocols (NPH, IIH)
 
+## Clinical Tool JSON Schema
+
+When converting plans to JSON format for the Clinical Plan Builder web interface, use this schema to ensure all metadata displays correctly with icons.
+
+### Plan-Level Fields
+
+```json
+{
+  "id": "condition-name",
+  "title": "Condition Name",
+  "version": "1.0",
+  "notes": "Important clinical notes displayed in collapsible banner at top",
+  "sections": [...]
+}
+```
+
+### Section Structure
+
+```json
+{
+  "title": "Section Title",
+  "items": [...]
+}
+```
+
+### Item Fields (Icons & Display)
+
+Each item can include these fields. The Clinical Tool displays icons only for fields that exist:
+
+| Field | Type | Icon | Color | Description |
+|-------|------|------|-------|-------------|
+| `item` | string | - | - | **Required.** The item name (test, drug, study, etc.) |
+| `ED` | string | - | - | Priority for Emergency Department (STAT, URGENT, ROUTINE, EXT, -) |
+| `HOSP` | string | - | - | Priority for Hospital/Inpatient |
+| `OPD` | string | - | - | Priority for Outpatient |
+| `ICU` | string | - | - | Priority for Intensive Care Unit |
+| `dosing` | string | Badge | Blue | Medication dosing (displayed as badge AND in selected items sidebar) |
+| `rationale` | string | ℹ️ | Blue | Clinical rationale or evidence basis |
+| `timing` | string | ⏱ | Amber | When to perform/administer |
+| `target` | string | 🎯 | Green | Target finding or expected result |
+| `contraindications` | string | ⚠️ | Red (pulsing) | Safety warnings - CRITICAL for patient safety |
+| `monitoring` | string | 📊 | Purple | Required monitoring parameters |
+
+### Icon Display Behavior
+
+- Icons only appear if the field has a value in JSON
+- Hovering over an icon reveals a tooltip with the full text
+- The contraindication icon (⚠️) pulses to draw attention to safety-critical information
+- Multiple icons can appear for a single item
+
+### Example Item with Full Metadata
+
+```json
+{
+  "item": "Lorazepam IV",
+  "ED": "STAT",
+  "HOSP": "STAT",
+  "OPD": "-",
+  "ICU": "STAT",
+  "dosing": "4 mg IV push over 2 min; may repeat x1 in 5 min; max 8 mg total",
+  "rationale": "First-line if IV access available; Class I evidence from ESETT trial",
+  "timing": "Administer within 5 min of seizure onset for best efficacy",
+  "target": "Cessation of clinical and electrographic seizure activity",
+  "contraindications": "Acute narrow-angle glaucoma; severe respiratory depression without ventilator support",
+  "monitoring": "Respiratory status, BP, sedation level; have airway equipment ready"
+}
+```
+
+### Example Item with Partial Metadata (Labs)
+
+```json
+{
+  "item": "CBC with differential",
+  "ED": "STAT",
+  "HOSP": "STAT",
+  "OPD": "ROUTINE",
+  "ICU": "STAT",
+  "rationale": "Assess for infection, anemia, thrombocytopenia"
+}
+```
+
+### Safety-Critical Fields
+
+**IMPORTANT:** For medications, always include these fields when applicable:
+
+1. **`contraindications`** - Include ALL major contraindications, especially:
+   - Pregnancy warnings (teratogenic drugs)
+   - Organ dysfunction (hepatic, renal)
+   - Drug interactions
+   - Black box warnings
+
+2. **`monitoring`** - Include for drugs requiring:
+   - Lab monitoring (drug levels, organ function)
+   - Vital sign monitoring
+   - Syndrome surveillance (e.g., PROPOFOL INFUSION SYNDROME)
+
+### Ensuring Icon Display
+
+To ensure icons appear in the Clinical Tool:
+
+1. **Include the field in JSON** - Icons only show if the field exists with a value
+2. **Use descriptive text** - The tooltip shows the full text
+3. **Highlight safety concerns** - Use ALL CAPS for critical warnings in contraindications/monitoring
+4. **Be concise but complete** - Tooltips work best with 1-3 sentences
+
 ## Change Log
 
 **v2.1 (January 13, 2026)**
@@ -561,6 +666,12 @@ See `references/lp-reference.md` for comprehensive LP panels organized by diagno
 
 **v1.0 (January 13, 2026)**
 - Initial version
+
+**v2.5 (January 19, 2026)**
+- Added Clinical Tool JSON Schema section
+- Documents all item fields that display as icons (rationale, timing, target, contraindications, monitoring)
+- Includes icon colors, display behavior, and examples
+- Safety-critical field guidance for medications
 
 **v2.4 (January 19, 2026)**
 - Added Post-Pipeline Auto-Push Workflow section
