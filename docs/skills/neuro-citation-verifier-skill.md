@@ -72,6 +72,26 @@ For each citation, perform web search to confirm:
 | Inaccurate | ❌ | Source found but does NOT support the claim made |
 | Unable to Verify | ❓ | Paywalled or inaccessible; cannot confirm content |
 
+### Step 5: Capture Source Links
+
+For each verified or partially matched citation, include a direct link to the source. Use the following link hierarchy (prefer earlier options):
+
+| Source Type | Preferred Link | Example |
+|-------------|----------------|---------|
+| Journal articles | PubMed link (PMID) | `https://pubmed.ncbi.nlm.nih.gov/28276064/` |
+| Guidelines | Organization website | `https://www.aan.com/Guidelines/...` |
+| Clinical trials | ClinicalTrials.gov | `https://clinicaltrials.gov/study/NCT01960075` |
+| FDA labeling | DailyMed or FDA | `https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=...` |
+| Consensus statements | Organization or PubMed | Direct link to PDF or abstract |
+| Textbooks | Publisher page | Link to edition/chapter if available online |
+
+**Link Priority:**
+1. **PubMed** - Preferred for journal articles (stable, free access to abstracts)
+2. **DOI link** - `https://doi.org/10.xxxx/...` (permanent, resolves to publisher)
+3. **Organization website** - For guidelines and consensus statements
+4. **Publisher/journal site** - Direct article link
+5. **Google Scholar** - Fallback if no direct link available
+
 ## Search Strategy
 
 ### For Journal Articles
@@ -114,7 +134,7 @@ CITATION VERIFICATION REPORT
 TEMPLATE: [Diagnosis Name]
 VERSION: [Version]
 DATE VERIFIED: [Date]
-VERIFIER: Claude (neuro-citation-verifier v1.0)
+VERIFIER: Claude (neuro-citation-verifier v1.1)
 
 ## SUMMARY
 
@@ -135,31 +155,31 @@ VERIFIER: Claude (neuro-citation-verifier v1.0)
 
 ### Drug Dosing / Treatment Citations
 
-| Citation | Claim in Template | Status | Verification Notes |
-|----------|-------------------|--------|-------------------|
-| [Citation] | [What template claims] | ✅/⚠️/❌ | [Search findings] |
+| Citation | Claim in Template | Status | Link | Verification Notes |
+|----------|-------------------|--------|------|-------------------|
+| [Citation] | [What template claims] | ✅/⚠️/❌ | [PubMed](url) | [Search findings] |
 
 ### Diagnostic Criteria Citations
 
-| Citation | Claim in Template | Status | Verification Notes |
-|----------|-------------------|--------|-------------------|
-| [Citation] | [What template claims] | ✅/⚠️/❌ | [Search findings] |
+| Citation | Claim in Template | Status | Link | Verification Notes |
+|----------|-------------------|--------|------|-------------------|
+| [Citation] | [What template claims] | ✅/⚠️/❌ | [PubMed](url) | [Search findings] |
 
 ---
 
 ## MEDIUM PRIORITY CITATIONS
 
-| Citation | Claim in Template | Status | Verification Notes |
-|----------|-------------------|--------|-------------------|
-| [Citation] | [What template claims] | ✅/⚠️/❌ | [Search findings] |
+| Citation | Claim in Template | Status | Link | Verification Notes |
+|----------|-------------------|--------|------|-------------------|
+| [Citation] | [What template claims] | ✅/⚠️/❌ | [PubMed](url) | [Search findings] |
 
 ---
 
 ## LOW PRIORITY CITATIONS
 
-| Citation | Claim in Template | Status | Verification Notes |
-|----------|-------------------|--------|-------------------|
-| [Citation] | [What template claims] | ✅/⚠️/❌ | [Search findings] |
+| Citation | Claim in Template | Status | Link | Verification Notes |
+|----------|-------------------|--------|------|-------------------|
+| [Citation] | [What template claims] | ✅/⚠️/❌ | [PubMed](url) | [Search findings] |
 
 ---
 
@@ -196,6 +216,7 @@ VERIFIER: Claude (neuro-citation-verifier v1.0)
 - Search 1: "[query]" → [result]
 - Search 2: "[query]" → [result]
 **Verification result:** ✅/⚠️/❌
+**Source link:** [PubMed](https://pubmed.ncbi.nlm.nih.gov/XXXXXXXX/) or [DOI](https://doi.org/XX.XXXX/...) or N/A if not found
 **Notes:** [Detailed findings]
 
 [Repeat for each citation]
@@ -206,9 +227,9 @@ VERIFIER: Claude (neuro-citation-verifier v1.0)
 
 [If verification reveals important missing citations that should be added]
 
-| Recommendation | Source | Rationale |
-|----------------|--------|-----------|
-| [What to cite] | [Actual source found] | [Why it should be added] |
+| Recommendation | Source | Link | Rationale |
+|----------------|--------|------|-----------|
+| [What to cite] | [Actual source found] | [PubMed](url) | [Why it should be added] |
 ```
 
 ## Common Citation Issues
@@ -268,6 +289,11 @@ C3. Section 8 - Add missing citation: "Hauser WA et al. NEJM 1998;338:429-34" fo
 When a source cannot be verified due to access limitations, recommend physician verification or suggest alternative citable sources.
 
 ## Change Log
+
+**v1.1 (January 2026)**
+- Added clickable source links (PubMed, DOI, organization websites) to all verification output tables
+- New Step 5: Capture Source Links with link hierarchy guidance
+- Updated output format to include Link column in all citation tables
 
 **v1.0 (January 2026)**
 - Initial version
