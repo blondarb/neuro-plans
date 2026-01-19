@@ -526,9 +526,11 @@
       });
     }
 
-    // Add inline comment buttons to section headings
+    // Add inline comment buttons to main section headings (h2 only)
+    // This matches the TOC which only shows h2 headings (toc_depth: 2 in mkdocs.yml)
     function addInlineCommentButtons() {
-      const headings = document.querySelectorAll('h2, h3');
+      // Only add to h2 headings (main sections), not h3 subheadings
+      const headings = document.querySelectorAll('h2');
 
       headings.forEach(heading => {
         const text = heading.textContent.trim();
@@ -561,7 +563,7 @@
         heading.appendChild(btn);
       });
 
-      console.log('[Comments] Added inline comment buttons to', headings.length, 'headings');
+      console.log('[Comments] Added inline comment buttons to', headings.length, 'h2 headings');
     }
 
     // Submit from main form
@@ -608,10 +610,10 @@
       }
     }
 
-    // Get sections from current page for dropdown
+    // Get main sections from current page for dropdown (h2 only)
     function getSections() {
       const sections = [];
-      document.querySelectorAll('h2, h3').forEach(heading => {
+      document.querySelectorAll('h2').forEach(heading => {
         const text = heading.textContent.trim()
           .replace(/💬\s*\d*$/, '') // Remove any trailing comment icons
           .trim();
@@ -683,85 +685,57 @@
     }
 
     /**
-     * Update TOC badges to show which pages have comments
-     * Only shows badge on the exact matching page, not partial matches
+     * Update TOC badges to show which sections have comments
+     * Shows badges on the right-side table of contents (section links within the page)
+     * Only shows badge on sections that have comments
      */
-    async function updateTocCommentBadges() {
+    function updateTocCommentBadges() {
       try {
-        // Get all comments grouped by pageId
-        const allDocsQuery = query(collection(db, 'comments'));
-        const snapshot = await getDocs(allDocsQuery);
-
-        const commentCountsByPage = {};
-        snapshot.forEach(docSnap => {
-          const data = docSnap.data();
-          const pageId = data.pageId;
-          commentCountsByPage[pageId] = (commentCountsByPage[pageId] || 0) + 1;
+        // Group comments by section name
+        const commentCountsBySection = {};
+        allComments.forEach(comment => {
+          const section = comment.section;
+          if (section) {
+            commentCountsBySection[section] = (commentCountsBySection[section] || 0) + 1;
+          }
         });
 
-        console.log('[Comments] Comment counts by page:', commentCountsByPage);
-        console.log('[Comments] Available pageIds:', Object.keys(commentCountsByPage));
+        console.log('[Comments] Comment counts by section:', commentCountsBySection);
 
-        // Find all nav links and add badges if they have comments
-        document.querySelectorAll('.md-nav__link').forEach(link => {
+        // Find the right-side table of contents (MkDocs Material uses .md-sidebar--secondary for the right TOC)
+        // The TOC links are anchor links to headings on the current page
+        const tocContainer = document.querySelector('.md-sidebar--secondary .md-nav--secondary');
+        if (!tocContainer) {
+          console.log('[Comments] No secondary TOC found on this page');
+          return;
+        }
+
+        // Find all TOC links (these link to #anchor on the current page)
+        tocContainer.querySelectorAll('.md-nav__link').forEach(link => {
           const href = link.getAttribute('href');
-          if (!href || href === '#' || href.startsWith('javascript:')) return;
+          if (!href || !href.startsWith('#')) return;
 
-          // Convert href to pageId format - handle relative paths
-          // The href might be like "../plans/status-epilepticus/" or "plans/status-epilepticus/"
-          let pageId = href
-            .replace(/^\.\.\//, '')
-            .replace(/^\.\//, '')
-            .replace(/\//g, '_')
-            .replace(/\.html$/, '')
-            .replace(/\.md$/, '')
-            .replace(/^_/, '')
-            .replace(/_$/, '')
-            .replace(/_index$/, ''); // Remove trailing _index
+          // Get the section name from the link text
+          const sectionName = link.textContent.trim();
 
-          // Also try extracting just the page name from the path
-          const pathParts = href.replace(/\/$/, '').split('/');
-          const pageName = pathParts[pathParts.length - 1] || pathParts[pathParts.length - 2];
-
-          // Build exact match variations only (no partial matching)
-          const pageIdVariations = [
-            pageId,
-            'neuro-plans_' + pageId,
-            pageId.replace(/^plans_/, 'neuro-plans_plans_'),
-            pageId.replace(/^drafts_/, 'neuro-plans_drafts_'),
-            // Also try with the full path structure that getPageId() might produce
-            'neuro-plans_plans_' + pageName,
-            'neuro-plans_drafts_' + pageName,
-            'plans_' + pageName,
-            'drafts_' + pageName
-          ];
-
-          // Only exact matches - no partial matching
-          let count = 0;
-          for (const variant of pageIdVariations) {
-            if (commentCountsByPage[variant]) {
-              count = commentCountsByPage[variant];
-              console.log('[Comments] TOC badge matched:', variant, '=', count, 'for link:', href);
-              break;
-            }
+          // Remove any existing badge first
+          const existingBadge = link.querySelector('.toc-comment-badge');
+          if (existingBadge) {
+            existingBadge.remove();
           }
 
-          // Check for existing badge or create one
-          let badge = link.querySelector('.toc-comment-badge');
+          // Check if this section has comments
+          const count = commentCountsBySection[sectionName] || 0;
 
           if (count > 0) {
-            if (!badge) {
-              badge = document.createElement('span');
-              badge.className = 'toc-comment-badge';
-              link.appendChild(badge);
-            }
+            const badge = document.createElement('span');
+            badge.className = 'toc-comment-badge';
             badge.textContent = count;
-            // Set both title (native) and data-tooltip (CSS) for hover
             const tooltipText = `${count} comment${count > 1 ? 's' : ''} - click to view`;
             badge.title = tooltipText;
             badge.setAttribute('data-tooltip', tooltipText);
-          } else if (badge) {
-            badge.remove();
+            link.appendChild(badge);
+            console.log('[Comments] Added TOC badge for section:', sectionName, '=', count);
           }
         });
 
