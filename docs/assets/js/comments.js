@@ -684,87 +684,11 @@
       initComments();
     }
 
-    /**
-     * Normalize section name by removing pilcrow (¶) and trimming whitespace
-     */
-    function normalizeSectionName(name) {
-      if (!name) return '';
-      return name.replace(/¶/g, '').trim();
-    }
-
-    /**
-     * Update TOC badges to show which sections have comments
-     * Shows badges on the right-side table of contents (section links within the page)
-     * Only shows badge on sections that have comments
-     */
+    // Note: Right-side TOC badges were removed because the TOC shows sub-sections (h3, h4)
+    // while comments are attached to h2 sections. The inline 💬 buttons on h2 headings
+    // already show comment counts effectively.
     function updateTocCommentBadges() {
-      try {
-        // Group comments by normalized section name
-        const commentCountsBySection = {};
-        allComments.forEach(comment => {
-          const section = normalizeSectionName(comment.section);
-          if (section) {
-            commentCountsBySection[section] = (commentCountsBySection[section] || 0) + 1;
-          }
-        });
-
-        console.log('[Comments] Comment counts by section (normalized):', commentCountsBySection);
-
-        // Find the right-side table of contents (MkDocs Material uses .md-sidebar--secondary for the right TOC)
-        // The TOC links are anchor links to headings on the current page
-        const tocContainer = document.querySelector('.md-sidebar--secondary .md-nav--secondary');
-        if (!tocContainer) {
-          console.log('[Comments] No secondary TOC found on this page');
-          return;
-        }
-
-        // Find all TOC links (these link to #anchor on the current page)
-        const tocLinks = tocContainer.querySelectorAll('.md-nav__link');
-        const tocTexts = Array.from(tocLinks).map(l => l.textContent.trim()).slice(0, 10);
-        console.log('[Comments] Found', tocLinks.length, 'TOC links, first 10:', tocTexts);
-
-        tocLinks.forEach(link => {
-          const href = link.getAttribute('href');
-          if (!href || !href.startsWith('#')) return;
-
-          // Get the section name from the link text and normalize it
-          const rawText = link.textContent.trim();
-          const sectionName = normalizeSectionName(rawText);
-
-          // Remove any existing badge first
-          const existingBadge = link.querySelector('.toc-comment-badge');
-          if (existingBadge) {
-            existingBadge.remove();
-          }
-
-          // Check if this section has comments (try exact match first, then partial)
-          let count = commentCountsBySection[sectionName] || 0;
-
-          // If no exact match, try to find a partial match (for cases where section names differ slightly)
-          if (count === 0) {
-            for (const [storedSection, c] of Object.entries(commentCountsBySection)) {
-              if (storedSection.includes(sectionName) || sectionName.includes(storedSection)) {
-                count = c;
-                break;
-              }
-            }
-          }
-
-          if (count > 0) {
-            const badge = document.createElement('span');
-            badge.className = 'toc-comment-badge';
-            badge.textContent = count;
-            const tooltipText = `${count} comment${count > 1 ? 's' : ''} - click to view`;
-            badge.title = tooltipText;
-            badge.setAttribute('data-tooltip', tooltipText);
-            link.appendChild(badge);
-            console.log('[Comments] TOC badge added:', sectionName, '=', count);
-          }
-        });
-
-      } catch (error) {
-        console.error('[Comments] Error updating TOC badges:', error);
-      }
+      // No-op: relying on inline comment buttons for section badges
     }
 
     /**
@@ -895,9 +819,6 @@
 
       // Remove old inline buttons (they have stale event handlers)
       document.querySelectorAll('.inline-comment-btn').forEach(btn => btn.remove());
-
-      // Remove old TOC badges
-      document.querySelectorAll('.toc-comment-badge').forEach(badge => badge.remove());
 
       // Wait for MkDocs Material to finish rendering new content
       // Check that the page title or h1 matches the new page
