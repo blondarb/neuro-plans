@@ -569,14 +569,96 @@
       initComments();
     }
 
+    // Update TOC badges to show which pages have comments
+    async function updateTocCommentBadges() {
+      try {
+        // Get all comments grouped by pageId
+        const allDocsQuery = query(collection(db, 'comments'));
+        const snapshot = await getDocs(allDocsQuery);
+
+        const commentCountsByPage = {};
+        snapshot.forEach(docSnap => {
+          const data = docSnap.data();
+          const pageId = data.pageId;
+          commentCountsByPage[pageId] = (commentCountsByPage[pageId] || 0) + 1;
+        });
+
+        console.log('[Comments] Comment counts by page:', commentCountsByPage);
+
+        // Find all nav links and add badges if they have comments
+        document.querySelectorAll('.md-nav__link').forEach(link => {
+          const href = link.getAttribute('href');
+          if (!href || href === '#' || href.startsWith('javascript:')) return;
+
+          // Convert href to pageId format - handle relative paths
+          let pageId = href
+            .replace(/^\.\.\//, '')
+            .replace(/^\.\//, '')
+            .replace(/\//g, '_')
+            .replace(/\.html$/, '')
+            .replace(/\.md$/, '')
+            .replace(/^_/, '')
+            .replace(/_$/, '');
+
+          // Try multiple pageId formats since path can vary
+          const pageIdVariations = [
+            pageId,
+            'neuro-plans_' + pageId,
+            pageId.replace(/^plans_/, 'neuro-plans_plans_'),
+            pageId.replace(/^drafts_/, 'neuro-plans_drafts_')
+          ];
+
+          let count = 0;
+          for (const variant of pageIdVariations) {
+            if (commentCountsByPage[variant]) {
+              count = commentCountsByPage[variant];
+              break;
+            }
+          }
+
+          // Also check for partial matches in the pageId
+          if (count === 0) {
+            for (const [key, val] of Object.entries(commentCountsByPage)) {
+              if (key.includes(pageId) || pageId.includes(key)) {
+                count = val;
+                break;
+              }
+            }
+          }
+
+          // Check for existing badge or create one
+          let badge = link.querySelector('.toc-comment-badge');
+
+          if (count > 0) {
+            if (!badge) {
+              badge = document.createElement('span');
+              badge.className = 'toc-comment-badge';
+              link.appendChild(badge);
+            }
+            badge.textContent = count;
+            badge.title = `${count} comment${count > 1 ? 's' : ''}`;
+          } else if (badge) {
+            badge.remove();
+          }
+        });
+
+      } catch (error) {
+        console.error('[Comments] Error updating TOC badges:', error);
+      }
+    }
+
     // Export for use in other scripts
     window.NeuroComments = {
       loadAllComments,
       updateSectionBadges,
       renderMainCommentList,
       showInlineCommentPopup,
-      handleVote
+      handleVote,
+      updateTocCommentBadges
     };
+
+    // Update TOC badges after a short delay to ensure nav is rendered
+    setTimeout(updateTocCommentBadges, 500);
 
   } catch (error) {
     console.error('[Comments] Fatal error initializing comments:', error);

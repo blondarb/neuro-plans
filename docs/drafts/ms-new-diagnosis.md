@@ -3,6 +3,7 @@ title: Multiple Sclerosis - New Diagnosis
 description: Initial diagnostic workup and management of suspected or newly confirmed MS including diagnostic criteria evaluation, mimics exclusion, and DMT initiation framework.
 version: "2.2"
 setting: ED, HOSP, OPD
+status: draft
 tags:
   - demyelinating
   - multiple-sclerosis
@@ -10,12 +11,20 @@ tags:
   - autoimmune
 ---
 
+<div class="draft-warning-banner">
+  <span class="icon">⚠️</span>
+  <div class="content">
+    <div class="title">DRAFT - Pending Physician Review</div>
+    <div class="description">This plan has not been approved for clinical use. Please review and provide feedback using the comment system.</div>
+  </div>
+</div>
+
 # Multiple Sclerosis - New Diagnosis
 
-**VERSION:** 2.2  
-**CREATED:** January 13, 2026  
-**REVISED:** January 13, 2026  
-**STATUS:** Revised per physician feedback
+**VERSION:** 2.2
+**CREATED:** January 13, 2026
+**REVISED:** January 13, 2026
+**STATUS:** Draft - Pending Review
 
 ---
 

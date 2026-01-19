@@ -1,10 +1,10 @@
 ---
-title: Plans Index
+title: Approved Plans
 ---
 
-# Clinical Plans
+# Approved Clinical Plans
 
-Browse all available clinical decision support templates organized by category.
+These clinical decision support templates have been reviewed and approved for clinical use.
 
 [Request a New Plan :material-plus-circle:](https://github.com/blondarb/neuro-plans/issues/new?template=plan_request.yml){ .md-button .md-button--primary }
 
@@ -14,24 +14,13 @@ Browse all available clinical decision support templates organized by category.
 
 | Plan | Setting Coverage | Status |
 |------|------------------|--------|
-| [Status Epilepticus](status-epilepticus.md) | ED, HOSP, ICU | :material-check-circle: Validated |
-| [New Onset Seizure](new-onset-seizure.md) | ED, HOSP, OPD | :material-check-circle: Complete |
-
-## Demyelinating Diseases
-
-| Plan | Setting Coverage | Status |
-|------|------------------|--------|
-| [MS - New Diagnosis](ms-new-diagnosis.md) | ED, HOSP, OPD | :material-check-circle: Complete |
-
-## Neuropathy
-
-| Plan | Setting Coverage | Status |
-|------|------------------|--------|
-| [Peripheral Neuropathy](peripheral-neuropathy.md) | ED, HOSP, OPD | :material-check-circle: Complete |
+| [Status Epilepticus](status-epilepticus.md) | ED, HOSP, ICU | :material-check-circle:{ .approved } Approved |
 
 ---
 
 ## Coming Soon
+
+See [Drafts for Review](../drafts/index.md) for plans pending approval.
 
 High-priority plans in development:
 

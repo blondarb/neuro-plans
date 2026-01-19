@@ -706,3 +706,215 @@ h3:has(.inline-comment-btn) {
   background: #0f172a;
   color: #94a3b8;
 }
+
+/* ========================================
+   TOC COMMENT BADGES
+   ======================================== */
+
+/* Badge showing comment count in navigation */
+.toc-comment-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  margin-left: 8px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 10px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+[data-md-color-scheme="slate"] .toc-comment-badge {
+  background: #6366f1;
+}
+
+/* ========================================
+   DRAFT/APPROVED STATUS BADGES
+   ======================================== */
+
+/* Draft section styling in nav */
+.md-nav__item--nested > .md-nav__link[href*="drafts"],
+.md-nav__item > .md-nav__link[href*="drafts"] {
+  position: relative;
+}
+
+/* Draft badge for navigation items */
+.draft-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  margin-left: 8px;
+  background: #f59e0b;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+}
+
+/* Approved badge */
+.approved-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  margin-left: 8px;
+  background: #10b981;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+}
+
+/* Draft section header styling */
+.md-nav__link[href*="drafts/index"] {
+  color: #f59e0b !important;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link[href*="drafts/index"] {
+  color: #fbbf24 !important;
+}
+
+/* Approved section header styling */
+.md-nav__link[href*="plans/index"] {
+  color: #10b981 !important;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link[href*="plans/index"] {
+  color: #34d399 !important;
+}
+
+/* Draft warning banner at top of draft pages */
+.draft-warning-banner {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border: 1px solid #f59e0b;
+  border-left: 4px solid #f59e0b;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.draft-warning-banner .icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.draft-warning-banner .content {
+  flex: 1;
+}
+
+.draft-warning-banner .title {
+  font-weight: 700;
+  color: #92400e;
+  margin-bottom: 4px;
+}
+
+.draft-warning-banner .description {
+  color: #a16207;
+  font-size: 0.9rem;
+}
+
+[data-md-color-scheme="slate"] .draft-warning-banner {
+  background: linear-gradient(135deg, #451a03 0%, #78350f 100%);
+  border-color: #f59e0b;
+}
+
+[data-md-color-scheme="slate"] .draft-warning-banner .title {
+  color: #fcd34d;
+}
+
+[data-md-color-scheme="slate"] .draft-warning-banner .description {
+  color: #fbbf24;
+}
+
+/* Approved banner styling */
+.approved-banner {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  border: 1px solid #10b981;
+  border-left: 4px solid #10b981;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.approved-banner .icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.approved-banner .content {
+  flex: 1;
+}
+
+.approved-banner .title {
+  font-weight: 700;
+  color: #065f46;
+  margin-bottom: 4px;
+}
+
+.approved-banner .description {
+  color: #047857;
+  font-size: 0.9rem;
+}
+
+[data-md-color-scheme="slate"] .approved-banner {
+  background: linear-gradient(135deg, #022c22 0%, #064e3b 100%);
+  border-color: #10b981;
+}
+
+[data-md-color-scheme="slate"] .approved-banner .title {
+  color: #6ee7b7;
+}
+
+[data-md-color-scheme="slate"] .approved-banner .description {
+  color: #34d399;
+}
+
+/* Status indicator in plan header */
+.plan-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+.plan-status.draft {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #f59e0b;
+}
+
+.plan-status.approved {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #10b981;
+}
+
+[data-md-color-scheme="slate"] .plan-status.draft {
+  background: #451a03;
+  color: #fcd34d;
+}
+
+[data-md-color-scheme="slate"] .plan-status.approved {
+  background: #022c22;
+  color: #6ee7b7;
+}

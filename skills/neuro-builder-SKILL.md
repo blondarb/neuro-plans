@@ -236,6 +236,23 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
+
+---
+
+## CHANGE LOG
+
+**v1.0 (Date)**
+- Initial template creation
+
+---
+
+## APPENDIX A: [Title] (if needed)
+
+[Appendix content - algorithms, dosing tables, quick reference cards, etc.]
+
+## APPENDIX B: [Title] (if needed)
+
+[Additional appendix content]
 ```
 
 ## Setting Definitions
@@ -397,6 +414,28 @@ Always include venue-appropriate critical monitoring for conditions with acute d
 | High-dose steroids | Glucose, BP, mood | ED: STAT, HOSP: ROUTINE, ICU: STAT |
 
 
+## Appendices
+
+When additional reference material, algorithms, or protocols are needed, place them at the **bottom of the document** after Section 8 (Evidence & References) and the Change Log.
+
+```
+## APPENDIX A: [Title]
+[Content]
+
+## APPENDIX B: [Title]
+[Content]
+```
+
+**Appendix Placement Rules:**
+- Appendices always go AFTER the main 8 sections and Change Log
+- Use lettered appendices (A, B, C) in order of importance or logical flow
+- Common appendix types:
+  - Treatment algorithms/flowcharts
+  - Dosing tables
+  - Immunotherapy timelines
+  - Quick reference cards for specific scenarios
+- If an appendix is critical for acute situations (e.g., rapid protocol for non-specialists), include a prominent link/reference to it from the relevant treatment section
+
 ## Reference Examples
 
 See `references/ms-exacerbation-v2.md` for a complete example of Builder output that has been validated through the Checker/Rebuilder workflow.
@@ -449,6 +488,11 @@ See `references/lp-reference.md` for comprehensive LP panels organized by diagno
 
 **v1.0 (January 13, 2026)**
 - Initial version
+
+**v2.3 (January 19, 2026)**
+- Added Appendices section with placement rules
+- Appendices must go at BOTTOM of document, after Section 8 and Change Log
+- Updated Output Structure to show Change Log and Appendix placement
 
 **v2.2 (January 14, 2026)**
 - Added venue columns (ED, HOSP, OPD, ICU) to Section 6 Monitoring Parameters template

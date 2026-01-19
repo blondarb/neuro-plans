@@ -1,8 +1,9 @@
 ---
 title: Status Epilepticus
 description: Management of convulsive and non-convulsive status epilepticus including staged treatment protocol, NORSE/FIRES immunotherapy, and rapid protocol for non-specialists.
-version: "1.2"
+version: "1.4"
 setting: ED, HOSP, ICU
+status: approved
 tags:
   - seizure
   - epilepsy
@@ -10,12 +11,20 @@ tags:
   - neurocritical-care
 ---
 
+<div class="approved-banner">
+  <span class="icon">✅</span>
+  <div class="content">
+    <div class="title">APPROVED - Ready for Clinical Use</div>
+    <div class="description">This plan has been reviewed and approved. Comments and suggestions are still welcome.</div>
+  </div>
+</div>
+
 # Status Epilepticus
 
-**VERSION:** 1.2
+**VERSION:** 1.4
 **CREATED:** January 15, 2026
-**REVISED:** January 15, 2026
-**STATUS:** Revised with rapid protocol for non-specialists
+**REVISED:** January 19, 2026
+**STATUS:** Approved
 
 ---
 
@@ -40,218 +49,13 @@ tags:
 
 ---
 
-# ⚡ START HERE: APPENDIX C - RAPID PROTOCOL FOR NON-SPECIALISTS
-
-**This is the "3 AM Protocol" - a single default pathway with exact doses. Follow this unless you have a specific reason to deviate. For comprehensive options and alternatives, see the full template below.**
-
----
-
-## RAPID PROTOCOL: DEFAULT PATHWAY
-
-### ✅ STEP 1: STABILIZATION (Time 0) - Do All Simultaneously
-
-| Action | Dose/Details | ✓ |
-|--------|--------------|---|
-| Call for help | Page Neurology STAT; alert ICU | ☐ |
-| Position patient | Recovery position if possible; protect head | ☐ |
-| Oxygen | Non-rebreather 15 L/min | ☐ |
-| IV access | Two large-bore IVs (18G or larger) | ☐ |
-| Cardiac monitor | Attach telemetry | ☐ |
-| Fingerstick glucose | If <70 or unknown → Dextrose 50% 50 mL IV + Thiamine 100 mg IV | ☐ |
-| Labs | POC glucose, BMP, CBC, Mg, Ca, LFTs, VBG, lactate, tox screen, ASM levels | ☐ |
-
----
-
-### ✅ STEP 2: FIRST-LINE - BENZODIAZEPINE (Time 0-5 min)
-
-**PICK ONE based on IV access:**
-
-| Situation | Drug | Exact Dose | ✓ |
-|-----------|------|------------|---|
-| **IV access available** | **Lorazepam IV** | **4 mg IV push over 2 min** | ☐ |
-| No IV access | Midazolam IM | 10 mg IM (single injection, deltoid or thigh) | ☐ |
-| No IV/IM access | Midazolam intranasal | 5 mg each nostril (10 mg total) | ☐ |
-
-**⏱️ WAIT 5 MINUTES. Still seizing?**
-
-| Action | Dose | ✓ |
-|--------|------|---|
-| Repeat benzodiazepine x1 | Lorazepam 4 mg IV (total max 8 mg) OR Midazolam 10 mg IM | ☐ |
-
-**⏱️ WAIT 5 MORE MINUTES. Still seizing? → GO TO STEP 3 IMMEDIATELY**
-
-🚫 **DO NOT give a third dose of benzodiazepine. Move to Step 3.**
-
----
-
-### ✅ STEP 3: SECOND-LINE ASM (Time 5-20 min)
-
-**DEFAULT CHOICE: Levetiracetam** (safest, fewest drug interactions, no cardiac monitoring needed)
-
-| Weight | Levetiracetam Dose | Infusion Time | ✓ |
-|--------|-------------------|---------------|---|
-| 50 kg | 2500 mg IV | Over 10 min | ☐ |
-| 60 kg | 3000 mg IV | Over 10 min | ☐ |
-| 70 kg | 3500 mg IV | Over 10 min | ☐ |
-| 80 kg | 4000 mg IV | Over 10 min | ☐ |
-| ≥90 kg | **4500 mg IV (max)** | Over 10 min | ☐ |
-
-**Quick calc: 50 mg/kg (or 60 mg/kg per ESETT), max 4500 mg**
-
----
-
-#### 🔀 DECISION BRANCHES - Use Alternative If:
-
-| Situation | Use Instead | Dose | Why |
-|-----------|-------------|------|-----|
-| **Patient already takes levetiracetam at home** | Fosphenytoin | 20 mg PE/kg IV at 150 mg PE/min (70 kg = 1400 mg PE) | Already on LEV; need different mechanism |
-| **Patient already takes levetiracetam at home** | Brivaracetam | 200 mg IV over 2 min | Alternative SV2A agent with faster onset |
-| **Pregnant or might be pregnant** | Levetiracetam | 50-60 mg/kg IV (max 4500 mg) | AVOID valproate (teratogenic) |
-| **Known cardiac disease (heart block, bradycardia)** | Levetiracetam | 50-60 mg/kg IV (max 4500 mg) | AVOID fosphenytoin/lacosamide |
-| **Severe renal impairment (CrCl <30)** | Fosphenytoin | 20 mg PE/kg IV at 150 mg PE/min | LEV requires dose reduction |
-| **Severe liver disease** | Levetiracetam | 50-60 mg/kg IV (max 4500 mg) | Renally cleared |
-| **Hypotensive (SBP <90)** | Levetiracetam | 50-60 mg/kg IV (max 4500 mg) | Least hemodynamic effect |
-
----
-
-**⏱️ WAIT 10-15 MINUTES for infusion to complete. Still seizing?**
-
-**Options:**
-1. Try ONE more second-line agent (different class), OR
-2. Proceed directly to Step 4 (RSE protocol)
-
-**🚨 DO NOT delay beyond 20 minutes total. If still seizing at 20 min → Step 4.**
-
----
-
-### ✅ STEP 4: REFRACTORY SE (Time 20+ min) - CALL ICU NOW
-
-**🚨 STOP: This requires ICU admission, intubation capability, and continuous EEG. Call for help if not already done.**
-
-**DEFAULT: Midazolam infusion** (most familiar to non-specialists, reversible)
-
-| Action | Dose | ✓ |
-|--------|------|---|
-| **Intubate patient** | RSI with propofol or ketamine induction | ☐ |
-| **Midazolam bolus** | 0.2 mg/kg IV (70 kg = 14 mg IV push) | ☐ |
-| **Start midazolam infusion** | 0.1 mg/kg/hr (70 kg = 7 mg/hr) | ☐ |
-| **Order continuous EEG** | STAT - mandatory | ☐ |
-| **Start vasopressors if needed** | Norepinephrine if MAP <65 | ☐ |
-
-**Titration:** Increase midazolam by 0.1 mg/kg/hr every 15 min until seizures stop on EEG. Max 2 mg/kg/hr.
-
----
-
-#### 🔀 CONSIDER ADDING KETAMINE EARLY
-
-**Emerging evidence supports adding ketamine at RSE onset (not waiting for SRSE):**
-
-| Action | Dose | Rationale |
-|--------|------|-----------|
-| Ketamine bolus | 1-2 mg/kg IV (70 kg = 70-140 mg) | NMDA antagonism; less hypotension |
-| Ketamine infusion | Start 1 mg/kg/hr, titrate to 5 mg/kg/hr | 2x more effective when given early |
-
-**Ketamine can be used WITH midazolam from the start.**
-
----
-
-### ✅ STEP 5: WHEN TO SUSPECT NORSE (No Clear Cause Found)
-
-**If patient has RSE and initial workup is negative, consider NORSE:**
-
-| Criteria | ✓ |
-|----------|---|
-| No prior epilepsy history | ☐ |
-| No acute structural lesion on CT/MRI | ☐ |
-| No toxic/metabolic cause identified | ☐ |
-| No active infection explaining seizures | ☐ |
-
-**If NORSE suspected → Start immunotherapy within 72 hours (don't wait for antibody results):**
-
-| Day | Action | Dose |
-|-----|--------|------|
-| Day 1 | Methylprednisolone | 1000 mg IV daily |
-| Day 1-5 | Continue steroids | 1000 mg IV daily × 5 days total |
-| Day 1-5 | Consider adding IVIG | 0.4 g/kg/day × 5 days |
-| Day 7 | Ketogenic diet consult | If still refractory |
-
----
-
-## 📞 WHEN TO CALL FOR HELP
-
-| Situation | Who to Call | Urgency |
-|-----------|-------------|---------|
-| Any SE | Neurology | STAT |
-| SE not responding to first BZD | Neurology + ICU | STAT |
-| SE not responding to second-line ASM | Neurocritical care | STAT |
-| Need for intubation | Anesthesia/ICU | STAT |
-| Suspected NORSE (no cause found) | Neuroimmunology | URGENT |
-| Suspected CNS infection | Infectious Disease | URGENT |
-
----
-
-## ⚠️ CRITICAL SAFETY REMINDERS
-
-| Reminder | |
-|----------|---|
-| 🔴 **Airway first** - Have bag-valve-mask and intubation equipment at bedside before giving ANY medication | |
-| 🔴 **Don't stack benzos** - Max 2 doses. More benzos = more respiratory depression, not more efficacy | |
-| 🔴 **Time matters** - Every 5-minute delay worsens outcomes. Move fast through the protocol | |
-| 🔴 **Valproate + Pregnancy = NO** - Always check pregnancy status before valproate | |
-| 🔴 **Fosphenytoin + Heart block = NO** - Check ECG or avoid if unknown cardiac history | |
-| 🔴 **Get EEG** - Up to 48% have non-convulsive seizures after convulsions stop. You need EEG to know. | |
-
----
-
-## 🏥 DISPOSITION
-
-| Seizure Status | Disposition |
-|----------------|-------------|
-| Resolved with first-line BZD only | May observe in ED; admit to telemetry if first seizure |
-| Required second-line ASM | **ICU admission** |
-| Required intubation/anesthetics | **ICU admission** |
-| Any RSE/SRSE | **ICU admission** |
-
----
-
-## 📋 QUICK REFERENCE CARD (Print This)
-
-```
-STATUS EPILEPTICUS - RAPID PROTOCOL
-====================================
-
-STEP 1: STABILIZE
-• O2, 2 IVs, monitor, glucose check
-• Labs: BMP, CBC, Mg, Ca, tox, ASM levels
-
-STEP 2: BENZODIAZEPINE (Time 0-5 min)
-• Lorazepam 4 mg IV push
-• Wait 5 min → Repeat x1 if still seizing
-• MAX 2 doses. Do NOT give 3rd dose.
-
-STEP 3: SECOND-LINE (Time 5-20 min)
-• Levetiracetam 50-60 mg/kg IV (max 4500 mg) over 10 min
-  - 50 kg = 2500 mg
-  - 70 kg = 3500 mg
-  - 90+ kg = 4500 mg
-• Alternatives: Fosphenytoin, Valproate, Lacosamide
-
-STEP 4: RSE (Time 20+ min) - CALL ICU
-• Intubate
-• Midazolam 0.2 mg/kg bolus → 0.1 mg/kg/hr infusion
-• ± Ketamine 1-2 mg/kg bolus → 1 mg/kg/hr infusion
-• Continuous EEG - MANDATORY
-• Target burst suppression
-
-CALL NEUROLOGY FOR ALL SE
-CALL ICU IF STEP 3 FAILS
-====================================
-```
+!!! danger "⚡ RAPID PROTOCOL FOR NON-SPECIALISTS"
+    **Need the quick "3 AM Protocol"?** Skip to [**APPENDIX C: Rapid Protocol**](#appendix-c-rapid-protocol-for-non-specialists) at the bottom of this document for a single default pathway with exact doses.
 
 ---
 
 ═══════════════════════════════════════════════════════════════
-FULL TEMPLATE BEGINS BELOW
+SECTION A: ACTION ITEMS
 ═══════════════════════════════════════════════════════════════
 
 ## 1. LABORATORY WORKUP
@@ -361,7 +165,7 @@ FULL TEMPLATE BEGINS BELOW
 
 **CRITICAL:** Status epilepticus requires STAGED, TIME-BASED management. Each medication must be on its own row with complete dosing.
 
-**👉 FOR RAPID DEFAULT PATHWAY, SEE APPENDIX C AT THE TOP OF THIS DOCUMENT**
+**👉 FOR RAPID DEFAULT PATHWAY, SEE [APPENDIX C](#appendix-c-rapid-protocol-for-non-specialists) AT THE BOTTOM OF THIS DOCUMENT**
 
 ### TREATMENT STAGING OVERVIEW
 
@@ -511,6 +315,9 @@ FULL TEMPLATE BEGINS BELOW
 | Pantoprazole | Stress ulcer prophylaxis | - | ROUTINE | - | STAT | 40 mg IV daily | None significant | GI bleeding |
 | Enoxaparin | DVT prophylaxis | - | ROUTINE | - | STAT | 40 mg SC daily (start when stable) | Active bleeding, recent LP | Platelets, bleeding |
 | Insulin infusion | Stress hyperglycemia | URGENT | ROUTINE | - | STAT | Per ICU protocol; target glucose 140-180 mg/dL | Hypoglycemia | Glucose q1-4h |
+| Bowel regimen | Constipation prophylaxis | - | ROUTINE | - | ROUTINE | Docusate 100 mg BID + senna 8.6 mg daily; escalate to bisacodyl or lactulose PRN | Bowel obstruction | Bowel movements |
+| Skin care protocol | Pressure injury prevention | - | ROUTINE | - | STAT | Turn q2h, specialty mattress, moisture barrier, Braden scale assessment | None | Skin integrity daily |
+| Eye care | Corneal protection | - | ROUTINE | - | STAT | Lubricating drops q4h, eyelid taping if incomplete closure | None | Corneal integrity |
 
 ---
 
@@ -529,9 +336,12 @@ FULL TEMPLATE BEGINS BELOW
 | Pharmacy consult | - | ROUTINE | - | ROUTINE | Complex ASM dosing, drug interactions |
 | Nutrition/Dietitian consult | - | ROUTINE | - | URGENT | Enteral feeding, ketogenic diet initiation (by Day 7 in NORSE) |
 | Palliative care consult | - | - | - | ROUTINE | SRSE with poor prognosis, goals of care discussion |
-| Social work consult | - | ROUTINE | - | ROUTINE | Family support, discharge planning |
-| Epilepsy surgery evaluation | - | - | - | EXT | Focal lesion on imaging, refractory to medical therapy |
-| PT/OT/Speech evaluation | - | - | - | ROUTINE | Once stabilized; assess for deficits |
+| Social work consult | - | ROUTINE | ROUTINE | ROUTINE | Family support, discharge planning |
+| Epilepsy surgery evaluation | - | - | EXT | EXT | Focal lesion on imaging, refractory to medical therapy |
+| PT/OT/Speech evaluation | - | ROUTINE | ROUTINE | ROUTINE | Once stabilized; assess for deficits |
+| Epilepsy outpatient follow-up | - | ROUTINE | ROUTINE | - | All SE survivors; ASM optimization, etiology workup |
+| Outpatient video-EEG monitoring | - | - | ROUTINE | - | Characterization of seizure type, presurgical evaluation |
+| Neuropsychology testing | - | - | ROUTINE | - | Cognitive assessment post-SE; baseline before surgery |
 
 ### 4B. Patient/Family Instructions
 
@@ -626,6 +436,8 @@ SECTION B: REFERENCE (Expand as Needed)
 | Burst suppression target for RSE | Class IIb, Level C | Expert consensus |
 | Ketamine in RSE/SRSE | Class IIb, Level B | Multiple case series; 2024 systematic reviews |
 | Earlier ketamine = better outcomes | Class II, Level B | 2024 two-center study; systematic reviews |
+| Ketamine efficacy in RSE/SRSE | Class IIa, Level B | Systematic review: Rosati A et al., CNS Drugs 2018;32(11):997-1009 |
+| Ketamine ± midazolam superiority over midazolam alone | Class II, Level B | Fletman et al., Clin Neurol Neurosurg 2024; Yan et al., J Neurol 2024 |
 | NORSE first-line immunotherapy within 72h | Class IIa, Level C | International Consensus, Wickström et al. Epilepsia 2022 |
 | Ketogenic diet by Day 7 in NORSE | Class IIa, Level C | International Consensus 2022; FIRES case series |
 | Second-line immunotherapy by Day 7 if first-line fails | Class IIb, Level C | International Consensus 2022 |
@@ -717,6 +529,18 @@ DAY 7+: ONGOING MANAGEMENT
 
 ## CHANGE LOG
 
+**v1.4 (January 19, 2026)**
+- Moved Appendix C (Rapid Protocol) to bottom of document per standardized template format
+- Added prominent link at top directing users to Appendix C
+- All appendices now follow Section 8 and Change Log
+
+**v1.3 (January 18, 2026)**
+- Added OPD referrals for SE survivors: epilepsy outpatient follow-up, outpatient video-EEG monitoring, neuropsychology testing
+- Added OPD priorities for social work, epilepsy surgery evaluation, PT/OT/Speech
+- Added evidence citations: Rosati et al. CNS Drugs 2018, Fletman et al. 2024, Yan et al. J Neurol 2024
+- Added supportive care items: bowel regimen, skin care protocol, eye care
+- Added language option note (Spanish availability) and QR code placeholder to Quick Reference Card
+
 **v1.2 (January 15, 2026)**
 - Added Appendix C: Rapid Protocol for Non-Specialists ("3 AM Protocol")
   - Single default pathway with exact doses
@@ -726,8 +550,6 @@ DAY 7+: ONGOING MANAGEMENT
   - "When to call for help" section
   - Critical safety reminders
   - Printable quick reference card
-- Moved Appendix C to top of document for immediate visibility
-- Added reference to Appendix C in Section 3 header
 
 **v1.1 (January 15, 2026)**
 - Added dual levetiracetam dosing options (40 mg/kg conservative vs 60 mg/kg ESETT-based)
@@ -744,6 +566,218 @@ DAY 7+: ONGOING MANAGEMENT
 
 **v1.0 (January 15, 2026)**
 - Initial template creation
+
+---
+
+## APPENDIX C: RAPID PROTOCOL FOR NON-SPECIALISTS
+
+**This is the "3 AM Protocol" - a single default pathway with exact doses. Follow this unless you have a specific reason to deviate. For comprehensive options and alternatives, see the full template above.**
+
+---
+
+### ✅ STEP 1: STABILIZATION (Time 0) - Do All Simultaneously
+
+| Action | Dose/Details | ✓ |
+|--------|--------------|---|
+| Call for help | Page Neurology STAT; alert ICU | ☐ |
+| Position patient | Recovery position if possible; protect head | ☐ |
+| Oxygen | Non-rebreather 15 L/min | ☐ |
+| IV access | Two large-bore IVs (18G or larger) | ☐ |
+| Cardiac monitor | Attach telemetry | ☐ |
+| Fingerstick glucose | If <70 or unknown → Dextrose 50% 50 mL IV + Thiamine 100 mg IV | ☐ |
+| Labs | POC glucose, BMP, CBC, Mg, Ca, LFTs, VBG, lactate, tox screen, ASM levels | ☐ |
+
+---
+
+### ✅ STEP 2: FIRST-LINE - BENZODIAZEPINE (Time 0-5 min)
+
+**PICK ONE based on IV access:**
+
+| Situation | Drug | Exact Dose | ✓ |
+|-----------|------|------------|---|
+| **IV access available** | **Lorazepam IV** | **4 mg IV push over 2 min** | ☐ |
+| No IV access | Midazolam IM | 10 mg IM (single injection, deltoid or thigh) | ☐ |
+| No IV/IM access | Midazolam intranasal | 5 mg each nostril (10 mg total) | ☐ |
+
+**⏱️ WAIT 5 MINUTES. Still seizing?**
+
+| Action | Dose | ✓ |
+|--------|------|---|
+| Repeat benzodiazepine x1 | Lorazepam 4 mg IV (total max 8 mg) OR Midazolam 10 mg IM | ☐ |
+
+**⏱️ WAIT 5 MORE MINUTES. Still seizing? → GO TO STEP 3 IMMEDIATELY**
+
+🚫 **DO NOT give a third dose of benzodiazepine. Move to Step 3.**
+
+---
+
+### ✅ STEP 3: SECOND-LINE ASM (Time 5-20 min)
+
+**DEFAULT CHOICE: Levetiracetam** (safest, fewest drug interactions, no cardiac monitoring needed)
+
+| Weight | Levetiracetam Dose | Infusion Time | ✓ |
+|--------|-------------------|---------------|---|
+| 50 kg | 2500 mg IV | Over 10 min | ☐ |
+| 60 kg | 3000 mg IV | Over 10 min | ☐ |
+| 70 kg | 3500 mg IV | Over 10 min | ☐ |
+| 80 kg | 4000 mg IV | Over 10 min | ☐ |
+| ≥90 kg | **4500 mg IV (max)** | Over 10 min | ☐ |
+
+**Quick calc: 50 mg/kg (or 60 mg/kg per ESETT), max 4500 mg**
+
+---
+
+#### 🔀 DECISION BRANCHES - Use Alternative If:
+
+| Situation | Use Instead | Dose | Why |
+|-----------|-------------|------|-----|
+| **Patient already takes levetiracetam at home** | Fosphenytoin | 20 mg PE/kg IV at 150 mg PE/min (70 kg = 1400 mg PE) | Already on LEV; need different mechanism |
+| **Patient already takes levetiracetam at home** | Brivaracetam | 200 mg IV over 2 min | Alternative SV2A agent with faster onset |
+| **Pregnant or might be pregnant** | Levetiracetam | 50-60 mg/kg IV (max 4500 mg) | AVOID valproate (teratogenic) |
+| **Known cardiac disease (heart block, bradycardia)** | Levetiracetam | 50-60 mg/kg IV (max 4500 mg) | AVOID fosphenytoin/lacosamide |
+| **Severe renal impairment (CrCl <30)** | Fosphenytoin | 20 mg PE/kg IV at 150 mg PE/min | LEV requires dose reduction |
+| **Severe liver disease** | Levetiracetam | 50-60 mg/kg IV (max 4500 mg) | Renally cleared |
+| **Hypotensive (SBP <90)** | Levetiracetam | 50-60 mg/kg IV (max 4500 mg) | Least hemodynamic effect |
+
+---
+
+**⏱️ WAIT 10-15 MINUTES for infusion to complete. Still seizing?**
+
+**Options:**
+1. Try ONE more second-line agent (different class), OR
+2. Proceed directly to Step 4 (RSE protocol)
+
+**🚨 DO NOT delay beyond 20 minutes total. If still seizing at 20 min → Step 4.**
+
+---
+
+### ✅ STEP 4: REFRACTORY SE (Time 20+ min) - CALL ICU NOW
+
+**🚨 STOP: This requires ICU admission, intubation capability, and continuous EEG. Call for help if not already done.**
+
+**DEFAULT: Midazolam infusion** (most familiar to non-specialists, reversible)
+
+| Action | Dose | ✓ |
+|--------|------|---|
+| **Intubate patient** | RSI with propofol or ketamine induction | ☐ |
+| **Midazolam bolus** | 0.2 mg/kg IV (70 kg = 14 mg IV push) | ☐ |
+| **Start midazolam infusion** | 0.1 mg/kg/hr (70 kg = 7 mg/hr) | ☐ |
+| **Order continuous EEG** | STAT - mandatory | ☐ |
+| **Start vasopressors if needed** | Norepinephrine if MAP <65 | ☐ |
+
+**Titration:** Increase midazolam by 0.1 mg/kg/hr every 15 min until seizures stop on EEG. Max 2 mg/kg/hr.
+
+---
+
+#### 🔀 CONSIDER ADDING KETAMINE EARLY
+
+**Emerging evidence supports adding ketamine at RSE onset (not waiting for SRSE):**
+
+| Action | Dose | Rationale |
+|--------|------|-----------|
+| Ketamine bolus | 1-2 mg/kg IV (70 kg = 70-140 mg) | NMDA antagonism; less hypotension |
+| Ketamine infusion | Start 1 mg/kg/hr, titrate to 5 mg/kg/hr | 2x more effective when given early |
+
+**Ketamine can be used WITH midazolam from the start.**
+
+---
+
+### ✅ STEP 5: WHEN TO SUSPECT NORSE (No Clear Cause Found)
+
+**If patient has RSE and initial workup is negative, consider NORSE:**
+
+| Criteria | ✓ |
+|----------|---|
+| No prior epilepsy history | ☐ |
+| No acute structural lesion on CT/MRI | ☐ |
+| No toxic/metabolic cause identified | ☐ |
+| No active infection explaining seizures | ☐ |
+
+**If NORSE suspected → Start immunotherapy within 72 hours (don't wait for antibody results):**
+
+| Day | Action | Dose |
+|-----|--------|------|
+| Day 1 | Methylprednisolone | 1000 mg IV daily |
+| Day 1-5 | Continue steroids | 1000 mg IV daily × 5 days total |
+| Day 1-5 | Consider adding IVIG | 0.4 g/kg/day × 5 days |
+| Day 7 | Ketogenic diet consult | If still refractory |
+
+---
+
+### 📞 WHEN TO CALL FOR HELP
+
+| Situation | Who to Call | Urgency |
+|-----------|-------------|---------|
+| Any SE | Neurology | STAT |
+| SE not responding to first BZD | Neurology + ICU | STAT |
+| SE not responding to second-line ASM | Neurocritical care | STAT |
+| Need for intubation | Anesthesia/ICU | STAT |
+| Suspected NORSE (no cause found) | Neuroimmunology | URGENT |
+| Suspected CNS infection | Infectious Disease | URGENT |
+
+---
+
+### ⚠️ CRITICAL SAFETY REMINDERS
+
+| Reminder | |
+|----------|---|
+| 🔴 **Airway first** - Have bag-valve-mask and intubation equipment at bedside before giving ANY medication | |
+| 🔴 **Don't stack benzos** - Max 2 doses. More benzos = more respiratory depression, not more efficacy | |
+| 🔴 **Time matters** - Every 5-minute delay worsens outcomes. Move fast through the protocol | |
+| 🔴 **Valproate + Pregnancy = NO** - Always check pregnancy status before valproate | |
+| 🔴 **Fosphenytoin + Heart block = NO** - Check ECG or avoid if unknown cardiac history | |
+| 🔴 **Get EEG** - Up to 48% have non-convulsive seizures after convulsions stop. You need EEG to know. | |
+
+---
+
+### 🏥 DISPOSITION
+
+| Seizure Status | Disposition |
+|----------------|-------------|
+| Resolved with first-line BZD only | May observe in ED; admit to telemetry if first seizure |
+| Required second-line ASM | **ICU admission** |
+| Required intubation/anesthetics | **ICU admission** |
+| Any RSE/SRSE | **ICU admission** |
+
+---
+
+### 📋 QUICK REFERENCE CARD (Print This)
+
+*Note: This protocol is available in Spanish (Español) - see your institution's translated materials or request from Pharmacy/Nursing Education.*
+
+*For mobile access: Scan QR code [institutional link] or bookmark the online version for bedside reference.*
+
+```
+STATUS EPILEPTICUS - RAPID PROTOCOL
+====================================
+
+STEP 1: STABILIZE
+• O2, 2 IVs, monitor, glucose check
+• Labs: BMP, CBC, Mg, Ca, tox, ASM levels
+
+STEP 2: BENZODIAZEPINE (Time 0-5 min)
+• Lorazepam 4 mg IV push
+• Wait 5 min → Repeat x1 if still seizing
+• MAX 2 doses. Do NOT give 3rd dose.
+
+STEP 3: SECOND-LINE (Time 5-20 min)
+• Levetiracetam 50-60 mg/kg IV (max 4500 mg) over 10 min
+  - 50 kg = 2500 mg
+  - 70 kg = 3500 mg
+  - 90+ kg = 4500 mg
+• Alternatives: Fosphenytoin, Valproate, Lacosamide
+
+STEP 4: RSE (Time 20+ min) - CALL ICU
+• Intubate
+• Midazolam 0.2 mg/kg bolus → 0.1 mg/kg/hr infusion
+• ± Ketamine 1-2 mg/kg bolus → 1 mg/kg/hr infusion
+• Continuous EEG - MANDATORY
+• Target burst suppression
+
+CALL NEUROLOGY FOR ALL SE
+CALL ICU IF STEP 3 FAILS
+====================================
+```
 
 ---
 
