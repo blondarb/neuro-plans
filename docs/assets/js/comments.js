@@ -4,9 +4,15 @@
 (async function() {
   console.log('[Comments] Initializing Firebase comments widget...');
 
+  // Track if Firebase is already initialized
+  let firebaseInitialized = false;
+  let db = null;
+  let firebaseModules = null;
+
   try {
     // Dynamically import Firebase modules
-    const { initializeApp } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');
+    const { initializeApp, getApps } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');
+    firebaseModules = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
     const {
       getFirestore,
       collection,
@@ -19,7 +25,7 @@
       orderBy,
       increment,
       serverTimestamp
-    } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
+    } = firebaseModules;
 
     console.log('[Comments] Firebase modules loaded successfully');
 
@@ -33,10 +39,18 @@
       appId: "1:412449868431:web:b41690279a2452d9f83efa"
     };
 
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-    console.log('[Comments] Firebase initialized');
+    // Initialize Firebase only if not already initialized
+    let app;
+    const existingApps = getApps();
+    if (existingApps.length === 0) {
+      app = initializeApp(firebaseConfig);
+      console.log('[Comments] Firebase initialized (new)');
+    } else {
+      app = existingApps[0];
+      console.log('[Comments] Firebase already initialized, reusing');
+    }
+    db = getFirestore(app);
+    firebaseInitialized = true;
 
     // Store all comments for the page
     let allComments = [];
@@ -636,7 +650,10 @@
               link.appendChild(badge);
             }
             badge.textContent = count;
-            badge.title = `${count} comment${count > 1 ? 's' : ''}`;
+            // Set both title (native) and data-tooltip (CSS) for hover
+            const tooltipText = `${count} comment${count > 1 ? 's' : ''} - click to view`;
+            badge.title = tooltipText;
+            badge.setAttribute('data-tooltip', tooltipText);
           } else if (badge) {
             badge.remove();
           }
@@ -659,6 +676,71 @@
 
     // Update TOC badges after a short delay to ensure nav is rendered
     setTimeout(updateTocCommentBadges, 500);
+
+    // ========================================
+    // MKDOCS INSTANT NAVIGATION SUPPORT
+    // ========================================
+    // MkDocs Material's instant navigation doesn't reload the page,
+    // so we need to reinitialize comments when navigating between pages.
+
+    // Track current page to detect navigation
+    let currentPage = window.location.pathname;
+
+    // Reinitialize comments on page change
+    function reinitializeOnNavigation() {
+      const newPage = window.location.pathname;
+      if (newPage !== currentPage) {
+        console.log('[Comments] Page changed from', currentPage, 'to', newPage);
+        currentPage = newPage;
+
+        // Small delay to let MkDocs finish rendering
+        setTimeout(() => {
+          // Reset comments array for new page
+          allComments = [];
+
+          // Remove old inline buttons (they have stale event handlers)
+          document.querySelectorAll('.inline-comment-btn').forEach(btn => btn.remove());
+
+          // Reinitialize
+          initComments();
+          updateTocCommentBadges();
+        }, 100);
+      }
+    }
+
+    // Listen for MkDocs instant navigation events
+    // MkDocs Material dispatches 'DOMContentLoaded' simulation, but we can also use MutationObserver
+    document.addEventListener('DOMContentSwitch', reinitializeOnNavigation);
+
+    // Also listen for popstate (browser back/forward)
+    window.addEventListener('popstate', () => {
+      setTimeout(reinitializeOnNavigation, 100);
+    });
+
+    // Use MutationObserver as fallback for instant navigation
+    const observer = new MutationObserver((mutations) => {
+      for (const mutation of mutations) {
+        if (mutation.type === 'childList' && mutation.target.classList &&
+            (mutation.target.classList.contains('md-content') ||
+             mutation.target.tagName === 'ARTICLE')) {
+          reinitializeOnNavigation();
+          break;
+        }
+      }
+    });
+
+    // Observe the content area for changes
+    const contentArea = document.querySelector('.md-content');
+    if (contentArea) {
+      observer.observe(contentArea, { childList: true, subtree: true });
+    }
+
+    // Also check periodically as a safety net (every 2 seconds)
+    setInterval(() => {
+      if (window.location.pathname !== currentPage) {
+        reinitializeOnNavigation();
+      }
+    }, 2000);
 
   } catch (error) {
     console.error('[Comments] Fatal error initializing comments:', error);
