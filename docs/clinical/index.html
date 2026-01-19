@@ -8,6 +8,7 @@
     :root {
       --primary: #4f46e5;
       --primary-dark: #4338ca;
+      --primary-light: #e0e7ff;
       --stat: #dc2626;
       --stat-bg: #fee2e2;
       --urgent: #ea580c;
@@ -23,6 +24,12 @@
       --bg-secondary: #f9fafb;
       --custom-bg: #fef3c7;
       --custom-border: #fcd34d;
+      --warning: #dc2626;
+      --warning-bg: #fef2f2;
+      --info: #0284c7;
+      --info-bg: #f0f9ff;
+      --success: #059669;
+      --success-bg: #ecfdf5;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -110,6 +117,53 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
 
+    /* Clinical Notes Banner */
+    .clinical-notes-banner {
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+      border: 1px solid #bae6fd;
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .clinical-notes-banner:hover { background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); }
+    .clinical-notes-banner-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      color: #0369a1;
+    }
+    .clinical-notes-banner-header .icon { font-size: 1.2rem; }
+    .clinical-notes-banner-header .count {
+      background: #0284c7;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 0.75rem;
+      margin-left: auto;
+    }
+    .clinical-notes-banner-header .chevron { margin-left: 8px; transition: transform 0.2s; }
+    .clinical-notes-banner.open .chevron { transform: rotate(180deg); }
+    .clinical-notes-list {
+      display: none;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #bae6fd;
+    }
+    .clinical-notes-banner.open .clinical-notes-list { display: block; }
+    .clinical-note {
+      padding: 8px 0;
+      font-size: 0.85rem;
+      color: #0c4a6e;
+      border-bottom: 1px solid #e0f2fe;
+      display: flex;
+      gap: 8px;
+    }
+    .clinical-note:last-child { border-bottom: none; }
+    .clinical-note .bullet { color: #0284c7; font-weight: bold; }
+
     /* Section */
     .section { margin-bottom: 28px; }
     .section-header {
@@ -133,13 +187,12 @@
       margin-bottom: 8px;
     }
 
-    /* Items */
-    .item-list { display: flex; flex-direction: column; gap: 8px; }
+    /* Items - Compact Primary View */
+    .item-list { display: flex; flex-direction: column; gap: 4px; }
     .item {
       display: flex;
       flex-direction: column;
-      gap: 6px;
-      padding: 12px 14px;
+      padding: 10px 12px;
       background: var(--bg-secondary);
       border-radius: 8px;
       cursor: pointer;
@@ -147,10 +200,12 @@
       transition: all 0.15s;
     }
     .item:hover { background: #f0f0f5; }
-    .item.selected { background: #e0e7ff; border-color: #a5b4fc; }
+    .item.selected { background: var(--primary-light); border-color: #a5b4fc; }
     .item.custom { background: var(--custom-bg); border-color: var(--custom-border); }
     .item.custom.selected { background: #fde68a; border-color: #f59e0b; }
-    .item-header {
+
+    /* Item Primary Row */
+    .item-primary {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -158,38 +213,104 @@
     .item input[type="checkbox"] { width: 16px; height: 16px; cursor: pointer; flex-shrink: 0; }
     .item-name { flex: 1; font-size: 0.9rem; font-weight: 500; }
 
-    /* Item Details */
-    .item-details {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      margin-left: 26px;
-      font-size: 0.8rem;
-      color: var(--text-light);
-    }
-    .item-detail {
-      display: flex;
-      gap: 6px;
-    }
-    .item-detail-label {
-      font-weight: 600;
-      color: var(--text);
-      min-width: 90px;
-      flex-shrink: 0;
-    }
-    .item-detail-value {
-      flex: 1;
-    }
-    .item-dosing {
+    /* Dosing Badge - Always visible for drugs */
+    .item-dosing-badge {
       background: #dbeafe;
       color: #1e40af;
-      padding: 4px 8px;
+      padding: 3px 8px;
       border-radius: 4px;
+      font-size: 0.75rem;
       font-weight: 500;
+      max-width: 300px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
-    .item-contraindication {
+
+    /* Info Icons Row - Compact icons with tooltips */
+    .item-icons {
+      display: flex;
+      gap: 6px;
+      margin-left: 26px;
+      margin-top: 6px;
+    }
+    .info-icon {
+      position: relative;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      cursor: help;
+      transition: all 0.15s;
+    }
+    .info-icon:hover { transform: scale(1.1); }
+
+    /* Icon Types */
+    .icon-rationale { background: #f0f9ff; color: #0284c7; }
+    .icon-timing { background: #fef3c7; color: #b45309; }
+    .icon-target { background: #ecfdf5; color: #059669; }
+    .icon-contraindication { background: #fef2f2; color: #dc2626; }
+    .icon-monitoring { background: #f3e8ff; color: #7c3aed; }
+
+    /* Contraindication always visible with warning styling */
+    .icon-contraindication {
+      background: #fef2f2;
       color: #dc2626;
-      font-weight: 500;
+      border: 1px solid #fecaca;
+      animation: pulse-warning 2s infinite;
+    }
+    @keyframes pulse-warning {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.2); }
+      50% { box-shadow: 0 0 0 4px rgba(220, 38, 38, 0); }
+    }
+
+    /* Tooltip */
+    .info-icon .tooltip {
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1e293b;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 400;
+      white-space: normal;
+      width: max-content;
+      max-width: 280px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s;
+      z-index: 1000;
+      text-align: left;
+      line-height: 1.4;
+      pointer-events: none;
+    }
+    .info-icon .tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-top-color: #1e293b;
+    }
+    .info-icon:hover .tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+    .tooltip-label {
+      font-weight: 600;
+      color: #94a3b8;
+      display: block;
+      margin-bottom: 2px;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
     /* Priority badges */
@@ -207,7 +328,7 @@
     .priority-routine { background: var(--routine-bg); color: var(--routine); }
     .priority-ext { background: var(--ext-bg); color: var(--ext); }
 
-    /* Add Item Input - Always visible under each section */
+    /* Add Item Input */
     .add-item-input {
       display: flex;
       gap: 8px;
@@ -251,7 +372,7 @@
       font-size: 0.75rem;
     }
 
-    /* Selected Items - Clean list, just names, click to edit */
+    /* Selected Items */
     .selected-list { max-height: 350px; overflow-y: auto; }
     .selected-section { margin-bottom: 12px; }
     .selected-section:last-child { margin-bottom: 0; }
@@ -267,7 +388,7 @@
     }
     .selected-item {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 6px;
       padding: 6px 8px;
       background: var(--bg-secondary);
@@ -279,8 +400,8 @@
     .selected-item-text {
       flex: 1;
       cursor: text;
-      padding: 4px 6px;
-      border-radius: 4px;
+      padding: 2px 4px;
+      border-radius: 3px;
       min-height: 20px;
       line-height: 1.4;
       word-break: break-word;
@@ -291,10 +412,6 @@
       background: white;
       box-shadow: 0 0 0 2px var(--primary);
     }
-    .selected-item-dosing {
-      color: #1e40af;
-      font-weight: 500;
-    }
     .selected-item-remove {
       background: none;
       border: none;
@@ -303,6 +420,7 @@
       font-size: 1rem;
       padding: 0 4px;
       opacity: 0.5;
+      flex-shrink: 0;
     }
     .selected-item-remove:hover { opacity: 1; color: var(--stat); }
 
@@ -344,9 +462,7 @@
       border-top: 2px solid var(--border);
       padding-top: 20px;
     }
-    .collapsible {
-      margin-bottom: 8px;
-    }
+    .collapsible { margin-bottom: 8px; }
     .collapsible-header {
       display: flex;
       justify-content: space-between;
@@ -485,6 +601,33 @@
       margin-top: 12px;
     }
     .legend-item { display: flex; align-items: center; gap: 4px; }
+
+    /* Icon Legend */
+    .icon-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 8px 10px;
+      background: var(--bg-secondary);
+      border-radius: 6px;
+      font-size: 0.7rem;
+      margin-top: 8px;
+      color: var(--text-light);
+    }
+    .icon-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .icon-legend-item .mini-icon {
+      width: 16px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      font-size: 0.6rem;
+    }
   </style>
 </head>
 <body>
@@ -522,6 +665,13 @@
       <div class="legend-item"><span class="priority priority-urgent">URGENT</span> Within hours</div>
       <div class="legend-item"><span class="priority priority-routine">ROUTINE</span> Standard</div>
       <div class="legend-item"><span class="priority priority-ext">EXT</span> Extended</div>
+    </div>
+    <div class="icon-legend">
+      <div class="icon-legend-item"><span class="mini-icon icon-rationale">ℹ</span> Rationale</div>
+      <div class="icon-legend-item"><span class="mini-icon icon-timing">⏱</span> Timing</div>
+      <div class="icon-legend-item"><span class="mini-icon icon-target">🎯</span> Target</div>
+      <div class="icon-legend-item"><span class="mini-icon icon-contraindication">⚠</span> Contraindication</div>
+      <div class="icon-legend-item"><span class="mini-icon icon-monitoring">📊</span> Monitoring</div>
     </div>
   </div>
 
@@ -613,6 +763,12 @@
     return null;
   }
 
+  function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
   function renderPlan() {
     const plan = plansData[currentDiagnosis];
     if (!plan || !plan.sections) {
@@ -621,6 +777,22 @@
     }
 
     let html = '';
+
+    // Clinical Notes Banner (if notes exist)
+    if (plan.notes && plan.notes.length) {
+      html += `<div class="clinical-notes-banner" onclick="this.classList.toggle('open')">
+        <div class="clinical-notes-banner-header">
+          <span class="icon">💡</span>
+          <span>Clinical Pearls & Notes</span>
+          <span class="count">${plan.notes.length}</span>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="clinical-notes-list">`;
+      plan.notes.forEach(n => {
+        html += `<div class="clinical-note"><span class="bullet">•</span>${escapeHtml(n)}</div>`;
+      });
+      html += `</div></div>`;
+    }
 
     // Sections
     for (const [sectionName, subsections] of Object.entries(plan.sections)) {
@@ -644,33 +816,39 @@
           const sel = selectedItems.has(itemId);
           const name = item.item || item.name || item.treatment || 'Item';
 
-          // Build details HTML
-          let detailsHtml = '';
-          if (item.dosing) {
-            detailsHtml += `<div class="item-detail"><span class="item-detail-label">Dosing:</span><span class="item-detail-value item-dosing">${item.dosing}</span></div>`;
-          }
-          if (item.rationale) {
-            detailsHtml += `<div class="item-detail"><span class="item-detail-label">Rationale:</span><span class="item-detail-value">${item.rationale}</span></div>`;
-          }
-          if (item.timing) {
-            detailsHtml += `<div class="item-detail"><span class="item-detail-label">Timing:</span><span class="item-detail-value">${item.timing}</span></div>`;
-          }
-          if (item.target) {
-            detailsHtml += `<div class="item-detail"><span class="item-detail-label">Target:</span><span class="item-detail-value">${item.target}</span></div>`;
-          }
-          if (item.contraindications) {
-            detailsHtml += `<div class="item-detail"><span class="item-detail-label">⚠️ Avoid:</span><span class="item-detail-value item-contraindication">${item.contraindications}</span></div>`;
-          }
-          if (item.monitoring) {
-            detailsHtml += `<div class="item-detail"><span class="item-detail-label">Monitor:</span><span class="item-detail-value">${item.monitoring}</span></div>`;
+          // Build icons HTML
+          let iconsHtml = '';
+          const hasIcons = item.rationale || item.timing || item.target || item.contraindications || item.monitoring;
+
+          if (hasIcons) {
+            iconsHtml = '<div class="item-icons">';
+
+            if (item.rationale) {
+              iconsHtml += `<div class="info-icon icon-rationale">ℹ<div class="tooltip"><span class="tooltip-label">Rationale</span>${escapeHtml(item.rationale)}</div></div>`;
+            }
+            if (item.timing) {
+              iconsHtml += `<div class="info-icon icon-timing">⏱<div class="tooltip"><span class="tooltip-label">Timing</span>${escapeHtml(item.timing)}</div></div>`;
+            }
+            if (item.target) {
+              iconsHtml += `<div class="info-icon icon-target">🎯<div class="tooltip"><span class="tooltip-label">Target</span>${escapeHtml(item.target)}</div></div>`;
+            }
+            if (item.contraindications) {
+              iconsHtml += `<div class="info-icon icon-contraindication">⚠<div class="tooltip"><span class="tooltip-label">Contraindications</span>${escapeHtml(item.contraindications)}</div></div>`;
+            }
+            if (item.monitoring) {
+              iconsHtml += `<div class="info-icon icon-monitoring">📊<div class="tooltip"><span class="tooltip-label">Monitoring</span>${escapeHtml(item.monitoring)}</div></div>`;
+            }
+
+            iconsHtml += '</div>';
           }
 
           sectionHtml += `<div class="item ${sel ? 'selected' : ''}" data-id="${itemId}" data-section="${sectionName}" data-subsection="${subsectionName}">
-            <div class="item-header">
+            <div class="item-primary">
               <input type="checkbox" ${sel ? 'checked' : ''}>
-              <div class="item-name">${pc ? `<span class="priority ${pc}">${priority}</span>` : ''}${name}</div>
+              <div class="item-name">${pc ? `<span class="priority ${pc}">${priority}</span>` : ''}${escapeHtml(name)}</div>
+              ${item.dosing ? `<span class="item-dosing-badge" title="${escapeHtml(item.dosing)}">${escapeHtml(item.dosing)}</span>` : ''}
             </div>
-            ${detailsHtml ? `<div class="item-details">${detailsHtml}</div>` : ''}
+            ${iconsHtml}
           </div>`;
         });
         sectionHtml += '</div></div>';
@@ -683,18 +861,18 @@
         sectionCustom.forEach(([cid, citem]) => {
           const sel = selectedItems.has(cid);
           sectionHtml += `<div class="item custom ${sel ? 'selected' : ''}" data-id="${cid}" data-section="${sectionName}" data-custom="true">
-            <div class="item-header">
+            <div class="item-primary">
               <input type="checkbox" ${sel ? 'checked' : ''}>
-              <div class="item-name">${citem.name}</div>
+              <div class="item-name">${escapeHtml(citem.name)}</div>
             </div>
           </div>`;
         });
         sectionHtml += '</div></div>';
       }
 
-      // Add item input - always visible
+      // Add item input
       sectionHtml += `<div class="add-item-input">
-        <input type="text" placeholder="Add custom item to ${sectionName}..." data-section="${sectionName}" class="custom-input">
+        <input type="text" placeholder="Add custom item to ${sectionName}... (press Enter)" data-section="${sectionName}" class="custom-input">
       </div>`;
 
       sectionHtml += '</div>';
@@ -708,11 +886,11 @@
     if (plan.definitions && plan.definitions.length) {
       html += `<div class="collapsible">
         <div class="collapsible-header" onclick="toggleCollapsible(this)">
-          <span>Definitions</span><span class="collapsible-icon">▼</span>
+          <span>📖 Definitions</span><span class="collapsible-icon">▼</span>
         </div>
         <div class="collapsible-content">`;
       plan.definitions.forEach(d => {
-        html += `<div class="ref-item"><span class="ref-term">${d.term}:</span><span class="ref-definition">${d.definition}</span></div>`;
+        html += `<div class="ref-item"><span class="ref-term">${escapeHtml(d.term)}:</span><span class="ref-definition">${escapeHtml(d.definition)}</span></div>`;
       });
       html += `</div></div>`;
     }
@@ -721,41 +899,28 @@
     if (plan.differential && plan.differential.length) {
       html += `<div class="collapsible">
         <div class="collapsible-header" onclick="toggleCollapsible(this)">
-          <span>Differential Diagnosis</span><span class="collapsible-icon">▼</span>
+          <span>🔍 Differential Diagnosis</span><span class="collapsible-icon">▼</span>
         </div>
         <div class="collapsible-content">
           <table class="diff-table">
             <tr><th>Diagnosis</th><th>Features</th><th>Tests</th></tr>`;
       plan.differential.forEach(d => {
-        html += `<tr><td><strong>${d.diagnosis}</strong></td><td>${d.features}</td><td>${d.tests}</td></tr>`;
+        html += `<tr><td><strong>${escapeHtml(d.diagnosis)}</strong></td><td>${escapeHtml(d.features)}</td><td>${escapeHtml(d.tests)}</td></tr>`;
       });
       html += `</table></div></div>`;
-    }
-
-    // Notes
-    if (plan.notes && plan.notes.length) {
-      html += `<div class="collapsible">
-        <div class="collapsible-header" onclick="toggleCollapsible(this)">
-          <span>Clinical Notes</span><span class="collapsible-icon">▼</span>
-        </div>
-        <div class="collapsible-content"><ul class="notes-list">`;
-      plan.notes.forEach(n => {
-        html += `<li>${n}</li>`;
-      });
-      html += `</ul></div></div>`;
     }
 
     // Evidence
     if (plan.evidence && plan.evidence.length) {
       html += `<div class="collapsible">
         <div class="collapsible-header" onclick="toggleCollapsible(this)">
-          <span>Evidence & References</span><span class="collapsible-icon">▼</span>
+          <span>📚 Evidence & References</span><span class="collapsible-icon">▼</span>
         </div>
         <div class="collapsible-content">
           <table class="evidence-table">
             <tr><th>Recommendation</th><th>Level</th><th>Source</th></tr>`;
       plan.evidence.forEach(e => {
-        html += `<tr><td>${e.recommendation}</td><td><span class="evidence-level">${e.level}</span></td><td>${e.source}</td></tr>`;
+        html += `<tr><td>${escapeHtml(e.recommendation)}</td><td><span class="evidence-level">${escapeHtml(e.level)}</span></td><td>${escapeHtml(e.source)}</td></tr>`;
       });
       html += `</table></div></div>`;
     }
@@ -765,10 +930,10 @@
       plan.appendices.forEach(app => {
         html += `<div class="collapsible">
           <div class="collapsible-header" onclick="toggleCollapsible(this)">
-            <span>${app.title}</span><span class="collapsible-icon">▼</span>
+            <span>📋 ${escapeHtml(app.title)}</span><span class="collapsible-icon">▼</span>
           </div>
           <div class="collapsible-content">
-            <div class="appendix-content">${app.content}</div>
+            <div class="appendix-content">${escapeHtml(app.content)}</div>
           </div>
         </div>`;
       });
@@ -781,8 +946,8 @@
     // Attach item click handlers
     planContent.querySelectorAll('.item').forEach(item => {
       item.addEventListener('click', e => {
-        // Allow clicking anywhere on the item to toggle, except directly on checkbox
-        if (e.target.tagName === 'INPUT') return;
+        // Don't toggle if clicking on checkbox, icons, or tooltips
+        if (e.target.tagName === 'INPUT' || e.target.closest('.info-icon')) return;
         toggleItem(item);
       });
       const checkbox = item.querySelector('input[type="checkbox"]');
@@ -791,7 +956,7 @@
       }
     });
 
-    // Attach custom input handlers - press Enter to add
+    // Attach custom input handlers
     planContent.querySelectorAll('.custom-input').forEach(input => {
       input.addEventListener('keydown', e => {
         if (e.key === 'Enter' && input.value.trim()) {
@@ -889,7 +1054,7 @@
       });
     });
 
-    // Attach inline edit handlers - click directly to edit
+    // Attach inline edit handlers
     selectedList.querySelectorAll('.selected-item-text').forEach(span => {
       span.addEventListener('blur', () => {
         const id = span.dataset.id;
