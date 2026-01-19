@@ -17,7 +17,10 @@
       {"diagnosis": "Rigors (sepsis)", "features": "Associated with fever/chills, rhythmic shaking, preserves awareness", "tests": "Infectious workup, temperature"},
       {"diagnosis": "Decerebrate/decorticate posturing", "features": "Associated with structural brain injury, sustained posturing", "tests": "Imaging, cEEG"},
       {"diagnosis": "Neuroleptic malignant syndrome", "features": "Rigidity, hyperthermia, AMS, autonomic instability", "tests": "CPK, medication history"},
-      {"diagnosis": "Serotonin syndrome", "features": "Hyperreflexia, clonus, agitation, fever", "tests": "Medication history, clinical features"}
+      {"diagnosis": "Serotonin syndrome", "features": "Hyperreflexia, clonus, agitation, fever", "tests": "Medication history, clinical features"},
+      {"diagnosis": "Drug-induced dyskinesia", "features": "Medication history, stereotyped movements", "tests": "Drug levels, history, EEG normal"},
+      {"diagnosis": "Tetanus", "features": "Sustained muscle contraction, trismus, opisthotonos", "tests": "History of wound, vaccination status"},
+      {"diagnosis": "Strychnine poisoning", "features": "Opisthotonus with preserved consciousness", "tests": "Toxicology"}
     ],
     "notes": [
       "SE is a medical emergency with ~20% mortality; rapid treatment is critical",
@@ -34,12 +37,18 @@
       {"recommendation": "Lorazepam preferred IV benzodiazepine", "level": "Class I, Level A", "source": "[Alldredge et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11547716/)"},
       {"recommendation": "IM midazolam non-inferior to IV lorazepam", "level": "Class I, Level A", "source": "[RAMPART Trial, Silbergleit et al. NEJM 2012](https://pubmed.ncbi.nlm.nih.gov/22335736/)"},
       {"recommendation": "Second-line agents (LEV, VPA, fPHT) equivalent efficacy", "level": "Class I, Level A", "source": "[ESETT Trial, Kapur et al. NEJM 2019](https://pubmed.ncbi.nlm.nih.gov/31774955/)"},
-      {"recommendation": "Levetiracetam 60 mg/kg dosing", "level": "Class I, Level A", "source": "[ESETT Trial](https://pubmed.ncbi.nlm.nih.gov/31774955/)"},
+      {"recommendation": "Levetiracetam 60 mg/kg dosing", "level": "Class I, Level A", "source": "[ESETT Trial](https://pubmed.ncbi.nlm.nih.gov/31774955/) - higher than traditional 20-40 mg/kg"},
+      {"recommendation": "Levetiracetam 40 mg/kg may be adequate", "level": "Class II, Level B", "source": "Meta-analysis, pharmacokinetic modeling 2023-2024"},
       {"recommendation": "cEEG monitoring in RSE", "level": "Class I, Level B", "source": "[NCS Guidelines 2012](https://pubmed.ncbi.nlm.nih.gov/22528274/)"},
-      {"recommendation": "Ketamine in RSE/SRSE", "level": "Class IIb, Level B", "source": "[Rosati et al. CNS Drugs 2018](https://pubmed.ncbi.nlm.nih.gov/30232735/); 2024 systematic reviews"},
-      {"recommendation": "Earlier ketamine = better outcomes", "level": "Class II, Level B", "source": "[Fletman et al. 2024](https://pubmed.ncbi.nlm.nih.gov/39418930/); [Yan et al. 2024](https://pubmed.ncbi.nlm.nih.gov/38782798/)"},
+      {"recommendation": "Burst suppression target for RSE", "level": "Class IIb, Level C", "source": "Expert consensus"},
+      {"recommendation": "Ketamine in RSE/SRSE", "level": "Class IIb, Level B", "source": "Multiple case series; 2024 systematic reviews"},
+      {"recommendation": "Earlier ketamine = better outcomes", "level": "Class II, Level B", "source": "2024 two-center study; systematic reviews"},
+      {"recommendation": "Ketamine efficacy in RSE/SRSE", "level": "Class IIa, Level B", "source": "[Rosati A et al., CNS Drugs 2018;32(11):997-1009](https://pubmed.ncbi.nlm.nih.gov/30232735/)"},
+      {"recommendation": "Ketamine ± midazolam superiority over midazolam alone", "level": "Class II, Level B", "source": "[Fletman et al., Clin Neurol Neurosurg 2024](https://pubmed.ncbi.nlm.nih.gov/39418930/); [Yan et al., J Neurol 2024](https://pubmed.ncbi.nlm.nih.gov/38782798/)"},
       {"recommendation": "NORSE first-line immunotherapy within 72h", "level": "Class IIa, Level C", "source": "[Wickström et al. Epilepsia 2022](https://pubmed.ncbi.nlm.nih.gov/35997591/)"},
-      {"recommendation": "Ketogenic diet by Day 7 in NORSE", "level": "Class IIa, Level C", "source": "[International Consensus 2022](https://pubmed.ncbi.nlm.nih.gov/35951466/); FIRES case series"}
+      {"recommendation": "Ketogenic diet by Day 7 in NORSE", "level": "Class IIa, Level C", "source": "[International Consensus 2022](https://pubmed.ncbi.nlm.nih.gov/35951466/); FIRES case series"},
+      {"recommendation": "Second-line immunotherapy by Day 7 if first-line fails", "level": "Class IIb, Level C", "source": "[International Consensus 2022](https://pubmed.ncbi.nlm.nih.gov/35997591/)"},
+      {"recommendation": "Brivaracetam for SE", "level": "Class IIb, Level C", "source": "Emerging evidence; case series"}
     ],
     "appendices": [
       {
@@ -129,6 +138,14 @@
             "OPD": "-",
             "ICU": "STAT",
             "rationale": "Illicit drugs, withdrawal states"
+          },
+          {
+            "item": "Blood alcohol level",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Alcohol withdrawal common cause"
           },
           {
             "item": "ASM levels (if on therapy)",
@@ -538,6 +555,27 @@
             "ICU": "STAT",
             "dosing": "100-500 mg IV BEFORE or WITH glucose",
             "rationale": "Prevent Wernicke encephalopathy"
+          },
+          {
+            "item": "Cardiac monitoring",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "Continuous telemetry",
+            "rationale": "Monitor for arrhythmias; ASMs can affect cardiac conduction",
+            "monitoring": "Rhythm, HR, BP"
+          },
+          {
+            "item": "Isotonic fluids",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "NS or LR wide open initially",
+            "rationale": "Volume resuscitation, medication administration",
+            "contraindications": "Pulmonary edema",
+            "monitoring": "BP, I/O"
           }
         ],
         "First-Line (Benzodiazepines)": [
@@ -567,6 +605,19 @@
             "monitoring": "Respiratory status; onset 5-15 min"
           },
           {
+            "item": "Midazolam IV",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "0.2 mg/kg IV (max 10 mg); may repeat x1",
+            "rationale": "Alternative IV benzodiazepine; faster onset than lorazepam",
+            "timing": "Administer within 5 min of seizure onset",
+            "target": "Cessation of clinical and electrographic seizure activity",
+            "contraindications": "Acute narrow-angle glaucoma; severe respiratory depression",
+            "monitoring": "RR, O2 sat, BP"
+          },
+          {
             "item": "Midazolam intranasal",
             "ED": "STAT",
             "HOSP": "STAT",
@@ -575,7 +626,48 @@
             "dosing": "5 mg per nostril (10 mg total)",
             "rationale": "Alternative if no IV/IM access; useful for bystander administration",
             "timing": "Administer immediately; onset 10-15 min",
-            "target": "Cessation of clinical seizure activity"
+            "target": "Cessation of clinical seizure activity",
+            "contraindications": "Nasal obstruction",
+            "monitoring": "RR, O2 sat"
+          },
+          {
+            "item": "Midazolam buccal",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "10 mg buccal (if available)",
+            "rationale": "Alternative if no IV access; useful in community setting",
+            "timing": "Administer immediately if no IV/IM access",
+            "target": "Cessation of clinical seizure activity",
+            "contraindications": "Oral trauma",
+            "monitoring": "RR, O2 sat"
+          },
+          {
+            "item": "Diazepam IV",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "0.15 mg/kg IV (max 10 mg); may repeat x1 in 5 min",
+            "rationale": "Alternative IV benzodiazepine; shorter duration requires follow-up ASM",
+            "timing": "Administer within 5 min of seizure onset",
+            "target": "Cessation of clinical seizure activity",
+            "contraindications": "Acute narrow-angle glaucoma",
+            "monitoring": "RR, O2 sat; short duration - requires follow-up ASM"
+          },
+          {
+            "item": "Diazepam rectal",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "0.2-0.5 mg/kg PR (max 20 mg); use rectal gel formulation",
+            "rationale": "Alternative if no IV/IM access; useful for home/EMS use",
+            "timing": "Administer immediately if no other access",
+            "target": "Cessation of clinical seizure activity",
+            "contraindications": "Rectal pathology",
+            "monitoring": "RR, O2 sat"
           }
         ],
         "Second-Line ASMs": [
@@ -630,6 +722,58 @@
             "target": "Seizure cessation",
             "contraindications": "2nd/3rd degree AV block without pacemaker; PR interval >200ms",
             "monitoring": "ECG - check PR interval before and after"
+          },
+          {
+            "item": "Levetiracetam IV (conservative)",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "40 mg/kg IV (max 4500 mg) over 10-15 min",
+            "rationale": "Alternative lower dosing; some institutions prefer this over ESETT 60 mg/kg",
+            "timing": "Give at 5-10 min if BZD fails",
+            "target": "Seizure cessation",
+            "contraindications": "None absolute; reduce if CrCl <50",
+            "monitoring": "Generally well tolerated; agitation"
+          },
+          {
+            "item": "Brivaracetam IV",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "100-200 mg IV over 2-5 min; no titration needed",
+            "rationale": "Faster onset than levetiracetam; fewer behavioral effects; useful if patient on home levetiracetam",
+            "timing": "Give at 5-10 min if BZD fails",
+            "target": "Seizure cessation",
+            "contraindications": "Hepatic impairment (reduce dose)",
+            "monitoring": "Generally well tolerated"
+          },
+          {
+            "item": "Phenytoin IV",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "20 mg/kg IV at max 50 mg/min (if fosphenytoin unavailable)",
+            "rationale": "Alternative if fosphenytoin unavailable; same efficacy but more infusion risks",
+            "timing": "Give at 5-10 min if BZD fails",
+            "target": "Seizure cessation; level 10-20 mcg/mL",
+            "contraindications": "2nd/3rd degree AV block; sinus bradycardia",
+            "monitoring": "Cardiac monitor; MUST use large vein - tissue necrosis risk with extravasation"
+          },
+          {
+            "item": "Phenobarbital IV",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "dosing": "15-20 mg/kg IV at 50-100 mg/min",
+            "rationale": "Highly effective but significant respiratory depression; often requires intubation",
+            "timing": "Give at 5-10 min if BZD fails; have airway ready",
+            "target": "Seizure cessation; level 20-40 mcg/mL",
+            "contraindications": "Severe respiratory disease; porphyria",
+            "monitoring": "Respiratory status - often requires intubation at full dose; sedation"
           }
         ],
         "Refractory SE (Anesthetics)": [
@@ -905,6 +1049,17 @@
             "rationale": "Analgesia/sedation adjunct",
             "contraindications": "Hemodynamic instability",
             "monitoring": "Pain scale, respiratory status"
+          },
+          {
+            "item": "Propofol (sub-anesthetic)",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "-",
+            "ICU": "ROUTINE",
+            "dosing": "5-50 mcg/kg/min",
+            "rationale": "Sedation during cEEG",
+            "contraindications": "Same as anesthetic use",
+            "monitoring": "Sedation scale"
           },
           {
             "item": "Dexmedetomidine",
