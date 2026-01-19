@@ -1,6 +1,6 @@
 {
   "Status Epilepticus": {
-    "version": "1.5",
+    "version": "1.7",
     "icd10": "G40.901, G41.0, G41.1, G41.2, G41.8, G41.9",
     "scope": "Management of convulsive status epilepticus (CSE) and non-convulsive status epilepticus (NCSE) in adults. Covers staged treatment protocol from emergent benzodiazepines through refractory and super-refractory phases.",
     "definitions": [
@@ -444,7 +444,15 @@
             "HOSP": "STAT",
             "OPD": "-",
             "ICU": "-",
-            "rationale": "All SE requiring second-line agents"
+            "rationale": "All SE requiring second-line agents or ongoing seizures"
+          },
+          {
+            "item": "EEG technologist/cEEG initiation",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "STAT",
+            "rationale": "Mandatory for RSE/SRSE; strongly recommended for all SE"
           },
           {
             "item": "Infectious disease consult",
@@ -452,7 +460,223 @@
             "HOSP": "URGENT",
             "OPD": "-",
             "ICU": "URGENT",
-            "rationale": "If CNS infection suspected"
+            "rationale": "Suspected CNS infection"
+          },
+          {
+            "item": "Rheumatology/Neuroimmunology consult",
+            "ED": "-",
+            "HOSP": "URGENT",
+            "OPD": "-",
+            "ICU": "URGENT",
+            "rationale": "NORSE/FIRES, suspected autoimmune encephalitis"
+          },
+          {
+            "item": "Pharmacy consult",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "-",
+            "ICU": "ROUTINE",
+            "rationale": "Complex ASM dosing, drug interactions"
+          },
+          {
+            "item": "Nutrition/Dietitian consult",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "-",
+            "ICU": "URGENT",
+            "rationale": "Enteral feeding, ketogenic diet initiation (by Day 7 in NORSE)"
+          },
+          {
+            "item": "Palliative care consult",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "-",
+            "ICU": "ROUTINE",
+            "rationale": "SRSE with poor prognosis, goals of care discussion"
+          },
+          {
+            "item": "Social work consult",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE",
+            "rationale": "Family support, discharge planning"
+          },
+          {
+            "item": "Epilepsy surgery evaluation",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "EXT",
+            "ICU": "EXT",
+            "rationale": "Focal lesion on imaging, refractory to medical therapy"
+          },
+          {
+            "item": "PT/OT/Speech evaluation",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE",
+            "rationale": "Once stabilized; assess for deficits"
+          },
+          {
+            "item": "Epilepsy outpatient follow-up",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "All SE survivors; ASM optimization, etiology workup"
+          },
+          {
+            "item": "Outpatient video-EEG monitoring",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Characterization of seizure type, presurgical evaluation"
+          },
+          {
+            "item": "Neuropsychology testing",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Cognitive assessment post-SE; baseline before surgery"
+          }
+        ]
+      },
+      "Patient Instructions": {
+        "Education": [
+          {
+            "item": "Explain SE is a medical emergency requiring ICU care",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "-",
+            "ICU": "-",
+            "rationale": "Family understanding of severity"
+          },
+          {
+            "item": "Discuss prognosis based on etiology and duration of SE",
+            "ED": "-",
+            "HOSP": "URGENT",
+            "OPD": "-",
+            "ICU": "URGENT",
+            "rationale": "Realistic expectations"
+          },
+          {
+            "item": "Educate on importance of ASM adherence",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Prevent recurrence if applicable"
+          },
+          {
+            "item": "Seizure first aid education for family",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Safety during future seizures"
+          },
+          {
+            "item": "Rescue medication training (rectal diazepam, nasal midazolam)",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Empower family for seizure emergencies"
+          },
+          {
+            "item": "Driving restrictions (minimum 3-6 months seizure-free)",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Legal requirement; varies by state"
+          },
+          {
+            "item": "Medical alert bracelet recommendation",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Emergency identification"
+          },
+          {
+            "item": "Seizure action plan development",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Structured emergency response"
+          },
+          {
+            "item": "Discuss goals of care if SRSE with poor prognosis",
+            "ED": "-",
+            "HOSP": "-",
+            "OPD": "-",
+            "ICU": "ROUTINE",
+            "rationale": "End-of-life planning when appropriate"
+          }
+        ]
+      },
+      "Lifestyle": {
+        "Prevention": [
+          {
+            "item": "Medication adherence counseling",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "ASM non-adherence is common SE precipitant"
+          },
+          {
+            "item": "Avoid abrupt ASM discontinuation",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Common SE precipitant"
+          },
+          {
+            "item": "Alcohol cessation",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Alcohol lowers seizure threshold; withdrawal causes seizures"
+          },
+          {
+            "item": "Sleep hygiene",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Sleep deprivation lowers seizure threshold"
+          },
+          {
+            "item": "Avoid known seizure triggers",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Patient-specific triggers"
+          },
+          {
+            "item": "Drug interaction review",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "OTC meds and supplements can affect ASM levels"
+          },
+          {
+            "item": "Pregnancy planning counseling",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-",
+            "rationale": "Women of childbearing potential; teratogenic ASMs"
           }
         ]
       }
