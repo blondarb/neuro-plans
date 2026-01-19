@@ -47,12 +47,38 @@ An interactive web-based tool for building customized clinical plans:
 
 ### AI-Powered Skills Pipeline
 
-Five skills for generating and validating plans:
+Six steps for generating and validating plans:
 1. **Builder** - Generates comprehensive plans from diagnosis (includes citation links)
 2. **Checker** - Validates against 6 quality domains (target 90%+)
 3. **Rebuilder** - Applies corrections from checker
 4. **Citation Verifier** - Validates medical references and adds PubMed links
 5. **ICD/Synonym Enricher** - Adds billing codes and synonyms
+6. **JSON Generator** - Python script that converts markdown to JSON for Clinical Plan Builder
+
+### JSON Generator Script
+
+Converts finalized markdown templates to JSON format for the Clinical Plan Builder:
+
+```bash
+# Generate JSON for a single plan
+python scripts/generate_json.py docs/plans/status-epilepticus.md
+
+# Validate only (no output)
+python scripts/generate_json.py docs/plans/status-epilepticus.md --validate-only
+
+# Merge into plans.json
+python scripts/generate_json.py docs/plans/status-epilepticus.md --merge
+
+# Process all plans
+python scripts/generate_json.py --all --merge
+```
+
+Features:
+- Parses all 8 sections and subsections from markdown
+- Maps table columns to JSON fields (item, priorities, dosing, contraindications, etc.)
+- Built-in validation with detailed reports
+- Checks medication safety fields (dosing, contraindications)
+- Merge mode for updating `docs/data/plans.json`
 
 ## Repository Structure
 
@@ -78,6 +104,7 @@ neuro-clinical-plans/
 │   └── neuro-comment-review-SKILL.md
 ├── references/                 # Reference materials
 ├── scripts/                    # Build scripts
+│   └── generate_json.py        # Markdown → JSON converter with validation
 └── mkdocs.yml                  # MkDocs configuration
 ```
 

@@ -356,6 +356,7 @@ Include modifiable risk factors and preventive measures specific to the conditio
 12. **Validate coverage:** Before finalizing, confirm each section has appropriate entries for ED, HOSP, OPD, and ICU where applicable
 13. **Cover symptomatic treatments comprehensively** - include all symptom categories relevant to the diagnosis (pain, spasticity, bladder, mood, etc.)
 14. **Include clickable citation links** - All references in Section 8 must include PubMed links where available (see Citation Link Requirements below)
+15. **CRITICAL: Maintain JSON parity** - The `plans.json` file must contain ALL content from the markdown template. The Clinical Plan Builder reads from JSON only. See "JSON Parity Requirement" section below.
 
 ## Setting Coverage Checklist (Validate Before Output)
 
@@ -690,7 +691,94 @@ To ensure icons appear in the Clinical Tool:
 3. **Highlight safety concerns** - Use ALL CAPS for critical warnings in contraindications/monitoring
 4. **Be concise but complete** - Tooltips work best with 1-3 sentences
 
+## JSON Parity Requirement
+
+**CRITICAL: The JSON file (`docs/data/plans.json`) must contain ALL content from the markdown template.** The Clinical Plan Builder reads exclusively from `plans.json`, NOT from markdown files. Any content missing from JSON will not appear in the web interface.
+
+### JSON Generation Checklist
+
+After creating or updating a markdown template, verify the corresponding JSON entry includes:
+
+**Section 1 - Laboratory Workup:**
+- [ ] 1A: Essential/Core Labs
+- [ ] 1B: Extended Workup (Second-line)
+- [ ] 1C: Rare/Specialized (Refractory or Atypical)
+
+**Section 2 - Diagnostic Imaging & Studies:**
+- [ ] 2A: Essential/First-line
+- [ ] 2B: Extended
+- [ ] 2C: Rare/Specialized
+- [ ] Lumbar Puncture subsection (if applicable)
+
+**Section 3 - Treatment:**
+- [ ] 3A: Acute/Emergent
+- [ ] 3B: Symptomatic Treatments
+- [ ] 3C: Second-line/Refractory
+- [ ] 3D: Disease-Modifying (if applicable)
+- [ ] 3E: Super-Refractory options (if applicable)
+- [ ] 3F: Immunotherapy options (if applicable, e.g., NORSE/FIRES)
+- [ ] 3G: Symptomatic/Supportive ICU Care (if applicable)
+
+**Section 4 - Other Recommendations:**
+- [ ] 4A: Referrals & Consults
+- [ ] 4B: Patient Instructions
+- [ ] 4C: Lifestyle & Prevention
+
+**Section 5 - Differential Diagnosis:**
+- [ ] All differential diagnoses with distinguishing features
+
+**Section 6 - Monitoring Parameters:**
+- [ ] Continuous monitoring items (EEG, telemetry, etc.)
+- [ ] Intermittent monitoring items (labs, exams, etc.)
+
+**Section 7 - Disposition Criteria:**
+- [ ] ICU admission criteria
+- [ ] Floor admission criteria
+- [ ] Discharge criteria
+- [ ] Transfer criteria
+
+**Section 8 - Evidence & References:**
+- [ ] All citations with PubMed links (handled separately via citations section in JSON)
+
+### JSON Field Completeness
+
+For each item in JSON, include ALL applicable metadata fields:
+- `item`: Name (required)
+- `ED`, `HOSP`, `OPD`, `ICU`: Priority flags
+- `dosing`: For medications
+- `rationale`: Clinical reasoning
+- `timing`: When to perform
+- `target`: Expected findings
+- `contraindications`: Safety warnings
+- `monitoring`: Required monitoring
+
+### Validation Step
+
+**Before considering a plan complete:**
+1. Count total items in markdown template
+2. Count total items in JSON entry
+3. Verify counts match (or document why they differ)
+4. Spot-check 3 random items from each section to confirm field completeness
+
+### Common JSON Gaps to Avoid
+
+| Gap | Impact | Prevention |
+|-----|--------|------------|
+| Missing subsections (1C, 2C, 3E-3G) | Advanced/rare options not visible | Follow section checklist |
+| Missing monitoring section | Safety monitoring not displayed | Always include Section 6 |
+| Missing disposition criteria | No admission/discharge guidance | Always include Section 7 |
+| Incomplete item fields | Icons don't appear | Include all applicable metadata |
+| Missing ICU-specific treatments | Incomplete critical care coverage | Review all 3E-3G subsections |
+
 ## Change Log
+
+**v2.6 (January 19, 2026)**
+- **Added JSON Parity Requirement section** - CRITICAL update requiring JSON to match markdown completely
+- Added JSON Generation Checklist covering all 8 sections and subsections
+- Added JSON Field Completeness requirements for item metadata
+- Added Validation Step with item count verification
+- Added Common JSON Gaps table to prevent missing content
+- This addresses issue where Clinical Plan Builder showed incomplete content because JSON lacked parity with markdown
 
 **v2.1 (January 13, 2026)**
 - Added comprehensive Treatment Section Guidance
