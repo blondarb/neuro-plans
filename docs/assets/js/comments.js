@@ -720,7 +720,8 @@
 
         // Find all TOC links (these link to #anchor on the current page)
         const tocLinks = tocContainer.querySelectorAll('.md-nav__link');
-        console.log('[Comments] Found', tocLinks.length, 'TOC links');
+        const tocTexts = Array.from(tocLinks).map(l => l.textContent.trim()).slice(0, 10);
+        console.log('[Comments] Found', tocLinks.length, 'TOC links, first 10:', tocTexts);
 
         tocLinks.forEach(link => {
           const href = link.getAttribute('href');
