@@ -1137,36 +1137,63 @@ h3:has(.inline-comment-btn) {
    RESPONSIVE TYPOGRAPHY & LAYOUT
    ======================================== */
 
-/* Medium screens - reduce font sizes when TOC competes with content */
-@media screen and (max-width: 1400px) {
-  .md-typeset table:not([class]) {
-    font-size: 0.8rem;
+/* Base table styling - smaller font and horizontal scroll */
+.md-typeset table:not([class]) {
+  font-size: 0.75rem;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: 6px 8px;
+  white-space: nowrap;
+}
+
+/* First column (item name) can wrap */
+.md-typeset table:not([class]) td:first-child,
+.md-typeset table:not([class]) th:first-child {
+  white-space: normal;
+  min-width: 120px;
+  max-width: 200px;
+}
+
+/* Narrow the right TOC to give more room to content */
+@media screen and (min-width: 1220px) {
+  .md-sidebar--secondary {
+    width: 11rem;
   }
 
-  .md-typeset table:not([class]) th,
-  .md-typeset table:not([class]) td {
-    padding: 8px 10px;
+  .md-sidebar--secondary .md-nav {
+    font-size: 0.65rem;
   }
 
-  .priority-stat,
-  .priority-urgent,
-  .priority-routine,
-  .priority-ext,
-  .priority-na {
-    font-size: 0.7rem;
-    padding: 2px 6px;
+  .md-sidebar--secondary .md-nav__link {
+    padding: 0.3rem 0.6rem;
   }
 }
 
-/* Smaller screens - more aggressive reduction */
-@media screen and (max-width: 1200px) {
+/* Priority badges - smaller */
+.priority-stat,
+.priority-urgent,
+.priority-routine,
+.priority-ext,
+.priority-na {
+  font-size: 0.65rem;
+  padding: 1px 5px;
+}
+
+/* Medium screens */
+@media screen and (max-width: 1400px) {
   .md-typeset table:not([class]) {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 
   .md-typeset table:not([class]) th,
   .md-typeset table:not([class]) td {
-    padding: 6px 8px;
+    padding: 5px 6px;
   }
 
   .priority-stat,
@@ -1174,8 +1201,8 @@ h3:has(.inline-comment-btn) {
   .priority-routine,
   .priority-ext,
   .priority-na {
-    font-size: 0.65rem;
-    padding: 1px 5px;
+    font-size: 0.6rem;
+    padding: 1px 4px;
   }
 
   /* Reduce legend size */
@@ -1189,42 +1216,23 @@ h3:has(.inline-comment-btn) {
   }
 }
 
-/* When TOC would seriously overlap content */
-@media screen and (max-width: 1024px) {
-  .md-typeset table:not([class]) {
-    font-size: 0.7rem;
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .md-typeset table:not([class]) th,
-  .md-typeset table:not([class]) td {
-    padding: 5px 6px;
-    white-space: nowrap;
-  }
-
-  /* Allow wrapping for item/description columns but not others */
-  .md-typeset table:not([class]) td:first-child {
-    white-space: normal;
-    min-width: 150px;
-  }
-}
-
-/* Mobile - hide right TOC, full width content */
-@media screen and (max-width: 768px) {
+/* Smaller screens - hide TOC */
+@media screen and (max-width: 1219px) {
+  /* MkDocs Material hides TOC at this breakpoint automatically */
   .md-typeset table:not([class]) {
     font-size: 0.75rem;
   }
+}
 
+/* Mobile */
+@media screen and (max-width: 768px) {
   .md-typeset table:not([class]) th,
   .md-typeset table:not([class]) td {
     padding: 6px 8px;
-    white-space: normal;
   }
 
-  /* Reset horizontal scroll on mobile */
   .md-typeset table:not([class]) td:first-child {
     min-width: auto;
+    max-width: none;
   }
 }
