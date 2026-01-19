@@ -700,6 +700,7 @@
         });
 
         console.log('[Comments] Comment counts by page:', commentCountsByPage);
+        console.log('[Comments] Available pageIds:', Object.keys(commentCountsByPage));
 
         // Find all nav links and add badges if they have comments
         document.querySelectorAll('.md-nav__link').forEach(link => {
@@ -707,6 +708,7 @@
           if (!href || href === '#' || href.startsWith('javascript:')) return;
 
           // Convert href to pageId format - handle relative paths
+          // The href might be like "../plans/status-epilepticus/" or "plans/status-epilepticus/"
           let pageId = href
             .replace(/^\.\.\//, '')
             .replace(/^\.\//, '')
@@ -717,12 +719,21 @@
             .replace(/_$/, '')
             .replace(/_index$/, ''); // Remove trailing _index
 
+          // Also try extracting just the page name from the path
+          const pathParts = href.replace(/\/$/, '').split('/');
+          const pageName = pathParts[pathParts.length - 1] || pathParts[pathParts.length - 2];
+
           // Build exact match variations only (no partial matching)
           const pageIdVariations = [
             pageId,
             'neuro-plans_' + pageId,
             pageId.replace(/^plans_/, 'neuro-plans_plans_'),
-            pageId.replace(/^drafts_/, 'neuro-plans_drafts_')
+            pageId.replace(/^drafts_/, 'neuro-plans_drafts_'),
+            // Also try with the full path structure that getPageId() might produce
+            'neuro-plans_plans_' + pageName,
+            'neuro-plans_drafts_' + pageName,
+            'plans_' + pageName,
+            'drafts_' + pageName
           ];
 
           // Only exact matches - no partial matching
@@ -730,13 +741,10 @@
           for (const variant of pageIdVariations) {
             if (commentCountsByPage[variant]) {
               count = commentCountsByPage[variant];
-              console.log('[Comments] Matched', variant, 'with count', count);
+              console.log('[Comments] TOC badge matched:', variant, '=', count, 'for link:', href);
               break;
             }
           }
-
-          // REMOVED: Partial matching logic that was causing false positives
-          // The old code would match any pageId that contained or was contained by another
 
           // Check for existing badge or create one
           let badge = link.querySelector('.toc-comment-badge');
@@ -783,13 +791,15 @@
 
     // Track current page to detect navigation
     let currentPage = window.location.pathname;
+    let isReinitializing = false; // Prevent re-entrancy
 
     // Reinitialize comments on page change
     function reinitializeOnNavigation() {
       const newPage = window.location.pathname;
-      if (newPage !== currentPage) {
+      if (newPage !== currentPage && !isReinitializing) {
         console.log('[Comments] Page changed from', currentPage, 'to', newPage);
         currentPage = newPage;
+        isReinitializing = true;
 
         // Small delay to let MkDocs finish rendering
         setTimeout(() => {
@@ -802,12 +812,16 @@
           // Reinitialize
           initComments();
           updateTocCommentBadges();
+
+          // Allow future reinitializations after a delay
+          setTimeout(() => {
+            isReinitializing = false;
+          }, 500);
         }, 100);
       }
     }
 
     // Listen for MkDocs instant navigation events
-    // MkDocs Material dispatches 'DOMContentLoaded' simulation, but we can also use MutationObserver
     document.addEventListener('DOMContentSwitch', reinitializeOnNavigation);
 
     // Also listen for popstate (browser back/forward)
@@ -815,27 +829,33 @@
       setTimeout(reinitializeOnNavigation, 100);
     });
 
-    // Use MutationObserver as fallback for instant navigation
-    const observer = new MutationObserver((mutations) => {
-      for (const mutation of mutations) {
-        if (mutation.type === 'childList' && mutation.target.classList &&
-            (mutation.target.classList.contains('md-content') ||
-             mutation.target.tagName === 'ARTICLE')) {
-          reinitializeOnNavigation();
-          break;
-        }
+    // MkDocs Material specific: listen for the location$ observable
+    // This fires when instant navigation completes
+    if (typeof window.location$ !== 'undefined') {
+      window.location$.subscribe(() => {
+        setTimeout(reinitializeOnNavigation, 100);
+      });
+    }
+
+    // Use URL change detection instead of MutationObserver
+    // MutationObserver was causing infinite loops by detecting our own button additions
+    let lastUrl = window.location.href;
+    const urlObserver = new MutationObserver(() => {
+      if (window.location.href !== lastUrl) {
+        lastUrl = window.location.href;
+        reinitializeOnNavigation();
       }
     });
 
-    // Observe the content area for changes
-    const contentArea = document.querySelector('.md-content');
-    if (contentArea) {
-      observer.observe(contentArea, { childList: true, subtree: true });
+    // Observe the document title which changes on navigation
+    const titleElement = document.querySelector('title');
+    if (titleElement) {
+      urlObserver.observe(titleElement, { childList: true });
     }
 
     // Also check periodically as a safety net (every 2 seconds)
     setInterval(() => {
-      if (window.location.pathname !== currentPage) {
+      if (window.location.pathname !== currentPage && !isReinitializing) {
         reinitializeOnNavigation();
       }
     }, 2000);
