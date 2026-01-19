@@ -8,11 +8,17 @@ Includes built-in validation to ensure parity between markdown and JSON.
 Usage:
     python scripts/generate_json.py docs/plans/status-epilepticus.md
     python scripts/generate_json.py docs/plans/status-epilepticus.md --validate-only
+    python scripts/generate_json.py docs/plans/status-epilepticus.md --check-parity
     python scripts/generate_json.py docs/plans/status-epilepticus.md --output custom.json
     python scripts/generate_json.py --all  # Process all plans in docs/plans/
 
 Pipeline position: Run LAST after all other skills complete
     Builder → Checker → Rebuilder → Citation Verifier → ICD/Synonym Enricher → JSON Generator
+
+Parity Validation:
+    The --check-parity flag compares markdown item counts against existing JSON in plans.json.
+    This catches discrepancies before deployment and prevents content from going missing
+    in the Clinical Plan Builder.
 """
 
 import argparse
@@ -518,6 +524,281 @@ class MarkdownParser:
         return mappings.get(header, None)
 
 
+class ParityChecker:
+    """Checks parity between markdown content and existing JSON in plans.json."""
+
+    def __init__(self, markdown_path: Path, plans_json_path: Path = None):
+        self.markdown_path = markdown_path
+        self.plans_json_path = plans_json_path or Path('docs/data/plans.json')
+        self.discrepancies = []
+        self.md_counts = {}
+        self.json_counts = {}
+
+    def check(self) -> tuple[bool, list]:
+        """
+        Check parity between markdown and JSON.
+        Returns (parity_ok, discrepancies_list)
+        """
+        # Count items in markdown
+        self.md_counts = self._count_markdown_items()
+
+        # Count items in JSON
+        self.json_counts = self._count_json_items()
+
+        # Compare
+        self._compare_counts()
+
+        parity_ok = len(self.discrepancies) == 0
+        return parity_ok, self.discrepancies
+
+    def _count_markdown_items(self) -> dict:
+        """Count items in each markdown section by parsing tables."""
+        counts = {}
+        content = self.markdown_path.read_text(encoding='utf-8')
+        lines = content.split('\n')
+
+        # Track current section
+        current_section = None
+        current_subsection = None
+        in_table = False
+        item_count = 0
+
+        section_patterns = [
+            (r'##?\s*1[.\s]+LABORATORY', 'Laboratory Workup'),
+            (r'###?\s*1A', 'Core Labs'),
+            (r'###?\s*1B', 'Extended Workup'),
+            (r'###?\s*1C', 'Rare/Specialized Labs'),
+            (r'##?\s*2[.\s]+DIAGNOSTIC', 'Diagnostic Imaging'),
+            (r'###?\s*2A', 'Essential Imaging'),
+            (r'###?\s*2B', 'Extended Imaging'),
+            (r'###?\s*2C', 'Rare/Specialized Imaging'),
+            (r'###?\s*LUMBAR', 'Lumbar Puncture'),
+            (r'##?\s*3[.\s]+TREATMENT', 'Treatment'),
+            (r'###?\s*3A', 'Stabilization/Acute'),
+            (r'###?\s*3B', 'First-Line/Emergent'),
+            (r'###?\s*3C', 'Second-Line ASM'),
+            (r'###?\s*3D', 'Refractory SE'),
+            (r'###?\s*3E', 'Super-Refractory'),
+            (r'###?\s*3F', 'NORSE/Immunotherapy'),
+            (r'###?\s*3G', 'Supportive Care'),
+            (r'##?\s*4[.\s]+OTHER', 'Other Recommendations'),
+            (r'###?\s*4A', 'Referrals'),
+            (r'###?\s*4B', 'Patient Instructions'),
+            (r'###?\s*4C', 'Lifestyle'),
+            (r'##?\s*5[.\s]+DIFFERENTIAL', 'Differential Diagnosis'),
+            (r'##?\s*6[.\s]+MONITORING', 'Monitoring Parameters'),
+            (r'##?\s*7[.\s]+DISPOSITION', 'Disposition Criteria'),
+            (r'##?\s*8[.\s]+EVIDENCE', 'Evidence & References'),
+        ]
+
+        for line in lines:
+            # Check for section headers
+            for pattern, section_name in section_patterns:
+                if re.search(pattern, line, re.IGNORECASE):
+                    # Save previous subsection count
+                    if current_subsection and item_count > 0:
+                        counts[current_subsection] = item_count
+                    current_subsection = section_name
+                    item_count = 0
+                    in_table = False
+                    break
+
+            # Count table rows (items)
+            if line.strip().startswith('|'):
+                cells = [c.strip() for c in line.split('|')[1:-1]]
+                # Skip header rows and separator rows
+                if cells and not all(set(c) <= {'-', ':', ' '} for c in cells):
+                    # Skip rows where first cell is a header-like word
+                    first_cell = cells[0].lower() if cells else ''
+                    header_words = ['test', 'study', 'treatment', 'medication', 'recommendation',
+                                   'parameter', 'disposition', 'alternative diagnosis', 'diagnosis']
+                    if first_cell and first_cell not in header_words and not first_cell.startswith('---'):
+                        item_count += 1
+                        in_table = True
+            elif in_table and not line.strip().startswith('|') and line.strip():
+                # End of table - but keep counting if next table
+                pass
+
+        # Save final subsection
+        if current_subsection and item_count > 0:
+            counts[current_subsection] = item_count
+
+        return counts
+
+    def _count_json_items(self) -> dict:
+        """Count items in each JSON section."""
+        counts = {}
+
+        if not self.plans_json_path.exists():
+            return counts
+
+        with open(self.plans_json_path, 'r', encoding='utf-8') as f:
+            plans_data = json.load(f)
+
+        # Find the plan by matching filename
+        plan_name = self.markdown_path.stem.replace('-', ' ').title()
+
+        # Try different name formats
+        plan_data = None
+        for key in plans_data:
+            if key.lower().replace(' ', '-') == self.markdown_path.stem.lower():
+                plan_data = plans_data[key]
+                break
+            if key.lower() == plan_name.lower():
+                plan_data = plans_data[key]
+                break
+
+        if not plan_data:
+            # Try Status Epilepticus specifically
+            if 'Status Epilepticus' in plans_data:
+                plan_data = plans_data['Status Epilepticus']
+
+        if not plan_data:
+            return counts
+
+        # Count items in sections
+        sections = plan_data.get('sections', {})
+        if isinstance(sections, dict):
+            for section_name, section_data in sections.items():
+                if isinstance(section_data, dict):
+                    for subsection_name, items in section_data.items():
+                        if isinstance(items, list):
+                            counts[subsection_name] = len(items)
+                elif isinstance(section_data, list):
+                    counts[section_name] = len(section_data)
+
+        # Also check top-level arrays
+        for key in ['differential', 'evidence', 'notes', 'definitions']:
+            if key in plan_data and isinstance(plan_data[key], list):
+                counts[key.title()] = len(plan_data[key])
+
+        return counts
+
+    def _normalize_section_name(self, name: str) -> str:
+        """Normalize section names for comparison."""
+        # Common variations to standardize
+        normalizations = {
+            'stabilization/acute': 'stabilization',
+            'first-line/emergent': 'first-line benzodiazepines',
+            'first-line (benzodiazepines)': 'first-line benzodiazepines',
+            'second-line asm': 'second-line asms',
+            'refractory se': 'refractory se (anesthetics)',
+            'super-refractory': 'super-refractory se',
+            'norse/immunotherapy': 'norse immunotherapy',
+            'norse/fires first-line immunotherapy': 'norse immunotherapy',  # Combine NORSE sections
+            'norse/fires second-line immunotherapy': 'norse immunotherapy',  # Combine NORSE sections
+            'norse first-line immunotherapy': 'norse immunotherapy',
+            'norse second-line immunotherapy': 'norse immunotherapy',
+            'supportive care': 'symptomatic/supportive icu care',
+            'essential imaging': 'essential',
+            'extended imaging': 'extended',
+            'rare/specialized imaging': 'rare/specialized',
+            'rare/specialized labs': 'rare/specialized',  # Combine rare labs
+            'specialized': 'rare/specialized',
+            'differential diagnosis': 'differential',
+            'evidence & references': 'evidence',
+            'monitoring parameters': 'monitoring',
+            'disposition criteria': 'criteria',
+            'continuous monitoring': 'monitoring',  # Combine monitoring
+            'intermittent monitoring': 'monitoring',  # Combine monitoring
+            'monitoring continuous': 'monitoring',
+            'monitoring intermittent': 'monitoring',
+            'patient instructions': 'education',
+            'lifestyle': 'prevention',
+            'referrals': 'consults',
+        }
+        lower = name.lower().strip()
+        return normalizations.get(lower, lower)
+
+    # Sections that exist only in JSON and are expected (not errors)
+    JSON_ONLY_SECTIONS = {'definitions', 'notes', 'treatment'}
+
+    def _compare_counts(self):
+        """Compare markdown and JSON counts, recording discrepancies."""
+        # Normalize all section names
+        normalized_md = {}
+        for section, count in self.md_counts.items():
+            norm_name = self._normalize_section_name(section)
+            normalized_md[norm_name] = normalized_md.get(norm_name, 0) + count
+
+        normalized_json = {}
+        for section, count in self.json_counts.items():
+            norm_name = self._normalize_section_name(section)
+            normalized_json[norm_name] = normalized_json.get(norm_name, 0) + count
+
+        all_sections = set(normalized_md.keys()) | set(normalized_json.keys())
+
+        for section in sorted(all_sections):
+            # Skip sections that only exist in JSON by design
+            if section in self.JSON_ONLY_SECTIONS:
+                continue
+
+            md_count = normalized_md.get(section, 0)
+            json_count = normalized_json.get(section, 0)
+
+            if md_count != json_count:
+                diff = md_count - json_count
+                direction = "missing from JSON" if diff > 0 else "extra in JSON"
+                self.discrepancies.append({
+                    'section': section,
+                    'markdown_count': md_count,
+                    'json_count': json_count,
+                    'difference': abs(diff),
+                    'direction': direction
+                })
+
+        # Update counts with normalized versions for reporting
+        self.md_counts = normalized_md
+        self.json_counts = normalized_json
+
+
+def print_parity_report(parity_ok: bool, discrepancies: list, md_counts: dict, json_counts: dict):
+    """Print a formatted parity report."""
+    print(f"\n{'='*70}")
+    print("PARITY CHECK REPORT")
+    print('='*70)
+
+    # Summary table
+    print(f"\n{'Section':<35} {'Markdown':>10} {'JSON':>10} {'Status':>12}")
+    print('-'*70)
+
+    all_sections = sorted(set(md_counts.keys()) | set(json_counts.keys()))
+    for section in all_sections:
+        md = md_counts.get(section, 0)
+        js = json_counts.get(section, 0)
+        if md == js:
+            status = "✅ OK"
+        elif md > js:
+            status = f"❌ -{md-js} missing"
+        else:
+            status = f"⚠️ +{js-md} extra"
+        print(f"{section:<35} {md:>10} {js:>10} {status:>12}")
+
+    print('-'*70)
+
+    # Totals
+    md_total = sum(md_counts.values())
+    json_total = sum(json_counts.values())
+    print(f"{'TOTAL':<35} {md_total:>10} {json_total:>10}")
+
+    # Discrepancy details
+    if discrepancies:
+        print(f"\n❌ DISCREPANCIES FOUND ({len(discrepancies)}):")
+        print("-"*70)
+        for d in discrepancies:
+            print(f"  • {d['section']}: {d['difference']} items {d['direction']}")
+            print(f"    Markdown: {d['markdown_count']}, JSON: {d['json_count']}")
+
+    # Overall status
+    print(f"\n{'='*70}")
+    if parity_ok:
+        print("✅ PARITY CHECK PASSED - Markdown and JSON are in sync")
+    else:
+        print("❌ PARITY CHECK FAILED - Fix discrepancies before deployment")
+        print("\nTo fix: Run 'python scripts/generate_json.py <file> --merge' to regenerate JSON")
+    print('='*70 + '\n')
+
+
 class JSONValidator:
     """Validates generated JSON for completeness and correctness."""
 
@@ -787,6 +1068,18 @@ def main():
         help='Suppress validation report output'
     )
 
+    parser.add_argument(
+        '--check-parity',
+        action='store_true',
+        help='Check parity between markdown and existing JSON in plans.json'
+    )
+
+    parser.add_argument(
+        '--fail-on-parity',
+        action='store_true',
+        help='Exit with error code if parity check fails (useful for CI)'
+    )
+
     args = parser.parse_args()
 
     # Determine files to process
@@ -808,12 +1101,26 @@ def main():
 
     # Process each file
     all_passed = True
+    parity_failed = False
 
     for md_path in markdown_files:
         if not md_path.exists():
             print(f"Error: File not found: {md_path}")
             all_passed = False
             continue
+
+        # Parity check mode
+        if args.check_parity:
+            checker = ParityChecker(md_path)
+            parity_ok, discrepancies = checker.check()
+
+            if not args.quiet:
+                print_parity_report(parity_ok, discrepancies, checker.md_counts, checker.json_counts)
+
+            if not parity_ok:
+                parity_failed = True
+
+            continue  # Skip generation in parity-check mode
 
         # Determine output path
         if args.output and len(markdown_files) == 1:
@@ -841,6 +1148,12 @@ def main():
 
         if not validation.passed:
             all_passed = False
+
+    # Exit codes
+    if args.check_parity:
+        if args.fail_on_parity and parity_failed:
+            sys.exit(1)
+        sys.exit(0)
 
     sys.exit(0 if all_passed else 1)
 
