@@ -188,7 +188,7 @@
     /* Main Layout */
     .main-layout {
       display: grid;
-      grid-template-columns: 1fr 350px;
+      grid-template-columns: 1fr 400px;
       gap: 20px;
     }
 
@@ -214,26 +214,60 @@
       margin-bottom: 0;
     }
 
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+
     .section-title {
       font-size: 1.1rem;
       font-weight: 600;
       color: var(--text);
-      margin-bottom: 16px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid var(--border);
+      margin: 0;
+    }
+
+    .add-item-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 6px 12px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.8rem;
+      color: var(--text-light);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .add-item-btn:hover {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
     }
 
     .subsection {
       margin-bottom: 20px;
     }
 
+    .subsection-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
     .subsection-title {
       font-size: 0.9rem;
       font-weight: 600;
       color: var(--text-light);
-      margin-bottom: 10px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+      margin: 0;
     }
 
     /* Items */
@@ -252,6 +286,7 @@
       border-radius: 8px;
       cursor: pointer;
       transition: all 0.2s;
+      border: 2px solid transparent;
     }
 
     .item:hover {
@@ -260,7 +295,17 @@
 
     .item.selected {
       background: #e0e7ff;
-      border: 1px solid #a5b4fc;
+      border-color: #a5b4fc;
+    }
+
+    .item.custom-item {
+      background: #fef3c7;
+      border-color: #fcd34d;
+    }
+
+    .item.custom-item.selected {
+      background: #fde68a;
+      border-color: #f59e0b;
     }
 
     .item input[type="checkbox"] {
@@ -268,10 +313,12 @@
       height: 18px;
       margin-top: 2px;
       cursor: pointer;
+      flex-shrink: 0;
     }
 
     .item-content {
       flex: 1;
+      min-width: 0;
     }
 
     .item-name {
@@ -292,6 +339,7 @@
       font-weight: 600;
       font-size: 0.7rem;
       text-transform: uppercase;
+      margin-right: 8px;
     }
 
     .priority-stat {
@@ -312,6 +360,70 @@
     .priority-ext {
       background: var(--ext-bg);
       color: var(--ext);
+    }
+
+    /* Add Custom Item Form */
+    .add-item-form {
+      display: none;
+      padding: 12px;
+      background: #fffbeb;
+      border: 1px dashed #f59e0b;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+
+    .add-item-form.show {
+      display: block;
+    }
+
+    .add-item-form input,
+    .add-item-form textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+      font-family: inherit;
+    }
+
+    .add-item-form textarea {
+      min-height: 60px;
+      resize: vertical;
+    }
+
+    .add-item-form-actions {
+      display: flex;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .add-item-form-btn {
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .add-item-form-btn.primary {
+      background: var(--primary);
+      color: white;
+      border: none;
+    }
+
+    .add-item-form-btn.primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .add-item-form-btn.secondary {
+      background: white;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .add-item-form-btn.secondary:hover {
+      background: var(--bg-secondary);
     }
 
     /* Sidebar */
@@ -346,38 +458,122 @@
     }
 
     .selected-list {
-      max-height: 300px;
+      max-height: 400px;
       overflow-y: auto;
       margin-bottom: 16px;
     }
 
+    /* Selected Items with Section Groups */
+    .selected-section-group {
+      margin-bottom: 16px;
+    }
+
+    .selected-section-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .selected-section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--border);
+    }
+
     .selected-item {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 8px;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 10px;
       background: var(--bg-secondary);
       border-radius: 6px;
       margin-bottom: 6px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
-    .selected-item button {
+    .selected-item.custom {
+      background: #fef3c7;
+    }
+
+    .selected-item-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .selected-item-name {
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+
+    .selected-item-name.editing {
+      background: white;
+      border: 1px solid var(--primary);
+      border-radius: 4px;
+      padding: 4px 8px;
+      outline: none;
+      width: 100%;
+      display: block;
+    }
+
+    .selected-item-details {
+      font-size: 0.75rem;
+      color: var(--text-light);
+    }
+
+    .selected-item-details.editing {
+      background: white;
+      border: 1px solid var(--primary);
+      border-radius: 4px;
+      padding: 4px 8px;
+      outline: none;
+      width: 100%;
+      display: block;
+      margin-top: 4px;
+    }
+
+    .selected-item-actions {
+      display: flex;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+
+    .selected-item-btn {
       background: none;
       border: none;
       color: var(--text-light);
       cursor: pointer;
-      font-size: 1.1rem;
+      font-size: 0.9rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      transition: all 0.2s;
     }
 
-    .selected-item button:hover {
+    .selected-item-btn:hover {
+      background: var(--bg);
+      color: var(--primary);
+    }
+
+    .selected-item-btn.delete:hover {
       color: var(--stat);
+    }
+
+    .edit-hint {
+      font-size: 0.7rem;
+      color: var(--text-light);
+      margin-top: 8px;
+      padding: 8px;
+      background: var(--bg-secondary);
+      border-radius: 4px;
+      text-align: center;
     }
 
     /* Notes */
     .notes-textarea {
       width: 100%;
-      min-height: 100px;
+      min-height: 80px;
       padding: 12px;
       border: 1px solid var(--border);
       border-radius: 8px;
@@ -390,6 +586,72 @@
     .notes-textarea:focus {
       outline: none;
       border-color: var(--primary);
+    }
+
+    /* References & Appendix Section */
+    .references-section {
+      margin-top: 32px;
+      border-top: 2px solid var(--border);
+      padding-top: 24px;
+    }
+
+    .collapsible-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding: 12px 16px;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      margin-bottom: 8px;
+      transition: all 0.2s;
+    }
+
+    .collapsible-header:hover {
+      background: #e5e7eb;
+    }
+
+    .collapsible-header h3 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .collapsible-icon {
+      transition: transform 0.2s;
+    }
+
+    .collapsible-header.open .collapsible-icon {
+      transform: rotate(180deg);
+    }
+
+    .collapsible-content {
+      display: none;
+      padding: 16px;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+
+    .collapsible-content.show {
+      display: block;
+    }
+
+    .reference-item {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+
+    .reference-item:last-child {
+      border-bottom: none;
+    }
+
+    .reference-item strong {
+      color: var(--primary);
     }
 
     /* Buttons */
@@ -455,26 +717,6 @@
       color: var(--text);
     }
 
-    /* Loading */
-    .loading {
-      text-align: center;
-      padding: 60px;
-      color: var(--text-light);
-    }
-
-    /* Output Preview */
-    .output-preview {
-      background: #1e293b;
-      color: #e2e8f0;
-      padding: 16px;
-      border-radius: 8px;
-      font-family: monospace;
-      font-size: 0.85rem;
-      white-space: pre-wrap;
-      max-height: 400px;
-      overflow-y: auto;
-    }
-
     /* Toast */
     .toast {
       position: fixed;
@@ -499,6 +741,32 @@
         opacity: 1;
       }
     }
+
+    /* Plan Meta Info */
+    .plan-meta {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding: 12px 16px;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      margin-bottom: 24px;
+      font-size: 0.85rem;
+    }
+
+    .plan-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .plan-meta-item strong {
+      color: var(--text);
+    }
+
+    .plan-meta-item span {
+      color: var(--text-light);
+    }
   </style>
 </head>
 <body>
@@ -508,7 +776,7 @@
       <div class="header-left">
         <a href="../" class="back-btn">← Home</a>
         <span class="header-divider">|</span>
-        <span class="logo">🧠 Clinical Plan Builder</span>
+        <span class="logo">Clinical Plan Builder</span>
       </div>
       <nav class="header-nav">
         <a href="../plans/" class="nav-link">Review Plans</a>
@@ -565,6 +833,7 @@
           <div class="selected-list" id="selected-list">
             <p style="color: var(--text-light); font-size: 0.9rem;">No items selected</p>
           </div>
+          <div class="edit-hint">Click the pencil icon to edit any item</div>
         </div>
 
         <div class="sidebar-card">
@@ -573,7 +842,7 @@
         </div>
 
         <button class="btn btn-primary" id="copy-btn" style="margin-bottom: 12px;">
-          📋 Copy to Clipboard
+          Copy to Clipboard
         </button>
         <button class="btn btn-secondary" id="clear-btn">
           Clear Selection
@@ -587,7 +856,8 @@
     let plansData = {};
     let currentDiagnosis = null;
     let currentVenue = null;
-    let selectedItems = new Set();
+    let selectedItems = new Map(); // Changed to Map to store item data with edits
+    let customItems = new Map(); // Store custom added items
 
     // DOM Elements
     const diagnosisSelect = document.getElementById('diagnosis-select');
@@ -631,6 +901,7 @@
     diagnosisSelect.addEventListener('change', (e) => {
       currentDiagnosis = e.target.value;
       selectedItems.clear();
+      customItems.clear();
       updateSelectedList();
       if (currentDiagnosis && currentVenue) {
         renderPlan();
@@ -670,8 +941,23 @@
 
       let html = '';
 
+      // Plan Meta Info
+      html += `
+        <div class="plan-meta">
+          <div class="plan-meta-item"><strong>Version:</strong> <span>${plan.version || 'N/A'}</span></div>
+          <div class="plan-meta-item"><strong>ICD-10:</strong> <span>${plan.icd10 || 'N/A'}</span></div>
+        </div>
+      `;
+
       for (const [sectionName, subsections] of Object.entries(plan.sections)) {
-        let sectionHtml = `<div class="section"><h2 class="section-title">${sectionName}</h2>`;
+        let sectionHasItems = false;
+        let sectionHtml = `
+          <div class="section" data-section="${sectionName}">
+            <div class="section-header">
+              <h2 class="section-title">${sectionName}</h2>
+              <button class="add-item-btn" data-section="${sectionName}">+ Add Item</button>
+            </div>
+        `;
 
         for (const [subsectionName, items] of Object.entries(subsections)) {
           // Filter items for current venue
@@ -681,17 +967,25 @@
           });
 
           if (filteredItems.length === 0) continue;
+          sectionHasItems = true;
 
-          sectionHtml += `<div class="subsection"><h3 class="subsection-title">${subsectionName}</h3><div class="item-list">`;
+          const subsectionId = `${sectionName}__${subsectionName}`;
+          sectionHtml += `
+            <div class="subsection" data-subsection="${subsectionId}">
+              <div class="subsection-header">
+                <h3 class="subsection-title">${subsectionName}</h3>
+              </div>
+              <div class="item-list">
+          `;
 
           filteredItems.forEach((item, index) => {
-            const itemId = `${sectionName}_${subsectionName}_${index}`;
+            const itemId = `${sectionName}__${subsectionName}__${index}`;
             const priority = item[currentVenue];
             const priorityClass = getPriorityClass(priority);
             const isSelected = selectedItems.has(itemId);
 
             sectionHtml += `
-              <div class="item ${isSelected ? 'selected' : ''}" data-id="${itemId}" data-item='${JSON.stringify(item)}'>
+              <div class="item ${isSelected ? 'selected' : ''}" data-id="${itemId}" data-section="${sectionName}" data-subsection="${subsectionName}">
                 <input type="checkbox" ${isSelected ? 'checked' : ''}>
                 <div class="item-content">
                   <div class="item-name">
@@ -705,41 +999,217 @@
             `;
           });
 
+          sectionHtml += '</div>'; // Close item-list
+
+          // Add form for custom items in this subsection
+          sectionHtml += `
+            <div class="add-item-form" id="add-form-${subsectionId.replace(/\s+/g, '_')}">
+              <input type="text" placeholder="Item name (e.g., Serum ferritin)" class="custom-item-name">
+              <textarea placeholder="Details/rationale (optional)" class="custom-item-details"></textarea>
+              <div class="add-item-form-actions">
+                <button class="add-item-form-btn secondary cancel-add">Cancel</button>
+                <button class="add-item-form-btn primary confirm-add" data-section="${sectionName}" data-subsection="${subsectionName}">Add Item</button>
+              </div>
+            </div>
+          `;
+
+          sectionHtml += '</div>'; // Close subsection
+        }
+
+        // Render custom items for this section
+        const sectionCustomItems = [...customItems.entries()].filter(([id, item]) => item.section === sectionName);
+        if (sectionCustomItems.length > 0) {
+          sectionHtml += `
+            <div class="subsection">
+              <h3 class="subsection-title">Custom Items</h3>
+              <div class="item-list">
+          `;
+          sectionCustomItems.forEach(([customId, customItem]) => {
+            const isSelected = selectedItems.has(customId);
+            sectionHtml += `
+              <div class="item custom-item ${isSelected ? 'selected' : ''}" data-id="${customId}" data-section="${sectionName}" data-custom="true">
+                <input type="checkbox" ${isSelected ? 'checked' : ''}>
+                <div class="item-content">
+                  <div class="item-name">${customItem.name}</div>
+                  ${customItem.details ? `<div class="item-details">${customItem.details}</div>` : ''}
+                </div>
+              </div>
+            `;
+          });
           sectionHtml += '</div></div>';
         }
 
-        sectionHtml += '</div>';
-        html += sectionHtml;
+        sectionHtml += '</div>'; // Close section
+
+        if (sectionHasItems || sectionCustomItems.length > 0) {
+          html += sectionHtml;
+        }
       }
+
+      // References & Appendix Section (Collapsible)
+      html += `
+        <div class="references-section">
+          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+            <h3><span class="collapsible-icon">▼</span> References & Evidence</h3>
+          </div>
+          <div class="collapsible-content">
+            <div class="reference-item">
+              <strong>Scope:</strong> ${plan.scope || 'Not specified'}
+            </div>
+            <div class="reference-item">
+              <strong>ICD-10 Codes:</strong> ${plan.icd10 || 'Not specified'}
+            </div>
+            <div class="reference-item">
+              <strong>Version:</strong> ${plan.version || 'N/A'}
+            </div>
+            <p style="margin-top: 12px; font-size: 0.85rem; color: var(--text-light);">
+              For detailed references and citations, view the full plan documentation in the Plans section.
+            </p>
+          </div>
+
+          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+            <h3><span class="collapsible-icon">▼</span> Appendices</h3>
+          </div>
+          <div class="collapsible-content">
+            <p style="font-size: 0.85rem; color: var(--text-light);">
+              Appendices including rapid protocols, dosing tables, and algorithms are available in the full plan documentation.
+              <br><br>
+              <a href="../plans/" style="color: var(--primary);">View Full Plans →</a>
+            </p>
+          </div>
+        </div>
+      `;
 
       planContent.innerHTML = html || '<div class="empty-state"><h3>No items for this venue</h3></div>';
 
-      // Attach click handlers
+      // Attach click handlers for items
       planContent.querySelectorAll('.item').forEach(item => {
-        item.addEventListener('click', () => {
-          const id = item.dataset.id;
-          const checkbox = item.querySelector('input[type="checkbox"]');
+        item.addEventListener('click', (e) => {
+          if (e.target.tagName === 'INPUT') return; // Let checkbox handle itself
+          toggleItemSelection(item);
+        });
 
-          if (selectedItems.has(id)) {
-            selectedItems.delete(id);
-            item.classList.remove('selected');
-            checkbox.checked = false;
-          } else {
-            selectedItems.add(id);
-            item.classList.add('selected');
-            checkbox.checked = true;
+        item.querySelector('input[type="checkbox"]').addEventListener('change', () => {
+          toggleItemSelection(item);
+        });
+      });
+
+      // Attach handlers for add item buttons
+      planContent.querySelectorAll('.add-item-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const section = btn.dataset.section;
+          // Find first subsection form in this section
+          const sectionEl = btn.closest('.section');
+          const form = sectionEl.querySelector('.add-item-form');
+          if (form) {
+            form.classList.toggle('show');
+            if (form.classList.contains('show')) {
+              form.querySelector('.custom-item-name').focus();
+            }
+          }
+        });
+      });
+
+      // Attach handlers for form buttons
+      planContent.querySelectorAll('.cancel-add').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const form = btn.closest('.add-item-form');
+          form.classList.remove('show');
+          form.querySelector('.custom-item-name').value = '';
+          form.querySelector('.custom-item-details').value = '';
+        });
+      });
+
+      planContent.querySelectorAll('.confirm-add').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const form = btn.closest('.add-item-form');
+          const name = form.querySelector('.custom-item-name').value.trim();
+          const details = form.querySelector('.custom-item-details').value.trim();
+          const section = btn.dataset.section;
+          const subsection = btn.dataset.subsection;
+
+          if (!name) {
+            showToast('Please enter an item name');
+            return;
           }
 
-          // Store item data
-          if (!window.itemDataMap) window.itemDataMap = {};
-          window.itemDataMap[id] = JSON.parse(item.dataset.item);
+          // Create custom item
+          const customId = `custom__${section}__${Date.now()}`;
+          const customItem = {
+            name,
+            details,
+            section,
+            subsection,
+            isCustom: true
+          };
 
+          customItems.set(customId, customItem);
+          selectedItems.set(customId, { ...customItem, editedName: name, editedDetails: details });
+
+          // Clear and hide form
+          form.classList.remove('show');
+          form.querySelector('.custom-item-name').value = '';
+          form.querySelector('.custom-item-details').value = '';
+
+          // Re-render
+          renderPlan();
           updateSelectedList();
+          showToast('Custom item added');
         });
       });
     }
 
-    // Update selected items list
+    // Toggle item selection
+    function toggleItemSelection(itemEl) {
+      const id = itemEl.dataset.id;
+      const checkbox = itemEl.querySelector('input[type="checkbox"]');
+      const section = itemEl.dataset.section;
+      const subsection = itemEl.dataset.subsection || '';
+      const isCustom = itemEl.dataset.custom === 'true';
+
+      if (selectedItems.has(id)) {
+        selectedItems.delete(id);
+        itemEl.classList.remove('selected');
+        checkbox.checked = false;
+      } else {
+        // Get item data
+        let itemData;
+        if (isCustom) {
+          itemData = customItems.get(id);
+        } else {
+          const plan = plansData[currentDiagnosis];
+          const subsectionItems = plan.sections[section]?.[subsection] || [];
+          const index = parseInt(id.split('__').pop());
+          itemData = subsectionItems[index];
+        }
+
+        if (itemData) {
+          selectedItems.set(id, {
+            ...itemData,
+            section,
+            subsection,
+            isCustom,
+            editedName: itemData.item || itemData.name || itemData.treatment || itemData.name,
+            editedDetails: itemData.dosing || itemData.rationale || itemData.details || ''
+          });
+        }
+
+        itemEl.classList.add('selected');
+        checkbox.checked = true;
+      }
+
+      updateSelectedList();
+    }
+
+    // Collapsible toggle function
+    window.toggleCollapsible = function(header) {
+      header.classList.toggle('open');
+      const content = header.nextElementSibling;
+      content.classList.toggle('show');
+    };
+
+    // Update selected items list with section grouping
     function updateSelectedList() {
       selectedCount.textContent = selectedItems.size;
 
@@ -748,22 +1218,44 @@
         return;
       }
 
-      let html = '';
-      selectedItems.forEach(id => {
-        const item = window.itemDataMap?.[id];
-        const name = item?.item || item?.name || item?.treatment || id.split('_').pop();
-        html += `
-          <div class="selected-item">
-            <span>${name}</span>
-            <button data-id="${id}">&times;</button>
-          </div>
-        `;
+      // Group items by section
+      const grouped = {};
+      selectedItems.forEach((item, id) => {
+        const section = item.section || 'Other';
+        if (!grouped[section]) grouped[section] = [];
+        grouped[section].push({ id, ...item });
       });
+
+      let html = '';
+      for (const [section, items] of Object.entries(grouped)) {
+        html += `
+          <div class="selected-section-group">
+            <div class="selected-section-label">${section}</div>
+        `;
+
+        items.forEach(item => {
+          const isCustom = item.isCustom;
+          html += `
+            <div class="selected-item ${isCustom ? 'custom' : ''}" data-id="${item.id}">
+              <div class="selected-item-content">
+                <div class="selected-item-name" data-field="name">${item.editedName || item.item || item.name || item.treatment || 'Item'}</div>
+                ${item.editedDetails ? `<div class="selected-item-details" data-field="details">${item.editedDetails}</div>` : ''}
+              </div>
+              <div class="selected-item-actions">
+                <button class="selected-item-btn edit" title="Edit item" data-id="${item.id}">✏️</button>
+                <button class="selected-item-btn delete" title="Remove item" data-id="${item.id}">×</button>
+              </div>
+            </div>
+          `;
+        });
+
+        html += '</div>';
+      }
 
       selectedList.innerHTML = html;
 
-      // Attach remove handlers
-      selectedList.querySelectorAll('button').forEach(btn => {
+      // Attach handlers
+      selectedList.querySelectorAll('.selected-item-btn.delete').forEach(btn => {
         btn.addEventListener('click', (e) => {
           e.stopPropagation();
           const id = btn.dataset.id;
@@ -779,9 +1271,89 @@
           updateSelectedList();
         });
       });
+
+      selectedList.querySelectorAll('.selected-item-btn.edit').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const id = btn.dataset.id;
+          const itemEl = btn.closest('.selected-item');
+          const nameEl = itemEl.querySelector('.selected-item-name');
+          const detailsEl = itemEl.querySelector('.selected-item-details');
+
+          // Check if already editing
+          if (nameEl.classList.contains('editing')) {
+            // Save edits
+            saveItemEdits(id, nameEl, detailsEl);
+          } else {
+            // Enter edit mode
+            enterEditMode(id, nameEl, detailsEl);
+          }
+        });
+      });
     }
 
-    // Generate output text
+    // Enter edit mode for an item
+    function enterEditMode(id, nameEl, detailsEl) {
+      const item = selectedItems.get(id);
+      if (!item) return;
+
+      // Convert name to input
+      const nameInput = document.createElement('input');
+      nameInput.type = 'text';
+      nameInput.className = 'selected-item-name editing';
+      nameInput.value = item.editedName || nameEl.textContent;
+      nameEl.replaceWith(nameInput);
+      nameInput.focus();
+      nameInput.select();
+
+      // Convert details to textarea if exists
+      if (detailsEl) {
+        const detailsInput = document.createElement('textarea');
+        detailsInput.className = 'selected-item-details editing';
+        detailsInput.value = item.editedDetails || detailsEl.textContent;
+        detailsEl.replaceWith(detailsInput);
+      } else {
+        // Add details input if none exists
+        const detailsInput = document.createElement('textarea');
+        detailsInput.className = 'selected-item-details editing';
+        detailsInput.placeholder = 'Add details...';
+        detailsInput.value = '';
+        nameInput.after(detailsInput);
+      }
+
+      // Update button to save icon
+      const editBtn = nameInput.closest('.selected-item').querySelector('.selected-item-btn.edit');
+      editBtn.textContent = '✓';
+      editBtn.title = 'Save changes';
+
+      // Handle Enter key to save
+      nameInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          saveItemEdits(id, nameInput, nameInput.nextElementSibling);
+        }
+      });
+    }
+
+    // Save item edits
+    function saveItemEdits(id, nameInput, detailsInput) {
+      const item = selectedItems.get(id);
+      if (!item) return;
+
+      const newName = nameInput.value.trim() || item.editedName;
+      const newDetails = detailsInput ? detailsInput.value.trim() : '';
+
+      // Update stored item
+      item.editedName = newName;
+      item.editedDetails = newDetails;
+      selectedItems.set(id, item);
+
+      // Update display
+      updateSelectedList();
+      showToast('Item updated');
+    }
+
+    // Generate output text with section labels
     function generateOutput() {
       if (selectedItems.size === 0) return '';
 
@@ -792,11 +1364,8 @@
 
       // Group by section
       const grouped = {};
-      selectedItems.forEach(id => {
-        const parts = id.split('_');
-        const section = parts[0];
-        const item = window.itemDataMap?.[id];
-
+      selectedItems.forEach((item, id) => {
+        const section = item.section || 'Other';
         if (!grouped[section]) grouped[section] = [];
         grouped[section].push(item);
       });
@@ -804,11 +1373,19 @@
       for (const [section, items] of Object.entries(grouped)) {
         output += `## ${section}\n`;
         items.forEach(item => {
-          const name = item?.item || item?.name || item?.treatment || 'Item';
-          const priority = item?.[currentVenue] || '';
-          output += `• [${priority}] ${name}\n`;
-          if (item?.dosing) output += `  Dosing: ${item.dosing}\n`;
-          if (item?.rationale) output += `  Rationale: ${item.rationale}\n`;
+          const name = item.editedName || item.item || item.name || item.treatment || 'Item';
+          const priority = item[currentVenue] || '';
+          const details = item.editedDetails || item.dosing || item.rationale || '';
+
+          if (priority) {
+            output += `• [${priority}] ${name}\n`;
+          } else {
+            output += `• ${name}\n`;
+          }
+
+          if (details) {
+            output += `  ${details}\n`;
+          }
         });
         output += '\n';
       }
@@ -839,11 +1416,9 @@
     // Clear selection
     clearBtn.addEventListener('click', () => {
       selectedItems.clear();
+      customItems.clear();
       notesTextarea.value = '';
-      planContent.querySelectorAll('.item').forEach(item => {
-        item.classList.remove('selected');
-        item.querySelector('input[type="checkbox"]').checked = false;
-      });
+      renderPlan();
       updateSelectedList();
     });
 
