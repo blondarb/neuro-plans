@@ -436,6 +436,79 @@ When additional reference material, algorithms, or protocols are needed, place t
   - Quick reference cards for specific scenarios
 - If an appendix is critical for acute situations (e.g., rapid protocol for non-specialists), include a prominent link/reference to it from the relevant treatment section
 
+## Post-Pipeline Auto-Push Workflow
+
+After completing the full skill pipeline (Builder → Checker → Rebuilder → Citation Verifier → ICD/Synonym Enricher), automatically push the draft to GitHub for review.
+
+### Auto-Push Steps
+
+1. **Verify draft is in correct location:**
+   ```
+   /docs/drafts/[condition-name].md
+   ```
+
+2. **Ensure draft has correct frontmatter:**
+   ```yaml
+   ---
+   title: [Condition Name]
+   description: [Brief description]
+   version: "1.0"
+   setting: [ED, HOSP, OPD, ICU as applicable]
+   status: draft
+   tags:
+     - [relevant tags]
+   ---
+   ```
+
+3. **Add draft warning banner after frontmatter:**
+   ```markdown
+   <div class="draft-warning-banner">
+     <div class="icon">⚠️</div>
+     <div class="content">
+       <div class="title">DRAFT - Pending Review</div>
+       <div class="description">This plan requires physician review before clinical use.</div>
+     </div>
+   </div>
+   ```
+
+4. **Update `/docs/drafts/index.md`** to add the new draft to the table
+
+5. **Update `mkdocs.yml`** to add the draft to navigation under "Drafts for Review"
+
+6. **Commit and push:**
+   ```bash
+   git add docs/drafts/[condition-name].md docs/drafts/index.md mkdocs.yml
+   git commit -m "Add draft: [Condition Name] for review
+
+   Pipeline completed: Builder → Checker → Rebuilder → Citation Verifier → ICD/Synonym Enricher
+   Ready for physician review at [site-url]/drafts/[condition-name]/
+
+   Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>"
+   git push
+   ```
+
+7. **Notify user:**
+   ```
+   ✅ Draft published for review!
+
+   View at: https://blondarb.github.io/neuro-plans/drafts/[condition-name]/
+
+   When ready to approve, say: "Approve [Condition Name] and move to approved"
+   ```
+
+### Approval Workflow
+
+When user approves a draft:
+
+1. **Move file** from `/docs/drafts/` to `/docs/plans/`
+2. **Update frontmatter** status from `draft` to `approved`
+3. **Replace draft banner** with approved banner
+4. **Update `/docs/drafts/index.md`** to remove from pending
+5. **Update `/docs/plans/index.md`** to add to approved table
+6. **Update `mkdocs.yml`** navigation
+7. **Commit and push** with approval message
+8. **Confirm to user** with link to approved plan
+
 ## Reference Examples
 
 See `references/ms-exacerbation-v2.md` for a complete example of Builder output that has been validated through the Checker/Rebuilder workflow.
@@ -488,6 +561,12 @@ See `references/lp-reference.md` for comprehensive LP panels organized by diagno
 
 **v1.0 (January 13, 2026)**
 - Initial version
+
+**v2.4 (January 19, 2026)**
+- Added Post-Pipeline Auto-Push Workflow section
+- Drafts automatically pushed to GitHub after pipeline completion
+- Added Approval Workflow for moving drafts to approved status
+- Includes frontmatter requirements, banner templates, and git commands
 
 **v2.3 (January 19, 2026)**
 - Added Appendices section with placement rules
