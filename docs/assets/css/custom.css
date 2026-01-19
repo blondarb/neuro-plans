@@ -1132,3 +1132,99 @@ h3:has(.inline-comment-btn) {
 [data-md-color-scheme="slate"] .delete-btn:hover {
   background: #450a0a;
 }
+
+/* ========================================
+   RESPONSIVE TYPOGRAPHY & LAYOUT
+   ======================================== */
+
+/* Medium screens - reduce font sizes when TOC competes with content */
+@media screen and (max-width: 1400px) {
+  .md-typeset table:not([class]) {
+    font-size: 0.8rem;
+  }
+
+  .md-typeset table:not([class]) th,
+  .md-typeset table:not([class]) td {
+    padding: 8px 10px;
+  }
+
+  .priority-stat,
+  .priority-urgent,
+  .priority-routine,
+  .priority-ext,
+  .priority-na {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+  }
+}
+
+/* Smaller screens - more aggressive reduction */
+@media screen and (max-width: 1200px) {
+  .md-typeset table:not([class]) {
+    font-size: 0.75rem;
+  }
+
+  .md-typeset table:not([class]) th,
+  .md-typeset table:not([class]) td {
+    padding: 6px 8px;
+  }
+
+  .priority-stat,
+  .priority-urgent,
+  .priority-routine,
+  .priority-ext,
+  .priority-na {
+    font-size: 0.65rem;
+    padding: 1px 5px;
+  }
+
+  /* Reduce legend size */
+  .priority-legend {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .priority-legend-item {
+    font-size: 0.8rem;
+  }
+}
+
+/* When TOC would seriously overlap content */
+@media screen and (max-width: 1024px) {
+  .md-typeset table:not([class]) {
+    font-size: 0.7rem;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .md-typeset table:not([class]) th,
+  .md-typeset table:not([class]) td {
+    padding: 5px 6px;
+    white-space: nowrap;
+  }
+
+  /* Allow wrapping for item/description columns but not others */
+  .md-typeset table:not([class]) td:first-child {
+    white-space: normal;
+    min-width: 150px;
+  }
+}
+
+/* Mobile - hide right TOC, full width content */
+@media screen and (max-width: 768px) {
+  .md-typeset table:not([class]) {
+    font-size: 0.75rem;
+  }
+
+  .md-typeset table:not([class]) th,
+  .md-typeset table:not([class]) td {
+    padding: 6px 8px;
+    white-space: normal;
+  }
+
+  /* Reset horizontal scroll on mobile */
+  .md-typeset table:not([class]) td:first-child {
+    min-width: auto;
+  }
+}
