@@ -876,8 +876,21 @@
       // Remove old TOC badges
       document.querySelectorAll('.toc-comment-badge').forEach(badge => badge.remove());
 
-      // Wait a moment for DOM to settle
-      await new Promise(resolve => setTimeout(resolve, 50));
+      // Wait for MkDocs Material to finish rendering new content
+      // Check that the page title or h1 matches the new page
+      let attempts = 0;
+      const maxAttempts = 10;
+      while (attempts < maxAttempts) {
+        const h1 = document.querySelector('article h1, .md-content h1');
+        const article = document.querySelector('article.md-content__inner');
+        if (h1 && article) {
+          console.log('[Comments] DOM ready, found h1:', h1.textContent.substring(0, 30));
+          break;
+        }
+        console.log('[Comments] Waiting for DOM... attempt', attempts + 1);
+        await new Promise(resolve => setTimeout(resolve, 100));
+        attempts++;
+      }
 
       // Reinitialize
       await initComments();
@@ -892,20 +905,33 @@
     // Reinitialize comments on page change
     function reinitializeOnNavigation() {
       const newPage = window.location.pathname;
-      if (newPage !== currentPage && !isReinitializing) {
+      console.log('[Comments] reinitializeOnNavigation called. newPage:', newPage, 'currentPage:', currentPage, 'isReinitializing:', isReinitializing);
+
+      if (newPage !== currentPage) {
+        if (isReinitializing) {
+          console.log('[Comments] Already reinitializing, skipping');
+          return;
+        }
         console.log('[Comments] Page changed from', currentPage, 'to', newPage);
         currentPage = newPage;
         isReinitializing = true;
 
         // Small delay to let MkDocs finish rendering the new content
         setTimeout(async () => {
-          await fullReinitialize();
-
-          // Allow future reinitializations after a delay
-          setTimeout(() => {
-            isReinitializing = false;
-          }, 500);
-        }, 200); // Increased delay for more reliable content loading
+          try {
+            await fullReinitialize();
+          } catch (err) {
+            console.error('[Comments] Error during reinitialize:', err);
+          } finally {
+            // Always reset the flag, even on error
+            setTimeout(() => {
+              isReinitializing = false;
+              console.log('[Comments] Reinit flag reset, ready for next navigation');
+            }, 300);
+          }
+        }, 250); // Slightly longer delay for content to load
+      } else {
+        console.log('[Comments] Same page, skipping reinit');
       }
     }
 
