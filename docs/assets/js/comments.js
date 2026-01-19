@@ -744,6 +744,96 @@
       }
     }
 
+    /**
+     * Update left navigation badges to show which pages have comments
+     * Shows badges on the left sidebar navigation (page links)
+     */
+    async function updateLeftNavBadges() {
+      try {
+        // Get all comments grouped by pageId (across all pages)
+        const allDocsQuery = query(collection(db, 'comments'));
+        const snapshot = await getDocs(allDocsQuery);
+
+        const commentCountsByPage = {};
+        snapshot.forEach(docSnap => {
+          const data = docSnap.data();
+          const pageId = data.pageId;
+          commentCountsByPage[pageId] = (commentCountsByPage[pageId] || 0) + 1;
+        });
+
+        console.log('[Comments] Left nav - comment counts by page:', commentCountsByPage);
+
+        // Find all nav links in the left sidebar (not the right TOC)
+        // Left sidebar uses .md-sidebar--primary
+        const leftNav = document.querySelector('.md-sidebar--primary');
+        if (!leftNav) {
+          console.log('[Comments] No left navigation found');
+          return;
+        }
+
+        leftNav.querySelectorAll('.md-nav__link').forEach(link => {
+          const href = link.getAttribute('href');
+          if (!href || href === '#' || href.startsWith('javascript:') || href.startsWith('#')) return;
+
+          // Convert href to pageId format - handle relative paths
+          let pageId = href
+            .replace(/^\.\.\//, '')
+            .replace(/^\.\//, '')
+            .replace(/\//g, '_')
+            .replace(/\.html$/, '')
+            .replace(/\.md$/, '')
+            .replace(/^_/, '')
+            .replace(/_$/, '')
+            .replace(/_index$/, '');
+
+          // Also try extracting just the page name from the path
+          const pathParts = href.replace(/\/$/, '').split('/');
+          const pageName = pathParts[pathParts.length - 1] || pathParts[pathParts.length - 2];
+
+          // Build exact match variations
+          const pageIdVariations = [
+            pageId,
+            'neuro-plans_' + pageId,
+            pageId.replace(/^plans_/, 'neuro-plans_plans_'),
+            pageId.replace(/^drafts_/, 'neuro-plans_drafts_'),
+            'neuro-plans_plans_' + pageName,
+            'neuro-plans_drafts_' + pageName,
+            'plans_' + pageName,
+            'drafts_' + pageName
+          ];
+
+          // Find matching count
+          let count = 0;
+          for (const variant of pageIdVariations) {
+            if (commentCountsByPage[variant]) {
+              count = commentCountsByPage[variant];
+              break;
+            }
+          }
+
+          // Remove any existing badge first
+          const existingBadge = link.querySelector('.toc-comment-badge');
+          if (existingBadge) {
+            existingBadge.remove();
+          }
+
+          if (count > 0) {
+            const badge = document.createElement('span');
+            badge.className = 'toc-comment-badge';
+            badge.textContent = count;
+            const tooltipText = `${count} comment${count > 1 ? 's' : ''} on this page`;
+            badge.title = tooltipText;
+            badge.setAttribute('data-tooltip', tooltipText);
+            link.appendChild(badge);
+            console.log('[Comments] Left nav badge added for:', href, '=', count);
+          }
+        });
+
+      } catch (error) {
+        console.error('[Comments] Error updating left nav badges:', error);
+      }
+    }
+
     // Export for use in other scripts
     window.NeuroComments = {
       loadAllComments,
@@ -751,11 +841,16 @@
       renderMainCommentList,
       showInlineCommentPopup,
       handleVote,
-      updateTocCommentBadges
+      updateTocCommentBadges,
+      updateLeftNavBadges,
+      reinitialize: fullReinitialize
     };
 
-    // Update TOC badges after a short delay to ensure nav is rendered
-    setTimeout(updateTocCommentBadges, 500);
+    // Update badges after a short delay to ensure nav is rendered
+    setTimeout(() => {
+      updateTocCommentBadges();
+      updateLeftNavBadges();
+    }, 500);
 
     // ========================================
     // MKDOCS INSTANT NAVIGATION SUPPORT
@@ -767,6 +862,24 @@
     let currentPage = window.location.pathname;
     let isReinitializing = false; // Prevent re-entrancy
 
+    // Full reinitialization function
+    async function fullReinitialize() {
+      console.log('[Comments] Full reinitialize called for:', window.location.pathname);
+
+      // Reset comments array for new page
+      allComments = [];
+
+      // Remove old inline buttons (they have stale event handlers)
+      document.querySelectorAll('.inline-comment-btn').forEach(btn => btn.remove());
+
+      // Reinitialize
+      await initComments();
+      updateTocCommentBadges();
+      updateLeftNavBadges();
+
+      console.log('[Comments] Reinitialize complete, comments loaded:', allComments.length);
+    }
+
     // Reinitialize comments on page change
     function reinitializeOnNavigation() {
       const newPage = window.location.pathname;
@@ -775,64 +888,84 @@
         currentPage = newPage;
         isReinitializing = true;
 
-        // Small delay to let MkDocs finish rendering
-        setTimeout(() => {
-          // Reset comments array for new page
-          allComments = [];
-
-          // Remove old inline buttons (they have stale event handlers)
-          document.querySelectorAll('.inline-comment-btn').forEach(btn => btn.remove());
-
-          // Reinitialize
-          initComments();
-          updateTocCommentBadges();
+        // Small delay to let MkDocs finish rendering the new content
+        setTimeout(async () => {
+          await fullReinitialize();
 
           // Allow future reinitializations after a delay
           setTimeout(() => {
             isReinitializing = false;
           }, 500);
-        }, 100);
+        }, 200); // Increased delay for more reliable content loading
       }
     }
 
-    // Listen for MkDocs instant navigation events
-    document.addEventListener('DOMContentSwitch', reinitializeOnNavigation);
+    // ========================================
+    // MULTIPLE NAVIGATION DETECTION METHODS
+    // ========================================
 
-    // Also listen for popstate (browser back/forward)
+    // Method 1: MkDocs Material instant navigation event
+    document.addEventListener('DOMContentLoaded', () => {
+      // This runs on initial load
+      console.log('[Comments] DOMContentLoaded fired');
+    });
+
+    // Method 2: Listen for popstate (browser back/forward)
     window.addEventListener('popstate', () => {
-      setTimeout(reinitializeOnNavigation, 100);
+      console.log('[Comments] popstate event fired');
+      setTimeout(reinitializeOnNavigation, 150);
     });
 
-    // MkDocs Material specific: listen for the location$ observable
-    // This fires when instant navigation completes
-    if (typeof window.location$ !== 'undefined') {
-      window.location$.subscribe(() => {
-        setTimeout(reinitializeOnNavigation, 100);
-      });
-    }
+    // Method 3: Observe the article/content area being replaced
+    // This is the most reliable method for MkDocs Material instant navigation
+    const setupContentObserver = () => {
+      const article = document.querySelector('article.md-content__inner');
+      if (article) {
+        const parentObserver = new MutationObserver((mutations) => {
+          // Check if the article content was replaced (instant navigation)
+          for (const mutation of mutations) {
+            if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+              // Content was replaced, check if URL changed
+              if (window.location.pathname !== currentPage) {
+                console.log('[Comments] Content replaced, triggering reinit');
+                reinitializeOnNavigation();
+              }
+            }
+          }
+        });
 
-    // Use URL change detection instead of MutationObserver
-    // MutationObserver was causing infinite loops by detecting our own button additions
-    let lastUrl = window.location.href;
-    const urlObserver = new MutationObserver(() => {
-      if (window.location.href !== lastUrl) {
-        lastUrl = window.location.href;
-        reinitializeOnNavigation();
+        // Observe the parent of the article for when the article gets replaced
+        if (article.parentNode) {
+          parentObserver.observe(article.parentNode, { childList: true });
+          console.log('[Comments] Content observer set up on article parent');
+        }
+      }
+    };
+
+    // Set up content observer
+    setupContentObserver();
+
+    // Method 4: Listen for clicks on navigation links
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('a[href]');
+      if (link && !link.getAttribute('href').startsWith('#') && !link.getAttribute('href').startsWith('http')) {
+        // Internal navigation link clicked, schedule reinitialization
+        setTimeout(() => {
+          if (window.location.pathname !== currentPage) {
+            console.log('[Comments] Nav link clicked, new page detected');
+            reinitializeOnNavigation();
+          }
+        }, 300);
       }
     });
 
-    // Observe the document title which changes on navigation
-    const titleElement = document.querySelector('title');
-    if (titleElement) {
-      urlObserver.observe(titleElement, { childList: true });
-    }
-
-    // Also check periodically as a safety net (every 2 seconds)
+    // Method 5: Periodic check as ultimate fallback (every 1 second)
     setInterval(() => {
       if (window.location.pathname !== currentPage && !isReinitializing) {
+        console.log('[Comments] Periodic check detected page change');
         reinitializeOnNavigation();
       }
-    }, 2000);
+    }, 1000);
 
   } catch (error) {
     console.error('[Comments] Fatal error initializing comments:', error);
