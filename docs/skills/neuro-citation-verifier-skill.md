@@ -266,6 +266,33 @@ C2. Section 3A - Remove dosing claim "per ESETT trial" (trial does not specify t
 C3. Section 8 - Add missing citation: "Hauser WA et al. NEJM 1998;338:429-34" for recurrence risk data
 ```
 
+## Integration with Templates
+
+**CRITICAL: After verification, update the main template file** to add clickable PubMed links to Section 8 (Evidence & References). This ensures links render in the Clinical Plan Builder interface.
+
+### Template Update Process
+
+1. Open the main template file (e.g., `docs/plans/status-epilepticus.md`)
+2. Navigate to Section 8 (Evidence & References)
+3. Replace plain text citations with markdown links:
+
+**Before:**
+```
+| Lorazepam preferred IV benzodiazepine | Class I, Level A | Alldredge et al. NEJM 2001 |
+```
+
+**After:**
+```
+| Lorazepam preferred IV benzodiazepine | Class I, Level A | [Alldredge et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11547716/) |
+```
+
+4. For multiple sources in one row, link each:
+```
+| Benzodiazepines first-line for SE | Class I, Level A | [NCS Guidelines 2012](https://pubmed.ncbi.nlm.nih.gov/22528274/); [AES Guidelines 2016](https://pubmed.ncbi.nlm.nih.gov/26900382/) |
+```
+
+5. Commit and push changes to GitHub for links to appear in Clinical Plan Builder
+
 ## Verification Workflow
 
 1. Extract all citations from template

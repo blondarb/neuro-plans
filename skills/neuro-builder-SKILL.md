@@ -234,6 +234,8 @@ SECTION B: REFERENCE (Expand as Needed)
 
 ## 8. EVIDENCE & REFERENCES
 
+**CRITICAL: All citations must include clickable PubMed links where available.** Use markdown format: `[Author et al. Journal Year](https://pubmed.ncbi.nlm.nih.gov/PMID/)`
+
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 
@@ -353,6 +355,7 @@ Include modifiable risk factors and preventive measures specific to the conditio
 11. Include relevant referrals (PT, OT, Speech, subspecialty consults) and patient instructions
 12. **Validate coverage:** Before finalizing, confirm each section has appropriate entries for ED, HOSP, OPD, and ICU where applicable
 13. **Cover symptomatic treatments comprehensively** - include all symptom categories relevant to the diagnosis (pain, spasticity, bladder, mood, etc.)
+14. **Include clickable citation links** - All references in Section 8 must include PubMed links where available (see Citation Link Requirements below)
 
 ## Setting Coverage Checklist (Validate Before Output)
 
@@ -413,6 +416,49 @@ Always include venue-appropriate critical monitoring for conditions with acute d
 | Stroke | Neuro checks, BP | ED: STAT, HOSP: STAT, ICU: STAT |
 | High-dose steroids | Glucose, BP, mood | ED: STAT, HOSP: ROUTINE, ICU: STAT |
 
+
+## Citation Link Requirements
+
+**All citations in Section 8 (Evidence & References) must include clickable links** to enable one-click access to source literature in the Clinical Plan Builder interface.
+
+### Link Format
+
+Use markdown hyperlink syntax in the Source column:
+```
+| Recommendation | Evidence Level | Source |
+|----------------|----------------|--------|
+| Benzodiazepines first-line | Class I, Level A | [Alldredge et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11547716/) |
+```
+
+### Link Priority (prefer earlier options)
+
+| Source Type | Preferred Link | Example |
+|-------------|----------------|---------|
+| Journal articles | PubMed (PMID) | `https://pubmed.ncbi.nlm.nih.gov/12345678/` |
+| Guidelines | Organization website or PubMed | `https://www.aan.com/Guidelines/...` |
+| Clinical trials | ClinicalTrials.gov or PubMed | `https://clinicaltrials.gov/study/NCT01234567` |
+| FDA labeling | DailyMed | `https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=...` |
+| Consensus statements | PubMed or organization | Direct link to abstract |
+
+### Multiple Sources
+
+For rows with multiple sources, link each individually:
+```
+| Benzodiazepines first-line | Class I, Level A | [NCS 2012](https://pubmed.ncbi.nlm.nih.gov/22528274/); [AES 2016](https://pubmed.ncbi.nlm.nih.gov/26900382/) |
+```
+
+### When Links Are Not Available
+
+- Expert consensus: No link needed, state "Expert consensus"
+- Emerging evidence/case series: Link if PubMed indexed, otherwise state "Emerging evidence; case series"
+- Textbooks: Link to publisher page if available online
+
+### Verification
+
+Run the **neuro-citation-verifier** skill after building to:
+1. Verify all citations exist and are accurate
+2. Add any missing PubMed links
+3. Correct any hallucinated or inaccurate citations
 
 ## Appendices
 
