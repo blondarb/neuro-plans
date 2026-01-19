@@ -134,14 +134,14 @@
     }
 
     /* Items */
-    .item-list { display: flex; flex-direction: column; gap: 6px; }
+    .item-list { display: flex; flex-direction: column; gap: 8px; }
     .item {
       display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 12px;
+      flex-direction: column;
+      gap: 6px;
+      padding: 12px 14px;
       background: var(--bg-secondary);
-      border-radius: 6px;
+      border-radius: 8px;
       cursor: pointer;
       border: 2px solid transparent;
       transition: all 0.15s;
@@ -150,8 +150,47 @@
     .item.selected { background: #e0e7ff; border-color: #a5b4fc; }
     .item.custom { background: var(--custom-bg); border-color: var(--custom-border); }
     .item.custom.selected { background: #fde68a; border-color: #f59e0b; }
+    .item-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
     .item input[type="checkbox"] { width: 16px; height: 16px; cursor: pointer; flex-shrink: 0; }
-    .item-name { flex: 1; font-size: 0.9rem; }
+    .item-name { flex: 1; font-size: 0.9rem; font-weight: 500; }
+
+    /* Item Details */
+    .item-details {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-left: 26px;
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+    .item-detail {
+      display: flex;
+      gap: 6px;
+    }
+    .item-detail-label {
+      font-weight: 600;
+      color: var(--text);
+      min-width: 90px;
+      flex-shrink: 0;
+    }
+    .item-detail-value {
+      flex: 1;
+    }
+    .item-dosing {
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    .item-contraindication {
+      color: #dc2626;
+      font-weight: 500;
+    }
 
     /* Priority badges */
     .priority {
@@ -240,15 +279,21 @@
     .selected-item-text {
       flex: 1;
       cursor: text;
-      padding: 2px 4px;
-      border-radius: 3px;
+      padding: 4px 6px;
+      border-radius: 4px;
       min-height: 20px;
+      line-height: 1.4;
+      word-break: break-word;
     }
     .selected-item-text:hover { background: rgba(79, 70, 229, 0.1); }
     .selected-item-text:focus {
       outline: none;
       background: white;
       box-shadow: 0 0 0 2px var(--primary);
+    }
+    .selected-item-dosing {
+      color: #1e40af;
+      font-weight: 500;
     }
     .selected-item-remove {
       background: none;
@@ -599,9 +644,33 @@
           const sel = selectedItems.has(itemId);
           const name = item.item || item.name || item.treatment || 'Item';
 
+          // Build details HTML
+          let detailsHtml = '';
+          if (item.dosing) {
+            detailsHtml += `<div class="item-detail"><span class="item-detail-label">Dosing:</span><span class="item-detail-value item-dosing">${item.dosing}</span></div>`;
+          }
+          if (item.rationale) {
+            detailsHtml += `<div class="item-detail"><span class="item-detail-label">Rationale:</span><span class="item-detail-value">${item.rationale}</span></div>`;
+          }
+          if (item.timing) {
+            detailsHtml += `<div class="item-detail"><span class="item-detail-label">Timing:</span><span class="item-detail-value">${item.timing}</span></div>`;
+          }
+          if (item.target) {
+            detailsHtml += `<div class="item-detail"><span class="item-detail-label">Target:</span><span class="item-detail-value">${item.target}</span></div>`;
+          }
+          if (item.contraindications) {
+            detailsHtml += `<div class="item-detail"><span class="item-detail-label">⚠️ Avoid:</span><span class="item-detail-value item-contraindication">${item.contraindications}</span></div>`;
+          }
+          if (item.monitoring) {
+            detailsHtml += `<div class="item-detail"><span class="item-detail-label">Monitor:</span><span class="item-detail-value">${item.monitoring}</span></div>`;
+          }
+
           sectionHtml += `<div class="item ${sel ? 'selected' : ''}" data-id="${itemId}" data-section="${sectionName}" data-subsection="${subsectionName}">
-            <input type="checkbox" ${sel ? 'checked' : ''}>
-            <div class="item-name">${pc ? `<span class="priority ${pc}">${priority}</span>` : ''}${name}</div>
+            <div class="item-header">
+              <input type="checkbox" ${sel ? 'checked' : ''}>
+              <div class="item-name">${pc ? `<span class="priority ${pc}">${priority}</span>` : ''}${name}</div>
+            </div>
+            ${detailsHtml ? `<div class="item-details">${detailsHtml}</div>` : ''}
           </div>`;
         });
         sectionHtml += '</div></div>';
@@ -614,8 +683,10 @@
         sectionCustom.forEach(([cid, citem]) => {
           const sel = selectedItems.has(cid);
           sectionHtml += `<div class="item custom ${sel ? 'selected' : ''}" data-id="${cid}" data-section="${sectionName}" data-custom="true">
-            <input type="checkbox" ${sel ? 'checked' : ''}>
-            <div class="item-name">${citem.name}</div>
+            <div class="item-header">
+              <input type="checkbox" ${sel ? 'checked' : ''}>
+              <div class="item-name">${citem.name}</div>
+            </div>
           </div>`;
         });
         sectionHtml += '</div></div>';
@@ -710,10 +781,14 @@
     // Attach item click handlers
     planContent.querySelectorAll('.item').forEach(item => {
       item.addEventListener('click', e => {
+        // Allow clicking anywhere on the item to toggle, except directly on checkbox
         if (e.target.tagName === 'INPUT') return;
         toggleItem(item);
       });
-      item.querySelector('input[type="checkbox"]').addEventListener('change', () => toggleItem(item));
+      const checkbox = item.querySelector('input[type="checkbox"]');
+      if (checkbox) {
+        checkbox.addEventListener('change', () => toggleItem(item));
+      }
     });
 
     // Attach custom input handlers - press Enter to add
@@ -761,8 +836,10 @@
         itemData = items[idx];
       }
       if (itemData) {
-        const name = itemData.item || itemData.name || itemData.treatment || itemData.name || 'Item';
-        selectedItems.set(id, { ...itemData, section, subsection, isCustom, editedName: name });
+        const name = itemData.item || itemData.name || itemData.treatment || 'Item';
+        // Include dosing in the display name for medications
+        const displayName = itemData.dosing ? `${name} — ${itemData.dosing}` : name;
+        selectedItems.set(id, { ...itemData, section, subsection, isCustom, editedName: displayName, originalName: name });
       }
       itemEl.classList.add('selected');
       cb.checked = true;
