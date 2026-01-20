@@ -32,6 +32,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | Plan | File | Approved Date | Final Score |
 |------|------|---------------|-------------|
 | New Onset Seizure | [`new-onset-seizure.md`](../plans/new-onset-seizure.md) | 2026-01-20 | 93% (56/60) |
+| Multiple Sclerosis (New Diagnosis) | [`ms-new-diagnosis.md`](../plans/ms-new-diagnosis.md) | 2026-01-20 | 90% (54/60) |
 
 ---
 
@@ -39,7 +40,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Completed Date | Final Score |
 |------|------|----------------|-------------|
-| Multiple Sclerosis (New Diagnosis) | `ms-new-diagnosis.md` | 2026-01-20 | 54/60 (90%) |
+| *(none)* | — | — | — |
 
 ---
 
