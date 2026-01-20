@@ -218,6 +218,7 @@ print('sections type:', type(plan.get('sections'))) # Should be: <class 'dict'>
 | `docs/data/plans.json` | JSON data for clinical tool |
 | `mkdocs.yml` | Site navigation structure |
 | `scripts/generate_json.py` | Markdown to JSON converter + parity checker |
+| `docs/logs/citation-verification-log.md` | Citation verification results and patterns |
 
 ### Skills Files
 

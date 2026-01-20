@@ -300,10 +300,70 @@ C3. Section 8 - Add missing citation: "Hauser WA et al. NEJM 1998;338:429-34" fo
 3. Search and verify each citation (HIGH priority first)
 4. Document findings in verification report
 5. Generate correction list compatible with neuro-rebuilder
-6. Physician reviews flagged citations
-7. Corrections implemented via rebuilder
-8. Re-verify any changed citations
-9. Proceed to CPT/synonym enrichment
+6. **Log results to `docs/logs/citation-verification-log.md`** (NEW)
+7. Physician reviews flagged citations
+8. Corrections implemented via rebuilder
+9. Re-verify any changed citations
+10. Proceed to CPT/synonym enrichment
+
+## Verification Logging (Required)
+
+**CRITICAL:** After each verification, append results to the central log at `docs/logs/citation-verification-log.md`. This enables pattern analysis and process improvement.
+
+### What to Log
+
+For each plan verified, add:
+
+1. **Summary entry** - Add counts to the Summary Statistics table
+2. **Plan section** - Create new section under "Verification Results by Plan" with:
+   - Date verified
+   - Version
+   - List of verified citations with PubMed IDs
+   - List of non-PubMed sources
+   - List of citations unable to verify (with reasons)
+   - Corrections made
+
+### Log Entry Template
+
+```markdown
+### [Plan Name]
+
+**Date Verified:** YYYY-MM-DD
+**Version:** X.X → X.X
+**Verifier:** Claude (neuro-citation-verifier)
+
+#### Verified Citations (X)
+
+| # | Citation | PubMed ID | Status |
+|---|----------|-----------|--------|
+| 1 | [Author et al. Journal Year] | [PMID](link) | ✅ Verified |
+
+#### Unable to Verify (X)
+
+| # | Citation | Reason | Recommendation |
+|---|----------|--------|----------------|
+| 1 | [Citation] | [Why unverifiable] | [Suggested action] |
+
+#### Corrections Made (X)
+
+| # | Original Citation | Issue | Corrected To |
+|---|-------------------|-------|--------------|
+| 1 | [Original] | [Problem] | [Fixed citation] |
+```
+
+### Pattern Tracking
+
+When logging, note any patterns in the "Patterns & Improvement Opportunities" section:
+
+| Pattern Type | Example |
+|--------------|---------|
+| Trial confusion | Multiple trials for same drug, different indications |
+| Generic references | "Multiple RCTs" without specific citations |
+| Outdated guidelines | Citing old version when newer exists |
+| Author name variations | Different spellings across sources |
+| Paywall barriers | Cannot access to verify content |
+
+This data helps improve the builder and checker skills over time.
 
 ## Limitations
 
@@ -316,6 +376,12 @@ C3. Section 8 - Add missing citation: "Hauser WA et al. NEJM 1998;338:429-34" fo
 When a source cannot be verified due to access limitations, recommend physician verification or suggest alternative citable sources.
 
 ## Change Log
+
+**v1.2 (January 2026)**
+- Added required verification logging to `docs/logs/citation-verification-log.md`
+- New "Verification Logging (Required)" section with log entry template
+- Added pattern tracking for continuous improvement
+- Updated workflow to include logging step
 
 **v1.1 (January 2026)**
 - Added clickable source links (PubMed, DOI, organization websites) to all verification output tables
