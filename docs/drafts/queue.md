@@ -27,7 +27,15 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 ---
 
-## Completed
+## Approved (Moved to `docs/plans/`)
+
+| Plan | File | Approved Date | Final Score |
+|------|------|---------------|-------------|
+| New Onset Seizure | [`new-onset-seizure.md`](../plans/new-onset-seizure.md) | 2026-01-20 | 93% (56/60) |
+
+---
+
+## Completed (Awaiting Physician Approval)
 
 | Plan | File | Completed Date | Final Score |
 |------|------|----------------|-------------|
