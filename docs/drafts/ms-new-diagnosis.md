@@ -1,7 +1,7 @@
 ---
 title: Multiple Sclerosis - New Diagnosis
 description: Initial diagnostic workup and management of suspected or newly confirmed MS including diagnostic criteria evaluation, mimics exclusion, and DMT initiation framework.
-version: "2.4"
+version: "2.5"
 setting: ED, HOSP, OPD
 status: draft
 tags:
@@ -21,7 +21,7 @@ tags:
 
 # Multiple Sclerosis - New Diagnosis
 
-**VERSION:** 2.4
+**VERSION:** 2.5
 **CREATED:** January 13, 2026
 **REVISED:** January 20, 2026
 **STATUS:** Draft - Pending Review
@@ -30,7 +30,9 @@ tags:
 
 **DIAGNOSIS:** Multiple Sclerosis - New Diagnosis
 
-**ICD-10:** G35 (Multiple sclerosis)
+**ICD-10:** G35 (Multiple sclerosis); H46.9 (Optic neuritis, if presenting symptom); G37.9 (Demyelinating disease of CNS, unspecified)
+
+**SYNONYMS:** MS, multiple sclerosis, demyelinating disease, RRMS, PPMS, SPMS, CIS
 
 **SCOPE:** Initial diagnostic workup and management of suspected or newly confirmed MS. Covers diagnostic criteria evaluation, mimics exclusion, acute symptom treatment, and DMT initiation framework. For established MS with acute relapse, use "MS - Exacerbation" template. For ongoing DMT management and monitoring, use "MS - Maintenance" template.
 
@@ -373,6 +375,10 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v2.5 (January 20, 2026)**
+- Added ICD-10 codes: H46.9 (optic neuritis), G37.9 (demyelinating disease)
+- Added clinical synonyms: MS, RRMS, PPMS, SPMS, CIS
 
 **v2.4 (January 20, 2026)**
 - Added PubMed links to all citations in Section 8 (Evidence & References)
