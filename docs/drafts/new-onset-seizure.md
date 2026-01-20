@@ -1,7 +1,7 @@
 ---
 title: New Onset Seizure
 description: Initial evaluation and management of first-time unprovoked seizure including diagnostic workup, acute treatment, and ASM initiation framework.
-version: "1.2"
+version: "1.3"
 setting: ED, HOSP, OPD
 status: draft
 tags:
@@ -20,7 +20,7 @@ tags:
 
 # New Onset Seizure
 
-**VERSION:** 1.2
+**VERSION:** 1.3
 **CREATED:** January 13, 2026
 **REVISED:** January 20, 2026
 **STATUS:** Draft - Pending Review
@@ -348,22 +348,28 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| ILAE 2017 seizure classification | Class I | Fisher RS et al. Epilepsia 2017 |
-| ILAE 2014 practical definition of epilepsy | Class I | Fisher RS et al. Epilepsia 2014 |
-| EEG within 24-48h increases yield | Class II, Level B | AAN Practice Parameter 2007 |
-| MRI superior to CT for epilepsy evaluation | Class I, Level A | ILAE Commission Report 2019 |
-| Levetiracetam non-inferior to phenytoin for acute seizure cessation | Class I, Level A | ESETT Trial, NEJM 2019 |
-| Risk of recurrence after first unprovoked seizure ~40-50% | Class I | Hauser et al., NEJM 1998 |
-| Starting ASM after first seizure reduces recurrence but not long-term remission | Class I, Level A | FIRST and MESS trials |
-| Lamotrigine and levetiracetam preferred in women of childbearing potential | Class II, Level B | AAN/AES Guidelines 2009, MONEAD Study |
+| ILAE 2017 seizure classification | Class I | [Fisher RS et al. Epilepsia 2017](https://pubmed.ncbi.nlm.nih.gov/28276060/) |
+| ILAE 2014 practical definition of epilepsy | Class I | [Fisher RS et al. Epilepsia 2014](https://pubmed.ncbi.nlm.nih.gov/24730690/) |
+| EEG within 24-48h increases yield | Class II, Level B | [AAN Practice Parameter 2007](https://pubmed.ncbi.nlm.nih.gov/18025394/) |
+| MRI superior to CT for epilepsy evaluation | Class I, Level A | [ILAE Neuroimaging Task Force 2019](https://pubmed.ncbi.nlm.nih.gov/31135062/) |
+| Levetiracetam non-inferior to phenytoin for acute seizure cessation | Class I, Level A | [Kapur et al. NEJM 2019 (ESETT)](https://pubmed.ncbi.nlm.nih.gov/31774955/) |
+| Risk of recurrence after first unprovoked seizure ~35-50% depending on risk factors | Class I | [Hauser et al. NEJM 1998](https://pubmed.ncbi.nlm.nih.gov/9459646/) |
+| Starting ASM after first seizure reduces recurrence but not long-term remission | Class I, Level A | [FIRST Trial](https://pubmed.ncbi.nlm.nih.gov/8450987/); [MESS Trial](https://pubmed.ncbi.nlm.nih.gov/15950714/) |
+| Lamotrigine and levetiracetam preferred in women of childbearing potential | Class II, Level B | [AAN/AES Guidelines 2009](https://pubmed.ncbi.nlm.nih.gov/19507301/); [MONEAD Study](https://pubmed.ncbi.nlm.nih.gov/35157004/) |
 | Driving restrictions reduce accident risk | Class II, Level B | Multiple observational studies |
-| Prolactin elevation supports diagnosis of epileptic seizure (if drawn <20 min) | Class II, Level B | Chen et al., Neurology 2005 |
-| Continuous EEG detects non-convulsive status in altered patients | Class II, Level B | Claassen et al., Neurology 2004 |
-| Folate supplementation reduces teratogenicity risk | Class II, Level B | AAN Practice Parameter |
+| Prolactin elevation supports diagnosis of epileptic seizure (if drawn <20 min) | Class II, Level B | [Chen et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/16157897/) |
+| Continuous EEG detects non-convulsive status in altered patients | Class II, Level B | [Claassen et al. Neurology 2004](https://www.neurology.org/doi/10.1212/01.wnl.0000125184.88797.62) |
+| Folate supplementation reduces teratogenicity risk | Class II, Level B | [AAN Practice Parameter 2009](https://pubmed.ncbi.nlm.nih.gov/19398680/) |
 
 ---
 
 ## CHANGE LOG
+
+**v1.3 (January 20, 2026)**
+- Added PubMed hyperlinks to all citations in Section 8 (Evidence & References)
+- Corrected recurrence risk from "40-50%" to "35-50% depending on risk factors" per Hauser 1998
+- Added MONEAD Study citation alongside AAN/AES 2009 for pregnancy recommendations
+- Added specific year (2009) to folate AAN Practice Parameter citation
 
 **v1.2 (January 20, 2026)**
 - Added ICU column to Section 4B (Patient Instructions) for format consistency with other tables
