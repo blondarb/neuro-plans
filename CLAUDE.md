@@ -128,7 +128,16 @@ Move <plan> to approved plans
 - Parity check passed
 ```
 
-#### 6i. Merge to Main (Deploy)
+#### 6i. Create Pull Request
+The `gh` CLI is not available. Provide the user with the compare URL so they can create the PR on GitHub (works on mobile):
+
+```
+https://github.com/blondarb/neuro-plans/compare/main...<branch-name>
+```
+
+**Always provide this link at the end of your work so the user can approve on their phone.**
+
+#### 6j. Merge to Main (Deploy)
 The live site is built from the `main` branch. After pushing to your feature branch:
 1. Create a Pull Request to merge into `main`
 2. Merge the PR via GitHub
