@@ -89,7 +89,7 @@ cp docs/drafts/<plan>.md docs/plans/<plan>.md
 #### 6b. Update Plan Metadata
 Edit `docs/plans/<plan>.md`:
 1. Change frontmatter `status: draft` → `status: approved`
-2. Remove the draft warning banner (`<div class="admonition warning">...</div>`)
+2. Remove the draft warning banner (`<div class="draft-warning-banner">...</div>`)
 3. Update `STATUS:` line from "Draft - Pending Review" to "Approved"
 
 #### 6c. Update Approved Plans Index
@@ -208,11 +208,20 @@ print('sections type:', type(plan.get('sections'))) # Should be: <class 'dict'>
 | `docs/plans/index.md` | Approved plans index |
 | `docs/data/plans.json` | JSON data for clinical tool |
 | `mkdocs.yml` | Site navigation structure |
-| `skills/neuro-checker-SKILL.md` | Validation instructions |
-| `skills/neuro-rebuilder-SKILL.md` | Revision instructions |
-| `docs/skills/neuro-citation-verifier-skill.md` | Citation verification and PubMed links |
-| `docs/skills/neuro-cpt-synonym-enricher-skill.md` | CPT codes, ICD codes, and synonyms |
 | `scripts/generate_json.py` | Markdown to JSON converter + parity checker |
+
+### Skills Files
+
+| Skill | File | Purpose |
+|-------|------|---------|
+| Builder | `skills/neuro-builder-SKILL.md` | Create new plans from scratch |
+| Checker | `skills/neuro-checker-SKILL.md` | Validate plans against 6 quality domains |
+| Rebuilder | `skills/neuro-rebuilder-SKILL.md` | Apply approved revisions to plans |
+| Citation Verifier | `docs/skills/neuro-citation-verifier-skill.md` | Verify citations and add PubMed links |
+| CPT/Synonym Enricher | `docs/skills/neuro-cpt-synonym-enricher-skill.md` | Add ICD/CPT codes and synonyms |
+| Comment Review | `skills/neuro-comment-review-SKILL.md` | Review and address user comments |
+| Style Guide | `docs/skills/style-guide.md` | Formatting and style standards |
+| Workflow Overview | `docs/skills/workflow.md` | End-to-end workflow documentation |
 
 ### Quality Targets
 
@@ -236,6 +245,19 @@ python scripts/generate_json.py docs/plans/<plan>.md --check-parity
 python scripts/build.py
 mkdocs build
 ```
+
+---
+
+## Creating New Plans
+
+To create a new plan from scratch:
+
+1. Read `skills/neuro-builder-SKILL.md` for the template structure and guidelines
+2. Read `docs/skills/style-guide.md` for formatting standards
+3. Create the plan file in `docs/drafts/<plan-name>.md`
+4. Add the plan to `docs/drafts/queue.md` with status `pending`
+5. Add the plan to `mkdocs.yml` under "Drafts for Review"
+6. Run through the skills pipeline (checker → rebuilder → etc.)
 
 ---
 
