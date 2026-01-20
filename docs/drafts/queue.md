@@ -22,7 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| Peripheral Neuropathy | `peripheral-neuropathy.md` | in_progress | claude/next-queue-item-VZFVz | 2026-01-20 |
+| *(none)* | — | — | — | — |
 
 ---
 
@@ -39,7 +39,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Completed Date | Final Score |
 |------|------|----------------|-------------|
-| *(none)* | — | — | — |
+| Peripheral Neuropathy | [`peripheral-neuropathy.md`](peripheral-neuropathy.md) | 2026-01-20 | 90% (54/60) |
 
 ---
 
