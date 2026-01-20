@@ -82,7 +82,8 @@ class MarkdownParser:
             'title': self._extract_title(),
             'version': self._extract_version(),
             'icd10': self._extract_icd10(),
-            'notes': self._extract_notes(),
+            'scope': self._extract_scope(),
+            'notes': self._extract_notes(),  # Must be a list for clinical tool JS
             'sections': {}
         }
 
@@ -154,8 +155,30 @@ class MarkdownParser:
             return [c.strip() for c in re.split(r'[,;]', codes)]
         return []
 
-    def _extract_notes(self) -> str:
-        """Extract clinical notes/scope."""
+    def _extract_notes(self) -> list:
+        """Extract clinical notes as a list.
+
+        Looks for a dedicated Clinical Notes section or returns empty list.
+        Note: SCOPE is stored separately via _extract_scope().
+        """
+        notes = []
+
+        # Look for Clinical Notes or Clinical Pearls section
+        notes_match = re.search(
+            r'(?:Clinical Notes|Clinical Pearls|KEY POINTS):\s*\n((?:[-•*]\s*.+\n?)+)',
+            self.content, re.IGNORECASE
+        )
+        if notes_match:
+            notes_text = notes_match.group(1)
+            for line in notes_text.split('\n'):
+                line = line.strip()
+                if line and line[0] in '-•*':
+                    notes.append(line.lstrip('-•* ').strip())
+
+        return notes
+
+    def _extract_scope(self) -> str:
+        """Extract scope/description of the plan."""
         scope_match = re.search(r'SCOPE:\s*(.+)', self.content)
         if scope_match:
             return scope_match.group(1).strip()
