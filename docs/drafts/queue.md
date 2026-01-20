@@ -23,7 +23,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
 | New Onset Seizure | `new-onset-seizure.md` | enriched | NsaoJ | 2026-01-20 |
-| Multiple Sclerosis (New Diagnosis) | `ms-new-diagnosis.md` | pending | — | 2026-01-20 |
+| Multiple Sclerosis (New Diagnosis) | `ms-new-diagnosis.md` | in_progress | NsaoJ | 2026-01-20 |
 | Peripheral Neuropathy | `peripheral-neuropathy.md` | pending | — | 2026-01-20 |
 
 ---
