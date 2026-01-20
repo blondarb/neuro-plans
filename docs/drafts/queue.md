@@ -22,7 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| New Onset Seizure | `new-onset-seizure.md` | pending | — | 2026-01-20 |
+| New Onset Seizure | `new-onset-seizure.md` | completed | dSRkQ | 2026-01-20 |
 | Multiple Sclerosis (New Diagnosis) | `ms-new-diagnosis.md` | pending | — | 2026-01-20 |
 | Peripheral Neuropathy | `peripheral-neuropathy.md` | pending | — | 2026-01-20 |
 
@@ -32,7 +32,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Completed Date | Final Score |
 |------|------|----------------|-------------|
-| *(none yet)* | — | — | — |
+| New Onset Seizure | `new-onset-seizure.md` | 2026-01-20 | 55/60 (92%) |
 
 ---
 
