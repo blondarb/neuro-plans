@@ -49,6 +49,22 @@ python scripts/generate_json.py docs/drafts/<plan>.md --validate-only
 python scripts/generate_json.py docs/drafts/<plan>.md --merge
 ```
 
+#### 3f. Citation Verifier
+1. Read `docs/skills/neuro-citation-verifier-skill.md` for instructions
+2. Verify all citations in Section 8 (Evidence & References)
+3. Add PubMed links to verified citations
+4. Flag any hallucinated or inaccurate citations for correction
+5. Present verification report to user for approval
+6. Apply approved citation corrections to the plan
+
+#### 3g. CPT/Synonym Enricher
+1. Read `docs/skills/neuro-cpt-synonym-enricher-skill.md` for instructions
+2. Add ICD-10 codes beyond the primary diagnosis code
+3. Add CPT codes for labs, imaging, and procedures
+4. Add clinical synonyms for searchability
+5. Present enrichment report to user for approval
+6. Apply approved codes/synonyms to the plan
+
 ### Step 4: Update Queue
 
 Mark the plan as `completed` in `docs/drafts/queue.md`.
@@ -68,6 +84,8 @@ Commit all changes with a descriptive message and push to the branch.
 | `docs/drafts/queue.md` | Plans awaiting review |
 | `skills/neuro-checker-SKILL.md` | Validation instructions |
 | `skills/neuro-rebuilder-SKILL.md` | Revision instructions |
+| `docs/skills/neuro-citation-verifier-skill.md` | Citation verification and PubMed links |
+| `docs/skills/neuro-cpt-synonym-enricher-skill.md` | CPT codes, ICD codes, and synonyms |
 | `scripts/generate_json.py` | Markdown to JSON converter |
 
 ### Quality Targets
