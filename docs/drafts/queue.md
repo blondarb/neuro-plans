@@ -22,17 +22,24 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| New Onset Seizure | `new-onset-seizure.md` | completed | 3UKQD | 2026-01-20 |
 | Multiple Sclerosis (New Diagnosis) | `ms-new-diagnosis.md` | pending | — | 2026-01-20 |
 | Peripheral Neuropathy | `peripheral-neuropathy.md` | pending | — | 2026-01-20 |
 
 ---
 
-## Completed
+## Approved (Moved to `docs/plans/`)
+
+| Plan | File | Approved Date | Final Score |
+|------|------|---------------|-------------|
+| New Onset Seizure | [`new-onset-seizure.md`](../plans/new-onset-seizure.md) | 2026-01-20 | 93% (56/60) |
+
+---
+
+## Completed (Awaiting Physician Approval)
 
 | Plan | File | Completed Date | Final Score |
 |------|------|----------------|-------------|
-| New Onset Seizure | `new-onset-seizure.md` | 2026-01-20 | 93% (56/60) |
+| *(none)* | — | — | — |
 
 ---
 
