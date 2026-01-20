@@ -42,25 +42,25 @@ class ValidationResult:
 class MarkdownParser:
     """Parses markdown clinical plan templates into structured data."""
 
-    # Section patterns
+    # Section patterns - made more generic to handle various plan structures
     SECTION_PATTERNS = {
-        'labs_core': r'###?\s*1A[.\s]+Essential|###?\s*1A[.\s]+Core',
-        'labs_extended': r'###?\s*1B[.\s]+Extended',
-        'labs_rare': r'###?\s*1C[.\s]+Rare|###?\s*1C[.\s]+Specialized',
-        'imaging_essential': r'###?\s*2A[.\s]+Essential|###?\s*2A[.\s]+First-line',
-        'imaging_extended': r'###?\s*2B[.\s]+Extended',
-        'imaging_rare': r'###?\s*2C[.\s]+Rare|###?\s*2C[.\s]+Specialized',
+        'labs_core': r'###?\s*1A[.\s]+',
+        'labs_extended': r'###?\s*1B[.\s]+',
+        'labs_rare': r'###?\s*1C[.\s]+',
+        'imaging_essential': r'###?\s*2A[.\s]+',
+        'imaging_extended': r'###?\s*2B[.\s]+',
+        'imaging_rare': r'###?\s*2C[.\s]+',
         'lumbar_puncture': r'###?\s*LUMBAR PUNCTURE|###?\s*LP Studies',
-        'treatment_acute': r'###?\s*3A[.\s]+Acute|###?\s*3A[.\s]+Emergent',
-        'treatment_symptomatic': r'###?\s*3B[.\s]+Symptomatic|###?\s*3B[.\s]+First-line',
-        'treatment_secondline': r'###?\s*3C[.\s]+Second-line|###?\s*3C[.\s]+Refractory',
-        'treatment_dmt': r'###?\s*3D[.\s]+Disease-Modifying|###?\s*3D[.\s]+Chronic',
-        'treatment_super_refractory': r'###?\s*3E[.\s]+Super-Refractory',
-        'treatment_immunotherapy': r'###?\s*3F[.\s]+Immunotherapy|###?\s*3F[.\s]+NORSE',
-        'treatment_supportive': r'###?\s*3G[.\s]+Supportive|###?\s*3G[.\s]+Symptomatic.*ICU',
-        'referrals': r'###?\s*4A[.\s]+Referrals|###?\s*4A[.\s]+Consults',
-        'patient_instructions': r'###?\s*4B[.\s]+Patient',
-        'lifestyle': r'###?\s*4C[.\s]+Lifestyle|###?\s*4C[.\s]+Prevention',
+        'treatment_3a': r'###?\s*3A[.\s]+',
+        'treatment_3b': r'###?\s*3B[.\s]+',
+        'treatment_3c': r'###?\s*3C[.\s]+',
+        'treatment_3d': r'###?\s*3D[.\s]+',
+        'treatment_3e': r'###?\s*3E[.\s]+',
+        'treatment_3f': r'###?\s*3F[.\s]+',
+        'treatment_3g': r'###?\s*3G[.\s]+',
+        'referrals': r'###?\s*4A[.\s]+',
+        'patient_instructions': r'###?\s*4B[.\s]+',
+        'lifestyle': r'###?\s*4C[.\s]+',
         'differential': r'##?\s*5[.\s]+DIFFERENTIAL',
         'monitoring': r'##?\s*6[.\s]+MONITORING',
         'disposition': r'##?\s*7[.\s]+DISPOSITION',
@@ -180,6 +180,14 @@ class MarkdownParser:
                 'subsections': other_sections
             })
 
+        # Differential Diagnosis
+        differential_items = self._parse_differential_section()
+        if differential_items:
+            sections.append({
+                'title': 'Differential Diagnosis',
+                'items': differential_items
+            })
+
         # Monitoring Parameters
         monitoring_items = self._parse_monitoring_section()
         if monitoring_items:
@@ -254,45 +262,44 @@ class MarkdownParser:
         return subsections
 
     def _parse_treatment_sections(self) -> list:
-        """Parse treatment sections."""
+        """Parse treatment sections dynamically."""
         subsections = []
 
-        # Acute/Emergent
-        acute_items = self._parse_table_section('treatment_acute', 'treatment_symptomatic')
-        if acute_items:
-            subsections.append({'title': 'Acute/Emergent', 'items': acute_items})
+        # Define the treatment section sequence with their boundaries
+        treatment_keys = [
+            ('treatment_3a', 'treatment_3b'),
+            ('treatment_3b', 'treatment_3c'),
+            ('treatment_3c', 'treatment_3d'),
+            ('treatment_3d', 'treatment_3e'),
+            ('treatment_3e', 'treatment_3f'),
+            ('treatment_3f', 'treatment_3g'),
+            ('treatment_3g', 'referrals'),
+        ]
 
-        # Symptomatic
-        symptomatic_items = self._parse_table_section('treatment_symptomatic', 'treatment_secondline')
-        if symptomatic_items:
-            subsections.append({'title': 'Symptomatic Treatments', 'items': symptomatic_items})
+        for start_key, end_key in treatment_keys:
+            start_idx = self._find_section_start(start_key)
+            if start_idx is None:
+                continue
 
-        # Second-line/Refractory
-        secondline_items = self._parse_table_section('treatment_secondline', 'treatment_dmt')
-        if secondline_items:
-            subsections.append({'title': 'Second-line/Refractory', 'items': secondline_items})
+            # Extract the title from the actual markdown line
+            title = self._extract_section_title(start_idx)
 
-        # Disease-Modifying
-        dmt_items = self._parse_table_section('treatment_dmt', 'treatment_super_refractory')
-        if dmt_items:
-            subsections.append({'title': 'Disease-Modifying', 'items': dmt_items})
-
-        # Super-Refractory
-        super_items = self._parse_table_section('treatment_super_refractory', 'treatment_immunotherapy')
-        if super_items:
-            subsections.append({'title': 'Super-Refractory', 'items': super_items})
-
-        # Immunotherapy
-        immuno_items = self._parse_table_section('treatment_immunotherapy', 'treatment_supportive')
-        if immuno_items:
-            subsections.append({'title': 'Immunotherapy', 'items': immuno_items})
-
-        # Supportive/ICU Care
-        supportive_items = self._parse_table_section('treatment_supportive', 'referrals')
-        if supportive_items:
-            subsections.append({'title': 'Supportive/ICU Care', 'items': supportive_items})
+            items = self._parse_table_section(start_key, end_key)
+            if items:
+                subsections.append({'title': title, 'items': items})
 
         return subsections
+
+    def _extract_section_title(self, line_idx: int) -> str:
+        """Extract the section title from a markdown heading line."""
+        line = self.lines[line_idx].strip()
+        # Remove markdown heading markers and section numbers
+        # Match patterns like "### 3A. Title" or "### 3B. Title"
+        match = re.search(r'###?\s*\d[A-Z][.\s]+(.+)', line, re.IGNORECASE)
+        if match:
+            return match.group(1).strip()
+        # Fallback: remove leading # and return
+        return re.sub(r'^#+\s*', '', line).strip()
 
     def _parse_other_sections(self) -> list:
         """Parse other recommendations sections."""
@@ -314,6 +321,37 @@ class MarkdownParser:
             subsections.append({'title': 'Lifestyle & Prevention', 'items': lifestyle_items})
 
         return subsections
+
+    def _parse_differential_section(self) -> list:
+        """Parse differential diagnosis section."""
+        items = []
+        start_idx = self._find_section_start('differential')
+        end_idx = self._find_section_start('monitoring')
+
+        if start_idx is None:
+            return items
+
+        if end_idx is None:
+            end_idx = len(self.lines)
+
+        # Look for table rows
+        in_table = False
+        for i in range(start_idx, end_idx):
+            line = self.lines[i].strip()
+
+            if line.startswith('|') and '---' not in line:
+                cells = [c.strip() for c in line.split('|')[1:-1]]
+                if len(cells) >= 2 and cells[0] and not cells[0].lower().startswith('alternative'):
+                    items.append({
+                        'diagnosis': cells[0],
+                        'features': cells[1] if len(cells) > 1 else '',
+                        'tests': cells[2] if len(cells) > 2 else ''
+                    })
+                in_table = True
+            elif in_table and not line.startswith('|'):
+                break
+
+        return items
 
     def _parse_monitoring_section(self) -> list:
         """Parse monitoring parameters section."""
@@ -572,32 +610,35 @@ class ParityChecker:
         skip_next_table = False   # For skipping timeline tables
 
         # Patterns for sections we want to count (Sections 1-8)
+        # Each pattern extracts the section title dynamically from the heading
         section_patterns = [
+            # Main sections (## headers)
             (r'##?\s*1[.\s]+LABORATORY', 'Laboratory Workup'),
-            (r'###?\s*1A', 'Core Labs'),
-            (r'###?\s*1B', 'Extended Workup'),
-            (r'###?\s*1C', 'Rare/Specialized Labs'),
             (r'##?\s*2[.\s]+DIAGNOSTIC', 'Diagnostic Imaging'),
-            (r'###?\s*2A', 'Essential Imaging'),
-            (r'###?\s*2B', 'Extended Imaging'),
-            (r'###?\s*2C', 'Rare/Specialized Imaging'),
-            (r'###?\s*LUMBAR', 'Lumbar Puncture'),
             (r'##?\s*3[.\s]+TREATMENT', 'Treatment'),
-            (r'###?\s*3A', 'Stabilization/Acute'),
-            (r'###?\s*3B', 'First-Line/Emergent'),
-            (r'###?\s*3C', 'Second-Line ASM'),
-            (r'###?\s*3D', 'Refractory SE'),
-            (r'###?\s*3E', 'Super-Refractory'),
-            (r'###?\s*3F', 'NORSE/Immunotherapy'),
-            (r'###?\s*3G', 'Supportive Care'),
             (r'##?\s*4[.\s]+OTHER', 'Other Recommendations'),
-            (r'###?\s*4A', 'Referrals'),
-            (r'###?\s*4B', 'Patient Instructions'),
-            (r'###?\s*4C', 'Lifestyle'),
             (r'##?\s*5[.\s]+DIFFERENTIAL', 'Differential Diagnosis'),
             (r'##?\s*6[.\s]+MONITORING', 'Monitoring Parameters'),
             (r'##?\s*7[.\s]+DISPOSITION', 'Disposition Criteria'),
             (r'##?\s*8[.\s]+EVIDENCE', 'Evidence & References'),
+            # Subsections (### headers) - extract title dynamically
+            (r'###\s*1A[.\s]+(.+)', None),  # Will use captured group
+            (r'###\s*1B[.\s]+(.+)', None),
+            (r'###\s*1C[.\s]+(.+)', None),
+            (r'###\s*2A[.\s]+(.+)', None),
+            (r'###\s*2B[.\s]+(.+)', None),
+            (r'###\s*2C[.\s]+(.+)', None),
+            (r'###\s*LUMBAR\s*PUNCTURE', 'Lumbar Puncture'),
+            (r'###\s*3A[.\s]+(.+)', None),
+            (r'###\s*3B[.\s]+(.+)', None),
+            (r'###\s*3C[.\s]+(.+)', None),
+            (r'###\s*3D[.\s]+(.+)', None),
+            (r'###\s*3E[.\s]+(.+)', None),
+            (r'###\s*3F[.\s]+(.+)', None),
+            (r'###\s*3G[.\s]+(.+)', None),
+            (r'###\s*4A[.\s]+(.+)', None),
+            (r'###\s*4B[.\s]+(.+)', None),
+            (r'###\s*4C[.\s]+(.+)', None),
         ]
 
         # Patterns that indicate we should STOP counting (end of main content)
@@ -639,11 +680,23 @@ class ParityChecker:
             # Check for section headers
             matched_section = False
             for pattern, section_name in section_patterns:
-                if re.search(pattern, line, re.IGNORECASE):
+                match = re.search(pattern, line, re.IGNORECASE)
+                if match:
                     # Save previous subsection count
                     if current_subsection and item_count > 0:
                         counts[current_subsection] = counts.get(current_subsection, 0) + item_count
-                    current_subsection = section_name
+
+                    # If section_name is None, extract from captured group or full match
+                    if section_name is None:
+                        if match.groups():
+                            # Use the captured group (title after the section number)
+                            current_subsection = match.group(1).strip()
+                        else:
+                            # Fall back to the full match
+                            current_subsection = match.group(0).strip()
+                    else:
+                        current_subsection = section_name
+
                     item_count = 0
                     in_table = False
                     in_valid_section = True
@@ -658,6 +711,11 @@ class ParityChecker:
             # These indicate a new table is coming - reset skip flag if it's a treatment table
             if re.match(r'####\s+(?:First-Line|Second-Line)\s+Immunotherapy', line, re.IGNORECASE):
                 skip_next_table = False  # These ARE treatment tables, don't skip
+
+            # Skip reference tables (like "**ASM Therapeutic Level Reference:**")
+            if re.match(r'\*\*.*Reference.*:\*\*', line, re.IGNORECASE):
+                skip_next_table = True
+                continue
 
             # Count table rows (items) only if we're in a valid section
             if in_valid_section and current_subsection and line.strip().startswith('|'):
@@ -723,7 +781,25 @@ class ParityChecker:
 
         # Count items in sections (accumulate for duplicate subsection names)
         sections = plan_data.get('sections', {})
-        if isinstance(sections, dict):
+
+        # Handle list-based sections structure (new format)
+        if isinstance(sections, list):
+            for section in sections:
+                section_title = section.get('title', '')
+
+                # Count items directly in section
+                if 'items' in section and isinstance(section['items'], list):
+                    counts[section_title] = counts.get(section_title, 0) + len(section['items'])
+
+                # Count items in subsections
+                if 'subsections' in section and isinstance(section['subsections'], list):
+                    for subsection in section['subsections']:
+                        subsection_title = subsection.get('title', '')
+                        if 'items' in subsection and isinstance(subsection['items'], list):
+                            counts[subsection_title] = counts.get(subsection_title, 0) + len(subsection['items'])
+
+        # Handle dict-based sections structure (legacy format)
+        elif isinstance(sections, dict):
             for section_name, section_data in sections.items():
                 if isinstance(section_data, dict):
                     for subsection_name, items in section_data.items():
@@ -744,6 +820,7 @@ class ParityChecker:
         """Normalize section names for comparison."""
         # Common variations to standardize
         normalizations = {
+            # Status Epilepticus specific
             'stabilization/acute': 'stabilization',
             'first-line/emergent': 'first-line benzodiazepines',
             'first-line (benzodiazepines)': 'first-line benzodiazepines',
@@ -751,27 +828,56 @@ class ParityChecker:
             'refractory se': 'refractory se (anesthetics)',
             'super-refractory': 'super-refractory se',
             'norse/immunotherapy': 'norse immunotherapy',
-            'norse/fires first-line immunotherapy': 'norse immunotherapy',  # Combine NORSE sections
-            'norse/fires second-line immunotherapy': 'norse immunotherapy',  # Combine NORSE sections
+            'norse/fires first-line immunotherapy': 'norse immunotherapy',
+            'norse/fires second-line immunotherapy': 'norse immunotherapy',
             'norse first-line immunotherapy': 'norse immunotherapy',
             'norse second-line immunotherapy': 'norse immunotherapy',
             'supportive care': 'symptomatic/supportive icu care',
-            'essential imaging': 'essential',
-            'extended imaging': 'extended',
-            'rare/specialized imaging': 'rare/specialized',
-            'rare/specialized labs': 'rare/specialized',  # Combine rare labs
+
+            # General section name mappings
+            'essential/core labs': 'core labs',
+            'core labs': 'core labs',
+            'extended workup': 'extended workup',
+            'extended workup (second-line)': 'extended workup',
+            'rare/specialized': 'rare/specialized',
+            'rare/specialized (refractory or atypical)': 'rare/specialized',
+            'essential imaging': 'essential imaging',
+            'essential/first-line': 'essential imaging',
+            'extended imaging': 'extended imaging',
+            'extended': 'extended imaging',
+            'rare/specialized imaging': 'rare/specialized imaging',
+            'rare/specialized labs': 'rare/specialized',
             'specialized': 'rare/specialized',
+            'lumbar puncture': 'lumbar puncture',
+
+            # Treatment sections
+            'acute/emergent': 'acute/emergent',
+            'symptomatic treatments': 'symptomatic treatments',
+            'second-line/refractory': 'second-line/refractory',
+
+            # Other recommendations
+            'referrals & consults': 'referrals',
+            'referrals': 'referrals',
+            'consults': 'referrals',
+            'patient instructions': 'patient instructions',
+            'education': 'patient instructions',
+            'lifestyle & prevention': 'lifestyle',
+            'lifestyle': 'lifestyle',
+            'prevention': 'lifestyle',
+
+            # Reference sections
             'differential diagnosis': 'differential',
+            'differential': 'differential',
             'evidence & references': 'evidence',
+            'evidence': 'evidence',
             'monitoring parameters': 'monitoring',
-            'disposition criteria': 'criteria',
-            'continuous monitoring': 'monitoring',  # Combine monitoring
-            'intermittent monitoring': 'monitoring',  # Combine monitoring
+            'monitoring': 'monitoring',
+            'continuous monitoring': 'monitoring',
+            'intermittent monitoring': 'monitoring',
             'monitoring continuous': 'monitoring',
             'monitoring intermittent': 'monitoring',
-            'patient instructions': 'education',
-            'lifestyle': 'prevention',
-            'referrals': 'consults',
+            'disposition criteria': 'disposition',
+            'criteria': 'disposition',
         }
         lower = name.lower().strip()
         return normalizations.get(lower, lower)

@@ -14,6 +14,7 @@ These clinical decision support templates have been reviewed and approved for cl
 
 | Plan | Setting Coverage | Status |
 |------|------------------|--------|
+| [New Onset Seizure](new-onset-seizure.md) | ED, HOSP, OPD | :material-check-circle:{ .approved } Approved |
 | [Status Epilepticus](status-epilepticus.md) | ED, HOSP, ICU | :material-check-circle:{ .approved } Approved |
 
 ---

@@ -59,6 +59,61 @@ Commit all changes with a descriptive message and push to the branch.
 
 ---
 
+## Physician Approval Workflow
+
+When the physician approves a plan (moves from `completed` to `approved`), execute ALL of the following steps:
+
+### Step 6: Move Plan to Approved
+
+#### 6a. Copy Plan File
+```bash
+cp docs/drafts/<plan>.md docs/plans/<plan>.md
+```
+
+#### 6b. Update Plan Metadata
+Edit `docs/plans/<plan>.md`:
+1. Change frontmatter `status: draft` → `status: approved`
+2. Remove the draft warning banner (`<div class="admonition warning">...</div>`)
+3. Update `STATUS:` line from "Draft - Pending Review" to "Approved"
+
+#### 6c. Update Approved Plans Index
+Edit `docs/plans/index.md`:
+- Add the plan to the appropriate category table with setting coverage and status
+
+#### 6d. Update Site Navigation
+Edit `mkdocs.yml`:
+- Move the plan from "Drafts for Review" section to "Approved Plans" section
+- Update the file path from `drafts/<plan>.md` to `plans/<plan>.md`
+
+#### 6e. Update Queue
+Edit `docs/drafts/queue.md`:
+- Remove plan from the Queue table
+- Add plan to the "Approved" table with approved date and final score
+
+#### 6f. Regenerate JSON
+```bash
+python scripts/generate_json.py docs/plans/<plan>.md --merge
+```
+
+#### 6g. Run Parity Check
+```bash
+python scripts/generate_json.py docs/plans/<plan>.md --check-parity
+```
+Verify output shows: `✅ PARITY CHECK PASSED`
+
+#### 6h. Commit and Push
+Commit all changes with message like:
+```
+Move <plan> to approved plans
+
+- Copied from drafts to plans directory
+- Updated status to approved
+- Updated navigation and indexes
+- Parity check passed
+```
+
+---
+
 ## Quick Reference
 
 ### Key Files
@@ -66,9 +121,12 @@ Commit all changes with a descriptive message and push to the branch.
 | File | Purpose |
 |------|---------|
 | `docs/drafts/queue.md` | Plans awaiting review |
+| `docs/plans/index.md` | Approved plans index |
+| `docs/data/plans.json` | JSON data for clinical tool |
+| `mkdocs.yml` | Site navigation structure |
 | `skills/neuro-checker-SKILL.md` | Validation instructions |
 | `skills/neuro-rebuilder-SKILL.md` | Revision instructions |
-| `scripts/generate_json.py` | Markdown to JSON converter |
+| `scripts/generate_json.py` | Markdown to JSON converter + parity checker |
 
 ### Quality Targets
 
@@ -79,11 +137,14 @@ Commit all changes with a descriptive message and push to the branch.
 ### Commands
 
 ```bash
-# Validate a plan
+# Validate a plan (check structure, no output)
 python scripts/generate_json.py docs/drafts/<plan>.md --validate-only
 
-# Generate and merge JSON
+# Generate and merge JSON into plans.json
 python scripts/generate_json.py docs/drafts/<plan>.md --merge
+
+# Check parity between markdown and JSON (run after approval)
+python scripts/generate_json.py docs/plans/<plan>.md --check-parity
 
 # Build the site
 python scripts/build.py

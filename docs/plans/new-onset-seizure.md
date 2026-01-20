@@ -3,27 +3,19 @@ title: New Onset Seizure
 description: Initial evaluation and management of first-time unprovoked seizure including diagnostic workup, acute treatment, and ASM initiation framework.
 version: "1.2"
 setting: ED, HOSP, OPD
-status: draft
+status: approved
 tags:
   - seizure
   - epilepsy
   - new-diagnosis
 ---
 
-<div class="draft-warning-banner">
-  <span class="icon">⚠️</span>
-  <div class="content">
-    <div class="title">DRAFT - Pending Physician Review</div>
-    <div class="description">This plan has not been approved for clinical use. Please review and provide feedback using the comment system.</div>
-  </div>
-</div>
-
 # New Onset Seizure
 
 **VERSION:** 1.2
 **CREATED:** January 13, 2026
 **REVISED:** January 20, 2026
-**STATUS:** Draft - Pending Review
+**STATUS:** Approved
 
 ---
 
