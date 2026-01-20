@@ -34,23 +34,25 @@ All plans follow an 8-section format:
 
 ## Table Format
 
-Use the multi-column setting-priority format:
+Use the multi-column setting-priority format. **IMPORTANT:** Venue columns (ED, HOSP, OPD, ICU) must be the **last 4 columns** for CSS styling to work correctly.
 
 ### Labs/Studies Table
 
 ```markdown
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC  | STAT | STAT | ROUTINE | STAT | Infection screen | Normal |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| CBC  | Infection screen | Normal | STAT | STAT | ROUTINE | STAT |
 ```
 
 ### Treatment Table
 
 ```markdown
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Drug Name | STAT | STAT | ROUTINE | STAT | 10 mg PO daily | Allergy | LFTs |
+| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Drug Name | 10 mg PO daily | Allergy | LFTs | STAT | STAT | ROUTINE | STAT |
 ```
+
+> ⚠️ **Column Order Matters:** The CSS applies narrow column widths to the last 4 columns, expecting them to be ED/HOSP/OPD/ICU. Incorrect column order will cause rendering issues.
 
 ## Priority Levels
 
