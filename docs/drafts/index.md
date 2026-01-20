@@ -23,7 +23,7 @@ These clinical plans are pending physician review and approval. Please review ea
 
 | Plan | Category | Pipeline Status | Last Updated |
 |------|----------|-----------------|--------------|
-| [Peripheral Neuropathy](peripheral-neuropathy.md) | Neuropathy | :material-file-document-edit: Needs Review | 2026-01-20 |
+| *(none)* | — | — | — |
 
 ---
 
