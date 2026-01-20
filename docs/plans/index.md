@@ -27,6 +27,14 @@ These clinical decision support templates have been reviewed and approved for cl
 
 ---
 
+## Neuropathy
+
+| Plan | Setting Coverage | Status |
+|------|------------------|--------|
+| [Peripheral Neuropathy - New Diagnosis](peripheral-neuropathy.md) | ED, HOSP, OPD, ICU | :material-check-circle:{ .approved } Approved |
+
+---
+
 ## Coming Soon
 
 See [Drafts for Review](../drafts/index.md) for plans pending approval.

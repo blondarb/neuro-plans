@@ -3,27 +3,19 @@ title: Peripheral Neuropathy - New Diagnosis/Evaluation
 description: Initial diagnostic workup and symptomatic management of suspected or newly diagnosed peripheral neuropathy including etiologic evaluation and pain management.
 version: "1.5"
 setting: ED, HOSP, OPD, ICU
-status: draft
+status: approved
 tags:
   - neuropathy
   - new-diagnosis
   - pain-management
 ---
 
-<div class="draft-warning-banner">
-  <span class="icon">⚠️</span>
-  <div class="content">
-    <div class="title">DRAFT - Pending Physician Review</div>
-    <div class="description">This plan has not been approved for clinical use. Please review and provide feedback using the comment system.</div>
-  </div>
-</div>
-
 # Peripheral Neuropathy - New Diagnosis/Evaluation
 
 **VERSION:** 1.5
 **CREATED:** January 14, 2026
 **REVISED:** January 14, 2026
-**STATUS:** Draft - Pending Review
+**STATUS:** Approved
 
 ---
 
