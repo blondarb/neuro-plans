@@ -45,55 +45,55 @@ SECTION A: ACTION ITEMS
 
 ### 1A. Essential/Core Labs
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Anemia (B12), infection, malignancy screen | Normal |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Renal dysfunction (uremic neuropathy), hepatic disease, electrolytes | Normal |
-| Fasting glucose | STAT | STAT | ROUTINE | STAT | Diabetes screening | <100 mg/dL |
-| HbA1c | URGENT | ROUTINE | ROUTINE | URGENT | Diabetes/prediabetes (most common cause) | <5.7% |
-| Vitamin B12 | URGENT | ROUTINE | ROUTINE | URGENT | B12 deficiency neuropathy | >300 pg/mL |
-| Methylmalonic acid (MMA) | - | ROUTINE | ROUTINE | - | If B12 borderline (200-400); more sensitive | Normal |
-| Folate | URGENT | ROUTINE | ROUTINE | URGENT | Folate deficiency | Normal |
-| TSH | URGENT | ROUTINE | ROUTINE | URGENT | Hypothyroidism causes neuropathy | Normal (0.4-4.0 mIU/L) |
-| ESR | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory/vasculitic process | Normal (<20 mm/hr) |
-| CRP | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory marker | Normal |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| CBC with differential | Anemia (B12), infection, malignancy screen | Normal | STAT | STAT | ROUTINE | STAT |
+| CMP (BMP + LFTs) | Renal dysfunction (uremic neuropathy), hepatic disease, electrolytes | Normal | STAT | STAT | ROUTINE | STAT |
+| Fasting glucose | Diabetes screening | <100 mg/dL | STAT | STAT | ROUTINE | STAT |
+| HbA1c | Diabetes/prediabetes (most common cause) | <5.7% | URGENT | ROUTINE | ROUTINE | URGENT |
+| Vitamin B12 | B12 deficiency neuropathy | >300 pg/mL | URGENT | ROUTINE | ROUTINE | URGENT |
+| Methylmalonic acid (MMA) | If B12 borderline (200-400); more sensitive | Normal | - | ROUTINE | ROUTINE | - |
+| Folate | Folate deficiency | Normal | URGENT | ROUTINE | ROUTINE | URGENT |
+| TSH | Hypothyroidism causes neuropathy | Normal (0.4-4.0 mIU/L) | URGENT | ROUTINE | ROUTINE | URGENT |
+| ESR | Inflammatory/vasculitic process | Normal (<20 mm/hr) | URGENT | ROUTINE | ROUTINE | URGENT |
+| CRP | Inflammatory marker | Normal | URGENT | ROUTINE | ROUTINE | URGENT |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Oral glucose tolerance test (2-hour) | - | ROUTINE | ROUTINE | - | Detects IGT missed by FBG/HbA1c; high yield in idiopathic neuropathy (34-62% have abnormal OGTT) | <140 mg/dL at 2h |
-| Serum protein electrophoresis (SPEP) with immunofixation | - | ROUTINE | ROUTINE | - | Monoclonal gammopathy (MGUS, myeloma) | No M-spike |
-| 24-hour urine protein electrophoresis (UPEP) | - | ROUTINE | ROUTINE | - | Light chain disease | No monoclonal protein |
-| Free light chains (kappa/lambda) | - | ROUTINE | ROUTINE | - | AL amyloidosis, light chain deposition | Normal ratio (0.26-1.65) |
-| Vitamin B1 (thiamine) | - | ROUTINE | ROUTINE | - | Alcoholism, malnutrition, bariatric surgery | Normal |
-| Vitamin B6 (pyridoxine) | - | ROUTINE | ROUTINE | - | Deficiency OR toxicity (>200 mg/day) causes neuropathy | Normal (5-50 ng/mL) |
-| Vitamin E | - | ROUTINE | ROUTINE | - | Malabsorption, cholestasis | Normal |
-| Copper | - | ROUTINE | ROUTINE | - | Copper deficiency (zinc excess, bariatric surgery) | Normal |
-| Zinc | - | ROUTINE | ROUTINE | - | Zinc excess suppresses copper | Normal |
-| HIV antibody | - | ROUTINE | ROUTINE | - | HIV-associated distal sensory polyneuropathy | Negative |
-| Hepatitis B surface antigen/antibody | - | ROUTINE | ROUTINE | - | Hepatitis B-associated PAN, cryoglobulinemia | Negative |
-| Hepatitis C antibody | - | ROUTINE | ROUTINE | - | HCV-associated cryoglobulinemia, vasculitic neuropathy | Negative |
-| Lyme serology (endemic areas) | - | ROUTINE | ROUTINE | - | Lyme neuroborreliosis | Negative |
-| ANA | - | ROUTINE | ROUTINE | - | Connective tissue disease screen | Negative or low titer |
-| RPR/VDRL | - | ROUTINE | ROUTINE | - | Syphilitic neuropathy | Negative |
-| Rheumatoid factor | - | ROUTINE | ROUTINE | - | Rheumatoid vasculitis | Negative |
-| Anti-SSA/SSB (Ro/La) | - | ROUTINE | ROUTINE | - | SjÃƒÂ¶gren syndrome (small fiber) | Negative |
-| ACE level | - | ROUTINE | ROUTINE | - | Sarcoidosis | Normal |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Oral glucose tolerance test (2-hour) | Detects IGT missed by FBG/HbA1c; high yield in idiopathic neuropathy (34-62% have abnormal OGTT) | <140 mg/dL at 2h | - | ROUTINE | ROUTINE | - |
+| Serum protein electrophoresis (SPEP) with immunofixation | Monoclonal gammopathy (MGUS, myeloma) | No M-spike | - | ROUTINE | ROUTINE | - |
+| 24-hour urine protein electrophoresis (UPEP) | Light chain disease | No monoclonal protein | - | ROUTINE | ROUTINE | - |
+| Free light chains (kappa/lambda) | AL amyloidosis, light chain deposition | Normal ratio (0.26-1.65) | - | ROUTINE | ROUTINE | - |
+| Vitamin B1 (thiamine) | Alcoholism, malnutrition, bariatric surgery | Normal | - | ROUTINE | ROUTINE | - |
+| Vitamin B6 (pyridoxine) | Deficiency OR toxicity (>200 mg/day) causes neuropathy | Normal (5-50 ng/mL) | - | ROUTINE | ROUTINE | - |
+| Vitamin E | Malabsorption, cholestasis | Normal | - | ROUTINE | ROUTINE | - |
+| Copper | Copper deficiency (zinc excess, bariatric surgery) | Normal | - | ROUTINE | ROUTINE | - |
+| Zinc | Zinc excess suppresses copper | Normal | - | ROUTINE | ROUTINE | - |
+| HIV antibody | HIV-associated distal sensory polyneuropathy | Negative | - | ROUTINE | ROUTINE | - |
+| Hepatitis B surface antigen/antibody | Hepatitis B-associated PAN, cryoglobulinemia | Negative | - | ROUTINE | ROUTINE | - |
+| Hepatitis C antibody | HCV-associated cryoglobulinemia, vasculitic neuropathy | Negative | - | ROUTINE | ROUTINE | - |
+| Lyme serology (endemic areas) | Lyme neuroborreliosis | Negative | - | ROUTINE | ROUTINE | - |
+| ANA | Connective tissue disease screen | Negative or low titer | - | ROUTINE | ROUTINE | - |
+| RPR/VDRL | Syphilitic neuropathy | Negative | - | ROUTINE | ROUTINE | - |
+| Rheumatoid factor | Rheumatoid vasculitis | Negative | - | ROUTINE | ROUTINE | - |
+| Anti-SSA/SSB (Ro/La) | SjÃƒÂ¶gren syndrome (small fiber) | Negative | - | ROUTINE | ROUTINE | - |
+| ACE level | Sarcoidosis | Normal | - | ROUTINE | ROUTINE | - |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Anti-MAG antibody | - | EXT | EXT | - | IgM paraproteinemic neuropathy | Negative |
-| Anti-ganglioside antibodies (GM1, GD1a, GD1b, GQ1b) | - | EXT | EXT | - | If motor-predominant or acute onset (GBS variants) | Negative |
-| Paraneoplastic panel | - | EXT | EXT | - | Subacute sensory neuronopathy, weight loss, smoking | Negative (Anti-Hu, CV2) |
-| Cryoglobulins | - | EXT | EXT | - | Hepatitis C, autoimmune, vasculitic neuropathy | Negative |
-| Anti-CASPR2, Anti-LGI1 | - | EXT | EXT | - | Neuromyotonia, Morvan syndrome | Negative |
-| Fat pad or sural nerve biopsy | - | EXT | EXT | - | Amyloidosis, vasculitis, CIDP variants | No amyloid or vasculitis |
-| Genetic testing (CMT panel, TTR gene) | - | - | EXT | - | Hereditary neuropathy, familial amyloidosis | No pathogenic variant |
-| Skin punch biopsy for IENFD | - | - | EXT | - | Small fiber neuropathy confirmation | >8.8 fibers/mm (varies by site/age) |
-| Heavy metal panel (lead, arsenic, thallium, mercury) | - | EXT | EXT | - | Occupational/environmental exposure | Normal |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Anti-MAG antibody | IgM paraproteinemic neuropathy | Negative | - | EXT | EXT | - |
+| Anti-ganglioside antibodies (GM1, GD1a, GD1b, GQ1b) | If motor-predominant or acute onset (GBS variants) | Negative | - | EXT | EXT | - |
+| Paraneoplastic panel | Subacute sensory neuronopathy, weight loss, smoking | Negative (Anti-Hu, CV2) | - | EXT | EXT | - |
+| Cryoglobulins | Hepatitis C, autoimmune, vasculitic neuropathy | Negative | - | EXT | EXT | - |
+| Anti-CASPR2, Anti-LGI1 | Neuromyotonia, Morvan syndrome | Negative | - | EXT | EXT | - |
+| Fat pad or sural nerve biopsy | Amyloidosis, vasculitis, CIDP variants | No amyloid or vasculitis | - | EXT | EXT | - |
+| Genetic testing (CMT panel, TTR gene) | Hereditary neuropathy, familial amyloidosis | No pathogenic variant | - | - | EXT | - |
+| Skin punch biopsy for IENFD | Small fiber neuropathy confirmation | >8.8 fibers/mm (varies by site/age) | - | - | EXT | - |
+| Heavy metal panel (lead, arsenic, thallium, mercury) | Occupational/environmental exposure | Normal | - | EXT | EXT | - |
 
 ---
 
