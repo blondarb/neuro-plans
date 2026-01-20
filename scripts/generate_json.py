@@ -1010,6 +1010,7 @@ class JSONValidator:
     def validate(self) -> ValidationResult:
         """Run all validation checks."""
         self._validate_required_fields()
+        self._validate_clinical_tool_structure()
         self._validate_sections()
         self._validate_items()
         self._validate_medications()
@@ -1024,6 +1025,41 @@ class JSONValidator:
         for field in required:
             if field not in self.data or not self.data[field]:
                 self.result.errors.append(f"Missing required field: {field}")
+                self.result.passed = False
+
+    def _validate_clinical_tool_structure(self):
+        """Validate JSON structure is compatible with clinical tool.
+
+        The clinical tool JavaScript expects:
+        - sections: dict/object (NOT list)
+        - notes: list/array (NOT string)
+        - differential, evidence: lists at top level
+        """
+        # Check sections is a dict
+        sections = self.data.get('sections')
+        if sections is not None and not isinstance(sections, dict):
+            self.result.errors.append(
+                f"CRITICAL: 'sections' must be a dict/object, got {type(sections).__name__}. "
+                "Clinical tool will fail to load this plan!"
+            )
+            self.result.passed = False
+
+        # Check notes is a list (or missing)
+        notes = self.data.get('notes')
+        if notes is not None and not isinstance(notes, list):
+            self.result.errors.append(
+                f"CRITICAL: 'notes' must be a list/array, got {type(notes).__name__}. "
+                "Clinical tool will crash when loading this plan!"
+            )
+            self.result.passed = False
+
+        # Check top-level arrays are actually arrays
+        for field in ['differential', 'evidence', 'monitoring', 'disposition']:
+            value = self.data.get(field)
+            if value is not None and not isinstance(value, list):
+                self.result.errors.append(
+                    f"'{field}' must be a list/array, got {type(value).__name__}"
+                )
                 self.result.passed = False
 
     def _validate_sections(self):

@@ -112,6 +112,74 @@ Move <plan> to approved plans
 - Parity check passed
 ```
 
+#### 6i. Merge to Main (Deploy)
+The live site is built from the `main` branch. After pushing to your feature branch:
+1. Create a Pull Request to merge into `main`
+2. Merge the PR via GitHub
+3. Wait 1-2 minutes for GitHub Pages to rebuild
+4. Verify the plan loads in the clinical tool
+
+---
+
+## JSON Schema Requirements
+
+The clinical tool (`docs/clinical/index.html`) expects a specific JSON structure. **If the structure is wrong, plans won't load.**
+
+### Required Structure
+
+```json
+{
+  "Plan Name": {
+    "id": "plan-id",
+    "title": "Plan Name",
+    "version": "1.0",
+    "icd10": ["G40.901"],
+    "scope": "Description string...",
+    "notes": [],           // MUST be array, NOT string
+    "sections": {          // MUST be object/dict, NOT array
+      "Section Name": {
+        "Subsection Name": [
+          {
+            "item": "Item name",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "ROUTINE",
+            "ICU": "STAT"
+          }
+        ]
+      }
+    },
+    "differential": [],    // Top-level array
+    "evidence": [],        // Top-level array
+    "monitoring": [],      // Top-level array (optional)
+    "disposition": []      // Top-level array (optional)
+  }
+}
+```
+
+### Critical Requirements
+
+| Field | Type | Notes |
+|-------|------|-------|
+| `notes` | `array` | Must be `[]` or list of strings. **Never a string!** |
+| `sections` | `object` | Must be `{name: {subsection: [items]}}`. **Never an array!** |
+| `differential` | `array` | Top-level, not inside sections |
+| `evidence` | `array` | Top-level, not inside sections |
+
+### Verification
+
+After generating JSON, verify the structure:
+```bash
+python3 -c "
+import json
+with open('docs/data/plans.json') as f:
+    data = json.load(f)
+plan = data['Plan Name']
+print('notes type:', type(plan.get('notes')))      # Should be: <class 'list'>
+print('sections type:', type(plan.get('sections'))) # Should be: <class 'dict'>
+"
+```
+
 ---
 
 ## Quick Reference
