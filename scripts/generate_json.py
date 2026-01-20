@@ -767,23 +767,39 @@ class ParityChecker:
         with open(self.plans_json_path, 'r', encoding='utf-8') as f:
             plans_data = json.load(f)
 
-        # Find the plan by matching filename
-        plan_name = self.markdown_path.stem.replace('-', ' ').title()
+        # First, try to get the actual title from the markdown file
+        # This is the most reliable way to match
+        md_title = None
+        md_content = self.markdown_path.read_text(encoding='utf-8')
 
-        # Try different name formats
+        # Try frontmatter title first
+        import re
+        frontmatter_match = re.search(r'^---\s*\n.*?title:\s*["\']?([^"\'\n]+)["\']?\s*\n.*?---',
+                                       md_content, re.DOTALL)
+        if frontmatter_match:
+            md_title = frontmatter_match.group(1).strip()
+
+        # Fall back to DIAGNOSIS line
+        if not md_title:
+            diagnosis_match = re.search(r'DIAGNOSIS:\s*(.+)', md_content)
+            if diagnosis_match:
+                md_title = diagnosis_match.group(1).strip()
+
+        # Find the plan by matching title from markdown
         plan_data = None
-        for key in plans_data:
-            if key.lower().replace(' ', '-') == self.markdown_path.stem.lower():
-                plan_data = plans_data[key]
-                break
-            if key.lower() == plan_name.lower():
-                plan_data = plans_data[key]
-                break
+        if md_title and md_title in plans_data:
+            plan_data = plans_data[md_title]
 
+        # Try different name formats as fallback
         if not plan_data:
-            # Try Status Epilepticus specifically
-            if 'Status Epilepticus' in plans_data:
-                plan_data = plans_data['Status Epilepticus']
+            plan_name = self.markdown_path.stem.replace('-', ' ').title()
+            for key in plans_data:
+                if key.lower().replace(' ', '-') == self.markdown_path.stem.lower():
+                    plan_data = plans_data[key]
+                    break
+                if key.lower() == plan_name.lower():
+                    plan_data = plans_data[key]
+                    break
 
         if not plan_data:
             return counts
