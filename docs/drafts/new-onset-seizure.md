@@ -1,7 +1,7 @@
 ---
 title: New Onset Seizure
 description: Initial evaluation and management of first-time unprovoked seizure including diagnostic workup, acute treatment, and ASM initiation framework.
-version: "1.1"
+version: "1.2"
 setting: ED, HOSP, OPD
 status: draft
 tags:
@@ -20,9 +20,9 @@ tags:
 
 # New Onset Seizure
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** January 13, 2026
-**REVISED:** January 13, 2026
+**REVISED:** January 20, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -246,40 +246,40 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| **Return to ED immediately if:** recurrent seizure, prolonged seizure >5 minutes, head injury, persistent confusion, difficulty breathing, or status epilepticus | ✓ | ✓ | ✓ |
-| Do NOT drive until cleared by neurology (driving restrictions per state guidelines; typically require seizure-free interval) | ✓ | ✓ | ✓ |
-| Avoid operating heavy machinery, working at heights, or swimming alone | ✓ | ✓ | ✓ |
-| Do not bathe alone; showers preferred over baths; keep bathroom door unlocked | ✓ | ✓ | ✓ |
-| Inform employer if job involves safety-sensitive duties | — | ✓ | ✓ |
-| Take ASM exactly as prescribed; do NOT stop abruptly (risk of breakthrough seizures or status epilepticus) | ✓ | ✓ | ✓ |
-| Avoid common seizure triggers: sleep deprivation, alcohol, illicit drugs, missed medications | ✓ | ✓ | ✓ |
-| Keep a seizure diary: date, time, duration, description, triggers, post-ictal symptoms | — | ✓ | ✓ |
-| Wear medical identification (bracelet or necklace) | — | ✓ | ✓ |
-| Educate family/coworkers on seizure first aid: stay with person, protect head, do NOT put anything in mouth, time the seizure, call 911 if >5 minutes | ✓ | ✓ | ✓ |
-| Follow up with neurology within 1-2 weeks of discharge | ✓ | ✓ | — |
-| Bring list of all medications (including OTC and supplements) to all appointments - many interact with ASMs | — | ✓ | ✓ |
-| Women: discuss contraception with provider; some ASMs reduce efficacy of hormonal contraception | — | ✓ | ✓ |
-| Report side effects (mood changes, rash, dizziness, cognitive issues) promptly; do NOT stop medication without calling | — | ✓ | ✓ |
-| Avoid flashing/strobe lights if photosensitive seizures suspected | — | ✓ | ✓ |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| **Return to ED immediately if:** recurrent seizure, prolonged seizure >5 minutes, head injury, persistent confusion, difficulty breathing, or status epilepticus | ✓ | ✓ | ✓ | — |
+| Do NOT drive until cleared by neurology (driving restrictions per state guidelines; typically require seizure-free interval) | ✓ | ✓ | ✓ | — |
+| Avoid operating heavy machinery, working at heights, or swimming alone | ✓ | ✓ | ✓ | — |
+| Do not bathe alone; showers preferred over baths; keep bathroom door unlocked | ✓ | ✓ | ✓ | — |
+| Inform employer if job involves safety-sensitive duties | — | ✓ | ✓ | — |
+| Take ASM exactly as prescribed; do NOT stop abruptly (risk of breakthrough seizures or status epilepticus) | ✓ | ✓ | ✓ | ✓ |
+| Avoid common seizure triggers: sleep deprivation, alcohol, illicit drugs, missed medications | ✓ | ✓ | ✓ | ✓ |
+| Keep a seizure diary: date, time, duration, description, triggers, post-ictal symptoms | — | ✓ | ✓ | — |
+| Wear medical identification (bracelet or necklace) | — | ✓ | ✓ | — |
+| Educate family/coworkers on seizure first aid: stay with person, protect head, do NOT put anything in mouth, time the seizure, call 911 if >5 minutes | ✓ | ✓ | ✓ | ✓ |
+| Follow up with neurology within 1-2 weeks of discharge | ✓ | ✓ | — | — |
+| Bring list of all medications (including OTC and supplements) to all appointments - many interact with ASMs | — | ✓ | ✓ | — |
+| Women: discuss contraception with provider; some ASMs reduce efficacy of hormonal contraception | — | ✓ | ✓ | — |
+| Report side effects (mood changes, rash, dizziness, cognitive issues) promptly; do NOT stop medication without calling | — | ✓ | ✓ | — |
+| Avoid flashing/strobe lights if photosensitive seizures suspected | — | ✓ | ✓ | — |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Sleep hygiene: aim for 7-9 hours nightly; maintain regular sleep schedule | — | ✓ | ✓ |
-| Avoid alcohol (lowers seizure threshold; interacts with ASMs) | ✓ | ✓ | ✓ |
-| Avoid illicit drugs (especially stimulants: cocaine, amphetamines) | ✓ | ✓ | ✓ |
-| Stress management techniques | — | — | ✓ |
-| Regular moderate exercise (not extreme sleep deprivation from overtraining) | — | — | ✓ |
-| Medication adherence: use pill organizers, phone alarms, refill reminders | — | ✓ | ✓ |
-| Folic acid supplementation 1-4 mg daily for women of childbearing potential (especially if on enzyme-inducing ASMs) | — | ✓ | ✓ |
-| Bone health: vitamin D 1000-2000 IU daily; calcium as needed (enzyme-inducing ASMs affect bone density) | — | — | ✓ |
-| Avoid known personal triggers (flashing lights, certain foods, stress, if identified) | — | ✓ | ✓ |
-| Home safety modifications: pad sharp furniture corners, avoid glass shower doors, use microwave instead of stovetop when alone | — | ✓ | ✓ |
-| Seizure alert devices or apps for those living alone (optional) | — | — | ✓ |
-| Smoking cessation (increases ASM metabolism; general health) | — | ✓ | ✓ |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Sleep hygiene: aim for 7-9 hours nightly; maintain regular sleep schedule | — | ✓ | ✓ | — |
+| Avoid alcohol (lowers seizure threshold; interacts with ASMs) | ✓ | ✓ | ✓ | ✓ |
+| Avoid illicit drugs (especially stimulants: cocaine, amphetamines) | ✓ | ✓ | ✓ | ✓ |
+| Stress management techniques | — | — | ✓ | — |
+| Regular moderate exercise (not extreme sleep deprivation from overtraining) | — | — | ✓ | — |
+| Medication adherence: use pill organizers, phone alarms, refill reminders | — | ✓ | ✓ | — |
+| Folic acid supplementation 1-4 mg daily for women of childbearing potential (especially if on enzyme-inducing ASMs) | — | ✓ | ✓ | ✓ |
+| Bone health: vitamin D 1000-2000 IU daily; calcium as needed (enzyme-inducing ASMs affect bone density) | — | — | ✓ | — |
+| Avoid known personal triggers (flashing lights, certain foods, stress, if identified) | — | ✓ | ✓ | — |
+| Home safety modifications: pad sharp furniture corners, avoid glass shower doors, use microwave instead of stovetop when alone | — | ✓ | ✓ | — |
+| Seizure alert devices or apps for those living alone (optional) | — | — | ✓ | — |
+| Smoking cessation (increases ASM metabolism; general health) | — | ✓ | ✓ | — |
 
 ---
 
@@ -364,6 +364,11 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.2 (January 20, 2026)**
+- Added ICU column to Section 4B (Patient Instructions) for format consistency with other tables
+- Added ICU column to Section 4C (Lifestyle & Prevention) for format consistency with other tables
+- Minor ICU applicability tags added where clinically relevant (ASM adherence education, family seizure first aid, trigger avoidance)
 
 **v1.1 (January 13, 2026)**
 - Updated levetiracetam loading dose to range (40-60 mg/kg) per physician preference
