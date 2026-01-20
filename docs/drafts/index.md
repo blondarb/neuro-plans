@@ -23,9 +23,7 @@ These clinical plans are pending physician review and approval. Please review ea
 
 | Plan | Category | Pipeline Status | Last Updated |
 |------|----------|-----------------|--------------|
-| [New Onset Seizure](new-onset-seizure.md) | Seizure & Epilepsy | :material-file-document-edit: Needs Review | - |
-| [MS New Diagnosis](ms-new-diagnosis.md) | Demyelinating | :material-file-document-edit: Needs Review | - |
-| [Peripheral Neuropathy](peripheral-neuropathy.md) | Neuropathy | :material-file-document-edit: Needs Review | - |
+| [Peripheral Neuropathy](peripheral-neuropathy.md) | Neuropathy | :material-file-document-edit: Needs Review | 2026-01-20 |
 
 ---
 
