@@ -19,6 +19,14 @@ These clinical decision support templates have been reviewed and approved for cl
 
 ---
 
+## Demyelinating Disorders
+
+| Plan | Setting Coverage | Status |
+|------|------------------|--------|
+| [Multiple Sclerosis - New Diagnosis](ms-new-diagnosis.md) | ED, HOSP, OPD | :material-check-circle:{ .approved } Approved |
+
+---
+
 ## Coming Soon
 
 See [Drafts for Review](../drafts/index.md) for plans pending approval.
