@@ -83,11 +83,28 @@ class MarkdownParser:
             'version': self._extract_version(),
             'icd10': self._extract_icd10(),
             'notes': self._extract_notes(),
-            'sections': []
+            'sections': {}
         }
 
-        # Parse each section type
+        # Parse main sections (for clinical tool)
         result['sections'] = self._parse_all_sections()
+
+        # Parse top-level arrays (for reference sections in clinical tool)
+        differential = self._parse_differential_section()
+        if differential:
+            result['differential'] = differential
+
+        evidence = self._parse_evidence_section()
+        if evidence:
+            result['evidence'] = evidence
+
+        monitoring = self._parse_monitoring_section()
+        if monitoring:
+            result['monitoring'] = monitoring
+
+        disposition = self._parse_disposition_section()
+        if disposition:
+            result['disposition'] = disposition
 
         return result
 
@@ -144,75 +161,44 @@ class MarkdownParser:
             return scope_match.group(1).strip()
         return ''
 
-    def _parse_all_sections(self) -> list:
-        """Parse all sections from the markdown."""
-        sections = []
+    def _parse_all_sections(self) -> dict:
+        """Parse all sections from the markdown.
+
+        Returns a dict with section names as keys and subsection dicts as values.
+        This format is required by the clinical tool JavaScript.
+        """
+        sections = {}
 
         # Laboratory Workup
         lab_sections = self._parse_lab_sections()
         if lab_sections:
-            sections.append({
-                'title': 'Laboratory Workup',
-                'subsections': lab_sections
-            })
+            sections['Laboratory Workup'] = self._subsections_to_dict(lab_sections)
 
         # Imaging & Studies
         imaging_sections = self._parse_imaging_sections()
         if imaging_sections:
-            sections.append({
-                'title': 'Diagnostic Imaging & Studies',
-                'subsections': imaging_sections
-            })
+            sections['Imaging & Studies'] = self._subsections_to_dict(imaging_sections)
 
         # Treatment
         treatment_sections = self._parse_treatment_sections()
         if treatment_sections:
-            sections.append({
-                'title': 'Treatment',
-                'subsections': treatment_sections
-            })
+            sections['Treatment'] = self._subsections_to_dict(treatment_sections)
 
         # Other Recommendations
         other_sections = self._parse_other_sections()
         if other_sections:
-            sections.append({
-                'title': 'Other Recommendations',
-                'subsections': other_sections
-            })
-
-        # Differential Diagnosis
-        differential_items = self._parse_differential_section()
-        if differential_items:
-            sections.append({
-                'title': 'Differential Diagnosis',
-                'items': differential_items
-            })
-
-        # Monitoring Parameters
-        monitoring_items = self._parse_monitoring_section()
-        if monitoring_items:
-            sections.append({
-                'title': 'Monitoring Parameters',
-                'items': monitoring_items
-            })
-
-        # Disposition Criteria
-        disposition_items = self._parse_disposition_section()
-        if disposition_items:
-            sections.append({
-                'title': 'Disposition Criteria',
-                'items': disposition_items
-            })
-
-        # Evidence & References
-        evidence_items = self._parse_evidence_section()
-        if evidence_items:
-            sections.append({
-                'title': 'Evidence & References',
-                'items': evidence_items
-            })
+            sections['Other Recommendations'] = self._subsections_to_dict(other_sections)
 
         return sections
+
+    def _subsections_to_dict(self, subsections_list: list) -> dict:
+        """Convert list of subsections to dict format for clinical tool."""
+        result = {}
+        for subsection in subsections_list:
+            title = subsection.get('title', 'Unknown')
+            items = subsection.get('items', [])
+            result[title] = items
+        return result
 
     def _parse_lab_sections(self) -> list:
         """Parse laboratory workup sections."""
@@ -810,7 +796,7 @@ class ParityChecker:
                     counts[section_name] = counts.get(section_name, 0) + len(section_data)
 
         # Also check top-level arrays
-        for key in ['differential', 'evidence', 'notes', 'definitions']:
+        for key in ['differential', 'evidence', 'notes', 'definitions', 'monitoring', 'disposition']:
             if key in plan_data and isinstance(plan_data[key], list):
                 counts[key.title()] = len(plan_data[key])
 
@@ -1019,9 +1005,16 @@ class JSONValidator:
 
     def _validate_sections(self):
         """Check that required sections exist."""
-        section_titles = []
-        for section in self.data.get('sections', []):
-            section_titles.append(section.get('title', ''))
+        sections = self.data.get('sections', {})
+
+        # Handle dict-based format (new format for clinical tool)
+        if isinstance(sections, dict):
+            section_titles = list(sections.keys())
+        # Handle list-based format (legacy)
+        elif isinstance(sections, list):
+            section_titles = [s.get('title', '') for s in sections]
+        else:
+            section_titles = []
 
         for required in self.REQUIRED_SECTIONS:
             if required not in section_titles:
@@ -1031,21 +1024,35 @@ class JSONValidator:
         """Validate individual items have required fields."""
         total_items = 0
         items_with_priorities = 0
+        sections = self.data.get('sections', {})
 
-        for section in self.data.get('sections', []):
-            items = section.get('items', [])
-            subsections = section.get('subsections', [])
+        # Handle dict-based format (new format for clinical tool)
+        if isinstance(sections, dict):
+            for section_name, subsections in sections.items():
+                if isinstance(subsections, dict):
+                    for subsection_name, items in subsections.items():
+                        if isinstance(items, list):
+                            for item in items:
+                                total_items += 1
+                                if self._has_priority_fields(item):
+                                    items_with_priorities += 1
 
-            for item in items:
-                total_items += 1
-                if self._has_priority_fields(item):
-                    items_with_priorities += 1
+        # Handle list-based format (legacy)
+        elif isinstance(sections, list):
+            for section in sections:
+                items = section.get('items', [])
+                subsections = section.get('subsections', [])
 
-            for subsection in subsections:
-                for item in subsection.get('items', []):
+                for item in items:
                     total_items += 1
                     if self._has_priority_fields(item):
                         items_with_priorities += 1
+
+                for subsection in subsections:
+                    for item in subsection.get('items', []):
+                        total_items += 1
+                        if self._has_priority_fields(item):
+                            items_with_priorities += 1
 
         self.result.stats['total_items'] = total_items
         self.result.stats['items_with_priorities'] = items_with_priorities
@@ -1067,25 +1074,49 @@ class JSONValidator:
         meds_missing_dosing = []
         meds_missing_contraindications = []
 
-        for section in self.data.get('sections', []):
-            if section.get('title') != 'Treatment':
-                continue
+        sections = self.data.get('sections', {})
 
-            for subsection in section.get('subsections', []):
-                if subsection.get('title') in self.MEDICATION_SECTIONS:
-                    for item in subsection.get('items', []):
-                        meds_total += 1
-                        item_name = item.get('item', 'Unknown')
+        # Handle dict-based format (new format for clinical tool)
+        if isinstance(sections, dict):
+            treatment_subsections = sections.get('Treatment', {})
+            if isinstance(treatment_subsections, dict):
+                for subsection_name, items in treatment_subsections.items():
+                    if subsection_name in self.MEDICATION_SECTIONS and isinstance(items, list):
+                        for item in items:
+                            meds_total += 1
+                            item_name = item.get('item', item.get('treatment', 'Unknown'))
 
-                        if item.get('dosing'):
-                            meds_with_dosing += 1
-                        else:
-                            meds_missing_dosing.append(item_name)
+                            if item.get('dosing'):
+                                meds_with_dosing += 1
+                            else:
+                                meds_missing_dosing.append(item_name)
 
-                        if item.get('contraindications'):
-                            meds_with_contraindications += 1
-                        else:
-                            meds_missing_contraindications.append(item_name)
+                            if item.get('contraindications'):
+                                meds_with_contraindications += 1
+                            else:
+                                meds_missing_contraindications.append(item_name)
+
+        # Handle list-based format (legacy)
+        elif isinstance(sections, list):
+            for section in sections:
+                if section.get('title') != 'Treatment':
+                    continue
+
+                for subsection in section.get('subsections', []):
+                    if subsection.get('title') in self.MEDICATION_SECTIONS:
+                        for item in subsection.get('items', []):
+                            meds_total += 1
+                            item_name = item.get('item', 'Unknown')
+
+                            if item.get('dosing'):
+                                meds_with_dosing += 1
+                            else:
+                                meds_missing_dosing.append(item_name)
+
+                            if item.get('contraindications'):
+                                meds_with_contraindications += 1
+                            else:
+                                meds_missing_contraindications.append(item_name)
 
         self.result.stats['medications_total'] = meds_total
         self.result.stats['medications_with_dosing'] = meds_with_dosing
@@ -1105,12 +1136,23 @@ class JSONValidator:
 
     def _calculate_stats(self):
         """Calculate summary statistics."""
-        self.result.stats['sections_count'] = len(self.data.get('sections', []))
+        sections = self.data.get('sections', {})
 
-        # Count subsections
-        subsection_count = 0
-        for section in self.data.get('sections', []):
-            subsection_count += len(section.get('subsections', []))
+        # Handle dict-based format
+        if isinstance(sections, dict):
+            self.result.stats['sections_count'] = len(sections)
+            subsection_count = sum(
+                len(subsections) if isinstance(subsections, dict) else 0
+                for subsections in sections.values()
+            )
+        # Handle list-based format
+        elif isinstance(sections, list):
+            self.result.stats['sections_count'] = len(sections)
+            subsection_count = sum(len(section.get('subsections', [])) for section in sections)
+        else:
+            self.result.stats['sections_count'] = 0
+            subsection_count = 0
+
         self.result.stats['subsections_count'] = subsection_count
 
 
