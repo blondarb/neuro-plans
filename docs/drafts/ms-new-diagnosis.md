@@ -1,7 +1,7 @@
 ---
 title: Multiple Sclerosis - New Diagnosis
 description: Initial diagnostic workup and management of suspected or newly confirmed MS including diagnostic criteria evaluation, mimics exclusion, and DMT initiation framework.
-version: "2.2"
+version: "2.3"
 setting: ED, HOSP, OPD
 status: draft
 tags:
@@ -21,9 +21,9 @@ tags:
 
 # Multiple Sclerosis - New Diagnosis
 
-**VERSION:** 2.2
+**VERSION:** 2.3
 **CREATED:** January 13, 2026
-**REVISED:** January 13, 2026
+**REVISED:** January 20, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -326,19 +326,20 @@ SECTION B: REFERENCE (Expand as Needed)
 
 ## 6. MONITORING PARAMETERS
 
-| Parameter | Frequency | Target/Threshold | Action if Abnormal |
-|-----------|-----------|------------------|-------------------|
-| Blood glucose | Q6h during IV steroids | <180 mg/dL | Insulin sliding scale; endocrine consult if persistent >250 |
-| Blood pressure | Q shift during steroids | <160/100 mmHg | Antihypertensives PRN |
-| Mood and sleep | Daily during steroids | No psychosis, mania, severe insomnia | Psychiatry consult; consider dose adjustment |
-| Temperature | Q shift | Afebrile | Infection workup if febrile |
-| Neurologic exam | Daily (inpatient); each visit (OPD) | Improvement or stability | If worsening: re-image, consider PLEX |
-| I/O and weight | Daily (inpatient) | Euvolemic | Diuretics if fluid overload |
-| Respiratory status | Q shift if cervical myelitis | RR <20, NIF >-30 cm H2O | ICU transfer if NIF >-20 (critical) |
-| Post-void residual | If retention suspected | <100 mL | Intermittent catheterization if >200 mL; urology referral |
-| MRI (follow-up) | 3-6 months after baseline, then annually | No new/enlarging lesions | DMT escalation discussion if new activity |
-| Vitamin D level | Annually | >40 ng/mL (some target >50) | Increase supplementation if low |
-| JCV antibody (if on natalizumab) | Every 6 months | Negative or stable index | If positive/rising: PML risk stratification, consider DMT switch |
+| Parameter | ED | HOSP | OPD | ICU | Frequency | Target/Threshold | Action if Abnormal |
+|-----------|:--:|:----:|:---:|:---:|-----------|------------------|-------------------|
+| Blood glucose | ✓ | ✓ | - | ✓ | Q6h during IV steroids | <180 mg/dL | Insulin sliding scale; endocrine consult if persistent >250 |
+| Blood pressure | ✓ | ✓ | - | ✓ | Q shift during steroids | <160/100 mmHg | Antihypertensives PRN |
+| Mood and sleep | - | ✓ | - | ✓ | Daily during steroids | No psychosis, mania, severe insomnia | Psychiatry consult; consider dose adjustment |
+| Temperature | ✓ | ✓ | - | ✓ | Q shift | Afebrile | Infection workup if febrile |
+| Neurologic exam | ✓ | ✓ | ✓ | ✓ | Daily (inpatient); each visit (OPD) | Improvement or stability | If worsening: re-image, consider PLEX |
+| I/O and weight | - | ✓ | - | ✓ | Daily (inpatient) | Euvolemic | Diuretics if fluid overload |
+| Respiratory status | - | ✓ | - | ✓ | Q shift if cervical myelitis | RR <20, NIF >-30 cm H2O | ICU transfer if NIF >-20 (critical) |
+| Post-void residual | - | ✓ | ✓ | - | If retention suspected | <100 mL | Intermittent catheterization if >200 mL; urology referral |
+| MRI (follow-up) - early | - | - | ✓ | - | 3 months after baseline | No new/enlarging lesions | DMT escalation discussion if new activity |
+| MRI (follow-up) - standard | - | - | ✓ | - | 6 months after baseline, then annually | No new/enlarging lesions | DMT escalation discussion if new activity |
+| Vitamin D level | - | - | ✓ | - | Annually | >40 ng/mL (some target >50) | Increase supplementation if low |
+| JCV antibody (if on natalizumab) | - | - | ✓ | - | Every 6 months | Negative or stable index | If positive/rising: PML risk stratification, consider DMT switch |
 
 ---
 
@@ -372,6 +373,11 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v2.3 (January 20, 2026)**
+- Added venue columns (ED, HOSP, OPD, ICU) to Section 6 Monitoring Parameters
+- Split MRI follow-up into two rows: early (3 months) and standard (6 months, then annually)
+- Confirmed JCV antibody monitoring at every 6 months for natalizumab patients
 
 **v2.2 (January 13, 2026)**
 - Expanded Section 3D: each DMT now on individual row with complete dosing
