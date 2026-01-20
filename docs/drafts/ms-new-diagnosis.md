@@ -1,7 +1,7 @@
 ---
 title: Multiple Sclerosis - New Diagnosis
 description: Initial diagnostic workup and management of suspected or newly confirmed MS including diagnostic criteria evaluation, mimics exclusion, and DMT initiation framework.
-version: "2.2"
+version: "2.3"
 setting: ED, HOSP, OPD
 status: draft
 tags:
@@ -21,9 +21,9 @@ tags:
 
 # Multiple Sclerosis - New Diagnosis
 
-**VERSION:** 2.2
+**VERSION:** 2.3
 **CREATED:** January 13, 2026
-**REVISED:** January 13, 2026
+**REVISED:** January 20, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -265,39 +265,39 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Return to ED if rapid vision loss, sudden weakness, difficulty breathing, or urinary retention | âœ“ | âœ“ | âœ“ |
-| Avoid driving until cleared by neurology | âœ“ | âœ“ | âœ“ |
-| Heat may temporarily worsen symptoms (Uhthoff phenomenon) - this is not a new attack | âœ“ | âœ“ | âœ“ |
-| Expect temporary steroid side effects: insomnia, mood changes, increased appetite, metallic taste | âœ“ | âœ“ | - |
-| Keep symptom diary noting new or worsening symptoms | - | âœ“ | âœ“ |
-| Do not stop steroids abruptly if on oral taper | - | âœ“ | âœ“ |
-| Do not stop baclofen or tizanidine abruptly - risk of withdrawal/rebound spasticity | - | âœ“ | âœ“ |
-| Monitor blood sugars if diabetic - steroids elevate glucose | âœ“ | âœ“ | âœ“ |
-| Avoid sick contacts while on high-dose steroids | âœ“ | âœ“ | - |
-| Contact MS specialist before starting any new medications (drug interactions with DMTs) | - | - | âœ“ |
-| Vaccinations should be completed before DMT initiation (especially live vaccines) | - | âœ“ | âœ“ |
-| Pregnancy planning requires DMT discussion (some DMTs teratogenic, washout periods vary) | - | - | âœ“ |
-| Report any signs of infection (fever, cough, dysuria) promptly | - | âœ“ | âœ“ |
-| Post-void residual check if difficulty emptying bladder or recurrent UTIs | - | âœ“ | âœ“ |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Return to ED if rapid vision loss, sudden weakness, difficulty breathing, or urinary retention | ✓ | ✓ | ✓ | — |
+| Avoid driving until cleared by neurology | ✓ | ✓ | ✓ | — |
+| Heat may temporarily worsen symptoms (Uhthoff phenomenon) - this is not a new attack | ✓ | ✓ | ✓ | ✓ |
+| Expect temporary steroid side effects: insomnia, mood changes, increased appetite, metallic taste | ✓ | ✓ | — | ✓ |
+| Keep symptom diary noting new or worsening symptoms | — | ✓ | ✓ | — |
+| Do not stop steroids abruptly if on oral taper | — | ✓ | ✓ | ✓ |
+| Do not stop baclofen or tizanidine abruptly - risk of withdrawal/rebound spasticity | — | ✓ | ✓ | ✓ |
+| Monitor blood sugars if diabetic - steroids elevate glucose | ✓ | ✓ | ✓ | ✓ |
+| Avoid sick contacts while on high-dose steroids | ✓ | ✓ | — | ✓ |
+| Contact MS specialist before starting any new medications (drug interactions with DMTs) | — | — | ✓ | — |
+| Vaccinations should be completed before DMT initiation (especially live vaccines) | — | ✓ | ✓ | — |
+| Pregnancy planning requires DMT discussion (some DMTs teratogenic, washout periods vary) | — | — | ✓ | — |
+| Report any signs of infection (fever, cough, dysuria) promptly | — | ✓ | ✓ | ✓ |
+| Post-void residual check if difficulty emptying bladder or recurrent UTIs | — | ✓ | ✓ | — |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Smoking cessation (smoking accelerates MS progression and disability) | âœ“ | âœ“ | âœ“ |
-| Vitamin D supplementation 2000-5000 IU daily (target serum 25-OH vitamin D >40 ng/mL) | - | âœ“ | âœ“ |
-| Regular aerobic exercise 150 min/week as tolerated (improves fatigue, mood, function) | - | âœ“ | âœ“ |
-| Resistance training 2-3Ã—/week | - | - | âœ“ |
-| Stress management and adequate sleep (7-8 hours nightly) | - | âœ“ | âœ“ |
-| Avoid excessive heat exposure (hot tubs, saunas, prolonged direct sun, exercising in heat) | - | âœ“ | âœ“ |
-| Cooling vest for outdoor activities in warm weather | - | - | âœ“ |
-| Maintain healthy weight (obesity associated with worse outcomes) | - | - | âœ“ |
-| Limit alcohol intake (can worsen balance, cognition, bladder symptoms) | - | - | âœ“ |
-| Ensure vaccinations up to date before DMT initiation (live vaccines contraindicated on many DMTs) | - | âœ“ | âœ“ |
-| Fall prevention: remove loose rugs, ensure adequate lighting, use assistive devices if needed | - | âœ“ | âœ“ |
-| Energy conservation techniques for fatigue management (pacing, prioritization, positioning) | - | âœ“ | âœ“ |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Smoking cessation (smoking accelerates MS progression and disability) | ✓ | ✓ | ✓ | ✓ |
+| Vitamin D supplementation 2000-5000 IU daily (target serum 25-OH vitamin D >40 ng/mL) | — | ✓ | ✓ | ✓ |
+| Regular aerobic exercise 150 min/week as tolerated (improves fatigue, mood, function) | — | ✓ | ✓ | — |
+| Resistance training 2-3×/week | — | — | ✓ | — |
+| Stress management and adequate sleep (7-8 hours nightly) | — | ✓ | ✓ | — |
+| Avoid excessive heat exposure (hot tubs, saunas, prolonged direct sun, exercising in heat) | — | ✓ | ✓ | — |
+| Cooling vest for outdoor activities in warm weather | — | — | ✓ | — |
+| Maintain healthy weight (obesity associated with worse outcomes) | — | — | ✓ | — |
+| Limit alcohol intake (can worsen balance, cognition, bladder symptoms) | — | — | ✓ | — |
+| Ensure vaccinations up to date before DMT initiation (live vaccines contraindicated on many DMTs) | — | ✓ | ✓ | — |
+| Fall prevention: remove loose rugs, ensure adequate lighting, use assistive devices if needed | — | ✓ | ✓ | — |
+| Energy conservation techniques for fatigue management (pacing, prioritization, positioning) | — | ✓ | ✓ | — |
 
 ---
 
@@ -357,21 +357,29 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| 2017 McDonald Criteria for MS diagnosis | Class I | Thompson AJ et al. Lancet Neurol 2018 |
-| MRI brain/spine with contrast for diagnosis | Class I, Level A | MAGNIMS Consensus 2021 |
-| CSF OCBs can substitute for dissemination in time | Class II, Level B | 2017 McDonald Criteria |
-| IV methylprednisolone 1g Ã— 3-5 days for acute attacks | Class I, Level A | AAN Practice Guideline 2022 |
-| PLEX for steroid-refractory attacks | Class II, Level B | Cochrane Review 2016 |
-| Cell-based assay (FACS) for NMO/MOG antibodies | Class I, Level B | Waters et al. 2014; Pittock et al. |
+| 2017 McDonald Criteria for MS diagnosis | Class I | [Thompson AJ et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/29275977/) |
+| MRI brain/spine with contrast for diagnosis | Class I, Level A | [MAGNIMS-CMSC-NAIMS Consensus 2021](https://pubmed.ncbi.nlm.nih.gov/34139157/) |
+| CSF OCBs can substitute for dissemination in time | Class II, Level B | [2017 McDonald Criteria](https://pubmed.ncbi.nlm.nih.gov/29275977/) |
+| IV methylprednisolone 1g × 3-5 days for acute attacks | Class I, Level A | [AAN Guideline Update 2011](https://pubmed.ncbi.nlm.nih.gov/21242498/); Clinical practice |
+| PLEX for steroid-refractory attacks | Class II, Level B | [AAN Plasmapheresis Guideline 2011](https://pubmed.ncbi.nlm.nih.gov/21242492/) |
+| Cell-based assay (FACS) for NMO/MOG antibodies | Class I, Level B | [Waters et al. 2016](https://pubmed.ncbi.nlm.nih.gov/27840658/); [Kitley et al. JAMA Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/24247355/) |
 | Vitamin D supplementation | Class II, Level B | Multiple observational studies; CHOLINE, SOLAR trials |
 | Smoking cessation reduces progression | Class II, Level B | Observational studies |
 | Early DMT initiation improves outcomes | Class I, Level A | Multiple RCTs, long-term extension studies |
-| Dalfampridine for walking impairment | Class I, Level A | Goodman et al. Lancet 2009 |
-| Exercise improves fatigue and function | Class I, Level B | Cochrane Review 2015 |
+| Dalfampridine for walking impairment | Class I, Level A | [Goodman et al. Lancet 2009](https://pubmed.ncbi.nlm.nih.gov/19249634/) |
+| Exercise improves fatigue and function | Class I, Level B | [Heine et al. Cochrane 2015](https://pubmed.ncbi.nlm.nih.gov/26358158/) |
 
 ---
 
 ## CHANGE LOG
+
+**v2.3 (January 20, 2026)**
+- Added ICU column to Section 4B (Patient Instructions) for format consistency
+- Added ICU column to Section 4C (Lifestyle & Prevention) for format consistency
+- ICU-relevant instructions marked where clinically appropriate (steroid education, infection reporting, smoking cessation)
+- Added PubMed hyperlinks to all verifiable citations in Section 8
+- Updated AAN steroid/PLEX guidelines to 2011 references (no 2022-specific acute attack guideline found)
+- Updated Waters citation to 2016 multicenter assay comparison study
 
 **v2.2 (January 13, 2026)**
 - Expanded Section 3D: each DMT now on individual row with complete dosing
