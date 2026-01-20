@@ -1,7 +1,7 @@
 ---
 title: New Onset Seizure
 description: Initial evaluation and management of first-time unprovoked seizure including diagnostic workup, acute treatment, and ASM initiation framework.
-version: "1.2"
+version: "1.3"
 setting: ED, HOSP, OPD
 status: draft
 tags:
@@ -20,7 +20,7 @@ tags:
 
 # New Onset Seizure
 
-**VERSION:** 1.2
+**VERSION:** 1.3
 **CREATED:** January 13, 2026
 **REVISED:** January 20, 2026
 **STATUS:** Draft - Pending Review
@@ -166,13 +166,13 @@ SECTION A: ACTION ITEMS
 | Thiamine IV | 100-500 mg IV BEFORE glucose if alcohol use suspected | None significant | None | STAT | STAT | — | STAT |
 | Supplemental oxygen | 2-4 L NC or non-rebreather as needed | None | O2 sat >94% | STAT | STAT | — | STAT |
 | IV fluids (isotonic) | NS or LR bolus if hypotensive; maintenance if euvolemic | Fluid overload, severe hyponatremia | I/O, BP, Na | STAT | STAT | — | STAT |
-| Flumazenil (rescue only) | 0.2 mg IV over 30 sec; may repeat 0.2 mg q1min to max 1 mg | Chronic benzodiazepine use; seizure history; tricyclic overdose | **CAUTION:** May lower seizure threshold and precipitate seizures; use only if severe respiratory depression unresponsive to supportive care | STAT | STAT | — | STAT |
 
 ### 3B. Anti-Seizure Medications (ASMs) - Acute Loading
 
 | Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Levetiracetam IV | First-line acute loading | 40-60 mg/kg IV (max 4500 mg) over 15 min; OR 1500-3000 mg IV | None significant; reduce dose if CrCl <50 | Somnolence, agitation (rare) | STAT | STAT | — | STAT |
+| Levetiracetam IV (weight-based) | First-line acute loading | 40-60 mg/kg IV (max 4500 mg) over 15 min | None significant; reduce dose if CrCl <50 | Somnolence, agitation (rare) | STAT | STAT | — | STAT |
+| Levetiracetam IV (fixed dose) | First-line acute loading | 1500-3000 mg IV over 15 min | None significant; reduce dose if CrCl <50 | Somnolence, agitation (rare) | STAT | STAT | — | STAT |
 | Levetiracetam PO | Acute loading if stable | 1500-3000 mg PO × 1, then start maintenance | Same | Same | URGENT | URGENT | URGENT | — |
 | Fosphenytoin IV | Alternative first-line | 20 mg PE/kg IV at 150 mg PE/min (max rate) | AV block, sinus bradycardia, pregnancy (relative) | Continuous cardiac monitoring, BP; purple glove syndrome rare with fosphenytoin | STAT | STAT | — | STAT |
 | Phenytoin IV | If fosphenytoin unavailable | 20 mg/kg IV at max 50 mg/min | AV block, sinus bradycardia, pregnancy | Cardiac monitor, BP; give via large vein (tissue necrosis risk) | STAT | STAT | — | STAT |
@@ -364,6 +364,10 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.3 (January 20, 2026)**
+- Split levetiracetam IV loading into two rows: weight-based (40-60 mg/kg) and fixed dose (1500-3000 mg) per V1
+- Removed flumazenil from Section 3A per physician decision (seizure threshold concern) per V2
 
 **v1.2 (January 20, 2026)**
 - Added ICU column to Section 4B (Patient Instructions) for format consistency per S1
