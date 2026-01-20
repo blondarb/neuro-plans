@@ -4,19 +4,50 @@ This repository contains clinical decision support templates for neurological di
 
 ## Automatic Workflow
 
-### Step 1: Check the Queue
+### Step 1: Pull Latest Changes (CRITICAL)
 
-Read `docs/drafts/queue.md` to find plans awaiting review. Look for plans with status `pending` or `in_progress`.
+**Before doing anything else**, pull the latest changes to see the current queue state:
 
-### Step 2: Claim a Plan
+```bash
+git checkout main
+git pull origin main
+```
 
-If a plan is `pending`, update its status to `in_progress` and add your session ID. This prevents other sessions from working on the same plan.
+### Step 2: Check the Queue
 
-### Step 3: Run the Skills Pipeline
+Read `docs/drafts/queue.md` to find the **first** plan with status `pending`. Skip any plans marked `in_progress`.
+
+### Step 3: Claim a Plan (ATOMIC - DO THIS IMMEDIATELY)
+
+**You MUST commit and push your claim BEFORE starting any work.** This prevents race conditions.
+
+```bash
+# 1. Create your working branch
+git checkout -b claude/review-<plan-name>-<session-id>
+
+# 2. Edit docs/drafts/queue.md:
+#    - Change your plan's status from "pending" to "in_progress"
+#    - Add your session ID to the Session column
+#    - Update the Last Updated date
+
+# 3. Commit and push IMMEDIATELY
+git add docs/drafts/queue.md
+git commit -m "Claim <plan-name> for review"
+git push -u origin claude/review-<plan-name>-<session-id>
+```
+
+**If push fails due to conflict:**
+1. Run `git pull origin main --rebase`
+2. Check queue.md again - your plan may have been claimed by another session
+3. If claimed, pick the next `pending` plan and repeat
+
+**Only proceed to Step 4 after your claim is pushed successfully.**
+
+### Step 4: Run the Skills Pipeline
 
 For each plan, execute these steps in order:
 
-#### 3a. Checker (Validation)
+#### 4a. Checker (Validation)
 1. Read `skills/neuro-checker-SKILL.md` for validation instructions
 2. Read the target plan from `docs/drafts/<plan>.md`
 3. Validate against the 6 quality domains (target: 90%+)
@@ -28,34 +59,34 @@ For each plan, execute these steps in order:
    - Recommended revisions (R-codes)
    - Verification items (V-codes)
 
-#### 3b. Review Findings
+#### 4b. Review Findings
 Present the checker report to the user. Ask which revisions to approve:
 - All revisions
 - Specific revisions (by code)
 - Modified revisions
 
-#### 3c. Rebuilder (Apply Fixes)
+#### 4c. Rebuilder (Apply Fixes)
 1. Read `skills/neuro-rebuilder-SKILL.md` for rebuilder instructions
 2. Apply approved revisions systematically
 3. Update version number and change log
 4. Save the updated plan
 
-#### 3d. Re-validate
+#### 4d. Re-validate
 Run the checker again to confirm improvements. Iterate until score >= 90%.
 
-#### 3e. Generate JSON
+#### 4e. Generate JSON
 ```bash
 python scripts/generate_json.py docs/drafts/<plan>.md --validate-only
 python scripts/generate_json.py docs/drafts/<plan>.md --merge
 ```
 
-### Step 4: Update Queue
+### Step 5: Update Queue
 
-Mark the plan as `completed` in `docs/drafts/queue.md`.
+Mark the plan as `completed` in `docs/drafts/queue.md`. Update the Final Score column.
 
-### Step 5: Commit and Push
+### Step 6: Commit and Push
 
-Commit all changes with a descriptive message and push to the branch.
+Commit all changes with a descriptive message and push to the branch. Create a PR to merge into main.
 
 ---
 
