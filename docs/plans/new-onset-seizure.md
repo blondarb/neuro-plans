@@ -1,7 +1,7 @@
 ---
 title: New Onset Seizure
 description: Initial evaluation and management of first-time unprovoked seizure including diagnostic workup, acute treatment, and ASM initiation framework.
-version: "1.2"
+version: "1.3"
 setting: ED, HOSP, OPD
 status: approved
 tags:
@@ -149,16 +149,16 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Lorazepam IV/IM (if actively seizing) | 0.1 mg/kg IV (max 4 mg); may repeat once in 5 min | Respiratory depression, severe hypotension | RR, O2 sat, BP; have airway equipment ready | STAT | STAT | — | STAT |
-| Midazolam IM (if no IV access) | 10 mg IM (if >40 kg) or 0.2 mg/kg IM | Respiratory depression | RR, O2 sat; have airway equipment ready | STAT | STAT | — | STAT |
-| Midazolam intranasal (if no IV access) | 5 mg per nostril (total 10 mg) | Respiratory depression | RR, O2 sat | STAT | STAT | — | STAT |
-| Dextrose 50% IV | 25-50 mL IV if hypoglycemia confirmed or suspected | Hyperglycemia | Glucose | STAT | STAT | — | STAT |
-| Thiamine IV | 100-500 mg IV BEFORE glucose if alcohol use suspected | None significant | None | STAT | STAT | — | STAT |
-| Supplemental oxygen | 2-4 L NC or non-rebreather as needed | None | O2 sat >94% | STAT | STAT | — | STAT |
-| IV fluids (isotonic) | NS or LR bolus if hypotensive; maintenance if euvolemic | Fluid overload, severe hyponatremia | I/O, BP, Na | STAT | STAT | — | STAT |
-| Flumazenil (rescue only) | 0.2 mg IV over 30 sec; may repeat 0.2 mg q1min to max 1 mg | Chronic benzodiazepine use; seizure history; tricyclic overdose | **CAUTION:** May lower seizure threshold and precipitate seizures; use only if severe respiratory depression unresponsive to supportive care | STAT | STAT | — | STAT |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Lorazepam IV/IM (if actively seizing) | Active seizure termination | 0.1 mg/kg IV (max 4 mg); may repeat once in 5 min | Respiratory depression, severe hypotension | RR, O2 sat, BP; have airway equipment ready | STAT | STAT | — | STAT |
+| Midazolam IM (if no IV access) | Active seizure termination | 10 mg IM (if >40 kg) or 0.2 mg/kg IM | Respiratory depression | RR, O2 sat; have airway equipment ready | STAT | STAT | — | STAT |
+| Midazolam intranasal (if no IV access) | Active seizure termination | 5 mg per nostril (total 10 mg) | Respiratory depression | RR, O2 sat | STAT | STAT | — | STAT |
+| Dextrose 50% IV | Hypoglycemic seizure | 25-50 mL IV if hypoglycemia confirmed or suspected | Hyperglycemia | Glucose | STAT | STAT | — | STAT |
+| Thiamine IV | Wernicke prevention | 100-500 mg IV BEFORE glucose if alcohol use suspected | None significant | None | STAT | STAT | — | STAT |
+| Supplemental oxygen | Hypoxia prevention | 2-4 L NC or non-rebreather as needed | None | O2 sat >94% | STAT | STAT | — | STAT |
+| IV fluids (isotonic) | Volume resuscitation | NS or LR bolus if hypotensive; maintenance if euvolemic | Fluid overload, severe hyponatremia | I/O, BP, Na | STAT | STAT | — | STAT |
+| Flumazenil (rescue only) | Benzodiazepine reversal | 0.2 mg IV over 30 sec; may repeat 0.2 mg q1min to max 1 mg | Chronic benzodiazepine use; seizure history; tricyclic overdose | **CAUTION:** May lower seizure threshold and precipitate seizures; use only if severe respiratory depression unresponsive to supportive care | STAT | STAT | — | STAT |
 
 ### 3B. Anti-Seizure Medications (ASMs) - Acute Loading
 
@@ -205,12 +205,12 @@ SECTION A: ACTION ITEMS
 
 ### 3E. Second-line/Refractory
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Add second ASM | Choose complementary mechanism; see maintenance options | Per specific agent | Per specific agent | — | ROUTINE | ROUTINE | ROUTINE |
-| Epilepsy surgery evaluation referral | For drug-resistant epilepsy (failed 2+ appropriately chosen ASMs) | N/A | N/A | — | EXT | EXT | — |
-| Vagus nerve stimulator (VNS) | For drug-resistant epilepsy not surgical candidates | N/A | Device checks | — | — | EXT | — |
-| Dietary therapy (ketogenic diet, modified Atkins) | For drug-resistant epilepsy | Fatty acid oxidation disorders; pyruvate carboxylase deficiency | Metabolic panels; lipids; kidney function | — | — | EXT | — |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Add second ASM | Breakthrough seizures on monotherapy | Choose complementary mechanism; see maintenance options | Per specific agent | Per specific agent | — | ROUTINE | ROUTINE | ROUTINE |
+| Epilepsy surgery evaluation referral | Drug-resistant epilepsy | For drug-resistant epilepsy (failed 2+ appropriately chosen ASMs) | N/A | N/A | — | EXT | EXT | — |
+| Vagus nerve stimulator (VNS) | Drug-resistant, non-surgical candidate | For drug-resistant epilepsy not surgical candidates | N/A | Device checks | — | — | EXT | — |
+| Dietary therapy (ketogenic diet, modified Atkins) | Drug-resistant epilepsy | For drug-resistant epilepsy | Fatty acid oxidation disorders; pyruvate carboxylase deficiency | Metabolic panels; lipids; kidney function | — | — | EXT | — |
 
 ---
 
@@ -361,6 +361,9 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.3 (January 21, 2026)**
+- Added Indication column to Sections 3A and 3E treatment tables for clinical tool icon display
 
 **v1.2 (January 20, 2026)**
 - Added lactate to Section 1A core labs (elevated post-ictal confirms recent seizure) per R4

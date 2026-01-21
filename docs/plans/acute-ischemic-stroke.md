@@ -1,7 +1,7 @@
 ---
 title: Acute Ischemic Stroke
 description: Emergency management of acute ischemic stroke including thrombolysis, thrombectomy evaluation, secondary prevention, and etiologic workup.
-version: "1.2"
+version: "1.3"
 setting: ED, HOSP, OPD, ICU
 status: approved
 tags:
@@ -145,15 +145,15 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent (Hyperacute Phase)
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Alteplase (tPA) IV | 0.9 mg/kg IV (max 90 mg); 10% as bolus over 1 min, remainder over 60 min; within 4.5 hours of symptom onset | See Appendix A for complete exclusion criteria; major: ICH, recent surgery, BP >185/110 despite treatment, INR >1.7, platelets <100K | Neuro checks q15min x 2h, then q30min x 6h, then q1h x 16h; BP q15min x 2h, then q30min x 6h; hold antiplatelets/anticoagulants 24h; CT head before anticoagulation | STAT | STAT | - | STAT |
-| Tenecteplase IV | 0.25 mg/kg IV bolus (max 25 mg); single bolus (no infusion); within 4.5 hours of symptom onset | Same as alteplase | Same as alteplase | STAT | STAT | - | STAT |
-| Blood pressure management (pre-thrombolysis) - Labetalol | 10-20 mg IV over 1-2 min; may repeat or double q10min; max 300 mg | Asthma, severe bradycardia, decompensated HF, 2nd/3rd degree heart block | Continuous BP; target BP <185/110 for tPA eligibility | STAT | STAT | - | STAT |
-| Blood pressure management (pre-thrombolysis) - Nicardipine | Start 5 mg/hr IV; increase by 2.5 mg/hr q5-15min; max 15 mg/hr | None significant | Continuous BP; target <185/110 | STAT | STAT | - | STAT |
-| Blood pressure management (pre-thrombolysis) - Clevidipine | Start 1-2 mg/hr IV; titrate by doubling q90sec initially; max 32 mg/hr | Soy/egg allergy, severe aortic stenosis, lipid disorders | Continuous BP; rapid onset; short half-life | STAT | STAT | - | STAT |
-| Blood pressure management (post-tPA) | Same agents as above | Same | Maintain BP <180/105 for 24 hours post-tPA | STAT | STAT | - | STAT |
-| Mechanical thrombectomy | Endovascular clot retrieval; within 6 hours for anterior LVO; up to 24 hours with favorable perfusion imaging | Large completed infarct (ASPECTS <6), poor baseline function (mRS >2), no LVO | Post-procedure: BP per protocol, groin site checks, neuro checks q1h | STAT | STAT | - | STAT |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Alteplase (tPA) IV | Acute ischemic stroke reperfusion | 0.9 mg/kg IV (max 90 mg); 10% as bolus over 1 min, remainder over 60 min; within 4.5 hours of symptom onset | See Appendix A for complete exclusion criteria; major: ICH, recent surgery, BP >185/110 despite treatment, INR >1.7, platelets <100K | Neuro checks q15min x 2h, then q30min x 6h, then q1h x 16h; BP q15min x 2h, then q30min x 6h; hold antiplatelets/anticoagulants 24h; CT head before anticoagulation | STAT | STAT | - | STAT |
+| Tenecteplase IV | Acute ischemic stroke reperfusion (alternative to tPA) | 0.25 mg/kg IV bolus (max 25 mg); single bolus (no infusion); within 4.5 hours of symptom onset | Same as alteplase | Same as alteplase | STAT | STAT | - | STAT |
+| Blood pressure management (pre-thrombolysis) - Labetalol | BP control for tPA eligibility | 10-20 mg IV over 1-2 min; may repeat or double q10min; max 300 mg | Asthma, severe bradycardia, decompensated HF, 2nd/3rd degree heart block | Continuous BP; target BP <185/110 for tPA eligibility | STAT | STAT | - | STAT |
+| Blood pressure management (pre-thrombolysis) - Nicardipine | BP control for tPA eligibility | Start 5 mg/hr IV; increase by 2.5 mg/hr q5-15min; max 15 mg/hr | None significant | Continuous BP; target <185/110 | STAT | STAT | - | STAT |
+| Blood pressure management (pre-thrombolysis) - Clevidipine | BP control for tPA eligibility | Start 1-2 mg/hr IV; titrate by doubling q90sec initially; max 32 mg/hr | Soy/egg allergy, severe aortic stenosis, lipid disorders | Continuous BP; rapid onset; short half-life | STAT | STAT | - | STAT |
+| Blood pressure management (post-tPA) | Prevent hemorrhagic transformation | Same agents as above | Same | Maintain BP <180/105 for 24 hours post-tPA | STAT | STAT | - | STAT |
+| Mechanical thrombectomy | Large vessel occlusion (LVO) | Endovascular clot retrieval; within 6 hours for anterior LVO; up to 24 hours with favorable perfusion imaging | Large completed infarct (ASPECTS <6), poor baseline function (mRS >2), no LVO | Post-procedure: BP per protocol, groin site checks, neuro checks q1h | STAT | STAT | - | STAT |
 
 ### 3B. Acute Supportive Care
 
@@ -347,6 +347,9 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.3 (January 21, 2026)**
+- Added Indication column to Section 3A treatment table for clinical tool icon display
 
 **v1.2 (January 21, 2026)**
 - Complete citation verification: Fixed 4 additional hallucinated PMIDs

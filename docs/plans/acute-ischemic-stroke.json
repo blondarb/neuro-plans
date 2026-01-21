@@ -1,7 +1,7 @@
 {
   "id": "acute-ischemic-stroke",
   "title": "Acute Ischemic Stroke",
-  "version": "1.2",
+  "version": "1.3",
   "icd10": [
     "** I63.9 (Cerebral infarction",
     "unspecified)",
@@ -290,6 +290,64 @@
           "OPD": "EXT",
           "ICU": "-"
         }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "rationale": "Rule out elevated ICP",
+          "target": "10-20 cm H2O"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "rationale": "Vasculitis, infection",
+          "target": "WBC <5, RBC 0"
+        },
+        {
+          "item": "Protein",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "rationale": "Inflammation",
+          "target": "Normal 15-45 mg/dL"
+        },
+        {
+          "item": "Glucose with serum glucose",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "rationale": "Infection",
+          "target": "Normal (>60% serum)"
+        },
+        {
+          "item": "Gram stain and culture",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "rationale": "Bacterial meningitis",
+          "target": "No organisms"
+        },
+        {
+          "item": "VDRL (CSF)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "rationale": "Neurosyphilis",
+          "target": "Negative"
+        },
+        {
+          "item": "Cytology",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "rationale": "Malignancy",
+          "target": "Negative"
+        }
       ]
     },
     "Imaging & Studies": {
@@ -470,70 +528,11 @@
         }
       ]
     },
-    "Lumbar Puncture": {
-      "Studies": [
-        {
-          "item": "Opening pressure",
-          "ED": "-",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "rationale": "Rule out elevated ICP",
-          "target": "10-20 cm H2O"
-        },
-        {
-          "item": "Cell count (tubes 1 and 4)",
-          "ED": "-",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "rationale": "Vasculitis, infection",
-          "target": "WBC <5, RBC 0"
-        },
-        {
-          "item": "Protein",
-          "ED": "-",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "rationale": "Inflammation",
-          "target": "Normal 15-45 mg/dL"
-        },
-        {
-          "item": "Glucose with serum glucose",
-          "ED": "-",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "rationale": "Infection",
-          "target": "Normal (>60% serum)"
-        },
-        {
-          "item": "Gram stain and culture",
-          "ED": "-",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "rationale": "Bacterial meningitis",
-          "target": "No organisms"
-        },
-        {
-          "item": "VDRL (CSF)",
-          "ED": "-",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "rationale": "Neurosyphilis",
-          "target": "Negative"
-        },
-        {
-          "item": "Cytology",
-          "ED": "-",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "rationale": "Malignancy",
-          "target": "Negative"
-        }
-      ]
-    },
     "Treatment": {
       "Acute/Emergent (Hyperacute Phase)": [
         {
           "item": "Alteplase (tPA) IV",
+          "indication": "Acute ischemic stroke reperfusion",
           "dosing": "0.9 mg/kg IV (max 90 mg); 10% as bolus over 1 min, remainder over 60 min; within 4.5 hours of symptom onset",
           "contraindications": "See Appendix A for complete exclusion criteria; major: ICH, recent surgery, BP >185/110 despite treatment, INR >1.7, platelets <100K",
           "monitoring": "Neuro checks q15min x 2h, then q30min x 6h, then q1h x 16h; BP q15min x 2h, then q30min x 6h; hold antiplatelets/anticoagulants 24h; CT head before anticoagulation",
@@ -544,6 +543,7 @@
         },
         {
           "item": "Tenecteplase IV",
+          "indication": "Acute ischemic stroke reperfusion (alternative to tPA)",
           "dosing": "0.25 mg/kg IV bolus (max 25 mg); single bolus (no infusion); within 4.5 hours of symptom onset",
           "contraindications": "Same as alteplase",
           "monitoring": "Same as alteplase",
@@ -554,6 +554,7 @@
         },
         {
           "item": "Blood pressure management (pre-thrombolysis) - Labetalol",
+          "indication": "BP control for tPA eligibility",
           "dosing": "10-20 mg IV over 1-2 min; may repeat or double q10min; max 300 mg",
           "contraindications": "Asthma, severe bradycardia, decompensated HF, 2nd/3rd degree heart block",
           "monitoring": "Continuous BP; target BP <185/110 for tPA eligibility",
@@ -564,6 +565,7 @@
         },
         {
           "item": "Blood pressure management (pre-thrombolysis) - Nicardipine",
+          "indication": "BP control for tPA eligibility",
           "dosing": "Start 5 mg/hr IV; increase by 2.5 mg/hr q5-15min; max 15 mg/hr",
           "contraindications": "None significant",
           "monitoring": "Continuous BP; target <185/110",
@@ -574,6 +576,7 @@
         },
         {
           "item": "Blood pressure management (pre-thrombolysis) - Clevidipine",
+          "indication": "BP control for tPA eligibility",
           "dosing": "Start 1-2 mg/hr IV; titrate by doubling q90sec initially; max 32 mg/hr",
           "contraindications": "Soy/egg allergy, severe aortic stenosis, lipid disorders",
           "monitoring": "Continuous BP; rapid onset; short half-life",
@@ -584,6 +587,7 @@
         },
         {
           "item": "Blood pressure management (post-tPA)",
+          "indication": "Prevent hemorrhagic transformation",
           "dosing": "Same agents as above",
           "contraindications": "Same",
           "monitoring": "Maintain BP <180/105 for 24 hours post-tPA",
@@ -594,6 +598,7 @@
         },
         {
           "item": "Mechanical thrombectomy",
+          "indication": "Large vessel occlusion (LVO)",
           "dosing": "Endovascular clot retrieval; within 6 hours for anterior LVO; up to 24 hours with favorable perfusion imaging",
           "contraindications": "Large completed infarct (ASPECTS <6), poor baseline function (mRS >2), no LVO",
           "monitoring": "Post-procedure: BP per protocol, groin site checks, neuro checks q1h",

@@ -1,7 +1,7 @@
 ---
 title: Status Epilepticus
 description: Management of convulsive and non-convulsive status epilepticus including staged treatment protocol, NORSE/FIRES immunotherapy, and rapid protocol for non-specialists.
-version: "1.4"
+version: "1.5"
 setting: ED, HOSP, ICU
 status: approved
 tags:
@@ -179,27 +179,27 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Stabilization (Time 0)
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Airway positioning/management | Head-tilt chin-lift, oral airway, prepare for intubation | None | O2 sat, airway patency | STAT | STAT | — | STAT |
-| Supplemental oxygen | Non-rebreather 15 L/min or bag-valve-mask | None | O2 sat >94% | STAT | STAT | — | STAT |
-| IV access (two large-bore) | 18G or larger x2 | None | IV patency | STAT | STAT | — | STAT |
-| Cardiac monitoring | Continuous telemetry | None | Rhythm, HR, BP | STAT | STAT | — | STAT |
-| Dextrose 50% IV | 50 mL IV push (25g) if glucose <70 or unknown | Document hyperglycemia | Glucose | STAT | STAT | — | STAT |
-| Thiamine IV | 100-500 mg IV BEFORE or WITH glucose | None | None | STAT | STAT | — | STAT |
-| Isotonic fluids | NS or LR wide open initially | Pulmonary edema | BP, I/O | STAT | STAT | — | STAT |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Airway positioning/management | Airway protection | Head-tilt chin-lift, oral airway, prepare for intubation | None | O2 sat, airway patency | STAT | STAT | — | STAT |
+| Supplemental oxygen | Hypoxia prevention | Non-rebreather 15 L/min or bag-valve-mask | None | O2 sat >94% | STAT | STAT | — | STAT |
+| IV access (two large-bore) | Medication delivery | 18G or larger x2 | None | IV patency | STAT | STAT | — | STAT |
+| Cardiac monitoring | Arrhythmia detection | Continuous telemetry | None | Rhythm, HR, BP | STAT | STAT | — | STAT |
+| Dextrose 50% IV | Hypoglycemic seizure | 50 mL IV push (25g) if glucose <70 or unknown | Document hyperglycemia | Glucose | STAT | STAT | — | STAT |
+| Thiamine IV | Wernicke prevention | 100-500 mg IV BEFORE or WITH glucose | None | None | STAT | STAT | — | STAT |
+| Isotonic fluids | Volume resuscitation | NS or LR wide open initially | Pulmonary edema | BP, I/O | STAT | STAT | — | STAT |
 
 ### 3B. Emergent/First-Line - Benzodiazepines (Time 0-5 min)
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Lorazepam IV | 0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min if still seizing; total max 8 mg | Acute narrow-angle glaucoma | RR, O2 sat, BP, sedation; airway equipment ready | STAT | STAT | — | STAT |
-| Midazolam IM | 10 mg IM (≥40 kg) or 0.2 mg/kg IM (if no IV access); single dose | Respiratory compromise | RR, O2 sat; prepare IV access | STAT | STAT | — | STAT |
-| Midazolam IV | 0.2 mg/kg IV (max 10 mg); may repeat x1 | Same as lorazepam | RR, O2 sat, BP | STAT | STAT | — | STAT |
-| Midazolam intranasal | 5 mg per nostril (10 mg total) if no IV/IM access | Nasal obstruction | RR, O2 sat | STAT | STAT | — | STAT |
-| Midazolam buccal | 10 mg buccal (if available) | Oral trauma | RR, O2 sat | STAT | STAT | — | STAT |
-| Diazepam IV | 0.15 mg/kg IV (max 10 mg); may repeat x1 in 5 min | Acute narrow-angle glaucoma | RR, O2 sat; short duration - requires follow-up ASM | STAT | STAT | — | STAT |
-| Diazepam rectal | 0.2-0.5 mg/kg PR (max 20 mg); use rectal gel formulation | Rectal pathology | RR, O2 sat | STAT | STAT | — | STAT |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Lorazepam IV | Seizure termination (preferred IV) | 0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min if still seizing; total max 8 mg | Acute narrow-angle glaucoma | RR, O2 sat, BP, sedation; airway equipment ready | STAT | STAT | — | STAT |
+| Midazolam IM | Seizure termination (no IV access) | 10 mg IM (≥40 kg) or 0.2 mg/kg IM (if no IV access); single dose | Respiratory compromise | RR, O2 sat; prepare IV access | STAT | STAT | — | STAT |
+| Midazolam IV | Seizure termination (alternative) | 0.2 mg/kg IV (max 10 mg); may repeat x1 | Same as lorazepam | RR, O2 sat, BP | STAT | STAT | — | STAT |
+| Midazolam intranasal | Seizure termination (no IV/IM) | 5 mg per nostril (10 mg total) if no IV/IM access | Nasal obstruction | RR, O2 sat | STAT | STAT | — | STAT |
+| Midazolam buccal | Seizure termination (prehospital) | 10 mg buccal (if available) | Oral trauma | RR, O2 sat | STAT | STAT | — | STAT |
+| Diazepam IV | Seizure termination (short-acting) | 0.15 mg/kg IV (max 10 mg); may repeat x1 in 5 min | Acute narrow-angle glaucoma | RR, O2 sat; short duration - requires follow-up ASM | STAT | STAT | — | STAT |
+| Diazepam rectal | Seizure termination (home/EMS) | 0.2-0.5 mg/kg PR (max 20 mg); use rectal gel formulation | Rectal pathology | RR, O2 sat | STAT | STAT | — | STAT |
 
 **NOTE:** If seizure continues after 2 adequate doses of benzodiazepine, immediately proceed to second-line agent. Do NOT give additional benzodiazepines.
 
@@ -207,16 +207,16 @@ SECTION A: ACTION ITEMS
 
 **DOSING NOTE:** Levetiracetam dosing options reflect evolving evidence. ESETT trial used 60 mg/kg; some institutions use 40 mg/kg. Both are acceptable.
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Levetiracetam IV (ESETT dosing) | 60 mg/kg IV (max 4500 mg) over 10-15 min | None absolute; reduce if CrCl <50 | Generally well tolerated; agitation | STAT | STAT | — | STAT |
-| Levetiracetam IV (conservative) | 40 mg/kg IV (max 4500 mg) over 10-15 min | None absolute; reduce if CrCl <50 | Generally well tolerated; agitation | STAT | STAT | — | STAT |
-| Fosphenytoin IV | 20 mg PE/kg IV at 150 mg PE/min; may give additional 5-10 mg PE/kg if needed | 2nd/3rd degree AV block, sinus bradycardia, allergy | Continuous cardiac monitor, BP q5min during infusion | STAT | STAT | — | STAT |
-| Valproate IV | 40 mg/kg IV (max 3000 mg) over 10 min | Pregnancy, hepatic disease, mitochondrial disease, urea cycle disorders, pancreatitis | Ammonia, LFTs; avoid in unknown pregnancy status | STAT | STAT | — | STAT |
-| Lacosamide IV | 400 mg IV over 15 min (can give 200 mg over 5 min if urgent) | PR >200 ms, 2nd/3rd degree AV block, severe hepatic impairment | ECG for PR interval | STAT | STAT | — | STAT |
-| Brivaracetam IV | 100-200 mg IV over 2-5 min; no titration needed | Hepatic impairment (reduce dose) | Faster onset than levetiracetam; fewer behavioral effects | STAT | STAT | — | STAT |
-| Phenytoin IV | 20 mg/kg IV at max 50 mg/min (if fosphenytoin unavailable) | AV block, sinus bradycardia | Cardiac monitor; MUST use large vein, tissue necrosis risk | STAT | STAT | — | STAT |
-| Phenobarbital IV | 15-20 mg/kg IV at 50-100 mg/min | Severe respiratory disease, porphyria | Respiratory depression; often requires intubation at this dose | STAT | STAT | — | STAT |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Levetiracetam IV (ESETT dosing) | SE not responding to BZD | 60 mg/kg IV (max 4500 mg) over 10-15 min | None absolute; reduce if CrCl <50 | Generally well tolerated; agitation | STAT | STAT | — | STAT |
+| Levetiracetam IV (conservative) | SE not responding to BZD | 40 mg/kg IV (max 4500 mg) over 10-15 min | None absolute; reduce if CrCl <50 | Generally well tolerated; agitation | STAT | STAT | — | STAT |
+| Fosphenytoin IV | SE not responding to BZD | 20 mg PE/kg IV at 150 mg PE/min; may give additional 5-10 mg PE/kg if needed | 2nd/3rd degree AV block, sinus bradycardia, allergy | Continuous cardiac monitor, BP q5min during infusion | STAT | STAT | — | STAT |
+| Valproate IV | SE not responding to BZD | 40 mg/kg IV (max 3000 mg) over 10 min | Pregnancy, hepatic disease, mitochondrial disease, urea cycle disorders, pancreatitis | Ammonia, LFTs; avoid in unknown pregnancy status | STAT | STAT | — | STAT |
+| Lacosamide IV | SE not responding to BZD | 400 mg IV over 15 min (can give 200 mg over 5 min if urgent) | PR >200 ms, 2nd/3rd degree AV block, severe hepatic impairment | ECG for PR interval | STAT | STAT | — | STAT |
+| Brivaracetam IV | SE not responding to BZD (fast onset) | 100-200 mg IV over 2-5 min; no titration needed | Hepatic impairment (reduce dose) | Faster onset than levetiracetam; fewer behavioral effects | STAT | STAT | — | STAT |
+| Phenytoin IV | SE not responding to BZD (no fosphenytoin) | 20 mg/kg IV at max 50 mg/min (if fosphenytoin unavailable) | AV block, sinus bradycardia | Cardiac monitor; MUST use large vein, tissue necrosis risk | STAT | STAT | — | STAT |
+| Phenobarbital IV | SE not responding to BZD | 15-20 mg/kg IV at 50-100 mg/min | Severe respiratory disease, porphyria | Respiratory depression; often requires intubation at this dose | STAT | STAT | — | STAT |
 
 **NOTES:**
 - Choose ONE second-line agent initially
@@ -234,13 +234,13 @@ SECTION A: ACTION ITEMS
 
 **KETAMINE TIMING NOTE:** Emerging evidence supports earlier ketamine use. Ketamine is twice as effective when given early in RSE (64% efficacy) vs late/SRSE (32% efficacy). Consider ketamine as first-line anesthetic OR as adjunct to midazolam from the start of RSE. Earlier administration correlates with better outcomes.
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Midazolam infusion | Load: 0.2 mg/kg IV bolus; Infusion: start 0.1 mg/kg/hr, titrate by 0.1 mg/kg/hr q15min to seizure suppression; max 2 mg/kg/hr; target burst suppression on cEEG | Hemodynamic instability (relative) | cEEG, BP (hypotension common), sedation scale | URGENT | — | — | STAT |
-| Propofol infusion | Load: 1-2 mg/kg IV bolus (may repeat x1); Infusion: start 20 mcg/kg/min, titrate by 10 mcg/kg/min q5min; max 200 mcg/kg/min; target burst suppression | Propofol infusion syndrome risk (limit to <48h at high dose), egg/soy allergy, pregnancy | cEEG, triglycerides q24-48h, CPK, metabolic acidosis, BP | — | — | — | STAT |
-| Ketamine infusion | Load: 1-2 mg/kg IV bolus; Infusion: start 1 mg/kg/hr, titrate by 0.5 mg/kg/hr q15-30min; max 5 mg/kg/hr | Uncontrolled hypertension, elevated ICP (relative - actually may be neuroprotective) | cEEG, BP (may increase), HR; less hypotension than other anesthetics | URGENT | — | — | STAT |
-| Ketamine + Midazolam (combination) | Ketamine load 1 mg/kg + Midazolam load 0.2 mg/kg; then dual infusions per above | Per individual agents | 2024 data: combination may reduce SE duration faster than midazolam alone | — | — | — | STAT |
-| Pentobarbital infusion | Load: 5-15 mg/kg IV at 50 mg/min; Infusion: start 0.5-1 mg/kg/hr, titrate to burst suppression; max 5 mg/kg/hr | Severe cardiac dysfunction | cEEG, BP (significant hypotension - need pressors), cardiac output; longest half-life | — | — | — | STAT |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Midazolam infusion | RSE (first-line anesthetic) | Load: 0.2 mg/kg IV bolus; Infusion: start 0.1 mg/kg/hr, titrate by 0.1 mg/kg/hr q15min to seizure suppression; max 2 mg/kg/hr; target burst suppression on cEEG | Hemodynamic instability (relative) | cEEG, BP (hypotension common), sedation scale | URGENT | — | — | STAT |
+| Propofol infusion | RSE (rapid onset) | Load: 1-2 mg/kg IV bolus (may repeat x1); Infusion: start 20 mcg/kg/min, titrate by 10 mcg/kg/min q5min; max 200 mcg/kg/min; target burst suppression | Propofol infusion syndrome risk (limit to <48h at high dose), egg/soy allergy, pregnancy | cEEG, triglycerides q24-48h, CPK, metabolic acidosis, BP | — | — | — | STAT |
+| Ketamine infusion | RSE (NMDA antagonism, less hypotension) | Load: 1-2 mg/kg IV bolus; Infusion: start 1 mg/kg/hr, titrate by 0.5 mg/kg/hr q15-30min; max 5 mg/kg/hr | Uncontrolled hypertension, elevated ICP (relative - actually may be neuroprotective) | cEEG, BP (may increase), HR; less hypotension than other anesthetics | URGENT | — | — | STAT |
+| Ketamine + Midazolam (combination) | RSE (synergistic mechanisms) | Ketamine load 1 mg/kg + Midazolam load 0.2 mg/kg; then dual infusions per above | Per individual agents | 2024 data: combination may reduce SE duration faster than midazolam alone | — | — | — | STAT |
+| Pentobarbital infusion | SRSE (most potent) | Load: 5-15 mg/kg IV at 50 mg/min; Infusion: start 0.5-1 mg/kg/hr, titrate to burst suppression; max 5 mg/kg/hr | Severe cardiac dysfunction | cEEG, BP (significant hypotension - need pressors), cardiac output; longest half-life | — | — | — | STAT |
 
 **NOTES:**
 - Midazolam or propofol typically first choice; **consider ketamine early or in combination**
@@ -253,18 +253,18 @@ SECTION A: ACTION ITEMS
 
 **DEFINITION:** SE continues or recurs ≥24 hours after anesthetic initiation
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Add second anesthetic | Combine midazolam + propofol, or add ketamine to either | Per agent | cEEG, hemodynamics | — | — | — | STAT |
-| Topiramate (enteral) | Load 300-400 mg via NGT; then 200-400 mg BID; max 1600 mg/day | Metabolic acidosis, kidney stones | Bicarbonate, renal function | — | — | — | URGENT |
-| Lacosamide (if not tried) | 400 mg IV, then 200-400 mg BID | PR prolongation | ECG | — | — | — | URGENT |
-| Perampanel (enteral) | 4-8 mg via NGT daily; titrate to 12 mg daily | None absolute | Aggression, sedation | — | — | — | ROUTINE |
-| Magnesium sulfate infusion | 4-6 g IV over 20 min, then 1-2 g/hr infusion; target Mg 3.5-4 mg/dL | Renal failure (relative), myasthenia | Mg levels, reflexes, respiratory status | — | — | — | URGENT |
-| Pyridoxine (empiric trial) | 100-500 mg IV; may try single dose empirically | None | Response to treatment | — | — | — | URGENT |
-| Ketogenic diet | Initiate within 7 days per NORSE consensus; requires nutrition support | Pyruvate carboxylase deficiency, fatty acid oxidation disorders | Ketones, glucose, lipids | — | — | — | URGENT |
-| Hypothermia (32-35°C) | Targeted temperature management x 24-48h | Coagulopathy, severe infection | Temperature, coagulation, infection | — | — | — | EXT |
-| Electroconvulsive therapy | If all else fails; requires anesthesia | Raised ICP, recent stroke | Per ECT protocol | — | — | — | EXT |
-| Epilepsy surgery (emergent) | Resection if focal lesion identified | Eloquent cortex, multifocal | Per surgical team | — | — | — | EXT |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Add second anesthetic | SRSE (augment suppression) | Combine midazolam + propofol, or add ketamine to either | Per agent | cEEG, hemodynamics | — | — | — | STAT |
+| Topiramate (enteral) | SRSE adjunct | Load 300-400 mg via NGT; then 200-400 mg BID; max 1600 mg/day | Metabolic acidosis, kidney stones | Bicarbonate, renal function | — | — | — | URGENT |
+| Lacosamide (if not tried) | SRSE adjunct | 400 mg IV, then 200-400 mg BID | PR prolongation | ECG | — | — | — | URGENT |
+| Perampanel (enteral) | SRSE adjunct (AMPA antagonist) | 4-8 mg via NGT daily; titrate to 12 mg daily | None absolute | Aggression, sedation | — | — | — | ROUTINE |
+| Magnesium sulfate infusion | SRSE adjunct, neuroprotection | 4-6 g IV over 20 min, then 1-2 g/hr infusion; target Mg 3.5-4 mg/dL | Renal failure (relative), myasthenia | Mg levels, reflexes, respiratory status | — | — | — | URGENT |
+| Pyridoxine (empiric trial) | Pyridoxine-dependent seizures | 100-500 mg IV; may try single dose empirically | None | Response to treatment | — | — | — | URGENT |
+| Ketogenic diet | SRSE/FIRES (anti-inflammatory) | Initiate within 7 days per NORSE consensus; requires nutrition support | Pyruvate carboxylase deficiency, fatty acid oxidation disorders | Ketones, glucose, lipids | — | — | — | URGENT |
+| Hypothermia (32-35°C) | SRSE salvage therapy | Targeted temperature management x 24-48h | Coagulopathy, severe infection | Temperature, coagulation, infection | — | — | — | EXT |
+| Electroconvulsive therapy | SRSE salvage therapy | If all else fails; requires anesthesia | Raised ICP, recent stroke | Per ECT protocol | — | — | — | EXT |
+| Epilepsy surgery (emergent) | Focal lesional SRSE | Resection if focal lesion identified | Eloquent cortex, multifocal | Per surgical team | — | — | — | EXT |
 
 ### 3F. NORSE/FIRES Immunotherapy Protocol
 
@@ -283,11 +283,11 @@ SECTION A: ACTION ITEMS
 
 #### First-Line Immunotherapy (Start within 72 hours)
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Methylprednisolone IV | 1000 mg IV daily × 3-5 days | Active untreated infection (relative) | Glucose q6h, BP, GI prophylaxis, infection signs | — | URGENT | — | STAT |
-| IVIG | 0.4 g/kg/day IV × 5 days (total 2 g/kg); can give simultaneously with steroids | IgA deficiency (use IgA-depleted product), renal failure, thrombosis risk | Renal function, signs of aseptic meningitis, thrombosis | — | URGENT | — | STAT |
-| Plasmapheresis (PLEX) | 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange | Hemodynamic instability, line access issues | Hemodynamics, electrolytes (Ca, Mg), coagulation, fibrinogen | — | ROUTINE | — | STAT |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Methylprednisolone IV | NORSE/FIRES first-line | 1000 mg IV daily × 3-5 days | Active untreated infection (relative) | Glucose q6h, BP, GI prophylaxis, infection signs | — | URGENT | — | STAT |
+| IVIG | NORSE/FIRES first-line | 0.4 g/kg/day IV × 5 days (total 2 g/kg); can give simultaneously with steroids | IgA deficiency (use IgA-depleted product), renal failure, thrombosis risk | Renal function, signs of aseptic meningitis, thrombosis | — | URGENT | — | STAT |
+| Plasmapheresis (PLEX) | NORSE/FIRES first-line | 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange | Hemodynamic instability, line access issues | Hemodynamics, electrolytes (Ca, Mg), coagulation, fibrinogen | — | ROUTINE | — | STAT |
 
 **NOTES:**
 - Steroids preferred as initial agent; can combine with IVIG from start
@@ -296,12 +296,12 @@ SECTION A: ACTION ITEMS
 
 #### Second-Line Immunotherapy (If first-line fails by Day 7)
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Rituximab | 375 mg/m² IV weekly × 4 doses | Active infection, hepatitis B (screen first) | Infusion reactions, infection, B-cell counts | — | — | — | ROUTINE |
-| Cyclophosphamide | 750-1000 mg/m² IV monthly × 3-6 months | Severe cytopenias, active infection | CBC weekly, renal function, hemorrhagic cystitis (hydration + mesna) | — | — | — | ROUTINE |
-| Tocilizumab | 8 mg/kg IV q4 weeks (emerging option) | Active infection, hepatic impairment | LFTs, lipids, infection | — | — | — | EXT |
-| Anakinra | 100 mg SC daily (may increase; used in FIRES) | Active infection | Injection site reactions, infection | — | — | — | EXT |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Rituximab | NORSE/FIRES second-line | 375 mg/m² IV weekly × 4 doses | Active infection, hepatitis B (screen first) | Infusion reactions, infection, B-cell counts | — | — | — | ROUTINE |
+| Cyclophosphamide | NORSE/FIRES second-line | 750-1000 mg/m² IV monthly × 3-6 months | Severe cytopenias, active infection | CBC weekly, renal function, hemorrhagic cystitis (hydration + mesna) | — | — | — | ROUTINE |
+| Tocilizumab | NORSE/FIRES second-line | 8 mg/kg IV q4 weeks (emerging option) | Active infection, hepatic impairment | LFTs, lipids, infection | — | — | — | EXT |
+| Anakinra | NORSE/FIRES second-line | 100 mg SC daily (may increase; used in FIRES) | Active infection | Injection site reactions, infection | — | — | — | EXT |
 
 ### 3G. Symptomatic/Supportive ICU Care
 
@@ -528,6 +528,9 @@ DAY 7+: ONGOING MANAGEMENT
 ---
 
 ## CHANGE LOG
+
+**v1.5 (January 21, 2026)**
+- Added Indication column to Sections 3A-3F treatment tables for clinical tool icon display
 
 **v1.4 (January 19, 2026)**
 - Moved Appendix C (Rapid Protocol) to bottom of document per standardized template format
