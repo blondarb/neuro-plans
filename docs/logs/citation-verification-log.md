@@ -15,13 +15,13 @@ This log tracks citation verification results to identify patterns and improve t
 |--------|-------|
 | Total Plans Audited | 2 |
 | Total Citations Checked | 29 |
-| Verified Correct | 22 |
-| Hallucinated PMIDs Found | 6 |
-| Corrections Applied | 6 |
+| Verified Correct | 19 |
+| Hallucinated PMIDs Found | 10 |
+| Corrections Applied | 10 |
 
-**Audit Accuracy Rate:** 79% (23/29 were correct; 6 were hallucinated)
+**Audit Accuracy Rate:** 66% (19/29 were correct; 10 were hallucinated)
 
-**Critical Finding:** 6 PMIDs were hallucinated - they linked to completely unrelated articles (dental, IBD, etc.) or non-existent pages.
+**Critical Finding:** 10 PMIDs were hallucinated - they linked to completely unrelated articles (pediatric growth hormone, rat neuroscience, immunology crystallization, dental, IBD) or non-existent pages.
 
 ---
 
@@ -63,10 +63,10 @@ This log tracks citation verification results to identify patterns and improve t
 ### Acute Ischemic Stroke
 
 **Date Audited:** 2026-01-21
-**Version:** 1.0 → 1.1
-**Auditor:** Claude (citation audit)
+**Version:** 1.0 → 1.2
+**Auditor:** Claude (citation audit - 2 passes)
 
-#### Verified Correct (11)
+#### Verified Correct (7)
 
 | # | Citation | PubMed ID | Status |
 |---|----------|-----------|--------|
@@ -77,18 +77,20 @@ This log tracks citation verification results to identify patterns and improve t
 | 5 | POINT | [29766750](https://pubmed.ncbi.nlm.nih.gov/29766750/) | ✅ Verified |
 | 6 | SPARCL | [16899775](https://pubmed.ncbi.nlm.nih.gov/16899775/) | ✅ Verified |
 | 7 | AHA/ASA Guidelines 2021 | [34024117](https://pubmed.ncbi.nlm.nih.gov/34024117/) | ✅ Verified |
-| 8 | CLOSE (PFO) | [28902629](https://pubmed.ncbi.nlm.nih.gov/28902629/) | ✅ Verified |
-| 9 | NASCET | [1852179](https://pubmed.ncbi.nlm.nih.gov/1852179/) | ✅ Verified |
-| 10 | DECIMAL/DESTINY/HAMLET | [17482661](https://pubmed.ncbi.nlm.nih.gov/17482661/) | ✅ Verified |
-| 11 | RESPECT (PFO) | [28885996](https://pubmed.ncbi.nlm.nih.gov/28885996/) | ✅ Verified |
+| 8 | NASCET | [1852179](https://pubmed.ncbi.nlm.nih.gov/1852179/) | ✅ Verified |
+| 9 | RESPECT (PFO) | [28885996](https://pubmed.ncbi.nlm.nih.gov/28885996/) | ✅ Verified |
 
-#### Hallucinated PMIDs Found & Corrected (3)
+#### Hallucinated PMIDs Found & Corrected (7)
 
 | # | Claimed Citation | Wrong PMID | Actual Article at That PMID | Correct PMID | Status |
 |---|------------------|------------|------------------------------|--------------|--------|
 | 1 | AcT Trial, Campbell et al. NEJM 2022 | 36036072 | Non-existent or unrelated article | **35779553** (Menon et al. Lancet 2022 - actual AcT trial; also wrong author/journal in original) | ✅ Fixed |
 | 2 | CHANCE (DAPT trial) | 23726497 | "An insight into peri-implantitis" (dental article!) | **23803136** (Wang et al. NEJM 2013 - actual CHANCE trial) | ✅ Fixed |
 | 3 | AVERT Trial (early mobilization) | 25677597 | "Implementing a simple care bundle..." (different stroke study) | **25892679** (AVERT Collaboration, Lancet 2015 - actual AVERT trial) | ✅ Fixed |
+| 4 | CLOSE (PFO closure) | 28902629 | "Individualised growth response optimisation (iGRO) tool" (pediatric growth hormone paper!) | **28902580** (Mas et al. NEJM 2017 - actual CLOSE trial) | ✅ Fixed |
+| 5 | DEFENSE-PFO | 29766764 | "Local cortical activity of distant brain areas can phase-lock to olfactory bulb's respiratory rhythm in freely behaving rat" (rat neuroscience!) | **29544871** (Lee et al. JACC 2018 - actual DEFENSE-PFO trial) | ✅ Fixed |
+| 6 | ECST 1991 (carotid) | 1754711 | "Crystallization of HLA-DR antigens" (immunology/crystallography paper!) | **1674060** (ECST Collaborative Group, Lancet 1991 - actual ECST interim results) | ✅ Fixed |
+| 7 | DECIMAL/DESTINY/HAMLET | 17482661 | Unknown/invalid PMID | **17303527** (Vahedi et al. Lancet Neurol 2007 - pooled analysis of craniectomy trials) | ✅ Fixed |
 
 ---
 
@@ -96,18 +98,23 @@ This log tracks citation verification results to identify patterns and improve t
 
 ### CRITICAL Pattern: PMID Hallucination
 
-**Issue:** 6 PMIDs across 2 plans were completely fabricated. They linked to unrelated articles:
+**Issue:** 10 PMIDs across 2 plans were completely fabricated. They linked to unrelated articles:
+- Pediatric growth hormone papers instead of stroke PFO trials
+- Rat olfactory neuroscience instead of cardiac trials
+- HLA-DR crystallization (immunology) instead of carotid surgery trials
 - Dental articles instead of neurology papers
 - IBD studies instead of neuropathic pain trials
 - Pregnancy guidelines instead of foot care guidelines
-- Non-existent PMIDs
+- Non-existent/invalid PMIDs
 
 **Root Cause:** AI model generated plausible-looking PMIDs without verification.
 
-**Examples Found:**
+**Egregious Examples Found:**
+- PMID 28902629 claimed to be CLOSE PFO trial → actually "Individualised growth response optimisation (iGRO) tool" (pediatric endocrinology!)
+- PMID 29766764 claimed to be DEFENSE-PFO trial → actually rat olfactory bulb neuroscience paper!
+- PMID 1754711 claimed to be ECST carotid trial → actually "Crystallization of HLA-DR antigens" (immunology!)
 - PMID 23726497 claimed to be CHANCE stroke trial → actually "An insight into peri-implantitis" (dental)
 - PMID 19837455 claimed to be Gilron neuropathy combination therapy → actually IBD thiopurines study
-- PMID 36036072 claimed to be AcT stroke trial → non-existent or unrelated
 
 **Prevention Added:** Updated `neuro-citation-verifier-skill.md` with mandatory verification steps:
 1. Search for article by author, title, journal, year
@@ -173,10 +180,17 @@ These sources are acceptable when PubMed links are not available:
 
 ## Change Log
 
-**2026-01-21 - Citation Audit**
-- Conducted comprehensive audit of existing citations
-- Found 6 hallucinated PMIDs across 2 plans (21% error rate)
-- Fixed all incorrect PMIDs in Peripheral Neuropathy and Acute Ischemic Stroke
+**2026-01-21 - Complete Citation Audit (Pass 2)**
+- Conducted complete verification of ALL citations (not just spot-checking)
+- Found 4 additional hallucinated PMIDs in Acute Ischemic Stroke
+- Total hallucinated: 10 PMIDs across 2 plans (34% error rate)
+- Most egregious: PFO trial linked to pediatric growth hormone paper; carotid trial linked to immunology crystallization paper
+- Updated Acute Ischemic Stroke to v1.2 with all fixes
+
+**2026-01-21 - Citation Audit (Pass 1)**
+- Conducted initial audit of existing citations
+- Found 6 hallucinated PMIDs across 2 plans
+- Fixed PMIDs in Peripheral Neuropathy and Acute Ischemic Stroke
 - Updated neuro-citation-verifier-skill.md with mandatory PMID verification steps
 - Added CRITICAL hallucination pattern to improvement opportunities
 

@@ -1,7 +1,7 @@
 ---
 title: Acute Ischemic Stroke
 description: Emergency management of acute ischemic stroke including thrombolysis, thrombectomy evaluation, secondary prevention, and etiologic workup.
-version: "1.1"
+version: "1.2"
 setting: ED, HOSP, OPD, ICU
 status: approved
 tags:
@@ -13,7 +13,7 @@ tags:
 
 # Acute Ischemic Stroke
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** January 21, 2026
 **REVISED:** January 21, 2026
 **STATUS:** Approved
@@ -338,15 +338,22 @@ SECTION B: REFERENCE (Expand as Needed)
 | Anticoagulation for AF-related stroke | Class I, Level A | [AHA/ASA Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34024117/) |
 | Blood pressure management post-stroke | Class I, Level B | [AHA/ASA Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34024117/) |
 | Early mobilization | Class III (Harm), Level A | [AVERT Trial](https://pubmed.ncbi.nlm.nih.gov/25892679/) - very early mobilization harmful |
-| Decompressive craniectomy for malignant MCA stroke | Class I, Level A | [DECIMAL, DESTINY, HAMLET](https://pubmed.ncbi.nlm.nih.gov/17482661/) |
-| PFO closure for cryptogenic stroke | Class I, Level B | [CLOSE](https://pubmed.ncbi.nlm.nih.gov/28902629/); [RESPECT](https://pubmed.ncbi.nlm.nih.gov/28885996/); [DEFENSE-PFO](https://pubmed.ncbi.nlm.nih.gov/29766764/) |
-| Carotid endarterectomy for symptomatic stenosis ≥70% | Class I, Level A | [NASCET](https://pubmed.ncbi.nlm.nih.gov/1852179/); [ECST](https://pubmed.ncbi.nlm.nih.gov/1754711/) |
+| Decompressive craniectomy for malignant MCA stroke | Class I, Level A | [DECIMAL, DESTINY, HAMLET pooled analysis](https://pubmed.ncbi.nlm.nih.gov/17303527/) |
+| PFO closure for cryptogenic stroke | Class I, Level B | [CLOSE](https://pubmed.ncbi.nlm.nih.gov/28902580/); [RESPECT](https://pubmed.ncbi.nlm.nih.gov/28885996/); [DEFENSE-PFO](https://pubmed.ncbi.nlm.nih.gov/29544871/) |
+| Carotid endarterectomy for symptomatic stenosis ≥70% | Class I, Level A | [NASCET](https://pubmed.ncbi.nlm.nih.gov/1852179/); [ECST](https://pubmed.ncbi.nlm.nih.gov/1674060/) |
 | Intensive glucose control (avoid hypoglycemia) | Class I, Level C | AHA/ASA Guidelines |
 | Fever treatment | Class I, Level C | AHA/ASA Guidelines |
 
 ---
 
 ## CHANGE LOG
+
+**v1.2 (January 21, 2026)**
+- Complete citation verification: Fixed 4 additional hallucinated PMIDs
+- CLOSE: Changed from PMID 28902629 (pediatric growth hormone paper!) to PMID 28902580
+- DEFENSE-PFO: Changed from PMID 29766764 (rat olfactory neuroscience!) to PMID 29544871
+- ECST: Changed from PMID 1754711 (HLA-DR crystallization immunology paper!) to PMID 1674060
+- DECIMAL/DESTINY/HAMLET: Changed from PMID 17482661 (unknown) to PMID 17303527 (pooled analysis)
 
 **v1.1 (January 21, 2026)**
 - Citation audit: Fixed 3 incorrect PubMed links (hallucinated PMIDs)
