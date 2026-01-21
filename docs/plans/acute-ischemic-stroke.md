@@ -1,7 +1,7 @@
 ---
 title: Acute Ischemic Stroke
 description: Emergency management of acute ischemic stroke including thrombolysis, thrombectomy evaluation, secondary prevention, and etiologic workup.
-version: "1.0"
+version: "1.1"
 setting: ED, HOSP, OPD, ICU
 status: approved
 tags:
@@ -13,7 +13,7 @@ tags:
 
 # Acute Ischemic Stroke
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 21, 2026
 **REVISED:** January 21, 2026
 **STATUS:** Approved
@@ -330,14 +330,14 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | IV alteplase within 4.5 hours improves outcomes | Class I, Level A | [NINDS, ECASS III](https://pubmed.ncbi.nlm.nih.gov/7477192/) |
-| Tenecteplase non-inferior to alteplase | Class I, Level B | [AcT Trial, Campbell et al. NEJM 2022](https://pubmed.ncbi.nlm.nih.gov/36036072/) |
+| Tenecteplase non-inferior to alteplase | Class I, Level B | [AcT Trial, Menon et al. Lancet 2022](https://pubmed.ncbi.nlm.nih.gov/35779553/) |
 | Mechanical thrombectomy for LVO within 6 hours | Class I, Level A | [MR CLEAN, ESCAPE, EXTEND-IA, SWIFT PRIME, REVASCAT](https://pubmed.ncbi.nlm.nih.gov/25517348/) |
 | Thrombectomy up to 24 hours with favorable imaging | Class I, Level A | [DAWN](https://pubmed.ncbi.nlm.nih.gov/29129157/); [DEFUSE 3](https://pubmed.ncbi.nlm.nih.gov/29364767/) |
-| DAPT (aspirin + clopidogrel) for minor stroke/high-risk TIA x 21 days | Class I, Level A | [CHANCE](https://pubmed.ncbi.nlm.nih.gov/23726497/); [POINT](https://pubmed.ncbi.nlm.nih.gov/29766750/) |
+| DAPT (aspirin + clopidogrel) for minor stroke/high-risk TIA x 21 days | Class I, Level A | [CHANCE](https://pubmed.ncbi.nlm.nih.gov/23803136/); [POINT](https://pubmed.ncbi.nlm.nih.gov/29766750/) |
 | High-intensity statin therapy | Class I, Level A | [SPARCL](https://pubmed.ncbi.nlm.nih.gov/16899775/); AHA/ASA Guidelines |
 | Anticoagulation for AF-related stroke | Class I, Level A | [AHA/ASA Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34024117/) |
 | Blood pressure management post-stroke | Class I, Level B | [AHA/ASA Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34024117/) |
-| Early mobilization | Class III (Harm), Level A | [AVERT Trial](https://pubmed.ncbi.nlm.nih.gov/25677597/) - very early mobilization harmful |
+| Early mobilization | Class III (Harm), Level A | [AVERT Trial](https://pubmed.ncbi.nlm.nih.gov/25892679/) - very early mobilization harmful |
 | Decompressive craniectomy for malignant MCA stroke | Class I, Level A | [DECIMAL, DESTINY, HAMLET](https://pubmed.ncbi.nlm.nih.gov/17482661/) |
 | PFO closure for cryptogenic stroke | Class I, Level B | [CLOSE](https://pubmed.ncbi.nlm.nih.gov/28902629/); [RESPECT](https://pubmed.ncbi.nlm.nih.gov/28885996/); [DEFENSE-PFO](https://pubmed.ncbi.nlm.nih.gov/29766764/) |
 | Carotid endarterectomy for symptomatic stenosis ≥70% | Class I, Level A | [NASCET](https://pubmed.ncbi.nlm.nih.gov/1852179/); [ECST](https://pubmed.ncbi.nlm.nih.gov/1754711/) |
@@ -347,6 +347,12 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 21, 2026)**
+- Citation audit: Fixed 3 incorrect PubMed links (hallucinated PMIDs)
+- AcT Trial: Changed from PMID 36036072 to PMID 35779553; corrected author from "Campbell" to "Menon" and journal from "NEJM" to "Lancet"
+- CHANCE: Changed from PMID 23726497 (dental article) to PMID 23803136 (correct CHANCE trial)
+- AVERT: Changed from PMID 25677597 (care bundle study) to PMID 25892679 (correct AVERT trial)
 
 **v1.0 (January 21, 2026)**
 - Initial template creation

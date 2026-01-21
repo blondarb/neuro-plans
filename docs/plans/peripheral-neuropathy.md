@@ -1,7 +1,7 @@
 ---
 title: Peripheral Neuropathy - New Diagnosis/Evaluation
 description: Initial diagnostic workup and symptomatic management of suspected or newly diagnosed peripheral neuropathy including etiologic evaluation and pain management.
-version: "1.5"
+version: "1.6"
 setting: ED, HOSP, OPD, ICU
 status: approved
 tags:
@@ -12,7 +12,7 @@ tags:
 
 # Peripheral Neuropathy - New Diagnosis/Evaluation
 
-**VERSION:** 1.5
+**VERSION:** 1.6
 **CREATED:** January 14, 2026
 **REVISED:** January 14, 2026
 **STATUS:** Approved
@@ -358,7 +358,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Diabetes is most common cause of polyneuropathy in developed countries | Class I | [Dyck PJ et al. Neurology 1993](https://pubmed.ncbi.nlm.nih.gov/8469345/) |
-| HbA1c <7% reduces neuropathy incidence in Type 1 DM | Class I, Level A | [DCCT/EDIC](https://pubmed.ncbi.nlm.nih.gov/24357209/) |
+| HbA1c <7% reduces neuropathy incidence in Type 1 DM | Class I, Level A | [DCCT/EDIC, Martin et al. Diabetes Care 2014](https://pubmed.ncbi.nlm.nih.gov/24356595/) |
 | Gabapentin, pregabalin, duloxetine first-line for painful diabetic neuropathy | Class I, Level A | [AAN/AANEM Practice Guideline 2022](https://pubmed.ncbi.nlm.nih.gov/34965987/) |
 | Tricyclic antidepressants effective for neuropathic pain | Class I, Level A | [Finnerup NB et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25575710/) |
 | NCS/EMG for characterization of peripheral neuropathy | Class II, Level B | [AAN Practice Parameter 2009](https://pubmed.ncbi.nlm.nih.gov/19056666/) |
@@ -367,11 +367,11 @@ SECTION B: REFERENCE (Expand as Needed)
 | Skin biopsy (IENFD) for small fiber neuropathy | Class II, Level B | [Lauria G et al. Eur J Neurol 2010](https://pubmed.ncbi.nlm.nih.gov/20642627/) |
 | IVIG first-line for CIDP | Class I, Level A | [EAN/PNS Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/33506534/) |
 | Thiamine supplementation in alcoholic neuropathy | Class II, Level B | [AAN Practice Parameter](https://pubmed.ncbi.nlm.nih.gov/19056666/) |
-| Foot care reduces amputations in diabetic neuropathy | Class I, Level A | [ADA Standards of Care](https://pubmed.ncbi.nlm.nih.gov/36507645/) |
+| Foot care reduces amputations in diabetic neuropathy | Class I, Level A | [ADA Standards of Care 2023: Foot Care](https://pubmed.ncbi.nlm.nih.gov/36507636/) |
 | Capsaicin 8% patch effective for localized neuropathic pain | Class I, Level A | [Qutenza Prescribing Information](https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/022395s012lbl.pdf) |
 | Tafamidis for hATTR polyneuropathy | Class I, Level A | [Coelho T et al. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/22843282/) |
 | Patisiran/inotersen for hATTR polyneuropathy | Class I, Level A | [Adams D et al. NEJM 2018 (APOLLO)](https://pubmed.ncbi.nlm.nih.gov/29972753/); [Benson MD et al. NEJM 2018 (NEURO-TTR)](https://pubmed.ncbi.nlm.nih.gov/29972757/) |
-| Combination therapy for neuropathic pain improves outcomes | Class II, Level B | [Gilron I et al. Lancet 2009](https://pubmed.ncbi.nlm.nih.gov/19837455/) |
+| Combination therapy for neuropathic pain improves outcomes | Class II, Level B | [Gilron I et al. Lancet 2009](https://pubmed.ncbi.nlm.nih.gov/19796802/) |
 
 ---
 
@@ -450,6 +450,12 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.6 (January 21, 2026)**
+- Citation audit: Fixed 3 incorrect PubMed links (hallucinated PMIDs)
+- DCCT/EDIC: Changed from PMID 24357209 (ADA Standards) to PMID 24356595 (actual DCCT/EDIC neuropathy study by Martin et al.)
+- ADA Foot Care: Changed from PMID 36507645 (Pregnancy section) to PMID 36507636 (Foot Care section)
+- Gilron combination therapy: Changed from PMID 19837455 (IBD thiopurines article) to PMID 19796802 (neuropathic pain combination trial)
 
 **v1.5 (January 20, 2026)**
 - Added CPT Code Quick Reference section with 50+ billing codes for labs, studies, and treatments

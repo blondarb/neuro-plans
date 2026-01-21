@@ -7,6 +7,58 @@ description: Validates citations and evidence references in clinical decision su
 
 Systematically verify all citations and evidence references in clinical recommendation templates to ensure accuracy and prevent hallucinated sources.
 
+## CRITICAL: Preventing PMID Hallucinations
+
+**NEVER guess or assume a PubMed ID.** Hallucinated PMIDs that link to wrong articles are dangerous and misleading.
+
+### Mandatory Verification Steps
+
+Before adding ANY PubMed link, you MUST:
+
+1. **Search for the specific article** using WebSearch with author, title keywords, journal, and year
+2. **Find the actual PMID** in the search results (look for "PMID:" or pubmed.ncbi.nlm.nih.gov URLs)
+3. **Verify the PMID** by fetching the PubMed page and confirming:
+   - Author names match
+   - Title matches or is very close
+   - Journal matches
+   - Year matches
+4. **Only then add the link** to the citation
+
+### What NOT to Do
+
+| ❌ DO NOT | ✅ DO INSTEAD |
+|-----------|---------------|
+| Guess PMIDs based on patterns | Search and verify each one |
+| Assume PMID from memory | Fetch the actual PubMed page |
+| Add links without clicking through | Verify the linked article is correct |
+| Use placeholder PMIDs | Leave as plain text if can't verify |
+
+### When You Cannot Verify
+
+If you cannot find or verify a PMID:
+- **Leave the citation as plain text** (no link)
+- **Log it** in the verification report as "Unable to verify"
+- **Flag for physician review** - they may know the correct source
+- **NEVER fabricate a PMID** - wrong links are worse than no links
+
+### Example Correct Process
+
+```
+Citation to verify: "Dyck PJ et al. Neurology 1993" (diabetes polyneuropathy)
+
+1. Search: "Dyck diabetic polyneuropathy Neurology 1993 PMID"
+2. Find in results: "PMID: 8469345" with title matching
+3. Fetch: https://pubmed.ncbi.nlm.nih.gov/8469345/
+4. Verify page shows:
+   - Authors: Dyck PJ, et al.
+   - Journal: Neurology
+   - Year: 1993
+   - Topic: Diabetic polyneuropathy
+5. Confirmed - add link
+```
+
+---
+
 ## When to Use
 
 Run this skill AFTER:
