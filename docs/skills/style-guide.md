@@ -56,7 +56,7 @@ Use the multi-column setting-priority format. **IMPORTANT:** Venue columns (ED, 
 
 ### Lumbar Puncture Section
 
-**IMPORTANT:** Lumbar Puncture appears as its own top-level section in the clinical tool (not under Imaging). In the markdown file, place it as `### LUMBAR PUNCTURE` after the imaging subsections (2A/2B/2C).
+**IMPORTANT:** Lumbar Puncture appears under **Laboratory Workup** in the clinical tool (CSF analysis IS laboratory work). In the markdown file, place it as `### LUMBAR PUNCTURE` after the imaging subsections (2A/2B/2C) - the JSON generator will position it correctly under Labs.
 
 ```markdown
 ### LUMBAR PUNCTURE
@@ -73,6 +73,8 @@ Use the multi-column setting-priority format. **IMPORTANT:** Venue columns (ED, 
 **Special Handling:** [Notes about transport, timing]
 **Contraindications:** [List contraindications]
 ```
+
+> **Clinical Tool Display:** When LP studies are selected in the clinical tool, they appear grouped under "Laboratory Workup > Lumbar Puncture" alongside other lab sections.
 
 ## Priority Levels
 

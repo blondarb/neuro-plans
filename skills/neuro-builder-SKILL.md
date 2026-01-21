@@ -562,9 +562,9 @@ See `references/ms-exacerbation-v2.md` for a complete example of Builder output 
 
 ## Lumbar Puncture Guidance
 
-**IMPORTANT:** Lumbar Puncture is its own top-level section in the clinical tool, NOT a subsection under Imaging & Studies. This ensures LP studies display in their own labeled section when selected by the clinician.
+**IMPORTANT:** Lumbar Puncture appears under **Laboratory Workup** in the clinical tool (CSF analysis IS laboratory work). This ensures LP studies display alongside other lab sections when selected by the clinician.
 
-When LP is indicated for a diagnosis, include a dedicated `### LUMBAR PUNCTURE` subsection within Section 2 in the markdown file. The JSON generator will automatically extract this as its own "Lumbar Puncture" section.
+In the markdown file, place `### LUMBAR PUNCTURE` after the imaging subsections (2A/2B/2C). The JSON generator will automatically position it under "Laboratory Workup > Lumbar Puncture" in the clinical tool output.
 
 Use this structure (note: venue columns ED/HOSP/OPD/ICU must be the last 4 columns):
 
