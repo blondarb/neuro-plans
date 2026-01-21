@@ -1,7 +1,7 @@
 {
   "id": "peripheral-neuropathy",
   "title": "Peripheral Neuropathy - New Diagnosis/Evaluation",
-  "version": "1.6",
+  "version": "1.7",
   "icd10": [
     "** G62.9 (Polyneuropathy",
     "unspecified)",
@@ -363,193 +363,201 @@
       "Essential/First-line": [
         {
           "item": "Nerve conduction studies (NCS) and EMG",
+          "timing": "Optimal 3-4 weeks after symptom onset (allows Wallerian degeneration to manifest); can be done earlier if acute weakness suspected",
+          "target": "Pattern determines axonal vs demyelinating, distribution, severity",
+          "contraindications": "Pacemaker (relative); anticoagulation for needle EMG (relative)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "timing": "Optimal 3-4 weeks after symptom onset (allows Wallerian degeneration to manifest); can be done earlier if acute weakness suspected",
-          "target": "Pattern determines axonal vs demyelinating, distribution, severity",
-          "contraindications": "Pacemaker (relative); anticoagulation for needle EMG (relative)"
+          "ICU": "-"
         }
       ],
       "Extended": [
         {
           "item": "MRI spine (cervical/lumbar) with and without contrast",
+          "timing": "If radiculopathy, myelopathy, or polyradiculopathy suspected",
+          "target": "Nerve root enhancement (radiculopathy), cord signal change",
+          "contraindications": "GFR <30, pacemaker, gadolinium allergy",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "URGENT",
-          "timing": "If radiculopathy, myelopathy, or polyradiculopathy suspected",
-          "target": "Nerve root enhancement (radiculopathy), cord signal change",
-          "contraindications": "GFR <30, pacemaker, gadolinium allergy"
+          "ICU": "URGENT"
         },
         {
           "item": "MRI lumbar plexus with contrast",
+          "timing": "Lumbosacral plexopathy, asymmetric proximal weakness",
+          "target": "Plexus enhancement, mass lesion",
+          "contraindications": "Same as above",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "timing": "Lumbosacral plexopathy, asymmetric proximal weakness",
-          "target": "Plexus enhancement, mass lesion",
-          "contraindications": "Same as above"
+          "ICU": "-"
         },
         {
           "item": "MRI brachial plexus with contrast",
+          "timing": "Brachial plexopathy, Parsonage-Turner syndrome",
+          "target": "Plexus enhancement, denervation changes",
+          "contraindications": "Same as above",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "timing": "Brachial plexopathy, Parsonage-Turner syndrome",
-          "target": "Plexus enhancement, denervation changes",
-          "contraindications": "Same as above"
+          "ICU": "-"
         },
         {
           "item": "Autonomic function testing (QSART, tilt table, HRV)",
+          "timing": "Autonomic symptoms (orthostasis, anhidrosis, GI dysmotility)",
+          "target": "Abnormal sudomotor or cardiovagal function",
+          "contraindications": "None significant",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "timing": "Autonomic symptoms (orthostasis, anhidrosis, GI dysmotility)",
-          "target": "Abnormal sudomotor or cardiovagal function",
-          "contraindications": "None significant"
+          "ICU": "-"
         },
         {
           "item": "Quantitative sensory testing (QST)",
+          "timing": "Small fiber neuropathy evaluation",
+          "target": "Abnormal thermal thresholds",
+          "contraindications": "None significant",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-",
-          "timing": "Small fiber neuropathy evaluation",
-          "target": "Abnormal thermal thresholds",
-          "contraindications": "None significant"
+          "ICU": "-"
         },
         {
           "item": "Chest X-ray",
+          "timing": "Lung cancer (paraneoplastic), sarcoidosis",
+          "target": "Normal",
+          "contraindications": "Pregnancy (relative)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "URGENT",
-          "timing": "Lung cancer (paraneoplastic), sarcoidosis",
-          "target": "Normal",
-          "contraindications": "Pregnancy (relative)"
+          "ICU": "URGENT"
         },
         {
           "item": "CT chest/abdomen/pelvis",
+          "timing": "Occult malignancy if paraneoplastic suspected",
+          "target": "No mass",
+          "contraindications": "Contrast allergy, renal impairment",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "timing": "Occult malignancy if paraneoplastic suspected",
-          "target": "No mass",
-          "contraindications": "Contrast allergy, renal impairment"
+          "ICU": "-"
         }
       ],
       "Rare/Specialized": [
         {
           "item": "PET-CT",
+          "timing": "Occult malignancy, amyloidosis",
+          "target": "No FDG-avid lesions",
+          "contraindications": "Pregnancy, uncontrolled diabetes",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-",
-          "timing": "Occult malignancy, amyloidosis",
-          "target": "No FDG-avid lesions",
-          "contraindications": "Pregnancy, uncontrolled diabetes"
+          "ICU": "-"
         },
         {
           "item": "Nerve ultrasound",
+          "timing": "CIDP (nerve enlargement), entrapment",
+          "target": "Normal nerve caliber",
+          "contraindications": "None",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "timing": "CIDP (nerve enlargement), entrapment",
-          "target": "Normal nerve caliber",
-          "contraindications": "None"
+          "ICU": "-"
         },
         {
           "item": "MR neurography",
+          "timing": "Focal nerve pathology, plexopathy",
+          "target": "Normal nerve signal/caliber",
+          "contraindications": "Same as MRI",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-",
-          "timing": "Focal nerve pathology, plexopathy",
-          "target": "Normal nerve signal/caliber",
-          "contraindications": "Same as MRI"
+          "ICU": "-"
         },
         {
           "item": "Sural nerve biopsy",
+          "timing": "Vasculitic neuropathy, amyloidosis, CIDP",
+          "target": "No vasculitis or amyloid deposits",
+          "contraindications": "Coagulopathy",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "-",
-          "ICU": "-",
-          "timing": "Vasculitic neuropathy, amyloidosis, CIDP",
-          "target": "No vasculitis or amyloid deposits",
-          "contraindications": "Coagulopathy"
+          "ICU": "-"
         }
       ],
       "Lumbar Puncture": [
         {
           "item": "Opening pressure",
+          "rationale": "Rule out elevated ICP",
+          "target": "10-20 cm H2O",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "rationale": "Rule out elevated ICP",
-          "target": "10-20 cm H2O"
+          "ICU": "-"
         },
         {
           "item": "Cell count (tubes 1 and 4)",
+          "rationale": "Inflammation, infection",
+          "target": "WBC <5, RBC 0",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "rationale": "Inflammation, infection",
-          "target": "WBC <5, RBC 0"
+          "ICU": "-"
         },
         {
           "item": "Protein",
+          "rationale": "Albuminocytologic dissociation in GBS/CIDP",
+          "target": "Normal 15-45 mg/dL; elevated in GBS/CIDP",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "rationale": "Albuminocytologic dissociation in GBS/CIDP",
-          "target": "Normal 15-45 mg/dL; elevated in GBS/CIDP"
+          "ICU": "-"
         },
         {
           "item": "Glucose with serum glucose",
+          "rationale": "Infection, carcinomatous meningitis",
+          "target": "Normal (>60% serum)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "rationale": "Infection, carcinomatous meningitis",
-          "target": "Normal (>60% serum)"
+          "ICU": "-"
         },
         {
           "item": "Gram stain and culture",
+          "rationale": "Rule out infection",
+          "target": "No organisms",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "rationale": "Rule out infection",
-          "target": "No organisms"
+          "ICU": "-"
         },
         {
           "item": "Cytology",
+          "rationale": "Leptomeningeal carcinomatosis",
+          "target": "Negative",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "rationale": "Leptomeningeal carcinomatosis",
-          "target": "Negative"
+          "ICU": "-"
         },
         {
           "item": "VDRL (CSF)",
+          "rationale": "Neurosyphilis",
+          "target": "Negative",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "rationale": "Neurosyphilis",
-          "target": "Negative"
+          "ICU": "-"
         },
         {
           "item": "Lyme PCR/antibody index",
+          "rationale": "Endemic areas",
+          "target": "Negative",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "rationale": "Endemic areas",
-          "target": "Negative"
+          "ICU": "-"
         }
       ]
     },
@@ -557,534 +565,534 @@
       "Acute/Emergent": [
         {
           "item": "Thiamine IV (if alcoholic or malnourished)",
+          "dosing": "500 mg IV TID × 3 days, then 250 mg IV daily × 3-5 days, then oral",
+          "contraindications": "None significant",
+          "monitoring": "Anaphylaxis (rare)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
-          "ICU": "STAT",
-          "dosing": "500 mg IV TID Ãƒâ€” 3 days, then 250 mg IV daily Ãƒâ€” 3-5 days, then oral",
-          "contraindications": "None significant",
-          "monitoring": "Anaphylaxis (rare)"
+          "ICU": "STAT"
         },
         {
           "item": "Vitamin B12 IM (if deficient)",
+          "dosing": "1000 mcg IM daily × 7 days, then weekly × 4 weeks, then monthly",
+          "contraindications": "Cobalt allergy",
+          "monitoring": "Reticulocyte count at 1 week; B12 level at 1-2 months",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "URGENT",
-          "dosing": "1000 mcg IM daily Ãƒâ€” 7 days, then weekly Ãƒâ€” 4 weeks, then monthly",
-          "contraindications": "Cobalt allergy",
-          "monitoring": "Reticulocyte count at 1 week; B12 level at 1-2 months"
+          "ICU": "URGENT"
         },
         {
           "item": "Glucose control optimization",
+          "dosing": "Per diabetes protocol; target HbA1c <7%",
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Glucose monitoring",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
-          "ICU": "STAT",
-          "dosing": "Per diabetes protocol; target HbA1c <7%",
-          "contraindications": "Hypoglycemia risk",
-          "monitoring": "Glucose monitoring"
+          "ICU": "STAT"
         }
       ],
       "Symptomatic Treatments - Neuropathic Pain": [
         {
           "item": "Gabapentin",
           "indication": "Neuropathic pain (first-line)",
+          "dosing": "Start 300 mg qHS; increase by 300 mg every 1-3 days; target 900-1800 mg TID; max 3600 mg/day",
+          "contraindications": "Renal impairment (adjust dose per CrCl: CrCl 30-59: max 900-1400 mg/day; CrCl 15-29: max 600 mg/day; CrCl <15: max 300 mg/day)",
+          "monitoring": "Sedation, dizziness, peripheral edema; taper to discontinue",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "ROUTINE",
-          "dosing": "Start 300 mg qHS; increase by 300 mg every 1-3 days; target 900-1800 mg TID; max 3600 mg/day",
-          "contraindications": "Renal impairment (adjust dose per CrCl: CrCl 30-59: max 900-1400 mg/day; CrCl 15-29: max 600 mg/day; CrCl <15: max 300 mg/day)",
-          "monitoring": "Sedation, dizziness, peripheral edema; taper to discontinue"
+          "ICU": "ROUTINE"
         },
         {
           "item": "Pregabalin",
           "indication": "Neuropathic pain (first-line)",
+          "dosing": "Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID",
+          "contraindications": "Renal impairment (adjust dose per CrCl); Class V controlled substance",
+          "monitoring": "Sedation, weight gain, peripheral edema",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "ROUTINE",
-          "dosing": "Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID",
-          "contraindications": "Renal impairment (adjust dose per CrCl); Class V controlled substance",
-          "monitoring": "Sedation, weight gain, peripheral edema"
+          "ICU": "ROUTINE"
         },
         {
           "item": "Duloxetine",
           "indication": "Neuropathic pain (first-line, especially diabetic)",
+          "dosing": "Start 30 mg daily × 1 week; increase to 60 mg daily; max 120 mg/day",
+          "contraindications": "Hepatic impairment; CrCl <30; concurrent MAOIs; uncontrolled narrow-angle glaucoma",
+          "monitoring": "Nausea (usually transient), BP; discontinuation syndrome (taper over 2+ weeks)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 30 mg daily Ãƒâ€” 1 week; increase to 60 mg daily; max 120 mg/day",
-          "contraindications": "Hepatic impairment; CrCl <30; concurrent MAOIs; uncontrolled narrow-angle glaucoma",
-          "monitoring": "Nausea (usually transient), BP; discontinuation syndrome (taper over 2+ weeks)"
+          "ICU": "-"
         },
         {
           "item": "Venlafaxine XR",
           "indication": "Neuropathic pain",
+          "dosing": "Start 37.5-75 mg daily; increase by 75 mg every 4-7 days; max 225 mg daily",
+          "contraindications": "Uncontrolled hypertension; concurrent MAOIs",
+          "monitoring": "BP monitoring; discontinuation syndrome",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 37.5-75 mg daily; increase by 75 mg every 4-7 days; max 225 mg daily",
-          "contraindications": "Uncontrolled hypertension; concurrent MAOIs",
-          "monitoring": "BP monitoring; discontinuation syndrome"
+          "ICU": "-"
         },
         {
           "item": "Amitriptyline",
           "indication": "Neuropathic pain (second-line)",
+          "dosing": "Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS",
+          "contraindications": "Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma; elderly (anticholinergic burden)",
+          "monitoring": "ECG if dose >100 mg/day; anticholinergic effects",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS",
-          "contraindications": "Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma; elderly (anticholinergic burden)",
-          "monitoring": "ECG if dose >100 mg/day; anticholinergic effects"
+          "ICU": "-"
         },
         {
           "item": "Nortriptyline",
           "indication": "Neuropathic pain (second-line)",
+          "dosing": "Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS",
+          "contraindications": "Same as amitriptyline",
+          "monitoring": "Same; fewer anticholinergic effects than amitriptyline",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS",
-          "contraindications": "Same as amitriptyline",
-          "monitoring": "Same; fewer anticholinergic effects than amitriptyline"
+          "ICU": "-"
         },
         {
           "item": "Desipramine",
           "indication": "Neuropathic pain (second-line)",
+          "dosing": "Start 25 mg qHS; increase by 25 mg weekly; max 150 mg daily",
+          "contraindications": "Same as amitriptyline",
+          "monitoring": "Same; least anticholinergic TCA",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 25 mg qHS; increase by 25 mg weekly; max 150 mg daily",
-          "contraindications": "Same as amitriptyline",
-          "monitoring": "Same; least anticholinergic TCA"
+          "ICU": "-"
         },
         {
           "item": "Carbamazepine",
           "indication": "Trigeminal neuralgia, lancinating pain",
+          "dosing": "Start 100 mg BID; increase by 200 mg/day every 3-7 days; max 1200 mg/day",
+          "contraindications": "AV block; bone marrow suppression; concurrent MAOIs",
+          "monitoring": "CBC, LFTs, sodium at baseline and periodically; HLA-B*1502 screening in at-risk populations",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 100 mg BID; increase by 200 mg/day every 3-7 days; max 1200 mg/day",
-          "contraindications": "AV block; bone marrow suppression; concurrent MAOIs",
-          "monitoring": "CBC, LFTs, sodium at baseline and periodically; HLA-B*1502 screening in at-risk populations"
+          "ICU": "-"
         },
         {
           "item": "Oxcarbazepine",
           "indication": "Trigeminal neuralgia, lancinating pain",
+          "dosing": "Start 300 mg BID; increase by 300 mg every 3 days; max 1200 mg BID",
+          "contraindications": "Hypersensitivity to carbamazepine",
+          "monitoring": "Sodium (hyponatremia risk); HLA-B*1502 screening",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 300 mg BID; increase by 300 mg every 3 days; max 1200 mg BID",
-          "contraindications": "Hypersensitivity to carbamazepine",
-          "monitoring": "Sodium (hyponatremia risk); HLA-B*1502 screening"
+          "ICU": "-"
         },
         {
           "item": "Capsaicin cream 0.025-0.075%",
           "indication": "Localized neuropathic pain",
+          "dosing": "Apply TID-QID to affected area; takes 2-4 weeks for effect",
+          "contraindications": "Open wounds; avoid eyes/mucous membranes",
+          "monitoring": "Initial burning (decreases with continued use); wash hands after application",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Apply TID-QID to affected area; takes 2-4 weeks for effect",
-          "contraindications": "Open wounds; avoid eyes/mucous membranes",
-          "monitoring": "Initial burning (decreases with continued use); wash hands after application"
+          "ICU": "-"
         },
         {
           "item": "Capsaicin 8% patch (Qutenza)",
           "indication": "Localized neuropathic pain (refractory)",
+          "dosing": "Applied by healthcare provider for 30-60 minutes; may repeat every 3 months",
+          "contraindications": "Same as above",
+          "monitoring": "Must be applied in clinic; pretreat area with topical lidocaine",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Applied by healthcare provider for 30-60 minutes; may repeat every 3 months",
-          "contraindications": "Same as above",
-          "monitoring": "Must be applied in clinic; pretreat area with topical lidocaine"
+          "ICU": "-"
         },
         {
           "item": "Lidocaine 5% patch",
           "indication": "Localized neuropathic pain",
+          "dosing": "Apply 1-3 patches to painful area for 12 hours on, 12 hours off",
+          "contraindications": "Severe hepatic impairment; application to broken skin",
+          "monitoring": "Minimal systemic absorption; local irritation",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "ROUTINE",
-          "dosing": "Apply 1-3 patches to painful area for 12 hours on, 12 hours off",
-          "contraindications": "Severe hepatic impairment; application to broken skin",
-          "monitoring": "Minimal systemic absorption; local irritation"
+          "ICU": "ROUTINE"
         },
         {
           "item": "Tramadol",
           "indication": "Moderate neuropathic pain (adjunct)",
+          "dosing": "Start 50 mg q6h PRN; may use ER 100 mg daily; max 400 mg/day",
+          "contraindications": "Seizure disorder; concurrent MAOIs; concurrent SSRIs (serotonin syndrome)",
+          "monitoring": "Serotonin syndrome; seizures; dependence (Schedule IV)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 50 mg q6h PRN; may use ER 100 mg daily; max 400 mg/day",
-          "contraindications": "Seizure disorder; concurrent MAOIs; concurrent SSRIs (serotonin syndrome)",
-          "monitoring": "Serotonin syndrome; seizures; dependence (Schedule IV)"
+          "ICU": "-"
         },
         {
           "item": "Tapentadol ER",
           "indication": "Moderate-severe neuropathic pain",
+          "dosing": "Start 50 mg BID; increase by 50 mg BID every 3 days; max 250 mg BID",
+          "contraindications": "Same as tramadol",
+          "monitoring": "Same; Schedule II",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 50 mg BID; increase by 50 mg BID every 3 days; max 250 mg BID",
-          "contraindications": "Same as tramadol",
-          "monitoring": "Same; Schedule II"
+          "ICU": "-"
         },
         {
           "item": "Morphine ER",
           "indication": "Severe refractory pain",
+          "dosing": "Start 15 mg q12h; titrate every 1-2 days; no max (titrate to effect)",
+          "contraindications": "Respiratory depression; paralytic ileus; concurrent MAOIs",
+          "monitoring": "Sedation, constipation, respiratory status; naloxone available",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "ROUTINE",
-          "dosing": "Start 15 mg q12h; titrate every 1-2 days; no max (titrate to effect)",
-          "contraindications": "Respiratory depression; paralytic ileus; concurrent MAOIs",
-          "monitoring": "Sedation, constipation, respiratory status; naloxone available"
+          "ICU": "ROUTINE"
         },
         {
           "item": "Oxycodone ER",
           "indication": "Severe refractory pain",
+          "dosing": "Start 10 mg q12h; titrate every 1-2 days",
+          "contraindications": "Same as morphine",
+          "monitoring": "Same; Schedule II",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "ROUTINE",
-          "dosing": "Start 10 mg q12h; titrate every 1-2 days",
-          "contraindications": "Same as morphine",
-          "monitoring": "Same; Schedule II"
+          "ICU": "ROUTINE"
         },
         {
           "item": "Methadone",
           "indication": "Severe refractory neuropathic pain",
+          "dosing": "Start 2.5-5 mg TID; titrate slowly (long half-life); specialist management",
+          "contraindications": "QT prolongation; concurrent QT-prolonging drugs",
+          "monitoring": "ECG at baseline and with dose changes; QTc monitoring",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-",
-          "dosing": "Start 2.5-5 mg TID; titrate slowly (long half-life); specialist management",
-          "contraindications": "QT prolongation; concurrent QT-prolonging drugs",
-          "monitoring": "ECG at baseline and with dose changes; QTc monitoring"
+          "ICU": "-"
         }
       ],
       "Symptomatic Treatments - Other Symptoms": [
         {
           "item": "Midodrine",
           "indication": "Orthostatic hypotension",
+          "dosing": "Start 2.5 mg TID (upon awakening, midday, mid-afternoon); increase by 2.5 mg every 1-2 weeks; max 10 mg TID; do NOT take within 4 hours of bedtime",
+          "contraindications": "Severe heart disease; urinary retention; pheochromocytoma",
+          "monitoring": "Supine hypertension (avoid lying flat within 4 hours); urinary retention",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "ROUTINE",
-          "dosing": "Start 2.5 mg TID (upon awakening, midday, mid-afternoon); increase by 2.5 mg every 1-2 weeks; max 10 mg TID; do NOT take within 4 hours of bedtime",
-          "contraindications": "Severe heart disease; urinary retention; pheochromocytoma",
-          "monitoring": "Supine hypertension (avoid lying flat within 4 hours); urinary retention"
+          "ICU": "ROUTINE"
         },
         {
           "item": "Fludrocortisone",
           "indication": "Orthostatic hypotension",
+          "dosing": "Start 0.1 mg daily; increase by 0.1 mg every 1-2 weeks; max 0.3 mg daily",
+          "contraindications": "CHF; hypertension",
+          "monitoring": "Potassium, BP, edema; hypokalemia; supine hypertension",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "ROUTINE",
-          "dosing": "Start 0.1 mg daily; increase by 0.1 mg every 1-2 weeks; max 0.3 mg daily",
-          "contraindications": "CHF; hypertension",
-          "monitoring": "Potassium, BP, edema; hypokalemia; supine hypertension"
+          "ICU": "ROUTINE"
         },
         {
           "item": "Droxidopa (Northera)",
           "indication": "Neurogenic orthostatic hypotension",
+          "dosing": "Start 100 mg TID; increase by 100 mg TID every 24-48 hours; max 600 mg TID",
+          "contraindications": "Concurrent ergot alkaloids; hypersensitivity",
+          "monitoring": "Supine hypertension (do not take within 3 hours of bedtime); use caution with MAOIs and triptans (hypertensive risk)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 100 mg TID; increase by 100 mg TID every 24-48 hours; max 600 mg TID",
-          "contraindications": "Concurrent ergot alkaloids; hypersensitivity",
-          "monitoring": "Supine hypertension (do not take within 3 hours of bedtime); use caution with MAOIs and triptans (hypertensive risk)"
+          "ICU": "-"
         },
         {
           "item": "Pyridostigmine",
           "indication": "Orthostatic hypotension (off-label)",
+          "dosing": "30-60 mg TID",
+          "contraindications": "Mechanical GI/GU obstruction; asthma (relative)",
+          "monitoring": "Cholinergic effects; less supine hypertension than midodrine",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "30-60 mg TID",
-          "contraindications": "Mechanical GI/GU obstruction; asthma (relative)",
-          "monitoring": "Cholinergic effects; less supine hypertension than midodrine"
+          "ICU": "-"
         },
         {
           "item": "Polyethylene glycol 3350",
           "indication": "Constipation (autonomic)",
+          "dosing": "17 g daily; adjust to effect",
+          "contraindications": "Bowel obstruction",
+          "monitoring": "Electrolytes with prolonged use",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "17 g daily; adjust to effect",
-          "contraindications": "Bowel obstruction",
-          "monitoring": "Electrolytes with prolonged use"
+          "ICU": "-"
         },
         {
           "item": "Docusate sodium",
           "indication": "Constipation",
+          "dosing": "100 mg BID; max 500 mg/day",
+          "contraindications": "Intestinal obstruction",
+          "monitoring": "Minimal efficacy alone",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "100 mg BID; max 500 mg/day",
-          "contraindications": "Intestinal obstruction",
-          "monitoring": "Minimal efficacy alone"
+          "ICU": "-"
         },
         {
           "item": "Senna",
           "indication": "Constipation",
+          "dosing": "8.6-17.2 mg qHS; max 34.4 mg/day",
+          "contraindications": "Intestinal obstruction; acute abdominal pain",
+          "monitoring": "Cramping",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "8.6-17.2 mg qHS; max 34.4 mg/day",
-          "contraindications": "Intestinal obstruction; acute abdominal pain",
-          "monitoring": "Cramping"
+          "ICU": "-"
         },
         {
           "item": "Metoclopramide",
           "indication": "Gastroparesis",
+          "dosing": "5-10 mg 30 minutes before meals and qHS; max 40 mg/day; limit to 12 weeks (FDA black box: tardive dyskinesia risk)",
+          "contraindications": "Bowel obstruction; Parkinson disease; tardive dyskinesia history",
+          "monitoring": "Tardive dyskinesia (limit duration); QT prolongation",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "5-10 mg 30 minutes before meals and qHS; max 40 mg/day; limit to 12 weeks (FDA black box: tardive dyskinesia risk)",
-          "contraindications": "Bowel obstruction; Parkinson disease; tardive dyskinesia history",
-          "monitoring": "Tardive dyskinesia (limit duration); QT prolongation"
+          "ICU": "-"
         },
         {
           "item": "Domperidone",
           "indication": "Gastroparesis (if metoclopramide contraindicated)",
+          "dosing": "10 mg TID before meals; max 30 mg/day",
+          "contraindications": "QT prolongation; concurrent QT-prolonging drugs",
+          "monitoring": "ECG at baseline; not FDA-approved (requires special access)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-",
-          "dosing": "10 mg TID before meals; max 30 mg/day",
-          "contraindications": "QT prolongation; concurrent QT-prolonging drugs",
-          "monitoring": "ECG at baseline; not FDA-approved (requires special access)"
+          "ICU": "-"
         },
         {
           "item": "Oxybutynin IR",
           "indication": "Bladder urgency (anticholinergic caution in neuropathy)",
+          "dosing": "Start 5 mg BID-TID; max 5 mg QID",
+          "contraindications": "Urinary retention; narrow-angle glaucoma",
+          "monitoring": "Dry mouth, constipation, cognitive impairment",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 5 mg BID-TID; max 5 mg QID",
-          "contraindications": "Urinary retention; narrow-angle glaucoma",
-          "monitoring": "Dry mouth, constipation, cognitive impairment"
+          "ICU": "-"
         },
         {
           "item": "Mirabegron",
           "indication": "Bladder urgency",
+          "dosing": "Start 25 mg daily; may increase to 50 mg daily",
+          "contraindications": "Uncontrolled hypertension",
+          "monitoring": "BP monitoring; fewer anticholinergic effects",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 25 mg daily; may increase to 50 mg daily",
-          "contraindications": "Uncontrolled hypertension",
-          "monitoring": "BP monitoring; fewer anticholinergic effects"
+          "ICU": "-"
         },
         {
           "item": "Tamsulosin",
           "indication": "Urinary retention",
+          "dosing": "0.4 mg daily 30 minutes after same meal each day",
+          "contraindications": "Severe sulfonamide allergy",
+          "monitoring": "Orthostatic hypotension (caution if already orthostatic)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "0.4 mg daily 30 minutes after same meal each day",
-          "contraindications": "Severe sulfonamide allergy",
-          "monitoring": "Orthostatic hypotension (caution if already orthostatic)"
+          "ICU": "-"
         },
         {
           "item": "Sildenafil",
           "indication": "Erectile dysfunction",
+          "dosing": "50 mg 30-60 min before activity; may adjust 25-100 mg; max 100 mg/day",
+          "contraindications": "Concurrent nitrates; recent MI/stroke",
+          "monitoring": "Hypotension; priapism",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "50 mg 30-60 min before activity; may adjust 25-100 mg; max 100 mg/day",
-          "contraindications": "Concurrent nitrates; recent MI/stroke",
-          "monitoring": "Hypotension; priapism"
+          "ICU": "-"
         },
         {
           "item": "Tadalafil",
           "indication": "Erectile dysfunction",
+          "dosing": "10 mg before activity (max once daily) OR 2.5-5 mg daily",
+          "contraindications": "Same as sildenafil",
+          "monitoring": "Same",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "10 mg before activity (max once daily) OR 2.5-5 mg daily",
-          "contraindications": "Same as sildenafil",
-          "monitoring": "Same"
+          "ICU": "-"
         },
         {
           "item": "Hydroxyzine",
           "indication": "Anxiety, pruritus",
+          "dosing": "25-50 mg TID-QID PRN; max 400 mg/day",
+          "contraindications": "QT prolongation (high doses)",
+          "monitoring": "Sedation; anticholinergic effects",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "25-50 mg TID-QID PRN; max 400 mg/day",
-          "contraindications": "QT prolongation (high doses)",
-          "monitoring": "Sedation; anticholinergic effects"
+          "ICU": "-"
         },
         {
           "item": "Buspirone",
           "indication": "Generalized anxiety",
+          "dosing": "Start 5 mg TID; increase by 5 mg every 2-3 days; max 60 mg/day",
+          "contraindications": "Concurrent MAOIs",
+          "monitoring": "Takes 2-4 weeks for effect; no dependence",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 5 mg TID; increase by 5 mg every 2-3 days; max 60 mg/day",
-          "contraindications": "Concurrent MAOIs",
-          "monitoring": "Takes 2-4 weeks for effect; no dependence"
+          "ICU": "-"
         },
         {
           "item": "Trazodone",
           "indication": "Insomnia with chronic pain",
+          "dosing": "Start 25-50 mg qHS; increase to 100-150 mg; max 200 mg qHS",
+          "contraindications": "Concurrent MAOIs; QT prolongation",
+          "monitoring": "QTc; priapism (rare); sedation",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 25-50 mg qHS; increase to 100-150 mg; max 200 mg qHS",
-          "contraindications": "Concurrent MAOIs; QT prolongation",
-          "monitoring": "QTc; priapism (rare); sedation"
+          "ICU": "-"
         },
         {
           "item": "Melatonin",
           "indication": "Insomnia (adjunct)",
+          "dosing": "3-5 mg qHS 30 minutes before bed",
+          "contraindications": "None significant",
+          "monitoring": "Generally well-tolerated",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "3-5 mg qHS 30 minutes before bed",
-          "contraindications": "None significant",
-          "monitoring": "Generally well-tolerated"
+          "ICU": "-"
         }
       ],
       "Disease-Specific Treatments": [
         {
           "item": "IVIG",
           "indication": "CIDP, MMN, GBS",
+          "dosing": "2 g/kg divided over 2-5 days (induction); maintenance 0.4-1 g/kg every 2-4 weeks",
+          "contraindications": "IgA deficiency (use IgA-depleted product); renal failure; thrombosis risk",
+          "monitoring": "Renal function, headache, thrombosis, infusion reactions",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "URGENT",
-          "dosing": "2 g/kg divided over 2-5 days (induction); maintenance 0.4-1 g/kg every 2-4 weeks",
-          "contraindications": "IgA deficiency (use IgA-depleted product); renal failure; thrombosis risk",
-          "monitoring": "Renal function, headache, thrombosis, infusion reactions"
+          "ICU": "URGENT"
         },
         {
           "item": "Plasma exchange (PLEX)",
           "indication": "CIDP, GBS",
+          "dosing": "5-7 exchanges over 10-14 days",
+          "contraindications": "Hemodynamic instability, sepsis",
+          "monitoring": "BP, electrolytes, coags, fibrinogen",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "-",
-          "ICU": "URGENT",
-          "dosing": "5-7 exchanges over 10-14 days",
-          "contraindications": "Hemodynamic instability, sepsis",
-          "monitoring": "BP, electrolytes, coags, fibrinogen"
+          "ICU": "URGENT"
         },
         {
           "item": "Prednisone",
           "indication": "CIDP, vasculitic neuropathy",
+          "dosing": "1 mg/kg/day (max 80 mg) × 4-6 weeks; taper over 3-6 months",
+          "contraindications": "Active untreated infection, uncontrolled diabetes, psychosis",
+          "monitoring": "Glucose, BP, mood, bone density with prolonged use",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "1 mg/kg/day (max 80 mg) Ãƒâ€” 4-6 weeks; taper over 3-6 months",
-          "contraindications": "Active untreated infection, uncontrolled diabetes, psychosis",
-          "monitoring": "Glucose, BP, mood, bone density with prolonged use"
+          "ICU": "-"
         },
         {
           "item": "Rituximab",
           "indication": "Anti-MAG neuropathy, vasculitic neuropathy, refractory CIDP",
+          "dosing": "375 mg/m² IV weekly × 4 weeks OR 1000 mg IV × 2 doses 14 days apart",
+          "contraindications": "Active hepatitis B; active infection",
+          "monitoring": "Hepatitis B serology, infusion reactions, infection monitoring",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-",
-          "dosing": "375 mg/mÃ‚Â² IV weekly Ãƒâ€” 4 weeks OR 1000 mg IV Ãƒâ€” 2 doses 14 days apart",
-          "contraindications": "Active hepatitis B; active infection",
-          "monitoring": "Hepatitis B serology, infusion reactions, infection monitoring"
+          "ICU": "-"
         },
         {
           "item": "Azathioprine",
           "indication": "Steroid-sparing for CIDP, vasculitis",
+          "dosing": "Start 50 mg daily; increase to 2-3 mg/kg/day over weeks",
+          "contraindications": "TPMT deficiency (test before starting); pregnancy",
+          "monitoring": "CBC weekly × 1 month, then q2-4 weeks; LFTs monthly; TPMT genotype",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "Start 50 mg daily; increase to 2-3 mg/kg/day over weeks",
-          "contraindications": "TPMT deficiency (test before starting); pregnancy",
-          "monitoring": "CBC weekly Ãƒâ€” 1 month, then q2-4 weeks; LFTs monthly; TPMT genotype"
+          "ICU": "-"
         },
         {
           "item": "Mycophenolate mofetil",
           "indication": "Steroid-sparing for CIDP, vasculitis",
+          "dosing": "500 mg BID × 2 weeks, then 1000 mg BID",
+          "contraindications": "Pregnancy (teratogenic); concurrent azathioprine",
+          "monitoring": "CBC q2 weeks × 3 months, then monthly; GI upset",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "500 mg BID Ãƒâ€” 2 weeks, then 1000 mg BID",
-          "contraindications": "Pregnancy (teratogenic); concurrent azathioprine",
-          "monitoring": "CBC q2 weeks Ãƒâ€” 3 months, then monthly; GI upset"
+          "ICU": "-"
         },
         {
           "item": "Cyclophosphamide",
           "indication": "Vasculitic neuropathy (severe)",
+          "dosing": "1-2 mg/kg/day PO OR 500-1000 mg/m² IV monthly × 6 months",
+          "contraindications": "Pregnancy; bone marrow suppression; active infection",
+          "monitoring": "CBC weekly; urinalysis (hemorrhagic cystitis); cumulative dose limit",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-",
-          "dosing": "1-2 mg/kg/day PO OR 500-1000 mg/mÃ‚Â² IV monthly Ãƒâ€” 6 months",
-          "contraindications": "Pregnancy; bone marrow suppression; active infection",
-          "monitoring": "CBC weekly; urinalysis (hemorrhagic cystitis); cumulative dose limit"
+          "ICU": "-"
         },
         {
           "item": "Tafamidis (Vyndamax/Vyndaqel)",
           "indication": "Hereditary transthyretin (hATTR) amyloidosis with polyneuropathy",
+          "dosing": "61 mg (Vyndamax) or 80 mg (Vyndaqel) daily",
+          "contraindications": "None absolute",
+          "monitoring": "LFTs; clinical response",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "61 mg (Vyndamax) or 80 mg (Vyndaqel) daily",
-          "contraindications": "None absolute",
-          "monitoring": "LFTs; clinical response"
+          "ICU": "-"
         },
         {
           "item": "Patisiran (Onpattro)",
           "indication": "hATTR amyloidosis with polyneuropathy",
+          "dosing": "0.3 mg/kg IV every 3 weeks",
+          "contraindications": "None absolute",
+          "monitoring": "Vitamin A supplementation at RDA required (patisiran reduces serum vitamin A via TTR reduction); infusion reactions",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "0.3 mg/kg IV every 3 weeks",
-          "contraindications": "None absolute",
-          "monitoring": "Vitamin A supplementation at RDA required (patisiran reduces serum vitamin A via TTR reduction); infusion reactions"
+          "ICU": "-"
         },
         {
           "item": "Inotersen (Tegsedi)",
           "indication": "hATTR amyloidosis with polyneuropathy",
+          "dosing": "284 mg SC once weekly",
+          "contraindications": "Platelet count <100,000; prior glomerulonephritis from inotersen",
+          "monitoring": "Platelet count weekly throughout treatment (more frequent if platelets drop below 75 x 10^9/L); continue monitoring 8 weeks post-discontinuation; renal function q2 weeks; REMS program required",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "284 mg SC once weekly",
-          "contraindications": "Platelet count <100,000; prior glomerulonephritis from inotersen",
-          "monitoring": "Platelet count weekly throughout treatment (more frequent if <75 Ãƒâ€” 10Ã¢ÂÂ¹/L); continue monitoring 8 weeks post-discontinuation; renal function q2 weeks; REMS program required"
+          "ICU": "-"
         }
       ]
     },
@@ -1092,131 +1100,131 @@
       "Referrals & Consults": [
         {
           "item": "Neuromuscular neurology referral",
+          "indication": "All new neuropathy diagnoses for etiology workup and management",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "URGENT",
-          "indication": "All new neuropathy diagnoses for etiology workup and management"
+          "ICU": "URGENT"
         },
         {
           "item": "Electrodiagnostic medicine/EMG referral",
+          "indication": "NCS/EMG for characterization (axonal vs demyelinating, pattern)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "indication": "NCS/EMG for characterization (axonal vs demyelinating, pattern)"
+          "ICU": "-"
         },
         {
           "item": "Physical therapy consult for balance and gait",
+          "indication": "Gait instability, weakness, falls prevention",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "ROUTINE",
-          "indication": "Gait instability, weakness, falls prevention"
+          "ICU": "ROUTINE"
         },
         {
           "item": "Occupational therapy consult for hand function",
+          "indication": "Fine motor impairment, ADL difficulty",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "indication": "Fine motor impairment, ADL difficulty"
+          "ICU": "-"
         },
         {
           "item": "Podiatry referral",
+          "indication": "Diabetic neuropathy, foot care education, orthotics, wound prevention",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "indication": "Diabetic neuropathy, foot care education, orthotics, wound prevention"
+          "ICU": "-"
         },
         {
           "item": "Endocrinology referral",
+          "indication": "Diabetes management optimization if HbA1c not at goal",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "indication": "Diabetes management optimization if HbA1c not at goal"
+          "ICU": "-"
         },
         {
           "item": "Pain management/Anesthesia referral",
+          "indication": "Refractory neuropathic pain, spinal cord stimulator evaluation",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "indication": "Refractory neuropathic pain, spinal cord stimulator evaluation"
+          "ICU": "-"
         },
         {
           "item": "Rheumatology referral",
+          "indication": "Suspected vasculitic neuropathy, connective tissue disease",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "indication": "Suspected vasculitic neuropathy, connective tissue disease"
+          "ICU": "-"
         },
         {
           "item": "Hematology/Oncology referral",
+          "indication": "Paraproteinemic neuropathy, suspected malignancy, amyloidosis",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "indication": "Paraproteinemic neuropathy, suspected malignancy, amyloidosis"
+          "ICU": "-"
         },
         {
           "item": "Genetic counseling referral",
+          "indication": "Suspected hereditary neuropathy (CMT, hATTR), family history",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "indication": "Suspected hereditary neuropathy (CMT, hATTR), family history"
+          "ICU": "-"
         },
         {
           "item": "Psychiatry/Psychology referral",
+          "indication": "Chronic pain management, depression, anxiety",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "indication": "Chronic pain management, depression, anxiety"
+          "ICU": "-"
         },
         {
           "item": "Social work consult",
+          "indication": "Disability resources, insurance navigation, DME assistance",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "indication": "Disability resources, insurance navigation, DME assistance"
+          "ICU": "-"
         },
         {
           "item": "Wound care referral",
+          "indication": "Diabetic foot ulcers, non-healing wounds",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "URGENT",
-          "indication": "Diabetic foot ulcers, non-healing wounds"
+          "ICU": "URGENT"
         },
         {
           "item": "Orthotics/Prosthetics",
+          "indication": "AFOs for foot drop, custom orthotics",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "indication": "AFOs for foot drop, custom orthotics"
+          "ICU": "-"
         },
         {
           "item": "Nutrition/Dietitian referral",
+          "indication": "Alcoholic neuropathy, nutritional deficiencies, bariatric surgery patients",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "indication": "Alcoholic neuropathy, nutritional deficiencies, bariatric surgery patients"
+          "ICU": "-"
         },
         {
           "item": "Addiction medicine/Psychiatry",
+          "indication": "Alcohol use disorder, opioid risk mitigation",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "indication": "Alcohol use disorder, opioid risk mitigation"
+          "ICU": "-"
         }
       ],
       "Patient Instructions": [
@@ -1582,138 +1590,138 @@
   "monitoring": [
     {
       "item": "HbA1c",
+      "frequency": "Every 3 months until stable, then every 6 months",
+      "action": "Intensify glycemic therapy; endocrinology referral",
       "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "-",
-      "frequency": "Every 3 months until stable, then every 6 months",
-      "action": "Intensify glycemic therapy; endocrinology referral"
+      "ICU": "-"
     },
     {
       "item": "Vitamin B12",
+      "frequency": "1-2 months after starting supplementation, then annually",
+      "action": "Continue supplementation; rule out malabsorption",
       "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "-",
-      "frequency": "1-2 months after starting supplementation, then annually",
-      "action": "Continue supplementation; rule out malabsorption"
+      "ICU": "-"
     },
     {
       "item": "Pain scores (0-10 NRS)",
+      "frequency": "Each visit",
+      "action": "Titrate medications; consider adjuncts or referral",
       "ED": "ROUTINE",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "ROUTINE",
-      "frequency": "Each visit",
-      "action": "Titrate medications; consider adjuncts or referral"
+      "ICU": "ROUTINE"
     },
     {
       "item": "Foot exam",
+      "frequency": "Every visit; comprehensive annually",
+      "action": "Podiatry referral; wound care",
       "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "-",
-      "frequency": "Every visit; comprehensive annually",
-      "action": "Podiatry referral; wound care"
+      "ICU": "-"
     },
     {
       "item": "Blood pressure (supine and standing)",
+      "frequency": "Each visit if orthostatic symptoms",
+      "action": "Adjust orthostatic hypotension medications; consider compression",
       "ED": "URGENT",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "ROUTINE",
-      "frequency": "Each visit if orthostatic symptoms",
-      "action": "Adjust orthostatic hypotension medications; consider compression"
+      "ICU": "ROUTINE"
     },
     {
       "item": "Gait and fall risk assessment",
+      "frequency": "Each visit",
+      "action": "PT referral; assistive devices; home safety evaluation",
       "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "-",
-      "frequency": "Each visit",
-      "action": "PT referral; assistive devices; home safety evaluation"
+      "ICU": "-"
     },
     {
       "item": "Creatinine clearance",
+      "frequency": "Baseline; with renal disease, elderly, or gabapentinoid use; with dose changes",
+      "action": "Adjust gabapentin: CrCl 30-59 max 900-1400 mg/day; CrCl 15-29 max 600 mg/day; CrCl <15 max 300 mg/day",
       "ED": "STAT",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "STAT",
-      "frequency": "Baseline; with renal disease, elderly, or gabapentinoid use; with dose changes",
-      "action": "Adjust gabapentin: CrCl 30-59 max 900-1400 mg/day; CrCl 15-29 max 600 mg/day; CrCl <15 max 300 mg/day"
+      "ICU": "STAT"
     },
     {
       "item": "LFTs (if on high-dose gabapentinoid)",
+      "frequency": "Baseline, then annually",
+      "action": "Dose adjustment if hepatic impairment",
       "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "-",
-      "frequency": "Baseline, then annually",
-      "action": "Dose adjustment if hepatic impairment"
+      "ICU": "-"
     },
     {
       "item": "Renal function",
+      "frequency": "Every 6-12 months",
+      "action": "Adjust renally cleared medications (gabapentin, pregabalin)",
       "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "-",
-      "frequency": "Every 6-12 months",
-      "action": "Adjust renally cleared medications (gabapentin, pregabalin)"
+      "ICU": "-"
     },
     {
       "item": "CBC (if on immunotherapy)",
+      "frequency": "Per medication protocol",
+      "action": "Adjust immunosuppression dose; infection evaluation",
       "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "ROUTINE",
-      "frequency": "Per medication protocol",
-      "action": "Adjust immunosuppression dose; infection evaluation"
+      "ICU": "ROUTINE"
     },
     {
       "item": "NCS/EMG follow-up",
+      "frequency": "6-12 months if treatment initiated; PRN for symptom change",
+      "action": "If progressive despite treatment, reconsider diagnosis or escalate therapy",
       "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "-",
-      "frequency": "6-12 months if treatment initiated; PRN for symptom change",
-      "action": "If progressive despite treatment, reconsider diagnosis or escalate therapy"
+      "ICU": "-"
     },
     {
       "item": "ECG (if on TCAs)",
+      "frequency": "Baseline; with dose increases >100 mg",
+      "action": "Reduce dose or switch medication",
       "ED": "URGENT",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "URGENT",
-      "frequency": "Baseline; with dose increases >100 mg",
-      "action": "Reduce dose or switch medication"
+      "ICU": "URGENT"
     },
     {
       "item": "Weight (if on gabapentinoid)",
+      "frequency": "Each visit",
+      "action": "Diet/exercise counseling; consider switch",
       "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "-",
-      "frequency": "Each visit",
-      "action": "Diet/exercise counseling; consider switch"
+      "ICU": "-"
     },
     {
       "item": "Depression/anxiety screening (PHQ-9, GAD-7)",
+      "frequency": "Annually or with symptom concern",
+      "action": "Psychiatry referral; pharmacotherapy",
       "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "-",
-      "frequency": "Annually or with symptom concern",
-      "action": "Psychiatry referral; pharmacotherapy"
+      "ICU": "-"
     },
     {
       "item": "Respiratory function (if GBS/CIDP suspected)",
+      "frequency": "Q4h if concern; FVC and NIF",
+      "action": "ICU transfer if FVC <20 or NIF >-30; intubation if declining",
       "ED": "STAT",
       "HOSP": "STAT",
       "OPD": "-",
-      "ICU": "STAT",
-      "frequency": "Q4h if concern; FVC and NIF",
-      "action": "ICU transfer if FVC <20 or NIF >-30; intubation if declining"
+      "ICU": "STAT"
     }
   ],
   "disposition": [
