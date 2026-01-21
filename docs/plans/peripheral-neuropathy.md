@@ -1,7 +1,7 @@
 ---
 title: Peripheral Neuropathy - New Diagnosis/Evaluation
 description: Initial diagnostic workup and symptomatic management of suspected or newly diagnosed peripheral neuropathy including etiologic evaluation and pain management.
-version: "1.6"
+version: "1.7"
 setting: ED, HOSP, OPD, ICU
 status: approved
 tags:
@@ -12,7 +12,7 @@ tags:
 
 # Peripheral Neuropathy - New Diagnosis/Evaluation
 
-**VERSION:** 1.6
+**VERSION:** 1.7
 **CREATED:** January 14, 2026
 **REVISED:** January 14, 2026
 **STATUS:** Approved
@@ -95,30 +95,30 @@ SECTION A: ACTION ITEMS
 
 ### 2A. Essential/First-line
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Nerve conduction studies (NCS) and EMG | - | ROUTINE | ROUTINE | - | Optimal 3-4 weeks after symptom onset (allows Wallerian degeneration to manifest); can be done earlier if acute weakness suspected | Pattern determines axonal vs demyelinating, distribution, severity | Pacemaker (relative); anticoagulation for needle EMG (relative) |
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
+| Nerve conduction studies (NCS) and EMG | Optimal 3-4 weeks after symptom onset (allows Wallerian degeneration to manifest); can be done earlier if acute weakness suspected | Pattern determines axonal vs demyelinating, distribution, severity | Pacemaker (relative); anticoagulation for needle EMG (relative) | - | ROUTINE | ROUTINE | - |
 
 ### 2B. Extended
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI spine (cervical/lumbar) with and without contrast | URGENT | ROUTINE | ROUTINE | URGENT | If radiculopathy, myelopathy, or polyradiculopathy suspected | Nerve root enhancement (radiculopathy), cord signal change | GFR <30, pacemaker, gadolinium allergy |
-| MRI lumbar plexus with contrast | - | ROUTINE | ROUTINE | - | Lumbosacral plexopathy, asymmetric proximal weakness | Plexus enhancement, mass lesion | Same as above |
-| MRI brachial plexus with contrast | - | ROUTINE | ROUTINE | - | Brachial plexopathy, Parsonage-Turner syndrome | Plexus enhancement, denervation changes | Same as above |
-| Autonomic function testing (QSART, tilt table, HRV) | - | - | ROUTINE | - | Autonomic symptoms (orthostasis, anhidrosis, GI dysmotility) | Abnormal sudomotor or cardiovagal function | None significant |
-| Quantitative sensory testing (QST) | - | - | EXT | - | Small fiber neuropathy evaluation | Abnormal thermal thresholds | None significant |
-| Chest X-ray | URGENT | ROUTINE | ROUTINE | URGENT | Lung cancer (paraneoplastic), sarcoidosis | Normal | Pregnancy (relative) |
-| CT chest/abdomen/pelvis | - | ROUTINE | ROUTINE | - | Occult malignancy if paraneoplastic suspected | No mass | Contrast allergy, renal impairment |
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
+| MRI spine (cervical/lumbar) with and without contrast | If radiculopathy, myelopathy, or polyradiculopathy suspected | Nerve root enhancement (radiculopathy), cord signal change | GFR <30, pacemaker, gadolinium allergy | URGENT | ROUTINE | ROUTINE | URGENT |
+| MRI lumbar plexus with contrast | Lumbosacral plexopathy, asymmetric proximal weakness | Plexus enhancement, mass lesion | Same as above | - | ROUTINE | ROUTINE | - |
+| MRI brachial plexus with contrast | Brachial plexopathy, Parsonage-Turner syndrome | Plexus enhancement, denervation changes | Same as above | - | ROUTINE | ROUTINE | - |
+| Autonomic function testing (QSART, tilt table, HRV) | Autonomic symptoms (orthostasis, anhidrosis, GI dysmotility) | Abnormal sudomotor or cardiovagal function | None significant | - | - | ROUTINE | - |
+| Quantitative sensory testing (QST) | Small fiber neuropathy evaluation | Abnormal thermal thresholds | None significant | - | - | EXT | - |
+| Chest X-ray | Lung cancer (paraneoplastic), sarcoidosis | Normal | Pregnancy (relative) | URGENT | ROUTINE | ROUTINE | URGENT |
+| CT chest/abdomen/pelvis | Occult malignancy if paraneoplastic suspected | No mass | Contrast allergy, renal impairment | - | ROUTINE | ROUTINE | - |
 
 ### 2C. Rare/Specialized
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| PET-CT | - | EXT | EXT | - | Occult malignancy, amyloidosis | No FDG-avid lesions | Pregnancy, uncontrolled diabetes |
-| Nerve ultrasound | - | EXT | ROUTINE | - | CIDP (nerve enlargement), entrapment | Normal nerve caliber | None |
-| MR neurography | - | EXT | EXT | - | Focal nerve pathology, plexopathy | Normal nerve signal/caliber | Same as MRI |
-| Sural nerve biopsy | - | EXT | - | - | Vasculitic neuropathy, amyloidosis, CIDP | No vasculitis or amyloid deposits | Coagulopathy |
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
+| PET-CT | Occult malignancy, amyloidosis | No FDG-avid lesions | Pregnancy, uncontrolled diabetes | - | EXT | EXT | - |
+| Nerve ultrasound | CIDP (nerve enlargement), entrapment | Normal nerve caliber | None | - | EXT | ROUTINE | - |
+| MR neurography | Focal nerve pathology, plexopathy | Normal nerve signal/caliber | Same as MRI | - | EXT | EXT | - |
+| Sural nerve biopsy | Vasculitic neuropathy, amyloidosis, CIDP | No vasculitis or amyloid deposits | Coagulopathy | - | EXT | - | - |
 
 ### LUMBAR PUNCTURE
 
@@ -128,16 +128,16 @@ SECTION A: ACTION ITEMS
 
 **Volume Required:** 10-15 mL (standard diagnostic)
 
-| Study | ED | HOSP | OPD | Rationale | Target Finding |
-|-------|:--:|:----:|:---:|-----------|----------------|
-| Opening pressure | URGENT | ROUTINE | ROUTINE | Rule out elevated ICP | 10-20 cm H2O |
-| Cell count (tubes 1 and 4) | URGENT | ROUTINE | ROUTINE | Inflammation, infection | WBC <5, RBC 0 |
-| Protein | URGENT | ROUTINE | ROUTINE | Albuminocytologic dissociation in GBS/CIDP | Normal 15-45 mg/dL; elevated in GBS/CIDP |
-| Glucose with serum glucose | URGENT | ROUTINE | ROUTINE | Infection, carcinomatous meningitis | Normal (>60% serum) |
-| Gram stain and culture | URGENT | ROUTINE | ROUTINE | Rule out infection | No organisms |
-| Cytology | - | ROUTINE | ROUTINE | Leptomeningeal carcinomatosis | Negative |
-| VDRL (CSF) | - | ROUTINE | ROUTINE | Neurosyphilis | Negative |
-| Lyme PCR/antibody index | - | ROUTINE | ROUTINE | Endemic areas | Negative |
+| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|-------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Opening pressure | Rule out elevated ICP | 10-20 cm H2O | URGENT | ROUTINE | ROUTINE | - |
+| Cell count (tubes 1 and 4) | Inflammation, infection | WBC <5, RBC 0 | URGENT | ROUTINE | ROUTINE | - |
+| Protein | Albuminocytologic dissociation in GBS/CIDP | Normal 15-45 mg/dL; elevated in GBS/CIDP | URGENT | ROUTINE | ROUTINE | - |
+| Glucose with serum glucose | Infection, carcinomatous meningitis | Normal (>60% serum) | URGENT | ROUTINE | ROUTINE | - |
+| Gram stain and culture | Rule out infection | No organisms | URGENT | ROUTINE | ROUTINE | - |
+| Cytology | Leptomeningeal carcinomatosis | Negative | - | ROUTINE | ROUTINE | - |
+| VDRL (CSF) | Neurosyphilis | Negative | - | ROUTINE | ROUTINE | - |
+| Lyme PCR/antibody index | Endemic areas | Negative | - | ROUTINE | ROUTINE | - |
 
 **Special Handling:** Cytology requires rapid transport (<1 hour).
 
@@ -151,75 +151,75 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Thiamine IV (if alcoholic or malnourished) | STAT | STAT | - | STAT | 500 mg IV TID Ãƒâ€” 3 days, then 250 mg IV daily Ãƒâ€” 3-5 days, then oral | None significant | Anaphylaxis (rare) |
-| Vitamin B12 IM (if deficient) | URGENT | URGENT | ROUTINE | URGENT | 1000 mcg IM daily Ãƒâ€” 7 days, then weekly Ãƒâ€” 4 weeks, then monthly | Cobalt allergy | Reticulocyte count at 1 week; B12 level at 1-2 months |
-| Glucose control optimization | STAT | STAT | ROUTINE | STAT | Per diabetes protocol; target HbA1c <7% | Hypoglycemia risk | Glucose monitoring |
+| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Thiamine IV (if alcoholic or malnourished) | 500 mg IV TID × 3 days, then 250 mg IV daily × 3-5 days, then oral | None significant | Anaphylaxis (rare) | STAT | STAT | - | STAT |
+| Vitamin B12 IM (if deficient) | 1000 mcg IM daily × 7 days, then weekly × 4 weeks, then monthly | Cobalt allergy | Reticulocyte count at 1 week; B12 level at 1-2 months | URGENT | URGENT | ROUTINE | URGENT |
+| Glucose control optimization | Per diabetes protocol; target HbA1c <7% | Hypoglycemia risk | Glucose monitoring | STAT | STAT | ROUTINE | STAT |
 
 ### 3B. Symptomatic Treatments - Neuropathic Pain
 
-| Treatment | Indication | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|------------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Gabapentin | Neuropathic pain (first-line) | - | ROUTINE | ROUTINE | ROUTINE | Start 300 mg qHS; increase by 300 mg every 1-3 days; target 900-1800 mg TID; max 3600 mg/day | Renal impairment (adjust dose per CrCl: CrCl 30-59: max 900-1400 mg/day; CrCl 15-29: max 600 mg/day; CrCl <15: max 300 mg/day) | Sedation, dizziness, peripheral edema; taper to discontinue |
-| Pregabalin | Neuropathic pain (first-line) | - | ROUTINE | ROUTINE | ROUTINE | Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID | Renal impairment (adjust dose per CrCl); Class V controlled substance | Sedation, weight gain, peripheral edema |
-| Duloxetine | Neuropathic pain (first-line, especially diabetic) | - | ROUTINE | ROUTINE | - | Start 30 mg daily Ãƒâ€” 1 week; increase to 60 mg daily; max 120 mg/day | Hepatic impairment; CrCl <30; concurrent MAOIs; uncontrolled narrow-angle glaucoma | Nausea (usually transient), BP; discontinuation syndrome (taper over 2+ weeks) |
-| Venlafaxine XR | Neuropathic pain | - | ROUTINE | ROUTINE | - | Start 37.5-75 mg daily; increase by 75 mg every 4-7 days; max 225 mg daily | Uncontrolled hypertension; concurrent MAOIs | BP monitoring; discontinuation syndrome |
-| Amitriptyline | Neuropathic pain (second-line) | - | ROUTINE | ROUTINE | - | Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma; elderly (anticholinergic burden) | ECG if dose >100 mg/day; anticholinergic effects |
-| Nortriptyline | Neuropathic pain (second-line) | - | ROUTINE | ROUTINE | - | Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Same as amitriptyline | Same; fewer anticholinergic effects than amitriptyline |
-| Desipramine | Neuropathic pain (second-line) | - | ROUTINE | ROUTINE | - | Start 25 mg qHS; increase by 25 mg weekly; max 150 mg daily | Same as amitriptyline | Same; least anticholinergic TCA |
-| Carbamazepine | Trigeminal neuralgia, lancinating pain | - | ROUTINE | ROUTINE | - | Start 100 mg BID; increase by 200 mg/day every 3-7 days; max 1200 mg/day | AV block; bone marrow suppression; concurrent MAOIs | CBC, LFTs, sodium at baseline and periodically; HLA-B*1502 screening in at-risk populations |
-| Oxcarbazepine | Trigeminal neuralgia, lancinating pain | - | ROUTINE | ROUTINE | - | Start 300 mg BID; increase by 300 mg every 3 days; max 1200 mg BID | Hypersensitivity to carbamazepine | Sodium (hyponatremia risk); HLA-B*1502 screening |
-| Capsaicin cream 0.025-0.075% | Localized neuropathic pain | - | - | ROUTINE | - | Apply TID-QID to affected area; takes 2-4 weeks for effect | Open wounds; avoid eyes/mucous membranes | Initial burning (decreases with continued use); wash hands after application |
-| Capsaicin 8% patch (Qutenza) | Localized neuropathic pain (refractory) | - | - | ROUTINE | - | Applied by healthcare provider for 30-60 minutes; may repeat every 3 months | Same as above | Must be applied in clinic; pretreat area with topical lidocaine |
-| Lidocaine 5% patch | Localized neuropathic pain | - | ROUTINE | ROUTINE | ROUTINE | Apply 1-3 patches to painful area for 12 hours on, 12 hours off | Severe hepatic impairment; application to broken skin | Minimal systemic absorption; local irritation |
-| Tramadol | Moderate neuropathic pain (adjunct) | - | ROUTINE | ROUTINE | - | Start 50 mg q6h PRN; may use ER 100 mg daily; max 400 mg/day | Seizure disorder; concurrent MAOIs; concurrent SSRIs (serotonin syndrome) | Serotonin syndrome; seizures; dependence (Schedule IV) |
-| Tapentadol ER | Moderate-severe neuropathic pain | - | - | ROUTINE | - | Start 50 mg BID; increase by 50 mg BID every 3 days; max 250 mg BID | Same as tramadol | Same; Schedule II |
-| Morphine ER | Severe refractory pain | - | ROUTINE | ROUTINE | ROUTINE | Start 15 mg q12h; titrate every 1-2 days; no max (titrate to effect) | Respiratory depression; paralytic ileus; concurrent MAOIs | Sedation, constipation, respiratory status; naloxone available |
-| Oxycodone ER | Severe refractory pain | - | ROUTINE | ROUTINE | ROUTINE | Start 10 mg q12h; titrate every 1-2 days | Same as morphine | Same; Schedule II |
-| Methadone | Severe refractory neuropathic pain | - | - | EXT | - | Start 2.5-5 mg TID; titrate slowly (long half-life); specialist management | QT prolongation; concurrent QT-prolonging drugs | ECG at baseline and with dose changes; QTc monitoring |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Gabapentin | Neuropathic pain (first-line) | Start 300 mg qHS; increase by 300 mg every 1-3 days; target 900-1800 mg TID; max 3600 mg/day | Renal impairment (adjust dose per CrCl: CrCl 30-59: max 900-1400 mg/day; CrCl 15-29: max 600 mg/day; CrCl <15: max 300 mg/day) | Sedation, dizziness, peripheral edema; taper to discontinue | - | ROUTINE | ROUTINE | ROUTINE |
+| Pregabalin | Neuropathic pain (first-line) | Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID | Renal impairment (adjust dose per CrCl); Class V controlled substance | Sedation, weight gain, peripheral edema | - | ROUTINE | ROUTINE | ROUTINE |
+| Duloxetine | Neuropathic pain (first-line, especially diabetic) | Start 30 mg daily × 1 week; increase to 60 mg daily; max 120 mg/day | Hepatic impairment; CrCl <30; concurrent MAOIs; uncontrolled narrow-angle glaucoma | Nausea (usually transient), BP; discontinuation syndrome (taper over 2+ weeks) | - | ROUTINE | ROUTINE | - |
+| Venlafaxine XR | Neuropathic pain | Start 37.5-75 mg daily; increase by 75 mg every 4-7 days; max 225 mg daily | Uncontrolled hypertension; concurrent MAOIs | BP monitoring; discontinuation syndrome | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | Neuropathic pain (second-line) | Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma; elderly (anticholinergic burden) | ECG if dose >100 mg/day; anticholinergic effects | - | ROUTINE | ROUTINE | - |
+| Nortriptyline | Neuropathic pain (second-line) | Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Same as amitriptyline | Same; fewer anticholinergic effects than amitriptyline | - | ROUTINE | ROUTINE | - |
+| Desipramine | Neuropathic pain (second-line) | Start 25 mg qHS; increase by 25 mg weekly; max 150 mg daily | Same as amitriptyline | Same; least anticholinergic TCA | - | ROUTINE | ROUTINE | - |
+| Carbamazepine | Trigeminal neuralgia, lancinating pain | Start 100 mg BID; increase by 200 mg/day every 3-7 days; max 1200 mg/day | AV block; bone marrow suppression; concurrent MAOIs | CBC, LFTs, sodium at baseline and periodically; HLA-B*1502 screening in at-risk populations | - | ROUTINE | ROUTINE | - |
+| Oxcarbazepine | Trigeminal neuralgia, lancinating pain | Start 300 mg BID; increase by 300 mg every 3 days; max 1200 mg BID | Hypersensitivity to carbamazepine | Sodium (hyponatremia risk); HLA-B*1502 screening | - | ROUTINE | ROUTINE | - |
+| Capsaicin cream 0.025-0.075% | Localized neuropathic pain | Apply TID-QID to affected area; takes 2-4 weeks for effect | Open wounds; avoid eyes/mucous membranes | Initial burning (decreases with continued use); wash hands after application | - | - | ROUTINE | - |
+| Capsaicin 8% patch (Qutenza) | Localized neuropathic pain (refractory) | Applied by healthcare provider for 30-60 minutes; may repeat every 3 months | Same as above | Must be applied in clinic; pretreat area with topical lidocaine | - | - | ROUTINE | - |
+| Lidocaine 5% patch | Localized neuropathic pain | Apply 1-3 patches to painful area for 12 hours on, 12 hours off | Severe hepatic impairment; application to broken skin | Minimal systemic absorption; local irritation | - | ROUTINE | ROUTINE | ROUTINE |
+| Tramadol | Moderate neuropathic pain (adjunct) | Start 50 mg q6h PRN; may use ER 100 mg daily; max 400 mg/day | Seizure disorder; concurrent MAOIs; concurrent SSRIs (serotonin syndrome) | Serotonin syndrome; seizures; dependence (Schedule IV) | - | ROUTINE | ROUTINE | - |
+| Tapentadol ER | Moderate-severe neuropathic pain | Start 50 mg BID; increase by 50 mg BID every 3 days; max 250 mg BID | Same as tramadol | Same; Schedule II | - | - | ROUTINE | - |
+| Morphine ER | Severe refractory pain | Start 15 mg q12h; titrate every 1-2 days; no max (titrate to effect) | Respiratory depression; paralytic ileus; concurrent MAOIs | Sedation, constipation, respiratory status; naloxone available | - | ROUTINE | ROUTINE | ROUTINE |
+| Oxycodone ER | Severe refractory pain | Start 10 mg q12h; titrate every 1-2 days | Same as morphine | Same; Schedule II | - | ROUTINE | ROUTINE | ROUTINE |
+| Methadone | Severe refractory neuropathic pain | Start 2.5-5 mg TID; titrate slowly (long half-life); specialist management | QT prolongation; concurrent QT-prolonging drugs | ECG at baseline and with dose changes; QTc monitoring | - | - | EXT | - |
 
 **Combination Therapy Note:** For refractory neuropathic pain, combining agents from different classes (e.g., gabapentinoid + SNRI, or gabapentinoid + TCA) is often more effective than maximizing monotherapy. Avoid combining TCAs with SNRIs (serotonin syndrome risk).
 
 ### 3C. Symptomatic Treatments - Other Symptoms
 
-| Treatment | Indication | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|------------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Midodrine | Orthostatic hypotension | - | ROUTINE | ROUTINE | ROUTINE | Start 2.5 mg TID (upon awakening, midday, mid-afternoon); increase by 2.5 mg every 1-2 weeks; max 10 mg TID; do NOT take within 4 hours of bedtime | Severe heart disease; urinary retention; pheochromocytoma | Supine hypertension (avoid lying flat within 4 hours); urinary retention |
-| Fludrocortisone | Orthostatic hypotension | - | ROUTINE | ROUTINE | ROUTINE | Start 0.1 mg daily; increase by 0.1 mg every 1-2 weeks; max 0.3 mg daily | CHF; hypertension | Potassium, BP, edema; hypokalemia; supine hypertension |
-| Droxidopa (Northera) | Neurogenic orthostatic hypotension | - | - | ROUTINE | - | Start 100 mg TID; increase by 100 mg TID every 24-48 hours; max 600 mg TID | Concurrent ergot alkaloids; hypersensitivity | Supine hypertension (do not take within 3 hours of bedtime); use caution with MAOIs and triptans (hypertensive risk) |
-| Pyridostigmine | Orthostatic hypotension (off-label) | - | - | ROUTINE | - | 30-60 mg TID | Mechanical GI/GU obstruction; asthma (relative) | Cholinergic effects; less supine hypertension than midodrine |
-| Polyethylene glycol 3350 | Constipation (autonomic) | - | ROUTINE | ROUTINE | - | 17 g daily; adjust to effect | Bowel obstruction | Electrolytes with prolonged use |
-| Docusate sodium | Constipation | - | ROUTINE | ROUTINE | - | 100 mg BID; max 500 mg/day | Intestinal obstruction | Minimal efficacy alone |
-| Senna | Constipation | - | ROUTINE | ROUTINE | - | 8.6-17.2 mg qHS; max 34.4 mg/day | Intestinal obstruction; acute abdominal pain | Cramping |
-| Metoclopramide | Gastroparesis | - | ROUTINE | ROUTINE | - | 5-10 mg 30 minutes before meals and qHS; max 40 mg/day; limit to 12 weeks (FDA black box: tardive dyskinesia risk) | Bowel obstruction; Parkinson disease; tardive dyskinesia history | Tardive dyskinesia (limit duration); QT prolongation |
-| Domperidone | Gastroparesis (if metoclopramide contraindicated) | - | - | EXT | - | 10 mg TID before meals; max 30 mg/day | QT prolongation; concurrent QT-prolonging drugs | ECG at baseline; not FDA-approved (requires special access) |
-| Oxybutynin IR | Bladder urgency (anticholinergic caution in neuropathy) | - | ROUTINE | ROUTINE | - | Start 5 mg BID-TID; max 5 mg QID | Urinary retention; narrow-angle glaucoma | Dry mouth, constipation, cognitive impairment |
-| Mirabegron | Bladder urgency | - | - | ROUTINE | - | Start 25 mg daily; may increase to 50 mg daily | Uncontrolled hypertension | BP monitoring; fewer anticholinergic effects |
-| Tamsulosin | Urinary retention | - | ROUTINE | ROUTINE | - | 0.4 mg daily 30 minutes after same meal each day | Severe sulfonamide allergy | Orthostatic hypotension (caution if already orthostatic) |
-| Sildenafil | Erectile dysfunction | - | - | ROUTINE | - | 50 mg 30-60 min before activity; may adjust 25-100 mg; max 100 mg/day | Concurrent nitrates; recent MI/stroke | Hypotension; priapism |
-| Tadalafil | Erectile dysfunction | - | - | ROUTINE | - | 10 mg before activity (max once daily) OR 2.5-5 mg daily | Same as sildenafil | Same |
-| Hydroxyzine | Anxiety, pruritus | - | ROUTINE | ROUTINE | - | 25-50 mg TID-QID PRN; max 400 mg/day | QT prolongation (high doses) | Sedation; anticholinergic effects |
-| Buspirone | Generalized anxiety | - | - | ROUTINE | - | Start 5 mg TID; increase by 5 mg every 2-3 days; max 60 mg/day | Concurrent MAOIs | Takes 2-4 weeks for effect; no dependence |
-| Trazodone | Insomnia with chronic pain | - | ROUTINE | ROUTINE | - | Start 25-50 mg qHS; increase to 100-150 mg; max 200 mg qHS | Concurrent MAOIs; QT prolongation | QTc; priapism (rare); sedation |
-| Melatonin | Insomnia (adjunct) | - | ROUTINE | ROUTINE | - | 3-5 mg qHS 30 minutes before bed | None significant | Generally well-tolerated |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Midodrine | Orthostatic hypotension | Start 2.5 mg TID (upon awakening, midday, mid-afternoon); increase by 2.5 mg every 1-2 weeks; max 10 mg TID; do NOT take within 4 hours of bedtime | Severe heart disease; urinary retention; pheochromocytoma | Supine hypertension (avoid lying flat within 4 hours); urinary retention | - | ROUTINE | ROUTINE | ROUTINE |
+| Fludrocortisone | Orthostatic hypotension | Start 0.1 mg daily; increase by 0.1 mg every 1-2 weeks; max 0.3 mg daily | CHF; hypertension | Potassium, BP, edema; hypokalemia; supine hypertension | - | ROUTINE | ROUTINE | ROUTINE |
+| Droxidopa (Northera) | Neurogenic orthostatic hypotension | Start 100 mg TID; increase by 100 mg TID every 24-48 hours; max 600 mg TID | Concurrent ergot alkaloids; hypersensitivity | Supine hypertension (do not take within 3 hours of bedtime); use caution with MAOIs and triptans (hypertensive risk) | - | - | ROUTINE | - |
+| Pyridostigmine | Orthostatic hypotension (off-label) | 30-60 mg TID | Mechanical GI/GU obstruction; asthma (relative) | Cholinergic effects; less supine hypertension than midodrine | - | - | ROUTINE | - |
+| Polyethylene glycol 3350 | Constipation (autonomic) | 17 g daily; adjust to effect | Bowel obstruction | Electrolytes with prolonged use | - | ROUTINE | ROUTINE | - |
+| Docusate sodium | Constipation | 100 mg BID; max 500 mg/day | Intestinal obstruction | Minimal efficacy alone | - | ROUTINE | ROUTINE | - |
+| Senna | Constipation | 8.6-17.2 mg qHS; max 34.4 mg/day | Intestinal obstruction; acute abdominal pain | Cramping | - | ROUTINE | ROUTINE | - |
+| Metoclopramide | Gastroparesis | 5-10 mg 30 minutes before meals and qHS; max 40 mg/day; limit to 12 weeks (FDA black box: tardive dyskinesia risk) | Bowel obstruction; Parkinson disease; tardive dyskinesia history | Tardive dyskinesia (limit duration); QT prolongation | - | ROUTINE | ROUTINE | - |
+| Domperidone | Gastroparesis (if metoclopramide contraindicated) | 10 mg TID before meals; max 30 mg/day | QT prolongation; concurrent QT-prolonging drugs | ECG at baseline; not FDA-approved (requires special access) | - | - | EXT | - |
+| Oxybutynin IR | Bladder urgency (anticholinergic caution in neuropathy) | Start 5 mg BID-TID; max 5 mg QID | Urinary retention; narrow-angle glaucoma | Dry mouth, constipation, cognitive impairment | - | ROUTINE | ROUTINE | - |
+| Mirabegron | Bladder urgency | Start 25 mg daily; may increase to 50 mg daily | Uncontrolled hypertension | BP monitoring; fewer anticholinergic effects | - | - | ROUTINE | - |
+| Tamsulosin | Urinary retention | 0.4 mg daily 30 minutes after same meal each day | Severe sulfonamide allergy | Orthostatic hypotension (caution if already orthostatic) | - | ROUTINE | ROUTINE | - |
+| Sildenafil | Erectile dysfunction | 50 mg 30-60 min before activity; may adjust 25-100 mg; max 100 mg/day | Concurrent nitrates; recent MI/stroke | Hypotension; priapism | - | - | ROUTINE | - |
+| Tadalafil | Erectile dysfunction | 10 mg before activity (max once daily) OR 2.5-5 mg daily | Same as sildenafil | Same | - | - | ROUTINE | - |
+| Hydroxyzine | Anxiety, pruritus | 25-50 mg TID-QID PRN; max 400 mg/day | QT prolongation (high doses) | Sedation; anticholinergic effects | - | ROUTINE | ROUTINE | - |
+| Buspirone | Generalized anxiety | Start 5 mg TID; increase by 5 mg every 2-3 days; max 60 mg/day | Concurrent MAOIs | Takes 2-4 weeks for effect; no dependence | - | - | ROUTINE | - |
+| Trazodone | Insomnia with chronic pain | Start 25-50 mg qHS; increase to 100-150 mg; max 200 mg qHS | Concurrent MAOIs; QT prolongation | QTc; priapism (rare); sedation | - | ROUTINE | ROUTINE | - |
+| Melatonin | Insomnia (adjunct) | 3-5 mg qHS 30 minutes before bed | None significant | Generally well-tolerated | - | ROUTINE | ROUTINE | - |
 
 *Note for ICU: Midodrine and fludrocortisone marked ROUTINE in ICU for continuation of home regimen in admitted patients; typically not initiated in ICU setting.*
 
 ### 3D. Disease-Specific Treatments
 
-| Treatment | Indication | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|------------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| IVIG | CIDP, MMN, GBS | - | URGENT | ROUTINE | URGENT | 2 g/kg divided over 2-5 days (induction); maintenance 0.4-1 g/kg every 2-4 weeks | IgA deficiency (use IgA-depleted product); renal failure; thrombosis risk | Renal function, headache, thrombosis, infusion reactions |
-| Plasma exchange (PLEX) | CIDP, GBS | - | URGENT | - | URGENT | 5-7 exchanges over 10-14 days | Hemodynamic instability, sepsis | BP, electrolytes, coags, fibrinogen |
-| Prednisone | CIDP, vasculitic neuropathy | - | ROUTINE | ROUTINE | - | 1 mg/kg/day (max 80 mg) Ãƒâ€” 4-6 weeks; taper over 3-6 months | Active untreated infection, uncontrolled diabetes, psychosis | Glucose, BP, mood, bone density with prolonged use |
-| Rituximab | Anti-MAG neuropathy, vasculitic neuropathy, refractory CIDP | - | EXT | EXT | - | 375 mg/mÃ‚Â² IV weekly Ãƒâ€” 4 weeks OR 1000 mg IV Ãƒâ€” 2 doses 14 days apart | Active hepatitis B; active infection | Hepatitis B serology, infusion reactions, infection monitoring |
-| Azathioprine | Steroid-sparing for CIDP, vasculitis | - | EXT | ROUTINE | - | Start 50 mg daily; increase to 2-3 mg/kg/day over weeks | TPMT deficiency (test before starting); pregnancy | CBC weekly Ãƒâ€” 1 month, then q2-4 weeks; LFTs monthly; TPMT genotype |
-| Mycophenolate mofetil | Steroid-sparing for CIDP, vasculitis | - | EXT | ROUTINE | - | 500 mg BID Ãƒâ€” 2 weeks, then 1000 mg BID | Pregnancy (teratogenic); concurrent azathioprine | CBC q2 weeks Ãƒâ€” 3 months, then monthly; GI upset |
-| Cyclophosphamide | Vasculitic neuropathy (severe) | - | EXT | EXT | - | 1-2 mg/kg/day PO OR 500-1000 mg/mÃ‚Â² IV monthly Ãƒâ€” 6 months | Pregnancy; bone marrow suppression; active infection | CBC weekly; urinalysis (hemorrhagic cystitis); cumulative dose limit |
-| Tafamidis (Vyndamax/Vyndaqel) | Hereditary transthyretin (hATTR) amyloidosis with polyneuropathy | - | - | ROUTINE | - | 61 mg (Vyndamax) or 80 mg (Vyndaqel) daily | None absolute | LFTs; clinical response |
-| Patisiran (Onpattro) | hATTR amyloidosis with polyneuropathy | - | - | ROUTINE | - | 0.3 mg/kg IV every 3 weeks | None absolute | Vitamin A supplementation at RDA required (patisiran reduces serum vitamin A via TTR reduction); infusion reactions |
-| Inotersen (Tegsedi) | hATTR amyloidosis with polyneuropathy | - | - | ROUTINE | - | 284 mg SC once weekly | Platelet count <100,000; prior glomerulonephritis from inotersen | Platelet count weekly throughout treatment (more frequent if <75 Ãƒâ€” 10Ã¢ÂÂ¹/L); continue monitoring 8 weeks post-discontinuation; renal function q2 weeks; REMS program required |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| IVIG | CIDP, MMN, GBS | 2 g/kg divided over 2-5 days (induction); maintenance 0.4-1 g/kg every 2-4 weeks | IgA deficiency (use IgA-depleted product); renal failure; thrombosis risk | Renal function, headache, thrombosis, infusion reactions | - | URGENT | ROUTINE | URGENT |
+| Plasma exchange (PLEX) | CIDP, GBS | 5-7 exchanges over 10-14 days | Hemodynamic instability, sepsis | BP, electrolytes, coags, fibrinogen | - | URGENT | - | URGENT |
+| Prednisone | CIDP, vasculitic neuropathy | 1 mg/kg/day (max 80 mg) × 4-6 weeks; taper over 3-6 months | Active untreated infection, uncontrolled diabetes, psychosis | Glucose, BP, mood, bone density with prolonged use | - | ROUTINE | ROUTINE | - |
+| Rituximab | Anti-MAG neuropathy, vasculitic neuropathy, refractory CIDP | 375 mg/m² IV weekly × 4 weeks OR 1000 mg IV × 2 doses 14 days apart | Active hepatitis B; active infection | Hepatitis B serology, infusion reactions, infection monitoring | - | EXT | EXT | - |
+| Azathioprine | Steroid-sparing for CIDP, vasculitis | Start 50 mg daily; increase to 2-3 mg/kg/day over weeks | TPMT deficiency (test before starting); pregnancy | CBC weekly × 1 month, then q2-4 weeks; LFTs monthly; TPMT genotype | - | EXT | ROUTINE | - |
+| Mycophenolate mofetil | Steroid-sparing for CIDP, vasculitis | 500 mg BID × 2 weeks, then 1000 mg BID | Pregnancy (teratogenic); concurrent azathioprine | CBC q2 weeks × 3 months, then monthly; GI upset | - | EXT | ROUTINE | - |
+| Cyclophosphamide | Vasculitic neuropathy (severe) | 1-2 mg/kg/day PO OR 500-1000 mg/m² IV monthly × 6 months | Pregnancy; bone marrow suppression; active infection | CBC weekly; urinalysis (hemorrhagic cystitis); cumulative dose limit | - | EXT | EXT | - |
+| Tafamidis (Vyndamax/Vyndaqel) | Hereditary transthyretin (hATTR) amyloidosis with polyneuropathy | 61 mg (Vyndamax) or 80 mg (Vyndaqel) daily | None absolute | LFTs; clinical response | - | - | ROUTINE | - |
+| Patisiran (Onpattro) | hATTR amyloidosis with polyneuropathy | 0.3 mg/kg IV every 3 weeks | None absolute | Vitamin A supplementation at RDA required (patisiran reduces serum vitamin A via TTR reduction); infusion reactions | - | - | ROUTINE | - |
+| Inotersen (Tegsedi) | hATTR amyloidosis with polyneuropathy | 284 mg SC once weekly | Platelet count <100,000; prior glomerulonephritis from inotersen | Platelet count weekly throughout treatment (more frequent if platelets drop below 75 x 10^9/L); continue monitoring 8 weeks post-discontinuation; renal function q2 weeks; REMS program required | - | - | ROUTINE | - |
 
 ---
 
@@ -227,24 +227,24 @@ SECTION A: ACTION ITEMS
 
 ### 4A. Referrals & Consults
 
-| Recommendation | ED | HOSP | OPD | ICU | Indication |
-|----------------|:--:|:----:|:---:|:---:|------------|
-| Neuromuscular neurology referral | URGENT | URGENT | ROUTINE | URGENT | All new neuropathy diagnoses for etiology workup and management |
-| Electrodiagnostic medicine/EMG referral | - | ROUTINE | ROUTINE | - | NCS/EMG for characterization (axonal vs demyelinating, pattern) |
-| Physical therapy consult for balance and gait | - | ROUTINE | ROUTINE | ROUTINE | Gait instability, weakness, falls prevention |
-| Occupational therapy consult for hand function | - | ROUTINE | ROUTINE | - | Fine motor impairment, ADL difficulty |
-| Podiatry referral | - | ROUTINE | ROUTINE | - | Diabetic neuropathy, foot care education, orthotics, wound prevention |
-| Endocrinology referral | - | ROUTINE | ROUTINE | - | Diabetes management optimization if HbA1c not at goal |
-| Pain management/Anesthesia referral | - | - | ROUTINE | - | Refractory neuropathic pain, spinal cord stimulator evaluation |
-| Rheumatology referral | - | ROUTINE | ROUTINE | - | Suspected vasculitic neuropathy, connective tissue disease |
-| Hematology/Oncology referral | - | URGENT | ROUTINE | - | Paraproteinemic neuropathy, suspected malignancy, amyloidosis |
-| Genetic counseling referral | - | - | ROUTINE | - | Suspected hereditary neuropathy (CMT, hATTR), family history |
-| Psychiatry/Psychology referral | - | ROUTINE | ROUTINE | - | Chronic pain management, depression, anxiety |
-| Social work consult | - | ROUTINE | ROUTINE | - | Disability resources, insurance navigation, DME assistance |
-| Wound care referral | - | URGENT | ROUTINE | URGENT | Diabetic foot ulcers, non-healing wounds |
-| Orthotics/Prosthetics | - | - | ROUTINE | - | AFOs for foot drop, custom orthotics |
-| Nutrition/Dietitian referral | - | ROUTINE | ROUTINE | - | Alcoholic neuropathy, nutritional deficiencies, bariatric surgery patients |
-| Addiction medicine/Psychiatry | - | ROUTINE | ROUTINE | - | Alcohol use disorder, opioid risk mitigation |
+| Recommendation | Indication | ED | HOSP | OPD | ICU |
+|----------------|------------|:--:|:----:|:---:|:---:|
+| Neuromuscular neurology referral | All new neuropathy diagnoses for etiology workup and management | URGENT | URGENT | ROUTINE | URGENT |
+| Electrodiagnostic medicine/EMG referral | NCS/EMG for characterization (axonal vs demyelinating, pattern) | - | ROUTINE | ROUTINE | - |
+| Physical therapy consult for balance and gait | Gait instability, weakness, falls prevention | - | ROUTINE | ROUTINE | ROUTINE |
+| Occupational therapy consult for hand function | Fine motor impairment, ADL difficulty | - | ROUTINE | ROUTINE | - |
+| Podiatry referral | Diabetic neuropathy, foot care education, orthotics, wound prevention | - | ROUTINE | ROUTINE | - |
+| Endocrinology referral | Diabetes management optimization if HbA1c not at goal | - | ROUTINE | ROUTINE | - |
+| Pain management/Anesthesia referral | Refractory neuropathic pain, spinal cord stimulator evaluation | - | - | ROUTINE | - |
+| Rheumatology referral | Suspected vasculitic neuropathy, connective tissue disease | - | ROUTINE | ROUTINE | - |
+| Hematology/Oncology referral | Paraproteinemic neuropathy, suspected malignancy, amyloidosis | - | URGENT | ROUTINE | - |
+| Genetic counseling referral | Suspected hereditary neuropathy (CMT, hATTR), family history | - | - | ROUTINE | - |
+| Psychiatry/Psychology referral | Chronic pain management, depression, anxiety | - | ROUTINE | ROUTINE | - |
+| Social work consult | Disability resources, insurance navigation, DME assistance | - | ROUTINE | ROUTINE | - |
+| Wound care referral | Diabetic foot ulcers, non-healing wounds | - | URGENT | ROUTINE | URGENT |
+| Orthotics/Prosthetics | AFOs for foot drop, custom orthotics | - | - | ROUTINE | - |
+| Nutrition/Dietitian referral | Alcoholic neuropathy, nutritional deficiencies, bariatric surgery patients | - | ROUTINE | ROUTINE | - |
+| Addiction medicine/Psychiatry | Alcohol use disorder, opioid risk mitigation | - | ROUTINE | ROUTINE | - |
 
 ### 4B. Patient Instructions
 
@@ -322,23 +322,23 @@ SECTION B: REFERENCE (Expand as Needed)
 
 *Venue column indicates where monitoring is typically ordered/initiated. Most monitoring continues in outpatient setting.*
 
-| Parameter | ED | HOSP | OPD | ICU | Frequency | Target/Threshold | Action if Abnormal |
-|-----------|:--:|:----:|:---:|:---:|-----------|------------------|-------------------|
-| HbA1c | - | ROUTINE | ROUTINE | - | Every 3 months until stable, then every 6 months | <7% (individualize) | Intensify glycemic therapy; endocrinology referral |
-| Vitamin B12 | - | ROUTINE | ROUTINE | - | 1-2 months after starting supplementation, then annually | >300 pg/mL | Continue supplementation; rule out malabsorption |
-| Pain scores (0-10 NRS) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Each visit | Reduction â‰¥30-50% from baseline | Titrate medications; consider adjuncts or referral |
-| Foot exam | - | ROUTINE | ROUTINE | - | Every visit; comprehensive annually | No wounds, calluses, deformity | Podiatry referral; wound care |
-| Blood pressure (supine and standing) | URGENT | ROUTINE | ROUTINE | ROUTINE | Each visit if orthostatic symptoms | Orthostatic drop <20 mmHg systolic | Adjust orthostatic hypotension medications; consider compression |
-| Gait and fall risk assessment | - | ROUTINE | ROUTINE | - | Each visit | No falls, stable gait | PT referral; assistive devices; home safety evaluation |
-| Creatinine clearance | STAT | ROUTINE | ROUTINE | STAT | Baseline; with renal disease, elderly, or gabapentinoid use; with dose changes | CrCl >60 for full gabapentinoid dosing | Adjust gabapentin: CrCl 30-59 max 900-1400 mg/day; CrCl 15-29 max 600 mg/day; CrCl <15 max 300 mg/day |
-| LFTs (if on high-dose gabapentinoid) | - | ROUTINE | ROUTINE | - | Baseline, then annually | Normal | Dose adjustment if hepatic impairment |
-| Renal function | - | ROUTINE | ROUTINE | - | Every 6-12 months | Stable | Adjust renally cleared medications (gabapentin, pregabalin) |
-| CBC (if on immunotherapy) | - | ROUTINE | ROUTINE | ROUTINE | Per medication protocol | Normal | Adjust immunosuppression dose; infection evaluation |
-| NCS/EMG follow-up | - | ROUTINE | ROUTINE | - | 6-12 months if treatment initiated; PRN for symptom change | Stable or improved | If progressive despite treatment, reconsider diagnosis or escalate therapy |
-| ECG (if on TCAs) | URGENT | ROUTINE | ROUTINE | URGENT | Baseline; with dose increases >100 mg | QTc <500 ms; no heart block | Reduce dose or switch medication |
-| Weight (if on gabapentinoid) | - | ROUTINE | ROUTINE | - | Each visit | Stable or controlled | Diet/exercise counseling; consider switch |
-| Depression/anxiety screening (PHQ-9, GAD-7) | - | ROUTINE | ROUTINE | - | Annually or with symptom concern | Not clinically significant | Psychiatry referral; pharmacotherapy |
-| Respiratory function (if GBS/CIDP suspected) | STAT | STAT | - | STAT | Q4h if concern; FVC and NIF | FVC >20 mL/kg, NIF <-30 cm H2O | ICU transfer if FVC <20 or NIF >-30; intubation if declining |
+| Parameter | Frequency | Target/Threshold | Action if Abnormal | ED | HOSP | OPD | ICU |
+|-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
+| HbA1c | Every 3 months until stable, then every 6 months | <7% (individualize) | Intensify glycemic therapy; endocrinology referral | - | ROUTINE | ROUTINE | - |
+| Vitamin B12 | 1-2 months after starting supplementation, then annually | >300 pg/mL | Continue supplementation; rule out malabsorption | - | ROUTINE | ROUTINE | - |
+| Pain scores (0-10 NRS) | Each visit | Reduction ≥30-50% from baseline | Titrate medications; consider adjuncts or referral | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Foot exam | Every visit; comprehensive annually | No wounds, calluses, deformity | Podiatry referral; wound care | - | ROUTINE | ROUTINE | - |
+| Blood pressure (supine and standing) | Each visit if orthostatic symptoms | Orthostatic drop <20 mmHg systolic | Adjust orthostatic hypotension medications; consider compression | URGENT | ROUTINE | ROUTINE | ROUTINE |
+| Gait and fall risk assessment | Each visit | No falls, stable gait | PT referral; assistive devices; home safety evaluation | - | ROUTINE | ROUTINE | - |
+| Creatinine clearance | Baseline; with renal disease, elderly, or gabapentinoid use; with dose changes | CrCl >60 for full gabapentinoid dosing | Adjust gabapentin: CrCl 30-59 max 900-1400 mg/day; CrCl 15-29 max 600 mg/day; CrCl <15 max 300 mg/day | STAT | ROUTINE | ROUTINE | STAT |
+| LFTs (if on high-dose gabapentinoid) | Baseline, then annually | Normal | Dose adjustment if hepatic impairment | - | ROUTINE | ROUTINE | - |
+| Renal function | Every 6-12 months | Stable | Adjust renally cleared medications (gabapentin, pregabalin) | - | ROUTINE | ROUTINE | - |
+| CBC (if on immunotherapy) | Per medication protocol | Normal | Adjust immunosuppression dose; infection evaluation | - | ROUTINE | ROUTINE | ROUTINE |
+| NCS/EMG follow-up | 6-12 months if treatment initiated; PRN for symptom change | Stable or improved | If progressive despite treatment, reconsider diagnosis or escalate therapy | - | ROUTINE | ROUTINE | - |
+| ECG (if on TCAs) | Baseline; with dose increases >100 mg | QTc <500 ms; no heart block | Reduce dose or switch medication | URGENT | ROUTINE | ROUTINE | URGENT |
+| Weight (if on gabapentinoid) | Each visit | Stable or controlled | Diet/exercise counseling; consider switch | - | ROUTINE | ROUTINE | - |
+| Depression/anxiety screening (PHQ-9, GAD-7) | Annually or with symptom concern | Not clinically significant | Psychiatry referral; pharmacotherapy | - | ROUTINE | ROUTINE | - |
+| Respiratory function (if GBS/CIDP suspected) | Q4h if concern; FVC and NIF | FVC >20 mL/kg, NIF <-30 cm H2O | ICU transfer if FVC <20 or NIF >-30; intubation if declining | STAT | STAT | - | STAT |
 
 ---
 
@@ -450,6 +450,12 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.7 (January 21, 2026)**
+- Fixed table column order: Moved venue columns (ED/HOSP/OPD/ICU) to last 4 columns per style guide
+- This fixes CSS rendering issues where narrow column widths were applied incorrectly
+- Sections affected: 2 (Imaging), 3 (Treatment), 4A (Referrals), 6 (Monitoring), Lumbar Puncture
+- Fixed garbled Unicode characters (× symbols) in dosing text
 
 **v1.6 (January 21, 2026)**
 - Citation audit: Fixed 3 incorrect PubMed links (hallucinated PMIDs)
