@@ -4,8 +4,8 @@
 CLINICAL PLAN BUILDER - Interactive Clinical Decision Support Tool
 ================================================================================
 
-Version: 1.5
-Last Updated: January 19, 2026
+Version: 1.6
+Last Updated: January 21, 2026
 Repository: https://github.com/blondarb/neuro-plans
 
 OVERVIEW:
@@ -33,6 +33,7 @@ ICON SYSTEM (Progressive Disclosure):
   | Icon | Field              | Color   | Purpose                          |
   |------|--------------------|---------|----------------------------------|
   | ℹ️   | rationale          | Blue    | Clinical reasoning/evidence      |
+  | 💊   | indication         | Teal    | Why this treatment is used       |
   | ⏱    | timing             | Amber   | When to perform/administer       |
   | 🎯   | target             | Green   | Expected findings/goals          |
   | ⚠️   | contraindications  | Red*    | Safety warnings (*pulsing)       |
@@ -43,6 +44,7 @@ JSON SCHEMA:
   for complete field documentation.
 
 CHANGELOG:
+  v1.6 (Jan 21, 2026) - Added Indication icon (💊 teal) for treatment items
   v1.5 (Jan 19, 2026) - Progressive disclosure with icon tooltips
   v1.4 (Jan 19, 2026) - Clinical notes banner, custom items
   v1.3 (Jan 19, 2026) - Click-to-edit, dosing in sidebar
@@ -328,6 +330,7 @@ CHANGELOG:
 
     /* Icon Types */
     .icon-rationale { background: #f0f9ff; color: #0284c7; }
+    .icon-indication { background: #f0fdfa; color: #0d9488; }
     .icon-timing { background: #fef3c7; color: #b45309; }
     .icon-target { background: #ecfdf5; color: #059669; }
     .icon-contraindication { background: #fef2f2; color: #dc2626; }
@@ -753,6 +756,7 @@ CHANGELOG:
     </div>
     <div class="icon-legend">
       <div class="icon-legend-item"><span class="mini-icon icon-rationale">ℹ</span> Rationale</div>
+      <div class="icon-legend-item"><span class="mini-icon icon-indication">💊</span> Indication</div>
       <div class="icon-legend-item"><span class="mini-icon icon-timing">⏱</span> Timing</div>
       <div class="icon-legend-item"><span class="mini-icon icon-target">🎯</span> Target</div>
       <div class="icon-legend-item"><span class="mini-icon icon-contraindication">⚠</span> Contraindication</div>
@@ -963,13 +967,16 @@ CHANGELOG:
 
           // Build icons HTML
           let iconsHtml = '';
-          const hasIcons = item.rationale || item.timing || item.target || item.contraindications || item.monitoring;
+          const hasIcons = item.rationale || item.indication || item.timing || item.target || item.contraindications || item.monitoring;
 
           if (hasIcons) {
             iconsHtml = '<div class="item-icons">';
 
             if (item.rationale) {
               iconsHtml += `<div class="info-icon icon-rationale">ℹ<div class="tooltip"><span class="tooltip-label">Rationale</span>${escapeHtml(item.rationale)}</div></div>`;
+            }
+            if (item.indication) {
+              iconsHtml += `<div class="info-icon icon-indication">💊<div class="tooltip"><span class="tooltip-label">Indication</span>${escapeHtml(item.indication)}</div></div>`;
             }
             if (item.timing) {
               iconsHtml += `<div class="info-icon icon-timing">⏱<div class="tooltip"><span class="tooltip-label">Timing</span>${escapeHtml(item.timing)}</div></div>`;

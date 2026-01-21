@@ -46,13 +46,17 @@ Use the multi-column setting-priority format. **IMPORTANT:** Venue columns (ED, 
 
 ### Treatment Table
 
+Treatment tables should include an **Indication** column to explain why the treatment is used. This displays as a hover icon (💊) in the clinical tool.
+
 ```markdown
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Drug Name | 10 mg PO daily | Allergy | LFTs | STAT | STAT | ROUTINE | STAT |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Drug Name | Symptom relief | 10 mg PO daily | Allergy | LFTs | STAT | STAT | ROUTINE | STAT |
 ```
 
 > ⚠️ **Column Order Matters:** The CSS applies narrow column widths to the last 4 columns, expecting them to be ED/HOSP/OPD/ICU. Incorrect column order will cause rendering issues.
+
+> 💡 **Indication Column:** The Indication field appears as a teal pill icon (💊) in the clinical tool. Hover to see why this treatment is used for this condition.
 
 ### Lumbar Puncture Section
 
