@@ -91,10 +91,12 @@ SECTION A: ACTION ITEMS
 
 **CRITICAL: Each medication must be on its own row with complete prescribing information. Do NOT group drugs together.**
 
+**IMPORTANT:** All treatment tables MUST include an **Indication** column. This displays as a teal pill icon (💊) in the clinical tool on hover, helping clinicians understand why this treatment is being recommended for this condition.
+
 ### 3A. Acute/Emergent
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ### 3B. Symptomatic Treatments
 
@@ -103,13 +105,13 @@ SECTION A: ACTION ITEMS
 
 ### 3C. Second-line/Refractory
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ### 3D. Disease-Modifying or Chronic Therapies (if applicable)
 
-| Treatment | Route | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|-------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Treatment | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ## Treatment Section Guidance
 

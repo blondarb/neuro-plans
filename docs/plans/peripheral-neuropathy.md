@@ -1,7 +1,7 @@
 ---
 title: Peripheral Neuropathy - New Diagnosis/Evaluation
 description: Initial diagnostic workup and symptomatic management of suspected or newly diagnosed peripheral neuropathy including etiologic evaluation and pain management.
-version: "1.7"
+version: "1.8"
 setting: ED, HOSP, OPD, ICU
 status: approved
 tags:
@@ -12,7 +12,7 @@ tags:
 
 # Peripheral Neuropathy - New Diagnosis/Evaluation
 
-**VERSION:** 1.7
+**VERSION:** 1.8
 **CREATED:** January 14, 2026
 **REVISED:** January 14, 2026
 **STATUS:** Approved
@@ -151,11 +151,11 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Thiamine IV (if alcoholic or malnourished) | 500 mg IV TID × 3 days, then 250 mg IV daily × 3-5 days, then oral | None significant | Anaphylaxis (rare) | STAT | STAT | - | STAT |
-| Vitamin B12 IM (if deficient) | 1000 mcg IM daily × 7 days, then weekly × 4 weeks, then monthly | Cobalt allergy | Reticulocyte count at 1 week; B12 level at 1-2 months | URGENT | URGENT | ROUTINE | URGENT |
-| Glucose control optimization | Per diabetes protocol; target HbA1c <7% | Hypoglycemia risk | Glucose monitoring | STAT | STAT | ROUTINE | STAT |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Thiamine IV (if alcoholic or malnourished) | Wernicke prevention, thiamine deficiency | 500 mg IV TID × 3 days, then 250 mg IV daily × 3-5 days, then oral | None significant | Anaphylaxis (rare) | STAT | STAT | - | STAT |
+| Vitamin B12 IM (if deficient) | B12 deficiency neuropathy | 1000 mcg IM daily × 7 days, then weekly × 4 weeks, then monthly | Cobalt allergy | Reticulocyte count at 1 week; B12 level at 1-2 months | URGENT | URGENT | ROUTINE | URGENT |
+| Glucose control optimization | Diabetic neuropathy stabilization | Per diabetes protocol; target HbA1c <7% | Hypoglycemia risk | Glucose monitoring | STAT | STAT | ROUTINE | STAT |
 
 ### 3B. Symptomatic Treatments - Neuropathic Pain
 
@@ -450,6 +450,11 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.8 (January 21, 2026)**
+- Added Indication column to Section 3A (Acute/Emergent treatments)
+- Indication appears as teal pill icon (💊) in clinical tool on hover
+- All treatment sections now consistently include Indication column
 
 **v1.7 (January 21, 2026)**
 - Fixed table column order: Moved venue columns (ED/HOSP/OPD/ICU) to last 4 columns per style guide
