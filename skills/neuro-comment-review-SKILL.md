@@ -1,41 +1,46 @@
 # Neuro Comment Review Skill
 
-**Version:** 1.0
-**Last Updated:** January 19, 2026
+**Version:** 2.0
+**Last Updated:** January 21, 2026
 
 ## Purpose
 
-Review and process comments/feedback from the clinical plans website. For each comment, research the suggestion, verify against medical literature, and present findings for physician approval before implementing changes.
+Review and process comments/feedback on clinical plans. For each comment, research the suggestion, verify against medical literature, and present findings for physician approval before implementing changes.
 
 ## Trigger
 
 User says any of:
 - "Review comments on [Plan Name]"
 - "Check feedback on [Plan Name]"
-- "Process comments for [Plan Name]"
-- "What comments are on [Plan Name]?"
+- "Process comments"
+- "What comments need review?"
+
+## File Locations
+
+| Purpose | Location |
+|---------|----------|
+| Active comments | `docs/comments/active/[plan-name].md` |
+| Archived comments | `docs/comments/archive/YYYY-MM/[plan-name].md` |
+| Change log | `docs/logs/comment-changes-log.md` |
+| Comments index | `docs/comments/index.md` |
 
 ## Workflow
 
 ### Phase 1: Comment Collection
 
-1. **Identify the plan file** based on user request
-2. **Read the current plan** to understand context
-3. **Ask user to provide comments** from the website (since we can't directly access Firebase from CLI)
+1. **Read active comment files** from `docs/comments/active/`
+2. **Identify comments with `Status: pending`**
+3. **Read the target plan** to understand context
 
-Present this prompt to the user:
-```
-To review comments, please:
-1. Go to the plan page on the website
-2. Look at the comments section at the bottom
-3. Copy/paste each comment here, or summarize the feedback
-
-Format: [Section] - [Comment text] - [Commenter if visible]
+```bash
+# Check all active comment files
+ls docs/comments/active/
+cat docs/comments/active/[plan-name].md
 ```
 
 ### Phase 2: Comment Categorization
 
-For each comment received, categorize as:
+For each comment, verify the category:
 
 | Category | Code | Action Required |
 |----------|------|-----------------|
@@ -66,7 +71,7 @@ For each `CLIN`, `DOSE`, or `CITE` comment:
 3. **Document findings** in this format:
 
 ```markdown
-### Comment #[N]: [Brief summary]
+### Comment CMT-XX-NNN: [Brief summary]
 
 **Category:** [CODE]
 **Section Affected:** [Section number and name]
@@ -91,54 +96,109 @@ For each `CLIN`, `DOSE`, or `CITE` comment:
 
 ### Phase 4: Summary Report
 
-Present a summary table:
+Present a summary table to the physician:
 
 ```markdown
 ## Comment Review Summary for [Plan Name]
 
-| # | Category | Summary | Recommendation | Evidence |
-|---|----------|---------|----------------|----------|
-| 1 | CLIN | [brief] | ACCEPT | Level II |
-| 2 | DOSE | [brief] | REJECT | Insufficient |
-| 3 | FMT | [brief] | ACCEPT | N/A |
-...
+| # | Comment ID | Category | Summary | Recommendation | Evidence |
+|---|------------|----------|---------|----------------|----------|
+| 1 | CMT-SE-001 | CLIN | [brief] | ACCEPT | Level II |
+| 2 | CMT-SE-002 | DOSE | [brief] | REJECT | Insufficient |
+| 3 | CMT-SE-003 | FMT | [brief] | ACCEPT | N/A |
 
 ### Recommended Actions
-- [ ] Accept Comment #1: [change]
-- [ ] Accept Comment #3: [change]
-- [ ] Reject Comment #2: [reason]
+- [ ] Accept CMT-SE-001: [change description]
+- [ ] Accept CMT-SE-003: [change description]
+- [ ] Reject CMT-SE-002: [reason]
 
 ### Questions Requiring Your Input
-- Comment #4: [question needing physician decision]
+- CMT-SE-004: [question needing physician decision]
+
+**How would you like to proceed?**
+- "Accept all" - Implement all recommended changes
+- "Accept [IDs]" - Implement specific changes (e.g., "Accept 001, 003")
+- "Reject [IDs]" - Reject specific comments
+- "Discuss [ID]" - Need more information on a specific comment
 ```
 
 ### Phase 5: Implementation
 
-After user approval:
+After physician approval:
 
-1. **Make approved changes** to the plan file
-2. **Update version number** (increment minor version, e.g., 1.4 → 1.5)
-3. **Update REVISED date**
-4. **Add changelog entry** documenting:
-   - What changed
-   - Why (comment-driven, with evidence reference)
-   - Source of the suggestion
+1. **Apply approved changes** to the plan markdown file
+   ```bash
+   # Edit the plan file
+   docs/plans/[plan-name].md
+   ```
 
-5. **Commit and push** to GitHub:
+2. **Run validation** to ensure quality maintained
+   ```bash
+   python scripts/generate_json.py docs/plans/[plan-name].md --validate-only
+   ```
+
+3. **Regenerate JSON** for clinical tool
+   ```bash
+   python scripts/generate_json.py docs/plans/[plan-name].md --merge
+   ```
+
+4. **Update plan metadata**:
+   - Increment version number (e.g., 1.5 → 1.6)
+   - Update REVISED date
+   - Add changelog entry
+
+5. **Update comment status** in active file:
+   - Change `Status: pending` → `Status: resolved-accepted` or `Status: resolved-rejected`
+
+6. **Log the change** in `docs/logs/comment-changes-log.md`:
+
+```markdown
+### 2026-01-21 - Status Epilepticus - CMT-SE-001
+
+**Comment:** "Should phenobarbital be listed as second-line option?"
+**Type:** CLIN
+**Section Affected:** 3B Second-Line ASMs
+
+**Research Findings:**
+- ESETT Trial (NEJM 2019): Phenobarbital non-inferior to levetiracetam/fosphenytoin
+- NCS Guidelines 2023: Lists phenobarbital as acceptable second-line agent
+
+**Resolution:** ACCEPTED
+**Evidence Level:** I
+
+**Change Made:** Added phenobarbital 15-20 mg/kg IV to Section 3B
+**Plan Version:** 1.5 → 1.6
+**Rationale:** Supported by Level I evidence from ESETT trial
+```
+
+7. **Archive the comment**:
+   - Create archive file if needed: `docs/comments/archive/2026-01/[plan-name].md`
+   - Move resolved comment from active to archive
+   - Update comment counts in `docs/comments/index.md`
+
+8. **Commit and push**:
 ```bash
-git add [plan-file]
-git commit -m "Update [Plan Name] v[X.Y]: Address reviewer comments
+git add docs/plans/[plan-name].md docs/data/plans.json \
+        docs/comments/active/[plan-name].md \
+        docs/comments/archive/2026-01/[plan-name].md \
+        docs/logs/comment-changes-log.md \
+        docs/comments/index.md
+git commit -m "Address reviewer comment CMT-XX-NNN on [Plan Name]
 
-- [Change 1 summary]
-- [Change 2 summary]
-
-Based on reviewer feedback with evidence verification.
-
-Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>"
+- [Change summary]
+- Evidence: [Source]
+- Plan version: X.Y → X.Z"
 git push
 ```
 
-6. **Generate resolution summary** for user to mark comments as resolved on website
+### Phase 6: Rejection Handling
+
+For rejected comments:
+
+1. **Update comment status** to `resolved-rejected`
+2. **Log rejection** with rationale in comment-changes-log.md
+3. **Archive the comment** (same as accepted)
+4. **No changes** made to plan
 
 ## Research Guidelines
 
@@ -180,14 +240,22 @@ For any dosing or medication changes:
 - Note monitoring requirements
 - Flag any black box warnings
 
-## Output Format
+## Comment ID Format
 
-The skill produces:
+Use plan-specific prefixes:
+- `CMT-SE-XXX` - Status Epilepticus
+- `CMT-NOS-XXX` - New Onset Seizure
+- `CMT-MS-XXX` - MS - New Diagnosis
+- `CMT-PN-XXX` - Peripheral Neuropathy
+- `CMT-AIS-XXX` - Acute Ischemic Stroke
 
-1. **Comment Review Report** (presented in chat)
-2. **Updated plan file** (after approval)
-3. **Git commit** with changes pushed
-4. **Resolution notes** for marking comments done on website
+## Integration with Other Skills
+
+After implementing comment changes:
+
+1. **Checker** - Validate the updated plan still meets quality standards
+2. **Citation Verifier** - If new citations were added
+3. **Rebuilder** - If extensive changes needed
 
 ## Example Session
 
@@ -195,58 +263,69 @@ The skill produces:
 
 **Assistant:**
 ```
-I'll help review comments on the Status Epilepticus plan.
+I'll review the active comments for Status Epilepticus.
 
-To get started, please visit the Status Epilepticus page on the website and copy any comments from the feedback section.
+Reading docs/comments/active/status-epilepticus.md...
 
-Format each comment as:
-[Section] - [Comment text]
+Found 2 pending comments:
 
-For example:
-"Section 3 Treatment - Should we add phenobarbital as a second-line option?"
+### CMT-SE-001 (2026-01-20)
+- Section: 3B Second-Line ASMs
+- Type: DOSE
+- Comment: "Fosphenytoin loading should be 20 PE/kg, not 15 PE/kg"
+
+### CMT-SE-002 (2026-01-20)
+- Section: 3D Anesthetics
+- Type: CLIN
+- Comment: "Consider adding ketamine earlier in the algorithm"
+
+Let me research these...
+
+[Performs WebSearch for current guidelines]
+
+## Comment Review Summary
+
+| # | ID | Category | Summary | Recommendation | Evidence |
+|---|------------|----------|---------|----------------|----------|
+| 1 | CMT-SE-001 | DOSE | Fosphenytoin 20 PE/kg | ACCEPT | Level I (NCS) |
+| 2 | CMT-SE-002 | CLIN | Earlier ketamine | MODIFY | Level III |
+
+### Research Details
+
+**CMT-SE-001:** NCS Guidelines 2023 recommend fosphenytoin 20 PE/kg.
+Our current 15 PE/kg is below guideline recommendation.
+
+**CMT-SE-002:** Ketamine is reasonable but evidence is Level III.
+Recommend adding as "consider" rather than primary agent.
+
+How would you like to proceed?
 ```
 
-**User:** [provides comments]
+**User:** "Accept both"
 
 **Assistant:**
 ```
-I found 3 comments to review. Let me research each one...
+Implementing approved changes...
 
-[Performs research]
+1. Updated Section 3B: Fosphenytoin 15 PE/kg → 20 PE/kg
+2. Updated Section 3D: Added ketamine consideration note
+3. Version: 1.5 → 1.6
+4. Validation: ✅ PASSED
+5. JSON regenerated
+6. Comments archived
+7. Change log updated
 
-## Comment Review Summary for Status Epilepticus
-
-| # | Category | Summary | Recommendation | Evidence |
-|---|----------|---------|----------------|----------|
-| 1 | DOSE | Add phenobarbital 2nd line | ACCEPT | Level I (ESETT) |
-| 2 | FMT | Fix typo in Section 4 | ACCEPT | N/A |
-| 3 | CLIN | Add PNES differentiation | MODIFY | Level III |
-
-### Recommended Actions
-- [ ] Accept #1: Add phenobarbital 15-20 mg/kg IV to Section 3B
-- [ ] Accept #2: Fix "benzodiazapine" → "benzodiazepine"
-- [ ] Modify #3: Add brief PNES note to differential, not full protocol
-
-Would you like me to implement these changes?
+Committed and pushed to branch.
 ```
-
-**User:** "Yes, implement all"
-
-**Assistant:** [Makes changes, updates version, pushes to GitHub]
-
-## Integration with Other Skills
-
-This skill works alongside:
-- **Builder**: Creates initial drafts
-- **Checker/Rebuilder**: Validates content
-- **Citation Verifier**: Verifies any new citations added
-- **ICD/Synonym Enricher**: Updates codes if diagnoses change
 
 ## Change Log
 
+**v2.0 (January 21, 2026)**
+- Added file-based comment storage system
+- Added archive workflow for resolved comments
+- Added comment-changes-log integration
+- Added comment ID format with plan prefixes
+- Restructured for automated workflow
+
 **v1.0 (January 19, 2026)**
-- Initial version
-- Comment categorization framework
-- Research and verification workflow
-- Evidence-based recommendation system
-- Auto-push after implementation
+- Initial version with manual comment collection
