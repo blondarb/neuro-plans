@@ -202,6 +202,8 @@ class MarkdownParser:
         if imaging_sections:
             sections['Imaging & Studies'] = self._subsections_to_dict(imaging_sections)
 
+        # Note: Lumbar Puncture is now a subsection under Laboratory Workup (not its own section)
+
         # Treatment
         treatment_sections = self._parse_treatment_sections()
         if treatment_sections:
@@ -242,6 +244,13 @@ class MarkdownParser:
         if rare_items:
             subsections.append({'title': 'Rare/Specialized', 'items': rare_items})
 
+        # Lumbar Puncture / CSF Studies (logically part of lab workup)
+        # Note: LP appears under Labs in the clinical tool, even though it may be
+        # positioned after Imaging in the markdown file for historical reasons
+        lp_items = self._parse_table_section('lumbar_puncture', 'treatment_3a')
+        if lp_items:
+            subsections.append({'title': 'Lumbar Puncture', 'items': lp_items})
+
         return subsections
 
     def _parse_imaging_sections(self) -> list:
@@ -263,10 +272,7 @@ class MarkdownParser:
         if rare_items:
             subsections.append({'title': 'Rare/Specialized', 'items': rare_items})
 
-        # Lumbar Puncture
-        lp_items = self._parse_table_section('lumbar_puncture', 'treatment_acute')
-        if lp_items:
-            subsections.append({'title': 'Lumbar Puncture', 'items': lp_items})
+        # Note: Lumbar Puncture is now a subsection under Laboratory Workup
 
         return subsections
 

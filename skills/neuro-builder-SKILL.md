@@ -562,7 +562,11 @@ See `references/ms-exacerbation-v2.md` for a complete example of Builder output 
 
 ## Lumbar Puncture Guidance
 
-When LP is indicated for a diagnosis, include a dedicated LP subsection within Section 2 (Imaging & Studies) using this structure:
+**IMPORTANT:** Lumbar Puncture appears under **Laboratory Workup** in the clinical tool (CSF analysis IS laboratory work). This ensures LP studies display alongside other lab sections when selected by the clinician.
+
+In the markdown file, place `### LUMBAR PUNCTURE` after the imaging subsections (2A/2B/2C). The JSON generator will automatically position it under "Laboratory Workup > Lumbar Puncture" in the clinical tool output.
+
+Use this structure (note: venue columns ED/HOSP/OPD/ICU must be the last 4 columns):
 
 ```
 ### LUMBAR PUNCTURE
@@ -571,13 +575,17 @@ When LP is indicated for a diagnosis, include a dedicated LP subsection within S
 **Timing:** [Urgent vs routine, any prerequisites]
 **Volume Required:** [Standard 10-15cc OR therapeutic 30-50cc for NPH]
 
-**Studies to Order:**
-| Study | Priority | Rationale |
-|-------|----------|-----------|
-| Core studies (always) | STAT | Cell count x2, protein, glucose, gram stain, culture |
-| [Diagnosis-specific] | [Priority] | [Rationale] |
+| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|-------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Opening pressure | [Why ordered] | 10-20 cm H2O | URGENT | ROUTINE | ROUTINE | - |
+| Cell count (tubes 1 and 4) | [Why ordered] | WBC <5, RBC 0 | URGENT | ROUTINE | ROUTINE | - |
+| Protein | [Why ordered] | Normal 15-45 mg/dL | URGENT | ROUTINE | ROUTINE | - |
+| Glucose with serum glucose | [Why ordered] | Normal (>60% serum) | URGENT | ROUTINE | ROUTINE | - |
+| Gram stain and culture | [Why ordered] | No organisms | URGENT | ROUTINE | ROUTINE | - |
+| [Diagnosis-specific study] | [Rationale] | [Target] | [Priority] | [Priority] | [Priority] | [Priority] |
 
 **Special Handling:** [Time-sensitive, temperature requirements]
+**Contraindications:** [List contraindications]
 ```
 
 See `references/lp-reference.md` for comprehensive LP panels organized by diagnosis, including:
