@@ -1,30 +1,1251 @@
 {
   "Status Epilepticus": {
-    "version": "2.0",
-    "icd10": "G40.901, G41.0, G41.1, G41.2, G41.8, G41.9",
-    "scope": "Management of convulsive status epilepticus (CSE) and non-convulsive status epilepticus (NCSE) in adults. Covers staged treatment protocol from emergent benzodiazepines through refractory and super-refractory phases.",
-    "definitions": [
-      {
-        "term": "Status Epilepticus (SE)",
-        "definition": "Seizure lasting >5 minutes OR ≥2 seizures without return to baseline between episodes"
-      },
-      {
-        "term": "Refractory SE (RSE)",
-        "definition": "SE continuing after adequate doses of initial benzodiazepine AND one second-line ASM"
-      },
-      {
-        "term": "Super-Refractory SE (SRSE)",
-        "definition": "SE continuing ≥24 hours after anesthetic initiation, including cases that recur during anesthetic weaning"
-      },
-      {
-        "term": "NORSE",
-        "definition": "New-Onset Refractory Status Epilepticus - RSE without clear acute/active structural, toxic, or metabolic cause in a patient without prior epilepsy"
-      },
-      {
-        "term": "FIRES",
-        "definition": "Febrile Infection-Related Epilepsy Syndrome - subset of NORSE with febrile illness ≥24 hours before SE onset"
-      }
+    "id": "status-epilepticus",
+    "title": "Status Epilepticus",
+    "version": "1.4",
+    "icd10": [
+      "** G40.901 (Epilepsy",
+      "unspecified",
+      "not intractable",
+      "with status epilepticus)",
+      "G41.0 (Grand mal status epilepticus)",
+      "G41.1 (Petit mal status epilepticus)",
+      "G41.2 (Complex partial status epilepticus)",
+      "G41.8 (Other status epilepticus)",
+      "G41.9 (Status epilepticus",
+      "unspecified)"
     ],
+    "scope": "** Management of convulsive status epilepticus (CSE) and non-convulsive status epilepticus (NCSE) in adults. Covers staged treatment protocol from emergent benzodiazepines through refractory and super-refractory phases. Includes diagnostic workup to identify underlying etiology and specific protocols for NORSE/FIRES. Excludes pediatric status epilepticus, neonatal seizures, and psychogenic non-epileptic status.",
+    "notes": [],
+    "sections": {
+      "Laboratory Workup": {
+        "Essential/Core Labs": [
+          {
+            "item": "Point-of-care glucose",
+            "rationale": "Hypoglycemia is immediately reversible cause",
+            "target": ">70 mg/dL",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "CBC with differential",
+            "rationale": "Infection screen, baseline before ASMs",
+            "target": "Normal",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "CMP (BMP + LFTs)",
+            "rationale": "Electrolyte abnormalities, renal/hepatic function for ASM dosing",
+            "target": "Normal",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Magnesium",
+            "rationale": "Hypomagnesemia lowers seizure threshold",
+            "target": ">1.8 mg/dL",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Calcium (ionized if available)",
+            "rationale": "Hypocalcemia can cause seizures",
+            "target": "Ionized 4.5-5.3 mg/dL",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Phosphorus",
+            "rationale": "Hypophosphatemia lowers seizure threshold",
+            "target": ">2.5 mg/dL",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Blood gas (ABG or VBG)",
+            "rationale": "Acidosis, oxygenation, ventilation status",
+            "target": "pH >7.2; correct severe acidosis",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Lactate",
+            "rationale": "Elevated in prolonged seizure; marker of severity",
+            "target": "Will be elevated; trending useful",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Urine drug screen",
+            "rationale": "Illicit drugs, withdrawal states",
+            "target": "Identify triggers",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Blood alcohol level",
+            "rationale": "Alcohol withdrawal common cause",
+            "target": "Correlate with history",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "ASM levels (if on therapy)",
+            "rationale": "Subtherapeutic levels as precipitant",
+            "target": "Therapeutic range",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Pregnancy test (women of childbearing age)",
+            "rationale": "Eclampsia; affects ASM choice",
+            "target": "Document status",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          }
+        ],
+        "Extended Workup": [
+          {
+            "item": "Ammonia",
+            "rationale": "Hepatic encephalopathy, valproate toxicity, urea cycle disorders",
+            "target": "<35 μmol/L",
+            "ED": "URGENT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "TSH",
+            "rationale": "Thyroid storm/myxedema",
+            "target": "Normal",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "Troponin",
+            "rationale": "Cardiac stress from prolonged seizure",
+            "target": "May be elevated",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "CPK/CK",
+            "rationale": "Rhabdomyolysis from prolonged convulsions",
+            "target": "Elevated; monitor trend",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Cortisol (random)",
+            "rationale": "Adrenal insufficiency",
+            "target": "Normal stress response",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "Serum osmolality",
+            "rationale": "Hypo/hyperosmolar states",
+            "target": "280-295 mOsm/kg",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "Procalcitonin",
+            "rationale": "CNS infection if suspected",
+            "target": "<0.5 ng/mL",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "Coagulation panel (PT/INR, PTT)",
+            "rationale": "Pre-LP, hemorrhage risk",
+            "target": "Normal",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Type and screen",
+            "rationale": "Anticipate possible surgical intervention",
+            "target": "Available",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Urinalysis",
+            "rationale": "UTI as precipitant (especially elderly)",
+            "target": "Negative",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "URGENT"
+          }
+        ],
+        "Rare/Specialized": [
+          {
+            "item": "Autoimmune encephalitis panel (serum)",
+            "rationale": "Anti-NMDAR, LGI1, CASPR2 in NORSE",
+            "target": "Negative",
+            "ED": "—",
+            "HOSP": "URGENT",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "Paraneoplastic panel (serum)",
+            "rationale": "Subacute onset, smoking history, weight loss",
+            "target": "Negative",
+            "ED": "—",
+            "HOSP": "URGENT",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "HIV",
+            "rationale": "HIV-associated CNS disease",
+            "target": "Negative",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "ROUTINE"
+          },
+          {
+            "item": "RPR/VDRL",
+            "rationale": "Neurosyphilis",
+            "target": "Negative",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "ROUTINE"
+          },
+          {
+            "item": "Ceruloplasmin, serum copper",
+            "rationale": "Wilson disease (young patients)",
+            "target": "Normal",
+            "ED": "—",
+            "HOSP": "EXT",
+            "OPD": "—",
+            "ICU": "EXT"
+          },
+          {
+            "item": "Porphyrins (urine/serum)",
+            "rationale": "Acute intermittent porphyria",
+            "target": "Normal",
+            "ED": "—",
+            "HOSP": "EXT",
+            "OPD": "—",
+            "ICU": "EXT"
+          },
+          {
+            "item": "Mitochondrial DNA testing",
+            "rationale": "MELAS, other mitochondrial disorders",
+            "target": "Normal",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "EXT"
+          },
+          {
+            "item": "Pyridoxine trial (empiric)",
+            "rationale": "Pyridoxine-dependent seizures (rare, usually pediatric)",
+            "target": "Response to treatment",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "URGENT"
+          }
+        ]
+      },
+      "Imaging & Studies": {
+        "Essential/First-line": [
+          {
+            "item": "CT head without contrast",
+            "timing": "Immediately after stabilization",
+            "target": "Mass, hemorrhage, stroke, herniation, hydrocephalus",
+            "contraindications": "None in emergency",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Continuous EEG (cEEG) monitoring",
+            "timing": "As soon as available; mandatory in RSE/SRSE",
+            "target": "Seizure burden, treatment response, NCSE detection",
+            "contraindications": "None significant",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Chest X-ray",
+            "timing": "Aspiration risk, ETT placement confirmation",
+            "target": "Aspiration, ETT position",
+            "contraindications": "None",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          }
+        ],
+        "Extended": [
+          {
+            "item": "MRI brain with and without contrast",
+            "timing": "When stable; within 24-48h",
+            "target": "Encephalitis, stroke, tumor, cortical injury from SE",
+            "contraindications": "Hemodynamic instability, pacemaker",
+            "ED": "—",
+            "HOSP": "URGENT",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "CT angiography head/neck",
+            "timing": "If stroke suspected",
+            "target": "Large vessel occlusion, dissection",
+            "contraindications": "Contrast allergy, renal insufficiency",
+            "ED": "URGENT",
+            "HOSP": "URGENT",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "MRA/MRV brain",
+            "timing": "If vascular etiology suspected",
+            "target": "Venous thrombosis, vascular malformation",
+            "contraindications": "Same as MRI",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "ROUTINE"
+          },
+          {
+            "item": "CT chest/abdomen/pelvis",
+            "timing": "If paraneoplastic suspected",
+            "target": "Occult malignancy",
+            "contraindications": "Contrast allergy",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "ROUTINE"
+          },
+          {
+            "item": "Echocardiogram",
+            "timing": "If embolic stroke suspected, endocarditis",
+            "target": "Vegetation, thrombus",
+            "contraindications": "None",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "ROUTINE"
+          }
+        ],
+        "Rare/Specialized": [
+          {
+            "item": "PET-CT (whole body)",
+            "timing": "Occult malignancy workup",
+            "target": "Tumor identification",
+            "contraindications": "Hemodynamic instability",
+            "ED": "—",
+            "HOSP": "EXT",
+            "OPD": "—",
+            "ICU": "EXT"
+          },
+          {
+            "item": "Brain biopsy",
+            "timing": "Refractory cases, suspected encephalitis",
+            "target": "Histopathologic diagnosis",
+            "contraindications": "Coagulopathy, critical location",
+            "ED": "—",
+            "HOSP": "EXT",
+            "OPD": "—",
+            "ICU": "EXT"
+          }
+        ]
+      },
+      "Lumbar Puncture": {
+        "Studies": [
+          {
+            "item": "Opening pressure",
+            "rationale": "Elevated ICP",
+            "target": "10-20 cm H2O",
+            "ED": "URGENT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Cell count (tubes 1 and 4)",
+            "rationale": "Infection, inflammation",
+            "target": "WBC <5; RBC 0",
+            "ED": "URGENT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Protein",
+            "rationale": "Elevated in infection, inflammation",
+            "target": "15-45 mg/dL",
+            "ED": "URGENT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Glucose with serum glucose",
+            "rationale": "Low in bacterial/fungal meningitis",
+            "target": ">60% serum",
+            "ED": "URGENT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Gram stain and culture",
+            "rationale": "Bacterial meningitis",
+            "target": "No organisms",
+            "ED": "URGENT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "BioFire FilmArray ME Panel",
+            "rationale": "Rapid pathogen identification",
+            "target": "Negative",
+            "ED": "URGENT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "HSV-1/2 PCR",
+            "rationale": "HSV encephalitis",
+            "target": "Negative",
+            "ED": "URGENT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Autoimmune encephalitis panel (CSF)",
+            "rationale": "NORSE, limbic encephalitis",
+            "target": "Negative",
+            "ED": "—",
+            "HOSP": "URGENT",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "Cytology",
+            "rationale": "Carcinomatous meningitis",
+            "target": "Negative",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "ROUTINE"
+          },
+          {
+            "item": "Oligoclonal bands",
+            "rationale": "Demyelinating disease",
+            "target": "Negative",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "ROUTINE"
+          }
+        ]
+      },
+      "Treatment": {
+        "Stabilization (Time 0)": [
+          {
+            "item": "Airway positioning/management",
+            "dosing": "Head-tilt chin-lift, oral airway, prepare for intubation",
+            "contraindications": "None",
+            "monitoring": "O2 sat, airway patency",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Supplemental oxygen",
+            "dosing": "Non-rebreather 15 L/min or bag-valve-mask",
+            "contraindications": "None",
+            "monitoring": "O2 sat >94%",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "IV access (two large-bore)",
+            "dosing": "18G or larger x2",
+            "contraindications": "None",
+            "monitoring": "IV patency",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Cardiac monitoring",
+            "dosing": "Continuous telemetry",
+            "contraindications": "None",
+            "monitoring": "Rhythm, HR, BP",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Dextrose 50% IV",
+            "dosing": "50 mL IV push (25g) if glucose <70 or unknown",
+            "contraindications": "Document hyperglycemia",
+            "monitoring": "Glucose",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Thiamine IV",
+            "dosing": "100-500 mg IV BEFORE or WITH glucose",
+            "contraindications": "None",
+            "monitoring": "None",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Isotonic fluids",
+            "dosing": "NS or LR wide open initially",
+            "contraindications": "Pulmonary edema",
+            "monitoring": "BP, I/O",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          }
+        ],
+        "Emergent/First-Line - Benzodiazepines (Time 0-5 min)": [
+          {
+            "item": "Lorazepam IV",
+            "dosing": "0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min if still seizing; total max 8 mg",
+            "contraindications": "Acute narrow-angle glaucoma",
+            "monitoring": "RR, O2 sat, BP, sedation; airway equipment ready",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Midazolam IM",
+            "dosing": "10 mg IM (≥40 kg) or 0.2 mg/kg IM (if no IV access); single dose",
+            "contraindications": "Respiratory compromise",
+            "monitoring": "RR, O2 sat; prepare IV access",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Midazolam IV",
+            "dosing": "0.2 mg/kg IV (max 10 mg); may repeat x1",
+            "contraindications": "Same as lorazepam",
+            "monitoring": "RR, O2 sat, BP",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Midazolam intranasal",
+            "dosing": "5 mg per nostril (10 mg total) if no IV/IM access",
+            "contraindications": "Nasal obstruction",
+            "monitoring": "RR, O2 sat",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Midazolam buccal",
+            "dosing": "10 mg buccal (if available)",
+            "contraindications": "Oral trauma",
+            "monitoring": "RR, O2 sat",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Diazepam IV",
+            "dosing": "0.15 mg/kg IV (max 10 mg); may repeat x1 in 5 min",
+            "contraindications": "Acute narrow-angle glaucoma",
+            "monitoring": "RR, O2 sat; short duration - requires follow-up ASM",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Diazepam rectal",
+            "dosing": "0.2-0.5 mg/kg PR (max 20 mg); use rectal gel formulation",
+            "contraindications": "Rectal pathology",
+            "monitoring": "RR, O2 sat",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          }
+        ],
+        "Urgent/Second-Line ASMs (Time 5-20 min)": [
+          {
+            "item": "Levetiracetam IV (ESETT dosing)",
+            "dosing": "60 mg/kg IV (max 4500 mg) over 10-15 min",
+            "contraindications": "None absolute; reduce if CrCl <50",
+            "monitoring": "Generally well tolerated; agitation",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Levetiracetam IV (conservative)",
+            "dosing": "40 mg/kg IV (max 4500 mg) over 10-15 min",
+            "contraindications": "None absolute; reduce if CrCl <50",
+            "monitoring": "Generally well tolerated; agitation",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Fosphenytoin IV",
+            "dosing": "20 mg PE/kg IV at 150 mg PE/min; may give additional 5-10 mg PE/kg if needed",
+            "contraindications": "2nd/3rd degree AV block, sinus bradycardia, allergy",
+            "monitoring": "Continuous cardiac monitor, BP q5min during infusion",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Valproate IV",
+            "dosing": "40 mg/kg IV (max 3000 mg) over 10 min",
+            "contraindications": "Pregnancy, hepatic disease, mitochondrial disease, urea cycle disorders, pancreatitis",
+            "monitoring": "Ammonia, LFTs; avoid in unknown pregnancy status",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Lacosamide IV",
+            "dosing": "400 mg IV over 15 min (can give 200 mg over 5 min if urgent)",
+            "contraindications": "PR >200 ms, 2nd/3rd degree AV block, severe hepatic impairment",
+            "monitoring": "ECG for PR interval",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Brivaracetam IV",
+            "dosing": "100-200 mg IV over 2-5 min; no titration needed",
+            "contraindications": "Hepatic impairment (reduce dose)",
+            "monitoring": "Faster onset than levetiracetam; fewer behavioral effects",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Phenytoin IV",
+            "dosing": "20 mg/kg IV at max 50 mg/min (if fosphenytoin unavailable)",
+            "contraindications": "AV block, sinus bradycardia",
+            "monitoring": "Cardiac monitor; MUST use large vein, tissue necrosis risk",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Phenobarbital IV",
+            "dosing": "15-20 mg/kg IV at 50-100 mg/min",
+            "contraindications": "Severe respiratory disease, porphyria",
+            "monitoring": "Respiratory depression; often requires intubation at this dose",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          }
+        ],
+        "Refractory SE - Anesthetic Infusions (Time 20-60 min)": [
+          {
+            "item": "Midazolam infusion",
+            "dosing": "Load: 0.2 mg/kg IV bolus; Infusion: start 0.1 mg/kg/hr, titrate by 0.1 mg/kg/hr q15min to seizure suppression; max 2 mg/kg/hr; target burst suppression on cEEG",
+            "contraindications": "Hemodynamic instability (relative)",
+            "monitoring": "cEEG, BP (hypotension common), sedation scale",
+            "ED": "URGENT",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Propofol infusion",
+            "dosing": "Load: 1-2 mg/kg IV bolus (may repeat x1); Infusion: start 20 mcg/kg/min, titrate by 10 mcg/kg/min q5min; max 200 mcg/kg/min; target burst suppression",
+            "contraindications": "Propofol infusion syndrome risk (limit to <48h at high dose), egg/soy allergy, pregnancy",
+            "monitoring": "cEEG, triglycerides q24-48h, CPK, metabolic acidosis, BP",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Ketamine infusion",
+            "dosing": "Load: 1-2 mg/kg IV bolus; Infusion: start 1 mg/kg/hr, titrate by 0.5 mg/kg/hr q15-30min; max 5 mg/kg/hr",
+            "contraindications": "Uncontrolled hypertension, elevated ICP (relative - actually may be neuroprotective)",
+            "monitoring": "cEEG, BP (may increase), HR; less hypotension than other anesthetics",
+            "ED": "URGENT",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Ketamine + Midazolam (combination)",
+            "dosing": "Ketamine load 1 mg/kg + Midazolam load 0.2 mg/kg; then dual infusions per above",
+            "contraindications": "Per individual agents",
+            "monitoring": "2024 data: combination may reduce SE duration faster than midazolam alone",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Pentobarbital infusion",
+            "dosing": "Load: 5-15 mg/kg IV at 50 mg/min; Infusion: start 0.5-1 mg/kg/hr, titrate to burst suppression; max 5 mg/kg/hr",
+            "contraindications": "Severe cardiac dysfunction",
+            "monitoring": "cEEG, BP (significant hypotension - need pressors), cardiac output; longest half-life",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "STAT"
+          }
+        ],
+        "Super-Refractory SE - Additional Agents": [
+          {
+            "item": "Add second anesthetic",
+            "dosing": "Combine midazolam + propofol, or add ketamine to either",
+            "contraindications": "Per agent",
+            "monitoring": "cEEG, hemodynamics",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Topiramate (enteral)",
+            "dosing": "Load 300-400 mg via NGT; then 200-400 mg BID; max 1600 mg/day",
+            "contraindications": "Metabolic acidosis, kidney stones",
+            "monitoring": "Bicarbonate, renal function",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "Lacosamide (if not tried)",
+            "dosing": "400 mg IV, then 200-400 mg BID",
+            "contraindications": "PR prolongation",
+            "monitoring": "ECG",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "Perampanel (enteral)",
+            "dosing": "4-8 mg via NGT daily; titrate to 12 mg daily",
+            "contraindications": "None absolute",
+            "monitoring": "Aggression, sedation",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "ROUTINE"
+          },
+          {
+            "item": "Magnesium sulfate infusion",
+            "dosing": "4-6 g IV over 20 min, then 1-2 g/hr infusion; target Mg 3.5-4 mg/dL",
+            "contraindications": "Renal failure (relative), myasthenia",
+            "monitoring": "Mg levels, reflexes, respiratory status",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "Pyridoxine (empiric trial)",
+            "dosing": "100-500 mg IV; may try single dose empirically",
+            "contraindications": "None",
+            "monitoring": "Response to treatment",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "Ketogenic diet",
+            "dosing": "Initiate within 7 days per NORSE consensus; requires nutrition support",
+            "contraindications": "Pyruvate carboxylase deficiency, fatty acid oxidation disorders",
+            "monitoring": "Ketones, glucose, lipids",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "Hypothermia (32-35°C)",
+            "dosing": "Targeted temperature management x 24-48h",
+            "contraindications": "Coagulopathy, severe infection",
+            "monitoring": "Temperature, coagulation, infection",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "EXT"
+          },
+          {
+            "item": "Electroconvulsive therapy",
+            "dosing": "If all else fails; requires anesthesia",
+            "contraindications": "Raised ICP, recent stroke",
+            "monitoring": "Per ECT protocol",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "EXT"
+          },
+          {
+            "item": "Epilepsy surgery (emergent)",
+            "dosing": "Resection if focal lesion identified",
+            "contraindications": "Eloquent cortex, multifocal",
+            "monitoring": "Per surgical team",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "EXT"
+          }
+        ],
+        "NORSE/FIRES Immunotherapy Protocol": [
+          {
+            "timing": "**Day 0-3**",
+            "dosing": "See below"
+          },
+          {
+            "timing": "**Day 3-7**",
+            "dosing": "Add remaining first-line agents"
+          },
+          {
+            "timing": "**Day 7**",
+            "dosing": "Initiate with nutrition support"
+          },
+          {
+            "timing": "**Day 7+**",
+            "dosing": "If first-line inadequate"
+          }
+        ],
+        "Symptomatic/Supportive ICU Care": [
+          {
+            "item": "Norepinephrine",
+            "indication": "Hypotension from anesthetics",
+            "dosing": "Start 0.1 mcg/kg/min; titrate to MAP ≥65",
+            "contraindications": "Hypovolemia (correct first)",
+            "monitoring": "Arterial line, MAP",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Vasopressin",
+            "indication": "Adjunct pressor",
+            "dosing": "0.04 units/min fixed dose",
+            "contraindications": "Cardiac ischemia",
+            "monitoring": "MAP, cardiac status",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Fentanyl infusion",
+            "indication": "Analgesia/sedation adjunct",
+            "dosing": "25-100 mcg/hr; titrate to comfort",
+            "contraindications": "Hemodynamic instability",
+            "monitoring": "Pain scale, respiratory status",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "ROUTINE"
+          },
+          {
+            "item": "Propofol (sub-anesthetic)",
+            "indication": "Sedation during cEEG",
+            "dosing": "5-50 mcg/kg/min",
+            "contraindications": "Same as anesthetic use",
+            "monitoring": "Sedation scale",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "ROUTINE"
+          },
+          {
+            "item": "Dexmedetomidine",
+            "indication": "Sedation, possible antiseizure",
+            "dosing": "0.2-1.5 mcg/kg/hr",
+            "contraindications": "Bradycardia, heart block",
+            "monitoring": "HR, BP",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "ROUTINE"
+          },
+          {
+            "item": "Pantoprazole",
+            "indication": "Stress ulcer prophylaxis",
+            "dosing": "40 mg IV daily",
+            "contraindications": "None significant",
+            "monitoring": "GI bleeding",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Enoxaparin",
+            "indication": "DVT prophylaxis",
+            "dosing": "40 mg SC daily (start when stable)",
+            "contraindications": "Active bleeding, recent LP",
+            "monitoring": "Platelets, bleeding",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Insulin infusion",
+            "indication": "Stress hyperglycemia",
+            "dosing": "Per ICU protocol; target glucose 140-180 mg/dL",
+            "contraindications": "Hypoglycemia",
+            "monitoring": "Glucose q1-4h",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Bowel regimen",
+            "indication": "Constipation prophylaxis",
+            "dosing": "Docusate 100 mg BID + senna 8.6 mg daily; escalate to bisacodyl or lactulose PRN",
+            "contraindications": "Bowel obstruction",
+            "monitoring": "Bowel movements",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "ROUTINE"
+          },
+          {
+            "item": "Skin care protocol",
+            "indication": "Pressure injury prevention",
+            "dosing": "Turn q2h, specialty mattress, moisture barrier, Braden scale assessment",
+            "contraindications": "None",
+            "monitoring": "Skin integrity daily",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Eye care",
+            "indication": "Corneal protection",
+            "dosing": "Lubricating drops q4h, eyelid taping if incomplete closure",
+            "contraindications": "None",
+            "monitoring": "Corneal integrity",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "STAT"
+          }
+        ]
+      },
+      "Other Recommendations": {
+        "Referrals & Consults": [
+          {
+            "item": "Neurology/Epilepsy STAT consult",
+            "indication": "All cases of SE",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Neurocritical care consult",
+            "indication": "RSE/SRSE, need for anesthetic infusions",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "ICU admission",
+            "indication": "All SE requiring second-line agents or ongoing seizures",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "—"
+          },
+          {
+            "item": "EEG technologist/cEEG initiation",
+            "indication": "Mandatory for RSE/SRSE; strongly recommended for all SE",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Infectious disease consult",
+            "indication": "Suspected CNS infection",
+            "ED": "—",
+            "HOSP": "URGENT",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "Rheumatology/Neuroimmunology consult",
+            "indication": "NORSE/FIRES, suspected autoimmune encephalitis",
+            "ED": "—",
+            "HOSP": "URGENT",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "Pharmacy consult",
+            "indication": "Complex ASM dosing, drug interactions",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "ROUTINE"
+          },
+          {
+            "item": "Nutrition/Dietitian consult",
+            "indication": "Enteral feeding, ketogenic diet initiation (by Day 7 in NORSE)",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—",
+            "ICU": "URGENT"
+          },
+          {
+            "item": "Palliative care consult",
+            "indication": "SRSE with poor prognosis, goals of care discussion",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "—",
+            "ICU": "ROUTINE"
+          },
+          {
+            "item": "Social work consult",
+            "indication": "Family support, discharge planning",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE"
+          },
+          {
+            "item": "Epilepsy surgery evaluation",
+            "indication": "Focal lesion on imaging, refractory to medical therapy",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "EXT",
+            "ICU": "EXT"
+          },
+          {
+            "item": "PT/OT/Speech evaluation",
+            "indication": "Once stabilized; assess for deficits",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "ROUTINE"
+          },
+          {
+            "item": "Epilepsy outpatient follow-up",
+            "indication": "All SE survivors; ASM optimization, etiology workup",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "—"
+          },
+          {
+            "item": "Outpatient video-EEG monitoring",
+            "indication": "Characterization of seizure type, presurgical evaluation",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "ROUTINE",
+            "ICU": "—"
+          },
+          {
+            "item": "Neuropsychology testing",
+            "indication": "Cognitive assessment post-SE; baseline before surgery",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "ROUTINE",
+            "ICU": "—"
+          }
+        ],
+        "Patient Instructions": [
+          {
+            "item": "Explain SE is a medical emergency requiring ICU care",
+            "ED": "STAT",
+            "HOSP": "STAT",
+            "OPD": "—"
+          },
+          {
+            "item": "Discuss prognosis based on etiology and duration of SE",
+            "ED": "—",
+            "HOSP": "URGENT",
+            "OPD": "—"
+          },
+          {
+            "item": "Educate on importance of ASM adherence (if applicable)",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—"
+          },
+          {
+            "item": "Seizure first aid education for family",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—"
+          },
+          {
+            "item": "Rescue medication training (rectal diazepam, nasal midazolam)",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—"
+          },
+          {
+            "item": "Driving restrictions (minimum 3-6 months seizure-free, varies by state)",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—"
+          },
+          {
+            "item": "Medical alert bracelet recommendation",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—"
+          },
+          {
+            "item": "Seizure action plan development",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—"
+          },
+          {
+            "item": "Discuss goals of care if SRSE with poor prognosis",
+            "ED": "—",
+            "HOSP": "—",
+            "OPD": "ROUTINE (ICU)"
+          }
+        ],
+        "Lifestyle & Prevention": [
+          {
+            "item": "Medication adherence counseling",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—"
+          },
+          {
+            "item": "Avoid abrupt ASM discontinuation (common SE precipitant)",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—"
+          },
+          {
+            "item": "Alcohol cessation",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—"
+          },
+          {
+            "item": "Sleep hygiene (sleep deprivation lowers threshold)",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—"
+          },
+          {
+            "item": "Avoid known seizure triggers",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—"
+          },
+          {
+            "item": "Drug interaction review (OTC, supplements)",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—"
+          },
+          {
+            "item": "Pregnancy planning counseling (women of childbearing potential)",
+            "ED": "—",
+            "HOSP": "ROUTINE",
+            "OPD": "—"
+          }
+        ]
+      }
+    },
     "differential": [
       {
         "diagnosis": "Psychogenic non-epileptic status",
@@ -37,19 +1258,24 @@
         "tests": "History of prodrome, rapid recovery, normal EEG"
       },
       {
-        "diagnosis": "Movement disorders",
+        "diagnosis": "Movement disorders (dystonia, chorea)",
         "features": "Non-rhythmic, preserved awareness, stereotyped pattern",
         "tests": "EEG normal during movements"
       },
       {
-        "diagnosis": "Rigors (sepsis)",
+        "diagnosis": "Rigors (sepsis, transfusion reaction)",
         "features": "Associated with fever/chills, rhythmic shaking, preserves awareness",
-        "tests": "Infectious workup, temperature"
+        "tests": "Infectious workup, temperature, EEG normal"
       },
       {
         "diagnosis": "Decerebrate/decorticate posturing",
         "features": "Associated with structural brain injury, sustained posturing",
         "tests": "Imaging, cEEG"
+      },
+      {
+        "diagnosis": "Drug-induced dyskinesia",
+        "features": "Medication history, stereotyped movements",
+        "tests": "Drug levels, history, EEG normal"
       },
       {
         "diagnosis": "Neuroleptic malignant syndrome",
@@ -62,11 +1288,6 @@
         "tests": "Medication history, clinical features"
       },
       {
-        "diagnosis": "Drug-induced dyskinesia",
-        "features": "Medication history, stereotyped movements",
-        "tests": "Drug levels, history, EEG normal"
-      },
-      {
         "diagnosis": "Tetanus",
         "features": "Sustained muscle contraction, trismus, opisthotonos",
         "tests": "History of wound, vaccination status"
@@ -77,1654 +1298,273 @@
         "tests": "Toxicology"
       }
     ],
-    "notes": [
-      "SE is a medical emergency with ~20% mortality; rapid treatment is critical",
-      "Every 5-minute delay in treatment associated with worse outcomes",
-      "cEEG monitoring essential - up to 48% of patients have non-convulsive seizures after convulsive SE controlled",
-      "Levetiracetam dosing: ESETT used 60 mg/kg; 40 mg/kg also acceptable per recent evidence",
-      "Ketamine timing: Earlier administration (in RSE, not just SRSE) correlates with better outcomes. Consider using early or in combination with midazolam",
-      "NORSE/FIRES: ~50% remain cryptogenic; start immunotherapy within 72 hours even without confirmed etiology. Ketogenic diet by Day 7",
-      "Propofol infusion syndrome: metabolic acidosis, rhabdomyolysis, cardiac failure - limit propofol to <48h at high doses",
-      "Always have airway equipment ready; many second-line and all third-line agents cause respiratory depression"
-    ],
     "evidence": [
       {
         "recommendation": "Benzodiazepines first-line for SE",
-        "level": "Class I, Level A",
+        "evidenceLevel": "Class I, Level A",
         "source": "[NCS Guidelines 2012](https://pubmed.ncbi.nlm.nih.gov/22528274/); [AES Guidelines 2016](https://pubmed.ncbi.nlm.nih.gov/26900382/)"
       },
       {
         "recommendation": "Lorazepam preferred IV benzodiazepine",
-        "level": "Class I, Level A",
+        "evidenceLevel": "Class I, Level A",
         "source": "[Alldredge et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11547716/)"
       },
       {
         "recommendation": "IM midazolam non-inferior to IV lorazepam",
-        "level": "Class I, Level A",
+        "evidenceLevel": "Class I, Level A",
         "source": "[RAMPART Trial, Silbergleit et al. NEJM 2012](https://pubmed.ncbi.nlm.nih.gov/22335736/)"
       },
       {
         "recommendation": "Second-line agents (LEV, VPA, fPHT) equivalent efficacy",
-        "level": "Class I, Level A",
-        "source": "[ESETT Trial, Kapur et al. NEJM 2019](https://pubmed.ncbi.nlm.nih.gov/31774955/)"
+        "evidenceLevel": "Class I, Level A",
+        "source": "[ESETT Trial, Kapur et al. NEJM 2019;381:2103-2113](https://pubmed.ncbi.nlm.nih.gov/31774955/)"
       },
       {
         "recommendation": "Levetiracetam 60 mg/kg dosing",
-        "level": "Class I, Level A",
+        "evidenceLevel": "Class I, Level A",
         "source": "[ESETT Trial](https://pubmed.ncbi.nlm.nih.gov/31774955/) - higher than traditional 20-40 mg/kg"
       },
       {
         "recommendation": "Levetiracetam 40 mg/kg may be adequate",
-        "level": "Class II, Level B",
+        "evidenceLevel": "Class II, Level B",
         "source": "Meta-analysis, pharmacokinetic modeling 2023-2024"
       },
       {
         "recommendation": "cEEG monitoring in RSE",
-        "level": "Class I, Level B",
+        "evidenceLevel": "Class I, Level B",
         "source": "[NCS Guidelines 2012](https://pubmed.ncbi.nlm.nih.gov/22528274/)"
       },
       {
         "recommendation": "Burst suppression target for RSE",
-        "level": "Class IIb, Level C",
+        "evidenceLevel": "Class IIb, Level C",
         "source": "Expert consensus"
       },
       {
         "recommendation": "Ketamine in RSE/SRSE",
-        "level": "Class IIb, Level B",
+        "evidenceLevel": "Class IIb, Level B",
         "source": "Multiple case series; 2024 systematic reviews"
       },
       {
         "recommendation": "Earlier ketamine = better outcomes",
-        "level": "Class II, Level B",
+        "evidenceLevel": "Class II, Level B",
         "source": "2024 two-center study; systematic reviews"
       },
       {
         "recommendation": "Ketamine efficacy in RSE/SRSE",
-        "level": "Class IIa, Level B",
+        "evidenceLevel": "Class IIa, Level B",
         "source": "[Rosati A et al., CNS Drugs 2018;32(11):997-1009](https://pubmed.ncbi.nlm.nih.gov/30232735/)"
       },
       {
         "recommendation": "Ketamine ± midazolam superiority over midazolam alone",
-        "level": "Class II, Level B",
+        "evidenceLevel": "Class II, Level B",
         "source": "[Fletman et al., Clin Neurol Neurosurg 2024](https://pubmed.ncbi.nlm.nih.gov/39418930/); [Yan et al., J Neurol 2024](https://pubmed.ncbi.nlm.nih.gov/38782798/)"
       },
       {
         "recommendation": "NORSE first-line immunotherapy within 72h",
-        "level": "Class IIa, Level C",
+        "evidenceLevel": "Class IIa, Level C",
         "source": "[Wickström et al. Epilepsia 2022](https://pubmed.ncbi.nlm.nih.gov/35997591/)"
       },
       {
         "recommendation": "Ketogenic diet by Day 7 in NORSE",
-        "level": "Class IIa, Level C",
+        "evidenceLevel": "Class IIa, Level C",
         "source": "[International Consensus 2022](https://pubmed.ncbi.nlm.nih.gov/35951466/); FIRES case series"
       },
       {
         "recommendation": "Second-line immunotherapy by Day 7 if first-line fails",
-        "level": "Class IIb, Level C",
+        "evidenceLevel": "Class IIb, Level C",
         "source": "[International Consensus 2022](https://pubmed.ncbi.nlm.nih.gov/35997591/)"
       },
       {
         "recommendation": "Brivaracetam for SE",
-        "level": "Class IIb, Level C",
+        "evidenceLevel": "Class IIb, Level C",
         "source": "Emerging evidence; case series"
       }
     ],
-    "appendices": [
+    "monitoring": [
       {
-        "title": "Time-Based Treatment Algorithm",
-        "content": "TIME 0-5 MIN: STABILIZATION + EMERGENT TREATMENT\n• ABCs: Airway, Breathing, Circulation\n• Glucose check → Dextrose if low + Thiamine\n• IV access x 2\n• Lorazepam 0.1 mg/kg IV (max 4 mg) OR Midazolam 10 mg IM\n• May repeat BZD x1 in 5 min\n\nTIME 5-20 MIN: URGENT/SECOND-LINE (if still seizing)\n• Choose ONE:\n  - Levetiracetam 40-60 mg/kg IV (max 4500 mg)\n  - Fosphenytoin 20 mg PE/kg IV at 150 mg PE/min\n  - Valproate 40 mg/kg IV (max 3000 mg) - avoid in pregnancy\n  - Lacosamide 400 mg IV\n• Start cEEG monitoring\n• CT head if not done\n\nTIME 20-60 MIN: REFRACTORY SE (if still seizing)\n• Requires ICU and intubation\n• Initiate anesthetic infusion:\n  - Midazolam: Load 0.2 mg/kg → 0.1-2 mg/kg/hr\n  - Propofol: Load 1-2 mg/kg → 20-200 mcg/kg/min\n  - Ketamine: Load 1-2 mg/kg → 1-5 mg/kg/hr ← Consider EARLY\n• Target burst suppression on cEEG\n\nTIME >24 HOURS ON ANESTHETICS: SUPER-REFRACTORY SE\n• Add additional ASMs (topiramate, perampanel)\n• Combine anesthetics (midazolam + ketamine)\n• If NORSE/FIRES → See NORSE Protocol\n• Consider ketogenic diet\n• Goals of care discussion"
+        "item": "Continuous EEG",
+        "frequency": "Continuous",
+        "action": "Adjust ASMs/anesthetics",
+        "ED": "STAT",
+        "HOSP": "STAT",
+        "OPD": "—",
+        "ICU": "STAT"
       },
       {
-        "title": "NORSE/FIRES Immunotherapy Timeline",
-        "content": "DAY 0-3: FIRST-LINE IMMUNOTHERAPY\n• Methylprednisolone 1000 mg IV daily × 3-5 days\n• ± IVIG 0.4 g/kg/day × 5 days (can start simultaneously)\n• Continue ASMs and anesthetics as needed\n\nDAY 3-7: ESCALATE IF NO RESPONSE\n• Add IVIG if not started\n• Consider PLEX (5-7 exchanges)\n• Do not wait for autoimmune results\n\nDAY 7: KEY DECISION POINT\n• Initiate ketogenic diet\n• If first-line inadequate → Start second-line:\n  - Rituximab 375 mg/m² weekly × 4\n  - OR Cyclophosphamide 750-1000 mg/m² monthly\n• Continue supportive care\n\nDAY 7+: ONGOING MANAGEMENT\n• Continue second-line immunotherapy\n• Maintain ketogenic diet\n• Consider tocilizumab or anakinra if refractory\n• Goals of care discussion if no improvement"
+        "item": "Cardiac telemetry",
+        "frequency": "Continuous",
+        "action": "Treat arrhythmia; assess ASM effect",
+        "ED": "STAT",
+        "HOSP": "STAT",
+        "OPD": "—",
+        "ICU": "STAT"
       },
       {
-        "title": "Rapid Protocol (3 AM Protocol)",
-        "content": "STEP 1: STABILIZATION (Time 0)\n☐ Call Neurology STAT; alert ICU\n☐ Position patient, protect head\n☐ Oxygen: Non-rebreather 15 L/min\n☐ IV access: Two large-bore IVs\n☐ Cardiac monitor\n☐ Fingerstick glucose → Dextrose 50% 50mL + Thiamine 100mg if low/unknown\n\nSTEP 2: FIRST-LINE BENZODIAZEPINE (Time 0-5 min)\n• IV access: Lorazepam 4 mg IV push over 2 min\n• No IV: Midazolam 10 mg IM\n• No IV/IM: Midazolam 5 mg each nostril\n→ Wait 5 min. Still seizing? Repeat x1\n→ Wait 5 more min. Still seizing? GO TO STEP 3\n🚫 DO NOT give a third dose of benzodiazepine\n\nSTEP 3: SECOND-LINE ASM (Time 5-20 min)\nDEFAULT: Levetiracetam\n• 50 kg = 2500 mg IV over 10 min\n• 60 kg = 3000 mg IV\n• 70 kg = 3500 mg IV\n• 80 kg = 4000 mg IV\n• ≥90 kg = 4500 mg IV (max)\n\nALTERNATIVES:\n• Already on LEV at home → Fosphenytoin 20 mg PE/kg IV\n• Pregnant → Use Levetiracetam (avoid valproate)\n• Cardiac disease → Use Levetiracetam (avoid fosphenytoin/lacosamide)\n\n🚨 Still seizing at 20 min? → CALL ICU NOW, proceed to RSE protocol"
+        "item": "Pulse oximetry",
+        "frequency": "Continuous",
+        "action": "Increase O2, assess airway",
+        "ED": "STAT",
+        "HOSP": "STAT",
+        "OPD": "—",
+        "ICU": "STAT"
+      },
+      {
+        "item": "Blood pressure",
+        "frequency": "q5min during treatment, then q1h",
+        "action": "Pressors or antihypertensives",
+        "ED": "STAT",
+        "HOSP": "STAT",
+        "OPD": "—",
+        "ICU": "STAT"
+      },
+      {
+        "item": "Neurologic exam",
+        "frequency": "q1-2h when off sedation",
+        "action": "Imaging, reassess etiology",
+        "ED": "STAT",
+        "HOSP": "STAT",
+        "OPD": "—",
+        "ICU": "STAT"
+      },
+      {
+        "item": "Glucose",
+        "frequency": "q1-4h",
+        "action": "Insulin or dextrose",
+        "ED": "STAT",
+        "HOSP": "STAT",
+        "OPD": "—",
+        "ICU": "STAT"
+      },
+      {
+        "item": "Electrolytes (Na, K, Mg, Ca, Phos)",
+        "frequency": "q6-12h",
+        "action": "Replete deficiencies",
+        "ED": "STAT",
+        "HOSP": "STAT",
+        "OPD": "—",
+        "ICU": "STAT"
+      },
+      {
+        "item": "ABG/VBG",
+        "frequency": "q4-6h (RSE), PRN",
+        "action": "Adjust ventilator, treat acidosis",
+        "ED": "STAT",
+        "HOSP": "ROUTINE",
+        "OPD": "—",
+        "ICU": "STAT"
+      },
+      {
+        "item": "Lactate",
+        "frequency": "q6-12h",
+        "action": "Treat underlying cause",
+        "ED": "STAT",
+        "HOSP": "ROUTINE",
+        "OPD": "—",
+        "ICU": "STAT"
+      },
+      {
+        "item": "ASM levels",
+        "frequency": "24h after load, then PRN",
+        "action": "Adjust dosing",
+        "ED": "URGENT",
+        "HOSP": "ROUTINE",
+        "OPD": "—",
+        "ICU": "URGENT"
+      },
+      {
+        "item": "Ammonia",
+        "frequency": "q24h if on valproate",
+        "action": "Reduce/stop valproate",
+        "ED": "URGENT",
+        "HOSP": "ROUTINE",
+        "OPD": "—",
+        "ICU": "STAT"
+      },
+      {
+        "item": "LFTs",
+        "frequency": "q24-48h",
+        "action": "Adjust hepatically-metabolized ASMs",
+        "ED": "URGENT",
+        "HOSP": "ROUTINE",
+        "OPD": "—",
+        "ICU": "ROUTINE"
+      },
+      {
+        "item": "Renal function",
+        "frequency": "q24h",
+        "action": "Adjust renally-cleared ASMs",
+        "ED": "URGENT",
+        "HOSP": "ROUTINE",
+        "OPD": "—",
+        "ICU": "STAT"
+      },
+      {
+        "item": "CPK",
+        "frequency": "q12-24h if prolonged convulsions",
+        "action": "Aggressive hydration, monitor renal",
+        "ED": "—",
+        "HOSP": "ROUTINE",
+        "OPD": "—",
+        "ICU": "STAT"
+      },
+      {
+        "item": "Triglycerides",
+        "frequency": "q24-48h if on propofol",
+        "action": "Reduce propofol dose",
+        "ED": "—",
+        "HOSP": "—",
+        "OPD": "—",
+        "ICU": "ROUTINE"
+      },
+      {
+        "item": "Temperature",
+        "frequency": "q4h",
+        "action": "Infection workup; cooling if hyperthermic",
+        "ED": "STAT",
+        "HOSP": "STAT",
+        "OPD": "—",
+        "ICU": "STAT"
+      },
+      {
+        "item": "ICP (if monitored)",
+        "frequency": "Continuous",
+        "action": "ICP management protocol",
+        "ED": "—",
+        "HOSP": "—",
+        "OPD": "—",
+        "ICU": "STAT"
       }
     ],
-    "sections": {
-      "Laboratory Workup": {
-        "Core Labs": [
-          {
-            "item": "Point-of-care glucose",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Hypoglycemia is immediately reversible cause"
-          },
-          {
-            "item": "CBC with differential",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Infection screen, baseline before ASMs"
-          },
-          {
-            "item": "CMP (BMP + LFTs)",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Electrolyte abnormalities, renal/hepatic function for ASM dosing"
-          },
-          {
-            "item": "Magnesium",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Hypomagnesemia lowers seizure threshold"
-          },
-          {
-            "item": "Calcium (ionized if available)",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Hypocalcemia can cause seizures"
-          },
-          {
-            "item": "Phosphorus",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Hypophosphatemia lowers seizure threshold"
-          },
-          {
-            "item": "Blood gas (ABG or VBG)",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Acidosis, oxygenation, ventilation status"
-          },
-          {
-            "item": "Lactate",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Elevated in prolonged seizure; marker of severity"
-          },
-          {
-            "item": "Urine drug screen",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Illicit drugs, withdrawal states"
-          },
-          {
-            "item": "Blood alcohol level",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Alcohol withdrawal common cause"
-          },
-          {
-            "item": "ASM levels (if on therapy)",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Subtherapeutic levels as precipitant"
-          },
-          {
-            "item": "Pregnancy test (women of childbearing age)",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Eclampsia; affects ASM choice"
-          }
-        ],
-        "Extended Workup": [
-          {
-            "item": "Ammonia",
-            "ED": "URGENT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Hepatic encephalopathy, valproate toxicity"
-          },
-          {
-            "item": "TSH",
-            "ED": "URGENT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "Thyroid storm/myxedema"
-          },
-          {
-            "item": "Troponin",
-            "ED": "URGENT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Cardiac stress from prolonged seizure"
-          },
-          {
-            "item": "CPK/CK",
-            "ED": "URGENT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Rhabdomyolysis from prolonged convulsions"
-          },
-          {
-            "item": "Cortisol (random)",
-            "ED": "URGENT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "Adrenal insufficiency"
-          },
-          {
-            "item": "Serum osmolality",
-            "ED": "URGENT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "Hypo/hyperosmolar states"
-          },
-          {
-            "item": "Procalcitonin",
-            "ED": "URGENT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "CNS infection if suspected"
-          },
-          {
-            "item": "Coagulation panel (PT/INR, PTT)",
-            "ED": "URGENT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Pre-LP, hemorrhage risk"
-          },
-          {
-            "item": "Type and screen",
-            "ED": "URGENT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Anticipate possible surgical intervention"
-          },
-          {
-            "item": "Urinalysis",
-            "ED": "URGENT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "UTI as precipitant (especially elderly)"
-          }
-        ],
-        "Rare/Specialized": [
-          {
-            "item": "Autoimmune encephalitis panel (serum)",
-            "ED": "-",
-            "HOSP": "URGENT",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "Anti-NMDAR, LGI1, CASPR2 in NORSE"
-          },
-          {
-            "item": "Paraneoplastic panel (serum)",
-            "ED": "-",
-            "HOSP": "URGENT",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "Subacute onset, smoking history, weight loss"
-          },
-          {
-            "item": "HIV",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "rationale": "HIV-associated CNS disease"
-          },
-          {
-            "item": "RPR/VDRL",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "rationale": "Neurosyphilis"
-          },
-          {
-            "item": "Ceruloplasmin, serum copper",
-            "ED": "-",
-            "HOSP": "EXT",
-            "OPD": "-",
-            "ICU": "EXT",
-            "rationale": "Wilson disease (young patients)"
-          },
-          {
-            "item": "Porphyrins (urine/serum)",
-            "ED": "-",
-            "HOSP": "EXT",
-            "OPD": "-",
-            "ICU": "EXT",
-            "rationale": "Acute intermittent porphyria"
-          },
-          {
-            "item": "Mitochondrial DNA testing",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "EXT",
-            "rationale": "MELAS, other mitochondrial disorders"
-          },
-          {
-            "item": "Pyridoxine trial (empiric)",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "Pyridoxine-dependent seizures (rare, usually pediatric)"
-          }
-        ]
+    "disposition": [
+      {
+        "disposition": "ICU admission (REQUIRED)",
+        "criteria": "All SE requiring second-line ASMs; all RSE/SRSE; altered mental status; need for airway management; hemodynamic instability"
       },
-      "Imaging & Studies": {
-        "Essential": [
-          {
-            "item": "CT head without contrast",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Rule out structural cause requiring intervention",
-            "timing": "As soon as patient stabilized; do not delay treatment",
-            "target": "Mass lesion, hemorrhage, stroke, midline shift, herniation"
-          },
-          {
-            "item": "Continuous EEG (cEEG) monitoring",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Essential - up to 48% have NCSE after convulsive SE controlled",
-            "timing": "Initiate within 1 hour of presentation; continue 24-48h after clinical seizure control",
-            "target": "Electrographic seizure activity, burst suppression pattern, NCSE"
-          },
-          {
-            "item": "Chest X-ray",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Aspiration risk high with prolonged seizure and altered consciousness",
-            "target": "Aspiration pneumonia, ETT position if intubated"
-          }
-        ],
-        "Extended": [
-          {
-            "item": "MRI brain with and without contrast",
-            "ED": "-",
-            "HOSP": "URGENT",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "Superior for encephalitis, subtle lesions, NORSE workup",
-            "timing": "When stable enough for MRI; within 24-48h if possible",
-            "target": "Encephalitis (temporal lobe signal), stroke, tumor, hippocampal injury",
-            "contraindications": "Pacemaker, metal implants - check MRI safety"
-          },
-          {
-            "item": "CT angiography head/neck",
-            "ED": "URGENT",
-            "HOSP": "URGENT",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "If stroke suspected as cause of SE",
-            "target": "Large vessel occlusion, dissection",
-            "contraindications": "Contrast allergy (premedicate); renal insufficiency (hydrate)"
-          },
-          {
-            "item": "MRA/MRV brain",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "rationale": "If vascular etiology suspected",
-            "target": "Venous thrombosis, vascular malformation"
-          },
-          {
-            "item": "CT chest/abdomen/pelvis",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "rationale": "If paraneoplastic suspected",
-            "target": "Occult malignancy"
-          },
-          {
-            "item": "Echocardiogram",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "rationale": "If embolic stroke suspected, endocarditis",
-            "target": "Vegetation, thrombus"
-          }
-        ],
-        "Rare/Specialized": [
-          {
-            "item": "PET-CT (whole body)",
-            "ED": "-",
-            "HOSP": "EXT",
-            "OPD": "-",
-            "ICU": "EXT",
-            "rationale": "Occult malignancy workup",
-            "target": "Tumor identification"
-          },
-          {
-            "item": "Brain biopsy",
-            "ED": "-",
-            "HOSP": "EXT",
-            "OPD": "-",
-            "ICU": "EXT",
-            "rationale": "Refractory cases, suspected encephalitis",
-            "target": "Histopathologic diagnosis",
-            "contraindications": "Coagulopathy, critical location"
-          }
-        ],
-        "Lumbar Puncture": [
-          {
-            "item": "Opening pressure",
-            "ED": "URGENT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Elevated ICP",
-            "target": "10-20 cm H2O"
-          },
-          {
-            "item": "Cell count (tubes 1 and 4)",
-            "ED": "URGENT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Infection, inflammation",
-            "target": "WBC <5; RBC 0"
-          },
-          {
-            "item": "Protein",
-            "ED": "URGENT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Elevated in infection, inflammation",
-            "target": "15-45 mg/dL"
-          },
-          {
-            "item": "Glucose with serum glucose",
-            "ED": "URGENT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Low in bacterial/fungal meningitis",
-            "target": ">60% serum"
-          },
-          {
-            "item": "Gram stain and culture",
-            "ED": "URGENT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Bacterial meningitis",
-            "target": "No organisms"
-          },
-          {
-            "item": "BioFire FilmArray ME Panel",
-            "ED": "URGENT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Rapid pathogen identification",
-            "target": "Negative"
-          },
-          {
-            "item": "HSV-1/2 PCR",
-            "ED": "URGENT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "HSV encephalitis",
-            "target": "Negative"
-          },
-          {
-            "item": "Autoimmune encephalitis panel (CSF)",
-            "ED": "-",
-            "HOSP": "URGENT",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "NORSE, limbic encephalitis",
-            "target": "Negative"
-          },
-          {
-            "item": "Cytology",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "rationale": "Carcinomatous meningitis",
-            "target": "Negative"
-          },
-          {
-            "item": "Oligoclonal bands",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "rationale": "Demyelinating disease",
-            "target": "Negative"
-          }
-        ]
+      {
+        "disposition": "Step-down/Telemetry",
+        "criteria": "Seizures controlled x 24h, off anesthetics x 24h, stable neuro exam, no airway concerns"
       },
-      "Treatment": {
-        "Stabilization": [
-          {
-            "item": "Airway positioning/management",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "Head-tilt chin-lift, oral airway, prepare for intubation",
-            "rationale": "Protect airway"
-          },
-          {
-            "item": "Supplemental oxygen",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "Non-rebreather 15 L/min",
-            "rationale": "Maintain O2 sat >94%"
-          },
-          {
-            "item": "IV access (two large-bore)",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "18G or larger x2",
-            "rationale": "Medication administration"
-          },
-          {
-            "item": "Dextrose 50% IV",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "50 mL IV push (25g) if glucose <70 or unknown",
-            "rationale": "Correct hypoglycemia"
-          },
-          {
-            "item": "Thiamine IV",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "100-500 mg IV BEFORE or WITH glucose",
-            "rationale": "Prevent Wernicke encephalopathy"
-          },
-          {
-            "item": "Cardiac monitoring",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "Continuous telemetry",
-            "rationale": "Monitor for arrhythmias; ASMs can affect cardiac conduction",
-            "monitoring": "Rhythm, HR, BP"
-          },
-          {
-            "item": "Isotonic fluids",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "NS or LR wide open initially",
-            "rationale": "Volume resuscitation, medication administration",
-            "contraindications": "Pulmonary edema",
-            "monitoring": "BP, I/O"
-          }
-        ],
-        "First-Line (Benzodiazepines)": [
-          {
-            "item": "Lorazepam IV",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "4 mg IV push over 2 min; may repeat x1 in 5 min; max 8 mg total",
-            "rationale": "First-line if IV access available; Class I evidence",
-            "timing": "Administer within 5 min of seizure onset",
-            "target": "Cessation of clinical and electrographic seizure activity",
-            "contraindications": "Acute narrow-angle glaucoma; severe respiratory depression without ventilator support",
-            "monitoring": "Respiratory status, BP, sedation level; have airway equipment ready"
-          },
-          {
-            "item": "Midazolam IM",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "10 mg IM single dose (if no IV access)",
-            "rationale": "First-line if no IV access; RAMPART trial showed non-inferior to IV lorazepam",
-            "timing": "Administer immediately if no IV access",
-            "target": "Cessation of clinical seizure activity",
-            "monitoring": "Respiratory status; onset 5-15 min"
-          },
-          {
-            "item": "Midazolam IV",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "0.2 mg/kg IV (max 10 mg); may repeat x1",
-            "rationale": "Alternative IV benzodiazepine; faster onset than lorazepam",
-            "timing": "Administer within 5 min of seizure onset",
-            "target": "Cessation of clinical and electrographic seizure activity",
-            "contraindications": "Acute narrow-angle glaucoma; severe respiratory depression",
-            "monitoring": "RR, O2 sat, BP"
-          },
-          {
-            "item": "Midazolam intranasal",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "5 mg per nostril (10 mg total)",
-            "rationale": "Alternative if no IV/IM access; useful for bystander administration",
-            "timing": "Administer immediately; onset 10-15 min",
-            "target": "Cessation of clinical seizure activity",
-            "contraindications": "Nasal obstruction",
-            "monitoring": "RR, O2 sat"
-          },
-          {
-            "item": "Midazolam buccal",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "10 mg buccal (if available)",
-            "rationale": "Alternative if no IV access; useful in community setting",
-            "timing": "Administer immediately if no IV/IM access",
-            "target": "Cessation of clinical seizure activity",
-            "contraindications": "Oral trauma",
-            "monitoring": "RR, O2 sat"
-          },
-          {
-            "item": "Diazepam IV",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "0.15 mg/kg IV (max 10 mg); may repeat x1 in 5 min",
-            "rationale": "Alternative IV benzodiazepine; shorter duration requires follow-up ASM",
-            "timing": "Administer within 5 min of seizure onset",
-            "target": "Cessation of clinical seizure activity",
-            "contraindications": "Acute narrow-angle glaucoma",
-            "monitoring": "RR, O2 sat; short duration - requires follow-up ASM"
-          },
-          {
-            "item": "Diazepam rectal",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "0.2-0.5 mg/kg PR (max 20 mg); use rectal gel formulation",
-            "rationale": "Alternative if no IV/IM access; useful for home/EMS use",
-            "timing": "Administer immediately if no other access",
-            "target": "Cessation of clinical seizure activity",
-            "contraindications": "Rectal pathology",
-            "monitoring": "RR, O2 sat"
-          }
-        ],
-        "Second-Line ASMs": [
-          {
-            "item": "Levetiracetam IV",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "50-60 mg/kg IV (max 4500 mg) over 10-15 min",
-            "rationale": "Preferred - fewest drug interactions, no cardiac monitoring needed",
-            "timing": "Give at 5-10 min if BZD fails; infuse over 10-15 min",
-            "target": "Seizure cessation; therapeutic level not needed acutely",
-            "contraindications": "None absolute; reduce dose if CrCl <50",
-            "monitoring": "None required during acute administration"
-          },
-          {
-            "item": "Fosphenytoin IV",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "20 mg PE/kg IV at 150 mg PE/min",
-            "rationale": "Alternative - equivalent efficacy per ESETT",
-            "timing": "Give at 5-10 min if BZD fails; infusion takes ~15 min",
-            "target": "Total phenytoin level 10-20 mcg/mL; free level 1-2 mcg/mL",
-            "contraindications": "2nd/3rd degree AV block; sinus bradycardia; Adams-Stokes syndrome",
-            "monitoring": "Continuous cardiac monitoring during infusion; BP q5min"
-          },
-          {
-            "item": "Valproate IV",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "40 mg/kg IV (max 3000 mg) over 10 min",
-            "rationale": "Alternative - equivalent efficacy per ESETT",
-            "timing": "Give at 5-10 min if BZD fails",
-            "target": "Seizure cessation; level 80-120 mcg/mL",
-            "contraindications": "PREGNANCY (teratogenic); hepatic disease; urea cycle disorders; mitochondrial disease (POLG mutations)",
-            "monitoring": "LFTs, ammonia if altered mental status persists"
-          },
-          {
-            "item": "Lacosamide IV",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "400 mg IV over 15 min",
-            "rationale": "Alternative - not in ESETT but increasingly used",
-            "timing": "Give at 5-10 min if BZD fails",
-            "target": "Seizure cessation",
-            "contraindications": "2nd/3rd degree AV block without pacemaker; PR interval >200ms",
-            "monitoring": "ECG - check PR interval before and after"
-          },
-          {
-            "item": "Levetiracetam IV (conservative)",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "40 mg/kg IV (max 4500 mg) over 10-15 min",
-            "rationale": "Alternative lower dosing; some institutions prefer this over ESETT 60 mg/kg",
-            "timing": "Give at 5-10 min if BZD fails",
-            "target": "Seizure cessation",
-            "contraindications": "None absolute; reduce if CrCl <50",
-            "monitoring": "Generally well tolerated; agitation"
-          },
-          {
-            "item": "Brivaracetam IV",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "100-200 mg IV over 2-5 min; no titration needed",
-            "rationale": "Faster onset than levetiracetam; fewer behavioral effects; useful if patient on home levetiracetam",
-            "timing": "Give at 5-10 min if BZD fails",
-            "target": "Seizure cessation",
-            "contraindications": "Hepatic impairment (reduce dose)",
-            "monitoring": "Generally well tolerated"
-          },
-          {
-            "item": "Phenytoin IV",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "20 mg/kg IV at max 50 mg/min (if fosphenytoin unavailable)",
-            "rationale": "Alternative if fosphenytoin unavailable; same efficacy but more infusion risks",
-            "timing": "Give at 5-10 min if BZD fails",
-            "target": "Seizure cessation; level 10-20 mcg/mL",
-            "contraindications": "2nd/3rd degree AV block; sinus bradycardia",
-            "monitoring": "Cardiac monitor; MUST use large vein - tissue necrosis risk with extravasation"
-          },
-          {
-            "item": "Phenobarbital IV",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "15-20 mg/kg IV at 50-100 mg/min",
-            "rationale": "Highly effective but significant respiratory depression; often requires intubation",
-            "timing": "Give at 5-10 min if BZD fails; have airway ready",
-            "target": "Seizure cessation; level 20-40 mcg/mL",
-            "contraindications": "Severe respiratory disease; porphyria",
-            "monitoring": "Respiratory status - often requires intubation at full dose; sedation"
-          }
-        ],
-        "Refractory SE (Anesthetics)": [
-          {
-            "item": "Midazolam infusion",
-            "ED": "URGENT",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "Load 0.2 mg/kg bolus; then 0.1 mg/kg/hr, titrate to burst suppression; max 2 mg/kg/hr",
-            "rationale": "First-line anesthetic for RSE; less hypotension than propofol",
-            "timing": "Initiate at 20-60 min if still seizing after second-line ASM",
-            "target": "Burst suppression on cEEG (1-2 bursts per 10 sec)",
-            "contraindications": "None absolute in RSE",
-            "monitoring": "cEEG continuous; BP, HR continuous; sedation assessment q4h"
-          },
-          {
-            "item": "Ketamine infusion",
-            "ED": "URGENT",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "Load 1-2 mg/kg bolus; then 1-5 mg/kg/hr",
-            "rationale": "NMDA antagonist - different mechanism; GIVE EARLY for better outcomes",
-            "timing": "Consider early in RSE, not just SRSE; can combine with midazolam",
-            "target": "Seizure cessation; may not need burst suppression",
-            "contraindications": "Severe uncontrolled HTN; conditions where increased ICP is harmful",
-            "monitoring": "cEEG; BP (may cause hypertension); secretions"
-          },
-          {
-            "item": "Propofol infusion",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "Load 1-2 mg/kg; then 20-200 mcg/kg/min; limit <48h at high dose",
-            "rationale": "Alternative - rapid onset/offset but risk of PRIS",
-            "timing": "Initiate at 20-60 min if still seizing",
-            "target": "Burst suppression on cEEG",
-            "contraindications": "Propofol allergy; caution in children; caution if >48h needed",
-            "monitoring": "PROPOFOL INFUSION SYNDROME: check triglycerides, lactate, CPK daily; limit duration"
-          },
-          {
-            "item": "Ketamine + Midazolam (combination)",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "Ketamine load 1 mg/kg + Midazolam load 0.2 mg/kg; then dual infusions",
-            "rationale": "2024 data: combination may reduce SE duration faster than midazolam alone",
-            "target": "Seizure cessation",
-            "monitoring": "cEEG; hemodynamics"
-          },
-          {
-            "item": "Pentobarbital infusion",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "Load 5-15 mg/kg IV at 50 mg/min; then 0.5-1 mg/kg/hr, titrate to burst suppression; max 5 mg/kg/hr",
-            "rationale": "Most potent but worst hemodynamic effects; reserve for SRSE",
-            "target": "Burst suppression on cEEG",
-            "contraindications": "Severe cardiac dysfunction",
-            "monitoring": "cEEG, BP (significant hypotension - need pressors), cardiac output"
-          }
-        ],
-        "Super-Refractory SE": [
-          {
-            "item": "Add second anesthetic",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "Combine midazolam + propofol, or add ketamine to either",
-            "rationale": "Seizures continue ≥24h after anesthetic initiation",
-            "monitoring": "cEEG, hemodynamics"
-          },
-          {
-            "item": "Topiramate (enteral)",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "dosing": "Load 300-400 mg via NGT; then 200-400 mg BID; max 1600 mg/day",
-            "rationale": "Adjunctive ASM for SRSE",
-            "contraindications": "Metabolic acidosis, kidney stones",
-            "monitoring": "Bicarbonate, renal function"
-          },
-          {
-            "item": "Lacosamide (if not tried)",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "dosing": "400 mg IV, then 200-400 mg BID",
-            "contraindications": "PR prolongation",
-            "monitoring": "ECG"
-          },
-          {
-            "item": "Perampanel (enteral)",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "dosing": "4-8 mg via NGT daily; titrate to 12 mg daily",
-            "rationale": "AMPA antagonist",
-            "monitoring": "Aggression, sedation"
-          },
-          {
-            "item": "Magnesium sulfate infusion",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "dosing": "4-6 g IV over 20 min, then 1-2 g/hr; target Mg 3.5-4 mg/dL",
-            "contraindications": "Renal failure (relative), myasthenia",
-            "monitoring": "Mg levels, reflexes, respiratory status"
-          },
-          {
-            "item": "Pyridoxine (empiric trial)",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "dosing": "100-500 mg IV; may try single dose empirically",
-            "rationale": "Pyridoxine-dependent seizures"
-          },
-          {
-            "item": "Ketogenic diet",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "dosing": "Initiate within 7 days per NORSE consensus; requires nutrition support",
-            "contraindications": "Pyruvate carboxylase deficiency, fatty acid oxidation disorders",
-            "monitoring": "Ketones, glucose, lipids"
-          },
-          {
-            "item": "Hypothermia (32-35°C)",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "EXT",
-            "dosing": "Targeted temperature management x 24-48h",
-            "contraindications": "Coagulopathy, severe infection",
-            "monitoring": "Temperature, coagulation, infection"
-          },
-          {
-            "item": "Electroconvulsive therapy",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "EXT",
-            "dosing": "If all else fails; requires anesthesia",
-            "contraindications": "Raised ICP, recent stroke"
-          },
-          {
-            "item": "Epilepsy surgery (emergent)",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "EXT",
-            "dosing": "Resection if focal lesion identified",
-            "contraindications": "Eloquent cortex, multifocal"
-          }
-        ],
-        "NORSE/FIRES First-Line Immunotherapy": [
-          {
-            "item": "Methylprednisolone IV",
-            "ED": "-",
-            "HOSP": "URGENT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "1000 mg IV daily × 3-5 days",
-            "rationale": "Start within 72 hours if no clear etiology",
-            "contraindications": "Active untreated infection (relative)",
-            "monitoring": "Glucose q6h, BP, GI prophylaxis, infection signs"
-          },
-          {
-            "item": "IVIG",
-            "ED": "-",
-            "HOSP": "URGENT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "0.4 g/kg/day IV × 5 days (total 2 g/kg); can give simultaneously with steroids",
-            "contraindications": "IgA deficiency (use IgA-depleted product), renal failure, thrombosis risk",
-            "monitoring": "Renal function, signs of aseptic meningitis, thrombosis"
-          },
-          {
-            "item": "Plasmapheresis (PLEX)",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange",
-            "contraindications": "Hemodynamic instability, line access issues",
-            "monitoring": "Hemodynamics, electrolytes (Ca, Mg), coagulation, fibrinogen"
-          }
-        ],
-        "NORSE/FIRES Second-Line Immunotherapy": [
-          {
-            "item": "Rituximab",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "dosing": "375 mg/m² IV weekly × 4 doses",
-            "rationale": "If first-line fails by Day 7",
-            "contraindications": "Active infection, hepatitis B (screen first)",
-            "monitoring": "Infusion reactions, infection, B-cell counts"
-          },
-          {
-            "item": "Cyclophosphamide",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "dosing": "750-1000 mg/m² IV monthly × 3-6 months",
-            "contraindications": "Severe cytopenias, active infection",
-            "monitoring": "CBC weekly, renal function, hemorrhagic cystitis (hydration + mesna)"
-          },
-          {
-            "item": "Tocilizumab",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "EXT",
-            "dosing": "8 mg/kg IV q4 weeks (emerging option)",
-            "contraindications": "Active infection, hepatic impairment",
-            "monitoring": "LFTs, lipids, infection"
-          },
-          {
-            "item": "Anakinra",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "EXT",
-            "dosing": "100 mg SC daily (may increase; used in FIRES)",
-            "contraindications": "Active infection",
-            "monitoring": "Injection site reactions, infection"
-          }
-        ],
-        "Symptomatic/Supportive ICU Care": [
-          {
-            "item": "Norepinephrine",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "Start 0.1 mcg/kg/min; titrate to MAP ≥65",
-            "rationale": "Hypotension from anesthetics",
-            "contraindications": "Hypovolemia (correct first)",
-            "monitoring": "Arterial line, MAP"
-          },
-          {
-            "item": "Vasopressin",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "0.04 units/min fixed dose",
-            "rationale": "Adjunct pressor",
-            "contraindications": "Cardiac ischemia",
-            "monitoring": "MAP, cardiac status"
-          },
-          {
-            "item": "Fentanyl infusion",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "dosing": "25-100 mcg/hr; titrate to comfort",
-            "rationale": "Analgesia/sedation adjunct",
-            "contraindications": "Hemodynamic instability",
-            "monitoring": "Pain scale, respiratory status"
-          },
-          {
-            "item": "Propofol (sub-anesthetic)",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "dosing": "5-50 mcg/kg/min",
-            "rationale": "Sedation during cEEG",
-            "contraindications": "Same as anesthetic use",
-            "monitoring": "Sedation scale"
-          },
-          {
-            "item": "Dexmedetomidine",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "dosing": "0.2-1.5 mcg/kg/hr",
-            "rationale": "Sedation, possible antiseizure properties",
-            "contraindications": "Bradycardia, heart block",
-            "monitoring": "HR, BP"
-          },
-          {
-            "item": "Pantoprazole",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "40 mg IV daily",
-            "rationale": "Stress ulcer prophylaxis",
-            "monitoring": "GI bleeding"
-          },
-          {
-            "item": "Enoxaparin",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "40 mg SC daily (start when stable)",
-            "rationale": "DVT prophylaxis",
-            "contraindications": "Active bleeding, recent LP",
-            "monitoring": "Platelets, bleeding"
-          },
-          {
-            "item": "Insulin infusion",
-            "ED": "URGENT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "Per ICU protocol; target glucose 140-180 mg/dL",
-            "rationale": "Stress hyperglycemia",
-            "contraindications": "Hypoglycemia",
-            "monitoring": "Glucose q1-4h"
-          },
-          {
-            "item": "Bowel regimen",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "dosing": "Docusate 100 mg BID + senna 8.6 mg daily; escalate PRN",
-            "rationale": "Constipation prophylaxis",
-            "contraindications": "Bowel obstruction",
-            "monitoring": "Bowel movements"
-          },
-          {
-            "item": "Skin care protocol",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "Turn q2h, specialty mattress, moisture barrier, Braden scale assessment",
-            "rationale": "Pressure injury prevention",
-            "monitoring": "Skin integrity daily"
-          },
-          {
-            "item": "Eye care",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "Lubricating drops q4h, eyelid taping if incomplete closure",
-            "rationale": "Corneal protection",
-            "monitoring": "Corneal integrity"
-          }
-        ]
+      {
+        "disposition": "General floor",
+        "criteria": "Seizures controlled, off continuous monitoring, stable on oral ASMs, resolved AMS"
       },
-      "Referrals & Consults": {
-        "Consults": [
-          {
-            "item": "Neurology/Epilepsy STAT consult",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "All cases of SE"
-          },
-          {
-            "item": "Neurocritical care consult",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "RSE/SRSE, need for anesthetic infusions"
-          },
-          {
-            "item": "ICU admission",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "-",
-            "rationale": "All SE requiring second-line agents or ongoing seizures"
-          },
-          {
-            "item": "EEG technologist/cEEG initiation",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "rationale": "Mandatory for RSE/SRSE; strongly recommended for all SE"
-          },
-          {
-            "item": "Infectious disease consult",
-            "ED": "-",
-            "HOSP": "URGENT",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "Suspected CNS infection"
-          },
-          {
-            "item": "Rheumatology/Neuroimmunology consult",
-            "ED": "-",
-            "HOSP": "URGENT",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "NORSE/FIRES, suspected autoimmune encephalitis"
-          },
-          {
-            "item": "Pharmacy consult",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "rationale": "Complex ASM dosing, drug interactions"
-          },
-          {
-            "item": "Nutrition/Dietitian consult",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "Enteral feeding, ketogenic diet initiation (by Day 7 in NORSE)"
-          },
-          {
-            "item": "Palliative care consult",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "rationale": "SRSE with poor prognosis, goals of care discussion"
-          },
-          {
-            "item": "Social work consult",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "ROUTINE",
-            "rationale": "Family support, discharge planning"
-          },
-          {
-            "item": "Epilepsy surgery evaluation",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "EXT",
-            "ICU": "EXT",
-            "rationale": "Focal lesion on imaging, refractory to medical therapy"
-          },
-          {
-            "item": "PT/OT/Speech evaluation",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "ROUTINE",
-            "rationale": "Once stabilized; assess for deficits"
-          },
-          {
-            "item": "Epilepsy outpatient follow-up",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "All SE survivors; ASM optimization, etiology workup"
-          },
-          {
-            "item": "Outpatient video-EEG monitoring",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "Characterization of seizure type, presurgical evaluation"
-          },
-          {
-            "item": "Neuropsychology testing",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "Cognitive assessment post-SE; baseline before surgery"
-          }
-        ]
+      {
+        "disposition": "Discharge home",
+        "criteria": "Seizures controlled, stable on oral ASM regimen, etiology identified and addressed, family educated, follow-up arranged"
       },
-      "Patient Instructions": {
-        "Education": [
-          {
-            "item": "Explain SE is a medical emergency requiring ICU care",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "-",
-            "rationale": "Family understanding of severity"
-          },
-          {
-            "item": "Discuss prognosis based on etiology and duration of SE",
-            "ED": "-",
-            "HOSP": "URGENT",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "rationale": "Realistic expectations"
-          },
-          {
-            "item": "Educate on importance of ASM adherence",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "Prevent recurrence if applicable"
-          },
-          {
-            "item": "Seizure first aid education for family",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "Safety during future seizures"
-          },
-          {
-            "item": "Rescue medication training (rectal diazepam, nasal midazolam)",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "Empower family for seizure emergencies"
-          },
-          {
-            "item": "Driving restrictions (minimum 3-6 months seizure-free)",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "Legal requirement; varies by state"
-          },
-          {
-            "item": "Medical alert bracelet recommendation",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "Emergency identification"
-          },
-          {
-            "item": "Seizure action plan development",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "Structured emergency response"
-          },
-          {
-            "item": "Discuss goals of care if SRSE with poor prognosis",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "rationale": "End-of-life planning when appropriate"
-          }
-        ]
+      {
+        "disposition": "Transfer to higher level care",
+        "criteria": "Need for services unavailable (cEEG, neurocritical care, epilepsy surgery evaluation)"
       },
-      "Lifestyle": {
-        "Prevention": [
-          {
-            "item": "Medication adherence counseling",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "ASM non-adherence is common SE precipitant"
-          },
-          {
-            "item": "Avoid abrupt ASM discontinuation",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "Common SE precipitant"
-          },
-          {
-            "item": "Alcohol cessation",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "Alcohol lowers seizure threshold; withdrawal causes seizures"
-          },
-          {
-            "item": "Sleep hygiene",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "Sleep deprivation lowers seizure threshold"
-          },
-          {
-            "item": "Avoid known seizure triggers",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "Patient-specific triggers"
-          },
-          {
-            "item": "Drug interaction review",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "OTC meds and supplements can affect ASM levels"
-          },
-          {
-            "item": "Pregnancy planning counseling",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "Women of childbearing potential; teratogenic ASMs"
-          }
-        ]
+      {
+        "disposition": "Long-term care/Rehab",
+        "criteria": "Persistent deficits after prolonged SE, need for ongoing rehabilitation"
       },
-      "Monitoring Parameters": {
-        "Continuous Monitoring": [
-          {
-            "item": "Continuous EEG",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "frequency": "Continuous",
-            "target": "No seizures; burst suppression if on anesthetics",
-            "rationale": "Detect ongoing seizures, NCSE"
-          },
-          {
-            "item": "Cardiac telemetry",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "frequency": "Continuous",
-            "target": "Normal rhythm, HR 60-100",
-            "rationale": "Arrhythmia from ASMs, electrolyte shifts"
-          },
-          {
-            "item": "Pulse oximetry",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "frequency": "Continuous",
-            "target": "O2 sat >94%",
-            "rationale": "Respiratory depression from sedatives"
-          },
-          {
-            "item": "Blood pressure",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "frequency": "q5min during treatment, then q1h",
-            "target": "MAP ≥65; avoid severe hypertension",
-            "rationale": "Hypotension from anesthetics; hypertension from seizures"
-          }
-        ],
-        "Intermittent Monitoring": [
-          {
-            "item": "Neurologic exam",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "frequency": "q1-2h when off sedation",
-            "target": "Return to baseline",
-            "rationale": "Track recovery, detect new deficits"
-          },
-          {
-            "item": "Glucose",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "frequency": "q1-4h",
-            "target": "140-180 mg/dL (ICU)",
-            "rationale": "Stress hyperglycemia common"
-          },
-          {
-            "item": "Electrolytes (Na, K, Mg, Ca, Phos)",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "frequency": "q6-12h",
-            "target": "Normal ranges",
-            "rationale": "Electrolyte shifts can trigger seizures"
-          },
-          {
-            "item": "ABG/VBG",
-            "ED": "STAT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "frequency": "q4-6h (RSE), PRN",
-            "target": "pH >7.25, CO2 35-45",
-            "rationale": "Respiratory and metabolic status"
-          },
-          {
-            "item": "Lactate",
-            "ED": "STAT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "frequency": "q6-12h",
-            "target": "Trending down",
-            "rationale": "Marker of seizure activity and tissue perfusion"
-          },
-          {
-            "item": "ASM levels",
-            "ED": "URGENT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "URGENT",
-            "frequency": "24h after load, then PRN",
-            "target": "Therapeutic range",
-            "rationale": "Guide dosing adjustments"
-          },
-          {
-            "item": "Ammonia",
-            "ED": "URGENT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "frequency": "q24h if on valproate",
-            "target": "<35 μmol/L",
-            "rationale": "Valproate-induced hyperammonemia"
-          },
-          {
-            "item": "LFTs",
-            "ED": "URGENT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "frequency": "q24-48h",
-            "target": "Normal",
-            "rationale": "Hepatically-metabolized ASMs"
-          },
-          {
-            "item": "Renal function",
-            "ED": "URGENT",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "frequency": "q24h",
-            "target": "Normal",
-            "rationale": "Renally-cleared ASMs"
-          },
-          {
-            "item": "CPK",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "-",
-            "ICU": "STAT",
-            "frequency": "q12-24h if prolonged convulsions",
-            "target": "Trending down",
-            "rationale": "Rhabdomyolysis risk"
-          },
-          {
-            "item": "Triglycerides",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "ROUTINE",
-            "frequency": "q24-48h if on propofol",
-            "target": "<400 mg/dL",
-            "rationale": "Propofol infusion syndrome"
-          },
-          {
-            "item": "Temperature",
-            "ED": "STAT",
-            "HOSP": "STAT",
-            "OPD": "-",
-            "ICU": "STAT",
-            "frequency": "q4h",
-            "target": "36-38°C",
-            "rationale": "Fever workup; hyperthermia worsens neuronal injury"
-          },
-          {
-            "item": "ICP (if monitored)",
-            "ED": "-",
-            "HOSP": "-",
-            "OPD": "-",
-            "ICU": "STAT",
-            "frequency": "Continuous",
-            "target": "<20 mmHg",
-            "rationale": "If ICP monitor placed"
-          }
-        ]
-      },
-      "Disposition Criteria": {
-        "Criteria": [
-          {
-            "disposition": "ICU admission (REQUIRED)",
-            "criteria": "All SE requiring second-line ASMs; all RSE/SRSE; altered mental status; need for airway management; hemodynamic instability"
-          },
-          {
-            "disposition": "Step-down/Telemetry",
-            "criteria": "Seizures controlled x 24h, off anesthetics x 24h, stable neuro exam, no airway concerns"
-          },
-          {
-            "disposition": "General floor",
-            "criteria": "Seizures controlled, off continuous monitoring, stable on oral ASMs, resolved AMS"
-          },
-          {
-            "disposition": "Discharge home",
-            "criteria": "Seizures controlled, stable on oral ASM regimen, etiology identified and addressed, family educated, follow-up arranged"
-          },
-          {
-            "disposition": "Transfer to higher level care",
-            "criteria": "Need for services unavailable (cEEG, neurocritical care, epilepsy surgery evaluation)"
-          },
-          {
-            "disposition": "Long-term care/Rehab",
-            "criteria": "Persistent deficits after prolonged SE, need for ongoing rehabilitation"
-          },
-          {
-            "disposition": "Palliative/Hospice",
-            "criteria": "SRSE with irreversible brain injury, goals of care established"
-          }
-        ]
+      {
+        "disposition": "Palliative/Hospice",
+        "criteria": "SRSE with irreversible brain injury, goals of care established"
       }
-    }
+    ]
   },
   "New Onset Seizure": {
     "id": "new-onset-seizure",
@@ -2165,8 +2005,10 @@
             "OPD": "EXT",
             "ICU": "—"
           }
-        ],
-        "Lumbar Puncture": [
+        ]
+      },
+      "Lumbar Puncture": {
+        "Studies": [
           {
             "item": "Opening pressure",
             "rationale": "Elevated ICP, mass effect",
@@ -3609,8 +3451,10 @@
             "target": "Demyelination vs neoplasm vs other",
             "contraindications": "Coagulopathy, inaccessible location"
           }
-        ],
-        "Lumbar Puncture": [
+        ]
+      },
+      "Lumbar Puncture": {
+        "Studies": [
           {
             "item": "Opening pressure",
             "ED": "URGENT",
@@ -5421,8 +5265,10 @@
             "OPD": "-",
             "ICU": "-"
           }
-        ],
-        "Lumbar Puncture": [
+        ]
+      },
+      "Lumbar Puncture": {
+        "Studies": [
           {
             "item": "Opening pressure",
             "rationale": "Rule out elevated ICP",
@@ -7149,8 +6995,10 @@
             "OPD": "ROUTINE",
             "ICU": "-"
           }
-        ],
-        "Lumbar Puncture": [
+        ]
+      },
+      "Lumbar Puncture": {
+        "Studies": [
           {
             "item": "Opening pressure",
             "ED": "-",

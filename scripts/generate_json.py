@@ -202,6 +202,11 @@ class MarkdownParser:
         if imaging_sections:
             sections['Imaging & Studies'] = self._subsections_to_dict(imaging_sections)
 
+        # Lumbar Puncture (as its own section)
+        lp_sections = self._parse_lumbar_puncture_section()
+        if lp_sections:
+            sections['Lumbar Puncture'] = self._subsections_to_dict(lp_sections)
+
         # Treatment
         treatment_sections = self._parse_treatment_sections()
         if treatment_sections:
@@ -263,10 +268,17 @@ class MarkdownParser:
         if rare_items:
             subsections.append({'title': 'Rare/Specialized', 'items': rare_items})
 
-        # Lumbar Puncture
+        # Note: Lumbar Puncture is now its own top-level section, not a subsection of Imaging
+
+        return subsections
+
+    def _parse_lumbar_puncture_section(self) -> list:
+        """Parse lumbar puncture as its own section."""
+        subsections = []
+
         lp_items = self._parse_table_section('lumbar_puncture', 'treatment_acute')
         if lp_items:
-            subsections.append({'title': 'Lumbar Puncture', 'items': lp_items})
+            subsections.append({'title': 'Studies', 'items': lp_items})
 
         return subsections
 

@@ -54,6 +54,26 @@ Use the multi-column setting-priority format. **IMPORTANT:** Venue columns (ED, 
 
 > ⚠️ **Column Order Matters:** The CSS applies narrow column widths to the last 4 columns, expecting them to be ED/HOSP/OPD/ICU. Incorrect column order will cause rendering issues.
 
+### Lumbar Puncture Section
+
+**IMPORTANT:** Lumbar Puncture appears as its own top-level section in the clinical tool (not under Imaging). In the markdown file, place it as `### LUMBAR PUNCTURE` after the imaging subsections (2A/2B/2C).
+
+```markdown
+### LUMBAR PUNCTURE
+
+**Indication:** [Clinical indication for LP]
+**Timing:** URGENT if [condition]; ROUTINE for [condition]
+**Volume Required:** 10-15 mL (standard diagnostic)
+
+| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|-------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Opening pressure | Rule out elevated ICP | 10-20 cm H2O | URGENT | ROUTINE | ROUTINE | - |
+| Cell count (tubes 1 and 4) | Inflammation, infection | WBC <5, RBC 0 | URGENT | ROUTINE | ROUTINE | - |
+
+**Special Handling:** [Notes about transport, timing]
+**Contraindications:** [List contraindications]
+```
+
 ## Priority Levels
 
 | Priority | Meaning | When to Use |
