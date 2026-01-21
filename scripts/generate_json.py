@@ -1005,13 +1005,18 @@ def print_parity_report(parity_ok: bool, discrepancies: list, md_counts: dict, j
 class JSONValidator:
     """Validates generated JSON for completeness and correctness."""
 
+    # Sections expected in the 'sections' dict
     REQUIRED_SECTIONS = [
         'Laboratory Workup',
-        'Diagnostic Imaging & Studies',
+        'Imaging & Studies',
         'Treatment',
         'Other Recommendations',
-        'Monitoring Parameters',
-        'Disposition Criteria',
+    ]
+
+    # Top-level arrays (not in 'sections' dict)
+    REQUIRED_TOP_LEVEL_ARRAYS = [
+        'monitoring',
+        'disposition',
     ]
 
     MEDICATION_SECTIONS = [
@@ -1100,6 +1105,11 @@ class JSONValidator:
         for required in self.REQUIRED_SECTIONS:
             if required not in section_titles:
                 self.result.warnings.append(f"Missing section: {required}")
+
+        # Check top-level arrays (monitoring, disposition)
+        for required in self.REQUIRED_TOP_LEVEL_ARRAYS:
+            if required not in self.data or not self.data[required]:
+                self.result.warnings.append(f"Missing top-level array: {required}")
 
     def _validate_items(self):
         """Validate individual items have required fields."""

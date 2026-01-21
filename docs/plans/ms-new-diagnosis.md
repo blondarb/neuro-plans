@@ -1,7 +1,7 @@
 ---
 title: Multiple Sclerosis - New Diagnosis
 description: Initial diagnostic workup and management of suspected or newly confirmed MS including diagnostic criteria evaluation, mimics exclusion, and DMT initiation framework.
-version: "2.5"
+version: "2.6"
 setting: ED, HOSP, OPD
 status: approved
 tags:
@@ -143,12 +143,12 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Methylprednisolone IV | STAT | STAT | - | STAT | 1000 mg IV daily Ã— 3-5 days | Active untreated infection, uncontrolled diabetes, psychosis history | Glucose q6h (target <180), BP, mood, sleep, I/O |
-| Omeprazole | STAT | STAT | - | STAT | 20-40 mg daily during steroids | PPI allergy | None routine |
-| Insulin sliding scale | STAT | STAT | - | STAT | Per protocol if glucose >180 mg/dL | Hypoglycemia risk | Glucose q6h |
-| Prednisone oral taper (optional) | - | ROUTINE | ROUTINE | - | 60 mg daily Ã— 7 days, then taper over 2 weeks | Same as IV steroids | Glucose, BP, mood |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Methylprednisolone IV | MS exacerbation, optic neuritis | 1000 mg IV daily × 3-5 days | Active untreated infection, uncontrolled diabetes, psychosis history | Glucose q6h (target <180), BP, mood, sleep, I/O | STAT | STAT | - | STAT |
+| Omeprazole | GI prophylaxis during steroids | 20-40 mg daily during steroids | PPI allergy | None routine | STAT | STAT | - | STAT |
+| Insulin sliding scale | Steroid-induced hyperglycemia | Per protocol if glucose >180 mg/dL | Hypoglycemia risk | Glucose q6h | STAT | STAT | - | STAT |
+| Prednisone oral taper (optional) | Transition from IV steroids | 60 mg daily × 7 days, then taper over 2 weeks | Same as IV steroids | Glucose, BP, mood | - | ROUTINE | ROUTINE | - |
 
 ### 3B. Symptomatic Treatments - First-line
 
@@ -193,12 +193,12 @@ SECTION A: ACTION ITEMS
 
 ### 3C. Second-line/Refractory (Acute Treatment)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Plasmapheresis (PLEX) | - | URGENT | - | URGENT | 5-7 exchanges over 10-14 days | Hemodynamic instability, sepsis, line contraindication | BP, electrolytes, coags, fibrinogen, line infection |
-| IVIG | - | URGENT | - | URGENT | 0.4 g/kg/day Ã— 5 days | IgA deficiency, renal failure, thrombosis risk | Renal function, headache, thrombosis |
-| Extended IV steroids | - | ROUTINE | - | ROUTINE | Additional 2-5 days methylprednisolone (total 5-10 days) | As above | As above |
-| ACTH gel (H.P. Acthar) | - | EXT | EXT | - | 80 units IM/SC daily Ã— 2-3 weeks | Similar to corticosteroids | Glucose, BP, electrolytes |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Plasmapheresis (PLEX) | Steroid-refractory exacerbation | 5-7 exchanges over 10-14 days | Hemodynamic instability, sepsis, line contraindication | BP, electrolytes, coags, fibrinogen, line infection | - | URGENT | - | URGENT |
+| IVIG | Alternative to PLEX, steroid-refractory | 0.4 g/kg/day × 5 days | IgA deficiency, renal failure, thrombosis risk | Renal function, headache, thrombosis | - | URGENT | - | URGENT |
+| Extended IV steroids | Incomplete response to standard steroids | Additional 2-5 days methylprednisolone (total 5-10 days) | As above | As above | - | ROUTINE | - | ROUTINE |
+| ACTH gel (H.P. Acthar) | Alternative to IV steroids | 80 units IM/SC daily × 2-3 weeks | Similar to corticosteroids | Glucose, BP, electrolytes | - | EXT | EXT | - |
 
 ### 3D. Disease-Modifying Therapies (DMT) - OPD ONLY
 
@@ -367,6 +367,9 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v2.6 (January 21, 2026)**
+- Added Indication column to Sections 3A and 3C treatment tables for clinical tool icon display
 
 **v2.5 (January 20, 2026)**
 - Added ICD-10 codes: H46.9 (optic neuritis), G37.9 (demyelinating disease)

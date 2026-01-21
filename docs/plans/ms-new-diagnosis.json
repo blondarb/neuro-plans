@@ -1,7 +1,7 @@
 {
   "id": "ms-new-diagnosis",
   "title": "Multiple Sclerosis - New Diagnosis",
-  "version": "2.5",
+  "version": "2.6",
   "icd10": [
     "** G35 (Multiple sclerosis)",
     "H46.9 (Optic neuritis",
@@ -234,6 +234,88 @@
           "OPD": "EXT",
           "ICU": "-"
         }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Rule out elevated ICP",
+          "target": "10-20 cm H2O"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Inflammation, rule out infection",
+          "target": "WBC <50 (mild pleocytosis acceptable); RBC 0"
+        },
+        {
+          "item": "Protein",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Elevated in inflammation",
+          "target": "Normal to mildly elevated (<100 mg/dL)"
+        },
+        {
+          "item": "Glucose with serum glucose",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Low in infection/carcinomatous",
+          "target": "Normal (>60% serum)"
+        },
+        {
+          "item": "Gram stain and culture",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Rule out infection",
+          "target": "No organisms"
+        },
+        {
+          "item": "Oligoclonal bands (CSF AND serum)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Intrathecal IgG synthesis",
+          "target": "â‰¥2 CSF-specific bands (not in serum)"
+        },
+        {
+          "item": "IgG index",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Intrathecal antibody synthesis",
+          "target": ">0.7 = elevated"
+        },
+        {
+          "item": "Myelin basic protein",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Active demyelination marker",
+          "target": "May be elevated acutely"
+        },
+        {
+          "item": "Cytology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Rule out malignancy",
+          "target": "Negative"
+        },
+        {
+          "item": "VDRL (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Neurosyphilis",
+          "target": "Negative"
+        }
       ]
     },
     "Imaging & Studies": {
@@ -344,131 +426,51 @@
         }
       ]
     },
-    "Lumbar Puncture": {
-      "Studies": [
-        {
-          "item": "Opening pressure",
-          "ED": "URGENT",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "rationale": "Rule out elevated ICP",
-          "target": "10-20 cm H2O"
-        },
-        {
-          "item": "Cell count (tubes 1 and 4)",
-          "ED": "URGENT",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "rationale": "Inflammation, rule out infection",
-          "target": "WBC <50 (mild pleocytosis acceptable); RBC 0"
-        },
-        {
-          "item": "Protein",
-          "ED": "URGENT",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "rationale": "Elevated in inflammation",
-          "target": "Normal to mildly elevated (<100 mg/dL)"
-        },
-        {
-          "item": "Glucose with serum glucose",
-          "ED": "URGENT",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "rationale": "Low in infection/carcinomatous",
-          "target": "Normal (>60% serum)"
-        },
-        {
-          "item": "Gram stain and culture",
-          "ED": "URGENT",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "rationale": "Rule out infection",
-          "target": "No organisms"
-        },
-        {
-          "item": "Oligoclonal bands (CSF AND serum)",
-          "ED": "URGENT",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "rationale": "Intrathecal IgG synthesis",
-          "target": "â‰¥2 CSF-specific bands (not in serum)"
-        },
-        {
-          "item": "IgG index",
-          "ED": "URGENT",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "rationale": "Intrathecal antibody synthesis",
-          "target": ">0.7 = elevated"
-        },
-        {
-          "item": "Myelin basic protein",
-          "ED": "-",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "rationale": "Active demyelination marker",
-          "target": "May be elevated acutely"
-        },
-        {
-          "item": "Cytology",
-          "ED": "-",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "rationale": "Rule out malignancy",
-          "target": "Negative"
-        },
-        {
-          "item": "VDRL (CSF)",
-          "ED": "-",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "rationale": "Neurosyphilis",
-          "target": "Negative"
-        }
-      ]
-    },
     "Treatment": {
       "Acute/Emergent": [
         {
           "item": "Methylprednisolone IV",
+          "indication": "MS exacerbation, optic neuritis",
+          "dosing": "1000 mg IV daily × 3-5 days",
+          "contraindications": "Active untreated infection, uncontrolled diabetes, psychosis history",
+          "monitoring": "Glucose q6h (target <180), BP, mood, sleep, I/O",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
-          "ICU": "STAT",
-          "dosing": "1000 mg IV daily Ã— 3-5 days",
-          "contraindications": "Active untreated infection, uncontrolled diabetes, psychosis history",
-          "monitoring": "Glucose q6h (target <180), BP, mood, sleep, I/O"
+          "ICU": "STAT"
         },
         {
           "item": "Omeprazole",
+          "indication": "GI prophylaxis during steroids",
+          "dosing": "20-40 mg daily during steroids",
+          "contraindications": "PPI allergy",
+          "monitoring": "None routine",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
-          "ICU": "STAT",
-          "dosing": "20-40 mg daily during steroids",
-          "contraindications": "PPI allergy",
-          "monitoring": "None routine"
+          "ICU": "STAT"
         },
         {
           "item": "Insulin sliding scale",
+          "indication": "Steroid-induced hyperglycemia",
+          "dosing": "Per protocol if glucose >180 mg/dL",
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Glucose q6h",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
-          "ICU": "STAT",
-          "dosing": "Per protocol if glucose >180 mg/dL",
-          "contraindications": "Hypoglycemia risk",
-          "monitoring": "Glucose q6h"
+          "ICU": "STAT"
         },
         {
           "item": "Prednisone oral taper (optional)",
+          "indication": "Transition from IV steroids",
+          "dosing": "60 mg daily × 7 days, then taper over 2 weeks",
+          "contraindications": "Same as IV steroids",
+          "monitoring": "Glucose, BP, mood",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": "60 mg daily Ã— 7 days, then taper over 2 weeks",
-          "contraindications": "Same as IV steroids",
-          "monitoring": "Glucose, BP, mood"
+          "ICU": "-"
         }
       ],
       "Symptomatic Treatments - First-line": [
@@ -872,43 +874,47 @@
       "Second-line/Refractory (Acute Treatment)": [
         {
           "item": "Plasmapheresis (PLEX)",
+          "indication": "Steroid-refractory exacerbation",
+          "dosing": "5-7 exchanges over 10-14 days",
+          "contraindications": "Hemodynamic instability, sepsis, line contraindication",
+          "monitoring": "BP, electrolytes, coags, fibrinogen, line infection",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "-",
-          "ICU": "URGENT",
-          "dosing": "5-7 exchanges over 10-14 days",
-          "contraindications": "Hemodynamic instability, sepsis, line contraindication",
-          "monitoring": "BP, electrolytes, coags, fibrinogen, line infection"
+          "ICU": "URGENT"
         },
         {
           "item": "IVIG",
+          "indication": "Alternative to PLEX, steroid-refractory",
+          "dosing": "0.4 g/kg/day × 5 days",
+          "contraindications": "IgA deficiency, renal failure, thrombosis risk",
+          "monitoring": "Renal function, headache, thrombosis",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "-",
-          "ICU": "URGENT",
-          "dosing": "0.4 g/kg/day Ã— 5 days",
-          "contraindications": "IgA deficiency, renal failure, thrombosis risk",
-          "monitoring": "Renal function, headache, thrombosis"
+          "ICU": "URGENT"
         },
         {
           "item": "Extended IV steroids",
+          "indication": "Incomplete response to standard steroids",
+          "dosing": "Additional 2-5 days methylprednisolone (total 5-10 days)",
+          "contraindications": "As above",
+          "monitoring": "As above",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
-          "ICU": "ROUTINE",
-          "dosing": "Additional 2-5 days methylprednisolone (total 5-10 days)",
-          "contraindications": "As above",
-          "monitoring": "As above"
+          "ICU": "ROUTINE"
         },
         {
           "item": "ACTH gel (H.P. Acthar)",
+          "indication": "Alternative to IV steroids",
+          "dosing": "80 units IM/SC daily × 2-3 weeks",
+          "contraindications": "Similar to corticosteroids",
+          "monitoring": "Glucose, BP, electrolytes",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-",
-          "dosing": "80 units IM/SC daily Ã— 2-3 weeks",
-          "contraindications": "Similar to corticosteroids",
-          "monitoring": "Glucose, BP, electrolytes"
+          "ICU": "-"
         }
       ],
       "Disease-Modifying Therapies (DMT) - OPD ONLY": [

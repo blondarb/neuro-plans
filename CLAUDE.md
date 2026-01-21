@@ -146,6 +146,71 @@ The live site is built from the `main` branch. After pushing to your feature bra
 
 ---
 
+## Comment Review Workflow
+
+When reviewing comments/feedback on approved plans:
+
+### Step 1: Check Active Comments
+
+Read comment files from `docs/comments/active/`:
+```bash
+cat docs/comments/active/[plan-name].md
+```
+
+Look for comments with `Status: pending`.
+
+### Step 2: Research & Verify
+
+For clinical/dosing comments:
+1. Search medical literature for evidence
+2. Check current guidelines (AAN, AES, NCS)
+3. Verify safety considerations
+4. Document findings with evidence level (I-IV)
+
+### Step 3: Present Findings
+
+Present a summary table with recommendations:
+- ACCEPT - Supported by evidence
+- REJECT - Not supported or conflicts with guidelines
+- MODIFY - Partially correct, needs adjustment
+
+### Step 4: Implement Approved Changes
+
+After physician approval:
+1. Apply changes to the plan markdown
+2. Run validation: `python scripts/generate_json.py docs/plans/[plan].md --validate-only`
+3. Regenerate JSON: `python scripts/generate_json.py docs/plans/[plan].md --merge`
+4. Update version number and changelog
+5. Update comment status to `resolved-accepted` or `resolved-rejected`
+
+### Step 5: Log & Archive
+
+1. Log the change in `docs/logs/comment-changes-log.md`
+2. Move resolved comment from `docs/comments/active/` to `docs/comments/archive/YYYY-MM/`
+3. Update comment counts in `docs/comments/index.md`
+
+### Step 6: Commit & Push
+
+```bash
+git add docs/plans/[plan].md docs/data/plans.json \
+        docs/comments/active/[plan].md \
+        docs/comments/archive/YYYY-MM/[plan].md \
+        docs/logs/comment-changes-log.md
+git commit -m "Address reviewer comment CMT-XX-NNN on [Plan Name]"
+git push
+```
+
+### Key Files
+
+| File | Purpose |
+|------|---------|
+| `docs/comments/active/` | Pending comments by plan |
+| `docs/comments/archive/` | Resolved comments (hidden) |
+| `docs/logs/comment-changes-log.md` | Audit trail of all changes |
+| `skills/neuro-comment-review-SKILL.md` | Full workflow details |
+
+---
+
 ## JSON Schema Requirements
 
 The clinical tool (`docs/clinical/index.html`) expects a specific JSON structure. **If the structure is wrong, plans won't load.**
@@ -219,6 +284,10 @@ print('sections type:', type(plan.get('sections'))) # Should be: <class 'dict'>
 | `mkdocs.yml` | Site navigation structure |
 | `scripts/generate_json.py` | Markdown to JSON converter + parity checker |
 | `docs/logs/citation-verification-log.md` | Citation verification results and patterns |
+| `docs/logs/comment-changes-log.md` | Comment-driven changes audit trail |
+| `docs/comments/active/` | Pending comments by plan |
+| `docs/comments/archive/` | Resolved/archived comments |
+| `docs/comments/index.md` | Comments overview page |
 
 ### Skills Files
 

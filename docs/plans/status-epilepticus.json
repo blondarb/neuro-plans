@@ -1,7 +1,7 @@
 {
   "id": "status-epilepticus",
   "title": "Status Epilepticus",
-  "version": "1.4",
+  "version": "1.5",
   "icd10": [
     "** G40.901 (Epilepsy",
     "unspecified",
@@ -293,6 +293,98 @@
           "OPD": "—",
           "ICU": "URGENT"
         }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Elevated ICP",
+          "target": "10-20 cm H2O",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4)",
+          "rationale": "Infection, inflammation",
+          "target": "WBC <5; RBC 0",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Protein",
+          "rationale": "Elevated in infection, inflammation",
+          "target": "15-45 mg/dL",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Glucose with serum glucose",
+          "rationale": "Low in bacterial/fungal meningitis",
+          "target": ">60% serum",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Gram stain and culture",
+          "rationale": "Bacterial meningitis",
+          "target": "No organisms",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "BioFire FilmArray ME Panel",
+          "rationale": "Rapid pathogen identification",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HSV-1/2 PCR",
+          "rationale": "HSV encephalitis",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (CSF)",
+          "rationale": "NORSE, limbic encephalitis",
+          "target": "Negative",
+          "ED": "—",
+          "HOSP": "URGENT",
+          "OPD": "—",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cytology",
+          "rationale": "Carcinomatous meningitis",
+          "target": "Negative",
+          "ED": "—",
+          "HOSP": "ROUTINE",
+          "OPD": "—",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Oligoclonal bands",
+          "rationale": "Demyelinating disease",
+          "target": "Negative",
+          "ED": "—",
+          "HOSP": "ROUTINE",
+          "OPD": "—",
+          "ICU": "ROUTINE"
+        }
       ]
     },
     "Imaging & Studies": {
@@ -403,104 +495,11 @@
         }
       ]
     },
-    "Lumbar Puncture": {
-      "Studies": [
-        {
-          "item": "Opening pressure",
-          "rationale": "Elevated ICP",
-          "target": "10-20 cm H2O",
-          "ED": "URGENT",
-          "HOSP": "STAT",
-          "OPD": "—",
-          "ICU": "STAT"
-        },
-        {
-          "item": "Cell count (tubes 1 and 4)",
-          "rationale": "Infection, inflammation",
-          "target": "WBC <5; RBC 0",
-          "ED": "URGENT",
-          "HOSP": "STAT",
-          "OPD": "—",
-          "ICU": "STAT"
-        },
-        {
-          "item": "Protein",
-          "rationale": "Elevated in infection, inflammation",
-          "target": "15-45 mg/dL",
-          "ED": "URGENT",
-          "HOSP": "STAT",
-          "OPD": "—",
-          "ICU": "STAT"
-        },
-        {
-          "item": "Glucose with serum glucose",
-          "rationale": "Low in bacterial/fungal meningitis",
-          "target": ">60% serum",
-          "ED": "URGENT",
-          "HOSP": "STAT",
-          "OPD": "—",
-          "ICU": "STAT"
-        },
-        {
-          "item": "Gram stain and culture",
-          "rationale": "Bacterial meningitis",
-          "target": "No organisms",
-          "ED": "URGENT",
-          "HOSP": "STAT",
-          "OPD": "—",
-          "ICU": "STAT"
-        },
-        {
-          "item": "BioFire FilmArray ME Panel",
-          "rationale": "Rapid pathogen identification",
-          "target": "Negative",
-          "ED": "URGENT",
-          "HOSP": "STAT",
-          "OPD": "—",
-          "ICU": "STAT"
-        },
-        {
-          "item": "HSV-1/2 PCR",
-          "rationale": "HSV encephalitis",
-          "target": "Negative",
-          "ED": "URGENT",
-          "HOSP": "STAT",
-          "OPD": "—",
-          "ICU": "STAT"
-        },
-        {
-          "item": "Autoimmune encephalitis panel (CSF)",
-          "rationale": "NORSE, limbic encephalitis",
-          "target": "Negative",
-          "ED": "—",
-          "HOSP": "URGENT",
-          "OPD": "—",
-          "ICU": "URGENT"
-        },
-        {
-          "item": "Cytology",
-          "rationale": "Carcinomatous meningitis",
-          "target": "Negative",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "—",
-          "ICU": "ROUTINE"
-        },
-        {
-          "item": "Oligoclonal bands",
-          "rationale": "Demyelinating disease",
-          "target": "Negative",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "—",
-          "ICU": "ROUTINE"
-        }
-      ]
-    },
     "Treatment": {
       "Stabilization (Time 0)": [
         {
           "item": "Airway positioning/management",
+          "indication": "Airway protection",
           "dosing": "Head-tilt chin-lift, oral airway, prepare for intubation",
           "contraindications": "None",
           "monitoring": "O2 sat, airway patency",
@@ -511,6 +510,7 @@
         },
         {
           "item": "Supplemental oxygen",
+          "indication": "Hypoxia prevention",
           "dosing": "Non-rebreather 15 L/min or bag-valve-mask",
           "contraindications": "None",
           "monitoring": "O2 sat >94%",
@@ -521,6 +521,7 @@
         },
         {
           "item": "IV access (two large-bore)",
+          "indication": "Medication delivery",
           "dosing": "18G or larger x2",
           "contraindications": "None",
           "monitoring": "IV patency",
@@ -531,6 +532,7 @@
         },
         {
           "item": "Cardiac monitoring",
+          "indication": "Arrhythmia detection",
           "dosing": "Continuous telemetry",
           "contraindications": "None",
           "monitoring": "Rhythm, HR, BP",
@@ -541,6 +543,7 @@
         },
         {
           "item": "Dextrose 50% IV",
+          "indication": "Hypoglycemic seizure",
           "dosing": "50 mL IV push (25g) if glucose <70 or unknown",
           "contraindications": "Document hyperglycemia",
           "monitoring": "Glucose",
@@ -551,6 +554,7 @@
         },
         {
           "item": "Thiamine IV",
+          "indication": "Wernicke prevention",
           "dosing": "100-500 mg IV BEFORE or WITH glucose",
           "contraindications": "None",
           "monitoring": "None",
@@ -561,6 +565,7 @@
         },
         {
           "item": "Isotonic fluids",
+          "indication": "Volume resuscitation",
           "dosing": "NS or LR wide open initially",
           "contraindications": "Pulmonary edema",
           "monitoring": "BP, I/O",
@@ -573,6 +578,7 @@
       "Emergent/First-Line - Benzodiazepines (Time 0-5 min)": [
         {
           "item": "Lorazepam IV",
+          "indication": "Seizure termination (preferred IV)",
           "dosing": "0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min if still seizing; total max 8 mg",
           "contraindications": "Acute narrow-angle glaucoma",
           "monitoring": "RR, O2 sat, BP, sedation; airway equipment ready",
@@ -583,6 +589,7 @@
         },
         {
           "item": "Midazolam IM",
+          "indication": "Seizure termination (no IV access)",
           "dosing": "10 mg IM (≥40 kg) or 0.2 mg/kg IM (if no IV access); single dose",
           "contraindications": "Respiratory compromise",
           "monitoring": "RR, O2 sat; prepare IV access",
@@ -593,6 +600,7 @@
         },
         {
           "item": "Midazolam IV",
+          "indication": "Seizure termination (alternative)",
           "dosing": "0.2 mg/kg IV (max 10 mg); may repeat x1",
           "contraindications": "Same as lorazepam",
           "monitoring": "RR, O2 sat, BP",
@@ -603,6 +611,7 @@
         },
         {
           "item": "Midazolam intranasal",
+          "indication": "Seizure termination (no IV/IM)",
           "dosing": "5 mg per nostril (10 mg total) if no IV/IM access",
           "contraindications": "Nasal obstruction",
           "monitoring": "RR, O2 sat",
@@ -613,6 +622,7 @@
         },
         {
           "item": "Midazolam buccal",
+          "indication": "Seizure termination (prehospital)",
           "dosing": "10 mg buccal (if available)",
           "contraindications": "Oral trauma",
           "monitoring": "RR, O2 sat",
@@ -623,6 +633,7 @@
         },
         {
           "item": "Diazepam IV",
+          "indication": "Seizure termination (short-acting)",
           "dosing": "0.15 mg/kg IV (max 10 mg); may repeat x1 in 5 min",
           "contraindications": "Acute narrow-angle glaucoma",
           "monitoring": "RR, O2 sat; short duration - requires follow-up ASM",
@@ -633,6 +644,7 @@
         },
         {
           "item": "Diazepam rectal",
+          "indication": "Seizure termination (home/EMS)",
           "dosing": "0.2-0.5 mg/kg PR (max 20 mg); use rectal gel formulation",
           "contraindications": "Rectal pathology",
           "monitoring": "RR, O2 sat",
@@ -645,6 +657,7 @@
       "Urgent/Second-Line ASMs (Time 5-20 min)": [
         {
           "item": "Levetiracetam IV (ESETT dosing)",
+          "indication": "SE not responding to BZD",
           "dosing": "60 mg/kg IV (max 4500 mg) over 10-15 min",
           "contraindications": "None absolute; reduce if CrCl <50",
           "monitoring": "Generally well tolerated; agitation",
@@ -655,6 +668,7 @@
         },
         {
           "item": "Levetiracetam IV (conservative)",
+          "indication": "SE not responding to BZD",
           "dosing": "40 mg/kg IV (max 4500 mg) over 10-15 min",
           "contraindications": "None absolute; reduce if CrCl <50",
           "monitoring": "Generally well tolerated; agitation",
@@ -665,6 +679,7 @@
         },
         {
           "item": "Fosphenytoin IV",
+          "indication": "SE not responding to BZD",
           "dosing": "20 mg PE/kg IV at 150 mg PE/min; may give additional 5-10 mg PE/kg if needed",
           "contraindications": "2nd/3rd degree AV block, sinus bradycardia, allergy",
           "monitoring": "Continuous cardiac monitor, BP q5min during infusion",
@@ -675,6 +690,7 @@
         },
         {
           "item": "Valproate IV",
+          "indication": "SE not responding to BZD",
           "dosing": "40 mg/kg IV (max 3000 mg) over 10 min",
           "contraindications": "Pregnancy, hepatic disease, mitochondrial disease, urea cycle disorders, pancreatitis",
           "monitoring": "Ammonia, LFTs; avoid in unknown pregnancy status",
@@ -685,6 +701,7 @@
         },
         {
           "item": "Lacosamide IV",
+          "indication": "SE not responding to BZD",
           "dosing": "400 mg IV over 15 min (can give 200 mg over 5 min if urgent)",
           "contraindications": "PR >200 ms, 2nd/3rd degree AV block, severe hepatic impairment",
           "monitoring": "ECG for PR interval",
@@ -695,6 +712,7 @@
         },
         {
           "item": "Brivaracetam IV",
+          "indication": "SE not responding to BZD (fast onset)",
           "dosing": "100-200 mg IV over 2-5 min; no titration needed",
           "contraindications": "Hepatic impairment (reduce dose)",
           "monitoring": "Faster onset than levetiracetam; fewer behavioral effects",
@@ -705,6 +723,7 @@
         },
         {
           "item": "Phenytoin IV",
+          "indication": "SE not responding to BZD (no fosphenytoin)",
           "dosing": "20 mg/kg IV at max 50 mg/min (if fosphenytoin unavailable)",
           "contraindications": "AV block, sinus bradycardia",
           "monitoring": "Cardiac monitor; MUST use large vein, tissue necrosis risk",
@@ -715,6 +734,7 @@
         },
         {
           "item": "Phenobarbital IV",
+          "indication": "SE not responding to BZD",
           "dosing": "15-20 mg/kg IV at 50-100 mg/min",
           "contraindications": "Severe respiratory disease, porphyria",
           "monitoring": "Respiratory depression; often requires intubation at this dose",
@@ -727,6 +747,7 @@
       "Refractory SE - Anesthetic Infusions (Time 20-60 min)": [
         {
           "item": "Midazolam infusion",
+          "indication": "RSE (first-line anesthetic)",
           "dosing": "Load: 0.2 mg/kg IV bolus; Infusion: start 0.1 mg/kg/hr, titrate by 0.1 mg/kg/hr q15min to seizure suppression; max 2 mg/kg/hr; target burst suppression on cEEG",
           "contraindications": "Hemodynamic instability (relative)",
           "monitoring": "cEEG, BP (hypotension common), sedation scale",
@@ -737,6 +758,7 @@
         },
         {
           "item": "Propofol infusion",
+          "indication": "RSE (rapid onset)",
           "dosing": "Load: 1-2 mg/kg IV bolus (may repeat x1); Infusion: start 20 mcg/kg/min, titrate by 10 mcg/kg/min q5min; max 200 mcg/kg/min; target burst suppression",
           "contraindications": "Propofol infusion syndrome risk (limit to <48h at high dose), egg/soy allergy, pregnancy",
           "monitoring": "cEEG, triglycerides q24-48h, CPK, metabolic acidosis, BP",
@@ -747,6 +769,7 @@
         },
         {
           "item": "Ketamine infusion",
+          "indication": "RSE (NMDA antagonism, less hypotension)",
           "dosing": "Load: 1-2 mg/kg IV bolus; Infusion: start 1 mg/kg/hr, titrate by 0.5 mg/kg/hr q15-30min; max 5 mg/kg/hr",
           "contraindications": "Uncontrolled hypertension, elevated ICP (relative - actually may be neuroprotective)",
           "monitoring": "cEEG, BP (may increase), HR; less hypotension than other anesthetics",
@@ -757,6 +780,7 @@
         },
         {
           "item": "Ketamine + Midazolam (combination)",
+          "indication": "RSE (synergistic mechanisms)",
           "dosing": "Ketamine load 1 mg/kg + Midazolam load 0.2 mg/kg; then dual infusions per above",
           "contraindications": "Per individual agents",
           "monitoring": "2024 data: combination may reduce SE duration faster than midazolam alone",
@@ -767,6 +791,7 @@
         },
         {
           "item": "Pentobarbital infusion",
+          "indication": "SRSE (most potent)",
           "dosing": "Load: 5-15 mg/kg IV at 50 mg/min; Infusion: start 0.5-1 mg/kg/hr, titrate to burst suppression; max 5 mg/kg/hr",
           "contraindications": "Severe cardiac dysfunction",
           "monitoring": "cEEG, BP (significant hypotension - need pressors), cardiac output; longest half-life",
@@ -779,6 +804,7 @@
       "Super-Refractory SE - Additional Agents": [
         {
           "item": "Add second anesthetic",
+          "indication": "SRSE (augment suppression)",
           "dosing": "Combine midazolam + propofol, or add ketamine to either",
           "contraindications": "Per agent",
           "monitoring": "cEEG, hemodynamics",
@@ -789,6 +815,7 @@
         },
         {
           "item": "Topiramate (enteral)",
+          "indication": "SRSE adjunct",
           "dosing": "Load 300-400 mg via NGT; then 200-400 mg BID; max 1600 mg/day",
           "contraindications": "Metabolic acidosis, kidney stones",
           "monitoring": "Bicarbonate, renal function",
@@ -799,6 +826,7 @@
         },
         {
           "item": "Lacosamide (if not tried)",
+          "indication": "SRSE adjunct",
           "dosing": "400 mg IV, then 200-400 mg BID",
           "contraindications": "PR prolongation",
           "monitoring": "ECG",
@@ -809,6 +837,7 @@
         },
         {
           "item": "Perampanel (enteral)",
+          "indication": "SRSE adjunct (AMPA antagonist)",
           "dosing": "4-8 mg via NGT daily; titrate to 12 mg daily",
           "contraindications": "None absolute",
           "monitoring": "Aggression, sedation",
@@ -819,6 +848,7 @@
         },
         {
           "item": "Magnesium sulfate infusion",
+          "indication": "SRSE adjunct, neuroprotection",
           "dosing": "4-6 g IV over 20 min, then 1-2 g/hr infusion; target Mg 3.5-4 mg/dL",
           "contraindications": "Renal failure (relative), myasthenia",
           "monitoring": "Mg levels, reflexes, respiratory status",
@@ -829,6 +859,7 @@
         },
         {
           "item": "Pyridoxine (empiric trial)",
+          "indication": "Pyridoxine-dependent seizures",
           "dosing": "100-500 mg IV; may try single dose empirically",
           "contraindications": "None",
           "monitoring": "Response to treatment",
@@ -839,6 +870,7 @@
         },
         {
           "item": "Ketogenic diet",
+          "indication": "SRSE/FIRES (anti-inflammatory)",
           "dosing": "Initiate within 7 days per NORSE consensus; requires nutrition support",
           "contraindications": "Pyruvate carboxylase deficiency, fatty acid oxidation disorders",
           "monitoring": "Ketones, glucose, lipids",
@@ -849,6 +881,7 @@
         },
         {
           "item": "Hypothermia (32-35°C)",
+          "indication": "SRSE salvage therapy",
           "dosing": "Targeted temperature management x 24-48h",
           "contraindications": "Coagulopathy, severe infection",
           "monitoring": "Temperature, coagulation, infection",
@@ -859,6 +892,7 @@
         },
         {
           "item": "Electroconvulsive therapy",
+          "indication": "SRSE salvage therapy",
           "dosing": "If all else fails; requires anesthesia",
           "contraindications": "Raised ICP, recent stroke",
           "monitoring": "Per ECT protocol",
@@ -869,6 +903,7 @@
         },
         {
           "item": "Epilepsy surgery (emergent)",
+          "indication": "Focal lesional SRSE",
           "dosing": "Resection if focal lesion identified",
           "contraindications": "Eloquent cortex, multifocal",
           "monitoring": "Per surgical team",

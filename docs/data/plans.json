@@ -2,7 +2,7 @@
   "Status Epilepticus": {
     "id": "status-epilepticus",
     "title": "Status Epilepticus",
-    "version": "1.4",
+    "version": "1.5",
     "icd10": [
       "** G40.901 (Epilepsy",
       "unspecified",
@@ -500,6 +500,7 @@
         "Stabilization (Time 0)": [
           {
             "item": "Airway positioning/management",
+            "indication": "Airway protection",
             "dosing": "Head-tilt chin-lift, oral airway, prepare for intubation",
             "contraindications": "None",
             "monitoring": "O2 sat, airway patency",
@@ -510,6 +511,7 @@
           },
           {
             "item": "Supplemental oxygen",
+            "indication": "Hypoxia prevention",
             "dosing": "Non-rebreather 15 L/min or bag-valve-mask",
             "contraindications": "None",
             "monitoring": "O2 sat >94%",
@@ -520,6 +522,7 @@
           },
           {
             "item": "IV access (two large-bore)",
+            "indication": "Medication delivery",
             "dosing": "18G or larger x2",
             "contraindications": "None",
             "monitoring": "IV patency",
@@ -530,6 +533,7 @@
           },
           {
             "item": "Cardiac monitoring",
+            "indication": "Arrhythmia detection",
             "dosing": "Continuous telemetry",
             "contraindications": "None",
             "monitoring": "Rhythm, HR, BP",
@@ -540,6 +544,7 @@
           },
           {
             "item": "Dextrose 50% IV",
+            "indication": "Hypoglycemic seizure",
             "dosing": "50 mL IV push (25g) if glucose <70 or unknown",
             "contraindications": "Document hyperglycemia",
             "monitoring": "Glucose",
@@ -550,6 +555,7 @@
           },
           {
             "item": "Thiamine IV",
+            "indication": "Wernicke prevention",
             "dosing": "100-500 mg IV BEFORE or WITH glucose",
             "contraindications": "None",
             "monitoring": "None",
@@ -560,6 +566,7 @@
           },
           {
             "item": "Isotonic fluids",
+            "indication": "Volume resuscitation",
             "dosing": "NS or LR wide open initially",
             "contraindications": "Pulmonary edema",
             "monitoring": "BP, I/O",
@@ -572,6 +579,7 @@
         "Emergent/First-Line - Benzodiazepines (Time 0-5 min)": [
           {
             "item": "Lorazepam IV",
+            "indication": "Seizure termination (preferred IV)",
             "dosing": "0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min if still seizing; total max 8 mg",
             "contraindications": "Acute narrow-angle glaucoma",
             "monitoring": "RR, O2 sat, BP, sedation; airway equipment ready",
@@ -582,6 +590,7 @@
           },
           {
             "item": "Midazolam IM",
+            "indication": "Seizure termination (no IV access)",
             "dosing": "10 mg IM (≥40 kg) or 0.2 mg/kg IM (if no IV access); single dose",
             "contraindications": "Respiratory compromise",
             "monitoring": "RR, O2 sat; prepare IV access",
@@ -592,6 +601,7 @@
           },
           {
             "item": "Midazolam IV",
+            "indication": "Seizure termination (alternative)",
             "dosing": "0.2 mg/kg IV (max 10 mg); may repeat x1",
             "contraindications": "Same as lorazepam",
             "monitoring": "RR, O2 sat, BP",
@@ -602,6 +612,7 @@
           },
           {
             "item": "Midazolam intranasal",
+            "indication": "Seizure termination (no IV/IM)",
             "dosing": "5 mg per nostril (10 mg total) if no IV/IM access",
             "contraindications": "Nasal obstruction",
             "monitoring": "RR, O2 sat",
@@ -612,6 +623,7 @@
           },
           {
             "item": "Midazolam buccal",
+            "indication": "Seizure termination (prehospital)",
             "dosing": "10 mg buccal (if available)",
             "contraindications": "Oral trauma",
             "monitoring": "RR, O2 sat",
@@ -622,6 +634,7 @@
           },
           {
             "item": "Diazepam IV",
+            "indication": "Seizure termination (short-acting)",
             "dosing": "0.15 mg/kg IV (max 10 mg); may repeat x1 in 5 min",
             "contraindications": "Acute narrow-angle glaucoma",
             "monitoring": "RR, O2 sat; short duration - requires follow-up ASM",
@@ -632,6 +645,7 @@
           },
           {
             "item": "Diazepam rectal",
+            "indication": "Seizure termination (home/EMS)",
             "dosing": "0.2-0.5 mg/kg PR (max 20 mg); use rectal gel formulation",
             "contraindications": "Rectal pathology",
             "monitoring": "RR, O2 sat",
@@ -644,6 +658,7 @@
         "Urgent/Second-Line ASMs (Time 5-20 min)": [
           {
             "item": "Levetiracetam IV (ESETT dosing)",
+            "indication": "SE not responding to BZD",
             "dosing": "60 mg/kg IV (max 4500 mg) over 10-15 min",
             "contraindications": "None absolute; reduce if CrCl <50",
             "monitoring": "Generally well tolerated; agitation",
@@ -654,6 +669,7 @@
           },
           {
             "item": "Levetiracetam IV (conservative)",
+            "indication": "SE not responding to BZD",
             "dosing": "40 mg/kg IV (max 4500 mg) over 10-15 min",
             "contraindications": "None absolute; reduce if CrCl <50",
             "monitoring": "Generally well tolerated; agitation",
@@ -664,6 +680,7 @@
           },
           {
             "item": "Fosphenytoin IV",
+            "indication": "SE not responding to BZD",
             "dosing": "20 mg PE/kg IV at 150 mg PE/min; may give additional 5-10 mg PE/kg if needed",
             "contraindications": "2nd/3rd degree AV block, sinus bradycardia, allergy",
             "monitoring": "Continuous cardiac monitor, BP q5min during infusion",
@@ -674,6 +691,7 @@
           },
           {
             "item": "Valproate IV",
+            "indication": "SE not responding to BZD",
             "dosing": "40 mg/kg IV (max 3000 mg) over 10 min",
             "contraindications": "Pregnancy, hepatic disease, mitochondrial disease, urea cycle disorders, pancreatitis",
             "monitoring": "Ammonia, LFTs; avoid in unknown pregnancy status",
@@ -684,6 +702,7 @@
           },
           {
             "item": "Lacosamide IV",
+            "indication": "SE not responding to BZD",
             "dosing": "400 mg IV over 15 min (can give 200 mg over 5 min if urgent)",
             "contraindications": "PR >200 ms, 2nd/3rd degree AV block, severe hepatic impairment",
             "monitoring": "ECG for PR interval",
@@ -694,6 +713,7 @@
           },
           {
             "item": "Brivaracetam IV",
+            "indication": "SE not responding to BZD (fast onset)",
             "dosing": "100-200 mg IV over 2-5 min; no titration needed",
             "contraindications": "Hepatic impairment (reduce dose)",
             "monitoring": "Faster onset than levetiracetam; fewer behavioral effects",
@@ -704,6 +724,7 @@
           },
           {
             "item": "Phenytoin IV",
+            "indication": "SE not responding to BZD (no fosphenytoin)",
             "dosing": "20 mg/kg IV at max 50 mg/min (if fosphenytoin unavailable)",
             "contraindications": "AV block, sinus bradycardia",
             "monitoring": "Cardiac monitor; MUST use large vein, tissue necrosis risk",
@@ -714,6 +735,7 @@
           },
           {
             "item": "Phenobarbital IV",
+            "indication": "SE not responding to BZD",
             "dosing": "15-20 mg/kg IV at 50-100 mg/min",
             "contraindications": "Severe respiratory disease, porphyria",
             "monitoring": "Respiratory depression; often requires intubation at this dose",
@@ -726,6 +748,7 @@
         "Refractory SE - Anesthetic Infusions (Time 20-60 min)": [
           {
             "item": "Midazolam infusion",
+            "indication": "RSE (first-line anesthetic)",
             "dosing": "Load: 0.2 mg/kg IV bolus; Infusion: start 0.1 mg/kg/hr, titrate by 0.1 mg/kg/hr q15min to seizure suppression; max 2 mg/kg/hr; target burst suppression on cEEG",
             "contraindications": "Hemodynamic instability (relative)",
             "monitoring": "cEEG, BP (hypotension common), sedation scale",
@@ -736,6 +759,7 @@
           },
           {
             "item": "Propofol infusion",
+            "indication": "RSE (rapid onset)",
             "dosing": "Load: 1-2 mg/kg IV bolus (may repeat x1); Infusion: start 20 mcg/kg/min, titrate by 10 mcg/kg/min q5min; max 200 mcg/kg/min; target burst suppression",
             "contraindications": "Propofol infusion syndrome risk (limit to <48h at high dose), egg/soy allergy, pregnancy",
             "monitoring": "cEEG, triglycerides q24-48h, CPK, metabolic acidosis, BP",
@@ -746,6 +770,7 @@
           },
           {
             "item": "Ketamine infusion",
+            "indication": "RSE (NMDA antagonism, less hypotension)",
             "dosing": "Load: 1-2 mg/kg IV bolus; Infusion: start 1 mg/kg/hr, titrate by 0.5 mg/kg/hr q15-30min; max 5 mg/kg/hr",
             "contraindications": "Uncontrolled hypertension, elevated ICP (relative - actually may be neuroprotective)",
             "monitoring": "cEEG, BP (may increase), HR; less hypotension than other anesthetics",
@@ -756,6 +781,7 @@
           },
           {
             "item": "Ketamine + Midazolam (combination)",
+            "indication": "RSE (synergistic mechanisms)",
             "dosing": "Ketamine load 1 mg/kg + Midazolam load 0.2 mg/kg; then dual infusions per above",
             "contraindications": "Per individual agents",
             "monitoring": "2024 data: combination may reduce SE duration faster than midazolam alone",
@@ -766,6 +792,7 @@
           },
           {
             "item": "Pentobarbital infusion",
+            "indication": "SRSE (most potent)",
             "dosing": "Load: 5-15 mg/kg IV at 50 mg/min; Infusion: start 0.5-1 mg/kg/hr, titrate to burst suppression; max 5 mg/kg/hr",
             "contraindications": "Severe cardiac dysfunction",
             "monitoring": "cEEG, BP (significant hypotension - need pressors), cardiac output; longest half-life",
@@ -778,6 +805,7 @@
         "Super-Refractory SE - Additional Agents": [
           {
             "item": "Add second anesthetic",
+            "indication": "SRSE (augment suppression)",
             "dosing": "Combine midazolam + propofol, or add ketamine to either",
             "contraindications": "Per agent",
             "monitoring": "cEEG, hemodynamics",
@@ -788,6 +816,7 @@
           },
           {
             "item": "Topiramate (enteral)",
+            "indication": "SRSE adjunct",
             "dosing": "Load 300-400 mg via NGT; then 200-400 mg BID; max 1600 mg/day",
             "contraindications": "Metabolic acidosis, kidney stones",
             "monitoring": "Bicarbonate, renal function",
@@ -798,6 +827,7 @@
           },
           {
             "item": "Lacosamide (if not tried)",
+            "indication": "SRSE adjunct",
             "dosing": "400 mg IV, then 200-400 mg BID",
             "contraindications": "PR prolongation",
             "monitoring": "ECG",
@@ -808,6 +838,7 @@
           },
           {
             "item": "Perampanel (enteral)",
+            "indication": "SRSE adjunct (AMPA antagonist)",
             "dosing": "4-8 mg via NGT daily; titrate to 12 mg daily",
             "contraindications": "None absolute",
             "monitoring": "Aggression, sedation",
@@ -818,6 +849,7 @@
           },
           {
             "item": "Magnesium sulfate infusion",
+            "indication": "SRSE adjunct, neuroprotection",
             "dosing": "4-6 g IV over 20 min, then 1-2 g/hr infusion; target Mg 3.5-4 mg/dL",
             "contraindications": "Renal failure (relative), myasthenia",
             "monitoring": "Mg levels, reflexes, respiratory status",
@@ -828,6 +860,7 @@
           },
           {
             "item": "Pyridoxine (empiric trial)",
+            "indication": "Pyridoxine-dependent seizures",
             "dosing": "100-500 mg IV; may try single dose empirically",
             "contraindications": "None",
             "monitoring": "Response to treatment",
@@ -838,6 +871,7 @@
           },
           {
             "item": "Ketogenic diet",
+            "indication": "SRSE/FIRES (anti-inflammatory)",
             "dosing": "Initiate within 7 days per NORSE consensus; requires nutrition support",
             "contraindications": "Pyruvate carboxylase deficiency, fatty acid oxidation disorders",
             "monitoring": "Ketones, glucose, lipids",
@@ -848,6 +882,7 @@
           },
           {
             "item": "Hypothermia (32-35°C)",
+            "indication": "SRSE salvage therapy",
             "dosing": "Targeted temperature management x 24-48h",
             "contraindications": "Coagulopathy, severe infection",
             "monitoring": "Temperature, coagulation, infection",
@@ -858,6 +893,7 @@
           },
           {
             "item": "Electroconvulsive therapy",
+            "indication": "SRSE salvage therapy",
             "dosing": "If all else fails; requires anesthesia",
             "contraindications": "Raised ICP, recent stroke",
             "monitoring": "Per ECT protocol",
@@ -868,6 +904,7 @@
           },
           {
             "item": "Epilepsy surgery (emergent)",
+            "indication": "Focal lesional SRSE",
             "dosing": "Resection if focal lesion identified",
             "contraindications": "Eloquent cortex, multifocal",
             "monitoring": "Per surgical team",
@@ -1567,7 +1604,7 @@
   "New Onset Seizure": {
     "id": "new-onset-seizure",
     "title": "New Onset Seizure",
-    "version": "1.2",
+    "version": "1.3",
     "icd10": [
       "** R56.9 (Unspecified convulsions)",
       "G40.909 (Epilepsy",
@@ -2110,6 +2147,7 @@
         "Acute/Emergent": [
           {
             "item": "Lorazepam IV/IM (if actively seizing)",
+            "indication": "Active seizure termination",
             "dosing": "0.1 mg/kg IV (max 4 mg); may repeat once in 5 min",
             "contraindications": "Respiratory depression, severe hypotension",
             "monitoring": "RR, O2 sat, BP; have airway equipment ready",
@@ -2120,6 +2158,7 @@
           },
           {
             "item": "Midazolam IM (if no IV access)",
+            "indication": "Active seizure termination",
             "dosing": "10 mg IM (if >40 kg) or 0.2 mg/kg IM",
             "contraindications": "Respiratory depression",
             "monitoring": "RR, O2 sat; have airway equipment ready",
@@ -2130,6 +2169,7 @@
           },
           {
             "item": "Midazolam intranasal (if no IV access)",
+            "indication": "Active seizure termination",
             "dosing": "5 mg per nostril (total 10 mg)",
             "contraindications": "Respiratory depression",
             "monitoring": "RR, O2 sat",
@@ -2140,6 +2180,7 @@
           },
           {
             "item": "Dextrose 50% IV",
+            "indication": "Hypoglycemic seizure",
             "dosing": "25-50 mL IV if hypoglycemia confirmed or suspected",
             "contraindications": "Hyperglycemia",
             "monitoring": "Glucose",
@@ -2150,6 +2191,7 @@
           },
           {
             "item": "Thiamine IV",
+            "indication": "Wernicke prevention",
             "dosing": "100-500 mg IV BEFORE glucose if alcohol use suspected",
             "contraindications": "None significant",
             "monitoring": "None",
@@ -2160,6 +2202,7 @@
           },
           {
             "item": "Supplemental oxygen",
+            "indication": "Hypoxia prevention",
             "dosing": "2-4 L NC or non-rebreather as needed",
             "contraindications": "None",
             "monitoring": "O2 sat >94%",
@@ -2170,6 +2213,7 @@
           },
           {
             "item": "IV fluids (isotonic)",
+            "indication": "Volume resuscitation",
             "dosing": "NS or LR bolus if hypotensive; maintenance if euvolemic",
             "contraindications": "Fluid overload, severe hyponatremia",
             "monitoring": "I/O, BP, Na",
@@ -2180,6 +2224,7 @@
           },
           {
             "item": "Flumazenil (rescue only)",
+            "indication": "Benzodiazepine reversal",
             "dosing": "0.2 mg IV over 30 sec; may repeat 0.2 mg q1min to max 1 mg",
             "contraindications": "Chronic benzodiazepine use; seizure history; tricyclic overdose",
             "monitoring": "**CAUTION:** May lower seizure threshold and precipitate seizures; use only if severe respiratory depression unresponsive to supportive care",
@@ -2506,6 +2551,7 @@
         "Second-line/Refractory": [
           {
             "item": "Add second ASM",
+            "indication": "Breakthrough seizures on monotherapy",
             "dosing": "Choose complementary mechanism; see maintenance options",
             "contraindications": "Per specific agent",
             "monitoring": "Per specific agent",
@@ -2516,6 +2562,7 @@
           },
           {
             "item": "Epilepsy surgery evaluation referral",
+            "indication": "Drug-resistant epilepsy",
             "dosing": "For drug-resistant epilepsy (failed 2+ appropriately chosen ASMs)",
             "contraindications": "N/A",
             "monitoring": "N/A",
@@ -2526,6 +2573,7 @@
           },
           {
             "item": "Vagus nerve stimulator (VNS)",
+            "indication": "Drug-resistant, non-surgical candidate",
             "dosing": "For drug-resistant epilepsy not surgical candidates",
             "contraindications": "N/A",
             "monitoring": "Device checks",
@@ -2536,6 +2584,7 @@
           },
           {
             "item": "Dietary therapy (ketogenic diet, modified Atkins)",
+            "indication": "Drug-resistant epilepsy",
             "dosing": "For drug-resistant epilepsy",
             "contraindications": "Fatty acid oxidation disorders; pyruvate carboxylase deficiency",
             "monitoring": "Metabolic panels; lipids; kidney function",
@@ -3106,7 +3155,7 @@
   "Multiple Sclerosis - New Diagnosis": {
     "id": "ms-new-diagnosis",
     "title": "Multiple Sclerosis - New Diagnosis",
-    "version": "2.5",
+    "version": "2.6",
     "icd10": [
       "** G35 (Multiple sclerosis)",
       "H46.9 (Optic neuritis",
@@ -3535,43 +3584,47 @@
         "Acute/Emergent": [
           {
             "item": "Methylprednisolone IV",
+            "indication": "MS exacerbation, optic neuritis",
+            "dosing": "1000 mg IV daily × 3-5 days",
+            "contraindications": "Active untreated infection, uncontrolled diabetes, psychosis history",
+            "monitoring": "Glucose q6h (target <180), BP, mood, sleep, I/O",
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "1000 mg IV daily Ã— 3-5 days",
-            "contraindications": "Active untreated infection, uncontrolled diabetes, psychosis history",
-            "monitoring": "Glucose q6h (target <180), BP, mood, sleep, I/O"
+            "ICU": "STAT"
           },
           {
             "item": "Omeprazole",
+            "indication": "GI prophylaxis during steroids",
+            "dosing": "20-40 mg daily during steroids",
+            "contraindications": "PPI allergy",
+            "monitoring": "None routine",
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "20-40 mg daily during steroids",
-            "contraindications": "PPI allergy",
-            "monitoring": "None routine"
+            "ICU": "STAT"
           },
           {
             "item": "Insulin sliding scale",
+            "indication": "Steroid-induced hyperglycemia",
+            "dosing": "Per protocol if glucose >180 mg/dL",
+            "contraindications": "Hypoglycemia risk",
+            "monitoring": "Glucose q6h",
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "-",
-            "ICU": "STAT",
-            "dosing": "Per protocol if glucose >180 mg/dL",
-            "contraindications": "Hypoglycemia risk",
-            "monitoring": "Glucose q6h"
+            "ICU": "STAT"
           },
           {
             "item": "Prednisone oral taper (optional)",
+            "indication": "Transition from IV steroids",
+            "dosing": "60 mg daily × 7 days, then taper over 2 weeks",
+            "contraindications": "Same as IV steroids",
+            "monitoring": "Glucose, BP, mood",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-",
-            "dosing": "60 mg daily Ã— 7 days, then taper over 2 weeks",
-            "contraindications": "Same as IV steroids",
-            "monitoring": "Glucose, BP, mood"
+            "ICU": "-"
           }
         ],
         "Symptomatic Treatments - First-line": [
@@ -3975,43 +4028,47 @@
         "Second-line/Refractory (Acute Treatment)": [
           {
             "item": "Plasmapheresis (PLEX)",
+            "indication": "Steroid-refractory exacerbation",
+            "dosing": "5-7 exchanges over 10-14 days",
+            "contraindications": "Hemodynamic instability, sepsis, line contraindication",
+            "monitoring": "BP, electrolytes, coags, fibrinogen, line infection",
             "ED": "-",
             "HOSP": "URGENT",
             "OPD": "-",
-            "ICU": "URGENT",
-            "dosing": "5-7 exchanges over 10-14 days",
-            "contraindications": "Hemodynamic instability, sepsis, line contraindication",
-            "monitoring": "BP, electrolytes, coags, fibrinogen, line infection"
+            "ICU": "URGENT"
           },
           {
             "item": "IVIG",
+            "indication": "Alternative to PLEX, steroid-refractory",
+            "dosing": "0.4 g/kg/day × 5 days",
+            "contraindications": "IgA deficiency, renal failure, thrombosis risk",
+            "monitoring": "Renal function, headache, thrombosis",
             "ED": "-",
             "HOSP": "URGENT",
             "OPD": "-",
-            "ICU": "URGENT",
-            "dosing": "0.4 g/kg/day Ã— 5 days",
-            "contraindications": "IgA deficiency, renal failure, thrombosis risk",
-            "monitoring": "Renal function, headache, thrombosis"
+            "ICU": "URGENT"
           },
           {
             "item": "Extended IV steroids",
+            "indication": "Incomplete response to standard steroids",
+            "dosing": "Additional 2-5 days methylprednisolone (total 5-10 days)",
+            "contraindications": "As above",
+            "monitoring": "As above",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "-",
-            "ICU": "ROUTINE",
-            "dosing": "Additional 2-5 days methylprednisolone (total 5-10 days)",
-            "contraindications": "As above",
-            "monitoring": "As above"
+            "ICU": "ROUTINE"
           },
           {
             "item": "ACTH gel (H.P. Acthar)",
+            "indication": "Alternative to IV steroids",
+            "dosing": "80 units IM/SC daily × 2-3 weeks",
+            "contraindications": "Similar to corticosteroids",
+            "monitoring": "Glucose, BP, electrolytes",
             "ED": "-",
             "HOSP": "EXT",
             "OPD": "EXT",
-            "ICU": "-",
-            "dosing": "80 units IM/SC daily Ã— 2-3 weeks",
-            "contraindications": "Similar to corticosteroids",
-            "monitoring": "Glucose, BP, electrolytes"
+            "ICU": "-"
           }
         ],
         "Disease-Modifying Therapies (DMT) - OPD ONLY": [
@@ -6523,7 +6580,7 @@
   "Acute Ischemic Stroke": {
     "id": "acute-ischemic-stroke",
     "title": "Acute Ischemic Stroke",
-    "version": "1.2",
+    "version": "1.3",
     "icd10": [
       "** I63.9 (Cerebral infarction",
       "unspecified)",
@@ -7054,6 +7111,7 @@
         "Acute/Emergent (Hyperacute Phase)": [
           {
             "item": "Alteplase (tPA) IV",
+            "indication": "Acute ischemic stroke reperfusion",
             "dosing": "0.9 mg/kg IV (max 90 mg); 10% as bolus over 1 min, remainder over 60 min; within 4.5 hours of symptom onset",
             "contraindications": "See Appendix A for complete exclusion criteria; major: ICH, recent surgery, BP >185/110 despite treatment, INR >1.7, platelets <100K",
             "monitoring": "Neuro checks q15min x 2h, then q30min x 6h, then q1h x 16h; BP q15min x 2h, then q30min x 6h; hold antiplatelets/anticoagulants 24h; CT head before anticoagulation",
@@ -7064,6 +7122,7 @@
           },
           {
             "item": "Tenecteplase IV",
+            "indication": "Acute ischemic stroke reperfusion (alternative to tPA)",
             "dosing": "0.25 mg/kg IV bolus (max 25 mg); single bolus (no infusion); within 4.5 hours of symptom onset",
             "contraindications": "Same as alteplase",
             "monitoring": "Same as alteplase",
@@ -7074,6 +7133,7 @@
           },
           {
             "item": "Blood pressure management (pre-thrombolysis) - Labetalol",
+            "indication": "BP control for tPA eligibility",
             "dosing": "10-20 mg IV over 1-2 min; may repeat or double q10min; max 300 mg",
             "contraindications": "Asthma, severe bradycardia, decompensated HF, 2nd/3rd degree heart block",
             "monitoring": "Continuous BP; target BP <185/110 for tPA eligibility",
@@ -7084,6 +7144,7 @@
           },
           {
             "item": "Blood pressure management (pre-thrombolysis) - Nicardipine",
+            "indication": "BP control for tPA eligibility",
             "dosing": "Start 5 mg/hr IV; increase by 2.5 mg/hr q5-15min; max 15 mg/hr",
             "contraindications": "None significant",
             "monitoring": "Continuous BP; target <185/110",
@@ -7094,6 +7155,7 @@
           },
           {
             "item": "Blood pressure management (pre-thrombolysis) - Clevidipine",
+            "indication": "BP control for tPA eligibility",
             "dosing": "Start 1-2 mg/hr IV; titrate by doubling q90sec initially; max 32 mg/hr",
             "contraindications": "Soy/egg allergy, severe aortic stenosis, lipid disorders",
             "monitoring": "Continuous BP; rapid onset; short half-life",
@@ -7104,6 +7166,7 @@
           },
           {
             "item": "Blood pressure management (post-tPA)",
+            "indication": "Prevent hemorrhagic transformation",
             "dosing": "Same agents as above",
             "contraindications": "Same",
             "monitoring": "Maintain BP <180/105 for 24 hours post-tPA",
@@ -7114,6 +7177,7 @@
           },
           {
             "item": "Mechanical thrombectomy",
+            "indication": "Large vessel occlusion (LVO)",
             "dosing": "Endovascular clot retrieval; within 6 hours for anterior LVO; up to 24 hours with favorable perfusion imaging",
             "contraindications": "Large completed infarct (ASPECTS <6), poor baseline function (mRS >2), no LVO",
             "monitoring": "Post-procedure: BP per protocol, groin site checks, neuro checks q1h",
