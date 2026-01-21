@@ -35,13 +35,20 @@ These clinical decision support templates have been reviewed and approved for cl
 
 ---
 
+## Cerebrovascular
+
+| Plan | Setting Coverage | Status |
+|------|------------------|--------|
+| [Acute Ischemic Stroke](acute-ischemic-stroke.md) | ED, HOSP, OPD, ICU | :material-check-circle:{ .approved } Approved |
+
+---
+
 ## Coming Soon
 
 See [Drafts for Review](../drafts/index.md) for plans pending approval.
 
 High-priority plans in development:
 
-- Acute Ischemic Stroke
 - Guillain-Barré Syndrome
 - Myasthenia Gravis - Exacerbation
 - Bacterial Meningitis
