@@ -22,7 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| *(none)* | — | — | — | — |
+| Acute Ischemic Stroke | `acute-ischemic-stroke.md` | in_progress | claude/next-queue-item-VZFVz | 2026-01-21 |
 
 ---
 

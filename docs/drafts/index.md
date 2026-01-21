@@ -23,7 +23,7 @@ These clinical plans are pending physician review and approval. Please review ea
 
 | Plan | Category | Pipeline Status | Last Updated |
 |------|----------|-----------------|--------------|
-| *(none)* | — | — | — |
+| [Acute Ischemic Stroke](acute-ischemic-stroke.md) | Cerebrovascular | :material-file-document-edit: Needs Review | 2026-01-21 |
 
 ---
 
