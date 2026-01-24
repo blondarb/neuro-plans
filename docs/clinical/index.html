@@ -4,8 +4,8 @@
 CLINICAL PLAN BUILDER - Interactive Clinical Decision Support Tool
 ================================================================================
 
-Version: 1.6
-Last Updated: January 21, 2026
+Version: 1.7
+Last Updated: January 24, 2026
 Repository: https://github.com/blondarb/neuro-plans
 
 OVERVIEW:
@@ -44,6 +44,7 @@ JSON SCHEMA:
   for complete field documentation.
 
 CHANGELOG:
+  v1.7 (Jan 24, 2026) - Clickable medication dosing: click badge to copy order sentence
   v1.6 (Jan 21, 2026) - Added Indication icon (💊 teal) for treatment items
   v1.5 (Jan 19, 2026) - Progressive disclosure with icon tooltips
   v1.4 (Jan 19, 2026) - Clinical notes banner, custom items
@@ -294,6 +295,23 @@ CHANGELOG:
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .item-dosing-badge:hover {
+      background: #bfdbfe;
+      transform: scale(1.02);
+    }
+    .item-dosing-badge.clickable {
+      border: 1px solid #93c5fd;
+    }
+    .item-dosing-badge.clickable::after {
+      content: ' 📋';
+      font-size: 0.65rem;
+    }
+    .item-dosing-badge.copied {
+      background: #bbf7d0;
+      color: #166534;
     }
 
     /* Info Icons Row - Compact icons with tooltips */
@@ -994,11 +1012,25 @@ CHANGELOG:
             iconsHtml += '</div>';
           }
 
+          // Handle structured dosing (object) vs legacy dosing (string)
+          let dosingBadgeHtml = '';
+          if (item.dosing) {
+            const isStructured = typeof item.dosing === 'object';
+            const orderSentence = isStructured ? item.dosing.orderSentence : null;
+            const displayDosing = isStructured ? (item.dosing.orderSentence || item.dosing.instructions) : item.dosing;
+            const fullInstructions = isStructured ? item.dosing.instructions : item.dosing;
+            const clickableClass = orderSentence ? 'clickable' : '';
+            dosingBadgeHtml = `<span class="item-dosing-badge ${clickableClass}"
+              title="${escapeHtml(fullInstructions)}"
+              data-order-sentence="${orderSentence ? escapeHtml(orderSentence) : ''}"
+              onclick="copyOrderSentence(event, this)">${escapeHtml(displayDosing)}</span>`;
+          }
+
           sectionHtml += `<div class="item ${sel ? 'selected' : ''}" data-id="${itemId}" data-section="${sectionName}" data-subsection="${subsectionName}">
             <div class="item-primary">
               <input type="checkbox" ${sel ? 'checked' : ''}>
               <div class="item-name">${pc ? `<span class="priority ${pc}">${priority}</span>` : ''}${escapeHtml(name)}</div>
-              ${item.dosing ? `<span class="item-dosing-badge" title="${escapeHtml(item.dosing)}">${escapeHtml(item.dosing)}</span>` : ''}
+              ${dosingBadgeHtml}
             </div>
             ${iconsHtml}
           </div>`;
@@ -1155,7 +1187,15 @@ CHANGELOG:
       if (itemData) {
         const name = itemData.item || itemData.name || itemData.treatment || 'Item';
         // Include dosing in the display name for medications
-        const displayName = itemData.dosing ? `${name} — ${itemData.dosing}` : name;
+        // Use order sentence if available (structured dosing), otherwise full dosing text
+        let displayName = name;
+        if (itemData.dosing) {
+          const isStructured = typeof itemData.dosing === 'object';
+          const dosingText = isStructured
+            ? (itemData.dosing.orderSentence || itemData.dosing.instructions)
+            : itemData.dosing;
+          displayName = `${name} — ${dosingText}`;
+        }
         selectedItems.set(id, { ...itemData, section, subsection, isCustom, editedName: displayName, originalName: name });
       }
       itemEl.classList.add('selected');
@@ -1264,6 +1304,32 @@ CHANGELOG:
     renderPlan();
     updateSelectedList();
   });
+
+  // Copy order sentence to clipboard when dosing badge is clicked
+  window.copyOrderSentence = function(event, badge) {
+    event.stopPropagation(); // Don't toggle item selection
+    const orderSentence = badge.dataset.orderSentence;
+    if (orderSentence) {
+      navigator.clipboard.writeText(orderSentence).then(() => {
+        // Visual feedback
+        badge.classList.add('copied');
+        showToast(`Copied: ${orderSentence}`);
+        setTimeout(() => badge.classList.remove('copied'), 1500);
+      }).catch(() => {
+        showToast('Failed to copy');
+      });
+    } else {
+      // Legacy dosing - copy the full text
+      const fullDosing = badge.title || badge.textContent;
+      navigator.clipboard.writeText(fullDosing).then(() => {
+        badge.classList.add('copied');
+        showToast('Copied dosing instructions');
+        setTimeout(() => badge.classList.remove('copied'), 1500);
+      }).catch(() => {
+        showToast('Failed to copy');
+      });
+    }
+  };
 
   function showToast(msg) {
     const existing = document.querySelector('.toast');

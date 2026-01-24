@@ -540,6 +540,17 @@ class MarkdownParser:
             if field:
                 item[field] = value
 
+        # Parse structured dosing if present
+        if 'dosing' in item and item.get('item'):
+            dosing_data = self._parse_structured_dosing(
+                item['dosing'],
+                item['item'],
+                item.get('route')
+            )
+            if dosing_data:
+                # Replace simple dosing string with structured object
+                item['dosing'] = dosing_data
+
         return item if item else None
 
     def _map_header_to_field(self, header: str) -> str | None:
@@ -568,13 +579,65 @@ class MarkdownParser:
             'monitoring': 'monitoring',
             'dosing': 'dosing',
             'dose': 'dosing',
+            'route': 'route',
             'frequency': 'frequency',
             'action if abnormal': 'action',
             'threshold': 'threshold',
             'priority': 'priority',
+            'pre-treatment requirements': 'pretreatment',
+            'pre-treatment': 'pretreatment',
         }
 
         return mappings.get(header, None)
+
+    def _parse_structured_dosing(self, dosing_text: str, item_name: str, route: str = None) -> dict:
+        """Parse structured dosing format into separate fields.
+
+        Input format: "dose | route | frequency | full_instructions"
+        Example: "5 mg | PO | TID | Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day"
+
+        Returns dict with:
+        - dose: "5 mg"
+        - route: "PO"
+        - frequency: "TID"
+        - instructions: "Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day"
+        - orderSentence: "Baclofen 5 mg PO TID"
+        """
+        if not dosing_text:
+            return None
+
+        # Check if it's the new structured format (contains :: delimiters)
+        # Using :: instead of | because | conflicts with markdown table syntax
+        parts = [p.strip() for p in dosing_text.split('::')]
+
+        if len(parts) >= 4:
+            # New structured format
+            dose = parts[0]
+            med_route = parts[1]
+            frequency = parts[2]
+            instructions = parts[3] if len(parts) > 3 else dosing_text
+
+            # Generate order sentence
+            order_sentence = f"{item_name} {dose} {med_route} {frequency}"
+
+            return {
+                'dose': dose,
+                'route': med_route,
+                'frequency': frequency,
+                'instructions': instructions,
+                'orderSentence': order_sentence
+            }
+        else:
+            # Legacy format (unstructured text) - keep as-is for backwards compatibility
+            # Try to generate a basic order sentence if route is available
+            order_sentence = None
+            if route:
+                order_sentence = f"{item_name} - {route} - see dosing"
+
+            return {
+                'instructions': dosing_text,
+                'orderSentence': order_sentence
+            }
 
 
 class ParityChecker:
@@ -1151,9 +1214,13 @@ class JSONValidator:
         """Check that medications have required safety fields."""
         meds_total = 0
         meds_with_dosing = 0
+        meds_with_structured_dosing = 0
+        meds_with_order_sentence = 0
         meds_with_contraindications = 0
+        meds_with_route = 0
         meds_missing_dosing = []
         meds_missing_contraindications = []
+        meds_missing_route = []
 
         sections = self.data.get('sections', {})
 
@@ -1167,10 +1234,23 @@ class JSONValidator:
                             meds_total += 1
                             item_name = item.get('item', item.get('treatment', 'Unknown'))
 
-                            if item.get('dosing'):
+                            # Check for dosing
+                            dosing = item.get('dosing')
+                            if dosing:
                                 meds_with_dosing += 1
+                                # Check if structured dosing format
+                                if isinstance(dosing, dict):
+                                    meds_with_structured_dosing += 1
+                                    if dosing.get('orderSentence'):
+                                        meds_with_order_sentence += 1
                             else:
                                 meds_missing_dosing.append(item_name)
+
+                            # Check for route
+                            if item.get('route'):
+                                meds_with_route += 1
+                            else:
+                                meds_missing_route.append(item_name)
 
                             if item.get('contraindications'):
                                 meds_with_contraindications += 1
@@ -1201,12 +1281,21 @@ class JSONValidator:
 
         self.result.stats['medications_total'] = meds_total
         self.result.stats['medications_with_dosing'] = meds_with_dosing
+        self.result.stats['medications_with_structured_dosing'] = meds_with_structured_dosing
+        self.result.stats['medications_with_order_sentence'] = meds_with_order_sentence
+        self.result.stats['medications_with_route'] = meds_with_route
         self.result.stats['medications_with_contraindications'] = meds_with_contraindications
 
         if meds_missing_dosing:
             self.result.warnings.append(
                 f"Medications missing dosing ({len(meds_missing_dosing)}): {', '.join(meds_missing_dosing[:5])}"
                 + ('...' if len(meds_missing_dosing) > 5 else '')
+            )
+
+        if meds_missing_route:
+            self.result.warnings.append(
+                f"Medications missing route ({len(meds_missing_route)}): {', '.join(meds_missing_route[:5])}"
+                + ('...' if len(meds_missing_route) > 5 else '')
             )
 
         if meds_missing_contraindications:
@@ -1274,7 +1363,10 @@ def print_validation_report(validation: ValidationResult, plan_title: str):
     if stats.get('medications_total', 0) > 0:
         print(f"\nMedications:")
         print(f"  Total: {stats.get('medications_total', 0)}")
+        print(f"  With route: {stats.get('medications_with_route', 0)}/{stats.get('medications_total', 0)}")
         print(f"  With dosing: {stats.get('medications_with_dosing', 0)}/{stats.get('medications_total', 0)}")
+        print(f"  With structured dosing: {stats.get('medications_with_structured_dosing', 0)}/{stats.get('medications_total', 0)}")
+        print(f"  With order sentence: {stats.get('medications_with_order_sentence', 0)}/{stats.get('medications_total', 0)}")
         print(f"  With contraindications: {stats.get('medications_with_contraindications', 0)}/{stats.get('medications_total', 0)}")
 
     # Errors

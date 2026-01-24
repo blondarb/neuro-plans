@@ -219,6 +219,7 @@ print('sections type:', type(plan.get('sections'))) # Should be: <class 'dict'>
 | `mkdocs.yml` | Site navigation structure |
 | `scripts/generate_json.py` | Markdown to JSON converter + parity checker |
 | `docs/logs/citation-verification-log.md` | Citation verification results and patterns |
+| `docs/ROADMAP.md` | Development roadmap for medication format & features |
 
 ### Skills Files
 
@@ -238,6 +239,47 @@ print('sections type:', type(plan.get('sections'))) # Should be: <class 'dict'>
 - **90%+ overall score** (54/60 points)
 - All critical issues (C-codes) must be resolved
 - All medications must have individual rows with complete dosing
+- All medications must use structured dosing format (for clickable order sentences)
+
+---
+
+## Medication Format (v3.0)
+
+**See `docs/ROADMAP.md` for full implementation details.**
+
+### Standardized Treatment Table (ALL Sections)
+
+ALL treatment sections (3A, 3B, 3C, 3D) now use the same column format:
+
+```markdown
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+```
+
+**Note:** Section 3D (DMTs) adds one extra column: Pre-Treatment Requirements.
+
+### Structured Dosing Format
+
+Use double-colon delimited fields to enable clickable order sentences:
+
+```
+[standard_dose] :: [route] :: [frequency] :: [full_instructions]
+```
+
+**Note:** We use `::` instead of `|` because `|` conflicts with markdown table syntax.
+
+**Examples:**
+```
+5 mg :: PO :: TID :: Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day
+1000 mg :: IV :: daily x 5 days :: 1000 mg IV daily for 3-5 days; infuse over 1 hour
+4 mg :: IV :: push PRN seizure :: 4 mg IV push; may repeat x1 in 5 min; max 8 mg
+0.9 mg/kg :: IV :: once :: 0.9 mg/kg IV (max 90 mg); 10% bolus, 90% over 60 min
+```
+
+**Clinical Tool Behavior:**
+- Clicking the blue dosing badge copies the **order sentence** to clipboard
+- Order sentence format: `[Drug Name] [Dose] [Route] [Frequency]`
+- Example: "Baclofen 5 mg PO TID"
+- Full instructions shown on hover
 
 ### Commands
 
