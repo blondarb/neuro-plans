@@ -1572,6 +1572,12 @@ CHANGELOG:
         selectItemWithDefaultDose(itemEl, itemId);
       }
 
+      // Update the badge text to show selected dose
+      const badge = container ? container.querySelector('.item-dosing-badge') : null;
+      if (badge) {
+        badge.textContent = orderSentence + ' ▼';
+      }
+
       // Copy to clipboard
       navigator.clipboard.writeText(orderSentence).then(() => {
         option.classList.add('copied');
