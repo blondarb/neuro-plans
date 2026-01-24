@@ -285,6 +285,22 @@ V2. [Item needing physician confirmation]
 - For DMTs: Are pre-treatment requirements listed?
 - Are relevant symptomatic treatment categories covered (pain, spasticity, bladder, mood, fatigue)?
 
+**NO CROSS-REFERENCES (CRITICAL):**
+Each row must be self-contained. Flag any of these patterns:
+- "Same as [drug name]" → Must repeat the actual content
+- "See above" or "See below" → Must include actual content
+- "Similar to [drug name]" → Must list specific details
+- "As above" or "Per above" → Must repeat content
+- References to other rows or sections → Each row standalone
+
+**Why:** Users scan individual rows quickly. Cross-references force them to search for referenced content, slowing clinical workflow. Even if content is redundant, each row needs complete information.
+
+**Example - WRONG:**
+| Nortriptyline | Same as amitriptyline | Same | ... |
+
+**Example - CORRECT:**
+| Nortriptyline | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly | ECG if dose >100 mg/day; anticholinergic effects | ... |
+
 **Structured Dosing Format Validation:**
 Check that each medication's Dosing cell contains 4 pipe-delimited fields:
 - Example valid: `5 mg | PO | TID | Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day`

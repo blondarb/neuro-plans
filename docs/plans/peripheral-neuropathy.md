@@ -1,7 +1,7 @@
 ---
 title: Peripheral Neuropathy - New Diagnosis/Evaluation
 description: Initial diagnostic workup and symptomatic management of suspected or newly diagnosed peripheral neuropathy including etiologic evaluation and pain management.
-version: "2.1"
+version: "2.2"
 setting: ED, HOSP, OPD, ICU
 status: approved
 tags:
@@ -104,8 +104,8 @@ SECTION A: ACTION ITEMS
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 | MRI spine (cervical/lumbar) with and without contrast | If radiculopathy, myelopathy, or polyradiculopathy suspected | Nerve root enhancement (radiculopathy), cord signal change | GFR <30, pacemaker, gadolinium allergy | URGENT | ROUTINE | ROUTINE | URGENT |
-| MRI lumbar plexus with contrast | Lumbosacral plexopathy, asymmetric proximal weakness | Plexus enhancement, mass lesion | Same as above | - | ROUTINE | ROUTINE | - |
-| MRI brachial plexus with contrast | Brachial plexopathy, Parsonage-Turner syndrome | Plexus enhancement, denervation changes | Same as above | - | ROUTINE | ROUTINE | - |
+| MRI lumbar plexus with contrast | Lumbosacral plexopathy, asymmetric proximal weakness | Plexus enhancement, mass lesion | GFR <30; pacemaker; gadolinium allergy | - | ROUTINE | ROUTINE | - |
+| MRI brachial plexus with contrast | Brachial plexopathy, Parsonage-Turner syndrome | Plexus enhancement, denervation changes | GFR <30; pacemaker; gadolinium allergy | - | ROUTINE | ROUTINE | - |
 | Autonomic function testing (QSART, tilt table, HRV) | Autonomic symptoms (orthostasis, anhidrosis, GI dysmotility) | Abnormal sudomotor or cardiovagal function | None significant | - | - | ROUTINE | - |
 | Quantitative sensory testing (QST) | Small fiber neuropathy evaluation | Abnormal thermal thresholds | None significant | - | - | EXT | - |
 | Chest X-ray | Lung cancer (paraneoplastic), sarcoidosis | Normal | Pregnancy (relative) | URGENT | ROUTINE | ROUTINE | URGENT |
@@ -117,7 +117,7 @@ SECTION A: ACTION ITEMS
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 | PET-CT | Occult malignancy, amyloidosis | No FDG-avid lesions | Pregnancy, uncontrolled diabetes | - | EXT | EXT | - |
 | Nerve ultrasound | CIDP (nerve enlargement), entrapment | Normal nerve caliber | None | - | EXT | ROUTINE | - |
-| MR neurography | Focal nerve pathology, plexopathy | Normal nerve signal/caliber | Same as MRI | - | EXT | EXT | - |
+| MR neurography | Focal nerve pathology, plexopathy | Normal nerve signal/caliber | GFR <30; pacemaker; gadolinium allergy | - | EXT | EXT | - |
 | Sural nerve biopsy | Vasculitic neuropathy, amyloidosis, CIDP | No vasculitis or amyloid deposits | Coagulopathy | - | EXT | - | - |
 
 ### LUMBAR PUNCTURE
@@ -166,17 +166,17 @@ SECTION A: ACTION ITEMS
 | Duloxetine | PO | Neuropathic pain (first-line, diabetic) | 30 mg daily; 60 mg daily; 90 mg daily :: PO :: :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | Hepatic impairment; CrCl <30; MAOIs; narrow-angle glaucoma | Nausea, BP; discontinuation syndrome (taper 2+ weeks) | - | ROUTINE | ROUTINE | - |
 | Venlafaxine XR | PO | Neuropathic pain | 75 mg daily; 150 mg daily; 225 mg daily :: PO :: :: Start 37.5-75 mg daily; increase by 75 mg q4-7d; max 225 mg daily | Uncontrolled HTN; concurrent MAOIs | BP monitoring; discontinuation syndrome | - | ROUTINE | ROUTINE | - |
 | Amitriptyline | PO | Neuropathic pain (second-line) | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly | ECG if dose >100 mg/day; anticholinergic effects | - | ROUTINE | ROUTINE | - |
-| Nortriptyline | PO | Neuropathic pain (second-line) | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Same as amitriptyline | Same; fewer anticholinergic effects | - | ROUTINE | ROUTINE | - |
-| Desipramine | PO | Neuropathic pain (second-line) | 25 mg qHS; 50 mg qHS; 75 mg qHS; 100 mg qHS :: PO :: :: Start 25 mg qHS; increase by 25 mg weekly; max 150 mg daily | Same as amitriptyline | Same; least anticholinergic TCA | - | ROUTINE | ROUTINE | - |
+| Nortriptyline | PO | Neuropathic pain (second-line) | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly | ECG if dose >100 mg/day; fewer anticholinergic effects than amitriptyline | - | ROUTINE | ROUTINE | - |
+| Desipramine | PO | Neuropathic pain (second-line) | 25 mg qHS; 50 mg qHS; 75 mg qHS; 100 mg qHS :: PO :: :: Start 25 mg qHS; increase by 25 mg weekly; max 150 mg daily | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly | ECG if dose >100 mg/day; least anticholinergic of TCAs | - | ROUTINE | ROUTINE | - |
 | Carbamazepine | PO | Trigeminal neuralgia, lancinating pain | 100 mg BID; 200 mg BID; 300 mg BID; 400 mg BID :: PO :: :: Start 100 mg BID; increase by 200 mg/day q3-7d; max 1200 mg/day | AV block; bone marrow suppression; MAOIs | CBC, LFTs, sodium; HLA-B*1502 screening in at-risk populations | - | ROUTINE | ROUTINE | - |
 | Oxcarbazepine | PO | Trigeminal neuralgia, lancinating pain | 300 mg BID; 600 mg BID; 900 mg BID; 1200 mg BID :: PO :: :: Start 300 mg BID; increase by 300 mg q3d; max 1200 mg BID | Carbamazepine hypersensitivity | Sodium (hyponatremia risk); HLA-B*1502 screening | - | ROUTINE | ROUTINE | - |
 | Capsaicin cream 0.075% | TOP | Localized neuropathic pain | Apply thin layer :: TOP :: TID-QID :: Apply TID-QID to affected area; takes 2-4 weeks for effect | Open wounds; avoid eyes/mucous membranes | Initial burning (decreases with use); wash hands after | - | - | ROUTINE | - |
 | Capsaicin 8% patch (Qutenza) | TOP | Localized neuropathic pain (refractory) | 1 patch :: TOP :: q3 months :: Apply by healthcare provider for 30-60 min; may repeat q3 months | Open wounds; avoid eyes/mucous membranes | Must be applied in clinic; pretreat with topical lidocaine | - | - | ROUTINE | - |
 | Lidocaine 5% patch | TOP | Localized neuropathic pain | 1-3 patches :: TOP :: 12h on/12h off :: Apply 1-3 patches to painful area for 12h on, 12h off | Severe hepatic impairment; broken skin | Minimal systemic absorption; local irritation | - | ROUTINE | ROUTINE | ROUTINE |
 | Tramadol | PO | Moderate neuropathic pain (adjunct) | 50 mg :: PO :: q6h PRN :: Start 50 mg q6h PRN; may use ER 100 mg daily; max 400 mg/day | Seizure disorder; MAOIs; SSRIs (serotonin syndrome) | Serotonin syndrome; seizures; dependence (Schedule IV) | - | ROUTINE | ROUTINE | - |
-| Tapentadol ER | PO | Moderate-severe neuropathic pain | 50 mg :: PO :: BID :: Start 50 mg BID; increase by 50 mg BID q3d; max 250 mg BID | Same as tramadol | Same; Schedule II | - | - | ROUTINE | - |
+| Tapentadol ER | PO | Moderate-severe neuropathic pain | 50 mg :: PO :: BID :: Start 50 mg BID; increase by 50 mg BID q3d; max 250 mg BID | Seizure disorder; MAOIs; SSRIs (serotonin syndrome) | Serotonin syndrome; seizures; dependence (Schedule II) | - | - | ROUTINE | - |
 | Morphine ER | PO | Severe refractory pain | 15 mg :: PO :: q12h :: Start 15 mg q12h; titrate q1-2d; no max (titrate to effect) | Respiratory depression; paralytic ileus; MAOIs | Sedation, constipation, respiratory status; naloxone available | - | ROUTINE | ROUTINE | ROUTINE |
-| Oxycodone ER | PO | Severe refractory pain | 10 mg :: PO :: q12h :: Start 10 mg q12h; titrate q1-2d | Same as morphine | Same; Schedule II | - | ROUTINE | ROUTINE | ROUTINE |
+| Oxycodone ER | PO | Severe refractory pain | 10 mg :: PO :: q12h :: Start 10 mg q12h; titrate q1-2d | Respiratory depression; paralytic ileus; MAOIs | Sedation, constipation, respiratory status; naloxone available (Schedule II) | - | ROUTINE | ROUTINE | ROUTINE |
 | Methadone | PO | Severe refractory neuropathic pain | 2.5 mg :: PO :: TID :: Start 2.5-5 mg TID; titrate slowly (long half-life); specialist management | QT prolongation; QT-prolonging drugs | ECG at baseline and with dose changes; QTc monitoring | - | - | EXT | - |
 
 **Combination Therapy Note:** For refractory neuropathic pain, combining agents from different classes (e.g., gabapentinoid + SNRI, or gabapentinoid + TCA) is often more effective than maximizing monotherapy. Avoid combining TCAs with SNRIs (serotonin syndrome risk).
@@ -198,7 +198,7 @@ SECTION A: ACTION ITEMS
 | Mirabegron | PO | Bladder urgency | 25 mg :: PO :: daily :: Start 25 mg daily; may increase to 50 mg daily | Uncontrolled hypertension | BP monitoring; fewer anticholinergic effects | - | - | ROUTINE | - |
 | Tamsulosin | PO | Urinary retention | 0.4 mg :: PO :: daily :: 0.4 mg daily 30 min after same meal each day | Severe sulfonamide allergy | Orthostatic hypotension (caution if orthostatic) | - | ROUTINE | ROUTINE | - |
 | Sildenafil | PO | Erectile dysfunction | 50 mg :: PO :: PRN :: 50 mg 30-60 min before activity; may adjust 25-100 mg; max 100 mg/day | Concurrent nitrates; recent MI/stroke | Hypotension; priapism | - | - | ROUTINE | - |
-| Tadalafil | PO | Erectile dysfunction | 10 mg :: PO :: PRN :: 10 mg before activity (max once daily) OR 2.5-5 mg daily | Same as sildenafil | Same | - | - | ROUTINE | - |
+| Tadalafil | PO | Erectile dysfunction | 10 mg :: PO :: PRN :: 10 mg before activity (max once daily) OR 2.5-5 mg daily | Concurrent nitrates; recent MI/stroke | Hypotension; priapism | - | - | ROUTINE | - |
 | Hydroxyzine | PO | Anxiety, pruritus | 25 mg :: PO :: TID-QID PRN :: 25-50 mg TID-QID PRN; max 400 mg/day | QT prolongation (high doses) | Sedation; anticholinergic effects | - | ROUTINE | ROUTINE | - |
 | Buspirone | PO | Generalized anxiety | 5 mg :: PO :: TID :: Start 5 mg TID; increase by 5 mg q2-3d; max 60 mg/day | Concurrent MAOIs | Takes 2-4 weeks for effect; no dependence | - | - | ROUTINE | - |
 | Trazodone | PO | Insomnia with chronic pain | 50 mg :: PO :: qHS :: Start 25-50 mg qHS; increase to 100-150 mg; max 200 mg qHS | Concurrent MAOIs; QT prolongation | QTc; priapism (rare); sedation | - | ROUTINE | ROUTINE | - |
@@ -459,6 +459,12 @@ SECTION B: REFERENCE (Expand as Needed)
 - TCAs (amitriptyline, nortriptyline, desipramine): 10-100 mg qHS options
 - Midodrine: 2.5-10 mg TID options
 - Clinical tool now shows dropdown to select desired dose and copy order sentence
+
+**v2.2 (January 24, 2026)** - Remove Cross-References
+- Replaced all "Same as X" and "See above" references with actual content
+- Each row is now completely self-contained for faster clinical scanning
+- Fixed: Nortriptyline, Desipramine (TCAs), Tapentadol ER, Oxycodone ER, Tadalafil
+- Fixed: MRI lumbar plexus, MRI brachial plexus, MR neurography contraindications
 
 **v2.0 (January 24, 2026)** - MAJOR: Clickable Medication Dosing
 - Updated ALL treatment sections (3A, 3B, 3C, 3D) to standardized format

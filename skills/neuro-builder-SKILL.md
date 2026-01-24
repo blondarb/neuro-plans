@@ -91,6 +91,21 @@ SECTION A: ACTION ITEMS
 
 **CRITICAL: Each medication must be on its own row with complete prescribing information. Do NOT group drugs together.**
 
+**CRITICAL: NO CROSS-REFERENCES. Each row must be completely self-contained.**
+- ❌ NEVER use "Same as [drug]", "See above", "Similar to [drug]", "As above"
+- ✅ ALWAYS repeat the full content even if it's identical to another row
+- **Why:** Users scan individual rows quickly. Cross-references force searching, slowing clinical workflow.
+
+**Example - WRONG:**
+```
+| Nortriptyline | Same as amitriptyline | Same |
+```
+
+**Example - CORRECT:**
+```
+| Nortriptyline | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly | ECG if dose >100 mg/day; anticholinergic effects |
+```
+
 **IMPORTANT:** All treatment tables use STANDARDIZED columns with **Route** and **Indication** for every medication. This enables:
 - Order sentence generation (e.g., "Baclofen 5 mg PO TID")
 - Teal pill icon (💊) on hover showing why this treatment is recommended
