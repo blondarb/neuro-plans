@@ -4,7 +4,7 @@
 CLINICAL PLAN BUILDER - Interactive Clinical Decision Support Tool
 ================================================================================
 
-Version: 1.7
+Version: 1.8
 Last Updated: January 24, 2026
 Repository: https://github.com/blondarb/neuro-plans
 
@@ -44,6 +44,7 @@ JSON SCHEMA:
   for complete field documentation.
 
 CHANGELOG:
+  v1.8 (Jan 24, 2026) - Added dosing info icon (ℹ) showing full dosing guidance on hover
   v1.7 (Jan 24, 2026) - Clickable medication dosing: click badge to copy order sentence
   v1.6 (Jan 21, 2026) - Added Indication icon (💊 teal) for treatment items
   v1.5 (Jan 19, 2026) - Progressive disclosure with icon tooltips
@@ -315,6 +316,72 @@ CHANGELOG:
     }
     .item-dosing-badge.multi-dose::after {
       content: none; /* Remove clipboard emoji for multi-dose, we show dropdown arrow instead */
+    }
+
+    /* Dosing Info Icon - shows full instructions on hover */
+    .dosing-info-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      background: #f0f9ff;
+      color: #0284c7;
+      border-radius: 50%;
+      font-size: 0.65rem;
+      cursor: help;
+      margin-left: 4px;
+      position: relative;
+      vertical-align: middle;
+      transition: all 0.15s;
+    }
+    .dosing-info-icon:hover {
+      background: #e0f2fe;
+      transform: scale(1.1);
+    }
+    .dosing-info-icon .tooltip {
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1e293b;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 400;
+      white-space: normal;
+      width: max-content;
+      max-width: 320px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s;
+      z-index: 1000;
+      text-align: left;
+      line-height: 1.5;
+      pointer-events: none;
+    }
+    .dosing-info-icon .tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-top-color: #1e293b;
+    }
+    .dosing-info-icon:hover .tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+    .dosing-info-label {
+      font-weight: 600;
+      color: #94a3b8;
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
     /* Dosing Dropdown */
@@ -1091,6 +1158,10 @@ CHANGELOG:
             const fullInstructions = isStructured ? item.dosing.instructions : item.dosing;
             const clickableClass = orderSentence ? 'clickable' : '';
 
+            // Build dosing info icon (shows full instructions on hover)
+            const dosingInfoIcon = fullInstructions ?
+              `<span class="dosing-info-icon">ℹ<span class="tooltip"><span class="dosing-info-label">Dosing Guide</span>${escapeHtml(fullInstructions)}</span></span>` : '';
+
             if (hasMultipleDoses) {
               // Multiple dose options - show dropdown
               let optionsHtml = doseOptions.map((opt, idx) =>
@@ -1102,16 +1173,14 @@ CHANGELOG:
               </div>`;
               dosingBadgeHtml = `<div class="dosing-dropdown-container" data-item-id="${itemId}">
                 <span class="item-dosing-badge clickable multi-dose"
-                  title="${escapeHtml(fullInstructions)}"
                   onclick="toggleDoseDropdown(event, this)">${escapeHtml(displayDosing)} ▼</span>
                 <div class="dose-dropdown">${optionsHtml}</div>
-              </div>`;
+              </div>${dosingInfoIcon}`;
             } else {
               // Single dose - direct copy on click
               dosingBadgeHtml = `<span class="item-dosing-badge ${clickableClass}"
-                title="${escapeHtml(fullInstructions)}"
                 data-order-sentence="${orderSentence ? escapeHtml(orderSentence) : ''}"
-                onclick="copyOrderSentence(event, this)">${escapeHtml(displayDosing)}</span>`;
+                onclick="copyOrderSentence(event, this)">${escapeHtml(displayDosing)}</span>${dosingInfoIcon}`;
             }
           }
 
