@@ -42,18 +42,31 @@ Start 5 mg TID; increase by 5 mg/dose every 3 days; max 80 mg/day
 ```
 
 **New structured dosing format (double-colon delimited fields within dosing cell):**
+
+**Single dose format:**
 ```
 5 mg :: PO :: TID :: Start 5 mg TID, titrate by 5 mg q3d, max 80 mg/day
 ```
 
-**Format:** `dose :: route :: frequency :: full_instructions`
+**Multi-dose format (semicolon-separated dose options):**
+```
+300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day
+```
+
+**Format:** `dose_options :: route :: [frequency] :: full_instructions`
+
+- `dose_options`: Single dose+freq OR multiple semicolon-separated options
+- `route`: Administration route (PO, IV, IM, etc.)
+- `frequency`: Optional if included in dose_options
+- `full_instructions`: Complete dosing guidance
 
 **Note:** We use `::` instead of `|` because `|` conflicts with markdown table syntax.
 
 This allows the clinical tool to:
-1. Generate order sentences: "Baclofen 5 mg PO TID"
-2. Display full dosing guidance on hover/click
-3. Support future weight-based calculations
+1. Generate multiple order sentences for different dose options
+2. Display dropdown to select desired dose
+3. Copy selected order sentence to clipboard
+4. Show full dosing guidance on hover
 
 ### 1.3 Files to Update
 
@@ -76,26 +89,44 @@ This allows the clinical tool to:
 
 Add structured dosing fields to medication items:
 
+**Single dose example:**
 ```json
 {
   "item": "Baclofen",
   "route": "PO",
   "indication": "Spasticity",
   "dosing": {
-    "dose": "5 mg",
+    "doseOptions": [
+      { "dose": "5 mg", "frequency": "TID", "orderSentence": "Baclofen 5 mg PO TID" }
+    ],
     "route": "PO",
-    "frequency": "TID",
     "instructions": "Start 5 mg TID, titrate by 5 mg/dose q3d, max 80 mg/day",
     "orderSentence": "Baclofen 5 mg PO TID"
-  },
-  "contraindications": "Renal impairment (reduce dose)",
-  "monitoring": "Sedation, weakness; do NOT stop abruptly",
-  "ED": "-",
-  "HOSP": "ROUTINE",
-  "OPD": "ROUTINE",
-  "ICU": "ROUTINE"
+  }
 }
 ```
+
+**Multi-dose example:**
+```json
+{
+  "item": "Gabapentin",
+  "route": "PO",
+  "indication": "Neuropathic pain (first-line)",
+  "dosing": {
+    "doseOptions": [
+      { "dose": "300 mg", "frequency": "qHS", "orderSentence": "Gabapentin 300 mg PO qHS" },
+      { "dose": "300 mg", "frequency": "TID", "orderSentence": "Gabapentin 300 mg PO TID" },
+      { "dose": "600 mg", "frequency": "TID", "orderSentence": "Gabapentin 600 mg PO TID" },
+      { "dose": "900 mg", "frequency": "TID", "orderSentence": "Gabapentin 900 mg PO TID" }
+    ],
+    "route": "PO",
+    "instructions": "Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day",
+    "orderSentence": "Gabapentin 300 mg PO qHS"
+  }
+}
+```
+
+**Note:** `orderSentence` at the dosing level is the default (first) option for backwards compatibility.
 
 ### 2.2 Clinical Tool UI Changes
 
@@ -121,44 +152,39 @@ Standard order sentence pattern:
 
 ---
 
-## Phase 3: Common Dosing Regimens (Future Enhancement)
+## Phase 3: Multiple Dose Options (Implemented)
 
-**Goal:** Pre-built dosing options for medications with common titration schedules.
+**Goal:** Provide multiple standard dose options per medication for flexible ordering.
 
-**Priority:** MEDIUM - Nice to have after core functionality
+**Priority:** HIGH - Implemented in Phase 2
 
-### 3.1 Regimen Templates
+**Status:** ✅ COMPLETE - Integrated into Phase 2 structured dosing
 
-For medications with standard titration protocols, offer selectable regimens:
+### 3.1 Multi-Dose in Structured Format
 
-```json
-{
-  "item": "Gabapentin",
-  "regimens": [
-    {
-      "name": "Conservative Start",
-      "orderSentence": "Gabapentin 100 mg PO TID",
-      "instructions": "Start 100 mg TID, increase by 100 mg/dose q3d as tolerated"
-    },
-    {
-      "name": "Standard Start",
-      "orderSentence": "Gabapentin 300 mg PO TID",
-      "instructions": "Start 300 mg TID, may increase to 600 mg TID"
-    },
-    {
-      "name": "Rapid Titration (Inpatient)",
-      "orderSentence": "Gabapentin 300 mg PO TID, titrate to 600 mg TID over 3 days",
-      "instructions": "Day 1: 300 TID, Day 2: 400 TID, Day 3+: 600 TID"
-    }
-  ]
-}
+Multiple doses are specified using semicolons in the first field:
+
+```markdown
+| Gabapentin | PO | Neuropathic pain | 300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day | ... |
 ```
 
-### 3.2 UI for Regimen Selection
+### 3.2 UI for Dose Selection
 
-- Dropdown or accordion under medication when clicked
-- Shows regimen name + order sentence preview
-- Click to select and copy
+| Feature | Behavior |
+|---------|----------|
+| Dosing badge click | Opens dropdown with all dose options |
+| Each option | Shows order sentence (e.g., "Gabapentin 300 mg PO TID") |
+| Click option | Copies that specific order sentence to clipboard |
+| Hover on badge | Shows full instructions tooltip |
+
+### 3.3 Common Dose Patterns
+
+| Pattern | Example |
+|---------|---------|
+| Starting + maintenance | `300 mg qHS; 300 mg TID` |
+| Titration range | `300 mg TID; 600 mg TID; 900 mg TID` |
+| PRN options | `4 mg IV; 2 mg IV PRN` |
+| Load + maintenance | `1000 mg IV load; 500 mg IV q12h` |
 
 ---
 

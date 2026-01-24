@@ -1,7 +1,7 @@
 ---
 title: Peripheral Neuropathy - New Diagnosis/Evaluation
 description: Initial diagnostic workup and symptomatic management of suspected or newly diagnosed peripheral neuropathy including etiologic evaluation and pain management.
-version: "2.0"
+version: "2.1"
 setting: ED, HOSP, OPD, ICU
 status: approved
 tags:
@@ -161,15 +161,15 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Gabapentin | PO | Neuropathic pain (first-line) | 300 mg :: PO :: TID :: Start 300 mg qHS; increase by 300 mg q1-3d; target 900-1800 mg TID; max 3600 mg/day | Renal impairment (CrCl 30-59: max 1400 mg/day; CrCl 15-29: max 600 mg/day; CrCl <15: max 300 mg/day) | Sedation, dizziness, peripheral edema; taper to discontinue | - | ROUTINE | ROUTINE | ROUTINE |
-| Pregabalin | PO | Neuropathic pain (first-line) | 75 mg :: PO :: BID :: Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID | Renal impairment (adjust per CrCl); Class V controlled | Sedation, weight gain, peripheral edema | - | ROUTINE | ROUTINE | ROUTINE |
-| Duloxetine | PO | Neuropathic pain (first-line, diabetic) | 30 mg :: PO :: daily :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | Hepatic impairment; CrCl <30; MAOIs; narrow-angle glaucoma | Nausea, BP; discontinuation syndrome (taper 2+ weeks) | - | ROUTINE | ROUTINE | - |
-| Venlafaxine XR | PO | Neuropathic pain | 75 mg :: PO :: daily :: Start 37.5-75 mg daily; increase by 75 mg q4-7d; max 225 mg daily | Uncontrolled HTN; concurrent MAOIs | BP monitoring; discontinuation syndrome | - | ROUTINE | ROUTINE | - |
-| Amitriptyline | PO | Neuropathic pain (second-line) | 25 mg :: PO :: qHS :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly | ECG if dose >100 mg/day; anticholinergic effects | - | ROUTINE | ROUTINE | - |
-| Nortriptyline | PO | Neuropathic pain (second-line) | 25 mg :: PO :: qHS :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Same as amitriptyline | Same; fewer anticholinergic effects | - | ROUTINE | ROUTINE | - |
-| Desipramine | PO | Neuropathic pain (second-line) | 25 mg :: PO :: qHS :: Start 25 mg qHS; increase by 25 mg weekly; max 150 mg daily | Same as amitriptyline | Same; least anticholinergic TCA | - | ROUTINE | ROUTINE | - |
-| Carbamazepine | PO | Trigeminal neuralgia, lancinating pain | 100 mg :: PO :: BID :: Start 100 mg BID; increase by 200 mg/day q3-7d; max 1200 mg/day | AV block; bone marrow suppression; MAOIs | CBC, LFTs, sodium; HLA-B*1502 screening in at-risk populations | - | ROUTINE | ROUTINE | - |
-| Oxcarbazepine | PO | Trigeminal neuralgia, lancinating pain | 300 mg :: PO :: BID :: Start 300 mg BID; increase by 300 mg q3d; max 1200 mg BID | Carbamazepine hypersensitivity | Sodium (hyponatremia risk); HLA-B*1502 screening | - | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | Neuropathic pain (first-line) | 300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID; 1200 mg TID :: PO :: :: Start 300 mg qHS; increase by 300 mg q1-3d; target 900-1800 mg TID; max 3600 mg/day | Renal impairment (CrCl 30-59: max 1400 mg/day; CrCl 15-29: max 600 mg/day; CrCl <15: max 300 mg/day) | Sedation, dizziness, peripheral edema; taper to discontinue | - | ROUTINE | ROUTINE | ROUTINE |
+| Pregabalin | PO | Neuropathic pain (first-line) | 75 mg BID; 150 mg BID; 225 mg BID; 300 mg BID :: PO :: :: Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID | Renal impairment (adjust per CrCl); Class V controlled | Sedation, weight gain, peripheral edema | - | ROUTINE | ROUTINE | ROUTINE |
+| Duloxetine | PO | Neuropathic pain (first-line, diabetic) | 30 mg daily; 60 mg daily; 90 mg daily :: PO :: :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | Hepatic impairment; CrCl <30; MAOIs; narrow-angle glaucoma | Nausea, BP; discontinuation syndrome (taper 2+ weeks) | - | ROUTINE | ROUTINE | - |
+| Venlafaxine XR | PO | Neuropathic pain | 75 mg daily; 150 mg daily; 225 mg daily :: PO :: :: Start 37.5-75 mg daily; increase by 75 mg q4-7d; max 225 mg daily | Uncontrolled HTN; concurrent MAOIs | BP monitoring; discontinuation syndrome | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | PO | Neuropathic pain (second-line) | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly | ECG if dose >100 mg/day; anticholinergic effects | - | ROUTINE | ROUTINE | - |
+| Nortriptyline | PO | Neuropathic pain (second-line) | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Same as amitriptyline | Same; fewer anticholinergic effects | - | ROUTINE | ROUTINE | - |
+| Desipramine | PO | Neuropathic pain (second-line) | 25 mg qHS; 50 mg qHS; 75 mg qHS; 100 mg qHS :: PO :: :: Start 25 mg qHS; increase by 25 mg weekly; max 150 mg daily | Same as amitriptyline | Same; least anticholinergic TCA | - | ROUTINE | ROUTINE | - |
+| Carbamazepine | PO | Trigeminal neuralgia, lancinating pain | 100 mg BID; 200 mg BID; 300 mg BID; 400 mg BID :: PO :: :: Start 100 mg BID; increase by 200 mg/day q3-7d; max 1200 mg/day | AV block; bone marrow suppression; MAOIs | CBC, LFTs, sodium; HLA-B*1502 screening in at-risk populations | - | ROUTINE | ROUTINE | - |
+| Oxcarbazepine | PO | Trigeminal neuralgia, lancinating pain | 300 mg BID; 600 mg BID; 900 mg BID; 1200 mg BID :: PO :: :: Start 300 mg BID; increase by 300 mg q3d; max 1200 mg BID | Carbamazepine hypersensitivity | Sodium (hyponatremia risk); HLA-B*1502 screening | - | ROUTINE | ROUTINE | - |
 | Capsaicin cream 0.075% | TOP | Localized neuropathic pain | Apply thin layer :: TOP :: TID-QID :: Apply TID-QID to affected area; takes 2-4 weeks for effect | Open wounds; avoid eyes/mucous membranes | Initial burning (decreases with use); wash hands after | - | - | ROUTINE | - |
 | Capsaicin 8% patch (Qutenza) | TOP | Localized neuropathic pain (refractory) | 1 patch :: TOP :: q3 months :: Apply by healthcare provider for 30-60 min; may repeat q3 months | Open wounds; avoid eyes/mucous membranes | Must be applied in clinic; pretreat with topical lidocaine | - | - | ROUTINE | - |
 | Lidocaine 5% patch | TOP | Localized neuropathic pain | 1-3 patches :: TOP :: 12h on/12h off :: Apply 1-3 patches to painful area for 12h on, 12h off | Severe hepatic impairment; broken skin | Minimal systemic absorption; local irritation | - | ROUTINE | ROUTINE | ROUTINE |
@@ -185,8 +185,8 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Midodrine | PO | Orthostatic hypotension | 2.5 mg :: PO :: TID :: Start 2.5 mg TID (awakening, midday, mid-afternoon); increase by 2.5 mg q1-2wk; max 10 mg TID; NOT within 4h of bedtime | Severe heart disease; urinary retention; pheochromocytoma | Supine HTN (avoid lying flat within 4h); urinary retention | - | ROUTINE | ROUTINE | ROUTINE |
-| Fludrocortisone | PO | Orthostatic hypotension | 0.1 mg :: PO :: daily :: Start 0.1 mg daily; increase by 0.1 mg q1-2wk; max 0.3 mg daily | CHF; hypertension | Potassium, BP, edema; hypokalemia; supine HTN | - | ROUTINE | ROUTINE | ROUTINE |
+| Midodrine | PO | Orthostatic hypotension | 2.5 mg TID; 5 mg TID; 7.5 mg TID; 10 mg TID :: PO :: :: Start 2.5 mg TID (awakening, midday, mid-afternoon); increase by 2.5 mg q1-2wk; max 10 mg TID; NOT within 4h of bedtime | Severe heart disease; urinary retention; pheochromocytoma | Supine HTN (avoid lying flat within 4h); urinary retention | - | ROUTINE | ROUTINE | ROUTINE |
+| Fludrocortisone | PO | Orthostatic hypotension | 0.1 mg daily; 0.2 mg daily; 0.3 mg daily :: PO :: :: Start 0.1 mg daily; increase by 0.1 mg q1-2wk; max 0.3 mg daily | CHF; hypertension | Potassium, BP, edema; hypokalemia; supine HTN | - | ROUTINE | ROUTINE | ROUTINE |
 | Droxidopa (Northera) | PO | Neurogenic orthostatic hypotension | 100 mg :: PO :: TID :: Start 100 mg TID; increase by 100 mg TID q24-48h; max 600 mg TID; NOT within 3h of bedtime | Concurrent ergot alkaloids | Supine HTN; caution with MAOIs/triptans | - | - | ROUTINE | - |
 | Pyridostigmine | PO | Orthostatic hypotension (off-label) | 30 mg :: PO :: TID :: 30-60 mg TID | Mechanical GI/GU obstruction; asthma (relative) | Cholinergic effects; less supine HTN than midodrine | - | - | ROUTINE | - |
 | Polyethylene glycol 3350 | PO | Constipation (autonomic) | 17 g :: PO :: daily :: 17 g daily; adjust to effect | Bowel obstruction | Electrolytes with prolonged use | - | ROUTINE | ROUTINE | - |
@@ -450,6 +450,15 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v2.1 (January 24, 2026)** - Multiple Dose Options
+- Added multiple dose options for key medications using semicolon-separated format
+- Gabapentin: 300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID; 1200 mg TID
+- Pregabalin: 75 mg BID; 150 mg BID; 225 mg BID; 300 mg BID
+- Duloxetine: 30 mg daily; 60 mg daily; 90 mg daily
+- TCAs (amitriptyline, nortriptyline, desipramine): 10-100 mg qHS options
+- Midodrine: 2.5-10 mg TID options
+- Clinical tool now shows dropdown to select desired dose and copy order sentence
 
 **v2.0 (January 24, 2026)** - MAJOR: Clickable Medication Dosing
 - Updated ALL treatment sections (3A, 3B, 3C, 3D) to standardized format
