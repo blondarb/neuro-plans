@@ -1,7 +1,7 @@
 ---
 title: Myasthenia Gravis - Exacerbation/Crisis
 description: Acute myasthenic exacerbation and crisis management - respiratory monitoring, IVIg/PLEX, medication safety, and ICU care.
-version: "1.0"
+version: "1.1"
 setting: ED, HOSP, ICU
 status: draft
 tags:
@@ -21,7 +21,7 @@ tags:
 
 # Myasthenia Gravis - Exacerbation/Crisis
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 24, 2026
 **REVISED:** January 24, 2026
 **STATUS:** Draft - Pending Review
@@ -335,20 +335,23 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| IVIg and PLEX equally effective for MG exacerbation | Class I, Level A | [Gajdos et al. Cochrane 2012](https://pubmed.ncbi.nlm.nih.gov/23235604/) |
+| IVIg and PLEX equally effective for MG exacerbation | Class I, Level A | [Gajdos et al. Cochrane 2012](https://pubmed.ncbi.nlm.nih.gov/23235588/) |
 | IVIg 2 g/kg total dose standard | Class I, Level A | [Zinman et al. Lancet Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/17706563/) |
-| PLEX effective for MG crisis | Class I, Level A | [Gajdos et al. Cochrane 2012](https://pubmed.ncbi.nlm.nih.gov/23235604/) |
+| PLEX effective for MG crisis | Class I, Level A | [Gajdos et al. Cochrane 2012](https://pubmed.ncbi.nlm.nih.gov/23235588/) |
 | FVC and NIF for respiratory monitoring | Class II, Level B | [Rabinstein & Wijdicks. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/12654988/) |
 | Pyridostigmine for symptomatic treatment | Class I, Level A | [Mehndiratta et al. Cochrane 2014](https://pubmed.ncbi.nlm.nih.gov/25304970/) |
 | Corticosteroids can cause initial worsening | Class II, Level B | [Palace et al. Lancet Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/22305458/) |
 | Azathioprine as steroid-sparing agent | Class I, Level B | [Palace et al. NEJM 1998](https://pubmed.ncbi.nlm.nih.gov/9771070/) |
 | Rituximab effective in refractory/MuSK+ MG | Class II, Level C | [Nowak et al. Neurology 2022](https://pubmed.ncbi.nlm.nih.gov/34986310/) |
 | Medications to avoid in MG | Class III, Level C | [Juel. Semin Neurol 2004](https://pubmed.ncbi.nlm.nih.gov/15257515/) |
-| Thymectomy beneficial in generalized MG | Class I, Level B | [Wolfe et al. NEJM 2016 (MGTX Trial)](https://pubmed.ncbi.nlm.nih.gov/27509102/) |
+| Thymectomy beneficial in generalized MG | Class I, Level B | [Wolfe et al. NEJM 2016 (MGTX Trial)](https://pubmed.ncbi.nlm.nih.gov/27509100/) |
 
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 24, 2026)**
+- Citation verification: Corrected Gajdos Cochrane PMID (23235588), MGTX trial PMID (27509100)
 
 **v1.0 (January 24, 2026)**
 - Initial template creation

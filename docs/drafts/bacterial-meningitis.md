@@ -1,7 +1,7 @@
 ---
 title: Bacterial Meningitis
 description: Acute bacterial meningitis - empiric antibiotics, dexamethasone, LP diagnostic criteria, and ICU management.
-version: "1.0"
+version: "1.1"
 setting: ED, HOSP, ICU
 status: draft
 tags:
@@ -21,7 +21,7 @@ tags:
 
 # Bacterial Meningitis
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 24, 2026
 **REVISED:** January 24, 2026
 **STATUS:** Draft - Pending Review
@@ -382,7 +382,7 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Dexamethasone before antibiotics improves outcomes in pneumococcal meningitis | Class I, Level A | [de Gans et al. NEJM 2002](https://pubmed.ncbi.nlm.nih.gov/12432045/) |
+| Dexamethasone before antibiotics improves outcomes in pneumococcal meningitis | Class I, Level A | [de Gans et al. NEJM 2002](https://pubmed.ncbi.nlm.nih.gov/12432041/) |
 | Antibiotics within 1 hour reduce mortality | Class II, Level B | [Proulx et al. QJM 2005](https://pubmed.ncbi.nlm.nih.gov/15728404/) |
 | CT before LP only if criteria met | Class II, Level B | [Hasbun et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11742046/) |
 | Vancomycin + ceftriaxone empiric for DRSP | Class II, Level B | [Tunkel et al. IDSA Guidelines Clin Infect Dis 2004](https://pubmed.ncbi.nlm.nih.gov/15494903/) |
@@ -395,6 +395,9 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 24, 2026)**
+- Citation verification: Corrected de Gans PMID (12432041)
 
 **v1.0 (January 24, 2026)**
 - Initial template creation

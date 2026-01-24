@@ -1,7 +1,7 @@
 ---
 title: HSV Encephalitis
 description: Herpes simplex virus encephalitis - empiric acyclovir, MRI findings, CSF analysis, and ICU management.
-version: "1.0"
+version: "1.1"
 setting: ED, HOSP, ICU
 status: draft
 tags:
@@ -21,7 +21,7 @@ tags:
 
 # HSV Encephalitis
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 24, 2026
 **REVISED:** January 24, 2026
 **STATUS:** Draft - Pending Review
@@ -368,19 +368,22 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Acyclovir 10 mg/kg q8h for HSVE | Class I, Level A | [Whitley et al. NEJM 1986](https://pubmed.ncbi.nlm.nih.gov/3018561/) |
+| Acyclovir 10 mg/kg q8h for HSVE | Class I, Level A | [Whitley et al. NEJM 1986](https://pubmed.ncbi.nlm.nih.gov/3001520/) |
 | CSF HSV PCR for diagnosis | Class I, Level A | [Lakeman & Whitley. J Infect Dis 1995](https://pubmed.ncbi.nlm.nih.gov/7706801/) |
 | Early acyclovir improves outcomes | Class II, Level B | [Raschilas et al. Clin Infect Dis 2002](https://pubmed.ncbi.nlm.nih.gov/12115091/) |
 | MRI superior to CT for HSVE | Class II, Level B | [Domingues et al. J Neurol Sci 1997](https://pubmed.ncbi.nlm.nih.gov/9285472/) |
 | 14-21 day treatment duration | Class II, Level B | [Gnann & Whitley. Clin Infect Dis 2002](https://pubmed.ncbi.nlm.nih.gov/12353702/) |
 | Repeat CSF PCR if clinical concern | Class III, Level C | [Tyler. NEJM 2004](https://pubmed.ncbi.nlm.nih.gov/15295046/) |
-| Post-HSV autoimmune encephalitis | Class II, Level B | [Armangue et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/29452687/) |
+| Post-HSV autoimmune encephalitis | Class II, Level B | [Armangue et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/30049614/) |
 | Seizure prophylaxis consideration | Class III, Level C | [Misra et al. Seizure 2008](https://pubmed.ncbi.nlm.nih.gov/17851101/) |
 | Prognosis with early treatment | Class II, Level B | [Skoldenberg et al. Lancet 1984](https://pubmed.ncbi.nlm.nih.gov/6147584/) |
 
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 24, 2026)**
+- Citation verification: Corrected Whitley PMID (3001520), Armangue PMID (30049614)
 
 **v1.0 (January 24, 2026)**
 - Initial template creation

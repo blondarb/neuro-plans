@@ -1,7 +1,7 @@
 ---
 title: Guillain-Barré Syndrome
 description: Acute inflammatory demyelinating polyradiculoneuropathy - evaluation, respiratory monitoring, IVIg/PLEX, and ICU management.
-version: "1.0"
+version: "1.1"
 setting: ED, HOSP, ICU
 status: draft
 tags:
@@ -21,7 +21,7 @@ tags:
 
 # Guillain-Barré Syndrome
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 24, 2026
 **REVISED:** January 24, 2026
 **STATUS:** Draft - Pending Review
@@ -363,16 +363,21 @@ SECTION B: REFERENCE (Expand as Needed)
 | IVIg 0.4 g/kg x 5 days standard dosing | Class I, Level A | [van der Meché et al. NEJM 1992](https://pubmed.ncbi.nlm.nih.gov/1557426/) |
 | PLEX effective within 4 weeks of onset | Class I, Level A | [Raphaël et al. Cochrane 2012](https://pubmed.ncbi.nlm.nih.gov/22786476/) |
 | Combined IVIg + PLEX not superior | Class I, Level A | [Plasma Exchange/Sandoglobulin GBS Trial Group 1997](https://pubmed.ncbi.nlm.nih.gov/9008066/) |
-| Corticosteroids ineffective in GBS | Class I, Level A | [Hughes et al. Cochrane 2016](https://pubmed.ncbi.nlm.nih.gov/27749928/) |
-| FVC and NIF for respiratory monitoring | Class II, Level B | [Lawn et al. Ann Neurol 2001](https://pubmed.ncbi.nlm.nih.gov/11456310/) |
-| Anti-GQ1b associated with Miller Fisher | Class II, Level B | [Chiba et al. Ann Neurol 1992](https://pubmed.ncbi.nlm.nih.gov/1637140/) |
-| Campylobacter most common antecedent | Class II, Level B | [Jacobs et al. Neurology 1998](https://pubmed.ncbi.nlm.nih.gov/9710014/) |
-| Early IVIg (within 2 weeks) improves outcomes | Class II, Level B | [van Koningsveld et al. Lancet Neurol 2004](https://pubmed.ncbi.nlm.nih.gov/15261607/) |
-| 20/30/40 rule for intubation | Class III, Level C | [Wijdicks & Lawn. Neurology 1999](https://pubmed.ncbi.nlm.nih.gov/10591488/) |
+| Corticosteroids ineffective in GBS | Class I, Level A | [Hughes et al. Cochrane 2016](https://pubmed.ncbi.nlm.nih.gov/27775812/) |
+| FVC and NIF for respiratory monitoring | Class II, Level B | [Lawn et al. Arch Neurol 2001](https://pubmed.ncbi.nlm.nih.gov/11405803/) |
+| Anti-GQ1b associated with Miller Fisher | Class II, Level B | [Chiba et al. Ann Neurol 1992](https://pubmed.ncbi.nlm.nih.gov/1514781/) |
+| Campylobacter most common antecedent | Class II, Level B | [Jacobs et al. Neurology 1998](https://pubmed.ncbi.nlm.nih.gov/9781538/) |
+| Early IVIg (within 2 weeks) improves outcomes | Class I, Level A | [Hughes et al. Cochrane 2014](https://pubmed.ncbi.nlm.nih.gov/25238327/) |
+| 20/30/40 rule for intubation | Class III, Level C | [Lawn et al. Arch Neurol 2001](https://pubmed.ncbi.nlm.nih.gov/11405803/) |
 
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 24, 2026)**
+- Citation verification: Corrected 6 PMID errors in Section 8
+- Fixed: Hughes Cochrane 2016 (PMID 27775812), Lawn Arch Neurol 2001 (PMID 11405803), Chiba Ann Neurol 1992 (PMID 1514781), Jacobs Neurology 1998 (PMID 9781538)
+- Updated: Early IVIg and 20/30/40 rule citations corrected to verified sources
 
 **v1.0 (January 24, 2026)**
 - Initial template creation
