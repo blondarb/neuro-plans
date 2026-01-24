@@ -33,11 +33,28 @@ Tables should use the multi-column setting-priority format:
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 ```
 
-**Treatments:**
+**Treatments (STANDARDIZED - ALL SECTIONS):**
 ```
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 ```
+
+**Note:** Section 3D (DMTs) adds one extra column (Pre-Treatment Requirements) after Dosing.
+
+**Required Columns for ALL Treatment Tables:**
+- Treatment (drug name)
+- Route (PO, IV, IM, SC, etc.)
+- Indication (why this drug)
+- Dosing (structured format - see below)
+- Contraindications
+- Monitoring
+- ED, HOSP, OPD, ICU (priority columns)
+
+**Structured Dosing Format:**
+```
+[standard_dose] | [route] | [frequency] | [full_instructions]
+```
+Example: `5 mg | PO | TID | Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day`
 
 **Priority values:** STAT | URGENT | ROUTINE | EXT | - (not applicable)
 
@@ -170,12 +187,21 @@ VERSION: [if applicable]
 | Criterion | Met? | Notes |
 |-----------|------|-------|
 | Each drug on individual row (not grouped) | Y/N | [note] |
-| Complete dosing (start, titrate, max) | Y/N | [list any drugs missing dosing] |
+| **Route column present in ALL sections (3A/3B/3C/3D)** | Y/N | [REQUIRED - enables order sentences] |
+| **Structured dosing format used** | Y/N | [Format: dose \| route \| frequency \| instructions] |
+| Indication column present in ALL sections | Y/N | [displays as 💊 icon] |
+| Complete dosing (start, titrate, max) | Y/N | [list any drugs missing full instructions] |
 | Contraindications listed for each drug | Y/N | [note] |
 | Monitoring specified for each drug | Y/N | [note] |
 | Symptomatic categories covered | Y/N | [list missing: pain, spasticity, bladder, mood, fatigue, etc.] |
-| Section 3B has Indication column | Y/N | [note] |
-| Section 3D has Route + Pre-Treatment columns | Y/N or N/A | [note] |
+| Section 3D has Pre-Treatment column | Y/N or N/A | [note] |
+
+**Structured Dosing Validation:**
+For each medication, verify the Dosing cell contains 4 pipe-delimited fields:
+1. Standard dose (e.g., "5 mg", "1000 mg", "0.9 mg/kg")
+2. Route (e.g., "PO", "IV", "IM")
+3. Frequency (e.g., "TID", "daily", "q12h", "PRN")
+4. Full instructions (start, titrate, max, special notes)
 
 ## SECTION 6 MONITORING ASSESSMENT
 
@@ -246,15 +272,23 @@ V2. [Item needing physician confirmation]
 
 ## Common Issues to Check
 
-**Medication Comprehensiveness (NEW - HIGH PRIORITY):**
+**Medication Format & Comprehensiveness (HIGH PRIORITY):**
+- **Route column present in ALL treatment sections (3A, 3B, 3C, 3D)?** - REQUIRED for order sentences
+- **Structured dosing format used?** - `dose | route | frequency | full_instructions`
+- **Indication column present in ALL treatment sections?** - Displays as 💊 icon
 - Are all medications listed individually (not grouped as "SSRIs" or "beta-blockers")?
-- Does each drug have complete dosing (start dose, titration, max dose)?
+- Does each drug have complete dosing (start dose, titration, max dose) in the full_instructions field?
 - Are contraindications listed for each medication?
 - Is monitoring specified for each medication?
 - For DMTs: Are pre-treatment requirements listed?
 - Are relevant symptomatic treatment categories covered (pain, spasticity, bladder, mood, fatigue)?
-- Does Section 3B include an "Indication" column?
-- Does Section 3D include "Route" and "Pre-Treatment Requirements" columns (if DMTs apply)?
+
+**Structured Dosing Format Validation:**
+Check that each medication's Dosing cell contains 4 pipe-delimited fields:
+- Example valid: `5 mg | PO | TID | Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day`
+- Example invalid: `Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day` (missing structured fields)
+- For PRN: `4 mg | IV | push PRN seizure | 4 mg IV push; may repeat x1 in 5 min; max 8 mg`
+- For loading: `1000 mg | IV | load, then 500 mg q12h | Load 1000 mg IV, then 500 mg IV q12h`
 
 **Setting Coverage (HIGH PRIORITY):**
 - Missing OPD coverage in Labs section
@@ -325,6 +359,14 @@ Flag any recommendations that use weak/suggestive language:
 - <48/60 (<80%): Significant revision needed
 
 ## Change Log
+
+**v3.0 (January 24, 2026)** - MAJOR: Clickable Medication Dosing Validation
+- **Updated Expected Table Format** to require standardized columns for ALL treatment sections
+- **Added Route column validation** for sections 3A, 3B, 3C (previously only 3D)
+- **Added Structured Dosing Format validation** - `dose | route | frequency | full_instructions`
+- Updated Medication Assessment table with new criteria
+- Updated Common Issues checklist with format validation examples
+- See docs/ROADMAP.md for full implementation plan
 
 **v2.2 (January 14, 2026)**
 - Added Section 6 Monitoring Assessment table to output format

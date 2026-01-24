@@ -91,33 +91,51 @@ SECTION A: ACTION ITEMS
 
 **CRITICAL: Each medication must be on its own row with complete prescribing information. Do NOT group drugs together.**
 
-**IMPORTANT:** All treatment tables MUST include an **Indication** column. This displays as a teal pill icon (💊) in the clinical tool on hover, helping clinicians understand why this treatment is being recommended for this condition.
+**IMPORTANT:** All treatment tables use STANDARDIZED columns with **Route** and **Indication** for every medication. This enables:
+- Order sentence generation (e.g., "Baclofen 5 mg PO TID")
+- Teal pill icon (💊) on hover showing why this treatment is recommended
+- Consistent parsing for the clinical tool
+
+### Standard Treatment Table Format (ALL Sections)
+
+```
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+```
+
+**Column Definitions:**
+- **Treatment:** Drug name (generic preferred; include brand if commonly used)
+- **Route:** PO, IV, IM, SC, PR, SL, INH, TOP, IT (intrathecal), or combination
+- **Indication:** Why this drug is used for this condition (displays as 💊 icon)
+- **Dosing:** Structured format (see Dosing Requirements below)
+- **Contraindications:** Safety warnings (displays as ⚠️ icon)
+- **Monitoring:** Required labs, vitals, or clinical monitoring (displays as 📊 icon)
+- **ED/HOSP/OPD/ICU:** Priority in each setting (STAT, URGENT, ROUTINE, EXT, -)
 
 ### 3A. Acute/Emergent
 
-| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ### 3B. Symptomatic Treatments
 
-| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ### 3C. Second-line/Refractory
 
-| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ### 3D. Disease-Modifying or Chronic Therapies (if applicable)
 
-| Treatment | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ## Treatment Section Guidance
 
 ### CRITICAL: Individual Drug Rows
 
-**Every medication must be listed on its own row.** Do NOT group drugs together (e.g., "SSRIs" or "beta-blockers"). Each drug needs complete prescribing information.
+**Every medication must be listed on its own row.** Do NOT group drugs together (e.g., "SSRIs" or "beta-blockers"). Each drug needs complete prescribing information with the standardized column format including Route.
 
 Ã¢ÂÅ’ **Wrong:**
 ```
@@ -132,16 +150,61 @@ SECTION A: ACTION ITEMS
 
 ### Dosing Requirements
 
-Every drug row must include:
+**STRUCTURED DOSING FORMAT:** Use pipe-delimited fields to enable order sentence generation:
 
+```
+[standard_dose] | [route] | [frequency] | [full_instructions]
+```
+
+**Examples:**
+```
+5 mg | PO | TID | Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day
+1000 mg | IV | daily x 5 days | 1000 mg IV daily for 3-5 days; infuse over 1 hour
+4 mg | IV | push PRN | 4 mg IV push over 2 min; may repeat x1 in 5 min; max 8 mg
+0.9 mg/kg | IV | once | 0.9 mg/kg IV (max 90 mg); 10% bolus, 90% over 60 min
+```
+
+**Field Definitions:**
+| Field | Purpose | Examples |
+|-------|---------|----------|
+| standard_dose | The typical starting/standard dose | "5 mg", "1000 mg", "0.9 mg/kg", "300-600 mg" |
+| route | Administration route | "PO", "IV", "IM", "SC", "SL", "PR", "INH", "TOP" |
+| frequency | How often given | "TID", "BID", "daily", "q12h", "once", "PRN", "q6h PRN" |
+| full_instructions | Complete dosing guidance | Include start dose, titration, max dose, special instructions |
+
+**Order Sentence Generation:**
+The clinical tool will generate clickable order sentences from the first three fields:
+- `5 mg | PO | TID | ...` → "Baclofen 5 mg PO TID"
+- `1000 mg | IV | daily x 5 days | ...` → "Methylprednisolone 1000 mg IV daily x 5 days"
+
+**Full Instructions Must Include:**
 | Element | Example |
 |---------|---------|
 | Starting dose | "Start 5 mg TID" or "Start 300 mg qHS" |
-| Titration schedule | "increase by 5 mg/dose every 3 days" or "increase by 300 mg every 1-3 days" |
+| Titration schedule | "titrate by 5 mg/dose q3d" or "increase by 300 mg q1-3d" |
 | Target dose (if applicable) | "target 900-1800 mg TID" |
 | Maximum dose | "max 80 mg/day" or "max 3600 mg/day" |
-| Frequency | "BID", "TID", "once daily", "every other day" |
 | Special instructions | "take with food", "avoid afternoon dosing", "exactly 12 hours apart" |
+
+**PRN Medications:**
+Include PRN indication in frequency field:
+```
+4 mg | IV | push PRN seizure | 4 mg IV push; may repeat x1 in 5 min; max 8 mg
+10 mg | PO | q6h PRN pain | 10 mg PO q6h as needed for pain; max 40 mg/day
+```
+
+**Loading + Maintenance Doses:**
+Use "load, then" pattern:
+```
+1000 mg | IV | load, then 500 mg q12h | Load 1000 mg IV, then 500 mg IV q12h; adjust for renal function
+```
+
+**Weight-Based Dosing:**
+Include mg/kg in standard_dose:
+```
+0.15 mg/kg | IV | push | 0.15 mg/kg IV (max 10 mg); repeat q5min PRN; max 0.3 mg/kg total
+20 mg/kg | IV | load | 20 mg/kg IV load (max 1500 mg); infuse at 50 mg/min
+```
 
 ### Symptomatic Treatment Categories
 
@@ -781,6 +844,16 @@ For each item in JSON, include ALL applicable metadata fields:
 | Missing ICU-specific treatments | Incomplete critical care coverage | Review all 3E-3G subsections |
 
 ## Change Log
+
+**v3.0 (January 24, 2026)** - MAJOR: Clickable Medication Dosing
+- **Standardized ALL treatment tables** to same column order: Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU
+- **Added Route column to ALL sections** (3A, 3B, 3C) - previously only in 3D
+- **Introduced structured dosing format**: `dose | route | frequency | full_instructions`
+- This enables order sentence generation: clicking dosing badge copies "Baclofen 5 mg PO TID"
+- Added detailed Dosing Requirements with examples for:
+  - Standard dosing, PRN medications, loading + maintenance, weight-based dosing
+- Updated examples throughout to use new format
+- See docs/ROADMAP.md for full implementation plan
 
 **v2.6 (January 19, 2026)**
 - **Added JSON Parity Requirement section** - CRITICAL update requiring JSON to match markdown completely
