@@ -272,41 +272,41 @@ SECTION A: ACTION ITEMS
 
 ### 4A. Referrals & Consults
 
-| Recommendation | Indication | ED | HOSP | OPD | ICU |
-|----------------|------------|:--:|:----:|:---:|:---:|
-| Neurology consult | All suspected HSV encephalitis | STAT | STAT | — | STAT |
-| Infectious disease consult | Diagnostic uncertainty, atypical course | URGENT | URGENT | — | URGENT |
-| Critical care consult | Altered mental status, respiratory failure, elevated ICP | STAT | STAT | — | STAT |
-| Neurosurgery consult | Elevated ICP, herniation, biopsy consideration | — | URGENT | — | STAT |
-| Epilepsy/EEG consult | Refractory seizures, cEEG interpretation | — | URGENT | — | STAT |
-| Physical therapy | Mobility, fall prevention | — | ROUTINE | — | ROUTINE |
-| Occupational therapy | ADL assessment, cognitive rehabilitation | — | ROUTINE | — | ROUTINE |
-| Speech therapy | Swallowing evaluation, aphasia therapy | — | URGENT | — | URGENT |
-| Neuropsychology | Cognitive assessment (post-acute) | — | — | ROUTINE | — |
-| Social work | Discharge planning, support resources | — | ROUTINE | — | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Neurology consult for diagnosis confirmation, antiviral guidance, and seizure management | STAT | STAT | — | STAT |
+| Infectious disease consult for atypical course, treatment failure, or diagnostic uncertainty | URGENT | URGENT | — | URGENT |
+| Critical care consult for ICU admission given altered mental status, respiratory failure, or elevated ICP | STAT | STAT | — | STAT |
+| Neurosurgery consult for elevated ICP management, decompressive surgery, or brain biopsy consideration | — | URGENT | — | STAT |
+| Epilepsy consult for refractory seizures and continuous EEG monitoring interpretation | — | URGENT | — | STAT |
+| Physical therapy for mobility assessment and fall prevention given weakness and cognitive impairment | — | ROUTINE | — | ROUTINE |
+| Occupational therapy for ADL assessment and early cognitive rehabilitation planning | — | ROUTINE | — | ROUTINE |
+| Speech therapy for swallow evaluation given aspiration risk and aphasia therapy for temporal lobe involvement | — | URGENT | — | URGENT |
+| Neuropsychology for formal cognitive assessment after acute illness to guide rehabilitation | — | — | ROUTINE | — |
+| Social work for discharge planning and caregiver support given potential for significant disability | — | ROUTINE | — | ROUTINE |
 
 ### 4B. Patient Instructions
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
-| Return immediately for worsening headache, confusion, seizures | STAT | — | STAT |
-| Complete full 14-21 day acyclovir course | — | STAT | STAT |
-| Seizure precautions (no driving, heights, operating machinery) | — | STAT | STAT |
-| Report any new neurological symptoms weeks after discharge | — | ROUTINE | ROUTINE |
-| Neurology follow-up in 2-4 weeks | — | ROUTINE | ROUTINE |
-| Cognitive rehabilitation may be needed | — | ROUTINE | ROUTINE |
-| Support resources (Encephalitis Society: www.encephalitis.info) | — | ROUTINE | ROUTINE |
+| Return immediately if worsening headache, confusion, or seizures develop (may indicate relapse or post-HSV autoimmune encephalitis) | STAT | — | STAT |
+| Complete full 14-21 day acyclovir course to ensure viral eradication and prevent relapse | — | STAT | STAT |
+| Follow seizure precautions including no driving, heights, or operating machinery due to high seizure risk | — | STAT | STAT |
+| Report any new neurological symptoms weeks after discharge as post-HSV autoimmune encephalitis can occur 2-6 weeks later | — | ROUTINE | ROUTINE |
+| Attend neurology follow-up in 2-4 weeks to assess recovery and screen for delayed complications | — | ROUTINE | ROUTINE |
+| Expect that cognitive rehabilitation may be needed as memory and behavioral deficits are common after HSVE | — | ROUTINE | ROUTINE |
+| Contact Encephalitis Society (www.encephalitis.info) for patient support and educational resources | — | ROUTINE | ROUTINE |
 
 ### 4C. Lifestyle & Prevention
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
-| Fall precautions due to weakness, cognitive impairment | STAT | STAT | STAT |
-| Aspiration precautions if bulbar involvement | STAT | STAT | — |
-| Adequate hydration to prevent acyclovir nephrotoxicity | STAT | STAT | — |
-| Seizure safety: no swimming alone, shower vs bath | — | ROUTINE | ROUTINE |
-| Cognitive pacing and rest | — | ROUTINE | ROUTINE |
-| No driving until cleared by neurology | — | STAT | STAT |
+| Use fall precautions including walker and supervision due to weakness and cognitive impairment | STAT | STAT | STAT |
+| Aspiration precautions including thickened liquids and upright positioning if bulbar involvement present | STAT | STAT | — |
+| Maintain adequate hydration (2-3 L/day) to prevent acyclovir-induced nephrotoxicity | STAT | STAT | — |
+| Follow seizure safety including no swimming alone and showers instead of baths due to ongoing seizure risk | — | ROUTINE | ROUTINE |
+| Use cognitive pacing with scheduled rest periods to manage post-encephalitis fatigue | — | ROUTINE | ROUTINE |
+| Do not drive until cleared by neurology due to seizure risk and potential cognitive impairment | — | STAT | STAT |
 
 ---
 
