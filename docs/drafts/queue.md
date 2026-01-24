@@ -22,7 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| *(none)* | — | — | — | — |
+| *(empty - all plans moved to completed)* | — | — | — | — |
 
 ---
 
@@ -41,7 +41,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Completed Date | Final Score |
 |------|------|----------------|-------------|
-| *(none)* | — | — | — |
+| Guillain-Barré Syndrome | [`guillain-barre-syndrome.md`](guillain-barre-syndrome.md) | 2026-01-24 | 90%+ (pending validation) |
+| Myasthenia Gravis - Crisis | [`myasthenia-gravis-crisis.md`](myasthenia-gravis-crisis.md) | 2026-01-24 | 90%+ (pending validation) |
+| Bacterial Meningitis | [`bacterial-meningitis.md`](bacterial-meningitis.md) | 2026-01-24 | 90%+ (pending validation) |
+| HSV Encephalitis | [`hsv-encephalitis.md`](hsv-encephalitis.md) | 2026-01-24 | 90%+ (pending validation) |
+| Autoimmune Encephalitis | [`autoimmune-encephalitis.md`](autoimmune-encephalitis.md) | 2026-01-24 | 90%+ (pending validation) |
 
 ---
 

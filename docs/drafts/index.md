@@ -23,7 +23,11 @@ These clinical plans are pending physician review and approval. Please review ea
 
 | Plan | Category | Pipeline Status | Last Updated |
 |------|----------|-----------------|--------------|
-| *(none)* | — | — | — |
+| [Guillain-Barré Syndrome](guillain-barre-syndrome.md) | Neuromuscular | :material-file-document-edit: Needs Review | 2026-01-24 |
+| [Myasthenia Gravis - Crisis](myasthenia-gravis-crisis.md) | Neuromuscular | :material-file-document-edit: Needs Review | 2026-01-24 |
+| [Bacterial Meningitis](bacterial-meningitis.md) | CNS Infections | :material-file-document-edit: Needs Review | 2026-01-24 |
+| [HSV Encephalitis](hsv-encephalitis.md) | CNS Infections | :material-file-document-edit: Needs Review | 2026-01-24 |
+| [Autoimmune Encephalitis](autoimmune-encephalitis.md) | Autoimmune/Inflammatory | :material-file-document-edit: Needs Review | 2026-01-24 |
 
 ---
 
