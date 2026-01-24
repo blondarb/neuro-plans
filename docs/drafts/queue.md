@@ -22,7 +22,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| *(none)* | — | — | — | — |
+| Guillain-Barré Syndrome | [`guillain-barre-syndrome.md`](guillain-barre-syndrome.md) | `in_progress` | IK18R | 2026-01-24 |
+| Myasthenia Gravis - Crisis | [`myasthenia-gravis-crisis.md`](myasthenia-gravis-crisis.md) | `in_progress` | IK18R | 2026-01-24 |
+| Bacterial Meningitis | [`bacterial-meningitis.md`](bacterial-meningitis.md) | `in_progress` | IK18R | 2026-01-24 |
+| HSV Encephalitis | [`hsv-encephalitis.md`](hsv-encephalitis.md) | `in_progress` | IK18R | 2026-01-24 |
+| Autoimmune Encephalitis | [`autoimmune-encephalitis.md`](autoimmune-encephalitis.md) | `in_progress` | IK18R | 2026-01-24 |
 
 ---
 
