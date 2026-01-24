@@ -214,22 +214,22 @@ SECTION A: ACTION ITEMS
 
 ### 4A. Referrals & Consults
 
-| Recommendation | Indication | ED | HOSP | OPD | ICU |
-|----------------|------------|:--:|:----:|:---:|:---:|
-| Stroke neurology consult | All acute ischemic stroke | STAT | STAT | ROUTINE | STAT |
-| Interventional neuroradiology/neuroendovascular | LVO identified; thrombectomy candidate | STAT | STAT | - | STAT |
-| Neurosurgery consult | Malignant edema; decompressive craniectomy candidate | URGENT | URGENT | - | STAT |
-| Cardiology consult | AF management, PFO evaluation, cardiac source workup | - | ROUTINE | ROUTINE | ROUTINE |
-| Vascular surgery consult | Symptomatic carotid stenosis; CEA candidate | - | ROUTINE | ROUTINE | - |
-| Speech-language pathology | Swallow evaluation; aphasia therapy | - | STAT | ROUTINE | ROUTINE |
-| Physical therapy | Mobility, gait, balance | - | ROUTINE | ROUTINE | ROUTINE |
-| Occupational therapy | ADLs, upper extremity function | - | ROUTINE | ROUTINE | ROUTINE |
-| Rehabilitation medicine (PM&R) | Inpatient rehabilitation placement | - | ROUTINE | ROUTINE | - |
-| Social work | Discharge planning, community resources | - | ROUTINE | ROUTINE | - |
-| Case management | Insurance authorization, rehab placement | - | ROUTINE | ROUTINE | - |
-| Palliative care | Large stroke with poor prognosis; goals of care | - | ROUTINE | - | ROUTINE |
-| Smoking cessation counseling | All smokers | - | ROUTINE | ROUTINE | - |
-| Nutrition/Dietitian | Dysphagia diet, heart-healthy diet education | - | ROUTINE | ROUTINE | - |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Stroke neurology consult for acute stroke management, secondary prevention, and prognosis discussion | STAT | STAT | ROUTINE | STAT |
+| Interventional neuroradiology for thrombectomy evaluation if large vessel occlusion identified on imaging | STAT | STAT | — | STAT |
+| Neurosurgery consult for decompressive craniectomy evaluation if malignant edema developing | URGENT | URGENT | — | STAT |
+| Cardiology for AF management, PFO evaluation, or cardiac source workup given embolic pattern | — | ROUTINE | ROUTINE | ROUTINE |
+| Vascular surgery for carotid endarterectomy evaluation if symptomatic high-grade carotid stenosis | — | ROUTINE | ROUTINE | — |
+| Speech-language pathology for swallow evaluation before oral intake and aphasia therapy if language deficits | — | STAT | ROUTINE | ROUTINE |
+| Physical therapy for mobility, gait, and balance training given motor deficits | — | ROUTINE | ROUTINE | ROUTINE |
+| Occupational therapy for ADL training and upper extremity function rehabilitation | — | ROUTINE | ROUTINE | ROUTINE |
+| Rehabilitation medicine (PM&R) for inpatient rehabilitation placement assessment if significant deficits | — | ROUTINE | ROUTINE | — |
+| Social work for discharge planning, community resources, and family support | — | ROUTINE | ROUTINE | — |
+| Case management for insurance authorization and rehabilitation facility placement coordination | — | ROUTINE | ROUTINE | — |
+| Palliative care for goals of care discussion if large stroke with poor prognosis | — | ROUTINE | — | ROUTINE |
+| Smoking cessation counseling for all current smokers as smoking is a major modifiable stroke risk factor | — | ROUTINE | ROUTINE | — |
+| Nutrition/Dietitian for dysphagia diet modification and heart-healthy diet education for secondary prevention | — | ROUTINE | ROUTINE | — |
 
 ### 4B. Patient Instructions
 

@@ -218,23 +218,23 @@ SECTION A: ACTION ITEMS
 
 ### 4A. Referrals & Consults
 
-| Recommendation | Indication | ED | HOSP | OPD | ICU |
-|----------------|------------|:--:|:----:|:---:|:---:|
-| Neurology consult | All new onset seizures for evaluation and management | URGENT | URGENT | ROUTINE | URGENT |
-| Epilepsy specialist referral | Diagnostic uncertainty, refractory seizures, surgical candidacy | — | ROUTINE | ROUTINE | — |
-| EEG technologist/neurodiagnostics | EEG scheduling; continuous EEG if indicated | URGENT | URGENT | ROUTINE | URGENT |
-| Neurosurgery consult | Structural lesion requiring intervention (tumor, AVM, SDH) | — | URGENT | EXT | URGENT |
-| Medical toxicology consult | Suspected drug/toxin-induced seizure | URGENT | ROUTINE | — | URGENT |
-| Infectious disease consult | CNS infection confirmed or suspected | — | URGENT | — | URGENT |
-| Oncology consult | Brain tumor identified | — | ROUTINE | ROUTINE | — |
-| Psychiatry consult | Depression, anxiety post-diagnosis; psychogenic non-epileptic spells suspected | — | ROUTINE | ROUTINE | — |
-| Social work consult | Driving restrictions impact, employment concerns, insurance navigation | — | ROUTINE | ROUTINE | — |
-| Occupational therapy | Work safety evaluation, activity modification | — | ROUTINE | ROUTINE | — |
-| Physical therapy | If post-ictal weakness, falls, injury from seizure | — | ROUTINE | ROUTINE | — |
-| Neuropsychology referral | Cognitive complaints, pre-surgical evaluation | — | — | ROUTINE | — |
-| Women's health/OB-GYN | Contraception counseling (ASM interactions), pregnancy planning | — | — | ROUTINE | — |
-| Epilepsy monitoring unit (EMU) admission | Characterize seizure type, video-EEG monitoring, pre-surgical evaluation | — | EXT | EXT | — |
-| Driving evaluation/rehabilitation | Return to driving assessment when eligible | — | — | EXT | — |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Neurology consult for seizure classification, ASM selection, and driving restriction counseling | URGENT | URGENT | ROUTINE | URGENT |
+| Epilepsy specialist referral for diagnostic uncertainty, refractory seizures, or surgical candidacy evaluation | — | ROUTINE | ROUTINE | — |
+| EEG technologist for routine or continuous EEG to characterize seizure type and exclude subclinical activity | URGENT | URGENT | ROUTINE | URGENT |
+| Neurosurgery consult for structural lesion requiring intervention (tumor, AVM, subdural hematoma) | — | URGENT | EXT | URGENT |
+| Medical toxicology consult for suspected drug or toxin-induced seizure to guide management | URGENT | ROUTINE | — | URGENT |
+| Infectious disease consult for CNS infection evaluation and antibiotic guidance | — | URGENT | — | URGENT |
+| Oncology consult for brain tumor identified on imaging to coordinate treatment planning | — | ROUTINE | ROUTINE | — |
+| Psychiatry consult for depression/anxiety post-diagnosis or if psychogenic non-epileptic spells suspected | — | ROUTINE | ROUTINE | — |
+| Social work for driving restriction counseling, employment concerns, and insurance navigation | — | ROUTINE | ROUTINE | — |
+| Occupational therapy for work safety evaluation and activity modification given seizure risk | — | ROUTINE | ROUTINE | — |
+| Physical therapy for post-ictal weakness, falls, or injury from seizure requiring rehabilitation | — | ROUTINE | ROUTINE | — |
+| Neuropsychology for cognitive complaints or pre-surgical evaluation if surgery being considered | — | — | ROUTINE | — |
+| Women's health/OB-GYN for contraception counseling given ASM interactions with hormonal contraception | — | — | ROUTINE | — |
+| Epilepsy monitoring unit admission for video-EEG to characterize seizure type or pre-surgical evaluation | — | EXT | EXT | — |
+| Driving evaluation/rehabilitation when eligible per state guidelines after seizure-free interval | — | — | EXT | — |
 
 ### 4B. Patient Instructions
 

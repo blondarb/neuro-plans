@@ -241,21 +241,21 @@ SECTION A: ACTION ITEMS
 
 ### 4A. Referrals & Consults
 
-| Recommendation | ED | HOSP | OPD | ICU | Indication |
-|----------------|:--:|:----:|:---:|:---:|------------|
-| MS specialist/Neuroimmunology referral | URGENT | URGENT | ROUTINE | URGENT | All new MS diagnoses for DMT discussion |
-| Neuro-ophthalmology referral | - | ROUTINE | ROUTINE | - | Optic neuritis, visual symptoms, OCT baseline |
-| Physical therapy consult for gait and balance | - | ROUTINE | ROUTINE | ROUTINE | Gait dysfunction, lower extremity weakness, falls |
-| Occupational therapy consult for ADL assessment | - | ROUTINE | ROUTINE | - | Upper extremity dysfunction, ADL impairment, energy conservation |
-| Speech therapy for swallow evaluation | - | URGENT | ROUTINE | URGENT | Brainstem involvement, dysphagia, dysarthria |
-| Speech therapy for cognitive rehabilitation | - | - | ROUTINE | - | Cognitive complaints affecting function |
-| Urology referral for bladder dysfunction | - | - | ROUTINE | - | Urgency, frequency, retention, recurrent UTI |
-| Psychiatry/Psychology referral | - | ROUTINE | ROUTINE | - | Depression, anxiety, adjustment to diagnosis |
-| Social work consult | - | ROUTINE | ROUTINE | - | Insurance navigation, disability questions, support resources |
-| Rehabilitation medicine consult | - | ROUTINE | ROUTINE | - | Significant functional impairment, comprehensive rehab needs |
-| Infusion center coordination | - | ROUTINE | ROUTINE | - | PLEX scheduling; future DMT infusion planning |
-| Ophthalmology referral (pre-DMT) | - | - | ROUTINE | - | Baseline macular exam before S1P modulator initiation |
-| Genetic counseling | - | - | EXT | - | If atypical features, family history concerns |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| MS specialist/Neuroimmunology referral for DMT discussion and long-term management planning | URGENT | URGENT | ROUTINE | URGENT |
+| Neuro-ophthalmology for optic neuritis evaluation, OCT baseline, and visual symptom management | — | ROUTINE | ROUTINE | — |
+| Physical therapy for gait training and balance exercises given lower extremity weakness or falls | — | ROUTINE | ROUTINE | ROUTINE |
+| Occupational therapy for ADL assessment and energy conservation strategies given upper extremity dysfunction | — | ROUTINE | ROUTINE | — |
+| Speech therapy for swallow evaluation given brainstem involvement or dysphagia/dysarthria | — | URGENT | ROUTINE | URGENT |
+| Speech therapy for cognitive rehabilitation if cognitive complaints are affecting daily function | — | — | ROUTINE | — |
+| Urology referral for bladder dysfunction including urgency, frequency, retention, or recurrent UTI | — | — | ROUTINE | — |
+| Psychiatry/Psychology for depression, anxiety, or adjustment to new MS diagnosis | — | ROUTINE | ROUTINE | — |
+| Social work for insurance navigation, disability questions, and MS support resources | — | ROUTINE | ROUTINE | — |
+| Rehabilitation medicine for comprehensive rehab planning given significant functional impairment | — | ROUTINE | ROUTINE | — |
+| Infusion center coordination for PLEX scheduling or future DMT infusion planning | — | ROUTINE | ROUTINE | — |
+| Ophthalmology for baseline macular exam before S1P modulator initiation (fingolimod, siponimod) | — | — | ROUTINE | — |
+| Genetic counseling if atypical features or family history concerns for mimics | — | — | EXT | — |
 
 ### 4B. Patient Instructions
 
