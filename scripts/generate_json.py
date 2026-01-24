@@ -593,15 +593,14 @@ class MarkdownParser:
     def _parse_structured_dosing(self, dosing_text: str, item_name: str, route: str = None) -> dict:
         """Parse structured dosing format into separate fields.
 
-        Input format: "dose | route | frequency | full_instructions"
-        Example: "5 mg | PO | TID | Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day"
+        Single dose format: "dose freq :: route :: :: full_instructions"
+        Multi-dose format: "dose1 freq1; dose2 freq2 :: route :: :: full_instructions"
 
         Returns dict with:
-        - dose: "5 mg"
+        - doseOptions: array of {dose, frequency, orderSentence} for each option
         - route: "PO"
-        - frequency: "TID"
         - instructions: "Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day"
-        - orderSentence: "Baclofen 5 mg PO TID"
+        - orderSentence: first/default order sentence for backwards compatibility
         """
         if not dosing_text:
             return None
@@ -610,34 +609,47 @@ class MarkdownParser:
         # Using :: instead of | because | conflicts with markdown table syntax
         parts = [p.strip() for p in dosing_text.split('::')]
 
-        if len(parts) >= 4:
+        if len(parts) >= 3:
             # New structured format
-            dose = parts[0]
+            dose_field = parts[0]
             med_route = parts[1]
-            frequency = parts[2]
+            # parts[2] is empty/reserved
             instructions = parts[3] if len(parts) > 3 else dosing_text
 
-            # Generate order sentence
-            order_sentence = f"{item_name} {dose} {med_route} {frequency}"
+            # Parse dose options (may be single or multiple separated by semicolons)
+            dose_options = []
+            dose_items = [d.strip() for d in dose_field.split(';')]
 
-            return {
-                'dose': dose,
-                'route': med_route,
-                'frequency': frequency,
-                'instructions': instructions,
-                'orderSentence': order_sentence
-            }
-        else:
-            # Legacy format (unstructured text) - keep as-is for backwards compatibility
-            # Try to generate a basic order sentence if route is available
-            order_sentence = None
-            if route:
-                order_sentence = f"{item_name} - {route} - see dosing"
+            for dose_item in dose_items:
+                if not dose_item:
+                    continue
+                # Generate order sentence for this option
+                order_sentence = f"{item_name} {dose_item} {med_route}".strip()
+                # Clean up any double spaces
+                order_sentence = ' '.join(order_sentence.split())
+                dose_options.append({
+                    'text': dose_item,
+                    'orderSentence': order_sentence
+                })
 
-            return {
-                'instructions': dosing_text,
-                'orderSentence': order_sentence
-            }
+            if dose_options:
+                return {
+                    'doseOptions': dose_options,
+                    'route': med_route,
+                    'instructions': instructions,
+                    'orderSentence': dose_options[0]['orderSentence']  # Default to first option
+                }
+
+        # Legacy format (unstructured text) - keep as-is for backwards compatibility
+        # Try to generate a basic order sentence if route is available
+        order_sentence = None
+        if route:
+            order_sentence = f"{item_name} - {route} - see dosing"
+
+        return {
+            'instructions': dosing_text,
+            'orderSentence': order_sentence
+        }
 
 
 class ParityChecker:

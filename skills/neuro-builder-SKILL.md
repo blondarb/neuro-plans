@@ -152,32 +152,48 @@ SECTION A: ACTION ITEMS
 
 **STRUCTURED DOSING FORMAT:** Use double-colon delimited fields to enable order sentence generation:
 
+**Single Dose Format:**
 ```
-[standard_dose] :: [route] :: [frequency] :: [full_instructions]
+[dose] [frequency] :: [route] :: :: [full_instructions]
+```
+
+**Multiple Dose Format (semicolon-separated options):**
+```
+[dose1 freq1]; [dose2 freq2]; [dose3 freq3] :: [route] :: :: [full_instructions]
 ```
 
 **Note:** We use `::` instead of `|` because `|` conflicts with markdown table syntax.
 
-**Examples:**
+**Single Dose Examples:**
 ```
-5 mg :: PO :: TID :: Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day
-1000 mg :: IV :: daily x 5 days :: 1000 mg IV daily for 3-5 days; infuse over 1 hour
-4 mg :: IV :: push PRN :: 4 mg IV push over 2 min; may repeat x1 in 5 min; max 8 mg
-0.9 mg/kg :: IV :: once :: 0.9 mg/kg IV (max 90 mg); 10% bolus, 90% over 60 min
+5 mg TID :: PO :: :: Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day
+1000 mg daily x 5 days :: IV :: :: 1000 mg IV daily for 3-5 days; infuse over 1 hour
+4 mg push PRN seizure :: IV :: :: 4 mg IV push over 2 min; may repeat x1 in 5 min; max 8 mg
 ```
+
+**Multiple Dose Examples (PREFERRED for medications with standard titration):**
+```
+300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day
+75 mg BID; 150 mg BID; 300 mg BID :: PO :: :: Start 75 mg BID; may increase q1wk; max 600 mg/day
+25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 25 mg qHS; titrate q1wk; max 150 mg qHS
+```
+
+Each semicolon-separated option becomes a selectable order sentence in the clinical tool.
 
 **Field Definitions:**
 | Field | Purpose | Examples |
 |-------|---------|----------|
-| standard_dose | The typical starting/standard dose | "5 mg", "1000 mg", "0.9 mg/kg", "300-600 mg" |
+| dose_options | One or more dose+frequency pairs | "5 mg TID" or "300 mg qHS; 300 mg TID; 600 mg TID" |
 | route | Administration route | "PO", "IV", "IM", "SC", "SL", "PR", "INH", "TOP" |
-| frequency | How often given | "TID", "BID", "daily", "q12h", "once", "PRN", "q6h PRN" |
+| (empty) | Reserved field, leave empty | :: |
 | full_instructions | Complete dosing guidance | Include start dose, titration, max dose, special instructions |
 
 **Order Sentence Generation:**
-The clinical tool will generate clickable order sentences from the first three fields:
-- `5 mg :: PO :: TID :: ...` → "Baclofen 5 mg PO TID"
-- `1000 mg :: IV :: daily x 5 days :: ...` → "Methylprednisolone 1000 mg IV daily x 5 days"
+The clinical tool generates clickable order sentences from dose options:
+- Single: `5 mg TID :: PO :: :: ...` → "Baclofen 5 mg PO TID"
+- Multiple: `300 mg qHS; 300 mg TID :: PO :: :: ...` → Dropdown with:
+  - "Gabapentin 300 mg PO qHS"
+  - "Gabapentin 300 mg PO TID"
 
 **Full Instructions Must Include:**
 | Element | Example |
@@ -189,23 +205,24 @@ The clinical tool will generate clickable order sentences from the first three f
 | Special instructions | "take with food", "avoid afternoon dosing", "exactly 12 hours apart" |
 
 **PRN Medications:**
-Include PRN indication in frequency field:
+Include PRN indication with each dose option:
 ```
-4 mg :: IV :: push PRN seizure :: 4 mg IV push; may repeat x1 in 5 min; max 8 mg
-10 mg :: PO :: q6h PRN pain :: 10 mg PO q6h as needed for pain; max 40 mg/day
+4 mg IV push PRN seizure; 2 mg IV push PRN seizure :: IV :: :: 4 mg IV push; may repeat x1 in 5 min; max 8 mg
+10 mg q6h PRN; 20 mg q6h PRN :: PO :: :: 10-20 mg PO q6h as needed for pain; max 80 mg/day
 ```
 
 **Loading + Maintenance Doses:**
-Use "load, then" pattern:
+Use separate dose options for load and maintenance:
 ```
-1000 mg :: IV :: load, then 500 mg q12h :: Load 1000 mg IV, then 500 mg IV q12h; adjust for renal function
+1000 mg IV load; 500 mg IV q12h :: IV :: :: Load 1000 mg IV, then 500 mg IV q12h; adjust for renal function
+20 mg/kg IV load; 5 mg/kg IV q12h :: IV :: :: 20 mg/kg IV load (max 1500 mg), then 5 mg/kg IV q12h
 ```
 
 **Weight-Based Dosing:**
-Include mg/kg in standard_dose:
+Include mg/kg with calculated examples:
 ```
-0.15 mg/kg :: IV :: push :: 0.15 mg/kg IV (max 10 mg); repeat q5min PRN; max 0.3 mg/kg total
-20 mg/kg :: IV :: load :: 20 mg/kg IV load (max 1500 mg); infuse at 50 mg/min
+0.15 mg/kg IV push; 0.1 mg/kg IV push :: IV :: :: 0.1-0.15 mg/kg IV (max 10 mg); repeat q5min PRN
+4 mg IV; 0.1 mg/kg IV :: IV :: :: 4 mg or 0.1 mg/kg IV push; max 10 mg; for patients >40 kg use fixed dose
 ```
 
 ### Symptomatic Treatment Categories
@@ -847,10 +864,18 @@ For each item in JSON, include ALL applicable metadata fields:
 
 ## Change Log
 
+**v3.1 (January 24, 2026)** - Multiple Dose Options
+- **Added multi-dose support**: Semicolon-separated dose options in structured dosing
+- **New format**: `dose1 freq1; dose2 freq2; dose3 freq3 :: route :: :: full_instructions`
+- Example: `300 mg qHS; 300 mg TID; 600 mg TID :: PO :: :: Start 300 mg qHS; titrate...`
+- Each dose option generates a separate order sentence for dropdown selection
+- Updated all dosing examples (PRN, loading/maintenance, weight-based)
+- Clinical tool shows dropdown when multiple options available
+
 **v3.0 (January 24, 2026)** - MAJOR: Clickable Medication Dosing
 - **Standardized ALL treatment tables** to same column order: Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU
 - **Added Route column to ALL sections** (3A, 3B, 3C) - previously only in 3D
-- **Introduced structured dosing format**: `dose | route | frequency | full_instructions`
+- **Introduced structured dosing format**: `dose freq :: route :: :: full_instructions`
 - This enables order sentence generation: clicking dosing badge copies "Baclofen 5 mg PO TID"
 - Added detailed Dosing Requirements with examples for:
   - Standard dosing, PRN medications, loading + maintenance, weight-based dosing

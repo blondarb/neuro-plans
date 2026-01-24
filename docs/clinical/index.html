@@ -313,6 +313,52 @@ CHANGELOG:
       background: #bbf7d0;
       color: #166534;
     }
+    .item-dosing-badge.multi-dose::after {
+      content: none; /* Remove clipboard emoji for multi-dose, we show dropdown arrow instead */
+    }
+
+    /* Dosing Dropdown */
+    .dosing-dropdown-container {
+      position: relative;
+      display: inline-block;
+    }
+    .dose-dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 4px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      z-index: 1000;
+      min-width: 250px;
+      max-width: 400px;
+    }
+    .dose-dropdown.show {
+      display: block;
+    }
+    .dose-option {
+      padding: 10px 14px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      border-bottom: 1px solid #f3f4f6;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .dose-option:last-child {
+      border-bottom: none;
+    }
+    .dose-option:hover {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+    .dose-option.copied {
+      background: #bbf7d0;
+      color: #166534;
+    }
 
     /* Info Icons Row - Compact icons with tooltips */
     .item-icons {
@@ -1016,14 +1062,31 @@ CHANGELOG:
           let dosingBadgeHtml = '';
           if (item.dosing) {
             const isStructured = typeof item.dosing === 'object';
+            const doseOptions = isStructured ? item.dosing.doseOptions : null;
+            const hasMultipleDoses = doseOptions && doseOptions.length > 1;
             const orderSentence = isStructured ? item.dosing.orderSentence : null;
             const displayDosing = isStructured ? (item.dosing.orderSentence || item.dosing.instructions) : item.dosing;
             const fullInstructions = isStructured ? item.dosing.instructions : item.dosing;
             const clickableClass = orderSentence ? 'clickable' : '';
-            dosingBadgeHtml = `<span class="item-dosing-badge ${clickableClass}"
-              title="${escapeHtml(fullInstructions)}"
-              data-order-sentence="${orderSentence ? escapeHtml(orderSentence) : ''}"
-              onclick="copyOrderSentence(event, this)">${escapeHtml(displayDosing)}</span>`;
+
+            if (hasMultipleDoses) {
+              // Multiple dose options - show dropdown
+              let optionsHtml = doseOptions.map((opt, idx) =>
+                `<div class="dose-option" data-order-sentence="${escapeHtml(opt.orderSentence)}" onclick="copyDoseOption(event, this)">${escapeHtml(opt.orderSentence)}</div>`
+              ).join('');
+              dosingBadgeHtml = `<div class="dosing-dropdown-container">
+                <span class="item-dosing-badge clickable multi-dose"
+                  title="${escapeHtml(fullInstructions)}"
+                  onclick="toggleDoseDropdown(event, this)">${escapeHtml(displayDosing)} ▼</span>
+                <div class="dose-dropdown">${optionsHtml}</div>
+              </div>`;
+            } else {
+              // Single dose - direct copy on click
+              dosingBadgeHtml = `<span class="item-dosing-badge ${clickableClass}"
+                title="${escapeHtml(fullInstructions)}"
+                data-order-sentence="${orderSentence ? escapeHtml(orderSentence) : ''}"
+                onclick="copyOrderSentence(event, this)">${escapeHtml(displayDosing)}</span>`;
+            }
           }
 
           sectionHtml += `<div class="item ${sel ? 'selected' : ''}" data-id="${itemId}" data-section="${sectionName}" data-subsection="${subsectionName}">
@@ -1187,14 +1250,19 @@ CHANGELOG:
       if (itemData) {
         const name = itemData.item || itemData.name || itemData.treatment || 'Item';
         // Include dosing in the display name for medications
-        // Use order sentence if available (structured dosing), otherwise full dosing text
+        // For structured dosing with order sentence, show order sentence only (it includes drug name)
+        // For legacy dosing, show "Drug — instructions"
         let displayName = name;
         if (itemData.dosing) {
           const isStructured = typeof itemData.dosing === 'object';
-          const dosingText = isStructured
-            ? (itemData.dosing.orderSentence || itemData.dosing.instructions)
-            : itemData.dosing;
-          displayName = `${name} — ${dosingText}`;
+          if (isStructured && itemData.dosing.orderSentence) {
+            // Order sentence already includes drug name, show it directly
+            displayName = itemData.dosing.orderSentence;
+          } else {
+            // Legacy format: show "Drug — dosing instructions"
+            const dosingText = isStructured ? itemData.dosing.instructions : itemData.dosing;
+            displayName = `${name} — ${dosingText}`;
+          }
         }
         selectedItems.set(id, { ...itemData, section, subsection, isCustom, editedName: displayName, originalName: name });
       }
@@ -1305,7 +1373,7 @@ CHANGELOG:
     updateSelectedList();
   });
 
-  // Copy order sentence to clipboard when dosing badge is clicked
+  // Copy order sentence to clipboard when dosing badge is clicked (single dose)
   window.copyOrderSentence = function(event, badge) {
     event.stopPropagation(); // Don't toggle item selection
     const orderSentence = badge.dataset.orderSentence;
@@ -1330,6 +1398,46 @@ CHANGELOG:
       });
     }
   };
+
+  // Toggle dose dropdown for medications with multiple dose options
+  window.toggleDoseDropdown = function(event, badge) {
+    event.stopPropagation();
+    // Close any other open dropdowns
+    document.querySelectorAll('.dose-dropdown.show').forEach(dd => {
+      if (dd !== badge.nextElementSibling) dd.classList.remove('show');
+    });
+    // Toggle this dropdown
+    const dropdown = badge.nextElementSibling;
+    if (dropdown) {
+      dropdown.classList.toggle('show');
+    }
+  };
+
+  // Copy a specific dose option from the dropdown
+  window.copyDoseOption = function(event, option) {
+    event.stopPropagation();
+    const orderSentence = option.dataset.orderSentence;
+    if (orderSentence) {
+      navigator.clipboard.writeText(orderSentence).then(() => {
+        option.classList.add('copied');
+        showToast(`Copied: ${orderSentence}`);
+        setTimeout(() => {
+          option.classList.remove('copied');
+          // Close dropdown after copy
+          option.closest('.dose-dropdown').classList.remove('show');
+        }, 800);
+      }).catch(() => {
+        showToast('Failed to copy');
+      });
+    }
+  };
+
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('.dosing-dropdown-container')) {
+      document.querySelectorAll('.dose-dropdown.show').forEach(dd => dd.classList.remove('show'));
+    }
+  });
 
   function showToast(msg) {
     const existing = document.querySelector('.toast');
