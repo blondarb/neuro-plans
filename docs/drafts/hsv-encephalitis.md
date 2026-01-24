@@ -205,7 +205,7 @@ SECTION A: ACTION ITEMS
 **Acyclovir Duration:**
 - **Standard:** 14 days minimum
 - **Severe disease/immunocompromised:** 21 days
-- **Repeat CSF PCR:** Consider repeat LP near end of treatment; if still positive, extend treatment
+- **Repeat CSF PCR:** NOT routinely recommended. Consider repeat LP near end of treatment only in **select cases**: (1) immunocompromised patients, (2) severe/complicated course, (3) clinical concern for treatment failure or relapse. If PCR still positive, extend treatment.
 
 ### 3B. Empiric Bacterial Coverage (Until Bacterial Ruled Out)
 

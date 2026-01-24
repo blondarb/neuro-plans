@@ -193,10 +193,13 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Prednisone (low-dose start) | PO | Moderate exacerbation | 10 mg daily; 20 mg daily :: PO :: daily :: Start LOW (10-20 mg daily) and increase slowly by 10 mg q5-7d to target 1 mg/kg/day; HIGH-DOSE INITIATION CAN WORSEN MG | Active infection (relative), brittle MG | Glucose, BP, K+; WATCH FOR TRANSIENT WORSENING days 5-10 | — | ROUTINE | — | — |
+| Prednisone (high-dose, post-crisis) | PO | Crisis treated with IVIg/PLEX, improving | 60 mg daily; 1 mg/kg daily :: PO :: daily :: Start 60 mg (or 1 mg/kg) daily AFTER day 3 of IVIg/PLEX if improving; for patients whose crisis is being treated; taper once stable | Active infection (relative) | Glucose, BP, K+; already covered by IVIg/PLEX | — | STAT | — | STAT |
+| Prednisone (low-dose start) | PO | Stable patient, outpatient, new start | 10 mg daily; 20 mg daily :: PO :: daily :: Start LOW (10-20 mg daily) and increase slowly by 10 mg q5-7d to target 1 mg/kg/day; for OUTPATIENT or STABLE inpatients not in crisis; HIGH-DOSE INITIATION CAN WORSEN MG | Active infection (relative), brittle MG without IVIg/PLEX cover | Glucose, BP, K+; WATCH FOR TRANSIENT WORSENING days 5-10 | — | ROUTINE | ROUTINE | — |
 | Methylprednisolone | IV | Severe exacerbation (with IVIg/PLEX cover) | 500 mg daily x 3-5 days; 1000 mg daily x 3-5 days :: IV :: daily x 3-5 days :: 500-1000 mg IV daily x 3-5 days; ONLY with IVIg/PLEX coverage due to risk of transient worsening | Active untreated infection | Glucose, BP, K+, psychiatric effects | — | URGENT | — | URGENT |
 
-**⚠️ STEROID WARNING:** High-dose corticosteroids can cause transient worsening of MG (typically days 5-10). Only initiate high-dose steroids with IVIg or PLEX cover, or in ICU setting with close respiratory monitoring.
+**⚠️ STEROID WARNING:** High-dose corticosteroids can cause transient worsening of MG (typically days 5-10). Two approaches:
+- **Crisis/Post-treatment:** If improving with IVIg/PLEX after day 3, can start prednisone 60 mg (or 1 mg/kg) since already covered
+- **Outpatient/Stable:** Start LOW (10-20 mg) and titrate slowly to avoid worsening in patients not covered by IVIg/PLEX
 
 ### 3E. Medications to AVOID
 
@@ -215,8 +218,8 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Enoxaparin | SC | DVT prophylaxis | 40 mg daily; 30 mg BID :: SC :: daily :: 40 mg SC daily; 30 mg BID if BMI >40; hold if CrCl <30 | Active bleeding, HIT | Platelet count, bleeding | — | STAT | — | STAT |
-| Heparin (UFH) | SC | DVT prophylaxis (renal impairment) | 5000 units q8h; 5000 units q12h :: SC :: q8-12h :: 5000 units SC q8-12h if CrCl <30 | Active bleeding, HIT | Platelet count | — | STAT | — | STAT |
+| Enoxaparin | SC | DVT prophylaxis | 40 mg daily; 30 mg BID :: SC :: daily :: 40 mg SC daily; 30 mg BID if BMI >40; hold if CrCl <30; **HOLD if LP planned within 12 hours** | Active bleeding, HIT, pending LP | Platelet count, bleeding | — | STAT | — | STAT |
+| Heparin (UFH) | SC | DVT prophylaxis (renal impairment) | 5000 units q8h; 5000 units q12h :: SC :: q8-12h :: 5000 units SC q8-12h if CrCl <30; **HOLD if LP planned within 4-6 hours** | Active bleeding, HIT, pending LP | Platelet count | — | STAT | — | STAT |
 | Famotidine | IV/PO | Stress ulcer prophylaxis (if on steroids) | 20 mg BID; 40 mg daily :: IV/PO :: BID :: 20 mg IV/PO BID or 40 mg daily | None significant | None | — | ROUTINE | — | ROUTINE |
 | Insulin (regular) | IV/SC | Steroid-induced hyperglycemia | Sliding scale; basal-bolus :: IV/SC :: per protocol :: Sliding scale or basal-bolus; target glucose <180 mg/dL | Hypoglycemia | Glucose q4-6h | — | ROUTINE | — | STAT |
 | Acetaminophen | PO/IV | Fever, mild pain | 650 mg q6h; 1000 mg q6h :: PO/IV :: q6h :: 650-1000 mg q6h; max 4 g/day | Severe hepatic impairment | LFTs if prolonged | STAT | STAT | — | STAT |

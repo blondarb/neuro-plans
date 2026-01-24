@@ -12233,26 +12233,44 @@
         ],
         "Immunotherapy - First-line": [
           {
-            "item": "IVIg (immune globulin IV)",
+            "item": "IVIg (immune globulin IV) - 5-day protocol",
             "route": "IV",
             "indication": "Primary immunotherapy",
             "dosing": {
               "doseOptions": [
                 {
                   "text": "0.4 g/kg/day x 5 days",
-                  "orderSentence": "IVIg (immune globulin IV) 0.4 g/kg/day x 5 days IV"
-                },
-                {
-                  "text": "2 g/kg over 2-5 days",
-                  "orderSentence": "IVIg (immune globulin IV) 2 g/kg over 2-5 days IV"
+                  "orderSentence": "IVIg (immune globulin IV) - 5-day protocol 0.4 g/kg/day x 5 days IV"
                 }
               ],
               "route": "IV",
               "instructions": "0.4 g/kg/day IV for 5 days (total 2 g/kg); infuse slowly day 1 (start 0.5-1 mL/kg/hr, advance to max 4 mL/kg/hr)",
-              "orderSentence": "IVIg (immune globulin IV) 0.4 g/kg/day x 5 days IV"
+              "orderSentence": "IVIg (immune globulin IV) - 5-day protocol 0.4 g/kg/day x 5 days IV"
             },
             "contraindications": "IgA deficiency (<7 mg/dL) with anti-IgA antibodies; severe renal impairment",
             "monitoring": "Renal function, headache, infusion reactions; pre-medicate with acetaminophen/diphenhydramine",
+            "ED": "—",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
+            "item": "IVIg (immune globulin IV) - 2-day protocol",
+            "route": "IV",
+            "indication": "Primary immunotherapy",
+            "dosing": {
+              "doseOptions": [
+                {
+                  "text": "1 g/kg/day x 2 days",
+                  "orderSentence": "IVIg (immune globulin IV) - 2-day protocol 1 g/kg/day x 2 days IV"
+                }
+              ],
+              "route": "IV",
+              "instructions": "1 g/kg/day IV for 2 days (total 2 g/kg); alternative accelerated protocol; same total dose",
+              "orderSentence": "IVIg (immune globulin IV) - 2-day protocol 1 g/kg/day x 2 days IV"
+            },
+            "contraindications": "IgA deficiency (<7 mg/dL) with anti-IgA antibodies; severe renal impairment",
+            "monitoring": "Renal function, headache, infusion reactions; higher daily dose may increase infusion reactions",
             "ED": "—",
             "HOSP": "STAT",
             "OPD": "—",
@@ -12576,10 +12594,10 @@
                 }
               ],
               "route": "SC",
-              "instructions": "40 mg SC daily (BMI <40) or 30 mg BID (BMI >40); hold if CrCl <30",
+              "instructions": "40 mg SC daily (BMI <40) or 30 mg BID (BMI >40); hold if CrCl <30; **HOLD if LP planned within 12 hours**",
               "orderSentence": "Enoxaparin 40 mg daily SC"
             },
-            "contraindications": "Active bleeding, HIT, CrCl <30 (use UFH)",
+            "contraindications": "Active bleeding, HIT, CrCl <30 (use UFH), pending LP",
             "monitoring": "Platelet count, signs of bleeding",
             "ED": "—",
             "HOSP": "STAT",
@@ -12602,10 +12620,10 @@
                 }
               ],
               "route": "SC",
-              "instructions": "5000 units SC q8-12h if CrCl <30",
+              "instructions": "5000 units SC q8-12h if CrCl <30; **HOLD if LP planned within 4-6 hours**",
               "orderSentence": "Heparin (UFH) 5000 units q8h SC"
             },
-            "contraindications": "Active bleeding, HIT",
+            "contraindications": "Active bleeding, HIT, pending LP",
             "monitoring": "Platelet count, signs of bleeding",
             "ED": "—",
             "HOSP": "STAT",
@@ -13898,9 +13916,35 @@
         ],
         "Corticosteroids (Use with CAUTION)": [
           {
+            "item": "Prednisone (high-dose, post-crisis)",
+            "route": "PO",
+            "indication": "Crisis treated with IVIg/PLEX, improving",
+            "dosing": {
+              "doseOptions": [
+                {
+                  "text": "60 mg daily",
+                  "orderSentence": "Prednisone (high-dose, post-crisis) 60 mg daily PO"
+                },
+                {
+                  "text": "1 mg/kg daily",
+                  "orderSentence": "Prednisone (high-dose, post-crisis) 1 mg/kg daily PO"
+                }
+              ],
+              "route": "PO",
+              "instructions": "Start 60 mg (or 1 mg/kg) daily AFTER day 3 of IVIg/PLEX if improving; for patients whose crisis is being treated; taper once stable",
+              "orderSentence": "Prednisone (high-dose, post-crisis) 60 mg daily PO"
+            },
+            "contraindications": "Active infection (relative)",
+            "monitoring": "Glucose, BP, K+; already covered by IVIg/PLEX",
+            "ED": "—",
+            "HOSP": "STAT",
+            "OPD": "—",
+            "ICU": "STAT"
+          },
+          {
             "item": "Prednisone (low-dose start)",
             "route": "PO",
-            "indication": "Moderate exacerbation",
+            "indication": "Stable patient, outpatient, new start",
             "dosing": {
               "doseOptions": [
                 {
@@ -13913,14 +13957,14 @@
                 }
               ],
               "route": "PO",
-              "instructions": "Start LOW (10-20 mg daily) and increase slowly by 10 mg q5-7d to target 1 mg/kg/day; HIGH-DOSE INITIATION CAN WORSEN MG",
+              "instructions": "Start LOW (10-20 mg daily) and increase slowly by 10 mg q5-7d to target 1 mg/kg/day; for OUTPATIENT or STABLE inpatients not in crisis; HIGH-DOSE INITIATION CAN WORSEN MG",
               "orderSentence": "Prednisone (low-dose start) 10 mg daily PO"
             },
-            "contraindications": "Active infection (relative), brittle MG",
+            "contraindications": "Active infection (relative), brittle MG without IVIg/PLEX cover",
             "monitoring": "Glucose, BP, K+; WATCH FOR TRANSIENT WORSENING days 5-10",
             "ED": "—",
             "HOSP": "ROUTINE",
-            "OPD": "—",
+            "OPD": "ROUTINE",
             "ICU": "—"
           },
           {
@@ -13967,10 +14011,10 @@
                 }
               ],
               "route": "SC",
-              "instructions": "40 mg SC daily; 30 mg BID if BMI >40; hold if CrCl <30",
+              "instructions": "40 mg SC daily; 30 mg BID if BMI >40; hold if CrCl <30; **HOLD if LP planned within 12 hours**",
               "orderSentence": "Enoxaparin 40 mg daily SC"
             },
-            "contraindications": "Active bleeding, HIT",
+            "contraindications": "Active bleeding, HIT, pending LP",
             "monitoring": "Platelet count, bleeding",
             "ED": "—",
             "HOSP": "STAT",
@@ -13993,10 +14037,10 @@
                 }
               ],
               "route": "SC",
-              "instructions": "5000 units SC q8-12h if CrCl <30",
+              "instructions": "5000 units SC q8-12h if CrCl <30; **HOLD if LP planned within 4-6 hours**",
               "orderSentence": "Heparin (UFH) 5000 units q8h SC"
             },
-            "contraindications": "Active bleeding, HIT",
+            "contraindications": "Active bleeding, HIT, pending LP",
             "monitoring": "Platelet count",
             "ED": "—",
             "HOSP": "STAT",
@@ -15045,7 +15089,7 @@
           {
             "item": "Ampicillin",
             "route": "IV",
-            "indication": "Listeria coverage (age >50, immunocompromised, alcoholism)",
+            "indication": "Listeria coverage (age ≥50-60, immunocompromised, alcoholism)",
             "dosing": {
               "doseOptions": [
                 {
@@ -15054,7 +15098,7 @@
                 }
               ],
               "route": "IV",
-              "instructions": "2 g IV q4h; required for Listeria coverage in at-risk patients",
+              "instructions": "2 g IV q4h; required for Listeria coverage in at-risk patients; **NOTE: guidelines vary (≥50 vs >60) - use lower threshold if any additional risk factors**",
               "orderSentence": "Ampicillin 2 g q4h IV"
             },
             "contraindications": "Penicillin allergy (use TMP-SMX)",
@@ -15076,10 +15120,10 @@
                 }
               ],
               "route": "IV",
-              "instructions": "0.15 mg/kg IV (typically 10 mg) q6h x 4 days; give 15-20 min BEFORE or WITH first antibiotic dose",
+              "instructions": "0.15 mg/kg IV (typically 10 mg) q6h x 4 days; give 15-20 min BEFORE or WITH first antibiotic dose; see immunocompromised guidance below",
               "orderSentence": "Dexamethasone 0.15 mg/kg q6h x 4 days IV"
             },
-            "contraindications": "GI bleed (relative), severe immunocompromise",
+            "contraindications": "GI bleed (relative), see immunocompromised guidance",
             "monitoring": "Glucose, GI bleeding",
             "ED": "STAT",
             "HOSP": "STAT",

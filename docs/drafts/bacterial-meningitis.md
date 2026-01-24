@@ -198,18 +198,20 @@ SECTION A: ACTION ITEMS
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Ceftriaxone | IV | Empiric coverage (all ages) | 2 g q12h :: IV :: q12h :: 2 g IV q12h; meningeal dosing required | Severe cephalosporin allergy | Renal function | STAT | STAT | — | STAT |
 | Vancomycin | IV | DRSP coverage (all patients) | 15-20 mg/kg q8-12h; 25-30 mg/kg load :: IV :: q8-12h :: Load 25-30 mg/kg IV, then 15-20 mg/kg q8-12h (target trough 15-20 mcg/mL); adjust for renal function | Renal impairment (adjust dose) | Trough levels, renal function, ototoxicity | STAT | STAT | — | STAT |
-| Ampicillin | IV | Listeria coverage (age >50, immunocompromised, alcoholism) | 2 g q4h :: IV :: q4h :: 2 g IV q4h; required for Listeria coverage in at-risk patients | Penicillin allergy (use TMP-SMX) | Renal function | STAT | STAT | — | STAT |
-| Dexamethasone | IV | Adjunctive therapy (BEFORE/WITH antibiotics) | 0.15 mg/kg q6h x 4 days :: IV :: q6h x 4 days :: 0.15 mg/kg IV (typically 10 mg) q6h x 4 days; give 15-20 min BEFORE or WITH first antibiotic dose | GI bleed (relative), severe immunocompromise | Glucose, GI bleeding | STAT | STAT | — | STAT |
+| Ampicillin | IV | Listeria coverage (age ≥50-60, immunocompromised, alcoholism) | 2 g q4h :: IV :: q4h :: 2 g IV q4h; required for Listeria coverage in at-risk patients; **NOTE: guidelines vary (≥50 vs >60) - use lower threshold if any additional risk factors** | Penicillin allergy (use TMP-SMX) | Renal function | STAT | STAT | — | STAT |
+| Dexamethasone | IV | Adjunctive therapy (BEFORE/WITH antibiotics) | 0.15 mg/kg q6h x 4 days :: IV :: q6h x 4 days :: 0.15 mg/kg IV (typically 10 mg) q6h x 4 days; give 15-20 min BEFORE or WITH first antibiotic dose; see immunocompromised guidance below | GI bleed (relative), see immunocompromised guidance | Glucose, GI bleeding | STAT | STAT | — | STAT |
 
 **Age-Based Empiric Regimen:**
 
 | Age/Risk | Empiric Regimen |
 |----------|-----------------|
 | **16-50 years (healthy)** | Ceftriaxone + Vancomycin |
-| **>50 years** | Ceftriaxone + Vancomycin + Ampicillin |
+| **≥50 years** (some guidelines use >60) | Ceftriaxone + Vancomycin + Ampicillin |
 | **Immunocompromised** | Ceftriaxone + Vancomycin + Ampicillin |
 | **Alcoholism** | Ceftriaxone + Vancomycin + Ampicillin |
 | **Severe penicillin allergy** | Meropenem + Vancomycin (or chloramphenicol + TMP-SMX) |
+
+**Note:** Age threshold for Listeria coverage varies between guidelines (≥50 vs >60). Use lower threshold (≥50) when additional risk factors present (diabetes, malnutrition, chronic disease).
 
 ### 3B. Organism-Directed Therapy (After Culture/Sensitivity)
 
@@ -244,8 +246,14 @@ SECTION A: ACTION ITEMS
 - **Greatest benefit:** Pneumococcal meningitis (reduces mortality and hearing loss)
 - **Timing critical:** Must be given BEFORE or WITH first antibiotic dose; no benefit if started >4 hours after antibiotics
 - **Continue if:** S. pneumoniae confirmed
-- **Discontinue if:** Other organism confirmed, immunocompromised (HIV with CD4 <200), prior antibiotics given
+- **Discontinue if:** Other organism confirmed, prior antibiotics given
 - **Caution:** May reduce CSF penetration of vancomycin (controversial; continue vancomycin anyway)
+
+**Dexamethasone in Immunocompromised Patients:**
+- **HIV:** Limited evidence of benefit in HIV-positive patients; meta-analyses show uncertain benefit. Use clinical judgment.
+- **CRITICAL - Rule out cryptococcal/TB first:** Dexamethasone is **contraindicated** in HIV-associated cryptococcal meningitis (increased mortality shown in trials). TB meningitis benefit in HIV+ patients is uncertain.
+- **Practical approach:** If HIV status unknown, give dexamethasone empirically but send cryptococcal antigen and evaluate for TB; discontinue if cryptococcal or TB confirmed.
+- **Other immunocompromise:** Benefit unproven in transplant, chemotherapy, biologics; weigh risks vs benefits.
 
 ### 3E. Supportive Care
 

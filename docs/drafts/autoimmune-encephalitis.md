@@ -209,6 +209,20 @@ SECTION A: ACTION ITEMS
 
 **CRITICAL:** Start immunotherapy empirically if clinical suspicion high. Do NOT wait for antibody results (may take 1-2 weeks).
 
+### When to Start Empiric Immunotherapy
+
+**Start empiric treatment when ALL of the following are met:**
+1. Clinical presentation meets criteria for "possible autoimmune encephalitis" (subacute onset, encephalopathy, plus seizures/CSF pleocytosis/MRI findings)
+2. Infectious etiologies reasonably excluded (negative CSF bacterial culture/Gram stain, HSV PCR sent or negative)
+3. Alternative diagnoses (toxic, metabolic, structural) reasonably excluded
+
+**Escalate urgency for empiric treatment if:**
+- Severe presentation (ICU admission, status epilepticus, coma)
+- Rapidly progressive course
+- Classical syndrome (e.g., young woman with psychiatric symptoms + movement disorder → anti-NMDAR)
+
+**Reference:** [Canadian Consensus Guidelines](https://www.cambridge.org/core/journals/canadian-journal-of-neurological-sciences/article/canadian-consensus-guidelines-for-the-diagnosis-and-treatment-of-autoimmune-encephalitis-in-adults/DC88204486B656B85324E93AF2CCCFC7); [Cellucci et al. 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC8223680/)
+
 ### 3A. First-Line Immunotherapy
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
@@ -231,7 +245,10 @@ SECTION A: ACTION ITEMS
 | Cyclophosphamide | IV | First-line failure, paraneoplastic | 750 mg/m² monthly x 6 :: IV :: monthly :: 750 mg/m² IV monthly x 6 cycles; with mesna for bladder protection | Cytopenias, active infection, pregnancy | CBC weekly, renal function, hemorrhagic cystitis | — | URGENT | — | URGENT |
 
 **Second-Line Timing:**
-- Consider at 2-4 weeks if no response to first-line
+- **Standard:** Consider at 2-4 weeks if no response to first-line
+- **Critically ill (ICU, coma, refractory status epilepticus):** Consider second-line agents at 1-2 weeks if no improvement, or sooner if rapidly deteriorating
+- **Early escalation considerations:** Disease severity, initial treatment response, and relapse risk
+- **Practical note:** Given delayed onset of rituximab effect (weeks), continue first-line therapies until clinical improvement observed
 - Earlier in severe/refractory cases (persistent coma, ICU-level care)
 - Rituximab preferred for anti-NMDAR encephalitis
 - Cyclophosphamide often preferred for paraneoplastic encephalitis
