@@ -102,7 +102,7 @@ SECTION A: ACTION ITEMS
 | Continuous EEG (cEEG) monitoring | If altered mental status persists, suspected non-convulsive status | Non-convulsive seizures, non-convulsive status epilepticus | None significant | — | URGENT | — | URGENT |
 | Prolonged ambulatory EEG (24-72h) | Outpatient if routine EEG non-diagnostic | Capture interictal or ictal activity | None significant | — | — | ROUTINE | — |
 | Video-EEG monitoring | If diagnosis uncertain (vs. psychogenic) | Correlate clinical events with EEG | None significant | — | ROUTINE | ROUTINE | — |
-| MRA/MRV brain | If vascular etiology suspected | AVM, aneurysm, venous thrombosis | Same as MRI | — | ROUTINE | ROUTINE | — |
+| MRA/MRV brain | If vascular etiology suspected | AVM, aneurysm, venous thrombosis | GFR <30, gadolinium allergy, pacemaker | — | ROUTINE | ROUTINE | — |
 | CT angiography head | If MRA unavailable and vascular cause suspected | Vascular malformation, aneurysm | Contrast allergy, renal insufficiency | URGENT | URGENT | — | URGENT |
 | Echocardiogram | If embolic stroke suspected as cause | Thrombus, PFO, vegetation | None significant | — | ROUTINE | ROUTINE | — |
 | Chest X-ray | Aspiration risk post-ictal, lung cancer screening if paraneoplastic suspected | Clear lungs or mass | None significant | URGENT | ROUTINE | — | URGENT |

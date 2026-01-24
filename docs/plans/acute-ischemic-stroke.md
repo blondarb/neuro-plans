@@ -93,7 +93,7 @@ SECTION A: ACTION ITEMS
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 | Non-contrast CT head (NCCT) | STAT - door to CT <25 min target | No hemorrhage; early ischemic changes (ASPECTS score) | None | STAT | STAT | - | STAT |
 | CT angiography head and neck (CTA) | STAT with NCCT | Large vessel occlusion (LVO); carotid/vertebral stenosis | Contrast allergy (premedicate), CKD (benefit usually outweighs risk in acute stroke) | STAT | STAT | - | STAT |
-| CT perfusion (CTP) | If within extended window (6-24 hours) or wake-up stroke | Mismatch (ischemic penumbra salvageable) | Same as CTA | STAT | STAT | - | STAT |
+| CT perfusion (CTP) | If within extended window (6-24 hours) or wake-up stroke | Mismatch (ischemic penumbra salvageable) | Contrast allergy (premedicate), CKD (benefit usually outweighs risk in acute stroke) | STAT | STAT | - | STAT |
 | ECG (12-lead) | STAT | Atrial fibrillation, STEMI, LVH | None | STAT | STAT | ROUTINE | STAT |
 
 ### 2B. Extended (Inpatient Etiologic Workup)
@@ -101,7 +101,7 @@ SECTION A: ACTION ITEMS
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 | MRI brain with DWI | Within 24 hours; better for small/posterior strokes | Acute infarct confirmation; lesion pattern | Pacemaker, metallic implants (check compatibility) | URGENT | STAT | ROUTINE | URGENT |
-| MRA head and neck | With MRI if CTA not done | Stenosis, dissection, aneurysm | Same as MRI | URGENT | ROUTINE | ROUTINE | URGENT |
+| MRA head and neck | With MRI if CTA not done | Stenosis, dissection, aneurysm | Pacemaker, metallic implants (check compatibility) | URGENT | ROUTINE | ROUTINE | URGENT |
 | Transthoracic echocardiogram (TTE) with bubble study | Within 24-48 hours | LV thrombus, PFO, valvular disease, wall motion abnormalities | None | - | ROUTINE | ROUTINE | - |
 | Transesophageal echocardiogram (TEE) | If TTE non-diagnostic and high suspicion for cardiac source; or PFO evaluation | LAA thrombus, aortic atheroma, PFO with atrial septal aneurysm | Esophageal pathology | - | ROUTINE | ROUTINE | - |
 | Carotid duplex ultrasound | If CTA/MRA not done or for follow-up | Stenosis >50% | None | - | ROUTINE | ROUTINE | - |
@@ -114,7 +114,7 @@ SECTION A: ACTION ITEMS
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 | Conventional cerebral angiography (DSA) | If vasculitis suspected; CNS vasculitis workup | Beading, stenosis, aneurysm | Contrast allergy, CKD, coagulopathy | - | EXT | EXT | - |
-| High-resolution vessel wall MRI | Vasculitis, intracranial atherosclerosis characterization | Wall enhancement pattern | Same as MRI | - | EXT | EXT | - |
+| High-resolution vessel wall MRI | Vasculitis, intracranial atherosclerosis characterization | Wall enhancement pattern | Pacemaker, metallic implants (check compatibility) | - | EXT | EXT | - |
 | Lumbar puncture | If vasculitis, infectious, or inflammatory etiology suspected | See LP section | See LP section | - | EXT | EXT | - |
 | PET-CT or PET-MRI | Occult malignancy workup; giant cell arteritis | No malignancy/inflammation | Pregnancy | - | EXT | EXT | - |
 | Implantable loop recorder (ILR) | Cryptogenic stroke after negative workup | Paroxysmal AF detection | Active infection | - | - | ROUTINE | - |
@@ -148,11 +148,11 @@ SECTION A: ACTION ITEMS
 | Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Alteplase (tPA) IV | 0.9 mg/kg IV (max 90 mg); 10% as bolus over 1 min, remainder over 60 min; within 4.5 hours of symptom onset | See Appendix A for complete exclusion criteria; major: ICH, recent surgery, BP >185/110 despite treatment, INR >1.7, platelets <100K | Neuro checks q15min x 2h, then q30min x 6h, then q1h x 16h; BP q15min x 2h, then q30min x 6h; hold antiplatelets/anticoagulants 24h; CT head before anticoagulation | STAT | STAT | - | STAT |
-| Tenecteplase IV | 0.25 mg/kg IV bolus (max 25 mg); single bolus (no infusion); within 4.5 hours of symptom onset | Same as alteplase | Same as alteplase | STAT | STAT | - | STAT |
+| Tenecteplase IV | 0.25 mg/kg IV bolus (max 25 mg); single bolus (no infusion); within 4.5 hours of symptom onset | See Appendix A; major: ICH, recent surgery, BP >185/110, INR >1.7, platelets <100K | Neuro checks q15min x 2h, then q30min x 6h, then q1h x 16h; BP q15min x 2h; hold anticoagulants 24h | STAT | STAT | - | STAT |
 | Blood pressure management (pre-thrombolysis) - Labetalol | 10-20 mg IV over 1-2 min; may repeat or double q10min; max 300 mg | Asthma, severe bradycardia, decompensated HF, 2nd/3rd degree heart block | Continuous BP; target BP <185/110 for tPA eligibility | STAT | STAT | - | STAT |
 | Blood pressure management (pre-thrombolysis) - Nicardipine | Start 5 mg/hr IV; increase by 2.5 mg/hr q5-15min; max 15 mg/hr | None significant | Continuous BP; target <185/110 | STAT | STAT | - | STAT |
 | Blood pressure management (pre-thrombolysis) - Clevidipine | Start 1-2 mg/hr IV; titrate by doubling q90sec initially; max 32 mg/hr | Soy/egg allergy, severe aortic stenosis, lipid disorders | Continuous BP; rapid onset; short half-life | STAT | STAT | - | STAT |
-| Blood pressure management (post-tPA) | Same agents as above | Same | Maintain BP <180/105 for 24 hours post-tPA | STAT | STAT | - | STAT |
+| Blood pressure management (post-tPA) | Labetalol 10-20 mg IV q10min, nicardipine 5-15 mg/hr IV, or clevidipine 1-32 mg/hr IV | Asthma (labetalol); soy/egg allergy (clevidipine) | Continuous BP; target BP <180/105 for 24 hours post-tPA | STAT | STAT | - | STAT |
 | Mechanical thrombectomy | Endovascular clot retrieval; within 6 hours for anterior LVO; up to 24 hours with favorable perfusion imaging | Large completed infarct (ASPECTS <6), poor baseline function (mRS >2), no LVO | Post-procedure: BP per protocol, groin site checks, neuro checks q1h | STAT | STAT | - | STAT |
 
 ### 3B. Acute Supportive Care
@@ -164,7 +164,7 @@ SECTION A: ACTION ITEMS
 | Glucose management - Insulin | Hyperglycemia in acute stroke | Sliding scale or infusion; target glucose 140-180 mg/dL | Avoid hypoglycemia (<60) | Glucose q1-6h depending on regimen | STAT | STAT | - | STAT |
 | DVT prophylaxis - Intermittent pneumatic compression | All immobile patients | Apply to both legs | Active DVT | Skin checks | STAT | STAT | - | STAT |
 | DVT prophylaxis - Enoxaparin | After 24-48 hours if no hemorrhagic transformation and not on anticoagulation | 40 mg SC daily; reduce to 30 mg if CrCl <30 | Active bleeding, HIT, hemorrhagic transformation | Platelets; signs of bleeding | - | ROUTINE | - | ROUTINE |
-| DVT prophylaxis - Heparin (unfractionated) | Alternative to enoxaparin if CrCl <30 | 5000 units SC q8-12h | Same as enoxaparin | Same | - | ROUTINE | - | ROUTINE |
+| DVT prophylaxis - Heparin (unfractionated) | Alternative to enoxaparin if CrCl <30 | 5000 units SC q8-12h | Active bleeding, HIT, hemorrhagic transformation | Platelets; signs of bleeding | - | ROUTINE | - | ROUTINE |
 | Fever management - Acetaminophen | Target normothermia; fever worsens outcomes | 650-1000 mg PO/PR q4-6h PRN temp >38C; max 4g/day | Hepatic impairment | Temperature | STAT | STAT | - | STAT |
 | Head of bed positioning | Optimize perfusion vs aspiration risk | HOB flat to 15 degrees initially if no LVO treated; elevate to 30 degrees if large infarct or aspiration risk | None | Neuro exam | STAT | STAT | - | STAT |
 | Supplemental oxygen | Hypoxia | Titrate to SpO2 >94%; avoid routine oxygen in non-hypoxic patients | None | Continuous SpO2 | STAT | STAT | - | STAT |
@@ -176,14 +176,14 @@ SECTION A: ACTION ITEMS
 | Aspirin | Non-cardioembolic stroke; first-line antiplatelet | Loading: 325 mg (after tPA, wait 24h and confirm no ICH on CT); Maintenance: 81-325 mg daily | Active bleeding, aspirin allergy, concurrent anticoagulation | Bleeding signs | - | ROUTINE | ROUTINE | - |
 | Clopidogrel | Aspirin intolerance; or DAPT (see below) | Loading: 300-600 mg; Maintenance: 75 mg daily | Active bleeding, severe hepatic impairment | Bleeding, bruising | - | ROUTINE | ROUTINE | - |
 | Dual antiplatelet therapy (DAPT) - Aspirin + Clopidogrel | Minor stroke (NIHSS ≤3) or high-risk TIA within 24 hours; continue 21 days then single agent | Aspirin 81 mg + Clopidogrel 75 mg daily x 21 days; preceded by loading doses | Major stroke, high bleeding risk, planned surgery | Bleeding; discontinue one agent at day 21 | - | ROUTINE | ROUTINE | - |
-| Dual antiplatelet therapy (DAPT) - Aspirin + Ticagrelor | Alternative DAPT regimen (THALES trial) | Aspirin 81 mg + Ticagrelor 90 mg BID x 30 days | Same as above; avoid with strong CYP3A4 inhibitors | Same; dyspnea (common) | - | ROUTINE | ROUTINE | - |
+| Dual antiplatelet therapy (DAPT) - Aspirin + Ticagrelor | Alternative DAPT regimen (THALES trial) | Aspirin 81 mg + Ticagrelor 90 mg BID x 30 days | Major stroke, high bleeding risk, planned surgery; avoid with strong CYP3A4 inhibitors | Bleeding; dyspnea (common); discontinue one agent at day 30 | - | ROUTINE | ROUTINE | - |
 | Atorvastatin | All ischemic stroke; high-intensity statin | 40-80 mg daily; start in hospital | Active liver disease, pregnancy | LFTs at baseline; CK if myalgia | - | ROUTINE | ROUTINE | - |
-| Rosuvastatin | Alternative high-intensity statin | 20-40 mg daily | Same as atorvastatin; dose adjust for Asian patients, CKD | Same | - | ROUTINE | ROUTINE | - |
+| Rosuvastatin | Alternative high-intensity statin | 20-40 mg daily | Active liver disease, pregnancy; dose adjust for Asian patients, CKD | LFTs at baseline; CK if myalgia | - | ROUTINE | ROUTINE | - |
 | Apixaban | Cardioembolic stroke (AF); start after imaging confirms no hemorrhagic transformation | 5 mg BID; reduce to 2.5 mg BID if 2 of: age ≥80, weight ≤60 kg, Cr ≥1.5 | Active bleeding, mechanical valve, severe hepatic impairment; delay 4-14 days post-stroke based on infarct size | Renal function; bleeding | - | ROUTINE | ROUTINE | - |
-| Rivaroxaban | Alternative DOAC for AF | 20 mg daily with dinner; 15 mg if CrCl 15-50 | Same as apixaban | Same | - | ROUTINE | ROUTINE | - |
-| Dabigatran | Alternative DOAC for AF | 150 mg BID; 75 mg BID if CrCl 15-30 | Same as apixaban; GI upset common | Same; requires reversal agent availability | - | ROUTINE | ROUTINE | - |
-| Edoxaban | Alternative DOAC for AF | 60 mg daily; 30 mg if CrCl 15-50, weight ≤60 kg, or concurrent P-gp inhibitor | Same as apixaban | Same | - | ROUTINE | ROUTINE | - |
-| Warfarin | Mechanical valve, antiphospholipid syndrome, DOAC contraindication | Start with DOAC or heparin bridge; target INR 2-3 (2.5-3.5 for mechanical mitral) | Same as DOACs | INR weekly then monthly | - | ROUTINE | ROUTINE | - |
+| Rivaroxaban | Alternative DOAC for AF | 20 mg daily with dinner; 15 mg if CrCl 15-50 | Active bleeding, mechanical valve, severe hepatic impairment; delay 4-14 days post-stroke | Renal function; bleeding | - | ROUTINE | ROUTINE | - |
+| Dabigatran | Alternative DOAC for AF | 150 mg BID; 75 mg BID if CrCl 15-30 | Active bleeding, mechanical valve, severe hepatic impairment; GI upset common; delay 4-14 days post-stroke | Renal function; bleeding; requires reversal agent availability | - | ROUTINE | ROUTINE | - |
+| Edoxaban | Alternative DOAC for AF | 60 mg daily; 30 mg if CrCl 15-50, weight ≤60 kg, or concurrent P-gp inhibitor | Active bleeding, mechanical valve, severe hepatic impairment; delay 4-14 days post-stroke | Renal function; bleeding | - | ROUTINE | ROUTINE | - |
+| Warfarin | Mechanical valve, antiphospholipid syndrome, DOAC contraindication | Start with DOAC or heparin bridge; target INR 2-3 (2.5-3.5 for mechanical mitral) | Active bleeding, severe hepatic impairment; delay 4-14 days post-stroke | INR weekly then monthly; bleeding | - | ROUTINE | ROUTINE | - |
 | Lisinopril | Hypertension; target BP <130/80 after acute phase | Start 2.5-5 mg daily; titrate to 20-40 mg daily | Bilateral renal artery stenosis, angioedema history, pregnancy | BP, K+, Cr | - | ROUTINE | ROUTINE | - |
 | Amlodipine | Hypertension; add-on or alternative | Start 5 mg daily; max 10 mg daily | Severe aortic stenosis | BP, peripheral edema | - | ROUTINE | ROUTINE | - |
 | Chlorthalidone | Hypertension; add-on for volume-dependent HTN | 12.5-25 mg daily | Sulfa allergy (relative), hypokalemia, gout | K+, Na+, uric acid | - | ROUTINE | ROUTINE | - |
@@ -194,7 +194,7 @@ SECTION A: ACTION ITEMS
 |-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Mannitol | Cerebral edema; increased ICP | 0.5-1.5 g/kg IV over 20-30 min; may repeat q6h; serum osm goal <320 | Hypovolemia, anuria | Serum osm, Na+, renal function; Foley required | - | URGENT | - | STAT |
 | Hypertonic saline 23.4% | Severe cerebral edema; herniation | 30 mL IV push via central line over 10-20 min | Severe hypernatremia (Na >160) | Na q4-6h; target Na 145-155 for edema | - | URGENT | - | STAT |
-| Hypertonic saline 3% | Cerebral edema (less severe) | 150-500 mL IV bolus or continuous infusion at 30-50 mL/hr | Same | Same | - | URGENT | - | STAT |
+| Hypertonic saline 3% | Cerebral edema (less severe) | 150-500 mL IV bolus or continuous infusion at 30-50 mL/hr | Severe hypernatremia (Na >160) | Na q4-6h; target Na 145-155 for edema | - | URGENT | - | STAT |
 | Decompressive craniectomy | Malignant MCA infarction with edema; age <60 | Surgical; within 48 hours of stroke onset | Poor pre-stroke function, extensive infarct, patient/family preference | Post-op neuro checks, ICP if monitored | - | URGENT | - | URGENT |
 | Levetiracetam | Seizure prophylaxis not routinely recommended; use only if seizure occurs | 500-1000 mg IV/PO BID; max 3000 mg/day | None significant | Mood, behavior | - | ROUTINE | ROUTINE | ROUTINE |
 | Ceftriaxone + Metronidazole | Aspiration pneumonia | Ceftriaxone 1-2 g IV daily + Metronidazole 500 mg IV/PO q8h | Cephalosporin allergy, alcohol with metronidazole | WBC, fever, respiratory status | - | ROUTINE | - | ROUTINE |
@@ -206,7 +206,7 @@ SECTION A: ACTION ITEMS
 | Heparin infusion | Cervical artery dissection (controversial), bridge to warfarin | 80 units/kg bolus, then 18 units/kg/hr; titrate to PTT 60-80 | Active bleeding, large infarct, hemorrhagic transformation | PTT q6h until therapeutic, then q12-24h | - | ROUTINE | - | ROUTINE |
 | PFO closure (device) | Cryptogenic stroke with high-risk PFO (large shunt, atrial septal aneurysm); age <60 | Interventional procedure; typically after stroke recovery | Active infection, other stroke etiology identified | Post-procedure: antiplatelet therapy, bubble study follow-up | - | - | ROUTINE | - |
 | Carotid endarterectomy (CEA) | Symptomatic carotid stenosis 70-99%; some benefit 50-69% | Surgical; timing 2-14 days post-stroke optimal | Unstable medical condition, near-complete occlusion | Post-op: BP control, neuro checks | - | ROUTINE | ROUTINE | - |
-| Carotid artery stenting (CAS) | Alternative to CEA; high surgical risk patients | Interventional procedure | Same contraindications as surgery; unfavorable anatomy | Post-procedure: DAPT x 30 days minimum | - | ROUTINE | ROUTINE | - |
+| Carotid artery stenting (CAS) | Alternative to CEA; high surgical risk patients | Interventional procedure | Unstable medical condition, near-complete occlusion; unfavorable anatomy | Post-procedure: DAPT x 30 days minimum | - | ROUTINE | ROUTINE | - |
 
 ---
 

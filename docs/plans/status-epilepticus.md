@@ -123,7 +123,7 @@ SECTION A: ACTION ITEMS
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 | MRI brain with and without contrast | When stable; within 24-48h | Encephalitis, stroke, tumor, cortical injury from SE | Hemodynamic instability, pacemaker | — | URGENT | — | URGENT |
 | CT angiography head/neck | If stroke suspected | Large vessel occlusion, dissection | Contrast allergy, renal insufficiency | URGENT | URGENT | — | URGENT |
-| MRA/MRV brain | If vascular etiology suspected | Venous thrombosis, vascular malformation | Same as MRI | — | ROUTINE | — | ROUTINE |
+| MRA/MRV brain | If vascular etiology suspected | Venous thrombosis, vascular malformation | Hemodynamic instability, pacemaker | — | ROUTINE | — | ROUTINE |
 | CT chest/abdomen/pelvis | If paraneoplastic suspected | Occult malignancy | Contrast allergy | — | ROUTINE | — | ROUTINE |
 | Echocardiogram | If embolic stroke suspected, endocarditis | Vegetation, thrombus | None | — | ROUTINE | — | ROUTINE |
 
@@ -195,7 +195,7 @@ SECTION A: ACTION ITEMS
 |-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Lorazepam IV | 0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min if still seizing; total max 8 mg | Acute narrow-angle glaucoma | RR, O2 sat, BP, sedation; airway equipment ready | STAT | STAT | — | STAT |
 | Midazolam IM | 10 mg IM (≥40 kg) or 0.2 mg/kg IM (if no IV access); single dose | Respiratory compromise | RR, O2 sat; prepare IV access | STAT | STAT | — | STAT |
-| Midazolam IV | 0.2 mg/kg IV (max 10 mg); may repeat x1 | Same as lorazepam | RR, O2 sat, BP | STAT | STAT | — | STAT |
+| Midazolam IV | 0.2 mg/kg IV (max 10 mg); may repeat x1 | Acute narrow-angle glaucoma | RR, O2 sat, BP | STAT | STAT | — | STAT |
 | Midazolam intranasal | 5 mg per nostril (10 mg total) if no IV/IM access | Nasal obstruction | RR, O2 sat | STAT | STAT | — | STAT |
 | Midazolam buccal | 10 mg buccal (if available) | Oral trauma | RR, O2 sat | STAT | STAT | — | STAT |
 | Diazepam IV | 0.15 mg/kg IV (max 10 mg); may repeat x1 in 5 min | Acute narrow-angle glaucoma | RR, O2 sat; short duration - requires follow-up ASM | STAT | STAT | — | STAT |
@@ -239,7 +239,7 @@ SECTION A: ACTION ITEMS
 | Midazolam infusion | Load: 0.2 mg/kg IV bolus; Infusion: start 0.1 mg/kg/hr, titrate by 0.1 mg/kg/hr q15min to seizure suppression; max 2 mg/kg/hr; target burst suppression on cEEG | Hemodynamic instability (relative) | cEEG, BP (hypotension common), sedation scale | URGENT | — | — | STAT |
 | Propofol infusion | Load: 1-2 mg/kg IV bolus (may repeat x1); Infusion: start 20 mcg/kg/min, titrate by 10 mcg/kg/min q5min; max 200 mcg/kg/min; target burst suppression | Propofol infusion syndrome risk (limit to <48h at high dose), egg/soy allergy, pregnancy | cEEG, triglycerides q24-48h, CPK, metabolic acidosis, BP | — | — | — | STAT |
 | Ketamine infusion | Load: 1-2 mg/kg IV bolus; Infusion: start 1 mg/kg/hr, titrate by 0.5 mg/kg/hr q15-30min; max 5 mg/kg/hr | Uncontrolled hypertension, elevated ICP (relative - actually may be neuroprotective) | cEEG, BP (may increase), HR; less hypotension than other anesthetics | URGENT | — | — | STAT |
-| Ketamine + Midazolam (combination) | Ketamine load 1 mg/kg + Midazolam load 0.2 mg/kg; then dual infusions per above | Per individual agents | 2024 data: combination may reduce SE duration faster than midazolam alone | — | — | — | STAT |
+| Ketamine + Midazolam (combination) | Ketamine load 1 mg/kg + Midazolam load 0.2 mg/kg; Ketamine infusion 1-5 mg/kg/hr + Midazolam infusion 0.1-2 mg/kg/hr; titrate to burst suppression | Uncontrolled hypertension, elevated ICP (relative), hemodynamic instability (relative) | 2024 data: combination may reduce SE duration faster than midazolam alone | — | — | — | STAT |
 | Pentobarbital infusion | Load: 5-15 mg/kg IV at 50 mg/min; Infusion: start 0.5-1 mg/kg/hr, titrate to burst suppression; max 5 mg/kg/hr | Severe cardiac dysfunction | cEEG, BP (significant hypotension - need pressors), cardiac output; longest half-life | — | — | — | STAT |
 
 **NOTES:**
@@ -310,7 +310,7 @@ SECTION A: ACTION ITEMS
 | Norepinephrine | Hypotension from anesthetics | Start 0.1 mcg/kg/min; titrate to MAP ≥65 | Hypovolemia (correct first) | Arterial line, MAP | — | — | — | STAT |
 | Vasopressin | Adjunct pressor | 0.04 units/min fixed dose | Cardiac ischemia | MAP, cardiac status | — | — | — | STAT |
 | Fentanyl infusion | Analgesia/sedation adjunct | 25-100 mcg/hr; titrate to comfort | Hemodynamic instability | Pain scale, respiratory status | — | — | — | ROUTINE |
-| Propofol (sub-anesthetic) | Sedation during cEEG | 5-50 mcg/kg/min | Same as anesthetic use | Sedation scale | — | — | — | ROUTINE |
+| Propofol (sub-anesthetic) | Sedation during cEEG | 5-50 mcg/kg/min | Propofol infusion syndrome risk, egg/soy allergy, pregnancy | Sedation scale | — | — | — | ROUTINE |
 | Dexmedetomidine | Sedation, possible antiseizure | 0.2-1.5 mcg/kg/hr | Bradycardia, heart block | HR, BP | — | — | — | ROUTINE |
 | Pantoprazole | Stress ulcer prophylaxis | 40 mg IV daily | None significant | GI bleeding | — | ROUTINE | — | STAT |
 | Enoxaparin | DVT prophylaxis | 40 mg SC daily (start when stable) | Active bleeding, recent LP | Platelets, bleeding | — | ROUTINE | — | STAT |

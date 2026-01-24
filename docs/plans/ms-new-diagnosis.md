@@ -88,8 +88,8 @@ SECTION A: ACTION ITEMS
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MRI brain with and without contrast (MS protocol)* | URGENT | URGENT | ROUTINE | URGENT | Within 24-48h if acute; within 2 weeks if stable | Periventricular, juxtacortical, infratentorial, or cord lesions; gadolinium enhancement = active | GFR <30, gadolinium allergy, pacemaker |
-| MRI C-spine with and without contrast | URGENT | URGENT | ROUTINE | URGENT | With brain MRI | Cord lesions (short segment, peripheral, dorsal) | Same as above |
-| MRI T-spine with and without contrast | URGENT | ROUTINE | ROUTINE | URGENT | With brain/C-spine | Cord lesions | Same as above |
+| MRI C-spine with and without contrast | URGENT | URGENT | ROUTINE | URGENT | With brain MRI | Cord lesions (short segment, peripheral, dorsal) | GFR <30, gadolinium allergy, pacemaker |
+| MRI T-spine with and without contrast | URGENT | ROUTINE | ROUTINE | URGENT | With brain/C-spine | Cord lesions | GFR <30, gadolinium allergy, pacemaker |
 
 *MS MRI protocol should include: 3D FLAIR, 3D T1 pre/post-contrast, T2, DWI; for spine: sagittal STIR, axial T2
 
@@ -148,7 +148,7 @@ SECTION A: ACTION ITEMS
 | Methylprednisolone IV | STAT | STAT | - | STAT | 1000 mg IV daily Ã— 3-5 days | Active untreated infection, uncontrolled diabetes, psychosis history | Glucose q6h (target <180), BP, mood, sleep, I/O |
 | Omeprazole | STAT | STAT | - | STAT | 20-40 mg daily during steroids | PPI allergy | None routine |
 | Insulin sliding scale | STAT | STAT | - | STAT | Per protocol if glucose >180 mg/dL | Hypoglycemia risk | Glucose q6h |
-| Prednisone oral taper (optional) | - | ROUTINE | ROUTINE | - | 60 mg daily Ã— 7 days, then taper over 2 weeks | Same as IV steroids | Glucose, BP, mood |
+| Prednisone oral taper (optional) | - | ROUTINE | ROUTINE | - | 60 mg daily Ã— 7 days, then taper over 2 weeks | Active untreated infection, uncontrolled diabetes, psychosis history | Glucose, BP, mood |
 
 ### 3B. Symptomatic Treatments - First-line
 
@@ -163,7 +163,7 @@ SECTION A: ACTION ITEMS
 | Carbamazepine | Trigeminal neuralgia | - | ROUTINE | ROUTINE | - | Start 100 mg BID; increase by 200 mg/day every 3-7 days; max 1200 mg/day | AV block; bone marrow suppression; concurrent MAOIs | CBC, LFTs, sodium at baseline and periodically; HLA-B*1502 screening in at-risk populations |
 | Oxcarbazepine | Trigeminal neuralgia | - | ROUTINE | ROUTINE | - | Start 300 mg BID; increase by 300 mg every 3 days; max 1200 mg BID | Hypersensitivity to carbamazepine | Sodium (hyponatremia risk); HLA-B*1502 screening |
 | Oxybutynin IR | Bladder urgency | - | ROUTINE | ROUTINE | - | Start 5 mg BID-TID; max 5 mg QID | Urinary retention; uncontrolled narrow-angle glaucoma; GI obstruction | Dry mouth, constipation, cognitive impairment (especially elderly) |
-| Oxybutynin ER | Bladder urgency | - | - | ROUTINE | - | Start 5-10 mg daily; max 30 mg daily | Same as IR | Same; fewer anticholinergic side effects than IR |
+| Oxybutynin ER | Bladder urgency | - | - | ROUTINE | - | Start 5-10 mg daily; max 30 mg daily | Urinary retention; uncontrolled narrow-angle glaucoma; GI obstruction | Dry mouth, constipation, cognitive impairment (fewer than IR) |
 | Solifenacin | Bladder urgency | - | - | ROUTINE | - | Start 5 mg daily; may increase to 10 mg daily | Urinary retention; gastric retention; uncontrolled narrow-angle glaucoma; severe hepatic impairment | Dry mouth, constipation; preferred over oxybutynin if cognitive concerns |
 | Mirabegron | Bladder urgency | - | - | ROUTINE | - | Start 25 mg daily; may increase to 50 mg daily | Uncontrolled hypertension | BP monitoring; fewer anticholinergic effects (beta-3 agonist) |
 | Tamsulosin | Urinary retention | - | ROUTINE | ROUTINE | - | 0.4 mg daily 30 minutes after same meal each day | Severe sulfonamide allergy (use caution) | Orthostatic hypotension; retrograde ejaculation |
@@ -171,7 +171,7 @@ SECTION A: ACTION ITEMS
 | Desmopressin | Nocturia | - | - | ROUTINE | - | 0.1-0.4 mg qHS (oral) or 10-40 mcg intranasal | Hyponatremia risk; age >65 (relative); CHF; polydipsia | Sodium at baseline, 1 week, 1 month, then periodically; fluid restrict evening |
 | Amantadine | Fatigue | - | ROUTINE | ROUTINE | - | 100 mg every morning; may add 100 mg early afternoon (before 2 PM); max 200 mg/day | Renal impairment (adjust dose); uncontrolled seizures | Livedo reticularis; ankle edema; insomnia; hallucinations |
 | Modafinil | Fatigue | - | - | ROUTINE | - | Start 100 mg every morning; may increase to 200 mg; max 400 mg/day | Cardiac arrhythmia; LV hypertrophy; hepatic impairment | BP, HR; may reduce efficacy of hormonal contraception; Schedule IV |
-| Armodafinil | Fatigue | - | - | ROUTINE | - | Start 150 mg every morning; max 250 mg daily | Same as modafinil | Same as modafinil; longer half-life; Schedule IV |
+| Armodafinil | Fatigue | - | - | ROUTINE | - | Start 150 mg every morning; max 250 mg daily | Cardiac arrhythmia; LV hypertrophy; hepatic impairment | BP, HR; may reduce efficacy of hormonal contraception; longer half-life; Schedule IV |
 | Methylphenidate | Fatigue | - | - | ROUTINE | - | Start 5 mg BID (morning and noon); max 60 mg/day | Marked anxiety; glaucoma; tics/Tourette; concurrent MAOIs | BP, HR, mood; Schedule II |
 | Dalfampridine | Walking impairment | - | - | ROUTINE | - | 10 mg q12h (must be exactly 12 hours apart); do NOT exceed 20 mg/day | Seizure history; CrCl <50 mL/min | Seizure risk (dose-dependent); UTI; insomnia |
 | Sertraline | Depression | - | ROUTINE | ROUTINE | - | Start 50 mg daily; increase by 25-50 mg every 1-2 weeks; max 200 mg daily | Concurrent MAOIs; pimozide | Suicidality monitoring (especially weeks 1-4); serotonin syndrome; QTc at high doses |
@@ -197,8 +197,8 @@ SECTION A: ACTION ITEMS
 |-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
 | Plasmapheresis (PLEX) | - | URGENT | - | URGENT | 5-7 exchanges over 10-14 days | Hemodynamic instability, sepsis, line contraindication | BP, electrolytes, coags, fibrinogen, line infection |
 | IVIG | - | URGENT | - | URGENT | 0.4 g/kg/day Ã— 5 days | IgA deficiency, renal failure, thrombosis risk | Renal function, headache, thrombosis |
-| Extended IV steroids | - | ROUTINE | - | ROUTINE | Additional 2-5 days methylprednisolone (total 5-10 days) | As above | As above |
-| ACTH gel (H.P. Acthar) | - | EXT | EXT | - | 80 units IM/SC daily Ã— 2-3 weeks | Similar to corticosteroids | Glucose, BP, electrolytes |
+| Extended IV steroids | - | ROUTINE | - | ROUTINE | Additional 2-5 days methylprednisolone (total 5-10 days) | Active untreated infection, uncontrolled diabetes, psychosis history | Glucose q6h, BP, mood, sleep |
+| ACTH gel (H.P. Acthar) | - | EXT | EXT | - | 80 units IM/SC daily Ã— 2-3 weeks | Active untreated infection, uncontrolled diabetes, psychosis history | Glucose, BP, electrolytes |
 
 ### 3D. Disease-Modifying Therapies (DMT) - OPD ONLY
 
@@ -208,29 +208,29 @@ SECTION A: ACTION ITEMS
 |-----------|-------|:--:|:----:|:---:|:---:|--------|---------------------------|-------------------|------------|
 | **INJECTABLE - MODERATE EFFICACY** |
 | Interferon beta-1a (Avonex) | IM | - | - | ROUTINE | - | 30 mcg IM once weekly | CBC, LFTs, TSH | Depression (relative); decompensated liver disease | CBC, LFTs q3-6mo; TSH annually; flu-like symptoms common (pretreat with NSAIDs/acetaminophen) |
-| Interferon beta-1a (Rebif) | SC | - | - | ROUTINE | - | 22 or 44 mcg SC three times weekly (titrate over 4 weeks) | CBC, LFTs, TSH | Same as Avonex | Same; injection site reactions |
-| Interferon beta-1b (Betaseron/Extavia) | SC | - | - | ROUTINE | - | 250 mcg SC every other day (titrate over 6 weeks) | CBC, LFTs, TSH | Same as Avonex | Same |
-| Peginterferon beta-1a (Plegridy) | SC | - | - | ROUTINE | - | 125 mcg SC every 14 days (titrate over first 4 doses) | CBC, LFTs, TSH | Same as Avonex | Same; less frequent dosing |
+| Interferon beta-1a (Rebif) | SC | - | - | ROUTINE | - | 22 or 44 mcg SC three times weekly (titrate over 4 weeks) | CBC, LFTs, TSH | Depression (relative); decompensated liver disease | CBC, LFTs q3-6mo; TSH annually; injection site reactions |
+| Interferon beta-1b (Betaseron/Extavia) | SC | - | - | ROUTINE | - | 250 mcg SC every other day (titrate over 6 weeks) | CBC, LFTs, TSH | Depression (relative); decompensated liver disease | CBC, LFTs q3-6mo; TSH annually; flu-like symptoms common |
+| Peginterferon beta-1a (Plegridy) | SC | - | - | ROUTINE | - | 125 mcg SC every 14 days (titrate over first 4 doses) | CBC, LFTs, TSH | Depression (relative); decompensated liver disease | CBC, LFTs q3-6mo; TSH annually; less frequent dosing |
 | Glatiramer acetate (Copaxone) 20mg | SC | - | - | ROUTINE | - | 20 mg SC daily | None required | Hypersensitivity | Injection site reactions; post-injection systemic reaction (rare, self-limited) |
 | Glatiramer acetate (Copaxone) 40mg | SC | - | - | ROUTINE | - | 40 mg SC three times weekly (â‰¥48 hours apart) | None required | Hypersensitivity | Same |
 | Glatiramer acetate (Glatopa) | SC | - | - | ROUTINE | - | 20 mg SC daily or 40 mg SC three times weekly | None required | Hypersensitivity | Same (generic) |
 | **ORAL - MODERATE EFFICACY** |
 | Dimethyl fumarate (Tecfidera) | PO | - | - | ROUTINE | - | 120 mg BID Ã— 7 days, then 240 mg BID | CBC, LFTs | Lymphopenia <500 (discontinue) | CBC q6mo (lymphocytes); LFTs; GI side effects (take with food); flushing (aspirin 30 min prior) |
-| Diroximel fumarate (Vumerity) | PO | - | - | ROUTINE | - | 231 mg BID Ã— 7 days, then 462 mg BID | CBC, LFTs | Same as Tecfidera | Same; less GI side effects than Tecfidera |
-| Monomethyl fumarate (Bafiertam) | PO | - | - | ROUTINE | - | 95 mg BID Ã— 7 days, then 190 mg BID | CBC, LFTs | Same as Tecfidera | Same |
+| Diroximel fumarate (Vumerity) | PO | - | - | ROUTINE | - | 231 mg BID Ã— 7 days, then 462 mg BID | CBC, LFTs | Lymphopenia <500 (discontinue) | CBC q6mo (lymphocytes); LFTs; less GI side effects than Tecfidera; flushing |
+| Monomethyl fumarate (Bafiertam) | PO | - | - | ROUTINE | - | 95 mg BID Ã— 7 days, then 190 mg BID | CBC, LFTs | Lymphopenia <500 (discontinue) | CBC q6mo (lymphocytes); LFTs; GI side effects; flushing |
 | Teriflunomide (Aubagio) | PO | - | - | ROUTINE | - | 7 or 14 mg once daily | CBC, LFTs, TB test, BP | Pregnancy (Category X - teratogenic); severe hepatic impairment; concurrent leflunomide | LFTs monthly Ã— 6 months, then periodically; BP; hair thinning; requires cholestyramine washout if pregnancy desired |
 | **ORAL - HIGH EFFICACY (S1P MODULATORS)** |
 | Fingolimod (Gilenya) | PO | - | - | ROUTINE | - | 0.5 mg once daily | CBC, LFTs, ECG, ophthalmology exam (macular edema), VZV IgG (vaccinate if negative and wait 4 weeks) | Bradycardia <55; 2nd/3rd degree AV block; sick sinus syndrome; QTc >500 ms; recent MI/stroke/TIA (within 6 months) | First-dose observation 6 hours (HR, BP q1h, ECG at 6h); macular edema screen at 3-4 months; lymphocytes; LFTs |
-| Siponimod (Mayzent) | PO | - | - | ROUTINE | - | Titration pack days 1-5, then 2 mg daily (1 mg if CYP2C9 *1/*3 or *2/*3) | Same as fingolimod plus CYP2C9 genotype | Same plus CYP2C9 *3/*3 genotype (contraindicated) | Same; genotype required before starting |
-| Ozanimod (Zeposia) | PO | - | - | ROUTINE | - | 0.23 mg daily Ã— 4 days, 0.46 mg daily Ã— 3 days, then 0.92 mg daily | Same as fingolimod | Same; concurrent MAOIs | Similar to fingolimod; no first-dose observation required (slower titration); macular edema screen |
-| Ponesimod (Ponvory) | PO | - | - | ROUTINE | - | 14-day titration pack, then 20 mg daily | Same as fingolimod | Same | Similar; no first-dose observation required |
+| Siponimod (Mayzent) | PO | - | - | ROUTINE | - | Titration pack days 1-5, then 2 mg daily (1 mg if CYP2C9 *1/*3 or *2/*3) | CBC, LFTs, ECG, ophthalmology exam, VZV IgG, CYP2C9 genotype | Bradycardia <55; 2nd/3rd degree AV block; sick sinus syndrome; QTc >500 ms; recent MI/stroke/TIA; CYP2C9 *3/*3 genotype | First-dose observation 6 hours; macular edema screen; lymphocytes; LFTs; genotype required |
+| Ozanimod (Zeposia) | PO | - | - | ROUTINE | - | 0.23 mg daily Ã— 4 days, 0.46 mg daily Ã— 3 days, then 0.92 mg daily | CBC, LFTs, ECG, ophthalmology exam, VZV IgG | Bradycardia <55; 2nd/3rd degree AV block; sick sinus syndrome; QTc >500 ms; recent MI/stroke/TIA; concurrent MAOIs | No first-dose observation required (slower titration); macular edema screen at 3-4 months; lymphocytes; LFTs |
+| Ponesimod (Ponvory) | PO | - | - | ROUTINE | - | 14-day titration pack, then 20 mg daily | CBC, LFTs, ECG, ophthalmology exam, VZV IgG | Bradycardia <55; 2nd/3rd degree AV block; sick sinus syndrome; QTc >500 ms; recent MI/stroke/TIA | No first-dose observation required; macular edema screen at 3-4 months; lymphocytes; LFTs |
 | **ORAL - HIGH EFFICACY (OTHER)** |
 | Cladribine (Mavenclad) | PO | - | - | ROUTINE | - | Year 1: 1.75 mg/kg divided into 2 treatment weeks (week 1 and week 5); Year 2: repeat same dosing; no treatment years 3-4 | CBC, LFTs, HIV, Hepatitis B/C, TB, VZV IgG | Active infection; HIV; active malignancy; pregnancy/breastfeeding; CrCl <30 | CBC at months 2 and 6 of each treatment year; lymphopenia expected and desired; screen for malignancy |
 | **INFUSION - HIGH EFFICACY** |
 | Natalizumab (Tysabri) | IV | - | - | ROUTINE | - | 300 mg IV every 4 weeks (or extended interval q6 weeks if stable and JCV negative) | JCV antibody, CBC, LFTs | JCV antibody positive with index >1.5 and prior immunosuppression (high PML risk); active infection | JCV antibody q6mo; MRI for PML surveillance q6-12mo; infusion reactions; REMS program required |
 | Ocrelizumab (Ocrevus) | IV | - | - | ROUTINE | - | Initial: 300 mg IV Ã— 2 doses 14 days apart; Maintenance: 600 mg IV every 6 months | Hepatitis B serology, TB test, immunoglobulins | Active Hepatitis B; active infection | Immunoglobulins annually; infection monitoring; infusion reactions (premedicate with methylprednisolone, antihistamine, acetaminophen) |
-| Ofatumumab (Kesimpta) | SC | - | - | ROUTINE | - | Initial: 20 mg SC at weeks 0, 1, 2; Maintenance: 20 mg SC monthly starting week 4 | Hepatitis B serology, TB test, immunoglobulins | Active Hepatitis B; active infection | Same as ocrelizumab; self-administered at home |
-| Ublituximab (Briumvi) | IV | - | - | ROUTINE | - | Initial: 150 mg IV day 1, 450 mg IV day 15; Maintenance: 450 mg IV every 24 weeks | Hepatitis B serology, TB test, immunoglobulins | Active Hepatitis B; active infection | Same as ocrelizumab; 1-hour infusion (faster) |
+| Ofatumumab (Kesimpta) | SC | - | - | ROUTINE | - | Initial: 20 mg SC at weeks 0, 1, 2; Maintenance: 20 mg SC monthly starting week 4 | Hepatitis B serology, TB test, immunoglobulins | Active Hepatitis B; active infection | Immunoglobulins annually; infection monitoring; self-administered at home |
+| Ublituximab (Briumvi) | IV | - | - | ROUTINE | - | Initial: 150 mg IV day 1, 450 mg IV day 15; Maintenance: 450 mg IV every 24 weeks | Hepatitis B serology, TB test, immunoglobulins | Active Hepatitis B; active infection | Immunoglobulins annually; infection monitoring; infusion reactions (premedicate); 1-hour infusion |
 | Alemtuzumab (Lemtrada) | IV | - | - | ROUTINE | - | Year 1: 12 mg IV daily Ã— 5 consecutive days; Year 2: 12 mg IV daily Ã— 3 consecutive days (12 months after year 1) | CBC, LFTs, TSH, creatinine, urinalysis, Hepatitis B/C, VZV IgG, TB, HPV screening | Active infection; HIV; ongoing autoimmune disease other than MS | CBC monthly Ã— 48 months; TSH q3mo Ã— 48 months; creatinine/urinalysis monthly Ã— 48 months; REMS program; secondary autoimmunity risk (thyroid, ITP, nephropathy) |
 | **MODERATE EFFICACY - SPECIAL POPULATIONS** |
 | Glatiramer acetate (Copaxone) | SC | - | - | ROUTINE | - | 20 mg daily or 40 mg TIW | None | Hypersensitivity | Preferred in pregnancy (no evidence of harm) |

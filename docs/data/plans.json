@@ -446,7 +446,7 @@
             "item": "MRA/MRV brain",
             "timing": "If vascular etiology suspected",
             "target": "Venous thrombosis, vascular malformation",
-            "contraindications": "Same as MRI",
+            "contraindications": "Hemodynamic instability, pacemaker",
             "ED": "—",
             "HOSP": "ROUTINE",
             "OPD": "—",
@@ -500,7 +500,10 @@
         "Stabilization (Time 0)": [
           {
             "item": "Airway positioning/management",
-            "dosing": "Head-tilt chin-lift, oral airway, prepare for intubation",
+            "dosing": {
+              "instructions": "Head-tilt chin-lift, oral airway, prepare for intubation",
+              "orderSentence": null
+            },
             "contraindications": "None",
             "monitoring": "O2 sat, airway patency",
             "ED": "STAT",
@@ -510,7 +513,10 @@
           },
           {
             "item": "Supplemental oxygen",
-            "dosing": "Non-rebreather 15 L/min or bag-valve-mask",
+            "dosing": {
+              "instructions": "Non-rebreather 15 L/min or bag-valve-mask",
+              "orderSentence": null
+            },
             "contraindications": "None",
             "monitoring": "O2 sat >94%",
             "ED": "STAT",
@@ -520,7 +526,10 @@
           },
           {
             "item": "IV access (two large-bore)",
-            "dosing": "18G or larger x2",
+            "dosing": {
+              "instructions": "18G or larger x2",
+              "orderSentence": null
+            },
             "contraindications": "None",
             "monitoring": "IV patency",
             "ED": "STAT",
@@ -530,7 +539,10 @@
           },
           {
             "item": "Cardiac monitoring",
-            "dosing": "Continuous telemetry",
+            "dosing": {
+              "instructions": "Continuous telemetry",
+              "orderSentence": null
+            },
             "contraindications": "None",
             "monitoring": "Rhythm, HR, BP",
             "ED": "STAT",
@@ -540,7 +552,10 @@
           },
           {
             "item": "Dextrose 50% IV",
-            "dosing": "50 mL IV push (25g) if glucose <70 or unknown",
+            "dosing": {
+              "instructions": "50 mL IV push (25g) if glucose <70 or unknown",
+              "orderSentence": null
+            },
             "contraindications": "Document hyperglycemia",
             "monitoring": "Glucose",
             "ED": "STAT",
@@ -550,7 +565,10 @@
           },
           {
             "item": "Thiamine IV",
-            "dosing": "100-500 mg IV BEFORE or WITH glucose",
+            "dosing": {
+              "instructions": "100-500 mg IV BEFORE or WITH glucose",
+              "orderSentence": null
+            },
             "contraindications": "None",
             "monitoring": "None",
             "ED": "STAT",
@@ -560,7 +578,10 @@
           },
           {
             "item": "Isotonic fluids",
-            "dosing": "NS or LR wide open initially",
+            "dosing": {
+              "instructions": "NS or LR wide open initially",
+              "orderSentence": null
+            },
             "contraindications": "Pulmonary edema",
             "monitoring": "BP, I/O",
             "ED": "STAT",
@@ -572,7 +593,10 @@
         "Emergent/First-Line - Benzodiazepines (Time 0-5 min)": [
           {
             "item": "Lorazepam IV",
-            "dosing": "0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min if still seizing; total max 8 mg",
+            "dosing": {
+              "instructions": "0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min if still seizing; total max 8 mg",
+              "orderSentence": null
+            },
             "contraindications": "Acute narrow-angle glaucoma",
             "monitoring": "RR, O2 sat, BP, sedation; airway equipment ready",
             "ED": "STAT",
@@ -582,7 +606,10 @@
           },
           {
             "item": "Midazolam IM",
-            "dosing": "10 mg IM (≥40 kg) or 0.2 mg/kg IM (if no IV access); single dose",
+            "dosing": {
+              "instructions": "10 mg IM (≥40 kg) or 0.2 mg/kg IM (if no IV access); single dose",
+              "orderSentence": null
+            },
             "contraindications": "Respiratory compromise",
             "monitoring": "RR, O2 sat; prepare IV access",
             "ED": "STAT",
@@ -592,8 +619,11 @@
           },
           {
             "item": "Midazolam IV",
-            "dosing": "0.2 mg/kg IV (max 10 mg); may repeat x1",
-            "contraindications": "Same as lorazepam",
+            "dosing": {
+              "instructions": "0.2 mg/kg IV (max 10 mg); may repeat x1",
+              "orderSentence": null
+            },
+            "contraindications": "Acute narrow-angle glaucoma",
             "monitoring": "RR, O2 sat, BP",
             "ED": "STAT",
             "HOSP": "STAT",
@@ -602,7 +632,10 @@
           },
           {
             "item": "Midazolam intranasal",
-            "dosing": "5 mg per nostril (10 mg total) if no IV/IM access",
+            "dosing": {
+              "instructions": "5 mg per nostril (10 mg total) if no IV/IM access",
+              "orderSentence": null
+            },
             "contraindications": "Nasal obstruction",
             "monitoring": "RR, O2 sat",
             "ED": "STAT",
@@ -612,7 +645,10 @@
           },
           {
             "item": "Midazolam buccal",
-            "dosing": "10 mg buccal (if available)",
+            "dosing": {
+              "instructions": "10 mg buccal (if available)",
+              "orderSentence": null
+            },
             "contraindications": "Oral trauma",
             "monitoring": "RR, O2 sat",
             "ED": "STAT",
@@ -622,7 +658,10 @@
           },
           {
             "item": "Diazepam IV",
-            "dosing": "0.15 mg/kg IV (max 10 mg); may repeat x1 in 5 min",
+            "dosing": {
+              "instructions": "0.15 mg/kg IV (max 10 mg); may repeat x1 in 5 min",
+              "orderSentence": null
+            },
             "contraindications": "Acute narrow-angle glaucoma",
             "monitoring": "RR, O2 sat; short duration - requires follow-up ASM",
             "ED": "STAT",
@@ -632,7 +671,10 @@
           },
           {
             "item": "Diazepam rectal",
-            "dosing": "0.2-0.5 mg/kg PR (max 20 mg); use rectal gel formulation",
+            "dosing": {
+              "instructions": "0.2-0.5 mg/kg PR (max 20 mg); use rectal gel formulation",
+              "orderSentence": null
+            },
             "contraindications": "Rectal pathology",
             "monitoring": "RR, O2 sat",
             "ED": "STAT",
@@ -644,7 +686,10 @@
         "Urgent/Second-Line ASMs (Time 5-20 min)": [
           {
             "item": "Levetiracetam IV (ESETT dosing)",
-            "dosing": "60 mg/kg IV (max 4500 mg) over 10-15 min",
+            "dosing": {
+              "instructions": "60 mg/kg IV (max 4500 mg) over 10-15 min",
+              "orderSentence": null
+            },
             "contraindications": "None absolute; reduce if CrCl <50",
             "monitoring": "Generally well tolerated; agitation",
             "ED": "STAT",
@@ -654,7 +699,10 @@
           },
           {
             "item": "Levetiracetam IV (conservative)",
-            "dosing": "40 mg/kg IV (max 4500 mg) over 10-15 min",
+            "dosing": {
+              "instructions": "40 mg/kg IV (max 4500 mg) over 10-15 min",
+              "orderSentence": null
+            },
             "contraindications": "None absolute; reduce if CrCl <50",
             "monitoring": "Generally well tolerated; agitation",
             "ED": "STAT",
@@ -664,7 +712,10 @@
           },
           {
             "item": "Fosphenytoin IV",
-            "dosing": "20 mg PE/kg IV at 150 mg PE/min; may give additional 5-10 mg PE/kg if needed",
+            "dosing": {
+              "instructions": "20 mg PE/kg IV at 150 mg PE/min; may give additional 5-10 mg PE/kg if needed",
+              "orderSentence": null
+            },
             "contraindications": "2nd/3rd degree AV block, sinus bradycardia, allergy",
             "monitoring": "Continuous cardiac monitor, BP q5min during infusion",
             "ED": "STAT",
@@ -674,7 +725,10 @@
           },
           {
             "item": "Valproate IV",
-            "dosing": "40 mg/kg IV (max 3000 mg) over 10 min",
+            "dosing": {
+              "instructions": "40 mg/kg IV (max 3000 mg) over 10 min",
+              "orderSentence": null
+            },
             "contraindications": "Pregnancy, hepatic disease, mitochondrial disease, urea cycle disorders, pancreatitis",
             "monitoring": "Ammonia, LFTs; avoid in unknown pregnancy status",
             "ED": "STAT",
@@ -684,7 +738,10 @@
           },
           {
             "item": "Lacosamide IV",
-            "dosing": "400 mg IV over 15 min (can give 200 mg over 5 min if urgent)",
+            "dosing": {
+              "instructions": "400 mg IV over 15 min (can give 200 mg over 5 min if urgent)",
+              "orderSentence": null
+            },
             "contraindications": "PR >200 ms, 2nd/3rd degree AV block, severe hepatic impairment",
             "monitoring": "ECG for PR interval",
             "ED": "STAT",
@@ -694,7 +751,10 @@
           },
           {
             "item": "Brivaracetam IV",
-            "dosing": "100-200 mg IV over 2-5 min; no titration needed",
+            "dosing": {
+              "instructions": "100-200 mg IV over 2-5 min; no titration needed",
+              "orderSentence": null
+            },
             "contraindications": "Hepatic impairment (reduce dose)",
             "monitoring": "Faster onset than levetiracetam; fewer behavioral effects",
             "ED": "STAT",
@@ -704,7 +764,10 @@
           },
           {
             "item": "Phenytoin IV",
-            "dosing": "20 mg/kg IV at max 50 mg/min (if fosphenytoin unavailable)",
+            "dosing": {
+              "instructions": "20 mg/kg IV at max 50 mg/min (if fosphenytoin unavailable)",
+              "orderSentence": null
+            },
             "contraindications": "AV block, sinus bradycardia",
             "monitoring": "Cardiac monitor; MUST use large vein, tissue necrosis risk",
             "ED": "STAT",
@@ -714,7 +777,10 @@
           },
           {
             "item": "Phenobarbital IV",
-            "dosing": "15-20 mg/kg IV at 50-100 mg/min",
+            "dosing": {
+              "instructions": "15-20 mg/kg IV at 50-100 mg/min",
+              "orderSentence": null
+            },
             "contraindications": "Severe respiratory disease, porphyria",
             "monitoring": "Respiratory depression; often requires intubation at this dose",
             "ED": "STAT",
@@ -726,7 +792,10 @@
         "Refractory SE - Anesthetic Infusions (Time 20-60 min)": [
           {
             "item": "Midazolam infusion",
-            "dosing": "Load: 0.2 mg/kg IV bolus; Infusion: start 0.1 mg/kg/hr, titrate by 0.1 mg/kg/hr q15min to seizure suppression; max 2 mg/kg/hr; target burst suppression on cEEG",
+            "dosing": {
+              "instructions": "Load: 0.2 mg/kg IV bolus; Infusion: start 0.1 mg/kg/hr, titrate by 0.1 mg/kg/hr q15min to seizure suppression; max 2 mg/kg/hr; target burst suppression on cEEG",
+              "orderSentence": null
+            },
             "contraindications": "Hemodynamic instability (relative)",
             "monitoring": "cEEG, BP (hypotension common), sedation scale",
             "ED": "URGENT",
@@ -736,7 +805,10 @@
           },
           {
             "item": "Propofol infusion",
-            "dosing": "Load: 1-2 mg/kg IV bolus (may repeat x1); Infusion: start 20 mcg/kg/min, titrate by 10 mcg/kg/min q5min; max 200 mcg/kg/min; target burst suppression",
+            "dosing": {
+              "instructions": "Load: 1-2 mg/kg IV bolus (may repeat x1); Infusion: start 20 mcg/kg/min, titrate by 10 mcg/kg/min q5min; max 200 mcg/kg/min; target burst suppression",
+              "orderSentence": null
+            },
             "contraindications": "Propofol infusion syndrome risk (limit to <48h at high dose), egg/soy allergy, pregnancy",
             "monitoring": "cEEG, triglycerides q24-48h, CPK, metabolic acidosis, BP",
             "ED": "—",
@@ -746,7 +818,10 @@
           },
           {
             "item": "Ketamine infusion",
-            "dosing": "Load: 1-2 mg/kg IV bolus; Infusion: start 1 mg/kg/hr, titrate by 0.5 mg/kg/hr q15-30min; max 5 mg/kg/hr",
+            "dosing": {
+              "instructions": "Load: 1-2 mg/kg IV bolus; Infusion: start 1 mg/kg/hr, titrate by 0.5 mg/kg/hr q15-30min; max 5 mg/kg/hr",
+              "orderSentence": null
+            },
             "contraindications": "Uncontrolled hypertension, elevated ICP (relative - actually may be neuroprotective)",
             "monitoring": "cEEG, BP (may increase), HR; less hypotension than other anesthetics",
             "ED": "URGENT",
@@ -756,8 +831,11 @@
           },
           {
             "item": "Ketamine + Midazolam (combination)",
-            "dosing": "Ketamine load 1 mg/kg + Midazolam load 0.2 mg/kg; then dual infusions per above",
-            "contraindications": "Per individual agents",
+            "dosing": {
+              "instructions": "Ketamine load 1 mg/kg + Midazolam load 0.2 mg/kg; Ketamine infusion 1-5 mg/kg/hr + Midazolam infusion 0.1-2 mg/kg/hr; titrate to burst suppression",
+              "orderSentence": null
+            },
+            "contraindications": "Uncontrolled hypertension, elevated ICP (relative), hemodynamic instability (relative)",
             "monitoring": "2024 data: combination may reduce SE duration faster than midazolam alone",
             "ED": "—",
             "HOSP": "—",
@@ -766,7 +844,10 @@
           },
           {
             "item": "Pentobarbital infusion",
-            "dosing": "Load: 5-15 mg/kg IV at 50 mg/min; Infusion: start 0.5-1 mg/kg/hr, titrate to burst suppression; max 5 mg/kg/hr",
+            "dosing": {
+              "instructions": "Load: 5-15 mg/kg IV at 50 mg/min; Infusion: start 0.5-1 mg/kg/hr, titrate to burst suppression; max 5 mg/kg/hr",
+              "orderSentence": null
+            },
             "contraindications": "Severe cardiac dysfunction",
             "monitoring": "cEEG, BP (significant hypotension - need pressors), cardiac output; longest half-life",
             "ED": "—",
@@ -778,7 +859,10 @@
         "Super-Refractory SE - Additional Agents": [
           {
             "item": "Add second anesthetic",
-            "dosing": "Combine midazolam + propofol, or add ketamine to either",
+            "dosing": {
+              "instructions": "Combine midazolam + propofol, or add ketamine to either",
+              "orderSentence": null
+            },
             "contraindications": "Per agent",
             "monitoring": "cEEG, hemodynamics",
             "ED": "—",
@@ -788,7 +872,10 @@
           },
           {
             "item": "Topiramate (enteral)",
-            "dosing": "Load 300-400 mg via NGT; then 200-400 mg BID; max 1600 mg/day",
+            "dosing": {
+              "instructions": "Load 300-400 mg via NGT; then 200-400 mg BID; max 1600 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Metabolic acidosis, kidney stones",
             "monitoring": "Bicarbonate, renal function",
             "ED": "—",
@@ -798,7 +885,10 @@
           },
           {
             "item": "Lacosamide (if not tried)",
-            "dosing": "400 mg IV, then 200-400 mg BID",
+            "dosing": {
+              "instructions": "400 mg IV, then 200-400 mg BID",
+              "orderSentence": null
+            },
             "contraindications": "PR prolongation",
             "monitoring": "ECG",
             "ED": "—",
@@ -808,7 +898,10 @@
           },
           {
             "item": "Perampanel (enteral)",
-            "dosing": "4-8 mg via NGT daily; titrate to 12 mg daily",
+            "dosing": {
+              "instructions": "4-8 mg via NGT daily; titrate to 12 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "None absolute",
             "monitoring": "Aggression, sedation",
             "ED": "—",
@@ -818,7 +911,10 @@
           },
           {
             "item": "Magnesium sulfate infusion",
-            "dosing": "4-6 g IV over 20 min, then 1-2 g/hr infusion; target Mg 3.5-4 mg/dL",
+            "dosing": {
+              "instructions": "4-6 g IV over 20 min, then 1-2 g/hr infusion; target Mg 3.5-4 mg/dL",
+              "orderSentence": null
+            },
             "contraindications": "Renal failure (relative), myasthenia",
             "monitoring": "Mg levels, reflexes, respiratory status",
             "ED": "—",
@@ -828,7 +924,10 @@
           },
           {
             "item": "Pyridoxine (empiric trial)",
-            "dosing": "100-500 mg IV; may try single dose empirically",
+            "dosing": {
+              "instructions": "100-500 mg IV; may try single dose empirically",
+              "orderSentence": null
+            },
             "contraindications": "None",
             "monitoring": "Response to treatment",
             "ED": "—",
@@ -838,7 +937,10 @@
           },
           {
             "item": "Ketogenic diet",
-            "dosing": "Initiate within 7 days per NORSE consensus; requires nutrition support",
+            "dosing": {
+              "instructions": "Initiate within 7 days per NORSE consensus; requires nutrition support",
+              "orderSentence": null
+            },
             "contraindications": "Pyruvate carboxylase deficiency, fatty acid oxidation disorders",
             "monitoring": "Ketones, glucose, lipids",
             "ED": "—",
@@ -848,7 +950,10 @@
           },
           {
             "item": "Hypothermia (32-35°C)",
-            "dosing": "Targeted temperature management x 24-48h",
+            "dosing": {
+              "instructions": "Targeted temperature management x 24-48h",
+              "orderSentence": null
+            },
             "contraindications": "Coagulopathy, severe infection",
             "monitoring": "Temperature, coagulation, infection",
             "ED": "—",
@@ -858,7 +963,10 @@
           },
           {
             "item": "Electroconvulsive therapy",
-            "dosing": "If all else fails; requires anesthesia",
+            "dosing": {
+              "instructions": "If all else fails; requires anesthesia",
+              "orderSentence": null
+            },
             "contraindications": "Raised ICP, recent stroke",
             "monitoring": "Per ECT protocol",
             "ED": "—",
@@ -868,7 +976,10 @@
           },
           {
             "item": "Epilepsy surgery (emergent)",
-            "dosing": "Resection if focal lesion identified",
+            "dosing": {
+              "instructions": "Resection if focal lesion identified",
+              "orderSentence": null
+            },
             "contraindications": "Eloquent cortex, multifocal",
             "monitoring": "Per surgical team",
             "ED": "—",
@@ -899,7 +1010,10 @@
           {
             "item": "Norepinephrine",
             "indication": "Hypotension from anesthetics",
-            "dosing": "Start 0.1 mcg/kg/min; titrate to MAP ≥65",
+            "dosing": {
+              "instructions": "Start 0.1 mcg/kg/min; titrate to MAP ≥65",
+              "orderSentence": null
+            },
             "contraindications": "Hypovolemia (correct first)",
             "monitoring": "Arterial line, MAP",
             "ED": "—",
@@ -910,7 +1024,10 @@
           {
             "item": "Vasopressin",
             "indication": "Adjunct pressor",
-            "dosing": "0.04 units/min fixed dose",
+            "dosing": {
+              "instructions": "0.04 units/min fixed dose",
+              "orderSentence": null
+            },
             "contraindications": "Cardiac ischemia",
             "monitoring": "MAP, cardiac status",
             "ED": "—",
@@ -921,7 +1038,10 @@
           {
             "item": "Fentanyl infusion",
             "indication": "Analgesia/sedation adjunct",
-            "dosing": "25-100 mcg/hr; titrate to comfort",
+            "dosing": {
+              "instructions": "25-100 mcg/hr; titrate to comfort",
+              "orderSentence": null
+            },
             "contraindications": "Hemodynamic instability",
             "monitoring": "Pain scale, respiratory status",
             "ED": "—",
@@ -932,8 +1052,11 @@
           {
             "item": "Propofol (sub-anesthetic)",
             "indication": "Sedation during cEEG",
-            "dosing": "5-50 mcg/kg/min",
-            "contraindications": "Same as anesthetic use",
+            "dosing": {
+              "instructions": "5-50 mcg/kg/min",
+              "orderSentence": null
+            },
+            "contraindications": "Propofol infusion syndrome risk, egg/soy allergy, pregnancy",
             "monitoring": "Sedation scale",
             "ED": "—",
             "HOSP": "—",
@@ -943,7 +1066,10 @@
           {
             "item": "Dexmedetomidine",
             "indication": "Sedation, possible antiseizure",
-            "dosing": "0.2-1.5 mcg/kg/hr",
+            "dosing": {
+              "instructions": "0.2-1.5 mcg/kg/hr",
+              "orderSentence": null
+            },
             "contraindications": "Bradycardia, heart block",
             "monitoring": "HR, BP",
             "ED": "—",
@@ -954,7 +1080,10 @@
           {
             "item": "Pantoprazole",
             "indication": "Stress ulcer prophylaxis",
-            "dosing": "40 mg IV daily",
+            "dosing": {
+              "instructions": "40 mg IV daily",
+              "orderSentence": null
+            },
             "contraindications": "None significant",
             "monitoring": "GI bleeding",
             "ED": "—",
@@ -965,7 +1094,10 @@
           {
             "item": "Enoxaparin",
             "indication": "DVT prophylaxis",
-            "dosing": "40 mg SC daily (start when stable)",
+            "dosing": {
+              "instructions": "40 mg SC daily (start when stable)",
+              "orderSentence": null
+            },
             "contraindications": "Active bleeding, recent LP",
             "monitoring": "Platelets, bleeding",
             "ED": "—",
@@ -976,7 +1108,10 @@
           {
             "item": "Insulin infusion",
             "indication": "Stress hyperglycemia",
-            "dosing": "Per ICU protocol; target glucose 140-180 mg/dL",
+            "dosing": {
+              "instructions": "Per ICU protocol; target glucose 140-180 mg/dL",
+              "orderSentence": null
+            },
             "contraindications": "Hypoglycemia",
             "monitoring": "Glucose q1-4h",
             "ED": "URGENT",
@@ -987,7 +1122,10 @@
           {
             "item": "Bowel regimen",
             "indication": "Constipation prophylaxis",
-            "dosing": "Docusate 100 mg BID + senna 8.6 mg daily; escalate to bisacodyl or lactulose PRN",
+            "dosing": {
+              "instructions": "Docusate 100 mg BID + senna 8.6 mg daily; escalate to bisacodyl or lactulose PRN",
+              "orderSentence": null
+            },
             "contraindications": "Bowel obstruction",
             "monitoring": "Bowel movements",
             "ED": "—",
@@ -998,7 +1136,10 @@
           {
             "item": "Skin care protocol",
             "indication": "Pressure injury prevention",
-            "dosing": "Turn q2h, specialty mattress, moisture barrier, Braden scale assessment",
+            "dosing": {
+              "instructions": "Turn q2h, specialty mattress, moisture barrier, Braden scale assessment",
+              "orderSentence": null
+            },
             "contraindications": "None",
             "monitoring": "Skin integrity daily",
             "ED": "—",
@@ -1009,7 +1150,10 @@
           {
             "item": "Eye care",
             "indication": "Corneal protection",
-            "dosing": "Lubricating drops q4h, eyelid taping if incomplete closure",
+            "dosing": {
+              "instructions": "Lubricating drops q4h, eyelid taping if incomplete closure",
+              "orderSentence": null
+            },
             "contraindications": "None",
             "monitoring": "Corneal integrity",
             "ED": "—",
@@ -2016,7 +2160,7 @@
             "item": "MRA/MRV brain",
             "timing": "If vascular etiology suspected",
             "target": "AVM, aneurysm, venous thrombosis",
-            "contraindications": "Same as MRI",
+            "contraindications": "GFR <30, gadolinium allergy, pacemaker",
             "ED": "—",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -2110,7 +2254,10 @@
         "Acute/Emergent": [
           {
             "item": "Lorazepam IV/IM (if actively seizing)",
-            "dosing": "0.1 mg/kg IV (max 4 mg); may repeat once in 5 min",
+            "dosing": {
+              "instructions": "0.1 mg/kg IV (max 4 mg); may repeat once in 5 min",
+              "orderSentence": null
+            },
             "contraindications": "Respiratory depression, severe hypotension",
             "monitoring": "RR, O2 sat, BP; have airway equipment ready",
             "ED": "STAT",
@@ -2120,7 +2267,10 @@
           },
           {
             "item": "Midazolam IM (if no IV access)",
-            "dosing": "10 mg IM (if >40 kg) or 0.2 mg/kg IM",
+            "dosing": {
+              "instructions": "10 mg IM (if >40 kg) or 0.2 mg/kg IM",
+              "orderSentence": null
+            },
             "contraindications": "Respiratory depression",
             "monitoring": "RR, O2 sat; have airway equipment ready",
             "ED": "STAT",
@@ -2130,7 +2280,10 @@
           },
           {
             "item": "Midazolam intranasal (if no IV access)",
-            "dosing": "5 mg per nostril (total 10 mg)",
+            "dosing": {
+              "instructions": "5 mg per nostril (total 10 mg)",
+              "orderSentence": null
+            },
             "contraindications": "Respiratory depression",
             "monitoring": "RR, O2 sat",
             "ED": "STAT",
@@ -2140,7 +2293,10 @@
           },
           {
             "item": "Dextrose 50% IV",
-            "dosing": "25-50 mL IV if hypoglycemia confirmed or suspected",
+            "dosing": {
+              "instructions": "25-50 mL IV if hypoglycemia confirmed or suspected",
+              "orderSentence": null
+            },
             "contraindications": "Hyperglycemia",
             "monitoring": "Glucose",
             "ED": "STAT",
@@ -2150,7 +2306,10 @@
           },
           {
             "item": "Thiamine IV",
-            "dosing": "100-500 mg IV BEFORE glucose if alcohol use suspected",
+            "dosing": {
+              "instructions": "100-500 mg IV BEFORE glucose if alcohol use suspected",
+              "orderSentence": null
+            },
             "contraindications": "None significant",
             "monitoring": "None",
             "ED": "STAT",
@@ -2160,7 +2319,10 @@
           },
           {
             "item": "Supplemental oxygen",
-            "dosing": "2-4 L NC or non-rebreather as needed",
+            "dosing": {
+              "instructions": "2-4 L NC or non-rebreather as needed",
+              "orderSentence": null
+            },
             "contraindications": "None",
             "monitoring": "O2 sat >94%",
             "ED": "STAT",
@@ -2170,7 +2332,10 @@
           },
           {
             "item": "IV fluids (isotonic)",
-            "dosing": "NS or LR bolus if hypotensive; maintenance if euvolemic",
+            "dosing": {
+              "instructions": "NS or LR bolus if hypotensive; maintenance if euvolemic",
+              "orderSentence": null
+            },
             "contraindications": "Fluid overload, severe hyponatremia",
             "monitoring": "I/O, BP, Na",
             "ED": "STAT",
@@ -2180,7 +2345,10 @@
           },
           {
             "item": "Flumazenil (rescue only)",
-            "dosing": "0.2 mg IV over 30 sec; may repeat 0.2 mg q1min to max 1 mg",
+            "dosing": {
+              "instructions": "0.2 mg IV over 30 sec; may repeat 0.2 mg q1min to max 1 mg",
+              "orderSentence": null
+            },
             "contraindications": "Chronic benzodiazepine use; seizure history; tricyclic overdose",
             "monitoring": "**CAUTION:** May lower seizure threshold and precipitate seizures; use only if severe respiratory depression unresponsive to supportive care",
             "ED": "STAT",
@@ -2193,7 +2361,10 @@
           {
             "item": "Levetiracetam IV",
             "indication": "First-line acute loading",
-            "dosing": "40-60 mg/kg IV (max 4500 mg) over 15 min; OR 1500-3000 mg IV",
+            "dosing": {
+              "instructions": "40-60 mg/kg IV (max 4500 mg) over 15 min; OR 1500-3000 mg IV",
+              "orderSentence": null
+            },
             "contraindications": "None significant; reduce dose if CrCl <50",
             "monitoring": "Somnolence, agitation (rare)",
             "ED": "STAT",
@@ -2204,7 +2375,10 @@
           {
             "item": "Levetiracetam PO",
             "indication": "Acute loading if stable",
-            "dosing": "1500-3000 mg PO × 1, then start maintenance",
+            "dosing": {
+              "instructions": "1500-3000 mg PO × 1, then start maintenance",
+              "orderSentence": null
+            },
             "contraindications": "Same",
             "monitoring": "Same",
             "ED": "URGENT",
@@ -2215,7 +2389,10 @@
           {
             "item": "Fosphenytoin IV",
             "indication": "Alternative first-line",
-            "dosing": "20 mg PE/kg IV at 150 mg PE/min (max rate)",
+            "dosing": {
+              "instructions": "20 mg PE/kg IV at 150 mg PE/min (max rate)",
+              "orderSentence": null
+            },
             "contraindications": "AV block, sinus bradycardia, pregnancy (relative)",
             "monitoring": "Continuous cardiac monitoring, BP; purple glove syndrome rare with fosphenytoin",
             "ED": "STAT",
@@ -2226,7 +2403,10 @@
           {
             "item": "Phenytoin IV",
             "indication": "If fosphenytoin unavailable",
-            "dosing": "20 mg/kg IV at max 50 mg/min",
+            "dosing": {
+              "instructions": "20 mg/kg IV at max 50 mg/min",
+              "orderSentence": null
+            },
             "contraindications": "AV block, sinus bradycardia, pregnancy",
             "monitoring": "Cardiac monitor, BP; give via large vein (tissue necrosis risk)",
             "ED": "STAT",
@@ -2237,7 +2417,10 @@
           {
             "item": "Valproate IV",
             "indication": "Alternative (broad-spectrum)",
-            "dosing": "40 mg/kg IV over 10 min (max 3000 mg)",
+            "dosing": {
+              "instructions": "40 mg/kg IV over 10 min (max 3000 mg)",
+              "orderSentence": null
+            },
             "contraindications": "Pregnancy (teratogenic - neural tube defects), hepatic disease, mitochondrial disease, urea cycle disorders",
             "monitoring": "LFTs, ammonia, platelets; pancreatitis risk",
             "ED": "STAT",
@@ -2248,7 +2431,10 @@
           {
             "item": "Lacosamide IV",
             "indication": "Alternative first-line",
-            "dosing": "200-400 mg IV over 15-30 min",
+            "dosing": {
+              "instructions": "200-400 mg IV over 15-30 min",
+              "orderSentence": null
+            },
             "contraindications": "PR prolongation >200 ms, 2nd/3rd degree AV block",
             "monitoring": "ECG for PR interval; dizziness",
             "ED": "URGENT",
@@ -2261,7 +2447,10 @@
           {
             "item": "Levetiracetam",
             "indication": "First-line maintenance",
-            "dosing": "500-1500 mg PO/IV BID; start 500 mg BID, may increase by 500 mg/dose weekly; max 3000 mg/day",
+            "dosing": {
+              "instructions": "500-1500 mg PO/IV BID; start 500 mg BID, may increase by 500 mg/dose weekly; max 3000 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Renal impairment (adjust per CrCl)",
             "monitoring": "Behavioral changes (irritability, depression - \"Keppra rage\"); renal function",
             "ED": "—",
@@ -2272,7 +2461,10 @@
           {
             "item": "Lamotrigine",
             "indication": "First-line (especially women of childbearing potential)",
-            "dosing": "Start 25 mg daily × 2 weeks; then 50 mg daily × 2 weeks; then 100 mg daily; target 200-400 mg/day in divided doses",
+            "dosing": {
+              "instructions": "Start 25 mg daily × 2 weeks; then 50 mg daily × 2 weeks; then 100 mg daily; target 200-400 mg/day in divided doses",
+              "orderSentence": null
+            },
             "contraindications": "Slow titration required (SJS/TEN risk)",
             "monitoring": "Rash (stop if any rash; SJS/TEN risk higher with fast titration or valproate co-therapy)",
             "ED": "—",
@@ -2283,7 +2475,10 @@
           {
             "item": "Lacosamide",
             "indication": "First-line alternative",
-            "dosing": "Start 100 mg PO BID; increase by 100 mg/day weekly; target 200-400 mg BID; max 400 mg BID",
+            "dosing": {
+              "instructions": "Start 100 mg PO BID; increase by 100 mg/day weekly; target 200-400 mg BID; max 400 mg BID",
+              "orderSentence": null
+            },
             "contraindications": "PR prolongation, 2nd/3rd degree AV block, severe hepatic impairment",
             "monitoring": "ECG at baseline and dose changes; dizziness, diplopia",
             "ED": "—",
@@ -2294,7 +2489,10 @@
           {
             "item": "Oxcarbazepine",
             "indication": "Focal seizures",
-            "dosing": "Start 300 mg PO BID; increase by 300-600 mg/day every week; target 1200-2400 mg/day in divided doses",
+            "dosing": {
+              "instructions": "Start 300 mg PO BID; increase by 300-600 mg/day every week; target 1200-2400 mg/day in divided doses",
+              "orderSentence": null
+            },
             "contraindications": "Hypersensitivity to carbamazepine",
             "monitoring": "Sodium (hyponatremia in 2-3%); HLA-B*1502 screening in at-risk populations",
             "ED": "—",
@@ -2305,7 +2503,10 @@
           {
             "item": "Carbamazepine",
             "indication": "Focal seizures",
-            "dosing": "Start 200 mg PO BID; increase by 200 mg/day weekly; target 800-1200 mg/day; max 1600 mg/day",
+            "dosing": {
+              "instructions": "Start 200 mg PO BID; increase by 200 mg/day weekly; target 800-1200 mg/day; max 1600 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "AV block; bone marrow suppression; concurrent MAOIs",
             "monitoring": "CBC, LFTs, sodium at baseline and periodically; HLA-B*1502 screening",
             "ED": "—",
@@ -2316,7 +2517,10 @@
           {
             "item": "Valproate/Divalproex",
             "indication": "Generalized seizures",
-            "dosing": "Start 10-15 mg/kg/day in divided doses; increase by 5-10 mg/kg/week; target 1000-2000 mg/day; max 60 mg/kg/day",
+            "dosing": {
+              "instructions": "Start 10-15 mg/kg/day in divided doses; increase by 5-10 mg/kg/week; target 1000-2000 mg/day; max 60 mg/kg/day",
+              "orderSentence": null
+            },
             "contraindications": "Pregnancy (teratogenic); hepatic disease; mitochondrial disease; pancreatitis history",
             "monitoring": "LFTs, ammonia, CBC, platelets at baseline, then q3-6mo; weight gain, hair loss, tremor",
             "ED": "—",
@@ -2327,7 +2531,10 @@
           {
             "item": "Phenytoin",
             "indication": "Focal or generalized",
-            "dosing": "300-400 mg daily (extended release) or divided TID (immediate release); adjust by level",
+            "dosing": {
+              "instructions": "300-400 mg daily (extended release) or divided TID (immediate release); adjust by level",
+              "orderSentence": null
+            },
             "contraindications": "Pregnancy (relative - fetal hydantoin syndrome); AV block",
             "monitoring": "Free phenytoin level (target 1-2 μg/mL); total level 10-20 μg/mL; CBC, LFTs; gingival hyperplasia, hirsutism",
             "ED": "—",
@@ -2338,7 +2545,10 @@
           {
             "item": "Brivaracetam",
             "indication": "Alternative to levetiracetam",
-            "dosing": "Start 50 mg PO BID; may increase to 100 mg BID; max 200 mg/day",
+            "dosing": {
+              "instructions": "Start 50 mg PO BID; may increase to 100 mg BID; max 200 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Hepatic impairment (reduce dose)",
             "monitoring": "Less behavioral side effects than levetiracetam; somnolence; Schedule C-V",
             "ED": "—",
@@ -2349,7 +2559,10 @@
           {
             "item": "Zonisamide",
             "indication": "Adjunctive or monotherapy",
-            "dosing": "Start 100 mg daily; increase by 100 mg every 2 weeks; target 300-400 mg daily; max 600 mg/day",
+            "dosing": {
+              "instructions": "Start 100 mg daily; increase by 100 mg every 2 weeks; target 300-400 mg daily; max 600 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Sulfonamide allergy; kidney stones",
             "monitoring": "Kidney stones (carbonic anhydrase inhibitor); oligohidrosis (pediatric); metabolic acidosis",
             "ED": "—",
@@ -2360,7 +2573,10 @@
           {
             "item": "Topiramate",
             "indication": "Adjunctive or monotherapy",
-            "dosing": "Start 25 mg BID; increase by 50 mg/day weekly; target 200-400 mg/day in divided doses; max 400 mg/day",
+            "dosing": {
+              "instructions": "Start 25 mg BID; increase by 50 mg/day weekly; target 200-400 mg/day in divided doses; max 400 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Kidney stones; metabolic acidosis; glaucoma",
             "monitoring": "Cognitive impairment (\"dopamax\"); paresthesias; kidney stones; weight loss",
             "ED": "—",
@@ -2371,7 +2587,10 @@
           {
             "item": "Clobazam",
             "indication": "Adjunctive therapy",
-            "dosing": "Start 5-10 mg daily; increase by 5-10 mg weekly; max 40 mg/day in divided doses",
+            "dosing": {
+              "instructions": "Start 5-10 mg daily; increase by 5-10 mg weekly; max 40 mg/day in divided doses",
+              "orderSentence": null
+            },
             "contraindications": "Severe hepatic impairment; sleep apnea (untreated)",
             "monitoring": "Sedation; tolerance may develop; CYP2C19 poor metabolizers need lower dose",
             "ED": "—",
@@ -2382,7 +2601,10 @@
           {
             "item": "Perampanel",
             "indication": "Adjunctive for focal or GTCS",
-            "dosing": "Start 2 mg qHS; increase by 2 mg weekly; target 8-12 mg qHS; max 12 mg/day",
+            "dosing": {
+              "instructions": "Start 2 mg qHS; increase by 2 mg weekly; target 8-12 mg qHS; max 12 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "None absolute",
             "monitoring": "Psychiatric effects (aggression, hostility); dizziness; take at bedtime; Schedule III",
             "ED": "—",
@@ -2393,7 +2615,10 @@
           {
             "item": "Cenobamate",
             "indication": "Adjunctive for focal",
-            "dosing": "Start 12.5 mg daily × 2 weeks; titrate slowly per package insert; target 200-400 mg daily",
+            "dosing": {
+              "instructions": "Start 12.5 mg daily × 2 weeks; titrate slowly per package insert; target 200-400 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Familial short QT syndrome",
             "monitoring": "Very slow titration required (DRESS risk); QT shortening; titration pack available",
             "ED": "—",
@@ -2404,7 +2629,10 @@
           {
             "item": "Phenobarbital",
             "indication": "Refractory or resource-limited",
-            "dosing": "Load 15-20 mg/kg IV; maintenance 1-3 mg/kg/day (60-180 mg/day); target level 15-40 μg/mL",
+            "dosing": {
+              "instructions": "Load 15-20 mg/kg IV; maintenance 1-3 mg/kg/day (60-180 mg/day); target level 15-40 μg/mL",
+              "orderSentence": null
+            },
             "contraindications": "Porphyria; severe respiratory disease",
             "monitoring": "Sedation; cognitive effects; drug interactions (CYP inducer); level monitoring",
             "ED": "—",
@@ -2417,7 +2645,10 @@
           {
             "item": "Acetaminophen",
             "indication": "Post-ictal headache",
-            "dosing": "650-1000 mg PO/IV q6h PRN; max 3000 mg/day (2000 mg if liver disease)",
+            "dosing": {
+              "instructions": "650-1000 mg PO/IV q6h PRN; max 3000 mg/day (2000 mg if liver disease)",
+              "orderSentence": null
+            },
             "contraindications": "Severe hepatic impairment",
             "monitoring": "LFTs if chronic use",
             "ED": "URGENT",
@@ -2428,7 +2659,10 @@
           {
             "item": "Ibuprofen",
             "indication": "Post-ictal headache",
-            "dosing": "400-600 mg PO q6-8h PRN; max 2400 mg/day",
+            "dosing": {
+              "instructions": "400-600 mg PO q6-8h PRN; max 2400 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Renal impairment; GI bleed; post-CABG",
             "monitoring": "Renal function if prolonged use",
             "ED": "—",
@@ -2439,7 +2673,10 @@
           {
             "item": "Ondansetron",
             "indication": "Post-ictal nausea",
-            "dosing": "4-8 mg IV/PO q8h PRN",
+            "dosing": {
+              "instructions": "4-8 mg IV/PO q8h PRN",
+              "orderSentence": null
+            },
             "contraindications": "QT prolongation; severe hepatic impairment",
             "monitoring": "QTc if multiple doses",
             "ED": "URGENT",
@@ -2450,7 +2687,10 @@
           {
             "item": "Lorazepam",
             "indication": "Post-ictal agitation (if severe)",
-            "dosing": "0.5-2 mg IV/PO PRN; use with caution",
+            "dosing": {
+              "instructions": "0.5-2 mg IV/PO PRN; use with caution",
+              "orderSentence": null
+            },
             "contraindications": "Respiratory depression; altered mental status",
             "monitoring": "RR, sedation level; avoid if post-ictal confusion resolving",
             "ED": "URGENT",
@@ -2461,7 +2701,10 @@
           {
             "item": "Sertraline",
             "indication": "Depression/anxiety (chronic)",
-            "dosing": "Start 50 mg daily; increase by 25-50 mg q1-2 weeks; max 200 mg daily",
+            "dosing": {
+              "instructions": "Start 50 mg daily; increase by 25-50 mg q1-2 weeks; max 200 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Concurrent MAOIs",
             "monitoring": "Suicidality monitoring weeks 1-4",
             "ED": "—",
@@ -2472,7 +2715,10 @@
           {
             "item": "Escitalopram",
             "indication": "Depression/anxiety (chronic)",
-            "dosing": "Start 10 mg daily; max 20 mg daily",
+            "dosing": {
+              "instructions": "Start 10 mg daily; max 20 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Concurrent MAOIs; QT prolongation",
             "monitoring": "QTc if risk factors",
             "ED": "—",
@@ -2483,7 +2729,10 @@
           {
             "item": "Melatonin",
             "indication": "Sleep disturbance",
-            "dosing": "3-5 mg PO qHS",
+            "dosing": {
+              "instructions": "3-5 mg PO qHS",
+              "orderSentence": null
+            },
             "contraindications": "None significant",
             "monitoring": "Well tolerated; may help with ASM-related sleep disruption",
             "ED": "—",
@@ -2494,7 +2743,10 @@
           {
             "item": "Trazodone",
             "indication": "Insomnia",
-            "dosing": "25-100 mg PO qHS",
+            "dosing": {
+              "instructions": "25-100 mg PO qHS",
+              "orderSentence": null
+            },
             "contraindications": "Concurrent MAOIs",
             "monitoring": "Orthostatic hypotension; priapism (rare)",
             "ED": "—",
@@ -2506,7 +2758,10 @@
         "Second-line/Refractory": [
           {
             "item": "Add second ASM",
-            "dosing": "Choose complementary mechanism; see maintenance options",
+            "dosing": {
+              "instructions": "Choose complementary mechanism; see maintenance options",
+              "orderSentence": null
+            },
             "contraindications": "Per specific agent",
             "monitoring": "Per specific agent",
             "ED": "—",
@@ -2516,7 +2771,10 @@
           },
           {
             "item": "Epilepsy surgery evaluation referral",
-            "dosing": "For drug-resistant epilepsy (failed 2+ appropriately chosen ASMs)",
+            "dosing": {
+              "instructions": "For drug-resistant epilepsy (failed 2+ appropriately chosen ASMs)",
+              "orderSentence": null
+            },
             "contraindications": "N/A",
             "monitoring": "N/A",
             "ED": "—",
@@ -2526,7 +2784,10 @@
           },
           {
             "item": "Vagus nerve stimulator (VNS)",
-            "dosing": "For drug-resistant epilepsy not surgical candidates",
+            "dosing": {
+              "instructions": "For drug-resistant epilepsy not surgical candidates",
+              "orderSentence": null
+            },
             "contraindications": "N/A",
             "monitoring": "Device checks",
             "ED": "—",
@@ -2536,7 +2797,10 @@
           },
           {
             "item": "Dietary therapy (ketogenic diet, modified Atkins)",
-            "dosing": "For drug-resistant epilepsy",
+            "dosing": {
+              "instructions": "For drug-resistant epilepsy",
+              "orderSentence": null
+            },
             "contraindications": "Fatty acid oxidation disorders; pyruvate carboxylase deficiency",
             "monitoring": "Metabolic panels; lipids; kidney function",
             "ED": "—",
@@ -3443,7 +3707,7 @@
             "ICU": "URGENT",
             "timing": "With brain MRI",
             "target": "Cord lesions (short segment, peripheral, dorsal)",
-            "contraindications": "Same as above"
+            "contraindications": "GFR <30, gadolinium allergy, pacemaker"
           },
           {
             "item": "MRI T-spine with and without contrast",
@@ -3453,7 +3717,7 @@
             "ICU": "URGENT",
             "timing": "With brain/C-spine",
             "target": "Cord lesions",
-            "contraindications": "Same as above"
+            "contraindications": "GFR <30, gadolinium allergy, pacemaker"
           }
         ],
         "Extended": [
@@ -3539,7 +3803,10 @@
             "HOSP": "STAT",
             "OPD": "-",
             "ICU": "STAT",
-            "dosing": "1000 mg IV daily Ã— 3-5 days",
+            "dosing": {
+              "instructions": "1000 mg IV daily Ã— 3-5 days",
+              "orderSentence": null
+            },
             "contraindications": "Active untreated infection, uncontrolled diabetes, psychosis history",
             "monitoring": "Glucose q6h (target <180), BP, mood, sleep, I/O"
           },
@@ -3549,7 +3816,10 @@
             "HOSP": "STAT",
             "OPD": "-",
             "ICU": "STAT",
-            "dosing": "20-40 mg daily during steroids",
+            "dosing": {
+              "instructions": "20-40 mg daily during steroids",
+              "orderSentence": null
+            },
             "contraindications": "PPI allergy",
             "monitoring": "None routine"
           },
@@ -3559,7 +3829,10 @@
             "HOSP": "STAT",
             "OPD": "-",
             "ICU": "STAT",
-            "dosing": "Per protocol if glucose >180 mg/dL",
+            "dosing": {
+              "instructions": "Per protocol if glucose >180 mg/dL",
+              "orderSentence": null
+            },
             "contraindications": "Hypoglycemia risk",
             "monitoring": "Glucose q6h"
           },
@@ -3569,8 +3842,11 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "60 mg daily Ã— 7 days, then taper over 2 weeks",
-            "contraindications": "Same as IV steroids",
+            "dosing": {
+              "instructions": "60 mg daily Ã— 7 days, then taper over 2 weeks",
+              "orderSentence": null
+            },
+            "contraindications": "Active untreated infection, uncontrolled diabetes, psychosis history",
             "monitoring": "Glucose, BP, mood"
           }
         ],
@@ -3582,7 +3858,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "ROUTINE",
-            "dosing": "Start 5 mg TID; increase by 5 mg/dose every 3 days; max 80 mg/day in divided doses",
+            "dosing": {
+              "instructions": "Start 5 mg TID; increase by 5 mg/dose every 3 days; max 80 mg/day in divided doses",
+              "orderSentence": null
+            },
             "contraindications": "Renal impairment (reduce dose)",
             "monitoring": "Sedation, weakness; do NOT stop abruptly (withdrawal risk)"
           },
@@ -3593,7 +3872,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "ROUTINE",
-            "dosing": "Start 2 mg qHS or TID; increase by 2-4 mg every 3-4 days; max 36 mg/day in 3 divided doses",
+            "dosing": {
+              "instructions": "Start 2 mg qHS or TID; increase by 2-4 mg every 3-4 days; max 36 mg/day in 3 divided doses",
+              "orderSentence": null
+            },
             "contraindications": "Hepatic impairment; concurrent ciprofloxacin or fluvoxamine (CYP1A2 inhibitors)",
             "monitoring": "LFTs at baseline, 1, 3, 6 months; sedation; hypotension"
           },
@@ -3604,7 +3886,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "ROUTINE",
-            "dosing": "Start 300 mg qHS; increase by 300 mg every 1-3 days; target 900-1800 mg TID; max 3600 mg/day",
+            "dosing": {
+              "instructions": "Start 300 mg qHS; increase by 300 mg every 1-3 days; target 900-1800 mg TID; max 3600 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Renal impairment (adjust dose per CrCl)",
             "monitoring": "Sedation, dizziness, peripheral edema"
           },
@@ -3615,7 +3900,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "ROUTINE",
-            "dosing": "Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID",
+            "dosing": {
+              "instructions": "Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID",
+              "orderSentence": null
+            },
             "contraindications": "Renal impairment (adjust dose per CrCl)",
             "monitoring": "Sedation, weight gain, peripheral edema"
           },
@@ -3626,7 +3914,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 30 mg daily Ã— 1 week; increase to 60 mg daily; max 120 mg/day",
+            "dosing": {
+              "instructions": "Start 30 mg daily Ã— 1 week; increase to 60 mg daily; max 120 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma",
             "monitoring": "Nausea (usually transient), BP, discontinuation syndrome"
           },
@@ -3637,7 +3928,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS",
+            "dosing": {
+              "instructions": "Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS",
+              "orderSentence": null
+            },
             "contraindications": "Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma",
             "monitoring": "Anticholinergic effects; ECG if dose >100 mg/day"
           },
@@ -3648,7 +3942,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 100 mg BID; increase by 200 mg/day every 3-7 days; max 1200 mg/day",
+            "dosing": {
+              "instructions": "Start 100 mg BID; increase by 200 mg/day every 3-7 days; max 1200 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "AV block; bone marrow suppression; concurrent MAOIs",
             "monitoring": "CBC, LFTs, sodium at baseline and periodically; HLA-B*1502 screening in at-risk populations"
           },
@@ -3659,7 +3956,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 300 mg BID; increase by 300 mg every 3 days; max 1200 mg BID",
+            "dosing": {
+              "instructions": "Start 300 mg BID; increase by 300 mg every 3 days; max 1200 mg BID",
+              "orderSentence": null
+            },
             "contraindications": "Hypersensitivity to carbamazepine",
             "monitoring": "Sodium (hyponatremia risk); HLA-B*1502 screening"
           },
@@ -3670,7 +3970,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 5 mg BID-TID; max 5 mg QID",
+            "dosing": {
+              "instructions": "Start 5 mg BID-TID; max 5 mg QID",
+              "orderSentence": null
+            },
             "contraindications": "Urinary retention; uncontrolled narrow-angle glaucoma; GI obstruction",
             "monitoring": "Dry mouth, constipation, cognitive impairment (especially elderly)"
           },
@@ -3681,9 +3984,12 @@
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 5-10 mg daily; max 30 mg daily",
-            "contraindications": "Same as IR",
-            "monitoring": "Same; fewer anticholinergic side effects than IR"
+            "dosing": {
+              "instructions": "Start 5-10 mg daily; max 30 mg daily",
+              "orderSentence": null
+            },
+            "contraindications": "Urinary retention; uncontrolled narrow-angle glaucoma; GI obstruction",
+            "monitoring": "Dry mouth, constipation, cognitive impairment (fewer than IR)"
           },
           {
             "item": "Solifenacin",
@@ -3692,7 +3998,10 @@
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 5 mg daily; may increase to 10 mg daily",
+            "dosing": {
+              "instructions": "Start 5 mg daily; may increase to 10 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Urinary retention; gastric retention; uncontrolled narrow-angle glaucoma; severe hepatic impairment",
             "monitoring": "Dry mouth, constipation; preferred over oxybutynin if cognitive concerns"
           },
@@ -3703,7 +4012,10 @@
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 25 mg daily; may increase to 50 mg daily",
+            "dosing": {
+              "instructions": "Start 25 mg daily; may increase to 50 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Uncontrolled hypertension",
             "monitoring": "BP monitoring; fewer anticholinergic effects (beta-3 agonist)"
           },
@@ -3714,7 +4026,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "0.4 mg daily 30 minutes after same meal each day",
+            "dosing": {
+              "instructions": "0.4 mg daily 30 minutes after same meal each day",
+              "orderSentence": null
+            },
             "contraindications": "Severe sulfonamide allergy (use caution)",
             "monitoring": "Orthostatic hypotension; retrograde ejaculation"
           },
@@ -3725,7 +4040,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "10-50 mg TID-QID",
+            "dosing": {
+              "instructions": "10-50 mg TID-QID",
+              "orderSentence": null
+            },
             "contraindications": "Asthma; bradycardia; hypotension; GI/GU obstruction",
             "monitoring": "GI cramping, bronchospasm"
           },
@@ -3736,7 +4054,10 @@
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "0.1-0.4 mg qHS (oral) or 10-40 mcg intranasal",
+            "dosing": {
+              "instructions": "0.1-0.4 mg qHS (oral) or 10-40 mcg intranasal",
+              "orderSentence": null
+            },
             "contraindications": "Hyponatremia risk; age >65 (relative); CHF; polydipsia",
             "monitoring": "Sodium at baseline, 1 week, 1 month, then periodically; fluid restrict evening"
           },
@@ -3747,7 +4068,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "100 mg every morning; may add 100 mg early afternoon (before 2 PM); max 200 mg/day",
+            "dosing": {
+              "instructions": "100 mg every morning; may add 100 mg early afternoon (before 2 PM); max 200 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Renal impairment (adjust dose); uncontrolled seizures",
             "monitoring": "Livedo reticularis; ankle edema; insomnia; hallucinations"
           },
@@ -3758,7 +4082,10 @@
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 100 mg every morning; may increase to 200 mg; max 400 mg/day",
+            "dosing": {
+              "instructions": "Start 100 mg every morning; may increase to 200 mg; max 400 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Cardiac arrhythmia; LV hypertrophy; hepatic impairment",
             "monitoring": "BP, HR; may reduce efficacy of hormonal contraception; Schedule IV"
           },
@@ -3769,9 +4096,12 @@
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 150 mg every morning; max 250 mg daily",
-            "contraindications": "Same as modafinil",
-            "monitoring": "Same as modafinil; longer half-life; Schedule IV"
+            "dosing": {
+              "instructions": "Start 150 mg every morning; max 250 mg daily",
+              "orderSentence": null
+            },
+            "contraindications": "Cardiac arrhythmia; LV hypertrophy; hepatic impairment",
+            "monitoring": "BP, HR; may reduce efficacy of hormonal contraception; longer half-life; Schedule IV"
           },
           {
             "item": "Methylphenidate",
@@ -3780,7 +4110,10 @@
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 5 mg BID (morning and noon); max 60 mg/day",
+            "dosing": {
+              "instructions": "Start 5 mg BID (morning and noon); max 60 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Marked anxiety; glaucoma; tics/Tourette; concurrent MAOIs",
             "monitoring": "BP, HR, mood; Schedule II"
           },
@@ -3791,7 +4124,10 @@
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "10 mg q12h (must be exactly 12 hours apart); do NOT exceed 20 mg/day",
+            "dosing": {
+              "instructions": "10 mg q12h (must be exactly 12 hours apart); do NOT exceed 20 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Seizure history; CrCl <50 mL/min",
             "monitoring": "Seizure risk (dose-dependent); UTI; insomnia"
           },
@@ -3802,7 +4138,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 50 mg daily; increase by 25-50 mg every 1-2 weeks; max 200 mg daily",
+            "dosing": {
+              "instructions": "Start 50 mg daily; increase by 25-50 mg every 1-2 weeks; max 200 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Concurrent MAOIs; pimozide",
             "monitoring": "Suicidality monitoring (especially weeks 1-4); serotonin syndrome; QTc at high doses"
           },
@@ -3813,7 +4152,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 10 mg daily; may increase to 20 mg after 1 week; max 20 mg daily",
+            "dosing": {
+              "instructions": "Start 10 mg daily; may increase to 20 mg after 1 week; max 20 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Concurrent MAOIs; pimozide; QT prolongation",
             "monitoring": "QTc if risk factors or dose >10 mg; suicidality monitoring"
           },
@@ -3824,7 +4166,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 20 mg daily; may increase after several weeks; max 80 mg daily",
+            "dosing": {
+              "instructions": "Start 20 mg daily; may increase after several weeks; max 80 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Concurrent MAOIs; pimozide; thioridazine",
             "monitoring": "Long half-life (washout important); suicidality monitoring"
           },
@@ -3835,7 +4180,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 150 mg SR daily; increase to 150 mg SR BID after 3 days (or 300 mg XL daily); max 400 mg/day",
+            "dosing": {
+              "instructions": "Start 150 mg SR daily; increase to 150 mg SR BID after 3 days (or 300 mg XL daily); max 400 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Seizure disorder; eating disorders; abrupt alcohol/benzo withdrawal",
             "monitoring": "Seizure risk; insomnia; no sexual side effects"
           },
@@ -3846,7 +4194,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 37.5-75 mg daily; increase by 75 mg every 4 days; max 225 mg daily",
+            "dosing": {
+              "instructions": "Start 37.5-75 mg daily; increase by 75 mg every 4 days; max 225 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Uncontrolled hypertension; concurrent MAOIs",
             "monitoring": "BP monitoring; discontinuation syndrome (taper slowly)"
           },
@@ -3857,7 +4208,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 15 mg qHS; may increase by 15 mg every 1-2 weeks; max 45 mg daily",
+            "dosing": {
+              "instructions": "Start 15 mg qHS; may increase by 15 mg every 1-2 weeks; max 45 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Concurrent MAOIs",
             "monitoring": "Weight gain; sedation (lower at higher doses); agranulocytosis (rare)"
           },
@@ -3868,7 +4222,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "17 g (1 capful) in 8 oz liquid once daily; adjust to effect",
+            "dosing": {
+              "instructions": "17 g (1 capful) in 8 oz liquid once daily; adjust to effect",
+              "orderSentence": null
+            },
             "contraindications": "Bowel obstruction; ileus",
             "monitoring": "Electrolytes if prolonged use; may take 1-3 days for effect"
           },
@@ -3879,7 +4236,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "100 mg BID; max 500 mg/day",
+            "dosing": {
+              "instructions": "100 mg BID; max 500 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Intestinal obstruction; concurrent mineral oil",
             "monitoring": "Minimal efficacy as monotherapy; best for stool softening"
           },
@@ -3890,7 +4250,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "8.6-17.2 mg qHS; max 34.4 mg/day",
+            "dosing": {
+              "instructions": "8.6-17.2 mg qHS; max 34.4 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Intestinal obstruction; acute abdominal pain",
             "monitoring": "Cramping; dependency with chronic daily use"
           },
@@ -3901,7 +4264,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "5-10 mg PO qHS or 10 mg PR PRN",
+            "dosing": {
+              "instructions": "5-10 mg PO qHS or 10 mg PR PRN",
+              "orderSentence": null
+            },
             "contraindications": "Intestinal obstruction; acute abdominal pain",
             "monitoring": "Cramping; electrolyte disturbance with overuse"
           },
@@ -3912,7 +4278,10 @@
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "24 mcg BID with food",
+            "dosing": {
+              "instructions": "24 mcg BID with food",
+              "orderSentence": null
+            },
             "contraindications": "Mechanical GI obstruction",
             "monitoring": "Nausea (common); dyspnea; diarrhea"
           },
@@ -3923,7 +4292,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 20 mg BID; increase by 20-40 mg every 3-7 days; max 320 mg/day in divided doses",
+            "dosing": {
+              "instructions": "Start 20 mg BID; increase by 20-40 mg every 3-7 days; max 320 mg/day in divided doses",
+              "orderSentence": null
+            },
             "contraindications": "Asthma/COPD; bradycardia <50; heart block; decompensated CHF",
             "monitoring": "HR, BP; fatigue; depression; bronchospasm"
           },
@@ -3934,7 +4306,10 @@
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 25 mg qHS; increase by 25 mg every week to 250 mg TID; usual dose 50-250 mg TID",
+            "dosing": {
+              "instructions": "Start 25 mg qHS; increase by 25 mg every week to 250 mg TID; usual dose 50-250 mg TID",
+              "orderSentence": null
+            },
             "contraindications": "Porphyria; hypersensitivity to phenobarbital",
             "monitoring": "Severe sedation initially (start very low); ataxia; nausea"
           },
@@ -3945,7 +4320,10 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 0.25-0.5 mg BID; increase by 0.5 mg every 3 days; max 6 mg/day",
+            "dosing": {
+              "instructions": "Start 0.25-0.5 mg BID; increase by 0.5 mg every 3 days; max 6 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "Severe hepatic impairment; myasthenia gravis; untreated narrow-angle glaucoma",
             "monitoring": "Sedation; dependence; falls risk; do NOT stop abruptly"
           },
@@ -3956,7 +4334,10 @@
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Start 25 mg daily; increase by 25 mg weekly; max 400 mg/day in divided doses",
+            "dosing": {
+              "instructions": "Start 25 mg daily; increase by 25 mg weekly; max 400 mg/day in divided doses",
+              "orderSentence": null
+            },
             "contraindications": "Metabolic acidosis; kidney stones",
             "monitoring": "Cognitive slowing (\"dopamax\"); paresthesias; kidney stones; weight loss"
           },
@@ -3967,7 +4348,10 @@
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "20/10 mg daily Ã— 7 days, then 20/10 mg q12h",
+            "dosing": {
+              "instructions": "20/10 mg daily Ã— 7 days, then 20/10 mg q12h",
+              "orderSentence": null
+            },
             "contraindications": "QT prolongation; concurrent MAOIs; concurrent quinidine/quinine; CYP2D6 substrate drugs",
             "monitoring": "ECG at baseline; QTc monitoring; multiple drug interactions"
           }
@@ -3979,7 +4363,10 @@
             "HOSP": "URGENT",
             "OPD": "-",
             "ICU": "URGENT",
-            "dosing": "5-7 exchanges over 10-14 days",
+            "dosing": {
+              "instructions": "5-7 exchanges over 10-14 days",
+              "orderSentence": null
+            },
             "contraindications": "Hemodynamic instability, sepsis, line contraindication",
             "monitoring": "BP, electrolytes, coags, fibrinogen, line infection"
           },
@@ -3989,7 +4376,10 @@
             "HOSP": "URGENT",
             "OPD": "-",
             "ICU": "URGENT",
-            "dosing": "0.4 g/kg/day Ã— 5 days",
+            "dosing": {
+              "instructions": "0.4 g/kg/day Ã— 5 days",
+              "orderSentence": null
+            },
             "contraindications": "IgA deficiency, renal failure, thrombosis risk",
             "monitoring": "Renal function, headache, thrombosis"
           },
@@ -3999,9 +4389,12 @@
             "HOSP": "ROUTINE",
             "OPD": "-",
             "ICU": "ROUTINE",
-            "dosing": "Additional 2-5 days methylprednisolone (total 5-10 days)",
-            "contraindications": "As above",
-            "monitoring": "As above"
+            "dosing": {
+              "instructions": "Additional 2-5 days methylprednisolone (total 5-10 days)",
+              "orderSentence": null
+            },
+            "contraindications": "Active untreated infection, uncontrolled diabetes, psychosis history",
+            "monitoring": "Glucose q6h, BP, mood, sleep"
           },
           {
             "item": "ACTH gel (H.P. Acthar)",
@@ -4009,8 +4402,11 @@
             "HOSP": "EXT",
             "OPD": "EXT",
             "ICU": "-",
-            "dosing": "80 units IM/SC daily Ã— 2-3 weeks",
-            "contraindications": "Similar to corticosteroids",
+            "dosing": {
+              "instructions": "80 units IM/SC daily Ã— 2-3 weeks",
+              "orderSentence": null
+            },
+            "contraindications": "Active untreated infection, uncontrolled diabetes, psychosis history",
             "monitoring": "Glucose, BP, electrolytes"
           }
         ],
@@ -4020,71 +4416,106 @@
           },
           {
             "item": "Interferon beta-1a (Avonex)",
+            "route": "IM",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "30 mcg IM once weekly",
+            "dosing": {
+              "instructions": "30 mcg IM once weekly",
+              "orderSentence": "Interferon beta-1a (Avonex) - IM - see dosing"
+            },
+            "pretreatment": "CBC, LFTs, TSH",
             "contraindications": "Depression (relative); decompensated liver disease",
             "monitoring": "CBC, LFTs q3-6mo; TSH annually; flu-like symptoms common (pretreat with NSAIDs/acetaminophen)"
           },
           {
             "item": "Interferon beta-1a (Rebif)",
+            "route": "SC",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "22 or 44 mcg SC three times weekly (titrate over 4 weeks)",
-            "contraindications": "Same as Avonex",
-            "monitoring": "Same; injection site reactions"
+            "dosing": {
+              "instructions": "22 or 44 mcg SC three times weekly (titrate over 4 weeks)",
+              "orderSentence": "Interferon beta-1a (Rebif) - SC - see dosing"
+            },
+            "pretreatment": "CBC, LFTs, TSH",
+            "contraindications": "Depression (relative); decompensated liver disease",
+            "monitoring": "CBC, LFTs q3-6mo; TSH annually; injection site reactions"
           },
           {
             "item": "Interferon beta-1b (Betaseron/Extavia)",
+            "route": "SC",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "250 mcg SC every other day (titrate over 6 weeks)",
-            "contraindications": "Same as Avonex",
-            "monitoring": "Same"
+            "dosing": {
+              "instructions": "250 mcg SC every other day (titrate over 6 weeks)",
+              "orderSentence": "Interferon beta-1b (Betaseron/Extavia) - SC - see dosing"
+            },
+            "pretreatment": "CBC, LFTs, TSH",
+            "contraindications": "Depression (relative); decompensated liver disease",
+            "monitoring": "CBC, LFTs q3-6mo; TSH annually; flu-like symptoms common"
           },
           {
             "item": "Peginterferon beta-1a (Plegridy)",
+            "route": "SC",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "125 mcg SC every 14 days (titrate over first 4 doses)",
-            "contraindications": "Same as Avonex",
-            "monitoring": "Same; less frequent dosing"
+            "dosing": {
+              "instructions": "125 mcg SC every 14 days (titrate over first 4 doses)",
+              "orderSentence": "Peginterferon beta-1a (Plegridy) - SC - see dosing"
+            },
+            "pretreatment": "CBC, LFTs, TSH",
+            "contraindications": "Depression (relative); decompensated liver disease",
+            "monitoring": "CBC, LFTs q3-6mo; TSH annually; less frequent dosing"
           },
           {
             "item": "Glatiramer acetate (Copaxone) 20mg",
+            "route": "SC",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "20 mg SC daily",
+            "dosing": {
+              "instructions": "20 mg SC daily",
+              "orderSentence": "Glatiramer acetate (Copaxone) 20mg - SC - see dosing"
+            },
+            "pretreatment": "None required",
             "contraindications": "Hypersensitivity",
             "monitoring": "Injection site reactions; post-injection systemic reaction (rare, self-limited)"
           },
           {
             "item": "Glatiramer acetate (Copaxone) 40mg",
+            "route": "SC",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "40 mg SC three times weekly (â‰¥48 hours apart)",
+            "dosing": {
+              "instructions": "40 mg SC three times weekly (â‰¥48 hours apart)",
+              "orderSentence": "Glatiramer acetate (Copaxone) 40mg - SC - see dosing"
+            },
+            "pretreatment": "None required",
             "contraindications": "Hypersensitivity",
             "monitoring": "Same"
           },
           {
             "item": "Glatiramer acetate (Glatopa)",
+            "route": "SC",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "20 mg SC daily or 40 mg SC three times weekly",
+            "dosing": {
+              "instructions": "20 mg SC daily or 40 mg SC three times weekly",
+              "orderSentence": "Glatiramer acetate (Glatopa) - SC - see dosing"
+            },
+            "pretreatment": "None required",
             "contraindications": "Hypersensitivity",
             "monitoring": "Same (generic)"
           },
@@ -4093,41 +4524,61 @@
           },
           {
             "item": "Dimethyl fumarate (Tecfidera)",
+            "route": "PO",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "120 mg BID Ã— 7 days, then 240 mg BID",
+            "dosing": {
+              "instructions": "120 mg BID Ã— 7 days, then 240 mg BID",
+              "orderSentence": "Dimethyl fumarate (Tecfidera) - PO - see dosing"
+            },
+            "pretreatment": "CBC, LFTs",
             "contraindications": "Lymphopenia <500 (discontinue)",
             "monitoring": "CBC q6mo (lymphocytes); LFTs; GI side effects (take with food); flushing (aspirin 30 min prior)"
           },
           {
             "item": "Diroximel fumarate (Vumerity)",
+            "route": "PO",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "231 mg BID Ã— 7 days, then 462 mg BID",
-            "contraindications": "Same as Tecfidera",
-            "monitoring": "Same; less GI side effects than Tecfidera"
+            "dosing": {
+              "instructions": "231 mg BID Ã— 7 days, then 462 mg BID",
+              "orderSentence": "Diroximel fumarate (Vumerity) - PO - see dosing"
+            },
+            "pretreatment": "CBC, LFTs",
+            "contraindications": "Lymphopenia <500 (discontinue)",
+            "monitoring": "CBC q6mo (lymphocytes); LFTs; less GI side effects than Tecfidera; flushing"
           },
           {
             "item": "Monomethyl fumarate (Bafiertam)",
+            "route": "PO",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "95 mg BID Ã— 7 days, then 190 mg BID",
-            "contraindications": "Same as Tecfidera",
-            "monitoring": "Same"
+            "dosing": {
+              "instructions": "95 mg BID Ã— 7 days, then 190 mg BID",
+              "orderSentence": "Monomethyl fumarate (Bafiertam) - PO - see dosing"
+            },
+            "pretreatment": "CBC, LFTs",
+            "contraindications": "Lymphopenia <500 (discontinue)",
+            "monitoring": "CBC q6mo (lymphocytes); LFTs; GI side effects; flushing"
           },
           {
             "item": "Teriflunomide (Aubagio)",
+            "route": "PO",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "7 or 14 mg once daily",
+            "dosing": {
+              "instructions": "7 or 14 mg once daily",
+              "orderSentence": "Teriflunomide (Aubagio) - PO - see dosing"
+            },
+            "pretreatment": "CBC, LFTs, TB test, BP",
             "contraindications": "Pregnancy (Category X - teratogenic); severe hepatic impairment; concurrent leflunomide",
             "monitoring": "LFTs monthly Ã— 6 months, then periodically; BP; hair thinning; requires cholestyramine washout if pregnancy desired"
           },
@@ -4136,54 +4587,79 @@
           },
           {
             "item": "Fingolimod (Gilenya)",
+            "route": "PO",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "0.5 mg once daily",
+            "dosing": {
+              "instructions": "0.5 mg once daily",
+              "orderSentence": "Fingolimod (Gilenya) - PO - see dosing"
+            },
+            "pretreatment": "CBC, LFTs, ECG, ophthalmology exam (macular edema), VZV IgG (vaccinate if negative and wait 4 weeks)",
             "contraindications": "Bradycardia <55; 2nd/3rd degree AV block; sick sinus syndrome; QTc >500 ms; recent MI/stroke/TIA (within 6 months)",
             "monitoring": "First-dose observation 6 hours (HR, BP q1h, ECG at 6h); macular edema screen at 3-4 months; lymphocytes; LFTs"
           },
           {
             "item": "Siponimod (Mayzent)",
+            "route": "PO",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Titration pack days 1-5, then 2 mg daily (1 mg if CYP2C9 *1/*3 or *2/*3)",
-            "contraindications": "Same plus CYP2C9 *3/*3 genotype (contraindicated)",
-            "monitoring": "Same; genotype required before starting"
+            "dosing": {
+              "instructions": "Titration pack days 1-5, then 2 mg daily (1 mg if CYP2C9 *1/*3 or *2/*3)",
+              "orderSentence": "Siponimod (Mayzent) - PO - see dosing"
+            },
+            "pretreatment": "CBC, LFTs, ECG, ophthalmology exam, VZV IgG, CYP2C9 genotype",
+            "contraindications": "Bradycardia <55; 2nd/3rd degree AV block; sick sinus syndrome; QTc >500 ms; recent MI/stroke/TIA; CYP2C9 *3/*3 genotype",
+            "monitoring": "First-dose observation 6 hours; macular edema screen; lymphocytes; LFTs; genotype required"
           },
           {
             "item": "Ozanimod (Zeposia)",
+            "route": "PO",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "0.23 mg daily Ã— 4 days, 0.46 mg daily Ã— 3 days, then 0.92 mg daily",
-            "contraindications": "Same; concurrent MAOIs",
-            "monitoring": "Similar to fingolimod; no first-dose observation required (slower titration); macular edema screen"
+            "dosing": {
+              "instructions": "0.23 mg daily Ã— 4 days, 0.46 mg daily Ã— 3 days, then 0.92 mg daily",
+              "orderSentence": "Ozanimod (Zeposia) - PO - see dosing"
+            },
+            "pretreatment": "CBC, LFTs, ECG, ophthalmology exam, VZV IgG",
+            "contraindications": "Bradycardia <55; 2nd/3rd degree AV block; sick sinus syndrome; QTc >500 ms; recent MI/stroke/TIA; concurrent MAOIs",
+            "monitoring": "No first-dose observation required (slower titration); macular edema screen at 3-4 months; lymphocytes; LFTs"
           },
           {
             "item": "Ponesimod (Ponvory)",
+            "route": "PO",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "14-day titration pack, then 20 mg daily",
-            "contraindications": "Same",
-            "monitoring": "Similar; no first-dose observation required"
+            "dosing": {
+              "instructions": "14-day titration pack, then 20 mg daily",
+              "orderSentence": "Ponesimod (Ponvory) - PO - see dosing"
+            },
+            "pretreatment": "CBC, LFTs, ECG, ophthalmology exam, VZV IgG",
+            "contraindications": "Bradycardia <55; 2nd/3rd degree AV block; sick sinus syndrome; QTc >500 ms; recent MI/stroke/TIA",
+            "monitoring": "No first-dose observation required; macular edema screen at 3-4 months; lymphocytes; LFTs"
           },
           {
             "item": "**ORAL - HIGH EFFICACY (OTHER)**"
           },
           {
             "item": "Cladribine (Mavenclad)",
+            "route": "PO",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Year 1: 1.75 mg/kg divided into 2 treatment weeks (week 1 and week 5); Year 2: repeat same dosing; no treatment years 3-4",
+            "dosing": {
+              "instructions": "Year 1: 1.75 mg/kg divided into 2 treatment weeks (week 1 and week 5); Year 2: repeat same dosing; no treatment years 3-4",
+              "orderSentence": "Cladribine (Mavenclad) - PO - see dosing"
+            },
+            "pretreatment": "CBC, LFTs, HIV, Hepatitis B/C, TB, VZV IgG",
             "contraindications": "Active infection; HIV; active malignancy; pregnancy/breastfeeding; CrCl <30",
             "monitoring": "CBC at months 2 and 6 of each treatment year; lymphopenia expected and desired; screen for malignancy"
           },
@@ -4192,51 +4668,76 @@
           },
           {
             "item": "Natalizumab (Tysabri)",
+            "route": "IV",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "300 mg IV every 4 weeks (or extended interval q6 weeks if stable and JCV negative)",
+            "dosing": {
+              "instructions": "300 mg IV every 4 weeks (or extended interval q6 weeks if stable and JCV negative)",
+              "orderSentence": "Natalizumab (Tysabri) - IV - see dosing"
+            },
+            "pretreatment": "JCV antibody, CBC, LFTs",
             "contraindications": "JCV antibody positive with index >1.5 and prior immunosuppression (high PML risk); active infection",
             "monitoring": "JCV antibody q6mo; MRI for PML surveillance q6-12mo; infusion reactions; REMS program required"
           },
           {
             "item": "Ocrelizumab (Ocrevus)",
+            "route": "IV",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Initial: 300 mg IV Ã— 2 doses 14 days apart; Maintenance: 600 mg IV every 6 months",
+            "dosing": {
+              "instructions": "Initial: 300 mg IV Ã— 2 doses 14 days apart; Maintenance: 600 mg IV every 6 months",
+              "orderSentence": "Ocrelizumab (Ocrevus) - IV - see dosing"
+            },
+            "pretreatment": "Hepatitis B serology, TB test, immunoglobulins",
             "contraindications": "Active Hepatitis B; active infection",
             "monitoring": "Immunoglobulins annually; infection monitoring; infusion reactions (premedicate with methylprednisolone, antihistamine, acetaminophen)"
           },
           {
             "item": "Ofatumumab (Kesimpta)",
+            "route": "SC",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Initial: 20 mg SC at weeks 0, 1, 2; Maintenance: 20 mg SC monthly starting week 4",
+            "dosing": {
+              "instructions": "Initial: 20 mg SC at weeks 0, 1, 2; Maintenance: 20 mg SC monthly starting week 4",
+              "orderSentence": "Ofatumumab (Kesimpta) - SC - see dosing"
+            },
+            "pretreatment": "Hepatitis B serology, TB test, immunoglobulins",
             "contraindications": "Active Hepatitis B; active infection",
-            "monitoring": "Same as ocrelizumab; self-administered at home"
+            "monitoring": "Immunoglobulins annually; infection monitoring; self-administered at home"
           },
           {
             "item": "Ublituximab (Briumvi)",
+            "route": "IV",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Initial: 150 mg IV day 1, 450 mg IV day 15; Maintenance: 450 mg IV every 24 weeks",
+            "dosing": {
+              "instructions": "Initial: 150 mg IV day 1, 450 mg IV day 15; Maintenance: 450 mg IV every 24 weeks",
+              "orderSentence": "Ublituximab (Briumvi) - IV - see dosing"
+            },
+            "pretreatment": "Hepatitis B serology, TB test, immunoglobulins",
             "contraindications": "Active Hepatitis B; active infection",
-            "monitoring": "Same as ocrelizumab; 1-hour infusion (faster)"
+            "monitoring": "Immunoglobulins annually; infection monitoring; infusion reactions (premedicate); 1-hour infusion"
           },
           {
             "item": "Alemtuzumab (Lemtrada)",
+            "route": "IV",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "Year 1: 12 mg IV daily Ã— 5 consecutive days; Year 2: 12 mg IV daily Ã— 3 consecutive days (12 months after year 1)",
+            "dosing": {
+              "instructions": "Year 1: 12 mg IV daily Ã— 5 consecutive days; Year 2: 12 mg IV daily Ã— 3 consecutive days (12 months after year 1)",
+              "orderSentence": "Alemtuzumab (Lemtrada) - IV - see dosing"
+            },
+            "pretreatment": "CBC, LFTs, TSH, creatinine, urinalysis, Hepatitis B/C, VZV IgG, TB, HPV screening",
             "contraindications": "Active infection; HIV; ongoing autoimmune disease other than MS",
             "monitoring": "CBC monthly Ã— 48 months; TSH q3mo Ã— 48 months; creatinine/urinalysis monthly Ã— 48 months; REMS program; secondary autoimmunity risk (thyroid, ITP, nephropathy)"
           },
@@ -4245,11 +4746,16 @@
           },
           {
             "item": "Glatiramer acetate (Copaxone)",
+            "route": "SC",
             "ED": "-",
             "HOSP": "-",
             "OPD": "ROUTINE",
             "ICU": "-",
-            "dosing": "20 mg daily or 40 mg TIW",
+            "dosing": {
+              "instructions": "20 mg daily or 40 mg TIW",
+              "orderSentence": "Glatiramer acetate (Copaxone) - SC - see dosing"
+            },
+            "pretreatment": "None",
             "contraindications": "Hypersensitivity",
             "monitoring": "Preferred in pregnancy (no evidence of harm)"
           }
@@ -7560,7 +8066,7 @@
             "item": "CT perfusion (CTP)",
             "timing": "If within extended window (6-24 hours) or wake-up stroke",
             "target": "Mismatch (ischemic penumbra salvageable)",
-            "contraindications": "Same as CTA",
+            "contraindications": "Contrast allergy (premedicate), CKD (benefit usually outweighs risk in acute stroke)",
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "-",
@@ -7592,7 +8098,7 @@
             "item": "MRA head and neck",
             "timing": "With MRI if CTA not done",
             "target": "Stenosis, dissection, aneurysm",
-            "contraindications": "Same as MRI",
+            "contraindications": "Pacemaker, metallic implants (check compatibility)",
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -7674,7 +8180,7 @@
             "item": "High-resolution vessel wall MRI",
             "timing": "Vasculitis, intracranial atherosclerosis characterization",
             "target": "Wall enhancement pattern",
-            "contraindications": "Same as MRI",
+            "contraindications": "Pacemaker, metallic implants (check compatibility)",
             "ED": "-",
             "HOSP": "EXT",
             "OPD": "EXT",
@@ -7716,7 +8222,10 @@
         "Acute/Emergent (Hyperacute Phase)": [
           {
             "item": "Alteplase (tPA) IV",
-            "dosing": "0.9 mg/kg IV (max 90 mg); 10% as bolus over 1 min, remainder over 60 min; within 4.5 hours of symptom onset",
+            "dosing": {
+              "instructions": "0.9 mg/kg IV (max 90 mg); 10% as bolus over 1 min, remainder over 60 min; within 4.5 hours of symptom onset",
+              "orderSentence": null
+            },
             "contraindications": "See Appendix A for complete exclusion criteria; major: ICH, recent surgery, BP >185/110 despite treatment, INR >1.7, platelets <100K",
             "monitoring": "Neuro checks q15min x 2h, then q30min x 6h, then q1h x 16h; BP q15min x 2h, then q30min x 6h; hold antiplatelets/anticoagulants 24h; CT head before anticoagulation",
             "ED": "STAT",
@@ -7726,9 +8235,12 @@
           },
           {
             "item": "Tenecteplase IV",
-            "dosing": "0.25 mg/kg IV bolus (max 25 mg); single bolus (no infusion); within 4.5 hours of symptom onset",
-            "contraindications": "Same as alteplase",
-            "monitoring": "Same as alteplase",
+            "dosing": {
+              "instructions": "0.25 mg/kg IV bolus (max 25 mg); single bolus (no infusion); within 4.5 hours of symptom onset",
+              "orderSentence": null
+            },
+            "contraindications": "See Appendix A; major: ICH, recent surgery, BP >185/110, INR >1.7, platelets <100K",
+            "monitoring": "Neuro checks q15min x 2h, then q30min x 6h, then q1h x 16h; BP q15min x 2h; hold anticoagulants 24h",
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "-",
@@ -7736,7 +8248,10 @@
           },
           {
             "item": "Blood pressure management (pre-thrombolysis) - Labetalol",
-            "dosing": "10-20 mg IV over 1-2 min; may repeat or double q10min; max 300 mg",
+            "dosing": {
+              "instructions": "10-20 mg IV over 1-2 min; may repeat or double q10min; max 300 mg",
+              "orderSentence": null
+            },
             "contraindications": "Asthma, severe bradycardia, decompensated HF, 2nd/3rd degree heart block",
             "monitoring": "Continuous BP; target BP <185/110 for tPA eligibility",
             "ED": "STAT",
@@ -7746,7 +8261,10 @@
           },
           {
             "item": "Blood pressure management (pre-thrombolysis) - Nicardipine",
-            "dosing": "Start 5 mg/hr IV; increase by 2.5 mg/hr q5-15min; max 15 mg/hr",
+            "dosing": {
+              "instructions": "Start 5 mg/hr IV; increase by 2.5 mg/hr q5-15min; max 15 mg/hr",
+              "orderSentence": null
+            },
             "contraindications": "None significant",
             "monitoring": "Continuous BP; target <185/110",
             "ED": "STAT",
@@ -7756,7 +8274,10 @@
           },
           {
             "item": "Blood pressure management (pre-thrombolysis) - Clevidipine",
-            "dosing": "Start 1-2 mg/hr IV; titrate by doubling q90sec initially; max 32 mg/hr",
+            "dosing": {
+              "instructions": "Start 1-2 mg/hr IV; titrate by doubling q90sec initially; max 32 mg/hr",
+              "orderSentence": null
+            },
             "contraindications": "Soy/egg allergy, severe aortic stenosis, lipid disorders",
             "monitoring": "Continuous BP; rapid onset; short half-life",
             "ED": "STAT",
@@ -7766,9 +8287,12 @@
           },
           {
             "item": "Blood pressure management (post-tPA)",
-            "dosing": "Same agents as above",
-            "contraindications": "Same",
-            "monitoring": "Maintain BP <180/105 for 24 hours post-tPA",
+            "dosing": {
+              "instructions": "Labetalol 10-20 mg IV q10min, nicardipine 5-15 mg/hr IV, or clevidipine 1-32 mg/hr IV",
+              "orderSentence": null
+            },
+            "contraindications": "Asthma (labetalol); soy/egg allergy (clevidipine)",
+            "monitoring": "Continuous BP; target BP <180/105 for 24 hours post-tPA",
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "-",
@@ -7776,7 +8300,10 @@
           },
           {
             "item": "Mechanical thrombectomy",
-            "dosing": "Endovascular clot retrieval; within 6 hours for anterior LVO; up to 24 hours with favorable perfusion imaging",
+            "dosing": {
+              "instructions": "Endovascular clot retrieval; within 6 hours for anterior LVO; up to 24 hours with favorable perfusion imaging",
+              "orderSentence": null
+            },
             "contraindications": "Large completed infarct (ASPECTS <6), poor baseline function (mRS >2), no LVO",
             "monitoring": "Post-procedure: BP per protocol, groin site checks, neuro checks q1h",
             "ED": "STAT",
@@ -7789,7 +8316,10 @@
           {
             "item": "NPO status",
             "indication": "All acute stroke until swallow evaluation",
-            "dosing": "NPO until formal swallow screen passed",
+            "dosing": {
+              "instructions": "NPO until formal swallow screen passed",
+              "orderSentence": null
+            },
             "contraindications": "None",
             "monitoring": "Aspiration risk",
             "ED": "STAT",
@@ -7800,7 +8330,10 @@
           {
             "item": "IV fluids (isotonic) - Normal saline",
             "indication": "Volume resuscitation; avoid hypotension",
-            "dosing": "0.9% NaCl; avoid dextrose-containing fluids (hyperglycemia worsens outcomes)",
+            "dosing": {
+              "instructions": "0.9% NaCl; avoid dextrose-containing fluids (hyperglycemia worsens outcomes)",
+              "orderSentence": null
+            },
             "contraindications": "Volume overload",
             "monitoring": "I/O, daily weights",
             "ED": "STAT",
@@ -7811,7 +8344,10 @@
           {
             "item": "Glucose management - Insulin",
             "indication": "Hyperglycemia in acute stroke",
-            "dosing": "Sliding scale or infusion; target glucose 140-180 mg/dL",
+            "dosing": {
+              "instructions": "Sliding scale or infusion; target glucose 140-180 mg/dL",
+              "orderSentence": null
+            },
             "contraindications": "Avoid hypoglycemia (<60)",
             "monitoring": "Glucose q1-6h depending on regimen",
             "ED": "STAT",
@@ -7822,7 +8358,10 @@
           {
             "item": "DVT prophylaxis - Intermittent pneumatic compression",
             "indication": "All immobile patients",
-            "dosing": "Apply to both legs",
+            "dosing": {
+              "instructions": "Apply to both legs",
+              "orderSentence": null
+            },
             "contraindications": "Active DVT",
             "monitoring": "Skin checks",
             "ED": "STAT",
@@ -7833,7 +8372,10 @@
           {
             "item": "DVT prophylaxis - Enoxaparin",
             "indication": "After 24-48 hours if no hemorrhagic transformation and not on anticoagulation",
-            "dosing": "40 mg SC daily; reduce to 30 mg if CrCl <30",
+            "dosing": {
+              "instructions": "40 mg SC daily; reduce to 30 mg if CrCl <30",
+              "orderSentence": null
+            },
             "contraindications": "Active bleeding, HIT, hemorrhagic transformation",
             "monitoring": "Platelets; signs of bleeding",
             "ED": "-",
@@ -7844,9 +8386,12 @@
           {
             "item": "DVT prophylaxis - Heparin (unfractionated)",
             "indication": "Alternative to enoxaparin if CrCl <30",
-            "dosing": "5000 units SC q8-12h",
-            "contraindications": "Same as enoxaparin",
-            "monitoring": "Same",
+            "dosing": {
+              "instructions": "5000 units SC q8-12h",
+              "orderSentence": null
+            },
+            "contraindications": "Active bleeding, HIT, hemorrhagic transformation",
+            "monitoring": "Platelets; signs of bleeding",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "-",
@@ -7855,7 +8400,10 @@
           {
             "item": "Fever management - Acetaminophen",
             "indication": "Target normothermia; fever worsens outcomes",
-            "dosing": "650-1000 mg PO/PR q4-6h PRN temp >38C; max 4g/day",
+            "dosing": {
+              "instructions": "650-1000 mg PO/PR q4-6h PRN temp >38C; max 4g/day",
+              "orderSentence": null
+            },
             "contraindications": "Hepatic impairment",
             "monitoring": "Temperature",
             "ED": "STAT",
@@ -7866,7 +8414,10 @@
           {
             "item": "Head of bed positioning",
             "indication": "Optimize perfusion vs aspiration risk",
-            "dosing": "HOB flat to 15 degrees initially if no LVO treated; elevate to 30 degrees if large infarct or aspiration risk",
+            "dosing": {
+              "instructions": "HOB flat to 15 degrees initially if no LVO treated; elevate to 30 degrees if large infarct or aspiration risk",
+              "orderSentence": null
+            },
             "contraindications": "None",
             "monitoring": "Neuro exam",
             "ED": "STAT",
@@ -7877,7 +8428,10 @@
           {
             "item": "Supplemental oxygen",
             "indication": "Hypoxia",
-            "dosing": "Titrate to SpO2 >94%; avoid routine oxygen in non-hypoxic patients",
+            "dosing": {
+              "instructions": "Titrate to SpO2 >94%; avoid routine oxygen in non-hypoxic patients",
+              "orderSentence": null
+            },
             "contraindications": "None",
             "monitoring": "Continuous SpO2",
             "ED": "STAT",
@@ -7890,7 +8444,10 @@
           {
             "item": "Aspirin",
             "indication": "Non-cardioembolic stroke; first-line antiplatelet",
-            "dosing": "Loading: 325 mg (after tPA, wait 24h and confirm no ICH on CT); Maintenance: 81-325 mg daily",
+            "dosing": {
+              "instructions": "Loading: 325 mg (after tPA, wait 24h and confirm no ICH on CT); Maintenance: 81-325 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Active bleeding, aspirin allergy, concurrent anticoagulation",
             "monitoring": "Bleeding signs",
             "ED": "-",
@@ -7901,7 +8458,10 @@
           {
             "item": "Clopidogrel",
             "indication": "Aspirin intolerance; or DAPT (see below)",
-            "dosing": "Loading: 300-600 mg; Maintenance: 75 mg daily",
+            "dosing": {
+              "instructions": "Loading: 300-600 mg; Maintenance: 75 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Active bleeding, severe hepatic impairment",
             "monitoring": "Bleeding, bruising",
             "ED": "-",
@@ -7912,7 +8472,10 @@
           {
             "item": "Dual antiplatelet therapy (DAPT) - Aspirin + Clopidogrel",
             "indication": "Minor stroke (NIHSS ≤3) or high-risk TIA within 24 hours; continue 21 days then single agent",
-            "dosing": "Aspirin 81 mg + Clopidogrel 75 mg daily x 21 days; preceded by loading doses",
+            "dosing": {
+              "instructions": "Aspirin 81 mg + Clopidogrel 75 mg daily x 21 days; preceded by loading doses",
+              "orderSentence": null
+            },
             "contraindications": "Major stroke, high bleeding risk, planned surgery",
             "monitoring": "Bleeding; discontinue one agent at day 21",
             "ED": "-",
@@ -7923,9 +8486,12 @@
           {
             "item": "Dual antiplatelet therapy (DAPT) - Aspirin + Ticagrelor",
             "indication": "Alternative DAPT regimen (THALES trial)",
-            "dosing": "Aspirin 81 mg + Ticagrelor 90 mg BID x 30 days",
-            "contraindications": "Same as above; avoid with strong CYP3A4 inhibitors",
-            "monitoring": "Same; dyspnea (common)",
+            "dosing": {
+              "instructions": "Aspirin 81 mg + Ticagrelor 90 mg BID x 30 days",
+              "orderSentence": null
+            },
+            "contraindications": "Major stroke, high bleeding risk, planned surgery; avoid with strong CYP3A4 inhibitors",
+            "monitoring": "Bleeding; dyspnea (common); discontinue one agent at day 30",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -7934,7 +8500,10 @@
           {
             "item": "Atorvastatin",
             "indication": "All ischemic stroke; high-intensity statin",
-            "dosing": "40-80 mg daily; start in hospital",
+            "dosing": {
+              "instructions": "40-80 mg daily; start in hospital",
+              "orderSentence": null
+            },
             "contraindications": "Active liver disease, pregnancy",
             "monitoring": "LFTs at baseline; CK if myalgia",
             "ED": "-",
@@ -7945,9 +8514,12 @@
           {
             "item": "Rosuvastatin",
             "indication": "Alternative high-intensity statin",
-            "dosing": "20-40 mg daily",
-            "contraindications": "Same as atorvastatin; dose adjust for Asian patients, CKD",
-            "monitoring": "Same",
+            "dosing": {
+              "instructions": "20-40 mg daily",
+              "orderSentence": null
+            },
+            "contraindications": "Active liver disease, pregnancy; dose adjust for Asian patients, CKD",
+            "monitoring": "LFTs at baseline; CK if myalgia",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -7956,7 +8528,10 @@
           {
             "item": "Apixaban",
             "indication": "Cardioembolic stroke (AF); start after imaging confirms no hemorrhagic transformation",
-            "dosing": "5 mg BID; reduce to 2.5 mg BID if 2 of: age ≥80, weight ≤60 kg, Cr ≥1.5",
+            "dosing": {
+              "instructions": "5 mg BID; reduce to 2.5 mg BID if 2 of: age ≥80, weight ≤60 kg, Cr ≥1.5",
+              "orderSentence": null
+            },
             "contraindications": "Active bleeding, mechanical valve, severe hepatic impairment; delay 4-14 days post-stroke based on infarct size",
             "monitoring": "Renal function; bleeding",
             "ED": "-",
@@ -7967,9 +8542,12 @@
           {
             "item": "Rivaroxaban",
             "indication": "Alternative DOAC for AF",
-            "dosing": "20 mg daily with dinner; 15 mg if CrCl 15-50",
-            "contraindications": "Same as apixaban",
-            "monitoring": "Same",
+            "dosing": {
+              "instructions": "20 mg daily with dinner; 15 mg if CrCl 15-50",
+              "orderSentence": null
+            },
+            "contraindications": "Active bleeding, mechanical valve, severe hepatic impairment; delay 4-14 days post-stroke",
+            "monitoring": "Renal function; bleeding",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -7978,9 +8556,12 @@
           {
             "item": "Dabigatran",
             "indication": "Alternative DOAC for AF",
-            "dosing": "150 mg BID; 75 mg BID if CrCl 15-30",
-            "contraindications": "Same as apixaban; GI upset common",
-            "monitoring": "Same; requires reversal agent availability",
+            "dosing": {
+              "instructions": "150 mg BID; 75 mg BID if CrCl 15-30",
+              "orderSentence": null
+            },
+            "contraindications": "Active bleeding, mechanical valve, severe hepatic impairment; GI upset common; delay 4-14 days post-stroke",
+            "monitoring": "Renal function; bleeding; requires reversal agent availability",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -7989,9 +8570,12 @@
           {
             "item": "Edoxaban",
             "indication": "Alternative DOAC for AF",
-            "dosing": "60 mg daily; 30 mg if CrCl 15-50, weight ≤60 kg, or concurrent P-gp inhibitor",
-            "contraindications": "Same as apixaban",
-            "monitoring": "Same",
+            "dosing": {
+              "instructions": "60 mg daily; 30 mg if CrCl 15-50, weight ≤60 kg, or concurrent P-gp inhibitor",
+              "orderSentence": null
+            },
+            "contraindications": "Active bleeding, mechanical valve, severe hepatic impairment; delay 4-14 days post-stroke",
+            "monitoring": "Renal function; bleeding",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -8000,9 +8584,12 @@
           {
             "item": "Warfarin",
             "indication": "Mechanical valve, antiphospholipid syndrome, DOAC contraindication",
-            "dosing": "Start with DOAC or heparin bridge; target INR 2-3 (2.5-3.5 for mechanical mitral)",
-            "contraindications": "Same as DOACs",
-            "monitoring": "INR weekly then monthly",
+            "dosing": {
+              "instructions": "Start with DOAC or heparin bridge; target INR 2-3 (2.5-3.5 for mechanical mitral)",
+              "orderSentence": null
+            },
+            "contraindications": "Active bleeding, severe hepatic impairment; delay 4-14 days post-stroke",
+            "monitoring": "INR weekly then monthly; bleeding",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -8011,7 +8598,10 @@
           {
             "item": "Lisinopril",
             "indication": "Hypertension; target BP <130/80 after acute phase",
-            "dosing": "Start 2.5-5 mg daily; titrate to 20-40 mg daily",
+            "dosing": {
+              "instructions": "Start 2.5-5 mg daily; titrate to 20-40 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Bilateral renal artery stenosis, angioedema history, pregnancy",
             "monitoring": "BP, K+, Cr",
             "ED": "-",
@@ -8022,7 +8612,10 @@
           {
             "item": "Amlodipine",
             "indication": "Hypertension; add-on or alternative",
-            "dosing": "Start 5 mg daily; max 10 mg daily",
+            "dosing": {
+              "instructions": "Start 5 mg daily; max 10 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Severe aortic stenosis",
             "monitoring": "BP, peripheral edema",
             "ED": "-",
@@ -8033,7 +8626,10 @@
           {
             "item": "Chlorthalidone",
             "indication": "Hypertension; add-on for volume-dependent HTN",
-            "dosing": "12.5-25 mg daily",
+            "dosing": {
+              "instructions": "12.5-25 mg daily",
+              "orderSentence": null
+            },
             "contraindications": "Sulfa allergy (relative), hypokalemia, gout",
             "monitoring": "K+, Na+, uric acid",
             "ED": "-",
@@ -8046,7 +8642,10 @@
           {
             "item": "Mannitol",
             "indication": "Cerebral edema; increased ICP",
-            "dosing": "0.5-1.5 g/kg IV over 20-30 min; may repeat q6h; serum osm goal <320",
+            "dosing": {
+              "instructions": "0.5-1.5 g/kg IV over 20-30 min; may repeat q6h; serum osm goal <320",
+              "orderSentence": null
+            },
             "contraindications": "Hypovolemia, anuria",
             "monitoring": "Serum osm, Na+, renal function; Foley required",
             "ED": "-",
@@ -8057,7 +8656,10 @@
           {
             "item": "Hypertonic saline 23.4%",
             "indication": "Severe cerebral edema; herniation",
-            "dosing": "30 mL IV push via central line over 10-20 min",
+            "dosing": {
+              "instructions": "30 mL IV push via central line over 10-20 min",
+              "orderSentence": null
+            },
             "contraindications": "Severe hypernatremia (Na >160)",
             "monitoring": "Na q4-6h; target Na 145-155 for edema",
             "ED": "-",
@@ -8068,9 +8670,12 @@
           {
             "item": "Hypertonic saline 3%",
             "indication": "Cerebral edema (less severe)",
-            "dosing": "150-500 mL IV bolus or continuous infusion at 30-50 mL/hr",
-            "contraindications": "Same",
-            "monitoring": "Same",
+            "dosing": {
+              "instructions": "150-500 mL IV bolus or continuous infusion at 30-50 mL/hr",
+              "orderSentence": null
+            },
+            "contraindications": "Severe hypernatremia (Na >160)",
+            "monitoring": "Na q4-6h; target Na 145-155 for edema",
             "ED": "-",
             "HOSP": "URGENT",
             "OPD": "-",
@@ -8079,7 +8684,10 @@
           {
             "item": "Decompressive craniectomy",
             "indication": "Malignant MCA infarction with edema; age <60",
-            "dosing": "Surgical; within 48 hours of stroke onset",
+            "dosing": {
+              "instructions": "Surgical; within 48 hours of stroke onset",
+              "orderSentence": null
+            },
             "contraindications": "Poor pre-stroke function, extensive infarct, patient/family preference",
             "monitoring": "Post-op neuro checks, ICP if monitored",
             "ED": "-",
@@ -8090,7 +8698,10 @@
           {
             "item": "Levetiracetam",
             "indication": "Seizure prophylaxis not routinely recommended; use only if seizure occurs",
-            "dosing": "500-1000 mg IV/PO BID; max 3000 mg/day",
+            "dosing": {
+              "instructions": "500-1000 mg IV/PO BID; max 3000 mg/day",
+              "orderSentence": null
+            },
             "contraindications": "None significant",
             "monitoring": "Mood, behavior",
             "ED": "-",
@@ -8101,7 +8712,10 @@
           {
             "item": "Ceftriaxone + Metronidazole",
             "indication": "Aspiration pneumonia",
-            "dosing": "Ceftriaxone 1-2 g IV daily + Metronidazole 500 mg IV/PO q8h",
+            "dosing": {
+              "instructions": "Ceftriaxone 1-2 g IV daily + Metronidazole 500 mg IV/PO q8h",
+              "orderSentence": null
+            },
             "contraindications": "Cephalosporin allergy, alcohol with metronidazole",
             "monitoring": "WBC, fever, respiratory status",
             "ED": "-",
@@ -8114,7 +8728,10 @@
           {
             "item": "Heparin infusion",
             "indication": "Cervical artery dissection (controversial), bridge to warfarin",
-            "dosing": "80 units/kg bolus, then 18 units/kg/hr; titrate to PTT 60-80",
+            "dosing": {
+              "instructions": "80 units/kg bolus, then 18 units/kg/hr; titrate to PTT 60-80",
+              "orderSentence": null
+            },
             "contraindications": "Active bleeding, large infarct, hemorrhagic transformation",
             "monitoring": "PTT q6h until therapeutic, then q12-24h",
             "ED": "-",
@@ -8125,7 +8742,10 @@
           {
             "item": "PFO closure (device)",
             "indication": "Cryptogenic stroke with high-risk PFO (large shunt, atrial septal aneurysm); age <60",
-            "dosing": "Interventional procedure; typically after stroke recovery",
+            "dosing": {
+              "instructions": "Interventional procedure; typically after stroke recovery",
+              "orderSentence": null
+            },
             "contraindications": "Active infection, other stroke etiology identified",
             "monitoring": "Post-procedure: antiplatelet therapy, bubble study follow-up",
             "ED": "-",
@@ -8136,7 +8756,10 @@
           {
             "item": "Carotid endarterectomy (CEA)",
             "indication": "Symptomatic carotid stenosis 70-99%; some benefit 50-69%",
-            "dosing": "Surgical; timing 2-14 days post-stroke optimal",
+            "dosing": {
+              "instructions": "Surgical; timing 2-14 days post-stroke optimal",
+              "orderSentence": null
+            },
             "contraindications": "Unstable medical condition, near-complete occlusion",
             "monitoring": "Post-op: BP control, neuro checks",
             "ED": "-",
@@ -8147,8 +8770,11 @@
           {
             "item": "Carotid artery stenting (CAS)",
             "indication": "Alternative to CEA; high surgical risk patients",
-            "dosing": "Interventional procedure",
-            "contraindications": "Same contraindications as surgery; unfavorable anatomy",
+            "dosing": {
+              "instructions": "Interventional procedure",
+              "orderSentence": null
+            },
+            "contraindications": "Unstable medical condition, near-complete occlusion; unfavorable anatomy",
             "monitoring": "Post-procedure: DAPT x 30 days minimum",
             "ED": "-",
             "HOSP": "ROUTINE",
