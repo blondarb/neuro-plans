@@ -1187,14 +1187,19 @@ CHANGELOG:
       if (itemData) {
         const name = itemData.item || itemData.name || itemData.treatment || 'Item';
         // Include dosing in the display name for medications
-        // Use order sentence if available (structured dosing), otherwise full dosing text
+        // For structured dosing with order sentence, show order sentence only (it includes drug name)
+        // For legacy dosing, show "Drug — instructions"
         let displayName = name;
         if (itemData.dosing) {
           const isStructured = typeof itemData.dosing === 'object';
-          const dosingText = isStructured
-            ? (itemData.dosing.orderSentence || itemData.dosing.instructions)
-            : itemData.dosing;
-          displayName = `${name} — ${dosingText}`;
+          if (isStructured && itemData.dosing.orderSentence) {
+            // Order sentence already includes drug name, show it directly
+            displayName = itemData.dosing.orderSentence;
+          } else {
+            // Legacy format: show "Drug — dosing instructions"
+            const dosingText = isStructured ? itemData.dosing.instructions : itemData.dosing;
+            displayName = `${name} — ${dosingText}`;
+          }
         }
         selectedItems.set(id, { ...itemData, section, subsection, isCustom, editedName: displayName, originalName: name });
       }
