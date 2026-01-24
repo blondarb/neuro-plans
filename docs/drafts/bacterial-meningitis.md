@@ -289,36 +289,36 @@ SECTION A: ACTION ITEMS
 
 ### 4A. Referrals & Consults
 
-| Recommendation | Indication | ED | HOSP | OPD | ICU |
-|----------------|------------|:--:|:----:|:---:|:---:|
-| Infectious disease consult | All bacterial meningitis | URGENT | STAT | — | STAT |
-| Neurology consult | Seizures, focal deficits, complications | URGENT | URGENT | — | STAT |
-| Critical care consult | Septic shock, need for pressors, intubation | STAT | STAT | — | STAT |
-| Neurosurgery consult | Hydrocephalus, abscess, elevated ICP | — | URGENT | — | STAT |
-| ENT consult | Hearing evaluation (post-meningitis) | — | ROUTINE | — | ROUTINE |
-| Audiology | Hearing test before discharge | — | ROUTINE | — | ROUTINE |
-| Infection control | Isolation, contact tracing (meningococcal) | STAT | STAT | — | STAT |
-| Public health notification | Meningococcal disease (reportable) | STAT | STAT | — | STAT |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Infectious disease consult for antibiotic optimization, duration guidance, and organism-specific management | URGENT | STAT | — | STAT |
+| Neurology consult for seizure management, focal deficits evaluation, and neurological complication monitoring | URGENT | URGENT | — | STAT |
+| Critical care consult for ICU admission given septic shock, hemodynamic instability, or respiratory failure | STAT | STAT | — | STAT |
+| Neurosurgery consult for hydrocephalus management, abscess drainage, or elevated ICP requiring intervention | — | URGENT | — | STAT |
+| ENT consult for hearing evaluation as sensorineural hearing loss is a common complication of bacterial meningitis | — | ROUTINE | — | ROUTINE |
+| Audiology for formal hearing test before discharge to document baseline and detect early hearing loss | — | ROUTINE | — | ROUTINE |
+| Infection control for droplet isolation implementation and contact tracing if meningococcal disease confirmed | STAT | STAT | — | STAT |
+| Public health notification required for meningococcal disease (reportable condition) to enable contact prophylaxis | STAT | STAT | — | STAT |
 
 ### 4B. Patient Instructions
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
-| Return immediately for worsening headache, fever, confusion, or seizures | STAT | — | STAT |
-| Complete full antibiotic course even if feeling better | — | STAT | STAT |
-| Hearing test recommended after recovery | — | ROUTINE | ROUTINE |
-| Close contacts should receive prophylaxis if meningococcal | STAT | STAT | — |
-| Report persistent headaches, hearing changes, or cognitive difficulties | — | ROUTINE | ROUTINE |
+| Return immediately if worsening headache, fever, confusion, or seizures develop (may indicate treatment failure or complication) | STAT | — | STAT |
+| Complete full antibiotic course even if feeling better to prevent relapse and resistance | — | STAT | STAT |
+| Obtain hearing test after recovery as sensorineural hearing loss is a common complication of bacterial meningitis | — | ROUTINE | ROUTINE |
+| Ensure close contacts receive prophylaxis if meningococcal disease confirmed (rifampin, ciprofloxacin, or ceftriaxone) | STAT | STAT | — |
+| Report persistent headaches, hearing changes, or cognitive difficulties as these may indicate late complications | — | ROUTINE | ROUTINE |
 
 ### 4C. Lifestyle & Prevention
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
-| Respiratory isolation (meningococcal) until 24h of effective antibiotics | STAT | STAT | — |
-| Meningococcal vaccination for close contacts and patient (after recovery) | — | ROUTINE | ROUTINE |
-| Pneumococcal vaccination if not up to date | — | ROUTINE | ROUTINE |
-| Hand hygiene education | — | ROUTINE | ROUTINE |
-| Avoid sharing utensils, drinks during active infection | STAT | STAT | — |
+| Maintain droplet isolation (meningococcal) until 24h of effective antibiotics to prevent transmission | STAT | STAT | — |
+| Meningococcal vaccination for close contacts and patient after recovery to prevent future infection | — | ROUTINE | ROUTINE |
+| Pneumococcal vaccination if not up to date as pneumococcus is the most common cause of bacterial meningitis | — | ROUTINE | ROUTINE |
+| Practice hand hygiene and respiratory etiquette to prevent transmission of respiratory pathogens | — | ROUTINE | ROUTINE |
+| Avoid sharing utensils, drinks, or close contact with respiratory secretions during active infection | STAT | STAT | — |
 
 ---
 

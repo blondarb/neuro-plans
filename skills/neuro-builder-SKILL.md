@@ -291,20 +291,39 @@ Use Section 3D with expanded columns when the diagnosis has chronic disease-modi
 
 ## 4. OTHER RECOMMENDATIONS
 
+**IMPORTANT:** Each recommendation must be a complete clinical sentence that includes the indication/rationale. The ordering physician should understand WHY the recommendation is being made without needing a separate "Indication" column.
+
 ### 4A. Referrals & Consults
 
-| Recommendation | Indication | ED | HOSP | OPD | ICU |
-|----------------|------------|:--:|:----:|:---:|:---:|
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+
+**Example format:**
+- ✅ "Neurology consult for diagnosis confirmation and immunotherapy guidance"
+- ✅ "Physical therapy for mobility assessment and fall risk reduction"
+- ✅ "Speech therapy for swallow evaluation given bulbar weakness"
+- ❌ "Neurology consult" (too vague - no rationale)
+- ❌ "PT consult" (abbreviation and no rationale)
 
 ### 4B. Patient Instructions
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
 
+**Example format:**
+- ✅ "Return immediately if worsening weakness or breathing difficulty develops (may indicate disease progression)"
+- ✅ "Do not drive until cleared by neurology due to risk of sudden weakness"
+- ❌ "Return if worse" (too vague)
+
 ### 4C. Lifestyle & Prevention
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
+
+**Example format:**
+- ✅ "Aspiration precautions including thickened liquids and chin tuck positioning given bulbar weakness"
+- ✅ "Frequent repositioning every 2 hours to prevent pressure ulcers during immobility"
+- ❌ "Aspiration precautions" (no specifics or rationale)
 
 Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 SECTION B: REFERENCE (Expand as Needed)
@@ -380,23 +399,24 @@ SECTION B: REFERENCE (Expand as Needed)
 All recommendations must be written as **checkbox-ready directives** - clear orders from one physician to another or to the patient. These will be selected and sent directly in clinical communications.
 
 **DO NOT write:**
-- "Consider physical therapy for balance issues"
-- "Patient may benefit from neurology follow-up"
-- "Smoking cessation should be encouraged"
+- "Consider physical therapy for balance issues" (hedging language)
+- "Patient may benefit from neurology follow-up" (hedging language)
+- "Smoking cessation should be encouraged" (hedging language)
+- "PT consult" (abbreviation, no rationale)
+- "Neurology consult" (no rationale - WHY?)
 
 **DO write:**
-- "Physical therapy consult for gait and balance training"
-- "Neurology follow-up in 2-4 weeks"
-- "Smoking cessation"
-- "Avoid driving until cleared by neurology"
-- "Vitamin D 2000 IU daily"
-- "MRI brain with and without contrast"
+- "Physical therapy for gait training and fall prevention given proximal weakness"
+- "Neurology follow-up in 2-4 weeks for treatment response assessment"
+- "Smoking cessation to reduce vascular risk and improve outcomes"
+- "Do not drive until cleared by neurology due to risk of sudden weakness or visual changes"
+- "Speech therapy for swallow evaluation given bulbar symptoms and aspiration risk"
 
 **Formatting rules:**
-- Start with the action or service, not the rationale
+- Each recommendation must include the clinical rationale (WHY it's being ordered)
 - Use imperative verb forms or noun phrases
-- Keep recommendations concise (aim for <10 words when possible)
-- Rationale goes in the designated column, not the recommendation itself
+- The recommendation should be a complete clinical sentence
+- A physician reading the recommendation should understand its purpose without additional context
 
 ## Section 4 Guidance: Diagnosis-Specific Content Required
 
@@ -404,40 +424,40 @@ All recommendations must be written as **checkbox-ready directives** - clear ord
 
 ### 4A. Referrals & Consults
 
-Include diagnosis-appropriate referrals. Common categories:
+Include diagnosis-appropriate referrals WITH clinical rationale in the recommendation itself. Common categories:
 
-| Category | Examples |
-|----------|----------|
-| Rehabilitation | PT (gait, balance, strengthening), OT (ADLs, hand function), Speech (swallow, cognition, communication) |
-| Subspecialty | Neuromuscular, neuro-ophthalmology, epilepsy, movement disorders, neuro-oncology |
-| Medical specialties | Hematology/oncology, rheumatology, endocrinology, cardiology, pulmonology |
-| Supportive | Pain management, psychiatry/psychology, social work, palliative care, genetic counseling |
-| Primary care | PCP follow-up, podiatry, wound care, nutrition |
+| Category | Example Recommendations |
+|----------|------------------------|
+| Rehabilitation | "Physical therapy for gait training and fall prevention", "Occupational therapy for ADL adaptation and energy conservation", "Speech therapy for swallow evaluation given bulbar weakness" |
+| Subspecialty | "Neuromuscular specialist for treatment optimization and prognosis discussion", "Neuro-ophthalmology for diplopia evaluation and prism fitting" |
+| Medical specialties | "Pulmonology for respiratory function monitoring and ventilator wean guidance", "Cardiology for autonomic dysfunction evaluation" |
+| Supportive | "Pain management for refractory neuropathic pain not responding to first-line agents", "Social work for discharge planning and community resources" |
+| Primary care | "PCP follow-up for chronic disease management and medication reconciliation" |
 
 ### 4B. Patient Instructions
 
-Include actionable, diagnosis-specific instructions:
+Include actionable, diagnosis-specific instructions WITH rationale explaining WHY:
 
-| Category | Content Type |
-|----------|--------------|
-| Return precautions | Specific symptoms requiring ED return |
-| Activity guidance | Driving, work, exercise restrictions |
-| Medication guidance | Titration expectations, what not to stop abruptly, timing |
-| Self-monitoring | What to watch for, symptom diaries, when to call |
-| Safety | Fall prevention, seizure precautions, heat/cold exposure |
+| Category | Example Recommendations |
+|----------|------------------------|
+| Return precautions | "Return immediately if worsening weakness or breathing difficulty (may indicate disease progression requiring ICU care)", "Seek emergency care for new fever or headache (may indicate infection or relapse)" |
+| Activity guidance | "Do not drive until cleared by neurology due to risk of sudden weakness", "Avoid heavy lifting until strength recovers to prevent injury" |
+| Medication guidance | "Do not stop steroids abruptly as this may cause adrenal crisis", "Take pyridostigmine 30-60 minutes before meals to improve swallowing" |
+| Self-monitoring | "Monitor for double vision or drooping eyelids which may indicate worsening", "Keep a symptom diary to track response to treatment" |
+| Safety | "Use fall precautions including walker and bed rails due to proximal weakness", "Avoid hot environments which may worsen symptoms" |
 
 ### 4C. Lifestyle Modifications
 
-Include modifiable risk factors and preventive measures specific to the condition:
+Include modifiable risk factors and preventive measures WITH clinical rationale:
 
-| Category | Examples |
-|----------|----------|
-| Substance use | Alcohol cessation, smoking cessation |
-| Metabolic | Glycemic control, blood pressure targets, lipid management |
-| Activity | Exercise type and intensity, activity pacing |
-| Diet/supplements | Specific vitamins, dietary modifications |
-| Environmental | Heat avoidance, pressure point protection, home safety |
-| Sleep | Sleep hygiene, CPAP compliance |
+| Category | Example Recommendations |
+|----------|------------------------|
+| Substance use | "Alcohol cessation as alcohol worsens neuropathy and interacts with medications", "Smoking cessation to reduce vascular risk and improve healing" |
+| Metabolic | "Strict glycemic control (HbA1c <7%) to prevent neuropathy progression", "Blood pressure target <130/80 to reduce stroke recurrence risk" |
+| Activity | "Low-impact exercise (swimming, stationary bike) to maintain strength without overexertion", "Energy conservation with scheduled rest periods to manage fatigue" |
+| Diet/supplements | "Vitamin B12 supplementation if deficient to support nerve health", "Low-sodium diet to reduce fluid retention on steroids" |
+| Environmental | "Frequent repositioning every 2 hours to prevent pressure ulcers during immobility", "Home safety evaluation to remove fall hazards" |
+| Sleep | "CPAP compliance essential to prevent nocturnal hypoxia which worsens neurological function" |
 
 ## Builder Principles
 

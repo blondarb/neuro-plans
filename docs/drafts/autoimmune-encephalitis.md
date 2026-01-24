@@ -301,46 +301,46 @@ SECTION A: ACTION ITEMS
 
 ### 4A. Referrals & Consults
 
-| Recommendation | Indication | ED | HOSP | OPD | ICU |
-|----------------|------------|:--:|:----:|:---:|:---:|
-| Neurology consult | All suspected autoimmune encephalitis | STAT | STAT | — | STAT |
-| Neuro-immunology consult | Complex cases, treatment decisions | — | URGENT | ROUTINE | URGENT |
-| Oncology consult | Tumor identified or paraneoplastic | — | URGENT | — | URGENT |
-| Gynecologic oncology | Ovarian teratoma | — | URGENT | — | URGENT |
-| Critical care consult | ICU-level care, autonomic instability, coma | STAT | STAT | — | STAT |
-| Psychiatry consult | Severe psychiatric symptoms, catatonia | — | URGENT | — | URGENT |
-| Epilepsy consult | Refractory seizures | — | URGENT | — | URGENT |
-| Physical therapy | Mobility, fall prevention | — | ROUTINE | ROUTINE | ROUTINE |
-| Occupational therapy | ADL assessment, cognitive rehabilitation | — | ROUTINE | ROUTINE | ROUTINE |
-| Speech therapy | Swallowing, communication | — | URGENT | ROUTINE | URGENT |
-| Neuropsychology | Cognitive assessment | — | — | ROUTINE | — |
-| Social work | Support, discharge planning | — | ROUTINE | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Neurology consult for diagnosis confirmation, immunotherapy guidance, and antibody interpretation | STAT | STAT | — | STAT |
+| Neuro-immunology consult for complex cases, second-line therapy decisions, and long-term management | — | URGENT | ROUTINE | URGENT |
+| Oncology consult for tumor workup and treatment if paraneoplastic syndrome identified | — | URGENT | — | URGENT |
+| Gynecologic oncology for ovarian teratoma removal which is critical for anti-NMDAR encephalitis recovery | — | URGENT | — | URGENT |
+| Critical care consult for ICU admission given autonomic instability, coma, or need for sedation/ventilation | STAT | STAT | — | STAT |
+| Psychiatry consult for severe psychiatric symptoms, catatonia, or behavioral management in acute phase | — | URGENT | — | URGENT |
+| Epilepsy consult for refractory seizures and continuous EEG monitoring guidance | — | URGENT | — | URGENT |
+| Physical therapy for mobility assessment and fall prevention given fluctuating weakness and dyskinesias | — | ROUTINE | ROUTINE | ROUTINE |
+| Occupational therapy for ADL assessment and cognitive rehabilitation to maximize functional recovery | — | ROUTINE | ROUTINE | ROUTINE |
+| Speech therapy for swallow evaluation and communication strategies given dysarthria and aphasia | — | URGENT | ROUTINE | URGENT |
+| Neuropsychology for formal cognitive assessment to document deficits and guide rehabilitation | — | — | ROUTINE | — |
+| Social work for discharge planning and family support given prolonged recovery and potential disability | — | ROUTINE | ROUTINE | ROUTINE |
 
 ### 4B. Patient Instructions
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
-| Return immediately for worsening confusion, seizures, or new symptoms | STAT | — | STAT |
-| Continue immunotherapy as prescribed | — | STAT | STAT |
-| Report fever or signs of infection promptly (on immunosuppression) | — | STAT | STAT |
-| Seizure precautions (no driving, swimming alone, heights) | — | STAT | STAT |
-| Attend all follow-up appointments | — | ROUTINE | ROUTINE |
-| Recovery may take months to years | — | ROUTINE | ROUTINE |
-| Cognitive rehabilitation is important | — | ROUTINE | ROUTINE |
-| Support resources (Autoimmune Encephalitis Alliance: www.aealliance.org) | — | ROUTINE | ROUTINE |
+| Return immediately if worsening confusion, seizures, or new symptoms develop (may indicate relapse requiring treatment escalation) | STAT | — | STAT |
+| Continue immunotherapy as prescribed even when feeling better; stopping early increases relapse risk | — | STAT | STAT |
+| Report fever or signs of infection promptly as immunosuppression increases infection risk | — | STAT | STAT |
+| Follow seizure precautions including no driving, swimming alone, or heights due to unpredictable seizure risk | — | STAT | STAT |
+| Attend all follow-up appointments as relapses can occur months to years after initial presentation | — | ROUTINE | ROUTINE |
+| Expect that recovery may take months to years; improvement often continues for 2+ years | — | ROUTINE | ROUTINE |
+| Participate in cognitive rehabilitation as this is essential for optimizing recovery from memory and executive deficits | — | ROUTINE | ROUTINE |
+| Contact Autoimmune Encephalitis Alliance (www.aealliance.org) for patient support and educational resources | — | ROUTINE | ROUTINE |
 
 ### 4C. Lifestyle & Prevention
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
-| Fall precautions | STAT | STAT | STAT |
-| Aspiration precautions if impaired swallow | STAT | STAT | — |
-| DVT prevention | — | STAT | — |
-| Avoid live vaccines while on immunosuppression | — | ROUTINE | ROUTINE |
-| Infection prevention (hand hygiene, avoid sick contacts) | — | STAT | STAT |
-| Regular cancer screening (paraneoplastic cases) | — | — | ROUTINE |
-| Cognitive pacing and rest | — | ROUTINE | ROUTINE |
-| No driving until cleared by neurology | — | STAT | STAT |
+| Use fall precautions including walker and supervision due to movement disorders and cognitive impairment | STAT | STAT | STAT |
+| Aspiration precautions including thickened liquids and upright positioning if swallow impaired | STAT | STAT | — |
+| DVT prophylaxis with SCDs and/or anticoagulation given prolonged immobility risk | — | STAT | — |
+| Avoid live vaccines while on immunosuppression; inactivated vaccines are safe and recommended | — | ROUTINE | ROUTINE |
+| Practice infection prevention including hand hygiene and avoiding sick contacts while on immunosuppression | — | STAT | STAT |
+| Continue regular cancer screening for paraneoplastic cases as tumor recurrence can trigger relapse | — | — | ROUTINE |
+| Use cognitive pacing with scheduled rest periods to manage post-encephalitis fatigue | — | ROUTINE | ROUTINE |
+| Do not drive until cleared by neurology due to seizure risk and cognitive impairment | — | STAT | STAT |
 
 ---
 

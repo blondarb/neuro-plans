@@ -239,44 +239,44 @@ SECTION A: ACTION ITEMS
 
 ### 4A. Referrals & Consults
 
-| Recommendation | Indication | ED | HOSP | OPD | ICU |
-|----------------|------------|:--:|:----:|:---:|:---:|
-| Neurology consult | All MG exacerbations | STAT | STAT | — | STAT |
-| Pulmonology consult | Respiratory compromise, ventilator wean | URGENT | URGENT | — | STAT |
-| Critical care consult | FVC <20 mL/kg, impending crisis | URGENT | STAT | — | STAT |
-| Thoracic surgery consult | Thymoma identified, thymectomy planning | — | ROUTINE | — | ROUTINE |
-| Speech therapy consult | Bulbar symptoms, dysphagia | — | URGENT | — | URGENT |
-| Physical therapy consult | Mobility, fall prevention | — | URGENT | — | URGENT |
-| Occupational therapy consult | ADL assessment, energy conservation | — | ROUTINE | — | ROUTINE |
-| Respiratory therapy | Airway clearance, pulmonary toilet | STAT | STAT | — | STAT |
-| Pharmacy consult | Medication safety review | — | URGENT | — | URGENT |
-| Social work | Support resources, discharge planning | — | ROUTINE | — | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Neurology consult for crisis management, immunotherapy guidance, and medication safety review | STAT | STAT | — | STAT |
+| Pulmonology consult for respiratory function monitoring and ventilator wean planning if intubated | URGENT | URGENT | — | STAT |
+| Critical care consult for ICU admission given FVC <20 mL/kg or impending respiratory failure | URGENT | STAT | — | STAT |
+| Thoracic surgery consult for thymectomy planning if thymoma identified or considering elective thymectomy | — | ROUTINE | — | ROUTINE |
+| Speech therapy for swallow evaluation and aspiration risk assessment given bulbar symptoms | — | URGENT | — | URGENT |
+| Physical therapy for mobility assessment and safe transfer training given fluctuating weakness | — | URGENT | — | URGENT |
+| Occupational therapy for ADL assessment and energy conservation strategies to manage fatigue | — | ROUTINE | — | ROUTINE |
+| Respiratory therapy for airway clearance and pulmonary toilet given weak cough and secretion management | STAT | STAT | — | STAT |
+| Pharmacy consult to review all medications for MG-exacerbating drugs (see medications to avoid list) | — | URGENT | — | URGENT |
+| Social work for discharge planning and Myasthenia Gravis Foundation support resources | — | ROUTINE | — | ROUTINE |
 
 ### 4B. Patient Instructions
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
-| Return immediately for worsening weakness or breathing difficulty | STAT | — | STAT |
-| Do not skip or suddenly stop immunosuppressive medications | STAT | STAT | STAT |
-| Carry MG medical alert card listing medications to avoid | — | STAT | STAT |
-| Take pyridostigmine 30-60 minutes before meals if dysphagia | — | ROUTINE | ROUTINE |
-| Report fever or signs of infection promptly | STAT | STAT | STAT |
-| Avoid extreme heat (worsens symptoms) | — | ROUTINE | ROUTINE |
-| Get adequate rest, avoid overexertion | — | ROUTINE | ROUTINE |
-| Do not drive if diplopia or ptosis impairs vision | STAT | STAT | STAT |
-| Myasthenia Gravis Foundation resources (www.myasthenia.org) | — | ROUTINE | ROUTINE |
+| Return immediately if worsening weakness or breathing difficulty develops (may indicate crisis requiring intubation) | STAT | — | STAT |
+| Do not skip or suddenly stop immunosuppressive medications as this may trigger severe exacerbation | STAT | STAT | STAT |
+| Carry MG medical alert card listing medications to avoid (aminoglycosides, fluoroquinolones, beta-blockers, etc.) | — | STAT | STAT |
+| Take pyridostigmine 30-60 minutes before meals to improve swallowing and reduce aspiration risk | — | ROUTINE | ROUTINE |
+| Report fever or signs of infection promptly as infection is a common exacerbation trigger | STAT | STAT | STAT |
+| Avoid extreme heat as high temperatures worsen neuromuscular transmission and increase weakness | — | ROUTINE | ROUTINE |
+| Get adequate rest and avoid overexertion; fatigue worsens throughout the day in MG | — | ROUTINE | ROUTINE |
+| Do not drive if diplopia or ptosis impairs vision; symptoms may fluctuate unpredictably | STAT | STAT | STAT |
+| Contact Myasthenia Gravis Foundation (www.myasthenia.org) for patient support and educational resources | — | ROUTINE | ROUTINE |
 
 ### 4C. Lifestyle & Prevention
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
-| Aspiration precautions if bulbar weakness | STAT | STAT | — |
-| Fall precautions for all MG patients | STAT | STAT | STAT |
-| Medication reconciliation before any new prescription | STAT | STAT | STAT |
-| Vaccinations: avoid live vaccines on immunosuppression; flu and pneumococcal recommended | — | ROUTINE | ROUTINE |
-| Stress management (stress can trigger exacerbation) | — | ROUTINE | ROUTINE |
-| Sleep hygiene | — | ROUTINE | ROUTINE |
-| Energy conservation techniques | — | ROUTINE | ROUTINE |
+| Aspiration precautions including thickened liquids and upright positioning given bulbar weakness | STAT | STAT | — |
+| Fall precautions including walker and bed rails due to fluctuating proximal weakness | STAT | STAT | STAT |
+| Medication reconciliation before any new prescription to avoid MG-exacerbating drugs | STAT | STAT | STAT |
+| Avoid live vaccines while on immunosuppression; flu and pneumococcal vaccines recommended to prevent infections | — | ROUTINE | ROUTINE |
+| Stress management techniques as psychological stress can trigger MG exacerbations | — | ROUTINE | ROUTINE |
+| Maintain good sleep hygiene as fatigue and sleep deprivation worsen MG symptoms | — | ROUTINE | ROUTINE |
+| Use energy conservation techniques including pacing activities and scheduling rest periods | — | ROUTINE | ROUTINE |
 
 ---
 

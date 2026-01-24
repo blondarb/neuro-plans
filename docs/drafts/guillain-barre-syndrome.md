@@ -261,42 +261,42 @@ SECTION A: ACTION ITEMS
 
 ### 4A. Referrals & Consults
 
-| Recommendation | Indication | ED | HOSP | OPD | ICU |
-|----------------|------------|:--:|:----:|:---:|:---:|
-| Neurology consult | All suspected GBS | STAT | STAT | — | STAT |
-| Pulmonology consult | Respiratory compromise | URGENT | URGENT | — | STAT |
-| Critical care consult | FVC <30 mL/kg or declining | URGENT | STAT | — | STAT |
-| Physical therapy consult | Mobility assessment, fall prevention | — | STAT | — | STAT |
-| Occupational therapy consult | ADL assessment, adaptive equipment | — | URGENT | — | URGENT |
-| Speech therapy consult | Bulbar weakness, dysphagia | — | URGENT | — | URGENT |
-| Respiratory therapy | Airway clearance, ventilator management | STAT | STAT | — | STAT |
-| Pain management consult | Refractory neuropathic pain | — | ROUTINE | — | ROUTINE |
-| Physiatry/PM&R | Rehabilitation planning | — | ROUTINE | — | ROUTINE |
-| Social work | Discharge planning, support resources | — | ROUTINE | — | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Neurology consult for diagnosis confirmation, immunotherapy initiation, and prognosis discussion | STAT | STAT | — | STAT |
+| Pulmonology consult for respiratory function monitoring and ventilator management if FVC declining | URGENT | URGENT | — | STAT |
+| Critical care consult for ICU admission given FVC <30 mL/kg or rapidly declining respiratory function | URGENT | STAT | — | STAT |
+| Physical therapy for mobility assessment, fall prevention, and early mobilization when stable | — | STAT | — | STAT |
+| Occupational therapy for ADL assessment and adaptive equipment to maintain independence | — | URGENT | — | URGENT |
+| Speech therapy for swallow evaluation given bulbar weakness and aspiration risk | — | URGENT | — | URGENT |
+| Respiratory therapy for airway clearance techniques and ventilator management if intubated | STAT | STAT | — | STAT |
+| Pain management consult for refractory neuropathic pain not responding to gabapentin/pregabalin | — | ROUTINE | — | ROUTINE |
+| Physiatry/PM&R for rehabilitation planning and discharge disposition to optimize functional recovery | — | ROUTINE | — | ROUTINE |
+| Social work for discharge planning, caregiver support, and GBS Foundation resources | — | ROUTINE | — | ROUTINE |
 
 ### 4B. Patient Instructions
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
-| Return if worsening weakness or shortness of breath | STAT | — | STAT |
-| Fall precautions due to weakness | STAT | STAT | STAT |
-| Do not drive until cleared by neurology | STAT | STAT | STAT |
-| Physical therapy exercises as prescribed | — | STAT | STAT |
-| Expect gradual recovery over weeks to months | — | ROUTINE | ROUTINE |
-| Report fevers, severe headache, or new symptoms | STAT | STAT | STAT |
-| GBS Foundation resources (www.gbs-cidp.org) | — | ROUTINE | ROUTINE |
+| Return immediately if worsening weakness or breathing difficulty develops (may indicate disease progression requiring intubation) | STAT | — | STAT |
+| Use fall precautions including walker and assistance due to proximal weakness and areflexia | STAT | STAT | STAT |
+| Do not drive until cleared by neurology due to unpredictable weakness and impaired reflexes | STAT | STAT | STAT |
+| Perform physical therapy exercises as prescribed to maintain range of motion and prevent contractures | — | STAT | STAT |
+| Expect gradual recovery over weeks to months; most patients recover but pace varies by severity | — | ROUTINE | ROUTINE |
+| Report fevers, severe headache, or new symptoms immediately as these may indicate infection or relapse | STAT | STAT | STAT |
+| Contact GBS-CIDP Foundation (www.gbs-cidp.org) for patient support and educational resources | — | ROUTINE | ROUTINE |
 
 ### 4C. Lifestyle & Prevention
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
-| Aspiration precautions if bulbar weakness | STAT | STAT | — |
-| DVT prevention: early mobilization when safe | — | STAT | — |
-| Skin breakdown prevention: frequent repositioning | — | STAT | STAT |
-| Bladder care: monitor for retention | — | STAT | — |
-| Energy conservation techniques | — | ROUTINE | ROUTINE |
-| Gradual return to activities as tolerated | — | — | ROUTINE |
-| Avoid vaccinations during acute illness (discuss timing with neurologist for future) | — | ROUTINE | ROUTINE |
+| Aspiration precautions including thickened liquids and upright positioning given bulbar weakness | STAT | STAT | — |
+| Early mobilization when medically stable to prevent DVT and deconditioning (with PT guidance) | — | STAT | — |
+| Frequent repositioning every 2 hours to prevent pressure ulcers during immobility | — | STAT | STAT |
+| Monitor for urinary retention and catheterize if needed due to autonomic dysfunction | — | STAT | — |
+| Use energy conservation techniques including scheduled rest periods to manage post-GBS fatigue | — | ROUTINE | ROUTINE |
+| Gradual return to activities as strength permits; avoid overexertion which may worsen fatigue | — | — | ROUTINE |
+| Discuss future vaccination timing with neurologist; avoid live vaccines if on immunotherapy | — | ROUTINE | ROUTINE |
 
 ---
 
