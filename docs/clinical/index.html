@@ -359,6 +359,28 @@ CHANGELOG:
       background: #bbf7d0;
       color: #166534;
     }
+    .dose-custom-input-container {
+      padding: 8px 10px;
+      border-top: 1px solid #e5e7eb;
+      background: #f9fafb;
+    }
+    .dose-custom-input {
+      width: 100%;
+      padding: 6px 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      box-sizing: border-box;
+    }
+    .dose-custom-input:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    }
+    .dose-custom-input::placeholder {
+      color: #9ca3af;
+      font-style: italic;
+    }
 
     /* Info Icons Row - Compact icons with tooltips */
     .item-icons {
@@ -1072,9 +1094,13 @@ CHANGELOG:
             if (hasMultipleDoses) {
               // Multiple dose options - show dropdown
               let optionsHtml = doseOptions.map((opt, idx) =>
-                `<div class="dose-option" data-order-sentence="${escapeHtml(opt.orderSentence)}" onclick="copyDoseOption(event, this)">${escapeHtml(opt.orderSentence)}</div>`
+                `<div class="dose-option" data-order-sentence="${escapeHtml(opt.orderSentence)}" onclick="selectDoseOption(event, this)">${escapeHtml(opt.orderSentence)}</div>`
               ).join('');
-              dosingBadgeHtml = `<div class="dosing-dropdown-container">
+              // Add custom instructions input at bottom of dropdown
+              optionsHtml += `<div class="dose-custom-input-container">
+                <input type="text" class="dose-custom-input" placeholder="Add custom instructions..." data-item-id="${itemId}" onkeydown="handleCustomInstructions(event, this)">
+              </div>`;
+              dosingBadgeHtml = `<div class="dosing-dropdown-container" data-item-id="${itemId}">
                 <span class="item-dosing-badge clickable multi-dose"
                   title="${escapeHtml(fullInstructions)}"
                   onclick="toggleDoseDropdown(event, this)">${escapeHtml(displayDosing)} ▼</span>
@@ -1249,14 +1275,19 @@ CHANGELOG:
       }
       if (itemData) {
         const name = itemData.item || itemData.name || itemData.treatment || 'Item';
-        // Include dosing in the display name for medications
-        // For structured dosing with order sentence, show order sentence only (it includes drug name)
-        // For legacy dosing, show "Drug — instructions"
+        // Default to drug name only - specific dose shown only when selected from dropdown
+        // For multi-dose medications: show "Drug — see dosing options"
+        // For single dose or legacy: show "Drug — instructions"
         let displayName = name;
         if (itemData.dosing) {
           const isStructured = typeof itemData.dosing === 'object';
-          if (isStructured && itemData.dosing.orderSentence) {
-            // Order sentence already includes drug name, show it directly
+          const hasMultipleDoses = isStructured && itemData.dosing.doseOptions && itemData.dosing.doseOptions.length > 1;
+
+          if (hasMultipleDoses) {
+            // Multi-dose: start with drug name only, user will select specific dose from dropdown
+            displayName = `${name} — select dose from dropdown`;
+          } else if (isStructured && itemData.dosing.orderSentence) {
+            // Single dose: show the order sentence
             displayName = itemData.dosing.orderSentence;
           } else {
             // Legacy format: show "Drug — dosing instructions"
@@ -1413,14 +1444,28 @@ CHANGELOG:
     }
   };
 
-  // Copy a specific dose option from the dropdown
-  window.copyDoseOption = function(event, option) {
+  // Select a specific dose option from the dropdown - updates sidebar AND copies
+  window.selectDoseOption = function(event, option) {
     event.stopPropagation();
     const orderSentence = option.dataset.orderSentence;
+    const container = option.closest('.dosing-dropdown-container');
+    const itemId = container ? container.dataset.itemId : null;
+
     if (orderSentence) {
+      // Copy to clipboard
       navigator.clipboard.writeText(orderSentence).then(() => {
         option.classList.add('copied');
         showToast(`Copied: ${orderSentence}`);
+
+        // Update sidebar if item is selected
+        if (itemId && selectedItems.has(itemId)) {
+          const item = selectedItems.get(itemId);
+          item.editedName = orderSentence;
+          item.selectedDose = orderSentence; // Track which dose was selected
+          selectedItems.set(itemId, item);
+          updateSelectedList();
+        }
+
         setTimeout(() => {
           option.classList.remove('copied');
           // Close dropdown after copy
@@ -1429,6 +1474,37 @@ CHANGELOG:
       }).catch(() => {
         showToast('Failed to copy');
       });
+    }
+  };
+
+  // Handle custom instructions input in dropdown
+  window.handleCustomInstructions = function(event, input) {
+    if (event.key === 'Enter' && input.value.trim()) {
+      event.preventDefault();
+      event.stopPropagation();
+      const customText = input.value.trim();
+      const container = input.closest('.dosing-dropdown-container');
+      const itemId = container ? container.dataset.itemId : null;
+
+      if (itemId && selectedItems.has(itemId)) {
+        const item = selectedItems.get(itemId);
+        // Append custom instructions to the current dose (or add as new line)
+        if (item.selectedDose) {
+          item.editedName = `${item.selectedDose} — ${customText}`;
+        } else {
+          const name = item.originalName || item.item || 'Item';
+          item.editedName = `${name} — ${customText}`;
+        }
+        item.customInstructions = customText;
+        selectedItems.set(itemId, item);
+        updateSelectedList();
+        showToast(`Added: ${customText}`);
+        input.value = '';
+        // Close dropdown
+        input.closest('.dose-dropdown').classList.remove('show');
+      } else {
+        showToast('Select the medication first (checkbox)');
+      }
     }
   };
 
