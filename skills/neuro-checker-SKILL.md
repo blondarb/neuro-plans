@@ -52,9 +52,11 @@ Tables should use the multi-column setting-priority format:
 
 **Structured Dosing Format:**
 ```
-[standard_dose] | [route] | [frequency] | [full_instructions]
+[standard_dose] :: [route] :: [frequency] :: [full_instructions]
 ```
-Example: `5 mg | PO | TID | Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day`
+Example: `5 mg :: PO :: TID :: Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day`
+
+**Note:** We use `::` instead of `|` because `|` conflicts with markdown table syntax.
 
 **Priority values:** STAT | URGENT | ROUTINE | EXT | - (not applicable)
 
@@ -274,7 +276,7 @@ V2. [Item needing physician confirmation]
 
 **Medication Format & Comprehensiveness (HIGH PRIORITY):**
 - **Route column present in ALL treatment sections (3A, 3B, 3C, 3D)?** - REQUIRED for order sentences
-- **Structured dosing format used?** - `dose | route | frequency | full_instructions`
+- **Structured dosing format used?** - `dose :: route :: frequency :: full_instructions`
 - **Indication column present in ALL treatment sections?** - Displays as 💊 icon
 - Are all medications listed individually (not grouped as "SSRIs" or "beta-blockers")?
 - Does each drug have complete dosing (start dose, titration, max dose) in the full_instructions field?
@@ -363,7 +365,7 @@ Flag any recommendations that use weak/suggestive language:
 **v3.0 (January 24, 2026)** - MAJOR: Clickable Medication Dosing Validation
 - **Updated Expected Table Format** to require standardized columns for ALL treatment sections
 - **Added Route column validation** for sections 3A, 3B, 3C (previously only 3D)
-- **Added Structured Dosing Format validation** - `dose | route | frequency | full_instructions`
+- **Added Structured Dosing Format validation** - `dose :: route :: frequency :: full_instructions`
 - Updated Medication Assessment table with new criteria
 - Updated Common Issues checklist with format validation examples
 - See docs/ROADMAP.md for full implementation plan

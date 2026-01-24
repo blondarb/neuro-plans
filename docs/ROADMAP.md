@@ -41,12 +41,14 @@ This roadmap outlines planned improvements to the clinical plan generation syste
 Start 5 mg TID; increase by 5 mg/dose every 3 days; max 80 mg/day
 ```
 
-**New structured dosing format (pipe-delimited fields within dosing cell):**
+**New structured dosing format (double-colon delimited fields within dosing cell):**
 ```
-5 mg | PO | TID | Start 5 mg TID, titrate by 5 mg q3d, max 80 mg/day
+5 mg :: PO :: TID :: Start 5 mg TID, titrate by 5 mg q3d, max 80 mg/day
 ```
 
-**Format:** `dose | route | frequency | full_instructions`
+**Format:** `dose :: route :: frequency :: full_instructions`
+
+**Note:** We use `::` instead of `|` because `|` conflicts with markdown table syntax.
 
 This allows the clinical tool to:
 1. Generate order sentences: "Baclofen 5 mg PO TID"

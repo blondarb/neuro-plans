@@ -259,18 +259,20 @@ ALL treatment sections (3A, 3B, 3C, 3D) now use the same column format:
 
 ### Structured Dosing Format
 
-Use pipe-delimited fields to enable clickable order sentences:
+Use double-colon delimited fields to enable clickable order sentences:
 
 ```
-[standard_dose] | [route] | [frequency] | [full_instructions]
+[standard_dose] :: [route] :: [frequency] :: [full_instructions]
 ```
+
+**Note:** We use `::` instead of `|` because `|` conflicts with markdown table syntax.
 
 **Examples:**
 ```
-5 mg | PO | TID | Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day
-1000 mg | IV | daily x 5 days | 1000 mg IV daily for 3-5 days; infuse over 1 hour
-4 mg | IV | push PRN seizure | 4 mg IV push; may repeat x1 in 5 min; max 8 mg
-0.9 mg/kg | IV | once | 0.9 mg/kg IV (max 90 mg); 10% bolus, 90% over 60 min
+5 mg :: PO :: TID :: Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day
+1000 mg :: IV :: daily x 5 days :: 1000 mg IV daily for 3-5 days; infuse over 1 hour
+4 mg :: IV :: push PRN seizure :: 4 mg IV push; may repeat x1 in 5 min; max 8 mg
+0.9 mg/kg :: IV :: once :: 0.9 mg/kg IV (max 90 mg); 10% bolus, 90% over 60 min
 ```
 
 **Clinical Tool Behavior:**

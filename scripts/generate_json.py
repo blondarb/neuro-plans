@@ -606,8 +606,9 @@ class MarkdownParser:
         if not dosing_text:
             return None
 
-        # Check if it's the new structured format (contains pipe delimiters)
-        parts = [p.strip() for p in dosing_text.split('|')]
+        # Check if it's the new structured format (contains :: delimiters)
+        # Using :: instead of | because | conflicts with markdown table syntax
+        parts = [p.strip() for p in dosing_text.split('::')]
 
         if len(parts) >= 4:
             # New structured format

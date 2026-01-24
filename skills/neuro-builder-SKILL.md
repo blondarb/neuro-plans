@@ -150,18 +150,20 @@ SECTION A: ACTION ITEMS
 
 ### Dosing Requirements
 
-**STRUCTURED DOSING FORMAT:** Use pipe-delimited fields to enable order sentence generation:
+**STRUCTURED DOSING FORMAT:** Use double-colon delimited fields to enable order sentence generation:
 
 ```
-[standard_dose] | [route] | [frequency] | [full_instructions]
+[standard_dose] :: [route] :: [frequency] :: [full_instructions]
 ```
+
+**Note:** We use `::` instead of `|` because `|` conflicts with markdown table syntax.
 
 **Examples:**
 ```
-5 mg | PO | TID | Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day
-1000 mg | IV | daily x 5 days | 1000 mg IV daily for 3-5 days; infuse over 1 hour
-4 mg | IV | push PRN | 4 mg IV push over 2 min; may repeat x1 in 5 min; max 8 mg
-0.9 mg/kg | IV | once | 0.9 mg/kg IV (max 90 mg); 10% bolus, 90% over 60 min
+5 mg :: PO :: TID :: Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day
+1000 mg :: IV :: daily x 5 days :: 1000 mg IV daily for 3-5 days; infuse over 1 hour
+4 mg :: IV :: push PRN :: 4 mg IV push over 2 min; may repeat x1 in 5 min; max 8 mg
+0.9 mg/kg :: IV :: once :: 0.9 mg/kg IV (max 90 mg); 10% bolus, 90% over 60 min
 ```
 
 **Field Definitions:**
@@ -174,8 +176,8 @@ SECTION A: ACTION ITEMS
 
 **Order Sentence Generation:**
 The clinical tool will generate clickable order sentences from the first three fields:
-- `5 mg | PO | TID | ...` → "Baclofen 5 mg PO TID"
-- `1000 mg | IV | daily x 5 days | ...` → "Methylprednisolone 1000 mg IV daily x 5 days"
+- `5 mg :: PO :: TID :: ...` → "Baclofen 5 mg PO TID"
+- `1000 mg :: IV :: daily x 5 days :: ...` → "Methylprednisolone 1000 mg IV daily x 5 days"
 
 **Full Instructions Must Include:**
 | Element | Example |
@@ -189,21 +191,21 @@ The clinical tool will generate clickable order sentences from the first three f
 **PRN Medications:**
 Include PRN indication in frequency field:
 ```
-4 mg | IV | push PRN seizure | 4 mg IV push; may repeat x1 in 5 min; max 8 mg
-10 mg | PO | q6h PRN pain | 10 mg PO q6h as needed for pain; max 40 mg/day
+4 mg :: IV :: push PRN seizure :: 4 mg IV push; may repeat x1 in 5 min; max 8 mg
+10 mg :: PO :: q6h PRN pain :: 10 mg PO q6h as needed for pain; max 40 mg/day
 ```
 
 **Loading + Maintenance Doses:**
 Use "load, then" pattern:
 ```
-1000 mg | IV | load, then 500 mg q12h | Load 1000 mg IV, then 500 mg IV q12h; adjust for renal function
+1000 mg :: IV :: load, then 500 mg q12h :: Load 1000 mg IV, then 500 mg IV q12h; adjust for renal function
 ```
 
 **Weight-Based Dosing:**
 Include mg/kg in standard_dose:
 ```
-0.15 mg/kg | IV | push | 0.15 mg/kg IV (max 10 mg); repeat q5min PRN; max 0.3 mg/kg total
-20 mg/kg | IV | load | 20 mg/kg IV load (max 1500 mg); infuse at 50 mg/min
+0.15 mg/kg :: IV :: push :: 0.15 mg/kg IV (max 10 mg); repeat q5min PRN; max 0.3 mg/kg total
+20 mg/kg :: IV :: load :: 20 mg/kg IV load (max 1500 mg); infuse at 50 mg/min
 ```
 
 ### Symptomatic Treatment Categories
