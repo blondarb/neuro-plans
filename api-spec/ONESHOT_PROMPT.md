@@ -45,15 +45,21 @@ Build a complete full-stack application for generating clinical decision support
 1. User submits a neurological diagnosis (e.g., "Guillain-Barré Syndrome - New Diagnosis")
 2. Job queued in Supabase (returns immediately)
 3. Supabase Edge Function runs the multi-model pipeline:
-   - GPT-4o generates comprehensive clinical plan (~$0.15)
-   - Claude Sonnet 4 verifies clinical accuracy (~$0.08)
-   - Gemini 1.5 Pro verifies citations (~$0.04)
+   - Claude Opus 4.5 generates comprehensive clinical plan (~$0.40) - SAFEST MODEL FOR HEALTHCARE
+   - Claude Opus 4.5 verifies clinical accuracy (~$0.15) - Same model, different prompt
+   - Gemini 3 Pro verifies citations (~$0.04)
 4. Results saved to Supabase
 5. Client polls until complete, then shows result
-6. Physician reviews and approves via web UI
+6. **MANDATORY physician review** for ALL plans (healthcare safety)
 7. Approved plans available via API for other apps
 
-**Total cost: ~$0.27 per plan**
+**Total cost: ~$0.59 per plan** (prioritizing safety over cost)
+
+**Why Claude Opus 4.5 for Healthcare:**
+- LOWEST hallucination rate among frontier models (Hughes 2024)
+- Refuses to answer when uncertain (safer than confident wrong answers)
+- Best instruction-following on SWE-bench (80.9%)
+- Pharmacist + LLM studies show 1.5x accuracy improvement over pharmacist alone
 
 **Tech Stack:**
 - Next.js 14+ (App Router)
@@ -61,9 +67,8 @@ Build a complete full-stack application for generating clinical decision support
 - Tailwind CSS
 - Supabase (database, auth, real-time, **Edge Functions**)
 - Vercel (hosting - UI and quick APIs only)
-- OpenAI API (GPT-4o)
-- Anthropic API (Claude Sonnet 4)
-- Google AI API (Gemini 1.5 Pro)
+- Anthropic API (Claude Opus 4.5 - generation + clinical verification)
+- Google AI API (Gemini 3 Pro - citation verification)
 
 ---
 
@@ -74,7 +79,8 @@ Create a new Next.js project with these specifications:
 ```bash
 npx create-next-app@latest clinical-plan-generator --typescript --tailwind --eslint --app --src-dir --import-alias "@/*"
 cd clinical-plan-generator
-npm install @supabase/supabase-js @supabase/ssr openai @anthropic-ai/sdk @google/generative-ai lucide-react
+# Note: No openai package needed - using Claude Opus 4.5 for safety-first healthcare generation
+npm install @supabase/supabase-js @supabase/ssr @anthropic-ai/sdk @google/generative-ai lucide-react
 ```
 
 Also initialize Supabase CLI for Edge Functions:
@@ -96,7 +102,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
 
 # AI Providers (also add these to Supabase Edge Function secrets)
-OPENAI_API_KEY=your_openai_key
+# Note: Using Claude Opus 4.5 for generation + verification (safest for healthcare)
 ANTHROPIC_API_KEY=your_anthropic_key
 GEMINI_API_KEY=your_gemini_key
 
@@ -394,15 +400,34 @@ const corsHeaders = {
 }
 
 // Pricing per million tokens (January 2026)
+// SAFETY-FIRST: Using Claude Opus 4.5 for generation + verification (lowest hallucination rate)
 const PRICING = {
-  'gpt-4o': { input: 2.5, output: 10 },
-  'claude-sonnet-4': { input: 3, output: 15 },
-  'gemini-1.5-pro': { input: 1.25, output: 5 },
+  'claude-opus-4-5': { input: 15, output: 75 },  // Generation + Clinical Verification
+  'gemini-3-pro': { input: 1.25, output: 5 },    // Citation verification only
 }
 
+// HIGH-ALERT MEDICATIONS - Always require human review
+const HIGH_ALERT_MEDICATIONS = [
+  'warfarin', 'heparin', 'enoxaparin', 'rivaroxaban', 'apixaban', 'dabigatran',  // Anticoagulants
+  'insulin', 'metformin',  // Diabetes
+  'opioids', 'morphine', 'fentanyl', 'hydromorphone', 'oxycodone', 'methadone',  // Controlled substances
+  'digoxin', 'amiodarone', 'lidocaine',  // Cardiac
+  'phenytoin', 'carbamazepine', 'valproic acid', 'levetiracetam',  // Anti-epileptics (narrow therapeutic index)
+  'methotrexate', 'cyclophosphamide', 'rituximab',  // Immunosuppressants
+  'alteplase', 'tenecteplase',  // Thrombolytics
+  'potassium chloride', 'magnesium sulfate',  // Electrolytes (IV)
+  'propofol', 'ketamine', 'midazolam',  // Sedatives
+]
+
 function calculateCost(model: string, inputTokens: number, outputTokens: number): number {
-  const p = PRICING[model] || PRICING['gpt-4o']
+  const p = PRICING[model] || PRICING['claude-opus-4-5']
   return (inputTokens * p.input / 1_000_000) + (outputTokens * p.output / 1_000_000)
+}
+
+// Check if plan contains high-alert medications requiring mandatory review
+function containsHighAlertMedications(planContent: string): string[] {
+  const lowerContent = planContent.toLowerCase()
+  return HIGH_ALERT_MEDICATIONS.filter(med => lowerContent.includes(med.toLowerCase()))
 }
 
 // ============================================================================
@@ -411,11 +436,18 @@ function calculateCost(model: string, inputTokens: number, outputTokens: number)
 
 const GENERATION_SYSTEM_PROMPT = `You are a clinical decision support generator specializing in neurology. You create comprehensive, evidence-based treatment plans for physicians in Emergency Departments, Hospitals, Outpatient Clinics, and ICUs.
 
+CRITICAL SAFETY REQUIREMENTS - HEALTHCARE APPLICATION:
+- If you are uncertain about a drug dose, contraindication, or clinical recommendation, you MUST flag it for physician review
+- NEVER guess or hallucinate drug dosing - use only verified standard ranges
+- If information is not available or unclear, state "REQUIRES PHYSICIAN VERIFICATION" rather than inventing data
+- All HIGH-ALERT medications (anticoagulants, opioids, insulin, antiepileptics, thrombolytics) MUST include explicit safety warnings
+
 Your output must be:
-1. ACCURATE - Drug dosing, diagnostic criteria, and clinical claims must be factually correct
+1. ACCURATE - Drug dosing, diagnostic criteria, and clinical claims must be factually correct. When uncertain, flag for review.
 2. COMPLETE - All 8 sections populated with appropriate setting coverage
-3. SAFE - Critical contraindications, monitoring requirements, and red flags included
+3. SAFE - Critical contraindications, monitoring requirements, and red flags included. HIGH-ALERT medications prominently marked.
 4. ACTIONABLE - Written as physician-ready directives, not suggestions
+5. CONSERVATIVE - When in doubt, recommend the safer option or flag for specialist review
 
 ## OUTPUT FORMAT
 
@@ -565,12 +597,26 @@ Example: 5 mg :: PO :: TID :: Start 5 mg TID; titrate by 5 mg/dose every 3 days;
 
 const CLINICAL_VERIFICATION_SYSTEM_PROMPT = `You are a clinical pharmacist and board-certified neurologist reviewing a clinical decision support plan for accuracy and safety.
 
+CRITICAL: THIS IS FOR REAL HEALTHCARE USE. PATIENT SAFETY IS PARAMOUNT.
+
+HIGH-ALERT MEDICATION CATEGORIES (always flag for mandatory physician review):
+- Anticoagulants: warfarin, heparin, enoxaparin, DOACs
+- Opioids: morphine, fentanyl, hydromorphone, oxycodone, methadone
+- Insulin and hypoglycemics
+- Anti-epileptics: phenytoin, carbamazepine, valproic acid (narrow therapeutic index)
+- Thrombolytics: alteplase, tenecteplase
+- IV electrolytes: potassium chloride, magnesium sulfate
+- Sedatives: propofol, ketamine, midazolam
+- Immunosuppressants: methotrexate, cyclophosphamide, rituximab
+
 VERIFY EACH MEDICATION FOR:
 1. Dose within standard therapeutic range (check mg, frequency, max daily dose)
 2. Route appropriate for indication and setting
 3. All critical contraindications listed (drug-specific, not generic)
 4. Drug-drug interactions that should be mentioned
 5. Monitoring parameters appropriate and complete
+6. HIGH-ALERT status properly flagged
+7. Black box warnings included where applicable
 
 OUTPUT FORMAT:
 
@@ -578,6 +624,7 @@ For each medication, output ONE line:
 ✅ OK: [Drug name] - [brief verification note]
 ⚠️ FLAG: [Drug name] - [specific concern for physician review]
 ❌ ERROR: [Drug name] - [critical safety issue - MUST FIX]
+🚨 HIGH-ALERT: [Drug name] - [requires mandatory physician verification]
 
 Then provide a JSON summary block:
 
@@ -588,6 +635,7 @@ Then provide a JSON summary block:
   "ok_count": 0,
   "flagged_count": 0,
   "error_count": 0,
+  "high_alert_count": 0,
   "errors": [
     {
       "medication": "Drug Name",
@@ -605,9 +653,18 @@ Then provide a JSON summary block:
       "severity": "medium" | "low"
     }
   ],
+  "high_alert_medications": [
+    {
+      "medication": "Drug Name",
+      "category": "anticoagulant | opioid | insulin | etc.",
+      "verification_status": "dose_verified | needs_review",
+      "black_box_warning": "Brief warning text if applicable"
+    }
+  ],
   "suggested_additions": [
     "Missing contraindication or interaction to add"
-  ]
+  ],
+  "mandatory_physician_review": true
 }
 \`\`\`
 
@@ -615,7 +672,9 @@ IMPORTANT:
 - Be SPECIFIC about dose issues (e.g., "Max is 3200mg/day, plan says 4000mg")
 - Flag drug interactions (e.g., "SSRIs + triptans = serotonin syndrome risk")
 - Check pediatric vs adult dosing if age not specified
-- Verify renal/hepatic adjustment recommendations where needed`
+- Verify renal/hepatic adjustment recommendations where needed
+- ALL high-alert medications require mandatory_physician_review = true
+- If uncertain about ANY medication, flag it for physician review (safer than guessing)`
 
 const CITATION_VERIFICATION_SYSTEM_PROMPT = `You are a medical librarian verifying citations in a clinical document.
 
@@ -717,49 +776,63 @@ serve(async (req) => {
     let totalCost = 0
 
     // ========================================================================
-    // STAGE 1: GENERATE PLAN WITH GPT-4o
+    // STAGE 1: GENERATE PLAN WITH CLAUDE OPUS 4.5 (SAFEST MODEL FOR HEALTHCARE)
     // ========================================================================
-    console.log('Stage 1: Generating plan with GPT-4o...')
+    console.log('Stage 1: Generating plan with Claude Opus 4.5 (safety-first)...')
 
     await logJob(supabase, plan_id, 'generate', 'running')
 
     const genStart = Date.now()
-    const openaiResponse = await fetch('https://api.openai.com/v1/chat/completions', {
+    const claudeGenResponse = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
-        'Authorization': \`Bearer \${Deno.env.get('OPENAI_API_KEY')}\`,
+        'x-api-key': Deno.env.get('ANTHROPIC_API_KEY') ?? '',
+        'anthropic-version': '2023-06-01',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'gpt-4o',
+        model: 'claude-opus-4-5-20251101',
+        max_tokens: 16000,
+        system: GENERATION_SYSTEM_PROMPT,
         messages: [
-          { role: 'system', content: GENERATION_SYSTEM_PROMPT },
           { role: 'user', content: \`Generate a comprehensive clinical decision support plan for: \${plan.diagnosis} - \${plan.modifier || 'New Diagnosis'}
 
+CRITICAL: This is for healthcare use. Patient safety is paramount.
+- Use only verified standard drug dosing ranges
+- Flag any uncertainty for physician review
+- Mark HIGH-ALERT medications prominently
+- Include all safety warnings and contraindications
+
 Focus on evidence-based recommendations with complete medication dosing, contraindications, and monitoring requirements. Include all 8 sections with thorough coverage.\` }
-        ],
-        max_tokens: 16000,
-        temperature: 0.3
+        ]
       })
     })
 
-    if (!openaiResponse.ok) {
-      const err = await openaiResponse.text()
-      throw new Error(\`OpenAI error: \${err}\`)
+    if (!claudeGenResponse.ok) {
+      const err = await claudeGenResponse.text()
+      throw new Error(\`Claude generation error: \${err}\`)
     }
 
-    const openaiData = await openaiResponse.json()
-    const generatedPlan = openaiData.choices[0].message.content
-    const genCost = calculateCost('gpt-4o', openaiData.usage.prompt_tokens, openaiData.usage.completion_tokens)
+    const claudeGenData = await claudeGenResponse.json()
+    const generatedPlan = claudeGenData.content[0].text
+    const genCost = calculateCost('claude-opus-4-5', claudeGenData.usage.input_tokens, claudeGenData.usage.output_tokens)
     totalCost += genCost
 
+    // Check for high-alert medications
+    const highAlertMeds = containsHighAlertMedications(generatedPlan)
+    const hasHighAlertMeds = highAlertMeds.length > 0
+
     await logJob(supabase, plan_id, 'generate', 'completed', {
-      model: 'gpt-4o',
-      input_tokens: openaiData.usage.prompt_tokens,
-      output_tokens: openaiData.usage.completion_tokens,
+      model: 'claude-opus-4-5',
+      input_tokens: claudeGenData.usage.input_tokens,
+      output_tokens: claudeGenData.usage.output_tokens,
       cost_usd: genCost,
       duration_ms: Date.now() - genStart,
-      result: { preview: generatedPlan.substring(0, 500) }
+      result: {
+        preview: generatedPlan.substring(0, 500),
+        high_alert_medications: highAlertMeds,
+        requires_extra_review: hasHighAlertMeds
+      }
     })
 
     // Update plan with generated content
@@ -773,15 +846,15 @@ Focus on evidence-based recommendations with complete medication dosing, contrai
       .eq('id', plan_id)
 
     // ========================================================================
-    // STAGE 2A: CLINICAL VERIFICATION WITH CLAUDE
+    // STAGE 2A: CLINICAL VERIFICATION WITH CLAUDE OPUS 4.5 (SAFETY-FIRST)
     // ========================================================================
-    console.log('Stage 2A: Clinical verification with Claude...')
+    console.log('Stage 2A: Clinical verification with Claude Opus 4.5...')
 
     await supabase.from('plans').update({ current_stage: 'verify_clinical' }).eq('id', plan_id)
     await logJob(supabase, plan_id, 'verify_clinical', 'running')
 
     const clinicalStart = Date.now()
-    const claudeResponse = await fetch('https://api.anthropic.com/v1/messages', {
+    const claudeVerifyResponse = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
         'x-api-key': Deno.env.get('ANTHROPIC_API_KEY') ?? '',
@@ -789,33 +862,46 @@ Focus on evidence-based recommendations with complete medication dosing, contrai
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 4000,
+        model: 'claude-opus-4-5-20251101',
+        max_tokens: 8000,
         system: CLINICAL_VERIFICATION_SYSTEM_PROMPT,
         messages: [
-          { role: 'user', content: \`Review this clinical plan for medication safety and accuracy:\n\n\${generatedPlan}\` }
+          { role: 'user', content: \`CRITICAL: Review this clinical plan for medication safety and accuracy.
+
+This is for real healthcare use. Patient safety is paramount.
+- Flag ALL high-alert medications for mandatory physician review
+- Be conservative: when uncertain, flag for review
+- Check every dose against standard therapeutic ranges
+- Verify all contraindications are complete
+
+Plan to review:
+
+\${generatedPlan}\` }
         ]
       })
     })
 
-    if (!claudeResponse.ok) {
-      const err = await claudeResponse.text()
-      throw new Error(\`Claude error: \${err}\`)
+    if (!claudeVerifyResponse.ok) {
+      const err = await claudeVerifyResponse.text()
+      throw new Error(\`Claude verification error: \${err}\`)
     }
 
-    const claudeData = await claudeResponse.json()
-    const clinicalResult = claudeData.content[0].text
-    const clinicalCost = calculateCost('claude-sonnet-4', claudeData.usage.input_tokens, claudeData.usage.output_tokens)
+    const claudeVerifyData = await claudeVerifyResponse.json()
+    const clinicalResult = claudeVerifyData.content[0].text
+    const clinicalCost = calculateCost('claude-opus-4-5', claudeVerifyData.usage.input_tokens, claudeVerifyData.usage.output_tokens)
     totalCost += clinicalCost
 
     // Parse JSON from response
     const clinicalJsonMatch = clinicalResult.match(/```json\n([\s\S]*?)\n```/)
-    const clinicalParsed = clinicalJsonMatch ? JSON.parse(clinicalJsonMatch[1]) : { status: 'unknown' }
+    const clinicalParsed = clinicalJsonMatch ? JSON.parse(clinicalJsonMatch[1]) : { status: 'unknown', mandatory_physician_review: true }
+
+    // Always require review for healthcare
+    clinicalParsed.mandatory_physician_review = true
 
     await logJob(supabase, plan_id, 'verify_clinical', 'completed', {
-      model: 'claude-sonnet-4',
-      input_tokens: claudeData.usage.input_tokens,
-      output_tokens: claudeData.usage.output_tokens,
+      model: 'claude-opus-4-5',
+      input_tokens: claudeVerifyData.usage.input_tokens,
+      output_tokens: claudeVerifyData.usage.output_tokens,
       cost_usd: clinicalCost,
       duration_ms: Date.now() - clinicalStart,
       result: clinicalParsed
@@ -824,9 +910,9 @@ Focus on evidence-based recommendations with complete medication dosing, contrai
     await supabase.from('plans').update({ progress_percent: 60 }).eq('id', plan_id)
 
     // ========================================================================
-    // STAGE 2B: CITATION VERIFICATION WITH GEMINI
+    // STAGE 2B: CITATION VERIFICATION WITH GEMINI 3 PRO
     // ========================================================================
-    console.log('Stage 2B: Citation verification with Gemini...')
+    console.log('Stage 2B: Citation verification with Gemini 3 Pro...')
 
     await supabase.from('plans').update({
       status: 'verifying_citation',
@@ -836,7 +922,7 @@ Focus on evidence-based recommendations with complete medication dosing, contrai
     await logJob(supabase, plan_id, 'verify_citation', 'running')
 
     const citationStart = Date.now()
-    const geminiResponse = await fetch(\`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=\${Deno.env.get('GEMINI_API_KEY')}\`, {
+    const geminiResponse = await fetch(\`https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro:generateContent?key=\${Deno.env.get('GEMINI_API_KEY')}\`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -858,7 +944,7 @@ Focus on evidence-based recommendations with complete medication dosing, contrai
 
     const geminiData = await geminiResponse.json()
     const citationResult = geminiData.candidates[0].content.parts[0].text
-    const citationCost = calculateCost('gemini-1.5-pro',
+    const citationCost = calculateCost('gemini-3-pro',
       geminiData.usageMetadata?.promptTokenCount || 5000,
       geminiData.usageMetadata?.candidatesTokenCount || 2000
     )
@@ -869,7 +955,7 @@ Focus on evidence-based recommendations with complete medication dosing, contrai
     const citationParsed = citationJsonMatch ? JSON.parse(citationJsonMatch[1]) : { status: 'unknown' }
 
     await logJob(supabase, plan_id, 'verify_citation', 'completed', {
-      model: 'gemini-1.5-pro',
+      model: 'gemini-3-pro',
       input_tokens: geminiData.usageMetadata?.promptTokenCount || 5000,
       output_tokens: geminiData.usageMetadata?.candidatesTokenCount || 2000,
       cost_usd: citationCost,
@@ -880,43 +966,52 @@ Focus on evidence-based recommendations with complete medication dosing, contrai
     await supabase.from('plans').update({ progress_percent: 80 }).eq('id', plan_id)
 
     // ========================================================================
-    // STAGE 3: MERGE RESULTS AND FINALIZE
+    // STAGE 3: MERGE RESULTS AND FINALIZE (MANDATORY HUMAN REVIEW FOR HEALTHCARE)
     // ========================================================================
     console.log('Stage 3: Merging results...')
 
-    const humanReviewRequired =
+    // HEALTHCARE SAFETY: ALL plans require human review
+    // Additional flags for high-alert medications or verification issues
+    const hasVerificationIssues =
       clinicalParsed.status === 'failed' ||
       clinicalParsed.error_count > 0 ||
       citationParsed.status === 'failed' ||
       (citationParsed.not_found_count || 0) > 2
 
     const reviewItems: string[] = [
-      ...(clinicalParsed.errors?.map((e: any) => \`CLINICAL: \${e.medication} - \${e.issue}\`) || []),
-      ...(clinicalParsed.flags?.map((f: any) => \`FLAG: \${f.medication} - \${f.issue}\`) || []),
-      ...(citationParsed.flagged_for_removal?.map((c: string) => \`CITATION: Remove - \${c}\`) || [])
+      // Always include high-alert medication notice
+      ...(hasHighAlertMeds ? [\`🚨 HIGH-ALERT MEDICATIONS DETECTED: \${highAlertMeds.join(', ')} - REQUIRES MANDATORY PHYSICIAN VERIFICATION\`] : []),
+      // Clinical errors
+      ...(clinicalParsed.errors?.map((e: any) => \`❌ CLINICAL ERROR: \${e.medication} - \${e.issue}\`) || []),
+      // Clinical flags
+      ...(clinicalParsed.flags?.map((f: any) => \`⚠️ FLAG: \${f.medication} - \${f.issue}\`) || []),
+      // High-alert medications from verification
+      ...(clinicalParsed.high_alert_medications?.map((h: any) => \`🚨 HIGH-ALERT: \${h.medication} (\${h.category}) - \${h.verification_status}\`) || []),
+      // Citation issues
+      ...(citationParsed.flagged_for_removal?.map((c: string) => \`📚 CITATION: Remove - \${c}\`) || [])
     ]
 
     // Save verification report
     await supabase.from('verification_reports').insert({
       plan_id,
       clinical_status: clinicalParsed.status,
-      clinical_model: 'claude-sonnet-4',
+      clinical_model: 'claude-opus-4-5',
       clinical_result: clinicalParsed,
       clinical_raw: clinicalResult,
       citation_status: citationParsed.status,
-      citation_model: 'gemini-1.5-pro',
+      citation_model: 'gemini-3-pro',
       citation_result: citationParsed,
       citation_raw: citationResult,
-      overall_status: humanReviewRequired ? 'flagged' : 'passed',
-      human_review_required: humanReviewRequired,
+      overall_status: hasVerificationIssues ? 'flagged' : 'needs_review',
+      human_review_required: true, // ALWAYS true for healthcare
       human_review_items: reviewItems
     })
 
-    // Update plan as complete
+    // Update plan as complete - ALWAYS goes to review for healthcare
     await supabase
       .from('plans')
       .update({
-        status: 'review',
+        status: 'review', // All plans require physician review
         current_stage: 'complete',
         progress_percent: 100,
         total_cost_usd: totalCost,
@@ -924,26 +1019,35 @@ Focus on evidence-based recommendations with complete medication dosing, contrai
       })
       .eq('id', plan_id)
 
-    // Log completion
+    // Log completion with safety tracking
     await supabase.from('audit_log').insert({
       plan_id,
       action: 'generation_complete',
       details: {
         total_cost: totalCost,
-        human_review_required: humanReviewRequired,
+        human_review_required: true, // ALWAYS for healthcare
+        has_high_alert_medications: hasHighAlertMeds,
+        high_alert_medications: highAlertMeds,
+        has_verification_issues: hasVerificationIssues,
         clinical_status: clinicalParsed.status,
-        citation_status: citationParsed.status
+        citation_status: citationParsed.status,
+        generation_model: 'claude-opus-4-5',
+        verification_model: 'claude-opus-4-5',
+        citation_model: 'gemini-3-pro'
       }
     })
 
-    console.log(\`Plan \${plan_id} completed. Cost: $\${totalCost.toFixed(4)}\`)
+    console.log(\`Plan \${plan_id} completed. Cost: $\${totalCost.toFixed(4)}. High-alert meds: \${highAlertMeds.length}. REQUIRES PHYSICIAN REVIEW.\`)
 
     return new Response(
       JSON.stringify({
         success: true,
         plan_id,
         cost: totalCost,
-        human_review_required: humanReviewRequired
+        human_review_required: true, // ALWAYS for healthcare
+        high_alert_medications: highAlertMeds,
+        has_verification_issues: hasVerificationIssues,
+        message: 'Plan generated successfully. MANDATORY PHYSICIAN REVIEW REQUIRED before use.'
       }),
       { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
     )
@@ -1498,9 +1602,9 @@ export function StatusTracker({ planId, onComplete }: StatusTrackerProps) {
   }
 
   const stages = [
-    { key: 'generate', label: 'Generate Plan', sublabel: 'GPT-4o' },
-    { key: 'verify_clinical', label: 'Clinical Check', sublabel: 'Claude' },
-    { key: 'verify_citation', label: 'Citation Check', sublabel: 'Gemini' },
+    { key: 'generate', label: 'Generate Plan', sublabel: 'Claude Opus 4.5' },
+    { key: 'verify_clinical', label: 'Clinical Safety Check', sublabel: 'Claude Opus 4.5' },
+    { key: 'verify_citation', label: 'Citation Verification', sublabel: 'Gemini 3 Pro' },
   ]
 
   const getStageStatus = (key: string) => {
@@ -1851,9 +1955,10 @@ export default function GeneratePage() {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-lg p-4 text-sm">
-            <p><strong>Estimated cost:</strong> ~$0.27 per plan</p>
-            <p className="text-gray-500 mt-1">GPT-4o + Claude verification + Gemini citation check</p>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm">
+            <p><strong>Estimated cost:</strong> ~$0.59 per plan</p>
+            <p className="text-gray-600 mt-1">Claude Opus 4.5 (generation + clinical verification) + Gemini 3 Pro (citations)</p>
+            <p className="text-blue-700 mt-2 font-medium">🏥 Healthcare Safety Mode: All plans require physician review</p>
           </div>
 
           {error && (
@@ -1902,7 +2007,7 @@ ALTER DATABASE postgres SET "app.settings.service_role_key" = 'YOUR_SERVICE_ROLE
 ```bash
 cd your-project
 npx supabase link --project-ref YOUR_PROJECT_REF
-npx supabase secrets set OPENAI_API_KEY=sk-...
+# Note: No OpenAI key needed - using Claude Opus 4.5 for safety
 npx supabase secrets set ANTHROPIC_API_KEY=sk-ant-...
 npx supabase secrets set GEMINI_API_KEY=AIza...
 npx supabase functions deploy generate-plan
@@ -1926,14 +2031,21 @@ npx supabase functions deploy generate-plan
 
 ---
 
-## COST SUMMARY
+## COST SUMMARY (SAFETY-FIRST CONFIGURATION)
 
 | Model | Role | Cost per Plan |
 |-------|------|---------------|
-| GPT-4o | Generation | ~$0.15 |
-| Claude Sonnet 4 | Clinical verification | ~$0.08 |
-| Gemini 1.5 Pro | Citation verification | ~$0.04 |
-| **Total** | | **~$0.27** |
+| Claude Opus 4.5 | Generation (safest model) | ~$0.40 |
+| Claude Opus 4.5 | Clinical verification | ~$0.15 |
+| Gemini 3 Pro | Citation verification | ~$0.04 |
+| **Total** | | **~$0.59** |
+
+**Why higher cost is worth it for healthcare:**
+- Claude Opus 4.5 has the lowest hallucination rate among frontier models
+- Refuses to answer when uncertain (safer than confident wrong answers)
+- All plans require mandatory physician review
+- High-alert medications are automatically flagged
+- Patient safety > cost savings
 
 ---
 

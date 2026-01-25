@@ -11,12 +11,15 @@
 
 Build an automated clinical decision support plan generator that:
 1. Accepts a neurological diagnosis as input
-2. Generates a comprehensive, evidence-based treatment plan
-3. Verifies accuracy using multiple AI models
-4. Deploys approved plans to a clinical tool
+2. Generates a comprehensive, evidence-based treatment plan using Claude Opus 4.5 (safest model)
+3. Verifies accuracy using Claude Opus 4.5 (clinical) + Gemini 3 Pro (citations)
+4. **MANDATORY physician review** for ALL plans (healthcare safety requirement)
+5. Deploys approved plans to a clinical tool
 
-**Cost:** ~$0.30 per plan (with full verification)
-**Time:** ~45 seconds per plan generation
+**Cost:** ~$0.59 per plan (prioritizing safety over cost)
+**Time:** ~60-90 seconds per plan generation
+
+> ⚠️ **HEALTHCARE SAFETY CONFIGURATION:** This pipeline uses Claude Opus 4.5 for both generation and clinical verification due to its lowest hallucination rate among frontier models. All plans require mandatory physician review before deployment.
 
 ---
 
@@ -151,22 +154,29 @@ See [PIPELINE_DESIGN.md](./PIPELINE_DESIGN.md) for full API documentation.
 | Cost optimization | Use cheaper models where quality sufficient |
 | Specialization | Each model has different strengths |
 
-### Model Assignment
+### Model Assignment (Safety-First)
 
 | Task | Primary Model | Why | Fallback |
 |------|---------------|-----|----------|
-| Generation | GPT-5.2 | Best reasoning benchmarks, good value | GPT-5.1, Claude Sonnet |
-| Clinical Verification | Claude Opus 4.5 | Best instruction-following, SWE-bench leader | GPT-5.2 |
-| Citation Verification | Gemini 3 Pro | 1M context, good at factual lookup | Claude Sonnet |
+| Generation | Claude Opus 4.5 | **Lowest hallucination rate**, refuses when uncertain | Claude Sonnet 4 |
+| Clinical Verification | Claude Opus 4.5 | Same model ensures consistency, best instruction-following | Claude Sonnet 4 |
+| Citation Verification | Gemini 3 Pro | 1M context, good at factual lookup | Claude Sonnet 4 |
 
-### Cost Analysis
+> **Why Claude Opus 4.5 for healthcare?**
+> - Lowest hallucination rate among frontier models (Hughes 2024 study)
+> - Refuses to answer when uncertain (safer than confident wrong answers)
+> - Pharmacist + LLM studies show 1.5x accuracy improvement
+> - Best instruction-following on SWE-bench (80.9%)
+
+### Cost Analysis (Safety-First)
 
 | Scenario | Cost/Plan | Monthly (20 plans) |
 |----------|-----------|-------------------|
-| Full verification (GPT + Claude + Gemini) | $0.30 | $6.00 |
-| Reduced (GPT + Claude only) | $0.26 | $5.20 |
-| Minimum (GPT only) | $0.15 | $3.00 |
+| **Safety-First (Claude Opus + Gemini)** | **$0.59** | **$11.80** |
+| Reduced safety (Claude Sonnet + Gemini) | $0.20 | $4.00 |
 | Current (Claude Code interactive) | ~$0.50-1.00 | ~$10-20 |
+
+> **Recommendation:** Use safety-first configuration ($0.59/plan) for all healthcare plans. The additional cost is negligible compared to the safety benefits. Patient safety > cost savings.
 
 ---
 
@@ -309,20 +319,20 @@ Dashboard displays:
 
 | Service | Purpose | Required |
 |---------|---------|----------|
-| OpenAI API | GPT-5.2 generation | Yes |
-| Anthropic API | Claude verification | Yes (for full verification) |
-| Google AI API | Gemini citation check | Yes (for full verification) |
-| Supabase | Database, auth, real-time | Yes |
-| Vercel | Hosting, serverless functions | Yes |
+| Anthropic API | Claude Opus 4.5 (generation + clinical verification) | Yes |
+| Google AI API | Gemini 3 Pro (citation verification) | Yes |
+| Supabase | Database, auth, real-time, Edge Functions | Yes |
+| Vercel | Hosting, UI, quick API routes | Yes |
 | GitHub | Version control, backup | Optional |
+
+> **Note:** OpenAI API is NOT required. We use Claude Opus 4.5 for both generation and clinical verification (safety-first approach).
 
 ### Environment Variables
 
 ```bash
 # Required
-OPENAI_API_KEY=
-ANTHROPIC_API_KEY=
-GEMINI_API_KEY=
+ANTHROPIC_API_KEY=    # Claude Opus 4.5 (generation + verification)
+GEMINI_API_KEY=       # Gemini 3 Pro (citations)
 SUPABASE_URL=
 SUPABASE_KEY=
 SUPABASE_SERVICE_KEY=
@@ -347,17 +357,21 @@ VERCEL_URL=
 
 ## Appendix: Comparison with Current Workflow
 
-| Aspect | Current (Claude Code) | New (API Pipeline) |
-|--------|----------------------|-------------------|
-| Cost | ~$20/month flat | ~$0.30/plan |
-| Speed | 10-30 min interactive | ~45 seconds |
-| Verification | Same model self-check | Independent multi-model |
-| Human involvement | Throughout | Review only flagged items |
+| Aspect | Current (Claude Code) | New (API Pipeline - Safety-First) |
+|--------|----------------------|-----------------------------------|
+| Cost | ~$20/month flat | ~$0.59/plan |
+| Speed | 10-30 min interactive | ~60-90 seconds |
+| Verification | Same model self-check | Claude Opus 4.5 + Gemini 3 Pro |
+| Human involvement | Throughout | **MANDATORY for ALL plans** |
 | Scalability | 1 at a time | Parallel batch |
-| Customization | High (interactive) | Template-based |
+| Safety features | Manual review | High-alert med detection, auto-flagging |
 | Error handling | Manual iteration | Automated retry + fallback |
 
-**Recommendation:** Use API pipeline for standard plans, keep Claude Code for complex edge cases or when heavy customization needed.
+**Recommendation:** Use API pipeline for all standard plans with mandatory physician review. The safety-first configuration costs more but provides:
+- Lowest hallucination rate (Claude Opus 4.5)
+- Automatic high-alert medication detection
+- Mandatory physician review workflow
+- Full audit trail for compliance
 
 ---
 

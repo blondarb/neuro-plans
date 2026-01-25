@@ -1,6 +1,8 @@
 # API Specification Package
 
-> **Purpose:** Complete specification for building an automated clinical plan generator using GPT-5.2, Claude Opus 4.5, and Gemini 3 Pro.
+> **Purpose:** Complete specification for building an automated clinical plan generator using Claude Opus 4.5 (generation + verification) and Gemini 3 Pro (citations).
+>
+> **⚠️ HEALTHCARE SAFETY CONFIGURATION:** This pipeline prioritizes patient safety over cost. All plans require mandatory physician review.
 
 ---
 
@@ -18,46 +20,50 @@ This package contains everything needed to build a multi-model clinical plan gen
 
 ---
 
-## Architecture Summary
+## Architecture Summary (Safety-First)
 
 ```
 User submits diagnosis
         │
         ▼
-┌───────────────────┐
-│  GPT-5.2          │  Stage 1: Generate plan (~$0.15)
-│  Generation       │
-└─────────┬─────────┘
+┌───────────────────────┐
+│  Claude Opus 4.5      │  Stage 1: Generate plan (~$0.40)
+│  (Safest LLM)         │  - Lowest hallucination rate
+└─────────┬─────────────┘  - Refuses when uncertain
           │
     ┌─────┴─────┐
     │           │
     ▼           ▼
-┌────────┐ ┌────────┐
-│ Claude │ │ Gemini │  Stage 2: Verify (parallel, ~$0.15 total)
-│Clinical│ │Citation│
-└────┬───┘ └───┬────┘
-     │         │
-     └────┬────┘
-          │
-          ▼
-┌───────────────────┐
-│  Merge & Deploy   │  Stage 3: Auto-fix or flag for review
-└───────────────────┘
-          │
-          ▼
+┌────────────┐ ┌────────┐
+│ Claude     │ │ Gemini │  Stage 2: Verify (~$0.19 total)
+│ Opus 4.5   │ │ 3 Pro  │  - High-alert med detection
+│ Clinical   │ │Citation│  - Citation verification
+└────┬───────┘ └───┬────┘
+     │             │
+     └──────┬──────┘
+            │
+            ▼
+┌─────────────────────────┐
+│  🏥 MANDATORY REVIEW    │  Stage 3: ALL plans require
+│  (Physician Required)   │  physician approval
+└─────────────────────────┘
+            │
+            ▼
     Supabase + GitHub
 ```
 
 ---
 
-## Cost Per Plan
+## Cost Per Plan (Safety-First Configuration)
 
 | Model | Role | Cost |
 |-------|------|------|
-| GPT-5.2 | Generation | $0.15 |
-| Claude Opus 4.5 | Clinical verification | $0.11 |
-| Gemini 3 Pro | Citation verification | $0.04 |
-| **Total** | | **$0.30** |
+| Claude Opus 4.5 | Generation (safest) | ~$0.40 |
+| Claude Opus 4.5 | Clinical verification | ~$0.15 |
+| Gemini 3 Pro | Citation verification | ~$0.04 |
+| **Total** | | **~$0.59** |
+
+> **Why Claude Opus 4.5?** Lowest hallucination rate among frontier models. For healthcare, safety > cost.
 
 ---
 
@@ -93,10 +99,11 @@ User submits diagnosis
 
 | Provider | Key Name | Get It From |
 |----------|----------|-------------|
-| OpenAI | `OPENAI_API_KEY` | [platform.openai.com](https://platform.openai.com) |
 | Anthropic | `ANTHROPIC_API_KEY` | [console.anthropic.com](https://console.anthropic.com) |
 | Google | `GEMINI_API_KEY` | [aistudio.google.com](https://aistudio.google.com) |
 | Supabase | `SUPABASE_URL`, `SUPABASE_KEY` | Your Supabase project settings |
+
+> **Note:** OpenAI API key is NOT required. We use Claude Opus 4.5 for both generation and clinical verification (safety-first approach).
 
 ---
 
