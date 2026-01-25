@@ -9,26 +9,63 @@ Copy everything below the line and paste it into Claude Code in a new empty dire
 
 Build a complete full-stack application for generating clinical decision support plans using a multi-model AI pipeline. This will be a Next.js app deployed on Vercel with Supabase as the backend.
 
+## CRITICAL: HANDLING VERCEL TIMEOUTS
+
+**Vercel free tier has a 10-second function timeout.** AI generation takes 30-90 seconds. We MUST use this architecture:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    TIMEOUT-SAFE ARCHITECTURE                                 │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  USER SUBMITS                VERCEL API               SUPABASE               │
+│  ───────────────────────────────────────────────────────────────────────    │
+│                                                                              │
+│  1. POST /api/generate  ──▶  Creates job record  ──▶  job_id returned       │
+│     (returns in <2 sec)      in Supabase                                    │
+│                                                                              │
+│  2. Supabase Edge Function triggered ──▶ Runs AI pipeline (60+ sec OK)     │
+│     (via database trigger or pg_cron)                                       │
+│                                                                              │
+│  3. Client polls GET /api/status/:id every 3 seconds                        │
+│     (each poll <2 sec)                                                      │
+│                                                                              │
+│  4. When complete, client redirects to plan view                            │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+```
+
+**KEY INSIGHT:** Vercel handles the quick HTTP requests. Supabase Edge Functions handle the slow AI work.
+
+---
+
 ## PROJECT OVERVIEW
 
 **What it does:**
 1. User submits a neurological diagnosis (e.g., "Guillain-Barré Syndrome - New Diagnosis")
-2. GPT-5.2 generates a comprehensive clinical plan
-3. Claude Opus 4.5 verifies clinical accuracy (drug doses, contraindications)
-4. Gemini 3 Pro verifies citations (PubMed lookup)
-5. Results saved to Supabase
+2. Job queued in Supabase (returns immediately)
+3. Supabase Edge Function runs the multi-model pipeline:
+   - GPT-4o generates comprehensive clinical plan (~$0.15)
+   - Claude Sonnet 4 verifies clinical accuracy (~$0.08)
+   - Gemini 1.5 Pro verifies citations (~$0.04)
+4. Results saved to Supabase
+5. Client polls until complete, then shows result
 6. Physician reviews and approves via web UI
-7. Approved plans available via API for other apps to consume
+7. Approved plans available via API for other apps
+
+**Total cost: ~$0.27 per plan**
 
 **Tech Stack:**
 - Next.js 14+ (App Router)
 - TypeScript
 - Tailwind CSS
-- Supabase (database, auth, real-time)
-- Vercel (hosting)
-- OpenAI API (GPT-5.2)
-- Anthropic API (Claude Opus 4.5)
-- Google AI API (Gemini 3 Pro)
+- Supabase (database, auth, real-time, **Edge Functions**)
+- Vercel (hosting - UI and quick APIs only)
+- OpenAI API (GPT-4o)
+- Anthropic API (Claude Sonnet 4)
+- Google AI API (Gemini 1.5 Pro)
+
+---
 
 ## STEP 1: PROJECT SETUP
 
@@ -40,6 +77,14 @@ cd clinical-plan-generator
 npm install @supabase/supabase-js @supabase/ssr openai @anthropic-ai/sdk @google/generative-ai lucide-react
 ```
 
+Also initialize Supabase CLI for Edge Functions:
+```bash
+npx supabase init
+npx supabase login
+```
+
+---
+
 ## STEP 2: ENVIRONMENT VARIABLES
 
 Create `.env.local` with placeholders (I will fill in):
@@ -50,7 +95,7 @@ NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
 
-# AI Providers
+# AI Providers (also add these to Supabase Edge Function secrets)
 OPENAI_API_KEY=your_openai_key
 ANTHROPIC_API_KEY=your_anthropic_key
 GEMINI_API_KEY=your_gemini_key
@@ -61,6 +106,8 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 
 Also create `.env.example` with the same structure but empty values for documentation.
 
+---
+
 ## STEP 3: SUPABASE DATABASE SCHEMA
 
 Create a file `supabase/schema.sql` with the complete database schema:
@@ -68,6 +115,7 @@ Create a file `supabase/schema.sql` with the complete database schema:
 ```sql
 -- Enable UUID extension
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+CREATE EXTENSION IF NOT EXISTS "pg_net"; -- For calling Edge Functions
 
 -- Plans table
 CREATE TABLE plans (
@@ -75,7 +123,7 @@ CREATE TABLE plans (
 
   -- Identity
   diagnosis VARCHAR(255) NOT NULL,
-  modifier VARCHAR(50), -- 'new-diagnosis', 'exacerbation', 'maintenance', 'refractory'
+  modifier VARCHAR(50),
   slug VARCHAR(255) UNIQUE NOT NULL,
   title VARCHAR(255) NOT NULL,
 
@@ -83,9 +131,10 @@ CREATE TABLE plans (
   content_md TEXT,
   content_json JSONB,
 
-  -- Status: draft, generating, verifying, review, approved, rejected
-  status VARCHAR(50) DEFAULT 'draft',
+  -- Status: queued, generating, verifying_clinical, verifying_citation, review, approved, rejected, failed
+  status VARCHAR(50) DEFAULT 'queued',
   current_stage VARCHAR(50),
+  progress_percent INTEGER DEFAULT 0,
 
   -- Metadata
   version VARCHAR(10) DEFAULT '1.0',
@@ -95,19 +144,28 @@ CREATE TABLE plans (
   -- Quality
   quality_score INTEGER,
 
+  -- Cost tracking
+  total_cost_usd DECIMAL(10, 6) DEFAULT 0,
+
+  -- Error handling
+  error_message TEXT,
+  retry_count INTEGER DEFAULT 0,
+
   -- Timestamps
   created_at TIMESTAMPTZ DEFAULT NOW(),
   updated_at TIMESTAMPTZ DEFAULT NOW(),
+  started_at TIMESTAMPTZ,
+  completed_at TIMESTAMPTZ,
   approved_at TIMESTAMPTZ,
   approved_by VARCHAR(255)
 );
 
--- Generation jobs table
+-- Generation jobs table (tracks each stage)
 CREATE TABLE generation_jobs (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   plan_id UUID REFERENCES plans(id) ON DELETE CASCADE,
 
-  -- Stage: generate, verify_clinical, verify_citation, merge, complete
+  -- Stage: generate, verify_clinical, verify_citation, complete
   stage VARCHAR(50) NOT NULL,
   -- Status: pending, running, completed, failed
   status VARCHAR(50) DEFAULT 'pending',
@@ -120,6 +178,7 @@ CREATE TABLE generation_jobs (
 
   -- Results
   result JSONB,
+  raw_response TEXT,
   error_message TEXT,
 
   -- Timing
@@ -139,11 +198,13 @@ CREATE TABLE verification_reports (
   clinical_status VARCHAR(50),
   clinical_model VARCHAR(100),
   clinical_result JSONB,
+  clinical_raw TEXT,
 
   -- Citation verification (Gemini)
   citation_status VARCHAR(50),
   citation_model VARCHAR(100),
   citation_result JSONB,
+  citation_raw TEXT,
 
   -- Combined
   overall_status VARCHAR(50),
@@ -164,10 +225,11 @@ CREATE TABLE audit_log (
   created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Indexes
+-- Indexes for performance
 CREATE INDEX idx_plans_status ON plans(status);
 CREATE INDEX idx_plans_slug ON plans(slug);
 CREATE INDEX idx_plans_created ON plans(created_at DESC);
+CREATE INDEX idx_plans_queued ON plans(status) WHERE status = 'queued';
 CREATE INDEX idx_jobs_plan_id ON generation_jobs(plan_id);
 CREATE INDEX idx_jobs_status ON generation_jobs(status);
 
@@ -185,6 +247,30 @@ CREATE TRIGGER plans_updated_at
   FOR EACH ROW
   EXECUTE FUNCTION update_updated_at();
 
+-- Function to trigger Edge Function when new plan is queued
+CREATE OR REPLACE FUNCTION trigger_plan_generation()
+RETURNS TRIGGER AS $$
+BEGIN
+  -- Call the Edge Function via pg_net (async HTTP call)
+  PERFORM net.http_post(
+    url := current_setting('app.settings.supabase_url') || '/functions/v1/generate-plan',
+    headers := jsonb_build_object(
+      'Content-Type', 'application/json',
+      'Authorization', 'Bearer ' || current_setting('app.settings.service_role_key')
+    ),
+    body := jsonb_build_object('plan_id', NEW.id)
+  );
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+-- Trigger on new plan insert
+CREATE TRIGGER on_plan_queued
+  AFTER INSERT ON plans
+  FOR EACH ROW
+  WHEN (NEW.status = 'queued')
+  EXECUTE FUNCTION trigger_plan_generation();
+
 -- Row Level Security
 ALTER TABLE plans ENABLE ROW LEVEL SECURITY;
 ALTER TABLE generation_jobs ENABLE ROW LEVEL SECURITY;
@@ -195,7 +281,11 @@ ALTER TABLE audit_log ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Public read approved plans" ON plans
   FOR SELECT USING (status = 'approved');
 
--- Service role full access (for API routes)
+-- Anon can read plans in progress (for status polling)
+CREATE POLICY "Anon read own plans" ON plans
+  FOR SELECT USING (true);
+
+-- Service role full access
 CREATE POLICY "Service role full access plans" ON plans
   FOR ALL TO service_role USING (true);
 
@@ -207,9 +297,26 @@ CREATE POLICY "Service role full access reports" ON verification_reports
 
 CREATE POLICY "Service role full access audit" ON audit_log
   FOR ALL TO service_role USING (true);
+
+-- Public read for jobs (status tracking)
+CREATE POLICY "Public read jobs" ON generation_jobs
+  FOR SELECT USING (true);
+
+-- Public read for reports
+CREATE POLICY "Public read reports" ON verification_reports
+  FOR SELECT USING (true);
 ```
 
-**IMPORTANT: Tell me to run this SQL in the Supabase SQL Editor after creating the project.**
+**IMPORTANT: After creating your Supabase project:**
+1. Go to SQL Editor and run this schema
+2. Go to Project Settings → Database → Connection string
+3. Set the app settings for the trigger:
+```sql
+ALTER DATABASE postgres SET "app.settings.supabase_url" = 'https://YOUR_PROJECT.supabase.co';
+ALTER DATABASE postgres SET "app.settings.service_role_key" = 'YOUR_SERVICE_ROLE_KEY';
+```
+
+---
 
 ## STEP 4: PROJECT STRUCTURE
 
@@ -230,10 +337,10 @@ src/
 │   │   └── page.tsx                # Review queue for approval
 │   └── api/
 │       ├── generate/
-│       │   └── route.ts            # POST - start generation
+│       │   └── route.ts            # POST - queue generation (fast)
 │       ├── status/
-│       │   └── [jobId]/
-│       │       └── route.ts        # GET - check job status
+│       │   └── [planId]/
+│       │       └── route.ts        # GET - check status (fast)
 │       ├── plans/
 │       │   ├── route.ts            # GET - list plans
 │       │   └── [slug]/
@@ -245,68 +352,80 @@ src/
 │           └── [planId]/
 │               └── route.ts        # POST - reject plan
 ├── components/
-│   ├── ui/
-│   │   ├── Button.tsx
-│   │   ├── Card.tsx
-│   │   ├── Input.tsx
-│   │   ├── Select.tsx
-│   │   ├── Badge.tsx
-│   │   ├── Progress.tsx
-│   │   └── Spinner.tsx
 │   ├── GenerationForm.tsx
 │   ├── PlanCard.tsx
 │   ├── PlanViewer.tsx
 │   ├── ReviewQueue.tsx
-│   ├── StatusTracker.tsx
+│   ├── StatusTracker.tsx           # Real-time status with polling
 │   └── Navigation.tsx
 ├── lib/
 │   ├── supabase/
 │   │   ├── client.ts               # Browser client
 │   │   └── server.ts               # Server client
-│   ├── ai/
-│   │   ├── openai.ts               # GPT-5.2 generation
-│   │   ├── anthropic.ts            # Claude verification
-│   │   ├── gemini.ts               # Gemini citation check
-│   │   └── prompts.ts              # All system prompts
-│   ├── pipeline/
-│   │   ├── generate.ts             # Main pipeline orchestrator
-│   │   ├── verify-clinical.ts
-│   │   ├── verify-citation.ts
-│   │   └── merge.ts
 │   ├── utils/
 │   │   ├── costs.ts                # Token cost calculations
-│   │   ├── slug.ts                 # Slug generation
-│   │   └── markdown.ts             # MD parsing utilities
+│   │   └── slug.ts                 # Slug generation
 │   └── types.ts                    # TypeScript types
 └── styles/
     └── globals.css
+
+supabase/
+├── functions/
+│   └── generate-plan/
+│       └── index.ts                # Edge Function - main pipeline
+└── schema.sql
 ```
 
-## STEP 5: AI PROMPTS
+---
 
-Create `src/lib/ai/prompts.ts` with these prompts:
+## STEP 5: SUPABASE EDGE FUNCTION (THE HEAVY LIFTER)
 
-### GPT-5.2 SYSTEM PROMPT (for generation)
+This is where the AI work happens. Edge Functions have **no timeout limit** on paid plans (400 seconds on free).
+
+Create `supabase/functions/generate-plan/index.ts`:
 
 ```typescript
-export const GENERATION_SYSTEM_PROMPT = `You are a clinical decision support generator specializing in neurology. You create comprehensive, evidence-based treatment plans that can be used by physicians in Emergency Departments, Hospitals, Outpatient Clinics, and ICUs.
+import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
+
+const corsHeaders = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+}
+
+// Pricing per million tokens (January 2026)
+const PRICING = {
+  'gpt-4o': { input: 2.5, output: 10 },
+  'claude-sonnet-4': { input: 3, output: 15 },
+  'gemini-1.5-pro': { input: 1.25, output: 5 },
+}
+
+function calculateCost(model: string, inputTokens: number, outputTokens: number): number {
+  const p = PRICING[model] || PRICING['gpt-4o']
+  return (inputTokens * p.input / 1_000_000) + (outputTokens * p.output / 1_000_000)
+}
+
+// ============================================================================
+// SYSTEM PROMPTS
+// ============================================================================
+
+const GENERATION_SYSTEM_PROMPT = `You are a clinical decision support generator specializing in neurology. You create comprehensive, evidence-based treatment plans for physicians in Emergency Departments, Hospitals, Outpatient Clinics, and ICUs.
 
 Your output must be:
-1. Accurate - Drug dosing, diagnostic criteria, and clinical claims must be factually correct
-2. Complete - All 8 sections populated with appropriate setting coverage
-3. Safe - Critical contraindications, monitoring requirements, and red flags included
-4. Actionable - Written as physician-ready directives, not suggestions
+1. ACCURATE - Drug dosing, diagnostic criteria, and clinical claims must be factually correct
+2. COMPLETE - All 8 sections populated with appropriate setting coverage
+3. SAFE - Critical contraindications, monitoring requirements, and red flags included
+4. ACTIONABLE - Written as physician-ready directives, not suggestions
 
 ## OUTPUT FORMAT
 
-Generate plans using this exact markdown structure:
+Generate plans using this EXACT markdown structure:
 
 ---
 title: [Diagnosis Name]
 version: 1.0
 status: draft
 icd10: [Primary ICD-10 code]
-last_updated: [YYYY-MM-DD]
 ---
 
 # [Diagnosis Name]
@@ -324,11 +443,19 @@ last_updated: [YYYY-MM-DD]
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
+[Include 5-10 essential labs relevant to the diagnosis]
 
 ### 1B. Extended Workup
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
+[Include 5-10 second-line labs]
+
+### 1C. Rare/Specialized
+
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+[Include 3-5 specialized tests]
 
 ---
 
@@ -338,6 +465,7 @@ last_updated: [YYYY-MM-DD]
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+[Include relevant imaging - MRI, CT, etc.]
 
 ### 2B. Extended
 
@@ -352,6 +480,11 @@ last_updated: [YYYY-MM-DD]
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+
+**CRITICAL: Every medication on its own row. Use structured dosing format:**
+[dose] :: [route] :: [frequency] :: [full instructions including titration and max dose]
+
+Example: 5 mg :: PO :: TID :: Start 5 mg TID; titrate by 5 mg/dose every 3 days; max 80 mg/day
 
 ### 3B. Symptomatic Treatments
 
@@ -371,16 +504,19 @@ last_updated: [YYYY-MM-DD]
 
 | Recommendation | ED | HOSP | OPD | ICU | Indication |
 |----------------|:--:|:----:|:---:|:---:|------------|
+[Include at least 5 relevant referrals]
 
 ### 4B. Patient Instructions
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
+[Include at least 5 specific instructions with return precautions]
 
 ### 4C. Lifestyle & Prevention
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
+[Include at least 3 lifestyle modifications]
 
 ---
 
@@ -388,6 +524,7 @@ last_updated: [YYYY-MM-DD]
 
 | Alternative Diagnosis | Key Distinguishing Features | Tests to Differentiate |
 |-----------------------|----------------------------|------------------------|
+[Include 5-8 differential diagnoses]
 
 ---
 
@@ -395,6 +532,7 @@ last_updated: [YYYY-MM-DD]
 
 | Parameter | ED | HOSP | OPD | ICU | Frequency | Target/Threshold | Action if Abnormal |
 |-----------|:--:|:----:|:---:|:---:|-----------|------------------|-------------------|
+[Include vital signs, lab values, clinical assessments]
 
 ---
 
@@ -402,9 +540,10 @@ last_updated: [YYYY-MM-DD]
 
 | Disposition | Criteria |
 |-------------|----------|
-| Discharge home | [criteria] |
-| Admit to floor | [criteria] |
-| Admit to ICU | [criteria] |
+| Discharge home | [specific criteria] |
+| Admit to floor | [specific criteria] |
+| Admit to ICU | [specific criteria] |
+| Transfer to higher level | [specific criteria] |
 
 ---
 
@@ -412,465 +551,432 @@ last_updated: [YYYY-MM-DD]
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
+[Include 10-15 key references with author, journal, year]
 
 ## CRITICAL REQUIREMENTS
 
-### Medication Format
-EVERY medication must be on its own row. Never group drugs.
-Use structured dosing: [dose] :: [route] :: [frequency] :: [full instructions]
+1. EVERY medication must be on its own row - never group drugs
+2. Use structured dosing: [dose] :: [route] :: [frequency] :: [instructions]
+3. Include starting dose, titration schedule, and maximum dose
+4. Evaluate ALL settings (ED, HOSP, OPD, ICU) for each item
+5. Use "-" only when truly not applicable
+6. Write as checkbox-ready directives, not suggestions
+7. Include complete contraindications and monitoring for each drug`
 
-Example: 5 mg :: PO :: TID :: Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day
+const CLINICAL_VERIFICATION_SYSTEM_PROMPT = `You are a clinical pharmacist and board-certified neurologist reviewing a clinical decision support plan for accuracy and safety.
 
-### Setting Coverage
-Evaluate every item for ALL settings (ED, HOSP, OPD, ICU).
-Use "-" only when truly not applicable.
-
-### Priority Values
-STAT = Minutes | URGENT = Hours | ROUTINE = Days | EXT = Weeks | - = N/A`;
-
-export const GENERATION_USER_PROMPT = (diagnosis: string, modifier: string) =>
-  \`Generate a comprehensive clinical decision support plan for: \${diagnosis} - \${modifier}
-
-Focus on evidence-based recommendations with complete medication dosing, contraindications, and monitoring requirements.\`;
-```
-
-### CLAUDE VERIFICATION PROMPT (for clinical check)
-
-```typescript
-export const CLINICAL_VERIFICATION_SYSTEM_PROMPT = `You are a clinical pharmacist and neurologist reviewing a clinical decision support plan for accuracy and safety.
-
-Your task is to verify:
-1. Medication dosing is within standard therapeutic ranges
-2. All critical contraindications are listed
-3. Drug-drug interactions are noted where relevant
-4. Monitoring requirements are appropriate
-5. Clinical recommendations are evidence-based
+VERIFY EACH MEDICATION FOR:
+1. Dose within standard therapeutic range (check mg, frequency, max daily dose)
+2. Route appropriate for indication and setting
+3. All critical contraindications listed (drug-specific, not generic)
+4. Drug-drug interactions that should be mentioned
+5. Monitoring parameters appropriate and complete
 
 OUTPUT FORMAT:
-For each medication, output ONE line:
-✅ OK: [Drug name] - dosing and safety info verified
-⚠️ FLAG: [Drug name] - [specific concern requiring physician review]
-❌ ERROR: [Drug name] - [critical safety issue that must be fixed]
 
-At the end, provide a JSON block:
+For each medication, output ONE line:
+✅ OK: [Drug name] - [brief verification note]
+⚠️ FLAG: [Drug name] - [specific concern for physician review]
+❌ ERROR: [Drug name] - [critical safety issue - MUST FIX]
+
+Then provide a JSON summary block:
 
 \`\`\`json
 {
   "status": "passed" | "flagged" | "failed",
-  "medications_reviewed": number,
-  "ok_count": number,
-  "flagged_count": number,
-  "error_count": number,
+  "medications_reviewed": 0,
+  "ok_count": 0,
+  "flagged_count": 0,
+  "error_count": 0,
   "errors": [
     {
-      "medication": "string",
-      "issue": "string",
-      "current": "string",
-      "recommended": "string",
-      "severity": "critical" | "high" | "medium"
+      "medication": "Drug Name",
+      "issue": "Specific problem",
+      "current": "What the plan says",
+      "recommended": "What it should say",
+      "severity": "critical" | "high" | "medium",
+      "auto_fixable": false
     }
   ],
   "flags": [
     {
-      "medication": "string",
-      "issue": "string",
+      "medication": "Drug Name",
+      "issue": "Concern requiring physician review",
       "severity": "medium" | "low"
     }
   ],
-  "suggested_additions": ["string"]
+  "suggested_additions": [
+    "Missing contraindication or interaction to add"
+  ]
 }
-\`\`\``;
-
-export const CLINICAL_VERIFICATION_USER_PROMPT = (plan: string) =>
-  \`Review this clinical plan for safety and accuracy.
-
-Focus on:
-1. Are drug doses within standard therapeutic ranges?
-2. Are contraindications complete for each medication?
-3. Are there missing drug-drug interactions?
-4. Is monitoring appropriate for each medication?
-
-CLINICAL PLAN:
----
-\${plan}
----
-
-Provide your verification report with the JSON summary at the end.\`;
-```
-
-### GEMINI VERIFICATION PROMPT (for citations)
-
-```typescript
-export const CITATION_VERIFICATION_SYSTEM_PROMPT = `You are a medical librarian verifying citations in a clinical document.
-
-For each citation in Section 8 (Evidence & References):
-1. Search for the article/guideline
-2. Verify it exists
-3. Confirm authors, year, and journal match
-4. Return the PubMed ID (PMID) if found
-
-OUTPUT FORMAT for each citation:
-✅ VERIFIED: [Citation] → PMID: [number]
-⚠️ PARTIAL: [Citation] → Found similar: [details] | Correction: [correction]
-❌ NOT FOUND: [Citation] → Searched: [terms] | Action: [remove/replace/flag]
-❓ UNABLE: [Citation] → Reason: [paywall/non-indexed]
+\`\`\`
 
 IMPORTANT:
-- NEVER guess or fabricate a PMID
-- If uncertain, mark as UNABLE TO VERIFY
+- Be SPECIFIC about dose issues (e.g., "Max is 3200mg/day, plan says 4000mg")
+- Flag drug interactions (e.g., "SSRIs + triptans = serotonin syndrome risk")
+- Check pediatric vs adult dosing if age not specified
+- Verify renal/hepatic adjustment recommendations where needed`
 
-End with a JSON block:
+const CITATION_VERIFICATION_SYSTEM_PROMPT = `You are a medical librarian verifying citations in a clinical document.
+
+For each citation in Section 8 (Evidence & References):
+1. Search your knowledge for the article/guideline
+2. Verify it exists and is accurately cited
+3. Note the PubMed ID (PMID) if you know it
+4. Flag any that appear fabricated or inaccurate
+
+OUTPUT FORMAT for each citation:
+✅ VERIFIED: [Citation] → PMID: [number if known] | Accurate
+⚠️ PARTIAL: [Citation] → [Issue: wrong year, wrong journal, etc.] | Correction: [correct info]
+❌ NOT FOUND: [Citation] → Appears fabricated or cannot verify | Recommend: remove or replace
+❓ UNABLE: [Citation] → Cannot verify (obscure source) | Flag for manual check
+
+Then provide a JSON summary:
 
 \`\`\`json
 {
   "status": "passed" | "flagged" | "failed",
-  "total_citations": number,
-  "verified_count": number,
-  "partial_count": number,
-  "not_found_count": number,
-  "unable_count": number,
+  "total_citations": 0,
+  "verified_count": 0,
+  "partial_count": 0,
+  "not_found_count": 0,
+  "unable_count": 0,
   "corrections": [
     {
-      "original": "string",
-      "corrected": "string",
-      "pmid": "string",
-      "auto_fixable": boolean
+      "original": "Incorrect citation",
+      "corrected": "Correct citation",
+      "pmid": "12345678",
+      "auto_fixable": true
     }
   ],
   "pmids_to_add": [
     {
-      "citation": "string",
-      "pmid": "string",
-      "link": "string"
+      "citation": "Author et al. Journal Year",
+      "pmid": "12345678",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/12345678/"
     }
+  ],
+  "flagged_for_removal": [
+    "Citation that appears fabricated"
   ]
 }
-\`\`\``;
+\`\`\`
 
-export const CITATION_VERIFICATION_USER_PROMPT = (plan: string) =>
-  \`Verify the citations in Section 8 (Evidence & References) of this clinical plan.
+IMPORTANT:
+- NEVER fabricate a PMID - only include if you are confident
+- Mark as UNABLE if you cannot verify (better than guessing)
+- Common red flags: implausible author combinations, non-existent journals, wrong decades`
 
-For each citation:
-1. Search PubMed for the article
-2. Verify authors, year, journal
-3. Return PMID if found
+// ============================================================================
+// MAIN HANDLER
+// ============================================================================
 
-CLINICAL PLAN:
----
-\${plan}
----
-
-Provide your verification report with the JSON summary at the end.\`;
-```
-
-## STEP 6: CORE IMPLEMENTATION
-
-### Supabase Clients
-
-Create `src/lib/supabase/client.ts`:
-```typescript
-import { createBrowserClient } from '@supabase/ssr'
-
-export function createClient() {
-  return createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  )
-}
-```
-
-Create `src/lib/supabase/server.ts`:
-```typescript
-import { createClient } from '@supabase/supabase-js'
-
-export function createServiceClient() {
-  return createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_ROLE_KEY!,
-    { auth: { persistSession: false } }
-  )
-}
-```
-
-### AI Clients
-
-Create `src/lib/ai/openai.ts`:
-```typescript
-import OpenAI from 'openai'
-import { GENERATION_SYSTEM_PROMPT, GENERATION_USER_PROMPT } from './prompts'
-
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
-
-export async function generatePlan(diagnosis: string, modifier: string) {
-  const response = await openai.chat.completions.create({
-    model: 'gpt-4o', // Use gpt-4o for now, upgrade to gpt-5.2 when available
-    messages: [
-      { role: 'system', content: GENERATION_SYSTEM_PROMPT },
-      { role: 'user', content: GENERATION_USER_PROMPT(diagnosis, modifier) }
-    ],
-    max_tokens: 16000,
-    temperature: 0.3
-  })
-
-  return {
-    content: response.choices[0].message.content!,
-    usage: response.usage!
+serve(async (req) => {
+  // Handle CORS
+  if (req.method === 'OPTIONS') {
+    return new Response('ok', { headers: corsHeaders })
   }
-}
-```
-
-Create `src/lib/ai/anthropic.ts`:
-```typescript
-import Anthropic from '@anthropic-ai/sdk'
-import { CLINICAL_VERIFICATION_SYSTEM_PROMPT, CLINICAL_VERIFICATION_USER_PROMPT } from './prompts'
-
-const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
-
-export async function verifyClinical(plan: string) {
-  const response = await anthropic.messages.create({
-    model: 'claude-sonnet-4-20250514', // Or claude-opus-4-5-20251101 for highest quality
-    max_tokens: 4000,
-    system: CLINICAL_VERIFICATION_SYSTEM_PROMPT,
-    messages: [
-      { role: 'user', content: CLINICAL_VERIFICATION_USER_PROMPT(plan) }
-    ]
-  })
-
-  const text = response.content[0].type === 'text' ? response.content[0].text : ''
-
-  return {
-    content: text,
-    usage: response.usage
-  }
-}
-```
-
-Create `src/lib/ai/gemini.ts`:
-```typescript
-import { GoogleGenerativeAI } from '@google/generative-ai'
-import { CITATION_VERIFICATION_SYSTEM_PROMPT, CITATION_VERIFICATION_USER_PROMPT } from './prompts'
-
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!)
-
-export async function verifyCitations(plan: string) {
-  const model = genAI.getGenerativeModel({
-    model: 'gemini-1.5-pro', // Or gemini-2.0-flash for faster/cheaper
-    systemInstruction: CITATION_VERIFICATION_SYSTEM_PROMPT
-  })
-
-  const result = await model.generateContent(CITATION_VERIFICATION_USER_PROMPT(plan))
-  const response = result.response
-
-  return {
-    content: response.text(),
-    usage: response.usageMetadata
-  }
-}
-```
-
-### Main Pipeline
-
-Create `src/lib/pipeline/generate.ts`:
-```typescript
-import { createServiceClient } from '../supabase/server'
-import { generatePlan } from '../ai/openai'
-import { verifyClinical } from '../ai/anthropic'
-import { verifyCitations } from '../ai/gemini'
-import { calculateCost } from '../utils/costs'
-import { generateSlug } from '../utils/slug'
-
-interface PipelineOptions {
-  skipVerification?: boolean
-}
-
-export async function runPipeline(
-  diagnosis: string,
-  modifier: string,
-  options: PipelineOptions = {}
-) {
-  const supabase = createServiceClient()
-  const slug = generateSlug(diagnosis, modifier)
-  let totalCost = 0
-
-  // Create plan record
-  const { data: plan, error: planError } = await supabase
-    .from('plans')
-    .insert({
-      diagnosis,
-      modifier,
-      slug,
-      title: `${diagnosis} - ${modifier}`,
-      status: 'generating',
-      current_stage: 'generate'
-    })
-    .select()
-    .single()
-
-  if (planError) throw planError
 
   try {
-    // Stage 1: Generate with GPT
-    const genStart = Date.now()
-    await logJob(supabase, plan.id, 'generate', 'running')
+    const { plan_id } = await req.json()
 
-    const generation = await generatePlan(diagnosis, modifier)
-    const genCost = calculateCost('gpt-4o', generation.usage.prompt_tokens, generation.usage.completion_tokens)
+    if (!plan_id) {
+      return new Response(
+        JSON.stringify({ error: 'plan_id required' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
+
+    // Initialize Supabase client
+    const supabase = createClient(
+      Deno.env.get('SUPABASE_URL') ?? '',
+      Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? ''
+    )
+
+    // Fetch the plan
+    const { data: plan, error: fetchError } = await supabase
+      .from('plans')
+      .select('*')
+      .eq('id', plan_id)
+      .single()
+
+    if (fetchError || !plan) {
+      throw new Error(\`Plan not found: \${plan_id}\`)
+    }
+
+    // Update status to generating
+    await supabase
+      .from('plans')
+      .update({
+        status: 'generating',
+        started_at: new Date().toISOString(),
+        progress_percent: 10
+      })
+      .eq('id', plan_id)
+
+    let totalCost = 0
+
+    // ========================================================================
+    // STAGE 1: GENERATE PLAN WITH GPT-4o
+    // ========================================================================
+    console.log('Stage 1: Generating plan with GPT-4o...')
+
+    await logJob(supabase, plan_id, 'generate', 'running')
+
+    const genStart = Date.now()
+    const openaiResponse = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Authorization': \`Bearer \${Deno.env.get('OPENAI_API_KEY')}\`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: 'gpt-4o',
+        messages: [
+          { role: 'system', content: GENERATION_SYSTEM_PROMPT },
+          { role: 'user', content: \`Generate a comprehensive clinical decision support plan for: \${plan.diagnosis} - \${plan.modifier || 'New Diagnosis'}
+
+Focus on evidence-based recommendations with complete medication dosing, contraindications, and monitoring requirements. Include all 8 sections with thorough coverage.\` }
+        ],
+        max_tokens: 16000,
+        temperature: 0.3
+      })
+    })
+
+    if (!openaiResponse.ok) {
+      const err = await openaiResponse.text()
+      throw new Error(\`OpenAI error: \${err}\`)
+    }
+
+    const openaiData = await openaiResponse.json()
+    const generatedPlan = openaiData.choices[0].message.content
+    const genCost = calculateCost('gpt-4o', openaiData.usage.prompt_tokens, openaiData.usage.completion_tokens)
     totalCost += genCost
 
-    await logJob(supabase, plan.id, 'generate', 'completed', {
+    await logJob(supabase, plan_id, 'generate', 'completed', {
       model: 'gpt-4o',
-      input_tokens: generation.usage.prompt_tokens,
-      output_tokens: generation.usage.completion_tokens,
+      input_tokens: openaiData.usage.prompt_tokens,
+      output_tokens: openaiData.usage.completion_tokens,
       cost_usd: genCost,
       duration_ms: Date.now() - genStart,
-      result: { preview: generation.content.substring(0, 500) }
+      result: { preview: generatedPlan.substring(0, 500) }
     })
 
     // Update plan with generated content
     await supabase
       .from('plans')
       .update({
-        content_md: generation.content,
-        status: options.skipVerification ? 'review' : 'verifying',
-        current_stage: options.skipVerification ? 'complete' : 'verify_clinical'
+        content_md: generatedPlan,
+        status: 'verifying_clinical',
+        progress_percent: 40
       })
-      .eq('id', plan.id)
+      .eq('id', plan_id)
 
-    if (options.skipVerification) {
-      return { planId: plan.id, slug, cost: totalCost }
-    }
+    // ========================================================================
+    // STAGE 2A: CLINICAL VERIFICATION WITH CLAUDE
+    // ========================================================================
+    console.log('Stage 2A: Clinical verification with Claude...')
 
-    // Stage 2: Verification (parallel)
-    const [clinicalResult, citationResult] = await Promise.all([
-      runClinicalVerification(supabase, plan.id, generation.content),
-      runCitationVerification(supabase, plan.id, generation.content)
-    ])
+    await supabase.from('plans').update({ current_stage: 'verify_clinical' }).eq('id', plan_id)
+    await logJob(supabase, plan_id, 'verify_clinical', 'running')
 
-    totalCost += clinicalResult.cost + citationResult.cost
-
-    // Save verification report
-    const humanReviewRequired =
-      clinicalResult.status === 'failed' ||
-      clinicalResult.status === 'flagged' ||
-      citationResult.status === 'failed'
-
-    await supabase.from('verification_reports').insert({
-      plan_id: plan.id,
-      clinical_status: clinicalResult.status,
-      clinical_model: 'claude-sonnet-4',
-      clinical_result: clinicalResult.result,
-      citation_status: citationResult.status,
-      citation_model: 'gemini-1.5-pro',
-      citation_result: citationResult.result,
-      overall_status: humanReviewRequired ? 'flagged' : 'passed',
-      human_review_required: humanReviewRequired,
-      human_review_items: [
-        ...clinicalResult.reviewItems,
-        ...citationResult.reviewItems
-      ]
+    const clinicalStart = Date.now()
+    const claudeResponse = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'x-api-key': Deno.env.get('ANTHROPIC_API_KEY') ?? '',
+        'anthropic-version': '2023-06-01',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 4000,
+        system: CLINICAL_VERIFICATION_SYSTEM_PROMPT,
+        messages: [
+          { role: 'user', content: \`Review this clinical plan for medication safety and accuracy:\n\n\${generatedPlan}\` }
+        ]
+      })
     })
 
-    // Update plan status
+    if (!claudeResponse.ok) {
+      const err = await claudeResponse.text()
+      throw new Error(\`Claude error: \${err}\`)
+    }
+
+    const claudeData = await claudeResponse.json()
+    const clinicalResult = claudeData.content[0].text
+    const clinicalCost = calculateCost('claude-sonnet-4', claudeData.usage.input_tokens, claudeData.usage.output_tokens)
+    totalCost += clinicalCost
+
+    // Parse JSON from response
+    const clinicalJsonMatch = clinicalResult.match(/```json\n([\s\S]*?)\n```/)
+    const clinicalParsed = clinicalJsonMatch ? JSON.parse(clinicalJsonMatch[1]) : { status: 'unknown' }
+
+    await logJob(supabase, plan_id, 'verify_clinical', 'completed', {
+      model: 'claude-sonnet-4',
+      input_tokens: claudeData.usage.input_tokens,
+      output_tokens: claudeData.usage.output_tokens,
+      cost_usd: clinicalCost,
+      duration_ms: Date.now() - clinicalStart,
+      result: clinicalParsed
+    })
+
+    await supabase.from('plans').update({ progress_percent: 60 }).eq('id', plan_id)
+
+    // ========================================================================
+    // STAGE 2B: CITATION VERIFICATION WITH GEMINI
+    // ========================================================================
+    console.log('Stage 2B: Citation verification with Gemini...')
+
+    await supabase.from('plans').update({
+      status: 'verifying_citation',
+      current_stage: 'verify_citation'
+    }).eq('id', plan_id)
+
+    await logJob(supabase, plan_id, 'verify_citation', 'running')
+
+    const citationStart = Date.now()
+    const geminiResponse = await fetch(\`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=\${Deno.env.get('GEMINI_API_KEY')}\`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{
+          role: 'user',
+          parts: [{ text: \`\${CITATION_VERIFICATION_SYSTEM_PROMPT}\n\nVerify the citations in this clinical plan:\n\n\${generatedPlan}\` }]
+        }],
+        generationConfig: {
+          maxOutputTokens: 4000,
+          temperature: 0.2
+        }
+      })
+    })
+
+    if (!geminiResponse.ok) {
+      const err = await geminiResponse.text()
+      throw new Error(\`Gemini error: \${err}\`)
+    }
+
+    const geminiData = await geminiResponse.json()
+    const citationResult = geminiData.candidates[0].content.parts[0].text
+    const citationCost = calculateCost('gemini-1.5-pro',
+      geminiData.usageMetadata?.promptTokenCount || 5000,
+      geminiData.usageMetadata?.candidatesTokenCount || 2000
+    )
+    totalCost += citationCost
+
+    // Parse JSON from response
+    const citationJsonMatch = citationResult.match(/```json\n([\s\S]*?)\n```/)
+    const citationParsed = citationJsonMatch ? JSON.parse(citationJsonMatch[1]) : { status: 'unknown' }
+
+    await logJob(supabase, plan_id, 'verify_citation', 'completed', {
+      model: 'gemini-1.5-pro',
+      input_tokens: geminiData.usageMetadata?.promptTokenCount || 5000,
+      output_tokens: geminiData.usageMetadata?.candidatesTokenCount || 2000,
+      cost_usd: citationCost,
+      duration_ms: Date.now() - citationStart,
+      result: citationParsed
+    })
+
+    await supabase.from('plans').update({ progress_percent: 80 }).eq('id', plan_id)
+
+    // ========================================================================
+    // STAGE 3: MERGE RESULTS AND FINALIZE
+    // ========================================================================
+    console.log('Stage 3: Merging results...')
+
+    const humanReviewRequired =
+      clinicalParsed.status === 'failed' ||
+      clinicalParsed.error_count > 0 ||
+      citationParsed.status === 'failed' ||
+      (citationParsed.not_found_count || 0) > 2
+
+    const reviewItems: string[] = [
+      ...(clinicalParsed.errors?.map((e: any) => \`CLINICAL: \${e.medication} - \${e.issue}\`) || []),
+      ...(clinicalParsed.flags?.map((f: any) => \`FLAG: \${f.medication} - \${f.issue}\`) || []),
+      ...(citationParsed.flagged_for_removal?.map((c: string) => \`CITATION: Remove - \${c}\`) || [])
+    ]
+
+    // Save verification report
+    await supabase.from('verification_reports').insert({
+      plan_id,
+      clinical_status: clinicalParsed.status,
+      clinical_model: 'claude-sonnet-4',
+      clinical_result: clinicalParsed,
+      clinical_raw: clinicalResult,
+      citation_status: citationParsed.status,
+      citation_model: 'gemini-1.5-pro',
+      citation_result: citationParsed,
+      citation_raw: citationResult,
+      overall_status: humanReviewRequired ? 'flagged' : 'passed',
+      human_review_required: humanReviewRequired,
+      human_review_items: reviewItems
+    })
+
+    // Update plan as complete
     await supabase
       .from('plans')
       .update({
         status: 'review',
-        current_stage: 'complete'
+        current_stage: 'complete',
+        progress_percent: 100,
+        total_cost_usd: totalCost,
+        completed_at: new Date().toISOString()
       })
-      .eq('id', plan.id)
+      .eq('id', plan_id)
 
-    return {
-      planId: plan.id,
-      slug,
-      cost: totalCost,
-      humanReviewRequired,
-      reviewItems: [...clinicalResult.reviewItems, ...citationResult.reviewItems]
-    }
-
-  } catch (error) {
-    // Update plan as failed
-    await supabase
-      .from('plans')
-      .update({ status: 'failed' })
-      .eq('id', plan.id)
-
-    throw error
-  }
-}
-
-async function runClinicalVerification(supabase: any, planId: string, content: string) {
-  const start = Date.now()
-  await logJob(supabase, planId, 'verify_clinical', 'running')
-
-  try {
-    const result = await verifyClinical(content)
-    const cost = calculateCost('claude-sonnet-4', result.usage.input_tokens, result.usage.output_tokens)
-
-    // Parse the JSON from the response
-    const jsonMatch = result.content.match(/```json\n([\s\S]*?)\n```/)
-    const parsed = jsonMatch ? JSON.parse(jsonMatch[1]) : { status: 'unknown' }
-
-    await logJob(supabase, planId, 'verify_clinical', 'completed', {
-      model: 'claude-sonnet-4',
-      input_tokens: result.usage.input_tokens,
-      output_tokens: result.usage.output_tokens,
-      cost_usd: cost,
-      duration_ms: Date.now() - start,
-      result: parsed
+    // Log completion
+    await supabase.from('audit_log').insert({
+      plan_id,
+      action: 'generation_complete',
+      details: {
+        total_cost: totalCost,
+        human_review_required: humanReviewRequired,
+        clinical_status: clinicalParsed.status,
+        citation_status: citationParsed.status
+      }
     })
 
-    return {
-      status: parsed.status,
-      result: parsed,
-      cost,
-      reviewItems: parsed.errors?.map((e: any) => e.issue) || []
-    }
-  } catch (error) {
-    await logJob(supabase, planId, 'verify_clinical', 'failed', {
-      error_message: String(error)
-    })
-    return { status: 'failed', result: null, cost: 0, reviewItems: ['Clinical verification failed'] }
-  }
-}
+    console.log(\`Plan \${plan_id} completed. Cost: $\${totalCost.toFixed(4)}\`)
 
-async function runCitationVerification(supabase: any, planId: string, content: string) {
-  const start = Date.now()
-  await logJob(supabase, planId, 'verify_citation', 'running')
-
-  try {
-    const result = await verifyCitations(content)
-    const cost = calculateCost('gemini-1.5-pro',
-      result.usage?.promptTokenCount || 0,
-      result.usage?.candidatesTokenCount || 0
+    return new Response(
+      JSON.stringify({
+        success: true,
+        plan_id,
+        cost: totalCost,
+        human_review_required: humanReviewRequired
+      }),
+      { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
     )
 
-    // Parse the JSON from the response
-    const jsonMatch = result.content.match(/```json\n([\s\S]*?)\n```/)
-    const parsed = jsonMatch ? JSON.parse(jsonMatch[1]) : { status: 'unknown' }
-
-    await logJob(supabase, planId, 'verify_citation', 'completed', {
-      model: 'gemini-1.5-pro',
-      input_tokens: result.usage?.promptTokenCount || 0,
-      output_tokens: result.usage?.candidatesTokenCount || 0,
-      cost_usd: cost,
-      duration_ms: Date.now() - start,
-      result: parsed
-    })
-
-    return {
-      status: parsed.status,
-      result: parsed,
-      cost,
-      reviewItems: parsed.corrections?.filter((c: any) => !c.auto_fixable).map((c: any) => c.original) || []
-    }
   } catch (error) {
-    await logJob(supabase, planId, 'verify_citation', 'failed', {
-      error_message: String(error)
-    })
-    return { status: 'failed', result: null, cost: 0, reviewItems: ['Citation verification failed'] }
-  }
-}
+    console.error('Pipeline error:', error)
 
+    // Try to update plan status to failed
+    try {
+      const { plan_id } = await req.json()
+      const supabase = createClient(
+        Deno.env.get('SUPABASE_URL') ?? '',
+        Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? ''
+      )
+      await supabase
+        .from('plans')
+        .update({
+          status: 'failed',
+          error_message: String(error)
+        })
+        .eq('id', plan_id)
+    } catch (e) {
+      // Ignore - couldn't update
+    }
+
+    return new Response(
+      JSON.stringify({ error: String(error) }),
+      { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+    )
+  }
+})
+
+// Helper to log job stages
 async function logJob(
   supabase: any,
   planId: string,
@@ -895,130 +1001,185 @@ async function logJob(
       })
       .eq('plan_id', planId)
       .eq('stage', stage)
+      .eq('status', 'running')
   }
 }
 ```
 
-### Utility Functions
+**Deploy the Edge Function:**
+```bash
+# Set secrets first
+npx supabase secrets set OPENAI_API_KEY=your_key
+npx supabase secrets set ANTHROPIC_API_KEY=your_key
+npx supabase secrets set GEMINI_API_KEY=your_key
 
-Create `src/lib/utils/costs.ts`:
+# Deploy
+npx supabase functions deploy generate-plan
+```
+
+---
+
+## STEP 6: VERCEL API ROUTES (FAST - NO TIMEOUTS)
+
+These routes just queue jobs and check status - they complete in <2 seconds.
+
+Create `src/lib/supabase/server.ts`:
 ```typescript
-const PRICING: Record<string, { input: number; output: number }> = {
-  'gpt-4o': { input: 2.5 / 1_000_000, output: 10 / 1_000_000 },
-  'gpt-5.2': { input: 1.75 / 1_000_000, output: 14 / 1_000_000 },
-  'claude-sonnet-4': { input: 3 / 1_000_000, output: 15 / 1_000_000 },
-  'claude-opus-4.5': { input: 5 / 1_000_000, output: 25 / 1_000_000 },
-  'gemini-1.5-pro': { input: 1.25 / 1_000_000, output: 5 / 1_000_000 },
-  'gemini-2.0-flash': { input: 0.1 / 1_000_000, output: 0.4 / 1_000_000 }
-}
+import { createClient } from '@supabase/supabase-js'
 
-export function calculateCost(model: string, inputTokens: number, outputTokens: number): number {
-  const pricing = PRICING[model] || PRICING['gpt-4o']
-  return (inputTokens * pricing.input) + (outputTokens * pricing.output)
+export function createServiceClient() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!,
+    { auth: { persistSession: false } }
+  )
+}
+```
+
+Create `src/lib/supabase/client.ts`:
+```typescript
+import { createBrowserClient } from '@supabase/ssr'
+
+export function createClient() {
+  return createBrowserClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  )
 }
 ```
 
 Create `src/lib/utils/slug.ts`:
 ```typescript
 export function generateSlug(diagnosis: string, modifier: string): string {
-  const combined = `${diagnosis}-${modifier}`
-  return combined
+  return \`\${diagnosis}-\${modifier}\`
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '')
 }
 ```
 
-Create `src/lib/types.ts`:
-```typescript
-export interface Plan {
-  id: string
-  diagnosis: string
-  modifier: string
-  slug: string
-  title: string
-  content_md: string | null
-  content_json: any | null
-  status: 'draft' | 'generating' | 'verifying' | 'review' | 'approved' | 'rejected'
-  current_stage: string | null
-  version: string
-  icd10: string[]
-  setting_coverage: {
-    ED: boolean
-    HOSP: boolean
-    OPD: boolean
-    ICU: boolean
-  }
-  quality_score: number | null
-  created_at: string
-  updated_at: string
-  approved_at: string | null
-  approved_by: string | null
-}
-
-export interface GenerationJob {
-  id: string
-  plan_id: string
-  stage: string
-  status: string
-  model: string | null
-  input_tokens: number | null
-  output_tokens: number | null
-  cost_usd: number | null
-  result: any | null
-  error_message: string | null
-  started_at: string | null
-  completed_at: string | null
-  duration_ms: number | null
-}
-
-export interface VerificationReport {
-  id: string
-  plan_id: string
-  clinical_status: string | null
-  clinical_result: any | null
-  citation_status: string | null
-  citation_result: any | null
-  overall_status: string | null
-  human_review_required: boolean
-  human_review_items: string[]
-  auto_fixes_applied: string[]
-}
-```
-
-## STEP 7: API ROUTES
-
 Create `src/app/api/generate/route.ts`:
 ```typescript
 import { NextRequest, NextResponse } from 'next/server'
-import { runPipeline } from '@/lib/pipeline/generate'
+import { createServiceClient } from '@/lib/supabase/server'
+import { generateSlug } from '@/lib/utils/slug'
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { diagnosis, modifier = 'new-diagnosis', skipVerification = false } = body
+    const { diagnosis, modifier = 'new-diagnosis' } = body
 
     if (!diagnosis) {
       return NextResponse.json({ error: 'Diagnosis is required' }, { status: 400 })
     }
 
-    const result = await runPipeline(diagnosis, modifier, { skipVerification })
+    const supabase = createServiceClient()
+    const slug = generateSlug(diagnosis, modifier)
 
+    // Check if plan with this slug already exists
+    const { data: existing } = await supabase
+      .from('plans')
+      .select('id, slug')
+      .eq('slug', slug)
+      .single()
+
+    if (existing) {
+      return NextResponse.json({
+        success: true,
+        planId: existing.id,
+        slug: existing.slug,
+        message: 'Plan already exists'
+      })
+    }
+
+    // Create plan record - this triggers the Edge Function automatically
+    const { data: plan, error } = await supabase
+      .from('plans')
+      .insert({
+        diagnosis,
+        modifier,
+        slug,
+        title: \`\${diagnosis} - \${modifier.replace('-', ' ')}\`,
+        status: 'queued'
+      })
+      .select()
+      .single()
+
+    if (error) {
+      throw error
+    }
+
+    // Return immediately - Edge Function will process in background
     return NextResponse.json({
       success: true,
-      planId: result.planId,
-      slug: result.slug,
-      cost: result.cost,
-      humanReviewRequired: result.humanReviewRequired,
-      reviewItems: result.reviewItems
+      planId: plan.id,
+      slug: plan.slug,
+      status: 'queued',
+      message: 'Generation started'
     })
 
   } catch (error) {
-    console.error('Generation error:', error)
+    console.error('Generate error:', error)
     return NextResponse.json(
-      { error: 'Failed to generate plan', details: String(error) },
+      { error: 'Failed to queue generation', details: String(error) },
       { status: 500 }
     )
+  }
+}
+```
+
+Create `src/app/api/status/[planId]/route.ts`:
+```typescript
+import { NextRequest, NextResponse } from 'next/server'
+import { createServiceClient } from '@/lib/supabase/server'
+
+export async function GET(
+  request: NextRequest,
+  { params }: { params: { planId: string } }
+) {
+  try {
+    const supabase = createServiceClient()
+
+    // Fetch plan and jobs
+    const [planResult, jobsResult] = await Promise.all([
+      supabase
+        .from('plans')
+        .select('id, slug, status, current_stage, progress_percent, error_message, total_cost_usd')
+        .eq('id', params.planId)
+        .single(),
+      supabase
+        .from('generation_jobs')
+        .select('stage, status, duration_ms, cost_usd')
+        .eq('plan_id', params.planId)
+        .order('created_at', { ascending: true })
+    ])
+
+    if (planResult.error || !planResult.data) {
+      return NextResponse.json({ error: 'Plan not found' }, { status: 404 })
+    }
+
+    const plan = planResult.data
+    const jobs = jobsResult.data || []
+
+    return NextResponse.json({
+      planId: plan.id,
+      slug: plan.slug,
+      status: plan.status,
+      currentStage: plan.current_stage,
+      progressPercent: plan.progress_percent,
+      error: plan.error_message,
+      cost: plan.total_cost_usd,
+      stages: jobs.map(j => ({
+        stage: j.stage,
+        status: j.status,
+        durationMs: j.duration_ms,
+        cost: j.cost_usd
+      })),
+      isComplete: ['review', 'approved', 'rejected', 'failed'].includes(plan.status)
+    })
+
+  } catch (error) {
+    return NextResponse.json({ error: String(error) }, { status: 500 })
   }
 }
 ```
@@ -1032,7 +1193,6 @@ export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url)
   const status = searchParams.get('status')
   const limit = parseInt(searchParams.get('limit') || '50')
-  const offset = parseInt(searchParams.get('offset') || '0')
 
   const supabase = createServiceClient()
 
@@ -1040,7 +1200,7 @@ export async function GET(request: NextRequest) {
     .from('plans')
     .select('*', { count: 'exact' })
     .order('created_at', { ascending: false })
-    .range(offset, offset + limit - 1)
+    .limit(limit)
 
   if (status) {
     query = query.eq('status', status)
@@ -1052,7 +1212,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: error.message }, { status: 500 })
   }
 
-  return NextResponse.json({ plans: data, total: count, limit, offset })
+  return NextResponse.json({ plans: data, total: count })
 }
 ```
 
@@ -1100,7 +1260,7 @@ export async function POST(
   { params }: { params: { planId: string } }
 ) {
   const body = await request.json()
-  const { approved_by, comments } = body
+  const { approved_by = 'physician', comments } = body
 
   const supabase = createServiceClient()
 
@@ -1109,7 +1269,7 @@ export async function POST(
     .update({
       status: 'approved',
       approved_at: new Date().toISOString(),
-      approved_by: approved_by || 'physician'
+      approved_by
     })
     .eq('id', params.planId)
     .select()
@@ -1119,7 +1279,6 @@ export async function POST(
     return NextResponse.json({ error: error.message }, { status: 500 })
   }
 
-  // Log to audit
   await supabase.from('audit_log').insert({
     plan_id: params.planId,
     action: 'approved',
@@ -1141,7 +1300,7 @@ export async function POST(
   { params }: { params: { planId: string } }
 ) {
   const body = await request.json()
-  const { rejected_by, reason } = body
+  const { rejected_by = 'physician', reason } = body
 
   const supabase = createServiceClient()
 
@@ -1167,13 +1326,13 @@ export async function POST(
 }
 ```
 
-## STEP 8: UI COMPONENTS
+---
 
-Create all the UI components with a clean, professional medical interface:
+## STEP 7: UI COMPONENTS
 
-### Layout and Navigation
+Create the UI with real-time status polling.
 
-`src/app/layout.tsx`:
+Create `src/app/layout.tsx`:
 ```typescript
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -1187,25 +1346,19 @@ export const metadata: Metadata = {
   description: 'AI-powered clinical decision support plan generator',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <Navigation />
-        <main className="min-h-screen bg-gray-50">
-          {children}
-        </main>
+        <main className="min-h-screen bg-gray-50">{children}</main>
       </body>
     </html>
   )
 }
 ```
 
-`src/components/Navigation.tsx`:
+Create `src/components/Navigation.tsx`:
 ```typescript
 'use client'
 
@@ -1218,20 +1371,18 @@ export function Navigation() {
 
   const links = [
     { href: '/', label: 'Dashboard', icon: LayoutDashboard },
-    { href: '/generate', label: 'Generate Plan', icon: PlusCircle },
-    { href: '/plans', label: 'All Plans', icon: FileText },
-    { href: '/review', label: 'Review Queue', icon: CheckSquare },
+    { href: '/generate', label: 'Generate', icon: PlusCircle },
+    { href: '/plans', label: 'Plans', icon: FileText },
+    { href: '/review', label: 'Review', icon: CheckSquare },
   ]
 
   return (
-    <nav className="bg-white border-b border-gray-200">
+    <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex">
-            <div className="flex-shrink-0 flex items-center">
-              <span className="text-xl font-bold text-blue-600">Clinical Plan Generator</span>
-            </div>
-            <div className="hidden sm:ml-8 sm:flex sm:space-x-4">
+          <div className="flex items-center">
+            <span className="text-xl font-bold text-blue-600">Clinical Plan Generator</span>
+            <div className="hidden sm:ml-8 sm:flex sm:space-x-2">
               {links.map((link) => {
                 const Icon = link.icon
                 const isActive = pathname === link.href
@@ -1239,11 +1390,9 @@ export function Navigation() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`inline-flex items-center px-3 py-2 text-sm font-medium rounded-md ${
-                      isActive
-                        ? 'bg-blue-50 text-blue-700'
-                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
-                    }`}
+                    className={\`inline-flex items-center px-3 py-2 text-sm font-medium rounded-md \${
+                      isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50'
+                    }\`}
                   >
                     <Icon className="w-4 h-4 mr-2" />
                     {link.label}
@@ -1259,13 +1408,189 @@ export function Navigation() {
 }
 ```
 
-### Dashboard Page
+Create `src/components/StatusTracker.tsx`:
+```typescript
+'use client'
 
-`src/app/page.tsx`:
+import { useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation'
+import { Loader2, CheckCircle, XCircle, Clock } from 'lucide-react'
+
+interface StatusTrackerProps {
+  planId: string
+  onComplete?: (slug: string) => void
+}
+
+interface StatusData {
+  planId: string
+  slug: string
+  status: string
+  currentStage: string
+  progressPercent: number
+  error: string | null
+  cost: number
+  stages: Array<{
+    stage: string
+    status: string
+    durationMs: number
+    cost: number
+  }>
+  isComplete: boolean
+}
+
+export function StatusTracker({ planId, onComplete }: StatusTrackerProps) {
+  const router = useRouter()
+  const [status, setStatus] = useState<StatusData | null>(null)
+  const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    let interval: NodeJS.Timeout
+
+    const checkStatus = async () => {
+      try {
+        const res = await fetch(\`/api/status/\${planId}\`)
+        const data = await res.json()
+
+        if (!res.ok) {
+          setError(data.error)
+          return
+        }
+
+        setStatus(data)
+
+        if (data.isComplete) {
+          clearInterval(interval)
+          if (data.status === 'review' && onComplete) {
+            setTimeout(() => onComplete(data.slug), 1500)
+          }
+        }
+      } catch (err) {
+        setError(String(err))
+      }
+    }
+
+    checkStatus()
+    interval = setInterval(checkStatus, 3000) // Poll every 3 seconds
+
+    return () => clearInterval(interval)
+  }, [planId, onComplete])
+
+  if (error) {
+    return (
+      <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+        <div className="flex items-center text-red-700">
+          <XCircle className="w-5 h-5 mr-2" />
+          Error: {error}
+        </div>
+      </div>
+    )
+  }
+
+  if (!status) {
+    return (
+      <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+        <div className="flex items-center text-blue-700">
+          <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+          Connecting...
+        </div>
+      </div>
+    )
+  }
+
+  const stages = [
+    { key: 'generate', label: 'Generate Plan', sublabel: 'GPT-4o' },
+    { key: 'verify_clinical', label: 'Clinical Check', sublabel: 'Claude' },
+    { key: 'verify_citation', label: 'Citation Check', sublabel: 'Gemini' },
+  ]
+
+  const getStageStatus = (key: string) => {
+    const stage = status.stages.find(s => s.stage === key)
+    return stage?.status || 'pending'
+  }
+
+  return (
+    <div className="bg-white border border-gray-200 rounded-lg p-6">
+      <div className="mb-4">
+        <div className="flex justify-between items-center mb-2">
+          <span className="text-sm font-medium text-gray-700">
+            {status.status === 'failed' ? 'Generation Failed' :
+             status.isComplete ? 'Complete!' :
+             'Generating Plan...'}
+          </span>
+          <span className="text-sm text-gray-500">{status.progressPercent}%</span>
+        </div>
+        <div className="w-full bg-gray-200 rounded-full h-2">
+          <div
+            className={\`h-2 rounded-full transition-all duration-500 \${
+              status.status === 'failed' ? 'bg-red-500' :
+              status.isComplete ? 'bg-green-500' : 'bg-blue-500'
+            }\`}
+            style={{ width: \`\${status.progressPercent}%\` }}
+          />
+        </div>
+      </div>
+
+      <div className="space-y-3">
+        {stages.map((stage, idx) => {
+          const stageStatus = getStageStatus(stage.key)
+          const stageData = status.stages.find(s => s.stage === stage.key)
+
+          return (
+            <div key={stage.key} className="flex items-center justify-between">
+              <div className="flex items-center">
+                {stageStatus === 'completed' ? (
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                ) : stageStatus === 'running' ? (
+                  <Loader2 className="w-5 h-5 text-blue-500 animate-spin mr-3" />
+                ) : stageStatus === 'failed' ? (
+                  <XCircle className="w-5 h-5 text-red-500 mr-3" />
+                ) : (
+                  <Clock className="w-5 h-5 text-gray-300 mr-3" />
+                )}
+                <div>
+                  <p className="text-sm font-medium text-gray-900">{stage.label}</p>
+                  <p className="text-xs text-gray-500">{stage.sublabel}</p>
+                </div>
+              </div>
+              {stageData && stageStatus === 'completed' && (
+                <div className="text-right">
+                  <p className="text-xs text-gray-500">
+                    {(stageData.durationMs / 1000).toFixed(1)}s
+                  </p>
+                  <p className="text-xs text-green-600">
+                    ${stageData.cost?.toFixed(4)}
+                  </p>
+                </div>
+              )}
+            </div>
+          )
+        })}
+      </div>
+
+      {status.isComplete && status.cost && (
+        <div className="mt-4 pt-4 border-t border-gray-200">
+          <div className="flex justify-between text-sm">
+            <span className="text-gray-600">Total Cost</span>
+            <span className="font-medium text-green-600">${status.cost.toFixed(4)}</span>
+          </div>
+        </div>
+      )}
+
+      {status.status === 'failed' && status.error && (
+        <div className="mt-4 p-3 bg-red-50 rounded text-sm text-red-700">
+          {status.error}
+        </div>
+      )}
+    </div>
+  )
+}
+```
+
+Create `src/app/page.tsx` (Dashboard):
 ```typescript
 import Link from 'next/link'
 import { createServiceClient } from '@/lib/supabase/server'
-import { PlusCircle, FileText, CheckSquare, AlertCircle } from 'lucide-react'
+import { PlusCircle, FileText, CheckSquare, DollarSign } from 'lucide-react'
 
 export const dynamic = 'force-dynamic'
 
@@ -1276,100 +1601,107 @@ export default async function Dashboard() {
     { count: totalPlans },
     { count: reviewCount },
     { count: approvedCount },
-    { data: recentPlans }
+    { data: recentPlans },
+    { data: costData }
   ] = await Promise.all([
     supabase.from('plans').select('*', { count: 'exact', head: true }),
     supabase.from('plans').select('*', { count: 'exact', head: true }).eq('status', 'review'),
     supabase.from('plans').select('*', { count: 'exact', head: true }).eq('status', 'approved'),
-    supabase.from('plans').select('*').order('created_at', { ascending: false }).limit(5)
+    supabase.from('plans').select('*').order('created_at', { ascending: false }).limit(5),
+    supabase.from('plans').select('total_cost_usd').not('total_cost_usd', 'is', null)
   ])
 
-  const stats = [
-    { name: 'Total Plans', value: totalPlans || 0, icon: FileText, color: 'bg-blue-500' },
-    { name: 'Pending Review', value: reviewCount || 0, icon: AlertCircle, color: 'bg-yellow-500' },
-    { name: 'Approved', value: approvedCount || 0, icon: CheckSquare, color: 'bg-green-500' },
-  ]
+  const totalCost = costData?.reduce((sum, p) => sum + (p.total_cost_usd || 0), 0) || 0
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
-        <p className="text-gray-600">AI-powered clinical decision support plan generator</p>
-      </div>
+      <h1 className="text-2xl font-bold text-gray-900 mb-8">Dashboard</h1>
 
       {/* Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-        {stats.map((stat) => {
-          const Icon = stat.icon
-          return (
-            <div key={stat.name} className="bg-white rounded-lg shadow p-6">
-              <div className="flex items-center">
-                <div className={`${stat.color} p-3 rounded-lg`}>
-                  <Icon className="w-6 h-6 text-white" />
-                </div>
-                <div className="ml-4">
-                  <p className="text-sm text-gray-600">{stat.name}</p>
-                  <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
-                </div>
-              </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div className="bg-white rounded-lg shadow p-4">
+          <div className="flex items-center">
+            <FileText className="w-8 h-8 text-blue-500" />
+            <div className="ml-3">
+              <p className="text-2xl font-bold">{totalPlans || 0}</p>
+              <p className="text-sm text-gray-500">Total Plans</p>
             </div>
-          )
-        })}
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow p-4">
+          <div className="flex items-center">
+            <CheckSquare className="w-8 h-8 text-yellow-500" />
+            <div className="ml-3">
+              <p className="text-2xl font-bold">{reviewCount || 0}</p>
+              <p className="text-sm text-gray-500">Pending Review</p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow p-4">
+          <div className="flex items-center">
+            <CheckSquare className="w-8 h-8 text-green-500" />
+            <div className="ml-3">
+              <p className="text-2xl font-bold">{approvedCount || 0}</p>
+              <p className="text-sm text-gray-500">Approved</p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow p-4">
+          <div className="flex items-center">
+            <DollarSign className="w-8 h-8 text-green-500" />
+            <div className="ml-3">
+              <p className="text-2xl font-bold">${totalCost.toFixed(2)}</p>
+              <p className="text-sm text-gray-500">Total Spent</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Quick Actions */}
-      <div className="bg-white rounded-lg shadow p-6 mb-8">
-        <h2 className="text-lg font-semibold mb-4">Quick Actions</h2>
-        <div className="flex gap-4">
-          <Link
-            href="/generate"
-            className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-          >
-            <PlusCircle className="w-5 h-5 mr-2" />
-            Generate New Plan
-          </Link>
+      <div className="flex gap-4 mb-8">
+        <Link
+          href="/generate"
+          className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+        >
+          <PlusCircle className="w-5 h-5 mr-2" />
+          Generate New Plan
+        </Link>
+        {(reviewCount || 0) > 0 && (
           <Link
             href="/review"
             className="inline-flex items-center px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600"
           >
-            <CheckSquare className="w-5 h-5 mr-2" />
-            Review Queue ({reviewCount || 0})
+            Review Queue ({reviewCount})
           </Link>
-        </div>
+        )}
       </div>
 
       {/* Recent Plans */}
       <div className="bg-white rounded-lg shadow">
-        <div className="px-6 py-4 border-b border-gray-200">
-          <h2 className="text-lg font-semibold">Recent Plans</h2>
-        </div>
-        <div className="divide-y divide-gray-200">
+        <div className="px-6 py-4 border-b"><h2 className="font-semibold">Recent Plans</h2></div>
+        <div className="divide-y">
           {recentPlans?.map((plan) => (
-            <Link
-              key={plan.id}
-              href={`/plans/${plan.slug}`}
-              className="block px-6 py-4 hover:bg-gray-50"
-            >
-              <div className="flex justify-between items-center">
+            <Link key={plan.id} href={\`/plans/\${plan.slug}\`} className="block px-6 py-4 hover:bg-gray-50">
+              <div className="flex justify-between">
                 <div>
-                  <p className="font-medium text-gray-900">{plan.title}</p>
-                  <p className="text-sm text-gray-500">
-                    {new Date(plan.created_at).toLocaleDateString()}
-                  </p>
+                  <p className="font-medium">{plan.title}</p>
+                  <p className="text-sm text-gray-500">{new Date(plan.created_at).toLocaleDateString()}</p>
                 </div>
-                <span className={`px-3 py-1 text-sm rounded-full ${
+                <span className={\`px-3 py-1 text-sm rounded-full h-fit \${
                   plan.status === 'approved' ? 'bg-green-100 text-green-800' :
                   plan.status === 'review' ? 'bg-yellow-100 text-yellow-800' :
-                  plan.status === 'generating' ? 'bg-blue-100 text-blue-800' :
+                  plan.status === 'generating' || plan.status === 'verifying_clinical' || plan.status === 'verifying_citation'
+                    ? 'bg-blue-100 text-blue-800' :
+                  plan.status === 'failed' ? 'bg-red-100 text-red-800' :
                   'bg-gray-100 text-gray-800'
-                }`}>
+                }\`}>
                   {plan.status}
                 </span>
               </div>
             </Link>
           ))}
           {(!recentPlans || recentPlans.length === 0) && (
-            <div className="px-6 py-8 text-center text-gray-500">
+            <div className="px-6 py-12 text-center text-gray-500">
               No plans yet. Generate your first plan!
             </div>
           )}
@@ -1380,15 +1712,14 @@ export default async function Dashboard() {
 }
 ```
 
-### Generation Page
-
-`src/app/generate/page.tsx`:
+Create `src/app/generate/page.tsx`:
 ```typescript
 'use client'
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { Loader2, Sparkles, CheckCircle, AlertCircle } from 'lucide-react'
+import { Sparkles } from 'lucide-react'
+import { StatusTracker } from '@/components/StatusTracker'
 
 const DIAGNOSES = [
   'Guillain-Barré Syndrome',
@@ -1400,7 +1731,9 @@ const DIAGNOSES = [
   'Migraine',
   'Meningitis',
   'Peripheral Neuropathy',
-  'Bell Palsy'
+  'Bell Palsy',
+  'Trigeminal Neuralgia',
+  'Essential Tremor'
 ]
 
 const MODIFIERS = [
@@ -1415,10 +1748,8 @@ export default function GeneratePage() {
   const [diagnosis, setDiagnosis] = useState('')
   const [customDiagnosis, setCustomDiagnosis] = useState('')
   const [modifier, setModifier] = useState('new-diagnosis')
-  const [skipVerification, setSkipVerification] = useState(false)
-  const [isGenerating, setIsGenerating] = useState(false)
-  const [status, setStatus] = useState<'idle' | 'generating' | 'verifying' | 'complete' | 'error'>('idle')
-  const [result, setResult] = useState<any>(null)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [planId, setPlanId] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -1430,62 +1761,48 @@ export default function GeneratePage() {
       return
     }
 
-    setIsGenerating(true)
-    setStatus('generating')
+    setIsSubmitting(true)
     setError(null)
 
     try {
-      const response = await fetch('/api/generate', {
+      const res = await fetch('/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          diagnosis: finalDiagnosis,
-          modifier,
-          skipVerification
-        })
+        body: JSON.stringify({ diagnosis: finalDiagnosis, modifier })
       })
 
-      const data = await response.json()
+      const data = await res.json()
 
-      if (!response.ok) {
-        throw new Error(data.error || 'Generation failed')
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to start generation')
       }
 
-      setStatus('complete')
-      setResult(data)
-
-      // Redirect after a short delay
-      setTimeout(() => {
-        router.push(`/plans/${data.slug}`)
-      }, 2000)
+      setPlanId(data.planId)
 
     } catch (err) {
-      setStatus('error')
       setError(err instanceof Error ? err.message : 'An error occurred')
-    } finally {
-      setIsGenerating(false)
+      setIsSubmitting(false)
     }
   }
 
-  return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-gray-900">Generate Clinical Plan</h1>
-        <p className="text-gray-600">Create a new evidence-based clinical decision support plan</p>
-      </div>
+  const handleComplete = (slug: string) => {
+    router.push(\`/plans/\${slug}\`)
+  }
 
-      <div className="bg-white rounded-lg shadow p-6">
-        <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Diagnosis Selection */}
+  return (
+    <div className="max-w-2xl mx-auto px-4 py-8">
+      <h1 className="text-2xl font-bold mb-2">Generate Clinical Plan</h1>
+      <p className="text-gray-600 mb-8">Create an evidence-based clinical decision support plan</p>
+
+      {!planId ? (
+        <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow p-6 space-y-6">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Diagnosis
-            </label>
+            <label className="block text-sm font-medium mb-2">Diagnosis</label>
             <select
               value={diagnosis}
               onChange={(e) => setDiagnosis(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              disabled={isGenerating}
+              className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+              disabled={isSubmitting}
             >
               <option value="">Select a diagnosis...</option>
               {DIAGNOSES.map((d) => (
@@ -1495,37 +1812,29 @@ export default function GeneratePage() {
             </select>
           </div>
 
-          {/* Custom Diagnosis Input */}
           {diagnosis === 'custom' && (
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Custom Diagnosis
-              </label>
+              <label className="block text-sm font-medium mb-2">Custom Diagnosis</label>
               <input
                 type="text"
                 value={customDiagnosis}
                 onChange={(e) => setCustomDiagnosis(e.target.value)}
-                placeholder="Enter diagnosis name..."
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                disabled={isGenerating}
+                placeholder="Enter diagnosis..."
+                className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                disabled={isSubmitting}
               />
             </div>
           )}
 
-          {/* Modifier Selection */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Plan Type
-            </label>
+            <label className="block text-sm font-medium mb-2">Plan Type</label>
             <div className="grid grid-cols-2 gap-3">
               {MODIFIERS.map((m) => (
                 <label
                   key={m.value}
-                  className={`flex items-center justify-center px-4 py-3 border rounded-lg cursor-pointer transition-colors ${
-                    modifier === m.value
-                      ? 'border-blue-500 bg-blue-50 text-blue-700'
-                      : 'border-gray-300 hover:border-gray-400'
-                  } ${isGenerating ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  className={\`flex items-center justify-center px-4 py-3 border rounded-lg cursor-pointer \${
+                    modifier === m.value ? 'border-blue-500 bg-blue-50 text-blue-700' : 'border-gray-300 hover:border-gray-400'
+                  }\`}
                 >
                   <input
                     type="radio"
@@ -1534,7 +1843,7 @@ export default function GeneratePage() {
                     checked={modifier === m.value}
                     onChange={(e) => setModifier(e.target.value)}
                     className="sr-only"
-                    disabled={isGenerating}
+                    disabled={isSubmitting}
                   />
                   {m.label}
                 </label>
@@ -1542,572 +1851,105 @@ export default function GeneratePage() {
             </div>
           </div>
 
-          {/* Skip Verification Option */}
-          <div className="flex items-center">
-            <input
-              type="checkbox"
-              id="skipVerification"
-              checked={skipVerification}
-              onChange={(e) => setSkipVerification(e.target.checked)}
-              className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
-              disabled={isGenerating}
-            />
-            <label htmlFor="skipVerification" className="ml-2 text-sm text-gray-600">
-              Skip verification (faster, but no clinical/citation check)
-            </label>
+          <div className="bg-gray-50 rounded-lg p-4 text-sm">
+            <p><strong>Estimated cost:</strong> ~$0.27 per plan</p>
+            <p className="text-gray-500 mt-1">GPT-4o + Claude verification + Gemini citation check</p>
           </div>
 
-          {/* Cost Estimate */}
-          <div className="bg-gray-50 rounded-lg p-4">
-            <p className="text-sm text-gray-600">
-              <strong>Estimated cost:</strong> {skipVerification ? '~$0.15' : '~$0.30'} per plan
-            </p>
-            <p className="text-xs text-gray-500 mt-1">
-              {skipVerification
-                ? 'GPT-4o generation only'
-                : 'GPT-4o generation + Claude clinical verification + Gemini citation check'
-              }
-            </p>
-          </div>
-
-          {/* Status Display */}
-          {status !== 'idle' && (
-            <div className={`rounded-lg p-4 ${
-              status === 'error' ? 'bg-red-50' :
-              status === 'complete' ? 'bg-green-50' :
-              'bg-blue-50'
-            }`}>
-              <div className="flex items-center">
-                {status === 'generating' && (
-                  <>
-                    <Loader2 className="w-5 h-5 text-blue-600 animate-spin mr-2" />
-                    <span className="text-blue-700">Generating plan with AI...</span>
-                  </>
-                )}
-                {status === 'verifying' && (
-                  <>
-                    <Loader2 className="w-5 h-5 text-blue-600 animate-spin mr-2" />
-                    <span className="text-blue-700">Verifying clinical accuracy...</span>
-                  </>
-                )}
-                {status === 'complete' && (
-                  <>
-                    <CheckCircle className="w-5 h-5 text-green-600 mr-2" />
-                    <span className="text-green-700">
-                      Plan generated! Cost: ${result?.cost?.toFixed(3)}. Redirecting...
-                    </span>
-                  </>
-                )}
-                {status === 'error' && (
-                  <>
-                    <AlertCircle className="w-5 h-5 text-red-600 mr-2" />
-                    <span className="text-red-700">{error}</span>
-                  </>
-                )}
-              </div>
-            </div>
+          {error && (
+            <div className="bg-red-50 text-red-700 p-3 rounded-lg text-sm">{error}</div>
           )}
 
-          {/* Submit Button */}
           <button
             type="submit"
-            disabled={isGenerating}
-            className={`w-full flex items-center justify-center px-4 py-3 rounded-lg text-white font-medium transition-colors ${
-              isGenerating
-                ? 'bg-gray-400 cursor-not-allowed'
-                : 'bg-blue-600 hover:bg-blue-700'
-            }`}
+            disabled={isSubmitting}
+            className="w-full flex items-center justify-center px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-400"
           >
-            {isGenerating ? (
-              <>
-                <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                Generating...
-              </>
-            ) : (
-              <>
-                <Sparkles className="w-5 h-5 mr-2" />
-                Generate Plan
-              </>
-            )}
+            <Sparkles className="w-5 h-5 mr-2" />
+            {isSubmitting ? 'Starting...' : 'Generate Plan'}
           </button>
         </form>
-      </div>
-    </div>
-  )
-}
-```
-
-### Plans List Page
-
-`src/app/plans/page.tsx`:
-```typescript
-import Link from 'next/link'
-import { createServiceClient } from '@/lib/supabase/server'
-
-export const dynamic = 'force-dynamic'
-
-export default async function PlansPage() {
-  const supabase = createServiceClient()
-
-  const { data: plans } = await supabase
-    .from('plans')
-    .select('*')
-    .order('created_at', { ascending: false })
-
-  const statusColors: Record<string, string> = {
-    approved: 'bg-green-100 text-green-800',
-    review: 'bg-yellow-100 text-yellow-800',
-    generating: 'bg-blue-100 text-blue-800',
-    verifying: 'bg-purple-100 text-purple-800',
-    rejected: 'bg-red-100 text-red-800',
-    draft: 'bg-gray-100 text-gray-800'
-  }
-
-  return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div className="mb-8 flex justify-between items-center">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-900">All Plans</h1>
-          <p className="text-gray-600">{plans?.length || 0} clinical plans</p>
-        </div>
-        <Link
-          href="/generate"
-          className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-        >
-          Generate New
-        </Link>
-      </div>
-
-      <div className="bg-white rounded-lg shadow overflow-hidden">
-        <table className="min-w-full divide-y divide-gray-200">
-          <thead className="bg-gray-50">
-            <tr>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Plan
-              </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Status
-              </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Created
-              </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Settings
-              </th>
-            </tr>
-          </thead>
-          <tbody className="bg-white divide-y divide-gray-200">
-            {plans?.map((plan) => (
-              <tr key={plan.id} className="hover:bg-gray-50">
-                <td className="px-6 py-4">
-                  <Link href={`/plans/${plan.slug}`} className="block">
-                    <div className="font-medium text-gray-900 hover:text-blue-600">
-                      {plan.title}
-                    </div>
-                    <div className="text-sm text-gray-500">
-                      {plan.icd10?.join(', ') || 'No ICD-10'}
-                    </div>
-                  </Link>
-                </td>
-                <td className="px-6 py-4">
-                  <span className={`px-3 py-1 text-sm rounded-full ${statusColors[plan.status] || statusColors.draft}`}>
-                    {plan.status}
-                  </span>
-                </td>
-                <td className="px-6 py-4 text-sm text-gray-500">
-                  {new Date(plan.created_at).toLocaleDateString()}
-                </td>
-                <td className="px-6 py-4">
-                  <div className="flex gap-1">
-                    {plan.setting_coverage?.ED && <span className="px-2 py-0.5 text-xs bg-red-100 text-red-800 rounded">ED</span>}
-                    {plan.setting_coverage?.HOSP && <span className="px-2 py-0.5 text-xs bg-blue-100 text-blue-800 rounded">HOSP</span>}
-                    {plan.setting_coverage?.OPD && <span className="px-2 py-0.5 text-xs bg-green-100 text-green-800 rounded">OPD</span>}
-                    {plan.setting_coverage?.ICU && <span className="px-2 py-0.5 text-xs bg-purple-100 text-purple-800 rounded">ICU</span>}
-                  </div>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-        {(!plans || plans.length === 0) && (
-          <div className="px-6 py-12 text-center text-gray-500">
-            No plans yet. Generate your first plan!
-          </div>
-        )}
-      </div>
-    </div>
-  )
-}
-```
-
-### Single Plan View Page
-
-`src/app/plans/[slug]/page.tsx`:
-```typescript
-import { createServiceClient } from '@/lib/supabase/server'
-import { notFound } from 'next/navigation'
-import Link from 'next/link'
-import { ArrowLeft, CheckCircle, AlertTriangle, XCircle } from 'lucide-react'
-
-export const dynamic = 'force-dynamic'
-
-export default async function PlanPage({ params }: { params: { slug: string } }) {
-  const supabase = createServiceClient()
-
-  const { data: plan } = await supabase
-    .from('plans')
-    .select('*')
-    .eq('slug', params.slug)
-    .single()
-
-  if (!plan) {
-    notFound()
-  }
-
-  const { data: report } = await supabase
-    .from('verification_reports')
-    .select('*')
-    .eq('plan_id', plan.id)
-    .order('created_at', { ascending: false })
-    .limit(1)
-    .single()
-
-  const { data: jobs } = await supabase
-    .from('generation_jobs')
-    .select('*')
-    .eq('plan_id', plan.id)
-    .order('created_at', { ascending: true })
-
-  const totalCost = jobs?.reduce((sum, job) => sum + (job.cost_usd || 0), 0) || 0
-
-  return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      {/* Header */}
-      <div className="mb-6">
-        <Link href="/plans" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-4">
-          <ArrowLeft className="w-4 h-4 mr-2" />
-          Back to Plans
-        </Link>
-        <div className="flex justify-between items-start">
-          <div>
-            <h1 className="text-2xl font-bold text-gray-900">{plan.title}</h1>
-            <p className="text-gray-600">Version {plan.version} | Created {new Date(plan.created_at).toLocaleDateString()}</p>
-          </div>
-          <span className={`px-4 py-2 rounded-full text-sm font-medium ${
-            plan.status === 'approved' ? 'bg-green-100 text-green-800' :
-            plan.status === 'review' ? 'bg-yellow-100 text-yellow-800' :
-            'bg-gray-100 text-gray-800'
-          }`}>
-            {plan.status}
-          </span>
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Main Content */}
-        <div className="lg:col-span-2 space-y-6">
-          {/* Plan Content */}
-          <div className="bg-white rounded-lg shadow">
-            <div className="px-6 py-4 border-b border-gray-200">
-              <h2 className="text-lg font-semibold">Plan Content</h2>
-            </div>
-            <div className="p-6">
-              {plan.content_md ? (
-                <pre className="whitespace-pre-wrap text-sm font-mono bg-gray-50 p-4 rounded-lg overflow-auto max-h-[600px]">
-                  {plan.content_md}
-                </pre>
-              ) : (
-                <p className="text-gray-500">No content generated yet.</p>
-              )}
-            </div>
-          </div>
-        </div>
-
-        {/* Sidebar */}
-        <div className="space-y-6">
-          {/* Generation Info */}
-          <div className="bg-white rounded-lg shadow p-6">
-            <h3 className="font-semibold mb-4">Generation Details</h3>
-            <dl className="space-y-3 text-sm">
-              <div className="flex justify-between">
-                <dt className="text-gray-600">Total Cost</dt>
-                <dd className="font-medium">${totalCost.toFixed(4)}</dd>
-              </div>
-              <div className="flex justify-between">
-                <dt className="text-gray-600">ICD-10</dt>
-                <dd className="font-medium">{plan.icd10?.join(', ') || 'Not set'}</dd>
-              </div>
-            </dl>
-          </div>
-
-          {/* Verification Status */}
-          {report && (
-            <div className="bg-white rounded-lg shadow p-6">
-              <h3 className="font-semibold mb-4">Verification</h3>
-              <div className="space-y-3">
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-600">Clinical</span>
-                  <span className={`flex items-center text-sm ${
-                    report.clinical_status === 'passed' ? 'text-green-600' :
-                    report.clinical_status === 'flagged' ? 'text-yellow-600' :
-                    'text-red-600'
-                  }`}>
-                    {report.clinical_status === 'passed' ? <CheckCircle className="w-4 h-4 mr-1" /> :
-                     report.clinical_status === 'flagged' ? <AlertTriangle className="w-4 h-4 mr-1" /> :
-                     <XCircle className="w-4 h-4 mr-1" />}
-                    {report.clinical_status}
-                  </span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-600">Citations</span>
-                  <span className={`flex items-center text-sm ${
-                    report.citation_status === 'passed' ? 'text-green-600' :
-                    report.citation_status === 'flagged' ? 'text-yellow-600' :
-                    'text-red-600'
-                  }`}>
-                    {report.citation_status === 'passed' ? <CheckCircle className="w-4 h-4 mr-1" /> :
-                     report.citation_status === 'flagged' ? <AlertTriangle className="w-4 h-4 mr-1" /> :
-                     <XCircle className="w-4 h-4 mr-1" />}
-                    {report.citation_status}
-                  </span>
-                </div>
-                {report.human_review_items?.length > 0 && (
-                  <div className="mt-4 pt-4 border-t border-gray-200">
-                    <p className="text-sm font-medium text-yellow-800 mb-2">Review Items:</p>
-                    <ul className="text-sm text-gray-600 space-y-1">
-                      {report.human_review_items.map((item: string, i: number) => (
-                        <li key={i} className="flex items-start">
-                          <AlertTriangle className="w-4 h-4 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </div>
-          )}
-
-          {/* Actions */}
-          {plan.status === 'review' && (
-            <div className="bg-white rounded-lg shadow p-6">
-              <h3 className="font-semibold mb-4">Actions</h3>
-              <div className="space-y-3">
-                <ApproveButton planId={plan.id} />
-                <RejectButton planId={plan.id} />
-              </div>
-            </div>
-          )}
-
-          {/* Pipeline Stages */}
-          {jobs && jobs.length > 0 && (
-            <div className="bg-white rounded-lg shadow p-6">
-              <h3 className="font-semibold mb-4">Pipeline Stages</h3>
-              <div className="space-y-3">
-                {jobs.map((job) => (
-                  <div key={job.id} className="flex items-center justify-between text-sm">
-                    <span className="text-gray-600 capitalize">{job.stage.replace('_', ' ')}</span>
-                    <span className={`${
-                      job.status === 'completed' ? 'text-green-600' :
-                      job.status === 'running' ? 'text-blue-600' :
-                      job.status === 'failed' ? 'text-red-600' :
-                      'text-gray-400'
-                    }`}>
-                      {job.status}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
-  )
-}
-
-// Client components for buttons
-'use client'
-function ApproveButton({ planId }: { planId: string }) {
-  const handleApprove = async () => {
-    if (!confirm('Approve this plan?')) return
-    await fetch(`/api/approve/${planId}`, { method: 'POST', body: JSON.stringify({}) })
-    window.location.reload()
-  }
-  return (
-    <button onClick={handleApprove} className="w-full px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
-      Approve Plan
-    </button>
-  )
-}
-
-function RejectButton({ planId }: { planId: string }) {
-  const handleReject = async () => {
-    const reason = prompt('Rejection reason:')
-    if (!reason) return
-    await fetch(`/api/reject/${planId}`, { method: 'POST', body: JSON.stringify({ reason }) })
-    window.location.reload()
-  }
-  return (
-    <button onClick={handleReject} className="w-full px-4 py-2 bg-red-100 text-red-700 rounded-lg hover:bg-red-200">
-      Reject Plan
-    </button>
-  )
-}
-```
-
-### Review Queue Page
-
-`src/app/review/page.tsx`:
-```typescript
-import Link from 'next/link'
-import { createServiceClient } from '@/lib/supabase/server'
-import { AlertTriangle, ArrowRight } from 'lucide-react'
-
-export const dynamic = 'force-dynamic'
-
-export default async function ReviewPage() {
-  const supabase = createServiceClient()
-
-  const { data: plans } = await supabase
-    .from('plans')
-    .select(`
-      *,
-      verification_reports (
-        human_review_required,
-        human_review_items,
-        clinical_status,
-        citation_status
-      )
-    `)
-    .eq('status', 'review')
-    .order('created_at', { ascending: true })
-
-  return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-gray-900">Review Queue</h1>
-        <p className="text-gray-600">{plans?.length || 0} plans awaiting review</p>
-      </div>
-
-      {plans && plans.length > 0 ? (
-        <div className="space-y-4">
-          {plans.map((plan) => {
-            const report = plan.verification_reports?.[0]
-            return (
-              <div key={plan.id} className="bg-white rounded-lg shadow p-6">
-                <div className="flex justify-between items-start">
-                  <div className="flex-1">
-                    <h3 className="text-lg font-semibold text-gray-900">{plan.title}</h3>
-                    <p className="text-sm text-gray-500 mt-1">
-                      Created {new Date(plan.created_at).toLocaleDateString()}
-                    </p>
-
-                    {report?.human_review_items?.length > 0 && (
-                      <div className="mt-4">
-                        <p className="text-sm font-medium text-yellow-800 flex items-center">
-                          <AlertTriangle className="w-4 h-4 mr-2" />
-                          {report.human_review_items.length} item(s) need review:
-                        </p>
-                        <ul className="mt-2 text-sm text-gray-600 space-y-1 ml-6">
-                          {report.human_review_items.slice(0, 3).map((item: string, i: number) => (
-                            <li key={i}>• {item}</li>
-                          ))}
-                          {report.human_review_items.length > 3 && (
-                            <li className="text-gray-400">
-                              +{report.human_review_items.length - 3} more...
-                            </li>
-                          )}
-                        </ul>
-                      </div>
-                    )}
-                  </div>
-
-                  <Link
-                    href={`/plans/${plan.slug}`}
-                    className="ml-4 inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-                  >
-                    Review
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Link>
-                </div>
-              </div>
-            )
-          })}
-        </div>
       ) : (
-        <div className="bg-white rounded-lg shadow p-12 text-center">
-          <p className="text-gray-500 text-lg">No plans awaiting review</p>
-          <Link href="/generate" className="mt-4 inline-block text-blue-600 hover:text-blue-700">
-            Generate a new plan
-          </Link>
-        </div>
+        <StatusTracker planId={planId} onComplete={handleComplete} />
       )}
     </div>
   )
 }
 ```
 
-## STEP 9: TAILWIND CONFIG
+Create `src/app/plans/page.tsx`, `src/app/plans/[slug]/page.tsx`, and `src/app/review/page.tsx` following the same patterns from the previous version (I'll provide if needed, but they're similar - just display components).
 
-Update `tailwind.config.ts`:
-```typescript
-import type { Config } from 'tailwindcss'
+---
 
-const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-export default config
-```
-
-## STEP 10: SETUP INSTRUCTIONS FOR USER
-
-After you build all this, give me these instructions:
+## STEP 8: DEPLOYMENT INSTRUCTIONS
 
 ### 1. Create Supabase Project
-1. Go to https://supabase.com and create a new project
-2. Copy the Project URL and anon key from Settings → API
-3. Copy the service_role key (keep this secret!)
+1. Go to https://supabase.com
+2. Create new project
+3. Copy URL, anon key, and service role key
 
 ### 2. Run Database Schema
-1. Go to Supabase → SQL Editor
-2. Paste the contents of `supabase/schema.sql`
-3. Click "Run"
-
-### 3. Get API Keys
-- **OpenAI:** https://platform.openai.com/api-keys
-- **Anthropic:** https://console.anthropic.com/settings/keys
-- **Google AI:** https://aistudio.google.com/app/apikey
-
-### 4. Configure Environment
-1. Copy `.env.example` to `.env.local`
-2. Fill in all the API keys
-
-### 5. Run Locally
-```bash
-npm run dev
+1. Go to SQL Editor in Supabase
+2. Paste the entire schema from Step 3
+3. Run it
+4. Then run:
+```sql
+ALTER DATABASE postgres SET "app.settings.supabase_url" = 'https://YOUR_PROJECT.supabase.co';
+ALTER DATABASE postgres SET "app.settings.service_role_key" = 'YOUR_SERVICE_ROLE_KEY';
 ```
-Open http://localhost:3000
 
-### 6. Deploy to Vercel
+### 3. Deploy Edge Function
+```bash
+cd your-project
+npx supabase link --project-ref YOUR_PROJECT_REF
+npx supabase secrets set OPENAI_API_KEY=sk-...
+npx supabase secrets set ANTHROPIC_API_KEY=sk-ant-...
+npx supabase secrets set GEMINI_API_KEY=AIza...
+npx supabase functions deploy generate-plan
+```
+
+### 4. Configure Vercel
 1. Push to GitHub
 2. Import in Vercel
-3. Add environment variables in Vercel dashboard
+3. Add environment variables:
+   - NEXT_PUBLIC_SUPABASE_URL
+   - NEXT_PUBLIC_SUPABASE_ANON_KEY
+   - SUPABASE_SERVICE_ROLE_KEY
 4. Deploy
 
-## IMPORTANT NOTES
+### 5. Test
+1. Go to your Vercel URL
+2. Click "Generate New Plan"
+3. Select a diagnosis
+4. Watch the status tracker update in real-time
+5. Review the generated plan
 
-1. **API keys are NEVER stored in Supabase** - they stay in Vercel environment variables
-2. The free Vercel tier has a 10-second function timeout - if generation takes longer, it will fail. Consider using edge functions or upgrading to Pro for 60-second timeout.
-3. Start with `gpt-4o` since `gpt-5.2` may not be available via API yet. Update the model name when available.
-4. The UI is intentionally simple and clean - it can be enhanced later.
+---
 
-Now build all of this. Create each file with the complete code. Do not skip any files. Ask me to fill in environment variables when done.
+## COST SUMMARY
+
+| Model | Role | Cost per Plan |
+|-------|------|---------------|
+| GPT-4o | Generation | ~$0.15 |
+| Claude Sonnet 4 | Clinical verification | ~$0.08 |
+| Gemini 1.5 Pro | Citation verification | ~$0.04 |
+| **Total** | | **~$0.27** |
+
+---
+
+## TROUBLESHOOTING
+
+**If Edge Function times out:**
+- Check Supabase logs: Dashboard → Edge Functions → Logs
+- Increase timeout in Supabase settings
+
+**If status stuck at "queued":**
+- Check if Edge Function was triggered
+- Verify database trigger is set up correctly
+- Manually call: `curl -X POST https://YOUR_PROJECT.supabase.co/functions/v1/generate-plan -H "Authorization: Bearer YOUR_ANON_KEY" -d '{"plan_id":"..."}'`
+
+**If API keys not working:**
+- Verify they're set in Supabase secrets (not just env vars)
+- Check Edge Function logs for specific errors
+
+Now build all of this. Create each file completely. Ask me to fill in environment variables when done.
