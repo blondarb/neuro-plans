@@ -27,11 +27,13 @@ These clinical decision support templates have been reviewed and approved for cl
 
 ---
 
-## Neuropathy
+## Neuropathy & Neuromuscular
 
 | Plan | Setting Coverage | Status |
 |------|------------------|--------|
 | [Peripheral Neuropathy - New Diagnosis](peripheral-neuropathy.md) | ED, HOSP, OPD, ICU | :material-check-circle:{ .approved } Approved |
+| [Guillain-Barré Syndrome](guillain-barre-syndrome.md) | ED, HOSP, ICU | :material-check-circle:{ .approved } Approved |
+| [Myasthenia Gravis - Crisis](myasthenia-gravis-crisis.md) | ED, HOSP, ICU | :material-check-circle:{ .approved } Approved |
 
 ---
 
@@ -43,16 +45,19 @@ These clinical decision support templates have been reviewed and approved for cl
 
 ---
 
+## CNS Infections & Encephalitis
+
+| Plan | Setting Coverage | Status |
+|------|------------------|--------|
+| [Bacterial Meningitis](bacterial-meningitis.md) | ED, HOSP, ICU | :material-check-circle:{ .approved } Approved |
+| [HSV Encephalitis](hsv-encephalitis.md) | ED, HOSP, ICU | :material-check-circle:{ .approved } Approved |
+| [Autoimmune Encephalitis](autoimmune-encephalitis.md) | ED, HOSP, ICU | :material-check-circle:{ .approved } Approved |
+
+---
+
 ## Coming Soon
 
 See [Drafts for Review](../drafts/index.md) for plans pending approval.
-
-High-priority plans in development:
-
-- Guillain-Barré Syndrome
-- Myasthenia Gravis - Exacerbation
-- Bacterial Meningitis
-- HSV Encephalitis
 
 See the [full roadmap](../references/tracker.md) for all planned templates.
 
