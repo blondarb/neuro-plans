@@ -3,20 +3,12 @@ title: "Parkinson's Disease"
 description: "Clinical decision support for Parkinson's disease diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD"
-status: draft
+status: approved
 tags:
   - movement-disorders
   - parkinson
   - outpatient
 ---
-
-<div class="draft-warning-banner">
-  <div class="icon">⚠️</div>
-  <div class="content">
-    <div class="title">DRAFT - Pending Review</div>
-    <div class="description">This plan requires physician review before clinical use.</div>
-  </div>
-</div>
 
 # Parkinson's Disease
 
@@ -24,7 +16,7 @@ tags:
 **ICD-10:** G20 (Parkinson's disease)
 **SCOPE:** Diagnosis confirmation, dopaminergic therapy initiation and optimization, motor fluctuation management, and non-motor symptom treatment. Excludes Parkinson-plus syndromes (MSA, PSP, CBD, DLB - separate protocols).
 
-**STATUS:** Draft - Pending Review
+**STATUS:** Approved
 
 ---
 

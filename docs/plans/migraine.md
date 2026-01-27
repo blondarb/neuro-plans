@@ -3,7 +3,7 @@ title: "Migraine"
 description: "Clinical decision support for migraine diagnosis and management across care settings"
 version: "1.0"
 setting: "ED, HOSP, OPD"
-status: draft
+status: approved
 tags:
   - headache
   - migraine
@@ -11,21 +11,13 @@ tags:
   - emergency
 ---
 
-<div class="draft-warning-banner">
-  <div class="icon">⚠️</div>
-  <div class="content">
-    <div class="title">DRAFT - Pending Review</div>
-    <div class="description">This plan requires physician review before clinical use.</div>
-  </div>
-</div>
-
 # Migraine
 
 **DIAGNOSIS:** Migraine
 **ICD-10:** G43.909 (Migraine, unspecified, not intractable, without status migrainosus)
 **SCOPE:** Acute migraine treatment, preventive therapy initiation, and chronic migraine management. Excludes hemiplegic migraine, migraine with brainstem aura (separate protocols).
 
-**STATUS:** Draft - Pending Review
+**STATUS:** Approved
 
 ---
 

@@ -115,16 +115,25 @@ class MarkdownParser:
 
     def _extract_title(self) -> str:
         """Extract title from frontmatter or first heading."""
-        # Try frontmatter first
-        frontmatter_match = re.search(r'^---\s*\n.*?title:\s*["\']?([^"\'\n]+)["\']?\s*\n.*?---',
+        # Try frontmatter first - handle quoted titles with apostrophes
+        frontmatter_match = re.search(r'^---\s*\n.*?title:\s*"([^"\n]+)"',
                                        self.content, re.DOTALL)
         if frontmatter_match:
             return frontmatter_match.group(1).strip()
 
-        # Fall back to DIAGNOSIS line
-        diagnosis_match = re.search(r'DIAGNOSIS:\s*(.+)', self.content)
+        # Try single-quoted frontmatter title
+        frontmatter_match = re.search(r"^---\s*\n.*?title:\s*'([^'\n]+)'",
+                                       self.content, re.DOTALL)
+        if frontmatter_match:
+            return frontmatter_match.group(1).strip()
+
+        # Fall back to DIAGNOSIS line (strip bold markdown markers)
+        diagnosis_match = re.search(r'DIAGNOSIS:\s*\*?\*?\s*(.+)', self.content)
         if diagnosis_match:
-            return diagnosis_match.group(1).strip()
+            title = diagnosis_match.group(1).strip()
+            # Remove any trailing bold markers
+            title = re.sub(r'^\*+\s*', '', title)
+            return title
 
         # Fall back to first H1
         h1_match = re.search(r'^#\s+(.+)$', self.content, re.MULTILINE)
@@ -853,18 +862,27 @@ class ParityChecker:
         md_title = None
         md_content = self.markdown_path.read_text(encoding='utf-8')
 
-        # Try frontmatter title first
+        # Try frontmatter title first - handle quoted titles with apostrophes
         import re
-        frontmatter_match = re.search(r'^---\s*\n.*?title:\s*["\']?([^"\'\n]+)["\']?\s*\n.*?---',
+        frontmatter_match = re.search(r'^---\s*\n.*?title:\s*"([^"\n]+)"',
                                        md_content, re.DOTALL)
         if frontmatter_match:
             md_title = frontmatter_match.group(1).strip()
 
-        # Fall back to DIAGNOSIS line
+        # Try single-quoted frontmatter title
         if not md_title:
-            diagnosis_match = re.search(r'DIAGNOSIS:\s*(.+)', md_content)
+            frontmatter_match = re.search(r"^---\s*\n.*?title:\s*'([^'\n]+)'",
+                                           md_content, re.DOTALL)
+            if frontmatter_match:
+                md_title = frontmatter_match.group(1).strip()
+
+        # Fall back to DIAGNOSIS line (strip bold markdown markers)
+        if not md_title:
+            diagnosis_match = re.search(r'DIAGNOSIS:\s*\*?\*?\s*(.+)', md_content)
             if diagnosis_match:
                 md_title = diagnosis_match.group(1).strip()
+                # Remove any trailing bold markers
+                md_title = re.sub(r'^\*+\s*', '', md_title)
 
         # Find the plan by matching title from markdown
         plan_data = None
@@ -942,6 +960,7 @@ class ParityChecker:
 
             # General section name mappings
             'essential/core labs': 'core labs',
+            'essential/core labs (reversible causes screen)': 'core labs',
             'core labs': 'core labs',
             'extended workup': 'extended workup',
             'extended workup (second-line)': 'extended workup',

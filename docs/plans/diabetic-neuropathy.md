@@ -3,7 +3,7 @@ title: "Diabetic Neuropathy"
 description: "Clinical decision support for diabetic peripheral neuropathy diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD"
-status: draft
+status: approved
 tags:
   - neuropathy
   - diabetes
@@ -11,21 +11,13 @@ tags:
   - outpatient
 ---
 
-<div class="draft-warning-banner">
-  <div class="icon">⚠️</div>
-  <div class="content">
-    <div class="title">DRAFT - Pending Review</div>
-    <div class="description">This plan requires physician review before clinical use.</div>
-  </div>
-</div>
-
 # Diabetic Neuropathy
 
 **DIAGNOSIS:** Diabetic Peripheral Neuropathy
 **ICD-10:** G63.2 (Diabetic polyneuropathy); E11.42 (Type 2 DM with diabetic polyneuropathy); E10.42 (Type 1 DM with diabetic polyneuropathy)
 **SCOPE:** Distal symmetric polyneuropathy (most common), painful diabetic neuropathy treatment, foot care, and screening for other diabetic neuropathy types. Excludes diabetic amyotrophy (separate protocol) and autonomic neuropathy (mentioned but not primary focus).
 
-**STATUS:** Draft - Pending Review
+**STATUS:** Approved
 
 ---
 

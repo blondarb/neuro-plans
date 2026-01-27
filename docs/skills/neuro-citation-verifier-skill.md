@@ -59,6 +59,55 @@ Citation to verify: "Dyck PJ et al. Neurology 1993" (diabetes polyneuropathy)
 
 ---
 
+## CRITICAL: PMID Content Verification
+
+### Why PMIDs Get Wrong
+
+PMIDs are assigned sequentially. Papers published in the same journal issue often have **consecutive PMIDs**. This leads to common errors:
+
+| Error Type | Example | How It Happens |
+|------------|---------|----------------|
+| Off-by-one | PMID 15590952 vs 15590953 | Two NEJM papers in same issue (Fahn ELLDOPA vs Emre rivastigmine) |
+| Similar topic | PMID 8869765 vs 8792038 | Both 1996 Cephalalgia papers (CGRP vs Magnesium) |
+| Same author, different study | Multiple Cochrane reviews | Author has many systematic reviews |
+| Wrong section | PMID 38078586 vs 38078577 | ADA Standards Section 6 vs Section 12 |
+
+### Mandatory PMID Verification Checklist
+
+For EVERY PMID, you MUST verify:
+
+- [ ] **Title matches** - The actual paper title supports the claim
+- [ ] **Authors match** - First/last author names are correct
+- [ ] **Journal matches** - Published in the claimed journal
+- [ ] **Year matches** - Publication year is correct
+- [ ] **Content supports claim** - The finding you're citing actually exists in this paper
+
+### Search Pattern for PMID Verification
+
+```
+Search: "PMID [number] [author name] [journal] [year] [topic]"
+```
+
+Example: `"PMID 8792038 Peikert Cephalalgia 1996 magnesium migraine"`
+
+If the search doesn't return results confirming the paper matches your claim, the PMID is likely wrong.
+
+### Use the Citation Verification Script
+
+Run `scripts/verify_citations.py` to extract all PMIDs from a plan:
+
+```bash
+# Single plan
+python scripts/verify_citations.py docs/plans/migraine.md
+
+# All approved plans
+python scripts/verify_citations.py --all
+```
+
+This outputs all citations with their claimed content, making it easy to verify each PMID systematically.
+
+---
+
 ## When to Use
 
 Run this skill AFTER:
@@ -428,6 +477,12 @@ This data helps improve the builder and checker skills over time.
 When a source cannot be verified due to access limitations, recommend physician verification or suggest alternative citable sources.
 
 ## Change Log
+
+**v1.3 (January 2026)**
+- Added CRITICAL section on PMID content verification with common error types
+- Added mandatory PMID verification checklist
+- Documented the `scripts/verify_citations.py` helper tool
+- Added examples of off-by-one and consecutive PMID errors
 
 **v1.2 (January 2026)**
 - Added required verification logging to `docs/logs/citation-verification-log.md`
