@@ -22,12 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| Migraine | [`migraine.md`](migraine.md) | `pending` | — | 2026-01-27 |
-| Transient Ischemic Attack (TIA) | [`tia.md`](tia.md) | `pending` | — | 2026-01-27 |
-| Parkinson's Disease | [`parkinsons-disease.md`](parkinsons-disease.md) | `pending` | — | 2026-01-27 |
-| Dementia Evaluation | [`dementia-evaluation.md`](dementia-evaluation.md) | `pending` | — | 2026-01-27 |
-| Essential Tremor | [`essential-tremor.md`](essential-tremor.md) | `pending` | — | 2026-01-27 |
-| Diabetic Neuropathy | [`diabetic-neuropathy.md`](diabetic-neuropathy.md) | `pending` | — | 2026-01-27 |
+| *(none)* | — | — | — | — |
 
 ---
 
@@ -44,6 +39,12 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | Bacterial Meningitis | [`bacterial-meningitis.md`](../plans/bacterial-meningitis.md) | 2026-01-26 | 90%+ |
 | HSV Encephalitis | [`hsv-encephalitis.md`](../plans/hsv-encephalitis.md) | 2026-01-26 | 90%+ |
 | Autoimmune Encephalitis | [`autoimmune-encephalitis.md`](../plans/autoimmune-encephalitis.md) | 2026-01-26 | 90%+ |
+| Migraine | [`migraine.md`](../plans/migraine.md) | 2026-01-27 | 90%+ |
+| Transient Ischemic Attack (TIA) | [`tia.md`](../plans/tia.md) | 2026-01-27 | 90%+ |
+| Parkinson's Disease | [`parkinsons-disease.md`](../plans/parkinsons-disease.md) | 2026-01-27 | 90%+ |
+| Dementia Evaluation | [`dementia-evaluation.md`](../plans/dementia-evaluation.md) | 2026-01-27 | 90%+ |
+| Essential Tremor | [`essential-tremor.md`](../plans/essential-tremor.md) | 2026-01-27 | 90%+ |
+| Diabetic Neuropathy | [`diabetic-neuropathy.md`](../plans/diabetic-neuropathy.md) | 2026-01-27 | 90%+ |
 
 ---
 

@@ -32,6 +32,7 @@ These clinical decision support templates have been reviewed and approved for cl
 | Plan | Setting Coverage | Status |
 |------|------------------|--------|
 | [Peripheral Neuropathy - New Diagnosis](peripheral-neuropathy.md) | ED, HOSP, OPD, ICU | :material-check-circle:{ .approved } Approved |
+| [Diabetic Neuropathy](diabetic-neuropathy.md) | ED, HOSP, OPD | :material-check-circle:{ .approved } Approved |
 | [Guillain-Barré Syndrome](guillain-barre-syndrome.md) | ED, HOSP, ICU | :material-check-circle:{ .approved } Approved |
 | [Myasthenia Gravis - Crisis](myasthenia-gravis-crisis.md) | ED, HOSP, ICU | :material-check-circle:{ .approved } Approved |
 
@@ -42,6 +43,32 @@ These clinical decision support templates have been reviewed and approved for cl
 | Plan | Setting Coverage | Status |
 |------|------------------|--------|
 | [Acute Ischemic Stroke](acute-ischemic-stroke.md) | ED, HOSP, OPD, ICU | :material-check-circle:{ .approved } Approved |
+| [Transient Ischemic Attack (TIA)](tia.md) | ED, HOSP, OPD | :material-check-circle:{ .approved } Approved |
+
+---
+
+## Headache Disorders
+
+| Plan | Setting Coverage | Status |
+|------|------------------|--------|
+| [Migraine](migraine.md) | ED, HOSP, OPD | :material-check-circle:{ .approved } Approved |
+
+---
+
+## Movement Disorders
+
+| Plan | Setting Coverage | Status |
+|------|------------------|--------|
+| [Parkinson's Disease](parkinsons-disease.md) | ED, HOSP, OPD | :material-check-circle:{ .approved } Approved |
+| [Essential Tremor](essential-tremor.md) | OPD | :material-check-circle:{ .approved } Approved |
+
+---
+
+## Cognitive Disorders
+
+| Plan | Setting Coverage | Status |
+|------|------------------|--------|
+| [Dementia Evaluation](dementia-evaluation.md) | HOSP, OPD | :material-check-circle:{ .approved } Approved |
 
 ---
 

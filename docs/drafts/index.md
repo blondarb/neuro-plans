@@ -23,12 +23,7 @@ These clinical plans are pending physician review and approval. Please review ea
 
 | Plan | Category | Pipeline Status | Last Updated |
 |------|----------|-----------------|--------------|
-| [Migraine](migraine.md) | Headache | :material-file-document-edit: Needs Review | 2026-01-27 |
-| [Transient Ischemic Attack (TIA)](tia.md) | Cerebrovascular | :material-file-document-edit: Needs Review | 2026-01-27 |
-| [Parkinson's Disease](parkinsons-disease.md) | Movement Disorders | :material-file-document-edit: Needs Review | 2026-01-27 |
-| [Dementia Evaluation](dementia-evaluation.md) | Cognitive | :material-file-document-edit: Needs Review | 2026-01-27 |
-| [Essential Tremor](essential-tremor.md) | Movement Disorders | :material-file-document-edit: Needs Review | 2026-01-27 |
-| [Diabetic Neuropathy](diabetic-neuropathy.md) | Neuropathy | :material-file-document-edit: Needs Review | 2026-01-27 |
+| *(No drafts pending review)* | — | — | — |
 
 ---
 
