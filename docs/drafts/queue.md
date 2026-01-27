@@ -22,7 +22,12 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| *(none)* | — | — | — | — |
+| MS - Chronic Management | [`ms-chronic-management.md`](ms-chronic-management.md) | `pending` | — | 2026-01-27 |
+| CIDP | [`cidp.md`](cidp.md) | `pending` | — | 2026-01-27 |
+| Cluster Headache | [`cluster-headache.md`](cluster-headache.md) | `pending` | — | 2026-01-27 |
+| Medication Overuse Headache | [`medication-overuse-headache.md`](medication-overuse-headache.md) | `pending` | — | 2026-01-27 |
+| Restless Legs Syndrome | [`restless-legs-syndrome.md`](restless-legs-syndrome.md) | `pending` | — | 2026-01-27 |
+| Mild Cognitive Impairment | [`mild-cognitive-impairment.md`](mild-cognitive-impairment.md) | `pending` | — | 2026-01-27 |
 
 ---
 

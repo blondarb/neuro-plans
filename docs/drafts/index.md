@@ -23,7 +23,12 @@ These clinical plans are pending physician review and approval. Please review ea
 
 | Plan | Category | Pipeline Status | Last Updated |
 |------|----------|-----------------|--------------|
-| *(No drafts pending review)* | — | — | — |
+| [MS - Chronic Management](ms-chronic-management.md) | Demyelinating | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [CIDP](cidp.md) | Neuromuscular | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Cluster Headache](cluster-headache.md) | Headache | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Medication Overuse Headache](medication-overuse-headache.md) | Headache | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Mild Cognitive Impairment](mild-cognitive-impairment.md) | Cognitive | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Restless Legs Syndrome](restless-legs-syndrome.md) | Movement/Sleep Disorders | :material-file-document-edit: Needs Review | 2026-01-27 |
 
 ---
 
