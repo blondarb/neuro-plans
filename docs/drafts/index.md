@@ -23,11 +23,12 @@ These clinical plans are pending physician review and approval. Please review ea
 
 | Plan | Category | Pipeline Status | Last Updated |
 |------|----------|-----------------|--------------|
-| [Guillain-Barré Syndrome](guillain-barre-syndrome.md) | Neuromuscular | :material-file-document-edit: Needs Review | 2026-01-24 |
-| [Myasthenia Gravis - Crisis](myasthenia-gravis-crisis.md) | Neuromuscular | :material-file-document-edit: Needs Review | 2026-01-24 |
-| [Bacterial Meningitis](bacterial-meningitis.md) | CNS Infections | :material-file-document-edit: Needs Review | 2026-01-24 |
-| [HSV Encephalitis](hsv-encephalitis.md) | CNS Infections | :material-file-document-edit: Needs Review | 2026-01-24 |
-| [Autoimmune Encephalitis](autoimmune-encephalitis.md) | Autoimmune/Inflammatory | :material-file-document-edit: Needs Review | 2026-01-24 |
+| [Migraine](migraine.md) | Headache | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Transient Ischemic Attack (TIA)](tia.md) | Cerebrovascular | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Parkinson's Disease](parkinsons-disease.md) | Movement Disorders | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Dementia Evaluation](dementia-evaluation.md) | Cognitive | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Essential Tremor](essential-tremor.md) | Movement Disorders | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Diabetic Neuropathy](diabetic-neuropathy.md) | Neuropathy | :material-file-document-edit: Needs Review | 2026-01-27 |
 
 ---
 
