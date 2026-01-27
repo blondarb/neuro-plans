@@ -242,12 +242,12 @@ tags:
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Duloxetine for painful DPN (FDA-approved) | Class I, Level A | [Wernicke et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/17060567/) |
-| Pregabalin for painful DPN (FDA-approved) | Class I, Level A | [Richter et al. Cochrane 2019](https://pubmed.ncbi.nlm.nih.gov/31425635/) |
+| Pregabalin for painful DPN (FDA-approved) | Class I, Level A | [Derry et al. Cochrane 2019](https://pubmed.ncbi.nlm.nih.gov/30673120/) |
 | Gabapentin effective for DPN | Class II, Level B | [Wiffen et al. Cochrane 2017](https://pubmed.ncbi.nlm.nih.gov/28597471/) |
 | Tricyclic antidepressants effective | Class II, Level B | [Moore et al. Cochrane 2015](https://pubmed.ncbi.nlm.nih.gov/25879104/) |
 | Glycemic control prevents neuropathy progression | Class I, Level A | [DCCT/EDIC Research Group. NEJM 1993](https://pubmed.ncbi.nlm.nih.gov/8366922/) |
 | Alpha-lipoic acid may improve symptoms | Class II, Level B | [Ziegler et al. Diabetes Care 2011](https://pubmed.ncbi.nlm.nih.gov/21994426/) |
-| Comprehensive foot exam reduces amputations | Class II, Level B | [ADA Standards of Care 2024](https://pubmed.ncbi.nlm.nih.gov/38078586/) |
+| Comprehensive foot exam reduces amputations | Class II, Level B | [ADA Standards of Care 2024 (Section 12)](https://pubmed.ncbi.nlm.nih.gov/38078577/) |
 | Tapentadol effective for DPN (FDA-approved) | Class I, Level A | [Vinik et al. Diabetes Care 2014](https://pubmed.ncbi.nlm.nih.gov/24947790/) |
 | Spinal cord stimulation for refractory DPN | Class II, Level B | [Slangen et al. Diabetes Care 2014](https://pubmed.ncbi.nlm.nih.gov/24947789/) |
 | Capsaicin 8% patch effective | Class I, Level A | [Simpson et al. Pain 2017](https://pubmed.ncbi.nlm.nih.gov/27479770/) |
