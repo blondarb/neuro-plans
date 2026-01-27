@@ -1,0 +1,1391 @@
+{
+  "id": "restless-legs-syndrome",
+  "title": "Restless Legs Syndrome",
+  "version": "1.0",
+  "icd10": [
+    "** G25.81 (Restless legs syndrome)"
+  ],
+  "scope": "** Diagnosis confirmation using IRLSSG criteria, workup for secondary causes, pharmacologic and non-pharmacologic management, and augmentation prevention/treatment. Primarily outpatient management with limited ED/HOSP coverage for severe refractory cases.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Ferritin",
+          "rationale": "Iron deficiency is most common treatable cause; target >75 ng/mL for RLS (higher than general population)",
+          "target": ">75 ng/mL (ideally >100)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Transferrin saturation (TSAT)",
+          "rationale": "Iron availability; TSAT <20% suggests iron deficiency even with normal ferritin",
+          "target": ">20%",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum iron",
+          "rationale": "Complete iron panel assessment",
+          "target": "Normal range",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TIBC",
+          "rationale": "Iron binding capacity; elevated in iron deficiency",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CBC with differential",
+          "rationale": "Anemia evaluation; MCV for iron vs B12 deficiency",
+          "target": "Normal; MCV 80-100 fL",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "BMP (Creatinine, BUN, electrolytes)",
+          "rationale": "Renal function (uremia causes secondary RLS)",
+          "target": "eGFR >60 mL/min",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH",
+          "rationale": "Thyroid dysfunction can mimic or exacerbate RLS",
+          "target": "0.4-4.0 mIU/L",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c",
+          "rationale": "Diabetes screening (diabetic neuropathy commonly coexists)",
+          "target": "<5.7% (normal); <7% if diabetic",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fasting glucose",
+          "rationale": "Diabetes screening",
+          "target": "70-99 mg/dL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Vitamin B12",
+          "rationale": "Deficiency causes neuropathy and may worsen RLS",
+          "target": ">300 pg/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Folate",
+          "rationale": "Deficiency associated with RLS; often low with B12",
+          "target": ">3 ng/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Magnesium",
+          "rationale": "Deficiency can cause leg cramps and muscle symptoms",
+          "target": "1.8-2.4 mg/dL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CRP, ESR",
+          "rationale": "Inflammatory markers; chronic inflammation affects iron metabolism",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Comprehensive metabolic panel",
+          "rationale": "Hepatic function; renal clearance",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregnancy test (if applicable)",
+          "rationale": "RLS common in pregnancy (up to 25%); affects treatment choices",
+          "target": "Negative or positive (determines treatment)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "24-hour urine protein",
+          "rationale": "Nephrotic syndrome workup if renal disease suspected",
+          "target": "<150 mg/24hr",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Parathyroid hormone",
+          "rationale": "Hyperparathyroidism can cause RLS",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-GAD65 antibodies",
+          "rationale": "Autoimmune etiology in atypical cases",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic panel",
+          "rationale": "Occult malignancy with neurological symptoms",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Hemoglobin electrophoresis",
+          "rationale": "Thalassemia trait; chronic hemolytic conditions",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin D",
+          "rationale": "Deficiency associated with RLS in some studies",
+          "target": ">30 ng/mL",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Clinical examination and history",
+          "timing": "At evaluation",
+          "target": "IRLSSG criteria met; no mimicking conditions",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IRLS Rating Scale (IRLS)",
+          "timing": "At diagnosis and follow-up",
+          "target": "Score 0-40; mild <10, moderate 11-20, severe 21-30, very severe >30",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Polysomnography (PSG)",
+          "timing": "If sleep apnea suspected; PLMS quantification",
+          "target": "PLMI <15/hr normal; RLS typically >15/hr",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EMG/Nerve conduction studies",
+          "timing": "If peripheral neuropathy suspected (numbness, weakness, areflexia)",
+          "target": "Normal or peripheral neuropathy pattern",
+          "contraindications": "Pacemaker (relative)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Actigraphy",
+          "timing": "Objective assessment of sleep and limb movements",
+          "target": "Activity pattern consistent with RLS",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "MRI Brain",
+          "timing": "Atypical presentation; concern for structural lesion or secondary parkinsonism",
+          "target": "Normal",
+          "contraindications": "MRI contraindications",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI Lumbar spine",
+          "timing": "Radiculopathy suspected; nerve root compression symptoms",
+          "target": "Normal or explains symptoms",
+          "contraindications": "MRI contraindications",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Suggested immobilization test (SIT)",
+          "timing": "Research/specialized; objective RLS measurement",
+          "target": "Increased leg movements during immobility",
+          "contraindications": "Time-intensive",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent (Severe Symptom Relief)": [
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Acute severe symptoms requiring immediate relief",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              },
+              {
+                "text": "600 mg",
+                "orderSentence": "Gabapentin 600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "300-600 mg PO for immediate symptom relief; may repeat once in 4-6 hours",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment (adjust dose)",
+          "monitoring": "Sedation, dizziness",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Acute severe symptoms; faster onset than gabapentin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              },
+              {
+                "text": "150 mg",
+                "orderSentence": "Pregabalin 150 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "75-150 mg PO for immediate relief; onset 30-60 min",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Severe renal impairment (adjust dose)",
+          "monitoring": "Sedation, dizziness",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxycodone (severe refractory)",
+          "route": "PO",
+          "indication": "Severe acute symptoms refractory to alpha-2-delta ligands",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Oxycodone (severe refractory) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mg PO once for severe refractory symptoms; short-term only",
+            "orderSentence": "Oxycodone (severe refractory) 5 mg PO"
+          },
+          "contraindications": "Respiratory depression; opioid use disorder; concurrent CNS depressants",
+          "monitoring": "Respiratory status, sedation",
+          "ED": "EXT",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "First-line Treatments (Iron Therapy)": [
+        {
+          "item": "Ferrous sulfate + Vitamin C",
+          "route": "PO",
+          "indication": "First-line if ferritin <75 ng/mL; oral iron repletion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "325 mg with 100 mg vitamin C daily",
+                "orderSentence": "Ferrous sulfate + Vitamin C 325 mg with 100 mg vitamin C daily PO"
+              },
+              {
+                "text": "325 mg with 200 mg vitamin C daily",
+                "orderSentence": "Ferrous sulfate + Vitamin C 325 mg with 200 mg vitamin C daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "325 mg ferrous sulfate (65 mg elemental iron) with 100-200 mg vitamin C on empty stomach every other day; evening dosing preferred; treat 3-4 months minimum",
+            "orderSentence": "Ferrous sulfate + Vitamin C 325 mg with 100 mg vitamin C daily PO"
+          },
+          "contraindications": "Hemochromatosis; iron overload; GI bleeding",
+          "monitoring": "Ferritin, TSAT at 3-4 months; GI tolerability",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ferrous gluconate",
+          "route": "PO",
+          "indication": "Alternative oral iron if ferrous sulfate not tolerated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "325 mg daily",
+                "orderSentence": "Ferrous gluconate 325 mg daily PO"
+              },
+              {
+                "text": "325 mg BID",
+                "orderSentence": "Ferrous gluconate 325 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "325 mg (38 mg elemental iron) daily to BID; better GI tolerability; lower elemental iron",
+            "orderSentence": "Ferrous gluconate 325 mg daily PO"
+          },
+          "contraindications": "Same as above",
+          "monitoring": "Same as above",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Iron sucrose",
+          "route": "IV",
+          "indication": "Oral iron failure or intolerance; rapid repletion needed; ferritin <75",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg per infusion",
+                "orderSentence": "Iron sucrose 200 mg per infusion IV"
+              },
+              {
+                "text": "200 mg x 5 doses",
+                "orderSentence": "Iron sucrose 200 mg x 5 doses IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "200 mg IV over 15-30 min; give 1000 mg total in 5 divided doses over 2 weeks",
+            "orderSentence": "Iron sucrose 200 mg per infusion IV"
+          },
+          "contraindications": "Iron overload; hypersensitivity",
+          "monitoring": "Ferritin, TSAT at 4-8 weeks; infusion reaction monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ferric carboxymaltose (Injectafer)",
+          "route": "IV",
+          "indication": "Rapid iron repletion; single or two-dose regimen preferred",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "750 mg x 2 doses",
+                "orderSentence": "Ferric carboxymaltose (Injectafer) 750 mg x 2 doses IV"
+              },
+              {
+                "text": "1000 mg x 1 dose",
+                "orderSentence": "Ferric carboxymaltose (Injectafer) 1000 mg x 1 dose IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "750 mg IV, repeat in 1 week (max 1500 mg total); OR 1000 mg single dose if weight >50 kg",
+            "orderSentence": "Ferric carboxymaltose (Injectafer) 750 mg x 2 doses IV"
+          },
+          "contraindications": "Hypersensitivity to IV iron",
+          "monitoring": "Hypophosphatemia (common); infusion reaction; ferritin at 4-8 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ferric derisomaltose (Monoferric)",
+          "route": "IV",
+          "indication": "Single-dose IV iron repletion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg single dose",
+                "orderSentence": "Ferric derisomaltose (Monoferric) 1000 mg single dose IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV over 20+ min as single dose; may repeat if needed after 4 weeks",
+            "orderSentence": "Ferric derisomaltose (Monoferric) 1000 mg single dose IV"
+          },
+          "contraindications": "Same as ferric carboxymaltose",
+          "monitoring": "Same; lower hypophosphatemia risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "First-line Treatments (Alpha-2-Delta Ligands - Preferred)": [
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "First-line pharmacotherapy; no augmentation risk; good for pain component",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg qHS",
+                "orderSentence": "Gabapentin 300 mg qHS PO"
+              },
+              {
+                "text": "300 mg BID",
+                "orderSentence": "Gabapentin 300 mg BID PO"
+              },
+              {
+                "text": "600 mg qHS",
+                "orderSentence": "Gabapentin 600 mg qHS PO"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Gabapentin 300 mg TID PO"
+              },
+              {
+                "text": "600 mg BID",
+                "orderSentence": "Gabapentin 600 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q3-7 days; target 600-1800 mg/day in 1-3 doses; max 2400 mg/day; give largest dose in evening",
+            "orderSentence": "Gabapentin 300 mg qHS PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); respiratory depression with opioids",
+          "monitoring": "Sedation, dizziness, peripheral edema, weight gain; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin enacarbil (Horizant)",
+          "route": "PO",
+          "indication": "FDA-approved for RLS; better bioavailability than immediate release gabapentin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "600 mg daily",
+                "orderSentence": "Gabapentin enacarbil (Horizant) 600 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "600 mg PO once daily at 5 PM with food; no titration needed; extended release formulation",
+            "orderSentence": "Gabapentin enacarbil (Horizant) 600 mg daily PO"
+          },
+          "contraindications": "Same as gabapentin; do NOT substitute mg-for-mg with regular gabapentin",
+          "monitoring": "Same as gabapentin",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "First-line; faster onset than gabapentin; helpful if comorbid anxiety or fibromyalgia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg qHS",
+                "orderSentence": "Pregabalin 75 mg qHS PO"
+              },
+              {
+                "text": "150 mg qHS",
+                "orderSentence": "Pregabalin 150 mg qHS PO"
+              },
+              {
+                "text": "75 mg BID",
+                "orderSentence": "Pregabalin 75 mg BID PO"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Pregabalin 150 mg BID PO"
+              },
+              {
+                "text": "300 mg qHS",
+                "orderSentence": "Pregabalin 300 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg qHS; titrate by 75 mg q1wk; target 150-450 mg/day; max 300 mg in evening",
+            "orderSentence": "Pregabalin 75 mg qHS PO"
+          },
+          "contraindications": "Severe renal impairment (adjust dose); avoid abrupt discontinuation",
+          "monitoring": "Same as gabapentin; Schedule V controlled",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line Treatments (Dopamine Agonists - Use with Caution)": [
+        {
+          "item": "Pramipexole (Mirapex)",
+          "route": "PO",
+          "indication": "Alpha-2-delta failure/intolerance; use LOWEST effective dose; augmentation risk ~7%/year",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.125 mg qHS",
+                "orderSentence": "Pramipexole (Mirapex) 0.125 mg qHS PO"
+              },
+              {
+                "text": "0.25 mg qHS",
+                "orderSentence": "Pramipexole (Mirapex) 0.25 mg qHS PO"
+              },
+              {
+                "text": "0.5 mg qHS",
+                "orderSentence": "Pramipexole (Mirapex) 0.5 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.125 mg 2-3 hrs before symptoms; titrate by 0.125 mg q4-7 days; max 0.5 mg/day for RLS (lower than Parkinson's doses)",
+            "orderSentence": "Pramipexole (Mirapex) 0.125 mg qHS PO"
+          },
+          "pretreatment": "Warn patient about augmentation, ICDs",
+          "contraindications": "Severe renal impairment (reduce dose by 50% if CrCl <60); pathological gambling risk",
+          "monitoring": "AUGMENTATION (symptoms earlier, more intense, spread to arms); impulse control disorders; excessive daytime sleepiness; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ropinirole (Requip)",
+          "route": "PO",
+          "indication": "Alpha-2-delta failure/intolerance; augmentation risk similar to pramipexole",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg qHS",
+                "orderSentence": "Ropinirole (Requip) 0.25 mg qHS PO"
+              },
+              {
+                "text": "0.5 mg qHS",
+                "orderSentence": "Ropinirole (Requip) 0.5 mg qHS PO"
+              },
+              {
+                "text": "1 mg qHS",
+                "orderSentence": "Ropinirole (Requip) 1 mg qHS PO"
+              },
+              {
+                "text": "2 mg qHS",
+                "orderSentence": "Ropinirole (Requip) 2 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.25 mg 1-3 hrs before symptoms; titrate by 0.25 mg q2-3 days; max 4 mg/day for RLS",
+            "orderSentence": "Ropinirole (Requip) 0.25 mg qHS PO"
+          },
+          "pretreatment": "Warn patient about augmentation, ICDs",
+          "contraindications": "Hepatic impairment; concurrent CYP1A2 inhibitors (adjust dose)",
+          "monitoring": "Same as pramipexole; nausea common initially",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rotigotine patch (Neupro)",
+          "route": "Transdermal",
+          "indication": "Once-daily patch; less pulsatile dopaminergic stimulation; may reduce augmentation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg/24hr",
+                "orderSentence": "Rotigotine patch (Neupro) 1 mg/24hr Transdermal"
+              },
+              {
+                "text": "2 mg/24hr",
+                "orderSentence": "Rotigotine patch (Neupro) 2 mg/24hr Transdermal"
+              },
+              {
+                "text": "3 mg/24hr",
+                "orderSentence": "Rotigotine patch (Neupro) 3 mg/24hr Transdermal"
+              }
+            ],
+            "route": "Transdermal",
+            "instructions": "Start 1 mg/24hr patch; titrate by 1 mg/24hr weekly; max 3 mg/24hr for RLS",
+            "orderSentence": "Rotigotine patch (Neupro) 1 mg/24hr Transdermal"
+          },
+          "pretreatment": "Warn patient about augmentation, ICDs",
+          "contraindications": "Sulfite sensitivity; MRI (remove patch - contains aluminum)",
+          "monitoring": "Site reactions; augmentation; impulse control disorders",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Third-line/Refractory Treatments": [
+        {
+          "item": "Tramadol",
+          "route": "PO",
+          "indication": "Refractory RLS; failed alpha-2-delta and dopamine agonists",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg qHS",
+                "orderSentence": "Tramadol 50 mg qHS PO"
+              },
+              {
+                "text": "50 mg BID",
+                "orderSentence": "Tramadol 50 mg BID PO"
+              },
+              {
+                "text": "100 mg qHS",
+                "orderSentence": "Tramadol 100 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg qHS; max 100 mg BID; use lowest effective dose",
+            "orderSentence": "Tramadol 50 mg qHS PO"
+          },
+          "contraindications": "Seizure history; concurrent MAOIs/SSRIs (serotonin syndrome); opioid use disorder",
+          "monitoring": "Constipation, sedation, nausea; seizure risk; dependence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxycodone (low-dose)",
+          "route": "PO",
+          "indication": "Severe refractory RLS; augmentation from dopamine agonists",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg qHS",
+                "orderSentence": "Oxycodone (low-dose) 5 mg qHS PO"
+              },
+              {
+                "text": "5 mg BID",
+                "orderSentence": "Oxycodone (low-dose) 5 mg BID PO"
+              },
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Oxycodone (low-dose) 10 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg qHS; max 5-10 mg BID; lowest effective dose; long-term monitoring required",
+            "orderSentence": "Oxycodone (low-dose) 5 mg qHS PO"
+          },
+          "contraindications": "Opioid use disorder; severe respiratory disease; concurrent CNS depressants",
+          "monitoring": "Constipation, sedation, dependence; respiratory depression; prescribe conservatively",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxycodone/naloxone (Targiniq ER)",
+          "route": "PO",
+          "indication": "Refractory RLS with constipation concern",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5/2.5 mg BID",
+                "orderSentence": "Oxycodone/naloxone (Targiniq ER) 5/2.5 mg BID PO"
+              },
+              {
+                "text": "10/5 mg BID",
+                "orderSentence": "Oxycodone/naloxone (Targiniq ER) 10/5 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5/2.5 mg BID; max 20/10 mg BID; naloxone reduces constipation",
+            "orderSentence": "Oxycodone/naloxone (Targiniq ER) 5/2.5 mg BID PO"
+          },
+          "contraindications": "Same as oxycodone",
+          "monitoring": "Same; monitor bowel function",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Methadone",
+          "route": "PO",
+          "indication": "Severe refractory RLS failing other opioids",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg qHS",
+                "orderSentence": "Methadone 5 mg qHS PO"
+              },
+              {
+                "text": "5 mg BID",
+                "orderSentence": "Methadone 5 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mg qHS to BID; requires experienced prescriber; ECG monitoring for QTc",
+            "orderSentence": "Methadone 5 mg qHS PO"
+          },
+          "contraindications": "QTc prolongation; opioid use disorder; respiratory disease",
+          "monitoring": "QTc interval; respiratory status; requires DEA registration",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonazepam",
+          "route": "PO",
+          "indication": "Adjunct for sleep; helps with PLMS-related arousals",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg qHS",
+                "orderSentence": "Clonazepam 0.25 mg qHS PO"
+              },
+              {
+                "text": "0.5 mg qHS",
+                "orderSentence": "Clonazepam 0.5 mg qHS PO"
+              },
+              {
+                "text": "1 mg qHS",
+                "orderSentence": "Clonazepam 1 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.25 mg qHS; max 2 mg qHS; use short-term or intermittently",
+            "orderSentence": "Clonazepam 0.25 mg qHS PO"
+          },
+          "contraindications": "Fall risk in elderly; respiratory depression; substance use history",
+          "monitoring": "Sedation, dependence, falls, cognitive effects; avoid long-term in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonidine",
+          "route": "PO",
+          "indication": "Alternative for mild symptoms; alpha-2 agonist",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg qHS",
+                "orderSentence": "Clonidine 0.1 mg qHS PO"
+              },
+              {
+                "text": "0.2 mg qHS",
+                "orderSentence": "Clonidine 0.2 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.1 mg qHS; max 0.3 mg qHS",
+            "orderSentence": "Clonidine 0.1 mg qHS PO"
+          },
+          "contraindications": "Hypotension; bradycardia",
+          "monitoring": "BP, HR; rebound hypertension if stopped abruptly",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Buprenorphine patch",
+          "route": "Transdermal",
+          "indication": "Severe refractory RLS; concern for opioid misuse",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mcg/hr",
+                "orderSentence": "Buprenorphine patch 5 mcg/hr Transdermal"
+              },
+              {
+                "text": "10 mcg/hr",
+                "orderSentence": "Buprenorphine patch 10 mcg/hr Transdermal"
+              }
+            ],
+            "route": "Transdermal",
+            "instructions": "Start 5 mcg/hr weekly patch; titrate slowly",
+            "orderSentence": "Buprenorphine patch 5 mcg/hr Transdermal"
+          },
+          "contraindications": "Same as other opioids",
+          "monitoring": "Same; requires REMS prescriber certification (changing)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Dipyridamole",
+          "route": "PO",
+          "indication": "Limited evidence; adenosine modulation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg qHS",
+                "orderSentence": "Dipyridamole 100 mg qHS PO"
+              },
+              {
+                "text": "200 mg qHS",
+                "orderSentence": "Dipyridamole 200 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100-200 mg qHS; off-label; variable response",
+            "orderSentence": "Dipyridamole 100 mg qHS PO"
+          },
+          "contraindications": "Hypotension; bleeding disorders",
+          "monitoring": "Headache, hypotension",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Augmentation Management": [
+        {
+          "item": "Dopamine agonist taper",
+          "route": "PO",
+          "indication": "Augmentation from dopamine agonist; must taper slowly",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-25% dose reduction q1-2wk",
+                "orderSentence": "Dopamine agonist taper 10-25% dose reduction q1-2wk PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Reduce dopamine agonist by 10-25% every 1-2 weeks; expect 1-2 weeks worsening (\"washout\"); bridge with alpha-2-delta or opioid",
+            "orderSentence": "Dopamine agonist taper 10-25% dose reduction q1-2wk PO"
+          },
+          "contraindications": "Do NOT stop abruptly (dopamine agonist withdrawal syndrome)",
+          "monitoring": "Worsening symptoms during taper (expected); DAWS symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alpha-2-delta ligand bridge",
+          "route": "PO",
+          "indication": "Cover augmentation symptoms during dopamine agonist taper",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per gabapentin or pregabalin dosing",
+                "orderSentence": "Alpha-2-delta ligand bridge Per gabapentin or pregabalin dosing PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start alpha-2-delta at therapeutic dose before or during dopamine agonist taper; provides symptom coverage",
+            "orderSentence": "Alpha-2-delta ligand bridge Per gabapentin or pregabalin dosing PO"
+          },
+          "contraindications": "Per individual drug",
+          "monitoring": "Sedation; adjust as dopamine agonist tapers",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Low-dose opioid bridge",
+          "route": "PO",
+          "indication": "Severe augmentation; alpha-2-delta insufficient",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per tramadol or oxycodone dosing",
+                "orderSentence": "Low-dose opioid bridge Per tramadol or oxycodone dosing PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Short-term opioid coverage during dopamine agonist washout; plan transition to non-dopaminergic maintenance",
+            "orderSentence": "Low-dose opioid bridge Per tramadol or oxycodone dosing PO"
+          },
+          "contraindications": "History of opioid use disorder",
+          "monitoring": "Dependence; use short-term",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Sleep medicine referral for polysomnography if sleep apnea suspected or PLMS quantification needed",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology/movement disorders consultation for refractory RLS or diagnostic uncertainty",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hematology referral for IV iron infusion coordination or complex iron deficiency management",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management consultation for severe refractory cases requiring opioid therapy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nephrology referral if chronic kidney disease contributing to secondary RLS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry consultation if impulse control disorders develop on dopamine agonist therapy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "OB/GYN coordination for RLS management during pregnancy (common; limits treatment options)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Take iron supplements on an empty stomach every other day (better absorption) with vitamin C; avoid taking with calcium, coffee, or tea",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take evening medications 2-3 hours before typical symptom onset for best effect",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report symptoms spreading to arms, occurring earlier in day, or becoming more intense (signs of augmentation)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report new gambling urges, compulsive shopping, or hypersexuality if taking dopamine agonists (impulse control disorders)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid antihistamines (diphenhydramine, Benadryl) which significantly worsen RLS - use alternatives for allergies or sleep",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Inform prescribers about RLS before starting new medications as many can worsen symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep a symptom diary tracking severity, timing, and potential triggers to optimize treatment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return if symptoms become severe enough to affect sleep, daytime function, or quality of life",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Avoid caffeine especially in afternoon and evening as it worsens RLS symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit or avoid alcohol which disrupts sleep architecture and can worsen RLS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid nicotine/smoking which can exacerbate symptoms through vasoconstriction and sleep disruption",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular moderate exercise (walking, swimming, yoga) earlier in day reduces symptoms; avoid vigorous exercise near bedtime",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain regular sleep schedule with consistent bed and wake times (sleep hygiene)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Leg massage, warm baths, or heating pads in the evening may provide temporary symptomatic relief",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cooling measures (cold compresses, leg wraps) may help some patients",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Mental distraction activities (engaging video games, puzzles) can reduce symptom awareness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Compression stockings or pneumatic compression may provide relief in some patients",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Review all current medications with provider to identify and eliminate RLS-exacerbating drugs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Nocturnal leg cramps",
+      "features": "Painful muscle contraction; visible/palpable muscle tightness; no urge to move",
+      "tests": "Clinical history; no relief with movement"
+    },
+    {
+      "diagnosis": "Peripheral neuropathy",
+      "features": "Numbness, tingling, burning in stocking-glove distribution; not circadian",
+      "tests": "EMG/NCS; exam findings (reflexes, sensation)"
+    },
+    {
+      "diagnosis": "Akathisia",
+      "features": "Inner restlessness; not limited to legs; associated with antipsychotic use",
+      "tests": "Medication history; generalized restlessness"
+    },
+    {
+      "diagnosis": "Positional discomfort",
+      "features": "Relieved by position change; no urge to move specifically",
+      "tests": "Clinical history"
+    },
+    {
+      "diagnosis": "Periodic limb movement disorder (PLMD)",
+      "features": "PLMS without RLS symptoms; bed partner may report jerking",
+      "tests": "PSG shows PLMS; no waking leg discomfort"
+    },
+    {
+      "diagnosis": "Venous insufficiency",
+      "features": "Aching worse with standing; varicosities visible; edema",
+      "tests": "Doppler ultrasound; worse during day"
+    },
+    {
+      "diagnosis": "Arthritis (hip, knee, ankle)",
+      "features": "Joint pain; stiffness; localized to joints",
+      "tests": "X-ray; rheumatologic workup"
+    },
+    {
+      "diagnosis": "Radiculopathy/sciatica",
+      "features": "Dermatomal pattern; worsened by spine movement; back pain",
+      "tests": "MRI spine; positive straight leg raise"
+    },
+    {
+      "diagnosis": "Growing pains (pediatric)",
+      "features": "Children; bilateral leg pain; no urge to move",
+      "tests": "Clinical history; self-limited"
+    },
+    {
+      "diagnosis": "Fibromyalgia",
+      "features": "Widespread pain; tender points; fatigue",
+      "tests": "Clinical criteria; no specific test"
+    },
+    {
+      "diagnosis": "Anxiety/stress-related symptoms",
+      "features": "Generalized restlessness; racing thoughts; no circadian pattern",
+      "tests": "Psychiatric evaluation"
+    },
+    {
+      "diagnosis": "Drug-induced restlessness",
+      "features": "Temporal relationship with offending medication",
+      "tests": "Medication review; trial withdrawal"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Alpha-2-delta ligands (gabapentin, pregabalin) first-line for RLS",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Silber et al. Mayo Clin Proc 2021](https://pubmed.ncbi.nlm.nih.gov/34218864/)"
+    },
+    {
+      "recommendation": "Gabapentin enacarbil FDA-approved for RLS",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Kushida et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19487651/)"
+    },
+    {
+      "recommendation": "Pregabalin effective for RLS",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Allen et al. Sleep Med 2014](https://pubmed.ncbi.nlm.nih.gov/25023924/)"
+    },
+    {
+      "recommendation": "Iron supplementation if ferritin <75 ng/mL",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Allen et al. Sleep Med 2018](https://pubmed.ncbi.nlm.nih.gov/29425576/)"
+    },
+    {
+      "recommendation": "IV iron effective for RLS with iron deficiency",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Trotti et al. J Clin Sleep Med 2012](https://pubmed.ncbi.nlm.nih.gov/22851808/)"
+    },
+    {
+      "recommendation": "Dopamine agonist augmentation risk",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Garcia-Borreguero et al. Sleep Med 2016](https://pubmed.ncbi.nlm.nih.gov/27091377/)"
+    },
+    {
+      "recommendation": "Low-dose opioids for refractory RLS",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Trenkwalder et al. Lancet Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/24140442/)"
+    },
+    {
+      "recommendation": "IRLSSG diagnostic criteria",
+      "evidenceLevel": "Consensus, Level A",
+      "source": "[Allen et al. Sleep Med 2014](https://pubmed.ncbi.nlm.nih.gov/25023924/)"
+    },
+    {
+      "recommendation": "Dopamine agonists effective but augmentation concern",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Silber et al. Mayo Clin Proc 2013](https://pubmed.ncbi.nlm.nih.gov/24012413/)"
+    },
+    {
+      "recommendation": "Pregnancy-associated RLS prevalence up to 25%",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Manconi et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15365141/)"
+    },
+    {
+      "recommendation": "Medications that worsen RLS",
+      "evidenceLevel": "Class II-III, Level B-C",
+      "source": "[Mackie & Winkelman. Drugs 2015](https://pubmed.ncbi.nlm.nih.gov/25899894/)"
+    },
+    {
+      "recommendation": "Long-term management recommendations",
+      "evidenceLevel": "Consensus, Level C",
+      "source": "[Garcia-Borreguero et al. Sleep Med Rev 2013](https://pubmed.ncbi.nlm.nih.gov/23357083/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "IRLS severity scale",
+      "frequency": "Each visit",
+      "action": "Titrate medication; consider alternative agent",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Sleep quality (subjective and actigraphy if available)",
+      "frequency": "Each visit",
+      "action": "Assess compliance; consider adjuncts",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Ferritin level",
+      "frequency": "Every 3-4 months during repletion; annually when stable",
+      "action": "Continue or restart iron supplementation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Transferrin saturation",
+      "frequency": "With ferritin",
+      "action": "Continue iron therapy",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Augmentation assessment",
+      "frequency": "Each visit if on dopamine agonist",
+      "action": "Taper dopamine agonist; switch to non-dopaminergic",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Impulse control disorders (ICDs)",
+      "frequency": "Each visit if on dopamine agonist",
+      "action": "Stop or reduce dopamine agonist",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Daytime somnolence",
+      "frequency": "Each visit",
+      "action": "Reduce dose; evaluate for sleep apnea",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (if on gabapentin/pregabalin)",
+      "frequency": "Annually or with changes",
+      "action": "Dose adjust per renal function",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight, edema (if on gabapentin/pregabalin)",
+      "frequency": "Each visit",
+      "action": "Dose reduction; switch agent",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "QTc (if on methadone)",
+      "frequency": "Baseline, 2-4 weeks, annually",
+      "action": "Reduce dose; consider alternative",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home with outpatient follow-up",
+      "criteria": "Typical RLS diagnosis; initial workup ordered; treatment started or planned; follow-up arranged"
+    },
+    {
+      "disposition": "Outpatient management (primary)",
+      "criteria": "All patients with RLS; return 2-4 weeks for medication titration; then q3-6 months when stable"
+    },
+    {
+      "disposition": "Admit to hospital (rare)",
+      "criteria": "Severe refractory RLS preventing all sleep (unusual); IV iron infusion coordination if outpatient not available; acute decompensation with comorbidities"
+    },
+    {
+      "disposition": "ED evaluation",
+      "criteria": "Rarely needed; may see for severe acute symptoms or secondary cause evaluation"
+    }
+  ]
+}
