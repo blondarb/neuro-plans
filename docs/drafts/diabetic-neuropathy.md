@@ -249,7 +249,7 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Duloxetine for painful DPN (FDA-approved) | Class I, Level A | [Wernicke et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/17101886/) |
+| Duloxetine for painful DPN (FDA-approved) | Class I, Level A | [Wernicke et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/17060567/) |
 | Pregabalin for painful DPN (FDA-approved) | Class I, Level A | [Richter et al. Cochrane 2019](https://pubmed.ncbi.nlm.nih.gov/31425635/) |
 | Gabapentin effective for DPN | Class II, Level B | [Wiffen et al. Cochrane 2017](https://pubmed.ncbi.nlm.nih.gov/28597471/) |
 | Tricyclic antidepressants effective | Class II, Level B | [Moore et al. Cochrane 2015](https://pubmed.ncbi.nlm.nih.gov/25879104/) |

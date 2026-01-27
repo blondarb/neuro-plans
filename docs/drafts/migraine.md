@@ -240,10 +240,10 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Triptans effective for acute migraine | Class I, Level A | [Marmura et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/25636710/) |
-| CGRP monoclonal antibodies for prevention | Class I, Level A | [Silberstein et al. NEJM 2017 (erenumab)](https://pubmed.ncbi.nlm.nih.gov/29132163/) |
-| OnabotulinumtoxinA for chronic migraine | Class I, Level A | [Aurora et al. Headache 2010 (PREEMPT)](https://pubmed.ncbi.nlm.nih.gov/20586932/) |
-| Topiramate for migraine prevention | Class I, Level A | [Silberstein et al. Arch Neurol 2004](https://pubmed.ncbi.nlm.nih.gov/15210526/) |
+| Triptans effective for acute migraine | Class I, Level A | [Marmura et al. Headache 2015](https://pubmed.ncbi.nlm.nih.gov/25600718/) |
+| CGRP monoclonal antibodies for prevention | Class I, Level A | [Goadsby et al. NEJM 2017 (erenumab STRIVE)](https://pubmed.ncbi.nlm.nih.gov/29171821/) |
+| OnabotulinumtoxinA for chronic migraine | Class I, Level A | [Dodick et al. Headache 2010 (PREEMPT pooled)](https://pubmed.ncbi.nlm.nih.gov/20487038/) |
+| Topiramate for migraine prevention | Class I, Level A | [Silberstein et al. Arch Neurol 2004](https://pubmed.ncbi.nlm.nih.gov/15096395/) |
 | Metoclopramide effective for acute migraine | Class II, Level B | [Friedman et al. Ann Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/17933425/) |
 | Dexamethasone reduces recurrence | Class I, Level B | [Singh et al. Acad Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18958636/) |
 | Propranolol for migraine prevention | Class I, Level A | [Linde et al. Cochrane 2004](https://pubmed.ncbi.nlm.nih.gov/15106218/) |

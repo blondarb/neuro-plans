@@ -225,8 +225,8 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Propranolol first-line for ET | Class I, Level A | [Zesiewicz et al. Neurology 2011 (AAN Guideline)](https://pubmed.ncbi.nlm.nih.gov/21931106/) |
-| Primidone first-line for ET | Class I, Level A | [Zesiewicz et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21931106/) |
+| Propranolol first-line for ET | Class I, Level A | [Zesiewicz et al. Neurology 2011 (AAN Guideline)](https://pubmed.ncbi.nlm.nih.gov/22013182/) |
+| Primidone first-line for ET | Class I, Level A | [Zesiewicz et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/22013182/) |
 | Topiramate effective for ET | Class II, Level B | [Ondo et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16636234/) |
 | DBS effective for medication-refractory ET | Class I, Level A | [Flora et al. Cochrane 2010](https://pubmed.ncbi.nlm.nih.gov/20927732/) |
 | MRI-guided focused ultrasound for ET | Class I, Level A | [Elias et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27557301/) |

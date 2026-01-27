@@ -255,7 +255,7 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Levodopa most effective symptomatic treatment | Class I, Level A | [Fahn et al. NEJM 2004 (ELLDOPA)](https://pubmed.ncbi.nlm.nih.gov/15590950/) |
+| Levodopa most effective symptomatic treatment | Class I, Level A | [Fahn et al. NEJM 2004 (ELLDOPA)](https://pubmed.ncbi.nlm.nih.gov/15590952/) |
 | MAO-B inhibitors provide mild motor benefit | Class I, Level A | [Rascol et al. NEJM 2005 (rasagiline)](https://pubmed.ncbi.nlm.nih.gov/15728780/) |
 | Pimavanserin for PD psychosis | Class I, Level A | [Cummings et al. Lancet 2014](https://pubmed.ncbi.nlm.nih.gov/24315521/) |
 | DBS improves motor fluctuations | Class I, Level A | [Weaver et al. JAMA 2009](https://pubmed.ncbi.nlm.nih.gov/19126699/) |
