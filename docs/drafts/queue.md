@@ -22,7 +22,12 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| *(empty - all plans moved to completed)* | — | — | — | — |
+| Migraine | [`migraine.md`](migraine.md) | `pending` | — | 2026-01-27 |
+| Transient Ischemic Attack (TIA) | [`tia.md`](tia.md) | `pending` | — | 2026-01-27 |
+| Parkinson's Disease | [`parkinsons-disease.md`](parkinsons-disease.md) | `pending` | — | 2026-01-27 |
+| Dementia Evaluation | [`dementia-evaluation.md`](dementia-evaluation.md) | `pending` | — | 2026-01-27 |
+| Essential Tremor | [`essential-tremor.md`](essential-tremor.md) | `pending` | — | 2026-01-27 |
+| Diabetic Neuropathy | [`diabetic-neuropathy.md`](diabetic-neuropathy.md) | `pending` | — | 2026-01-27 |
 
 ---
 
