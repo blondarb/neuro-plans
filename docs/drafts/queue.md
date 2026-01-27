@@ -22,12 +22,21 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
+| Vertigo Evaluation | [`vertigo-evaluation.md`](vertigo-evaluation.md) | `pending` | — | 2026-01-27 |
 | MS - Chronic Management | [`ms-chronic-management.md`](ms-chronic-management.md) | `pending` | — | 2026-01-27 |
 | CIDP | [`cidp.md`](cidp.md) | `pending` | — | 2026-01-27 |
 | Cluster Headache | [`cluster-headache.md`](cluster-headache.md) | `pending` | — | 2026-01-27 |
 | Medication Overuse Headache | [`medication-overuse-headache.md`](medication-overuse-headache.md) | `pending` | — | 2026-01-27 |
 | Restless Legs Syndrome | [`restless-legs-syndrome.md`](restless-legs-syndrome.md) | `pending` | — | 2026-01-27 |
 | Mild Cognitive Impairment | [`mild-cognitive-impairment.md`](mild-cognitive-impairment.md) | `pending` | — | 2026-01-27 |
+| Trigeminal Neuralgia | [`trigeminal-neuralgia.md`](trigeminal-neuralgia.md) | `pending` | — | 2026-01-27 |
+| Migraine with Aura | [`migraine-with-aura.md`](migraine-with-aura.md) | `pending` | — | 2026-01-27 |
+| Carpal Tunnel Syndrome | [`carpal-tunnel-syndrome.md`](carpal-tunnel-syndrome.md) | `pending` | — | 2026-01-27 |
+| Myasthenia Gravis - Outpatient | [`myasthenia-gravis.md`](myasthenia-gravis.md) | `pending` | — | 2026-01-27 |
+| Dystonia | [`dystonia.md`](dystonia.md) | `pending` | — | 2026-01-27 |
+| Alzheimer's Disease | [`alzheimers-disease.md`](alzheimers-disease.md) | `pending` | — | 2026-01-27 |
+| Optic Neuritis | [`optic-neuritis.md`](optic-neuritis.md) | `pending` | — | 2026-01-27 |
+| Frontotemporal Dementia | [`frontotemporal-dementia.md`](frontotemporal-dementia.md) | `pending` | — | 2026-01-27 |
 
 ---
 

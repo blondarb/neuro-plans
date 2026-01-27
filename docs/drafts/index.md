@@ -23,12 +23,21 @@ These clinical plans are pending physician review and approval. Please review ea
 
 | Plan | Category | Pipeline Status | Last Updated |
 |------|----------|-----------------|--------------|
+| [Vertigo Evaluation](vertigo-evaluation.md) | Vestibular/Dizziness | :material-file-document-edit: Needs Review | 2026-01-27 |
 | [MS - Chronic Management](ms-chronic-management.md) | Demyelinating | :material-file-document-edit: Needs Review | 2026-01-27 |
 | [CIDP](cidp.md) | Neuromuscular | :material-file-document-edit: Needs Review | 2026-01-27 |
 | [Cluster Headache](cluster-headache.md) | Headache | :material-file-document-edit: Needs Review | 2026-01-27 |
 | [Medication Overuse Headache](medication-overuse-headache.md) | Headache | :material-file-document-edit: Needs Review | 2026-01-27 |
 | [Mild Cognitive Impairment](mild-cognitive-impairment.md) | Cognitive | :material-file-document-edit: Needs Review | 2026-01-27 |
 | [Restless Legs Syndrome](restless-legs-syndrome.md) | Movement/Sleep Disorders | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Trigeminal Neuralgia](trigeminal-neuralgia.md) | Facial Pain | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Migraine with Aura](migraine-with-aura.md) | Headache | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Carpal Tunnel Syndrome](carpal-tunnel-syndrome.md) | Entrapment Neuropathy | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Myasthenia Gravis - Outpatient](myasthenia-gravis.md) | Neuromuscular | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Dystonia](dystonia.md) | Movement Disorders | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Optic Neuritis](optic-neuritis.md) | Demyelinating/Neuro-Ophthalmology | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Alzheimer's Disease](alzheimers-disease.md) | Cognitive/Dementia | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Frontotemporal Dementia](frontotemporal-dementia.md) | Cognitive/Dementia | :material-file-document-edit: Needs Review | 2026-01-27 |
 
 ---
 
