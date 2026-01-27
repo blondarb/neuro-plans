@@ -1,0 +1,1774 @@
+{
+  "id": "migraine-with-aura",
+  "title": "Migraine with Aura",
+  "version": "1.0",
+  "icd10": [
+    "** G43.109 (Migraine with aura",
+    "not intractable",
+    "without status migrainosus)"
+  ],
+  "scope": "** Diagnosis and management of migraine with typical aura (visual, sensory, language) and hemiplegic migraine. Focuses on outpatient management with acute care considerations. Covers differentiation from TIA/stroke, contraceptive counseling, and preventive therapy. Excludes migraine with brainstem aura (separate protocol) and retinal migraine.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC",
+          "rationale": "Rule out anemia, infection; baseline before treatment",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "BMP",
+          "rationale": "Electrolyte abnormalities; renal function for medication dosing",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glucose",
+          "rationale": "Hypoglycemia can mimic aura; hyperglycemia raises stroke risk",
+          "target": "70-180 mg/dL",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PT/INR, PTT",
+          "rationale": "Coagulation screen if stroke consideration; before LP",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c",
+          "rationale": "Vascular risk assessment",
+          "target": "<7% optimal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lipid panel",
+          "rationale": "Vascular risk stratification",
+          "target": "LDL <100 mg/dL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "ESR, CRP",
+          "rationale": "Rule out GCA if age >50 with new visual symptoms",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH",
+          "rationale": "Thyroid dysfunction can trigger headache/aura-like symptoms",
+          "target": "Normal (0.4-4.0 mIU/L)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Magnesium (RBC)",
+          "rationale": "Deficiency linked to migraine with aura specifically",
+          "target": ">4.2 mg/dL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Homocysteine",
+          "rationale": "Elevated levels associated with migraine with aura and stroke",
+          "target": "<15 μmol/L",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12, folate",
+          "rationale": "Deficiency can elevate homocysteine; sensory symptoms",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin D, 25-OH",
+          "rationale": "Deficiency associated with increased migraine frequency",
+          "target": ">30 ng/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Antiphospholipid antibodies (lupus anticoagulant, anticardiolipin, anti-β2GP1)",
+          "rationale": "Thrombophilia workup if young stroke or recurrent prolonged aura",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Factor V Leiden, prothrombin G20210A",
+          "rationale": "Hereditary thrombophilia if recurrent aura or stroke-like events",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA, anti-dsDNA",
+          "rationale": "CNS lupus in atypical presentations",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "MTHFR mutation",
+          "rationale": "Elevated homocysteine with aura",
+          "target": "Wild type or heterozygous",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing (CACNA1A, ATP1A2, SCN1A)",
+          "rationale": "Hemiplegic migraine suspected; family history",
+          "target": "Variant identified",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF analysis",
+          "rationale": "Rule out meningitis, SAH if atypical presentation",
+          "target": "Normal; no xanthochromia",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI Brain without contrast",
+          "timing": "First presentation with aura; rule out stroke/structural lesion",
+          "target": "Normal; no acute infarct; no WMH concerning for vasculopathy",
+          "contraindications": "MRI-incompatible devices",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CT Head non-contrast",
+          "timing": "Acute presentation if MRI unavailable; rule out hemorrhage",
+          "target": "No hemorrhage or mass",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "MRA Head",
+          "timing": "First aura or prolonged aura to assess intracranial vessels",
+          "target": "No stenosis, aneurysm, or dissection",
+          "contraindications": "MRI contraindications",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI Brain with contrast",
+          "timing": "Atypical features; persistent deficits; concern for mass",
+          "target": "No enhancement; no mass",
+          "contraindications": "Gadolinium allergy; severe renal impairment",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRA Neck",
+          "timing": "Suspected cervical dissection (neck pain, Horner syndrome)",
+          "target": "No dissection",
+          "contraindications": "MRI contraindications",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CTA Head/Neck",
+          "timing": "Acute vascular imaging if MRI unavailable",
+          "target": "No aneurysm, dissection, occlusion",
+          "contraindications": "Contrast allergy; CKD (eGFR <30)",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "TTE with bubble study",
+          "timing": "Evaluate for PFO if recurrent aura or cryptogenic stroke history",
+          "target": "No PFO; if present, assess shunt size",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "TEE",
+          "timing": "Detailed cardiac source evaluation if TTE positive or high suspicion",
+          "target": "No cardiac thrombus; characterize PFO",
+          "contraindications": "Esophageal pathology",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI with perfusion/DWI",
+          "timing": "Prolonged aura to differentiate migrainous infarct from stroke",
+          "target": "No DWI restriction",
+          "contraindications": "MRI contraindications",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Transcranial Doppler with bubble",
+          "timing": "PFO screening; noninvasive alternative to TTE bubble",
+          "target": "No right-to-left shunt",
+          "contraindications": "Inadequate acoustic windows",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EEG",
+          "timing": "Aura with altered consciousness; differentiate from seizure",
+          "target": "No epileptiform activity",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Ketorolac",
+          "route": "IV/IM",
+          "indication": "First-line acute migraine with aura in ED",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg IV x1",
+                "orderSentence": "Ketorolac 30 mg IV x1 IV"
+              },
+              {
+                "text": "15 mg IV x1",
+                "orderSentence": "Ketorolac 15 mg IV x1 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mg IV (15 mg if >65y, renal impairment, or <50 kg); max 5 days NSAIDs",
+            "orderSentence": "Ketorolac 30 mg IV x1 IV"
+          },
+          "contraindications": "Renal impairment (CrCl <30); active GI bleed; aspirin/NSAID allergy; third trimester",
+          "monitoring": "Renal function if repeated dosing",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Metoclopramide",
+          "route": "IV",
+          "indication": "Antiemetic with anti-migraine properties",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg IV over 15 min",
+                "orderSentence": "Metoclopramide 10 mg IV over 15 min IV"
+              },
+              {
+                "text": "20 mg IV over 15 min",
+                "orderSentence": "Metoclopramide 20 mg IV over 15 min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10-20 mg IV over 15 min; pretreat with diphenhydramine 25 mg IV to prevent akathisia",
+            "orderSentence": "Metoclopramide 10 mg IV over 15 min IV"
+          },
+          "contraindications": "Parkinson's disease; tardive dyskinesia history; bowel obstruction; pheochromocytoma",
+          "monitoring": "Akathisia, dystonia; discontinue if EPS",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Prochlorperazine",
+          "route": "IV",
+          "indication": "Dopamine antagonist for acute migraine with prominent nausea",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg IV over 2 min",
+                "orderSentence": "Prochlorperazine 10 mg IV over 2 min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV slowly over 2 min; pretreat with diphenhydramine 25 mg IV",
+            "orderSentence": "Prochlorperazine 10 mg IV over 2 min IV"
+          },
+          "contraindications": "QT prolongation (QTc >500ms); Parkinson's disease; neuroleptic malignant syndrome history",
+          "monitoring": "QTc if baseline prolonged; EPS",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Diphenhydramine",
+          "route": "IV",
+          "indication": "Prevent akathisia from dopamine antagonists; sedation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg IV",
+                "orderSentence": "Diphenhydramine 25 mg IV IV"
+              },
+              {
+                "text": "50 mg IV",
+                "orderSentence": "Diphenhydramine 50 mg IV IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "25-50 mg IV given concurrently with dopamine antagonist",
+            "orderSentence": "Diphenhydramine 25 mg IV IV"
+          },
+          "contraindications": "Narrow-angle glaucoma; urinary retention; severe prostatic hypertrophy",
+          "monitoring": "Sedation; anticholinergic effects",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Magnesium sulfate",
+          "route": "IV",
+          "indication": "Migraine with aura - particularly effective; refractory migraine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g IV over 20 min",
+                "orderSentence": "Magnesium sulfate 2 g IV over 20 min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV in 50 mL NS over 20-30 min; may repeat x1 after 2 hr",
+            "orderSentence": "Magnesium sulfate 2 g IV over 20 min IV"
+          },
+          "contraindications": "Heart block; severe hypermagnesemia; myasthenia gravis; severe renal impairment",
+          "monitoring": "BP, HR during infusion; flushing is common and benign",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Sumatriptan",
+          "route": "SC/PO",
+          "indication": "Acute migraine with TYPICAL aura (visual, sensory, language) - SAFE",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6 mg SC x1",
+                "orderSentence": "Sumatriptan 6 mg SC x1 SC/PO"
+              },
+              {
+                "text": "50 mg PO x1",
+                "orderSentence": "Sumatriptan 50 mg PO x1 SC/PO"
+              },
+              {
+                "text": "100 mg PO x1",
+                "orderSentence": "Sumatriptan 100 mg PO x1 SC/PO"
+              }
+            ],
+            "route": "SC/PO",
+            "instructions": "6 mg SC (may repeat after 1 hr, max 12 mg/24hr) OR 50-100 mg PO (may repeat after 2 hr, max 200 mg/24hr); take AFTER aura resolves or at headache onset",
+            "orderSentence": "Sumatriptan 6 mg SC x1 SC/PO"
+          },
+          "contraindications": "**HEMIPLEGIC MIGRAINE (motor aura)**; uncontrolled HTN; CAD; prior stroke/TIA; MAOIs within 14 days; ergots within 24 hr",
+          "monitoring": "Chest tightness (triptan sensation vs cardiac); assess cardiovascular risk",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Valproate sodium",
+          "route": "IV",
+          "indication": "Status migrainosus with aura; refractory to first-line",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg IV over 5 min",
+                "orderSentence": "Valproate sodium 500 mg IV over 5 min IV"
+              },
+              {
+                "text": "1000 mg IV over 5 min",
+                "orderSentence": "Valproate sodium 1000 mg IV over 5 min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500-1000 mg IV over 5-10 min; may repeat 500 mg in 8 hr",
+            "orderSentence": "Valproate sodium 500 mg IV over 5 min IV"
+          },
+          "contraindications": "Hepatic disease; pregnancy (teratogenic); urea cycle disorders; pancreatitis history",
+          "monitoring": "LFTs; ammonia if altered mental status",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Dexamethasone",
+          "route": "IV",
+          "indication": "Prevent headache recurrence after acute treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg IV x1",
+                "orderSentence": "Dexamethasone 10 mg IV x1 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV x1 at time of discharge or admission; single dose",
+            "orderSentence": "Dexamethasone 10 mg IV x1 IV"
+          },
+          "contraindications": "Active untreated infection; known hypersensitivity",
+          "monitoring": "Glucose if diabetic",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Rizatriptan",
+          "route": "PO",
+          "indication": "Acute typical migraine with aura; fast onset",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg PO x1",
+                "orderSentence": "Rizatriptan 5 mg PO x1 PO"
+              },
+              {
+                "text": "10 mg PO x1",
+                "orderSentence": "Rizatriptan 10 mg PO x1 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5-10 mg PO (use 5 mg if on propranolol); may repeat after 2 hr; max 30 mg/24hr",
+            "orderSentence": "Rizatriptan 5 mg PO x1 PO"
+          },
+          "contraindications": "Same as sumatriptan; **HEMIPLEGIC MIGRAINE**; use 5 mg max if on propranolol",
+          "monitoring": "Triptan sensation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Eletriptan",
+          "route": "PO",
+          "indication": "Acute typical migraine with aura; good for recurrence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg PO x1",
+                "orderSentence": "Eletriptan 40 mg PO x1 PO"
+              },
+              {
+                "text": "80 mg PO x1",
+                "orderSentence": "Eletriptan 80 mg PO x1 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "40 mg PO; may repeat 40 mg after 2 hr if partial response; max 80 mg/24hr",
+            "orderSentence": "Eletriptan 40 mg PO x1 PO"
+          },
+          "contraindications": "Same as sumatriptan; **HEMIPLEGIC MIGRAINE**; potent CYP3A4 inhibitors (ketoconazole, clarithromycin)",
+          "monitoring": "Triptan sensation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Naratriptan",
+          "route": "PO",
+          "indication": "Migraine with aura; longer duration; menstrual migraine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg PO x1",
+                "orderSentence": "Naratriptan 2.5 mg PO x1 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2.5 mg PO; may repeat after 4 hr; max 5 mg/24hr; slower onset but longer lasting",
+            "orderSentence": "Naratriptan 2.5 mg PO x1 PO"
+          },
+          "contraindications": "Same as sumatriptan; **HEMIPLEGIC MIGRAINE**; moderate-severe renal/hepatic impairment",
+          "monitoring": "Triptan sensation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ubrogepant",
+          "route": "PO",
+          "indication": "CGRP antagonist; use if triptan contraindicated or cardiovascular risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg PO x1",
+                "orderSentence": "Ubrogepant 50 mg PO x1 PO"
+              },
+              {
+                "text": "100 mg PO x1",
+                "orderSentence": "Ubrogepant 100 mg PO x1 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50-100 mg PO; may repeat after 2 hr; max 200 mg/24hr",
+            "orderSentence": "Ubrogepant 50 mg PO x1 PO"
+          },
+          "contraindications": "Strong CYP3A4 inhibitors; severe hepatic impairment",
+          "monitoring": "None routine; no cardiovascular contraindications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rimegepant",
+          "route": "PO/ODT",
+          "indication": "CGRP antagonist; can use for acute and prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg ODT x1",
+                "orderSentence": "Rimegepant 75 mg ODT x1 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "75 mg ODT at onset; max 75 mg/24hr for acute; also approved 75 mg every other day for prevention",
+            "orderSentence": "Rimegepant 75 mg ODT x1 PO"
+          },
+          "contraindications": "Strong CYP3A4 inhibitors/inducers; severe hepatic impairment",
+          "monitoring": "None routine",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lasmiditan",
+          "route": "PO",
+          "indication": "5-HT1F agonist; safe in cardiovascular disease; ditan class",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg PO x1",
+                "orderSentence": "Lasmiditan 50 mg PO x1 PO"
+              },
+              {
+                "text": "100 mg PO x1",
+                "orderSentence": "Lasmiditan 100 mg PO x1 PO"
+              },
+              {
+                "text": "200 mg PO x1",
+                "orderSentence": "Lasmiditan 200 mg PO x1 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50-200 mg PO x1; max 200 mg/24hr; DO NOT DRIVE for 8 hours after dose",
+            "orderSentence": "Lasmiditan 50 mg PO x1 PO"
+          },
+          "contraindications": "Concurrent alcohol; CYP3A4 substrates with narrow TI",
+          "monitoring": "CNS depression; dizziness; NO driving for 8 hr",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "Mild-moderate aura migraine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg PO x1",
+                "orderSentence": "Ibuprofen 400 mg PO x1 PO"
+              },
+              {
+                "text": "600 mg PO x1",
+                "orderSentence": "Ibuprofen 600 mg PO x1 PO"
+              },
+              {
+                "text": "800 mg PO x1",
+                "orderSentence": "Ibuprofen 800 mg PO x1 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-800 mg PO at onset; max 2400 mg/day",
+            "orderSentence": "Ibuprofen 400 mg PO x1 PO"
+          },
+          "contraindications": "Renal impairment; active GI bleed; aspirin/NSAID allergy; third trimester",
+          "monitoring": "GI symptoms; renal function if prolonged use",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Naproxen sodium",
+          "route": "PO",
+          "indication": "Mild-moderate aura migraine; menstrual migraine prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "550 mg PO x1",
+                "orderSentence": "Naproxen sodium 550 mg PO x1 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "550 mg PO at onset; may add 275 mg in 12 hr; max 1375 mg day 1, then 1100 mg/day",
+            "orderSentence": "Naproxen sodium 550 mg PO x1 PO"
+          },
+          "contraindications": "Renal impairment; active GI bleed; aspirin/NSAID allergy",
+          "monitoring": "GI symptoms",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetaminophen-Aspirin-Caffeine",
+          "route": "PO",
+          "indication": "Mild-moderate migraine with aura (OTC option)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 tablets PO x1",
+                "orderSentence": "Acetaminophen-Aspirin-Caffeine 2 tablets PO x1 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2 tablets (250/250/65 mg each) at onset; max 2 doses/24hr",
+            "orderSentence": "Acetaminophen-Aspirin-Caffeine 2 tablets PO x1 PO"
+          },
+          "contraindications": "Aspirin allergy; hepatic impairment; avoid if using other acetaminophen sources",
+          "monitoring": "Limit total acetaminophen <3 g/day",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV/PO",
+          "indication": "Nausea/vomiting with migraine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg IV x1",
+                "orderSentence": "Ondansetron 4 mg IV x1 IV/PO"
+              },
+              {
+                "text": "8 mg ODT x1",
+                "orderSentence": "Ondansetron 8 mg ODT x1 IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "4 mg IV or 8 mg PO/ODT; may repeat q8h as needed",
+            "orderSentence": "Ondansetron 4 mg IV x1 IV/PO"
+          },
+          "contraindications": "QT prolongation (QTc >500ms); severe hepatic impairment",
+          "monitoring": "QTc if multiple doses or baseline prolongation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Dihydroergotamine (DHE)",
+          "route": "IV/SC/Nasal",
+          "indication": "Refractory migraine; status migrainosus; **NOT for hemiplegic**",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg IV q8h",
+                "orderSentence": "Dihydroergotamine (DHE) 0.5 mg IV q8h IV/SC/Nasal"
+              },
+              {
+                "text": "1 mg SC x1",
+                "orderSentence": "Dihydroergotamine (DHE) 1 mg SC x1 IV/SC/Nasal"
+              },
+              {
+                "text": "1 spray per nostril",
+                "orderSentence": "Dihydroergotamine (DHE) 1 spray per nostril IV/SC/Nasal"
+              }
+            ],
+            "route": "IV/SC/Nasal",
+            "instructions": "IV: 0.5-1 mg q8h for up to 3 days (pretreat with antiemetic); SC: 1 mg, may repeat in 1 hr; Nasal: 1 spray each nostril, repeat in 15 min",
+            "orderSentence": "Dihydroergotamine (DHE) 0.5 mg IV q8h IV/SC/Nasal"
+          },
+          "contraindications": "Pregnancy; CAD; uncontrolled HTN; peripheral vascular disease; **HEMIPLEGIC MIGRAINE**; triptan use within 24hr; severe hepatic/renal impairment",
+          "monitoring": "BP; nausea; chest pain; continuous cardiac monitoring for IV",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Occipital nerve block",
+          "route": "SC",
+          "indication": "Refractory migraine; occipital-predominant pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Bupivacaine 0.5% 2-3 mL + triamcinolone 40 mg",
+                "orderSentence": "Occipital nerve block Bupivacaine 0.5% 2-3 mL + triamcinolone 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Inject at greater occipital nerve bilaterally; may add lesser occipital, supraorbital",
+            "orderSentence": "Occipital nerve block Bupivacaine 0.5% 2-3 mL + triamcinolone 40 mg SC"
+          },
+          "contraindications": "Local anesthetic allergy; infection at injection site; anticoagulation (relative)",
+          "monitoring": "Vasovagal reaction; immediate pain assessment",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ketamine",
+          "route": "IV",
+          "indication": "Status migrainosus refractory to DHE",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.3 mg/kg/hr infusion",
+                "orderSentence": "Ketamine 0.1-0.3 mg/kg/hr infusion IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1-0.3 mg/kg/hr continuous infusion for 24-48 hr; subanesthetic dosing only",
+            "orderSentence": "Ketamine 0.1-0.3 mg/kg/hr infusion IV"
+          },
+          "contraindications": "Uncontrolled HTN; psychosis history; elevated ICP; pregnancy",
+          "monitoring": "Dissociation; BP; HR; requires continuous cardiac monitoring",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Verapamil",
+          "route": "IV",
+          "indication": "Hemiplegic migraine acute (if severe); status migrainosus",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg IV over 2 min",
+                "orderSentence": "Verapamil 5 mg IV over 2 min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg IV over 2-3 min; may repeat in 30 min (max 20 mg)",
+            "orderSentence": "Verapamil 5 mg IV over 2 min IV"
+          },
+          "contraindications": "Heart block (2nd/3rd degree); severe LV dysfunction; hypotension",
+          "monitoring": "Continuous ECG; BP; for hemiplegic migraine when triptans contraindicated",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Intranasal lidocaine",
+          "route": "Intranasal",
+          "indication": "Acute migraine with aura; rapid onset option",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4% lidocaine 0.5 mL per nostril",
+                "orderSentence": "Intranasal lidocaine 4% lidocaine 0.5 mL per nostril Intranasal"
+              }
+            ],
+            "route": "Intranasal",
+            "instructions": "4% lidocaine, 0.5 mL per nostril directed at sphenopalatine fossa; may repeat x1 in 15 min",
+            "orderSentence": "Intranasal lidocaine 4% lidocaine 0.5 mL per nostril Intranasal"
+          },
+          "contraindications": "Local anesthetic allergy",
+          "monitoring": "Local numbness; cardiac arrhythmia (rare with low dose)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying or Chronic Therapies (Preventive Medications)": [
+        {
+          "item": "Magnesium oxide",
+          "route": "PO",
+          "indication": "First-line supplement for migraine with aura prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg daily",
+                "orderSentence": "Magnesium oxide 400 mg daily PO"
+              },
+              {
+                "text": "400 mg BID",
+                "orderSentence": "Magnesium oxide 400 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 400 mg daily; may increase to 400 mg BID; take with food to reduce GI upset",
+            "orderSentence": "Magnesium oxide 400 mg daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Renal impairment (CrCl <30) - dose reduce",
+          "monitoring": "Diarrhea; check Mg level if symptomatic or renal disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topiramate",
+          "route": "PO",
+          "indication": "First-line oral prevention; reduces aura frequency; weight loss",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Topiramate 25 mg qHS PO"
+              },
+              {
+                "text": "50 mg BID",
+                "orderSentence": "Topiramate 50 mg BID PO"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Topiramate 100 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg qHS; increase by 25 mg/wk; target 50-100 mg BID",
+            "orderSentence": "Topiramate 25 mg qHS PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "**PREGNANCY (teratogenic)**; glaucoma; kidney stones; metabolic acidosis",
+          "monitoring": "Cognitive effects; paresthesias; weight; serum bicarbonate; kidney stones",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Propranolol",
+          "route": "PO",
+          "indication": "First-line prevention; comorbid HTN, anxiety, tremor",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg BID",
+                "orderSentence": "Propranolol 40 mg BID PO"
+              },
+              {
+                "text": "80 mg BID",
+                "orderSentence": "Propranolol 80 mg BID PO"
+              },
+              {
+                "text": "80 mg LA daily",
+                "orderSentence": "Propranolol 80 mg LA daily PO"
+              },
+              {
+                "text": "160 mg LA daily",
+                "orderSentence": "Propranolol 160 mg LA daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 40 mg BID or 80 mg LA daily; titrate q2wk; target 80-240 mg/day",
+            "orderSentence": "Propranolol 40 mg BID PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Asthma; COPD with bronchospasm; bradycardia <50; 2nd/3rd degree heart block; decompensated HF",
+          "monitoring": "HR (goal >50); BP; fatigue; depression; exercise intolerance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "Prevention with comorbid insomnia, depression, tension-type headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Amitriptyline 10 mg qHS PO"
+              },
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Amitriptyline 25 mg qHS PO"
+              },
+              {
+                "text": "50 mg qHS",
+                "orderSentence": "Amitriptyline 50 mg qHS PO"
+              },
+              {
+                "text": "75 mg qHS",
+                "orderSentence": "Amitriptyline 75 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg qHS; titrate by 10-25 mg q1-2wk; target 25-75 mg qHS",
+            "orderSentence": "Amitriptyline 10 mg qHS PO"
+          },
+          "pretreatment": "ECG if >50 y/o or cardiac history",
+          "contraindications": "Cardiac conduction disease; recent MI; glaucoma; urinary retention; elderly (anticholinergic burden)",
+          "monitoring": "Sedation; weight; dry mouth; ECG if dose >100 mg or cardiac history",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venlafaxine XR",
+          "route": "PO",
+          "indication": "Prevention with comorbid depression, anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg daily",
+                "orderSentence": "Venlafaxine XR 37.5 mg daily PO"
+              },
+              {
+                "text": "75 mg daily",
+                "orderSentence": "Venlafaxine XR 75 mg daily PO"
+              },
+              {
+                "text": "150 mg daily",
+                "orderSentence": "Venlafaxine XR 150 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg daily; increase by 37.5-75 mg q1wk; target 75-150 mg daily",
+            "orderSentence": "Venlafaxine XR 37.5 mg daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Uncontrolled HTN; MAOIs within 14 days; abrupt discontinuation risk",
+          "monitoring": "BP at doses >150 mg; serotonin syndrome signs; taper to discontinue",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Candesartan",
+          "route": "PO",
+          "indication": "Prevention; comorbid HTN; beta-blocker intolerant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8 mg daily",
+                "orderSentence": "Candesartan 8 mg daily PO"
+              },
+              {
+                "text": "16 mg daily",
+                "orderSentence": "Candesartan 16 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 8 mg daily; may increase to 16 mg daily after 4 wk",
+            "orderSentence": "Candesartan 8 mg daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "**Pregnancy**; bilateral renal artery stenosis; hyperkalemia",
+          "monitoring": "BP; potassium; creatinine",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Valproate/Divalproex",
+          "route": "PO",
+          "indication": "Prevention with comorbid bipolar or epilepsy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg BID",
+                "orderSentence": "Valproate/Divalproex 250 mg BID PO"
+              },
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Valproate/Divalproex 500 mg BID PO"
+              },
+              {
+                "text": "500 mg ER daily",
+                "orderSentence": "Valproate/Divalproex 500 mg ER daily PO"
+              },
+              {
+                "text": "1000 mg ER daily",
+                "orderSentence": "Valproate/Divalproex 1000 mg ER daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg BID or 500 mg ER daily; titrate to 500-1000 mg/day",
+            "orderSentence": "Valproate/Divalproex 250 mg BID PO"
+          },
+          "pretreatment": "LFTs; CBC",
+          "contraindications": "**Pregnancy (teratogenic - neural tube defects)**; hepatic disease; urea cycle disorders; pancreatitis history",
+          "monitoring": "LFTs q6mo; weight; hair loss; tremor; CBC",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Riboflavin (Vitamin B2)",
+          "route": "PO",
+          "indication": "Supplement for prevention; well-tolerated; may reduce aura",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg daily",
+                "orderSentence": "Riboflavin (Vitamin B2) 400 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400 mg daily",
+            "orderSentence": "Riboflavin (Vitamin B2) 400 mg daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "None",
+          "monitoring": "Fluorescent yellow urine (reassure patient); benign",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Coenzyme Q10",
+          "route": "PO",
+          "indication": "Supplement; mitochondrial support",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg TID",
+                "orderSentence": "Coenzyme Q10 100 mg TID PO"
+              },
+              {
+                "text": "300 mg daily",
+                "orderSentence": "Coenzyme Q10 300 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100-300 mg daily",
+            "orderSentence": "Coenzyme Q10 100 mg TID PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "None",
+          "monitoring": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Erenumab (Aimovig)",
+          "route": "SC",
+          "indication": "CGRP mAb; failed 2+ oral preventives or intolerance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "70 mg SC monthly",
+                "orderSentence": "Erenumab (Aimovig) 70 mg SC monthly SC"
+              },
+              {
+                "text": "140 mg SC monthly",
+                "orderSentence": "Erenumab (Aimovig) 140 mg SC monthly SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "70 mg SC monthly; may increase to 140 mg monthly after 3 months if suboptimal response",
+            "orderSentence": "Erenumab (Aimovig) 70 mg SC monthly SC"
+          },
+          "pretreatment": "None",
+          "contraindications": "Hypersensitivity to erenumab",
+          "monitoring": "Constipation (can be severe - may need laxatives); injection site reactions; HTN monitoring",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fremanezumab (Ajovy)",
+          "route": "SC",
+          "indication": "CGRP mAb; flexible dosing options",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "225 mg SC monthly",
+                "orderSentence": "Fremanezumab (Ajovy) 225 mg SC monthly SC"
+              },
+              {
+                "text": "675 mg SC quarterly",
+                "orderSentence": "Fremanezumab (Ajovy) 675 mg SC quarterly SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "225 mg SC monthly OR 675 mg SC quarterly (three 225 mg injections)",
+            "orderSentence": "Fremanezumab (Ajovy) 225 mg SC monthly SC"
+          },
+          "pretreatment": "None",
+          "contraindications": "Hypersensitivity",
+          "monitoring": "Injection site reactions",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Galcanezumab (Emgality)",
+          "route": "SC",
+          "indication": "CGRP mAb; requires loading dose",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "240 mg SC load then 120 mg SC monthly",
+                "orderSentence": "Galcanezumab (Emgality) 240 mg SC load then 120 mg SC monthly SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "240 mg SC loading dose (2 x 120 mg injections), then 120 mg SC monthly",
+            "orderSentence": "Galcanezumab (Emgality) 240 mg SC load then 120 mg SC monthly SC"
+          },
+          "pretreatment": "None",
+          "contraindications": "Hypersensitivity",
+          "monitoring": "Injection site reactions; vertigo",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Onabotulinumtoxin A (Botox)",
+          "route": "IM",
+          "indication": "Chronic migraine with aura (≥15 days/month); failed oral preventives",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "155-195 units IM q12wk",
+                "orderSentence": "Onabotulinumtoxin A (Botox) 155-195 units IM q12wk IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "155-195 units across 31-39 injection sites per PREEMPT protocol; repeat q12 weeks; effect may take 2-3 cycles",
+            "orderSentence": "Onabotulinumtoxin A (Botox) 155-195 units IM q12wk IM"
+          },
+          "pretreatment": "None",
+          "contraindications": "Infection at injection sites; myasthenia gravis; neuromuscular disorder",
+          "monitoring": "Neck weakness; ptosis; antibody formation if loss of effect",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Flunarizine",
+          "route": "PO",
+          "indication": "Calcium channel blocker for prevention; especially hemiplegic migraine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg qHS",
+                "orderSentence": "Flunarizine 5 mg qHS PO"
+              },
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Flunarizine 10 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg qHS; may increase to 10 mg qHS; especially useful for hemiplegic migraine (not available in US)",
+            "orderSentence": "Flunarizine 5 mg qHS PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Depression; Parkinson's disease; extrapyramidal disorders",
+          "monitoring": "Weight gain; depression; parkinsonism with prolonged use",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lamotrigine",
+          "route": "PO",
+          "indication": "May reduce aura frequency specifically; hemiplegic migraine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Lamotrigine 25 mg daily PO"
+              },
+              {
+                "text": "50 mg BID",
+                "orderSentence": "Lamotrigine 50 mg BID PO"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Lamotrigine 100 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; increase by 25 mg q2wk to 50-100 mg BID; SLOW titration to prevent rash",
+            "orderSentence": "Lamotrigine 25 mg daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "History of lamotrigine-related rash; interacting drugs (valproate halves dose)",
+          "monitoring": "**RASH (stop immediately if rash develops - SJS risk)**; monitor closely during titration",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetazolamide",
+          "route": "PO",
+          "indication": "Hemiplegic migraine prevention; familial hemiplegic migraine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg BID",
+                "orderSentence": "Acetazolamide 250 mg BID PO"
+              },
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Acetazolamide 500 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg BID; may increase to 500 mg BID",
+            "orderSentence": "Acetazolamide 250 mg BID PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Sulfa allergy; severe hepatic/renal disease; hypokalemia; acidosis",
+          "monitoring": "Paresthesias; metabolic acidosis; K+; bicarbonate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology/Headache specialist referral for aura characterization, preventive optimization, and differentiation from other neurological conditions",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "OB/GYN consultation for contraceptive counseling - **estrogen-containing contraceptives contraindicated** in migraine with aura due to elevated ischemic stroke risk",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology referral if TTE shows PFO for discussion of closure in select cases (recurrent cryptogenic stroke or debilitating aura despite medical therapy)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetics consultation if hemiplegic migraine suspected for CACNA1A, ATP1A2, SCN1A testing and family counseling",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for cervicogenic component and trigger point management",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychology/Behavioral medicine for CBT addressing aura anxiety, attack anticipation, and comorbid mood disorders",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology if visual aura atypical or concern for retinal pathology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep medicine if sleep disorder contributing to migraine frequency (OSA, insomnia)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately for new/different headache, \"worst headache of life,\" or thunderclap onset which may indicate subarachnoid hemorrhage",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return immediately if aura persists >60 minutes or if new weakness on one side of body develops (need to rule out stroke)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return immediately for headache with fever, stiff neck, or altered mental status which may indicate CNS infection",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "**AVOID estrogen-containing contraceptives** (combined birth control pills, patch, ring) - use progestin-only methods (mini-pill, Depo-Provera, Mirena IUD, Nexplanon) or non-hormonal methods",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Triptans ARE safe for your typical visual/sensory aura - take at headache onset or when aura ends; do NOT take if you experience weakness (motor aura)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain headache/aura diary tracking aura type, duration, triggers, and medication use to guide treatment optimization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit acute medication use to ≤10 days/month to prevent medication overuse headache which worsens both headache and aura",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Learn your personal aura warning signs and take acute medication promptly when headache begins",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not drive or operate machinery during visual or motor aura as vision and coordination may be impaired",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular sleep schedule (7-8 hours, consistent bedtime) as sleep changes are a major aura trigger",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid known aura triggers (bright/flashing lights, high altitude, significant sleep deprivation, extreme stress)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular aerobic exercise (30 min moderate activity 5x/week) reduces migraine frequency; avoid if currently in aura",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Magnesium-rich diet (leafy greens, nuts, whole grains) or supplementation as magnesium specifically helps aura",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stress management techniques (mindfulness, biofeedback, relaxation training) as stress is a major trigger",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Adequate hydration (at least 64 oz water daily) as dehydration can trigger attacks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation to reduce vascular risk, particularly important given aura-associated stroke risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Caffeine moderation (≤200 mg/day) and consistent daily intake to avoid withdrawal triggers",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Blood pressure control (target <130/80) given elevated vascular risk with aura",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid high altitude or rapid altitude changes if altitude is a known aura trigger",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Transient ischemic attack (TIA)",
+      "features": "Sudden onset (maximal at onset vs gradual aura spread); negative symptoms (vision loss vs positive scintillations); vascular risk factors; older age; duration usually <1 hr",
+      "tests": "MRI DWI (no restriction in aura); MRA/CTA (no vessel occlusion); aura has visual \"march\""
+    },
+    {
+      "diagnosis": "Ischemic stroke",
+      "features": "Fixed deficit; sudden onset; vascular territory distribution; risk factors",
+      "tests": "MRI DWI (shows restriction); CT may be normal early"
+    },
+    {
+      "diagnosis": "Migraine with brainstem aura",
+      "features": "Aura includes brainstem symptoms (vertigo, tinnitus, decreased hearing, diplopia, ataxia, dysarthria, decreased LOC)",
+      "tests": "Clinical criteria; MRI to exclude posterior fossa lesion"
+    },
+    {
+      "diagnosis": "Retinal migraine",
+      "features": "Monocular visual symptoms (vs binocular in typical aura); complete vision loss in one eye",
+      "tests": "Ophthalmology exam; cover/uncover test during symptoms"
+    },
+    {
+      "diagnosis": "Focal seizure with visual phenomena",
+      "features": "Shorter duration (seconds to minutes); positive phenomena; may have automatisms; post-ictal confusion",
+      "tests": "EEG may show epileptiform activity; MRI for structural lesion"
+    },
+    {
+      "diagnosis": "Transient global amnesia",
+      "features": "Anterograde amnesia; repetitive questioning; no visual or motor symptoms; resolves <24 hr",
+      "tests": "Clinical diagnosis; MRI may show hippocampal DWI changes"
+    },
+    {
+      "diagnosis": "Giant cell arteritis",
+      "features": "Age >50; scalp tenderness; jaw claudication; visual loss (not scintillations); elevated ESR/CRP",
+      "tests": "ESR, CRP (elevated); temporal artery biopsy"
+    },
+    {
+      "diagnosis": "Carotid/vertebral dissection",
+      "features": "Neck pain; Horner syndrome; pulsatile tinnitus; stroke symptoms",
+      "tests": "MRA/CTA neck showing dissection"
+    },
+    {
+      "diagnosis": "CADASIL",
+      "features": "Migraine with aura often first symptom; subcortical strokes; family history; cognitive decline",
+      "tests": "MRI shows characteristic WMH (anterior temporal, external capsule); NOTCH3 mutation"
+    },
+    {
+      "diagnosis": "Mitochondrial encephalopathy (MELAS)",
+      "features": "Stroke-like episodes not following vascular territory; seizures; elevated lactate; short stature",
+      "tests": "MRI (non-vascular stroke pattern); genetic testing; muscle biopsy"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Migraine with aura increases ischemic stroke risk, especially in women using combined oral contraceptives",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Etminan et al. BMJ 2005](https://pubmed.ncbi.nlm.nih.gov/15647264/)"
+    },
+    {
+      "recommendation": "ACOG: Combined hormonal contraceptives contraindicated in migraine with aura",
+      "evidenceLevel": "Class I (Guideline)",
+      "source": "[ACOG Practice Bulletin 2019](https://pubmed.ncbi.nlm.nih.gov/31568397/)"
+    },
+    {
+      "recommendation": "Triptans safe and effective in migraine with typical aura",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Marmura et al. Headache 2015](https://pubmed.ncbi.nlm.nih.gov/25600718/)"
+    },
+    {
+      "recommendation": "Triptans contraindicated in hemiplegic migraine (expert consensus)",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Expert consensus; [IHS Classification ICHD-3 2018](https://pubmed.ncbi.nlm.nih.gov/29368949/)"
+    },
+    {
+      "recommendation": "Magnesium particularly effective for migraine with aura prevention",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Peikert et al. Cephalalgia 1996](https://pubmed.ncbi.nlm.nih.gov/8792038/)"
+    },
+    {
+      "recommendation": "Lamotrigine may reduce aura frequency specifically",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Lampl et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/16087905/)"
+    },
+    {
+      "recommendation": "Topiramate effective for migraine prevention",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Silberstein et al. Arch Neurol 2004](https://pubmed.ncbi.nlm.nih.gov/15096395/)"
+    },
+    {
+      "recommendation": "Propranolol effective for migraine prevention",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Linde et al. Cochrane 2004](https://pubmed.ncbi.nlm.nih.gov/15106218/)"
+    },
+    {
+      "recommendation": "CGRP monoclonal antibodies effective for prevention",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Goadsby et al. NEJM 2017 (erenumab STRIVE)](https://pubmed.ncbi.nlm.nih.gov/29171821/)"
+    },
+    {
+      "recommendation": "Gepants safe in patients with cardiovascular contraindications to triptans",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Dodick et al. JAMA 2019 (ubrogepant ACHIEVE I)](https://pubmed.ncbi.nlm.nih.gov/31742631/)"
+    },
+    {
+      "recommendation": "Lasmiditan (ditan) does not have cardiovascular contraindications",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Kuca et al. Headache 2018](https://pubmed.ncbi.nlm.nih.gov/30091160/)"
+    },
+    {
+      "recommendation": "IV magnesium effective for acute migraine with aura",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Bigal et al. Headache 2002](https://pubmed.ncbi.nlm.nih.gov/11903546/)"
+    },
+    {
+      "recommendation": "Aura duration >60 minutes warrants stroke evaluation",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Expert consensus; [Lipton et al. Headache 2004](https://pubmed.ncbi.nlm.nih.gov/15147249/)"
+    },
+    {
+      "recommendation": "PFO closure may benefit select patients with migraine with aura",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Tobis et al. JACC 2017 (RESPECT trial long-term)](https://pubmed.ncbi.nlm.nih.gov/28359515/)"
+    },
+    {
+      "recommendation": "Acetazolamide effective for familial hemiplegic migraine",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Battistini et al. Neurology 1999](https://pubmed.ncbi.nlm.nih.gov/10489058/)"
+    },
+    {
+      "recommendation": "Verapamil may be used acutely in hemiplegic migraine",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Expert consensus; [Mathew et al. Headache 2005](https://pubmed.ncbi.nlm.nih.gov/15836583/)"
+    },
+    {
+      "recommendation": "OnabotulinumtoxinA effective for chronic migraine",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Dodick et al. Headache 2010 (PREEMPT pooled)](https://pubmed.ncbi.nlm.nih.gov/20487038/)"
+    },
+    {
+      "recommendation": "Exercise as effective as topiramate for migraine prevention",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Varkey et al. Cephalalgia 2011](https://pubmed.ncbi.nlm.nih.gov/21816772/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Aura characteristics (type, duration, frequency)",
+      "frequency": "Each visit; diary",
+      "action": "Prolonged aura needs stroke rule-out; increasing frequency reassess prevention",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Headache days/month",
+      "frequency": "Monthly",
+      "action": "Escalate therapy if not meeting target; consider CGRP mAb or Botox",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Acute medication use days",
+      "frequency": "Monthly",
+      "action": "MOH education; consider preventive escalation; may need withdrawal",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Each visit",
+      "action": "Optimize BP control given elevated vascular risk with aura",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "HIT-6 or MIDAS disability score",
+      "frequency": "Every 3 months",
+      "action": "Escalate preventive therapy if severely disabled",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Topiramate: serum bicarbonate",
+      "frequency": "Baseline, 3 months",
+      "action": "Consider dose reduction or switch if metabolic acidosis",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Valproate: LFTs",
+      "frequency": "Baseline, 3 months, then q6mo",
+      "action": "Discontinue if significant elevation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CGRP mAb: constipation assessment",
+      "frequency": "Each visit",
+      "action": "Add fiber/laxatives; reduce dose or discontinue if severe",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Lamotrigine: rash monitoring",
+      "frequency": "Weekly during titration",
+      "action": "**STOP IMMEDIATELY if rash develops** - SJS risk",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Contraceptive status",
+      "frequency": "Each visit (women of reproductive age)",
+      "action": "Remove estrogen-containing contraceptives; counsel on alternatives",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Typical aura pattern confirmed; no stroke symptoms; pain controlled; able to tolerate PO; follow-up arranged; contraceptive counseling if needed"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Prolonged aura (>60 min) requiring observation; status migrainosus requiring IV therapy; first aura with abnormal imaging requiring further workup; hemiplegic migraine with prolonged weakness"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Migrainous infarction (stroke occurring during typical aura); hemodynamic instability; severe refractory status migrainosus requiring ketamine infusion"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Stroke mimicking aura requiring thrombectomy evaluation; complex hemiplegic migraine requiring tertiary headache center"
+    },
+    {
+      "disposition": "Outpatient follow-up",
+      "criteria": "New diagnosis: 2-4 weeks; Stable on prevention: 3-6 months; After preventive change: 4-8 weeks"
+    }
+  ]
+}

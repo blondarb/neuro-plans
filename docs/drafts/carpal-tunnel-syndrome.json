@@ -1,0 +1,1067 @@
+{
+  "id": "carpal-tunnel-syndrome",
+  "title": "Carpal Tunnel Syndrome",
+  "version": "1.0",
+  "icd10": [
+    "** G56.00 (Carpal tunnel syndrome",
+    "unspecified upper limb)",
+    "G56.01 (Carpal tunnel syndrome",
+    "right upper limb)",
+    "G56.02 (Carpal tunnel syndrome",
+    "left upper limb)",
+    "G56.03 (Carpal tunnel syndrome",
+    "bilateral upper limbs)"
+  ],
+  "scope": "** Evaluation and management of carpal tunnel syndrome from initial presentation through conservative treatment, injection therapy, and surgical referral. Covers clinical diagnosis, electrodiagnostic testing, severity grading, and treatment options. For acute median nerve injury or severe CTS with thenar atrophy, early surgical referral is indicated.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Fasting glucose",
+          "rationale": "Screen for diabetes (common CTS risk factor)",
+          "target": "<100 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HbA1c",
+          "rationale": "Diabetes/prediabetes screening (diabetic neuropathy overlap)",
+          "target": "<5.7%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH",
+          "rationale": "Hypothyroidism causes CTS (myxedematous tissue infiltration)",
+          "target": "0.4-4.0 mIU/L",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Rheumatoid factor",
+          "rationale": "RA-associated CTS (synovial hypertrophy)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-CCP antibody",
+          "rationale": "More specific for RA if RF negative",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ESR",
+          "rationale": "Inflammatory arthritis screen",
+          "target": "<20 mm/hr",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CRP",
+          "rationale": "Inflammatory marker",
+          "target": "<3.0 mg/L",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Uric acid",
+          "rationale": "Gout/tophaceous deposits in carpal tunnel",
+          "target": "Normal (3.5-7.2 mg/dL male; 2.5-6.2 mg/dL female)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "BUN/Creatinine",
+          "rationale": "Renal disease (dialysis-associated CTS from amyloid deposition)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CBC",
+          "rationale": "Anemia workup, infection screen",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregnancy test (women of childbearing age)",
+          "rationale": "Pregnancy-associated CTS (common, often resolves postpartum)",
+          "target": "Document status",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12",
+          "rationale": "Concomitant peripheral neuropathy",
+          "target": ">300 pg/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP)",
+          "rationale": "Amyloidosis, myeloma (bilateral CTS may be presenting sign of AL amyloid)",
+          "target": "No M-spike",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Free light chains (kappa/lambda)",
+          "rationale": "AL amyloidosis if bilateral CTS with cardiac/renal involvement",
+          "target": "Normal ratio (0.26-1.65)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "TTR gene testing",
+          "rationale": "Hereditary transthyretin amyloidosis if young onset bilateral CTS",
+          "target": "No pathogenic variant",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Fat pad biopsy",
+          "rationale": "Confirm amyloidosis if strongly suspected",
+          "target": "No amyloid deposits",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Acromegaly workup (IGF-1, GH)",
+          "rationale": "Bilateral CTS in patient with acromegalic features",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Nerve conduction studies (NCS) and EMG",
+          "timing": "Recommended for diagnosis confirmation and severity grading; optimal before surgery",
+          "target": "Prolonged median sensory and/or motor distal latency; reduced SNAP amplitude; denervation in thenar muscles (severe)",
+          "contraindications": "Anticoagulation for needle EMG (relative)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wrist X-ray (PA and lateral)",
+          "timing": "If fracture, arthritis, or bony abnormality suspected",
+          "target": "Normal or degenerative changes; exclude fracture",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Wrist/carpal tunnel ultrasound",
+          "timing": "Alternative to MRI; can measure median nerve CSA; operator-dependent",
+          "target": "Median nerve CSA >10-12 mm² at pisiform level; flattening at tunnel",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI wrist without contrast",
+          "timing": "Mass lesion, ganglion cyst, tenosynovitis, anatomic variant",
+          "target": "No mass, normal median nerve signal",
+          "contraindications": "Pacemaker; claustrophobia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI cervical spine with and without contrast",
+          "timing": "Rule out cervical radiculopathy if double crush suspected or atypical presentation",
+          "target": "No foraminal stenosis at C6-C7",
+          "contraindications": "GFR <30; pacemaker; gadolinium allergy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CT wrist",
+          "timing": "Bony pathology not visible on X-ray; post-traumatic",
+          "target": "No fracture or bony deformity",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI with contrast",
+          "timing": "Suspected tumor or inflammatory mass in carpal tunnel",
+          "target": "No enhancing mass",
+          "contraindications": "GFR <30; pacemaker; gadolinium allergy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Comparative NCS (ulnar and radial)",
+          "timing": "Distinguish CTS from polyneuropathy or brachial plexopathy",
+          "target": "Normal ulnar and radial studies",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Wrist splinting (neutral position)",
+          "route": "External",
+          "indication": "First-line conservative therapy; nocturnal use prevents wrist flexion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Neutral position splint",
+                "orderSentence": "Wrist splinting (neutral position) Neutral position splint External"
+              }
+            ],
+            "route": "External",
+            "instructions": "Wear nightly x 4-6 weeks; may use during day if symptomatic; neutral wrist position (0-5 degrees extension)",
+            "orderSentence": "Wrist splinting (neutral position) Neutral position splint External"
+          },
+          "contraindications": "None",
+          "monitoring": "Skin irritation; compliance",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "NSAID therapy (short-term)",
+          "route": "PO",
+          "indication": "Acute symptom relief; limited evidence for CTS-specific benefit",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Ibuprofen 400 mg TID",
+                "orderSentence": "NSAID therapy (short-term) Ibuprofen 400 mg TID PO"
+              },
+              {
+                "text": "Naproxen 500 mg BID",
+                "orderSentence": "NSAID therapy (short-term) Naproxen 500 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Short course (7-14 days); take with food; not for long-term use",
+            "orderSentence": "NSAID therapy (short-term) Ibuprofen 400 mg TID PO"
+          },
+          "contraindications": "GI bleeding; renal impairment; cardiovascular disease; third trimester pregnancy",
+          "monitoring": "GI symptoms; renal function",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain/paresthesias (adjunctive)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg qHS",
+                "orderSentence": "Gabapentin 300 mg qHS PO"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Gabapentin 300 mg TID PO"
+              },
+              {
+                "text": "600 mg TID",
+                "orderSentence": "Gabapentin 600 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; increase by 300 mg q3-7d; max 1800 mg/day for CTS",
+            "orderSentence": "Gabapentin 300 mg qHS PO"
+          },
+          "contraindications": "Renal impairment (dose adjust per CrCl)",
+          "monitoring": "Sedation, dizziness, edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain/paresthesias",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg BID",
+                "orderSentence": "Pregabalin 75 mg BID PO"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Pregabalin 150 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; may increase to 150 mg BID after 1 week",
+            "orderSentence": "Pregabalin 75 mg BID PO"
+          },
+          "contraindications": "Renal impairment; Class V controlled",
+          "monitoring": "Sedation, weight gain, edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Neuropathic pain with comorbid anxiety/depression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg daily",
+                "orderSentence": "Duloxetine 30 mg daily PO"
+              },
+              {
+                "text": "60 mg daily",
+                "orderSentence": "Duloxetine 60 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily; increase to 60 mg after 1 week",
+            "orderSentence": "Duloxetine 30 mg daily PO"
+          },
+          "contraindications": "Hepatic impairment; CrCl <30; MAOIs; narrow-angle glaucoma",
+          "monitoring": "Nausea, BP; taper to discontinue",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "Nocturnal paresthesias (second-line)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Amitriptyline 10 mg qHS PO"
+              },
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Amitriptyline 25 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg qHS; increase by 10 mg weekly; max 50 mg qHS",
+            "orderSentence": "Amitriptyline 10 mg qHS PO"
+          },
+          "contraindications": "Cardiac conduction abnormality; urinary retention; glaucoma; elderly",
+          "monitoring": "ECG if >50 mg; anticholinergic effects",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topical diclofenac",
+          "route": "TOP",
+          "indication": "Localized pain/inflammation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Apply gel",
+                "orderSentence": "Topical diclofenac Apply gel TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Apply to wrist area TID-QID; max 4 weeks",
+            "orderSentence": "Topical diclofenac Apply gel TOP"
+          },
+          "contraindications": "Aspirin-sensitive asthma; open wounds",
+          "monitoring": "Local skin irritation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lidocaine 5% patch",
+          "route": "TOP",
+          "indication": "Localized pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 patch",
+                "orderSentence": "Lidocaine 5% patch 1 patch TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Apply to wrist/forearm 12h on, 12h off",
+            "orderSentence": "Lidocaine 5% patch 1 patch TOP"
+          },
+          "contraindications": "Broken skin; severe hepatic impairment",
+          "monitoring": "Minimal systemic absorption",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory (Injection Therapy)": [
+        {
+          "item": "Methylprednisolone acetate injection",
+          "route": "Local injection",
+          "indication": "Moderate CTS failing conservative therapy; bridge to surgery; pregnancy-related CTS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Methylprednisolone acetate injection 40 mg Local injection"
+              }
+            ],
+            "route": "Local injection",
+            "instructions": "40 mg (1 mL) injected into carpal tunnel under ultrasound guidance preferred; may repeat x1 at 4-6 weeks",
+            "orderSentence": "Methylprednisolone acetate injection 40 mg Local injection"
+          },
+          "contraindications": "Local infection; bleeding disorder; uncontrolled diabetes",
+          "monitoring": "Blood glucose (diabetics) 24-48h post-injection; tendon rupture (rare)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Triamcinolone acetonide injection",
+          "route": "Local injection",
+          "indication": "Alternative corticosteroid for injection",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-40 mg",
+                "orderSentence": "Triamcinolone acetonide injection 20-40 mg Local injection"
+              }
+            ],
+            "route": "Local injection",
+            "instructions": "20-40 mg injected into carpal tunnel; ultrasound guidance recommended",
+            "orderSentence": "Triamcinolone acetonide injection 20-40 mg Local injection"
+          },
+          "contraindications": "Local infection; bleeding disorder; uncontrolled diabetes",
+          "monitoring": "Blood glucose (diabetics); skin depigmentation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dexamethasone injection",
+          "route": "Local injection",
+          "indication": "Alternative corticosteroid (shorter acting)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Dexamethasone injection 4 mg Local injection"
+              }
+            ],
+            "route": "Local injection",
+            "instructions": "4 mg injected into carpal tunnel; shorter duration than triamcinolone",
+            "orderSentence": "Dexamethasone injection 4 mg Local injection"
+          },
+          "contraindications": "Local infection; bleeding disorder",
+          "monitoring": "Blood glucose (diabetics)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Platelet-rich plasma (PRP) injection",
+          "route": "Local injection",
+          "indication": "Experimental; refractory cases; patient preference to avoid surgery",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-3 mL PRP",
+                "orderSentence": "Platelet-rich plasma (PRP) injection 2-3 mL PRP Local injection"
+              }
+            ],
+            "route": "Local injection",
+            "instructions": "Single injection under ultrasound; emerging evidence",
+            "orderSentence": "Platelet-rich plasma (PRP) injection 2-3 mL PRP Local injection"
+          },
+          "contraindications": "Infection; thrombocytopenia; malignancy",
+          "monitoring": "Observe 15 min post-injection",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Definitive Surgical Treatment": [
+        {
+          "item": "Carpal tunnel release (CTR) - open",
+          "route": "Surgical",
+          "indication": "Moderate-severe CTS; thenar atrophy; failed conservative therapy x 3-6 months; constant numbness",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Surgical release",
+                "orderSentence": "Carpal tunnel release (CTR) - open Surgical release Outpatient surgery"
+              }
+            ],
+            "route": "Outpatient surgery",
+            "instructions": "Open technique; divide transverse carpal ligament; 15-30 min procedure",
+            "orderSentence": "Carpal tunnel release (CTR) - open Surgical release Outpatient surgery"
+          },
+          "pretreatment": "NCS confirmation of diagnosis recommended; optimize diabetes; discuss expectations",
+          "contraindications": "Active infection; unstable medical status; anticoagulation (relative)",
+          "monitoring": "Post-op pain; wound healing; grip strength; pillar pain",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carpal tunnel release (CTR) - endoscopic",
+          "route": "Surgical",
+          "indication": "Same indications as open CTR; faster return to work; surgeon preference",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Surgical release",
+                "orderSentence": "Carpal tunnel release (CTR) - endoscopic Surgical release Outpatient surgery"
+              }
+            ],
+            "route": "Outpatient surgery",
+            "instructions": "Endoscopic technique (1 or 2 portal); divide transverse carpal ligament",
+            "orderSentence": "Carpal tunnel release (CTR) - endoscopic Surgical release Outpatient surgery"
+          },
+          "pretreatment": "NCS confirmation recommended; optimize diabetes",
+          "contraindications": "Active infection; prior carpal tunnel surgery (relative); anatomic variants",
+          "monitoring": "Post-op pain; transient nerve injury (1-2%); wound healing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Hand surgery or orthopedic surgery referral for carpal tunnel release evaluation when conservative therapy fails or severe CTS present",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Electrodiagnostic medicine/neurology for NCS/EMG to confirm diagnosis and grade severity before surgical intervention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational medicine for workplace ergonomic assessment and work restrictions if occupational risk factors present",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical/occupational therapy for nerve gliding exercises, ergonomic training, and activity modification",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rheumatology referral if inflammatory arthritis suspected as underlying cause (RA, gout)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Endocrinology for diabetes optimization or hypothyroidism management if contributing to CTS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Primary care for management of modifiable risk factors (diabetes, obesity, hypothyroidism)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management if refractory neuropathic symptoms despite treatment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Wear wrist splint nightly in neutral position for minimum 4-6 weeks; may wear during day if symptoms persist with activities",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid prolonged wrist flexion or extension (typing, gripping tools, driving) as this increases carpal tunnel pressure",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take frequent breaks during repetitive hand activities (every 30-60 minutes) to rest wrists",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Perform nerve gliding exercises as instructed by therapist to improve median nerve mobility",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Apply ice for 10-15 minutes if wrist swelling present; avoid direct ice contact with skin",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report worsening numbness, weakness in thumb, or dropping objects (may indicate progression requiring surgery)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid sleeping with wrists curled under pillow; maintain neutral wrist position during sleep",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "If pregnant, symptoms often improve after delivery; conservative management preferred during pregnancy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "After corticosteroid injection, temporary increase in symptoms may occur first 24-48 hours before improvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Post-surgical: Keep incision clean and dry; elevate hand; start motion as directed; full grip strength recovery may take 3-6 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Optimize glycemic control (HbA1c <7%) as diabetes worsens nerve function and CTS outcomes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Weight loss if overweight/obese as obesity is modifiable risk factor for CTS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Ergonomic workstation setup: keyboard at elbow height, wrists neutral, avoid resting wrists on hard surfaces",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Use ergonomic keyboard, mouse, and tools if occupation involves repetitive hand use",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation to improve microvascular circulation and nerve healing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid prolonged use of vibrating tools or take breaks every 15-30 minutes when using such equipment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Reduce caffeine and alcohol intake as these may worsen paresthesias in some patients",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Treat underlying thyroid disease as hypothyroidism contributes to CTS through tissue edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stretch and warm up hands before repetitive activities",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Vitamin B6 supplementation not recommended (evidence does not support benefit; high doses cause neuropathy)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Cervical radiculopathy (C6-C7)",
+      "features": "Neck pain, dermatomal pattern (not strictly median), reflex changes (C6: brachioradialis; C7: triceps), negative Phalen/Tinel",
+      "tests": "MRI cervical spine; NCS/EMG shows radicular pattern; neck range of motion limited"
+    },
+    {
+      "diagnosis": "Pronator syndrome",
+      "features": "Forearm pain/tenderness at pronator teres, symptoms with resisted pronation, no nocturnal worsening, palmar cutaneous branch affected",
+      "tests": "NCS/EMG; tenderness at pronator teres on exam; provocative testing"
+    },
+    {
+      "diagnosis": "Anterior interosseous syndrome",
+      "features": "Weakness only (FPL, FDP to index, pronator quadratus); no sensory loss; pinch weakness",
+      "tests": "NCS/EMG; cannot make \"OK\" sign (pinch between thumb and index)"
+    },
+    {
+      "diagnosis": "Thoracic outlet syndrome",
+      "features": "Shoulder/arm pain, positional symptoms, vascular symptoms (pallor, cyanosis), C8-T1 distribution",
+      "tests": "Adson test; ROOS test; X-ray for cervical rib; MRA; NCS"
+    },
+    {
+      "diagnosis": "Ulnar neuropathy at elbow (cubital tunnel)",
+      "features": "Numbness in ring and small finger, hand weakness, elbow symptoms, positive Tinel at elbow",
+      "tests": "NCS/EMG shows ulnar slowing at elbow; sensory exam (ulnar digits spared in CTS)"
+    },
+    {
+      "diagnosis": "Peripheral polyneuropathy",
+      "features": "Symmetric symptoms, length-dependent, feet often affected first, multiple nerve territories",
+      "tests": "NCS shows generalized abnormalities; HbA1c; B12; metabolic panel"
+    },
+    {
+      "diagnosis": "De Quervain tenosynovitis",
+      "features": "Radial wrist pain, positive Finkelstein test, no numbness, tenderness over 1st dorsal compartment",
+      "tests": "Finkelstein test positive; ultrasound shows tendon thickening; no NCS abnormalities"
+    },
+    {
+      "diagnosis": "Raynaud phenomenon",
+      "features": "Color changes (white-blue-red), cold-triggered, bilateral, no weakness",
+      "tests": "No NCS abnormalities; may have positive ANA; capillaroscopy"
+    },
+    {
+      "diagnosis": "Brachial plexopathy",
+      "features": "Shoulder/arm weakness and sensory loss in plexus pattern, may have Horner syndrome",
+      "tests": "NCS/EMG; MRI brachial plexus; distribution beyond median nerve"
+    },
+    {
+      "diagnosis": "Trigger finger",
+      "features": "Finger locking/clicking, palm nodule, no numbness in median distribution",
+      "tests": "Palpable nodule at A1 pulley; no NCS abnormalities; triggering on exam"
+    },
+    {
+      "diagnosis": "Ganglion cyst (volar wrist)",
+      "features": "Palpable mass, may transilluminate, compresses median nerve",
+      "tests": "Ultrasound or MRI shows cystic structure; NCS may be normal or show CTS"
+    },
+    {
+      "diagnosis": "Multiple sclerosis",
+      "features": "Central demyelination; other neurologic symptoms; sensory symptoms may mimic CTS",
+      "tests": "MRI brain/spine; CSF oligoclonal bands; NCS normal"
+    },
+    {
+      "diagnosis": "Syringomyelia",
+      "features": "Dissociated sensory loss (pain/temp preserved, vibration lost), cape distribution, central cord lesion",
+      "tests": "MRI cervical spine shows syrinx cavity"
+    },
+    {
+      "diagnosis": "Amyloidosis",
+      "features": "Bilateral CTS, cardiac involvement, macroglossia, renal disease, family history (hATTR)",
+      "tests": "SPEP/UPEP; free light chains; TTR gene; tissue biopsy"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Nocturnal wrist splinting is effective first-line treatment for CTS",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Page MJ et al. Cochrane Database Syst Rev 2012](https://pubmed.ncbi.nlm.nih.gov/22786497/)"
+    },
+    {
+      "recommendation": "NCS/EMG recommended for diagnostic confirmation before surgery",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Werner RA et al. Muscle Nerve 2011](https://pubmed.ncbi.nlm.nih.gov/21922474/)"
+    },
+    {
+      "recommendation": "Corticosteroid injection provides short-term symptom relief",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Marshall S et al. Cochrane Database Syst Rev 2007](https://pubmed.ncbi.nlm.nih.gov/17253462/)"
+    },
+    {
+      "recommendation": "Carpal tunnel release surgery is effective for moderate-severe CTS",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Verdugo RJ et al. Cochrane Database Syst Rev 2008](https://pubmed.ncbi.nlm.nih.gov/18843658/)"
+    },
+    {
+      "recommendation": "Ultrasound-guided injection improves accuracy and outcomes",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Ustun N et al. Arch Phys Med Rehabil 2013](https://pubmed.ncbi.nlm.nih.gov/23267555/)"
+    },
+    {
+      "recommendation": "Diabetes mellitus is significant risk factor for CTS",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Pourmemari MH et al. Diabet Med 2016](https://pubmed.ncbi.nlm.nih.gov/26108553/)"
+    },
+    {
+      "recommendation": "Clinical examination (Phalen, Tinel) has moderate sensitivity/specificity",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Middleton SD et al. J Hand Surg Eur Vol 2014](https://pubmed.ncbi.nlm.nih.gov/23824222/)"
+    },
+    {
+      "recommendation": "Severe CTS with thenar atrophy should be referred for surgery",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Graham B et al. J Am Acad Orthop Surg 2016](https://pubmed.ncbi.nlm.nih.gov/26803543/)"
+    },
+    {
+      "recommendation": "Endoscopic and open CTR have equivalent long-term outcomes",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Scholten RJ et al. Cochrane Database Syst Rev 2007](https://pubmed.ncbi.nlm.nih.gov/17943857/)"
+    },
+    {
+      "recommendation": "Pregnancy-related CTS often resolves postpartum",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Padua L et al. Muscle Nerve 2010](https://pubmed.ncbi.nlm.nih.gov/20082417/)"
+    },
+    {
+      "recommendation": "Median nerve CSA >10-12 mm² on ultrasound supports CTS diagnosis",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Cartwright MS et al. Muscle Nerve 2012](https://pubmed.ncbi.nlm.nih.gov/22334176/)"
+    },
+    {
+      "recommendation": "Nerve gliding exercises may provide modest benefit as adjunct therapy",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Ballestero-Perez R et al. J Orthop Sports Phys Ther 2017](https://pubmed.ncbi.nlm.nih.gov/28622488/)"
+    },
+    {
+      "recommendation": "AAOS Clinical Practice Guideline for CTS",
+      "evidenceLevel": "Guideline",
+      "source": "[AAOS Guideline 2016](https://pubmed.ncbi.nlm.nih.gov/26803543/)"
+    },
+    {
+      "recommendation": "AANEM practice parameter for electrodiagnosis of CTS",
+      "evidenceLevel": "Guideline",
+      "source": "[Jablecki CK et al. Muscle Nerve 2002](https://pubmed.ncbi.nlm.nih.gov/12210353/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Symptom severity (numbness, tingling, nocturnal symptoms)",
+      "frequency": "Each visit",
+      "action": "Consider escalation: injection if splinting fails; surgery if injection fails",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Grip strength",
+      "frequency": "Baseline and q4-8 weeks if weakness",
+      "action": "Expedite surgical referral if progressive weakness",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Thenar muscle bulk",
+      "frequency": "Each visit",
+      "action": "If atrophy developing, urgent surgical referral (indicates severe CTS)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Two-point discrimination",
+      "frequency": "Baseline and periodic",
+      "action": "If abnormal/worsening, indicates sensory axonal loss; consider surgery",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Splint compliance",
+      "frequency": "Each visit",
+      "action": "Re-educate; consider injection if compliant but not improving",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "HbA1c (diabetic patients)",
+      "frequency": "Every 3 months",
+      "action": "Intensify diabetes management",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "TSH (if hypothyroid)",
+      "frequency": "Every 6-12 months",
+      "action": "Adjust thyroid replacement",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Post-injection response",
+      "frequency": "2-4 weeks after injection",
+      "action": "If no improvement, discuss surgical options",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Post-surgical wound healing",
+      "frequency": "7-14 days post-op",
+      "action": "If infection signs, antibiotics and wound care",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Post-surgical sensory/motor function",
+      "frequency": "6 weeks, 3 months, 6 months post-op",
+      "action": "If not improving, NCS/EMG; consider incomplete release or scarring",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Recurrence after surgery",
+      "frequency": "Annual if risk factors present",
+      "action": "NCS; consider revision surgery if confirmed recurrence",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Mild-moderate CTS; can use splint; outpatient neurology/hand surgery follow-up arranged; no thenar atrophy; no progressive weakness"
+    },
+    {
+      "disposition": "**Admit to floor**",
+      "criteria": "Acute compartment syndrome of forearm/hand (rare); post-operative complication requiring observation; severe medical comorbidities requiring inpatient management"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "Not typical for CTS; only if concurrent critical illness"
+    },
+    {
+      "disposition": "**Urgent surgical referral**",
+      "criteria": "Thenar atrophy; progressive weakness; constant numbness with sensory loss; failed conservative therapy >6 months; severe CTS on NCS with denervation"
+    },
+    {
+      "disposition": "**Routine surgical referral**",
+      "criteria": "Moderate CTS with inadequate response to splinting and injection; patient preference; occupational impairment"
+    },
+    {
+      "disposition": "**Outpatient follow-up**",
+      "criteria": "Most patients; splinting trial with reassessment in 4-6 weeks; post-injection follow-up in 2-4 weeks"
+    }
+  ]
+}
