@@ -34,6 +34,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | Multiple Sclerosis (New Diagnosis) | [`ms-new-diagnosis.md`](../plans/ms-new-diagnosis.md) | 2026-01-20 | 90% (54/60) |
 | Peripheral Neuropathy | [`peripheral-neuropathy.md`](../plans/peripheral-neuropathy.md) | 2026-01-20 | 90% (54/60) |
 | Acute Ischemic Stroke | [`acute-ischemic-stroke.md`](../plans/acute-ischemic-stroke.md) | 2026-01-21 | 92% (55/60) |
+| Guillain-Barré Syndrome | [`guillain-barre-syndrome.md`](../plans/guillain-barre-syndrome.md) | 2026-01-26 | 90%+ |
+| Myasthenia Gravis - Crisis | [`myasthenia-gravis-crisis.md`](../plans/myasthenia-gravis-crisis.md) | 2026-01-26 | 90%+ |
+| Bacterial Meningitis | [`bacterial-meningitis.md`](../plans/bacterial-meningitis.md) | 2026-01-26 | 90%+ |
+| HSV Encephalitis | [`hsv-encephalitis.md`](../plans/hsv-encephalitis.md) | 2026-01-26 | 90%+ |
+| Autoimmune Encephalitis | [`autoimmune-encephalitis.md`](../plans/autoimmune-encephalitis.md) | 2026-01-26 | 90%+ |
 
 ---
 
@@ -41,11 +46,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Completed Date | Final Score |
 |------|------|----------------|-------------|
-| Guillain-Barré Syndrome | [`guillain-barre-syndrome.md`](guillain-barre-syndrome.md) | 2026-01-24 | 90%+ (pending validation) |
-| Myasthenia Gravis - Crisis | [`myasthenia-gravis-crisis.md`](myasthenia-gravis-crisis.md) | 2026-01-24 | 90%+ (pending validation) |
-| Bacterial Meningitis | [`bacterial-meningitis.md`](bacterial-meningitis.md) | 2026-01-24 | 90%+ (pending validation) |
-| HSV Encephalitis | [`hsv-encephalitis.md`](hsv-encephalitis.md) | 2026-01-24 | 90%+ (pending validation) |
-| Autoimmune Encephalitis | [`autoimmune-encephalitis.md`](autoimmune-encephalitis.md) | 2026-01-24 | 90%+ (pending validation) |
+| *(none)* | — | — | — |
 
 ---
 

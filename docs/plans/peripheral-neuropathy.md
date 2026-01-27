@@ -227,24 +227,24 @@ SECTION A: ACTION ITEMS
 
 ### 4A. Referrals & Consults
 
-| Recommendation | Indication | ED | HOSP | OPD | ICU |
-|----------------|------------|:--:|:----:|:---:|:---:|
-| Neuromuscular neurology referral | All new neuropathy diagnoses for etiology workup and management | URGENT | URGENT | ROUTINE | URGENT |
-| Electrodiagnostic medicine/EMG referral | NCS/EMG for characterization (axonal vs demyelinating, pattern) | - | ROUTINE | ROUTINE | - |
-| Physical therapy consult for balance and gait | Gait instability, weakness, falls prevention | - | ROUTINE | ROUTINE | ROUTINE |
-| Occupational therapy consult for hand function | Fine motor impairment, ADL difficulty | - | ROUTINE | ROUTINE | - |
-| Podiatry referral | Diabetic neuropathy, foot care education, orthotics, wound prevention | - | ROUTINE | ROUTINE | - |
-| Endocrinology referral | Diabetes management optimization if HbA1c not at goal | - | ROUTINE | ROUTINE | - |
-| Pain management/Anesthesia referral | Refractory neuropathic pain, spinal cord stimulator evaluation | - | - | ROUTINE | - |
-| Rheumatology referral | Suspected vasculitic neuropathy, connective tissue disease | - | ROUTINE | ROUTINE | - |
-| Hematology/Oncology referral | Paraproteinemic neuropathy, suspected malignancy, amyloidosis | - | URGENT | ROUTINE | - |
-| Genetic counseling referral | Suspected hereditary neuropathy (CMT, hATTR), family history | - | - | ROUTINE | - |
-| Psychiatry/Psychology referral | Chronic pain management, depression, anxiety | - | ROUTINE | ROUTINE | - |
-| Social work consult | Disability resources, insurance navigation, DME assistance | - | ROUTINE | ROUTINE | - |
-| Wound care referral | Diabetic foot ulcers, non-healing wounds | - | URGENT | ROUTINE | URGENT |
-| Orthotics/Prosthetics | AFOs for foot drop, custom orthotics | - | - | ROUTINE | - |
-| Nutrition/Dietitian referral | Alcoholic neuropathy, nutritional deficiencies, bariatric surgery patients | - | ROUTINE | ROUTINE | - |
-| Addiction medicine/Psychiatry | Alcohol use disorder, opioid risk mitigation | - | ROUTINE | ROUTINE | - |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Neuromuscular neurology referral for neuropathy etiology workup and management guidance | URGENT | URGENT | ROUTINE | URGENT |
+| Electrodiagnostic medicine/EMG for NCS/EMG to characterize pattern (axonal vs demyelinating, distribution) | — | ROUTINE | ROUTINE | — |
+| Physical therapy for balance training, gait rehabilitation, and falls prevention given lower extremity involvement | — | ROUTINE | ROUTINE | ROUTINE |
+| Occupational therapy for hand function and ADL adaptation given fine motor impairment | — | ROUTINE | ROUTINE | — |
+| Podiatry for diabetic foot care education, orthotics fitting, and wound prevention given sensory loss | — | ROUTINE | ROUTINE | — |
+| Endocrinology for diabetes management optimization if HbA1c not at goal (glycemic control slows progression) | — | ROUTINE | ROUTINE | — |
+| Pain management for refractory neuropathic pain or spinal cord stimulator evaluation | — | — | ROUTINE | — |
+| Rheumatology for suspected vasculitic neuropathy or connective tissue disease evaluation | — | ROUTINE | ROUTINE | — |
+| Hematology/Oncology for paraproteinemic neuropathy, suspected malignancy, or amyloidosis workup | — | URGENT | ROUTINE | — |
+| Genetic counseling for suspected hereditary neuropathy (CMT, hATTR) based on family history or young onset | — | — | ROUTINE | — |
+| Psychiatry/Psychology for chronic pain management support, depression, or anxiety related to neuropathy | — | ROUTINE | ROUTINE | — |
+| Social work for disability resources, insurance navigation, and DME assistance | — | ROUTINE | ROUTINE | — |
+| Wound care for diabetic foot ulcers or non-healing wounds given impaired sensation and circulation | — | URGENT | ROUTINE | URGENT |
+| Orthotics/Prosthetics for AFOs if foot drop present, or custom orthotics for pressure redistribution | — | — | ROUTINE | — |
+| Nutrition/Dietitian for alcoholic or nutritional neuropathy, bariatric surgery patients with malabsorption | — | ROUTINE | ROUTINE | — |
+| Addiction medicine for alcohol use disorder treatment or opioid risk mitigation strategies | — | ROUTINE | ROUTINE | — |
 
 ### 4B. Patient Instructions
 
