@@ -240,7 +240,7 @@ tags:
 | Dexamethasone reduces recurrence | Class I, Level B | [Singh et al. Acad Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18958636/) |
 | Propranolol for migraine prevention | Class I, Level A | [Linde et al. Cochrane 2004](https://pubmed.ncbi.nlm.nih.gov/15106218/) |
 | Gepants (ubrogepant, rimegepant) for acute migraine | Class I, Level A | [Dodick et al. JAMA 2019 (ubrogepant)](https://pubmed.ncbi.nlm.nih.gov/31742631/) |
-| Magnesium for migraine with aura prevention | Class II, Level B | [Peikert et al. Cephalalgia 1996](https://pubmed.ncbi.nlm.nih.gov/8869765/) |
+| Magnesium for migraine with aura prevention | Class II, Level B | [Peikert et al. Cephalalgia 1996](https://pubmed.ncbi.nlm.nih.gov/8792038/) |
 | Exercise as effective as topiramate for prevention | Class II, Level B | [Varkey et al. Cephalalgia 2011](https://pubmed.ncbi.nlm.nih.gov/21816772/) |
 
 ---
