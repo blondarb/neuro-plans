@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+CLINICAL PLAN BUILDER - Interactive Clinical Decision Support Tool
+================================================================================
+
+Version: 1.8
+Last Updated: January 24, 2026
+Repository: https://github.com/blondarb/neuro-plans
+
+OVERVIEW:
+  This tool allows clinicians to build customized clinical plans by selecting
+  items from evidence-based templates. Plans are filtered by care setting
+  (ED, Hospital, Outpatient, ICU) and priority level (STAT, URGENT, ROUTINE).
+
+ARCHITECTURE:
+  - Data Source: /docs/data/plans.json (JSON format)
+  - Styling: Inline CSS with CSS custom properties for theming
+  - No external dependencies (vanilla JavaScript)
+
+KEY FEATURES:
+  1. Setting/Priority Filters - Filter items by clinical context
+  2. Progressive Disclosure - Icon-based tooltips for detailed metadata
+  3. Selected Items Sidebar - Build and export custom plans
+  4. Click-to-Edit - Customize item text before export
+  5. Custom Items - Add free-text items to any section
+  6. Clinical Notes Banner - Collapsible plan-level notes
+
+ICON SYSTEM (Progressive Disclosure):
+  Items display metadata via hoverable icons. Icons only appear if the
+  corresponding field exists in the JSON data:
+
+  | Icon | Field              | Color   | Purpose                          |
+  |------|--------------------|---------|----------------------------------|
+  | ℹ️   | rationale          | Blue    | Clinical reasoning/evidence      |
+  | 💊   | indication         | Teal    | Why this treatment is used       |
+  | ⏱    | timing             | Amber   | When to perform/administer       |
+  | 🎯   | target             | Green   | Expected findings/goals          |
+  | ⚠️   | contraindications  | Red*    | Safety warnings (*pulsing)       |
+  | 📊   | monitoring         | Purple  | Required monitoring parameters   |
+
+JSON SCHEMA:
+  See /skills/neuro-builder-SKILL.md "Clinical Tool JSON Schema" section
+  for complete field documentation.
+
+CHANGELOG:
+  v1.8 (Jan 24, 2026) - Added dosing info icon (ℹ) showing full dosing guidance on hover
+  v1.7 (Jan 24, 2026) - Clickable medication dosing: click badge to copy order sentence
+  v1.6 (Jan 21, 2026) - Added Indication icon (💊 teal) for treatment items
+  v1.5 (Jan 19, 2026) - Progressive disclosure with icon tooltips
+  v1.4 (Jan 19, 2026) - Clinical notes banner, custom items
+  v1.3 (Jan 19, 2026) - Click-to-edit, dosing in sidebar
+  v1.2 (Jan 18, 2026) - Collapsible sections, reference sections
+  v1.1 (Jan 18, 2026) - Basic filtering and selection
+  v1.0 (Jan 18, 2026) - Initial implementation
+
+================================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinical Plan Builder | Neuro Plans</title>
+  <style>
+    /*
+     * CSS CUSTOM PROPERTIES (Design Tokens)
+     * Centralized color and spacing definitions for consistent theming
+     */
+    :root {
+      --primary: #4f46e5;
+      --primary-dark: #4338ca;
+      --primary-light: #e0e7ff;
+      --stat: #dc2626;
+      --stat-bg: #fee2e2;
+      --urgent: #ea580c;
+      --urgent-bg: #ffedd5;
+      --routine: #2563eb;
+      --routine-bg: #dbeafe;
+      --ext: #7c3aed;
+      --ext-bg: #f3e8ff;
+      --border: #e5e7eb;
+      --text: #1f2937;
+      --text-light: #6b7280;
+      --bg: #ffffff;
+      --bg-secondary: #f9fafb;
+      --custom-bg: #fef3c7;
+      --custom-border: #fcd34d;
+      --warning: #dc2626;
+      --warning-bg: #fef2f2;
+      --info: #0284c7;
+      --info-bg: #f0f9ff;
+      --success: #059669;
+      --success-bg: #ecfdf5;
+    }
+
+    /* Reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg-secondary);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+
+    /* =====================================================
+       HEADER - Sticky navigation with back button
+       ===================================================== */
+    .header {
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header-left { display: flex; align-items: center; gap: 12px; }
+    .logo { font-weight: 700; font-size: 1.25rem; color: var(--primary); }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 16px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    .back-btn:hover { background: var(--primary-dark); }
+
+    /* =====================================================
+       CONTROLS - Plan selector, venue tabs, icon legend
+       ===================================================== */
+    .controls {
+      background: var(--bg);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .controls-row { display: flex; gap: 20px; flex-wrap: wrap; align-items: end; }
+    .control-group { flex: 1; min-width: 200px; }
+    .control-group label { display: block; font-weight: 500; margin-bottom: 6px; font-size: 0.9rem; }
+    .control-group select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 1rem;
+      background: var(--bg);
+    }
+    .venue-tabs { display: flex; gap: 8px; }
+    .venue-tab {
+      padding: 10px 20px;
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      background: var(--bg);
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .venue-tab:hover { border-color: var(--primary); }
+    .venue-tab.active { background: var(--primary); border-color: var(--primary); color: white; }
+
+    /* =====================================================
+       LAYOUT - Main grid with plan content and sidebar
+       ===================================================== */
+    .main-layout { display: grid; grid-template-columns: 1fr 380px; gap: 20px; }
+    @media (max-width: 1024px) { .main-layout { grid-template-columns: 1fr; } }
+
+    /* Plan Content Container */
+    .plan-content {
+      background: var(--bg);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    /* =====================================================
+       CLINICAL NOTES BANNER
+       Collapsible banner showing plan-level notes (from JSON "notes" field)
+       ===================================================== */
+    .clinical-notes-banner {
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+      border: 1px solid #bae6fd;
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .clinical-notes-banner:hover { background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); }
+    .clinical-notes-banner-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      color: #0369a1;
+    }
+    .clinical-notes-banner-header .icon { font-size: 1.2rem; }
+    .clinical-notes-banner-header .count {
+      background: #0284c7;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 0.75rem;
+      margin-left: auto;
+    }
+    .clinical-notes-banner-header .chevron { margin-left: 8px; transition: transform 0.2s; }
+    .clinical-notes-banner.open .chevron { transform: rotate(180deg); }
+    .clinical-notes-list {
+      display: none;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #bae6fd;
+    }
+    .clinical-notes-banner.open .clinical-notes-list { display: block; }
+    .clinical-note {
+      padding: 8px 0;
+      font-size: 0.85rem;
+      color: #0c4a6e;
+      border-bottom: 1px solid #e0f2fe;
+      display: flex;
+      gap: 8px;
+    }
+    .clinical-note:last-child { border-bottom: none; }
+    .clinical-note .bullet { color: #0284c7; font-weight: bold; }
+
+    /* Section */
+    .section { margin-bottom: 28px; }
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+    .section-title { font-size: 1.1rem; font-weight: 600; }
+
+    /* Subsection */
+    .subsection { margin-bottom: 16px; }
+    .subsection-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    /* Items - Compact Primary View */
+    .item-list { display: flex; flex-direction: column; gap: 4px; }
+    .item {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 12px;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.15s;
+    }
+    .item:hover { background: #f0f0f5; }
+    .item.selected { background: var(--primary-light); border-color: #a5b4fc; }
+    .item.custom { background: var(--custom-bg); border-color: var(--custom-border); }
+    .item.custom.selected { background: #fde68a; border-color: #f59e0b; }
+
+    /* Item Primary Row */
+    .item-primary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .item input[type="checkbox"] { width: 16px; height: 16px; cursor: pointer; flex-shrink: 0; }
+    .item-name { flex: 1; font-size: 0.9rem; font-weight: 500; }
+
+    /* Dosing Badge - Always visible for drugs */
+    .item-dosing-badge {
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      max-width: 300px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .item-dosing-badge:hover {
+      background: #bfdbfe;
+      transform: scale(1.02);
+    }
+    .item-dosing-badge.clickable {
+      border: 1px solid #93c5fd;
+    }
+    .item-dosing-badge.clickable::after {
+      content: ' 📋';
+      font-size: 0.65rem;
+    }
+    .item-dosing-badge.copied {
+      background: #bbf7d0;
+      color: #166534;
+    }
+    .item-dosing-badge.multi-dose::after {
+      content: none; /* Remove clipboard emoji for multi-dose, we show dropdown arrow instead */
+    }
+
+    /* Dosing Info Icon - shows full instructions on hover */
+    .dosing-info-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      background: #f0f9ff;
+      color: #0284c7;
+      border-radius: 50%;
+      font-size: 0.65rem;
+      cursor: help;
+      margin-left: 4px;
+      position: relative;
+      vertical-align: middle;
+      transition: all 0.15s;
+    }
+    .dosing-info-icon:hover {
+      background: #e0f2fe;
+      transform: scale(1.1);
+    }
+    .dosing-info-icon .tooltip {
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1e293b;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 400;
+      white-space: normal;
+      width: max-content;
+      max-width: 320px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s;
+      z-index: 1000;
+      text-align: left;
+      line-height: 1.5;
+      pointer-events: none;
+    }
+    .dosing-info-icon .tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-top-color: #1e293b;
+    }
+    .dosing-info-icon:hover .tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+    .dosing-info-label {
+      font-weight: 600;
+      color: #94a3b8;
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Dosing Dropdown */
+    .dosing-dropdown-container {
+      position: relative;
+      display: inline-block;
+    }
+    .dose-dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 4px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      z-index: 1000;
+      min-width: 250px;
+      max-width: 400px;
+    }
+    .dose-dropdown.show {
+      display: block;
+    }
+    .dose-option {
+      padding: 10px 14px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      border-bottom: 1px solid #f3f4f6;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .dose-option:last-child {
+      border-bottom: none;
+    }
+    .dose-option:hover {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+    .dose-option.copied {
+      background: #bbf7d0;
+      color: #166534;
+    }
+    .dose-custom-input-container {
+      padding: 8px 10px;
+      border-top: 1px solid #e5e7eb;
+      background: #f9fafb;
+    }
+    .dose-custom-input {
+      width: 100%;
+      padding: 6px 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      box-sizing: border-box;
+    }
+    .dose-custom-input:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    }
+    .dose-custom-input::placeholder {
+      color: #9ca3af;
+      font-style: italic;
+    }
+
+    /* Info Icons Row - Compact icons with tooltips */
+    .item-icons {
+      display: flex;
+      gap: 6px;
+      margin-left: 26px;
+      margin-top: 6px;
+    }
+
+    /* =====================================================
+       PROGRESSIVE DISCLOSURE ICONS
+       Hoverable icons that reveal metadata tooltips.
+       Each icon type corresponds to a JSON field:
+         - rationale: Clinical reasoning/evidence
+         - timing: When to perform/administer
+         - target: Expected findings or goals
+         - contraindications: Safety warnings (pulsing animation)
+         - monitoring: Required monitoring parameters
+       ===================================================== */
+    .info-icon {
+      position: relative;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      cursor: help;
+      transition: all 0.15s;
+    }
+    .info-icon:hover { transform: scale(1.1); }
+
+    /* Icon Types */
+    .icon-rationale { background: #f0f9ff; color: #0284c7; }
+    .icon-indication { background: #f0fdfa; color: #0d9488; }
+    .icon-timing { background: #fef3c7; color: #b45309; }
+    .icon-target { background: #ecfdf5; color: #059669; }
+    .icon-contraindication { background: #fef2f2; color: #dc2626; }
+    .icon-monitoring { background: #f3e8ff; color: #7c3aed; }
+
+    /* Contraindication always visible with warning styling */
+    .icon-contraindication {
+      background: #fef2f2;
+      color: #dc2626;
+      border: 1px solid #fecaca;
+      animation: pulse-warning 2s infinite;
+    }
+    @keyframes pulse-warning {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.2); }
+      50% { box-shadow: 0 0 0 4px rgba(220, 38, 38, 0); }
+    }
+
+    /* Tooltip */
+    .info-icon .tooltip {
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 0;
+      transform: translateX(0);
+      background: #1e293b;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 400;
+      white-space: normal;
+      width: max-content;
+      max-width: 280px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s;
+      z-index: 1000;
+      text-align: left;
+      line-height: 1.4;
+      pointer-events: none;
+    }
+    .info-icon .tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 12px;
+      transform: translateX(0);
+      border: 6px solid transparent;
+      border-top-color: #1e293b;
+    }
+    .info-icon:hover .tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+    .tooltip-label {
+      font-weight: 600;
+      color: #94a3b8;
+      display: block;
+      margin-bottom: 2px;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Priority badges */
+    .priority {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      margin-right: 6px;
+    }
+    .priority-stat { background: var(--stat-bg); color: var(--stat); }
+    .priority-urgent { background: var(--urgent-bg); color: var(--urgent); }
+    .priority-routine { background: var(--routine-bg); color: var(--routine); }
+    .priority-ext { background: var(--ext-bg); color: var(--ext); }
+
+    /* Add Item Input */
+    .add-item-input {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+      padding: 8px;
+      background: #fffbeb;
+      border: 1px dashed var(--custom-border);
+      border-radius: 6px;
+    }
+    .add-item-input input {
+      flex: 1;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+    .add-item-input input:focus { outline: none; border-color: var(--primary); }
+    .add-item-input input::placeholder { color: #9ca3af; }
+
+    /* Sidebar */
+    .sidebar { position: sticky; top: 80px; height: fit-content; }
+    .sidebar-card {
+      background: var(--bg);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      margin-bottom: 12px;
+    }
+    .sidebar-title {
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .selected-count {
+      background: var(--primary);
+      color: white;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+    }
+
+    /* Selected Items */
+    .selected-list { max-height: 350px; overflow-y: auto; }
+    .selected-section { margin-bottom: 12px; }
+    .selected-section:last-child { margin-bottom: 0; }
+    .selected-section-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--border);
+    }
+    .selected-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      padding: 6px 8px;
+      background: var(--bg-secondary);
+      border-radius: 4px;
+      margin-bottom: 4px;
+      font-size: 0.8rem;
+    }
+    .selected-item.custom { background: var(--custom-bg); }
+    .selected-item-text {
+      flex: 1;
+      cursor: text;
+      padding: 2px 4px;
+      border-radius: 3px;
+      min-height: 20px;
+      line-height: 1.4;
+      word-break: break-word;
+    }
+    .selected-item-text:hover { background: rgba(79, 70, 229, 0.1); }
+    .selected-item-text:focus {
+      outline: none;
+      background: white;
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+    .selected-item-remove {
+      background: none;
+      border: none;
+      color: var(--text-light);
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 0 4px;
+      opacity: 0.5;
+      flex-shrink: 0;
+    }
+    .selected-item-remove:hover { opacity: 1; color: var(--stat); }
+
+    /* Notes */
+    .notes-textarea {
+      width: 100%;
+      min-height: 60px;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.85rem;
+      resize: vertical;
+    }
+    .notes-textarea:focus { outline: none; border-color: var(--primary); }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      width: 100%;
+      font-size: 0.9rem;
+    }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-secondary { background: var(--bg-secondary); color: var(--text); border: 1px solid var(--border); }
+    .btn-secondary:hover { background: var(--border); }
+
+    /* References Section - Collapsible */
+    .references-section {
+      margin-top: 32px;
+      border-top: 2px solid var(--border);
+      padding-top: 20px;
+    }
+    .collapsible { margin-bottom: 8px; }
+    .collapsible-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding: 12px 16px;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+    .collapsible-header:hover { background: #e5e7eb; }
+    .collapsible-icon { transition: transform 0.2s; }
+    .collapsible.open .collapsible-icon { transform: rotate(180deg); }
+    .collapsible-content {
+      display: none;
+      padding: 16px;
+      background: var(--bg-secondary);
+      border-radius: 0 0 8px 8px;
+      margin-top: -8px;
+      padding-top: 24px;
+    }
+    .collapsible.open .collapsible-content { display: block; }
+
+    /* Reference Content Styling */
+    .ref-item {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.85rem;
+    }
+    .ref-item:last-child { border-bottom: none; }
+    .ref-term { font-weight: 600; color: var(--primary); }
+    .ref-definition { color: var(--text); margin-left: 8px; }
+
+    /* Differential Table */
+    .diff-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+      margin-top: 8px;
+    }
+    .diff-table th, .diff-table td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .diff-table th { background: var(--bg); font-weight: 600; }
+
+    /* Evidence Table */
+    .evidence-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+      margin-top: 8px;
+    }
+    .evidence-table th, .evidence-table td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .evidence-table th { background: var(--bg); font-weight: 600; }
+    .evidence-level {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      background: #dbeafe;
+      color: #1e40af;
+    }
+    .evidence-table a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .evidence-table a:hover {
+      text-decoration: underline;
+    }
+
+    /* Notes List */
+    .notes-list { list-style: none; }
+    .notes-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.85rem;
+      position: relative;
+      padding-left: 16px;
+    }
+    .notes-list li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: bold;
+    }
+    .notes-list li:last-child { border-bottom: none; }
+
+    /* Appendix Content */
+    .appendix-content {
+      background: white;
+      padding: 16px;
+      border-radius: 6px;
+      font-family: 'Monaco', 'Menlo', monospace;
+      font-size: 0.8rem;
+      white-space: pre-wrap;
+      line-height: 1.6;
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid var(--border);
+      margin-top: 8px;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #1e293b;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      z-index: 1000;
+      animation: slideIn 0.3s ease;
+    }
+    @keyframes slideIn {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Empty State */
+    .empty-state { text-align: center; padding: 60px 20px; color: var(--text-light); }
+    .empty-state h3 { margin-bottom: 8px; color: var(--text); }
+
+    /* Priority Legend */
+    .priority-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 10px;
+      background: var(--bg-secondary);
+      border-radius: 6px;
+      font-size: 0.75rem;
+      margin-top: 12px;
+    }
+    .legend-item { display: flex; align-items: center; gap: 4px; }
+
+    /* Icon Legend */
+    .icon-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 8px 10px;
+      background: var(--bg-secondary);
+      border-radius: 6px;
+      font-size: 0.7rem;
+      margin-top: 8px;
+      color: var(--text-light);
+    }
+    .icon-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .icon-legend-item .mini-icon {
+      width: 16px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      font-size: 0.6rem;
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-content">
+    <div class="header-left">
+      <a href="../" class="back-btn">← Home</a>
+      <span class="logo">Clinical Plan Builder</span>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="controls">
+    <div class="controls-row">
+      <div class="control-group">
+        <label for="diagnosis-select">Diagnosis</label>
+        <select id="diagnosis-select">
+          <option value="">Select a diagnosis...</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label>Care Setting</label>
+        <div class="venue-tabs" id="venue-tabs">
+          <button class="venue-tab" data-venue="ED">ED</button>
+          <button class="venue-tab" data-venue="HOSP">Hospital</button>
+          <button class="venue-tab" data-venue="OPD">Outpatient</button>
+          <button class="venue-tab" data-venue="ICU">ICU</button>
+        </div>
+      </div>
+    </div>
+    <div class="priority-legend">
+      <div class="legend-item"><span class="priority priority-stat">STAT</span> Immediate</div>
+      <div class="legend-item"><span class="priority priority-urgent">URGENT</span> Within hours</div>
+      <div class="legend-item"><span class="priority priority-routine">ROUTINE</span> Standard</div>
+      <div class="legend-item"><span class="priority priority-ext">EXT</span> Extended</div>
+    </div>
+    <div class="icon-legend">
+      <div class="icon-legend-item"><span class="mini-icon icon-rationale">ℹ</span> Rationale</div>
+      <div class="icon-legend-item"><span class="mini-icon icon-indication">💊</span> Indication</div>
+      <div class="icon-legend-item"><span class="mini-icon icon-timing">⏱</span> Timing</div>
+      <div class="icon-legend-item"><span class="mini-icon icon-target">🎯</span> Target</div>
+      <div class="icon-legend-item"><span class="mini-icon icon-contraindication">⚠</span> Contraindication</div>
+      <div class="icon-legend-item"><span class="mini-icon icon-monitoring">📊</span> Monitoring</div>
+    </div>
+  </div>
+
+  <div class="main-layout">
+    <div class="plan-content" id="plan-content">
+      <div class="empty-state">
+        <h3>Select a Diagnosis</h3>
+        <p>Choose a diagnosis and care setting to view the clinical plan.</p>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-title">
+          Selected Items
+          <span class="selected-count" id="selected-count">0</span>
+        </div>
+        <div class="selected-list" id="selected-list">
+          <p style="color: var(--text-light); font-size: 0.85rem;">No items selected</p>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-title">Additional Notes</div>
+        <textarea class="notes-textarea" id="notes" placeholder="Add notes..."></textarea>
+      </div>
+
+      <button class="btn btn-primary" id="copy-btn" style="margin-bottom: 8px;">Copy to Clipboard</button>
+      <button class="btn btn-secondary" id="clear-btn">Clear Selection</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  /**
+   * =======================================================================
+   * CLINICAL PLAN BUILDER - JavaScript Application
+   * =======================================================================
+   *
+   * ARCHITECTURE:
+   *   - Loads plan data from /docs/data/plans.json
+   *   - Renders sections based on selected venue (ED, HOSP, OPD, ICU)
+   *   - Tracks selected items in Map for sidebar display
+   *   - Supports custom item creation and item text editing
+   *
+   * STATE VARIABLES:
+   *   - plansData: Object containing all loaded plans from JSON
+   *   - currentDiagnosis: Currently selected plan name
+   *   - currentVenue: Active setting filter (ED, HOSP, OPD, ICU)
+   *   - selectedItems: Map of selected items (key: sectionName|itemName)
+   *   - customItems: Map of user-created custom items
+   *
+   * KEY FUNCTIONS:
+   *   - loadPlans(): Fetches and parses plans.json
+   *   - renderPlan(): Builds HTML for current plan/venue
+   *   - toggleItem(): Handles item selection/deselection
+   *   - updateSelectedList(): Refreshes sidebar with selections
+   *   - copyToClipboard(): Exports plan as formatted text
+   * =======================================================================
+   */
+
+  // Application State
+  let plansData = {};
+  let currentDiagnosis = null;
+  let currentVenue = null;
+  let selectedItems = new Map();  // Key: "sectionName|itemName", Value: display object
+  let customItems = new Map();    // Key: "sectionName|customText", Value: display object
+
+  // DOM Element References
+  const diagnosisSelect = document.getElementById('diagnosis-select');
+  const venueTabs = document.getElementById('venue-tabs');
+  const planContent = document.getElementById('plan-content');
+  const selectedList = document.getElementById('selected-list');
+  const selectedCount = document.getElementById('selected-count');
+  const notesTextarea = document.getElementById('notes');
+  const copyBtn = document.getElementById('copy-btn');
+  const clearBtn = document.getElementById('clear-btn');
+
+  /**
+   * Load plans data from JSON file and populate diagnosis selector
+   */
+  async function loadPlans() {
+    try {
+      const response = await fetch('../data/plans.json');
+      plansData = await response.json();
+      Object.keys(plansData).forEach(d => {
+        const opt = document.createElement('option');
+        opt.value = d;
+        opt.textContent = d;
+        diagnosisSelect.appendChild(opt);
+      });
+    } catch (e) {
+      planContent.innerHTML = '<div class="empty-state"><h3>Unable to Load Plans</h3></div>';
+    }
+  }
+
+  diagnosisSelect.addEventListener('change', e => {
+    currentDiagnosis = e.target.value;
+    selectedItems.clear();
+    customItems.clear();
+    updateSelectedList();
+    if (currentDiagnosis && currentVenue) renderPlan();
+  });
+
+  venueTabs.addEventListener('click', e => {
+    if (e.target.classList.contains('venue-tab')) {
+      venueTabs.querySelectorAll('.venue-tab').forEach(t => t.classList.remove('active'));
+      e.target.classList.add('active');
+      currentVenue = e.target.dataset.venue;
+      if (currentDiagnosis && currentVenue) renderPlan();
+    }
+  });
+
+  /**
+   * Map priority string to CSS class for color coding
+   * @param {string} p - Priority value (STAT, URGENT, ROUTINE, EXT, or -)
+   * @returns {string|null} CSS class name or null if not applicable
+   */
+  function getPriorityClass(p) {
+    if (!p || p === '-') return null;
+    const pl = p.toLowerCase();
+    if (pl === 'stat') return 'priority-stat';
+    if (pl === 'urgent') return 'priority-urgent';
+    if (pl === 'routine') return 'priority-routine';
+    if (pl === 'ext') return 'priority-ext';
+    return null;
+  }
+
+  /**
+   * Safely escape HTML to prevent XSS
+   */
+  function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  /**
+   * Convert markdown links [text](url) to HTML <a> tags
+   * Used for citation sources in Evidence & References section
+   */
+  function renderMarkdownLinks(text) {
+    if (!text) return '';
+    // First escape HTML to prevent XSS, then convert markdown links
+    const escaped = escapeHtml(text);
+    // Match [text](url) pattern and convert to <a> tags
+    return escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+  }
+
+  /**
+   * Render the plan for the current diagnosis and venue
+   * Builds HTML including:
+   *   - Clinical notes banner (if plan.notes exists)
+   *   - Sections with items filtered by venue
+   *   - Icon tooltips for metadata (rationale, timing, target, contraindications, monitoring)
+   *   - Custom item input fields per subsection
+   */
+  function renderPlan() {
+    const plan = plansData[currentDiagnosis];
+    if (!plan || !plan.sections) {
+      planContent.innerHTML = '<div class="empty-state"><h3>No data available</h3></div>';
+      return;
+    }
+
+    let html = '';
+
+    // Clinical Notes Banner (if notes exist)
+    if (plan.notes && plan.notes.length) {
+      html += `<div class="clinical-notes-banner" onclick="this.classList.toggle('open')">
+        <div class="clinical-notes-banner-header">
+          <span class="icon">💡</span>
+          <span>Clinical Pearls & Notes</span>
+          <span class="count">${plan.notes.length}</span>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="clinical-notes-list">`;
+      plan.notes.forEach(n => {
+        html += `<div class="clinical-note"><span class="bullet">•</span>${escapeHtml(n)}</div>`;
+      });
+      html += `</div></div>`;
+    }
+
+    // Sections
+    for (const [sectionName, subsections] of Object.entries(plan.sections)) {
+      let sectionHasItems = false;
+      let sectionHtml = `<div class="section" data-section="${sectionName}">
+        <div class="section-header"><h2 class="section-title">${sectionName}</h2></div>`;
+
+      for (const [subsectionName, items] of Object.entries(subsections)) {
+        const filtered = items.filter(item => {
+          const p = item[currentVenue];
+          return p && p !== '-';
+        });
+        if (!filtered.length) continue;
+        sectionHasItems = true;
+
+        sectionHtml += `<div class="subsection"><div class="subsection-title">${subsectionName}</div><div class="item-list">`;
+        filtered.forEach((item, idx) => {
+          const itemId = `${sectionName}__${subsectionName}__${idx}`;
+          const priority = item[currentVenue];
+          const pc = getPriorityClass(priority);
+          const sel = selectedItems.has(itemId);
+          const name = item.item || item.name || item.treatment || 'Item';
+
+          // Build icons HTML
+          let iconsHtml = '';
+          const hasIcons = item.rationale || item.indication || item.timing || item.target || item.contraindications || item.monitoring;
+
+          if (hasIcons) {
+            iconsHtml = '<div class="item-icons">';
+
+            if (item.rationale) {
+              iconsHtml += `<div class="info-icon icon-rationale">ℹ<div class="tooltip"><span class="tooltip-label">Rationale</span>${escapeHtml(item.rationale)}</div></div>`;
+            }
+            if (item.indication) {
+              iconsHtml += `<div class="info-icon icon-indication">💊<div class="tooltip"><span class="tooltip-label">Indication</span>${escapeHtml(item.indication)}</div></div>`;
+            }
+            if (item.timing) {
+              iconsHtml += `<div class="info-icon icon-timing">⏱<div class="tooltip"><span class="tooltip-label">Timing</span>${escapeHtml(item.timing)}</div></div>`;
+            }
+            if (item.target) {
+              iconsHtml += `<div class="info-icon icon-target">🎯<div class="tooltip"><span class="tooltip-label">Target</span>${escapeHtml(item.target)}</div></div>`;
+            }
+            if (item.contraindications) {
+              iconsHtml += `<div class="info-icon icon-contraindication">⚠<div class="tooltip"><span class="tooltip-label">Contraindications</span>${escapeHtml(item.contraindications)}</div></div>`;
+            }
+            if (item.monitoring) {
+              iconsHtml += `<div class="info-icon icon-monitoring">📊<div class="tooltip"><span class="tooltip-label">Monitoring</span>${escapeHtml(item.monitoring)}</div></div>`;
+            }
+
+            iconsHtml += '</div>';
+          }
+
+          // Handle structured dosing (object) vs legacy dosing (string)
+          let dosingBadgeHtml = '';
+          if (item.dosing) {
+            const isStructured = typeof item.dosing === 'object';
+            const doseOptions = isStructured ? item.dosing.doseOptions : null;
+            const hasMultipleDoses = doseOptions && doseOptions.length > 1;
+            const orderSentence = isStructured ? item.dosing.orderSentence : null;
+            const displayDosing = isStructured ? (item.dosing.orderSentence || item.dosing.instructions) : item.dosing;
+            const fullInstructions = isStructured ? item.dosing.instructions : item.dosing;
+            const clickableClass = orderSentence ? 'clickable' : '';
+
+            // Build dosing info icon (shows full instructions on hover)
+            const dosingInfoIcon = fullInstructions ?
+              `<span class="dosing-info-icon">ℹ<span class="tooltip"><span class="dosing-info-label">Dosing Guide</span>${escapeHtml(fullInstructions)}</span></span>` : '';
+
+            if (hasMultipleDoses) {
+              // Multiple dose options - show dropdown
+              let optionsHtml = doseOptions.map((opt, idx) =>
+                `<div class="dose-option" data-order-sentence="${escapeHtml(opt.orderSentence)}" onclick="selectDoseOption(event, this)">${escapeHtml(opt.orderSentence)}</div>`
+              ).join('');
+              // Add custom instructions input at bottom of dropdown
+              optionsHtml += `<div class="dose-custom-input-container">
+                <input type="text" class="dose-custom-input" placeholder="Add custom instructions..." data-item-id="${itemId}" onkeydown="handleCustomInstructions(event, this)">
+              </div>`;
+              dosingBadgeHtml = `<div class="dosing-dropdown-container" data-item-id="${itemId}">
+                <span class="item-dosing-badge clickable multi-dose"
+                  onclick="toggleDoseDropdown(event, this)">${escapeHtml(displayDosing)} ▼</span>
+                <div class="dose-dropdown">${optionsHtml}</div>
+              </div>${dosingInfoIcon}`;
+            } else {
+              // Single dose - direct copy on click
+              dosingBadgeHtml = `<span class="item-dosing-badge ${clickableClass}"
+                data-order-sentence="${orderSentence ? escapeHtml(orderSentence) : ''}"
+                onclick="copyOrderSentence(event, this)">${escapeHtml(displayDosing)}</span>${dosingInfoIcon}`;
+            }
+          }
+
+          sectionHtml += `<div class="item ${sel ? 'selected' : ''}" data-id="${itemId}" data-section="${sectionName}" data-subsection="${subsectionName}">
+            <div class="item-primary">
+              <input type="checkbox" ${sel ? 'checked' : ''}>
+              <div class="item-name">${pc ? `<span class="priority ${pc}">${priority}</span>` : ''}${escapeHtml(name)}</div>
+              ${dosingBadgeHtml}
+            </div>
+            ${iconsHtml}
+          </div>`;
+        });
+        sectionHtml += '</div></div>';
+      }
+
+      // Custom items for this section
+      const sectionCustom = [...customItems.entries()].filter(([id, item]) => item.section === sectionName);
+      if (sectionCustom.length) {
+        sectionHtml += `<div class="subsection"><div class="subsection-title">Custom Items</div><div class="item-list">`;
+        sectionCustom.forEach(([cid, citem]) => {
+          const sel = selectedItems.has(cid);
+          sectionHtml += `<div class="item custom ${sel ? 'selected' : ''}" data-id="${cid}" data-section="${sectionName}" data-custom="true">
+            <div class="item-primary">
+              <input type="checkbox" ${sel ? 'checked' : ''}>
+              <div class="item-name">${escapeHtml(citem.name)}</div>
+            </div>
+          </div>`;
+        });
+        sectionHtml += '</div></div>';
+      }
+
+      // Add item input
+      sectionHtml += `<div class="add-item-input">
+        <input type="text" placeholder="Add custom item to ${sectionName}... (press Enter)" data-section="${sectionName}" class="custom-input">
+      </div>`;
+
+      sectionHtml += '</div>';
+      if (sectionHasItems || sectionCustom.length) html += sectionHtml;
+    }
+
+    // References Section
+    html += `<div class="references-section">`;
+
+    // Definitions
+    if (plan.definitions && plan.definitions.length) {
+      html += `<div class="collapsible">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <span>📖 Definitions</span><span class="collapsible-icon">▼</span>
+        </div>
+        <div class="collapsible-content">`;
+      plan.definitions.forEach(d => {
+        html += `<div class="ref-item"><span class="ref-term">${escapeHtml(d.term)}:</span><span class="ref-definition">${escapeHtml(d.definition)}</span></div>`;
+      });
+      html += `</div></div>`;
+    }
+
+    // Differential
+    if (plan.differential && plan.differential.length) {
+      html += `<div class="collapsible">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <span>🔍 Differential Diagnosis</span><span class="collapsible-icon">▼</span>
+        </div>
+        <div class="collapsible-content">
+          <table class="diff-table">
+            <tr><th>Diagnosis</th><th>Features</th><th>Tests</th></tr>`;
+      plan.differential.forEach(d => {
+        html += `<tr><td><strong>${escapeHtml(d.diagnosis)}</strong></td><td>${escapeHtml(d.features)}</td><td>${escapeHtml(d.tests)}</td></tr>`;
+      });
+      html += `</table></div></div>`;
+    }
+
+    // Evidence
+    if (plan.evidence && plan.evidence.length) {
+      html += `<div class="collapsible">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <span>📚 Evidence & References</span><span class="collapsible-icon">▼</span>
+        </div>
+        <div class="collapsible-content">
+          <table class="evidence-table">
+            <tr><th>Recommendation</th><th>Level</th><th>Source</th></tr>`;
+      plan.evidence.forEach(e => {
+        html += `<tr><td>${escapeHtml(e.recommendation)}</td><td><span class="evidence-level">${escapeHtml(e.level)}</span></td><td>${renderMarkdownLinks(e.source)}</td></tr>`;
+      });
+      html += `</table></div></div>`;
+    }
+
+    // Appendices
+    if (plan.appendices && plan.appendices.length) {
+      plan.appendices.forEach(app => {
+        html += `<div class="collapsible">
+          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+            <span>📋 ${escapeHtml(app.title)}</span><span class="collapsible-icon">▼</span>
+          </div>
+          <div class="collapsible-content">
+            <div class="appendix-content">${escapeHtml(app.content)}</div>
+          </div>
+        </div>`;
+      });
+    }
+
+    html += `</div>`;
+
+    planContent.innerHTML = html || '<div class="empty-state"><h3>No items for this venue</h3></div>';
+
+    // Attach item click handlers
+    planContent.querySelectorAll('.item').forEach(item => {
+      item.addEventListener('click', e => {
+        // Don't toggle if clicking on checkbox, icons, or tooltips
+        if (e.target.tagName === 'INPUT' || e.target.closest('.info-icon')) return;
+        toggleItem(item);
+      });
+      const checkbox = item.querySelector('input[type="checkbox"]');
+      if (checkbox) {
+        checkbox.addEventListener('change', () => toggleItem(item));
+      }
+    });
+
+    // Attach custom input handlers
+    planContent.querySelectorAll('.custom-input').forEach(input => {
+      input.addEventListener('keydown', e => {
+        if (e.key === 'Enter' && input.value.trim()) {
+          const section = input.dataset.section;
+          const name = input.value.trim();
+          const cid = `custom__${section}__${Date.now()}`;
+          const citem = { name, section, isCustom: true };
+          customItems.set(cid, citem);
+          selectedItems.set(cid, { ...citem, editedName: name });
+          input.value = '';
+          renderPlan();
+          updateSelectedList();
+          showToast('Item added');
+        }
+      });
+    });
+  }
+
+  window.toggleCollapsible = function(header) {
+    header.parentElement.classList.toggle('open');
+  };
+
+  function toggleItem(itemEl) {
+    const id = itemEl.dataset.id;
+    const cb = itemEl.querySelector('input[type="checkbox"]');
+    const section = itemEl.dataset.section;
+    const subsection = itemEl.dataset.subsection || '';
+    const isCustom = itemEl.dataset.custom === 'true';
+
+    if (selectedItems.has(id)) {
+      selectedItems.delete(id);
+      itemEl.classList.remove('selected');
+      cb.checked = false;
+    } else {
+      let itemData;
+      if (isCustom) {
+        itemData = customItems.get(id);
+      } else {
+        const plan = plansData[currentDiagnosis];
+        const items = plan.sections[section]?.[subsection] || [];
+        const idx = parseInt(id.split('__').pop());
+        itemData = items[idx];
+      }
+      if (itemData) {
+        const name = itemData.item || itemData.name || itemData.treatment || 'Item';
+        // Default to first/default order sentence for all medications
+        // User can select different dose from dropdown which will update in place
+        let displayName = name;
+        if (itemData.dosing) {
+          const isStructured = typeof itemData.dosing === 'object';
+          if (isStructured && itemData.dosing.orderSentence) {
+            // Structured dosing: show default order sentence (first option)
+            displayName = itemData.dosing.orderSentence;
+          } else {
+            // Legacy format: show "Drug — dosing instructions"
+            const dosingText = isStructured ? itemData.dosing.instructions : itemData.dosing;
+            displayName = `${name} — ${dosingText}`;
+          }
+        }
+        selectedItems.set(id, { ...itemData, section, subsection, isCustom, editedName: displayName, originalName: name, selectedDose: displayName });
+      }
+      itemEl.classList.add('selected');
+      cb.checked = true;
+    }
+    updateSelectedList();
+  }
+
+  function updateSelectedList() {
+    selectedCount.textContent = selectedItems.size;
+    if (!selectedItems.size) {
+      selectedList.innerHTML = '<p style="color: var(--text-light); font-size: 0.85rem;">No items selected</p>';
+      return;
+    }
+
+    const grouped = {};
+    selectedItems.forEach((item, id) => {
+      const sec = item.section || 'Other';
+      if (!grouped[sec]) grouped[sec] = [];
+      grouped[sec].push({ id, ...item });
+    });
+
+    let html = '';
+    for (const [sec, items] of Object.entries(grouped)) {
+      html += `<div class="selected-section"><div class="selected-section-label">${sec}</div>`;
+      items.forEach(item => {
+        html += `<div class="selected-item ${item.isCustom ? 'custom' : ''}" data-id="${item.id}">
+          <span class="selected-item-text" contenteditable="true" data-id="${item.id}">${item.editedName}</span>
+          <button class="selected-item-remove" data-id="${item.id}">×</button>
+        </div>`;
+      });
+      html += '</div>';
+    }
+    selectedList.innerHTML = html;
+
+    // Attach remove handlers
+    selectedList.querySelectorAll('.selected-item-remove').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const id = btn.dataset.id;
+        selectedItems.delete(id);
+        const itemEl = planContent.querySelector(`.item[data-id="${id}"]`);
+        if (itemEl) {
+          itemEl.classList.remove('selected');
+          itemEl.querySelector('input[type="checkbox"]').checked = false;
+        }
+        updateSelectedList();
+      });
+    });
+
+    // Attach inline edit handlers
+    selectedList.querySelectorAll('.selected-item-text').forEach(span => {
+      span.addEventListener('blur', () => {
+        const id = span.dataset.id;
+        const item = selectedItems.get(id);
+        if (item) {
+          item.editedName = span.textContent.trim() || item.editedName;
+          selectedItems.set(id, item);
+        }
+      });
+      span.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          span.blur();
+        }
+      });
+    });
+  }
+
+  function generateOutput() {
+    if (!selectedItems.size) return '';
+    let out = `CLINICAL PLAN: ${currentDiagnosis}\nSetting: ${currentVenue}\nGenerated: ${new Date().toLocaleString()}\n${'─'.repeat(50)}\n\n`;
+
+    const grouped = {};
+    selectedItems.forEach((item, id) => {
+      const sec = item.section || 'Other';
+      if (!grouped[sec]) grouped[sec] = [];
+      grouped[sec].push(item);
+    });
+
+    for (const [sec, items] of Object.entries(grouped)) {
+      out += `## ${sec}\n`;
+      items.forEach(item => {
+        const name = item.editedName || 'Item';
+        const priority = item[currentVenue] || '';
+        out += priority ? `• [${priority}] ${name}\n` : `• ${name}\n`;
+      });
+      out += '\n';
+    }
+
+    const notes = notesTextarea.value.trim();
+    if (notes) out += `## Additional Notes\n${notes}\n`;
+    return out;
+  }
+
+  copyBtn.addEventListener('click', () => {
+    const out = generateOutput();
+    if (!out) { showToast('No items selected'); return; }
+    navigator.clipboard.writeText(out).then(() => showToast('Copied!')).catch(() => showToast('Failed'));
+  });
+
+  clearBtn.addEventListener('click', () => {
+    selectedItems.clear();
+    customItems.clear();
+    notesTextarea.value = '';
+    renderPlan();
+    updateSelectedList();
+  });
+
+  // Copy order sentence to clipboard when dosing badge is clicked (single dose)
+  // Also selects the item if not already selected
+  window.copyOrderSentence = function(event, badge) {
+    event.stopPropagation();
+
+    // Find the item element and select it if not already
+    const itemEl = badge.closest('.item');
+    if (itemEl && !itemEl.classList.contains('selected')) {
+      toggleItem(itemEl);
+    }
+
+    const orderSentence = badge.dataset.orderSentence;
+    if (orderSentence) {
+      navigator.clipboard.writeText(orderSentence).then(() => {
+        // Visual feedback
+        badge.classList.add('copied');
+        showToast(`Copied: ${orderSentence}`);
+        setTimeout(() => badge.classList.remove('copied'), 1500);
+      }).catch(() => {
+        showToast('Failed to copy');
+      });
+    } else {
+      // Legacy dosing - copy the full text
+      const fullDosing = badge.title || badge.textContent;
+      navigator.clipboard.writeText(fullDosing).then(() => {
+        badge.classList.add('copied');
+        showToast('Copied dosing instructions');
+        setTimeout(() => badge.classList.remove('copied'), 1500);
+      }).catch(() => {
+        showToast('Failed to copy');
+      });
+    }
+  };
+
+  // Toggle dose dropdown for medications with multiple dose options
+  // Also selects the item (checks checkbox) and adds default sentence to Selected Items
+  window.toggleDoseDropdown = function(event, badge) {
+    event.stopPropagation();
+
+    const container = badge.closest('.dosing-dropdown-container');
+    const itemId = container ? container.dataset.itemId : null;
+    const itemEl = itemId ? planContent.querySelector(`.item[data-id="${itemId}"]`) : null;
+
+    // If item not selected, select it first with default sentence
+    if (itemEl && !selectedItems.has(itemId)) {
+      selectItemWithDefaultDose(itemEl, itemId);
+    }
+
+    // Close any other open dropdowns
+    document.querySelectorAll('.dose-dropdown.show').forEach(dd => {
+      if (dd !== badge.nextElementSibling) dd.classList.remove('show');
+    });
+    // Toggle this dropdown
+    const dropdown = badge.nextElementSibling;
+    if (dropdown) {
+      dropdown.classList.toggle('show');
+    }
+  };
+
+  // Helper: Select an item with its default dose sentence
+  function selectItemWithDefaultDose(itemEl, itemId) {
+    const section = itemEl.dataset.section;
+    const subsection = itemEl.dataset.subsection || '';
+    const plan = plansData[currentDiagnosis];
+    const items = plan.sections[section]?.[subsection] || [];
+    const idx = parseInt(itemId.split('__').pop());
+    const itemData = items[idx];
+
+    if (itemData) {
+      const name = itemData.item || itemData.name || itemData.treatment || 'Item';
+      const isStructured = itemData.dosing && typeof itemData.dosing === 'object';
+      // Use default order sentence (first option)
+      const defaultDose = isStructured ? itemData.dosing.orderSentence : `${name} — ${itemData.dosing || ''}`;
+
+      selectedItems.set(itemId, {
+        ...itemData,
+        section,
+        subsection,
+        isCustom: false,
+        editedName: defaultDose,
+        originalName: name,
+        selectedDose: defaultDose
+      });
+
+      itemEl.classList.add('selected');
+      const cb = itemEl.querySelector('input[type="checkbox"]');
+      if (cb) cb.checked = true;
+      updateSelectedList();
+    }
+  }
+
+  // Select a specific dose option from the dropdown - updates sidebar AND copies
+  window.selectDoseOption = function(event, option) {
+    event.stopPropagation();
+    const orderSentence = option.dataset.orderSentence;
+    const container = option.closest('.dosing-dropdown-container');
+    const itemId = container ? container.dataset.itemId : null;
+    const itemEl = itemId ? planContent.querySelector(`.item[data-id="${itemId}"]`) : null;
+
+    if (orderSentence) {
+      // If item not selected, select it first
+      if (itemEl && !selectedItems.has(itemId)) {
+        selectItemWithDefaultDose(itemEl, itemId);
+      }
+
+      // Update the badge text to show selected dose
+      const badge = container ? container.querySelector('.item-dosing-badge') : null;
+      if (badge) {
+        badge.textContent = orderSentence + ' ▼';
+      }
+
+      // Copy to clipboard
+      navigator.clipboard.writeText(orderSentence).then(() => {
+        option.classList.add('copied');
+        showToast(`Copied: ${orderSentence}`);
+
+        // Update sidebar with selected dose (replace, not append)
+        if (itemId && selectedItems.has(itemId)) {
+          const item = selectedItems.get(itemId);
+          item.editedName = orderSentence;
+          item.selectedDose = orderSentence;
+          selectedItems.set(itemId, item);
+          updateSelectedList();
+        }
+
+        setTimeout(() => {
+          option.classList.remove('copied');
+          // Close dropdown after copy
+          option.closest('.dose-dropdown').classList.remove('show');
+        }, 800);
+      }).catch(() => {
+        showToast('Failed to copy');
+      });
+    }
+  };
+
+  // Handle custom instructions input in dropdown
+  window.handleCustomInstructions = function(event, input) {
+    if (event.key === 'Enter' && input.value.trim()) {
+      event.preventDefault();
+      event.stopPropagation();
+      const customText = input.value.trim();
+      const container = input.closest('.dosing-dropdown-container');
+      const itemId = container ? container.dataset.itemId : null;
+      const itemEl = itemId ? planContent.querySelector(`.item[data-id="${itemId}"]`) : null;
+
+      // Auto-select item if not already selected
+      if (itemEl && !selectedItems.has(itemId)) {
+        selectItemWithDefaultDose(itemEl, itemId);
+      }
+
+      if (itemId && selectedItems.has(itemId)) {
+        const item = selectedItems.get(itemId);
+        // Append custom instructions to the current dose
+        if (item.selectedDose) {
+          item.editedName = `${item.selectedDose} — ${customText}`;
+        } else {
+          const name = item.originalName || item.item || 'Item';
+          item.editedName = `${name} — ${customText}`;
+        }
+        item.customInstructions = customText;
+        selectedItems.set(itemId, item);
+        updateSelectedList();
+        showToast(`Added: ${customText}`);
+        input.value = '';
+        // Close dropdown
+        input.closest('.dose-dropdown').classList.remove('show');
+      }
+    }
+  };
+
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('.dosing-dropdown-container')) {
+      document.querySelectorAll('.dose-dropdown.show').forEach(dd => dd.classList.remove('show'));
+    }
+  });
+
+  function showToast(msg) {
+    const existing = document.querySelector('.toast');
+    if (existing) existing.remove();
+    const t = document.createElement('div');
+    t.className = 'toast';
+    t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(() => t.remove(), 2500);
+  }
+
+  loadPlans();
+</script>
+
+</body>
+</html>

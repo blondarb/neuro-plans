@@ -1,0 +1,2606 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Evidence-based clinical decision support templates for neurological diagnoses">
+      
+      
+      
+        <link rel="canonical" href="https://blondarb.github.io/neuro-plans/skills/neuro-builder-skill/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Builder Skill - Neuro Clinical Plans</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#neuro-clinical-recommendation-builder" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Neuro Clinical Plans" class="md-header__button md-logo" aria-label="Neuro Clinical Plans" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Neuro Clinical Plans
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Builder Skill
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/blondarb/neuro-plans" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    blondarb/neuro-plans
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Neuro Clinical Plans" class="md-nav__button md-logo" aria-label="Neuro Clinical Plans" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Neuro Clinical Plans
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/blondarb/neuro-plans" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    blondarb/neuro-plans
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clinical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interactive Clinical Tool
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clinical Plans
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Clinical Plans
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Seizures & Epilepsy
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Seizures & Epilepsy
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/status-epilepticus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Status Epilepticus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/new-onset-seizure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    New Onset Seizure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/breakthrough-seizure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Breakthrough Seizure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stroke & Vascular
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Stroke & Vascular
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/acute-ischemic-stroke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acute Ischemic Stroke
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/transient-ischemic-attack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transient Ischemic Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/intracerebral-hemorrhage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intracerebral Hemorrhage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/subarachnoid-hemorrhage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Subarachnoid Hemorrhage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neuromuscular
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Neuromuscular
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/guillain-barre-syndrome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guillain-Barré Syndrome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/myasthenia-gravis-crisis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Myasthenic Crisis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/myasthenia-gravis-new-diagnosis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Myasthenia Gravis - New Diagnosis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/neuromuscular-respiratory-failure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neuromuscular Respiratory Failure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/peripheral-neuropathy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Peripheral Neuropathy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CNS Infections
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CNS Infections
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/bacterial-meningitis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bacterial Meningitis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/hsv-encephalitis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HSV Encephalitis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/autoimmune-encephalitis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autoimmune Encephalitis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spinal Emergencies
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Spinal Emergencies
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/acute-myelopathy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acute Myelopathy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/spinal-cord-compression-malignant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spinal Cord Compression (Malignant)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/cauda-equina-syndrome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cauda Equina Syndrome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/epidural-abscess/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Epidural Abscess
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neuro-Oncology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Neuro-Oncology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/brain-metastases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brain Metastases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critical Care
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Critical Care
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/elevated-icp-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Elevated ICP Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demyelinating
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Demyelinating
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/ms-new-diagnosis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MS New Diagnosis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Other
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Other
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/rapidly-progressive-dementia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rapidly Progressive Dementia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/vertigo-dizziness-evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vertigo / Dizziness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    References
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/lp-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LP Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/tracker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Template Tracker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#diagnosis-scoping-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnosis Scoping Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#critical-comprehensive-setting-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CRITICAL: Comprehensive Setting Coverage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting Definitions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priority-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Priority Definitions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-style-directive-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Writing Style: Directive Language
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-4-guidance-diagnosis-specific-content-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Section 4 Guidance: Diagnosis-Specific Content Required
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#builder-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder Principles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-coverage-checklist-validate-before-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting Coverage Checklist (Validate Before Output)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-6-monitoring-parameters-guidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Section 6 Monitoring Parameters Guidance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lumbar-puncture-guidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lumbar Puncture Guidance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change Log
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<hr />
+<p>name: neuro-builder
+description: Generates structured, evidence-based clinical decision support recommendations for neurological diagnoses. Use when creating clinical workup plans, treatment protocols, or diagnostic recommendations for neurologists. Triggers on requests for clinical recommendations, diagnostic workups, treatment plans for neurological conditions, or references to teleneurohospitalist content.</p>
+<hr />
+<h1 id="neuro-clinical-recommendation-builder">Neuro Clinical Recommendation Builder<a class="headerlink" href="#neuro-clinical-recommendation-builder" title="Permanent link">&para;</a></h1>
+<p>Generate comprehensive, structured clinical decision support content for neurological diagnoses across care settings (ED, Hospital, ICU, Outpatient, Rehab).</p>
+<h2 id="diagnosis-scoping-rules">Diagnosis Scoping Rules<a class="headerlink" href="#diagnosis-scoping-rules" title="Permanent link">&para;</a></h2>
+<p>Identify the clinical scenario from the diagnosis modifier:</p>
+<table>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"[Condition] - Exacerbation" or "Acute [Condition]"</td>
+<td>Focus on acute management; maintenance therapy mentioned but not detailed</td>
+</tr>
+<tr>
+<td>"[Condition] - New Diagnosis"</td>
+<td>Include full workup, differential, AND long-term treatment options</td>
+</tr>
+<tr>
+<td>"[Condition] - Chronic/Maintenance"</td>
+<td>Focus on long-term management, monitoring, lifestyle</td>
+</tr>
+<tr>
+<td>"[Condition] - Refractory"</td>
+<td>Include second-line and rare therapies prominently</td>
+</tr>
+</tbody>
+</table>
+<p>If modifier is ambiguous, generate for the most common clinical scenario AND note what would differ for other scenarios.</p>
+<h2 id="critical-comprehensive-setting-coverage">CRITICAL: Comprehensive Setting Coverage<a class="headerlink" href="#critical-comprehensive-setting-coverage" title="Permanent link">&para;</a></h2>
+<p><strong>Every recommendation must be evaluated for ALL applicable settings.</strong> Patients with the same diagnosis may present to ED, hospital, outpatient clinic, or ICU. The plan must be complete and actionable regardless of where the patient is seen.</p>
+<p><strong>For each test, study, or treatment, ask:</strong>
+1. Is this applicable in the ED? What priority?
+2. Is this applicable on the hospital floor? What priority?
+3. Is this applicable in outpatient clinic? What priority?
+4. Is this applicable in ICU? What priority?</p>
+<p><strong>Use "-" only when truly not applicable</strong> (e.g., prolactin level only useful if drawn within 20 minutes of seizure Ã¢â€ â€™ "-" for OPD). Do NOT use "-" for "less common" or "usually done elsewhere."</p>
+<p><strong>Common gaps to avoid:</strong>
+- Labs missing OPD tags (outpatient neurologists need to order workups too)
+- Imaging missing OPD tags (MRI often ordered from clinic)
+- Treatments missing HOSP tags (maintenance meds continue inpatient)
+- Referrals missing ED tags (some consults start in ED)</p>
+<h2 id="output-structure">Output Structure<a class="headerlink" href="#output-structure" title="Permanent link">&para;</a></h2>
+<p>Generate output using this exact structure. <strong>Sections 1-4 are primary action items; Sections 5-8 are reference/supporting information</strong> (may be collapsed by default in clinical tools).</p>
+<p><div class="highlight"><pre><span></span><code>DIAGNOSIS: [Name]
+ICD-10: [Code(s)]
+SCOPE: [Brief statement of what this template covers and excludes]
+
+**PRIORITY KEY:** STAT = Immediate | URGENT = Within hours | ROUTINE = Standard | EXT = Extended/atypical cases | - = Not applicable to this setting
+
+Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
+SECTION A: ACTION ITEMS
+Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
+
+## 1. LABORATORY WORKUP
+
+### 1A. Essential/Core Labs
+
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+
+### 1B. Extended Workup (Second-line)
+
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+
+### 1C. Rare/Specialized (Refractory or Atypical)
+
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+
+## 2. DIAGNOSTIC IMAGING &amp; STUDIES
+
+### 2A. Essential/First-line
+
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+
+### 2B. Extended
+
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+
+### 2C. Rare/Specialized
+
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+
+## 3. TREATMENT
+
+**CRITICAL: Each medication must be on its own row with complete prescribing information. Do NOT group drugs together.**
+
+### 3A. Acute/Emergent
+
+| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
+|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+
+### 3B. Symptomatic Treatments
+
+| Treatment | Indication | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
+|-----------|------------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+
+### 3C. Second-line/Refractory
+
+| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
+|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+
+### 3D. Disease-Modifying or Chronic Therapies (if applicable)
+
+| Treatment | Route | ED | HOSP | OPD | ICU | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring |
+|-----------|-------|:--:|:----:|:---:|:---:|--------|---------------------------|-------------------|------------|
+
+## Treatment Section Guidance
+
+### CRITICAL: Individual Drug Rows
+
+**Every medication must be listed on its own row.** Do NOT group drugs together (e.g., &quot;SSRIs&quot; or &quot;beta-blockers&quot;). Each drug needs complete prescribing information.
+
+Ã¢ÂÅ’ **Wrong:**
+</code></pre></div>
+| SSRIs | Depression | - | ROUTINE | ROUTINE | - | Per drug | Various | Monitor mood |
+<div class="highlight"><pre><span></span><code>Ã¢Å“â€¦ **Correct:**
+</code></pre></div>
+| Sertraline | Depression | - | ROUTINE | ROUTINE | - | Start 50 mg daily; increase by 25-50 mg q1-2wk; max 200 mg | Concurrent MAOIs | Suicidality monitoring |
+| Escitalopram | Depression | - | ROUTINE | ROUTINE | - | Start 10 mg daily; max 20 mg | Concurrent MAOIs; QT prolongation | QTc if risk factors |
+<div class="highlight"><pre><span></span><code>### Dosing Requirements
+
+Every drug row must include:
+
+| Element | Example |
+|---------|---------|
+| Starting dose | &quot;Start 5 mg TID&quot; or &quot;Start 300 mg qHS&quot; |
+| Titration schedule | &quot;increase by 5 mg/dose every 3 days&quot; or &quot;increase by 300 mg every 1-3 days&quot; |
+| Target dose (if applicable) | &quot;target 900-1800 mg TID&quot; |
+| Maximum dose | &quot;max 80 mg/day&quot; or &quot;max 3600 mg/day&quot; |
+| Frequency | &quot;BID&quot;, &quot;TID&quot;, &quot;once daily&quot;, &quot;every other day&quot; |
+| Special instructions | &quot;take with food&quot;, &quot;avoid afternoon dosing&quot;, &quot;exactly 12 hours apart&quot; |
+
+### Symptomatic Treatment Categories
+
+For chronic neurological conditions, consider including treatments for these symptom categories where applicable:
+
+| Category | Common in... | Example Drugs |
+|----------|--------------|---------------|
+| Spasticity | MS, stroke, SCI, TBI | Baclofen, tizanidine, dantrolene, botulinum toxin |
+| Neuropathic pain | Neuropathy, MS, post-stroke | Gabapentin, pregabalin, duloxetine, amitriptyline, carbamazepine |
+| Spasms/cramps | ALS, neuropathy | Baclofen, quinine (limited), mexiletine |
+| Bladder urgency | MS, Parkinson, stroke | Oxybutynin, solifenacin, mirabegron |
+| Urinary retention | MS, autonomic neuropathy | Tamsulosin, bethanechol |
+| Constipation | Parkinson, neuropathy, opioid use | PEG 3350, senna, bisacodyl, lubiprostone |
+| Fatigue | MS, myasthenia, post-stroke | Amantadine, modafinil, methylphenidate |
+| Depression | Any chronic neuro condition | Sertraline, escitalopram, bupropion, venlafaxine |
+| Anxiety | Any chronic neuro condition | SSRIs, buspirone, hydroxyzine |
+| Insomnia | Parkinson, dementia, chronic pain | Trazodone, melatonin, mirtazapine |
+| Tremor | MS, essential tremor, Parkinson | Propranolol, primidone, clonazepam (not for Parkinson resting tremor) |
+| Sialorrhea | ALS, Parkinson | Glycopyrrolate, atropine drops, botulinum toxin |
+| Pseudobulbar affect | ALS, MS, stroke, TBI | Dextromethorphan-quinidine |
+| Cognitive impairment | Dementia, MS | Donepezil, memantine, rivastigmine |
+| Orthostatic hypotension | Autonomic neuropathy, Parkinson | Midodrine, fludrocortisone, droxidopa |
+
+### Disease-Modifying Therapy (DMT) Section
+
+Use Section 3D with expanded columns when the diagnosis has chronic disease-modifying treatments:
+
+**Applies to:** MS, myasthenia gravis, CIDP, neuromyelitis optica, autoimmune encephalitis, etc.
+
+**Additional columns for DMTs:**
+- **Route:** PO, SC, IM, IV, other
+- **Pre-Treatment Requirements:** Labs, imaging, vaccinations, genetic testing, specialist clearances
+
+**Each DMT row must include:**
+- Specific brand and generic name
+- Exact dosing with titration schedule (if any)
+- Complete pre-treatment workup
+- All contraindications
+- Monitoring schedule with frequencies (e.g., &quot;JCV antibody q6mo&quot;, &quot;CBC monthly Ãƒâ€” 48 months&quot;)
+- REMS program requirements where applicable
+
+### Setting-Specific Treatment Notes
+
+| Setting | Treatment Considerations |
+|---------|-------------------------|
+| **ED** | Acute treatments only; avoid initiating chronic therapies; can continue home meds |
+| **HOSP** | Continue home meds; can initiate symptomatic treatments; DMTs typically NOT started inpatient |
+| **OPD** | Primary setting for DMT initiation; chronic disease management; titration of symptomatic meds |
+| **ICU** | Critical care interventions; may need to hold certain home meds; avoid drugs that worsen hemodynamics |
+
+## 4. OTHER RECOMMENDATIONS
+
+### 4A. Referrals &amp; Consults
+
+| Recommendation | ED | HOSP | OPD | ICU | Indication |
+|----------------|:--:|:----:|:---:|:---:|------------|
+
+### 4B. Patient Instructions
+
+| Recommendation | ED | HOSP | OPD |
+|----------------|:--:|:----:|:---:|
+
+### 4C. Lifestyle &amp; Prevention
+
+| Recommendation | ED | HOSP | OPD |
+|----------------|:--:|:----:|:---:|
+
+Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
+SECTION B: REFERENCE (Expand as Needed)
+Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
+
+## 5. DIFFERENTIAL DIAGNOSIS
+
+| Alternative Diagnosis | Key Distinguishing Features | Tests to Differentiate |
+|-----------------------|----------------------------|------------------------|
+
+## 6. MONITORING PARAMETERS
+
+*Venue column indicates where monitoring is typically ordered/initiated. Most monitoring continues in outpatient setting.*
+
+| Parameter | ED | HOSP | OPD | ICU | Frequency | Target/Threshold | Action if Abnormal |
+|-----------|:--:|:----:|:---:|:---:|-----------|------------------|-------------------|
+
+## 7. DISPOSITION CRITERIA
+
+| Disposition | Criteria |
+|-------------|----------|
+| Discharge home | [criteria] |
+| Admit to floor | [criteria] |
+| Admit to ICU | [criteria] |
+| Transfer to higher level | [criteria] |
+
+## 8. EVIDENCE &amp; REFERENCES
+
+| Recommendation | Evidence Level | Source |
+|----------------|----------------|--------|
+</code></pre></div></p>
+<h2 id="setting-definitions">Setting Definitions<a class="headerlink" href="#setting-definitions" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Definition</th>
+<th>Typical Priorities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ED</strong></td>
+<td>Emergency Department - acute presentation, limited time</td>
+<td>STAT, URGENT</td>
+</tr>
+<tr>
+<td><strong>HOSP</strong></td>
+<td>Inpatient floor - admitted, can wait hours</td>
+<td>STAT, URGENT, ROUTINE</td>
+</tr>
+<tr>
+<td><strong>OPD</strong></td>
+<td>Outpatient clinic - scheduled visit, days-weeks available</td>
+<td>ROUTINE, EXT</td>
+</tr>
+<tr>
+<td><strong>ICU</strong></td>
+<td>Intensive Care Unit - critically ill, continuous monitoring</td>
+<td>STAT, URGENT</td>
+</tr>
+</tbody>
+</table>
+<h2 id="priority-definitions">Priority Definitions<a class="headerlink" href="#priority-definitions" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Timeframe</th>
+<th>Use When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>STAT</strong></td>
+<td>Immediate (minutes)</td>
+<td>Life-threatening, time-sensitive</td>
+</tr>
+<tr>
+<td><strong>URGENT</strong></td>
+<td>Within hours</td>
+<td>Important but not immediately life-threatening</td>
+</tr>
+<tr>
+<td><strong>ROUTINE</strong></td>
+<td>Standard timing (days)</td>
+<td>Important but not time-sensitive</td>
+</tr>
+<tr>
+<td><strong>EXT</strong></td>
+<td>Extended workup</td>
+<td>Atypical cases, refractory, specialized</td>
+</tr>
+<tr>
+<td><strong>-</strong></td>
+<td>Not applicable</td>
+<td>Truly not relevant to this setting</td>
+</tr>
+</tbody>
+</table>
+<h2 id="writing-style-directive-language">Writing Style: Directive Language<a class="headerlink" href="#writing-style-directive-language" title="Permanent link">&para;</a></h2>
+<p>All recommendations must be written as <strong>checkbox-ready directives</strong> - clear orders from one physician to another or to the patient. These will be selected and sent directly in clinical communications.</p>
+<p><strong>DO NOT write:</strong>
+- "Consider physical therapy for balance issues"
+- "Patient may benefit from neurology follow-up"
+- "Smoking cessation should be encouraged"</p>
+<p><strong>DO write:</strong>
+- "Physical therapy consult for gait and balance training"
+- "Neurology follow-up in 2-4 weeks"
+- "Smoking cessation"
+- "Avoid driving until cleared by neurology"
+- "Vitamin D 2000 IU daily"
+- "MRI brain with and without contrast"</p>
+<p><strong>Formatting rules:</strong>
+- Start with the action or service, not the rationale
+- Use imperative verb forms or noun phrases
+- Keep recommendations concise (aim for &lt;10 words when possible)
+- Rationale goes in the designated column, not the recommendation itself</p>
+<h2 id="section-4-guidance-diagnosis-specific-content-required">Section 4 Guidance: Diagnosis-Specific Content Required<a class="headerlink" href="#section-4-guidance-diagnosis-specific-content-required" title="Permanent link">&para;</a></h2>
+<p><strong>CRITICAL:</strong> Section 4 content must be customized to the specific diagnosis. Do not copy generic content between templates. Each neurological condition has unique referral needs, patient education requirements, and lifestyle factors.</p>
+<h3 id="4a-referrals-consults">4A. Referrals &amp; Consults<a class="headerlink" href="#4a-referrals-consults" title="Permanent link">&para;</a></h3>
+<p>Include diagnosis-appropriate referrals. Common categories:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rehabilitation</td>
+<td>PT (gait, balance, strengthening), OT (ADLs, hand function), Speech (swallow, cognition, communication)</td>
+</tr>
+<tr>
+<td>Subspecialty</td>
+<td>Neuromuscular, neuro-ophthalmology, epilepsy, movement disorders, neuro-oncology</td>
+</tr>
+<tr>
+<td>Medical specialties</td>
+<td>Hematology/oncology, rheumatology, endocrinology, cardiology, pulmonology</td>
+</tr>
+<tr>
+<td>Supportive</td>
+<td>Pain management, psychiatry/psychology, social work, palliative care, genetic counseling</td>
+</tr>
+<tr>
+<td>Primary care</td>
+<td>PCP follow-up, podiatry, wound care, nutrition</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4b-patient-instructions">4B. Patient Instructions<a class="headerlink" href="#4b-patient-instructions" title="Permanent link">&para;</a></h3>
+<p>Include actionable, diagnosis-specific instructions:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Content Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Return precautions</td>
+<td>Specific symptoms requiring ED return</td>
+</tr>
+<tr>
+<td>Activity guidance</td>
+<td>Driving, work, exercise restrictions</td>
+</tr>
+<tr>
+<td>Medication guidance</td>
+<td>Titration expectations, what not to stop abruptly, timing</td>
+</tr>
+<tr>
+<td>Self-monitoring</td>
+<td>What to watch for, symptom diaries, when to call</td>
+</tr>
+<tr>
+<td>Safety</td>
+<td>Fall prevention, seizure precautions, heat/cold exposure</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4c-lifestyle-modifications">4C. Lifestyle Modifications<a class="headerlink" href="#4c-lifestyle-modifications" title="Permanent link">&para;</a></h3>
+<p>Include modifiable risk factors and preventive measures specific to the condition:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Substance use</td>
+<td>Alcohol cessation, smoking cessation</td>
+</tr>
+<tr>
+<td>Metabolic</td>
+<td>Glycemic control, blood pressure targets, lipid management</td>
+</tr>
+<tr>
+<td>Activity</td>
+<td>Exercise type and intensity, activity pacing</td>
+</tr>
+<tr>
+<td>Diet/supplements</td>
+<td>Specific vitamins, dietary modifications</td>
+</tr>
+<tr>
+<td>Environmental</td>
+<td>Heat avoidance, pressure point protection, home safety</td>
+</tr>
+<tr>
+<td>Sleep</td>
+<td>Sleep hygiene, CPAP compliance</td>
+</tr>
+</tbody>
+</table>
+<h2 id="builder-principles">Builder Principles<a class="headerlink" href="#builder-principles" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Ensure comprehensive setting coverage</strong> - every applicable setting must be tagged</li>
+<li><strong>List each medication individually</strong> - never group drugs; each drug gets its own row with complete dosing</li>
+<li><strong>Include complete prescribing information</strong> - starting dose, titration, max dose, contraindications, monitoring</li>
+<li>Include evidence grading where available (Class I-III, Level A-C)</li>
+<li>Note contraindications and monitoring requirements for all treatments</li>
+<li>Be specific with dosing when standard protocols exist</li>
+<li>Include red flags and escalation triggers</li>
+<li>Acknowledge limitations of evidence where relevant</li>
+<li>Maintain objectivity - no promotional language</li>
+<li>Write all recommendations as directives, not suggestions</li>
+<li>Include relevant referrals (PT, OT, Speech, subspecialty consults) and patient instructions</li>
+<li><strong>Validate coverage:</strong> Before finalizing, confirm each section has appropriate entries for ED, HOSP, OPD, and ICU where applicable</li>
+<li><strong>Cover symptomatic treatments comprehensively</strong> - include all symptom categories relevant to the diagnosis (pain, spasticity, bladder, mood, etc.)</li>
+</ol>
+<h2 id="setting-coverage-checklist-validate-before-output">Setting Coverage Checklist (Validate Before Output)<a class="headerlink" href="#setting-coverage-checklist-validate-before-output" title="Permanent link">&para;</a></h2>
+<p>Before delivering the recommendation, verify:</p>
+<p><strong>Labs:</strong>
+- [ ] Can this patient present to outpatient clinic? Ã¢â€ â€™ OPD labs included?
+- [ ] Can this patient be admitted? Ã¢â€ â€™ HOSP labs appropriate?
+- [ ] Can this be an emergency? Ã¢â€ â€™ ED labs with STAT priorities?</p>
+<p><strong>Imaging:</strong>
+- [ ] Is outpatient imaging an option? Ã¢â€ â€™ OPD column populated?
+- [ ] Urgent inpatient imaging needed? Ã¢â€ â€™ HOSP column populated?</p>
+<p><strong>Treatments:</strong>
+- [ ] Maintenance meds applicable in hospital? Ã¢â€ â€™ HOSP column populated?
+- [ ] Acute treatments applicable in ED? Ã¢â€ â€™ ED column with STAT/URGENT?</p>
+<p><strong>Referrals:</strong>
+- [ ] Can consults be initiated from ED? Ã¢â€ â€™ ED column where appropriate?
+- [ ] Outpatient follow-up referrals? Ã¢â€ â€™ OPD column populated?</p>
+<p><strong>Monitoring (Section 6):</strong>
+- [ ] Venue columns included for all monitoring parameters?
+- [ ] Critical safety monitoring (respiratory, cardiac) has ED/ICU coverage?
+- [ ] Longitudinal monitoring has OPD coverage?</p>
+<h2 id="section-6-monitoring-parameters-guidance">Section 6 Monitoring Parameters Guidance<a class="headerlink" href="#section-6-monitoring-parameters-guidance" title="Permanent link">&para;</a></h2>
+<p>Section 6 uses venue columns differently than action sections. For monitoring, the venue indicates <strong>where monitoring is typically ordered or initiated</strong>, not where it is performed longitudinally.</p>
+<table>
+<thead>
+<tr>
+<th>Venue</th>
+<th>Meaning for Monitoring</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ED</strong></td>
+<td>Check this parameter in ED if patient presents acutely</td>
+</tr>
+<tr>
+<td><strong>HOSP</strong></td>
+<td>Order/initiate during hospitalization</td>
+</tr>
+<tr>
+<td><strong>OPD</strong></td>
+<td>Order/continue in outpatient follow-up</td>
+</tr>
+<tr>
+<td><strong>ICU</strong></td>
+<td>Critical monitoring in intensive care</td>
+</tr>
+</tbody>
+</table>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter Type</th>
+<th>Typical Venues</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HbA1c</td>
+<td>HOSP, OPD</td>
+<td>Longitudinal; not urgent</td>
+</tr>
+<tr>
+<td>Pain scores</td>
+<td>ED, HOSP, OPD, ICU</td>
+<td>Assess everywhere</td>
+</tr>
+<tr>
+<td>Creatinine clearance</td>
+<td>ED, HOSP, OPD, ICU</td>
+<td>Critical for medication dosing</td>
+</tr>
+<tr>
+<td>ECG (if on QT-prolonging drug)</td>
+<td>ED, HOSP, OPD, ICU</td>
+<td>Safety everywhere</td>
+</tr>
+<tr>
+<td>Respiratory function (NIF, FVC)</td>
+<td>ED, HOSP, ICU</td>
+<td>Critical for GBS/myasthenic crisis</td>
+</tr>
+<tr>
+<td>Annual screening tests</td>
+<td>OPD only</td>
+<td>Longitudinal care</td>
+</tr>
+</tbody>
+</table>
+<h3 id="critical-safety-monitoring">Critical Safety Monitoring<a class="headerlink" href="#critical-safety-monitoring" title="Permanent link">&para;</a></h3>
+<p>Always include venue-appropriate critical monitoring for conditions with acute decompensation risk:</p>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Critical Monitoring</th>
+<th>Must Include</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GBS, CIDP, MG</td>
+<td>Respiratory function (FVC, NIF)</td>
+<td>ED: STAT, HOSP: STAT, ICU: STAT</td>
+</tr>
+<tr>
+<td>Seizure</td>
+<td>Seizure recurrence, mental status</td>
+<td>ED: STAT, HOSP: ROUTINE, ICU: STAT</td>
+</tr>
+<tr>
+<td>Stroke</td>
+<td>Neuro checks, BP</td>
+<td>ED: STAT, HOSP: STAT, ICU: STAT</td>
+</tr>
+<tr>
+<td>High-dose steroids</td>
+<td>Glucose, BP, mood</td>
+<td>ED: STAT, HOSP: ROUTINE, ICU: STAT</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reference-examples">Reference Examples<a class="headerlink" href="#reference-examples" title="Permanent link">&para;</a></h2>
+<p>See <code>references/ms-exacerbation-v2.md</code> for a complete example of Builder output that has been validated through the Checker/Rebuilder workflow.</p>
+<h2 id="lumbar-puncture-guidance">Lumbar Puncture Guidance<a class="headerlink" href="#lumbar-puncture-guidance" title="Permanent link">&para;</a></h2>
+<p>When LP is indicated for a diagnosis, include a dedicated LP subsection within Section 2 (Imaging &amp; Studies) using this structure:</p>
+<div class="highlight"><pre><span></span><code>### LUMBAR PUNCTURE
+
+**Indication:** [Why LP is being done]
+**Timing:** [Urgent vs routine, any prerequisites]
+**Volume Required:** [Standard 10-15cc OR therapeutic 30-50cc for NPH]
+
+**Studies to Order:**
+| Study | Priority | Rationale |
+|-------|----------|-----------|
+| Core studies (always) | STAT | Cell count x2, protein, glucose, gram stain, culture |
+| [Diagnosis-specific] | [Priority] | [Rationale] |
+
+**Special Handling:** [Time-sensitive, temperature requirements]
+</code></pre></div>
+<p>See <code>references/lp-reference.md</code> for comprehensive LP panels organized by diagnosis, including:
+- Core studies (always order)
+- Diagnosis-specific panels (MS, meningitis, GBS, SAH, malignancy, autoimmune)
+- Advanced molecular testing (BioFire ME Panel, mNGS/Delve Detect, CSF cfDNA for tumors)
+- Therapeutic LP protocols (NPH, IIH)</p>
+<h2 id="change-log">Change Log<a class="headerlink" href="#change-log" title="Permanent link">&para;</a></h2>
+<p><strong>v2.1 (January 13, 2026)</strong>
+- Added comprehensive Treatment Section Guidance
+- Renamed Section 3B from "First-line Maintenance" to "Symptomatic Treatments" with Indication column
+- Added requirement: each medication on individual row (no grouping)
+- Added dosing requirements checklist (start, titrate, max, frequency)
+- Added symptomatic treatment categories table with examples
+- Added DMT section guidance with expanded columns (Route, Pre-Treatment Requirements)
+- Added setting-specific treatment considerations
+- Updated Section 3D template with Route and Pre-Treatment columns
+- Updated Builder Principles (#2, #3, #13 for medication comprehensiveness)</p>
+<p><strong>v2.0 (January 13, 2026)</strong>
+- Changed to Option A format: multi-column setting-priority matrix (ED | HOSP | OPD | ICU)
+- Added comprehensive setting coverage requirements and validation checklist
+- Added explicit instructions to avoid common coverage gaps
+- Added setting and priority definition tables
+- Reorganized for clarity and JSON conversion compatibility</p>
+<p><strong>v1.0 (January 13, 2026)</strong>
+- Initial version</p>
+<p><strong>v2.2 (January 14, 2026)</strong>
+- Added venue columns (ED, HOSP, OPD, ICU) to Section 6 Monitoring Parameters template
+- Added "Section 6 Monitoring Parameters Guidance" explaining venue interpretation for monitoring
+- Added Monitoring checklist item to Setting Coverage Checklist
+- Added Critical Safety Monitoring table for conditions with acute decompensation risk
+- Venue for monitoring indicates where monitoring is ordered/initiated (not necessarily performed)</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/blondarb/neuro-plans" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../assets/js/comments.js"></script>
+      
+    
+  </body>
+</html>

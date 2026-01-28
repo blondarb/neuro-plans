@@ -1,0 +1,2126 @@
+{
+  "id": "small-fiber-neuropathy",
+  "title": "Small Fiber Neuropathy",
+  "version": "1.0",
+  "icd10": [
+    "** G62.9 (Polyneuropathy",
+    "unspecified)",
+    "G62.89 (Other specified polyneuropathies)",
+    "G90.09 (Other idiopathic peripheral autonomic neuropathy)"
+  ],
+  "scope": "** Diagnosis and management of small fiber neuropathy presenting with painful sensory and/or autonomic symptoms with normal or near-normal nerve conduction studies. Includes length-dependent and non-length-dependent (ganglionopathy) patterns. Covers etiologic workup for treatable causes, symptomatic pain management, and autonomic symptom treatment.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "HbA1c",
+          "rationale": "Diabetes and prediabetes are most common causes of SFN",
+          "target": "<5.7% normal; ≥5.7% prediabetes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fasting glucose",
+          "rationale": "Current glycemic status; impaired fasting glucose",
+          "target": "<100 mg/dL",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "2-hour oral glucose tolerance test (OGTT)",
+          "rationale": "Impaired glucose tolerance causes SFN even with normal HbA1c",
+          "target": "2-hr glucose <140 mg/dL normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "BMP (creatinine, eGFR, electrolytes)",
+          "rationale": "Renal function; medication dosing; uremic neuropathy",
+          "target": "eGFR >60; normal electrolytes",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CBC",
+          "rationale": "Baseline; anemia evaluation",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12",
+          "rationale": "B12 deficiency causes SFN; common and treatable",
+          "target": ">300 pg/mL (>400 optimal)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH",
+          "rationale": "Hypothyroidism causes neuropathy",
+          "target": "0.4-4.0 mIU/L",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ESR, CRP",
+          "rationale": "Inflammatory markers; vasculitis screen",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA",
+          "rationale": "Autoimmune etiology; Sjogren's screen",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-SSA (Ro) and anti-SSB (La) antibodies",
+          "rationale": "Sjogren syndrome is common cause of SFN (up to 40% of SFN)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis B and C serologies",
+          "rationale": "HCV-associated neuropathy; cryoglobulinemia",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Methylmalonic acid (MMA)",
+          "rationale": "More sensitive for B12 deficiency if B12 borderline (200-400)",
+          "target": "Normal (<0.4 μmol/L)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tissue transglutaminase IgA (TTG-IgA)",
+          "rationale": "Celiac disease causes SFN even without GI symptoms",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Total serum IgA",
+          "rationale": "IgA deficiency causes false-negative TTG",
+          "target": "Normal (not deficient)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "SPEP/UPEP with immunofixation",
+          "rationale": "Paraproteinemia; monoclonal gammopathy",
+          "target": "No monoclonal protein",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV",
+          "rationale": "HIV-associated sensory neuropathy",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lipid panel",
+          "rationale": "Metabolic syndrome associated with SFN",
+          "target": "Normal/controlled",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin D",
+          "rationale": "Deficiency associated with neuropathic pain",
+          "target": ">30 ng/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B1 (thiamine)",
+          "rationale": "Deficiency causes painful neuropathy",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B6",
+          "rationale": "Both deficiency and excess cause neuropathy",
+          "target": "Normal (neither high nor low)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Copper",
+          "rationale": "Copper deficiency neuropathy (especially post-bariatric surgery)",
+          "target": "Normal (70-140 μg/dL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Zinc",
+          "rationale": "Excessive zinc causes copper deficiency",
+          "target": "Normal (not elevated)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Salivary gland biopsy",
+          "rationale": "Sjogren syndrome if clinical suspicion high and serology negative",
+          "target": "Negative for lymphocytic infiltration",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Alpha-galactosidase A enzyme activity",
+          "rationale": "Fabry disease screening (X-linked; consider in males and females)",
+          "target": "Normal enzyme activity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "GLA gene sequencing",
+          "rationale": "Confirm Fabry disease if enzyme low or high clinical suspicion",
+          "target": "No pathogenic variants",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "TTR gene sequencing",
+          "rationale": "Hereditary transthyretin amyloidosis; early SFN with autonomic symptoms",
+          "target": "No pathogenic variants",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fat pad or skin biopsy (Congo red)",
+          "rationale": "Amyloidosis if suspected (autonomic features, cardiomyopathy, CTS)",
+          "target": "No amyloid deposits",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum free light chains",
+          "rationale": "AL amyloidosis screen",
+          "target": "Normal kappa:lambda ratio",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-FGFR3 antibodies",
+          "rationale": "Autoimmune SFN (especially ganglionopathy pattern)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-TS-HDS antibodies",
+          "rationale": "Autoimmune SFN marker",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Sarcoidosis workup (ACE, chest imaging)",
+          "rationale": "Sarcoid neuropathy",
+          "target": "Normal ACE; no hilar adenopathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic antibody panel",
+          "rationale": "Paraneoplastic sensory ganglionopathy (anti-Hu) if rapid onset",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cryoglobulins",
+          "rationale": "Cryoglobulinemic neuropathy (especially with HCV)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Schirmer test",
+          "rationale": "Objective dry eye for Sjogren diagnosis",
+          "target": "Normal (>5mm in 5 min)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "SCN9A, SCN10A, SCN11A gene testing",
+          "rationale": "Sodium channelopathies causing inherited SFN (erythromelalgia)",
+          "target": "No pathogenic variants",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Nerve conduction studies (NCS)",
+          "timing": "At initial evaluation",
+          "target": "Normal or near-normal (SFN spares large fibers)",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Skin biopsy (3mm punch at distal leg and thigh)",
+          "timing": "After NCS shows normal large fiber function",
+          "target": "Reduced IENFD below normative threshold for age/sex/site",
+          "contraindications": "Bleeding diathesis; anticoagulation (relative)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Quantitative sudomotor axon reflex test (QSART)",
+          "timing": "Autonomic symptoms; suspected sudomotor dysfunction",
+          "target": "Normal sweat volumes at all sites",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sudoscan",
+          "timing": "Screening for sudomotor dysfunction; non-invasive",
+          "target": "Normal electrochemical skin conductance hands and feet",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Autonomic reflex screen (ARS)",
+          "timing": "Comprehensive autonomic evaluation; orthostatic symptoms",
+          "target": "Normal cardiovagal, adrenergic, and sudomotor function",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tilt table test",
+          "timing": "Orthostatic intolerance; POTS evaluation",
+          "target": "No excessive HR rise; no orthostatic hypotension",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quantitative sensory testing (QST)",
+          "timing": "Thermal threshold testing; research and specialized centers",
+          "target": "Normal thermal detection thresholds",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Thermoregulatory sweat test (TST)",
+          "timing": "Global sudomotor evaluation if QSART equivocal",
+          "target": "Normal sweat distribution",
+          "contraindications": "Cardiac instability",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Corneal confocal microscopy",
+          "timing": "Non-invasive small fiber assessment; research tool",
+          "target": "Normal corneal nerve fiber density and length",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "EMG",
+          "timing": "If large fiber involvement suspected; atypical features",
+          "target": "Normal (SFN spares motor and large sensory fibers)",
+          "contraindications": "Anticoagulation (relative)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI spine (cervical/thoracic)",
+          "timing": "Ganglionopathy pattern; non-length-dependent SFN",
+          "target": "Normal dorsal root ganglia; no dorsal column signal",
+          "contraindications": "MRI contraindications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI neurography",
+          "timing": "Research; visualize small nerves",
+          "target": "No nerve enlargement or signal abnormality",
+          "contraindications": "MRI contraindications",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "PET-CT",
+          "timing": "Sarcoidosis or malignancy suspected; paraneoplastic evaluation",
+          "target": "No abnormal uptake",
+          "contraindications": "Pregnancy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Echocardiogram",
+          "timing": "Amyloidosis suspected (cardiomyopathy screening)",
+          "target": "No infiltrative cardiomyopathy features",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiac MRI",
+          "timing": "Cardiac amyloidosis evaluation if echo abnormal",
+          "target": "No amyloid infiltration",
+          "contraindications": "MRI contraindications; devices",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "IV fluids",
+          "route": "IV",
+          "indication": "Acute orthostatic hypotension with symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Normal saline bolus",
+                "orderSentence": "IV fluids Normal saline bolus IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500-1000 mL NS bolus for symptomatic orthostatic hypotension; avoid in heart failure",
+            "orderSentence": "IV fluids Normal saline bolus IV"
+          },
+          "contraindications": "Heart failure; volume overload",
+          "monitoring": "Volume status; BP response",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pain crisis management",
+          "route": "IV/PO",
+          "indication": "Severe acute neuropathic pain flare not responding to outpatient regimen",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Multimodal",
+                "orderSentence": "Pain crisis management Multimodal IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "IV lidocaine infusion (1-3 mg/kg/hr) if refractory; avoid chronic opioids",
+            "orderSentence": "Pain crisis management Multimodal IV/PO"
+          },
+          "contraindications": "Lidocaine: cardiac conduction abnormality",
+          "monitoring": "Pain scores; cardiac monitoring for lidocaine",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Glucose management",
+          "route": "Various",
+          "indication": "Acute presentation with new diabetes diagnosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Glucose management Per protocol Various"
+              }
+            ],
+            "route": "Various",
+            "instructions": "Initiate diabetes management; hypoglycemia causes SFN flare",
+            "orderSentence": "Glucose management Per protocol Various"
+          },
+          "contraindications": "Per specific agent",
+          "monitoring": "Glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments (Neuropathic Pain - First-line)": [
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "First-line for neuropathic pain; also treats depression/anxiety common in SFN",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg daily",
+                "orderSentence": "Duloxetine 30 mg daily PO"
+              },
+              {
+                "text": "60 mg daily",
+                "orderSentence": "Duloxetine 60 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg daily PO"
+          },
+          "contraindications": "MAOIs; uncontrolled narrow-angle glaucoma; severe renal impairment (CrCl <30)",
+          "monitoring": "Hepatic function; BP; suicidal ideation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "First-line for neuropathic pain; FDA-approved for postherpetic neuralgia and DPN",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg TID",
+                "orderSentence": "Pregabalin 50 mg TID PO"
+              },
+              {
+                "text": "75 mg BID",
+                "orderSentence": "Pregabalin 75 mg BID PO"
+              },
+              {
+                "text": "100 mg TID",
+                "orderSentence": "Pregabalin 100 mg TID PO"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Pregabalin 150 mg BID PO"
+              },
+              {
+                "text": "200 mg TID",
+                "orderSentence": "Pregabalin 200 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg TID or 75 mg BID; titrate q3-7d; max 300 mg/day; reduce if CrCl <60",
+            "orderSentence": "Pregabalin 50 mg TID PO"
+          },
+          "contraindications": "Angioedema to pregabalin/gabapentin",
+          "monitoring": "Dizziness, somnolence, weight gain, peripheral edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "First-line; less expensive alternative to pregabalin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg qHS",
+                "orderSentence": "Gabapentin 300 mg qHS PO"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Gabapentin 300 mg TID PO"
+              },
+              {
+                "text": "600 mg TID",
+                "orderSentence": "Gabapentin 600 mg TID PO"
+              },
+              {
+                "text": "900 mg TID",
+                "orderSentence": "Gabapentin 900 mg TID PO"
+              },
+              {
+                "text": "1200 mg TID",
+                "orderSentence": "Gabapentin 1200 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q3-7d; target 1800-3600 mg/day divided TID; reduce if CrCl <60",
+            "orderSentence": "Gabapentin 300 mg qHS PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust required)",
+          "monitoring": "Sedation, dizziness, ataxia, edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "TCA for neuropathic pain; helps insomnia; inexpensive",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Amitriptyline 10 mg qHS PO"
+              },
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Amitriptyline 25 mg qHS PO"
+              },
+              {
+                "text": "50 mg qHS",
+                "orderSentence": "Amitriptyline 50 mg qHS PO"
+              },
+              {
+                "text": "75 mg qHS",
+                "orderSentence": "Amitriptyline 75 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-25 mg qHS; titrate by 10-25 mg q1-2wk; typical 25-75 mg qHS; max 150 mg",
+            "orderSentence": "Amitriptyline 10 mg qHS PO"
+          },
+          "contraindications": "Cardiac conduction disease; recent MI; urinary retention; narrow-angle glaucoma; elderly (high anticholinergic burden)",
+          "monitoring": "ECG if age >40 or cardiac history; anticholinergic side effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nortriptyline",
+          "route": "PO",
+          "indication": "TCA with less sedation and anticholinergic effects than amitriptyline",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Nortriptyline 10 mg qHS PO"
+              },
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Nortriptyline 25 mg qHS PO"
+              },
+              {
+                "text": "50 mg qHS",
+                "orderSentence": "Nortriptyline 50 mg qHS PO"
+              },
+              {
+                "text": "75 mg qHS",
+                "orderSentence": "Nortriptyline 75 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-25 mg qHS; titrate by 10-25 mg q1-2wk; typical 25-75 mg qHS",
+            "orderSentence": "Nortriptyline 10 mg qHS PO"
+          },
+          "contraindications": "Cardiac conduction disease; recent MI; urinary retention; narrow-angle glaucoma",
+          "monitoring": "ECG if dose >100 mg/day or cardiac risk factors",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venlafaxine XR",
+          "route": "PO",
+          "indication": "SNRI alternative to duloxetine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg daily",
+                "orderSentence": "Venlafaxine XR 37.5 mg daily PO"
+              },
+              {
+                "text": "75 mg daily",
+                "orderSentence": "Venlafaxine XR 75 mg daily PO"
+              },
+              {
+                "text": "150 mg daily",
+                "orderSentence": "Venlafaxine XR 150 mg daily PO"
+              },
+              {
+                "text": "225 mg daily",
+                "orderSentence": "Venlafaxine XR 225 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg daily; increase by 37.5-75 mg q1wk; target 150-225 mg daily",
+            "orderSentence": "Venlafaxine XR 37.5 mg daily PO"
+          },
+          "contraindications": "MAOIs; uncontrolled hypertension",
+          "monitoring": "BP at higher doses; discontinuation syndrome if stopped abruptly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory (Neuropathic Pain)": [
+        {
+          "item": "Capsaicin 8% patch (Qutenza)",
+          "route": "Topical",
+          "indication": "Localized neuropathic pain; add-on therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Apply for 30-60 min",
+                "orderSentence": "Capsaicin 8% patch (Qutenza) Apply for 30-60 min Topical"
+              }
+            ],
+            "route": "Topical",
+            "instructions": "Applied by trained healthcare provider; pre-treat with topical anesthetic; may repeat q3mo",
+            "orderSentence": "Capsaicin 8% patch (Qutenza) Apply for 30-60 min Topical"
+          },
+          "contraindications": "Application to face/mucous membranes; broken skin",
+          "monitoring": "Pain/burning during application; transient BP increase",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lidocaine 5% patch",
+          "route": "Topical",
+          "indication": "Localized pain; adjunctive therapy; allodynia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-3 patches daily",
+                "orderSentence": "Lidocaine 5% patch 1-3 patches daily Topical"
+              }
+            ],
+            "route": "Topical",
+            "instructions": "Apply to most painful area; up to 3 patches for 12h on/12h off",
+            "orderSentence": "Lidocaine 5% patch 1-3 patches daily Topical"
+          },
+          "contraindications": "Allergy to local anesthetics; damaged skin",
+          "monitoring": "Skin irritation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lamotrigine",
+          "route": "PO",
+          "indication": "Sodium channel blocker; some evidence in SFN",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Lamotrigine 25 mg daily PO"
+              },
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Lamotrigine 50 mg daily PO"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Lamotrigine 100 mg BID PO"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Lamotrigine 200 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily x 2wk; then 50 mg daily x 2wk; increase by 50 mg q2wk; max 400 mg/day",
+            "orderSentence": "Lamotrigine 25 mg daily PO"
+          },
+          "contraindications": "SJS/TEN history; valproate use (reduce dose by 50%)",
+          "monitoring": "RASH (especially first 8 weeks) - stop immediately if rash",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lacosamide",
+          "route": "PO",
+          "indication": "Sodium channel blocker; well-tolerated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg BID",
+                "orderSentence": "Lacosamide 50 mg BID PO"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Lacosamide 100 mg BID PO"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Lacosamide 150 mg BID PO"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Lacosamide 200 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg BID; increase by 50 mg/day weekly; max 400 mg/day",
+            "orderSentence": "Lacosamide 50 mg BID PO"
+          },
+          "contraindications": "Second or third degree AV block (without pacemaker)",
+          "monitoring": "ECG for PR prolongation; dizziness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbamazepine",
+          "route": "PO",
+          "indication": "Sodium channel blocker; limited evidence for SFN specifically",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Carbamazepine 100 mg BID PO"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Carbamazepine 200 mg BID PO"
+              },
+              {
+                "text": "400 mg BID",
+                "orderSentence": "Carbamazepine 400 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg BID; titrate by 200 mg/wk; max 1200 mg/day",
+            "orderSentence": "Carbamazepine 100 mg BID PO"
+          },
+          "contraindications": "AV block; bone marrow suppression; HLA-B*1502 in Asian patients (SJS risk)",
+          "monitoring": "CBC, LFTs, sodium; drug interactions (CYP3A4 inducer)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mexiletine",
+          "route": "PO",
+          "indication": "Sodium channel blocker; especially if SCN9A mutation suspected",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg TID",
+                "orderSentence": "Mexiletine 150 mg TID PO"
+              },
+              {
+                "text": "200 mg TID",
+                "orderSentence": "Mexiletine 200 mg TID PO"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Mexiletine 300 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 150 mg TID; titrate by 150 mg q3d; max 1200 mg/day; take with food",
+            "orderSentence": "Mexiletine 150 mg TID PO"
+          },
+          "contraindications": "Cardiomyopathy; second/third degree AV block",
+          "monitoring": "ECG; arrhythmia monitoring",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Desipramine",
+          "route": "PO",
+          "indication": "TCA with minimal anticholinergic effects",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Desipramine 25 mg qHS PO"
+              },
+              {
+                "text": "50 mg qHS",
+                "orderSentence": "Desipramine 50 mg qHS PO"
+              },
+              {
+                "text": "75 mg qHS",
+                "orderSentence": "Desipramine 75 mg qHS PO"
+              },
+              {
+                "text": "100 mg qHS",
+                "orderSentence": "Desipramine 100 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg qHS; titrate by 25 mg q1-2wk; target 50-100 mg",
+            "orderSentence": "Desipramine 25 mg qHS PO"
+          },
+          "contraindications": "Same as other TCAs",
+          "monitoring": "ECG; drug levels available if needed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tramadol",
+          "route": "PO",
+          "indication": "Moderate pain; opioid-like with serotonergic properties",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg q6h PRN",
+                "orderSentence": "Tramadol 50 mg q6h PRN PO"
+              },
+              {
+                "text": "100 mg ER BID",
+                "orderSentence": "Tramadol 100 mg ER BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg q6h PRN; max 400 mg/day; reduce if renal/hepatic impairment",
+            "orderSentence": "Tramadol 50 mg q6h PRN PO"
+          },
+          "contraindications": "Seizure disorder; concurrent MAOIs/SSRIs (serotonin syndrome risk)",
+          "monitoring": "Seizures, serotonin syndrome, constipation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tapentadol ER",
+          "route": "PO",
+          "indication": "Refractory pain; mu-opioid agonist with norepinephrine reuptake inhibition",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg BID",
+                "orderSentence": "Tapentadol ER 50 mg BID PO"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Tapentadol ER 100 mg BID PO"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Tapentadol ER 150 mg BID PO"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Tapentadol ER 200 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg BID; titrate by 50 mg BID q3d; max 500 mg/day",
+            "orderSentence": "Tapentadol ER 50 mg BID PO"
+          },
+          "contraindications": "Severe respiratory depression; MAOIs; paralytic ileus",
+          "monitoring": "Respiratory status, constipation, sedation",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Combination therapy",
+          "route": "Various",
+          "indication": "Inadequate response to monotherapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Combine agents from different classes",
+                "orderSentence": "Combination therapy Combine agents from different classes Various"
+              }
+            ],
+            "route": "Various",
+            "instructions": "Gabapentinoid + SNRI; TCA + gabapentinoid; use lower doses of each",
+            "orderSentence": "Combination therapy Combine agents from different classes Various"
+          },
+          "contraindications": "Per individual agents",
+          "monitoring": "Additive side effects; falls in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Low-dose naltrexone (LDN)",
+          "route": "PO",
+          "indication": "Emerging evidence for neuropathic pain; anti-inflammatory",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1.5 mg qHS",
+                "orderSentence": "Low-dose naltrexone (LDN) 1.5 mg qHS PO"
+              },
+              {
+                "text": "3 mg qHS",
+                "orderSentence": "Low-dose naltrexone (LDN) 3 mg qHS PO"
+              },
+              {
+                "text": "4.5 mg qHS",
+                "orderSentence": "Low-dose naltrexone (LDN) 4.5 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1.5 mg qHS; increase by 1.5 mg q2wk; max 4.5 mg; compounded",
+            "orderSentence": "Low-dose naltrexone (LDN) 1.5 mg qHS PO"
+          },
+          "contraindications": "Current opioid use; hepatic impairment",
+          "monitoring": "Vivid dreams, insomnia (take in AM if occurs)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Spinal cord stimulation",
+          "route": "Implant",
+          "indication": "Refractory SFN pain; failed multiple medications",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per implant protocol",
+                "orderSentence": "Spinal cord stimulation Per implant protocol Implant"
+              }
+            ],
+            "route": "Implant",
+            "instructions": "Trial stimulation before permanent implant; high-frequency or burst stimulation preferred",
+            "orderSentence": "Spinal cord stimulation Per implant protocol Implant"
+          },
+          "contraindications": "Infection; coagulopathy; psychiatric instability",
+          "monitoring": "Device function; pain relief",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Autonomic Symptom Management": [
+        {
+          "item": "Fludrocortisone",
+          "route": "PO",
+          "indication": "Orthostatic hypotension; volume expansion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg daily",
+                "orderSentence": "Fludrocortisone 0.1 mg daily PO"
+              },
+              {
+                "text": "0.2 mg daily",
+                "orderSentence": "Fludrocortisone 0.2 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.1 mg daily; may increase to 0.2 mg daily; max 0.3 mg",
+            "orderSentence": "Fludrocortisone 0.1 mg daily PO"
+          },
+          "pretreatment": "Check potassium; assess volume status",
+          "contraindications": "Heart failure; hypertension; hypokalemia",
+          "monitoring": "Weight, BP supine and standing, potassium, edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Midodrine",
+          "route": "PO",
+          "indication": "Orthostatic hypotension; alpha-1 agonist vasoconstrictor",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg TID",
+                "orderSentence": "Midodrine 2.5 mg TID PO"
+              },
+              {
+                "text": "5 mg TID",
+                "orderSentence": "Midodrine 5 mg TID PO"
+              },
+              {
+                "text": "10 mg TID",
+                "orderSentence": "Midodrine 10 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5 mg TID (with meals); titrate to 5-10 mg TID; last dose 4h before bed",
+            "orderSentence": "Midodrine 2.5 mg TID PO"
+          },
+          "pretreatment": "None specific",
+          "contraindications": "Severe cardiac disease; urinary retention; supine hypertension",
+          "monitoring": "Supine BP (check for supine hypertension); avoid at bedtime",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Droxidopa (Northera)",
+          "route": "PO",
+          "indication": "Neurogenic orthostatic hypotension; FDA-approved for autonomic failure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg TID",
+                "orderSentence": "Droxidopa (Northera) 100 mg TID PO"
+              },
+              {
+                "text": "200 mg TID",
+                "orderSentence": "Droxidopa (Northera) 200 mg TID PO"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Droxidopa (Northera) 300 mg TID PO"
+              },
+              {
+                "text": "400 mg TID",
+                "orderSentence": "Droxidopa (Northera) 400 mg TID PO"
+              },
+              {
+                "text": "600 mg TID",
+                "orderSentence": "Droxidopa (Northera) 600 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg TID; titrate by 100 mg/day q24-48h; max 600 mg TID",
+            "orderSentence": "Droxidopa (Northera) 100 mg TID PO"
+          },
+          "pretreatment": "None specific",
+          "contraindications": "Supine hypertension (severe)",
+          "monitoring": "Supine BP; avoid lying flat for 2h after dose",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pyridostigmine",
+          "route": "PO",
+          "indication": "Orthostatic hypotension; enhances ganglionic transmission",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg TID",
+                "orderSentence": "Pyridostigmine 30 mg TID PO"
+              },
+              {
+                "text": "60 mg TID",
+                "orderSentence": "Pyridostigmine 60 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg TID; may increase to 60 mg TID; modest BP effect but no supine hypertension",
+            "orderSentence": "Pyridostigmine 30 mg TID PO"
+          },
+          "pretreatment": "None specific",
+          "contraindications": "Mechanical GI/GU obstruction; bradyarrhythmia",
+          "monitoring": "Cholinergic effects (diarrhea, salivation)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Compression stockings",
+          "route": "External",
+          "indication": "Orthostatic hypotension; venous pooling",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Waist-high 30-40 mmHg",
+                "orderSentence": "Compression stockings Waist-high 30-40 mmHg External"
+              }
+            ],
+            "route": "External",
+            "instructions": "Waist-high preferred over knee-high; put on before rising; 30-40 mmHg compression",
+            "orderSentence": "Compression stockings Waist-high 30-40 mmHg External"
+          },
+          "pretreatment": "Peripheral arterial disease (ABI <0.5)",
+          "contraindications": "Skin breakdown; PAD",
+          "monitoring": "Skin integrity; ABI if arterial disease suspected",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxybutynin",
+          "route": "PO",
+          "indication": "Bladder urgency/frequency",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg BID",
+                "orderSentence": "Oxybutynin 5 mg BID PO"
+              },
+              {
+                "text": "5 mg TID",
+                "orderSentence": "Oxybutynin 5 mg TID PO"
+              },
+              {
+                "text": "10 mg XL daily",
+                "orderSentence": "Oxybutynin 10 mg XL daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg BID or 10 mg XL daily; max 30 mg/day",
+            "orderSentence": "Oxybutynin 5 mg BID PO"
+          },
+          "pretreatment": "Urinary retention; uncontrolled narrow-angle glaucoma; GI obstruction",
+          "contraindications": "Cognitive effects in elderly; dry mouth",
+          "monitoring": "Anticholinergic effects; cognition in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Solifenacin",
+          "route": "PO",
+          "indication": "Bladder urgency; better tolerated anticholinergic",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Solifenacin 5 mg daily PO"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Solifenacin 10 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; may increase to 10 mg daily",
+            "orderSentence": "Solifenacin 5 mg daily PO"
+          },
+          "pretreatment": "Same as oxybutynin; severe hepatic impairment",
+          "contraindications": "Same as oxybutynin but less cognitive",
+          "monitoring": "Anticholinergic effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mirabegron",
+          "route": "PO",
+          "indication": "Bladder urgency; beta-3 agonist (non-anticholinergic)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Mirabegron 25 mg daily PO"
+              },
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Mirabegron 50 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; may increase to 50 mg daily",
+            "orderSentence": "Mirabegron 25 mg daily PO"
+          },
+          "pretreatment": "Uncontrolled hypertension; severe hepatic impairment",
+          "contraindications": "BP; urinary retention",
+          "monitoring": "-",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Metoclopramide",
+          "route": "PO",
+          "indication": "Gastroparesis; prokinetic",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg AC",
+                "orderSentence": "Metoclopramide 5 mg AC PO"
+              },
+              {
+                "text": "10 mg AC",
+                "orderSentence": "Metoclopramide 10 mg AC PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5-10 mg 30 min before meals and at bedtime; limit to <12 weeks",
+            "orderSentence": "Metoclopramide 5 mg AC PO"
+          },
+          "pretreatment": "Tardive dyskinesia (limit duration); GI obstruction; Parkinson disease",
+          "contraindications": "Tardive dyskinesia; extrapyramidal symptoms",
+          "monitoring": "-",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Domperidone",
+          "route": "PO",
+          "indication": "Gastroparesis; prokinetic with less CNS effects",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg TID",
+                "orderSentence": "Domperidone 10 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10 mg TID before meals; not FDA-approved (requires IND or international pharmacy)",
+            "orderSentence": "Domperidone 10 mg TID PO"
+          },
+          "pretreatment": "QT prolongation; ventricular arrhythmia",
+          "contraindications": "ECG for QT; arrhythmia",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-"
+        },
+        {
+          "item": "Erythromycin",
+          "route": "PO",
+          "indication": "Gastroparesis; motilin receptor agonist",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg TID",
+                "orderSentence": "Erythromycin 250 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "250 mg PO TID before meals; short-term use due to tachyphylaxis",
+            "orderSentence": "Erythromycin 250 mg TID PO"
+          },
+          "pretreatment": "QT prolongation; drug interactions",
+          "contraindications": "ECG; GI upset; tachyphylaxis limits long-term use",
+          "monitoring": "-",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Sildenafil",
+          "route": "PO",
+          "indication": "Erectile dysfunction in autonomic SFN",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg PRN",
+                "orderSentence": "Sildenafil 25 mg PRN PO"
+              },
+              {
+                "text": "50 mg PRN",
+                "orderSentence": "Sildenafil 50 mg PRN PO"
+              },
+              {
+                "text": "100 mg PRN",
+                "orderSentence": "Sildenafil 100 mg PRN PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg 1h before activity; max 100 mg; avoid with nitrates",
+            "orderSentence": "Sildenafil 25 mg PRN PO"
+          },
+          "pretreatment": "Nitrate use; severe cardiovascular disease",
+          "contraindications": "Cardiovascular status; vision changes",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        }
+      ],
+      "Disease-Modifying / Etiology-Targeted Therapies": [
+        {
+          "item": "Glycemic control optimization",
+          "route": "Various",
+          "indication": "Diabetes/prediabetes-associated SFN",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per diabetes guidelines",
+                "orderSentence": "Glycemic control optimization Per diabetes guidelines Various"
+              }
+            ],
+            "route": "Various",
+            "instructions": "Lifestyle first for prediabetes; HbA1c <7% target; tighter control slows progression",
+            "orderSentence": "Glycemic control optimization Per diabetes guidelines Various"
+          },
+          "pretreatment": "Diabetes education",
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "HbA1c q3-6mo; glucose monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IVIG",
+          "route": "IV",
+          "indication": "Autoimmune SFN (Sjogren-associated; anti-FGFR3+; idiopathic with evidence of inflammation)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g/kg divided over 2-5 days",
+                "orderSentence": "IVIG 2 g/kg divided over 2-5 days IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g/kg divided over 2-5 days monthly; limited evidence; consider trial",
+            "orderSentence": "IVIG 2 g/kg divided over 2-5 days IV"
+          },
+          "pretreatment": "Check IgA level (IgA-deficient patients need IgA-depleted product)",
+          "contraindications": "IgA deficiency (use IgA-depleted); renal impairment; hypercoagulable state",
+          "monitoring": "Renal function; thrombotic risk; headache",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Enzyme replacement therapy (Fabry disease)",
+          "route": "IV",
+          "indication": "Fabry disease-associated SFN",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Agalsidase beta (Fabrazyme) 1 mg/kg IV q2wk",
+                "orderSentence": "Enzyme replacement therapy (Fabry disease) Agalsidase beta (Fabrazyme) 1 mg/kg IV q2wk IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Lifelong therapy; infusion reactions common early",
+            "orderSentence": "Enzyme replacement therapy (Fabry disease) Agalsidase beta (Fabrazyme) 1 mg/kg IV q2wk IV"
+          },
+          "pretreatment": "None",
+          "contraindications": "None absolute",
+          "monitoring": "Infusion reactions; anti-drug antibodies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tafamidis (Vyndamax/Vyndaqel)",
+          "route": "PO",
+          "indication": "Hereditary and wild-type TTR amyloidosis with polyneuropathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "80 mg daily",
+                "orderSentence": "Tafamidis (Vyndamax/Vyndaqel) 80 mg daily PO"
+              },
+              {
+                "text": "61 mg daily",
+                "orderSentence": "Tafamidis (Vyndamax/Vyndaqel) 61 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "80 mg (Vyndamax) or 61 mg (Vyndaqel) PO daily; TTR stabilizer",
+            "orderSentence": "Tafamidis (Vyndamax/Vyndaqel) 80 mg daily PO"
+          },
+          "pretreatment": "Genetic confirmation of TTR amyloidosis",
+          "contraindications": "None",
+          "monitoring": "Cardiac function; neuropathy progression",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Inotersen/Patisiran",
+          "route": "SC/IV",
+          "indication": "Hereditary TTR amyloidosis with polyneuropathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per prescribing protocol",
+                "orderSentence": "Inotersen/Patisiran Per prescribing protocol SC/IV"
+              }
+            ],
+            "route": "SC/IV",
+            "instructions": "Inotersen 284 mg SC weekly; Patisiran 0.3 mg/kg IV q3wk",
+            "orderSentence": "Inotersen/Patisiran Per prescribing protocol SC/IV"
+          },
+          "pretreatment": "TTR gene mutation confirmed; specialist management",
+          "contraindications": "Thrombocytopenia (inotersen); infusion reactions",
+          "monitoring": "Platelets (inotersen); hepatic function",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Gluten-free diet",
+          "route": "Diet",
+          "indication": "Celiac disease-associated SFN",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Strict gluten-free",
+                "orderSentence": "Gluten-free diet Strict gluten-free Diet"
+              }
+            ],
+            "route": "Diet",
+            "instructions": "Lifelong strict gluten-free diet; dietitian referral; neuropathy may stabilize/improve",
+            "orderSentence": "Gluten-free diet Strict gluten-free Diet"
+          },
+          "pretreatment": "Celiac confirmation",
+          "contraindications": "None",
+          "monitoring": "TTG-IgA levels; symptom response",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "B12 supplementation",
+          "route": "PO/IM",
+          "indication": "B12 deficiency-associated SFN",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mcg daily PO",
+                "orderSentence": "B12 supplementation 1000 mcg daily PO PO/IM"
+              },
+              {
+                "text": "1000 mcg IM monthly",
+                "orderSentence": "B12 supplementation 1000 mcg IM monthly PO/IM"
+              }
+            ],
+            "route": "PO/IM",
+            "instructions": "1000-2000 mcg PO daily; or 1000 mcg IM weekly x 4, then monthly if poor absorption",
+            "orderSentence": "B12 supplementation 1000 mcg daily PO PO/IM"
+          },
+          "pretreatment": "None",
+          "contraindications": "None",
+          "monitoring": "B12 and MMA levels q3-6mo until stable",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Immunosuppression (Sjogren's)",
+          "route": "Various",
+          "indication": "Sjogren's-associated SFN with systemic disease activity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per rheumatology",
+                "orderSentence": "Immunosuppression (Sjogren's) Per rheumatology Various"
+              }
+            ],
+            "route": "Various",
+            "instructions": "Hydroxychloroquine, methotrexate, rituximab; coordinate with rheumatology",
+            "orderSentence": "Immunosuppression (Sjogren's) Per rheumatology Various"
+          },
+          "pretreatment": "Rheumatology co-management",
+          "contraindications": "Per specific agent",
+          "monitoring": "Per specific agent",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alpha-lipoic acid",
+          "route": "PO",
+          "indication": "Antioxidant; some evidence in painful neuropathy; European guidelines",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "600 mg daily",
+                "orderSentence": "Alpha-lipoic acid 600 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "600 mg PO daily; may take 3-6 months for effect; limited evidence",
+            "orderSentence": "Alpha-lipoic acid 600 mg daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "GI upset",
+          "monitoring": "May enhance hypoglycemia in diabetics",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neuromuscular specialist for skin biopsy interpretation and complex SFN management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rheumatology if Sjogren's, lupus, or other connective tissue disease suspected",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Endocrinology if diabetes/prediabetes for glycemic optimization and metabolic management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetics counselor if hereditary etiology suspected (Fabry, TTR amyloidosis, SCN9A channelopathies)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gastroenterology for celiac confirmation, gastroparesis management, or liver biopsy if amyloid suspected",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology if TTR amyloidosis suspected or autonomic symptoms with cardiac involvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management for refractory neuropathic pain and interventional options (spinal cord stimulation)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for balance training, strengthening, and fall prevention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Autonomic disorders specialist if complex autonomic symptoms (POTS, orthostatic hypotension)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry/psychology for chronic pain coping and comorbid depression/anxiety management",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hematology/oncology if amyloidosis confirmed for staging and treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Report any new weakness, gait difficulty, or falls as these may indicate progression to large fiber involvement",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Monitor for signs of infection in feet (redness, warmth, drainage) if sensation is impaired",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep a pain diary to track triggers, severity, and medication response",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Rise slowly from sitting or lying to prevent falls from orthostatic hypotension",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Increase salt and fluid intake (2-3L/day, 6-10g sodium) if orthostatic hypotension present (unless contraindicated)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Wear compression stockings before rising in the morning if orthostatic hypotension diagnosed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take all prescribed pain medications as directed; do not stop gabapentinoids or SNRIs abruptly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid excessive heat exposure which can worsen symptoms; stay hydrated in warm weather",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return if severe headache, vision changes, or syncope develop (may indicate medication side effects or disease progression)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Strict glycemic control (HbA1c <7% or <5.7% if prediabetes) to prevent progression; lifestyle modifications first",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol cessation as alcohol independently causes and worsens small fiber neuropathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation as smoking impairs nerve regeneration and worsens outcomes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular low-impact exercise (swimming, stationary bike, walking) to improve pain and maintain function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Healthy diet (Mediterranean or DASH) to optimize metabolic health and reduce inflammation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Weight management as metabolic syndrome is associated with SFN",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Sleep hygiene to improve sleep quality; chronic pain worsens with poor sleep",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stress reduction techniques (mindfulness, meditation) as stress can amplify pain perception",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Fall prevention with home safety evaluation given proprioceptive deficits and orthostatic hypotension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid B6 (pyridoxine) supplementation above RDA (1.3-2 mg/day) as excess causes neuropathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Diabetic polyneuropathy (large fiber)",
+      "features": "NCS abnormal; mixed sensorimotor findings; more numbness than pain",
+      "tests": "EMG/NCS shows axonal polyneuropathy"
+    },
+    {
+      "diagnosis": "Fibromyalgia",
+      "features": "Widespread pain; tender points; normal skin biopsy; chronic fatigue",
+      "tests": "ACR criteria; normal IENFD on skin biopsy"
+    },
+    {
+      "diagnosis": "Complex regional pain syndrome (CRPS)",
+      "features": "Regional rather than length-dependent; swelling, color changes, dystrophy",
+      "tests": "Budapest criteria; regional distribution"
+    },
+    {
+      "diagnosis": "Erythromelalgia",
+      "features": "Intermittent burning with redness and warmth; triggered by heat; may have SCN9A mutation",
+      "tests": "Clinical pattern; genetic testing if suspected"
+    },
+    {
+      "diagnosis": "Central sensitization syndromes",
+      "features": "Normal peripheral testing; pain out of proportion to objective findings",
+      "tests": "QST pattern; skin biopsy normal"
+    },
+    {
+      "diagnosis": "Psychogenic/functional sensory symptoms",
+      "features": "Non-anatomical distribution; inconsistent findings; psychiatric comorbidity",
+      "tests": "Careful neurological exam; normal objective testing"
+    },
+    {
+      "diagnosis": "Vitamin B12 deficiency",
+      "features": "May have subacute combined degeneration; cognitive changes; macrocytic anemia",
+      "tests": "B12, MMA levels; MRI spine"
+    },
+    {
+      "diagnosis": "Lyme disease",
+      "features": "Endemic area; prior tick bite; rash history; may have radiculopathy",
+      "tests": "Lyme serology (ELISA + Western blot)"
+    },
+    {
+      "diagnosis": "Hereditary sensory neuropathy (HSAN)",
+      "features": "Family history; anhidrosis; painless injuries; mutilating features",
+      "tests": "Genetic testing (HSAN genes)"
+    },
+    {
+      "diagnosis": "Burning mouth syndrome",
+      "features": "Isolated to oral mucosa; taste changes; dry mouth",
+      "tests": "Location-specific; oral exam"
+    },
+    {
+      "diagnosis": "Restless legs syndrome",
+      "features": "Urge to move legs; worse at rest/night; relief with movement",
+      "tests": "Clinical criteria; may coexist with SFN"
+    },
+    {
+      "diagnosis": "Vasculitic neuropathy",
+      "features": "Asymmetric; mononeuritis multiplex pattern; systemic symptoms; rapid onset",
+      "tests": "Nerve biopsy; inflammatory markers; angiography"
+    },
+    {
+      "diagnosis": "Paraneoplastic sensory ganglionopathy",
+      "features": "Subacute onset; asymmetric; non-length-dependent; cancer history/risk",
+      "tests": "Anti-Hu antibodies; CT chest/abdomen/pelvis"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Skin biopsy (IENFD) as diagnostic standard for SFN",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Lauria et al. European Journal of Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/20298428/)"
+    },
+    {
+      "recommendation": "QSART for sudomotor function assessment in SFN",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Low et al. Muscle & Nerve 1983](https://pubmed.ncbi.nlm.nih.gov/6308464/)"
+    },
+    {
+      "recommendation": "Impaired glucose tolerance as cause of SFN",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Singleton et al. Neurology 2001](https://pubmed.ncbi.nlm.nih.gov/11723275/)"
+    },
+    {
+      "recommendation": "Sjogren syndrome associated with SFN",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Chai et al. Annals of Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/15984030/)"
+    },
+    {
+      "recommendation": "Duloxetine for neuropathic pain",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Lunn et al. Cochrane 2014](https://pubmed.ncbi.nlm.nih.gov/24399144/)"
+    },
+    {
+      "recommendation": "Gabapentin for neuropathic pain",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Wiffen et al. Cochrane 2017](https://pubmed.ncbi.nlm.nih.gov/28597471/)"
+    },
+    {
+      "recommendation": "Pregabalin for neuropathic pain",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Derry et al. Cochrane 2019](https://pubmed.ncbi.nlm.nih.gov/30673120/)"
+    },
+    {
+      "recommendation": "TCAs for neuropathic pain",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Moore et al. Cochrane 2015](https://pubmed.ncbi.nlm.nih.gov/25879104/)"
+    },
+    {
+      "recommendation": "Fludrocortisone for orthostatic hypotension",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Freeman et al. Neurology 2018 Consensus Statement](https://pubmed.ncbi.nlm.nih.gov/29666232/)"
+    },
+    {
+      "recommendation": "Midodrine for orthostatic hypotension",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Wright et al. Am Heart J 1998](https://pubmed.ncbi.nlm.nih.gov/9463419/)"
+    },
+    {
+      "recommendation": "Droxidopa for neurogenic orthostatic hypotension",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Biaggioni et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/25646278/)"
+    },
+    {
+      "recommendation": "IVIG for autoimmune SFN",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Liu et al. J Periph Nerv Syst 2014](https://pubmed.ncbi.nlm.nih.gov/24750390/)"
+    },
+    {
+      "recommendation": "Fabry disease as cause of SFN",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Biegstraaten et al. Orphanet J Rare Dis 2012](https://pubmed.ncbi.nlm.nih.gov/22452838/)"
+    },
+    {
+      "recommendation": "TTR amyloidosis neuropathy treatment",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Adams et al. NEJM 2018 (Patisiran trial)](https://pubmed.ncbi.nlm.nih.gov/29972757/)"
+    },
+    {
+      "recommendation": "Sodium channelopathies (SCN9A) in SFN",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Faber et al. Ann Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/22522478/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Pain scores (NRS, VAS, BPI)",
+      "frequency": "Each visit",
+      "action": "Adjust medications; consider combination or referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "HbA1c (if diabetes/prediabetes)",
+      "frequency": "Every 3-6 months",
+      "action": "Intensify glycemic management",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Orthostatic vitals (lying, sitting, standing)",
+      "frequency": "Each visit if autonomic symptoms",
+      "action": "Adjust autonomic medications; hydration; compression",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Repeat skin biopsy (IENFD)",
+      "frequency": "Every 1-2 years if monitoring disease course",
+      "action": "Intensify etiology treatment if declining",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Autonomic symptoms inventory",
+      "frequency": "Each visit",
+      "action": "Adjust autonomic treatments; workup new symptoms",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ECG",
+      "frequency": "Baseline if on TCAs or sodium channel blockers; periodically",
+      "action": "Dose reduction or discontinuation if prolonged intervals",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (eGFR)",
+      "frequency": "Every 6-12 months",
+      "action": "Adjust medication doses; nephrology referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Potassium (if on fludrocortisone)",
+      "frequency": "Monthly initially, then every 3-6 months",
+      "action": "Supplement potassium; reduce fludrocortisone dose",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight and edema",
+      "frequency": "Each visit",
+      "action": "Adjust pregabalin/gabapentin or autonomic meds",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Depression screen (PHQ-9)",
+      "frequency": "Every 6-12 months",
+      "action": "Mental health referral; consider duloxetine/venlafaxine",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Falls assessment",
+      "frequency": "Each visit",
+      "action": "PT referral; home safety; reduce sedating medications",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Symptoms stable; pain controlled; autonomic symptoms not causing hemodynamic instability; follow-up arranged"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Severe uncontrolled pain requiring IV medications; syncope from orthostatic hypotension; new diagnosis requiring urgent workup (suspected amyloidosis with cardiac involvement)"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Hemodynamically unstable from autonomic dysfunction; severe symptomatic bradycardia or hypotension"
+    },
+    {
+      "disposition": "Outpatient follow-up",
+      "criteria": "Every 3-6 months for medication optimization; annually for etiology reassessment if initially idiopathic"
+    }
+  ]
+}

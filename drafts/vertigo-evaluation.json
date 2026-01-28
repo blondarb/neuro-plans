@@ -1,0 +1,1330 @@
+{
+  "id": "vertigo-evaluation",
+  "title": "Vertigo Evaluation",
+  "version": "1.0",
+  "icd10": [
+    "** R42 (Dizziness and giddiness)"
+  ],
+  "scope": "** Evaluation of acute and chronic vertigo including differentiation of peripheral vs central causes. Covers BPPV, vestibular neuritis, labyrinthitis, and Meniere's disease workup. Includes red flag identification for posterior circulation stroke. Excludes presyncope, orthostatic hypotension, and cardiac causes of dizziness.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Glucose (fingerstick or serum)",
+          "rationale": "Hypoglycemia can cause dizziness/lightheadedness mimicking vertigo",
+          "target": "Normal (70-100 mg/dL)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CBC",
+          "rationale": "Rule out anemia (causes lightheadedness), infection (labyrinthitis)",
+          "target": "Normal Hgb, WBC",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "BMP",
+          "rationale": "Electrolyte disturbance can cause dizziness; assess renal function",
+          "target": "Normal Na, K, glucose, creatinine",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH",
+          "rationale": "Thyroid dysfunction can cause vestibular symptoms",
+          "target": "Normal (0.4-4.0 mIU/L)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "HbA1c",
+          "rationale": "Screen for diabetes if neuropathy suspected contributing to imbalance",
+          "target": "<5.7% (normal); <7% (controlled DM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12",
+          "rationale": "Deficiency causes peripheral neuropathy affecting balance",
+          "target": ">300 pg/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR/VDRL",
+          "rationale": "Neurosyphilis can cause vestibular symptoms",
+          "target": "Nonreactive",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ESR, CRP",
+          "rationale": "Elevated in vasculitis, autoimmune inner ear disease",
+          "target": "Normal ESR (<20 mm/hr), CRP (<3 mg/L)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lipid panel",
+          "rationale": "Vascular risk assessment if central cause suspected",
+          "target": "LDL <100 mg/dL; HDL >40 mg/dL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "ANA, anti-dsDNA",
+          "rationale": "Autoimmune inner ear disease (AIED) suspected",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-HSP70 antibody",
+          "rationale": "Specific marker for autoimmune inner ear disease",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Lyme serology",
+          "rationale": "Endemic area with vestibular and facial nerve involvement",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "FTA-ABS",
+          "rationale": "Confirmatory test if RPR positive; otosyphilis",
+          "target": "Nonreactive",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing (COCH, MYO7A)",
+          "rationale": "Familial vestibular disorders, Usher syndrome",
+          "target": "No pathogenic variant",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT Head non-contrast",
+          "timing": "Acute vertigo with concern for hemorrhage or when MRI unavailable",
+          "target": "No hemorrhage, mass, or acute stroke",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI Brain with DWI",
+          "timing": "Central vertigo suspected; abnormal HINTS exam; risk factors for stroke",
+          "target": "No acute infarct; normal brainstem/cerebellum",
+          "contraindications": "MRI-incompatible devices, severe claustrophobia",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRA Head (Circle of Willis)",
+          "timing": "Posterior circulation stroke suspected; vertebral/basilar stenosis",
+          "target": "Patent posterior circulation; no stenosis",
+          "contraindications": "MRI contraindications",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI Internal Auditory Canals (IAC) with contrast",
+          "timing": "Unilateral hearing loss with vertigo; acoustic neuroma suspected",
+          "target": "No vestibular schwannoma or CPA lesion",
+          "contraindications": "Gadolinium allergy, severe CKD",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CTA Head/Neck",
+          "timing": "Vertebral dissection suspected; if MRA unavailable",
+          "target": "No dissection; patent vertebral arteries",
+          "contraindications": "Contrast allergy, CKD",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Audiometry",
+          "timing": "Sensorineural hearing loss; Meniere's suspected",
+          "target": "Symmetric hearing; low-frequency loss in Meniere's",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Videonystagmography (VNG)",
+          "timing": "Quantify vestibular function; localize peripheral lesion",
+          "target": "Identify unilateral weakness; canal paresis",
+          "contraindications": "Acute severe vertigo (defer until improved)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Electrocochleography (ECoG)",
+          "timing": "Meniere's disease confirmation",
+          "target": "Elevated SP/AP ratio >0.4",
+          "contraindications": "Recent ear surgery",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Vestibular evoked myogenic potentials (VEMP)",
+          "timing": "Superior canal dehiscence; saccular function",
+          "target": "Abnormal thresholds or amplitudes",
+          "contraindications": "Hearing aids (remove first)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "High-resolution CT temporal bones",
+          "timing": "Superior canal dehiscence; cholesteatoma",
+          "target": "Identify bony abnormalities",
+          "contraindications": "Pregnancy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Rotary chair testing",
+          "timing": "Bilateral vestibular loss; compensation assessment",
+          "target": "Assess VOR gain and phase",
+          "contraindications": "Severe vertigo (defer)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Video head impulse test (vHIT)",
+          "timing": "Quantify VOR for each semicircular canal",
+          "target": "Normal gain >0.8; refixation saccades",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Meclizine",
+          "route": "PO",
+          "indication": "Acute vertigo; vestibular suppressant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg PO",
+                "orderSentence": "Meclizine 25 mg PO PO"
+              },
+              {
+                "text": "25 mg TID",
+                "orderSentence": "Meclizine 25 mg TID PO"
+              },
+              {
+                "text": "50 mg TID",
+                "orderSentence": "Meclizine 50 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg PO q6-8h PRN vertigo; max 150 mg/day",
+            "orderSentence": "Meclizine 25 mg PO PO"
+          },
+          "contraindications": "Glaucoma; urinary retention; elderly (fall risk)",
+          "monitoring": "Sedation, anticholinergic effects",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dimenhydrinate (Dramamine)",
+          "route": "PO/IV",
+          "indication": "Acute vertigo with significant nausea",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg PO",
+                "orderSentence": "Dimenhydrinate (Dramamine) 50 mg PO PO/IV"
+              },
+              {
+                "text": "50 mg IV",
+                "orderSentence": "Dimenhydrinate (Dramamine) 50 mg IV PO/IV"
+              }
+            ],
+            "route": "PO/IV",
+            "instructions": "50 mg PO q6h or 50 mg IV q6h PRN; max 400 mg/day",
+            "orderSentence": "Dimenhydrinate (Dramamine) 50 mg PO PO/IV"
+          },
+          "contraindications": "Same as meclizine; IV form may cause hypotension",
+          "monitoring": "Sedation, BP if IV",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV/PO",
+          "indication": "Nausea/vomiting with acute vertigo",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg IV",
+                "orderSentence": "Ondansetron 4 mg IV IV/PO"
+              },
+              {
+                "text": "8 mg PO",
+                "orderSentence": "Ondansetron 8 mg PO IV/PO"
+              },
+              {
+                "text": "4 mg ODT",
+                "orderSentence": "Ondansetron 4 mg ODT IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "4 mg IV or 4-8 mg PO/ODT q8h PRN",
+            "orderSentence": "Ondansetron 4 mg IV IV/PO"
+          },
+          "contraindications": "QT prolongation; severe hepatic impairment",
+          "monitoring": "QTc if multiple doses or risk factors",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Promethazine",
+          "route": "IV/IM/PO",
+          "indication": "Severe nausea with acute vertigo",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg IV",
+                "orderSentence": "Promethazine 12.5 mg IV IV/IM/PO"
+              },
+              {
+                "text": "25 mg IV",
+                "orderSentence": "Promethazine 25 mg IV IV/IM/PO"
+              },
+              {
+                "text": "25 mg PO",
+                "orderSentence": "Promethazine 25 mg PO IV/IM/PO"
+              }
+            ],
+            "route": "IV/IM/PO",
+            "instructions": "12.5-25 mg IV/IM/PO q4-6h PRN; max 100 mg/day",
+            "orderSentence": "Promethazine 12.5 mg IV IV/IM/PO"
+          },
+          "contraindications": "Respiratory depression; Parkinson's; children <2 years",
+          "monitoring": "Sedation, respiratory status, dystonia",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV/PO",
+          "indication": "Severe acute vertigo refractory to antihistamines",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg IV",
+                "orderSentence": "Lorazepam 0.5 mg IV IV/PO"
+              },
+              {
+                "text": "1 mg IV",
+                "orderSentence": "Lorazepam 1 mg IV IV/PO"
+              },
+              {
+                "text": "0.5 mg PO",
+                "orderSentence": "Lorazepam 0.5 mg PO IV/PO"
+              },
+              {
+                "text": "1 mg PO",
+                "orderSentence": "Lorazepam 1 mg PO IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "0.5-1 mg IV/PO q8h PRN severe vertigo; short-term use only",
+            "orderSentence": "Lorazepam 0.5 mg IV IV/PO"
+          },
+          "contraindications": "Respiratory depression; severe hepatic impairment; angle-closure glaucoma",
+          "monitoring": "Sedation, respiratory status",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Diazepam",
+          "route": "PO",
+          "indication": "Vestibular suppressant; more sedating",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg PO",
+                "orderSentence": "Diazepam 2 mg PO PO"
+              },
+              {
+                "text": "5 mg PO",
+                "orderSentence": "Diazepam 5 mg PO PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2-5 mg PO q8-12h PRN vertigo; limit to 3-5 days",
+            "orderSentence": "Diazepam 2 mg PO PO"
+          },
+          "contraindications": "Same as lorazepam",
+          "monitoring": "Sedation, respiratory status",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IV Normal Saline",
+          "route": "IV",
+          "indication": "Dehydration from vomiting",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mL IV bolus",
+                "orderSentence": "IV Normal Saline 1000 mL IV bolus IV"
+              },
+              {
+                "text": "125 mL/hr IV",
+                "orderSentence": "IV Normal Saline 125 mL/hr IV IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2 L bolus then maintenance as needed",
+            "orderSentence": "IV Normal Saline 1000 mL IV bolus IV"
+          },
+          "contraindications": "Heart failure; volume overload",
+          "monitoring": "Intake/output, signs of overload",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Epley maneuver (canalith repositioning)",
+          "route": "Physical",
+          "indication": "BPPV - posterior canal (most common)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Perform once",
+                "orderSentence": "Epley maneuver (canalith repositioning) Perform once Physical"
+              },
+              {
+                "text": "may repeat x2 same session",
+                "orderSentence": "Epley maneuver (canalith repositioning) may repeat x2 same session Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Modified Epley: 5 positions held 30-60 sec each; may repeat if persistent nystagmus",
+            "orderSentence": "Epley maneuver (canalith repositioning) Perform once Physical"
+          },
+          "contraindications": "Severe cervical spine disease; carotid stenosis (relative)",
+          "monitoring": "Nystagmus resolution; post-maneuver restrictions controversial",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Semont maneuver",
+          "route": "Physical",
+          "indication": "BPPV - alternative to Epley",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Perform once",
+                "orderSentence": "Semont maneuver Perform once Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Side-lying liberatory maneuver; faster but more uncomfortable",
+            "orderSentence": "Semont maneuver Perform once Physical"
+          },
+          "contraindications": "Same as Epley",
+          "monitoring": "Nystagmus resolution",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Brandt-Daroff exercises",
+          "route": "Physical",
+          "indication": "BPPV - home exercise; residual symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Twice daily home exercise",
+                "orderSentence": "Brandt-Daroff exercises Twice daily home exercise Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Sit-to-side x5 each side, 30 sec holds, BID for 2 weeks",
+            "orderSentence": "Brandt-Daroff exercises Twice daily home exercise Physical"
+          },
+          "contraindications": "Severe nausea (defer until improved)",
+          "monitoring": "Symptom diary",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lempert maneuver (BBQ roll)",
+          "route": "Physical",
+          "indication": "BPPV - horizontal canal variant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Perform once",
+                "orderSentence": "Lempert maneuver (BBQ roll) Perform once Physical"
+              },
+              {
+                "text": "may repeat",
+                "orderSentence": "Lempert maneuver (BBQ roll) may repeat Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Serial 90-degree rolls toward unaffected ear (360 total)",
+            "orderSentence": "Lempert maneuver (BBQ roll) Perform once Physical"
+          },
+          "contraindications": "Cervical spine disease",
+          "monitoring": "Nystagmus resolution",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prochlorperazine",
+          "route": "IV/PO",
+          "indication": "Vertigo with significant nausea",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg IV",
+                "orderSentence": "Prochlorperazine 10 mg IV IV/PO"
+              },
+              {
+                "text": "10 mg PO",
+                "orderSentence": "Prochlorperazine 10 mg PO IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "5-10 mg IV/PO q6-8h PRN; max 40 mg/day",
+            "orderSentence": "Prochlorperazine 10 mg IV IV/PO"
+          },
+          "contraindications": "Parkinson's; QT prolongation; tardive dyskinesia history",
+          "monitoring": "Akathisia, dystonia, QTc",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Scopolamine patch",
+          "route": "Transdermal",
+          "indication": "Motion sickness; prolonged vertigo episodes",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 patch q72h",
+                "orderSentence": "Scopolamine patch 1 patch q72h Transdermal"
+              }
+            ],
+            "route": "Transdermal",
+            "instructions": "Apply 1 patch behind ear; replace q72h; remove if symptoms resolve",
+            "orderSentence": "Scopolamine patch 1 patch q72h Transdermal"
+          },
+          "contraindications": "Glaucoma; urinary retention; elderly",
+          "monitoring": "Anticholinergic effects, dry mouth",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Methylprednisolone",
+          "route": "PO",
+          "indication": "Vestibular neuritis - may improve recovery",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg daily x 3 days",
+                "orderSentence": "Methylprednisolone 100 mg daily x 3 days PO"
+              },
+              {
+                "text": "80 mg daily",
+                "orderSentence": "Methylprednisolone 80 mg daily PO"
+              },
+              {
+                "text": "60 mg daily",
+                "orderSentence": "Methylprednisolone 60 mg daily PO"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Methylprednisolone 40 mg daily PO"
+              },
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Methylprednisolone 20 mg daily PO"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Methylprednisolone 10 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg daily x3 days, then taper over 3 weeks (total 22-day course)",
+            "orderSentence": "Methylprednisolone 100 mg daily x 3 days PO"
+          },
+          "contraindications": "Active infection; uncontrolled diabetes; psychosis",
+          "monitoring": "Glucose, BP, mood",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prednisone",
+          "route": "PO",
+          "indication": "Vestibular neuritis - alternative steroid",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg daily",
+                "orderSentence": "Prednisone 60 mg daily PO"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Prednisone 40 mg daily PO"
+              },
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Prednisone 20 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 mg/kg/day (max 60 mg) x 5 days, taper over 2 weeks",
+            "orderSentence": "Prednisone 60 mg daily PO"
+          },
+          "contraindications": "Same as methylprednisolone",
+          "monitoring": "Glucose, BP, mood",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Valacyclovir",
+          "route": "PO",
+          "indication": "Vestibular neuritis - if viral etiology suspected",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg TID x 7 days",
+                "orderSentence": "Valacyclovir 1000 mg TID x 7 days PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mg PO TID x 7 days; most effective if started within 72 hrs",
+            "orderSentence": "Valacyclovir 1000 mg TID x 7 days PO"
+          },
+          "contraindications": "Renal impairment (dose adjust)",
+          "monitoring": "Renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Betahistine",
+          "route": "PO",
+          "indication": "Meniere's disease - vestibular blood flow",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "16 mg TID",
+                "orderSentence": "Betahistine 16 mg TID PO"
+              },
+              {
+                "text": "24 mg TID",
+                "orderSentence": "Betahistine 24 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "8-16 mg PO TID; titrate to 24 mg TID if needed; not FDA approved in US",
+            "orderSentence": "Betahistine 16 mg TID PO"
+          },
+          "contraindications": "Pheochromocytoma; active peptic ulcer",
+          "monitoring": "GI upset, headache",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hydrochlorothiazide",
+          "route": "PO",
+          "indication": "Meniere's disease - reduce endolymphatic pressure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Hydrochlorothiazide 25 mg daily PO"
+              },
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Hydrochlorothiazide 50 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "12.5-50 mg PO daily",
+            "orderSentence": "Hydrochlorothiazide 25 mg daily PO"
+          },
+          "contraindications": "Sulfa allergy; hypokalemia; severe renal impairment",
+          "monitoring": "K+, Na+, creatinine, glucose",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Triamterene/HCTZ",
+          "route": "PO",
+          "indication": "Meniere's disease - potassium-sparing diuretic",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5/25 mg daily",
+                "orderSentence": "Triamterene/HCTZ 37.5/25 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "37.5/25 mg PO daily",
+            "orderSentence": "Triamterene/HCTZ 37.5/25 mg daily PO"
+          },
+          "contraindications": "Hyperkalemia; severe renal impairment",
+          "monitoring": "K+, creatinine",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Intratympanic dexamethasone",
+          "route": "IT",
+          "indication": "Refractory Meniere's disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg/mL IT injection",
+                "orderSentence": "Intratympanic dexamethasone 4 mg/mL IT injection Intratympanic"
+              }
+            ],
+            "route": "Intratympanic",
+            "instructions": "0.4-0.8 mL of 4-24 mg/mL solution injected through TM; repeat x3-4 over 2 weeks",
+            "orderSentence": "Intratympanic dexamethasone 4 mg/mL IT injection Intratympanic"
+          },
+          "contraindications": "Active ear infection; perforated TM",
+          "monitoring": "Hearing, vertigo control",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Intratympanic gentamicin",
+          "route": "IT",
+          "indication": "Refractory Meniere's disease - ablative",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg/mL IT injection",
+                "orderSentence": "Intratympanic gentamicin 40 mg/mL IT injection Intratympanic"
+              }
+            ],
+            "route": "Intratympanic",
+            "instructions": "Chemical labyrinthectomy; 0.5 mL of 40 mg/mL; may repeat in 4 weeks",
+            "orderSentence": "Intratympanic gentamicin 40 mg/mL IT injection Intratympanic"
+          },
+          "contraindications": "Only hearing ear; bilateral disease",
+          "monitoring": "Hearing loss (expected), vertigo control",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying or Chronic Therapies": [
+        {
+          "item": "Vestibular rehabilitation therapy",
+          "route": "Physical",
+          "indication": "Vestibular hypofunction; chronic imbalance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2x weekly sessions",
+                "orderSentence": "Vestibular rehabilitation therapy 1-2x weekly sessions Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "6-12 week program with home exercises; gaze stabilization, balance training, habituation",
+            "orderSentence": "Vestibular rehabilitation therapy 1-2x weekly sessions Physical"
+          },
+          "pretreatment": "Audiometry, VNG to define deficit",
+          "contraindications": "Acute vertigo (defer)",
+          "monitoring": "Fall risk, symptom diary, DHI scores",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Low-sodium diet",
+          "route": "Dietary",
+          "indication": "Meniere's disease - reduce endolymph",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "<1500-2000 mg Na/day",
+                "orderSentence": "Low-sodium diet <1500-2000 mg Na/day Dietary"
+              }
+            ],
+            "route": "Dietary",
+            "instructions": "Strict sodium restriction; avoid processed foods, add no salt",
+            "orderSentence": "Low-sodium diet <1500-2000 mg Na/day Dietary"
+          },
+          "pretreatment": "Dietitian consultation",
+          "contraindications": "Hypotension if on diuretics",
+          "monitoring": "BP, symptoms, dietary compliance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Caffeine/alcohol avoidance",
+          "route": "Lifestyle",
+          "indication": "Meniere's disease; vestibular migraine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Eliminate or minimize",
+                "orderSentence": "Caffeine/alcohol avoidance Eliminate or minimize Lifestyle"
+              }
+            ],
+            "route": "Lifestyle",
+            "instructions": "Avoid caffeine and alcohol which may trigger episodes",
+            "orderSentence": "Caffeine/alcohol avoidance Eliminate or minimize Lifestyle"
+          },
+          "pretreatment": "None",
+          "contraindications": "None",
+          "monitoring": "Symptom diary",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Migraine preventive therapy",
+          "route": "PO",
+          "indication": "Vestibular migraine confirmed",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per migraine protocol",
+                "orderSentence": "Migraine preventive therapy Per migraine protocol PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "See Migraine plan for preventive options (topiramate, propranolol, amitriptyline)",
+            "orderSentence": "Migraine preventive therapy Per migraine protocol PO"
+          },
+          "pretreatment": "HIS/Barany criteria for vestibular migraine",
+          "contraindications": "Per specific medication",
+          "monitoring": "Per specific medication",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consultation for central vertigo evaluation when HINTS exam suggests central lesion or stroke suspected",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ENT/Otology referral for refractory BPPV, Meniere's disease management, or hearing loss evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vestibular physical therapy for vestibular rehabilitation and balance retraining after acute vertigo resolves",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Audiology for formal hearing assessment and vestibular function testing (VNG, VEMP)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuro-ophthalmology if ocular motor abnormalities persist or skew deviation concerning for brainstem lesion",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stroke neurology for urgent evaluation if HINTS-plus exam suggests posterior circulation stroke",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cardiology if presyncope suspected or arrhythmia contributing to dizziness",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately if vertigo associated with new headache, diplopia, dysarthria, dysphagia, or weakness (signs of stroke)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return immediately if sudden hearing loss occurs which requires urgent treatment within 72 hours",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid driving, operating machinery, or working at heights until vertigo resolves completely due to fall and accident risk",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Use assistive devices (cane, walker) if balance impaired to prevent falls",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Perform Brandt-Daroff exercises twice daily as instructed if diagnosed with BPPV",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep head elevated 30-45 degrees when sleeping for 24-48 hours after Epley maneuver (controversial but commonly recommended)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid sudden head movements and rapid position changes which may trigger vertigo",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain hydration and avoid skipping meals as dehydration and hypoglycemia can worsen symptoms",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Sodium restriction (<2000 mg/day) if Meniere's disease diagnosed to reduce attack frequency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Caffeine reduction or elimination as caffeine can exacerbate vestibular symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol avoidance as alcohol directly affects vestibular function and can trigger episodes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stress management through relaxation techniques as stress can trigger vestibular migraine and Meniere's attacks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular sleep schedule as sleep deprivation can worsen vestibular symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Fall prevention measures including removing throw rugs, installing grab bars, adequate lighting at home",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation to reduce vascular risk factors that contribute to central vertigo",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "BPPV (posterior canal)",
+      "features": "Brief episodes (<1 min) triggered by position change; positive Dix-Hallpike with upbeat-torsional nystagmus",
+      "tests": "Dix-Hallpike maneuver; resolves with Epley"
+    },
+    {
+      "diagnosis": "BPPV (horizontal canal)",
+      "features": "Horizontal nystagmus with supine roll test; direction-changing or direction-fixed",
+      "tests": "Supine roll test; treat with BBQ roll maneuver"
+    },
+    {
+      "diagnosis": "Vestibular neuritis",
+      "features": "Acute severe vertigo lasting days; unidirectional horizontal nystagmus; normal hearing",
+      "tests": "HINTS exam (peripheral pattern); MRI to rule out stroke"
+    },
+    {
+      "diagnosis": "Labyrinthitis",
+      "features": "Same as vestibular neuritis PLUS hearing loss; may follow URI",
+      "tests": "Audiometry shows sensorineural loss; HINTS peripheral"
+    },
+    {
+      "diagnosis": "Meniere's disease",
+      "features": "Recurrent episodes (20 min - 12 hr) with hearing loss, tinnitus, aural fullness",
+      "tests": "Audiometry (low-frequency loss); ECoG; MRI IAC"
+    },
+    {
+      "diagnosis": "Vestibular migraine",
+      "features": "Vertigo with migraine features; variable duration (5 min - 72 hr); motion sensitivity",
+      "tests": "HIS/Barany criteria; diagnosis of exclusion; MRI normal"
+    },
+    {
+      "diagnosis": "Posterior circulation stroke",
+      "features": "Acute vertigo + neurological signs; HINTS central pattern; vascular risk factors",
+      "tests": "MRI DWI (may be negative early); HINTS exam"
+    },
+    {
+      "diagnosis": "Cerebellar hemorrhage/infarct",
+      "features": "Severe imbalance; unable to walk; may have headache, vomiting",
+      "tests": "CT head (hemorrhage); MRI DWI (infarct)"
+    },
+    {
+      "diagnosis": "Multiple sclerosis",
+      "features": "Vertigo with other demyelinating symptoms; younger patient",
+      "tests": "MRI brain/spine with contrast; CSF oligoclonal bands"
+    },
+    {
+      "diagnosis": "Acoustic neuroma",
+      "features": "Progressive unilateral hearing loss, tinnitus; vertigo less prominent",
+      "tests": "MRI IAC with gadolinium"
+    },
+    {
+      "diagnosis": "Perilymphatic fistula",
+      "features": "Vertigo/hearing loss after trauma, straining, or barotrauma",
+      "tests": "History; may need surgical exploration"
+    },
+    {
+      "diagnosis": "Superior canal dehiscence",
+      "features": "Vertigo triggered by loud sounds (Tullio) or pressure; autophony",
+      "tests": "High-resolution CT temporal bone; VEMP"
+    },
+    {
+      "diagnosis": "Central positional vertigo",
+      "features": "Down-beating nystagmus with Dix-Hallpike; doesn't fatigue",
+      "tests": "MRI cerebellum; Dix-Hallpike pattern"
+    },
+    {
+      "diagnosis": "Drug-induced vestibulotoxicity",
+      "features": "Bilateral vestibular loss; aminoglycosides, loop diuretics, chemotherapy",
+      "tests": "History; bilateral caloric weakness on VNG"
+    },
+    {
+      "diagnosis": "Presyncope (cardiac)",
+      "features": "Near-fainting rather than spinning; palpitations; exertional",
+      "tests": "ECG, Holter, echocardiogram; orthostatic vitals"
+    },
+    {
+      "diagnosis": "Orthostatic hypotension",
+      "features": "Dizziness on standing; BP drop >20/10 mmHg",
+      "tests": "Orthostatic vital signs"
+    },
+    {
+      "diagnosis": "Anxiety/panic disorder",
+      "features": "Chronic dizziness; associated anxiety; no objective vestibular findings",
+      "tests": "Normal vestibular testing; psychiatric evaluation"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "HINTS exam superior to early MRI for detecting stroke",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Kattah et al. Stroke 2009](https://pubmed.ncbi.nlm.nih.gov/19762709/)"
+    },
+    {
+      "recommendation": "Epley maneuver effective for posterior canal BPPV",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Hilton et al. Cochrane Database Syst Rev 2014](https://pubmed.ncbi.nlm.nih.gov/25513198/)"
+    },
+    {
+      "recommendation": "Corticosteroids improve vestibular neuritis recovery",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Strupp et al. NEJM 2004](https://pubmed.ncbi.nlm.nih.gov/15254283/)"
+    },
+    {
+      "recommendation": "Vestibular rehabilitation effective for chronic vestibular hypofunction",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[McDonnell & Hillier Cochrane 2015](https://pubmed.ncbi.nlm.nih.gov/25581507/)"
+    },
+    {
+      "recommendation": "HINTS-plus (HINTS + hearing) increases stroke detection",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Newman-Toker et al. Stroke 2013](https://pubmed.ncbi.nlm.nih.gov/23686976/)"
+    },
+    {
+      "recommendation": "Betahistine for Meniere's disease symptoms",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[James & Burton Cochrane 2001](https://pubmed.ncbi.nlm.nih.gov/11279756/)"
+    },
+    {
+      "recommendation": "Intratympanic gentamicin for refractory Meniere's",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Pullens & van Benthem Cochrane 2011](https://pubmed.ncbi.nlm.nih.gov/21412877/)"
+    },
+    {
+      "recommendation": "Meclizine comparable to diazepam for acute vertigo",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[McClure & Willett Arch Otolaryngol 1980](https://pubmed.ncbi.nlm.nih.gov/6986909/)"
+    },
+    {
+      "recommendation": "Low sodium diet for Meniere's disease management",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Luxford et al. Otolaryngol Head Neck Surg 2013](https://pubmed.ncbi.nlm.nih.gov/23886564/)"
+    },
+    {
+      "recommendation": "Diagnostic criteria for vestibular migraine",
+      "evidenceLevel": "Consensus",
+      "source": "[Lempert et al. Barany Society/IHS 2012](https://pubmed.ncbi.nlm.nih.gov/22287185/)"
+    },
+    {
+      "recommendation": "Video head impulse test for vestibular function",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[MacDougall et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19273827/)"
+    },
+    {
+      "recommendation": "Central vs peripheral vertigo differentiation",
+      "evidenceLevel": "Consensus",
+      "source": "[Baloh & Honrubia. Clinical Neurophysiology of Vestibular System 2011](https://pubmed.ncbi.nlm.nih.gov/21332419/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "HINTS exam (Head Impulse, Nystagmus, Test of Skew)",
+      "frequency": "Initial presentation",
+      "action": "Central pattern requires urgent MRI and neurology consult",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Nystagmus characteristics",
+      "frequency": "Serial exam in ED",
+      "action": "Direction-changing, vertical, or non-suppressing suggests central",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Gait and balance assessment",
+      "frequency": "Each encounter",
+      "action": "Unable to walk suggests central lesion or severe peripheral",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Hearing assessment (bedside)",
+      "frequency": "Initial and follow-up",
+      "action": "Asymmetric loss requires audiometry and MRI IAC",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Symptom severity (VAS or DHI)",
+      "frequency": "Each visit",
+      "action": "Persistent or worsening requires imaging, reassessment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Dix-Hallpike test",
+      "frequency": "If BPPV suspected; follow-up",
+      "action": "Positive requires repositioning; recurrence common",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Fall risk assessment",
+      "frequency": "Each encounter",
+      "action": "High risk requires PT, home safety evaluation, assistive devices",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Vestibular function (VNG/VEMP)",
+      "frequency": "After acute phase; follow-up",
+      "action": "Persistent deficit requires vestibular rehabilitation",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Peripheral vertigo confirmed (HINTS peripheral); symptoms controlled; able to ambulate safely; able to tolerate PO; follow-up arranged; no red flags"
+    },
+    {
+      "disposition": "Observation",
+      "criteria": "Severe symptoms requiring IV fluids/medications; unable to ambulate safely; awaiting MRI to rule out central cause"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Central vertigo confirmed requiring workup; stroke suspected but stable; severe dehydration; unable to tolerate PO for >24 hours"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Cerebellar stroke with risk of herniation; cerebellar hemorrhage; posterior circulation stroke with fluctuating symptoms"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Central vertigo suspected and MRI/neurology not available; cerebellar stroke requiring neurosurgical evaluation"
+    },
+    {
+      "disposition": "Outpatient follow-up",
+      "criteria": "Within 1-2 weeks for new vertigo; sooner if symptoms persist; ENT referral for Meniere's or hearing loss"
+    }
+  ]
+}

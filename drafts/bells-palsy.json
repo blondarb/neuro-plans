@@ -1,0 +1,820 @@
+{
+  "id": "bells-palsy",
+  "title": "Bell's Palsy",
+  "version": "1.0",
+  "icd10": [
+    "** G51.0 (Bell's palsy)"
+  ],
+  "scope": "** Acute unilateral peripheral facial nerve palsy of presumed idiopathic etiology. Covers initial evaluation, treatment, and follow-up. Excludes Ramsay Hunt syndrome (herpes zoster oticus), central facial palsy, bilateral facial palsy, and secondary causes.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Glucose or HbA1c",
+          "rationale": "Diabetes is risk factor and affects prognosis",
+          "target": "Normal glucose; HbA1c <7%",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Lyme serology (ELISA + Western blot)",
+          "rationale": "Endemic areas or tick exposure; bilateral palsy",
+          "target": "Negative",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CBC with differential",
+          "rationale": "Concern for leukemia or infection",
+          "target": "Normal",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ESR, CRP",
+          "rationale": "Inflammatory etiology suspected",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV testing",
+          "rationale": "Risk factors present; atypical or recurrent",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR/VDRL",
+          "rationale": "Syphilis can cause cranial neuropathies",
+          "target": "Nonreactive",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "ACE level, chest imaging",
+          "rationale": "Sarcoidosis suspected (bilateral, recurrent, uveitis)",
+          "target": "Normal ACE; clear CXR",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA, anti-Ro/La",
+          "rationale": "Autoimmune etiology suspected",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF analysis",
+          "rationale": "Lyme neuroborreliosis, GBS, or carcinomatous meningitis suspected",
+          "target": "Normal; negative Lyme",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "None routinely required",
+          "timing": "N/A",
+          "target": "Clinical diagnosis sufficient for typical Bell's palsy",
+          "contraindications": "N/A",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI Brain with contrast",
+          "timing": "Atypical features, no improvement by 4 months, recurrent",
+          "target": "Enhancement of facial nerve (may be normal in Bell's); exclude tumor",
+          "contraindications": "MRI-incompatible devices; gadolinium allergy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI IAC/Temporal bone",
+          "timing": "Suspected tumor, Ramsay Hunt, or recurrent palsy",
+          "target": "Exclude schwannoma, hemangioma, cholesteatoma",
+          "contraindications": "MRI-incompatible devices",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CT Head non-contrast",
+          "timing": "Concern for stroke (upper and lower face affected)",
+          "target": "Exclude acute CVA",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Electroneuronography (ENoG)",
+          "timing": "Days 3-14 for severe palsy",
+          "target": ">90% degeneration may indicate need for decompression",
+          "contraindications": "Too early (<3 days) or late (>3 weeks)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "EMG facial nerve",
+          "timing": "After 2-3 weeks if complete palsy; at 4 months if no recovery",
+          "target": "Evidence of reinnervation; fibrillations indicate denervation",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Needle EMG (blink reflex)",
+          "timing": "Assessing recovery potential",
+          "target": "Present R1 response indicates favorable prognosis",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Prednisone",
+          "route": "PO",
+          "indication": "First-line treatment; must start within 72 hours of onset",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg daily x 5 days",
+                "orderSentence": "Prednisone 60 mg daily x 5 days PO"
+              },
+              {
+                "text": "60 mg daily x 5 days then taper",
+                "orderSentence": "Prednisone 60 mg daily x 5 days then taper PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "60-80 mg daily for 5 days, then taper over 5 days (or 60 mg x 5d then 10 mg daily decrease); total 10 days",
+            "orderSentence": "Prednisone 60 mg daily x 5 days PO"
+          },
+          "contraindications": "Uncontrolled diabetes (relative); active systemic infection; psychosis",
+          "monitoring": "Glucose in diabetics; mood changes",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "-"
+        },
+        {
+          "item": "Prednisolone",
+          "route": "PO",
+          "indication": "Alternative to prednisone; may have better bioavailability",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg daily x 10 days",
+                "orderSentence": "Prednisolone 50 mg daily x 10 days PO"
+              },
+              {
+                "text": "25 mg BID x 10 days",
+                "orderSentence": "Prednisolone 25 mg BID x 10 days PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg daily (or 25 mg BID) for 10 days",
+            "orderSentence": "Prednisolone 50 mg daily x 10 days PO"
+          },
+          "contraindications": "Same as prednisone",
+          "monitoring": "Glucose in diabetics",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "-"
+        },
+        {
+          "item": "Valacyclovir",
+          "route": "PO",
+          "indication": "Adjunct for severe (HB V-VI) or complete facial paralysis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg TID x 7 days",
+                "orderSentence": "Valacyclovir 1000 mg TID x 7 days PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mg PO TID for 7 days; start within 72 hours; always combine with corticosteroid",
+            "orderSentence": "Valacyclovir 1000 mg TID x 7 days PO"
+          },
+          "contraindications": "Renal impairment (dose adjust); hypersensitivity",
+          "monitoring": "Renal function in CKD",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acyclovir",
+          "route": "PO",
+          "indication": "Alternative antiviral if valacyclovir unavailable",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg 5x/day x 10 days",
+                "orderSentence": "Acyclovir 400 mg 5x/day x 10 days PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400 mg PO 5 times daily for 10 days; always combine with corticosteroid",
+            "orderSentence": "Acyclovir 400 mg 5x/day x 10 days PO"
+          },
+          "contraindications": "Renal impairment (dose adjust); hypersensitivity",
+          "monitoring": "Renal function in CKD",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Artificial tears (carboxymethylcellulose)",
+          "route": "TOP",
+          "indication": "Eye protection during waking hours; prevents exposure keratopathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 drops q1-2h while awake",
+                "orderSentence": "Artificial tears (carboxymethylcellulose) 1-2 drops q1-2h while awake TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "1-2 drops to affected eye every 1-2 hours while awake; increase frequency as needed",
+            "orderSentence": "Artificial tears (carboxymethylcellulose) 1-2 drops q1-2h while awake TOP"
+          },
+          "contraindications": "None",
+          "monitoring": "Corneal status",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lubricating eye ointment (lacri-lube)",
+          "route": "TOP",
+          "indication": "Nighttime eye protection; prevents corneal drying during sleep",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Apply qHS",
+                "orderSentence": "Lubricating eye ointment (lacri-lube) Apply qHS TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Apply 1/4 inch ribbon to affected eye at bedtime",
+            "orderSentence": "Lubricating eye ointment (lacri-lube) Apply qHS TOP"
+          },
+          "contraindications": "None",
+          "monitoring": "Corneal status",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Eye patch/Moisture chamber",
+          "route": "TOP",
+          "indication": "Corneal protection especially at night or outdoors",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Use during sleep and windy conditions",
+                "orderSentence": "Eye patch/Moisture chamber Use during sleep and windy conditions TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Tape eye closed at night; use moisture chamber glasses during day if severe lagophthalmos",
+            "orderSentence": "Eye patch/Moisture chamber Use during sleep and windy conditions TOP"
+          },
+          "contraindications": "None",
+          "monitoring": "Ensure complete closure; no corneal contact",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Surgical tape (for eye closure)",
+          "route": "TOP",
+          "indication": "Ensure complete eyelid closure during sleep",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Apply at bedtime",
+                "orderSentence": "Surgical tape (for eye closure) Apply at bedtime TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Use hypoallergenic tape to gently tape eyelid closed at night; vertical taping preferred",
+            "orderSentence": "Surgical tape (for eye closure) Apply at bedtime TOP"
+          },
+          "contraindications": "Skin sensitivity; ensure no tape touches cornea",
+          "monitoring": "Skin irritation; corneal status",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Postauricular pain associated with Bell's palsy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650 mg q6h PRN",
+                "orderSentence": "Acetaminophen 650 mg q6h PRN PO"
+              },
+              {
+                "text": "1000 mg q6h PRN",
+                "orderSentence": "Acetaminophen 1000 mg q6h PRN PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO q6h PRN pain; max 3000 mg/day",
+            "orderSentence": "Acetaminophen 650 mg q6h PRN PO"
+          },
+          "contraindications": "Hepatic impairment; avoid with alcohol",
+          "monitoring": "Hepatic function with prolonged use",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "Postauricular pain; mild anti-inflammatory effect",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg q6h PRN",
+                "orderSentence": "Ibuprofen 400 mg q6h PRN PO"
+              },
+              {
+                "text": "600 mg q6h PRN",
+                "orderSentence": "Ibuprofen 600 mg q6h PRN PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-600 mg PO q6h PRN pain; max 2400 mg/day",
+            "orderSentence": "Ibuprofen 400 mg q6h PRN PO"
+          },
+          "contraindications": "Renal impairment; GI bleed; aspirin allergy",
+          "monitoring": "GI symptoms; renal function",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Botulinum toxin A",
+          "route": "IM",
+          "indication": "Synkinesis or hemifacial spasm following recovery",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5-5 units per site",
+                "orderSentence": "Botulinum toxin A 2.5-5 units per site IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Inject 2.5-5 units per site in affected muscles; dose varies by target muscle; repeat q3-4 months",
+            "orderSentence": "Botulinum toxin A 2.5-5 units per site IM"
+          },
+          "contraindications": "Infection at site; myasthenia gravis; aminoglycosides",
+          "monitoring": "Weakness, ptosis, asymmetry",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy (facial)",
+          "route": "N/A",
+          "indication": "Facilitate recovery; prevent contracture; treat synkinesis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per PT protocol",
+                "orderSentence": "Physical therapy (facial) Per PT protocol N/A"
+              }
+            ],
+            "route": "N/A",
+            "instructions": "Facial exercises, massage, mirror biofeedback; start after acute phase",
+            "orderSentence": "Physical therapy (facial) Per PT protocol N/A"
+          },
+          "contraindications": "None",
+          "monitoring": "Compliance; progress",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Facial nerve decompression",
+          "route": "Surgical",
+          "indication": "ENoG shows >90% degeneration within 14 days; controversial",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Surgical referral",
+                "orderSentence": "Facial nerve decompression Surgical referral N/A"
+              }
+            ],
+            "route": "N/A",
+            "instructions": "Consider if >90% degeneration on ENoG within 2 weeks of onset; rarely performed",
+            "orderSentence": "Facial nerve decompression Surgical referral N/A"
+          },
+          "contraindications": "Surgical contraindications",
+          "monitoring": "Post-operative course; hearing",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Gold weight implant",
+          "route": "Surgical",
+          "indication": "Chronic lagophthalmos with corneal exposure risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Surgical referral",
+                "orderSentence": "Gold weight implant Surgical referral N/A"
+              }
+            ],
+            "route": "N/A",
+            "instructions": "For persistent incomplete eye closure after 6-12 months",
+            "orderSentence": "Gold weight implant Surgical referral N/A"
+          },
+          "contraindications": "Surgical contraindications",
+          "monitoring": "Corneal protection; cosmesis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Tarsorrhaphy",
+          "route": "Surgical",
+          "indication": "Severe corneal exposure not controlled medically",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Surgical referral",
+                "orderSentence": "Tarsorrhaphy Surgical referral N/A"
+              }
+            ],
+            "route": "N/A",
+            "instructions": "Temporary or permanent suturing of eyelids for corneal protection",
+            "orderSentence": "Tarsorrhaphy Surgical referral N/A"
+          },
+          "contraindications": "Surgical contraindications",
+          "monitoring": "Corneal status",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Ophthalmology referral urgently if corneal involvement, severe lagophthalmos, or eye pain concerning for exposure keratopathy",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology referral if atypical features, no improvement by 3-4 weeks, or concern for central etiology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ENT/Otolaryngology referral if Ramsay Hunt suspected, recurrent palsy, or consideration of surgical decompression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy referral for facial rehabilitation, particularly if incomplete recovery or synkinesis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Plastic surgery/Oculoplastic referral for chronic lagophthalmos requiring surgical intervention (gold weight, tarsorrhaphy)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately for eye pain, redness, or vision changes which may indicate corneal injury from exposure",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return if facial weakness worsens after initial improvement or new symptoms develop (numbness, hearing loss, other weakness)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Protect affected eye from wind, dust, and debris with glasses or moisture chamber during recovery",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Use artificial tears frequently during the day and lubricating ointment at night; tape eye closed if unable to fully close",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Most patients (70-85%) recover completely; recovery typically begins within 3 weeks and completes within 3-4 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not discontinue steroids abruptly as this may cause adrenal insufficiency; complete the full taper as prescribed",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Facial exercises may help recovery; gently massage face and practice facial movements in mirror several times daily",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Adequate sleep and stress management as viral reactivation may be triggered by stress and immunosuppression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid extreme cold and wind exposure to face during recovery period to prevent irritation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Diabetic patients should maintain strict glycemic control as hyperglycemia worsens prognosis and slows recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid driving if unable to fully close eye or if vision is significantly impaired",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Stroke (central facial palsy)",
+      "features": "Forehead sparing; upper face moves normally; other neurological deficits",
+      "tests": "CT/MRI brain; complete neurological exam"
+    },
+    {
+      "diagnosis": "Ramsay Hunt syndrome (VZV)",
+      "features": "Vesicles in ear canal or on pinna; severe otalgia; worse prognosis",
+      "tests": "Clinical exam for vesicles; VZV PCR if needed"
+    },
+    {
+      "diagnosis": "Lyme disease (facial palsy)",
+      "features": "Endemic area; tick exposure; bilateral (25%); erythema migrans; arthralgias",
+      "tests": "Lyme ELISA + Western blot"
+    },
+    {
+      "diagnosis": "Otitis media with facial palsy",
+      "features": "Ear pain, otorrhea, conductive hearing loss, fever",
+      "tests": "Otoscopic exam; CT temporal bone"
+    },
+    {
+      "diagnosis": "Parotid tumor/malignancy",
+      "features": "Slow onset; parotid mass; progressive; no recovery",
+      "tests": "MRI parotid; FNA or biopsy"
+    },
+    {
+      "diagnosis": "Acoustic neuroma (schwannoma)",
+      "features": "Gradual onset; hearing loss; tinnitus; facial numbness",
+      "tests": "MRI IAC with contrast"
+    },
+    {
+      "diagnosis": "Cholesteatoma",
+      "features": "Chronic ear disease; hearing loss; otorrhea",
+      "tests": "Otoscopy; CT temporal bone"
+    },
+    {
+      "diagnosis": "Guillain-Barré syndrome",
+      "features": "Bilateral facial weakness; limb weakness; areflexia",
+      "tests": "LP (albuminocytologic dissociation); EMG/NCS"
+    },
+    {
+      "diagnosis": "Sarcoidosis (Heerfordt syndrome)",
+      "features": "Bilateral; uveitis; parotid swelling; fever",
+      "tests": "ACE level; chest imaging; biopsy"
+    },
+    {
+      "diagnosis": "Melkersson-Rosenthal syndrome",
+      "features": "Recurrent palsy; facial edema; fissured tongue",
+      "tests": "Clinical triad; biopsy if needed"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Corticosteroids improve recovery rates",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Sullivan et al. NEJM 2007 (Scottish Bell's Palsy Study)](https://pubmed.ncbi.nlm.nih.gov/17942873/)"
+    },
+    {
+      "recommendation": "Antiviral monotherapy not effective; corticosteroids superior",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Engstrom et al. NEJM 2008](https://pubmed.ncbi.nlm.nih.gov/18784101/)"
+    },
+    {
+      "recommendation": "Combination corticosteroid + antiviral may benefit severe cases",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[de Almeida et al. JAMA 2009 (meta-analysis)](https://pubmed.ncbi.nlm.nih.gov/19773587/)"
+    },
+    {
+      "recommendation": "Early treatment (within 72 hours) improves outcomes",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Madhok et al. Cochrane 2016](https://pubmed.ncbi.nlm.nih.gov/27251627/)"
+    },
+    {
+      "recommendation": "AAN Practice Parameter: Steroids highly effective",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Gronseth & Paduga. Neurology 2012 (AAN Guideline)](https://pubmed.ncbi.nlm.nih.gov/23091073/)"
+    },
+    {
+      "recommendation": "Eye protection prevents corneal complications",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Expert consensus; standard of care"
+    },
+    {
+      "recommendation": "House-Brackmann grading system for assessment",
+      "evidenceLevel": "Clinical standard",
+      "source": "[House & Brackmann. Otolaryngol Head Neck Surg 1985](https://pubmed.ncbi.nlm.nih.gov/3921901/)"
+    },
+    {
+      "recommendation": "ENoG >90% degeneration predicts poor outcome",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Fisch. Otolaryngol Head Neck Surg 1984](https://pubmed.ncbi.nlm.nih.gov/6440089/)"
+    },
+    {
+      "recommendation": "Physical therapy may improve recovery",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Teixeira et al. Cochrane 2011](https://pubmed.ncbi.nlm.nih.gov/22161378/)"
+    },
+    {
+      "recommendation": "Botulinum toxin effective for post-paralytic synkinesis",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Mehdizadeh et al. Plast Reconstr Surg 2008](https://pubmed.ncbi.nlm.nih.gov/19258585/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "House-Brackmann grade",
+      "frequency": "Each visit",
+      "action": "EMG if no improvement; consider referral",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Corneal examination (fluorescein)",
+      "frequency": "Initial and PRN symptoms",
+      "action": "Urgent ophthalmology; increase eye protection",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Eye closure (lagophthalmos)",
+      "frequency": "Each visit",
+      "action": "Intensify lubrication; consider tarsorrhaphy referral",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Glucose (if on steroids)",
+      "frequency": "Daily if diabetic x 10 days",
+      "action": "Adjust diabetes medications; endocrine consult",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Synkinesis development",
+      "frequency": "Starting at 4-8 weeks",
+      "action": "Physical therapy; consider botulinum toxin",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Recovery timeline",
+      "frequency": "Weeks 3, 6, 12, and 6 months",
+      "action": "EMG at 4 months; consider secondary causes",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Typical presentation; able to protect eye; steroids initiated within 72 hours; follow-up arranged"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Rare; only if unable to protect eye and no caregiver; severe comorbidities affecting steroid use; concern for secondary cause requiring inpatient workup"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Not applicable for Bell's palsy"
+    },
+    {
+      "disposition": "Outpatient follow-up",
+      "criteria": "2-3 weeks initial follow-up to assess recovery; earlier if corneal symptoms; neurology referral if no improvement by 4-6 weeks"
+    }
+  ]
+}

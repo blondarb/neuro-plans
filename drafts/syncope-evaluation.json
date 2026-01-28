@@ -1,0 +1,1384 @@
+{
+  "id": "syncope-evaluation",
+  "title": "Syncope Evaluation",
+  "version": "1.0",
+  "icd10": [
+    "** R55 (Syncope and collapse)"
+  ],
+  "scope": "** Comprehensive evaluation of transient loss of consciousness (TLOC) due to cerebral hypoperfusion. Covers vasovagal/reflex syncope, orthostatic hypotension, cardiac arrhythmias, and neurologic mimics. Includes risk stratification, diagnostic workup, and management. Excludes seizure-related loss of consciousness (see Seizure plan), stroke, and metabolic causes of altered mental status.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "ECG (12-lead)",
+          "rationale": "Rule out arrhythmia, conduction abnormality, ischemia, cardiomyopathy (prolonged QT, Brugada, WPW, ARVC)",
+          "target": "Normal sinus rhythm; QTc <450 ms (M), <460 ms (F); no preexcitation or Brugada pattern",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Glucose (fingerstick or serum)",
+          "rationale": "Rule out hypoglycemia as cause of altered consciousness",
+          "target": "Normal (70-100 mg/dL)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CBC",
+          "rationale": "Evaluate for anemia causing reduced oxygen delivery; infection",
+          "target": "Hgb >12 g/dL; no leukocytosis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "BMP",
+          "rationale": "Electrolyte abnormalities can cause arrhythmias or contribute to syncope",
+          "target": "Normal Na, K, Mg, Ca, glucose, creatinine",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Troponin",
+          "rationale": "Cardiac ischemia as cause of syncope; elevated in PE, aortic dissection",
+          "target": "Negative (<0.04 ng/mL or institution-specific)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Orthostatic vital signs",
+          "rationale": "Diagnose orthostatic hypotension (BP drop >20/10 mmHg or HR increase >30 bpm)",
+          "target": "No significant change; BP stable within 3 min of standing",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "BNP or NT-proBNP",
+          "rationale": "Screen for heart failure; elevated in cardiac syncope",
+          "target": "BNP <100 pg/mL; NT-proBNP <300 pg/mL",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "D-dimer",
+          "rationale": "Pulmonary embolism suspected (consider Wells score)",
+          "target": "<500 ng/mL (age-adjusted: age x 10 if >50 yo)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "TSH",
+          "rationale": "Thyroid dysfunction contributing to arrhythmias or autonomic dysfunction",
+          "target": "Normal (0.4-4.0 mIU/L)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Magnesium",
+          "rationale": "Hypomagnesemia can precipitate arrhythmias",
+          "target": "Normal (1.7-2.2 mg/dL)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Lactic acid",
+          "rationale": "Tissue hypoperfusion; consider if prolonged LOC or concern for cardiogenic shock",
+          "target": "Normal (<2.0 mmol/L)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Pregnancy test (urine or serum)",
+          "rationale": "Ectopic pregnancy can present with syncope; all reproductive-age women",
+          "target": "Negative (unless known pregnancy)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Plasma catecholamines (supine and standing)",
+          "rationale": "Autonomic failure workup; pure autonomic failure vs MSA",
+          "target": "Normal increase with standing; absence suggests autonomic failure",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Cortisol (AM)",
+          "rationale": "Adrenal insufficiency causing orthostatic hypotension",
+          "target": ">10 mcg/dL (AM); consider ACTH stim test if borderline",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Prolactin (within 20 min of event)",
+          "rationale": "Distinguish seizure from syncope; elevated post-ictally",
+          "target": "Normal (<20 ng/mL); >2x baseline suggests seizure",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c",
+          "rationale": "Screen for diabetes contributing to autonomic neuropathy",
+          "target": "<5.7% (normal); diabetic autonomic neuropathy if elevated with symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing (SCN5A, KCNQ1, KCNH2)",
+          "rationale": "Long QT syndrome, Brugada syndrome suspected",
+          "target": "No pathogenic variant",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Autoimmune panel (ganglionic AChR Ab, GAD65)",
+          "rationale": "Autoimmune autonomic ganglionopathy suspected",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Continuous cardiac monitoring (telemetry)",
+          "timing": "Ongoing in ED/hospital",
+          "target": "No arrhythmia detected",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Echocardiogram (TTE)",
+          "timing": "If structural heart disease suspected, abnormal ECG, cardiac murmur, or high-risk features",
+          "target": "Normal LV function (EF >50%); no structural abnormality",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CT Head non-contrast",
+          "timing": "Head trauma from fall; focal neurological deficits; concern for SAH",
+          "target": "No hemorrhage, mass, or acute abnormality",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Chest X-ray",
+          "timing": "Cardiac silhouette, pulmonary edema, widened mediastinum (dissection)",
+          "target": "Normal heart size; clear lungs",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "CTA Chest",
+          "timing": "Pulmonary embolism suspected (high Wells score, elevated D-dimer)",
+          "target": "No PE; patent pulmonary arteries",
+          "contraindications": "Contrast allergy, CKD (eGFR <30)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Holter monitor (24-48 hour)",
+          "timing": "Recurrent syncope; arrhythmia suspected but not captured",
+          "target": "No significant arrhythmia; correlate with symptoms",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Event recorder (30 days)",
+          "timing": "Infrequent syncope (monthly); need longer monitoring",
+          "target": "Symptom-rhythm correlation",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Insertable loop recorder (ILR)",
+          "timing": "Recurrent unexplained syncope despite workup; infrequent events",
+          "target": "Diagnose arrhythmia at time of syncope",
+          "contraindications": "None (minor procedure)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tilt table testing",
+          "timing": "Suspected vasovagal syncope with unclear diagnosis; recurrent syncope affecting QOL",
+          "target": "Positive (reproduces symptoms with hypotension/bradycardia); or negative excluding reflex syncope",
+          "contraindications": "Recent MI, severe aortic stenosis, severe CAD",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carotid ultrasound",
+          "timing": "Syncope with head rotation; carotid bruit",
+          "target": "No significant stenosis (>70%); no hypersensitivity",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress testing (exercise or pharmacologic)",
+          "timing": "Exertional syncope; ischemia suspected",
+          "target": "No ischemia; normal BP response",
+          "contraindications": "Unstable angina, uncontrolled arrhythmia",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "EEG (routine or ambulatory)",
+          "timing": "Seizure vs syncope uncertain; convulsive movements reported; prolonged confusion",
+          "target": "Normal; no epileptiform discharges",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI Brain",
+          "timing": "Neurological symptoms; focal deficits; posterior circulation insufficiency suspected",
+          "target": "Normal; no structural abnormality",
+          "contraindications": "MRI-incompatible devices, severe claustrophobia",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Autonomic function testing (QSART, HRV, Valsalva)",
+          "timing": "Orthostatic hypotension; suspected autonomic neuropathy or failure",
+          "target": "Normal autonomic responses",
+          "contraindications": "Recent MI, uncontrolled HTN",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Electrophysiology study (EPS)",
+          "timing": "High-risk structural heart disease; non-diagnostic workup; suspected Brugada",
+          "target": "No inducible arrhythmia",
+          "contraindications": "Anticoagulation issues, active infection",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Carotid sinus massage",
+          "timing": "Syncope with head turning or tight collars; age >40; after ruling out carotid stenosis",
+          "target": "No pause >3 sec; no BP drop >50 mmHg",
+          "contraindications": "Carotid bruit, recent stroke/TIA, carotid stenosis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiac MRI",
+          "timing": "Arrhythmogenic cardiomyopathy (ARVC) suspected; infiltrative disease",
+          "target": "No fibrosis, fat infiltration, or structural abnormality",
+          "contraindications": "MRI contraindications; CKD for gadolinium",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Exercise tilt test",
+          "timing": "Exercise-induced syncope with negative standard testing",
+          "target": "No abnormal response",
+          "contraindications": "Same as tilt table and exercise testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "IV Normal Saline",
+          "route": "IV",
+          "indication": "Volume depletion; orthostatic hypotension; vagal syncope recovery",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mL IV bolus",
+                "orderSentence": "IV Normal Saline 500 mL IV bolus IV"
+              },
+              {
+                "text": "1000 mL IV bolus",
+                "orderSentence": "IV Normal Saline 1000 mL IV bolus IV"
+              },
+              {
+                "text": "125 mL/hr IV",
+                "orderSentence": "IV Normal Saline 125 mL/hr IV IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500-1000 mL bolus for acute syncope; maintenance if dehydrated",
+            "orderSentence": "IV Normal Saline 500 mL IV bolus IV"
+          },
+          "contraindications": "Heart failure; volume overload",
+          "monitoring": "Intake/output; signs of overload; reassess orthostatics",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Atropine",
+          "route": "IV",
+          "indication": "Symptomatic bradycardia causing syncope",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg IV push",
+                "orderSentence": "Atropine 0.5 mg IV push IV"
+              },
+              {
+                "text": "1 mg IV push",
+                "orderSentence": "Atropine 1 mg IV push IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5-1 mg IV push; may repeat q3-5min; max 3 mg total",
+            "orderSentence": "Atropine 0.5 mg IV push IV"
+          },
+          "contraindications": "Tachyarrhythmia; glaucoma",
+          "monitoring": "HR, BP, rhythm",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Transcutaneous pacing",
+          "route": "External",
+          "indication": "Symptomatic bradycardia unresponsive to atropine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60-80 mA",
+                "orderSentence": "Transcutaneous pacing 60-80 mA External"
+              },
+              {
+                "text": "adjust for capture",
+                "orderSentence": "Transcutaneous pacing adjust for capture External"
+              }
+            ],
+            "route": "External",
+            "instructions": "Start 60 mA, increase until capture; rate 60-80 bpm",
+            "orderSentence": "Transcutaneous pacing 60-80 mA External"
+          },
+          "contraindications": "Pacemaker in place (relative); conscious patient (sedate first)",
+          "monitoring": "Capture confirmation; BP; sedation level",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Trendelenburg position",
+          "route": "Physical",
+          "indication": "Immediate management of acute syncope",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Supine with legs elevated",
+                "orderSentence": "Trendelenburg position Supine with legs elevated Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Elevate legs 30-45 degrees; maintain until fully recovered",
+            "orderSentence": "Trendelenburg position Supine with legs elevated Physical"
+          },
+          "contraindications": "Respiratory distress; increased ICP",
+          "monitoring": "Mental status; BP recovery",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Epinephrine",
+          "route": "IV/IM",
+          "indication": "Anaphylaxis causing syncope",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.3 mg IM",
+                "orderSentence": "Epinephrine 0.3 mg IM IM/IV"
+              },
+              {
+                "text": "0.5 mg IM",
+                "orderSentence": "Epinephrine 0.5 mg IM IM/IV"
+              },
+              {
+                "text": "0.1 mg IV",
+                "orderSentence": "Epinephrine 0.1 mg IV IM/IV"
+              }
+            ],
+            "route": "IM/IV",
+            "instructions": "0.3-0.5 mg IM (1:1000); 0.1 mg IV (1:10,000) for severe",
+            "orderSentence": "Epinephrine 0.3 mg IM IM/IV"
+          },
+          "contraindications": "Uncontrolled hypertension (relative in anaphylaxis)",
+          "monitoring": "HR, BP, symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Glucagon",
+          "route": "IV/IM",
+          "indication": "Beta-blocker or calcium channel blocker toxicity causing bradycardia/hypotension",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3-5 mg IV",
+                "orderSentence": "Glucagon 3-5 mg IV IV"
+              },
+              {
+                "text": "10 mg IV",
+                "orderSentence": "Glucagon 10 mg IV IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "3-10 mg IV bolus; may follow with infusion 1-5 mg/hr",
+            "orderSentence": "Glucagon 3-5 mg IV IV"
+          },
+          "contraindications": "Pheochromocytoma; insulinoma",
+          "monitoring": "Glucose, BP, HR, nausea",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Compression stockings (30-40 mmHg)",
+          "route": "Physical",
+          "indication": "Orthostatic hypotension; vasovagal syncope prophylaxis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Waist-high preferred",
+                "orderSentence": "Compression stockings (30-40 mmHg) Waist-high preferred Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "30-40 mmHg compression; waist-high more effective than knee-high; wear during daytime",
+            "orderSentence": "Compression stockings (30-40 mmHg) Waist-high preferred Physical"
+          },
+          "contraindications": "Peripheral vascular disease; skin ulcers",
+          "monitoring": "Skin integrity; compliance; symptom frequency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Increased salt intake",
+          "route": "Dietary",
+          "indication": "Orthostatic hypotension; recurrent vasovagal syncope (no contraindication)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6-10 g Na/day",
+                "orderSentence": "Increased salt intake 6-10 g Na/day Dietary"
+              }
+            ],
+            "route": "Dietary",
+            "instructions": "Increase to 6-10 g sodium daily (salt tablets 1 g TID or dietary salt)",
+            "orderSentence": "Increased salt intake 6-10 g Na/day Dietary"
+          },
+          "contraindications": "Heart failure; uncontrolled HTN; CKD",
+          "monitoring": "BP; weight; edema; syncope frequency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Increased fluid intake",
+          "route": "Dietary",
+          "indication": "Orthostatic hypotension; volume depletion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-3 L/day",
+                "orderSentence": "Increased fluid intake 2-3 L/day Dietary"
+              }
+            ],
+            "route": "Dietary",
+            "instructions": "2-3 L daily fluid intake; bolus 500 mL water prior to prolonged standing",
+            "orderSentence": "Increased fluid intake 2-3 L/day Dietary"
+          },
+          "contraindications": "Heart failure; fluid restriction needed",
+          "monitoring": "Volume status; electrolytes",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical counterpressure maneuvers",
+          "route": "Physical",
+          "indication": "Prodromal symptoms of vasovagal syncope",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Perform at onset of prodrome",
+                "orderSentence": "Physical counterpressure maneuvers Perform at onset of prodrome Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Leg crossing with tensing; handgrip; arm tensing; squat; abort 30% of episodes",
+            "orderSentence": "Physical counterpressure maneuvers Perform at onset of prodrome Physical"
+          },
+          "contraindications": "None",
+          "monitoring": "Symptom diary; effectiveness",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Head-of-bed elevation",
+          "route": "Physical",
+          "indication": "Orthostatic hypotension; supine hypertension",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 degree elevation",
+                "orderSentence": "Head-of-bed elevation 10-20 degree elevation Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Elevate head of bed 10-20 degrees (4-6 inch blocks); reduces nocturnal natriuresis",
+            "orderSentence": "Head-of-bed elevation 10-20 degree elevation Physical"
+          },
+          "contraindications": "None",
+          "monitoring": "Morning BP; symptom frequency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Midodrine",
+          "route": "PO",
+          "indication": "Orthostatic hypotension refractory to non-pharmacologic measures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg TID",
+                "orderSentence": "Midodrine 2.5 mg TID PO"
+              },
+              {
+                "text": "5 mg TID",
+                "orderSentence": "Midodrine 5 mg TID PO"
+              },
+              {
+                "text": "10 mg TID",
+                "orderSentence": "Midodrine 10 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5-5 mg TID (q4h while upright); titrate to 10 mg TID; last dose 4 hrs before bed",
+            "orderSentence": "Midodrine 2.5 mg TID PO"
+          },
+          "contraindications": "Supine HTN; urinary retention; severe heart disease; pheochromocytoma",
+          "monitoring": "Supine BP (avoid >180/100); urinary symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fludrocortisone",
+          "route": "PO",
+          "indication": "Orthostatic hypotension; volume expansion needed",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg daily",
+                "orderSentence": "Fludrocortisone 0.1 mg daily PO"
+              },
+              {
+                "text": "0.2 mg daily",
+                "orderSentence": "Fludrocortisone 0.2 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.1 mg daily; may increase to 0.2-0.3 mg daily; takes 1-2 weeks for effect",
+            "orderSentence": "Fludrocortisone 0.1 mg daily PO"
+          },
+          "contraindications": "Heart failure; uncontrolled HTN; hypokalemia",
+          "monitoring": "K+; supine BP; weight; edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Droxidopa (Northera)",
+          "route": "PO",
+          "indication": "Neurogenic orthostatic hypotension (autonomic failure, Parkinson's)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg TID",
+                "orderSentence": "Droxidopa (Northera) 100 mg TID PO"
+              },
+              {
+                "text": "200 mg TID",
+                "orderSentence": "Droxidopa (Northera) 200 mg TID PO"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Droxidopa (Northera) 300 mg TID PO"
+              },
+              {
+                "text": "600 mg TID",
+                "orderSentence": "Droxidopa (Northera) 600 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg TID; titrate by 100 mg TID q24-48h; max 600 mg TID",
+            "orderSentence": "Droxidopa (Northera) 100 mg TID PO"
+          },
+          "contraindications": "Supine HTN; concomitant catecholamine drugs",
+          "monitoring": "Supine BP; syncope frequency",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pyridostigmine",
+          "route": "PO",
+          "indication": "Orthostatic hypotension with intact post-ganglionic neurons",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg TID",
+                "orderSentence": "Pyridostigmine 30 mg TID PO"
+              },
+              {
+                "text": "60 mg TID",
+                "orderSentence": "Pyridostigmine 60 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "30-60 mg PO TID; enhances ganglionic transmission",
+            "orderSentence": "Pyridostigmine 30 mg TID PO"
+          },
+          "contraindications": "Bowel/bladder obstruction; bradycardia",
+          "monitoring": "GI side effects; HR",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Atomoxetine",
+          "route": "PO",
+          "indication": "Neurogenic orthostatic hypotension (off-label)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Atomoxetine 10 mg daily PO"
+              },
+              {
+                "text": "18 mg BID",
+                "orderSentence": "Atomoxetine 18 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10-18 mg BID; norepinephrine reuptake inhibitor",
+            "orderSentence": "Atomoxetine 10 mg daily PO"
+          },
+          "contraindications": "MAOIs; narrow-angle glaucoma; pheochromocytoma",
+          "monitoring": "BP; HR; urinary retention",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Beta-blocker (low-dose)",
+          "route": "PO",
+          "indication": "Vasovagal syncope with prominent cardioinhibitory component (controversial)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Metoprolol 25 mg BID",
+                "orderSentence": "Beta-blocker (low-dose) Metoprolol 25 mg BID PO"
+              },
+              {
+                "text": "Atenolol 25 mg daily",
+                "orderSentence": "Beta-blocker (low-dose) Atenolol 25 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Low-dose beta-blocker (metoprolol 25 mg BID or atenolol 25 mg daily); limited evidence",
+            "orderSentence": "Beta-blocker (low-dose) Metoprolol 25 mg BID PO"
+          },
+          "contraindications": "Bradycardia; hypotension; asthma; 2nd/3rd degree AVB",
+          "monitoring": "HR; BP; syncope frequency",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "SSRI (paroxetine, sertraline)",
+          "route": "PO",
+          "indication": "Recurrent vasovagal syncope refractory to first-line measures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Paroxetine 20 mg daily",
+                "orderSentence": "SSRI (paroxetine, sertraline) Paroxetine 20 mg daily PO"
+              },
+              {
+                "text": "Sertraline 50 mg daily",
+                "orderSentence": "SSRI (paroxetine, sertraline) Sertraline 50 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Paroxetine 20 mg daily or sertraline 50 mg daily; may modulate autonomic response",
+            "orderSentence": "SSRI (paroxetine, sertraline) Paroxetine 20 mg daily PO"
+          },
+          "contraindications": "MAOIs; uncontrolled bipolar",
+          "monitoring": "Mood; syncope frequency",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying or Chronic Therapies": [
+        {
+          "item": "Permanent pacemaker",
+          "route": "Implant",
+          "indication": "Cardioinhibitory syncope with documented asystole >3 sec or symptomatic bradycardia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Dual-chamber preferred",
+                "orderSentence": "Permanent pacemaker Dual-chamber preferred Implant"
+              }
+            ],
+            "route": "Implant",
+            "instructions": "Dual-chamber pacemaker (DDD) for sinus node dysfunction; VVI/DDD for AV block",
+            "orderSentence": "Permanent pacemaker Dual-chamber preferred Implant"
+          },
+          "pretreatment": "EPS, Holter showing bradyarrhythmia, tilt-positive cardioinhibitory",
+          "contraindications": "Active infection; coagulopathy",
+          "monitoring": "Device interrogation q6-12mo; wound healing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Implantable cardioverter-defibrillator (ICD)",
+          "route": "Implant",
+          "indication": "Syncope with structural heart disease and high sudden death risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per device type",
+                "orderSentence": "Implantable cardioverter-defibrillator (ICD) Per device type Implant"
+              }
+            ],
+            "route": "Implant",
+            "instructions": "Single or dual chamber ICD based on indication",
+            "orderSentence": "Implantable cardioverter-defibrillator (ICD) Per device type Implant"
+          },
+          "pretreatment": "EF assessment, risk stratification completed",
+          "contraindications": "Active infection; terminal illness",
+          "monitoring": "Device interrogation; driving restrictions",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Catheter ablation",
+          "route": "Procedure",
+          "indication": "Documented arrhythmia causing syncope (SVT, VT, WPW)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Ablation of arrhythmia focus",
+                "orderSentence": "Catheter ablation Ablation of arrhythmia focus Procedure"
+              }
+            ],
+            "route": "Procedure",
+            "instructions": "EP study with ablation of identified arrhythmia substrate",
+            "orderSentence": "Catheter ablation Ablation of arrhythmia focus Procedure"
+          },
+          "pretreatment": "EP study identifying arrhythmia",
+          "contraindications": "Active infection; coagulopathy",
+          "monitoring": "Post-procedure rhythm monitoring",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardioneuroablation",
+          "route": "Procedure",
+          "indication": "Refractory cardioinhibitory syncope with documented asystole",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Ablation of vagal ganglia",
+                "orderSentence": "Cardioneuroablation Ablation of vagal ganglia Procedure"
+              }
+            ],
+            "route": "Procedure",
+            "instructions": "Catheter-based ablation of cardiac vagal ganglia; emerging therapy",
+            "orderSentence": "Cardioneuroablation Ablation of vagal ganglia Procedure"
+          },
+          "pretreatment": "Failed conservative management",
+          "contraindications": "Limited availability; investigational",
+          "monitoring": "HR variability; syncope recurrence",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Cardiology consultation for arrhythmia evaluation, structural heart disease assessment, or device implantation consideration",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Electrophysiology referral for documented arrhythmias requiring ablation, pacemaker or ICD evaluation, or unexplained high-risk syncope",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology consultation if seizure-syncope differentiation unclear, autonomic testing needed, or neurological symptoms present",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Autonomic disorders specialist for recurrent orthostatic hypotension, suspected pure autonomic failure, or multiple system atrophy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Driving evaluation per state regulations for commercial drivers or recurrent unexplained syncope affecting driving ability",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry referral if psychogenic pseudosyncope suspected based on atypical features and normal workup",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall prevention physical therapy for elderly patients with recurrent syncope to reduce injury risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational health evaluation for patients in safety-sensitive occupations (pilots, heavy machinery operators, commercial drivers)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately if syncope recurs, especially with chest pain, palpitations, shortness of breath, or exercise (may indicate cardiac cause requiring urgent evaluation)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return immediately if prolonged confusion, seizure activity, tongue biting, or urinary incontinence occurs with loss of consciousness (suggests seizure rather than syncope)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT drive until cleared by physician due to risk of syncope while operating a vehicle; specific restrictions depend on diagnosis and state law",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid prolonged standing, hot environments, and dehydration which are common triggers for vasovagal syncope",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Learn to recognize prodromal symptoms (lightheadedness, warmth, nausea, tunnel vision) and immediately sit or lie down to prevent injury",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Perform physical counterpressure maneuvers (leg crossing, squatting, handgrip) at first sign of prodrome to abort vasovagal episode",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Rise slowly from lying to sitting to standing (staged position changes) to prevent orthostatic syncope",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain adequate hydration (2-3 L daily) and salt intake (unless contraindicated) to support blood volume",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep a symptom diary noting triggers, prodrome, circumstances, duration of LOC, and recovery to aid diagnosis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Wear medical alert identification if recurrent syncope diagnosis confirmed",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Avoid known triggers including prolonged standing, crowded/hot environments, excessive alcohol, and large meals",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Increase oral fluid intake to 2-3 liters daily to maintain intravascular volume and reduce syncope frequency",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Increase dietary salt intake to 6-10 g/day if no contraindication (hypertension, heart failure, CKD) to expand plasma volume",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Wear waist-high compression stockings (30-40 mmHg) during daytime to reduce venous pooling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid sudden postural changes; use staged position changes (lie-sit-stand with 1-2 min at each stage)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Review and minimize medications that contribute to hypotension (diuretics, antihypertensives, alpha-blockers, nitrates, psychiatric medications)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid excessive heat exposure including hot showers, saunas, and hot tubs which cause vasodilation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Sleep with head of bed elevated 10-20 degrees to reduce nocturnal natriuresis and improve morning orthostatic tolerance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Moderate regular aerobic exercise to improve vascular tone and reduce vasovagal susceptibility; avoid deconditioning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol moderation or avoidance as alcohol causes vasodilation and impairs autonomic reflexes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Vasovagal (neurocardiogenic) syncope",
+      "features": "Prodrome (warmth, nausea, diaphoresis, tunnel vision); identifiable trigger (prolonged standing, pain, emotional stress); rapid recovery",
+      "tests": "History; tilt table testing reproduces symptoms"
+    },
+    {
+      "diagnosis": "Orthostatic hypotension",
+      "features": "Syncope immediately upon standing; BP drop >20/10 mmHg within 3 min of standing; associated with medications, volume depletion, or autonomic failure",
+      "tests": "Orthostatic vital signs; autonomic function testing"
+    },
+    {
+      "diagnosis": "Cardiac arrhythmia (tachy or brady)",
+      "features": "Sudden onset without prodrome; palpitations; associated with exertion or supine position; abnormal ECG",
+      "tests": "ECG; Holter; event recorder; EP study"
+    },
+    {
+      "diagnosis": "Structural heart disease (AS, HCM, PE)",
+      "features": "Exertional syncope; murmur; dyspnea; chest pain; signs of right heart failure (PE)",
+      "tests": "Echo; CT chest (PE); cardiac MRI"
+    },
+    {
+      "diagnosis": "Situational syncope",
+      "features": "Occurs with specific triggers: micturition, defecation, cough, swallow",
+      "tests": "History is diagnostic; occurs during or immediately after trigger activity"
+    },
+    {
+      "diagnosis": "Carotid sinus hypersensitivity",
+      "features": "Syncope with head turning, shaving, tight collars; age >40; male predominance",
+      "tests": "Carotid sinus massage (after excluding stenosis)"
+    },
+    {
+      "diagnosis": "Seizure (convulsive syncope mimic)",
+      "features": "Tonic-clonic movements; lateral tongue bite; prolonged confusion (>5 min); urinary incontinence; no prodrome",
+      "tests": "EEG; prolactin (within 20 min); witnessed description"
+    },
+    {
+      "diagnosis": "Psychogenic pseudosyncope",
+      "features": "Very frequent episodes; prolonged duration; eyes closed; no injury; normal exam during event",
+      "tests": "Normal testing during observed episode; psychiatric evaluation"
+    },
+    {
+      "diagnosis": "Hypoglycemia",
+      "features": "Associated with diabetes or insulin use; diaphoresis; hunger; confusion; responds to glucose",
+      "tests": "Fingerstick glucose; witnessed glucose administration"
+    },
+    {
+      "diagnosis": "Vertebrobasilar insufficiency",
+      "features": "Associated with head movement, vertigo, diplopia, dysarthria, drop attacks",
+      "tests": "MRA head/neck; vertebral Doppler"
+    },
+    {
+      "diagnosis": "Subclavian steal syndrome",
+      "features": "Arm exercise triggers; BP difference >20 mmHg between arms; vertebrobasilar symptoms",
+      "tests": "Bilateral arm BPs; subclavian Doppler; angiography"
+    },
+    {
+      "diagnosis": "Pulmonary embolism",
+      "features": "Dyspnea; pleuritic chest pain; unilateral leg swelling; tachycardia; hypoxia",
+      "tests": "D-dimer; CTA chest; Wells score"
+    },
+    {
+      "diagnosis": "Aortic dissection",
+      "features": "Tearing chest/back pain; BP difference between arms; widened mediastinum",
+      "tests": "CT angiography; TEE"
+    },
+    {
+      "diagnosis": "Ruptured AAA",
+      "features": "Abdominal or back pain; pulsatile mass; hypotension; older patient",
+      "tests": "CT abdomen; bedside ultrasound"
+    },
+    {
+      "diagnosis": "Subarachnoid hemorrhage",
+      "features": "Thunderclap headache; neck stiffness; altered mental status; may have syncope at onset",
+      "tests": "CT head; lumbar puncture if CT negative"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Canadian Syncope Risk Score for ED risk stratification",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Thiruganasambandamoorthy et al. CMAJ 2016](https://pubmed.ncbi.nlm.nih.gov/27378464/)"
+    },
+    {
+      "recommendation": "San Francisco Syncope Rule validation",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Quinn et al. Ann Emerg Med 2004](https://pubmed.ncbi.nlm.nih.gov/14747812/)"
+    },
+    {
+      "recommendation": "Tilt table testing for vasovagal syncope diagnosis",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Sheldon et al. Circulation 2015](https://pubmed.ncbi.nlm.nih.gov/26092700/)"
+    },
+    {
+      "recommendation": "Physical counterpressure maneuvers reduce syncope recurrence",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[van Dijk et al. Circulation 2006](https://pubmed.ncbi.nlm.nih.gov/16651474/)"
+    },
+    {
+      "recommendation": "Midodrine for orthostatic hypotension",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Izcovich et al. Heart 2014](https://pubmed.ncbi.nlm.nih.gov/24914034/)"
+    },
+    {
+      "recommendation": "Fludrocortisone for orthostatic hypotension",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Sheldon et al. Circulation 2015](https://pubmed.ncbi.nlm.nih.gov/26092700/)"
+    },
+    {
+      "recommendation": "Droxidopa for neurogenic orthostatic hypotension",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Kaufmann et al. Neurology 2014](https://pubmed.ncbi.nlm.nih.gov/24951477/)"
+    },
+    {
+      "recommendation": "Pacemaker for cardioinhibitory carotid sinus syndrome",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Brignole et al. Eur Heart J 2018](https://pubmed.ncbi.nlm.nih.gov/29562304/)"
+    },
+    {
+      "recommendation": "ILR superior to conventional testing for unexplained syncope",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Krahn et al. Circulation 2001](https://pubmed.ncbi.nlm.nih.gov/11208669/)"
+    },
+    {
+      "recommendation": "POST trial: beta-blockers ineffective for vasovagal syncope",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Sheldon et al. Circulation 2006](https://pubmed.ncbi.nlm.nih.gov/16717147/)"
+    },
+    {
+      "recommendation": "ESC Guidelines on syncope diagnosis and management",
+      "evidenceLevel": "Consensus",
+      "source": "[Brignole et al. Eur Heart J 2018](https://pubmed.ncbi.nlm.nih.gov/29562304/)"
+    },
+    {
+      "recommendation": "ACC/AHA/HRS Guidelines on bradycardia and pacing",
+      "evidenceLevel": "Consensus",
+      "source": "[Kusumoto et al. Circulation 2019](https://pubmed.ncbi.nlm.nih.gov/30586772/)"
+    },
+    {
+      "recommendation": "Compression stockings reduce orthostatic intolerance",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Figueroa et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/26503616/)"
+    },
+    {
+      "recommendation": "Autonomic testing in orthostatic hypotension",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Freeman et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21300968/)"
+    },
+    {
+      "recommendation": "Seizure vs syncope differentiation: prolactin levels",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Chen et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/15699375/)"
+    },
+    {
+      "recommendation": "Driving restrictions after syncope",
+      "evidenceLevel": "Consensus",
+      "source": "[Epstein et al. J Am Coll Cardiol 2007](https://pubmed.ncbi.nlm.nih.gov/17692752/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Continuous cardiac telemetry",
+      "frequency": "Continuous while admitted",
+      "action": "Capture rhythm strips; cardiology consult for significant arrhythmia",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Orthostatic vital signs",
+      "frequency": "Q8H in hospital; each clinic visit",
+      "action": "Optimize volume; review medications; consider pharmacotherapy",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Syncope recurrence",
+      "frequency": "Each encounter",
+      "action": "Reassess diagnosis; consider advanced testing (ILR)",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ECG intervals (QTc, PR, QRS)",
+      "frequency": "Baseline; with QT-prolonging drugs",
+      "action": "Discontinue offending drugs; cardiology evaluation",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Fall risk assessment",
+      "frequency": "Each encounter",
+      "action": "PT evaluation; home safety assessment; assistive devices",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Injury from falls",
+      "frequency": "Each encounter",
+      "action": "Head imaging if concern for intracranial injury",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Medication reconciliation",
+      "frequency": "Each encounter",
+      "action": "Reduce/discontinue hypotensive medications",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Driving status",
+      "frequency": "Each visit",
+      "action": "Document restrictions; report to DMV if required",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Response to treatment (midodrine, fludrocortisone)",
+      "frequency": "2-4 weeks after initiation",
+      "action": "Dose adjustment; alternative therapy",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Low-risk features: isolated vasovagal syncope with clear trigger, normal ECG, normal cardiac exam, no significant injury, reliable follow-up; San Francisco Syncope Rule negative OR Canadian Syncope Risk Score very low/low risk"
+    },
+    {
+      "disposition": "Observation (ED or short stay)",
+      "criteria": "Intermediate risk: unexplained syncope with normal initial workup; awaiting troponin results; awaiting echocardiogram; single syncopal episode without high-risk features"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "High-risk features: abnormal ECG, structural heart disease, heart failure, exertional syncope, syncope causing significant injury, recurrent syncope of unclear etiology, syncope with chest pain or dyspnea"
+    },
+    {
+      "disposition": "Admit to ICU/monitored bed",
+      "criteria": "Very high-risk: hemodynamic instability, documented malignant arrhythmia, syncope with ongoing ischemia, severe bradycardia requiring pacing, PE with hypotension"
+    },
+    {
+      "disposition": "Outpatient follow-up",
+      "criteria": "Low-risk syncope discharged from ED: cardiology/neurology follow-up within 1-2 weeks; recurrent vasovagal syncope: 2-4 weeks; post-device implantation: per device protocol"
+    }
+  ]
+}
