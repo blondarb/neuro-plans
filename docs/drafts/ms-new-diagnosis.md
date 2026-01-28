@@ -1,7 +1,7 @@
 ---
 title: Multiple Sclerosis - New Diagnosis
 description: Initial diagnostic workup and management of suspected or newly confirmed MS including diagnostic criteria evaluation, mimics exclusion, and DMT initiation framework.
-version: "2.2"
+version: "2.5"
 setting: ED, HOSP, OPD
 status: draft
 tags:
@@ -21,16 +21,18 @@ tags:
 
 # Multiple Sclerosis - New Diagnosis
 
-**VERSION:** 2.2
+**VERSION:** 2.5
 **CREATED:** January 13, 2026
-**REVISED:** January 13, 2026
+**REVISED:** January 20, 2026
 **STATUS:** Draft - Pending Review
 
 ---
 
 **DIAGNOSIS:** Multiple Sclerosis - New Diagnosis
 
-**ICD-10:** G35 (Multiple sclerosis)
+**ICD-10:** G35 (Multiple sclerosis); H46.9 (Optic neuritis, if presenting symptom); G37.9 (Demyelinating disease of CNS, unspecified)
+
+**SYNONYMS:** MS, multiple sclerosis, demyelinating disease, RRMS, PPMS, SPMS, CIS
 
 **SCOPE:** Initial diagnostic workup and management of suspected or newly confirmed MS. Covers diagnostic criteria evaluation, mimics exclusion, acute symptom treatment, and DMT initiation framework. For established MS with acute relapse, use "MS - Exacerbation" template. For ongoing DMT management and monitoring, use "MS - Maintenance" template.
 
@@ -38,52 +40,52 @@ tags:
 
 **PRIORITY KEY:** STAT = Immediate | URGENT = Within hours | ROUTINE = Standard | EXT = Extended/atypical cases | - = Not applicable to this setting
 
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+---
 SECTION A: ACTION ITEMS
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+---
 
 ## 1. LABORATORY WORKUP
 
 ### 1A. Essential/Core Labs
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Infection screen, baseline before steroids | Normal |
-| CMP | STAT | STAT | ROUTINE | STAT | Metabolic screen, renal function | Normal |
-| TSH | URGENT | ROUTINE | ROUTINE | URGENT | Thyroid disease mimics MS | Normal |
-| Vitamin B12 | URGENT | ROUTINE | ROUTINE | URGENT | B12 deficiency causes myelopathy | Normal (>300 pg/mL) |
-| Folate | URGENT | ROUTINE | ROUTINE | URGENT | Folate deficiency causes myelopathy | Normal |
-| ESR | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory/vasculitis screen | Normal (<20 mm/hr) |
-| CRP | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory marker | Normal |
-| Urinalysis | STAT | STAT | ROUTINE | STAT | UTI as symptom trigger | Negative |
-| Blood glucose | STAT | STAT | ROUTINE | STAT | Pre-steroid baseline | Normal |
-| HbA1c | - | ROUTINE | ROUTINE | - | Glycemic status before steroids | <5.7% |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| CBC with differential | Infection screen, baseline before steroids | Normal | STAT | STAT | ROUTINE | STAT |
+| CMP | Metabolic screen, renal function | Normal | STAT | STAT | ROUTINE | STAT |
+| TSH | Thyroid disease mimics MS | Normal | URGENT | ROUTINE | ROUTINE | URGENT |
+| Vitamin B12 | B12 deficiency causes myelopathy | Normal (>300 pg/mL) | URGENT | ROUTINE | ROUTINE | URGENT |
+| Folate | Folate deficiency causes myelopathy | Normal | URGENT | ROUTINE | ROUTINE | URGENT |
+| ESR | Inflammatory/vasculitis screen | Normal (<20 mm/hr) | URGENT | ROUTINE | ROUTINE | URGENT |
+| CRP | Inflammatory marker | Normal | URGENT | ROUTINE | ROUTINE | URGENT |
+| Urinalysis | UTI as symptom trigger | Negative | STAT | STAT | ROUTINE | STAT |
+| Blood glucose | Pre-steroid baseline | Normal | STAT | STAT | ROUTINE | STAT |
+| HbA1c | Glycemic status before steroids | <5.7% | - | ROUTINE | ROUTINE | - |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Vitamin D (25-OH) | - | ROUTINE | ROUTINE | - | Low levels associated with MS risk/activity | >30 ng/mL |
-| ANA | URGENT | ROUTINE | ROUTINE | URGENT | Lupus/connective tissue disease screen | Negative or low titer |
-| Anti-dsDNA | - | ROUTINE | ROUTINE | - | If ANA positive, lupus evaluation | Negative |
-| **Mayo CDS1 Panel** (AQP4-IgG + MOG-IgG by FACS) | URGENT | URGENT | ROUTINE | URGENT | Combined NMO/MOGAD screen; cell-based assay is gold standard | Both negative |
-| HIV | - | ROUTINE | ROUTINE | - | HIV-associated myelopathy/encephalopathy | Negative |
-| RPR/VDRL | - | ROUTINE | ROUTINE | - | Neurosyphilis mimics MS | Negative |
-| Lyme serology | - | ROUTINE | ROUTINE | - | Endemic areas; neuroborreliosis | Negative |
-| ACE level | - | ROUTINE | ROUTINE | - | Neurosarcoidosis | Normal |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Vitamin D (25-OH) | Low levels associated with MS risk/activity | >30 ng/mL | - | ROUTINE | ROUTINE | - |
+| ANA | Lupus/connective tissue disease screen | Negative or low titer | URGENT | ROUTINE | ROUTINE | URGENT |
+| Anti-dsDNA | If ANA positive, lupus evaluation | Negative | - | ROUTINE | ROUTINE | - |
+| **Mayo CDS1 Panel** (AQP4-IgG + MOG-IgG by FACS) | Combined NMO/MOGAD screen; cell-based assay is gold standard | Both negative | URGENT | URGENT | ROUTINE | URGENT |
+| HIV | HIV-associated myelopathy/encephalopathy | Negative | - | ROUTINE | ROUTINE | - |
+| RPR/VDRL | Neurosyphilis mimics MS | Negative | - | ROUTINE | ROUTINE | - |
+| Lyme serology | Endemic areas; neuroborreliosis | Negative | - | ROUTINE | ROUTINE | - |
+| ACE level | Neurosarcoidosis | Normal | - | ROUTINE | ROUTINE | - |
 
 *Note: If Mayo CDS1 Panel unavailable, order AQP4-IgG (Mayo NMOFS) and MOG-IgG (Mayo MOGFS) separately. FACS/cell-based assay preferred over ELISA for higher sensitivity/specificity.*
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Anti-SSA/SSB (Ro/La) | - | EXT | EXT | - | SjÃ¶gren syndrome | Negative |
-| ANCA panel | - | EXT | EXT | - | CNS vasculitis | Negative |
-| Copper, ceruloplasmin | - | EXT | EXT | - | Wilson disease (young patients) | Normal |
-| Very long chain fatty acids | - | EXT | EXT | - | Adrenomyeloneuropathy | Normal |
-| Mitochondrial DNA studies | - | EXT | EXT | - | Leber hereditary optic neuropathy | Normal |
-| Genetic testing (HLA-DRB1) | - | - | EXT | - | Research/prognostic, not diagnostic | Variable |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Anti-SSA/SSB (Ro/La) | SjÃ¶gren syndrome | Negative | - | EXT | EXT | - |
+| ANCA panel | CNS vasculitis | Negative | - | EXT | EXT | - |
+| Copper, ceruloplasmin | Wilson disease (young patients) | Normal | - | EXT | EXT | - |
+| Very long chain fatty acids | Adrenomyeloneuropathy | Normal | - | EXT | EXT | - |
+| Mitochondrial DNA studies | Leber hereditary optic neuropathy | Normal | - | EXT | EXT | - |
+| Genetic testing (HLA-DRB1) | Research/prognostic, not diagnostic | Variable | - | - | EXT | - |
 
 ---
 
@@ -301,9 +303,9 @@ SECTION A: ACTION ITEMS
 
 ---
 
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+---
 SECTION B: REFERENCE (Expand as Needed)
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+---
 
 ## 5. DIFFERENTIAL DIAGNOSIS
 
@@ -326,19 +328,20 @@ SECTION B: REFERENCE (Expand as Needed)
 
 ## 6. MONITORING PARAMETERS
 
-| Parameter | Frequency | Target/Threshold | Action if Abnormal |
-|-----------|-----------|------------------|-------------------|
-| Blood glucose | Q6h during IV steroids | <180 mg/dL | Insulin sliding scale; endocrine consult if persistent >250 |
-| Blood pressure | Q shift during steroids | <160/100 mmHg | Antihypertensives PRN |
-| Mood and sleep | Daily during steroids | No psychosis, mania, severe insomnia | Psychiatry consult; consider dose adjustment |
-| Temperature | Q shift | Afebrile | Infection workup if febrile |
-| Neurologic exam | Daily (inpatient); each visit (OPD) | Improvement or stability | If worsening: re-image, consider PLEX |
-| I/O and weight | Daily (inpatient) | Euvolemic | Diuretics if fluid overload |
-| Respiratory status | Q shift if cervical myelitis | RR <20, NIF >-30 cm H2O | ICU transfer if NIF >-20 (critical) |
-| Post-void residual | If retention suspected | <100 mL | Intermittent catheterization if >200 mL; urology referral |
-| MRI (follow-up) | 3-6 months after baseline, then annually | No new/enlarging lesions | DMT escalation discussion if new activity |
-| Vitamin D level | Annually | >40 ng/mL (some target >50) | Increase supplementation if low |
-| JCV antibody (if on natalizumab) | Every 6 months | Negative or stable index | If positive/rising: PML risk stratification, consider DMT switch |
+| Parameter | ED | HOSP | OPD | ICU | Frequency | Target/Threshold | Action if Abnormal |
+|-----------|:--:|:----:|:---:|:---:|-----------|------------------|-------------------|
+| Blood glucose | ✓ | ✓ | - | ✓ | Q6h during IV steroids | <180 mg/dL | Insulin sliding scale; endocrine consult if persistent >250 |
+| Blood pressure | ✓ | ✓ | - | ✓ | Q shift during steroids | <160/100 mmHg | Antihypertensives PRN |
+| Mood and sleep | - | ✓ | - | ✓ | Daily during steroids | No psychosis, mania, severe insomnia | Psychiatry consult; consider dose adjustment |
+| Temperature | ✓ | ✓ | - | ✓ | Q shift | Afebrile | Infection workup if febrile |
+| Neurologic exam | ✓ | ✓ | ✓ | ✓ | Daily (inpatient); each visit (OPD) | Improvement or stability | If worsening: re-image, consider PLEX |
+| I/O and weight | - | ✓ | - | ✓ | Daily (inpatient) | Euvolemic | Diuretics if fluid overload |
+| Respiratory status | - | ✓ | - | ✓ | Q shift if cervical myelitis | RR <20, NIF >-30 cm H2O | ICU transfer if NIF >-20 (critical) |
+| Post-void residual | - | ✓ | ✓ | - | If retention suspected | <100 mL | Intermittent catheterization if >200 mL; urology referral |
+| MRI (follow-up) - early | - | - | ✓ | - | 3 months after baseline | No new/enlarging lesions | DMT escalation discussion if new activity |
+| MRI (follow-up) - standard | - | - | ✓ | - | 6 months after baseline, then annually | No new/enlarging lesions | DMT escalation discussion if new activity |
+| Vitamin D level | - | - | ✓ | - | Annually | >40 ng/mL (some target >50) | Increase supplementation if low |
+| JCV antibody (if on natalizumab) | - | - | ✓ | - | Every 6 months | Negative or stable index | If positive/rising: PML risk stratification, consider DMT switch |
 
 ---
 
@@ -357,21 +360,35 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| 2017 McDonald Criteria for MS diagnosis | Class I | Thompson AJ et al. Lancet Neurol 2018 |
-| MRI brain/spine with contrast for diagnosis | Class I, Level A | MAGNIMS Consensus 2021 |
-| CSF OCBs can substitute for dissemination in time | Class II, Level B | 2017 McDonald Criteria |
-| IV methylprednisolone 1g Ã— 3-5 days for acute attacks | Class I, Level A | AAN Practice Guideline 2022 |
-| PLEX for steroid-refractory attacks | Class II, Level B | Cochrane Review 2016 |
-| Cell-based assay (FACS) for NMO/MOG antibodies | Class I, Level B | Waters et al. 2014; Pittock et al. |
-| Vitamin D supplementation | Class II, Level B | Multiple observational studies; CHOLINE, SOLAR trials |
-| Smoking cessation reduces progression | Class II, Level B | Observational studies |
-| Early DMT initiation improves outcomes | Class I, Level A | Multiple RCTs, long-term extension studies |
-| Dalfampridine for walking impairment | Class I, Level A | Goodman et al. Lancet 2009 |
-| Exercise improves fatigue and function | Class I, Level B | Cochrane Review 2015 |
+| 2017 McDonald Criteria for MS diagnosis | Class I | [Thompson AJ et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/29275977/) |
+| MRI brain/spine with contrast for diagnosis | Class I, Level A | [Wattjes MP et al. Lancet Neurol 2021 (MAGNIMS)](https://pubmed.ncbi.nlm.nih.gov/34139157/) |
+| CSF OCBs can substitute for dissemination in time | Class II, Level B | [Thompson AJ et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/29275977/) |
+| IV methylprednisolone 1g Ã— 3-5 days for acute attacks | Class I, Level A | [Filippini et al. Cochrane 2000](https://pubmed.ncbi.nlm.nih.gov/11034713/); Expert consensus |
+| PLEX for steroid-refractory attacks | Class II, Level B | [Faissner et al. J Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27039388/) |
+| Cell-based assay (FACS) for NMO/MOG antibodies | Class I, Level B | [Waters et al. 2014](https://pubmed.ncbi.nlm.nih.gov/27840658/); [Pittock et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3286228/) |
+| Vitamin D supplementation | Class II, Level B | [SOLAR trial](https://pubmed.ncbi.nlm.nih.gov/31594857/); [CHOLINE trial](https://pubmed.ncbi.nlm.nih.gov/31454777/) |
+| Smoking cessation reduces progression | Class II, Level B | [Hedström et al. Brain 2013](https://pubmed.ncbi.nlm.nih.gov/23365092/) |
+| Early DMT initiation improves outcomes | Class I, Level A | [BENEFIT extension](https://pubmed.ncbi.nlm.nih.gov/26833940/); Multiple RCTs |
+| Dalfampridine for walking impairment | Class I, Level A | [Goodman et al. Lancet 2009](https://pubmed.ncbi.nlm.nih.gov/19249634/) |
+| Exercise improves fatigue and function | Class I, Level B | [Heine et al. Cochrane 2015](https://pubmed.ncbi.nlm.nih.gov/26358158/) |
 
 ---
 
 ## CHANGE LOG
+
+**v2.5 (January 20, 2026)**
+- Added ICD-10 codes: H46.9 (optic neuritis), G37.9 (demyelinating disease)
+- Added clinical synonyms: MS, RRMS, PPMS, SPMS, CIS
+
+**v2.4 (January 20, 2026)**
+- Added PubMed links to all citations in Section 8 (Evidence & References)
+- Corrected "AAN Practice Guideline 2022" to "Filippini et al. Cochrane 2000; Expert consensus"
+- Added specific citations for: MAGNIMS 2021, SOLAR/CHOLINE trials, Hedström 2013, BENEFIT extension, Heine Cochrane 2015
+
+**v2.3 (January 20, 2026)**
+- Added venue columns (ED, HOSP, OPD, ICU) to Section 6 Monitoring Parameters
+- Split MRI follow-up into two rows: early (3 months) and standard (6 months, then annually)
+- Confirmed JCV antibody monitoring at every 6 months for natalizumab patients
 
 **v2.2 (January 13, 2026)**
 - Expanded Section 3D: each DMT now on individual row with complete dosing

@@ -4,8 +4,8 @@
 CLINICAL PLAN BUILDER - Interactive Clinical Decision Support Tool
 ================================================================================
 
-Version: 1.5
-Last Updated: January 19, 2026
+Version: 1.8
+Last Updated: January 24, 2026
 Repository: https://github.com/blondarb/neuro-plans
 
 OVERVIEW:
@@ -33,6 +33,7 @@ ICON SYSTEM (Progressive Disclosure):
   | Icon | Field              | Color   | Purpose                          |
   |------|--------------------|---------|----------------------------------|
   | ℹ️   | rationale          | Blue    | Clinical reasoning/evidence      |
+  | 💊   | indication         | Teal    | Why this treatment is used       |
   | ⏱    | timing             | Amber   | When to perform/administer       |
   | 🎯   | target             | Green   | Expected findings/goals          |
   | ⚠️   | contraindications  | Red*    | Safety warnings (*pulsing)       |
@@ -43,6 +44,9 @@ JSON SCHEMA:
   for complete field documentation.
 
 CHANGELOG:
+  v1.8 (Jan 24, 2026) - Added dosing info icon (ℹ) showing full dosing guidance on hover
+  v1.7 (Jan 24, 2026) - Clickable medication dosing: click badge to copy order sentence
+  v1.6 (Jan 21, 2026) - Added Indication icon (💊 teal) for treatment items
   v1.5 (Jan 19, 2026) - Progressive disclosure with icon tooltips
   v1.4 (Jan 19, 2026) - Clinical notes banner, custom items
   v1.3 (Jan 19, 2026) - Click-to-edit, dosing in sidebar
@@ -292,6 +296,157 @@ CHANGELOG:
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .item-dosing-badge:hover {
+      background: #bfdbfe;
+      transform: scale(1.02);
+    }
+    .item-dosing-badge.clickable {
+      border: 1px solid #93c5fd;
+    }
+    .item-dosing-badge.clickable::after {
+      content: ' 📋';
+      font-size: 0.65rem;
+    }
+    .item-dosing-badge.copied {
+      background: #bbf7d0;
+      color: #166534;
+    }
+    .item-dosing-badge.multi-dose::after {
+      content: none; /* Remove clipboard emoji for multi-dose, we show dropdown arrow instead */
+    }
+
+    /* Dosing Info Icon - shows full instructions on hover */
+    .dosing-info-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      background: #f0f9ff;
+      color: #0284c7;
+      border-radius: 50%;
+      font-size: 0.65rem;
+      cursor: help;
+      margin-left: 4px;
+      position: relative;
+      vertical-align: middle;
+      transition: all 0.15s;
+    }
+    .dosing-info-icon:hover {
+      background: #e0f2fe;
+      transform: scale(1.1);
+    }
+    .dosing-info-icon .tooltip {
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1e293b;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 400;
+      white-space: normal;
+      width: max-content;
+      max-width: 320px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s;
+      z-index: 1000;
+      text-align: left;
+      line-height: 1.5;
+      pointer-events: none;
+    }
+    .dosing-info-icon .tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-top-color: #1e293b;
+    }
+    .dosing-info-icon:hover .tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+    .dosing-info-label {
+      font-weight: 600;
+      color: #94a3b8;
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Dosing Dropdown */
+    .dosing-dropdown-container {
+      position: relative;
+      display: inline-block;
+    }
+    .dose-dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 4px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      z-index: 1000;
+      min-width: 250px;
+      max-width: 400px;
+    }
+    .dose-dropdown.show {
+      display: block;
+    }
+    .dose-option {
+      padding: 10px 14px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      border-bottom: 1px solid #f3f4f6;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .dose-option:last-child {
+      border-bottom: none;
+    }
+    .dose-option:hover {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+    .dose-option.copied {
+      background: #bbf7d0;
+      color: #166534;
+    }
+    .dose-custom-input-container {
+      padding: 8px 10px;
+      border-top: 1px solid #e5e7eb;
+      background: #f9fafb;
+    }
+    .dose-custom-input {
+      width: 100%;
+      padding: 6px 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      box-sizing: border-box;
+    }
+    .dose-custom-input:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    }
+    .dose-custom-input::placeholder {
+      color: #9ca3af;
+      font-style: italic;
     }
 
     /* Info Icons Row - Compact icons with tooltips */
@@ -328,6 +483,7 @@ CHANGELOG:
 
     /* Icon Types */
     .icon-rationale { background: #f0f9ff; color: #0284c7; }
+    .icon-indication { background: #f0fdfa; color: #0d9488; }
     .icon-timing { background: #fef3c7; color: #b45309; }
     .icon-target { background: #ecfdf5; color: #059669; }
     .icon-contraindication { background: #fef2f2; color: #dc2626; }
@@ -753,6 +909,7 @@ CHANGELOG:
     </div>
     <div class="icon-legend">
       <div class="icon-legend-item"><span class="mini-icon icon-rationale">ℹ</span> Rationale</div>
+      <div class="icon-legend-item"><span class="mini-icon icon-indication">💊</span> Indication</div>
       <div class="icon-legend-item"><span class="mini-icon icon-timing">⏱</span> Timing</div>
       <div class="icon-legend-item"><span class="mini-icon icon-target">🎯</span> Target</div>
       <div class="icon-legend-item"><span class="mini-icon icon-contraindication">⚠</span> Contraindication</div>
@@ -963,13 +1120,16 @@ CHANGELOG:
 
           // Build icons HTML
           let iconsHtml = '';
-          const hasIcons = item.rationale || item.timing || item.target || item.contraindications || item.monitoring;
+          const hasIcons = item.rationale || item.indication || item.timing || item.target || item.contraindications || item.monitoring;
 
           if (hasIcons) {
             iconsHtml = '<div class="item-icons">';
 
             if (item.rationale) {
               iconsHtml += `<div class="info-icon icon-rationale">ℹ<div class="tooltip"><span class="tooltip-label">Rationale</span>${escapeHtml(item.rationale)}</div></div>`;
+            }
+            if (item.indication) {
+              iconsHtml += `<div class="info-icon icon-indication">💊<div class="tooltip"><span class="tooltip-label">Indication</span>${escapeHtml(item.indication)}</div></div>`;
             }
             if (item.timing) {
               iconsHtml += `<div class="info-icon icon-timing">⏱<div class="tooltip"><span class="tooltip-label">Timing</span>${escapeHtml(item.timing)}</div></div>`;
@@ -987,11 +1147,48 @@ CHANGELOG:
             iconsHtml += '</div>';
           }
 
+          // Handle structured dosing (object) vs legacy dosing (string)
+          let dosingBadgeHtml = '';
+          if (item.dosing) {
+            const isStructured = typeof item.dosing === 'object';
+            const doseOptions = isStructured ? item.dosing.doseOptions : null;
+            const hasMultipleDoses = doseOptions && doseOptions.length > 1;
+            const orderSentence = isStructured ? item.dosing.orderSentence : null;
+            const displayDosing = isStructured ? (item.dosing.orderSentence || item.dosing.instructions) : item.dosing;
+            const fullInstructions = isStructured ? item.dosing.instructions : item.dosing;
+            const clickableClass = orderSentence ? 'clickable' : '';
+
+            // Build dosing info icon (shows full instructions on hover)
+            const dosingInfoIcon = fullInstructions ?
+              `<span class="dosing-info-icon">ℹ<span class="tooltip"><span class="dosing-info-label">Dosing Guide</span>${escapeHtml(fullInstructions)}</span></span>` : '';
+
+            if (hasMultipleDoses) {
+              // Multiple dose options - show dropdown
+              let optionsHtml = doseOptions.map((opt, idx) =>
+                `<div class="dose-option" data-order-sentence="${escapeHtml(opt.orderSentence)}" onclick="selectDoseOption(event, this)">${escapeHtml(opt.orderSentence)}</div>`
+              ).join('');
+              // Add custom instructions input at bottom of dropdown
+              optionsHtml += `<div class="dose-custom-input-container">
+                <input type="text" class="dose-custom-input" placeholder="Add custom instructions..." data-item-id="${itemId}" onkeydown="handleCustomInstructions(event, this)">
+              </div>`;
+              dosingBadgeHtml = `<div class="dosing-dropdown-container" data-item-id="${itemId}">
+                <span class="item-dosing-badge clickable multi-dose"
+                  onclick="toggleDoseDropdown(event, this)">${escapeHtml(displayDosing)} ▼</span>
+                <div class="dose-dropdown">${optionsHtml}</div>
+              </div>${dosingInfoIcon}`;
+            } else {
+              // Single dose - direct copy on click
+              dosingBadgeHtml = `<span class="item-dosing-badge ${clickableClass}"
+                data-order-sentence="${orderSentence ? escapeHtml(orderSentence) : ''}"
+                onclick="copyOrderSentence(event, this)">${escapeHtml(displayDosing)}</span>${dosingInfoIcon}`;
+            }
+          }
+
           sectionHtml += `<div class="item ${sel ? 'selected' : ''}" data-id="${itemId}" data-section="${sectionName}" data-subsection="${subsectionName}">
             <div class="item-primary">
               <input type="checkbox" ${sel ? 'checked' : ''}>
               <div class="item-name">${pc ? `<span class="priority ${pc}">${priority}</span>` : ''}${escapeHtml(name)}</div>
-              ${item.dosing ? `<span class="item-dosing-badge" title="${escapeHtml(item.dosing)}">${escapeHtml(item.dosing)}</span>` : ''}
+              ${dosingBadgeHtml}
             </div>
             ${iconsHtml}
           </div>`;
@@ -1147,9 +1344,21 @@ CHANGELOG:
       }
       if (itemData) {
         const name = itemData.item || itemData.name || itemData.treatment || 'Item';
-        // Include dosing in the display name for medications
-        const displayName = itemData.dosing ? `${name} — ${itemData.dosing}` : name;
-        selectedItems.set(id, { ...itemData, section, subsection, isCustom, editedName: displayName, originalName: name });
+        // Default to first/default order sentence for all medications
+        // User can select different dose from dropdown which will update in place
+        let displayName = name;
+        if (itemData.dosing) {
+          const isStructured = typeof itemData.dosing === 'object';
+          if (isStructured && itemData.dosing.orderSentence) {
+            // Structured dosing: show default order sentence (first option)
+            displayName = itemData.dosing.orderSentence;
+          } else {
+            // Legacy format: show "Drug — dosing instructions"
+            const dosingText = isStructured ? itemData.dosing.instructions : itemData.dosing;
+            displayName = `${name} — ${dosingText}`;
+          }
+        }
+        selectedItems.set(id, { ...itemData, section, subsection, isCustom, editedName: displayName, originalName: name, selectedDose: displayName });
       }
       itemEl.classList.add('selected');
       cb.checked = true;
@@ -1256,6 +1465,184 @@ CHANGELOG:
     notesTextarea.value = '';
     renderPlan();
     updateSelectedList();
+  });
+
+  // Copy order sentence to clipboard when dosing badge is clicked (single dose)
+  // Also selects the item if not already selected
+  window.copyOrderSentence = function(event, badge) {
+    event.stopPropagation();
+
+    // Find the item element and select it if not already
+    const itemEl = badge.closest('.item');
+    if (itemEl && !itemEl.classList.contains('selected')) {
+      toggleItem(itemEl);
+    }
+
+    const orderSentence = badge.dataset.orderSentence;
+    if (orderSentence) {
+      navigator.clipboard.writeText(orderSentence).then(() => {
+        // Visual feedback
+        badge.classList.add('copied');
+        showToast(`Copied: ${orderSentence}`);
+        setTimeout(() => badge.classList.remove('copied'), 1500);
+      }).catch(() => {
+        showToast('Failed to copy');
+      });
+    } else {
+      // Legacy dosing - copy the full text
+      const fullDosing = badge.title || badge.textContent;
+      navigator.clipboard.writeText(fullDosing).then(() => {
+        badge.classList.add('copied');
+        showToast('Copied dosing instructions');
+        setTimeout(() => badge.classList.remove('copied'), 1500);
+      }).catch(() => {
+        showToast('Failed to copy');
+      });
+    }
+  };
+
+  // Toggle dose dropdown for medications with multiple dose options
+  // Also selects the item (checks checkbox) and adds default sentence to Selected Items
+  window.toggleDoseDropdown = function(event, badge) {
+    event.stopPropagation();
+
+    const container = badge.closest('.dosing-dropdown-container');
+    const itemId = container ? container.dataset.itemId : null;
+    const itemEl = itemId ? planContent.querySelector(`.item[data-id="${itemId}"]`) : null;
+
+    // If item not selected, select it first with default sentence
+    if (itemEl && !selectedItems.has(itemId)) {
+      selectItemWithDefaultDose(itemEl, itemId);
+    }
+
+    // Close any other open dropdowns
+    document.querySelectorAll('.dose-dropdown.show').forEach(dd => {
+      if (dd !== badge.nextElementSibling) dd.classList.remove('show');
+    });
+    // Toggle this dropdown
+    const dropdown = badge.nextElementSibling;
+    if (dropdown) {
+      dropdown.classList.toggle('show');
+    }
+  };
+
+  // Helper: Select an item with its default dose sentence
+  function selectItemWithDefaultDose(itemEl, itemId) {
+    const section = itemEl.dataset.section;
+    const subsection = itemEl.dataset.subsection || '';
+    const plan = plansData[currentDiagnosis];
+    const items = plan.sections[section]?.[subsection] || [];
+    const idx = parseInt(itemId.split('__').pop());
+    const itemData = items[idx];
+
+    if (itemData) {
+      const name = itemData.item || itemData.name || itemData.treatment || 'Item';
+      const isStructured = itemData.dosing && typeof itemData.dosing === 'object';
+      // Use default order sentence (first option)
+      const defaultDose = isStructured ? itemData.dosing.orderSentence : `${name} — ${itemData.dosing || ''}`;
+
+      selectedItems.set(itemId, {
+        ...itemData,
+        section,
+        subsection,
+        isCustom: false,
+        editedName: defaultDose,
+        originalName: name,
+        selectedDose: defaultDose
+      });
+
+      itemEl.classList.add('selected');
+      const cb = itemEl.querySelector('input[type="checkbox"]');
+      if (cb) cb.checked = true;
+      updateSelectedList();
+    }
+  }
+
+  // Select a specific dose option from the dropdown - updates sidebar AND copies
+  window.selectDoseOption = function(event, option) {
+    event.stopPropagation();
+    const orderSentence = option.dataset.orderSentence;
+    const container = option.closest('.dosing-dropdown-container');
+    const itemId = container ? container.dataset.itemId : null;
+    const itemEl = itemId ? planContent.querySelector(`.item[data-id="${itemId}"]`) : null;
+
+    if (orderSentence) {
+      // If item not selected, select it first
+      if (itemEl && !selectedItems.has(itemId)) {
+        selectItemWithDefaultDose(itemEl, itemId);
+      }
+
+      // Update the badge text to show selected dose
+      const badge = container ? container.querySelector('.item-dosing-badge') : null;
+      if (badge) {
+        badge.textContent = orderSentence + ' ▼';
+      }
+
+      // Copy to clipboard
+      navigator.clipboard.writeText(orderSentence).then(() => {
+        option.classList.add('copied');
+        showToast(`Copied: ${orderSentence}`);
+
+        // Update sidebar with selected dose (replace, not append)
+        if (itemId && selectedItems.has(itemId)) {
+          const item = selectedItems.get(itemId);
+          item.editedName = orderSentence;
+          item.selectedDose = orderSentence;
+          selectedItems.set(itemId, item);
+          updateSelectedList();
+        }
+
+        setTimeout(() => {
+          option.classList.remove('copied');
+          // Close dropdown after copy
+          option.closest('.dose-dropdown').classList.remove('show');
+        }, 800);
+      }).catch(() => {
+        showToast('Failed to copy');
+      });
+    }
+  };
+
+  // Handle custom instructions input in dropdown
+  window.handleCustomInstructions = function(event, input) {
+    if (event.key === 'Enter' && input.value.trim()) {
+      event.preventDefault();
+      event.stopPropagation();
+      const customText = input.value.trim();
+      const container = input.closest('.dosing-dropdown-container');
+      const itemId = container ? container.dataset.itemId : null;
+      const itemEl = itemId ? planContent.querySelector(`.item[data-id="${itemId}"]`) : null;
+
+      // Auto-select item if not already selected
+      if (itemEl && !selectedItems.has(itemId)) {
+        selectItemWithDefaultDose(itemEl, itemId);
+      }
+
+      if (itemId && selectedItems.has(itemId)) {
+        const item = selectedItems.get(itemId);
+        // Append custom instructions to the current dose
+        if (item.selectedDose) {
+          item.editedName = `${item.selectedDose} — ${customText}`;
+        } else {
+          const name = item.originalName || item.item || 'Item';
+          item.editedName = `${name} — ${customText}`;
+        }
+        item.customInstructions = customText;
+        selectedItems.set(itemId, item);
+        updateSelectedList();
+        showToast(`Added: ${customText}`);
+        input.value = '';
+        // Close dropdown
+        input.closest('.dose-dropdown').classList.remove('show');
+      }
+    }
+  };
+
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('.dosing-dropdown-container')) {
+      document.querySelectorAll('.dose-dropdown.show').forEach(dd => dd.classList.remove('show'));
+    }
   });
 
   function showToast(msg) {

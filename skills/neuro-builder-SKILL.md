@@ -91,31 +91,66 @@ SECTION A: ACTION ITEMS
 
 **CRITICAL: Each medication must be on its own row with complete prescribing information. Do NOT group drugs together.**
 
+**CRITICAL: NO CROSS-REFERENCES. Each row must be completely self-contained.**
+- ❌ NEVER use "Same as [drug]", "See above", "Similar to [drug]", "As above"
+- ✅ ALWAYS repeat the full content even if it's identical to another row
+- **Why:** Users scan individual rows quickly. Cross-references force searching, slowing clinical workflow.
+
+**Example - WRONG:**
+```
+| Nortriptyline | Same as amitriptyline | Same |
+```
+
+**Example - CORRECT:**
+```
+| Nortriptyline | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly | ECG if dose >100 mg/day; anticholinergic effects |
+```
+
+**IMPORTANT:** All treatment tables use STANDARDIZED columns with **Route** and **Indication** for every medication. This enables:
+- Order sentence generation (e.g., "Baclofen 5 mg PO TID")
+- Teal pill icon (💊) on hover showing why this treatment is recommended
+- Consistent parsing for the clinical tool
+
+### Standard Treatment Table Format (ALL Sections)
+
+```
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+```
+
+**Column Definitions:**
+- **Treatment:** Drug name (generic preferred; include brand if commonly used)
+- **Route:** PO, IV, IM, SC, PR, SL, INH, TOP, IT (intrathecal), or combination
+- **Indication:** Why this drug is used for this condition (displays as 💊 icon)
+- **Dosing:** Structured format (see Dosing Requirements below)
+- **Contraindications:** Safety warnings (displays as ⚠️ icon)
+- **Monitoring:** Required labs, vitals, or clinical monitoring (displays as 📊 icon)
+- **ED/HOSP/OPD/ICU:** Priority in each setting (STAT, URGENT, ROUTINE, EXT, -)
+
 ### 3A. Acute/Emergent
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ### 3B. Symptomatic Treatments
 
-| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ### 3C. Second-line/Refractory
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ### 3D. Disease-Modifying or Chronic Therapies (if applicable)
 
-| Treatment | Route | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|-------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
 
 ## Treatment Section Guidance
 
 ### CRITICAL: Individual Drug Rows
 
-**Every medication must be listed on its own row.** Do NOT group drugs together (e.g., "SSRIs" or "beta-blockers"). Each drug needs complete prescribing information.
+**Every medication must be listed on its own row.** Do NOT group drugs together (e.g., "SSRIs" or "beta-blockers"). Each drug needs complete prescribing information with the standardized column format including Route.
 
 Ã¢ÂÅ’ **Wrong:**
 ```
@@ -130,16 +165,80 @@ SECTION A: ACTION ITEMS
 
 ### Dosing Requirements
 
-Every drug row must include:
+**STRUCTURED DOSING FORMAT:** Use double-colon delimited fields to enable order sentence generation:
 
+**Single Dose Format:**
+```
+[dose] [frequency] :: [route] :: :: [full_instructions]
+```
+
+**Multiple Dose Format (semicolon-separated options):**
+```
+[dose1 freq1]; [dose2 freq2]; [dose3 freq3] :: [route] :: :: [full_instructions]
+```
+
+**Note:** We use `::` instead of `|` because `|` conflicts with markdown table syntax.
+
+**Single Dose Examples:**
+```
+5 mg TID :: PO :: :: Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day
+1000 mg daily x 5 days :: IV :: :: 1000 mg IV daily for 3-5 days; infuse over 1 hour
+4 mg push PRN seizure :: IV :: :: 4 mg IV push over 2 min; may repeat x1 in 5 min; max 8 mg
+```
+
+**Multiple Dose Examples (PREFERRED for medications with standard titration):**
+```
+300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day
+75 mg BID; 150 mg BID; 300 mg BID :: PO :: :: Start 75 mg BID; may increase q1wk; max 600 mg/day
+25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 25 mg qHS; titrate q1wk; max 150 mg qHS
+```
+
+Each semicolon-separated option becomes a selectable order sentence in the clinical tool.
+
+**Field Definitions:**
+| Field | Purpose | Examples |
+|-------|---------|----------|
+| dose_options | One or more dose+frequency pairs | "5 mg TID" or "300 mg qHS; 300 mg TID; 600 mg TID" |
+| route | Administration route | "PO", "IV", "IM", "SC", "SL", "PR", "INH", "TOP" |
+| (empty) | Reserved field, leave empty | :: |
+| full_instructions | Complete dosing guidance | Include start dose, titration, max dose, special instructions |
+
+**Order Sentence Generation:**
+The clinical tool generates clickable order sentences from dose options:
+- Single: `5 mg TID :: PO :: :: ...` → "Baclofen 5 mg PO TID"
+- Multiple: `300 mg qHS; 300 mg TID :: PO :: :: ...` → Dropdown with:
+  - "Gabapentin 300 mg PO qHS"
+  - "Gabapentin 300 mg PO TID"
+
+**Full Instructions Must Include:**
 | Element | Example |
 |---------|---------|
 | Starting dose | "Start 5 mg TID" or "Start 300 mg qHS" |
-| Titration schedule | "increase by 5 mg/dose every 3 days" or "increase by 300 mg every 1-3 days" |
+| Titration schedule | "titrate by 5 mg/dose q3d" or "increase by 300 mg q1-3d" |
 | Target dose (if applicable) | "target 900-1800 mg TID" |
 | Maximum dose | "max 80 mg/day" or "max 3600 mg/day" |
-| Frequency | "BID", "TID", "once daily", "every other day" |
 | Special instructions | "take with food", "avoid afternoon dosing", "exactly 12 hours apart" |
+
+**PRN Medications:**
+Include PRN indication with each dose option:
+```
+4 mg IV push PRN seizure; 2 mg IV push PRN seizure :: IV :: :: 4 mg IV push; may repeat x1 in 5 min; max 8 mg
+10 mg q6h PRN; 20 mg q6h PRN :: PO :: :: 10-20 mg PO q6h as needed for pain; max 80 mg/day
+```
+
+**Loading + Maintenance Doses:**
+Use separate dose options for load and maintenance:
+```
+1000 mg IV load; 500 mg IV q12h :: IV :: :: Load 1000 mg IV, then 500 mg IV q12h; adjust for renal function
+20 mg/kg IV load; 5 mg/kg IV q12h :: IV :: :: 20 mg/kg IV load (max 1500 mg), then 5 mg/kg IV q12h
+```
+
+**Weight-Based Dosing:**
+Include mg/kg with calculated examples:
+```
+0.15 mg/kg IV push; 0.1 mg/kg IV push :: IV :: :: 0.1-0.15 mg/kg IV (max 10 mg); repeat q5min PRN
+4 mg IV; 0.1 mg/kg IV :: IV :: :: 4 mg or 0.1 mg/kg IV push; max 10 mg; for patients >40 kg use fixed dose
+```
 
 ### Symptomatic Treatment Categories
 
@@ -192,20 +291,39 @@ Use Section 3D with expanded columns when the diagnosis has chronic disease-modi
 
 ## 4. OTHER RECOMMENDATIONS
 
+**IMPORTANT:** Each recommendation must be a complete clinical sentence that includes the indication/rationale. The ordering physician should understand WHY the recommendation is being made without needing a separate "Indication" column.
+
 ### 4A. Referrals & Consults
 
-| Recommendation | Indication | ED | HOSP | OPD | ICU |
-|----------------|------------|:--:|:----:|:---:|:---:|
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+
+**Example format:**
+- ✅ "Neurology consult for diagnosis confirmation and immunotherapy guidance"
+- ✅ "Physical therapy for mobility assessment and fall risk reduction"
+- ✅ "Speech therapy for swallow evaluation given bulbar weakness"
+- ❌ "Neurology consult" (too vague - no rationale)
+- ❌ "PT consult" (abbreviation and no rationale)
 
 ### 4B. Patient Instructions
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
 
+**Example format:**
+- ✅ "Return immediately if worsening weakness or breathing difficulty develops (may indicate disease progression)"
+- ✅ "Do not drive until cleared by neurology due to risk of sudden weakness"
+- ❌ "Return if worse" (too vague)
+
 ### 4C. Lifestyle & Prevention
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
+
+**Example format:**
+- ✅ "Aspiration precautions including thickened liquids and chin tuck positioning given bulbar weakness"
+- ✅ "Frequent repositioning every 2 hours to prevent pressure ulcers during immobility"
+- ❌ "Aspiration precautions" (no specifics or rationale)
 
 Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
 SECTION B: REFERENCE (Expand as Needed)
@@ -281,23 +399,24 @@ SECTION B: REFERENCE (Expand as Needed)
 All recommendations must be written as **checkbox-ready directives** - clear orders from one physician to another or to the patient. These will be selected and sent directly in clinical communications.
 
 **DO NOT write:**
-- "Consider physical therapy for balance issues"
-- "Patient may benefit from neurology follow-up"
-- "Smoking cessation should be encouraged"
+- "Consider physical therapy for balance issues" (hedging language)
+- "Patient may benefit from neurology follow-up" (hedging language)
+- "Smoking cessation should be encouraged" (hedging language)
+- "PT consult" (abbreviation, no rationale)
+- "Neurology consult" (no rationale - WHY?)
 
 **DO write:**
-- "Physical therapy consult for gait and balance training"
-- "Neurology follow-up in 2-4 weeks"
-- "Smoking cessation"
-- "Avoid driving until cleared by neurology"
-- "Vitamin D 2000 IU daily"
-- "MRI brain with and without contrast"
+- "Physical therapy for gait training and fall prevention given proximal weakness"
+- "Neurology follow-up in 2-4 weeks for treatment response assessment"
+- "Smoking cessation to reduce vascular risk and improve outcomes"
+- "Do not drive until cleared by neurology due to risk of sudden weakness or visual changes"
+- "Speech therapy for swallow evaluation given bulbar symptoms and aspiration risk"
 
 **Formatting rules:**
-- Start with the action or service, not the rationale
+- Each recommendation must include the clinical rationale (WHY it's being ordered)
 - Use imperative verb forms or noun phrases
-- Keep recommendations concise (aim for <10 words when possible)
-- Rationale goes in the designated column, not the recommendation itself
+- The recommendation should be a complete clinical sentence
+- A physician reading the recommendation should understand its purpose without additional context
 
 ## Section 4 Guidance: Diagnosis-Specific Content Required
 
@@ -305,40 +424,40 @@ All recommendations must be written as **checkbox-ready directives** - clear ord
 
 ### 4A. Referrals & Consults
 
-Include diagnosis-appropriate referrals. Common categories:
+Include diagnosis-appropriate referrals WITH clinical rationale in the recommendation itself. Common categories:
 
-| Category | Examples |
-|----------|----------|
-| Rehabilitation | PT (gait, balance, strengthening), OT (ADLs, hand function), Speech (swallow, cognition, communication) |
-| Subspecialty | Neuromuscular, neuro-ophthalmology, epilepsy, movement disorders, neuro-oncology |
-| Medical specialties | Hematology/oncology, rheumatology, endocrinology, cardiology, pulmonology |
-| Supportive | Pain management, psychiatry/psychology, social work, palliative care, genetic counseling |
-| Primary care | PCP follow-up, podiatry, wound care, nutrition |
+| Category | Example Recommendations |
+|----------|------------------------|
+| Rehabilitation | "Physical therapy for gait training and fall prevention", "Occupational therapy for ADL adaptation and energy conservation", "Speech therapy for swallow evaluation given bulbar weakness" |
+| Subspecialty | "Neuromuscular specialist for treatment optimization and prognosis discussion", "Neuro-ophthalmology for diplopia evaluation and prism fitting" |
+| Medical specialties | "Pulmonology for respiratory function monitoring and ventilator wean guidance", "Cardiology for autonomic dysfunction evaluation" |
+| Supportive | "Pain management for refractory neuropathic pain not responding to first-line agents", "Social work for discharge planning and community resources" |
+| Primary care | "PCP follow-up for chronic disease management and medication reconciliation" |
 
 ### 4B. Patient Instructions
 
-Include actionable, diagnosis-specific instructions:
+Include actionable, diagnosis-specific instructions WITH rationale explaining WHY:
 
-| Category | Content Type |
-|----------|--------------|
-| Return precautions | Specific symptoms requiring ED return |
-| Activity guidance | Driving, work, exercise restrictions |
-| Medication guidance | Titration expectations, what not to stop abruptly, timing |
-| Self-monitoring | What to watch for, symptom diaries, when to call |
-| Safety | Fall prevention, seizure precautions, heat/cold exposure |
+| Category | Example Recommendations |
+|----------|------------------------|
+| Return precautions | "Return immediately if worsening weakness or breathing difficulty (may indicate disease progression requiring ICU care)", "Seek emergency care for new fever or headache (may indicate infection or relapse)" |
+| Activity guidance | "Do not drive until cleared by neurology due to risk of sudden weakness", "Avoid heavy lifting until strength recovers to prevent injury" |
+| Medication guidance | "Do not stop steroids abruptly as this may cause adrenal crisis", "Take pyridostigmine 30-60 minutes before meals to improve swallowing" |
+| Self-monitoring | "Monitor for double vision or drooping eyelids which may indicate worsening", "Keep a symptom diary to track response to treatment" |
+| Safety | "Use fall precautions including walker and bed rails due to proximal weakness", "Avoid hot environments which may worsen symptoms" |
 
 ### 4C. Lifestyle Modifications
 
-Include modifiable risk factors and preventive measures specific to the condition:
+Include modifiable risk factors and preventive measures WITH clinical rationale:
 
-| Category | Examples |
-|----------|----------|
-| Substance use | Alcohol cessation, smoking cessation |
-| Metabolic | Glycemic control, blood pressure targets, lipid management |
-| Activity | Exercise type and intensity, activity pacing |
-| Diet/supplements | Specific vitamins, dietary modifications |
-| Environmental | Heat avoidance, pressure point protection, home safety |
-| Sleep | Sleep hygiene, CPAP compliance |
+| Category | Example Recommendations |
+|----------|------------------------|
+| Substance use | "Alcohol cessation as alcohol worsens neuropathy and interacts with medications", "Smoking cessation to reduce vascular risk and improve healing" |
+| Metabolic | "Strict glycemic control (HbA1c <7%) to prevent neuropathy progression", "Blood pressure target <130/80 to reduce stroke recurrence risk" |
+| Activity | "Low-impact exercise (swimming, stationary bike) to maintain strength without overexertion", "Energy conservation with scheduled rest periods to manage fatigue" |
+| Diet/supplements | "Vitamin B12 supplementation if deficient to support nerve health", "Low-sodium diet to reduce fluid retention on steroids" |
+| Environmental | "Frequent repositioning every 2 hours to prevent pressure ulcers during immobility", "Home safety evaluation to remove fall hazards" |
+| Sleep | "CPAP compliance essential to prevent nocturnal hypoxia which worsens neurological function" |
 
 ## Builder Principles
 
@@ -562,7 +681,11 @@ See `references/ms-exacerbation-v2.md` for a complete example of Builder output 
 
 ## Lumbar Puncture Guidance
 
-When LP is indicated for a diagnosis, include a dedicated LP subsection within Section 2 (Imaging & Studies) using this structure:
+**IMPORTANT:** Lumbar Puncture appears under **Laboratory Workup** in the clinical tool (CSF analysis IS laboratory work). This ensures LP studies display alongside other lab sections when selected by the clinician.
+
+In the markdown file, place `### LUMBAR PUNCTURE` after the imaging subsections (2A/2B/2C). The JSON generator will automatically position it under "Laboratory Workup > Lumbar Puncture" in the clinical tool output.
+
+Use this structure (note: venue columns ED/HOSP/OPD/ICU must be the last 4 columns):
 
 ```
 ### LUMBAR PUNCTURE
@@ -571,13 +694,17 @@ When LP is indicated for a diagnosis, include a dedicated LP subsection within S
 **Timing:** [Urgent vs routine, any prerequisites]
 **Volume Required:** [Standard 10-15cc OR therapeutic 30-50cc for NPH]
 
-**Studies to Order:**
-| Study | Priority | Rationale |
-|-------|----------|-----------|
-| Core studies (always) | STAT | Cell count x2, protein, glucose, gram stain, culture |
-| [Diagnosis-specific] | [Priority] | [Rationale] |
+| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|-------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Opening pressure | [Why ordered] | 10-20 cm H2O | URGENT | ROUTINE | ROUTINE | - |
+| Cell count (tubes 1 and 4) | [Why ordered] | WBC <5, RBC 0 | URGENT | ROUTINE | ROUTINE | - |
+| Protein | [Why ordered] | Normal 15-45 mg/dL | URGENT | ROUTINE | ROUTINE | - |
+| Glucose with serum glucose | [Why ordered] | Normal (>60% serum) | URGENT | ROUTINE | ROUTINE | - |
+| Gram stain and culture | [Why ordered] | No organisms | URGENT | ROUTINE | ROUTINE | - |
+| [Diagnosis-specific study] | [Rationale] | [Target] | [Priority] | [Priority] | [Priority] | [Priority] |
 
 **Special Handling:** [Time-sensitive, temperature requirements]
+**Contraindications:** [List contraindications]
 ```
 
 See `references/lp-reference.md` for comprehensive LP panels organized by diagnosis, including:
@@ -771,6 +898,24 @@ For each item in JSON, include ALL applicable metadata fields:
 | Missing ICU-specific treatments | Incomplete critical care coverage | Review all 3E-3G subsections |
 
 ## Change Log
+
+**v3.1 (January 24, 2026)** - Multiple Dose Options
+- **Added multi-dose support**: Semicolon-separated dose options in structured dosing
+- **New format**: `dose1 freq1; dose2 freq2; dose3 freq3 :: route :: :: full_instructions`
+- Example: `300 mg qHS; 300 mg TID; 600 mg TID :: PO :: :: Start 300 mg qHS; titrate...`
+- Each dose option generates a separate order sentence for dropdown selection
+- Updated all dosing examples (PRN, loading/maintenance, weight-based)
+- Clinical tool shows dropdown when multiple options available
+
+**v3.0 (January 24, 2026)** - MAJOR: Clickable Medication Dosing
+- **Standardized ALL treatment tables** to same column order: Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU
+- **Added Route column to ALL sections** (3A, 3B, 3C) - previously only in 3D
+- **Introduced structured dosing format**: `dose freq :: route :: :: full_instructions`
+- This enables order sentence generation: clicking dosing badge copies "Baclofen 5 mg PO TID"
+- Added detailed Dosing Requirements with examples for:
+  - Standard dosing, PRN medications, loading + maintenance, weight-based dosing
+- Updated examples throughout to use new format
+- See docs/ROADMAP.md for full implementation plan
 
 **v2.6 (January 19, 2026)**
 - **Added JSON Parity Requirement section** - CRITICAL update requiring JSON to match markdown completely

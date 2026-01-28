@@ -1,7 +1,7 @@
 ---
 title: New Onset Seizure
 description: Initial evaluation and management of first-time unprovoked seizure including diagnostic workup, acute treatment, and ASM initiation framework.
-version: "1.1"
+version: "1.2"
 setting: ED, HOSP, OPD
 status: draft
 tags:
@@ -20,9 +20,9 @@ tags:
 
 # New Onset Seizure
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** January 13, 2026
-**REVISED:** January 13, 2026
+**REVISED:** January 20, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -37,9 +37,9 @@ tags:
 
 **PRIORITY KEY:** STAT = Immediate | URGENT = Within hours | ROUTINE = Standard | EXT = Extended/atypical cases | — = Not applicable to this setting
 
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+---
 SECTION A: ACTION ITEMS
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+---
 
 ## 1. LABORATORY WORKUP
 
@@ -57,6 +57,7 @@ SECTION A: ACTION ITEMS
 | Urinalysis | UTI can provoke seizures (especially elderly) | Negative | STAT | STAT | ROUTINE | STAT |
 | Prolactin level | Elevated if drawn within 10-20 min of event; helps distinguish seizure from non-epileptic event | Elevated 2-3× baseline (if drawn <20 min) | STAT | — | — | STAT |
 | Phosphorus | Hypophosphatemia lowers seizure threshold (especially alcohol withdrawal) | >2.5 mg/dL | STAT | STAT | ROUTINE | STAT |
+| Lactate | Elevated post-ictal confirms recent seizure; metabolic acidosis screen | Mild elevation acceptable post-ictal | STAT | STAT | — | STAT |
 
 ### 1B. Extended Workup (Second-line)
 
@@ -66,7 +67,6 @@ SECTION A: ACTION ITEMS
 | Ammonia | Hepatic encephalopathy, urea cycle disorders | Normal (<35 μmol/L) | URGENT | ROUTINE | — | URGENT |
 | Troponin | Cardiac ischemia as cause or consequence | Negative | URGENT | ROUTINE | — | URGENT |
 | ECG | Arrhythmia, prolonged QTc (some ASMs), Brugada | Normal | URGENT | ROUTINE | ROUTINE | URGENT |
-| Lactate | Elevated post-ictal; also metabolic acidosis | Mild elevation acceptable post-ictal | URGENT | ROUTINE | — | URGENT |
 | Blood gas (ABG or VBG) | Acidosis, hypoxia | Normal or mild post-ictal acidosis | URGENT | ROUTINE | — | URGENT |
 | Serum osmolality | Hypo/hyperosmolar states | 280-295 mOsm/kg | URGENT | ROUTINE | — | URGENT |
 | Pregnancy test (urine or serum β-hCG) | Eclampsia; affects imaging and ASM choice | Negative (or explains eclampsia if positive) | STAT | STAT | ROUTINE | STAT |
@@ -190,7 +190,7 @@ SECTION A: ACTION ITEMS
 | Carbamazepine | Focal seizures | Start 200 mg PO BID; increase by 200 mg/day weekly; target 800-1200 mg/day; max 1600 mg/day | AV block; bone marrow suppression; concurrent MAOIs | CBC, LFTs, sodium at baseline and periodically; HLA-B*1502 screening | — | ROUTINE | ROUTINE | — |
 | Valproate/Divalproex | Generalized seizures | Start 10-15 mg/kg/day in divided doses; increase by 5-10 mg/kg/week; target 1000-2000 mg/day; max 60 mg/kg/day | Pregnancy (teratogenic); hepatic disease; mitochondrial disease; pancreatitis history | LFTs, ammonia, CBC, platelets at baseline, then q3-6mo; weight gain, hair loss, tremor | — | ROUTINE | ROUTINE | ROUTINE |
 | Phenytoin | Focal or generalized | 300-400 mg daily (extended release) or divided TID (immediate release); adjust by level | Pregnancy (relative - fetal hydantoin syndrome); AV block | Free phenytoin level (target 1-2 μg/mL); total level 10-20 μg/mL; CBC, LFTs; gingival hyperplasia, hirsutism | — | ROUTINE | ROUTINE | ROUTINE |
-| Brivaracetam | Alternative to levetiracetam | Start 50 mg PO BID; may increase to 100 mg BID; max 200 mg/day | Hepatic impairment (reduce dose) | Less behavioral side effects than levetiracetam; somnolence | — | ROUTINE | ROUTINE | ROUTINE |
+| Brivaracetam | Alternative to levetiracetam | Start 50 mg PO BID; may increase to 100 mg BID; max 200 mg/day | Hepatic impairment (reduce dose) | Less behavioral side effects than levetiracetam; somnolence; Schedule C-V | — | ROUTINE | ROUTINE | ROUTINE |
 | Zonisamide | Adjunctive or monotherapy | Start 100 mg daily; increase by 100 mg every 2 weeks; target 300-400 mg daily; max 600 mg/day | Sulfonamide allergy; kidney stones | Kidney stones (carbonic anhydrase inhibitor); oligohidrosis (pediatric); metabolic acidosis | — | — | ROUTINE | — |
 | Topiramate | Adjunctive or monotherapy | Start 25 mg BID; increase by 50 mg/day weekly; target 200-400 mg/day in divided doses; max 400 mg/day | Kidney stones; metabolic acidosis; glaucoma | Cognitive impairment ("dopamax"); paresthesias; kidney stones; weight loss | — | — | ROUTINE | — |
 | Clobazam | Adjunctive therapy | Start 5-10 mg daily; increase by 5-10 mg weekly; max 40 mg/day in divided doses | Severe hepatic impairment; sleep apnea (untreated) | Sedation; tolerance may develop; CYP2C19 poor metabolizers need lower dose | — | ROUTINE | ROUTINE | — |
@@ -246,46 +246,50 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| **Return to ED immediately if:** recurrent seizure, prolonged seizure >5 minutes, head injury, persistent confusion, difficulty breathing, or status epilepticus | ✓ | ✓ | ✓ |
-| Do NOT drive until cleared by neurology (driving restrictions per state guidelines; typically require seizure-free interval) | ✓ | ✓ | ✓ |
-| Avoid operating heavy machinery, working at heights, or swimming alone | ✓ | ✓ | ✓ |
-| Do not bathe alone; showers preferred over baths; keep bathroom door unlocked | ✓ | ✓ | ✓ |
-| Inform employer if job involves safety-sensitive duties | — | ✓ | ✓ |
-| Take ASM exactly as prescribed; do NOT stop abruptly (risk of breakthrough seizures or status epilepticus) | ✓ | ✓ | ✓ |
-| Avoid common seizure triggers: sleep deprivation, alcohol, illicit drugs, missed medications | ✓ | ✓ | ✓ |
-| Keep a seizure diary: date, time, duration, description, triggers, post-ictal symptoms | — | ✓ | ✓ |
-| Wear medical identification (bracelet or necklace) | — | ✓ | ✓ |
-| Educate family/coworkers on seizure first aid: stay with person, protect head, do NOT put anything in mouth, time the seizure, call 911 if >5 minutes | ✓ | ✓ | ✓ |
-| Follow up with neurology within 1-2 weeks of discharge | ✓ | ✓ | — |
-| Bring list of all medications (including OTC and supplements) to all appointments - many interact with ASMs | — | ✓ | ✓ |
-| Women: discuss contraception with provider; some ASMs reduce efficacy of hormonal contraception | — | ✓ | ✓ |
-| Report side effects (mood changes, rash, dizziness, cognitive issues) promptly; do NOT stop medication without calling | — | ✓ | ✓ |
-| Avoid flashing/strobe lights if photosensitive seizures suspected | — | ✓ | ✓ |
+*Note: ICU patients typically receive these instructions at step-down or discharge.*
+
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| **Return to ED immediately if:** recurrent seizure, prolonged seizure >5 minutes, head injury, persistent confusion, difficulty breathing, or status epilepticus | ✓ | ✓ | ✓ | — |
+| Do NOT drive until cleared by neurology (driving restrictions per state guidelines; typically require seizure-free interval) | ✓ | ✓ | ✓ | — |
+| Avoid operating heavy machinery, working at heights, or swimming alone | ✓ | ✓ | ✓ | — |
+| Do not bathe alone; showers preferred over baths; keep bathroom door unlocked | ✓ | ✓ | ✓ | — |
+| Inform employer if job involves safety-sensitive duties | — | ✓ | ✓ | — |
+| Take ASM exactly as prescribed; do NOT stop abruptly (risk of breakthrough seizures or status epilepticus) | ✓ | ✓ | ✓ | — |
+| Avoid common seizure triggers: sleep deprivation, alcohol, illicit drugs, missed medications | ✓ | ✓ | ✓ | — |
+| Keep a seizure diary: date, time, duration, description, triggers, post-ictal symptoms | — | ✓ | ✓ | — |
+| Wear medical identification (bracelet or necklace) | — | ✓ | ✓ | — |
+| Educate family/coworkers on seizure first aid: stay with person, protect head, do NOT put anything in mouth, time the seizure, call 911 if >5 minutes | ✓ | ✓ | ✓ | — |
+| Follow up with neurology within 1-2 weeks of discharge | ✓ | ✓ | — | — |
+| Bring list of all medications (including OTC and supplements) to all appointments - many interact with ASMs | — | ✓ | ✓ | — |
+| Women: discuss contraception with provider; some ASMs reduce efficacy of hormonal contraception | — | ✓ | ✓ | — |
+| Report side effects (mood changes, rash, dizziness, cognitive issues) promptly; do NOT stop medication without calling | — | ✓ | ✓ | — |
+| Avoid flashing/strobe lights if photosensitive seizures suspected | — | ✓ | ✓ | — |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Sleep hygiene: aim for 7-9 hours nightly; maintain regular sleep schedule | — | ✓ | ✓ |
-| Avoid alcohol (lowers seizure threshold; interacts with ASMs) | ✓ | ✓ | ✓ |
-| Avoid illicit drugs (especially stimulants: cocaine, amphetamines) | ✓ | ✓ | ✓ |
-| Stress management techniques | — | — | ✓ |
-| Regular moderate exercise (not extreme sleep deprivation from overtraining) | — | — | ✓ |
-| Medication adherence: use pill organizers, phone alarms, refill reminders | — | ✓ | ✓ |
-| Folic acid supplementation 1-4 mg daily for women of childbearing potential (especially if on enzyme-inducing ASMs) | — | ✓ | ✓ |
-| Bone health: vitamin D 1000-2000 IU daily; calcium as needed (enzyme-inducing ASMs affect bone density) | — | — | ✓ |
-| Avoid known personal triggers (flashing lights, certain foods, stress, if identified) | — | ✓ | ✓ |
-| Home safety modifications: pad sharp furniture corners, avoid glass shower doors, use microwave instead of stovetop when alone | — | ✓ | ✓ |
-| Seizure alert devices or apps for those living alone (optional) | — | — | ✓ |
-| Smoking cessation (increases ASM metabolism; general health) | — | ✓ | ✓ |
+*Note: ICU patients typically receive these recommendations at step-down or discharge.*
+
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Sleep hygiene: aim for 7-9 hours nightly; maintain regular sleep schedule | — | ✓ | ✓ | — |
+| Avoid alcohol (lowers seizure threshold; interacts with ASMs) | ✓ | ✓ | ✓ | — |
+| Avoid illicit drugs (especially stimulants: cocaine, amphetamines) | ✓ | ✓ | ✓ | — |
+| Stress management techniques | — | — | ✓ | — |
+| Regular moderate exercise (not extreme sleep deprivation from overtraining) | — | — | ✓ | — |
+| Medication adherence: use pill organizers, phone alarms, refill reminders | — | ✓ | ✓ | — |
+| Folic acid supplementation 1-4 mg daily for women of childbearing potential (especially if on enzyme-inducing ASMs) | — | ✓ | ✓ | — |
+| Bone health: vitamin D 1000-2000 IU daily; calcium as needed (enzyme-inducing ASMs affect bone density) | — | — | ✓ | — |
+| Avoid known personal triggers (flashing lights, certain foods, stress, if identified) | — | ✓ | ✓ | — |
+| Home safety modifications: pad sharp furniture corners, avoid glass shower doors, use microwave instead of stovetop when alone | — | ✓ | ✓ | — |
+| Seizure alert devices or apps for those living alone (optional) | — | — | ✓ | — |
+| Smoking cessation (increases ASM metabolism; general health) | — | ✓ | ✓ | — |
 
 ---
 
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+---
 SECTION B: REFERENCE (Expand as Needed)
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+---
 
 ## 5. DIFFERENTIAL DIAGNOSIS
 
@@ -311,6 +315,7 @@ SECTION B: REFERENCE (Expand as Needed)
 |-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
 | Neurologic exam (level of consciousness, focal deficits) | Q1-2h in ED; Q4h inpatient; each visit OPD | Return to baseline | If prolonged post-ictal state: continuous EEG to rule out non-convulsive status | ✓ | ✓ | ✓ | ✓ |
 | Vital signs | Continuous in ED/ICU; Q4h floor | Stable | Treat hyperthermia, hypotension, hypoxia | ✓ | ✓ | — | ✓ |
+| Respiratory monitoring (post-benzodiazepine) | RR q15min × 1h post-administration; SpO2 continuous | RR ≥12; SpO2 ≥94% | Supplemental O2; airway management; consider flumazenil only if severe | ✓ | ✓ | — | ✓ |
 | Glucose | On arrival; repeat if altered | >70 mg/dL | Dextrose if low | ✓ | ✓ | — | ✓ |
 | Electrolytes (Na, Ca, Mg) | On arrival; daily if abnormal | Normal ranges | Correct deficiencies; identify cause | ✓ | ✓ | ✓ | ✓ |
 | ASM level (phenytoin, valproate, phenobarbital, carbamazepine) | Trough level 5-7 days after initiation or dose change; PRN | Therapeutic range (drug-specific) | Adjust dose; check free level for phenytoin | — | ✓ | ✓ | ✓ |
@@ -364,6 +369,13 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.2 (January 20, 2026)**
+- Added lactate to Section 1A core labs (elevated post-ictal confirms recent seizure) per R4
+- Added respiratory monitoring parameters to Section 6 (RR, SpO2 post-benzodiazepine) per R2
+- Added Schedule C-V controlled substance note to brivaracetam in Section 3C per R3
+- Added ICU column to Sections 4B and 4C for format consistency per R1
+- Added explanatory notes for ICU exclusion in patient instructions/lifestyle sections
 
 **v1.1 (January 13, 2026)**
 - Updated levetiracetam loading dose to range (40-60 mg/kg) per physician preference

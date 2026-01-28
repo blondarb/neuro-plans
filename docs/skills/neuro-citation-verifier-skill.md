@@ -7,6 +7,107 @@ description: Validates citations and evidence references in clinical decision su
 
 Systematically verify all citations and evidence references in clinical recommendation templates to ensure accuracy and prevent hallucinated sources.
 
+## CRITICAL: Preventing PMID Hallucinations
+
+**NEVER guess or assume a PubMed ID.** Hallucinated PMIDs that link to wrong articles are dangerous and misleading.
+
+### Mandatory Verification Steps
+
+Before adding ANY PubMed link, you MUST:
+
+1. **Search for the specific article** using WebSearch with author, title keywords, journal, and year
+2. **Find the actual PMID** in the search results (look for "PMID:" or pubmed.ncbi.nlm.nih.gov URLs)
+3. **Verify the PMID** by fetching the PubMed page and confirming:
+   - Author names match
+   - Title matches or is very close
+   - Journal matches
+   - Year matches
+4. **Only then add the link** to the citation
+
+### What NOT to Do
+
+| ❌ DO NOT | ✅ DO INSTEAD |
+|-----------|---------------|
+| Guess PMIDs based on patterns | Search and verify each one |
+| Assume PMID from memory | Fetch the actual PubMed page |
+| Add links without clicking through | Verify the linked article is correct |
+| Use placeholder PMIDs | Leave as plain text if can't verify |
+
+### When You Cannot Verify
+
+If you cannot find or verify a PMID:
+- **Leave the citation as plain text** (no link)
+- **Log it** in the verification report as "Unable to verify"
+- **Flag for physician review** - they may know the correct source
+- **NEVER fabricate a PMID** - wrong links are worse than no links
+
+### Example Correct Process
+
+```
+Citation to verify: "Dyck PJ et al. Neurology 1993" (diabetes polyneuropathy)
+
+1. Search: "Dyck diabetic polyneuropathy Neurology 1993 PMID"
+2. Find in results: "PMID: 8469345" with title matching
+3. Fetch: https://pubmed.ncbi.nlm.nih.gov/8469345/
+4. Verify page shows:
+   - Authors: Dyck PJ, et al.
+   - Journal: Neurology
+   - Year: 1993
+   - Topic: Diabetic polyneuropathy
+5. Confirmed - add link
+```
+
+---
+
+## CRITICAL: PMID Content Verification
+
+### Why PMIDs Get Wrong
+
+PMIDs are assigned sequentially. Papers published in the same journal issue often have **consecutive PMIDs**. This leads to common errors:
+
+| Error Type | Example | How It Happens |
+|------------|---------|----------------|
+| Off-by-one | PMID 15590952 vs 15590953 | Two NEJM papers in same issue (Fahn ELLDOPA vs Emre rivastigmine) |
+| Similar topic | PMID 8869765 vs 8792038 | Both 1996 Cephalalgia papers (CGRP vs Magnesium) |
+| Same author, different study | Multiple Cochrane reviews | Author has many systematic reviews |
+| Wrong section | PMID 38078586 vs 38078577 | ADA Standards Section 6 vs Section 12 |
+
+### Mandatory PMID Verification Checklist
+
+For EVERY PMID, you MUST verify:
+
+- [ ] **Title matches** - The actual paper title supports the claim
+- [ ] **Authors match** - First/last author names are correct
+- [ ] **Journal matches** - Published in the claimed journal
+- [ ] **Year matches** - Publication year is correct
+- [ ] **Content supports claim** - The finding you're citing actually exists in this paper
+
+### Search Pattern for PMID Verification
+
+```
+Search: "PMID [number] [author name] [journal] [year] [topic]"
+```
+
+Example: `"PMID 8792038 Peikert Cephalalgia 1996 magnesium migraine"`
+
+If the search doesn't return results confirming the paper matches your claim, the PMID is likely wrong.
+
+### Use the Citation Verification Script
+
+Run `scripts/verify_citations.py` to extract all PMIDs from a plan:
+
+```bash
+# Single plan
+python scripts/verify_citations.py docs/plans/migraine.md
+
+# All approved plans
+python scripts/verify_citations.py --all
+```
+
+This outputs all citations with their claimed content, making it easy to verify each PMID systematically.
+
+---
+
 ## When to Use
 
 Run this skill AFTER:
@@ -300,10 +401,70 @@ C3. Section 8 - Add missing citation: "Hauser WA et al. NEJM 1998;338:429-34" fo
 3. Search and verify each citation (HIGH priority first)
 4. Document findings in verification report
 5. Generate correction list compatible with neuro-rebuilder
-6. Physician reviews flagged citations
-7. Corrections implemented via rebuilder
-8. Re-verify any changed citations
-9. Proceed to CPT/synonym enrichment
+6. **Log results to `docs/logs/citation-verification-log.md`** (NEW)
+7. Physician reviews flagged citations
+8. Corrections implemented via rebuilder
+9. Re-verify any changed citations
+10. Proceed to CPT/synonym enrichment
+
+## Verification Logging (Required)
+
+**CRITICAL:** After each verification, append results to the central log at `docs/logs/citation-verification-log.md`. This enables pattern analysis and process improvement.
+
+### What to Log
+
+For each plan verified, add:
+
+1. **Summary entry** - Add counts to the Summary Statistics table
+2. **Plan section** - Create new section under "Verification Results by Plan" with:
+   - Date verified
+   - Version
+   - List of verified citations with PubMed IDs
+   - List of non-PubMed sources
+   - List of citations unable to verify (with reasons)
+   - Corrections made
+
+### Log Entry Template
+
+```markdown
+### [Plan Name]
+
+**Date Verified:** YYYY-MM-DD
+**Version:** X.X → X.X
+**Verifier:** Claude (neuro-citation-verifier)
+
+#### Verified Citations (X)
+
+| # | Citation | PubMed ID | Status |
+|---|----------|-----------|--------|
+| 1 | [Author et al. Journal Year] | [PMID](link) | ✅ Verified |
+
+#### Unable to Verify (X)
+
+| # | Citation | Reason | Recommendation |
+|---|----------|--------|----------------|
+| 1 | [Citation] | [Why unverifiable] | [Suggested action] |
+
+#### Corrections Made (X)
+
+| # | Original Citation | Issue | Corrected To |
+|---|-------------------|-------|--------------|
+| 1 | [Original] | [Problem] | [Fixed citation] |
+```
+
+### Pattern Tracking
+
+When logging, note any patterns in the "Patterns & Improvement Opportunities" section:
+
+| Pattern Type | Example |
+|--------------|---------|
+| Trial confusion | Multiple trials for same drug, different indications |
+| Generic references | "Multiple RCTs" without specific citations |
+| Outdated guidelines | Citing old version when newer exists |
+| Author name variations | Different spellings across sources |
+| Paywall barriers | Cannot access to verify content |
+
+This data helps improve the builder and checker skills over time.
 
 ## Limitations
 
@@ -316,6 +477,18 @@ C3. Section 8 - Add missing citation: "Hauser WA et al. NEJM 1998;338:429-34" fo
 When a source cannot be verified due to access limitations, recommend physician verification or suggest alternative citable sources.
 
 ## Change Log
+
+**v1.3 (January 2026)**
+- Added CRITICAL section on PMID content verification with common error types
+- Added mandatory PMID verification checklist
+- Documented the `scripts/verify_citations.py` helper tool
+- Added examples of off-by-one and consecutive PMID errors
+
+**v1.2 (January 2026)**
+- Added required verification logging to `docs/logs/citation-verification-log.md`
+- New "Verification Logging (Required)" section with log entry template
+- Added pattern tracking for continuous improvement
+- Updated workflow to include logging step
 
 **v1.1 (January 2026)**
 - Added clickable source links (PubMed, DOI, organization websites) to all verification output tables

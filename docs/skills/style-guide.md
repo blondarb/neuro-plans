@@ -34,23 +34,51 @@ All plans follow an 8-section format:
 
 ## Table Format
 
-Use the multi-column setting-priority format:
+Use the multi-column setting-priority format. **IMPORTANT:** Venue columns (ED, HOSP, OPD, ICU) must be the **last 4 columns** for CSS styling to work correctly.
 
 ### Labs/Studies Table
 
 ```markdown
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC  | STAT | STAT | ROUTINE | STAT | Infection screen | Normal |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| CBC  | Infection screen | Normal | STAT | STAT | ROUTINE | STAT |
 ```
 
 ### Treatment Table
 
+Treatment tables should include an **Indication** column to explain why the treatment is used. This displays as a hover icon (💊) in the clinical tool.
+
 ```markdown
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Drug Name | STAT | STAT | ROUTINE | STAT | 10 mg PO daily | Allergy | LFTs |
+| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Drug Name | Symptom relief | 10 mg PO daily | Allergy | LFTs | STAT | STAT | ROUTINE | STAT |
 ```
+
+> ⚠️ **Column Order Matters:** The CSS applies narrow column widths to the last 4 columns, expecting them to be ED/HOSP/OPD/ICU. Incorrect column order will cause rendering issues.
+
+> 💡 **Indication Column:** The Indication field appears as a teal pill icon (💊) in the clinical tool. Hover to see why this treatment is used for this condition.
+
+### Lumbar Puncture Section
+
+**IMPORTANT:** Lumbar Puncture appears under **Laboratory Workup** in the clinical tool (CSF analysis IS laboratory work). In the markdown file, place it as `### LUMBAR PUNCTURE` after the imaging subsections (2A/2B/2C) - the JSON generator will position it correctly under Labs.
+
+```markdown
+### LUMBAR PUNCTURE
+
+**Indication:** [Clinical indication for LP]
+**Timing:** URGENT if [condition]; ROUTINE for [condition]
+**Volume Required:** 10-15 mL (standard diagnostic)
+
+| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|-------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Opening pressure | Rule out elevated ICP | 10-20 cm H2O | URGENT | ROUTINE | ROUTINE | - |
+| Cell count (tubes 1 and 4) | Inflammation, infection | WBC <5, RBC 0 | URGENT | ROUTINE | ROUTINE | - |
+
+**Special Handling:** [Notes about transport, timing]
+**Contraindications:** [List contraindications]
+```
+
+> **Clinical Tool Display:** When LP studies are selected in the clinical tool, they appear grouped under "Laboratory Workup > Lumbar Puncture" alongside other lab sections.
 
 ## Priority Levels
 

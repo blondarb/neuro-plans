@@ -42,25 +42,25 @@ class ValidationResult:
 class MarkdownParser:
     """Parses markdown clinical plan templates into structured data."""
 
-    # Section patterns
+    # Section patterns - made more generic to handle various plan structures
     SECTION_PATTERNS = {
-        'labs_core': r'###?\s*1A[.\s]+Essential|###?\s*1A[.\s]+Core',
-        'labs_extended': r'###?\s*1B[.\s]+Extended',
-        'labs_rare': r'###?\s*1C[.\s]+Rare|###?\s*1C[.\s]+Specialized',
-        'imaging_essential': r'###?\s*2A[.\s]+Essential|###?\s*2A[.\s]+First-line',
-        'imaging_extended': r'###?\s*2B[.\s]+Extended',
-        'imaging_rare': r'###?\s*2C[.\s]+Rare|###?\s*2C[.\s]+Specialized',
+        'labs_core': r'###?\s*1A[.\s]+',
+        'labs_extended': r'###?\s*1B[.\s]+',
+        'labs_rare': r'###?\s*1C[.\s]+',
+        'imaging_essential': r'###?\s*2A[.\s]+',
+        'imaging_extended': r'###?\s*2B[.\s]+',
+        'imaging_rare': r'###?\s*2C[.\s]+',
         'lumbar_puncture': r'###?\s*LUMBAR PUNCTURE|###?\s*LP Studies',
-        'treatment_acute': r'###?\s*3A[.\s]+Acute|###?\s*3A[.\s]+Emergent',
-        'treatment_symptomatic': r'###?\s*3B[.\s]+Symptomatic|###?\s*3B[.\s]+First-line',
-        'treatment_secondline': r'###?\s*3C[.\s]+Second-line|###?\s*3C[.\s]+Refractory',
-        'treatment_dmt': r'###?\s*3D[.\s]+Disease-Modifying|###?\s*3D[.\s]+Chronic',
-        'treatment_super_refractory': r'###?\s*3E[.\s]+Super-Refractory',
-        'treatment_immunotherapy': r'###?\s*3F[.\s]+Immunotherapy|###?\s*3F[.\s]+NORSE',
-        'treatment_supportive': r'###?\s*3G[.\s]+Supportive|###?\s*3G[.\s]+Symptomatic.*ICU',
-        'referrals': r'###?\s*4A[.\s]+Referrals|###?\s*4A[.\s]+Consults',
-        'patient_instructions': r'###?\s*4B[.\s]+Patient',
-        'lifestyle': r'###?\s*4C[.\s]+Lifestyle|###?\s*4C[.\s]+Prevention',
+        'treatment_3a': r'###?\s*3A[.\s]+',
+        'treatment_3b': r'###?\s*3B[.\s]+',
+        'treatment_3c': r'###?\s*3C[.\s]+',
+        'treatment_3d': r'###?\s*3D[.\s]+',
+        'treatment_3e': r'###?\s*3E[.\s]+',
+        'treatment_3f': r'###?\s*3F[.\s]+',
+        'treatment_3g': r'###?\s*3G[.\s]+',
+        'referrals': r'###?\s*4A[.\s]+',
+        'patient_instructions': r'###?\s*4B[.\s]+',
+        'lifestyle': r'###?\s*4C[.\s]+',
         'differential': r'##?\s*5[.\s]+DIFFERENTIAL',
         'monitoring': r'##?\s*6[.\s]+MONITORING',
         'disposition': r'##?\s*7[.\s]+DISPOSITION',
@@ -82,12 +82,30 @@ class MarkdownParser:
             'title': self._extract_title(),
             'version': self._extract_version(),
             'icd10': self._extract_icd10(),
-            'notes': self._extract_notes(),
-            'sections': []
+            'scope': self._extract_scope(),
+            'notes': self._extract_notes(),  # Must be a list for clinical tool JS
+            'sections': {}
         }
 
-        # Parse each section type
+        # Parse main sections (for clinical tool)
         result['sections'] = self._parse_all_sections()
+
+        # Parse top-level arrays (for reference sections in clinical tool)
+        differential = self._parse_differential_section()
+        if differential:
+            result['differential'] = differential
+
+        evidence = self._parse_evidence_section()
+        if evidence:
+            result['evidence'] = evidence
+
+        monitoring = self._parse_monitoring_section()
+        if monitoring:
+            result['monitoring'] = monitoring
+
+        disposition = self._parse_disposition_section()
+        if disposition:
+            result['disposition'] = disposition
 
         return result
 
@@ -97,16 +115,25 @@ class MarkdownParser:
 
     def _extract_title(self) -> str:
         """Extract title from frontmatter or first heading."""
-        # Try frontmatter first
-        frontmatter_match = re.search(r'^---\s*\n.*?title:\s*["\']?([^"\'\n]+)["\']?\s*\n.*?---',
+        # Try frontmatter first - handle quoted titles with apostrophes
+        frontmatter_match = re.search(r'^---\s*\n.*?title:\s*"([^"\n]+)"',
                                        self.content, re.DOTALL)
         if frontmatter_match:
             return frontmatter_match.group(1).strip()
 
-        # Fall back to DIAGNOSIS line
-        diagnosis_match = re.search(r'DIAGNOSIS:\s*(.+)', self.content)
+        # Try single-quoted frontmatter title
+        frontmatter_match = re.search(r"^---\s*\n.*?title:\s*'([^'\n]+)'",
+                                       self.content, re.DOTALL)
+        if frontmatter_match:
+            return frontmatter_match.group(1).strip()
+
+        # Fall back to DIAGNOSIS line (strip bold markdown markers)
+        diagnosis_match = re.search(r'DIAGNOSIS:\s*\*?\*?\s*(.+)', self.content)
         if diagnosis_match:
-            return diagnosis_match.group(1).strip()
+            title = diagnosis_match.group(1).strip()
+            # Remove any trailing bold markers
+            title = re.sub(r'^\*+\s*', '', title)
+            return title
 
         # Fall back to first H1
         h1_match = re.search(r'^#\s+(.+)$', self.content, re.MULTILINE)
@@ -137,74 +164,75 @@ class MarkdownParser:
             return [c.strip() for c in re.split(r'[,;]', codes)]
         return []
 
-    def _extract_notes(self) -> str:
-        """Extract clinical notes/scope."""
+    def _extract_notes(self) -> list:
+        """Extract clinical notes as a list.
+
+        Looks for a dedicated Clinical Notes section or returns empty list.
+        Note: SCOPE is stored separately via _extract_scope().
+        """
+        notes = []
+
+        # Look for Clinical Notes or Clinical Pearls section
+        notes_match = re.search(
+            r'(?:Clinical Notes|Clinical Pearls|KEY POINTS):\s*\n((?:[-•*]\s*.+\n?)+)',
+            self.content, re.IGNORECASE
+        )
+        if notes_match:
+            notes_text = notes_match.group(1)
+            for line in notes_text.split('\n'):
+                line = line.strip()
+                if line and line[0] in '-•*':
+                    notes.append(line.lstrip('-•* ').strip())
+
+        return notes
+
+    def _extract_scope(self) -> str:
+        """Extract scope/description of the plan."""
         scope_match = re.search(r'SCOPE:\s*(.+)', self.content)
         if scope_match:
             return scope_match.group(1).strip()
         return ''
 
-    def _parse_all_sections(self) -> list:
-        """Parse all sections from the markdown."""
-        sections = []
+    def _parse_all_sections(self) -> dict:
+        """Parse all sections from the markdown.
+
+        Returns a dict with section names as keys and subsection dicts as values.
+        This format is required by the clinical tool JavaScript.
+        """
+        sections = {}
 
         # Laboratory Workup
         lab_sections = self._parse_lab_sections()
         if lab_sections:
-            sections.append({
-                'title': 'Laboratory Workup',
-                'subsections': lab_sections
-            })
+            sections['Laboratory Workup'] = self._subsections_to_dict(lab_sections)
 
         # Imaging & Studies
         imaging_sections = self._parse_imaging_sections()
         if imaging_sections:
-            sections.append({
-                'title': 'Diagnostic Imaging & Studies',
-                'subsections': imaging_sections
-            })
+            sections['Imaging & Studies'] = self._subsections_to_dict(imaging_sections)
+
+        # Note: Lumbar Puncture is now a subsection under Laboratory Workup (not its own section)
 
         # Treatment
         treatment_sections = self._parse_treatment_sections()
         if treatment_sections:
-            sections.append({
-                'title': 'Treatment',
-                'subsections': treatment_sections
-            })
+            sections['Treatment'] = self._subsections_to_dict(treatment_sections)
 
         # Other Recommendations
         other_sections = self._parse_other_sections()
         if other_sections:
-            sections.append({
-                'title': 'Other Recommendations',
-                'subsections': other_sections
-            })
-
-        # Monitoring Parameters
-        monitoring_items = self._parse_monitoring_section()
-        if monitoring_items:
-            sections.append({
-                'title': 'Monitoring Parameters',
-                'items': monitoring_items
-            })
-
-        # Disposition Criteria
-        disposition_items = self._parse_disposition_section()
-        if disposition_items:
-            sections.append({
-                'title': 'Disposition Criteria',
-                'items': disposition_items
-            })
-
-        # Evidence & References
-        evidence_items = self._parse_evidence_section()
-        if evidence_items:
-            sections.append({
-                'title': 'Evidence & References',
-                'items': evidence_items
-            })
+            sections['Other Recommendations'] = self._subsections_to_dict(other_sections)
 
         return sections
+
+    def _subsections_to_dict(self, subsections_list: list) -> dict:
+        """Convert list of subsections to dict format for clinical tool."""
+        result = {}
+        for subsection in subsections_list:
+            title = subsection.get('title', 'Unknown')
+            items = subsection.get('items', [])
+            result[title] = items
+        return result
 
     def _parse_lab_sections(self) -> list:
         """Parse laboratory workup sections."""
@@ -224,6 +252,13 @@ class MarkdownParser:
         rare_items = self._parse_table_section('labs_rare', 'imaging_essential')
         if rare_items:
             subsections.append({'title': 'Rare/Specialized', 'items': rare_items})
+
+        # Lumbar Puncture / CSF Studies (logically part of lab workup)
+        # Note: LP appears under Labs in the clinical tool, even though it may be
+        # positioned after Imaging in the markdown file for historical reasons
+        lp_items = self._parse_table_section('lumbar_puncture', 'treatment_3a')
+        if lp_items:
+            subsections.append({'title': 'Lumbar Puncture', 'items': lp_items})
 
         return subsections
 
@@ -246,53 +281,49 @@ class MarkdownParser:
         if rare_items:
             subsections.append({'title': 'Rare/Specialized', 'items': rare_items})
 
-        # Lumbar Puncture
-        lp_items = self._parse_table_section('lumbar_puncture', 'treatment_acute')
-        if lp_items:
-            subsections.append({'title': 'Lumbar Puncture', 'items': lp_items})
+        # Note: Lumbar Puncture is now a subsection under Laboratory Workup
 
         return subsections
 
     def _parse_treatment_sections(self) -> list:
-        """Parse treatment sections."""
+        """Parse treatment sections dynamically."""
         subsections = []
 
-        # Acute/Emergent
-        acute_items = self._parse_table_section('treatment_acute', 'treatment_symptomatic')
-        if acute_items:
-            subsections.append({'title': 'Acute/Emergent', 'items': acute_items})
+        # Define the treatment section sequence with their boundaries
+        treatment_keys = [
+            ('treatment_3a', 'treatment_3b'),
+            ('treatment_3b', 'treatment_3c'),
+            ('treatment_3c', 'treatment_3d'),
+            ('treatment_3d', 'treatment_3e'),
+            ('treatment_3e', 'treatment_3f'),
+            ('treatment_3f', 'treatment_3g'),
+            ('treatment_3g', 'referrals'),
+        ]
 
-        # Symptomatic
-        symptomatic_items = self._parse_table_section('treatment_symptomatic', 'treatment_secondline')
-        if symptomatic_items:
-            subsections.append({'title': 'Symptomatic Treatments', 'items': symptomatic_items})
+        for start_key, end_key in treatment_keys:
+            start_idx = self._find_section_start(start_key)
+            if start_idx is None:
+                continue
 
-        # Second-line/Refractory
-        secondline_items = self._parse_table_section('treatment_secondline', 'treatment_dmt')
-        if secondline_items:
-            subsections.append({'title': 'Second-line/Refractory', 'items': secondline_items})
+            # Extract the title from the actual markdown line
+            title = self._extract_section_title(start_idx)
 
-        # Disease-Modifying
-        dmt_items = self._parse_table_section('treatment_dmt', 'treatment_super_refractory')
-        if dmt_items:
-            subsections.append({'title': 'Disease-Modifying', 'items': dmt_items})
-
-        # Super-Refractory
-        super_items = self._parse_table_section('treatment_super_refractory', 'treatment_immunotherapy')
-        if super_items:
-            subsections.append({'title': 'Super-Refractory', 'items': super_items})
-
-        # Immunotherapy
-        immuno_items = self._parse_table_section('treatment_immunotherapy', 'treatment_supportive')
-        if immuno_items:
-            subsections.append({'title': 'Immunotherapy', 'items': immuno_items})
-
-        # Supportive/ICU Care
-        supportive_items = self._parse_table_section('treatment_supportive', 'referrals')
-        if supportive_items:
-            subsections.append({'title': 'Supportive/ICU Care', 'items': supportive_items})
+            items = self._parse_table_section(start_key, end_key)
+            if items:
+                subsections.append({'title': title, 'items': items})
 
         return subsections
+
+    def _extract_section_title(self, line_idx: int) -> str:
+        """Extract the section title from a markdown heading line."""
+        line = self.lines[line_idx].strip()
+        # Remove markdown heading markers and section numbers
+        # Match patterns like "### 3A. Title" or "### 3B. Title"
+        match = re.search(r'###?\s*\d[A-Z][.\s]+(.+)', line, re.IGNORECASE)
+        if match:
+            return match.group(1).strip()
+        # Fallback: remove leading # and return
+        return re.sub(r'^#+\s*', '', line).strip()
 
     def _parse_other_sections(self) -> list:
         """Parse other recommendations sections."""
@@ -314,6 +345,37 @@ class MarkdownParser:
             subsections.append({'title': 'Lifestyle & Prevention', 'items': lifestyle_items})
 
         return subsections
+
+    def _parse_differential_section(self) -> list:
+        """Parse differential diagnosis section."""
+        items = []
+        start_idx = self._find_section_start('differential')
+        end_idx = self._find_section_start('monitoring')
+
+        if start_idx is None:
+            return items
+
+        if end_idx is None:
+            end_idx = len(self.lines)
+
+        # Look for table rows
+        in_table = False
+        for i in range(start_idx, end_idx):
+            line = self.lines[i].strip()
+
+            if line.startswith('|') and '---' not in line:
+                cells = [c.strip() for c in line.split('|')[1:-1]]
+                if len(cells) >= 2 and cells[0] and not cells[0].lower().startswith('alternative'):
+                    items.append({
+                        'diagnosis': cells[0],
+                        'features': cells[1] if len(cells) > 1 else '',
+                        'tests': cells[2] if len(cells) > 2 else ''
+                    })
+                in_table = True
+            elif in_table and not line.startswith('|'):
+                break
+
+        return items
 
     def _parse_monitoring_section(self) -> list:
         """Parse monitoring parameters section."""
@@ -487,6 +549,17 @@ class MarkdownParser:
             if field:
                 item[field] = value
 
+        # Parse structured dosing if present
+        if 'dosing' in item and item.get('item'):
+            dosing_data = self._parse_structured_dosing(
+                item['dosing'],
+                item['item'],
+                item.get('route')
+            )
+            if dosing_data:
+                # Replace simple dosing string with structured object
+                item['dosing'] = dosing_data
+
         return item if item else None
 
     def _map_header_to_field(self, header: str) -> str | None:
@@ -515,13 +588,77 @@ class MarkdownParser:
             'monitoring': 'monitoring',
             'dosing': 'dosing',
             'dose': 'dosing',
+            'route': 'route',
             'frequency': 'frequency',
             'action if abnormal': 'action',
             'threshold': 'threshold',
             'priority': 'priority',
+            'pre-treatment requirements': 'pretreatment',
+            'pre-treatment': 'pretreatment',
         }
 
         return mappings.get(header, None)
+
+    def _parse_structured_dosing(self, dosing_text: str, item_name: str, route: str = None) -> dict:
+        """Parse structured dosing format into separate fields.
+
+        Single dose format: "dose freq :: route :: :: full_instructions"
+        Multi-dose format: "dose1 freq1; dose2 freq2 :: route :: :: full_instructions"
+
+        Returns dict with:
+        - doseOptions: array of {dose, frequency, orderSentence} for each option
+        - route: "PO"
+        - instructions: "Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day"
+        - orderSentence: first/default order sentence for backwards compatibility
+        """
+        if not dosing_text:
+            return None
+
+        # Check if it's the new structured format (contains :: delimiters)
+        # Using :: instead of | because | conflicts with markdown table syntax
+        parts = [p.strip() for p in dosing_text.split('::')]
+
+        if len(parts) >= 3:
+            # New structured format
+            dose_field = parts[0]
+            med_route = parts[1]
+            # parts[2] is empty/reserved
+            instructions = parts[3] if len(parts) > 3 else dosing_text
+
+            # Parse dose options (may be single or multiple separated by semicolons)
+            dose_options = []
+            dose_items = [d.strip() for d in dose_field.split(';')]
+
+            for dose_item in dose_items:
+                if not dose_item:
+                    continue
+                # Generate order sentence for this option
+                order_sentence = f"{item_name} {dose_item} {med_route}".strip()
+                # Clean up any double spaces
+                order_sentence = ' '.join(order_sentence.split())
+                dose_options.append({
+                    'text': dose_item,
+                    'orderSentence': order_sentence
+                })
+
+            if dose_options:
+                return {
+                    'doseOptions': dose_options,
+                    'route': med_route,
+                    'instructions': instructions,
+                    'orderSentence': dose_options[0]['orderSentence']  # Default to first option
+                }
+
+        # Legacy format (unstructured text) - keep as-is for backwards compatibility
+        # Try to generate a basic order sentence if route is available
+        order_sentence = None
+        if route:
+            order_sentence = f"{item_name} - {route} - see dosing"
+
+        return {
+            'instructions': dosing_text,
+            'orderSentence': order_sentence
+        }
 
 
 class ParityChecker:
@@ -572,32 +709,35 @@ class ParityChecker:
         skip_next_table = False   # For skipping timeline tables
 
         # Patterns for sections we want to count (Sections 1-8)
+        # Each pattern extracts the section title dynamically from the heading
         section_patterns = [
+            # Main sections (## headers)
             (r'##?\s*1[.\s]+LABORATORY', 'Laboratory Workup'),
-            (r'###?\s*1A', 'Core Labs'),
-            (r'###?\s*1B', 'Extended Workup'),
-            (r'###?\s*1C', 'Rare/Specialized Labs'),
             (r'##?\s*2[.\s]+DIAGNOSTIC', 'Diagnostic Imaging'),
-            (r'###?\s*2A', 'Essential Imaging'),
-            (r'###?\s*2B', 'Extended Imaging'),
-            (r'###?\s*2C', 'Rare/Specialized Imaging'),
-            (r'###?\s*LUMBAR', 'Lumbar Puncture'),
             (r'##?\s*3[.\s]+TREATMENT', 'Treatment'),
-            (r'###?\s*3A', 'Stabilization/Acute'),
-            (r'###?\s*3B', 'First-Line/Emergent'),
-            (r'###?\s*3C', 'Second-Line ASM'),
-            (r'###?\s*3D', 'Refractory SE'),
-            (r'###?\s*3E', 'Super-Refractory'),
-            (r'###?\s*3F', 'NORSE/Immunotherapy'),
-            (r'###?\s*3G', 'Supportive Care'),
             (r'##?\s*4[.\s]+OTHER', 'Other Recommendations'),
-            (r'###?\s*4A', 'Referrals'),
-            (r'###?\s*4B', 'Patient Instructions'),
-            (r'###?\s*4C', 'Lifestyle'),
             (r'##?\s*5[.\s]+DIFFERENTIAL', 'Differential Diagnosis'),
             (r'##?\s*6[.\s]+MONITORING', 'Monitoring Parameters'),
             (r'##?\s*7[.\s]+DISPOSITION', 'Disposition Criteria'),
             (r'##?\s*8[.\s]+EVIDENCE', 'Evidence & References'),
+            # Subsections (### headers) - extract title dynamically
+            (r'###\s*1A[.\s]+(.+)', None),  # Will use captured group
+            (r'###\s*1B[.\s]+(.+)', None),
+            (r'###\s*1C[.\s]+(.+)', None),
+            (r'###\s*2A[.\s]+(.+)', None),
+            (r'###\s*2B[.\s]+(.+)', None),
+            (r'###\s*2C[.\s]+(.+)', None),
+            (r'###\s*LUMBAR\s*PUNCTURE', 'Lumbar Puncture'),
+            (r'###\s*3A[.\s]+(.+)', None),
+            (r'###\s*3B[.\s]+(.+)', None),
+            (r'###\s*3C[.\s]+(.+)', None),
+            (r'###\s*3D[.\s]+(.+)', None),
+            (r'###\s*3E[.\s]+(.+)', None),
+            (r'###\s*3F[.\s]+(.+)', None),
+            (r'###\s*3G[.\s]+(.+)', None),
+            (r'###\s*4A[.\s]+(.+)', None),
+            (r'###\s*4B[.\s]+(.+)', None),
+            (r'###\s*4C[.\s]+(.+)', None),
         ]
 
         # Patterns that indicate we should STOP counting (end of main content)
@@ -639,11 +779,23 @@ class ParityChecker:
             # Check for section headers
             matched_section = False
             for pattern, section_name in section_patterns:
-                if re.search(pattern, line, re.IGNORECASE):
+                match = re.search(pattern, line, re.IGNORECASE)
+                if match:
                     # Save previous subsection count
                     if current_subsection and item_count > 0:
                         counts[current_subsection] = counts.get(current_subsection, 0) + item_count
-                    current_subsection = section_name
+
+                    # If section_name is None, extract from captured group or full match
+                    if section_name is None:
+                        if match.groups():
+                            # Use the captured group (title after the section number)
+                            current_subsection = match.group(1).strip()
+                        else:
+                            # Fall back to the full match
+                            current_subsection = match.group(0).strip()
+                    else:
+                        current_subsection = section_name
+
                     item_count = 0
                     in_table = False
                     in_valid_section = True
@@ -658,6 +810,11 @@ class ParityChecker:
             # These indicate a new table is coming - reset skip flag if it's a treatment table
             if re.match(r'####\s+(?:First-Line|Second-Line)\s+Immunotherapy', line, re.IGNORECASE):
                 skip_next_table = False  # These ARE treatment tables, don't skip
+
+            # Skip reference tables (like "**ASM Therapeutic Level Reference:**")
+            if re.match(r'\*\*.*Reference.*:\*\*', line, re.IGNORECASE):
+                skip_next_table = True
+                continue
 
             # Count table rows (items) only if we're in a valid section
             if in_valid_section and current_subsection and line.strip().startswith('|'):
@@ -700,30 +857,73 @@ class ParityChecker:
         with open(self.plans_json_path, 'r', encoding='utf-8') as f:
             plans_data = json.load(f)
 
-        # Find the plan by matching filename
-        plan_name = self.markdown_path.stem.replace('-', ' ').title()
+        # First, try to get the actual title from the markdown file
+        # This is the most reliable way to match
+        md_title = None
+        md_content = self.markdown_path.read_text(encoding='utf-8')
 
-        # Try different name formats
+        # Try frontmatter title first - handle quoted titles with apostrophes
+        import re
+        frontmatter_match = re.search(r'^---\s*\n.*?title:\s*"([^"\n]+)"',
+                                       md_content, re.DOTALL)
+        if frontmatter_match:
+            md_title = frontmatter_match.group(1).strip()
+
+        # Try single-quoted frontmatter title
+        if not md_title:
+            frontmatter_match = re.search(r"^---\s*\n.*?title:\s*'([^'\n]+)'",
+                                           md_content, re.DOTALL)
+            if frontmatter_match:
+                md_title = frontmatter_match.group(1).strip()
+
+        # Fall back to DIAGNOSIS line (strip bold markdown markers)
+        if not md_title:
+            diagnosis_match = re.search(r'DIAGNOSIS:\s*\*?\*?\s*(.+)', md_content)
+            if diagnosis_match:
+                md_title = diagnosis_match.group(1).strip()
+                # Remove any trailing bold markers
+                md_title = re.sub(r'^\*+\s*', '', md_title)
+
+        # Find the plan by matching title from markdown
         plan_data = None
-        for key in plans_data:
-            if key.lower().replace(' ', '-') == self.markdown_path.stem.lower():
-                plan_data = plans_data[key]
-                break
-            if key.lower() == plan_name.lower():
-                plan_data = plans_data[key]
-                break
+        if md_title and md_title in plans_data:
+            plan_data = plans_data[md_title]
 
+        # Try different name formats as fallback
         if not plan_data:
-            # Try Status Epilepticus specifically
-            if 'Status Epilepticus' in plans_data:
-                plan_data = plans_data['Status Epilepticus']
+            plan_name = self.markdown_path.stem.replace('-', ' ').title()
+            for key in plans_data:
+                if key.lower().replace(' ', '-') == self.markdown_path.stem.lower():
+                    plan_data = plans_data[key]
+                    break
+                if key.lower() == plan_name.lower():
+                    plan_data = plans_data[key]
+                    break
 
         if not plan_data:
             return counts
 
         # Count items in sections (accumulate for duplicate subsection names)
         sections = plan_data.get('sections', {})
-        if isinstance(sections, dict):
+
+        # Handle list-based sections structure (new format)
+        if isinstance(sections, list):
+            for section in sections:
+                section_title = section.get('title', '')
+
+                # Count items directly in section
+                if 'items' in section and isinstance(section['items'], list):
+                    counts[section_title] = counts.get(section_title, 0) + len(section['items'])
+
+                # Count items in subsections
+                if 'subsections' in section and isinstance(section['subsections'], list):
+                    for subsection in section['subsections']:
+                        subsection_title = subsection.get('title', '')
+                        if 'items' in subsection and isinstance(subsection['items'], list):
+                            counts[subsection_title] = counts.get(subsection_title, 0) + len(subsection['items'])
+
+        # Handle dict-based sections structure (legacy format)
+        elif isinstance(sections, dict):
             for section_name, section_data in sections.items():
                 if isinstance(section_data, dict):
                     for subsection_name, items in section_data.items():
@@ -734,7 +934,7 @@ class ParityChecker:
                     counts[section_name] = counts.get(section_name, 0) + len(section_data)
 
         # Also check top-level arrays
-        for key in ['differential', 'evidence', 'notes', 'definitions']:
+        for key in ['differential', 'evidence', 'notes', 'definitions', 'monitoring', 'disposition']:
             if key in plan_data and isinstance(plan_data[key], list):
                 counts[key.title()] = len(plan_data[key])
 
@@ -744,6 +944,7 @@ class ParityChecker:
         """Normalize section names for comparison."""
         # Common variations to standardize
         normalizations = {
+            # Status Epilepticus specific
             'stabilization/acute': 'stabilization',
             'first-line/emergent': 'first-line benzodiazepines',
             'first-line (benzodiazepines)': 'first-line benzodiazepines',
@@ -751,27 +952,57 @@ class ParityChecker:
             'refractory se': 'refractory se (anesthetics)',
             'super-refractory': 'super-refractory se',
             'norse/immunotherapy': 'norse immunotherapy',
-            'norse/fires first-line immunotherapy': 'norse immunotherapy',  # Combine NORSE sections
-            'norse/fires second-line immunotherapy': 'norse immunotherapy',  # Combine NORSE sections
+            'norse/fires first-line immunotherapy': 'norse immunotherapy',
+            'norse/fires second-line immunotherapy': 'norse immunotherapy',
             'norse first-line immunotherapy': 'norse immunotherapy',
             'norse second-line immunotherapy': 'norse immunotherapy',
             'supportive care': 'symptomatic/supportive icu care',
-            'essential imaging': 'essential',
-            'extended imaging': 'extended',
-            'rare/specialized imaging': 'rare/specialized',
-            'rare/specialized labs': 'rare/specialized',  # Combine rare labs
+
+            # General section name mappings
+            'essential/core labs': 'core labs',
+            'essential/core labs (reversible causes screen)': 'core labs',
+            'core labs': 'core labs',
+            'extended workup': 'extended workup',
+            'extended workup (second-line)': 'extended workup',
+            'rare/specialized': 'rare/specialized',
+            'rare/specialized (refractory or atypical)': 'rare/specialized',
+            'essential imaging': 'essential imaging',
+            'essential/first-line': 'essential imaging',
+            'extended imaging': 'extended imaging',
+            'extended': 'extended imaging',
+            'rare/specialized imaging': 'rare/specialized imaging',
+            'rare/specialized labs': 'rare/specialized',
             'specialized': 'rare/specialized',
+            'lumbar puncture': 'lumbar puncture',
+
+            # Treatment sections
+            'acute/emergent': 'acute/emergent',
+            'symptomatic treatments': 'symptomatic treatments',
+            'second-line/refractory': 'second-line/refractory',
+
+            # Other recommendations
+            'referrals & consults': 'referrals',
+            'referrals': 'referrals',
+            'consults': 'referrals',
+            'patient instructions': 'patient instructions',
+            'education': 'patient instructions',
+            'lifestyle & prevention': 'lifestyle',
+            'lifestyle': 'lifestyle',
+            'prevention': 'lifestyle',
+
+            # Reference sections
             'differential diagnosis': 'differential',
+            'differential': 'differential',
             'evidence & references': 'evidence',
+            'evidence': 'evidence',
             'monitoring parameters': 'monitoring',
-            'disposition criteria': 'criteria',
-            'continuous monitoring': 'monitoring',  # Combine monitoring
-            'intermittent monitoring': 'monitoring',  # Combine monitoring
+            'monitoring': 'monitoring',
+            'continuous monitoring': 'monitoring',
+            'intermittent monitoring': 'monitoring',
             'monitoring continuous': 'monitoring',
             'monitoring intermittent': 'monitoring',
-            'patient instructions': 'education',
-            'lifestyle': 'prevention',
-            'referrals': 'consults',
+            'disposition criteria': 'disposition',
+            'criteria': 'disposition',
         }
         lower = name.lower().strip()
         return normalizations.get(lower, lower)
@@ -895,6 +1126,7 @@ class JSONValidator:
     def validate(self) -> ValidationResult:
         """Run all validation checks."""
         self._validate_required_fields()
+        self._validate_clinical_tool_structure()
         self._validate_sections()
         self._validate_items()
         self._validate_medications()
@@ -911,11 +1143,53 @@ class JSONValidator:
                 self.result.errors.append(f"Missing required field: {field}")
                 self.result.passed = False
 
+    def _validate_clinical_tool_structure(self):
+        """Validate JSON structure is compatible with clinical tool.
+
+        The clinical tool JavaScript expects:
+        - sections: dict/object (NOT list)
+        - notes: list/array (NOT string)
+        - differential, evidence: lists at top level
+        """
+        # Check sections is a dict
+        sections = self.data.get('sections')
+        if sections is not None and not isinstance(sections, dict):
+            self.result.errors.append(
+                f"CRITICAL: 'sections' must be a dict/object, got {type(sections).__name__}. "
+                "Clinical tool will fail to load this plan!"
+            )
+            self.result.passed = False
+
+        # Check notes is a list (or missing)
+        notes = self.data.get('notes')
+        if notes is not None and not isinstance(notes, list):
+            self.result.errors.append(
+                f"CRITICAL: 'notes' must be a list/array, got {type(notes).__name__}. "
+                "Clinical tool will crash when loading this plan!"
+            )
+            self.result.passed = False
+
+        # Check top-level arrays are actually arrays
+        for field in ['differential', 'evidence', 'monitoring', 'disposition']:
+            value = self.data.get(field)
+            if value is not None and not isinstance(value, list):
+                self.result.errors.append(
+                    f"'{field}' must be a list/array, got {type(value).__name__}"
+                )
+                self.result.passed = False
+
     def _validate_sections(self):
         """Check that required sections exist."""
-        section_titles = []
-        for section in self.data.get('sections', []):
-            section_titles.append(section.get('title', ''))
+        sections = self.data.get('sections', {})
+
+        # Handle dict-based format (new format for clinical tool)
+        if isinstance(sections, dict):
+            section_titles = list(sections.keys())
+        # Handle list-based format (legacy)
+        elif isinstance(sections, list):
+            section_titles = [s.get('title', '') for s in sections]
+        else:
+            section_titles = []
 
         for required in self.REQUIRED_SECTIONS:
             if required not in section_titles:
@@ -925,21 +1199,35 @@ class JSONValidator:
         """Validate individual items have required fields."""
         total_items = 0
         items_with_priorities = 0
+        sections = self.data.get('sections', {})
 
-        for section in self.data.get('sections', []):
-            items = section.get('items', [])
-            subsections = section.get('subsections', [])
+        # Handle dict-based format (new format for clinical tool)
+        if isinstance(sections, dict):
+            for section_name, subsections in sections.items():
+                if isinstance(subsections, dict):
+                    for subsection_name, items in subsections.items():
+                        if isinstance(items, list):
+                            for item in items:
+                                total_items += 1
+                                if self._has_priority_fields(item):
+                                    items_with_priorities += 1
 
-            for item in items:
-                total_items += 1
-                if self._has_priority_fields(item):
-                    items_with_priorities += 1
+        # Handle list-based format (legacy)
+        elif isinstance(sections, list):
+            for section in sections:
+                items = section.get('items', [])
+                subsections = section.get('subsections', [])
 
-            for subsection in subsections:
-                for item in subsection.get('items', []):
+                for item in items:
                     total_items += 1
                     if self._has_priority_fields(item):
                         items_with_priorities += 1
+
+                for subsection in subsections:
+                    for item in subsection.get('items', []):
+                        total_items += 1
+                        if self._has_priority_fields(item):
+                            items_with_priorities += 1
 
         self.result.stats['total_items'] = total_items
         self.result.stats['items_with_priorities'] = items_with_priorities
@@ -957,38 +1245,88 @@ class JSONValidator:
         """Check that medications have required safety fields."""
         meds_total = 0
         meds_with_dosing = 0
+        meds_with_structured_dosing = 0
+        meds_with_order_sentence = 0
         meds_with_contraindications = 0
+        meds_with_route = 0
         meds_missing_dosing = []
         meds_missing_contraindications = []
+        meds_missing_route = []
 
-        for section in self.data.get('sections', []):
-            if section.get('title') != 'Treatment':
-                continue
+        sections = self.data.get('sections', {})
 
-            for subsection in section.get('subsections', []):
-                if subsection.get('title') in self.MEDICATION_SECTIONS:
-                    for item in subsection.get('items', []):
-                        meds_total += 1
-                        item_name = item.get('item', 'Unknown')
+        # Handle dict-based format (new format for clinical tool)
+        if isinstance(sections, dict):
+            treatment_subsections = sections.get('Treatment', {})
+            if isinstance(treatment_subsections, dict):
+                for subsection_name, items in treatment_subsections.items():
+                    if subsection_name in self.MEDICATION_SECTIONS and isinstance(items, list):
+                        for item in items:
+                            meds_total += 1
+                            item_name = item.get('item', item.get('treatment', 'Unknown'))
 
-                        if item.get('dosing'):
-                            meds_with_dosing += 1
-                        else:
-                            meds_missing_dosing.append(item_name)
+                            # Check for dosing
+                            dosing = item.get('dosing')
+                            if dosing:
+                                meds_with_dosing += 1
+                                # Check if structured dosing format
+                                if isinstance(dosing, dict):
+                                    meds_with_structured_dosing += 1
+                                    if dosing.get('orderSentence'):
+                                        meds_with_order_sentence += 1
+                            else:
+                                meds_missing_dosing.append(item_name)
 
-                        if item.get('contraindications'):
-                            meds_with_contraindications += 1
-                        else:
-                            meds_missing_contraindications.append(item_name)
+                            # Check for route
+                            if item.get('route'):
+                                meds_with_route += 1
+                            else:
+                                meds_missing_route.append(item_name)
+
+                            if item.get('contraindications'):
+                                meds_with_contraindications += 1
+                            else:
+                                meds_missing_contraindications.append(item_name)
+
+        # Handle list-based format (legacy)
+        elif isinstance(sections, list):
+            for section in sections:
+                if section.get('title') != 'Treatment':
+                    continue
+
+                for subsection in section.get('subsections', []):
+                    if subsection.get('title') in self.MEDICATION_SECTIONS:
+                        for item in subsection.get('items', []):
+                            meds_total += 1
+                            item_name = item.get('item', 'Unknown')
+
+                            if item.get('dosing'):
+                                meds_with_dosing += 1
+                            else:
+                                meds_missing_dosing.append(item_name)
+
+                            if item.get('contraindications'):
+                                meds_with_contraindications += 1
+                            else:
+                                meds_missing_contraindications.append(item_name)
 
         self.result.stats['medications_total'] = meds_total
         self.result.stats['medications_with_dosing'] = meds_with_dosing
+        self.result.stats['medications_with_structured_dosing'] = meds_with_structured_dosing
+        self.result.stats['medications_with_order_sentence'] = meds_with_order_sentence
+        self.result.stats['medications_with_route'] = meds_with_route
         self.result.stats['medications_with_contraindications'] = meds_with_contraindications
 
         if meds_missing_dosing:
             self.result.warnings.append(
                 f"Medications missing dosing ({len(meds_missing_dosing)}): {', '.join(meds_missing_dosing[:5])}"
                 + ('...' if len(meds_missing_dosing) > 5 else '')
+            )
+
+        if meds_missing_route:
+            self.result.warnings.append(
+                f"Medications missing route ({len(meds_missing_route)}): {', '.join(meds_missing_route[:5])}"
+                + ('...' if len(meds_missing_route) > 5 else '')
             )
 
         if meds_missing_contraindications:
@@ -999,12 +1337,23 @@ class JSONValidator:
 
     def _calculate_stats(self):
         """Calculate summary statistics."""
-        self.result.stats['sections_count'] = len(self.data.get('sections', []))
+        sections = self.data.get('sections', {})
 
-        # Count subsections
-        subsection_count = 0
-        for section in self.data.get('sections', []):
-            subsection_count += len(section.get('subsections', []))
+        # Handle dict-based format
+        if isinstance(sections, dict):
+            self.result.stats['sections_count'] = len(sections)
+            subsection_count = sum(
+                len(subsections) if isinstance(subsections, dict) else 0
+                for subsections in sections.values()
+            )
+        # Handle list-based format
+        elif isinstance(sections, list):
+            self.result.stats['sections_count'] = len(sections)
+            subsection_count = sum(len(section.get('subsections', [])) for section in sections)
+        else:
+            self.result.stats['sections_count'] = 0
+            subsection_count = 0
+
         self.result.stats['subsections_count'] = subsection_count
 
 
@@ -1045,7 +1394,10 @@ def print_validation_report(validation: ValidationResult, plan_title: str):
     if stats.get('medications_total', 0) > 0:
         print(f"\nMedications:")
         print(f"  Total: {stats.get('medications_total', 0)}")
+        print(f"  With route: {stats.get('medications_with_route', 0)}/{stats.get('medications_total', 0)}")
         print(f"  With dosing: {stats.get('medications_with_dosing', 0)}/{stats.get('medications_total', 0)}")
+        print(f"  With structured dosing: {stats.get('medications_with_structured_dosing', 0)}/{stats.get('medications_total', 0)}")
+        print(f"  With order sentence: {stats.get('medications_with_order_sentence', 0)}/{stats.get('medications_total', 0)}")
         print(f"  With contraindications: {stats.get('medications_with_contraindications', 0)}/{stats.get('medications_total', 0)}")
 
     # Errors
