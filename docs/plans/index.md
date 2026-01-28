@@ -1,36 +1,99 @@
 ---
-title: Approved Plans
+title: Clinical Plans
 ---
 
-# Approved Clinical Plans
+# Clinical Decision Support Plans
 
-These clinical decision support templates have been reviewed and approved for clinical use.
+Evidence-based clinical decision support templates for neurological diagnoses. All templates validated and approved for clinical use.
 
 [Request a New Plan :material-plus-circle:](https://github.com/blondarb/neuro-plans/issues/new?template=plan_request.yml){ .md-button .md-button--primary }
 
 ---
 
-## Seizure & Epilepsy
+## Seizures & Epilepsy
 
-| Plan | Setting Coverage | Status |
+| Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
-| [Status Epilepticus](status-epilepticus.md) | ED, HOSP, ICU | :material-check-circle:{ .approved } Approved |
+| [Status Epilepticus](status-epilepticus.md) | ED, HOSP, ICU | G41.0, G41.9 |
+| [New Onset Seizure](new-onset-seizure.md) | ED, HOSP, OPD | R56.9, G40.909 |
+| [Breakthrough Seizure](breakthrough-seizure.md) | ED, HOSP, OPD | G40.909, G40.919 |
 
 ---
 
-## Coming Soon
+## Stroke & Vascular
 
-See [Drafts for Review](../drafts/index.md) for plans pending approval.
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Acute Ischemic Stroke](acute-ischemic-stroke.md) | ED, HOSP, ICU | I63.9 |
+| [Transient Ischemic Attack](transient-ischemic-attack.md) | ED, HOSP, OPD | G45.9 |
+| [Intracerebral Hemorrhage](intracerebral-hemorrhage.md) | ED, HOSP, ICU | I61.9 |
+| [Subarachnoid Hemorrhage](subarachnoid-hemorrhage.md) | ED, HOSP, ICU | I60.9 |
 
-High-priority plans in development:
+---
 
-- Acute Ischemic Stroke
-- Guillain-Barré Syndrome
-- Myasthenia Gravis - Exacerbation
-- Bacterial Meningitis
-- HSV Encephalitis
+## Neuromuscular
 
-See the [full roadmap](../references/tracker.md) for all planned templates.
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Guillain-Barré Syndrome](guillain-barre-syndrome.md) | ED, HOSP, ICU | G61.0 |
+| [Myasthenic Crisis](myasthenia-gravis-crisis.md) | ED, HOSP, ICU | G70.01 |
+| [MG - New Diagnosis](myasthenia-gravis-new-diagnosis.md) | HOSP, OPD | G70.0 |
+| [Neuromuscular Respiratory Failure](neuromuscular-respiratory-failure.md) | ED, HOSP, ICU | G70.01, G61.0, J96.00 |
+| [Peripheral Neuropathy](peripheral-neuropathy.md) | HOSP, OPD | G62.9 |
+
+---
+
+## CNS Infections
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Bacterial Meningitis](bacterial-meningitis.md) | ED, HOSP, ICU | G00.9 |
+| [HSV Encephalitis](hsv-encephalitis.md) | ED, HOSP, ICU | B00.4 |
+| [Autoimmune Encephalitis](autoimmune-encephalitis.md) | HOSP, ICU | G04.81 |
+
+---
+
+## Spinal Emergencies
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Acute Myelopathy](acute-myelopathy.md) | ED, HOSP, ICU | G95.9, G37.3 |
+| [Spinal Cord Compression (Malignant)](spinal-cord-compression-malignant.md) | ED, HOSP, ICU | G95.20 |
+| [Cauda Equina Syndrome](cauda-equina-syndrome.md) | ED, HOSP | G83.4 |
+| [Epidural Abscess](epidural-abscess.md) | ED, HOSP, ICU | G06.1 |
+
+---
+
+## Neuro-Oncology
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Brain Metastases](brain-metastases.md) | ED, HOSP, OPD, ICU | C79.31 |
+
+---
+
+## Critical Care
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Elevated ICP Management](elevated-icp-management.md) | HOSP, ICU | G93.2, G93.5 |
+
+---
+
+## Demyelinating
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [MS New Diagnosis](ms-new-diagnosis.md) | HOSP, OPD | G35 |
+
+---
+
+## Other
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Rapidly Progressive Dementia](rapidly-progressive-dementia.md) | HOSP, OPD | F03.90, A81.00 |
+| [Vertigo / Dizziness](vertigo-dizziness-evaluation.md) | ED, HOSP, OPD | R42, H81.10 |
 
 ---
 
@@ -54,13 +117,13 @@ Each plan follows a standardized 8-section format:
 
 ### Priority Key
 
-| Priority | Meaning | Color |
-|----------|---------|-------|
-| STAT | Immediate | :material-circle:{ .stat } Red |
-| URGENT | Within hours | :material-circle:{ .urgent } Orange |
-| ROUTINE | Standard timing | :material-circle:{ .routine } Blue |
-| EXT | Extended/atypical cases | :material-circle:{ .ext } Purple |
-| - | Not applicable | Gray |
+| Priority | Meaning |
+|----------|---------|
+| STAT | Immediate |
+| URGENT | Within hours |
+| ROUTINE | Standard timing |
+| EXT | Extended/atypical cases |
+| - | Not applicable |
 
 ### Setting Columns
 
