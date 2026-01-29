@@ -88,11 +88,44 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 
 ---
 
+## Headache
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Migraine](migraine.md) | ED, HOSP, OPD | G43.909, G43.919, G43.901 |
+
+---
+
+## Movement Disorders
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Parkinson's Disease - New Diagnosis](parkinsons-disease-new-diagnosis.md) | HOSP, OPD | G20, G20.A1, G20.C |
+| [Essential Tremor](essential-tremor.md) | HOSP, OPD | G25.0 |
+
+---
+
+## Dementia & Cognitive
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Dementia Evaluation](dementia-evaluation.md) | ED, HOSP, OPD | R41.81, F03.90, G30.9 |
+| [Rapidly Progressive Dementia](rapidly-progressive-dementia.md) | HOSP, OPD | F03.90, A81.00 |
+
+---
+
+## Cranial Neuropathies
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Bell's Palsy](bells-palsy.md) | ED, HOSP, OPD | G51.0 |
+
+---
+
 ## Other
 
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
-| [Rapidly Progressive Dementia](rapidly-progressive-dementia.md) | HOSP, OPD | F03.90, A81.00 |
 | [Vertigo / Dizziness](vertigo-dizziness-evaluation.md) | ED, HOSP, OPD | R42, H81.10 |
 
 ---

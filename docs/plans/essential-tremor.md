@@ -1,22 +1,49 @@
----
-title: "Essential Tremor"
-description: "Clinical decision support for essential tremor diagnosis and management"
-version: "1.0"
-setting: "ED, HOSP, OPD"
-status: approved
-tags:
-  - movement-disorders
-  - tremor
-  - outpatient
----
-
 # Essential Tremor
 
-**DIAGNOSIS:** Essential Tremor
-**ICD-10:** G25.0 (Essential tremor)
-**SCOPE:** Diagnosis confirmation, differentiation from Parkinson's disease and other tremors, and symptomatic treatment. Covers classic essential tremor and ET-plus syndrome.
+**VERSION:** 1.0
+**CREATED:** January 29, 2026
+**REVISED:** January 29, 2026
+**STATUS:** Complete
 
-**STATUS:** Approved
+---
+
+**DIAGNOSIS:** Essential Tremor
+
+**ICD-10:** G25.0 (Essential tremor), G25.1 (Drug-induced tremor), G25.2 (Other specified forms of tremor), G25.9 (Extrapyramidal and movement disorder, unspecified)
+
+**SYNONYMS:** Essential tremor, ET, benign essential tremor, familial tremor, hereditary tremor, action tremor, postural tremor, kinetic tremor, senile tremor
+
+**SCOPE:** Diagnosis and management of essential tremor in adults. Covers diagnostic workup to differentiate from Parkinson's disease and other tremor disorders, pharmacologic and non-pharmacologic treatment options. Excludes enhanced physiologic tremor, drug-induced tremor, psychogenic tremor, and tremor as part of other movement disorders (PD, dystonia, cerebellar disease).
+
+---
+
+**DEFINITIONS:**
+- **Essential Tremor:** Bilateral action tremor of the hands and forearms (± head tremor) without other neurologic signs, present for ≥3 years
+- **Action Tremor:** Tremor occurring during voluntary movement (includes postural and kinetic tremor)
+- **Postural Tremor:** Tremor present when maintaining a position against gravity (arms outstretched)
+- **Kinetic Tremor:** Tremor during voluntary movement (finger-to-nose)
+- **Rest Tremor:** Tremor present at rest with limb fully supported (typical of Parkinson's)
+
+---
+
+**DIAGNOSTIC CRITERIA (Consensus Statement, Movement Disorder Society):**
+
+**Core Criteria:**
+- Bilateral upper limb action tremor (postural ± kinetic) for ≥3 years
+- With or without head tremor
+- Without other neurologic signs (dystonia, ataxia, parkinsonism)
+
+**Supportive Features:**
+- Family history of similar tremor
+- Beneficial response to alcohol
+- Absence of known causes
+
+**Exclusion Criteria:**
+- Isolated focal tremors (voice, head only)
+- Orthostatic tremor
+- Task-specific tremors
+- Sudden onset or stepwise progression
+- Drug-induced tremor
 
 ---
 
@@ -24,40 +51,36 @@ tags:
 
 ---
 
-## SECTION A: ACTION ITEMS
-
----
-
 ## 1. LABORATORY WORKUP
 
 ### 1A. Essential/Core Labs
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| TSH | Hyperthyroidism causes action tremor | Normal (0.4-4.0 mIU/L) | URGENT | ROUTINE | ROUTINE | - |
-| Free T4 | If TSH abnormal | Normal | URGENT | ROUTINE | ROUTINE | - |
-| BMP | Electrolyte abnormalities (hypomagnesemia) can cause tremor | Normal | STAT | ROUTINE | ROUTINE | - |
-| Glucose | Hypoglycemia causes tremor | 70-180 mg/dL | STAT | ROUTINE | - | - |
-| Hepatic panel | Hepatic encephalopathy can cause asterixis/tremor; baseline before medications | Normal | - | ROUTINE | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| TSH | - | ROUTINE | ROUTINE | - | Hyperthyroidism causes tremor | Normal (0.4-4.0 mIU/L) |
+| Free T4 | - | ROUTINE | ROUTINE | - | If TSH abnormal | Normal |
+| CMP | - | ROUTINE | ROUTINE | - | Electrolyte abnormalities, hepatic/renal function | Normal |
+| Glucose | - | ROUTINE | ROUTINE | - | Hypoglycemia can cause tremor | Normal |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Magnesium | Hypomagnesemia causes tremor | 1.8-2.4 mg/dL | - | ROUTINE | ROUTINE | - |
-| Ceruloplasmin, serum copper | Wilson's disease if age <50 | Normal | - | EXT | ROUTINE | - |
-| 24-hour urine copper | Wilson's confirmation | <100 μg/24hr | - | - | EXT | - |
-| Drug/toxin screen | Caffeine, stimulants, alcohol withdrawal | Negative or explains tremor | STAT | ROUTINE | EXT | - |
-| Vitamin B12 | Deficiency can cause tremor | >300 pg/mL | - | ROUTINE | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Serum ceruloplasmin | - | ROUTINE | ROUTINE | - | Wilson disease if <50 years or atypical features | 20-40 mg/dL |
+| 24-hour urine copper | - | EXT | EXT | - | If ceruloplasmin low/borderline | <100 mcg/24h |
+| Liver function tests | - | ROUTINE | ROUTINE | - | Wilson disease, hepatic encephalopathy | Normal |
+| Serum copper | - | ROUTINE | ROUTINE | - | Wilson disease | Normal |
+| Vitamin B12 | - | ROUTINE | ROUTINE | - | Deficiency can cause tremor | >400 pg/mL |
+| Drug/toxin screen | - | ROUTINE | ROUTINE | - | Drug-induced tremor | Negative |
+| Caffeine intake assessment | - | - | ROUTINE | - | Excessive caffeine exacerbates tremor | Assess |
 
-### 1C. Rare/Specialized (Refractory or Atypical)
+### 1C. Rare/Specialized
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Heavy metal panel (mercury, lead, arsenic) | Occupational exposure; toxin-induced tremor | Normal | - | - | EXT | - |
-| Paraneoplastic antibody panel | Atypical tremor; occult malignancy | Negative | - | - | EXT | - |
-| Anti-GAD65 antibodies | Stiff-person spectrum; autoimmune etiology | Negative | - | - | EXT | - |
-| Genetic testing (LINGO1, SLC1A2) | Research; strong family history | Variable | - | - | EXT | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Genetic testing (LINGO1, ETM1/2) | - | - | EXT | - | Family history, research interest | Informational |
+| Anti-neuronal antibodies | - | - | EXT | - | If autoimmune cause suspected | Negative |
+| Heavy metal levels | - | - | EXT | - | Mercury, lead exposure | Normal |
 
 ---
 
@@ -65,68 +88,73 @@ tags:
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| Clinical examination (spiral drawing, water pouring) | At evaluation | Symmetric action tremor; improves with alcohol; family history | None | STAT | ROUTINE | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Clinical examination | - | ROUTINE | ROUTINE | - | At diagnosis | Bilateral action tremor, no rest tremor, no parkinsonism | None |
+| Handwriting sample | - | ROUTINE | ROUTINE | - | At diagnosis, follow-up | Large, tremulous writing (vs micrographia in PD) | None |
+| Spiral drawing test | - | ROUTINE | ROUTINE | - | At diagnosis, follow-up | Objective tremor assessment | None |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain | Atypical features; focal signs; concern for structural lesion | Normal | MRI-incompatible devices | URGENT | ROUTINE | ROUTINE | - |
-| DaTscan (ioflupane I-123) | Differentiate ET from Parkinson's disease | NORMAL in ET (abnormal in PD) | Iodine hypersensitivity | - | - | ROUTINE | - |
-| EMG with accelerometry | Characterize tremor frequency (8-12 Hz typical ET) | 4-12 Hz, predominantly postural/kinetic | None | - | - | EXT | - |
-
-### 2C. Rare/Specialized
-
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain with SWI | Wilson's disease evaluation; iron deposition | No basal ganglia abnormalities | MRI contraindications | - | EXT | EXT | - |
-| PET scan | Research; rule out neurodegenerative parkinsonian syndromes | Normal nigrostriatal pathway | None | - | - | EXT | - |
-| Slit lamp examination | Wilson's disease (Kayser-Fleischer rings) | No KF rings | None | - | EXT | EXT | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI brain without contrast | - | ROUTINE | ROUTINE | - | If atypical features or diagnostic uncertainty | Rule out structural cause, cerebellar lesions | Pacemaker, metal |
+| DaTscan (I-123 ioflupane SPECT) | - | - | ROUTINE | - | Differentiate ET from PD if uncertain | Normal in ET; reduced striatal uptake in PD | Pregnancy, iodine allergy |
+| Accelerometry/Tremor analysis | - | - | EXT | - | Objective quantification, research | Characterize tremor frequency (4-12 Hz) | None |
+| EMG | - | - | EXT | - | If neuropathic tremor suspected | Rule out neuropathy | None |
+| MRI with susceptibility-weighted imaging | - | ROUTINE | ROUTINE | - | If Wilson disease suspected | Rule out basal ganglia T2 hypointensity | Per MRI |
 
 ---
 
 ## 3. TREATMENT
 
-### 3A. Acute/Emergent
+### 3A. First-Line Pharmacologic Treatment
 
-| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Propranolol (as needed) | PO | Situational tremor (performance anxiety, important meeting) | 20 mg PO; 40 mg PO :: PO :: :: 20-40 mg PO 30-60 min before anxiety-provoking situation; single dose PRN | Asthma; severe bradycardia; decompensated HF | HR, BP if first dose | URGENT | URGENT | ROUTINE | - |
+| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
+|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+| Propranolol (Inderal) | - | ROUTINE | ROUTINE | - | Start 20-40 mg BID-TID; titrate to 120-320 mg/day in divided doses | Asthma, COPD, bradycardia, AV block, decompensated heart failure, depression | HR, BP |
+| Propranolol LA | - | ROUTINE | ROUTINE | - | Start 60-80 mg daily; titrate to 160-320 mg daily | Same | Same |
+| Primidone (Mysoline) | - | ROUTINE | ROUTINE | - | Start 12.5-25 mg QHS; titrate very slowly by 12.5-25 mg/week to 250-750 mg/day in divided doses | Porphyria, severe sedation | Sedation, ataxia, nausea (start very low) |
 
-### 3B. Symptomatic Treatments (First-line)
+### 3B. Second-Line Pharmacologic Treatment
 
-| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Propranolol | PO | First-line chronic therapy; most evidence | 20 mg BID; 40 mg BID; 60 mg BID; 80 mg BID; 120 mg daily LA; 160 mg daily LA :: PO :: :: Start 20 mg BID or 60 mg LA daily; titrate q2wk; target 60-240 mg/day | Asthma/COPD; bradycardia <50; heart block; decompensated HF | HR (>50 bpm), BP, fatigue, depression | - | ROUTINE | ROUTINE | - |
-| Propranolol LA | PO | Once daily option for adherence | 60 mg daily; 80 mg daily; 120 mg daily; 160 mg daily :: PO :: :: Start 60-80 mg daily; titrate q2wk; max 320 mg/day | Same as IR | Same as IR | - | ROUTINE | ROUTINE | - |
-| Primidone | PO | First-line; equal efficacy to propranolol | 25 mg qHS; 50 mg qHS; 50 mg TID; 125 mg TID; 250 mg TID :: PO :: :: Start 25 mg qHS (VERY LOW to avoid acute toxicity); increase by 25-50 mg q1wk; target 250-750 mg/day divided | Porphyria; severe hepatic impairment | Sedation (especially initial), ataxia, GI upset | - | ROUTINE | ROUTINE | - |
-| Propranolol + Primidone | PO | Combination for better efficacy than monotherapy | Per individual drug :: PO :: :: Add second agent if monotherapy insufficient; use lower doses of each | Per individual drug | Monitor both sets of side effects | - | ROUTINE | ROUTINE | - |
+| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
+|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+| Topiramate (Topamax) | - | ROUTINE | ROUTINE | - | Start 25 mg daily; titrate by 25-50 mg/week to 100-400 mg/day in divided doses | Kidney stones, glaucoma, pregnancy | Cognitive effects, paresthesias, weight loss |
+| Gabapentin (Neurontin) | - | ROUTINE | ROUTINE | - | Start 300 mg daily; titrate to 300-600 mg TID (900-1800 mg/day) | Renal impairment (adjust dose) | Sedation, dizziness, edema |
+| Alprazolam (Xanax) | - | ROUTINE | ROUTINE | - | 0.25-0.5 mg TID; max 3 mg/day; use cautiously | Respiratory depression, addiction potential, elderly falls | Sedation, dependence, falls |
+| Clonazepam (Klonopin) | - | ROUTINE | ROUTINE | - | 0.5 mg TID; titrate to 2-4 mg/day | Same as alprazolam | Same |
+| Atenolol | - | ROUTINE | ROUTINE | - | 50-100 mg daily; less CNS penetration than propranolol | Same as propranolol | HR, BP |
+| Nadolol | - | ROUTINE | ROUTINE | - | 40-160 mg daily; long-acting, once daily | Same as propranolol | HR, BP |
 
-### 3C. Second-line/Refractory
+### 3C. Third-Line and Adjunctive Treatments
 
-| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Topiramate | PO | Beta-blocker contraindicated; weight concern | 25 mg qHS; 50 mg BID; 100 mg BID :: PO :: :: Start 25 mg qHS; increase by 25 mg q1wk; target 100-400 mg/day divided | Glaucoma; kidney stones; pregnancy | Cognitive effects, paresthesias, weight loss, metabolic acidosis | - | ROUTINE | ROUTINE | - |
-| Gabapentin | PO | Mild benefit; good tolerability; neuropathic pain comorbidity | 300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q3-7d; target 1200-3600 mg/day divided TID | Severe renal impairment (dose adjust) | Sedation, dizziness, edema | - | ROUTINE | ROUTINE | - |
-| Alprazolam | PO | Anxiolytic benefit; use with caution | 0.25 mg TID; 0.5 mg TID :: PO :: :: Start 0.25 mg TID; titrate slowly; max 3 mg/day; avoid long-term if possible | Respiratory depression; history of substance use | Dependence, sedation, falls | - | ROUTINE | ROUTINE | - |
-| Clonazepam | PO | Orthostatic tremor; head tremor; refractory cases | 0.25 mg BID; 0.5 mg BID; 1 mg BID :: PO :: :: Start 0.25 mg BID; titrate slowly; typical 0.5-2 mg/day | Same as alprazolam | Same as alprazolam | - | ROUTINE | ROUTINE | - |
-| Atenolol | PO | Beta-blocker alternative (more beta-1 selective) | 25 mg daily; 50 mg daily; 100 mg daily :: PO :: :: Start 25-50 mg daily; max 100 mg daily | Heart block; severe bradycardia | HR, BP | - | ROUTINE | ROUTINE | - |
-| Nadolol | PO | Long-acting beta-blocker alternative | 40 mg daily; 80 mg daily; 120 mg daily :: PO :: :: Start 40 mg daily; titrate q1-2wk; max 240 mg daily | Same as propranolol | Same as propranolol | - | ROUTINE | ROUTINE | - |
-| Sotalol | PO | Beta-blocker with additional antiarrhythmic properties | 80 mg BID; 120 mg BID :: PO :: :: Start 80 mg BID; max 240 mg/day; requires QTc monitoring | QT prolongation; severe renal impairment | QTc, electrolytes | - | ROUTINE | ROUTINE | - |
-| Nimodipine | PO | Limited evidence; calcium channel blocker | 30 mg TID :: PO :: :: 30 mg TID | Hypotension | BP | - | - | EXT | - |
-| Zonisamide | PO | Limited evidence; weight neutral | 100 mg daily; 200 mg daily :: PO :: :: Start 100 mg daily; may increase to 200 mg daily | Sulfonamide allergy; renal stones | Kidney stones, rash | - | - | EXT | - |
+| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
+|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+| Botulinum toxin (OnabotulinumtoxinA) | - | - | ROUTINE | - | 50-100 units per arm for hand tremor; 40-400 units for head tremor; q3 months | Infection at injection site, myasthenia | Weakness, dysphagia (head/voice injections) |
+| Propranolol + Primidone combination | - | ROUTINE | ROUTINE | - | Use lower doses of each; synergistic effect | Per individual agents | Per individual agents |
+| Nimodipine | - | - | EXT | - | 30 mg TID; limited evidence | Hypotension | BP |
+| Zonisamide | - | - | EXT | - | 100-200 mg daily; off-label | Sulfa allergy, kidney stones | Kidney stones, cognitive |
 
-### 3D. Interventional/Advanced Therapies
+### 3D. Interventional Treatments
 
-| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Botulinum toxin (head tremor) | IM | Head/neck tremor refractory to oral medications | 100-200 units total :: IM :: :: Inject into sternocleidomastoid and splenius capitis bilaterally; repeat q3-4mo | EMG guidance recommended | Infection at site; myasthenia gravis | Dysphagia, neck weakness | - | - | ROUTINE | - |
-| Botulinum toxin (hand tremor) | IM | Hand tremor refractory to oral medications | 50-100 units per hand :: IM :: :: Inject into forearm flexors/extensors; EMG-guided; repeat q3mo | EMG guidance required | Same as above | Finger weakness (limits use) | - | - | ROUTINE | - |
-| Deep brain stimulation (DBS) | Surgical | Medication-refractory disabling tremor | VIM thalamus stimulation :: Surgical :: :: Unilateral or bilateral VIM thalamus; programming over weeks | MRI; neuropsych testing; multidisciplinary evaluation | Cognitive impairment; unstable psychiatric disease; coagulopathy | Programming optimization; speech side effects (bilateral) | - | - | ROUTINE | - |
-| MRI-guided focused ultrasound (MRgFUS) | Non-invasive | Unilateral tremor; DBS declined or contraindicated | VIM thalamotomy :: Non-invasive :: :: Unilateral lesion of VIM thalamus; immediate effect | Must tolerate prolonged MRI | Bilateral procedure not recommended (speech risk); skull density ratio | Numbness, ataxia, speech changes (usually transient) | - | - | ROUTINE | - |
-| Gamma Knife radiosurgery | Non-invasive | VIM thalamotomy; DBS contraindicated | 130-150 Gy to VIM :: Non-invasive :: :: Unilateral lesion; delayed effect (months) | MRI compatible | Same as MRgFUS | Same as MRgFUS; delayed effect | - | - | EXT | - |
+| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
+|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+| Deep brain stimulation (DBS) | - | - | EXT | - | VIM thalamus target; bilateral or unilateral | Bleeding risk, active infection, severe cognitive impairment | Speech, gait, stimulator function |
+| MRI-guided focused ultrasound (MRgFUS) | - | - | EXT | - | VIM thalamotomy; unilateral only | Skull density ratio issues, intracranial lesions | Speech, gait, sensory changes |
+| Gamma Knife thalamotomy | - | - | EXT | - | VIM target; unilateral; delayed effect | Per radiosurgery | Same as MRgFUS |
+
+### 3E. Non-Pharmacologic Treatments
+
+| Treatment | ED | HOSP | OPD | ICU | Details | Contraindications | Notes |
+|-----------|:--:|:----:|:---:|:---:|---------|-------------------|-------|
+| Weighted utensils | - | - | ROUTINE | - | Reduce tremor amplitude during eating | None | OT can assist with selection |
+| Wrist weights | - | - | ROUTINE | - | Dampen tremor during activities | None | May cause fatigue |
+| Adaptive devices | - | - | ROUTINE | - | Two-handled cups, rocker knives, button hooks | None | OT referral |
+| Cala Trio device | - | - | ROUTINE | - | FDA-approved wrist-worn peripheral nerve stimulation; 2x daily for 40 min | Pacemaker/implanted device, pregnancy | Prescription medical device |
+| Limit caffeine | - | ROUTINE | ROUTINE | - | Caffeine exacerbates tremor | None | Patient education |
+| Avoid triggers | - | ROUTINE | ROUTINE | - | Stress, fatigue, stimulants worsen tremor | None | Patient education |
+| Stress management | - | - | ROUTINE | - | Relaxation techniques, biofeedback | None | Tremor worsens with anxiety |
 
 ---
 
@@ -134,40 +162,39 @@ tags:
 
 ### 4A. Referrals & Consults
 
-| Recommendation | ED | HOSP | OPD | ICU |
-|----------------|:--:|:----:|:---:|:---:|
-| Movement disorders neurology for diagnosis confirmation if uncertain and treatment optimization | - | ROUTINE | ROUTINE | - |
-| Neurosurgery consultation for DBS or MRgFUS evaluation if medication-refractory | - | - | ROUTINE | - |
-| Occupational therapy for adaptive devices and hand-writing strategies | - | - | ROUTINE | - |
-| Physical therapy for postural training and coordination exercises | - | - | ROUTINE | - |
-| Psychology/counseling for anxiety management and coping strategies | - | - | ROUTINE | - |
+| Recommendation | ED | HOSP | OPD | ICU | Indication |
+|----------------|:--:|:----:|:---:|:---:|------------|
+| Movement disorder specialist | - | ROUTINE | ROUTINE | - | Diagnostic uncertainty, treatment-refractory tremor, DBS candidacy |
+| Occupational therapy | - | ROUTINE | ROUTINE | - | Adaptive equipment, handwriting strategies, ADL assistance |
+| Physical therapy | - | - | ROUTINE | - | Balance, gait training if affected |
+| Speech therapy | - | - | ROUTINE | - | Voice tremor management |
+| Neurosurgery | - | - | ROUTINE | - | DBS candidacy evaluation |
+| Interventional radiology/MRgFUS center | - | - | ROUTINE | - | Focused ultrasound evaluation |
+| Neuropsychology | - | - | ROUTINE | - | Pre-DBS cognitive assessment |
 
-### 4B. Patient Instructions
+### 4B. Patient/Family Instructions
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
-| Avoid or minimize caffeine which can worsen tremor | - | ROUTINE | ROUTINE |
-| Limit alcohol (may temporarily improve tremor but rebound worsening occurs and dependence risk) | - | ROUTINE | ROUTINE |
-| Get adequate sleep as fatigue worsens tremor | - | ROUTINE | ROUTINE |
-| Manage stress and anxiety which exacerbate tremor (relaxation techniques, regular exercise) | - | ROUTINE | ROUTINE |
-| Use weighted utensils and adaptive devices for eating and writing if tremor interferes | - | ROUTINE | ROUTINE |
-| Report any new symptoms such as slowness, stiffness, or balance problems which may indicate progression to ET-plus or Parkinson's | - | ROUTINE | ROUTINE |
-| Consider alerting employer/school if tremor affects work performance to discuss accommodations | - | - | ROUTINE |
+| ET is a chronic condition but does not reduce life expectancy | - | ROUTINE | ROUTINE |
+| Tremor may worsen slowly over time but many patients do well with treatment | - | ROUTINE | ROUTINE |
+| Alcohol provides temporary relief but is not a recommended treatment | - | ROUTINE | ROUTINE |
+| Medications work best when taken consistently | - | ROUTINE | ROUTINE |
+| Avoid caffeine and stimulants which worsen tremor | - | ROUTINE | ROUTINE |
+| Get adequate sleep; fatigue worsens tremor | - | ROUTINE | ROUTINE |
+| Join International Essential Tremor Foundation support network | - | - | ROUTINE |
+| Inform doctors of ET before procedures (tremor may complicate surgery) | - | ROUTINE | ROUTINE |
 
 ### 4C. Lifestyle & Prevention
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
-| Regular physical exercise improves overall motor function and stress management | - | ROUTINE | ROUTINE |
-| Relaxation techniques (yoga, meditation, deep breathing) reduce stress-related tremor exacerbation | - | - | ROUTINE |
-| Avoid medications that worsen tremor (lithium, valproate, some antidepressants, stimulants) when alternatives exist | - | ROUTINE | ROUTINE |
-| Use larger-grip pens and utensils to improve function | - | - | ROUTINE |
-| Voice-to-text software if writing is significantly impaired | - | - | ROUTINE |
-| Limit alcohol despite temporary improvement to avoid dependence and rebound tremor | - | ROUTINE | ROUTINE |
-
----
-
-## SECTION B: REFERENCE
+| Reduce or eliminate caffeine intake | - | ROUTINE | ROUTINE |
+| Maintain regular sleep schedule | - | ROUTINE | ROUTINE |
+| Stress reduction techniques | - | - | ROUTINE |
+| Limit alcohol to social amounts (not as tremor treatment) | - | ROUTINE | ROUTINE |
+| Regular exercise for overall health | - | - | ROUTINE |
+| Use adaptive equipment for functional independence | - | - | ROUTINE |
 
 ---
 
@@ -175,64 +202,77 @@ tags:
 
 | Alternative Diagnosis | Key Distinguishing Features | Tests to Differentiate |
 |-----------------------|----------------------------|------------------------|
-| Parkinson's disease | Rest tremor predominant; bradykinesia; rigidity; asymmetric onset | DaTscan (abnormal in PD, normal in ET); clinical exam |
-| Enhanced physiologic tremor | Typically bilateral, postural; related to caffeine, anxiety, medications, hyperthyroidism | Remove triggers; check TSH, caffeine history |
-| Drug-induced tremor | Temporal relationship with medication; bilateral | Medication review; trial withdrawal |
-| Dystonic tremor | Irregular, jerky; task-specific; associated dystonic posturing; null point | Clinical exam; may see dystonia at rest |
-| Cerebellar tremor | Intention tremor (worsens at target); associated ataxia, dysarthria | MRI brain (cerebellar pathology); clinical exam |
-| Psychogenic tremor | Variable frequency; distractible; entrainment with contralateral movement | Clinical maneuvers; psychiatric evaluation |
-| Wilson's disease | Age <50; liver disease; psychiatric symptoms; Kayser-Fleischer rings | Ceruloplasmin, 24h urine copper, slit lamp |
-| Orthostatic tremor | Tremor in legs/trunk when standing; relief with sitting/walking | EMG (13-18 Hz characteristic) |
-| Rubral tremor | Rest + postural + intention ("Holmes tremor"); midbrain lesion history | MRI (midbrain pathology) |
-| Neuropathic tremor | Associated with peripheral neuropathy (CIDP, IgM paraprotein) | EMG/NCS; protein electrophoresis |
-
----
+| Parkinson's disease | Rest tremor (4-6 Hz), asymmetric onset, bradykinesia, rigidity, postural instability | Clinical exam; DaTscan reduced in PD |
+| Enhanced physiologic tremor | Low amplitude, high frequency (8-12 Hz), associated with anxiety, caffeine, medications, hyperthyroidism | TSH, medication review, resolves with trigger removal |
+| Drug-induced tremor | Temporal relationship to medication (lithium, valproate, SSRIs, stimulants, bronchodilators) | Medication review; improves with dose reduction |
+| Dystonic tremor | Irregular, jerky, "null point" present, associated dystonic posturing | Clinical features; may respond to botox |
+| Cerebellar tremor | Intention tremor worse at target, associated ataxia, dysmetria, other cerebellar signs | MRI brain; cerebellar atrophy/lesion |
+| Wilson disease | Young onset (<50), KF rings, liver disease, psychiatric symptoms, varied movement disorders | Ceruloplasmin, 24h urine copper, slit lamp exam |
+| Psychogenic tremor | Variable frequency, distractible, entrainment, inconsistent pattern, sudden onset | Clinical observation; psychiatric assessment |
+| Orthostatic tremor | High frequency (13-18 Hz), occurs only when standing, relief with sitting/walking | EMG shows characteristic high frequency |
+| Hyperthyroidism | Associated hyperthyroid symptoms (weight loss, palpitations, heat intolerance) | TSH, free T4 |
+| Rubral (Holmes) tremor | Combination of rest, postural, and action tremor; large amplitude; midbrain lesion | MRI brain showing midbrain pathology |
 
 ## 6. MONITORING PARAMETERS
 
-| Parameter | Frequency | Target/Threshold | Action if Abnormal | ED | HOSP | OPD | ICU |
-|-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
-| Tremor severity (clinical rating scales: Fahn-Tolosa-Marin, TETRAS) | Each visit | 50%+ improvement with treatment | Adjust medication dose; consider second agent or intervention | - | ROUTINE | ROUTINE | - |
-| Functional impact (writing, eating, drinking) | Each visit | Acceptable function for patient | OT referral; adaptive devices; consider advanced therapy | - | ROUTINE | ROUTINE | - |
-| Heart rate (if on beta-blocker) | Each visit | >50 bpm | Reduce dose or switch agent | - | ROUTINE | ROUTINE | - |
-| Blood pressure (if on beta-blocker) | Each visit | >90/60 | Reduce dose or switch agent | - | ROUTINE | ROUTINE | - |
-| Sedation/cognition (if on primidone or benzodiazepines) | Each visit | Tolerable side effects | Reduce dose; slow titration | - | ROUTINE | ROUTINE | - |
-| Signs of parkinsonism | Each visit | No bradykinesia, rigidity, rest tremor | Re-evaluate diagnosis; DaTscan if uncertain | - | ROUTINE | ROUTINE | - |
-| Weight (if on topiramate) | Every 3 months | Stable or acceptable change | Adjust dose | - | - | ROUTINE | - |
-| QTc (if on sotalol) | Baseline, with dose changes | <500 msec | Reduce dose or discontinue | - | ROUTINE | ROUTINE | - |
-
----
+| Parameter | ED | HOSP | OPD | ICU | Frequency | Target/Threshold | Action if Abnormal |
+|-----------|:--:|:----:|:---:|:---:|-----------|------------------|-------------------|
+| Tremor severity (clinical rating scale) | - | ROUTINE | ROUTINE | - | Each visit | Improved or stable | Adjust medications |
+| Functional impact (FTM, QUEST) | - | - | ROUTINE | - | q6-12 months | Minimal functional impairment | Add therapy, consider surgery |
+| Handwriting sample/spiral drawing | - | ROUTINE | ROUTINE | - | Each visit | Stable or improved | Objective tracking |
+| Heart rate | - | ROUTINE | ROUTINE | - | Each visit if on beta-blocker | HR >50 | Reduce dose if bradycardic |
+| Blood pressure | - | ROUTINE | ROUTINE | - | Each visit if on beta-blocker | SBP >90 | Reduce dose if hypotensive |
+| Sedation/cognitive effects | - | ROUTINE | ROUTINE | - | Each visit | Tolerable | Reduce dose or switch agent |
+| Mood | - | ROUTINE | ROUTINE | - | Each visit | No depression | Monitor; beta-blockers can cause depression |
+| TSH | - | - | ROUTINE | - | Annually if on medications | Normal | Adjust thyroid replacement if applicable |
 
 ## 7. DISPOSITION CRITERIA
 
 | Disposition | Criteria |
 |-------------|----------|
-| Discharge home | New diagnosis with treatment started; follow-up arranged; no red flags |
-| Admit to floor | Rare; only if tremor is severe and workup needed urgently (e.g., Wilson's disease suspected) |
-| Outpatient follow-up | 4-8 weeks for medication titration; then every 6-12 months when stable |
-
----
+| Outpatient management | Most patients; diagnosis confirmed, treatment initiated |
+| Movement disorder referral | Diagnostic uncertainty, DaTscan consideration, treatment-refractory, surgical candidacy |
+| DBS evaluation | Moderate-severe tremor refractory to medications, adequate cognitive function, no surgical contraindications |
+| MRgFUS evaluation | Unilateral tremor dominant, medications failed, not DBS candidate, meets skull density criteria |
+| Occupational therapy | Functional impairment with ADLs; need for adaptive equipment |
 
 ## 8. EVIDENCE & REFERENCES
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Propranolol first-line for ET | Class I, Level A | [Zesiewicz et al. Neurology 2011 (AAN Guideline)](https://pubmed.ncbi.nlm.nih.gov/22013182/) |
-| Primidone first-line for ET | Class I, Level A | [Zesiewicz et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/22013182/) |
-| Topiramate effective for ET | Class II, Level B | [Ondo et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16636234/) |
-| DBS effective for medication-refractory ET | Class I, Level A | [Flora et al. Cochrane 2010](https://pubmed.ncbi.nlm.nih.gov/20927732/) |
-| MRI-guided focused ultrasound for ET | Class I, Level A | [Elias et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27557301/) |
-| DaTscan differentiates ET from PD | Class II, Level B | [Benamer et al. Mov Disord 2000](https://pubmed.ncbi.nlm.nih.gov/10752577/) |
-| Botulinum toxin for head tremor | Class II, Level B | [Pahwa et al. Neurology 1995](https://pubmed.ncbi.nlm.nih.gov/7617193/) |
-| Gabapentin modest benefit | Class II, Level U | [Ondo et al. Neurology 2000](https://pubmed.ncbi.nlm.nih.gov/10680798/) |
-| Combination therapy superior to monotherapy | Class II, Level B | [Koller et al. Neurology 1989](https://pubmed.ncbi.nlm.nih.gov/2668781/) |
+| Propranolol effective for ET | Class I, Level A | Cochrane Reviews; AAN Guidelines 2011 |
+| Primidone effective for ET | Class I, Level A | Cochrane Reviews; AAN Guidelines 2011 |
+| Propranolol + Primidone combination | Class II, Level B | AAN Guidelines 2011 |
+| Topiramate effective for ET | Class I, Level B | AAN Guidelines 2011 |
+| Gabapentin possibly effective | Class II, Level U | AAN Guidelines 2011 |
+| Botulinum toxin for hand tremor | Class II, Level B | AAN Guidelines 2011 |
+| DBS effective for medically refractory ET | Class I, Level A | Multiple RCTs |
+| MRgFUS (focused ultrasound) effective | Class I, Level A | Elias et al., NEJM 2016 |
+| DaTscan differentiates ET from PD | Class II, Level B | FDA approved 2011 |
+| Cala Trio wrist device | Class II, Level B | FDA approved 2018 |
+
+---
+
+## NOTES
+
+- Essential tremor is often underdiagnosed and undertreated
+- Family history present in ~50% of cases; autosomal dominant inheritance pattern
+- Alcohol responsiveness is characteristic but NOT a recommended treatment strategy
+- Tremor typically starts in hands; head tremor develops in ~50% over time; voice tremor in ~30%
+- Propranolol and primidone are first-line; start LOW and titrate SLOWLY with primidone
+- Many patients respond partially to medications; combination therapy often needed
+- DBS is highly effective for medication-refractory cases; VIM thalamus is target
+- MRgFUS (focused ultrasound) is incisionless alternative but only unilateral treatment recommended
+- ET is associated with increased risk of cognitive impairment and Parkinson's disease (controversial)
+- Differentiation from PD is clinical; DaTscan helpful in uncertain cases
 
 ---
 
 ## CHANGE LOG
 
-**v1.0 (January 27, 2026)**
+**v1.0 (January 29, 2026)**
 - Initial template creation
-- Comprehensive medication coverage including first and second-line options
-- Includes advanced interventions (DBS, MRgFUS, Gamma Knife)
-- Structured dosing format for order sentence generation
+- Comprehensive pharmacologic options with tiered approach
+- Included interventional treatments (DBS, MRgFUS)
+- Added Cala Trio device and non-pharmacologic options
+- Differentiation from Parkinson's disease emphasized
