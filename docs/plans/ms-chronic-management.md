@@ -1,0 +1,285 @@
+# Multiple Sclerosis - Chronic Management
+
+**VERSION:** 1.0
+**CREATED:** January 29, 2026
+**REVISED:** January 29, 2026
+**STATUS:** Complete
+
+---
+
+**DIAGNOSIS:** Multiple Sclerosis - Chronic Management
+
+**ICD-10:** G35 (Multiple sclerosis)
+
+**SYNONYMS:** Multiple sclerosis, MS, relapsing-remitting MS, RRMS, secondary progressive MS, SPMS, primary progressive MS, PPMS, demyelinating disease, chronic MS management, MS disease-modifying therapy
+
+**SCOPE:** Long-term management of multiple sclerosis in adults including disease-modifying therapy (DMT) selection and monitoring, relapse management, symptom management, and pregnancy considerations. Excludes initial diagnosis workup (see MS New Diagnosis template) and acute relapse management as primary focus.
+
+---
+
+**DEFINITIONS:**
+- **Relapsing-Remitting MS (RRMS):** Most common form (~85%); discrete attacks with full or partial recovery
+- **Secondary Progressive MS (SPMS):** Progressive accumulation of disability after initial RRMS course
+- **Primary Progressive MS (PPMS):** Progressive accumulation from onset without discrete relapses (~15%)
+- **Relapse (Exacerbation):** New or worsening neurologic symptoms lasting >24 hours without fever/infection
+- **NEDA (No Evidence of Disease Activity):** No relapses, no disability progression, no new/enlarging MRI lesions
+- **Highly Active MS:** Frequent relapses (≥2/year), rapid disability progression, highly active MRI
+
+---
+
+**PRIORITY KEY:** STAT = Immediate | URGENT = Within hours | ROUTINE = Standard | EXT = Extended/atypical cases | - = Not applicable to this setting
+
+---
+
+## 1. LABORATORY WORKUP
+
+### 1A. Baseline Labs (Before Starting DMT)
+
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CBC with differential | - | ROUTINE | ROUTINE | - | Baseline; many DMTs affect counts | Normal |
+| CMP | - | ROUTINE | ROUTINE | - | Hepatic/renal function | Normal |
+| LFTs (AST, ALT, bilirubin) | - | ROUTINE | ROUTINE | - | Baseline for hepatotoxic DMTs | Normal |
+| TSH | - | ROUTINE | ROUTINE | - | Alemtuzumab causes thyroid disease | Normal |
+| Urinalysis | - | ROUTINE | ROUTINE | - | UTI causes pseudorelapse | Negative |
+| Vitamin D (25-OH) | - | ROUTINE | ROUTINE | - | Deficiency common; may affect MS | >30 ng/mL (target 40-60) |
+| Hepatitis B/C serology | - | ROUTINE | ROUTINE | - | Reactivation risk with some DMTs | Document status |
+| HIV | - | ROUTINE | ROUTINE | - | Before immunosuppressive therapy | Negative |
+| VZV IgG | - | ROUTINE | ROUTINE | - | Vaccinate if seronegative before DMTs | Document; vaccinate if negative |
+| JC virus antibody (anti-JCV) | - | ROUTINE | ROUTINE | - | PML risk stratification for natalizumab | Document index |
+| Pregnancy test | - | ROUTINE | ROUTINE | - | Most DMTs contraindicated in pregnancy | Negative before starting DMT |
+
+### 1B. Monitoring Labs (On DMT)
+
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CBC | - | ROUTINE | ROUTINE | - | Lymphopenia (many DMTs), cytopenias | Per DMT thresholds |
+| LFTs | - | ROUTINE | ROUTINE | - | Hepatotoxicity monitoring | Normal |
+| Lymphocyte count | - | ROUTINE | ROUTINE | - | Critical for many DMTs | Per DMT; usually >200-500 |
+| JCV antibody (if on natalizumab) | - | ROUTINE | ROUTINE | - | PML risk; repeat q6 months | Monitor index |
+| TSH (if on alemtuzumab) | - | ROUTINE | ROUTINE | - | Autoimmune thyroid disease | Normal; monthly × 48 months |
+| Creatinine, urinalysis (alemtuzumab) | - | ROUTINE | ROUTINE | - | Autoimmune nephropathy | Normal; monthly × 48 months |
+| Platelet count (alemtuzumab) | - | ROUTINE | ROUTINE | - | ITP risk | Normal; monthly × 48 months |
+
+---
+
+## 2. DIAGNOSTIC IMAGING & STUDIES
+
+### 2A. Monitoring MRI
+
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI brain with and without contrast | - | ROUTINE | ROUTINE | - | Baseline, 6 months, then annually | No new/enlarging lesions | Pacemaker, metal; gadolinium in renal disease |
+| MRI cervical spine with and without contrast | - | ROUTINE | ROUTINE | - | Baseline, then PRN or q2-3 years | No new lesions | Same |
+| MRI thoracic spine (if indicated) | - | - | EXT | - | If thoracic symptoms | No new lesions | Same |
+
+### 2B. Additional Studies
+
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| OCT (optical coherence tomography) | - | - | ROUTINE | - | Baseline, annually | Stable RNFL thickness | None |
+| Evoked potentials (VEP, SSEP) | - | - | EXT | - | If clinical uncertainty | Baseline; monitor progression | None |
+| Urodynamic studies | - | - | ROUTINE | - | If bladder symptoms | Characterize dysfunction | None |
+
+---
+
+## 3. TREATMENT
+
+### 3A. Disease-Modifying Therapies - Platform/Injectable (Moderate Efficacy)
+
+| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
+|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+| Glatiramer acetate (Copaxone) | - | - | ROUTINE | - | 20 mg SC daily or 40 mg SC 3×/week | Hypersensitivity | Injection site reactions; lipoatrophy |
+| Interferon beta-1a (Avonex) | - | - | ROUTINE | - | 30 mcg IM weekly | Depression, hepatic disease | CBC, LFTs q6 months; flu-like symptoms |
+| Interferon beta-1a (Rebif) | - | - | ROUTINE | - | 22 or 44 mcg SC 3×/week (titrate) | Same | Same |
+| Interferon beta-1b (Betaseron, Extavia) | - | - | ROUTINE | - | 250 mcg SC every other day | Same | Same |
+| Peginterferon beta-1a (Plegridy) | - | - | ROUTINE | - | 125 mcg SC q2 weeks | Same | Same |
+
+### 3B. Disease-Modifying Therapies - Oral (Moderate-High Efficacy)
+
+| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
+|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+| Dimethyl fumarate (Tecfidera) | - | - | ROUTINE | - | 120 mg BID × 7 days, then 240 mg BID | Lymphopenia (<500), PML risk | CBC q6 months; LFTs; GI symptoms, flushing |
+| Diroximel fumarate (Vumerity) | - | - | ROUTINE | - | 231 mg BID × 7 days, then 462 mg BID | Same | Same; less GI effects |
+| Monomethyl fumarate (Bafiertam) | - | - | ROUTINE | - | 95 mg BID × 7 days, then 190 mg BID | Same | Same |
+| Teriflunomide (Aubagio) | - | - | ROUTINE | - | 14 mg daily | Pregnancy (teratogenic), hepatic disease | LFTs monthly × 6mo; CBC; BP; pregnancy test; accelerated elimination available |
+| Fingolimod (Gilenya) | - | - | ROUTINE | - | 0.5 mg daily; first dose observation 6h | Recent MI, unstable angina, heart block, bradycardia | First-dose cardiac monitoring (6h); ophtho exam (macular edema); LFTs; varicella status; lymphocyte count |
+| Siponimod (Mayzent) | - | - | ROUTINE | - | Titration pack, then 2 mg daily (1 mg if CYP2C9 *2/*3); approved for active SPMS | Same as fingolimod; CYP2C9 testing required | Same as fingolimod; CYP2C9 genotype |
+| Ozanimod (Zeposia) | - | - | ROUTINE | - | Titration: 0.23 mg × 4d, 0.46 mg × 3d, then 0.92 mg daily | Same as fingolimod | Same; less first-dose effect |
+| Ponesimod (Ponvory) | - | - | ROUTINE | - | Titration over 14 days to 20 mg daily | Same as fingolimod | Same |
+| Cladribine (Mavenclad) | - | - | ROUTINE | - | 3.5 mg/kg total over 2 years (Year 1: 1.75 mg/kg in 2 cycles; Year 2: same); highly active RRMS | Pregnancy, HIV, active infection, malignancy | CBC q2 months Year 1, then q6 months; lymphocyte >500-800 to start |
+
+### 3C. Disease-Modifying Therapies - Infusion (High Efficacy)
+
+| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
+|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+| Natalizumab (Tysabri) | - | - | ROUTINE | - | 300 mg IV q4 weeks | PML risk (JCV+, prior immunosuppression, duration >2y) | JCV antibody q6 months; MRI q6-12 months; infusion reactions |
+| Ocrelizumab (Ocrevus) | - | - | ROUTINE | - | 300 mg IV × 2 doses (2 weeks apart), then 600 mg IV q6 months | Active Hep B, active infection | Pre-infusion CBC, LFTs; HBV screening; infection monitoring; malignancy screening |
+| Ofatumumab (Kesimpta) | - | - | ROUTINE | - | 20 mg SC weeks 0, 1, 2, then 20 mg SC monthly | Same as ocrelizumab | Same; self-administered SC |
+| Ublituximab (Briumvi) | - | - | ROUTINE | - | 150 mg IV day 1, 450 mg IV day 15, then 450 mg IV q6 months | Same as ocrelizumab | Same |
+| Alemtuzumab (Lemtrada) | - | - | ROUTINE | - | Year 1: 12 mg IV daily × 5 days; Year 2: 12 mg IV daily × 3 days; highly active MS, REMS | Active infection, HIV, immunocompromised | CBC, LFTs, creatinine, urinalysis, TSH monthly × 48 months after last dose; REMS program |
+
+### 3D. Treatment for Progressive MS
+
+| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
+|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+| Ocrelizumab (PPMS) | - | - | ROUTINE | - | 300 mg × 2, then 600 mg q6 months | Per above | Per above; only approved for PPMS |
+| Siponimod (active SPMS) | - | - | ROUTINE | - | Per above | Per above | Per above |
+
+### 3E. Acute Relapse Treatment
+
+| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
+|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
+| Methylprednisolone IV | STAT | STAT | ROUTINE | - | 1000 mg IV daily × 3-5 days | Active infection (relative), uncontrolled DM | Glucose, BP, sleep, psychiatric |
+| Prednisone oral (alternative) | - | ROUTINE | ROUTINE | - | 1250 mg PO daily × 3-5 days (bioequivalent to IV) | Same | Same |
+| Plasma exchange (PLEX) | - | STAT | - | - | 5-7 exchanges over 2 weeks; severe relapse not responding to steroids | Hemodynamic instability | Electrolytes, coagulation |
+| ACTH gel (Acthar) | - | - | ROUTINE | - | 80-120 units IM daily × 2-3 weeks; alternative to steroids | Same as steroids | Same |
+
+### 3F. Symptom Management
+
+| Symptom | Treatment | Dosing | Monitoring |
+|---------|-----------|--------|------------|
+| **Fatigue** | Amantadine | 100 mg BID | Livedo reticularis |
+| | Modafinil | 100-200 mg AM | BP, sleep |
+| | Armodafinil | 150-250 mg AM | Same |
+| **Spasticity** | Baclofen | 5 mg TID, titrate to 20 mg TID | Sedation, weakness |
+| | Tizanidine | 2-4 mg TID | LFTs, sedation, hypotension |
+| | OnabotulinumtoxinA | Injection for focal spasticity | Weakness |
+| | Intrathecal baclofen | Pump for severe spasticity | Pump complications |
+| **Walking** | Dalfampridine (Ampyra) | 10 mg BID | Seizures (discontinue if occurs) |
+| **Bladder (OAB)** | Oxybutynin | 5 mg BID-TID | Dry mouth, cognitive effects |
+| | Solifenacin | 5-10 mg daily | Same (less cognitive) |
+| | Mirabegron | 25-50 mg daily | HTN |
+| | OnabotulinumtoxinA (bladder) | 100-200 units injection | Retention |
+| | Intermittent catheterization | As needed | UTI |
+| **Bladder (retention)** | Clean intermittent cath | Schedule-based | UTI prevention |
+| **Neuropathic pain** | Gabapentin | 300-1200 mg TID | Sedation |
+| | Pregabalin | 75-300 mg BID | Same |
+| | Duloxetine | 30-60 mg daily | Nausea |
+| | Carbamazepine (trigeminal) | 200-400 mg BID | Rash, CBC, LFTs |
+| **Depression** | SSRIs (sertraline, escitalopram) | Standard dosing | Per SSRI |
+| **Cognitive dysfunction** | Cognitive rehabilitation | PT/OT/neuropsych referral | Progress |
+| **Tremor** | Propranolol | 40-160 mg/day | HR, BP |
+| | Clonazepam | 0.5-2 mg QHS | Sedation |
+| **Sexual dysfunction** | Sildenafil (male) | 25-100 mg PRN | BP with nitrates |
+| | Refer to specialist | Female; multifactorial | Per evaluation |
+
+---
+
+## 4. OTHER RECOMMENDATIONS
+
+### 4A. Referrals & Consults
+
+| Recommendation | ED | HOSP | OPD | ICU | Indication |
+|----------------|:--:|:----:|:---:|:---:|------------|
+| MS specialist/Neurologist | - | ROUTINE | ROUTINE | - | All patients; DMT selection and monitoring |
+| Neuro-ophthalmology | - | ROUTINE | ROUTINE | - | Optic neuritis, visual symptoms |
+| Physical therapy | - | ROUTINE | ROUTINE | - | Gait, balance, strengthening, spasticity |
+| Occupational therapy | - | ROUTINE | ROUTINE | - | ADLs, fatigue management, adaptive equipment |
+| Speech therapy | - | ROUTINE | ROUTINE | - | Dysphagia, dysarthria, cognitive-communication |
+| Neuropsychology | - | - | ROUTINE | - | Cognitive assessment, rehabilitation |
+| Urology | - | - | ROUTINE | - | Bladder management, urodynamics |
+| Psychiatry | - | ROUTINE | ROUTINE | - | Depression, anxiety, pseudobulbar affect |
+| Maternal-fetal medicine | - | - | ROUTINE | - | Pregnancy planning, high-risk pregnancy |
+| Social work | - | ROUTINE | ROUTINE | - | Disability services, resources |
+
+### 4B. Patient/Family Instructions
+
+| Recommendation | ED | HOSP | OPD |
+|----------------|:--:|:----:|:---:|
+| MS is a chronic condition requiring lifelong management | - | ROUTINE | ROUTINE |
+| Take DMT as prescribed; do not stop without consulting neurologist | - | ROUTINE | ROUTINE |
+| Report new symptoms promptly (may be relapse) | - | ROUTINE | ROUTINE |
+| Avoid overheating (Uhthoff phenomenon); swimming and cooling vests help | - | ROUTINE | ROUTINE |
+| Vaccination: Get flu and COVID vaccines; avoid live vaccines on most DMTs | - | ROUTINE | ROUTINE |
+| Infections can trigger pseudorelapses; treat promptly | - | ROUTINE | ROUTINE |
+| Pregnancy planning: Many DMTs contraindicated; discuss before conception | - | ROUTINE | ROUTINE |
+| National MS Society (nationalmssociety.org) for resources | - | - | ROUTINE |
+
+### 4C. Lifestyle & Prevention
+
+| Recommendation | ED | HOSP | OPD |
+|----------------|:--:|:----:|:---:|
+| Regular exercise (aerobic + strength) improves fatigue, mood, function | - | ROUTINE | ROUTINE |
+| Maintain vitamin D levels (40-60 ng/mL); supplement if low | - | ROUTINE | ROUTINE |
+| No smoking (worsens progression) | - | ROUTINE | ROUTINE |
+| Healthy diet (Mediterranean-style) | - | - | ROUTINE |
+| Adequate sleep | - | ROUTINE | ROUTINE |
+| Stress management | - | - | ROUTINE |
+| Avoid excessive heat exposure | - | ROUTINE | ROUTINE |
+
+---
+
+## 5. DIFFERENTIAL DIAGNOSIS
+
+| Alternative Diagnosis | Key Distinguishing Features | Tests to Differentiate |
+|-----------------------|----------------------------|------------------------|
+| Neuromyelitis optica spectrum disorder | AQP4-IgG+, longitudinally extensive myelitis, bilateral optic neuritis | AQP4-IgG, MOG-IgG; MRI pattern |
+| MOG antibody disease | MOG-IgG+, optic neuritis, myelitis, ADEM-like | MOG-IgG |
+| CNS vasculitis | Progressive, multifocal; systemic symptoms | Angiography, biopsy |
+| Neurosarcoidosis | Leptomeningeal enhancement, systemic sarcoid | ACE level, chest imaging, biopsy |
+| Lyme disease | Endemic area, systemic symptoms | Lyme serology |
+| B12 deficiency myelopathy | Subacute combined degeneration, macrocytic anemia | B12 level, MMA |
+| Migraine with MRI lesions | Headache predominant; non-specific white matter lesions | Clinical; lesion pattern different |
+
+## 6. MONITORING PARAMETERS
+
+| Parameter | ED | HOSP | OPD | ICU | Frequency | Target/Threshold | Action if Abnormal |
+|-----------|:--:|:----:|:---:|:---:|-----------|------------------|-------------------|
+| EDSS score | - | - | ROUTINE | - | q6-12 months | Stable or improving | Assess treatment efficacy |
+| MRI brain | - | - | ROUTINE | - | Baseline, 6mo, then annually | No new/enlarging lesions | Treatment escalation |
+| Relapse count | - | ROUTINE | ROUTINE | - | Ongoing | ≤1 per year (ideally 0) | Treatment escalation |
+| CBC (most DMTs) | - | ROUTINE | ROUTINE | - | q3-6 months | Normal; lymphocyte count per DMT | Hold DMT if low |
+| LFTs (hepatotoxic DMTs) | - | ROUTINE | ROUTINE | - | q3-6 months | Normal | Hold DMT if elevated |
+| JCV antibody (natalizumab) | - | - | ROUTINE | - | q6 months | Monitor index; PML risk stratification | Switch if high-risk |
+| Vitamin D | - | - | ROUTINE | - | Annually | 40-60 ng/mL | Supplement |
+| Urinalysis | - | ROUTINE | ROUTINE | - | If relapse suspected | Negative (rule out UTI) | Treat UTI |
+
+## 7. DISPOSITION CRITERIA
+
+| Disposition | Criteria |
+|-------------|----------|
+| Outpatient management | Stable MS, on appropriate DMT, routine monitoring |
+| Admit to hospital | Acute relapse requiring IV steroids, severe relapse, functional decline |
+| MS specialist follow-up | q3-6 months while adjusting DMT; q6-12 months once stable |
+| Urgent follow-up | New relapse, DMT side effects, significant progression |
+
+## 8. EVIDENCE & REFERENCES
+
+| Recommendation | Evidence Level | Source |
+|----------------|----------------|--------|
+| High-efficacy DMTs reduce relapses/progression | Class I, Level A | Multiple RCTs |
+| Ocrelizumab effective for PPMS | Class I, Level A | ORATORIO trial |
+| Early high-efficacy treatment improves long-term outcomes | Class II, Level B | Observational data |
+| IV steroids for acute relapse | Class I, Level A | Multiple RCTs |
+| Vitamin D supplementation may reduce relapse | Class II, Level B | Observational data; RCTs ongoing |
+| Exercise improves fatigue and quality of life | Class I, Level A | Multiple RCTs |
+| Natalizumab PML risk stratification | Class I | JCV antibody testing; risk algorithms |
+| Siponimod for active SPMS | Class I, Level A | EXPAND trial |
+
+---
+
+## NOTES
+
+- MS is a heterogeneous disease requiring individualized treatment
+- "Treat early, treat effectively" philosophy - high-efficacy therapy increasingly used first-line
+- NEDA (No Evidence of Disease Activity) is aspirational goal: no relapses, no progression, no MRI activity
+- DMT escalation indicated for breakthrough disease (relapses, new MRI lesions, progression)
+- PML risk with natalizumab: JCV+, prior immunosuppression, and duration >2 years are major risk factors
+- S1P receptor modulators (fingolimod, siponimod, ozanimod, ponesimod) require first-dose cardiac monitoring (less for ozanimod)
+- Anti-CD20 therapies (ocrelizumab, ofatumumab, ublituximab) very effective but infection risk
+- Alemtuzumab highly effective but requires 4+ years of monthly monitoring for autoimmune complications
+- Pregnancy: Most DMTs contraindicated; glatiramer acetate considered safest; natalizumab continued in high-risk cases
+- Many symptoms (fatigue, bladder, spasticity, pain) significantly impact quality of life and are treatable
+
+---
+
+## CHANGE LOG
+
+**v1.0 (January 29, 2026)**
+- Initial template creation
+- Comprehensive DMT list with monitoring requirements
+- Symptom management section
+- Pregnancy considerations noted
+- PML risk stratification for natalizumab
+- Progressive MS treatment (ocrelizumab, siponimod)

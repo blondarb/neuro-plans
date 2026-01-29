@@ -36,6 +36,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [Guillain-Barré Syndrome](guillain-barre-syndrome.md) | ED, HOSP, ICU | G61.0 |
+| [CIDP](cidp.md) | HOSP, OPD | G61.81 |
 | [Myasthenic Crisis](myasthenia-gravis-crisis.md) | ED, HOSP, ICU | G70.01 |
 | [MG - New Diagnosis](myasthenia-gravis-new-diagnosis.md) | HOSP, OPD | G70.0 |
 | [Neuromuscular Respiratory Failure](neuromuscular-respiratory-failure.md) | ED, HOSP, ICU | G70.01, G61.0, J96.00 |
@@ -85,6 +86,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [MS New Diagnosis](ms-new-diagnosis.md) | HOSP, OPD | G35 |
+| [MS Chronic Management](ms-chronic-management.md) | HOSP, OPD | G35 |
 
 ---
 
@@ -93,6 +95,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [Migraine](migraine.md) | ED, HOSP, OPD | G43.909, G43.919, G43.901 |
+| [Cluster Headache](cluster-headache.md) | ED, HOSP, OPD | G44.009, G44.001 |
+| [Medication Overuse Headache](medication-overuse-headache.md) | HOSP, OPD | G44.40, G44.41 |
 
 ---
 
@@ -102,6 +106,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 |------|------------------|--------|
 | [Parkinson's Disease - New Diagnosis](parkinsons-disease-new-diagnosis.md) | HOSP, OPD | G20, G20.A1, G20.C |
 | [Essential Tremor](essential-tremor.md) | HOSP, OPD | G25.0 |
+| [Restless Legs Syndrome](restless-legs-syndrome.md) | HOSP, OPD | G25.81 |
 
 ---
 
