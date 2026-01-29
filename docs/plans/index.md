@@ -41,6 +41,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [MG - New Diagnosis](myasthenia-gravis-new-diagnosis.md) | HOSP, OPD | G70.0 |
 | [Neuromuscular Respiratory Failure](neuromuscular-respiratory-failure.md) | ED, HOSP, ICU | G70.01, G61.0, J96.00 |
 | [Peripheral Neuropathy](peripheral-neuropathy.md) | HOSP, OPD | G62.9 |
+| [Diabetic Neuropathy](diabetic-neuropathy.md) | ED, HOSP, OPD | E11.40, E11.42, G63.2 |
 
 ---
 
@@ -124,6 +125,31 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [Bell's Palsy](bells-palsy.md) | ED, HOSP, OPD | G51.0 |
+| [Trigeminal Neuralgia](trigeminal-neuralgia.md) | ED, HOSP, OPD | G50.0 |
+
+---
+
+## Intracranial Pressure
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Idiopathic Intracranial Hypertension](idiopathic-intracranial-hypertension.md) | ED, HOSP, OPD | G93.2 |
+
+---
+
+## Metabolic & Nutritional
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Wernicke Encephalopathy](wernicke-encephalopathy.md) | ED, HOSP, ICU | E51.2 |
+
+---
+
+## Syncope & Autonomic
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Syncope Evaluation](syncope.md) | ED, HOSP, OPD | R55 |
 
 ---
 
