@@ -1,0 +1,1347 @@
+{
+  "id": "dystonia",
+  "title": "Dystonia",
+  "version": "1.1",
+  "icd10": [
+    "** G24.9 (Dystonia",
+    "unspecified)",
+    "G24.1 (Genetic torsion dystonia)",
+    "G24.2 (Idiopathic nonfamilial dystonia)",
+    "G24.3 (Spasmodic torticollis)",
+    "G24.5 (Blepharospasm)",
+    "G24.8 (Other dystonia)"
+  ],
+  "scope": "** Diagnosis, classification, workup for secondary causes, and symptomatic management of dystonia. Covers focal (cervical, blepharospasm, writer's cramp), segmental, and generalized forms. Includes evaluation for Wilson's disease, dopa-responsive dystonia, and drug-induced dystonia.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline; exclude systemic illness",
+          "target": "Normal"
+        },
+        {
+          "item": "BMP (CPT 80048)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolyte abnormalities can exacerbate movement disorders",
+          "target": "Normal"
+        },
+        {
+          "item": "Hepatic panel (AST, ALT, Alk Phos, bilirubin, albumin) (CPT 80076)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen for hepatic dysfunction suggesting Wilson's disease",
+          "target": "Normal"
+        },
+        {
+          "item": "Ceruloplasmin (CPT 82390)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Wilson's disease screen; essential for age <50 with dystonia",
+          "target": ">20 mg/dL (low suggests Wilson's)"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hyperthyroidism can cause movement disorders",
+          "target": "Normal (0.4-4.0 mIU/L)"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "24-hour urine copper (CPT 82525)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Wilson's disease confirmation if ceruloplasmin low/borderline",
+          "target": "<40 mcg/24hr (elevated in Wilson's)"
+        },
+        {
+          "item": "Serum copper (CPT 82525)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Interpret with ceruloplasmin (low free copper ratio in Wilson's)",
+          "target": "75-145 mcg/dL"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency causes myelopathy and movement disorders",
+          "target": ">300 pg/mL"
+        },
+        {
+          "item": "Ferritin (CPT 82728), serum iron (CPT 83540), TIBC (CPT 83550)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurodegeneration with brain iron accumulation (NBIA)",
+          "target": "Normal"
+        },
+        {
+          "item": "Uric acid (CPT 84550)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Low in ataxia-telangiectasia, Lesch-Nyhan",
+          "target": "Normal"
+        },
+        {
+          "item": "Lactate (CPT 83605), pyruvate (CPT 84210)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Mitochondrial disorders",
+          "target": "Normal"
+        },
+        {
+          "item": "Calcium (CPT 82310), magnesium (CPT 83735)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypocalcemia, hypomagnesemia can cause movement disorders",
+          "target": "Normal"
+        },
+        {
+          "item": "CK (CPT 82550)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Elevated in dystonia crises, NMS, prolonged dystonic posturing",
+          "target": "Normal or mildly elevated"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "ATP7B gene sequencing (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Definitive Wilson's disease diagnosis",
+          "target": "No pathogenic variants"
+        },
+        {
+          "item": "GCH1 gene sequencing (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Dopa-responsive dystonia (DYT5a)",
+          "target": "No pathogenic variants"
+        },
+        {
+          "item": "TOR1A gene sequencing (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "DYT1 dystonia (early-onset generalized)",
+          "target": "No GAG deletion"
+        },
+        {
+          "item": "THAP1 gene sequencing (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "DYT6 dystonia",
+          "target": "No pathogenic variants"
+        },
+        {
+          "item": "Dystonia gene panel (multi-gene NGS) (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Atypical presentations; family history; early onset",
+          "target": "No pathogenic variants"
+        },
+        {
+          "item": "CSF neurotransmitter metabolites (HVA, 5-HIAA, pterins) (CPT 83519)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Dopa-responsive dystonia; neurotransmitter disorders",
+          "target": "Normal ratios"
+        },
+        {
+          "item": "Acanthocyte smear (CPT 85060)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Chorea-acanthocytosis, McLeod syndrome",
+          "target": "No acanthocytes"
+        },
+        {
+          "item": "Lysosomal enzyme panel (CPT 82657)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Lysosomal storage disorders (GM1, GM2 gangliosidosis)",
+          "target": "Normal enzyme activity"
+        },
+        {
+          "item": "Anti-neuronal antibodies (NMDAR, LGI1, CASPR2) (CPT 86255)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune dystonia (rare)",
+          "target": "Negative"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (CPT 86235)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraneoplastic dystonia",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI Brain without and with contrast (CPT 70553)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "All new dystonia cases; rule out structural lesion",
+          "target": "Normal; no basal ganglia lesions",
+          "contraindications": "MRI-incompatible devices"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI Brain with SWI/iron sequences (CPT 70553)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Suspected Wilson's disease or NBIA",
+          "target": "No T2 hypointensity in basal ganglia",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "Slit lamp examination by ophthalmology (CPT 92012)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Wilson's disease evaluation; Kayser-Fleischer rings",
+          "target": "No KF rings",
+          "contraindications": "None"
+        },
+        {
+          "item": "EMG with dystonia protocol (CPT 95907-95913)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Confirm diagnosis; characterize pattern; guide botulinum toxin",
+          "target": "Co-contraction of agonist/antagonist; overflow",
+          "contraindications": "None"
+        },
+        {
+          "item": "DaTscan (ioflupane I-123) (CPT 78607)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Differentiate dystonic tremor from PD; combined dystonia-parkinsonism",
+          "target": "Normal in primary dystonia; abnormal if parkinsonism",
+          "contraindications": "Iodine allergy"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "MRI Spine (cervical/thoracic) (CPT 72156)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Cervical dystonia with radiculopathy symptoms",
+          "target": "Normal; no cord compression",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "FDG-PET Brain (CPT 78816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Atypical parkinsonism with dystonia",
+          "target": "Pattern interpretation varies",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Liver MRI or ultrasound (CPT 74183/76700)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Wilson's disease staging if diagnosed",
+          "target": "Assess hepatic involvement",
+          "contraindications": "None significant"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Diphenhydramine",
+          "route": "IV/IM",
+          "indication": "Acute dystonic reaction (drug-induced)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Diphenhydramine 25 mg IV/IM"
+              }
+            ],
+            "route": "IV/IM",
+            "instructions": "25-50 mg IV/IM over 2-5 min; may repeat in 30 min if needed; max 100 mg",
+            "orderSentence": "Diphenhydramine 25 mg IV/IM"
+          },
+          "contraindications": "Narrow-angle glaucoma; urinary retention",
+          "monitoring": "Sedation, hypotension",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Benztropine",
+          "route": "IV/IM",
+          "indication": "Acute dystonic reaction (drug-induced)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Benztropine 1 mg IV/IM"
+              }
+            ],
+            "route": "IV/IM",
+            "instructions": "1-2 mg IV/IM; may repeat in 30 min; follow with oral 1-2 mg BID x 2-3 days to prevent recurrence",
+            "orderSentence": "Benztropine 1 mg IV/IM"
+          },
+          "contraindications": "Narrow-angle glaucoma; GI obstruction; myasthenia gravis",
+          "monitoring": "Anticholinergic effects, confusion (elderly)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV/PO",
+          "indication": "Status dystonicus; severe dystonic storm",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Lorazepam 1 mg IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "1-2 mg IV slow push or 2-4 mg PO; may repeat q4-6h PRN; monitor respiratory status",
+            "orderSentence": "Lorazepam 1 mg IV/PO"
+          },
+          "contraindications": "Severe respiratory depression; acute narrow-angle glaucoma",
+          "monitoring": "Respiratory depression, sedation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Diazepam",
+          "route": "IV/PO",
+          "indication": "Status dystonicus; muscle spasm relief",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Diazepam 5 mg IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "5-10 mg IV slow push (2 mg/min) or PO; may repeat q4h PRN",
+            "orderSentence": "Diazepam 5 mg IV/PO"
+          },
+          "contraindications": "Severe respiratory depression; acute narrow-angle glaucoma",
+          "monitoring": "Respiratory depression, sedation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments (First-line for Focal Dystonia)": [
+        {
+          "item": "OnabotulinumtoxinA (Botox) - Cervical dystonia",
+          "route": "IM",
+          "indication": "First-line for cervical dystonia/torticollis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 units",
+                "orderSentence": "OnabotulinumtoxinA (Botox) - Cervical dystonia 100 units IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Start 100-200 units divided among affected muscles (SCM, splenius, trapezius, levator scapulae); adjust based on response; max 300 units/session; repeat q12wk",
+            "orderSentence": "OnabotulinumtoxinA (Botox) - Cervical dystonia 100 units IM"
+          },
+          "contraindications": "Infection at site; myasthenia gravis; ALS",
+          "monitoring": "Dysphagia (especially bilateral SCM); neck weakness; antibody formation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "OnabotulinumtoxinA (Botox) - Blepharospasm",
+          "route": "IM",
+          "indication": "First-line for blepharospasm",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 units",
+                "orderSentence": "OnabotulinumtoxinA (Botox) - Blepharospasm 25 units IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "1.25-5 units per site; inject orbicularis oculi at multiple points; total 25-50 units per eye; repeat q12wk",
+            "orderSentence": "OnabotulinumtoxinA (Botox) - Blepharospasm 25 units IM"
+          },
+          "contraindications": "Infection at site; myasthenia gravis; ALS",
+          "monitoring": "Ptosis, diplopia, dry eyes, lagophthalmos",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "OnabotulinumtoxinA (Botox) - Writer's cramp",
+          "route": "IM",
+          "indication": "Focal hand dystonia refractory to therapy modification",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 units",
+                "orderSentence": "OnabotulinumtoxinA (Botox) - Writer's cramp 50 units IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "10-50 units per muscle; EMG guidance required; target FCR, FCU, FDS as needed; repeat q12wk",
+            "orderSentence": "OnabotulinumtoxinA (Botox) - Writer's cramp 50 units IM"
+          },
+          "contraindications": "Infection at site; myasthenia gravis; ALS",
+          "monitoring": "Finger weakness (may impair function)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "AbobotulinumtoxinA (Dysport) - Cervical dystonia",
+          "route": "IM",
+          "indication": "Alternative to onabotulinum; different potency",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 units",
+                "orderSentence": "AbobotulinumtoxinA (Dysport) - Cervical dystonia 500 units IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Start 500 units divided among affected muscles; max 1000 units/session; repeat q12wk",
+            "orderSentence": "AbobotulinumtoxinA (Dysport) - Cervical dystonia 500 units IM"
+          },
+          "contraindications": "Infection at site; myasthenia gravis; ALS",
+          "monitoring": "Dysphagia (especially bilateral SCM); neck weakness; antibody formation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IncobotulinumtoxinA (Xeomin) - Cervical dystonia",
+          "route": "IM",
+          "indication": "Alternative; no complexing proteins",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "120 units",
+                "orderSentence": "IncobotulinumtoxinA (Xeomin) - Cervical dystonia 120 units IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Start 120-200 units divided; max 300 units/session; repeat q12wk; may have lower immunogenicity",
+            "orderSentence": "IncobotulinumtoxinA (Xeomin) - Cervical dystonia 120 units IM"
+          },
+          "contraindications": "Infection at site; myasthenia gravis; ALS",
+          "monitoring": "Dysphagia (especially bilateral SCM); neck weakness; antibody formation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "RimabotulinumtoxinB (Myobloc) - Cervical dystonia",
+          "route": "IM",
+          "indication": "Type A toxin non-responders; secondary non-response",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2500 units",
+                "orderSentence": "RimabotulinumtoxinB (Myobloc) - Cervical dystonia 2500 units IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Start 2500-5000 units divided; max 10000 units; repeat q12wk; higher dry mouth rate",
+            "orderSentence": "RimabotulinumtoxinB (Myobloc) - Cervical dystonia 2500 units IM"
+          },
+          "contraindications": "Infection at site; myasthenia gravis; ALS; type B protein allergy",
+          "monitoring": "Dry mouth; dysphagia; neck weakness; antibody formation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Oral Medications": [
+        {
+          "item": "Trihexyphenidyl",
+          "route": "PO",
+          "indication": "First-line oral for generalized dystonia; young patients tolerate best",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Trihexyphenidyl 1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg daily; increase by 1-2 mg q3-5d; typical target 6-30 mg/day divided TID; some patients require up to 60-80 mg/day",
+            "orderSentence": "Trihexyphenidyl 1 mg PO"
+          },
+          "contraindications": "Narrow-angle glaucoma; GI obstruction; urinary retention; dementia",
+          "monitoring": "Anticholinergic effects (dry mouth, constipation, urinary retention, confusion); cognitive effects in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Benztropine",
+          "route": "PO",
+          "indication": "Alternative anticholinergic; maintenance after acute dystonic reaction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Benztropine 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.5 mg BID; increase by 0.5 mg q5-7d; typical 1-4 mg/day; max 6 mg/day",
+            "orderSentence": "Benztropine 0.5 mg PO"
+          },
+          "contraindications": "Narrow-angle glaucoma; GI obstruction; urinary retention; dementia",
+          "monitoring": "Anticholinergic effects (dry mouth, constipation, urinary retention, confusion); cognitive effects in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Muscle relaxant; useful adjunct for dystonia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; increase by 5 mg/dose q3d; typical 30-80 mg/day divided TID; max 80-120 mg/day",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); abrupt withdrawal risk",
+          "monitoring": "Sedation, weakness; taper slowly if discontinuing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonazepam",
+          "route": "PO",
+          "indication": "Adjunct for dystonia; myoclonus-dystonia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg",
+                "orderSentence": "Clonazepam 0.25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.25 mg BID; increase by 0.25-0.5 mg q3-7d; typical 1-4 mg/day; max 6 mg/day",
+            "orderSentence": "Clonazepam 0.25 mg PO"
+          },
+          "contraindications": "Respiratory depression; severe hepatic impairment; substance abuse history",
+          "monitoring": "Sedation, dependence, falls; taper if discontinuing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Diazepam",
+          "route": "PO",
+          "indication": "Alternative benzodiazepine; muscle relaxant properties",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Diazepam 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg TID; increase by 2-5 mg/day q3-7d; typical 10-40 mg/day divided",
+            "orderSentence": "Diazepam 2 mg PO"
+          },
+          "contraindications": "Respiratory depression; severe hepatic impairment; substance abuse history",
+          "monitoring": "Sedation, dependence, falls; taper if discontinuing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levodopa/Carbidopa",
+          "route": "PO",
+          "indication": "Dopa-responsive dystonia (DRD); diagnostic trial for young-onset",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25/100 mg",
+                "orderSentence": "Levodopa/Carbidopa 25/100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25/100 mg TID; if DRD, dramatic response at low dose; may titrate to 50/200 mg TID; response confirms diagnosis",
+            "orderSentence": "Levodopa/Carbidopa 25/100 mg PO"
+          },
+          "contraindications": "None absolute; use caution in psychosis",
+          "monitoring": "Nausea, orthostatic hypotension; dramatic improvement suggests DRD",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tetrabenazine",
+          "route": "PO",
+          "indication": "Hyperkinetic movements including some dystonias",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg",
+                "orderSentence": "Tetrabenazine 12.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 12.5 mg daily; increase by 12.5 mg q1wk; max 200 mg/day; CYP2D6 testing recommended",
+            "orderSentence": "Tetrabenazine 12.5 mg PO"
+          },
+          "contraindications": "Depression; suicidality; Parkinsonism",
+          "monitoring": "Depression, sedation, parkinsonism, akathisia; Black Box: suicidality",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Deutetrabenazine (Austedo)",
+          "route": "PO",
+          "indication": "Longer half-life alternative to tetrabenazine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6 mg",
+                "orderSentence": "Deutetrabenazine (Austedo) 6 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 6 mg BID; increase by 6 mg/day weekly; max 48 mg/day",
+            "orderSentence": "Deutetrabenazine (Austedo) 6 mg PO"
+          },
+          "contraindications": "Depression; suicidality; Parkinsonism",
+          "monitoring": "Depression, sedation, parkinsonism, akathisia; Black Box: suicidality; may be better tolerated than tetrabenazine",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonidine",
+          "route": "PO",
+          "indication": "Adjunct; may help in some patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg",
+                "orderSentence": "Clonidine 0.1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.1 mg BID; increase by 0.1 mg q1wk; max 0.6 mg/day",
+            "orderSentence": "Clonidine 0.1 mg PO"
+          },
+          "contraindications": "Severe bradycardia; renal impairment (adjust)",
+          "monitoring": "Hypotension, bradycardia, sedation; rebound hypertension if stopped abruptly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbamazepine",
+          "route": "PO",
+          "indication": "Paroxysmal kinesigenic dystonia/dyskinesia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Carbamazepine 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg BID; increase by 100-200 mg q1wk; target 400-800 mg/day; check HLA-B*1502 in at-risk populations",
+            "orderSentence": "Carbamazepine 100 mg PO"
+          },
+          "contraindications": "Bone marrow suppression; AV block; SJS risk (HLA-B*1502)",
+          "monitoring": "CBC, LFTs, sodium; drug levels (4-12 mcg/mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying/Specialized Therapies": [
+        {
+          "item": "Deep brain stimulation (GPi-DBS)",
+          "route": "Surgical",
+          "indication": "Medication-refractory generalized or segmental dystonia; DYT1 positive",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Bilateral GPi stimulation",
+                "orderSentence": "Deep brain stimulation (GPi-DBS) Bilateral GPi stimulation Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Bilateral GPi electrode placement; programming over weeks-months; full effect may take 6-12 months",
+            "orderSentence": "Deep brain stimulation (GPi-DBS) Bilateral GPi stimulation Surgical"
+          },
+          "pretreatment": "MRI; neuropsych testing; multidisciplinary evaluation; genetic testing if indicated",
+          "contraindications": "Cognitive impairment; coagulopathy; infection; unrealistic expectations",
+          "monitoring": "Programming optimization; battery replacement q3-5yr; speech/swallowing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Deep brain stimulation (GPi-DBS)",
+          "route": "Surgical",
+          "indication": "Cervical dystonia refractory to botulinum toxin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Bilateral GPi stimulation",
+                "orderSentence": "Deep brain stimulation (GPi-DBS) Bilateral GPi stimulation Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Bilateral GPi electrode placement; programming over weeks-months; full effect may take 6-12 months",
+            "orderSentence": "Deep brain stimulation (GPi-DBS) Bilateral GPi stimulation Surgical"
+          },
+          "pretreatment": "MRI; neuropsych testing; multidisciplinary evaluation; genetic testing if indicated",
+          "contraindications": "Cognitive impairment; coagulopathy; infection; unrealistic expectations",
+          "monitoring": "Programming optimization; battery replacement q3-5yr; speech/swallowing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Intrathecal baclofen pump",
+          "route": "Surgical",
+          "indication": "Severe generalized dystonia with spasticity component; CP-related",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mcg",
+                "orderSentence": "Intrathecal baclofen pump 25 mcg IT"
+              }
+            ],
+            "route": "IT",
+            "instructions": "Test dose 25-100 mcg; maintenance typically 100-1000 mcg/day; titrate over months",
+            "orderSentence": "Intrathecal baclofen pump 25 mcg IT"
+          },
+          "pretreatment": "IT baclofen trial with >50% improvement",
+          "contraindications": "Infection; CSF obstruction; baclofen hypersensitivity",
+          "monitoring": "Pump refills q1-3mo; withdrawal syndrome if interruption; MRI conditional pumps",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "D-penicillamine",
+          "route": "PO",
+          "indication": "Wilson's disease with neurological symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "D-penicillamine 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg daily; increase by 250 mg q4-7d; target 1000-1500 mg/day divided BID (take 1hr before meals); lifelong treatment",
+            "orderSentence": "D-penicillamine 250 mg PO"
+          },
+          "pretreatment": "24h urine copper, LFTs, CBC, urinalysis",
+          "contraindications": "Penicillin allergy (not absolute but caution); nephrotoxicity",
+          "monitoring": "CBC weekly x1mo then monthly x6mo then q3mo; urinalysis monthly; LFTs monthly; neurologic worsening first 6 months possible",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trientine (Syprine)",
+          "route": "PO",
+          "indication": "Wilson's disease; D-penicillamine intolerant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Trientine (Syprine) 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg TID; target 750-1250 mg/day divided TID; take 1hr before or 2hr after meals",
+            "orderSentence": "Trientine (Syprine) 250 mg PO"
+          },
+          "pretreatment": "24h urine copper, LFTs, CBC, urinalysis",
+          "contraindications": "Caution with iron supplements (separate by 2hr)",
+          "monitoring": "CBC, LFTs, urinalysis monthly initially then q3mo; fewer side effects than D-penicillamine",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Zinc acetate (Galzin)",
+          "route": "PO",
+          "indication": "Wilson's disease maintenance; presymptomatic; adjunct",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Zinc acetate (Galzin) 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg TID (elemental zinc); take between meals; blocks intestinal copper absorption",
+            "orderSentence": "Zinc acetate (Galzin) 50 mg PO"
+          },
+          "pretreatment": "Take separately from copper chelators",
+          "contraindications": "GI upset",
+          "monitoring": "24h urine copper; serum zinc; 24h urine zinc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Movement disorders neurology for diagnosis confirmation, classification, and treatment planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology for slit lamp examination to evaluate for Kayser-Fleischer rings (Wilson's disease workup)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatology if Wilson's disease diagnosed for hepatic management and transplant evaluation if severe",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic counseling if genetic dystonia confirmed or suspected (DYT1, DYT6, GCH1)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurosurgery consultation for DBS evaluation if medication-refractory",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for posture correction, stretching, and range of motion exercises",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for adaptive techniques and assistive devices for ADLs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech therapy if oromandibular dystonia, laryngeal dystonia, or cervical dystonia affecting swallowing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management if chronic pain from dystonic posturing not controlled with primary treatment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychology/psychiatry for coping strategies, depression/anxiety management related to chronic dystonia",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "After botulinum toxin injection: avoid rubbing injection sites; effects develop over 3-14 days and last 10-12 weeks",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report any swallowing difficulty or breathing problems after botulinum toxin injection (may indicate spread)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Use sensory tricks (geste antagoniste) such as touching chin or face which may temporarily reduce cervical dystonia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED if severe muscle spasms with fever, confusion, or dark urine (possible dystonic storm or rhabdomyolysis)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Continue physical therapy exercises at home to maintain range of motion and prevent contractures",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid medications that worsen dystonia: metoclopramide, prochlorperazine, haloperidol, and other dopamine blockers",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "For Wilson's disease: strict adherence to copper chelation is lifelong; follow dietary copper restrictions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep a symptom diary noting triggers, sensory tricks that help, and response to medications",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Stress management with relaxation techniques as stress can exacerbate dystonia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Adequate sleep as fatigue worsens dystonia symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit caffeine and stimulants which may worsen tremor/dystonia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular gentle exercise (swimming, yoga) to maintain flexibility without overexertion",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Ergonomic workstation modifications for task-specific dystonia (writer's cramp, musician's dystonia)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "For Wilson's disease: avoid high-copper foods (liver, shellfish, chocolate, nuts, mushrooms) especially during initial treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid alcohol especially if on benzodiazepines or with hepatic involvement (Wilson's)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Heat application to affected muscles may provide temporary relief",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Support groups for dystonia provide coping strategies and community connection",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Drug-induced dystonia",
+      "features": "Temporal relationship with dopamine blockers (antipsychotics, antiemetics); acute or tardive",
+      "tests": "Medication history; resolves with withdrawal (acute) or persists (tardive)"
+    },
+    {
+      "diagnosis": "Wilson's disease",
+      "features": "Age <50; hepatic dysfunction; psychiatric symptoms; Kayser-Fleischer rings",
+      "tests": "Ceruloplasmin (low), 24h urine copper (high), slit lamp exam, ATP7B testing"
+    },
+    {
+      "diagnosis": "Dopa-responsive dystonia (DYT5/Segawa)",
+      "features": "Childhood onset; diurnal fluctuation (worse evening); dramatic levodopa response",
+      "tests": "Levodopa trial (dramatic improvement); GCH1 gene testing"
+    },
+    {
+      "diagnosis": "Parkinson's disease with dystonia",
+      "features": "Rest tremor; bradykinesia; rigidity; asymmetric; sustained postures",
+      "tests": "DaTscan (abnormal); clinical exam; levodopa response"
+    },
+    {
+      "diagnosis": "Psychogenic/functional dystonia",
+      "features": "Inconsistent; distractible; fixed posture from onset; associated somatization",
+      "tests": "Clinical features; psychiatric evaluation; resolution with distraction"
+    },
+    {
+      "diagnosis": "Stiff-person syndrome",
+      "features": "Axial rigidity; episodic spasms triggered by startle; anti-GAD antibodies",
+      "tests": "Anti-GAD65 antibodies; EMG (continuous motor unit activity)"
+    },
+    {
+      "diagnosis": "Tardive dystonia",
+      "features": "Prolonged dopamine blocker exposure (months-years); may persist after withdrawal",
+      "tests": "History of antipsychotic/antiemetic use; AIMS assessment"
+    },
+    {
+      "diagnosis": "Cervical spondylotic myelopathy",
+      "features": "Neck pain; sensory symptoms; hyperreflexia; Hoffmann sign",
+      "tests": "MRI C-spine (cord compression, myelopathy signal)"
+    },
+    {
+      "diagnosis": "Torticollis from posterior fossa tumor",
+      "features": "Constant head tilt; headache; papilledema; cranial nerve signs",
+      "tests": "MRI Brain with contrast (tumor, hydrocephalus)"
+    },
+    {
+      "diagnosis": "Neuroacanthocytosis/chorea-acanthocytosis",
+      "features": "Chorea; orofacial dystonia; lip/tongue biting; elevated CK",
+      "tests": "Acanthocyte smear; CK; VPS13A gene testing"
+    },
+    {
+      "diagnosis": "NBIA (neurodegeneration with brain iron accumulation)",
+      "features": "Progressive; childhood/young adult onset; parkinsonism; retinopathy",
+      "tests": "MRI (eye-of-the-tiger sign); genetic panels (PANK2, etc.)"
+    },
+    {
+      "diagnosis": "Meige syndrome",
+      "features": "Combined blepharospasm + oromandibular dystonia",
+      "tests": "Clinical diagnosis; rule out secondary causes"
+    },
+    {
+      "diagnosis": "Myoclonus-dystonia (DYT11)",
+      "features": "Myoclonic jerks + dystonia; alcohol responsive; SGCE gene",
+      "tests": "SGCE gene testing; alcohol response"
+    },
+    {
+      "diagnosis": "Paroxysmal kinesigenic dyskinesia",
+      "features": "Brief attacks (<1 min); triggered by sudden movement; responds to carbamazepine",
+      "tests": "Clinical history; PRRT2 gene testing"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Botulinum toxin first-line for cervical dystonia",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Simpson DM et al. Neurology 2008 (AAN Guideline)](https://pubmed.ncbi.nlm.nih.gov/18458229/)"
+    },
+    {
+      "recommendation": "Botulinum toxin for blepharospasm",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Simpson DM et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18458229/)"
+    },
+    {
+      "recommendation": "GPi-DBS effective for generalized dystonia",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Vidailhet M et al. NEJM 2005](https://pubmed.ncbi.nlm.nih.gov/15689584/)"
+    },
+    {
+      "recommendation": "DBS superior effect in DYT1-positive patients",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Coubes P et al. J Neurosurg 2004](https://pubmed.ncbi.nlm.nih.gov/15540920/)"
+    },
+    {
+      "recommendation": "Trihexyphenidyl for generalized dystonia",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Burke RE et al. Neurology 1986](https://pubmed.ncbi.nlm.nih.gov/3703234/)"
+    },
+    {
+      "recommendation": "Levodopa trial for suspected dopa-responsive dystonia",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Nygaard TG et al. Neurology 1991](https://pubmed.ncbi.nlm.nih.gov/1891117/)"
+    },
+    {
+      "recommendation": "Dystonia classification consensus",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Albanese A et al. Mov Disord 2013](https://pubmed.ncbi.nlm.nih.gov/23649720/)"
+    },
+    {
+      "recommendation": "Wilson's disease diagnosis and treatment",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Roberts EA, Schilsky ML. Hepatology 2008 (AASLD Guideline)](https://pubmed.ncbi.nlm.nih.gov/18506894/)"
+    },
+    {
+      "recommendation": "D-penicillamine for Wilson's disease",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Roberts EA, Schilsky ML. Hepatology 2008](https://pubmed.ncbi.nlm.nih.gov/18506894/)"
+    },
+    {
+      "recommendation": "Intrathecal baclofen for severe dystonia",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Albright AL et al. J Neurosurg 2001](https://pubmed.ncbi.nlm.nih.gov/11453401/)"
+    },
+    {
+      "recommendation": "Benztropine/diphenhydramine for acute dystonic reaction",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[van Harten PN et al. J Clin Psychiatry 1999](https://pubmed.ncbi.nlm.nih.gov/10401919/)"
+    },
+    {
+      "recommendation": "Carbamazepine for paroxysmal kinesigenic dyskinesia",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Bruno MK et al. Brain 2004](https://pubmed.ncbi.nlm.nih.gov/14607786/)"
+    },
+    {
+      "recommendation": "EFNS guidelines on dystonia diagnosis and treatment",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Albanese A et al. Eur J Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/20649898/)"
+    },
+    {
+      "recommendation": "Tetrabenazine for hyperkinetic movement disorders",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Jankovic J, Beach J. Neurology 1997](https://pubmed.ncbi.nlm.nih.gov/9109891/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Dystonia severity (Burke-Fahn-Marsden scale, TWSTRS for cervical)",
+      "frequency": "Each visit",
+      "action": "Adjust botulinum toxin dose/muscles; add oral agent; consider DBS",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Functional status and disability",
+      "frequency": "Each visit",
+      "action": "OT/PT referral; adaptive devices; treatment escalation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Anticholinergic side effects (dry mouth, constipation, urinary retention, cognition)",
+      "frequency": "Each visit on anticholinergics",
+      "action": "Reduce dose; switch agents; add symptomatic treatment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Dysphagia screening (after cervical botulinum toxin)",
+      "frequency": "2 weeks post-injection",
+      "action": "Dietary modification; speech therapy; reduce dose next session",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CK level (if severe dystonia or dystonic storm)",
+      "frequency": "PRN",
+      "action": "IV fluids; monitor renal function; treat underlying cause",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "24-hour urine copper (Wilson's on chelation)",
+      "frequency": "Every 3-6 months",
+      "action": "Adjust chelator dose; assess compliance",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CBC, urinalysis (on D-penicillamine)",
+      "frequency": "Monthly initially then q3mo",
+      "action": "Hold drug if cytopenias or proteinuria; switch to trientine",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "LFTs (Wilson's disease)",
+      "frequency": "Monthly initially then q3mo",
+      "action": "Hepatology consultation if worsening",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Depression screening (on tetrabenazine)",
+      "frequency": "Each visit",
+      "action": "Discontinue tetrabenazine; psychiatric referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "DBS parameters and battery",
+      "frequency": "Every 6-12 months",
+      "action": "Reprogram; schedule battery replacement if needed",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "New diagnosis with workup initiated; mild symptoms; treatment plan in place; follow-up scheduled"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Acute dystonic reaction requiring observation; new generalized dystonia requiring workup; Wilson's disease with hepatic decompensation"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Status dystonicus (dystonic storm); respiratory compromise; rhabdomyolysis; severe drug-induced dystonia with airway concern"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "DBS programming issues requiring movement disorders center; refractory status dystonicus requiring specialized center"
+    },
+    {
+      "disposition": "Outpatient follow-up",
+      "criteria": "2-4 weeks after new medication started; 12 weeks for botulinum toxin reassessment; 6-12 months when stable"
+    }
+  ]
+}

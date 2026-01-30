@@ -42,6 +42,11 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Neuromuscular Respiratory Failure](neuromuscular-respiratory-failure.md) | ED, HOSP, ICU | G70.01, G61.0, J96.00 |
 | [Peripheral Neuropathy](peripheral-neuropathy.md) | HOSP, OPD | G62.9 |
 | [Diabetic Neuropathy](diabetic-neuropathy.md) | ED, HOSP, OPD | E11.40, E11.42, G63.2 |
+| [MG - Outpatient](myasthenia-gravis.md) | ED, HOSP, OPD | G70.00, G70.01 |
+| [ALS](als.md) | ED, HOSP, OPD, ICU | G12.21, G12.20, G12.29 |
+| [Small Fiber Neuropathy](small-fiber-neuropathy.md) | ED, HOSP, OPD | G62.9, G62.89, G90.09 |
+| [Carpal Tunnel Syndrome](carpal-tunnel-syndrome.md) | ED, HOSP, OPD, ICU | G56.00, G56.01, G56.02 |
+| [Radiculopathy](radiculopathy.md) | ED, HOSP, OPD, ICU | M54.10, M54.12, G55, M50.10 |
 
 ---
 
@@ -88,6 +93,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 |------|------------------|--------|
 | [MS New Diagnosis](ms-new-diagnosis.md) | HOSP, OPD | G35 |
 | [MS Chronic Management](ms-chronic-management.md) | HOSP, OPD | G35 |
+| [Optic Neuritis](optic-neuritis.md) | ED, HOSP, OPD | H46.9, H46.00, G36.0 |
 
 ---
 
@@ -98,6 +104,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Migraine](migraine.md) | ED, HOSP, OPD | G43.909, G43.919, G43.901 |
 | [Cluster Headache](cluster-headache.md) | ED, HOSP, OPD | G44.009, G44.001 |
 | [Medication Overuse Headache](medication-overuse-headache.md) | HOSP, OPD | G44.40, G44.41 |
+| [Migraine with Aura](migraine-with-aura.md) | ED, HOSP, OPD | G43.109, G43.101, G43.119 |
+| [Tension-Type Headache](tension-headache.md) | ED, HOSP, OPD | G44.209, G44.219, G44.221 |
 
 ---
 
@@ -108,6 +116,9 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Parkinson's Disease - New Diagnosis](parkinsons-disease-new-diagnosis.md) | HOSP, OPD | G20, G20.A1, G20.C |
 | [Essential Tremor](essential-tremor.md) | HOSP, OPD | G25.0 |
 | [Restless Legs Syndrome](restless-legs-syndrome.md) | HOSP, OPD | G25.81 |
+| [Dystonia](dystonia.md) | ED, HOSP, OPD | G24.9, G24.1, G24.2, G24.3 |
+| [Huntington's Disease](huntingtons-disease.md) | ED, HOSP, OPD | G10, F02.80, F02.81 |
+| [Tardive Dyskinesia](tardive-dyskinesia.md) | ED, HOSP, OPD | G24.01, G24.02, G24.09 |
 
 ---
 
@@ -117,6 +128,12 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 |------|------------------|--------|
 | [Dementia Evaluation](dementia-evaluation.md) | ED, HOSP, OPD | R41.81, F03.90, G30.9 |
 | [Rapidly Progressive Dementia](rapidly-progressive-dementia.md) | HOSP, OPD | F03.90, A81.00 |
+| [Alzheimer's Disease](alzheimers-disease.md) | OPD, HOSP, ED | G30.9, G30.0, G30.1 |
+| [Frontotemporal Dementia](frontotemporal-dementia.md) | OPD, HOSP, ED | G31.09, G31.0 |
+| [Lewy Body Dementia](lewy-body-dementia.md) | ED, HOSP, OPD | G31.83, F02.80, F02.81 |
+| [Vascular Dementia](vascular-dementia.md) | OPD, HOSP, ED | F01.50, F01.51, I67.3 |
+| [Mild Cognitive Impairment](mild-cognitive-impairment.md) | OPD, HOSP | G31.84, F06.7, R41.81 |
+| [Normal Pressure Hydrocephalus](normal-pressure-hydrocephalus.md) | ED, HOSP, OPD | G91.2, G91.0 |
 
 ---
 

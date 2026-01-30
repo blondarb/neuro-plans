@@ -1,0 +1,1417 @@
+{
+  "id": "alzheimers-disease",
+  "title": "Alzheimer's Disease",
+  "version": "1.0",
+  "icd10": [
+    "** G30.9 (Alzheimer's disease",
+    "unspecified)",
+    "G30.0 (Early-onset AD)",
+    "G30.1 (Late-onset AD)",
+    "F02.80 (Dementia in AD without behavioral disturbance)",
+    "F02.81 (Dementia in AD with behavioral disturbance)",
+    "G30.8 (Other Alzheimer's disease)"
+  ],
+  "scope": "** Diagnosis confirmation using NIA-AA criteria, biomarker assessment, pharmacologic treatment with cholinesterase inhibitors and memantine, anti-amyloid disease-modifying therapies, BPSD management, safety planning, and caregiver support. Primarily outpatient-focused with coverage for ED and hospital presentations.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rule out infection, anemia, malignancy contributing to cognitive impairment",
+          "target": "Normal"
+        },
+        {
+          "item": "BMP (CPT 80048)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Metabolic causes of confusion (hyponatremia, uremia, hypoglycemia)",
+          "target": "Normal electrolytes, renal function"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism is reversible cause of cognitive impairment",
+          "target": "0.4-4.0 mIU/L"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency causes reversible cognitive decline",
+          "target": ">300 pg/mL (>400 optimal)"
+        },
+        {
+          "item": "Folate (CPT 82746)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency contributes to cognitive impairment",
+          "target": ">3 ng/mL"
+        },
+        {
+          "item": "Hepatic panel (AST, ALT, albumin) (CPT 80076)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hepatic encephalopathy; nutritional status",
+          "target": "Normal"
+        },
+        {
+          "item": "Calcium (CPT 82310)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypercalcemia causes confusion",
+          "target": "8.5-10.5 mg/dL"
+        },
+        {
+          "item": "Urinalysis (CPT 81003)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "UTI common cause of acute confusion in elderly",
+          "target": "Negative for infection"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Hemoglobin A1c (CPT 83036)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes affects cognition and vascular risk",
+          "target": "<7.0%"
+        },
+        {
+          "item": "Lipid panel (CPT 80061)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Vascular risk factor modification",
+          "target": "LDL <100 mg/dL"
+        },
+        {
+          "item": "Homocysteine (CPT 83090)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Elevated levels associated with AD and vascular disease",
+          "target": "<15 μmol/L"
+        },
+        {
+          "item": "Vitamin D, 25-hydroxy (CPT 82306)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency associated with cognitive decline",
+          "target": ">30 ng/mL"
+        },
+        {
+          "item": "RPR (CPT 86592) or VDRL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis is treatable cause",
+          "target": "Nonreactive"
+        },
+        {
+          "item": "HIV testing (CPT 87389)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated neurocognitive disorder if risk factors",
+          "target": "Negative"
+        },
+        {
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory or autoimmune causes",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "APOE genotyping (CPT 81401)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Risk stratification; ARIA risk assessment for anti-amyloid therapy",
+          "target": "APOE ε4 status"
+        },
+        {
+          "item": "Genetic panel (PSEN1, PSEN2, APP) (CPT 81406)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Early-onset AD (<65) with family history",
+          "target": "No pathogenic mutation (AD diagnosis still valid)"
+        },
+        {
+          "item": "Heavy metal panel (lead, mercury) (CPT 83655, 83825)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "History of occupational exposure",
+          "target": "Normal"
+        },
+        {
+          "item": "Copper (CPT 82525), ceruloplasmin (CPT 82390)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Wilson disease if age <50 with movement disorder",
+          "target": "Normal"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (CPT 86255)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Rapid progression; cancer history",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-neuronal antibodies (NMDA-R, LGI1, CASPR2) (CPT 86255)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Atypical presentation; rapid progression",
+          "target": "Negative"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Cell count, protein, glucose (CPT 89051)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rule out infection, inflammation",
+          "target": "WBC <5, protein <45 mg/dL, glucose >60% serum"
+        },
+        {
+          "item": "CSF Aβ42 (amyloid beta 1-42) (CPT 83519)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Reduced in AD due to brain amyloid deposition",
+          "target": "<600 pg/mL suggests AD pathology"
+        },
+        {
+          "item": "CSF Aβ42/Aβ40 ratio (CPT 83519)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "More accurate than Aβ42 alone",
+          "target": "<0.05-0.08 suggests AD (assay-dependent)"
+        },
+        {
+          "item": "CSF total tau (t-tau) (CPT 83519)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Elevated in neurodegeneration",
+          "target": ">400 pg/mL suggests neuronal injury"
+        },
+        {
+          "item": "CSF phosphorylated tau (p-tau181 or p-tau217) (CPT 83519)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Specific for AD pathology; best discriminator",
+          "target": "Elevated p-tau181 >60 pg/mL or p-tau217 >20 pg/mL"
+        },
+        {
+          "item": "CSF NfL (neurofilament light) (CPT 83519)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Non-specific marker of neuronal damage",
+          "target": "Elevated suggests active neurodegeneration"
+        },
+        {
+          "item": "14-3-3 protein (CPT 83519)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rapid progression; suspected CJD",
+          "target": "Negative (positive suggests CJD)"
+        },
+        {
+          "item": "RT-QuIC",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Prion disease confirmation if suspected",
+          "target": "Negative"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (CPT 86255)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Atypical presentation; subacute onset",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI Brain without contrast (CPT 70551)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At initial evaluation",
+          "target": "Hippocampal and medial temporal atrophy; rule out structural causes (tumor, SDH, NPH, stroke)",
+          "contraindications": "MRI-incompatible devices, severe claustrophobia"
+        },
+        {
+          "item": "CT Head non-contrast (CPT 70450)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If MRI unavailable or contraindicated",
+          "target": "Rule out mass, hemorrhage, hydrocephalus",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Amyloid PET (CPT 78816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Diagnostic uncertainty; anti-amyloid therapy eligibility",
+          "target": "Positive amyloid deposition confirms AD pathology",
+          "contraindications": "None"
+        },
+        {
+          "item": "FDG-PET Brain (CPT 78816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Differentiate AD from FTD; atypical presentations",
+          "target": "AD: bilateral temporoparietal hypometabolism",
+          "contraindications": "None"
+        },
+        {
+          "item": "Tau PET (flortaucipir) (CPT 78816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Staging AD; donanemab eligibility",
+          "target": "Elevated tau correlates with disease stage",
+          "contraindications": "None"
+        },
+        {
+          "item": "MRI Brain volumetrics (CPT 70551)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Baseline for anti-amyloid monitoring; track progression",
+          "target": "Quantify hippocampal and whole brain atrophy",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "MRI with SWI/GRE sequences (CPT 70551)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Pre-treatment for anti-amyloid (microbleed assessment)",
+          "target": "Count microbleeds (<4 eligible for therapy)",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "EEG (CPT 95816)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Seizures, encephalopathy, or rapid decline",
+          "target": "Diffuse slowing typical in AD; rule out CJD",
+          "contraindications": "None"
+        },
+        {
+          "item": "Sleep study (polysomnography) (CPT 95810)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Sleep apnea contributing to cognition; RBD evaluation",
+          "target": "Assess AHI; REM without atonia suggests DLB",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "DaTscan (ioflupane I-123) (CPT 78607)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Differentiate DLB/PDD from AD",
+          "target": "Reduced uptake: DLB; Normal: AD",
+          "contraindications": "Iodine hypersensitivity"
+        },
+        {
+          "item": "SPECT (perfusion) (CPT 78607)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Alternative to PET if unavailable",
+          "target": "Regional hypoperfusion patterns",
+          "contraindications": "None"
+        },
+        {
+          "item": "Whole body PET-CT (CPT 78816)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Paraneoplastic workup if suspected",
+          "target": "Rule out occult malignancy",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Treat reversible causes",
+          "route": "Various",
+          "indication": "Identified metabolic or infectious etiology",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per specific cause",
+                "orderSentence": "Treat reversible causes Per specific cause Various"
+              }
+            ],
+            "route": "Various",
+            "instructions": "Correct hyponatremia slowly, treat UTI, replace B12, treat hypothyroidism",
+            "orderSentence": "Treat reversible causes Per specific cause Various"
+          },
+          "contraindications": "Depends on intervention",
+          "monitoring": "Cognitive reassessment after treatment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Thiamine",
+          "route": "IV/PO",
+          "indication": "Suspected Wernicke's; alcoholism; malnutrition",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg IV TID x 3 days",
+                "orderSentence": "Thiamine 500 mg IV TID x 3 days IV/PO"
+              },
+              {
+                "text": "100 mg PO daily",
+                "orderSentence": "Thiamine 100 mg PO daily IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "500 mg IV TID x 3 days if Wernicke suspected; then 100 mg PO daily maintenance",
+            "orderSentence": "Thiamine 500 mg IV TID x 3 days IV/PO"
+          },
+          "contraindications": "None",
+          "monitoring": "Clinical improvement in confusion",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12",
+          "route": "IM/PO",
+          "indication": "B12 deficiency (<300 pg/mL)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mcg IM daily x 7d",
+                "orderSentence": "Vitamin B12 1000 mcg IM daily x 7d IM/PO"
+              },
+              {
+                "text": "1000 mcg IM weekly x 4wk",
+                "orderSentence": "Vitamin B12 1000 mcg IM weekly x 4wk IM/PO"
+              },
+              {
+                "text": "1000 mcg IM monthly",
+                "orderSentence": "Vitamin B12 1000 mcg IM monthly IM/PO"
+              }
+            ],
+            "route": "IM/PO",
+            "instructions": "1000 mcg IM daily x 7d, then weekly x 4wk, then monthly; or high-dose oral 1000-2000 mcg daily",
+            "orderSentence": "Vitamin B12 1000 mcg IM daily x 7d IM/PO"
+          },
+          "contraindications": "None",
+          "monitoring": "B12 level at 2 months; cognitive improvement over months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Cholinesterase Inhibitors (Cognitive Enhancement)": [
+        {
+          "item": "Donepezil (Aricept)",
+          "route": "PO",
+          "indication": "Mild, moderate, or severe AD (first-line)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Donepezil (Aricept) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg qHS x 4-6 weeks; if tolerated, increase to 10 mg qHS; 23 mg available for moderate-severe AD after stable on 10 mg",
+            "orderSentence": "Donepezil (Aricept) 5 mg PO"
+          },
+          "contraindications": "Sick sinus syndrome; second/third degree heart block without pacemaker; active GI bleeding; severe COPD",
+          "monitoring": "Heart rate; GI symptoms (nausea, diarrhea); vivid dreams; muscle cramps",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rivastigmine oral (Exelon)",
+          "route": "PO",
+          "indication": "Mild-moderate AD; may be better for attention/executive symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1.5 mg",
+                "orderSentence": "Rivastigmine oral (Exelon) 1.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1.5 mg BID with meals; increase by 1.5 mg BID every 2 weeks; target 6 mg BID",
+            "orderSentence": "Rivastigmine oral (Exelon) 1.5 mg PO"
+          },
+          "contraindications": "Sick sinus syndrome; second/third degree heart block; active GI bleeding; severe hepatic impairment",
+          "monitoring": "GI symptoms (most common); weight loss; bradycardia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rivastigmine patch (Exelon Patch)",
+          "route": "TD",
+          "indication": "Mild-moderate AD; better GI tolerability than oral",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4.6 mg/24hr",
+                "orderSentence": "Rivastigmine patch (Exelon Patch) 4.6 mg/24hr TD"
+              }
+            ],
+            "route": "TD",
+            "instructions": "Start 4.6 mg/24hr patch; increase every 4 weeks; target 9.5-13.3 mg/24hr; apply to clean, hairless skin",
+            "orderSentence": "Rivastigmine patch (Exelon Patch) 4.6 mg/24hr TD"
+          },
+          "contraindications": "Sick sinus syndrome; second/third degree heart block; active GI bleeding",
+          "monitoring": "Skin irritation (rotate sites); GI symptoms less than oral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Galantamine (Razadyne)",
+          "route": "PO",
+          "indication": "Mild-moderate AD; dual mechanism (AChE inhibitor + nicotinic modulator)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Galantamine (Razadyne) 4 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 4 mg BID with meals x 4 weeks; increase to 8 mg BID x 4 weeks; target 8-12 mg BID",
+            "orderSentence": "Galantamine (Razadyne) 4 mg PO"
+          },
+          "contraindications": "Sick sinus syndrome; second/third degree heart block; severe renal impairment (CrCl <9); severe hepatic impairment",
+          "monitoring": "GI symptoms; bradycardia; weight loss",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Galantamine ER (Razadyne ER)",
+          "route": "PO",
+          "indication": "Once-daily alternative for adherence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8 mg",
+                "orderSentence": "Galantamine ER (Razadyne ER) 8 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 8 mg daily with breakfast x 4 weeks; increase by 8 mg every 4 weeks; target 16-24 mg daily",
+            "orderSentence": "Galantamine ER (Razadyne ER) 8 mg PO"
+          },
+          "contraindications": "Sick sinus syndrome; second/third degree heart block; severe renal impairment (CrCl <9); severe hepatic impairment",
+          "monitoring": "GI symptoms; bradycardia; weight loss",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "NMDA Receptor Antagonist": [
+        {
+          "item": "Memantine (Namenda)",
+          "route": "PO",
+          "indication": "Moderate-severe AD; add to cholinesterase inhibitor",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Memantine (Namenda) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily x 1 week; increase by 5 mg/week: 5 mg BID, then 5 mg/10 mg, then 10 mg BID",
+            "orderSentence": "Memantine (Namenda) 5 mg PO"
+          },
+          "contraindications": "Severe renal impairment (reduce dose if CrCl 5-29: max 5 mg BID)",
+          "monitoring": "Confusion, dizziness, constipation, headache",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Memantine XR (Namenda XR)",
+          "route": "PO",
+          "indication": "Once-daily option for adherence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "7 mg",
+                "orderSentence": "Memantine XR (Namenda XR) 7 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 7 mg daily; increase by 7 mg/week; target 28 mg daily",
+            "orderSentence": "Memantine XR (Namenda XR) 7 mg PO"
+          },
+          "contraindications": "Severe renal impairment (reduce dose if CrCl 5-29: max 14 mg daily)",
+          "monitoring": "Confusion, dizziness, constipation, headache",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Memantine/Donepezil (Namzaric)",
+          "route": "PO",
+          "indication": "Combination for moderate-severe AD already on both",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "28/10 mg",
+                "orderSentence": "Memantine/Donepezil (Namzaric) 28/10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "One capsule (28 mg memantine XR + 10 mg donepezil) once daily at bedtime; must be stable on both drugs first",
+            "orderSentence": "Memantine/Donepezil (Namzaric) 28/10 mg PO"
+          },
+          "contraindications": "Severe renal impairment; sick sinus syndrome; second/third degree heart block",
+          "monitoring": "Confusion, dizziness, GI symptoms, vivid dreams",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying Therapies (Anti-Amyloid)": [
+        {
+          "item": "Lecanemab (Leqembi)",
+          "route": "IV",
+          "indication": "Early AD (MCI or mild dementia) with confirmed amyloid pathology",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg IV q2wk",
+                "orderSentence": "Lecanemab (Leqembi) 10 mg/kg IV q2wk IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg/kg IV every 2 weeks; infuse over approximately 1 hour",
+            "orderSentence": "Lecanemab (Leqembi) 10 mg/kg IV q2wk IV"
+          },
+          "pretreatment": "Amyloid PET positive OR CSF biomarkers confirming amyloid; MRI within 1 year (assess microbleeds); APOE genotyping strongly recommended; informed consent for ARIA risk",
+          "contraindications": ">4 cerebral microbleeds; superficial siderosis; recent macrohemorrhage; concurrent anticoagulation (relative); APOE ε4/ε4 (higher ARIA risk - not absolute CI)",
+          "monitoring": "MRI: baseline, weeks 7, 14, 52, 78 (ARIA monitoring); clinical assessment for ARIA symptoms (headache, confusion, visual changes)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Donanemab (Kisunla)",
+          "route": "IV",
+          "indication": "Early AD (MCI or mild dementia) with confirmed amyloid AND intermediate/high tau pathology",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "700 mg IV q4wk x 3",
+                "orderSentence": "Donanemab (Kisunla) 700 mg IV q4wk x 3 IV"
+              },
+              {
+                "text": "then 1400 mg IV q4wk",
+                "orderSentence": "Donanemab (Kisunla) then 1400 mg IV q4wk IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "700 mg IV every 4 weeks x 3 doses, then 1400 mg IV every 4 weeks until amyloid clearance (by PET); discontinue when PET negative",
+            "orderSentence": "Donanemab (Kisunla) 700 mg IV q4wk x 3 IV"
+          },
+          "pretreatment": "Amyloid PET positive; Tau PET showing intermediate or high tau levels; MRI baseline; APOE genotyping (higher ARIA in ε4/ε4)",
+          "contraindications": "Same as lecanemab; higher ARIA risk in APOE ε4 homozygotes",
+          "monitoring": "MRI: baseline, weeks 12, 24, 52, 76 (ARIA monitoring); repeat amyloid PET to assess clearance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "~~Aducanumab (Aduhelm)~~",
+          "route": "IV",
+          "indication": "**DISCONTINUED** — Biogen halted Aduhelm commercialization January 2024; no longer available",
+          "dosing": {
+            "instructions": "N/A",
+            "orderSentence": "~~Aducanumab (Aduhelm)~~ - IV - see dosing"
+          },
+          "pretreatment": "N/A",
+          "contraindications": "N/A",
+          "monitoring": "N/A",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Behavioral and Psychological Symptoms of Dementia (BPSD)": [
+        {
+          "item": "Citalopram",
+          "route": "PO",
+          "indication": "Depression; mild-moderate agitation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Citalopram 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg daily; max 20 mg in elderly due to QT prolongation risk",
+            "orderSentence": "Citalopram 10 mg PO"
+          },
+          "contraindications": "QT prolongation; concurrent QT-prolonging drugs; severe hepatic impairment",
+          "monitoring": "ECG at baseline if cardiac risk; QTc monitoring if >20 mg",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sertraline (Zoloft)",
+          "route": "PO",
+          "indication": "Depression; anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sertraline (Zoloft) 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; increase by 25 mg every 1-2 weeks; typical dose 50-100 mg daily",
+            "orderSentence": "Sertraline (Zoloft) 25 mg PO"
+          },
+          "contraindications": "MAOIs; uncontrolled seizures (lowers threshold slightly)",
+          "monitoring": "GI symptoms initially; bleeding risk with anticoagulants",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mirtazapine (Remeron)",
+          "route": "PO",
+          "indication": "Depression with poor appetite, insomnia, and weight loss",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "7.5 mg",
+                "orderSentence": "Mirtazapine (Remeron) 7.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 7.5-15 mg qHS; may increase to 30-45 mg qHS; lower doses more sedating",
+            "orderSentence": "Mirtazapine (Remeron) 7.5 mg PO"
+          },
+          "contraindications": "MAOIs; angle-closure glaucoma",
+          "monitoring": "Weight gain (often desired); sedation; hyperlipidemia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Insomnia; sundowning; mild agitation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Trazodone 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg qHS; titrate by 25-50 mg every 3-5 days; typical 50-150 mg qHS for sleep",
+            "orderSentence": "Trazodone 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; significant QT prolongation",
+          "monitoring": "Orthostatic hypotension (fall risk); priapism (rare); QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Sleep disturbance; circadian rhythm dysfunction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg",
+                "orderSentence": "Melatonin 3 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 3 mg qHS, 30 min before bed; may increase to 6-9 mg if needed",
+            "orderSentence": "Melatonin 3 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Daytime drowsiness; minimal side effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Brexpiprazole (Rexulti)",
+          "route": "PO",
+          "indication": "Agitation in AD (FDA approved 2023)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Brexpiprazole (Rexulti) 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.5 mg daily x 1 week; increase to 1 mg daily x 1 week; target 2-3 mg daily",
+            "orderSentence": "Brexpiprazole (Rexulti) 0.5 mg PO"
+          },
+          "contraindications": "Black box: increased mortality in dementia (but FDA approved for this use)",
+          "monitoring": "Weight, metabolic parameters, EPS, falls",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quetiapine (Seroquel)",
+          "route": "PO",
+          "indication": "Severe agitation/psychosis when non-pharmacologic fails",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg",
+                "orderSentence": "Quetiapine (Seroquel) 12.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 12.5-25 mg qHS; titrate slowly (25 mg increments); keep dose as low as possible",
+            "orderSentence": "Quetiapine (Seroquel) 12.5 mg PO"
+          },
+          "contraindications": "Black box: increased mortality in dementia; Parkinson's (less risk than other antipsychotics)",
+          "monitoring": "Metabolic effects; sedation; falls; QTc",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Risperidone (Risperdal)",
+          "route": "PO",
+          "indication": "Severe aggression/psychosis (short-term only)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg",
+                "orderSentence": "Risperidone (Risperdal) 0.25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.25 mg BID; increase by 0.25 mg BID weekly; max 1 mg BID; limit to 6-12 weeks",
+            "orderSentence": "Risperidone (Risperdal) 0.25 mg PO"
+          },
+          "contraindications": "Black box: increased mortality and CVA in dementia",
+          "monitoring": "EPS, metabolic effects, stroke risk, prolactin",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Haloperidol",
+          "route": "IM/IV/PO",
+          "indication": "Acute severe agitation in delirium-crisis only (not chronic use)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Haloperidol 0.5 mg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "0.5-2 mg IM/IV q4-6h PRN; short-term acute use only; avoid chronic use",
+            "orderSentence": "Haloperidol 0.5 mg IM"
+          },
+          "contraindications": "QT prolongation; Parkinson's disease; DLB (avoid)",
+          "monitoring": "QTc; EPS; akathisia",
+          "ED": "STAT",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology/Cognitive neurology for diagnosis confirmation, biomarker interpretation, and treatment planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychology for formal cognitive testing (MoCA insufficient) to establish baseline and track progression",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Geriatric psychiatry for BPSD management and capacity evaluation when decision-making ability questioned",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment, cognitive strategies, and home safety evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech therapy for communication strategies and swallowing evaluation if dysphagia develops",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for caregiver support resources, community services, and long-term care planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care for advanced AD symptom management and goals of care discussions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Elder law attorney for advance directives, healthcare proxy, and financial planning while capacity exists",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetics counseling for early-onset AD (<65) families or those considering predictive testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Driving rehabilitation specialist for formal on-road driving evaluation when ability is questioned",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Infusion center coordination for anti-amyloid therapy administration and ARIA monitoring",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately if sudden worsening of confusion which may indicate stroke, infection, or medication toxicity",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "If on anti-amyloid therapy (lecanemab, donanemab): return immediately for new headache, visual changes, confusion, or unsteadiness (possible ARIA)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Complete advance directives (living will, healthcare proxy, POLST) while patient has capacity to document preferences for future care",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Designate financial power of attorney and consider trust arrangements early while patient can participate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not drive until cleared by physician or formal driving evaluation; report diagnosis to DMV per state requirements",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Use pill organizers, alarms, or caregiver supervision to ensure medication adherence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Wear medical alert bracelet with diagnosis and emergency contact in case of wandering",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep environment safe: remove throw rugs, install grab bars, secure stove knobs, lock away dangerous items",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain consistent daily routines which help with orientation and reduce anxiety",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular aerobic exercise (150 min/week moderate intensity) may slow cognitive decline and improve mood",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Mediterranean or MIND diet emphasizing vegetables, berries, fish, whole grains, nuts, and olive oil",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cognitive stimulation through reading, puzzles, music, social activities to support cognitive reserve",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Adequate sleep (7-8 hours); treat sleep apnea aggressively as it worsens cognition",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Social engagement and meaningful activities to reduce isolation and support emotional well-being",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cardiovascular risk factor control: BP <130/80, A1c <7%, LDL <100 to reduce vascular contribution",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Hearing aids for hearing loss which is a modifiable dementia risk factor (Lancet Commission)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit alcohol to ≤1 drink daily; excess alcohol accelerates cognitive decline",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation to reduce vascular damage and improve overall brain health",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Caregiver respite services to prevent burnout; Alzheimer's Association support groups",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Mild Cognitive Impairment (MCI)",
+      "features": "Cognitive decline without functional impairment; may progress to AD",
+      "tests": "Serial cognitive testing; preserved ADLs"
+    },
+    {
+      "diagnosis": "Vascular dementia",
+      "features": "Stepwise decline; focal neurologic findings; executive dysfunction prominent; vascular risk factors",
+      "tests": "MRI shows significant WM disease, strategic infarcts"
+    },
+    {
+      "diagnosis": "Dementia with Lewy bodies (DLB)",
+      "features": "Visual hallucinations; parkinsonism; REM sleep behavior disorder; fluctuating cognition",
+      "tests": "DaTscan reduced; clinical criteria"
+    },
+    {
+      "diagnosis": "Frontotemporal dementia (behavioral variant)",
+      "features": "Personality/behavior changes; disinhibition; apathy; hyperorality; often <65 years",
+      "tests": "FDG-PET frontal hypometabolism; genetics"
+    },
+    {
+      "diagnosis": "Primary progressive aphasia",
+      "features": "Language dysfunction predominates (word-finding, comprehension, grammar)",
+      "tests": "Neuropsych pattern; FDG-PET language regions"
+    },
+    {
+      "diagnosis": "Parkinson's disease dementia",
+      "features": "Parkinsonism precedes dementia by >1 year; different from DLB timing",
+      "tests": "Clinical history; DaTscan"
+    },
+    {
+      "diagnosis": "Normal pressure hydrocephalus (NPH)",
+      "features": "Triad: gait disturbance, urinary incontinence, dementia; gait earliest",
+      "tests": "MRI ventriculomegaly; large-volume LP with gait improvement"
+    },
+    {
+      "diagnosis": "Depression (pseudodementia)",
+      "features": "Prominent mood symptoms; often aware of deficits; improves with treatment",
+      "tests": "GDS, PHQ-9; antidepressant trial"
+    },
+    {
+      "diagnosis": "Creutzfeldt-Jakob disease (CJD)",
+      "features": "Rapid progression (weeks-months); myoclonus; ataxia; pyramidal signs",
+      "tests": "EEG (periodic sharp waves); MRI DWI ribboning; CSF RT-QuIC"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis",
+      "features": "Subacute onset; psychiatric features; seizures; often younger",
+      "tests": "Autoantibody panel; MRI limbic changes"
+    },
+    {
+      "diagnosis": "Medication-induced cognitive impairment",
+      "features": "Anticholinergics, benzodiazepines, opioids",
+      "tests": "Medication reconciliation; improvement with discontinuation"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "NIA-AA diagnostic criteria for AD",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Jack et al. Alzheimers Dement 2018](https://pubmed.ncbi.nlm.nih.gov/29653606/)"
+    },
+    {
+      "recommendation": "CSF biomarkers (Aβ42, t-tau, p-tau) accurate for AD",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Hansson et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/30244989/)"
+    },
+    {
+      "recommendation": "Donepezil efficacy in mild-moderate AD",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Birks & Harvey. Cochrane 2018](https://pubmed.ncbi.nlm.nih.gov/29923184/)"
+    },
+    {
+      "recommendation": "Rivastigmine efficacy in AD",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Birks et al. Cochrane 2015](https://pubmed.ncbi.nlm.nih.gov/25858345/)"
+    },
+    {
+      "recommendation": "Galantamine efficacy in AD",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Loy & Schneider. Cochrane 2006](https://pubmed.ncbi.nlm.nih.gov/16437501/)"
+    },
+    {
+      "recommendation": "Memantine efficacy in moderate-severe AD",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Reisberg et al. NEJM 2003](https://pubmed.ncbi.nlm.nih.gov/12672860/)"
+    },
+    {
+      "recommendation": "Combination therapy (ChEI + memantine)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Tariot et al. JAMA 2004](https://pubmed.ncbi.nlm.nih.gov/14970063/)"
+    },
+    {
+      "recommendation": "Lecanemab slows cognitive decline in early AD",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[van Dyck et al. NEJM 2023 (Clarity AD)](https://pubmed.ncbi.nlm.nih.gov/36449413/)"
+    },
+    {
+      "recommendation": "Donanemab slows cognitive decline",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Sims et al. JAMA 2023 (TRAILBLAZER-ALZ 2)](https://pubmed.ncbi.nlm.nih.gov/37459141/)"
+    },
+    {
+      "recommendation": "Brexpiprazole for agitation in AD",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Grossberg et al. NEJM 2024](https://pubmed.ncbi.nlm.nih.gov/37888914/)"
+    },
+    {
+      "recommendation": "Antipsychotic mortality risk in dementia",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Schneider et al. JAMA 2005](https://pubmed.ncbi.nlm.nih.gov/16219884/)"
+    },
+    {
+      "recommendation": "Mediterranean diet reduces dementia risk",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Scarmeas et al. Ann Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16832238/)"
+    },
+    {
+      "recommendation": "Physical exercise may slow cognitive decline",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Livingston et al. Lancet 2020](https://pubmed.ncbi.nlm.nih.gov/32738937/)"
+    },
+    {
+      "recommendation": "APOE genotyping for ARIA risk stratification",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Sperling et al. JAMA Neurol 2024](https://pubmed.ncbi.nlm.nih.gov/38587851/)"
+    },
+    {
+      "recommendation": "Citalopram for agitation in AD (CitAD)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Porsteinsson et al. JAMA 2014](https://pubmed.ncbi.nlm.nih.gov/24549548/)"
+    },
+    {
+      "recommendation": "Hearing aid use reduces dementia risk",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Lin et al. JAMA Intern Med 2023](https://pubmed.ncbi.nlm.nih.gov/36592413/)"
+    },
+    {
+      "recommendation": "Driving assessment in dementia",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Iverson et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/20439849/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Cognitive testing (MoCA or MMSE)",
+      "frequency": "Every 6-12 months",
+      "action": "Adjust staging; modify treatment; increase support",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Functional status (ADL/IADL, FAQ)",
+      "frequency": "Every 6-12 months",
+      "action": "Increase caregiver support; consider placement",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Neuropsychiatric Inventory (NPI)",
+      "frequency": "Each visit",
+      "action": "Non-pharmacologic interventions; consider medications",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight",
+      "frequency": "Each visit",
+      "action": "Nutritional consult; assess swallowing",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MRI Brain (ARIA monitoring)",
+      "frequency": "Per protocol if on anti-amyloid",
+      "action": "Hold infusion; follow protocol for resumption",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Caregiver burden (Zarit Burden Interview)",
+      "frequency": "Every 6-12 months",
+      "action": "Support resources; respite care; social work",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Driving status",
+      "frequency": "Each visit",
+      "action": "Formal driving evaluation; report to DMV if unsafe",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ECG (if on donepezil or citalopram)",
+      "frequency": "Baseline; with dose changes",
+      "action": "Reduce dose or switch medication",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Amyloid PET (if on donanemab)",
+      "frequency": "Annually until clearance",
+      "action": "Discontinue donanemab when cleared",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "EXT",
+      "ICU": "-"
+    },
+    {
+      "item": "Fall risk assessment",
+      "frequency": "Each visit",
+      "action": "PT referral; home safety; assistive devices",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Stable cognition; safe environment; adequate caregiver support; outpatient follow-up arranged; reversible causes treated"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Acute delirium requiring workup; behavioral crisis unsafe for home; aspiration pneumonia; falls with injury"
+    },
+    {
+      "disposition": "Admit to psychiatry",
+      "criteria": "Severe behavioral disturbance requiring specialized psychiatric management; danger to self or others"
+    },
+    {
+      "disposition": "Long-term care/Memory care",
+      "criteria": "Progressive decline; caregiver unable to manage safely; wandering; 24-hour supervision needed"
+    },
+    {
+      "disposition": "Hospice",
+      "criteria": "End-stage AD; limited responsiveness; recurrent aspiration; weight loss; goals focused on comfort"
+    },
+    {
+      "disposition": "Outpatient follow-up",
+      "criteria": "Neurology every 3-6 months early disease; every 6-12 months stable; more frequent if on anti-amyloid therapy"
+    }
+  ]
+}
