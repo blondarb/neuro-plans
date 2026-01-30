@@ -1,0 +1,276 @@
+# Neuro Plans - Test Cases
+# test_cases_version: 1.0
+# Last updated: 2026-01-30
+#
+# Usage: Reference test case IDs in mission briefs (qa/runs/).
+# Do not duplicate runbook prose here -- this is structured data only.
+
+test_cases_version: "1.0"
+
+# =============================================================================
+# SMOKE TESTS -- run every deploy
+# =============================================================================
+smoke:
+  - id: SMK-01
+    title: Site loads
+    preconditions: Deploy completed, GitHub Pages rebuilt
+    steps:
+      - Open https://blondarb.github.io/neuro-plans/
+    expected: Page renders with title "Neuro Clinical Plans", no console errors
+
+  - id: SMK-02
+    title: Plans index loads
+    preconditions: SMK-01 passed
+    steps:
+      - Click "Clinical Plans" in nav
+    expected: Plans index page shows category tables with plan links
+
+  - id: SMK-03
+    title: Clinical tool loads
+    preconditions: SMK-01 passed
+    steps:
+      - Click "Interactive Clinical Tool" in nav
+    expected: Page loads, plan dropdown populated with plan names
+
+  - id: SMK-04
+    title: Plan data renders
+    preconditions: SMK-03 passed
+    steps:
+      - Select any plan from dropdown
+    expected: Sections render with items, priority badges visible
+
+  - id: SMK-05
+    title: Navigation links work
+    preconditions: SMK-01 passed
+    steps:
+      - Click 3 different plan links from sidebar nav
+    expected: Each plan page renders without 404
+
+  - id: SMK-06
+    title: Mobile layout
+    preconditions: SMK-01 passed
+    steps:
+      - Resize viewport to 375px width (or use mobile device)
+      - Open nav hamburger menu
+      - Navigate to a plan
+    expected: Hamburger menu opens, plan renders, tables scroll horizontally
+
+  - id: SMK-07
+    title: Search works
+    preconditions: SMK-01 passed
+    steps:
+      - Click search icon
+      - Type a known plan name (e.g. "migraine")
+    expected: Search results appear with matching plans
+
+# =============================================================================
+# PLAN CONTENT -- verify plan files render correctly
+# =============================================================================
+plan_content:
+  - id: PC-01
+    title: Approved plan has correct status
+    preconditions: Plan exists in docs/plans/
+    steps:
+      - Open an approved plan page
+      - Check for STATUS line
+    expected: Shows "STATUS: Approved", no draft warning banner
+
+  - id: PC-02
+    title: Draft plan has warning banner
+    preconditions: Plan exists in docs/drafts/ with status draft
+    steps:
+      - Open a draft plan page
+    expected: Draft warning banner visible at top of page
+
+  - id: PC-03
+    title: All 8 sections present
+    preconditions: Plan page loaded
+    steps:
+      - Scroll through plan
+      - Verify sections 1-8 exist
+    expected: |
+      Sections present: 1. Labs, 2. Imaging, 3. Treatment,
+      4. Recommendations, 5. Differential, 6. Monitoring,
+      7. Disposition, 8. Evidence
+
+  - id: PC-04
+    title: ICD-10 codes displayed
+    preconditions: Plan page loaded
+    steps:
+      - Check ICD-10 line near top of plan
+    expected: ICD-10 codes present and formatted correctly
+
+  - id: PC-05
+    title: Treatment tables have structured dosing
+    preconditions: Plan page loaded
+    steps:
+      - Navigate to Section 3 (Treatment)
+      - Inspect Dosing column
+    expected: Dosing uses :: delimiter format (dose :: route :: freq :: instructions)
+
+  - id: PC-06
+    title: Lab tables have CPT codes
+    preconditions: Plan page loaded
+    steps:
+      - Navigate to Section 1 (Labs)
+      - Check test names
+    expected: Tests show inline CPT codes, e.g. "CBC (CPT 85025)"
+
+  - id: PC-07
+    title: PubMed citations in evidence section
+    preconditions: Plan page loaded
+    steps:
+      - Navigate to Section 8 (Evidence & References)
+    expected: Citations include PubMed links (https://pubmed.ncbi.nlm.nih.gov/...)
+
+# =============================================================================
+# CLINICAL TOOL -- interactive plan builder
+# =============================================================================
+clinical_tool:
+  - id: CT-01
+    title: Plan dropdown populates
+    preconditions: Clinical tool page loaded
+    steps:
+      - Click plan dropdown
+    expected: All approved plans listed alphabetically
+
+  - id: CT-02
+    title: Setting filter - ED
+    preconditions: Plan selected in clinical tool
+    steps:
+      - Click ED filter
+    expected: Only items with ED priority (STAT/URGENT/ROUTINE) shown
+
+  - id: CT-03
+    title: Setting filter - OPD
+    preconditions: Plan selected in clinical tool
+    steps:
+      - Click OPD filter
+    expected: Only items with OPD priority shown; ICU-only items hidden
+
+  - id: CT-04
+    title: Priority badge colors
+    preconditions: Plan selected, items visible
+    steps:
+      - Observe priority badges
+    expected: "STAT=red, URGENT=orange, ROUTINE=blue, EXT=purple"
+
+  - id: CT-05
+    title: Medication dosing click-to-copy
+    preconditions: Plan with medications selected
+    steps:
+      - Click a blue dosing badge on a medication row
+      - Paste into text editor
+    expected: Order sentence copied (e.g. "Baclofen 5 mg PO TID")
+
+  - id: CT-06
+    title: Icon tooltips on hover
+    preconditions: Plan with medications selected
+    steps:
+      - Hover over contraindication icon (red !)
+      - Hover over indication icon (teal pill)
+    expected: Tooltip popover shows relevant text
+
+  - id: CT-07
+    title: Select items and export
+    preconditions: Plan selected, items visible
+    steps:
+      - Check 5+ items across different sections
+      - Click copy/export button in sidebar
+      - Paste into text editor
+    expected: Selected items exported as formatted text
+
+  - id: CT-08
+    title: Custom item add
+    preconditions: Plan selected
+    steps:
+      - Click "Add custom item" in any section
+      - Type custom text
+      - Submit
+    expected: Custom item appears in section and sidebar
+
+  - id: CT-09
+    title: Clinical tool mobile layout
+    preconditions: Clinical tool loaded at 375px viewport
+    steps:
+      - Select a plan
+      - Apply a filter
+      - Select items
+    expected: Tool is usable on mobile, no horizontal overflow on main content
+
+# =============================================================================
+# JSON INTEGRITY -- data file validation
+# =============================================================================
+json:
+  - id: JSON-01
+    title: plans.json is valid JSON
+    preconditions: File exists at docs/data/plans.json
+    steps:
+      - "Run: python -c \"import json; json.load(open('docs/data/plans.json'))\""
+    expected: No parse errors
+
+  - id: JSON-02
+    title: Plan structure correct
+    preconditions: JSON-01 passed
+    steps:
+      - For each plan, verify notes is array and sections is object
+    expected: All plans pass type checks
+
+  - id: JSON-03
+    title: Plan count matches site
+    preconditions: JSON-01 passed
+    steps:
+      - Count keys in plans.json
+      - Count plans listed on index page
+    expected: Counts are consistent (note some plans have alternate title keys)
+
+  - id: JSON-04
+    title: No duplicate plan IDs
+    preconditions: JSON-01 passed
+    steps:
+      - Extract all plan id fields
+      - Check for duplicates
+    expected: All IDs unique
+
+# =============================================================================
+# NAVIGATION & STRUCTURE -- site configuration
+# =============================================================================
+nav:
+  - id: NAV-01
+    title: All nav links resolve
+    preconditions: Site deployed
+    steps:
+      - Click every plan link in the sidebar nav
+    expected: No 404 errors
+
+  - id: NAV-02
+    title: mkdocs.yml matches file system
+    preconditions: Access to repo
+    steps:
+      - Compare nav entries in mkdocs.yml to files in docs/plans/
+    expected: Every nav entry has a corresponding .md file
+
+  - id: NAV-03
+    title: Index categories match nav
+    preconditions: Access to repo
+    steps:
+      - Compare categories in docs/plans/index.md to mkdocs.yml nav sections
+    expected: Same categories and plans in both
+
+# =============================================================================
+# DEPLOYMENT -- CI/CD pipeline
+# =============================================================================
+deploy:
+  - id: DEP-01
+    title: GitHub Pages builds after merge
+    preconditions: PR merged to main
+    steps:
+      - "Run: gh run list --limit 1"
+    expected: "Status: completed, success"
+
+  - id: DEP-02
+    title: Site reflects merged changes
+    preconditions: DEP-01 passed
+    steps:
+      - Open a page that was changed in the merge
+    expected: New content visible (may need cache clear)
