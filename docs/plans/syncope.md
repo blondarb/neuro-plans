@@ -256,14 +256,14 @@ setting: "HOSP, OPD, ICU"
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| ECG for all syncope patients | Class I, Level B | ESC 2018 Syncope Guidelines |
-| Echo if cardiac cause suspected | Class I, Level B | ESC 2018; AHA/ACCF 2017 |
-| Tilt test for recurrent vasovagal syncope | Class IIa, Level B | ESC 2018 |
-| Pacemaker for cardioinhibitory carotid sinus syncope | Class I, Level B | ESC 2018 |
-| ILR for recurrent unexplained syncope | Class I, Level A | ISSUE-3 trial; ESC 2018 |
-| Counter-pressure maneuvers for vasovagal | Class IIa, Level B | PC-Trial |
+| ECG for all syncope patients | Class I, Level B | [ESC 2018 Syncope Guidelines](https://pubmed.ncbi.nlm.nih.gov/29562304/) |
+| Echo if cardiac cause suspected | Class I, Level B | [ESC 2018](https://pubmed.ncbi.nlm.nih.gov/29562304/); AHA/ACCF 2017 |
+| Tilt test for recurrent vasovagal syncope | Class IIa, Level B | [ESC 2018](https://pubmed.ncbi.nlm.nih.gov/29562304/) |
+| Pacemaker for cardioinhibitory carotid sinus syncope | Class I, Level B | [ESC 2018](https://pubmed.ncbi.nlm.nih.gov/29562304/) |
+| ILR for recurrent unexplained syncope | Class I, Level A | [ISSUE-3 trial](https://pubmed.ncbi.nlm.nih.gov/22565936/); [ESC 2018](https://pubmed.ncbi.nlm.nih.gov/29562304/) |
+| Counter-pressure maneuvers for vasovagal | Class IIa, Level B | [PC-Trial](https://pubmed.ncbi.nlm.nih.gov/17045903/) |
 | Midodrine for refractory orthostatic hypotension | Class IIa, Level B | Multiple RCTs |
-| Risk stratification scores (Canadian Syncope Risk Score) | Class IIa, Level B | Thiruganasambandamoorthy et al. |
+| Risk stratification scores (Canadian Syncope Risk Score) | Class IIa, Level B | [Thiruganasambandamoorthy et al.](https://pubmed.ncbi.nlm.nih.gov/27378464/) |
 
 ---
 

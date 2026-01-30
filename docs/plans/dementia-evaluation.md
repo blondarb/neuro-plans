@@ -288,13 +288,13 @@ setting: "HOSP, OPD, ICU"
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| MRI recommended in dementia workup | Class I, Level A | AAN Practice Parameters 2001 |
-| B12, TSH, metabolic panel in all patients | Class I, Level A | AAN Practice Parameters 2001 |
+| MRI recommended in dementia workup | Class I, Level A | [AAN Practice Parameters (Knopman et al., Neurology 2001)](https://pubmed.ncbi.nlm.nih.gov/11342678/) |
+| B12, TSH, metabolic panel in all patients | Class I, Level A | [AAN Practice Parameters (Knopman et al., Neurology 2001)](https://pubmed.ncbi.nlm.nih.gov/11342678/) |
 | Cholinesterase inhibitors for mild-moderate AD | Class I, Level A | Cochrane Reviews |
 | Memantine for moderate-severe AD | Class I, Level A | Cochrane Reviews |
-| Combination ChEI + memantine | Class I, Level A | DOMINO trial |
-| Lecanemab slows cognitive decline in early AD | Class I, Level A | Clarity AD trial; FDA approved 2023 |
-| Donanemab slows decline in early AD | Class I, Level A | TRAILBLAZER-ALZ 2; FDA approved 2024 |
+| Combination ChEI + memantine | Class I, Level A | [DOMINO trial (Howard et al., NEJM 2012)](https://pubmed.ncbi.nlm.nih.gov/22397651/) |
+| Lecanemab slows cognitive decline in early AD | Class I, Level A | [Clarity AD trial (van Dyck et al., NEJM 2023)](https://pubmed.ncbi.nlm.nih.gov/36449413/); FDA approved 2023 |
+| Donanemab slows decline in early AD | Class I, Level A | [TRAILBLAZER-ALZ 2 (Sims et al., JAMA 2023)](https://pubmed.ncbi.nlm.nih.gov/37459141/); FDA approved 2024 |
 | Non-pharmacologic interventions for BPSD first-line | Class I, Level A | APA Guidelines |
 | Antipsychotics increase mortality in dementia | Class I, Level A | FDA black box warning |
 | CSF biomarkers (Aβ42, tau, p-tau) support AD diagnosis | Class II, Level A | AT(N) framework |

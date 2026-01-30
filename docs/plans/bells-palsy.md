@@ -271,10 +271,10 @@ setting: "HOSP, OPD, ICU"
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Corticosteroids improve recovery | Class I, Level A | Scottish Bell's Palsy Study (Sullivan 2007); Cochrane Reviews |
-| Start steroids within 72 hours | Class I, Level A | Sullivan et al., NEJM 2007 |
+| Corticosteroids improve recovery | Class I, Level A | Scottish Bell's Palsy Study ([Sullivan et al. NEJM 2007](https://pubmed.ncbi.nlm.nih.gov/17942873/)); Cochrane Reviews |
+| Start steroids within 72 hours | Class I, Level A | [Sullivan et al. NEJM 2007](https://pubmed.ncbi.nlm.nih.gov/17942873/) |
 | Antivirals alone not effective | Class I, Level A | Cochrane Reviews 2015 |
-| Antivirals + steroids for severe Bell's | Class II, Level B | AAN Guidelines 2012 |
+| Antivirals + steroids for severe Bell's | Class II, Level B | [AAN Guidelines (Gronseth & Paduga, Neurology 2012)](https://pubmed.ncbi.nlm.nih.gov/23136264/) |
 | Antivirals mandatory for Ramsay Hunt | Class I, Level B | Multiple studies; AAN Guidelines |
 | Eye protection essential | Class I, Level C | Expert consensus |
 | ENoG for prognosis in severe cases | Class II, Level B | Multiple studies |

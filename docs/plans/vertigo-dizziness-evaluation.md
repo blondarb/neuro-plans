@@ -137,7 +137,7 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| **Corticosteroids** | - | - | 1 mg/kg :: - :: daily x 10 days :: **Prednisone 1 mg/kg/day (max 60 mg) x 10 days with taper** OR methylprednisolone 100 mg x 3 days then taper; start within 72 hours of symptom onset for best benefit | - | Strupp et al. (2004): Steroids improve vestibular function recovery in vestibular neuritis; start early; NNT ~4 for complete recovery | - | - | - | - |
+| **Corticosteroids** | - | - | 1 mg/kg :: - :: daily x 10 days :: **Prednisone 1 mg/kg/day (max 60 mg) x 10 days with taper** OR methylprednisolone 100 mg x 3 days then taper; start within 72 hours of symptom onset for best benefit | - | [Strupp et al. (2004)](https://pubmed.ncbi.nlm.nih.gov/15269315/): Steroids improve vestibular function recovery in vestibular neuritis; start early; NNT ~4 for complete recovery | - | - | - | - |
 | **Antivirals (controversial)** | PO | - | 1000 mg :: PO :: TID :: Valacyclovir 1000 mg TID x 7 days; evidence is WEAK; some use empirically if early presentation; thought to be HSV reactivation (like Bell's palsy) | - | Cochrane review: No clear benefit; some clinicians still use empirically, especially if labyrinthitis with hearing loss | - | - | - | - |
 | **Vestibular suppressants (short-term only)** | PO | - | 25 mg :: PO :: q8h :: Meclizine 25 mg q8h OR dimenhydrinate 50 mg q6h OR diazepam 5 mg BID x 1-3 days ONLY; taper off as soon as tolerated | - | Short-term symptom relief; STOP after 72 hours maximum — prolonged use delays compensation | - | - | - | - |
 | **Early vestibular rehabilitation** | - | - | Refer to vestibular physical therapy; gaze stabilization exercises; balance training; habituation exercises; **START EARLY** (as soon as acute symptoms controlled) | - | Cochrane review: Vestibular rehabilitation is effective for unilateral vestibular hypofunction; early initiation improves outcomes | - | - | - | - |
@@ -354,29 +354,29 @@ SECTION B: SUPPORTING INFORMATION
 
 | Guideline | Source | Year | Key Recommendation |
 |-----------|--------|------|-------------------|
-| BPPV Practice Guideline | AAO-HNS | 2017 | Dix-Hallpike is gold standard for diagnosis; Epley maneuver is first-line treatment; vestibular suppressants NOT recommended |
+| BPPV Practice Guideline | [AAO-HNS](https://pubmed.ncbi.nlm.nih.gov/28248609/) | 2017 | Dix-Hallpike is gold standard for diagnosis; Epley maneuver is first-line treatment; vestibular suppressants NOT recommended |
 | Vestibular Migraine Diagnostic Criteria | ICHD-3 / Barany Society | 2012/2018 | Diagnostic criteria; often underdiagnosed; migraine preventives effective |
 | Meniere's Disease Guidelines | AAO-HNS | 2020 | Definite, probable, possible classification; conservative management first; intratympanic therapy for refractory |
-| HINTS Exam | Kattah et al. / Tarnutzer | 2009/2011 | HINTS more sensitive than early MRI for stroke in acute vestibular syndrome; requires training |
+| HINTS Exam | [Kattah et al.](https://pubmed.ncbi.nlm.nih.gov/19762709/) / [Tarnutzer](https://pubmed.ncbi.nlm.nih.gov/21576300/) | 2009/2011 | HINTS more sensitive than early MRI for stroke in acute vestibular syndrome; requires training |
 
 ### Landmark Studies
 
 | Study | Finding | Impact |
 |-------|---------|--------|
-| Kattah et al. (2009) | HINTS exam (H: head impulse; I: nystagmus; TS: test of skew) was 100% sensitive and 96% specific for stroke in acute vestibular syndrome; superior to MRI in first 24-48h | HINTS should be performed in acute vestibular syndrome; more sensitive than early MRI |
-| Strupp et al. (2004) | Methylprednisolone improved vestibular function recovery in vestibular neuritis vs. placebo | Steroids are standard of care for vestibular neuritis |
-| Hilton et al. Cochrane (2014) | Epley maneuver highly effective for posterior canal BPPV; NNT ~3 | Epley is definitive treatment for BPPV |
-| Tarnutzer et al. (2011) | Individual HINTS components analyzed; normal head impulse most predictive of stroke | "Dangerous" HIT (normal in acute vertigo) = central cause until proven otherwise |
-| Choi et al. (2018) | 12-20% of posterior fossa strokes missed on early MRI (<48h) but detected on repeat MRI | If high clinical suspicion for stroke and initial MRI negative, repeat MRI or treat as stroke |
-| Fife et al. AAO-HNS (2017) | Comprehensive BPPV guideline; repositioning maneuvers recommended; vestibular suppressants NOT recommended | Standard of care for BPPV |
+| [Kattah et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/19762709/) | HINTS exam (H: head impulse; I: nystagmus; TS: test of skew) was 100% sensitive and 96% specific for stroke in acute vestibular syndrome; superior to MRI in first 24-48h | HINTS should be performed in acute vestibular syndrome; more sensitive than early MRI |
+| [Strupp et al. (2004)](https://pubmed.ncbi.nlm.nih.gov/15269315/) | Methylprednisolone improved vestibular function recovery in vestibular neuritis vs. placebo | Steroids are standard of care for vestibular neuritis |
+| [Hilton et al. Cochrane (2014)](https://pubmed.ncbi.nlm.nih.gov/25485940/) | Epley maneuver highly effective for posterior canal BPPV; NNT ~3 | Epley is definitive treatment for BPPV |
+| [Tarnutzer et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21576300/) | Individual HINTS components analyzed; normal head impulse most predictive of stroke | "Dangerous" HIT (normal in acute vertigo) = central cause until proven otherwise |
+| [Choi et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30341546/) | 12-20% of posterior fossa strokes missed on early MRI (<48h) but detected on repeat MRI | If high clinical suspicion for stroke and initial MRI negative, repeat MRI or treat as stroke |
+| [Fife et al. AAO-HNS (2017)](https://pubmed.ncbi.nlm.nih.gov/28248609/) | Comprehensive BPPV guideline; repositioning maneuvers recommended; vestibular suppressants NOT recommended | Standard of care for BPPV |
 
 ### HINTS Exam Validity
 
 | Study | Sensitivity for Stroke | Specificity |
 |-------|----------------------|-------------|
-| Kattah et al. (2009) | 100% | 96% |
-| Newman-Toker et al. (2013) | 96% | 98% |
-| Tarnutzer et al. (2011, meta-analysis) | 98% (pooled) | 85% (pooled) |
+| [Kattah et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/19762709/) | 100% | 96% |
+| [Newman-Toker et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/24127701/) | 96% | 98% |
+| [Tarnutzer et al. (2011, meta-analysis)](https://pubmed.ncbi.nlm.nih.gov/21576300/) | 98% (pooled) | 85% (pooled) |
 
 **Important:** HINTS should ONLY be performed in the **Acute Vestibular Syndrome** (continuous vertigo/nystagmus lasting >24h). It is NOT valid for episodic vertigo (BPPV, Meniere's, vestibular migraine).
 

@@ -352,19 +352,19 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Diabetes is most common cause of polyneuropathy in developed countries | Class I | Dyck PJ et al. Neurology 1993 |
+| Diabetes is most common cause of polyneuropathy in developed countries | Class I | [Dyck PJ et al. Neurology 1993](https://pubmed.ncbi.nlm.nih.gov/8469345/) |
 | HbA1c <7% reduces neuropathy incidence in Type 1 DM | Class I, Level A | DCCT/EDIC |
 | Gabapentin, pregabalin, duloxetine first-line for painful diabetic neuropathy | Class I, Level A | AAN/AANEM Practice Guideline 2011, 2022 update |
-| Tricyclic antidepressants effective for neuropathic pain | Class I, Level A | Finnerup NB et al. Lancet Neurol 2015 |
+| Tricyclic antidepressants effective for neuropathic pain | Class I, Level A | [Finnerup NB et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25575710/) |
 | NCS/EMG for characterization of peripheral neuropathy | Class I, Level B | AAN Practice Parameter |
-| SPEP indicated in idiopathic neuropathy workup | Class II, Level B | England JD et al. Neurology 2009 |
-| OGTT detects IGT in 34-62% of idiopathic neuropathy patients | Class II, Level B | Singleton et al. Diabetes Care 2001; Hoffman-Snyder et al. Arch Neurol 2006 |
-| Skin biopsy (IENFD) for small fiber neuropathy | Class II, Level B | Lauria G et al. Eur J Neurol 2010 |
+| SPEP indicated in idiopathic neuropathy workup | Class II, Level B | [England JD et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19056666/) |
+| OGTT detects IGT in 34-62% of idiopathic neuropathy patients | Class II, Level B | [Singleton et al. Diabetes Care 2001](https://pubmed.ncbi.nlm.nih.gov/11473085/); [Hoffman-Snyder et al. Arch Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16769858/) |
+| Skin biopsy (IENFD) for small fiber neuropathy | Class II, Level B | [Lauria G et al. Eur J Neurol 2010](https://pubmed.ncbi.nlm.nih.gov/20642627/) |
 | IVIG first-line for CIDP | Class I, Level A | Cochrane Review, EFNS/PNS Guidelines |
 | Thiamine supplementation in alcoholic neuropathy | Class II, Level B | AAN Practice Parameter |
 | Foot care reduces amputations in diabetic neuropathy | Class I, Level A | Multiple RCTs, ADA Guidelines |
 | Capsaicin 8% patch effective for localized neuropathic pain | Class I, Level A | Multiple RCTs |
-| Tafamidis for hATTR polyneuropathy | Class I, Level A | ATTR-ACT Trial, Adams et al. NEJM |
+| Tafamidis for hATTR polyneuropathy | Class I, Level A | [ATTR-ACT Trial](https://pubmed.ncbi.nlm.nih.gov/22843282/), Adams et al. NEJM |
 | Patisiran/inotersen for hATTR polyneuropathy | Class I, Level A | APOLLO, NEURO-TTR Trials |
 | Combination therapy for neuropathic pain improves outcomes | Class II, Level B | Multiple RCTs |
 

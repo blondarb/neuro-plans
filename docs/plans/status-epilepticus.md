@@ -613,19 +613,19 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Benzodiazepines first-line for SE | Class I, Level A | Neurocritical Care Society 2012; AES Guidelines 2016 |
-| Lorazepam preferred IV benzodiazepine | Class I, Level A | Alldredge et al. NEJM 2001 |
-| IM midazolam non-inferior to IV lorazepam | Class I, Level A | RAMPART Trial, Silbergleit et al. NEJM 2012 |
-| Second-line agents (LEV, VPA, fPHT) equivalent efficacy | Class I, Level A | ESETT Trial, Kapur et al. NEJM 2019;381:2103-2113 |
-| Levetiracetam 60 mg/kg dosing | Class I, Level A | ESETT Trial - higher than traditional 20-40 mg/kg |
+| Benzodiazepines first-line for SE | Class I, Level A | [NCS Guidelines 2012](https://pubmed.ncbi.nlm.nih.gov/22528274/); [AES Guidelines 2016](https://pubmed.ncbi.nlm.nih.gov/26900382/) |
+| Lorazepam preferred IV benzodiazepine | Class I, Level A | [Alldredge et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11547716/) |
+| IM midazolam non-inferior to IV lorazepam | Class I, Level A | [RAMPART Trial, Silbergleit et al. NEJM 2012](https://pubmed.ncbi.nlm.nih.gov/22335736/) |
+| Second-line agents (LEV, VPA, fPHT) equivalent efficacy | Class I, Level A | [ESETT Trial, Kapur et al. NEJM 2019;381:2103-2113](https://pubmed.ncbi.nlm.nih.gov/31774955/) |
+| Levetiracetam 60 mg/kg dosing | Class I, Level A | [ESETT Trial](https://pubmed.ncbi.nlm.nih.gov/31774955/) - higher than traditional 20-40 mg/kg |
 | Levetiracetam 40 mg/kg may be adequate | Class II, Level B | Meta-analysis, pharmacokinetic modeling 2023-2024 |
-| cEEG monitoring in RSE | Class I, Level B | NCS Guidelines 2012 |
+| cEEG monitoring in RSE | Class I, Level B | [NCS Guidelines 2012](https://pubmed.ncbi.nlm.nih.gov/22528274/) |
 | Burst suppression target for RSE | Class IIb, Level C | Expert consensus |
 | Ketamine in RSE/SRSE | Class IIb, Level B | Multiple case series; 2024 systematic reviews |
 | Earlier ketamine = better outcomes | Class II, Level B | 2024 two-center study; systematic reviews |
-| NORSE first-line immunotherapy within 72h | Class IIa, Level C | International Consensus, Wickström et al. Epilepsia 2022 |
-| Ketogenic diet by Day 7 in NORSE | Class IIa, Level C | International Consensus 2022; FIRES case series |
-| Second-line immunotherapy by Day 7 if first-line fails | Class IIb, Level C | International Consensus 2022 |
+| NORSE first-line immunotherapy within 72h | Class IIa, Level C | [Wickström et al. Epilepsia 2022](https://pubmed.ncbi.nlm.nih.gov/35951466/) |
+| Ketogenic diet by Day 7 in NORSE | Class IIa, Level C | [International Consensus 2022](https://pubmed.ncbi.nlm.nih.gov/35997591/); FIRES case series |
+| Second-line immunotherapy by Day 7 if first-line fails | Class IIb, Level C | [International Consensus 2022](https://pubmed.ncbi.nlm.nih.gov/35997591/) |
 | Brivaracetam for SE | Class IIb, Level C | Emerging evidence; case series |
 
 ---

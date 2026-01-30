@@ -311,15 +311,15 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| RT-QuIC for CJD diagnosis (sensitivity 92%, specificity 99-100%) | Class I, Level A | McGuire et al. (Ann Neurol 2012); Atarashi et al. (Nat Med 2011) |
-| MRI DWI cortical ribboning for CJD | Class I, Level A | Vitali et al. (Neurology 2011); Young et al. (AJNR 2005) |
-| CSF 14-3-3 protein for CJD (sensitivity ~90%, lower specificity) | Class IIa, Level B | WHO diagnostic criteria; Muayqil et al. (2012) |
-| Comprehensive autoimmune antibody testing in RPD | Class I, Level B | Graus et al. (Lancet Neurol 2016) — diagnostic criteria for autoimmune encephalitis |
-| Empiric immunotherapy trial for suspected autoimmune encephalitis | Class IIa, Level C | Expert consensus; Dalmau & Graus (NEJM 2018) |
-| Anti-NMDAR encephalitis: immunotherapy + teratoma resection | Class I, Level B | Titulaer et al. (Lancet Neurol 2013) |
-| Anti-LGI1: steroids as first-line | Class IIa, Level B | Irani et al. (Brain 2010) |
-| Hashimoto encephalopathy (SREAT): steroid-responsive | Class IIb, Level C | Castillo et al. (Arch Neurol 2006); diagnosis of exclusion |
-| Thiamine for Wernicke: high-dose IV (500 mg TID) | Class I, Level B | Thomson & Marshall (2006); Galvin et al. (2010) |
+| RT-QuIC for CJD diagnosis (sensitivity 92%, specificity 99-100%) | Class I, Level A | [McGuire et al. (Ann Neurol 2012)](https://pubmed.ncbi.nlm.nih.gov/22926858/); [Atarashi et al. (Nat Med 2011)](https://pubmed.ncbi.nlm.nih.gov/21278748/) |
+| MRI DWI cortical ribboning for CJD | Class I, Level A | [Vitali et al. (Neurology 2011)](https://pubmed.ncbi.nlm.nih.gov/21471469/); [Young et al. (AJNR 2005)](https://pubmed.ncbi.nlm.nih.gov/15956529/) |
+| CSF 14-3-3 protein for CJD (sensitivity ~90%, lower specificity) | Class IIa, Level B | WHO diagnostic criteria; [Muayqil et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22993290/) |
+| Comprehensive autoimmune antibody testing in RPD | Class I, Level B | [Graus et al. (Lancet Neurol 2016)](https://pubmed.ncbi.nlm.nih.gov/26906964/) — diagnostic criteria for autoimmune encephalitis |
+| Empiric immunotherapy trial for suspected autoimmune encephalitis | Class IIa, Level C | Expert consensus; [Dalmau & Graus (NEJM 2018)](https://pubmed.ncbi.nlm.nih.gov/29490181/) |
+| Anti-NMDAR encephalitis: immunotherapy + teratoma resection | Class I, Level B | [Titulaer et al. (Lancet Neurol 2013)](https://pubmed.ncbi.nlm.nih.gov/23290630/) |
+| Anti-LGI1: steroids as first-line | Class IIa, Level B | [Irani et al. (Brain 2010)](https://pubmed.ncbi.nlm.nih.gov/20663977/) |
+| Hashimoto encephalopathy (SREAT): steroid-responsive | Class IIb, Level C | [Castillo et al. (Arch Neurol 2006)](https://pubmed.ncbi.nlm.nih.gov/16476807/); diagnosis of exclusion |
+| Thiamine for Wernicke: high-dose IV (500 mg TID) | Class I, Level B | [Thomson & Marshall (2006)](https://pubmed.ncbi.nlm.nih.gov/16384871/); [Galvin et al. (2010)](https://pubmed.ncbi.nlm.nih.gov/20642790/) |
 | Neurosyphilis: IV penicillin G x 14 days | Class I, Level A | CDC STI Treatment Guidelines |
 | CJD: no effective treatment; supportive care only | Class I, Level A | No disease-modifying therapy exists; multiple trials failed |
 | Brain biopsy when non-invasive workup inconclusive | Class IIa, Level C | Expert consensus; diagnostic yield 57-65% in RPD |

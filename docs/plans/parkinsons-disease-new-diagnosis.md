@@ -267,7 +267,7 @@ setting: "HOSP, OPD, ICU"
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| MDS Clinical Diagnostic Criteria for PD | Class I | Postuma et al., Mov Disord 2015 |
+| MDS Clinical Diagnostic Criteria for PD | Class I | [Postuma et al., Mov Disord 2015](https://pubmed.ncbi.nlm.nih.gov/26474316/) |
 | Levodopa most effective symptomatic therapy | Class I, Level A | Cochrane Reviews |
 | Dopamine agonists monotherapy early PD | Class I, Level A | Multiple RCTs |
 | MAO-B inhibitors mild symptomatic benefit | Class I, Level A | ADAGIO, TEMPO trials |

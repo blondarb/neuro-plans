@@ -233,7 +233,7 @@ setting: "HOSP, OPD, ICU"
 | Lithium effective for chronic cluster | Class II, Level B | RCTs with limitations |
 | Corticosteroids effective for transitional therapy | Class II, Level B | Multiple studies |
 | Greater occipital nerve block effective | Class II, Level B | Multiple studies |
-| Galcanezumab approved for episodic CH | Class I, Level A | FDA approved 2019; GAAIN trial |
+| Galcanezumab approved for episodic CH | Class I, Level A | FDA approved 2019; [GAAIN trial (Goadsby et al., NEJM 2019)](https://pubmed.ncbi.nlm.nih.gov/31291515/) |
 | Indomethacin response distinguishes paroxysmal hemicrania | Class I | Diagnostic criterion |
 
 ---

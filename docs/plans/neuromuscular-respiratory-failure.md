@@ -362,11 +362,11 @@ SECTION B: SUPPORTING INFORMATION
 
 | Study | Finding | Impact |
 |-------|---------|--------|
-| Plasma Exchange/Sandoglobulin GBS Trial (1997) | IVIG = PLEX for GBS; combination not better | Either IVIG or PLEX; no combination |
-| MG Thymectomy Trial (MGTX, 2016) | Thymectomy + prednisone > prednisone alone for AChR+ MG (even without thymoma); improved outcomes at 3 years | Thymectomy recommended for generalized AChR+ MG |
-| Zinman et al. NIV in ALS (2019 Cochrane) | NIV prolongs survival in ALS (7-11 months) and improves QoL | NIV is standard of care for ALS respiratory insufficiency |
-| Lawn et al. Respiratory Failure in MG (2001) | FVC <20 mL/kg or NIF > -30 cm H2O predicted need for intubation; "20/30/40 rule" | Established monitoring thresholds for MG crisis |
-| REGAIN Trial (Eculizumab in MG, 2017) | Eculizumab reduced exacerbations in refractory generalized MG | FDA approval of eculizumab for refractory AChR+ MG |
+| [Plasma Exchange/Sandoglobulin GBS Trial (1997)](https://pubmed.ncbi.nlm.nih.gov/9014908/) | IVIG = PLEX for GBS; combination not better | Either IVIG or PLEX; no combination |
+| [MG Thymectomy Trial (MGTX, 2016)](https://pubmed.ncbi.nlm.nih.gov/27509100/) | Thymectomy + prednisone > prednisone alone for AChR+ MG (even without thymoma); improved outcomes at 3 years | Thymectomy recommended for generalized AChR+ MG |
+| [Radunovic et al. NIV in ALS (2017 Cochrane)](https://pubmed.ncbi.nlm.nih.gov/28982219/) | NIV prolongs survival in ALS (7-11 months) and improves QoL | NIV is standard of care for ALS respiratory insufficiency |
+| [Lawn et al. Respiratory Failure in GBS (2001)](https://pubmed.ncbi.nlm.nih.gov/11405803/) | FVC <20 mL/kg or NIF > -30 cm H2O predicted need for intubation; "20/30/40 rule" | Established monitoring thresholds for MG crisis |
+| [REGAIN Trial (Eculizumab in MG, 2017)](https://pubmed.ncbi.nlm.nih.gov/29066163/) | Eculizumab reduced exacerbations in refractory generalized MG | FDA approval of eculizumab for refractory AChR+ MG |
 
 ### The "20/30/40" Rule
 

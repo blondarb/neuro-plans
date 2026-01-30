@@ -254,7 +254,7 @@ setting: "HOSP, OPD, ICU"
 | Gabapentin possibly effective | Class II, Level U | AAN Guidelines 2011 |
 | Botulinum toxin for hand tremor | Class II, Level B | AAN Guidelines 2011 |
 | DBS effective for medically refractory ET | Class I, Level A | Multiple RCTs |
-| MRgFUS (focused ultrasound) effective | Class I, Level A | Elias et al., NEJM 2016 |
+| MRgFUS (focused ultrasound) effective | Class I, Level A | [Elias et al., NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27557301/) |
 | DaTscan differentiates ET from PD | Class II, Level B | FDA approved 2011 |
 | Cala Trio wrist device | Class II, Level B | FDA approved 2018 |
 

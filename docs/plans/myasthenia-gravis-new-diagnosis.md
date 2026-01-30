@@ -445,42 +445,42 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| AChR antibody testing for MG diagnosis | Class I | Gilhus NE et al. Lancet Neurol 2019 |
+| AChR antibody testing for MG diagnosis | Class I | [Gilhus NE et al. Nat Rev Dis Primers 2019](https://pubmed.ncbi.nlm.nih.gov/31048702/) |
 | AChR binding + blocking + modulating antibodies increases sensitivity to ~95% | Class II | Howard JF. Clinical Overview of MG. UpToDate 2024 |
-| MuSK antibody testing in seronegative MG | Class I | Hoch W et al. Nat Med 2001; Evoli A et al. Brain 2003 |
-| LRP4 antibody in double-seronegative MG | Class II | Higuchi O et al. Ann Neurol 2011; Zisimopoulou P et al. J Neuroimmunol 2014 |
+| MuSK antibody testing in seronegative MG | Class I | [Hoch W et al. Nat Med 2001](https://pubmed.ncbi.nlm.nih.gov/11231638/); [Evoli A et al. Brain 2003](https://pubmed.ncbi.nlm.nih.gov/12821509/) |
+| LRP4 antibody in double-seronegative MG | Class II | [Higuchi O et al. Ann Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/21387385/); [Zisimopoulou P et al. J Autoimmun 2014](https://pubmed.ncbi.nlm.nih.gov/24373505/) |
 | RNS: ≥10% decrement diagnostic criterion | Class I, Level A | AANEM Practice Parameter 2001; Sanders DB et al. |
-| SFEMG most sensitive diagnostic test (95-99%) | Class I, Level A | Sanders DB, Stålberg EV. Muscle Nerve 1996 |
+| SFEMG most sensitive diagnostic test (95-99%) | Class I, Level A | [Sanders DB, Stalberg EV. Muscle Nerve 1996](https://pubmed.ncbi.nlm.nih.gov/8761262/) |
 | Ice pack test for ocular MG (~80% sensitivity) | Class II, Level B | Cubero E et al. Neurology 2000 |
-| CT chest for thymoma screening in all MG patients | Class I, Level A | Gilhus NE et al. Lancet Neurol 2019; AAN Guidelines |
-| Pyridostigmine as first-line symptomatic therapy | Class I, Level A | Mehndiratta MM et al. Cochrane 2011 |
-| MuSK-MG often refractory to pyridostigmine | Class II | Evoli A et al. Brain 2003; Guptill JT et al. 2011 |
-| Prednisone for MG immunosuppression | Class I, Level A | Palace J et al. Cochrane 2012 |
+| CT chest for thymoma screening in all MG patients | Class I, Level A | [Gilhus NE et al. Nat Rev Dis Primers 2019](https://pubmed.ncbi.nlm.nih.gov/31048702/); AAN Guidelines |
+| Pyridostigmine as first-line symptomatic therapy | Class I, Level A | [Mehndiratta MM et al. Cochrane 2011](https://pubmed.ncbi.nlm.nih.gov/21328290/) |
+| MuSK-MG often refractory to pyridostigmine | Class II | [Evoli A et al. Brain 2003](https://pubmed.ncbi.nlm.nih.gov/12821509/); Guptill JT et al. 2011 |
+| Prednisone for MG immunosuppression | Class I, Level A | [Palace J et al. Neurology 1998](https://pubmed.ncbi.nlm.nih.gov/9633727/) |
 | Steroid-induced transient worsening in ~50% of MG patients | Class II | Bae JS et al. Muscle Nerve 2006 |
 | Mycophenolate mofetil as steroid-sparing agent | Class I (negative RCTs but widely used) | Sanders DB et al. Neurology 2008; MG Study Group (note: RCTs were short-duration) |
-| Azathioprine as steroid-sparing agent | Class I, Level B | Palace J et al. Cochrane 2012 |
+| Azathioprine as steroid-sparing agent | Class I, Level B | [Palace J et al. Neurology 1998](https://pubmed.ncbi.nlm.nih.gov/9633727/) |
 | TPMT testing before azathioprine | Class I, Level A | Pharmacogenomics guidelines; FDA labeling |
-| Rituximab for MuSK-positive MG | Class II (observational) | Díaz-Manera J et al. Neurology 2012; Hehir MK et al. Neurology 2017 |
+| Rituximab for MuSK-positive MG | Class II (observational) | [Diaz-Manera J et al. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/22218276/); [Hehir MK et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28801338/) |
 | Rituximab for AChR-positive refractory MG | Class II | Tandan R et al. (BeatMG trial) Lancet Neurol 2023 |
-| Eculizumab for AChR-positive generalized MG | Class I (REGAIN trial) | Howard JF et al. Lancet Neurol 2017 |
-| Ravulizumab for AChR-positive generalized MG | Class I (CHAMPION-MG) | Vu T et al. NEJM 2022 |
-| Zilucoplan for AChR-positive generalized MG | Class I (RAISE trial) | Howard JF et al. Lancet Neurol 2023 |
-| Efgartigimod for AChR-positive generalized MG | Class I (ADAPT trial) | Howard JF et al. Lancet Neurol 2021 |
-| Rozanolixizumab for AChR-positive generalized MG | Class I (MycarinG trial) | Bril V et al. Lancet Neurol 2023 |
-| IVIG for MG acute exacerbation and maintenance | Class I, Level A | Gajdos P et al. Cochrane 2012 |
-| PLEX for myasthenic crisis | Class I, Level A | Gajdos P et al. Cochrane 2012 |
-| IVIG equivalent to PLEX for MG exacerbation | Class I | Barth D et al. Cochrane 2011 |
-| Thymectomy for non-thymomatous AChR-positive MG | Class I (MGTX trial) | Wolfe GI et al. NEJM 2016 |
-| MGTX trial: thymectomy + prednisone superior at 3 years | Class I | Wolfe GI et al. NEJM 2016; 5-year extension data 2019 |
-| Medications to avoid in MG (comprehensive review) | Class II-III | Gilhus NE. NEJM 2016; Sheikh S et al. Muscle Nerve 2021 |
-| FVC <15 mL/kg predicts need for intubation | Class II, Level B | Thomas CE et al. Neurology 1997 |
-| NIF weaker than -20 cm H2O: intubation threshold | Class II, Level B | Thomas CE et al. Neurology 1997 |
-| MG-ADL as validated outcome measure | Class I | Wolfe GI et al. Neurology 1999 |
-| QMG score as validated outcome measure | Class I | Barohn RJ et al. Ann NY Acad Sci 1998 |
-| MGFA Clinical Classification system | Consensus | Jaretzki A et al. Neurology 2000 |
+| Eculizumab for AChR-positive generalized MG | Class I (REGAIN trial) | [Howard JF et al. Lancet Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/29066163/) |
+| Ravulizumab for AChR-positive generalized MG | Class I (CHAMPION-MG) | [Vu T et al. NEJM Evidence 2022](https://pubmed.ncbi.nlm.nih.gov/38319212/) |
+| Zilucoplan for AChR-positive generalized MG | Class I (RAISE trial) | [Howard JF et al. Lancet Neurol 2023](https://pubmed.ncbi.nlm.nih.gov/37059508/) |
+| Efgartigimod for AChR-positive generalized MG | Class I (ADAPT trial) | [Howard JF et al. Lancet Neurol 2021](https://pubmed.ncbi.nlm.nih.gov/34146511/) |
+| Rozanolixizumab for AChR-positive generalized MG | Class I (MycarinG trial) | [Bril V et al. Lancet Neurol 2023](https://pubmed.ncbi.nlm.nih.gov/37059507/) |
+| IVIG for MG acute exacerbation and maintenance | Class I, Level A | [Gajdos P et al. Cochrane 2012](https://pubmed.ncbi.nlm.nih.gov/23235588/) |
+| PLEX for myasthenic crisis | Class I, Level A | [Gajdos P et al. Cochrane 2012](https://pubmed.ncbi.nlm.nih.gov/23235588/) |
+| IVIG equivalent to PLEX for MG exacerbation | Class I | [Barth D et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21562253/) |
+| Thymectomy for non-thymomatous AChR-positive MG | Class I (MGTX trial) | [Wolfe GI et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27509100/) |
+| MGTX trial: thymectomy + prednisone superior at 3 years | Class I | [Wolfe GI et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27509100/); 5-year extension data 2019 |
+| Medications to avoid in MG (comprehensive review) | Class II-III | [Gilhus NE. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/28029925/); Sheikh S et al. Muscle Nerve 2021 |
+| FVC <15 mL/kg predicts need for intubation | Class II, Level B | [Thomas CE et al. Neurology 1997](https://pubmed.ncbi.nlm.nih.gov/9153452/) |
+| NIF weaker than -20 cm H2O: intubation threshold | Class II, Level B | [Thomas CE et al. Neurology 1997](https://pubmed.ncbi.nlm.nih.gov/9153452/) |
+| MG-ADL as validated outcome measure | Class I | [Wolfe GI et al. Neurology 1999](https://pubmed.ncbi.nlm.nih.gov/10227640/) |
+| QMG score as validated outcome measure | Class I | [Barohn RJ et al. Ann NY Acad Sci 1998](https://pubmed.ncbi.nlm.nih.gov/9668327/) |
+| MGFA Clinical Classification system | Consensus | [Jaretzki A et al. Neurology 2000](https://pubmed.ncbi.nlm.nih.gov/10891897/) |
 | Meningococcal vaccination before complement inhibitors | FDA requirement | FDA REMS for eculizumab/ravulizumab/zilucoplan |
-| Pregnancy management in MG | Class II-III | Norwood F et al. J Neurol Neurosurg Psychiatry 2014; Batocchi AP et al. Neurology 1999 |
-| Transient neonatal MG in 10-20% of births | Class II | Hoff JM et al. Eur J Neurol 2003 |
+| Pregnancy management in MG | Class II-III | [Norwood F et al. J Neurol Neurosurg Psychiatry 2014](https://pubmed.ncbi.nlm.nih.gov/23757420/); [Batocchi AP et al. Neurology 1999](https://pubmed.ncbi.nlm.nih.gov/10025772/) |
+| Transient neonatal MG in 10-20% of births | Class II | [Hoff JM et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/14638956/) |
 
 ---
 

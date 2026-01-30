@@ -224,7 +224,7 @@ setting: "HOSP, OPD, ICU"
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Carbamazepine first-line for TN | Class I, Level A | Multiple RCTs; AAN/EFNS Guidelines 2008, reaffirmed |
+| Carbamazepine first-line for TN | Class I, Level A | Multiple RCTs; [AAN/EFNS Guidelines 2008](https://pubmed.ncbi.nlm.nih.gov/18716236/), reaffirmed |
 | Oxcarbazepine as effective alternative | Class I, Level B | Multiple RCTs |
 | MVD most effective long-term for classical TN with compression | Class II, Level B | Multiple case series; long-term outcome data |
 | Percutaneous procedures effective for refractory TN | Class II, Level B | Multiple case series |

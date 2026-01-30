@@ -258,7 +258,7 @@ setting: "HOSP, OPD, ICU"
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| IRLSSG diagnostic criteria | Class I | Allen et al., Sleep Med 2014 |
+| IRLSSG diagnostic criteria | Class I | [Allen et al., Sleep Med 2014](https://pubmed.ncbi.nlm.nih.gov/25023924/) |
 | Iron supplementation if ferritin <75 | Class I, Level A | Multiple RCTs; AASM Guidelines |
 | Alpha-2-delta ligands first-line | Class I, Level A | Updated guidelines 2016; lower augmentation risk |
 | Gabapentin enacarbil FDA approved | Class I, Level A | FDA approval; multiple RCTs |

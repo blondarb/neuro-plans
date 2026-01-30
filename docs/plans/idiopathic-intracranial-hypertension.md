@@ -263,7 +263,7 @@ setting: "HOSP, OPD, ICU"
 | ONSF protects vision in IIH | Class III, Level B | Case series; observational data |
 | CSF shunting reduces ICP and headache | Class III, Level B | Case series; high revision rate noted |
 | Venous sinus stenting emerging therapy | Class III, Level C | Growing evidence; case series |
-| Modified Dandy criteria for diagnosis | Expert consensus | Friedman et al., 2013 |
+| Modified Dandy criteria for diagnosis | Expert consensus | [Friedman et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23966248/) |
 | Topiramate as adjunct with weight loss benefit | Class III, Level C | Observational data |
 
 ---

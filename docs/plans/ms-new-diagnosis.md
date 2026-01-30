@@ -345,17 +345,17 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| 2017 McDonald Criteria for MS diagnosis | Class I | Thompson AJ et al. Lancet Neurol 2018 |
-| MRI brain/spine with contrast for diagnosis | Class I, Level A | MAGNIMS Consensus 2021 |
+| 2017 McDonald Criteria for MS diagnosis | Class I | [Thompson AJ et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/29275977/) |
+| MRI brain/spine with contrast for diagnosis | Class I, Level A | [MAGNIMS-CMSC-NAIMS Consensus 2021](https://pubmed.ncbi.nlm.nih.gov/34139157/) |
 | CSF OCBs can substitute for dissemination in time | Class II, Level B | 2017 McDonald Criteria |
 | IV methylprednisolone 1g Ã— 3-5 days for acute attacks | Class I, Level A | AAN Practice Guideline 2022 |
 | PLEX for steroid-refractory attacks | Class II, Level B | Cochrane Review 2016 |
-| Cell-based assay (FACS) for NMO/MOG antibodies | Class I, Level B | Waters et al. 2014; Pittock et al. |
+| Cell-based assay (FACS) for NMO/MOG antibodies | Class I, Level B | [Waters et al. 2015](https://pubmed.ncbi.nlm.nih.gov/25821844/); Pittock et al. |
 | Vitamin D supplementation | Class II, Level B | Multiple observational studies; CHOLINE, SOLAR trials |
 | Smoking cessation reduces progression | Class II, Level B | Observational studies |
 | Early DMT initiation improves outcomes | Class I, Level A | Multiple RCTs, long-term extension studies |
-| Dalfampridine for walking impairment | Class I, Level A | Goodman et al. Lancet 2009 |
-| Exercise improves fatigue and function | Class I, Level B | Cochrane Review 2015 |
+| Dalfampridine for walking impairment | Class I, Level A | [Goodman et al. Lancet 2009](https://pubmed.ncbi.nlm.nih.gov/19249634/) |
+| Exercise improves fatigue and function | Class I, Level B | [Cochrane Review 2015](https://pubmed.ncbi.nlm.nih.gov/26358158/) |
 
 ---
 

@@ -323,7 +323,7 @@ SECTION B: SUPPORTING INFORMATION
 
 | Guideline | Source | Year | Key Recommendation |
 |-----------|--------|------|-------------------|
-| Guidelines for the Management of Severe Traumatic Brain Injury | Brain Trauma Foundation (BTF) | 2016 (4th ed) | ICP threshold 22 mmHg; CPP 60-70 mmHg; avoid prophylactic hyperventilation; avoid steroids; early seizure prophylaxis x 7 days |
+| [Guidelines for the Management of Severe Traumatic Brain Injury](https://pubmed.ncbi.nlm.nih.gov/27654000/) | Brain Trauma Foundation (BTF) | 2016 (4th ed) | ICP threshold 22 mmHg; CPP 60-70 mmHg; avoid prophylactic hyperventilation; avoid steroids; early seizure prophylaxis x 7 days |
 | Malignant MCA Stroke Guidelines | AHA/ASA | 2019 | Decompressive craniectomy recommended for patients age <60 with malignant MCA stroke within 48h; discuss goals of care |
 | ICH Guidelines | AHA/ASA | 2022 | BP target SBP <140 (intensive reduction); reversal of anticoagulation; surgery for cerebellar hemorrhage >3cm |
 | SAH Guidelines | AHA/ASA | 2023 | Secure aneurysm early; nimodipine; EVD for hydrocephalus; euvolemia; monitor/treat vasospasm |
@@ -333,13 +333,13 @@ SECTION B: SUPPORTING INFORMATION
 
 | Study | Finding | Impact |
 |-------|---------|--------|
-| BTF Guidelines (2016) | ICP threshold changed from 20 to 22 mmHg; CPP target 60-70 (avoid >70); Level IIA evidence for ICP monitoring improving outcomes | Standard of care for TBI ICP management |
-| CRASH Trial (2004) | Corticosteroids HARMFUL in TBI — 14-day mortality increased (25.7% vs. 22.3%, RR 1.15); 6-month mortality increased | Steroids absolutely contraindicated in TBI |
-| DECRA Trial (2011) | Early decompressive craniectomy (within 72h) for refractory ICP in TBI did NOT improve 6-month functional outcome (though reduced ICP and ICU stay) | Questioned early prophylactic DC; did not stop DC but informed timing decisions |
-| RESCUEicp Trial (2016) | Late/rescue DC for refractory ICP in TBI improved survival (48.9% vs. 26.9%) but increased proportion with severe disability; similar rates of favorable outcome | DC is life-saving but increases survival with disability; requires goals of care discussion |
-| DESTINY/DECIMAL/HAMLET (pooled) | DC for malignant MCA stroke <60 years within 48h reduces mortality (NNT=2); higher survival with moderate-severe disability (mRS 4); DC should be offered | Standard of care for malignant MCA stroke in appropriate patients |
-| EUROTHERM (2015) | Prophylactic hypothermia (32-35°C) in TBI HARMFUL — worse outcomes; trial stopped early | Hypothermia NOT recommended prophylactically; rescue use only for refractory ICP |
-| INTERACT2 / ATACH-2 (ICH) | Intensive BP lowering (SBP <140) safe in ICH; modest benefit in INTERACT2; no benefit in ATACH-2 | SBP <140 within 6h is current recommendation for ICH |
+| [BTF Guidelines (2016)](https://pubmed.ncbi.nlm.nih.gov/27654000/) | ICP threshold changed from 20 to 22 mmHg; CPP target 60-70 (avoid >70); Level IIA evidence for ICP monitoring improving outcomes | Standard of care for TBI ICP management |
+| [CRASH Trial (2004)](https://pubmed.ncbi.nlm.nih.gov/15474134/) | Corticosteroids HARMFUL in TBI — 14-day mortality increased (25.7% vs. 22.3%, RR 1.15); 6-month mortality increased | Steroids absolutely contraindicated in TBI |
+| [DECRA Trial (2011)](https://pubmed.ncbi.nlm.nih.gov/21434843/) | Early decompressive craniectomy (within 72h) for refractory ICP in TBI did NOT improve 6-month functional outcome (though reduced ICP and ICU stay) | Questioned early prophylactic DC; did not stop DC but informed timing decisions |
+| [RESCUEicp Trial (2016)](https://pubmed.ncbi.nlm.nih.gov/27602507/) | Late/rescue DC for refractory ICP in TBI improved survival (48.9% vs. 26.9%) but increased proportion with severe disability; similar rates of favorable outcome | DC is life-saving but increases survival with disability; requires goals of care discussion |
+| [DESTINY/DECIMAL/HAMLET (pooled)](https://pubmed.ncbi.nlm.nih.gov/17303527/) | DC for malignant MCA stroke <60 years within 48h reduces mortality (NNT=2); higher survival with moderate-severe disability (mRS 4); DC should be offered | Standard of care for malignant MCA stroke in appropriate patients |
+| [EUROTHERM (2015)](https://pubmed.ncbi.nlm.nih.gov/26444221/) | Prophylactic hypothermia (32-35°C) in TBI HARMFUL — worse outcomes; trial stopped early | Hypothermia NOT recommended prophylactically; rescue use only for refractory ICP |
+| [INTERACT2](https://pubmed.ncbi.nlm.nih.gov/23713578/) / [ATACH-2](https://pubmed.ncbi.nlm.nih.gov/27276234/) (ICH) | Intensive BP lowering (SBP <140) safe in ICH; modest benefit in INTERACT2; no benefit in ATACH-2 | SBP <140 within 6h is current recommendation for ICH |
 | SAFE-TBI (2021) | 20% mannitol vs. hypertonic saline (various concentrations): no significant difference in ICP control or outcomes | Either osmotic agent acceptable; hypertonic saline may be preferred in hypovolemia |
 
 ### ICP and CPP Targets Summary

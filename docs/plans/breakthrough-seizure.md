@@ -361,10 +361,10 @@ SECTION B: SUPPORTING INFORMATION
 
 | Study | Finding | Impact |
 |-------|---------|--------|
-| Kwan & Brodie (2000) | 47% of newly diagnosed epilepsy patients became seizure-free on first ASM; 13% on second; 4% on third; after failure of 2 appropriate ASMs, chance of seizure freedom with additional ASMs is <5% | Defined drug-resistant epilepsy; established rationale for early surgery referral |
-| SANAD I & II (2007, 2021) | Lamotrigine best for focal epilepsy; valproate best for generalized/unclassified (but teratogenic); levetiracetam non-inferior to lamotrigine for focal | Guide first-line ASM selection by seizure type |
+| [Kwan & Brodie (2000)](https://pubmed.ncbi.nlm.nih.gov/10660394/) | 47% of newly diagnosed epilepsy patients became seizure-free on first ASM; 13% on second; 4% on third; after failure of 2 appropriate ASMs, chance of seizure freedom with additional ASMs is <5% | Defined drug-resistant epilepsy; established rationale for early surgery referral |
+| SANAD I & II ([2007](https://pubmed.ncbi.nlm.nih.gov/17382827/), [2021](https://pubmed.ncbi.nlm.nih.gov/33838757/)) | Lamotrigine best for focal epilepsy; valproate best for generalized/unclassified (but teratogenic); levetiracetam non-inferior to lamotrigine for focal | Guide first-line ASM selection by seizure type |
 | Standard and New Antiepileptic Drugs (SNAED) Trial | Levetiracetam and zonisamide non-inferior to lamotrigine for focal epilepsy | Expanded first-line options |
-| Early Randomized Surgical Epilepsy Trial (ERSET, 2012) | Early surgery superior to continued medical therapy for drug-resistant temporal lobe epilepsy; 73% vs. 0% seizure-free at 2 years | Surgery is highly effective; early referral improves outcomes |
+| [Early Randomized Surgical Epilepsy Trial (ERSET, 2012)](https://pubmed.ncbi.nlm.nih.gov/22396514/) | Early surgery superior to continued medical therapy for drug-resistant temporal lobe epilepsy; 73% vs. 0% seizure-free at 2 years | Surgery is highly effective; early referral improves outcomes |
 | SUDEP Risk Factors | Convulsive seizures, especially nocturnal; living alone; poor seizure control | Counsel patients; nocturnal monitoring devices; optimize seizure control |
 
 ### ASM Therapeutic Ranges (Reference)

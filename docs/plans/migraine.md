@@ -279,15 +279,15 @@ setting: "HOSP, OPD, ICU"
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Triptans effective for acute migraine | Class I, Level A | Cochrane Reviews; AHS Guidelines |
-| Prochlorperazine/metoclopramide effective for acute migraine | Class I, Level A | Friedman et al., Neurology 2015 |
-| Dexamethasone reduces headache recurrence | Class I, Level A | Singh et al., Cephalalgia 2008 |
-| DHE effective for status migrainosus | Class II, Level B | Raskin, Headache 1986 |
-| Beta-blockers effective for prevention | Class I, Level A | AAN Guidelines 2012 |
-| Topiramate effective for prevention | Class I, Level A | AAN Guidelines 2012 |
+| Prochlorperazine/metoclopramide effective for acute migraine | Class I, Level A | [Friedman et al. Ann Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18006188/); [AHS Evidence Assessment 2016](https://pubmed.ncbi.nlm.nih.gov/27300483/) |
+| Dexamethasone reduces headache recurrence | Class I, Level A | [Singh et al. Acad Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18976336/) |
+| DHE effective for status migrainosus | Class II, Level B | [Raskin, Neurology 1986](https://pubmed.ncbi.nlm.nih.gov/3520384/) |
+| Beta-blockers effective for prevention | Class I, Level A | [AAN/AHS Guidelines, Silberstein et al. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/22529202/) |
+| Topiramate effective for prevention | Class I, Level A | [AAN/AHS Guidelines, Silberstein et al. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/22529202/) |
 | CGRP mAbs effective for prevention | Class I, Level A | Multiple RCTs; FDA approved 2018+ |
-| OnabotulinumtoxinA for chronic migraine | Class I, Level A | PREEMPT trials; Aurora 2010 |
+| OnabotulinumtoxinA for chronic migraine | Class I, Level A | [PREEMPT pooled analysis, Dodick et al. 2010](https://pubmed.ncbi.nlm.nih.gov/20487038/); [Aurora et al. Cephalalgia 2010](https://pubmed.ncbi.nlm.nih.gov/20647170/) |
 | Gepants effective for acute and preventive treatment | Class I, Level A | Multiple RCTs 2019-2023 |
-| Avoid medication overuse | Class II, Level B | Headache Classification Committee, ICHD-3 |
+| Avoid medication overuse | Class II, Level B | [ICHD-3, Cephalalgia 2018](https://pubmed.ncbi.nlm.nih.gov/29368949/) |
 
 ---
 

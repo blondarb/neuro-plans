@@ -297,16 +297,16 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| STAT MRI entire spine for acute myelopathy | Class I, Level B | AAN Practice Guideline; Transverse Myelitis Consortium Working Group (2002) |
+| STAT MRI entire spine for acute myelopathy | Class I, Level B | AAN Practice Guideline; [Transverse Myelitis Consortium Working Group (2002)](https://pubmed.ncbi.nlm.nih.gov/12236201/) |
 | IV methylprednisolone 1g/day x 3-5 days for inflammatory myelitis | Class I, Level B | Consensus; extrapolated from MS relapse data (ONTT) and TM studies |
-| PLEX for steroid-refractory inflammatory myelitis | Class IIa, Level B | Weinshenker et al. (Ann Neurol 1999); superior to sham in severe demyelinating attacks |
-| AQP4-IgG (cell-based assay) for NMOSD diagnosis | Class I, Level A | Wingerchuk et al. IPND 2015 criteria |
-| MOG-IgG for MOGAD diagnosis | Class I, Level B | Banwell et al. (Lancet Neurol 2023) |
-| Surgical decompression within 24h for compressive myelopathy | Class I, Level B | Fehlings et al. (2012); earlier surgery = better outcomes |
-| Epidural abscess: antibiotics + surgical drainage | Class I, Level B | Darouiche et al. (NEJM 2006) |
+| PLEX for steroid-refractory inflammatory myelitis | Class IIa, Level B | [Weinshenker et al. (Ann Neurol 1999)](https://pubmed.ncbi.nlm.nih.gov/10589540/); superior to sham in severe demyelinating attacks |
+| AQP4-IgG (cell-based assay) for NMOSD diagnosis | Class I, Level A | [Wingerchuk et al. IPND 2015 criteria](https://pubmed.ncbi.nlm.nih.gov/26092914/) |
+| MOG-IgG for MOGAD diagnosis | Class I, Level B | [Banwell et al. (Lancet Neurol 2023)](https://pubmed.ncbi.nlm.nih.gov/36706773/) |
+| Surgical decompression within 24h for compressive myelopathy | Class I, Level B | [Fehlings et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22384132/); earlier surgery = better outcomes |
+| Epidural abscess: antibiotics + surgical drainage | Class I, Level B | [Darouiche et al. (NEJM 2006)](https://pubmed.ncbi.nlm.nih.gov/17093252/) |
 | B12 replacement for subacute combined degeneration | Class I, Level A | Well-established; early treatment may be reversible |
 | Rituximab for NMOSD prevention | Class I, Level A | Multiple trials; standard of care |
-| Eculizumab for NMOSD prevention | Class I, Level A | PREVENT trial (Pittock et al. NEJM 2019) |
+| Eculizumab for NMOSD prevention | Class I, Level A | [PREVENT trial (Pittock et al. NEJM 2019)](https://pubmed.ncbi.nlm.nih.gov/31050279/) |
 | AQP4-IgG-positive NMOSD: avoid interferon-beta and fingolimod | Class III (Harm) | Case reports of worsening |
 | LP after MRI (not before) in acute myelopathy | Class I, Level C | Risk of seeding infection through abscess; need anatomic diagnosis first |
 | Bladder management with intermittent catheterization | Class I, Level B | Spinal cord injury guidelines; prevents UTI better than indwelling catheter |

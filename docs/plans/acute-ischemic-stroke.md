@@ -283,13 +283,13 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| IV alteplase within 4.5h | Class I, Level A | AHA/ASA 2019 Guidelines; NINDS trial; ECASS III |
-| Tenecteplase non-inferior to alteplase for LVO | Class IIa, Level B-R | AcT trial (2022); EXTEND-IA TNK |
-| Thrombectomy for LVO 0-6h | Class I, Level A | MR CLEAN, ESCAPE, EXTEND-IA, SWIFT-PRIME, REVASCAT |
-| Thrombectomy for LVO 6-24h (selected patients) | Class I, Level A | DAWN trial; DEFUSE-3 |
-| DAPT 21 days for minor stroke/high-risk TIA | Class I, Level A | CHANCE trial; POINT trial |
+| IV alteplase within 4.5h | Class I, Level A | [AHA/ASA 2019 Guidelines (Powers et al.)](https://pubmed.ncbi.nlm.nih.gov/31662037/); [NINDS trial (NEJM 1995)](https://pubmed.ncbi.nlm.nih.gov/7477192/); [ECASS III (Hacke et al. NEJM 2008)](https://pubmed.ncbi.nlm.nih.gov/18815396/) |
+| Tenecteplase non-inferior to alteplase for LVO | Class IIa, Level B-R | [AcT trial (Menon et al. Lancet 2022)](https://pubmed.ncbi.nlm.nih.gov/35779553/); EXTEND-IA TNK |
+| Thrombectomy for LVO 0-6h | Class I, Level A | [MR CLEAN (Berkhemer et al. NEJM 2015)](https://pubmed.ncbi.nlm.nih.gov/25517348/), ESCAPE, EXTEND-IA, SWIFT-PRIME, REVASCAT |
+| Thrombectomy for LVO 6-24h (selected patients) | Class I, Level A | [DAWN trial (Nogueira et al. NEJM 2018)](https://pubmed.ncbi.nlm.nih.gov/29129157/); [DEFUSE-3 (Albers et al. NEJM 2018)](https://pubmed.ncbi.nlm.nih.gov/29364767/) |
+| DAPT 21 days for minor stroke/high-risk TIA | Class I, Level A | [CHANCE trial (Wang et al. NEJM 2013)](https://pubmed.ncbi.nlm.nih.gov/23803136/); POINT trial |
 | Aspirin + ticagrelor 30 days for minor stroke | Class IIa, Level B-R | THALES trial |
-| High-intensity statin therapy | Class I, Level A | SPARCL trial; AHA/ASA 2021 |
+| High-intensity statin therapy | Class I, Level A | [SPARCL trial (Amarenco et al. NEJM 2006)](https://pubmed.ncbi.nlm.nih.gov/16899775/); AHA/ASA 2021 |
 | Anticoagulation for AF-related stroke | Class I, Level A | RE-LY, ROCKET-AF, ARISTOTLE, ENGAGE AF |
 | BP target <130/80 for secondary prevention | Class I, Level A | SPS3 trial; AHA/ASA 2021 |
 | Early mobilization (24-48h, not aggressive) | Class IIa, Level B-R | AVERT trial (very early <24h aggressive mobilization harmful) |

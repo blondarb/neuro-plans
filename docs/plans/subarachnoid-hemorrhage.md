@@ -285,20 +285,20 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Nimodipine 60 mg PO q4h x 21 days | Class I, Level A | Pickard et al. (BMJ 1989); only proven agent to improve outcomes in SAH vasospasm |
-| Early aneurysm securing (<24h, ideally <12h) | Class I, Level B | ISAT; AHA/ASA 2012 SAH Guidelines; de Gans et al. (Stroke 2002) |
-| Endovascular coiling preferred over clipping for most aneurysms | Class I, Level A | ISAT trial (Molyneux et al. Lancet 2002); long-term follow-up |
+| Nimodipine 60 mg PO q4h x 21 days | Class I, Level A | [Pickard et al. (BMJ 1989)](https://pubmed.ncbi.nlm.nih.gov/2496789/); only proven agent to improve outcomes in SAH vasospasm |
+| Early aneurysm securing (<24h, ideally <12h) | Class I, Level B | ISAT; AHA/ASA 2012 SAH Guidelines; [de Gans et al. (Neurosurgery 2002)](https://pubmed.ncbi.nlm.nih.gov/11844269/) |
+| Endovascular coiling preferred over clipping for most aneurysms | Class I, Level A | ISAT trial ([Molyneux et al. Lancet 2002](https://pubmed.ncbi.nlm.nih.gov/12414200/)); long-term follow-up |
 | SBP <160 until aneurysm secured | Class I, Level B | AHA/ASA 2012 SAH Guidelines |
-| Euvolemia (avoid hypovolemia; avoid prophylactic hypervolemia) | Class I, Level B | Lennihan et al. (Stroke 2000); HIMALAIA trial |
+| Euvolemia (avoid hypovolemia; avoid prophylactic hypervolemia) | Class I, Level B | [Lennihan et al. (Stroke 2000)](https://pubmed.ncbi.nlm.nih.gov/10657410/); HIMALAIA trial |
 | Induced hypertension for clinical vasospasm (after aneurysm secured) | Class IIa, Level B | AHA/ASA Guidelines; standard practice |
-| TCD daily for vasospasm monitoring | Class IIa, Level B | Sloan et al. (2004); AHA/ASA Guidelines |
+| TCD daily for vasospasm monitoring | Class IIa, Level B | [Sloan et al. (2004)](https://pubmed.ncbi.nlm.nih.gov/15136667/); AHA/ASA Guidelines |
 | Short-term seizure prophylaxis (3-7 days) reasonable | Class IIb, Level B | AHA/ASA 2012 |
-| Avoid phenytoin in SAH (worse cognitive outcomes) | Class III (Harm) | Naidech et al. (Neurocrit Care 2005) |
-| CT sensitivity ~100% within 6h | Class I, Level A | Perry et al. (BMJ 2011); Backes et al. (Stroke 2012) |
+| Avoid phenytoin in SAH (worse cognitive outcomes) | Class III (Harm) | [Naidech et al. (Stroke 2005)](https://pubmed.ncbi.nlm.nih.gov/15662039/) |
+| CT sensitivity ~100% within 6h | Class I, Level A | [Perry et al. (BMJ 2011)](https://pubmed.ncbi.nlm.nih.gov/21768192/); [Backes et al. (Stroke 2012)](https://pubmed.ncbi.nlm.nih.gov/22821609/) |
 | LP if CT negative but clinical suspicion | Class I, Level B | AHA/ASA Guidelines; standard of care |
-| Aminocaproic acid (short-term) if aneurysm securing delayed | Class IIa, Level B | Hillman et al. (Neurosurgery 2002); AHA/ASA 2012 |
-| Magnesium infusion does NOT improve outcomes | Class III (No Benefit) | MASH-2 trial (Dorhout Mees et al. Lancet 2012) |
-| Fludrocortisone for cerebral salt wasting | Class IIa, Level B | Hasan et al. (Stroke 1989) |
+| Aminocaproic acid (short-term) if aneurysm securing delayed | Class IIa, Level B | [Hillman et al. (J Neurosurg 2002)](https://pubmed.ncbi.nlm.nih.gov/12405362/); AHA/ASA 2012 |
+| Magnesium infusion does NOT improve outcomes | Class III (No Benefit) | MASH-2 trial ([Dorhout Mees et al. Lancet 2012](https://pubmed.ncbi.nlm.nih.gov/22633825/)) |
+| Fludrocortisone for cerebral salt wasting | Class IIa, Level B | [Hasan et al. (Stroke 1989)](https://pubmed.ncbi.nlm.nih.gov/2672426/) |
 | Intra-arterial vasodilator / balloon angioplasty for refractory vasospasm | Class IIa, Level B | Multiple case series; AHA/ASA Guidelines |
 | Avoid self-fulfilling prophecy in poor-grade SAH | Class I, Level C | AHA/ASA 2012: aggressive treatment for at least 72h in poor-grade |
 

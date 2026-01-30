@@ -277,19 +277,19 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| IVIG 0.4 g/kg/day x 5 days | Class I, Level A | Dutch GBS Study Group (1992); Cochrane Review (Hughes 2014) |
-| PLEX (5 exchanges) equivalent to IVIG | Class I, Level A | French Cooperative Group; North American GBS Study |
-| IVIG + PLEX combination NOT superior to either alone | Class I, Level A | Plasma Exchange/Sandoglobulin GBS Trial Group (1997) |
-| Corticosteroids alone NOT effective for GBS | Class I, Level A | Cochrane Review (Hughes 2016) |
-| IVIG + IV methylprednisolone may shorten recovery (weak evidence) | Class IIb, Level B | Dutch GBS Study Group (2004) |
-| Bedside FVC and NIF for respiratory monitoring | Class I, Level B | Lawn et al. (2001); Wijdicks & Klein (2017) |
-| 20/30/40 rule for intubation | Class IIa, Level C | Expert consensus; Wijdicks & Borel (1998) |
+| IVIG 0.4 g/kg/day x 5 days | Class I, Level A | [Dutch GBS Study Group, NEJM 1992](https://pubmed.ncbi.nlm.nih.gov/1552913/); [Cochrane Review, Hughes 2014](https://pubmed.ncbi.nlm.nih.gov/25238327/) |
+| PLEX (5 exchanges) equivalent to IVIG | Class I, Level A | [French Cooperative Group, Ann Neurol 1987](https://pubmed.ncbi.nlm.nih.gov/2893583/); North American GBS Study |
+| IVIG + PLEX combination NOT superior to either alone | Class I, Level A | [PE/Sandoglobulin GBS Trial Group, Lancet 1997](https://pubmed.ncbi.nlm.nih.gov/9014908/) |
+| Corticosteroids alone NOT effective for GBS | Class I, Level A | [Cochrane Review, Hughes 2016](https://pubmed.ncbi.nlm.nih.gov/27775812/) |
+| IVIG + IV methylprednisolone may shorten recovery (weak evidence) | Class IIb, Level B | [Dutch GBS Study Group, Lancet 2004](https://pubmed.ncbi.nlm.nih.gov/14738791/) |
+| Bedside FVC and NIF for respiratory monitoring | Class I, Level B | [Lawn et al. Arch Neurol 2001](https://pubmed.ncbi.nlm.nih.gov/11405803/) |
+| 20/30/40 rule for intubation | Class IIa, Level C | Expert consensus; [Wijdicks & Borel, Neurology 1998](https://pubmed.ncbi.nlm.nih.gov/9443451/) |
 | Avoid succinylcholine in GBS | Class III (Harm) | Risk of hyperkalemia from denervated muscle |
-| Neuropathic pain management (gabapentin, carbamazepine) | Class IIa, Level B | Pandey et al. (2002); Cochrane Review |
-| Early rehabilitation improves outcomes | Class I, Level B | Khan et al. (2012); GBS-CIDP Foundation recommendations |
+| Neuropathic pain management (gabapentin, carbamazepine) | Class IIa, Level B | [Pandey et al. Anesth Analg 2002](https://pubmed.ncbi.nlm.nih.gov/12456446/); Cochrane Review |
+| Early rehabilitation improves outcomes | Class I, Level B | [Khan & Amatya, Eur J Phys Rehabil Med 2012](https://pubmed.ncbi.nlm.nih.gov/22820829/); GBS-CIDP Foundation recommendations |
 | DVT prophylaxis | Class I, Level C | Standard of care for immobilized patients |
 | Anti-ganglioside antibodies (diagnostic, not required) | Class IIa, Level B | Diagnostic sensitivity varies by subtype |
-| Brighton criteria for GBS diagnosis | Class IIa, Level C | Brighton Collaboration (2011) |
+| Brighton criteria for GBS diagnosis | Class IIa, Level C | [Brighton Collaboration, Vaccine 2011](https://pubmed.ncbi.nlm.nih.gov/20600491/) |
 | IgA level before IVIG | Class I, Level C | Standard safety measure |
 | LP with albuminocytologic dissociation | Class I, Level B | Classic diagnostic finding; may be normal in first week |
 

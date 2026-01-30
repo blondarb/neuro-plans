@@ -446,37 +446,37 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Graus 2016 diagnostic criteria for autoimmune encephalitis | Expert Consensus, Class III | Graus F et al. Lancet Neurol 2016;15:391-404 |
-| CSF antibody testing more sensitive than serum for anti-NMDAR | Class II | Dalmau J et al. Lancet Neurol 2008;7:1091-1098 |
+| Graus 2016 diagnostic criteria for autoimmune encephalitis | Expert Consensus, Class III | [Graus F et al. Lancet Neurol 2016;15:391-404](https://pubmed.ncbi.nlm.nih.gov/26906964/) |
+| CSF antibody testing more sensitive than serum for anti-NMDAR | Class II | [Dalmau J et al. Lancet Neurol 2008;7:1091-1098](https://pubmed.ncbi.nlm.nih.gov/18851928/) |
 | Cell-based assay (CBA) is gold standard for antibody detection | Class II | Waters P et al. J Neurol Neurosurg Psychiatry 2014 |
-| First-line immunotherapy: IV steroids + IVIG or PLEX | Class III, Expert Consensus | Titulaer MJ et al. Lancet Neurol 2013;12:157-165 |
-| Early immunotherapy improves outcomes | Class II | Titulaer MJ et al. Lancet Neurol 2013;12:157-165 |
-| Rituximab as second-line therapy | Class III, Retrospective | Lee WJ et al. JAMA Neurol 2016;73:197-205 |
-| Early second-line (rituximab) improves anti-NMDAR outcomes | Class III | Titulaer MJ et al. Lancet Neurol 2013;12:157-165 |
-| Cyclophosphamide as second-line therapy | Class III, Expert Consensus | Dalmau J & Graus F. N Engl J Med 2018;378:840-851 |
-| Tocilizumab for refractory autoimmune encephalitis | Class IV, Case Series | Lee WJ et al. JAMA Neurol 2018 |
-| Bortezomib for refractory autoimmune encephalitis | Class IV, Case Series | Scheibe F et al. J Neurol 2017 |
-| Ovarian teratoma resection is essential in anti-NMDAR | Class II | Titulaer MJ et al. Lancet Neurol 2013 |
-| Tumor screening by antibody type | Expert Consensus | Graus F et al. Lancet Neurol 2016 |
-| Extreme delta brush on EEG in anti-NMDAR | Class III | Schmitt SE et al. Epilepsia 2012 |
-| Faciobrachial dystonic seizures precede LGI1 encephalitis | Class III | Irani SR et al. Brain 2011;134:2802-2818 |
-| Hyponatremia in LGI1 encephalitis (SIADH mechanism) | Class III | Lai M et al. Ann Neurol 2010;67:428-440 |
-| GABA-B encephalitis and SCLC association (~50%) | Class III | Lancaster E et al. Ann Neurol 2010;67:594-601 |
-| Anti-NMDAR encephalitis staging and recovery pattern | Class II | Dalmau J et al. Lancet Neurol 2019 |
-| Modified Rankin Scale for outcome tracking | Validated Scale | van Swieten JC et al. Stroke 1988 |
-| CASE score for autoimmune encephalitis assessment | Validated Scale | Lim JA et al. Neurology 2019 |
-| Catatonia in anti-NMDAR encephalitis (~40%) | Class III | Al-Diwani A et al. Lancet Psychiatry 2019 |
-| Lorazepam challenge for catatonia | Expert Consensus | Bush G et al. Acta Psychiatr Scand 1996 |
-| NMS risk with antipsychotics in anti-NMDAR | Class IV, Case Reports | Lejuste F et al. J Neurol Neurosurg Psychiatry 2016 |
-| Levetiracetam as preferred ASM in autoimmune encephalitis | Expert Consensus | Britton J. Epilepsy Curr 2016 |
-| Avoid carbamazepine in LGI1 (worsens hyponatremia) | Expert Consensus | Irani SR et al. Brain 2010 |
-| Long-term rituximab maintenance prevents relapse | Class III | Nosadini M et al. JAMA Neurol 2015 |
-| Anti-NMDAR relapse rate 12-20% | Class II | Titulaer MJ et al. Lancet Neurol 2013 |
+| First-line immunotherapy: IV steroids + IVIG or PLEX | Class III, Expert Consensus | [Titulaer MJ et al. Lancet Neurol 2013;12:157-165](https://pubmed.ncbi.nlm.nih.gov/23290630/) |
+| Early immunotherapy improves outcomes | Class II | [Titulaer MJ et al. Lancet Neurol 2013;12:157-165](https://pubmed.ncbi.nlm.nih.gov/23290630/) |
+| Rituximab as second-line therapy | Class III, Retrospective | [Lee WJ et al. Neurology 2016;86:1683-1691](https://pubmed.ncbi.nlm.nih.gov/27037228/) |
+| Early second-line (rituximab) improves anti-NMDAR outcomes | Class III | [Titulaer MJ et al. Lancet Neurol 2013;12:157-165](https://pubmed.ncbi.nlm.nih.gov/23290630/) |
+| Cyclophosphamide as second-line therapy | Class III, Expert Consensus | [Dalmau J & Graus F. N Engl J Med 2018;378:840-851](https://pubmed.ncbi.nlm.nih.gov/29490181/) |
+| Tocilizumab for refractory autoimmune encephalitis | Class IV, Case Series | [Lee WJ et al. Neurotherapeutics 2016;13:824-832](https://pubmed.ncbi.nlm.nih.gov/27215218/) |
+| Bortezomib for refractory autoimmune encephalitis | Class IV, Case Series | [Scheibe F et al. Neurology 2017;88:366-370](https://pubmed.ncbi.nlm.nih.gov/28003505/) |
+| Ovarian teratoma resection is essential in anti-NMDAR | Class II | [Titulaer MJ et al. Lancet Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/23290630/) |
+| Tumor screening by antibody type | Expert Consensus | [Graus F et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/26906964/) |
+| Extreme delta brush on EEG in anti-NMDAR | Class III | [Schmitt SE et al. Neurology 2012;79:1094-1100](https://pubmed.ncbi.nlm.nih.gov/22933737/) |
+| Faciobrachial dystonic seizures precede LGI1 encephalitis | Class III | [Irani SR et al. Ann Neurol 2011;69:892-900](https://pubmed.ncbi.nlm.nih.gov/21416487/) |
+| Hyponatremia in LGI1 encephalitis (SIADH mechanism) | Class III | [Lai M et al. Lancet Neurol 2010;9:776-785](https://pubmed.ncbi.nlm.nih.gov/20580615/) |
+| GABA-B encephalitis and SCLC association (~50%) | Class III | [Lancaster E et al. Lancet Neurol 2010;9:67-76](https://pubmed.ncbi.nlm.nih.gov/19962348/) |
+| Anti-NMDAR encephalitis staging and recovery pattern | Class II | [Dalmau J et al. Lancet Neurol 2019;18:1045-1057](https://pubmed.ncbi.nlm.nih.gov/31326280/) |
+| Modified Rankin Scale for outcome tracking | Validated Scale | [van Swieten JC et al. Stroke 1988;19:604-607](https://pubmed.ncbi.nlm.nih.gov/3363593/) |
+| CASE score for autoimmune encephalitis assessment | Validated Scale | [Lim JA et al. Ann Neurol 2019;85:352-358](https://pubmed.ncbi.nlm.nih.gov/30675918/) |
+| Catatonia in anti-NMDAR encephalitis (~40%) | Class III | [Al-Diwani A et al. Lancet Psychiatry 2019;6:235-246](https://pubmed.ncbi.nlm.nih.gov/30765329/) |
+| Lorazepam challenge for catatonia | Expert Consensus | [Bush G et al. Acta Psychiatr Scand 1996;93:129-136](https://pubmed.ncbi.nlm.nih.gov/8686483/) |
+| NMS risk with antipsychotics in anti-NMDAR | Class IV, Case Reports | [Lejuste F et al. Neurol Neuroimmunol Neuroinflamm 2016;3:e280](https://pubmed.ncbi.nlm.nih.gov/27606355/) |
+| Levetiracetam as preferred ASM in autoimmune encephalitis | Expert Consensus | [Britton J. Handb Clin Neurol 2016;133:219-245](https://pubmed.ncbi.nlm.nih.gov/27112680/) |
+| Avoid carbamazepine in LGI1 (worsens hyponatremia) | Expert Consensus | [Irani SR et al. Brain 2010;133:2734-2748](https://pubmed.ncbi.nlm.nih.gov/20663977/) |
+| Long-term rituximab maintenance prevents relapse | Class III | [Nosadini M et al. Expert Rev Neurother 2015;15:1391-1419](https://pubmed.ncbi.nlm.nih.gov/26559389/) |
+| Anti-NMDAR relapse rate 12-20% | Class II | [Titulaer MJ et al. Lancet Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/23290630/) |
 | Mycophenolate as steroid-sparing agent | Class IV | Expert practice; no large trials |
-| Autonomic instability management in anti-NMDAR | Expert Consensus | Dalmau J & Graus F. N Engl J Med 2018 |
-| Repeat tumor screening q6 months x 2-4 years | Expert Consensus | Graus F et al. Lancet Neurol 2016 |
-| Central hypoventilation in severe anti-NMDAR requiring prolonged ventilation | Class III | Florance NR et al. Ann Neurol 2009 |
-| Neuropsychological recovery trajectory in autoimmune encephalitis | Class III | Finke C et al. JAMA Neurol 2017 |
+| Autonomic instability management in anti-NMDAR | Expert Consensus | [Dalmau J & Graus F. N Engl J Med 2018](https://pubmed.ncbi.nlm.nih.gov/29490181/) |
+| Repeat tumor screening q6 months x 2-4 years | Expert Consensus | [Graus F et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/26906964/) |
+| Central hypoventilation in severe anti-NMDAR requiring prolonged ventilation | Class III | [Florance NR et al. Ann Neurol 2009;66:11-18](https://pubmed.ncbi.nlm.nih.gov/19670433/) |
+| Neuropsychological recovery trajectory in autoimmune encephalitis | Class III | [Finke C et al. JAMA Neurol 2017;74:50-59](https://pubmed.ncbi.nlm.nih.gov/27893017/) |
 
 ---
 

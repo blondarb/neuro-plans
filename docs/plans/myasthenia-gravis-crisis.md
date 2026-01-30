@@ -273,21 +273,21 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| IVIG (2 g/kg over 2-5 days) for myasthenic crisis | Class I, Level A | Zinman et al. (2007); Gajdos et al. Cochrane (2012) |
+| IVIG (2 g/kg over 2-5 days) for myasthenic crisis | Class I, Level A | [Zinman et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/17353471/); [Gajdos et al. Cochrane (2012)](https://pubmed.ncbi.nlm.nih.gov/23235588/) |
 | PLEX (5 exchanges) for myasthenic crisis | Class I, Level A | Cortese et al. (2011); Cochrane Review |
-| IVIG and PLEX are equivalent for crisis | Class I, Level A | Barth et al. (2011) |
-| PLEX preferred for MuSK-positive MG | Class IIa, Level C | Expert consensus; Evoli et al. (2003) |
+| IVIG and PLEX are equivalent for crisis | Class I, Level A | [Barth et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21562253/) |
+| PLEX preferred for MuSK-positive MG | Class IIa, Level C | Expert consensus; [Evoli et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12821509/) |
 | Hold pyridostigmine during intubation/crisis | Class IIa, Level C | Expert consensus |
 | Avoid aminoglycosides, fluoroquinolones in MG | Class III (Harm) | FDA safety communication; multiple case reports |
 | Avoid IV magnesium in MG | Class III (Harm) | NMJ blockade; case reports of respiratory failure |
 | Steroids can transiently worsen MG (monitor closely when initiating) | Class IIa, Level B | Multiple observational studies |
-| Thymectomy benefit in non-thymomatous MG | Class I, Level B | MGTX trial (Wolfe et al. NEJM 2016) |
-| Eculizumab for refractory AChR+ generalized MG | Class I, Level A | REGAIN trial (Howard et al. Lancet Neurol 2017) |
-| Efgartigimod for AChR+ generalized MG | Class I, Level A | ADAPT trial (Howard et al. Lancet Neurol 2021) |
-| Rituximab for MuSK-positive MG | Class IIa, Level B | Hehir et al. (2017); Díaz-Manera et al. (2012) |
+| Thymectomy benefit in non-thymomatous MG | Class I, Level B | MGTX trial ([Wolfe et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27509100/)) |
+| Eculizumab for refractory AChR+ generalized MG | Class I, Level A | REGAIN trial ([Howard et al. Lancet Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/29066163/)) |
+| Efgartigimod for AChR+ generalized MG | Class I, Level A | ADAPT trial ([Howard et al. Lancet Neurol 2021](https://pubmed.ncbi.nlm.nih.gov/34146511/)) |
+| Rituximab for MuSK-positive MG | Class IIa, Level B | [Hehir et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28801338/); [Díaz-Manera et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22218276/) |
 | 20/30/40 rule for intubation | Class IIa, Level C | Wijdicks & Klein (2017) |
 | Bedside FVC superior to ABG for monitoring | Class I, Level B | Multiple studies; ABG changes are LATE findings |
-| Azathioprine as first-line steroid-sparing | Class I, Level B | Palace et al. (1998) |
+| Azathioprine as first-line steroid-sparing | Class I, Level B | [Palace et al. (1998)](https://pubmed.ncbi.nlm.nih.gov/9633727/) |
 | Mycophenolate as steroid-sparing | Class II, Level B | Mixed trial results but widely used |
 
 ---

@@ -251,9 +251,9 @@ setting: "HOSP, OPD, ICU"
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| EFNS/PNS Diagnostic Criteria | Class I | Van den Bergh et al., Eur J Neurol 2021 |
-| IVIG effective for CIDP | Class I, Level A | ICE trial; Cochrane Reviews |
-| SCIG non-inferior to IVIG | Class I, Level A | PATH trial |
+| EFNS/PNS Diagnostic Criteria | Class I | [Van den Bergh et al., Eur J Neurol 2021](https://pubmed.ncbi.nlm.nih.gov/34327760/) |
+| IVIG effective for CIDP | Class I, Level A | [ICE trial (Hughes et al., Lancet Neurol 2008)](https://pubmed.ncbi.nlm.nih.gov/18178525/); [Cochrane Reviews (Eftimov et al., 2013)](https://pubmed.ncbi.nlm.nih.gov/24379104/) |
+| SCIG non-inferior to IVIG | Class I, Level A | [PATH trial (van Schaik et al., Lancet Neurol 2018)](https://pubmed.ncbi.nlm.nih.gov/29122523/) |
 | Corticosteroids effective for CIDP | Class I, Level A | Cochrane Reviews |
 | Plasma exchange effective | Class I, Level A | Cochrane Reviews |
 | IVIG, steroids, PLEX equivalent efficacy | Class I | Multiple comparative studies |

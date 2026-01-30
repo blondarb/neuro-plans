@@ -286,7 +286,7 @@ setting: "HOSP, OPD, ICU"
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Intensive glycemic control prevents/slows neuropathy | Class I, Level A | DCCT/EDIC (Type 1); UKPDS (Type 2) |
+| Intensive glycemic control prevents/slows neuropathy | Class I, Level A | [DCCT (DCCT Research Group, NEJM 1993)](https://pubmed.ncbi.nlm.nih.gov/8366922/); [UKPDS 33 (Lancet 1998)](https://pubmed.ncbi.nlm.nih.gov/9742976/) |
 | Duloxetine effective for painful DPN | Class I, Level A | Multiple RCTs; FDA-approved |
 | Pregabalin effective for painful DPN | Class I, Level A | Multiple RCTs; FDA-approved |
 | Gabapentin effective for painful DPN | Class I, Level B | Multiple RCTs |
