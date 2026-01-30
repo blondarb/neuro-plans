@@ -1,7 +1,7 @@
 ---
 title: "Cerebral Venous Thrombosis (CVT)"
 description: "Clinical decision support for cerebral venous thrombosis diagnosis and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,7 +20,7 @@ tags:
 
 # Cerebral Venous Thrombosis (CVT)
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
@@ -156,13 +156,13 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Unfractionated heparin (UFH) IV | IV | Acute CVT with large hemorrhagic infarction, renal failure, or anticipated procedures; preferred if endovascular intervention planned | 80 units/kg bolus; 18 units/kg/hr :: IV :: continuous :: 80 units/kg IV bolus (max 10,000 units), then 18 units/kg/hr infusion; target aPTT 1.5-2.5x control (60-80 sec) | Active uncontrolled bleeding; severe thrombocytopenia (<50K); HIT | aPTT q6h until therapeutic x2, then q12-24h; platelet count q2d (HIT screen); signs of bleeding | STAT | STAT | - | STAT |
+| Unfractionated heparin (UFH) IV | IV | Acute CVT with large hemorrhagic infarction, renal failure, or anticipated procedures; preferred if endovascular intervention planned | 80 units/kg :: IV :: bolus then continuous :: 80 units/kg IV bolus (max 10,000 units), then 18 units/kg/hr infusion; target aPTT 1.5-2.5x control (60-80 sec) | Active uncontrolled bleeding; severe thrombocytopenia (<50K); HIT | aPTT q6h until therapeutic x2, then q12-24h; platelet count q2d (HIT screen); signs of bleeding | STAT | STAT | - | STAT |
 | Enoxaparin (LMWH) | SC | Acute CVT without large hemorrhagic infarction; preferred initial therapy per guidelines | 1 mg/kg BID :: SC :: BID :: 1 mg/kg SC every 12 hours; adjust for CrCl <30 (1 mg/kg daily) or obesity | Active uncontrolled bleeding; CrCl <15; HIT | Anti-Xa levels (target 0.5-1.0 IU/mL) if extremes of weight or renal impairment; platelet count q2d; signs of bleeding | STAT | STAT | - | STAT |
-| Levetiracetam (seizure prophylaxis/treatment) | IV/PO | Acute symptomatic seizures; prophylaxis if hemorrhagic infarction or cortical involvement | 1000 mg BID :: IV :: BID :: Load: 1000-1500 mg IV; Maintenance: 500-1500 mg IV/PO BID (max 3000 mg/day) | Renal impairment (adjust dose per CrCl) | Behavioral changes; suicidality; renal function | STAT | STAT | ROUTINE | STAT |
-| Acetazolamide (elevated ICP) | PO/IV | Elevated ICP without indication for emergent surgical intervention | 250 mg BID; 500 mg BID :: PO :: :: Start 250 mg PO BID; titrate to 500 mg BID; max 2000 mg/day | Sulfonamide allergy; hypokalemia; metabolic acidosis; renal failure | BMP (K, bicarb) q1-2 weeks initially; paresthesias; kidney stones | - | ROUTINE | ROUTINE | ROUTINE |
+| Levetiracetam (seizure prophylaxis/treatment) | IV/PO | Acute symptomatic seizures; prophylaxis if hemorrhagic infarction or cortical involvement | 1000 mg :: IV :: BID :: Load: 1000-1500 mg IV; Maintenance: 500-1500 mg IV/PO BID (max 3000 mg/day) | Renal impairment (adjust dose per CrCl) | Behavioral changes; suicidality; renal function | STAT | STAT | ROUTINE | STAT |
+| Acetazolamide (elevated ICP) | PO/IV | Elevated ICP without indication for emergent surgical intervention | 250 mg :: PO :: BID :: Start 250 mg PO BID; titrate to 500 mg BID; max 2000 mg/day | Sulfonamide allergy; hypokalemia; metabolic acidosis; renal failure | BMP (K, bicarb) q1-2 weeks initially; paresthesias; kidney stones | - | ROUTINE | ROUTINE | ROUTINE |
 | Mannitol (acute elevated ICP) | IV | Acute symptomatic elevated ICP with impending herniation | 0.5-1 g/kg :: IV :: bolus :: 0.5-1 g/kg IV over 15-20 min; may repeat q6h; target serum osmolality 300-320 mOsm/kg | CHF; renal failure; serum osmolality >320 | Serum osmolality q6h; BMP; I/O; renal function | STAT | STAT | - | STAT |
 | Hypertonic saline 3% (acute elevated ICP) | IV | Alternative to mannitol for acute ICP crisis | 250 mL bolus :: IV :: bolus :: 250 mL IV over 15-20 min via central line preferred; target Na 145-155 mEq/L | Hypernatremia (Na >155) | Sodium q2-4h; serum osmolality; central line preferred for concentrations >3% | STAT | STAT | - | STAT |
-| Dexamethasone (vasogenic edema) | IV | Significant vasogenic edema surrounding venous infarction; NOT routine | 10 mg IV load; 4 mg q6h :: IV :: :: 10 mg IV loading dose, then 4 mg IV q6h; taper over 5-7 days | Active untreated infection; unclear role in CVT | Glucose; BP; GI prophylaxis | - | URGENT | - | URGENT |
+| Dexamethasone (vasogenic edema) | IV | Significant vasogenic edema surrounding venous infarction; NOT routine | 10 mg :: IV :: load then q6h :: 10 mg IV loading dose, then 4 mg IV q6h; taper over 5-7 days | Active untreated infection; unclear role in CVT | Glucose; BP; GI prophylaxis | - | URGENT | - | URGENT |
 
 *Note: CRITICAL -- anticoagulate even in the presence of hemorrhagic infarction. Multiple studies confirm safety and benefit of heparin in CVT with associated ICH. The hemorrhage is caused by venous congestion, and anticoagulation treats the underlying cause. LMWH is preferred over UFH per AHA/ASA guidelines (associated with better outcomes in ISCVT trial). Do NOT withhold anticoagulation due to hemorrhagic conversion.*
 
@@ -191,9 +191,9 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Acetaminophen | PO/IV | Headache management (avoid NSAIDs while anticoagulated) | 1000 mg q6h PRN :: PO :: :: 1000 mg PO/IV q6h PRN; max 3g/day (2g if hepatic impairment) | Hepatic impairment; weight <50 kg (reduce dose) | LFTs if chronic use | STAT | STAT | ROUTINE | STAT |
-| Ondansetron | PO/IV | Nausea/vomiting from elevated ICP | 4 mg q6h PRN; 8 mg q8h PRN :: IV :: :: 4-8 mg IV/PO q6-8h PRN | QTc prolongation | QTc if risk factors | STAT | STAT | ROUTINE | STAT |
-| Metoclopramide | IV | Nausea/vomiting (alternative to ondansetron) | 10 mg q6h PRN :: IV :: :: 10 mg IV q6-8h PRN; max 40 mg/day; limit use to 5 days | Parkinson disease; seizure disorder; bowel obstruction | EPS; tardive dyskinesia; QTc | URGENT | URGENT | - | URGENT |
+| Acetaminophen | PO/IV | Headache management (avoid NSAIDs while anticoagulated) | 1000 mg :: PO :: q6h PRN :: 1000 mg PO/IV q6h PRN; max 3g/day (2g if hepatic impairment) | Hepatic impairment; weight <50 kg (reduce dose) | LFTs if chronic use | STAT | STAT | ROUTINE | STAT |
+| Ondansetron | PO/IV | Nausea/vomiting from elevated ICP | 4 mg :: IV :: q6h PRN :: 4-8 mg IV/PO q6-8h PRN | QTc prolongation | QTc if risk factors | STAT | STAT | ROUTINE | STAT |
+| Metoclopramide | IV | Nausea/vomiting (alternative to ondansetron) | 10 mg :: IV :: q6h PRN :: 10 mg IV q6-8h PRN; max 40 mg/day; limit use to 5 days | Parkinson disease; seizure disorder; bowel obstruction | EPS; tardive dyskinesia; QTc | URGENT | URGENT | - | URGENT |
 | Lacosamide (second-line ASM) | IV/PO | Seizures refractory to levetiracetam | 200 mg BID :: IV :: BID :: Load: 200-400 mg IV; Maintenance: 100-200 mg IV/PO BID (max 400 mg/day) | Second/third degree AV block; severe hepatic impairment | ECG (PR prolongation); dizziness | URGENT | URGENT | ROUTINE | URGENT |
 
 ---
@@ -368,6 +368,11 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized structured dosing format across all treatment sections (3A, 3B, 3D)
+- Fixed standard_dose field to contain starting dose only (UFH, levetiracetam, acetazolamide, dexamethasone, acetaminophen, ondansetron, metoclopramide)
+- Added frequency field to all medications
 
 **v1.0 (January 30, 2026)**
 - Initial creation

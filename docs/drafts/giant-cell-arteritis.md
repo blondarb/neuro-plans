@@ -1,7 +1,7 @@
 ---
 title: "Giant Cell Arteritis (GCA)"
 description: "Clinical decision support for giant cell arteritis diagnosis and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -21,7 +21,7 @@ tags:
 
 # Giant Cell Arteritis (GCA)
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
@@ -128,7 +128,7 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Methylprednisolone IV pulse (vision-threatening) | IV | Visual symptoms: acute vision loss, amaurosis fugax, diplopia, AION, CRAO, cranial nerve palsy | 1000 mg daily x 3 days :: IV :: daily :: 1000 mg IV daily for 3 days (some protocols use 500 mg-1000 mg); infuse over 1-2 hours; then transition to oral prednisone 1 mg/kg/day | Active untreated infection; uncontrolled diabetes; psychosis from steroids | Glucose q6h (target <180); BP; mood; electrolytes; GI prophylaxis | STAT | STAT | - | STAT |
+| Methylprednisolone IV pulse (vision-threatening) | IV | Visual symptoms: acute vision loss, amaurosis fugax, diplopia, AION, CRAO, cranial nerve palsy | 1000 mg :: IV :: daily x 3 days :: 1000 mg IV daily for 3 days (some protocols use 500 mg-1000 mg); infuse over 1-2 hours; then transition to oral prednisone 1 mg/kg/day | Active untreated infection; uncontrolled diabetes; psychosis from steroids | Glucose q6h (target <180); BP; mood; electrolytes; GI prophylaxis | STAT | STAT | - | STAT |
 | Aspirin (low-dose) | PO | Antiplatelet therapy to reduce ischemic complications (visual loss, stroke) in GCA | 81 mg daily :: PO :: daily :: 81 mg PO daily | Active GI bleeding; aspirin allergy; concurrent anticoagulation (relative) | GI symptoms; bleeding signs | STAT | STAT | ROUTINE | STAT |
 | Omeprazole (GI prophylaxis) | PO/IV | GI protection during high-dose steroids + aspirin | 40 mg daily :: PO :: daily :: 40 mg PO/IV daily while on steroids | PPI allergy | None routine | STAT | STAT | ROUTINE | STAT |
 
@@ -138,11 +138,11 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Prednisone (initial high-dose) | PO | GCA without visual symptoms; after IV pulse for vision-threatening GCA | 1 mg/kg daily (max 60 mg) :: PO :: daily :: 1 mg/kg/day PO (max 60 mg); take in morning with food; maintain initial dose 2-4 weeks until symptoms resolve and ESR/CRP normalize | Active untreated infection; poorly controlled diabetes | Glucose; BP; weight; mood; bone density; cataracts; adrenal function | STAT | STAT | ROUTINE | STAT |
-| Prednisone (taper phase 1: 40 mg → 20 mg) | PO | After 2-4 weeks at initial dose with symptom resolution | Decrease by 5-10 mg every 2 weeks :: PO :: daily :: Reduce by 5-10 mg every 2 weeks; monitor symptoms and ESR/CRP at each step | Same as above | ESR/CRP at each taper step; symptom recurrence | - | ROUTINE | ROUTINE | - |
-| Prednisone (taper phase 2: 20 mg → 10 mg) | PO | Continued improvement; normal inflammatory markers | Decrease by 2.5 mg every 2-4 weeks :: PO :: daily :: Reduce by 2.5 mg every 2-4 weeks; slower taper reduces relapse risk | Same as above | ESR/CRP; symptoms; adrenal function assessment | - | - | ROUTINE | - |
-| Prednisone (taper phase 3: 10 mg → off) | PO | Near-remission; on steroid-sparing agent if available | Decrease by 1 mg every 4 weeks :: PO :: daily :: Reduce by 1 mg every month; total steroid duration typically 12-24 months; some patients require low-dose indefinitely | Adrenal insufficiency risk on discontinuation | Morning cortisol if dose <7.5 mg; ACTH stimulation test before complete discontinuation; ESR/CRP | - | - | ROUTINE | - |
-| Calcium + Vitamin D (bone protection) | PO | All patients on chronic steroids | 1000-1200 mg Ca + 2000-4000 IU Vit D daily :: PO :: daily :: Calcium 1000-1200 mg/day + Vitamin D 2000-4000 IU/day (target 25-OH >30 ng/mL) | Hypercalcemia; kidney stones | 25-OH Vitamin D level; calcium; DEXA at baseline and annually | - | ROUTINE | ROUTINE | - |
+| Prednisone (initial high-dose) | PO | GCA without visual symptoms; after IV pulse for vision-threatening GCA | 1 mg/kg :: PO :: daily :: 1 mg/kg/day PO (max 60 mg); take in morning with food; maintain initial dose 2-4 weeks until symptoms resolve and ESR/CRP normalize | Active untreated infection; poorly controlled diabetes | Glucose; BP; weight; mood; bone density; cataracts; adrenal function | STAT | STAT | ROUTINE | STAT |
+| Prednisone (taper phase 1: 40 mg → 20 mg) | PO | After 2-4 weeks at initial dose with symptom resolution | 40 mg :: PO :: daily :: Reduce by 5-10 mg every 2 weeks from 40 mg to 20 mg; monitor symptoms and ESR/CRP at each step | Same as above | ESR/CRP at each taper step; symptom recurrence | - | ROUTINE | ROUTINE | - |
+| Prednisone (taper phase 2: 20 mg → 10 mg) | PO | Continued improvement; normal inflammatory markers | 20 mg :: PO :: daily :: Reduce by 2.5 mg every 2-4 weeks from 20 mg to 10 mg; slower taper reduces relapse risk | Same as above | ESR/CRP; symptoms; adrenal function assessment | - | - | ROUTINE | - |
+| Prednisone (taper phase 3: 10 mg → off) | PO | Near-remission; on steroid-sparing agent if available | 10 mg :: PO :: daily :: Reduce by 1 mg every month from 10 mg to off; total steroid duration typically 12-24 months; some patients require low-dose indefinitely | Adrenal insufficiency risk on discontinuation | Morning cortisol if dose <7.5 mg; ACTH stimulation test before complete discontinuation; ESR/CRP | - | - | ROUTINE | - |
+| Calcium + Vitamin D (bone protection) | PO | All patients on chronic steroids | 1000 mg Ca + 2000 IU Vit D :: PO :: daily :: Calcium 1000-1200 mg/day + Vitamin D 2000-4000 IU/day (target 25-OH >30 ng/mL) | Hypercalcemia; kidney stones | 25-OH Vitamin D level; calcium; DEXA at baseline and annually | - | ROUTINE | ROUTINE | - |
 | Alendronate (bisphosphonate for osteoporosis prevention) | PO | Steroids anticipated >3 months; T-score ≤-1.0 | 70 mg weekly :: PO :: weekly :: 70 mg PO weekly; take on empty stomach with 8 oz water; remain upright 30 min | Esophageal disorders; CrCl <35; hypocalcemia | DEXA q1-2 years; dental health (osteonecrosis of jaw); esophageal symptoms | - | - | ROUTINE | - |
 
 *Note: Typical steroid taper duration is 12-24 months. Relapse rate on taper is ~50%. Most relapses occur when prednisone dose is below 10-15 mg or within 1 year of discontinuation. Monitor ESR/CRP at each taper step -- rising markers may herald relapse. Cumulative steroid toxicity is the major long-term concern (osteoporosis, diabetes, cataracts, infections, weight gain, skin fragility).*
@@ -151,8 +151,8 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| **Tocilizumab (Actemra)** | SC | FDA-approved steroid-sparing agent for GCA (GiACTA trial); reduces relapse rate and steroid exposure | 162 mg SC weekly; or 162 mg SC every 2 weeks :: SC :: :: 162 mg SC weekly (preferred) or every 2 weeks; self-injectable; can also use 8 mg/kg IV q4wk | Active infection; hepatic impairment (ALT >5x ULN); diverticulitis; concurrent live vaccines; ANC <2000; platelets <100K | CBC q4-8 weeks; LFTs q4-8 weeks; lipid panel q3 months; infection surveillance; GI perforation risk; neutropenia; NOTE: tocilizumab suppresses ESR/CRP -- cannot use these for disease monitoring (use IL-6 or clinical assessment instead) | - | - | ROUTINE | - |
-| Methotrexate | PO | Steroid-sparing alternative (weaker evidence than tocilizumab); relapse prevention | 7.5 mg weekly; 10 mg weekly; 15 mg weekly; 20 mg weekly :: PO :: weekly :: Start 7.5-10 mg PO weekly; titrate to 15-25 mg/week; take with folic acid 1 mg daily (except MTX day) | Pregnancy; hepatic disease; CrCl <30; active infection; interstitial lung disease | CBC q2-4 weeks initially, then q1-3 months; LFTs q1-3 months; CrCl; pulmonary symptoms (pneumonitis); folate supplementation | - | - | ROUTINE | - |
+| **Tocilizumab (Actemra)** | SC | FDA-approved steroid-sparing agent for GCA (GiACTA trial); reduces relapse rate and steroid exposure | 162 mg :: SC :: weekly :: 162 mg SC weekly (preferred) or every 2 weeks; self-injectable; can also use 8 mg/kg IV q4wk | Active infection; hepatic impairment (ALT >5x ULN); diverticulitis; concurrent live vaccines; ANC <2000; platelets <100K | CBC q4-8 weeks; LFTs q4-8 weeks; lipid panel q3 months; infection surveillance; GI perforation risk; neutropenia; NOTE: tocilizumab suppresses ESR/CRP -- cannot use these for disease monitoring (use IL-6 or clinical assessment instead) | - | - | ROUTINE | - |
+| Methotrexate | PO | Steroid-sparing alternative (weaker evidence than tocilizumab); relapse prevention | 7.5 mg :: PO :: weekly :: Start 7.5-10 mg PO weekly; titrate to 15-25 mg/week; take with folic acid 1 mg daily (except MTX day) | Pregnancy; hepatic disease; CrCl <30; active infection; interstitial lung disease | CBC q2-4 weeks initially, then q1-3 months; LFTs q1-3 months; CrCl; pulmonary symptoms (pneumonitis); folate supplementation | - | - | ROUTINE | - |
 | Folic acid (with methotrexate) | PO | Reduce methotrexate side effects (stomatitis, cytopenias) | 1 mg daily :: PO :: daily :: 1 mg PO daily (skip day of MTX) | None significant | None routine | - | - | ROUTINE | - |
 | Leflunomide | PO | Alternative steroid-sparing if MTX intolerant (limited evidence) | 10-20 mg daily :: PO :: daily :: 10-20 mg PO daily | Pregnancy (Category X); hepatic disease | CBC; LFTs monthly x 6 months, then q1-3 months; BP; diarrhea | - | - | EXT | - |
 
@@ -162,10 +162,10 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Acetaminophen | PO | Headache management; scalp tenderness | 1000 mg q6h PRN :: PO :: :: 1000 mg PO q6h PRN; max 3g/day | Hepatic impairment | LFTs if chronic use | STAT | STAT | ROUTINE | STAT |
+| Acetaminophen | PO | Headache management; scalp tenderness | 1000 mg :: PO :: q6h PRN :: 1000 mg PO q6h PRN; max 3g/day | Hepatic impairment | LFTs if chronic use | STAT | STAT | ROUTINE | STAT |
 | Trazodone | PO | Steroid-induced insomnia | 25-50 mg qHS :: PO :: qHS :: 25-50 mg PO qHS; max 100 mg | Concurrent MAOIs; QTc prolongation | Orthostatic hypotension; sedation | - | ROUTINE | ROUTINE | - |
 | Insulin (steroid-induced diabetes) | SC | Steroid-induced hyperglycemia not controlled with oral agents | Per protocol :: SC :: PRN :: Per endocrine protocol; anticipate afternoon/evening hyperglycemia pattern with morning steroid dosing | Hypoglycemia risk | Glucose QID; HbA1c q3 months | - | ROUTINE | ROUTINE | - |
-| Trimethoprim-sulfamethoxazole (PJP prophylaxis) | PO | PJP prophylaxis if on ≥20 mg prednisone for >4 weeks with additional immunosuppression | 1 DS tablet 3x/week :: PO :: :: 1 DS tablet PO Monday/Wednesday/Friday | Sulfonamide allergy; renal impairment; hyperkalemia | CBC; renal function; electrolytes | - | ROUTINE | ROUTINE | - |
+| Trimethoprim-sulfamethoxazole (PJP prophylaxis) | PO | PJP prophylaxis if on ≥20 mg prednisone for >4 weeks with additional immunosuppression | 1 DS tablet :: PO :: 3x/week :: 1 DS tablet PO Monday/Wednesday/Friday | Sulfonamide allergy; renal impairment; hyperkalemia | CBC; renal function; electrolytes | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -351,6 +351,11 @@ Monitor visual acuity daily until stable
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized structured dosing format across all treatment sections (3A, 3B, 3C, 3D)
+- Fixed prednisone taper phases to use starting dose of each phase in standard_dose field
+- Added frequency field to all medications (methylprednisolone, prednisone, calcium/vitamin D, tocilizumab, methotrexate, acetaminophen, TMP-SMX)
 
 **v1.0 (January 30, 2026)**
 - Initial creation

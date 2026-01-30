@@ -1,7 +1,7 @@
 ---
 title: "Functional Neurological Disorder (FND)"
 description: "Clinical decision support for functional neurological disorder diagnosis and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,7 +20,7 @@ tags:
 
 # Functional Neurological Disorder (FND)
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
@@ -159,12 +159,12 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Sertraline | PO | Comorbid depression (present in ~50% FND); anxiety | 50 mg daily; 100 mg daily; 150 mg daily; 200 mg daily :: PO :: :: Start 50 mg daily; titrate q2-4wk; max 200 mg/day | Concurrent MAOIs; QTc prolongation | Suicidality (first 8 weeks); serotonin syndrome; QTc | - | ROUTINE | ROUTINE | - |
-| Duloxetine | PO | Comorbid depression + chronic pain (dual benefit) | 30 mg daily; 60 mg daily :: PO :: :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | Hepatic impairment; concurrent MAOIs; uncontrolled glaucoma | BP; LFTs; serotonin syndrome; discontinuation syndrome | - | ROUTINE | ROUTINE | - |
-| Venlafaxine XR | PO | Comorbid depression + anxiety; chronic pain | 37.5 mg daily; 75 mg daily; 150 mg daily :: PO :: :: Start 37.5 mg daily x 1 week; titrate q1wk; max 225 mg/day | Uncontrolled hypertension; concurrent MAOIs | BP; HR; discontinuation syndrome (taper slowly) | - | ROUTINE | ROUTINE | - |
-| Amitriptyline | PO | Chronic pain; insomnia; migraine prophylaxis (common FND comorbidities) | 10 mg qHS; 25 mg qHS; 50 mg qHS :: PO :: :: Start 10 mg PO qHS; titrate by 10 mg q1-2wk; max 75 mg qHS for pain/insomnia | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma | ECG if dose >50 mg; anticholinergic effects; sedation; orthostatic hypotension | - | ROUTINE | ROUTINE | - |
-| Hydroxyzine | PO | Acute anxiety; agitation in ED/inpatient | 25 mg q6h PRN; 50 mg q6h PRN :: PO :: :: 25-50 mg PO q6-8h PRN; max 100 mg/dose | QTc prolongation; severe hepatic impairment | QTc; sedation | URGENT | URGENT | ROUTINE | - |
-| Propranolol | PO | Anxiety with somatic symptoms (palpitations, tremor); comorbid migraine | 10 mg BID; 20 mg BID; 40 mg BID :: PO :: :: Start 10 mg PO BID; titrate q1wk; max 80 mg BID | Asthma; AV block; bradycardia; decompensated CHF | HR; BP; bronchospasm | - | ROUTINE | ROUTINE | - |
+| Sertraline | PO | Comorbid depression (present in ~50% FND); anxiety | 50 mg :: PO :: daily :: Start 50 mg daily; titrate q2-4wk; max 200 mg/day | Concurrent MAOIs; QTc prolongation | Suicidality (first 8 weeks); serotonin syndrome; QTc | - | ROUTINE | ROUTINE | - |
+| Duloxetine | PO | Comorbid depression + chronic pain (dual benefit) | 30 mg :: PO :: daily :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | Hepatic impairment; concurrent MAOIs; uncontrolled glaucoma | BP; LFTs; serotonin syndrome; discontinuation syndrome | - | ROUTINE | ROUTINE | - |
+| Venlafaxine XR | PO | Comorbid depression + anxiety; chronic pain | 37.5 mg :: PO :: daily :: Start 37.5 mg daily x 1 week; titrate q1wk; max 225 mg/day | Uncontrolled hypertension; concurrent MAOIs | BP; HR; discontinuation syndrome (taper slowly) | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | PO | Chronic pain; insomnia; migraine prophylaxis (common FND comorbidities) | 10 mg :: PO :: qHS :: Start 10 mg PO qHS; titrate by 10 mg q1-2wk; max 75 mg qHS for pain/insomnia | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma | ECG if dose >50 mg; anticholinergic effects; sedation; orthostatic hypotension | - | ROUTINE | ROUTINE | - |
+| Hydroxyzine | PO | Acute anxiety; agitation in ED/inpatient | 25 mg :: PO :: q6h PRN :: 25-50 mg PO q6-8h PRN; max 100 mg/dose | QTc prolongation; severe hepatic impairment | QTc; sedation | URGENT | URGENT | ROUTINE | - |
+| Propranolol | PO | Anxiety with somatic symptoms (palpitations, tremor); comorbid migraine | 10 mg :: PO :: BID :: Start 10 mg PO BID; titrate q1wk; max 80 mg BID | Asthma; AV block; bradycardia; decompensated CHF | HR; BP; bronchospasm | - | ROUTINE | ROUTINE | - |
 | Melatonin | PO | Insomnia (common FND comorbidity) | 3-10 mg qHS :: PO :: qHS :: 3-10 mg PO qHS | None significant | Sleep quality | - | ROUTINE | ROUTINE | - |
 | Trazodone | PO | Insomnia with comorbid depression | 25-100 mg qHS :: PO :: qHS :: 25-100 mg PO qHS | Concurrent MAOIs; QTc prolongation | Orthostatic hypotension; priapism (rare); sedation | - | ROUTINE | ROUTINE | - |
 
@@ -366,6 +366,11 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized structured dosing format in Section 3E (Pharmacologic Management)
+- Fixed standard_dose field to contain starting dose only (sertraline, duloxetine, venlafaxine, amitriptyline, hydroxyzine, propranolol)
+- Added frequency field to all medications
 
 **v1.0 (January 30, 2026)**
 - Initial creation
