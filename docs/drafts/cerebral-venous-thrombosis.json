@@ -1,0 +1,1448 @@
+{
+  "id": "cerebral-venous-thrombosis",
+  "title": "Cerebral Venous Thrombosis (CVT)",
+  "version": "1.0",
+  "icd10": [
+    "** I67.6 (Nonpyogenic thrombosis of intracranial venous system)",
+    "I63.6 (Cerebral infarction due to cerebral venous thrombosis)",
+    "G08 (Intracranial and intraspinal phlebitis and thrombophlebitis)"
+  ],
+  "scope": "** Diagnostic workup, acute anticoagulation, and long-term management of cerebral venous thrombosis. Covers all venous sinus locations (superior sagittal, transverse, sigmoid, straight, cavernous) and cortical/deep vein thrombosis. Includes management of associated hemorrhagic venous infarction, seizures, elevated ICP, and thrombophilia workup. Excludes cavernous sinus thrombosis from septic source (see infectious workup). For arterial ischemic stroke, see \"Acute Ischemic Stroke\" template. For subarachnoid hemorrhage, see \"SAH\" template.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Polycythemia, thrombocytosis, leukocytosis (infection/inflammation); HIT screen baseline",
+          "target": "Normal; identify polycythemia or thrombocytosis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Metabolic screen; baseline for anticoagulation; hepatic function",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
+          "rationale": "Baseline coagulation; monitor heparin/warfarin",
+          "target": "Normal; therapeutic range for anticoagulation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "D-dimer (CPT 85379)",
+          "rationale": "Elevated in >90% CVT; normal D-dimer has high negative predictive value in low-suspicion cases; less useful if symptoms >2 weeks",
+          "target": "Elevated (>500 ng/mL); normal does NOT exclude CVT if high suspicion",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Inflammatory/infectious screen; vasculitis workup",
+          "target": "Normal or elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory marker; infection screen",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Metabolic screen",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Fibrinogen (CPT 85384)",
+          "rationale": "Baseline before anticoagulation; DIC screen",
+          "target": "Normal (200-400 mg/dL)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood type and screen",
+          "rationale": "Potential for hemorrhagic conversion or surgical intervention",
+          "target": "On file",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pregnancy test (females of childbearing age) (CPT 81025)",
+          "rationale": "Pregnancy/postpartum is major CVT risk factor; affects treatment choice",
+          "target": "As applicable",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid disease; hypercoagulable workup",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Urinalysis (CPT 81003)",
+          "rationale": "Nephrotic syndrome screen (proteinuria → hypercoagulable); UTI",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Procalcitonin (CPT 84145)",
+          "rationale": "Septic CVT evaluation",
+          "target": "Normal (<0.1 ng/mL)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Blood cultures (x2 sets) (CPT 87040)",
+          "rationale": "Septic CVT (cavernous sinus thrombosis from sinusitis/dental/orbital)",
+          "target": "No growth",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "rationale": "Sepsis screen if infectious etiology suspected",
+          "target": "Normal (<2.0 mmol/L)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Factor V Leiden mutation (CPT 81241)",
+          "rationale": "Most common inherited thrombophilia; increased CVT risk",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prothrombin gene mutation (G20210A) (CPT 81240)",
+          "rationale": "Second most common inherited thrombophilia",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Antithrombin III activity (CPT 85300)",
+          "rationale": "Antithrombin deficiency; may be falsely low on heparin",
+          "target": "Normal (80-120%)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Protein C activity (CPT 85303)",
+          "rationale": "Protein C deficiency; may be falsely low on warfarin or acute thrombosis",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Protein S activity (free and total) (CPT 85306)",
+          "rationale": "Protein S deficiency; may be falsely low on warfarin, pregnancy, acute thrombosis",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Antiphospholipid antibodies (anticardiolipin IgG/IgM, anti-beta-2 glycoprotein I IgG/IgM, lupus anticoagulant) (CPT 86147+86146+85613)",
+          "rationale": "Antiphospholipid syndrome; repeat in 12 weeks if positive",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Homocysteine (CPT 83090)",
+          "rationale": "Hyperhomocysteinemia; modifiable risk factor",
+          "target": "Normal (<15 umol/L)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "Lupus; connective tissue disease",
+          "target": "Negative or low titer",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-dsDNA",
+          "rationale": "If ANA positive; lupus",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "JAK2 V617F mutation (CPT 81270)",
+          "rationale": "Polycythemia vera; myeloproliferative disorder",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Factor VIII activity (CPT 85240)",
+          "rationale": "Elevated factor VIII is independent CVT risk factor",
+          "target": "Normal (<150%)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lipoprotein(a) (CPT 83695)",
+          "rationale": "Independent prothrombotic risk factor",
+          "target": "Normal (<30 mg/dL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Paroxysmal nocturnal hemoglobinuria (PNH) flow cytometry (CPT 88184)",
+          "rationale": "PNH-associated thrombosis (unusual site thrombosis)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "HIT antibody (anti-PF4)",
+          "rationale": "If on heparin and platelet drop >50%",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "ADAMTS13 activity",
+          "rationale": "TTP if thrombocytopenia and hemolysis",
+          "target": "Normal (>10%)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Complement C3, C4",
+          "rationale": "Lupus; complement deficiency",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Beta-2 microglobulin",
+          "rationale": "Lymphoproliferative disorder",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP)",
+          "rationale": "Multiple myeloma; hyperviscosity",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Hemoglobin electrophoresis",
+          "rationale": "Sickle cell disease (CVT risk)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "BCR-ABL (if elevated WBC)",
+          "rationale": "CML",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure (CPT 89050)",
+          "rationale": "Elevated ICP common in CVT (~50%); guide management",
+          "target": "Elevated (>20 cm H2O); therapeutic drainage if >25",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
+          "rationale": "Rule out meningitis/encephalitis",
+          "target": "Normal or mildly elevated WBC",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Mildly elevated in CVT; infection screen",
+          "target": "Normal to mildly elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glucose with paired serum glucose (CPT 82945)",
+          "rationale": "Rule out infection",
+          "target": "Normal (>60% of serum)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gram stain and bacterial culture (CPT 87205+87070)",
+          "rationale": "Septic CVT; meningitis",
+          "target": "No organisms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology (CPT 88104)",
+          "rationale": "Carcinomatous meningitis if malignancy suspected",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediate",
+          "target": "Hyperdense sinus (cord sign); hemorrhagic venous infarction; edema; empty delta sign (post-contrast)",
+          "contraindications": "None significant",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT venography (CTV) (CPT 70496)",
+          "timing": "Immediate (ED)",
+          "target": "Filling defect in venous sinuses; absence of contrast in thrombosed sinus; identifies extent of thrombosis",
+          "contraindications": "Contrast allergy (premedicate); renal insufficiency",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "Within 24h",
+          "target": "Parenchymal edema; hemorrhagic venous infarction; non-arterial distribution infarct; T2*/SWI blooming in thrombosed vein",
+          "contraindications": "GFR <30, gadolinium allergy, pacemaker",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MR venography (MRV) (CPT 70547)",
+          "timing": "Within 24h",
+          "target": "Flow gap in thrombosed sinus; absent flow signal; preferred for follow-up (no contrast/radiation)",
+          "contraindications": "MRI contraindications",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "Immediate",
+          "target": "Baseline cardiac rhythm; arrhythmia screen",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "CT head with contrast (empty delta sign)",
+          "timing": "If CTV not initially obtained",
+          "target": "Empty delta sign (filling defect in superior sagittal sinus on axial contrast CT)",
+          "contraindications": "Contrast allergy",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CT/MR of sinuses and mastoids",
+          "timing": "If septic CVT suspected",
+          "target": "Sinusitis, mastoiditis, otitis as source",
+          "contraindications": "Standard CT/MRI contraindications",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Conventional cerebral angiography (DSA)",
+          "timing": "If CTV/MRV equivocal; isolated cortical vein thrombosis suspected",
+          "target": "Gold standard; defines extent; therapeutic option (mechanical thrombectomy)",
+          "contraindications": "Contrast allergy; renal insufficiency; coagulopathy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Fundoscopic exam / optic nerve sheath diameter on US",
+          "timing": "Immediate if elevated ICP suspected",
+          "target": "Papilledema; optic disc swelling; ONSD >5 mm",
+          "contraindications": "None significant",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Transcranial Doppler (TCD)",
+          "timing": "If bedside assessment needed",
+          "target": "Abnormal flow velocities in affected sinuses",
+          "contraindications": "Poor temporal window",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Catheter-directed venography with thrombectomy",
+          "timing": "If severe/refractory despite anticoagulation",
+          "target": "Direct visualization; mechanical clot removal; pharmacomechanical thrombolysis",
+          "contraindications": "Same as DSA",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "ICP monitoring (invasive)",
+          "timing": "If refractory elevated ICP",
+          "target": "Direct ICP measurement; guide management",
+          "contraindications": "Coagulopathy; risk of infection/hemorrhage",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "EXT"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Unfractionated heparin (UFH) IV",
+          "route": "IV",
+          "indication": "Acute CVT with large hemorrhagic infarction, renal failure, or anticipated procedures; preferred if endovascular intervention planned",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "80 units/kg bolus",
+                "orderSentence": "Unfractionated heparin (UFH) IV 80 units/kg bolus IV"
+              },
+              {
+                "text": "18 units/kg/hr",
+                "orderSentence": "Unfractionated heparin (UFH) IV 18 units/kg/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "80 units/kg IV bolus (max 10,000 units), then 18 units/kg/hr infusion; target aPTT 1.5-2.5x control (60-80 sec)",
+            "orderSentence": "Unfractionated heparin (UFH) IV 80 units/kg bolus IV"
+          },
+          "contraindications": "Active uncontrolled bleeding; severe thrombocytopenia (<50K); HIT",
+          "monitoring": "aPTT q6h until therapeutic x2, then q12-24h; platelet count q2d (HIT screen); signs of bleeding",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Enoxaparin (LMWH)",
+          "route": "SC",
+          "indication": "Acute CVT without large hemorrhagic infarction; preferred initial therapy per guidelines",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg/kg BID",
+                "orderSentence": "Enoxaparin (LMWH) 1 mg/kg BID SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "1 mg/kg SC every 12 hours; adjust for CrCl <30 (1 mg/kg daily) or obesity",
+            "orderSentence": "Enoxaparin (LMWH) 1 mg/kg BID SC"
+          },
+          "contraindications": "Active uncontrolled bleeding; CrCl <15; HIT",
+          "monitoring": "Anti-Xa levels (target 0.5-1.0 IU/mL) if extremes of weight or renal impairment; platelet count q2d; signs of bleeding",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam (seizure prophylaxis/treatment)",
+          "route": "IV/PO",
+          "indication": "Acute symptomatic seizures; prophylaxis if hemorrhagic infarction or cortical involvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg BID",
+                "orderSentence": "Levetiracetam (seizure prophylaxis/treatment) 1000 mg BID IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Load: 1000-1500 mg IV; Maintenance: 500-1500 mg IV/PO BID (max 3000 mg/day)",
+            "orderSentence": "Levetiracetam (seizure prophylaxis/treatment) 1000 mg BID IV"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Behavioral changes; suicidality; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acetazolamide (elevated ICP)",
+          "route": "PO/IV",
+          "indication": "Elevated ICP without indication for emergent surgical intervention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg BID",
+                "orderSentence": "Acetazolamide (elevated ICP) 250 mg BID PO"
+              },
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Acetazolamide (elevated ICP) 500 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg PO BID; titrate to 500 mg BID; max 2000 mg/day",
+            "orderSentence": "Acetazolamide (elevated ICP) 250 mg BID PO"
+          },
+          "contraindications": "Sulfonamide allergy; hypokalemia; metabolic acidosis; renal failure",
+          "monitoring": "BMP (K, bicarb) q1-2 weeks initially; paresthesias; kidney stones",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Mannitol (acute elevated ICP)",
+          "route": "IV",
+          "indication": "Acute symptomatic elevated ICP with impending herniation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-1 g/kg",
+                "orderSentence": "Mannitol (acute elevated ICP) 0.5-1 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5-1 g/kg IV over 15-20 min; may repeat q6h; target serum osmolality 300-320 mOsm/kg",
+            "orderSentence": "Mannitol (acute elevated ICP) 0.5-1 g/kg IV"
+          },
+          "contraindications": "CHF; renal failure; serum osmolality >320",
+          "monitoring": "Serum osmolality q6h; BMP; I/O; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline 3% (acute elevated ICP)",
+          "route": "IV",
+          "indication": "Alternative to mannitol for acute ICP crisis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mL bolus",
+                "orderSentence": "Hypertonic saline 3% (acute elevated ICP) 250 mL bolus IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "250 mL IV over 15-20 min via central line preferred; target Na 145-155 mEq/L",
+            "orderSentence": "Hypertonic saline 3% (acute elevated ICP) 250 mL bolus IV"
+          },
+          "contraindications": "Hypernatremia (Na >155)",
+          "monitoring": "Sodium q2-4h; serum osmolality; central line preferred for concentrations >3%",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone (vasogenic edema)",
+          "route": "IV",
+          "indication": "Significant vasogenic edema surrounding venous infarction; NOT routine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg IV load",
+                "orderSentence": "Dexamethasone (vasogenic edema) 10 mg IV load IV"
+              },
+              {
+                "text": "4 mg q6h",
+                "orderSentence": "Dexamethasone (vasogenic edema) 4 mg q6h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV loading dose, then 4 mg IV q6h; taper over 5-7 days",
+            "orderSentence": "Dexamethasone (vasogenic edema) 10 mg IV load IV"
+          },
+          "contraindications": "Active untreated infection; unclear role in CVT",
+          "monitoring": "Glucose; BP; GI prophylaxis",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Transition to Oral Anticoagulation": [
+        {
+          "item": "Warfarin",
+          "route": "PO",
+          "indication": "Long-term anticoagulation; preferred if antiphospholipid syndrome confirmed",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Warfarin 5 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO daily (lower if elderly, hepatic impairment, CYP2C9 variant); overlap with heparin until INR 2-3 x 2 consecutive days; target INR 2.0-3.0",
+            "orderSentence": "Warfarin 5 mg daily PO"
+          },
+          "contraindications": "Pregnancy (teratogenic -- use LMWH instead); active bleeding; severe hepatic disease",
+          "monitoring": "INR q1-3 days initially; then q1-2 weeks; then monthly; drug/diet interactions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dabigatran",
+          "route": "PO",
+          "indication": "Alternative to warfarin for CVT (RE-SPECT CVT trial); no INR monitoring needed",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Dabigatran 150 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "150 mg PO BID; reduce to 110 mg BID if age >80, concurrent P-gp inhibitor, or CrCl 30-50",
+            "orderSentence": "Dabigatran 150 mg BID PO"
+          },
+          "contraindications": "CrCl <30; mechanical heart valve; active bleeding",
+          "monitoring": "Renal function q6-12 months; signs of bleeding; aPTT as qualitative screen",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rivaroxaban",
+          "route": "PO",
+          "indication": "Alternative DOAC for CVT (limited data but increasingly used)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Rivaroxaban 20 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "20 mg PO daily with food; reduce to 15 mg daily if CrCl 15-50",
+            "orderSentence": "Rivaroxaban 20 mg daily PO"
+          },
+          "contraindications": "CrCl <15; hepatic impairment (Child-Pugh B/C); active bleeding",
+          "monitoring": "Renal function q6-12 months; LFTs; signs of bleeding",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Apixaban",
+          "route": "PO",
+          "indication": "Alternative DOAC for CVT (limited data)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg BID",
+                "orderSentence": "Apixaban 5 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mg PO BID; reduce to 2.5 mg BID if ≥2 of: age ≥80, weight ≤60 kg, Cr ≥1.5",
+            "orderSentence": "Apixaban 5 mg BID PO"
+          },
+          "contraindications": "Active bleeding; hepatic impairment",
+          "monitoring": "Renal function q6-12 months; LFTs; signs of bleeding",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-Line/Refractory": [
+        {
+          "item": "Endovascular mechanical thrombectomy",
+          "route": "-",
+          "indication": "Severe/deteriorating despite anticoagulation; deep venous system thrombosis with impending herniation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per neurointerventional protocol",
+                "orderSentence": "Endovascular mechanical thrombectomy Per neurointerventional protocol -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Catheter-directed aspiration or stent-retriever; may combine with local thrombolysis",
+            "orderSentence": "Endovascular mechanical thrombectomy Per neurointerventional protocol -"
+          },
+          "contraindications": "Inaccessible thrombosis; terminal prognosis",
+          "monitoring": "Procedural monitoring; ICU post-procedure; repeat imaging",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Local catheter-directed thrombolysis (tPA)",
+          "route": "-",
+          "indication": "Severe refractory CVT; adjunct to mechanical thrombectomy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per neurointerventional protocol",
+                "orderSentence": "Local catheter-directed thrombolysis (tPA) Per neurointerventional protocol -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Alteplase 1-2 mg/hr via catheter directly into thrombosed sinus; duration 12-48h",
+            "orderSentence": "Local catheter-directed thrombolysis (tPA) Per neurointerventional protocol -"
+          },
+          "contraindications": "Active bleeding; recent surgery; coagulopathy",
+          "monitoring": "ICU monitoring; repeat imaging q12-24h; fibrinogen; CBC",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Decompressive hemicraniectomy",
+          "route": "-",
+          "indication": "Large hemorrhagic venous infarction with impending transtentorial herniation; life-saving",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Neurosurgical protocol",
+                "orderSentence": "Decompressive hemicraniectomy Neurosurgical protocol -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Large bone flap removal; duraplasty",
+            "orderSentence": "Decompressive hemicraniectomy Neurosurgical protocol -"
+          },
+          "contraindications": "Terminal prognosis; poor baseline",
+          "monitoring": "ICP monitoring post-procedure; ICU care",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Optic nerve sheath fenestration",
+          "route": "-",
+          "indication": "Progressive vision loss from papilledema despite medical ICP management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Ophthalmologic surgical protocol",
+                "orderSentence": "Optic nerve sheath fenestration Ophthalmologic surgical protocol -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Incision of optic nerve sheath to relieve CSF pressure on optic nerve",
+            "orderSentence": "Optic nerve sheath fenestration Ophthalmologic surgical protocol -"
+          },
+          "contraindications": "Orbital infection",
+          "monitoring": "Visual acuity post-procedure; IOP",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "VP shunt / lumbar drain",
+          "route": "-",
+          "indication": "Refractory elevated ICP not responding to medical management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Neurosurgical protocol",
+                "orderSentence": "VP shunt / lumbar drain Neurosurgical protocol -"
+              }
+            ],
+            "route": "-",
+            "instructions": "CSF diversion procedure; temporary (lumbar drain) or permanent (VP shunt)",
+            "orderSentence": "VP shunt / lumbar drain Neurosurgical protocol -"
+          },
+          "contraindications": "Active infection; coagulopathy",
+          "monitoring": "ICP; CSF output; infection surveillance",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO/IV",
+          "indication": "Headache management (avoid NSAIDs while anticoagulated)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg q6h PRN",
+                "orderSentence": "Acetaminophen 1000 mg q6h PRN PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mg PO/IV q6h PRN; max 3g/day (2g if hepatic impairment)",
+            "orderSentence": "Acetaminophen 1000 mg q6h PRN PO"
+          },
+          "contraindications": "Hepatic impairment; weight <50 kg (reduce dose)",
+          "monitoring": "LFTs if chronic use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "PO/IV",
+          "indication": "Nausea/vomiting from elevated ICP",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg q6h PRN",
+                "orderSentence": "Ondansetron 4 mg q6h PRN IV"
+              },
+              {
+                "text": "8 mg q8h PRN",
+                "orderSentence": "Ondansetron 8 mg q8h PRN IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4-8 mg IV/PO q6-8h PRN",
+            "orderSentence": "Ondansetron 4 mg q6h PRN IV"
+          },
+          "contraindications": "QTc prolongation",
+          "monitoring": "QTc if risk factors",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Metoclopramide",
+          "route": "IV",
+          "indication": "Nausea/vomiting (alternative to ondansetron)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg q6h PRN",
+                "orderSentence": "Metoclopramide 10 mg q6h PRN IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV q6-8h PRN; max 40 mg/day; limit use to 5 days",
+            "orderSentence": "Metoclopramide 10 mg q6h PRN IV"
+          },
+          "contraindications": "Parkinson disease; seizure disorder; bowel obstruction",
+          "monitoring": "EPS; tardive dyskinesia; QTc",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Lacosamide (second-line ASM)",
+          "route": "IV/PO",
+          "indication": "Seizures refractory to levetiracetam",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Lacosamide (second-line ASM) 200 mg BID IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Load: 200-400 mg IV; Maintenance: 100-200 mg IV/PO BID (max 400 mg/day)",
+            "orderSentence": "Lacosamide (second-line ASM) 200 mg BID IV"
+          },
+          "contraindications": "Second/third degree AV block; severe hepatic impairment",
+          "monitoring": "ECG (PR prolongation); dizziness",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology for CVT diagnosis confirmation, seizure management, and neurologic monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hematology for thrombophilia workup interpretation and anticoagulation duration guidance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurointerventional radiology for endovascular thrombectomy evaluation if deteriorating despite anticoagulation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neurosurgery for decompressive hemicraniectomy evaluation if large hemorrhagic infarction with herniation risk",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ophthalmology/neuro-ophthalmology for papilledema assessment, visual field testing, and optic nerve monitoring",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "OB/GYN if pregnancy-related or postpartum CVT for anticoagulation coordination and delivery planning",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ENT if septic CVT from sinusitis, mastoiditis, or dental source requiring surgical drainage",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Hematology/oncology if myeloproliferative disorder (JAK2+, polycythemia vera) or malignancy identified",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for mobility assessment and rehabilitation following neurologic deficits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL adaptation if cognitive or motor deficits present",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for anticoagulation management support, disability resources, and family education",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately for sudden severe headache, new seizures, vision changes, weakness, or speech difficulty (may indicate extension or complication of CVT)",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Take anticoagulation medication exactly as prescribed; do NOT miss doses; carry anticoagulation card",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid contact sports and activities with high fall/injury risk while anticoagulated",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Report any signs of bleeding (blood in urine/stool, excessive bruising, prolonged bleeding from cuts, heavy menstruation) immediately",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Do not take aspirin, ibuprofen, or other NSAIDs unless specifically directed by your physician while anticoagulated",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "INR monitoring appointments are critical if on warfarin -- do not miss them",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Discuss contraception options with your physician as hormonal contraceptives may be contraindicated after CVT",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Do not drive until cleared by neurology (seizure risk; visual field deficits)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid dehydration (drink adequate fluids daily) as dehydration is a CVT risk factor",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "If planning pregnancy, discuss with both neurology and hematology for anticoagulation management (warfarin/DOACs contraindicated; LMWH required)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Discontinue oral contraceptive pills (OCPs) or hormone replacement therapy (HRT) permanently after CVT; discuss alternative contraception with gynecology",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Smoking cessation to reduce prothrombotic risk",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Adequate hydration (8+ glasses water daily) to reduce venous stasis",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid prolonged immobilization; use compression stockings during long travel",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Maintain healthy weight to reduce prothrombotic risk",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Address modifiable risk factors identified in thrombophilia workup (folate for hyperhomocysteinemia, phlebotomy for polycythemia)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Migraine with aura",
+      "features": "Recurrent; typical aura pattern; no venous filling defects; normal imaging",
+      "tests": "MRI/MRV normal; headache diary; family history"
+    },
+    {
+      "diagnosis": "Idiopathic intracranial hypertension (IIH)",
+      "features": "Elevated ICP without venous thrombosis; obesity; female predominance; papilledema",
+      "tests": "MRV shows no thrombosis; LP elevated opening pressure; normal D-dimer"
+    },
+    {
+      "diagnosis": "Arterial ischemic stroke",
+      "features": "Arterial territory distribution; no hemorrhagic component typical of CVT; older patients",
+      "tests": "CT/CTA shows arterial occlusion; CTV/MRV normal veins"
+    },
+    {
+      "diagnosis": "Intracerebral hemorrhage (hypertensive)",
+      "features": "Typical deep locations (basal ganglia, thalamus); hypertension; older patients",
+      "tests": "CTV/MRV shows patent sinuses; hemorrhage in typical hypertensive location"
+    },
+    {
+      "diagnosis": "Subarachnoid hemorrhage",
+      "features": "Thunderclap headache; cisternal blood; positive CTA for aneurysm",
+      "tests": "CTA for aneurysm; LP (xanthochromia); CTV shows patent sinuses"
+    },
+    {
+      "diagnosis": "Meningitis/encephalitis",
+      "features": "Fever; meningismus; CSF pleocytosis; specific pathogen identified",
+      "tests": "LP; blood cultures; CSF PCR panels; CTV/MRV normal"
+    },
+    {
+      "diagnosis": "Brain tumor/metastasis",
+      "features": "Progressive symptoms; enhancing mass lesion; no venous filling defect",
+      "tests": "MRI with contrast shows mass; CTV/MRV normal sinuses; biopsy"
+    },
+    {
+      "diagnosis": "Brain abscess",
+      "features": "Fever; ring-enhancing lesion; restricted diffusion centrally; infectious source",
+      "tests": "MRI DWI; blood cultures; surgical drainage; CTV normal"
+    },
+    {
+      "diagnosis": "Posterior reversible encephalopathy syndrome (PRES)",
+      "features": "Hypertensive emergency; symmetric posterior white matter edema; seizures",
+      "tests": "BP history; MRI pattern; CTV/MRV normal; resolves with BP control"
+    },
+    {
+      "diagnosis": "Dural AV fistula",
+      "features": "Progressive symptoms; tortuous vessels on MRI; pulsatile tinnitus",
+      "tests": "Conventional angiography; MRI flow voids"
+    },
+    {
+      "diagnosis": "Subdural hematoma",
+      "features": "Crescent-shaped extra-axial collection; trauma history; bridging vein tearing",
+      "tests": "CT shows subdural; no venous sinus filling defect"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "AHA/ASA scientific statement on CVT diagnosis and management",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Saposnik G et al. Stroke 2011;42:1158-1192](https://pubmed.ncbi.nlm.nih.gov/21293023/)"
+    },
+    {
+      "recommendation": "EAN guideline on CVT",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Ferro JM et al. Eur J Neurol 2017;24:1203-1213](https://pubmed.ncbi.nlm.nih.gov/28727262/)"
+    },
+    {
+      "recommendation": "ISCVT (International Study on CVT): largest cohort study",
+      "evidenceLevel": "Class II",
+      "source": "[Ferro JM et al. Stroke 2004;35:664-670](https://pubmed.ncbi.nlm.nih.gov/14976332/)"
+    },
+    {
+      "recommendation": "Anticoagulation safe and beneficial even with hemorrhagic infarction",
+      "evidenceLevel": "Class II",
+      "source": "[Einhaupl K et al. J Neurol Neurosurg Psychiatry 1991;54:396-401](https://pubmed.ncbi.nlm.nih.gov/2072174/)"
+    },
+    {
+      "recommendation": "LMWH preferred over UFH (ISCVT data)",
+      "evidenceLevel": "Class III",
+      "source": "[Coutinho JM et al. Stroke 2010;41:2519-2524](https://pubmed.ncbi.nlm.nih.gov/20930153/)"
+    },
+    {
+      "recommendation": "RE-SPECT CVT trial: dabigatran vs warfarin",
+      "evidenceLevel": "Class II (RCT)",
+      "source": "[Ferro JM et al. Lancet Neurol 2019;18:1147-1156](https://pubmed.ncbi.nlm.nih.gov/31708354/)"
+    },
+    {
+      "recommendation": "D-dimer in CVT diagnosis (high NPV)",
+      "evidenceLevel": "Class II",
+      "source": "[Dentali F et al. J Thromb Haemost 2012;10:582-589](https://pubmed.ncbi.nlm.nih.gov/22257124/)"
+    },
+    {
+      "recommendation": "Thrombophilia prevalence in CVT (~35%)",
+      "evidenceLevel": "Class II",
+      "source": "[Martinelli I et al. Blood 1998;92:3152-3157](https://pubmed.ncbi.nlm.nih.gov/9787151/)"
+    },
+    {
+      "recommendation": "Oral contraceptives as major CVT risk factor",
+      "evidenceLevel": "Class II",
+      "source": "[de Bruijn SF et al. Stroke 1998;29:2588-2592](https://pubmed.ncbi.nlm.nih.gov/9836771/)"
+    },
+    {
+      "recommendation": "Decompressive surgery for malignant CVT",
+      "evidenceLevel": "Class III",
+      "source": "[Ferro JM et al. Cerebrovasc Dis 2009;27:55-62](https://pubmed.ncbi.nlm.nih.gov/19023216/)"
+    },
+    {
+      "recommendation": "Endovascular thrombectomy for severe CVT",
+      "evidenceLevel": "Class III, Case Series",
+      "source": "[Siddiqui FM et al. J Neurointerv Surg 2015;7:442-447](https://pubmed.ncbi.nlm.nih.gov/24827066/)"
+    },
+    {
+      "recommendation": "Seizure incidence in CVT (~40%)",
+      "evidenceLevel": "Class II",
+      "source": "[Ferro JM et al. Stroke 2008;39:3222-3227](https://pubmed.ncbi.nlm.nih.gov/18974380/)"
+    },
+    {
+      "recommendation": "Long-term prognosis of CVT (good in most cases)",
+      "evidenceLevel": "Class II",
+      "source": "[Ferro JM et al. Stroke 2004;35:664-670](https://pubmed.ncbi.nlm.nih.gov/14976332/)"
+    },
+    {
+      "recommendation": "Duration of anticoagulation in CVT",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Saposnik G et al. Stroke 2011;42:1158-1192](https://pubmed.ncbi.nlm.nih.gov/21293023/)"
+    },
+    {
+      "recommendation": "CTV and MRV sensitivity for CVT diagnosis",
+      "evidenceLevel": "Class II",
+      "source": "[Defined F et al. AJNR 2007;28:1694-1697](https://pubmed.ncbi.nlm.nih.gov/17885251/)"
+    },
+    {
+      "recommendation": "CVT in pregnancy and postpartum management",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Saposnik G et al. Stroke 2011](https://pubmed.ncbi.nlm.nih.gov/21293023/)"
+    },
+    {
+      "recommendation": "Antiphospholipid syndrome and CVT; warfarin preferred over DOACs",
+      "evidenceLevel": "Class II",
+      "source": "[Pengo V et al. Blood 2018;132:1365-1371](https://pubmed.ncbi.nlm.nih.gov/30002145/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic examination (GCS, pupils, motor, speech)",
+      "frequency": "Q1h (ICU); Q2-4h (floor)",
+      "action": "If worsening: repeat imaging; escalate to ICU; consider endovascular intervention",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "aPTT (if on UFH)",
+      "frequency": "Q6h until therapeutic x2; then Q12-24h",
+      "action": "Adjust heparin rate per nomogram",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "INR (if on warfarin)",
+      "frequency": "Daily until therapeutic; then q1-3 days; then weekly; then monthly",
+      "action": "Adjust warfarin dose; bridge with LMWH if subtherapeutic",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Platelet count",
+      "frequency": "Q2 days (HIT screen while on heparin)",
+      "action": "If >50% drop: check HIT antibody; switch to argatroban or bivalirudin",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Head CT / MRI",
+      "frequency": "48-72h post-admission; at clinical change",
+      "action": "If worsening: escalate care; neurosurgery consult",
+      "ED": "-",
+      "HOSP": "URGENT",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Follow-up MRV",
+      "frequency": "3-6 months after diagnosis",
+      "action": "If persistent: extend anticoagulation; consider endovascular if symptomatic",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Visual acuity and visual fields",
+      "frequency": "Daily if papilledema; each OPD visit",
+      "action": "If worsening: increase ICP management; ophthalmology; consider ONSF",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Fundoscopic exam",
+      "frequency": "Daily if papilledema (inpatient); q1-3 months (OPD)",
+      "action": "If worsening: escalate ICP management; therapeutic LP",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Opening pressure (if repeated LP)",
+      "frequency": "Per clinical indication",
+      "action": "If persistently elevated: acetazolamide; VP shunt evaluation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Seizure monitoring (EEG if needed)",
+      "frequency": "Continuous if seizures; as indicated",
+      "action": "If recurrent: adjust ASMs; continuous EEG monitoring",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Renal function (BUN/Cr)",
+      "frequency": "Baseline; q3-7 days on heparin; q6-12 months on DOACs",
+      "action": "Adjust anticoagulation dose for renal impairment",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Q1h (ICU); Q4h (floor)",
+      "action": "Permissive hypertension acceptable; avoid excessive lowering",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Neurologically stable; therapeutic anticoagulation achieved; seizures controlled; no significant hemorrhagic infarction; adequate outpatient follow-up arranged (neurology, hematology, ophthalmology); patient/family educated on anticoagulation management and warning signs"
+    },
+    {
+      "disposition": "**Admit to floor (neurology/stroke unit)**",
+      "criteria": "New CVT diagnosis requiring anticoagulation initiation; seizures requiring treatment; elevated ICP requiring medical management; hemorrhagic venous infarction (small/moderate); diagnostic workup pending"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "Large hemorrhagic infarction with mass effect; GCS ≤12; refractory seizures or status epilepticus; malignant cerebral edema with herniation risk; hemodynamic instability; requires invasive ICP monitoring; post-endovascular procedure"
+    },
+    {
+      "disposition": "**Transfer to higher level of care**",
+      "criteria": "Neurointerventional capability not available (for endovascular thrombectomy); neurosurgery not available (for decompressive hemicraniectomy); requires ICU care not available at current facility"
+    },
+    {
+      "disposition": "**Outpatient follow-up**",
+      "criteria": "All patients: neurology within 1-2 weeks; hematology within 1 month (thrombophilia results); ophthalmology within 2-4 weeks if papilledema; anticoagulation clinic (if on warfarin); repeat MRV at 3-6 months"
+    },
+    {
+      "disposition": "**Readmission criteria**",
+      "criteria": "New or worsening headache; new seizures; new neurologic deficits; signs of bleeding on anticoagulation; pregnancy (requires anticoagulation modification)"
+    }
+  ]
+}

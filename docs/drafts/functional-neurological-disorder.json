@@ -1,0 +1,1301 @@
+{
+  "id": "functional-neurological-disorder",
+  "title": "Functional Neurological Disorder (FND)",
+  "version": "1.0",
+  "icd10": [
+    "** F44.4 (Conversion disorder with motor symptom or deficit)",
+    "F44.5 (Conversion disorder with seizures or convulsions)",
+    "F44.6 (Conversion disorder with sensory symptom or deficit)",
+    "F44.7 (Conversion disorder with mixed symptom presentation)",
+    "F44.9 (Dissociative and conversion disorder",
+    "unspecified)"
+  ],
+  "scope": "** Diagnosis (positive clinical signs), acute management, and long-term multidisciplinary treatment of FND. Covers functional motor symptoms (weakness, tremor, dystonia, gait disorder, myoclonus, parkinsonism), functional seizures (PNES/dissociative seizures), functional sensory symptoms, and functional cognitive symptoms. Emphasizes POSITIVE diagnosis based on clinical signs (not diagnosis of exclusion). Includes communication strategies, physical rehabilitation, psychological treatment, and pharmacologic management of comorbidities. For epilepsy, see \"New Onset Seizure\" and \"Status Epilepticus\" templates. For organic movement disorders, see specific disorder templates.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; rule out infection/anemia as contributor",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Metabolic encephalopathy screen; electrolytes",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid dysfunction as contributor to neuropsychiatric symptoms",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Hypoglycemia as mimic",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urinalysis (CPT 81003)",
+          "rationale": "UTI/drug screen",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Inflammatory/autoimmune screen",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory screen",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "rationale": "B12 deficiency neuropathy/myelopathy as comorbidity",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin D 25-OH (CPT 82306)",
+          "rationale": "Deficiency associated with chronic pain, fatigue",
+          "target": "Normal (>30 ng/mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Prolactin (15-20 min post-event) (CPT 84146)",
+          "rationale": "If differentiating epileptic vs functional seizures; elevated post-ictal in epileptic seizures",
+          "target": "Normal in functional seizures; elevated (>2x baseline) post-epileptic seizure",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "rationale": "Substance-related symptoms; psychiatric differential",
+          "target": "Negative (document for differential)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "If autoimmune concern based on clinical features",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-TPO antibodies",
+          "rationale": "Hashimoto encephalopathy if cognitive symptoms prominent",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ceruloplasmin, copper",
+          "rationale": "Wilson disease if young onset movement disorder",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Diabetic neuropathy comorbidity",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Autoimmune encephalitis antibody panel (serum and CSF)",
+          "rationale": "If acute onset cognitive/behavioral symptoms; consider anti-NMDAR encephalitis mimic in young patients",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic panel",
+          "rationale": "If atypical features suggesting underlying malignancy",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing for hereditary dystonia (DYT genes)",
+          "rationale": "If functional dystonia features overlap with hereditary dystonia",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "Within 1-2 weeks (not STAT unless acute stroke concern)",
+          "target": "Normal; rules out structural pathology; provides reassurance",
+          "contraindications": "Standard MRI contraindications",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Routine EEG (CPT 95816)",
+          "timing": "If seizure-like events; baseline for comparison",
+          "target": "Normal interictal EEG (does not exclude epilepsy but supports functional diagnosis if events captured)",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Video-EEG monitoring (prolonged) (CPT 95711-95720)",
+          "timing": "Gold standard for differentiating epileptic vs functional seizures; capture typical event",
+          "target": "Normal EEG during typical clinical event confirms functional seizures (PNES); diagnostic certainty",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "ED triage if acute presentation",
+          "target": "Rule out hemorrhage, mass",
+          "contraindications": "None significant",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI spine (cervical/thoracic)",
+          "timing": "If myelopathy symptoms; weakness with upper motor neuron signs",
+          "target": "Normal (rules out structural myelopathy)",
+          "contraindications": "Standard MRI contraindications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EMG/NCS (electromyography/nerve conduction studies) (CPT 95907-95913)",
+          "timing": "If peripheral neuropathy or myopathy suspected as comorbidity or mimic",
+          "target": "Normal or shows functional patterns (intermittent recruitment, give-way pattern)",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "DaTscan (dopamine transporter SPECT) (CPT 78607)",
+          "timing": "If differentiating functional parkinsonism from neurodegenerative parkinsonism",
+          "target": "Normal in functional parkinsonism; abnormal in PD/MSA/PSP",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ambulatory EEG (CPT 95711)",
+          "timing": "If events infrequent; outpatient monitoring alternative to inpatient vEEG",
+          "target": "Same as vEEG",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "FDG-PET brain",
+          "timing": "If functional cognitive disorder vs early neurodegeneration",
+          "target": "Normal metabolism in functional cognitive disorder; hypometabolism in neurodegeneration",
+          "contraindications": "Uncontrolled diabetes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Functional MRI (fMRI)",
+          "timing": "Research setting only; not standard clinical use",
+          "target": "Altered connectivity patterns in FND",
+          "contraindications": "Standard MRI contraindications",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent (Functional Seizures/Events in ED)": [
+        {
+          "item": "Verbal reassurance and coaching (first-line acute management)",
+          "route": "-",
+          "indication": "Functional seizure/event in progress",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Verbal reassurance and coaching (first-line acute management) N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Use calm, reassuring voice; \"I'm going to help you through this\"; grounding techniques (name 5 things you can see); do NOT restrain or force oral airway",
+            "orderSentence": "Verbal reassurance and coaching (first-line acute management) N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Event duration; response to verbal cues; vital signs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Avoid unnecessary IV benzodiazepines",
+          "route": "-",
+          "indication": "Do NOT treat functional seizures with benzodiazepines (causes respiratory depression without benefit; iatrogenic harm)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Avoid unnecessary IV benzodiazepines N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Withhold IV lorazepam/midazolam/diazepam unless epileptic seizure cannot be excluded",
+            "orderSentence": "Avoid unnecessary IV benzodiazepines N/A -"
+          },
+          "contraindications": "If epileptic seizure cannot be excluded, treat as epileptic",
+          "monitoring": "Respiratory status; document clinical features to differentiate",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Nasal ammonia capsule (smelling salts)",
+          "route": "INH",
+          "indication": "Functional unresponsiveness; can help break functional event",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 capsule",
+                "orderSentence": "Nasal ammonia capsule (smelling salts) 1 capsule INH"
+              }
+            ],
+            "route": "INH",
+            "instructions": "Break capsule under nose; response (grimace, withdrawal) confirms awareness and supports functional diagnosis",
+            "orderSentence": "Nasal ammonia capsule (smelling salts) 1 capsule INH"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Response; document",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Communication and Diagnosis Delivery": [
+        {
+          "item": "Diagnosis delivery session (structured communication)",
+          "route": "-",
+          "indication": "All FND patients; THE most important therapeutic intervention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Diagnosis delivery session (structured communication) N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Explain FND as a REAL neurological condition (not \"all in your head\"); the nervous system is not functioning correctly, like a \"software problem\" rather than \"hardware problem\"; show positive clinical signs to patient; use neurosymptoms.org as patient resource; validate symptoms; express confidence in diagnosis",
+            "orderSentence": "Diagnosis delivery session (structured communication) N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Patient understanding; emotional response; acceptance; therapeutic alliance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Physical Rehabilitation (Core Treatment)": [
+        {
+          "item": "Specialized FND physiotherapy",
+          "route": "-",
+          "indication": "Functional motor symptoms (weakness, gait disorder, tremor, dystonia)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Outpatient: 1-2 sessions/week x 12-20 weeks",
+                "orderSentence": "Specialized FND physiotherapy Outpatient: 1-2 sessions/week x 12-20 weeks -"
+              }
+            ],
+            "route": "-",
+            "instructions": "FND-specialized physiotherapy focusing on movement retraining, distraction techniques, normalizing movement patterns; NOT standard neuro rehab; requires therapist with FND training",
+            "orderSentence": "Specialized FND physiotherapy Outpatient: 1-2 sessions/week x 12-20 weeks -"
+          },
+          "contraindications": "Active psychosis; complete lack of engagement",
+          "monitoring": "Functional outcome measures (e.g., 10-meter walk test, Berg Balance Scale, SF-36); patient engagement; symptom trajectory",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Inpatient multidisciplinary FND rehabilitation",
+          "route": "-",
+          "indication": "Severe functional disability not improving with outpatient therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-5 days per week x 3-5 weeks",
+                "orderSentence": "Inpatient multidisciplinary FND rehabilitation 2-5 days per week x 3-5 weeks -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Intensive inpatient program with PT, OT, psychology, neurology; consensus-based approach; goal-oriented",
+            "orderSentence": "Inpatient multidisciplinary FND rehabilitation 2-5 days per week x 3-5 weeks -"
+          },
+          "contraindications": "Severe untreated psychiatric comorbidity; active suicidality",
+          "monitoring": "Functional outcome measures; daily progress; discharge goals",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy (FND-focused)",
+          "route": "-",
+          "indication": "ADL difficulties; upper extremity functional symptoms; work/role adaptation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 sessions/week",
+                "orderSentence": "Occupational therapy (FND-focused) 1-2 sessions/week -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Functional task retraining; graded activity; sensory retraining; workplace modification",
+            "orderSentence": "Occupational therapy (FND-focused) 1-2 sessions/week -"
+          },
+          "contraindications": "Same as physiotherapy",
+          "monitoring": "ADL measures; occupational function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology",
+          "route": "-",
+          "indication": "Functional speech/voice disorder (dysphonia, stutter); functional swallow difficulty",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 sessions/week",
+                "orderSentence": "Speech-language pathology 1-2 sessions/week -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Voice retraining; laryngeal relaxation techniques; behavioral strategies",
+            "orderSentence": "Speech-language pathology 1-2 sessions/week -"
+          },
+          "contraindications": "None",
+          "monitoring": "Voice assessment; swallow function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Psychological Treatment": [
+        {
+          "item": "Cognitive Behavioral Therapy (CBT) -- FND-focused",
+          "route": "-",
+          "indication": "All FND patients; addresses illness beliefs, avoidance, attention to symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12-20 sessions",
+                "orderSentence": "Cognitive Behavioral Therapy (CBT) -- FND-focused 12-20 sessions -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Weekly 50-min sessions; FND-specific CBT model (Goldstein et al. CODES trial for PNES); addresses predisposing, precipitating, and perpetuating factors",
+            "orderSentence": "Cognitive Behavioral Therapy (CBT) -- FND-focused 12-20 sessions -"
+          },
+          "contraindications": "Active psychosis; severe cognitive impairment",
+          "monitoring": "Seizure/symptom frequency; functional measures; PHQ-9; GAD-7",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EMDR (Eye Movement Desensitization and Reprocessing)",
+          "route": "-",
+          "indication": "FND with trauma history; PTSD comorbidity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8-12 sessions",
+                "orderSentence": "EMDR (Eye Movement Desensitization and Reprocessing) 8-12 sessions -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Standard EMDR protocol; process traumatic memories contributing to FND",
+            "orderSentence": "EMDR (Eye Movement Desensitization and Reprocessing) 8-12 sessions -"
+          },
+          "contraindications": "Active psychosis; dissociative disorder (relative -- requires specialist); active suicidality",
+          "monitoring": "PTSD symptom scales; FND symptom frequency",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychodynamic psychotherapy",
+          "route": "-",
+          "indication": "FND with significant interpersonal/attachment difficulties; insight-oriented patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Weekly sessions x 6-12 months",
+                "orderSentence": "Psychodynamic psychotherapy Weekly sessions x 6-12 months -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Explore underlying conflicts, attachment patterns, and emotional processing difficulties contributing to FND",
+            "orderSentence": "Psychodynamic psychotherapy Weekly sessions x 6-12 months -"
+          },
+          "contraindications": "Active psychosis; severe personality disorder (relative)",
+          "monitoring": "Symptom frequency; functional measures; therapeutic alliance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Mindfulness-based stress reduction (MBSR)",
+          "route": "-",
+          "indication": "FND with anxiety, body hypervigilance, chronic pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8-week group program",
+                "orderSentence": "Mindfulness-based stress reduction (MBSR) 8-week group program -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Standard MBSR protocol; body scan modified for FND (reduce body hypervigilance)",
+            "orderSentence": "Mindfulness-based stress reduction (MBSR) 8-week group program -"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Anxiety/stress measures; symptom severity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Group psychoeducation",
+          "route": "-",
+          "indication": "All FND patients; normalize experience; reduce isolation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6-8 sessions",
+                "orderSentence": "Group psychoeducation 6-8 sessions -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Structured group program covering FND education, coping strategies, self-management",
+            "orderSentence": "Group psychoeducation 6-8 sessions -"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Attendance; patient satisfaction; knowledge",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Pharmacologic Management of Comorbidities": [
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Comorbid depression (present in ~50% FND); anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Sertraline 50 mg daily PO"
+              },
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Sertraline 100 mg daily PO"
+              },
+              {
+                "text": "150 mg daily",
+                "orderSentence": "Sertraline 150 mg daily PO"
+              },
+              {
+                "text": "200 mg daily",
+                "orderSentence": "Sertraline 200 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg daily; titrate q2-4wk; max 200 mg/day",
+            "orderSentence": "Sertraline 50 mg daily PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation",
+          "monitoring": "Suicidality (first 8 weeks); serotonin syndrome; QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Comorbid depression + chronic pain (dual benefit)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg daily",
+                "orderSentence": "Duloxetine 30 mg daily PO"
+              },
+              {
+                "text": "60 mg daily",
+                "orderSentence": "Duloxetine 60 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg daily PO"
+          },
+          "contraindications": "Hepatic impairment; concurrent MAOIs; uncontrolled glaucoma",
+          "monitoring": "BP; LFTs; serotonin syndrome; discontinuation syndrome",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venlafaxine XR",
+          "route": "PO",
+          "indication": "Comorbid depression + anxiety; chronic pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg daily",
+                "orderSentence": "Venlafaxine XR 37.5 mg daily PO"
+              },
+              {
+                "text": "75 mg daily",
+                "orderSentence": "Venlafaxine XR 75 mg daily PO"
+              },
+              {
+                "text": "150 mg daily",
+                "orderSentence": "Venlafaxine XR 150 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg daily x 1 week; titrate q1wk; max 225 mg/day",
+            "orderSentence": "Venlafaxine XR 37.5 mg daily PO"
+          },
+          "contraindications": "Uncontrolled hypertension; concurrent MAOIs",
+          "monitoring": "BP; HR; discontinuation syndrome (taper slowly)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "Chronic pain; insomnia; migraine prophylaxis (common FND comorbidities)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Amitriptyline 10 mg qHS PO"
+              },
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Amitriptyline 25 mg qHS PO"
+              },
+              {
+                "text": "50 mg qHS",
+                "orderSentence": "Amitriptyline 50 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg PO qHS; titrate by 10 mg q1-2wk; max 75 mg qHS for pain/insomnia",
+            "orderSentence": "Amitriptyline 10 mg qHS PO"
+          },
+          "contraindications": "Cardiac conduction abnormality; recent MI; urinary retention; glaucoma",
+          "monitoring": "ECG if dose >50 mg; anticholinergic effects; sedation; orthostatic hypotension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hydroxyzine",
+          "route": "PO",
+          "indication": "Acute anxiety; agitation in ED/inpatient",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg q6h PRN",
+                "orderSentence": "Hydroxyzine 25 mg q6h PRN PO"
+              },
+              {
+                "text": "50 mg q6h PRN",
+                "orderSentence": "Hydroxyzine 50 mg q6h PRN PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg PO q6-8h PRN; max 100 mg/dose",
+            "orderSentence": "Hydroxyzine 25 mg q6h PRN PO"
+          },
+          "contraindications": "QTc prolongation; severe hepatic impairment",
+          "monitoring": "QTc; sedation",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Propranolol",
+          "route": "PO",
+          "indication": "Anxiety with somatic symptoms (palpitations, tremor); comorbid migraine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg BID",
+                "orderSentence": "Propranolol 10 mg BID PO"
+              },
+              {
+                "text": "20 mg BID",
+                "orderSentence": "Propranolol 20 mg BID PO"
+              },
+              {
+                "text": "40 mg BID",
+                "orderSentence": "Propranolol 40 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg PO BID; titrate q1wk; max 80 mg BID",
+            "orderSentence": "Propranolol 10 mg BID PO"
+          },
+          "contraindications": "Asthma; AV block; bradycardia; decompensated CHF",
+          "monitoring": "HR; BP; bronchospasm",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Insomnia (common FND comorbidity)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3-10 mg qHS",
+                "orderSentence": "Melatonin 3-10 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-10 mg PO qHS",
+            "orderSentence": "Melatonin 3-10 mg qHS PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Sleep quality",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Insomnia with comorbid depression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-100 mg qHS",
+                "orderSentence": "Trazodone 25-100 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-100 mg PO qHS",
+            "orderSentence": "Trazodone 25-100 mg qHS PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation",
+          "monitoring": "Orthostatic hypotension; priapism (rare); sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Anti-Seizure Medication Taper (Functional Seizures/PNES)": [
+        {
+          "item": "Gradual ASM taper (levetiracetam, lamotrigine, valproic acid, etc.)",
+          "route": "PO",
+          "indication": "Confirmed functional seizures (PNES) on unnecessary ASMs; taper AFTER definitive vEEG diagnosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per drug-specific taper",
+                "orderSentence": "Gradual ASM taper (levetiracetam, lamotrigine, valproic acid, etc.) Per drug-specific taper PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Taper each ASM by 25% every 2 weeks; single-drug taper at a time; monitor for breakthrough if comorbid epilepsy not excluded; complete taper over 2-3 months",
+            "orderSentence": "Gradual ASM taper (levetiracetam, lamotrigine, valproic acid, etc.) Per drug-specific taper PO"
+          },
+          "contraindications": "Comorbid epilepsy (dual diagnosis: ~10-20% of PNES patients also have epilepsy -- do NOT taper in these patients without epilepsy specialist input)",
+          "monitoring": "Event frequency; anxiety (taper anxiety is common); confirm no epileptic events",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology (FND specialist if available) for diagnosis confirmation, positive sign demonstration, and diagnosis delivery",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neuropsychiatry or psychiatry with FND experience for comorbidity management and psychological formulation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physiotherapy (FND-specialized if available) for movement retraining and functional motor rehabilitation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clinical psychology (CBT for FND) for illness beliefs, avoidance, and perpetuating factors",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL adaptation and graded return to activity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology if functional voice disorder or functional swallow symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Epilepsy monitoring unit for video-EEG if functional seizures suspected (diagnostic confirmation)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychology if functional cognitive symptoms for formal testing and differentiation from neurodegenerative cognitive decline",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management if chronic pain comorbidity refractory to standard treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for disability support, vocational rehabilitation, and family education",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Peer support group for FND (FND Hope, FND Action, local support groups)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "FND is a REAL neurological condition -- your symptoms are genuine and not imagined or fabricated",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Visit www.neurosymptoms.org for reliable, expert-written information about FND (recommended by leading FND specialists)",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "FND is treatable -- many patients improve significantly with the right treatment (physiotherapy, psychology, self-management)",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Understanding the diagnosis is the first step in recovery -- ask your neurologist to show you your positive clinical signs",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid excessive medical testing and doctor shopping; this can reinforce symptoms and delay recovery",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Regular physical activity and graded exercise improve outcomes -- avoid complete rest or bed rest",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "If you have functional seizures: during an event, try grounding techniques (5 senses exercise); family/friends should NOT restrain you or call 911 unless injury occurs or event lasts >10 minutes",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Manage stress, sleep, and general health -- these factors influence symptom severity",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Engage with recommended physiotherapy and psychology -- these are the evidence-based treatments",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Recovery is often gradual with setbacks -- this is normal and does not mean the diagnosis is wrong",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Return to ED for new symptoms that are clearly different from your usual FND symptoms, such as sudden severe headache, fever, or one-sided weakness with facial droop (new stroke symptoms)",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular aerobic exercise (30 min, 5x/week) to improve mood, reduce pain, and support neuroplasticity",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Sleep hygiene: consistent bed/wake times, avoid screens 1 hour before bed, limit caffeine after noon",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Stress management: mindfulness, breathing exercises, journaling, or other relaxation techniques",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Pacing activities to avoid boom-bust cycle (overactivity on good days → crash on bad days)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Limit alcohol (lowers seizure threshold; interacts with medications; worsens mood/sleep)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid benzodiazepines for functional seizures (ineffective and potentially harmful)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Maintain social connections and meaningful activities -- isolation worsens FND",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Epileptic seizures",
+      "features": "Stereotyped semiology; postictal confusion; tongue bite; incontinence; EEG abnormalities",
+      "tests": "Video-EEG with event capture (gold standard); prolactin level; semiology analysis"
+    },
+    {
+      "diagnosis": "Multiple sclerosis",
+      "features": "Relapsing-remitting with MRI lesions; positive OCBs; clinical dissemination in time/space",
+      "tests": "MRI brain/spine; OCBs; McDonald criteria"
+    },
+    {
+      "diagnosis": "Myasthenia gravis",
+      "features": "Fatigable weakness; ptosis; diplopia; positive edrophonium test; positive antibodies",
+      "tests": "AChR/MuSK antibodies; repetitive nerve stimulation; ice pack test"
+    },
+    {
+      "diagnosis": "Parkinson disease",
+      "features": "Resting tremor; rigidity; bradykinesia; asymmetric onset; progressive course",
+      "tests": "DaTscan (abnormal in PD, normal in FND); clinical features"
+    },
+    {
+      "diagnosis": "Dystonia (organic)",
+      "features": "Fixed posture (though fixed dystonia is often functional); genetic/secondary causes; task-specificity",
+      "tests": "DYT genetic testing; clinical features; response to botulinum toxin"
+    },
+    {
+      "diagnosis": "Stroke/TIA",
+      "features": "Sudden onset; arterial territory pattern; MRI DWI restricted diffusion; vascular risk factors",
+      "tests": "MRI brain (DWI); CT angiography; clinical examination"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis (anti-NMDAR)",
+      "features": "Psychiatric symptoms + seizures + movement disorder; CSF pleocytosis; antibodies positive",
+      "tests": "AE antibody panel (serum and CSF); MRI; EEG"
+    },
+    {
+      "diagnosis": "Spinal cord pathology (myelopathy)",
+      "features": "Upper motor neuron signs; sensory level; bowel/bladder involvement; MRI cord lesion",
+      "tests": "MRI spine; clinical examination pattern"
+    },
+    {
+      "diagnosis": "Peripheral neuropathy",
+      "features": "Length-dependent pattern; EMG/NCS abnormalities; specific etiologies",
+      "tests": "EMG/NCS; labs (glucose, B12, SPEP)"
+    },
+    {
+      "diagnosis": "Wilson disease",
+      "features": "Young onset; Kayser-Fleischer rings; liver disease; movement disorder",
+      "tests": "Ceruloplasmin; 24-hour urine copper; slit lamp exam"
+    },
+    {
+      "diagnosis": "Creutzfeldt-Jakob disease",
+      "features": "Rapidly progressive dementia; myoclonus; MRI cortical ribboning; 14-3-3 protein",
+      "tests": "MRI DWI; RT-QuIC; 14-3-3; EEG (periodic discharges)"
+    },
+    {
+      "diagnosis": "Malingering / factitious disorder",
+      "features": "Intentional symptom production; external motivation (malingering) or sick role (factitious); RARE in clinical practice -- do NOT assume this",
+      "tests": "No reliable test; clinical judgment; inconsistency with incentives; FND is NOT malingering"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "DSM-5 FND diagnostic criteria (positive neurological signs required)",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[American Psychiatric Association. DSM-5. 2013](https://psychiatry.org/psychiatrists/practice/dsm)"
+    },
+    {
+      "recommendation": "FND is a positive diagnosis based on clinical signs, not exclusion",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Stone J et al. J Neurol Neurosurg Psychiatry 2020;91:615-621](https://pubmed.ncbi.nlm.nih.gov/32332150/)"
+    },
+    {
+      "recommendation": "Hoover sign sensitivity and specificity for functional weakness",
+      "evidenceLevel": "Class II",
+      "source": "[Stone J et al. J Neurol 2002;249:1468-1474](https://pubmed.ncbi.nlm.nih.gov/12420099/)"
+    },
+    {
+      "recommendation": "Video-EEG gold standard for PNES/functional seizure diagnosis",
+      "evidenceLevel": "Class II",
+      "source": "[LaFrance WC et al. Epilepsia 2013;54 Suppl 1:44-52](https://pubmed.ncbi.nlm.nih.gov/23458467/)"
+    },
+    {
+      "recommendation": "CODES trial: CBT for dissociative seizures (largest RCT)",
+      "evidenceLevel": "Class I (RCT)",
+      "source": "[Goldstein LH et al. Lancet Psychiatry 2020;7:491-505](https://pubmed.ncbi.nlm.nih.gov/32445688/)"
+    },
+    {
+      "recommendation": "Physiotherapy for FND (Nielsen et al. RCT)",
+      "evidenceLevel": "Class I (RCT)",
+      "source": "[Nielsen G et al. J Neurol Neurosurg Psychiatry 2015;86:1113-1119](https://pubmed.ncbi.nlm.nih.gov/25433033/)"
+    },
+    {
+      "recommendation": "FND prognosis: ~40% same or worse at follow-up without treatment",
+      "evidenceLevel": "Class II",
+      "source": "[Stone J et al. Brain 2003;126:1692-1698](https://pubmed.ncbi.nlm.nih.gov/12805103/)"
+    },
+    {
+      "recommendation": "neurosymptoms.org: validated patient education resource",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Stone J. Practical Neurology 2014;14:368-379](https://pubmed.ncbi.nlm.nih.gov/24778269/)"
+    },
+    {
+      "recommendation": "Diagnosis communication approach (\"software not hardware\")",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Stone J et al. J Neurol Neurosurg Psychiatry 2020](https://pubmed.ncbi.nlm.nih.gov/32332150/)"
+    },
+    {
+      "recommendation": "Comorbid epilepsy in 10-20% of PNES patients (dual diagnosis)",
+      "evidenceLevel": "Class II",
+      "source": "[Benbadis SR et al. Neurology 2001;57:915-917](https://pubmed.ncbi.nlm.nih.gov/11552032/)"
+    },
+    {
+      "recommendation": "Tremor entrainment as positive sign for functional tremor",
+      "evidenceLevel": "Class II",
+      "source": "[Schwingenschuh P et al. Mov Disord 2016;31:1710-1719](https://pubmed.ncbi.nlm.nih.gov/27621220/)"
+    },
+    {
+      "recommendation": "DaTscan normal in functional parkinsonism",
+      "evidenceLevel": "Class III",
+      "source": "[Gaig C et al. J Neurol Neurosurg Psychiatry 2012;83:1145-1149](https://pubmed.ncbi.nlm.nih.gov/22933815/)"
+    },
+    {
+      "recommendation": "FND-specialized physiotherapy approach",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Nielsen G et al. Handb Clin Neurol 2016;139:555-569](https://pubmed.ncbi.nlm.nih.gov/27719870/)"
+    },
+    {
+      "recommendation": "Anti-seizure medication taper in confirmed PNES",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[LaFrance WC et al. Neurology 2022;98:186-196](https://pubmed.ncbi.nlm.nih.gov/35131906/)"
+    },
+    {
+      "recommendation": "Benzodiazepine harm in functional seizures",
+      "evidenceLevel": "Class III",
+      "source": "[Reuber M et al. Epilepsy Behav 2003;4:74-78](https://pubmed.ncbi.nlm.nih.gov/12609231/)"
+    },
+    {
+      "recommendation": "Multidisciplinary inpatient FND rehabilitation outcomes",
+      "evidenceLevel": "Class III",
+      "source": "[Saifee TA et al. J Neurol 2012;259:1934-1940](https://pubmed.ncbi.nlm.nih.gov/22361972/)"
+    },
+    {
+      "recommendation": "Predictors of FND prognosis",
+      "evidenceLevel": "Class II",
+      "source": "[Gelauff J et al. J Neurol Neurosurg Psychiatry 2019;90:615-623](https://pubmed.ncbi.nlm.nih.gov/30683684/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Functional symptom severity (patient self-report scale)",
+      "frequency": "Each visit",
+      "action": "Reassess treatment plan; consider additional modalities; address perpetuating factors",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Event/seizure diary (frequency, duration, triggers)",
+      "frequency": "Daily (patient-reported); reviewed at each visit",
+      "action": "Adjust psychological treatment; review triggers; medication optimization",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "PHQ-9 (depression screening)",
+      "frequency": "Each visit",
+      "action": "Adjust antidepressant; intensify psychology; psychiatric referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "GAD-7 (anxiety screening)",
+      "frequency": "Each visit",
+      "action": "Adjust anxiolytic; psychological treatment; relaxation techniques",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Functional outcome measures (10-meter walk, Berg Balance, SF-36)",
+      "frequency": "Baseline; q4-8 weeks during therapy; at discharge",
+      "action": "Adjust physiotherapy approach; consider intensive rehab",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Treatment engagement",
+      "frequency": "Each visit",
+      "action": "Explore barriers; motivational interviewing; adjust modalities",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ASM taper progress (if applicable)",
+      "frequency": "q2-4 weeks during taper",
+      "action": "If events occur: reassess with EEG; consider dual diagnosis",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Sleep quality (Pittsburgh Sleep Quality Index)",
+      "frequency": "q3 months",
+      "action": "Sleep hygiene review; pharmacologic sleep aids",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Return to work/school/activities",
+      "frequency": "q1-3 months",
+      "action": "Vocational rehab; occupational therapy; graded return plan",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Medication side effects",
+      "frequency": "Each visit",
+      "action": "Dose adjustment; medication switch",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Diagnosis communicated; patient understands FND diagnosis; safety ensured; no acute medical concern; outpatient therapy arranged (PT, psychology); family education completed; resources provided (neurosymptoms.org)"
+    },
+    {
+      "disposition": "**Admit to floor**",
+      "criteria": "Diagnostic uncertainty requiring further evaluation (video-EEG); severe functional disability preventing safe discharge; acute psychiatric comorbidity (suicidality, psychosis); failure to thrive; recurrent ED visits for functional events requiring care coordination"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "Generally NOT indicated for FND; consider only if: iatrogenic complications from inappropriate treatment (benzodiazepine-induced respiratory depression); diagnostic uncertainty with concern for status epilepticus"
+    },
+    {
+      "disposition": "**Transfer to higher level of care**",
+      "criteria": "Video-EEG monitoring not available; FND-specialized rehabilitation program referral; neuropsychiatry not available"
+    },
+    {
+      "disposition": "**Inpatient FND rehabilitation**",
+      "criteria": "Severe functional disability; failed outpatient therapy; good engagement and motivation; multidisciplinary program available"
+    },
+    {
+      "disposition": "**Outpatient follow-up**",
+      "criteria": "ALL patients: neurology follow-up within 2-4 weeks; physiotherapy initiation within 1-2 weeks; psychology referral within 1 month; PCP for comorbidity management"
+    },
+    {
+      "disposition": "**Readmission criteria**",
+      "criteria": "New symptoms DIFFERENT from established FND pattern (evaluate for new neurological disease); acute psychiatric emergency; severe functional deterioration failing outpatient treatment"
+    }
+  ]
+}
