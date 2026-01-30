@@ -1,3 +1,10 @@
+---
+title: "Bacterial Meningitis"
+description: "Clinical decision support for bacterial meningitis diagnosis and management"
+version: "1.0"
+setting: "ED, HOSP, OPD, ICU"
+---
+
 # Bacterial Meningitis
 
 **VERSION:** 1.0
@@ -144,42 +151,42 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent — Empiric Therapy
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) | STAT | STAT | - | STAT | 0.15 mg/kg IV q6h x 4 days (typically 10 mg IV q6h). MUST be given BEFORE or simultaneously with first antibiotic dose. Greatest benefit for S. pneumoniae (reduces mortality and hearing loss). Discontinue if organism is NOT S. pneumoniae (some centers continue regardless) | Not proven beneficial if antibiotics already started >1h prior | Glucose q6h; GI prophylaxis; BP |
-| Vancomycin IV | STAT | STAT | - | STAT | 15-20 mg/kg IV q8-12h (target trough 15-20 µg/mL or AUC/MIC 400-600); loading dose 25-30 mg/kg if severe. Covers penicillin-resistant S. pneumoniae, MRSA | Red man syndrome (infuse over ≥1h); renal impairment (dose adjust) | Trough levels before 4th dose; renal function daily; watch for nephrotoxicity and ototoxicity |
-| Ceftriaxone IV | STAT | STAT | - | STAT | 2 g IV q12h. Covers S. pneumoniae (penicillin-sensitive), N. meningitidis, H. influenzae, gram-negative organisms | Cephalosporin allergy (cross-reactivity low with penicillin allergy); neonatal hyperbilirubinemia | CBC; LFTs; biliary sludge with prolonged use |
-| Ampicillin IV (add if Listeria risk) | STAT | STAT | - | STAT | 2 g IV q4h. ADD to vancomycin + ceftriaxone if: age >50, immunocompromised, alcoholism, pregnancy. Covers Listeria monocytogenes (resistant to cephalosporins) | Penicillin anaphylaxis (use TMP-SMX as alternative for Listeria) | Rash; renal function |
-| Acyclovir IV (empiric — until HSV excluded) | STAT | STAT | - | STAT | 10 mg/kg IV q8h. Add empirically if ANY suspicion of encephalitis (confusion, focal signs, seizures, temporal lobe changes). Discontinue when HSV PCR negative | Renal impairment (dose adjust); ensure adequate hydration | Renal function daily; adequate IV hydration (1 mL/kg/h); crystal nephropathy prevention |
-| IV normal saline | STAT | STAT | - | STAT | Isotonic fluid resuscitation for sepsis; maintenance fluids. Avoid hypo/hypernatremia | Volume overload | I/O; electrolytes q6-12h; watch for SIADH |
-| Vasopressors: Norepinephrine | - | - | - | STAT | 0.1-0.5 µg/kg/min IV; first-line for septic shock after fluid resuscitation | Only via central line | MAP target ≥65 mmHg; continuous arterial monitoring |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) | IV | - | 0.15 mg/kg :: IV :: q6h :: 0.15 mg/kg IV q6h x 4 days (typically 10 mg IV q6h). MUST be given BEFORE or simultaneously with first antibiotic dose. Greatest benefit for S. pneumoniae (reduces mortality and hearing loss). Discontinue if organism is NOT S. pneumoniae (some centers continue regardless) | Not proven beneficial if antibiotics already started >1h prior | Glucose q6h; GI prophylaxis; BP | STAT | STAT | - | STAT |
+| Vancomycin IV | IV | - | 15-20 mg/kg :: IV :: load :: 15-20 mg/kg IV q8-12h (target trough 15-20 µg/mL or AUC/MIC 400-600); loading dose 25-30 mg/kg if severe. Covers penicillin-resistant S. pneumoniae, MRSA | Red man syndrome (infuse over ≥1h); renal impairment (dose adjust) | Trough levels before 4th dose; renal function daily; watch for nephrotoxicity and ototoxicity | STAT | STAT | - | STAT |
+| Ceftriaxone IV | IV | - | 2 g :: IV :: q12h :: 2 g IV q12h. Covers S. pneumoniae (penicillin-sensitive), N. meningitidis, H. influenzae, gram-negative organisms | Cephalosporin allergy (cross-reactivity low with penicillin allergy); neonatal hyperbilirubinemia | CBC; LFTs; biliary sludge with prolonged use | STAT | STAT | - | STAT |
+| Ampicillin IV (add if Listeria risk) | IV | - | 2 g :: IV :: q4h :: 2 g IV q4h. ADD to vancomycin + ceftriaxone if: age >50, immunocompromised, alcoholism, pregnancy. Covers Listeria monocytogenes (resistant to cephalosporins) | Penicillin anaphylaxis (use TMP-SMX as alternative for Listeria) | Rash; renal function | STAT | STAT | - | STAT |
+| Acyclovir IV (empiric — until HSV excluded) | IV | - | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h. Add empirically if ANY suspicion of encephalitis (confusion, focal signs, seizures, temporal lobe changes). Discontinue when HSV PCR negative | Renal impairment (dose adjust); ensure adequate hydration | Renal function daily; adequate IV hydration (1 mL/kg/h); crystal nephropathy prevention | STAT | STAT | - | STAT |
+| IV normal saline | IV | - | Isotonic fluid resuscitation for sepsis; maintenance fluids. Avoid hypo/hypernatremia | Volume overload | I/O; electrolytes q6-12h; watch for SIADH | STAT | STAT | - | STAT |
+| Vasopressors: Norepinephrine | IV | - | 0.1-0.5 µg/kg/min IV; first-line for septic shock after fluid resuscitation | Only via central line | MAP target ≥65 mmHg; continuous arterial monitoring | - | - | - | STAT |
 
 ### 3B. Targeted Therapy by Organism (Once Identified)
 
-| Treatment | Indication | ED | HOSP | OPD | ICU | Dosing | Duration | Monitoring |
-|-----------|------------|:--:|:----:|:---:|:---:|--------|----------|------------|
-| Penicillin G (if penicillin-sensitive S. pneumoniae, MIC <0.06) | S. pneumoniae (sensitive) | - | STAT | - | STAT | 4 million units IV q4h | 10-14 days | Renal function; CBC |
-| Ceftriaxone (if intermediate or unknown sensitivity) | S. pneumoniae (intermediate) | - | STAT | - | STAT | 2 g IV q12h; continue vancomycin until sensitivities confirm | 10-14 days | Same as empiric |
-| Penicillin G or ceftriaxone | N. meningitidis | - | STAT | - | STAT | Penicillin G 4 MU IV q4h OR Ceftriaxone 2g IV q12h | 7 days | Renal function |
-| Ampicillin | L. monocytogenes | - | STAT | - | STAT | 2 g IV q4h (+ gentamicin 5 mg/kg/day IV for synergy in first 7-10 days, if renal function allows) | 21 days (minimum) | Renal function (especially with gentamicin); gentamicin levels |
-| Ceftriaxone | H. influenzae | - | STAT | - | STAT | 2 g IV q12h | 7 days | Standard |
-| Ceftriaxone | E. coli / gram-negative | - | STAT | - | STAT | 2 g IV q12h; adjust per sensitivities | 21 days | Standard |
-| Cefepime | Pseudomonas (nosocomial, immunocompromised) | - | STAT | - | STAT | 2 g IV q8h | 21 days | Renal function; neurotoxicity |
-| Meropenem | Extended-spectrum beta-lactamase (ESBL) producers or multi-drug resistant | - | STAT | - | STAT | 2 g IV q8h | 21 days | Renal function; seizure threshold |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Penicillin G (if penicillin-sensitive S. pneumoniae, MIC <0.06) | IV | S. pneumoniae (sensitive) | 4 million units IV q4h | - | Renal function; CBC | - | STAT | - | STAT |
+| Ceftriaxone (if intermediate or unknown sensitivity) | IV | S. pneumoniae (intermediate) | 2 g :: IV :: q12h :: 2 g IV q12h; continue vancomycin until sensitivities confirm | - | Same as empiric | - | STAT | - | STAT |
+| Penicillin G or ceftriaxone | IV | N. meningitidis | 2g :: IV :: q4h :: Penicillin G 4 MU IV q4h OR Ceftriaxone 2g IV q12h | - | Renal function | - | STAT | - | STAT |
+| Ampicillin | IV | L. monocytogenes | 2 g :: IV :: q4h :: 2 g IV q4h (+ gentamicin 5 mg/kg/day IV for synergy in first 7-10 days, if renal function allows) | - | Renal function (especially with gentamicin); gentamicin levels | - | STAT | - | STAT |
+| Ceftriaxone | IV | H. influenzae | 2 g :: IV :: q12h :: 2 g IV q12h | - | Standard | - | STAT | - | STAT |
+| Ceftriaxone | IV | E. coli / gram-negative | 2 g :: IV :: q12h :: 2 g IV q12h; adjust per sensitivities | - | Standard | - | STAT | - | STAT |
+| Cefepime | IV | Pseudomonas (nosocomial, immunocompromised) | 2 g :: IV :: q8h :: 2 g IV q8h | - | Renal function; neurotoxicity | - | STAT | - | STAT |
+| Meropenem | IV | Extended-spectrum beta-lactamase (ESBL) producers or multi-drug resistant | 2 g :: IV :: q8h :: 2 g IV q8h | - | Renal function; seizure threshold | - | STAT | - | STAT |
 
 ### 3C. Symptomatic Treatments
 
-| Treatment | Indication | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|------------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Levetiracetam | Seizure management (if seizures occur; NOT routine prophylaxis) | STAT | STAT | - | STAT | 1000-1500 mg IV load; then 500-1000 mg IV/PO BID; max 3000 mg/day | Severe renal impairment (dose adjust) | Renal function; mood/behavioral changes |
-| Lorazepam | Active seizure (rescue) | STAT | STAT | - | STAT | 0.1 mg/kg IV (max 4 mg); may repeat x1 | Respiratory depression | RR, SpO2 |
-| Acetaminophen | Fever reduction, headache | STAT | STAT | - | STAT | 650-1000 mg PO/IV q6h; max 4g/day | Severe hepatic disease | Temperature; LFTs |
-| Ibuprofen | Headache (once stable) | - | ROUTINE | - | - | 400-600 mg PO q6h with food | Renal impairment, GI bleed risk, coagulopathy | Renal function; GI symptoms |
-| Ondansetron | Nausea/vomiting | STAT | ROUTINE | - | STAT | 4 mg IV/PO q6h PRN | QT prolongation | QTc |
-| Mannitol 20% | Elevated ICP management | STAT | - | - | STAT | 1-1.5 g/kg IV bolus; then 0.25-0.5 g/kg q4-6h | Anuria | Serum osm (<320); osmolar gap; renal function |
-| Hypertonic saline 23.4% | Elevated ICP (acute herniation) | STAT | - | - | STAT | 30 mL IV via central line over 10-20 min | No central access | Serum Na (target 145-155); osmolality |
-| Pantoprazole | GI prophylaxis (steroids + critical illness) | - | ROUTINE | - | ROUTINE | 40 mg IV/PO daily | Prolonged use risks | GI symptoms |
-| Enoxaparin | DVT prophylaxis | - | ROUTINE | - | ROUTINE | 40 mg SC daily (start 24-48h after stable) | Active bleeding, DIC, coagulopathy | Platelets; coags |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Levetiracetam | IV | Seizure management (if seizures occur; NOT routine prophylaxis) | 1000-1500 mg :: IV :: BID :: 1000-1500 mg IV load; then 500-1000 mg IV/PO BID; max 3000 mg/day | Severe renal impairment (dose adjust) | Renal function; mood/behavioral changes | STAT | STAT | - | STAT |
+| Lorazepam | IV | Active seizure (rescue) | 0.1 mg/kg :: IV :: - :: 0.1 mg/kg IV (max 4 mg); may repeat x1 | Respiratory depression | RR, SpO2 | STAT | STAT | - | STAT |
+| Acetaminophen | IV | Fever reduction, headache | 650-1000 mg :: IV :: q6h :: 650-1000 mg PO/IV q6h; max 4g/day | Severe hepatic disease | Temperature; LFTs | STAT | STAT | - | STAT |
+| Ibuprofen | PO | Headache (once stable) | 400-600 mg :: PO :: q6h :: 400-600 mg PO q6h with food | Renal impairment, GI bleed risk, coagulopathy | Renal function; GI symptoms | - | ROUTINE | - | - |
+| Ondansetron | IV | Nausea/vomiting | 4 mg :: IV :: q6h :: 4 mg IV/PO q6h PRN | QT prolongation | QTc | STAT | ROUTINE | - | STAT |
+| Mannitol 20% | IV | Elevated ICP management | 1-1.5 g/kg :: IV :: once :: 1-1.5 g/kg IV bolus; then 0.25-0.5 g/kg q4-6h | Anuria | Serum osm (<320); osmolar gap; renal function | STAT | - | - | STAT |
+| Hypertonic saline 23.4% | IV | Elevated ICP (acute herniation) | 30 mL :: IV :: - :: 30 mL IV via central line over 10-20 min | No central access | Serum Na (target 145-155); osmolality | STAT | - | - | STAT |
+| Pantoprazole | IV | GI prophylaxis (steroids + critical illness) | 40 mg :: IV :: daily :: 40 mg IV/PO daily | Prolonged use risks | GI symptoms | - | ROUTINE | - | ROUTINE |
+| Enoxaparin | SC | DVT prophylaxis | 40 mg :: SC :: daily :: 40 mg SC daily (start 24-48h after stable) | Active bleeding, DIC, coagulopathy | Platelets; coags | - | ROUTINE | - | ROUTINE |
 
 ### 3D. Close Contacts Prophylaxis (Public Health)
 

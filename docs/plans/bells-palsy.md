@@ -1,3 +1,10 @@
+---
+title: "Bell's Palsy"
+description: "Clinical decision support for bell's palsy / idiopathic facial paralysis diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Bell's Palsy
 
 **VERSION:** 1.0
@@ -116,68 +123,68 @@
 
 ### 3A. Corticosteroids (All Patients)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Prednisone | STAT | STAT | ROUTINE | - | 60-80 mg PO daily × 7 days (can taper over days 8-10 or stop); START WITHIN 72 HOURS of onset | Active infection (relative), uncontrolled DM (relative) | Glucose (especially diabetics), GI prophylaxis |
-| Prednisolone | STAT | STAT | ROUTINE | - | 60-80 mg PO daily × 7 days (equivalent alternative) | Same | Same |
-| Methylprednisolone IV | STAT | STAT | - | - | 1000 mg IV daily × 3-5 days (if unable to take PO or severe/Ramsay Hunt) | Same | Same |
-| Dexamethasone | STAT | STAT | - | - | 10 mg IV/PO daily × 7-10 days (alternative) | Same | Same |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Prednisone | PO | - | 60-80 mg :: PO :: daily :: 60-80 mg PO daily × 7 days (can taper over days 8-10 or stop); START WITHIN 72 HOURS of onset | Active infection (relative), uncontrolled DM (relative) | Glucose (especially diabetics), GI prophylaxis | STAT | STAT | ROUTINE | - |
+| Prednisolone | PO | - | 60-80 mg :: PO :: daily :: 60-80 mg PO daily × 7 days (equivalent alternative) | Same | Same | STAT | STAT | ROUTINE | - |
+| Methylprednisolone IV | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily × 3-5 days (if unable to take PO or severe/Ramsay Hunt) | Same | Same | STAT | STAT | - | - |
+| Dexamethasone | IV | - | 10 mg :: IV :: daily :: 10 mg IV/PO daily × 7-10 days (alternative) | Same | Same | STAT | STAT | - | - |
 
 ### 3B. Antiviral Therapy
 
 **Note:** Antivirals alone have NOT been shown to improve outcomes in Bell's palsy. Use in combination with steroids for moderate-severe cases and always for Ramsay Hunt syndrome.
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Valacyclovir (moderate-severe Bell's) | STAT | STAT | ROUTINE | - | 1000 mg PO TID × 7 days; ALWAYS with steroids | Renal impairment (reduce dose) | Renal function |
-| Acyclovir (alternative) | STAT | STAT | ROUTINE | - | 400 mg PO 5× daily × 7-10 days; or 800 mg PO TID × 7 days | Renal impairment | Renal function |
-| Valacyclovir (Ramsay Hunt) | STAT | STAT | ROUTINE | - | 1000 mg PO TID × 7-10 days; MANDATORY with steroids | Renal impairment | Renal function |
-| Acyclovir IV (severe Ramsay Hunt) | - | STAT | - | - | 10 mg/kg IV q8h × 7-10 days | Renal impairment | Renal function, hydration |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Valacyclovir (moderate-severe Bell's) | PO | - | 1000 mg :: PO :: TID :: 1000 mg PO TID × 7 days; ALWAYS with steroids | Renal impairment (reduce dose) | Renal function | STAT | STAT | ROUTINE | - |
+| Acyclovir (alternative) | PO | - | 400 mg :: PO :: daily :: 400 mg PO 5× daily × 7-10 days; or 800 mg PO TID × 7 days | Renal impairment | Renal function | STAT | STAT | ROUTINE | - |
+| Valacyclovir (Ramsay Hunt) | PO | - | 1000 mg :: PO :: TID :: 1000 mg PO TID × 7-10 days; MANDATORY with steroids | Renal impairment | Renal function | STAT | STAT | ROUTINE | - |
+| Acyclovir IV (severe Ramsay Hunt) | IV | - | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h × 7-10 days | Renal impairment | Renal function, hydration | - | STAT | - | - |
 
 ### 3C. Eye Protection (CRITICAL - All Patients)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Artificial tears (preservative-free) | STAT | STAT | ROUTINE | - | 1-2 drops affected eye q1-2h while awake | None | Corneal status |
-| Lubricating eye ointment (Lacri-Lube) | STAT | STAT | ROUTINE | - | Thin strip in affected eye at bedtime (and up to TID) | None | Corneal status |
-| Eye patch or moisture chamber | STAT | STAT | ROUTINE | - | At night and in dusty/windy environments | None | Corneal status |
-| Tape eyelid closed at night | STAT | STAT | ROUTINE | - | If unable to close eye (use paper tape) | None | Corneal status |
-| Wraparound glasses/sunglasses | - | ROUTINE | ROUTINE | - | During day for eye protection | None | Corneal status |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Artificial tears (preservative-free) | - | - | 1-2 drops affected eye q1-2h while awake | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Lubricating eye ointment (Lacri-Lube) | - | - | Thin strip in affected eye at bedtime (and up to TID) | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Eye patch or moisture chamber | Transdermal | - | At night and in dusty/windy environments | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Tape eyelid closed at night | - | - | If unable to close eye (use paper tape) | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Wraparound glasses/sunglasses | - | - | During day for eye protection | None | Corneal status | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Pain Management
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Acetaminophen | ROUTINE | ROUTINE | ROUTINE | - | 650-1000 mg PO q6h PRN; max 3000 mg/day | Hepatic disease | LFTs if prolonged use |
-| Ibuprofen | ROUTINE | ROUTINE | ROUTINE | - | 400-600 mg PO q6h PRN with food | Renal disease, GI bleeding | Renal function |
-| Gabapentin (post-herpetic neuralgia) | - | ROUTINE | ROUTINE | - | 100-300 mg TID; titrate as needed for Ramsay Hunt | Renal impairment | Sedation |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Acetaminophen | PO | - | 650-1000 mg :: PO :: q6h :: 650-1000 mg PO q6h PRN; max 3000 mg/day | - | Hepatic disease | LFTs if prolonged use | ROUTINE | ROUTINE | ROUTINE | - |
+| Ibuprofen | PO | - | 400-600 mg :: PO :: q6h :: 400-600 mg PO q6h PRN with food | - | Renal disease, GI bleeding | Renal function | ROUTINE | ROUTINE | ROUTINE | - |
+| Gabapentin (post-herpetic neuralgia) | PO | - | 100-300 mg :: PO :: TID :: 100-300 mg TID; titrate as needed for Ramsay Hunt | - | Renal impairment | Sedation | - | ROUTINE | ROUTINE | - |
 
 ### 3E. Lyme Disease Treatment (If Positive)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Doxycycline | - | STAT | ROUTINE | - | 100 mg PO BID × 14-21 days (isolated facial palsy) | Pregnancy, children <8 | GI upset |
-| Ceftriaxone IV | - | STAT | - | - | 2 g IV daily × 14-21 days (if CNS involvement) | Cephalosporin allergy | Standard |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Doxycycline | PO | - | 100 mg :: PO :: BID :: 100 mg PO BID × 14-21 days (isolated facial palsy) | Pregnancy, children <8 | GI upset | - | STAT | ROUTINE | - |
+| Ceftriaxone IV | IV | - | 2 g :: IV :: daily :: 2 g IV daily × 14-21 days (if CNS involvement) | Cephalosporin allergy | Standard | - | STAT | - | - |
 
 ### 3F. Physical Therapy
 
-| Treatment | ED | HOSP | OPD | ICU | Details | Contraindications | Notes |
-|-----------|:--:|:----:|:---:|:---:|---------|-------------------|-------|
-| Facial exercises | - | ROUTINE | ROUTINE | - | Mirror exercises, gentle facial movements | None | Start when recovery begins |
-| Facial massage | - | - | ROUTINE | - | Gentle massage to maintain muscle tone | None | Patient/family can perform |
-| Electrical stimulation | - | - | EXT | - | Controversial; limited evidence | None | Not routinely recommended |
-| Neuromuscular retraining | - | - | ROUTINE | - | Specialized PT for synkinesis prevention | None | If incomplete recovery |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Facial exercises | - | - | Mirror exercises, gentle facial movements | None | Start when recovery begins | - | ROUTINE | ROUTINE | - |
+| Facial massage | - | - | Gentle massage to maintain muscle tone | None | Patient/family can perform | - | - | ROUTINE | - |
+| Electrical stimulation | - | - | Controversial; limited evidence | None | Not routinely recommended | - | - | EXT | - |
+| Neuromuscular retraining | - | - | Specialized PT for synkinesis prevention | None | If incomplete recovery | - | - | ROUTINE | - |
 
 ### 3G. Surgical Options (Refractory Cases)
 
-| Treatment | ED | HOSP | OPD | ICU | Indication | Contraindications | Notes |
-|-----------|:--:|:----:|:---:|:---:|------------|-------------------|-------|
-| Surgical decompression | - | - | EXT | - | >90% degeneration on ENoG within 14 days; controversial | Poor surgical candidate | Rarely performed; controversial benefit |
-| Gold weight/platinum chain eyelid implant | - | - | EXT | - | Persistent lagophthalmos (>6-12 months) | None | Improves eye closure |
-| Tarsorrhaphy | - | ROUTINE | ROUTINE | - | Persistent exposure keratopathy | None | Temporary or permanent |
-| Static facial sling | - | - | EXT | - | Permanent severe palsy | None | Improves cosmesis |
-| Hypoglossal-facial nerve anastomosis | - | - | EXT | - | Complete permanent paralysis | None | Restores tone and some movement |
-| Cross-face nerve graft | - | - | EXT | - | Permanent paralysis, younger patients | None | Extended recovery time |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Surgical decompression | - | >90% degeneration on ENoG within 14 days; controversial | - | Poor surgical candidate | Rarely performed; controversial benefit | - | - | EXT | - |
+| Gold weight/platinum chain eyelid implant | - | Persistent lagophthalmos (>6-12 months) | - | None | Improves eye closure | - | - | EXT | - |
+| Tarsorrhaphy | - | Persistent exposure keratopathy | - | None | Temporary or permanent | - | ROUTINE | ROUTINE | - |
+| Static facial sling | - | Permanent severe palsy | - | None | Improves cosmesis | - | - | EXT | - |
+| Hypoglossal-facial nerve anastomosis | - | Complete permanent paralysis | - | None | Restores tone and some movement | - | - | EXT | - |
+| Cross-face nerve graft | - | Permanent paralysis, younger patients | - | None | Extended recovery time | - | - | EXT | - |
 
 ---
 

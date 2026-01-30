@@ -1,0 +1,1253 @@
+{
+  "id": "parkinsons-disease-new-diagnosis",
+  "title": "Parkinson's Disease - New Diagnosis",
+  "version": "1.0",
+  "icd10": [
+    "** G20 (Parkinson's disease)",
+    "G20.A1 (Parkinson's disease without dyskinesia",
+    "without motor fluctuations)",
+    "G20.A2 (Parkinson's disease without dyskinesia",
+    "with motor fluctuations)",
+    "G20.B1 (Parkinson's disease with dyskinesia",
+    "without motor fluctuations)",
+    "G20.B2 (Parkinson's disease with dyskinesia",
+    "with motor fluctuations)",
+    "G20.C (Parkinsonism",
+    "unspecified)"
+  ],
+  "scope": "** Initial diagnosis and early management of idiopathic Parkinson's disease in adults. Covers diagnostic workup to exclude secondary causes and atypical parkinsonism, initiation of symptomatic therapy, and patient education. Excludes drug-induced parkinsonism, atypical parkinsonian syndromes (PSP, MSA, CBD, DLB), juvenile/young-onset PD, and advanced PD with motor fluctuations.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "General health, rule out anemia",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hepatic/renal function for medication dosing",
+          "target": "Normal"
+        },
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism can cause slowness/tremor",
+          "target": "Normal"
+        },
+        {
+          "item": "Vitamin B12",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency can cause parkinsonism",
+          "target": ">400 pg/mL"
+        },
+        {
+          "item": "RPR/VDRL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis in differential",
+          "target": "Negative"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Serum ceruloplasmin",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Wilson disease if age <50",
+          "target": "20-40 mg/dL"
+        },
+        {
+          "item": "24-hour urine copper",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Wilson disease if ceruloplasmin low/borderline",
+          "target": "<100 mcg/24h"
+        },
+        {
+          "item": "HIV",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated parkinsonism",
+          "target": "Negative"
+        },
+        {
+          "item": "Genetic testing (GBA, LRRK2, PRKN)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Young onset (<50), family history, Ashkenazi Jewish",
+          "target": "Informational"
+        },
+        {
+          "item": "Alpha-synuclein seed amplification assay",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Emerging biomarker for synucleinopathy",
+          "target": "Pending validation"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Serum/urine heavy metals",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Manganese exposure, other toxins",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-neuronal antibodies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune parkinsonism (rare)",
+          "target": "Negative"
+        },
+        {
+          "item": "Skin biopsy for alpha-synuclein",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Emerging biomarker",
+          "target": "Research only"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain without contrast",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At diagnosis",
+          "target": "Rule out structural cause, vascular parkinsonism",
+          "contraindications": "Pacemaker, metal"
+        },
+        {
+          "item": "MRI brain with contrast",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If mass or infection suspected",
+          "target": "Rule out structural lesion",
+          "contraindications": "Contrast allergy, renal disease"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "DaTscan (I-123 ioflupane SPECT)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Diagnostic uncertainty (ET vs PD, drug-induced)",
+          "target": "Reduced striatal uptake in PD",
+          "contraindications": "Pregnancy, iodine allergy"
+        },
+        {
+          "item": "FDG-PET brain",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Distinguish atypical parkinsonism",
+          "target": "Hypometabolism pattern varies by diagnosis",
+          "contraindications": "Per PET"
+        },
+        {
+          "item": "MRI susceptibility-weighted imaging",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Wilson disease, iron deposition",
+          "target": "Rule out basal ganglia abnormalities",
+          "contraindications": "Per MRI"
+        },
+        {
+          "item": "MIBG cardiac scintigraphy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Distinguish PD from MSA",
+          "target": "Reduced uptake in PD",
+          "contraindications": "Drugs affecting uptake"
+        },
+        {
+          "item": "Polysomnography",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If REM sleep behavior disorder suspected",
+          "target": "Confirm RBD",
+          "contraindications": "None"
+        },
+        {
+          "item": "Olfactory testing (UPSIT)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Supportive criterion; impaired in PD",
+          "target": "Hyposmia",
+          "contraindications": "Nasal obstruction"
+        }
+      ]
+    },
+    "Treatment": {
+      "Dopaminergic Therapy - Levodopa": [
+        {
+          "item": "Carbidopa/Levodopa (Sinemet)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Carbidopa/Levodopa (Sinemet) 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25/100 mg TID with meals; titrate by 25/100 mg q1-2 weeks; usual maintenance 300-800 mg levodopa/day",
+            "orderSentence": "Carbidopa/Levodopa (Sinemet) 100 mg PO"
+          },
+          "contraindications": "Narrow-angle glaucoma; caution with MAOIs",
+          "monitoring": "Dyskinesia, nausea, orthostatic hypotension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbidopa/Levodopa CR",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Carbidopa/Levodopa CR 200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25/100 or 50/200 mg BID-TID; ~30% less bioavailable than IR",
+            "orderSentence": "Carbidopa/Levodopa CR 200 mg PO"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same; less predictable absorption",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbidopa/Levodopa ODT (Parcopa)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Same dosing as IR; dissolves on tongue",
+            "orderSentence": "Carbidopa/Levodopa ODT (Parcopa) - - - see dosing"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same; useful for dysphagia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbidopa/Levodopa ER (Rytary)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "95 mg",
+                "orderSentence": "Carbidopa/Levodopa ER (Rytary) 95 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 23.75/95 mg TID; titrate per response",
+            "orderSentence": "Carbidopa/Levodopa ER (Rytary) 95 mg PO"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same; more sustained release",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbidopa/Levodopa intestinal gel (Duopa)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Continuous infusion via PEG-J; specialist prescribing",
+            "orderSentence": "Carbidopa/Levodopa intestinal gel (Duopa) - IV - see dosing"
+          },
+          "contraindications": "Advanced PD; requires surgical placement",
+          "monitoring": "Device complications",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Dopamine Agonists": [
+        {
+          "item": "Pramipexole (Mirapex)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.125 mg",
+                "orderSentence": "Pramipexole (Mirapex) 0.125 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.125 mg TID; titrate weekly to 0.5-1.5 mg TID; max 4.5 mg/day",
+            "orderSentence": "Pramipexole (Mirapex) 0.125 mg PO"
+          },
+          "contraindications": "Impulse control disorders (relative); renal impairment (reduce dose)",
+          "monitoring": "ICDs (gambling, hypersexuality, shopping), sleepiness, hallucinations",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pramipexole ER",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.375 mg",
+                "orderSentence": "Pramipexole ER 0.375 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.375 mg daily; titrate weekly; max 4.5 mg/day",
+            "orderSentence": "Pramipexole ER 0.375 mg PO"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ropinirole (Requip)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg",
+                "orderSentence": "Ropinirole (Requip) 0.25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.25 mg TID; titrate weekly to 3-8 mg TID; max 24 mg/day",
+            "orderSentence": "Ropinirole (Requip) 0.25 mg PO"
+          },
+          "contraindications": "ICDs, hepatic impairment",
+          "monitoring": "Same as pramipexole",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ropinirole XL",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Ropinirole XL 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg daily; titrate weekly; max 24 mg/day",
+            "orderSentence": "Ropinirole XL 2 mg PO"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rotigotine patch (Neupro)",
+          "route": "Transdermal",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Rotigotine patch (Neupro) 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg/24h; increase by 2 mg/week; max 8 mg/24h (early PD)",
+            "orderSentence": "Rotigotine patch (Neupro) 2 mg PO"
+          },
+          "contraindications": "Sulfite allergy, application site reactions",
+          "monitoring": "ICDs, skin reactions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Apomorphine SC (Apokyn)",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.2 mL",
+                "orderSentence": "Apomorphine SC (Apokyn) 0.2 mL PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Rescue for off episodes; start 0.2 mL (2 mg) test dose; max 0.6 mL (6 mg)",
+            "orderSentence": "Apomorphine SC (Apokyn) 0.2 mL PO"
+          },
+          "contraindications": "Severe hypotension, 5-HT3 antagonist use",
+          "monitoring": "BP, nausea (pretreat with trimethobenzamide)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "MAO-B Inhibitors": [
+        {
+          "item": "Rasagiline (Azilect)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-1 mg",
+                "orderSentence": "Rasagiline (Azilect) 0.5-1 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "0.5-1 mg daily; may use as monotherapy early PD or adjunct",
+            "orderSentence": "Rasagiline (Azilect) 0.5-1 mg -"
+          },
+          "contraindications": "MAOIs, meperidine, tramadol, methadone, cyclobenzaprine",
+          "monitoring": "Serotonin syndrome; insomnia if taken late",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Selegiline (Eldepryl)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Selegiline (Eldepryl) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mg BID (breakfast and lunch); avoid evening dosing",
+            "orderSentence": "Selegiline (Eldepryl) 5 mg PO"
+          },
+          "contraindications": "Same as rasagiline",
+          "monitoring": "Insomnia, orthostatic hypotension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Selegiline ODT (Zelapar)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1.25-2.5 mg",
+                "orderSentence": "Selegiline ODT (Zelapar) 1.25-2.5 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "1.25-2.5 mg daily (buccal absorption)",
+            "orderSentence": "Selegiline ODT (Zelapar) 1.25-2.5 mg -"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Safinamide (Xadago)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50-100 mg",
+                "orderSentence": "Safinamide (Xadago) 50-100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50-100 mg daily; adjunct to levodopa",
+            "orderSentence": "Safinamide (Xadago) 50-100 mg PO"
+          },
+          "contraindications": "Same; severe hepatic impairment, retinal disease",
+          "monitoring": "Dyskinesia, falls",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "COMT Inhibitors (Adjunct to Levodopa)": [
+        {
+          "item": "Entacapone (Comtan)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Entacapone (Comtan) 200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "200 mg with each levodopa dose; max 8 doses/day",
+            "orderSentence": "Entacapone (Comtan) 200 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "None absolute",
+          "monitoring": "Orange urine, diarrhea, dyskinesia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbidopa/Levodopa/Entacapone (Stalevo)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Various strengths; replace existing C/L with equivalent",
+            "orderSentence": "Carbidopa/Levodopa/Entacapone (Stalevo) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "Same",
+          "monitoring": "Same",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Opicapone (Ongentys)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Opicapone (Ongentys) 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg daily at bedtime; separate from levodopa by 1 hour",
+            "orderSentence": "Opicapone (Ongentys) 50 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "None absolute",
+          "monitoring": "Dyskinesia, constipation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tolcapone (Tasmar)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100-200 mg",
+                "orderSentence": "Tolcapone (Tasmar) 100-200 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "100-200 mg TID; rarely used due to hepatotoxicity",
+            "orderSentence": "Tolcapone (Tasmar) 100-200 mg -"
+          },
+          "pretreatment": "-",
+          "contraindications": "Hepatic disease",
+          "monitoring": "LFTs q2-4 weeks x6mo, then periodically",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Anticholinergics (Tremor-predominant, Younger Patients)": [
+        {
+          "item": "Trihexyphenidyl (Artane)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Trihexyphenidyl (Artane) 1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg daily; titrate to 2 mg TID; max 15 mg/day",
+            "orderSentence": "Trihexyphenidyl (Artane) 1 mg PO"
+          },
+          "contraindications": "Glaucoma, urinary retention, cognitive impairment, age >65",
+          "monitoring": "Confusion, urinary retention, dry mouth",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Benztropine (Cogentin)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Benztropine (Cogentin) 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.5 mg daily; titrate to 1-2 mg BID; max 6 mg/day",
+            "orderSentence": "Benztropine (Cogentin) 0.5 mg PO"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Amantadine": [
+        {
+          "item": "Amantadine IR",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Amantadine IR 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg BID-TID; avoid evening dosing",
+            "orderSentence": "Amantadine IR 100 mg PO"
+          },
+          "contraindications": "Renal impairment (reduce dose), seizures",
+          "monitoring": "Livedo reticularis, edema, hallucinations, insomnia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amantadine ER (Gocovri)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "137-274 mg",
+                "orderSentence": "Amantadine ER (Gocovri) 137-274 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "137-274 mg at bedtime; for dyskinesia",
+            "orderSentence": "Amantadine ER (Gocovri) 137-274 mg PO"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Non-Motor Symptom Treatment": [
+        {
+          "item": "Rivastigmine (cognitive)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4.6-13.3 mg",
+                "orderSentence": "Rivastigmine (cognitive) 4.6-13.3 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Patch 4.6-13.3 mg/24h; for PD dementia",
+            "orderSentence": "Rivastigmine (cognitive) 4.6-13.3 mg PO"
+          },
+          "contraindications": "GI bleeding, bradycardia",
+          "monitoring": "Nausea, bradycardia",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quetiapine (psychosis)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5-100 mg",
+                "orderSentence": "Quetiapine (psychosis) 12.5-100 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "12.5-100 mg QHS; does not worsen parkinsonism",
+            "orderSentence": "Quetiapine (psychosis) 12.5-100 mg -"
+          },
+          "contraindications": "Metabolic syndrome",
+          "monitoring": "Sedation, glucose, QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pimavanserin (Nuplazid)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "34 mg",
+                "orderSentence": "Pimavanserin (Nuplazid) 34 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "34 mg daily; for PD psychosis",
+            "orderSentence": "Pimavanserin (Nuplazid) 34 mg PO"
+          },
+          "contraindications": "QTc prolongation",
+          "monitoring": "QTc monitoring",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Droxidopa (orthostatic hypotension)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Droxidopa (orthostatic hypotension) 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg TID; max 600 mg TID",
+            "orderSentence": "Droxidopa (orthostatic hypotension) 100 mg PO"
+          },
+          "contraindications": "Supine HTN",
+          "monitoring": "BP supine and standing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fludrocortisone (orthostatic hypotension)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.2 mg",
+                "orderSentence": "Fludrocortisone (orthostatic hypotension) 0.1-0.2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.1-0.2 mg daily",
+            "orderSentence": "Fludrocortisone (orthostatic hypotension) 0.1-0.2 mg PO"
+          },
+          "contraindications": "Heart failure, HTN",
+          "monitoring": "K+, edema, supine BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Polyethylene glycol (constipation)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "17 g",
+                "orderSentence": "Polyethylene glycol (constipation) 17 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "17 g daily in water",
+            "orderSentence": "Polyethylene glycol (constipation) 17 g PO"
+          },
+          "contraindications": "Bowel obstruction",
+          "monitoring": "Bowel movements",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Movement disorder specialist",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "All new PD diagnoses for confirmation and management"
+        },
+        {
+          "item": "Physical therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Gait training, balance, LSVT-BIG program"
+        },
+        {
+          "item": "Occupational therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "ADL assistance, home safety evaluation"
+        },
+        {
+          "item": "Speech therapy (LSVT-LOUD)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Hypophonia, dysarthria, dysphagia assessment"
+        },
+        {
+          "item": "Neuropsychology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Cognitive concerns, baseline assessment"
+        },
+        {
+          "item": "Psychiatry",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Depression, anxiety, impulse control disorders"
+        },
+        {
+          "item": "Social work",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Resources, support groups, caregiver support"
+        },
+        {
+          "item": "Nutrition/Dietitian",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Weight management, protein timing with levodopa"
+        },
+        {
+          "item": "Sleep medicine",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "REM sleep behavior disorder, excessive daytime sleepiness"
+        },
+        {
+          "item": "Urology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Urinary symptoms, erectile dysfunction"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "PD is a chronic condition managed with medications; not curable but treatable",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take levodopa 30-60 minutes before meals for best absorption; protein can reduce effect",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report impulse control changes (gambling, shopping, hypersexuality) immediately",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT stop PD medications abruptly - risk of severe withdrawal/NMS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Fall prevention: remove rugs, improve lighting, use assistive devices as needed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Exercise is essential: walking, tai chi, boxing, cycling all beneficial",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Join support group (Parkinson's Foundation, Michael J. Fox Foundation)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Advance directives discussion early in disease course",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular aerobic exercise (30+ min, 5 days/week) - may slow progression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain social activities and cognitive engagement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Fall prevention strategies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid medications that worsen parkinsonism (metoclopramide, typical antipsychotics, prochlorperazine)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Mediterranean diet associated with better outcomes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Optimize sleep hygiene",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Caffeine may have protective effect (moderate consumption)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Essential tremor",
+      "features": "Action/postural tremor (not rest), bilateral, head tremor, family history, alcohol-responsive",
+      "tests": "Clinical; DaTscan normal in ET"
+    },
+    {
+      "diagnosis": "Drug-induced parkinsonism",
+      "features": "Medication history (antipsychotics, metoclopramide), symmetric, may resolve with drug withdrawal",
+      "tests": "Medication review; DaTscan often normal"
+    },
+    {
+      "diagnosis": "Vascular parkinsonism",
+      "features": "Lower-body predominant, gait disorder, stepwise progression, vascular risk factors, MRI white matter changes",
+      "tests": "MRI brain; poor levodopa response"
+    },
+    {
+      "diagnosis": "Progressive supranuclear palsy (PSP)",
+      "features": "Early falls (backward), vertical gaze palsy, axial rigidity > limb, poor levodopa response",
+      "tests": "MRI (hummingbird sign), clinical"
+    },
+    {
+      "diagnosis": "Multiple system atrophy (MSA)",
+      "features": "Early autonomic failure, cerebellar signs (MSA-C), poor levodopa response",
+      "tests": "MRI (hot cross bun sign), MIBG preserved in MSA"
+    },
+    {
+      "diagnosis": "Corticobasal degeneration (CBD)",
+      "features": "Asymmetric apraxia, alien limb, cortical sensory loss, dystonia",
+      "tests": "MRI (asymmetric cortical atrophy), clinical"
+    },
+    {
+      "diagnosis": "Dementia with Lewy bodies (DLB)",
+      "features": "Dementia before or within 1 year of parkinsonism, visual hallucinations, fluctuations",
+      "tests": "Clinical criteria; DaTscan abnormal"
+    },
+    {
+      "diagnosis": "Normal pressure hydrocephalus (NPH)",
+      "features": "Gait apraxia (magnetic gait), urinary incontinence, dementia; triad",
+      "tests": "MRI (ventriculomegaly), LP with large volume tap"
+    },
+    {
+      "diagnosis": "Wilson disease",
+      "features": "Age <50, KF rings, hepatic/psychiatric symptoms, tremor may be wing-beating",
+      "tests": "Ceruloplasmin, 24h urine copper, slit lamp exam"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "MDS Clinical Diagnostic Criteria for PD",
+      "evidenceLevel": "Class I",
+      "source": "Postuma et al., Mov Disord 2015"
+    },
+    {
+      "recommendation": "Levodopa most effective symptomatic therapy",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Cochrane Reviews"
+    },
+    {
+      "recommendation": "Dopamine agonists monotherapy early PD",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple RCTs"
+    },
+    {
+      "recommendation": "MAO-B inhibitors mild symptomatic benefit",
+      "evidenceLevel": "Class I, Level A",
+      "source": "ADAGIO, TEMPO trials"
+    },
+    {
+      "recommendation": "DaTscan useful for uncertain parkinsonism",
+      "evidenceLevel": "Class II, Level B",
+      "source": "FDA approved 2011"
+    },
+    {
+      "recommendation": "Exercise may slow disease progression",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Observational data, RCTs ongoing"
+    },
+    {
+      "recommendation": "LSVT-LOUD effective for speech",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple RCTs"
+    },
+    {
+      "recommendation": "LSVT-BIG effective for movement",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple RCTs"
+    },
+    {
+      "recommendation": "Pimavanserin for PD psychosis",
+      "evidenceLevel": "Class I, Level A",
+      "source": "FDA approved 2016"
+    },
+    {
+      "recommendation": "Rivastigmine for PD dementia",
+      "evidenceLevel": "Class I, Level A",
+      "source": "EXPRESS study"
+    },
+    {
+      "recommendation": "Avoid anticholinergics in elderly",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Cognitive impairment risk"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "UPDRS/MDS-UPDRS",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "action": "Adjust medications"
+    },
+    {
+      "item": "Orthostatic vitals",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "action": "Midodrine, droxidopa, compression stockings"
+    },
+    {
+      "item": "Impulse control screening",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "action": "Reduce/discontinue dopamine agonist"
+    },
+    {
+      "item": "Cognitive screening (MoCA)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Annually or if concerns",
+      "action": "Rivastigmine if dementia"
+    },
+    {
+      "item": "Depression screening (BDI, PHQ-9)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q6 months",
+      "action": "Treat depression"
+    },
+    {
+      "item": "Falls assessment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "action": "PT, home safety, assistive devices"
+    },
+    {
+      "item": "Dysphagia screening",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Annually or if concerns",
+      "action": "Speech therapy, modified diet"
+    },
+    {
+      "item": "Weight",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "action": "Nutrition consult"
+    },
+    {
+      "item": "Blood pressure (supine and standing)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "action": "Address as above"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Most new PD diagnoses; able to perform ADLs, stable home environment"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "Acute deterioration (infection causing worsening), severe \"off\" episodes, inability to take PO medications, falls with injury, psychosis"
+    },
+    {
+      "disposition": "Discharge from hospital",
+      "criteria": "Medications optimized, safe swallow, ambulatory (with assistance if needed), caregiver support"
+    },
+    {
+      "disposition": "Movement disorder specialist referral",
+      "criteria": "All new diagnoses (confirmation), young onset, atypical features, diagnostic uncertainty, motor fluctuations, dyskinesia, DBS candidacy"
+    }
+  ]
+}

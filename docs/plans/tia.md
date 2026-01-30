@@ -16,6 +16,7 @@ tags:
 
 **DIAGNOSIS:** Transient Ischemic Attack
 **ICD-10:** G45.9 (Transient cerebral ischemic attack, unspecified)
+**SYNONYMS:** Transient ischemic attack, TIA, mini-stroke, transient cerebral ischemia, cerebral TIA, transient neurological deficit, warning stroke, pre-stroke
 **SCOPE:** Urgent evaluation, risk stratification (ABCD2), and secondary stroke prevention. Excludes completed stroke (see Acute Ischemic Stroke protocol).
 
 **STATUS:** Approved

@@ -1,3 +1,10 @@
+---
+title: "Subarachnoid Hemorrhage"
+description: "Clinical decision support for subarachnoid hemorrhage (sah) diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Subarachnoid Hemorrhage
 
 **VERSION:** 1.0
@@ -130,50 +137,50 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Blood pressure control: Nicardipine IV | STAT | STAT | - | STAT | 5 mg/h IV; titrate by 2.5 mg/h q5-15min; max 15 mg/h. Target SBP <160 mmHg UNTIL aneurysm is secured (re-bleed risk highest in first 24h with uncontrolled HTN); after securing: target SBP <180 (or higher if vasospasm) | Severe aortic stenosis | Continuous arterial BP; neuro checks q1h |
-| Blood pressure control: Labetalol IV | STAT | STAT | - | STAT | 10-20 mg IV q10-20min; max 300 mg. Alternative to nicardipine | Heart block; severe bradycardia; asthma | HR; BP continuous |
-| Blood pressure control: Clevidipine IV | STAT | STAT | - | STAT | 1-2 mg/h IV; max 32 mg/h | Soy/egg allergy | BP continuous |
-| Nimodipine (CORNERSTONE of vasospasm prevention) | - | STAT | - | STAT | 60 mg PO/NG q4h x 21 days. START within 96h of SAH onset. If hypotension: 30 mg q2h. This is an ORAL calcium channel blocker — do NOT give IV (severe hypotension). Proven to reduce poor outcomes from vasospasm | Hypotension (SBP <90 — reduce dose); do NOT crush extended-release formulations; use oral syringe if NG | BP with each dose; do NOT give IV; ensure enteral route only |
-| External ventricular drain (EVD) | STAT | STAT | - | STAT | For acute hydrocephalus (GCS declining; CT showing ventriculomegaly); allows ICP monitoring and CSF drainage. Set drain height per neurosurgery (typically 15-20 cm above tragus) | Coagulopathy (correct first) | ICP continuous; CSF output q1h; drain position; infection surveillance (CSF culture q3 days per some protocols) |
-| Seizure prophylaxis (short-term) | STAT | STAT | - | STAT | Levetiracetam 1000 mg IV/PO load, then 500-1000 mg BID. AHA 2012: short-term (3-7 days) prophylaxis is reasonable. Avoid phenytoin (associated with worse cognitive outcomes in SAH — Naidech et al.) | Renal impairment (dose adjust) | Seizure monitoring |
-| Intubation / Airway protection | STAT | STAT | - | STAT | GCS ≤8; inability to protect airway; respiratory failure; impending herniation | N/A | Avoid hypotension during RSI; maintain SBP goal |
-| Aminocaproic acid (antifibrinolytic) | STAT | STAT | - | STAT | 4g IV load then 1g/h IV infusion. ONLY use for short-term (<72h) if aneurysm securing will be delayed. Reduces re-bleeding risk but increases thrombotic risk. Discontinue once aneurysm is secured | Active DIC; DVT/PE; renal impairment | Coagulation; thrombotic events; discontinue when aneurysm treated |
-| IV isotonic fluids (euvolemia) | STAT | STAT | - | STAT | NS at 1-1.5 mL/kg/h (80-125 mL/h); goal euvolemia. Avoid hypovolemia (worsens vasospasm) and avoid aggressive hypervolemia (no proven benefit; risk of pulmonary edema). Target CVP 5-8 or clinical euvolemia | Volume overload; CHF | I/O; daily weights; CVP if central line; serum Na q6-8h |
-| Stress ulcer prophylaxis: Pantoprazole | - | ROUTINE | - | ROUTINE | 40 mg IV/PO daily | C. diff risk | GI symptoms |
-| DVT prophylaxis: Pneumatic compression devices | STAT | STAT | - | STAT | Apply bilaterally on admission; SAH patients are HIGH VTE risk | Acute DVT | Skin checks |
-| DVT prophylaxis: Heparin SC (after aneurysm secured) | - | ROUTINE | - | ROUTINE | 5000 units SC q8h; start 24h after aneurysm is secured (clipping or coiling); some centers start earlier | Active bleeding; within 24h of craniotomy (per surgeon) | Platelets q3 days |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Blood pressure control: Nicardipine IV | IV | - | 5 mg/h :: IV :: - :: 5 mg/h IV; titrate by 2.5 mg/h q5-15min; max 15 mg/h. Target SBP <160 mmHg UNTIL aneurysm is secured (re-bleed risk highest in first 24h with uncontrolled HTN); after securing: target SBP <180 (or higher if vasospasm) | Severe aortic stenosis | Continuous arterial BP; neuro checks q1h | STAT | STAT | - | STAT |
+| Blood pressure control: Labetalol IV | IV | - | 10-20 mg :: IV :: - :: 10-20 mg IV q10-20min; max 300 mg. Alternative to nicardipine | Heart block; severe bradycardia; asthma | HR; BP continuous | STAT | STAT | - | STAT |
+| Blood pressure control: Clevidipine IV | IV | - | 1-2 mg/h :: IV :: - :: 1-2 mg/h IV; max 32 mg/h | Soy/egg allergy | BP continuous | STAT | STAT | - | STAT |
+| Nimodipine (CORNERSTONE of vasospasm prevention) | IV | - | 60 mg :: IV :: q4h :: 60 mg PO/NG q4h x 21 days. START within 96h of SAH onset. If hypotension: 30 mg q2h. This is an ORAL calcium channel blocker — do NOT give IV (severe hypotension). Proven to reduce poor outcomes from vasospasm | Hypotension (SBP <90 — reduce dose); do NOT crush extended-release formulations; use oral syringe if NG | BP with each dose; do NOT give IV; ensure enteral route only | - | STAT | - | STAT |
+| External ventricular drain (EVD) | - | - | For acute hydrocephalus (GCS declining; CT showing ventriculomegaly); allows ICP monitoring and CSF drainage. Set drain height per neurosurgery (typically 15-20 cm above tragus) | Coagulopathy (correct first) | ICP continuous; CSF output q1h; drain position; infection surveillance (CSF culture q3 days per some protocols) | STAT | STAT | - | STAT |
+| Seizure prophylaxis (short-term) | IV | - | 1000 mg :: IV :: BID :: Levetiracetam 1000 mg IV/PO load, then 500-1000 mg BID. AHA 2012: short-term (3-7 days) prophylaxis is reasonable. Avoid phenytoin (associated with worse cognitive outcomes in SAH — Naidech et al.) | Renal impairment (dose adjust) | Seizure monitoring | STAT | STAT | - | STAT |
+| Intubation / Airway protection | - | - | GCS ≤8; inability to protect airway; respiratory failure; impending herniation | N/A | Avoid hypotension during RSI; maintain SBP goal | STAT | STAT | - | STAT |
+| Aminocaproic acid (antifibrinolytic) | IV | - | 4g :: IV :: once :: 4g IV load then 1g/h IV infusion. ONLY use for short-term (<72h) if aneurysm securing will be delayed. Reduces re-bleeding risk but increases thrombotic risk. Discontinue once aneurysm is secured | Active DIC; DVT/PE; renal impairment | Coagulation; thrombotic events; discontinue when aneurysm treated | STAT | STAT | - | STAT |
+| IV isotonic fluids (euvolemia) | IV | - | 1-1.5 mL/kg :: - :: - :: NS at 1-1.5 mL/kg/h (80-125 mL/h); goal euvolemia. Avoid hypovolemia (worsens vasospasm) and avoid aggressive hypervolemia (no proven benefit; risk of pulmonary edema). Target CVP 5-8 or clinical euvolemia | Volume overload; CHF | I/O; daily weights; CVP if central line; serum Na q6-8h | STAT | STAT | - | STAT |
+| Stress ulcer prophylaxis: Pantoprazole | IV | - | 40 mg :: IV :: daily :: 40 mg IV/PO daily | C. diff risk | GI symptoms | - | ROUTINE | - | ROUTINE |
+| DVT prophylaxis: Pneumatic compression devices | - | - | Apply bilaterally on admission; SAH patients are HIGH VTE risk | Acute DVT | Skin checks | STAT | STAT | - | STAT |
+| DVT prophylaxis: Heparin SC (after aneurysm secured) | SC | - | 5000 units :: SC :: q8h :: 5000 units SC q8h; start 24h after aneurysm is secured (clipping or coiling); some centers start earlier | Active bleeding; within 24h of craniotomy (per surgeon) | Platelets q3 days | - | ROUTINE | - | ROUTINE |
 
 ### 3B. Aneurysm Securing (Definitive Treatment)
 
-| Treatment | Timing | Details | Indications | Contraindications |
-|-----------|--------|---------|-------------|-------------------|
-| Endovascular coiling | Within 24h of diagnosis (ideally <12h) | Interventional neuroradiology; catheter-based platinum coil deployment into aneurysm sac. Preferred per ISAT trial for posterior circulation and many anterior circulation aneurysms | Most aneurysms; wide-necked aneurysms may need stent-assisted coiling or flow diverter | Difficult vascular access; very wide neck without stent option |
-| Surgical clipping (craniotomy) | Within 24h of diagnosis (ideally <12h) | Neurosurgical; microsurgical clip placement across aneurysm neck | MCA aneurysms (preferred); large intracerebral hematoma requiring evacuation; failed coiling; aneurysm anatomy not amenable to coiling | Poor grade with brain swelling (relative — may clip if accessible); medically unstable |
-| Flow diverter (Pipeline, FRED) | Planned | For large/giant or wide-necked aneurysms not amenable to standard coiling | Complex aneurysm morphology | Requires dual antiplatelet therapy (may not be ideal in acute SAH) |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Endovascular coiling | - | - | Interventional neuroradiology; catheter-based platinum coil deployment into aneurysm sac. Preferred per ISAT trial for posterior circulation and many anterior circulation aneurysms | Difficult vascular access; very wide neck without stent option | - | - | - | - | - |
+| Surgical clipping (craniotomy) | - | - | Neurosurgical; microsurgical clip placement across aneurysm neck | Poor grade with brain swelling (relative — may clip if accessible); medically unstable | - | - | - | - | - |
+| Flow diverter (Pipeline, FRED) | - | - | For large/giant or wide-necked aneurysms not amenable to standard coiling | Requires dual antiplatelet therapy (may not be ideal in acute SAH) | - | - | - | - | - |
 
 ### 3C. Vasospasm Treatment (Post-Bleed Days 4-14)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Nimodipine (continued) | - | STAT | - | STAT | Continue 60 mg PO q4h x 21 days total | Hypotension | BP with each dose |
-| Induced hypertension | - | - | - | STAT | If clinical vasospasm (new deficit days 4-14, aneurysm MUST be secured first): raise SBP to 180-220 mmHg using vasopressors. Phenylephrine 0.5-5 µg/kg/min or norepinephrine 0.05-0.3 µg/kg/min IV | Unsecured aneurysm (NEVER induce hypertension before securing); cardiac failure; pulmonary edema | Arterial line; neuro checks q1h; TCD; CT perfusion |
-| IV fluid bolus (euvolemia maintenance) | - | - | - | STAT | NS bolus 500-1000 mL if hypovolemic; maintain euvolemia. Avoid prophylactic hypervolemia (no benefit per current evidence — Robertson et al.) | Volume overload | CVP; I/O; daily weights |
-| Milrinone IV (alternative vasospasm treatment) | - | - | - | STAT | 0.25-0.75 µg/kg/min IV continuous; some centers use as rescue for vasospasm not responding to induced hypertension; acts as cerebral vasodilator | Severe hypotension; arrhythmia | BP (may cause hypotension); HR; cardiac output |
-| Intra-arterial vasodilator therapy (endovascular rescue) | - | - | - | STAT | Verapamil 5-10 mg intra-arterial or nicardipine 5-10 mg intra-arterial; via catheter into spastic vessel during angiography. For medically refractory vasospasm | Hemodynamic instability during procedure | Angiographic improvement; clinical response; BP |
-| Angioplasty (balloon) | - | - | - | STAT | Mechanical dilation of spastic proximal vessels during angiography. For focal proximal vasospasm refractory to medical treatment | Vessel rupture risk; distal vasospasm (not amenable to balloon) | Angiographic result; clinical response |
-| Magnesium sulfate (supplemental) | - | ROUTINE | - | ROUTINE | Target serum Mg >2.0 mg/dL; replete with MgSO4 2-4 g IV over 1-2h PRN. MASH-2 trial: IV magnesium infusion did NOT improve outcomes, but maintaining normal-high Mg is standard | Renal failure; hypermagnesemia | Serum Mg q12-24h; deep tendon reflexes |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Nimodipine (continued) | PO | - | 60 mg :: PO :: q4h :: Continue 60 mg PO q4h x 21 days total | Hypotension | BP with each dose | - | STAT | - | STAT |
+| Induced hypertension | IV | - | If clinical vasospasm (new deficit days 4-14, aneurysm MUST be secured first): raise SBP to 180-220 mmHg using vasopressors. Phenylephrine 0.5-5 µg/kg/min or norepinephrine 0.05-0.3 µg/kg/min IV | Unsecured aneurysm (NEVER induce hypertension before securing); cardiac failure; pulmonary edema | Arterial line; neuro checks q1h; TCD; CT perfusion | - | - | - | STAT |
+| IV fluid bolus (euvolemia maintenance) | IV | - | 500-1000 mL :: - :: once :: NS bolus 500-1000 mL if hypovolemic; maintain euvolemia. Avoid prophylactic hypervolemia (no benefit per current evidence — Robertson et al.) | Volume overload | CVP; I/O; daily weights | - | - | - | STAT |
+| Milrinone IV (alternative vasospasm treatment) | IV | - | 0.25-0.75 µg/kg/min IV continuous; some centers use as rescue for vasospasm not responding to induced hypertension; acts as cerebral vasodilator | Severe hypotension; arrhythmia | BP (may cause hypotension); HR; cardiac output | - | - | - | STAT |
+| Intra-arterial vasodilator therapy (endovascular rescue) | PO | - | 5-10 mg :: PO :: - :: Verapamil 5-10 mg intra-arterial or nicardipine 5-10 mg intra-arterial; via catheter into spastic vessel during angiography. For medically refractory vasospasm | Hemodynamic instability during procedure | Angiographic improvement; clinical response; BP | - | - | - | STAT |
+| Angioplasty (balloon) | - | - | Mechanical dilation of spastic proximal vessels during angiography. For focal proximal vasospasm refractory to medical treatment | Vessel rupture risk; distal vasospasm (not amenable to balloon) | Angiographic result; clinical response | - | - | - | STAT |
+| Magnesium sulfate (supplemental) | IV | - | 2.0 mg :: IV :: PRN :: Target serum Mg >2.0 mg/dL; replete with MgSO4 2-4 g IV over 1-2h PRN. MASH-2 trial: IV magnesium infusion did NOT improve outcomes, but maintaining normal-high Mg is standard | Renal failure; hypermagnesemia | Serum Mg q12-24h; deep tendon reflexes | - | ROUTINE | - | ROUTINE |
 
 ### 3D. Complications Management
 
-| Treatment | Indication | Dosing | Monitoring |
-|-----------|------------|--------|------------|
-| Hyponatremia management: Differentiate CSW vs SIADH | Na <135: CSW = volume depleted (treat with NS/hypertonic saline + fludrocortisone). SIADH = euvolemic (treat with fluid restriction ± hypertonic saline) | CSW: NS or 3% saline; fludrocortisone 0.1-0.2 mg PO BID. SIADH: fluid restriction 1-1.2 L/day; 3% saline if <120 | Na q6h during correction; avoid >8-10 mEq/L rise in 24h (central pontine myelinolysis risk) |
-| Fludrocortisone | Cerebral salt wasting (volume depletion + hyponatremia) | 0.1-0.2 mg PO BID | Na; K+ (hypokalemia); volume status; BP |
-| Hydrocortisone | Refractory hyponatremia; cerebral salt wasting; adrenal insufficiency | 50-100 mg IV q8h | Na; glucose; cortisol |
-| Ventriculoperitoneal shunt (VPS) | Chronic hydrocephalus (EVD-dependent; unable to wean) | Neurosurgical procedure | Shunt function; neurologic status |
-| Lumbar drain | CSF diversion after EVD if transitioning; mild chronic hydrocephalus | Neurosurgical placement | CSF output; ICP; position |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Hyponatremia management: Differentiate CSW vs SIADH | PO | Na <135: CSW = volume depleted (treat with NS/hypertonic saline + fludrocortisone). SIADH = euvolemic (treat with fluid restriction ± hypertonic saline) | 0.1-0.2 mg :: PO :: BID :: CSW: NS or 3% saline; fludrocortisone 0.1-0.2 mg PO BID. SIADH: fluid restriction 1-1.2 L/day; 3% saline if <120 | - | - | Na q6h during correction; avoid >8-10 mEq/L rise in 24h (central pontine myelinolysis risk) | - | - | - | - |
+| Fludrocortisone | PO | Cerebral salt wasting (volume depletion + hyponatremia) | 0.1-0.2 mg :: PO :: BID :: 0.1-0.2 mg PO BID | - | - | Na; K+ (hypokalemia); volume status; BP | - | - | - | - |
+| Hydrocortisone | IV | Refractory hyponatremia; cerebral salt wasting; adrenal insufficiency | 50-100 mg :: IV :: q8h :: 50-100 mg IV q8h | - | - | Na; glucose; cortisol | - | - | - | - |
+| Ventriculoperitoneal shunt (VPS) | - | Chronic hydrocephalus (EVD-dependent; unable to wean) | Neurosurgical procedure | - | - | Shunt function; neurologic status | - | - | - | - |
+| Lumbar drain | - | CSF diversion after EVD if transitioning; mild chronic hydrocephalus | Neurosurgical placement | - | - | CSF output; ICP; position | - | - | - | - |
 
 ---
 

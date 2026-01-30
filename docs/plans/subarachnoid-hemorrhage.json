@@ -1,0 +1,1492 @@
+{
+  "id": "subarachnoid-hemorrhage",
+  "title": "Subarachnoid Hemorrhage (SAH)",
+  "version": "1.0",
+  "icd10": [
+    "** I60.9 (Nontraumatic subarachnoid hemorrhage",
+    "unspecified)",
+    "I60.7 (SAH from unspecified intracranial artery)",
+    "I60.0-I60.6 (SAH from specific arteries)"
+  ],
+  "scope": "** Spontaneous (non-traumatic) aneurysmal subarachnoid hemorrhage in adults. Covers thunderclap headache evaluation, CT/LP diagnosis, aneurysm identification and securing, vasospasm prevention and treatment (nimodipine, triple-H therapy), hydrocephalus management, and complications. Excludes traumatic SAH, perimesencephalic (non-aneurysmal) SAH management, and intracerebral hemorrhage (separate template).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Baseline; thrombocytopenia; leukocytosis (stress response); pre-surgical",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP (BMP + LFTs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Electrolytes (hyponatremia from cerebral salt wasting or SIADH is common); renal/hepatic function",
+          "target": "Normal; watch Na closely"
+        },
+        {
+          "item": "PT/INR, aPTT",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy assessment; pre-procedure; anticoagulant use",
+          "target": "Normal"
+        },
+        {
+          "item": "Fibrinogen",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy; DIC screen",
+          "target": ">150 mg/dL"
+        },
+        {
+          "item": "Type and crossmatch",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Surgical intervention likely; potential blood loss",
+          "target": "On file; crossmatch 2-4 units"
+        },
+        {
+          "item": "Troponin",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Neurogenic stunned myocardium occurs in 20-30% of SAH; stress cardiomyopathy",
+          "target": "Often elevated (neurogenic — not ACS)"
+        },
+        {
+          "item": "BNP or NT-proBNP",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Neurogenic cardiac dysfunction; volume status assessment",
+          "target": "Elevated (neurogenic)"
+        },
+        {
+          "item": "Blood glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hyperglycemia worsens outcomes; stress response",
+          "target": "140-180 mg/dL target"
+        },
+        {
+          "item": "Magnesium",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hypomagnesemia increases vasospasm risk; maintain high-normal",
+          "target": ">2.0 mg/dL (replete aggressively)"
+        },
+        {
+          "item": "Calcium (ionized)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Electrolyte management; nimodipine monitoring",
+          "target": "Normal"
+        },
+        {
+          "item": "Phosphorus",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Electrolyte management; refeeding risk",
+          "target": "Normal"
+        },
+        {
+          "item": "Lactate",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Perfusion status",
+          "target": "<2 mmol/L"
+        },
+        {
+          "item": "Pregnancy test (β-hCG)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Affects imaging, anesthesia, and treatment decisions",
+          "target": "Document result"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Serum osmolality",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Cerebral salt wasting vs SIADH differentiation; osmotherapy monitoring",
+          "target": "280-295 mOsm/kg"
+        },
+        {
+          "item": "Urine osmolality and sodium",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "CSW: high urine Na, high urine osm, hypovolemic. SIADH: high urine Na, high urine osm, euvolemic",
+          "target": "Differentiate CSW vs SIADH"
+        },
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction screen",
+          "target": "Normal"
+        },
+        {
+          "item": "Cortisol (AM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Adrenal insufficiency (pituitary dysfunction from SAH)",
+          "target": ">18 µg/dL"
+        },
+        {
+          "item": "Lipid panel",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Cardiovascular risk assessment",
+          "target": "Document"
+        },
+        {
+          "item": "HbA1c",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes management",
+          "target": "<7.0%"
+        },
+        {
+          "item": "Blood cultures",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "If febrile (differentiate central fever vs infection)",
+          "target": "No growth"
+        },
+        {
+          "item": "Procalcitonin",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Differentiate neurogenic fever from infection",
+          "target": "<0.5 (elevated suggests infection)"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Urine catecholamines/metanephrines",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Pheochromocytoma as cause of hypertensive hemorrhage",
+          "target": "Normal"
+        },
+        {
+          "item": "Toxicology (cocaine, amphetamines)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Sympathomimetic-associated SAH",
+          "target": "Negative"
+        },
+        {
+          "item": "Sickle cell screen",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Sickle cell associated aneurysms and SAH (young patients, African descent)",
+          "target": "Normal"
+        },
+        {
+          "item": "Connective tissue disorder workup (Ehlers-Danlos, Marfan)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Familial aneurysm syndromes; young SAH with marfanoid habitus or skin hyperextensibility",
+          "target": "Clinical + genetic"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Elevated in SAH",
+          "target": "Often elevated (>20 cm H2O)"
+        },
+        {
+          "item": "Cell count (tubes 1 AND 4)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Distinguish SAH from traumatic tap: SAH = RBC count does NOT clear significantly between tube 1 and tube 4",
+          "target": "RBC in tube 4 ≥ tube 1 (SAH); if tube 4 << tube 1 = traumatic tap"
+        },
+        {
+          "item": "Xanthochromia (visual and/or spectrophotometry)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Yellow discoloration from RBC breakdown (bilirubin); develops >6h after SAH; spectrophotometry more sensitive than visual inspection",
+          "target": "Present = SAH (sensitivity >95% at 12h-2 weeks post-bleed). Absent = unlikely SAH"
+        },
+        {
+          "item": "Protein",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Elevated in SAH",
+          "target": "Elevated"
+        },
+        {
+          "item": "Glucose",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Usually normal in SAH",
+          "target": "Normal"
+        },
+        {
+          "item": "Gram stain and culture",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Exclude meningitis (meningeal signs overlap)",
+          "target": "No organisms"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "IMMEDIATE (door-to-CT <25 min). Sensitivity: 98-100% within 6h; ~93% at 12h; ~85% at 24h; declines after 3-5 days",
+          "target": "Hyperdense blood in basal cisterns, Sylvian fissure, interhemispheric fissure; modified Fisher grade; hydrocephalus; intraventricular hemorrhage",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "CT angiography (CTA) head",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Simultaneously with non-contrast CT. Identifies aneurysm (sensitivity 95-100% for aneurysms >3mm)",
+          "target": "Aneurysm location, size, morphology; multiple aneurysms (15-20% have >1); vasospasm (delayed)",
+          "contraindications": "Contrast allergy (premedicate); renal impairment (benefit outweighs risk)"
+        },
+        {
+          "item": "ECG (12-lead)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Immediately",
+          "target": "Deep T-wave inversions (\"cerebral T waves\"), ST changes, QT prolongation, arrhythmias — all may be neurogenic; do NOT misdiagnose as primary cardiac event",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Conventional cerebral angiography (DSA)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Within 24h — GOLD STANDARD for aneurysm identification; also therapeutic (coiling). If CTA negative but clinical suspicion high, DSA is mandatory",
+          "target": "Aneurysm (location, neck width, dome-to-neck ratio, relationship to branches); may find aneurysm missed by CTA; vasospasm assessment",
+          "contraindications": "Contrast allergy; renal impairment; coagulopathy (relative)"
+        },
+        {
+          "item": "Repeat DSA (if initial negative)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "At 7-14 days if initial DSA negative and non-perimesencephalic pattern; small aneurysm may be thrombosed or compressed by hematoma",
+          "target": "Previously missed aneurysm",
+          "contraindications": "Same as initial"
+        },
+        {
+          "item": "MRI/MRA brain",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "When stable; helpful for subacute diagnosis or if CT negative but suspicion persists",
+          "target": "Blood products (FLAIR); aneurysm (MRA); ischemia from vasospasm (DWI)",
+          "contraindications": "Pacemaker; hemodynamic instability"
+        },
+        {
+          "item": "Transcranial Doppler (TCD)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Begin daily on post-bleed day 3; continue through day 14 (vasospasm window)",
+          "target": "Mean flow velocities: MCA >120 cm/s concerning; >200 cm/s severe vasospasm. Lindegaard ratio >3 suggests vasospasm (>6 = severe)",
+          "contraindications": "Absent temporal bone window (~10%)"
+        },
+        {
+          "item": "CT perfusion (CTP)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If vasospasm suspected clinically (new deficit days 4-14)",
+          "target": "Perfusion deficits in vascular territory of spastic vessel; mismatch (reversible ischemia)",
+          "contraindications": "Contrast allergy; renal impairment"
+        },
+        {
+          "item": "CTA (repeat for vasospasm)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If clinical vasospasm suspected",
+          "target": "Arterial narrowing; correlate with TCD and clinical exam",
+          "contraindications": "Same as initial CTA"
+        },
+        {
+          "item": "Echocardiogram (TTE)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "Within 24-48h",
+          "target": "Takotsubo (apical ballooning); regional wall motion abnormalities; EF assessment — neurogenic stunned myocardium in 20-30%",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Continuous EEG (cEEG)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If altered consciousness; delayed deterioration; suspected seizures",
+          "target": "Non-convulsive seizures; electrographic vasospasm correlate; periodic discharges",
+          "contraindications": "None"
+        },
+        {
+          "item": "Chest X-ray",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "On admission; daily in ICU",
+          "target": "Neurogenic pulmonary edema; aspiration; ARDS",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "3D rotational angiography",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "During DSA for complex aneurysm anatomy",
+          "target": "Detailed aneurysm morphology for treatment planning",
+          "contraindications": "Same as DSA"
+        },
+        {
+          "item": "Xenon CT or CT perfusion (quantitative)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "timing": "Research/advanced vasospasm assessment",
+          "target": "Quantitative cerebral blood flow mapping",
+          "contraindications": "Limited availability"
+        },
+        {
+          "item": "MRA screening (unruptured aneurysm in family members)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Elective — for first-degree relatives of SAH patients (2 or more affected family members)",
+          "target": "Incidental unruptured aneurysm",
+          "contraindications": "Standard MRI contraindications"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Blood pressure control: Nicardipine IV",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/h",
+                "orderSentence": "Blood pressure control: Nicardipine IV 5 mg/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg/h IV; titrate by 2.5 mg/h q5-15min; max 15 mg/h. Target SBP <160 mmHg UNTIL aneurysm is secured (re-bleed risk highest in first 24h with uncontrolled HTN); after securing: target SBP <180 (or higher if vasospasm)",
+            "orderSentence": "Blood pressure control: Nicardipine IV 5 mg/h IV"
+          },
+          "contraindications": "Severe aortic stenosis",
+          "monitoring": "Continuous arterial BP; neuro checks q1h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood pressure control: Labetalol IV",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg",
+                "orderSentence": "Blood pressure control: Labetalol IV 10-20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10-20 mg IV q10-20min; max 300 mg. Alternative to nicardipine",
+            "orderSentence": "Blood pressure control: Labetalol IV 10-20 mg IV"
+          },
+          "contraindications": "Heart block; severe bradycardia; asthma",
+          "monitoring": "HR; BP continuous",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood pressure control: Clevidipine IV",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mg/h",
+                "orderSentence": "Blood pressure control: Clevidipine IV 1-2 mg/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2 mg/h IV; max 32 mg/h",
+            "orderSentence": "Blood pressure control: Clevidipine IV 1-2 mg/h IV"
+          },
+          "contraindications": "Soy/egg allergy",
+          "monitoring": "BP continuous",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Nimodipine (CORNERSTONE of vasospasm prevention)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Nimodipine (CORNERSTONE of vasospasm prevention) 60 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "60 mg PO/NG q4h x 21 days. START within 96h of SAH onset. If hypotension: 30 mg q2h. This is an ORAL calcium channel blocker — do NOT give IV (severe hypotension). Proven to reduce poor outcomes from vasospasm",
+            "orderSentence": "Nimodipine (CORNERSTONE of vasospasm prevention) 60 mg IV"
+          },
+          "contraindications": "Hypotension (SBP <90 — reduce dose); do NOT crush extended-release formulations; use oral syringe if NG",
+          "monitoring": "BP with each dose; do NOT give IV; ensure enteral route only",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "External ventricular drain (EVD)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "For acute hydrocephalus (GCS declining; CT showing ventriculomegaly); allows ICP monitoring and CSF drainage. Set drain height per neurosurgery (typically 15-20 cm above tragus)",
+            "orderSentence": "External ventricular drain (EVD) - - - see dosing"
+          },
+          "contraindications": "Coagulopathy (correct first)",
+          "monitoring": "ICP continuous; CSF output q1h; drain position; infection surveillance (CSF culture q3 days per some protocols)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Seizure prophylaxis (short-term)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Seizure prophylaxis (short-term) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Levetiracetam 1000 mg IV/PO load, then 500-1000 mg BID. AHA 2012: short-term (3-7 days) prophylaxis is reasonable. Avoid phenytoin (associated with worse cognitive outcomes in SAH — Naidech et al.)",
+            "orderSentence": "Seizure prophylaxis (short-term) 1000 mg IV"
+          },
+          "contraindications": "Renal impairment (dose adjust)",
+          "monitoring": "Seizure monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Intubation / Airway protection",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "GCS ≤8; inability to protect airway; respiratory failure; impending herniation",
+            "orderSentence": "Intubation / Airway protection - - - see dosing"
+          },
+          "contraindications": "N/A",
+          "monitoring": "Avoid hypotension during RSI; maintain SBP goal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Aminocaproic acid (antifibrinolytic)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4g",
+                "orderSentence": "Aminocaproic acid (antifibrinolytic) 4g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4g IV load then 1g/h IV infusion. ONLY use for short-term (<72h) if aneurysm securing will be delayed. Reduces re-bleeding risk but increases thrombotic risk. Discontinue once aneurysm is secured",
+            "orderSentence": "Aminocaproic acid (antifibrinolytic) 4g IV"
+          },
+          "contraindications": "Active DIC; DVT/PE; renal impairment",
+          "monitoring": "Coagulation; thrombotic events; discontinue when aneurysm treated",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV isotonic fluids (euvolemia)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 mL/kg",
+                "orderSentence": "IV isotonic fluids (euvolemia) 1-1.5 mL/kg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "NS at 1-1.5 mL/kg/h (80-125 mL/h); goal euvolemia. Avoid hypovolemia (worsens vasospasm) and avoid aggressive hypervolemia (no proven benefit; risk of pulmonary edema). Target CVP 5-8 or clinical euvolemia",
+            "orderSentence": "IV isotonic fluids (euvolemia) 1-1.5 mL/kg -"
+          },
+          "contraindications": "Volume overload; CHF",
+          "monitoring": "I/O; daily weights; CVP if central line; serum Na q6-8h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Stress ulcer prophylaxis: Pantoprazole",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Stress ulcer prophylaxis: Pantoprazole 40 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "40 mg IV/PO daily",
+            "orderSentence": "Stress ulcer prophylaxis: Pantoprazole 40 mg IV"
+          },
+          "contraindications": "C. diff risk",
+          "monitoring": "GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "DVT prophylaxis: Pneumatic compression devices",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Apply bilaterally on admission; SAH patients are HIGH VTE risk",
+            "orderSentence": "DVT prophylaxis: Pneumatic compression devices - - - see dosing"
+          },
+          "contraindications": "Acute DVT",
+          "monitoring": "Skin checks",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "DVT prophylaxis: Heparin SC (after aneurysm secured)",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5000 units",
+                "orderSentence": "DVT prophylaxis: Heparin SC (after aneurysm secured) 5000 units SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "5000 units SC q8h; start 24h after aneurysm is secured (clipping or coiling); some centers start earlier",
+            "orderSentence": "DVT prophylaxis: Heparin SC (after aneurysm secured) 5000 units SC"
+          },
+          "contraindications": "Active bleeding; within 24h of craniotomy (per surgeon)",
+          "monitoring": "Platelets q3 days",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Aneurysm Securing (Definitive Treatment)": [
+        {
+          "item": "Endovascular coiling",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Interventional neuroradiology; catheter-based platinum coil deployment into aneurysm sac. Preferred per ISAT trial for posterior circulation and many anterior circulation aneurysms",
+            "orderSentence": "Endovascular coiling - - - see dosing"
+          },
+          "contraindications": "Difficult vascular access; very wide neck without stent option",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Surgical clipping (craniotomy)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Neurosurgical; microsurgical clip placement across aneurysm neck",
+            "orderSentence": "Surgical clipping (craniotomy) - - - see dosing"
+          },
+          "contraindications": "Poor grade with brain swelling (relative — may clip if accessible); medically unstable",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Flow diverter (Pipeline, FRED)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "For large/giant or wide-necked aneurysms not amenable to standard coiling",
+            "orderSentence": "Flow diverter (Pipeline, FRED) - - - see dosing"
+          },
+          "contraindications": "Requires dual antiplatelet therapy (may not be ideal in acute SAH)",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Vasospasm Treatment (Post-Bleed Days 4-14)": [
+        {
+          "item": "Nimodipine (continued)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Nimodipine (continued) 60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Continue 60 mg PO q4h x 21 days total",
+            "orderSentence": "Nimodipine (continued) 60 mg PO"
+          },
+          "contraindications": "Hypotension",
+          "monitoring": "BP with each dose",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Induced hypertension",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "If clinical vasospasm (new deficit days 4-14, aneurysm MUST be secured first): raise SBP to 180-220 mmHg using vasopressors. Phenylephrine 0.5-5 µg/kg/min or norepinephrine 0.05-0.3 µg/kg/min IV",
+            "orderSentence": "Induced hypertension - IV - see dosing"
+          },
+          "contraindications": "Unsecured aneurysm (NEVER induce hypertension before securing); cardiac failure; pulmonary edema",
+          "monitoring": "Arterial line; neuro checks q1h; TCD; CT perfusion",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV fluid bolus (euvolemia maintenance)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mL",
+                "orderSentence": "IV fluid bolus (euvolemia maintenance) 500-1000 mL -"
+              }
+            ],
+            "route": "-",
+            "instructions": "NS bolus 500-1000 mL if hypovolemic; maintain euvolemia. Avoid prophylactic hypervolemia (no benefit per current evidence — Robertson et al.)",
+            "orderSentence": "IV fluid bolus (euvolemia maintenance) 500-1000 mL -"
+          },
+          "contraindications": "Volume overload",
+          "monitoring": "CVP; I/O; daily weights",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Milrinone IV (alternative vasospasm treatment)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "0.25-0.75 µg/kg/min IV continuous; some centers use as rescue for vasospasm not responding to induced hypertension; acts as cerebral vasodilator",
+            "orderSentence": "Milrinone IV (alternative vasospasm treatment) - IV - see dosing"
+          },
+          "contraindications": "Severe hypotension; arrhythmia",
+          "monitoring": "BP (may cause hypotension); HR; cardiac output",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Intra-arterial vasodilator therapy (endovascular rescue)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Intra-arterial vasodilator therapy (endovascular rescue) 5-10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Verapamil 5-10 mg intra-arterial or nicardipine 5-10 mg intra-arterial; via catheter into spastic vessel during angiography. For medically refractory vasospasm",
+            "orderSentence": "Intra-arterial vasodilator therapy (endovascular rescue) 5-10 mg PO"
+          },
+          "contraindications": "Hemodynamic instability during procedure",
+          "monitoring": "Angiographic improvement; clinical response; BP",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Angioplasty (balloon)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Mechanical dilation of spastic proximal vessels during angiography. For focal proximal vasospasm refractory to medical treatment",
+            "orderSentence": "Angioplasty (balloon) - - - see dosing"
+          },
+          "contraindications": "Vessel rupture risk; distal vasospasm (not amenable to balloon)",
+          "monitoring": "Angiographic result; clinical response",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Magnesium sulfate (supplemental)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.0 mg",
+                "orderSentence": "Magnesium sulfate (supplemental) 2.0 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Target serum Mg >2.0 mg/dL; replete with MgSO4 2-4 g IV over 1-2h PRN. MASH-2 trial: IV magnesium infusion did NOT improve outcomes, but maintaining normal-high Mg is standard",
+            "orderSentence": "Magnesium sulfate (supplemental) 2.0 mg IV"
+          },
+          "contraindications": "Renal failure; hypermagnesemia",
+          "monitoring": "Serum Mg q12-24h; deep tendon reflexes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Complications Management": [
+        {
+          "item": "Hyponatremia management: Differentiate CSW vs SIADH",
+          "route": "PO",
+          "indication": "Na <135: CSW = volume depleted (treat with NS/hypertonic saline + fludrocortisone). SIADH = euvolemic (treat with fluid restriction ± hypertonic saline)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.2 mg",
+                "orderSentence": "Hyponatremia management: Differentiate CSW vs SIADH 0.1-0.2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "CSW: NS or 3% saline; fludrocortisone 0.1-0.2 mg PO BID. SIADH: fluid restriction 1-1.2 L/day; 3% saline if <120",
+            "orderSentence": "Hyponatremia management: Differentiate CSW vs SIADH 0.1-0.2 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "Na q6h during correction; avoid >8-10 mEq/L rise in 24h (central pontine myelinolysis risk)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Fludrocortisone",
+          "route": "PO",
+          "indication": "Cerebral salt wasting (volume depletion + hyponatremia)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.2 mg",
+                "orderSentence": "Fludrocortisone 0.1-0.2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.1-0.2 mg PO BID",
+            "orderSentence": "Fludrocortisone 0.1-0.2 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "Na; K+ (hypokalemia); volume status; BP",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Hydrocortisone",
+          "route": "IV",
+          "indication": "Refractory hyponatremia; cerebral salt wasting; adrenal insufficiency",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50-100 mg",
+                "orderSentence": "Hydrocortisone 50-100 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "50-100 mg IV q8h",
+            "orderSentence": "Hydrocortisone 50-100 mg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "Na; glucose; cortisol",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Ventriculoperitoneal shunt (VPS)",
+          "route": "-",
+          "indication": "Chronic hydrocephalus (EVD-dependent; unable to wean)",
+          "dosing": {
+            "instructions": "Neurosurgical procedure",
+            "orderSentence": "Ventriculoperitoneal shunt (VPS) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "Shunt function; neurologic status",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Lumbar drain",
+          "route": "-",
+          "indication": "CSF diversion after EVD if transitioning; mild chronic hydrocephalus",
+          "dosing": {
+            "instructions": "Neurosurgical placement",
+            "orderSentence": "Lumbar drain - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "CSF output; ICP; position",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurosurgery",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "ALL SAH patients; EVD placement; surgical clipping decision; hydrocephalus management"
+        },
+        {
+          "item": "Interventional neuroradiology / Neuroendovascular",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "Endovascular coiling; intra-arterial vasospasm treatment; angioplasty"
+        },
+        {
+          "item": "Neurocritical care / Neurointensivist",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "ICU management; vasospasm monitoring; medical optimization"
+        },
+        {
+          "item": "Cardiology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "indication": "Neurogenic stunned myocardium; Takotsubo; arrhythmia management"
+        },
+        {
+          "item": "Pulmonology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "indication": "Neurogenic pulmonary edema; ARDS; ventilator management"
+        },
+        {
+          "item": "Endocrinology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Pituitary dysfunction post-SAH (growth hormone, cortisol, thyroid); diabetes insipidus"
+        },
+        {
+          "item": "Speech-language pathology (SLP)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "Dysphagia evaluation; cognitive-linguistic assessment"
+        },
+        {
+          "item": "Physical therapy (PT)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "Early mobilization when stable; fall prevention; strength"
+        },
+        {
+          "item": "Occupational therapy (OT)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "ADL assessment; cognitive rehabilitation"
+        },
+        {
+          "item": "Rehabilitation medicine (physiatry)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Rehabilitation planning; disposition"
+        },
+        {
+          "item": "Social work",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Family support; advance directives; discharge planning"
+        },
+        {
+          "item": "Palliative care",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "indication": "Poor-grade SAH (Hunt-Hess IV-V); goals of care"
+        },
+        {
+          "item": "Genetics / Genetic counseling",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Familial aneurysm screening; connective tissue disorders"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "SAH is life-threatening; treatment is time-sensitive",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Call 911 immediately if: sudden severe headache (\"worst headache of life\"), loss of consciousness, seizure, new weakness, vision changes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Blood pressure control is critical long-term — take all prescribed medications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation is essential (smoking is the strongest modifiable risk factor for aneurysm formation and rupture)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT drive until cleared by neurology/neurosurgery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid heavy lifting, straining, and Valsalva maneuvers for 4-6 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow-up imaging (CTA or MRA) at 6 months, then annually for several years to assess treated aneurysm and screen for new aneurysm",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "First-degree relatives should discuss aneurysm screening with their physician if ≥2 family members have had SAH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cognitive difficulties (memory, attention, fatigue) are common after SAH — neuropsychological evaluation and rehabilitation are available",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Depression and anxiety are common; seek support early",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Smoking cessation (ABSOLUTE — strongest modifiable risk factor)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Blood pressure control (<130/80 mmHg)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol moderation/cessation (heavy drinking increases SAH risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cocaine/stimulant cessation (vasospasm and SAH risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid excessive straining (constipation management; stool softeners)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular moderate exercise after recovery and medical clearance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Adequate hydration",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stress management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Thunderclap headache — reversible cerebral vasoconstriction syndrome (RCVS)",
+      "features": "Recurrent thunderclap headaches over days-weeks; triggered by exertion, Valsalva, sexual activity; vasospasm on CTA; may have convexity SAH; no aneurysm",
+      "tests": "CTA (multifocal segmental narrowing); MRI (may show edema, infarct, cortical SAH); DSA; clinical course (resolves in weeks)"
+    },
+    {
+      "diagnosis": "Primary intracerebral hemorrhage",
+      "features": "Parenchymal hematoma with minimal/no subarachnoid blood; hypertensive location (basal ganglia, thalamus)",
+      "tests": "CT (parenchymal not cisternal); CTA (no aneurysm unless hemorrhage extends into subarachnoid space)"
+    },
+    {
+      "diagnosis": "Bacterial meningitis",
+      "features": "Fever, meningismus, altered mental status, CSF neutrophilic pleocytosis with low glucose",
+      "tests": "LP (gram stain, culture, BioFire); procalcitonin elevated; CT without blood"
+    },
+    {
+      "diagnosis": "Migraine (severe)",
+      "features": "Prior migraine history; gradual onset of associated features; photophobia, phonophobia; no blood on CT",
+      "tests": "Normal CT; normal LP; clinical history"
+    },
+    {
+      "diagnosis": "Hypertensive emergency",
+      "features": "Severely elevated BP; headache; but no blood on CT; may have PRES features",
+      "tests": "CT (no blood); MRI (PRES: posterior white matter edema)"
+    },
+    {
+      "diagnosis": "Cervical artery dissection",
+      "features": "Neck pain, headache, Horner syndrome, stroke; may have traumatic SAH from vertebral dissection",
+      "tests": "CTA neck (intimal flap, pseudoaneurysm); MRI neck (crescent sign)"
+    },
+    {
+      "diagnosis": "Cerebral venous thrombosis (CVT)",
+      "features": "Headache, seizures; may have hemorrhagic venous infarct or cortical SAH; risk factors (OCPs, pregnancy)",
+      "tests": "MRV/CT venogram (thrombosed sinus)"
+    },
+    {
+      "diagnosis": "Pituitary apoplexy",
+      "features": "Sudden headache, visual field defect, ophthalmoplegia; known pituitary adenoma; may have subarachnoid blood from pituitary hemorrhage",
+      "tests": "MRI sella (hemorrhagic pituitary mass); hormone panel"
+    },
+    {
+      "diagnosis": "Perimesencephalic SAH (non-aneurysmal)",
+      "features": "Blood confined to perimesencephalic cisterns (anterior to brainstem); benign course; CTA/DSA negative for aneurysm",
+      "tests": "CT pattern (perimesencephalic); negative CTA and DSA; excellent prognosis"
+    },
+    {
+      "diagnosis": "Traumatic SAH",
+      "features": "History of trauma; may have other traumatic injuries (contusion, subdural, skull fracture)",
+      "tests": "Clinical history; CT pattern"
+    },
+    {
+      "diagnosis": "Spinal SAH",
+      "features": "Sudden back/leg pain with meningismus; blood on lumbar CT or MRI; rare",
+      "tests": "Spinal MRI; spinal angiography"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Nimodipine 60 mg PO q4h x 21 days",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Pickard et al. (BMJ 1989); only proven agent to improve outcomes in SAH vasospasm"
+    },
+    {
+      "recommendation": "Early aneurysm securing (<24h, ideally <12h)",
+      "evidenceLevel": "Class I, Level B",
+      "source": "ISAT; AHA/ASA 2012 SAH Guidelines; de Gans et al. (Stroke 2002)"
+    },
+    {
+      "recommendation": "Endovascular coiling preferred over clipping for most aneurysms",
+      "evidenceLevel": "Class I, Level A",
+      "source": "ISAT trial (Molyneux et al. Lancet 2002); long-term follow-up"
+    },
+    {
+      "recommendation": "SBP <160 until aneurysm secured",
+      "evidenceLevel": "Class I, Level B",
+      "source": "AHA/ASA 2012 SAH Guidelines"
+    },
+    {
+      "recommendation": "Euvolemia (avoid hypovolemia; avoid prophylactic hypervolemia)",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Lennihan et al. (Stroke 2000); HIMALAIA trial"
+    },
+    {
+      "recommendation": "Induced hypertension for clinical vasospasm (after aneurysm secured)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "AHA/ASA Guidelines; standard practice"
+    },
+    {
+      "recommendation": "TCD daily for vasospasm monitoring",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Sloan et al. (2004); AHA/ASA Guidelines"
+    },
+    {
+      "recommendation": "Short-term seizure prophylaxis (3-7 days) reasonable",
+      "evidenceLevel": "Class IIb, Level B",
+      "source": "AHA/ASA 2012"
+    },
+    {
+      "recommendation": "Avoid phenytoin in SAH (worse cognitive outcomes)",
+      "evidenceLevel": "Class III (Harm)",
+      "source": "Naidech et al. (Neurocrit Care 2005)"
+    },
+    {
+      "recommendation": "CT sensitivity ~100% within 6h",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Perry et al. (BMJ 2011); Backes et al. (Stroke 2012)"
+    },
+    {
+      "recommendation": "LP if CT negative but clinical suspicion",
+      "evidenceLevel": "Class I, Level B",
+      "source": "AHA/ASA Guidelines; standard of care"
+    },
+    {
+      "recommendation": "Aminocaproic acid (short-term) if aneurysm securing delayed",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Hillman et al. (Neurosurgery 2002); AHA/ASA 2012"
+    },
+    {
+      "recommendation": "Magnesium infusion does NOT improve outcomes",
+      "evidenceLevel": "Class III (No Benefit)",
+      "source": "MASH-2 trial (Dorhout Mees et al. Lancet 2012)"
+    },
+    {
+      "recommendation": "Fludrocortisone for cerebral salt wasting",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Hasan et al. (Stroke 1989)"
+    },
+    {
+      "recommendation": "Intra-arterial vasodilator / balloon angioplasty for refractory vasospasm",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Multiple case series; AHA/ASA Guidelines"
+    },
+    {
+      "recommendation": "Avoid self-fulfilling prophecy in poor-grade SAH",
+      "evidenceLevel": "Class I, Level C",
+      "source": "AHA/ASA 2012: aggressive treatment for at least 72h in poor-grade"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Blood pressure (arterial line)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Continuous via arterial line in ICU. Pre-securing: target SBP <160. Post-securing: allow SBP 120-180 (higher if vasospasm treatment)",
+      "action": "Titrate antihypertensives; vasopressors for vasospasm"
+    },
+    {
+      "item": "GCS / Neurologic exam",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q1h x 24h; then q2h x 48h; then q4h. Hunt-Hess grade at admission",
+      "action": "If declining: STAT CT (rebleed, hydrocephalus, infarct); TCD; adjust treatment"
+    },
+    {
+      "item": "ICP (if EVD in place)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Continuous; record q1h",
+      "action": "Tiered ICP management; CSF drainage; osmotherapy"
+    },
+    {
+      "item": "Transcranial Doppler (TCD)",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Daily from day 3 through day 14 (vasospasm window); some continue to day 21",
+      "action": "If MCA >120: CTA/CTP; clinical correlation. If >200: severe vasospasm — consider induced hypertension +/- endovascular rescue"
+    },
+    {
+      "item": "Serum sodium",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q6h x 72h; then q8-12h",
+      "action": "If <135: differentiate CSW vs SIADH; treat accordingly. If <120: 3% saline; limit correction <10 mEq/24h"
+    },
+    {
+      "item": "Serum magnesium",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Daily; q12h if repleting",
+      "action": "Replete with MgSO4 2-4 g IV"
+    },
+    {
+      "item": "Temperature",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q4h (q1h if febrile)",
+      "action": "Central fever (common): cooling; acetaminophen. If >38.3°C: infection workup (cultures, CXR, UA)"
+    },
+    {
+      "item": "Blood glucose",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q6h (q1h if insulin drip)",
+      "action": "Insulin; avoid <60"
+    },
+    {
+      "item": "Troponin / BNP",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE",
+      "frequency": "Troponin daily x 3; BNP at admission and PRN",
+      "action": "If rising with new ECG changes or hemodynamic instability: echo; cardiology"
+    },
+    {
+      "item": "Hemoglobin",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE",
+      "frequency": "Daily",
+      "action": "Transfuse PRBCs"
+    },
+    {
+      "item": "Fluid balance (I/O)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q1h in ICU; q4h shift on floor",
+      "action": "Avoid dehydration (vasospasm risk); avoid overhydration (pulmonary edema)"
+    },
+    {
+      "item": "Repeat CT head",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "At 24h post-admission; with any neurologic change; post-procedure; if new hydrocephalus suspected",
+      "action": "Adjust EVD; surgery; vasospasm treatment"
+    },
+    {
+      "item": "Hunt-Hess / WFNS grade",
+      "ED": "STAT",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "-",
+      "frequency": "At admission (prognostic)",
+      "action": "Goals of care if poor grade"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Never discharge from ED with confirmed SAH. Discharge from hospital when: aneurysm secured; past vasospasm window (day 14-21); stable neurologic exam; Na stable; able to take oral nimodipine; no EVD dependency; adequate follow-up"
+    },
+    {
+      "disposition": "Admit to Neuro-ICU",
+      "criteria": "ALL confirmed aneurysmal SAH patients; minimum 14-21 days ICU-level monitoring during vasospasm window. Transfer to step-down only after vasospasm window passed"
+    },
+    {
+      "disposition": "Transfer to comprehensive stroke center / Neurovascular center",
+      "criteria": "If no neurosurgery or interventional neuroradiology on-site — TRANSFER IMMEDIATELY. SAH requires tertiary neurovascular services"
+    },
+    {
+      "disposition": "Inpatient rehabilitation",
+      "criteria": "Significant deficits but medically stable; past vasospasm window; able to participate in 3h/day therapy"
+    },
+    {
+      "disposition": "Skilled nursing facility",
+      "criteria": "Cannot tolerate intensive rehab; requires ongoing skilled care"
+    },
+    {
+      "disposition": "Hospice / Comfort care",
+      "criteria": "Devastating SAH (Hunt-Hess V with poor prognostic factors); after appropriate observation period and family discussion"
+    }
+  ]
+}

@@ -1,3 +1,10 @@
+---
+title: "Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)"
+description: "Clinical decision support for chronic inflammatory demyelinating polyneuropathy (cidp) diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)
 
 **VERSION:** 1.0
@@ -127,37 +134,37 @@
 
 ### 3A. First-Line Immunotherapy
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| IVIG (Intravenous Immunoglobulin) | - | STAT | ROUTINE | - | Induction: 2 g/kg divided over 2-5 days; Maintenance: 0.4-1 g/kg q3-4 weeks (adjust based on response) | IgA deficiency (use IgA-depleted product), renal failure, thrombosis history | Renal function, headache, aseptic meningitis, thrombosis |
-| SCIG (Subcutaneous Immunoglobulin) | - | - | ROUTINE | - | Convert from IVIG at equivalent weekly dose (total monthly IVIG dose ÷ 4); administer weekly | Same (fewer systemic reactions) | Local site reactions |
-| Plasma exchange (PLEX) | - | STAT | - | - | 5-7 exchanges over 2-3 weeks; 1-1.5 plasma volumes/exchange | Hemodynamic instability, line access | Hemodynamics, electrolytes (Ca, Mg), fibrinogen |
-| Corticosteroids | - | STAT | ROUTINE | - | Prednisone 60-80 mg daily or 1 mg/kg/day × 4-8 weeks, then slow taper over 6-12 months; OR pulsed methylprednisolone 1000 mg IV × 3 days monthly | Uncontrolled DM, active infection, osteoporosis (relative) | Glucose, BP, bone density, weight, infection |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| IVIG (Intravenous Immunoglobulin) | IV | - | 2 g/kg :: PO :: - :: Induction: 2 g/kg divided over 2-5 days; Maintenance: 0.4-1 g/kg q3-4 weeks (adjust based on response) | IgA deficiency (use IgA-depleted product), renal failure, thrombosis history | Renal function, headache, aseptic meningitis, thrombosis | - | STAT | ROUTINE | - |
+| SCIG (Subcutaneous Immunoglobulin) | SC | - | Convert from IVIG at equivalent weekly dose (total monthly IVIG dose ÷ 4); administer weekly | Same (fewer systemic reactions) | Local site reactions | - | - | ROUTINE | - |
+| Plasma exchange (PLEX) | - | - | 5-7 exchanges over 2-3 weeks; 1-1.5 plasma volumes/exchange | Hemodynamic instability, line access | Hemodynamics, electrolytes (Ca, Mg), fibrinogen | - | STAT | - | - |
+| Corticosteroids | IV | - | 60-80 mg :: IV :: daily :: Prednisone 60-80 mg daily or 1 mg/kg/day × 4-8 weeks, then slow taper over 6-12 months; OR pulsed methylprednisolone 1000 mg IV × 3 days monthly | Uncontrolled DM, active infection, osteoporosis (relative) | Glucose, BP, bone density, weight, infection | - | STAT | ROUTINE | - |
 
 ### 3B. Second-Line / Steroid-Sparing Agents
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Azathioprine | - | ROUTINE | ROUTINE | - | Start 50 mg daily; increase by 50 mg q2 weeks to 2-3 mg/kg/day | TPMT deficiency (check before starting), pregnancy | CBC, LFTs, TPMT level |
-| Mycophenolate mofetil | - | ROUTINE | ROUTINE | - | Start 500 mg BID; increase to 1000-1500 mg BID | Pregnancy, severe GI disease | CBC, LFTs |
-| Rituximab | - | - | ROUTINE | - | 375 mg/m² IV weekly × 4 OR 1000 mg IV × 2 doses (days 1 and 15); repeat q6 months PRN | Active infection, hepatitis B (screen) | Infusion reactions, infection, B-cell counts |
-| Cyclophosphamide | - | - | EXT | - | Pulse: 500-1000 mg/m² IV monthly × 6; rarely used due to toxicity | Severe cytopenias, active infection | CBC, renal function, bladder toxicity |
-| Cyclosporine | - | - | EXT | - | 3-5 mg/kg/day in 2 divided doses; target trough 100-200 ng/mL | Renal impairment, uncontrolled HTN | Renal function, BP, drug levels |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Azathioprine | PO | - | 50 mg :: PO :: daily :: Start 50 mg daily; increase by 50 mg q2 weeks to 2-3 mg/kg/day | TPMT deficiency (check before starting), pregnancy | CBC, LFTs, TPMT level | - | ROUTINE | ROUTINE | - |
+| Mycophenolate mofetil | PO | - | 500 mg :: PO :: BID :: Start 500 mg BID; increase to 1000-1500 mg BID | Pregnancy, severe GI disease | CBC, LFTs | - | ROUTINE | ROUTINE | - |
+| Rituximab | IV | - | 375 mg :: IV :: PRN :: 375 mg/m² IV weekly × 4 OR 1000 mg IV × 2 doses (days 1 and 15); repeat q6 months PRN | Active infection, hepatitis B (screen) | Infusion reactions, infection, B-cell counts | - | - | ROUTINE | - |
+| Cyclophosphamide | IV | - | 500-1000 mg :: IV :: monthly :: Pulse: 500-1000 mg/m² IV monthly × 6; rarely used due to toxicity | Severe cytopenias, active infection | CBC, renal function, bladder toxicity | - | - | EXT | - |
+| Cyclosporine | PO | - | 3-5 mg/kg :: PO :: - :: 3-5 mg/kg/day in 2 divided doses; target trough 100-200 ng/mL | Renal impairment, uncontrolled HTN | Renal function, BP, drug levels | - | - | EXT | - |
 
 ### 3C. Anti-Nodal Antibody-Positive CIDP (Special Population)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Rituximab (first-line for anti-nodal CIDP) | - | - | ROUTINE | - | 375 mg/m² weekly × 4 OR 1000 mg × 2 doses | Per above | Poor response to IVIG expected; rituximab preferred |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Rituximab (first-line for anti-nodal CIDP) | PO | - | 375 mg :: PO :: - :: 375 mg/m² weekly × 4 OR 1000 mg × 2 doses | Per above | Poor response to IVIG expected; rituximab preferred | - | - | ROUTINE | - |
 
 ### 3D. Symptomatic Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Gabapentin (neuropathic pain) | - | ROUTINE | ROUTINE | - | Start 100-300 mg TID; titrate to 900-3600 mg/day | Renal impairment (adjust) | Sedation, dizziness |
-| Pregabalin (neuropathic pain) | - | ROUTINE | ROUTINE | - | Start 75 mg BID; titrate to 150-300 mg BID | Renal impairment (adjust) | Same |
-| Duloxetine (neuropathic pain) | - | ROUTINE | ROUTINE | - | Start 30 mg daily; increase to 60 mg daily | Severe hepatic/renal impairment, MAOIs | Nausea, BP |
-| Amitriptyline (neuropathic pain) | - | ROUTINE | ROUTINE | - | Start 10-25 mg QHS; titrate to 50-100 mg QHS | Cardiac arrhythmia, glaucoma | QTc, anticholinergic effects |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Gabapentin (neuropathic pain) | PO | - | 100-300 mg :: PO :: TID :: Start 100-300 mg TID; titrate to 900-3600 mg/day | - | Renal impairment (adjust) | Sedation, dizziness | - | ROUTINE | ROUTINE | - |
+| Pregabalin (neuropathic pain) | PO | - | 75 mg :: PO :: BID :: Start 75 mg BID; titrate to 150-300 mg BID | - | Renal impairment (adjust) | Same | - | ROUTINE | ROUTINE | - |
+| Duloxetine (neuropathic pain) | PO | - | 30 mg :: PO :: daily :: Start 30 mg daily; increase to 60 mg daily | - | Severe hepatic/renal impairment, MAOIs | Nausea, BP | - | ROUTINE | ROUTINE | - |
+| Amitriptyline (neuropathic pain) | - | - | 10-25 mg :: PO :: QHS :: Start 10-25 mg QHS; titrate to 50-100 mg QHS | - | Cardiac arrhythmia, glaucoma | QTc, anticholinergic effects | - | ROUTINE | ROUTINE | - |
 
 ---
 

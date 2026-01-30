@@ -1,3 +1,10 @@
+---
+title: "Autoimmune Encephalitis"
+description: "Clinical decision support for autoimmune encephalitis diagnosis and management"
+version: "1.0"
+setting: "ED, HOSP, OPD, ICU"
+---
+
 # Autoimmune Encephalitis
 
 **VERSION:** 1.0
@@ -181,103 +188,103 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Empiric acyclovir IV (until HSV ruled out) | STAT | STAT | - | STAT | 10 mg/kg IV q8h; continue until HSV PCR negative x2 (48h apart) or alternative diagnosis confirmed | Renal impairment (adjust dose); adequate hydration required | Renal function daily; hydration status; crystal nephropathy prevention |
-| Empiric antibiotics (if bacterial meningitis not excluded) | STAT | STAT | - | STAT | Ceftriaxone 2g IV q12h + vancomycin 15-20 mg/kg IV q8-12h + dexamethasone 0.15 mg/kg q6h x 4 days | Per individual drug allergies | Cultures; clinical response; renal function; vancomycin troughs |
-| Lorazepam (acute seizure) | STAT | STAT | - | STAT | 0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 minutes | Respiratory depression; acute narrow-angle glaucoma | Respiratory status; sedation level; airway patency |
-| Midazolam (if no IV access) | STAT | STAT | - | STAT | 10 mg IM (adults >40 kg) or 0.2 mg/kg intranasal | Respiratory depression | Same as lorazepam |
-| Lorazepam (catatonia challenge) | STAT | STAT | - | STAT | 1-2 mg IV; observe 15-30 min for response; if improvement, continue 1-2 mg IV/PO q4-8h (up to 8-24 mg/day) | Respiratory compromise; prior paradoxical response | Bush-Francis Catatonia Rating Scale; respiratory status; sedation |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Empiric acyclovir IV (until HSV ruled out) | IV | - | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h; continue until HSV PCR negative x2 (48h apart) or alternative diagnosis confirmed | Renal impairment (adjust dose); adequate hydration required | Renal function daily; hydration status; crystal nephropathy prevention | STAT | STAT | - | STAT |
+| Empiric antibiotics (if bacterial meningitis not excluded) | IV | - | 2g :: IV :: q12h :: Ceftriaxone 2g IV q12h + vancomycin 15-20 mg/kg IV q8-12h + dexamethasone 0.15 mg/kg q6h x 4 days | Per individual drug allergies | Cultures; clinical response; renal function; vancomycin troughs | STAT | STAT | - | STAT |
+| Lorazepam (acute seizure) | IV | - | 0.1 mg/kg :: IV :: - :: 0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 minutes | Respiratory depression; acute narrow-angle glaucoma | Respiratory status; sedation level; airway patency | STAT | STAT | - | STAT |
+| Midazolam (if no IV access) | IV | - | 10 mg :: IM :: - :: 10 mg IM (adults >40 kg) or 0.2 mg/kg intranasal | Respiratory depression | Same as lorazepam | STAT | STAT | - | STAT |
+| Lorazepam (catatonia challenge) | IV | - | 1-2 mg :: IV :: - :: 1-2 mg IV; observe 15-30 min for response; if improvement, continue 1-2 mg IV/PO q4-8h (up to 8-24 mg/day) | Respiratory compromise; prior paradoxical response | Bush-Francis Catatonia Rating Scale; respiratory status; sedation | STAT | STAT | - | STAT |
 
 *Note: Initiate empiric acyclovir and antibiotics IMMEDIATELY. Do NOT delay antimicrobials for LP. Start immunotherapy as soon as autoimmune encephalitis is clinically suspected -- do NOT wait for antibody results.*
 
 ### 3B. First-Line Immunotherapy
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Methylprednisolone IV | URGENT | STAT | - | STAT | 1000 mg IV daily x 5 days; infuse over 1-2 hours | Active untreated infection; uncontrolled diabetes; psychosis from steroids | Glucose q6h (target <180); BP; mood/sleep; I/O; GI prophylaxis |
-| Omeprazole (GI prophylaxis during steroids) | URGENT | STAT | - | STAT | 40 mg IV/PO daily during steroid course | PPI allergy | None routine |
-| Insulin sliding scale | URGENT | STAT | - | STAT | Per protocol if glucose >180 mg/dL | Hypoglycemia risk | Glucose q6h; adjust per response |
-| IVIG (intravenous immunoglobulin) | - | STAT | - | STAT | 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol; premedicate with acetaminophen, diphenhydramine | IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure | Renal function daily; headache (aseptic meningitis); thrombosis; volume overload; check IgA level before first dose |
-| Plasmapheresis (PLEX) | - | STAT | - | STAT | 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange; albumin replacement | Hemodynamic instability; sepsis; coagulopathy; poor vascular access | BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Methylprednisolone IV | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily x 5 days; infuse over 1-2 hours | Active untreated infection; uncontrolled diabetes; psychosis from steroids | Glucose q6h (target <180); BP; mood/sleep; I/O; GI prophylaxis | URGENT | STAT | - | STAT |
+| Omeprazole (GI prophylaxis during steroids) | IV | - | 40 mg :: IV :: daily :: 40 mg IV/PO daily during steroid course | PPI allergy | None routine | URGENT | STAT | - | STAT |
+| Insulin sliding scale | - | - | 180 mg :: - :: - :: Per protocol if glucose >180 mg/dL | Hypoglycemia risk | Glucose q6h; adjust per response | URGENT | STAT | - | STAT |
+| IVIG (intravenous immunoglobulin) | IV | - | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol; premedicate with acetaminophen, diphenhydramine | IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure | Renal function daily; headache (aseptic meningitis); thrombosis; volume overload; check IgA level before first dose | - | STAT | - | STAT |
+| Plasmapheresis (PLEX) | - | - | 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange; albumin replacement | Hemodynamic instability; sepsis; coagulopathy; poor vascular access | BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions | - | STAT | - | STAT |
 
 *Note: Methylprednisolone is typically started first (often in combination with IVIG or PLEX). IVIG and PLEX are considered equivalent first-line therapies and should be started concurrently or within days of steroids if clinical suspicion is high. For anti-NMDAR encephalitis, combination of all three first-line agents is common. PLEX may be preferred if rapid deterioration; IVIG may be preferred if hemodynamic instability or vascular access issues.*
 
 ### 3C. Second-Line Immunotherapy
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Rituximab | - | URGENT | ROUTINE | URGENT | 375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0 and day 14); premedicate with methylprednisolone 100 mg, acetaminophen, diphenhydramine | Active hepatitis B; severe active infection; live vaccines within 4 weeks | Hepatitis B serology (before first dose); CBC with differential q2-4 weeks; immunoglobulin levels q3 months; CD19/CD20 B-cell counts; infusion reactions; PML surveillance |
-| Cyclophosphamide | - | URGENT | ROUTINE | URGENT | 750 mg/m2 IV monthly x 6 cycles; pre-hydrate with 1L NS; administer with MESNA (uroprotection) | Pregnancy; active infection; bone marrow failure; bladder outlet obstruction | CBC weekly x 4 weeks after each cycle (nadir day 10-14); urinalysis; BMP; LFTs; fertility counseling; hemorrhagic cystitis prevention |
-| Tocilizumab (third-line) | - | EXT | EXT | EXT | 8 mg/kg IV every 4 weeks (max 800 mg/dose) | Active infection; hepatic impairment (ALT >5x ULN); diverticulitis; concurrent live vaccines | CBC, LFTs, lipids q4-8 weeks; infection surveillance; GI perforation risk; neutropenia |
-| Bortezomib (third-line) | - | EXT | EXT | EXT | 1.3 mg/m2 SC/IV on days 1, 4, 8, 11 of 21-day cycles x 4-6 cycles | Severe hepatic impairment; peripheral neuropathy grade 2+ | CBC; peripheral neuropathy assessment (dose-reduce or hold if worsens); herpes zoster prophylaxis (acyclovir 400 mg BID) |
-| Repeated IVIG or PLEX cycles | - | URGENT | ROUTINE | URGENT | IVIG 0.4 g/kg/day x 5 days (repeat q4 weeks) or PLEX 5 exchanges (repeat as needed) | Same as first-line | Same as first-line |
-| Oral prednisone taper (following IV methylprednisolone) | - | ROUTINE | ROUTINE | - | 1 mg/kg/day (max 60 mg) x 2 weeks; taper by 10 mg/week to 20 mg; then taper by 5 mg/week to discontinuation OR low-dose maintenance | Active infection; uncontrolled diabetes; avascular necrosis | Glucose; BP; bone density if prolonged; mood; weight; adrenal insufficiency on taper |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Rituximab | IV | - | 375 mg/m2 :: IV :: - :: 375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0 and day 14); premedicate with methylprednisolone 100 mg, acetaminophen, diphenhydramine | Active hepatitis B; severe active infection; live vaccines within 4 weeks | Hepatitis B serology (before first dose); CBC with differential q2-4 weeks; immunoglobulin levels q3 months; CD19/CD20 B-cell counts; infusion reactions; PML surveillance | - | URGENT | ROUTINE | URGENT |
+| Cyclophosphamide | IV | - | 750 mg/m2 :: IV :: monthly :: 750 mg/m2 IV monthly x 6 cycles; pre-hydrate with 1L NS; administer with MESNA (uroprotection) | Pregnancy; active infection; bone marrow failure; bladder outlet obstruction | CBC weekly x 4 weeks after each cycle (nadir day 10-14); urinalysis; BMP; LFTs; fertility counseling; hemorrhagic cystitis prevention | - | URGENT | ROUTINE | URGENT |
+| Tocilizumab (third-line) | IV | - | 8 mg/kg :: IV :: - :: 8 mg/kg IV every 4 weeks (max 800 mg/dose) | Active infection; hepatic impairment (ALT >5x ULN); diverticulitis; concurrent live vaccines | CBC, LFTs, lipids q4-8 weeks; infection surveillance; GI perforation risk; neutropenia | - | EXT | EXT | EXT |
+| Bortezomib (third-line) | IV | - | 1.3 mg/m2 :: IV :: - :: 1.3 mg/m2 SC/IV on days 1, 4, 8, 11 of 21-day cycles x 4-6 cycles | Severe hepatic impairment; peripheral neuropathy grade 2+ | CBC; peripheral neuropathy assessment (dose-reduce or hold if worsens); herpes zoster prophylaxis (acyclovir 400 mg BID) | - | EXT | EXT | EXT |
+| Repeated IVIG or PLEX cycles | PO | - | 0.4 g/kg :: PO :: daily x 5 days :: IVIG 0.4 g/kg/day x 5 days (repeat q4 weeks) or PLEX 5 exchanges (repeat as needed) | Same as first-line | Same as first-line | - | URGENT | ROUTINE | URGENT |
+| Oral prednisone taper (following IV methylprednisolone) | IV | - | 1 mg/kg :: PO :: - :: 1 mg/kg/day (max 60 mg) x 2 weeks; taper by 10 mg/week to 20 mg; then taper by 5 mg/week to discontinuation OR low-dose maintenance | Active infection; uncontrolled diabetes; avascular necrosis | Glucose; BP; bone density if prolonged; mood; weight; adrenal insufficiency on taper | - | ROUTINE | ROUTINE | - |
 
 *Note: Second-line therapy should be initiated if no improvement within 2 weeks of first-line therapy OR if clinically worsening despite first-line treatment. For anti-NMDAR encephalitis, early escalation to rituximab is associated with improved outcomes. Rituximab is generally preferred over cyclophosphamide given better safety profile. Third-line agents (tocilizumab, bortezomib) reserved for refractory cases failing rituximab/cyclophosphamide.*
 
 ### 3D. Seizure Management
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Levetiracetam (first-line ASM) | STAT | STAT | ROUTINE | STAT | Load: 1000-1500 mg IV; Maintenance: 500-1500 mg IV/PO BID (max 3000 mg/day) | Renal impairment (adjust dose per CrCl) | Behavioral changes (rage, irritability); suicidality; renal function |
-| Lacosamide (second-line ASM) | URGENT | URGENT | ROUTINE | URGENT | Load: 200-400 mg IV; Maintenance: 100-200 mg IV/PO BID (max 400 mg/day) | Second/third degree AV block; severe hepatic impairment | ECG (PR prolongation); dizziness; cardiac monitoring during load |
-| Valproic acid | URGENT | URGENT | ROUTINE | URGENT | Load: 20-40 mg/kg IV (max rate 6 mg/kg/min); Maintenance: 250-500 mg IV/PO q8h (target level 50-100 mcg/mL) | Pregnancy (teratogenic -- Category X); hepatic disease; urea cycle disorders; mitochondrial disease (POLG) | LFTs; ammonia; CBC (thrombocytopenia); drug level; pancreatitis |
-| Brivaracetam | - | URGENT | ROUTINE | URGENT | Load: 100 mg IV; Maintenance: 50-100 mg IV/PO BID (max 200 mg/day) | Hepatic impairment (reduce dose) | Behavioral changes; sedation |
-| Clobazam | - | ROUTINE | ROUTINE | ROUTINE | Start 5-10 mg BID; titrate to 20-40 mg/day in divided doses | Severe hepatic impairment; myasthenia gravis | Sedation; CYP2C19 poor metabolizers (reduce dose); tolerance; dependence |
-| Phenytoin/fosphenytoin (refractory) | STAT | STAT | - | STAT | Fosphenytoin: 20 mg PE/kg IV (max rate 150 mg PE/min); Maintenance: 5-7 mg/kg/day divided BID-TID (target level 10-20 mcg/mL) | AV block; bradycardia | Continuous cardiac monitoring during load; drug level; purple glove syndrome (peripheral IV); gingival hyperplasia |
-| Phenobarbital (refractory) | - | URGENT | - | URGENT | Load: 15-20 mg/kg IV (max rate 60 mg/min); Maintenance: 1-3 mg/kg/day (target level 15-40 mcg/mL) | Severe respiratory depression; porphyria | Respiratory depression; sedation; hypotension; drug level |
-| Midazolam infusion (refractory SE) | - | - | - | STAT | Bolus: 0.2 mg/kg IV; Infusion: 0.1-2.0 mg/kg/hr; titrate to EEG burst suppression | Unprotected airway (requires intubation) | Continuous EEG; respiratory status; hemodynamics; tachyphylaxis |
-| Propofol infusion (refractory SE) | - | - | - | STAT | Bolus: 1-2 mg/kg IV; Infusion: 20-80 mcg/kg/min (max 5 mg/kg/hr to avoid PRIS) | Propofol infusion syndrome risk (prolonged use >48h at high doses); egg/soy allergy | Continuous EEG; triglycerides q48h; CPK; lactate; hemodynamics; PRIS surveillance |
-| Ketamine infusion (super-refractory SE) | - | - | - | STAT | Bolus: 1-3 mg/kg IV; Infusion: 0.5-5 mg/kg/hr | Uncontrolled hypertension; raised ICP (relative) | Continuous EEG; BP; HR; hepatic function; laryngospasm risk |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Levetiracetam (first-line ASM) | IV | - | 1000-1500 mg :: IV :: BID :: Load: 1000-1500 mg IV; Maintenance: 500-1500 mg IV/PO BID (max 3000 mg/day) | - | Renal impairment (adjust dose per CrCl) | Behavioral changes (rage, irritability); suicidality; renal function | STAT | STAT | ROUTINE | STAT |
+| Lacosamide (second-line ASM) | IV | - | 200-400 mg :: IV :: BID :: Load: 200-400 mg IV; Maintenance: 100-200 mg IV/PO BID (max 400 mg/day) | - | Second/third degree AV block; severe hepatic impairment | ECG (PR prolongation); dizziness; cardiac monitoring during load | URGENT | URGENT | ROUTINE | URGENT |
+| Valproic acid | IV | - | 20-40 mg/kg :: IV :: q8h :: Load: 20-40 mg/kg IV (max rate 6 mg/kg/min); Maintenance: 250-500 mg IV/PO q8h (target level 50-100 mcg/mL) | - | Pregnancy (teratogenic -- Category X); hepatic disease; urea cycle disorders; mitochondrial disease (POLG) | LFTs; ammonia; CBC (thrombocytopenia); drug level; pancreatitis | URGENT | URGENT | ROUTINE | URGENT |
+| Brivaracetam | IV | - | 100 mg :: IV :: BID :: Load: 100 mg IV; Maintenance: 50-100 mg IV/PO BID (max 200 mg/day) | - | Hepatic impairment (reduce dose) | Behavioral changes; sedation | - | URGENT | ROUTINE | URGENT |
+| Clobazam | PO | - | 5-10 mg :: PO :: BID :: Start 5-10 mg BID; titrate to 20-40 mg/day in divided doses | - | Severe hepatic impairment; myasthenia gravis | Sedation; CYP2C19 poor metabolizers (reduce dose); tolerance; dependence | - | ROUTINE | ROUTINE | ROUTINE |
+| Phenytoin/fosphenytoin (refractory) | IV | - | 20 mg :: IV :: BID :: Fosphenytoin: 20 mg PE/kg IV (max rate 150 mg PE/min); Maintenance: 5-7 mg/kg/day divided BID-TID (target level 10-20 mcg/mL) | - | AV block; bradycardia | Continuous cardiac monitoring during load; drug level; purple glove syndrome (peripheral IV); gingival hyperplasia | STAT | STAT | - | STAT |
+| Phenobarbital (refractory) | IV | - | 15-20 mg/kg :: IV :: - :: Load: 15-20 mg/kg IV (max rate 60 mg/min); Maintenance: 1-3 mg/kg/day (target level 15-40 mcg/mL) | - | Severe respiratory depression; porphyria | Respiratory depression; sedation; hypotension; drug level | - | URGENT | - | URGENT |
+| Midazolam infusion (refractory SE) | IV | - | 0.2 mg/kg :: IV :: once :: Bolus: 0.2 mg/kg IV; Infusion: 0.1-2.0 mg/kg/hr; titrate to EEG burst suppression | - | Unprotected airway (requires intubation) | Continuous EEG; respiratory status; hemodynamics; tachyphylaxis | - | - | - | STAT |
+| Propofol infusion (refractory SE) | IV | - | 1-2 mg/kg :: IV :: once :: Bolus: 1-2 mg/kg IV; Infusion: 20-80 mcg/kg/min (max 5 mg/kg/hr to avoid PRIS) | - | Propofol infusion syndrome risk (prolonged use >48h at high doses); egg/soy allergy | Continuous EEG; triglycerides q48h; CPK; lactate; hemodynamics; PRIS surveillance | - | - | - | STAT |
+| Ketamine infusion (super-refractory SE) | IV | - | 1-3 mg/kg :: IV :: once :: Bolus: 1-3 mg/kg IV; Infusion: 0.5-5 mg/kg/hr | - | Uncontrolled hypertension; raised ICP (relative) | Continuous EEG; BP; HR; hepatic function; laryngospasm risk | - | - | - | STAT |
 
 *Note: Seizures in autoimmune encephalitis are driven by antibody-mediated mechanisms -- immunotherapy is the definitive seizure treatment. ASMs control acute seizures but will not resolve the underlying cause. Avoid carbamazepine/oxcarbazepine in LGI1 encephalitis (may worsen hyponatremia). Levetiracetam and lacosamide are preferred first-line ASMs given favorable drug interaction profiles with immunotherapy.*
 
 ### 3E. Psychiatric Symptom Management
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Haloperidol (acute agitation) | STAT | STAT | - | STAT | 0.5-2 mg IV/IM q4-6h PRN (lowest effective dose); max 20 mg/day | QTc >500 ms; Parkinson disease; prior NMS | ECG (QTc); EPS; NMS surveillance; temperature; CPK if NMS suspected |
-| Olanzapine (agitation/psychosis) | - | ROUTINE | ROUTINE | ROUTINE | 2.5-5 mg PO/IM BID (start low); max 20 mg/day | QTc prolongation; metabolic syndrome | Glucose; lipids; QTc; weight; sedation; EPS |
-| Quetiapine (psychosis/insomnia) | - | ROUTINE | ROUTINE | - | Start 25-50 mg qHS; titrate to 200-400 mg/day in divided doses | QTc prolongation; severe hepatic impairment | QTc; metabolic parameters; orthostatic BP; sedation |
-| Lorazepam (catatonia -- first-line) | STAT | STAT | ROUTINE | STAT | Start 1-2 mg IV/PO; if response, 1-2 mg q4-8h (escalate to 8-24 mg/day as needed for catatonia) | Respiratory compromise (high doses) | Bush-Francis Catatonia Rating Scale; respiratory rate; sedation; airway |
-| Dexmedetomidine (agitation in ICU) | - | - | - | STAT | Load: 1 mcg/kg IV over 10 min (optional); Infusion: 0.2-0.7 mcg/kg/hr (max 1.5 mcg/kg/hr) | Severe bradycardia; advanced heart block | HR (bradycardia); BP (hypotension); sedation level (RASS) |
-| Valproic acid (mood stabilization/agitation) | - | ROUTINE | ROUTINE | ROUTINE | 250-500 mg PO BID; titrate to level 50-100 mcg/mL (dual benefit: mood + seizure) | Pregnancy; hepatic disease | LFTs; ammonia; CBC; drug level |
-| Melatonin (sleep-wake disturbance) | - | ROUTINE | ROUTINE | ROUTINE | 3-10 mg PO qHS | None significant | Sleep quality; no significant drug interactions |
-| Trazodone (insomnia) | - | ROUTINE | ROUTINE | - | 25-100 mg PO qHS | Concurrent MAOIs; QTc prolongation | Orthostatic hypotension; priapism (rare); sedation |
-| Electroconvulsive therapy (ECT) (refractory catatonia) | - | EXT | EXT | EXT | Per psychiatry protocol; typically 3x/week | Pheochromocytoma; raised ICP (relative) | Anesthesia monitoring; cognitive function; post-procedure seizure threshold |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Haloperidol (acute agitation) | IV | - | 0.5-2 mg :: IV :: PRN :: 0.5-2 mg IV/IM q4-6h PRN (lowest effective dose); max 20 mg/day | QTc >500 ms; Parkinson disease; prior NMS | ECG (QTc); EPS; NMS surveillance; temperature; CPK if NMS suspected | STAT | STAT | - | STAT |
+| Olanzapine (agitation/psychosis) | IM | - | 2.5-5 mg :: IM :: BID :: 2.5-5 mg PO/IM BID (start low); max 20 mg/day | QTc prolongation; metabolic syndrome | Glucose; lipids; QTc; weight; sedation; EPS | - | ROUTINE | ROUTINE | ROUTINE |
+| Quetiapine (psychosis/insomnia) | PO | - | 25-50 mg :: PO :: qHS :: Start 25-50 mg qHS; titrate to 200-400 mg/day in divided doses | QTc prolongation; severe hepatic impairment | QTc; metabolic parameters; orthostatic BP; sedation | - | ROUTINE | ROUTINE | - |
+| Lorazepam (catatonia -- first-line) | IV | - | 1-2 mg :: IV :: - :: Start 1-2 mg IV/PO; if response, 1-2 mg q4-8h (escalate to 8-24 mg/day as needed for catatonia) | Respiratory compromise (high doses) | Bush-Francis Catatonia Rating Scale; respiratory rate; sedation; airway | STAT | STAT | ROUTINE | STAT |
+| Dexmedetomidine (agitation in ICU) | IV | - | 1 mcg/kg :: IV :: - :: Load: 1 mcg/kg IV over 10 min (optional); Infusion: 0.2-0.7 mcg/kg/hr (max 1.5 mcg/kg/hr) | Severe bradycardia; advanced heart block | HR (bradycardia); BP (hypotension); sedation level (RASS) | - | - | - | STAT |
+| Valproic acid (mood stabilization/agitation) | PO | - | 250-500 mg :: PO :: BID :: 250-500 mg PO BID; titrate to level 50-100 mcg/mL (dual benefit: mood + seizure) | Pregnancy; hepatic disease | LFTs; ammonia; CBC; drug level | - | ROUTINE | ROUTINE | ROUTINE |
+| Melatonin (sleep-wake disturbance) | PO | - | 3-10 mg :: PO :: qHS :: 3-10 mg PO qHS | None significant | Sleep quality; no significant drug interactions | - | ROUTINE | ROUTINE | ROUTINE |
+| Trazodone (insomnia) | PO | - | 25-100 mg :: PO :: qHS :: 25-100 mg PO qHS | Concurrent MAOIs; QTc prolongation | Orthostatic hypotension; priapism (rare); sedation | - | ROUTINE | ROUTINE | - |
+| Electroconvulsive therapy (ECT) (refractory catatonia) | - | - | Per psychiatry protocol; typically 3x/week | Pheochromocytoma; raised ICP (relative) | Anesthesia monitoring; cognitive function; post-procedure seizure threshold | - | EXT | EXT | EXT |
 
 *Note: CAUTION with antipsychotics in autoimmune encephalitis -- patients (especially anti-NMDAR) are highly susceptible to neuroleptic malignant syndrome (NMS) and EPS. Use LOWEST effective doses. Benzodiazepines (lorazepam) are first-line for catatonia and agitation. Catatonia may be present in up to 40% of anti-NMDAR cases. If catatonia does not respond to lorazepam, consider ECT before escalating antipsychotics. Psychiatric symptoms in AE are driven by antibody-mediated mechanisms -- immunotherapy is the definitive treatment.*
 
 ### 3F. ICU-Specific Treatments
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Intubation and mechanical ventilation | - | - | - | STAT | RSI: avoid succinylcholine if hyperkalemia risk; maintain normocapnia | As per standard airway management | Ventilator parameters; ABG; daily SBT when appropriate |
-| Labetalol IV (autonomic hypertensive crisis) | - | - | - | STAT | 10-20 mg IV q10-15min PRN; or infusion 0.5-2 mg/min; target SBP <180 | Severe bradycardia; AV block; decompensated CHF; asthma | Continuous BP; HR; I/O |
-| Esmolol IV (autonomic tachycardia) | - | - | - | STAT | Bolus: 500 mcg/kg over 1 min; Infusion: 50-200 mcg/kg/min | Severe bradycardia; decompensated CHF; cardiogenic shock | Continuous HR/BP; ECG |
-| Atropine (autonomic bradycardia) | - | - | - | STAT | 0.5-1 mg IV q3-5min (max 3 mg total) | Tachycardia; thyrotoxicosis | HR; rhythm |
-| Isoproterenol drip (severe autonomic bradycardia) | - | - | - | STAT | 2-10 mcg/min IV infusion; titrate to HR >60 | Tachyarrhythmia; digoxin toxicity | Continuous ECG; HR; BP |
-| Temporary transvenous pacemaker | - | - | - | STAT | Per cardiology if pharmacologic measures fail | Active infection at insertion site | Capture; sensing; threshold checks |
-| Norepinephrine (autonomic hypotension) | - | - | - | STAT | 0.1-0.5 mcg/kg/min IV; titrate to MAP >65 | Peripheral ischemia risk at high doses | Arterial line; MAP; lactate; urine output |
-| DVT prophylaxis (enoxaparin) | - | STAT | - | STAT | 40 mg SC daily (adjust for renal function: 30 mg SC daily if CrCl <30) | Active bleeding; HIT; severe thrombocytopenia | Platelet count; anti-Xa if renal impairment; bleeding signs |
-| Temperature management (hyperthermia) | - | - | - | STAT | Targeted temperature: 36-37C; cooling blankets; acetaminophen 1g IV/PO q6h PRN | Avoid overcooling; avoid shivering (increases metabolic demand) | Continuous temperature; shivering assessment (BSAS) |
-| Sodium correction (hyponatremia -- LGI1) | URGENT | URGENT | ROUTINE | URGENT | If Na <125: 3% NaCl 100-150 mL IV over 10-20 min (repeat up to 3x); Target correction: 4-6 mEq/L in first 6h, max 8 mEq/L in 24h | Avoid overcorrection (osmotic demyelination risk) | Sodium q2-4h during correction; urine output; neurologic status |
-| Fludrocortisone (chronic hyponatremia -- LGI1) | - | ROUTINE | ROUTINE | - | 0.05-0.2 mg PO daily | CHF; hypertension | Sodium; potassium; BP; edema |
-| Fluid restriction (SIADH-related hyponatremia) | - | ROUTINE | - | ROUTINE | Restrict to 1-1.2 L/day if SIADH suspected (LGI1) | Dehydration risk | Sodium; I/O; daily weight; urine osmolality |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Intubation and mechanical ventilation | - | - | RSI: avoid succinylcholine if hyperkalemia risk; maintain normocapnia | As per standard airway management | Ventilator parameters; ABG; daily SBT when appropriate | - | - | - | STAT |
+| Labetalol IV (autonomic hypertensive crisis) | IV | - | 10-20 mg :: IV :: PRN :: 10-20 mg IV q10-15min PRN; or infusion 0.5-2 mg/min; target SBP <180 | Severe bradycardia; AV block; decompensated CHF; asthma | Continuous BP; HR; I/O | - | - | - | STAT |
+| Esmolol IV (autonomic tachycardia) | IV | - | 500 mcg/kg :: IV :: once :: Bolus: 500 mcg/kg over 1 min; Infusion: 50-200 mcg/kg/min | Severe bradycardia; decompensated CHF; cardiogenic shock | Continuous HR/BP; ECG | - | - | - | STAT |
+| Atropine (autonomic bradycardia) | IV | - | 0.5-1 mg :: IV :: - :: 0.5-1 mg IV q3-5min (max 3 mg total) | Tachycardia; thyrotoxicosis | HR; rhythm | - | - | - | STAT |
+| Isoproterenol drip (severe autonomic bradycardia) | IV | - | 2-10 mcg :: IV :: - :: 2-10 mcg/min IV infusion; titrate to HR >60 | Tachyarrhythmia; digoxin toxicity | Continuous ECG; HR; BP | - | - | - | STAT |
+| Temporary transvenous pacemaker | - | - | Per cardiology if pharmacologic measures fail | Active infection at insertion site | Capture; sensing; threshold checks | - | - | - | STAT |
+| Norepinephrine (autonomic hypotension) | IV | - | 0.1-0.5 mcg/kg :: IV :: - :: 0.1-0.5 mcg/kg/min IV; titrate to MAP >65 | Peripheral ischemia risk at high doses | Arterial line; MAP; lactate; urine output | - | - | - | STAT |
+| DVT prophylaxis (enoxaparin) | SC | - | 40 mg :: SC :: daily :: 40 mg SC daily (adjust for renal function: 30 mg SC daily if CrCl <30) | Active bleeding; HIT; severe thrombocytopenia | Platelet count; anti-Xa if renal impairment; bleeding signs | - | STAT | - | STAT |
+| Temperature management (hyperthermia) | IV | - | 1g :: IV :: q6h :: Targeted temperature: 36-37C; cooling blankets; acetaminophen 1g IV/PO q6h PRN | Avoid overcooling; avoid shivering (increases metabolic demand) | Continuous temperature; shivering assessment (BSAS) | - | - | - | STAT |
+| Sodium correction (hyponatremia -- LGI1) | IV | - | 100-150 mL :: IV :: - :: If Na <125: 3% NaCl 100-150 mL IV over 10-20 min (repeat up to 3x); Target correction: 4-6 mEq/L in first 6h, max 8 mEq/L in 24h | Avoid overcorrection (osmotic demyelination risk) | Sodium q2-4h during correction; urine output; neurologic status | URGENT | URGENT | ROUTINE | URGENT |
+| Fludrocortisone (chronic hyponatremia -- LGI1) | PO | - | 0.05-0.2 mg :: PO :: daily :: 0.05-0.2 mg PO daily | CHF; hypertension | Sodium; potassium; BP; edema | - | ROUTINE | ROUTINE | - |
+| Fluid restriction (SIADH-related hyponatremia) | - | - | Restrict to 1-1.2 L/day if SIADH suspected (LGI1) | Dehydration risk | Sodium; I/O; daily weight; urine osmolality | - | ROUTINE | - | ROUTINE |
 
 *Note: Central hypoventilation occurs in anti-NMDAR encephalitis and may require prolonged mechanical ventilation (weeks to months). Autonomic instability (tachycardia/bradycardia alternating, blood pressure lability, central hyperthermia, cardiac dysrhythmias) is a hallmark of severe anti-NMDAR encephalitis. LGI1 encephalitis frequently causes SIADH-related hyponatremia. Do NOT over-correct sodium (risk of osmotic demyelination).*
 
 ### 3G. Long-Term Immunosuppression / Maintenance
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Mycophenolate mofetil (CellCept) | - | - | ROUTINE | - | Start 500 mg PO BID; increase to 1000 mg PO BID over 2-4 weeks (target 1500-3000 mg/day) | Pregnancy (Category D -- teratogenic); active infection | CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms; infection surveillance; pregnancy prevention |
-| Azathioprine (Imuran) | - | - | ROUTINE | - | Start 50 mg PO daily; increase by 50 mg every 2 weeks to target 2-3 mg/kg/day | TPMT deficiency (check before starting); pregnancy (relative) | TPMT genotype/activity before starting; CBC q2 weeks x 2 months, then monthly; LFTs; pancreatitis |
-| Rituximab (maintenance) | - | - | ROUTINE | - | 500-1000 mg IV every 6 months; re-dose based on CD19/CD20 B-cell repopulation or clinical relapse | Active hepatitis B; severe active infection | CD19/CD20 counts q3 months; immunoglobulin levels q3-6 months; hepatitis B surveillance; infection monitoring; PML surveillance |
-| Oral prednisone (low-dose maintenance) | - | - | ROUTINE | - | 5-10 mg PO daily; aim to taper off within 3-6 months if on steroid-sparing agent | Poorly controlled diabetes; active infection; avascular necrosis | Glucose; BP; bone density (DEXA if >3 months); weight; mood; cataracts; adrenal assessment on taper |
-| IVIG (maintenance) | - | - | ROUTINE | - | 0.4 g/kg IV every 4 weeks OR 1-2 g/kg IV every 4-6 weeks (adjust per response) | IgA deficiency; thromboembolic history | Renal function; headache; IgG trough levels; infusion reactions |
-| Calcium + Vitamin D (bone protection with steroids) | - | ROUTINE | ROUTINE | - | Calcium 1000-1200 mg/day + Vitamin D 1000-2000 IU/day | Hypercalcemia; kidney stones | 25-OH Vitamin D level; calcium; DEXA baseline if anticipated steroid use >3 months |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Mycophenolate mofetil (CellCept) | PO | - | 500 mg :: PO :: BID :: Start 500 mg PO BID; increase to 1000 mg PO BID over 2-4 weeks (target 1500-3000 mg/day) | Pregnancy (Category D -- teratogenic); active infection | CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms; infection surveillance; pregnancy prevention | - | - | ROUTINE | - |
+| Azathioprine (Imuran) | PO | - | 50 mg :: PO :: daily :: Start 50 mg PO daily; increase by 50 mg every 2 weeks to target 2-3 mg/kg/day | TPMT deficiency (check before starting); pregnancy (relative) | TPMT genotype/activity before starting; CBC q2 weeks x 2 months, then monthly; LFTs; pancreatitis | - | - | ROUTINE | - |
+| Rituximab (maintenance) | IV | - | 500-1000 mg :: IV :: - :: 500-1000 mg IV every 6 months; re-dose based on CD19/CD20 B-cell repopulation or clinical relapse | Active hepatitis B; severe active infection | CD19/CD20 counts q3 months; immunoglobulin levels q3-6 months; hepatitis B surveillance; infection monitoring; PML surveillance | - | - | ROUTINE | - |
+| Oral prednisone (low-dose maintenance) | PO | - | 5-10 mg :: PO :: daily :: 5-10 mg PO daily; aim to taper off within 3-6 months if on steroid-sparing agent | Poorly controlled diabetes; active infection; avascular necrosis | Glucose; BP; bone density (DEXA if >3 months); weight; mood; cataracts; adrenal assessment on taper | - | - | ROUTINE | - |
+| IVIG (maintenance) | IV | - | 0.4 g/kg :: IV :: - :: 0.4 g/kg IV every 4 weeks OR 1-2 g/kg IV every 4-6 weeks (adjust per response) | IgA deficiency; thromboembolic history | Renal function; headache; IgG trough levels; infusion reactions | - | - | ROUTINE | - |
+| Calcium + Vitamin D (bone protection with steroids) | - | - | 1000-1200 mg/day :: PO :: - :: Calcium 1000-1200 mg/day + Vitamin D 1000-2000 IU/day | Hypercalcemia; kidney stones | 25-OH Vitamin D level; calcium; DEXA baseline if anticipated steroid use >3 months | - | ROUTINE | ROUTINE | - |
 
 *Note: Long-term immunosuppression is guided by antibody subtype, relapse risk, and tumor status. Anti-NMDAR encephalitis has ~12-20% relapse rate. Rituximab maintenance is most commonly used for relapse prevention. Mycophenolate and azathioprine are steroid-sparing alternatives. Monitor for immunosuppression-related complications (infection, malignancy). Duration of maintenance therapy is individualized -- typically minimum 2 years; some patients require indefinite treatment.*
 

@@ -1,0 +1,1074 @@
+{
+  "id": "breakthrough-seizure",
+  "title": "Breakthrough Seizure in Known Epilepsy",
+  "version": "1.0",
+  "icd10": [
+    "** G40.909 (Epilepsy",
+    "unspecified",
+    "not intractable",
+    "without status epilepticus)",
+    "G40.901 (Epilepsy",
+    "unspecified",
+    "not intractable",
+    "with status epilepticus)",
+    "G40.919 (Epilepsy",
+    "unspecified",
+    "intractable",
+    "without status epilepticus)",
+    "R56.9 (Unspecified convulsions)"
+  ],
+  "scope": "** Evaluation and management of breakthrough seizures in adults with known epilepsy who are on established antiseizure medication (ASM) regimens. Covers identification of precipitants, medication level assessment, adjustment strategies, and evaluation for secondary causes. Excludes new-onset seizure (separate workup), status epilepticus (see SE template), and non-epileptic events (psychogenic non-epileptic seizures).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Antiseizure medication (ASM) levels",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "**CRITICAL**: Subtherapeutic levels are #1 cause of breakthrough seizures; check ALL ASMs with available assays",
+          "target": "Therapeutic ranges (see Appendix); subtherapeutic = adjust dose or assess adherence"
+        },
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection as precipitant; baseline for ASM hematologic effects; thrombocytopenia (valproate)",
+          "target": "Normal; leukocytosis → infection workup; low platelets → consider valproate toxicity"
+        },
+        {
+          "item": "CMP (BMP + LFTs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolyte abnormalities (hyponatremia common with carbamazepine/oxcarbazepine); renal function (affects ASM dosing); hepatic function (ASM metabolism, toxicity); glucose (hypoglycemia as seizure cause)",
+          "target": "Normal; hyponatremia <130 mEq/L can provoke seizures; elevated LFTs → ASM hepatotoxicity"
+        },
+        {
+          "item": "Blood glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypoglycemia is reversible seizure cause; hyperglycemia (DKA) can also cause seizures",
+          "target": "70-180 mg/dL; hypoglycemia <60 mg/dL → treat immediately"
+        },
+        {
+          "item": "Sodium",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hyponatremia: carbamazepine and oxcarbazepine cause SIADH; <125-130 mEq/L can provoke seizures",
+          "target": "135-145 mEq/L; <130 → correct slowly (risk of osmotic demyelination)"
+        },
+        {
+          "item": "Calcium (ionized)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypocalcemia can cause seizures; also check if hypocalcemic tetany suspected",
+          "target": "Normal ionized Ca; low → replete"
+        },
+        {
+          "item": "Magnesium",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypomagnesemia lowers seizure threshold; chronic ASM use may deplete Mg",
+          "target": ">2.0 mg/dL; low → replete"
+        },
+        {
+          "item": "Urinalysis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "UTI is common occult infection that provokes seizures, especially in elderly",
+          "target": "Normal; pyuria/bacteriuria → treat UTI"
+        },
+        {
+          "item": "Urine drug screen (UDS)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Illicit drug use (cocaine, amphetamines) can provoke seizures; drug interactions with ASMs; adherence assessment",
+          "target": "Negative; positive → specific drug-related seizure risk assessment"
+        },
+        {
+          "item": "Alcohol level",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Alcohol withdrawal seizures; intoxication; binge drinking",
+          "target": "Negative or low; elevated or history of recent heavy use → alcohol withdrawal protocol"
+        },
+        {
+          "item": "Pregnancy test (β-hCG)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Pregnancy affects ASM levels (increased clearance, volume distribution); teratogenicity concerns; seizure risk in pregnancy",
+          "target": "Document result; if positive → urgent neurology/OB consultation; ASM teratogenicity counseling"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Free (unbound) ASM levels",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "For highly protein-bound drugs (phenytoin, valproate) in patients with hypoalbuminemia, renal failure, pregnancy, or polypharmacy; free level is the active fraction",
+          "target": "Free phenytoin: 1-2 mcg/mL; free valproate: 5-15 mcg/mL; adjusted interpretation based on clinical context"
+        },
+        {
+          "item": "Ammonia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Valproate-induced hyperammonemic encephalopathy (can occur with normal LFTs); confusion/lethargy post-ictal vs. encephalopathy",
+          "target": "<35 μmol/L; elevated → valproate toxicity; consider discontinuation"
+        },
+        {
+          "item": "Lactate",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Post-ictal lactate elevation (typically resolves within 2h); persistent elevation may indicate status epilepticus or alternative cause",
+          "target": "Mildly elevated post-ictal (normalizes quickly); persistent elevation concerning"
+        },
+        {
+          "item": "Prolactin",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Elevated 10-20 min post-seizure (2-3x baseline); helps distinguish epileptic seizure from psychogenic non-epileptic seizure (PNES); must be drawn within 20 min",
+          "target": "2-3x baseline within 20 min of convulsive seizure; normal in PNES"
+        },
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction can affect seizure threshold and ASM metabolism",
+          "target": "Normal"
+        },
+        {
+          "item": "Cortisol (AM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Adrenal insufficiency; chronic ASM use (enzyme inducers) may affect cortisol",
+          "target": "Normal"
+        },
+        {
+          "item": "B12 / Folate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Phenytoin and carbamazepine can deplete folate; B12 deficiency neuropathy; pregnancy planning",
+          "target": "Normal; low → supplement"
+        },
+        {
+          "item": "Vitamin D (25-OH)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Enzyme-inducing ASMs (phenytoin, carbamazepine, phenobarbital) increase vitamin D metabolism → osteoporosis risk",
+          "target": ">30 ng/mL; low → supplement"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "ASM pharmacogenomics (HLA typing)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HLA-B*15:02 (carbamazepine/SJS risk in Asian populations); HLA-A*31:01 (carbamazepine hypersensitivity in Europeans); before starting new ASMs",
+          "target": "Negative for risk alleles; positive → avoid associated ASM"
+        },
+        {
+          "item": "Carbamazepine-10,11-epoxide level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Active metabolite of carbamazepine; may be elevated when total level appears therapeutic (especially with inhibitors like valproate); correlates with toxicity",
+          "target": "<9 mcg/mL; elevated → toxicity even with normal carbamazepine level"
+        },
+        {
+          "item": "Autoimmune encephalitis panel",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If new seizure semiology, cognitive decline, or refractory seizures in previously controlled patient; autoimmune etiology",
+          "target": "Negative; positive → autoimmune encephalitis workup"
+        },
+        {
+          "item": "CSF analysis",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "If infection, autoimmune encephalitis, or CNS malignancy suspected as new cause",
+          "target": "Normal; abnormal → specific diagnosis"
+        },
+        {
+          "item": "Genetic epilepsy panel",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If genetic cause suspected (family history, syndromic features, drug-resistant epilepsy); may guide ASM selection",
+          "target": "Specific mutations (SCN1A, SCN2A, KCNQ2, etc.) may inform treatment choices (e.g., avoid sodium channel blockers in Dravet syndrome)"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "LP — Generally NOT indicated",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "timing": "NOT routinely indicated for uncomplicated breakthrough seizure; **INDICATED if:** Suspected meningitis/encephalitis (fever, meningismus, altered mentation beyond typical post-ictal); suspected autoimmune encephalitis; immunocompromised patient with seizure",
+          "target": "Normal in uncomplicated breakthrough; pleocytosis → infection or autoimmune; elevated protein; specific antibodies",
+          "contraindications": "Mass lesion with mass effect; coagulopathy"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "**NOT routinely needed** for uncomplicated breakthrough seizure in known epilepsy with return to baseline; **INDICATED if:** Head trauma (fall during seizure), prolonged post-ictal state (>30 min), focal neurologic deficit, new seizure semiology, anticoagulation, fever + seizure, first seizure at this facility",
+          "target": "Acute hemorrhage; mass lesion; edema; hydrocephalus; prior surgical changes",
+          "contraindications": "None (for non-contrast); pregnancy (benefit outweighs minimal risk)"
+        },
+        {
+          "item": "MRI brain with and without contrast",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**NOT acutely needed** if stable known epilepsy with unchanged seizures; **INDICATED if:** Change in seizure semiology, increased seizure frequency without clear precipitant, new focal deficit, concern for progressive lesion, presurgical evaluation",
+          "target": "Tumor; mesial temporal sclerosis; cortical dysplasia; vascular malformation; new structural cause",
+          "contraindications": "MRI-incompatible implants; VNS devices (check MRI compatibility of specific device)"
+        },
+        {
+          "item": "ECG (12-lead)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Post-ictal arrhythmia; syncope vs. seizure; QTc prolongation (some ASMs); baseline for ASM changes",
+          "target": "Normal; arrhythmia may indicate cardiac cause; prolonged QTc (avoid QT-prolonging ASMs)",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "EEG (routine/outpatient)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within 24-48h if possible (higher yield closer to seizure); characterize epileptiform activity; confirm epileptic vs. non-epileptic; guide ASM choice; localization",
+          "target": "Epileptiform discharges (spikes, sharp waves); focal vs. generalized; specific epilepsy syndrome features",
+          "contraindications": "None"
+        },
+        {
+          "item": "Continuous EEG (cEEG) monitoring",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "**INDICATED if:** Prolonged or fluctuating alteration of consciousness; concern for nonconvulsive status epilepticus (NCSE); ICU patient with unexplained encephalopathy; frequent seizures",
+          "target": "Ictal patterns; NCSE; interictal epileptiform activity; quantify seizure burden",
+          "contraindications": "None; resource-dependent"
+        },
+        {
+          "item": "Ambulatory EEG (outpatient)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Capture typical events if infrequent; home monitoring for 24-72h or longer",
+          "target": "Ictal events; interictal discharges; seizure frequency",
+          "contraindications": "Patient cooperation required"
+        },
+        {
+          "item": "Video-EEG monitoring (EMU admission)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Characterize events if diagnostic uncertainty (epileptic vs. PNES); presurgical evaluation; medication taper for surgery",
+          "target": "Ictal semiology; EEG correlation; localization for surgery",
+          "contraindications": "Requires specialized unit"
+        },
+        {
+          "item": "Chest X-ray",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Aspiration pneumonia (common post-ictal complication); ETT position if intubated",
+          "target": "Infiltrate; aspiration pattern",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "MRI epilepsy protocol",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "High-resolution imaging for epileptogenic lesion identification; 3T preferred; includes thin-cut coronal T2/FLAIR through temporal lobes",
+          "target": "Mesial temporal sclerosis; focal cortical dysplasia; cavernous malformation; low-grade tumor",
+          "contraindications": "Same as standard MRI"
+        },
+        {
+          "item": "PET (FDG) or SPECT (ictal/interictal)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Presurgical localization; hypometabolism (interictal PET) or hyperperfusion (ictal SPECT) at seizure focus",
+          "target": "Focal hypometabolism (interictal); focal hyperperfusion (ictal)",
+          "contraindications": "Radiation exposure; specialized availability"
+        },
+        {
+          "item": "MEG (magnetoencephalography)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Presurgical localization; dipole source analysis; specialized centers",
+          "target": "Source localization complementary to EEG",
+          "contraindications": "Limited availability; metal implants"
+        },
+        {
+          "item": "Neuropsychological testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Presurgical evaluation; cognitive baseline; localization (memory lateralization for temporal lobe epilepsy)",
+          "target": "Lateralized deficits; cognitive baseline for surgery comparison",
+          "contraindications": "Patient cooperation"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent Treatment": [
+        {
+          "item": "**Benzodiazepine (if actively seizing)**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/kg",
+                "orderSentence": "**Benzodiazepine (if actively seizing)** 0.1 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**Lorazepam** 0.1 mg/kg IV (max 4 mg), may repeat x1 in 5 min; **OR Midazolam** 10 mg IM (if no IV access); **OR Diazepam** 0.2 mg/kg IV (max 10 mg); **Intranasal midazolam** 5-10 mg if no IV; **Rectal diazepam** 0.2-0.5 mg/kg (home rescue)",
+            "orderSentence": "**Benzodiazepine (if actively seizing)** 0.1 mg/kg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "First-line for acute seizure termination; lorazepam preferred IV (longer CNS duration); follow status epilepticus protocol if seizure continues >5 min",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Protect patient during seizure**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Clear environment of hazards; DO NOT restrain or put anything in mouth; turn on side (recovery position) when safe; suction secretions; monitor airway; time the seizure",
+            "orderSentence": "**Protect patient during seizure** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Prevent injury; prepare for airway management if prolonged",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Post-ictal care**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "92%",
+                "orderSentence": "**Post-ictal care** 92% -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Recovery position; monitor airway (aspiration risk); supplemental O2 if SpO2 <92%; assess for injuries (tongue laceration, shoulder dislocation, vertebral fracture); reassurance; reorientation",
+            "orderSentence": "**Post-ictal care** 92% -"
+          },
+          "contraindications": "-",
+          "monitoring": "Post-ictal period is self-limited (typically 5-30 min); prolonged alteration → consider NCSE, repeat seizure, or alternative diagnosis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Administer home ASM (if missed)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "If patient missed doses → give maintenance ASM immediately; if patient does not have medication with them → administer from ED/hospital supply",
+            "orderSentence": "**Administer home ASM (if missed)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Non-adherence is most common cause of breakthrough seizure; restoring therapeutic levels is priority",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Loading dose (if significantly subtherapeutic)**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-20 mg",
+                "orderSentence": "**Loading dose (if significantly subtherapeutic)** 15-20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**Phenytoin/Fosphenytoin:** 15-20 mg PE/kg IV (if level very low); **Valproate:** 20-30 mg/kg IV (if level very low); **Levetiracetam:** 1000-1500 mg IV (if not on levetiracetam — can be added); **Note:** Loading the same drug patient is already taking risks toxicity → use cautiously",
+            "orderSentence": "**Loading dose (if significantly subtherapeutic)** 15-20 mg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "For significantly subtherapeutic levels or if need rapid therapeutic concentration; adjust for partial levels",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Treat precipitant**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**Infection:** Antibiotics for UTI, pneumonia; **Electrolyte abnormality:** Correct (hyponatremia slowly); **Drug/alcohol withdrawal:** Appropriate protocol; **Sleep deprivation:** Education, sleep hygiene",
+            "orderSentence": "**Treat precipitant** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Treating the precipitant may be more important than adjusting ASMs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "ASM Adjustment Strategies": [
+        {
+          "item": "Resume current regimen at prescribed doses",
+          "rationale": "Non-adherence is #1 cause; restoring regimen usually sufficient"
+        },
+        {
+          "item": "Increase current ASM OR add second ASM",
+          "rationale": "Some patients require levels above \"therapeutic range\" for control"
+        },
+        {
+          "item": "Add second ASM OR optimize current ASM timing",
+          "rationale": "Breakthrough at therapeutic levels may require adjunctive therapy"
+        },
+        {
+          "item": "Remove interacting drug OR increase ASM dose OR switch ASM",
+          "rationale": "Enzyme inducers and inhibitors significantly affect ASM levels"
+        },
+        {
+          "item": "Increase dose with frequent monitoring",
+          "rationale": "Seizure risk to mother and fetus outweighs small ASM risk; maintain control"
+        },
+        {
+          "item": "Full re-evaluation",
+          "rationale": "Change in control pattern requires investigation for new etiology"
+        }
+      ],
+      "Medications to AVOID or Use with Caution": [
+        {
+          "item": "**Tramadol**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Tramadol** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Meperidine (Demerol)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Meperidine (Demerol)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Bupropion**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Bupropion** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Clozapine**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Clozapine** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Fluoroquinolones**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Fluoroquinolones** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Carbapenems (imipenem > meropenem)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Carbapenems (imipenem > meropenem)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Isoniazid**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Isoniazid** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Theophylline / Aminophylline**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Theophylline / Aminophylline** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Stimulants (amphetamines, methylphenidate)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Stimulants (amphetamines, methylphenidate)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Alcohol (acute intoxication and withdrawal)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Alcohol (acute intoxication and withdrawal)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Illicit drugs (cocaine, amphetamines, synthetic cathinones)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Illicit drugs (cocaine, amphetamines, synthetic cathinones)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consultation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ASM level check",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Adherence assessment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Precipitant identification",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Injury assessment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Safety counseling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return to baseline confirmation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "EEG",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Imaging",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Pharmacy consultation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychology / Psychiatry",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Epilepsy nurse educator",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Women's health counseling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Epilepsy surgery evaluation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "VNS / RNS / DBS evaluation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ketogenic diet referral",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PNES evaluation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Autoimmune epilepsy workup",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Diagnosis",
+      "features": "Key Distinguishing Features",
+      "tests": "Evaluation"
+    },
+    {
+      "diagnosis": "**True breakthrough seizure (epileptic)**",
+      "features": "Typical semiology for patient; post-ictal state; EEG correlation; identifiable precipitant or subtherapeutic level",
+      "tests": "ASM levels; EEG; precipitant search"
+    },
+    {
+      "diagnosis": "**Psychogenic non-epileptic seizure (PNES)**",
+      "features": "Variable semiology; prolonged duration (>2 min); preserved awareness with bilateral movements; eyes closed; pelvic thrusting; ictal crying; side-to-side head movements; no post-ictal confusion (or prolonged pseudo-post-ictal); normal prolactin; normal EEG during event",
+      "tests": "Video-EEG (gold standard); prolactin (not elevated); clinical features; psychology evaluation"
+    },
+    {
+      "diagnosis": "**Syncope (convulsive)**",
+      "features": "Triggered by standing, hot environment, vagal stimulus; brief LOC (<1 min); myoclonic jerks are common during syncope (not true seizure); rapid recovery; pale before event",
+      "tests": "ECG; orthostatics; tilt table test; echocardiogram; cardiac history"
+    },
+    {
+      "diagnosis": "**Cardiac arrhythmia**",
+      "features": "Sudden LOC without warning or with palpitations; rapid recovery; history of cardiac disease",
+      "tests": "ECG; Holter/event monitor; echocardiogram; electrophysiology study"
+    },
+    {
+      "diagnosis": "**Toxic/metabolic**",
+      "features": "Hypoglycemia; hyponatremia; hypocalcemia; uremia; hepatic encephalopathy; drug intoxication/withdrawal",
+      "tests": "Glucose; electrolytes; renal/hepatic function; drug screen; specific toxin levels"
+    },
+    {
+      "diagnosis": "**Transient ischemic attack (TIA)**",
+      "features": "Negative symptoms (weakness, numbness, aphasia) vs. positive symptoms (convulsion); typically no LOC; vascular risk factors",
+      "tests": "MRI with DWI; MRA; vascular risk factor assessment"
+    },
+    {
+      "diagnosis": "**Sleep disorders**",
+      "features": "REM sleep behavior disorder; parasomnias; cataplexy (narcolepsy)",
+      "tests": "Sleep history; PSG; MSL"
+    },
+    {
+      "diagnosis": "**Movement disorders**",
+      "features": "Dystonia; chorea; myoclonus (non-epileptic); paroxysmal dyskinesia",
+      "tests": "Preserved awareness; stereotyped movements; neurologic exam; movement disorder evaluation"
+    },
+    {
+      "diagnosis": "**Migraine with aura**",
+      "features": "Visual, sensory, or motor aura preceding headache; duration 20-60 min; no LOC",
+      "tests": "Headache history; migraine features; may have EEG abnormalities but distinct from seizure"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Guideline",
+      "evidenceLevel": "Source",
+      "source": "Year"
+    },
+    {
+      "recommendation": "Practice Guideline Update: Efficacy and Tolerability of ASMs",
+      "evidenceLevel": "AAN",
+      "source": "2018"
+    },
+    {
+      "recommendation": "Management of Adult Epilepsy",
+      "evidenceLevel": "AES/ILAE",
+      "source": "Ongoing updates"
+    },
+    {
+      "recommendation": "Epilepsy in Women",
+      "evidenceLevel": "AAN",
+      "source": "2009/Updates"
+    },
+    {
+      "recommendation": "SUDEP Prevention",
+      "evidenceLevel": "AAN",
+      "source": "2017"
+    },
+    {
+      "recommendation": "Study",
+      "evidenceLevel": "Finding",
+      "source": "Impact"
+    },
+    {
+      "recommendation": "Kwan & Brodie (2000)",
+      "evidenceLevel": "47% of newly diagnosed epilepsy patients became seizure-free on first ASM; 13% on second; 4% on third; after failure of 2 appropriate ASMs, chance of seizure freedom with additional ASMs is <5%",
+      "source": "Defined drug-resistant epilepsy; established rationale for early surgery referral"
+    },
+    {
+      "recommendation": "SANAD I & II (2007, 2021)",
+      "evidenceLevel": "Lamotrigine best for focal epilepsy; valproate best for generalized/unclassified (but teratogenic); levetiracetam non-inferior to lamotrigine for focal",
+      "source": "Guide first-line ASM selection by seizure type"
+    },
+    {
+      "recommendation": "Standard and New Antiepileptic Drugs (SNAED) Trial",
+      "evidenceLevel": "Levetiracetam and zonisamide non-inferior to lamotrigine for focal epilepsy",
+      "source": "Expanded first-line options"
+    },
+    {
+      "recommendation": "Early Randomized Surgical Epilepsy Trial (ERSET, 2012)",
+      "evidenceLevel": "Early surgery superior to continued medical therapy for drug-resistant temporal lobe epilepsy; 73% vs. 0% seizure-free at 2 years",
+      "source": "Surgery is highly effective; early referral improves outcomes"
+    },
+    {
+      "recommendation": "SUDEP Risk Factors",
+      "evidenceLevel": "Convulsive seizures, especially nocturnal; living alone; poor seizure control",
+      "source": "Counsel patients; nocturnal monitoring devices; optimize seizure control"
+    },
+    {
+      "recommendation": "ASM",
+      "evidenceLevel": "Total Level",
+      "source": "Free Level"
+    },
+    {
+      "recommendation": "Phenytoin",
+      "evidenceLevel": "10-20 mcg/mL",
+      "source": "1-2 mcg/mL"
+    },
+    {
+      "recommendation": "Carbamazepine",
+      "evidenceLevel": "4-12 mcg/mL",
+      "source": "N/A"
+    },
+    {
+      "recommendation": "Valproate",
+      "evidenceLevel": "50-100 mcg/mL",
+      "source": "5-15 mcg/mL"
+    },
+    {
+      "recommendation": "Phenobarbital",
+      "evidenceLevel": "15-40 mcg/mL",
+      "source": "N/A"
+    },
+    {
+      "recommendation": "Levetiracetam",
+      "evidenceLevel": "12-46 mcg/mL (suggested)",
+      "source": "N/A"
+    },
+    {
+      "recommendation": "Lamotrigine",
+      "evidenceLevel": "3-14 mcg/mL (varies)",
+      "source": "N/A"
+    },
+    {
+      "recommendation": "Oxcarbazepine (MHD)",
+      "evidenceLevel": "3-35 mcg/mL",
+      "source": "N/A"
+    },
+    {
+      "recommendation": "Topiramate",
+      "evidenceLevel": "5-20 mcg/mL (suggested)",
+      "source": "N/A"
+    },
+    {
+      "recommendation": "Lacosamide",
+      "evidenceLevel": "10-20 mcg/mL (emerging)",
+      "source": "N/A"
+    },
+    {
+      "recommendation": "Clobazam",
+      "evidenceLevel": "0.03-0.3 mcg/mL",
+      "source": "N/A"
+    },
+    {
+      "recommendation": "Brivaracetam",
+      "evidenceLevel": "Not established",
+      "source": "N/A"
+    },
+    {
+      "recommendation": "Perampanel",
+      "evidenceLevel": "Not established",
+      "source": "N/A"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Mental status (return to baseline)",
+      "frequency": "q15 min until resolved; q1h thereafter",
+      "target": "Return to baseline within 30-60 min",
+      "action": "Prolonged: consider NCSE → EEG; imaging; extended evaluation"
+    },
+    {
+      "item": "Vital signs",
+      "frequency": "q15-30 min initially; q1h once stable",
+      "target": "HR 60-100; BP <180/110; SpO2 >94%; Temp <38°C",
+      "action": "Manage accordingly; fever → infection workup"
+    },
+    {
+      "item": "Seizure recurrence",
+      "frequency": "Continuous observation",
+      "target": "No further seizures",
+      "action": "Repeat seizure: give benzodiazepine; consider additional ASM load; SE protocol if >5 min"
+    },
+    {
+      "item": "Airway / Respiratory status",
+      "frequency": "Continuous; q15 min",
+      "target": "Patent airway; no aspiration; adequate ventilation",
+      "action": "Position; suction; O2 if needed; intubation if compromised"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "Check immediately; repeat if symptomatic",
+      "target": "70-180 mg/dL",
+      "action": "Hypoglycemia: D50W IV"
+    },
+    {
+      "item": "Cardiac rhythm",
+      "frequency": "Continuous telemetry",
+      "target": "Normal sinus; no arrhythmia",
+      "action": "Treat arrhythmia; cardiology if indicated"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Level of Care",
+      "criteria": "Criteria"
+    },
+    {
+      "disposition": "ICU",
+      "criteria": "Status epilepticus; cluster seizures requiring continuous infusion; severe injuries; need for continuous EEG monitoring; airway compromise; hemodynamic instability"
+    },
+    {
+      "disposition": "General floor / Observation",
+      "criteria": "Prolonged post-ictal state; multiple seizures in ED; significantly subtherapeutic levels requiring monitoring during adjustment; uncertain diagnosis; new focal deficit; complicating medical illness"
+    },
+    {
+      "disposition": "Discharge home",
+      "criteria": "Single uncomplicated breakthrough seizure; returned to baseline; identifiable/correctable precipitant; therapeutic or corrected ASM level; no injuries requiring admission; safe home environment; reliable follow-up"
+    }
+  ]
+}

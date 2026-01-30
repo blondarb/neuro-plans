@@ -1,3 +1,10 @@
+---
+title: "Essential Tremor"
+description: "Clinical decision support for essential tremor diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Essential Tremor
 
 **VERSION:** 1.0
@@ -110,51 +117,51 @@
 
 ### 3A. First-Line Pharmacologic Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Propranolol (Inderal) | - | ROUTINE | ROUTINE | - | Start 20-40 mg BID-TID; titrate to 120-320 mg/day in divided doses | Asthma, COPD, bradycardia, AV block, decompensated heart failure, depression | HR, BP |
-| Propranolol LA | - | ROUTINE | ROUTINE | - | Start 60-80 mg daily; titrate to 160-320 mg daily | Same | Same |
-| Primidone (Mysoline) | - | ROUTINE | ROUTINE | - | Start 12.5-25 mg QHS; titrate very slowly by 12.5-25 mg/week to 250-750 mg/day in divided doses | Porphyria, severe sedation | Sedation, ataxia, nausea (start very low) |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Propranolol (Inderal) | PO | - | 20-40 mg :: PO :: BID :: Start 20-40 mg BID-TID; titrate to 120-320 mg/day in divided doses | Asthma, COPD, bradycardia, AV block, decompensated heart failure, depression | HR, BP | - | ROUTINE | ROUTINE | - |
+| Propranolol LA | PO | - | 60-80 mg :: PO :: daily :: Start 60-80 mg daily; titrate to 160-320 mg daily | Same | Same | - | ROUTINE | ROUTINE | - |
+| Primidone (Mysoline) | PO | - | 12.5-25 mg :: PO :: QHS :: Start 12.5-25 mg QHS; titrate very slowly by 12.5-25 mg/week to 250-750 mg/day in divided doses | Porphyria, severe sedation | Sedation, ataxia, nausea (start very low) | - | ROUTINE | ROUTINE | - |
 
 ### 3B. Second-Line Pharmacologic Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Topiramate (Topamax) | - | ROUTINE | ROUTINE | - | Start 25 mg daily; titrate by 25-50 mg/week to 100-400 mg/day in divided doses | Kidney stones, glaucoma, pregnancy | Cognitive effects, paresthesias, weight loss |
-| Gabapentin (Neurontin) | - | ROUTINE | ROUTINE | - | Start 300 mg daily; titrate to 300-600 mg TID (900-1800 mg/day) | Renal impairment (adjust dose) | Sedation, dizziness, edema |
-| Alprazolam (Xanax) | - | ROUTINE | ROUTINE | - | 0.25-0.5 mg TID; max 3 mg/day; use cautiously | Respiratory depression, addiction potential, elderly falls | Sedation, dependence, falls |
-| Clonazepam (Klonopin) | - | ROUTINE | ROUTINE | - | 0.5 mg TID; titrate to 2-4 mg/day | Same as alprazolam | Same |
-| Atenolol | - | ROUTINE | ROUTINE | - | 50-100 mg daily; less CNS penetration than propranolol | Same as propranolol | HR, BP |
-| Nadolol | - | ROUTINE | ROUTINE | - | 40-160 mg daily; long-acting, once daily | Same as propranolol | HR, BP |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Topiramate (Topamax) | PO | - | 25 mg :: PO :: daily :: Start 25 mg daily; titrate by 25-50 mg/week to 100-400 mg/day in divided doses | Kidney stones, glaucoma, pregnancy | Cognitive effects, paresthesias, weight loss | - | ROUTINE | ROUTINE | - |
+| Gabapentin (Neurontin) | PO | - | 300 mg :: PO :: daily :: Start 300 mg daily; titrate to 300-600 mg TID (900-1800 mg/day) | Renal impairment (adjust dose) | Sedation, dizziness, edema | - | ROUTINE | ROUTINE | - |
+| Alprazolam (Xanax) | PO | - | 0.25-0.5 mg :: PO :: TID :: 0.25-0.5 mg TID; max 3 mg/day; use cautiously | Respiratory depression, addiction potential, elderly falls | Sedation, dependence, falls | - | ROUTINE | ROUTINE | - |
+| Clonazepam (Klonopin) | PO | - | 0.5 mg :: PO :: TID :: 0.5 mg TID; titrate to 2-4 mg/day | Same as alprazolam | Same | - | ROUTINE | ROUTINE | - |
+| Atenolol | PO | - | 50-100 mg :: PO :: daily :: 50-100 mg daily; less CNS penetration than propranolol | Same as propranolol | HR, BP | - | ROUTINE | ROUTINE | - |
+| Nadolol | PO | - | 40-160 mg :: PO :: daily :: 40-160 mg daily; long-acting, once daily | Same as propranolol | HR, BP | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Third-Line and Adjunctive Treatments
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Botulinum toxin (OnabotulinumtoxinA) | - | - | ROUTINE | - | 50-100 units per arm for hand tremor; 40-400 units for head tremor; q3 months | Infection at injection site, myasthenia | Weakness, dysphagia (head/voice injections) |
-| Propranolol + Primidone combination | - | ROUTINE | ROUTINE | - | Use lower doses of each; synergistic effect | Per individual agents | Per individual agents |
-| Nimodipine | - | - | EXT | - | 30 mg TID; limited evidence | Hypotension | BP |
-| Zonisamide | - | - | EXT | - | 100-200 mg daily; off-label | Sulfa allergy, kidney stones | Kidney stones, cognitive |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Botulinum toxin (OnabotulinumtoxinA) | - | - | 50-100 units :: - :: - :: 50-100 units per arm for hand tremor; 40-400 units for head tremor; q3 months | Infection at injection site, myasthenia | Weakness, dysphagia (head/voice injections) | - | - | ROUTINE | - |
+| Propranolol + Primidone combination | - | - | Use lower doses of each; synergistic effect | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
+| Nimodipine | PO | - | 30 mg :: PO :: TID :: 30 mg TID; limited evidence | Hypotension | BP | - | - | EXT | - |
+| Zonisamide | PO | - | 100-200 mg :: PO :: daily :: 100-200 mg daily; off-label | Sulfa allergy, kidney stones | Kidney stones, cognitive | - | - | EXT | - |
 
 ### 3D. Interventional Treatments
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Deep brain stimulation (DBS) | - | - | EXT | - | VIM thalamus target; bilateral or unilateral | Bleeding risk, active infection, severe cognitive impairment | Speech, gait, stimulator function |
-| MRI-guided focused ultrasound (MRgFUS) | - | - | EXT | - | VIM thalamotomy; unilateral only | Skull density ratio issues, intracranial lesions | Speech, gait, sensory changes |
-| Gamma Knife thalamotomy | - | - | EXT | - | VIM target; unilateral; delayed effect | Per radiosurgery | Same as MRgFUS |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Deep brain stimulation (DBS) | - | - | VIM thalamus target; bilateral or unilateral | - | Bleeding risk, active infection, severe cognitive impairment | Speech, gait, stimulator function | - | - | EXT | - |
+| MRI-guided focused ultrasound (MRgFUS) | - | - | VIM thalamotomy; unilateral only | - | Skull density ratio issues, intracranial lesions | Speech, gait, sensory changes | - | - | EXT | - |
+| Gamma Knife thalamotomy | - | - | VIM target; unilateral; delayed effect | - | Per radiosurgery | Same as MRgFUS | - | - | EXT | - |
 
 ### 3E. Non-Pharmacologic Treatments
 
-| Treatment | ED | HOSP | OPD | ICU | Details | Contraindications | Notes |
-|-----------|:--:|:----:|:---:|:---:|---------|-------------------|-------|
-| Weighted utensils | - | - | ROUTINE | - | Reduce tremor amplitude during eating | None | OT can assist with selection |
-| Wrist weights | - | - | ROUTINE | - | Dampen tremor during activities | None | May cause fatigue |
-| Adaptive devices | - | - | ROUTINE | - | Two-handled cups, rocker knives, button hooks | None | OT referral |
-| Cala Trio device | - | - | ROUTINE | - | FDA-approved wrist-worn peripheral nerve stimulation; 2x daily for 40 min | Pacemaker/implanted device, pregnancy | Prescription medical device |
-| Limit caffeine | - | ROUTINE | ROUTINE | - | Caffeine exacerbates tremor | None | Patient education |
-| Avoid triggers | - | ROUTINE | ROUTINE | - | Stress, fatigue, stimulants worsen tremor | None | Patient education |
-| Stress management | - | - | ROUTINE | - | Relaxation techniques, biofeedback | None | Tremor worsens with anxiety |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Weighted utensils | - | - | Reduce tremor amplitude during eating | None | OT can assist with selection | - | - | ROUTINE | - |
+| Wrist weights | - | - | Dampen tremor during activities | None | May cause fatigue | - | - | ROUTINE | - |
+| Adaptive devices | - | - | Two-handled cups, rocker knives, button hooks | None | OT referral | - | - | ROUTINE | - |
+| Cala Trio device | - | - | FDA-approved wrist-worn peripheral nerve stimulation; 2x daily for 40 min | Pacemaker/implanted device, pregnancy | Prescription medical device | - | - | ROUTINE | - |
+| Limit caffeine | - | - | Caffeine exacerbates tremor | None | Patient education | - | ROUTINE | ROUTINE | - |
+| Avoid triggers | - | - | Stress, fatigue, stimulants worsen tremor | None | Patient education | - | ROUTINE | ROUTINE | - |
+| Stress management | - | - | Relaxation techniques, biofeedback | None | Tremor worsens with anxiety | - | - | ROUTINE | - |
 
 ---
 

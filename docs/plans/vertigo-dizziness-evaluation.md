@@ -1,3 +1,10 @@
+---
+title: "Vertigo / Dizziness Evaluation"
+description: "Clinical decision support for vertigo / dizziness evaluation diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Vertigo / Dizziness Evaluation
 
 **VERSION:** 1.0
@@ -105,76 +112,76 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Protocol | Evidence/Rationale |
-|-----------|:--:|:----:|:---:|:---:|----------|-------------------|
-| **Symptomatic relief (vestibular suppressants)** | STAT | STAT | ROUTINE | STAT | **Acute severe vertigo:** Meclizine 25-50 mg PO q6-8h; OR Dimenhydrinate (Dramamine) 50 mg PO/IV q6h; OR Promethazine 25 mg PO/IM/IV q6h; OR Ondansetron 4-8 mg IV/PO q8h (for nausea); **IV fluids** for dehydration from vomiting; **Diazepam** 2-5 mg IV/PO for severe acute vertigo (benzodiazepines are potent vestibular suppressants) | Short-term use only (24-72h); vestibular suppressants interfere with central compensation if used chronically; avoid in suspected central cause until stroke ruled out |
-| **IV fluids** | STAT | STAT | - | STAT | If dehydrated from vomiting; NS or LR bolus then maintenance; assess orthostatic hypotension | Supportive care; correct volume depletion |
-| **Antiemetics** | STAT | STAT | ROUTINE | STAT | Ondansetron 4-8 mg IV/PO; metoclopramide 10 mg IV (avoid in elderly — EPS); prochlorperazine 5-10 mg IV/IM | Nausea is often the most debilitating symptom |
-| **Rule out stroke** | STAT | STAT | - | STAT | **If ANY central features on HINTS:** STAT MRI with DWI; vascular imaging (MRA or CTA); neurology/stroke consultation; **Central features:** Normal/negative head impulse test, vertical or direction-changing nystagmus, skew deviation, focal neurologic signs, severe imbalance (cannot walk), hearing loss + vertigo without Meniere's history | HINTS is more sensitive than early CT or MRI for posterior circulation stroke; do NOT rely on negative CT to exclude stroke |
-| **Epley maneuver (canalith repositioning)** | STAT | STAT | ROUTINE | STAT | **For BPPV (positive Dix-Hallpike):** Immediately perform Epley maneuver; highly effective (80-90% single treatment); may repeat if symptoms persist; send home with instructions for home Epley or Brandt-Daroff exercises | Epley is definitive treatment for posterior canal BPPV; medications are NOT indicated for BPPV — repositioning maneuvers are the treatment |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Symptomatic relief (vestibular suppressants)** | IV | - | 25-50 mg :: IV :: q6h :: **Acute severe vertigo:** Meclizine 25-50 mg PO q6-8h; OR Dimenhydrinate (Dramamine) 50 mg PO/IV q6h; OR Promethazine 25 mg PO/IM/IV q6h; OR Ondansetron 4-8 mg IV/PO q8h (for nausea); **IV fluids** for dehydration from vomiting; **Diazepam** 2-5 mg IV/PO for severe acute vertigo (benzodiazepines are potent vestibular suppressants) | - | Short-term use only (24-72h); vestibular suppressants interfere with central compensation if used chronically; avoid in suspected central cause until stroke ruled out | STAT | STAT | ROUTINE | STAT |
+| **IV fluids** | IV | - | If dehydrated from vomiting; NS or LR bolus then maintenance; assess orthostatic hypotension | - | Supportive care; correct volume depletion | STAT | STAT | - | STAT |
+| **Antiemetics** | IV | - | 4-8 mg :: IV :: - :: Ondansetron 4-8 mg IV/PO; metoclopramide 10 mg IV (avoid in elderly — EPS); prochlorperazine 5-10 mg IV/IM | - | Nausea is often the most debilitating symptom | STAT | STAT | ROUTINE | STAT |
+| **Rule out stroke** | - | - | **If ANY central features on HINTS:** STAT MRI with DWI; vascular imaging (MRA or CTA); neurology/stroke consultation; **Central features:** Normal/negative head impulse test, vertical or direction-changing nystagmus, skew deviation, focal neurologic signs, severe imbalance (cannot walk), hearing loss + vertigo without Meniere's history | - | HINTS is more sensitive than early CT or MRI for posterior circulation stroke; do NOT rely on negative CT to exclude stroke | STAT | STAT | - | STAT |
+| **Epley maneuver (canalith repositioning)** | - | - | 90% :: - :: - :: **For BPPV (positive Dix-Hallpike):** Immediately perform Epley maneuver; highly effective (80-90% single treatment); may repeat if symptoms persist; send home with instructions for home Epley or Brandt-Daroff exercises | - | Epley is definitive treatment for posterior canal BPPV; medications are NOT indicated for BPPV — repositioning maneuvers are the treatment | STAT | STAT | ROUTINE | STAT |
 
 ### 3B. Disease-Specific Treatment
 
 #### BENIGN PAROXYSMAL POSITIONAL VERTIGO (BPPV)
 
-| Treatment | Setting | Protocol | Evidence/Rationale |
-|-----------|---------|----------|-------------------|
-| **Epley maneuver (posterior canal)** | ED/OPD/HOSP | Standard canalith repositioning; patient starts seated, Dix-Hallpike position for 30 sec, rotate head 90° toward opposite side (30 sec), roll body to face down with head still turned (30 sec), sit up; NNT = 2-3 for resolution | First-line treatment for posterior canal BPPV; highly effective; may repeat same day or next visit |
-| **Semont maneuver (alternative)** | OPD | Alternative to Epley; patient moved rapidly from side to side; less commonly used but effective | Alternative if Epley difficult or ineffective |
-| **BBQ roll (Lempert maneuver) — horizontal canal** | ED/OPD | For horizontal canal BPPV; patient rotates 360° along long axis of body (log roll) toward unaffected side; 90° increments with 30 sec pauses | Treatment for horizontal canal BPPV; geotropic variant |
-| **Brandt-Daroff exercises (home)** | OPD | Patient alternates lying on each side x 30 sec, 10-20 repetitions, 3x daily; habituates symptoms; less effective than Epley for posterior canal | Adjunctive home therapy; may help with residual symptoms; promotes compensation |
-| **Avoid vestibular suppressants for BPPV** | All | Do NOT prescribe meclizine for ongoing BPPV treatment; medications delay compensation and do not address the mechanical problem | BPPV is a mechanical problem (otoliths); repositioning is definitive treatment |
-| **Post-treatment instructions** | OPD | Avoid lying flat for 1-2 nights (sleep propped up); avoid rapid head movements for 24-48h; avoid affected side lying for 1 week (controversial but commonly recommended) | Reduces immediate recurrence; evidence is mixed |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Epley maneuver (posterior canal)** | - | - | Standard canalith repositioning; patient starts seated, Dix-Hallpike position for 30 sec, rotate head 90° toward opposite side (30 sec), roll body to face down with head still turned (30 sec), sit up; NNT = 2-3 for resolution | - | First-line treatment for posterior canal BPPV; highly effective; may repeat same day or next visit | - | - | - | - |
+| **Semont maneuver (alternative)** | - | - | Alternative to Epley; patient moved rapidly from side to side; less commonly used but effective | - | Alternative if Epley difficult or ineffective | - | - | - | - |
+| **BBQ roll (Lempert maneuver) — horizontal canal** | - | - | For horizontal canal BPPV; patient rotates 360° along long axis of body (log roll) toward unaffected side; 90° increments with 30 sec pauses | - | Treatment for horizontal canal BPPV; geotropic variant | - | - | - | - |
+| **Brandt-Daroff exercises (home)** | - | - | Patient alternates lying on each side x 30 sec, 10-20 repetitions, 3x daily; habituates symptoms; less effective than Epley for posterior canal | - | Adjunctive home therapy; may help with residual symptoms; promotes compensation | - | - | - | - |
+| **Avoid vestibular suppressants for BPPV** | - | - | Do NOT prescribe meclizine for ongoing BPPV treatment; medications delay compensation and do not address the mechanical problem | - | BPPV is a mechanical problem (otoliths); repositioning is definitive treatment | - | - | - | - |
+| **Post-treatment instructions** | - | - | Avoid lying flat for 1-2 nights (sleep propped up); avoid rapid head movements for 24-48h; avoid affected side lying for 1 week (controversial but commonly recommended) | - | Reduces immediate recurrence; evidence is mixed | - | - | - | - |
 
 #### VESTIBULAR NEURITIS / LABYRINTHITIS
 
-| Treatment | Setting | Protocol | Evidence/Rationale |
-|-----------|---------|----------|-------------------|
-| **Corticosteroids** | ED/HOSP/OPD | **Prednisone 1 mg/kg/day (max 60 mg) x 10 days with taper** OR methylprednisolone 100 mg x 3 days then taper; start within 72 hours of symptom onset for best benefit | Strupp et al. (2004): Steroids improve vestibular function recovery in vestibular neuritis; start early; NNT ~4 for complete recovery |
-| **Antivirals (controversial)** | ED/HOSP/OPD | Valacyclovir 1000 mg TID x 7 days; evidence is WEAK; some use empirically if early presentation; thought to be HSV reactivation (like Bell's palsy) | Cochrane review: No clear benefit; some clinicians still use empirically, especially if labyrinthitis with hearing loss |
-| **Vestibular suppressants (short-term only)** | ED/HOSP | Meclizine 25 mg q8h OR dimenhydrinate 50 mg q6h OR diazepam 5 mg BID x 1-3 days ONLY; taper off as soon as tolerated | Short-term symptom relief; STOP after 72 hours maximum — prolonged use delays compensation |
-| **Early vestibular rehabilitation** | OPD | Refer to vestibular physical therapy; gaze stabilization exercises; balance training; habituation exercises; **START EARLY** (as soon as acute symptoms controlled) | Cochrane review: Vestibular rehabilitation is effective for unilateral vestibular hypofunction; early initiation improves outcomes |
-| **Education** | OPD | Explain natural history (acute symptoms resolve over days to weeks; full compensation may take weeks to months); reassurance; avoid prolonged bed rest | Reduce anxiety; promote activity and compensation |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Corticosteroids** | - | - | 1 mg/kg :: - :: daily x 10 days :: **Prednisone 1 mg/kg/day (max 60 mg) x 10 days with taper** OR methylprednisolone 100 mg x 3 days then taper; start within 72 hours of symptom onset for best benefit | - | Strupp et al. (2004): Steroids improve vestibular function recovery in vestibular neuritis; start early; NNT ~4 for complete recovery | - | - | - | - |
+| **Antivirals (controversial)** | PO | - | 1000 mg :: PO :: TID :: Valacyclovir 1000 mg TID x 7 days; evidence is WEAK; some use empirically if early presentation; thought to be HSV reactivation (like Bell's palsy) | - | Cochrane review: No clear benefit; some clinicians still use empirically, especially if labyrinthitis with hearing loss | - | - | - | - |
+| **Vestibular suppressants (short-term only)** | PO | - | 25 mg :: PO :: q8h :: Meclizine 25 mg q8h OR dimenhydrinate 50 mg q6h OR diazepam 5 mg BID x 1-3 days ONLY; taper off as soon as tolerated | - | Short-term symptom relief; STOP after 72 hours maximum — prolonged use delays compensation | - | - | - | - |
+| **Early vestibular rehabilitation** | - | - | Refer to vestibular physical therapy; gaze stabilization exercises; balance training; habituation exercises; **START EARLY** (as soon as acute symptoms controlled) | - | Cochrane review: Vestibular rehabilitation is effective for unilateral vestibular hypofunction; early initiation improves outcomes | - | - | - | - |
+| **Education** | - | - | Explain natural history (acute symptoms resolve over days to weeks; full compensation may take weeks to months); reassurance; avoid prolonged bed rest | - | Reduce anxiety; promote activity and compensation | - | - | - | - |
 
 #### MENIERE'S DISEASE
 
-| Treatment | Setting | Protocol | Evidence/Rationale |
-|-----------|---------|----------|-------------------|
-| **Dietary modification** | OPD | Low sodium diet (<1500-2000 mg/day); limit caffeine and alcohol; regular meals; avoid MSG | First-line lifestyle modification; reduces endolymphatic hydrops; evidence is limited but widely recommended |
-| **Diuretics** | OPD | Hydrochlorothiazide 25-50 mg daily OR hydrochlorothiazide/triamterene (Dyazide, Maxzide); acetazolamide 250 mg BID as alternative | Reduces endolymph volume; widely used despite limited RCT evidence |
-| **Betahistine** | OPD | 16-24 mg TID (not available in US; available in Europe, Canada); H1 agonist/H3 antagonist; improves cochlear blood flow | Commonly used in Europe; evidence mixed; may reduce attack frequency |
-| **Intratympanic gentamicin** | OPD (Specialist) | Chemical vestibular ablation; destroys vestibular hair cells; reduces vertigo attacks but risks hearing loss; for refractory unilateral disease | Effective for vertigo control (>80%); risk of hearing loss (10-30%); used for refractory cases |
-| **Intratympanic steroids** | OPD (Specialist) | Dexamethasone intratympanic injection; may reduce attacks; less destructive than gentamicin | Alternative to gentamicin; preserves hearing; less consistent efficacy |
-| **Endolymphatic sac surgery** | OPD (Specialist) | Surgical decompression of endolymphatic sac; evidence is debated; some benefit in select patients | Controversial; Cochrane review shows limited evidence; considered for refractory cases |
-| **Vestibular nerve section / Labyrinthectomy** | OPD (Specialist) | Surgical destruction of vestibular nerve (preserves hearing) or entire labyrinth (destroys hearing); for refractory unilateral disease | Last resort; highly effective for vertigo; significant surgery |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Dietary modification** | PO | - | 1500-2000 mg/day :: PO :: - :: Low sodium diet (<1500-2000 mg/day); limit caffeine and alcohol; regular meals; avoid MSG | - | First-line lifestyle modification; reduces endolymphatic hydrops; evidence is limited but widely recommended | - | - | - | - |
+| **Diuretics** | - | - | 25-50 mg :: - :: daily :: Hydrochlorothiazide 25-50 mg daily OR hydrochlorothiazide/triamterene (Dyazide, Maxzide); acetazolamide 250 mg BID as alternative | - | Reduces endolymph volume; widely used despite limited RCT evidence | - | - | - | - |
+| **Betahistine** | - | - | 16-24 mg :: - :: TID :: 16-24 mg TID (not available in US; available in Europe, Canada); H1 agonist/H3 antagonist; improves cochlear blood flow | - | Commonly used in Europe; evidence mixed; may reduce attack frequency | - | - | - | - |
+| **Intratympanic gentamicin** | - | - | Chemical vestibular ablation; destroys vestibular hair cells; reduces vertigo attacks but risks hearing loss; for refractory unilateral disease | - | Effective for vertigo control (>80%); risk of hearing loss (10-30%); used for refractory cases | - | - | - | - |
+| **Intratympanic steroids** | - | - | Dexamethasone intratympanic injection; may reduce attacks; less destructive than gentamicin | - | Alternative to gentamicin; preserves hearing; less consistent efficacy | - | - | - | - |
+| **Endolymphatic sac surgery** | - | - | Surgical decompression of endolymphatic sac; evidence is debated; some benefit in select patients | - | Controversial; Cochrane review shows limited evidence; considered for refractory cases | - | - | - | - |
+| **Vestibular nerve section / Labyrinthectomy** | - | - | Surgical destruction of vestibular nerve (preserves hearing) or entire labyrinth (destroys hearing); for refractory unilateral disease | - | Last resort; highly effective for vertigo; significant surgery | - | - | - | - |
 
 #### VESTIBULAR MIGRAINE
 
-| Treatment | Setting | Protocol | Evidence/Rationale |
-|-----------|---------|----------|-------------------|
-| **Migraine lifestyle modifications** | OPD | Regular sleep; hydration; avoid triggers (specific to patient); regular meals; stress management | Baseline management for all migraine |
-| **Acute treatment** | ED/OPD | Triptans (sumatriptan 50-100 mg PO, 6 mg SQ); NSAIDs; antiemetics (ondansetron, metoclopramide); vestibular suppressants for vertigo component | Standard migraine abortive therapy; triptans can help vestibular symptoms |
-| **Preventive therapy** | OPD | **Beta-blockers:** Propranolol 40-160 mg daily; metoprolol 50-200 mg daily; **TCAs:** Amitriptyline 10-75 mg HS; nortriptyline; **Anticonvulsants:** Topiramate 25-100 mg BID; valproate; **SNRIs:** Venlafaxine 37.5-150 mg daily; **Other:** CGRP antagonists (emerging); verapamil | Same preventive agents as migraine; choose based on comorbidities (e.g., depression → amitriptyline; hypertension → beta-blocker) |
-| **Vestibular rehabilitation** | OPD | Helpful for chronic vestibular symptoms between attacks; balance training; habituation | May improve chronic symptoms and disability |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Migraine lifestyle modifications** | - | - | Regular sleep; hydration; avoid triggers (specific to patient); regular meals; stress management | - | Baseline management for all migraine | - | - | - | - |
+| **Acute treatment** | SC | - | 50-100 mg :: SC :: - :: Triptans (sumatriptan 50-100 mg PO, 6 mg SQ); NSAIDs; antiemetics (ondansetron, metoclopramide); vestibular suppressants for vertigo component | - | Standard migraine abortive therapy; triptans can help vestibular symptoms | - | - | - | - |
+| **Preventive therapy** | - | - | 40-160 mg :: - :: daily :: **Beta-blockers:** Propranolol 40-160 mg daily; metoprolol 50-200 mg daily; **TCAs:** Amitriptyline 10-75 mg HS; nortriptyline; **Anticonvulsants:** Topiramate 25-100 mg BID; valproate; **SNRIs:** Venlafaxine 37.5-150 mg daily; **Other:** CGRP antagonists (emerging); verapamil | - | Same preventive agents as migraine; choose based on comorbidities (e.g., depression → amitriptyline; hypertension → beta-blocker) | - | - | - | - |
+| **Vestibular rehabilitation** | - | - | Helpful for chronic vestibular symptoms between attacks; balance training; habituation | - | May improve chronic symptoms and disability | - | - | - | - |
 
 #### CENTRAL CAUSES (Posterior Circulation Stroke)
 
-| Treatment | Setting | Protocol | Evidence/Rationale |
-|-----------|---------|----------|-------------------|
-| **Stroke protocol** | ED/HOSP/ICU | If central cause suspected or identified: acute stroke protocol; consider IV thrombolysis (tPA/tenecteplase) if within window; endovascular therapy for basilar artery occlusion; aspirin if not tPA candidate; admit to stroke unit | Posterior circulation stroke is life-threatening; basilar artery occlusion has >80% mortality if untreated |
-| **Secondary stroke prevention** | HOSP/OPD | Dual antiplatelet therapy (aspirin + clopidogrel x 21 days per CHANCE/POINT); statin; BP control; diabetes management; address vascular risk factors | Per acute ischemic stroke guidelines |
-| **Anticoagulation (if indicated)** | HOSP/OPD | If vertebral artery dissection or cardiac source (atrial fibrillation, PFO with high-risk features) | Per stroke etiology |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Stroke protocol** | IV | - | If central cause suspected or identified: acute stroke protocol; consider IV thrombolysis (tPA/tenecteplase) if within window; endovascular therapy for basilar artery occlusion; aspirin if not tPA candidate; admit to stroke unit | - | Posterior circulation stroke is life-threatening; basilar artery occlusion has >80% mortality if untreated | - | - | - | - |
+| **Secondary stroke prevention** | - | - | Dual antiplatelet therapy (aspirin + clopidogrel x 21 days per CHANCE/POINT); statin; BP control; diabetes management; address vascular risk factors | - | Per acute ischemic stroke guidelines | - | - | - | - |
+| **Anticoagulation (if indicated)** | - | - | If vertebral artery dissection or cardiac source (atrial fibrillation, PFO with high-risk features) | - | Per stroke etiology | - | - | - | - |
 
 ### 3C. Medications to AVOID or Use with Caution
 
-| Medication | Risk | Action |
-|-----------|------|--------|
-| **Vestibular suppressants (prolonged use)** | Delay central vestibular compensation; prolong recovery | Limit to 24-72h in acute vestibular neuritis/labyrinthitis; do NOT use for BPPV |
-| **Ototoxic medications** (aminoglycosides, loop diuretics, salicylates, cisplatin) | Vestibular and/or cochlear toxicity | Avoid if possible; monitor hearing/vestibular function; limit duration |
-| **Alcohol** | Vestibular suppressant; dehydrating; positional alcohol nystagmus | Counsel on avoidance during acute episodes |
-| **Benzodiazepines (chronic use)** | Dependence; delay compensation; sedation | Short-term only (1-3 days) for acute severe vertigo |
-| **CNS depressants** | May worsen dizziness; impair compensation | Use cautiously; review medication list |
-| **Medications causing orthostatic hypotension** (antihypertensives, alpha-blockers, diuretics) | May cause/worsen dizziness | Review; adjust doses; check orthostatics |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Vestibular suppressants (prolonged use)** | - | - | - | - | - | - | - | - | - |
+| **Ototoxic medications** (aminoglycosides, loop diuretics, salicylates, cisplatin) | - | - | - | - | - | - | - | - | - |
+| **Alcohol** | - | - | - | - | - | - | - | - | - |
+| **Benzodiazepines (chronic use)** | - | - | - | - | - | - | - | - | - |
+| **CNS depressants** | - | - | - | - | - | - | - | - | - |
+| **Medications causing orthostatic hypotension** (antihypertensives, alpha-blockers, diuretics) | - | - | - | - | - | - | - | - | - |
 
 ---
 

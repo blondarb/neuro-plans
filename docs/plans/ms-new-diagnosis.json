@@ -1,13 +1,9 @@
 {
   "id": "ms-new-diagnosis",
   "title": "Multiple Sclerosis - New Diagnosis",
-  "version": "2.5",
+  "version": "2.2",
   "icd10": [
-    "** G35 (Multiple sclerosis)",
-    "H46.9 (Optic neuritis",
-    "if presenting symptom)",
-    "G37.9 (Demyelinating disease of CNS",
-    "unspecified)"
+    "** G35 (Multiple sclerosis)"
   ],
   "scope": "** Initial diagnostic workup and management of suspected or newly confirmed MS. Covers diagnostic criteria evaluation, mimics exclusion, acute symptom treatment, and DMT initiation framework. For established MS with acute relapse, use \"MS - Exacerbation\" template. For ongoing DMT management and monitoring, use \"MS - Maintenance\" template.",
   "notes": [],
@@ -16,223 +12,223 @@
       "Essential/Core Labs": [
         {
           "item": "CBC with differential",
-          "rationale": "Infection screen, baseline before steroids",
-          "target": "Normal",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
-          "ICU": "STAT"
+          "ICU": "STAT",
+          "rationale": "Infection screen, baseline before steroids",
+          "target": "Normal"
         },
         {
           "item": "CMP",
-          "rationale": "Metabolic screen, renal function",
-          "target": "Normal",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
-          "ICU": "STAT"
+          "ICU": "STAT",
+          "rationale": "Metabolic screen, renal function",
+          "target": "Normal"
         },
         {
           "item": "TSH",
-          "rationale": "Thyroid disease mimics MS",
-          "target": "Normal",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "URGENT"
+          "ICU": "URGENT",
+          "rationale": "Thyroid disease mimics MS",
+          "target": "Normal"
         },
         {
           "item": "Vitamin B12",
-          "rationale": "B12 deficiency causes myelopathy",
-          "target": "Normal (>300 pg/mL)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "URGENT"
+          "ICU": "URGENT",
+          "rationale": "B12 deficiency causes myelopathy",
+          "target": "Normal (>300 pg/mL)"
         },
         {
           "item": "Folate",
-          "rationale": "Folate deficiency causes myelopathy",
-          "target": "Normal",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "URGENT"
+          "ICU": "URGENT",
+          "rationale": "Folate deficiency causes myelopathy",
+          "target": "Normal"
         },
         {
           "item": "ESR",
-          "rationale": "Inflammatory/vasculitis screen",
-          "target": "Normal (<20 mm/hr)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "URGENT"
+          "ICU": "URGENT",
+          "rationale": "Inflammatory/vasculitis screen",
+          "target": "Normal (<20 mm/hr)"
         },
         {
           "item": "CRP",
-          "rationale": "Inflammatory marker",
-          "target": "Normal",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "URGENT"
+          "ICU": "URGENT",
+          "rationale": "Inflammatory marker",
+          "target": "Normal"
         },
         {
           "item": "Urinalysis",
-          "rationale": "UTI as symptom trigger",
-          "target": "Negative",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
-          "ICU": "STAT"
+          "ICU": "STAT",
+          "rationale": "UTI as symptom trigger",
+          "target": "Negative"
         },
         {
           "item": "Blood glucose",
-          "rationale": "Pre-steroid baseline",
-          "target": "Normal",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
-          "ICU": "STAT"
+          "ICU": "STAT",
+          "rationale": "Pre-steroid baseline",
+          "target": "Normal"
         },
         {
           "item": "HbA1c",
-          "rationale": "Glycemic status before steroids",
-          "target": "<5.7%",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Glycemic status before steroids",
+          "target": "<5.7%"
         }
       ],
       "Extended Workup": [
         {
           "item": "Vitamin D (25-OH)",
-          "rationale": "Low levels associated with MS risk/activity",
-          "target": ">30 ng/mL",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Low levels associated with MS risk/activity",
+          "target": ">30 ng/mL"
         },
         {
           "item": "ANA",
-          "rationale": "Lupus/connective tissue disease screen",
-          "target": "Negative or low titer",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "URGENT"
+          "ICU": "URGENT",
+          "rationale": "Lupus/connective tissue disease screen",
+          "target": "Negative or low titer"
         },
         {
           "item": "Anti-dsDNA",
-          "rationale": "If ANA positive, lupus evaluation",
-          "target": "Negative",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "If ANA positive, lupus evaluation",
+          "target": "Negative"
         },
         {
           "item": "**Mayo CDS1 Panel** (AQP4-IgG + MOG-IgG by FACS)",
-          "rationale": "Combined NMO/MOGAD screen; cell-based assay is gold standard",
-          "target": "Both negative",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "URGENT"
+          "ICU": "URGENT",
+          "rationale": "Combined NMO/MOGAD screen; cell-based assay is gold standard",
+          "target": "Both negative"
         },
         {
           "item": "HIV",
-          "rationale": "HIV-associated myelopathy/encephalopathy",
-          "target": "Negative",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "HIV-associated myelopathy/encephalopathy",
+          "target": "Negative"
         },
         {
           "item": "RPR/VDRL",
-          "rationale": "Neurosyphilis mimics MS",
-          "target": "Negative",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Neurosyphilis mimics MS",
+          "target": "Negative"
         },
         {
           "item": "Lyme serology",
-          "rationale": "Endemic areas; neuroborreliosis",
-          "target": "Negative",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Endemic areas; neuroborreliosis",
+          "target": "Negative"
         },
         {
           "item": "ACE level",
-          "rationale": "Neurosarcoidosis",
-          "target": "Normal",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Neurosarcoidosis",
+          "target": "Normal"
         }
       ],
       "Rare/Specialized": [
         {
           "item": "Anti-SSA/SSB (Ro/La)",
-          "rationale": "SjÃ¶gren syndrome",
-          "target": "Negative",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "SjÃ¶gren syndrome",
+          "target": "Negative"
         },
         {
           "item": "ANCA panel",
-          "rationale": "CNS vasculitis",
-          "target": "Negative",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "CNS vasculitis",
+          "target": "Negative"
         },
         {
           "item": "Copper, ceruloplasmin",
-          "rationale": "Wilson disease (young patients)",
-          "target": "Normal",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Wilson disease (young patients)",
+          "target": "Normal"
         },
         {
           "item": "Very long chain fatty acids",
-          "rationale": "Adrenomyeloneuropathy",
-          "target": "Normal",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Adrenomyeloneuropathy",
+          "target": "Normal"
         },
         {
           "item": "Mitochondrial DNA studies",
-          "rationale": "Leber hereditary optic neuropathy",
-          "target": "Normal",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Leber hereditary optic neuropathy",
+          "target": "Normal"
         },
         {
           "item": "Genetic testing (HLA-DRB1)",
-          "rationale": "Research/prognostic, not diagnostic",
-          "target": "Variable",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Research/prognostic, not diagnostic",
+          "target": "Variable"
         }
       ],
       "Lumbar Puncture": [
@@ -338,7 +334,7 @@
           "ICU": "URGENT",
           "timing": "With brain MRI",
           "target": "Cord lesions (short segment, peripheral, dorsal)",
-          "contraindications": "GFR <30, gadolinium allergy, pacemaker"
+          "contraindications": "Same as above"
         },
         {
           "item": "MRI T-spine with and without contrast",
@@ -348,7 +344,7 @@
           "ICU": "URGENT",
           "timing": "With brain/C-spine",
           "target": "Cord lesions",
-          "contraindications": "GFR <30, gadolinium allergy, pacemaker"
+          "contraindications": "Same as above"
         }
       ],
       "Extended": [
@@ -431,7 +427,7 @@
         {
           "item": "Methylprednisolone IV",
           "route": "IV",
-          "indication": "Acute MS relapse",
+          "indication": "-",
           "dosing": {
             "doseOptions": [
               {
@@ -440,7 +436,7 @@
               }
             ],
             "route": "IV",
-            "instructions": "1000 mg IV daily × 3-5 days",
+            "instructions": "1000 mg IV daily Ã— 3-5 days",
             "orderSentence": "Methylprednisolone IV 1000 mg IV"
           },
           "contraindications": "Active untreated infection, uncontrolled diabetes, psychosis history",
@@ -453,21 +449,17 @@
         {
           "item": "Omeprazole",
           "route": "PO",
-          "indication": "GI prophylaxis during steroids",
+          "indication": "-",
           "dosing": {
             "doseOptions": [
               {
-                "text": "20 mg",
-                "orderSentence": "Omeprazole 20 mg PO"
-              },
-              {
-                "text": "40 mg",
-                "orderSentence": "Omeprazole 40 mg PO"
+                "text": "20-40 mg",
+                "orderSentence": "Omeprazole 20-40 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "20-40 mg daily during steroids",
-            "orderSentence": "Omeprazole 20 mg PO"
+            "orderSentence": "Omeprazole 20-40 mg PO"
           },
           "contraindications": "PPI allergy",
           "monitoring": "None routine",
@@ -478,18 +470,18 @@
         },
         {
           "item": "Insulin sliding scale",
-          "route": "SC",
-          "indication": "Steroid-induced hyperglycemia",
+          "route": "-",
+          "indication": "-",
           "dosing": {
             "doseOptions": [
               {
-                "text": "Per protocol",
-                "orderSentence": "Insulin sliding scale Per protocol SC"
+                "text": "180 mg",
+                "orderSentence": "Insulin sliding scale 180 mg -"
               }
             ],
-            "route": "SC",
+            "route": "-",
             "instructions": "Per protocol if glucose >180 mg/dL",
-            "orderSentence": "Insulin sliding scale Per protocol SC"
+            "orderSentence": "Insulin sliding scale 180 mg -"
           },
           "contraindications": "Hypoglycemia risk",
           "monitoring": "Glucose q6h",
@@ -500,32 +492,20 @@
         },
         {
           "item": "Prednisone oral taper (optional)",
-          "route": "PO",
-          "indication": "Steroid taper post-IV",
+          "route": "-",
+          "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "60 mg",
                 "orderSentence": "Prednisone oral taper (optional) 60 mg PO"
-              },
-              {
-                "text": "40 mg",
-                "orderSentence": "Prednisone oral taper (optional) 40 mg PO"
-              },
-              {
-                "text": "20 mg",
-                "orderSentence": "Prednisone oral taper (optional) 20 mg PO"
-              },
-              {
-                "text": "10 mg",
-                "orderSentence": "Prednisone oral taper (optional) 10 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "60 mg daily × 7 days, then taper over 2 weeks",
+            "instructions": "60 mg daily Ã— 7 days, then taper over 2 weeks",
             "orderSentence": "Prednisone oral taper (optional) 60 mg PO"
           },
-          "contraindications": "Active untreated infection, uncontrolled diabetes, psychosis history",
+          "contraindications": "Same as IV steroids",
           "monitoring": "Glucose, BP, mood",
           "ED": "-",
           "HOSP": "ROUTINE",
@@ -541,21 +521,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg TID",
-                "orderSentence": "Baclofen 5 mg TID PO"
-              },
-              {
-                "text": "10 mg TID",
-                "orderSentence": "Baclofen 10 mg TID PO"
-              },
-              {
-                "text": "20 mg TID",
-                "orderSentence": "Baclofen 20 mg TID PO"
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 5 mg TID; increase by 5 mg/dose q3 days; max 80 mg/day divided",
-            "orderSentence": "Baclofen 5 mg TID PO"
+            "instructions": "Start 5 mg TID; increase by 5 mg/dose every 3 days; max 80 mg/day in divided doses",
+            "orderSentence": "Baclofen 5 mg PO"
           },
           "contraindications": "Renal impairment (reduce dose)",
           "monitoring": "Sedation, weakness; do NOT stop abruptly (withdrawal risk)",
@@ -571,27 +543,15 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg TID",
-                "orderSentence": "Tizanidine 2 mg TID PO"
-              },
-              {
-                "text": "4 mg TID",
-                "orderSentence": "Tizanidine 4 mg TID PO"
-              },
-              {
-                "text": "8 mg TID",
-                "orderSentence": "Tizanidine 8 mg TID PO"
-              },
-              {
-                "text": "12 mg TID",
-                "orderSentence": "Tizanidine 12 mg TID PO"
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 2 mg qHS or TID; increase by 2-4 mg q3-4 days; max 36 mg/day divided",
-            "orderSentence": "Tizanidine 2 mg TID PO"
+            "instructions": "Start 2 mg qHS or TID; increase by 2-4 mg every 3-4 days; max 36 mg/day in 3 divided doses",
+            "orderSentence": "Tizanidine 2 mg PO"
           },
-          "contraindications": "Hepatic impairment; concurrent ciprofloxacin or fluvoxamine",
+          "contraindications": "Hepatic impairment; concurrent ciprofloxacin or fluvoxamine (CYP1A2 inhibitors)",
           "monitoring": "LFTs at baseline, 1, 3, 6 months; sedation; hypotension",
           "ED": "-",
           "HOSP": "ROUTINE",
@@ -605,25 +565,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "300 mg TID",
-                "orderSentence": "Gabapentin 300 mg TID PO"
-              },
-              {
-                "text": "600 mg TID",
-                "orderSentence": "Gabapentin 600 mg TID PO"
-              },
-              {
-                "text": "900 mg TID",
-                "orderSentence": "Gabapentin 900 mg TID PO"
-              },
-              {
-                "text": "1200 mg TID",
-                "orderSentence": "Gabapentin 1200 mg TID PO"
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 300 mg qHS; increase by 300 mg q1-3 days; target 900-1800 mg TID; max 3600 mg/day",
-            "orderSentence": "Gabapentin 300 mg TID PO"
+            "instructions": "Start 300 mg qHS; increase by 300 mg every 1-3 days; target 900-1800 mg TID; max 3600 mg/day",
+            "orderSentence": "Gabapentin 300 mg PO"
           },
           "contraindications": "Renal impairment (adjust dose per CrCl)",
           "monitoring": "Sedation, dizziness, peripheral edema",
@@ -639,25 +587,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "75 mg BID",
-                "orderSentence": "Pregabalin 75 mg BID PO"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Pregabalin 150 mg BID PO"
-              },
-              {
-                "text": "225 mg BID",
-                "orderSentence": "Pregabalin 225 mg BID PO"
-              },
-              {
-                "text": "300 mg BID",
-                "orderSentence": "Pregabalin 300 mg BID PO"
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID",
-            "orderSentence": "Pregabalin 75 mg BID PO"
+            "orderSentence": "Pregabalin 75 mg PO"
           },
           "contraindications": "Renal impairment (adjust dose per CrCl)",
           "monitoring": "Sedation, weight gain, peripheral edema",
@@ -673,25 +609,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mg daily",
-                "orderSentence": "Duloxetine 30 mg daily PO"
-              },
-              {
-                "text": "60 mg daily",
-                "orderSentence": "Duloxetine 60 mg daily PO"
-              },
-              {
-                "text": "90 mg daily",
-                "orderSentence": "Duloxetine 90 mg daily PO"
-              },
-              {
-                "text": "120 mg daily",
-                "orderSentence": "Duloxetine 120 mg daily PO"
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 30 mg daily × 1 week; increase to 60 mg daily; max 120 mg/day",
-            "orderSentence": "Duloxetine 30 mg daily PO"
+            "instructions": "Start 30 mg daily Ã— 1 week; increase to 60 mg daily; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg PO"
           },
           "contraindications": "Hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma",
           "monitoring": "Nausea (usually transient), BP, discontinuation syndrome",
@@ -702,30 +626,18 @@
         },
         {
           "item": "Amitriptyline",
-          "route": "PO",
+          "route": "-",
           "indication": "Neuropathic pain",
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg qHS",
-                "orderSentence": "Amitriptyline 10 mg qHS PO"
-              },
-              {
-                "text": "25 mg qHS",
-                "orderSentence": "Amitriptyline 25 mg qHS PO"
-              },
-              {
-                "text": "50 mg qHS",
-                "orderSentence": "Amitriptyline 50 mg qHS PO"
-              },
-              {
-                "text": "75 mg qHS",
-                "orderSentence": "Amitriptyline 75 mg qHS PO"
+                "text": "10-25 mg",
+                "orderSentence": "Amitriptyline 10-25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS",
-            "orderSentence": "Amitriptyline 10 mg qHS PO"
+            "orderSentence": "Amitriptyline 10-25 mg PO"
           },
           "contraindications": "Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma",
           "monitoring": "Anticholinergic effects; ECG if dose >100 mg/day",
@@ -741,32 +653,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg BID",
-                "orderSentence": "Carbamazepine 100 mg BID PO"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Carbamazepine 200 mg BID PO"
-              },
-              {
-                "text": "300 mg BID",
-                "orderSentence": "Carbamazepine 300 mg BID PO"
-              },
-              {
-                "text": "400 mg BID",
-                "orderSentence": "Carbamazepine 400 mg BID PO"
-              },
-              {
-                "text": "600 mg BID",
-                "orderSentence": "Carbamazepine 600 mg BID PO"
+                "text": "100 mg",
+                "orderSentence": "Carbamazepine 100 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 100 mg BID; increase by 200 mg/day q3-7 days; max 1200 mg/day",
-            "orderSentence": "Carbamazepine 100 mg BID PO"
+            "instructions": "Start 100 mg BID; increase by 200 mg/day every 3-7 days; max 1200 mg/day",
+            "orderSentence": "Carbamazepine 100 mg PO"
           },
           "contraindications": "AV block; bone marrow suppression; concurrent MAOIs",
-          "monitoring": "CBC, LFTs, sodium at baseline and periodically; HLA-B*1502 screening",
+          "monitoring": "CBC, LFTs, sodium at baseline and periodically; HLA-B*1502 screening in at-risk populations",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -779,29 +675,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "300 mg BID",
-                "orderSentence": "Oxcarbazepine 300 mg BID PO"
-              },
-              {
-                "text": "450 mg BID",
-                "orderSentence": "Oxcarbazepine 450 mg BID PO"
-              },
-              {
-                "text": "600 mg BID",
-                "orderSentence": "Oxcarbazepine 600 mg BID PO"
-              },
-              {
-                "text": "900 mg BID",
-                "orderSentence": "Oxcarbazepine 900 mg BID PO"
-              },
-              {
-                "text": "1200 mg BID",
-                "orderSentence": "Oxcarbazepine 1200 mg BID PO"
+                "text": "300 mg",
+                "orderSentence": "Oxcarbazepine 300 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 300 mg BID; increase by 300 mg q3 days; max 1200 mg BID",
-            "orderSentence": "Oxcarbazepine 300 mg BID PO"
+            "instructions": "Start 300 mg BID; increase by 300 mg every 3 days; max 1200 mg BID",
+            "orderSentence": "Oxcarbazepine 300 mg PO"
           },
           "contraindications": "Hypersensitivity to carbamazepine",
           "monitoring": "Sodium (hyponatremia risk); HLA-B*1502 screening",
@@ -817,21 +697,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg BID",
-                "orderSentence": "Oxybutynin IR 5 mg BID PO"
-              },
-              {
-                "text": "5 mg TID",
-                "orderSentence": "Oxybutynin IR 5 mg TID PO"
-              },
-              {
-                "text": "5 mg QID",
-                "orderSentence": "Oxybutynin IR 5 mg QID PO"
+                "text": "5 mg",
+                "orderSentence": "Oxybutynin IR 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg BID-TID; max 5 mg QID",
-            "orderSentence": "Oxybutynin IR 5 mg BID PO"
+            "orderSentence": "Oxybutynin IR 5 mg PO"
           },
           "contraindications": "Urinary retention; uncontrolled narrow-angle glaucoma; GI obstruction",
           "monitoring": "Dry mouth, constipation, cognitive impairment (especially elderly)",
@@ -847,32 +719,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg daily",
-                "orderSentence": "Oxybutynin ER 5 mg daily PO"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Oxybutynin ER 10 mg daily PO"
-              },
-              {
-                "text": "15 mg daily",
-                "orderSentence": "Oxybutynin ER 15 mg daily PO"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Oxybutynin ER 20 mg daily PO"
-              },
-              {
-                "text": "30 mg daily",
-                "orderSentence": "Oxybutynin ER 30 mg daily PO"
+                "text": "5-10 mg",
+                "orderSentence": "Oxybutynin ER 5-10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5-10 mg daily; max 30 mg daily",
-            "orderSentence": "Oxybutynin ER 5 mg daily PO"
+            "orderSentence": "Oxybutynin ER 5-10 mg PO"
           },
-          "contraindications": "Urinary retention; uncontrolled narrow-angle glaucoma; GI obstruction",
-          "monitoring": "Dry mouth, constipation, cognitive impairment (fewer than IR)",
+          "contraindications": "Same as IR",
+          "monitoring": "Same; fewer anticholinergic side effects than IR",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -885,20 +741,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg daily",
-                "orderSentence": "Solifenacin 5 mg daily PO"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Solifenacin 10 mg daily PO"
+                "text": "5 mg",
+                "orderSentence": "Solifenacin 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg daily; may increase to 10 mg daily",
-            "orderSentence": "Solifenacin 5 mg daily PO"
+            "orderSentence": "Solifenacin 5 mg PO"
           },
           "contraindications": "Urinary retention; gastric retention; uncontrolled narrow-angle glaucoma; severe hepatic impairment",
-          "monitoring": "Dry mouth, constipation; preferred if cognitive concerns",
+          "monitoring": "Dry mouth, constipation; preferred over oxybutynin if cognitive concerns",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -911,17 +763,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg daily",
-                "orderSentence": "Mirabegron 25 mg daily PO"
-              },
-              {
-                "text": "50 mg daily",
-                "orderSentence": "Mirabegron 50 mg daily PO"
+                "text": "25 mg",
+                "orderSentence": "Mirabegron 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25 mg daily; may increase to 50 mg daily",
-            "orderSentence": "Mirabegron 25 mg daily PO"
+            "orderSentence": "Mirabegron 25 mg PO"
           },
           "contraindications": "Uncontrolled hypertension",
           "monitoring": "BP monitoring; fewer anticholinergic effects (beta-3 agonist)",
@@ -937,13 +785,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.4 mg daily",
-                "orderSentence": "Tamsulosin 0.4 mg daily PO"
+                "text": "0.4 mg",
+                "orderSentence": "Tamsulosin 0.4 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "0.4 mg daily 30 min after same meal each day",
-            "orderSentence": "Tamsulosin 0.4 mg daily PO"
+            "instructions": "0.4 mg daily 30 minutes after same meal each day",
+            "orderSentence": "Tamsulosin 0.4 mg PO"
           },
           "contraindications": "Severe sulfonamide allergy (use caution)",
           "monitoring": "Orthostatic hypotension; retrograde ejaculation",
@@ -959,21 +807,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg TID",
-                "orderSentence": "Bethanechol 10 mg TID PO"
-              },
-              {
-                "text": "25 mg TID",
-                "orderSentence": "Bethanechol 25 mg TID PO"
-              },
-              {
-                "text": "50 mg TID",
-                "orderSentence": "Bethanechol 50 mg TID PO"
+                "text": "10-50 mg",
+                "orderSentence": "Bethanechol 10-50 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "10-50 mg TID-QID",
-            "orderSentence": "Bethanechol 10 mg TID PO"
+            "orderSentence": "Bethanechol 10-50 mg PO"
           },
           "contraindications": "Asthma; bradycardia; hypotension; GI/GU obstruction",
           "monitoring": "GI cramping, bronchospasm",
@@ -984,26 +824,18 @@
         },
         {
           "item": "Desmopressin",
-          "route": "PO/IN",
+          "route": "PO",
           "indication": "Nocturia",
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.1 mg qHS",
-                "orderSentence": "Desmopressin 0.1 mg qHS PO"
-              },
-              {
-                "text": "0.2 mg qHS",
-                "orderSentence": "Desmopressin 0.2 mg qHS PO"
-              },
-              {
-                "text": "0.4 mg qHS",
-                "orderSentence": "Desmopressin 0.4 mg qHS PO"
+                "text": "0.1-0.4 mg",
+                "orderSentence": "Desmopressin 0.1-0.4 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "0.1-0.4 mg qHS (oral) or 10-40 mcg intranasal",
-            "orderSentence": "Desmopressin 0.1 mg qHS PO"
+            "orderSentence": "Desmopressin 0.1-0.4 mg PO"
           },
           "contraindications": "Hyponatremia risk; age >65 (relative); CHF; polydipsia",
           "monitoring": "Sodium at baseline, 1 week, 1 month, then periodically; fluid restrict evening",
@@ -1019,17 +851,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg qAM",
-                "orderSentence": "Amantadine 100 mg qAM PO"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Amantadine 100 mg BID PO"
+                "text": "100 mg",
+                "orderSentence": "Amantadine 100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "100 mg every morning; may add 100 mg early afternoon (before 2 PM); max 200 mg/day",
-            "orderSentence": "Amantadine 100 mg qAM PO"
+            "orderSentence": "Amantadine 100 mg PO"
           },
           "contraindications": "Renal impairment (adjust dose); uncontrolled seizures",
           "monitoring": "Livedo reticularis; ankle edema; insomnia; hallucinations",
@@ -1045,24 +873,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg qAM",
-                "orderSentence": "Modafinil 100 mg qAM PO"
-              },
-              {
-                "text": "200 mg qAM",
-                "orderSentence": "Modafinil 200 mg qAM PO"
-              },
-              {
-                "text": "400 mg qAM",
-                "orderSentence": "Modafinil 400 mg qAM PO"
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 100 mg every morning; may increase to 200 mg; max 400 mg/day; Schedule IV",
-            "orderSentence": "Modafinil 100 mg qAM PO"
+            "instructions": "Start 100 mg every morning; may increase to 200 mg; max 400 mg/day",
+            "orderSentence": "Modafinil 100 mg PO"
           },
           "contraindications": "Cardiac arrhythmia; LV hypertrophy; hepatic impairment",
-          "monitoring": "BP, HR; may reduce efficacy of hormonal contraception",
+          "monitoring": "BP, HR; may reduce efficacy of hormonal contraception; Schedule IV",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -1075,20 +895,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "150 mg qAM",
-                "orderSentence": "Armodafinil 150 mg qAM PO"
-              },
-              {
-                "text": "250 mg qAM",
-                "orderSentence": "Armodafinil 250 mg qAM PO"
+                "text": "150 mg",
+                "orderSentence": "Armodafinil 150 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 150 mg every morning; max 250 mg daily; longer half-life; Schedule IV",
-            "orderSentence": "Armodafinil 150 mg qAM PO"
+            "instructions": "Start 150 mg every morning; max 250 mg daily",
+            "orderSentence": "Armodafinil 150 mg PO"
           },
-          "contraindications": "Cardiac arrhythmia; LV hypertrophy; hepatic impairment",
-          "monitoring": "BP, HR; may reduce efficacy of hormonal contraception",
+          "contraindications": "Same as modafinil",
+          "monitoring": "Same as modafinil; longer half-life; Schedule IV",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -1101,24 +917,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg BID",
-                "orderSentence": "Methylphenidate 5 mg BID PO"
-              },
-              {
-                "text": "10 mg BID",
-                "orderSentence": "Methylphenidate 10 mg BID PO"
-              },
-              {
-                "text": "20 mg BID",
-                "orderSentence": "Methylphenidate 20 mg BID PO"
+                "text": "5 mg",
+                "orderSentence": "Methylphenidate 5 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 5 mg BID (morning and noon); max 60 mg/day; Schedule II",
-            "orderSentence": "Methylphenidate 5 mg BID PO"
+            "instructions": "Start 5 mg BID (morning and noon); max 60 mg/day",
+            "orderSentence": "Methylphenidate 5 mg PO"
           },
           "contraindications": "Marked anxiety; glaucoma; tics/Tourette; concurrent MAOIs",
-          "monitoring": "BP, HR, mood",
+          "monitoring": "BP, HR, mood; Schedule II",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -1126,18 +934,18 @@
         },
         {
           "item": "Dalfampridine",
-          "route": "PO",
+          "route": "-",
           "indication": "Walking impairment",
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg q12h",
-                "orderSentence": "Dalfampridine 10 mg q12h PO"
+                "text": "10 mg",
+                "orderSentence": "Dalfampridine 10 mg -"
               }
             ],
-            "route": "PO",
+            "route": "-",
             "instructions": "10 mg q12h (must be exactly 12 hours apart); do NOT exceed 20 mg/day",
-            "orderSentence": "Dalfampridine 10 mg q12h PO"
+            "orderSentence": "Dalfampridine 10 mg -"
           },
           "contraindications": "Seizure history; CrCl <50 mL/min",
           "monitoring": "Seizure risk (dose-dependent); UTI; insomnia",
@@ -1153,28 +961,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg daily",
-                "orderSentence": "Sertraline 50 mg daily PO"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Sertraline 100 mg daily PO"
-              },
-              {
-                "text": "150 mg daily",
-                "orderSentence": "Sertraline 150 mg daily PO"
-              },
-              {
-                "text": "200 mg daily",
-                "orderSentence": "Sertraline 200 mg daily PO"
+                "text": "50 mg",
+                "orderSentence": "Sertraline 50 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 50 mg daily; increase by 25-50 mg q1-2 weeks; max 200 mg daily",
-            "orderSentence": "Sertraline 50 mg daily PO"
+            "instructions": "Start 50 mg daily; increase by 25-50 mg every 1-2 weeks; max 200 mg daily",
+            "orderSentence": "Sertraline 50 mg PO"
           },
           "contraindications": "Concurrent MAOIs; pimozide",
-          "monitoring": "Suicidality monitoring (especially weeks 1-4); serotonin syndrome",
+          "monitoring": "Suicidality monitoring (especially weeks 1-4); serotonin syndrome; QTc at high doses",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -1187,17 +983,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg daily",
-                "orderSentence": "Escitalopram 10 mg daily PO"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Escitalopram 20 mg daily PO"
+                "text": "10 mg",
+                "orderSentence": "Escitalopram 10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 10 mg daily; may increase to 20 mg after 1 week; max 20 mg daily",
-            "orderSentence": "Escitalopram 10 mg daily PO"
+            "orderSentence": "Escitalopram 10 mg PO"
           },
           "contraindications": "Concurrent MAOIs; pimozide; QT prolongation",
           "monitoring": "QTc if risk factors or dose >10 mg; suicidality monitoring",
@@ -1213,25 +1005,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "20 mg daily",
-                "orderSentence": "Fluoxetine 20 mg daily PO"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Fluoxetine 40 mg daily PO"
-              },
-              {
-                "text": "60 mg daily",
-                "orderSentence": "Fluoxetine 60 mg daily PO"
-              },
-              {
-                "text": "80 mg daily",
-                "orderSentence": "Fluoxetine 80 mg daily PO"
+                "text": "20 mg",
+                "orderSentence": "Fluoxetine 20 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 20 mg daily; may increase after several weeks; max 80 mg daily",
-            "orderSentence": "Fluoxetine 20 mg daily PO"
+            "orderSentence": "Fluoxetine 20 mg PO"
           },
           "contraindications": "Concurrent MAOIs; pimozide; thioridazine",
           "monitoring": "Long half-life (washout important); suicidality monitoring",
@@ -1247,25 +1027,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "150 mg daily",
-                "orderSentence": "Bupropion SR/XL 150 mg daily PO"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Bupropion SR/XL 150 mg BID PO"
-              },
-              {
-                "text": "300 mg XL daily",
-                "orderSentence": "Bupropion SR/XL 300 mg XL daily PO"
-              },
-              {
-                "text": "400 mg/day",
-                "orderSentence": "Bupropion SR/XL 400 mg/day PO"
+                "text": "150 mg",
+                "orderSentence": "Bupropion SR/XL 150 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 150 mg SR daily; increase to 150 mg SR BID after 3 days (or 300 mg XL daily); max 400 mg/day",
-            "orderSentence": "Bupropion SR/XL 150 mg daily PO"
+            "orderSentence": "Bupropion SR/XL 150 mg PO"
           },
           "contraindications": "Seizure disorder; eating disorders; abrupt alcohol/benzo withdrawal",
           "monitoring": "Seizure risk; insomnia; no sexual side effects",
@@ -1281,21 +1049,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "75 mg daily",
-                "orderSentence": "Venlafaxine XR 75 mg daily PO"
-              },
-              {
-                "text": "150 mg daily",
-                "orderSentence": "Venlafaxine XR 150 mg daily PO"
-              },
-              {
-                "text": "225 mg daily",
-                "orderSentence": "Venlafaxine XR 225 mg daily PO"
+                "text": "37.5-75 mg",
+                "orderSentence": "Venlafaxine XR 37.5-75 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 37.5-75 mg daily; increase by 75 mg q4 days; max 225 mg daily",
-            "orderSentence": "Venlafaxine XR 75 mg daily PO"
+            "instructions": "Start 37.5-75 mg daily; increase by 75 mg every 4 days; max 225 mg daily",
+            "orderSentence": "Venlafaxine XR 37.5-75 mg PO"
           },
           "contraindications": "Uncontrolled hypertension; concurrent MAOIs",
           "monitoring": "BP monitoring; discontinuation syndrome (taper slowly)",
@@ -1311,21 +1071,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "15 mg qHS",
-                "orderSentence": "Mirtazapine 15 mg qHS PO"
-              },
-              {
-                "text": "30 mg qHS",
-                "orderSentence": "Mirtazapine 30 mg qHS PO"
-              },
-              {
-                "text": "45 mg qHS",
-                "orderSentence": "Mirtazapine 45 mg qHS PO"
+                "text": "15 mg",
+                "orderSentence": "Mirtazapine 15 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 15 mg qHS; may increase by 15 mg q1-2 weeks; max 45 mg daily",
-            "orderSentence": "Mirtazapine 15 mg qHS PO"
+            "instructions": "Start 15 mg qHS; may increase by 15 mg every 1-2 weeks; max 45 mg daily",
+            "orderSentence": "Mirtazapine 15 mg PO"
           },
           "contraindications": "Concurrent MAOIs",
           "monitoring": "Weight gain; sedation (lower at higher doses); agranulocytosis (rare)",
@@ -1336,18 +1088,18 @@
         },
         {
           "item": "Polyethylene glycol 3350",
-          "route": "PO",
+          "route": "-",
           "indication": "Constipation",
           "dosing": {
             "doseOptions": [
               {
-                "text": "17 g daily",
-                "orderSentence": "Polyethylene glycol 3350 17 g daily PO"
+                "text": "17 g",
+                "orderSentence": "Polyethylene glycol 3350 17 g -"
               }
             ],
-            "route": "PO",
+            "route": "-",
             "instructions": "17 g (1 capful) in 8 oz liquid once daily; adjust to effect",
-            "orderSentence": "Polyethylene glycol 3350 17 g daily PO"
+            "orderSentence": "Polyethylene glycol 3350 17 g -"
           },
           "contraindications": "Bowel obstruction; ileus",
           "monitoring": "Electrolytes if prolonged use; may take 1-3 days for effect",
@@ -1363,13 +1115,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg BID",
-                "orderSentence": "Docusate sodium 100 mg BID PO"
+                "text": "100 mg",
+                "orderSentence": "Docusate sodium 100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "100 mg BID; max 500 mg/day",
-            "orderSentence": "Docusate sodium 100 mg BID PO"
+            "orderSentence": "Docusate sodium 100 mg PO"
           },
           "contraindications": "Intestinal obstruction; concurrent mineral oil",
           "monitoring": "Minimal efficacy as monotherapy; best for stool softening",
@@ -1385,17 +1137,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "8.6 mg qHS",
-                "orderSentence": "Senna 8.6 mg qHS PO"
-              },
-              {
-                "text": "17.2 mg qHS",
-                "orderSentence": "Senna 17.2 mg qHS PO"
+                "text": "8.6-17.2 mg",
+                "orderSentence": "Senna 8.6-17.2 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "8.6-17.2 mg qHS; max 34.4 mg/day",
-            "orderSentence": "Senna 8.6 mg qHS PO"
+            "orderSentence": "Senna 8.6-17.2 mg PO"
           },
           "contraindications": "Intestinal obstruction; acute abdominal pain",
           "monitoring": "Cramping; dependency with chronic daily use",
@@ -1406,26 +1154,18 @@
         },
         {
           "item": "Bisacodyl",
-          "route": "PO/PR",
+          "route": "PO",
           "indication": "Constipation",
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg qHS",
-                "orderSentence": "Bisacodyl 5 mg qHS PO"
-              },
-              {
-                "text": "10 mg qHS",
-                "orderSentence": "Bisacodyl 10 mg qHS PO"
-              },
-              {
-                "text": "10 mg PR",
-                "orderSentence": "Bisacodyl 10 mg PR PO"
+                "text": "5-10 mg",
+                "orderSentence": "Bisacodyl 5-10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "5-10 mg PO qHS or 10 mg PR PRN",
-            "orderSentence": "Bisacodyl 5 mg qHS PO"
+            "orderSentence": "Bisacodyl 5-10 mg PO"
           },
           "contraindications": "Intestinal obstruction; acute abdominal pain",
           "monitoring": "Cramping; electrolyte disturbance with overuse",
@@ -1441,13 +1181,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "24 mcg BID",
-                "orderSentence": "Lubiprostone 24 mcg BID PO"
+                "text": "24 mcg",
+                "orderSentence": "Lubiprostone 24 mcg PO"
               }
             ],
             "route": "PO",
             "instructions": "24 mcg BID with food",
-            "orderSentence": "Lubiprostone 24 mcg BID PO"
+            "orderSentence": "Lubiprostone 24 mcg PO"
           },
           "contraindications": "Mechanical GI obstruction",
           "monitoring": "Nausea (common); dyspnea; diarrhea",
@@ -1463,25 +1203,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "20 mg BID",
-                "orderSentence": "Propranolol 20 mg BID PO"
-              },
-              {
-                "text": "40 mg BID",
-                "orderSentence": "Propranolol 40 mg BID PO"
-              },
-              {
-                "text": "60 mg BID",
-                "orderSentence": "Propranolol 60 mg BID PO"
-              },
-              {
-                "text": "80 mg BID",
-                "orderSentence": "Propranolol 80 mg BID PO"
+                "text": "20 mg",
+                "orderSentence": "Propranolol 20 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 20 mg BID; increase by 20-40 mg q3-7 days; max 320 mg/day divided",
-            "orderSentence": "Propranolol 20 mg BID PO"
+            "instructions": "Start 20 mg BID; increase by 20-40 mg every 3-7 days; max 320 mg/day in divided doses",
+            "orderSentence": "Propranolol 20 mg PO"
           },
           "contraindications": "Asthma/COPD; bradycardia <50; heart block; decompensated CHF",
           "monitoring": "HR, BP; fatigue; depression; bronchospasm",
@@ -1497,25 +1225,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg qHS",
-                "orderSentence": "Primidone 25 mg qHS PO"
-              },
-              {
-                "text": "50 mg TID",
-                "orderSentence": "Primidone 50 mg TID PO"
-              },
-              {
-                "text": "125 mg TID",
-                "orderSentence": "Primidone 125 mg TID PO"
-              },
-              {
-                "text": "250 mg TID",
-                "orderSentence": "Primidone 250 mg TID PO"
+                "text": "25 mg",
+                "orderSentence": "Primidone 25 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 25 mg qHS; increase by 25 mg weekly; usual 50-250 mg TID",
-            "orderSentence": "Primidone 25 mg qHS PO"
+            "instructions": "Start 25 mg qHS; increase by 25 mg every week to 250 mg TID; usual dose 50-250 mg TID",
+            "orderSentence": "Primidone 25 mg PO"
           },
           "contraindications": "Porphyria; hypersensitivity to phenobarbital",
           "monitoring": "Severe sedation initially (start very low); ataxia; nausea",
@@ -1531,25 +1247,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.25 mg BID",
-                "orderSentence": "Clonazepam 0.25 mg BID PO"
-              },
-              {
-                "text": "0.5 mg BID",
-                "orderSentence": "Clonazepam 0.5 mg BID PO"
-              },
-              {
-                "text": "1 mg BID",
-                "orderSentence": "Clonazepam 1 mg BID PO"
-              },
-              {
-                "text": "2 mg BID",
-                "orderSentence": "Clonazepam 2 mg BID PO"
+                "text": "0.25-0.5 mg",
+                "orderSentence": "Clonazepam 0.25-0.5 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 0.25-0.5 mg BID; increase by 0.5 mg q3 days; max 6 mg/day",
-            "orderSentence": "Clonazepam 0.25 mg BID PO"
+            "instructions": "Start 0.25-0.5 mg BID; increase by 0.5 mg every 3 days; max 6 mg/day",
+            "orderSentence": "Clonazepam 0.25-0.5 mg PO"
           },
           "contraindications": "Severe hepatic impairment; myasthenia gravis; untreated narrow-angle glaucoma",
           "monitoring": "Sedation; dependence; falls risk; do NOT stop abruptly",
@@ -1565,25 +1269,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg daily",
-                "orderSentence": "Topiramate 25 mg daily PO"
-              },
-              {
-                "text": "50 mg BID",
-                "orderSentence": "Topiramate 50 mg BID PO"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Topiramate 100 mg BID PO"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Topiramate 200 mg BID PO"
+                "text": "25 mg",
+                "orderSentence": "Topiramate 25 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 25 mg daily; increase by 25 mg weekly; max 400 mg/day divided",
-            "orderSentence": "Topiramate 25 mg daily PO"
+            "instructions": "Start 25 mg daily; increase by 25 mg weekly; max 400 mg/day in divided doses",
+            "orderSentence": "Topiramate 25 mg PO"
           },
           "contraindications": "Metabolic acidosis; kidney stones",
           "monitoring": "Cognitive slowing (\"dopamax\"); paresthesias; kidney stones; weight loss",
@@ -1599,17 +1291,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "20/10 mg daily",
-                "orderSentence": "Dextromethorphan-quinidine 20/10 mg daily PO"
-              },
-              {
-                "text": "20/10 mg q12h",
-                "orderSentence": "Dextromethorphan-quinidine 20/10 mg q12h PO"
+                "text": "10 mg",
+                "orderSentence": "Dextromethorphan-quinidine 10 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "20/10 mg daily × 7 days, then 20/10 mg q12h",
-            "orderSentence": "Dextromethorphan-quinidine 20/10 mg daily PO"
+            "instructions": "20/10 mg daily Ã— 7 days, then 20/10 mg q12h",
+            "orderSentence": "Dextromethorphan-quinidine 10 mg PO"
           },
           "contraindications": "QT prolongation; concurrent MAOIs; concurrent quinidine/quinine; CYP2D6 substrate drugs",
           "monitoring": "ECG at baseline; QTc monitoring; multiple drug interactions",
@@ -1622,18 +1310,11 @@
       "Second-line/Refractory (Acute Treatment)": [
         {
           "item": "Plasmapheresis (PLEX)",
-          "route": "—",
-          "indication": "Refractory acute relapse",
+          "route": "-",
+          "indication": "-",
           "dosing": {
-            "doseOptions": [
-              {
-                "text": "5-7 exchanges",
-                "orderSentence": "Plasmapheresis (PLEX) 5-7 exchanges —"
-              }
-            ],
-            "route": "—",
             "instructions": "5-7 exchanges over 10-14 days",
-            "orderSentence": "Plasmapheresis (PLEX) 5-7 exchanges —"
+            "orderSentence": "Plasmapheresis (PLEX) - - - see dosing"
           },
           "contraindications": "Hemodynamic instability, sepsis, line contraindication",
           "monitoring": "BP, electrolytes, coags, fibrinogen, line infection",
@@ -1644,18 +1325,18 @@
         },
         {
           "item": "IVIG",
-          "route": "IV",
-          "indication": "Refractory acute relapse",
+          "route": "PO",
+          "indication": "-",
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.4 g/kg/day",
-                "orderSentence": "IVIG 0.4 g/kg/day IV"
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIG 0.4 g/kg PO"
               }
             ],
-            "route": "IV",
-            "instructions": "0.4 g/kg/day × 5 days (total 2 g/kg)",
-            "orderSentence": "IVIG 0.4 g/kg/day IV"
+            "route": "PO",
+            "instructions": "0.4 g/kg/day Ã— 5 days",
+            "orderSentence": "IVIG 0.4 g/kg PO"
           },
           "contraindications": "IgA deficiency, renal failure, thrombosis risk",
           "monitoring": "Renal function, headache, thrombosis",
@@ -1667,20 +1348,13 @@
         {
           "item": "Extended IV steroids",
           "route": "IV",
-          "indication": "Refractory acute relapse",
+          "indication": "-",
           "dosing": {
-            "doseOptions": [
-              {
-                "text": "1000 mg",
-                "orderSentence": "Extended IV steroids 1000 mg IV"
-              }
-            ],
-            "route": "IV",
             "instructions": "Additional 2-5 days methylprednisolone (total 5-10 days)",
-            "orderSentence": "Extended IV steroids 1000 mg IV"
+            "orderSentence": "Extended IV steroids - IV - see dosing"
           },
-          "contraindications": "Active untreated infection, uncontrolled diabetes, psychosis history",
-          "monitoring": "Glucose q6h, BP, mood, sleep",
+          "contraindications": "As above",
+          "monitoring": "As above",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -1688,20 +1362,20 @@
         },
         {
           "item": "ACTH gel (H.P. Acthar)",
-          "route": "IM/SC",
-          "indication": "Refractory acute relapse",
+          "route": "IM",
+          "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "80 units",
-                "orderSentence": "ACTH gel (H.P. Acthar) 80 units IM/SC"
+                "orderSentence": "ACTH gel (H.P. Acthar) 80 units IM"
               }
             ],
-            "route": "IM/SC",
-            "instructions": "80 units IM/SC daily × 2-3 weeks",
-            "orderSentence": "ACTH gel (H.P. Acthar) 80 units IM/SC"
+            "route": "IM",
+            "instructions": "80 units IM/SC daily Ã— 2-3 weeks",
+            "orderSentence": "ACTH gel (H.P. Acthar) 80 units IM"
           },
-          "contraindications": "Active untreated infection, uncontrolled diabetes, psychosis history",
+          "contraindications": "Similar to corticosteroids",
           "monitoring": "Glucose, BP, electrolytes",
           "ED": "-",
           "HOSP": "EXT",
@@ -1711,352 +1385,606 @@
       ],
       "Disease-Modifying Therapies (DMT) - OPD ONLY": [
         {
-          "item": "**INJECTABLE - MODERATE EFFICACY**"
+          "item": "**INJECTABLE - MODERATE EFFICACY**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**INJECTABLE - MODERATE EFFICACY** - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
         },
         {
           "item": "Interferon beta-1a (Avonex)",
           "route": "IM",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mcg",
+                "orderSentence": "Interferon beta-1a (Avonex) 30 mcg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "30 mcg IM once weekly",
+            "orderSentence": "Interferon beta-1a (Avonex) 30 mcg IM"
+          },
+          "pretreatment": "-",
+          "contraindications": "Depression (relative); decompensated liver disease",
+          "monitoring": "CBC, LFTs q3-6mo; TSH annually; flu-like symptoms common (pretreat with NSAIDs/acetaminophen)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "30 mcg IM once weekly",
-            "orderSentence": "Interferon beta-1a (Avonex) - IM - see dosing"
-          },
-          "pretreatment": "CBC, LFTs, TSH",
-          "contraindications": "Depression (relative); decompensated liver disease",
-          "monitoring": "CBC, LFTs q3-6mo; TSH annually; flu-like symptoms common (pretreat with NSAIDs/acetaminophen)"
+          "ICU": "-"
         },
         {
           "item": "Interferon beta-1a (Rebif)",
           "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "44 mcg",
+                "orderSentence": "Interferon beta-1a (Rebif) 44 mcg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "22 or 44 mcg SC three times weekly (titrate over 4 weeks)",
+            "orderSentence": "Interferon beta-1a (Rebif) 44 mcg SC"
+          },
+          "pretreatment": "-",
+          "contraindications": "Same as Avonex",
+          "monitoring": "Same; injection site reactions",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "22 or 44 mcg SC three times weekly (titrate over 4 weeks)",
-            "orderSentence": "Interferon beta-1a (Rebif) - SC - see dosing"
-          },
-          "pretreatment": "CBC, LFTs, TSH",
-          "contraindications": "Depression (relative); decompensated liver disease",
-          "monitoring": "CBC, LFTs q3-6mo; TSH annually; injection site reactions"
+          "ICU": "-"
         },
         {
           "item": "Interferon beta-1b (Betaseron/Extavia)",
           "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mcg",
+                "orderSentence": "Interferon beta-1b (Betaseron/Extavia) 250 mcg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "250 mcg SC every other day (titrate over 6 weeks)",
+            "orderSentence": "Interferon beta-1b (Betaseron/Extavia) 250 mcg SC"
+          },
+          "pretreatment": "-",
+          "contraindications": "Same as Avonex",
+          "monitoring": "Same",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "250 mcg SC every other day (titrate over 6 weeks)",
-            "orderSentence": "Interferon beta-1b (Betaseron/Extavia) - SC - see dosing"
-          },
-          "pretreatment": "CBC, LFTs, TSH",
-          "contraindications": "Depression (relative); decompensated liver disease",
-          "monitoring": "CBC, LFTs q3-6mo; TSH annually; flu-like symptoms common"
+          "ICU": "-"
         },
         {
           "item": "Peginterferon beta-1a (Plegridy)",
           "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "125 mcg",
+                "orderSentence": "Peginterferon beta-1a (Plegridy) 125 mcg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "125 mcg SC every 14 days (titrate over first 4 doses)",
+            "orderSentence": "Peginterferon beta-1a (Plegridy) 125 mcg SC"
+          },
+          "pretreatment": "-",
+          "contraindications": "Same as Avonex",
+          "monitoring": "Same; less frequent dosing",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "125 mcg SC every 14 days (titrate over first 4 doses)",
-            "orderSentence": "Peginterferon beta-1a (Plegridy) - SC - see dosing"
-          },
-          "pretreatment": "CBC, LFTs, TSH",
-          "contraindications": "Depression (relative); decompensated liver disease",
-          "monitoring": "CBC, LFTs q3-6mo; TSH annually; less frequent dosing"
+          "ICU": "-"
         },
         {
           "item": "Glatiramer acetate (Copaxone) 20mg",
           "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Glatiramer acetate (Copaxone) 20mg 20 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "20 mg SC daily",
+            "orderSentence": "Glatiramer acetate (Copaxone) 20mg 20 mg SC"
+          },
+          "pretreatment": "-",
+          "contraindications": "Hypersensitivity",
+          "monitoring": "Injection site reactions; post-injection systemic reaction (rare, self-limited)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "20 mg SC daily",
-            "orderSentence": "Glatiramer acetate (Copaxone) 20mg - SC - see dosing"
-          },
-          "pretreatment": "None required",
-          "contraindications": "Hypersensitivity",
-          "monitoring": "Injection site reactions; post-injection systemic reaction (rare, self-limited)"
+          "ICU": "-"
         },
         {
           "item": "Glatiramer acetate (Copaxone) 40mg",
           "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Glatiramer acetate (Copaxone) 40mg 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC three times weekly (â‰¥48 hours apart)",
+            "orderSentence": "Glatiramer acetate (Copaxone) 40mg 40 mg SC"
+          },
+          "pretreatment": "-",
+          "contraindications": "Hypersensitivity",
+          "monitoring": "Same",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "40 mg SC three times weekly (â‰¥48 hours apart)",
-            "orderSentence": "Glatiramer acetate (Copaxone) 40mg - SC - see dosing"
-          },
-          "pretreatment": "None required",
-          "contraindications": "Hypersensitivity",
-          "monitoring": "Same"
+          "ICU": "-"
         },
         {
           "item": "Glatiramer acetate (Glatopa)",
           "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Glatiramer acetate (Glatopa) 20 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "20 mg SC daily or 40 mg SC three times weekly",
+            "orderSentence": "Glatiramer acetate (Glatopa) 20 mg SC"
+          },
+          "pretreatment": "-",
+          "contraindications": "Hypersensitivity",
+          "monitoring": "Same (generic)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "20 mg SC daily or 40 mg SC three times weekly",
-            "orderSentence": "Glatiramer acetate (Glatopa) - SC - see dosing"
-          },
-          "pretreatment": "None required",
-          "contraindications": "Hypersensitivity",
-          "monitoring": "Same (generic)"
+          "ICU": "-"
         },
         {
-          "item": "**ORAL - MODERATE EFFICACY**"
+          "item": "**ORAL - MODERATE EFFICACY**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**ORAL - MODERATE EFFICACY** - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
         },
         {
           "item": "Dimethyl fumarate (Tecfidera)",
           "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "120 mg",
+                "orderSentence": "Dimethyl fumarate (Tecfidera) 120 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "120 mg BID Ã— 7 days, then 240 mg BID",
+            "orderSentence": "Dimethyl fumarate (Tecfidera) 120 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Lymphopenia <500 (discontinue)",
+          "monitoring": "CBC q6mo (lymphocytes); LFTs; GI side effects (take with food); flushing (aspirin 30 min prior)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "120 mg BID Ã— 7 days, then 240 mg BID",
-            "orderSentence": "Dimethyl fumarate (Tecfidera) - PO - see dosing"
-          },
-          "pretreatment": "CBC, LFTs",
-          "contraindications": "Lymphopenia <500 (discontinue)",
-          "monitoring": "CBC q6mo (lymphocytes); LFTs; GI side effects (take with food); flushing (aspirin 30 min prior)"
+          "ICU": "-"
         },
         {
           "item": "Diroximel fumarate (Vumerity)",
           "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "231 mg",
+                "orderSentence": "Diroximel fumarate (Vumerity) 231 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "231 mg BID Ã— 7 days, then 462 mg BID",
+            "orderSentence": "Diroximel fumarate (Vumerity) 231 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Same as Tecfidera",
+          "monitoring": "Same; less GI side effects than Tecfidera",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "231 mg BID Ã— 7 days, then 462 mg BID",
-            "orderSentence": "Diroximel fumarate (Vumerity) - PO - see dosing"
-          },
-          "pretreatment": "CBC, LFTs",
-          "contraindications": "Lymphopenia <500 (discontinue)",
-          "monitoring": "CBC q6mo (lymphocytes); LFTs; less GI side effects than Tecfidera; flushing"
+          "ICU": "-"
         },
         {
           "item": "Monomethyl fumarate (Bafiertam)",
           "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "95 mg",
+                "orderSentence": "Monomethyl fumarate (Bafiertam) 95 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "95 mg BID Ã— 7 days, then 190 mg BID",
+            "orderSentence": "Monomethyl fumarate (Bafiertam) 95 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Same as Tecfidera",
+          "monitoring": "Same",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "95 mg BID Ã— 7 days, then 190 mg BID",
-            "orderSentence": "Monomethyl fumarate (Bafiertam) - PO - see dosing"
-          },
-          "pretreatment": "CBC, LFTs",
-          "contraindications": "Lymphopenia <500 (discontinue)",
-          "monitoring": "CBC q6mo (lymphocytes); LFTs; GI side effects; flushing"
+          "ICU": "-"
         },
         {
           "item": "Teriflunomide (Aubagio)",
           "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "14 mg",
+                "orderSentence": "Teriflunomide (Aubagio) 14 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "7 or 14 mg once daily",
+            "orderSentence": "Teriflunomide (Aubagio) 14 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Pregnancy (Category X - teratogenic); severe hepatic impairment; concurrent leflunomide",
+          "monitoring": "LFTs monthly Ã— 6 months, then periodically; BP; hair thinning; requires cholestyramine washout if pregnancy desired",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "7 or 14 mg once daily",
-            "orderSentence": "Teriflunomide (Aubagio) - PO - see dosing"
-          },
-          "pretreatment": "CBC, LFTs, TB test, BP",
-          "contraindications": "Pregnancy (Category X - teratogenic); severe hepatic impairment; concurrent leflunomide",
-          "monitoring": "LFTs monthly Ã— 6 months, then periodically; BP; hair thinning; requires cholestyramine washout if pregnancy desired"
+          "ICU": "-"
         },
         {
-          "item": "**ORAL - HIGH EFFICACY (S1P MODULATORS)**"
+          "item": "**ORAL - HIGH EFFICACY (S1P MODULATORS)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**ORAL - HIGH EFFICACY (S1P MODULATORS)** - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
         },
         {
           "item": "Fingolimod (Gilenya)",
           "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Fingolimod (Gilenya) 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.5 mg once daily",
+            "orderSentence": "Fingolimod (Gilenya) 0.5 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Bradycardia <55; 2nd/3rd degree AV block; sick sinus syndrome; QTc >500 ms; recent MI/stroke/TIA (within 6 months)",
+          "monitoring": "First-dose observation 6 hours (HR, BP q1h, ECG at 6h); macular edema screen at 3-4 months; lymphocytes; LFTs",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "0.5 mg once daily",
-            "orderSentence": "Fingolimod (Gilenya) - PO - see dosing"
-          },
-          "pretreatment": "CBC, LFTs, ECG, ophthalmology exam (macular edema), VZV IgG (vaccinate if negative and wait 4 weeks)",
-          "contraindications": "Bradycardia <55; 2nd/3rd degree AV block; sick sinus syndrome; QTc >500 ms; recent MI/stroke/TIA (within 6 months)",
-          "monitoring": "First-dose observation 6 hours (HR, BP q1h, ECG at 6h); macular edema screen at 3-4 months; lymphocytes; LFTs"
+          "ICU": "-"
         },
         {
           "item": "Siponimod (Mayzent)",
           "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Siponimod (Mayzent) 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Titration pack days 1-5, then 2 mg daily (1 mg if CYP2C9 *1/*3 or *2/*3)",
+            "orderSentence": "Siponimod (Mayzent) 2 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Same plus CYP2C9 *3/*3 genotype (contraindicated)",
+          "monitoring": "Same; genotype required before starting",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "Titration pack days 1-5, then 2 mg daily (1 mg if CYP2C9 *1/*3 or *2/*3)",
-            "orderSentence": "Siponimod (Mayzent) - PO - see dosing"
-          },
-          "pretreatment": "CBC, LFTs, ECG, ophthalmology exam, VZV IgG, CYP2C9 genotype",
-          "contraindications": "Bradycardia <55; 2nd/3rd degree AV block; sick sinus syndrome; QTc >500 ms; recent MI/stroke/TIA; CYP2C9 *3/*3 genotype",
-          "monitoring": "First-dose observation 6 hours; macular edema screen; lymphocytes; LFTs; genotype required"
+          "ICU": "-"
         },
         {
           "item": "Ozanimod (Zeposia)",
           "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.23 mg",
+                "orderSentence": "Ozanimod (Zeposia) 0.23 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.23 mg daily Ã— 4 days, 0.46 mg daily Ã— 3 days, then 0.92 mg daily",
+            "orderSentence": "Ozanimod (Zeposia) 0.23 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Same; concurrent MAOIs",
+          "monitoring": "Similar to fingolimod; no first-dose observation required (slower titration); macular edema screen",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "0.23 mg daily Ã— 4 days, 0.46 mg daily Ã— 3 days, then 0.92 mg daily",
-            "orderSentence": "Ozanimod (Zeposia) - PO - see dosing"
-          },
-          "pretreatment": "CBC, LFTs, ECG, ophthalmology exam, VZV IgG",
-          "contraindications": "Bradycardia <55; 2nd/3rd degree AV block; sick sinus syndrome; QTc >500 ms; recent MI/stroke/TIA; concurrent MAOIs",
-          "monitoring": "No first-dose observation required (slower titration); macular edema screen at 3-4 months; lymphocytes; LFTs"
+          "ICU": "-"
         },
         {
           "item": "Ponesimod (Ponvory)",
           "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Ponesimod (Ponvory) 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "14-day titration pack, then 20 mg daily",
+            "orderSentence": "Ponesimod (Ponvory) 20 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Same",
+          "monitoring": "Similar; no first-dose observation required",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "14-day titration pack, then 20 mg daily",
-            "orderSentence": "Ponesimod (Ponvory) - PO - see dosing"
-          },
-          "pretreatment": "CBC, LFTs, ECG, ophthalmology exam, VZV IgG",
-          "contraindications": "Bradycardia <55; 2nd/3rd degree AV block; sick sinus syndrome; QTc >500 ms; recent MI/stroke/TIA",
-          "monitoring": "No first-dose observation required; macular edema screen at 3-4 months; lymphocytes; LFTs"
+          "ICU": "-"
         },
         {
-          "item": "**ORAL - HIGH EFFICACY (OTHER)**"
+          "item": "**ORAL - HIGH EFFICACY (OTHER)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**ORAL - HIGH EFFICACY (OTHER)** - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
         },
         {
           "item": "Cladribine (Mavenclad)",
           "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1.75 mg/kg",
+                "orderSentence": "Cladribine (Mavenclad) 1.75 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Year 1: 1.75 mg/kg divided into 2 treatment weeks (week 1 and week 5); Year 2: repeat same dosing; no treatment years 3-4",
+            "orderSentence": "Cladribine (Mavenclad) 1.75 mg/kg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Active infection; HIV; active malignancy; pregnancy/breastfeeding; CrCl <30",
+          "monitoring": "CBC at months 2 and 6 of each treatment year; lymphopenia expected and desired; screen for malignancy",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "Year 1: 1.75 mg/kg divided into 2 treatment weeks (week 1 and week 5); Year 2: repeat same dosing; no treatment years 3-4",
-            "orderSentence": "Cladribine (Mavenclad) - PO - see dosing"
-          },
-          "pretreatment": "CBC, LFTs, HIV, Hepatitis B/C, TB, VZV IgG",
-          "contraindications": "Active infection; HIV; active malignancy; pregnancy/breastfeeding; CrCl <30",
-          "monitoring": "CBC at months 2 and 6 of each treatment year; lymphopenia expected and desired; screen for malignancy"
+          "ICU": "-"
         },
         {
-          "item": "**INFUSION - HIGH EFFICACY**"
+          "item": "**INFUSION - HIGH EFFICACY**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**INFUSION - HIGH EFFICACY** - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
         },
         {
           "item": "Natalizumab (Tysabri)",
           "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Natalizumab (Tysabri) 300 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "300 mg IV every 4 weeks (or extended interval q6 weeks if stable and JCV negative)",
+            "orderSentence": "Natalizumab (Tysabri) 300 mg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "JCV antibody positive with index >1.5 and prior immunosuppression (high PML risk); active infection",
+          "monitoring": "JCV antibody q6mo; MRI for PML surveillance q6-12mo; infusion reactions; REMS program required",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "300 mg IV every 4 weeks (or extended interval q6 weeks if stable and JCV negative)",
-            "orderSentence": "Natalizumab (Tysabri) - IV - see dosing"
-          },
-          "pretreatment": "JCV antibody, CBC, LFTs",
-          "contraindications": "JCV antibody positive with index >1.5 and prior immunosuppression (high PML risk); active infection",
-          "monitoring": "JCV antibody q6mo; MRI for PML surveillance q6-12mo; infusion reactions; REMS program required"
+          "ICU": "-"
         },
         {
           "item": "Ocrelizumab (Ocrevus)",
           "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Ocrelizumab (Ocrevus) 300 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Initial: 300 mg IV Ã— 2 doses 14 days apart; Maintenance: 600 mg IV every 6 months",
+            "orderSentence": "Ocrelizumab (Ocrevus) 300 mg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "Active Hepatitis B; active infection",
+          "monitoring": "Immunoglobulins annually; infection monitoring; infusion reactions (premedicate with methylprednisolone, antihistamine, acetaminophen)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "Initial: 300 mg IV Ã— 2 doses 14 days apart; Maintenance: 600 mg IV every 6 months",
-            "orderSentence": "Ocrelizumab (Ocrevus) - IV - see dosing"
-          },
-          "pretreatment": "Hepatitis B serology, TB test, immunoglobulins",
-          "contraindications": "Active Hepatitis B; active infection",
-          "monitoring": "Immunoglobulins annually; infection monitoring; infusion reactions (premedicate with methylprednisolone, antihistamine, acetaminophen)"
+          "ICU": "-"
         },
         {
           "item": "Ofatumumab (Kesimpta)",
           "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Ofatumumab (Kesimpta) 20 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Initial: 20 mg SC at weeks 0, 1, 2; Maintenance: 20 mg SC monthly starting week 4",
+            "orderSentence": "Ofatumumab (Kesimpta) 20 mg SC"
+          },
+          "pretreatment": "-",
+          "contraindications": "Active Hepatitis B; active infection",
+          "monitoring": "Same as ocrelizumab; self-administered at home",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "Initial: 20 mg SC at weeks 0, 1, 2; Maintenance: 20 mg SC monthly starting week 4",
-            "orderSentence": "Ofatumumab (Kesimpta) - SC - see dosing"
-          },
-          "pretreatment": "Hepatitis B serology, TB test, immunoglobulins",
-          "contraindications": "Active Hepatitis B; active infection",
-          "monitoring": "Immunoglobulins annually; infection monitoring; self-administered at home"
+          "ICU": "-"
         },
         {
           "item": "Ublituximab (Briumvi)",
           "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg",
+                "orderSentence": "Ublituximab (Briumvi) 150 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Initial: 150 mg IV day 1, 450 mg IV day 15; Maintenance: 450 mg IV every 24 weeks",
+            "orderSentence": "Ublituximab (Briumvi) 150 mg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "Active Hepatitis B; active infection",
+          "monitoring": "Same as ocrelizumab; 1-hour infusion (faster)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "Initial: 150 mg IV day 1, 450 mg IV day 15; Maintenance: 450 mg IV every 24 weeks",
-            "orderSentence": "Ublituximab (Briumvi) - IV - see dosing"
-          },
-          "pretreatment": "Hepatitis B serology, TB test, immunoglobulins",
-          "contraindications": "Active Hepatitis B; active infection",
-          "monitoring": "Immunoglobulins annually; infection monitoring; infusion reactions (premedicate); 1-hour infusion"
+          "ICU": "-"
         },
         {
           "item": "Alemtuzumab (Lemtrada)",
           "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12 mg",
+                "orderSentence": "Alemtuzumab (Lemtrada) 12 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Year 1: 12 mg IV daily Ã— 5 consecutive days; Year 2: 12 mg IV daily Ã— 3 consecutive days (12 months after year 1)",
+            "orderSentence": "Alemtuzumab (Lemtrada) 12 mg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "Active infection; HIV; ongoing autoimmune disease other than MS",
+          "monitoring": "CBC monthly Ã— 48 months; TSH q3mo Ã— 48 months; creatinine/urinalysis monthly Ã— 48 months; REMS program; secondary autoimmunity risk (thyroid, ITP, nephropathy)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "Year 1: 12 mg IV daily Ã— 5 consecutive days; Year 2: 12 mg IV daily Ã— 3 consecutive days (12 months after year 1)",
-            "orderSentence": "Alemtuzumab (Lemtrada) - IV - see dosing"
-          },
-          "pretreatment": "CBC, LFTs, TSH, creatinine, urinalysis, Hepatitis B/C, VZV IgG, TB, HPV screening",
-          "contraindications": "Active infection; HIV; ongoing autoimmune disease other than MS",
-          "monitoring": "CBC monthly Ã— 48 months; TSH q3mo Ã— 48 months; creatinine/urinalysis monthly Ã— 48 months; REMS program; secondary autoimmunity risk (thyroid, ITP, nephropathy)"
+          "ICU": "-"
         },
         {
-          "item": "**MODERATE EFFICACY - SPECIAL POPULATIONS**"
+          "item": "**MODERATE EFFICACY - SPECIAL POPULATIONS**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**MODERATE EFFICACY - SPECIAL POPULATIONS** - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
         },
         {
           "item": "Glatiramer acetate (Copaxone)",
           "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Glatiramer acetate (Copaxone) 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "20 mg daily or 40 mg TIW",
+            "orderSentence": "Glatiramer acetate (Copaxone) 20 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Hypersensitivity",
+          "monitoring": "Preferred in pregnancy (no evidence of harm)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "dosing": {
-            "instructions": "20 mg daily or 40 mg TIW",
-            "orderSentence": "Glatiramer acetate (Copaxone) - SC - see dosing"
-          },
-          "pretreatment": "None",
-          "contraindications": "Hypersensitivity",
-          "monitoring": "Preferred in pregnancy (no evidence of harm)"
+          "ICU": "-"
         }
       ]
     },
@@ -2395,165 +2323,112 @@
     {
       "recommendation": "2017 McDonald Criteria for MS diagnosis",
       "evidenceLevel": "Class I",
-      "source": "[Thompson AJ et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/29275977/)"
+      "source": "Thompson AJ et al. Lancet Neurol 2018"
     },
     {
       "recommendation": "MRI brain/spine with contrast for diagnosis",
       "evidenceLevel": "Class I, Level A",
-      "source": "[Wattjes MP et al. Lancet Neurol 2021 (MAGNIMS)](https://pubmed.ncbi.nlm.nih.gov/34139157/)"
+      "source": "MAGNIMS Consensus 2021"
     },
     {
       "recommendation": "CSF OCBs can substitute for dissemination in time",
       "evidenceLevel": "Class II, Level B",
-      "source": "[Thompson AJ et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/29275977/)"
+      "source": "2017 McDonald Criteria"
     },
     {
       "recommendation": "IV methylprednisolone 1g Ã— 3-5 days for acute attacks",
       "evidenceLevel": "Class I, Level A",
-      "source": "[Filippini et al. Cochrane 2000](https://pubmed.ncbi.nlm.nih.gov/11034713/); Expert consensus"
+      "source": "AAN Practice Guideline 2022"
     },
     {
       "recommendation": "PLEX for steroid-refractory attacks",
       "evidenceLevel": "Class II, Level B",
-      "source": "[Faissner et al. J Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27039388/)"
+      "source": "Cochrane Review 2016"
     },
     {
       "recommendation": "Cell-based assay (FACS) for NMO/MOG antibodies",
       "evidenceLevel": "Class I, Level B",
-      "source": "[Waters et al. 2014](https://pubmed.ncbi.nlm.nih.gov/27840658/); [Pittock et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3286228/)"
+      "source": "Waters et al. 2014; Pittock et al."
     },
     {
       "recommendation": "Vitamin D supplementation",
       "evidenceLevel": "Class II, Level B",
-      "source": "[SOLAR trial](https://pubmed.ncbi.nlm.nih.gov/31594857/); [CHOLINE trial](https://pubmed.ncbi.nlm.nih.gov/31454777/)"
+      "source": "Multiple observational studies; CHOLINE, SOLAR trials"
     },
     {
       "recommendation": "Smoking cessation reduces progression",
       "evidenceLevel": "Class II, Level B",
-      "source": "[Hedström et al. Brain 2013](https://pubmed.ncbi.nlm.nih.gov/23365092/)"
+      "source": "Observational studies"
     },
     {
       "recommendation": "Early DMT initiation improves outcomes",
       "evidenceLevel": "Class I, Level A",
-      "source": "[BENEFIT extension](https://pubmed.ncbi.nlm.nih.gov/26833940/); Multiple RCTs"
+      "source": "Multiple RCTs, long-term extension studies"
     },
     {
       "recommendation": "Dalfampridine for walking impairment",
       "evidenceLevel": "Class I, Level A",
-      "source": "[Goodman et al. Lancet 2009](https://pubmed.ncbi.nlm.nih.gov/19249634/)"
+      "source": "Goodman et al. Lancet 2009"
     },
     {
       "recommendation": "Exercise improves fatigue and function",
       "evidenceLevel": "Class I, Level B",
-      "source": "[Heine et al. Cochrane 2015](https://pubmed.ncbi.nlm.nih.gov/26358158/)"
+      "source": "Cochrane Review 2015"
     }
   ],
   "monitoring": [
     {
       "item": "Blood glucose",
-      "ED": "✓",
-      "HOSP": "✓",
-      "OPD": "-",
-      "ICU": "✓",
       "frequency": "Q6h during IV steroids",
       "action": "Insulin sliding scale; endocrine consult if persistent >250"
     },
     {
       "item": "Blood pressure",
-      "ED": "✓",
-      "HOSP": "✓",
-      "OPD": "-",
-      "ICU": "✓",
       "frequency": "Q shift during steroids",
       "action": "Antihypertensives PRN"
     },
     {
       "item": "Mood and sleep",
-      "ED": "-",
-      "HOSP": "✓",
-      "OPD": "-",
-      "ICU": "✓",
       "frequency": "Daily during steroids",
       "action": "Psychiatry consult; consider dose adjustment"
     },
     {
       "item": "Temperature",
-      "ED": "✓",
-      "HOSP": "✓",
-      "OPD": "-",
-      "ICU": "✓",
       "frequency": "Q shift",
       "action": "Infection workup if febrile"
     },
     {
       "item": "Neurologic exam",
-      "ED": "✓",
-      "HOSP": "✓",
-      "OPD": "✓",
-      "ICU": "✓",
       "frequency": "Daily (inpatient); each visit (OPD)",
       "action": "If worsening: re-image, consider PLEX"
     },
     {
       "item": "I/O and weight",
-      "ED": "-",
-      "HOSP": "✓",
-      "OPD": "-",
-      "ICU": "✓",
       "frequency": "Daily (inpatient)",
       "action": "Diuretics if fluid overload"
     },
     {
       "item": "Respiratory status",
-      "ED": "-",
-      "HOSP": "✓",
-      "OPD": "-",
-      "ICU": "✓",
       "frequency": "Q shift if cervical myelitis",
       "action": "ICU transfer if NIF >-20 (critical)"
     },
     {
       "item": "Post-void residual",
-      "ED": "-",
-      "HOSP": "✓",
-      "OPD": "✓",
-      "ICU": "-",
       "frequency": "If retention suspected",
       "action": "Intermittent catheterization if >200 mL; urology referral"
     },
     {
-      "item": "MRI (follow-up) - early",
-      "ED": "-",
-      "HOSP": "-",
-      "OPD": "✓",
-      "ICU": "-",
-      "frequency": "3 months after baseline",
-      "action": "DMT escalation discussion if new activity"
-    },
-    {
-      "item": "MRI (follow-up) - standard",
-      "ED": "-",
-      "HOSP": "-",
-      "OPD": "✓",
-      "ICU": "-",
-      "frequency": "6 months after baseline, then annually",
+      "item": "MRI (follow-up)",
+      "frequency": "3-6 months after baseline, then annually",
       "action": "DMT escalation discussion if new activity"
     },
     {
       "item": "Vitamin D level",
-      "ED": "-",
-      "HOSP": "-",
-      "OPD": "✓",
-      "ICU": "-",
       "frequency": "Annually",
       "action": "Increase supplementation if low"
     },
     {
       "item": "JCV antibody (if on natalizumab)",
-      "ED": "-",
-      "HOSP": "-",
-      "OPD": "✓",
-      "ICU": "-",
       "frequency": "Every 6 months",
       "action": "If positive/rising: PML risk stratification, consider DMT switch"
     }

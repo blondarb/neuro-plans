@@ -1,3 +1,10 @@
+---
+title: "Transient Ischemic Attack (TIA)"
+description: "Clinical decision support for transient ischemic attack (tia) diagnosis and management"
+version: "1.0"
+setting: "ED, HOSP, OPD, ICU"
+---
+
 # Transient Ischemic Attack (TIA)
 
 **VERSION:** 1.0
@@ -102,36 +109,36 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Aspirin (loading dose) | STAT | STAT | STAT | - | 325 mg PO loading dose immediately upon TIA diagnosis (give in ED). Do NOT delay antiplatelet therapy | Active GI bleed; true aspirin allergy; thrombocytopenia <50K | GI symptoms; bleeding |
-| Clopidogrel (loading dose for DAPT) | STAT | STAT | STAT | - | 300 mg PO loading dose (give with aspirin for DAPT). DAPT is standard for high-risk TIA (ABCD2 ≥4) or minor stroke per CHANCE and POINT trials | Active bleeding; severe hepatic impairment | Bleeding; CBC |
-| Dual antiplatelet therapy (DAPT maintenance): Aspirin + Clopidogrel | - | STAT | STAT | - | Aspirin 81 mg daily + Clopidogrel 75 mg daily x 21 days (CHANCE protocol) or x 90 days (POINT protocol — higher bleeding risk with longer duration). Then transition to single antiplatelet (typically clopidogrel 75 mg or aspirin 81 mg monotherapy) | Major bleeding risk; planned surgery | Bleeding signs; CBC monthly |
-| Dual antiplatelet therapy (alternative): Aspirin + Ticagrelor | - | STAT | STAT | - | Aspirin 81 mg daily + Ticagrelor 90 mg BID x 30 days (THALES trial; for minor stroke NIHSS ≤5). Then single antiplatelet | Intracranial hemorrhage history; high bleeding risk; hepatic impairment | Bleeding; dyspnea (common side effect); avoid strong CYP3A4 inhibitors |
-| High-intensity statin | STAT | STAT | STAT | - | Atorvastatin 80 mg PO daily (or Rosuvastatin 20-40 mg). Start immediately regardless of baseline LDL | Active liver disease; pregnancy | LFTs at 12 weeks; lipid panel at 4-12 weeks; CK if myalgia |
-| Blood pressure management (acute) | STAT | STAT | - | - | If SBP >220 or DBP >120 in ED: lower gently (15-25% in first 24h). If lower BP levels: permissive hypertension in first 24-48h unless end-organ damage. Avoid precipitous drops | Carotid stenosis with hemodynamic TIA: do NOT aggressively lower BP (may worsen symptoms) | Neuro checks with each change; BP q1h acutely |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Aspirin (loading dose) | PO | - | 325 mg :: PO :: load :: 325 mg PO loading dose immediately upon TIA diagnosis (give in ED). Do NOT delay antiplatelet therapy | Active GI bleed; true aspirin allergy; thrombocytopenia <50K | GI symptoms; bleeding | STAT | STAT | STAT | - |
+| Clopidogrel (loading dose for DAPT) | PO | - | 300 mg :: PO :: load :: 300 mg PO loading dose (give with aspirin for DAPT). DAPT is standard for high-risk TIA (ABCD2 ≥4) or minor stroke per CHANCE and POINT trials | Active bleeding; severe hepatic impairment | Bleeding; CBC | STAT | STAT | STAT | - |
+| Dual antiplatelet therapy (DAPT maintenance): Aspirin + Clopidogrel | - | - | 81 mg :: - :: daily :: Aspirin 81 mg daily + Clopidogrel 75 mg daily x 21 days (CHANCE protocol) or x 90 days (POINT protocol — higher bleeding risk with longer duration). Then transition to single antiplatelet (typically clopidogrel 75 mg or aspirin 81 mg monotherapy) | Major bleeding risk; planned surgery | Bleeding signs; CBC monthly | - | STAT | STAT | - |
+| Dual antiplatelet therapy (alternative): Aspirin + Ticagrelor | PO | - | 81 mg :: PO :: daily :: Aspirin 81 mg daily + Ticagrelor 90 mg BID x 30 days (THALES trial; for minor stroke NIHSS ≤5). Then single antiplatelet | Intracranial hemorrhage history; high bleeding risk; hepatic impairment | Bleeding; dyspnea (common side effect); avoid strong CYP3A4 inhibitors | - | STAT | STAT | - |
+| High-intensity statin | PO | - | 80 mg :: PO :: daily :: Atorvastatin 80 mg PO daily (or Rosuvastatin 20-40 mg). Start immediately regardless of baseline LDL | Active liver disease; pregnancy | LFTs at 12 weeks; lipid panel at 4-12 weeks; CK if myalgia | STAT | STAT | STAT | - |
+| Blood pressure management (acute) | - | - | 25% :: - :: - :: If SBP >220 or DBP >120 in ED: lower gently (15-25% in first 24h). If lower BP levels: permissive hypertension in first 24-48h unless end-organ damage. Avoid precipitous drops | Carotid stenosis with hemodynamic TIA: do NOT aggressively lower BP (may worsen symptoms) | Neuro checks with each change; BP q1h acutely | STAT | STAT | - | - |
 
 ### 3B. Secondary Prevention (Initiate Urgently)
 
-| Treatment | Route | ED | HOSP | OPD | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring |
-|-----------|-------|:--:|:----:|:---:|--------|---------------------------|-------------------|------------|
-| Antihypertensive therapy (chronic) | PO | - | ROUTINE | ROUTINE | Target BP <130/80 mmHg. Start/restart 24-48h after TIA once stable. Agent choice per comorbidities: ACE-I/ARB first-line. Consider: Lisinopril 10-20 mg daily, Amlodipine 5-10 mg, Losartan 50-100 mg, Chlorthalidone 12.5-25 mg | Baseline BP, Cr, K+ | Bilateral renal artery stenosis (ACE-I/ARB); pregnancy | Home BP monitoring; Cr and K+ at 1-2 weeks |
-| Anticoagulation (if atrial fibrillation detected) | PO | - | ROUTINE | ROUTINE | Start DOAC within 1-3 days for TIA (can start earlier than stroke). Preferred: Apixaban 5 mg BID (2.5 mg BID if criteria met). Alternative: Rivaroxaban 20 mg daily; Dabigatran 150 mg BID. Discontinue antiplatelet when anticoagulant started (do NOT combine long-term unless specific indication) | ECG/cardiac monitoring confirming AF; CHA2DS2-VASc score; bleeding risk (HAS-BLED) | Active bleeding; mechanical valve (use warfarin); severe renal impairment | Renal function q6-12 months; bleeding signs |
-| Carotid endarterectomy (CEA) | Surgery | - | URGENT | URGENT | For symptomatic carotid stenosis ≥50% (NASCET criteria); ideally performed within 2 weeks of TIA (maximum benefit). NNT = 6 for 70-99% stenosis; NNT = 22 for 50-69% stenosis | Carotid imaging confirming stenosis ≥50%; cardiac clearance | Near-occlusion (controversial); life expectancy <5 years; severe cardiac comorbidity | Post-op: BP monitoring; neuro checks q1h x 24h; wound hematoma; cranial nerve injury |
-| Carotid artery stenting (CAS) | Endovascular | - | ROUTINE | ROUTINE | Alternative to CEA if: high surgical risk, prior neck radiation, prior CEA with restenosis, surgically inaccessible. Requires DAPT (aspirin + clopidogrel) post-stenting | Same as CEA; cardiac catheterization access | Severe aortic arch tortuosity; fresh thrombus | Post-procedure: BP management; neuro checks; DAPT compliance; restenosis surveillance |
-| PFO closure | Procedure | - | - | ROUTINE | For cryptogenic TIA/stroke age 18-60 with PFO and right-to-left shunt. Reduces recurrent stroke vs medical therapy alone (CLOSE, RESPECT, REDUCE trials). Requires 3-6 months DAPT then aspirin indefinitely | TEE/TCD confirming PFO with shunt; cryptogenic classification; no other identified stroke mechanism | Anatomic constraints; active infection | Echo at 6-12 months; aspirin long-term |
-| Ezetimibe | PO | - | ROUTINE | ROUTINE | 10 mg PO daily; add if LDL not at goal on max statin | Active liver disease | LFTs; lipid panel |
-| PCSK9 inhibitor (evolocumab or alirocumab) | SC | - | - | ROUTINE | Evolocumab 140 mg SC q2 weeks or 420 mg monthly; if LDL not at goal on statin + ezetimibe | None absolute | Lipid panel q4-12 weeks; injection site |
-| Diabetes management (optimize) | PO/SC | - | ROUTINE | ROUTINE | Target HbA1c <7% (individualized); GLP-1 agonists and SGLT2 inhibitors have cardiovascular benefit | Per agent | Per agent | HbA1c q3 months; renal function |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Antihypertensive therapy (chronic) | PO | - | 10-20 mg :: PO :: daily :: Target BP <130/80 mmHg. Start/restart 24-48h after TIA once stable. Agent choice per comorbidities: ACE-I/ARB first-line. Consider: Lisinopril 10-20 mg daily, Amlodipine 5-10 mg, Losartan 50-100 mg, Chlorthalidone 12.5-25 mg | Bilateral renal artery stenosis (ACE-I/ARB); pregnancy | Home BP monitoring; Cr and K+ at 1-2 weeks | - | ROUTINE | ROUTINE | - |
+| Anticoagulation (if atrial fibrillation detected) | PO | - | 5 mg :: - :: BID :: Start DOAC within 1-3 days for TIA (can start earlier than stroke). Preferred: Apixaban 5 mg BID (2.5 mg BID if criteria met). Alternative: Rivaroxaban 20 mg daily; Dabigatran 150 mg BID. Discontinue antiplatelet when anticoagulant started (do NOT combine long-term unless specific indication) | Active bleeding; mechanical valve (use warfarin); severe renal impairment | Renal function q6-12 months; bleeding signs | - | ROUTINE | ROUTINE | - |
+| Carotid endarterectomy (CEA) | Surgery | - | 50% :: - :: - :: For symptomatic carotid stenosis ≥50% (NASCET criteria); ideally performed within 2 weeks of TIA (maximum benefit). NNT = 6 for 70-99% stenosis; NNT = 22 for 50-69% stenosis | Near-occlusion (controversial); life expectancy <5 years; severe cardiac comorbidity | Post-op: BP monitoring; neuro checks q1h x 24h; wound hematoma; cranial nerve injury | - | URGENT | URGENT | - |
+| Carotid artery stenting (CAS) | Endovascular | - | Alternative to CEA if: high surgical risk, prior neck radiation, prior CEA with restenosis, surgically inaccessible. Requires DAPT (aspirin + clopidogrel) post-stenting | Severe aortic arch tortuosity; fresh thrombus | Post-procedure: BP management; neuro checks; DAPT compliance; restenosis surveillance | - | ROUTINE | ROUTINE | - |
+| PFO closure | Procedure | - | For cryptogenic TIA/stroke age 18-60 with PFO and right-to-left shunt. Reduces recurrent stroke vs medical therapy alone (CLOSE, RESPECT, REDUCE trials). Requires 3-6 months DAPT then aspirin indefinitely | Anatomic constraints; active infection | Echo at 6-12 months; aspirin long-term | - | - | ROUTINE | - |
+| Ezetimibe | PO | - | 10 mg :: PO :: daily :: 10 mg PO daily; add if LDL not at goal on max statin | LFTs; lipid panel | - | - | ROUTINE | ROUTINE | - |
+| PCSK9 inhibitor (evolocumab or alirocumab) | SC | - | 140 mg :: SC :: monthly :: Evolocumab 140 mg SC q2 weeks or 420 mg monthly; if LDL not at goal on statin + ezetimibe | Lipid panel q4-12 weeks; injection site | - | - | - | ROUTINE | - |
+| Diabetes management (optimize) | PO/SC | - | 7% :: - :: - :: Target HbA1c <7% (individualized); GLP-1 agonists and SGLT2 inhibitors have cardiovascular benefit | Per agent | HbA1c q3 months; renal function | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Medications for Specific Etiologies
 
-| Treatment | Indication | Dosing | Monitoring |
-|-----------|------------|--------|------------|
-| Anticoagulation (warfarin) | Mechanical heart valve + TIA | Warfarin to target INR 2.5-3.5; bridge with heparin | INR weekly then monthly |
-| DAPT long-term (aspirin + clopidogrel) | Intracranial stenosis 70-99% (SAMMPRIS trial: medical > stenting) | Aspirin 325 mg + clopidogrel 75 mg daily x 90 days; then single antiplatelet + aggressive risk factor management | Bleeding; MRA q6-12 months |
-| Anticoagulation | Cervical artery dissection | Antiplatelet or anticoagulation (both equally effective per CADISS trial); typically 3-6 months | Repeat vascular imaging at 3-6 months |
-| Colchicine | Residual inflammatory risk (LoDoCo2 / COLCOT trials support in ACS — emerging data for stroke prevention) | 0.5 mg PO daily | GI symptoms; CBC |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Anticoagulation (warfarin) | - | Mechanical heart valve + TIA | Warfarin to target INR 2.5-3.5; bridge with heparin | - | INR weekly then monthly | - | - | - | - |
+| DAPT long-term (aspirin + clopidogrel) | - | Intracranial stenosis 70-99% (SAMMPRIS trial: medical > stenting) | 325 mg :: PO :: daily :: Aspirin 325 mg + clopidogrel 75 mg daily x 90 days; then single antiplatelet + aggressive risk factor management | - | Bleeding; MRA q6-12 months | - | - | - | - |
+| Anticoagulation | - | Cervical artery dissection | Antiplatelet or anticoagulation (both equally effective per CADISS trial); typically 3-6 months | - | Repeat vascular imaging at 3-6 months | - | - | - | - |
+| Colchicine | PO | Residual inflammatory risk (LoDoCo2 / COLCOT trials support in ACS — emerging data for stroke prevention) | 0.5 mg :: PO :: daily :: 0.5 mg PO daily | - | GI symptoms; CBC | - | - | - | - |
 
 ---
 

@@ -1,0 +1,1172 @@
+{
+  "id": "bells-palsy",
+  "title": "Bell's Palsy / Idiopathic Facial Paralysis",
+  "version": "1.0",
+  "icd10": [
+    "** G51.0 (Bell's palsy)",
+    "G51.8 (Other disorders of facial nerve)",
+    "G51.9 (Disorder of facial nerve",
+    "unspecified)",
+    "B02.21 (Postherpetic geniculate ganglionitis - Ramsay Hunt)"
+  ],
+  "scope": "** Diagnosis and management of Bell's palsy (idiopathic facial nerve palsy) in adults. Covers workup to exclude secondary causes, medical treatment, and eye protection. Includes Ramsay Hunt syndrome (herpes zoster oticus) which requires different treatment. Excludes central facial palsy (stroke), facial nerve tumors, traumatic facial nerve injury, and bilateral facial palsy workup.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Infection, leukemia (CN involvement)",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes (risk factor), electrolytes",
+          "target": "Normal; glucose <126 fasting"
+        },
+        {
+          "item": "Glucose / HbA1c",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes is major risk factor; affects prognosis",
+          "target": "Normal"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Lyme serology (IgM/IgG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Endemic areas; Lyme disease can cause facial palsy",
+          "target": "Negative"
+        },
+        {
+          "item": "ESR/CRP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory conditions, vasculitis",
+          "target": "Normal"
+        },
+        {
+          "item": "HIV",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated facial palsy",
+          "target": "Negative"
+        },
+        {
+          "item": "RPR/VDRL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Syphilis in differential",
+          "target": "Negative"
+        },
+        {
+          "item": "ANA",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune etiology (SLE, Sjogren's)",
+          "target": "Negative"
+        },
+        {
+          "item": "SSA (Ro) / SSB (La)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Sjogren's syndrome",
+          "target": "Negative"
+        },
+        {
+          "item": "VZV serology (IgM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Ramsay Hunt syndrome (if vesicles or suspicion)",
+          "target": "Document status"
+        },
+        {
+          "item": "ACE level",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Sarcoidosis if bilateral or recurrent",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CSF analysis (LP)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Atypical presentation, suspected Lyme neuroborreliosis, GBS, meningitis",
+          "target": "See LP section"
+        },
+        {
+          "item": "Serum glucose tolerance test",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If HbA1c borderline; diabetes evaluation",
+          "target": "Normal"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Baseline; elevated in some conditions",
+          "target": "10-20 cm H2O"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Infection, inflammation",
+          "target": "WBC <5"
+        },
+        {
+          "item": "Protein",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Elevated in GBS, Lyme",
+          "target": "15-45 mg/dL"
+        },
+        {
+          "item": "Glucose",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Infection",
+          "target": ">60% serum"
+        },
+        {
+          "item": "Lyme antibody (CSF)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Lyme neuroborreliosis",
+          "target": "Negative"
+        },
+        {
+          "item": "VDRL (CSF)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Neurosyphilis",
+          "target": "Negative"
+        },
+        {
+          "item": "Gram stain and culture",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Bacterial meningitis",
+          "target": "No organisms"
+        },
+        {
+          "item": "CSF meningitis panel",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Viral/bacterial pathogens",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Physical examination",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At presentation",
+          "target": "Peripheral pattern (forehead involved); no other CN deficits",
+          "contraindications": "None"
+        },
+        {
+          "item": "Otoscopic examination",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At presentation",
+          "target": "Vesicles (Ramsay Hunt); middle ear pathology",
+          "contraindications": "None"
+        },
+        {
+          "item": "Eye examination",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At presentation",
+          "target": "Corneal exposure, lagophthalmos",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with IAC protocol",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If atypical, progressive, no recovery at 4-6 weeks",
+          "target": "Facial nerve enhancement (may be normal in Bell's); exclude mass, stroke",
+          "contraindications": "Pacemaker, metal"
+        },
+        {
+          "item": "MRI with contrast",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If tumor suspected",
+          "target": "Rule out schwannoma, parotid tumor",
+          "contraindications": "Contrast allergy"
+        },
+        {
+          "item": "CT temporal bone",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If trauma or mastoid pathology suspected",
+          "target": "Fracture, cholesteatoma",
+          "contraindications": "None"
+        },
+        {
+          "item": "Chest X-ray",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If sarcoidosis suspected",
+          "target": "Hilar adenopathy",
+          "contraindications": "None"
+        },
+        {
+          "item": "Electrodiagnostic studies (ENoG, EMG)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Severe palsy (HB IV-VI) at 2-3 weeks; prognosis",
+          "target": ">90% degeneration = poor prognosis",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Corticosteroids (All Patients)": [
+        {
+          "item": "Prednisone",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60-80 mg",
+                "orderSentence": "Prednisone 60-80 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "60-80 mg PO daily × 7 days (can taper over days 8-10 or stop); START WITHIN 72 HOURS of onset",
+            "orderSentence": "Prednisone 60-80 mg PO"
+          },
+          "contraindications": "Active infection (relative), uncontrolled DM (relative)",
+          "monitoring": "Glucose (especially diabetics), GI prophylaxis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prednisolone",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60-80 mg",
+                "orderSentence": "Prednisolone 60-80 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "60-80 mg PO daily × 7 days (equivalent alternative)",
+            "orderSentence": "Prednisolone 60-80 mg PO"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylprednisolone IV",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone IV 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily × 3-5 days (if unable to take PO or severe/Ramsay Hunt)",
+            "orderSentence": "Methylprednisolone IV 1000 mg IV"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Dexamethasone",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Dexamethasone 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV/PO daily × 7-10 days (alternative)",
+            "orderSentence": "Dexamethasone 10 mg IV"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Antiviral Therapy": [
+        {
+          "item": "Valacyclovir (moderate-severe Bell's)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Valacyclovir (moderate-severe Bell's) 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mg PO TID × 7 days; ALWAYS with steroids",
+            "orderSentence": "Valacyclovir (moderate-severe Bell's) 1000 mg PO"
+          },
+          "contraindications": "Renal impairment (reduce dose)",
+          "monitoring": "Renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acyclovir (alternative)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg",
+                "orderSentence": "Acyclovir (alternative) 400 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400 mg PO 5× daily × 7-10 days; or 800 mg PO TID × 7 days",
+            "orderSentence": "Acyclovir (alternative) 400 mg PO"
+          },
+          "contraindications": "Renal impairment",
+          "monitoring": "Renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Valacyclovir (Ramsay Hunt)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Valacyclovir (Ramsay Hunt) 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mg PO TID × 7-10 days; MANDATORY with steroids",
+            "orderSentence": "Valacyclovir (Ramsay Hunt) 1000 mg PO"
+          },
+          "contraindications": "Renal impairment",
+          "monitoring": "Renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acyclovir IV (severe Ramsay Hunt)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg",
+                "orderSentence": "Acyclovir IV (severe Ramsay Hunt) 10 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg/kg IV q8h × 7-10 days",
+            "orderSentence": "Acyclovir IV (severe Ramsay Hunt) 10 mg/kg IV"
+          },
+          "contraindications": "Renal impairment",
+          "monitoring": "Renal function, hydration",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Eye Protection (CRITICAL - All Patients)": [
+        {
+          "item": "Artificial tears (preservative-free)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "1-2 drops affected eye q1-2h while awake",
+            "orderSentence": "Artificial tears (preservative-free) - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Corneal status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lubricating eye ointment (Lacri-Lube)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Thin strip in affected eye at bedtime (and up to TID)",
+            "orderSentence": "Lubricating eye ointment (Lacri-Lube) - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Corneal status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Eye patch or moisture chamber",
+          "route": "Transdermal",
+          "indication": "-",
+          "dosing": {
+            "instructions": "At night and in dusty/windy environments",
+            "orderSentence": "Eye patch or moisture chamber - Transdermal - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Corneal status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tape eyelid closed at night",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "If unable to close eye (use paper tape)",
+            "orderSentence": "Tape eyelid closed at night - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Corneal status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wraparound glasses/sunglasses",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "During day for eye protection",
+            "orderSentence": "Wraparound glasses/sunglasses - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Corneal status",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Pain Management": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO q6h PRN; max 3000 mg/day",
+            "orderSentence": "Acetaminophen 650-1000 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Hepatic disease",
+          "monitoring": "LFTs if prolonged use",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400-600 mg",
+                "orderSentence": "Ibuprofen 400-600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-600 mg PO q6h PRN with food",
+            "orderSentence": "Ibuprofen 400-600 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Renal disease, GI bleeding",
+          "monitoring": "Renal function",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin (post-herpetic neuralgia)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100-300 mg",
+                "orderSentence": "Gabapentin (post-herpetic neuralgia) 100-300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100-300 mg TID; titrate as needed for Ramsay Hunt",
+            "orderSentence": "Gabapentin (post-herpetic neuralgia) 100-300 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Renal impairment",
+          "monitoring": "Sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lyme Disease Treatment (If Positive)": [
+        {
+          "item": "Doxycycline",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Doxycycline 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO BID × 14-21 days (isolated facial palsy)",
+            "orderSentence": "Doxycycline 100 mg PO"
+          },
+          "contraindications": "Pregnancy, children <8",
+          "monitoring": "GI upset",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ceftriaxone IV",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Ceftriaxone IV 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV daily × 14-21 days (if CNS involvement)",
+            "orderSentence": "Ceftriaxone IV 2 g IV"
+          },
+          "contraindications": "Cephalosporin allergy",
+          "monitoring": "Standard",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Physical Therapy": [
+        {
+          "item": "Facial exercises",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Mirror exercises, gentle facial movements",
+            "orderSentence": "Facial exercises - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Start when recovery begins",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Facial massage",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Gentle massage to maintain muscle tone",
+            "orderSentence": "Facial massage - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Patient/family can perform",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Electrical stimulation",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Controversial; limited evidence",
+            "orderSentence": "Electrical stimulation - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Not routinely recommended",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuromuscular retraining",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Specialized PT for synkinesis prevention",
+            "orderSentence": "Neuromuscular retraining - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "If incomplete recovery",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Surgical Options (Refractory Cases)": [
+        {
+          "item": "Surgical decompression",
+          "route": "-",
+          "indication": ">90% degeneration on ENoG within 14 days; controversial",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Surgical decompression - - - see dosing"
+          },
+          "contraindications": "Poor surgical candidate",
+          "monitoring": "Rarely performed; controversial benefit",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Gold weight/platinum chain eyelid implant",
+          "route": "-",
+          "indication": "Persistent lagophthalmos (>6-12 months)",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Gold weight/platinum chain eyelid implant - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Improves eye closure",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Tarsorrhaphy",
+          "route": "-",
+          "indication": "Persistent exposure keratopathy",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Tarsorrhaphy - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Temporary or permanent",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Static facial sling",
+          "route": "-",
+          "indication": "Permanent severe palsy",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Static facial sling - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Improves cosmesis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Hypoglossal-facial nerve anastomosis",
+          "route": "-",
+          "indication": "Complete permanent paralysis",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Hypoglossal-facial nerve anastomosis - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Restores tone and some movement",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Cross-face nerve graft",
+          "route": "-",
+          "indication": "Permanent paralysis, younger patients",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Cross-face nerve graft - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Extended recovery time",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Ophthalmology",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Corneal exposure, inability to close eye, any eye pain/redness"
+        },
+        {
+          "item": "ENT / Otolaryngology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Ramsay Hunt syndrome, atypical features, surgical consideration"
+        },
+        {
+          "item": "Neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Atypical features, no recovery at 3-4 weeks, recurrent palsy"
+        },
+        {
+          "item": "Physical therapy (facial)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Begin when recovery starts; synkinesis prevention"
+        },
+        {
+          "item": "Plastic surgery / Facial nerve specialist",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "indication": "Permanent paralysis, reconstructive options"
+        },
+        {
+          "item": "Infectious disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Lyme disease, atypical infection"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Eye protection is CRITICAL - use lubricating drops frequently and ointment at night",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Tape eye closed or use patch at night to prevent corneal injury",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Start steroids as soon as possible (ideally within 72 hours of symptom onset)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Most patients (70-80%) recover completely within 3-6 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Recovery typically begins within 2-3 weeks; full recovery may take months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return immediately if: eye pain, vision changes, redness, or discharge",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Examine ear daily for vesicles (if develops, call immediately - may be Ramsay Hunt)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow up with neurologist or ENT if no improvement at 3-4 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT massage face vigorously or use electrical stimulation without guidance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Protect eye from wind, dust, and irritants",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid rubbing the affected eye",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Consider humidifier at night",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Chew carefully; may have food pocketing on affected side",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain diabetes control if diabetic (reduces risk and improves recovery)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Stroke (central facial palsy)",
+      "features": "Forehead SPARED (upper motor neuron pattern), other neurologic deficits",
+      "tests": "CT/MRI brain; emergent evaluation"
+    },
+    {
+      "diagnosis": "Ramsay Hunt syndrome",
+      "features": "Vesicles in ear canal/pinna, severe ear pain, may have hearing loss, vertigo",
+      "tests": "Otoscopic exam; VZV serology"
+    },
+    {
+      "diagnosis": "Lyme disease",
+      "features": "Endemic area, tick bite history, erythema migrans rash, may be bilateral",
+      "tests": "Lyme serology; LP if suspected"
+    },
+    {
+      "diagnosis": "Acoustic neuroma",
+      "features": "Gradual onset, hearing loss, tinnitus, other CN involvement",
+      "tests": "MRI with IAC protocol"
+    },
+    {
+      "diagnosis": "Parotid tumor",
+      "features": "Mass in parotid region, progressive weakness",
+      "tests": "CT/MRI parotid; biopsy"
+    },
+    {
+      "diagnosis": "Guillain-Barré syndrome",
+      "features": "Bilateral facial weakness, ascending weakness, areflexia",
+      "tests": "LP (albuminocytologic dissociation), NCS/EMG"
+    },
+    {
+      "diagnosis": "Sarcoidosis (Heerfordt syndrome)",
+      "features": "Bilateral, parotid swelling, uveitis, fever",
+      "tests": "Chest X-ray, ACE level, biopsy"
+    },
+    {
+      "diagnosis": "Otitis media/Mastoiditis",
+      "features": "Ear pain, fever, ear discharge, hearing loss",
+      "tests": "Otoscopic exam, CT temporal bone"
+    },
+    {
+      "diagnosis": "Cholesteatoma",
+      "features": "Chronic ear drainage, hearing loss, progressive",
+      "tests": "Otoscopic exam, CT temporal bone"
+    },
+    {
+      "diagnosis": "Melkersson-Rosenthal syndrome",
+      "features": "Recurrent facial palsy, facial edema, fissured tongue",
+      "tests": "Clinical triad"
+    },
+    {
+      "diagnosis": "Diabetes mellitus",
+      "features": "May present as Bell's palsy; higher incidence in diabetics",
+      "tests": "Glucose, HbA1c"
+    },
+    {
+      "diagnosis": "HIV",
+      "features": "Risk factors, other neurologic manifestations",
+      "tests": "HIV test"
+    },
+    {
+      "diagnosis": "Multiple sclerosis",
+      "features": "Other neurologic symptoms, white matter lesions",
+      "tests": "MRI brain"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Corticosteroids improve recovery",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Scottish Bell's Palsy Study (Sullivan 2007); Cochrane Reviews"
+    },
+    {
+      "recommendation": "Start steroids within 72 hours",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Sullivan et al., NEJM 2007"
+    },
+    {
+      "recommendation": "Antivirals alone not effective",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Cochrane Reviews 2015"
+    },
+    {
+      "recommendation": "Antivirals + steroids for severe Bell's",
+      "evidenceLevel": "Class II, Level B",
+      "source": "AAN Guidelines 2012"
+    },
+    {
+      "recommendation": "Antivirals mandatory for Ramsay Hunt",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Multiple studies; AAN Guidelines"
+    },
+    {
+      "recommendation": "Eye protection essential",
+      "evidenceLevel": "Class I, Level C",
+      "source": "Expert consensus"
+    },
+    {
+      "recommendation": "ENoG for prognosis in severe cases",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Multiple studies"
+    },
+    {
+      "recommendation": "Surgical decompression controversial",
+      "evidenceLevel": "Class III, Level U",
+      "source": "Insufficient evidence"
+    },
+    {
+      "recommendation": "Most patients recover without intervention",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Natural history studies (70-80% full recovery)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "House-Brackmann grade",
+      "ED": "STAT",
+      "HOSP": "Daily",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "Track recovery",
+      "action": "Consider imaging, EMG"
+    },
+    {
+      "item": "Corneal status",
+      "ED": "STAT",
+      "HOSP": "Daily",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "At each assessment",
+      "action": "Urgent ophthalmology"
+    },
+    {
+      "item": "Eye closure (lagophthalmos)",
+      "ED": "STAT",
+      "HOSP": "Daily",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "At each assessment",
+      "action": "Increase eye protection"
+    },
+    {
+      "item": "Blood glucose",
+      "ED": "STAT",
+      "HOSP": "Daily",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "While on steroids",
+      "action": "Adjust DM medications"
+    },
+    {
+      "item": "Vesicle check (ear)",
+      "ED": "STAT",
+      "HOSP": "Daily",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "Daily × 7 days",
+      "action": "Add/continue antivirals"
+    },
+    {
+      "item": "Recovery timeline",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q2-4 weeks",
+      "action": "Imaging, specialist referral"
+    },
+    {
+      "item": "Synkinesis screening",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Starting at recovery",
+      "action": "PT for neuromuscular retraining"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Typical presentation, eye protection education, steroids prescribed, ophthalmology follow-up arranged if needed, close outpatient follow-up"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "Ramsay Hunt with severe symptoms, unable to protect eye, concern for stroke or other central cause, need for IV medications"
+    },
+    {
+      "disposition": "Ophthalmology within 24-48h",
+      "criteria": "Significant lagophthalmos, corneal exposure, any eye symptoms"
+    },
+    {
+      "disposition": "Neurology follow-up",
+      "criteria": "No improvement at 3-4 weeks, atypical features, recurrent episodes"
+    },
+    {
+      "disposition": "ENT referral",
+      "criteria": "Ramsay Hunt syndrome, surgical consideration, chronic cases"
+    }
+  ]
+}

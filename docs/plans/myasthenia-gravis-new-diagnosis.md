@@ -1,3 +1,10 @@
+---
+title: "Myasthenia Gravis - New Diagnosis"
+description: "Clinical decision support for myasthenia gravis - new diagnosis diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Myasthenia Gravis - New Diagnosis
 
 **VERSION:** 1.0
@@ -129,69 +136,69 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Cholinesterase Inhibitors (Symptomatic)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Pyridostigmine (Mestinon) IR | URGENT | URGENT | ROUTINE | URGENT | Start 30 mg TID; increase by 30 mg per dose every 2-3 days; usual effective dose 60 mg q4-6h while awake; max 120 mg per dose (max ~960 mg/day, rarely needed) | Mechanical GI/GU obstruction; uncontrolled asthma | Cholinergic side effects: diarrhea, cramping, salivation, bradycardia; cholinergic crisis if overdosed (weakness + muscarinic symptoms) |
-| Pyridostigmine (Mestinon) SR (Timespan) | - | ROUTINE | ROUTINE | - | 180 mg qHS (sustained release); may give once or twice daily; do NOT crush | Same as IR | Same; useful for nocturnal/morning weakness; erratic absorption - use sparingly |
-| Pyridostigmine liquid (60 mg/5 mL) | URGENT | URGENT | ROUTINE | URGENT | Same dosing as IR; useful for patients with dysphagia | Same as IR | Same; easier to swallow |
-| Neostigmine IV (if NPO or intubated) | - | URGENT | - | URGENT | 0.5-2.5 mg IV/IM q1-3h; 1 mg IV neostigmine ≈ 30 mg oral pyridostigmine | Same; cardiac monitoring required | Continuous cardiac monitoring; have atropine at bedside for bradycardia |
-| Glycopyrrolate (for cholinergic side effects) | - | ROUTINE | ROUTINE | - | 1-2 mg PO BID-TID or 0.1-0.2 mg IV PRN | Narrow-angle glaucoma; obstructive uropathy | Does NOT cross BBB (preferred over atropine for peripheral muscarinic side effects) |
-| Atropine (for cholinergic side effects/emergency) | STAT | STAT | - | STAT | 0.5-1 mg IV PRN for symptomatic bradycardia from pyridostigmine | Tachycardia; thyrotoxicosis | HR monitoring; crosses BBB (may cause confusion) |
-| Pyridostigmine dose reduction/hold | - | URGENT | ROUTINE | URGENT | Hold or reduce if cholinergic crisis suspected (worsening weakness + excessive secretions) | N/A | Distinguish cholinergic crisis (excess pyridostigmine) from myasthenic crisis (undertreated MG) |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Pyridostigmine (Mestinon) IR | - | - | 30 mg :: - :: TID :: Start 30 mg TID; increase by 30 mg per dose every 2-3 days; usual effective dose 60 mg q4-6h while awake; max 120 mg per dose (max ~960 mg/day, rarely needed) | Mechanical GI/GU obstruction; uncontrolled asthma | Cholinergic side effects: diarrhea, cramping, salivation, bradycardia; cholinergic crisis if overdosed (weakness + muscarinic symptoms) | URGENT | URGENT | ROUTINE | URGENT |
+| Pyridostigmine (Mestinon) SR (Timespan) | - | - | 180 mg :: - :: qHS :: 180 mg qHS (sustained release); may give once or twice daily; do NOT crush | Same as IR | Same; useful for nocturnal/morning weakness; erratic absorption - use sparingly | - | ROUTINE | ROUTINE | - |
+| Pyridostigmine liquid (60 mg/5 mL) | - | - | Same dosing as IR; useful for patients with dysphagia | Same as IR | Same; easier to swallow | URGENT | URGENT | ROUTINE | URGENT |
+| Neostigmine IV (if NPO or intubated) | IV | - | 0.5-2.5 mg :: IV :: - :: 0.5-2.5 mg IV/IM q1-3h; 1 mg IV neostigmine ≈ 30 mg oral pyridostigmine | Same; cardiac monitoring required | Continuous cardiac monitoring; have atropine at bedside for bradycardia | - | URGENT | - | URGENT |
+| Glycopyrrolate (for cholinergic side effects) | IV | - | 1-2 mg :: IV :: BID :: 1-2 mg PO BID-TID or 0.1-0.2 mg IV PRN | Narrow-angle glaucoma; obstructive uropathy | Does NOT cross BBB (preferred over atropine for peripheral muscarinic side effects) | - | ROUTINE | ROUTINE | - |
+| Atropine (for cholinergic side effects/emergency) | IV | - | 0.5-1 mg :: IV :: PRN :: 0.5-1 mg IV PRN for symptomatic bradycardia from pyridostigmine | Tachycardia; thyrotoxicosis | HR monitoring; crosses BBB (may cause confusion) | STAT | STAT | - | STAT |
+| Pyridostigmine dose reduction/hold | - | - | Hold or reduce if cholinergic crisis suspected (worsening weakness + excessive secretions) | N/A | Distinguish cholinergic crisis (excess pyridostigmine) from myasthenic crisis (undertreated MG) | - | URGENT | ROUTINE | URGENT |
 
 *Note: MuSK-positive MG often responds poorly to pyridostigmine and may worsen; use cautiously and consider early immunotherapy.*
 
 ### 3B. Corticosteroids (Immunosuppression - Induction)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Prednisone (gradual escalation - PREFERRED for outpatient) | - | ROUTINE | ROUTINE | - | Start 10-20 mg daily; increase by 5-10 mg every 3-5 days to target 0.5-1 mg/kg/day (typically 40-60 mg daily); maintain 4-8 weeks then taper by 5-10 mg/month | Active untreated infection; uncontrolled diabetes; psychosis history | Glucose (q6h inpatient, weekly outpatient); BP; mood/sleep; weight; bone density at baseline; GI prophylaxis |
-| Prednisone (rapid escalation - INPATIENT preferred) | - | URGENT | - | URGENT | Start 40-60 mg daily (0.75-1 mg/kg/day); CAUTION: may cause initial transient worsening in first 1-2 weeks | Same as above | Same; MONITOR CLOSELY for steroid-induced exacerbation; consider concurrent IVIG/PLEX for protection |
-| Methylprednisolone IV (pulse therapy) | STAT | STAT | - | STAT | 1000 mg IV daily × 3-5 days; transition to oral prednisone taper | Active untreated infection; uncontrolled diabetes; psychosis | Glucose q6h (target <180); BP; mood; cardiac monitoring; GI prophylaxis |
-| Omeprazole (GI prophylaxis during steroids) | STAT | STAT | ROUTINE | STAT | 20-40 mg daily while on steroids | PPI allergy | None routine |
-| Insulin sliding scale (steroid-induced hyperglycemia) | STAT | STAT | - | STAT | Per protocol if glucose >180 mg/dL | Hypoglycemia risk | Glucose q6h |
-| Calcium carbonate + Vitamin D (bone protection) | - | ROUTINE | ROUTINE | - | Calcium 1000-1200 mg + Vitamin D 1000-2000 IU daily while on chronic steroids | Hypercalcemia; hyperparathyroidism | Serum calcium; consider DEXA if anticipated steroid course >3 months |
-| Bisphosphonate (bone protection if chronic steroids) | - | - | ROUTINE | - | Alendronate 70 mg PO weekly OR risedronate 35 mg PO weekly; start if steroids expected >3 months | GFR <35; esophageal disorders; inability to remain upright 30 min | DEXA at baseline; renal function; dental exam (ONJ risk) |
-| Trimethoprim-sulfamethoxazole (PCP prophylaxis) | - | ROUTINE | ROUTINE | - | 1 DS tablet (160/800 mg) daily or 3 times per week if prednisone ≥20 mg for ≥4 weeks | Sulfonamide allergy; severe renal impairment | CBC; renal function; use dapsone or atovaquone if allergic |
-| Prednisone taper | - | ROUTINE | ROUTINE | - | Once stable on target dose for 4-8 weeks: decrease by 5-10 mg every 2-4 weeks until 20 mg, then decrease by 2.5-5 mg monthly; target lowest effective dose or off | Do NOT stop abruptly if >2 weeks of therapy | Adrenal insufficiency symptoms; disease flare; cortisol level if concerns |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Prednisone (gradual escalation - PREFERRED for outpatient) | PO | - | 10-20 mg :: PO :: daily :: Start 10-20 mg daily; increase by 5-10 mg every 3-5 days to target 0.5-1 mg/kg/day (typically 40-60 mg daily); maintain 4-8 weeks then taper by 5-10 mg/month | Active untreated infection; uncontrolled diabetes; psychosis history | Glucose (q6h inpatient, weekly outpatient); BP; mood/sleep; weight; bone density at baseline; GI prophylaxis | - | ROUTINE | ROUTINE | - |
+| Prednisone (rapid escalation - INPATIENT preferred) | PO | - | 40-60 mg :: PO :: daily :: Start 40-60 mg daily (0.75-1 mg/kg/day); CAUTION: may cause initial transient worsening in first 1-2 weeks | Same as above | Same; MONITOR CLOSELY for steroid-induced exacerbation; consider concurrent IVIG/PLEX for protection | - | URGENT | - | URGENT |
+| Methylprednisolone IV (pulse therapy) | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily × 3-5 days; transition to oral prednisone taper | Active untreated infection; uncontrolled diabetes; psychosis | Glucose q6h (target <180); BP; mood; cardiac monitoring; GI prophylaxis | STAT | STAT | - | STAT |
+| Omeprazole (GI prophylaxis during steroids) | PO | - | 20-40 mg :: PO :: daily :: 20-40 mg daily while on steroids | PPI allergy | None routine | STAT | STAT | ROUTINE | STAT |
+| Insulin sliding scale (steroid-induced hyperglycemia) | - | - | 180 mg :: - :: - :: Per protocol if glucose >180 mg/dL | Hypoglycemia risk | Glucose q6h | STAT | STAT | - | STAT |
+| Calcium carbonate + Vitamin D (bone protection) | - | - | 1000-1200 mg :: PO :: daily :: Calcium 1000-1200 mg + Vitamin D 1000-2000 IU daily while on chronic steroids | Hypercalcemia; hyperparathyroidism | Serum calcium; consider DEXA if anticipated steroid course >3 months | - | ROUTINE | ROUTINE | - |
+| Bisphosphonate (bone protection if chronic steroids) | PO | - | 70 mg :: PO :: - :: Alendronate 70 mg PO weekly OR risedronate 35 mg PO weekly; start if steroids expected >3 months | GFR <35; esophageal disorders; inability to remain upright 30 min | DEXA at baseline; renal function; dental exam (ONJ risk) | - | - | ROUTINE | - |
+| Trimethoprim-sulfamethoxazole (PCP prophylaxis) | PO | - | 800 mg :: PO :: daily :: 1 DS tablet (160/800 mg) daily or 3 times per week if prednisone ≥20 mg for ≥4 weeks | Sulfonamide allergy; severe renal impairment | CBC; renal function; use dapsone or atovaquone if allergic | - | ROUTINE | ROUTINE | - |
+| Prednisone taper | - | - | 5-10 mg :: - :: Once :: Once stable on target dose for 4-8 weeks: decrease by 5-10 mg every 2-4 weeks until 20 mg, then decrease by 2.5-5 mg monthly; target lowest effective dose or off | Do NOT stop abruptly if >2 weeks of therapy | Adrenal insufficiency symptoms; disease flare; cortisol level if concerns | - | ROUTINE | ROUTINE | - |
 
 *Note: Steroid-induced transient worsening occurs in ~50% of patients within first 2 weeks of high-dose initiation. Consider starting steroids in-hospital for patients with moderate-severe generalized MG or bulbar symptoms, or provide "bridge" therapy with IVIG/PLEX.*
 
 ### 3C. Steroid-Sparing Immunosuppressive Agents
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Mycophenolate mofetil (CellCept) | - | ROUTINE | ROUTINE | - | Start 500 mg BID; increase to 1000 mg BID after 2 weeks; target 2000-3000 mg/day in divided doses; onset 6-12 months | Pregnancy (Category D - teratogenic); concurrent azathioprine | CBC q2 weeks × 3 months, then monthly; LFTs; GI side effects (diarrhea, nausea); lymphopenia; REMS pregnancy prevention |
-| Azathioprine (Imuran) | - | ROUTINE | ROUTINE | - | Start 50 mg daily; increase by 50 mg every 1-2 weeks to target 2-3 mg/kg/day (typically 150-250 mg/day); onset 6-18 months | TPMT deficiency (check before starting); concurrent allopurinol (reduce dose by 75%); pregnancy (relative) | TPMT genotype/activity BEFORE starting; CBC q1-2 weeks during titration, then monthly; LFTs; amylase/lipase if abdominal pain; lymphocyte count target 600-1000 |
-| Tacrolimus (Prograf) | - | - | ROUTINE | - | Start 1 mg BID; titrate to trough level 5-10 ng/mL; onset 3-6 months (faster than MMF/AZA) | Uncontrolled hypertension; renal impairment | Trough levels; renal function q2 weeks then monthly; electrolytes (K, Mg); glucose; BP; tremor; nephrotoxicity |
-| Cyclosporine (Sandimmune/Neoral) | - | - | ROUTINE | - | Start 2-3 mg/kg/day in 2 divided doses; target trough 100-150 ng/mL; onset 2-6 months | Uncontrolled hypertension; renal impairment; concurrent nephrotoxic drugs | Trough levels; renal function; BP; electrolytes (K, Mg); lipids; gingival hyperplasia; hirsutism |
-| Methotrexate | - | - | EXT | - | 10-20 mg PO or SC once weekly with folic acid 1 mg daily (except methotrexate day); onset 6-12 months | Pregnancy (Category X); hepatic disease; renal impairment (CrCl <30); concurrent trimethoprim | CBC q4 weeks; LFTs q8-12 weeks; renal function; pulmonary toxicity screen; folic acid supplementation mandatory |
-| Cyclophosphamide (refractory/severe) | - | EXT | EXT | EXT | Pulse IV: 500-1000 mg/m² monthly × 6 months; OR oral 1-2 mg/kg/day; reserved for refractory MG | Pregnancy; active infection; bone marrow suppression | CBC weekly during treatment; urinalysis (hemorrhagic cystitis - MESNA with IV dosing); fertility counseling; malignancy risk |
-| IVIG (maintenance immunomodulation) | - | ROUTINE | ROUTINE | ROUTINE | 1-2 g/kg divided over 2-5 days, then 0.4-1 g/kg every 4 weeks as maintenance | IgA deficiency (check IgA level first); recent thrombotic event; renal failure | Pre-infusion: IgA level, renal function, CBC; during: vital signs q15 min first hour; headache; aseptic meningitis; thrombosis risk; renal function |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Mycophenolate mofetil (CellCept) | - | - | 500 mg :: PO :: BID :: Start 500 mg BID; increase to 1000 mg BID after 2 weeks; target 2000-3000 mg/day in divided doses; onset 6-12 months | Pregnancy (Category D - teratogenic); concurrent azathioprine | CBC q2 weeks × 3 months, then monthly; LFTs; GI side effects (diarrhea, nausea); lymphopenia; REMS pregnancy prevention | - | ROUTINE | ROUTINE | - |
+| Azathioprine (Imuran) | PO | - | 50 mg :: PO :: daily :: Start 50 mg daily; increase by 50 mg every 1-2 weeks to target 2-3 mg/kg/day (typically 150-250 mg/day); onset 6-18 months | TPMT deficiency (check before starting); concurrent allopurinol (reduce dose by 75%); pregnancy (relative) | TPMT genotype/activity BEFORE starting; CBC q1-2 weeks during titration, then monthly; LFTs; amylase/lipase if abdominal pain; lymphocyte count target 600-1000 | - | ROUTINE | ROUTINE | - |
+| Tacrolimus (Prograf) | PO | - | 1 mg :: PO :: BID :: Start 1 mg BID; titrate to trough level 5-10 ng/mL; onset 3-6 months (faster than MMF/AZA) | Uncontrolled hypertension; renal impairment | Trough levels; renal function q2 weeks then monthly; electrolytes (K, Mg); glucose; BP; tremor; nephrotoxicity | - | - | ROUTINE | - |
+| Cyclosporine (Sandimmune/Neoral) | PO | - | 2-3 mg/kg :: PO :: - :: Start 2-3 mg/kg/day in 2 divided doses; target trough 100-150 ng/mL; onset 2-6 months | Uncontrolled hypertension; renal impairment; concurrent nephrotoxic drugs | Trough levels; renal function; BP; electrolytes (K, Mg); lipids; gingival hyperplasia; hirsutism | - | - | ROUTINE | - |
+| Methotrexate | SC | - | 10-20 mg :: SC :: daily :: 10-20 mg PO or SC once weekly with folic acid 1 mg daily (except methotrexate day); onset 6-12 months | Pregnancy (Category X); hepatic disease; renal impairment (CrCl <30); concurrent trimethoprim | CBC q4 weeks; LFTs q8-12 weeks; renal function; pulmonary toxicity screen; folic acid supplementation mandatory | - | - | EXT | - |
+| Cyclophosphamide (refractory/severe) | IV | - | 500-1000 mg :: IV :: monthly :: Pulse IV: 500-1000 mg/m² monthly × 6 months; OR oral 1-2 mg/kg/day; reserved for refractory MG | Pregnancy; active infection; bone marrow suppression | CBC weekly during treatment; urinalysis (hemorrhagic cystitis - MESNA with IV dosing); fertility counseling; malignancy risk | - | EXT | EXT | EXT |
+| IVIG (maintenance immunomodulation) | PO | - | 1-2 g/kg :: PO :: - :: 1-2 g/kg divided over 2-5 days, then 0.4-1 g/kg every 4 weeks as maintenance | IgA deficiency (check IgA level first); recent thrombotic event; renal failure | Pre-infusion: IgA level, renal function, CBC; during: vital signs q15 min first hour; headache; aseptic meningitis; thrombosis risk; renal function | - | ROUTINE | ROUTINE | ROUTINE |
 
 ### 3D. Biologics, Complement Inhibitors & Rescue Therapies
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Rituximab (Rituxan) | - | ROUTINE | ROUTINE | - | 375 mg/m² IV weekly × 4 weeks; OR 1000 mg IV × 2 doses 14 days apart; re-dose when CD19/CD20 recover or clinical worsening; onset 3-6 months | Active Hepatitis B; active infection; severe immunodeficiency | HBV serology before; CD19/CD20 counts q3-6 months; immunoglobulins q6 months; PML risk (very rare); infusion reactions (premedicate with acetaminophen, diphenhydramine, methylprednisolone) |
-| Eculizumab (Soliris) | - | ROUTINE | ROUTINE | - | 900 mg IV weekly × 4 weeks, then 1200 mg IV at week 5, then 1200 mg IV every 2 weeks; for AChR-positive generalized MG | Unresolved Neisseria meningitidis infection; unvaccinated against meningococcus | Meningococcal vaccine ≥2 weeks before; REMS program; CBC; LDH/reticulocyte (hemolysis on discontinuation); signs of meningococcal infection; ciprofloxacin prophylaxis recommended |
-| Ravulizumab (Ultomiris) | - | ROUTINE | ROUTINE | - | Weight-based loading dose IV, then maintenance every 8 weeks; for AChR-positive generalized MG | Same as eculizumab | Same as eculizumab; less frequent dosing advantage |
-| Zilucoplan (Zilbrysq) | - | - | ROUTINE | - | 0.3 mg/kg SC daily (self-administered); for AChR-positive generalized MG | Same as eculizumab | Same meningococcal vaccination required; injection site reactions; LDH; reticulocyte count |
-| Efgartigimod (Vyvgart) | - | ROUTINE | ROUTINE | - | 10 mg/kg IV weekly × 4 weeks per cycle; may repeat based on clinical response; for AChR-positive generalized MG | Active infection; concurrent IgG-dependent therapies | IgG levels (expect ~70% reduction); infection monitoring; no meningococcal vaccine required |
-| Efgartigimod/hyaluronidase SC (Vyvgart Hytrulo) | - | - | ROUTINE | - | 1008 mg efgartigimod + 11,200 units hyaluronidase SC weekly × 4 weeks per cycle | Same as IV efgartigimod | Same; injection site reactions; self-administered option |
-| Rozanolixizumab (Rystiggo) | - | ROUTINE | ROUTINE | - | Weight-based SC weekly × 6 weeks per cycle; for AChR-positive generalized MG | Active infection | IgG levels; headache common; pyrexia; infection monitoring |
-| Plasmapheresis (PLEX) - rescue | STAT | STAT | - | STAT | 5-7 exchanges over 10-14 days; exchange 1-1.5 plasma volumes per session | Hemodynamic instability; sepsis; line contraindication; heparin allergy | BP during exchange; electrolytes (Ca, K, Mg); coagulation studies; fibrinogen; line site infection; hypotension |
-| IVIG (rescue therapy) | STAT | STAT | - | STAT | 2 g/kg divided over 2-5 days (e.g., 0.4 g/kg/day × 5 days) | IgA deficiency; renal failure; recent thrombotic event | Pre-infusion IgA level; renal function; vital signs; headache (aseptic meningitis); thrombosis risk |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Rituximab (Rituxan) | IV | - | 375 mg :: IV :: - :: 375 mg/m² IV weekly × 4 weeks; OR 1000 mg IV × 2 doses 14 days apart; re-dose when CD19/CD20 recover or clinical worsening; onset 3-6 months | - | Active Hepatitis B; active infection; severe immunodeficiency | HBV serology before; CD19/CD20 counts q3-6 months; immunoglobulins q6 months; PML risk (very rare); infusion reactions (premedicate with acetaminophen, diphenhydramine, methylprednisolone) | - | ROUTINE | ROUTINE | - |
+| Eculizumab (Soliris) | IV | - | 900 mg :: IV :: - :: 900 mg IV weekly × 4 weeks, then 1200 mg IV at week 5, then 1200 mg IV every 2 weeks; for AChR-positive generalized MG | - | Unresolved Neisseria meningitidis infection; unvaccinated against meningococcus | Meningococcal vaccine ≥2 weeks before; REMS program; CBC; LDH/reticulocyte (hemolysis on discontinuation); signs of meningococcal infection; ciprofloxacin prophylaxis recommended | - | ROUTINE | ROUTINE | - |
+| Ravulizumab (Ultomiris) | IV | - | Weight-based loading dose IV, then maintenance every 8 weeks; for AChR-positive generalized MG | - | Same as eculizumab | Same as eculizumab; less frequent dosing advantage | - | ROUTINE | ROUTINE | - |
+| Zilucoplan (Zilbrysq) | SC | - | 0.3 mg/kg :: SC :: daily :: 0.3 mg/kg SC daily (self-administered); for AChR-positive generalized MG | - | Same as eculizumab | Same meningococcal vaccination required; injection site reactions; LDH; reticulocyte count | - | - | ROUTINE | - |
+| Efgartigimod (Vyvgart) | IV | - | 10 mg/kg :: IV :: - :: 10 mg/kg IV weekly × 4 weeks per cycle; may repeat based on clinical response; for AChR-positive generalized MG | - | Active infection; concurrent IgG-dependent therapies | IgG levels (expect ~70% reduction); infection monitoring; no meningococcal vaccine required | - | ROUTINE | ROUTINE | - |
+| Efgartigimod/hyaluronidase SC (Vyvgart Hytrulo) | SC | - | 1008 mg :: SC :: - :: 1008 mg efgartigimod + 11,200 units hyaluronidase SC weekly × 4 weeks per cycle | - | Same as IV efgartigimod | Same; injection site reactions; self-administered option | - | - | ROUTINE | - |
+| Rozanolixizumab (Rystiggo) | SC | - | Weight-based SC weekly × 6 weeks per cycle; for AChR-positive generalized MG | - | Active infection | IgG levels; headache common; pyrexia; infection monitoring | - | ROUTINE | ROUTINE | - |
+| Plasmapheresis (PLEX) - rescue | - | - | 5-7 exchanges over 10-14 days; exchange 1-1.5 plasma volumes per session | - | Hemodynamic instability; sepsis; line contraindication; heparin allergy | BP during exchange; electrolytes (Ca, K, Mg); coagulation studies; fibrinogen; line site infection; hypotension | STAT | STAT | - | STAT |
+| IVIG (rescue therapy) | PO | - | 2 g/kg :: PO :: daily x 5 days :: 2 g/kg divided over 2-5 days (e.g., 0.4 g/kg/day × 5 days) | - | IgA deficiency; renal failure; recent thrombotic event | Pre-infusion IgA level; renal function; vital signs; headache (aseptic meningitis); thrombosis risk | STAT | STAT | - | STAT |
 
 *Note: Complement inhibitors (eculizumab, ravulizumab, zilucoplan) and FcRn inhibitors (efgartigimod, rozanolixizumab) are FDA-approved for AChR antibody-positive generalized MG. They are NOT indicated for MuSK-positive or seronegative MG. Rituximab is first-line for MuSK-positive MG (excellent response rates).*
 
 ### 3E. Surgical Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Indication | Contraindications | Notes |
-|-----------|:--:|:----:|:---:|:---:|------------|-------------------|-------|
-| Thymectomy (VATS or robotic-assisted) | - | ROUTINE | ROUTINE | - | AChR-positive generalized MG, age 18-65 (MGTX trial); any age with thymoma; consider in AChR-positive ocular MG with suboptimal response | MuSK-positive MG (no proven benefit); medically unstable; uncontrolled MG (optimize first) | MGTX trial: thymectomy + prednisone superior to prednisone alone at 3 years; optimize MG before surgery (FVC >2L, no bulbar crisis); post-op ICU monitoring recommended |
-| Thymectomy (median sternotomy) | - | ROUTINE | - | - | Thymoma requiring complete resection; invasive thymoma | Same as above | More invasive; complete thymoma staging with Masaoka classification; consider neoadjuvant chemotherapy for advanced thymoma |
-| Extended thymectomy | - | ROUTINE | - | - | Thymoma with suspected extra-thymic extension | Same as above | Includes removal of all anterior mediastinal fat; en bloc resection |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Thymectomy (VATS or robotic-assisted) | - | AChR-positive generalized MG, age 18-65 (MGTX trial); any age with thymoma; consider in AChR-positive ocular MG with suboptimal response | - | MuSK-positive MG (no proven benefit); medically unstable; uncontrolled MG (optimize first) | MGTX trial: thymectomy + prednisone superior to prednisone alone at 3 years; optimize MG before surgery (FVC >2L, no bulbar crisis); post-op ICU monitoring recommended | - | ROUTINE | ROUTINE | - |
+| Thymectomy (median sternotomy) | - | Thymoma requiring complete resection; invasive thymoma | - | Same as above | More invasive; complete thymoma staging with Masaoka classification; consider neoadjuvant chemotherapy for advanced thymoma | - | ROUTINE | - | - |
+| Extended thymectomy | - | Thymoma with suspected extra-thymic extension | - | Same as above | Includes removal of all anterior mediastinal fat; en bloc resection | - | ROUTINE | - | - |
 
 ---
 

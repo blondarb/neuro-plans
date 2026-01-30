@@ -1,3 +1,10 @@
+---
+title: "Restless Legs Syndrome"
+description: "Clinical decision support for restless legs syndrome (rls) / willis-ekbom disease diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Restless Legs Syndrome
 
 **VERSION:** 1.0
@@ -109,63 +116,63 @@
 
 ### 3A. Non-Pharmacologic Treatment (All Patients)
 
-| Treatment | ED | HOSP | OPD | ICU | Details | Contraindications | Notes |
-|-----------|:--:|:----:|:---:|:---:|---------|-------------------|-------|
-| Sleep hygiene | - | ROUTINE | ROUTINE | - | Regular sleep schedule, cool room, limit screen time | None | Foundation of treatment |
-| Avoid triggers | - | ROUTINE | ROUTINE | - | Avoid alcohol, caffeine, nicotine (especially evening) | None | Critical |
-| Moderate exercise | - | - | ROUTINE | - | Regular exercise, but avoid intense exercise close to bedtime | None | Helps symptoms |
-| Leg massage/stretching | - | ROUTINE | ROUTINE | - | Gentle stretching, massage before bed | None | May provide relief |
-| Hot bath | - | - | ROUTINE | - | Warm bath before bedtime | None | Relaxation |
-| Mental alerting activities | - | - | ROUTINE | - | Crosswords, video games can distract during symptoms | None | Useful for mild cases |
-| Pneumatic compression devices | - | - | EXT | - | Sequential compression 1 hour before bed | DVT, arterial disease | Limited evidence |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Sleep hygiene | - | - | Regular sleep schedule, cool room, limit screen time | None | Foundation of treatment | - | ROUTINE | ROUTINE | - |
+| Avoid triggers | - | - | Avoid alcohol, caffeine, nicotine (especially evening) | None | Critical | - | ROUTINE | ROUTINE | - |
+| Moderate exercise | - | - | Regular exercise, but avoid intense exercise close to bedtime | None | Helps symptoms | - | - | ROUTINE | - |
+| Leg massage/stretching | - | - | Gentle stretching, massage before bed | None | May provide relief | - | ROUTINE | ROUTINE | - |
+| Hot bath | - | - | Warm bath before bedtime | None | Relaxation | - | - | ROUTINE | - |
+| Mental alerting activities | - | - | Crosswords, video games can distract during symptoms | None | Useful for mild cases | - | - | ROUTINE | - |
+| Pneumatic compression devices | - | - | Sequential compression 1 hour before bed | DVT, arterial disease | Limited evidence | - | - | EXT | - |
 
 ### 3B. Iron Replacement (If Ferritin <75 ng/mL)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Ferrous sulfate | - | ROUTINE | ROUTINE | - | 325 mg (65 mg elemental iron) with vitamin C 100 mg, on empty stomach, daily or every other day | Iron overload, hemochromatosis | Ferritin q3 months; GI side effects |
-| Ferrous gluconate | - | ROUTINE | ROUTINE | - | 324 mg (36 mg elemental iron) daily; better tolerated | Same | Same |
-| IV iron (ferric carboxymaltose) | - | ROUTINE | ROUTINE | - | 1000 mg IV once (if oral intolerant or severe deficiency); may repeat | Iron overload, infection | Ferritin in 8 weeks; faster response |
-| IV iron sucrose | - | ROUTINE | ROUTINE | - | 200 mg IV × 5 doses over 2 weeks | Same | Same |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Ferrous sulfate | - | - | 325 mg :: - :: daily :: 325 mg (65 mg elemental iron) with vitamin C 100 mg, on empty stomach, daily or every other day | Iron overload, hemochromatosis | Ferritin q3 months; GI side effects | - | ROUTINE | ROUTINE | - |
+| Ferrous gluconate | PO | - | 324 mg :: PO :: daily :: 324 mg (36 mg elemental iron) daily; better tolerated | Same | Same | - | ROUTINE | ROUTINE | - |
+| IV iron (ferric carboxymaltose) | IV | - | 1000 mg :: IV :: once :: 1000 mg IV once (if oral intolerant or severe deficiency); may repeat | Iron overload, infection | Ferritin in 8 weeks; faster response | - | ROUTINE | ROUTINE | - |
+| IV iron sucrose | IV | - | 200 mg :: IV :: - :: 200 mg IV × 5 doses over 2 weeks | Same | Same | - | ROUTINE | ROUTINE | - |
 
 ### 3C. First-Line Pharmacologic Treatment - Alpha-2-Delta Ligands (PREFERRED)
 
 **Note:** Alpha-2-delta ligands (gabapentinoids) are now FIRST-LINE due to lower augmentation risk than dopamine agonists.
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Gabapentin | - | ROUTINE | ROUTINE | - | Start 300 mg QHS; titrate by 300 mg every few days to 900-1800 mg QHS | Renal impairment (adjust) | Sedation, dizziness, edema |
-| Gabapentin enacarbil (Horizant) | - | - | ROUTINE | - | 600 mg daily at ~5 PM; FDA approved for RLS | Renal impairment (adjust) | Sedation, dizziness |
-| Pregabalin | - | ROUTINE | ROUTINE | - | Start 75 mg QHS; titrate to 150-300 mg QHS | Renal impairment (adjust) | Sedation, dizziness, weight gain |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Gabapentin | PO | - | 300 mg :: PO :: QHS :: Start 300 mg QHS; titrate by 300 mg every few days to 900-1800 mg QHS | Renal impairment (adjust) | Sedation, dizziness, edema | - | ROUTINE | ROUTINE | - |
+| Gabapentin enacarbil (Horizant) | PO | - | 600 mg :: PO :: daily :: 600 mg daily at ~5 PM; FDA approved for RLS | Renal impairment (adjust) | Sedation, dizziness | - | - | ROUTINE | - |
+| Pregabalin | PO | - | 75 mg :: PO :: QHS :: Start 75 mg QHS; titrate to 150-300 mg QHS | Renal impairment (adjust) | Sedation, dizziness, weight gain | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Second-Line Pharmacologic Treatment - Dopamine Agonists
 
 **AUGMENTATION WARNING:** Dopamine agonists have significant augmentation risk (up to 70% over 10 years). Use lowest effective dose. Monitor closely.
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Pramipexole (Mirapex) | - | ROUTINE | ROUTINE | - | Start 0.125 mg 2-3h before bedtime; titrate by 0.125 mg q4-7 days; max 0.5 mg (keep dose LOW) | Severe renal impairment | AUGMENTATION, ICDs, sleepiness |
-| Ropinirole (Requip) | - | ROUTINE | ROUTINE | - | Start 0.25 mg 1-3h before bedtime; titrate by 0.25 mg q4-7 days; max 4 mg (keep dose LOW) | Severe hepatic impairment | AUGMENTATION, ICDs, sleepiness |
-| Rotigotine patch (Neupro) | - | ROUTINE | ROUTINE | - | Start 1 mg/24h patch; titrate by 1 mg/week; max 3 mg/24h | Sulfite allergy | AUGMENTATION, ICDs, skin reactions |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Pramipexole (Mirapex) | PO | - | 0.125 mg :: PO :: - :: Start 0.125 mg 2-3h before bedtime; titrate by 0.125 mg q4-7 days; max 0.5 mg (keep dose LOW) | - | Severe renal impairment | AUGMENTATION, ICDs, sleepiness | - | ROUTINE | ROUTINE | - |
+| Ropinirole (Requip) | PO | - | 0.25 mg :: PO :: - :: Start 0.25 mg 1-3h before bedtime; titrate by 0.25 mg q4-7 days; max 4 mg (keep dose LOW) | - | Severe hepatic impairment | AUGMENTATION, ICDs, sleepiness | - | ROUTINE | ROUTINE | - |
+| Rotigotine patch (Neupro) | Transdermal | - | 1 mg :: PO :: - :: Start 1 mg/24h patch; titrate by 1 mg/week; max 3 mg/24h | - | Sulfite allergy | AUGMENTATION, ICDs, skin reactions | - | ROUTINE | ROUTINE | - |
 
 ### 3E. Third-Line / Refractory Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Low-dose opioids | - | - | EXT | - | Oxycodone 5-15 mg QHS or tramadol 50-100 mg QHS; RESERVE for refractory cases | Addiction risk, respiratory depression, apnea | Dependence, respiratory |
-| Extended-release oxycodone | - | - | EXT | - | 10-20 mg QHS; for severe refractory RLS | Same | Same |
-| Methadone (specialist use) | - | - | EXT | - | 5-10 mg QHS; specialist prescribing only | Same; QT prolongation | QTc, respiratory |
-| Buprenorphine (specialist use) | - | - | EXT | - | 0.2-0.8 mg SL QHS; may have lower abuse potential | Same | Same |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Low-dose opioids | PO | - | 5-15 mg :: PO :: QHS :: Oxycodone 5-15 mg QHS or tramadol 50-100 mg QHS; RESERVE for refractory cases | Addiction risk, respiratory depression, apnea | Dependence, respiratory | - | - | EXT | - |
+| Extended-release oxycodone | PO | - | 10-20 mg :: PO :: QHS :: 10-20 mg QHS; for severe refractory RLS | Same | Same | - | - | EXT | - |
+| Methadone (specialist use) | PO | - | 5-10 mg :: PO :: QHS :: 5-10 mg QHS; specialist prescribing only | Same; QT prolongation | QTc, respiratory | - | - | EXT | - |
+| Buprenorphine (specialist use) | - | - | 0.2-0.8 mg :: - :: QHS :: 0.2-0.8 mg SL QHS; may have lower abuse potential | Same | Same | - | - | EXT | - |
 
 ### 3F. Managing Augmentation
 
-| Treatment | ED | HOSP | OPD | ICU | Strategy | Notes |
-|-----------|:--:|:----:|:---:|:---:|----------|-------|
-| Recognize augmentation | - | ROUTINE | ROUTINE | - | Earlier onset, shorter latency, spread to arms, increased intensity | Key to management |
-| Discontinue dopamine agonist | - | ROUTINE | ROUTINE | - | Taper slowly over 1-2 weeks; expect worsening for 1-4 weeks | "Washout" period difficult |
-| Bridge with opioid | - | ROUTINE | ROUTINE | - | Low-dose opioid (oxycodone 5-10 mg) during washout period | Temporary use |
-| Switch to alpha-2-delta ligand | - | ROUTINE | ROUTINE | - | Start gabapentin/pregabalin as dopamine agonist tapered | New first-line |
-| IV iron | - | ROUTINE | ROUTINE | - | Ferric carboxymaltose 1000 mg if ferritin <100 | Helpful during transition |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Recognize augmentation | - | - | - | - | Key to management | - | ROUTINE | ROUTINE | - |
+| Discontinue dopamine agonist | - | - | - | - | "Washout" period difficult | - | ROUTINE | ROUTINE | - |
+| Bridge with opioid | - | - | - | - | Temporary use | - | ROUTINE | ROUTINE | - |
+| Switch to alpha-2-delta ligand | - | - | - | - | New first-line | - | ROUTINE | ROUTINE | - |
+| IV iron | IV | - | - | - | Helpful during transition | - | ROUTINE | ROUTINE | - |
 
 ---
 

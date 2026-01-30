@@ -1,0 +1,1005 @@
+{
+  "id": "cidp",
+  "title": "Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)",
+  "version": "1.0",
+  "icd10": [
+    "** G61.81 (Chronic inflammatory demyelinating polyneuritis)",
+    "G61.89 (Other inflammatory polyneuropathies)",
+    "G61.9 (Inflammatory polyneuropathy",
+    "unspecified)"
+  ],
+  "scope": "** Diagnosis and management of typical CIDP and CIDP variants in adults. Covers diagnostic criteria (EFNS/PNS), electrodiagnostic findings, immunotherapy options, and monitoring. Excludes acute inflammatory demyelinating polyneuropathy (Guillain-Barré syndrome), hereditary demyelinating neuropathies (CMT), and purely axonal chronic neuropathies.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline, exclude hematologic disease",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Renal/hepatic function, glucose",
+          "target": "Normal"
+        },
+        {
+          "item": "HbA1c",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes-associated neuropathy",
+          "target": "<6.5%"
+        },
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction",
+          "target": "Normal"
+        },
+        {
+          "item": "Vitamin B12",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency neuropathy",
+          "target": ">400 pg/mL"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Monoclonal gammopathy (MGUS, myeloma)",
+          "target": "No M-spike"
+        },
+        {
+          "item": "Immunofixation (serum)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Paraprotein identification",
+          "target": "Negative"
+        },
+        {
+          "item": "Free light chains (serum)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Light chain disease",
+          "target": "Normal ratio"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "HIV",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated neuropathy",
+          "target": "Negative"
+        },
+        {
+          "item": "Hepatitis B/C",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Before immunotherapy; hepatitis-associated neuropathy",
+          "target": "Negative"
+        },
+        {
+          "item": "ANA",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Connective tissue disease",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-MAG antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "MAG-associated neuropathy (DADS variant)",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-GM1, anti-GD1a antibodies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "MMN, GBS variants",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-ganglioside panel",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Immune-mediated neuropathies",
+          "target": "Negative"
+        },
+        {
+          "item": "Urine protein electrophoresis (UPEP)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Multiple myeloma, POEMS",
+          "target": "Negative"
+        },
+        {
+          "item": "VEGF level",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "POEMS syndrome if suspected",
+          "target": "Normal"
+        },
+        {
+          "item": "IgG/IgA/IgM levels",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Before IVIG; IgA deficiency screening",
+          "target": "Normal; document IgA level"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Anti-NF155, anti-CNTN1, anti-Caspr1 antibodies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Nodal/paranodal antibody-associated CIDP",
+          "target": "Negative"
+        },
+        {
+          "item": "Genetic testing (PMP22, MPZ, GJB1)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If hereditary neuropathy suspected (CMT)",
+          "target": "Negative"
+        },
+        {
+          "item": "Bone marrow biopsy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If POEMS or myeloma suspected",
+          "target": "Normal"
+        },
+        {
+          "item": "Fat pad biopsy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Amyloidosis",
+          "target": "Negative"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Baseline",
+          "target": "Normal"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Exclude infection, malignancy",
+          "target": "WBC <10/mm³ (albuminocytologic dissociation)"
+        },
+        {
+          "item": "Protein",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Typically elevated in CIDP",
+          "target": "Often >45-100 mg/dL"
+        },
+        {
+          "item": "Glucose",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Infection",
+          "target": "Normal"
+        },
+        {
+          "item": "Cytology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Carcinomatous meningitis",
+          "target": "Negative"
+        },
+        {
+          "item": "Oligoclonal bands",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "MS, other inflammatory",
+          "target": "Usually negative in CIDP"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Nerve conduction studies (NCS)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At diagnosis",
+          "target": "Demyelinating features (see criteria)",
+          "contraindications": "Anticoagulation (for needle EMG)"
+        },
+        {
+          "item": "Electromyography (EMG)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At diagnosis",
+          "target": "Secondary axonal changes; denervation",
+          "contraindications": "Same"
+        },
+        {
+          "item": "MRI spine with contrast (cervical/lumbar)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At diagnosis",
+          "target": "Nerve root enlargement/enhancement",
+          "contraindications": "Contrast allergy, renal disease"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brachial/lumbosacral plexus",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If plexopathy suspected",
+          "target": "Plexus enlargement/enhancement",
+          "contraindications": "Per MRI"
+        },
+        {
+          "item": "Nerve ultrasound",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Emerging modality",
+          "target": "Nerve enlargement (CSA increase)",
+          "contraindications": "None"
+        },
+        {
+          "item": "PET-CT",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "POEMS, lymphoma, malignancy workup",
+          "target": "Sclerotic lesions, lymphadenopathy",
+          "contraindications": "Per PET"
+        },
+        {
+          "item": "Nerve biopsy (sural)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Diagnostic uncertainty; vasculitis suspected",
+          "target": "Demyelination, inflammation",
+          "contraindications": "Rarely needed"
+        }
+      ]
+    },
+    "Treatment": {
+      "First-Line Immunotherapy": [
+        {
+          "item": "IVIG (Intravenous Immunoglobulin)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g/kg",
+                "orderSentence": "IVIG (Intravenous Immunoglobulin) 2 g/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Induction: 2 g/kg divided over 2-5 days; Maintenance: 0.4-1 g/kg q3-4 weeks (adjust based on response)",
+            "orderSentence": "IVIG (Intravenous Immunoglobulin) 2 g/kg PO"
+          },
+          "contraindications": "IgA deficiency (use IgA-depleted product), renal failure, thrombosis history",
+          "monitoring": "Renal function, headache, aseptic meningitis, thrombosis",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "SCIG (Subcutaneous Immunoglobulin)",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Convert from IVIG at equivalent weekly dose (total monthly IVIG dose ÷ 4); administer weekly",
+            "orderSentence": "SCIG (Subcutaneous Immunoglobulin) - SC - see dosing"
+          },
+          "contraindications": "Same (fewer systemic reactions)",
+          "monitoring": "Local site reactions",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Plasma exchange (PLEX)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "5-7 exchanges over 2-3 weeks; 1-1.5 plasma volumes/exchange",
+            "orderSentence": "Plasma exchange (PLEX) - - - see dosing"
+          },
+          "contraindications": "Hemodynamic instability, line access",
+          "monitoring": "Hemodynamics, electrolytes (Ca, Mg), fibrinogen",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Corticosteroids",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60-80 mg",
+                "orderSentence": "Corticosteroids 60-80 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Prednisone 60-80 mg daily or 1 mg/kg/day × 4-8 weeks, then slow taper over 6-12 months; OR pulsed methylprednisolone 1000 mg IV × 3 days monthly",
+            "orderSentence": "Corticosteroids 60-80 mg IV"
+          },
+          "contraindications": "Uncontrolled DM, active infection, osteoporosis (relative)",
+          "monitoring": "Glucose, BP, bone density, weight, infection",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-Line / Steroid-Sparing Agents": [
+        {
+          "item": "Azathioprine",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Azathioprine 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg daily; increase by 50 mg q2 weeks to 2-3 mg/kg/day",
+            "orderSentence": "Azathioprine 50 mg PO"
+          },
+          "contraindications": "TPMT deficiency (check before starting), pregnancy",
+          "monitoring": "CBC, LFTs, TPMT level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mycophenolate mofetil",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg BID; increase to 1000-1500 mg BID",
+            "orderSentence": "Mycophenolate mofetil 500 mg PO"
+          },
+          "contraindications": "Pregnancy, severe GI disease",
+          "monitoring": "CBC, LFTs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rituximab",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "375 mg",
+                "orderSentence": "Rituximab 375 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "375 mg/m² IV weekly × 4 OR 1000 mg IV × 2 doses (days 1 and 15); repeat q6 months PRN",
+            "orderSentence": "Rituximab 375 mg IV"
+          },
+          "contraindications": "Active infection, hepatitis B (screen)",
+          "monitoring": "Infusion reactions, infection, B-cell counts",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cyclophosphamide",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mg",
+                "orderSentence": "Cyclophosphamide 500-1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Pulse: 500-1000 mg/m² IV monthly × 6; rarely used due to toxicity",
+            "orderSentence": "Cyclophosphamide 500-1000 mg IV"
+          },
+          "contraindications": "Severe cytopenias, active infection",
+          "monitoring": "CBC, renal function, bladder toxicity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Cyclosporine",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3-5 mg/kg",
+                "orderSentence": "Cyclosporine 3-5 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-5 mg/kg/day in 2 divided doses; target trough 100-200 ng/mL",
+            "orderSentence": "Cyclosporine 3-5 mg/kg PO"
+          },
+          "contraindications": "Renal impairment, uncontrolled HTN",
+          "monitoring": "Renal function, BP, drug levels",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Anti-Nodal Antibody-Positive CIDP (Special Population)": [
+        {
+          "item": "Rituximab (first-line for anti-nodal CIDP)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "375 mg",
+                "orderSentence": "Rituximab (first-line for anti-nodal CIDP) 375 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "375 mg/m² weekly × 4 OR 1000 mg × 2 doses",
+            "orderSentence": "Rituximab (first-line for anti-nodal CIDP) 375 mg PO"
+          },
+          "contraindications": "Per above",
+          "monitoring": "Poor response to IVIG expected; rituximab preferred",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatment": [
+        {
+          "item": "Gabapentin (neuropathic pain)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100-300 mg",
+                "orderSentence": "Gabapentin (neuropathic pain) 100-300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100-300 mg TID; titrate to 900-3600 mg/day",
+            "orderSentence": "Gabapentin (neuropathic pain) 100-300 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Renal impairment (adjust)",
+          "monitoring": "Sedation, dizziness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin (neuropathic pain)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin (neuropathic pain) 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; titrate to 150-300 mg BID",
+            "orderSentence": "Pregabalin (neuropathic pain) 75 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Renal impairment (adjust)",
+          "monitoring": "Same",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine (neuropathic pain)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine (neuropathic pain) 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily; increase to 60 mg daily",
+            "orderSentence": "Duloxetine (neuropathic pain) 30 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Severe hepatic/renal impairment, MAOIs",
+          "monitoring": "Nausea, BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline (neuropathic pain)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-25 mg",
+                "orderSentence": "Amitriptyline (neuropathic pain) 10-25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-25 mg QHS; titrate to 50-100 mg QHS",
+            "orderSentence": "Amitriptyline (neuropathic pain) 10-25 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Cardiac arrhythmia, glaucoma",
+          "monitoring": "QTc, anticholinergic effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neuromuscular specialist",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "All patients; diagnosis confirmation and management"
+        },
+        {
+          "item": "Physical therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Strengthening, gait training, fall prevention"
+        },
+        {
+          "item": "Occupational therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "ADL assistance, adaptive equipment"
+        },
+        {
+          "item": "Physiatry/PM&R",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Comprehensive rehabilitation, orthotics"
+        },
+        {
+          "item": "Hematology/Oncology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "If monoclonal gammopathy or POEMS"
+        },
+        {
+          "item": "Infusion center",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "IVIG administration"
+        },
+        {
+          "item": "Home health nursing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "SCIG training"
+        },
+        {
+          "item": "Pain management",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Refractory neuropathic pain"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "CIDP is a chronic condition requiring ongoing treatment; not curable but manageable",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "IVIG infusions will be needed regularly (typically monthly)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report any worsening weakness, numbness, or falls immediately",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT stop immunotherapy abruptly without physician guidance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Fall prevention: remove rugs, improve lighting, use assistive devices",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Vaccination guidelines: avoid live vaccines on immunosuppression; IVIG may interfere with vaccine response",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep all neurology follow-up appointments for monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "GBS Foundation and similar resources for support",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular exercise within tolerance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Balance and fall prevention strategies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Foot care (sensory loss increases injury risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid excessive alcohol",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain healthy weight",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Guillain-Barré syndrome (GBS)",
+      "features": "Acute onset (<4 weeks), monophasic, nadir within 4 weeks",
+      "tests": "Timing; CIDP requires >8 weeks progression"
+    },
+    {
+      "diagnosis": "Multifocal motor neuropathy (MMN)",
+      "features": "Pure motor, asymmetric, conduction block, anti-GM1+",
+      "tests": "Anti-GM1; no sensory involvement; does not respond to steroids"
+    },
+    {
+      "diagnosis": "POEMS syndrome",
+      "features": "Polyneuropathy, organomegaly, endocrinopathy, M-protein, skin changes",
+      "tests": "VEGF elevated; sclerotic bone lesions; lambda light chain"
+    },
+    {
+      "diagnosis": "CMT (Charcot-Marie-Tooth)",
+      "features": "Family history, foot deformities (pes cavus), slow progression since childhood",
+      "tests": "Genetic testing; no CSF protein elevation"
+    },
+    {
+      "diagnosis": "MAG-associated neuropathy",
+      "features": "Distal, sensory predominant, IgM paraprotein, anti-MAG positive",
+      "tests": "Anti-MAG antibody; IgM gammopathy"
+    },
+    {
+      "diagnosis": "Diabetic lumbosacral radiculoplexus neuropathy",
+      "features": "Diabetes, weight loss, severe pain, proximal > distal",
+      "tests": "Clinical; self-limited course"
+    },
+    {
+      "diagnosis": "Vasculitic neuropathy",
+      "features": "Painful, asymmetric, mononeuritis multiplex pattern",
+      "tests": "ESR/CRP elevated; nerve/muscle biopsy"
+    },
+    {
+      "diagnosis": "Amyloidosis",
+      "features": "Autonomic dysfunction, carpal tunnel, heart failure, neuropathy",
+      "tests": "Fat pad/nerve biopsy; SPEP"
+    },
+    {
+      "diagnosis": "Lymphoma/carcinomatous neuropathy",
+      "features": "Weight loss, lymphadenopathy, progressive",
+      "tests": "Imaging; CSF cytology"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "EFNS/PNS Diagnostic Criteria",
+      "evidenceLevel": "Class I",
+      "source": "Van den Bergh et al., Eur J Neurol 2021"
+    },
+    {
+      "recommendation": "IVIG effective for CIDP",
+      "evidenceLevel": "Class I, Level A",
+      "source": "ICE trial; Cochrane Reviews"
+    },
+    {
+      "recommendation": "SCIG non-inferior to IVIG",
+      "evidenceLevel": "Class I, Level A",
+      "source": "PATH trial"
+    },
+    {
+      "recommendation": "Corticosteroids effective for CIDP",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Cochrane Reviews"
+    },
+    {
+      "recommendation": "Plasma exchange effective",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Cochrane Reviews"
+    },
+    {
+      "recommendation": "IVIG, steroids, PLEX equivalent efficacy",
+      "evidenceLevel": "Class I",
+      "source": "Multiple comparative studies"
+    },
+    {
+      "recommendation": "Rituximab for anti-nodal CIDP",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Case series; expert consensus"
+    },
+    {
+      "recommendation": "Steroid-sparing agents",
+      "evidenceLevel": "Class II-III, Level C",
+      "source": "Limited controlled data"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "MRC strength grading",
+      "ED": "-",
+      "HOSP": "Daily",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "action": "Adjust immunotherapy"
+    },
+    {
+      "item": "Functional scales (INCAT, ODSS)",
+      "ED": "-",
+      "HOSP": "Weekly",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "q3 months",
+      "action": "Adjust treatment"
+    },
+    {
+      "item": "Grip strength (dynamometry)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q3 months",
+      "action": "Objective measure"
+    },
+    {
+      "item": "NCS/EMG",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q6-12 months or with change",
+      "action": "Treatment response"
+    },
+    {
+      "item": "Renal function (IVIG patients)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Before each IVIG; q3 months",
+      "action": "Hold/reduce IVIG if rising"
+    },
+    {
+      "item": "IgG trough level",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q3-6 months",
+      "action": "Adjust IVIG dose"
+    },
+    {
+      "item": "Glucose (steroid patients)",
+      "ED": "-",
+      "HOSP": "Daily",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "Per steroid use",
+      "action": "Adjust DM meds"
+    },
+    {
+      "item": "Bone density (steroid patients)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "At baseline, q1-2 years",
+      "action": "Calcium, vitamin D, bisphosphonate"
+    },
+    {
+      "item": "CBC (immunosuppression)",
+      "ED": "-",
+      "HOSP": "Weekly",
+      "OPD": "q3 months",
+      "ICU": "-",
+      "frequency": "Per agent",
+      "action": "Adjust dose"
+    },
+    {
+      "item": "Weight, BP (steroids)",
+      "ED": "-",
+      "HOSP": "Daily",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "Per steroid use",
+      "action": "Address"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Most patients; stable disease, able to ambulate, no respiratory concerns"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "New diagnosis requiring urgent workup, significant weakness (unable to walk), respiratory concerns, severe relapse"
+    },
+    {
+      "disposition": "ICU admission",
+      "criteria": "Respiratory failure (FVC <20 mL/kg, NIF <-30 cmH2O), hemodynamic instability"
+    },
+    {
+      "disposition": "Discharge from hospital",
+      "criteria": "Diagnosis established, treatment initiated, functionally stable, follow-up arranged"
+    },
+    {
+      "disposition": "Long-term monitoring",
+      "criteria": "Every 3-6 months with neuromuscular specialist; more frequent if unstable"
+    }
+  ]
+}

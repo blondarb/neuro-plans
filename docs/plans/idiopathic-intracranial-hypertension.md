@@ -1,3 +1,10 @@
+---
+title: "Idiopathic Intracranial Hypertension (IIH)"
+description: "Clinical decision support for idiopathic intracranial hypertension diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Idiopathic Intracranial Hypertension (IIH)
 
 **VERSION:** 1.0
@@ -103,57 +110,57 @@
 
 ### 3A. Weight Management (Cornerstone for Obese Patients)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Weight loss (diet/lifestyle) | - | ROUTINE | ROUTINE | - | Target 5-10% body weight loss; improves ICP | None | Weight; symptoms; visual function |
-| Bariatric surgery referral | - | - | ROUTINE | - | Consider if BMI >35 with comorbidities; effective for IIH | Per surgical criteria | Weight; ICP |
-| Nutrition/dietitian referral | - | ROUTINE | ROUTINE | - | Structured weight loss program | None | Progress |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Weight loss (diet/lifestyle) | - | - | 10% :: - :: - :: Target 5-10% body weight loss; improves ICP | None | Weight; symptoms; visual function | - | ROUTINE | ROUTINE | - |
+| Bariatric surgery referral | - | - | Consider if BMI >35 with comorbidities; effective for IIH | Per surgical criteria | Weight; ICP | - | - | ROUTINE | - |
+| Nutrition/dietitian referral | - | - | Structured weight loss program | None | Progress | - | ROUTINE | ROUTINE | - |
 
 ### 3B. First-Line Medical Therapy
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Acetazolamide (Diamox) | ROUTINE | ROUTINE | ROUTINE | - | 500 mg BID; titrate to 2-4 g/day as tolerated; IIHTT used up to 4 g/day | Sulfa allergy, severe renal/hepatic disease, hypokalemia | K+, bicarb, renal function q1-3 months; paresthesias (expected); fatigue, dysgeusia |
-| Potassium supplementation | - | ROUTINE | ROUTINE | - | 20-40 mEq daily; PRN based on K+ level | Renal failure, hyperkalemia | K+ levels |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Acetazolamide (Diamox) | PO | - | 500 mg :: PO :: BID :: 500 mg BID; titrate to 2-4 g/day as tolerated; IIHTT used up to 4 g/day | Sulfa allergy, severe renal/hepatic disease, hypokalemia | K+, bicarb, renal function q1-3 months; paresthesias (expected); fatigue, dysgeusia | ROUTINE | ROUTINE | ROUTINE | - |
+| Potassium supplementation | - | - | 20-40 mEq :: - :: daily :: 20-40 mEq daily; PRN based on K+ level | Renal failure, hyperkalemia | K+ levels | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Second-Line/Adjunctive Medical Therapy
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Topiramate | - | ROUTINE | ROUTINE | - | 25 mg BID; titrate to 50-100 mg BID; also promotes weight loss | Nephrolithiasis, glaucoma, pregnancy | Weight; cognitive effects; metabolic acidosis |
-| Furosemide (add-on) | - | ROUTINE | ROUTINE | - | 20-40 mg daily; if acetazolamide insufficient alone | Sulfa allergy (cross-reactivity uncommon), severe dehydration | K+, renal function |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Topiramate | - | - | 25 mg :: - :: BID :: 25 mg BID; titrate to 50-100 mg BID; also promotes weight loss | Nephrolithiasis, glaucoma, pregnancy | Weight; cognitive effects; metabolic acidosis | - | ROUTINE | ROUTINE | - |
+| Furosemide (add-on) | PO | - | 20-40 mg :: PO :: daily :: 20-40 mg daily; if acetazolamide insufficient alone | Sulfa allergy (cross-reactivity uncommon), severe dehydration | K+, renal function | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Headache Management
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Acetazolamide (treats underlying cause) | - | ROUTINE | ROUTINE | - | Per above | Per above | Per above |
-| Analgesics (acute) | ROUTINE | ROUTINE | ROUTINE | - | NSAIDs, acetaminophen PRN; avoid opioids | NSAID: GI/renal issues | Limit use to prevent MOH |
-| Migraine prophylaxis (if comorbid) | - | - | ROUTINE | - | Topiramate (dual benefit); beta-blockers, amitriptyline | Per medication | Per medication |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Acetazolamide (treats underlying cause) | - | - | Per above | - | Per above | Per above | - | ROUTINE | ROUTINE | - |
+| Analgesics (acute) | - | - | NSAIDs, acetaminophen PRN; avoid opioids | - | NSAID: GI/renal issues | Limit use to prevent MOH | ROUTINE | ROUTINE | ROUTINE | - |
+| Migraine prophylaxis (if comorbid) | - | - | Topiramate (dual benefit); beta-blockers, amitriptyline | - | Per medication | Per medication | - | - | ROUTINE | - |
 
 ### 3E. Therapeutic Lumbar Puncture
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Large-volume LP | URGENT | URGENT | ROUTINE | - | Remove 20-40 mL CSF; immediate symptom relief | Mass lesion, coagulopathy, infection at site | Headache, symptoms; temporary benefit |
-| Serial LPs | - | ROUTINE | ROUTINE | - | Bridge to surgery or when medical therapy insufficient | Same | Same; not long-term solution |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Large-volume LP | - | - | 20-40 mL :: - :: - :: Remove 20-40 mL CSF; immediate symptom relief | Mass lesion, coagulopathy, infection at site | Headache, symptoms; temporary benefit | URGENT | URGENT | ROUTINE | - |
+| Serial LPs | - | - | Bridge to surgery or when medical therapy insufficient | Same | Same; not long-term solution | - | ROUTINE | ROUTINE | - |
 
 ### 3F. Surgical Interventions (Vision-Threatening or Refractory)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Optic nerve sheath fenestration (ONSF) | - | URGENT | ROUTINE | - | Incision in optic nerve sheath; protects vision; does not reduce ICP | Severe optic atrophy (relative) | Visual fields, acuity post-op |
-| CSF shunting (VP or LP shunt) | - | URGENT | ROUTINE | - | Ventriculoperitoneal or lumboperitoneal shunt; reduces ICP and headache | Infection, peritoneal pathology | Shunt function; revision rate high (50%+) |
-| Venous sinus stenting | - | ROUTINE | ROUTINE | - | Stent transverse sinus stenosis; emerging therapy | No significant stenosis; venous anatomy | ICP; stent patency; headache |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Optic nerve sheath fenestration (ONSF) | - | - | Incision in optic nerve sheath; protects vision; does not reduce ICP | Severe optic atrophy (relative) | Visual fields, acuity post-op | - | URGENT | ROUTINE | - |
+| CSF shunting (VP or LP shunt) | - | - | Ventriculoperitoneal or lumboperitoneal shunt; reduces ICP and headache | Infection, peritoneal pathology | Shunt function; revision rate high (50%+) | - | URGENT | ROUTINE | - |
+| Venous sinus stenting | - | - | Stent transverse sinus stenosis; emerging therapy | No significant stenosis; venous anatomy | ICP; stent patency; headache | - | ROUTINE | ROUTINE | - |
 
 ### 3G. Fulminant IIH (Urgent Vision Loss)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| High-dose IV acetazolamide | STAT | STAT | - | - | 500 mg IV q6h initially | Per above | K+, bicarb |
-| Emergent therapeutic LP | STAT | STAT | - | - | Large-volume LP; may repeat daily | Mass lesion, coagulopathy | Symptoms, vision |
-| Urgent surgical referral | STAT | STAT | - | - | ONSF or shunt within days | Per procedure | Vision |
-| IV steroids (controversial) | STAT | STAT | - | - | Methylprednisolone 250 mg IV q6h; short-term bridge only; can worsen IIH long-term | Contraindicated for maintenance | Glucose; short-term only |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| High-dose IV acetazolamide | IV | - | 500 mg :: IV :: q6h :: 500 mg IV q6h initially | Per above | K+, bicarb | STAT | STAT | - | - |
+| Emergent therapeutic LP | - | - | Large-volume LP; may repeat daily | Mass lesion, coagulopathy | Symptoms, vision | STAT | STAT | - | - |
+| Urgent surgical referral | - | - | ONSF or shunt within days | Per procedure | Vision | STAT | STAT | - | - |
+| IV steroids (controversial) | IV | - | 250 mg :: IV :: q6h :: Methylprednisolone 250 mg IV q6h; short-term bridge only; can worsen IIH long-term | Contraindicated for maintenance | Glucose; short-term only | STAT | STAT | - | - |
 
 ---
 

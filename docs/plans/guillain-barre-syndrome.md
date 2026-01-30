@@ -1,3 +1,10 @@
+---
+title: "Guillain-Barré Syndrome (GBS)"
+description: "Clinical decision support for guillain-barré syndrome (gbs) diagnosis and management"
+version: "1.0"
+setting: "ED, HOSP, OPD, ICU"
+---
+
 # Guillain-Barré Syndrome (GBS)
 
 **VERSION:** 1.0
@@ -128,40 +135,40 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| IVIG (intravenous immunoglobulin) | - | STAT | - | STAT | 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse over 4-8h per dose; slow initial rate and increase per protocol. Start within 2 weeks of symptom onset for maximum benefit | IgA deficiency (use IgA-depleted product); acute renal failure; anaphylaxis to immunoglobulin | Vital signs q15min during first infusion, then q30min; renal function (BUN, Cr) before and during; headache (aseptic meningitis); thrombotic events; hemolysis (haptoglobin, LDH, direct Coombs if symptoms) |
-| Plasmapheresis (PLEX) | - | STAT | - | STAT | 5 exchanges over 7-14 days (typically every other day); each exchange 1-1.5 plasma volumes; use albumin replacement. Start within 4 weeks of symptom onset | Hemodynamic instability, severe sepsis, active bleeding, heparin allergy (for circuit anticoagulation), poor vascular access | BP and HR continuous during exchange; calcium (citrate toxicity: tingling, cramping); fibrinogen; CBC; electrolytes; line site infection |
-| Intubation and mechanical ventilation | STAT | STAT | - | STAT | Indications (20/30/40 rule): FVC <20 mL/kg, NIF weaker than -30 cmH2O, >30% decline in FVC from baseline, or clinical respiratory distress. Use non-depolarizing agents (avoid succinylcholine — hyperkalemia risk). RSI with rocuronium preferred | N/A (life-saving) | Ventilator settings per ICU protocol; sedation; daily spontaneous breathing trial when improving |
-| DVT prophylaxis: Enoxaparin | - | ROUTINE | - | ROUTINE | 40 mg SC daily; start on admission | Active bleeding, platelets <50K, CrCl <30 (use UFH) | Platelets q3 days; anti-Xa if renal impairment |
-| DVT prophylaxis: Heparin SC (alternative) | - | ROUTINE | - | ROUTINE | 5000 units SC q8-12h | Active bleeding, HIT | Platelets q3 days |
-| Pneumatic compression devices | STAT | STAT | - | STAT | Apply bilaterally on admission; continue until ambulatory | Acute DVT, severe PVD | Skin checks daily |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| IVIG (intravenous immunoglobulin) | IV | - | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse over 4-8h per dose; slow initial rate and increase per protocol. Start within 2 weeks of symptom onset for maximum benefit | IgA deficiency (use IgA-depleted product); acute renal failure; anaphylaxis to immunoglobulin | Vital signs q15min during first infusion, then q30min; renal function (BUN, Cr) before and during; headache (aseptic meningitis); thrombotic events; hemolysis (haptoglobin, LDH, direct Coombs if symptoms) | - | STAT | - | STAT |
+| Plasmapheresis (PLEX) | - | - | 5 exchanges over 7-14 days (typically every other day); each exchange 1-1.5 plasma volumes; use albumin replacement. Start within 4 weeks of symptom onset | Hemodynamic instability, severe sepsis, active bleeding, heparin allergy (for circuit anticoagulation), poor vascular access | BP and HR continuous during exchange; calcium (citrate toxicity: tingling, cramping); fibrinogen; CBC; electrolytes; line site infection | - | STAT | - | STAT |
+| Intubation and mechanical ventilation | - | - | 20 mL/kg :: - :: - :: Indications (20/30/40 rule): FVC <20 mL/kg, NIF weaker than -30 cmH2O, >30% decline in FVC from baseline, or clinical respiratory distress. Use non-depolarizing agents (avoid succinylcholine — hyperkalemia risk). RSI with rocuronium preferred | N/A (life-saving) | Ventilator settings per ICU protocol; sedation; daily spontaneous breathing trial when improving | STAT | STAT | - | STAT |
+| DVT prophylaxis: Enoxaparin | SC | - | 40 mg :: SC :: daily :: 40 mg SC daily; start on admission | Active bleeding, platelets <50K, CrCl <30 (use UFH) | Platelets q3 days; anti-Xa if renal impairment | - | ROUTINE | - | ROUTINE |
+| DVT prophylaxis: Heparin SC (alternative) | SC | - | 5000 units :: SC :: - :: 5000 units SC q8-12h | Active bleeding, HIT | Platelets q3 days | - | ROUTINE | - | ROUTINE |
+| Pneumatic compression devices | - | - | Apply bilaterally on admission; continue until ambulatory | Acute DVT, severe PVD | Skin checks daily | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments
 
-| Treatment | Indication | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|------------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Gabapentin | Neuropathic pain (very common in GBS — 55-89%) | - | ROUTINE | ROUTINE | ROUTINE | Start 300 mg PO qHS; increase by 300 mg/day every 1-3 days; target 900-1800 mg TID; max 3600 mg/day | Severe renal impairment (dose adjust); oversedation | Sedation, dizziness; adjust for renal function |
-| Pregabalin | Neuropathic pain (alternative) | - | ROUTINE | ROUTINE | ROUTINE | Start 75 mg PO BID; increase to 150 mg BID after 3-7 days; max 300 mg BID | Renal impairment (dose adjust) | Sedation, weight gain, peripheral edema |
-| Carbamazepine | Neuropathic pain (alternative) | - | ROUTINE | ROUTINE | - | Start 100 mg PO BID; increase by 100 mg/day q3-7 days; target 400-800 mg/day in divided doses; max 1200 mg/day | AV block, bone marrow suppression, HLA-B*1502 (Asian descent — screen before starting) | CBC, LFTs, sodium at baseline and 2-4 weeks; drug level |
-| Amitriptyline | Neuropathic pain, insomnia | - | ROUTINE | ROUTINE | - | Start 10-25 mg PO qHS; increase by 10-25 mg q1-2 weeks; max 150 mg/day | Arrhythmia, urinary retention, angle-closure glaucoma, recent MI | ECG if cardiac risk; anticholinergic side effects |
-| Acetaminophen | Musculoskeletal pain, headache | STAT | ROUTINE | ROUTINE | STAT | 650-1000 mg PO q6h; max 4g/day (2g hepatic impairment) | Severe liver disease | LFTs if prolonged |
-| Morphine IV | Severe pain unresponsive to above | - | URGENT | - | URGENT | 2-4 mg IV q3-4h PRN; use with caution — respiratory depression risk especially with respiratory compromise | Respiratory failure (relative — monitor closely), ileus | RR, SpO2, sedation scale; bowel function |
-| Oxycodone | Moderate-severe pain (if able to swallow) | - | ROUTINE | ROUTINE | - | 5-10 mg PO q4-6h PRN | Same as morphine | Same as morphine |
-| Metoclopramide | Gastroparesis, nausea (autonomic dysfunction) | - | ROUTINE | - | ROUTINE | 10 mg IV/PO q6h PRN; max 40 mg/day; limit duration to <12 weeks | Seizure history, Parkinson disease, GI obstruction | Tardive dyskinesia with prolonged use |
-| Docusate sodium | Constipation (immobility + opioids) | - | ROUTINE | ROUTINE | ROUTINE | 100 mg PO BID | GI obstruction | Bowel function |
-| Senna | Constipation | - | ROUTINE | ROUTINE | - | 8.6-17.2 mg PO qHS | GI obstruction | Bowel function |
-| Polyethylene glycol (MiraLAX) | Constipation (if docusate insufficient) | - | ROUTINE | ROUTINE | - | 17 g PO daily in 8 oz water | GI obstruction | Bowel function |
-| Melatonin | Insomnia (ICU delirium prevention) | - | ROUTINE | - | ROUTINE | 3-5 mg PO qHS | None significant | Sleep quality |
-| Lorazepam | Anxiety, autonomic crisis | - | URGENT | - | URGENT | 0.5-1 mg IV/PO q6-8h PRN | Respiratory compromise (use with extreme caution) | RR, sedation |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Gabapentin | PO | Neuropathic pain (very common in GBS — 55-89%) | 300 mg :: PO :: qHS :: Start 300 mg PO qHS; increase by 300 mg/day every 1-3 days; target 900-1800 mg TID; max 3600 mg/day | Severe renal impairment (dose adjust); oversedation | Sedation, dizziness; adjust for renal function | - | ROUTINE | ROUTINE | ROUTINE |
+| Pregabalin | PO | Neuropathic pain (alternative) | 75 mg :: PO :: BID :: Start 75 mg PO BID; increase to 150 mg BID after 3-7 days; max 300 mg BID | Renal impairment (dose adjust) | Sedation, weight gain, peripheral edema | - | ROUTINE | ROUTINE | ROUTINE |
+| Carbamazepine | PO | Neuropathic pain (alternative) | 100 mg :: PO :: BID :: Start 100 mg PO BID; increase by 100 mg/day q3-7 days; target 400-800 mg/day in divided doses; max 1200 mg/day | AV block, bone marrow suppression, HLA-B*1502 (Asian descent — screen before starting) | CBC, LFTs, sodium at baseline and 2-4 weeks; drug level | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | PO | Neuropathic pain, insomnia | 10-25 mg :: PO :: qHS :: Start 10-25 mg PO qHS; increase by 10-25 mg q1-2 weeks; max 150 mg/day | Arrhythmia, urinary retention, angle-closure glaucoma, recent MI | ECG if cardiac risk; anticholinergic side effects | - | ROUTINE | ROUTINE | - |
+| Acetaminophen | PO | Musculoskeletal pain, headache | 650-1000 mg :: PO :: q6h :: 650-1000 mg PO q6h; max 4g/day (2g hepatic impairment) | Severe liver disease | LFTs if prolonged | STAT | ROUTINE | ROUTINE | STAT |
+| Morphine IV | IV | Severe pain unresponsive to above | 2-4 mg :: IV :: PRN :: 2-4 mg IV q3-4h PRN; use with caution — respiratory depression risk especially with respiratory compromise | Respiratory failure (relative — monitor closely), ileus | RR, SpO2, sedation scale; bowel function | - | URGENT | - | URGENT |
+| Oxycodone | PO | Moderate-severe pain (if able to swallow) | 5-10 mg :: PO :: PRN :: 5-10 mg PO q4-6h PRN | Same as morphine | Same as morphine | - | ROUTINE | ROUTINE | - |
+| Metoclopramide | IV | Gastroparesis, nausea (autonomic dysfunction) | 10 mg :: IV :: q6h :: 10 mg IV/PO q6h PRN; max 40 mg/day; limit duration to <12 weeks | Seizure history, Parkinson disease, GI obstruction | Tardive dyskinesia with prolonged use | - | ROUTINE | - | ROUTINE |
+| Docusate sodium | PO | Constipation (immobility + opioids) | 100 mg :: PO :: BID :: 100 mg PO BID | GI obstruction | Bowel function | - | ROUTINE | ROUTINE | ROUTINE |
+| Senna | PO | Constipation | 8.6-17.2 mg :: PO :: qHS :: 8.6-17.2 mg PO qHS | GI obstruction | Bowel function | - | ROUTINE | ROUTINE | - |
+| Polyethylene glycol (MiraLAX) | PO | Constipation (if docusate insufficient) | 17 g :: PO :: daily :: 17 g PO daily in 8 oz water | GI obstruction | Bowel function | - | ROUTINE | ROUTINE | - |
+| Melatonin | PO | Insomnia (ICU delirium prevention) | 3-5 mg :: PO :: qHS :: 3-5 mg PO qHS | None significant | Sleep quality | - | ROUTINE | - | ROUTINE |
+| Lorazepam | IV | Anxiety, autonomic crisis | 0.5-1 mg :: IV :: PRN :: 0.5-1 mg IV/PO q6-8h PRN | Respiratory compromise (use with extreme caution) | RR, sedation | - | URGENT | - | URGENT |
 
 ### 3C. Second-line/Refractory
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Second course IVIG | - | URGENT | - | URGENT | 0.4 g/kg/day x 5 days; consider if progressive deterioration after initial treatment or treatment-related fluctuation (TRF) | Same as initial IVIG | Same as initial IVIG |
-| PLEX after IVIG failure | - | URGENT | - | URGENT | 5 exchanges over 7-14 days; wait ≥2 weeks after IVIG to avoid washing out immunoglobulin | Same as initial PLEX | Same as initial PLEX |
-| IV methylprednisolone (NOT standard of care) | - | EXT | - | EXT | 500 mg IV daily x 5 days; evidence does NOT support steroids alone; may be considered in combination with IVIG per some centers for refractory cases | Active infection, uncontrolled diabetes | Glucose, BP, GI prophylaxis |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Second course IVIG | PO | - | 0.4 g/kg :: PO :: daily x 5 days :: 0.4 g/kg/day x 5 days; consider if progressive deterioration after initial treatment or treatment-related fluctuation (TRF) | Same as initial IVIG | Same as initial IVIG | - | URGENT | - | URGENT |
+| PLEX after IVIG failure | - | - | 5 exchanges over 7-14 days; wait ≥2 weeks after IVIG to avoid washing out immunoglobulin | Same as initial PLEX | Same as initial PLEX | - | URGENT | - | URGENT |
+| IV methylprednisolone (NOT standard of care) | IV | - | 500 mg :: IV :: daily :: 500 mg IV daily x 5 days; evidence does NOT support steroids alone; may be considered in combination with IVIG per some centers for refractory cases | Active infection, uncontrolled diabetes | Glucose, BP, GI prophylaxis | - | EXT | - | EXT |
 
 ### 3D. Disease-Modifying or Chronic Therapies
 

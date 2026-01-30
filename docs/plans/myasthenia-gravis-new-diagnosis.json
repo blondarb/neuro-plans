@@ -1,0 +1,1943 @@
+{
+  "id": "myasthenia-gravis-new-diagnosis",
+  "title": "Myasthenia Gravis - New Diagnosis",
+  "version": "1.0",
+  "icd10": [
+    "** G70.0 (Myasthenia gravis)",
+    "G70.00 (MG without exacerbation)",
+    "G70.01 (MG with exacerbation)"
+  ],
+  "scope": "** Initial diagnostic workup and management of suspected or newly confirmed myasthenia gravis. Covers antibody testing, electrodiagnostic studies, thymoma screening, acute stabilization, and long-term immunotherapy initiation. For myasthenic crisis with respiratory failure, use \"Myasthenic Crisis\" template. For established MG on maintenance therapy, use \"MG - Maintenance\" template.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline before immunotherapy; infection screen",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal/hepatic function baseline; electrolytes",
+          "target": "Normal"
+        },
+        {
+          "item": "TSH",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Thyroid disease co-occurs in 10-15% of MG; autoimmune overlap",
+          "target": "Normal"
+        },
+        {
+          "item": "Free T4",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Thyroid function; Graves disease association",
+          "target": "Normal"
+        },
+        {
+          "item": "ESR",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Inflammatory/autoimmune screen",
+          "target": "Normal (<20 mm/hr)"
+        },
+        {
+          "item": "CRP",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Inflammatory marker; infection screen",
+          "target": "Normal"
+        },
+        {
+          "item": "AChR binding antibody",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Primary diagnostic test; positive in ~85% generalized MG, ~50% ocular MG",
+          "target": "Negative (<0.02 nmol/L)"
+        },
+        {
+          "item": "AChR blocking antibody",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Complements binding antibody; increases sensitivity",
+          "target": "Negative"
+        },
+        {
+          "item": "AChR modulating antibody",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Complements binding/blocking; increases sensitivity to ~95% in generalized MG",
+          "target": "Negative"
+        },
+        {
+          "item": "Blood glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Pre-steroid baseline",
+          "target": "Normal"
+        },
+        {
+          "item": "HbA1c",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Glycemic status before corticosteroid initiation",
+          "target": "<5.7%"
+        },
+        {
+          "item": "Urinalysis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection screen; baseline",
+          "target": "Negative"
+        },
+        {
+          "item": "LDH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline; monitor for hemolysis on complement inhibitors",
+          "target": "Normal"
+        },
+        {
+          "item": "Magnesium",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypomagnesemia worsens NMJ transmission",
+          "target": "Normal (1.7-2.2 mg/dL)"
+        },
+        {
+          "item": "Phosphorus",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline electrolyte panel",
+          "target": "Normal"
+        },
+        {
+          "item": "PT/INR",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulation baseline before procedures",
+          "target": "Normal"
+        },
+        {
+          "item": "Hepatitis B surface antigen",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen before rituximab/immunosuppression (reactivation risk)",
+          "target": "Negative"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "MuSK antibody (anti-MuSK IgG)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Positive in ~40% of AChR-seronegative MG; distinct phenotype (bulbar, facial, neck weakness)",
+          "target": "Negative"
+        },
+        {
+          "item": "LRP4 antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Positive in ~2-50% of double-seronegative MG; newer assay",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-striated muscle antibody (anti-SM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Associated with thymoma in MG patients <40 years; screening marker",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-titin antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Associated with thymoma (especially in young-onset MG); late-onset MG marker",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-RyR (ryanodine receptor) antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Associated with thymoma and severe MG",
+          "target": "Negative"
+        },
+        {
+          "item": "ANA",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune overlap screen (SLE, Sjogren)",
+          "target": "Negative or low titer"
+        },
+        {
+          "item": "Anti-TPO antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune thyroiditis co-occurrence (Hashimoto/Graves)",
+          "target": "Negative"
+        },
+        {
+          "item": "Vitamin D (25-OH)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Immune modulation; deficiency common",
+          "target": ">30 ng/mL"
+        },
+        {
+          "item": "Hepatitis B core antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen for prior HBV before rituximab",
+          "target": "Negative"
+        },
+        {
+          "item": "Hepatitis C antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen before immunosuppression",
+          "target": "Negative"
+        },
+        {
+          "item": "HIV",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen before immunosuppression",
+          "target": "Negative"
+        },
+        {
+          "item": "Quantitative immunoglobulins (IgG, IgA, IgM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before IVIG; monitor on rituximab/immunosuppression",
+          "target": "Normal"
+        },
+        {
+          "item": "SPEP with immunofixation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraproteinemic neuropathy/NMJ screen in atypical cases",
+          "target": "Normal"
+        },
+        {
+          "item": "Complement C3, C4",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before complement inhibitor therapy",
+          "target": "Normal"
+        },
+        {
+          "item": "Reticulocyte count",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before complement inhibitors (hemolysis monitoring)",
+          "target": "Normal"
+        },
+        {
+          "item": "Haptoglobin",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline for hemolysis monitoring on complement inhibitors",
+          "target": "Normal"
+        },
+        {
+          "item": "TB test (QuantiFERON-Gold or PPD)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen before immunosuppression",
+          "target": "Negative"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Agrin antibody",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Novel antibody target in seronegative MG",
+          "target": "Negative"
+        },
+        {
+          "item": "Cortactin antibody",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Identified in some seronegative MG",
+          "target": "Negative"
+        },
+        {
+          "item": "ColQ antibody",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Congenital myasthenic syndrome screen",
+          "target": "Negative"
+        },
+        {
+          "item": "Genetic testing (CMS gene panel)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Congenital myasthenic syndromes (CHRNE, DOK7, RAPSN, etc.) if onset <2 years or seronegative/atypical",
+          "target": "Depends on gene"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (ANNA-1, VGCC, GAD65)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "LEMS or overlap paraneoplastic syndrome",
+          "target": "Negative"
+        },
+        {
+          "item": "VGCC antibody (P/Q-type)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Lambert-Eaton myasthenic syndrome screen",
+          "target": "Negative (<0.02 nmol/L)"
+        },
+        {
+          "item": "SOX1 antibody",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Associated with SCLC in LEMS",
+          "target": "Negative"
+        },
+        {
+          "item": "Acetylcholine receptor ganglionic antibody",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autonomic neuropathy overlap",
+          "target": "Negative"
+        },
+        {
+          "item": "Muscle biopsy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Myopathy screen if diagnosis unclear",
+          "target": "Normal NMJ architecture"
+        },
+        {
+          "item": "Anti-Kv1.4 antibody",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Associated with myocarditis and severe MG phenotype (Japan)",
+          "target": "Negative"
+        },
+        {
+          "item": "CT-guided thymoma biopsy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If anterior mediastinal mass is atypical; tissue diagnosis",
+          "target": "Depends on pathology"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT chest with contrast",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Within 24-48h of diagnosis",
+          "target": "No thymoma or thymic hyperplasia",
+          "contraindications": "Contrast allergy, renal insufficiency"
+        },
+        {
+          "item": "MRI chest with contrast (preferred over CT if available)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within 1-2 weeks",
+          "target": "No thymoma; thymic hyperplasia characterization",
+          "contraindications": "Gadolinium allergy, GFR <30, pacemaker"
+        },
+        {
+          "item": "Chest X-ray (PA and lateral)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Immediate",
+          "target": "No mediastinal mass; baseline pulmonary status",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Portable chest X-ray",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If unable to go to radiology",
+          "target": "Pulmonary status; mediastinal widening",
+          "contraindications": "None significant"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Repetitive nerve stimulation (RNS)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "During workup; stop pyridostigmine 12h prior if possible",
+          "target": "Decremental response >10% at 2-3 Hz in proximal and distal muscles",
+          "contraindications": "Pacemaker (relative); recent botulinum toxin"
+        },
+        {
+          "item": "Single-fiber EMG (SFEMG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If RNS negative but clinical suspicion remains; most sensitive test (95-99%)",
+          "target": "Increased jitter and blocking",
+          "contraindications": "Same as RNS; requires experienced electromyographer"
+        },
+        {
+          "item": "Standard EMG/NCS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If diagnosis unclear; rule out neuropathy/myopathy",
+          "target": "Normal (unless concurrent condition)",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Ice pack test (ocular MG)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At bedside; apply ice to closed eyelid for 2 minutes",
+          "target": "Improvement of ptosis by ≥2 mm (sensitivity ~80% for ocular MG)",
+          "contraindications": "Patient intolerance"
+        },
+        {
+          "item": "Rest test (ocular MG)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At bedside; rest with eyes closed for 2-5 minutes",
+          "target": "Improvement of ptosis or diplopia",
+          "contraindications": "None"
+        },
+        {
+          "item": "Sleep test (ocular MG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At bedside; 30-minute nap then reassess",
+          "target": "Improvement of ptosis/diplopia after rest",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Sustained upgaze (2 minutes)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Initial exam",
+          "target": "No fatigable ptosis"
+        },
+        {
+          "item": "Repeated deltoid abduction (15-20 reps)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Initial exam",
+          "target": "No fatigable weakness"
+        },
+        {
+          "item": "Cogan lid twitch sign",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Initial exam",
+          "target": "No lid twitch"
+        },
+        {
+          "item": "Curtain sign (orbicularis oculi)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Initial exam",
+          "target": "No contralateral lid opening"
+        },
+        {
+          "item": "Peek sign",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Initial exam",
+          "target": "Sustained eye closure"
+        },
+        {
+          "item": "Forced vital capacity (FVC)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "At presentation and serially",
+          "target": ">20 mL/kg (>1.5 L)"
+        },
+        {
+          "item": "Negative inspiratory force (NIF/MIP)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "At presentation and serially",
+          "target": "More negative than -40 cm H2O"
+        }
+      ]
+    },
+    "Treatment": {
+      "Cholinesterase Inhibitors (Symptomatic)": [
+        {
+          "item": "Pyridostigmine (Mestinon) IR",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Pyridostigmine (Mestinon) IR 30 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Start 30 mg TID; increase by 30 mg per dose every 2-3 days; usual effective dose 60 mg q4-6h while awake; max 120 mg per dose (max ~960 mg/day, rarely needed)",
+            "orderSentence": "Pyridostigmine (Mestinon) IR 30 mg -"
+          },
+          "contraindications": "Mechanical GI/GU obstruction; uncontrolled asthma",
+          "monitoring": "Cholinergic side effects: diarrhea, cramping, salivation, bradycardia; cholinergic crisis if overdosed (weakness + muscarinic symptoms)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Pyridostigmine (Mestinon) SR (Timespan)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "180 mg",
+                "orderSentence": "Pyridostigmine (Mestinon) SR (Timespan) 180 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "180 mg qHS (sustained release); may give once or twice daily; do NOT crush",
+            "orderSentence": "Pyridostigmine (Mestinon) SR (Timespan) 180 mg -"
+          },
+          "contraindications": "Same as IR",
+          "monitoring": "Same; useful for nocturnal/morning weakness; erratic absorption - use sparingly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pyridostigmine liquid (60 mg/5 mL)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Same dosing as IR; useful for patients with dysphagia",
+            "orderSentence": "Pyridostigmine liquid (60 mg/5 mL) - - - see dosing"
+          },
+          "contraindications": "Same as IR",
+          "monitoring": "Same; easier to swallow",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neostigmine IV (if NPO or intubated)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-2.5 mg",
+                "orderSentence": "Neostigmine IV (if NPO or intubated) 0.5-2.5 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5-2.5 mg IV/IM q1-3h; 1 mg IV neostigmine ≈ 30 mg oral pyridostigmine",
+            "orderSentence": "Neostigmine IV (if NPO or intubated) 0.5-2.5 mg IV"
+          },
+          "contraindications": "Same; cardiac monitoring required",
+          "monitoring": "Continuous cardiac monitoring; have atropine at bedside for bradycardia",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Glycopyrrolate (for cholinergic side effects)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mg",
+                "orderSentence": "Glycopyrrolate (for cholinergic side effects) 1-2 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2 mg PO BID-TID or 0.1-0.2 mg IV PRN",
+            "orderSentence": "Glycopyrrolate (for cholinergic side effects) 1-2 mg IV"
+          },
+          "contraindications": "Narrow-angle glaucoma; obstructive uropathy",
+          "monitoring": "Does NOT cross BBB (preferred over atropine for peripheral muscarinic side effects)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Atropine (for cholinergic side effects/emergency)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-1 mg",
+                "orderSentence": "Atropine (for cholinergic side effects/emergency) 0.5-1 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5-1 mg IV PRN for symptomatic bradycardia from pyridostigmine",
+            "orderSentence": "Atropine (for cholinergic side effects/emergency) 0.5-1 mg IV"
+          },
+          "contraindications": "Tachycardia; thyrotoxicosis",
+          "monitoring": "HR monitoring; crosses BBB (may cause confusion)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pyridostigmine dose reduction/hold",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Hold or reduce if cholinergic crisis suspected (worsening weakness + excessive secretions)",
+            "orderSentence": "Pyridostigmine dose reduction/hold - - - see dosing"
+          },
+          "contraindications": "N/A",
+          "monitoring": "Distinguish cholinergic crisis (excess pyridostigmine) from myasthenic crisis (undertreated MG)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Corticosteroids (Immunosuppression - Induction)": [
+        {
+          "item": "Prednisone (gradual escalation - PREFERRED for outpatient)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg",
+                "orderSentence": "Prednisone (gradual escalation - PREFERRED for outpatient) 10-20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-20 mg daily; increase by 5-10 mg every 3-5 days to target 0.5-1 mg/kg/day (typically 40-60 mg daily); maintain 4-8 weeks then taper by 5-10 mg/month",
+            "orderSentence": "Prednisone (gradual escalation - PREFERRED for outpatient) 10-20 mg PO"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis history",
+          "monitoring": "Glucose (q6h inpatient, weekly outpatient); BP; mood/sleep; weight; bone density at baseline; GI prophylaxis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prednisone (rapid escalation - INPATIENT preferred)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40-60 mg",
+                "orderSentence": "Prednisone (rapid escalation - INPATIENT preferred) 40-60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 40-60 mg daily (0.75-1 mg/kg/day); CAUTION: may cause initial transient worsening in first 1-2 weeks",
+            "orderSentence": "Prednisone (rapid escalation - INPATIENT preferred) 40-60 mg PO"
+          },
+          "contraindications": "Same as above",
+          "monitoring": "Same; MONITOR CLOSELY for steroid-induced exacerbation; consider concurrent IVIG/PLEX for protection",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Methylprednisolone IV (pulse therapy)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone IV (pulse therapy) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily × 3-5 days; transition to oral prednisone taper",
+            "orderSentence": "Methylprednisolone IV (pulse therapy) 1000 mg IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis",
+          "monitoring": "Glucose q6h (target <180); BP; mood; cardiac monitoring; GI prophylaxis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Omeprazole (GI prophylaxis during steroids)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-40 mg",
+                "orderSentence": "Omeprazole (GI prophylaxis during steroids) 20-40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "20-40 mg daily while on steroids",
+            "orderSentence": "Omeprazole (GI prophylaxis during steroids) 20-40 mg PO"
+          },
+          "contraindications": "PPI allergy",
+          "monitoring": "None routine",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Insulin sliding scale (steroid-induced hyperglycemia)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "180 mg",
+                "orderSentence": "Insulin sliding scale (steroid-induced hyperglycemia) 180 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Per protocol if glucose >180 mg/dL",
+            "orderSentence": "Insulin sliding scale (steroid-induced hyperglycemia) 180 mg -"
+          },
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Glucose q6h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Calcium carbonate + Vitamin D (bone protection)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1200 mg",
+                "orderSentence": "Calcium carbonate + Vitamin D (bone protection) 1000-1200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 1000-1200 mg + Vitamin D 1000-2000 IU daily while on chronic steroids",
+            "orderSentence": "Calcium carbonate + Vitamin D (bone protection) 1000-1200 mg PO"
+          },
+          "contraindications": "Hypercalcemia; hyperparathyroidism",
+          "monitoring": "Serum calcium; consider DEXA if anticipated steroid course >3 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Bisphosphonate (bone protection if chronic steroids)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "70 mg",
+                "orderSentence": "Bisphosphonate (bone protection if chronic steroids) 70 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Alendronate 70 mg PO weekly OR risedronate 35 mg PO weekly; start if steroids expected >3 months",
+            "orderSentence": "Bisphosphonate (bone protection if chronic steroids) 70 mg PO"
+          },
+          "contraindications": "GFR <35; esophageal disorders; inability to remain upright 30 min",
+          "monitoring": "DEXA at baseline; renal function; dental exam (ONJ risk)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trimethoprim-sulfamethoxazole (PCP prophylaxis)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "800 mg",
+                "orderSentence": "Trimethoprim-sulfamethoxazole (PCP prophylaxis) 800 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 DS tablet (160/800 mg) daily or 3 times per week if prednisone ≥20 mg for ≥4 weeks",
+            "orderSentence": "Trimethoprim-sulfamethoxazole (PCP prophylaxis) 800 mg PO"
+          },
+          "contraindications": "Sulfonamide allergy; severe renal impairment",
+          "monitoring": "CBC; renal function; use dapsone or atovaquone if allergic",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prednisone taper",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Prednisone taper 5-10 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Once stable on target dose for 4-8 weeks: decrease by 5-10 mg every 2-4 weeks until 20 mg, then decrease by 2.5-5 mg monthly; target lowest effective dose or off",
+            "orderSentence": "Prednisone taper 5-10 mg -"
+          },
+          "contraindications": "Do NOT stop abruptly if >2 weeks of therapy",
+          "monitoring": "Adrenal insufficiency symptoms; disease flare; cortisol level if concerns",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Steroid-Sparing Immunosuppressive Agents": [
+        {
+          "item": "Mycophenolate mofetil (CellCept)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil (CellCept) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg BID; increase to 1000 mg BID after 2 weeks; target 2000-3000 mg/day in divided doses; onset 6-12 months",
+            "orderSentence": "Mycophenolate mofetil (CellCept) 500 mg PO"
+          },
+          "contraindications": "Pregnancy (Category D - teratogenic); concurrent azathioprine",
+          "monitoring": "CBC q2 weeks × 3 months, then monthly; LFTs; GI side effects (diarrhea, nausea); lymphopenia; REMS pregnancy prevention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Azathioprine (Imuran)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Azathioprine (Imuran) 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg daily; increase by 50 mg every 1-2 weeks to target 2-3 mg/kg/day (typically 150-250 mg/day); onset 6-18 months",
+            "orderSentence": "Azathioprine (Imuran) 50 mg PO"
+          },
+          "contraindications": "TPMT deficiency (check before starting); concurrent allopurinol (reduce dose by 75%); pregnancy (relative)",
+          "monitoring": "TPMT genotype/activity BEFORE starting; CBC q1-2 weeks during titration, then monthly; LFTs; amylase/lipase if abdominal pain; lymphocyte count target 600-1000",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tacrolimus (Prograf)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Tacrolimus (Prograf) 1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg BID; titrate to trough level 5-10 ng/mL; onset 3-6 months (faster than MMF/AZA)",
+            "orderSentence": "Tacrolimus (Prograf) 1 mg PO"
+          },
+          "contraindications": "Uncontrolled hypertension; renal impairment",
+          "monitoring": "Trough levels; renal function q2 weeks then monthly; electrolytes (K, Mg); glucose; BP; tremor; nephrotoxicity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cyclosporine (Sandimmune/Neoral)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-3 mg/kg",
+                "orderSentence": "Cyclosporine (Sandimmune/Neoral) 2-3 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2-3 mg/kg/day in 2 divided doses; target trough 100-150 ng/mL; onset 2-6 months",
+            "orderSentence": "Cyclosporine (Sandimmune/Neoral) 2-3 mg/kg PO"
+          },
+          "contraindications": "Uncontrolled hypertension; renal impairment; concurrent nephrotoxic drugs",
+          "monitoring": "Trough levels; renal function; BP; electrolytes (K, Mg); lipids; gingival hyperplasia; hirsutism",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methotrexate",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg",
+                "orderSentence": "Methotrexate 10-20 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "10-20 mg PO or SC once weekly with folic acid 1 mg daily (except methotrexate day); onset 6-12 months",
+            "orderSentence": "Methotrexate 10-20 mg SC"
+          },
+          "contraindications": "Pregnancy (Category X); hepatic disease; renal impairment (CrCl <30); concurrent trimethoprim",
+          "monitoring": "CBC q4 weeks; LFTs q8-12 weeks; renal function; pulmonary toxicity screen; folic acid supplementation mandatory",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Cyclophosphamide (refractory/severe)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mg",
+                "orderSentence": "Cyclophosphamide (refractory/severe) 500-1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Pulse IV: 500-1000 mg/m² monthly × 6 months; OR oral 1-2 mg/kg/day; reserved for refractory MG",
+            "orderSentence": "Cyclophosphamide (refractory/severe) 500-1000 mg IV"
+          },
+          "contraindications": "Pregnancy; active infection; bone marrow suppression",
+          "monitoring": "CBC weekly during treatment; urinalysis (hemorrhagic cystitis - MESNA with IV dosing); fertility counseling; malignancy risk",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "IVIG (maintenance immunomodulation)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 g/kg",
+                "orderSentence": "IVIG (maintenance immunomodulation) 1-2 g/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1-2 g/kg divided over 2-5 days, then 0.4-1 g/kg every 4 weeks as maintenance",
+            "orderSentence": "IVIG (maintenance immunomodulation) 1-2 g/kg PO"
+          },
+          "contraindications": "IgA deficiency (check IgA level first); recent thrombotic event; renal failure",
+          "monitoring": "Pre-infusion: IgA level, renal function, CBC; during: vital signs q15 min first hour; headache; aseptic meningitis; thrombosis risk; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Biologics, Complement Inhibitors & Rescue Therapies": [
+        {
+          "item": "Rituximab (Rituxan)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "375 mg",
+                "orderSentence": "Rituximab (Rituxan) 375 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "375 mg/m² IV weekly × 4 weeks; OR 1000 mg IV × 2 doses 14 days apart; re-dose when CD19/CD20 recover or clinical worsening; onset 3-6 months",
+            "orderSentence": "Rituximab (Rituxan) 375 mg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "Active Hepatitis B; active infection; severe immunodeficiency",
+          "monitoring": "HBV serology before; CD19/CD20 counts q3-6 months; immunoglobulins q6 months; PML risk (very rare); infusion reactions (premedicate with acetaminophen, diphenhydramine, methylprednisolone)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Eculizumab (Soliris)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "900 mg",
+                "orderSentence": "Eculizumab (Soliris) 900 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "900 mg IV weekly × 4 weeks, then 1200 mg IV at week 5, then 1200 mg IV every 2 weeks; for AChR-positive generalized MG",
+            "orderSentence": "Eculizumab (Soliris) 900 mg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "Unresolved Neisseria meningitidis infection; unvaccinated against meningococcus",
+          "monitoring": "Meningococcal vaccine ≥2 weeks before; REMS program; CBC; LDH/reticulocyte (hemolysis on discontinuation); signs of meningococcal infection; ciprofloxacin prophylaxis recommended",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ravulizumab (Ultomiris)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Weight-based loading dose IV, then maintenance every 8 weeks; for AChR-positive generalized MG",
+            "orderSentence": "Ravulizumab (Ultomiris) - IV - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "Same as eculizumab",
+          "monitoring": "Same as eculizumab; less frequent dosing advantage",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Zilucoplan (Zilbrysq)",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.3 mg/kg",
+                "orderSentence": "Zilucoplan (Zilbrysq) 0.3 mg/kg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "0.3 mg/kg SC daily (self-administered); for AChR-positive generalized MG",
+            "orderSentence": "Zilucoplan (Zilbrysq) 0.3 mg/kg SC"
+          },
+          "pretreatment": "-",
+          "contraindications": "Same as eculizumab",
+          "monitoring": "Same meningococcal vaccination required; injection site reactions; LDH; reticulocyte count",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Efgartigimod (Vyvgart)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg",
+                "orderSentence": "Efgartigimod (Vyvgart) 10 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg/kg IV weekly × 4 weeks per cycle; may repeat based on clinical response; for AChR-positive generalized MG",
+            "orderSentence": "Efgartigimod (Vyvgart) 10 mg/kg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "Active infection; concurrent IgG-dependent therapies",
+          "monitoring": "IgG levels (expect ~70% reduction); infection monitoring; no meningococcal vaccine required",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Efgartigimod/hyaluronidase SC (Vyvgart Hytrulo)",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1008 mg",
+                "orderSentence": "Efgartigimod/hyaluronidase SC (Vyvgart Hytrulo) 1008 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "1008 mg efgartigimod + 11,200 units hyaluronidase SC weekly × 4 weeks per cycle",
+            "orderSentence": "Efgartigimod/hyaluronidase SC (Vyvgart Hytrulo) 1008 mg SC"
+          },
+          "pretreatment": "-",
+          "contraindications": "Same as IV efgartigimod",
+          "monitoring": "Same; injection site reactions; self-administered option",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rozanolixizumab (Rystiggo)",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Weight-based SC weekly × 6 weeks per cycle; for AChR-positive generalized MG",
+            "orderSentence": "Rozanolixizumab (Rystiggo) - SC - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "Active infection",
+          "monitoring": "IgG levels; headache common; pyrexia; infection monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Plasmapheresis (PLEX) - rescue",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "5-7 exchanges over 10-14 days; exchange 1-1.5 plasma volumes per session",
+            "orderSentence": "Plasmapheresis (PLEX) - rescue - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "Hemodynamic instability; sepsis; line contraindication; heparin allergy",
+          "monitoring": "BP during exchange; electrolytes (Ca, K, Mg); coagulation studies; fibrinogen; line site infection; hypotension",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IVIG (rescue therapy)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g/kg",
+                "orderSentence": "IVIG (rescue therapy) 2 g/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2 g/kg divided over 2-5 days (e.g., 0.4 g/kg/day × 5 days)",
+            "orderSentence": "IVIG (rescue therapy) 2 g/kg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "IgA deficiency; renal failure; recent thrombotic event",
+          "monitoring": "Pre-infusion IgA level; renal function; vital signs; headache (aseptic meningitis); thrombosis risk",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Surgical Treatment": [
+        {
+          "item": "Thymectomy (VATS or robotic-assisted)",
+          "route": "-",
+          "indication": "AChR-positive generalized MG, age 18-65 (MGTX trial); any age with thymoma; consider in AChR-positive ocular MG with suboptimal response",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Thymectomy (VATS or robotic-assisted) - - - see dosing"
+          },
+          "contraindications": "MuSK-positive MG (no proven benefit); medically unstable; uncontrolled MG (optimize first)",
+          "monitoring": "MGTX trial: thymectomy + prednisone superior to prednisone alone at 3 years; optimize MG before surgery (FVC >2L, no bulbar crisis); post-op ICU monitoring recommended",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Thymectomy (median sternotomy)",
+          "route": "-",
+          "indication": "Thymoma requiring complete resection; invasive thymoma",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Thymectomy (median sternotomy) - - - see dosing"
+          },
+          "contraindications": "Same as above",
+          "monitoring": "More invasive; complete thymoma staging with Masaoka classification; consider neoadjuvant chemotherapy for advanced thymoma",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Extended thymectomy",
+          "route": "-",
+          "indication": "Thymoma with suspected extra-thymic extension",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Extended thymectomy - - - see dosing"
+          },
+          "contraindications": "Same as above",
+          "monitoring": "Includes removal of all anterior mediastinal fat; en bloc resection",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neuromuscular specialist/MG specialist referral",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "All new MG diagnoses for treatment planning and long-term management"
+        },
+        {
+          "item": "Thoracic surgery referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Thymoma present; AChR-positive generalized MG for thymectomy discussion"
+        },
+        {
+          "item": "Pulmonology referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "Respiratory compromise; pre-thymectomy pulmonary evaluation; chronic respiratory monitoring"
+        },
+        {
+          "item": "Speech-language pathology (swallow evaluation)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "Bulbar symptoms: dysphagia, dysarthria, nasal speech; aspiration risk"
+        },
+        {
+          "item": "Occupational therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "ADL impairment; energy conservation; adaptive equipment"
+        },
+        {
+          "item": "Physical therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "indication": "Generalized weakness; deconditioning; fall prevention; exercise prescription"
+        },
+        {
+          "item": "Ophthalmology/Neuro-ophthalmology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Ocular MG; diplopia management; prism evaluation"
+        },
+        {
+          "item": "Rheumatology referral",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Concurrent autoimmune disease (lupus, RA, thyroid disease)"
+        },
+        {
+          "item": "Endocrinology referral",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Steroid-induced diabetes; thyroid disease management; osteoporosis"
+        },
+        {
+          "item": "Psychiatry/Psychology referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Depression; anxiety; adjustment to chronic diagnosis; steroid-induced psychiatric symptoms"
+        },
+        {
+          "item": "Social work consult",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Insurance navigation (biologic cost); disability evaluation; MG support resources"
+        },
+        {
+          "item": "Respiratory therapy",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "FVC/NIF monitoring; ventilator management; BiPAP/CPAP evaluation"
+        },
+        {
+          "item": "Nutrition/Dietetics",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Dysphagia diet modification; weight management on steroids; nutritional optimization"
+        },
+        {
+          "item": "Anesthesiology consultation (pre-thymectomy)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Pre-operative assessment; avoidance of neuromuscular blocking agents; post-op ventilation planning"
+        },
+        {
+          "item": "Infusion center coordination",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "IVIG scheduling; rituximab infusion; complement inhibitor infusions"
+        },
+        {
+          "item": "Pain management referral",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "indication": "Chronic pain from sustained muscle weakness or comorbid conditions"
+        },
+        {
+          "item": "Palliative care (refractory cases)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "indication": "Severely refractory MG with significant symptom burden; goals of care discussion"
+        },
+        {
+          "item": "MG Foundation / Patient advocacy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Patient support groups; educational materials; myasthenia.org referral"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately if difficulty breathing, swallowing, or speaking",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Return to ED if new severe weakness, double vision worsening acutely, or unable to hold head up",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Take pyridostigmine 30-60 minutes BEFORE meals to help with chewing and swallowing",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Do NOT take pyridostigmine more frequently than prescribed (cholinergic crisis risk)",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Report excessive salivation, diarrhea, cramping, or muscle twitching (cholinergic side effects)",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Carry MG medical alert identification at all times",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Provide MG medication list to ALL healthcare providers (emergency, dental, surgical)",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Avoid extreme heat, hot baths/saunas (may worsen weakness)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Plan activities for times of best strength (usually morning after pyridostigmine)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Rest before meals if dysphagia present; eat smaller, more frequent meals",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Do NOT stop prednisone or immunosuppressant abruptly (adrenal crisis/flare risk)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Avoid alcohol (potentiates weakness and interacts with medications)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Report any signs of infection immediately (fever, cough, dysuria) especially if on immunosuppression",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Contact neurologist before taking any new medications (many drugs worsen MG)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Do NOT use over-the-counter magnesium-containing products without physician approval",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Keep emergency contact numbers for MG specialist readily available",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Understand the difference between myasthenic crisis and cholinergic crisis",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Monitor and report progressive difficulty climbing stairs, rising from chairs, or lifting arms above head",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "features": "Proximal weakness with improvement after exertion (facilitation); autonomic dysfunction; dry mouth; associated with SCLC; depressed reflexes that improve post-exercise",
+      "tests": "VGCC antibody (P/Q-type); incremental response on RNS at 50 Hz; CT chest for malignancy"
+    },
+    {
+      "diagnosis": "Botulism",
+      "features": "Acute onset descending paralysis; dilated/fixed pupils; recent ingestion of canned food or wound; autonomic dysfunction; no prior NMJ disease",
+      "tests": "Stool/serum botulinum toxin assay; EMG: BSAP pattern; incremental response on high-frequency RNS"
+    },
+    {
+      "diagnosis": "Congenital Myasthenic Syndromes (CMS)",
+      "features": "Childhood onset; family history; seronegative; variable inheritance patterns; specific gene mutations",
+      "tests": "Genetic testing (CMS gene panel: CHRNE, DOK7, RAPSN, CHAT, COLQ); no autoantibodies"
+    },
+    {
+      "diagnosis": "Thyroid ophthalmopathy (Graves)",
+      "features": "Proptosis; restrictive (not fatigable) diplopia; lid lag; thyroid dysfunction; MRI shows enlarged EOMs",
+      "tests": "TSH, free T4, TSI, orbital MRI showing EOM enlargement (not NMJ issue)"
+    },
+    {
+      "diagnosis": "Progressive external ophthalmoplegia (PEO)",
+      "features": "Slowly progressive bilateral ptosis and ophthalmoparesis; non-fatigable; no diurnal variation; may have pigmentary retinopathy",
+      "tests": "Muscle biopsy (ragged red fibers, COX-negative); mitochondrial DNA analysis"
+    },
+    {
+      "diagnosis": "Oculopharyngeal muscular dystrophy (OPMD)",
+      "features": "Late-onset (>40) progressive ptosis and dysphagia; autosomal dominant; no fatigability; specific ethnic prevalence (French-Canadian, Bukharan Jewish)",
+      "tests": "Genetic testing (PABPN1 gene, GCN trinucleotide repeat); CK may be mildly elevated"
+    },
+    {
+      "diagnosis": "Motor neuron disease (ALS/PBP)",
+      "features": "Progressive weakness without fatigability; fasciculations; UMN signs (hyperreflexia, Babinski); no sensory loss; bulbar onset may mimic MG",
+      "tests": "EMG/NCS: active denervation, fasciculations; normal RNS; no antibodies"
+    },
+    {
+      "diagnosis": "Inflammatory myopathy (PM/DM/IBM)",
+      "features": "Proximal weakness without fatigability; elevated CK; skin findings in DM; no ptosis/diplopia (usually); IBM with grip/quad weakness",
+      "tests": "CK; myositis antibody panel; EMG: myopathic pattern; muscle biopsy"
+    },
+    {
+      "diagnosis": "Brainstem stroke",
+      "features": "Acute onset; cranial nerve palsies without fatigability; other focal neurological signs; vascular risk factors",
+      "tests": "Brain MRI with DWI; MRA; CTA"
+    },
+    {
+      "diagnosis": "Miller Fisher syndrome (GBS variant)",
+      "features": "Acute ophthalmoplegia, ataxia, areflexia; post-infectious; no fatigability",
+      "tests": "Anti-GQ1b antibody; CSF albuminocytologic dissociation; NCS (reduced SNAPs)"
+    },
+    {
+      "diagnosis": "Myotonic dystrophy",
+      "features": "Ptosis and facial weakness; myotonia (delayed relaxation); distal > proximal weakness; cataracts; cardiac conduction abnormalities",
+      "tests": "Genetic testing (DMPK CTG repeat for DM1, CNBP CCTG repeat for DM2); EMG: myotonic discharges"
+    },
+    {
+      "diagnosis": "Chronic inflammatory demyelinating polyneuropathy (CIDP)",
+      "features": "Progressive proximal and distal weakness; hyporeflexia/areflexia; sensory involvement; elevated CSF protein",
+      "tests": "NCS: demyelinating pattern; CSF protein; nerve biopsy"
+    },
+    {
+      "diagnosis": "Sarcoidosis (neuromuscular)",
+      "features": "Granulomatous myopathy or cranial neuropathy; systemic involvement (lungs, skin, eyes); elevated ACE",
+      "tests": "ACE level; chest CT; biopsy (non-caseating granulomas); gallium scan"
+    },
+    {
+      "diagnosis": "Drug-induced MG",
+      "features": "Temporal correlation with offending drug (D-penicillamine, checkpoint inhibitors, statins); antibodies may be present",
+      "tests": "Drug history; antibody testing; improvement after drug withdrawal"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "AChR antibody testing for MG diagnosis",
+      "evidenceLevel": "Class I",
+      "source": "Gilhus NE et al. Lancet Neurol 2019"
+    },
+    {
+      "recommendation": "AChR binding + blocking + modulating antibodies increases sensitivity to ~95%",
+      "evidenceLevel": "Class II",
+      "source": "Howard JF. Clinical Overview of MG. UpToDate 2024"
+    },
+    {
+      "recommendation": "MuSK antibody testing in seronegative MG",
+      "evidenceLevel": "Class I",
+      "source": "Hoch W et al. Nat Med 2001; Evoli A et al. Brain 2003"
+    },
+    {
+      "recommendation": "LRP4 antibody in double-seronegative MG",
+      "evidenceLevel": "Class II",
+      "source": "Higuchi O et al. Ann Neurol 2011; Zisimopoulou P et al. J Neuroimmunol 2014"
+    },
+    {
+      "recommendation": "RNS: ≥10% decrement diagnostic criterion",
+      "evidenceLevel": "Class I, Level A",
+      "source": "AANEM Practice Parameter 2001; Sanders DB et al."
+    },
+    {
+      "recommendation": "SFEMG most sensitive diagnostic test (95-99%)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Sanders DB, Stålberg EV. Muscle Nerve 1996"
+    },
+    {
+      "recommendation": "Ice pack test for ocular MG (~80% sensitivity)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Cubero E et al. Neurology 2000"
+    },
+    {
+      "recommendation": "CT chest for thymoma screening in all MG patients",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Gilhus NE et al. Lancet Neurol 2019; AAN Guidelines"
+    },
+    {
+      "recommendation": "Pyridostigmine as first-line symptomatic therapy",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Mehndiratta MM et al. Cochrane 2011"
+    },
+    {
+      "recommendation": "MuSK-MG often refractory to pyridostigmine",
+      "evidenceLevel": "Class II",
+      "source": "Evoli A et al. Brain 2003; Guptill JT et al. 2011"
+    },
+    {
+      "recommendation": "Prednisone for MG immunosuppression",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Palace J et al. Cochrane 2012"
+    },
+    {
+      "recommendation": "Steroid-induced transient worsening in ~50% of MG patients",
+      "evidenceLevel": "Class II",
+      "source": "Bae JS et al. Muscle Nerve 2006"
+    },
+    {
+      "recommendation": "Mycophenolate mofetil as steroid-sparing agent",
+      "evidenceLevel": "Class I (negative RCTs but widely used)",
+      "source": "Sanders DB et al. Neurology 2008; MG Study Group (note: RCTs were short-duration)"
+    },
+    {
+      "recommendation": "Azathioprine as steroid-sparing agent",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Palace J et al. Cochrane 2012"
+    },
+    {
+      "recommendation": "TPMT testing before azathioprine",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Pharmacogenomics guidelines; FDA labeling"
+    },
+    {
+      "recommendation": "Rituximab for MuSK-positive MG",
+      "evidenceLevel": "Class II (observational)",
+      "source": "Díaz-Manera J et al. Neurology 2012; Hehir MK et al. Neurology 2017"
+    },
+    {
+      "recommendation": "Rituximab for AChR-positive refractory MG",
+      "evidenceLevel": "Class II",
+      "source": "Tandan R et al. (BeatMG trial) Lancet Neurol 2023"
+    },
+    {
+      "recommendation": "Eculizumab for AChR-positive generalized MG",
+      "evidenceLevel": "Class I (REGAIN trial)",
+      "source": "Howard JF et al. Lancet Neurol 2017"
+    },
+    {
+      "recommendation": "Ravulizumab for AChR-positive generalized MG",
+      "evidenceLevel": "Class I (CHAMPION-MG)",
+      "source": "Vu T et al. NEJM 2022"
+    },
+    {
+      "recommendation": "Zilucoplan for AChR-positive generalized MG",
+      "evidenceLevel": "Class I (RAISE trial)",
+      "source": "Howard JF et al. Lancet Neurol 2023"
+    },
+    {
+      "recommendation": "Efgartigimod for AChR-positive generalized MG",
+      "evidenceLevel": "Class I (ADAPT trial)",
+      "source": "Howard JF et al. Lancet Neurol 2021"
+    },
+    {
+      "recommendation": "Rozanolixizumab for AChR-positive generalized MG",
+      "evidenceLevel": "Class I (MycarinG trial)",
+      "source": "Bril V et al. Lancet Neurol 2023"
+    },
+    {
+      "recommendation": "IVIG for MG acute exacerbation and maintenance",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Gajdos P et al. Cochrane 2012"
+    },
+    {
+      "recommendation": "PLEX for myasthenic crisis",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Gajdos P et al. Cochrane 2012"
+    },
+    {
+      "recommendation": "IVIG equivalent to PLEX for MG exacerbation",
+      "evidenceLevel": "Class I",
+      "source": "Barth D et al. Cochrane 2011"
+    },
+    {
+      "recommendation": "Thymectomy for non-thymomatous AChR-positive MG",
+      "evidenceLevel": "Class I (MGTX trial)",
+      "source": "Wolfe GI et al. NEJM 2016"
+    },
+    {
+      "recommendation": "MGTX trial: thymectomy + prednisone superior at 3 years",
+      "evidenceLevel": "Class I",
+      "source": "Wolfe GI et al. NEJM 2016; 5-year extension data 2019"
+    },
+    {
+      "recommendation": "Medications to avoid in MG (comprehensive review)",
+      "evidenceLevel": "Class II-III",
+      "source": "Gilhus NE. NEJM 2016; Sheikh S et al. Muscle Nerve 2021"
+    },
+    {
+      "recommendation": "FVC <15 mL/kg predicts need for intubation",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Thomas CE et al. Neurology 1997"
+    },
+    {
+      "recommendation": "NIF weaker than -20 cm H2O: intubation threshold",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Thomas CE et al. Neurology 1997"
+    },
+    {
+      "recommendation": "MG-ADL as validated outcome measure",
+      "evidenceLevel": "Class I",
+      "source": "Wolfe GI et al. Neurology 1999"
+    },
+    {
+      "recommendation": "QMG score as validated outcome measure",
+      "evidenceLevel": "Class I",
+      "source": "Barohn RJ et al. Ann NY Acad Sci 1998"
+    },
+    {
+      "recommendation": "MGFA Clinical Classification system",
+      "evidenceLevel": "Consensus",
+      "source": "Jaretzki A et al. Neurology 2000"
+    },
+    {
+      "recommendation": "Meningococcal vaccination before complement inhibitors",
+      "evidenceLevel": "FDA requirement",
+      "source": "FDA REMS for eculizumab/ravulizumab/zilucoplan"
+    },
+    {
+      "recommendation": "Pregnancy management in MG",
+      "evidenceLevel": "Class II-III",
+      "source": "Norwood F et al. J Neurol Neurosurg Psychiatry 2014; Batocchi AP et al. Neurology 1999"
+    },
+    {
+      "recommendation": "Transient neonatal MG in 10-20% of births",
+      "evidenceLevel": "Class II",
+      "source": "Hoff JM et al. Eur J Neurol 2003"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Forced vital capacity (FVC)",
+      "frequency": "Q4-6h in acute; Q shift if stable",
+      "action": "If <15 mL/kg or <1 L: impending respiratory failure, prepare for intubation; ICU transfer"
+    },
+    {
+      "item": "Negative inspiratory force (NIF/MIP)",
+      "frequency": "Q4-6h in acute; Q shift if stable",
+      "action": "If weaker than -20 cm H2O: intubate; -20 to -30 = ICU monitoring"
+    },
+    {
+      "item": "Peak expiratory flow (PEF)",
+      "frequency": "Q4-6h in acute",
+      "action": "Declining PEF = weakening respiratory muscles"
+    },
+    {
+      "item": "Oxygen saturation (SpO2)",
+      "frequency": "Continuous in acute",
+      "action": "Supplemental O2; BiPAP; intubation if declining"
+    },
+    {
+      "item": "Swallow function assessment",
+      "frequency": "Daily; each meal if bulbar symptoms",
+      "action": "NPO if aspiration risk; NG tube or modified diet; SLP consult"
+    },
+    {
+      "item": "Neurologic exam (MG-specific)",
+      "frequency": "Q shift inpatient; BID in ICU",
+      "action": "If worsening: reassess pyridostigmine dose; consider IVIG/PLEX; check for cholinergic crisis"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "Q6h during IV/high-dose steroids",
+      "action": "Insulin sliding scale; endocrine consult if persistent >250"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Q shift during steroids",
+      "action": "Antihypertensives PRN"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "Q shift",
+      "action": "Infection workup if febrile (infection is leading MG crisis trigger)"
+    },
+    {
+      "item": "Electrolytes (K, Mg, Ca, Phos)",
+      "frequency": "Daily while acute",
+      "action": "Replace aggressively; hypokalemia and hypomagnesemia worsen NMJ transmission"
+    },
+    {
+      "item": "I/O and daily weight",
+      "frequency": "Daily (inpatient)",
+      "action": "Adjust fluids; diuretics if overload"
+    },
+    {
+      "item": "Cardiac monitoring",
+      "frequency": "Continuous if on neostigmine IV; during PLEX",
+      "action": "Atropine for bradycardia; PLEX can cause electrolyte-mediated arrhythmias"
+    },
+    {
+      "item": "Mood and sleep assessment",
+      "frequency": "Daily during steroids",
+      "action": "Psychiatry consult; consider dose adjustment"
+    },
+    {
+      "item": "Aspiration precautions",
+      "frequency": "Throughout admission if bulbar symptoms",
+      "action": "HOB elevated; thickened liquids; SLP-guided diet"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Mild symptoms (ocular only or mild generalized); FVC >60% predicted and stable; adequate oral intake; pyridostigmine optimized; reliable follow-up within 1-2 weeks; understands return precautions; crisis action plan reviewed"
+    },
+    {
+      "disposition": "**Admit to floor (general neurology)**",
+      "criteria": "Moderate generalized weakness; FVC 40-60% predicted and stable; dysphagia requiring diet modification but tolerating PO; new diagnosis requiring expedited workup; steroid initiation with concern for transient worsening; IVIG infusion"
+    },
+    {
+      "disposition": "**Admit to step-down/telemetry**",
+      "criteria": "FVC 30-40% predicted or declining trend; moderate bulbar symptoms; starting PLEX; significant comorbidities requiring closer monitoring; recent cholinergic vs myasthenic crisis distinction unclear"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "FVC <30% predicted or <1 L; NIF weaker than -25 cm H2O; progressive respiratory failure; impending intubation; active myasthenic crisis; severe bulbar dysfunction with aspiration; hemodynamic instability during PLEX"
+    },
+    {
+      "disposition": "**Transfer to higher level**",
+      "criteria": "PLEX needed but unavailable; neuromuscular specialist not available; ICU capability needed but not present; thymectomy needed at specialized center"
+    },
+    {
+      "disposition": "**Discharge from hospital**",
+      "criteria": "FVC >50% predicted and improving; adequate oral intake; stable on oral medications; immunotherapy plan established; outpatient follow-up scheduled within 1-2 weeks; patient and family educated on crisis recognition"
+    }
+  ]
+}

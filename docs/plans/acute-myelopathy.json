@@ -1,0 +1,1656 @@
+{
+  "id": "acute-myelopathy",
+  "title": "Acute Myelopathy Evaluation",
+  "version": "1.0",
+  "icd10": [
+    "** G95.9 (Disease of spinal cord",
+    "unspecified)",
+    "G95.89 (Other specified diseases of spinal cord)",
+    "G37.3 (Acute transverse myelitis in demyelinating disease)"
+  ],
+  "scope": "** Acute or subacute spinal cord dysfunction — broad differential approach. Covers urgent MRI, LP, and comprehensive workup to differentiate compressive (epidural abscess, tumor, disc herniation, hematoma) from non-compressive causes (inflammatory/demyelinating, vascular, infectious). Compressive myelopathy is a surgical emergency. Excludes chronic cervical spondylotic myelopathy, cauda equina syndrome (separate template), and isolated radiculopathy.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection screen (epidural abscess); baseline; leukocytosis",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP (BMP + LFTs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal/hepatic function for contrast and medication dosing; electrolytes",
+          "target": "Normal"
+        },
+        {
+          "item": "ESR",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Markedly elevated in epidural abscess (>20 in ~95%); elevated in inflammatory/autoimmune",
+          "target": "Normal; >20 raises concern for abscess/infection"
+        },
+        {
+          "item": "CRP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Elevated in infection, inflammation; useful for monitoring treatment response",
+          "target": "Normal"
+        },
+        {
+          "item": "Blood cultures x2",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "If epidural abscess or infection suspected; S. aureus most common",
+          "target": "No growth"
+        },
+        {
+          "item": "PT/INR, aPTT",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy causing epidural hematoma; pre-LP; pre-surgical assessment",
+          "target": "Normal"
+        },
+        {
+          "item": "Blood glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Diabetic risk factor for epidural abscess; baseline",
+          "target": "Normal"
+        },
+        {
+          "item": "Urinalysis",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "UTI as source for epidural abscess; baseline bladder function",
+          "target": "Normal"
+        },
+        {
+          "item": "Type and screen",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Potential surgical intervention",
+          "target": "On file"
+        },
+        {
+          "item": "Procalcitonin",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Bacterial infection differentiation",
+          "target": "<0.5 ng/mL"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "AQP4-IgG (aquaporin-4 antibody, serum) — cell-based assay",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "NMOSD — longitudinally extensive transverse myelitis (≥3 segments); affects treatment (avoid interferon-beta, fingolimod)",
+          "target": "Negative (positive = NMOSD)"
+        },
+        {
+          "item": "MOG-IgG antibody (serum) — cell-based assay",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "MOGAD — often presents as myelitis; treatment implications differ from MS and NMOSD",
+          "target": "Negative (positive = MOGAD)"
+        },
+        {
+          "item": "B12, methylmalonic acid",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Subacute combined degeneration (posterior columns + corticospinal tracts)",
+          "target": "Normal"
+        },
+        {
+          "item": "Copper and ceruloplasmin",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Copper deficiency myelopathy (mimics B12 deficiency pattern)",
+          "target": "Normal"
+        },
+        {
+          "item": "Zinc level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Zinc excess causes copper deficiency",
+          "target": "Normal"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated vacuolar myelopathy; opportunistic infections",
+          "target": "Negative"
+        },
+        {
+          "item": "HTLV-1/2 antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HTLV-associated myelopathy/tropical spastic paraparesis (HAM/TSP)",
+          "target": "Negative"
+        },
+        {
+          "item": "RPR/VDRL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Syphilitic myelitis (tabes dorsalis = posterior columns)",
+          "target": "Non-reactive"
+        },
+        {
+          "item": "ANA, dsDNA",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lupus myelitis",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-SSA (Ro), anti-SSB (La)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Sjögren syndrome myelitis",
+          "target": "Negative"
+        },
+        {
+          "item": "ACE level (serum)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosarcoidosis (spinal cord granulomas)",
+          "target": "Normal"
+        },
+        {
+          "item": "QuantiFERON-TB Gold",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Spinal TB (Pott disease, TB myelitis)",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-thyroid antibodies (TPO, thyroglobulin)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hashimoto encephalopathy/myelopathy",
+          "target": "Negative"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Paraneoplastic panel (serum) — ANNA-1, CRMP-5, amphiphysin",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Paraneoplastic myelitis (lung, breast, lymphoma); amphiphysin is classic for stiff-person / paraneoplastic myelopathy",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-GFAP antibody (serum and CSF)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "GFAP astrocytopathy — autoimmune meningoencephalomyelitis",
+          "target": "Negative"
+        },
+        {
+          "item": "Antiphospholipid antibodies (lupus anticoagulant, anticardiolipin, β2-glycoprotein I)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Spinal cord infarction from hypercoagulable state",
+          "target": "Negative"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Multiple myeloma (spinal cord compression from plasmacytoma); POEMS",
+          "target": "Normal"
+        },
+        {
+          "item": "Lyme antibody (ELISA, Western blot)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lyme myelitis (endemic areas)",
+          "target": "Negative"
+        },
+        {
+          "item": "CMV PCR (blood)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "CMV myelitis (immunocompromised)",
+          "target": "Negative"
+        },
+        {
+          "item": "VZV IgM, VZV PCR (blood)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "VZV myelitis (may follow shingles)",
+          "target": "Negative"
+        },
+        {
+          "item": "Sickle cell screen",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Spinal cord infarction in sickle cell disease",
+          "target": "Normal"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Elevated in some inflammatory conditions",
+          "target": "Normal (10-20 cm H2O)"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Pleocytosis: infection, inflammation. MS: mild. NMOSD: moderate with neutrophils. Infection: marked",
+          "target": "Variable by etiology"
+        },
+        {
+          "item": "Protein",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Elevated in GBS, infection, NMOSD, cord compression",
+          "target": "Variable"
+        },
+        {
+          "item": "Glucose with paired serum",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Low in TB, bacterial, fungal, leptomeningeal malignancy",
+          "target": "Normal in most inflammatory causes"
+        },
+        {
+          "item": "Oligoclonal bands (paired with serum)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Positive in MS (>90%); may be positive in NMOSD, sarcoidosis",
+          "target": "Positive bands in CSF only = intrathecal synthesis (MS)"
+        },
+        {
+          "item": "IgG index",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Elevated in MS and other inflammatory conditions",
+          "target": "Normal <0.7"
+        },
+        {
+          "item": "AQP4-IgG (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "NMOSD confirmation (serum is more sensitive; CSF adds specificity)",
+          "target": "Negative"
+        },
+        {
+          "item": "MOG-IgG (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "MOGAD confirmation",
+          "target": "Negative"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "GFAP, NMDAR (rare spinal involvement)",
+          "target": "Negative"
+        },
+        {
+          "item": "Cytology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Leptomeningeal carcinomatosis, lymphoma",
+          "target": "Negative"
+        },
+        {
+          "item": "Flow cytometry",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "CNS lymphoma",
+          "target": "Normal"
+        },
+        {
+          "item": "VDRL (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Neurosyphilis",
+          "target": "Non-reactive"
+        },
+        {
+          "item": "ACE level (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Neurosarcoidosis",
+          "target": "Normal"
+        },
+        {
+          "item": "HSV 1/2 PCR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "HSV myelitis (rare)",
+          "target": "Negative"
+        },
+        {
+          "item": "VZV PCR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "VZV myelitis (may follow shingles)",
+          "target": "Negative"
+        },
+        {
+          "item": "CMV PCR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "CMV myelitis (immunocompromised)",
+          "target": "Negative"
+        },
+        {
+          "item": "EBV PCR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "EBV-associated lymphoma/myelitis",
+          "target": "Negative"
+        },
+        {
+          "item": "HTLV-1 antibody (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "HAM/TSP confirmation",
+          "target": "Negative"
+        },
+        {
+          "item": "AFB smear and culture",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Spinal TB",
+          "target": "Negative"
+        },
+        {
+          "item": "Bacterial culture",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Bacterial myelitis (rare)",
+          "target": "No growth"
+        },
+        {
+          "item": "Cryptococcal antigen",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Cryptococcal myelitis (immunocompromised)",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI entire spine (cervical, thoracic, lumbar) with and without gadolinium contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT",
+          "timing": "IMMEDIATELY — within 4 hours of presentation maximum; faster if progressive deficit. Entire spine because multifocal lesions change differential (NMOSD, metastatic)",
+          "target": "Compressive: epidural mass (abscess, tumor, hematoma), disc herniation. Non-compressive: cord signal change (T2 hyperintensity), enhancement pattern, longitudinal extent, location within cord cross-section",
+          "contraindications": "GFR <30 (give contrast anyway if emergent); gadolinium allergy (premedicate); pacemaker"
+        },
+        {
+          "item": "MRI brain with and without contrast",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Within 24h (same session if possible)",
+          "target": "MS (periventricular/juxtacortical lesions), NMOSD (area postrema, hypothalamic), ADEM (multifocal white matter), metastatic disease, leptomeningeal enhancement",
+          "contraindications": "Same as spine MRI"
+        },
+        {
+          "item": "CT spine (without contrast)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "ONLY if MRI unavailable or contraindicated; far less sensitive for cord pathology",
+          "target": "Fracture, bony compression, large epidural mass, disc herniation",
+          "contraindications": "Pregnancy (relative)"
+        },
+        {
+          "item": "Chest X-ray",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Baseline; lung malignancy screening (metastatic cord compression); sarcoidosis (hilar adenopathy)",
+          "target": "Normal"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "CT chest/abdomen/pelvis with contrast",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If metastatic cord compression or sarcoidosis suspected",
+          "target": "Primary malignancy; lymphadenopathy",
+          "contraindications": "Contrast allergy, renal impairment"
+        },
+        {
+          "item": "CT angiography (CTA) of aorta",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If spinal cord infarction suspected (especially post-aortic surgery)",
+          "target": "Aortic dissection, aortic aneurysm, occlusion of artery of Adamkiewicz",
+          "contraindications": "Same as CT contrast"
+        },
+        {
+          "item": "MR angiography (MRA) of spinal vessels",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Spinal dural arteriovenous fistula (dAVF); spinal AVM",
+          "target": "Abnormal vascular flow voids; fistula identification",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "Conventional spinal angiography (DSA)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Gold standard for spinal dAVF/AVM; if MRA suggestive",
+          "target": "Fistula or AVM identification and localization for treatment",
+          "contraindications": "Contrast allergy; coagulopathy"
+        },
+        {
+          "item": "PET-CT (whole body)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Occult malignancy search",
+          "target": "Primary tumor",
+          "contraindications": "Pregnancy; uncontrolled diabetes"
+        },
+        {
+          "item": "Repeat MRI spine",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At 2-4 weeks for treatment response; earlier if clinical worsening",
+          "target": "Improving signal; resolving enhancement",
+          "contraindications": "Same as initial"
+        },
+        {
+          "item": "NCS/EMG",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If concomitant peripheral neuropathy suspected (e.g., GBS mimicking myelopathy)",
+          "target": "Peripheral nerve involvement vs pure cord",
+          "contraindications": "None significant"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Somatosensory evoked potentials (SSEPs)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Assess dorsal column function; prognosis",
+          "target": "Delayed or absent cortical potentials",
+          "contraindications": "None"
+        },
+        {
+          "item": "Motor evoked potentials (MEPs)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Corticospinal tract assessment",
+          "target": "Delayed or absent",
+          "contraindications": "Epilepsy (relative); implanted devices"
+        },
+        {
+          "item": "Spinal cord biopsy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Extremely rare; only for diagnostic uncertainty when all other testing inconclusive and progressive decline",
+          "target": "Tumor, vasculitis, infection, sarcoidosis",
+          "contraindications": "High morbidity; neurosurgical decision"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "IV methylprednisolone (empiric — inflammatory myelitis)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "IV methylprednisolone (empiric — inflammatory myelitis) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily x 3-5 days (infuse over 1-2h). Start empirically if inflammatory myelitis suspected (non-compressive cord lesion on MRI). Do NOT wait for antibody results",
+            "orderSentence": "IV methylprednisolone (empiric — inflammatory myelitis) 1000 mg IV"
+          },
+          "contraindications": "Active untreated infection (relative — treat infection concurrently if needed); uncontrolled diabetes",
+          "monitoring": "Glucose q6h; BP; GI prophylaxis (PPI); insomnia; psychosis (rare); weight; taper plan",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Emergent surgical decompression",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "For compressive myelopathy: epidural abscess, tumor with cord compression, acute disc herniation with myelopathy, epidural hematoma. Earlier decompression = better neurologic outcome. Within 24h is critical; within 12h is ideal",
+            "orderSentence": "Emergent surgical decompression - - - see dosing"
+          },
+          "contraindications": "Medically unstable for surgery (optimize first)",
+          "monitoring": "Post-op neurologic exam; wound care; DVT prophylaxis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Empiric IV antibiotics (if epidural abscess suspected)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-20 mg/kg",
+                "orderSentence": "Empiric IV antibiotics (if epidural abscess suspected) 15-20 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Vancomycin 15-20 mg/kg IV q8-12h + ceftriaxone 2g IV q12h (or cefepime 2g IV q8h). Start BEFORE surgery. S. aureus is most common organism",
+            "orderSentence": "Empiric IV antibiotics (if epidural abscess suspected) 15-20 mg/kg IV"
+          },
+          "contraindications": "See individual agents",
+          "monitoring": "Cultures; vancomycin trough; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "DVT prophylaxis: Enoxaparin",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily (start post-operatively or when not bleeding; within 24-48h)",
+            "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active bleeding; post-surgical (timing per surgeon); coagulopathy",
+          "monitoring": "Platelets q3 days",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pneumatic compression devices",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Apply bilaterally immediately — spinal cord injury patients are HIGH risk for DVT/PE",
+            "orderSentence": "Pneumatic compression devices - - - see dosing"
+          },
+          "contraindications": "Acute DVT",
+          "monitoring": "Skin checks",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Bladder management",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mL",
+                "orderSentence": "Bladder management 200 mL -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Foley catheter if urinary retention (very common in myelopathy); measure post-void residual if not catheterized; intermittent catheterization if PVR >200 mL",
+            "orderSentence": "Bladder management 200 mL -"
+          },
+          "contraindications": "N/A",
+          "monitoring": "I/O; bladder scan; transition to intermittent cath when possible",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Bowel management",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Bowel program: docusate + senna; digital stimulation if neurogenic bowel; avoid impaction",
+            "orderSentence": "Bowel management - - - see dosing"
+          },
+          "contraindications": "Bowel obstruction",
+          "monitoring": "Bowel function daily",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Second-line / Specific Treatments": [
+        {
+          "item": "Plasma exchange (PLEX)",
+          "route": "-",
+          "indication": "Steroid-refractory inflammatory myelitis; NMOSD exacerbation; severe transverse myelitis",
+          "dosing": {
+            "instructions": "5-7 exchanges over 10-14 days (every other day); 1-1.5 plasma volumes per exchange",
+            "orderSentence": "Plasma exchange (PLEX) - - - see dosing"
+          },
+          "contraindications": "Hemodynamic instability; sepsis",
+          "monitoring": "BP; electrolytes; Ca2+; fibrinogen",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "IVIG",
+          "route": "-",
+          "indication": "Alternative to PLEX if PLEX unavailable; MOGAD (may be preferred); steroid-refractory",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIG 0.4 g/kg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "0.4 g/kg/day x 5 days (total 2 g/kg)",
+            "orderSentence": "IVIG 0.4 g/kg -"
+          },
+          "contraindications": "IgA deficiency; renal failure",
+          "monitoring": "Renal function; headache; thrombosis",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Oral prednisone taper (after IV pulse)",
+          "route": "IV",
+          "indication": "Inflammatory myelitis; NMOSD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg/kg",
+                "orderSentence": "Oral prednisone taper (after IV pulse) 1 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 mg/kg/day (max 60-80 mg) tapered over 4-8 weeks for first episode; longer taper for NMOSD/MOGAD",
+            "orderSentence": "Oral prednisone taper (after IV pulse) 1 mg/kg PO"
+          },
+          "contraindications": "See steroid contraindications",
+          "monitoring": "Glucose; BP; bone health",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain, spasticity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "300 mg PO qHS → titrate to 900-1800 mg TID",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment",
+          "monitoring": "Sedation; dizziness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Spasticity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mg PO TID; increase by 5 mg/dose q3 days; max 80 mg/day",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Seizure history (lowers threshold); abrupt withdrawal causes seizures",
+          "monitoring": "Sedation; falls; do NOT stop abruptly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tizanidine",
+          "route": "PO",
+          "indication": "Spasticity (alternative)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2 mg PO TID; max 36 mg/day",
+            "orderSentence": "Tizanidine 2 mg PO"
+          },
+          "contraindications": "Hepatic impairment; concurrent CYP1A2 inhibitors (ciprofloxacin)",
+          "monitoring": "LFTs; sedation; hypotension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxybutynin",
+          "route": "PO",
+          "indication": "Neurogenic bladder (overactive)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Oxybutynin 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mg PO BID-TID",
+            "orderSentence": "Oxybutynin 5 mg PO"
+          },
+          "contraindications": "Urinary retention; angle-closure glaucoma",
+          "monitoring": "Anticholinergic side effects; PVR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO q6h; max 4g/day",
+            "orderSentence": "Acetaminophen 650-1000 mg PO"
+          },
+          "contraindications": "Hepatic disease",
+          "monitoring": "LFTs",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Disease-Modifying Therapy (Once Diagnosis Established)": [
+        {
+          "item": "MS disease-modifying therapy",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Per MS-specific template; high-efficacy preferred if myelitis presentation",
+            "orderSentence": "MS disease-modifying therapy - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "Per agent",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Rituximab",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "375 mg/m2",
+                "orderSentence": "Rituximab 375 mg/m2 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "375 mg/m2 weekly x 4 weeks OR 1000 mg x 2 (14 days apart); maintenance q6 months",
+            "orderSentence": "Rituximab 375 mg/m2 PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "CD19/20; immunoglobulins; infection",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Eculizumab",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "900 mg",
+                "orderSentence": "Eculizumab 900 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "900 mg IV weekly x 4 → 1200 mg q2 weeks",
+            "orderSentence": "Eculizumab 900 mg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "Meningococcal vaccination (≥2 weeks before); complement levels; infection",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Inebilizumab",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Inebilizumab 300 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "300 mg IV x 2 (14 days apart); then 300 mg q6 months",
+            "orderSentence": "Inebilizumab 300 mg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "CD19; infection",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Satralizumab",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "120 mg",
+                "orderSentence": "Satralizumab 120 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "120 mg SC at weeks 0, 2, 4, then q4 weeks",
+            "orderSentence": "Satralizumab 120 mg SC"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "LFTs; infection",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Azathioprine",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-3 mg/kg",
+                "orderSentence": "Azathioprine 2-3 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2-3 mg/kg/day PO",
+            "orderSentence": "Azathioprine 2-3 mg/kg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "TPMT genotype; CBC weekly x 4, then biweekly, then monthly; LFTs",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Mycophenolate mofetil",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1500 mg",
+                "orderSentence": "Mycophenolate mofetil 1000-1500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000-1500 mg PO BID",
+            "orderSentence": "Mycophenolate mofetil 1000-1500 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "CBC; LFTs; pregnancy test (teratogenic)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-TB therapy",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "RIPE x 12-18 months",
+            "orderSentence": "Anti-TB therapy - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "LFTs; visual acuity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "IV penicillin G",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "18-24 MU/day IV x 14 days",
+            "orderSentence": "IV penicillin G - IV - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "RPR q3-6 months",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Radiation + surgery + steroids",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Radiation + surgery + steroids 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Per oncology; dexamethasone 10 mg IV load → 4 mg IV q6h while radiation planned",
+            "orderSentence": "Radiation + surgery + steroids 10 mg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "Glucose; GI prophylaxis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology (neuro-immunology if available)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT",
+          "indication": "All myelopathy; diagnostic workup direction; immunotherapy decisions"
+        },
+        {
+          "item": "Neurosurgery",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "Compressive myelopathy (abscess, tumor, hematoma, disc); surgical timing critical"
+        },
+        {
+          "item": "Spine surgery (orthopedic)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "Alternative for compressive causes where neurosurgery unavailable"
+        },
+        {
+          "item": "Radiation oncology",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "indication": "Metastatic cord compression; radiation planning"
+        },
+        {
+          "item": "Oncology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Newly diagnosed malignancy; systemic treatment"
+        },
+        {
+          "item": "Infectious disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Epidural abscess management; TB; HIV; unusual infections"
+        },
+        {
+          "item": "Urology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Neurogenic bladder management; intermittent catheterization training; urodynamics"
+        },
+        {
+          "item": "Physical therapy (PT)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "Mobility assessment; strengthening; gait training; transfer training; wheelchair assessment"
+        },
+        {
+          "item": "Occupational therapy (OT)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "ADL assessment; hand function; adaptive equipment; home modifications"
+        },
+        {
+          "item": "Rehabilitation medicine (physiatry)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Rehabilitation planning; SCI rehabilitation protocols; disposition"
+        },
+        {
+          "item": "Speech-language pathology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "If cervical myelopathy affecting swallowing"
+        },
+        {
+          "item": "Respiratory therapy",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "If cervical myelopathy affecting respiratory muscles; FVC monitoring"
+        },
+        {
+          "item": "Social work",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Discharge planning; DME; caregiver support; disability"
+        },
+        {
+          "item": "Psychology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Adjustment disorder; depression; coping with disability"
+        },
+        {
+          "item": "Pain management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Neuropathic pain refractory to standard agents"
+        },
+        {
+          "item": "Wound care (if pressure injury)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "indication": "Immobile patients at high risk for pressure ulcers"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately if: new weakness, worsening numbness, loss of bowel/bladder function, inability to walk, difficulty breathing",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Spinal cord injury can improve with treatment — recovery varies by cause (inflammatory often recovers well; vascular and compressive recovery depends on timing)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Bladder management is critical: perform intermittent catheterization as instructed; report urinary retention or incontinence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Bowel program compliance: maintain regular schedule; adequate fiber and fluids",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Skin checks daily: pressure injury prevention (reposition every 2h if immobile; use pressure-relieving mattress)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Physical therapy exercises between sessions as instructed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT drive until cleared by neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow-up with neurology in 1-2 weeks; repeat MRI at 2-4 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Pressure injury prevention (positioning, specialized mattress, skin checks)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Fall prevention (assistive devices, home modifications)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "DVT prevention (compression stockings long-term; anticoagulation per protocol)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Autonomic dysreflexia awareness (if thoracic/cervical injury: sudden hypertension, headache, flushing above level — emergency)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Bladder health (adequate fluid intake; catheterization technique; UTI prevention)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Mental health support (spinal cord injury carries high depression/anxiety rates)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Vaccination (if starting immunosuppression: complete vaccines before rituximab/eculizumab)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Epidural abscess",
+      "features": "Back pain + fever + neurologic deficit (triad in 10-15%); IVDU, diabetes, spinal procedure risk factors; ESR/CRP very elevated",
+      "tests": "MRI with contrast (ring-enhancing epidural collection); blood cultures; ESR >20"
+    },
+    {
+      "diagnosis": "Metastatic cord compression",
+      "features": "Known malignancy; progressive back pain (often worse at night); bony destruction",
+      "tests": "MRI (enhancing epidural mass with bony changes); CT body for primary; PET-CT"
+    },
+    {
+      "diagnosis": "Disc herniation (acute)",
+      "features": "Sudden onset; radiculopathy predominant initially; may progress to myelopathy",
+      "tests": "MRI (disc protrusion with cord compression)"
+    },
+    {
+      "diagnosis": "Epidural hematoma",
+      "features": "Anticoagulation; post-procedure; coagulopathy; sudden onset",
+      "tests": "MRI (epidural collection; T1 signal depends on age of blood); coagulation panel"
+    },
+    {
+      "diagnosis": "Transverse myelitis (idiopathic)",
+      "features": "Non-compressive; T2 cord signal change; may be partial or complete; often thoracic",
+      "tests": "MRI (T2 hyperintensity <3 segments); LP (pleocytosis); diagnose after excluding MS, NMOSD, MOGAD"
+    },
+    {
+      "diagnosis": "MS (spinal cord relapse)",
+      "features": "Partial myelitis (<3 segments); brain lesions present; prior episodes; young adult",
+      "tests": "MRI brain (periventricular/juxtacortical lesions); oligoclonal bands; short segment cord lesion"
+    },
+    {
+      "diagnosis": "NMOSD",
+      "features": "Longitudinally extensive transverse myelitis (LETM ≥3 segments); severe; often central cord/gray matter",
+      "tests": "AQP4-IgG antibody; MRI (LETM, central cord pattern); brain MRI (area postrema lesion)"
+    },
+    {
+      "diagnosis": "MOGAD",
+      "features": "LETM possible; conus/lower cord predilection; may have bilateral optic neuritis",
+      "tests": "MOG-IgG antibody; MRI pattern; generally better recovery than NMOSD"
+    },
+    {
+      "diagnosis": "Spinal cord infarction",
+      "features": "Hyperacute onset (minutes); anterior spinal artery syndrome (motor + pain/temperature loss, preserved proprioception/vibration); often thoracolumbar",
+      "tests": "MRI DWI (restricted diffusion, \"owl eye\" or pencil-like on axial); CTA aorta; vascular risk factors"
+    },
+    {
+      "diagnosis": "Spinal dural AV fistula",
+      "features": "Older male; progressive myelopathy with flow voids on MRI; dorsal cord; edema disproportionate to enhancement",
+      "tests": "MRI (flow voids, dorsal cord edema, enhancement); spinal angiography (gold standard)"
+    },
+    {
+      "diagnosis": "GBS (axonal variant)",
+      "features": "Ascending weakness; areflexia; may mimic acute myelopathy if rapidly progressive; CSF albuminocytologic dissociation",
+      "tests": "NCS/EMG; LP (elevated protein, normal cells); no cord signal on MRI"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis",
+      "features": "Dorsal subpial enhancement; trident sign; may have pulmonary sarcoidosis",
+      "tests": "Chest CT; ACE level; biopsy; characteristic MRI pattern"
+    },
+    {
+      "diagnosis": "Spinal TB (Pott disease)",
+      "features": "Endemic area; systemic TB; vertebral body destruction with epidural abscess; gibbus deformity",
+      "tests": "MRI; AFB culture; TB PCR; QuantiFERON; chest X-ray"
+    },
+    {
+      "diagnosis": "Neuromyelitis optica spectrum disorder — See NMOSD above",
+      "features": "",
+      "tests": ""
+    },
+    {
+      "diagnosis": "Syphilitic myelitis (tabes dorsalis)",
+      "features": "Posterior column dysfunction (proprioception, vibration loss); lightning pains; Argyll Robertson pupils",
+      "tests": "CSF VDRL; RPR; FTA-ABS"
+    },
+    {
+      "diagnosis": "Copper deficiency myelopathy",
+      "features": "Posterior column + corticospinal tract (mimics B12 deficiency); gastric surgery, zinc excess",
+      "tests": "Serum copper and ceruloplasmin; zinc level"
+    },
+    {
+      "diagnosis": "Radiation myelopathy",
+      "features": "History of radiation; months to years after treatment; progressive; no enhancement (chronic)",
+      "tests": "Radiation history; MRI (cord atrophy, signal change within radiation field)"
+    },
+    {
+      "diagnosis": "Functional neurological disorder",
+      "features": "Non-anatomic sensory loss; Hoover sign; give-way weakness; normal MRI",
+      "tests": "Normal MRI; normal LP; clinical exam findings"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "STAT MRI entire spine for acute myelopathy",
+      "evidenceLevel": "Class I, Level B",
+      "source": "AAN Practice Guideline; Transverse Myelitis Consortium Working Group (2002)"
+    },
+    {
+      "recommendation": "IV methylprednisolone 1g/day x 3-5 days for inflammatory myelitis",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Consensus; extrapolated from MS relapse data (ONTT) and TM studies"
+    },
+    {
+      "recommendation": "PLEX for steroid-refractory inflammatory myelitis",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Weinshenker et al. (Ann Neurol 1999); superior to sham in severe demyelinating attacks"
+    },
+    {
+      "recommendation": "AQP4-IgG (cell-based assay) for NMOSD diagnosis",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Wingerchuk et al. IPND 2015 criteria"
+    },
+    {
+      "recommendation": "MOG-IgG for MOGAD diagnosis",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Banwell et al. (Lancet Neurol 2023)"
+    },
+    {
+      "recommendation": "Surgical decompression within 24h for compressive myelopathy",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Fehlings et al. (2012); earlier surgery = better outcomes"
+    },
+    {
+      "recommendation": "Epidural abscess: antibiotics + surgical drainage",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Darouiche et al. (NEJM 2006)"
+    },
+    {
+      "recommendation": "B12 replacement for subacute combined degeneration",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Well-established; early treatment may be reversible"
+    },
+    {
+      "recommendation": "Rituximab for NMOSD prevention",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple trials; standard of care"
+    },
+    {
+      "recommendation": "Eculizumab for NMOSD prevention",
+      "evidenceLevel": "Class I, Level A",
+      "source": "PREVENT trial (Pittock et al. NEJM 2019)"
+    },
+    {
+      "recommendation": "AQP4-IgG-positive NMOSD: avoid interferon-beta and fingolimod",
+      "evidenceLevel": "Class III (Harm)",
+      "source": "Case reports of worsening"
+    },
+    {
+      "recommendation": "LP after MRI (not before) in acute myelopathy",
+      "evidenceLevel": "Class I, Level C",
+      "source": "Risk of seeding infection through abscess; need anatomic diagnosis first"
+    },
+    {
+      "recommendation": "Bladder management with intermittent catheterization",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Spinal cord injury guidelines; prevents UTI better than indwelling catheter"
+    },
+    {
+      "recommendation": "DVT prophylaxis in acute myelopathy",
+      "evidenceLevel": "Class I, Level A",
+      "source": "High thrombotic risk in immobilized SCI patients"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (strength, sensory level, reflexes, rectal tone)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q4h x 48h, then q8h; sensory level marking on skin for tracking",
+      "action": "If ascending level or worsening motor: STAT repeat MRI; neurosurgery if compressive"
+    },
+    {
+      "item": "Bladder function (PVR, I/O)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "PVR with each void initially; I/O daily",
+      "action": "If PVR >200: intermittent catheterization; Foley if >500 or unable to cath"
+    },
+    {
+      "item": "Respiratory function (FVC, NIF) — cervical myelopathy",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q4-6h if cervical; q2h if declining",
+      "action": "If FVC <20: ICU; prepare for intubation"
+    },
+    {
+      "item": "Blood pressure / autonomic function",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q4h; orthostatic vitals when mobilizing",
+      "action": "Volume; midodrine; compression stockings; if hypertensive crisis above level → autonomic dysreflexia → find and remove stimulus (distended bladder, bowel impaction)"
+    },
+    {
+      "item": "Temperature",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q4h",
+      "action": "If febrile: infection workup; wound check; UTI screen"
+    },
+    {
+      "item": "Skin assessment (pressure areas)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "q shift; at every reposition",
+      "action": "Pressure relief; wound care; specialty mattress"
+    },
+    {
+      "item": "ESR / CRP (if infection)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q48-72h during treatment",
+      "action": "If not improving: reassess antibiotic coverage; repeat imaging"
+    },
+    {
+      "item": "Post-void residual (PVR)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "With each void initially; daily once stable",
+      "action": "Intermittent catheterization protocol"
+    },
+    {
+      "item": "MRI response",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "At 2-4 weeks; 3-6 months; or sooner if worsening",
+      "action": "Adjust treatment; consider PLEX/escalation"
+    },
+    {
+      "item": "AQP4/MOG antibody titers (if positive)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "At 3-6 months, then annually",
+      "action": "If rising with clinical worsening: relapse; adjust DMT"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Mild myelopathy; stable or improving; ambulatory; independent bladder function; adequate outpatient follow-up; MRI and workup complete or schedulable outpatient"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Non-compressive myelopathy requiring IV steroids; moderate deficits; bladder dysfunction requiring catheterization; incomplete workup"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Cervical myelopathy with respiratory compromise; post-surgical; ascending myelopathy; autonomic instability"
+    },
+    {
+      "disposition": "Emergent surgery",
+      "criteria": "Compressive myelopathy: epidural abscess, acute cord compression from tumor/hematoma/disc with neurologic deficit"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Need for neurosurgery not available; need for PLEX; MRI not available STAT; spinal cord injury center"
+    },
+    {
+      "disposition": "Inpatient rehabilitation (SCI rehab)",
+      "criteria": "Significant motor deficits; paraparesis/paraplegia; wheelchair-dependent; bladder/bowel dysfunction; able to participate in 3h/day therapy"
+    },
+    {
+      "disposition": "Skilled nursing facility",
+      "criteria": "Unable to tolerate intensive rehab; requires skilled nursing; ongoing IV antibiotics"
+    }
+  ]
+}

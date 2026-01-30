@@ -1,3 +1,10 @@
+---
+title: "Acute Myelopathy Evaluation"
+description: "Clinical decision support for acute myelopathy evaluation diagnosis and management"
+version: "1.0"
+setting: "ED, HOSP, OPD, ICU"
+---
+
 # Acute Myelopathy Evaluation
 
 **VERSION:** 1.0
@@ -143,43 +150,43 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| IV methylprednisolone (empiric — inflammatory myelitis) | - | STAT | - | STAT | 1000 mg IV daily x 3-5 days (infuse over 1-2h). Start empirically if inflammatory myelitis suspected (non-compressive cord lesion on MRI). Do NOT wait for antibody results | Active untreated infection (relative — treat infection concurrently if needed); uncontrolled diabetes | Glucose q6h; BP; GI prophylaxis (PPI); insomnia; psychosis (rare); weight; taper plan |
-| Emergent surgical decompression | STAT | STAT | - | STAT | For compressive myelopathy: epidural abscess, tumor with cord compression, acute disc herniation with myelopathy, epidural hematoma. Earlier decompression = better neurologic outcome. Within 24h is critical; within 12h is ideal | Medically unstable for surgery (optimize first) | Post-op neurologic exam; wound care; DVT prophylaxis |
-| Empiric IV antibiotics (if epidural abscess suspected) | STAT | STAT | - | STAT | Vancomycin 15-20 mg/kg IV q8-12h + ceftriaxone 2g IV q12h (or cefepime 2g IV q8h). Start BEFORE surgery. S. aureus is most common organism | See individual agents | Cultures; vancomycin trough; renal function |
-| DVT prophylaxis: Enoxaparin | - | ROUTINE | - | ROUTINE | 40 mg SC daily (start post-operatively or when not bleeding; within 24-48h) | Active bleeding; post-surgical (timing per surgeon); coagulopathy | Platelets q3 days |
-| Pneumatic compression devices | STAT | STAT | - | STAT | Apply bilaterally immediately — spinal cord injury patients are HIGH risk for DVT/PE | Acute DVT | Skin checks |
-| Bladder management | STAT | STAT | - | STAT | Foley catheter if urinary retention (very common in myelopathy); measure post-void residual if not catheterized; intermittent catheterization if PVR >200 mL | N/A | I/O; bladder scan; transition to intermittent cath when possible |
-| Bowel management | - | ROUTINE | - | ROUTINE | Bowel program: docusate + senna; digital stimulation if neurogenic bowel; avoid impaction | Bowel obstruction | Bowel function daily |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| IV methylprednisolone (empiric — inflammatory myelitis) | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily x 3-5 days (infuse over 1-2h). Start empirically if inflammatory myelitis suspected (non-compressive cord lesion on MRI). Do NOT wait for antibody results | Active untreated infection (relative — treat infection concurrently if needed); uncontrolled diabetes | Glucose q6h; BP; GI prophylaxis (PPI); insomnia; psychosis (rare); weight; taper plan | - | STAT | - | STAT |
+| Emergent surgical decompression | - | - | For compressive myelopathy: epidural abscess, tumor with cord compression, acute disc herniation with myelopathy, epidural hematoma. Earlier decompression = better neurologic outcome. Within 24h is critical; within 12h is ideal | Medically unstable for surgery (optimize first) | Post-op neurologic exam; wound care; DVT prophylaxis | STAT | STAT | - | STAT |
+| Empiric IV antibiotics (if epidural abscess suspected) | IV | - | 15-20 mg/kg :: IV :: q12h :: Vancomycin 15-20 mg/kg IV q8-12h + ceftriaxone 2g IV q12h (or cefepime 2g IV q8h). Start BEFORE surgery. S. aureus is most common organism | See individual agents | Cultures; vancomycin trough; renal function | STAT | STAT | - | STAT |
+| DVT prophylaxis: Enoxaparin | SC | - | 40 mg :: SC :: daily :: 40 mg SC daily (start post-operatively or when not bleeding; within 24-48h) | Active bleeding; post-surgical (timing per surgeon); coagulopathy | Platelets q3 days | - | ROUTINE | - | ROUTINE |
+| Pneumatic compression devices | - | - | Apply bilaterally immediately — spinal cord injury patients are HIGH risk for DVT/PE | Acute DVT | Skin checks | STAT | STAT | - | STAT |
+| Bladder management | - | - | 200 mL :: - :: - :: Foley catheter if urinary retention (very common in myelopathy); measure post-void residual if not catheterized; intermittent catheterization if PVR >200 mL | N/A | I/O; bladder scan; transition to intermittent cath when possible | STAT | STAT | - | STAT |
+| Bowel management | - | - | Bowel program: docusate + senna; digital stimulation if neurogenic bowel; avoid impaction | Bowel obstruction | Bowel function daily | - | ROUTINE | - | ROUTINE |
 
 ### 3B. Second-line / Specific Treatments
 
-| Treatment | Indication | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|------------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Plasma exchange (PLEX) | Steroid-refractory inflammatory myelitis; NMOSD exacerbation; severe transverse myelitis | - | URGENT | - | URGENT | 5-7 exchanges over 10-14 days (every other day); 1-1.5 plasma volumes per exchange | Hemodynamic instability; sepsis | BP; electrolytes; Ca2+; fibrinogen |
-| IVIG | Alternative to PLEX if PLEX unavailable; MOGAD (may be preferred); steroid-refractory | - | URGENT | - | URGENT | 0.4 g/kg/day x 5 days (total 2 g/kg) | IgA deficiency; renal failure | Renal function; headache; thrombosis |
-| Oral prednisone taper (after IV pulse) | Inflammatory myelitis; NMOSD | - | ROUTINE | ROUTINE | - | 1 mg/kg/day (max 60-80 mg) tapered over 4-8 weeks for first episode; longer taper for NMOSD/MOGAD | See steroid contraindications | Glucose; BP; bone health |
-| Gabapentin | Neuropathic pain, spasticity | - | ROUTINE | ROUTINE | ROUTINE | 300 mg PO qHS → titrate to 900-1800 mg TID | Severe renal impairment | Sedation; dizziness |
-| Baclofen | Spasticity | - | ROUTINE | ROUTINE | - | 5 mg PO TID; increase by 5 mg/dose q3 days; max 80 mg/day | Seizure history (lowers threshold); abrupt withdrawal causes seizures | Sedation; falls; do NOT stop abruptly |
-| Tizanidine | Spasticity (alternative) | - | ROUTINE | ROUTINE | - | 2 mg PO TID; max 36 mg/day | Hepatic impairment; concurrent CYP1A2 inhibitors (ciprofloxacin) | LFTs; sedation; hypotension |
-| Oxybutynin | Neurogenic bladder (overactive) | - | ROUTINE | ROUTINE | - | 5 mg PO BID-TID | Urinary retention; angle-closure glaucoma | Anticholinergic side effects; PVR |
-| Acetaminophen | Pain | STAT | ROUTINE | ROUTINE | STAT | 650-1000 mg PO q6h; max 4g/day | Hepatic disease | LFTs |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Plasma exchange (PLEX) | - | Steroid-refractory inflammatory myelitis; NMOSD exacerbation; severe transverse myelitis | 5-7 exchanges over 10-14 days (every other day); 1-1.5 plasma volumes per exchange | Hemodynamic instability; sepsis | BP; electrolytes; Ca2+; fibrinogen | - | URGENT | - | URGENT |
+| IVIG | - | Alternative to PLEX if PLEX unavailable; MOGAD (may be preferred); steroid-refractory | 0.4 g/kg :: - :: daily x 5 days :: 0.4 g/kg/day x 5 days (total 2 g/kg) | IgA deficiency; renal failure | Renal function; headache; thrombosis | - | URGENT | - | URGENT |
+| Oral prednisone taper (after IV pulse) | IV | Inflammatory myelitis; NMOSD | 1 mg/kg :: PO :: - :: 1 mg/kg/day (max 60-80 mg) tapered over 4-8 weeks for first episode; longer taper for NMOSD/MOGAD | See steroid contraindications | Glucose; BP; bone health | - | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | Neuropathic pain, spasticity | 300 mg :: PO :: qHS :: 300 mg PO qHS → titrate to 900-1800 mg TID | Severe renal impairment | Sedation; dizziness | - | ROUTINE | ROUTINE | ROUTINE |
+| Baclofen | PO | Spasticity | 5 mg :: PO :: TID :: 5 mg PO TID; increase by 5 mg/dose q3 days; max 80 mg/day | Seizure history (lowers threshold); abrupt withdrawal causes seizures | Sedation; falls; do NOT stop abruptly | - | ROUTINE | ROUTINE | - |
+| Tizanidine | PO | Spasticity (alternative) | 2 mg :: PO :: TID :: 2 mg PO TID; max 36 mg/day | Hepatic impairment; concurrent CYP1A2 inhibitors (ciprofloxacin) | LFTs; sedation; hypotension | - | ROUTINE | ROUTINE | - |
+| Oxybutynin | PO | Neurogenic bladder (overactive) | 5 mg :: PO :: BID :: 5 mg PO BID-TID | Urinary retention; angle-closure glaucoma | Anticholinergic side effects; PVR | - | ROUTINE | ROUTINE | - |
+| Acetaminophen | PO | Pain | 650-1000 mg :: PO :: q6h :: 650-1000 mg PO q6h; max 4g/day | Hepatic disease | LFTs | STAT | ROUTINE | ROUTINE | STAT |
 
 ### 3C. Disease-Modifying Therapy (Once Diagnosis Established)
 
-| Treatment | Diagnosis | Dosing | Monitoring |
-|-----------|-----------|--------|------------|
-| MS disease-modifying therapy | MS (see MS template) | Per MS-specific template; high-efficacy preferred if myelitis presentation | Per agent |
-| Rituximab | NMOSD (AQP4+); MOGAD (relapsing) | 375 mg/m2 weekly x 4 weeks OR 1000 mg x 2 (14 days apart); maintenance q6 months | CD19/20; immunoglobulins; infection |
-| Eculizumab | NMOSD (AQP4+) | 900 mg IV weekly x 4 → 1200 mg q2 weeks | Meningococcal vaccination (≥2 weeks before); complement levels; infection |
-| Inebilizumab | NMOSD (AQP4+) | 300 mg IV x 2 (14 days apart); then 300 mg q6 months | CD19; infection |
-| Satralizumab | NMOSD (AQP4+) | 120 mg SC at weeks 0, 2, 4, then q4 weeks | LFTs; infection |
-| Azathioprine | NMOSD (cost-effective alternative); neurosarcoidosis | 2-3 mg/kg/day PO | TPMT genotype; CBC weekly x 4, then biweekly, then monthly; LFTs |
-| Mycophenolate mofetil | NMOSD alternative; neurosarcoidosis | 1000-1500 mg PO BID | CBC; LFTs; pregnancy test (teratogenic) |
-| Anti-TB therapy | Spinal tuberculosis | RIPE x 12-18 months | LFTs; visual acuity |
-| IV penicillin G | Neurosyphilis | 18-24 MU/day IV x 14 days | RPR q3-6 months |
-| Radiation + surgery + steroids | Metastatic cord compression | Per oncology; dexamethasone 10 mg IV load → 4 mg IV q6h while radiation planned | Glucose; GI prophylaxis |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| MS disease-modifying therapy | - | - | Per MS-specific template; high-efficacy preferred if myelitis presentation | - | - | Per agent | - | - | - | - |
+| Rituximab | PO | - | 375 mg/m2 :: PO :: - :: 375 mg/m2 weekly x 4 weeks OR 1000 mg x 2 (14 days apart); maintenance q6 months | - | - | CD19/20; immunoglobulins; infection | - | - | - | - |
+| Eculizumab | IV | - | 900 mg :: IV :: - :: 900 mg IV weekly x 4 → 1200 mg q2 weeks | - | - | Meningococcal vaccination (≥2 weeks before); complement levels; infection | - | - | - | - |
+| Inebilizumab | IV | - | 300 mg :: IV :: - :: 300 mg IV x 2 (14 days apart); then 300 mg q6 months | - | - | CD19; infection | - | - | - | - |
+| Satralizumab | SC | - | 120 mg :: SC :: - :: 120 mg SC at weeks 0, 2, 4, then q4 weeks | - | - | LFTs; infection | - | - | - | - |
+| Azathioprine | PO | - | 2-3 mg/kg :: PO :: - :: 2-3 mg/kg/day PO | - | - | TPMT genotype; CBC weekly x 4, then biweekly, then monthly; LFTs | - | - | - | - |
+| Mycophenolate mofetil | PO | - | 1000-1500 mg :: PO :: BID :: 1000-1500 mg PO BID | - | - | CBC; LFTs; pregnancy test (teratogenic) | - | - | - | - |
+| Anti-TB therapy | - | - | RIPE x 12-18 months | - | - | LFTs; visual acuity | - | - | - | - |
+| IV penicillin G | IV | - | 18-24 MU/day IV x 14 days | - | - | RPR q3-6 months | - | - | - | - |
+| Radiation + surgery + steroids | IV | - | 10 mg :: IV :: q6h :: Per oncology; dexamethasone 10 mg IV load → 4 mg IV q6h while radiation planned | - | - | Glucose; GI prophylaxis | - | - | - | - |
 
 ---
 

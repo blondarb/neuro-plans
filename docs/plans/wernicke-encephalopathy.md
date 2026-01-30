@@ -1,3 +1,10 @@
+---
+title: "Wernicke Encephalopathy"
+description: "Clinical decision support for wernicke encephalopathy diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Wernicke Encephalopathy
 
 **VERSION:** 1.0
@@ -100,47 +107,47 @@
 
 ### 3A. Acute Thiamine Replacement (CRITICAL - Do Not Delay)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Thiamine IV (high-dose) - Suspected/Confirmed WE | STAT | STAT | - | STAT | 500 mg IV TID × 3-5 days (in 100 mL NS over 30 min); then 250 mg IV daily × 3-5 days; then oral | Rare anaphylaxis (give slowly) | Anaphylaxis (rare); clinical response |
-| Thiamine IV (prophylaxis - at-risk patients) | STAT | STAT | - | STAT | 200-500 mg IV TID × 3 days; then oral | Same | Same |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Thiamine IV (high-dose) - Suspected/Confirmed WE | IV | - | 500 mg :: IV :: TID :: 500 mg IV TID × 3-5 days (in 100 mL NS over 30 min); then 250 mg IV daily × 3-5 days; then oral | Rare anaphylaxis (give slowly) | Anaphylaxis (rare); clinical response | STAT | STAT | - | STAT |
+| Thiamine IV (prophylaxis - at-risk patients) | IV | - | 200-500 mg :: IV :: TID :: 200-500 mg IV TID × 3 days; then oral | Same | Same | STAT | STAT | - | STAT |
 
 ### 3B. Maintenance Thiamine
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Thiamine oral (after IV course) | - | ROUTINE | ROUTINE | - | 100 mg TID × weeks to months; indefinitely if ongoing risk | None | Compliance; symptoms |
-| Thiamine IM (if IV not possible, unreliable oral) | STAT | ROUTINE | ROUTINE | - | 250 mg IM daily × 3-5 days | Coagulopathy (relative) | Clinical response |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Thiamine oral (after IV course) | IV | - | 100 mg :: PO :: TID :: 100 mg TID × weeks to months; indefinitely if ongoing risk | None | Compliance; symptoms | - | ROUTINE | ROUTINE | - |
+| Thiamine IM (if IV not possible, unreliable oral) | IM | - | 250 mg :: IM :: daily :: 250 mg IM daily × 3-5 days | Coagulopathy (relative) | Clinical response | STAT | ROUTINE | ROUTINE | - |
 
 ### 3C. Electrolyte Replacement
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Magnesium sulfate IV | STAT | STAT | - | STAT | 1-2 g IV over 1-2 hours; repeat as needed; target Mg >2.0 | Renal failure (adjust dose); heart block | Mg levels; reflexes |
-| Potassium replacement | STAT | STAT | - | STAT | Per deficit; often needed with Mg | Renal failure; hyperkalemia | K+ levels |
-| Phosphorus replacement | STAT | STAT | - | STAT | If low (refeeding); K-Phos or Na-Phos IV/PO | Hypercalcite; renal failure | Phos levels |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Magnesium sulfate IV | IV | - | 1-2 g :: IV :: - :: 1-2 g IV over 1-2 hours; repeat as needed; target Mg >2.0 | Renal failure (adjust dose); heart block | Mg levels; reflexes | STAT | STAT | - | STAT |
+| Potassium replacement | - | - | Per deficit; often needed with Mg | Renal failure; hyperkalemia | K+ levels | STAT | STAT | - | STAT |
+| Phosphorus replacement | IV | - | If low (refeeding); K-Phos or Na-Phos IV/PO | Hypercalcite; renal failure | Phos levels | STAT | STAT | - | STAT |
 
 ### 3D. Glucose Administration
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| THIAMINE BEFORE GLUCOSE | STAT | STAT | - | STAT | ALWAYS give thiamine before or with dextrose/carbohydrates; glucose metabolism depletes thiamine | None | Give thiamine first |
-| Dextrose (if hypoglycemic) | STAT | STAT | - | STAT | D50 25-50 mL IV or D10 infusion; AFTER thiamine | Give thiamine first | Glucose levels |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| THIAMINE BEFORE GLUCOSE | - | - | ALWAYS give thiamine before or with dextrose/carbohydrates; glucose metabolism depletes thiamine | - | None | Give thiamine first | STAT | STAT | - | STAT |
+| Dextrose (if hypoglycemic) | IV | - | 25-50 mL :: IV :: - :: D50 25-50 mL IV or D10 infusion; AFTER thiamine | - | Give thiamine first | Glucose levels | STAT | STAT | - | STAT |
 
 ### 3E. Alcohol Withdrawal Prevention/Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Benzodiazepines (symptom-triggered or scheduled) | STAT | STAT | - | STAT | Lorazepam 1-4 mg IV q15min PRN (CIWA-guided); or scheduled dosing if severe | Respiratory depression; caution with hepatic impairment | CIWA score; sedation; respiratory status |
-| Folate | - | ROUTINE | ROUTINE | - | 1 mg daily | None | None |
-| Multivitamin | - | ROUTINE | ROUTINE | - | Daily | None | None |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Benzodiazepines (symptom-triggered or scheduled) | IV | - | 1-4 mg :: IV :: PRN :: Lorazepam 1-4 mg IV q15min PRN (CIWA-guided); or scheduled dosing if severe | Respiratory depression; caution with hepatic impairment | CIWA score; sedation; respiratory status | STAT | STAT | - | STAT |
+| Folate | PO | - | 1 mg :: PO :: daily :: 1 mg daily | None | None | - | ROUTINE | ROUTINE | - |
+| Multivitamin | - | - | Daily | None | None | - | ROUTINE | ROUTINE | - |
 
 ### 3F. Nutritional Support
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Nutrition consult | - | ROUTINE | - | ROUTINE | Refeeding protocol; caloric needs | None | Refeeding syndrome |
-| Gradual refeeding | - | ROUTINE | - | ROUTINE | Start low calorie (10-15 kcal/kg); advance slowly | None | Phosphorus, K+, Mg, glucose |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Nutrition consult | - | - | Refeeding protocol; caloric needs | None | Refeeding syndrome | - | ROUTINE | - | ROUTINE |
+| Gradual refeeding | - | - | Start low calorie (10-15 kcal/kg); advance slowly | None | Phosphorus, K+, Mg, glucose | - | ROUTINE | - | ROUTINE |
 
 ---
 

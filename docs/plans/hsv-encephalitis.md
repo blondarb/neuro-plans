@@ -1,3 +1,10 @@
+---
+title: "HSV Encephalitis"
+description: "Clinical decision support for herpes simplex virus encephalitis diagnosis and management"
+version: "1.0"
+setting: "ED, HOSP, OPD, ICU"
+---
+
 # HSV Encephalitis
 
 **VERSION:** 1.0
@@ -135,39 +142,39 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Acyclovir IV | STAT | STAT | - | STAT | 10 mg/kg IV q8h (infuse over 1h). Base on IDEAL body weight (IBW). Duration: minimum 14-21 days. Dose adjust for renal impairment: CrCl 25-50: 10 mg/kg q12h; CrCl 10-25: 10 mg/kg q24h; HD: 10 mg/kg after each dialysis session | True acyclovir allergy (extremely rare). Renal impairment — dose adjust, do NOT withhold | Renal function (BUN, Cr) daily; ensure adequate hydration (1-1.5 mL/kg/h IV fluids); urine output; acyclovir crystal nephropathy (maintain urine output); CBC (rare neutropenia); LFTs |
-| IV normal saline (aggressive hydration) | STAT | STAT | - | STAT | 1-1.5 mL/kg/h continuous to prevent acyclovir nephrotoxicity; bolus 500-1000 mL if dehydrated | Volume overload, CHF | I/O; Cr daily; urine output >0.5 mL/kg/h |
-| Empiric antibiotics (vancomycin + ceftriaxone) | STAT | STAT | - | STAT | Standard meningitis dosing. Continue until bacterial meningitis excluded by CSF results (Gram stain negative, BioFire negative, cultures negative at 48-72h). See Bacterial Meningitis template for dosing | See Bacterial Meningitis template | Standard |
-| Dexamethasone | STAT | STAT | - | STAT | 0.15 mg/kg IV q6h x 4 days — give empirically with antibiotics until bacterial meningitis excluded. Discontinue when bacterial excluded. Role in HSV encephalitis itself is CONTROVERSIAL — some evidence for reducing edema but no clear mortality benefit; not standard of care for isolated HSV | Uncontrolled infection (relative) | Glucose; GI prophylaxis |
-| Levetiracetam (if seizures) | STAT | STAT | - | STAT | 1000-1500 mg IV load; then 500-1000 mg IV/PO BID; max 3000 mg/day. Seizures occur in 40-60% of HSV encephalitis | Severe renal impairment (dose adjust) | Renal function; behavioral side effects |
-| Lorazepam (seizure rescue) | STAT | STAT | - | STAT | 0.1 mg/kg IV (max 4 mg); repeat x1 in 5 min if needed | Respiratory depression | RR, SpO2; airway equipment ready |
-| Supplemental oxygen | STAT | STAT | - | STAT | If SpO2 <94% or intubated | N/A | SpO2 target ≥94% |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Acyclovir IV | IV | - | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h (infuse over 1h). Base on IDEAL body weight (IBW). Duration: minimum 14-21 days. Dose adjust for renal impairment: CrCl 25-50: 10 mg/kg q12h; CrCl 10-25: 10 mg/kg q24h; HD: 10 mg/kg after each dialysis session | True acyclovir allergy (extremely rare). Renal impairment — dose adjust, do NOT withhold | Renal function (BUN, Cr) daily; ensure adequate hydration (1-1.5 mL/kg/h IV fluids); urine output; acyclovir crystal nephropathy (maintain urine output); CBC (rare neutropenia); LFTs | STAT | STAT | - | STAT |
+| IV normal saline (aggressive hydration) | IV | - | 1-1.5 mL/kg :: - :: continuous :: 1-1.5 mL/kg/h continuous to prevent acyclovir nephrotoxicity; bolus 500-1000 mL if dehydrated | Volume overload, CHF | I/O; Cr daily; urine output >0.5 mL/kg/h | STAT | STAT | - | STAT |
+| Empiric antibiotics (vancomycin + ceftriaxone) | - | - | Standard meningitis dosing. Continue until bacterial meningitis excluded by CSF results (Gram stain negative, BioFire negative, cultures negative at 48-72h). See Bacterial Meningitis template for dosing | See Bacterial Meningitis template | Standard | STAT | STAT | - | STAT |
+| Dexamethasone | IV | - | 0.15 mg/kg :: IV :: q6h :: 0.15 mg/kg IV q6h x 4 days — give empirically with antibiotics until bacterial meningitis excluded. Discontinue when bacterial excluded. Role in HSV encephalitis itself is CONTROVERSIAL — some evidence for reducing edema but no clear mortality benefit; not standard of care for isolated HSV | Uncontrolled infection (relative) | Glucose; GI prophylaxis | STAT | STAT | - | STAT |
+| Levetiracetam (if seizures) | IV | - | 1000-1500 mg :: IV :: BID :: 1000-1500 mg IV load; then 500-1000 mg IV/PO BID; max 3000 mg/day. Seizures occur in 40-60% of HSV encephalitis | Severe renal impairment (dose adjust) | Renal function; behavioral side effects | STAT | STAT | - | STAT |
+| Lorazepam (seizure rescue) | IV | - | 0.1 mg/kg :: IV :: - :: 0.1 mg/kg IV (max 4 mg); repeat x1 in 5 min if needed | Respiratory depression | RR, SpO2; airway equipment ready | STAT | STAT | - | STAT |
+| Supplemental oxygen | - | - | 94% :: - :: - :: If SpO2 <94% or intubated | N/A | SpO2 target ≥94% | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments
 
-| Treatment | Indication | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|------------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Acetaminophen | Fever (temperature goal <38°C); headache | STAT | STAT | ROUTINE | STAT | 650-1000 mg PO/IV q6h; max 4g/day | Severe hepatic disease | Temperature; LFTs |
-| Mannitol 20% | Cerebral edema / elevated ICP | STAT | - | - | STAT | 1-1.5 g/kg IV bolus; then 0.25-0.5 g/kg q4-6h | Anuria | Serum osm <320; renal function; I/O |
-| Hypertonic saline 23.4% | Acute herniation | - | - | - | STAT | 30 mL IV via central line over 10-20 min | No central access | Na (target 145-155); osmolality |
-| Hypertonic saline 3% infusion | ICP management (less acute) | - | - | - | STAT | 0.5-1 mL/kg/h continuous; target Na 145-155 | Hypernatremia | Na q4-6h; osmolality |
-| Phenytoin/Fosphenytoin | Refractory seizures (second-line after levetiracetam) | STAT | STAT | - | STAT | Fosphenytoin 20 mg PE/kg IV at 150 mg PE/min; maintenance 100 mg PE q8h; target level 10-20 µg/mL | Bradycardia, heart block, hypotension (infusion rate-related) | Continuous telemetry during load; free phenytoin level; LFTs |
-| Lacosamide | Seizure management (adjunctive) | - | ROUTINE | ROUTINE | ROUTINE | 200 mg IV/PO load; then 100-200 mg BID; max 400 mg/day | PR prolongation, AV block | ECG; PR interval |
-| Ondansetron | Nausea/vomiting | STAT | ROUTINE | - | STAT | 4 mg IV/PO q6h PRN | QT prolongation | QTc |
-| Pantoprazole | GI prophylaxis (if steroids or critical illness) | - | ROUTINE | - | ROUTINE | 40 mg IV/PO daily | C. diff risk long-term | GI symptoms |
-| Enoxaparin | DVT prophylaxis | - | ROUTINE | - | ROUTINE | 40 mg SC daily (start when not actively seizing and no hemorrhagic transformation) | Active bleeding, hemorrhagic transformation, coagulopathy, platelets <50K | Platelets q3 days |
-| Pneumatic compression devices | DVT prophylaxis | STAT | STAT | - | STAT | Apply bilaterally on admission | Acute DVT | Skin checks |
-| Fluid restriction | SIADH management | - | ROUTINE | - | ROUTINE | 1-1.2 L/day if Na <130 with clinical SIADH | Dehydration (balance with acyclovir hydration needs) | Na q6-8h; urine osm/Na; I/O |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Acetaminophen | IV | Fever (temperature goal <38°C); headache | 650-1000 mg :: IV :: q6h :: 650-1000 mg PO/IV q6h; max 4g/day | Severe hepatic disease | Temperature; LFTs | STAT | STAT | ROUTINE | STAT |
+| Mannitol 20% | IV | Cerebral edema / elevated ICP | 1-1.5 g/kg :: IV :: once :: 1-1.5 g/kg IV bolus; then 0.25-0.5 g/kg q4-6h | Anuria | Serum osm <320; renal function; I/O | STAT | - | - | STAT |
+| Hypertonic saline 23.4% | IV | Acute herniation | 30 mL :: IV :: - :: 30 mL IV via central line over 10-20 min | No central access | Na (target 145-155); osmolality | - | - | - | STAT |
+| Hypertonic saline 3% infusion | - | ICP management (less acute) | 0.5-1 mL/kg :: - :: continuous :: 0.5-1 mL/kg/h continuous; target Na 145-155 | Hypernatremia | Na q4-6h; osmolality | - | - | - | STAT |
+| Phenytoin/Fosphenytoin | IV | Refractory seizures (second-line after levetiracetam) | 20 mg :: IV :: q8h :: Fosphenytoin 20 mg PE/kg IV at 150 mg PE/min; maintenance 100 mg PE q8h; target level 10-20 µg/mL | Bradycardia, heart block, hypotension (infusion rate-related) | Continuous telemetry during load; free phenytoin level; LFTs | STAT | STAT | - | STAT |
+| Lacosamide | IV | Seizure management (adjunctive) | 200 mg :: IV :: BID :: 200 mg IV/PO load; then 100-200 mg BID; max 400 mg/day | PR prolongation, AV block | ECG; PR interval | - | ROUTINE | ROUTINE | ROUTINE |
+| Ondansetron | IV | Nausea/vomiting | 4 mg :: IV :: q6h :: 4 mg IV/PO q6h PRN | QT prolongation | QTc | STAT | ROUTINE | - | STAT |
+| Pantoprazole | IV | GI prophylaxis (if steroids or critical illness) | 40 mg :: IV :: daily :: 40 mg IV/PO daily | C. diff risk long-term | GI symptoms | - | ROUTINE | - | ROUTINE |
+| Enoxaparin | SC | DVT prophylaxis | 40 mg :: SC :: daily :: 40 mg SC daily (start when not actively seizing and no hemorrhagic transformation) | Active bleeding, hemorrhagic transformation, coagulopathy, platelets <50K | Platelets q3 days | - | ROUTINE | - | ROUTINE |
+| Pneumatic compression devices | - | DVT prophylaxis | Apply bilaterally on admission | Acute DVT | Skin checks | STAT | STAT | - | STAT |
+| Fluid restriction | - | SIADH management | 1-1.2 L/day if Na <130 with clinical SIADH | Dehydration (balance with acyclovir hydration needs) | Na q6-8h; urine osm/Na; I/O | - | ROUTINE | - | ROUTINE |
 
 ### 3C. Second-line/Refractory
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Foscarnet IV (acyclovir-resistant HSV) | - | EXT | - | EXT | 60 mg/kg IV q8h or 90 mg/kg IV q12h; infuse over 1-2h with aggressive hydration. For proven or suspected acyclovir resistance (immunocompromised, HIV) | Renal failure (major nephrotoxin); electrolyte abnormalities | Cr daily; Ca, Mg, K, PO4 BID (causes severe electrolyte wasting); hydration 1-2 L NS before each dose |
-| Decompressive craniectomy | - | - | - | STAT | For malignant cerebral edema with impending herniation, unresponsive to medical ICP management; consider if age appropriate and prognosis not already dismal | Bilateral massive necrosis; moribund patient | Post-op neuro checks; ICP monitoring; wound care |
-| Immunotherapy for post-HSV autoimmune encephalitis | - | URGENT | ROUTINE | URGENT | If relapse at 2-6 weeks with new anti-NMDAR antibodies: IV methylprednisolone 1g/day x 5 days + IVIG 0.4 g/kg/day x 5 days; second-line: rituximab | Active HSV infection (ensure viral replication controlled) | NMDAR antibody titers; clinical response; viral PCR to confirm HSV not reactivated |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Foscarnet IV (acyclovir-resistant HSV) | IV | - | 60 mg/kg :: IV :: q8h :: 60 mg/kg IV q8h or 90 mg/kg IV q12h; infuse over 1-2h with aggressive hydration. For proven or suspected acyclovir resistance (immunocompromised, HIV) | Renal failure (major nephrotoxin); electrolyte abnormalities | Cr daily; Ca, Mg, K, PO4 BID (causes severe electrolyte wasting); hydration 1-2 L NS before each dose | - | EXT | - | EXT |
+| Decompressive craniectomy | - | - | For malignant cerebral edema with impending herniation, unresponsive to medical ICP management; consider if age appropriate and prognosis not already dismal | Bilateral massive necrosis; moribund patient | Post-op neuro checks; ICP monitoring; wound care | - | - | - | STAT |
+| Immunotherapy for post-HSV autoimmune encephalitis | IV | - | 1g/day :: IV :: daily x 5 days :: If relapse at 2-6 weeks with new anti-NMDAR antibodies: IV methylprednisolone 1g/day x 5 days + IVIG 0.4 g/kg/day x 5 days; second-line: rituximab | Active HSV infection (ensure viral replication controlled) | NMDAR antibody titers; clinical response; viral PCR to confirm HSV not reactivated | - | URGENT | ROUTINE | URGENT |
 
 ### 3D. Duration of Treatment and Discontinuation
 

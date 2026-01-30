@@ -1,0 +1,1015 @@
+{
+  "id": "diabetic-neuropathy",
+  "title": "Diabetic Neuropathy",
+  "version": "1.0",
+  "icd10": [
+    "** E11.40 (Type 2 diabetes with diabetic neuropathy",
+    "unspecified)",
+    "E11.41 (Type 2 diabetes with diabetic mononeuropathy)",
+    "E11.42 (Type 2 diabetes with diabetic polyneuropathy)",
+    "E10.40-E10.42 (Type 1 equivalents)",
+    "G63.2 (Diabetic polyneuropathy)"
+  ],
+  "scope": "** Evaluation and management of diabetic neuropathy in adults including distal symmetric polyneuropathy (most common), painful diabetic neuropathy, diabetic autonomic neuropathy, and focal/multifocal neuropathies. Applies to ED, hospital, and outpatient settings.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "HbA1c",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Glycemic control; correlates with neuropathy risk",
+          "target": "<7% (individualized)"
+        },
+        {
+          "item": "Fasting glucose",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Current glycemic status",
+          "target": "80-130 mg/dL"
+        },
+        {
+          "item": "BMP (electrolytes, creatinine, BUN)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Renal function; uremic neuropathy",
+          "target": "Normal"
+        },
+        {
+          "item": "CBC",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Anemia (B12 deficiency)",
+          "target": "Normal"
+        },
+        {
+          "item": "Vitamin B12",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Metformin causes B12 deficiency; coexistent deficiency",
+          "target": ">400 pg/mL"
+        },
+        {
+          "item": "Methylmalonic acid (MMA)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If B12 borderline (200-400)",
+          "target": "Normal"
+        },
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroid neuropathy",
+          "target": "Normal"
+        },
+        {
+          "item": "Lipid panel",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Dyslipidemia contributes to neuropathy",
+          "target": "LDL <100 (or <70 if ASCVD)"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "SPEP/UPEP with immunofixation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Monoclonal gammopathy-associated neuropathy",
+          "target": "No M-spike"
+        },
+        {
+          "item": "Serum free light chains",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If SPEP negative but suspicion",
+          "target": "Normal ratio"
+        },
+        {
+          "item": "Liver function tests",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hepatic disease, alcohol",
+          "target": "Normal"
+        },
+        {
+          "item": "HIV",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If risk factors",
+          "target": "Negative"
+        },
+        {
+          "item": "RPR/VDRL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Syphilis if atypical",
+          "target": "Nonreactive"
+        },
+        {
+          "item": "ESR, CRP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Inflammatory/vasculitic neuropathy",
+          "target": "Normal"
+        },
+        {
+          "item": "ANA",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If connective tissue disease suspected",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-GAD65, IA-2 antibodies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If type uncertain; LADA",
+          "target": "Document"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CSF analysis",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Elevated protein in DLRPN; r/o inflammatory",
+          "target": "Mild protein elevation in DLRPN"
+        },
+        {
+          "item": "Paraneoplastic panel",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If rapid progression, weight loss",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Nerve conduction studies (NCS)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Baseline; atypical cases",
+          "target": "Axonal sensorimotor polyneuropathy",
+          "contraindications": "Pacemaker (relative); anticoagulation (relative)"
+        },
+        {
+          "item": "Electromyography (EMG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If motor involvement; amyotrophy",
+          "target": "Denervation in affected muscles",
+          "contraindications": "Active infection at site"
+        },
+        {
+          "item": "Quantitative sensory testing (QST)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Small fiber neuropathy; research",
+          "target": "Abnormal thermal thresholds",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Cardiovascular autonomic reflex tests",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If CAN suspected",
+          "target": "Abnormal HR variability, Valsalva ratio",
+          "contraindications": "Arrhythmias"
+        },
+        {
+          "item": "Tilt table test",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Orthostatic hypotension evaluation",
+          "target": "Orthostatic BP drop without HR rise",
+          "contraindications": "Severe coronary disease"
+        },
+        {
+          "item": "Sudomotor function (QSART)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Sudomotor dysfunction",
+          "target": "Reduced sweat output",
+          "contraindications": "None"
+        },
+        {
+          "item": "Gastric emptying study",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If gastroparesis suspected",
+          "target": "Delayed emptying",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Skin punch biopsy (IENFD)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Small fiber neuropathy; normal NCS",
+          "target": "Reduced intraepidermal nerve fiber density",
+          "contraindications": "Anticoagulation (relative)"
+        },
+        {
+          "item": "Corneal confocal microscopy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Non-invasive small fiber assessment",
+          "target": "Reduced corneal nerve fiber density",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Glycemic Control (Foundation of Treatment)": [
+        {
+          "item": "Intensive glycemic control",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "7%",
+                "orderSentence": "Intensive glycemic control 7% -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Target HbA1c <7% (individualized); avoid hypoglycemia",
+            "orderSentence": "Intensive glycemic control 7% -"
+          },
+          "contraindications": "Hypoglycemia unawareness with CAN",
+          "monitoring": "HbA1c q3 months until stable",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Continuous glucose monitoring",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "If hypoglycemia unawareness",
+            "orderSentence": "Continuous glucose monitoring - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Sensor accuracy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Neuropathic Pain - First-Line Agents": [
+        {
+          "item": "Duloxetine (Cymbalta)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine (Cymbalta) 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "30 mg daily × 1 week, then 60 mg daily; max 120 mg/day",
+            "orderSentence": "Duloxetine (Cymbalta) 30 mg PO"
+          },
+          "contraindications": "MAOIs, uncontrolled glaucoma, hepatic impairment",
+          "monitoring": "Nausea, BP; serotonin syndrome",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin (Lyrica)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Pregabalin (Lyrica) 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg TID or 75 mg BID; titrate to 300 mg/day; max 600 mg/day",
+            "orderSentence": "Pregabalin (Lyrica) 50 mg PO"
+          },
+          "contraindications": "CrCl <60: reduce dose",
+          "monitoring": "Sedation, edema, weight gain; renal dosing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin (Neurontin)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin (Neurontin) 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "300 mg QHS, titrate by 300 mg q3-7 days; target 1800-3600 mg/day divided TID",
+            "orderSentence": "Gabapentin (Neurontin) 300 mg PO"
+          },
+          "contraindications": "CrCl <60: reduce dose",
+          "monitoring": "Sedation, edema; renal dosing",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Neuropathic Pain - Second-Line Agents": [
+        {
+          "item": "Venlafaxine XR",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5-75 mg",
+                "orderSentence": "Venlafaxine XR 37.5-75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "37.5-75 mg daily; titrate to 150-225 mg/day",
+            "orderSentence": "Venlafaxine XR 37.5-75 mg PO"
+          },
+          "contraindications": "MAOIs, uncontrolled HTN",
+          "monitoring": "BP; serotonin syndrome",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-25 mg",
+                "orderSentence": "Amitriptyline 10-25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10-25 mg QHS; titrate to 50-100 mg QHS",
+            "orderSentence": "Amitriptyline 10-25 mg PO"
+          },
+          "contraindications": "Cardiac disease, glaucoma, urinary retention",
+          "monitoring": "ECG if >100 mg; anticholinergic effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nortriptyline",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-25 mg",
+                "orderSentence": "Nortriptyline 10-25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10-25 mg QHS; titrate to 75 mg QHS",
+            "orderSentence": "Nortriptyline 10-25 mg PO"
+          },
+          "contraindications": "Same as amitriptyline",
+          "monitoring": "Same; fewer anticholinergic effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Neuropathic Pain - Topical Agents": [
+        {
+          "item": "Capsaicin 8% patch (Qutenza)",
+          "route": "Transdermal",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Apply to painful area × 30-60 min q3 months; in-office",
+            "orderSentence": "Capsaicin 8% patch (Qutenza) - Transdermal - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "Open wounds; capsaicin allergy",
+          "monitoring": "BP during application; pain",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lidocaine 5% patch",
+          "route": "Transdermal",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Up to 3 patches daily; 12h on/12h off",
+            "orderSentence": "Lidocaine 5% patch - Transdermal - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "Allergy to local anesthetics",
+          "monitoring": "Local irritation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Capsaicin cream 0.075%",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Apply TID-QID; takes 2-4 weeks for effect",
+            "orderSentence": "Capsaicin cream 0.075% - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "Open wounds",
+          "monitoring": "Initial burning (improves)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Neuropathic Pain - Third-Line/Refractory": [
+        {
+          "item": "Tramadol",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50-100 mg",
+                "orderSentence": "Tramadol 50-100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50-100 mg q4-6h PRN; max 400 mg/day",
+            "orderSentence": "Tramadol 50-100 mg PO"
+          },
+          "contraindications": "Seizure disorder, opioid dependence, MAOIs",
+          "monitoring": "Seizures; serotonin syndrome; dependence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tapentadol ER",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Tapentadol ER 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg BID; titrate by 50 mg q3 days; max 500 mg/day",
+            "orderSentence": "Tapentadol ER 50 mg PO"
+          },
+          "contraindications": "Respiratory depression, severe hepatic impairment",
+          "monitoring": "Respiratory; GI effects",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Spinal cord stimulation",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Referral to interventional pain for refractory cases",
+            "orderSentence": "Spinal cord stimulation - - - see dosing"
+          },
+          "contraindications": "Infection, coagulopathy",
+          "monitoring": "Device complications",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Combination Therapy": [
+        {
+          "item": "Duloxetine + Pregabalin",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "If monotherapy inadequate; use lower doses of each",
+            "orderSentence": "Duloxetine + Pregabalin - - - see dosing"
+          },
+          "contraindications": "Per individual agents",
+          "monitoring": "Per individual agents",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentinoid + TCA",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "If monotherapy inadequate",
+            "orderSentence": "Gabapentinoid + TCA - - - see dosing"
+          },
+          "contraindications": "Per individual agents",
+          "monitoring": "Sedation; anticholinergic",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Diabetic Autonomic Neuropathy Treatment": [
+        {
+          "item": "Midodrine",
+          "dosing": {
+            "instructions": "2.5-10 mg TID (last dose before 6 PM)",
+            "orderSentence": null
+          },
+          "monitoring": "Supine HTN; avoid at night"
+        },
+        {
+          "item": "Metoclopramide",
+          "dosing": {
+            "instructions": "5-10 mg before meals; max 12 weeks",
+            "orderSentence": null
+          },
+          "monitoring": "Tardive dyskinesia (black box)"
+        },
+        {
+          "item": "Sildenafil",
+          "dosing": {
+            "instructions": "25-100 mg PRN",
+            "orderSentence": null
+          },
+          "monitoring": "Nitrate contraindication"
+        },
+        {
+          "item": "Timed voiding",
+          "dosing": {
+            "instructions": "q3-4 hour schedule",
+            "orderSentence": null
+          },
+          "monitoring": "Residual volumes"
+        },
+        {
+          "item": "Glycopyrrolate",
+          "dosing": {
+            "instructions": "1-2 mg BID-TID",
+            "orderSentence": null
+          },
+          "monitoring": "Anticholinergic effects"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Atypical presentation, diagnosis confirmation, refractory pain"
+        },
+        {
+          "item": "Endocrinology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Diabetes optimization"
+        },
+        {
+          "item": "Podiatry",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Foot care, ulcer prevention, nail care"
+        },
+        {
+          "item": "Pain management",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Refractory neuropathic pain"
+        },
+        {
+          "item": "Physical therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Balance, gait, strengthening"
+        },
+        {
+          "item": "Occupational therapy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Hand function, adaptive equipment"
+        },
+        {
+          "item": "Gastroenterology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Gastroparesis evaluation/management"
+        },
+        {
+          "item": "Urology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Bladder dysfunction, erectile dysfunction"
+        },
+        {
+          "item": "Cardiology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Cardiovascular autonomic neuropathy"
+        },
+        {
+          "item": "Wound care",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Diabetic foot ulcers"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Daily foot inspection (patient or caregiver)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Monofilament testing annually (10-g Semmes-Weinstein)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Protective footwear; never walk barefoot",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Custom orthotics/diabetic shoes for high-risk feet",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep feet clean and dry; moisturize (not between toes)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid heating pads; test water temperature with elbow",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Trim toenails straight across; professional care if needed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Immediate evaluation for any wound, blister, or color change",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "URGENT"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Neuropathy is common in diabetes; can be slowed with good control",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report new numbness, tingling, weakness, or pain",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Daily foot inspection is critical; use mirror if needed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Never walk barefoot; check shoes for objects before wearing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Fall prevention: good lighting, remove rugs, use handrails",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report dizziness on standing, early satiety, urinary symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "American Diabetes Association (diabetes.org) resources",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "B12 deficiency neuropathy",
+      "features": "Macrocytic anemia; subacute combined degeneration",
+      "tests": "B12, MMA; may coexist with DPN"
+    },
+    {
+      "diagnosis": "Alcohol-related neuropathy",
+      "features": "Alcohol history; nutritional deficiency",
+      "tests": "History; thiamine; may coexist"
+    },
+    {
+      "diagnosis": "Chronic inflammatory demyelinating polyneuropathy",
+      "features": "Proximal + distal weakness; demyelinating NCS",
+      "tests": "NCS pattern; CSF protein"
+    },
+    {
+      "diagnosis": "Uremic neuropathy",
+      "features": "ESRD; improves with dialysis",
+      "tests": "Creatinine; dialysis status"
+    },
+    {
+      "diagnosis": "Hypothyroid neuropathy",
+      "features": "Carpal tunnel; myopathy; slow relaxation reflexes",
+      "tests": "TSH"
+    },
+    {
+      "diagnosis": "Monoclonal gammopathy neuropathy",
+      "features": "Often sensory > motor; may have ataxia",
+      "tests": "SPEP/UPEP; free light chains"
+    },
+    {
+      "diagnosis": "Hereditary neuropathy (CMT)",
+      "features": "Family history; high arches; hammer toes",
+      "tests": "Genetic testing; NCS pattern"
+    },
+    {
+      "diagnosis": "Vasculitic neuropathy",
+      "features": "Mononeuritis multiplex; stepwise; systemic symptoms",
+      "tests": "ESR, CRP; nerve biopsy"
+    },
+    {
+      "diagnosis": "Chemotherapy-induced neuropathy",
+      "features": "Temporal relationship to chemo (platinum, taxanes, vincristine)",
+      "tests": "History"
+    },
+    {
+      "diagnosis": "HIV neuropathy",
+      "features": "Risk factors; CD4 count",
+      "tests": "HIV testing"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Intensive glycemic control prevents/slows neuropathy",
+      "evidenceLevel": "Class I, Level A",
+      "source": "DCCT/EDIC (Type 1); UKPDS (Type 2)"
+    },
+    {
+      "recommendation": "Duloxetine effective for painful DPN",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple RCTs; FDA-approved"
+    },
+    {
+      "recommendation": "Pregabalin effective for painful DPN",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple RCTs; FDA-approved"
+    },
+    {
+      "recommendation": "Gabapentin effective for painful DPN",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Multiple RCTs"
+    },
+    {
+      "recommendation": "TCAs effective for painful DPN",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Multiple RCTs"
+    },
+    {
+      "recommendation": "Capsaicin 8% patch effective for localized pain",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple RCTs; FDA-approved"
+    },
+    {
+      "recommendation": "Midodrine for orthostatic hypotension",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple RCTs"
+    },
+    {
+      "recommendation": "Annual foot screening reduces amputation risk",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple studies"
+    },
+    {
+      "recommendation": "Multifactorial risk reduction (lipids, BP, glucose) improves outcomes",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Multiple studies"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "HbA1c",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q3 months until stable, then q6 months",
+      "action": "Intensify diabetes management"
+    },
+    {
+      "item": "Foot exam (monofilament)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Every visit; comprehensive annually",
+      "action": "Podiatry; protective footwear"
+    },
+    {
+      "item": "Symptom assessment (pain scores)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Every visit",
+      "action": "Adjust pain medications"
+    },
+    {
+      "item": "Renal function",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Annually; more if on gabapentinoids",
+      "action": "Dose adjust medications"
+    },
+    {
+      "item": "B12 level",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Annually if on metformin",
+      "action": "Supplement"
+    },
+    {
+      "item": "Orthostatic vitals",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "If CAN suspected; every visit",
+      "action": "Autonomic treatment"
+    },
+    {
+      "item": "Fall risk assessment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Every visit",
+      "action": "PT; home safety evaluation"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Stable neuropathy; adequate pain control; no active ulcers"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "Severe uncontrolled pain; infected diabetic foot ulcer; diabetic amyotrophy with functional decline"
+    },
+    {
+      "disposition": "ICU admission",
+      "criteria": "Sepsis from foot infection; autonomic crisis"
+    },
+    {
+      "disposition": "Neurology follow-up",
+      "criteria": "q3-6 months during treatment optimization; annually when stable"
+    },
+    {
+      "disposition": "Podiatry follow-up",
+      "criteria": "q3 months if high-risk feet; annually if low-risk"
+    },
+    {
+      "disposition": "Urgent follow-up",
+      "criteria": "New weakness, new ulcer, worsening pain despite treatment"
+    }
+  ]
+}

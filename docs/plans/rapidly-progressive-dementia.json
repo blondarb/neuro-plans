@@ -1,0 +1,1749 @@
+{
+  "id": "rapidly-progressive-dementia",
+  "title": "Rapidly Progressive Dementia (RPD)",
+  "version": "1.0",
+  "icd10": [
+    "** F03.90 (Unspecified dementia without behavioral disturbance)",
+    "G31.9 (Degenerative disease of nervous system",
+    "unspecified)",
+    "A81.00 (Creutzfeldt-Jakob disease",
+    "unspecified)"
+  ],
+  "scope": "** Urgent evaluation of cognitive decline progressing over weeks to months (typically <1-2 years from symptom onset to severe disability). Covers comprehensive workup to identify treatable causes including autoimmune encephalitis, infectious etiologies, toxic-metabolic causes, CNS malignancy, and prion disease (CJD). The key principle: assume a treatable cause exists until proven otherwise. Excludes typical slowly progressive dementias (Alzheimer's, FTD) unless presenting atypically fast, and acute delirium (<days).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection screen; hematologic malignancy; B12 deficiency (macrocytosis)",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP (BMP + LFTs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hepatic encephalopathy (ammonia); renal failure (uremia); electrolyte abnormalities (Na, Ca); hypo/hyperglycemia",
+          "target": "Normal"
+        },
+        {
+          "item": "TSH, free T4",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Hypothyroid encephalopathy (Hashimoto encephalopathy); hyperthyroidism",
+          "target": "Normal"
+        },
+        {
+          "item": "B12, methylmalonic acid (MMA)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "B12 deficiency — reversible cause of cognitive decline and myelopathy",
+          "target": "B12 >300 pg/mL; MMA normal"
+        },
+        {
+          "item": "Folate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency associated with cognitive impairment",
+          "target": "Normal"
+        },
+        {
+          "item": "ESR",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Vasculitis screen; inflammatory conditions; infection; malignancy",
+          "target": "Normal (<20 mm/h age-adjusted)"
+        },
+        {
+          "item": "CRP",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Inflammatory marker",
+          "target": "Normal"
+        },
+        {
+          "item": "RPR or VDRL (syphilis screen)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Neurosyphilis — treatable cause; \"the great imitator\"",
+          "target": "Non-reactive"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "HIV-associated neurocognitive disorder (HAND); opportunistic infections",
+          "target": "Negative"
+        },
+        {
+          "item": "Ammonia",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Hepatic encephalopathy",
+          "target": "Normal (<35 µmol/L)"
+        },
+        {
+          "item": "Urinalysis + urine culture",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "UTI causing delirium (especially elderly)",
+          "target": "Negative"
+        },
+        {
+          "item": "Urine drug screen",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Substance-related cognitive impairment; prescription drug toxicity",
+          "target": "Negative or expected medications only"
+        },
+        {
+          "item": "Blood glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypoglycemia; diabetic encephalopathy",
+          "target": "Normal"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Anti-thyroid antibodies (anti-TPO, anti-thyroglobulin)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hashimoto encephalopathy (SREAT) — treatable with steroids even if euthyroid",
+          "target": "Negative (positive + encephalopathy = consider SREAT)"
+        },
+        {
+          "item": "ANA",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lupus cerebritis; systemic autoimmune disease",
+          "target": "Negative"
+        },
+        {
+          "item": "dsDNA antibodies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lupus cerebritis (specific)",
+          "target": "Negative"
+        },
+        {
+          "item": "Complement levels (C3, C4)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lupus; complement-mediated disease",
+          "target": "Normal"
+        },
+        {
+          "item": "ANCA (c-ANCA, p-ANCA)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "CNS vasculitis (granulomatosis with polyangiitis, microscopic polyangiitis)",
+          "target": "Negative"
+        },
+        {
+          "item": "ACE level (serum)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosarcoidosis",
+          "target": "Normal"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP) + immunofixation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Multiple myeloma; POEMS; Waldenström; M-protein-associated neuropathy/encephalopathy",
+          "target": "Normal pattern"
+        },
+        {
+          "item": "LDH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lymphoma; hemolysis; intravascular lymphoma",
+          "target": "Normal"
+        },
+        {
+          "item": "Peripheral blood smear",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Intravascular lymphoma (schistocytes); TTP (schistocytes + thrombocytopenia)",
+          "target": "Normal"
+        },
+        {
+          "item": "Thiamine (B1) level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Wernicke encephalopathy — reversible with treatment; alcoholism, malnutrition, bariatric surgery",
+          "target": "Normal (>70 nmol/L)"
+        },
+        {
+          "item": "Copper and ceruloplasmin",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Wilson disease (young patients <50); acquired copper deficiency (zinc excess, gastric surgery)",
+          "target": "Normal"
+        },
+        {
+          "item": "Zinc level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Zinc excess causes copper deficiency → myeloneuropathy + cognitive decline",
+          "target": "Normal"
+        },
+        {
+          "item": "Cortisol (AM or random)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Adrenal insufficiency causing encephalopathy",
+          "target": "Normal (>18 µg/dL AM)"
+        },
+        {
+          "item": "Heavy metals (lead, mercury, arsenic)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Occupational/environmental exposure",
+          "target": "Normal"
+        },
+        {
+          "item": "Paraneoplastic panel (serum) — comprehensive",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "ANNA-1 (Hu), ANNA-2 (Ri), CRMP-5 (CV2), amphiphysin, PCA-1 (Yo), PCA-2, PCA-Tr (DNER), GAD65",
+          "target": "Negative"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (serum) — NMDAR, LGI1, CASPR2, GABA-B, GABA-A, AMPA, DPPX, IgLON5",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Treatable autoimmune encephalitis — most important reversible cause to identify",
+          "target": "Negative"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "14-3-3 protein (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "CJD biomarker; elevated in rapid neuronal destruction. Sensitivity ~90% but NOT specific (also elevated in stroke, encephalitis, seizures)",
+          "target": "Negative (positive supports CJD in right clinical context)"
+        },
+        {
+          "item": "RT-QuIC (Real-Time Quaking-Induced Conversion) — CSF",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "MOST SPECIFIC test for prion disease; sensitivity 92%, specificity 99-100%. Gold standard CSF prion test",
+          "target": "Negative (positive = prion disease essentially confirmed)"
+        },
+        {
+          "item": "Tau protein (CSF — total tau)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Markedly elevated in CJD (>1150 pg/mL); also elevated in AD but less extreme",
+          "target": "Normal (<400 pg/mL; CJD often >10,000)"
+        },
+        {
+          "item": "Neuron-specific enolase (NSE) — CSF",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Elevated in CJD (>35 ng/mL); marker of neuronal damage",
+          "target": "Normal"
+        },
+        {
+          "item": "AD biomarkers (CSF Aβ42, p-tau, t-tau)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rapidly progressive Alzheimer disease (rpAD) is the most common misdiagnosis of CJD; AD biomarker pattern distinguishes",
+          "target": "Aβ42/Aβ40 ratio normal; p-tau/t-tau ratio helps distinguish"
+        },
+        {
+          "item": "Neurofilament light chain (NfL) — CSF or serum",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Non-specific marker of neuronal damage; markedly elevated in CJD, moderately in many RPDs",
+          "target": "Baseline for comparison"
+        },
+        {
+          "item": "Whipple disease PCR (CSF and duodenal biopsy)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Tropheryma whipplei — rare but treatable cause of RPD with oculomasticatory myorhythmia; GI symptoms, arthralgia",
+          "target": "Negative"
+        },
+        {
+          "item": "PRNG gene analysis (blood)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Genetic prion disease (familial CJD, fatal familial insomnia, GSS); family history of early dementia or movement disorder",
+          "target": "No mutation"
+        },
+        {
+          "item": "QuantiFERON-TB Gold / PPD",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "TB meningitis with cognitive decline",
+          "target": "Negative"
+        },
+        {
+          "item": "Bartonella serology",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Cat-scratch disease encephalitis",
+          "target": "Negative"
+        },
+        {
+          "item": "Brucella serology",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Neurobrucellosis (occupational exposure)",
+          "target": "Negative"
+        },
+        {
+          "item": "Lyme antibody (ELISA, Western blot)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lyme encephalopathy (endemic areas)",
+          "target": "Negative"
+        },
+        {
+          "item": "Celiac antibodies (tTG IgA, deamidated gliadin)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Gluten ataxia / celiac encephalopathy",
+          "target": "Negative"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Elevated ICP in mass, hydrocephalus, venous thrombosis",
+          "target": "Normal (10-20 cm H2O)"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Pleocytosis suggests infection, autoimmune, or lymphoma; normal in CJD",
+          "target": "Normal in CJD; elevated in autoimmune/infectious"
+        },
+        {
+          "item": "Protein",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Elevated in infection, inflammation, malignancy; mildly elevated or normal in CJD",
+          "target": "Normal or mildly elevated in CJD; elevated in infection/autoimmune"
+        },
+        {
+          "item": "Glucose with paired serum",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Low in bacterial/TB/fungal meningitis, carcinomatous meningitis",
+          "target": "Normal in CJD, autoimmune; low in infectious/malignant"
+        },
+        {
+          "item": "Gram stain and culture",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Exclude chronic bacterial infection",
+          "target": "No organisms"
+        },
+        {
+          "item": "RT-QuIC (Real-Time Quaking-Induced Conversion)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Most sensitive and specific CSF test for prion disease (sensitivity 92%, specificity 99-100%)",
+          "target": "Negative"
+        },
+        {
+          "item": "14-3-3 protein",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "CJD biomarker; rapid neuronal destruction marker",
+          "target": "Negative"
+        },
+        {
+          "item": "Total tau protein",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Markedly elevated in CJD (>1150 pg/mL); moderately elevated in AD",
+          "target": "Normal (<400 pg/mL)"
+        },
+        {
+          "item": "NSE (neuron-specific enolase)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "CJD biomarker",
+          "target": "Normal"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (CSF) — NMDAR, LGI1, CASPR2, GABA-B, GABA-A, AMPA, DPPX",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "CSF more sensitive than serum for NMDAR antibodies; identifies treatable autoimmune etiology",
+          "target": "Negative"
+        },
+        {
+          "item": "Paraneoplastic antibodies (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "More sensitive than serum for some antibodies",
+          "target": "Negative"
+        },
+        {
+          "item": "Oligoclonal bands, IgG index",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Intrathecal antibody synthesis (MS, autoimmune, neurosarcoidosis)",
+          "target": "Negative"
+        },
+        {
+          "item": "Cytology (send 10 mL minimum; repeat x3 for sensitivity)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Leptomeningeal carcinomatosis/lymphoma; sensitivity improves with volume and repeat",
+          "target": "Negative"
+        },
+        {
+          "item": "Flow cytometry",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "CNS lymphoma (B-cell clonality)",
+          "target": "Normal"
+        },
+        {
+          "item": "HSV 1/2 PCR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "HSV encephalitis; post-HSV autoimmune encephalitis",
+          "target": "Negative"
+        },
+        {
+          "item": "VZV PCR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "VZV vasculopathy / encephalitis",
+          "target": "Negative"
+        },
+        {
+          "item": "EBV PCR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "CNS lymphoma (EBV-driven)",
+          "target": "Negative"
+        },
+        {
+          "item": "JC virus PCR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "PML (immunocompromised)",
+          "target": "Negative"
+        },
+        {
+          "item": "VDRL (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Neurosyphilis",
+          "target": "Non-reactive"
+        },
+        {
+          "item": "Cryptococcal antigen",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Cryptococcal meningitis (immunocompromised)",
+          "target": "Negative"
+        },
+        {
+          "item": "AFB smear and culture",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "TB meningitis",
+          "target": "Negative"
+        },
+        {
+          "item": "ACE level (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Neurosarcoidosis",
+          "target": "Normal"
+        },
+        {
+          "item": "Whipple PCR (T. whipplei)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "rationale": "Whipple disease",
+          "target": "Negative"
+        },
+        {
+          "item": "Beta-2 microglobulin (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "CNS lymphoma marker",
+          "target": "Normal"
+        },
+        {
+          "item": "Alzheimer biomarkers (Aβ42, Aβ40, p-tau 181, t-tau)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "rpAD pattern: low Aβ42, elevated p-tau; helps distinguish from CJD (where p-tau is NOT as elevated relative to t-tau)",
+          "target": "Context-dependent"
+        },
+        {
+          "item": "Neurofilament light chain (NfL) — CSF",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Non-specific neuronal damage; very elevated in CJD",
+          "target": "Baseline"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with and without contrast + DWI",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Within 24h. DWI is CRITICAL — cortical ribboning on DWI is highly suggestive of CJD",
+          "target": "CJD: cortical ribboning (DWI/FLAIR high signal in cortex), caudate/putamen signal. Autoimmune: mesial temporal T2/FLAIR. Vasculitis: multifocal white matter lesions. Lymphoma: enhancing mass. Wernicke: mamillary body/thalamic signal. MS: periventricular/juxtacortical lesions",
+          "contraindications": "Pacemaker, metallic implants"
+        },
+        {
+          "item": "EEG (routine or prolonged)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Within 24h",
+          "target": "CJD: periodic sharp wave complexes (PSWCs) at 1-2 Hz — sensitivity ~65% (higher in sCJD-MM1). Seizures: electrographic activity. NCSE: subclinical seizures. Autoimmune: extreme delta brush (NMDAR)",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "CT head without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Immediate if acute presentation or focal deficit",
+          "target": "Mass lesion, hydrocephalus, hemorrhage, large infarct",
+          "contraindications": "Pregnancy (relative)"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRA/MRV brain",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If vasculitis or venous thrombosis suspected",
+          "target": "CNS vasculitis (beading); dural sinus thrombosis",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "MRI spine",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If concurrent myelopathy (B12 deficiency, copper deficiency, neurosarcoidosis)",
+          "target": "Cord signal change (posterior columns in B12/copper); sarcoid enhancement",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "Continuous EEG (cEEG)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If altered consciousness; suspected NCSE",
+          "target": "Non-convulsive seizures; subclinical status",
+          "contraindications": "None"
+        },
+        {
+          "item": "FDG-PET brain",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Differentiate neurodegenerative patterns; detect occult malignancy; autoimmune encephalitis (mesial temporal hypermetabolism)",
+          "target": "AD: temporoparietal hypometabolism. FTD: frontal/temporal. CJD: cortical/striatal. Lymphoma: hypermetabolic mass. Autoimmune: mesial temporal hypermetabolism",
+          "contraindications": "Pregnancy; uncontrolled diabetes"
+        },
+        {
+          "item": "PET-CT body (whole body)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Occult malignancy search (paraneoplastic); lymphoma staging",
+          "target": "Primary tumor identification",
+          "contraindications": "Same as FDG-PET"
+        },
+        {
+          "item": "CT chest/abdomen/pelvis with contrast",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Cancer screening (paraneoplastic); sarcoidosis (hilar adenopathy)",
+          "target": "Mass, lymphadenopathy",
+          "contraindications": "Contrast allergy, renal impairment"
+        },
+        {
+          "item": "Conventional cerebral angiography (DSA)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If CNS vasculitis suspected (MRA normal does not exclude small-vessel vasculitis)",
+          "target": "Beading (alternating stenosis/dilation)",
+          "contraindications": "Contrast allergy, coagulopathy"
+        },
+        {
+          "item": "Testicular ultrasound (males)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "Testicular germ cell tumor (paraneoplastic; anti-NMDAR in males)",
+          "target": "Normal",
+          "contraindications": "None"
+        },
+        {
+          "item": "Pelvic ultrasound/MRI (females)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Ovarian teratoma (anti-NMDAR encephalitis — present in 50% of young women)",
+          "target": "Normal",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Brain biopsy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Last resort when all non-invasive testing inconclusive; suspected CNS vasculitis, intravascular lymphoma, or prion disease where RT-QuIC unavailable",
+          "target": "Vasculitis (vessel wall inflammation); lymphoma (atypical cells); prion disease (spongiform change, PrP immunostaining)",
+          "contraindications": "Surgical risk; coagulopathy"
+        },
+        {
+          "item": "Meningeal biopsy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Chronic meningitis of unknown etiology",
+          "target": "Granulomas (sarcoid, TB); malignancy",
+          "contraindications": "Same as brain biopsy"
+        },
+        {
+          "item": "Bone marrow biopsy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If intravascular lymphoma, hemophagocytic lymphohistiocytosis (HLH), or hematologic malignancy suspected",
+          "target": "Abnormal cells; hemophagocytosis",
+          "contraindications": "Coagulopathy"
+        },
+        {
+          "item": "Upper endoscopy with duodenal biopsy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Whipple disease (PAS-positive macrophages)",
+          "target": "Normal (PAS-negative)",
+          "contraindications": "Standard GI endoscopy risks"
+        },
+        {
+          "item": "Sleep polysomnography",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Fatal familial insomnia (FFI) — complete loss of sleep architecture",
+          "target": "Absent sleep spindles; disrupted sleep architecture",
+          "contraindications": "Cooperation"
+        }
+      ]
+    },
+    "Treatment": {
+      "Empiric / Treatable Causes — TREAT WHILE AWAITING RESULTS": [
+        {
+          "item": "Thiamine (B1) IV",
+          "route": "IV",
+          "indication": "Empiric for Wernicke encephalopathy if ANY suspicion (alcohol, malnutrition, bariatric surgery); treat before glucose",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Thiamine (B1) IV 500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500 mg IV TID x 3-5 days, then 250 mg IV daily x 3-5 days, then 100 mg PO daily ongoing",
+            "orderSentence": "Thiamine (B1) IV 500 mg IV"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Clinical response (confusion, ataxia, ophthalmoplegia should improve)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV methylprednisolone (empiric immunotherapy trial)",
+          "route": "IV",
+          "indication": "Suspected autoimmune encephalitis, Hashimoto encephalopathy (SREAT), neurosarcoidosis, CNS vasculitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "IV methylprednisolone (empiric immunotherapy trial) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily x 3-5 days. Consider when autoimmune etiology suspected and workup pending. Document pre-treatment baseline exam.",
+            "orderSentence": "IV methylprednisolone (empiric immunotherapy trial) 1000 mg IV"
+          },
+          "contraindications": "Active infection (rule out first); uncertain prion disease (steroids do not help CJD and may mask diagnosis)",
+          "monitoring": "Glucose q6h; BP; GI prophylaxis; response assessment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "IVIG (empiric immunotherapy trial)",
+          "route": "-",
+          "indication": "Suspected autoimmune encephalitis; concurrent with steroid trial",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIG (empiric immunotherapy trial) 0.4 g/kg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "0.4 g/kg/day x 5 days (total 2 g/kg). Add to steroids or as alternative if steroid-intolerant",
+            "orderSentence": "IVIG (empiric immunotherapy trial) 0.4 g/kg -"
+          },
+          "contraindications": "IgA deficiency; renal failure; thrombotic risk",
+          "monitoring": "Renal function; headache; thrombotic events",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Acyclovir IV (if HSV not excluded)",
+          "route": "IV",
+          "indication": "Empiric while awaiting HSV PCR; fever + encephalopathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg",
+                "orderSentence": "Acyclovir IV (if HSV not excluded) 10 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg/kg IV q8h. Continue until HSV PCR confirmed negative",
+            "orderSentence": "Acyclovir IV (if HSV not excluded) 10 mg/kg IV"
+          },
+          "contraindications": "Renal impairment (dose adjust)",
+          "monitoring": "Cr daily; hydration",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Targeted Treatments (Once Diagnosis Established)": [
+        {
+          "item": "IV methylprednisolone → oral prednisone taper",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1g",
+                "orderSentence": "IV methylprednisolone → oral prednisone taper 1g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1g IV x 5d → prednisone 1 mg/kg/day with slow taper over 3-6 months",
+            "orderSentence": "IV methylprednisolone → oral prednisone taper 1g IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Glucose, BP, bone density, weight, mood",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "IVIG",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIG 0.4 g/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.4 g/kg/day x 5 days; repeat monthly for maintenance",
+            "orderSentence": "IVIG 0.4 g/kg PO"
+          },
+          "contraindications": "-",
+          "monitoring": "Renal function; IgG levels",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Rituximab",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "375 mg/m2",
+                "orderSentence": "Rituximab 375 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "375 mg/m2 IV weekly x 4 weeks OR 1000 mg IV x 2 doses (2 weeks apart)",
+            "orderSentence": "Rituximab 375 mg/m2 IV"
+          },
+          "contraindications": "-",
+          "monitoring": "CD19/20 counts; immunoglobulins; infection risk; PML risk",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Cyclophosphamide",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "750-1000 mg/m2",
+                "orderSentence": "Cyclophosphamide 750-1000 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "750-1000 mg/m2 IV monthly x 6 months (pulse) OR oral 1-2 mg/kg/day",
+            "orderSentence": "Cyclophosphamide 750-1000 mg/m2 IV"
+          },
+          "contraindications": "-",
+          "monitoring": "CBC (nadir at 10-14 days); urinalysis (hemorrhagic cystitis — give MESNA); fertility preservation discussion",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Penicillin G IV",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "18-24 million units/day IV (3-4 MU q4h) x 14 days",
+            "orderSentence": "Penicillin G IV - IV - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "RPR titer follow-up q3-6 months (4-fold decline expected)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Tumor-directed therapy",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Per oncology",
+            "orderSentence": "Tumor-directed therapy - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Clinical response; antibody titers",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Teratoma resection",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Surgical removal",
+            "orderSentence": "Teratoma resection - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Repeat imaging; antibody titers",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "B12 replacement",
+          "route": "IM",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Cyanocobalamin 1000 µg IM daily x 7 days, then weekly x 4, then monthly long-term",
+            "orderSentence": "B12 replacement - IM - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "B12 and MMA levels at 3 months",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Antifungals (amphotericin B + flucytosine)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.7-1 mg/kg",
+                "orderSentence": "Antifungals (amphotericin B + flucytosine) 0.7-1 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Amphotericin B 0.7-1 mg/kg/day IV + flucytosine 100 mg/kg/day x 2 weeks (induction)",
+            "orderSentence": "Antifungals (amphotericin B + flucytosine) 0.7-1 mg/kg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Renal function; electrolytes; LFTs",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-TB regimen",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "RIPE: rifampin + isoniazid + pyrazinamide + ethambutol",
+            "orderSentence": "Anti-TB regimen - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "LFTs; visual acuity (ethambutol); drug interactions",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "No disease-modifying treatment",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Supportive care only; no effective treatment exists",
+            "orderSentence": "No disease-modifying treatment - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Comfort care; goals of care discussion",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Levetiracetam",
+          "route": "IV",
+          "indication": "Seizures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1500 mg",
+                "orderSentence": "Levetiracetam 500-1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500-1500 mg PO/IV BID; max 3000 mg/day",
+            "orderSentence": "Levetiracetam 500-1500 mg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Renal function; behavioral changes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV",
+          "indication": "Agitation, myoclonus (CJD)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-1 mg",
+                "orderSentence": "Lorazepam 0.5-1 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5-1 mg PO/IV q6-8h PRN",
+            "orderSentence": "Lorazepam 0.5-1 mg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "Respiratory depression",
+          "monitoring": "Sedation; respiratory status",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonazepam",
+          "route": "PO",
+          "indication": "Myoclonus (CJD)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Clonazepam 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.5 mg PO BID; increase to 1-2 mg TID",
+            "orderSentence": "Clonazepam 0.5 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Respiratory depression; fall risk",
+          "monitoring": "Sedation; fall prevention",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Valproic acid",
+          "route": "PO",
+          "indication": "Myoclonus (adjunctive); seizures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250-500 mg",
+                "orderSentence": "Valproic acid 250-500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "250-500 mg PO BID; target level 50-100 µg/mL",
+            "orderSentence": "Valproic acid 250-500 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Hepatic disease; pancreatitis; pregnancy",
+          "monitoring": "LFTs; ammonia; drug level; CBC",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Quetiapine",
+          "route": "PO",
+          "indication": "Agitation, psychosis, behavioral disturbance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg",
+                "orderSentence": "Quetiapine 25-50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg PO qHS; increase by 25 mg/day; max 200-400 mg/day",
+            "orderSentence": "Quetiapine 25-50 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "QT prolongation; Parkinson disease (avoid all antipsychotics in Lewy body)",
+          "monitoring": "QTc; metabolic panel; sedation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Insomnia, behavioral disturbance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg",
+                "orderSentence": "Trazodone 25-50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg PO qHS; max 150 mg",
+            "orderSentence": "Trazodone 25-50 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Priapism (rare); orthostatic hypotension",
+          "monitoring": "Sedation; orthostasis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Insomnia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3-10 mg",
+                "orderSentence": "Melatonin 3-10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-10 mg PO qHS",
+            "orderSentence": "Melatonin 3-10 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "None significant",
+          "monitoring": "Sleep quality",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology (behavioral/cognitive subspecialty if available)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT",
+          "indication": "All RPD cases; diagnostic workup direction; empiric treatment decisions"
+        },
+        {
+          "item": "Neuro-immunology",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "Suspected autoimmune encephalitis; immunotherapy management"
+        },
+        {
+          "item": "Infectious disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Suspected CNS infection (neurosyphilis, TB, HIV, fungal, Whipple)"
+        },
+        {
+          "item": "Oncology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Paraneoplastic syndrome; CNS lymphoma; brain metastases"
+        },
+        {
+          "item": "Neurosurgery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "indication": "Brain biopsy consideration; hydrocephalus management"
+        },
+        {
+          "item": "Rheumatology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Suspected CNS vasculitis; lupus cerebritis; sarcoidosis"
+        },
+        {
+          "item": "Psychiatry",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Behavioral management; depression; capacity assessment"
+        },
+        {
+          "item": "Neuropsychology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Formal cognitive testing; baseline and follow-up"
+        },
+        {
+          "item": "Palliative care",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "indication": "Goals of care (especially if CJD suspected); symptom management"
+        },
+        {
+          "item": "Social work",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Family support; advance directive planning; caregiver resources"
+        },
+        {
+          "item": "Genetic counseling",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "If genetic prion disease suspected; family implications"
+        },
+        {
+          "item": "Ethics consultation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "indication": "End-of-life decisions; capacity evaluation for untreatable conditions"
+        },
+        {
+          "item": "National Prion Disease Pathology Surveillance Center (Cleveland)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "If CJD suspected: contact for diagnostic guidance and potential brain autopsy"
+        },
+        {
+          "item": "Speech-language pathology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Dysphagia; communication strategies"
+        },
+        {
+          "item": "Physical/Occupational therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Safety; mobility; ADLs; fall prevention"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "RPD has many TREATABLE causes — aggressive workup is justified",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED if: new seizure, sudden worsening, falls, inability to swallow, fever",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT drive",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Ensure 24/7 supervision at home (fall risk, wandering, impaired judgment)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Advance directives / healthcare power of attorney should be completed early while patient can still participate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "If CJD is diagnosed: no cure exists; disease is uniformly fatal; focus on comfort and quality of life",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "CJD is NOT contagious through casual contact; standard precautions are sufficient; no isolation needed for family",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "CJD surgical instruments: notify any surgical/dental providers about diagnosis (special sterilization or instrument destruction required)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Family support resources: CJD Foundation (www.cjdfoundation.org); Autoimmune Encephalitis Alliance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow-up with neurology frequently (weekly to monthly depending on trajectory)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Fall prevention (remove tripping hazards, grab bars, non-slip surfaces)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "No driving, no operating machinery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Medication management by caregiver (patient cannot reliably self-administer)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Home safety evaluation (OT)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Caregiver support and respite care",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Nutritional support (swallowing may decline; SLP evaluation)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Medical ID bracelet",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Creutzfeldt-Jakob disease (CJD)",
+      "features": "Weeks-months; myoclonus; startle; akinetic mutism late; MRI cortical ribboning + caudate/putamen DWI signal; PSWCs on EEG",
+      "tests": "RT-QuIC (CSF); 14-3-3; total tau >1150; MRI DWI; EEG"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis (anti-NMDAR)",
+      "features": "Subacute; psychiatric symptoms → seizures → movement disorder → autonomic → decreased consciousness; young women; ovarian teratoma",
+      "tests": "NMDAR antibody (CSF > serum); pelvic imaging"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis (anti-LGI1)",
+      "features": "Faciobrachial dystonic seizures; hyponatremia; memory loss; >40 years",
+      "tests": "LGI1 antibody (serum > CSF); serum Na"
+    },
+    {
+      "diagnosis": "Hashimoto encephalopathy (SREAT)",
+      "features": "Euthyroid or hypothyroid; high anti-TPO; steroid-responsive; diagnosis of exclusion",
+      "tests": "Anti-TPO elevated; response to steroids; exclude other causes"
+    },
+    {
+      "diagnosis": "Rapidly progressive Alzheimer disease (rpAD)",
+      "features": "Most common misdiagnosis of CJD; positive AD biomarkers (low Aβ42, high p-tau); no myoclonus typically; MRI shows atrophy, no DWI ribboning",
+      "tests": "CSF AD biomarkers (Aβ42/Aβ40 ratio low, p-tau elevated); MRI (atrophy without DWI cortical signal); RT-QuIC negative"
+    },
+    {
+      "diagnosis": "CNS lymphoma (primary or intravascular)",
+      "features": "B symptoms; enhancing mass (primary); multifocal white matter changes with LDH elevation and no mass (intravascular)",
+      "tests": "MRI with contrast; CSF cytology + flow cytometry; EBV PCR; brain biopsy; LDH; peripheral smear"
+    },
+    {
+      "diagnosis": "Leptomeningeal carcinomatosis",
+      "features": "Known malignancy; cranial neuropathies; communicating hydrocephalus; CSF cytology positive",
+      "tests": "CSF cytology (repeat x3); MRI with contrast (leptomeningeal enhancement)"
+    },
+    {
+      "diagnosis": "Neurosyphilis",
+      "features": "RPR/VDRL positive; Argyll Robertson pupils; psychiatric symptoms; may have prior STI history",
+      "tests": "RPR/VDRL (serum); CSF VDRL; FTA-ABS"
+    },
+    {
+      "diagnosis": "Wernicke encephalopathy",
+      "features": "Acute confusion + ophthalmoplegia + ataxia triad (only 10% have all three); alcoholism, malnutrition",
+      "tests": "Thiamine level (draw before treatment); MRI (mamillary body, thalamic signal); clinical response to thiamine"
+    },
+    {
+      "diagnosis": "CNS vasculitis",
+      "features": "Headache; multifocal deficits; strokes; CSF pleocytosis",
+      "tests": "MRA (beading); DSA; brain/meningeal biopsy; ESR/CRP elevated"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis",
+      "features": "Cranial neuropathies (CN VII); leptomeningeal enhancement; hilar adenopathy; elevated ACE",
+      "tests": "Chest CT; serum/CSF ACE; biopsy (granulomas)"
+    },
+    {
+      "diagnosis": "Normal pressure hydrocephalus (NPH)",
+      "features": "Triad: gait disorder (predominant) + urinary incontinence + dementia; \"wet, wobbly, and wacky\"; ventricular enlargement disproportionate to atrophy",
+      "tests": "Large-volume LP (30-50 mL) with pre/post gait assessment; MRI (Evans index >0.3)"
+    },
+    {
+      "diagnosis": "Toxic/metabolic encephalopathy",
+      "features": "Medication toxicity (lithium, methotrexate, chemotherapy); substance abuse; hepatic/uremic encephalopathy",
+      "tests": "Drug levels; LFTs; ammonia; BUN/Cr; UDS"
+    },
+    {
+      "diagnosis": "Depression/Pseudo-dementia",
+      "features": "Depressive symptoms predominant; subjective cognitive complaints > objective deficits; onset correlates with depressive episode",
+      "tests": "Neuropsychological testing; psychiatric evaluation; may improve with antidepressant"
+    },
+    {
+      "diagnosis": "Whipple disease",
+      "features": "Oculomasticatory myorhythmia (pathognomonic); GI symptoms; arthralgia; chronic diarrhea",
+      "tests": "T. whipplei PCR (CSF, duodenal biopsy); PAS-positive macrophages on biopsy"
+    },
+    {
+      "diagnosis": "PML (progressive multifocal leukoencephalopathy)",
+      "features": "Immunocompromised; multifocal white matter lesions (no enhancement typically); progressive deficits",
+      "tests": "JC virus PCR (CSF); MRI pattern; clinical context"
+    },
+    {
+      "diagnosis": "Fatal familial insomnia",
+      "features": "Genetic prion disease; progressive insomnia → autonomic dysfunction → motor signs → dementia; family history",
+      "tests": "PRNP gene testing (D178N mutation with 129M); polysomnography (absent sleep spindles)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "RT-QuIC for CJD diagnosis (sensitivity 92%, specificity 99-100%)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "McGuire et al. (Ann Neurol 2012); Atarashi et al. (Nat Med 2011)"
+    },
+    {
+      "recommendation": "MRI DWI cortical ribboning for CJD",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Vitali et al. (Neurology 2011); Young et al. (AJNR 2005)"
+    },
+    {
+      "recommendation": "CSF 14-3-3 protein for CJD (sensitivity ~90%, lower specificity)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "WHO diagnostic criteria; Muayqil et al. (2012)"
+    },
+    {
+      "recommendation": "Comprehensive autoimmune antibody testing in RPD",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Graus et al. (Lancet Neurol 2016) — diagnostic criteria for autoimmune encephalitis"
+    },
+    {
+      "recommendation": "Empiric immunotherapy trial for suspected autoimmune encephalitis",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "Expert consensus; Dalmau & Graus (NEJM 2018)"
+    },
+    {
+      "recommendation": "Anti-NMDAR encephalitis: immunotherapy + teratoma resection",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Titulaer et al. (Lancet Neurol 2013)"
+    },
+    {
+      "recommendation": "Anti-LGI1: steroids as first-line",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Irani et al. (Brain 2010)"
+    },
+    {
+      "recommendation": "Hashimoto encephalopathy (SREAT): steroid-responsive",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "Castillo et al. (Arch Neurol 2006); diagnosis of exclusion"
+    },
+    {
+      "recommendation": "Thiamine for Wernicke: high-dose IV (500 mg TID)",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Thomson & Marshall (2006); Galvin et al. (2010)"
+    },
+    {
+      "recommendation": "Neurosyphilis: IV penicillin G x 14 days",
+      "evidenceLevel": "Class I, Level A",
+      "source": "CDC STI Treatment Guidelines"
+    },
+    {
+      "recommendation": "CJD: no effective treatment; supportive care only",
+      "evidenceLevel": "Class I, Level A",
+      "source": "No disease-modifying therapy exists; multiple trials failed"
+    },
+    {
+      "recommendation": "Brain biopsy when non-invasive workup inconclusive",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "Expert consensus; diagnostic yield 57-65% in RPD"
+    },
+    {
+      "recommendation": "Save CSF frozen for future studies",
+      "evidenceLevel": "Class I, Level C",
+      "source": "Standard practice; new biomarkers emerging"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Cognitive assessment (MMSE, MoCA, or bedside exam)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Baseline; weekly inpatient; each visit outpatient",
+      "action": "Document trajectory; adjust treatment"
+    },
+    {
+      "item": "Neurologic exam (focal signs, myoclonus, gait, cranial nerves)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Daily inpatient; each visit outpatient",
+      "action": "If new focal signs: repeat MRI; if myoclonus: add clonazepam"
+    },
+    {
+      "item": "Seizure monitoring",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Clinical observation; EEG if suspicious",
+      "action": "AED initiation/adjustment"
+    },
+    {
+      "item": "Swallowing assessment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "Weekly; SLP evaluation",
+      "action": "Modified diet; NG/PEG if progressive"
+    },
+    {
+      "item": "Weight",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Weekly",
+      "action": "Nutritional support"
+    },
+    {
+      "item": "Serum sodium",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q12-24h initially; then per clinical indication",
+      "action": "SIADH management if low; LGI1 encephalitis associated with hyponatremia"
+    },
+    {
+      "item": "Renal function",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Daily if on acyclovir or nephrotoxic drugs; weekly otherwise",
+      "action": "Dose adjustments"
+    },
+    {
+      "item": "Response to immunotherapy",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Assess at day 5 of steroids/IVIG; then weekly",
+      "action": "If no response: consider second-line (rituximab); reconsider diagnosis"
+    },
+    {
+      "item": "Autoimmune antibody titers (follow-up)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q3-6 months if positive",
+      "action": "If rising: relapse risk; adjust immunotherapy"
+    },
+    {
+      "item": "Safety assessment (fall risk, wandering, capacity)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Daily inpatient; each visit outpatient",
+      "action": "Increase supervision; facility placement if needed"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Stable cognition; safe home environment with 24/7 caregiver; outpatient workup can be completed; no active seizures; swallowing safe; outpatient follow-up arranged within 1-2 weeks"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "Acute/subacute decline requiring urgent workup; unable to safely manage at home; seizures; empiric immunotherapy trial; cannot complete workup as outpatient"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Status epilepticus; respiratory failure; autonomic instability; severe agitation requiring sedation; ICP management"
+    },
+    {
+      "disposition": "Transfer to tertiary center",
+      "criteria": "Complex workup (brain biopsy, specialized autoimmune testing); prion disease expertise; clinical trial access"
+    },
+    {
+      "disposition": "Memory care / Long-term care",
+      "criteria": "Progressive untreatable dementia (CJD, advanced neurodegenerative); unable to care for self; caregiver unable to manage"
+    },
+    {
+      "disposition": "Hospice",
+      "criteria": "Confirmed CJD or other untreatable rapidly fatal diagnosis; focus on comfort"
+    }
+  ]
+}

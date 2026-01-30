@@ -1,0 +1,815 @@
+{
+  "id": "trigeminal-neuralgia",
+  "title": "Trigeminal Neuralgia",
+  "version": "1.0",
+  "icd10": [
+    "** G50.0 (Trigeminal neuralgia)",
+    "G50.1 (Atypical facial pain)",
+    "G44.847 (Trigeminal autonomic cephalalgia)"
+  ],
+  "scope": "** Evaluation and management of trigeminal neuralgia in adults including classical TN (with or without neurovascular compression), secondary TN, and painful trigeminal neuropathy. Covers medical management, procedural interventions, and surgical options. Applies to ED, hospital, and outpatient settings.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline for carbamazepine (bone marrow suppression)",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP (sodium, LFTs)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Carbamazepine: hyponatremia, hepatotoxicity",
+          "target": "Normal"
+        },
+        {
+          "item": "HLA-B*1502 (Asian ancestry)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "SJS/TEN risk with carbamazepine in Asian populations",
+          "target": "Negative"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "ESR, CRP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If vasculitis or GCA suspected (elderly, V1)",
+          "target": "Normal"
+        },
+        {
+          "item": "ANA, SSA/SSB",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Sjögren syndrome can cause trigeminal neuropathy",
+          "target": "Negative"
+        },
+        {
+          "item": "CSF analysis",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If MS or CNS infection suspected",
+          "target": "Normal; or MS-consistent findings"
+        },
+        {
+          "item": "ACE level",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Neurosarcoidosis",
+          "target": "Normal"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with dedicated trigeminal protocol",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "All patients; before treatment",
+          "target": "Identify neurovascular compression, tumor, MS plaques",
+          "contraindications": "Pacemaker, metal"
+        },
+        {
+          "item": "MRA (if MRI equivocal)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Evaluate vascular loop",
+          "target": "Define vessel relationship",
+          "contraindications": "Same"
+        },
+        {
+          "item": "CT head (if MRI unavailable)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "Emergent exclusion of mass",
+          "target": "No mass",
+          "contraindications": "None (contrast: renal)"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "3D-CISS/FIESTA sequence",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Pre-surgical planning",
+          "target": "Define nerve-vessel relationship",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "High-resolution MRI trigeminal nerve",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If painful neuropathy; atypical features",
+          "target": "Nerve atrophy, enhancement, mass",
+          "contraindications": "Same"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Trigeminal reflex testing (blink reflex)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If sensory loss; differentiate from neuropathy",
+          "target": "Normal in classical TN; abnormal in secondary",
+          "contraindications": "None"
+        },
+        {
+          "item": "Dental/maxillofacial evaluation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Exclude dental pathology as pain source",
+          "target": "No dental cause",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "First-Line Pharmacotherapy": [
+        {
+          "item": "Carbamazepine (Tegretol)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100-200 mg",
+                "orderSentence": "Carbamazepine (Tegretol) 100-200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100-200 mg BID; increase by 100-200 mg q3-7 days; target 400-1200 mg/day divided BID-TID",
+            "orderSentence": "Carbamazepine (Tegretol) 100-200 mg PO"
+          },
+          "contraindications": "AV block, bone marrow suppression, MAOIs, Asian ancestry (check HLA-B*1502)",
+          "monitoring": "CBC, LFTs, Na q2-4 weeks initially, then q3-6 months; drug levels optional",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxcarbazepine (Trileptal)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150-300 mg",
+                "orderSentence": "Oxcarbazepine (Trileptal) 150-300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "150-300 mg BID; increase by 300 mg/week; target 600-1800 mg/day",
+            "orderSentence": "Oxcarbazepine (Trileptal) 150-300 mg PO"
+          },
+          "contraindications": "Severe hyponatremia; less drug interactions than CBZ",
+          "monitoring": "Na (hyponatremia more common); CBC, LFTs less critical",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-Line Pharmacotherapy": [
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mg TID; increase by 5 mg q3 days; target 30-80 mg/day divided TID",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Renal impairment (dose reduce)",
+          "monitoring": "Sedation, weakness; taper slowly to avoid withdrawal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lamotrigine",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Lamotrigine 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25 mg daily × 2 weeks, then 50 mg daily × 2 weeks, then increase by 50 mg q2 weeks; target 200-400 mg/day",
+            "orderSentence": "Lamotrigine 25 mg PO"
+          },
+          "contraindications": "History of rash with AEDs",
+          "monitoring": "Rash (SJS risk with rapid titration); slow titration mandatory",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "300 mg TID; titrate to 1800-3600 mg/day; less effective than CBZ/OXC",
+            "orderSentence": "Gabapentin 300 mg -"
+          },
+          "contraindications": "CrCl <60: reduce dose",
+          "monitoring": "Sedation; renal dosing",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "75 mg BID; titrate to 150-300 mg BID",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "CrCl <60: reduce dose",
+          "monitoring": "Sedation, weight gain; renal dosing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Combination Therapy": [
+        {
+          "item": "Carbamazepine + Baclofen",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "If monotherapy inadequate; use lower doses",
+            "orderSentence": "Carbamazepine + Baclofen - - - see dosing"
+          },
+          "contraindications": "Per individual agents",
+          "monitoring": "Per individual agents",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbamazepine + Lamotrigine",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Additive efficacy; CBZ induces lamotrigine metabolism (need higher LTG dose)",
+            "orderSentence": "Carbamazepine + Lamotrigine - - - see dosing"
+          },
+          "contraindications": "Per individual agents",
+          "monitoring": "Drug interactions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxcarbazepine + Gabapentin",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "If CBZ not tolerated",
+            "orderSentence": "Oxcarbazepine + Gabapentin - - - see dosing"
+          },
+          "contraindications": "Per individual agents",
+          "monitoring": "Hyponatremia, sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Acute Exacerbation Management": [
+        {
+          "item": "Fosphenytoin (severe exacerbation)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-20 mg",
+                "orderSentence": "Fosphenytoin (severe exacerbation) 15-20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "15-20 mg PE/kg IV at 100-150 mg/min; then phenytoin 100 mg TID",
+            "orderSentence": "Fosphenytoin (severe exacerbation) 15-20 mg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "Sinus bradycardia, heart block, Adams-Stokes syndrome",
+          "monitoring": "ECG, BP during infusion; phenytoin levels",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "IV lidocaine",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-3 mg/kg",
+                "orderSentence": "IV lidocaine 1-3 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-3 mg/kg IV over 20-30 min (monitored setting); for severe refractory pain",
+            "orderSentence": "IV lidocaine 1-3 mg/kg IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "Cardiac conduction abnormalities",
+          "monitoring": "Continuous cardiac monitoring",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Peripheral nerve block (V2/V3)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Lidocaine/bupivacaine at foramen rotundum/ovale",
+            "orderSentence": "Peripheral nerve block (V2/V3) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "Infection, coagulopathy",
+          "monitoring": "Short-term relief",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Interventional Procedures (Refractory to Medical Therapy)": [
+        {
+          "item": "Percutaneous balloon compression",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Outpatient/short-stay; compresses gasserian ganglion",
+            "orderSentence": "Percutaneous balloon compression - - - see dosing"
+          },
+          "contraindications": "Coagulopathy",
+          "monitoring": "Facial numbness; recurrence 20-30% at 5 years",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Percutaneous glycerol rhizolysis",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Injection into Meckel's cave",
+            "orderSentence": "Percutaneous glycerol rhizolysis - - - see dosing"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same; less sensory loss",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Percutaneous radiofrequency thermocoagulation",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Thermal lesion of trigeminal ganglion",
+            "orderSentence": "Percutaneous radiofrequency thermocoagulation - - - see dosing"
+          },
+          "contraindications": "Same",
+          "monitoring": "Corneal anesthesia risk (V1); recurrence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Stereotactic radiosurgery (Gamma Knife)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Single high-dose radiation to trigeminal root; effect delayed 1-3 months",
+            "orderSentence": "Stereotactic radiosurgery (Gamma Knife) - - - see dosing"
+          },
+          "contraindications": "None absolute; prior radiation relative",
+          "monitoring": "Delayed response; facial numbness (10-30%)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Microvascular decompression (MVD)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Definitive surgery; move offending vessel; craniotomy",
+            "orderSentence": "Microvascular decompression (MVD) - - - see dosing"
+          },
+          "contraindications": "High surgical risk; no vascular compression",
+          "monitoring": "Hearing loss (1-2%), facial numbness (3%), stroke (<1%), recurrence 15-20% at 10 years",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Diagnosis confirmation; medication management; atypical cases"
+        },
+        {
+          "item": "Neurosurgery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Refractory to medical therapy; MVD evaluation"
+        },
+        {
+          "item": "Pain management",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Interventional procedures; multimodal pain"
+        },
+        {
+          "item": "Dentistry/oral surgery",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Exclude dental pathology"
+        },
+        {
+          "item": "Ophthalmology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "V1 involvement; corneal protection if sensory loss"
+        },
+        {
+          "item": "Neuro-oncology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "If tumor-related TN"
+        },
+        {
+          "item": "MS specialist",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "If MS-related TN"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "TN is a chronic condition; medications can control but rarely cure",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Identify and avoid triggers (cold wind, chewing, talking, touching face)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take medications consistently; do not stop suddenly (taper)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report rash immediately (especially with carbamazepine, lamotrigine) - may indicate SJS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report excessive drowsiness, confusion, difficulty walking",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Soft diet if chewing triggers attacks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Surgical options exist for medication-refractory cases",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Trigeminal Neuralgia Association (tna-support.org) resources",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Discuss risks/benefits of all surgical options",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "MVD: Craniotomy risks (hearing loss, stroke, infection, CSF leak, facial numbness)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Percutaneous procedures: Facial numbness expected (30-50%); anesthesia dolorosa rare",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Radiosurgery: Delayed onset (weeks-months); facial numbness (10-30%)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "V1 involvement: Discuss corneal protection if sensory loss anticipated",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Dental pain",
+      "features": "Related to specific tooth; continuous; percussion tenderness",
+      "tests": "Dental exam, X-ray"
+    },
+    {
+      "diagnosis": "TMJ disorder",
+      "features": "Jaw pain; clicking; related to chewing; bilateral possible",
+      "tests": "Clinical exam; MRI TMJ"
+    },
+    {
+      "diagnosis": "Cluster headache",
+      "features": "Periorbital; autonomic features (tearing, rhinorrhea, ptosis); longer attacks",
+      "tests": "History; ICHD-3 criteria"
+    },
+    {
+      "diagnosis": "SUNCT/SUNA",
+      "features": "Very brief attacks; prominent autonomic features",
+      "tests": "History; ICHD-3 criteria"
+    },
+    {
+      "diagnosis": "Post-herpetic neuralgia",
+      "features": "History of zoster; dermatomal; continuous",
+      "tests": "History; rash history"
+    },
+    {
+      "diagnosis": "Glossopharyngeal neuralgia",
+      "features": "Throat/ear pain; triggered by swallowing",
+      "tests": "History; carbamazepine response"
+    },
+    {
+      "diagnosis": "Migraine",
+      "features": "Longer attacks; photophobia, phonophobia; nausea",
+      "tests": "History"
+    },
+    {
+      "diagnosis": "Atypical facial pain",
+      "features": "Continuous; crosses trigeminal boundaries; psychiatric comorbidity",
+      "tests": "Diagnosis of exclusion"
+    },
+    {
+      "diagnosis": "Giant cell arteritis",
+      "features": "Age >50; V1 distribution; jaw claudication; elevated ESR",
+      "tests": "ESR, CRP; temporal artery biopsy"
+    },
+    {
+      "diagnosis": "Nasopharyngeal carcinoma",
+      "features": "Numbness (painful neuropathy); cranial nerve palsies",
+      "tests": "MRI; biopsy"
+    },
+    {
+      "diagnosis": "Acoustic neuroma",
+      "features": "V5 distribution numbness; hearing loss",
+      "tests": "MRI with IAC protocol"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Carbamazepine first-line for TN",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple RCTs; AAN/EFNS Guidelines 2008, reaffirmed"
+    },
+    {
+      "recommendation": "Oxcarbazepine as effective alternative",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Multiple RCTs"
+    },
+    {
+      "recommendation": "MVD most effective long-term for classical TN with compression",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Multiple case series; long-term outcome data"
+    },
+    {
+      "recommendation": "Percutaneous procedures effective for refractory TN",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Multiple case series"
+    },
+    {
+      "recommendation": "Stereotactic radiosurgery effective",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Multiple case series"
+    },
+    {
+      "recommendation": "HLA-B*1502 testing before carbamazepine in Asians",
+      "evidenceLevel": "Class I",
+      "source": "FDA recommendation"
+    },
+    {
+      "recommendation": "Lamotrigine effective as add-on therapy",
+      "evidenceLevel": "Class II, Level B",
+      "source": "RCTs"
+    },
+    {
+      "recommendation": "Baclofen effective as add-on",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Small studies"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Pain frequency/severity (diary)",
+      "ED": "-",
+      "HOSP": "Daily",
+      "OPD": "Every visit",
+      "ICU": "-",
+      "frequency": "Ongoing",
+      "action": "Adjust medications; consider procedures"
+    },
+    {
+      "item": "CBC (carbamazepine)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "q2-4 weeks × 3 months, then q3-6 months",
+      "ICU": "-",
+      "frequency": "Per schedule",
+      "action": "Hold CBZ if low"
+    },
+    {
+      "item": "LFTs (carbamazepine)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "q2-4 weeks × 3 months, then q3-6 months",
+      "ICU": "-",
+      "frequency": "Per schedule",
+      "action": "Hold if significantly elevated"
+    },
+    {
+      "item": "Sodium (oxcarbazepine)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "q2-4 weeks initially, then q3 months",
+      "ICU": "-",
+      "frequency": "Per schedule",
+      "action": "Reduce dose; fluid restrict"
+    },
+    {
+      "item": "Carbamazepine level",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "If breakthrough pain, toxicity, or compliance concern",
+      "action": "Adjust dose"
+    },
+    {
+      "item": "Rash surveillance",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "Every visit",
+      "ICU": "STAT",
+      "frequency": "Ongoing",
+      "action": "STOP carbamazepine/lamotrigine immediately; evaluate for SJS"
+    },
+    {
+      "item": "Neurologic exam (post-procedure)",
+      "ED": "-",
+      "HOSP": "Daily",
+      "OPD": "Every visit",
+      "ICU": "-",
+      "frequency": "Post-procedure",
+      "action": "Evaluate for complications"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Diagnosis confirmed; pain controlled with oral medications"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "Severe uncontrolled pain requiring IV therapy; severe medication side effects; post-surgical monitoring"
+    },
+    {
+      "disposition": "Neurology follow-up",
+      "criteria": "q1-2 weeks during medication titration; q3-6 months when stable"
+    },
+    {
+      "disposition": "Neurosurgery follow-up",
+      "criteria": "If refractory to medical therapy; post-procedural"
+    },
+    {
+      "disposition": "Urgent follow-up",
+      "criteria": "Status trigeminus (continuous attacks); medication failure; new sensory loss"
+    }
+  ]
+}

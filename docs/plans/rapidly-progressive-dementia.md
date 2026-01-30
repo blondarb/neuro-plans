@@ -1,3 +1,10 @@
+---
+title: "Rapidly Progressive Dementia"
+description: "Clinical decision support for rapidly progressive dementia (rpd) diagnosis and management"
+version: "1.0"
+setting: "ED, HOSP, OPD, ICU"
+---
+
 # Rapidly Progressive Dementia
 
 **VERSION:** 1.0
@@ -9,6 +16,8 @@
 **DIAGNOSIS:** Rapidly Progressive Dementia (RPD)
 
 **ICD-10:** F03.90 (Unspecified dementia without behavioral disturbance), G31.9 (Degenerative disease of nervous system, unspecified), A81.00 (Creutzfeldt-Jakob disease, unspecified)
+
+**SYNONYMS:** Rapidly progressive dementia, RPD, rapidly progressive cognitive decline, subacute dementia, prion disease evaluation, CJD workup, Creutzfeldt-Jakob disease, rapid onset dementia, fast progressing dementia, subacute encephalopathy
 
 **SCOPE:** Urgent evaluation of cognitive decline progressing over weeks to months (typically <1-2 years from symptom onset to severe disability). Covers comprehensive workup to identify treatable causes including autoimmune encephalitis, infectious etiologies, toxic-metabolic causes, CNS malignancy, and prion disease (CJD). The key principle: assume a treatable cause exists until proven otherwise. Excludes typical slowly progressive dementias (Alzheimer's, FTD) unless presenting atypically fast, and acute delirium (<days).
 
@@ -160,40 +169,40 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Empiric / Treatable Causes — TREAT WHILE AWAITING RESULTS
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Indication | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|------------|-------------------|------------|
-| Thiamine (B1) IV | STAT | STAT | - | STAT | 500 mg IV TID x 3-5 days, then 250 mg IV daily x 3-5 days, then 100 mg PO daily ongoing | Empiric for Wernicke encephalopathy if ANY suspicion (alcohol, malnutrition, bariatric surgery); treat before glucose | None significant | Clinical response (confusion, ataxia, ophthalmoplegia should improve) |
-| IV methylprednisolone (empiric immunotherapy trial) | - | URGENT | - | URGENT | 1000 mg IV daily x 3-5 days. Consider when autoimmune etiology suspected and workup pending. Document pre-treatment baseline exam. | Suspected autoimmune encephalitis, Hashimoto encephalopathy (SREAT), neurosarcoidosis, CNS vasculitis | Active infection (rule out first); uncertain prion disease (steroids do not help CJD and may mask diagnosis) | Glucose q6h; BP; GI prophylaxis; response assessment |
-| IVIG (empiric immunotherapy trial) | - | URGENT | - | URGENT | 0.4 g/kg/day x 5 days (total 2 g/kg). Add to steroids or as alternative if steroid-intolerant | Suspected autoimmune encephalitis; concurrent with steroid trial | IgA deficiency; renal failure; thrombotic risk | Renal function; headache; thrombotic events |
-| Acyclovir IV (if HSV not excluded) | STAT | STAT | - | STAT | 10 mg/kg IV q8h. Continue until HSV PCR confirmed negative | Empiric while awaiting HSV PCR; fever + encephalopathy | Renal impairment (dose adjust) | Cr daily; hydration |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Thiamine (B1) IV | IV | Empiric for Wernicke encephalopathy if ANY suspicion (alcohol, malnutrition, bariatric surgery); treat before glucose | 500 mg :: IV :: TID :: 500 mg IV TID x 3-5 days, then 250 mg IV daily x 3-5 days, then 100 mg PO daily ongoing | None significant | Clinical response (confusion, ataxia, ophthalmoplegia should improve) | STAT | STAT | - | STAT |
+| IV methylprednisolone (empiric immunotherapy trial) | IV | Suspected autoimmune encephalitis, Hashimoto encephalopathy (SREAT), neurosarcoidosis, CNS vasculitis | 1000 mg :: IV :: daily :: 1000 mg IV daily x 3-5 days. Consider when autoimmune etiology suspected and workup pending. Document pre-treatment baseline exam. | Active infection (rule out first); uncertain prion disease (steroids do not help CJD and may mask diagnosis) | Glucose q6h; BP; GI prophylaxis; response assessment | - | URGENT | - | URGENT |
+| IVIG (empiric immunotherapy trial) | - | Suspected autoimmune encephalitis; concurrent with steroid trial | 0.4 g/kg :: - :: daily x 5 days :: 0.4 g/kg/day x 5 days (total 2 g/kg). Add to steroids or as alternative if steroid-intolerant | IgA deficiency; renal failure; thrombotic risk | Renal function; headache; thrombotic events | - | URGENT | - | URGENT |
+| Acyclovir IV (if HSV not excluded) | IV | Empiric while awaiting HSV PCR; fever + encephalopathy | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h. Continue until HSV PCR confirmed negative | Renal impairment (dose adjust) | Cr daily; hydration | STAT | STAT | - | STAT |
 
 ### 3B. Targeted Treatments (Once Diagnosis Established)
 
-| Treatment | Diagnosis | Dosing | Duration | Monitoring |
-|-----------|-----------|--------|----------|------------|
-| IV methylprednisolone → oral prednisone taper | Autoimmune encephalitis, SREAT, neurosarcoidosis | 1g IV x 5d → prednisone 1 mg/kg/day with slow taper over 3-6 months | Months to years (diagnosis-dependent) | Glucose, BP, bone density, weight, mood |
-| IVIG | Autoimmune encephalitis (NMDAR, LGI1, CASPR2) | 0.4 g/kg/day x 5 days; repeat monthly for maintenance | Months; taper based on clinical response | Renal function; IgG levels |
-| Rituximab | Refractory autoimmune encephalitis; anti-NMDAR | 375 mg/m2 IV weekly x 4 weeks OR 1000 mg IV x 2 doses (2 weeks apart) | Repeat q6 months based on CD19/20 counts | CD19/20 counts; immunoglobulins; infection risk; PML risk |
-| Cyclophosphamide | Refractory autoimmune encephalitis; CNS vasculitis | 750-1000 mg/m2 IV monthly x 6 months (pulse) OR oral 1-2 mg/kg/day | 6-12 months for vasculitis | CBC (nadir at 10-14 days); urinalysis (hemorrhagic cystitis — give MESNA); fertility preservation discussion |
-| Penicillin G IV | Neurosyphilis | 18-24 million units/day IV (3-4 MU q4h) x 14 days | 14 days | RPR titer follow-up q3-6 months (4-fold decline expected) |
-| Tumor-directed therapy | Paraneoplastic (treat underlying cancer) | Per oncology | Per oncology | Clinical response; antibody titers |
-| Teratoma resection | Anti-NMDAR with ovarian teratoma | Surgical removal | One-time (but may recur) | Repeat imaging; antibody titers |
-| B12 replacement | B12 deficiency | Cyanocobalamin 1000 µg IM daily x 7 days, then weekly x 4, then monthly long-term | Lifelong if pernicious anemia | B12 and MMA levels at 3 months |
-| Antifungals (amphotericin B + flucytosine) | Cryptococcal meningitis | Amphotericin B 0.7-1 mg/kg/day IV + flucytosine 100 mg/kg/day x 2 weeks (induction) | Weeks (induction) then fluconazole maintenance | Renal function; electrolytes; LFTs |
-| Anti-TB regimen | TB meningitis | RIPE: rifampin + isoniazid + pyrazinamide + ethambutol | 12 months minimum (2 months intensive + 10 months continuation) | LFTs; visual acuity (ethambutol); drug interactions |
-| No disease-modifying treatment | Prion disease (CJD) | Supportive care only; no effective treatment exists | N/A | Comfort care; goals of care discussion |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| IV methylprednisolone → oral prednisone taper | IV | - | 1g :: IV :: - :: 1g IV x 5d → prednisone 1 mg/kg/day with slow taper over 3-6 months | - | Glucose, BP, bone density, weight, mood | - | - | - | - |
+| IVIG | PO | - | 0.4 g/kg :: PO :: monthly :: 0.4 g/kg/day x 5 days; repeat monthly for maintenance | - | Renal function; IgG levels | - | - | - | - |
+| Rituximab | IV | - | 375 mg/m2 :: IV :: - :: 375 mg/m2 IV weekly x 4 weeks OR 1000 mg IV x 2 doses (2 weeks apart) | - | CD19/20 counts; immunoglobulins; infection risk; PML risk | - | - | - | - |
+| Cyclophosphamide | IV | - | 750-1000 mg/m2 :: IV :: monthly :: 750-1000 mg/m2 IV monthly x 6 months (pulse) OR oral 1-2 mg/kg/day | - | CBC (nadir at 10-14 days); urinalysis (hemorrhagic cystitis — give MESNA); fertility preservation discussion | - | - | - | - |
+| Penicillin G IV | IV | - | 18-24 million units/day IV (3-4 MU q4h) x 14 days | - | RPR titer follow-up q3-6 months (4-fold decline expected) | - | - | - | - |
+| Tumor-directed therapy | - | - | Per oncology | - | Clinical response; antibody titers | - | - | - | - |
+| Teratoma resection | - | - | Surgical removal | - | Repeat imaging; antibody titers | - | - | - | - |
+| B12 replacement | IM | - | Cyanocobalamin 1000 µg IM daily x 7 days, then weekly x 4, then monthly long-term | - | B12 and MMA levels at 3 months | - | - | - | - |
+| Antifungals (amphotericin B + flucytosine) | IV | - | 0.7-1 mg/kg :: IV :: - :: Amphotericin B 0.7-1 mg/kg/day IV + flucytosine 100 mg/kg/day x 2 weeks (induction) | - | Renal function; electrolytes; LFTs | - | - | - | - |
+| Anti-TB regimen | - | - | RIPE: rifampin + isoniazid + pyrazinamide + ethambutol | - | LFTs; visual acuity (ethambutol); drug interactions | - | - | - | - |
+| No disease-modifying treatment | - | - | Supportive care only; no effective treatment exists | - | Comfort care; goals of care discussion | - | - | - | - |
 
 ### 3C. Symptomatic Treatments
 
-| Treatment | Indication | Dosing | Contraindications | Monitoring |
-|-----------|------------|--------|-------------------|------------|
-| Levetiracetam | Seizures | 500-1500 mg PO/IV BID; max 3000 mg/day | Severe renal impairment (dose adjust) | Renal function; behavioral changes |
-| Lorazepam | Agitation, myoclonus (CJD) | 0.5-1 mg PO/IV q6-8h PRN | Respiratory depression | Sedation; respiratory status |
-| Clonazepam | Myoclonus (CJD) | 0.5 mg PO BID; increase to 1-2 mg TID | Respiratory depression; fall risk | Sedation; fall prevention |
-| Valproic acid | Myoclonus (adjunctive); seizures | 250-500 mg PO BID; target level 50-100 µg/mL | Hepatic disease; pancreatitis; pregnancy | LFTs; ammonia; drug level; CBC |
-| Quetiapine | Agitation, psychosis, behavioral disturbance | 25-50 mg PO qHS; increase by 25 mg/day; max 200-400 mg/day | QT prolongation; Parkinson disease (avoid all antipsychotics in Lewy body) | QTc; metabolic panel; sedation |
-| Trazodone | Insomnia, behavioral disturbance | 25-50 mg PO qHS; max 150 mg | Priapism (rare); orthostatic hypotension | Sedation; orthostasis |
-| Melatonin | Insomnia | 3-10 mg PO qHS | None significant | Sleep quality |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Levetiracetam | IV | Seizures | 500-1500 mg :: IV :: BID :: 500-1500 mg PO/IV BID; max 3000 mg/day | - | Severe renal impairment (dose adjust) | Renal function; behavioral changes | - | - | - | - |
+| Lorazepam | IV | Agitation, myoclonus (CJD) | 0.5-1 mg :: IV :: PRN :: 0.5-1 mg PO/IV q6-8h PRN | - | Respiratory depression | Sedation; respiratory status | - | - | - | - |
+| Clonazepam | PO | Myoclonus (CJD) | 0.5 mg :: PO :: BID :: 0.5 mg PO BID; increase to 1-2 mg TID | - | Respiratory depression; fall risk | Sedation; fall prevention | - | - | - | - |
+| Valproic acid | PO | Myoclonus (adjunctive); seizures | 250-500 mg :: PO :: BID :: 250-500 mg PO BID; target level 50-100 µg/mL | - | Hepatic disease; pancreatitis; pregnancy | LFTs; ammonia; drug level; CBC | - | - | - | - |
+| Quetiapine | PO | Agitation, psychosis, behavioral disturbance | 25-50 mg :: PO :: qHS :: 25-50 mg PO qHS; increase by 25 mg/day; max 200-400 mg/day | - | QT prolongation; Parkinson disease (avoid all antipsychotics in Lewy body) | QTc; metabolic panel; sedation | - | - | - | - |
+| Trazodone | PO | Insomnia, behavioral disturbance | 25-50 mg :: PO :: qHS :: 25-50 mg PO qHS; max 150 mg | - | Priapism (rare); orthostatic hypotension | Sedation; orthostasis | - | - | - | - |
+| Melatonin | PO | Insomnia | 3-10 mg :: PO :: qHS :: 3-10 mg PO qHS | - | None significant | Sleep quality | - | - | - | - |
 
 ---
 

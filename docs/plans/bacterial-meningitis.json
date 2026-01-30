@@ -1,0 +1,1479 @@
+{
+  "id": "bacterial-meningitis",
+  "title": "Bacterial Meningitis",
+  "version": "1.0",
+  "icd10": [
+    "** G00.9 (Bacterial meningitis",
+    "unspecified)",
+    "G00.1 (Pneumococcal meningitis)",
+    "G00.0 (Hemophilus meningitis)",
+    "A39.0 (Meningococcal meningitis)",
+    "G00.3 (Staphylococcal meningitis)"
+  ],
+  "scope": "** Acute community-acquired bacterial meningitis in adults. Covers emergency empiric antibiotics, dexamethasone adjunctive therapy, LP and CSF analysis, targeted therapy by organism, and complications management. Excludes viral meningitis, fungal meningitis, TB meningitis, healthcare-associated/post-surgical meningitis, and pediatric meningitis.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Blood cultures x2 (different sites)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "MUST be drawn BEFORE antibiotics but do NOT delay antibiotics to obtain; positive in 50-70% of bacterial meningitis",
+          "target": "Organism identification and sensitivities"
+        },
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Leukocytosis with left shift; baseline; thrombocytopenia (DIC risk)",
+          "target": "WBC elevated; neutrophilia"
+        },
+        {
+          "item": "CMP (BMP + LFTs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Electrolytes (SIADH: hyponatremia), renal/hepatic function for antibiotic dosing",
+          "target": "Normal; watch Na"
+        },
+        {
+          "item": "Procalcitonin",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Highly sensitive for bacterial infection; helps distinguish bacterial from viral meningitis (>0.5 strongly suggests bacterial)",
+          "target": "Elevated (>0.5 ng/mL bacterial; typically >2.0)"
+        },
+        {
+          "item": "CRP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Inflammatory marker; helps monitor treatment response",
+          "target": "Elevated"
+        },
+        {
+          "item": "Lactate",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Sepsis assessment; elevated in bacterial meningitis",
+          "target": "<2 mmol/L (elevated suggests sepsis)"
+        },
+        {
+          "item": "Coagulation panel (PT/INR, aPTT, fibrinogen)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "DIC screening (meningococcemia); coagulopathy before LP",
+          "target": "Normal; DIC: elevated PT/aPTT, low fibrinogen, elevated D-dimer"
+        },
+        {
+          "item": "D-dimer",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "DIC assessment (especially meningococcemia)",
+          "target": "Normal"
+        },
+        {
+          "item": "Blood glucose (concurrent with LP)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Calculate CSF:serum glucose ratio",
+          "target": "Paired with CSF glucose"
+        },
+        {
+          "item": "Type and screen",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Potential need for blood products (DIC, sepsis)",
+          "target": "On file"
+        },
+        {
+          "item": "Point-of-care glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hypoglycemia assessment; sepsis",
+          "target": ">60 mg/dL"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Serum osmolality",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "SIADH assessment (common complication)",
+          "target": "280-295 mOsm/kg"
+        },
+        {
+          "item": "Urine osmolality and sodium",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Confirm SIADH if hyponatremia",
+          "target": "Urine osm >100, urine Na >40 in SIADH"
+        },
+        {
+          "item": "Serum cortisol (random or AM)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Adrenal insufficiency (Waterhouse-Friderichsen in meningococcemia)",
+          "target": ">18 µg/dL (random stress level)"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Immunocompromise affects empiric coverage and differential",
+          "target": "Negative"
+        },
+        {
+          "item": "Complement levels (C5-C9, CH50, AH50)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Terminal complement deficiency predisposes to recurrent Neisseria meningitidis",
+          "target": "Normal"
+        },
+        {
+          "item": "Immunoglobulin levels (IgG, IgA, IgM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypogammaglobulinemia predisposes to encapsulated organisms",
+          "target": "Normal"
+        },
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction screen (critical illness)",
+          "target": "Normal"
+        },
+        {
+          "item": "Troponin",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Sepsis-associated myocardial injury",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Metagenomic next-generation sequencing (mNGS) of CSF",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "Culture-negative meningitis; prior antibiotic exposure; atypical organisms",
+          "target": "Pathogen identification"
+        },
+        {
+          "item": "Beta-D-glucan (serum)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "If fungal meningitis suspected (immunocompromised)",
+          "target": "Negative (<60 pg/mL)"
+        },
+        {
+          "item": "Galactomannan (serum)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "Aspergillus (immunocompromised)",
+          "target": "Negative"
+        },
+        {
+          "item": "Cryptococcal antigen (serum)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "HIV/immunocompromised; chronic meningitis",
+          "target": "Negative"
+        },
+        {
+          "item": "RPR/VDRL (serum)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis in differential",
+          "target": "Negative"
+        },
+        {
+          "item": "QuantiFERON-TB Gold",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "TB meningitis in high-risk patients",
+          "target": "Negative"
+        },
+        {
+          "item": "Skull base/sinus CT",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Recurrent meningitis: skull base fracture, CSF leak, sinusitis",
+          "target": "No fracture or defect"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Elevated in bacterial meningitis; monitor for elevated ICP",
+          "target": "Typically 200-500 mm H2O (normal <200); markedly elevated suggests edema/hydrocephalus"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 AND 4)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Bacterial: neutrophilic pleocytosis; tube 1 vs 4 differentiates traumatic tap",
+          "target": "WBC >1000 cells/µL with >80% neutrophils (bacterial); WBC 100-10,000 typical"
+        },
+        {
+          "item": "Protein",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Elevated in bacterial meningitis",
+          "target": "Elevated (>100 mg/dL typical; often 100-500)"
+        },
+        {
+          "item": "Glucose with paired serum glucose",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "CSF:serum ratio <0.4 strongly suggests bacterial meningitis",
+          "target": "Low (<40 mg/dL; CSF:serum ratio <0.4)"
+        },
+        {
+          "item": "Gram stain",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Rapid identification; positive in 60-90% of untreated bacterial meningitis",
+          "target": "Organisms identified (gram-positive diplococci = pneumococcus; gram-negative diplococci = meningococcus; gram-positive rods = Listeria; gram-negative rods = E. coli/Haemophilus)"
+        },
+        {
+          "item": "Bacterial culture and sensitivity",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Gold standard for organism identification and antibiotic sensitivities; may be negative after antibiotics",
+          "target": "Organism identified with sensitivities"
+        },
+        {
+          "item": "BioFire FilmArray Meningitis/Encephalitis Panel",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Rapid multiplex PCR (14 pathogens in ~1 hour); especially valuable if prior antibiotics given",
+          "target": "Identifies E. coli K1, H. influenzae, L. monocytogenes, N. meningitidis, S. agalactiae, S. pneumoniae, plus viruses (HSV, enterovirus, VZV, etc.) and Cryptococcus"
+        },
+        {
+          "item": "Lactate (CSF)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "CSF lactate >3.5 mmol/L highly suggestive of bacterial (sensitivity ~93%, specificity ~96%); useful post-antibiotics when cultures may be negative",
+          "target": "<3.5 mmol/L (bacterial typically >4.0)"
+        },
+        {
+          "item": "HSV 1/2 PCR",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Exclude concurrent HSV encephalitis; do not miss treatable cause",
+          "target": "Negative"
+        },
+        {
+          "item": "Cryptococcal antigen (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "If immunocompromised or subacute presentation",
+          "target": "Negative"
+        },
+        {
+          "item": "AFB smear and culture",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "If TB meningitis suspected (subacute, basilar enhancement, HIV)",
+          "target": "Negative"
+        },
+        {
+          "item": "VDRL (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Neurosyphilis screen",
+          "target": "Negative"
+        },
+        {
+          "item": "Cytology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "If malignancy in differential",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "ONLY if LP delay indications present (see below). Do NOT delay antibiotics for CT. CT BEFORE LP only if: immunocompromised, history of CNS disease, new seizure, papilledema, altered consciousness (GCS <10), focal neurologic deficit",
+          "target": "Mass effect, hydrocephalus, abscess, herniation risk",
+          "contraindications": "Pregnancy (relative)"
+        },
+        {
+          "item": "Chest X-ray",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Within first hours",
+          "target": "Pneumonia (S. pneumoniae source), ARDS",
+          "contraindications": "None significant"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with and without contrast",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Within 24-48h or sooner if complications suspected",
+          "target": "Meningeal enhancement, abscess, empyema, cerebritis, venous sinus thrombosis, hydrocephalus",
+          "contraindications": "Pacemaker, metallic implants"
+        },
+        {
+          "item": "CT head with contrast",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If MRI not available",
+          "target": "Same as MRI (lower sensitivity)",
+          "contraindications": "Contrast allergy, renal impairment"
+        },
+        {
+          "item": "MRV (MR venography)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "If cerebral venous thrombosis suspected (persistent headache, focal signs, seizures)",
+          "target": "Venous sinus thrombosis",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "CT temporal bones / skull base",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Recurrent meningitis; suspected CSF leak",
+          "target": "Fracture, tegmen dehiscence, cholesteatoma",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Echocardiogram",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "If S. aureus or endocarditis suspected",
+          "target": "Vegetations, embolic risk",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Continuous EEG",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If altered mental status persists despite treatment; suspected non-convulsive seizures",
+          "target": "Seizure activity, status epilepticus",
+          "contraindications": "None significant"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CT cisternogram",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Recurrent meningitis with suspected CSF leak",
+          "target": "CSF leak localization",
+          "contraindications": "Contrast allergy"
+        },
+        {
+          "item": "Beta-2 transferrin (nasal/ear drainage)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Suspected CSF rhinorrhea or otorrhea",
+          "target": "Positive = CSF leak",
+          "contraindications": "None"
+        },
+        {
+          "item": "Intrathecal fluorescein",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "CSF leak localization (surgical planning)",
+          "target": "Fluorescent leakage site",
+          "contraindications": "Allergy"
+        },
+        {
+          "item": "ICP monitoring (EVD)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If signs of elevated ICP, declining consciousness despite treatment",
+          "target": "ICP <22 mmHg; CPP >60",
+          "contraindications": "Coagulopathy (correct first)"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent — Empiric Therapy": [
+        {
+          "item": "Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.15 mg/kg",
+                "orderSentence": "Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) 0.15 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.15 mg/kg IV q6h x 4 days (typically 10 mg IV q6h). MUST be given BEFORE or simultaneously with first antibiotic dose. Greatest benefit for S. pneumoniae (reduces mortality and hearing loss). Discontinue if organism is NOT S. pneumoniae (some centers continue regardless)",
+            "orderSentence": "Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) 0.15 mg/kg IV"
+          },
+          "contraindications": "Not proven beneficial if antibiotics already started >1h prior",
+          "monitoring": "Glucose q6h; GI prophylaxis; BP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Vancomycin IV",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-20 mg/kg",
+                "orderSentence": "Vancomycin IV 15-20 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "15-20 mg/kg IV q8-12h (target trough 15-20 µg/mL or AUC/MIC 400-600); loading dose 25-30 mg/kg if severe. Covers penicillin-resistant S. pneumoniae, MRSA",
+            "orderSentence": "Vancomycin IV 15-20 mg/kg IV"
+          },
+          "contraindications": "Red man syndrome (infuse over ≥1h); renal impairment (dose adjust)",
+          "monitoring": "Trough levels before 4th dose; renal function daily; watch for nephrotoxicity and ototoxicity",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ceftriaxone IV",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Ceftriaxone IV 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV q12h. Covers S. pneumoniae (penicillin-sensitive), N. meningitidis, H. influenzae, gram-negative organisms",
+            "orderSentence": "Ceftriaxone IV 2 g IV"
+          },
+          "contraindications": "Cephalosporin allergy (cross-reactivity low with penicillin allergy); neonatal hyperbilirubinemia",
+          "monitoring": "CBC; LFTs; biliary sludge with prolonged use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ampicillin IV (add if Listeria risk)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Ampicillin IV (add if Listeria risk) 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV q4h. ADD to vancomycin + ceftriaxone if: age >50, immunocompromised, alcoholism, pregnancy. Covers Listeria monocytogenes (resistant to cephalosporins)",
+            "orderSentence": "Ampicillin IV (add if Listeria risk) 2 g IV"
+          },
+          "contraindications": "Penicillin anaphylaxis (use TMP-SMX as alternative for Listeria)",
+          "monitoring": "Rash; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acyclovir IV (empiric — until HSV excluded)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg",
+                "orderSentence": "Acyclovir IV (empiric — until HSV excluded) 10 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg/kg IV q8h. Add empirically if ANY suspicion of encephalitis (confusion, focal signs, seizures, temporal lobe changes). Discontinue when HSV PCR negative",
+            "orderSentence": "Acyclovir IV (empiric — until HSV excluded) 10 mg/kg IV"
+          },
+          "contraindications": "Renal impairment (dose adjust); ensure adequate hydration",
+          "monitoring": "Renal function daily; adequate IV hydration (1 mL/kg/h); crystal nephropathy prevention",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV normal saline",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Isotonic fluid resuscitation for sepsis; maintenance fluids. Avoid hypo/hypernatremia",
+            "orderSentence": "IV normal saline - IV - see dosing"
+          },
+          "contraindications": "Volume overload",
+          "monitoring": "I/O; electrolytes q6-12h; watch for SIADH",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Vasopressors: Norepinephrine",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "0.1-0.5 µg/kg/min IV; first-line for septic shock after fluid resuscitation",
+            "orderSentence": "Vasopressors: Norepinephrine - IV - see dosing"
+          },
+          "contraindications": "Only via central line",
+          "monitoring": "MAP target ≥65 mmHg; continuous arterial monitoring",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Targeted Therapy by Organism (Once Identified)": [
+        {
+          "item": "Penicillin G (if penicillin-sensitive S. pneumoniae, MIC <0.06)",
+          "route": "IV",
+          "indication": "S. pneumoniae (sensitive)",
+          "dosing": {
+            "instructions": "4 million units IV q4h",
+            "orderSentence": "Penicillin G (if penicillin-sensitive S. pneumoniae, MIC <0.06) - IV - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Renal function; CBC",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ceftriaxone (if intermediate or unknown sensitivity)",
+          "route": "IV",
+          "indication": "S. pneumoniae (intermediate)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Ceftriaxone (if intermediate or unknown sensitivity) 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV q12h; continue vancomycin until sensitivities confirm",
+            "orderSentence": "Ceftriaxone (if intermediate or unknown sensitivity) 2 g IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Same as empiric",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Penicillin G or ceftriaxone",
+          "route": "IV",
+          "indication": "N. meningitidis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2g",
+                "orderSentence": "Penicillin G or ceftriaxone 2g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Penicillin G 4 MU IV q4h OR Ceftriaxone 2g IV q12h",
+            "orderSentence": "Penicillin G or ceftriaxone 2g IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Renal function",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ampicillin",
+          "route": "IV",
+          "indication": "L. monocytogenes",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Ampicillin 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV q4h (+ gentamicin 5 mg/kg/day IV for synergy in first 7-10 days, if renal function allows)",
+            "orderSentence": "Ampicillin 2 g IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Renal function (especially with gentamicin); gentamicin levels",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ceftriaxone",
+          "route": "IV",
+          "indication": "H. influenzae",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Ceftriaxone 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV q12h",
+            "orderSentence": "Ceftriaxone 2 g IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Standard",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ceftriaxone",
+          "route": "IV",
+          "indication": "E. coli / gram-negative",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Ceftriaxone 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV q12h; adjust per sensitivities",
+            "orderSentence": "Ceftriaxone 2 g IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Standard",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cefepime",
+          "route": "IV",
+          "indication": "Pseudomonas (nosocomial, immunocompromised)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Cefepime 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV q8h",
+            "orderSentence": "Cefepime 2 g IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Renal function; neurotoxicity",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Meropenem",
+          "route": "IV",
+          "indication": "Extended-spectrum beta-lactamase (ESBL) producers or multi-drug resistant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Meropenem 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV q8h",
+            "orderSentence": "Meropenem 2 g IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Renal function; seizure threshold",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Levetiracetam",
+          "route": "IV",
+          "indication": "Seizure management (if seizures occur; NOT routine prophylaxis)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1500 mg",
+                "orderSentence": "Levetiracetam 1000-1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000-1500 mg IV load; then 500-1000 mg IV/PO BID; max 3000 mg/day",
+            "orderSentence": "Levetiracetam 1000-1500 mg IV"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Renal function; mood/behavioral changes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV",
+          "indication": "Active seizure (rescue)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/kg",
+                "orderSentence": "Lorazepam 0.1 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg); may repeat x1",
+            "orderSentence": "Lorazepam 0.1 mg/kg IV"
+          },
+          "contraindications": "Respiratory depression",
+          "monitoring": "RR, SpO2",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "IV",
+          "indication": "Fever reduction, headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "650-1000 mg PO/IV q6h; max 4g/day",
+            "orderSentence": "Acetaminophen 650-1000 mg IV"
+          },
+          "contraindications": "Severe hepatic disease",
+          "monitoring": "Temperature; LFTs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "Headache (once stable)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400-600 mg",
+                "orderSentence": "Ibuprofen 400-600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-600 mg PO q6h with food",
+            "orderSentence": "Ibuprofen 400-600 mg PO"
+          },
+          "contraindications": "Renal impairment, GI bleed risk, coagulopathy",
+          "monitoring": "Renal function; GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV",
+          "indication": "Nausea/vomiting",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV/PO q6h PRN",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation",
+          "monitoring": "QTc",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mannitol 20%",
+          "route": "IV",
+          "indication": "Elevated ICP management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 g/kg",
+                "orderSentence": "Mannitol 20% 1-1.5 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 g/kg IV bolus; then 0.25-0.5 g/kg q4-6h",
+            "orderSentence": "Mannitol 20% 1-1.5 g/kg IV"
+          },
+          "contraindications": "Anuria",
+          "monitoring": "Serum osm (<320); osmolar gap; renal function",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline 23.4%",
+          "route": "IV",
+          "indication": "Elevated ICP (acute herniation)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mL IV via central line over 10-20 min",
+            "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+          },
+          "contraindications": "No central access",
+          "monitoring": "Serum Na (target 145-155); osmolality",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pantoprazole",
+          "route": "IV",
+          "indication": "GI prophylaxis (steroids + critical illness)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole 40 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "40 mg IV/PO daily",
+            "orderSentence": "Pantoprazole 40 mg IV"
+          },
+          "contraindications": "Prolonged use risks",
+          "monitoring": "GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Enoxaparin",
+          "route": "SC",
+          "indication": "DVT prophylaxis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily (start 24-48h after stable)",
+            "orderSentence": "Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active bleeding, DIC, coagulopathy",
+          "monitoring": "Platelets; coags",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Close Contacts Prophylaxis (Public Health)": [
+        {
+          "dosing": "500 mg PO x 1 dose (adults)",
+          "indication": "Close contacts within 7 days (household, kissing, shared utensils, healthcare workers with unprotected airway exposure)"
+        },
+        {
+          "dosing": "600 mg PO q12h x 2 days (adults)",
+          "indication": "Alternative; avoid in pregnancy"
+        },
+        {
+          "dosing": "250 mg IM x 1 dose",
+          "indication": "Preferred in pregnancy"
+        },
+        {
+          "dosing": "20 mg/kg PO daily x 4 days (max 600 mg)",
+          "indication": "Household with child <4 years not fully vaccinated"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Infectious disease consultation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "All bacterial meningitis; antibiotic optimization; complicated cases"
+        },
+        {
+          "item": "Neurology consultation",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "Seizures, altered consciousness, focal deficits, ICP management"
+        },
+        {
+          "item": "Neurosurgery consultation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "Hydrocephalus (EVD), brain abscess, subdural empyema, ICP management"
+        },
+        {
+          "item": "Critical care/ICU team",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "Septic shock, respiratory failure, DIC, ICP management"
+        },
+        {
+          "item": "ENT / Otolaryngology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Recurrent meningitis (CSF leak), concurrent sinusitis/mastoiditis source"
+        },
+        {
+          "item": "Audiology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Hearing assessment before discharge (hearing loss in up to 30% S. pneumoniae)"
+        },
+        {
+          "item": "Public health department",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "indication": "Meningococcal meningitis — mandatory reporting; contact tracing and prophylaxis"
+        },
+        {
+          "item": "Speech-language pathology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Swallowing assessment if altered consciousness; cognitive assessment"
+        },
+        {
+          "item": "Physical therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Mobilization, deconditioning prevention"
+        },
+        {
+          "item": "Social work",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Family support, discharge planning"
+        },
+        {
+          "item": "Palliative care",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "indication": "Severe cases with poor prognosis; goals of care"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED if: worsening headache, fever recurrence, new confusion, seizure, neck stiffness, rash, vision changes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Complete full antibiotic course (do NOT stop early even if feeling better)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Hearing test recommended 2-4 weeks after discharge",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Vaccination: pneumococcal and meningococcal vaccines after recovery if not previously immunized",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Close contacts should receive prophylactic antibiotics if N. meningitidis (public health will coordinate)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Follow-up with infectious disease and neurology in 2-4 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report any new neurologic symptoms (hearing loss, balance problems, cognitive changes)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid alcohol during antibiotic therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Pneumococcal vaccination (PCV20 or PCV15 + PPSV23) if not previously completed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Meningococcal vaccination (MenACWY + MenB) for at-risk groups",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation (upper respiratory tract colonization risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol moderation/cessation (immunocompromise, Listeria risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Splenectomy patients: ensure vaccinated (encapsulated organism risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Complement-deficient patients: meningococcal vaccination and booster schedule",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Hand hygiene and respiratory etiquette education",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Skull base fracture/CSF leak patients: surgical repair to prevent recurrence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Viral meningitis",
+      "features": "Less toxic; CSF: lymphocytic pleocytosis, normal glucose, mildly elevated protein; self-limited",
+      "tests": "CSF cell count (lymphocytes), normal glucose, BioFire ME panel (enterovirus most common), procalcitonin low"
+    },
+    {
+      "diagnosis": "HSV encephalitis",
+      "features": "Encephalitis (confusion, personality change, seizures, focal signs); temporal lobe involvement",
+      "tests": "MRI (temporal T2/FLAIR), CSF HSV PCR, EEG (PLEDs)"
+    },
+    {
+      "diagnosis": "Tuberculous meningitis",
+      "features": "Subacute (weeks), basilar meningitis, cranial neuropathies, HIV risk; CSF: lymphocytic, low glucose, very high protein",
+      "tests": "AFB smear/culture, TB PCR (GeneXpert), adenosine deaminase (ADA), chest X-ray (miliary pattern), PPD/IGRA"
+    },
+    {
+      "diagnosis": "Fungal meningitis (Cryptococcus)",
+      "features": "Subacute/chronic; immunocompromised (HIV CD4 <100); headache predominant; minimal CSF pleocytosis",
+      "tests": "CSF cryptococcal antigen (CrAg), India ink, fungal culture"
+    },
+    {
+      "diagnosis": "Subarachnoid hemorrhage",
+      "features": "Thunderclap headache; meningismus; NOT febrile initially; xanthochromia",
+      "tests": "CT head (blood), CSF RBC (tube 1 = tube 4), xanthochromia"
+    },
+    {
+      "diagnosis": "Brain abscess",
+      "features": "Focal deficits; fever + headache + focal signs (triad); subacute; seizures",
+      "tests": "MRI with contrast (ring-enhancing lesion with restricted diffusion), CT with contrast"
+    },
+    {
+      "diagnosis": "Subdural empyema",
+      "features": "Post-sinusitis/otitis; rapid deterioration; focal deficits; seizures",
+      "tests": "MRI/CT with contrast (extra-axial collection)"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis",
+      "features": "Subacute onset; psychiatric symptoms; seizures; young women; no fever initially",
+      "tests": "Autoimmune antibody panel (serum + CSF); MRI; EEG"
+    },
+    {
+      "diagnosis": "Drug-induced aseptic meningitis",
+      "features": "NSAID, IVIG, TMP-SMX, isoniazid exposure; self-limited after drug withdrawal",
+      "tests": "Drug history; CSF lymphocytic pleocytosis; sterile cultures; resolves with drug removal"
+    },
+    {
+      "diagnosis": "Carcinomatous/leptomeningeal meningitis",
+      "features": "Subacute; cranial neuropathies; known malignancy; CSF: low glucose, elevated protein, positive cytology",
+      "tests": "CSF cytology (repeat x3 for sensitivity); MRI with contrast (leptomeningeal enhancement)"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis",
+      "features": "Chronic headache; cranial neuropathies (CN VII); hilar adenopathy; ACE level",
+      "tests": "Chest CT; serum ACE; CSF ACE; biopsy"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Empiric vancomycin + ceftriaxone +/- ampicillin",
+      "evidenceLevel": "Class I, Level A",
+      "source": "IDSA Guidelines (Tunkel et al. CID 2004; van de Beek et al. NEJM 2006)"
+    },
+    {
+      "recommendation": "Dexamethasone before or with first antibiotic dose",
+      "evidenceLevel": "Class I, Level A",
+      "source": "de Gans & van de Beek (NEJM 2002) — reduces mortality and hearing loss in S. pneumoniae"
+    },
+    {
+      "recommendation": "Do NOT delay antibiotics for imaging",
+      "evidenceLevel": "Class I, Level A",
+      "source": "IDSA Guidelines; multiple observational studies showing increased mortality with delay"
+    },
+    {
+      "recommendation": "CT before LP only for specific indications",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Hasbun et al. (NEJM 2001) — criteria for when to CT before LP"
+    },
+    {
+      "recommendation": "Blood cultures before antibiotics (if obtainable without delay)",
+      "evidenceLevel": "Class I, Level B",
+      "source": "IDSA Guidelines"
+    },
+    {
+      "recommendation": "BioFire ME Panel for rapid diagnosis",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Leber et al. (JCM 2016); FDA-cleared multiplex PCR"
+    },
+    {
+      "recommendation": "CSF lactate >3.5 mmol/L for bacterial vs viral",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Meta-analysis: Sakushima et al. (BMC ID 2011)"
+    },
+    {
+      "recommendation": "Targeted antibiotic therapy by organism",
+      "evidenceLevel": "Class I, Level A",
+      "source": "IDSA Guidelines; organism-specific duration data"
+    },
+    {
+      "recommendation": "Close contact prophylaxis for meningococcal",
+      "evidenceLevel": "Class I, Level A",
+      "source": "CDC MMWR recommendations"
+    },
+    {
+      "recommendation": "Hearing assessment post-meningitis",
+      "evidenceLevel": "Class I, Level B",
+      "source": "High incidence of hearing loss (up to 30% S. pneumoniae)"
+    },
+    {
+      "recommendation": "Seizure treatment (not routine prophylaxis)",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "Expert consensus; no clear data supporting prophylaxis"
+    },
+    {
+      "recommendation": "Procalcitonin to differentiate bacterial from viral",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Meta-analyses showing high sensitivity/specificity"
+    },
+    {
+      "recommendation": "Repeat LP at 48h if no clinical improvement",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "IDSA Guidelines"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (GCS, pupils, motor, meningismus)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q1h x 24h then q2-4h; more frequent if declining",
+      "action": "If GCS declining: STAT CT, ICP assessment, consider EVD"
+    },
+    {
+      "item": "Temperature",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q4h (q1h if febrile)",
+      "action": "If persistent fever >72h: repeat cultures, imaging for abscess/empyema, drug fever, new infection"
+    },
+    {
+      "item": "Blood pressure",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q1h if sepsis; q4h if stable",
+      "action": "Fluid resuscitation; vasopressors"
+    },
+    {
+      "item": "Heart rate",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q1-4h",
+      "action": "Sepsis management"
+    },
+    {
+      "item": "Serum sodium",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q6-8h x 48h, then q12h",
+      "action": "If <130: SIADH likely → fluid restriction (1-1.2 L/day); if <120: 3% saline"
+    },
+    {
+      "item": "Serum creatinine",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE",
+      "frequency": "Daily",
+      "action": "Adjust antibiotics if rising; vancomycin nephrotoxicity"
+    },
+    {
+      "item": "Vancomycin trough or AUC",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE",
+      "frequency": "Before 4th dose; then q24-48h until stable",
+      "action": "Adjust dosing; pharmacy consult"
+    },
+    {
+      "item": "CBC",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE",
+      "frequency": "Daily x 3, then q48h",
+      "action": "If platelets dropping: DIC panel; if WBC not improving: reassess antibiotics"
+    },
+    {
+      "item": "Coagulation panel (DIC monitoring)",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q6-12h if meningococcemia/DIC; daily otherwise",
+      "action": "FFP for INR >1.5; cryoprecipitate for fibrinogen <100; platelet transfusion if <50K with bleeding"
+    },
+    {
+      "item": "CRP / procalcitonin",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "q48-72h during treatment",
+      "action": "If not declining by day 3-5: reassess; repeat LP; imaging"
+    },
+    {
+      "item": "Seizure monitoring",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Clinical observation; cEEG if altered consciousness",
+      "action": "Levetiracetam load; if refractory → status epilepticus protocol"
+    },
+    {
+      "item": "Hearing assessment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Before discharge; repeat at 2-4 weeks",
+      "action": "Audiology referral; hearing aid evaluation if deficit"
+    },
+    {
+      "item": "ICP (if EVD in place)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Continuous",
+      "action": "Tiered ICP management: CSF drainage, osmotherapy, sedation"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Never discharge directly from ED with suspected bacterial meningitis. Discharge from hospital when: afebrile ≥48h, improving neurologic exam, able to take oral medications (IV-to-PO switch criteria met for some organisms), adequate outpatient IV access if completing IV course, reliable follow-up"
+    },
+    {
+      "disposition": "Admit to floor (monitored)",
+      "criteria": "Hemodynamically stable; GCS ≥13; no respiratory compromise; no DIC; no seizures"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Septic shock; GCS <13 or declining; respiratory failure; DIC; refractory seizures; signs of elevated ICP; meningococcemia with purpura fulminans; need for vasopressors"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Need for neurosurgery (abscess, empyema, EVD); need for neuro-ICU expertise not available"
+    }
+  ]
+}

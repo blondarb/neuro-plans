@@ -1,0 +1,1026 @@
+{
+  "id": "syncope",
+  "title": "Syncope",
+  "version": "1.0",
+  "icd10": [
+    "** R55 (Syncope and collapse)",
+    "T67.1 (Heat syncope)",
+    "G90.01 (Carotid sinus syncope)",
+    "I95.1 (Orthostatic hypotension)"
+  ],
+  "scope": "** Evaluation and management of transient loss of consciousness (TLOC) due to syncope in adults. Includes risk stratification, etiologic workup, and treatment by type. Applies to ED, hospital, and outpatient settings. Excludes seizure, stroke, metabolic causes, and traumatic loss of consciousness.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Fingerstick glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypoglycemia as cause",
+          "target": "70-180 mg/dL"
+        },
+        {
+          "item": "CBC",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Anemia; hemorrhage",
+          "target": "Normal"
+        },
+        {
+          "item": "BMP (electrolytes, creatinine)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Electrolyte abnormalities",
+          "target": "Normal"
+        },
+        {
+          "item": "Troponin",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Cardiac ischemia as trigger",
+          "target": "Negative"
+        },
+        {
+          "item": "BNP or NT-proBNP",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Heart failure; risk stratification",
+          "target": "Normal"
+        },
+        {
+          "item": "Pregnancy test (if applicable)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Ectopic pregnancy; influences workup",
+          "target": "Document"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction",
+          "target": "Normal"
+        },
+        {
+          "item": "Cortisol (AM)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Adrenal insufficiency if orthostatic",
+          "target": "Normal"
+        },
+        {
+          "item": "D-dimer",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "If PE suspected",
+          "target": "Negative"
+        },
+        {
+          "item": "Toxicology screen",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Drug/alcohol-induced",
+          "target": "Negative"
+        },
+        {
+          "item": "Blood cultures",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "If infection suspected",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "12-lead ECG",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Immediate; ALL patients",
+          "target": "No arrhythmia, normal intervals",
+          "contraindications": "None"
+        },
+        {
+          "item": "Continuous telemetry",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "If admitted",
+          "target": "No arrhythmia",
+          "contraindications": "None"
+        },
+        {
+          "item": "Transthoracic echocardiogram",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "If cardiac cause suspected",
+          "target": "Normal structure/function",
+          "contraindications": "None"
+        },
+        {
+          "item": "Exercise stress test",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If exertional syncope",
+          "target": "No ischemia, no arrhythmia",
+          "contraindications": "Acute MI, unstable angina"
+        },
+        {
+          "item": "Cardiac MRI",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Suspected cardiomyopathy, ARVC",
+          "target": "Normal or define pathology",
+          "contraindications": "Pacemaker, metal"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Holter monitor (24-48 hour)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Frequent symptoms",
+          "target": "Correlate symptoms with rhythm",
+          "contraindications": "None"
+        },
+        {
+          "item": "Event recorder (2-4 weeks)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Intermittent symptoms",
+          "target": "Symptom-rhythm correlation",
+          "contraindications": "None"
+        },
+        {
+          "item": "Insertable loop recorder (ILR)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Infrequent, unexplained recurrent syncope",
+          "target": "Identify arrhythmia",
+          "contraindications": "None"
+        },
+        {
+          "item": "Electrophysiology study (EPS)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Suspected arrhythmic cause; structural heart disease",
+          "target": "Identify inducible arrhythmia",
+          "contraindications": "Active infection"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Orthostatic vital signs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Immediate; ALL patients",
+          "target": "No orthostatic hypotension",
+          "contraindications": "None"
+        },
+        {
+          "item": "Tilt table test",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Suspected vasovagal if recurrent; dx uncertain",
+          "target": "Positive = cardioinhibitory or vasodepressor",
+          "contraindications": "Severe CAD, critical AS"
+        },
+        {
+          "item": "Carotid sinus massage",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Age >40 with unexplained syncope (not if carotid bruit)",
+          "target": "Negative (<3 sec pause, <50 mmHg drop)",
+          "contraindications": "Carotid bruit, recent stroke/TIA"
+        },
+        {
+          "item": "Autonomic function tests",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Suspected autonomic failure",
+          "target": "Characterize dysautonomia",
+          "contraindications": "Per test"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute Management (ED/Hospital)": [
+        {
+          "item": "IV access",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Establish if unstable",
+            "orderSentence": "IV access - IV - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Access",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV fluid resuscitation",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mL",
+                "orderSentence": "IV fluid resuscitation 500-1000 mL -"
+              }
+            ],
+            "route": "-",
+            "instructions": "NS 500-1000 mL bolus if hypovolemic/dehydrated",
+            "orderSentence": "IV fluid resuscitation 500-1000 mL -"
+          },
+          "contraindications": "Heart failure",
+          "monitoring": "Volume status",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Trendelenburg position",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Legs elevated if hypotensive",
+            "orderSentence": "Trendelenburg position - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "BP",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Telemetry monitoring",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Continuous if high-risk",
+            "orderSentence": "Telemetry monitoring - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Arrhythmia",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Correct reversible causes",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Treat hemorrhage, dehydration, arrhythmia, MI",
+            "orderSentence": "Correct reversible causes - - - see dosing"
+          },
+          "contraindications": "Per condition",
+          "monitoring": "Per condition",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Vasovagal Syncope Treatment": [
+        {
+          "item": "Education and reassurance",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Benign prognosis; triggers; warning signs",
+            "orderSentence": "Education and reassurance - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "None",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trigger avoidance",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Identify and avoid (prolonged standing, heat, dehydration)",
+            "orderSentence": "Trigger avoidance - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Recurrence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Counter-pressure maneuvers",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Leg crossing, hand grip, arm tensing when prodrome felt",
+            "orderSentence": "Counter-pressure maneuvers - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Effectiveness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Increased fluid/salt intake",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6-9 g",
+                "orderSentence": "Increased fluid/salt intake 6-9 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2-3 L fluid/day; 6-9 g salt/day (if no HTN/HF)",
+            "orderSentence": "Increased fluid/salt intake 6-9 g PO"
+          },
+          "contraindications": "HTN, heart failure",
+          "monitoring": "BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Compression stockings",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Waist-high, 30-40 mmHg",
+            "orderSentence": "Compression stockings - - - see dosing"
+          },
+          "contraindications": "Peripheral vascular disease",
+          "monitoring": "Compliance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tilt training",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Progressive standing against wall; controversial efficacy",
+            "orderSentence": "Tilt training - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Tolerance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Fludrocortisone",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.2 mg",
+                "orderSentence": "Fludrocortisone 0.1-0.2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.1-0.2 mg daily (refractory cases)",
+            "orderSentence": "Fludrocortisone 0.1-0.2 mg PO"
+          },
+          "contraindications": "HTN, HF",
+          "monitoring": "K+, BP, edema",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Midodrine",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5-10 mg",
+                "orderSentence": "Midodrine 2.5-10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2.5-10 mg TID (refractory cases)",
+            "orderSentence": "Midodrine 2.5-10 mg PO"
+          },
+          "contraindications": "Supine HTN, urinary retention",
+          "monitoring": "Supine HTN",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Orthostatic Syncope Treatment": [
+        {
+          "item": "Identify/discontinue offending meds",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Review diuretics, vasodilators, antihypertensives",
+            "orderSentence": "Identify/discontinue offending meds - - - see dosing"
+          },
+          "contraindications": "Clinical judgment",
+          "monitoring": "BP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Volume repletion",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "IV fluids acutely; oral fluids long-term (2-3 L/day)",
+            "orderSentence": "Volume repletion - IV - see dosing"
+          },
+          "contraindications": "Heart failure",
+          "monitoring": "Volume status",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Salt supplementation",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6-10 g/day",
+                "orderSentence": "Salt supplementation 6-10 g/day PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "6-10 g/day if no HTN/HF",
+            "orderSentence": "Salt supplementation 6-10 g/day PO"
+          },
+          "contraindications": "HTN, HF",
+          "monitoring": "BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Compression garments",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Waist-high stockings 30-40 mmHg; abdominal binder",
+            "orderSentence": "Compression garments - - - see dosing"
+          },
+          "contraindications": "PVD",
+          "monitoring": "Compliance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Elevate head of bed",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "10-20 degrees at night (reduces nocturnal diuresis)",
+            "orderSentence": "Elevate head of bed - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Tolerance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Midodrine",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5-10 mg",
+                "orderSentence": "Midodrine 2.5-10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2.5-10 mg TID; last dose before 6 PM",
+            "orderSentence": "Midodrine 2.5-10 mg PO"
+          },
+          "contraindications": "Supine HTN, urinary retention",
+          "monitoring": "Supine BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fludrocortisone",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.3 mg",
+                "orderSentence": "Fludrocortisone 0.1-0.3 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.1-0.3 mg daily",
+            "orderSentence": "Fludrocortisone 0.1-0.3 mg PO"
+          },
+          "contraindications": "HTN, HF, hypokalemia",
+          "monitoring": "K+, BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Droxidopa (Northera)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100-600 mg",
+                "orderSentence": "Droxidopa (Northera) 100-600 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "100-600 mg TID; for neurogenic orthostatic hypotension",
+            "orderSentence": "Droxidopa (Northera) 100-600 mg -"
+          },
+          "contraindications": "Supine HTN",
+          "monitoring": "Supine BP",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pyridostigmine",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30-60 mg",
+                "orderSentence": "Pyridostigmine 30-60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "30-60 mg TID; augments ganglionic transmission",
+            "orderSentence": "Pyridostigmine 30-60 mg PO"
+          },
+          "contraindications": "Asthma, GI obstruction",
+          "monitoring": "Cholinergic effects",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Carotid Sinus Syncope Treatment": [
+        {
+          "item": "Avoid tight collars, neck pressure",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Patient education",
+            "orderSentence": "Avoid tight collars, neck pressure - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "None",
+          "monitoring": "Recurrence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dual-chamber pacemaker",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "If cardioinhibitory type (pause >3 sec)",
+            "orderSentence": "Dual-chamber pacemaker - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "None",
+          "monitoring": "Device checks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Cardiac Syncope Treatment": [
+        {
+          "item": "Treat underlying arrhythmia",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Per arrhythmia type",
+            "orderSentence": "Treat underlying arrhythmia - - - see dosing"
+          },
+          "contraindications": "Per treatment",
+          "monitoring": "ECG, telemetry",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pacemaker",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Sick sinus syndrome, high-grade AV block, bradycardia-induced syncope",
+            "orderSentence": "Pacemaker - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Device checks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ICD (implantable cardioverter-defibrillator)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Ventricular arrhythmias; high-risk cardiomyopathy",
+            "orderSentence": "ICD (implantable cardioverter-defibrillator) - - - see dosing"
+          },
+          "contraindications": "Terminal illness",
+          "monitoring": "Device checks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Catheter ablation",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Arrhythmia amenable to ablation (SVT, VT)",
+            "orderSentence": "Catheter ablation - - - see dosing"
+          },
+          "contraindications": "Extensive comorbidity",
+          "monitoring": "Recurrence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Treat structural heart disease",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Aortic valve replacement for AS; revascularization for ischemia",
+            "orderSentence": "Treat structural heart disease - - - see dosing"
+          },
+          "contraindications": "Per condition",
+          "monitoring": "Per condition",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Patient Instructions": [
+        {
+          "item": "Cardiology",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "Suspected cardiac syncope; abnormal ECG; structural heart disease"
+        },
+        {
+          "item": "Electrophysiology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Arrhythmia evaluation; device consideration"
+        },
+        {
+          "item": "Neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "indication": "If seizure suspected; atypical features"
+        },
+        {
+          "item": "Autonomic disorders specialist",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Refractory orthostatic hypotension; complex dysautonomia"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Recognize prodromal symptoms and immediately sit/lie down",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Counter-pressure maneuvers if prodrome (leg crossing, hand grip)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid known triggers (prolonged standing, dehydration, heat)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Adequate hydration (2-3 L/day) and salt intake (if approved)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Rise slowly from lying/sitting; dangle legs before standing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Driving restrictions per state law; typically no driving until cause determined/treated",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return if recurrent syncope, chest pain, palpitations, dyspnea",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Seizure",
+      "features": "Tonic-clonic activity, tongue biting, prolonged postictal state, incontinence",
+      "tests": "EEG; witness description"
+    },
+    {
+      "diagnosis": "Stroke/TIA",
+      "features": "Focal neurologic deficits; usually no LOC unless brainstem",
+      "tests": "CT/MRI; neuro exam"
+    },
+    {
+      "diagnosis": "Hypoglycemia",
+      "features": "Diaphoresis, tremor, confusion; diabetes/insulin use",
+      "tests": "Fingerstick glucose"
+    },
+    {
+      "diagnosis": "Psychogenic pseudosyncope",
+      "features": "Eyes closed (vs. open in true syncope); prolonged duration; normal vitals during event",
+      "tests": "Tilt table with video EEG"
+    },
+    {
+      "diagnosis": "Drop attack",
+      "features": "Sudden fall without LOC; no prodrome",
+      "tests": "History; normal during event"
+    },
+    {
+      "diagnosis": "Cataplexy",
+      "features": "Triggered by emotion; with narcolepsy",
+      "tests": "Sleep study; history"
+    },
+    {
+      "diagnosis": "Cardiac arrest",
+      "features": "No pulse during event; does not spontaneously recover",
+      "tests": "Witnessed event; no pulse"
+    },
+    {
+      "diagnosis": "Concussion",
+      "features": "Preceded by head trauma",
+      "tests": "History"
+    },
+    {
+      "diagnosis": "Vertebrobasilar insufficiency",
+      "features": "Vertigo, diplopia, dysarthria; rare cause of syncope",
+      "tests": "MRA; history"
+    },
+    {
+      "diagnosis": "Pulmonary embolism",
+      "features": "Dyspnea, pleuritic chest pain, hypoxia; syncope in massive PE",
+      "tests": "D-dimer, CT-PA"
+    },
+    {
+      "diagnosis": "Aortic dissection",
+      "features": "Tearing chest/back pain; BP differential",
+      "tests": "CT angiography"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "ECG for all syncope patients",
+      "evidenceLevel": "Class I, Level B",
+      "source": "ESC 2018 Syncope Guidelines"
+    },
+    {
+      "recommendation": "Echo if cardiac cause suspected",
+      "evidenceLevel": "Class I, Level B",
+      "source": "ESC 2018; AHA/ACCF 2017"
+    },
+    {
+      "recommendation": "Tilt test for recurrent vasovagal syncope",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "ESC 2018"
+    },
+    {
+      "recommendation": "Pacemaker for cardioinhibitory carotid sinus syncope",
+      "evidenceLevel": "Class I, Level B",
+      "source": "ESC 2018"
+    },
+    {
+      "recommendation": "ILR for recurrent unexplained syncope",
+      "evidenceLevel": "Class I, Level A",
+      "source": "ISSUE-3 trial; ESC 2018"
+    },
+    {
+      "recommendation": "Counter-pressure maneuvers for vasovagal",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "PC-Trial"
+    },
+    {
+      "recommendation": "Midodrine for refractory orthostatic hypotension",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Multiple RCTs"
+    },
+    {
+      "recommendation": "Risk stratification scores (Canadian Syncope Risk Score)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Thiruganasambandamoorthy et al."
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Vital signs (including orthostatics)",
+      "ED": "STAT",
+      "HOSP": "q4-8h",
+      "OPD": "Every visit",
+      "ICU": "Continuous",
+      "frequency": "Per setting",
+      "action": "Treat hypotension; volume"
+    },
+    {
+      "item": "Continuous telemetry",
+      "ED": "-",
+      "HOSP": "Continuous",
+      "OPD": "-",
+      "ICU": "Continuous",
+      "frequency": "Until risk stratified",
+      "action": "Cardiology consult"
+    },
+    {
+      "item": "ECG",
+      "ED": "STAT",
+      "HOSP": "Daily",
+      "OPD": "Every visit if cardiac",
+      "ICU": "STAT",
+      "frequency": "Per clinical status",
+      "action": "Cardiology; treatment"
+    },
+    {
+      "item": "Troponin",
+      "ED": "STAT",
+      "HOSP": "q6-8h × 2 if initially elevated",
+      "OPD": "-",
+      "ICU": "Per cardiac status",
+      "frequency": "Until ruled out",
+      "action": "Cardiology"
+    },
+    {
+      "item": "Recurrence",
+      "ED": "-",
+      "HOSP": "Ongoing",
+      "OPD": "Every visit",
+      "ICU": "-",
+      "frequency": "Ongoing",
+      "action": "Re-evaluate diagnosis/treatment"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Low-risk syncope (vasovagal with clear trigger, normal ECG, normal vitals, no cardiac history); reliable follow-up"
+    },
+    {
+      "disposition": "Admit to telemetry",
+      "criteria": "High-risk features (abnormal ECG, cardiac history, exertional, no prodrome, abnormal vitals); unexplained syncope in elderly"
+    },
+    {
+      "disposition": "ICU admission",
+      "criteria": "Hemodynamically unstable; malignant arrhythmia; acute MI; massive PE"
+    },
+    {
+      "disposition": "Syncope unit/observation",
+      "criteria": "Intermediate risk; brief observation with monitoring"
+    },
+    {
+      "disposition": "Cardiology follow-up",
+      "criteria": "Suspected cardiac cause; abnormal echo; need for device evaluation"
+    },
+    {
+      "disposition": "Neurology follow-up",
+      "criteria": "Atypical features suggesting seizure or neurologic cause"
+    },
+    {
+      "disposition": "Primary care follow-up",
+      "criteria": "Low-risk vasovagal syncope; medication review for orthostatic"
+    }
+  ]
+}

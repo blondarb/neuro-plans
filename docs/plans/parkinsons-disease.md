@@ -14,6 +14,7 @@ tags:
 
 **DIAGNOSIS:** Parkinson's Disease
 **ICD-10:** G20 (Parkinson's disease)
+**SYNONYMS:** Parkinson's disease, PD, parkinsonism, idiopathic Parkinson's disease, paralysis agitans, shaking palsy, Parkinson disease, dopamine deficiency syndrome
 **SCOPE:** Diagnosis confirmation, dopaminergic therapy initiation and optimization, motor fluctuation management, and non-motor symptom treatment. Excludes Parkinson-plus syndromes (MSA, PSP, CBD, DLB - separate protocols).
 
 **STATUS:** Approved

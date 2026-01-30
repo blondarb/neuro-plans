@@ -1,3 +1,10 @@
+---
+title: "Diabetic Neuropathy"
+description: "Clinical decision support for diabetic neuropathy diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Diabetic Neuropathy
 
 **VERSION:** 1.0
@@ -107,49 +114,49 @@
 
 ### 3A. Glycemic Control (Foundation of Treatment)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Intensive glycemic control | - | ROUTINE | ROUTINE | - | Target HbA1c <7% (individualized); avoid hypoglycemia | Hypoglycemia unawareness with CAN | HbA1c q3 months until stable |
-| Continuous glucose monitoring | - | - | ROUTINE | - | If hypoglycemia unawareness | None | Sensor accuracy |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Intensive glycemic control | - | - | 7% :: - :: - :: Target HbA1c <7% (individualized); avoid hypoglycemia | Hypoglycemia unawareness with CAN | HbA1c q3 months until stable | - | ROUTINE | ROUTINE | - |
+| Continuous glucose monitoring | - | - | If hypoglycemia unawareness | None | Sensor accuracy | - | - | ROUTINE | - |
 
 ### 3B. Neuropathic Pain - First-Line Agents
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Duloxetine (Cymbalta) | - | ROUTINE | ROUTINE | - | 30 mg daily × 1 week, then 60 mg daily; max 120 mg/day | MAOIs, uncontrolled glaucoma, hepatic impairment | Nausea, BP; serotonin syndrome |
-| Pregabalin (Lyrica) | - | ROUTINE | ROUTINE | - | 50 mg TID or 75 mg BID; titrate to 300 mg/day; max 600 mg/day | CrCl <60: reduce dose | Sedation, edema, weight gain; renal dosing |
-| Gabapentin (Neurontin) | ROUTINE | ROUTINE | ROUTINE | - | 300 mg QHS, titrate by 300 mg q3-7 days; target 1800-3600 mg/day divided TID | CrCl <60: reduce dose | Sedation, edema; renal dosing |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Duloxetine (Cymbalta) | PO | - | 30 mg :: PO :: daily :: 30 mg daily × 1 week, then 60 mg daily; max 120 mg/day | MAOIs, uncontrolled glaucoma, hepatic impairment | Nausea, BP; serotonin syndrome | - | ROUTINE | ROUTINE | - |
+| Pregabalin (Lyrica) | PO | - | 50 mg :: PO :: TID :: 50 mg TID or 75 mg BID; titrate to 300 mg/day; max 600 mg/day | CrCl <60: reduce dose | Sedation, edema, weight gain; renal dosing | - | ROUTINE | ROUTINE | - |
+| Gabapentin (Neurontin) | PO | - | 300 mg :: PO :: QHS :: 300 mg QHS, titrate by 300 mg q3-7 days; target 1800-3600 mg/day divided TID | CrCl <60: reduce dose | Sedation, edema; renal dosing | ROUTINE | ROUTINE | ROUTINE | - |
 
 ### 3C. Neuropathic Pain - Second-Line Agents
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Venlafaxine XR | - | ROUTINE | ROUTINE | - | 37.5-75 mg daily; titrate to 150-225 mg/day | MAOIs, uncontrolled HTN | BP; serotonin syndrome |
-| Amitriptyline | - | ROUTINE | ROUTINE | - | 10-25 mg QHS; titrate to 50-100 mg QHS | Cardiac disease, glaucoma, urinary retention | ECG if >100 mg; anticholinergic effects |
-| Nortriptyline | - | ROUTINE | ROUTINE | - | 10-25 mg QHS; titrate to 75 mg QHS | Same as amitriptyline | Same; fewer anticholinergic effects |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Venlafaxine XR | PO | - | 37.5-75 mg :: PO :: daily :: 37.5-75 mg daily; titrate to 150-225 mg/day | MAOIs, uncontrolled HTN | BP; serotonin syndrome | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | - | - | 10-25 mg :: PO :: QHS :: 10-25 mg QHS; titrate to 50-100 mg QHS | Cardiac disease, glaucoma, urinary retention | ECG if >100 mg; anticholinergic effects | - | ROUTINE | ROUTINE | - |
+| Nortriptyline | - | - | 10-25 mg :: PO :: QHS :: 10-25 mg QHS; titrate to 75 mg QHS | Same as amitriptyline | Same; fewer anticholinergic effects | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Neuropathic Pain - Topical Agents
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Capsaicin 8% patch (Qutenza) | - | - | ROUTINE | - | Apply to painful area × 30-60 min q3 months; in-office | Open wounds; capsaicin allergy | BP during application; pain |
-| Lidocaine 5% patch | - | ROUTINE | ROUTINE | - | Up to 3 patches daily; 12h on/12h off | Allergy to local anesthetics | Local irritation |
-| Capsaicin cream 0.075% | - | - | ROUTINE | - | Apply TID-QID; takes 2-4 weeks for effect | Open wounds | Initial burning (improves) |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Capsaicin 8% patch (Qutenza) | Transdermal | - | Apply to painful area × 30-60 min q3 months; in-office | - | Open wounds; capsaicin allergy | BP during application; pain | - | - | ROUTINE | - |
+| Lidocaine 5% patch | Transdermal | - | Up to 3 patches daily; 12h on/12h off | - | Allergy to local anesthetics | Local irritation | - | ROUTINE | ROUTINE | - |
+| Capsaicin cream 0.075% | - | - | Apply TID-QID; takes 2-4 weeks for effect | - | Open wounds | Initial burning (improves) | - | - | ROUTINE | - |
 
 ### 3E. Neuropathic Pain - Third-Line/Refractory
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Tramadol | - | ROUTINE | ROUTINE | - | 50-100 mg q4-6h PRN; max 400 mg/day | Seizure disorder, opioid dependence, MAOIs | Seizures; serotonin syndrome; dependence |
-| Tapentadol ER | - | - | ROUTINE | - | 50 mg BID; titrate by 50 mg q3 days; max 500 mg/day | Respiratory depression, severe hepatic impairment | Respiratory; GI effects |
-| Spinal cord stimulation | - | - | EXT | - | Referral to interventional pain for refractory cases | Infection, coagulopathy | Device complications |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Tramadol | PO | - | 50-100 mg :: PO :: PRN :: 50-100 mg q4-6h PRN; max 400 mg/day | Seizure disorder, opioid dependence, MAOIs | Seizures; serotonin syndrome; dependence | - | ROUTINE | ROUTINE | - |
+| Tapentadol ER | PO | - | 50 mg :: PO :: BID :: 50 mg BID; titrate by 50 mg q3 days; max 500 mg/day | Respiratory depression, severe hepatic impairment | Respiratory; GI effects | - | - | ROUTINE | - |
+| Spinal cord stimulation | - | - | Referral to interventional pain for refractory cases | Infection, coagulopathy | Device complications | - | - | EXT | - |
 
 ### 3F. Combination Therapy
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Duloxetine + Pregabalin | - | ROUTINE | ROUTINE | - | If monotherapy inadequate; use lower doses of each | Per individual agents | Per individual agents |
-| Gabapentinoid + TCA | - | ROUTINE | ROUTINE | - | If monotherapy inadequate | Per individual agents | Sedation; anticholinergic |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Duloxetine + Pregabalin | - | - | If monotherapy inadequate; use lower doses of each | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
+| Gabapentinoid + TCA | - | - | If monotherapy inadequate | Per individual agents | Sedation; anticholinergic | - | ROUTINE | ROUTINE | - |
 
 ### 3G. Diabetic Autonomic Neuropathy Treatment
 
@@ -172,13 +179,13 @@
 
 ### 3H. Diabetic Amyotrophy (DLRPN) Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Glycemic control | - | ROUTINE | ROUTINE | - | Optimize; avoid rapid correction | Per diabetes management | HbA1c |
-| Physical therapy | - | ROUTINE | ROUTINE | - | Prevent contractures; strengthen | None | Function |
-| Pain management | - | ROUTINE | ROUTINE | - | Per neuropathic pain algorithm | Per agent | Per agent |
-| IVIG (severe/refractory) | - | ROUTINE | EXT | - | 2 g/kg over 2-5 days; may repeat | IgA deficiency | Renal function; infusion reactions |
-| Methylprednisolone | - | ROUTINE | EXT | - | 1 g IV daily × 3-5 days; taper (may use if IVIG unavailable) | Uncontrolled DM (relative) | Glucose; infection |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Glycemic control | - | - | Optimize; avoid rapid correction | Per diabetes management | HbA1c | - | ROUTINE | ROUTINE | - |
+| Physical therapy | - | - | Prevent contractures; strengthen | None | Function | - | ROUTINE | ROUTINE | - |
+| Pain management | - | - | Per neuropathic pain algorithm | Per agent | Per agent | - | ROUTINE | ROUTINE | - |
+| IVIG (severe/refractory) | PO | - | 2 g/kg :: PO :: - :: 2 g/kg over 2-5 days; may repeat | IgA deficiency | Renal function; infusion reactions | - | ROUTINE | EXT | - |
+| Methylprednisolone | IV | - | 1 g :: IV :: daily :: 1 g IV daily × 3-5 days; taper (may use if IVIG unavailable) | Uncontrolled DM (relative) | Glucose; infection | - | ROUTINE | EXT | - |
 
 ---
 
