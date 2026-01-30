@@ -1,7 +1,7 @@
 {
   "id": "ncse",
   "title": "Non-Convulsive Status Epilepticus (NCSE)",
-  "version": "1.0",
+  "version": "1.1",
   "icd10": [
     "** G41.0 (Grand mal status epilepticus)",
     "G41.1 (Petit mal status epilepticus)",
@@ -527,13 +527,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.1 mg/kg (max 4 mg)",
-                "orderSentence": "Lorazepam IV (diagnostic and therapeutic benzodiazepine trial) 0.1 mg/kg (max 4 mg) IV"
+                "text": "0.1 mg/kg",
+                "orderSentence": "Lorazepam IV (diagnostic and therapeutic benzodiazepine trial) 0.1 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.1 mg/kg IV push over 2 min (max 4 mg/dose); may repeat x1 in 5 min if no response; observe EEG during and after administration",
-            "orderSentence": "Lorazepam IV (diagnostic and therapeutic benzodiazepine trial) 0.1 mg/kg (max 4 mg) IV"
+            "orderSentence": "Lorazepam IV (diagnostic and therapeutic benzodiazepine trial) 0.1 mg/kg IV"
           },
           "contraindications": "Respiratory depression; acute narrow-angle glaucoma; severe respiratory failure without ventilator",
           "monitoring": "Respiratory rate; O2 sat; EEG response (look for seizure termination AND clinical improvement -- EEG improvement alone without clinical improvement does not confirm NCSE); have airway equipment ready",
@@ -549,13 +549,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg IM",
-                "orderSentence": "Midazolam IM (if no IV access) 10 mg IM IM"
+                "text": "10 mg",
+                "orderSentence": "Midazolam IM (if no IV access) 10 mg IM"
               }
             ],
             "route": "IM",
             "instructions": "10 mg IM (adults >40 kg) or 0.2 mg/kg intranasal/buccal",
-            "orderSentence": "Midazolam IM (if no IV access) 10 mg IM IM"
+            "orderSentence": "Midazolam IM (if no IV access) 10 mg IM"
           },
           "contraindications": "Same as lorazepam",
           "monitoring": "Same as lorazepam",
@@ -685,17 +685,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.2 mg/kg bolus",
-                "orderSentence": "Midazolam infusion 0.2 mg/kg bolus IV"
-              },
-              {
-                "text": "0.1-2 mg/kg/hr",
-                "orderSentence": "Midazolam infusion 0.1-2 mg/kg/hr IV"
+                "text": "0.2 mg/kg",
+                "orderSentence": "Midazolam infusion 0.2 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "Bolus: 0.2 mg/kg IV; Infusion: start 0.1 mg/kg/hr; titrate to EEG seizure suppression or burst suppression; max 2 mg/kg/hr; weaning trials q24-48h",
-            "orderSentence": "Midazolam infusion 0.2 mg/kg bolus IV"
+            "orderSentence": "Midazolam infusion 0.2 mg/kg IV"
           },
           "contraindications": "Unprotected airway (requires intubation)",
           "monitoring": "Continuous EEG; respiratory status; hemodynamics; sedation depth; tachyphylaxis (may need escalating doses)",
@@ -711,17 +707,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1-2 mg/kg bolus",
-                "orderSentence": "Propofol infusion 1-2 mg/kg bolus IV"
-              },
-              {
-                "text": "20-80 mcg/kg/min",
-                "orderSentence": "Propofol infusion 20-80 mcg/kg/min IV"
+                "text": "1 mg/kg",
+                "orderSentence": "Propofol infusion 1 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "Bolus: 1-2 mg/kg IV; Infusion: 20-80 mcg/kg/min; max 5 mg/kg/hr (higher doses increase PRIS risk); wean q24-48h",
-            "orderSentence": "Propofol infusion 1-2 mg/kg bolus IV"
+            "orderSentence": "Propofol infusion 1 mg/kg IV"
           },
           "contraindications": "Propofol infusion syndrome (PRIS) risk at high doses/prolonged use; egg/soy allergy",
           "monitoring": "Continuous EEG; triglycerides q48h; CPK; lactate; hemodynamics; PRIS surveillance (metabolic acidosis + rhabdomyolysis + cardiac failure + lipemia)",
@@ -737,17 +729,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5-15 mg/kg bolus",
-                "orderSentence": "Pentobarbital infusion 5-15 mg/kg bolus IV"
-              },
-              {
-                "text": "0.5-5 mg/kg/hr",
-                "orderSentence": "Pentobarbital infusion 0.5-5 mg/kg/hr IV"
+                "text": "5 mg/kg",
+                "orderSentence": "Pentobarbital infusion 5 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "Loading: 5-15 mg/kg IV (max rate 50 mg/min); Infusion: 0.5-5 mg/kg/hr; titrate to EEG burst suppression; very prolonged recovery; paralytic ileus common",
-            "orderSentence": "Pentobarbital infusion 5-15 mg/kg bolus IV"
+            "orderSentence": "Pentobarbital infusion 5 mg/kg IV"
           },
           "contraindications": "Severe hemodynamic instability without vasopressor support; porphyria",
           "monitoring": "Continuous EEG; hemodynamics (vasopressors usually needed); drug level; temperature (hypothermia); ileus; immunosuppression (prolonged use)",
@@ -763,17 +751,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1-3 mg/kg bolus",
-                "orderSentence": "Ketamine infusion 1-3 mg/kg bolus IV"
-              },
-              {
-                "text": "0.5-5 mg/kg/hr",
-                "orderSentence": "Ketamine infusion 0.5-5 mg/kg/hr IV"
+                "text": "1 mg/kg",
+                "orderSentence": "Ketamine infusion 1 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "Bolus: 1-3 mg/kg IV; Infusion: 0.5-5 mg/kg/hr; does not require intubation at lower doses",
-            "orderSentence": "Ketamine infusion 1-3 mg/kg bolus IV"
+            "orderSentence": "Ketamine infusion 1 mg/kg IV"
           },
           "contraindications": "Uncontrolled hypertension; raised ICP (relative); acute psychosis",
           "monitoring": "Continuous EEG; BP; HR; emergence phenomena; hepatic function",
@@ -791,13 +775,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "500-1500 mg BID",
-                "orderSentence": "Levetiracetam (maintenance) 500-1500 mg BID PO"
+                "text": "500 mg",
+                "orderSentence": "Levetiracetam (maintenance) 500 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "500-1500 mg PO/IV BID (max 3000 mg/day); adjust for renal function",
-            "orderSentence": "Levetiracetam (maintenance) 500-1500 mg BID PO"
+            "orderSentence": "Levetiracetam (maintenance) 500 mg PO"
           },
           "contraindications": "Renal impairment (adjust per CrCl); suicidal ideation",
           "monitoring": "Behavioral changes; renal function; suicidality",
@@ -813,13 +797,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100-200 mg BID",
-                "orderSentence": "Lacosamide (maintenance) 100-200 mg BID PO"
+                "text": "100 mg",
+                "orderSentence": "Lacosamide (maintenance) 100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "100-200 mg PO/IV BID (max 400 mg/day)",
-            "orderSentence": "Lacosamide (maintenance) 100-200 mg BID PO"
+            "orderSentence": "Lacosamide (maintenance) 100 mg PO"
           },
           "contraindications": "AV block; hepatic impairment",
           "monitoring": "ECG; PR interval; dizziness",
@@ -835,13 +819,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250-500 mg q8h",
-                "orderSentence": "Valproic acid (maintenance) 250-500 mg q8h PO"
+                "text": "250 mg",
+                "orderSentence": "Valproic acid (maintenance) 250 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "250-500 mg PO q8h (target level 50-100 mcg/mL)",
-            "orderSentence": "Valproic acid (maintenance) 250-500 mg q8h PO"
+            "orderSentence": "Valproic acid (maintenance) 250 mg PO"
           },
           "contraindications": "Pregnancy; liver disease; mitochondrial disease",
           "monitoring": "LFTs; ammonia; CBC; drug level; pancreatitis",
@@ -857,13 +841,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100-200 mg BID-TID",
-                "orderSentence": "Phenytoin (maintenance) 100-200 mg BID-TID PO"
+                "text": "100 mg",
+                "orderSentence": "Phenytoin (maintenance) 100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "100-200 mg PO BID or TID (target level 10-20 mcg/mL total; 1-2 mcg/mL free)",
-            "orderSentence": "Phenytoin (maintenance) 100-200 mg BID-TID PO"
+            "orderSentence": "Phenytoin (maintenance) 100 mg PO"
           },
           "contraindications": "Avoid in absence seizures; hepatic disease",
           "monitoring": "Drug level (total and free); CBC; LFTs; gingival hyperplasia; osteoporosis",
@@ -879,13 +863,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "50-100 mg BID",
-                "orderSentence": "Brivaracetam 50-100 mg BID PO"
+                "text": "50 mg",
+                "orderSentence": "Brivaracetam 50 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "50-100 mg PO/IV BID (max 200 mg/day)",
-            "orderSentence": "Brivaracetam 50-100 mg BID PO"
+            "orderSentence": "Brivaracetam 50 mg PO"
           },
           "contraindications": "Hepatic impairment (reduce dose)",
           "monitoring": "Behavioral changes; sedation",
@@ -925,13 +909,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Per meningitis protocol",
-                "orderSentence": "Empiric antibiotics (bacterial meningitis not excluded) Per meningitis protocol IV"
+                "text": "Per protocol",
+                "orderSentence": "Empiric antibiotics (bacterial meningitis not excluded) Per protocol IV"
               }
             ],
             "route": "IV",
             "instructions": "Ceftriaxone 2g IV q12h + vancomycin 15-20 mg/kg IV q8-12h + dexamethasone",
-            "orderSentence": "Empiric antibiotics (bacterial meningitis not excluded) Per meningitis protocol IV"
+            "orderSentence": "Empiric antibiotics (bacterial meningitis not excluded) Per protocol IV"
           },
           "contraindications": "Per individual drug allergies",
           "monitoring": "Cultures; clinical response; renal function",

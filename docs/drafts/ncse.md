@@ -1,7 +1,7 @@
 ---
 title: "Non-Convulsive Status Epilepticus (NCSE)"
 description: "Clinical decision support for non-convulsive status epilepticus diagnosis and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,7 +20,7 @@ tags:
 
 # Non-Convulsive Status Epilepticus (NCSE)
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
@@ -154,8 +154,8 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Lorazepam IV (diagnostic and therapeutic benzodiazepine trial) | IV | First-line for NCSE; serves as diagnostic AND therapeutic trial (clinical AND EEG improvement confirms NCSE) | 0.1 mg/kg (max 4 mg) :: IV :: - :: 0.1 mg/kg IV push over 2 min (max 4 mg/dose); may repeat x1 in 5 min if no response; observe EEG during and after administration | Respiratory depression; acute narrow-angle glaucoma; severe respiratory failure without ventilator | Respiratory rate; O2 sat; EEG response (look for seizure termination AND clinical improvement -- EEG improvement alone without clinical improvement does not confirm NCSE); have airway equipment ready | STAT | STAT | - | STAT |
-| Midazolam IM (if no IV access) | IM | No IV access; rapid administration needed | 10 mg IM :: IM :: - :: 10 mg IM (adults >40 kg) or 0.2 mg/kg intranasal/buccal | Same as lorazepam | Same as lorazepam | STAT | STAT | - | STAT |
+| Lorazepam IV (diagnostic and therapeutic benzodiazepine trial) | IV | First-line for NCSE; serves as diagnostic AND therapeutic trial (clinical AND EEG improvement confirms NCSE) | 0.1 mg/kg :: IV :: once :: 0.1 mg/kg IV push over 2 min (max 4 mg/dose); may repeat x1 in 5 min if no response; observe EEG during and after administration | Respiratory depression; acute narrow-angle glaucoma; severe respiratory failure without ventilator | Respiratory rate; O2 sat; EEG response (look for seizure termination AND clinical improvement -- EEG improvement alone without clinical improvement does not confirm NCSE); have airway equipment ready | STAT | STAT | - | STAT |
+| Midazolam IM (if no IV access) | IM | No IV access; rapid administration needed | 10 mg :: IM :: once :: 10 mg IM (adults >40 kg) or 0.2 mg/kg intranasal/buccal | Same as lorazepam | Same as lorazepam | STAT | STAT | - | STAT |
 
 *Note: The BENZODIAZEPINE TRIAL is both diagnostic and therapeutic. Administer lorazepam while monitoring EEG. NCSE is confirmed if: (1) electrographic seizure activity resolves AND (2) clinical improvement occurs (improved consciousness, orientation, behavior). IMPORTANT: If EEG improves but clinical status does not, consider alternative diagnoses (postictal state, encephalopathy with EEG patterns that are NOT seizures). Periodic discharges that resolve with benzodiazepines but without clinical improvement are NOT NCSE. Over-treatment of periodic patterns as NCSE in critically ill patients is a common error.*
 
@@ -175,10 +175,10 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Midazolam infusion | IV | Refractory NCSE failing 2+ ASMs; requires intubation/ICU | 0.2 mg/kg bolus; 0.1-2 mg/kg/hr :: IV :: continuous :: Bolus: 0.2 mg/kg IV; Infusion: start 0.1 mg/kg/hr; titrate to EEG seizure suppression or burst suppression; max 2 mg/kg/hr; weaning trials q24-48h | Unprotected airway (requires intubation) | Continuous EEG; respiratory status; hemodynamics; sedation depth; tachyphylaxis (may need escalating doses) | - | - | - | STAT |
-| Propofol infusion | IV | Refractory NCSE; rapid onset; requires intubation/ICU | 1-2 mg/kg bolus; 20-80 mcg/kg/min :: IV :: continuous :: Bolus: 1-2 mg/kg IV; Infusion: 20-80 mcg/kg/min; max 5 mg/kg/hr (higher doses increase PRIS risk); wean q24-48h | Propofol infusion syndrome (PRIS) risk at high doses/prolonged use; egg/soy allergy | Continuous EEG; triglycerides q48h; CPK; lactate; hemodynamics; PRIS surveillance (metabolic acidosis + rhabdomyolysis + cardiac failure + lipemia) | - | - | - | STAT |
-| Pentobarbital infusion | IV | Super-refractory NCSE failing midazolam and propofol | 5-15 mg/kg bolus; 0.5-5 mg/kg/hr :: IV :: continuous :: Loading: 5-15 mg/kg IV (max rate 50 mg/min); Infusion: 0.5-5 mg/kg/hr; titrate to EEG burst suppression; very prolonged recovery; paralytic ileus common | Severe hemodynamic instability without vasopressor support; porphyria | Continuous EEG; hemodynamics (vasopressors usually needed); drug level; temperature (hypothermia); ileus; immunosuppression (prolonged use) | - | - | - | STAT |
-| Ketamine infusion | IV | Super-refractory NCSE; NMDA receptor antagonist (different mechanism); may add to midazolam/propofol | 1-3 mg/kg bolus; 0.5-5 mg/kg/hr :: IV :: continuous :: Bolus: 1-3 mg/kg IV; Infusion: 0.5-5 mg/kg/hr; does not require intubation at lower doses | Uncontrolled hypertension; raised ICP (relative); acute psychosis | Continuous EEG; BP; HR; emergence phenomena; hepatic function | - | - | - | STAT |
+| Midazolam infusion | IV | Refractory NCSE failing 2+ ASMs; requires intubation/ICU | 0.2 mg/kg :: IV :: bolus then continuous :: Bolus: 0.2 mg/kg IV; Infusion: start 0.1 mg/kg/hr; titrate to EEG seizure suppression or burst suppression; max 2 mg/kg/hr; weaning trials q24-48h | Unprotected airway (requires intubation) | Continuous EEG; respiratory status; hemodynamics; sedation depth; tachyphylaxis (may need escalating doses) | - | - | - | STAT |
+| Propofol infusion | IV | Refractory NCSE; rapid onset; requires intubation/ICU | 1 mg/kg :: IV :: bolus then continuous :: Bolus: 1-2 mg/kg IV; Infusion: 20-80 mcg/kg/min; max 5 mg/kg/hr (higher doses increase PRIS risk); wean q24-48h | Propofol infusion syndrome (PRIS) risk at high doses/prolonged use; egg/soy allergy | Continuous EEG; triglycerides q48h; CPK; lactate; hemodynamics; PRIS surveillance (metabolic acidosis + rhabdomyolysis + cardiac failure + lipemia) | - | - | - | STAT |
+| Pentobarbital infusion | IV | Super-refractory NCSE failing midazolam and propofol | 5 mg/kg :: IV :: bolus then continuous :: Loading: 5-15 mg/kg IV (max rate 50 mg/min); Infusion: 0.5-5 mg/kg/hr; titrate to EEG burst suppression; very prolonged recovery; paralytic ileus common | Severe hemodynamic instability without vasopressor support; porphyria | Continuous EEG; hemodynamics (vasopressors usually needed); drug level; temperature (hypothermia); ileus; immunosuppression (prolonged use) | - | - | - | STAT |
+| Ketamine infusion | IV | Super-refractory NCSE; NMDA receptor antagonist (different mechanism); may add to midazolam/propofol | 1 mg/kg :: IV :: bolus then continuous :: Bolus: 1-3 mg/kg IV; Infusion: 0.5-5 mg/kg/hr; does not require intubation at lower doses | Uncontrolled hypertension; raised ICP (relative); acute psychosis | Continuous EEG; BP; HR; emergence phenomena; hepatic function | - | - | - | STAT |
 
 *Note: Decision to escalate to anesthetic infusions in NCSE requires careful risk-benefit analysis. Unlike convulsive SE, the threshold for coma-inducing therapy is HIGHER in NCSE because the morbidity of intubation, ICU admission, and prolonged coma may exceed the morbidity of ongoing NCSE (especially in elderly or critically ill patients). Consider patient's baseline function, etiology, and goals of care. The Salzburg consensus and ACNS guidelines recommend judicious use of anesthetic coma in NCSE.*
 
@@ -186,18 +186,18 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Levetiracetam (maintenance) | PO/IV | Continue after successful loading; broad-spectrum maintenance | 500-1500 mg BID :: PO :: BID :: 500-1500 mg PO/IV BID (max 3000 mg/day); adjust for renal function | Renal impairment (adjust per CrCl); suicidal ideation | Behavioral changes; renal function; suicidality | - | STAT | ROUTINE | STAT |
-| Lacosamide (maintenance) | PO/IV | Continue after loading; favorable interaction profile | 100-200 mg BID :: PO :: BID :: 100-200 mg PO/IV BID (max 400 mg/day) | AV block; hepatic impairment | ECG; PR interval; dizziness | - | STAT | ROUTINE | STAT |
-| Valproic acid (maintenance) | PO | Continue after loading; broad-spectrum | 250-500 mg q8h :: PO :: TID :: 250-500 mg PO q8h (target level 50-100 mcg/mL) | Pregnancy; liver disease; mitochondrial disease | LFTs; ammonia; CBC; drug level; pancreatitis | - | STAT | ROUTINE | STAT |
-| Phenytoin (maintenance) | PO | Continue after fosphenytoin loading | 100-200 mg BID-TID :: PO :: :: 100-200 mg PO BID or TID (target level 10-20 mcg/mL total; 1-2 mcg/mL free) | Avoid in absence seizures; hepatic disease | Drug level (total and free); CBC; LFTs; gingival hyperplasia; osteoporosis | - | STAT | ROUTINE | STAT |
-| Brivaracetam | PO/IV | Alternative to levetiracetam if behavioral side effects | 50-100 mg BID :: PO :: BID :: 50-100 mg PO/IV BID (max 200 mg/day) | Hepatic impairment (reduce dose) | Behavioral changes; sedation | - | ROUTINE | ROUTINE | ROUTINE |
+| Levetiracetam (maintenance) | PO/IV | Continue after successful loading; broad-spectrum maintenance | 500 mg :: PO :: BID :: 500-1500 mg PO/IV BID (max 3000 mg/day); adjust for renal function | Renal impairment (adjust per CrCl); suicidal ideation | Behavioral changes; renal function; suicidality | - | STAT | ROUTINE | STAT |
+| Lacosamide (maintenance) | PO/IV | Continue after loading; favorable interaction profile | 100 mg :: PO :: BID :: 100-200 mg PO/IV BID (max 400 mg/day) | AV block; hepatic impairment | ECG; PR interval; dizziness | - | STAT | ROUTINE | STAT |
+| Valproic acid (maintenance) | PO | Continue after loading; broad-spectrum | 250 mg :: PO :: TID :: 250-500 mg PO q8h (target level 50-100 mcg/mL) | Pregnancy; liver disease; mitochondrial disease | LFTs; ammonia; CBC; drug level; pancreatitis | - | STAT | ROUTINE | STAT |
+| Phenytoin (maintenance) | PO | Continue after fosphenytoin loading | 100 mg :: PO :: TID :: 100-200 mg PO BID or TID (target level 10-20 mcg/mL total; 1-2 mcg/mL free) | Avoid in absence seizures; hepatic disease | Drug level (total and free); CBC; LFTs; gingival hyperplasia; osteoporosis | - | STAT | ROUTINE | STAT |
+| Brivaracetam | PO/IV | Alternative to levetiracetam if behavioral side effects | 50 mg :: PO :: BID :: 50-100 mg PO/IV BID (max 200 mg/day) | Hepatic impairment (reduce dose) | Behavioral changes; sedation | - | ROUTINE | ROUTINE | ROUTINE |
 
 ### 3E. Treat Underlying Etiology
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Empiric acyclovir (HSV encephalitis not excluded) | IV | Febrile NCSE; temporal lobe focus; encephalopathy; until HSV PCR results | 10 mg/kg q8h :: IV :: q8h :: 10 mg/kg IV q8h; continue until HSV PCR negative (×2 if high suspicion) | Renal impairment (adjust dose); adequate hydration required | Renal function daily; hydration | STAT | STAT | - | STAT |
-| Empiric antibiotics (bacterial meningitis not excluded) | IV | Febrile NCSE with meningismus or CSF pleocytosis | Per meningitis protocol :: IV :: :: Ceftriaxone 2g IV q12h + vancomycin 15-20 mg/kg IV q8-12h + dexamethasone | Per individual drug allergies | Cultures; clinical response; renal function | STAT | STAT | - | STAT |
+| Empiric antibiotics (bacterial meningitis not excluded) | IV | Febrile NCSE with meningismus or CSF pleocytosis | Per protocol :: IV :: per protocol :: Ceftriaxone 2g IV q12h + vancomycin 15-20 mg/kg IV q8-12h + dexamethasone | Per individual drug allergies | Cultures; clinical response; renal function | STAT | STAT | - | STAT |
 | Dextrose 50% (hypoglycemia) | IV | Glucose <60 mg/dL | 25-50 mL :: IV :: once :: 25-50 mL D50W IV push; recheck glucose in 15 min | None | Glucose; IV access | STAT | STAT | - | STAT |
 | Thiamine (before dextrose if malnourished/alcoholic) | IV | Prevent Wernicke encephalopathy; alcohol-related seizures | 500 mg :: IV :: daily :: 500 mg IV daily x 3 days; then 250 mg IV daily x 3 days | None | None routine | STAT | STAT | - | STAT |
 | Electrolyte correction (Na, Ca, Mg, PO4) | IV | Electrolyte derangement contributing to seizures | Per specific electrolyte protocol :: IV :: :: Correct to normal; sodium: avoid >8 mEq/L/24h correction; hypomagnesemia: 2g MgSO4 IV over 20 min | Per specific electrolyte (ODS risk with rapid Na correction) | Repeat electrolytes q2-4h during correction | STAT | STAT | - | STAT |
@@ -387,6 +387,11 @@ Option C: Goals-of-care discussion (super-refractory, poor prognosis)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized structured dosing format across all treatment sections (3A-3E)
+- Fixed standard_dose field to contain starting dose only (lorazepam, midazolam, anesthetic infusions, maintenance ASMs, empiric antibiotics)
+- Added/corrected frequency field for all medications (once, bolus then continuous, BID, TID)
 
 **v1.0 (January 30, 2026)**
 - Initial creation
