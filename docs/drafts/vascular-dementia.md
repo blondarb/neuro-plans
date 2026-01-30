@@ -1,7 +1,7 @@
 ---
 title: "Vascular Dementia"
 description: "Clinical decision support for vascular dementia diagnosis, vascular risk factor modification, symptomatic treatment, and secondary stroke prevention"
-version: "1.0"
+version: "1.1"
 setting: "OPD, HOSP, ED"
 status: draft
 tags:
@@ -23,8 +23,13 @@ tags:
 # Vascular Dementia
 
 **DIAGNOSIS:** Vascular Dementia
-**ICD-10:** F01.50 (Vascular dementia without behavioral disturbance); F01.51 (Vascular dementia with behavioral disturbance); I67.3 (Progressive vascular leukoencephalopathy - Binswanger disease); I67.89 (Other cerebrovascular disease)
+**ICD-10:** F01.50 (Vascular dementia without behavioral disturbance); F01.51 (Vascular dementia with behavioral disturbance); I67.3 (Progressive vascular leukoencephalopathy — Binswanger disease); I67.89 (Other cerebrovascular disease)
+**SYNONYMS:** VaD; Vascular cognitive impairment; Multi-infarct dementia; Post-stroke dementia; Subcortical ischemic vascular dementia; Binswanger disease; Strategic infarct dementia
 **SCOPE:** Diagnosis using NINDS-AIREN and DSM-5 criteria, neuroimaging evaluation for strategic infarcts and white matter disease, vascular risk factor modification, secondary stroke prevention, cholinesterase inhibitors for cognitive symptoms, and management of post-stroke depression, apathy, and behavioral symptoms. Primarily outpatient-focused with coverage for ED and hospital presentations.
+
+**VERSION:** 1.1
+**CREATED:** January 27, 2026
+**REVISED:** January 30, 2026
 
 **STATUS:** Draft - Pending Review
 
@@ -42,44 +47,44 @@ tags:
 
 ### 1A. Essential/Core Labs (Reversible Causes and Vascular Risk Factors)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CBC with differential | Polycythemia, anemia, infection affecting cognition | Normal | STAT | STAT | ROUTINE | - |
-| BMP (Na, K, BUN, Cr, glucose) | Metabolic causes of confusion; renal function for medication dosing | Normal electrolytes, renal function | STAT | STAT | ROUTINE | - |
-| TSH | Hypothyroidism is reversible cause of cognitive impairment | 0.4-4.0 mIU/L | URGENT | ROUTINE | ROUTINE | - |
-| Vitamin B12 | Deficiency causes reversible cognitive decline and may worsen vascular dementia | >300 pg/mL (>400 optimal) | URGENT | ROUTINE | ROUTINE | - |
-| Folate | Deficiency contributes to hyperhomocysteinemia and cognitive impairment | >3 ng/mL | - | ROUTINE | ROUTINE | - |
-| Hemoglobin A1c | Diabetes is major vascular risk factor; assess chronic glucose control | <7.0% (individualized 7-8% in frail elderly) | URGENT | ROUTINE | ROUTINE | - |
-| Fasting lipid panel | Assess LDL for secondary stroke prevention; target <70 mg/dL | LDL <70 mg/dL | - | ROUTINE | ROUTINE | - |
-| Urinalysis | UTI common cause of acute confusion in elderly | Negative for infection | STAT | STAT | ROUTINE | - |
-| PT/INR, PTT | Baseline coagulation; assess if on anticoagulation | Normal or therapeutic | STAT | ROUTINE | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CBC with differential (85025) | STAT | STAT | ROUTINE | - | Polycythemia, anemia, infection affecting cognition | Normal |
+| BMP (80048) | STAT | STAT | ROUTINE | - | Metabolic causes of confusion; renal function for medication dosing | Normal electrolytes, renal function |
+| TSH (84443) | URGENT | ROUTINE | ROUTINE | - | Hypothyroidism is reversible cause of cognitive impairment | 0.4-4.0 mIU/L |
+| Vitamin B12 (82607) | URGENT | ROUTINE | ROUTINE | - | Deficiency causes reversible cognitive decline and may worsen vascular dementia | >300 pg/mL (>400 optimal) |
+| Folate (82746) | - | ROUTINE | ROUTINE | - | Deficiency contributes to hyperhomocysteinemia and cognitive impairment | >3 ng/mL |
+| Hemoglobin A1c (83036) | URGENT | ROUTINE | ROUTINE | - | Diabetes is major vascular risk factor; assess chronic glucose control | <7.0% (individualized 7-8% in frail elderly) |
+| Fasting lipid panel (80061) | - | ROUTINE | ROUTINE | - | Assess LDL for secondary stroke prevention; target <70 mg/dL | LDL <70 mg/dL |
+| Urinalysis (81001) | STAT | STAT | ROUTINE | - | UTI common cause of acute confusion in elderly | Negative for infection |
+| PT/INR, PTT (85610/85730) | STAT | ROUTINE | ROUTINE | - | Baseline coagulation; assess if on anticoagulation | Normal or therapeutic |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Homocysteine | Elevated levels increase stroke risk and contribute to vascular dementia | <15 μmol/L | - | ROUTINE | ROUTINE | - |
-| Lipoprotein(a) | Independent cardiovascular risk marker; elevated increases stroke risk | <50 nmol/L (or <30 mg/dL) | - | ROUTINE | ROUTINE | - |
-| hsCRP | Inflammatory marker; elevated predicts vascular events | <2 mg/L | - | ROUTINE | ROUTINE | - |
-| Vitamin D, 25-hydroxy | Deficiency associated with cognitive decline and vascular disease | >30 ng/mL | - | ROUTINE | ROUTINE | - |
-| RPR or VDRL | Neurosyphilis is treatable cause of dementia | Nonreactive | - | ROUTINE | ROUTINE | - |
-| HIV testing | HIV-associated neurocognitive disorder if risk factors | Negative | - | ROUTINE | ROUTINE | - |
-| Hepatic panel (AST, ALT, albumin) | Hepatic encephalopathy; nutritional status; statin safety | Normal | - | ROUTINE | ROUTINE | - |
-| BNP/NT-proBNP | Heart failure; atrial fibrillation risk assessment | Age-adjusted normal | URGENT | ROUTINE | ROUTINE | - |
-| Uric acid | Elevated associated with increased stroke and dementia risk | <6 mg/dL | - | ROUTINE | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Homocysteine (83090) | - | ROUTINE | ROUTINE | - | Elevated levels increase stroke risk and contribute to vascular dementia | <15 μmol/L |
+| Lipoprotein(a) (83695) | - | ROUTINE | ROUTINE | - | Independent cardiovascular risk marker; elevated increases stroke risk | <50 nmol/L (or <30 mg/dL) |
+| hsCRP (86141) | - | ROUTINE | ROUTINE | - | Inflammatory marker; elevated predicts vascular events | <2 mg/L |
+| Vitamin D, 25-hydroxy (82306) | - | ROUTINE | ROUTINE | - | Deficiency associated with cognitive decline and vascular disease | >30 ng/mL |
+| RPR or VDRL (86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis is treatable cause of dementia | Nonreactive |
+| HIV testing (86701) | - | ROUTINE | ROUTINE | - | HIV-associated neurocognitive disorder if risk factors | Negative |
+| Hepatic panel (80076) | - | ROUTINE | ROUTINE | - | Hepatic encephalopathy; nutritional status; statin safety | Normal |
+| BNP/NT-proBNP (83880) | URGENT | ROUTINE | ROUTINE | - | Heart failure; atrial fibrillation risk assessment | Age-adjusted normal |
+| Uric acid (84550) | - | ROUTINE | ROUTINE | - | Elevated associated with increased stroke and dementia risk | <6 mg/dL |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| APOE genotyping | Risk stratification; mixed AD/VaD assessment | APOE status for prognosis | - | - | ROUTINE | - |
-| Hypercoagulability panel | Age <50, cryptogenic strokes, recurrent events | Negative | - | EXT | EXT | - |
-| Antiphospholipid antibodies | Lupus anticoagulant, anticardiolipin; young-onset vascular disease | Negative | - | EXT | EXT | - |
-| ESR, ANA | Suspected CNS vasculitis causing multi-infarct state | Normal/Negative | - | EXT | EXT | - |
-| ANCA panel | Vasculitis workup if suspected | Negative | - | EXT | EXT | - |
-| Fabry disease testing (alpha-galactosidase A) | Young-onset stroke; angiokeratomas; neuropathy | Normal enzyme activity | - | - | EXT | - |
-| NOTCH3 genetic testing | Suspected CADASIL (family history, migraine, early WM disease) | No pathogenic mutation | - | - | EXT | - |
-| Mitochondrial DNA analysis | Suspected MELAS or mitochondrial disease | No pathogenic mutation | - | - | EXT | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| APOE genotyping (81401) | - | - | ROUTINE | - | Risk stratification; mixed AD/VaD assessment | APOE status for prognosis |
+| Hypercoagulability panel (85306/85307) | - | EXT | EXT | - | Age <50, cryptogenic strokes, recurrent events | Negative |
+| Antiphospholipid antibodies (86147/86148) | - | EXT | EXT | - | Lupus anticoagulant, anticardiolipin; young-onset vascular disease | Negative |
+| ESR, ANA (85652/86038) | - | EXT | EXT | - | Suspected CNS vasculitis causing multi-infarct state | Normal/Negative |
+| ANCA panel (86235) | - | EXT | EXT | - | Vasculitis workup if suspected | Negative |
+| Fabry disease testing, alpha-galactosidase A (82657) | - | - | EXT | - | Young-onset stroke; angiokeratomas; neuropathy | Normal enzyme activity |
+| NOTCH3 genetic testing (81406) | - | - | EXT | - | Suspected CADASIL (family history, migraine, early WM disease) | No pathogenic mutation |
+| Mitochondrial DNA analysis (81401) | - | - | EXT | - | Suspected MELAS or mitochondrial disease | No pathogenic mutation |
 
 ---
 
@@ -87,37 +92,37 @@ tags:
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain without contrast | At initial evaluation | Strategic infarcts (thalamus, basal ganglia, angular gyrus); confluent white matter hyperintensities (Fazekas ≥2); lacunar infarcts | MRI-incompatible devices, severe claustrophobia | URGENT | ROUTINE | ROUTINE | - |
-| CT Head non-contrast | If MRI unavailable or contraindicated | Rule out hemorrhage, mass, hydrocephalus; may show old infarcts, leukoaraiosis | None | STAT | STAT | ROUTINE | - |
-| MRA Head and Neck | With initial MRI | Intracranial and extracranial atherosclerosis; assess for stenosis >50% | MRI contraindications | URGENT | ROUTINE | ROUTINE | - |
-| CTA Head and Neck | Alternative to MRA | Vascular stenosis; atherosclerotic burden | Contrast allergy, CKD (relative) | URGENT | ROUTINE | ROUTINE | - |
-| Carotid duplex ultrasound | Within 1 week of diagnosis | Assess carotid stenosis; plaque characterization | None | - | ROUTINE | ROUTINE | - |
-| ECG (12-lead) | At diagnosis | Assess for atrial fibrillation, LVH, prior MI | None | STAT | STAT | ROUTINE | - |
-| Transthoracic echocardiogram | Within 2 weeks | LV function; valvular disease; intracardiac thrombus | None | - | ROUTINE | ROUTINE | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain without contrast (70551) | URGENT | ROUTINE | ROUTINE | - | At initial evaluation | Strategic infarcts (thalamus, basal ganglia, angular gyrus); confluent WMH (Fazekas ≥2); lacunar infarcts | MRI-incompatible devices, severe claustrophobia |
+| CT Head non-contrast (70450) | STAT | STAT | ROUTINE | - | If MRI unavailable or contraindicated | Rule out hemorrhage, mass, hydrocephalus; may show old infarcts, leukoaraiosis | None |
+| MRA Head and Neck (70544/70547) | URGENT | ROUTINE | ROUTINE | - | With initial MRI | Intracranial and extracranial atherosclerosis; assess for stenosis >50% | MRI contraindications |
+| CTA Head and Neck (70496/70498) | URGENT | ROUTINE | ROUTINE | - | Alternative to MRA | Vascular stenosis; atherosclerotic burden | Contrast allergy, CKD (relative) |
+| Carotid duplex ultrasound (93880) | - | ROUTINE | ROUTINE | - | Within 1 week of diagnosis | Assess carotid stenosis; plaque characterization | None |
+| ECG, 12-lead (93000) | STAT | STAT | ROUTINE | - | At diagnosis | Assess for atrial fibrillation, LVH, prior MI | None |
+| Transthoracic echocardiogram (93306) | - | ROUTINE | ROUTINE | - | Within 2 weeks | LV function; valvular disease; intracardiac thrombus | None |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain with SWI/GRE sequences | With initial MRI | Microbleeds (cerebral amyloid angiopathy pattern vs hypertensive); hemosiderin | MRI contraindications | - | ROUTINE | ROUTINE | - |
-| MRI volumetrics | Baseline for progression | Quantify white matter lesion volume; global and regional atrophy | MRI contraindications | - | - | ROUTINE | - |
-| FDG-PET Brain | Differentiate VaD from AD; atypical cases | Scattered hypometabolism (vs temporoparietal in AD) | None | - | - | ROUTINE | - |
-| Amyloid PET | Distinguish pure VaD from mixed AD/VaD | Negative suggests pure VaD; positive suggests mixed pathology | None | - | - | EXT | - |
-| Cardiac telemetry/Holter monitor | Screen for paroxysmal AF | Sinus rhythm; detect occult AF | None | URGENT | ROUTINE | - | - |
-| Extended cardiac monitoring (14-30 day) | Cryptogenic strokes; suspected occult AF | Sinus rhythm; detect paroxysmal AF | None | - | - | ROUTINE | - |
-| EEG | Encephalopathy; seizures; rapid decline | Non-specific slowing (not CJD pattern) | None | URGENT | ROUTINE | ROUTINE | - |
-| Sleep study (polysomnography) | Sleep apnea is vascular risk factor; assess for OSA | AHI <5 (or treat if elevated) | None | - | - | ROUTINE | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain with SWI/GRE sequences (70551) | - | ROUTINE | ROUTINE | - | With initial MRI | Microbleeds (CAA pattern vs hypertensive); hemosiderin | MRI contraindications |
+| MRI volumetrics (70553) | - | - | ROUTINE | - | Baseline for progression | Quantify WM lesion volume; global and regional atrophy | MRI contraindications |
+| FDG-PET Brain (78816) | - | - | ROUTINE | - | Differentiate VaD from AD; atypical cases | Scattered hypometabolism (vs temporoparietal in AD) | None |
+| Amyloid PET (78811) | - | - | EXT | - | Distinguish pure VaD from mixed AD/VaD | Negative suggests pure VaD; positive suggests mixed pathology | None |
+| Cardiac telemetry/Holter monitor (93224) | URGENT | ROUTINE | - | - | Screen for paroxysmal AF | Sinus rhythm; detect occult AF | None |
+| Extended cardiac monitoring, 14-30 day (93241) | - | - | ROUTINE | - | Cryptogenic strokes; suspected occult AF | Sinus rhythm; detect paroxysmal AF | None |
+| EEG (95819) | URGENT | ROUTINE | ROUTINE | - | Encephalopathy; seizures; rapid decline | Non-specific slowing (not CJD pattern) | None |
+| Sleep study, polysomnography (95811) | - | - | ROUTINE | - | Sleep apnea is vascular risk factor; assess for OSA | AHI <5 (or treat if elevated) | None |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| Vessel wall MRI | Suspected CNS vasculitis or reversible vasoconstriction | No vessel wall enhancement or thickening | MRI contraindications | - | EXT | EXT | - |
-| DSA (cerebral angiogram) | Vasculitis confirmation; moyamoya; intracranial stenosis | Define vascular anatomy | Contrast allergy, bleeding risk | - | EXT | EXT | - |
-| SPECT (perfusion) | Alternative to PET if unavailable | Regional hypoperfusion patterns | None | - | - | EXT | - |
-| Transesophageal echocardiogram | Cryptogenic strokes; suspected aortic arch atheroma or PFO | No embolic source | Esophageal pathology | - | EXT | EXT | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Vessel wall MRI (70553) | - | EXT | EXT | - | Suspected CNS vasculitis or reversible vasoconstriction | No vessel wall enhancement or thickening | MRI contraindications |
+| DSA, cerebral angiogram (36224) | - | EXT | EXT | - | Vasculitis confirmation; moyamoya; intracranial stenosis | Define vascular anatomy | Contrast allergy, bleeding risk |
+| SPECT, perfusion (78607) | - | - | EXT | - | Alternative to PET if unavailable | Regional hypoperfusion patterns | None |
+| Transesophageal echocardiogram (93312) | - | EXT | EXT | - | Cryptogenic strokes; suspected aortic arch atheroma or PFO | No embolic source | Esophageal pathology |
 
 ---
 
@@ -127,15 +132,15 @@ tags:
 **Timing:** ROUTINE for diagnostic clarification; URGENT if infectious or inflammatory etiology suspected
 **Volume Required:** 10-15 mL standard diagnostic
 
-| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|-------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Cell count, protein, glucose | Rule out infection, inflammation, vasculitis | WBC <5, protein <45 mg/dL, glucose >60% serum | URGENT | ROUTINE | ROUTINE | - |
-| CSF Aβ42 and Aβ42/Aβ40 ratio | Differentiate from Alzheimer's disease | Normal Aβ42 in pure VaD; low suggests mixed AD/VaD | - | ROUTINE | ROUTINE | - |
-| CSF total tau and p-tau181 | Elevated in AD; can help distinguish VaD from AD | Normal or mildly elevated in pure VaD; high p-tau suggests AD | - | ROUTINE | ROUTINE | - |
-| CSF NfL (neurofilament light) | Non-specific marker of neuronal damage; elevated in vascular injury | Elevated suggests ongoing neurodegeneration | - | ROUTINE | ROUTINE | - |
-| Oligoclonal bands, IgG index | Rule out inflammatory/demyelinating disease | Negative | - | ROUTINE | ROUTINE | - |
-| VDRL | Neurosyphilis | Nonreactive | - | ROUTINE | ROUTINE | - |
-| Autoimmune encephalitis panel | Atypical presentation; subacute onset | Negative | - | EXT | EXT | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|-------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Cell count, protein, glucose (89051/84157/82947) | URGENT | ROUTINE | ROUTINE | - | Rule out infection, inflammation, vasculitis | WBC <5, protein <45 mg/dL, glucose >60% serum |
+| CSF Aβ42 and Aβ42/Aβ40 ratio (83519) | - | ROUTINE | ROUTINE | - | Differentiate from Alzheimer's disease | Normal Aβ42 in pure VaD; low suggests mixed AD/VaD |
+| CSF total tau and p-tau181 (83519) | - | ROUTINE | ROUTINE | - | Elevated in AD; can help distinguish VaD from AD | Normal or mildly elevated in pure VaD; high p-tau suggests AD |
+| CSF NfL, neurofilament light (83519) | - | ROUTINE | ROUTINE | - | Non-specific marker of neuronal damage; elevated in vascular injury | Elevated suggests ongoing neurodegeneration |
+| Oligoclonal bands, IgG index (86327/86325) | - | ROUTINE | ROUTINE | - | Rule out inflammatory/demyelinating disease | Negative |
+| VDRL (86593) | - | ROUTINE | ROUTINE | - | Neurosyphilis | Nonreactive |
+| Autoimmune encephalitis panel (86255) | - | EXT | EXT | - | Atypical presentation; subacute onset | Negative |
 
 **Special Handling:** CSF biomarkers require polypropylene tubes; freeze within 1 hour; send to qualified reference lab
 **Contraindications:** Coagulopathy (INR >1.5, platelets <50k); mass effect on imaging; skin infection at puncture site
@@ -148,62 +153,62 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Treat reversible causes | Various | Identified metabolic or infectious etiology | Per specific cause :: Various :: :: Correct hyponatremia slowly, treat UTI, replace B12, treat hypothyroidism | Depends on intervention | Cognitive reassessment after treatment | STAT | STAT | ROUTINE | - |
-| Thiamine | IV/PO | Suspected Wernicke's; alcoholism; malnutrition | 500 mg IV TID x 3 days; 100 mg PO daily :: IV/PO :: :: 500 mg IV TID x 3 days if Wernicke suspected; then 100 mg PO daily maintenance | None | Clinical improvement in confusion | STAT | STAT | ROUTINE | - |
-| Aspirin | PO | Immediate antiplatelet therapy for secondary stroke prevention | 325 mg PO x1 load; 81 mg PO daily :: PO :: :: 325 mg loading dose if no recent stroke, then 81 mg daily ongoing | Active GI bleed; aspirin allergy | GI symptoms, bleeding | STAT | STAT | ROUTINE | - |
-| Blood pressure management (acute) | Various | Acute delirium or new stroke | Target <180/110 acutely :: Various :: :: Do NOT lower BP aggressively unless >220/120 or end-organ damage; permissive hypertension first 24-48h of stroke | Symptomatic hypotension | BP q1h initially | STAT | STAT | - | - |
+| Treat reversible causes | Various | Identified metabolic or infectious etiology | Per specific cause :: Various :: per protocol :: Correct hyponatremia slowly, treat UTI, replace B12, treat hypothyroidism | Depends on intervention | Cognitive reassessment after treatment | STAT | STAT | ROUTINE | - |
+| Thiamine | IV/PO | Suspected Wernicke's; alcoholism; malnutrition | 500 mg :: IV :: TID x 3 days :: 500 mg IV TID x 3 days if Wernicke suspected; then 100 mg PO daily maintenance | None | Clinical improvement in confusion | STAT | STAT | ROUTINE | - |
+| Aspirin (loading) | PO | Immediate antiplatelet therapy for secondary stroke prevention | 325 mg :: PO :: x1 load :: 325 mg loading dose if no recent stroke, then 81 mg daily ongoing | Active GI bleed; aspirin allergy | GI symptoms, bleeding | STAT | STAT | ROUTINE | - |
+| Blood pressure management (acute) | Various | Acute delirium or new stroke | Per protocol :: Various :: per protocol :: Do NOT lower BP aggressively unless >220/120 or end-organ damage; permissive hypertension first 24-48h of stroke | Symptomatic hypotension | BP q1h initially | STAT | STAT | - | - |
 
 ### 3B. Vascular Risk Factor Modification (Secondary Stroke Prevention)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Atorvastatin | PO | High-intensity statin for secondary stroke prevention; LDL target <70 | 40 mg daily; 80 mg daily :: PO :: :: Start 40-80 mg daily; target LDL <70 mg/dL; 80 mg preferred for established vascular disease | Active liver disease; pregnancy | LFTs at baseline, 6-12 weeks, then annually; myalgias | - | ROUTINE | ROUTINE | - |
-| Rosuvastatin | PO | Alternative high-intensity statin; may be better tolerated | 20 mg daily; 40 mg daily :: PO :: :: Start 20 mg daily; max 40 mg; potent LDL lowering | Active liver disease; pregnancy; Asian dose adjustment (10 mg start) | LFTs; myalgias; CK if symptomatic | - | ROUTINE | ROUTINE | - |
-| Aspirin (long-term) | PO | Lifelong antiplatelet for secondary stroke prevention | 81 mg daily :: PO :: :: 81 mg daily indefinitely for non-cardioembolic vascular dementia | Active GI bleeding; aspirin allergy | GI symptoms; annual CBC | - | ROUTINE | ROUTINE | - |
-| Clopidogrel | PO | Alternative to aspirin if aspirin-intolerant; or after DAPT period | 75 mg daily :: PO :: :: 75 mg daily; may use instead of aspirin if intolerant | Active bleeding | Bleeding signs | - | ROUTINE | ROUTINE | - |
-| Lisinopril | PO | Blood pressure control; target <130/80 for secondary prevention | 5 mg daily; 10 mg daily; 20 mg daily; 40 mg daily :: PO :: :: Start 5-10 mg daily; titrate to goal BP <130/80; max 40 mg daily | Angioedema history; pregnancy; bilateral RAS; hyperkalemia | K+, Cr at 1-2 weeks; BP | - | ROUTINE | ROUTINE | - |
-| Amlodipine | PO | BP control; add-on or alternative antihypertensive | 5 mg daily; 10 mg daily :: PO :: :: Start 5 mg daily; may increase to 10 mg daily | Severe aortic stenosis (relative) | Peripheral edema; BP | - | ROUTINE | ROUTINE | - |
-| Chlorthalidone | PO | Thiazide-like diuretic for BP control; effective for stroke prevention | 12.5 mg daily; 25 mg daily :: PO :: :: Start 12.5 mg daily; may increase to 25 mg daily | Severe hypokalemia; hyponatremia | K+, Na+, uric acid, glucose | - | ROUTINE | ROUTINE | - |
-| Metformin | PO | First-line for type 2 diabetes if eGFR >30 | 500 mg daily; 500 mg BID; 1000 mg BID :: PO :: :: Start 500 mg daily with meal; titrate by 500 mg weekly; max 2000-2550 mg/day in divided doses | eGFR <30; acute illness; contrast within 48h | eGFR; B12 annually; lactic acidosis symptoms | - | ROUTINE | ROUTINE | - |
-| Empagliflozin | PO | SGLT2 inhibitor for diabetes with cardiovascular benefit | 10 mg daily; 25 mg daily :: PO :: :: Start 10 mg daily; may increase to 25 mg; cardiovascular mortality benefit | eGFR <20; Type 1 DM; DKA history | eGFR; volume status; genital infections | - | ROUTINE | ROUTINE | - |
-| Ezetimibe | PO | Add-on for LDL not at goal on statin | 10 mg daily :: PO :: :: 10 mg daily with or without food | Severe hepatic impairment | LDL; LFTs | - | ROUTINE | ROUTINE | - |
-| Apixaban | PO | Atrial fibrillation-related vascular dementia | 5 mg BID; 2.5 mg BID :: PO :: :: 5 mg BID (2.5 mg BID if ≥2 of: age ≥80, weight ≤60 kg, Cr ≥1.5) | Active major bleeding; mechanical valve | CrCl; bleeding signs | - | ROUTINE | ROUTINE | - |
-| Rivaroxaban | PO | AF-related vascular dementia | 20 mg daily; 15 mg daily :: PO :: :: 20 mg daily with dinner (15 mg if CrCl 15-50) | Active bleeding; mechanical valve | CrCl; bleeding | - | ROUTINE | ROUTINE | - |
-| Warfarin | PO | Mechanical valve; select hypercoagulable states; AF if DOACs contraindicated | 2-10 mg daily adjusted :: PO :: :: Start 5 mg daily; adjust to INR 2-3 | Active bleeding; frequent falls; poor adherence | INR weekly then monthly | - | ROUTINE | ROUTINE | - |
+| Atorvastatin | PO | High-intensity statin for secondary stroke prevention; LDL target <70 | 40 mg :: PO :: daily :: Start 40-80 mg daily; target LDL <70 mg/dL; 80 mg preferred for established vascular disease | Active liver disease; pregnancy | LFTs at baseline, 6-12 weeks, then annually; myalgias | - | ROUTINE | ROUTINE | - |
+| Rosuvastatin | PO | Alternative high-intensity statin; may be better tolerated | 20 mg :: PO :: daily :: Start 20 mg daily; max 40 mg; potent LDL lowering | Active liver disease; pregnancy; Asian dose adjustment (10 mg start) | LFTs; myalgias; CK if symptomatic | - | ROUTINE | ROUTINE | - |
+| Aspirin (long-term) | PO | Lifelong antiplatelet for secondary stroke prevention | 81 mg :: PO :: daily :: 81 mg daily indefinitely for non-cardioembolic vascular dementia | Active GI bleeding; aspirin allergy | GI symptoms; annual CBC | - | ROUTINE | ROUTINE | - |
+| Clopidogrel | PO | Alternative to aspirin if aspirin-intolerant; or after DAPT period | 75 mg :: PO :: daily :: 75 mg daily; may use instead of aspirin if intolerant | Active bleeding | Bleeding signs | - | ROUTINE | ROUTINE | - |
+| Lisinopril | PO | Blood pressure control; target <130/80 for secondary prevention | 5 mg :: PO :: daily :: Start 5-10 mg daily; titrate to goal BP <130/80; max 40 mg daily | Angioedema history; pregnancy; bilateral RAS; hyperkalemia | K+, Cr at 1-2 weeks; BP | - | ROUTINE | ROUTINE | - |
+| Amlodipine | PO | BP control; add-on or alternative antihypertensive | 5 mg :: PO :: daily :: Start 5 mg daily; may increase to 10 mg daily | Severe aortic stenosis (relative) | Peripheral edema; BP | - | ROUTINE | ROUTINE | - |
+| Chlorthalidone | PO | Thiazide-like diuretic for BP control; effective for stroke prevention | 12.5 mg :: PO :: daily :: Start 12.5 mg daily; may increase to 25 mg daily | Severe hypokalemia; hyponatremia | K+, Na+, uric acid, glucose | - | ROUTINE | ROUTINE | - |
+| Metformin | PO | First-line for type 2 diabetes if eGFR >30 | 500 mg :: PO :: daily :: Start 500 mg daily with meal; titrate by 500 mg weekly; max 2000-2550 mg/day in divided doses | eGFR <30; acute illness; contrast within 48h | eGFR; B12 annually; lactic acidosis symptoms | - | ROUTINE | ROUTINE | - |
+| Empagliflozin | PO | SGLT2 inhibitor for diabetes with cardiovascular benefit | 10 mg :: PO :: daily :: Start 10 mg daily; may increase to 25 mg; cardiovascular mortality benefit | eGFR <20; Type 1 DM; DKA history | eGFR; volume status; genital infections | - | ROUTINE | ROUTINE | - |
+| Ezetimibe | PO | Add-on for LDL not at goal on statin | 10 mg :: PO :: daily :: 10 mg daily with or without food | Severe hepatic impairment | LDL; LFTs | - | ROUTINE | ROUTINE | - |
+| Apixaban | PO | Atrial fibrillation-related vascular dementia | 5 mg :: PO :: BID :: 5 mg BID (2.5 mg BID if ≥2 of: age ≥80, weight ≤60 kg, Cr ≥1.5) | Active major bleeding; mechanical valve | CrCl; bleeding signs | - | ROUTINE | ROUTINE | - |
+| Rivaroxaban | PO | AF-related vascular dementia | 20 mg :: PO :: daily :: 20 mg daily with dinner (15 mg if CrCl 15-50) | Active bleeding; mechanical valve | CrCl; bleeding | - | ROUTINE | ROUTINE | - |
+| Warfarin | PO | Mechanical valve; select hypercoagulable states; AF if DOACs contraindicated | 5 mg :: PO :: daily :: Start 5 mg daily; adjust to INR 2-3 | Active bleeding; frequent falls; poor adherence | INR weekly then monthly | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Cholinesterase Inhibitors (Cognitive Enhancement - Modest Benefit)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Donepezil (Aricept) | PO | Vascular dementia cognitive symptoms; modest but measurable benefit | 5 mg qHS; 10 mg qHS :: PO :: :: Start 5 mg qHS x 4-6 weeks; if tolerated, increase to 10 mg qHS; benefit smaller than in AD | Sick sinus syndrome; second/third degree heart block without pacemaker; active GI bleeding | Heart rate; GI symptoms (nausea, diarrhea); vivid dreams | - | ROUTINE | ROUTINE | - |
-| Rivastigmine oral (Exelon) | PO | Vascular dementia; executive dysfunction; may help mixed AD/VaD | 1.5 mg BID; 3 mg BID; 4.5 mg BID; 6 mg BID :: PO :: :: Start 1.5 mg BID with meals; increase by 1.5 mg BID every 2 weeks; target 6 mg BID | Sick sinus; severe hepatic impairment | GI symptoms; weight loss; bradycardia | - | ROUTINE | ROUTINE | - |
-| Rivastigmine patch (Exelon Patch) | TD | Vascular dementia; better GI tolerability than oral | 4.6 mg/24hr; 9.5 mg/24hr; 13.3 mg/24hr :: TD :: :: Start 4.6 mg/24hr patch; increase every 4 weeks; target 9.5-13.3 mg/24hr | Same as oral | Skin irritation; rotate sites | - | ROUTINE | ROUTINE | - |
-| Galantamine (Razadyne) | PO | Vascular dementia; dual mechanism may benefit executive function | 4 mg BID; 8 mg BID; 12 mg BID :: PO :: :: Start 4 mg BID with meals x 4 weeks; increase to 8 mg BID x 4 weeks; target 8-12 mg BID | Sick sinus; severe renal impairment (CrCl <9); severe hepatic impairment | GI symptoms; bradycardia | - | ROUTINE | ROUTINE | - |
-| Memantine (Namenda) | PO | Moderate-severe vascular dementia; add to cholinesterase inhibitor | 5 mg daily; 5 mg BID; 10 mg BID :: PO :: :: Start 5 mg daily x 1 week; increase by 5 mg/week: 5 mg BID, then 5/10 mg, then 10 mg BID | Severe renal impairment (reduce dose if CrCl 5-29: max 5 mg BID) | Confusion, dizziness, constipation | - | ROUTINE | ROUTINE | - |
+| Donepezil (Aricept) | PO | Vascular dementia cognitive symptoms; modest but measurable benefit | 5 mg :: PO :: qHS :: Start 5 mg qHS x 4-6 weeks; if tolerated, increase to 10 mg qHS; benefit smaller than in AD | Sick sinus syndrome; second/third degree heart block without pacemaker; active GI bleeding | Heart rate; GI symptoms (nausea, diarrhea); vivid dreams | - | ROUTINE | ROUTINE | - |
+| Rivastigmine oral (Exelon) | PO | Vascular dementia; executive dysfunction; may help mixed AD/VaD | 1.5 mg :: PO :: BID :: Start 1.5 mg BID with meals; increase by 1.5 mg BID every 2 weeks; target 6 mg BID | Sick sinus; severe hepatic impairment | GI symptoms; weight loss; bradycardia | - | ROUTINE | ROUTINE | - |
+| Rivastigmine patch (Exelon Patch) | TD | Vascular dementia; better GI tolerability than oral | 4.6 mg/24hr :: TD :: daily :: Start 4.6 mg/24hr patch; increase every 4 weeks; target 9.5-13.3 mg/24hr | Same as oral | Skin irritation; rotate sites | - | ROUTINE | ROUTINE | - |
+| Galantamine (Razadyne) | PO | Vascular dementia; dual mechanism may benefit executive function | 4 mg :: PO :: BID :: Start 4 mg BID with meals x 4 weeks; increase to 8 mg BID x 4 weeks; target 8-12 mg BID | Sick sinus; severe renal impairment (CrCl <9); severe hepatic impairment | GI symptoms; bradycardia | - | ROUTINE | ROUTINE | - |
+| Memantine (Namenda) | PO | Moderate-severe vascular dementia; add to cholinesterase inhibitor | 5 mg :: PO :: daily :: Start 5 mg daily x 1 week; increase by 5 mg/week: 5 mg BID, then 5/10 mg, then 10 mg BID | Severe renal impairment (reduce dose if CrCl 5-29: max 5 mg BID) | Confusion, dizziness, constipation | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Post-Stroke Depression and Apathy
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Sertraline (Zoloft) | PO | Post-stroke depression (evidence-based; FLAME trial); first-line | 25 mg daily; 50 mg daily; 100 mg daily; 150 mg daily :: PO :: :: Start 25 mg daily; increase by 25 mg every 1-2 weeks; typical 50-100 mg daily; max 200 mg | MAOIs; concurrent QT-prolonging drugs (high doses) | GI upset initially; bleeding risk with anticoagulants; sexual dysfunction | - | ROUTINE | ROUTINE | - |
-| Escitalopram (Lexapro) | PO | Post-stroke depression; well-tolerated in elderly | 5 mg daily; 10 mg daily; 20 mg daily :: PO :: :: Start 5 mg daily in elderly; increase to 10 mg after 1 week; max 20 mg (10 mg if >65y) | MAOIs; QT prolongation | QTc if cardiac risk; GI symptoms | - | ROUTINE | ROUTINE | - |
-| Citalopram (Celexa) | PO | Depression; agitation in dementia | 10 mg daily; 20 mg daily :: PO :: :: Start 10 mg daily; max 20 mg in elderly due to QT prolongation risk | QT prolongation; concurrent QT-prolonging drugs | ECG at baseline if cardiac risk; QTc monitoring | - | ROUTINE | ROUTINE | - |
-| Mirtazapine (Remeron) | PO | Depression with poor appetite, weight loss, and insomnia | 7.5 mg qHS; 15 mg qHS; 30 mg qHS :: PO :: :: Start 7.5-15 mg qHS; may increase to 30-45 mg qHS; lower doses more sedating | MAOIs; angle-closure glaucoma | Weight gain (often desired); sedation | - | ROUTINE | ROUTINE | - |
-| Bupropion SR/XL | PO | Depression with fatigue and apathy; no sexual side effects; avoid if seizure risk | 100 mg SR daily; 150 mg SR BID; 150 mg XL daily; 300 mg XL daily :: PO :: :: Start 100 mg SR daily or 150 mg XL daily; may increase after 3 days; max 400 mg/day | Seizure disorder; anorexia/bulimia; abrupt alcohol/benzo withdrawal | Seizure risk; insomnia; anxiety | - | ROUTINE | ROUTINE | - |
-| Methylphenidate | PO | Apathy refractory to antidepressants; psychomotor retardation | 2.5 mg BID; 5 mg BID; 10 mg BID :: PO :: :: Start 2.5-5 mg BID (morning and noon); titrate by 2.5-5 mg every 3-5 days; max 30 mg/day | Severe hypertension; cardiac arrhythmias; hyperthyroidism; glaucoma | BP, HR; appetite; sleep | - | EXT | ROUTINE | - |
-| Modafinil | PO | Apathy; fatigue; excessive daytime sleepiness | 100 mg daily; 200 mg daily :: PO :: :: Start 100 mg each morning; may increase to 200 mg daily | Severe hepatic impairment; cardiac arrhythmias | BP, HR; sleep disturbance | - | EXT | ROUTINE | - |
+| Sertraline (Zoloft) | PO | Post-stroke depression (evidence-based; FLAME trial); first-line | 25 mg :: PO :: daily :: Start 25 mg daily; increase by 25 mg every 1-2 weeks; typical 50-100 mg daily; max 200 mg | MAOIs; concurrent QT-prolonging drugs (high doses) | GI upset initially; bleeding risk with anticoagulants; sexual dysfunction | - | ROUTINE | ROUTINE | - |
+| Escitalopram (Lexapro) | PO | Post-stroke depression; well-tolerated in elderly | 5 mg :: PO :: daily :: Start 5 mg daily in elderly; increase to 10 mg after 1 week; max 20 mg (10 mg if >65y) | MAOIs; QT prolongation | QTc if cardiac risk; GI symptoms | - | ROUTINE | ROUTINE | - |
+| Citalopram (Celexa) | PO | Depression; agitation in dementia | 10 mg :: PO :: daily :: Start 10 mg daily; max 20 mg in elderly due to QT prolongation risk | QT prolongation; concurrent QT-prolonging drugs | ECG at baseline if cardiac risk; QTc monitoring | - | ROUTINE | ROUTINE | - |
+| Mirtazapine (Remeron) | PO | Depression with poor appetite, weight loss, and insomnia | 7.5 mg :: PO :: qHS :: Start 7.5-15 mg qHS; may increase to 30-45 mg qHS; lower doses more sedating | MAOIs; angle-closure glaucoma | Weight gain (often desired); sedation | - | ROUTINE | ROUTINE | - |
+| Bupropion SR/XL | PO | Depression with fatigue and apathy; no sexual side effects; avoid if seizure risk | 100 mg :: PO :: daily :: Start 100 mg SR daily or 150 mg XL daily; may increase after 3 days; max 400 mg/day | Seizure disorder; anorexia/bulimia; abrupt alcohol/benzo withdrawal | Seizure risk; insomnia; anxiety | - | ROUTINE | ROUTINE | - |
+| Methylphenidate | PO | Apathy refractory to antidepressants; psychomotor retardation | 2.5 mg :: PO :: BID :: Start 2.5-5 mg BID (morning and noon); titrate by 2.5-5 mg every 3-5 days; max 30 mg/day | Severe hypertension; cardiac arrhythmias; hyperthyroidism; glaucoma | BP, HR; appetite; sleep | - | EXT | ROUTINE | - |
+| Modafinil | PO | Apathy; fatigue; excessive daytime sleepiness | 100 mg :: PO :: daily :: Start 100 mg each morning; may increase to 200 mg daily | Severe hepatic impairment; cardiac arrhythmias | BP, HR; sleep disturbance | - | EXT | ROUTINE | - |
 
 ### 3E. Behavioral and Psychological Symptoms of Dementia (BPSD)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Trazodone | PO | Insomnia; sundowning; mild agitation | 25 mg qHS; 50 mg qHS; 100 mg qHS; 150 mg qHS :: PO :: :: Start 25-50 mg qHS; titrate by 25-50 mg every 3-5 days; typical 50-150 mg qHS | MAOIs; significant QT prolongation | Orthostatic hypotension (fall risk); priapism (rare) | - | ROUTINE | ROUTINE | - |
-| Melatonin | PO | Sleep disturbance; circadian rhythm dysfunction; sundowning | 3 mg qHS; 6 mg qHS :: PO :: :: Start 3 mg qHS, 30 min before bed; may increase to 6 mg if needed | None significant | Daytime drowsiness | - | ROUTINE | ROUTINE | - |
-| Quetiapine (Seroquel) | PO | Severe agitation/psychosis when non-pharmacologic interventions fail | 12.5 mg qHS; 25 mg qHS; 25 mg BID; 50 mg BID :: PO :: :: Start 12.5-25 mg qHS; titrate slowly; keep dose as low as possible | Black box: increased mortality and stroke in dementia; Parkinson's (less risk than others) | Metabolic effects; sedation; falls; QTc | - | EXT | ROUTINE | - |
-| Risperidone (Risperdal) | PO | Severe aggression/psychosis (short-term use only) | 0.25 mg BID; 0.5 mg BID; 1 mg BID :: PO :: :: Start 0.25 mg BID; increase by 0.25 mg BID weekly; max 1 mg BID; limit to 6-12 weeks | Black box: increased mortality and CVA in dementia | EPS, metabolic effects, stroke risk, prolactin | - | EXT | ROUTINE | - |
-| Haloperidol | IM/IV/PO | Acute severe agitation in delirium-crisis only (avoid chronic use) | 0.5 mg IM; 1 mg IM; 2 mg IM :: IM/IV/PO :: :: 0.5-2 mg IM/IV q4-6h PRN; short-term acute use only; avoid chronic use in dementia | QT prolongation; Parkinson's disease | QTc; EPS; akathisia | STAT | EXT | - | - |
-| Carbamazepine | PO | Agitation/aggression refractory to other treatments | 100 mg BID; 200 mg BID :: PO :: :: Start 100 mg BID; titrate to 200-400 mg BID based on response; monitor levels | Bone marrow suppression; AV block | CBC; LFTs; Na; drug levels | - | EXT | ROUTINE | - |
-| Dextromethorphan-quinidine (Nuedexta) | PO | Pseudobulbar affect (emotional lability) post-stroke | 20/10 mg daily; 20/10 mg BID :: PO :: :: Start 20/10 mg daily x 7 days, then increase to 20/10 mg BID | MAOIs; concurrent quinidine; prolonged QT; complete heart block | QTc; drug interactions (quinidine inhibits CYP2D6) | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Insomnia; sundowning; mild agitation | 25 mg :: PO :: qHS :: Start 25-50 mg qHS; titrate by 25-50 mg every 3-5 days; typical 50-150 mg qHS | MAOIs; significant QT prolongation | Orthostatic hypotension (fall risk); priapism (rare) | - | ROUTINE | ROUTINE | - |
+| Melatonin | PO | Sleep disturbance; circadian rhythm dysfunction; sundowning | 3 mg :: PO :: qHS :: Start 3 mg qHS, 30 min before bed; may increase to 6 mg if needed | None significant | Daytime drowsiness | - | ROUTINE | ROUTINE | - |
+| Quetiapine (Seroquel) | PO | Severe agitation/psychosis when non-pharmacologic interventions fail | 12.5 mg :: PO :: qHS :: Start 12.5-25 mg qHS; titrate slowly; keep dose as low as possible | Black box: increased mortality and stroke in dementia; Parkinson's (less risk than others) | Metabolic effects; sedation; falls; QTc | - | EXT | ROUTINE | - |
+| Risperidone (Risperdal) | PO | Severe aggression/psychosis (short-term use only) | 0.25 mg :: PO :: BID :: Start 0.25 mg BID; increase by 0.25 mg BID weekly; max 1 mg BID; limit to 6-12 weeks | Black box: increased mortality and CVA in dementia | EPS, metabolic effects, stroke risk, prolactin | - | EXT | ROUTINE | - |
+| Haloperidol | IM/IV/PO | Acute severe agitation in delirium-crisis only (avoid chronic use) | 0.5 mg :: IM :: PRN :: 0.5-2 mg IM/IV q4-6h PRN; short-term acute use only; avoid chronic use in dementia | QT prolongation; Parkinson's disease | QTc; EPS; akathisia | STAT | EXT | - | - |
+| Carbamazepine | PO | Agitation/aggression refractory to other treatments | 100 mg :: PO :: BID :: Start 100 mg BID; titrate to 200-400 mg BID based on response; monitor levels | Bone marrow suppression; AV block | CBC; LFTs; Na; drug levels | - | EXT | ROUTINE | - |
+| Dextromethorphan-quinidine (Nuedexta) | PO | Pseudobulbar affect (emotional lability) post-stroke | 20/10 mg :: PO :: daily :: Start 20/10 mg daily x 7 days, then increase to 20/10 mg BID | MAOIs; concurrent quinidine; prolonged QT; complete heart block | QTc; drug interactions (quinidine inhibits CYP2D6) | - | ROUTINE | ROUTINE | - |
 
 **Non-Pharmacologic Approaches (First-Line for BPSD):**
 - Identify and treat underlying causes (pain, infection, constipation, urinary retention)
@@ -348,6 +353,16 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized lab tables: reordered columns to `Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding`
+- Added CPT codes to all lab tests (1A: 9 rows, 1B: 9 rows, 1C: 8 rows)
+- Standardized imaging tables: reordered columns to `Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications`
+- Added CPT codes to all imaging studies (2A: 7 rows, 2B: 8 rows, 2C: 4 rows)
+- Standardized LP table: reordered columns with CPT codes (7 rows)
+- Fixed structured dosing first fields across all treatment sections (3A-3E): starting dose only in first field
+- Added SYNONYMS line
+- Added VERSION/CREATED/REVISED header block
 
 **v1.0 (January 27, 2026)**
 - Initial template creation

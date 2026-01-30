@@ -1,7 +1,7 @@
 ---
 title: "Dystonia"
 description: "Clinical decision support for dystonia diagnosis, classification, and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD"
 status: draft
 tags:
@@ -23,8 +23,12 @@ tags:
 
 **DIAGNOSIS:** Dystonia
 **ICD-10:** G24.9 (Dystonia, unspecified); G24.1 (Genetic torsion dystonia); G24.2 (Idiopathic nonfamilial dystonia); G24.3 (Spasmodic torticollis); G24.5 (Blepharospasm); G24.8 (Other dystonia)
+**SYNONYMS:** Torsion dystonia, spasmodic torticollis, cervical dystonia, blepharospasm, writer's cramp, Meige syndrome, DYT1 dystonia, dopa-responsive dystonia, Segawa disease, focal dystonia, generalized dystonia, segmental dystonia, hemidystonia, task-specific dystonia, musician's dystonia
 **SCOPE:** Diagnosis, classification, workup for secondary causes, and symptomatic management of dystonia. Covers focal (cervical, blepharospasm, writer's cramp), segmental, and generalized forms. Includes evaluation for Wilson's disease, dopa-responsive dystonia, and drug-induced dystonia.
 
+**VERSION:** 1.1
+**CREATED:** January 27, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -41,41 +45,41 @@ tags:
 
 ### 1A. Essential/Core Labs
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CBC with differential | Baseline; exclude systemic illness | Normal | URGENT | ROUTINE | ROUTINE | STAT |
-| BMP | Electrolyte abnormalities can exacerbate movement disorders | Normal | STAT | ROUTINE | ROUTINE | STAT |
-| Hepatic panel (AST, ALT, Alk Phos, bilirubin, albumin) | Screen for hepatic dysfunction suggesting Wilson's disease | Normal | URGENT | ROUTINE | ROUTINE | - |
-| Ceruloplasmin | Wilson's disease screen; essential for age <50 with dystonia | >20 mg/dL (low suggests Wilson's) | - | ROUTINE | ROUTINE | - |
-| TSH | Hyperthyroidism can cause movement disorders | Normal (0.4-4.0 mIU/L) | URGENT | ROUTINE | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CBC with differential (CPT 85025) | URGENT | ROUTINE | ROUTINE | STAT | Baseline; exclude systemic illness | Normal |
+| BMP (CPT 80048) | STAT | ROUTINE | ROUTINE | STAT | Electrolyte abnormalities can exacerbate movement disorders | Normal |
+| Hepatic panel (AST, ALT, Alk Phos, bilirubin, albumin) (CPT 80076) | URGENT | ROUTINE | ROUTINE | - | Screen for hepatic dysfunction suggesting Wilson's disease | Normal |
+| Ceruloplasmin (CPT 82390) | - | ROUTINE | ROUTINE | - | Wilson's disease screen; essential for age <50 with dystonia | >20 mg/dL (low suggests Wilson's) |
+| TSH (CPT 84443) | URGENT | ROUTINE | ROUTINE | - | Hyperthyroidism can cause movement disorders | Normal (0.4-4.0 mIU/L) |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| 24-hour urine copper | Wilson's disease confirmation if ceruloplasmin low/borderline | <40 mcg/24hr (elevated in Wilson's) | - | ROUTINE | ROUTINE | - |
-| Serum copper | Interpret with ceruloplasmin (low free copper ratio in Wilson's) | 75-145 mcg/dL | - | ROUTINE | ROUTINE | - |
-| Vitamin B12 | Deficiency causes myelopathy and movement disorders | >300 pg/mL | - | ROUTINE | ROUTINE | - |
-| Ferritin, serum iron, TIBC | Neurodegeneration with brain iron accumulation (NBIA) | Normal | - | ROUTINE | ROUTINE | - |
-| Uric acid | Low in ataxia-telangiectasia, Lesch-Nyhan | Normal | - | - | ROUTINE | - |
-| Lactate, pyruvate | Mitochondrial disorders | Normal | - | ROUTINE | ROUTINE | - |
-| Calcium, magnesium | Hypocalcemia, hypomagnesemia can cause movement disorders | Normal | STAT | ROUTINE | ROUTINE | STAT |
-| CK | Elevated in dystonia crises, NMS, prolonged dystonic posturing | Normal or mildly elevated | STAT | ROUTINE | - | STAT |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| 24-hour urine copper (CPT 82525) | - | ROUTINE | ROUTINE | - | Wilson's disease confirmation if ceruloplasmin low/borderline | <40 mcg/24hr (elevated in Wilson's) |
+| Serum copper (CPT 82525) | - | ROUTINE | ROUTINE | - | Interpret with ceruloplasmin (low free copper ratio in Wilson's) | 75-145 mcg/dL |
+| Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | Deficiency causes myelopathy and movement disorders | >300 pg/mL |
+| Ferritin (CPT 82728), serum iron (CPT 83540), TIBC (CPT 83550) | - | ROUTINE | ROUTINE | - | Neurodegeneration with brain iron accumulation (NBIA) | Normal |
+| Uric acid (CPT 84550) | - | - | ROUTINE | - | Low in ataxia-telangiectasia, Lesch-Nyhan | Normal |
+| Lactate (CPT 83605), pyruvate (CPT 84210) | - | ROUTINE | ROUTINE | - | Mitochondrial disorders | Normal |
+| Calcium (CPT 82310), magnesium (CPT 83735) | STAT | ROUTINE | ROUTINE | STAT | Hypocalcemia, hypomagnesemia can cause movement disorders | Normal |
+| CK (CPT 82550) | STAT | ROUTINE | - | STAT | Elevated in dystonia crises, NMS, prolonged dystonic posturing | Normal or mildly elevated |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| ATP7B gene sequencing | Definitive Wilson's disease diagnosis | No pathogenic variants | - | - | EXT | - |
-| GCH1 gene sequencing | Dopa-responsive dystonia (DYT5a) | No pathogenic variants | - | - | EXT | - |
-| TOR1A gene sequencing | DYT1 dystonia (early-onset generalized) | No GAG deletion | - | - | EXT | - |
-| THAP1 gene sequencing | DYT6 dystonia | No pathogenic variants | - | - | EXT | - |
-| Dystonia gene panel (multi-gene NGS) | Atypical presentations; family history; early onset | No pathogenic variants | - | - | EXT | - |
-| CSF neurotransmitter metabolites (HVA, 5-HIAA, pterins) | Dopa-responsive dystonia; neurotransmitter disorders | Normal ratios | - | - | EXT | - |
-| Acanthocyte smear | Chorea-acanthocytosis, McLeod syndrome | No acanthocytes | - | - | EXT | - |
-| Lysosomal enzyme panel | Lysosomal storage disorders (GM1, GM2 gangliosidosis) | Normal enzyme activity | - | - | EXT | - |
-| Anti-neuronal antibodies (NMDAR, LGI1, CASPR2) | Autoimmune dystonia (rare) | Negative | - | EXT | EXT | - |
-| Paraneoplastic antibody panel | Paraneoplastic dystonia | Negative | - | - | EXT | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| ATP7B gene sequencing (CPT 81479) | - | - | EXT | - | Definitive Wilson's disease diagnosis | No pathogenic variants |
+| GCH1 gene sequencing (CPT 81479) | - | - | EXT | - | Dopa-responsive dystonia (DYT5a) | No pathogenic variants |
+| TOR1A gene sequencing (CPT 81479) | - | - | EXT | - | DYT1 dystonia (early-onset generalized) | No GAG deletion |
+| THAP1 gene sequencing (CPT 81479) | - | - | EXT | - | DYT6 dystonia | No pathogenic variants |
+| Dystonia gene panel (multi-gene NGS) (CPT 81479) | - | - | EXT | - | Atypical presentations; family history; early onset | No pathogenic variants |
+| CSF neurotransmitter metabolites (HVA, 5-HIAA, pterins) (CPT 83519) | - | - | EXT | - | Dopa-responsive dystonia; neurotransmitter disorders | Normal ratios |
+| Acanthocyte smear (CPT 85060) | - | - | EXT | - | Chorea-acanthocytosis, McLeod syndrome | No acanthocytes |
+| Lysosomal enzyme panel (CPT 82657) | - | - | EXT | - | Lysosomal storage disorders (GM1, GM2 gangliosidosis) | Normal enzyme activity |
+| Anti-neuronal antibodies (NMDAR, LGI1, CASPR2) (CPT 86255) | - | EXT | EXT | - | Autoimmune dystonia (rare) | Negative |
+| Paraneoplastic antibody panel (CPT 86235) | - | - | EXT | - | Paraneoplastic dystonia | Negative |
 
 ---
 
@@ -83,26 +87,26 @@ tags:
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain without and with contrast | All new dystonia cases; rule out structural lesion | Normal; no basal ganglia lesions | MRI-incompatible devices | URGENT | ROUTINE | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain without and with contrast (CPT 70553) | URGENT | ROUTINE | ROUTINE | - | All new dystonia cases; rule out structural lesion | Normal; no basal ganglia lesions | MRI-incompatible devices |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain with SWI/iron sequences | Suspected Wilson's disease or NBIA | No T2 hypointensity in basal ganglia | MRI contraindications | - | ROUTINE | ROUTINE | - |
-| Slit lamp examination by ophthalmology | Wilson's disease evaluation; Kayser-Fleischer rings | No KF rings | None | - | ROUTINE | ROUTINE | - |
-| EMG with dystonia protocol | Confirm diagnosis; characterize pattern; guide botulinum toxin | Co-contraction of agonist/antagonist; overflow | None | - | - | ROUTINE | - |
-| DaTscan (ioflupane I-123) | Differentiate dystonic tremor from PD; combined dystonia-parkinsonism | Normal in primary dystonia; abnormal if parkinsonism | Iodine allergy | - | - | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain with SWI/iron sequences (CPT 70553) | - | ROUTINE | ROUTINE | - | Suspected Wilson's disease or NBIA | No T2 hypointensity in basal ganglia | MRI contraindications |
+| Slit lamp examination by ophthalmology (CPT 92012) | - | ROUTINE | ROUTINE | - | Wilson's disease evaluation; Kayser-Fleischer rings | No KF rings | None |
+| EMG with dystonia protocol (CPT 95907-95913) | - | - | ROUTINE | - | Confirm diagnosis; characterize pattern; guide botulinum toxin | Co-contraction of agonist/antagonist; overflow | None |
+| DaTscan (ioflupane I-123) (CPT 78607) | - | - | ROUTINE | - | Differentiate dystonic tremor from PD; combined dystonia-parkinsonism | Normal in primary dystonia; abnormal if parkinsonism | Iodine allergy |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Spine (cervical/thoracic) | Cervical dystonia with radiculopathy symptoms | Normal; no cord compression | MRI contraindications | - | ROUTINE | ROUTINE | - |
-| FDG-PET Brain | Atypical parkinsonism with dystonia | Pattern interpretation varies | None significant | - | - | EXT | - |
-| Liver MRI or ultrasound | Wilson's disease staging if diagnosed | Assess hepatic involvement | None significant | - | ROUTINE | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Spine (cervical/thoracic) (CPT 72156) | - | ROUTINE | ROUTINE | - | Cervical dystonia with radiculopathy symptoms | Normal; no cord compression | MRI contraindications |
+| FDG-PET Brain (CPT 78816) | - | - | EXT | - | Atypical parkinsonism with dystonia | Pattern interpretation varies | None significant |
+| Liver MRI or ultrasound (CPT 74183/76700) | - | ROUTINE | ROUTINE | - | Wilson's disease staging if diagnosed | Assess hepatic involvement | None significant |
 
 ---
 
@@ -112,47 +116,47 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Diphenhydramine | IV/IM | Acute dystonic reaction (drug-induced) | 25 mg IV; 50 mg IV; 50 mg IM :: IV/IM :: :: 25-50 mg IV/IM over 2-5 min; may repeat in 30 min if needed; max 100 mg | Narrow-angle glaucoma; urinary retention | Sedation, hypotension | STAT | STAT | - | STAT |
-| Benztropine | IV/IM | Acute dystonic reaction (drug-induced) | 1 mg IV; 2 mg IV; 1 mg IM; 2 mg IM :: IV/IM :: :: 1-2 mg IV/IM; may repeat in 30 min; follow with oral 1-2 mg BID x 2-3 days to prevent recurrence | Narrow-angle glaucoma; GI obstruction; myasthenia gravis | Anticholinergic effects, confusion (elderly) | STAT | STAT | - | STAT |
-| Lorazepam | IV/PO | Status dystonicus; severe dystonic storm | 1 mg IV; 2 mg IV; 2 mg PO; 4 mg PO :: IV/PO :: :: 1-2 mg IV slow push or 2-4 mg PO; may repeat q4-6h PRN; monitor respiratory status | Severe respiratory depression; acute narrow-angle glaucoma | Respiratory depression, sedation | STAT | STAT | - | STAT |
-| Diazepam | IV/PO | Status dystonicus; muscle spasm relief | 5 mg IV; 10 mg IV; 5 mg PO; 10 mg PO :: IV/PO :: :: 5-10 mg IV slow push (2 mg/min) or PO; may repeat q4h PRN | Same as lorazepam | Same as lorazepam | STAT | STAT | - | STAT |
+| Diphenhydramine | IV/IM | Acute dystonic reaction (drug-induced) | 25 mg :: IV/IM :: PRN :: 25-50 mg IV/IM over 2-5 min; may repeat in 30 min if needed; max 100 mg | Narrow-angle glaucoma; urinary retention | Sedation, hypotension | STAT | STAT | - | STAT |
+| Benztropine | IV/IM | Acute dystonic reaction (drug-induced) | 1 mg :: IV/IM :: PRN :: 1-2 mg IV/IM; may repeat in 30 min; follow with oral 1-2 mg BID x 2-3 days to prevent recurrence | Narrow-angle glaucoma; GI obstruction; myasthenia gravis | Anticholinergic effects, confusion (elderly) | STAT | STAT | - | STAT |
+| Lorazepam | IV/PO | Status dystonicus; severe dystonic storm | 1 mg :: IV/PO :: PRN :: 1-2 mg IV slow push or 2-4 mg PO; may repeat q4-6h PRN; monitor respiratory status | Severe respiratory depression; acute narrow-angle glaucoma | Respiratory depression, sedation | STAT | STAT | - | STAT |
+| Diazepam | IV/PO | Status dystonicus; muscle spasm relief | 5 mg :: IV/PO :: PRN :: 5-10 mg IV slow push (2 mg/min) or PO; may repeat q4h PRN | Severe respiratory depression; acute narrow-angle glaucoma | Respiratory depression, sedation | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments (First-line for Focal Dystonia)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| OnabotulinumtoxinA (Botox) - Cervical dystonia | IM | First-line for cervical dystonia/torticollis | 100 units total; 200 units total; 300 units total :: IM :: :: Start 100-200 units divided among affected muscles (SCM, splenius, trapezius, levator scapulae); adjust based on response; max 300 units/session; repeat q12wk | Infection at site; myasthenia gravis; ALS | Dysphagia (especially bilateral SCM); neck weakness; antibody formation | - | - | ROUTINE | - |
-| OnabotulinumtoxinA (Botox) - Blepharospasm | IM | First-line for blepharospasm | 25 units total; 50 units total :: IM :: :: 1.25-5 units per site; inject orbicularis oculi at multiple points; total 25-50 units per eye; repeat q12wk | Same as above | Ptosis, diplopia, dry eyes, lagophthalmos | - | - | ROUTINE | - |
-| OnabotulinumtoxinA (Botox) - Writer's cramp | IM | Focal hand dystonia refractory to therapy modification | 50 units total; 100 units total :: IM :: :: 10-50 units per muscle; EMG guidance required; target FCR, FCU, FDS as needed; repeat q12wk | Same as above | Finger weakness (may impair function) | - | - | ROUTINE | - |
-| AbobotulinumtoxinA (Dysport) - Cervical dystonia | IM | Alternative to onabotulinum; different potency | 500 units total; 750 units total; 1000 units total :: IM :: :: Start 500 units divided among affected muscles; max 1000 units/session; repeat q12wk | Same as onabotulinum | Same as onabotulinum | - | - | ROUTINE | - |
-| IncobotulinumtoxinA (Xeomin) - Cervical dystonia | IM | Alternative; no complexing proteins | 120 units total; 200 units total; 300 units total :: IM :: :: Start 120-200 units divided; max 300 units/session; repeat q12wk; may have lower immunogenicity | Same as onabotulinum | Same as onabotulinum | - | - | ROUTINE | - |
-| RimabotulinumtoxinB (Myobloc) - Cervical dystonia | IM | Type A toxin non-responders; secondary non-response | 2500 units total; 5000 units total; 10000 units total :: IM :: :: Start 2500-5000 units divided; max 10000 units; repeat q12wk; higher dry mouth rate | Same; type B protein allergy | Dry mouth more common; dysphagia | - | - | ROUTINE | - |
+| OnabotulinumtoxinA (Botox) - Cervical dystonia | IM | First-line for cervical dystonia/torticollis | 100 units :: IM :: q12wk :: Start 100-200 units divided among affected muscles (SCM, splenius, trapezius, levator scapulae); adjust based on response; max 300 units/session; repeat q12wk | Infection at site; myasthenia gravis; ALS | Dysphagia (especially bilateral SCM); neck weakness; antibody formation | - | - | ROUTINE | - |
+| OnabotulinumtoxinA (Botox) - Blepharospasm | IM | First-line for blepharospasm | 25 units :: IM :: q12wk :: 1.25-5 units per site; inject orbicularis oculi at multiple points; total 25-50 units per eye; repeat q12wk | Infection at site; myasthenia gravis; ALS | Ptosis, diplopia, dry eyes, lagophthalmos | - | - | ROUTINE | - |
+| OnabotulinumtoxinA (Botox) - Writer's cramp | IM | Focal hand dystonia refractory to therapy modification | 50 units :: IM :: q12wk :: 10-50 units per muscle; EMG guidance required; target FCR, FCU, FDS as needed; repeat q12wk | Infection at site; myasthenia gravis; ALS | Finger weakness (may impair function) | - | - | ROUTINE | - |
+| AbobotulinumtoxinA (Dysport) - Cervical dystonia | IM | Alternative to onabotulinum; different potency | 500 units :: IM :: q12wk :: Start 500 units divided among affected muscles; max 1000 units/session; repeat q12wk | Infection at site; myasthenia gravis; ALS | Dysphagia (especially bilateral SCM); neck weakness; antibody formation | - | - | ROUTINE | - |
+| IncobotulinumtoxinA (Xeomin) - Cervical dystonia | IM | Alternative; no complexing proteins | 120 units :: IM :: q12wk :: Start 120-200 units divided; max 300 units/session; repeat q12wk; may have lower immunogenicity | Infection at site; myasthenia gravis; ALS | Dysphagia (especially bilateral SCM); neck weakness; antibody formation | - | - | ROUTINE | - |
+| RimabotulinumtoxinB (Myobloc) - Cervical dystonia | IM | Type A toxin non-responders; secondary non-response | 2500 units :: IM :: q12wk :: Start 2500-5000 units divided; max 10000 units; repeat q12wk; higher dry mouth rate | Infection at site; myasthenia gravis; ALS; type B protein allergy | Dry mouth; dysphagia; neck weakness; antibody formation | - | - | ROUTINE | - |
 
 ### 3C. Second-line/Oral Medications
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Trihexyphenidyl | PO | First-line oral for generalized dystonia; young patients tolerate best | 1 mg daily; 2 mg TID; 5 mg TID; 10 mg TID; 15 mg TID :: PO :: :: Start 1 mg daily; increase by 1-2 mg q3-5d; typical target 6-30 mg/day divided TID; some patients require up to 60-80 mg/day | Narrow-angle glaucoma; GI obstruction; urinary retention; dementia | Anticholinergic effects (dry mouth, constipation, urinary retention, confusion); cognitive effects in elderly | - | ROUTINE | ROUTINE | - |
-| Benztropine | PO | Alternative anticholinergic; maintenance after acute dystonic reaction | 0.5 mg BID; 1 mg BID; 2 mg BID; 3 mg BID :: PO :: :: Start 0.5 mg BID; increase by 0.5 mg q5-7d; typical 1-4 mg/day; max 6 mg/day | Same as trihexyphenidyl | Same as trihexyphenidyl | - | ROUTINE | ROUTINE | - |
-| Baclofen | PO | Muscle relaxant; useful adjunct for dystonia | 5 mg TID; 10 mg TID; 20 mg TID; 30 mg TID :: PO :: :: Start 5 mg TID; increase by 5 mg/dose q3d; typical 30-80 mg/day divided TID; max 80-120 mg/day | Severe renal impairment (dose adjust); abrupt withdrawal risk | Sedation, weakness; taper slowly if discontinuing | - | ROUTINE | ROUTINE | - |
-| Clonazepam | PO | Adjunct for dystonia; myoclonus-dystonia | 0.25 mg BID; 0.5 mg BID; 1 mg BID; 1 mg TID :: PO :: :: Start 0.25 mg BID; increase by 0.25-0.5 mg q3-7d; typical 1-4 mg/day; max 6 mg/day | Respiratory depression; severe hepatic impairment; substance abuse history | Sedation, dependence, falls; taper if discontinuing | - | ROUTINE | ROUTINE | - |
-| Diazepam | PO | Alternative benzodiazepine; muscle relaxant properties | 2 mg TID; 5 mg TID; 10 mg TID :: PO :: :: Start 2 mg TID; increase by 2-5 mg/day q3-7d; typical 10-40 mg/day divided | Same as clonazepam | Same as clonazepam | - | ROUTINE | ROUTINE | - |
-| Levodopa/Carbidopa | PO | Dopa-responsive dystonia (DRD); diagnostic trial for young-onset | 25/100 mg TID; 50/200 mg TID :: PO :: :: Start 25/100 mg TID; if DRD, dramatic response at low dose; may titrate to 50/200 mg TID; response confirms diagnosis | None absolute; use caution in psychosis | Nausea, orthostatic hypotension; dramatic improvement suggests DRD | - | ROUTINE | ROUTINE | - |
-| Tetrabenazine | PO | Hyperkinetic movements including some dystonias | 12.5 mg daily; 12.5 mg BID; 25 mg TID :: PO :: :: Start 12.5 mg daily; increase by 12.5 mg q1wk; max 200 mg/day; CYP2D6 testing recommended | Depression; suicidality; Parkinsonism | Depression, sedation, parkinsonism, akathisia; Black Box: suicidality | - | - | ROUTINE | - |
-| Deutetrabenazine (Austedo) | PO | Longer half-life alternative to tetrabenazine | 6 mg BID; 12 mg BID; 24 mg BID :: PO :: :: Start 6 mg BID; increase by 6 mg/day weekly; max 48 mg/day | Same as tetrabenazine | Same but may be better tolerated | - | - | ROUTINE | - |
-| Clonidine | PO | Adjunct; may help in some patients | 0.1 mg BID; 0.2 mg BID; 0.3 mg BID :: PO :: :: Start 0.1 mg BID; increase by 0.1 mg q1wk; max 0.6 mg/day | Severe bradycardia; renal impairment (adjust) | Hypotension, bradycardia, sedation; rebound hypertension if stopped abruptly | - | ROUTINE | ROUTINE | - |
-| Carbamazepine | PO | Paroxysmal kinesigenic dystonia/dyskinesia | 100 mg BID; 200 mg BID; 400 mg BID :: PO :: :: Start 100 mg BID; increase by 100-200 mg q1wk; target 400-800 mg/day; check HLA-B*1502 in at-risk populations | Bone marrow suppression; AV block; SJS risk (HLA-B*1502) | CBC, LFTs, sodium; drug levels (4-12 mcg/mL) | - | ROUTINE | ROUTINE | - |
+| Trihexyphenidyl | PO | First-line oral for generalized dystonia; young patients tolerate best | 1 mg :: PO :: daily :: Start 1 mg daily; increase by 1-2 mg q3-5d; typical target 6-30 mg/day divided TID; some patients require up to 60-80 mg/day | Narrow-angle glaucoma; GI obstruction; urinary retention; dementia | Anticholinergic effects (dry mouth, constipation, urinary retention, confusion); cognitive effects in elderly | - | ROUTINE | ROUTINE | - |
+| Benztropine | PO | Alternative anticholinergic; maintenance after acute dystonic reaction | 0.5 mg :: PO :: BID :: Start 0.5 mg BID; increase by 0.5 mg q5-7d; typical 1-4 mg/day; max 6 mg/day | Narrow-angle glaucoma; GI obstruction; urinary retention; dementia | Anticholinergic effects (dry mouth, constipation, urinary retention, confusion); cognitive effects in elderly | - | ROUTINE | ROUTINE | - |
+| Baclofen | PO | Muscle relaxant; useful adjunct for dystonia | 5 mg :: PO :: TID :: Start 5 mg TID; increase by 5 mg/dose q3d; typical 30-80 mg/day divided TID; max 80-120 mg/day | Severe renal impairment (dose adjust); abrupt withdrawal risk | Sedation, weakness; taper slowly if discontinuing | - | ROUTINE | ROUTINE | - |
+| Clonazepam | PO | Adjunct for dystonia; myoclonus-dystonia | 0.25 mg :: PO :: BID :: Start 0.25 mg BID; increase by 0.25-0.5 mg q3-7d; typical 1-4 mg/day; max 6 mg/day | Respiratory depression; severe hepatic impairment; substance abuse history | Sedation, dependence, falls; taper if discontinuing | - | ROUTINE | ROUTINE | - |
+| Diazepam | PO | Alternative benzodiazepine; muscle relaxant properties | 2 mg :: PO :: TID :: Start 2 mg TID; increase by 2-5 mg/day q3-7d; typical 10-40 mg/day divided | Respiratory depression; severe hepatic impairment; substance abuse history | Sedation, dependence, falls; taper if discontinuing | - | ROUTINE | ROUTINE | - |
+| Levodopa/Carbidopa | PO | Dopa-responsive dystonia (DRD); diagnostic trial for young-onset | 25/100 mg :: PO :: TID :: Start 25/100 mg TID; if DRD, dramatic response at low dose; may titrate to 50/200 mg TID; response confirms diagnosis | None absolute; use caution in psychosis | Nausea, orthostatic hypotension; dramatic improvement suggests DRD | - | ROUTINE | ROUTINE | - |
+| Tetrabenazine | PO | Hyperkinetic movements including some dystonias | 12.5 mg :: PO :: daily :: Start 12.5 mg daily; increase by 12.5 mg q1wk; max 200 mg/day; CYP2D6 testing recommended | Depression; suicidality; Parkinsonism | Depression, sedation, parkinsonism, akathisia; Black Box: suicidality | - | - | ROUTINE | - |
+| Deutetrabenazine (Austedo) | PO | Longer half-life alternative to tetrabenazine | 6 mg :: PO :: BID :: Start 6 mg BID; increase by 6 mg/day weekly; max 48 mg/day | Depression; suicidality; Parkinsonism | Depression, sedation, parkinsonism, akathisia; Black Box: suicidality; may be better tolerated than tetrabenazine | - | - | ROUTINE | - |
+| Clonidine | PO | Adjunct; may help in some patients | 0.1 mg :: PO :: BID :: Start 0.1 mg BID; increase by 0.1 mg q1wk; max 0.6 mg/day | Severe bradycardia; renal impairment (adjust) | Hypotension, bradycardia, sedation; rebound hypertension if stopped abruptly | - | ROUTINE | ROUTINE | - |
+| Carbamazepine | PO | Paroxysmal kinesigenic dystonia/dyskinesia | 100 mg :: PO :: BID :: Start 100 mg BID; increase by 100-200 mg q1wk; target 400-800 mg/day; check HLA-B*1502 in at-risk populations | Bone marrow suppression; AV block; SJS risk (HLA-B*1502) | CBC, LFTs, sodium; drug levels (4-12 mcg/mL) | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Disease-Modifying/Specialized Therapies
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Deep brain stimulation (GPi-DBS) | Surgical | Medication-refractory generalized or segmental dystonia; DYT1 positive | Bilateral GPi stimulation :: Surgical :: :: Bilateral GPi electrode placement; programming over weeks-months; full effect may take 6-12 months | MRI; neuropsych testing; multidisciplinary evaluation; genetic testing if indicated | Cognitive impairment; coagulopathy; infection; unrealistic expectations | Programming optimization; battery replacement q3-5yr; speech/swallowing | - | - | ROUTINE | - |
-| Deep brain stimulation (GPi-DBS) | Surgical | Cervical dystonia refractory to botulinum toxin | Bilateral GPi stimulation :: Surgical :: :: Same as above | Same as above | Same as above | Same as above | - | - | ROUTINE | - |
-| Intrathecal baclofen pump | Surgical | Severe generalized dystonia with spasticity component; CP-related | Continuous IT infusion :: IT :: :: Test dose 25-100 mcg; maintenance typically 100-1000 mcg/day; titrate over months | IT baclofen trial with >50% improvement | Infection; CSF obstruction; baclofen hypersensitivity | Pump refills q1-3mo; withdrawal syndrome if interruption; MRI conditional pumps | - | ROUTINE | ROUTINE | - |
-| D-penicillamine | PO | Wilson's disease with neurological symptoms | 250 mg daily; 500 mg BID; 750 mg BID; 1000 mg BID :: PO :: :: Start 250 mg daily; increase by 250 mg q4-7d; target 1000-1500 mg/day divided BID (take 1hr before meals); lifelong treatment | 24h urine copper, LFTs, CBC, urinalysis | Penicillin allergy (not absolute but caution); nephrotoxicity | CBC weekly x1mo then monthly x6mo then q3mo; urinalysis monthly; LFTs monthly; neurologic worsening first 6 months possible | - | ROUTINE | ROUTINE | - |
-| Trientine (Syprine) | PO | Wilson's disease; D-penicillamine intolerant | 250 mg TID; 500 mg TID; 750 mg BID :: PO :: :: Start 250 mg TID; target 750-1250 mg/day divided TID; take 1hr before or 2hr after meals | Same as D-penicillamine | Caution with iron supplements (separate by 2hr) | Same monitoring as D-penicillamine; fewer side effects | - | ROUTINE | ROUTINE | - |
-| Zinc acetate (Galzin) | PO | Wilson's disease maintenance; presymptomatic; adjunct | 50 mg TID :: PO :: :: 50 mg TID (elemental zinc); take between meals; blocks intestinal copper absorption | Take separately from copper chelators | GI upset | 24h urine copper; serum zinc; 24h urine zinc | - | ROUTINE | ROUTINE | - |
+| Deep brain stimulation (GPi-DBS) | Surgical | Medication-refractory generalized or segmental dystonia; DYT1 positive | Bilateral GPi stimulation :: Surgical :: per protocol :: Bilateral GPi electrode placement; programming over weeks-months; full effect may take 6-12 months | MRI; neuropsych testing; multidisciplinary evaluation; genetic testing if indicated | Cognitive impairment; coagulopathy; infection; unrealistic expectations | Programming optimization; battery replacement q3-5yr; speech/swallowing | - | - | ROUTINE | - |
+| Deep brain stimulation (GPi-DBS) | Surgical | Cervical dystonia refractory to botulinum toxin | Bilateral GPi stimulation :: Surgical :: per protocol :: Bilateral GPi electrode placement; programming over weeks-months; full effect may take 6-12 months | MRI; neuropsych testing; multidisciplinary evaluation; genetic testing if indicated | Cognitive impairment; coagulopathy; infection; unrealistic expectations | Programming optimization; battery replacement q3-5yr; speech/swallowing | - | - | ROUTINE | - |
+| Intrathecal baclofen pump | Surgical | Severe generalized dystonia with spasticity component; CP-related | 25 mcg :: IT :: test dose :: Test dose 25-100 mcg; maintenance typically 100-1000 mcg/day; titrate over months | IT baclofen trial with >50% improvement | Infection; CSF obstruction; baclofen hypersensitivity | Pump refills q1-3mo; withdrawal syndrome if interruption; MRI conditional pumps | - | ROUTINE | ROUTINE | - |
+| D-penicillamine | PO | Wilson's disease with neurological symptoms | 250 mg :: PO :: daily :: Start 250 mg daily; increase by 250 mg q4-7d; target 1000-1500 mg/day divided BID (take 1hr before meals); lifelong treatment | 24h urine copper, LFTs, CBC, urinalysis | Penicillin allergy (not absolute but caution); nephrotoxicity | CBC weekly x1mo then monthly x6mo then q3mo; urinalysis monthly; LFTs monthly; neurologic worsening first 6 months possible | - | ROUTINE | ROUTINE | - |
+| Trientine (Syprine) | PO | Wilson's disease; D-penicillamine intolerant | 250 mg :: PO :: TID :: Start 250 mg TID; target 750-1250 mg/day divided TID; take 1hr before or 2hr after meals | 24h urine copper, LFTs, CBC, urinalysis | Caution with iron supplements (separate by 2hr) | CBC, LFTs, urinalysis monthly initially then q3mo; fewer side effects than D-penicillamine | - | ROUTINE | ROUTINE | - |
+| Zinc acetate (Galzin) | PO | Wilson's disease maintenance; presymptomatic; adjunct | 50 mg :: PO :: TID :: 50 mg TID (elemental zinc); take between meals; blocks intestinal copper absorption | Take separately from copper chelators | GI upset | 24h urine copper; serum zinc; 24h urine zinc | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -278,6 +282,15 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Reformatted lab tables (1A/1B/1C) to standard column order: Test | ED | HOSP | OPD | ICU | Rationale | Target Finding
+- Reformatted imaging tables (2A/2B/2C) to standard column order: Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications
+- Added inline CPT codes to all lab tests and imaging studies
+- Fixed structured dosing format: starting dose only in first field across all treatment sections
+- Expanded all cross-references ("Same as lorazepam", "Same as onabotulinum", "Same as trihexyphenidyl", "Same as clonazepam", "Same as tetrabenazine", "Same as above", "Same as D-penicillamine") with actual content
+- Added clinical synonyms for searchability
+- Added VERSION/CREATED/REVISED header block
 
 **v1.0 (January 27, 2026)**
 - Initial template creation

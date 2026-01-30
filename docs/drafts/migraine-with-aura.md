@@ -1,7 +1,7 @@
 ---
 title: "Migraine with Aura"
 description: "Clinical decision support for migraine with aura diagnosis and management, including differentiation from TIA/stroke and contraceptive considerations"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD"
 status: draft
 tags:
@@ -23,8 +23,13 @@ tags:
 # Migraine with Aura
 
 **DIAGNOSIS:** Migraine with Aura
-**ICD-10:** G43.109 (Migraine with aura, not intractable, without status migrainosus)
+**ICD-10:** G43.109 (Migraine with aura, not intractable, without status migrainosus), G43.101 (with status migrainosus), G43.119 (intractable, without status migrainosus), G43.111 (intractable, with status migrainosus), G43.409 (Hemiplegic migraine, not intractable), G43.419 (Hemiplegic migraine, intractable)
+**SYNONYMS:** Classic migraine, migraine with typical aura, hemiplegic migraine, familial hemiplegic migraine (FHM), sporadic hemiplegic migraine, visual migraine, ophthalmic migraine, acephalgic migraine, migraine aura without headache, scintillating scotoma, fortification spectra
 **SCOPE:** Diagnosis and management of migraine with typical aura (visual, sensory, language) and hemiplegic migraine. Focuses on outpatient management with acute care considerations. Covers differentiation from TIA/stroke, contraceptive counseling, and preventive therapy. Excludes migraine with brainstem aura (separate protocol) and retinal migraine.
+
+**VERSION:** 1.1
+**CREATED:** January 27, 2026
+**REVISED:** January 30, 2026
 
 **STATUS:** Draft - Pending Review
 
@@ -49,36 +54,36 @@ tags:
 
 ### 1A. Essential/Core Labs
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CBC | Rule out anemia, infection; baseline before treatment | Normal | STAT | ROUTINE | ROUTINE | - |
-| BMP | Electrolyte abnormalities; renal function for medication dosing | Normal | STAT | ROUTINE | ROUTINE | - |
-| Glucose | Hypoglycemia can mimic aura; hyperglycemia raises stroke risk | 70-180 mg/dL | STAT | ROUTINE | ROUTINE | - |
-| PT/INR, PTT | Coagulation screen if stroke consideration; before LP | Normal | STAT | ROUTINE | - | - |
-| HbA1c | Vascular risk assessment | <7% optimal | - | ROUTINE | ROUTINE | - |
-| Lipid panel | Vascular risk stratification | LDL <100 mg/dL | - | ROUTINE | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CBC (CPT 85025) | STAT | ROUTINE | ROUTINE | - | Rule out anemia, infection; baseline before treatment | Normal |
+| BMP (CPT 80048) | STAT | ROUTINE | ROUTINE | - | Electrolyte abnormalities; renal function for medication dosing | Normal |
+| Glucose (CPT 82947) | STAT | ROUTINE | ROUTINE | - | Hypoglycemia can mimic aura; hyperglycemia raises stroke risk | 70-180 mg/dL |
+| PT/INR (CPT 85610), PTT (CPT 85730) | STAT | ROUTINE | - | - | Coagulation screen if stroke consideration; before LP | Normal |
+| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Vascular risk assessment | <7% optimal |
+| Lipid panel (CPT 80061) | - | ROUTINE | ROUTINE | - | Vascular risk stratification | LDL <100 mg/dL |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| ESR, CRP | Rule out GCA if age >50 with new visual symptoms | Normal | URGENT | ROUTINE | ROUTINE | - |
-| TSH | Thyroid dysfunction can trigger headache/aura-like symptoms | Normal (0.4-4.0 mIU/L) | - | ROUTINE | ROUTINE | - |
-| Magnesium (RBC) | Deficiency linked to migraine with aura specifically | >4.2 mg/dL | - | ROUTINE | ROUTINE | - |
-| Homocysteine | Elevated levels associated with migraine with aura and stroke | <15 μmol/L | - | ROUTINE | ROUTINE | - |
-| Vitamin B12, folate | Deficiency can elevate homocysteine; sensory symptoms | Normal | - | ROUTINE | ROUTINE | - |
-| Vitamin D, 25-OH | Deficiency associated with increased migraine frequency | >30 ng/mL | - | ROUTINE | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| ESR (CPT 85652), CRP (CPT 86140) | URGENT | ROUTINE | ROUTINE | - | Rule out GCA if age >50 with new visual symptoms | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction can trigger headache/aura-like symptoms | Normal (0.4-4.0 mIU/L) |
+| Magnesium, RBC (CPT 83735) | - | ROUTINE | ROUTINE | - | Deficiency linked to migraine with aura specifically | >4.2 mg/dL |
+| Homocysteine (CPT 83090) | - | ROUTINE | ROUTINE | - | Elevated levels associated with migraine with aura and stroke | <15 μmol/L |
+| Vitamin B12 (CPT 82607), Folate (CPT 82746) | - | ROUTINE | ROUTINE | - | Deficiency can elevate homocysteine; sensory symptoms | Normal |
+| Vitamin D, 25-OH (CPT 82306) | - | ROUTINE | ROUTINE | - | Deficiency associated with increased migraine frequency | >30 ng/mL |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Antiphospholipid antibodies (lupus anticoagulant, anticardiolipin, anti-β2GP1) | Thrombophilia workup if young stroke or recurrent prolonged aura | Negative | - | EXT | EXT | - |
-| Factor V Leiden, prothrombin G20210A | Hereditary thrombophilia if recurrent aura or stroke-like events | Negative | - | - | EXT | - |
-| ANA, anti-dsDNA | CNS lupus in atypical presentations | Negative | - | EXT | EXT | - |
-| MTHFR mutation | Elevated homocysteine with aura | Wild type or heterozygous | - | - | EXT | - |
-| Genetic testing (CACNA1A, ATP1A2, SCN1A) | Hemiplegic migraine suspected; family history | Variant identified | - | - | EXT | - |
-| CSF analysis | Rule out meningitis, SAH if atypical presentation | Normal; no xanthochromia | URGENT | ROUTINE | - | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Antiphospholipid antibodies (CPT 86235, 86147, 86146) | - | EXT | EXT | - | Thrombophilia workup if young stroke or recurrent prolonged aura | Negative |
+| Factor V Leiden (CPT 81241), Prothrombin G20210A (CPT 81240) | - | - | EXT | - | Hereditary thrombophilia if recurrent aura or stroke-like events | Negative |
+| ANA (CPT 86038), Anti-dsDNA (CPT 86225) | - | EXT | EXT | - | CNS lupus in atypical presentations | Negative |
+| MTHFR mutation (CPT 81291) | - | - | EXT | - | Elevated homocysteine with aura | Wild type or heterozygous |
+| Genetic testing: CACNA1A, ATP1A2, SCN1A (CPT 81406) | - | - | EXT | - | Hemiplegic migraine suspected; family history | Variant identified |
+| CSF analysis (CPT 89050, 89051) | URGENT | ROUTINE | - | - | Rule out meningitis, SAH if atypical presentation | Normal; no xanthochromia |
 
 ---
 
@@ -86,29 +91,29 @@ tags:
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain without contrast | First presentation with aura; rule out stroke/structural lesion | Normal; no acute infarct; no WMH concerning for vasculopathy | MRI-incompatible devices | URGENT | ROUTINE | ROUTINE | - |
-| CT Head non-contrast | Acute presentation if MRI unavailable; rule out hemorrhage | No hemorrhage or mass | Pregnancy (relative) | STAT | STAT | - | - |
-| MRA Head | First aura or prolonged aura to assess intracranial vessels | No stenosis, aneurysm, or dissection | MRI contraindications | URGENT | ROUTINE | ROUTINE | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain without contrast (CPT 70551) | URGENT | ROUTINE | ROUTINE | - | First presentation with aura; rule out stroke/structural lesion | Normal; no acute infarct; no WMH concerning for vasculopathy | MRI-incompatible devices |
+| CT Head non-contrast (CPT 70450) | STAT | STAT | - | - | Acute presentation if MRI unavailable; rule out hemorrhage | No hemorrhage or mass | Pregnancy (relative) |
+| MRA Head (CPT 70544) | URGENT | ROUTINE | ROUTINE | - | First aura or prolonged aura to assess intracranial vessels | No stenosis, aneurysm, or dissection | MRI contraindications |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain with contrast | Atypical features; persistent deficits; concern for mass | No enhancement; no mass | Gadolinium allergy; severe renal impairment | URGENT | ROUTINE | ROUTINE | - |
-| MRA Neck | Suspected cervical dissection (neck pain, Horner syndrome) | No dissection | MRI contraindications | URGENT | ROUTINE | ROUTINE | - |
-| CTA Head/Neck | Acute vascular imaging if MRI unavailable | No aneurysm, dissection, occlusion | Contrast allergy; CKD (eGFR <30) | STAT | URGENT | - | - |
-| TTE with bubble study | Evaluate for PFO if recurrent aura or cryptogenic stroke history | No PFO; if present, assess shunt size | None | - | ROUTINE | ROUTINE | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain with contrast (CPT 70553) | URGENT | ROUTINE | ROUTINE | - | Atypical features; persistent deficits; concern for mass | No enhancement; no mass | Gadolinium allergy; severe renal impairment |
+| MRA Neck (CPT 70547) | URGENT | ROUTINE | ROUTINE | - | Suspected cervical dissection (neck pain, Horner syndrome) | No dissection | MRI contraindications |
+| CTA Head/Neck (CPT 70496, 70498) | STAT | URGENT | - | - | Acute vascular imaging if MRI unavailable | No aneurysm, dissection, occlusion | Contrast allergy; CKD (eGFR <30) |
+| TTE with bubble study (CPT 93306) | - | ROUTINE | ROUTINE | - | Evaluate for PFO if recurrent aura or cryptogenic stroke history | No PFO; if present, assess shunt size | None |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| TEE | Detailed cardiac source evaluation if TTE positive or high suspicion | No cardiac thrombus; characterize PFO | Esophageal pathology | - | EXT | EXT | - |
-| MRI with perfusion/DWI | Prolonged aura to differentiate migrainous infarct from stroke | No DWI restriction | MRI contraindications | URGENT | ROUTINE | EXT | - |
-| Transcranial Doppler with bubble | PFO screening; noninvasive alternative to TTE bubble | No right-to-left shunt | Inadequate acoustic windows | - | ROUTINE | ROUTINE | - |
-| EEG | Aura with altered consciousness; differentiate from seizure | No epileptiform activity | None | URGENT | ROUTINE | EXT | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| TEE (CPT 93312) | - | EXT | EXT | - | Detailed cardiac source evaluation if TTE positive or high suspicion | No cardiac thrombus; characterize PFO | Esophageal pathology |
+| MRI with perfusion/DWI (CPT 70553) | URGENT | ROUTINE | EXT | - | Prolonged aura to differentiate migrainous infarct from stroke | No DWI restriction | MRI contraindications |
+| Transcranial Doppler with bubble (CPT 93886) | - | ROUTINE | ROUTINE | - | PFO screening; noninvasive alternative to TTE bubble | No right-to-left shunt | Inadequate acoustic windows |
+| EEG (CPT 95816) | URGENT | ROUTINE | EXT | - | Aura with altered consciousness; differentiate from seizure | No epileptiform activity | None |
 
 ---
 
@@ -118,60 +123,60 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Ketorolac | IV/IM | First-line acute migraine with aura in ED | 30 mg IV x1; 15 mg IV x1 :: IV :: :: 30 mg IV (15 mg if >65y, renal impairment, or <50 kg); max 5 days NSAIDs | Renal impairment (CrCl <30); active GI bleed; aspirin/NSAID allergy; third trimester | Renal function if repeated dosing | STAT | STAT | - | - |
-| Metoclopramide | IV | Antiemetic with anti-migraine properties | 10 mg IV over 15 min; 20 mg IV over 15 min :: IV :: :: 10-20 mg IV over 15 min; pretreat with diphenhydramine 25 mg IV to prevent akathisia | Parkinson's disease; tardive dyskinesia history; bowel obstruction; pheochromocytoma | Akathisia, dystonia; discontinue if EPS | STAT | STAT | - | - |
-| Prochlorperazine | IV | Dopamine antagonist for acute migraine with prominent nausea | 10 mg IV over 2 min :: IV :: :: 10 mg IV slowly over 2 min; pretreat with diphenhydramine 25 mg IV | QT prolongation (QTc >500ms); Parkinson's disease; neuroleptic malignant syndrome history | QTc if baseline prolonged; EPS | STAT | STAT | - | - |
-| Diphenhydramine | IV | Prevent akathisia from dopamine antagonists; sedation | 25 mg IV; 50 mg IV :: IV :: :: 25-50 mg IV given concurrently with dopamine antagonist | Narrow-angle glaucoma; urinary retention; severe prostatic hypertrophy | Sedation; anticholinergic effects | STAT | STAT | - | - |
-| Magnesium sulfate | IV | Migraine with aura - particularly effective; refractory migraine | 2 g IV over 20 min :: IV :: :: 2 g IV in 50 mL NS over 20-30 min; may repeat x1 after 2 hr | Heart block; severe hypermagnesemia; myasthenia gravis; severe renal impairment | BP, HR during infusion; flushing is common and benign | STAT | URGENT | - | - |
-| Sumatriptan | SC/PO | Acute migraine with TYPICAL aura (visual, sensory, language) - SAFE | 6 mg SC x1; 50 mg PO x1; 100 mg PO x1 :: SC/PO :: :: 6 mg SC (may repeat after 1 hr, max 12 mg/24hr) OR 50-100 mg PO (may repeat after 2 hr, max 200 mg/24hr); take AFTER aura resolves or at headache onset | **HEMIPLEGIC MIGRAINE (motor aura)**; uncontrolled HTN; CAD; prior stroke/TIA; MAOIs within 14 days; ergots within 24 hr | Chest tightness (triptan sensation vs cardiac); assess cardiovascular risk | URGENT | URGENT | ROUTINE | - |
-| Valproate sodium | IV | Status migrainosus with aura; refractory to first-line | 500 mg IV over 5 min; 1000 mg IV over 5 min :: IV :: :: 500-1000 mg IV over 5-10 min; may repeat 500 mg in 8 hr | Hepatic disease; pregnancy (teratogenic); urea cycle disorders; pancreatitis history | LFTs; ammonia if altered mental status | URGENT | URGENT | - | - |
-| Dexamethasone | IV | Prevent headache recurrence after acute treatment | 10 mg IV x1 :: IV :: :: 10 mg IV x1 at time of discharge or admission; single dose | Active untreated infection; known hypersensitivity | Glucose if diabetic | URGENT | URGENT | - | - |
+| Ketorolac | IV/IM | First-line acute migraine with aura in ED | 30 mg :: IV :: once :: 30 mg IV (15 mg if >65y, renal impairment, or <50 kg); max 5 days NSAIDs | Renal impairment (CrCl <30); active GI bleed; aspirin/NSAID allergy; third trimester | Renal function if repeated dosing | STAT | STAT | - | - |
+| Metoclopramide | IV | Antiemetic with anti-migraine properties | 10 mg :: IV :: once :: 10-20 mg IV over 15 min; pretreat with diphenhydramine 25 mg IV to prevent akathisia | Parkinson's disease; tardive dyskinesia history; bowel obstruction; pheochromocytoma | Akathisia, dystonia; discontinue if EPS | STAT | STAT | - | - |
+| Prochlorperazine | IV | Dopamine antagonist for acute migraine with prominent nausea | 10 mg :: IV :: once :: 10 mg IV slowly over 2 min; pretreat with diphenhydramine 25 mg IV | QT prolongation (QTc >500ms); Parkinson's disease; neuroleptic malignant syndrome history | QTc if baseline prolonged; EPS | STAT | STAT | - | - |
+| Diphenhydramine | IV | Prevent akathisia from dopamine antagonists; sedation | 25 mg :: IV :: once :: 25-50 mg IV given concurrently with dopamine antagonist | Narrow-angle glaucoma; urinary retention; severe prostatic hypertrophy | Sedation; anticholinergic effects | STAT | STAT | - | - |
+| Magnesium sulfate | IV | Migraine with aura - particularly effective; refractory migraine | 2 g :: IV :: once :: 2 g IV in 50 mL NS over 20-30 min; may repeat x1 after 2 hr | Heart block; severe hypermagnesemia; myasthenia gravis; severe renal impairment | BP, HR during infusion; flushing is common and benign | STAT | URGENT | - | - |
+| Sumatriptan | SC/PO | Acute migraine with TYPICAL aura (visual, sensory, language) - SAFE | 6 mg :: SC :: once :: 6 mg SC (may repeat after 1 hr, max 12 mg/24hr) OR 50-100 mg PO (may repeat after 2 hr, max 200 mg/24hr); take AFTER aura resolves or at headache onset | **HEMIPLEGIC MIGRAINE (motor aura)**; uncontrolled HTN; CAD; prior stroke/TIA; MAOIs within 14 days; ergots within 24 hr | Chest tightness (triptan sensation vs cardiac); assess cardiovascular risk | URGENT | URGENT | ROUTINE | - |
+| Valproate sodium | IV | Status migrainosus with aura; refractory to first-line | 500 mg :: IV :: once :: 500-1000 mg IV over 5-10 min; may repeat 500 mg in 8 hr | Hepatic disease; pregnancy (teratogenic); urea cycle disorders; pancreatitis history | LFTs; ammonia if altered mental status | URGENT | URGENT | - | - |
+| Dexamethasone | IV | Prevent headache recurrence after acute treatment | 10 mg :: IV :: once :: 10 mg IV x1 at time of discharge or admission; single dose | Active untreated infection; known hypersensitivity | Glucose if diabetic | URGENT | URGENT | - | - |
 
 ### 3B. Symptomatic Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Rizatriptan | PO | Acute typical migraine with aura; fast onset | 5 mg PO x1; 10 mg PO x1 :: PO :: :: 5-10 mg PO (use 5 mg if on propranolol); may repeat after 2 hr; max 30 mg/24hr | Same as sumatriptan; **HEMIPLEGIC MIGRAINE**; use 5 mg max if on propranolol | Triptan sensation | - | ROUTINE | ROUTINE | - |
-| Eletriptan | PO | Acute typical migraine with aura; good for recurrence | 40 mg PO x1; 80 mg PO x1 :: PO :: :: 40 mg PO; may repeat 40 mg after 2 hr if partial response; max 80 mg/24hr | Same as sumatriptan; **HEMIPLEGIC MIGRAINE**; potent CYP3A4 inhibitors (ketoconazole, clarithromycin) | Triptan sensation | - | ROUTINE | ROUTINE | - |
-| Naratriptan | PO | Migraine with aura; longer duration; menstrual migraine | 2.5 mg PO x1 :: PO :: :: 2.5 mg PO; may repeat after 4 hr; max 5 mg/24hr; slower onset but longer lasting | Same as sumatriptan; **HEMIPLEGIC MIGRAINE**; moderate-severe renal/hepatic impairment | Triptan sensation | - | ROUTINE | ROUTINE | - |
-| Ubrogepant | PO | CGRP antagonist; use if triptan contraindicated or cardiovascular risk | 50 mg PO x1; 100 mg PO x1 :: PO :: :: 50-100 mg PO; may repeat after 2 hr; max 200 mg/24hr | Strong CYP3A4 inhibitors; severe hepatic impairment | None routine; no cardiovascular contraindications | - | ROUTINE | ROUTINE | - |
-| Rimegepant | PO/ODT | CGRP antagonist; can use for acute and prevention | 75 mg ODT x1 :: PO :: :: 75 mg ODT at onset; max 75 mg/24hr for acute; also approved 75 mg every other day for prevention | Strong CYP3A4 inhibitors/inducers; severe hepatic impairment | None routine | - | ROUTINE | ROUTINE | - |
-| Lasmiditan | PO | 5-HT1F agonist; safe in cardiovascular disease; ditan class | 50 mg PO x1; 100 mg PO x1; 200 mg PO x1 :: PO :: :: 50-200 mg PO x1; max 200 mg/24hr; DO NOT DRIVE for 8 hours after dose | Concurrent alcohol; CYP3A4 substrates with narrow TI | CNS depression; dizziness; NO driving for 8 hr | - | ROUTINE | ROUTINE | - |
-| Ibuprofen | PO | Mild-moderate aura migraine | 400 mg PO x1; 600 mg PO x1; 800 mg PO x1 :: PO :: :: 400-800 mg PO at onset; max 2400 mg/day | Renal impairment; active GI bleed; aspirin/NSAID allergy; third trimester | GI symptoms; renal function if prolonged use | URGENT | ROUTINE | ROUTINE | - |
-| Naproxen sodium | PO | Mild-moderate aura migraine; menstrual migraine prevention | 550 mg PO x1 :: PO :: :: 550 mg PO at onset; may add 275 mg in 12 hr; max 1375 mg day 1, then 1100 mg/day | Renal impairment; active GI bleed; aspirin/NSAID allergy | GI symptoms | URGENT | ROUTINE | ROUTINE | - |
-| Acetaminophen-Aspirin-Caffeine | PO | Mild-moderate migraine with aura (OTC option) | 2 tablets PO x1 :: PO :: :: 2 tablets (250/250/65 mg each) at onset; max 2 doses/24hr | Aspirin allergy; hepatic impairment; avoid if using other acetaminophen sources | Limit total acetaminophen <3 g/day | URGENT | ROUTINE | ROUTINE | - |
-| Ondansetron | IV/PO | Nausea/vomiting with migraine | 4 mg IV x1; 8 mg ODT x1 :: IV/PO :: :: 4 mg IV or 8 mg PO/ODT; may repeat q8h as needed | QT prolongation (QTc >500ms); severe hepatic impairment | QTc if multiple doses or baseline prolongation | STAT | STAT | ROUTINE | - |
+| Rizatriptan | PO | Acute typical migraine with aura; fast onset | 10 mg :: PO :: once :: 5-10 mg PO (use 5 mg if on propranolol); may repeat after 2 hr; max 30 mg/24hr | **HEMIPLEGIC MIGRAINE (motor aura)**; uncontrolled HTN; CAD; prior stroke/TIA; MAOIs within 14 days; ergots within 24 hr; use 5 mg max if on propranolol | Triptan sensation | - | ROUTINE | ROUTINE | - |
+| Eletriptan | PO | Acute typical migraine with aura; good for recurrence | 40 mg :: PO :: once :: 40 mg PO; may repeat 40 mg after 2 hr if partial response; max 80 mg/24hr | **HEMIPLEGIC MIGRAINE (motor aura)**; uncontrolled HTN; CAD; prior stroke/TIA; MAOIs within 14 days; ergots within 24 hr; potent CYP3A4 inhibitors (ketoconazole, clarithromycin) | Triptan sensation | - | ROUTINE | ROUTINE | - |
+| Naratriptan | PO | Migraine with aura; longer duration; menstrual migraine | 2.5 mg :: PO :: once :: 2.5 mg PO; may repeat after 4 hr; max 5 mg/24hr; slower onset but longer lasting | **HEMIPLEGIC MIGRAINE (motor aura)**; uncontrolled HTN; CAD; prior stroke/TIA; MAOIs within 14 days; ergots within 24 hr; moderate-severe renal/hepatic impairment | Triptan sensation | - | ROUTINE | ROUTINE | - |
+| Ubrogepant | PO | CGRP antagonist; use if triptan contraindicated or cardiovascular risk | 50 mg :: PO :: once :: 50-100 mg PO; may repeat after 2 hr; max 200 mg/24hr | Strong CYP3A4 inhibitors; severe hepatic impairment | None routine; no cardiovascular contraindications | - | ROUTINE | ROUTINE | - |
+| Rimegepant | PO/ODT | CGRP antagonist; can use for acute and prevention | 75 mg :: PO :: once :: 75 mg ODT at onset; max 75 mg/24hr for acute; also approved 75 mg every other day for prevention | Strong CYP3A4 inhibitors/inducers; severe hepatic impairment | None routine | - | ROUTINE | ROUTINE | - |
+| Lasmiditan | PO | 5-HT1F agonist; safe in cardiovascular disease; ditan class | 100 mg :: PO :: once :: 50-200 mg PO x1; max 200 mg/24hr; DO NOT DRIVE for 8 hours after dose | Concurrent alcohol; CYP3A4 substrates with narrow TI | CNS depression; dizziness; NO driving for 8 hr | - | ROUTINE | ROUTINE | - |
+| Ibuprofen | PO | Mild-moderate aura migraine | 400 mg :: PO :: once :: 400-800 mg PO at onset; max 2400 mg/day | Renal impairment; active GI bleed; aspirin/NSAID allergy; third trimester | GI symptoms; renal function if prolonged use | URGENT | ROUTINE | ROUTINE | - |
+| Naproxen sodium | PO | Mild-moderate aura migraine; menstrual migraine prevention | 550 mg :: PO :: once :: 550 mg PO at onset; may add 275 mg in 12 hr; max 1375 mg day 1, then 1100 mg/day | Renal impairment; active GI bleed; aspirin/NSAID allergy | GI symptoms | URGENT | ROUTINE | ROUTINE | - |
+| Acetaminophen-Aspirin-Caffeine | PO | Mild-moderate migraine with aura (OTC option) | 2 tablets :: PO :: once :: 2 tablets (250/250/65 mg each) at onset; max 2 doses/24hr | Aspirin allergy; hepatic impairment; avoid if using other acetaminophen sources | Limit total acetaminophen <3 g/day | URGENT | ROUTINE | ROUTINE | - |
+| Ondansetron | IV/PO | Nausea/vomiting with migraine | 4 mg :: IV :: PRN :: 4 mg IV or 8 mg PO/ODT; may repeat q8h as needed | QT prolongation (QTc >500ms); severe hepatic impairment | QTc if multiple doses or baseline prolongation | STAT | STAT | ROUTINE | - |
 
 ### 3C. Second-line/Refractory
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Dihydroergotamine (DHE) | IV/SC/Nasal | Refractory migraine; status migrainosus; **NOT for hemiplegic** | 0.5 mg IV q8h; 1 mg SC x1; 1 spray per nostril :: IV/SC/Nasal :: :: IV: 0.5-1 mg q8h for up to 3 days (pretreat with antiemetic); SC: 1 mg, may repeat in 1 hr; Nasal: 1 spray each nostril, repeat in 15 min | Pregnancy; CAD; uncontrolled HTN; peripheral vascular disease; **HEMIPLEGIC MIGRAINE**; triptan use within 24hr; severe hepatic/renal impairment | BP; nausea; chest pain; continuous cardiac monitoring for IV | - | URGENT | EXT | - |
-| Occipital nerve block | SC | Refractory migraine; occipital-predominant pain | Bupivacaine 0.5% 2-3 mL + triamcinolone 40 mg :: SC :: :: Inject at greater occipital nerve bilaterally; may add lesser occipital, supraorbital | Local anesthetic allergy; infection at injection site; anticoagulation (relative) | Vasovagal reaction; immediate pain assessment | - | EXT | ROUTINE | - |
-| Ketamine | IV | Status migrainosus refractory to DHE | 0.1-0.3 mg/kg/hr infusion :: IV :: :: 0.1-0.3 mg/kg/hr continuous infusion for 24-48 hr; subanesthetic dosing only | Uncontrolled HTN; psychosis history; elevated ICP; pregnancy | Dissociation; BP; HR; requires continuous cardiac monitoring | - | EXT | - | - |
-| Verapamil | IV | Hemiplegic migraine acute (if severe); status migrainosus | 5 mg IV over 2 min :: IV :: :: 5 mg IV over 2-3 min; may repeat in 30 min (max 20 mg) | Heart block (2nd/3rd degree); severe LV dysfunction; hypotension | Continuous ECG; BP; for hemiplegic migraine when triptans contraindicated | - | EXT | - | - |
-| Intranasal lidocaine | Intranasal | Acute migraine with aura; rapid onset option | 4% lidocaine 0.5 mL per nostril :: Intranasal :: :: 4% lidocaine, 0.5 mL per nostril directed at sphenopalatine fossa; may repeat x1 in 15 min | Local anesthetic allergy | Local numbness; cardiac arrhythmia (rare with low dose) | URGENT | URGENT | ROUTINE | - |
+| Dihydroergotamine (DHE) | IV/SC/Nasal | Refractory migraine; status migrainosus; **NOT for hemiplegic** | 0.5 mg :: IV :: q8h :: IV: 0.5-1 mg q8h for up to 3 days (pretreat with antiemetic); SC: 1 mg, may repeat in 1 hr; Nasal: 1 spray each nostril, repeat in 15 min | Pregnancy; CAD; uncontrolled HTN; peripheral vascular disease; **HEMIPLEGIC MIGRAINE**; triptan use within 24hr; severe hepatic/renal impairment | BP; nausea; chest pain; continuous cardiac monitoring for IV | - | URGENT | EXT | - |
+| Occipital nerve block | SC | Refractory migraine; occipital-predominant pain | 2.5 mL :: SC :: once :: Inject bupivacaine 0.5% 2-3 mL + triamcinolone 40 mg at greater occipital nerve bilaterally; may add lesser occipital, supraorbital | Local anesthetic allergy; infection at injection site; anticoagulation (relative) | Vasovagal reaction; immediate pain assessment | - | EXT | ROUTINE | - |
+| Ketamine | IV | Status migrainosus refractory to DHE | 0.1 mg/kg/hr :: IV :: continuous :: 0.1-0.3 mg/kg/hr continuous infusion for 24-48 hr; subanesthetic dosing only | Uncontrolled HTN; psychosis history; elevated ICP; pregnancy | Dissociation; BP; HR; requires continuous cardiac monitoring | - | EXT | - | - |
+| Verapamil | IV | Hemiplegic migraine acute (if severe); status migrainosus | 5 mg :: IV :: once :: 5 mg IV over 2-3 min; may repeat in 30 min (max 20 mg) | Heart block (2nd/3rd degree); severe LV dysfunction; hypotension | Continuous ECG; BP; for hemiplegic migraine when triptans contraindicated | - | EXT | - | - |
+| Intranasal lidocaine | Intranasal | Acute migraine with aura; rapid onset option | 0.5 mL :: Intranasal :: once :: 4% lidocaine 0.5 mL per nostril directed at sphenopalatine fossa; may repeat x1 in 15 min | Local anesthetic allergy | Local numbness; cardiac arrhythmia (rare with low dose) | URGENT | URGENT | ROUTINE | - |
 
 ### 3D. Disease-Modifying or Chronic Therapies (Preventive Medications)
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Magnesium oxide | PO | First-line supplement for migraine with aura prevention | 400 mg daily; 400 mg BID :: PO :: :: Start 400 mg daily; may increase to 400 mg BID; take with food to reduce GI upset | None | Renal impairment (CrCl <30) - dose reduce | Diarrhea; check Mg level if symptomatic or renal disease | - | ROUTINE | ROUTINE | - |
-| Topiramate | PO | First-line oral prevention; reduces aura frequency; weight loss | 25 mg qHS; 50 mg BID; 100 mg BID :: PO :: :: Start 25 mg qHS; increase by 25 mg/wk; target 50-100 mg BID | None | **PREGNANCY (teratogenic)**; glaucoma; kidney stones; metabolic acidosis | Cognitive effects; paresthesias; weight; serum bicarbonate; kidney stones | - | ROUTINE | ROUTINE | - |
-| Propranolol | PO | First-line prevention; comorbid HTN, anxiety, tremor | 40 mg BID; 80 mg BID; 80 mg LA daily; 160 mg LA daily :: PO :: :: Start 40 mg BID or 80 mg LA daily; titrate q2wk; target 80-240 mg/day | None | Asthma; COPD with bronchospasm; bradycardia <50; 2nd/3rd degree heart block; decompensated HF | HR (goal >50); BP; fatigue; depression; exercise intolerance | - | ROUTINE | ROUTINE | - |
-| Amitriptyline | PO | Prevention with comorbid insomnia, depression, tension-type headache | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10 mg qHS; titrate by 10-25 mg q1-2wk; target 25-75 mg qHS | ECG if >50 y/o or cardiac history | Cardiac conduction disease; recent MI; glaucoma; urinary retention; elderly (anticholinergic burden) | Sedation; weight; dry mouth; ECG if dose >100 mg or cardiac history | - | ROUTINE | ROUTINE | - |
-| Venlafaxine XR | PO | Prevention with comorbid depression, anxiety | 37.5 mg daily; 75 mg daily; 150 mg daily :: PO :: :: Start 37.5 mg daily; increase by 37.5-75 mg q1wk; target 75-150 mg daily | None | Uncontrolled HTN; MAOIs within 14 days; abrupt discontinuation risk | BP at doses >150 mg; serotonin syndrome signs; taper to discontinue | - | ROUTINE | ROUTINE | - |
-| Candesartan | PO | Prevention; comorbid HTN; beta-blocker intolerant | 8 mg daily; 16 mg daily :: PO :: :: Start 8 mg daily; may increase to 16 mg daily after 4 wk | None | **Pregnancy**; bilateral renal artery stenosis; hyperkalemia | BP; potassium; creatinine | - | ROUTINE | ROUTINE | - |
-| Valproate/Divalproex | PO | Prevention with comorbid bipolar or epilepsy | 250 mg BID; 500 mg BID; 500 mg ER daily; 1000 mg ER daily :: PO :: :: Start 250 mg BID or 500 mg ER daily; titrate to 500-1000 mg/day | LFTs; CBC | **Pregnancy (teratogenic - neural tube defects)**; hepatic disease; urea cycle disorders; pancreatitis history | LFTs q6mo; weight; hair loss; tremor; CBC | - | ROUTINE | ROUTINE | - |
-| Riboflavin (Vitamin B2) | PO | Supplement for prevention; well-tolerated; may reduce aura | 400 mg daily :: PO :: :: 400 mg daily | None | None | Fluorescent yellow urine (reassure patient); benign | - | ROUTINE | ROUTINE | - |
-| Coenzyme Q10 | PO | Supplement; mitochondrial support | 100 mg TID; 300 mg daily :: PO :: :: 100-300 mg daily | None | None | None | - | ROUTINE | ROUTINE | - |
-| Erenumab (Aimovig) | SC | CGRP mAb; failed 2+ oral preventives or intolerance | 70 mg SC monthly; 140 mg SC monthly :: SC :: :: 70 mg SC monthly; may increase to 140 mg monthly after 3 months if suboptimal response | None | Hypersensitivity to erenumab | Constipation (can be severe - may need laxatives); injection site reactions; HTN monitoring | - | - | ROUTINE | - |
-| Fremanezumab (Ajovy) | SC | CGRP mAb; flexible dosing options | 225 mg SC monthly; 675 mg SC quarterly :: SC :: :: 225 mg SC monthly OR 675 mg SC quarterly (three 225 mg injections) | None | Hypersensitivity | Injection site reactions | - | - | ROUTINE | - |
-| Galcanezumab (Emgality) | SC | CGRP mAb; requires loading dose | 240 mg SC load then 120 mg SC monthly :: SC :: :: 240 mg SC loading dose (2 x 120 mg injections), then 120 mg SC monthly | None | Hypersensitivity | Injection site reactions; vertigo | - | - | ROUTINE | - |
-| Onabotulinumtoxin A (Botox) | IM | Chronic migraine with aura (≥15 days/month); failed oral preventives | 155-195 units IM q12wk :: IM :: :: 155-195 units across 31-39 injection sites per PREEMPT protocol; repeat q12 weeks; effect may take 2-3 cycles | None | Infection at injection sites; myasthenia gravis; neuromuscular disorder | Neck weakness; ptosis; antibody formation if loss of effect | - | - | ROUTINE | - |
-| Flunarizine | PO | Calcium channel blocker for prevention; especially hemiplegic migraine | 5 mg qHS; 10 mg qHS :: PO :: :: Start 5 mg qHS; may increase to 10 mg qHS; especially useful for hemiplegic migraine (not available in US) | None | Depression; Parkinson's disease; extrapyramidal disorders | Weight gain; depression; parkinsonism with prolonged use | - | ROUTINE | ROUTINE | - |
-| Lamotrigine | PO | May reduce aura frequency specifically; hemiplegic migraine | 25 mg daily; 50 mg BID; 100 mg BID :: PO :: :: Start 25 mg daily; increase by 25 mg q2wk to 50-100 mg BID; SLOW titration to prevent rash | None | History of lamotrigine-related rash; interacting drugs (valproate halves dose) | **RASH (stop immediately if rash develops - SJS risk)**; monitor closely during titration | - | ROUTINE | ROUTINE | - |
-| Acetazolamide | PO | Hemiplegic migraine prevention; familial hemiplegic migraine | 250 mg BID; 500 mg BID :: PO :: :: Start 250 mg BID; may increase to 500 mg BID | None | Sulfa allergy; severe hepatic/renal disease; hypokalemia; acidosis | Paresthesias; metabolic acidosis; K+; bicarbonate | - | ROUTINE | ROUTINE | - |
+| Magnesium oxide | PO | First-line supplement for migraine with aura prevention | 400 mg :: PO :: daily :: Start 400 mg daily; may increase to 400 mg BID; take with food to reduce GI upset | None | Renal impairment (CrCl <30) - dose reduce | Diarrhea; check Mg level if symptomatic or renal disease | - | ROUTINE | ROUTINE | - |
+| Topiramate | PO | First-line oral prevention; reduces aura frequency; weight loss | 25 mg :: PO :: qHS :: Start 25 mg qHS; increase by 25 mg/wk; target 50-100 mg BID | None | **PREGNANCY (teratogenic)**; glaucoma; kidney stones; metabolic acidosis | Cognitive effects; paresthesias; weight; serum bicarbonate; kidney stones | - | ROUTINE | ROUTINE | - |
+| Propranolol | PO | First-line prevention; comorbid HTN, anxiety, tremor | 40 mg :: PO :: BID :: Start 40 mg BID or 80 mg LA daily; titrate q2wk; target 80-240 mg/day | None | Asthma; COPD with bronchospasm; bradycardia <50; 2nd/3rd degree heart block; decompensated HF | HR (goal >50); BP; fatigue; depression; exercise intolerance | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | PO | Prevention with comorbid insomnia, depression, tension-type headache | 10 mg :: PO :: qHS :: Start 10 mg qHS; titrate by 10-25 mg q1-2wk; target 25-75 mg qHS | ECG if >50 y/o or cardiac history | Cardiac conduction disease; recent MI; glaucoma; urinary retention; elderly (anticholinergic burden) | Sedation; weight; dry mouth; ECG if dose >100 mg or cardiac history | - | ROUTINE | ROUTINE | - |
+| Venlafaxine XR | PO | Prevention with comorbid depression, anxiety | 37.5 mg :: PO :: daily :: Start 37.5 mg daily; increase by 37.5-75 mg q1wk; target 75-150 mg daily | None | Uncontrolled HTN; MAOIs within 14 days; abrupt discontinuation risk | BP at doses >150 mg; serotonin syndrome signs; taper to discontinue | - | ROUTINE | ROUTINE | - |
+| Candesartan | PO | Prevention; comorbid HTN; beta-blocker intolerant | 8 mg :: PO :: daily :: Start 8 mg daily; may increase to 16 mg daily after 4 wk | None | **Pregnancy**; bilateral renal artery stenosis; hyperkalemia | BP; potassium; creatinine | - | ROUTINE | ROUTINE | - |
+| Valproate/Divalproex | PO | Prevention with comorbid bipolar or epilepsy | 250 mg :: PO :: BID :: Start 250 mg BID or 500 mg ER daily; titrate to 500-1000 mg/day | LFTs; CBC | **Pregnancy (teratogenic - neural tube defects)**; hepatic disease; urea cycle disorders; pancreatitis history | LFTs q6mo; weight; hair loss; tremor; CBC | - | ROUTINE | ROUTINE | - |
+| Riboflavin (Vitamin B2) | PO | Supplement for prevention; well-tolerated; may reduce aura | 400 mg :: PO :: daily :: 400 mg daily | None | None | Fluorescent yellow urine (reassure patient); benign | - | ROUTINE | ROUTINE | - |
+| Coenzyme Q10 | PO | Supplement; mitochondrial support | 100 mg :: PO :: TID :: 100-300 mg daily | None | None | None | - | ROUTINE | ROUTINE | - |
+| Erenumab (Aimovig) | SC | CGRP mAb; failed 2+ oral preventives or intolerance | 70 mg :: SC :: monthly :: 70 mg SC monthly; may increase to 140 mg monthly after 3 months if suboptimal response | None | Hypersensitivity to erenumab | Constipation (can be severe - may need laxatives); injection site reactions; HTN monitoring | - | - | ROUTINE | - |
+| Fremanezumab (Ajovy) | SC | CGRP mAb; flexible dosing options | 225 mg :: SC :: monthly :: 225 mg SC monthly OR 675 mg SC quarterly (three 225 mg injections) | None | Hypersensitivity | Injection site reactions | - | - | ROUTINE | - |
+| Galcanezumab (Emgality) | SC | CGRP mAb; requires loading dose | 240 mg :: SC :: once :: 240 mg SC loading dose (2 x 120 mg injections), then 120 mg SC monthly | None | Hypersensitivity | Injection site reactions; vertigo | - | - | ROUTINE | - |
+| Onabotulinumtoxin A (Botox) | IM | Chronic migraine with aura (≥15 days/month); failed oral preventives | 155 units :: IM :: q12wk :: 155-195 units across 31-39 injection sites per PREEMPT protocol; repeat q12 weeks; effect may take 2-3 cycles | None | Infection at injection sites; myasthenia gravis; neuromuscular disorder | Neck weakness; ptosis; antibody formation if loss of effect | - | - | ROUTINE | - |
+| Flunarizine | PO | Calcium channel blocker for prevention; especially hemiplegic migraine | 5 mg :: PO :: qHS :: Start 5 mg qHS; may increase to 10 mg qHS; especially useful for hemiplegic migraine (not available in US) | None | Depression; Parkinson's disease; extrapyramidal disorders | Weight gain; depression; parkinsonism with prolonged use | - | ROUTINE | ROUTINE | - |
+| Lamotrigine | PO | May reduce aura frequency specifically; hemiplegic migraine | 25 mg :: PO :: daily :: Start 25 mg daily; increase by 25 mg q2wk to 50-100 mg BID; SLOW titration to prevent rash | None | History of lamotrigine-related rash; interacting drugs (valproate halves dose) | **RASH (stop immediately if rash develops - SJS risk)**; monitor closely during titration | - | ROUTINE | ROUTINE | - |
+| Acetazolamide | PO | Hemiplegic migraine prevention; familial hemiplegic migraine | 250 mg :: PO :: BID :: Start 250 mg BID; may increase to 500 mg BID | None | Sulfa allergy; severe hepatic/renal disease; hypokalemia; acidosis | Paresthesias; metabolic acidosis; K+; bicarbonate | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -297,6 +302,16 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized lab tables (1A/1B/1C) to `Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding` format
+- Standardized imaging tables (2A/2B/2C) to `Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications` format
+- Added inline CPT codes to all laboratory and imaging studies
+- Fixed structured dosing first fields across all treatment sections (3A/3B/3C/3D)
+- Expanded "Same as sumatriptan" cross-references in 3B (Rizatriptan, Eletriptan, Naratriptan)
+- Added additional ICD-10 codes (G43.101, G43.119, G43.111, G43.409, G43.419)
+- Added clinical synonyms
+- Added VERSION/CREATED/REVISED header block
 
 **v1.0 (January 27, 2026)**
 - Initial template creation

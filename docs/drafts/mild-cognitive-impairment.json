@@ -1,9 +1,11 @@
 {
   "id": "mild-cognitive-impairment",
   "title": "Mild Cognitive Impairment (MCI)",
-  "version": "1.0",
+  "version": "1.1",
   "icd10": [
-    "** G31.84"
+    "** G31.84 (Mild cognitive impairment)",
+    "F06.7 (Mild neurocognitive disorder)",
+    "R41.81 (Age-related cognitive decline)"
   ],
   "scope": "** Outpatient-focused evaluation for MCI, identification of reversible causes, subtype classification (amnestic vs non-amnestic), risk factor modification, monitoring for progression, and symptomatic treatment. Includes guidance on disease-modifying therapy eligibility (anti-amyloid agents) and advance care planning.",
   "notes": [],
@@ -11,419 +13,376 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "CBC with differential",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Anemia, infection, or malignancy contributing to cognitive changes",
-          "target": "Normal",
+          "target": "Normal"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "CMP (BMP + hepatic panel)",
+          "ICU": "-",
           "rationale": "Hyponatremia, uremia, hypercalcemia, hepatic encephalopathy as reversible causes",
-          "target": "Normal electrolytes, renal, hepatic function",
+          "target": "Normal electrolytes, renal, hepatic function"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "TSH",
+          "ICU": "-",
           "rationale": "Hypothyroidism is reversible cause of cognitive impairment",
-          "target": "0.4-4.0 mIU/L",
+          "target": "0.4-4.0 mIU/L"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Vitamin B12",
+          "ICU": "-",
           "rationale": "Deficiency causes reversible cognitive impairment; common in elderly",
-          "target": ">300 pg/mL (>400 pg/mL optimal for neurological function)",
+          "target": ">300 pg/mL (>400 pg/mL optimal for neurological function)"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Folate",
+          "ICU": "-",
           "rationale": "Deficiency contributes to cognitive impairment; check with B12",
-          "target": ">3 ng/mL",
+          "target": ">3 ng/mL"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "HbA1c",
+          "ICU": "-",
           "rationale": "Diabetes management affects cognition; vascular risk factor",
-          "target": "<7% (individualize in elderly)",
+          "target": "<7% (individualize in elderly)"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Fasting lipid panel",
+          "ICU": "-",
           "rationale": "Vascular risk factor assessment; hyperlipidemia accelerates cognitive decline",
-          "target": "LDL <100 mg/dL; <70 if established CVD",
-          "ED": "-",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "target": "LDL <100 mg/dL; <70 if established CVD"
         },
         {
-          "item": "Glucose (fasting)",
-          "rationale": "Diabetes screening; glycemic control affects cognition",
-          "target": "70-100 mg/dL",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Diabetes screening; glycemic control affects cognition",
+          "target": "70-100 mg/dL"
         }
       ],
       "Extended Workup": [
         {
-          "item": "RPR or VDRL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Neurosyphilis is rare but treatable cause of cognitive impairment",
-          "target": "Nonreactive",
+          "target": "Nonreactive"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "HIV testing",
+          "ICU": "-",
           "rationale": "HIV-associated neurocognitive disorder; if risk factors present",
-          "target": "Negative",
+          "target": "Negative"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Vitamin D, 25-hydroxy",
+          "ICU": "-",
           "rationale": "Deficiency associated with cognitive decline and dementia risk",
-          "target": ">30 ng/mL",
+          "target": ">30 ng/mL"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Homocysteine",
+          "ICU": "-",
           "rationale": "Elevated levels associated with Alzheimer's disease and vascular cognitive impairment",
-          "target": "<15 μmol/L",
+          "target": "<15 μmol/L"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "ESR, CRP",
+          "ICU": "-",
           "rationale": "Inflammatory or autoimmune causes; vasculitis screen",
-          "target": "Normal",
+          "target": "Normal"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Urinalysis",
+          "ICU": "-",
           "rationale": "UTI in elderly can present as cognitive changes; rule out reversible cause",
-          "target": "Negative for infection",
-          "ED": "-",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "target": "Negative for infection"
         },
         {
-          "item": "Methylmalonic acid (MMA)",
-          "rationale": "More sensitive than B12 level for functional B12 deficiency",
-          "target": "<0.4 μmol/L",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "More sensitive than B12 level for functional B12 deficiency",
+          "target": "<0.4 μmol/L"
         }
       ],
       "Rare/Specialized": [
         {
-          "item": "Heavy metal panel (lead, mercury, arsenic)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Toxic exposure history; occupational risk",
-          "target": "Normal",
+          "target": "Normal"
+        },
+        {
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "Copper, ceruloplasmin",
+          "ICU": "-",
           "rationale": "Wilson's disease if age <50; hepatic symptoms",
-          "target": "Normal",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "EXT",
-          "ICU": "-"
+          "target": "Normal"
         },
         {
-          "item": "Paraneoplastic antibody panel",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Autoimmune cognitive impairment; unexplained rapid progression",
-          "target": "Negative",
+          "target": "Negative"
+        },
+        {
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "Anti-neuronal antibodies (NMDA-R, LGI1, CASPR2, GABA-B)",
+          "ICU": "-",
           "rationale": "Autoimmune encephalitis presenting as MCI",
-          "target": "Negative",
-          "ED": "-",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "-"
+          "target": "Negative"
         },
         {
-          "item": "Genetic testing (APOE genotyping)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Risk stratification for AD progression; anti-amyloid therapy planning",
-          "target": "Informational (APOE4 increases risk)",
+          "target": "Informational (APOE4 increases risk)"
+        },
+        {
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "Genetic testing (PSEN1, PSEN2, APP)",
+          "ICU": "-",
           "rationale": "Familial early-onset AD (<65); family history of early-onset dementia",
-          "target": "No pathogenic variants",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "EXT",
-          "ICU": "-"
+          "target": "No pathogenic variants"
         },
         {
-          "item": "Lyme serology",
-          "rationale": "Endemic area; outdoor exposure; systemic symptoms",
-          "target": "Negative",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Endemic area; outdoor exposure; systemic symptoms",
+          "target": "Negative"
         }
       ],
       "Lumbar Puncture": [
         {
-          "item": "Cell count, protein, glucose",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Rule out infection, inflammation",
-          "target": "WBC <5, protein <45 mg/dL, glucose >60% serum",
+          "target": "WBC <5, protein <45 mg/dL, glucose >60% serum"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "CSF Aβ42 (amyloid beta 1-42)",
+          "ICU": "-",
           "rationale": "Low in Alzheimer's pathology; biomarker confirmation",
-          "target": "Low Aβ42 (<600 pg/mL) suggests AD pathology",
+          "target": "Low Aβ42 (<600 pg/mL) suggests AD pathology"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "CSF total tau (t-tau)",
+          "ICU": "-",
           "rationale": "Elevated in neurodegeneration; nonspecific",
-          "target": "Mildly elevated in MCI due to AD; marked elevation suggests rapid progression",
+          "target": "Mildly elevated in MCI due to AD; marked elevation suggests rapid progression"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "CSF p-tau (phosphorylated tau 181)",
+          "ICU": "-",
           "rationale": "Specific for AD pathology; predictor of progression",
-          "target": "Elevated p-tau with low Aβ42 = high risk of AD progression",
+          "target": "Elevated p-tau with low Aβ42 = high risk of AD progression"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "CSF Aβ42/Aβ40 ratio",
+          "ICU": "-",
           "rationale": "More accurate than Aβ42 alone for amyloid status",
-          "target": "<0.05-0.08 suggests amyloid positivity (assay-dependent)",
-          "ED": "-",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "target": "<0.05-0.08 suggests amyloid positivity (assay-dependent)"
         },
         {
-          "item": "CSF neurofilament light chain (NfL)",
-          "rationale": "Nonspecific neurodegeneration marker; prognostic",
-          "target": "Elevated suggests active neurodegeneration",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Nonspecific neurodegeneration marker; prognostic",
+          "target": "Elevated suggests active neurodegeneration"
         },
         {
-          "item": "VDRL",
-          "rationale": "Neurosyphilis if RPR positive or high suspicion",
-          "target": "Nonreactive",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Neurosyphilis if RPR positive or high suspicion",
+          "target": "Nonreactive"
         }
       ]
     },
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "MRI Brain without contrast",
-          "timing": "At initial evaluation",
-          "target": "Hippocampal volume, medial temporal atrophy (Scheltens scale), white matter disease burden, rule out structural causes (tumor, SDH, NPH)",
-          "contraindications": "MRI-incompatible devices",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "At initial evaluation",
+          "target": "Hippocampal volume, medial temporal atrophy (Scheltens scale), white matter disease burden, rule out structural causes (tumor, SDH, NPH)",
+          "contraindications": "MRI-incompatible devices"
         },
         {
-          "item": "Neuropsychological testing (formal)",
-          "timing": "At diagnosis; gold standard for MCI characterization",
-          "target": "Objective impairment 1-1.5 SD below age/education norms; preserved ADLs; characterize domain(s) affected",
-          "contraindications": "None",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "At diagnosis; gold standard for MCI characterization",
+          "target": "Objective impairment 1-1.5 SD below age/education norms; preserved ADLs; characterize domain(s) affected",
+          "contraindications": "None"
         },
         {
-          "item": "Mini-Mental State Examination (MMSE)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "timing": "Screening; serial monitoring",
           "target": "24-30 (MCI often 24-27); <24 suggests dementia",
-          "contraindications": "None",
-          "ED": "-",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "contraindications": "None"
         },
         {
-          "item": "Montreal Cognitive Assessment (MoCA)",
-          "timing": "More sensitive than MMSE for MCI",
-          "target": "<26 abnormal; typically 18-25 in MCI",
-          "contraindications": "None",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "More sensitive than MMSE for MCI",
+          "target": "<26 abnormal; typically 18-25 in MCI",
+          "contraindications": "None"
         }
       ],
       "Extended": [
         {
-          "item": "CT Head non-contrast",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "timing": "If MRI contraindicated or unavailable",
           "target": "Rule out mass, hemorrhage, hydrocephalus",
-          "contraindications": "None",
-          "ED": "-",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "contraindications": "None"
         },
         {
-          "item": "MRI Brain volumetrics",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "timing": "Quantitative assessment; research/clinical trials",
           "target": "Hippocampal volume percentile for age; whole brain atrophy rate",
-          "contraindications": "MRI contraindications",
+          "contraindications": "MRI contraindications"
+        },
+        {
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "FDG-PET Brain",
+          "ICU": "-",
           "timing": "Differentiate underlying pathology when diagnosis uncertain",
           "target": "AD pattern: temporoparietal hypometabolism; FTD: frontal/temporal hypometabolism",
-          "contraindications": "None",
+          "contraindications": "None"
+        },
+        {
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Amyloid PET (florbetapir, florbetaben, flutemetamol)",
+          "ICU": "-",
           "timing": "Diagnostic uncertainty; early-onset; anti-amyloid therapy eligibility",
           "target": "Positive confirms amyloid pathology (at risk for AD); negative makes AD unlikely",
-          "contraindications": "None",
+          "contraindications": "None"
+        },
+        {
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Sleep study (polysomnography)",
+          "ICU": "-",
           "timing": "Sleep apnea screening; sleep disturbance affecting cognition",
           "target": "AHI <5 normal; treat if elevated",
-          "contraindications": "None",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "contraindications": "None"
         },
         {
-          "item": "EEG",
-          "timing": "Atypical features; concern for seizures or encephalopathy",
-          "target": "Normal or mild nonspecific slowing in MCI",
-          "contraindications": "None",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Atypical features; concern for seizures or encephalopathy",
+          "target": "Normal or mild nonspecific slowing in MCI",
+          "contraindications": "None"
         }
       ],
       "Rare/Specialized": [
         {
-          "item": "Tau PET (flortaucipir)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
           "timing": "Research; disease staging; clinical trial eligibility",
           "target": "Pattern correlates with clinical syndrome; elevated tau predicts faster progression",
-          "contraindications": "None",
+          "contraindications": "None"
+        },
+        {
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "DaTscan (ioflupane I-123)",
+          "ICU": "-",
           "timing": "MCI with parkinsonism; differentiate DLB prodrome",
           "target": "Reduced uptake suggests Lewy body pathology",
-          "contraindications": "Iodine hypersensitivity",
+          "contraindications": "Iodine hypersensitivity"
+        },
+        {
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "SPECT (perfusion)",
+          "ICU": "-",
           "timing": "Alternative to PET if unavailable",
           "target": "Regional hypoperfusion patterns",
-          "contraindications": "None",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "EXT",
-          "ICU": "-"
+          "contraindications": "None"
         },
         {
-          "item": "MRI with SWI/GRE sequences",
-          "timing": "Cerebral amyloid angiopathy; microbleed assessment",
-          "target": "Lobar microbleeds suggest CAA; affects anti-amyloid eligibility",
-          "contraindications": "MRI contraindications",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Cerebral amyloid angiopathy; microbleed assessment",
+          "target": "Lobar microbleeds suggest CAA; affects anti-amyloid eligibility",
+          "contraindications": "MRI contraindications"
         }
       ]
     },
@@ -458,17 +417,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg IV TID x 3 days",
-                "orderSentence": "Thiamine 500 mg IV TID x 3 days IV/PO"
-              },
-              {
-                "text": "100 mg PO daily",
-                "orderSentence": "Thiamine 100 mg PO daily IV/PO"
+                "text": "500 mg",
+                "orderSentence": "Thiamine 500 mg IV"
               }
             ],
-            "route": "IV/PO",
+            "route": "IV",
             "instructions": "500 mg IV TID x 3 days if Wernicke suspected; then 100 mg PO daily maintenance",
-            "orderSentence": "Thiamine 500 mg IV TID x 3 days IV/PO"
+            "orderSentence": "Thiamine 500 mg IV"
           },
           "contraindications": "None",
           "monitoring": "Clinical improvement",
@@ -484,21 +439,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1000 mcg IM daily x 7 days",
-                "orderSentence": "Vitamin B12 1000 mcg IM daily x 7 days IM/PO"
-              },
-              {
-                "text": "1000 mcg IM weekly x 4",
-                "orderSentence": "Vitamin B12 1000 mcg IM weekly x 4 IM/PO"
-              },
-              {
-                "text": "1000-2000 mcg PO daily",
-                "orderSentence": "Vitamin B12 1000-2000 mcg PO daily IM/PO"
+                "text": "1000 mcg",
+                "orderSentence": "Vitamin B12 1000 mcg IM"
               }
             ],
-            "route": "IM/PO",
+            "route": "IM",
             "instructions": "1000 mcg IM daily x 7d, then weekly x 4wk, then monthly; or high-dose oral 1000-2000 mcg daily",
-            "orderSentence": "Vitamin B12 1000 mcg IM daily x 7 days IM/PO"
+            "orderSentence": "Vitamin B12 1000 mcg IM"
           },
           "contraindications": "None",
           "monitoring": "B12 level, MMA at 3 months; neurological improvement over months",
@@ -514,13 +461,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg PO daily",
-                "orderSentence": "Folate 1 mg PO daily PO"
+                "text": "1 mg",
+                "orderSentence": "Folate 1 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "1 mg PO daily; ensure B12 adequate before treating to avoid masking deficiency",
-            "orderSentence": "Folate 1 mg PO daily PO"
+            "orderSentence": "Folate 1 mg PO"
           },
           "contraindications": "None",
           "monitoring": "Folate level at 3 months",
@@ -538,17 +485,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg qHS",
-                "orderSentence": "Donepezil 5 mg qHS PO"
-              },
-              {
-                "text": "10 mg qHS",
-                "orderSentence": "Donepezil 10 mg qHS PO"
+                "text": "5 mg",
+                "orderSentence": "Donepezil 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg qHS x 4-6 weeks; may increase to 10 mg qHS; limited evidence in MCI but may offer modest benefit",
-            "orderSentence": "Donepezil 5 mg qHS PO"
+            "orderSentence": "Donepezil 5 mg PO"
           },
           "contraindications": "Sick sinus syndrome; GI bleeding; severe COPD",
           "monitoring": "Bradycardia, GI symptoms, vivid dreams; limited efficacy data in MCI",
@@ -566,17 +509,13 @@
               {
                 "text": "4.6 mg/24hr",
                 "orderSentence": "Rivastigmine patch 4.6 mg/24hr TD"
-              },
-              {
-                "text": "9.5 mg/24hr",
-                "orderSentence": "Rivastigmine patch 9.5 mg/24hr TD"
               }
             ],
             "route": "TD",
             "instructions": "Start 4.6 mg/24hr; increase q4wk to 9.5 mg/24hr; limited evidence in MCI",
             "orderSentence": "Rivastigmine patch 4.6 mg/24hr TD"
           },
-          "contraindications": "Same as donepezil; severe hepatic impairment",
+          "contraindications": "Sick sinus syndrome; GI bleeding; severe COPD; severe hepatic impairment",
           "monitoring": "Skin irritation, GI symptoms",
           "ED": "-",
           "HOSP": "-",
@@ -590,17 +529,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg daily",
-                "orderSentence": "Citalopram 10 mg daily PO"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Citalopram 20 mg daily PO"
+                "text": "10 mg",
+                "orderSentence": "Citalopram 10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 10 mg daily; max 20 mg in elderly due to QT risk",
-            "orderSentence": "Citalopram 10 mg daily PO"
+            "orderSentence": "Citalopram 10 mg PO"
           },
           "contraindications": "QT prolongation; concurrent QT-prolonging drugs",
           "monitoring": "QTc at baseline and if dose >20 mg",
@@ -616,21 +551,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg daily",
-                "orderSentence": "Sertraline 25 mg daily PO"
-              },
-              {
-                "text": "50 mg daily",
-                "orderSentence": "Sertraline 50 mg daily PO"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Sertraline 100 mg daily PO"
+                "text": "25 mg",
+                "orderSentence": "Sertraline 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25 mg daily; titrate by 25 mg q1-2wk; typical 50-100 mg",
-            "orderSentence": "Sertraline 25 mg daily PO"
+            "orderSentence": "Sertraline 25 mg PO"
           },
           "contraindications": "MAOIs; caution with bleeding risk",
           "monitoring": "GI upset initially; reassess cognition after mood improves",
@@ -646,17 +573,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg daily",
-                "orderSentence": "Escitalopram 5 mg daily PO"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Escitalopram 10 mg daily PO"
+                "text": "5 mg",
+                "orderSentence": "Escitalopram 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg daily; increase to 10 mg after 1 week; max 10 mg in elderly",
-            "orderSentence": "Escitalopram 5 mg daily PO"
+            "orderSentence": "Escitalopram 5 mg PO"
           },
           "contraindications": "QT prolongation; MAOIs",
           "monitoring": "QTc monitoring",
@@ -672,21 +595,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "7.5 mg qHS",
-                "orderSentence": "Mirtazapine 7.5 mg qHS PO"
-              },
-              {
-                "text": "15 mg qHS",
-                "orderSentence": "Mirtazapine 15 mg qHS PO"
-              },
-              {
-                "text": "30 mg qHS",
-                "orderSentence": "Mirtazapine 30 mg qHS PO"
+                "text": "7.5 mg",
+                "orderSentence": "Mirtazapine 7.5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 7.5-15 mg qHS; may increase to 30 mg qHS",
-            "orderSentence": "Mirtazapine 7.5 mg qHS PO"
+            "orderSentence": "Mirtazapine 7.5 mg PO"
           },
           "contraindications": "MAOIs",
           "monitoring": "Weight gain (may be beneficial), sedation",
@@ -702,21 +617,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg BID",
-                "orderSentence": "Bupropion 100 mg BID PO"
-              },
-              {
-                "text": "150 mg SR BID",
-                "orderSentence": "Bupropion 150 mg SR BID PO"
-              },
-              {
-                "text": "300 mg XL daily",
-                "orderSentence": "Bupropion 300 mg XL daily PO"
+                "text": "150 mg",
+                "orderSentence": "Bupropion 150 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 100 mg BID or 150 mg SR daily; increase after 1 week; max 300 mg/day",
-            "orderSentence": "Bupropion 100 mg BID PO"
+            "orderSentence": "Bupropion 150 mg PO"
           },
           "contraindications": "Seizure disorder; eating disorder; abrupt alcohol/benzo withdrawal",
           "monitoring": "Seizure risk; may improve alertness",
@@ -732,21 +639,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg qHS",
-                "orderSentence": "Trazodone 25 mg qHS PO"
-              },
-              {
-                "text": "50 mg qHS",
-                "orderSentence": "Trazodone 50 mg qHS PO"
-              },
-              {
-                "text": "100 mg qHS",
-                "orderSentence": "Trazodone 100 mg qHS PO"
+                "text": "25 mg",
+                "orderSentence": "Trazodone 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25-50 mg qHS; titrate to effect; typical 50-100 mg qHS",
-            "orderSentence": "Trazodone 25 mg qHS PO"
+            "orderSentence": "Trazodone 25 mg PO"
           },
           "contraindications": "Concurrent MAOIs; QT prolongation",
           "monitoring": "Orthostatic hypotension, morning sedation",
@@ -762,21 +661,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg qHS",
-                "orderSentence": "Melatonin 1 mg qHS PO"
-              },
-              {
-                "text": "3 mg qHS",
-                "orderSentence": "Melatonin 3 mg qHS PO"
-              },
-              {
-                "text": "5 mg qHS",
-                "orderSentence": "Melatonin 5 mg qHS PO"
+                "text": "1 mg",
+                "orderSentence": "Melatonin 1 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 1-3 mg qHS; may increase to 5 mg; take 30 min before bed",
-            "orderSentence": "Melatonin 1 mg qHS PO"
+            "orderSentence": "Melatonin 1 mg PO"
           },
           "contraindications": "None",
           "monitoring": "Daytime sedation; limited long-term data",
@@ -794,25 +685,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg daily",
-                "orderSentence": "Atorvastatin 10 mg daily PO"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Atorvastatin 20 mg daily PO"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Atorvastatin 40 mg daily PO"
-              },
-              {
-                "text": "80 mg daily",
-                "orderSentence": "Atorvastatin 80 mg daily PO"
+                "text": "10 mg",
+                "orderSentence": "Atorvastatin 10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 10-20 mg daily; titrate to LDL goal; target LDL <100 (or <70 if established CVD)",
-            "orderSentence": "Atorvastatin 10 mg daily PO"
+            "orderSentence": "Atorvastatin 10 mg PO"
           },
           "contraindications": "Active liver disease; pregnancy",
           "monitoring": "LFTs at baseline; lipid panel q3-6mo initially",
@@ -828,21 +707,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg daily",
-                "orderSentence": "Rosuvastatin 5 mg daily PO"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Rosuvastatin 10 mg daily PO"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Rosuvastatin 20 mg daily PO"
+                "text": "5 mg",
+                "orderSentence": "Rosuvastatin 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5-10 mg daily; adjust to LDL goal",
-            "orderSentence": "Rosuvastatin 5 mg daily PO"
+            "orderSentence": "Rosuvastatin 5 mg PO"
           },
           "contraindications": "Active liver disease; severe renal impairment (dose adjust)",
           "monitoring": "LFTs, lipid panel",
@@ -858,25 +729,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg daily",
-                "orderSentence": "Lisinopril 5 mg daily PO"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Lisinopril 10 mg daily PO"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Lisinopril 20 mg daily PO"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Lisinopril 40 mg daily PO"
+                "text": "5 mg",
+                "orderSentence": "Lisinopril 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5-10 mg daily; titrate q2wk to BP goal",
-            "orderSentence": "Lisinopril 5 mg daily PO"
+            "orderSentence": "Lisinopril 5 mg PO"
           },
           "contraindications": "Angioedema history; pregnancy; bilateral renal artery stenosis",
           "monitoring": "K+, Cr, BP; cough",
@@ -892,21 +751,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2.5 mg daily",
-                "orderSentence": "Amlodipine 2.5 mg daily PO"
-              },
-              {
-                "text": "5 mg daily",
-                "orderSentence": "Amlodipine 5 mg daily PO"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Amlodipine 10 mg daily PO"
+                "text": "2.5 mg",
+                "orderSentence": "Amlodipine 2.5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 2.5-5 mg daily; increase q2wk; max 10 mg",
-            "orderSentence": "Amlodipine 2.5 mg daily PO"
+            "orderSentence": "Amlodipine 2.5 mg PO"
           },
           "contraindications": "Severe aortic stenosis",
           "monitoring": "Peripheral edema, BP",
@@ -922,23 +773,15 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg daily",
-                "orderSentence": "Losartan 25 mg daily PO"
-              },
-              {
-                "text": "50 mg daily",
-                "orderSentence": "Losartan 50 mg daily PO"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Losartan 100 mg daily PO"
+                "text": "25 mg",
+                "orderSentence": "Losartan 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25-50 mg daily; titrate to BP goal; max 100 mg",
-            "orderSentence": "Losartan 25 mg daily PO"
+            "orderSentence": "Losartan 25 mg PO"
           },
-          "contraindications": "Same as lisinopril",
+          "contraindications": "Angioedema history; pregnancy; bilateral renal artery stenosis",
           "monitoring": "K+, Cr, BP",
           "ED": "-",
           "HOSP": "ROUTINE",
@@ -952,21 +795,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg daily",
-                "orderSentence": "Metformin 500 mg daily PO"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "Metformin 500 mg BID PO"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Metformin 1000 mg BID PO"
+                "text": "500 mg",
+                "orderSentence": "Metformin 500 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 500 mg daily with meal; increase by 500 mg weekly; max 2000 mg/day",
-            "orderSentence": "Metformin 500 mg daily PO"
+            "orderSentence": "Metformin 500 mg PO"
           },
           "contraindications": "eGFR <30; risk of lactic acidosis",
           "monitoring": "HbA1c q3mo; B12 annually (metformin reduces absorption)",
@@ -982,13 +817,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "81 mg daily",
-                "orderSentence": "Aspirin (low-dose) 81 mg daily PO"
+                "text": "81 mg",
+                "orderSentence": "Aspirin (low-dose) 81 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "81 mg daily; only if established CVD or high vascular risk",
-            "orderSentence": "Aspirin (low-dose) 81 mg daily PO"
+            "orderSentence": "Aspirin (low-dose) 81 mg PO"
           },
           "contraindications": "Active bleeding; aspirin allergy; high bleeding risk",
           "monitoring": "GI symptoms; bleeding",
@@ -1006,13 +841,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg/kg IV q2wk",
-                "orderSentence": "Lecanemab (Leqembi) 10 mg/kg IV q2wk IV"
+                "text": "10 mg/kg",
+                "orderSentence": "Lecanemab (Leqembi) 10 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "10 mg/kg IV every 2 weeks; infuse over 1 hour; continue as long as benefit maintained",
-            "orderSentence": "Lecanemab (Leqembi) 10 mg/kg IV q2wk IV"
+            "orderSentence": "Lecanemab (Leqembi) 10 mg/kg IV"
           },
           "pretreatment": "Amyloid PET or CSF confirming amyloid positivity; MRI baseline (within 1 year); APOE genotyping recommended; informed consent for ARIA risk",
           "contraindications": ">4 microbleeds on MRI; superficial siderosis; anticoagulation (increased ARIA risk); recent stroke/TIA",
@@ -1029,17 +864,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "700 mg IV q4wk x 3",
-                "orderSentence": "Donanemab (Kisunla) 700 mg IV q4wk x 3 IV"
-              },
-              {
-                "text": "1400 mg IV q4wk",
-                "orderSentence": "Donanemab (Kisunla) 1400 mg IV q4wk IV"
+                "text": "700 mg",
+                "orderSentence": "Donanemab (Kisunla) 700 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "700 mg q4wk x 3 doses, then 1400 mg q4wk until amyloid cleared (PET-guided discontinuation)",
-            "orderSentence": "Donanemab (Kisunla) 700 mg IV q4wk x 3 IV"
+            "orderSentence": "Donanemab (Kisunla) 700 mg IV"
           },
           "pretreatment": "Amyloid PET positive; tau PET intermediate/high; MRI baseline; APOE genotyping",
           "contraindications": "APOE4 homozygotes have higher ARIA risk; >4 microbleeds; anticoagulation",

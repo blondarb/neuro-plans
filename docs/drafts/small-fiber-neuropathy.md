@@ -1,7 +1,7 @@
 ---
 title: "Small Fiber Neuropathy"
 description: "Clinical decision support for small fiber neuropathy diagnosis, etiologic workup, and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD"
 status: draft
 tags:
@@ -23,11 +23,14 @@ tags:
 
 **DIAGNOSIS:** Small Fiber Neuropathy (SFN)
 **ICD-10:** G62.9 (Polyneuropathy, unspecified); G62.89 (Other specified polyneuropathies); G90.09 (Other idiopathic peripheral autonomic neuropathy)
+**SYNONYMS:** SFN; Small fiber sensory neuropathy; Small fiber predominant neuropathy; Pure small fiber neuropathy; Painful small fiber neuropathy; Autonomic small fiber neuropathy; Sensory ganglionopathy (non-length-dependent pattern)
 **SCOPE:** Diagnosis and management of small fiber neuropathy presenting with painful sensory and/or autonomic symptoms with normal or near-normal nerve conduction studies. Includes length-dependent and non-length-dependent (ganglionopathy) patterns. Covers etiologic workup for treatable causes, symptomatic pain management, and autonomic symptom treatment.
 
-**STATUS:** Draft - Pending Review
+**VERSION:** 1.1
+**CREATED:** January 27, 2026
+**REVISED:** January 30, 2026
 
-**CLINICAL SYNONYMS:** SFN; Small fiber sensory neuropathy; Small fiber predominant neuropathy; Pure small fiber neuropathy; Painful small fiber neuropathy; Autonomic small fiber neuropathy; Sensory ganglionopathy (non-length-dependent pattern)
+**STATUS:** Draft - Pending Review
 
 ---
 
@@ -50,53 +53,53 @@ tags:
 
 ### 1A. Essential/Core Labs
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| HbA1c | Diabetes and prediabetes are most common causes of SFN | <5.7% normal; ≥5.7% prediabetes | - | ROUTINE | ROUTINE | - |
-| Fasting glucose | Current glycemic status; impaired fasting glucose | <100 mg/dL | STAT | ROUTINE | ROUTINE | - |
-| 2-hour oral glucose tolerance test (OGTT) | Impaired glucose tolerance causes SFN even with normal HbA1c | 2-hr glucose <140 mg/dL normal | - | ROUTINE | ROUTINE | - |
-| BMP (creatinine, eGFR, electrolytes) | Renal function; medication dosing; uremic neuropathy | eGFR >60; normal electrolytes | STAT | ROUTINE | ROUTINE | - |
-| CBC | Baseline; anemia evaluation | Normal | STAT | ROUTINE | ROUTINE | - |
-| Vitamin B12 | B12 deficiency causes SFN; common and treatable | >300 pg/mL (>400 optimal) | - | ROUTINE | ROUTINE | - |
-| TSH | Hypothyroidism causes neuropathy | 0.4-4.0 mIU/L | - | ROUTINE | ROUTINE | - |
-| ESR, CRP | Inflammatory markers; vasculitis screen | Normal | - | ROUTINE | ROUTINE | - |
-| ANA | Autoimmune etiology; Sjogren's screen | Negative | - | ROUTINE | ROUTINE | - |
-| Anti-SSA (Ro) and anti-SSB (La) antibodies | Sjogren syndrome is common cause of SFN (up to 40% of SFN) | Negative | - | ROUTINE | ROUTINE | - |
-| Hepatitis B and C serologies | HCV-associated neuropathy; cryoglobulinemia | Negative | - | ROUTINE | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| HbA1c (83036) | - | ROUTINE | ROUTINE | - | Diabetes and prediabetes are most common causes of SFN | <5.7% normal; ≥5.7% prediabetes |
+| Fasting glucose (82947) | STAT | ROUTINE | ROUTINE | - | Current glycemic status; impaired fasting glucose | <100 mg/dL |
+| 2-hour oral glucose tolerance test (82951) | - | ROUTINE | ROUTINE | - | Impaired glucose tolerance causes SFN even with normal HbA1c | 2-hr glucose <140 mg/dL normal |
+| BMP (80048) | STAT | ROUTINE | ROUTINE | - | Renal function; medication dosing; uremic neuropathy | eGFR >60; normal electrolytes |
+| CBC (85025) | STAT | ROUTINE | ROUTINE | - | Baseline; anemia evaluation | Normal |
+| Vitamin B12 (82607) | - | ROUTINE | ROUTINE | - | B12 deficiency causes SFN; common and treatable | >300 pg/mL (>400 optimal) |
+| TSH (84443) | - | ROUTINE | ROUTINE | - | Hypothyroidism causes neuropathy | 0.4-4.0 mIU/L |
+| ESR, CRP (85652/86140) | - | ROUTINE | ROUTINE | - | Inflammatory markers; vasculitis screen | Normal |
+| ANA (86038) | - | ROUTINE | ROUTINE | - | Autoimmune etiology; Sjogren's screen | Negative |
+| Anti-SSA (Ro) and anti-SSB (La) antibodies (86235) | - | ROUTINE | ROUTINE | - | Sjogren syndrome is common cause of SFN (up to 40% of SFN) | Negative |
+| Hepatitis B and C serologies (87340/86803) | - | ROUTINE | ROUTINE | - | HCV-associated neuropathy; cryoglobulinemia | Negative |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Methylmalonic acid (MMA) | More sensitive for B12 deficiency if B12 borderline (200-400) | Normal (<0.4 μmol/L) | - | ROUTINE | ROUTINE | - |
-| Tissue transglutaminase IgA (TTG-IgA) | Celiac disease causes SFN even without GI symptoms | Negative | - | ROUTINE | ROUTINE | - |
-| Total serum IgA | IgA deficiency causes false-negative TTG | Normal (not deficient) | - | ROUTINE | ROUTINE | - |
-| SPEP/UPEP with immunofixation | Paraproteinemia; monoclonal gammopathy | No monoclonal protein | - | ROUTINE | ROUTINE | - |
-| HIV | HIV-associated sensory neuropathy | Negative | - | EXT | ROUTINE | - |
-| Lipid panel | Metabolic syndrome associated with SFN | Normal/controlled | - | ROUTINE | ROUTINE | - |
-| Vitamin D | Deficiency associated with neuropathic pain | >30 ng/mL | - | ROUTINE | ROUTINE | - |
-| Vitamin B1 (thiamine) | Deficiency causes painful neuropathy | Normal | - | ROUTINE | ROUTINE | - |
-| Vitamin B6 | Both deficiency and excess cause neuropathy | Normal (neither high nor low) | - | ROUTINE | ROUTINE | - |
-| Copper | Copper deficiency neuropathy (especially post-bariatric surgery) | Normal (70-140 μg/dL) | - | ROUTINE | ROUTINE | - |
-| Zinc | Excessive zinc causes copper deficiency | Normal (not elevated) | - | ROUTINE | ROUTINE | - |
-| Salivary gland biopsy | Sjogren syndrome if clinical suspicion high and serology negative | Negative for lymphocytic infiltration | - | - | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Methylmalonic acid (83921) | - | ROUTINE | ROUTINE | - | More sensitive for B12 deficiency if B12 borderline (200-400) | Normal (<0.4 μmol/L) |
+| Tissue transglutaminase IgA (86364) | - | ROUTINE | ROUTINE | - | Celiac disease causes SFN even without GI symptoms | Negative |
+| Total serum IgA (82784) | - | ROUTINE | ROUTINE | - | IgA deficiency causes false-negative TTG | Normal (not deficient) |
+| SPEP/UPEP with immunofixation (86335/86334) | - | ROUTINE | ROUTINE | - | Paraproteinemia; monoclonal gammopathy | No monoclonal protein |
+| HIV (86701) | - | EXT | ROUTINE | - | HIV-associated sensory neuropathy | Negative |
+| Lipid panel (80061) | - | ROUTINE | ROUTINE | - | Metabolic syndrome associated with SFN | Normal/controlled |
+| Vitamin D (82306) | - | ROUTINE | ROUTINE | - | Deficiency associated with neuropathic pain | >30 ng/mL |
+| Vitamin B1 (84425) | - | ROUTINE | ROUTINE | - | Deficiency causes painful neuropathy | Normal |
+| Vitamin B6 (84207) | - | ROUTINE | ROUTINE | - | Both deficiency and excess cause neuropathy | Normal (neither high nor low) |
+| Copper (82525) | - | ROUTINE | ROUTINE | - | Copper deficiency neuropathy (especially post-bariatric surgery) | Normal (70-140 μg/dL) |
+| Zinc (84630) | - | ROUTINE | ROUTINE | - | Excessive zinc causes copper deficiency | Normal (not elevated) |
+| Salivary gland biopsy (42400) | - | - | ROUTINE | - | Sjogren syndrome if clinical suspicion high and serology negative | Negative for lymphocytic infiltration |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Alpha-galactosidase A enzyme activity | Fabry disease screening (X-linked; consider in males and females) | Normal enzyme activity | - | - | ROUTINE | - |
-| GLA gene sequencing | Confirm Fabry disease if enzyme low or high clinical suspicion | No pathogenic variants | - | - | EXT | - |
-| TTR gene sequencing | Hereditary transthyretin amyloidosis; early SFN with autonomic symptoms | No pathogenic variants | - | - | ROUTINE | - |
-| Fat pad or skin biopsy (Congo red) | Amyloidosis if suspected (autonomic features, cardiomyopathy, CTS) | No amyloid deposits | - | - | ROUTINE | - |
-| Serum free light chains | AL amyloidosis screen | Normal kappa:lambda ratio | - | ROUTINE | ROUTINE | - |
-| Anti-FGFR3 antibodies | Autoimmune SFN (especially ganglionopathy pattern) | Negative | - | - | EXT | - |
-| Anti-TS-HDS antibodies | Autoimmune SFN marker | Negative | - | - | EXT | - |
-| Sarcoidosis workup (ACE, chest imaging) | Sarcoid neuropathy | Normal ACE; no hilar adenopathy | - | ROUTINE | ROUTINE | - |
-| Paraneoplastic antibody panel | Paraneoplastic sensory ganglionopathy (anti-Hu) if rapid onset | Negative | - | ROUTINE | ROUTINE | - |
-| Cryoglobulins | Cryoglobulinemic neuropathy (especially with HCV) | Negative | - | - | EXT | - |
-| Schirmer test | Objective dry eye for Sjogren diagnosis | Normal (>5mm in 5 min) | - | - | ROUTINE | - |
-| SCN9A, SCN10A, SCN11A gene testing | Sodium channelopathies causing inherited SFN (erythromelalgia) | No pathogenic variants | - | - | EXT | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Alpha-galactosidase A enzyme activity (82657) | - | - | ROUTINE | - | Fabry disease screening (X-linked; consider in males and females) | Normal enzyme activity |
+| GLA gene sequencing (81405) | - | - | EXT | - | Confirm Fabry disease if enzyme low or high clinical suspicion | No pathogenic variants |
+| TTR gene sequencing (81404) | - | - | ROUTINE | - | Hereditary transthyretin amyloidosis; early SFN with autonomic symptoms | No pathogenic variants |
+| Fat pad or skin biopsy, Congo red (88313) | - | - | ROUTINE | - | Amyloidosis if suspected (autonomic features, cardiomyopathy, CTS) | No amyloid deposits |
+| Serum free light chains (83883) | - | ROUTINE | ROUTINE | - | AL amyloidosis screen | Normal kappa:lambda ratio |
+| Anti-FGFR3 antibodies (86235) | - | - | EXT | - | Autoimmune SFN (especially ganglionopathy pattern) | Negative |
+| Anti-TS-HDS antibodies (86235) | - | - | EXT | - | Autoimmune SFN marker | Negative |
+| Sarcoidosis workup: ACE, chest imaging (82164) | - | ROUTINE | ROUTINE | - | Sarcoid neuropathy | Normal ACE; no hilar adenopathy |
+| Paraneoplastic antibody panel (86255) | - | ROUTINE | ROUTINE | - | Paraneoplastic sensory ganglionopathy (anti-Hu) if rapid onset | Negative |
+| Cryoglobulins (86157) | - | - | EXT | - | Cryoglobulinemic neuropathy (especially with HCV) | Negative |
+| Schirmer test (68760) | - | - | ROUTINE | - | Objective dry eye for Sjogren diagnosis | Normal (>5mm in 5 min) |
+| SCN9A, SCN10A, SCN11A gene testing (81479) | - | - | EXT | - | Sodium channelopathies causing inherited SFN (erythromelalgia) | No pathogenic variants |
 
 ---
 
@@ -104,33 +107,33 @@ tags:
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| Nerve conduction studies (NCS) | At initial evaluation | Normal or near-normal (SFN spares large fibers) | None | - | ROUTINE | ROUTINE | - |
-| Skin biopsy (3mm punch at distal leg and thigh) | After NCS shows normal large fiber function | Reduced IENFD below normative threshold for age/sex/site | Bleeding diathesis; anticoagulation (relative) | - | - | ROUTINE | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Nerve conduction studies (95907-95909) | - | ROUTINE | ROUTINE | - | At initial evaluation | Normal or near-normal (SFN spares large fibers) | None |
+| Skin biopsy, 3mm punch at distal leg and thigh (88305/88342) | - | - | ROUTINE | - | After NCS shows normal large fiber function | Reduced IENFD below normative threshold for age/sex/site | Bleeding diathesis; anticoagulation (relative) |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| Quantitative sudomotor axon reflex test (QSART) | Autonomic symptoms; suspected sudomotor dysfunction | Normal sweat volumes at all sites | None | - | - | ROUTINE | - |
-| Sudoscan | Screening for sudomotor dysfunction; non-invasive | Normal electrochemical skin conductance hands and feet | None | - | - | ROUTINE | - |
-| Autonomic reflex screen (ARS) | Comprehensive autonomic evaluation; orthostatic symptoms | Normal cardiovagal, adrenergic, and sudomotor function | None | - | EXT | ROUTINE | - |
-| Tilt table test | Orthostatic intolerance; POTS evaluation | No excessive HR rise; no orthostatic hypotension | None | - | EXT | ROUTINE | - |
-| Quantitative sensory testing (QST) | Thermal threshold testing; research and specialized centers | Normal thermal detection thresholds | None | - | - | EXT | - |
-| Thermoregulatory sweat test (TST) | Global sudomotor evaluation if QSART equivocal | Normal sweat distribution | Cardiac instability | - | - | EXT | - |
-| Corneal confocal microscopy | Non-invasive small fiber assessment; research tool | Normal corneal nerve fiber density and length | None | - | - | EXT | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Quantitative sudomotor axon reflex test, QSART (95923) | - | - | ROUTINE | - | Autonomic symptoms; suspected sudomotor dysfunction | Normal sweat volumes at all sites | None |
+| Sudoscan (95923) | - | - | ROUTINE | - | Screening for sudomotor dysfunction; non-invasive | Normal electrochemical skin conductance hands and feet | None |
+| Autonomic reflex screen (95924) | - | EXT | ROUTINE | - | Comprehensive autonomic evaluation; orthostatic symptoms | Normal cardiovagal, adrenergic, and sudomotor function | None |
+| Tilt table test (95924) | - | EXT | ROUTINE | - | Orthostatic intolerance; POTS evaluation | No excessive HR rise; no orthostatic hypotension | None |
+| Quantitative sensory testing, QST (95924) | - | - | EXT | - | Thermal threshold testing; research and specialized centers | Normal thermal detection thresholds | None |
+| Thermoregulatory sweat test (95924) | - | - | EXT | - | Global sudomotor evaluation if QSART equivocal | Normal sweat distribution | Cardiac instability |
+| Corneal confocal microscopy (92132) | - | - | EXT | - | Non-invasive small fiber assessment; research tool | Normal corneal nerve fiber density and length | None |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| EMG | If large fiber involvement suspected; atypical features | Normal (SFN spares motor and large sensory fibers) | Anticoagulation (relative) | - | ROUTINE | ROUTINE | - |
-| MRI spine (cervical/thoracic) | Ganglionopathy pattern; non-length-dependent SFN | Normal dorsal root ganglia; no dorsal column signal | MRI contraindications | - | ROUTINE | ROUTINE | - |
-| MRI neurography | Research; visualize small nerves | No nerve enlargement or signal abnormality | MRI contraindications | - | - | EXT | - |
-| PET-CT | Sarcoidosis or malignancy suspected; paraneoplastic evaluation | No abnormal uptake | Pregnancy | - | EXT | EXT | - |
-| Echocardiogram | Amyloidosis suspected (cardiomyopathy screening) | No infiltrative cardiomyopathy features | None | - | ROUTINE | ROUTINE | - |
-| Cardiac MRI | Cardiac amyloidosis evaluation if echo abnormal | No amyloid infiltration | MRI contraindications; devices | - | EXT | EXT | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| EMG (95886) | - | ROUTINE | ROUTINE | - | If large fiber involvement suspected; atypical features | Normal (SFN spares motor and large sensory fibers) | Anticoagulation (relative) |
+| MRI spine, cervical/thoracic (72141/72146) | - | ROUTINE | ROUTINE | - | Ganglionopathy pattern; non-length-dependent SFN | Normal dorsal root ganglia; no dorsal column signal | MRI contraindications |
+| MRI neurography (72197) | - | - | EXT | - | Research; visualize small nerves | No nerve enlargement or signal abnormality | MRI contraindications |
+| PET-CT (78816) | - | EXT | EXT | - | Sarcoidosis or malignancy suspected; paraneoplastic evaluation | No abnormal uptake | Pregnancy |
+| Echocardiogram (93306) | - | ROUTINE | ROUTINE | - | Amyloidosis suspected (cardiomyopathy screening) | No infiltrative cardiomyopathy features | None |
+| Cardiac MRI (75561) | - | EXT | EXT | - | Cardiac amyloidosis evaluation if echo abnormal | No amyloid infiltration | MRI contraindications; devices |
 
 ---
 
@@ -140,68 +143,68 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| IV fluids | IV | Acute orthostatic hypotension with symptoms | Normal saline bolus :: IV :: :: 500-1000 mL NS bolus for symptomatic orthostatic hypotension; avoid in heart failure | Heart failure; volume overload | Volume status; BP response | STAT | STAT | - | STAT |
-| Pain crisis management | IV/PO | Severe acute neuropathic pain flare not responding to outpatient regimen | Multimodal :: IV/PO :: :: IV lidocaine infusion (1-3 mg/kg/hr) if refractory; avoid chronic opioids | Lidocaine: cardiac conduction abnormality | Pain scores; cardiac monitoring for lidocaine | URGENT | URGENT | - | URGENT |
-| Glucose management | Various | Acute presentation with new diabetes diagnosis | Per protocol :: Various :: :: Initiate diabetes management; hypoglycemia causes SFN flare | Per specific agent | Glucose | STAT | STAT | - | STAT |
+| IV fluids | IV | Acute orthostatic hypotension with symptoms | 500-1000 mL :: IV :: bolus :: 500-1000 mL NS bolus for symptomatic orthostatic hypotension; avoid in heart failure | Heart failure; volume overload | Volume status; BP response | STAT | STAT | - | STAT |
+| Pain crisis management | IV/PO | Severe acute neuropathic pain flare not responding to outpatient regimen | Multimodal :: IV/PO :: PRN :: IV lidocaine infusion (1-3 mg/kg/hr) if refractory; avoid chronic opioids | Lidocaine: cardiac conduction abnormality | Pain scores; cardiac monitoring for lidocaine | URGENT | URGENT | - | URGENT |
+| Glucose management | Various | Acute presentation with new diabetes diagnosis | Per protocol :: Various :: per protocol :: Initiate diabetes management; hypoglycemia causes SFN flare | Per specific agent | Glucose | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments (Neuropathic Pain - First-line)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Duloxetine | PO | First-line for neuropathic pain; also treats depression/anxiety common in SFN | 30 mg daily; 60 mg daily :: PO :: :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | MAOIs; uncontrolled narrow-angle glaucoma; severe renal impairment (CrCl <30) | Hepatic function; BP; suicidal ideation | - | ROUTINE | ROUTINE | - |
-| Pregabalin | PO | First-line for neuropathic pain; FDA-approved for postherpetic neuralgia and DPN | 50 mg TID; 75 mg BID; 100 mg TID; 150 mg BID; 200 mg TID :: PO :: :: Start 50 mg TID or 75 mg BID; titrate q3-7d; max 300 mg/day; reduce if CrCl <60 | Angioedema to pregabalin/gabapentin | Dizziness, somnolence, weight gain, peripheral edema | - | ROUTINE | ROUTINE | - |
-| Gabapentin | PO | First-line; less expensive alternative to pregabalin | 300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID; 1200 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q3-7d; target 1800-3600 mg/day divided TID; reduce if CrCl <60 | Severe renal impairment (dose adjust required) | Sedation, dizziness, ataxia, edema | - | ROUTINE | ROUTINE | - |
-| Amitriptyline | PO | TCA for neuropathic pain; helps insomnia; inexpensive | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10-25 mg qHS; titrate by 10-25 mg q1-2wk; typical 25-75 mg qHS; max 150 mg | Cardiac conduction disease; recent MI; urinary retention; narrow-angle glaucoma; elderly (high anticholinergic burden) | ECG if age >40 or cardiac history; anticholinergic side effects | - | ROUTINE | ROUTINE | - |
-| Nortriptyline | PO | TCA with less sedation and anticholinergic effects than amitriptyline | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10-25 mg qHS; titrate by 10-25 mg q1-2wk; typical 25-75 mg qHS | Cardiac conduction disease; recent MI; urinary retention; narrow-angle glaucoma | ECG if dose >100 mg/day or cardiac risk factors | - | ROUTINE | ROUTINE | - |
-| Venlafaxine XR | PO | SNRI alternative to duloxetine | 37.5 mg daily; 75 mg daily; 150 mg daily; 225 mg daily :: PO :: :: Start 37.5 mg daily; increase by 37.5-75 mg q1wk; target 150-225 mg daily | MAOIs; uncontrolled hypertension | BP at higher doses; discontinuation syndrome if stopped abruptly | - | ROUTINE | ROUTINE | - |
+| Duloxetine | PO | First-line for neuropathic pain; also treats depression/anxiety common in SFN | 30 mg :: PO :: daily :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | MAOIs; uncontrolled narrow-angle glaucoma; severe renal impairment (CrCl <30) | Hepatic function; BP; suicidal ideation | - | ROUTINE | ROUTINE | - |
+| Pregabalin | PO | First-line for neuropathic pain; FDA-approved for postherpetic neuralgia and DPN | 50 mg :: PO :: TID :: Start 50 mg TID or 75 mg BID; titrate q3-7d; max 300 mg/day; reduce if CrCl <60 | Angioedema to pregabalin/gabapentin | Dizziness, somnolence, weight gain, peripheral edema | - | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | First-line; less expensive alternative to pregabalin | 300 mg :: PO :: qHS :: Start 300 mg qHS; titrate by 300 mg q3-7d; target 1800-3600 mg/day divided TID; reduce if CrCl <60 | Severe renal impairment (dose adjust required) | Sedation, dizziness, ataxia, edema | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | PO | TCA for neuropathic pain; helps insomnia; inexpensive | 10 mg :: PO :: qHS :: Start 10-25 mg qHS; titrate by 10-25 mg q1-2wk; typical 25-75 mg qHS; max 150 mg | Cardiac conduction disease; recent MI; urinary retention; narrow-angle glaucoma; elderly (high anticholinergic burden) | ECG if age >40 or cardiac history; anticholinergic side effects | - | ROUTINE | ROUTINE | - |
+| Nortriptyline | PO | TCA with less sedation and anticholinergic effects than amitriptyline | 10 mg :: PO :: qHS :: Start 10-25 mg qHS; titrate by 10-25 mg q1-2wk; typical 25-75 mg qHS | Cardiac conduction disease; recent MI; urinary retention; narrow-angle glaucoma | ECG if dose >100 mg/day or cardiac risk factors | - | ROUTINE | ROUTINE | - |
+| Venlafaxine XR | PO | SNRI alternative to duloxetine | 37.5 mg :: PO :: daily :: Start 37.5 mg daily; increase by 37.5-75 mg q1wk; target 150-225 mg daily | MAOIs; uncontrolled hypertension | BP at higher doses; discontinuation syndrome if stopped abruptly | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Second-line/Refractory (Neuropathic Pain)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Capsaicin 8% patch (Qutenza) | Topical | Localized neuropathic pain; add-on therapy | Apply for 30-60 min :: Topical :: :: Applied by trained healthcare provider; pre-treat with topical anesthetic; may repeat q3mo | Application to face/mucous membranes; broken skin | Pain/burning during application; transient BP increase | - | - | ROUTINE | - |
-| Lidocaine 5% patch | Topical | Localized pain; adjunctive therapy; allodynia | 1-3 patches daily :: Topical :: :: Apply to most painful area; up to 3 patches for 12h on/12h off | Allergy to local anesthetics; damaged skin | Skin irritation | - | ROUTINE | ROUTINE | - |
-| Lamotrigine | PO | Sodium channel blocker; some evidence in SFN | 25 mg daily; 50 mg daily; 100 mg BID; 200 mg BID :: PO :: :: Start 25 mg daily x 2wk; then 50 mg daily x 2wk; increase by 50 mg q2wk; max 400 mg/day | SJS/TEN history; valproate use (reduce dose by 50%) | RASH (especially first 8 weeks) - stop immediately if rash | - | ROUTINE | ROUTINE | - |
-| Lacosamide | PO | Sodium channel blocker; well-tolerated | 50 mg BID; 100 mg BID; 150 mg BID; 200 mg BID :: PO :: :: Start 50 mg BID; increase by 50 mg/day weekly; max 400 mg/day | Second or third degree AV block (without pacemaker) | ECG for PR prolongation; dizziness | - | ROUTINE | ROUTINE | - |
-| Carbamazepine | PO | Sodium channel blocker; limited evidence for SFN specifically | 100 mg BID; 200 mg BID; 400 mg BID :: PO :: :: Start 100 mg BID; titrate by 200 mg/wk; max 1200 mg/day | AV block; bone marrow suppression; HLA-B*1502 in Asian patients (SJS risk) | CBC, LFTs, sodium; drug interactions (CYP3A4 inducer) | - | ROUTINE | ROUTINE | - |
-| Mexiletine | PO | Sodium channel blocker; especially if SCN9A mutation suspected | 150 mg TID; 200 mg TID; 300 mg TID :: PO :: :: Start 150 mg TID; titrate by 150 mg q3d; max 1200 mg/day; take with food | Cardiomyopathy; second/third degree AV block | ECG; arrhythmia monitoring | - | EXT | ROUTINE | - |
-| Desipramine | PO | TCA with minimal anticholinergic effects | 25 mg qHS; 50 mg qHS; 75 mg qHS; 100 mg qHS :: PO :: :: Start 25 mg qHS; titrate by 25 mg q1-2wk; target 50-100 mg | Same as other TCAs | ECG; drug levels available if needed | - | ROUTINE | ROUTINE | - |
-| Tramadol | PO | Moderate pain; opioid-like with serotonergic properties | 50 mg q6h PRN; 100 mg ER BID :: PO :: :: Start 50 mg q6h PRN; max 400 mg/day; reduce if renal/hepatic impairment | Seizure disorder; concurrent MAOIs/SSRIs (serotonin syndrome risk) | Seizures, serotonin syndrome, constipation | - | ROUTINE | ROUTINE | - |
-| Tapentadol ER | PO | Refractory pain; mu-opioid agonist with norepinephrine reuptake inhibition | 50 mg BID; 100 mg BID; 150 mg BID; 200 mg BID :: PO :: :: Start 50 mg BID; titrate by 50 mg BID q3d; max 500 mg/day | Severe respiratory depression; MAOIs; paralytic ileus | Respiratory status, constipation, sedation | - | EXT | ROUTINE | - |
-| Combination therapy | Various | Inadequate response to monotherapy | Combine agents from different classes :: Various :: :: Gabapentinoid + SNRI; TCA + gabapentinoid; use lower doses of each | Per individual agents | Additive side effects; falls in elderly | - | ROUTINE | ROUTINE | - |
-| Low-dose naltrexone (LDN) | PO | Emerging evidence for neuropathic pain; anti-inflammatory | 1.5 mg qHS; 3 mg qHS; 4.5 mg qHS :: PO :: :: Start 1.5 mg qHS; increase by 1.5 mg q2wk; max 4.5 mg; compounded | Current opioid use; hepatic impairment | Vivid dreams, insomnia (take in AM if occurs) | - | - | EXT | - |
-| Spinal cord stimulation | Implant | Refractory SFN pain; failed multiple medications | Per implant protocol :: Implant :: :: Trial stimulation before permanent implant; high-frequency or burst stimulation preferred | Infection; coagulopathy; psychiatric instability | Device function; pain relief | - | - | EXT | - |
+| Capsaicin 8% patch (Qutenza) | Topical | Localized neuropathic pain; add-on therapy | 1 patch :: Topical :: q3mo :: Applied by trained healthcare provider; pre-treat with topical anesthetic; may repeat q3mo | Application to face/mucous membranes; broken skin | Pain/burning during application; transient BP increase | - | - | ROUTINE | - |
+| Lidocaine 5% patch | Topical | Localized pain; adjunctive therapy; allodynia | 1-3 patches :: Topical :: daily :: Apply to most painful area; up to 3 patches for 12h on/12h off | Allergy to local anesthetics; damaged skin | Skin irritation | - | ROUTINE | ROUTINE | - |
+| Lamotrigine | PO | Sodium channel blocker; some evidence in SFN | 25 mg :: PO :: daily :: Start 25 mg daily x 2wk; then 50 mg daily x 2wk; increase by 50 mg q2wk; max 400 mg/day | SJS/TEN history; valproate use (reduce dose by 50%) | RASH (especially first 8 weeks) - stop immediately if rash | - | ROUTINE | ROUTINE | - |
+| Lacosamide | PO | Sodium channel blocker; well-tolerated | 50 mg :: PO :: BID :: Start 50 mg BID; increase by 50 mg/day weekly; max 400 mg/day | Second or third degree AV block (without pacemaker) | ECG for PR prolongation; dizziness | - | ROUTINE | ROUTINE | - |
+| Carbamazepine | PO | Sodium channel blocker; limited evidence for SFN specifically | 100 mg :: PO :: BID :: Start 100 mg BID; titrate by 200 mg/wk; max 1200 mg/day | AV block; bone marrow suppression; HLA-B*1502 in Asian patients (SJS risk) | CBC, LFTs, sodium; drug interactions (CYP3A4 inducer) | - | ROUTINE | ROUTINE | - |
+| Mexiletine | PO | Sodium channel blocker; especially if SCN9A mutation suspected | 150 mg :: PO :: TID :: Start 150 mg TID; titrate by 150 mg q3d; max 1200 mg/day; take with food | Cardiomyopathy; second/third degree AV block | ECG; arrhythmia monitoring | - | EXT | ROUTINE | - |
+| Desipramine | PO | TCA with minimal anticholinergic effects | 25 mg :: PO :: qHS :: Start 25 mg qHS; titrate by 25 mg q1-2wk; target 50-100 mg | Same as other TCAs | ECG; drug levels available if needed | - | ROUTINE | ROUTINE | - |
+| Tramadol | PO | Moderate pain; opioid-like with serotonergic properties | 50 mg :: PO :: q6h PRN :: Start 50 mg q6h PRN; max 400 mg/day; reduce if renal/hepatic impairment | Seizure disorder; concurrent MAOIs/SSRIs (serotonin syndrome risk) | Seizures, serotonin syndrome, constipation | - | ROUTINE | ROUTINE | - |
+| Tapentadol ER | PO | Refractory pain; mu-opioid agonist with norepinephrine reuptake inhibition | 50 mg :: PO :: BID :: Start 50 mg BID; titrate by 50 mg BID q3d; max 500 mg/day | Severe respiratory depression; MAOIs; paralytic ileus | Respiratory status, constipation, sedation | - | EXT | ROUTINE | - |
+| Combination therapy | Various | Inadequate response to monotherapy | Per regimen :: Various :: per regimen :: Gabapentinoid + SNRI; TCA + gabapentinoid; use lower doses of each | Per individual agents | Additive side effects; falls in elderly | - | ROUTINE | ROUTINE | - |
+| Low-dose naltrexone (LDN) | PO | Emerging evidence for neuropathic pain; anti-inflammatory | 1.5 mg :: PO :: qHS :: Start 1.5 mg qHS; increase by 1.5 mg q2wk; max 4.5 mg; compounded | Current opioid use; hepatic impairment | Vivid dreams, insomnia (take in AM if occurs) | - | - | EXT | - |
+| Spinal cord stimulation | Implant | Refractory SFN pain; failed multiple medications | Per protocol :: Implant :: per protocol :: Trial stimulation before permanent implant; high-frequency or burst stimulation preferred | Infection; coagulopathy; psychiatric instability | Device function; pain relief | - | - | EXT | - |
 
 ### 3D. Autonomic Symptom Management
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Fludrocortisone | PO | Orthostatic hypotension; volume expansion | 0.1 mg daily; 0.2 mg daily :: PO :: :: Start 0.1 mg daily; may increase to 0.2 mg daily; max 0.3 mg | Check potassium; assess volume status | Heart failure; hypertension; hypokalemia | Weight, BP supine and standing, potassium, edema | - | ROUTINE | ROUTINE | - |
-| Midodrine | PO | Orthostatic hypotension; alpha-1 agonist vasoconstrictor | 2.5 mg TID; 5 mg TID; 10 mg TID :: PO :: :: Start 2.5 mg TID (with meals); titrate to 5-10 mg TID; last dose 4h before bed | None specific | Severe cardiac disease; urinary retention; supine hypertension | Supine BP (check for supine hypertension); avoid at bedtime | - | ROUTINE | ROUTINE | - |
-| Droxidopa (Northera) | PO | Neurogenic orthostatic hypotension; FDA-approved for autonomic failure | 100 mg TID; 200 mg TID; 300 mg TID; 400 mg TID; 600 mg TID :: PO :: :: Start 100 mg TID; titrate by 100 mg/day q24-48h; max 600 mg TID | None specific | Supine hypertension (severe) | Supine BP; avoid lying flat for 2h after dose | - | ROUTINE | ROUTINE | - |
-| Pyridostigmine | PO | Orthostatic hypotension; enhances ganglionic transmission | 30 mg TID; 60 mg TID :: PO :: :: Start 30 mg TID; may increase to 60 mg TID; modest BP effect but no supine hypertension | None specific | Mechanical GI/GU obstruction; bradyarrhythmia | Cholinergic effects (diarrhea, salivation) | - | ROUTINE | ROUTINE | - |
-| Compression stockings | External | Orthostatic hypotension; venous pooling | Waist-high 30-40 mmHg :: External :: :: Waist-high preferred over knee-high; put on before rising; 30-40 mmHg compression | Peripheral arterial disease (ABI <0.5) | Skin breakdown; PAD | Skin integrity; ABI if arterial disease suspected | - | ROUTINE | ROUTINE | - |
-| Oxybutynin | PO | Bladder urgency/frequency | 5 mg BID; 5 mg TID; 10 mg XL daily :: PO :: :: Start 5 mg BID or 10 mg XL daily; max 30 mg/day | Urinary retention; uncontrolled narrow-angle glaucoma; GI obstruction | Cognitive effects in elderly; dry mouth | Anticholinergic effects; cognition in elderly | - | ROUTINE | ROUTINE | - |
-| Solifenacin | PO | Bladder urgency; better tolerated anticholinergic | 5 mg daily; 10 mg daily :: PO :: :: Start 5 mg daily; may increase to 10 mg daily | Same as oxybutynin; severe hepatic impairment | Same as oxybutynin but less cognitive | Anticholinergic effects | - | ROUTINE | ROUTINE | - |
-| Mirabegron | PO | Bladder urgency; beta-3 agonist (non-anticholinergic) | 25 mg daily; 50 mg daily :: PO :: :: Start 25 mg daily; may increase to 50 mg daily | Uncontrolled hypertension; severe hepatic impairment | BP; urinary retention | - | ROUTINE | ROUTINE | - |
-| Metoclopramide | PO | Gastroparesis; prokinetic | 5 mg AC; 10 mg AC :: PO :: :: 5-10 mg 30 min before meals and at bedtime; limit to <12 weeks | Tardive dyskinesia (limit duration); GI obstruction; Parkinson disease | Tardive dyskinesia; extrapyramidal symptoms | - | ROUTINE | ROUTINE | - |
-| Domperidone | PO | Gastroparesis; prokinetic with less CNS effects | 10 mg TID :: PO :: :: 10 mg TID before meals; not FDA-approved (requires IND or international pharmacy) | QT prolongation; ventricular arrhythmia | ECG for QT; arrhythmia | - | - | EXT | - |
-| Erythromycin | PO | Gastroparesis; motilin receptor agonist | 250 mg TID :: PO :: :: 250 mg PO TID before meals; short-term use due to tachyphylaxis | QT prolongation; drug interactions | ECG; GI upset; tachyphylaxis limits long-term use | - | ROUTINE | ROUTINE | - |
-| Sildenafil | PO | Erectile dysfunction in autonomic SFN | 25 mg PRN; 50 mg PRN; 100 mg PRN :: PO :: :: Start 25-50 mg 1h before activity; max 100 mg; avoid with nitrates | Nitrate use; severe cardiovascular disease | Cardiovascular status; vision changes | - | - | ROUTINE | - |
+| Fludrocortisone | PO | Orthostatic hypotension; volume expansion | 0.1 mg :: PO :: daily :: Start 0.1 mg daily; may increase to 0.2 mg daily; max 0.3 mg | Check potassium; assess volume status | Heart failure; hypertension; hypokalemia | Weight, BP supine and standing, potassium, edema | - | ROUTINE | ROUTINE | - |
+| Midodrine | PO | Orthostatic hypotension; alpha-1 agonist vasoconstrictor | 2.5 mg :: PO :: TID :: Start 2.5 mg TID (with meals); titrate to 5-10 mg TID; last dose 4h before bed | None specific | Severe cardiac disease; urinary retention; supine hypertension | Supine BP (check for supine hypertension); avoid at bedtime | - | ROUTINE | ROUTINE | - |
+| Droxidopa (Northera) | PO | Neurogenic orthostatic hypotension; FDA-approved for autonomic failure | 100 mg :: PO :: TID :: Start 100 mg TID; titrate by 100 mg/day q24-48h; max 600 mg TID | None specific | Supine hypertension (severe) | Supine BP; avoid lying flat for 2h after dose | - | ROUTINE | ROUTINE | - |
+| Pyridostigmine | PO | Orthostatic hypotension; enhances ganglionic transmission | 30 mg :: PO :: TID :: Start 30 mg TID; may increase to 60 mg TID; modest BP effect but no supine hypertension | None specific | Mechanical GI/GU obstruction; bradyarrhythmia | Cholinergic effects (diarrhea, salivation) | - | ROUTINE | ROUTINE | - |
+| Compression stockings | External | Orthostatic hypotension; venous pooling | 30-40 mmHg :: External :: daily :: Waist-high preferred over knee-high; put on before rising; 30-40 mmHg compression | Peripheral arterial disease (ABI <0.5) | None absolute if ABI >0.5 | Skin integrity; ABI if arterial disease suspected | - | ROUTINE | ROUTINE | - |
+| Oxybutynin | PO | Bladder urgency/frequency | 5 mg :: PO :: BID :: Start 5 mg BID or 10 mg XL daily; max 30 mg/day | None specific | Urinary retention; uncontrolled narrow-angle glaucoma; GI obstruction | Anticholinergic effects; cognition in elderly | - | ROUTINE | ROUTINE | - |
+| Solifenacin | PO | Bladder urgency; better tolerated anticholinergic | 5 mg :: PO :: daily :: Start 5 mg daily; may increase to 10 mg daily | None specific | Same as oxybutynin; severe hepatic impairment | Anticholinergic effects | - | ROUTINE | ROUTINE | - |
+| Mirabegron | PO | Bladder urgency; beta-3 agonist (non-anticholinergic) | 25 mg :: PO :: daily :: Start 25 mg daily; may increase to 50 mg daily | None specific | Uncontrolled hypertension; severe hepatic impairment | BP; urinary retention | - | ROUTINE | ROUTINE | - |
+| Metoclopramide | PO | Gastroparesis; prokinetic | 5 mg :: PO :: AC :: 5-10 mg 30 min before meals and at bedtime; limit to <12 weeks | None specific | Tardive dyskinesia (limit duration); GI obstruction; Parkinson disease | Tardive dyskinesia; extrapyramidal symptoms | - | ROUTINE | ROUTINE | - |
+| Domperidone | PO | Gastroparesis; prokinetic with less CNS effects | 10 mg :: PO :: TID :: 10 mg TID before meals; not FDA-approved (requires IND or international pharmacy) | ECG baseline for QT | QT prolongation; ventricular arrhythmia | ECG for QT; arrhythmia | - | - | EXT | - |
+| Erythromycin | PO | Gastroparesis; motilin receptor agonist | 250 mg :: PO :: TID :: 250 mg PO TID before meals; short-term use due to tachyphylaxis | ECG baseline for QT | QT prolongation; drug interactions | ECG; GI upset; tachyphylaxis limits long-term use | - | ROUTINE | ROUTINE | - |
+| Sildenafil | PO | Erectile dysfunction in autonomic SFN | 25 mg :: PO :: PRN :: Start 25-50 mg 1h before activity; max 100 mg; avoid with nitrates | Cardiovascular assessment | Nitrate use; severe cardiovascular disease | Cardiovascular status; vision changes | - | - | ROUTINE | - |
 
 ### 3E. Disease-Modifying / Etiology-Targeted Therapies
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Glycemic control optimization | Various | Diabetes/prediabetes-associated SFN | Per diabetes guidelines :: Various :: :: Lifestyle first for prediabetes; HbA1c <7% target; tighter control slows progression | Diabetes education | Hypoglycemia risk | HbA1c q3-6mo; glucose monitoring | - | ROUTINE | ROUTINE | - |
-| IVIG | IV | Autoimmune SFN (Sjogren-associated; anti-FGFR3+; idiopathic with evidence of inflammation) | 2 g/kg divided over 2-5 days :: IV :: :: 2 g/kg divided over 2-5 days monthly; limited evidence; consider trial | Check IgA level (IgA-deficient patients need IgA-depleted product) | IgA deficiency (use IgA-depleted); renal impairment; hypercoagulable state | Renal function; thrombotic risk; headache | - | ROUTINE | ROUTINE | - |
-| Enzyme replacement therapy (Fabry disease) | IV | Fabry disease-associated SFN | Agalsidase beta (Fabrazyme) 1 mg/kg IV q2wk :: IV :: :: Lifelong therapy; infusion reactions common early | None | None absolute | Infusion reactions; anti-drug antibodies | - | ROUTINE | ROUTINE | - |
-| Tafamidis (Vyndamax/Vyndaqel) | PO | Hereditary and wild-type TTR amyloidosis with polyneuropathy | 80 mg daily; 61 mg daily :: PO :: :: 80 mg (Vyndamax) or 61 mg (Vyndaqel) PO daily; TTR stabilizer | Genetic confirmation of TTR amyloidosis | None | Cardiac function; neuropathy progression | - | - | ROUTINE | - |
-| Inotersen/Patisiran | SC/IV | Hereditary TTR amyloidosis with polyneuropathy | Per prescribing protocol :: SC/IV :: :: Inotersen 284 mg SC weekly; Patisiran 0.3 mg/kg IV q3wk | TTR gene mutation confirmed; specialist management | Thrombocytopenia (inotersen); infusion reactions | Platelets (inotersen); hepatic function | - | - | EXT | - |
-| Gluten-free diet | Diet | Celiac disease-associated SFN | Strict gluten-free :: Diet :: :: Lifelong strict gluten-free diet; dietitian referral; neuropathy may stabilize/improve | Celiac confirmation | None | TTG-IgA levels; symptom response | - | - | ROUTINE | - |
-| B12 supplementation | PO/IM | B12 deficiency-associated SFN | 1000 mcg daily PO; 1000 mcg IM monthly :: PO/IM :: :: 1000-2000 mcg PO daily; or 1000 mcg IM weekly x 4, then monthly if poor absorption | None | None | B12 and MMA levels q3-6mo until stable | - | ROUTINE | ROUTINE | - |
-| Immunosuppression (Sjogren's) | Various | Sjogren's-associated SFN with systemic disease activity | Per rheumatology :: Various :: :: Hydroxychloroquine, methotrexate, rituximab; coordinate with rheumatology | Rheumatology co-management | Per specific agent | Per specific agent | - | ROUTINE | ROUTINE | - |
-| Alpha-lipoic acid | PO | Antioxidant; some evidence in painful neuropathy; European guidelines | 600 mg daily :: PO :: :: 600 mg PO daily; may take 3-6 months for effect; limited evidence | None | GI upset | May enhance hypoglycemia in diabetics | - | - | ROUTINE | - |
+| Glycemic control optimization | Various | Diabetes/prediabetes-associated SFN | Per guidelines :: Various :: per protocol :: Lifestyle first for prediabetes; HbA1c <7% target; tighter control slows progression | Diabetes education | Hypoglycemia risk | HbA1c q3-6mo; glucose monitoring | - | ROUTINE | ROUTINE | - |
+| IVIG | IV | Autoimmune SFN (Sjogren-associated; anti-FGFR3+; idiopathic with evidence of inflammation) | 2 g/kg :: IV :: divided over 2-5 days monthly :: 2 g/kg divided over 2-5 days monthly; limited evidence; consider trial | Check IgA level (IgA-deficient patients need IgA-depleted product) | IgA deficiency (use IgA-depleted); renal impairment; hypercoagulable state | Renal function; thrombotic risk; headache | - | ROUTINE | ROUTINE | - |
+| Enzyme replacement therapy — Fabry disease | IV | Fabry disease-associated SFN | 1 mg/kg :: IV :: q2wk :: Agalsidase beta (Fabrazyme) 1 mg/kg IV q2wk; lifelong therapy; infusion reactions common early | Genetic confirmation of Fabry disease | None absolute | Infusion reactions; anti-drug antibodies | - | ROUTINE | ROUTINE | - |
+| Tafamidis (Vyndamax/Vyndaqel) | PO | Hereditary and wild-type TTR amyloidosis with polyneuropathy | 80 mg :: PO :: daily :: 80 mg (Vyndamax) or 61 mg (Vyndaqel) PO daily; TTR stabilizer | Genetic confirmation of TTR amyloidosis | None | Cardiac function; neuropathy progression | - | - | ROUTINE | - |
+| Inotersen/Patisiran | SC/IV | Hereditary TTR amyloidosis with polyneuropathy | Per protocol :: SC/IV :: per protocol :: Inotersen 284 mg SC weekly; Patisiran 0.3 mg/kg IV q3wk | TTR gene mutation confirmed; specialist management | Thrombocytopenia (inotersen); infusion reactions | Platelets (inotersen); hepatic function | - | - | EXT | - |
+| Gluten-free diet | Diet | Celiac disease-associated SFN | Strict gluten-free :: Diet :: daily :: Lifelong strict gluten-free diet; dietitian referral; neuropathy may stabilize/improve | Celiac confirmation (biopsy or serology) | None | TTG-IgA levels; symptom response | - | - | ROUTINE | - |
+| B12 supplementation | PO/IM | B12 deficiency-associated SFN | 1000 mcg :: PO :: daily :: 1000-2000 mcg PO daily; or 1000 mcg IM weekly x 4, then monthly if poor absorption | Confirmed B12 deficiency | None | B12 and MMA levels q3-6mo until stable | - | ROUTINE | ROUTINE | - |
+| Immunosuppression (Sjogren's) | Various | Sjogren's-associated SFN with systemic disease activity | Per rheumatology :: Various :: per protocol :: Hydroxychloroquine, methotrexate, rituximab; coordinate with rheumatology | Rheumatology co-management | Per specific agent | Per specific agent | - | ROUTINE | ROUTINE | - |
+| Alpha-lipoic acid | PO | Antioxidant; some evidence in painful neuropathy; European guidelines | 600 mg :: PO :: daily :: 600 mg PO daily; may take 3-6 months for effect; limited evidence | None | GI upset | May enhance hypoglycemia in diabetics | - | - | ROUTINE | - |
 
 ---
 
@@ -330,6 +333,16 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized lab tables: reordered columns to `Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding`
+- Added CPT codes to all lab tests (1A: 11 rows, 1B: 12 rows, 1C: 12 rows)
+- Standardized imaging tables: reordered columns to `Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications`
+- Added CPT codes to all imaging studies (2A: 2 rows, 2B: 7 rows, 2C: 6 rows)
+- Fixed structured dosing first fields across all treatment sections (3A-3E): starting dose only in first field
+- Renamed CLINICAL SYNONYMS to SYNONYMS
+- Added VERSION/CREATED/REVISED header block
+- Moved SYNONYMS before SCOPE in header
 
 **v1.0 (January 27, 2026)**
 - Initial template creation

@@ -1,7 +1,7 @@
 ---
 title: "Tension-Type Headache"
 description: "Clinical decision support for tension-type headache diagnosis and management across care settings"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD"
 status: draft
 tags:
@@ -22,8 +22,13 @@ tags:
 # Tension-Type Headache
 
 **DIAGNOSIS:** Tension-Type Headache
-**ICD-10:** G44.209 (Tension-type headache, unspecified, not intractable)
+**ICD-10:** G44.209 (Tension-type headache, unspecified, not intractable); G44.219 (Episodic tension-type headache, not intractable); G44.221 (Chronic tension-type headache, not intractable)
+**SYNONYMS:** TTH; Tension headache; Muscle contraction headache; Stress headache; Chronic tension-type headache; Episodic tension-type headache
 **SCOPE:** Episodic and chronic tension-type headache diagnosis, acute treatment, and preventive therapy. Excludes secondary headaches, medication overuse headache (separate protocol), and trigeminal autonomic cephalalgias.
+
+**VERSION:** 1.1
+**CREATED:** January 27, 2026
+**REVISED:** January 30, 2026
 
 **STATUS:** Draft - Pending Review
 
@@ -41,28 +46,28 @@ tags:
 
 ### 1A. Essential/Core Labs
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CBC | Rule out anemia or infection as headache trigger | Normal | STAT | ROUTINE | ROUTINE | - |
-| BMP | Electrolyte abnormalities can trigger headaches | Normal | STAT | ROUTINE | ROUTINE | - |
-| TSH | Hypothyroidism associated with chronic headache | Normal (0.4-4.0 mIU/L) | - | ROUTINE | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CBC (85025) | STAT | ROUTINE | ROUTINE | - | Rule out anemia or infection as headache trigger | Normal |
+| BMP (80048) | STAT | ROUTINE | ROUTINE | - | Electrolyte abnormalities can trigger headaches | Normal |
+| TSH (84443) | - | ROUTINE | ROUTINE | - | Hypothyroidism associated with chronic headache | Normal (0.4-4.0 mIU/L) |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| ESR, CRP | Rule out giant cell arteritis if age >50 with new headache | Normal | URGENT | ROUTINE | ROUTINE | - |
-| Vitamin D level | Deficiency associated with chronic pain and headache | >30 ng/mL | - | ROUTINE | ROUTINE | - |
-| Ferritin | Iron deficiency associated with headache | >50 ng/mL | - | ROUTINE | ROUTINE | - |
-| Magnesium (RBC) | Low magnesium linked to headache disorders | >4.2 mg/dL | - | ROUTINE | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| ESR, CRP (85652/86140) | URGENT | ROUTINE | ROUTINE | - | Rule out giant cell arteritis if age >50 with new headache | Normal |
+| Vitamin D (82306) | - | ROUTINE | ROUTINE | - | Deficiency associated with chronic pain and headache | >30 ng/mL |
+| Ferritin (82728) | - | ROUTINE | ROUTINE | - | Iron deficiency associated with headache | >50 ng/mL |
+| Magnesium, RBC (83735) | - | ROUTINE | ROUTINE | - | Low magnesium linked to headache disorders | >4.2 mg/dL |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| ANA | Rule out autoimmune disorder in atypical presentations | Negative | - | EXT | EXT | - |
-| Sleep study | Evaluate for sleep apnea contributing to chronic headache | AHI <5 | - | - | EXT | - |
-| Lyme serology | Consider in endemic areas with refractory symptoms | Negative | - | EXT | EXT | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| ANA (86038) | - | EXT | EXT | - | Rule out autoimmune disorder in atypical presentations | Negative |
+| Sleep study (95811) | - | - | EXT | - | Evaluate for sleep apnea contributing to chronic headache | AHI <5 |
+| Lyme serology (86618) | - | EXT | EXT | - | Consider in endemic areas with refractory symptoms | Negative |
 
 ---
 
@@ -70,25 +75,25 @@ tags:
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain without contrast | Only if red flags present (see SNNOOP10 below) | Normal | MRI-incompatible devices | URGENT | ROUTINE | ROUTINE | - |
-| CT Head non-contrast | Acute severe headache or new neurological deficits | No hemorrhage, mass, or hydrocephalus | Pregnancy (relative) | STAT | STAT | - | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain without contrast (70551) | URGENT | ROUTINE | ROUTINE | - | Only if red flags present (see SNNOOP10 below) | Normal | MRI-incompatible devices |
+| CT Head non-contrast (70450) | STAT | STAT | - | - | Acute severe headache or new neurological deficits | No hemorrhage, mass, or hydrocephalus | Pregnancy (relative) |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain with contrast | Atypical features, focal deficits, suspected secondary cause | No enhancement or mass lesion | Gadolinium allergy, severe renal impairment | URGENT | ROUTINE | ROUTINE | - |
-| MRA Head/Neck | Suspected vascular etiology or cervical artery dissection | Patent vessels; no dissection | MRI contraindications | URGENT | ROUTINE | EXT | - |
-| C-spine X-ray or MRI | Cervicogenic component suspected | Normal alignment; no disc disease | None | - | ROUTINE | ROUTINE | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain with contrast (70553) | URGENT | ROUTINE | ROUTINE | - | Atypical features, focal deficits, suspected secondary cause | No enhancement or mass lesion | Gadolinium allergy, severe renal impairment |
+| MRA Head/Neck (70544/70547) | URGENT | ROUTINE | EXT | - | Suspected vascular etiology or cervical artery dissection | Patent vessels; no dissection | MRI contraindications |
+| C-spine X-ray or MRI (72050/72141) | - | ROUTINE | ROUTINE | - | Cervicogenic component suspected | Normal alignment; no disc disease | None |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRV Brain | Suspected cerebral venous thrombosis | Patent venous sinuses | MRI contraindications | URGENT | ROUTINE | EXT | - |
-| LP with opening pressure | Suspected idiopathic intracranial hypertension | Normal (10-20 cm H2O) | Coagulopathy; mass lesion | - | ROUTINE | EXT | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRV Brain (70546) | URGENT | ROUTINE | EXT | - | Suspected cerebral venous thrombosis | Patent venous sinuses | MRI contraindications |
+| LP with opening pressure (62270) | - | ROUTINE | EXT | - | Suspected idiopathic intracranial hypertension | Normal (10-20 cm H2O) | Coagulopathy; mass lesion |
 
 ---
 
@@ -127,41 +132,41 @@ Same as above but occurring ≥15 days/month on average for >3 months
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Ketorolac | IV/IM | Severe acute TTH in ED; NSAID-responsive headache | 30 mg IV; 15 mg IV :: IV :: :: 30 mg IV x1 (15 mg if >65y, renal impairment, or <50 kg); do not exceed 5 days total NSAIDs | Renal impairment; GI bleed history; aspirin allergy; third trimester pregnancy | Renal function if repeated dosing | STAT | URGENT | - | - |
-| Metoclopramide | IV | Acute headache with nausea; has anti-headache properties | 10 mg IV :: IV :: :: 10 mg IV over 15 min; pretreat with diphenhydramine 25 mg to prevent akathisia | Parkinson's disease; tardive dyskinesia history; bowel obstruction | Akathisia, dystonic reaction | URGENT | URGENT | - | - |
-| Diphenhydramine | IV | Adjunct to prevent akathisia from dopamine antagonists | 25 mg IV :: IV :: :: 25 mg IV prior to metoclopramide | Narrow-angle glaucoma; urinary retention | Sedation | URGENT | URGENT | - | - |
+| Ketorolac | IV/IM | Severe acute TTH in ED; NSAID-responsive headache | 30 mg :: IV :: x1 :: 30 mg IV x1 (15 mg if >65y, renal impairment, or <50 kg); do not exceed 5 days total NSAIDs | Renal impairment; GI bleed history; aspirin allergy; third trimester pregnancy | Renal function if repeated dosing | STAT | URGENT | - | - |
+| Metoclopramide | IV | Acute headache with nausea; has anti-headache properties | 10 mg :: IV :: x1 :: 10 mg IV over 15 min; pretreat with diphenhydramine 25 mg to prevent akathisia | Parkinson's disease; tardive dyskinesia history; bowel obstruction | Akathisia, dystonic reaction | URGENT | URGENT | - | - |
+| Diphenhydramine | IV | Adjunct to prevent akathisia from dopamine antagonists | 25 mg :: IV :: x1 :: 25 mg IV prior to metoclopramide | Narrow-angle glaucoma; urinary retention | Sedation | URGENT | URGENT | - | - |
 
 ### 3B. Symptomatic Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Ibuprofen | PO | First-line acute treatment for episodic TTH | 400 mg PO; 600 mg PO; 800 mg PO :: PO :: :: 400-800 mg PO at onset; may repeat q6-8h; max 2400 mg/day; limit to <10 days/month | Renal impairment; GI bleed history; aspirin allergy; third trimester | GI symptoms; renal function if prolonged use | URGENT | ROUTINE | ROUTINE | - |
-| Naproxen | PO | First-line acute treatment; longer duration than ibuprofen | 500 mg PO; 550 mg PO :: PO :: :: 500-550 mg PO at onset; may repeat 250 mg in 12 hr; max 1250 mg/day; limit to <10 days/month | Renal impairment; GI bleed history; aspirin allergy; third trimester | GI symptoms; renal function if prolonged use | URGENT | ROUTINE | ROUTINE | - |
-| Acetaminophen | PO | First-line if NSAID contraindicated; mild-moderate TTH | 1000 mg PO :: PO :: :: 1000 mg PO at onset; may repeat q6h; max 3000 mg/day (2000 mg if liver disease); limit to <10 days/month | Severe hepatic impairment; avoid if >3 alcoholic drinks/day | LFTs if chronic use; total daily dose from all sources | URGENT | ROUTINE | ROUTINE | - |
-| Aspirin | PO | First-line acute treatment; anti-inflammatory | 650 mg PO; 1000 mg PO :: PO :: :: 650-1000 mg PO at onset; max 4000 mg/day; limit to <10 days/month | Bleeding disorders; GI ulcer; aspirin allergy; children/teens (Reye syndrome); third trimester | GI symptoms; bleeding | URGENT | ROUTINE | ROUTINE | - |
-| Caffeine/Analgesic combination | PO | Enhanced efficacy with caffeine adjunct | 2 tablets PO :: PO :: :: Acetaminophen 250 mg/aspirin 250 mg/caffeine 65 mg: 2 tablets at onset; max 2 doses/24hr | Aspirin or acetaminophen contraindications | Limit use to prevent caffeine dependence and MOH | - | ROUTINE | ROUTINE | - |
+| Ibuprofen | PO | First-line acute treatment for episodic TTH | 400 mg :: PO :: PRN :: 400-800 mg PO at onset; may repeat q6-8h; max 2400 mg/day; limit to <10 days/month | Renal impairment; GI bleed history; aspirin allergy; third trimester | GI symptoms; renal function if prolonged use | URGENT | ROUTINE | ROUTINE | - |
+| Naproxen | PO | First-line acute treatment; longer duration than ibuprofen | 500 mg :: PO :: PRN :: 500-550 mg PO at onset; may repeat 250 mg in 12 hr; max 1250 mg/day; limit to <10 days/month | Renal impairment; GI bleed history; aspirin allergy; third trimester | GI symptoms; renal function if prolonged use | URGENT | ROUTINE | ROUTINE | - |
+| Acetaminophen | PO | First-line if NSAID contraindicated; mild-moderate TTH | 1000 mg :: PO :: PRN :: 1000 mg PO at onset; may repeat q6h; max 3000 mg/day (2000 mg if liver disease); limit to <10 days/month | Severe hepatic impairment; avoid if >3 alcoholic drinks/day | LFTs if chronic use; total daily dose from all sources | URGENT | ROUTINE | ROUTINE | - |
+| Aspirin | PO | First-line acute treatment; anti-inflammatory | 650 mg :: PO :: PRN :: 650-1000 mg PO at onset; max 4000 mg/day; limit to <10 days/month | Bleeding disorders; GI ulcer; aspirin allergy; children/teens (Reye syndrome); third trimester | GI symptoms; bleeding | URGENT | ROUTINE | ROUTINE | - |
+| Caffeine/Analgesic combination | PO | Enhanced efficacy with caffeine adjunct | 2 tablets :: PO :: PRN :: Acetaminophen 250 mg/aspirin 250 mg/caffeine 65 mg: 2 tablets at onset; max 2 doses/24hr | Aspirin or acetaminophen contraindications | Limit use to prevent caffeine dependence and MOH | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Second-line/Refractory
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Trigger point injection | IM | Pericranial muscle tenderness; refractory to oral therapy | 1-2 mL 1% lidocaine :: IM :: :: Inject 1-2 mL 1% lidocaine into tender points in trapezius, temporalis, or cervical paraspinals; may repeat q2-4wk | Local anesthetic allergy; infection at site | Local bruising; vasovagal response | - | EXT | ROUTINE | - |
-| Greater occipital nerve block | SC | Occipital-predominant pain; refractory cases | 2-3 mL 2% lidocaine :: SC :: :: 2-3 mL 2% lidocaine with or without 40 mg triamcinolone at greater occipital nerve bilaterally | Local anesthetic allergy; infection at site | Immediate pain relief; monitor for vasovagal | - | EXT | ROUTINE | - |
-| Physical therapy | N/A | Musculoskeletal dysfunction; postural abnormalities | N/A :: N/A :: :: 1-2 sessions/week for 6-8 weeks focusing on cervical/shoulder mobility, posture, and relaxation techniques | None | Symptom improvement over 6-8 weeks | - | ROUTINE | ROUTINE | - |
-| Biofeedback/Relaxation therapy | N/A | Stress-related TTH; patient preference for non-pharmacologic | N/A :: N/A :: :: Weekly sessions for 8-12 weeks; EMG biofeedback targeting frontalis/temporalis; may combine with CBT | None | Symptom diary; headache frequency reduction | - | - | ROUTINE | - |
-| Cognitive behavioral therapy (CBT) | N/A | Stress, anxiety, or depression contributing to headache | N/A :: N/A :: :: Weekly sessions for 8-12 weeks; focus on pain coping, stress management, and cognitive restructuring | None | Symptom diary; validated headache disability measures | - | - | ROUTINE | - |
+| Trigger point injection | IM | Pericranial muscle tenderness; refractory to oral therapy | 1-2 mL :: IM :: q2-4wk :: Inject 1-2 mL 1% lidocaine into tender points in trapezius, temporalis, or cervical paraspinals; may repeat q2-4wk | Local anesthetic allergy; infection at site | Local bruising; vasovagal response | - | EXT | ROUTINE | - |
+| Greater occipital nerve block | SC | Occipital-predominant pain; refractory cases | 2-3 mL :: SC :: PRN :: 2-3 mL 2% lidocaine with or without 40 mg triamcinolone at greater occipital nerve bilaterally | Local anesthetic allergy; infection at site | Immediate pain relief; monitor for vasovagal | - | EXT | ROUTINE | - |
+| Physical therapy | N/A | Musculoskeletal dysfunction; postural abnormalities | N/A :: N/A :: N/A :: 1-2 sessions/week for 6-8 weeks focusing on cervical/shoulder mobility, posture, and relaxation techniques | None | Symptom improvement over 6-8 weeks | - | ROUTINE | ROUTINE | - |
+| Biofeedback/Relaxation therapy | N/A | Stress-related TTH; patient preference for non-pharmacologic | N/A :: N/A :: N/A :: Weekly sessions for 8-12 weeks; EMG biofeedback targeting frontalis/temporalis; may combine with CBT | None | Symptom diary; headache frequency reduction | - | - | ROUTINE | - |
+| Cognitive behavioral therapy (CBT) | N/A | Stress, anxiety, or depression contributing to headache | N/A :: N/A :: N/A :: Weekly sessions for 8-12 weeks; focus on pain coping, stress management, and cognitive restructuring | None | Symptom diary; validated headache disability measures | - | - | ROUTINE | - |
 
 ### 3D. Disease-Modifying or Chronic Therapies (Preventive Medications)
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Amitriptyline | PO | First-line prevention for chronic TTH; ≥15 days/month | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10 mg qHS; titrate by 10-25 mg every 1-2 weeks; target 25-75 mg qHS; max 150 mg qHS | ECG if age >50 or cardiac history | Cardiac conduction abnormality (QTc >450 ms); recent MI; narrow-angle glaucoma; urinary retention; concurrent MAOIs | Sedation, dry mouth, weight gain, constipation; ECG if dose >100 mg/day | - | ROUTINE | ROUTINE | - |
-| Nortriptyline | PO | Prevention if amitriptyline not tolerated (less sedating); chronic TTH | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10 mg qHS; titrate by 10-25 mg every 1-2 weeks; target 25-75 mg qHS; max 150 mg qHS | ECG if age >50 or cardiac history | Cardiac conduction abnormality (QTc >450 ms); recent MI; narrow-angle glaucoma; urinary retention; concurrent MAOIs | Sedation (less than amitriptyline), dry mouth, weight gain, constipation; ECG if dose >100 mg/day | - | ROUTINE | ROUTINE | - |
-| Venlafaxine XR | PO | Prevention; comorbid depression or anxiety; TCA intolerant | 37.5 mg daily; 75 mg daily; 150 mg daily :: PO :: :: Start 37.5 mg daily; increase by 37.5-75 mg every 1 week; target 75-150 mg daily | None | Uncontrolled hypertension; concurrent MAOIs; abrupt discontinuation (taper required) | Blood pressure at higher doses (>150 mg); serotonin syndrome signs | - | ROUTINE | ROUTINE | - |
-| Mirtazapine | PO | Prevention; comorbid insomnia, depression, or poor appetite | 7.5 mg qHS; 15 mg qHS; 30 mg qHS :: PO :: :: Start 7.5-15 mg qHS; may increase to 30 mg qHS; more sedating at lower doses | None | Concurrent MAOIs; severe hepatic impairment | Sedation, increased appetite, weight gain | - | ROUTINE | ROUTINE | - |
-| Tizanidine | PO | Prevention; prominent pericranial muscle tension | 2 mg qHS; 4 mg qHS; 2 mg TID; 4 mg TID :: PO :: :: Start 2 mg qHS; may increase by 2-4 mg every 3-7 days; max 36 mg/day in 3 divided doses | LFTs at baseline | Concurrent ciprofloxacin or fluvoxamine (CYP1A2 inhibitors); hepatic impairment | LFTs monthly for first 6 months then periodically; sedation, hypotension, dry mouth | - | ROUTINE | ROUTINE | - |
-| Topiramate | PO | Prevention; comorbid migraine or obesity | 25 mg qHS; 50 mg BID; 75 mg BID; 100 mg BID :: PO :: :: Start 25 mg qHS; increase by 25 mg/week; target 50-100 mg BID | None | Narrow-angle glaucoma; kidney stones; pregnancy (teratogen); metabolic acidosis | Cognitive effects (word-finding), paresthesias, weight loss, kidney stones, bicarbonate | - | ROUTINE | ROUTINE | - |
-| Gabapentin | PO | Prevention; comorbid neuropathic pain or anxiety | 300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg every 3-5 days; target 900-1800 mg/day in 3 divided doses | None | Severe renal impairment (dose adjust for CrCl) | Sedation, dizziness, peripheral edema | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | PO | First-line prevention for chronic TTH; ≥15 days/month | 10 mg :: PO :: qHS :: Start 10 mg qHS; titrate by 10-25 mg every 1-2 weeks; target 25-75 mg qHS; max 150 mg qHS | ECG if age >50 or cardiac history | Cardiac conduction abnormality (QTc >450 ms); recent MI; narrow-angle glaucoma; urinary retention; concurrent MAOIs | Sedation, dry mouth, weight gain, constipation; ECG if dose >100 mg/day | - | ROUTINE | ROUTINE | - |
+| Nortriptyline | PO | Prevention if amitriptyline not tolerated (less sedating); chronic TTH | 10 mg :: PO :: qHS :: Start 10 mg qHS; titrate by 10-25 mg every 1-2 weeks; target 25-75 mg qHS; max 150 mg qHS | ECG if age >50 or cardiac history | Cardiac conduction abnormality (QTc >450 ms); recent MI; narrow-angle glaucoma; urinary retention; concurrent MAOIs | Sedation (less than amitriptyline), dry mouth, weight gain, constipation; ECG if dose >100 mg/day | - | ROUTINE | ROUTINE | - |
+| Venlafaxine XR | PO | Prevention; comorbid depression or anxiety; TCA intolerant | 37.5 mg :: PO :: daily :: Start 37.5 mg daily; increase by 37.5-75 mg every 1 week; target 75-150 mg daily | None | Uncontrolled hypertension; concurrent MAOIs; abrupt discontinuation (taper required) | Blood pressure at higher doses (>150 mg); serotonin syndrome signs | - | ROUTINE | ROUTINE | - |
+| Mirtazapine | PO | Prevention; comorbid insomnia, depression, or poor appetite | 7.5 mg :: PO :: qHS :: Start 7.5-15 mg qHS; may increase to 30 mg qHS; more sedating at lower doses | None | Concurrent MAOIs; severe hepatic impairment | Sedation, increased appetite, weight gain | - | ROUTINE | ROUTINE | - |
+| Tizanidine | PO | Prevention; prominent pericranial muscle tension | 2 mg :: PO :: qHS :: Start 2 mg qHS; may increase by 2-4 mg every 3-7 days; max 36 mg/day in 3 divided doses | LFTs at baseline | Concurrent ciprofloxacin or fluvoxamine (CYP1A2 inhibitors); hepatic impairment | LFTs monthly for first 6 months then periodically; sedation, hypotension, dry mouth | - | ROUTINE | ROUTINE | - |
+| Topiramate | PO | Prevention; comorbid migraine or obesity | 25 mg :: PO :: qHS :: Start 25 mg qHS; increase by 25 mg/week; target 50-100 mg BID | None | Narrow-angle glaucoma; kidney stones; pregnancy (teratogen); metabolic acidosis | Cognitive effects (word-finding), paresthesias, weight loss, kidney stones, bicarbonate | - | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | Prevention; comorbid neuropathic pain or anxiety | 300 mg :: PO :: qHS :: Start 300 mg qHS; titrate by 300 mg every 3-5 days; target 900-1800 mg/day in 3 divided doses | None | Severe renal impairment (dose adjust for CrCl) | Sedation, dizziness, peripheral edema | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -269,7 +274,7 @@ Limit acute analgesic use to <10 days/month for combination analgesics, opioids,
 | Simple analgesics (acetaminophen, NSAIDs, aspirin) for acute TTH | Class I, Level A | [Stephens et al. Cochrane 2016](https://pubmed.ncbi.nlm.nih.gov/27306653/) |
 | Tricyclic antidepressants for chronic TTH prevention | Class I, Level A | [Jackson et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28179565/) |
 | Biofeedback and relaxation training reduce headache frequency | Class II, Level B | [Nestoriuc et al. Pain 2008](https://pubmed.ncbi.nlm.nih.gov/18455618/) |
-| Physical therapy for tension-type headache | Class II, Level B | [Espí-López et al. Phys Ther 2014](https://pubmed.ncbi.nlm.nih.gov/24903113/) |
+| Physical therapy for tension-type headache | Class II, Level B | [Espi-Lopez et al. Phys Ther 2014](https://pubmed.ncbi.nlm.nih.gov/24903113/) |
 | Cognitive behavioral therapy reduces headache disability | Class I, Level B | [Holroyd et al. JAMA 2001](https://pubmed.ncbi.nlm.nih.gov/11565519/) |
 | Medication overuse headache prevalence and management | Expert Consensus | [Diener et al. Nat Rev Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27615420/) |
 | Ibuprofen 400-800 mg effective for acute TTH | Class I, Level A | [Steiner et al. Headache 2003](https://pubmed.ncbi.nlm.nih.gov/12656706/) |
@@ -282,6 +287,16 @@ Limit acute analgesic use to <10 days/month for combination analgesics, opioids,
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized lab tables: reordered columns to `Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding`
+- Added CPT codes to all lab tests (1A: 3 rows, 1B: 4 rows, 1C: 3 rows)
+- Standardized imaging tables: reordered columns to `Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications`
+- Added CPT codes to all imaging studies (2A: 2 rows, 2B: 3 rows, 2C: 2 rows)
+- Fixed structured dosing first fields across all treatment sections (3A-3D): starting dose only in first field
+- Added ICD-10 codes G44.219 and G44.221
+- Added SYNONYMS line
+- Added VERSION/CREATED/REVISED header block
 
 **v1.0 (January 27, 2026)**
 - Initial template creation

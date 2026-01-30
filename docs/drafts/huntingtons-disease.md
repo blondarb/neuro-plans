@@ -1,7 +1,7 @@
 ---
 title: "Huntington's Disease"
 description: "Clinical decision support for Huntington's disease diagnosis, chorea management, psychiatric care, and supportive treatment"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD"
 status: draft
 tags:
@@ -23,9 +23,13 @@ tags:
 # Huntington's Disease
 
 **DIAGNOSIS:** Huntington's Disease
-**ICD-10:** G10 (Huntington disease)
+**ICD-10:** G10 (Huntington disease); F02.80 (Dementia in HD without behavioral disturbance); F02.81 (Dementia in HD with behavioral disturbance)
+**SYNONYMS:** Huntington's chorea, Huntington chorea, HD, hereditary chorea, chronic progressive chorea, Huntington disease, HTT-related disorder
 **SCOPE:** Diagnosis confirmation via genetic testing, chorea management, psychiatric symptom treatment, cognitive decline management, dysphagia assessment, genetic counseling, and end-of-life planning. Focuses primarily on outpatient management. Excludes Huntington disease-like syndromes (HDL1-4) and other chorea etiologies.
 
+**VERSION:** 1.1
+**CREATED:** January 27, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -42,34 +46,34 @@ tags:
 
 ### 1A. Essential/Core Labs
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Huntington gene test (HTT CAG repeat) | Definitive diagnosis; CAG repeat expansion | ≥36 CAG repeats diagnostic (40+ fully penetrant) | - | ROUTINE | ROUTINE | - |
-| CBC | Baseline; anemia contributes to fatigue; infection screen | Normal | STAT | ROUTINE | ROUTINE | - |
-| BMP | Electrolytes; renal function for medication dosing | Normal | STAT | ROUTINE | ROUTINE | - |
-| Hepatic panel (LFTs) | Baseline before tetrabenazine/deutetrabenazine; valproate if used | Normal | - | ROUTINE | ROUTINE | - |
-| TSH | Hypothyroidism can mimic apathy and cognitive slowing | Normal | - | ROUTINE | ROUTINE | - |
-| Vitamin B12 | Deficiency can worsen cognitive and psychiatric symptoms | >300 pg/mL | - | ROUTINE | ROUTINE | - |
-| Vitamin D, 25-hydroxy | Deficiency common; contributes to falls and bone health | >30 ng/mL | - | ROUTINE | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Huntington gene test (HTT CAG repeat) (CPT 81401) | - | ROUTINE | ROUTINE | - | Definitive diagnosis; CAG repeat expansion | ≥36 CAG repeats diagnostic (40+ fully penetrant) |
+| CBC (CPT 85025) | STAT | ROUTINE | ROUTINE | - | Baseline; anemia contributes to fatigue; infection screen | Normal |
+| BMP (CPT 80048) | STAT | ROUTINE | ROUTINE | - | Electrolytes; renal function for medication dosing | Normal |
+| Hepatic panel (LFTs) (CPT 80076) | - | ROUTINE | ROUTINE | - | Baseline before tetrabenazine/deutetrabenazine; valproate if used | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Hypothyroidism can mimic apathy and cognitive slowing | Normal |
+| Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | Deficiency can worsen cognitive and psychiatric symptoms | >300 pg/mL |
+| Vitamin D, 25-hydroxy (CPT 82306) | - | ROUTINE | ROUTINE | - | Deficiency common; contributes to falls and bone health | >30 ng/mL |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Iron studies, ferritin | Neurodegeneration with brain iron accumulation if HD-negative | Normal | - | ROUTINE | ROUTINE | - |
-| Ceruloplasmin, serum copper | Wilson's disease if younger onset, HD gene-negative | Normal | - | EXT | ROUTINE | - |
-| ACTN3 gene test | Research; may modify age of onset | Research use | - | - | EXT | - |
-| Acanthocyte screen (peripheral smear) | Chorea-acanthocytosis if HD gene-negative | No acanthocytes | - | EXT | EXT | - |
-| Lipid panel | Cardiovascular risk; weight loss monitoring | Normal | - | ROUTINE | ROUTINE | - |
-| Prealbumin/albumin | Nutritional status assessment in advanced disease | Normal | - | ROUTINE | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Iron studies (CPT 83540), ferritin (CPT 82728) | - | ROUTINE | ROUTINE | - | Neurodegeneration with brain iron accumulation if HD-negative | Normal |
+| Ceruloplasmin (CPT 82390), serum copper (CPT 82525) | - | EXT | ROUTINE | - | Wilson's disease if younger onset, HD gene-negative | Normal |
+| ACTN3 gene test (CPT 81479) | - | - | EXT | - | Research; may modify age of onset | Research use |
+| Acanthocyte screen (peripheral smear) (CPT 85060) | - | EXT | EXT | - | Chorea-acanthocytosis if HD gene-negative | No acanthocytes |
+| Lipid panel (CPT 80061) | - | ROUTINE | ROUTINE | - | Cardiovascular risk; weight loss monitoring | Normal |
+| Prealbumin (CPT 84134), albumin (CPT 82040) | - | ROUTINE | ROUTINE | - | Nutritional status assessment in advanced disease | Normal |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Genetic testing for HDL syndromes (PRNP, JPH3, TBP, ATN1) | HD-like phenotype with negative HTT test | Identifies HD-like syndrome | - | - | EXT | - |
-| CSF biomarkers (neurofilament light chain) | Disease progression monitoring; research | Elevated in active disease | - | - | EXT | - |
-| Kynurenine pathway metabolites | Research; therapeutic target assessment | Research use | - | - | EXT | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Genetic testing for HDL syndromes (PRNP, JPH3, TBP, ATN1) (CPT 81479) | - | - | EXT | - | HD-like phenotype with negative HTT test | Identifies HD-like syndrome |
+| CSF biomarkers (neurofilament light chain) (CPT 83519) | - | - | EXT | - | Disease progression monitoring; research | Elevated in active disease |
+| Kynurenine pathway metabolites (CPT 82542) | - | - | EXT | - | Research; therapeutic target assessment | Research use |
 
 ---
 
@@ -77,26 +81,26 @@ tags:
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain without contrast | At diagnosis | Caudate atrophy; lateral ventricle enlargement ("boxcar" ventricles) | MRI-incompatible devices | URGENT | ROUTINE | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain without contrast (CPT 70551) | URGENT | ROUTINE | ROUTINE | - | At diagnosis | Caudate atrophy; lateral ventricle enlargement ("boxcar" ventricles) | MRI-incompatible devices |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain volumetric | Baseline and annually for progression | Quantify caudate and striatal volume loss | MRI contraindications | - | - | ROUTINE | - |
-| Swallowing evaluation (VFSS or FEES) | At diagnosis and with dysphagia symptoms | Identify aspiration risk; guide diet modification | None | - | ROUTINE | ROUTINE | - |
-| ECG | Baseline before tetrabenazine/deutetrabenazine | QTc <450 ms | None | - | ROUTINE | ROUTINE | - |
-| Polysomnography | Sleep disturbance evaluation | Rule out sleep apnea; assess sleep architecture | None | - | - | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain volumetric (CPT 70553) | - | - | ROUTINE | - | Baseline and annually for progression | Quantify caudate and striatal volume loss | MRI contraindications |
+| Swallowing evaluation (VFSS or FEES) (CPT 74230/92612) | - | ROUTINE | ROUTINE | - | At diagnosis and with dysphagia symptoms | Identify aspiration risk; guide diet modification | None |
+| ECG (CPT 93000) | - | ROUTINE | ROUTINE | - | Baseline before tetrabenazine/deutetrabenazine | QTc <450 ms | None |
+| Polysomnography (CPT 95810) | - | - | ROUTINE | - | Sleep disturbance evaluation | Rule out sleep apnea; assess sleep architecture | None |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| PET imaging (FDG or specific tracers) | Research; atypical presentation | Striatal hypometabolism | None | - | - | EXT | - |
-| Neuropsychological testing battery | At diagnosis and annually | Baseline cognitive profile; monitor decline | None | - | - | ROUTINE | - |
-| Genetic modifier testing (research) | Prognosis; clinical trials | Identifies modifiers of age of onset | None | - | - | EXT | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| PET imaging (FDG or specific tracers) (CPT 78816) | - | - | EXT | - | Research; atypical presentation | Striatal hypometabolism | None |
+| Neuropsychological testing battery (CPT 96132) | - | - | ROUTINE | - | At diagnosis and annually | Baseline cognitive profile; monitor decline | None |
+| Genetic modifier testing (research) (CPT 81479) | - | - | EXT | - | Prognosis; clinical trials | Identifies modifiers of age of onset | None |
 
 ---
 
@@ -106,55 +110,55 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Lorazepam | IV/PO | Severe chorea causing injury or exhaustion | 0.5 mg IV; 1 mg IV; 2 mg PO :: IV/PO :: :: 0.5-2 mg IV/PO q4-6h PRN; short-term use only | Respiratory depression; acute narrow-angle glaucoma | Respiratory status, sedation | STAT | STAT | - | STAT |
-| Haloperidol | IV/IM | Severe psychosis with agitation; acute behavioral emergency | 2 mg IM; 5 mg IM :: IM :: :: 2-5 mg IM; may repeat q4-6h; max 20 mg/day; transition to oral | QTc prolongation; history of NMS; worsens dystonia | ECG, EPS, sedation | STAT | STAT | - | STAT |
-| Olanzapine | IM/PO | Acute agitation with psychosis; alternative to haloperidol | 5 mg IM; 10 mg IM :: IM :: :: 5-10 mg IM; may repeat in 2 hours; max 30 mg/day | Concurrent benzodiazepines (caution); diabetes | Glucose, sedation, EPS | STAT | STAT | - | STAT |
-| IV fluids | IV | Dehydration from dysphagia or decreased oral intake | NS at 75-125 mL/hr :: IV :: :: Correct dehydration; transition to oral when safe | Fluid overload | I/O, electrolytes | STAT | STAT | - | STAT |
-| Thiamine | IV | Nutritional deficiency; altered mental status | 100 mg IV :: IV :: :: 100 mg IV daily x 3-5 days; then oral | None | None | STAT | STAT | - | STAT |
+| Lorazepam | IV/PO | Severe chorea causing injury or exhaustion | 0.5 mg :: IV/PO :: PRN :: 0.5-2 mg IV/PO q4-6h PRN; short-term use only | Respiratory depression; acute narrow-angle glaucoma | Respiratory status, sedation | STAT | STAT | - | STAT |
+| Haloperidol | IV/IM | Severe psychosis with agitation; acute behavioral emergency | 2 mg :: IM :: PRN :: 2-5 mg IM; may repeat q4-6h; max 20 mg/day; transition to oral | QTc prolongation; history of NMS; worsens dystonia | ECG, EPS, sedation | STAT | STAT | - | STAT |
+| Olanzapine | IM/PO | Acute agitation with psychosis; alternative to haloperidol | 5 mg :: IM :: PRN :: 5-10 mg IM; may repeat in 2 hours; max 30 mg/day | Concurrent benzodiazepines (caution); diabetes | Glucose, sedation, EPS | STAT | STAT | - | STAT |
+| IV fluids | IV | Dehydration from dysphagia or decreased oral intake | NS at 75 mL/hr :: IV :: continuous :: NS at 75-125 mL/hr; correct dehydration; transition to oral when safe | Fluid overload | I/O, electrolytes | STAT | STAT | - | STAT |
+| Thiamine | IV | Nutritional deficiency; altered mental status | 100 mg :: IV :: daily :: 100 mg IV daily x 3-5 days; then oral | None | None | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments - Chorea
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Tetrabenazine (Xenazine) | PO | FDA-approved for HD chorea; first-line | 12.5 mg daily; 12.5 mg BID; 12.5 mg TID; 25 mg TID; 37.5 mg TID :: PO :: :: Start 12.5 mg daily; increase by 12.5 mg q1wk; max 100 mg/day (25 mg per dose); CYP2D6 testing recommended | Active suicidality; untreated depression; concurrent MAOIs; hepatic impairment | Depression (PHQ-9 monthly), akathisia, parkinsonism, QTc | - | ROUTINE | ROUTINE | - |
-| Deutetrabenazine (Austedo) | PO | FDA-approved for HD chorea; better tolerability than tetrabenazine | 6 mg daily; 6 mg BID; 9 mg BID; 12 mg BID :: PO :: :: Start 6 mg daily; increase by 6 mg/wk; max 48 mg/day (24 mg per dose) | Same as tetrabenazine | Depression, akathisia, parkinsonism, QTc | - | ROUTINE | ROUTINE | - |
-| Valbenazine (Ingrezza) | PO | Off-label for HD chorea; once daily dosing | 40 mg daily; 80 mg daily :: PO :: :: Start 40 mg daily; may increase to 80 mg after 1 week | Severe hepatic impairment; concurrent MAOIs; congenital long QT | Depression, akathisia, QTc prolongation | - | ROUTINE | ROUTINE | - |
-| Risperidone | PO | Chorea with psychosis; antipsychotic with motor benefit | 0.5 mg daily; 0.5 mg BID; 1 mg BID; 2 mg BID :: PO :: :: Start 0.5 mg daily; titrate by 0.5 mg q1wk; max 6 mg/day | QTc prolongation; history of NMS | EPS, metabolic panel, prolactin | - | ROUTINE | ROUTINE | - |
-| Olanzapine | PO | Chorea with weight loss; promotes weight gain | 2.5 mg daily; 5 mg daily; 10 mg daily :: PO :: :: Start 2.5-5 mg qHS; titrate to effect; typical 5-15 mg/day | Diabetes; significant metabolic risk | Weight, glucose, lipids | - | ROUTINE | ROUTINE | - |
-| Clonazepam | PO | Adjunct for chorea; also helps myoclonus and anxiety | 0.25 mg BID; 0.5 mg BID; 0.5 mg TID :: PO :: :: Start 0.25 mg BID; titrate slowly; max 4 mg/day | Severe respiratory disease; falls risk | Sedation, falls, cognitive effects | - | ROUTINE | ROUTINE | - |
-| Amantadine | PO | Mild chorea; may help fatigue | 100 mg BID; 100 mg TID :: PO :: :: Start 100 mg daily; titrate to 100 mg TID; max 400 mg/day | End-stage renal disease; seizure history | Livedo reticularis, hallucinations, edema | - | ROUTINE | ROUTINE | - |
+| Tetrabenazine (Xenazine) | PO | FDA-approved for HD chorea; first-line | 12.5 mg :: PO :: daily :: Start 12.5 mg daily; increase by 12.5 mg q1wk; max 100 mg/day (25 mg per dose); CYP2D6 testing recommended | Active suicidality; untreated depression; concurrent MAOIs; hepatic impairment | Depression (PHQ-9 monthly), akathisia, parkinsonism, QTc | - | ROUTINE | ROUTINE | - |
+| Deutetrabenazine (Austedo) | PO | FDA-approved for HD chorea; better tolerability than tetrabenazine | 6 mg :: PO :: daily :: Start 6 mg daily; increase by 6 mg/wk; max 48 mg/day (24 mg per dose) | Active suicidality; untreated depression; concurrent MAOIs; hepatic impairment | Depression (PHQ-9 monthly), akathisia, parkinsonism, QTc | - | ROUTINE | ROUTINE | - |
+| Valbenazine (Ingrezza) | PO | Off-label for HD chorea; once daily dosing | 40 mg :: PO :: daily :: Start 40 mg daily; may increase to 80 mg after 1 week | Severe hepatic impairment; concurrent MAOIs; congenital long QT | Depression, akathisia, QTc prolongation | - | ROUTINE | ROUTINE | - |
+| Risperidone | PO | Chorea with psychosis; antipsychotic with motor benefit | 0.5 mg :: PO :: daily :: Start 0.5 mg daily; titrate by 0.5 mg q1wk; max 6 mg/day | QTc prolongation; history of NMS | EPS, metabolic panel, prolactin | - | ROUTINE | ROUTINE | - |
+| Olanzapine | PO | Chorea with weight loss; promotes weight gain | 2.5 mg :: PO :: daily :: Start 2.5-5 mg qHS; titrate to effect; typical 5-15 mg/day | Diabetes; significant metabolic risk | Weight, glucose, lipids | - | ROUTINE | ROUTINE | - |
+| Clonazepam | PO | Adjunct for chorea; also helps myoclonus and anxiety | 0.25 mg :: PO :: BID :: Start 0.25 mg BID; titrate slowly; max 4 mg/day | Severe respiratory disease; falls risk | Sedation, falls, cognitive effects | - | ROUTINE | ROUTINE | - |
+| Amantadine | PO | Mild chorea; may help fatigue | 100 mg :: PO :: daily :: Start 100 mg daily; titrate to 100 mg TID; max 400 mg/day | End-stage renal disease; seizure history | Livedo reticularis, hallucinations, edema | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Symptomatic Treatments - Psychiatric
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Sertraline | PO | Depression; anxiety; irritability | 25 mg daily; 50 mg daily; 100 mg daily; 150 mg daily :: PO :: :: Start 25 mg daily; titrate by 25-50 mg q1-2wk; max 200 mg/day | MAOIs within 14 days | Suicidality, serotonin syndrome | - | ROUTINE | ROUTINE | - |
-| Citalopram | PO | Depression; anxiety; good tolerability | 10 mg daily; 20 mg daily :: PO :: :: Start 10 mg daily; max 20 mg/day due to QTc risk | QTc >500 ms; concurrent QT-prolonging drugs | QTc if risk factors | - | ROUTINE | ROUTINE | - |
-| Escitalopram | PO | Depression; anxiety; similar to citalopram | 5 mg daily; 10 mg daily; 20 mg daily :: PO :: :: Start 5-10 mg daily; max 20 mg/day | Same as citalopram | Same as citalopram | - | ROUTINE | ROUTINE | - |
-| Venlafaxine XR | PO | Depression with fatigue; dual mechanism | 37.5 mg daily; 75 mg daily; 150 mg daily; 225 mg daily :: PO :: :: Start 37.5 mg daily; titrate q1wk; max 225 mg/day | Uncontrolled hypertension | BP at higher doses | - | ROUTINE | ROUTINE | - |
-| Mirtazapine | PO | Depression with insomnia and weight loss; promotes appetite | 7.5 mg qHS; 15 mg qHS; 30 mg qHS :: PO :: :: Start 7.5-15 mg qHS; titrate q1-2wk; max 45 mg | None significant | Weight, sedation | - | ROUTINE | ROUTINE | - |
-| Quetiapine | PO | Psychosis; irritability; insomnia; less EPS than other antipsychotics | 25 mg qHS; 50 mg BID; 100 mg BID; 200 mg BID :: PO :: :: Start 25 mg qHS; titrate by 25-50 mg q3d; typical 150-400 mg/day | Uncontrolled diabetes | Glucose, lipids, QTc | - | ROUTINE | ROUTINE | - |
-| Aripiprazole | PO | Psychosis; irritability; weight-neutral | 2 mg daily; 5 mg daily; 10 mg daily; 15 mg daily :: PO :: :: Start 2-5 mg daily; titrate by 5 mg q1wk; max 30 mg/day | None significant | Akathisia, EPS | - | ROUTINE | ROUTINE | - |
-| Lamotrigine | PO | Mood stabilization; irritability | 25 mg daily; 50 mg daily; 100 mg daily; 200 mg daily :: PO :: :: Start 25 mg daily x 2wk; then 50 mg daily x 2wk; titrate by 50 mg q2wk; max 400 mg/day | History of severe rash with lamotrigine | Rash (SJS risk); slow titration mandatory | - | ROUTINE | ROUTINE | - |
-| Valproic acid | PO | Irritability; aggression; mood stabilization | 250 mg BID; 500 mg BID; 750 mg BID :: PO :: :: Start 250 mg BID; titrate to level 50-100 mcg/mL | Hepatic disease; pregnancy (teratogenic); mitochondrial disease | LFTs, ammonia, level, weight | - | ROUTINE | ROUTINE | - |
-| Carbamazepine | PO | Irritability; aggression; alternative mood stabilizer | 100 mg BID; 200 mg BID; 400 mg BID :: PO :: :: Start 100 mg BID; titrate by 200 mg/wk; target level 4-12 mcg/mL | AV block; blood dyscrasias; concurrent MAOIs | CBC, LFTs, level, HLA-B*1502 in Asians | - | ROUTINE | ROUTINE | - |
-| Buspirone | PO | Anxiety without sedation; adjunct for irritability | 5 mg TID; 10 mg TID; 15 mg TID :: PO :: :: Start 5 mg TID; titrate by 5 mg q2-3d; max 60 mg/day | Concurrent MAOIs | None significant | - | ROUTINE | ROUTINE | - |
+| Sertraline | PO | Depression; anxiety; irritability | 25 mg :: PO :: daily :: Start 25 mg daily; titrate by 25-50 mg q1-2wk; max 200 mg/day | MAOIs within 14 days | Suicidality, serotonin syndrome | - | ROUTINE | ROUTINE | - |
+| Citalopram | PO | Depression; anxiety; good tolerability | 10 mg :: PO :: daily :: Start 10 mg daily; max 20 mg/day due to QTc risk | QTc >500 ms; concurrent QT-prolonging drugs | QTc if risk factors | - | ROUTINE | ROUTINE | - |
+| Escitalopram | PO | Depression; anxiety; similar to citalopram | 5 mg :: PO :: daily :: Start 5-10 mg daily; max 20 mg/day | QTc >500 ms; concurrent QT-prolonging drugs | QTc if risk factors | - | ROUTINE | ROUTINE | - |
+| Venlafaxine XR | PO | Depression with fatigue; dual mechanism | 37.5 mg :: PO :: daily :: Start 37.5 mg daily; titrate q1wk; max 225 mg/day | Uncontrolled hypertension | BP at higher doses | - | ROUTINE | ROUTINE | - |
+| Mirtazapine | PO | Depression with insomnia and weight loss; promotes appetite | 7.5 mg :: PO :: qHS :: Start 7.5-15 mg qHS; titrate q1-2wk; max 45 mg | None significant | Weight, sedation | - | ROUTINE | ROUTINE | - |
+| Quetiapine | PO | Psychosis; irritability; insomnia; less EPS than other antipsychotics | 25 mg :: PO :: qHS :: Start 25 mg qHS; titrate by 25-50 mg q3d; typical 150-400 mg/day | Uncontrolled diabetes | Glucose, lipids, QTc | - | ROUTINE | ROUTINE | - |
+| Aripiprazole | PO | Psychosis; irritability; weight-neutral | 2 mg :: PO :: daily :: Start 2-5 mg daily; titrate by 5 mg q1wk; max 30 mg/day | None significant | Akathisia, EPS | - | ROUTINE | ROUTINE | - |
+| Lamotrigine | PO | Mood stabilization; irritability | 25 mg :: PO :: daily :: Start 25 mg daily x 2wk; then 50 mg daily x 2wk; titrate by 50 mg q2wk; max 400 mg/day | History of severe rash with lamotrigine | Rash (SJS risk); slow titration mandatory | - | ROUTINE | ROUTINE | - |
+| Valproic acid | PO | Irritability; aggression; mood stabilization | 250 mg :: PO :: BID :: Start 250 mg BID; titrate to level 50-100 mcg/mL | Hepatic disease; pregnancy (teratogenic); mitochondrial disease | LFTs, ammonia, level, weight | - | ROUTINE | ROUTINE | - |
+| Carbamazepine | PO | Irritability; aggression; alternative mood stabilizer | 100 mg :: PO :: BID :: Start 100 mg BID; titrate by 200 mg/wk; target level 4-12 mcg/mL | AV block; blood dyscrasias; concurrent MAOIs | CBC, LFTs, level, HLA-B*1502 in Asians | - | ROUTINE | ROUTINE | - |
+| Buspirone | PO | Anxiety without sedation; adjunct for irritability | 5 mg :: PO :: TID :: Start 5 mg TID; titrate by 5 mg q2-3d; max 60 mg/day | Concurrent MAOIs | None significant | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Symptomatic Treatments - Cognitive and Other
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Donepezil | PO | Cognitive impairment; limited evidence in HD | 5 mg qHS; 10 mg qHS :: PO :: :: Start 5 mg qHS; may increase to 10 mg after 4-6 weeks | GI bleeding; sick sinus syndrome | Nausea, bradycardia, diarrhea | - | ROUTINE | ROUTINE | - |
-| Rivastigmine | PO/Patch | Cognitive impairment; alternative to donepezil | 1.5 mg BID; 3 mg BID; 4.5 mg BID; 9.5 mg/24hr patch; 13.3 mg/24hr patch :: PO/Patch :: :: Start 1.5 mg BID or 4.6 mg patch; titrate monthly | Severe hepatic impairment | Nausea, weight loss | - | ROUTINE | ROUTINE | - |
-| Memantine | PO | Moderate-severe cognitive impairment; neuroprotective theory | 5 mg daily; 10 mg BID :: PO :: :: Start 5 mg daily; titrate by 5 mg/wk; target 10 mg BID | Severe renal impairment (dose adjust) | Confusion, constipation | - | ROUTINE | ROUTINE | - |
-| Modafinil | PO | Apathy; excessive daytime sleepiness | 100 mg AM; 200 mg AM :: PO :: :: Start 100 mg each morning; may increase to 200 mg; avoid afternoon dosing | Arrhythmias; severe anxiety | Insomnia, anxiety, BP | - | ROUTINE | ROUTINE | - |
-| Methylphenidate | PO | Apathy; bradyphrenia; fatigue | 5 mg BID; 10 mg BID; 20 mg BID :: PO :: :: Start 5 mg at breakfast and lunch; titrate by 5-10 mg q1wk; max 60 mg/day | Severe anxiety; psychosis; cardiac arrhythmia | HR, BP, appetite, insomnia | - | ROUTINE | ROUTINE | - |
-| Trazodone | PO | Insomnia; irritability; mild sedation | 25 mg qHS; 50 mg qHS; 100 mg qHS :: PO :: :: Start 25-50 mg qHS; titrate by 25-50 mg; max 200 mg for sleep | Concurrent MAOIs; priapism history | Orthostatic hypotension, priapism | - | ROUTINE | ROUTINE | - |
-| Melatonin | PO | Insomnia; circadian rhythm disturbance | 3 mg qHS; 6 mg qHS; 9 mg qHS :: PO :: :: Start 3 mg 30 min before bed; may increase to 9 mg | None | Generally well-tolerated | - | ROUTINE | ROUTINE | - |
-| Botulinum toxin (onabotulinumtoxinA) | IM | Focal dystonia; bruxism; sialorrhea | Variable per muscle :: IM :: :: Dose depends on target muscles; repeat q12 weeks | Infection at site; myasthenia gravis | Weakness, dysphagia | - | - | ROUTINE | - |
-| Glycopyrrolate | PO | Sialorrhea (drooling) | 1 mg BID; 1 mg TID; 2 mg TID :: PO :: :: Start 1 mg BID; titrate to effect; max 2 mg TID | Glaucoma; urinary retention; GI obstruction | Dry mouth, constipation, urinary retention | - | ROUTINE | ROUTINE | - |
-| Polyethylene glycol (MiraLAX) | PO | Constipation (common with reduced mobility and anticholinergics) | 17 g daily; 17 g BID :: PO :: :: 17 g in 8 oz liquid daily; may increase to BID | Bowel obstruction | Diarrhea if excessive | - | ROUTINE | ROUTINE | - |
-| High-calorie nutritional supplements | PO | Weight loss; increased metabolic demands | 1-3 cans daily :: PO :: :: 1-3 cans (Ensure Plus, Boost Plus) daily between meals | None | Weight, nutritional markers | - | ROUTINE | ROUTINE | - |
+| Donepezil | PO | Cognitive impairment; limited evidence in HD | 5 mg :: PO :: qHS :: Start 5 mg qHS; may increase to 10 mg after 4-6 weeks | GI bleeding; sick sinus syndrome | Nausea, bradycardia, diarrhea | - | ROUTINE | ROUTINE | - |
+| Rivastigmine | PO/Patch | Cognitive impairment; alternative to donepezil | 1.5 mg :: PO/Patch :: BID :: Start 1.5 mg BID or 4.6 mg patch; titrate monthly | Severe hepatic impairment | Nausea, weight loss | - | ROUTINE | ROUTINE | - |
+| Memantine | PO | Moderate-severe cognitive impairment; neuroprotective theory | 5 mg :: PO :: daily :: Start 5 mg daily; titrate by 5 mg/wk; target 10 mg BID | Severe renal impairment (dose adjust) | Confusion, constipation | - | ROUTINE | ROUTINE | - |
+| Modafinil | PO | Apathy; excessive daytime sleepiness | 100 mg :: PO :: AM :: Start 100 mg each morning; may increase to 200 mg; avoid afternoon dosing | Arrhythmias; severe anxiety | Insomnia, anxiety, BP | - | ROUTINE | ROUTINE | - |
+| Methylphenidate | PO | Apathy; bradyphrenia; fatigue | 5 mg :: PO :: BID :: Start 5 mg at breakfast and lunch; titrate by 5-10 mg q1wk; max 60 mg/day | Severe anxiety; psychosis; cardiac arrhythmia | HR, BP, appetite, insomnia | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Insomnia; irritability; mild sedation | 25 mg :: PO :: qHS :: Start 25-50 mg qHS; titrate by 25-50 mg; max 200 mg for sleep | Concurrent MAOIs; priapism history | Orthostatic hypotension, priapism | - | ROUTINE | ROUTINE | - |
+| Melatonin | PO | Insomnia; circadian rhythm disturbance | 3 mg :: PO :: qHS :: Start 3 mg 30 min before bed; may increase to 9 mg | None | Generally well-tolerated | - | ROUTINE | ROUTINE | - |
+| Botulinum toxin (onabotulinumtoxinA) | IM | Focal dystonia; bruxism; sialorrhea | Variable per muscle :: IM :: q12wk :: Dose depends on target muscles; repeat q12 weeks | Infection at site; myasthenia gravis | Weakness, dysphagia | - | - | ROUTINE | - |
+| Glycopyrrolate | PO | Sialorrhea (drooling) | 1 mg :: PO :: BID :: Start 1 mg BID; titrate to effect; max 2 mg TID | Glaucoma; urinary retention; GI obstruction | Dry mouth, constipation, urinary retention | - | ROUTINE | ROUTINE | - |
+| Polyethylene glycol (MiraLAX) | PO | Constipation (common with reduced mobility and anticholinergics) | 17 g :: PO :: daily :: 17 g in 8 oz liquid daily; may increase to BID | Bowel obstruction | Diarrhea if excessive | - | ROUTINE | ROUTINE | - |
+| High-calorie nutritional supplements | PO | Weight loss; increased metabolic demands | 1 can :: PO :: daily :: 1-3 cans (Ensure Plus, Boost Plus) daily between meals | None | Weight, nutritional markers | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -276,6 +280,16 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Reformatted lab tables (1A/1B/1C) to standard column order: Test | ED | HOSP | OPD | ICU | Rationale | Target Finding
+- Reformatted imaging tables (2A/2B/2C) to standard column order: Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications
+- Added inline CPT codes to all lab tests and imaging studies
+- Fixed structured dosing format: starting dose only in first field across all treatment sections
+- Expanded cross-references ("Same as tetrabenazine", "Same as citalopram") with actual content
+- Added clinical synonyms for searchability
+- Expanded ICD-10 codes (added F02.80, F02.81)
+- Added VERSION/CREATED/REVISED header block
 
 **v1.0 (January 27, 2026)**
 - Initial template creation

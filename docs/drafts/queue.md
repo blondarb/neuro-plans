@@ -22,23 +22,23 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| ALS | [`als.md`](als.md) | `pending` | — | 2026-01-27 |
-| Alzheimer's Disease | [`alzheimers-disease.md`](alzheimers-disease.md) | `pending` | — | 2026-01-27 |
-| Carpal Tunnel Syndrome | [`carpal-tunnel-syndrome.md`](carpal-tunnel-syndrome.md) | `pending` | — | 2026-01-27 |
-| Dystonia | [`dystonia.md`](dystonia.md) | `pending` | — | 2026-01-27 |
-| Frontotemporal Dementia | [`frontotemporal-dementia.md`](frontotemporal-dementia.md) | `pending` | — | 2026-01-27 |
-| Huntington's Disease | [`huntingtons-disease.md`](huntingtons-disease.md) | `pending` | — | 2026-01-27 |
-| Lewy Body Dementia | [`lewy-body-dementia.md`](lewy-body-dementia.md) | `pending` | — | 2026-01-27 |
-| Migraine with Aura | [`migraine-with-aura.md`](migraine-with-aura.md) | `pending` | — | 2026-01-27 |
-| Mild Cognitive Impairment | [`mild-cognitive-impairment.md`](mild-cognitive-impairment.md) | `pending` | — | 2026-01-27 |
-| Myasthenia Gravis - Outpatient | [`myasthenia-gravis.md`](myasthenia-gravis.md) | `pending` | — | 2026-01-27 |
-| Normal Pressure Hydrocephalus | [`normal-pressure-hydrocephalus.md`](normal-pressure-hydrocephalus.md) | `pending` | — | 2026-01-27 |
-| Optic Neuritis | [`optic-neuritis.md`](optic-neuritis.md) | `pending` | — | 2026-01-27 |
-| Radiculopathy | [`radiculopathy.md`](radiculopathy.md) | `pending` | — | 2026-01-27 |
-| Small Fiber Neuropathy | [`small-fiber-neuropathy.md`](small-fiber-neuropathy.md) | `pending` | — | 2026-01-27 |
-| Tardive Dyskinesia | [`tardive-dyskinesia.md`](tardive-dyskinesia.md) | `pending` | — | 2026-01-27 |
-| Tension Headache | [`tension-headache.md`](tension-headache.md) | `pending` | — | 2026-01-27 |
-| Vascular Dementia | [`vascular-dementia.md`](vascular-dementia.md) | `pending` | — | 2026-01-27 |
+| ALS | [`als.md`](als.md) | `completed` | Claude | 2026-01-30 |
+| Alzheimer's Disease | [`alzheimers-disease.md`](alzheimers-disease.md) | `completed` | Claude | 2026-01-30 |
+| Carpal Tunnel Syndrome | [`carpal-tunnel-syndrome.md`](carpal-tunnel-syndrome.md) | `completed` | Claude | 2026-01-30 |
+| Dystonia | [`dystonia.md`](dystonia.md) | `completed` | Claude | 2026-01-30 |
+| Frontotemporal Dementia | [`frontotemporal-dementia.md`](frontotemporal-dementia.md) | `completed` | Claude | 2026-01-30 |
+| Huntington's Disease | [`huntingtons-disease.md`](huntingtons-disease.md) | `completed` | Claude | 2026-01-30 |
+| Lewy Body Dementia | [`lewy-body-dementia.md`](lewy-body-dementia.md) | `completed` | Claude | 2026-01-30 |
+| Migraine with Aura | [`migraine-with-aura.md`](migraine-with-aura.md) | `completed` | Claude | 2026-01-30 |
+| Mild Cognitive Impairment | [`mild-cognitive-impairment.md`](mild-cognitive-impairment.md) | `completed` | Claude | 2026-01-30 |
+| Myasthenia Gravis - Outpatient | [`myasthenia-gravis.md`](myasthenia-gravis.md) | `completed` | Claude | 2026-01-30 |
+| Normal Pressure Hydrocephalus | [`normal-pressure-hydrocephalus.md`](normal-pressure-hydrocephalus.md) | `completed` | Claude | 2026-01-30 |
+| Optic Neuritis | [`optic-neuritis.md`](optic-neuritis.md) | `completed` | Claude | 2026-01-30 |
+| Radiculopathy | [`radiculopathy.md`](radiculopathy.md) | `completed` | Claude | 2026-01-30 |
+| Small Fiber Neuropathy | [`small-fiber-neuropathy.md`](small-fiber-neuropathy.md) | `completed` | Claude | 2026-01-30 |
+| Tardive Dyskinesia | [`tardive-dyskinesia.md`](tardive-dyskinesia.md) | `completed` | Claude | 2026-01-30 |
+| Tension Headache | [`tension-headache.md`](tension-headache.md) | `completed` | Claude | 2026-01-30 |
+| Vascular Dementia | [`vascular-dementia.md`](vascular-dementia.md) | `completed` | Claude | 2026-01-30 |
 
 ---
 

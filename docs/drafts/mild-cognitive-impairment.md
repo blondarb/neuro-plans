@@ -1,7 +1,7 @@
 ---
 title: "Mild Cognitive Impairment (MCI)"
 description: "Clinical decision support for diagnosis, monitoring, and early intervention in mild cognitive impairment"
-version: "1.0"
+version: "1.1"
 setting: "OPD, HOSP"
 status: draft
 tags:
@@ -22,8 +22,13 @@ tags:
 # Mild Cognitive Impairment (MCI)
 
 **DIAGNOSIS:** Mild Cognitive Impairment (MCI)
-**ICD-10:** G31.84
+**ICD-10:** G31.84 (Mild cognitive impairment), F06.7 (Mild neurocognitive disorder), R41.81 (Age-related cognitive decline)
+**SYNONYMS:** MCI, amnestic MCI, non-amnestic MCI, pre-dementia, prodromal Alzheimer's, early cognitive decline, age-associated memory impairment (AAMI), cognitive impairment not dementia (CIND), mild neurocognitive disorder
 **SCOPE:** Outpatient-focused evaluation for MCI, identification of reversible causes, subtype classification (amnestic vs non-amnestic), risk factor modification, monitoring for progression, and symptomatic treatment. Includes guidance on disease-modifying therapy eligibility (anti-amyloid agents) and advance care planning.
+
+**VERSION:** 1.1
+**CREATED:** January 27, 2026
+**REVISED:** January 30, 2026
 
 **STATUS:** Draft - Pending Review
 
@@ -41,40 +46,40 @@ tags:
 
 ### 1A. Essential/Core Labs (Reversible Causes Screen)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CBC with differential | Anemia, infection, or malignancy contributing to cognitive changes | Normal | - | ROUTINE | ROUTINE | - |
-| CMP (BMP + hepatic panel) | Hyponatremia, uremia, hypercalcemia, hepatic encephalopathy as reversible causes | Normal electrolytes, renal, hepatic function | - | ROUTINE | ROUTINE | - |
-| TSH | Hypothyroidism is reversible cause of cognitive impairment | 0.4-4.0 mIU/L | - | ROUTINE | ROUTINE | - |
-| Vitamin B12 | Deficiency causes reversible cognitive impairment; common in elderly | >300 pg/mL (>400 pg/mL optimal for neurological function) | - | ROUTINE | ROUTINE | - |
-| Folate | Deficiency contributes to cognitive impairment; check with B12 | >3 ng/mL | - | ROUTINE | ROUTINE | - |
-| HbA1c | Diabetes management affects cognition; vascular risk factor | <7% (individualize in elderly) | - | ROUTINE | ROUTINE | - |
-| Fasting lipid panel | Vascular risk factor assessment; hyperlipidemia accelerates cognitive decline | LDL <100 mg/dL; <70 if established CVD | - | ROUTINE | ROUTINE | - |
-| Glucose (fasting) | Diabetes screening; glycemic control affects cognition | 70-100 mg/dL | - | ROUTINE | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CBC with differential (CPT 85025) | - | ROUTINE | ROUTINE | - | Anemia, infection, or malignancy contributing to cognitive changes | Normal |
+| CMP (CPT 80053) | - | ROUTINE | ROUTINE | - | Hyponatremia, uremia, hypercalcemia, hepatic encephalopathy as reversible causes | Normal electrolytes, renal, hepatic function |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Hypothyroidism is reversible cause of cognitive impairment | 0.4-4.0 mIU/L |
+| Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | Deficiency causes reversible cognitive impairment; common in elderly | >300 pg/mL (>400 pg/mL optimal for neurological function) |
+| Folate (CPT 82746) | - | ROUTINE | ROUTINE | - | Deficiency contributes to cognitive impairment; check with B12 | >3 ng/mL |
+| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Diabetes management affects cognition; vascular risk factor | <7% (individualize in elderly) |
+| Fasting lipid panel (CPT 80061) | - | ROUTINE | ROUTINE | - | Vascular risk factor assessment; hyperlipidemia accelerates cognitive decline | LDL <100 mg/dL; <70 if established CVD |
+| Glucose, fasting (CPT 82947) | - | ROUTINE | ROUTINE | - | Diabetes screening; glycemic control affects cognition | 70-100 mg/dL |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| RPR or VDRL | Neurosyphilis is rare but treatable cause of cognitive impairment | Nonreactive | - | ROUTINE | ROUTINE | - |
-| HIV testing | HIV-associated neurocognitive disorder; if risk factors present | Negative | - | ROUTINE | ROUTINE | - |
-| Vitamin D, 25-hydroxy | Deficiency associated with cognitive decline and dementia risk | >30 ng/mL | - | ROUTINE | ROUTINE | - |
-| Homocysteine | Elevated levels associated with Alzheimer's disease and vascular cognitive impairment | <15 μmol/L | - | ROUTINE | ROUTINE | - |
-| ESR, CRP | Inflammatory or autoimmune causes; vasculitis screen | Normal | - | ROUTINE | ROUTINE | - |
-| Urinalysis | UTI in elderly can present as cognitive changes; rule out reversible cause | Negative for infection | - | ROUTINE | ROUTINE | - |
-| Methylmalonic acid (MMA) | More sensitive than B12 level for functional B12 deficiency | <0.4 μmol/L | - | ROUTINE | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| RPR (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis is rare but treatable cause of cognitive impairment | Nonreactive |
+| HIV-1/2 antigen/antibody (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated neurocognitive disorder; if risk factors present | Negative |
+| Vitamin D, 25-OH (CPT 82306) | - | ROUTINE | ROUTINE | - | Deficiency associated with cognitive decline and dementia risk | >30 ng/mL |
+| Homocysteine (CPT 83090) | - | ROUTINE | ROUTINE | - | Elevated levels associated with Alzheimer's disease and vascular cognitive impairment | <15 μmol/L |
+| ESR (CPT 85652), CRP (CPT 86140) | - | ROUTINE | ROUTINE | - | Inflammatory or autoimmune causes; vasculitis screen | Normal |
+| Urinalysis (CPT 81003) | - | ROUTINE | ROUTINE | - | UTI in elderly can present as cognitive changes; rule out reversible cause | Negative for infection |
+| Methylmalonic acid (CPT 83921) | - | ROUTINE | ROUTINE | - | More sensitive than B12 level for functional B12 deficiency | <0.4 μmol/L |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Heavy metal panel (lead, mercury, arsenic) | Toxic exposure history; occupational risk | Normal | - | - | EXT | - |
-| Copper, ceruloplasmin | Wilson's disease if age <50; hepatic symptoms | Normal | - | - | EXT | - |
-| Paraneoplastic antibody panel | Autoimmune cognitive impairment; unexplained rapid progression | Negative | - | EXT | EXT | - |
-| Anti-neuronal antibodies (NMDA-R, LGI1, CASPR2, GABA-B) | Autoimmune encephalitis presenting as MCI | Negative | - | EXT | EXT | - |
-| Genetic testing (APOE genotyping) | Risk stratification for AD progression; anti-amyloid therapy planning | Informational (APOE4 increases risk) | - | - | EXT | - |
-| Genetic testing (PSEN1, PSEN2, APP) | Familial early-onset AD (<65); family history of early-onset dementia | No pathogenic variants | - | - | EXT | - |
-| Lyme serology | Endemic area; outdoor exposure; systemic symptoms | Negative | - | ROUTINE | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Heavy metal panel: lead (CPT 83655), mercury (CPT 83825), arsenic (CPT 82175) | - | - | EXT | - | Toxic exposure history; occupational risk | Normal |
+| Copper (CPT 82525), Ceruloplasmin (CPT 82390) | - | - | EXT | - | Wilson's disease if age <50; hepatic symptoms | Normal |
+| Paraneoplastic antibody panel (CPT 86255) | - | EXT | EXT | - | Autoimmune cognitive impairment; unexplained rapid progression | Negative |
+| Anti-neuronal antibodies: NMDA-R, LGI1, CASPR2, GABA-B (CPT 86235) | - | EXT | EXT | - | Autoimmune encephalitis presenting as MCI | Negative |
+| APOE genotyping (CPT 81401) | - | - | EXT | - | Risk stratification for AD progression; anti-amyloid therapy planning | Informational (APOE4 increases risk) |
+| Genetic testing: PSEN1, PSEN2, APP (CPT 81406) | - | - | EXT | - | Familial early-onset AD (<65); family history of early-onset dementia | No pathogenic variants |
+| Lyme serology (CPT 86618) | - | ROUTINE | ROUTINE | - | Endemic area; outdoor exposure; systemic symptoms | Negative |
 
 ---
 
@@ -82,32 +87,32 @@ tags:
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain without contrast | At initial evaluation | Hippocampal volume, medial temporal atrophy (Scheltens scale), white matter disease burden, rule out structural causes (tumor, SDH, NPH) | MRI-incompatible devices | - | ROUTINE | ROUTINE | - |
-| Neuropsychological testing (formal) | At diagnosis; gold standard for MCI characterization | Objective impairment 1-1.5 SD below age/education norms; preserved ADLs; characterize domain(s) affected | None | - | - | ROUTINE | - |
-| Mini-Mental State Examination (MMSE) | Screening; serial monitoring | 24-30 (MCI often 24-27); <24 suggests dementia | None | - | ROUTINE | ROUTINE | - |
-| Montreal Cognitive Assessment (MoCA) | More sensitive than MMSE for MCI | <26 abnormal; typically 18-25 in MCI | None | - | ROUTINE | ROUTINE | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain without contrast (CPT 70551) | - | ROUTINE | ROUTINE | - | At initial evaluation | Hippocampal volume, medial temporal atrophy (Scheltens scale), white matter disease burden, rule out structural causes (tumor, SDH, NPH) | MRI-incompatible devices |
+| Neuropsychological testing, formal (CPT 96132, 96133) | - | - | ROUTINE | - | At diagnosis; gold standard for MCI characterization | Objective impairment 1-1.5 SD below age/education norms; preserved ADLs; characterize domain(s) affected | None |
+| Mini-Mental State Examination (CPT 96116) | - | ROUTINE | ROUTINE | - | Screening; serial monitoring | 24-30 (MCI often 24-27); <24 suggests dementia | None |
+| Montreal Cognitive Assessment (CPT 96116) | - | ROUTINE | ROUTINE | - | More sensitive than MMSE for MCI | <26 abnormal; typically 18-25 in MCI | None |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| CT Head non-contrast | If MRI contraindicated or unavailable | Rule out mass, hemorrhage, hydrocephalus | None | - | ROUTINE | ROUTINE | - |
-| MRI Brain volumetrics | Quantitative assessment; research/clinical trials | Hippocampal volume percentile for age; whole brain atrophy rate | MRI contraindications | - | - | ROUTINE | - |
-| FDG-PET Brain | Differentiate underlying pathology when diagnosis uncertain | AD pattern: temporoparietal hypometabolism; FTD: frontal/temporal hypometabolism | None | - | - | ROUTINE | - |
-| Amyloid PET (florbetapir, florbetaben, flutemetamol) | Diagnostic uncertainty; early-onset; anti-amyloid therapy eligibility | Positive confirms amyloid pathology (at risk for AD); negative makes AD unlikely | None | - | - | ROUTINE | - |
-| Sleep study (polysomnography) | Sleep apnea screening; sleep disturbance affecting cognition | AHI <5 normal; treat if elevated | None | - | - | ROUTINE | - |
-| EEG | Atypical features; concern for seizures or encephalopathy | Normal or mild nonspecific slowing in MCI | None | - | ROUTINE | ROUTINE | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| CT Head non-contrast (CPT 70450) | - | ROUTINE | ROUTINE | - | If MRI contraindicated or unavailable | Rule out mass, hemorrhage, hydrocephalus | None |
+| MRI Brain volumetrics (CPT 70551) | - | - | ROUTINE | - | Quantitative assessment; research/clinical trials | Hippocampal volume percentile for age; whole brain atrophy rate | MRI contraindications |
+| FDG-PET Brain (CPT 78816) | - | - | ROUTINE | - | Differentiate underlying pathology when diagnosis uncertain | AD pattern: temporoparietal hypometabolism; FTD: frontal/temporal hypometabolism | None |
+| Amyloid PET (CPT 78811) | - | - | ROUTINE | - | Diagnostic uncertainty; early-onset; anti-amyloid therapy eligibility | Positive confirms amyloid pathology (at risk for AD); negative makes AD unlikely | None |
+| Sleep study, polysomnography (CPT 95810) | - | - | ROUTINE | - | Sleep apnea screening; sleep disturbance affecting cognition | AHI <5 normal; treat if elevated | None |
+| EEG (CPT 95816) | - | ROUTINE | ROUTINE | - | Atypical features; concern for seizures or encephalopathy | Normal or mild nonspecific slowing in MCI | None |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| Tau PET (flortaucipir) | Research; disease staging; clinical trial eligibility | Pattern correlates with clinical syndrome; elevated tau predicts faster progression | None | - | - | EXT | - |
-| DaTscan (ioflupane I-123) | MCI with parkinsonism; differentiate DLB prodrome | Reduced uptake suggests Lewy body pathology | Iodine hypersensitivity | - | - | EXT | - |
-| SPECT (perfusion) | Alternative to PET if unavailable | Regional hypoperfusion patterns | None | - | - | EXT | - |
-| MRI with SWI/GRE sequences | Cerebral amyloid angiopathy; microbleed assessment | Lobar microbleeds suggest CAA; affects anti-amyloid eligibility | MRI contraindications | - | - | ROUTINE | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Tau PET (CPT 78811) | - | - | EXT | - | Research; disease staging; clinical trial eligibility | Pattern correlates with clinical syndrome; elevated tau predicts faster progression | None |
+| DaTscan (CPT 78607) | - | - | EXT | - | MCI with parkinsonism; differentiate DLB prodrome | Reduced uptake suggests Lewy body pathology | Iodine hypersensitivity |
+| SPECT perfusion (CPT 78607) | - | - | EXT | - | Alternative to PET if unavailable | Regional hypoperfusion patterns | None |
+| MRI with SWI/GRE sequences (CPT 70551) | - | - | ROUTINE | - | Cerebral amyloid angiopathy; microbleed assessment | Lobar microbleeds suggest CAA; affects anti-amyloid eligibility | MRI contraindications |
 
 ---
 
@@ -117,15 +122,15 @@ tags:
 **Timing:** ROUTINE for biomarker-based diagnosis when indicated
 **Volume Required:** 10-15 mL (standard diagnostic); additional for research biomarkers
 
-| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|-------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Cell count, protein, glucose | Rule out infection, inflammation | WBC <5, protein <45 mg/dL, glucose >60% serum | - | ROUTINE | ROUTINE | - |
-| CSF Aβ42 (amyloid beta 1-42) | Low in Alzheimer's pathology; biomarker confirmation | Low Aβ42 (<600 pg/mL) suggests AD pathology | - | ROUTINE | ROUTINE | - |
-| CSF total tau (t-tau) | Elevated in neurodegeneration; nonspecific | Mildly elevated in MCI due to AD; marked elevation suggests rapid progression | - | ROUTINE | ROUTINE | - |
-| CSF p-tau (phosphorylated tau 181) | Specific for AD pathology; predictor of progression | Elevated p-tau with low Aβ42 = high risk of AD progression | - | ROUTINE | ROUTINE | - |
-| CSF Aβ42/Aβ40 ratio | More accurate than Aβ42 alone for amyloid status | <0.05-0.08 suggests amyloid positivity (assay-dependent) | - | ROUTINE | ROUTINE | - |
-| CSF neurofilament light chain (NfL) | Nonspecific neurodegeneration marker; prognostic | Elevated suggests active neurodegeneration | - | - | ROUTINE | - |
-| VDRL | Neurosyphilis if RPR positive or high suspicion | Nonreactive | - | ROUTINE | ROUTINE | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Cell count, protein, glucose (CPT 89050, 89051) | - | ROUTINE | ROUTINE | - | Rule out infection, inflammation | WBC <5, protein <45 mg/dL, glucose >60% serum |
+| CSF Amyloid-beta 1-42 (CPT 83519) | - | ROUTINE | ROUTINE | - | Low in Alzheimer's pathology; biomarker confirmation | Low Aβ42 (<600 pg/mL) suggests AD pathology |
+| CSF total tau (CPT 83519) | - | ROUTINE | ROUTINE | - | Elevated in neurodegeneration; nonspecific | Mildly elevated in MCI due to AD; marked elevation suggests rapid progression |
+| CSF phosphorylated tau 181 (CPT 83519) | - | ROUTINE | ROUTINE | - | Specific for AD pathology; predictor of progression | Elevated p-tau with low Aβ42 = high risk of AD progression |
+| CSF Aβ42/Aβ40 ratio (CPT 83519) | - | ROUTINE | ROUTINE | - | More accurate than Aβ42 alone for amyloid status | <0.05-0.08 suggests amyloid positivity (assay-dependent) |
+| CSF neurofilament light chain (CPT 83519) | - | - | ROUTINE | - | Nonspecific neurodegeneration marker; prognostic | Elevated suggests active neurodegeneration |
+| VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis if RPR positive or high suspicion | Nonreactive |
 
 **Special Handling:** CSF biomarkers require specialized handling; send to reference lab; freeze within 1 hour; use polypropylene tubes
 **Contraindications:** Coagulopathy (INR >1.5, platelets <50k); posterior fossa mass; skin infection at site
@@ -138,43 +143,43 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Treat reversible causes | Various | Identified metabolic, nutritional, or infectious etiology | Per cause :: Various :: :: Correct hypothyroidism, replace B12/folate, treat infections, adjust medications | Depends on intervention | Cognitive reassessment 3-6 months after treatment | - | ROUTINE | ROUTINE | - |
-| Thiamine | IV/PO | Suspected Wernicke's; alcoholism; malnutrition | 500 mg IV TID x 3 days; 100 mg PO daily :: IV/PO :: :: 500 mg IV TID x 3 days if Wernicke suspected; then 100 mg PO daily maintenance | None | Clinical improvement | - | ROUTINE | ROUTINE | - |
-| Vitamin B12 | IM/PO | B12 deficiency (<300 pg/mL or elevated MMA) | 1000 mcg IM daily x 7 days; 1000 mcg IM weekly x 4; 1000-2000 mcg PO daily :: IM/PO :: :: 1000 mcg IM daily x 7d, then weekly x 4wk, then monthly; or high-dose oral 1000-2000 mcg daily | None | B12 level, MMA at 3 months; neurological improvement over months | - | ROUTINE | ROUTINE | - |
-| Folate | PO | Folate deficiency | 1 mg PO daily :: PO :: :: 1 mg PO daily; ensure B12 adequate before treating to avoid masking deficiency | None | Folate level at 3 months | - | ROUTINE | ROUTINE | - |
+| Treat reversible causes | Various | Identified metabolic, nutritional, or infectious etiology | Per cause :: Various :: per etiology :: Correct hypothyroidism, replace B12/folate, treat infections, adjust medications | Depends on intervention | Cognitive reassessment 3-6 months after treatment | - | ROUTINE | ROUTINE | - |
+| Thiamine | IV/PO | Suspected Wernicke's; alcoholism; malnutrition | 500 mg :: IV :: TID :: 500 mg IV TID x 3 days if Wernicke suspected; then 100 mg PO daily maintenance | None | Clinical improvement | - | ROUTINE | ROUTINE | - |
+| Vitamin B12 | IM/PO | B12 deficiency (<300 pg/mL or elevated MMA) | 1000 mcg :: IM :: daily :: 1000 mcg IM daily x 7d, then weekly x 4wk, then monthly; or high-dose oral 1000-2000 mcg daily | None | B12 level, MMA at 3 months; neurological improvement over months | - | ROUTINE | ROUTINE | - |
+| Folate | PO | Folate deficiency | 1 mg :: PO :: daily :: 1 mg PO daily; ensure B12 adequate before treating to avoid masking deficiency | None | Folate level at 3 months | - | ROUTINE | ROUTINE | - |
 
 ### 3B. Symptomatic Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Donepezil | PO | MCI with high likelihood of AD pathology (amnestic MCI, positive biomarkers); modest symptomatic benefit | 5 mg qHS; 10 mg qHS :: PO :: :: Start 5 mg qHS x 4-6 weeks; may increase to 10 mg qHS; limited evidence in MCI but may offer modest benefit | Sick sinus syndrome; GI bleeding; severe COPD | Bradycardia, GI symptoms, vivid dreams; limited efficacy data in MCI | - | - | ROUTINE | - |
-| Rivastigmine patch | TD | Alternative to donepezil; better GI tolerability; MCI with positive AD biomarkers | 4.6 mg/24hr; 9.5 mg/24hr :: TD :: :: Start 4.6 mg/24hr; increase q4wk to 9.5 mg/24hr; limited evidence in MCI | Same as donepezil; severe hepatic impairment | Skin irritation, GI symptoms | - | - | EXT | - |
-| Citalopram | PO | Depression contributing to cognitive symptoms (pseudodementia component) | 10 mg daily; 20 mg daily :: PO :: :: Start 10 mg daily; max 20 mg in elderly due to QT risk | QT prolongation; concurrent QT-prolonging drugs | QTc at baseline and if dose >20 mg | - | ROUTINE | ROUTINE | - |
-| Sertraline | PO | Depression; anxiety contributing to cognitive complaints | 25 mg daily; 50 mg daily; 100 mg daily :: PO :: :: Start 25 mg daily; titrate by 25 mg q1-2wk; typical 50-100 mg | MAOIs; caution with bleeding risk | GI upset initially; reassess cognition after mood improves | - | ROUTINE | ROUTINE | - |
-| Escitalopram | PO | Depression; anxiety with cognitive symptoms | 5 mg daily; 10 mg daily :: PO :: :: Start 5 mg daily; increase to 10 mg after 1 week; max 10 mg in elderly | QT prolongation; MAOIs | QTc monitoring | - | ROUTINE | ROUTINE | - |
-| Mirtazapine | PO | Depression with poor appetite, insomnia, and weight loss | 7.5 mg qHS; 15 mg qHS; 30 mg qHS :: PO :: :: Start 7.5-15 mg qHS; may increase to 30 mg qHS | MAOIs | Weight gain (may be beneficial), sedation | - | ROUTINE | ROUTINE | - |
-| Bupropion | PO | Depression with fatigue; avoid if seizure risk | 100 mg BID; 150 mg SR BID; 300 mg XL daily :: PO :: :: Start 100 mg BID or 150 mg SR daily; increase after 1 week; max 300 mg/day | Seizure disorder; eating disorder; abrupt alcohol/benzo withdrawal | Seizure risk; may improve alertness | - | ROUTINE | ROUTINE | - |
-| Trazodone | PO | Insomnia in MCI patients | 25 mg qHS; 50 mg qHS; 100 mg qHS :: PO :: :: Start 25-50 mg qHS; titrate to effect; typical 50-100 mg qHS | Concurrent MAOIs; QT prolongation | Orthostatic hypotension, morning sedation | - | ROUTINE | ROUTINE | - |
-| Melatonin | PO | Sleep disturbance; circadian rhythm support | 1 mg qHS; 3 mg qHS; 5 mg qHS :: PO :: :: Start 1-3 mg qHS; may increase to 5 mg; take 30 min before bed | None | Daytime sedation; limited long-term data | - | ROUTINE | ROUTINE | - |
+| Donepezil | PO | MCI with high likelihood of AD pathology (amnestic MCI, positive biomarkers); modest symptomatic benefit | 5 mg :: PO :: qHS :: Start 5 mg qHS x 4-6 weeks; may increase to 10 mg qHS; limited evidence in MCI but may offer modest benefit | Sick sinus syndrome; GI bleeding; severe COPD | Bradycardia, GI symptoms, vivid dreams; limited efficacy data in MCI | - | - | ROUTINE | - |
+| Rivastigmine patch | TD | Alternative to donepezil; better GI tolerability; MCI with positive AD biomarkers | 4.6 mg/24hr :: TD :: daily :: Start 4.6 mg/24hr; increase q4wk to 9.5 mg/24hr; limited evidence in MCI | Sick sinus syndrome; GI bleeding; severe COPD; severe hepatic impairment | Skin irritation, GI symptoms | - | - | EXT | - |
+| Citalopram | PO | Depression contributing to cognitive symptoms (pseudodementia component) | 10 mg :: PO :: daily :: Start 10 mg daily; max 20 mg in elderly due to QT risk | QT prolongation; concurrent QT-prolonging drugs | QTc at baseline and if dose >20 mg | - | ROUTINE | ROUTINE | - |
+| Sertraline | PO | Depression; anxiety contributing to cognitive complaints | 25 mg :: PO :: daily :: Start 25 mg daily; titrate by 25 mg q1-2wk; typical 50-100 mg | MAOIs; caution with bleeding risk | GI upset initially; reassess cognition after mood improves | - | ROUTINE | ROUTINE | - |
+| Escitalopram | PO | Depression; anxiety with cognitive symptoms | 5 mg :: PO :: daily :: Start 5 mg daily; increase to 10 mg after 1 week; max 10 mg in elderly | QT prolongation; MAOIs | QTc monitoring | - | ROUTINE | ROUTINE | - |
+| Mirtazapine | PO | Depression with poor appetite, insomnia, and weight loss | 7.5 mg :: PO :: qHS :: Start 7.5-15 mg qHS; may increase to 30 mg qHS | MAOIs | Weight gain (may be beneficial), sedation | - | ROUTINE | ROUTINE | - |
+| Bupropion | PO | Depression with fatigue; avoid if seizure risk | 150 mg :: PO :: daily :: Start 100 mg BID or 150 mg SR daily; increase after 1 week; max 300 mg/day | Seizure disorder; eating disorder; abrupt alcohol/benzo withdrawal | Seizure risk; may improve alertness | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Insomnia in MCI patients | 25 mg :: PO :: qHS :: Start 25-50 mg qHS; titrate to effect; typical 50-100 mg qHS | Concurrent MAOIs; QT prolongation | Orthostatic hypotension, morning sedation | - | ROUTINE | ROUTINE | - |
+| Melatonin | PO | Sleep disturbance; circadian rhythm support | 1 mg :: PO :: qHS :: Start 1-3 mg qHS; may increase to 5 mg; take 30 min before bed | None | Daytime sedation; limited long-term data | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Cardiovascular Risk Factor Management
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Atorvastatin | PO | Hyperlipidemia; vascular risk reduction; may slow cognitive decline | 10 mg daily; 20 mg daily; 40 mg daily; 80 mg daily :: PO :: :: Start 10-20 mg daily; titrate to LDL goal; target LDL <100 (or <70 if established CVD) | Active liver disease; pregnancy | LFTs at baseline; lipid panel q3-6mo initially | - | ROUTINE | ROUTINE | - |
-| Rosuvastatin | PO | Hyperlipidemia; alternative statin | 5 mg daily; 10 mg daily; 20 mg daily :: PO :: :: Start 5-10 mg daily; adjust to LDL goal | Active liver disease; severe renal impairment (dose adjust) | LFTs, lipid panel | - | ROUTINE | ROUTINE | - |
-| Lisinopril | PO | Hypertension; target BP <130/80 for vascular protection | 5 mg daily; 10 mg daily; 20 mg daily; 40 mg daily :: PO :: :: Start 5-10 mg daily; titrate q2wk to BP goal | Angioedema history; pregnancy; bilateral renal artery stenosis | K+, Cr, BP; cough | - | ROUTINE | ROUTINE | - |
-| Amlodipine | PO | Hypertension; especially if ACE-I intolerant | 2.5 mg daily; 5 mg daily; 10 mg daily :: PO :: :: Start 2.5-5 mg daily; increase q2wk; max 10 mg | Severe aortic stenosis | Peripheral edema, BP | - | ROUTINE | ROUTINE | - |
-| Losartan | PO | Hypertension; alternative if ACE-I intolerant | 25 mg daily; 50 mg daily; 100 mg daily :: PO :: :: Start 25-50 mg daily; titrate to BP goal; max 100 mg | Same as lisinopril | K+, Cr, BP | - | ROUTINE | ROUTINE | - |
-| Metformin | PO | Type 2 diabetes; potential neuroprotective effects | 500 mg daily; 500 mg BID; 1000 mg BID :: PO :: :: Start 500 mg daily with meal; increase by 500 mg weekly; max 2000 mg/day | eGFR <30; risk of lactic acidosis | HbA1c q3mo; B12 annually (metformin reduces absorption) | - | ROUTINE | ROUTINE | - |
-| Aspirin (low-dose) | PO | Secondary prevention if established CVD; not for primary prevention in MCI | 81 mg daily :: PO :: :: 81 mg daily; only if established CVD or high vascular risk | Active bleeding; aspirin allergy; high bleeding risk | GI symptoms; bleeding | - | ROUTINE | ROUTINE | - |
+| Atorvastatin | PO | Hyperlipidemia; vascular risk reduction; may slow cognitive decline | 10 mg :: PO :: daily :: Start 10-20 mg daily; titrate to LDL goal; target LDL <100 (or <70 if established CVD) | Active liver disease; pregnancy | LFTs at baseline; lipid panel q3-6mo initially | - | ROUTINE | ROUTINE | - |
+| Rosuvastatin | PO | Hyperlipidemia; alternative statin | 5 mg :: PO :: daily :: Start 5-10 mg daily; adjust to LDL goal | Active liver disease; severe renal impairment (dose adjust) | LFTs, lipid panel | - | ROUTINE | ROUTINE | - |
+| Lisinopril | PO | Hypertension; target BP <130/80 for vascular protection | 5 mg :: PO :: daily :: Start 5-10 mg daily; titrate q2wk to BP goal | Angioedema history; pregnancy; bilateral renal artery stenosis | K+, Cr, BP; cough | - | ROUTINE | ROUTINE | - |
+| Amlodipine | PO | Hypertension; especially if ACE-I intolerant | 2.5 mg :: PO :: daily :: Start 2.5-5 mg daily; increase q2wk; max 10 mg | Severe aortic stenosis | Peripheral edema, BP | - | ROUTINE | ROUTINE | - |
+| Losartan | PO | Hypertension; alternative if ACE-I intolerant | 25 mg :: PO :: daily :: Start 25-50 mg daily; titrate to BP goal; max 100 mg | Angioedema history; pregnancy; bilateral renal artery stenosis | K+, Cr, BP | - | ROUTINE | ROUTINE | - |
+| Metformin | PO | Type 2 diabetes; potential neuroprotective effects | 500 mg :: PO :: daily :: Start 500 mg daily with meal; increase by 500 mg weekly; max 2000 mg/day | eGFR <30; risk of lactic acidosis | HbA1c q3mo; B12 annually (metformin reduces absorption) | - | ROUTINE | ROUTINE | - |
+| Aspirin (low-dose) | PO | Secondary prevention if established CVD; not for primary prevention in MCI | 81 mg :: PO :: daily :: 81 mg daily; only if established CVD or high vascular risk | Active bleeding; aspirin allergy; high bleeding risk | GI symptoms; bleeding | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Disease-Modifying Therapies (Anti-Amyloid)
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Lecanemab (Leqembi) | IV | MCI due to AD with confirmed amyloid pathology (positive amyloid PET or CSF biomarkers) | 10 mg/kg IV q2wk :: IV :: :: 10 mg/kg IV every 2 weeks; infuse over 1 hour; continue as long as benefit maintained | Amyloid PET or CSF confirming amyloid positivity; MRI baseline (within 1 year); APOE genotyping recommended; informed consent for ARIA risk | >4 microbleeds on MRI; superficial siderosis; anticoagulation (increased ARIA risk); recent stroke/TIA | MRI at baseline, weeks 14, 52, 78; monitor for ARIA-E/H symptoms (headache, confusion, vision changes) | - | - | ROUTINE | - |
-| Donanemab (Kisunla) | IV | MCI due to AD with confirmed amyloid and intermediate/high tau pathology | 700 mg IV q4wk x 3; 1400 mg IV q4wk :: IV :: :: 700 mg q4wk x 3 doses, then 1400 mg q4wk until amyloid cleared (PET-guided discontinuation) | Amyloid PET positive; tau PET intermediate/high; MRI baseline; APOE genotyping | APOE4 homozygotes have higher ARIA risk; >4 microbleeds; anticoagulation | MRI at baseline, weeks 16, 24, 52, 76; amyloid PET to guide discontinuation | - | - | EXT | - |
+| Lecanemab (Leqembi) | IV | MCI due to AD with confirmed amyloid pathology (positive amyloid PET or CSF biomarkers) | 10 mg/kg :: IV :: q2wk :: 10 mg/kg IV every 2 weeks; infuse over 1 hour; continue as long as benefit maintained | Amyloid PET or CSF confirming amyloid positivity; MRI baseline (within 1 year); APOE genotyping recommended; informed consent for ARIA risk | >4 microbleeds on MRI; superficial siderosis; anticoagulation (increased ARIA risk); recent stroke/TIA | MRI at baseline, weeks 14, 52, 78; monitor for ARIA-E/H symptoms (headache, confusion, vision changes) | - | - | ROUTINE | - |
+| Donanemab (Kisunla) | IV | MCI due to AD with confirmed amyloid and intermediate/high tau pathology | 700 mg :: IV :: q4wk :: 700 mg q4wk x 3 doses, then 1400 mg q4wk until amyloid cleared (PET-guided discontinuation) | Amyloid PET positive; tau PET intermediate/high; MRI baseline; APOE genotyping | APOE4 homozygotes have higher ARIA risk; >4 microbleeds; anticoagulation | MRI at baseline, weeks 16, 24, 52, 76; amyloid PET to guide discontinuation | - | - | EXT | - |
 
 **ARIA Monitoring Notes:**
 - ARIA-E (edema): Usually asymptomatic; may cause headache, confusion, visual disturbances
@@ -315,6 +320,18 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized lab tables (1A/1B/1C) to `Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding` format
+- Standardized imaging tables (2A/2B/2C) to `Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications` format
+- Standardized LP table to `Study (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding` format
+- Added inline CPT codes to all laboratory, imaging, and LP studies
+- Fixed structured dosing first fields across all treatment sections (3A/3B/3C/3D)
+- Expanded "Same as donepezil" cross-reference in rivastigmine contraindications
+- Expanded "Same as lisinopril" cross-reference in losartan contraindications
+- Added additional ICD-10 codes (F06.7, R41.81)
+- Added clinical synonyms
+- Added VERSION/CREATED/REVISED header block
 
 **v1.0 (January 27, 2026)**
 - Initial template creation

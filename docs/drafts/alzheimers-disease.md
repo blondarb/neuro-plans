@@ -22,11 +22,17 @@ tags:
 
 # Alzheimer's Disease
 
-**DIAGNOSIS:** Alzheimer's Disease
-**ICD-10:** G30.9 (Alzheimer's disease, unspecified); G30.0 (Early-onset AD); G30.1 (Late-onset AD); F02.80 (Dementia in AD without behavioral disturbance); F02.81 (Dementia in AD with behavioral disturbance)
-**SCOPE:** Diagnosis confirmation using NIA-AA criteria, biomarker assessment, pharmacologic treatment with cholinesterase inhibitors and memantine, anti-amyloid disease-modifying therapies, BPSD management, safety planning, and caregiver support. Primarily outpatient-focused with coverage for ED and hospital presentations.
-
+**VERSION:** 1.1
+**CREATED:** January 27, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
+
+---
+
+**DIAGNOSIS:** Alzheimer's Disease
+**ICD-10:** G30.9 (Alzheimer's disease, unspecified), G30.0 (Early-onset AD), G30.1 (Late-onset AD), F02.80 (Dementia in AD without behavioral disturbance), F02.81 (Dementia in AD with behavioral disturbance), G30.8 (Other Alzheimer's disease)
+**CLINICAL SYNONYMS:** Alzheimer's disease, Alzheimer disease, AD, senile dementia of Alzheimer type, SDAT, presenile dementia, Alzheimer's dementia, dementia of the Alzheimer type, DAT, early-onset Alzheimer's, late-onset Alzheimer's, EOAD, LOAD, amyloid-related dementia, Alzheimer's-type dementia
+**SCOPE:** Diagnosis confirmation using NIA-AA criteria, biomarker assessment, pharmacologic treatment with cholinesterase inhibitors and memantine, anti-amyloid disease-modifying therapies, BPSD management, safety planning, and caregiver support. Primarily outpatient-focused with coverage for ED and hospital presentations.
 
 ---
 
@@ -42,39 +48,39 @@ tags:
 
 ### 1A. Essential/Core Labs (Reversible Causes Screen)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CBC with differential | Rule out infection, anemia, malignancy contributing to cognitive impairment | Normal | STAT | STAT | ROUTINE | - |
-| BMP (Na, K, BUN, Cr, glucose) | Metabolic causes of confusion (hyponatremia, uremia, hypoglycemia) | Normal electrolytes, renal function | STAT | STAT | ROUTINE | - |
-| TSH | Hypothyroidism is reversible cause of cognitive impairment | 0.4-4.0 mIU/L | URGENT | ROUTINE | ROUTINE | - |
-| Vitamin B12 | B12 deficiency causes reversible cognitive decline | >300 pg/mL (>400 optimal) | URGENT | ROUTINE | ROUTINE | - |
-| Folate | Deficiency contributes to cognitive impairment | >3 ng/mL | - | ROUTINE | ROUTINE | - |
-| Hepatic panel (AST, ALT, albumin) | Hepatic encephalopathy; nutritional status | Normal | - | ROUTINE | ROUTINE | - |
-| Calcium | Hypercalcemia causes confusion | 8.5-10.5 mg/dL | STAT | ROUTINE | ROUTINE | - |
-| Urinalysis | UTI common cause of acute confusion in elderly | Negative for infection | STAT | STAT | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | - | Rule out infection, anemia, malignancy contributing to cognitive impairment | Normal |
+| BMP (CPT 80048) | STAT | STAT | ROUTINE | - | Metabolic causes of confusion (hyponatremia, uremia, hypoglycemia) | Normal electrolytes, renal function |
+| TSH (CPT 84443) | URGENT | ROUTINE | ROUTINE | - | Hypothyroidism is reversible cause of cognitive impairment | 0.4-4.0 mIU/L |
+| Vitamin B12 (CPT 82607) | URGENT | ROUTINE | ROUTINE | - | B12 deficiency causes reversible cognitive decline | >300 pg/mL (>400 optimal) |
+| Folate (CPT 82746) | - | ROUTINE | ROUTINE | - | Deficiency contributes to cognitive impairment | >3 ng/mL |
+| Hepatic panel (AST, ALT, albumin) (CPT 80076) | - | ROUTINE | ROUTINE | - | Hepatic encephalopathy; nutritional status | Normal |
+| Calcium (CPT 82310) | STAT | ROUTINE | ROUTINE | - | Hypercalcemia causes confusion | 8.5-10.5 mg/dL |
+| Urinalysis (CPT 81003) | STAT | STAT | ROUTINE | - | UTI common cause of acute confusion in elderly | Negative for infection |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Hemoglobin A1c | Diabetes affects cognition and vascular risk | <7.0% | - | ROUTINE | ROUTINE | - |
-| Lipid panel | Vascular risk factor modification | LDL <100 mg/dL | - | ROUTINE | ROUTINE | - |
-| Homocysteine | Elevated levels associated with AD and vascular disease | <15 μmol/L | - | ROUTINE | ROUTINE | - |
-| Vitamin D, 25-hydroxy | Deficiency associated with cognitive decline | >30 ng/mL | - | ROUTINE | ROUTINE | - |
-| RPR or VDRL | Neurosyphilis is treatable cause | Nonreactive | - | ROUTINE | ROUTINE | - |
-| HIV testing | HIV-associated neurocognitive disorder if risk factors | Negative | - | ROUTINE | ROUTINE | - |
-| ESR, CRP | Inflammatory or autoimmune causes | Normal | - | ROUTINE | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Hemoglobin A1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Diabetes affects cognition and vascular risk | <7.0% |
+| Lipid panel (CPT 80061) | - | ROUTINE | ROUTINE | - | Vascular risk factor modification | LDL <100 mg/dL |
+| Homocysteine (CPT 83090) | - | ROUTINE | ROUTINE | - | Elevated levels associated with AD and vascular disease | <15 μmol/L |
+| Vitamin D, 25-hydroxy (CPT 82306) | - | ROUTINE | ROUTINE | - | Deficiency associated with cognitive decline | >30 ng/mL |
+| RPR (CPT 86592) or VDRL | - | ROUTINE | ROUTINE | - | Neurosyphilis is treatable cause | Nonreactive |
+| HIV testing (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated neurocognitive disorder if risk factors | Negative |
+| ESR (CPT 85652) / CRP (CPT 86140) | - | ROUTINE | ROUTINE | - | Inflammatory or autoimmune causes | Normal |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| APOE genotyping | Risk stratification; ARIA risk assessment for anti-amyloid therapy | APOE ε4 status | - | - | ROUTINE | - |
-| Genetic panel (PSEN1, PSEN2, APP) | Early-onset AD (<65) with family history | No pathogenic mutation (AD diagnosis still valid) | - | - | EXT | - |
-| Heavy metal panel (lead, mercury) | History of occupational exposure | Normal | - | - | EXT | - |
-| Copper, ceruloplasmin | Wilson disease if age <50 with movement disorder | Normal | - | EXT | EXT | - |
-| Paraneoplastic antibody panel | Rapid progression; cancer history | Negative | - | EXT | EXT | - |
-| Anti-neuronal antibodies (NMDA-R, LGI1, CASPR2) | Atypical presentation; rapid progression | Negative | - | EXT | EXT | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| APOE genotyping (CPT 81401) | - | - | ROUTINE | - | Risk stratification; ARIA risk assessment for anti-amyloid therapy | APOE ε4 status |
+| Genetic panel (PSEN1, PSEN2, APP) (CPT 81406) | - | - | EXT | - | Early-onset AD (<65) with family history | No pathogenic mutation (AD diagnosis still valid) |
+| Heavy metal panel (lead, mercury) (CPT 83655, 83825) | - | - | EXT | - | History of occupational exposure | Normal |
+| Copper (CPT 82525), ceruloplasmin (CPT 82390) | - | EXT | EXT | - | Wilson disease if age <50 with movement disorder | Normal |
+| Paraneoplastic antibody panel (CPT 86255) | - | EXT | EXT | - | Rapid progression; cancer history | Negative |
+| Anti-neuronal antibodies (NMDA-R, LGI1, CASPR2) (CPT 86255) | - | EXT | EXT | - | Atypical presentation; rapid progression | Negative |
 
 ---
 
@@ -82,30 +88,30 @@ tags:
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain without contrast | At initial evaluation | Hippocampal and medial temporal atrophy; rule out structural causes (tumor, SDH, NPH, stroke) | MRI-incompatible devices, severe claustrophobia | URGENT | ROUTINE | ROUTINE | - |
-| CT Head non-contrast | If MRI unavailable or contraindicated | Rule out mass, hemorrhage, hydrocephalus | None | STAT | STAT | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain without contrast (CPT 70551) | URGENT | ROUTINE | ROUTINE | - | At initial evaluation | Hippocampal and medial temporal atrophy; rule out structural causes (tumor, SDH, NPH, stroke) | MRI-incompatible devices, severe claustrophobia |
+| CT Head non-contrast (CPT 70450) | STAT | STAT | ROUTINE | - | If MRI unavailable or contraindicated | Rule out mass, hemorrhage, hydrocephalus | None |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| Amyloid PET (florbetapir, florbetaben, flutemetamol) | Diagnostic uncertainty; anti-amyloid therapy eligibility | Positive amyloid deposition confirms AD pathology | None | - | - | ROUTINE | - |
-| FDG-PET Brain | Differentiate AD from FTD; atypical presentations | AD: bilateral temporoparietal hypometabolism | None | - | - | ROUTINE | - |
-| Tau PET (flortaucipir) | Staging AD; donanemab eligibility | Elevated tau correlates with disease stage | None | - | - | EXT | - |
-| MRI Brain volumetrics | Baseline for anti-amyloid monitoring; track progression | Quantify hippocampal and whole brain atrophy | MRI contraindications | - | - | ROUTINE | - |
-| MRI with SWI/GRE sequences | Pre-treatment for anti-amyloid (microbleed assessment) | Count microbleeds (<4 eligible for therapy) | MRI contraindications | - | ROUTINE | ROUTINE | - |
-| EEG | Seizures, encephalopathy, or rapid decline | Diffuse slowing typical in AD; rule out CJD | None | URGENT | ROUTINE | ROUTINE | - |
-| Sleep study (polysomnography) | Sleep apnea contributing to cognition; RBD evaluation | Assess AHI; REM without atonia suggests DLB | None | - | - | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Amyloid PET (CPT 78816) | - | - | ROUTINE | - | Diagnostic uncertainty; anti-amyloid therapy eligibility | Positive amyloid deposition confirms AD pathology | None |
+| FDG-PET Brain (CPT 78816) | - | - | ROUTINE | - | Differentiate AD from FTD; atypical presentations | AD: bilateral temporoparietal hypometabolism | None |
+| Tau PET (flortaucipir) (CPT 78816) | - | - | EXT | - | Staging AD; donanemab eligibility | Elevated tau correlates with disease stage | None |
+| MRI Brain volumetrics (CPT 70551) | - | - | ROUTINE | - | Baseline for anti-amyloid monitoring; track progression | Quantify hippocampal and whole brain atrophy | MRI contraindications |
+| MRI with SWI/GRE sequences (CPT 70551) | - | ROUTINE | ROUTINE | - | Pre-treatment for anti-amyloid (microbleed assessment) | Count microbleeds (<4 eligible for therapy) | MRI contraindications |
+| EEG (CPT 95816) | URGENT | ROUTINE | ROUTINE | - | Seizures, encephalopathy, or rapid decline | Diffuse slowing typical in AD; rule out CJD | None |
+| Sleep study (polysomnography) (CPT 95810) | - | - | ROUTINE | - | Sleep apnea contributing to cognition; RBD evaluation | Assess AHI; REM without atonia suggests DLB | None |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| DaTscan (ioflupane I-123) | Differentiate DLB/PDD from AD | Reduced uptake: DLB; Normal: AD | Iodine hypersensitivity | - | - | EXT | - |
-| SPECT (perfusion) | Alternative to PET if unavailable | Regional hypoperfusion patterns | None | - | - | EXT | - |
-| Whole body PET-CT | Paraneoplastic workup if suspected | Rule out occult malignancy | None | - | EXT | EXT | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| DaTscan (ioflupane I-123) (CPT 78607) | - | - | EXT | - | Differentiate DLB/PDD from AD | Reduced uptake: DLB; Normal: AD | Iodine hypersensitivity |
+| SPECT (perfusion) (CPT 78607) | - | - | EXT | - | Alternative to PET if unavailable | Regional hypoperfusion patterns | None |
+| Whole body PET-CT (CPT 78816) | - | EXT | EXT | - | Paraneoplastic workup if suspected | Rule out occult malignancy | None |
 
 ---
 
@@ -115,17 +121,17 @@ tags:
 **Timing:** ROUTINE for biomarker confirmation; URGENT if autoimmune or infectious etiology suspected
 **Volume Required:** 10-15 mL standard; additional for research biomarkers
 
-| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|-------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Cell count, protein, glucose | Rule out infection, inflammation | WBC <5, protein <45 mg/dL, glucose >60% serum | URGENT | ROUTINE | ROUTINE | - |
-| CSF Aβ42 (amyloid beta 1-42) | Reduced in AD due to brain amyloid deposition | <600 pg/mL suggests AD pathology | - | ROUTINE | ROUTINE | - |
-| CSF Aβ42/Aβ40 ratio | More accurate than Aβ42 alone | <0.05-0.08 suggests AD (assay-dependent) | - | ROUTINE | ROUTINE | - |
-| CSF total tau (t-tau) | Elevated in neurodegeneration | >400 pg/mL suggests neuronal injury | - | ROUTINE | ROUTINE | - |
-| CSF phosphorylated tau (p-tau181 or p-tau217) | Specific for AD pathology; best discriminator | Elevated p-tau181 >60 pg/mL or p-tau217 >20 pg/mL | - | ROUTINE | ROUTINE | - |
-| CSF NfL (neurofilament light) | Non-specific marker of neuronal damage | Elevated suggests active neurodegeneration | - | ROUTINE | ROUTINE | - |
-| 14-3-3 protein | Rapid progression; suspected CJD | Negative (positive suggests CJD) | - | ROUTINE | ROUTINE | - |
-| RT-QuIC | Prion disease confirmation if suspected | Negative | - | ROUTINE | EXT | - |
-| Autoimmune encephalitis panel | Atypical presentation; subacute onset | Negative | - | EXT | EXT | - |
+| Study | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|-------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Cell count, protein, glucose (CPT 89051) | URGENT | ROUTINE | ROUTINE | - | Rule out infection, inflammation | WBC <5, protein <45 mg/dL, glucose >60% serum |
+| CSF Aβ42 (amyloid beta 1-42) (CPT 83519) | - | ROUTINE | ROUTINE | - | Reduced in AD due to brain amyloid deposition | <600 pg/mL suggests AD pathology |
+| CSF Aβ42/Aβ40 ratio (CPT 83519) | - | ROUTINE | ROUTINE | - | More accurate than Aβ42 alone | <0.05-0.08 suggests AD (assay-dependent) |
+| CSF total tau (t-tau) (CPT 83519) | - | ROUTINE | ROUTINE | - | Elevated in neurodegeneration | >400 pg/mL suggests neuronal injury |
+| CSF phosphorylated tau (p-tau181 or p-tau217) (CPT 83519) | - | ROUTINE | ROUTINE | - | Specific for AD pathology; best discriminator | Elevated p-tau181 >60 pg/mL or p-tau217 >20 pg/mL |
+| CSF NfL (neurofilament light) (CPT 83519) | - | ROUTINE | ROUTINE | - | Non-specific marker of neuronal damage | Elevated suggests active neurodegeneration |
+| 14-3-3 protein (CPT 83519) | - | ROUTINE | ROUTINE | - | Rapid progression; suspected CJD | Negative (positive suggests CJD) |
+| RT-QuIC | - | ROUTINE | EXT | - | Prion disease confirmation if suspected | Negative |
+| Autoimmune encephalitis panel (CPT 86255) | - | EXT | EXT | - | Atypical presentation; subacute onset | Negative |
 
 **Special Handling:** CSF biomarkers require polypropylene tubes; freeze within 1 hour; send to qualified reference lab
 **Contraindications:** Coagulopathy (INR >1.5, platelets <50k); posterior fossa mass; skin infection at puncture site
@@ -146,19 +152,19 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Donepezil (Aricept) | PO | Mild, moderate, or severe AD (first-line) | 5 mg qHS; 10 mg qHS; 23 mg daily :: PO :: :: Start 5 mg qHS x 4-6 weeks; if tolerated, increase to 10 mg qHS; 23 mg available for moderate-severe AD after stable on 10 mg | Sick sinus syndrome; second/third degree heart block without pacemaker; active GI bleeding; severe COPD | Heart rate; GI symptoms (nausea, diarrhea); vivid dreams; muscle cramps | - | ROUTINE | ROUTINE | - |
-| Rivastigmine oral (Exelon) | PO | Mild-moderate AD; may be better for attention/executive symptoms | 1.5 mg BID; 3 mg BID; 4.5 mg BID; 6 mg BID :: PO :: :: Start 1.5 mg BID with meals; increase by 1.5 mg BID every 2 weeks; target 6 mg BID | Same as donepezil; severe hepatic impairment | GI symptoms (most common); weight loss; bradycardia | - | ROUTINE | ROUTINE | - |
-| Rivastigmine patch (Exelon Patch) | TD | Mild-moderate AD; better GI tolerability than oral | 4.6 mg/24hr; 9.5 mg/24hr; 13.3 mg/24hr :: TD :: :: Start 4.6 mg/24hr patch; increase every 4 weeks; target 9.5-13.3 mg/24hr; apply to clean, hairless skin | Same as oral | Skin irritation (rotate sites); GI symptoms less than oral | - | ROUTINE | ROUTINE | - |
-| Galantamine (Razadyne) | PO | Mild-moderate AD; dual mechanism (AChE inhibitor + nicotinic modulator) | 4 mg BID; 8 mg BID; 12 mg BID :: PO :: :: Start 4 mg BID with meals x 4 weeks; increase to 8 mg BID x 4 weeks; target 8-12 mg BID | Same as donepezil; severe renal impairment (CrCl <9); severe hepatic impairment | GI symptoms; bradycardia; weight loss | - | ROUTINE | ROUTINE | - |
-| Galantamine ER (Razadyne ER) | PO | Once-daily alternative for adherence | 8 mg daily; 16 mg daily; 24 mg daily :: PO :: :: Start 8 mg daily with breakfast x 4 weeks; increase by 8 mg every 4 weeks; target 16-24 mg daily | Same as immediate release | Same as immediate release | - | ROUTINE | ROUTINE | - |
+| Donepezil (Aricept) | PO | Mild, moderate, or severe AD (first-line) | 5 mg :: PO :: qHS :: Start 5 mg qHS x 4-6 weeks; if tolerated, increase to 10 mg qHS; 23 mg available for moderate-severe AD after stable on 10 mg | Sick sinus syndrome; second/third degree heart block without pacemaker; active GI bleeding; severe COPD | Heart rate; GI symptoms (nausea, diarrhea); vivid dreams; muscle cramps | - | ROUTINE | ROUTINE | - |
+| Rivastigmine oral (Exelon) | PO | Mild-moderate AD; may be better for attention/executive symptoms | 1.5 mg :: PO :: BID :: Start 1.5 mg BID with meals; increase by 1.5 mg BID every 2 weeks; target 6 mg BID | Sick sinus syndrome; second/third degree heart block; active GI bleeding; severe hepatic impairment | GI symptoms (most common); weight loss; bradycardia | - | ROUTINE | ROUTINE | - |
+| Rivastigmine patch (Exelon Patch) | TD | Mild-moderate AD; better GI tolerability than oral | 4.6 mg/24hr :: TD :: daily :: Start 4.6 mg/24hr patch; increase every 4 weeks; target 9.5-13.3 mg/24hr; apply to clean, hairless skin | Sick sinus syndrome; second/third degree heart block; active GI bleeding | Skin irritation (rotate sites); GI symptoms less than oral | - | ROUTINE | ROUTINE | - |
+| Galantamine (Razadyne) | PO | Mild-moderate AD; dual mechanism (AChE inhibitor + nicotinic modulator) | 4 mg :: PO :: BID :: Start 4 mg BID with meals x 4 weeks; increase to 8 mg BID x 4 weeks; target 8-12 mg BID | Sick sinus syndrome; second/third degree heart block; severe renal impairment (CrCl <9); severe hepatic impairment | GI symptoms; bradycardia; weight loss | - | ROUTINE | ROUTINE | - |
+| Galantamine ER (Razadyne ER) | PO | Once-daily alternative for adherence | 8 mg :: PO :: daily :: Start 8 mg daily with breakfast x 4 weeks; increase by 8 mg every 4 weeks; target 16-24 mg daily | Sick sinus syndrome; second/third degree heart block; severe renal impairment (CrCl <9); severe hepatic impairment | GI symptoms; bradycardia; weight loss | - | ROUTINE | ROUTINE | - |
 
 ### 3C. NMDA Receptor Antagonist
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Memantine (Namenda) | PO | Moderate-severe AD; add to cholinesterase inhibitor | 5 mg daily; 5 mg BID; 10 mg BID :: PO :: :: Start 5 mg daily x 1 week; increase by 5 mg/week: 5 mg BID, then 5 mg/10 mg, then 10 mg BID | Severe renal impairment (reduce dose if CrCl 5-29: max 5 mg BID) | Confusion, dizziness, constipation, headache | - | ROUTINE | ROUTINE | - |
-| Memantine XR (Namenda XR) | PO | Once-daily option for adherence | 7 mg daily; 14 mg daily; 21 mg daily; 28 mg daily :: PO :: :: Start 7 mg daily; increase by 7 mg/week; target 28 mg daily | Same as immediate release | Same as immediate release | - | ROUTINE | ROUTINE | - |
-| Memantine/Donepezil (Namzaric) | PO | Combination for moderate-severe AD already on both | 28/10 mg daily :: PO :: :: One capsule (28 mg memantine XR + 10 mg donepezil) once daily at bedtime; must be stable on both drugs first | Same as individual drugs | Same as individual drugs | - | - | ROUTINE | - |
+| Memantine (Namenda) | PO | Moderate-severe AD; add to cholinesterase inhibitor | 5 mg :: PO :: daily :: Start 5 mg daily x 1 week; increase by 5 mg/week: 5 mg BID, then 5 mg/10 mg, then 10 mg BID | Severe renal impairment (reduce dose if CrCl 5-29: max 5 mg BID) | Confusion, dizziness, constipation, headache | - | ROUTINE | ROUTINE | - |
+| Memantine XR (Namenda XR) | PO | Once-daily option for adherence | 7 mg :: PO :: daily :: Start 7 mg daily; increase by 7 mg/week; target 28 mg daily | Severe renal impairment (reduce dose if CrCl 5-29: max 14 mg daily) | Confusion, dizziness, constipation, headache | - | ROUTINE | ROUTINE | - |
+| Memantine/Donepezil (Namzaric) | PO | Combination for moderate-severe AD already on both | 28/10 mg :: PO :: qHS :: One capsule (28 mg memantine XR + 10 mg donepezil) once daily at bedtime; must be stable on both drugs first | Severe renal impairment; sick sinus syndrome; second/third degree heart block | Confusion, dizziness, GI symptoms, vivid dreams | - | - | ROUTINE | - |
 
 ### 3D. Disease-Modifying Therapies (Anti-Amyloid)
 
@@ -166,7 +172,7 @@ tags:
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Lecanemab (Leqembi) | IV | Early AD (MCI or mild dementia) with confirmed amyloid pathology | 10 mg/kg IV q2wk :: IV :: :: 10 mg/kg IV every 2 weeks; infuse over approximately 1 hour | Amyloid PET positive OR CSF biomarkers confirming amyloid; MRI within 1 year (assess microbleeds); APOE genotyping strongly recommended; informed consent for ARIA risk | >4 cerebral microbleeds; superficial siderosis; recent macrohemorrhage; concurrent anticoagulation (relative); APOE ε4/ε4 (higher ARIA risk - not absolute CI) | MRI: baseline, weeks 7, 14, 52, 78 (ARIA monitoring); clinical assessment for ARIA symptoms (headache, confusion, visual changes) | - | - | ROUTINE | - |
 | Donanemab (Kisunla) | IV | Early AD (MCI or mild dementia) with confirmed amyloid AND intermediate/high tau pathology | 700 mg IV q4wk x 3; then 1400 mg IV q4wk :: IV :: :: 700 mg IV every 4 weeks x 3 doses, then 1400 mg IV every 4 weeks until amyloid clearance (by PET); discontinue when PET negative | Amyloid PET positive; Tau PET showing intermediate or high tau levels; MRI baseline; APOE genotyping (higher ARIA in ε4/ε4) | Same as lecanemab; higher ARIA risk in APOE ε4 homozygotes | MRI: baseline, weeks 12, 24, 52, 76 (ARIA monitoring); repeat amyloid PET to assess clearance | - | - | EXT | - |
-| Aducanumab (Aduhelm) | IV | Early AD with confirmed amyloid (limited adoption) | 1 mg/kg; 3 mg/kg; 6 mg/kg; 10 mg/kg IV q4wk :: IV :: :: Titration: 1 mg/kg q4wk x 2, then 3 mg/kg x 2, then 6 mg/kg x 2, then 10 mg/kg maintenance; slow titration over 6 months | Same as lecanemab | Same as lecanemab | MRI for ARIA at baseline and during titration | - | - | EXT | - |
+| ~~Aducanumab (Aduhelm)~~ | IV | **DISCONTINUED** — Biogen halted Aduhelm commercialization January 2024; no longer available | N/A | N/A | N/A | N/A | - | - | - | - |
 
 **ARIA Monitoring Protocol:**
 - **ARIA-E (edema):** Sulcal effusion and/or cortical edema on FLAIR MRI; usually asymptomatic but may cause headache, confusion, visual disturbance
@@ -178,15 +184,15 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Citalopram | PO | Depression; mild-moderate agitation | 10 mg daily; 20 mg daily :: PO :: :: Start 10 mg daily; max 20 mg in elderly due to QT prolongation risk | QT prolongation; concurrent QT-prolonging drugs; severe hepatic impairment | ECG at baseline if cardiac risk; QTc monitoring if >20 mg | - | ROUTINE | ROUTINE | - |
-| Sertraline (Zoloft) | PO | Depression; anxiety | 25 mg daily; 50 mg daily; 100 mg daily :: PO :: :: Start 25 mg daily; increase by 25 mg every 1-2 weeks; typical dose 50-100 mg daily | MAOIs; uncontrolled seizures (lowers threshold slightly) | GI symptoms initially; bleeding risk with anticoagulants | - | ROUTINE | ROUTINE | - |
-| Mirtazapine (Remeron) | PO | Depression with poor appetite, insomnia, and weight loss | 7.5 mg qHS; 15 mg qHS; 30 mg qHS :: PO :: :: Start 7.5-15 mg qHS; may increase to 30-45 mg qHS; lower doses more sedating | MAOIs; angle-closure glaucoma | Weight gain (often desired); sedation; hyperlipidemia | - | ROUTINE | ROUTINE | - |
-| Trazodone | PO | Insomnia; sundowning; mild agitation | 25 mg qHS; 50 mg qHS; 100 mg qHS; 150 mg qHS :: PO :: :: Start 25-50 mg qHS; titrate by 25-50 mg every 3-5 days; typical 50-150 mg qHS for sleep | Concurrent MAOIs; significant QT prolongation | Orthostatic hypotension (fall risk); priapism (rare); QTc | - | ROUTINE | ROUTINE | - |
-| Melatonin | PO | Sleep disturbance; circadian rhythm dysfunction | 3 mg qHS; 6 mg qHS; 9 mg qHS :: PO :: :: Start 3 mg qHS, 30 min before bed; may increase to 6-9 mg if needed | None significant | Daytime drowsiness; minimal side effects | - | ROUTINE | ROUTINE | - |
-| Brexpiprazole (Rexulti) | PO | Agitation in AD (FDA approved 2023) | 0.5 mg daily; 1 mg daily; 2 mg daily :: PO :: :: Start 0.5 mg daily x 1 week; increase to 1 mg daily x 1 week; target 2-3 mg daily | Black box: increased mortality in dementia (but FDA approved for this use) | Weight, metabolic parameters, EPS, falls | - | ROUTINE | ROUTINE | - |
-| Quetiapine (Seroquel) | PO | Severe agitation/psychosis when non-pharmacologic fails | 12.5 mg qHS; 25 mg qHS; 25 mg BID; 50 mg BID :: PO :: :: Start 12.5-25 mg qHS; titrate slowly (25 mg increments); keep dose as low as possible | Black box: increased mortality in dementia; Parkinson's (less risk than other antipsychotics) | Metabolic effects; sedation; falls; QTc | - | EXT | ROUTINE | - |
-| Risperidone (Risperdal) | PO | Severe aggression/psychosis (short-term only) | 0.25 mg BID; 0.5 mg BID; 1 mg BID :: PO :: :: Start 0.25 mg BID; increase by 0.25 mg BID weekly; max 1 mg BID; limit to 6-12 weeks | Black box: increased mortality and CVA in dementia | EPS, metabolic effects, stroke risk, prolactin | - | EXT | ROUTINE | - |
-| Haloperidol | IM/IV/PO | Acute severe agitation in delirium-crisis only (not chronic use) | 0.5 mg IM; 1 mg IM; 2 mg IM :: IM/IV/PO :: :: 0.5-2 mg IM/IV q4-6h PRN; short-term acute use only; avoid chronic use | QT prolongation; Parkinson's disease; DLB (avoid) | QTc; EPS; akathisia | STAT | EXT | - | - |
+| Citalopram | PO | Depression; mild-moderate agitation | 10 mg :: PO :: daily :: Start 10 mg daily; max 20 mg in elderly due to QT prolongation risk | QT prolongation; concurrent QT-prolonging drugs; severe hepatic impairment | ECG at baseline if cardiac risk; QTc monitoring if >20 mg | - | ROUTINE | ROUTINE | - |
+| Sertraline (Zoloft) | PO | Depression; anxiety | 25 mg :: PO :: daily :: Start 25 mg daily; increase by 25 mg every 1-2 weeks; typical dose 50-100 mg daily | MAOIs; uncontrolled seizures (lowers threshold slightly) | GI symptoms initially; bleeding risk with anticoagulants | - | ROUTINE | ROUTINE | - |
+| Mirtazapine (Remeron) | PO | Depression with poor appetite, insomnia, and weight loss | 7.5 mg :: PO :: qHS :: Start 7.5-15 mg qHS; may increase to 30-45 mg qHS; lower doses more sedating | MAOIs; angle-closure glaucoma | Weight gain (often desired); sedation; hyperlipidemia | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Insomnia; sundowning; mild agitation | 25 mg :: PO :: qHS :: Start 25-50 mg qHS; titrate by 25-50 mg every 3-5 days; typical 50-150 mg qHS for sleep | Concurrent MAOIs; significant QT prolongation | Orthostatic hypotension (fall risk); priapism (rare); QTc | - | ROUTINE | ROUTINE | - |
+| Melatonin | PO | Sleep disturbance; circadian rhythm dysfunction | 3 mg :: PO :: qHS :: Start 3 mg qHS, 30 min before bed; may increase to 6-9 mg if needed | None significant | Daytime drowsiness; minimal side effects | - | ROUTINE | ROUTINE | - |
+| Brexpiprazole (Rexulti) | PO | Agitation in AD (FDA approved 2023) | 0.5 mg :: PO :: daily :: Start 0.5 mg daily x 1 week; increase to 1 mg daily x 1 week; target 2-3 mg daily | Black box: increased mortality in dementia (but FDA approved for this use) | Weight, metabolic parameters, EPS, falls | - | ROUTINE | ROUTINE | - |
+| Quetiapine (Seroquel) | PO | Severe agitation/psychosis when non-pharmacologic fails | 12.5 mg :: PO :: qHS :: Start 12.5-25 mg qHS; titrate slowly (25 mg increments); keep dose as low as possible | Black box: increased mortality in dementia; Parkinson's (less risk than other antipsychotics) | Metabolic effects; sedation; falls; QTc | - | EXT | ROUTINE | - |
+| Risperidone (Risperdal) | PO | Severe aggression/psychosis (short-term only) | 0.25 mg :: PO :: BID :: Start 0.25 mg BID; increase by 0.25 mg BID weekly; max 1 mg BID; limit to 6-12 weeks | Black box: increased mortality and CVA in dementia | EPS, metabolic effects, stroke risk, prolactin | - | EXT | ROUTINE | - |
+| Haloperidol | IM/IV/PO | Acute severe agitation in delirium-crisis only (not chronic use) | 0.5 mg :: IM :: q4-6h PRN :: 0.5-2 mg IM/IV q4-6h PRN; short-term acute use only; avoid chronic use | QT prolongation; Parkinson's disease; DLB (avoid) | QTc; EPS; akathisia | STAT | EXT | - | - |
 
 **Non-Pharmacologic Approaches (First-Line for BPSD):**
 - Identify and treat underlying causes (pain, infection, constipation)
@@ -323,6 +329,16 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Reformatted lab tables (1A/1B/1C/LP) to match approved plan column order (venues after test name)
+- Reformatted imaging tables (2A/2B/2C) to match approved plan column order
+- Added CPT codes to all labs, imaging, and procedures
+- Added clinical synonyms and expanded ICD-10 codes
+- Cleaned structured dosing: starting dose only in first field across all treatment rows
+- Removed cross-references ("Same as donepezil", "Same as immediate release") — each row now self-contained
+- Annotated Aducanumab (Aduhelm) as discontinued (January 2024)
+- Added VERSION/CREATED/REVISED header block
 
 **v1.0 (January 27, 2026)**
 - Initial template creation
