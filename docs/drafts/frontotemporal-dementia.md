@@ -1,7 +1,7 @@
 ---
 title: "Frontotemporal Dementia"
 description: "Clinical decision support for frontotemporal dementia diagnosis, behavioral variant, primary progressive aphasia variants, symptomatic management, and genetic evaluation"
-version: "1.0"
+version: "1.1"
 setting: "OPD, HOSP, ED"
 status: draft
 tags:
@@ -25,8 +25,12 @@ tags:
 
 **DIAGNOSIS:** Frontotemporal Dementia (FTD)
 **ICD-10:** G31.09 (Frontotemporal dementia, unspecified); G31.0 (Frontotemporal dementia); F02.80 (Dementia in FTD without behavioral disturbance); F02.81 (Dementia in FTD with behavioral disturbance); G31.01 (Pick's disease)
+**SYNONYMS:** Pick's disease, frontotemporal lobar degeneration, FTLD, behavioral variant frontotemporal dementia, bvFTD, primary progressive aphasia, PPA, semantic dementia, progressive nonfluent aphasia, FTD-MND, FTD-ALS, Pick complex, frontotemporal neurocognitive disorder
 **SCOPE:** Diagnosis and management of frontotemporal lobar degeneration syndromes including behavioral variant FTD (bvFTD), semantic variant primary progressive aphasia (svPPA), nonfluent/agrammatic variant PPA (nfvPPA), FTD with motor neuron disease (FTD-ALS), and genetic forms (C9orf72, MAPT, GRN). Covers diagnostic evaluation, symptomatic treatment, behavioral management, genetic counseling, safety planning, and caregiver support. Primarily outpatient-focused with coverage for ED and hospital presentations of behavioral crises.
 
+**VERSION:** 1.1
+**CREATED:** January 27, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -43,40 +47,40 @@ tags:
 
 ### 1A. Essential/Core Labs (Reversible Causes Screen)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CBC with differential | Rule out infection, anemia, malignancy contributing to behavioral changes | Normal | STAT | STAT | ROUTINE | - |
-| BMP (Na, K, BUN, Cr, glucose) | Metabolic causes of behavioral disturbance (hyponatremia, uremia, hypoglycemia) | Normal electrolytes, renal function | STAT | STAT | ROUTINE | - |
-| TSH | Hypothyroidism can cause apathy; hyperthyroidism can cause behavioral changes | 0.4-4.0 mIU/L | URGENT | ROUTINE | ROUTINE | - |
-| Vitamin B12 | B12 deficiency causes neuropsychiatric symptoms and cognitive decline | >300 pg/mL (>400 optimal) | URGENT | ROUTINE | ROUTINE | - |
-| Folate | Deficiency contributes to cognitive impairment | >3 ng/mL | - | ROUTINE | ROUTINE | - |
-| Hepatic panel (AST, ALT, albumin, ammonia) | Hepatic encephalopathy; nutritional status; liver function for medications | Normal | STAT | ROUTINE | ROUTINE | - |
-| Calcium | Hypercalcemia causes neuropsychiatric symptoms | 8.5-10.5 mg/dL | STAT | ROUTINE | ROUTINE | - |
-| Urinalysis | UTI common cause of acute behavioral changes in elderly | Negative for infection | STAT | STAT | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | - | Rule out infection, anemia, malignancy contributing to behavioral changes | Normal |
+| BMP (Na, K, BUN, Cr, glucose) (CPT 80048) | STAT | STAT | ROUTINE | - | Metabolic causes of behavioral disturbance (hyponatremia, uremia, hypoglycemia) | Normal electrolytes, renal function |
+| TSH (CPT 84443) | URGENT | ROUTINE | ROUTINE | - | Hypothyroidism can cause apathy; hyperthyroidism can cause behavioral changes | 0.4-4.0 mIU/L |
+| Vitamin B12 (CPT 82607) | URGENT | ROUTINE | ROUTINE | - | B12 deficiency causes neuropsychiatric symptoms and cognitive decline | >300 pg/mL (>400 optimal) |
+| Folate (CPT 82746) | - | ROUTINE | ROUTINE | - | Deficiency contributes to cognitive impairment | >3 ng/mL |
+| Hepatic panel (AST, ALT, albumin, ammonia) (CPT 80076) | STAT | ROUTINE | ROUTINE | - | Hepatic encephalopathy; nutritional status; liver function for medications | Normal |
+| Calcium (CPT 82310) | STAT | ROUTINE | ROUTINE | - | Hypercalcemia causes neuropsychiatric symptoms | 8.5-10.5 mg/dL |
+| Urinalysis (CPT 81001) | STAT | STAT | ROUTINE | - | UTI common cause of acute behavioral changes in elderly | Negative for infection |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| RPR or VDRL | Neurosyphilis is treatable cause of behavioral and cognitive changes | Nonreactive | - | ROUTINE | ROUTINE | - |
-| HIV testing | HIV-associated neurocognitive disorder if risk factors | Negative | - | ROUTINE | ROUTINE | - |
-| ESR, CRP | Inflammatory or autoimmune causes; baseline before immunotherapy | Normal | - | ROUTINE | ROUTINE | - |
-| ANA, RF | Screen for systemic autoimmune disease | Negative | - | ROUTINE | ROUTINE | - |
-| Creatine kinase | Elevated in FTD-ALS; baseline for motor neuron involvement | Normal (elevated suggests MND) | - | ROUTINE | ROUTINE | - |
-| EMG/NCS referral | If motor symptoms present; evaluate for ALS overlap | Normal or denervation pattern | - | ROUTINE | ROUTINE | - |
-| Serum progranulin level | Low levels suggest GRN mutation (screening test) | Normal (low <100 ng/mL suggests GRN mutation) | - | - | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| RPR or VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis is treatable cause of behavioral and cognitive changes | Nonreactive |
+| HIV testing (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated neurocognitive disorder if risk factors | Negative |
+| ESR (CPT 85651), CRP (CPT 86140) | - | ROUTINE | ROUTINE | - | Inflammatory or autoimmune causes; baseline before immunotherapy | Normal |
+| ANA (CPT 86235), RF (CPT 86431) | - | ROUTINE | ROUTINE | - | Screen for systemic autoimmune disease | Negative |
+| Creatine kinase (CPT 82550) | - | ROUTINE | ROUTINE | - | Elevated in FTD-ALS; baseline for motor neuron involvement | Normal (elevated suggests MND) |
+| EMG/NCS referral (CPT 95907-95913) | - | ROUTINE | ROUTINE | - | If motor symptoms present; evaluate for ALS overlap | Normal or denervation pattern |
+| Serum progranulin level (CPT 83519) | - | - | ROUTINE | - | Low levels suggest GRN mutation (screening test) | Normal (low <100 ng/mL suggests GRN mutation) |
 
 ### 1C. Rare/Specialized (Genetic and Atypical Evaluation)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| C9orf72 hexanucleotide repeat expansion | Most common genetic cause of FTD; also causes ALS | <30 repeats (pathogenic >30) | - | - | ROUTINE | - |
-| MAPT (tau) gene sequencing | Familial FTD with parkinsonism; tau-positive pathology | No pathogenic mutation | - | - | ROUTINE | - |
-| GRN (progranulin) gene sequencing | Familial FTD; asymmetric atrophy; TDP-43 pathology | No pathogenic mutation | - | - | ROUTINE | - |
-| FTD genetic panel (TARDBP, VCP, CHMP2B, FUS) | Extended genetic evaluation if first-line negative | No pathogenic mutation | - | - | EXT | - |
-| Paraneoplastic antibody panel | Rapid behavioral change; history of cancer; atypical features | Negative | - | EXT | EXT | - |
-| Anti-neuronal antibodies (NMDA-R, LGI1, CASPR2, GAD65) | Autoimmune encephalitis mimicking FTD | Negative | - | EXT | EXT | - |
-| Heavy metal panel (lead, mercury, arsenic) | Occupational exposure history; atypical presentation | Normal | - | - | EXT | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| C9orf72 hexanucleotide repeat expansion (CPT 81479) | - | - | ROUTINE | - | Most common genetic cause of FTD; also causes ALS | <30 repeats (pathogenic >30) |
+| MAPT (tau) gene sequencing (CPT 81479) | - | - | ROUTINE | - | Familial FTD with parkinsonism; tau-positive pathology | No pathogenic mutation |
+| GRN (progranulin) gene sequencing (CPT 81479) | - | - | ROUTINE | - | Familial FTD; asymmetric atrophy; TDP-43 pathology | No pathogenic mutation |
+| FTD genetic panel (TARDBP, VCP, CHMP2B, FUS) (CPT 81479) | - | - | EXT | - | Extended genetic evaluation if first-line negative | No pathogenic mutation |
+| Paraneoplastic antibody panel (CPT 86235) | - | EXT | EXT | - | Rapid behavioral change; history of cancer; atypical features | Negative |
+| Anti-neuronal antibodies (NMDA-R, LGI1, CASPR2, GAD65) (CPT 86255) | - | EXT | EXT | - | Autoimmune encephalitis mimicking FTD | Negative |
+| Heavy metal panel (lead, mercury, arsenic) (CPT 83015/83825/82175) | - | - | EXT | - | Occupational exposure history; atypical presentation | Normal |
 
 ---
 
@@ -84,28 +88,28 @@ tags:
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain without contrast | At initial evaluation | Frontal and/or anterior temporal atrophy; asymmetric patterns; rule out structural causes | MRI-incompatible devices, severe claustrophobia | URGENT | ROUTINE | ROUTINE | - |
-| CT Head non-contrast | If MRI unavailable or contraindicated | Rule out mass, hemorrhage, hydrocephalus; frontal atrophy visible | None | STAT | STAT | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain without contrast (CPT 70551) | URGENT | ROUTINE | ROUTINE | - | At initial evaluation | Frontal and/or anterior temporal atrophy; asymmetric patterns; rule out structural causes | MRI-incompatible devices, severe claustrophobia |
+| CT Head non-contrast (CPT 70450) | STAT | STAT | ROUTINE | - | If MRI unavailable or contraindicated | Rule out mass, hemorrhage, hydrocephalus; frontal atrophy visible | None |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| FDG-PET Brain | Diagnostic confirmation; differentiate from AD | Frontal and/or anterior temporal hypometabolism; sparing of posterior parietal (unlike AD) | None | - | - | ROUTINE | - |
-| MRI Brain volumetrics | Quantify regional atrophy; track progression | Frontal/temporal volume loss; hemispheric asymmetry | MRI contraindications | - | - | ROUTINE | - |
-| Amyloid PET | Exclude AD pathology if clinical uncertainty | Negative amyloid supports FTD diagnosis | None | - | - | ROUTINE | - |
-| EEG | Seizures; behavioral episodes; differentiate from CJD | Usually normal or mild slowing; no periodic discharges (CJD has) | None | URGENT | ROUTINE | ROUTINE | - |
-| Sleep study (polysomnography) | RBD suggests DLB rather than FTD; sleep disturbance common | REM without atonia absent (if RBD, reconsider DLB) | None | - | - | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| FDG-PET Brain (CPT 78816) | - | - | ROUTINE | - | Diagnostic confirmation; differentiate from AD | Frontal and/or anterior temporal hypometabolism; sparing of posterior parietal (unlike AD) | None |
+| MRI Brain volumetrics (CPT 70553) | - | - | ROUTINE | - | Quantify regional atrophy; track progression | Frontal/temporal volume loss; hemispheric asymmetry | MRI contraindications |
+| Amyloid PET (CPT 78816) | - | - | ROUTINE | - | Exclude AD pathology if clinical uncertainty | Negative amyloid supports FTD diagnosis | None |
+| EEG (CPT 95819) | URGENT | ROUTINE | ROUTINE | - | Seizures; behavioral episodes; differentiate from CJD | Usually normal or mild slowing; no periodic discharges (CJD has) | None |
+| Sleep study (polysomnography) (CPT 95810) | - | - | ROUTINE | - | RBD suggests DLB rather than FTD; sleep disturbance common | REM without atonia absent (if RBD, reconsider DLB) | None |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| DaTscan (ioflupane I-123) | Parkinsonism present; differentiate PSP/CBD from PD/DLB | Reduced uptake in PSP/CBD; may be normal early in bvFTD | Iodine hypersensitivity | - | - | EXT | - |
-| Tau PET (flortaucipir) | Research; distinguish tau-positive from TDP-43 FTD | Tau-positive FTD shows frontal/temporal uptake | None | - | - | EXT | - |
-| Whole body PET-CT | Paraneoplastic workup if suspected | Rule out occult malignancy | None | - | EXT | EXT | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| DaTscan (ioflupane I-123) (CPT 78607) | - | - | EXT | - | Parkinsonism present; differentiate PSP/CBD from PD/DLB | Reduced uptake in PSP/CBD; may be normal early in bvFTD | Iodine hypersensitivity |
+| Tau PET (flortaucipir) (CPT 78816) | - | - | EXT | - | Research; distinguish tau-positive from TDP-43 FTD | Tau-positive FTD shows frontal/temporal uptake | None |
+| Whole body PET-CT (CPT 78816) | - | EXT | EXT | - | Paraneoplastic workup if suspected | Rule out occult malignancy | None |
 
 ---
 
@@ -115,16 +119,16 @@ tags:
 **Timing:** ROUTINE for diagnostic evaluation; URGENT if autoimmune or infectious etiology suspected
 **Volume Required:** 10-15 mL standard; additional for research biomarkers
 
-| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|-------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Cell count, protein, glucose | Rule out infection, inflammation | WBC <5, protein <45 mg/dL, glucose >60% serum | URGENT | ROUTINE | ROUTINE | - |
-| CSF Aβ42/Aβ40 ratio | Distinguish from AD (normal in FTD) | Normal ratio >0.08 supports non-AD etiology | - | ROUTINE | ROUTINE | - |
-| CSF total tau (t-tau) | Non-specific neurodegeneration marker | May be elevated but less than AD | - | ROUTINE | ROUTINE | - |
-| CSF phosphorylated tau (p-tau181) | AD-specific; should be normal in FTD | Normal p-tau supports FTD over AD | - | ROUTINE | ROUTINE | - |
-| CSF NfL (neurofilament light) | Neurodegeneration marker; prognostic; very high in ALS-FTD | Elevated (higher = faster progression) | - | ROUTINE | ROUTINE | - |
-| 14-3-3 protein | Rapid progression; rule out CJD | Negative (positive suggests CJD) | - | ROUTINE | ROUTINE | - |
-| RT-QuIC | Prion disease confirmation if suspected | Negative | - | ROUTINE | EXT | - |
-| Autoimmune encephalitis panel (CSF) | Subacute behavioral change; seizures | Negative | - | EXT | EXT | - |
+| Study | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|-------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Cell count, protein, glucose (CPT 89050/89051) | URGENT | ROUTINE | ROUTINE | - | Rule out infection, inflammation | WBC <5, protein <45 mg/dL, glucose >60% serum |
+| CSF Aβ42/Aβ40 ratio (CPT 83519) | - | ROUTINE | ROUTINE | - | Distinguish from AD (normal in FTD) | Normal ratio >0.08 supports non-AD etiology |
+| CSF total tau (t-tau) (CPT 83519) | - | ROUTINE | ROUTINE | - | Non-specific neurodegeneration marker | May be elevated but less than AD |
+| CSF phosphorylated tau (p-tau181) (CPT 83519) | - | ROUTINE | ROUTINE | - | AD-specific; should be normal in FTD | Normal p-tau supports FTD over AD |
+| CSF NfL (neurofilament light) (CPT 83519) | - | ROUTINE | ROUTINE | - | Neurodegeneration marker; prognostic; very high in ALS-FTD | Elevated (higher = faster progression) |
+| 14-3-3 protein (CPT 83519) | - | ROUTINE | ROUTINE | - | Rapid progression; rule out CJD | Negative (positive suggests CJD) |
+| RT-QuIC (CPT 83519) | - | ROUTINE | EXT | - | Prion disease confirmation if suspected | Negative |
+| Autoimmune encephalitis panel (CSF) (CPT 86255) | - | EXT | EXT | - | Subacute behavioral change; seizures | Negative |
 
 **Special Handling:** CSF biomarkers require polypropylene tubes; freeze within 1 hour; send to qualified reference lab
 **Contraindications:** Coagulopathy (INR >1.5, platelets <50k); posterior fossa mass; skin infection at puncture site
@@ -139,41 +143,41 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Lorazepam | PO/IM/IV | Acute severe agitation when de-escalation fails | 0.5 mg PO; 1 mg PO; 0.5 mg IM; 1 mg IM :: PO/IM/IV :: :: 0.5-1 mg PO or IM; may repeat q30min PRN; max 4 mg; short-term use only | Respiratory depression; severe hepatic impairment; paradoxical agitation risk in elderly | Respiratory status; sedation; paradoxical reactions | STAT | STAT | - | - |
-| Haloperidol | IM/IV | Severe aggression/psychosis when benzodiazepines insufficient | 0.5 mg IM; 1 mg IM; 2 mg IM :: IM/IV :: :: 0.5-2 mg IM q4-6h PRN; lowest effective dose; short-term crisis only | QT prolongation; Parkinson's disease; FTD-parkinsonism overlap (avoid if possible) | QTc; EPS; akathisia; sedation | STAT | EXT | - | - |
-| Environmental de-escalation | N/A | First-line for all behavioral disturbance | N/A :: N/A :: :: Reduce stimulation; dim lights; calm voice; remove triggers; one-to-one observation; familiar caregiver presence | None | Response to intervention | STAT | STAT | ROUTINE | - |
+| Lorazepam | PO/IM/IV | Acute severe agitation when de-escalation fails | 0.5 mg :: PO/IM/IV :: PRN :: 0.5-1 mg PO or IM; may repeat q30min PRN; max 4 mg; short-term use only | Respiratory depression; severe hepatic impairment; paradoxical agitation risk in elderly | Respiratory status; sedation; paradoxical reactions | STAT | STAT | - | - |
+| Haloperidol | IM/IV | Severe aggression/psychosis when benzodiazepines insufficient | 0.5 mg :: IM/IV :: PRN :: 0.5-2 mg IM q4-6h PRN; lowest effective dose; short-term crisis only | QT prolongation; Parkinson's disease; FTD-parkinsonism overlap (avoid if possible) | QTc; EPS; akathisia; sedation | STAT | EXT | - | - |
+| Environmental de-escalation | N/A | First-line for all behavioral disturbance | N/A :: N/A :: N/A :: Reduce stimulation; dim lights; calm voice; remove triggers; one-to-one observation; familiar caregiver presence | None | Response to intervention | STAT | STAT | ROUTINE | - |
 
 ### 3B. Symptomatic Treatments (Behavioral and Neuropsychiatric)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Trazodone | PO | Agitation; irritability; disinhibition; insomnia; compulsive behaviors | 25 mg BID; 50 mg BID; 50 mg TID; 100 mg TID :: PO :: :: Start 25-50 mg BID; titrate by 25-50 mg q3-5d; typical 150-300 mg/day divided; max 400 mg/day | Concurrent MAOIs; significant QT prolongation | Orthostatic hypotension (fall risk); priapism (rare); QTc; sedation | - | ROUTINE | ROUTINE | - |
-| Sertraline (Zoloft) | PO | Depression; apathy; anxiety; compulsive behaviors; disinhibition | 25 mg daily; 50 mg daily; 100 mg daily; 150 mg daily :: PO :: :: Start 25 mg daily; increase by 25-50 mg every 1-2 weeks; typical 100-200 mg daily; max 200 mg | MAOIs; uncontrolled seizures (lowers threshold slightly) | GI symptoms; bleeding risk; apathy (rarely worsens) | - | ROUTINE | ROUTINE | - |
-| Citalopram | PO | Depression; anxiety; compulsive behaviors | 10 mg daily; 20 mg daily :: PO :: :: Start 10 mg daily; max 20 mg in elderly due to QT prolongation risk | QT prolongation; concurrent QT-prolonging drugs; severe hepatic impairment | ECG at baseline if cardiac risk; QTc monitoring | - | ROUTINE | ROUTINE | - |
-| Escitalopram (Lexapro) | PO | Depression; anxiety; better tolerated than citalopram | 5 mg daily; 10 mg daily :: PO :: :: Start 5 mg daily; increase to 10 mg after 1 week; max 10 mg in elderly | QT prolongation; concurrent MAOIs | QTc if cardiac risk factors | - | ROUTINE | ROUTINE | - |
-| Fluvoxamine | PO | Compulsive behaviors; repetitive behaviors; may have specific benefit in FTD | 25 mg qHS; 50 mg qHS; 100 mg qHS; 100 mg BID :: PO :: :: Start 25 mg qHS; titrate by 25-50 mg weekly; typical 100-200 mg/day; max 300 mg/day | MAOIs; alosetron, tizanidine (drug interactions) | Multiple drug interactions (CYP1A2, 2C19, 3A4 inhibitor); GI symptoms | - | ROUTINE | ROUTINE | - |
-| Mirtazapine (Remeron) | PO | Depression with poor appetite, weight loss, and insomnia | 7.5 mg qHS; 15 mg qHS; 30 mg qHS :: PO :: :: Start 7.5-15 mg qHS; may increase to 30-45 mg qHS; lower doses more sedating | MAOIs; angle-closure glaucoma | Weight gain (often desired in FTD); sedation; hyperlipidemia | - | ROUTINE | ROUTINE | - |
-| Bupropion (Wellbutrin) | PO | Apathy-predominant FTD; depression; may help with motivation | 100 mg BID; 150 mg SR daily; 150 mg SR BID; 300 mg XL daily :: PO :: :: Start 100 mg BID or 150 mg SR daily; titrate to 150 mg SR BID or 300 mg XL daily | Seizure disorder; bulimia/anorexia; concurrent MAOIs; abrupt alcohol withdrawal | Seizure risk (dose-related); insomnia; agitation (may worsen some patients) | - | - | ROUTINE | - |
-| Melatonin | PO | Sleep disturbance; circadian rhythm dysfunction; sundowning | 3 mg qHS; 6 mg qHS; 9 mg qHS :: PO :: :: Start 3 mg qHS, 30 min before bed; may increase to 6-9 mg if needed | None significant | Daytime drowsiness; minimal side effects | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Agitation; irritability; disinhibition; insomnia; compulsive behaviors | 25 mg :: PO :: BID :: Start 25-50 mg BID; titrate by 25-50 mg q3-5d; typical 150-300 mg/day divided; max 400 mg/day | Concurrent MAOIs; significant QT prolongation | Orthostatic hypotension (fall risk); priapism (rare); QTc; sedation | - | ROUTINE | ROUTINE | - |
+| Sertraline (Zoloft) | PO | Depression; apathy; anxiety; compulsive behaviors; disinhibition | 25 mg :: PO :: daily :: Start 25 mg daily; increase by 25-50 mg every 1-2 weeks; typical 100-200 mg daily; max 200 mg | MAOIs; uncontrolled seizures (lowers threshold slightly) | GI symptoms; bleeding risk; apathy (rarely worsens) | - | ROUTINE | ROUTINE | - |
+| Citalopram | PO | Depression; anxiety; compulsive behaviors | 10 mg :: PO :: daily :: Start 10 mg daily; max 20 mg in elderly due to QT prolongation risk | QT prolongation; concurrent QT-prolonging drugs; severe hepatic impairment | ECG at baseline if cardiac risk; QTc monitoring | - | ROUTINE | ROUTINE | - |
+| Escitalopram (Lexapro) | PO | Depression; anxiety; better tolerated than citalopram | 5 mg :: PO :: daily :: Start 5 mg daily; increase to 10 mg after 1 week; max 10 mg in elderly | QT prolongation; concurrent MAOIs | QTc if cardiac risk factors | - | ROUTINE | ROUTINE | - |
+| Fluvoxamine | PO | Compulsive behaviors; repetitive behaviors; may have specific benefit in FTD | 25 mg :: PO :: qHS :: Start 25 mg qHS; titrate by 25-50 mg weekly; typical 100-200 mg/day; max 300 mg/day | MAOIs; alosetron, tizanidine (drug interactions) | Multiple drug interactions (CYP1A2, 2C19, 3A4 inhibitor); GI symptoms | - | ROUTINE | ROUTINE | - |
+| Mirtazapine (Remeron) | PO | Depression with poor appetite, weight loss, and insomnia | 7.5 mg :: PO :: qHS :: Start 7.5-15 mg qHS; may increase to 30-45 mg qHS; lower doses more sedating | MAOIs; angle-closure glaucoma | Weight gain (often desired in FTD); sedation; hyperlipidemia | - | ROUTINE | ROUTINE | - |
+| Bupropion (Wellbutrin) | PO | Apathy-predominant FTD; depression; may help with motivation | 100 mg :: PO :: BID :: Start 100 mg BID or 150 mg SR daily; titrate to 150 mg SR BID or 300 mg XL daily | Seizure disorder; bulimia/anorexia; concurrent MAOIs; abrupt alcohol withdrawal | Seizure risk (dose-related); insomnia; agitation (may worsen some patients) | - | - | ROUTINE | - |
+| Melatonin | PO | Sleep disturbance; circadian rhythm dysfunction; sundowning | 3 mg :: PO :: qHS :: Start 3 mg qHS, 30 min before bed; may increase to 6-9 mg if needed | None significant | Daytime drowsiness; minimal side effects | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Second-line/Refractory (Behavioral Management)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Quetiapine (Seroquel) | PO | Severe agitation/psychosis when non-pharmacologic and first-line fail | 12.5 mg qHS; 25 mg qHS; 25 mg BID; 50 mg BID :: PO :: :: Start 12.5-25 mg qHS; titrate slowly (25 mg increments); keep dose as low as possible; max 200 mg/day | Black box: increased mortality in dementia; avoid in FTD-parkinsonism | Metabolic effects; sedation; falls; QTc; EPS | - | EXT | ROUTINE | - |
-| Olanzapine | PO/IM | Severe agitation when other options fail; IM for acute crisis | 2.5 mg daily; 5 mg daily; 2.5 mg IM; 5 mg IM :: PO/IM :: :: PO: Start 2.5 mg daily; increase slowly; max 10 mg; IM: 2.5-5 mg for acute crisis | Black box: increased mortality in dementia; diabetes; QT prolongation | Weight gain; metabolic syndrome; sedation; EPS | EXT | EXT | EXT | - |
-| Dextromethorphan/quinidine (Nuedexta) | PO | Pseudobulbar affect; emotional lability; pathological laughing/crying | 20/10 mg daily; 20/10 mg BID :: PO :: :: Start 20/10 mg daily x 7 days; then 20/10 mg BID | QT prolongation; concurrent MAOIs; quinidine hypersensitivity; complete AV block | QTc; avoid in hepatic/renal impairment | - | ROUTINE | ROUTINE | - |
-| Valproic acid | PO | Impulsivity; aggression; mood instability (off-label) | 125 mg BID; 250 mg BID; 500 mg BID :: PO :: :: Start 125-250 mg BID; titrate to 500-1000 mg/day; monitor levels | Hepatic disease; urea cycle disorders; mitochondrial disorders | Valproate level, LFTs, CBC, ammonia; weight gain; tremor; thrombocytopenia | - | ROUTINE | ROUTINE | - |
-| Memantine (Namenda) | PO | May help some behavioral symptoms; limited evidence | 5 mg daily; 5 mg BID; 10 mg BID :: PO :: :: Start 5 mg daily; increase by 5 mg/week to 10 mg BID; evidence weak in FTD | Severe renal impairment (reduce dose) | Confusion, dizziness; generally well tolerated | - | - | ROUTINE | - |
-| Methylphenidate | PO | Severe apathy unresponsive to other treatments | 2.5 mg BID; 5 mg BID; 10 mg BID :: PO :: :: Start 2.5-5 mg BID (morning and noon); titrate slowly; max 20 mg/day | Severe anxiety; cardiac arrhythmias; glaucoma; concurrent MAOIs | BP, HR; appetite; insomnia; agitation; abuse potential | - | - | EXT | - |
+| Quetiapine (Seroquel) | PO | Severe agitation/psychosis when non-pharmacologic and first-line fail | 12.5 mg :: PO :: qHS :: Start 12.5-25 mg qHS; titrate slowly (25 mg increments); keep dose as low as possible; max 200 mg/day | Black box: increased mortality in dementia; avoid in FTD-parkinsonism | Metabolic effects; sedation; falls; QTc; EPS | - | EXT | ROUTINE | - |
+| Olanzapine | PO/IM | Severe agitation when other options fail; IM for acute crisis | 2.5 mg :: PO/IM :: daily :: PO: Start 2.5 mg daily; increase slowly; max 10 mg; IM: 2.5-5 mg for acute crisis | Black box: increased mortality in dementia; diabetes; QT prolongation | Weight gain; metabolic syndrome; sedation; EPS | EXT | EXT | EXT | - |
+| Dextromethorphan/quinidine (Nuedexta) | PO | Pseudobulbar affect; emotional lability; pathological laughing/crying | 20/10 mg :: PO :: daily :: Start 20/10 mg daily x 7 days; then 20/10 mg BID | QT prolongation; concurrent MAOIs; quinidine hypersensitivity; complete AV block | QTc; avoid in hepatic/renal impairment | - | ROUTINE | ROUTINE | - |
+| Valproic acid | PO | Impulsivity; aggression; mood instability (off-label) | 125 mg :: PO :: BID :: Start 125-250 mg BID; titrate to 500-1000 mg/day; monitor levels | Hepatic disease; urea cycle disorders; mitochondrial disorders | Valproate level, LFTs, CBC, ammonia; weight gain; tremor; thrombocytopenia | - | ROUTINE | ROUTINE | - |
+| Memantine (Namenda) | PO | May help some behavioral symptoms; limited evidence | 5 mg :: PO :: daily :: Start 5 mg daily; increase by 5 mg/week to 10 mg BID; evidence weak in FTD | Severe renal impairment (reduce dose) | Confusion, dizziness; generally well tolerated | - | - | ROUTINE | - |
+| Methylphenidate | PO | Severe apathy unresponsive to other treatments | 2.5 mg :: PO :: BID :: Start 2.5-5 mg BID (morning and noon); titrate slowly; max 20 mg/day | Severe anxiety; cardiac arrhythmias; glaucoma; concurrent MAOIs | BP, HR; appetite; insomnia; agitation; abuse potential | - | - | EXT | - |
 
 ### 3D. Treatments to AVOID in FTD
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Donepezil (Aricept) | PO | AVOID - May worsen behavioral symptoms in FTD | AVOID :: PO :: :: Do NOT use; cholinesterase inhibitors can worsen disinhibition, agitation, and behavioral symptoms in FTD | FTD diagnosis | Worsening behavior if inadvertently started | - | - | - | - |
-| Rivastigmine (Exelon) | PO/TD | AVOID - May worsen behavioral symptoms in FTD | AVOID :: PO/TD :: :: Do NOT use; cholinesterase inhibitors not recommended in FTD; may cause paradoxical worsening | FTD diagnosis | Worsening behavior if inadvertently started | - | - | - | - |
-| Galantamine (Razadyne) | PO | AVOID - May worsen behavioral symptoms in FTD | AVOID :: PO :: :: Do NOT use; cholinesterase inhibitors contraindicated in FTD | FTD diagnosis | Worsening behavior if inadvertently started | - | - | - | - |
+| Donepezil (Aricept) | PO | AVOID - May worsen behavioral symptoms in FTD | AVOID :: PO :: N/A :: Do NOT use; cholinesterase inhibitors can worsen disinhibition, agitation, and behavioral symptoms in FTD | FTD diagnosis | Worsening behavior if inadvertently started | - | - | - | - |
+| Rivastigmine (Exelon) | PO/TD | AVOID - May worsen behavioral symptoms in FTD | AVOID :: PO/TD :: N/A :: Do NOT use; cholinesterase inhibitors not recommended in FTD; may cause paradoxical worsening | FTD diagnosis | Worsening behavior if inadvertently started | - | - | - | - |
+| Galantamine (Razadyne) | PO | AVOID - May worsen behavioral symptoms in FTD | AVOID :: PO :: N/A :: Do NOT use; cholinesterase inhibitors contraindicated in FTD | FTD diagnosis | Worsening behavior if inadvertently started | - | - | - | - |
 
 **Note on Antipsychotics:** Use with extreme caution. Increased mortality risk in dementia; increased risk of EPS in FTD-parkinsonism; reserve for severe, refractory cases where safety is at risk.
 
@@ -183,9 +187,9 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Riluzole | PO | FTD with ALS overlap; may modestly slow MND progression | 50 mg BID :: PO :: :: 50 mg PO BID; take 1 hour before or 2 hours after meals | Hepatic impairment; pregnancy | LFTs monthly x 3 months, then q3mo; neutropenia | - | ROUTINE | ROUTINE | - |
-| Edaravone (Radicava) | IV/PO | FTD-ALS if early in disease course | 60 mg IV daily x 14d; 10-day cycles :: IV/PO :: :: Initial: 60 mg IV daily x 14 days; maintenance: 60 mg IV daily x 10 days of 14-day cycles; oral formulation available | Hypersensitivity; sulfite allergy | Infusion reactions; hypersensitivity | - | ROUTINE | ROUTINE | - |
-| Sodium phenylbutyrate/taurursodiol (Relyvrio) | PO | FTD-ALS overlap; neuroprotective | 3g/1g sachet BID :: PO :: :: One sachet dissolved in water BID; titrate over 3 weeks to full dose | Hepatic impairment | GI symptoms (diarrhea, nausea); gallbladder disorders | - | - | ROUTINE | - |
+| Riluzole | PO | FTD with ALS overlap; may modestly slow MND progression | 50 mg :: PO :: BID :: 50 mg PO BID; take 1 hour before or 2 hours after meals | Hepatic impairment; pregnancy | LFTs monthly x 3 months, then q3mo; neutropenia | - | ROUTINE | ROUTINE | - |
+| Edaravone (Radicava) | IV/PO | FTD-ALS if early in disease course | 60 mg :: IV/PO :: daily :: Initial: 60 mg IV daily x 14 days; maintenance: 60 mg IV daily x 10 days of 14-day cycles; oral formulation available | Hypersensitivity; sulfite allergy | Infusion reactions; hypersensitivity | - | ROUTINE | ROUTINE | - |
+| ~~Sodium phenylbutyrate/taurursodiol (Relyvrio)~~ | ~~PO~~ | ~~FTD-ALS overlap; neuroprotective~~ | **WITHDRAWN** :: N/A :: N/A :: **WITHDRAWN FROM MARKET (April 2024)** - Amylyx withdrew Relyvrio after the Phase III PHOENIX trial failed to demonstrate efficacy. No longer available for prescribing. | N/A | N/A | - | - | - | - |
 
 ---
 
@@ -312,10 +316,21 @@ tags:
 | Serum progranulin as GRN mutation screen | Class II, Level B | [Finch et al. J Mol Diagn 2009](https://pubmed.ncbi.nlm.nih.gov/19359499/) |
 | Practice guidelines for FTD management | Class III, Level C | [Tsai et al. Neurology 2021](https://pubmed.ncbi.nlm.nih.gov/34341099/) |
 | Riluzole in ALS | Class I, Level A | [Miller et al. Cochrane 2012](https://pubmed.ncbi.nlm.nih.gov/22419334/) |
+| Relyvrio (AMX0035) withdrawn after PHOENIX trial failure | N/A | Amylyx Pharmaceuticals press release, April 2024; PHOENIX trial (NCT05021536) |
 
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Reformatted lab tables (1A/1B/1C) to standard column order: Test | ED | HOSP | OPD | ICU | Rationale | Target Finding
+- Reformatted imaging tables (2A/2B/2C) and LP table to standard column order with venues in positions 2-5
+- Added inline CPT codes to all lab tests, imaging studies, and LP studies
+- Fixed structured dosing format: starting dose only in first field across all treatment sections
+- **SAFETY: Annotated Relyvrio (sodium phenylbutyrate/taurursodiol) as WITHDRAWN from market (April 2024) after PHOENIX trial failure**
+- Added clinical synonyms for searchability
+- Added VERSION/CREATED/REVISED header block
+- Added Relyvrio withdrawal to Evidence & References section
 
 **v1.0 (January 27, 2026)**
 - Initial template creation

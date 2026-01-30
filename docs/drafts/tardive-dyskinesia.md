@@ -1,7 +1,7 @@
 ---
 title: "Tardive Dyskinesia"
 description: "Clinical decision support for tardive dyskinesia evaluation, prevention, and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD"
 status: draft
 tags:
@@ -26,6 +26,10 @@ tags:
 **SYNONYMS:** TD, tardive syndrome, tardive movement disorder, persistent tardive syndrome
 **SCOPE:** Diagnosis confirmation, severity assessment using AIMS, identification of causative agents, risk factor evaluation, FDA-approved VMAT2 inhibitor therapy, antipsychotic management strategies, prevention, and psychiatric coordination. Covers classic orofacial-lingual TD, tardive dystonia, tardive akathisia, and tardive stereotypy.
 
+**VERSION:** 1.1
+**CREATED:** January 27, 2026
+**REVISED:** January 30, 2026
+
 **STATUS:** Draft - Pending Review
 
 ---
@@ -42,33 +46,33 @@ tags:
 
 ### 1A. Essential/Core Labs
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CMP (comprehensive metabolic panel) | Baseline renal/hepatic function before VMAT2 inhibitor therapy; electrolyte abnormalities can worsen movements | Normal | STAT | ROUTINE | ROUTINE | STAT |
-| CBC with differential | Baseline for medication monitoring; rule out infection if acute change | Normal | STAT | ROUTINE | ROUTINE | STAT |
-| TSH | Thyroid dysfunction can cause or exacerbate movement disorders | Normal (0.4-4.0 mIU/L) | URGENT | ROUTINE | ROUTINE | - |
-| Medication and dose history review | Identify causative agent(s): antipsychotics, metoclopramide, prochlorperazine, other dopamine blockers | Document agent, duration, cumulative dose | STAT | ROUTINE | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CMP (80053) | STAT | ROUTINE | ROUTINE | STAT | Baseline renal/hepatic function before VMAT2 inhibitor therapy; electrolyte abnormalities can worsen movements | Normal |
+| CBC with differential (85025) | STAT | ROUTINE | ROUTINE | STAT | Baseline for medication monitoring; rule out infection if acute change | Normal |
+| TSH (84443) | URGENT | ROUTINE | ROUTINE | - | Thyroid dysfunction can cause or exacerbate movement disorders | Normal (0.4-4.0 mIU/L) |
+| Medication and dose history review | STAT | ROUTINE | ROUTINE | - | Identify causative agent(s): antipsychotics, metoclopramide, prochlorperazine, other dopamine blockers | Document agent, duration, cumulative dose |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Ceruloplasmin, serum copper | Rule out Wilson's disease if age <50 or atypical presentation | Normal | - | EXT | ROUTINE | - |
-| 24-hour urine copper | Wilson's disease confirmation if ceruloplasmin low or borderline | <100 μg/24hr | - | - | EXT | - |
-| Vitamin B12, folate | Deficiency can cause movement disorders | Normal | - | ROUTINE | ROUTINE | - |
-| Iron studies (ferritin, serum iron, TIBC) | Rule out brain iron accumulation disorders | Normal | - | EXT | ROUTINE | - |
-| CK (creatine kinase) | If concern for neuroleptic malignant syndrome or severe dystonia | Normal | STAT | STAT | - | STAT |
-| Antipsychotic drug level | Assess compliance and toxicity if indicated | Therapeutic range | - | ROUTINE | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Ceruloplasmin, serum copper (82390/82525) | - | EXT | ROUTINE | - | Rule out Wilson's disease if age <50 or atypical presentation | Normal |
+| 24-hour urine copper (82525) | - | - | EXT | - | Wilson's disease confirmation if ceruloplasmin low or borderline | <100 μg/24hr |
+| Vitamin B12, folate (82607/82746) | - | ROUTINE | ROUTINE | - | Deficiency can cause movement disorders | Normal |
+| Iron studies: ferritin, serum iron, TIBC (82728/83540/83550) | - | EXT | ROUTINE | - | Rule out brain iron accumulation disorders | Normal |
+| CK (82550) | STAT | STAT | - | STAT | If concern for neuroleptic malignant syndrome or severe dystonia | Normal |
+| Antipsychotic drug level (80299) | - | ROUTINE | ROUTINE | - | Assess compliance and toxicity if indicated | Therapeutic range |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Huntington disease genetic testing (HTT CAG repeats) | Chorea with psychiatric history; family history | <36 CAG repeats (normal) | - | - | EXT | - |
-| Acanthocyte smear | Neuroacanthocytosis if orofacial dyskinesia with chorea | Negative | - | - | EXT | - |
-| Paraneoplastic antibody panel | Atypical movement disorder; occult malignancy; autoimmune chorea | Negative | - | EXT | EXT | - |
-| Anti-NMDA receptor antibodies | Young patient; psychiatric symptoms; orofacial dyskinesia | Negative | - | EXT | EXT | - |
-| SLC6A3 genetic testing (DAT-1) | Research; consider if dopamine transporter dysfunction suspected | Normal | - | - | EXT | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Huntington disease genetic testing, HTT CAG repeats (81401) | - | - | EXT | - | Chorea with psychiatric history; family history | <36 CAG repeats (normal) |
+| Acanthocyte smear (85060) | - | - | EXT | - | Neuroacanthocytosis if orofacial dyskinesia with chorea | Negative |
+| Paraneoplastic antibody panel (86255) | - | EXT | EXT | - | Atypical movement disorder; occult malignancy; autoimmune chorea | Negative |
+| Anti-NMDA receptor antibodies (86255) | - | EXT | EXT | - | Young patient; psychiatric symptoms; orofacial dyskinesia | Negative |
+| SLC6A3 genetic testing (81479) | - | - | EXT | - | Research; consider if dopamine transporter dysfunction suspected | Normal |
 
 ---
 
@@ -76,27 +80,27 @@ tags:
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| AIMS (Abnormal Involuntary Movement Scale) | At evaluation; before treatment; q3-6 months on antipsychotics | Document baseline severity (0-4 scale per item; total score) | None | URGENT | ROUTINE | ROUTINE | - |
-| Clinical examination (orofacial, trunk, limbs) | At evaluation | Characterize movement type, distribution, severity | None | STAT | ROUTINE | ROUTINE | - |
-| Video documentation | At baseline and follow-up | Record for comparison; share with psychiatry | Patient consent | - | ROUTINE | ROUTINE | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| AIMS — Abnormal Involuntary Movement Scale (96127) | URGENT | ROUTINE | ROUTINE | - | At evaluation; before treatment; q3-6 months on antipsychotics | Document baseline severity (0-4 scale per item; total score) | None |
+| Clinical examination: orofacial, trunk, limbs | STAT | ROUTINE | ROUTINE | - | At evaluation | Characterize movement type, distribution, severity | None |
+| Video documentation | - | ROUTINE | ROUTINE | - | At baseline and follow-up | Record for comparison; share with psychiatry | Patient consent |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain | Atypical presentation; focal findings; rule out structural lesion | Normal or chronic dopaminergic medication changes | MRI-incompatible devices | URGENT | ROUTINE | ROUTINE | - |
-| DaTscan (ioflupane I-123) | Differentiate from Parkinson's disease or Huntington's if uncertain | Normal or mild reduction (dopamine blockers can affect) | Iodine hypersensitivity | - | - | EXT | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain (70553) | URGENT | ROUTINE | ROUTINE | - | Atypical presentation; focal findings; rule out structural lesion | Normal or chronic dopaminergic medication changes | MRI-incompatible devices |
+| DaTscan, ioflupane I-123 (78607) | - | - | EXT | - | Differentiate from Parkinson's disease or Huntington's if uncertain | Normal or mild reduction (dopamine blockers can affect) | Iodine hypersensitivity |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain with SWI sequence | Suspected brain iron accumulation (NBIA) | No abnormal iron deposition | MRI contraindications | - | EXT | EXT | - |
-| PET scan (FDG or dopamine receptor imaging) | Research; atypical cases | Variable | None | - | - | EXT | - |
-| Slit lamp examination | Wilson's disease evaluation | No Kayser-Fleischer rings | None | - | EXT | EXT | - |
-| EMG | Characterize tremor vs dystonic movements | Define movement characteristics | None | - | - | EXT | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain with SWI sequence (70553) | - | EXT | EXT | - | Suspected brain iron accumulation (NBIA) | No abnormal iron deposition | MRI contraindications |
+| PET scan, FDG or dopamine receptor imaging (78816) | - | - | EXT | - | Research; atypical cases | Variable | None |
+| Slit lamp examination (92012) | - | EXT | EXT | - | Wilson's disease evaluation | No Kayser-Fleischer rings | None |
+| EMG (95886) | - | - | EXT | - | Characterize tremor vs dystonic movements | Define movement characteristics | None |
 
 ---
 
@@ -106,38 +110,38 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Discontinue or reduce causative agent | N/A | First step if psychiatrically safe; requires psychiatry coordination | N/A :: N/A :: :: Collaborate with psychiatry; gradual taper preferred if stopping; dose reduction may help | Cannot discontinue if psychosis relapse risk too high | Monitor for psychiatric decompensation | URGENT | URGENT | ROUTINE | URGENT |
-| Switch to clozapine | PO | Lowest TD risk; for patients requiring continued antipsychotic | 12.5 mg qHS; 25 mg BID; 50 mg BID; 100 mg BID :: PO :: :: Start 12.5-25 mg/day; titrate by 25-50 mg q3-7d; target 200-450 mg/day; requires REMS | Agranulocytosis history; severe neutropenia; seizure disorder (relative) | ANC weekly x 6mo, q2wk x 6mo, then monthly; seizures; myocarditis | URGENT | URGENT | ROUTINE | - |
-| Switch to quetiapine | PO | Lower TD risk; for patients requiring continued antipsychotic | 25 mg BID; 50 mg BID; 100 mg BID; 200 mg BID :: PO :: :: Start 25-50 mg BID; titrate by 50-100 mg/day q2-3d; target 300-800 mg/day | QT prolongation; severe hepatic impairment | QTc, sedation, metabolic parameters | URGENT | URGENT | ROUTINE | - |
-| Benzodiazepine (severe distress) | PO/IV | Severe anxiety/distress from TD movements; temporary relief | 0.5 mg TID; 1 mg TID :: PO :: :: Lorazepam 0.5-1 mg TID PRN for acute distress; short-term only | Respiratory depression; substance use disorder | Sedation, respiratory status | URGENT | URGENT | - | URGENT |
+| Discontinue or reduce causative agent | N/A | First step if psychiatrically safe; requires psychiatry coordination | N/A :: N/A :: N/A :: Collaborate with psychiatry; gradual taper preferred if stopping; dose reduction may help | Cannot discontinue if psychosis relapse risk too high | Monitor for psychiatric decompensation | URGENT | URGENT | ROUTINE | URGENT |
+| Switch to clozapine | PO | Lowest TD risk; for patients requiring continued antipsychotic | 12.5 mg :: PO :: qHS :: Start 12.5-25 mg/day; titrate by 25-50 mg q3-7d; target 200-450 mg/day; requires REMS | Agranulocytosis history; severe neutropenia; seizure disorder (relative) | ANC weekly x 6mo, q2wk x 6mo, then monthly; seizures; myocarditis | URGENT | URGENT | ROUTINE | - |
+| Switch to quetiapine | PO | Lower TD risk; for patients requiring continued antipsychotic | 25 mg :: PO :: BID :: Start 25-50 mg BID; titrate by 50-100 mg/day q2-3d; target 300-800 mg/day | QT prolongation; severe hepatic impairment | QTc, sedation, metabolic parameters | URGENT | URGENT | ROUTINE | - |
+| Benzodiazepine (severe distress) | PO/IV | Severe anxiety/distress from TD movements; temporary relief | 0.5 mg :: PO :: TID PRN :: Lorazepam 0.5-1 mg TID PRN for acute distress; short-term only | Respiratory depression; substance use disorder | Sedation, respiratory status | URGENT | URGENT | - | URGENT |
 
 ### 3B. Symptomatic Treatments (FDA-Approved for TD)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Valbenazine (Ingrezza) | PO | FDA-approved first-line for TD; VMAT2 inhibitor | 40 mg daily; 80 mg daily :: PO :: :: Start 40 mg once daily; increase to 80 mg daily after 1 week if tolerated; take with or without food | Congenital long QT; strong CYP2D6 inhibitors at higher dose; severe hepatic impairment | QTc (baseline, after dose increase); somnolence; depression | - | ROUTINE | ROUTINE | - |
-| Deutetrabenazine (Austedo) | PO | FDA-approved first-line for TD; VMAT2 inhibitor | 6 mg BID; 9 mg BID; 12 mg BID :: PO :: :: Start 6 mg BID (12 mg/day); increase by 6 mg/day weekly; max 48 mg/day; take with food | Depression/suicidality; MAO-I use; hepatic impairment; reserpine use within 20 days | Depression (PHQ-9); parkinsonism; QTc; akathisia | - | ROUTINE | ROUTINE | - |
-| Tetrabenazine (Xenazine) | PO | VMAT2 inhibitor; older agent with more side effects | 12.5 mg daily; 12.5 mg BID; 12.5 mg TID; 25 mg TID :: PO :: :: Start 12.5 mg daily; increase by 12.5 mg q1wk; max 50 mg/day (100 mg if CYP2D6 extensive metabolizer); require CYP2D6 genotyping >50 mg | Depression/suicidality; untreated or inadequately treated depression | Depression (PHQ-9); parkinsonism; akathisia; sedation; requires CYP2D6 genotyping | - | ROUTINE | ROUTINE | - |
+| Valbenazine (Ingrezza) | PO | FDA-approved first-line for TD; VMAT2 inhibitor | 40 mg :: PO :: daily :: Start 40 mg once daily; increase to 80 mg daily after 1 week if tolerated; take with or without food | Congenital long QT; strong CYP2D6 inhibitors at higher dose; severe hepatic impairment | QTc (baseline, after dose increase); somnolence; depression | - | ROUTINE | ROUTINE | - |
+| Deutetrabenazine (Austedo) | PO | FDA-approved first-line for TD; VMAT2 inhibitor | 6 mg :: PO :: BID :: Start 6 mg BID (12 mg/day); increase by 6 mg/day weekly; max 48 mg/day; take with food | Depression/suicidality; MAO-I use; hepatic impairment; reserpine use within 20 days | Depression (PHQ-9); parkinsonism; QTc; akathisia | - | ROUTINE | ROUTINE | - |
+| Tetrabenazine (Xenazine) | PO | VMAT2 inhibitor; older agent with more side effects | 12.5 mg :: PO :: daily :: Start 12.5 mg daily; increase by 12.5 mg q1wk; max 50 mg/day (100 mg if CYP2D6 extensive metabolizer); require CYP2D6 genotyping >50 mg | Depression/suicidality; untreated or inadequately treated depression | Depression (PHQ-9); parkinsonism; akathisia; sedation; requires CYP2D6 genotyping | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Second-line/Refractory
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Clonazepam | PO | Adjunct for TD; limited evidence; reduces choreiform movements | 0.25 mg BID; 0.5 mg BID; 1 mg BID :: PO :: :: Start 0.25 mg BID; titrate slowly; typical 0.5-4 mg/day divided | Respiratory depression; substance use disorder | Sedation, dependence, falls | - | ROUTINE | ROUTINE | - |
-| Amantadine | PO | Limited evidence; may reduce TD severity; antiglutamatergic | 100 mg BID; 100 mg TID; 200 mg BID :: PO :: :: Start 100 mg BID; may increase to 300-400 mg/day divided; adjust for renal function | Severe renal impairment; seizure history (relative) | Livedo reticularis; edema; hallucinations; confusion (elderly) | - | ROUTINE | ROUTINE | - |
-| Ginkgo biloba | PO | Limited evidence; antioxidant mechanism; modest benefit in trials | 120 mg BID; 240 mg daily :: PO :: :: 240 mg/day divided; EGb 761 extract standardized | Bleeding disorders; anticoagulant use | Bleeding risk | - | - | ROUTINE | - |
-| Vitamin E | PO | Limited evidence; may prevent progression; minimal therapeutic effect | 400 IU daily; 800 IU daily :: PO :: :: 400-1600 IU daily; better evidence for prevention than treatment | Coagulopathy; vitamin K deficiency | Bleeding risk at high doses | - | - | ROUTINE | - |
-| Vitamin B6 (pyridoxine) | PO | Limited evidence; some trials show benefit | 100 mg daily; 200 mg daily :: PO :: :: 100-400 mg daily; monitor for neuropathy at high doses | Peripheral neuropathy | Neuropathy with chronic high dose (>200 mg) | - | - | EXT | - |
-| Levetiracetam | PO | Limited evidence; case reports of benefit | 500 mg BID; 750 mg BID; 1000 mg BID :: PO :: :: Start 500 mg BID; titrate to 1500-3000 mg/day; adjust for renal function | Severe renal impairment without adjustment | Mood changes; sedation | - | - | EXT | - |
-| Propranolol | PO | For tardive akathisia component | 10 mg TID; 20 mg TID; 40 mg TID :: PO :: :: Start 10 mg TID; titrate to 30-120 mg/day divided | Asthma; bradycardia; heart block | HR, BP | - | ROUTINE | ROUTINE | - |
+| Clonazepam | PO | Adjunct for TD; limited evidence; reduces choreiform movements | 0.25 mg :: PO :: BID :: Start 0.25 mg BID; titrate slowly; typical 0.5-4 mg/day divided | Respiratory depression; substance use disorder | Sedation, dependence, falls | - | ROUTINE | ROUTINE | - |
+| Amantadine | PO | Limited evidence; may reduce TD severity; antiglutamatergic | 100 mg :: PO :: BID :: Start 100 mg BID; may increase to 300-400 mg/day divided; adjust for renal function | Severe renal impairment; seizure history (relative) | Livedo reticularis; edema; hallucinations; confusion (elderly) | - | ROUTINE | ROUTINE | - |
+| Ginkgo biloba | PO | Limited evidence; antioxidant mechanism; modest benefit in trials | 120 mg :: PO :: BID :: 240 mg/day divided; EGb 761 extract standardized | Bleeding disorders; anticoagulant use | Bleeding risk | - | - | ROUTINE | - |
+| Vitamin E | PO | Limited evidence; may prevent progression; minimal therapeutic effect | 400 IU :: PO :: daily :: 400-1600 IU daily; better evidence for prevention than treatment | Coagulopathy; vitamin K deficiency | Bleeding risk at high doses | - | - | ROUTINE | - |
+| Vitamin B6 (pyridoxine) | PO | Limited evidence; some trials show benefit | 100 mg :: PO :: daily :: 100-400 mg daily; monitor for neuropathy at high doses | Peripheral neuropathy | Neuropathy with chronic high dose (>200 mg) | - | - | EXT | - |
+| Levetiracetam | PO | Limited evidence; case reports of benefit | 500 mg :: PO :: BID :: Start 500 mg BID; titrate to 1500-3000 mg/day; adjust for renal function | Severe renal impairment without adjustment | Mood changes; sedation | - | - | EXT | - |
+| Propranolol | PO | For tardive akathisia component | 10 mg :: PO :: TID :: Start 10 mg TID; titrate to 30-120 mg/day divided | Asthma; bradycardia; heart block | HR, BP | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Interventional/Advanced Therapies
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Botulinum toxin (focal TD) | IM | Focal tardive dystonia (e.g., cervical, blepharospasm) | Dose varies by target :: IM :: :: Cervical: 100-300 units; blepharospasm: 25-50 units per eye; repeat q3mo | EMG guidance recommended for some targets | Active infection at site; myasthenia gravis | Dysphagia (cervical); ptosis (periocular); local weakness | - | - | ROUTINE | - |
-| Deep brain stimulation (DBS) | Surgical | Severe, disabling, medication-refractory TD | GPi (globus pallidus internus) target :: Surgical :: :: Bilateral GPi most common; programming optimization over months | MRI; neuropsychological testing; multidisciplinary evaluation; psychiatry clearance | Untreated psychiatric instability; cognitive impairment; coagulopathy | Programming; psychiatric monitoring; speech/swallowing | - | - | EXT | - |
-| Pallidal lesioning | Surgical | Alternative to DBS if not candidate; irreversible | Unilateral pallidotomy :: Surgical :: :: Stereotactic lesion of GPi; reserved for DBS failures or contraindications | Same as DBS | Same as DBS | Permanent side effect risk higher than DBS | - | - | EXT | - |
+| Botulinum toxin (focal TD) | IM | Focal tardive dystonia (e.g., cervical, blepharospasm) | Per target :: IM :: q3mo :: Cervical: 100-300 units; blepharospasm: 25-50 units per eye; repeat q3mo | EMG guidance recommended for some targets | Active infection at site; myasthenia gravis | Dysphagia (cervical); ptosis (periocular); local weakness | - | - | ROUTINE | - |
+| Deep brain stimulation (DBS) | Surgical | Severe, disabling, medication-refractory TD | GPi target :: Surgical :: per protocol :: Bilateral GPi most common; programming optimization over months | MRI; neuropsychological testing; multidisciplinary evaluation; psychiatry clearance | Untreated psychiatric instability; cognitive impairment; coagulopathy | Programming; psychiatric monitoring; speech/swallowing | - | - | EXT | - |
+| Pallidal lesioning | Surgical | Alternative to DBS if not candidate; irreversible | Unilateral pallidotomy :: Surgical :: per protocol :: Stereotactic lesion of GPi; reserved for DBS failures or contraindications | Same as DBS | Same as DBS | Permanent side effect risk higher than DBS | - | - | EXT | - |
 
 ---
 
@@ -257,6 +261,14 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized lab tables: reordered columns to `Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding`
+- Added CPT codes to all lab tests (1A: 4 rows, 1B: 6 rows, 1C: 5 rows)
+- Standardized imaging tables: reordered columns to `Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications`
+- Added CPT codes to all imaging studies (2A: 3 rows, 2B: 2 rows, 2C: 4 rows)
+- Fixed structured dosing first fields across all treatment sections (3A-3D): starting dose only in first field
+- Added VERSION/CREATED/REVISED header block
 
 **v1.0 (January 27, 2026)**
 - Initial template creation

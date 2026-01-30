@@ -1,7 +1,7 @@
 {
   "id": "tardive-dyskinesia",
   "title": "Tardive Dyskinesia",
-  "version": "1.0",
+  "version": "1.1",
   "icd10": [
     "** G24.01 (Drug-induced tardive dyskinesia)",
     "G24.02 (Drug-induced acute dystonia)",
@@ -14,241 +14,217 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "CMP (comprehensive metabolic panel)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
           "rationale": "Baseline renal/hepatic function before VMAT2 inhibitor therapy; electrolyte abnormalities can worsen movements",
-          "target": "Normal",
+          "target": "Normal"
+        },
+        {
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "STAT"
-        },
-        {
-          "item": "CBC with differential",
+          "ICU": "STAT",
           "rationale": "Baseline for medication monitoring; rule out infection if acute change",
-          "target": "Normal",
-          "ED": "STAT",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "STAT"
+          "target": "Normal"
         },
         {
-          "item": "TSH",
-          "rationale": "Thyroid dysfunction can cause or exacerbate movement disorders",
-          "target": "Normal (0.4-4.0 mIU/L)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction can cause or exacerbate movement disorders",
+          "target": "Normal (0.4-4.0 mIU/L)"
         },
         {
-          "item": "Medication and dose history review",
-          "rationale": "Identify causative agent(s): antipsychotics, metoclopramide, prochlorperazine, other dopamine blockers",
-          "target": "Document agent, duration, cumulative dose",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Identify causative agent(s): antipsychotics, metoclopramide, prochlorperazine, other dopamine blockers",
+          "target": "Document agent, duration, cumulative dose"
         }
       ],
       "Extended Workup": [
         {
-          "item": "Ceruloplasmin, serum copper",
-          "rationale": "Rule out Wilson's disease if age <50 or atypical presentation",
-          "target": "Normal",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Rule out Wilson's disease if age <50 or atypical presentation",
+          "target": "Normal"
         },
         {
-          "item": "24-hour urine copper",
-          "rationale": "Wilson's disease confirmation if ceruloplasmin low or borderline",
-          "target": "<100 μg/24hr",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Wilson's disease confirmation if ceruloplasmin low or borderline",
+          "target": "<100 μg/24hr"
         },
         {
-          "item": "Vitamin B12, folate",
-          "rationale": "Deficiency can cause movement disorders",
-          "target": "Normal",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Deficiency can cause movement disorders",
+          "target": "Normal"
         },
         {
-          "item": "Iron studies (ferritin, serum iron, TIBC)",
-          "rationale": "Rule out brain iron accumulation disorders",
-          "target": "Normal",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Rule out brain iron accumulation disorders",
+          "target": "Normal"
         },
         {
-          "item": "CK (creatine kinase)",
-          "rationale": "If concern for neuroleptic malignant syndrome or severe dystonia",
-          "target": "Normal",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
-          "ICU": "STAT"
+          "ICU": "STAT",
+          "rationale": "If concern for neuroleptic malignant syndrome or severe dystonia",
+          "target": "Normal"
         },
         {
-          "item": "Antipsychotic drug level",
-          "rationale": "Assess compliance and toxicity if indicated",
-          "target": "Therapeutic range",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Assess compliance and toxicity if indicated",
+          "target": "Therapeutic range"
         }
       ],
       "Rare/Specialized": [
         {
-          "item": "Huntington disease genetic testing (HTT CAG repeats)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Chorea with psychiatric history; family history",
-          "target": "<36 CAG repeats (normal)",
+          "target": "<36 CAG repeats (normal)"
+        },
+        {
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "Acanthocyte smear",
+          "ICU": "-",
           "rationale": "Neuroacanthocytosis if orofacial dyskinesia with chorea",
-          "target": "Negative",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "EXT",
-          "ICU": "-"
+          "target": "Negative"
         },
         {
-          "item": "Paraneoplastic antibody panel",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Atypical movement disorder; occult malignancy; autoimmune chorea",
-          "target": "Negative",
+          "target": "Negative"
+        },
+        {
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "Anti-NMDA receptor antibodies",
+          "ICU": "-",
           "rationale": "Young patient; psychiatric symptoms; orofacial dyskinesia",
-          "target": "Negative",
-          "ED": "-",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "-"
+          "target": "Negative"
         },
         {
-          "item": "SLC6A3 genetic testing (DAT-1)",
-          "rationale": "Research; consider if dopamine transporter dysfunction suspected",
-          "target": "Normal",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Research; consider if dopamine transporter dysfunction suspected",
+          "target": "Normal"
         }
       ]
     },
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "AIMS (Abnormal Involuntary Movement Scale)",
-          "timing": "At evaluation; before treatment; q3-6 months on antipsychotics",
-          "target": "Document baseline severity (0-4 scale per item; total score)",
-          "contraindications": "None",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "At evaluation; before treatment; q3-6 months on antipsychotics",
+          "target": "Document baseline severity (0-4 scale per item; total score)",
+          "contraindications": "None"
         },
         {
-          "item": "Clinical examination (orofacial, trunk, limbs)",
-          "timing": "At evaluation",
-          "target": "Characterize movement type, distribution, severity",
-          "contraindications": "None",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "At evaluation",
+          "target": "Characterize movement type, distribution, severity",
+          "contraindications": "None"
         },
         {
-          "item": "Video documentation",
-          "timing": "At baseline and follow-up",
-          "target": "Record for comparison; share with psychiatry",
-          "contraindications": "Patient consent",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "At baseline and follow-up",
+          "target": "Record for comparison; share with psychiatry",
+          "contraindications": "Patient consent"
         }
       ],
       "Extended": [
         {
-          "item": "MRI Brain",
-          "timing": "Atypical presentation; focal findings; rule out structural lesion",
-          "target": "Normal or chronic dopaminergic medication changes",
-          "contraindications": "MRI-incompatible devices",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Atypical presentation; focal findings; rule out structural lesion",
+          "target": "Normal or chronic dopaminergic medication changes",
+          "contraindications": "MRI-incompatible devices"
         },
         {
-          "item": "DaTscan (ioflupane I-123)",
-          "timing": "Differentiate from Parkinson's disease or Huntington's if uncertain",
-          "target": "Normal or mild reduction (dopamine blockers can affect)",
-          "contraindications": "Iodine hypersensitivity",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Differentiate from Parkinson's disease or Huntington's if uncertain",
+          "target": "Normal or mild reduction (dopamine blockers can affect)",
+          "contraindications": "Iodine hypersensitivity"
         }
       ],
       "Rare/Specialized": [
         {
-          "item": "MRI Brain with SWI sequence",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "timing": "Suspected brain iron accumulation (NBIA)",
           "target": "No abnormal iron deposition",
-          "contraindications": "MRI contraindications",
-          "ED": "-",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "-"
+          "contraindications": "MRI contraindications"
         },
         {
-          "item": "PET scan (FDG or dopamine receptor imaging)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
           "timing": "Research; atypical cases",
           "target": "Variable",
-          "contraindications": "None",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "EXT",
-          "ICU": "-"
+          "contraindications": "None"
         },
         {
-          "item": "Slit lamp examination",
-          "timing": "Wilson's disease evaluation",
-          "target": "No Kayser-Fleischer rings",
-          "contraindications": "None",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Wilson's disease evaluation",
+          "target": "No Kayser-Fleischer rings",
+          "contraindications": "None"
         },
         {
-          "item": "EMG",
-          "timing": "Characterize tremor vs dystonic movements",
-          "target": "Define movement characteristics",
-          "contraindications": "None",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Characterize tremor vs dystonic movements",
+          "target": "Define movement characteristics",
+          "contraindications": "None"
         }
       ]
     },
@@ -283,25 +259,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "12.5 mg qHS",
-                "orderSentence": "Switch to clozapine 12.5 mg qHS PO"
-              },
-              {
-                "text": "25 mg BID",
-                "orderSentence": "Switch to clozapine 25 mg BID PO"
-              },
-              {
-                "text": "50 mg BID",
-                "orderSentence": "Switch to clozapine 50 mg BID PO"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Switch to clozapine 100 mg BID PO"
+                "text": "12.5 mg",
+                "orderSentence": "Switch to clozapine 12.5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 12.5-25 mg/day; titrate by 25-50 mg q3-7d; target 200-450 mg/day; requires REMS",
-            "orderSentence": "Switch to clozapine 12.5 mg qHS PO"
+            "orderSentence": "Switch to clozapine 12.5 mg PO"
           },
           "contraindications": "Agranulocytosis history; severe neutropenia; seizure disorder (relative)",
           "monitoring": "ANC weekly x 6mo, q2wk x 6mo, then monthly; seizures; myocarditis",
@@ -317,25 +281,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg BID",
-                "orderSentence": "Switch to quetiapine 25 mg BID PO"
-              },
-              {
-                "text": "50 mg BID",
-                "orderSentence": "Switch to quetiapine 50 mg BID PO"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Switch to quetiapine 100 mg BID PO"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Switch to quetiapine 200 mg BID PO"
+                "text": "25 mg",
+                "orderSentence": "Switch to quetiapine 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25-50 mg BID; titrate by 50-100 mg/day q2-3d; target 300-800 mg/day",
-            "orderSentence": "Switch to quetiapine 25 mg BID PO"
+            "orderSentence": "Switch to quetiapine 25 mg PO"
           },
           "contraindications": "QT prolongation; severe hepatic impairment",
           "monitoring": "QTc, sedation, metabolic parameters",
@@ -351,17 +303,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.5 mg TID",
-                "orderSentence": "Benzodiazepine (severe distress) 0.5 mg TID PO"
-              },
-              {
-                "text": "1 mg TID",
-                "orderSentence": "Benzodiazepine (severe distress) 1 mg TID PO"
+                "text": "0.5 mg",
+                "orderSentence": "Benzodiazepine (severe distress) 0.5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Lorazepam 0.5-1 mg TID PRN for acute distress; short-term only",
-            "orderSentence": "Benzodiazepine (severe distress) 0.5 mg TID PO"
+            "orderSentence": "Benzodiazepine (severe distress) 0.5 mg PO"
           },
           "contraindications": "Respiratory depression; substance use disorder",
           "monitoring": "Sedation, respiratory status",
@@ -379,17 +327,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "40 mg daily",
-                "orderSentence": "Valbenazine (Ingrezza) 40 mg daily PO"
-              },
-              {
-                "text": "80 mg daily",
-                "orderSentence": "Valbenazine (Ingrezza) 80 mg daily PO"
+                "text": "40 mg",
+                "orderSentence": "Valbenazine (Ingrezza) 40 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 40 mg once daily; increase to 80 mg daily after 1 week if tolerated; take with or without food",
-            "orderSentence": "Valbenazine (Ingrezza) 40 mg daily PO"
+            "orderSentence": "Valbenazine (Ingrezza) 40 mg PO"
           },
           "contraindications": "Congenital long QT; strong CYP2D6 inhibitors at higher dose; severe hepatic impairment",
           "monitoring": "QTc (baseline, after dose increase); somnolence; depression",
@@ -405,21 +349,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "6 mg BID",
-                "orderSentence": "Deutetrabenazine (Austedo) 6 mg BID PO"
-              },
-              {
-                "text": "9 mg BID",
-                "orderSentence": "Deutetrabenazine (Austedo) 9 mg BID PO"
-              },
-              {
-                "text": "12 mg BID",
-                "orderSentence": "Deutetrabenazine (Austedo) 12 mg BID PO"
+                "text": "6 mg",
+                "orderSentence": "Deutetrabenazine (Austedo) 6 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 6 mg BID (12 mg/day); increase by 6 mg/day weekly; max 48 mg/day; take with food",
-            "orderSentence": "Deutetrabenazine (Austedo) 6 mg BID PO"
+            "orderSentence": "Deutetrabenazine (Austedo) 6 mg PO"
           },
           "contraindications": "Depression/suicidality; MAO-I use; hepatic impairment; reserpine use within 20 days",
           "monitoring": "Depression (PHQ-9); parkinsonism; QTc; akathisia",
@@ -435,25 +371,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "12.5 mg daily",
-                "orderSentence": "Tetrabenazine (Xenazine) 12.5 mg daily PO"
-              },
-              {
-                "text": "12.5 mg BID",
-                "orderSentence": "Tetrabenazine (Xenazine) 12.5 mg BID PO"
-              },
-              {
-                "text": "12.5 mg TID",
-                "orderSentence": "Tetrabenazine (Xenazine) 12.5 mg TID PO"
-              },
-              {
-                "text": "25 mg TID",
-                "orderSentence": "Tetrabenazine (Xenazine) 25 mg TID PO"
+                "text": "12.5 mg",
+                "orderSentence": "Tetrabenazine (Xenazine) 12.5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 12.5 mg daily; increase by 12.5 mg q1wk; max 50 mg/day (100 mg if CYP2D6 extensive metabolizer); require CYP2D6 genotyping >50 mg",
-            "orderSentence": "Tetrabenazine (Xenazine) 12.5 mg daily PO"
+            "orderSentence": "Tetrabenazine (Xenazine) 12.5 mg PO"
           },
           "contraindications": "Depression/suicidality; untreated or inadequately treated depression",
           "monitoring": "Depression (PHQ-9); parkinsonism; akathisia; sedation; requires CYP2D6 genotyping",
@@ -471,21 +395,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.25 mg BID",
-                "orderSentence": "Clonazepam 0.25 mg BID PO"
-              },
-              {
-                "text": "0.5 mg BID",
-                "orderSentence": "Clonazepam 0.5 mg BID PO"
-              },
-              {
-                "text": "1 mg BID",
-                "orderSentence": "Clonazepam 1 mg BID PO"
+                "text": "0.25 mg",
+                "orderSentence": "Clonazepam 0.25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 0.25 mg BID; titrate slowly; typical 0.5-4 mg/day divided",
-            "orderSentence": "Clonazepam 0.25 mg BID PO"
+            "orderSentence": "Clonazepam 0.25 mg PO"
           },
           "contraindications": "Respiratory depression; substance use disorder",
           "monitoring": "Sedation, dependence, falls",
@@ -501,21 +417,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg BID",
-                "orderSentence": "Amantadine 100 mg BID PO"
-              },
-              {
-                "text": "100 mg TID",
-                "orderSentence": "Amantadine 100 mg TID PO"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Amantadine 200 mg BID PO"
+                "text": "100 mg",
+                "orderSentence": "Amantadine 100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 100 mg BID; may increase to 300-400 mg/day divided; adjust for renal function",
-            "orderSentence": "Amantadine 100 mg BID PO"
+            "orderSentence": "Amantadine 100 mg PO"
           },
           "contraindications": "Severe renal impairment; seizure history (relative)",
           "monitoring": "Livedo reticularis; edema; hallucinations; confusion (elderly)",
@@ -531,17 +439,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "120 mg BID",
-                "orderSentence": "Ginkgo biloba 120 mg BID PO"
-              },
-              {
-                "text": "240 mg daily",
-                "orderSentence": "Ginkgo biloba 240 mg daily PO"
+                "text": "120 mg",
+                "orderSentence": "Ginkgo biloba 120 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "240 mg/day divided; EGb 761 extract standardized",
-            "orderSentence": "Ginkgo biloba 120 mg BID PO"
+            "orderSentence": "Ginkgo biloba 120 mg PO"
           },
           "contraindications": "Bleeding disorders; anticoagulant use",
           "monitoring": "Bleeding risk",
@@ -557,17 +461,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "400 IU daily",
-                "orderSentence": "Vitamin E 400 IU daily PO"
-              },
-              {
-                "text": "800 IU daily",
-                "orderSentence": "Vitamin E 800 IU daily PO"
+                "text": "400 IU",
+                "orderSentence": "Vitamin E 400 IU PO"
               }
             ],
             "route": "PO",
             "instructions": "400-1600 IU daily; better evidence for prevention than treatment",
-            "orderSentence": "Vitamin E 400 IU daily PO"
+            "orderSentence": "Vitamin E 400 IU PO"
           },
           "contraindications": "Coagulopathy; vitamin K deficiency",
           "monitoring": "Bleeding risk at high doses",
@@ -583,17 +483,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg daily",
-                "orderSentence": "Vitamin B6 (pyridoxine) 100 mg daily PO"
-              },
-              {
-                "text": "200 mg daily",
-                "orderSentence": "Vitamin B6 (pyridoxine) 200 mg daily PO"
+                "text": "100 mg",
+                "orderSentence": "Vitamin B6 (pyridoxine) 100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "100-400 mg daily; monitor for neuropathy at high doses",
-            "orderSentence": "Vitamin B6 (pyridoxine) 100 mg daily PO"
+            "orderSentence": "Vitamin B6 (pyridoxine) 100 mg PO"
           },
           "contraindications": "Peripheral neuropathy",
           "monitoring": "Neuropathy with chronic high dose (>200 mg)",
@@ -609,21 +505,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg BID",
-                "orderSentence": "Levetiracetam 500 mg BID PO"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "Levetiracetam 750 mg BID PO"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Levetiracetam 1000 mg BID PO"
+                "text": "500 mg",
+                "orderSentence": "Levetiracetam 500 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 500 mg BID; titrate to 1500-3000 mg/day; adjust for renal function",
-            "orderSentence": "Levetiracetam 500 mg BID PO"
+            "orderSentence": "Levetiracetam 500 mg PO"
           },
           "contraindications": "Severe renal impairment without adjustment",
           "monitoring": "Mood changes; sedation",
@@ -639,21 +527,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg TID",
-                "orderSentence": "Propranolol 10 mg TID PO"
-              },
-              {
-                "text": "20 mg TID",
-                "orderSentence": "Propranolol 20 mg TID PO"
-              },
-              {
-                "text": "40 mg TID",
-                "orderSentence": "Propranolol 40 mg TID PO"
+                "text": "10 mg",
+                "orderSentence": "Propranolol 10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 10 mg TID; titrate to 30-120 mg/day divided",
-            "orderSentence": "Propranolol 10 mg TID PO"
+            "orderSentence": "Propranolol 10 mg PO"
           },
           "contraindications": "Asthma; bradycardia; heart block",
           "monitoring": "HR, BP",
@@ -671,13 +551,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Dose varies by target",
-                "orderSentence": "Botulinum toxin (focal TD) Dose varies by target IM"
+                "text": "Per target",
+                "orderSentence": "Botulinum toxin (focal TD) Per target IM"
               }
             ],
             "route": "IM",
             "instructions": "Cervical: 100-300 units; blepharospasm: 25-50 units per eye; repeat q3mo",
-            "orderSentence": "Botulinum toxin (focal TD) Dose varies by target IM"
+            "orderSentence": "Botulinum toxin (focal TD) Per target IM"
           },
           "pretreatment": "EMG guidance recommended for some targets",
           "contraindications": "Active infection at site; myasthenia gravis",
@@ -694,13 +574,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "GPi (globus pallidus internus) target",
-                "orderSentence": "Deep brain stimulation (DBS) GPi (globus pallidus internus) target Surgical"
+                "text": "GPi target",
+                "orderSentence": "Deep brain stimulation (DBS) GPi target Surgical"
               }
             ],
             "route": "Surgical",
             "instructions": "Bilateral GPi most common; programming optimization over months",
-            "orderSentence": "Deep brain stimulation (DBS) GPi (globus pallidus internus) target Surgical"
+            "orderSentence": "Deep brain stimulation (DBS) GPi target Surgical"
           },
           "pretreatment": "MRI; neuropsychological testing; multidisciplinary evaluation; psychiatry clearance",
           "contraindications": "Untreated psychiatric instability; cognitive impairment; coagulopathy",

@@ -21,9 +21,9 @@ tags:
 
 # Carpal Tunnel Syndrome
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 27, 2026
-**REVISED:** January 27, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -48,35 +48,35 @@ SECTION A: ACTION ITEMS
 
 ### 1A. Essential/Core Labs
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Fasting glucose | Screen for diabetes (common CTS risk factor) | <100 mg/dL | STAT | STAT | ROUTINE | STAT |
-| HbA1c | Diabetes/prediabetes screening (diabetic neuropathy overlap) | <5.7% | - | ROUTINE | ROUTINE | - |
-| TSH | Hypothyroidism causes CTS (myxedematous tissue infiltration) | 0.4-4.0 mIU/L | - | ROUTINE | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Fasting glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Screen for diabetes (common CTS risk factor) | <100 mg/dL |
+| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Diabetes/prediabetes screening (diabetic neuropathy overlap) | <5.7% |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Hypothyroidism causes CTS (myxedematous tissue infiltration) | 0.4-4.0 mIU/L |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Rheumatoid factor | RA-associated CTS (synovial hypertrophy) | Negative | - | ROUTINE | ROUTINE | - |
-| Anti-CCP antibody | More specific for RA if RF negative | Negative | - | ROUTINE | ROUTINE | - |
-| ESR | Inflammatory arthritis screen | <20 mm/hr | - | ROUTINE | ROUTINE | - |
-| CRP | Inflammatory marker | <3.0 mg/L | - | ROUTINE | ROUTINE | - |
-| Uric acid | Gout/tophaceous deposits in carpal tunnel | Normal (3.5-7.2 mg/dL male; 2.5-6.2 mg/dL female) | - | ROUTINE | ROUTINE | - |
-| BUN/Creatinine | Renal disease (dialysis-associated CTS from amyloid deposition) | Normal | - | ROUTINE | ROUTINE | - |
-| CBC | Anemia workup, infection screen | Normal | - | ROUTINE | ROUTINE | - |
-| Pregnancy test (women of childbearing age) | Pregnancy-associated CTS (common, often resolves postpartum) | Document status | URGENT | ROUTINE | ROUTINE | - |
-| Vitamin B12 | Concomitant peripheral neuropathy | >300 pg/mL | - | ROUTINE | ROUTINE | - |
-| Serum protein electrophoresis (SPEP) | Amyloidosis, myeloma (bilateral CTS may be presenting sign of AL amyloid) | No M-spike | - | EXT | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Rheumatoid factor (CPT 86431) | - | ROUTINE | ROUTINE | - | RA-associated CTS (synovial hypertrophy) | Negative |
+| Anti-CCP antibody (CPT 86200) | - | ROUTINE | ROUTINE | - | More specific for RA if RF negative | Negative |
+| ESR (CPT 85652) | - | ROUTINE | ROUTINE | - | Inflammatory arthritis screen | <20 mm/hr |
+| CRP (CPT 86140) | - | ROUTINE | ROUTINE | - | Inflammatory marker | <3.0 mg/L |
+| Uric acid (CPT 84550) | - | ROUTINE | ROUTINE | - | Gout/tophaceous deposits in carpal tunnel | Normal (3.5-7.2 mg/dL male; 2.5-6.2 mg/dL female) |
+| BUN/Creatinine (CPT 84520/82565) | - | ROUTINE | ROUTINE | - | Renal disease (dialysis-associated CTS from amyloid deposition) | Normal |
+| CBC (CPT 85025) | - | ROUTINE | ROUTINE | - | Anemia workup, infection screen | Normal |
+| Pregnancy test (CPT 81025/84702) | URGENT | ROUTINE | ROUTINE | - | Pregnancy-associated CTS (common, often resolves postpartum) | Document status |
+| Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | Concomitant peripheral neuropathy | >300 pg/mL |
+| Serum protein electrophoresis (SPEP) (CPT 86335) | - | EXT | ROUTINE | - | Amyloidosis, myeloma (bilateral CTS may be presenting sign of AL amyloid) | No M-spike |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Free light chains (kappa/lambda) | AL amyloidosis if bilateral CTS with cardiac/renal involvement | Normal ratio (0.26-1.65) | - | EXT | EXT | - |
-| TTR gene testing | Hereditary transthyretin amyloidosis if young onset bilateral CTS | No pathogenic variant | - | - | EXT | - |
-| Fat pad biopsy | Confirm amyloidosis if strongly suspected | No amyloid deposits | - | EXT | EXT | - |
-| Acromegaly workup (IGF-1, GH) | Bilateral CTS in patient with acromegalic features | Normal | - | EXT | EXT | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Free light chains (kappa/lambda) (CPT 83883) | - | EXT | EXT | - | AL amyloidosis if bilateral CTS with cardiac/renal involvement | Normal ratio (0.26-1.65) |
+| TTR gene testing (CPT 81404) | - | - | EXT | - | Hereditary transthyretin amyloidosis if young onset bilateral CTS | No pathogenic variant |
+| Fat pad biopsy (CPT 88305) | - | EXT | EXT | - | Confirm amyloidosis if strongly suspected | No amyloid deposits |
+| Acromegaly workup (IGF-1, GH) (CPT 84305/83003) | - | EXT | EXT | - | Bilateral CTS in patient with acromegalic features | Normal |
 
 ---
 
@@ -84,26 +84,26 @@ SECTION A: ACTION ITEMS
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| Nerve conduction studies (NCS) and EMG | Recommended for diagnosis confirmation and severity grading; optimal before surgery | Prolonged median sensory and/or motor distal latency; reduced SNAP amplitude; denervation in thenar muscles (severe) | Anticoagulation for needle EMG (relative) | - | ROUTINE | ROUTINE | - |
-| Wrist X-ray (PA and lateral) | If fracture, arthritis, or bony abnormality suspected | Normal or degenerative changes; exclude fracture | None | URGENT | ROUTINE | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Nerve conduction studies (NCS) (CPT 95907-95909) and EMG (CPT 95885) | - | ROUTINE | ROUTINE | - | Recommended for diagnosis confirmation and severity grading; optimal before surgery | Prolonged median sensory and/or motor distal latency; reduced SNAP amplitude; denervation in thenar muscles (severe) | Anticoagulation for needle EMG (relative) |
+| Wrist X-ray (CPT 73110) | URGENT | ROUTINE | ROUTINE | - | If fracture, arthritis, or bony abnormality suspected | Normal or degenerative changes; exclude fracture | None |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| Wrist/carpal tunnel ultrasound | Alternative to MRI; can measure median nerve CSA; operator-dependent | Median nerve CSA >10-12 mm² at pisiform level; flattening at tunnel | None | - | ROUTINE | ROUTINE | - |
-| MRI wrist without contrast | Mass lesion, ganglion cyst, tenosynovitis, anatomic variant | No mass, normal median nerve signal | Pacemaker; claustrophobia | - | ROUTINE | ROUTINE | - |
-| MRI cervical spine with and without contrast | Rule out cervical radiculopathy if double crush suspected or atypical presentation | No foraminal stenosis at C6-C7 | GFR <30; pacemaker; gadolinium allergy | - | ROUTINE | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Wrist/carpal tunnel ultrasound (CPT 76882) | - | ROUTINE | ROUTINE | - | Alternative to MRI; can measure median nerve CSA; operator-dependent | Median nerve CSA >10-12 mm² at pisiform level; flattening at tunnel | None |
+| MRI wrist without contrast (CPT 73221) | - | ROUTINE | ROUTINE | - | Mass lesion, ganglion cyst, tenosynovitis, anatomic variant | No mass, normal median nerve signal | Pacemaker; claustrophobia |
+| MRI cervical spine with and without contrast (CPT 72156) | - | ROUTINE | ROUTINE | - | Rule out cervical radiculopathy if double crush suspected or atypical presentation | No foraminal stenosis at C6-C7 | GFR <30; pacemaker; gadolinium allergy |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| CT wrist | Bony pathology not visible on X-ray; post-traumatic | No fracture or bony deformity | Pregnancy (relative) | - | EXT | EXT | - |
-| MRI with contrast | Suspected tumor or inflammatory mass in carpal tunnel | No enhancing mass | GFR <30; pacemaker; gadolinium allergy | - | EXT | EXT | - |
-| Comparative NCS (ulnar and radial) | Distinguish CTS from polyneuropathy or brachial plexopathy | Normal ulnar and radial studies | None | - | ROUTINE | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| CT wrist (CPT 73200) | - | EXT | EXT | - | Bony pathology not visible on X-ray; post-traumatic | No fracture or bony deformity | Pregnancy (relative) |
+| MRI with contrast (CPT 73222) | - | EXT | EXT | - | Suspected tumor or inflammatory mass in carpal tunnel | No enhancing mass | GFR <30; pacemaker; gadolinium allergy |
+| Comparative NCS (ulnar and radial) (CPT 95907-95909) | - | ROUTINE | ROUTINE | - | Distinguish CTS from polyneuropathy or brachial plexopathy | Normal ulnar and radial studies | None |
 
 ---
 
@@ -114,16 +114,16 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Wrist splinting (neutral position) | External | First-line conservative therapy; nocturnal use prevents wrist flexion | Neutral position splint :: External :: Nightly (minimum) :: Wear nightly x 4-6 weeks; may use during day if symptomatic; neutral wrist position (0-5 degrees extension) | None | Skin irritation; compliance | ROUTINE | ROUTINE | ROUTINE | - |
-| NSAID therapy (short-term) | PO | Acute symptom relief; limited evidence for CTS-specific benefit | Ibuprofen 400 mg TID; Naproxen 500 mg BID :: PO :: :: Short course (7-14 days); take with food; not for long-term use | GI bleeding; renal impairment; cardiovascular disease; third trimester pregnancy | GI symptoms; renal function | ROUTINE | ROUTINE | ROUTINE | - |
+| NSAID therapy (short-term) | PO | Acute symptom relief; limited evidence for CTS-specific benefit | 400 mg :: PO :: TID :: Ibuprofen 400 mg TID or Naproxen 500 mg BID; short course (7-14 days); take with food; not for long-term use | GI bleeding; renal impairment; cardiovascular disease; third trimester pregnancy | GI symptoms; renal function | ROUTINE | ROUTINE | ROUTINE | - |
 
 ### 3B. Symptomatic Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Gabapentin | PO | Neuropathic pain/paresthesias (adjunctive) | 300 mg qHS; 300 mg TID; 600 mg TID :: PO :: :: Start 300 mg qHS; increase by 300 mg q3-7d; max 1800 mg/day for CTS | Renal impairment (dose adjust per CrCl) | Sedation, dizziness, edema | - | ROUTINE | ROUTINE | - |
-| Pregabalin | PO | Neuropathic pain/paresthesias | 75 mg BID; 150 mg BID :: PO :: :: Start 75 mg BID; may increase to 150 mg BID after 1 week | Renal impairment; Class V controlled | Sedation, weight gain, edema | - | ROUTINE | ROUTINE | - |
-| Duloxetine | PO | Neuropathic pain with comorbid anxiety/depression | 30 mg daily; 60 mg daily :: PO :: :: Start 30 mg daily; increase to 60 mg after 1 week | Hepatic impairment; CrCl <30; MAOIs; narrow-angle glaucoma | Nausea, BP; taper to discontinue | - | ROUTINE | ROUTINE | - |
-| Amitriptyline | PO | Nocturnal paresthesias (second-line) | 10 mg qHS; 25 mg qHS :: PO :: :: Start 10 mg qHS; increase by 10 mg weekly; max 50 mg qHS | Cardiac conduction abnormality; urinary retention; glaucoma; elderly | ECG if >50 mg; anticholinergic effects | - | - | ROUTINE | - |
+| Gabapentin | PO | Neuropathic pain/paresthesias (adjunctive) | 300 mg :: PO :: qHS :: Start 300 mg qHS; increase by 300 mg q3-7d; max 1800 mg/day for CTS | Renal impairment (dose adjust per CrCl) | Sedation, dizziness, edema | - | ROUTINE | ROUTINE | - |
+| Pregabalin | PO | Neuropathic pain/paresthesias | 75 mg :: PO :: BID :: Start 75 mg BID; may increase to 150 mg BID after 1 week | Renal impairment; Class V controlled | Sedation, weight gain, edema | - | ROUTINE | ROUTINE | - |
+| Duloxetine | PO | Neuropathic pain with comorbid anxiety/depression | 30 mg :: PO :: daily :: Start 30 mg daily; increase to 60 mg after 1 week | Hepatic impairment; CrCl <30; MAOIs; narrow-angle glaucoma | Nausea, BP; taper to discontinue | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | PO | Nocturnal paresthesias (second-line) | 10 mg :: PO :: qHS :: Start 10 mg qHS; increase by 10 mg weekly; max 50 mg qHS | Cardiac conduction abnormality; urinary retention; glaucoma; elderly | ECG if >50 mg; anticholinergic effects | - | - | ROUTINE | - |
 | Topical diclofenac | TOP | Localized pain/inflammation | Apply gel :: TOP :: TID-QID :: Apply to wrist area TID-QID; max 4 weeks | Aspirin-sensitive asthma; open wounds | Local skin irritation | - | - | ROUTINE | - |
 | Lidocaine 5% patch | TOP | Localized pain | 1 patch :: TOP :: 12h on/12h off :: Apply to wrist/forearm 12h on, 12h off | Broken skin; severe hepatic impairment | Minimal systemic absorption | - | - | ROUTINE | - |
 
@@ -422,6 +422,12 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Reformatted lab tables (1A/1B/1C) and imaging tables (2A/2B/2C) to match approved plan column order
+- Added inline CPT codes to all lab and imaging test names
+- Cleaned structured dosing: starting dose only in first field
+- Version bump and date update
 
 **v1.0 (January 27, 2026)**
 - Initial creation

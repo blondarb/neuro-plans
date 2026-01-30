@@ -1,10 +1,14 @@
 {
   "id": "tension-headache",
   "title": "Tension-Type Headache",
-  "version": "1.0",
+  "version": "1.1",
   "icd10": [
     "** G44.209 (Tension-type headache",
     "unspecified",
+    "not intractable)",
+    "G44.219 (Episodic tension-type headache",
+    "not intractable)",
+    "G44.221 (Chronic tension-type headache",
     "not intractable)"
   ],
   "scope": "** Episodic and chronic tension-type headache diagnosis, acute treatment, and preventive therapy. Excludes secondary headaches, medication overuse headache (separate protocol), and trigeminal autonomic cephalalgias.",
@@ -13,176 +17,159 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "CBC",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Rule out anemia or infection as headache trigger",
-          "target": "Normal",
+          "target": "Normal"
+        },
+        {
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "BMP",
+          "ICU": "-",
           "rationale": "Electrolyte abnormalities can trigger headaches",
-          "target": "Normal",
-          "ED": "STAT",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "target": "Normal"
         },
         {
-          "item": "TSH",
-          "rationale": "Hypothyroidism associated with chronic headache",
-          "target": "Normal (0.4-4.0 mIU/L)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Hypothyroidism associated with chronic headache",
+          "target": "Normal (0.4-4.0 mIU/L)"
         }
       ],
       "Extended Workup": [
         {
-          "item": "ESR, CRP",
-          "rationale": "Rule out giant cell arteritis if age >50 with new headache",
-          "target": "Normal",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Rule out giant cell arteritis if age >50 with new headache",
+          "target": "Normal"
         },
         {
-          "item": "Vitamin D level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Deficiency associated with chronic pain and headache",
-          "target": ">30 ng/mL",
+          "target": ">30 ng/mL"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Ferritin",
+          "ICU": "-",
           "rationale": "Iron deficiency associated with headache",
-          "target": ">50 ng/mL",
-          "ED": "-",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "target": ">50 ng/mL"
         },
         {
-          "item": "Magnesium (RBC)",
-          "rationale": "Low magnesium linked to headache disorders",
-          "target": ">4.2 mg/dL",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Low magnesium linked to headache disorders",
+          "target": ">4.2 mg/dL"
         }
       ],
       "Rare/Specialized": [
         {
-          "item": "ANA",
-          "rationale": "Rule out autoimmune disorder in atypical presentations",
-          "target": "Negative",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Rule out autoimmune disorder in atypical presentations",
+          "target": "Negative"
         },
         {
-          "item": "Sleep study",
-          "rationale": "Evaluate for sleep apnea contributing to chronic headache",
-          "target": "AHI <5",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Evaluate for sleep apnea contributing to chronic headache",
+          "target": "AHI <5"
         },
         {
-          "item": "Lyme serology",
-          "rationale": "Consider in endemic areas with refractory symptoms",
-          "target": "Negative",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Consider in endemic areas with refractory symptoms",
+          "target": "Negative"
         }
       ]
     },
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "MRI Brain without contrast",
-          "timing": "Only if red flags present (see SNNOOP10 below)",
-          "target": "Normal",
-          "contraindications": "MRI-incompatible devices",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Only if red flags present (see SNNOOP10 below)",
+          "target": "Normal",
+          "contraindications": "MRI-incompatible devices"
         },
         {
-          "item": "CT Head non-contrast",
-          "timing": "Acute severe headache or new neurological deficits",
-          "target": "No hemorrhage, mass, or hydrocephalus",
-          "contraindications": "Pregnancy (relative)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Acute severe headache or new neurological deficits",
+          "target": "No hemorrhage, mass, or hydrocephalus",
+          "contraindications": "Pregnancy (relative)"
         }
       ],
       "Extended": [
         {
-          "item": "MRI Brain with contrast",
-          "timing": "Atypical features, focal deficits, suspected secondary cause",
-          "target": "No enhancement or mass lesion",
-          "contraindications": "Gadolinium allergy, severe renal impairment",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Atypical features, focal deficits, suspected secondary cause",
+          "target": "No enhancement or mass lesion",
+          "contraindications": "Gadolinium allergy, severe renal impairment"
         },
         {
-          "item": "MRA Head/Neck",
-          "timing": "Suspected vascular etiology or cervical artery dissection",
-          "target": "Patent vessels; no dissection",
-          "contraindications": "MRI contraindications",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Suspected vascular etiology or cervical artery dissection",
+          "target": "Patent vessels; no dissection",
+          "contraindications": "MRI contraindications"
         },
         {
-          "item": "C-spine X-ray or MRI",
-          "timing": "Cervicogenic component suspected",
-          "target": "Normal alignment; no disc disease",
-          "contraindications": "None",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Cervicogenic component suspected",
+          "target": "Normal alignment; no disc disease",
+          "contraindications": "None"
         }
       ],
       "Rare/Specialized": [
         {
-          "item": "MRV Brain",
-          "timing": "Suspected cerebral venous thrombosis",
-          "target": "Patent venous sinuses",
-          "contraindications": "MRI contraindications",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Suspected cerebral venous thrombosis",
+          "target": "Patent venous sinuses",
+          "contraindications": "MRI contraindications"
         },
         {
-          "item": "LP with opening pressure",
-          "timing": "Suspected idiopathic intracranial hypertension",
-          "target": "Normal (10-20 cm H2O)",
-          "contraindications": "Coagulopathy; mass lesion",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Suspected idiopathic intracranial hypertension",
+          "target": "Normal (10-20 cm H2O)",
+          "contraindications": "Coagulopathy; mass lesion"
         }
       ]
     },
@@ -195,17 +182,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mg IV",
-                "orderSentence": "Ketorolac 30 mg IV IV"
-              },
-              {
-                "text": "15 mg IV",
-                "orderSentence": "Ketorolac 15 mg IV IV"
+                "text": "30 mg",
+                "orderSentence": "Ketorolac 30 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "30 mg IV x1 (15 mg if >65y, renal impairment, or <50 kg); do not exceed 5 days total NSAIDs",
-            "orderSentence": "Ketorolac 30 mg IV IV"
+            "orderSentence": "Ketorolac 30 mg IV"
           },
           "contraindications": "Renal impairment; GI bleed history; aspirin allergy; third trimester pregnancy",
           "monitoring": "Renal function if repeated dosing",
@@ -221,13 +204,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg IV",
-                "orderSentence": "Metoclopramide 10 mg IV IV"
+                "text": "10 mg",
+                "orderSentence": "Metoclopramide 10 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "10 mg IV over 15 min; pretreat with diphenhydramine 25 mg to prevent akathisia",
-            "orderSentence": "Metoclopramide 10 mg IV IV"
+            "orderSentence": "Metoclopramide 10 mg IV"
           },
           "contraindications": "Parkinson's disease; tardive dyskinesia history; bowel obstruction",
           "monitoring": "Akathisia, dystonic reaction",
@@ -243,13 +226,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg IV",
-                "orderSentence": "Diphenhydramine 25 mg IV IV"
+                "text": "25 mg",
+                "orderSentence": "Diphenhydramine 25 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "25 mg IV prior to metoclopramide",
-            "orderSentence": "Diphenhydramine 25 mg IV IV"
+            "orderSentence": "Diphenhydramine 25 mg IV"
           },
           "contraindications": "Narrow-angle glaucoma; urinary retention",
           "monitoring": "Sedation",
@@ -267,21 +250,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "400 mg PO",
-                "orderSentence": "Ibuprofen 400 mg PO PO"
-              },
-              {
-                "text": "600 mg PO",
-                "orderSentence": "Ibuprofen 600 mg PO PO"
-              },
-              {
-                "text": "800 mg PO",
-                "orderSentence": "Ibuprofen 800 mg PO PO"
+                "text": "400 mg",
+                "orderSentence": "Ibuprofen 400 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "400-800 mg PO at onset; may repeat q6-8h; max 2400 mg/day; limit to <10 days/month",
-            "orderSentence": "Ibuprofen 400 mg PO PO"
+            "orderSentence": "Ibuprofen 400 mg PO"
           },
           "contraindications": "Renal impairment; GI bleed history; aspirin allergy; third trimester",
           "monitoring": "GI symptoms; renal function if prolonged use",
@@ -297,17 +272,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg PO",
-                "orderSentence": "Naproxen 500 mg PO PO"
-              },
-              {
-                "text": "550 mg PO",
-                "orderSentence": "Naproxen 550 mg PO PO"
+                "text": "500 mg",
+                "orderSentence": "Naproxen 500 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "500-550 mg PO at onset; may repeat 250 mg in 12 hr; max 1250 mg/day; limit to <10 days/month",
-            "orderSentence": "Naproxen 500 mg PO PO"
+            "orderSentence": "Naproxen 500 mg PO"
           },
           "contraindications": "Renal impairment; GI bleed history; aspirin allergy; third trimester",
           "monitoring": "GI symptoms; renal function if prolonged use",
@@ -323,13 +294,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1000 mg PO",
-                "orderSentence": "Acetaminophen 1000 mg PO PO"
+                "text": "1000 mg",
+                "orderSentence": "Acetaminophen 1000 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "1000 mg PO at onset; may repeat q6h; max 3000 mg/day (2000 mg if liver disease); limit to <10 days/month",
-            "orderSentence": "Acetaminophen 1000 mg PO PO"
+            "orderSentence": "Acetaminophen 1000 mg PO"
           },
           "contraindications": "Severe hepatic impairment; avoid if >3 alcoholic drinks/day",
           "monitoring": "LFTs if chronic use; total daily dose from all sources",
@@ -345,17 +316,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "650 mg PO",
-                "orderSentence": "Aspirin 650 mg PO PO"
-              },
-              {
-                "text": "1000 mg PO",
-                "orderSentence": "Aspirin 1000 mg PO PO"
+                "text": "650 mg",
+                "orderSentence": "Aspirin 650 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "650-1000 mg PO at onset; max 4000 mg/day; limit to <10 days/month",
-            "orderSentence": "Aspirin 650 mg PO PO"
+            "orderSentence": "Aspirin 650 mg PO"
           },
           "contraindications": "Bleeding disorders; GI ulcer; aspirin allergy; children/teens (Reye syndrome); third trimester",
           "monitoring": "GI symptoms; bleeding",
@@ -371,13 +338,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 tablets PO",
-                "orderSentence": "Caffeine/Analgesic combination 2 tablets PO PO"
+                "text": "2 tablets",
+                "orderSentence": "Caffeine/Analgesic combination 2 tablets PO"
               }
             ],
             "route": "PO",
             "instructions": "Acetaminophen 250 mg/aspirin 250 mg/caffeine 65 mg: 2 tablets at onset; max 2 doses/24hr",
-            "orderSentence": "Caffeine/Analgesic combination 2 tablets PO PO"
+            "orderSentence": "Caffeine/Analgesic combination 2 tablets PO"
           },
           "contraindications": "Aspirin or acetaminophen contraindications",
           "monitoring": "Limit use to prevent caffeine dependence and MOH",
@@ -395,13 +362,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1-2 mL 1% lidocaine",
-                "orderSentence": "Trigger point injection 1-2 mL 1% lidocaine IM"
+                "text": "1-2 mL",
+                "orderSentence": "Trigger point injection 1-2 mL IM"
               }
             ],
             "route": "IM",
             "instructions": "Inject 1-2 mL 1% lidocaine into tender points in trapezius, temporalis, or cervical paraspinals; may repeat q2-4wk",
-            "orderSentence": "Trigger point injection 1-2 mL 1% lidocaine IM"
+            "orderSentence": "Trigger point injection 1-2 mL IM"
           },
           "contraindications": "Local anesthetic allergy; infection at site",
           "monitoring": "Local bruising; vasovagal response",
@@ -417,13 +384,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2-3 mL 2% lidocaine",
-                "orderSentence": "Greater occipital nerve block 2-3 mL 2% lidocaine SC"
+                "text": "2-3 mL",
+                "orderSentence": "Greater occipital nerve block 2-3 mL SC"
               }
             ],
             "route": "SC",
             "instructions": "2-3 mL 2% lidocaine with or without 40 mg triamcinolone at greater occipital nerve bilaterally",
-            "orderSentence": "Greater occipital nerve block 2-3 mL 2% lidocaine SC"
+            "orderSentence": "Greater occipital nerve block 2-3 mL SC"
           },
           "contraindications": "Local anesthetic allergy; infection at site",
           "monitoring": "Immediate pain relief; monitor for vasovagal",
@@ -507,25 +474,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg qHS",
-                "orderSentence": "Amitriptyline 10 mg qHS PO"
-              },
-              {
-                "text": "25 mg qHS",
-                "orderSentence": "Amitriptyline 25 mg qHS PO"
-              },
-              {
-                "text": "50 mg qHS",
-                "orderSentence": "Amitriptyline 50 mg qHS PO"
-              },
-              {
-                "text": "75 mg qHS",
-                "orderSentence": "Amitriptyline 75 mg qHS PO"
+                "text": "10 mg",
+                "orderSentence": "Amitriptyline 10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 10 mg qHS; titrate by 10-25 mg every 1-2 weeks; target 25-75 mg qHS; max 150 mg qHS",
-            "orderSentence": "Amitriptyline 10 mg qHS PO"
+            "orderSentence": "Amitriptyline 10 mg PO"
           },
           "pretreatment": "ECG if age >50 or cardiac history",
           "contraindications": "Cardiac conduction abnormality (QTc >450 ms); recent MI; narrow-angle glaucoma; urinary retention; concurrent MAOIs",
@@ -542,25 +497,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg qHS",
-                "orderSentence": "Nortriptyline 10 mg qHS PO"
-              },
-              {
-                "text": "25 mg qHS",
-                "orderSentence": "Nortriptyline 25 mg qHS PO"
-              },
-              {
-                "text": "50 mg qHS",
-                "orderSentence": "Nortriptyline 50 mg qHS PO"
-              },
-              {
-                "text": "75 mg qHS",
-                "orderSentence": "Nortriptyline 75 mg qHS PO"
+                "text": "10 mg",
+                "orderSentence": "Nortriptyline 10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 10 mg qHS; titrate by 10-25 mg every 1-2 weeks; target 25-75 mg qHS; max 150 mg qHS",
-            "orderSentence": "Nortriptyline 10 mg qHS PO"
+            "orderSentence": "Nortriptyline 10 mg PO"
           },
           "pretreatment": "ECG if age >50 or cardiac history",
           "contraindications": "Cardiac conduction abnormality (QTc >450 ms); recent MI; narrow-angle glaucoma; urinary retention; concurrent MAOIs",
@@ -577,21 +520,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "37.5 mg daily",
-                "orderSentence": "Venlafaxine XR 37.5 mg daily PO"
-              },
-              {
-                "text": "75 mg daily",
-                "orderSentence": "Venlafaxine XR 75 mg daily PO"
-              },
-              {
-                "text": "150 mg daily",
-                "orderSentence": "Venlafaxine XR 150 mg daily PO"
+                "text": "37.5 mg",
+                "orderSentence": "Venlafaxine XR 37.5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 37.5 mg daily; increase by 37.5-75 mg every 1 week; target 75-150 mg daily",
-            "orderSentence": "Venlafaxine XR 37.5 mg daily PO"
+            "orderSentence": "Venlafaxine XR 37.5 mg PO"
           },
           "pretreatment": "None",
           "contraindications": "Uncontrolled hypertension; concurrent MAOIs; abrupt discontinuation (taper required)",
@@ -608,21 +543,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "7.5 mg qHS",
-                "orderSentence": "Mirtazapine 7.5 mg qHS PO"
-              },
-              {
-                "text": "15 mg qHS",
-                "orderSentence": "Mirtazapine 15 mg qHS PO"
-              },
-              {
-                "text": "30 mg qHS",
-                "orderSentence": "Mirtazapine 30 mg qHS PO"
+                "text": "7.5 mg",
+                "orderSentence": "Mirtazapine 7.5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 7.5-15 mg qHS; may increase to 30 mg qHS; more sedating at lower doses",
-            "orderSentence": "Mirtazapine 7.5 mg qHS PO"
+            "orderSentence": "Mirtazapine 7.5 mg PO"
           },
           "pretreatment": "None",
           "contraindications": "Concurrent MAOIs; severe hepatic impairment",
@@ -639,25 +566,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg qHS",
-                "orderSentence": "Tizanidine 2 mg qHS PO"
-              },
-              {
-                "text": "4 mg qHS",
-                "orderSentence": "Tizanidine 4 mg qHS PO"
-              },
-              {
-                "text": "2 mg TID",
-                "orderSentence": "Tizanidine 2 mg TID PO"
-              },
-              {
-                "text": "4 mg TID",
-                "orderSentence": "Tizanidine 4 mg TID PO"
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 2 mg qHS; may increase by 2-4 mg every 3-7 days; max 36 mg/day in 3 divided doses",
-            "orderSentence": "Tizanidine 2 mg qHS PO"
+            "orderSentence": "Tizanidine 2 mg PO"
           },
           "pretreatment": "LFTs at baseline",
           "contraindications": "Concurrent ciprofloxacin or fluvoxamine (CYP1A2 inhibitors); hepatic impairment",
@@ -674,25 +589,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg qHS",
-                "orderSentence": "Topiramate 25 mg qHS PO"
-              },
-              {
-                "text": "50 mg BID",
-                "orderSentence": "Topiramate 50 mg BID PO"
-              },
-              {
-                "text": "75 mg BID",
-                "orderSentence": "Topiramate 75 mg BID PO"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Topiramate 100 mg BID PO"
+                "text": "25 mg",
+                "orderSentence": "Topiramate 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25 mg qHS; increase by 25 mg/week; target 50-100 mg BID",
-            "orderSentence": "Topiramate 25 mg qHS PO"
+            "orderSentence": "Topiramate 25 mg PO"
           },
           "pretreatment": "None",
           "contraindications": "Narrow-angle glaucoma; kidney stones; pregnancy (teratogen); metabolic acidosis",
@@ -709,25 +612,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "300 mg qHS",
-                "orderSentence": "Gabapentin 300 mg qHS PO"
-              },
-              {
-                "text": "300 mg TID",
-                "orderSentence": "Gabapentin 300 mg TID PO"
-              },
-              {
-                "text": "600 mg TID",
-                "orderSentence": "Gabapentin 600 mg TID PO"
-              },
-              {
-                "text": "900 mg TID",
-                "orderSentence": "Gabapentin 900 mg TID PO"
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 300 mg qHS; titrate by 300 mg every 3-5 days; target 900-1800 mg/day in 3 divided doses",
-            "orderSentence": "Gabapentin 300 mg qHS PO"
+            "orderSentence": "Gabapentin 300 mg PO"
           },
           "pretreatment": "None",
           "contraindications": "Severe renal impairment (dose adjust for CrCl)",
@@ -974,7 +865,7 @@
     {
       "recommendation": "Physical therapy for tension-type headache",
       "evidenceLevel": "Class II, Level B",
-      "source": "[Espí-López et al. Phys Ther 2014](https://pubmed.ncbi.nlm.nih.gov/24903113/)"
+      "source": "[Espi-Lopez et al. Phys Ther 2014](https://pubmed.ncbi.nlm.nih.gov/24903113/)"
     },
     {
       "recommendation": "Cognitive behavioral therapy reduces headache disability",

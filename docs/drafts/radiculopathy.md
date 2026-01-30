@@ -1,7 +1,7 @@
 ---
 title: Radiculopathy - Cervical and Lumbar
 description: Evaluation and management of cervical and lumbar radiculopathy including red flag identification, imaging indications, conservative and interventional treatments.
-version: "1.0"
+version: "1.1"
 setting: ED, HOSP, OPD, ICU
 status: draft
 tags:
@@ -21,19 +21,16 @@ tags:
 
 # Radiculopathy - Cervical and Lumbar
 
-**VERSION:** 1.0
-**CREATED:** January 27, 2026
-**STATUS:** Draft - Pending Review
-
----
-
 **DIAGNOSIS:** Radiculopathy - Cervical and Lumbar
-
-**ICD-10:** M54.10 (Radiculopathy, site unspecified); M54.11 (Radiculopathy, occipito-atlanto-axial region); M54.12 (Radiculopathy, cervical region); M54.13 (Radiculopathy, cervicothoracic region); M54.14 (Radiculopathy, thoracic region); M54.15 (Radiculopathy, thoracolumbar region); M54.16 (Radiculopathy, lumbar region); M54.17 (Radiculopathy, lumbosacral region); M54.18 (Radiculopathy, sacral and sacrococcygeal region); G55 (Nerve root and plexus compressions in diseases classified elsewhere); M50.10 (Cervical disc disorder with radiculopathy, unspecified); M51.16 (Intervertebral disc disorders with radiculopathy, lumbar region)
-
-**CLINICAL SYNONYMS:** Radiculopathy, pinched nerve, nerve root compression, cervical radiculopathy, lumbar radiculopathy, sciatica, brachialgia, cervical disc herniation with radiculopathy, lumbar disc herniation with radiculopathy, foraminal stenosis, nerve root impingement, radicular pain, dermatomal pain, nerve root syndrome
-
+**ICD-10:** M54.10 (Radiculopathy, site unspecified); M54.12 (Radiculopathy, cervical region); M54.13 (Radiculopathy, cervicothoracic region); M54.16 (Radiculopathy, lumbar region); M54.17 (Radiculopathy, lumbosacral region); G55 (Nerve root and plexus compressions in diseases classified elsewhere); M50.10 (Cervical disc disorder with radiculopathy, unspecified); M51.16 (Intervertebral disc disorders with radiculopathy, lumbar region)
+**SYNONYMS:** Radiculopathy, pinched nerve, nerve root compression, cervical radiculopathy, lumbar radiculopathy, sciatica, brachialgia, cervical disc herniation with radiculopathy, lumbar disc herniation with radiculopathy, foraminal stenosis, nerve root impingement, radicular pain, dermatomal pain, nerve root syndrome
 **SCOPE:** Evaluation and management of cervical (C5-T1) and lumbar (L2-S1) radiculopathy in adults. Covers red flag identification, diagnostic workup including imaging and electrodiagnostic testing, conservative management, interventional treatments, and surgical indications. Excludes spinal cord compression (myelopathy), cauda equina syndrome (requires emergent surgical evaluation), thoracic radiculopathy, and post-surgical radiculopathy.
+
+**VERSION:** 1.1
+**CREATED:** January 27, 2026
+**REVISED:** January 30, 2026
+
+**STATUS:** Draft - Pending Review
 
 ---
 
@@ -83,42 +80,44 @@ tags:
 | **Night pain unrelieved by rest** | Tumor, infection | MRI with contrast |
 
 ---
-SECTION A: ACTION ITEMS
+
+## SECTION A: ACTION ITEMS
+
 ---
 
 ## 1. LABORATORY WORKUP
 
 ### 1A. Essential/Core Labs
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CBC with differential | Infection screen if fever, malignancy screen | Normal WBC; no anemia | STAT | STAT | ROUTINE | STAT |
-| CMP (BMP + LFTs) | Baseline renal/hepatic function for medications; metabolic causes | Normal | STAT | STAT | ROUTINE | STAT |
-| ESR | Inflammatory marker for infection, malignancy, spondyloarthropathy | <20 mm/hr (age-adjusted) | URGENT | URGENT | ROUTINE | URGENT |
-| CRP | Inflammatory marker for infection, malignancy | <0.5 mg/dL | URGENT | URGENT | ROUTINE | URGENT |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CBC with differential (85025) | STAT | STAT | ROUTINE | STAT | Infection screen if fever, malignancy screen | Normal WBC; no anemia |
+| CMP - BMP + LFTs (80053) | STAT | STAT | ROUTINE | STAT | Baseline renal/hepatic function for medications; metabolic causes | Normal |
+| ESR (85652) | URGENT | URGENT | ROUTINE | URGENT | Inflammatory marker for infection, malignancy, spondyloarthropathy | <20 mm/hr (age-adjusted) |
+| CRP (86140) | URGENT | URGENT | ROUTINE | URGENT | Inflammatory marker for infection, malignancy | <0.5 mg/dL |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| HbA1c | Diabetes increases neuropathy risk; affects surgical outcomes | <5.7% | - | ROUTINE | ROUTINE | - |
-| Fasting glucose | Diabetes screening | <100 mg/dL | - | ROUTINE | ROUTINE | - |
-| Vitamin B12 | Combined neuropathy may confuse presentation | >300 pg/mL | - | ROUTINE | ROUTINE | - |
-| TSH | Hypothyroidism can cause myopathy, neuropathy | Normal (0.4-4.0 mIU/L) | - | ROUTINE | ROUTINE | - |
-| HLA-B27 | Ankylosing spondylitis, spondyloarthropathy if young patient with inflammatory back pain | Negative | - | EXT | ROUTINE | - |
-| Urinalysis | UTI can mimic/exacerbate symptoms; pre-operative screen | Normal | URGENT | ROUTINE | ROUTINE | - |
-| PSA (males >50) | Prostate cancer metastases to spine | Age-appropriate normal | - | ROUTINE | ROUTINE | - |
-| Blood cultures (x2) | If fever or infection suspected | No growth | STAT | STAT | - | STAT |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| HbA1c (83036) | - | ROUTINE | ROUTINE | - | Diabetes increases neuropathy risk; affects surgical outcomes | <5.7% |
+| Fasting glucose (82947) | - | ROUTINE | ROUTINE | - | Diabetes screening | <100 mg/dL |
+| Vitamin B12 (82607) | - | ROUTINE | ROUTINE | - | Combined neuropathy may confuse presentation | >300 pg/mL |
+| TSH (84443) | - | ROUTINE | ROUTINE | - | Hypothyroidism can cause myopathy, neuropathy | Normal (0.4-4.0 mIU/L) |
+| HLA-B27 (86812) | - | EXT | ROUTINE | - | Ankylosing spondylitis, spondyloarthropathy if young patient with inflammatory back pain | Negative |
+| Urinalysis (81001) | URGENT | ROUTINE | ROUTINE | - | UTI can mimic/exacerbate symptoms; pre-operative screen | Normal |
+| PSA - males >50 (84153) | - | ROUTINE | ROUTINE | - | Prostate cancer metastases to spine | Age-appropriate normal |
+| Blood cultures x2 (87040) | STAT | STAT | - | STAT | If fever or infection suspected | No growth |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| SPEP with immunofixation | Multiple myeloma with vertebral lesions | No M-spike | - | EXT | EXT | - |
-| Lyme serology | Endemic areas with radiculopathy, polyradiculopathy | Negative | - | EXT | EXT | - |
-| Paraneoplastic panel | Atypical presentation, weight loss, subacute course | Negative | - | EXT | EXT | - |
-| ANA | Connective tissue disease | Negative or low titer | - | EXT | EXT | - |
-| ACE level | Sarcoidosis with multifocal radiculopathy | Normal | - | EXT | EXT | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| SPEP with immunofixation (86335, 86334) | - | EXT | EXT | - | Multiple myeloma with vertebral lesions | No M-spike |
+| Lyme serology (86618) | - | EXT | EXT | - | Endemic areas with radiculopathy, polyradiculopathy | Negative |
+| Paraneoplastic panel (86255) | - | EXT | EXT | - | Atypical presentation, weight loss, subacute course | Negative |
+| ANA (86038) | - | EXT | EXT | - | Connective tissue disease | Negative or low titer |
+| ACE level (82164) | - | EXT | EXT | - | Sarcoidosis with multifocal radiculopathy | Normal |
 
 ---
 
@@ -126,28 +125,28 @@ SECTION A: ACTION ITEMS
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI spine (cervical or lumbar) without contrast | STAT if red flags; otherwise after 4-6 weeks conservative treatment fails | Disc herniation, foraminal stenosis, nerve root compression | Pacemaker (MRI-incompatible), cochlear implant, metallic foreign body | STAT | URGENT | ROUTINE | STAT |
-| MRI spine with and without contrast | If infection, tumor, or inflammatory etiology suspected | Enhancement pattern (abscess rim, tumor, leptomeningeal) | GFR <30 (for gadolinium); pacemaker; gadolinium allergy | STAT | URGENT | ROUTINE | STAT |
-| X-ray spine (AP/lateral, flexion/extension) | Initial screen for instability, spondylolisthesis, fracture, alignment | No fracture, normal alignment, no listhesis | Pregnancy (shield abdomen) | URGENT | ROUTINE | ROUTINE | URGENT |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI spine without contrast - cervical (72141) or lumbar (72148) | STAT | URGENT | ROUTINE | STAT | STAT if red flags; otherwise after 4-6 weeks conservative treatment fails | Disc herniation, foraminal stenosis, nerve root compression | MRI-incompatible pacemaker; cochlear implant; metallic foreign body |
+| MRI spine with and without contrast - cervical (72156) or lumbar (72158) | STAT | URGENT | ROUTINE | STAT | If infection, tumor, or inflammatory etiology suspected | Enhancement pattern (abscess rim, tumor, leptomeningeal) | GFR <30 (for gadolinium); MRI-incompatible device; gadolinium allergy |
+| X-ray spine AP/lateral, flexion/extension - cervical (72050) or lumbar (72114) | URGENT | ROUTINE | ROUTINE | URGENT | Initial screen for instability, spondylolisthesis, fracture, alignment | No fracture, normal alignment, no listhesis | Pregnancy (shield abdomen) |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| CT spine without contrast | If MRI contraindicated; bony detail for fracture, foraminal stenosis | Foraminal narrowing, osteophytes, fracture | Pregnancy (relative); contrast allergy (if contrast used) | URGENT | URGENT | ROUTINE | URGENT |
-| CT myelogram | MRI contraindicated and need for neural visualization | Filling defect at nerve root, cord compression | Coagulopathy (for LP); intracranial mass | - | EXT | EXT | - |
-| EMG/NCS (electrodiagnostic studies) | 3-4 weeks after symptom onset to confirm radiculopathy, exclude peripheral neuropathy, localize level | Fibrillations/positive sharp waves in myotomal distribution; reduced recruitment | Pacemaker (relative for needle EMG); anticoagulation (relative) | - | ROUTINE | ROUTINE | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| CT spine without contrast (72125/72131) | URGENT | URGENT | ROUTINE | URGENT | If MRI contraindicated; bony detail for fracture, foraminal stenosis | Foraminal narrowing, osteophytes, fracture | Pregnancy (relative); contrast allergy (if contrast used) |
+| CT myelogram (72132) | - | EXT | EXT | - | MRI contraindicated and need for neural visualization | Filling defect at nerve root, cord compression | Coagulopathy (for LP); intracranial mass |
+| EMG/NCS - electrodiagnostic studies (95886, 95909) | - | ROUTINE | ROUTINE | - | 3-4 weeks after symptom onset to confirm radiculopathy, exclude peripheral neuropathy, localize level | Fibrillations/positive sharp waves in myotomal distribution; reduced recruitment | Pacemaker (relative for needle EMG); anticoagulation (relative) |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| Diagnostic selective nerve root block | To confirm symptomatic level when imaging shows multilevel disease | >50% pain relief confirms level | Coagulopathy; infection at injection site; allergy to contrast/anesthetic | - | EXT | ROUTINE | - |
-| Bone scan (nuclear) | Suspected occult fracture, metastatic disease, infection | No increased uptake | Pregnancy | - | EXT | ROUTINE | - |
-| PET-CT | Occult malignancy, extent of metastatic disease | No FDG-avid lesions | Pregnancy; uncontrolled diabetes | - | EXT | EXT | - |
-| Discography | Identify painful disc level before fusion (controversial) | Concordant pain reproduction | Coagulopathy; local infection; allergy | - | - | EXT | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Diagnostic selective nerve root block (64483/64490) | - | EXT | ROUTINE | - | To confirm symptomatic level when imaging shows multilevel disease | >50% pain relief confirms level | Coagulopathy; infection at injection site; allergy to contrast/anesthetic |
+| Bone scan - nuclear (78300) | - | EXT | ROUTINE | - | Suspected occult fracture, metastatic disease, infection | No increased uptake | Pregnancy |
+| PET-CT (78816) | - | EXT | EXT | - | Occult malignancy, extent of metastatic disease | No FDG-avid lesions | Pregnancy; uncontrolled diabetes |
+| Discography (62290) | - | - | EXT | - | Identify painful disc level before fusion (controversial) | Concordant pain reproduction | Coagulopathy; local infection; allergy |
 
 ---
 
@@ -158,7 +157,7 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Methylprednisolone | IV | Severe acute radiculopathy with significant weakness | 125 mg :: IV :: once :: 125 mg IV once; may give for severe acute radicular symptoms | Active infection; uncontrolled diabetes; GI bleeding | Glucose; BP; GI symptoms | STAT | STAT | - | STAT |
-| Dexamethasone | IV/PO | Acute severe radiculopathy, disc herniation with inflammation | 10 mg :: IV :: once, then 4 mg q6h :: 10 mg IV once, then 4 mg IV/PO q6h x 3-5 days; taper over 5-7 days | Active infection; uncontrolled diabetes; GI bleeding | Glucose; BP; psychiatric effects | STAT | STAT | ROUTINE | STAT |
+| Dexamethasone | IV/PO | Acute severe radiculopathy, disc herniation with inflammation | 10 mg :: IV :: once then 4 mg q6h :: 10 mg IV once, then 4 mg IV/PO q6h x 3-5 days; taper over 5-7 days | Active infection; uncontrolled diabetes; GI bleeding | Glucose; BP; psychiatric effects | STAT | STAT | ROUTINE | STAT |
 | Prednisone | PO | Acute radiculopathy with moderate-severe symptoms | 60 mg :: PO :: daily x 5 days :: 60 mg daily x 5 days then taper; OR Medrol dose pack | Active GI bleed; uncontrolled DM; active infection | Glucose; BP; mood | URGENT | URGENT | ROUTINE | - |
 | Ketorolac | IV/IM | Acute pain, anti-inflammatory | 30 mg :: IV :: q6h :: 30 mg IV/IM q6h; max 5 days; reduce to 15 mg if elderly/renal impairment | CrCl <30; active GI bleed; aspirin allergy; post-CABG | Renal function; GI bleeding | STAT | STAT | - | STAT |
 | Morphine | IV | Severe acute radicular pain | 2-4 mg :: IV :: q2-4h PRN :: 2-4 mg IV q2-4h PRN severe pain; titrate to effect | Respiratory depression; severe asthma; paralytic ileus | Respiratory status; sedation; pain scores | STAT | STAT | - | STAT |
@@ -169,34 +168,34 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Ibuprofen | PO | Radicular pain, inflammation (first-line OTC) | 400 mg TID; 600 mg TID; 800 mg TID :: PO :: :: 400-800 mg TID with food; max 3200 mg/day; short-term use preferred | CrCl <30; active GI bleed; aspirin allergy; third trimester pregnancy | GI symptoms; renal function with prolonged use | ROUTINE | ROUTINE | ROUTINE | - |
-| Naproxen | PO | Radicular pain, inflammation (longer duration) | 250 mg BID; 500 mg BID :: PO :: :: 250-500 mg BID with food; max 1500 mg/day | CrCl <30; active GI bleed; aspirin allergy; third trimester pregnancy | GI symptoms; renal function with prolonged use | ROUTINE | ROUTINE | ROUTINE | - |
-| Meloxicam | PO | Radicular pain (once daily dosing) | 7.5 mg daily; 15 mg daily :: PO :: :: 7.5-15 mg daily; max 15 mg/day | CrCl <30; active GI bleed; aspirin allergy | GI symptoms; renal function | - | ROUTINE | ROUTINE | - |
-| Celecoxib | PO | Radicular pain (GI-sparing COX-2) | 100 mg BID; 200 mg BID :: PO :: :: 100-200 mg BID; max 400 mg/day | Sulfonamide allergy; CAD/CVD (increased CV risk); CrCl <30 | CV events; GI symptoms; renal function | - | ROUTINE | ROUTINE | - |
-| Acetaminophen | PO | Mild-moderate pain (adjunct, avoid hepatotoxicity) | 650 mg q6h; 1000 mg q6h :: PO :: :: 650-1000 mg q6h; max 3000 mg/day (2000 mg/day if liver disease) | Severe hepatic impairment; chronic alcohol use | LFTs with prolonged use | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
-| Gabapentin | PO | Neuropathic/radicular pain (first-line for radiculopathy) | 300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID; 1200 mg TID :: PO :: :: Start 300 mg qHS; increase by 300 mg q1-3d; target 900-1800 mg TID; max 3600 mg/day | Renal impairment (adjust: CrCl 30-59 max 1400 mg/day; CrCl 15-29 max 600 mg/day; CrCl <15 max 300 mg/day) | Sedation; dizziness; edema; taper to discontinue | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
-| Pregabalin | PO | Neuropathic/radicular pain (first-line alternative) | 75 mg BID; 150 mg BID; 225 mg BID; 300 mg BID :: PO :: :: Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID (600 mg/day) | Renal impairment (adjust per CrCl); Class V controlled | Sedation; weight gain; edema; dizziness | - | ROUTINE | ROUTINE | ROUTINE |
-| Duloxetine | PO | Neuropathic/radicular pain with depression/anxiety | 30 mg daily; 60 mg daily :: PO :: :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | Hepatic impairment; CrCl <30; MAOIs; narrow-angle glaucoma | Nausea; BP; discontinuation syndrome (taper over 2+ weeks) | - | ROUTINE | ROUTINE | - |
-| Cyclobenzaprine | PO | Muscle spasm (short-term) | 5 mg TID; 10 mg TID :: PO :: :: 5-10 mg TID; max 30 mg/day; limit to 2-3 weeks | Arrhythmia; heart failure; MAOIs within 14 days; hyperthyroidism | Sedation; anticholinergic effects; dry mouth | ROUTINE | ROUTINE | ROUTINE | - |
-| Tizanidine | PO | Muscle spasm (alternative to cyclobenzaprine) | 2 mg TID; 4 mg TID; 8 mg TID :: PO :: :: Start 2 mg TID; increase by 2-4 mg q6-8h; max 36 mg/day in divided doses | Concurrent ciprofloxacin or fluvoxamine (CYP1A2 inhibitors); hepatic impairment | LFTs at baseline, 1, 3, 6 months; sedation; hypotension | - | ROUTINE | ROUTINE | - |
-| Methocarbamol | PO | Muscle spasm (less sedating) | 750 mg QID; 1500 mg QID :: PO :: :: 1500 mg QID x 2-3 days, then 750 mg QID or 1500 mg TID | Renal impairment (use caution); myasthenia gravis | Sedation; dizziness (less than other relaxants) | ROUTINE | ROUTINE | ROUTINE | - |
-| Baclofen | PO | Muscle spasm (if other relaxants fail) | 5 mg TID; 10 mg TID; 20 mg TID :: PO :: :: Start 5 mg TID; increase by 5 mg/dose q3d; max 80 mg/day | Withdrawal risk if stopped abruptly; renal impairment | Sedation; weakness; must taper to discontinue (seizure risk) | - | ROUTINE | ROUTINE | - |
+| Ibuprofen | PO | Radicular pain, inflammation (first-line OTC) | 400 mg :: PO :: TID :: 400-800 mg TID with food; max 3200 mg/day; short-term use preferred | CrCl <30; active GI bleed; aspirin allergy; third trimester pregnancy | GI symptoms; renal function with prolonged use | ROUTINE | ROUTINE | ROUTINE | - |
+| Naproxen | PO | Radicular pain, inflammation (longer duration) | 250 mg :: PO :: BID :: 250-500 mg BID with food; max 1500 mg/day | CrCl <30; active GI bleed; aspirin allergy; third trimester pregnancy | GI symptoms; renal function with prolonged use | ROUTINE | ROUTINE | ROUTINE | - |
+| Meloxicam | PO | Radicular pain (once daily dosing) | 7.5 mg :: PO :: daily :: 7.5-15 mg daily; max 15 mg/day | CrCl <30; active GI bleed; aspirin allergy | GI symptoms; renal function | - | ROUTINE | ROUTINE | - |
+| Celecoxib | PO | Radicular pain (GI-sparing COX-2) | 100 mg :: PO :: BID :: 100-200 mg BID; max 400 mg/day | Sulfonamide allergy; CAD/CVD (increased CV risk); CrCl <30 | CV events; GI symptoms; renal function | - | ROUTINE | ROUTINE | - |
+| Acetaminophen | PO | Mild-moderate pain (adjunct, avoid hepatotoxicity) | 650 mg :: PO :: q6h :: 650-1000 mg q6h; max 3000 mg/day (2000 mg/day if liver disease) | Severe hepatic impairment; chronic alcohol use | LFTs with prolonged use | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Gabapentin | PO | Neuropathic/radicular pain (first-line for radiculopathy) | 300 mg :: PO :: qHS :: Start 300 mg qHS; increase by 300 mg q1-3d; target 900-1800 mg TID; max 3600 mg/day | Renal impairment (adjust: CrCl 30-59 max 1400 mg/day; CrCl 15-29 max 600 mg/day; CrCl <15 max 300 mg/day) | Sedation; dizziness; edema; taper to discontinue | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Pregabalin | PO | Neuropathic/radicular pain (first-line alternative) | 75 mg :: PO :: BID :: Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID (600 mg/day) | Renal impairment (adjust per CrCl); Class V controlled | Sedation; weight gain; edema; dizziness | - | ROUTINE | ROUTINE | ROUTINE |
+| Duloxetine | PO | Neuropathic/radicular pain with depression/anxiety | 30 mg :: PO :: daily :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | Hepatic impairment; CrCl <30; MAOIs; narrow-angle glaucoma | Nausea; BP; discontinuation syndrome (taper over 2+ weeks) | - | ROUTINE | ROUTINE | - |
+| Cyclobenzaprine | PO | Muscle spasm (short-term) | 5 mg :: PO :: TID :: 5-10 mg TID; max 30 mg/day; limit to 2-3 weeks | Arrhythmia; heart failure; MAOIs within 14 days; hyperthyroidism | Sedation; anticholinergic effects; dry mouth | ROUTINE | ROUTINE | ROUTINE | - |
+| Tizanidine | PO | Muscle spasm (alternative to cyclobenzaprine) | 2 mg :: PO :: TID :: Start 2 mg TID; increase by 2-4 mg q6-8h; max 36 mg/day in divided doses | Concurrent ciprofloxacin or fluvoxamine (CYP1A2 inhibitors); hepatic impairment | LFTs at baseline, 1, 3, 6 months; sedation; hypotension | - | ROUTINE | ROUTINE | - |
+| Methocarbamol | PO | Muscle spasm (less sedating) | 1500 mg :: PO :: QID :: 1500 mg QID x 2-3 days, then 750 mg QID or 1500 mg TID | Renal impairment (use caution); myasthenia gravis | Sedation; dizziness (less than other relaxants) | ROUTINE | ROUTINE | ROUTINE | - |
+| Baclofen | PO | Muscle spasm (if other relaxants fail) | 5 mg :: PO :: TID :: Start 5 mg TID; increase by 5 mg/dose q3d; max 80 mg/day | Withdrawal risk if stopped abruptly; renal impairment | Sedation; weakness; must taper to discontinue (seizure risk) | - | ROUTINE | ROUTINE | - |
 | Lidocaine patch 5% | TOP | Localized radicular pain | 1-3 patches :: TOP :: 12h on/12h off :: Apply 1-3 patches to affected area for 12h on, 12h off | Severe hepatic impairment; broken skin | Minimal systemic absorption; local skin irritation | - | ROUTINE | ROUTINE | ROUTINE |
 | Capsaicin cream 0.075% | TOP | Localized radicular pain (adjunct) | Apply thin layer :: TOP :: TID-QID :: Apply TID-QID to affected area; takes 2-4 weeks for effect | Open wounds; avoid eyes/mucous membranes | Initial burning (decreases with use); wash hands after | - | - | ROUTINE | - |
-| Amitriptyline | PO | Neuropathic pain (second-line, helps sleep) | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly | ECG if dose >100 mg/day; anticholinergic effects | - | ROUTINE | ROUTINE | - |
-| Nortriptyline | PO | Neuropathic pain (second-line, less sedating than amitriptyline) | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly | ECG if dose >100 mg/day; fewer anticholinergic effects than amitriptyline | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | PO | Neuropathic pain (second-line, helps sleep) | 10 mg :: PO :: qHS :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly | ECG if dose >100 mg/day; anticholinergic effects | - | ROUTINE | ROUTINE | - |
+| Nortriptyline | PO | Neuropathic pain (second-line, less sedating than amitriptyline) | 10 mg :: PO :: qHS :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly | ECG if dose >100 mg/day; fewer anticholinergic effects than amitriptyline | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Second-line/Refractory
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Tramadol | PO | Moderate radicular pain not controlled by NSAIDs/gabapentinoids | 50 mg q6h PRN; 100 mg ER daily; 200 mg ER daily :: PO :: :: Start 50 mg q6h PRN; may use ER 100 mg daily; max 400 mg/day | Seizure disorder; MAOIs; SSRIs (serotonin syndrome); severe renal/hepatic impairment | Serotonin syndrome; seizures; dependence (Schedule IV) | - | ROUTINE | ROUTINE | - |
-| Oxycodone | PO | Moderate-severe radicular pain (short-term) | 5 mg q4-6h PRN; 10 mg q4-6h PRN :: PO :: :: 5-10 mg PO q4-6h PRN; for short-term use only | Respiratory depression; paralytic ileus; MAOIs | Sedation; constipation; respiratory status; dependence (Schedule II) | - | ROUTINE | ROUTINE | - |
-| Oxycodone/Acetaminophen | PO | Moderate-severe radicular pain (short-term) | 5/325 mg q4-6h PRN; 10/325 mg q4-6h PRN :: PO :: :: 5-10/325 mg q4-6h PRN; max acetaminophen 3000 mg/day | Respiratory depression; hepatic impairment; paralytic ileus | Sedation; respiratory status; LFTs; total acetaminophen intake | - | ROUTINE | ROUTINE | - |
-| Epidural steroid injection (ESI) | Fluoroscopic | Radicular pain refractory to conservative treatment x 4-6 weeks | Per interventional protocol :: Fluoroscopic :: q2-4 weeks x 3 :: Transforaminal or interlaminar approach; up to 3 injections per year | Coagulopathy (INR >1.5, plt <100k); infection at site; allergy to contrast/steroids | Post-procedure neuro exam; glucose (diabetics); headache | - | EXT | ROUTINE | - |
-| Transforaminal epidural steroid injection (TFESI) | Fluoroscopic | Unilateral radicular symptoms, foraminal stenosis | Per interventional protocol :: Fluoroscopic :: q2-4 weeks x 3 :: More selective nerve root coverage than interlaminar; up to 3 per year | Coagulopathy; infection; severe foraminal stenosis | Post-procedure neuro check; glucose monitoring | - | EXT | ROUTINE | - |
-| Medial branch blocks | Fluoroscopic | Facet-mediated pain component | Per interventional protocol :: Fluoroscopic :: diagnostic x 2 :: Diagnostic blocks before radiofrequency ablation consideration | Coagulopathy; infection at site | Pain response documentation | - | - | ROUTINE | - |
-| Radiofrequency ablation (RFA) | Fluoroscopic | Facet-mediated pain with positive diagnostic blocks | Per interventional protocol :: Fluoroscopic :: once, may repeat q6-12 mo :: If >50% relief from diagnostic medial branch blocks x 2 | Coagulopathy; infection; pacemaker (relative) | Neurologic exam post-procedure; pain scores | - | - | ROUTINE | - |
+| Tramadol | PO | Moderate radicular pain not controlled by NSAIDs/gabapentinoids | 50 mg :: PO :: q6h PRN :: Start 50 mg q6h PRN; may use ER 100 mg daily; max 400 mg/day | Seizure disorder; MAOIs; SSRIs (serotonin syndrome); severe renal/hepatic impairment | Serotonin syndrome; seizures; dependence (Schedule IV) | - | ROUTINE | ROUTINE | - |
+| Oxycodone | PO | Moderate-severe radicular pain (short-term) | 5 mg :: PO :: q4-6h PRN :: 5-10 mg PO q4-6h PRN; for short-term use only | Respiratory depression; paralytic ileus; MAOIs | Sedation; constipation; respiratory status; dependence (Schedule II) | - | ROUTINE | ROUTINE | - |
+| Oxycodone/Acetaminophen | PO | Moderate-severe radicular pain (short-term) | 5/325 mg :: PO :: q4-6h PRN :: 5-10/325 mg q4-6h PRN; max acetaminophen 3000 mg/day | Respiratory depression; hepatic impairment; paralytic ileus | Sedation; respiratory status; LFTs; total acetaminophen intake | - | ROUTINE | ROUTINE | - |
+| Epidural steroid injection (ESI) | Fluoroscopic | Radicular pain refractory to conservative treatment x 4-6 weeks | Per protocol :: Fluoroscopic :: q2-4 weeks x 3 :: Transforaminal or interlaminar approach; up to 3 injections per year | Coagulopathy (INR >1.5, plt <100k); infection at site; allergy to contrast/steroids | Post-procedure neuro exam; glucose (diabetics); headache | - | EXT | ROUTINE | - |
+| Transforaminal ESI (TFESI) | Fluoroscopic | Unilateral radicular symptoms, foraminal stenosis | Per protocol :: Fluoroscopic :: q2-4 weeks x 3 :: More selective nerve root coverage than interlaminar; up to 3 per year | Coagulopathy; infection; severe foraminal stenosis | Post-procedure neuro check; glucose monitoring | - | EXT | ROUTINE | - |
+| Medial branch blocks | Fluoroscopic | Facet-mediated pain component | Per protocol :: Fluoroscopic :: diagnostic x 2 :: Diagnostic blocks before radiofrequency ablation consideration | Coagulopathy; infection at site | Pain response documentation | - | - | ROUTINE | - |
+| Radiofrequency ablation (RFA) | Fluoroscopic | Facet-mediated pain with positive diagnostic blocks | Per protocol :: Fluoroscopic :: once, repeat q6-12 mo :: If >50% relief from diagnostic medial branch blocks x 2 | Coagulopathy; infection; pacemaker (relative) | Neurologic exam post-procedure; pain scores | - | - | ROUTINE | - |
 
 ### 3D. Surgical Treatments (Specialist Decision)
 
@@ -236,43 +235,43 @@ SECTION A: ACTION ITEMS
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
-| Return to ED IMMEDIATELY if bladder or bowel incontinence, inability to urinate, saddle area numbness, or bilateral leg weakness (may indicate cauda equina syndrome) | ✓ | ✓ | ✓ |
-| Return to ED if fever develops with back/neck pain (may indicate infection) | ✓ | ✓ | ✓ |
-| Return if weakness is progressing or you are unable to lift foot/hand (progressive motor deficit requires urgent evaluation) | ✓ | ✓ | ✓ |
-| Most radiculopathy improves with conservative treatment over 4-6 weeks; surgery is rarely needed | ✓ | ✓ | ✓ |
-| Stay active within pain limits; prolonged bed rest (>1-2 days) is not recommended and may delay recovery | - | ✓ | ✓ |
-| Apply ice for first 48-72 hours (20 min on/off), then switch to heat for muscle relaxation | ✓ | ✓ | ✓ |
-| Avoid heavy lifting, twisting, and prolonged sitting; use proper body mechanics | ✓ | ✓ | ✓ |
-| Sleep with pillow between knees (side) or under knees (back) to reduce spine stress | - | ✓ | ✓ |
-| For cervical radiculopathy: avoid prolonged neck flexion (looking down at phone); use cervical pillow | - | ✓ | ✓ |
-| Do not stop gabapentin/pregabalin abruptly - taper under medical guidance to avoid withdrawal | - | ✓ | ✓ |
-| Neuropathic pain medications (gabapentin, pregabalin) take 2-4 weeks to reach full effect | - | ✓ | ✓ |
-| Physical therapy exercises should be continued daily at home for best outcomes | - | ✓ | ✓ |
-| Do not drive while taking opioids or sedating muscle relaxants | ✓ | ✓ | ✓ |
-| Follow up with primary care or neurology in 2-4 weeks to assess treatment response | ✓ | ✓ | ✓ |
+| Return to ED IMMEDIATELY if bladder or bowel incontinence, inability to urinate, saddle area numbness, or bilateral leg weakness (may indicate cauda equina syndrome) | STAT | STAT | STAT |
+| Return to ED if fever develops with back/neck pain (may indicate infection) | STAT | STAT | STAT |
+| Return if weakness is progressing or you are unable to lift foot/hand (progressive motor deficit requires urgent evaluation) | STAT | STAT | STAT |
+| Most radiculopathy improves with conservative treatment over 4-6 weeks; surgery is rarely needed | ROUTINE | ROUTINE | ROUTINE |
+| Stay active within pain limits; prolonged bed rest (>1-2 days) is not recommended and may delay recovery | - | ROUTINE | ROUTINE |
+| Apply ice for first 48-72 hours (20 min on/off), then switch to heat for muscle relaxation | ROUTINE | ROUTINE | ROUTINE |
+| Avoid heavy lifting, twisting, and prolonged sitting; use proper body mechanics | ROUTINE | ROUTINE | ROUTINE |
+| Sleep with pillow between knees (side) or under knees (back) to reduce spine stress | - | ROUTINE | ROUTINE |
+| For cervical radiculopathy: avoid prolonged neck flexion (looking down at phone); use cervical pillow | - | ROUTINE | ROUTINE |
+| Do not stop gabapentin/pregabalin abruptly - taper under medical guidance to avoid withdrawal | - | ROUTINE | ROUTINE |
+| Neuropathic pain medications (gabapentin, pregabalin) take 2-4 weeks to reach full effect | - | ROUTINE | ROUTINE |
+| Physical therapy exercises should be continued daily at home for best outcomes | - | ROUTINE | ROUTINE |
+| Do not drive while taking opioids or sedating muscle relaxants | ROUTINE | ROUTINE | ROUTINE |
+| Follow up with primary care or neurology in 2-4 weeks to assess treatment response | ROUTINE | ROUTINE | ROUTINE |
 
 ### 4C. Lifestyle & Prevention
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
-| Smoking cessation to improve disc nutrition and surgical outcomes (smoking accelerates disc degeneration) | ✓ | ✓ | ✓ |
-| Weight loss if BMI >25 to reduce spinal load and improve symptoms | - | ✓ | ✓ |
-| Core strengthening exercises to support spine (plank, bird-dog, bridges) | - | ✓ | ✓ |
-| Proper lifting technique: bend at knees, keep load close, avoid twisting | ✓ | ✓ | ✓ |
-| Ergonomic workstation setup: monitor at eye level, lumbar support, feet flat | - | - | ✓ |
-| Take breaks every 30-60 minutes if seated for prolonged periods | - | ✓ | ✓ |
-| Maintain good posture: shoulders back, chin tucked, avoid forward head position | - | ✓ | ✓ |
-| Regular low-impact exercise (walking, swimming, stationary bike) to maintain fitness | - | ✓ | ✓ |
-| Avoid high-impact activities (running, jumping) during acute phase | - | ✓ | ✓ |
-| Yoga or Pilates (modified) for flexibility and core strength after acute phase resolves | - | - | ✓ |
-| Use supportive mattress; avoid sleeping on stomach | - | ✓ | ✓ |
-| Manage stress as tension can worsen muscle spasm and pain perception | - | ✓ | ✓ |
-| Glycemic control if diabetic (HbA1c <7%) to reduce neuropathic component and improve surgical outcomes | - | ✓ | ✓ |
+| Smoking cessation to improve disc nutrition and surgical outcomes (smoking accelerates disc degeneration) | ROUTINE | ROUTINE | ROUTINE |
+| Weight loss if BMI >25 to reduce spinal load and improve symptoms | - | ROUTINE | ROUTINE |
+| Core strengthening exercises to support spine (plank, bird-dog, bridges) | - | ROUTINE | ROUTINE |
+| Proper lifting technique: bend at knees, keep load close, avoid twisting | ROUTINE | ROUTINE | ROUTINE |
+| Ergonomic workstation setup: monitor at eye level, lumbar support, feet flat | - | - | ROUTINE |
+| Take breaks every 30-60 minutes if seated for prolonged periods | - | ROUTINE | ROUTINE |
+| Maintain good posture: shoulders back, chin tucked, avoid forward head position | - | ROUTINE | ROUTINE |
+| Regular low-impact exercise (walking, swimming, stationary bike) to maintain fitness | - | ROUTINE | ROUTINE |
+| Avoid high-impact activities (running, jumping) during acute phase | - | ROUTINE | ROUTINE |
+| Yoga or Pilates (modified) for flexibility and core strength after acute phase resolves | - | - | ROUTINE |
+| Use supportive mattress; avoid sleeping on stomach | - | ROUTINE | ROUTINE |
+| Manage stress as tension can worsen muscle spasm and pain perception | - | ROUTINE | ROUTINE |
+| Glycemic control if diabetic (HbA1c <7%) to reduce neuropathic component and improve surgical outcomes | - | ROUTINE | ROUTINE |
 
 ---
 
----
-SECTION B: REFERENCE (Expand as Needed)
+## SECTION B: REFERENCE
+
 ---
 
 ## 5. DIFFERENTIAL DIAGNOSIS
@@ -307,7 +306,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Parameter | Frequency | Target/Threshold | Action if Abnormal | ED | HOSP | OPD | ICU |
 |-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
 | Pain scores (0-10 NRS) | Each visit | 50% reduction from baseline | Escalate therapy; consider interventional/surgical referral | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
-| Motor strength (MRC grading) | Each visit; more frequent if weakness present | Stable or improving; ≥4/5 | Progressive weakness: urgent spine surgery consult; imaging | STAT | STAT | ROUTINE | STAT |
+| Motor strength (MRC grading) | Each visit; more frequent if weakness present | Stable or improving; >=4/5 | Progressive weakness: urgent spine surgery consult; imaging | STAT | STAT | ROUTINE | STAT |
 | Sensory exam (dermatomal) | Each visit | Stable or improving | Document progression; correlate with imaging | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
 | Deep tendon reflexes | Each visit | Symmetric or appropriate for level | Hyperreflexia suggests myelopathy: MRI cervical spine | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
 | Bladder function | Each visit; more frequent if any symptoms | Normal voiding, no retention | Retention or incontinence: STAT catheterization, STAT MRI, emergent surgery consult | STAT | STAT | ROUTINE | STAT |
@@ -323,11 +322,11 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Disposition | Criteria |
 |-------------|----------|
-| **Discharge home** | No red flags present; pain controlled with oral medications; able to ambulate; normal bladder function; motor strength ≥4/5 and stable; reliable follow-up arranged within 2-4 weeks |
-| **Admit to floor** | Severe pain requiring IV analgesia; significant motor weakness (≤3/5) requiring close monitoring; need for IV antibiotics (suspected infection); inability to ambulate safely; need for urgent MRI not available as outpatient |
-| **Admit to ICU** | Rapidly progressive motor deficit requiring emergent surgery; hemodynamic instability from sepsis (spinal infection); airway compromise (high cervical pathology); post-operative monitoring for complex spine surgery |
-| **Emergent surgery consult** | Cauda equina syndrome (bladder dysfunction, saddle anesthesia, bilateral weakness); progressive motor deficit despite steroids; epidural abscess with neurologic deficit |
-| **Transfer to higher level** | Spine surgery not available; MRI not available for emergent imaging; interventional spine services not available for ESI when indicated |
+| Discharge home | No red flags present; pain controlled with oral medications; able to ambulate; normal bladder function; motor strength >=4/5 and stable; reliable follow-up arranged within 2-4 weeks |
+| Admit to floor | Severe pain requiring IV analgesia; significant motor weakness (<=3/5) requiring close monitoring; need for IV antibiotics (suspected infection); inability to ambulate safely; need for urgent MRI not available as outpatient |
+| Admit to ICU | Rapidly progressive motor deficit requiring emergent surgery; hemodynamic instability from sepsis (spinal infection); airway compromise (high cervical pathology); post-operative monitoring for complex spine surgery |
+| Emergent surgery consult | Cauda equina syndrome (bladder dysfunction, saddle anesthesia, bilateral weakness); progressive motor deficit despite steroids; epidural abscess with neurologic deficit |
+| Transfer to higher level | Spine surgery not available; MRI not available for emergent imaging; interventional spine services not available for ESI when indicated |
 
 ---
 
@@ -412,6 +411,17 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized lab tables (1A, 1B, 1C) to `Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding` format with CPT codes
+- Standardized imaging tables (2A, 2B, 2C) to `Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications` format with CPT codes
+- Fixed structured dosing first fields to `starting_dose :: route :: frequency :: full_instructions` format across all treatment sections
+- Standardized priority markers from checkmarks to STAT/ROUTINE in patient instructions and lifestyle tables
+- Fixed section header formatting to use `## SECTION` format
+- Reorganized header block (DIAGNOSIS/ICD-10/SYNONYMS/SCOPE before VERSION)
+- Added REVISED date
+- Trimmed ICD-10 list to most clinically relevant codes
+- Bumped version to 1.1
 
 **v1.0 (January 27, 2026)**
 - Initial creation

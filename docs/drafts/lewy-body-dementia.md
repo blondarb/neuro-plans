@@ -1,7 +1,7 @@
 ---
 title: "Lewy Body Dementia"
 description: "Clinical decision support for Lewy Body Dementia diagnosis and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD"
 status: draft
 tags:
@@ -23,9 +23,13 @@ tags:
 # Lewy Body Dementia
 
 **DIAGNOSIS:** Dementia with Lewy Bodies (DLB)
-**ICD-10:** G31.83 (Dementia with Lewy bodies)
+**ICD-10:** G31.83 (Dementia with Lewy bodies); F02.80 (Dementia in DLB without behavioral disturbance); F02.81 (Dementia in DLB with behavioral disturbance)
+**SYNONYMS:** DLB, Lewy body disease, diffuse Lewy body disease, cortical Lewy body disease, Lewy body dementia, LBD, dementia with Lewy bodies, Parkinson's disease dementia, PDD, Lewy body variant of Alzheimer's disease
 **SCOPE:** Diagnosis based on McKeith criteria (2017), biomarker-supported diagnosis (DaTscan, MIBG), symptomatic management of cognitive, motor, behavioral, and autonomic symptoms. Emphasizes neuroleptic sensitivity and safe treatment approaches. Covers both pure DLB and Parkinson's disease dementia (PDD) overlap.
 
+**VERSION:** 1.1
+**CREATED:** January 27, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -42,38 +46,38 @@ tags:
 
 ### 1A. Essential/Core Labs
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CBC with differential | Infection screen; anemia contributing to cognitive changes | Normal | STAT | STAT | ROUTINE | - |
-| BMP | Hyponatremia, uremia, hypercalcemia as causes of confusion | Normal electrolytes, BUN, Cr | STAT | STAT | ROUTINE | - |
-| TSH | Hypothyroidism is reversible cause of cognitive impairment | 0.4-4.0 mIU/L | URGENT | ROUTINE | ROUTINE | - |
-| Vitamin B12 | Deficiency can cause cognitive impairment and parkinsonism | >300 pg/mL (>400 optimal) | URGENT | ROUTINE | ROUTINE | - |
-| Folate | Deficiency contributes to cognitive impairment | >3 ng/mL | - | ROUTINE | ROUTINE | - |
-| Glucose (fasting) | Diabetes affects cognition and autonomic function | 70-100 mg/dL | STAT | ROUTINE | ROUTINE | - |
-| Hepatic panel (LFTs) | Baseline before medications; hepatic encephalopathy | Normal | - | ROUTINE | ROUTINE | - |
-| Urinalysis | UTI common cause of acute confusion in elderly | Negative for infection | STAT | STAT | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | - | Infection screen; anemia contributing to cognitive changes | Normal |
+| BMP (CPT 80048) | STAT | STAT | ROUTINE | - | Hyponatremia, uremia, hypercalcemia as causes of confusion | Normal electrolytes, BUN, Cr |
+| TSH (CPT 84443) | URGENT | ROUTINE | ROUTINE | - | Hypothyroidism is reversible cause of cognitive impairment | 0.4-4.0 mIU/L |
+| Vitamin B12 (CPT 82607) | URGENT | ROUTINE | ROUTINE | - | Deficiency can cause cognitive impairment and parkinsonism | >300 pg/mL (>400 optimal) |
+| Folate (CPT 82746) | - | ROUTINE | ROUTINE | - | Deficiency contributes to cognitive impairment | >3 ng/mL |
+| Glucose (fasting) (CPT 82947) | STAT | ROUTINE | ROUTINE | - | Diabetes affects cognition and autonomic function | 70-100 mg/dL |
+| Hepatic panel (LFTs) (CPT 80076) | - | ROUTINE | ROUTINE | - | Baseline before medications; hepatic encephalopathy | Normal |
+| Urinalysis (CPT 81001) | STAT | STAT | ROUTINE | - | UTI common cause of acute confusion in elderly | Negative for infection |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Vitamin D, 25-hydroxy | Deficiency associated with falls and cognitive decline | >30 ng/mL | - | ROUTINE | ROUTINE | - |
-| Hemoglobin A1c | Chronic glucose control affects cognition | <7% | - | ROUTINE | ROUTINE | - |
-| Lipid panel | Vascular risk factors | LDL <100 mg/dL | - | ROUTINE | ROUTINE | - |
-| RPR or VDRL | Neurosyphilis (rare but treatable) | Nonreactive | - | ROUTINE | ROUTINE | - |
-| HIV testing | HIV-associated neurocognitive disorder | Negative | - | ROUTINE | ROUTINE | - |
-| ESR, CRP | Inflammatory/autoimmune causes | Normal | - | ROUTINE | ROUTINE | - |
-| Cortisol (AM) | Adrenal insufficiency causing orthostatic hypotension | 10-20 μg/dL | - | ROUTINE | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Vitamin D, 25-hydroxy (CPT 82306) | - | ROUTINE | ROUTINE | - | Deficiency associated with falls and cognitive decline | >30 ng/mL |
+| Hemoglobin A1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Chronic glucose control affects cognition | <7% |
+| Lipid panel (CPT 80061) | - | ROUTINE | ROUTINE | - | Vascular risk factors | LDL <100 mg/dL |
+| RPR or VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis (rare but treatable) | Nonreactive |
+| HIV testing (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated neurocognitive disorder | Negative |
+| ESR (CPT 85651), CRP (CPT 86140) | - | ROUTINE | ROUTINE | - | Inflammatory/autoimmune causes | Normal |
+| Cortisol (AM) (CPT 82533) | - | ROUTINE | ROUTINE | - | Adrenal insufficiency causing orthostatic hypotension | 10-20 mcg/dL |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CSF alpha-synuclein seed amplification assay (SAA) | Confirms synucleinopathy; research/atypical cases | Positive aggregation | - | - | EXT | - |
-| Skin biopsy for phosphorylated alpha-synuclein | Peripheral synuclein deposition confirms synucleinopathy | Positive deposits in cutaneous nerves | - | - | EXT | - |
-| Genetic testing (GBA, SNCA) | Family history or early-onset; GBA mutations increase DLB risk | Identifies genetic risk | - | - | EXT | - |
-| Paraneoplastic antibody panel | Autoimmune dementia; rapid progression | Negative | - | EXT | EXT | - |
-| Anti-neuronal antibodies (NMDA-R, LGI1, CASPR2) | Autoimmune encephalitis if rapid onset | Negative | - | EXT | EXT | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CSF alpha-synuclein seed amplification assay (SAA) (CPT 83519) | - | - | EXT | - | Confirms synucleinopathy; research/atypical cases | Positive aggregation |
+| Skin biopsy for phosphorylated alpha-synuclein (CPT 88305) | - | - | EXT | - | Peripheral synuclein deposition confirms synucleinopathy | Positive deposits in cutaneous nerves |
+| Genetic testing (GBA, SNCA) (CPT 81479) | - | - | EXT | - | Family history or early-onset; GBA mutations increase DLB risk | Identifies genetic risk |
+| Paraneoplastic antibody panel (CPT 86235) | - | EXT | EXT | - | Autoimmune dementia; rapid progression | Negative |
+| Anti-neuronal antibodies (NMDA-R, LGI1, CASPR2) (CPT 86255) | - | EXT | EXT | - | Autoimmune encephalitis if rapid onset | Negative |
 
 ---
 
@@ -81,30 +85,30 @@ tags:
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain without contrast | At initial evaluation | Relative preservation of medial temporal lobes (vs AD); rule out structural causes | MRI-incompatible devices | URGENT | ROUTINE | ROUTINE | - |
-| CT Head non-contrast | If MRI unavailable | Rule out mass, hemorrhage, hydrocephalus | None | STAT | STAT | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain without contrast (CPT 70551) | URGENT | ROUTINE | ROUTINE | - | At initial evaluation | Relative preservation of medial temporal lobes (vs AD); rule out structural causes | MRI-incompatible devices |
+| CT Head non-contrast (CPT 70450) | STAT | STAT | ROUTINE | - | If MRI unavailable | Rule out mass, hemorrhage, hydrocephalus | None |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| DaTscan (ioflupane I-123 SPECT) | Diagnostic uncertainty; differentiating DLB from AD | Reduced dopamine transporter uptake in putamen (indicative biomarker) | Hypersensitivity to iodine | - | EXT | ROUTINE | - |
-| Cardiac MIBG scintigraphy | Differentiate DLB from AD; supports diagnosis | Reduced cardiac uptake (indicative biomarker) | Recent MI; drugs affecting uptake (labetalol, reserpine) | - | - | ROUTINE | - |
-| FDG-PET Brain | Differentiate from AD; atypical presentations | Posterior occipital hypometabolism with cingulate island sign (supportive biomarker) | None | - | - | ROUTINE | - |
-| Polysomnography | REM sleep behavior disorder confirmation | REM sleep without atonia (indicative biomarker) | None | - | - | ROUTINE | - |
-| EEG | Encephalopathy; fluctuating cognition | Posterior slow-wave activity with periodic fluctuations (supportive) | None | URGENT | ROUTINE | ROUTINE | - |
-| Autonomic function testing | Dysautonomia assessment | Orthostatic hypotension, abnormal HR variability | None | - | ROUTINE | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| DaTscan (ioflupane I-123 SPECT) (CPT 78607) | - | EXT | ROUTINE | - | Diagnostic uncertainty; differentiating DLB from AD | Reduced dopamine transporter uptake in putamen (indicative biomarker) | Hypersensitivity to iodine |
+| Cardiac MIBG scintigraphy (CPT 78452) | - | - | ROUTINE | - | Differentiate DLB from AD; supports diagnosis | Reduced cardiac uptake (indicative biomarker) | Recent MI; drugs affecting uptake (labetalol, reserpine) |
+| FDG-PET Brain (CPT 78816) | - | - | ROUTINE | - | Differentiate from AD; atypical presentations | Posterior occipital hypometabolism with cingulate island sign (supportive biomarker) | None |
+| Polysomnography (CPT 95810) | - | - | ROUTINE | - | REM sleep behavior disorder confirmation | REM sleep without atonia (indicative biomarker) | None |
+| EEG (CPT 95819) | URGENT | ROUTINE | ROUTINE | - | Encephalopathy; fluctuating cognition | Posterior slow-wave activity with periodic fluctuations (supportive) | None |
+| Autonomic function testing (CPT 95923) | - | ROUTINE | ROUTINE | - | Dysautonomia assessment | Orthostatic hypotension, abnormal HR variability | None |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| Amyloid PET | Atypical cases; AD co-pathology assessment | May be positive (AD-DLB overlap common) | None | - | - | EXT | - |
-| Tau PET | Research; differentiate from AD tauopathy | Less tau deposition than AD for similar dementia severity | None | - | - | EXT | - |
-| SPECT perfusion | Alternative to FDG-PET | Posterior hypoperfusion pattern | None | - | - | EXT | - |
-| MRI with SWI | Microbleeds; cerebral amyloid angiopathy | Lobar microbleed pattern | MRI contraindications | - | ROUTINE | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Amyloid PET (CPT 78816) | - | - | EXT | - | Atypical cases; AD co-pathology assessment | May be positive (AD-DLB overlap common) | None |
+| Tau PET (CPT 78816) | - | - | EXT | - | Research; differentiate from AD tauopathy | Less tau deposition than AD for similar dementia severity | None |
+| SPECT perfusion (CPT 78607) | - | - | EXT | - | Alternative to FDG-PET | Posterior hypoperfusion pattern | None |
+| MRI with SWI (CPT 70553) | - | ROUTINE | ROUTINE | - | Microbleeds; cerebral amyloid angiopathy | Lobar microbleed pattern | MRI contraindications |
 
 ---
 
@@ -114,46 +118,46 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| AVOID TYPICAL ANTIPSYCHOTICS | - | CRITICAL SAFETY WARNING | DO NOT USE :: - :: :: Haloperidol, chlorpromazine, fluphenazine absolutely contraindicated; risk of severe parkinsonism, NMS, and death | DLB is absolute contraindication | N/A | STAT | STAT | ROUTINE | STAT |
-| AVOID MOST ATYPICAL ANTIPSYCHOTICS | - | CRITICAL SAFETY WARNING | DO NOT USE :: - :: :: Risperidone, olanzapine, aripiprazole, ziprasidone contraindicated; 2-3x mortality risk | DLB is relative contraindication | N/A | STAT | STAT | ROUTINE | STAT |
-| Quetiapine (if antipsychotic absolutely needed) | PO | Severe psychosis/agitation when non-pharmacologic fails | 12.5 mg qHS; 25 mg qHS :: PO :: :: Start 12.5 mg qHS; increase slowly by 12.5 mg q3-7d; max 50-100 mg; lowest effective dose for shortest time | QT prolongation | Monitor for worsening parkinsonism, sedation | URGENT | URGENT | ROUTINE | - |
-| Treat delirium triggers | Various | Infection, metabolic, medication-induced delirium | Per cause :: Various :: :: Treat UTI, correct electrolytes, remove offending drugs (especially anticholinergics) | Depends on intervention | Mental status | STAT | STAT | ROUTINE | - |
+| AVOID TYPICAL ANTIPSYCHOTICS | - | CRITICAL SAFETY WARNING | DO NOT USE :: N/A :: N/A :: Haloperidol, chlorpromazine, fluphenazine absolutely contraindicated; risk of severe parkinsonism, NMS, and death | DLB is absolute contraindication | N/A | STAT | STAT | ROUTINE | STAT |
+| AVOID MOST ATYPICAL ANTIPSYCHOTICS | - | CRITICAL SAFETY WARNING | DO NOT USE :: N/A :: N/A :: Risperidone, olanzapine, aripiprazole, ziprasidone contraindicated; 2-3x mortality risk | DLB is relative contraindication | N/A | STAT | STAT | ROUTINE | STAT |
+| Quetiapine (if antipsychotic absolutely needed) | PO | Severe psychosis/agitation when non-pharmacologic fails | 12.5 mg :: PO :: qHS :: Start 12.5 mg qHS; increase slowly by 12.5 mg q3-7d; max 50-100 mg; lowest effective dose for shortest time | QT prolongation | Monitor for worsening parkinsonism, sedation | URGENT | URGENT | ROUTINE | - |
+| Treat delirium triggers | Various | Infection, metabolic, medication-induced delirium | Per cause :: Various :: per protocol :: Treat UTI, correct electrolytes, remove offending drugs (especially anticholinergics) | Depends on intervention | Mental status | STAT | STAT | ROUTINE | - |
 
 ### 3B. Symptomatic Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Rivastigmine oral | PO | Cognitive impairment and visual hallucinations (FDA approved for PDD) | 1.5 mg BID; 3 mg BID; 4.5 mg BID; 6 mg BID :: PO :: :: Start 1.5 mg BID with meals; increase by 1.5 mg BID q2-4wk; target 6 mg BID; may improve hallucinations | Sick sinus syndrome; GI bleeding; severe hepatic impairment | Nausea, weight loss, tremor worsening, bradycardia | - | ROUTINE | ROUTINE | - |
-| Rivastigmine patch | TD | Cognitive impairment; better GI tolerability | 4.6 mg/24hr; 9.5 mg/24hr; 13.3 mg/24hr :: TD :: :: Start 4.6 mg/24hr patch; increase q4wk; target 9.5-13.3 mg/24hr | Same as oral | Skin irritation, nausea | - | ROUTINE | ROUTINE | - |
-| Donepezil | PO | Cognitive impairment; alternative to rivastigmine | 5 mg qHS; 10 mg qHS :: PO :: :: Start 5 mg qHS x 4-6 weeks; may increase to 10 mg qHS | Sick sinus syndrome; GI bleeding; COPD exacerbation | Bradycardia, vivid dreams (may worsen RBD), GI | - | ROUTINE | ROUTINE | - |
-| Galantamine | PO | Cognitive impairment; alternative cholinesterase inhibitor | 4 mg BID; 8 mg BID; 12 mg BID :: PO :: :: Start 4 mg BID x 4wk; increase to 8 mg BID; target 8-12 mg BID | Same as donepezil; severe renal/hepatic | GI symptoms, bradycardia | - | ROUTINE | ROUTINE | - |
-| Memantine | PO | Moderate-severe dementia; add to cholinesterase inhibitor | 5 mg daily; 5 mg BID; 10 mg BID :: PO :: :: Start 5 mg daily; increase by 5 mg/wk; target 10 mg BID | Severe renal impairment (dose adjust CrCl <30) | Confusion, dizziness, constipation | - | ROUTINE | ROUTINE | - |
-| Carbidopa-Levodopa | PO | Motor parkinsonism symptoms | 25/100 TID :: PO :: :: Start 25/100 mg TID; titrate slowly; use lowest effective dose; may worsen hallucinations | Active psychosis | Dyskinesias, confusion, hallucination worsening | - | ROUTINE | ROUTINE | - |
-| Melatonin | PO | REM sleep behavior disorder (first-line) | 3 mg qHS; 6 mg qHS; 9 mg qHS; 12 mg qHS :: PO :: :: Start 3-6 mg 30 min before bed; may increase to 12 mg; first-line for RBD | None | Generally well-tolerated | - | ROUTINE | ROUTINE | - |
-| Clonazepam | PO | REM sleep behavior disorder (second-line) | 0.25 mg qHS; 0.5 mg qHS; 1 mg qHS :: PO :: :: Start 0.25-0.5 mg qHS; typical 0.5-1 mg; use with caution due to sedation and fall risk | Severe sleep apnea; respiratory compromise; dementia (relative) | Sedation, falls, cognitive worsening | - | ROUTINE | ROUTINE | - |
-| Pimavanserin (Nuplazid) | PO | Visual hallucinations and psychosis | 34 mg daily :: PO :: :: 34 mg once daily; takes 4-6 weeks for effect; no titration; selective 5-HT2A inverse agonist | Severe hepatic impairment; QT prolongation | QTc at baseline; efficacy assessment 6 weeks | - | ROUTINE | ROUTINE | - |
-| Trazodone | PO | Insomnia; sundowning | 25 mg qHS; 50 mg qHS; 100 mg qHS :: PO :: :: Start 25-50 mg qHS; titrate by 25 mg; typical 50-100 mg qHS | MAOIs; QT prolongation | Orthostatic hypotension | - | ROUTINE | ROUTINE | - |
+| Rivastigmine oral | PO | Cognitive impairment and visual hallucinations (FDA approved for PDD) | 1.5 mg :: PO :: BID :: Start 1.5 mg BID with meals; increase by 1.5 mg BID q2-4wk; target 6 mg BID; may improve hallucinations | Sick sinus syndrome; GI bleeding; severe hepatic impairment | Nausea, weight loss, tremor worsening, bradycardia | - | ROUTINE | ROUTINE | - |
+| Rivastigmine patch | TD | Cognitive impairment; better GI tolerability | 4.6 mg/24hr :: TD :: daily :: Start 4.6 mg/24hr patch; increase q4wk; target 9.5-13.3 mg/24hr | Sick sinus syndrome; GI bleeding; severe hepatic impairment | Skin irritation, nausea | - | ROUTINE | ROUTINE | - |
+| Donepezil | PO | Cognitive impairment; alternative to rivastigmine | 5 mg :: PO :: qHS :: Start 5 mg qHS x 4-6 weeks; may increase to 10 mg qHS | Sick sinus syndrome; GI bleeding; COPD exacerbation | Bradycardia, vivid dreams (may worsen RBD), GI | - | ROUTINE | ROUTINE | - |
+| Galantamine | PO | Cognitive impairment; alternative cholinesterase inhibitor | 4 mg :: PO :: BID :: Start 4 mg BID x 4wk; increase to 8 mg BID; target 8-12 mg BID | Sick sinus syndrome; GI bleeding; COPD exacerbation; severe renal/hepatic impairment | GI symptoms, bradycardia | - | ROUTINE | ROUTINE | - |
+| Memantine | PO | Moderate-severe dementia; add to cholinesterase inhibitor | 5 mg :: PO :: daily :: Start 5 mg daily; increase by 5 mg/wk; target 10 mg BID | Severe renal impairment (dose adjust CrCl <30) | Confusion, dizziness, constipation | - | ROUTINE | ROUTINE | - |
+| Carbidopa-Levodopa | PO | Motor parkinsonism symptoms | 25/100 mg :: PO :: TID :: Start 25/100 mg TID; titrate slowly; use lowest effective dose; may worsen hallucinations | Active psychosis | Dyskinesias, confusion, hallucination worsening | - | ROUTINE | ROUTINE | - |
+| Melatonin | PO | REM sleep behavior disorder (first-line) | 3 mg :: PO :: qHS :: Start 3-6 mg 30 min before bed; may increase to 12 mg; first-line for RBD | None | Generally well-tolerated | - | ROUTINE | ROUTINE | - |
+| Clonazepam | PO | REM sleep behavior disorder (second-line) | 0.25 mg :: PO :: qHS :: Start 0.25-0.5 mg qHS; typical 0.5-1 mg; use with caution due to sedation and fall risk | Severe sleep apnea; respiratory compromise; dementia (relative) | Sedation, falls, cognitive worsening | - | ROUTINE | ROUTINE | - |
+| Pimavanserin (Nuplazid) | PO | Visual hallucinations and psychosis | 34 mg :: PO :: daily :: 34 mg once daily; takes 4-6 weeks for effect; no titration; selective 5-HT2A inverse agonist | Severe hepatic impairment; QT prolongation | QTc at baseline; efficacy assessment 6 weeks | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Insomnia; sundowning | 25 mg :: PO :: qHS :: Start 25-50 mg qHS; titrate by 25 mg; typical 50-100 mg qHS | MAOIs; QT prolongation | Orthostatic hypotension | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Autonomic Dysfunction Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Midodrine | PO | Orthostatic hypotension | 2.5 mg TID; 5 mg TID; 10 mg TID :: PO :: :: Start 2.5 mg TID (before arising, lunch, mid-afternoon); titrate by 2.5 mg/dose; max 10 mg TID; last dose by 6 PM | Supine hypertension; urinary retention; severe cardiac disease | Supine BP; avoid lying flat 4 hours after dose | - | ROUTINE | ROUTINE | - |
-| Droxidopa (Northera) | PO | Neurogenic orthostatic hypotension | 100 mg TID; 200 mg TID; 300 mg TID; 600 mg TID :: PO :: :: Start 100 mg TID; titrate by 100 mg/dose q24-48h; max 600 mg TID | Supine hypertension | Supine BP, headache | - | ROUTINE | ROUTINE | - |
-| Fludrocortisone | PO | Orthostatic hypotension adjunct | 0.1 mg daily; 0.2 mg daily :: PO :: :: Start 0.1 mg daily; may increase to 0.2 mg daily | CHF; severe hypertension | K+, edema, supine BP, weight | - | ROUTINE | ROUTINE | - |
-| Polyethylene glycol (MiraLAX) | PO | Constipation | 17 g daily; 17 g BID :: PO :: :: 17 g (1 capful) in 8 oz liquid daily; may increase to BID | Bowel obstruction | Diarrhea if excessive | - | ROUTINE | ROUTINE | - |
-| Senna + docusate | PO | Constipation stimulant | 2 tablets qHS :: PO :: :: 2 tablets qHS; may increase to 4 tablets | Bowel obstruction; undiagnosed abdominal pain | Electrolytes with chronic use | - | ROUTINE | ROUTINE | - |
-| Tamsulosin | PO | Urinary retention | 0.4 mg daily :: PO :: :: 0.4 mg once daily 30 min after meal | Known hypersensitivity; concurrent silodosin | Orthostatic hypotension (caution with existing OH) | - | ROUTINE | ROUTINE | - |
-| Oxybutynin | PO | Urinary urgency (use with extreme caution) | 2.5 mg BID :: PO :: :: 2.5 mg BID only; avoid higher doses; anticholinergic burden worsens cognition | Narrow-angle glaucoma; urinary retention; dementia (relative) | Cognitive worsening; dry mouth | - | EXT | EXT | - |
+| Midodrine | PO | Orthostatic hypotension | 2.5 mg :: PO :: TID :: Start 2.5 mg TID (before arising, lunch, mid-afternoon); titrate by 2.5 mg/dose; max 10 mg TID; last dose by 6 PM | Supine hypertension; urinary retention; severe cardiac disease | Supine BP; avoid lying flat 4 hours after dose | - | ROUTINE | ROUTINE | - |
+| Droxidopa (Northera) | PO | Neurogenic orthostatic hypotension | 100 mg :: PO :: TID :: Start 100 mg TID; titrate by 100 mg/dose q24-48h; max 600 mg TID | Supine hypertension | Supine BP, headache | - | ROUTINE | ROUTINE | - |
+| Fludrocortisone | PO | Orthostatic hypotension adjunct | 0.1 mg :: PO :: daily :: Start 0.1 mg daily; may increase to 0.2 mg daily | CHF; severe hypertension | K+, edema, supine BP, weight | - | ROUTINE | ROUTINE | - |
+| Polyethylene glycol (MiraLAX) | PO | Constipation | 17 g :: PO :: daily :: 17 g (1 capful) in 8 oz liquid daily; may increase to BID | Bowel obstruction | Diarrhea if excessive | - | ROUTINE | ROUTINE | - |
+| Senna + docusate | PO | Constipation stimulant | 2 tablets :: PO :: qHS :: 2 tablets qHS; may increase to 4 tablets | Bowel obstruction; undiagnosed abdominal pain | Electrolytes with chronic use | - | ROUTINE | ROUTINE | - |
+| Tamsulosin | PO | Urinary retention | 0.4 mg :: PO :: daily :: 0.4 mg once daily 30 min after meal | Known hypersensitivity; concurrent silodosin | Orthostatic hypotension (caution with existing OH) | - | ROUTINE | ROUTINE | - |
+| Oxybutynin | PO | Urinary urgency (use with extreme caution) | 2.5 mg :: PO :: BID :: 2.5 mg BID only; avoid higher doses; anticholinergic burden worsens cognition | Narrow-angle glaucoma; urinary retention; dementia (relative) | Cognitive worsening; dry mouth | - | EXT | EXT | - |
 
 ### 3D. Depression and Anxiety Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Sertraline | PO | Depression; anxiety | 25 mg daily; 50 mg daily; 100 mg daily :: PO :: :: Start 25 mg daily; titrate by 25 mg q1-2wk; typical 50-100 mg | MAOIs | GI upset; may worsen OH | - | ROUTINE | ROUTINE | - |
-| Escitalopram | PO | Depression; anxiety | 5 mg daily; 10 mg daily :: PO :: :: Start 5 mg daily; may increase to 10 mg; max 10 mg in elderly (QT) | MAOIs; QT prolongation | QTc; GI upset | - | ROUTINE | ROUTINE | - |
-| Venlafaxine XR | PO | Depression; anxiety | 37.5 mg daily; 75 mg daily; 150 mg daily :: PO :: :: Start 37.5 mg daily; titrate q1-2wk; typical 75-150 mg | Same as SSRIs | BP at higher doses | - | ROUTINE | ROUTINE | - |
-| Mirtazapine | PO | Depression with poor appetite and insomnia | 7.5 mg qHS; 15 mg qHS :: PO :: :: Start 7.5-15 mg qHS; may increase to 30 mg | MAOIs | Weight gain, sedation | - | ROUTINE | ROUTINE | - |
+| Sertraline | PO | Depression; anxiety | 25 mg :: PO :: daily :: Start 25 mg daily; titrate by 25 mg q1-2wk; typical 50-100 mg | MAOIs | GI upset; may worsen OH | - | ROUTINE | ROUTINE | - |
+| Escitalopram | PO | Depression; anxiety | 5 mg :: PO :: daily :: Start 5 mg daily; may increase to 10 mg; max 10 mg in elderly (QT) | MAOIs; QT prolongation | QTc; GI upset | - | ROUTINE | ROUTINE | - |
+| Venlafaxine XR | PO | Depression; anxiety | 37.5 mg :: PO :: daily :: Start 37.5 mg daily; titrate q1-2wk; typical 75-150 mg | MAOIs | BP at higher doses | - | ROUTINE | ROUTINE | - |
+| Mirtazapine | PO | Depression with poor appetite and insomnia | 7.5 mg :: PO :: qHS :: Start 7.5-15 mg qHS; may increase to 30 mg | MAOIs | Weight gain, sedation | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -277,6 +281,16 @@ tags:
 
 ## CHANGE LOG
 
+**v1.1 (January 30, 2026)**
+- Reformatted lab tables (1A/1B/1C) to standard column order: Test | ED | HOSP | OPD | ICU | Rationale | Target Finding
+- Reformatted imaging tables (2A/2B/2C) to standard column order: Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications
+- Added inline CPT codes to all lab tests and imaging studies
+- Fixed structured dosing format: starting dose only in first field across all treatment sections
+- Expanded cross-references ("Same as donepezil", "Same as SSRIs") with actual content
+- Added clinical synonyms for searchability
+- Expanded ICD-10 codes (added F02.80, F02.81)
+- Added VERSION/CREATED/REVISED header block
+
 **v1.0 (January 27, 2026)**
 - Initial template creation
 - McKeith 2017 diagnostic criteria integrated
@@ -304,7 +318,7 @@ tags:
 
 ### Supportive Biomarkers
 1. Relative preservation of medial temporal lobe structures on CT/MRI
-2. Generalized low uptake on SPECT/PET perfusion/metabolism scan with reduced occipital activity ± cingulate island sign on FDG-PET
+2. Generalized low uptake on SPECT/PET perfusion/metabolism scan with reduced occipital activity +/- cingulate island sign on FDG-PET
 3. Prominent posterior slow-wave activity on EEG with periodic fluctuations
 
 ### Supportive Clinical Features

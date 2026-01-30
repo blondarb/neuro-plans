@@ -1,7 +1,7 @@
 ---
 title: "Normal Pressure Hydrocephalus"
 description: "Clinical decision support for evaluation, diagnosis, and management of normal pressure hydrocephalus"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD"
 status: draft
 tags:
@@ -25,8 +25,12 @@ tags:
 
 **DIAGNOSIS:** Normal Pressure Hydrocephalus (NPH)
 **ICD-10:** G91.2 (Normal pressure hydrocephalus); G91.0 (Communicating hydrocephalus); R41.0 (Disorientation, unspecified); R26.0 (Ataxic gait); R32 (Unspecified urinary incontinence)
-**CLINICAL SYNONYMS:** NPH, idiopathic NPH (iNPH), Hakim-Adams syndrome, communicating hydrocephalus, chronic hydrocephalus
+**SYNONYMS:** NPH, idiopathic NPH (iNPH), Hakim-Adams syndrome, communicating hydrocephalus, chronic hydrocephalus, occult hydrocephalus, adult-onset hydrocephalus, secondary NPH, low-pressure hydrocephalus
 **SCOPE:** Comprehensive evaluation of suspected NPH, diagnostic workup including high-volume lumbar puncture (tap test), prediction of shunt responsiveness, neurosurgical referral, and post-shunt monitoring. Covers idiopathic NPH (most common) and secondary NPH. Does not cover acute obstructive hydrocephalus or pediatric hydrocephalus.
+
+**VERSION:** 1.1
+**CREATED:** January 27, 2026
+**REVISED:** January 30, 2026
 
 **STATUS:** Draft - Pending Review
 
@@ -46,34 +50,34 @@ tags:
 
 ### 1A. Essential/Core Labs
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CBC with differential | Pre-surgical screening; rule out infection | Normal | STAT | ROUTINE | ROUTINE | - |
-| BMP | Electrolyte assessment; pre-surgical renal function | Normal electrolytes, BUN, Cr | STAT | ROUTINE | ROUTINE | - |
-| Coagulation panel (PT/INR, PTT) | Pre-procedural assessment for LP and surgery | INR <1.5, PTT <40 | STAT | ROUTINE | ROUTINE | - |
-| TSH | Hypothyroidism can cause cognitive impairment | 0.4-4.0 mIU/L | - | ROUTINE | ROUTINE | - |
-| Vitamin B12 | B12 deficiency causes reversible dementia and gait ataxia | >300 pg/mL | - | ROUTINE | ROUTINE | - |
-| Urinalysis with culture | Rule out UTI as cause of incontinence or confusion | Negative for infection | STAT | ROUTINE | ROUTINE | - |
-| Hemoglobin A1c | Diabetes contributes to small vessel disease and neuropathy | <7% | - | ROUTINE | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CBC with differential (85025) | STAT | ROUTINE | ROUTINE | - | Pre-surgical screening; rule out infection | Normal |
+| BMP (80048) | STAT | ROUTINE | ROUTINE | - | Electrolyte assessment; pre-surgical renal function | Normal electrolytes, BUN, Cr |
+| Coagulation panel - PT/INR, PTT (85610, 85730) | STAT | ROUTINE | ROUTINE | - | Pre-procedural assessment for LP and surgery | INR <1.5, PTT <40 |
+| TSH (84443) | - | ROUTINE | ROUTINE | - | Hypothyroidism can cause cognitive impairment | 0.4-4.0 mIU/L |
+| Vitamin B12 (82607) | - | ROUTINE | ROUTINE | - | B12 deficiency causes reversible dementia and gait ataxia | >300 pg/mL |
+| Urinalysis with culture (81001, 87086) | STAT | ROUTINE | ROUTINE | - | Rule out UTI as cause of incontinence or confusion | Negative for infection |
+| Hemoglobin A1c (83036) | - | ROUTINE | ROUTINE | - | Diabetes contributes to small vessel disease and neuropathy | <7% |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Folate | Deficiency contributes to cognitive impairment | >3 ng/mL | - | ROUTINE | ROUTINE | - |
-| RPR or VDRL | Neurosyphilis can cause dementia and gait abnormalities | Nonreactive | - | ROUTINE | ROUTINE | - |
-| HIV antibody | HIV-associated neurocognitive disorder in at-risk patients | Negative | - | ROUTINE | ROUTINE | - |
-| ESR, CRP | Inflammatory or infectious causes of meningitis/encephalitis | Normal | STAT | ROUTINE | ROUTINE | - |
-| Hepatic panel | Hepatic encephalopathy in patients with liver disease | Normal | - | ROUTINE | ROUTINE | - |
-| PSA (males) | Prostate disease contributing to urinary symptoms | Normal for age | - | - | ROUTINE | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Folate (82746) | - | ROUTINE | ROUTINE | - | Deficiency contributes to cognitive impairment | >3 ng/mL |
+| RPR or VDRL (86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis can cause dementia and gait abnormalities | Nonreactive |
+| HIV antibody (86701) | - | ROUTINE | ROUTINE | - | HIV-associated neurocognitive disorder in at-risk patients | Negative |
+| ESR, CRP (85652, 86140) | STAT | ROUTINE | ROUTINE | - | Inflammatory or infectious causes of meningitis/encephalitis | Normal |
+| Hepatic panel (80076) | - | ROUTINE | ROUTINE | - | Hepatic encephalopathy in patients with liver disease | Normal |
+| PSA - males (84153) | - | - | ROUTINE | - | Prostate disease contributing to urinary symptoms | Normal for age |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Paraneoplastic antibody panel | Autoimmune etiology if subacute presentation | Negative | - | EXT | EXT | - |
-| Anti-neuronal antibodies (NMDA-R, LGI1, CASPR2) | Autoimmune encephalitis causing cognitive/behavioral changes | Negative | - | EXT | EXT | - |
-| Genetic testing for APP, PSEN1, PSEN2 | Early-onset dementia with family history | No pathogenic variants | - | - | EXT | - |
+| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Paraneoplastic antibody panel (86255) | - | EXT | EXT | - | Autoimmune etiology if subacute presentation | Negative |
+| Anti-neuronal antibodies - NMDA-R, LGI1, CASPR2 (86235) | - | EXT | EXT | - | Autoimmune encephalitis causing cognitive/behavioral changes | Negative |
+| Genetic testing for APP, PSEN1, PSEN2 (81405) | - | - | EXT | - | Early-onset dementia with family history | No pathogenic variants |
 
 ---
 
@@ -81,27 +85,27 @@ tags:
 
 ### 2A. Essential/First-line
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain without contrast | Initial evaluation | Ventriculomegaly with Evans index >0.3; callosal angle <90 degrees; DESH pattern; periventricular edema (transependymal flow); absence of cortical atrophy proportionate to ventricular size | MRI-incompatible devices; claustrophobia | URGENT | ROUTINE | ROUTINE | - |
-| CT Head non-contrast | If MRI unavailable or emergent presentation | Ventriculomegaly out of proportion to sulcal enlargement; Evans index >0.3 | Pregnancy (relative) | STAT | STAT | ROUTINE | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain without contrast (70551) | URGENT | ROUTINE | ROUTINE | - | Initial evaluation | Ventriculomegaly with Evans index >0.3; callosal angle <90 degrees; DESH pattern; periventricular edema (transependymal flow); absence of cortical atrophy proportionate to ventricular size | MRI-incompatible devices; claustrophobia |
+| CT Head non-contrast (70450) | STAT | STAT | ROUTINE | - | If MRI unavailable or emergent presentation | Ventriculomegaly out of proportion to sulcal enlargement; Evans index >0.3 | Pregnancy (relative) |
 
 ### 2B. Extended
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain with volumetric analysis | Detailed assessment | Quantify ventricular volume; hippocampal volume preservation (unlike AD); tight high-convexity sulci | MRI contraindications | - | - | ROUTINE | - |
-| MRI with CSF flow study (phase-contrast) | Assess aqueductal CSF flow | Hyperdynamic aqueductal flow; increased stroke volume (>42 microL) | MRI contraindications | - | - | ROUTINE | - |
-| MR spectroscopy | Atypical cases to differentiate from AD | Normal NAA/Cr ratio (reduced in AD); no significant metabolic abnormality | MRI contraindications | - | - | EXT | - |
-| FDG-PET Brain | Differentiate NPH from AD or FTD | Preserved metabolism (unlike AD temporoparietal hypometabolism) | None | - | - | EXT | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI Brain with volumetric analysis (70553) | - | - | ROUTINE | - | Detailed assessment | Quantify ventricular volume; hippocampal volume preservation (unlike AD); tight high-convexity sulci | MRI contraindications |
+| MRI with CSF flow study - phase-contrast (70553) | - | - | ROUTINE | - | Assess aqueductal CSF flow | Hyperdynamic aqueductal flow; increased stroke volume (>42 microL) | MRI contraindications |
+| MR spectroscopy (76390) | - | - | EXT | - | Atypical cases to differentiate from AD | Normal NAA/Cr ratio (reduced in AD); no significant metabolic abnormality | MRI contraindications |
+| FDG-PET Brain (78816) | - | - | EXT | - | Differentiate NPH from AD or FTD | Preserved metabolism (unlike AD temporoparietal hypometabolism) | None |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| Intracranial pressure monitoring (continuous) | Diagnostic uncertainty after tap test | B-waves present (indicates impaired CSF dynamics) | Coagulopathy; skin infection | - | EXT | - | - |
-| Infusion testing (CSF outflow resistance) | Research settings; predict shunt response | Elevated Rout >12-18 mmHg/mL/min suggests shunt responsiveness | Coagulopathy | - | EXT | EXT | - |
-| Radionuclide cisternography | Rarely used; assesses CSF flow patterns | Delayed clearance over convexities; ventricular reflux | None | - | - | EXT | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Intracranial pressure monitoring - continuous (61210) | - | EXT | - | - | Diagnostic uncertainty after tap test | B-waves present (indicates impaired CSF dynamics) | Coagulopathy; skin infection |
+| Infusion testing - CSF outflow resistance (62270) | - | EXT | EXT | - | Research settings; predict shunt response | Elevated Rout >12-18 mmHg/mL/min suggests shunt responsiveness | Coagulopathy |
+| Radionuclide cisternography (78630) | - | - | EXT | - | Rarely used; assesses CSF flow patterns | Delayed clearance over convexities; ventricular reflux | None |
 
 ---
 
@@ -111,13 +115,13 @@ tags:
 **Timing:** ROUTINE during outpatient evaluation; can be done in hospital if inpatient
 **Volume Required:** 30-50 mL (high-volume therapeutic tap) - remove CSF until opening pressure is halved or symptoms of low pressure develop
 
-| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|-------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Opening pressure | Confirm normal or mildly elevated pressure in NPH | 5-18 cm H2O (typically normal or low-normal in NPH) | URGENT | ROUTINE | ROUTINE | - |
-| Cell count (tubes 1 and 4) | Rule out infection or inflammation | WBC <5, RBC 0 | URGENT | ROUTINE | ROUTINE | - |
-| Protein | Rule out infectious/inflammatory causes | Normal 15-45 mg/dL | URGENT | ROUTINE | ROUTINE | - |
-| Glucose with serum glucose | Rule out infectious meningitis | >60% of serum glucose | URGENT | ROUTINE | ROUTINE | - |
-| CSF Abeta-42, total tau, p-tau | Differentiate from Alzheimer's disease (optional) | Normal in NPH; low Abeta-42 with high tau in AD | - | ROUTINE | ROUTINE | - |
+| Study (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|-------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Opening pressure (62270) | URGENT | ROUTINE | ROUTINE | - | Confirm normal or mildly elevated pressure in NPH | 5-18 cm H2O (typically normal or low-normal in NPH) |
+| Cell count - tubes 1 and 4 (89051) | URGENT | ROUTINE | ROUTINE | - | Rule out infection or inflammation | WBC <5, RBC 0 |
+| Protein (84157) | URGENT | ROUTINE | ROUTINE | - | Rule out infectious/inflammatory causes | Normal 15-45 mg/dL |
+| Glucose with serum glucose (82947) | URGENT | ROUTINE | ROUTINE | - | Rule out infectious meningitis | >60% of serum glucose |
+| CSF Abeta-42, total tau, p-tau (83519) | - | ROUTINE | ROUTINE | - | Differentiate from Alzheimer's disease (optional) | Normal in NPH; low Abeta-42 with high tau in AD |
 
 **Tap Test Protocol:**
 1. Record baseline gait assessment (timed 10-meter walk, steps to walk 10 meters, Tinetti gait score)
@@ -156,29 +160,29 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Acetazolamide | PO | Temporizing measure while awaiting surgery; reduces CSF production | 250 mg BID; 250 mg TID; 500 mg BID :: PO :: :: Start 250 mg BID; titrate to 250 mg TID or 500 mg BID; max 2 g/day | Sulfa allergy; severe hepatic/renal disease; hypokalemia; metabolic acidosis | BMP for potassium, bicarbonate; paresthesias | - | ROUTINE | ROUTINE | - |
-| Serial therapeutic LP | LP | Temporizing measure; confirm continued benefit; bridge to surgery | 30-50 mL removed :: LP :: :: Remove 30-50 mL every 1-4 weeks based on symptom recurrence | Coagulopathy; anticoagulation; skin infection | Post-LP symptoms; duration of benefit | - | ROUTINE | ROUTINE | - |
+| Acetazolamide | PO | Temporizing measure while awaiting surgery; reduces CSF production | 250 mg :: PO :: BID :: Start 250 mg BID; titrate to 250 mg TID or 500 mg BID; max 2 g/day | Sulfa allergy; severe hepatic/renal disease; hypokalemia; metabolic acidosis | BMP for potassium, bicarbonate; paresthesias | - | ROUTINE | ROUTINE | - |
+| Serial therapeutic LP | LP | Temporizing measure; confirm continued benefit; bridge to surgery | 30-50 mL :: LP :: q1-4 weeks :: Remove 30-50 mL every 1-4 weeks based on symptom recurrence | Coagulopathy; anticoagulation; skin infection | Post-LP symptoms; duration of benefit | - | ROUTINE | ROUTINE | - |
 
 ### 3B. Symptomatic Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Memantine | PO | Cognitive symptoms; may provide modest benefit pending surgery | 5 mg daily; 5 mg BID; 10 mg BID :: PO :: :: Start 5 mg daily; increase by 5 mg/week; target 10 mg BID | Severe renal impairment (adjust dose if CrCl <30) | Confusion, dizziness | - | ROUTINE | ROUTINE | - |
-| Donepezil | PO | Cognitive symptoms if AD component suspected | 5 mg qHS; 10 mg qHS :: PO :: :: Start 5 mg qHS x 4-6 weeks; increase to 10 mg qHS | Sick sinus syndrome; GI bleeding; COPD | Bradycardia, GI symptoms | - | ROUTINE | ROUTINE | - |
-| Oxybutynin | PO | Urinary urgency/incontinence | 5 mg BID; 5 mg TID; 10 mg ER daily :: PO :: :: Start 5 mg BID; may increase to 5 mg TID; or use ER 10-30 mg daily | Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction | Anticholinergic effects; cognitive worsening | - | ROUTINE | ROUTINE | - |
-| Mirabegron | PO | Urinary urgency if anticholinergics contraindicated or cause cognitive worsening | 25 mg daily; 50 mg daily :: PO :: :: Start 25 mg daily; may increase to 50 mg daily | Severe uncontrolled hypertension | Blood pressure | - | ROUTINE | ROUTINE | - |
-| Tamsulosin | PO | Urinary retention (males with BPH component) | 0.4 mg daily; 0.8 mg daily :: PO :: :: Start 0.4 mg daily; may increase to 0.8 mg daily | Orthostatic hypotension; planned cataract surgery (IFIS) | Orthostatic hypotension | - | ROUTINE | ROUTINE | - |
-| Trazodone | PO | Sleep disturbance; sundowning | 25 mg qHS; 50 mg qHS; 100 mg qHS :: PO :: :: Start 25-50 mg qHS; titrate to 50-150 mg qHS | Concurrent MAOIs; QT prolongation | Orthostatic hypotension | - | ROUTINE | ROUTINE | - |
-| Physical therapy | - | Gait training and fall prevention | Per PT evaluation :: - :: :: Initial evaluation plus ongoing therapy for gait training, balance, strength | None | Fall risk assessment | - | ROUTINE | ROUTINE | - |
+| Memantine | PO | Cognitive symptoms; may provide modest benefit pending surgery | 5 mg :: PO :: daily :: Start 5 mg daily; increase by 5 mg/week; target 10 mg BID | Severe renal impairment (adjust dose if CrCl <30) | Confusion, dizziness | - | ROUTINE | ROUTINE | - |
+| Donepezil | PO | Cognitive symptoms if AD component suspected | 5 mg :: PO :: qHS :: Start 5 mg qHS x 4-6 weeks; increase to 10 mg qHS | Sick sinus syndrome; GI bleeding; COPD | Bradycardia, GI symptoms | - | ROUTINE | ROUTINE | - |
+| Oxybutynin | PO | Urinary urgency/incontinence | 5 mg :: PO :: BID :: Start 5 mg BID; may increase to 5 mg TID; or use ER 10-30 mg daily | Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction | Anticholinergic effects; cognitive worsening | - | ROUTINE | ROUTINE | - |
+| Mirabegron | PO | Urinary urgency if anticholinergics contraindicated or cause cognitive worsening | 25 mg :: PO :: daily :: Start 25 mg daily; may increase to 50 mg daily | Severe uncontrolled hypertension | Blood pressure | - | ROUTINE | ROUTINE | - |
+| Tamsulosin | PO | Urinary retention (males with BPH component) | 0.4 mg :: PO :: daily :: Start 0.4 mg daily; may increase to 0.8 mg daily | Orthostatic hypotension; planned cataract surgery (IFIS) | Orthostatic hypotension | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Sleep disturbance; sundowning | 25 mg :: PO :: qHS :: Start 25-50 mg qHS; titrate to 50-150 mg qHS | Concurrent MAOIs; QT prolongation | Orthostatic hypotension | - | ROUTINE | ROUTINE | - |
+| Physical therapy | - | Gait training and fall prevention | Per PT evaluation :: - :: - :: Initial evaluation plus ongoing therapy for gait training, balance, strength | None | Fall risk assessment | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Definitive Treatment (Shunt Surgery)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Ventriculoperitoneal (VP) shunt | Surgical | Definitive treatment for NPH; positive tap test or extended drain trial | Programmable valve preferred :: Surgical :: :: Valve pressure setting adjusted based on symptoms; typical starting setting 120-180 mmH2O | Active peritoneal infection; peritoneal adhesions; recent abdominal surgery; ascites | Post-op neuro checks; shunt series imaging; valve setting verification | - | ROUTINE | ROUTINE | - |
-| Ventriculoatrial (VA) shunt | Surgical | Alternative if peritoneum unsuitable (adhesions, peritonitis history) | Programmable valve preferred :: Surgical :: :: Catheter tip in right atrium; valve adjusted as VP shunt | Active bacteremia; severe cardiac disease; pulmonary hypertension | Same as VP; plus cardiac monitoring; watch for shunt nephritis | - | EXT | - | - |
-| Lumboperitoneal (LP) shunt | Surgical | Alternative approach; avoids cranial surgery | Programmable valve preferred :: Surgical :: :: Catheter from lumbar subarachnoid space to peritoneum | Spinal stenosis; arachnoiditis; Chiari malformation | Similar to VP; watch for overdrainage with positional changes | - | EXT | - | - |
-| Endoscopic third ventriculostomy (ETV) | Surgical | Secondary NPH with aqueductal stenosis | NA :: Surgical :: :: Create opening between third ventricle and interpeduncular cistern | Communicating hydrocephalus (most iNPH); scarred prepontine cistern | Post-op neuro checks; repeat imaging | - | EXT | - | - |
+| Ventriculoperitoneal (VP) shunt | Surgical | Definitive treatment for NPH; positive tap test or extended drain trial | Programmable valve :: Surgical :: - :: Valve pressure setting adjusted based on symptoms; typical starting setting 120-180 mmH2O | Active peritoneal infection; peritoneal adhesions; recent abdominal surgery; ascites | Post-op neuro checks; shunt series imaging; valve setting verification | - | ROUTINE | ROUTINE | - |
+| Ventriculoatrial (VA) shunt | Surgical | Alternative if peritoneum unsuitable (adhesions, peritonitis history) | Programmable valve :: Surgical :: - :: Catheter tip in right atrium; valve adjusted as VP shunt | Active bacteremia; severe cardiac disease; pulmonary hypertension | Post-op neuro checks; shunt series imaging; valve setting verification; cardiac monitoring; watch for shunt nephritis | - | EXT | - | - |
+| Lumboperitoneal (LP) shunt | Surgical | Alternative approach; avoids cranial surgery | Programmable valve :: Surgical :: - :: Catheter from lumbar subarachnoid space to peritoneum | Spinal stenosis; arachnoiditis; Chiari malformation | Post-op neuro checks; shunt series imaging; valve setting verification; watch for overdrainage with positional changes | - | EXT | - | - |
+| Endoscopic third ventriculostomy (ETV) | Surgical | Secondary NPH with aqueductal stenosis | N/A :: Surgical :: - :: Create opening between third ventricle and interpeduncular cistern | Communicating hydrocephalus (most iNPH); scarred prepontine cistern | Post-op neuro checks; repeat imaging | - | EXT | - | - |
 
 **Shunt Valve Selection:**
 - **Programmable valves** (Codman, Medtronic, Sophysa) preferred - allow non-invasive pressure adjustment
@@ -189,11 +193,11 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Valve pressure adjustment | External | Overdrainage symptoms (headache, subdural hematoma) | Increase valve setting :: External programming :: :: Increase opening pressure by 20-30 mmH2O increments; recheck in 1-2 weeks | None | Symptom response; repeat imaging | - | ROUTINE | ROUTINE | - |
-| Valve pressure adjustment | External | Underdrainage (persistent or worsening NPH symptoms) | Decrease valve setting :: External programming :: :: Decrease opening pressure by 20-30 mmH2O increments; recheck in 1-2 weeks | None | Symptom response; repeat imaging | - | ROUTINE | ROUTINE | - |
-| Vancomycin | IV | Shunt infection (empiric) | 15-20 mg/kg IV q8-12h :: IV :: :: 15-20 mg/kg IV q8-12h; adjust for renal function; target trough 15-20 mcg/mL | Vancomycin allergy | Vancomycin trough; renal function | STAT | STAT | - | STAT |
-| Cefepime | IV | Shunt infection (empiric gram-negative coverage) | 2 g IV q8h :: IV :: :: 2 g IV q8h; adjust for renal function | Cephalosporin allergy | Renal function | STAT | STAT | - | STAT |
-| Shunt revision surgery | Surgical | Shunt malfunction, obstruction, or infection | Per neurosurgery :: Surgical :: :: Shunt externalization if infected; revision for mechanical failure | Active systemic infection | Post-op monitoring; infection clearance | - | URGENT | - | - |
+| Valve pressure adjustment (overdrainage) | External | Overdrainage symptoms (headache, subdural hematoma) | Increase setting :: External programming :: - :: Increase opening pressure by 20-30 mmH2O increments; recheck in 1-2 weeks | None | Symptom response; repeat imaging | - | ROUTINE | ROUTINE | - |
+| Valve pressure adjustment (underdrainage) | External | Underdrainage (persistent or worsening NPH symptoms) | Decrease setting :: External programming :: - :: Decrease opening pressure by 20-30 mmH2O increments; recheck in 1-2 weeks | None | Symptom response; repeat imaging | - | ROUTINE | ROUTINE | - |
+| Vancomycin | IV | Shunt infection (empiric) | 15-20 mg/kg :: IV :: q8-12h :: 15-20 mg/kg IV q8-12h; adjust for renal function; target trough 15-20 mcg/mL | Vancomycin allergy | Vancomycin trough; renal function | STAT | STAT | - | STAT |
+| Cefepime | IV | Shunt infection (empiric gram-negative coverage) | 2 g :: IV :: q8h :: 2 g IV q8h; adjust for renal function | Cephalosporin allergy | Renal function | STAT | STAT | - | STAT |
+| Shunt revision surgery | Surgical | Shunt malfunction, obstruction, or infection | Per neurosurgery :: Surgical :: - :: Shunt externalization if infected; revision for mechanical failure | Active systemic infection | Post-op monitoring; infection clearance | - | URGENT | - | - |
 
 ---
 
@@ -306,6 +310,16 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized lab tables (1A, 1B, 1C) to `Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding` format with CPT codes
+- Standardized imaging tables (2A, 2B, 2C) to `Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications` format with CPT codes
+- Standardized LP studies table with CPT codes and standard column order
+- Fixed structured dosing first fields to `starting_dose :: route :: frequency :: full_instructions` format
+- Expanded "Same as VP" cross-references in VA and LP shunt monitoring columns
+- Added VERSION/CREATED/REVISED header block
+- Added additional clinical synonyms
+- Renamed CLINICAL SYNONYMS to SYNONYMS for consistency
 
 **v1.0 (January 27, 2026)**
 - Initial template creation

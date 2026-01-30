@@ -3,7 +3,10 @@
   "title": "Amyotrophic Lateral Sclerosis (ALS) / Motor Neuron Disease",
   "version": "1.0",
   "icd10": [
-    "** G12.21 (Amyotrophic lateral sclerosis)"
+    "** G12.21 (Amyotrophic lateral sclerosis)",
+    "G12.20 (Motor neuron disease",
+    "unspecified)",
+    "G12.29 (Other motor neuron disease)"
   ],
   "scope": "** Comprehensive outpatient-focused management of ALS including diagnostic workup, El Escorial/Awaji criteria application, disease-modifying therapy (riluzole, edaravone, AMX0035), symptomatic management (sialorrhea, spasticity, pseudobulbar affect, pain, dyspnea), respiratory monitoring with BiPAP timing, nutritional support with PEG timing, multidisciplinary clinic model, and palliative care integration. Excludes primary lateral sclerosis (PLS), progressive muscular atrophy (PMA), and pediatric motor neuron disease.",
   "notes": [],
@@ -11,419 +14,419 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "CBC with differential",
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
           "rationale": "Baseline; exclude infection",
-          "target": "Normal",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP (CPT 80053)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
-          "ICU": "STAT"
-        },
-        {
-          "item": "CMP (BMP + LFTs)",
+          "ICU": "STAT",
           "rationale": "Baseline; monitor for riluzole hepatotoxicity",
-          "target": "Normal; ALT <3x ULN",
-          "ED": "STAT",
-          "HOSP": "STAT",
-          "OPD": "ROUTINE",
-          "ICU": "STAT"
+          "target": "Normal; ALT <3x ULN"
         },
         {
-          "item": "TSH",
+          "item": "TSH (CPT 84443)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
           "rationale": "Thyroid disease can mimic weakness",
-          "target": "Normal",
+          "target": "Normal"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "URGENT"
-        },
-        {
-          "item": "Vitamin B12",
+          "ICU": "URGENT",
           "rationale": "B12 deficiency causes myelopathy",
-          "target": ">300 pg/mL",
+          "target": ">300 pg/mL"
+        },
+        {
+          "item": "CPK (CPT 82550)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "URGENT"
-        },
-        {
-          "item": "CPK",
+          "ICU": "URGENT",
           "rationale": "Often mildly elevated in ALS; rule out myopathy",
-          "target": "Mildly elevated OK; <5x ULN",
+          "target": "Mildly elevated OK; <5x ULN"
+        },
+        {
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "URGENT"
-        },
-        {
-          "item": "ESR, CRP",
+          "ICU": "URGENT",
           "rationale": "Inflammatory markers",
-          "target": "Normal or mildly elevated",
-          "ED": "URGENT",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "URGENT"
+          "target": "Normal or mildly elevated"
         },
         {
-          "item": "Hemoglobin A1c",
+          "item": "Hemoglobin A1c (CPT 83036)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Diabetic neuropathy in differential",
-          "target": "<6.5%",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "—"
+          "target": "<6.5%"
         },
         {
-          "item": "Fasting lipid panel",
+          "item": "Fasting lipid panel (CPT 80061)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Cardiovascular risk assessment",
-          "target": "LDL goal per guidelines",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "—"
+          "target": "LDL goal per guidelines"
         },
         {
-          "item": "Serum protein electrophoresis (SPEP)",
+          "item": "Serum protein electrophoresis (SPEP) (CPT 86334)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Exclude monoclonal gammopathy",
-          "target": "No monoclonal spike",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "—"
+          "target": "No monoclonal spike"
         },
         {
-          "item": "Urinalysis",
-          "rationale": "Baseline; UTI assessment",
-          "target": "Normal",
+          "item": "Urinalysis (CPT 81003)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "STAT"
+          "ICU": "STAT",
+          "rationale": "Baseline; UTI assessment",
+          "target": "Normal"
         }
       ],
       "Extended Workup": [
         {
-          "item": "HIV",
+          "item": "HIV (CPT 87389)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "HIV-associated motor neuron disease",
-          "target": "Negative",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "—"
+          "target": "Negative"
         },
         {
-          "item": "Lyme serology (endemic areas)",
+          "item": "Lyme serology (CPT 86618) (endemic areas)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Lyme disease causes neuropathy",
-          "target": "Negative",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "—"
+          "target": "Negative"
         },
         {
-          "item": "Copper and ceruloplasmin",
+          "item": "Copper (CPT 82525) and ceruloplasmin (CPT 82390)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Wilson disease in younger patients",
-          "target": "Normal",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "—"
+          "target": "Normal"
         },
         {
-          "item": "Parathyroid hormone (PTH)",
+          "item": "Parathyroid hormone (PTH) (CPT 83970)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Hyperparathyroidism causes weakness",
-          "target": "Normal",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "—"
+          "target": "Normal"
         },
         {
-          "item": "Anti-GM1 antibodies",
+          "item": "Anti-GM1 antibodies (CPT 86255)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Multifocal motor neuropathy (treatable mimic)",
-          "target": "Negative",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "—"
+          "target": "Negative"
         },
         {
-          "item": "Anti-MAG antibodies",
+          "item": "Anti-MAG antibodies (CPT 86255)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Demyelinating neuropathy",
-          "target": "Negative",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "—"
+          "target": "Negative"
         },
         {
-          "item": "Lead level",
+          "item": "Lead level (CPT 83655)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Lead neuropathy mimics ALS",
-          "target": "<10 mcg/dL",
-          "ED": "—",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "—"
+          "target": "<10 mcg/dL"
         },
         {
-          "item": "Hexosaminidase A",
+          "item": "Hexosaminidase A (CPT 82762)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Adult Tay-Sachs (rare mimic)",
-          "target": "Normal activity",
-          "ED": "—",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "—"
+          "target": "Normal activity"
         },
         {
-          "item": "Very long chain fatty acids",
+          "item": "Very long chain fatty acids (CPT 82726)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Adrenomyeloneuropathy (X-linked)",
-          "target": "Normal",
-          "ED": "—",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "—"
+          "target": "Normal"
         },
         {
-          "item": "Serum immunofixation",
-          "rationale": "Paraprotein-associated neuropathy",
-          "target": "No monoclonal protein",
-          "ED": "—",
+          "item": "Serum immunofixation (CPT 86334)",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-",
+          "rationale": "Paraprotein-associated neuropathy",
+          "target": "No monoclonal protein"
         }
       ],
       "Rare/Specialized": [
         {
-          "item": "SOD1 genetic testing",
+          "item": "SOD1 genetic testing (CPT 81405)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Familial ALS (10%); affects prognosis and therapy",
-          "target": "Document mutation",
-          "ED": "—",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "—"
+          "target": "Document mutation"
         },
         {
-          "item": "C9orf72 repeat expansion",
+          "item": "C9orf72 repeat expansion (CPT 81401)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Most common familial ALS mutation; FTD link",
-          "target": "<30 repeats normal",
-          "ED": "—",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "—"
+          "target": "<30 repeats normal"
         },
         {
-          "item": "ALS gene panel (FUS, TARDBP, etc.)",
+          "item": "ALS gene panel (FUS, TARDBP, etc.) (CPT 81479)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Familial ALS with family history",
-          "target": "Document variants",
-          "ED": "—",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "—"
+          "target": "Document variants"
         },
         {
-          "item": "Muscle biopsy",
+          "item": "Muscle biopsy (CPT 88305)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Only if myopathy suspected",
-          "target": "Neurogenic changes",
-          "ED": "—",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "—"
+          "target": "Neurogenic changes"
         },
         {
-          "item": "CSF analysis",
+          "item": "CSF analysis (CPT 89051)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Atypical cases; exclude inflammatory",
-          "target": "Protein mildly elevated OK",
-          "ED": "—",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "—"
+          "target": "Protein mildly elevated OK"
         },
         {
-          "item": "Anti-voltage-gated calcium channel Ab",
+          "item": "Anti-voltage-gated calcium channel Ab (CPT 86255)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Lambert-Eaton syndrome",
-          "target": "Negative",
-          "ED": "—",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "—"
+          "target": "Negative"
         },
         {
-          "item": "Anti-acetylcholine receptor Ab",
-          "rationale": "Myasthenia gravis",
-          "target": "Negative",
-          "ED": "—",
+          "item": "Anti-acetylcholine receptor Ab (CPT 86235)",
+          "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "—"
+          "ICU": "-",
+          "rationale": "Myasthenia gravis",
+          "target": "Negative"
         }
       ]
     },
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "EMG with nerve conduction studies",
-          "timing": "At diagnosis; within 2 weeks",
-          "target": "Widespread denervation (3+ regions), fibrillations, fasciculations, chronic reinnervation; normal sensory studies",
-          "contraindications": "Anticoagulation (relative)",
-          "ED": "—",
+          "item": "EMG (CPT 95886) with nerve conduction studies (CPT 95907-95913)",
+          "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "URGENT"
+          "ICU": "URGENT",
+          "timing": "At diagnosis; within 2 weeks",
+          "target": "Widespread denervation (3+ regions), fibrillations, fasciculations, chronic reinnervation; normal sensory studies",
+          "contraindications": "Anticoagulation (relative)"
         },
         {
-          "item": "MRI brain without contrast",
-          "timing": "Exclude structural lesion",
+          "item": "MRI brain without contrast (CPT 70551)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "timing": "At diagnosis",
           "target": "No mass, stroke, or demyelination",
-          "contraindications": "Pacemaker",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "ROUTINE"
+          "contraindications": "Pacemaker"
         },
         {
-          "item": "MRI cervical spine without contrast",
-          "timing": "Exclude cervical myelopathy/radiculopathy",
+          "item": "MRI cervical spine without contrast (CPT 72141)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "timing": "At diagnosis",
           "target": "No cord compression; mild spondylosis OK",
-          "contraindications": "Pacemaker",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "ROUTINE"
+          "contraindications": "Pacemaker"
         },
         {
-          "item": "Chest X-ray",
-          "timing": "Baseline; aspiration screen",
-          "target": "Clear or evidence of aspiration",
-          "contraindications": "None",
+          "item": "Chest X-ray (CPT 71046)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
-          "ICU": "STAT"
+          "ICU": "STAT",
+          "timing": "Baseline; aspiration screen",
+          "target": "Clear or evidence of aspiration",
+          "contraindications": "None"
         },
         {
-          "item": "Pulmonary function tests (FVC sitting and supine)",
-          "timing": "Baseline respiratory status",
-          "target": "FVC >80% predicted",
-          "contraindications": "Severe bulbar dysfunction",
-          "ED": "—",
+          "item": "Pulmonary function tests (FVC sitting and supine) (CPT 94010)",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-",
+          "timing": "Baseline respiratory status",
+          "target": "FVC >80% predicted",
+          "contraindications": "Severe bulbar dysfunction"
         }
       ],
       "Extended": [
         {
-          "item": "MRI thoracic/lumbar spine",
+          "item": "MRI thoracic/lumbar spine (CPT 72146/72148)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "timing": "If thoracic/lumbosacral symptoms predominant",
           "target": "Exclude cord compression",
-          "contraindications": "Pacemaker",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "—"
+          "contraindications": "Pacemaker"
         },
         {
-          "item": "Videofluoroscopic swallow study (VFSS)",
+          "item": "Videofluoroscopic swallow study (VFSS) (CPT 74230)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "timing": "Bulbar symptoms; dysphagia",
           "target": "Quantify aspiration risk",
-          "contraindications": "Severe aspiration (relative)",
-          "ED": "—",
-          "HOSP": "URGENT",
-          "OPD": "ROUTINE",
-          "ICU": "—"
+          "contraindications": "Severe aspiration (relative)"
         },
         {
-          "item": "Fiberoptic endoscopic evaluation of swallowing (FEES)",
+          "item": "Fiberoptic endoscopic evaluation of swallowing (FEES) (CPT 92612)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "timing": "Alternative to VFSS",
           "target": "Laryngeal function, aspiration",
-          "contraindications": "Severe nasal obstruction",
-          "ED": "—",
-          "HOSP": "URGENT",
-          "OPD": "ROUTINE",
-          "ICU": "—"
+          "contraindications": "Severe nasal obstruction"
         },
         {
-          "item": "Sleep study (polysomnography)",
-          "timing": "Suspected nocturnal hypoventilation",
-          "target": "Assess for REM hypoventilation, AHI",
-          "contraindications": "None",
-          "ED": "—",
+          "item": "Sleep study (polysomnography) (CPT 95810)",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-",
+          "timing": "Suspected nocturnal hypoventilation",
+          "target": "Assess for REM hypoventilation, AHI",
+          "contraindications": "None"
         },
         {
           "item": "Sniff nasal inspiratory pressure (SNIP)",
-          "timing": "More sensitive for bulbar patients",
-          "target": ">40 cmH2O normal",
-          "contraindications": "Nasal obstruction",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-",
+          "timing": "More sensitive for bulbar patients",
+          "target": ">40 cmH2O normal",
+          "contraindications": "Nasal obstruction"
         },
         {
-          "item": "Arterial blood gas",
-          "timing": "Acute respiratory failure",
-          "target": "pH, pCO2, pO2",
-          "contraindications": "Severe coagulopathy",
+          "item": "Arterial blood gas (CPT 82803)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "EXT",
-          "ICU": "STAT"
+          "ICU": "STAT",
+          "timing": "Acute respiratory failure",
+          "target": "pH, pCO2, pO2",
+          "contraindications": "Severe coagulopathy"
         }
       ],
       "Rare/Specialized": [
         {
-          "item": "Transcranial magnetic stimulation (TMS)",
+          "item": "Transcranial magnetic stimulation (TMS) (CPT 95928)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "timing": "Research; UMN localization",
           "target": "Prolonged central motor conduction time",
-          "contraindications": "Seizure history, pacemaker",
-          "ED": "—",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "—"
+          "contraindications": "Seizure history, pacemaker"
         },
         {
-          "item": "PET-FDG brain",
+          "item": "PET-FDG brain (CPT 78816)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "timing": "Cognitive symptoms, FTD evaluation",
           "target": "Frontotemporal hypometabolism",
-          "contraindications": "Unable to cooperate",
-          "ED": "—",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "—"
+          "contraindications": "Unable to cooperate"
         },
         {
-          "item": "Neuropsychological testing",
-          "timing": "Cognitive concerns; FTD screening",
-          "target": "Document cognitive profile",
-          "contraindications": "Severe dysarthria (limited)",
-          "ED": "—",
+          "item": "Neuropsychological testing (CPT 96132)",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-",
+          "timing": "Cognitive concerns; FTD screening",
+          "target": "Document cognitive profile",
+          "contraindications": "Severe dysarthria (limited)"
         },
         {
-          "item": "Diaphragm ultrasound",
-          "timing": "Assess diaphragm function",
-          "target": "Reduced excursion",
-          "contraindications": "None",
-          "ED": "—",
+          "item": "Diaphragm ultrasound (CPT 76604)",
+          "ED": "-",
           "HOSP": "EXT",
           "OPD": "ROUTINE",
-          "ICU": "EXT"
+          "ICU": "EXT",
+          "timing": "Assess diaphragm function",
+          "target": "Reduced excursion",
+          "contraindications": "None"
         },
         {
           "item": "Maximum inspiratory/expiratory pressure",
-          "timing": "Additional respiratory metrics",
-          "target": "MIP >60 cmH2O; MEP >40 cmH2O",
-          "contraindications": "Poor mouth seal",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-",
+          "timing": "Additional respiratory metrics",
+          "target": "MIP >60 cmH2O; MEP >40 cmH2O",
+          "contraindications": "Poor mouth seal"
         }
       ]
     },
@@ -436,21 +439,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg BID",
-                "orderSentence": "Riluzole (Rilutek) 50 mg BID PO"
+                "text": "50 mg",
+                "orderSentence": "Riluzole (Rilutek) 50 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "50 mg PO BID; take 1 hour before or 2 hours after meals for best absorption",
-            "orderSentence": "Riluzole (Rilutek) 50 mg BID PO"
+            "orderSentence": "Riluzole (Rilutek) 50 mg PO"
           },
           "pretreatment": "Baseline LFTs",
           "contraindications": "ALT >5x ULN; hepatic impairment",
           "monitoring": "LFTs monthly x 3 months, then q3 months; CBC if neutropenia suspected",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Edaravone (Radicava) - IV formulation",
@@ -459,21 +462,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "60 mg IV daily",
-                "orderSentence": "Edaravone (Radicava) - IV formulation 60 mg IV daily IV"
+                "text": "60 mg",
+                "orderSentence": "Edaravone (Radicava) - IV formulation 60 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "Initial cycle: 60 mg IV daily x 14 days, then 14 days off; subsequent cycles: 60 mg IV daily x 10 of 14 days, then 14 days off",
-            "orderSentence": "Edaravone (Radicava) - IV formulation 60 mg IV daily IV"
+            "orderSentence": "Edaravone (Radicava) - IV formulation 60 mg IV"
           },
           "pretreatment": "Baseline renal function, IV access established",
           "contraindications": "Hypersensitivity to edaravone or sodium bisulfite",
           "monitoring": "Infusion reactions; renal function; gait (sulfite sensitivity)",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Edaravone oral suspension (Radicava ORS)",
@@ -482,48 +485,37 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "105 mg daily",
-                "orderSentence": "Edaravone oral suspension (Radicava ORS) 105 mg daily PO"
+                "text": "105 mg",
+                "orderSentence": "Edaravone oral suspension (Radicava ORS) 105 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Initial cycle: 105 mg PO daily x 14 days, then 14 days off; subsequent cycles: 105 mg PO daily x 10 of 14 days, then 14 days off",
-            "orderSentence": "Edaravone oral suspension (Radicava ORS) 105 mg daily PO"
+            "orderSentence": "Edaravone oral suspension (Radicava ORS) 105 mg PO"
           },
           "pretreatment": "Baseline renal function",
           "contraindications": "Hypersensitivity to edaravone or sodium bisulfite",
-          "monitoring": "Same as IV formulation",
-          "ED": "—",
+          "monitoring": "Infusion reactions; renal function; gait (sulfite sensitivity)",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
-          "item": "AMX0035 / Relyvrio (sodium phenylbutyrate-taurursodiol)",
+          "item": "~~AMX0035 / Relyvrio (sodium phenylbutyrate-taurursodiol)~~",
           "route": "PO",
-          "indication": "Slows functional decline; extends survival",
+          "indication": "**WITHDRAWN** — Voluntarily removed from US market April 2024 after PHOENIX trial failed to confirm benefit",
           "dosing": {
-            "doseOptions": [
-              {
-                "text": "1 packet daily",
-                "orderSentence": "AMX0035 / Relyvrio (sodium phenylbutyrate-taurursodiol) 1 packet daily PO"
-              },
-              {
-                "text": "then 1 packet BID",
-                "orderSentence": "AMX0035 / Relyvrio (sodium phenylbutyrate-taurursodiol) then 1 packet BID PO"
-              }
-            ],
-            "route": "PO",
-            "instructions": "Week 1: 1 packet (3g sodium phenylbutyrate + 1g taurursodiol) mixed in 8 oz room temp water daily; Week 2+: 1 packet BID",
-            "orderSentence": "AMX0035 / Relyvrio (sodium phenylbutyrate-taurursodiol) 1 packet daily PO"
+            "instructions": "N/A",
+            "orderSentence": "~~AMX0035 / Relyvrio (sodium phenylbutyrate-taurursodiol)~~ - PO - see dosing"
           },
-          "pretreatment": "Baseline LFTs; assess swallowing",
-          "contraindications": "Known hypersensitivity; disorders of urea cycle",
-          "monitoring": "GI side effects (diarrhea, nausea); LFTs q3 months",
-          "ED": "—",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "—"
+          "pretreatment": "N/A",
+          "contraindications": "N/A",
+          "monitoring": "N/A",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
         },
         {
           "item": "Tofersen (Qalsody) - for SOD1 mutations",
@@ -532,21 +524,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg monthly after loading",
-                "orderSentence": "Tofersen (Qalsody) - for SOD1 mutations 100 mg monthly after loading IT"
+                "text": "100 mg",
+                "orderSentence": "Tofersen (Qalsody) - for SOD1 mutations 100 mg IT"
               }
             ],
             "route": "IT",
             "instructions": "Loading: 100 mg IT on Days 1, 15, 29; Maintenance: 100 mg IT q28 days",
-            "orderSentence": "Tofersen (Qalsody) - for SOD1 mutations 100 mg monthly after loading IT"
+            "orderSentence": "Tofersen (Qalsody) - for SOD1 mutations 100 mg IT"
           },
           "pretreatment": "SOD1 gene mutation confirmed; lumbar access",
           "contraindications": "No SOD1 mutation; contraindication to IT injection",
           "monitoring": "Neurofilament levels; CSF analysis; myelopathy monitoring",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         }
       ],
       "Symptomatic Treatments": [
@@ -557,24 +549,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg TID",
-                "orderSentence": "Glycopyrrolate 1 mg TID PO"
-              },
-              {
-                "text": "2 mg TID",
-                "orderSentence": "Glycopyrrolate 2 mg TID PO"
+                "text": "1 mg",
+                "orderSentence": "Glycopyrrolate 1 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 1 mg PO TID; may increase to 2 mg TID; max 8 mg/day",
-            "orderSentence": "Glycopyrrolate 1 mg TID PO"
+            "orderSentence": "Glycopyrrolate 1 mg PO"
           },
           "contraindications": "Narrow-angle glaucoma; urinary retention; GI obstruction",
           "monitoring": "Dry mouth (paradoxical thick secretions), constipation, urinary retention",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Atropine 1% ophthalmic drops (sublingual)",
@@ -583,20 +571,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1-2 drops q4-6h PRN",
-                "orderSentence": "Atropine 1% ophthalmic drops (sublingual) 1-2 drops q4-6h PRN SL"
+                "text": "1-2 drops",
+                "orderSentence": "Atropine 1% ophthalmic drops (sublingual) 1-2 drops SL"
               }
             ],
             "route": "SL",
             "instructions": "1-2 drops sublingual q4-6h as needed; max 4 doses/day",
-            "orderSentence": "Atropine 1% ophthalmic drops (sublingual) 1-2 drops q4-6h PRN SL"
+            "orderSentence": "Atropine 1% ophthalmic drops (sublingual) 1-2 drops SL"
           },
           "contraindications": "Narrow-angle glaucoma; cardiac arrhythmia",
           "monitoring": "HR, dry mouth, urinary retention",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Scopolamine transdermal patch",
@@ -605,20 +593,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1.5 mg patch q72h",
-                "orderSentence": "Scopolamine transdermal patch 1.5 mg patch q72h TOP"
+                "text": "1.5 mg",
+                "orderSentence": "Scopolamine transdermal patch 1.5 mg TOP"
               }
             ],
             "route": "TOP",
             "instructions": "Apply 1.5 mg patch behind ear; replace every 72 hours",
-            "orderSentence": "Scopolamine transdermal patch 1.5 mg patch q72h TOP"
+            "orderSentence": "Scopolamine transdermal patch 1.5 mg TOP"
           },
           "contraindications": "Narrow-angle glaucoma; urinary retention; GI obstruction",
           "monitoring": "Confusion (especially elderly), dry mouth, constipation",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Botulinum toxin A (salivary gland injection)",
@@ -629,10 +617,6 @@
               {
                 "text": "30-50 units per parotid",
                 "orderSentence": "Botulinum toxin A (salivary gland injection) 30-50 units per parotid IM"
-              },
-              {
-                "text": "10-20 units per submandibular",
-                "orderSentence": "Botulinum toxin A (salivary gland injection) 10-20 units per submandibular IM"
               }
             ],
             "route": "IM",
@@ -641,10 +625,10 @@
           },
           "contraindications": "Hypersensitivity; neuromuscular disease (use cautiously)",
           "monitoring": "Dysphagia worsening (rare); dry mouth",
-          "ED": "—",
-          "HOSP": "—",
+          "ED": "-",
+          "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Dextromethorphan-quinidine (Nuedexta)",
@@ -653,24 +637,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "20/10 mg daily",
-                "orderSentence": "Dextromethorphan-quinidine (Nuedexta) 20/10 mg daily PO"
-              },
-              {
-                "text": "20/10 mg BID",
-                "orderSentence": "Dextromethorphan-quinidine (Nuedexta) 20/10 mg BID PO"
+                "text": "20/10 mg",
+                "orderSentence": "Dextromethorphan-quinidine (Nuedexta) 20/10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 20/10 mg (DM/Q) daily x 7 days, then increase to 20/10 mg BID",
-            "orderSentence": "Dextromethorphan-quinidine (Nuedexta) 20/10 mg daily PO"
+            "orderSentence": "Dextromethorphan-quinidine (Nuedexta) 20/10 mg PO"
           },
           "contraindications": "QT prolongation; concurrent quinidine or CYP2D6 substrates; hepatic impairment",
           "monitoring": "Baseline ECG; QTc monitoring; avoid with other QT-prolonging drugs",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Baclofen",
@@ -679,21 +659,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg TID",
-                "orderSentence": "Baclofen 5 mg TID PO"
-              },
-              {
-                "text": "10 mg TID",
-                "orderSentence": "Baclofen 10 mg TID PO"
-              },
-              {
-                "text": "20 mg TID",
-                "orderSentence": "Baclofen 20 mg TID PO"
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg PO TID; increase by 5 mg/dose q3 days; max 80 mg/day in divided doses",
-            "orderSentence": "Baclofen 5 mg TID PO"
+            "orderSentence": "Baclofen 5 mg PO"
           },
           "contraindications": "Abrupt withdrawal (risk of seizures, hallucinations)",
           "monitoring": "Sedation, weakness (may unmask underlying weakness); taper to discontinue",
@@ -709,28 +681,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg qHS",
-                "orderSentence": "Tizanidine 2 mg qHS PO"
-              },
-              {
-                "text": "4 mg TID",
-                "orderSentence": "Tizanidine 4 mg TID PO"
-              },
-              {
-                "text": "8 mg TID",
-                "orderSentence": "Tizanidine 8 mg TID PO"
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 2 mg qHS; may increase by 2-4 mg q6-8h; max 36 mg/day",
-            "orderSentence": "Tizanidine 2 mg qHS PO"
+            "orderSentence": "Tizanidine 2 mg PO"
           },
           "contraindications": "Concurrent CYP1A2 inhibitors (ciprofloxacin, fluvoxamine); hepatic impairment",
           "monitoring": "LFTs at baseline, 1 month, 3 months; sedation, hypotension, dry mouth",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Gabapentin",
@@ -739,28 +703,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "300 mg qHS",
-                "orderSentence": "Gabapentin 300 mg qHS PO"
-              },
-              {
-                "text": "300 mg TID",
-                "orderSentence": "Gabapentin 300 mg TID PO"
-              },
-              {
-                "text": "600 mg TID",
-                "orderSentence": "Gabapentin 600 mg TID PO"
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 300 mg qHS; titrate by 300 mg/day q1-3 days; max 3600 mg/day divided TID",
-            "orderSentence": "Gabapentin 300 mg qHS PO"
+            "orderSentence": "Gabapentin 300 mg PO"
           },
           "contraindications": "Severe renal impairment (adjust dose)",
           "monitoring": "Sedation, dizziness; reduce dose if CrCl <60",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Mexiletine",
@@ -769,24 +725,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "150 mg BID",
-                "orderSentence": "Mexiletine 150 mg BID PO"
-              },
-              {
-                "text": "300 mg BID",
-                "orderSentence": "Mexiletine 300 mg BID PO"
+                "text": "150 mg",
+                "orderSentence": "Mexiletine 150 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 150 mg PO BID; may increase to 300 mg BID; max 1200 mg/day",
-            "orderSentence": "Mexiletine 150 mg BID PO"
+            "orderSentence": "Mexiletine 150 mg PO"
           },
           "contraindications": "Cardiogenic shock; 2nd/3rd degree AV block without pacemaker",
           "monitoring": "Baseline ECG; monitor for arrhythmia; GI upset",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Quinine sulfate",
@@ -795,20 +747,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "200-300 mg qHS",
-                "orderSentence": "Quinine sulfate 200-300 mg qHS PO"
+                "text": "200-300 mg",
+                "orderSentence": "Quinine sulfate 200-300 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "200-300 mg PO at bedtime; FDA warns against off-label use for cramps",
-            "orderSentence": "Quinine sulfate 200-300 mg qHS PO"
+            "orderSentence": "Quinine sulfate 200-300 mg PO"
           },
           "contraindications": "Thrombocytopenia; G6PD deficiency; prolonged QT; myasthenia",
           "monitoring": "CBC, cardiac rhythm; FDA black box warning for thrombocytopenia",
-          "ED": "—",
-          "HOSP": "—",
+          "ED": "-",
+          "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Lorazepam",
@@ -817,21 +769,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.5 mg BID PRN",
-                "orderSentence": "Lorazepam 0.5 mg BID PRN PO/SL"
-              },
-              {
-                "text": "1 mg TID PRN",
-                "orderSentence": "Lorazepam 1 mg TID PRN PO/SL"
+                "text": "0.5 mg",
+                "orderSentence": "Lorazepam 0.5 mg PO/SL"
               }
             ],
             "route": "PO/SL",
             "instructions": "0.5-1 mg PO/SL q8h PRN for anxiety or dyspnea; use low doses due to respiratory depression risk",
-            "orderSentence": "Lorazepam 0.5 mg BID PRN PO/SL"
+            "orderSentence": "Lorazepam 0.5 mg PO/SL"
           },
           "contraindications": "Severe respiratory insufficiency (relative); acute narrow-angle glaucoma",
           "monitoring": "Respiratory status, sedation; paradoxical agitation",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
           "ICU": "ROUTINE"
@@ -843,21 +791,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2.5 mg q4h PRN",
-                "orderSentence": "Morphine 2.5 mg q4h PRN PO/SL"
-              },
-              {
-                "text": "5 mg q4h PRN",
-                "orderSentence": "Morphine 5 mg q4h PRN PO/SL"
+                "text": "2.5 mg",
+                "orderSentence": "Morphine 2.5 mg PO/SL"
               }
             ],
             "route": "PO/SL",
             "instructions": "Start 2.5-5 mg PO/SL q4h PRN for dyspnea; titrate to comfort; may reduce respiratory distress without significantly worsening ventilation",
-            "orderSentence": "Morphine 2.5 mg q4h PRN PO/SL"
+            "orderSentence": "Morphine 2.5 mg PO/SL"
           },
           "contraindications": "Active respiratory failure without comfort focus",
           "monitoring": "Respiratory rate, comfort, sedation",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
           "ICU": "ROUTINE"
@@ -869,24 +813,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg qAM",
-                "orderSentence": "Modafinil 100 mg qAM PO"
-              },
-              {
-                "text": "200 mg qAM",
-                "orderSentence": "Modafinil 200 mg qAM PO"
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 100 mg PO every morning; may increase to 200 mg; avoid afternoon dosing",
-            "orderSentence": "Modafinil 100 mg qAM PO"
+            "orderSentence": "Modafinil 100 mg PO"
           },
           "contraindications": "Hypersensitivity; cardiac arrhythmia",
           "monitoring": "Headache, insomnia, cardiac monitoring if history",
-          "ED": "—",
-          "HOSP": "—",
+          "ED": "-",
+          "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Amitriptyline",
@@ -895,28 +835,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg qHS",
-                "orderSentence": "Amitriptyline 10 mg qHS PO"
-              },
-              {
-                "text": "25 mg qHS",
-                "orderSentence": "Amitriptyline 25 mg qHS PO"
-              },
-              {
-                "text": "50 mg qHS",
-                "orderSentence": "Amitriptyline 50 mg qHS PO"
+                "text": "10 mg",
+                "orderSentence": "Amitriptyline 10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 10 mg PO qHS; increase by 10 mg weekly; max 75-100 mg qHS",
-            "orderSentence": "Amitriptyline 10 mg qHS PO"
+            "orderSentence": "Amitriptyline 10 mg PO"
           },
           "contraindications": "Cardiac conduction abnormality; recent MI; urinary retention",
           "monitoring": "ECG if dose >50 mg; anticholinergic effects; sedation",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Sertraline",
@@ -925,28 +857,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg daily",
-                "orderSentence": "Sertraline 25 mg daily PO"
-              },
-              {
-                "text": "50 mg daily",
-                "orderSentence": "Sertraline 50 mg daily PO"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Sertraline 100 mg daily PO"
+                "text": "25 mg",
+                "orderSentence": "Sertraline 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25 mg PO daily; increase by 25-50 mg q1-2 weeks; max 200 mg/day",
-            "orderSentence": "Sertraline 25 mg daily PO"
+            "orderSentence": "Sertraline 25 mg PO"
           },
           "contraindications": "Concurrent MAOIs; caution with QT-prolonging drugs",
           "monitoring": "Suicidality (first weeks), GI upset, sexual dysfunction",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         }
       ],
       "Respiratory Support": [
@@ -971,14 +895,14 @@
           },
           "contraindications": "Severe bulbar dysfunction with aspiration (relative); inability to clear secretions",
           "monitoring": "Comfort, adherence, transcutaneous CO2 or ABG, mask fit",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
           "ICU": "STAT"
         },
         {
           "item": "Mechanical insufflation-exsufflation (Cough Assist)",
-          "route": "—",
+          "route": "-",
           "indication": "Weak cough; peak cough flow <270 L/min",
           "dosing": {
             "doseOptions": [
@@ -993,14 +917,14 @@
           },
           "contraindications": "Bullous emphysema; pneumothorax",
           "monitoring": "Secretion clearance, respiratory status",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
           "ICU": "STAT"
         },
         {
           "item": "Portable suction",
-          "route": "—",
+          "route": "-",
           "indication": "Secretion management",
           "dosing": {
             "doseOptions": [
@@ -1044,7 +968,7 @@
         },
         {
           "item": "Diaphragm pacing (NeuRx)",
-          "route": "—",
+          "route": "-",
           "indication": "Diaphragm weakness",
           "dosing": {
             "doseOptions": [
@@ -1059,10 +983,10 @@
           },
           "contraindications": "Severe diaphragm atrophy; unable to tolerate surgery",
           "monitoring": "Diaphragm function, surgical complications",
-          "ED": "—",
-          "HOSP": "—",
+          "ED": "-",
+          "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "—"
+          "ICU": "-"
         }
       ],
       "Nutritional Support": [
@@ -1083,10 +1007,10 @@
           },
           "contraindications": "Aspiration risk",
           "monitoring": "Weight, caloric intake, albumin",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Thickened liquids",
@@ -1105,14 +1029,14 @@
           },
           "contraindications": "None",
           "monitoring": "Hydration status, swallow function",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Percutaneous endoscopic gastrostomy (PEG)",
-          "route": "—",
+          "route": "-",
           "indication": "Dysphagia with weight loss >10% or FVC declining toward 50%",
           "dosing": {
             "doseOptions": [
@@ -1127,14 +1051,14 @@
           },
           "contraindications": "FVC <50% (higher risk; consider RIG or PIG); severe coagulopathy",
           "monitoring": "Weight, tube site, aspiration",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Radiologically-inserted gastrostomy (RIG)",
-          "route": "—",
+          "route": "-",
           "indication": "PEG contraindicated; FVC <50%",
           "dosing": {
             "doseOptions": [
@@ -1149,14 +1073,14 @@
           },
           "contraindications": "Severe ascites; peritoneal adhesions",
           "monitoring": "Weight, tube site",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Per-oral image-guided gastrostomy (PIG)",
-          "route": "—",
+          "route": "-",
           "indication": "Alternative to PEG/RIG",
           "dosing": {
             "doseOptions": [
@@ -1171,10 +1095,10 @@
           },
           "contraindications": "Same as RIG",
           "monitoring": "Weight, tube site",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         }
       ],
       "Acute/Emergent Care": [
@@ -1201,12 +1125,12 @@
           "monitoring": "ABG, respiratory rate, work of breathing",
           "ED": "STAT",
           "HOSP": "STAT",
-          "OPD": "—",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
           "item": "Intubation and mechanical ventilation",
-          "route": "—",
+          "route": "-",
           "indication": "Respiratory failure not responding to NIV",
           "dosing": {
             "doseOptions": [
@@ -1222,8 +1146,8 @@
           "contraindications": "Patient declines; DNI documented",
           "monitoring": "Ventilator parameters, sedation",
           "ED": "STAT",
-          "HOSP": "—",
-          "OPD": "—",
+          "HOSP": "-",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -1245,7 +1169,7 @@
           "monitoring": "I/O, electrolytes, edema",
           "ED": "STAT",
           "HOSP": "STAT",
-          "OPD": "—",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -1267,7 +1191,7 @@
           "monitoring": "WBC, fever curve, respiratory status",
           "ED": "STAT",
           "HOSP": "STAT",
-          "OPD": "—",
+          "OPD": "-",
           "ICU": "STAT"
         }
       ]
@@ -1290,116 +1214,116 @@
         },
         {
           "item": "Physical therapy for mobility assessment, strengthening (submaximal), range of motion, and assistive device prescription",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
           "ICU": "STAT"
         },
         {
           "item": "Occupational therapy for ADL assessment, adaptive equipment, energy conservation, and home modification",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
           "ICU": "URGENT"
         },
         {
           "item": "Speech-language pathology for swallow evaluation, communication strategies, and AAC device assessment",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
           "ICU": "URGENT"
         },
         {
           "item": "Respiratory therapy for BiPAP setup and titration, cough assist training, and secretion management",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
           "ICU": "STAT"
         },
         {
           "item": "Nutrition/dietitian for caloric needs assessment, weight optimization, and tube feeding management",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
           "ICU": "URGENT"
         },
         {
           "item": "Palliative care for symptom management, goals of care discussions, and quality of life optimization",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
           "ICU": "URGENT"
         },
         {
           "item": "Social work for financial resources (SSDI, Medicaid), caregiver support, and ALS Association resources",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
           "ICU": "ROUTINE"
         },
         {
           "item": "Psychiatry/psychology for depression, anxiety, and adjustment disorder common in ALS",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
           "ICU": "ROUTINE"
         },
         {
           "item": "Gastroenterology for PEG placement when FVC declining toward 50% or significant dysphagia",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         },
         {
           "item": "Hospice care for end-of-life care when prognosis <6 months and/or patient declines aggressive interventions",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
           "ICU": "ROUTINE"
         },
         {
           "item": "Genetic counseling for familial ALS, gene testing interpretation, and family planning implications",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "—"
+          "ICU": "-"
         }
       ],
       "Patient Instructions": [
         {
           "item": "Return immediately for increased shortness of breath, choking episodes, or inability to clear secretions (may indicate respiratory failure requiring urgent intervention)",
           "ED": "STAT",
-          "HOSP": "—",
+          "HOSP": "-",
           "OPD": "STAT"
         },
         {
           "item": "Return for fever, worsening cough, or change in sputum color (may indicate aspiration pneumonia)",
           "ED": "STAT",
-          "HOSP": "—",
+          "HOSP": "-",
           "OPD": "STAT"
         },
         {
           "item": "Do not drive if experiencing significant weakness or fatigue that could impair vehicle control",
           "ED": "URGENT",
-          "HOSP": "—",
+          "HOSP": "-",
           "OPD": "ROUTINE"
         },
         {
           "item": "Continue eating foods that are safe to swallow; use thickened liquids if recommended by speech therapy",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE"
         },
         {
           "item": "Use BiPAP as prescribed, even if initially uncomfortable; adherence improves symptoms and survival",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE"
         },
         {
           "item": "Perform prescribed exercises but avoid exhaustion; rest before becoming overly fatigued",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE"
         },
@@ -1411,20 +1335,20 @@
         },
         {
           "item": "Contact ALS Association (www.als.org) for educational resources, support groups, and equipment loan programs",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE"
         },
         {
           "item": "Attend multidisciplinary ALS clinic visits every 2-3 months for comprehensive care coordination",
-          "ED": "—",
-          "HOSP": "—",
+          "ED": "-",
+          "HOSP": "-",
           "OPD": "ROUTINE"
         },
         {
           "item": "Consider joining ALS research registries and clinical trials (www.clinicaltrials.gov)",
-          "ED": "—",
-          "HOSP": "—",
+          "ED": "-",
+          "HOSP": "-",
           "OPD": "ROUTINE"
         }
       ],
@@ -1437,56 +1361,56 @@
         },
         {
           "item": "Energy conservation with scheduled rest periods and prioritization of activities to reduce fatigue",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE"
         },
         {
           "item": "Home safety evaluation to remove fall hazards, install grab bars, and ensure wheelchair accessibility",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE"
         },
         {
           "item": "Maintain optimal nutrition with high-calorie, high-protein diet; weight loss accelerates decline",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE"
         },
         {
           "item": "Sleep with head of bed elevated 30 degrees if using BiPAP or experiencing orthopnea",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE"
         },
         {
           "item": "Smoking cessation is essential to optimize respiratory function and reduce aspiration risk",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE"
         },
         {
           "item": "Limit alcohol as it may worsen weakness, sedation, and respiratory depression",
-          "ED": "—",
-          "HOSP": "—",
+          "ED": "-",
+          "HOSP": "-",
           "OPD": "ROUTINE"
         },
         {
           "item": "Frequent repositioning if immobile to prevent pressure ulcers",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "STAT",
           "OPD": "ROUTINE"
         },
         {
           "item": "Emotional and spiritual support for patient and caregivers; caregiver burnout is common",
-          "ED": "—",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE"
         },
         {
           "item": "Consider assistive technology early (voice banking, eye-tracking devices) before speech becomes unintelligible",
-          "ED": "—",
-          "HOSP": "—",
+          "ED": "-",
+          "HOSP": "-",
           "OPD": "ROUTINE"
         }
       ]
@@ -1611,8 +1535,8 @@
       "source": "[Writing Group. Lancet Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/28522181/)"
     },
     {
-      "recommendation": "AMX0035 (Relyvrio) slows ALSFRS-R decline",
-      "evidenceLevel": "Class II, Level B",
+      "recommendation": "AMX0035 (Relyvrio) slowed ALSFRS-R decline in phase 2; PHOENIX trial negative; **withdrawn April 2024**",
+      "evidenceLevel": "Class II, Level B (superseded)",
       "source": "[Paganoni et al. NEJM 2020](https://pubmed.ncbi.nlm.nih.gov/32897034/)"
     },
     {
@@ -1675,10 +1599,10 @@
       "item": "ALSFRS-R score",
       "frequency": "Every clinic visit",
       "action": "Adjust care intensity; prognostic indicator",
-      "ED": "—",
+      "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "—"
+      "ICU": "-"
     },
     {
       "item": "Weight",
@@ -1693,10 +1617,10 @@
       "item": "LFTs (ALT/AST)",
       "frequency": "Monthly x 3 months on riluzole, then q3 months",
       "action": "Hold riluzole if ALT >5x ULN; reduce dose if 3-5x ULN",
-      "ED": "—",
+      "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "—"
+      "ICU": "-"
     },
     {
       "item": "Respiratory symptoms (orthopnea, morning headache, daytime somnolence)",
@@ -1720,37 +1644,37 @@
       "item": "Swallowing function",
       "frequency": "Every visit",
       "action": "SLP evaluation; diet modification; consider PEG",
-      "ED": "—",
+      "ED": "-",
       "HOSP": "URGENT",
       "OPD": "ROUTINE",
-      "ICU": "—"
+      "ICU": "-"
     },
     {
       "item": "Peak cough flow",
       "frequency": "Every visit",
       "action": "Initiate cough assist if <270 L/min",
-      "ED": "—",
+      "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "—"
+      "ICU": "-"
     },
     {
       "item": "Mood screening (PHQ-9)",
       "frequency": "Every visit",
       "action": "Antidepressant; psychology referral",
-      "ED": "—",
+      "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "—"
+      "ICU": "-"
     },
     {
       "item": "Caregiver stress",
       "frequency": "Every visit",
       "action": "Social work; respite care; support groups",
-      "ED": "—",
+      "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "—"
+      "ICU": "-"
     },
     {
       "item": "Advance directive status",
@@ -1765,10 +1689,10 @@
       "item": "BiPAP adherence",
       "frequency": "Every visit",
       "action": "Education; mask refitting; troubleshoot",
-      "ED": "—",
+      "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "—"
+      "ICU": "-"
     }
   ],
   "disposition": [

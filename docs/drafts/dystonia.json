@@ -1,7 +1,7 @@
 {
   "id": "dystonia",
   "title": "Dystonia",
-  "version": "1.0",
+  "version": "1.1",
   "icd10": [
     "** G24.9 (Dystonia",
     "unspecified)",
@@ -17,303 +17,303 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "CBC with differential",
-          "rationale": "Baseline; exclude systemic illness",
-          "target": "Normal",
+          "item": "CBC with differential (CPT 85025)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "STAT"
+          "ICU": "STAT",
+          "rationale": "Baseline; exclude systemic illness",
+          "target": "Normal"
         },
         {
-          "item": "BMP",
-          "rationale": "Electrolyte abnormalities can exacerbate movement disorders",
-          "target": "Normal",
+          "item": "BMP (CPT 80048)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "STAT"
+          "ICU": "STAT",
+          "rationale": "Electrolyte abnormalities can exacerbate movement disorders",
+          "target": "Normal"
         },
         {
-          "item": "Hepatic panel (AST, ALT, Alk Phos, bilirubin, albumin)",
-          "rationale": "Screen for hepatic dysfunction suggesting Wilson's disease",
-          "target": "Normal",
+          "item": "Hepatic panel (AST, ALT, Alk Phos, bilirubin, albumin) (CPT 80076)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Screen for hepatic dysfunction suggesting Wilson's disease",
+          "target": "Normal"
         },
         {
-          "item": "Ceruloplasmin",
-          "rationale": "Wilson's disease screen; essential for age <50 with dystonia",
-          "target": ">20 mg/dL (low suggests Wilson's)",
+          "item": "Ceruloplasmin (CPT 82390)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Wilson's disease screen; essential for age <50 with dystonia",
+          "target": ">20 mg/dL (low suggests Wilson's)"
         },
         {
-          "item": "TSH",
-          "rationale": "Hyperthyroidism can cause movement disorders",
-          "target": "Normal (0.4-4.0 mIU/L)",
+          "item": "TSH (CPT 84443)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Hyperthyroidism can cause movement disorders",
+          "target": "Normal (0.4-4.0 mIU/L)"
         }
       ],
       "Extended Workup": [
         {
-          "item": "24-hour urine copper",
+          "item": "24-hour urine copper (CPT 82525)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Wilson's disease confirmation if ceruloplasmin low/borderline",
-          "target": "<40 mcg/24hr (elevated in Wilson's)",
+          "target": "<40 mcg/24hr (elevated in Wilson's)"
+        },
+        {
+          "item": "Serum copper (CPT 82525)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Serum copper",
+          "ICU": "-",
           "rationale": "Interpret with ceruloplasmin (low free copper ratio in Wilson's)",
-          "target": "75-145 mcg/dL",
+          "target": "75-145 mcg/dL"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Vitamin B12",
+          "ICU": "-",
           "rationale": "Deficiency causes myelopathy and movement disorders",
-          "target": ">300 pg/mL",
+          "target": ">300 pg/mL"
+        },
+        {
+          "item": "Ferritin (CPT 82728), serum iron (CPT 83540), TIBC (CPT 83550)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Ferritin, serum iron, TIBC",
+          "ICU": "-",
           "rationale": "Neurodegeneration with brain iron accumulation (NBIA)",
-          "target": "Normal",
-          "ED": "-",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "target": "Normal"
         },
         {
-          "item": "Uric acid",
-          "rationale": "Low in ataxia-telangiectasia, Lesch-Nyhan",
-          "target": "Normal",
+          "item": "Uric acid (CPT 84550)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Low in ataxia-telangiectasia, Lesch-Nyhan",
+          "target": "Normal"
         },
         {
-          "item": "Lactate, pyruvate",
-          "rationale": "Mitochondrial disorders",
-          "target": "Normal",
+          "item": "Lactate (CPT 83605), pyruvate (CPT 84210)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Mitochondrial disorders",
+          "target": "Normal"
         },
         {
-          "item": "Calcium, magnesium",
-          "rationale": "Hypocalcemia, hypomagnesemia can cause movement disorders",
-          "target": "Normal",
+          "item": "Calcium (CPT 82310), magnesium (CPT 83735)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "STAT"
+          "ICU": "STAT",
+          "rationale": "Hypocalcemia, hypomagnesemia can cause movement disorders",
+          "target": "Normal"
         },
         {
-          "item": "CK",
-          "rationale": "Elevated in dystonia crises, NMS, prolonged dystonic posturing",
-          "target": "Normal or mildly elevated",
+          "item": "CK (CPT 82550)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "-",
-          "ICU": "STAT"
+          "ICU": "STAT",
+          "rationale": "Elevated in dystonia crises, NMS, prolonged dystonic posturing",
+          "target": "Normal or mildly elevated"
         }
       ],
       "Rare/Specialized": [
         {
-          "item": "ATP7B gene sequencing",
+          "item": "ATP7B gene sequencing (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Definitive Wilson's disease diagnosis",
-          "target": "No pathogenic variants",
+          "target": "No pathogenic variants"
+        },
+        {
+          "item": "GCH1 gene sequencing (CPT 81479)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "GCH1 gene sequencing",
+          "ICU": "-",
           "rationale": "Dopa-responsive dystonia (DYT5a)",
-          "target": "No pathogenic variants",
+          "target": "No pathogenic variants"
+        },
+        {
+          "item": "TOR1A gene sequencing (CPT 81479)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "TOR1A gene sequencing",
+          "ICU": "-",
           "rationale": "DYT1 dystonia (early-onset generalized)",
-          "target": "No GAG deletion",
+          "target": "No GAG deletion"
+        },
+        {
+          "item": "THAP1 gene sequencing (CPT 81479)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "THAP1 gene sequencing",
+          "ICU": "-",
           "rationale": "DYT6 dystonia",
-          "target": "No pathogenic variants",
+          "target": "No pathogenic variants"
+        },
+        {
+          "item": "Dystonia gene panel (multi-gene NGS) (CPT 81479)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "Dystonia gene panel (multi-gene NGS)",
+          "ICU": "-",
           "rationale": "Atypical presentations; family history; early onset",
-          "target": "No pathogenic variants",
+          "target": "No pathogenic variants"
+        },
+        {
+          "item": "CSF neurotransmitter metabolites (HVA, 5-HIAA, pterins) (CPT 83519)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "CSF neurotransmitter metabolites (HVA, 5-HIAA, pterins)",
+          "ICU": "-",
           "rationale": "Dopa-responsive dystonia; neurotransmitter disorders",
-          "target": "Normal ratios",
+          "target": "Normal ratios"
+        },
+        {
+          "item": "Acanthocyte smear (CPT 85060)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "Acanthocyte smear",
+          "ICU": "-",
           "rationale": "Chorea-acanthocytosis, McLeod syndrome",
-          "target": "No acanthocytes",
+          "target": "No acanthocytes"
+        },
+        {
+          "item": "Lysosomal enzyme panel (CPT 82657)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "Lysosomal enzyme panel",
+          "ICU": "-",
           "rationale": "Lysosomal storage disorders (GM1, GM2 gangliosidosis)",
-          "target": "Normal enzyme activity",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "EXT",
-          "ICU": "-"
+          "target": "Normal enzyme activity"
         },
         {
-          "item": "Anti-neuronal antibodies (NMDAR, LGI1, CASPR2)",
-          "rationale": "Autoimmune dystonia (rare)",
-          "target": "Negative",
+          "item": "Anti-neuronal antibodies (NMDAR, LGI1, CASPR2) (CPT 86255)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Autoimmune dystonia (rare)",
+          "target": "Negative"
         },
         {
-          "item": "Paraneoplastic antibody panel",
-          "rationale": "Paraneoplastic dystonia",
-          "target": "Negative",
+          "item": "Paraneoplastic antibody panel (CPT 86235)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Paraneoplastic dystonia",
+          "target": "Negative"
         }
       ]
     },
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "MRI Brain without and with contrast",
-          "timing": "All new dystonia cases; rule out structural lesion",
-          "target": "Normal; no basal ganglia lesions",
-          "contraindications": "MRI-incompatible devices",
+          "item": "MRI Brain without and with contrast (CPT 70553)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "All new dystonia cases; rule out structural lesion",
+          "target": "Normal; no basal ganglia lesions",
+          "contraindications": "MRI-incompatible devices"
         }
       ],
       "Extended": [
         {
-          "item": "MRI Brain with SWI/iron sequences",
+          "item": "MRI Brain with SWI/iron sequences (CPT 70553)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "timing": "Suspected Wilson's disease or NBIA",
           "target": "No T2 hypointensity in basal ganglia",
-          "contraindications": "MRI contraindications",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "Slit lamp examination by ophthalmology (CPT 92012)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Slit lamp examination by ophthalmology",
+          "ICU": "-",
           "timing": "Wilson's disease evaluation; Kayser-Fleischer rings",
           "target": "No KF rings",
-          "contraindications": "None",
-          "ED": "-",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "contraindications": "None"
         },
         {
-          "item": "EMG with dystonia protocol",
+          "item": "EMG with dystonia protocol (CPT 95907-95913)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "timing": "Confirm diagnosis; characterize pattern; guide botulinum toxin",
           "target": "Co-contraction of agonist/antagonist; overflow",
-          "contraindications": "None",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "contraindications": "None"
         },
         {
-          "item": "DaTscan (ioflupane I-123)",
-          "timing": "Differentiate dystonic tremor from PD; combined dystonia-parkinsonism",
-          "target": "Normal in primary dystonia; abnormal if parkinsonism",
-          "contraindications": "Iodine allergy",
+          "item": "DaTscan (ioflupane I-123) (CPT 78607)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Differentiate dystonic tremor from PD; combined dystonia-parkinsonism",
+          "target": "Normal in primary dystonia; abnormal if parkinsonism",
+          "contraindications": "Iodine allergy"
         }
       ],
       "Rare/Specialized": [
         {
-          "item": "MRI Spine (cervical/thoracic)",
-          "timing": "Cervical dystonia with radiculopathy symptoms",
-          "target": "Normal; no cord compression",
-          "contraindications": "MRI contraindications",
+          "item": "MRI Spine (cervical/thoracic) (CPT 72156)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Cervical dystonia with radiculopathy symptoms",
+          "target": "Normal; no cord compression",
+          "contraindications": "MRI contraindications"
         },
         {
-          "item": "FDG-PET Brain",
-          "timing": "Atypical parkinsonism with dystonia",
-          "target": "Pattern interpretation varies",
-          "contraindications": "None significant",
+          "item": "FDG-PET Brain (CPT 78816)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Atypical parkinsonism with dystonia",
+          "target": "Pattern interpretation varies",
+          "contraindications": "None significant"
         },
         {
-          "item": "Liver MRI or ultrasound",
-          "timing": "Wilson's disease staging if diagnosed",
-          "target": "Assess hepatic involvement",
-          "contraindications": "None significant",
+          "item": "Liver MRI or ultrasound (CPT 74183/76700)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Wilson's disease staging if diagnosed",
+          "target": "Assess hepatic involvement",
+          "contraindications": "None significant"
         }
       ]
     },
@@ -326,21 +326,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg IV",
-                "orderSentence": "Diphenhydramine 25 mg IV IV/IM"
-              },
-              {
-                "text": "50 mg IV",
-                "orderSentence": "Diphenhydramine 50 mg IV IV/IM"
-              },
-              {
-                "text": "50 mg IM",
-                "orderSentence": "Diphenhydramine 50 mg IM IV/IM"
+                "text": "25 mg",
+                "orderSentence": "Diphenhydramine 25 mg IV/IM"
               }
             ],
             "route": "IV/IM",
             "instructions": "25-50 mg IV/IM over 2-5 min; may repeat in 30 min if needed; max 100 mg",
-            "orderSentence": "Diphenhydramine 25 mg IV IV/IM"
+            "orderSentence": "Diphenhydramine 25 mg IV/IM"
           },
           "contraindications": "Narrow-angle glaucoma; urinary retention",
           "monitoring": "Sedation, hypotension",
@@ -356,25 +348,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg IV",
-                "orderSentence": "Benztropine 1 mg IV IV/IM"
-              },
-              {
-                "text": "2 mg IV",
-                "orderSentence": "Benztropine 2 mg IV IV/IM"
-              },
-              {
-                "text": "1 mg IM",
-                "orderSentence": "Benztropine 1 mg IM IV/IM"
-              },
-              {
-                "text": "2 mg IM",
-                "orderSentence": "Benztropine 2 mg IM IV/IM"
+                "text": "1 mg",
+                "orderSentence": "Benztropine 1 mg IV/IM"
               }
             ],
             "route": "IV/IM",
             "instructions": "1-2 mg IV/IM; may repeat in 30 min; follow with oral 1-2 mg BID x 2-3 days to prevent recurrence",
-            "orderSentence": "Benztropine 1 mg IV IV/IM"
+            "orderSentence": "Benztropine 1 mg IV/IM"
           },
           "contraindications": "Narrow-angle glaucoma; GI obstruction; myasthenia gravis",
           "monitoring": "Anticholinergic effects, confusion (elderly)",
@@ -390,25 +370,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg IV",
-                "orderSentence": "Lorazepam 1 mg IV IV/PO"
-              },
-              {
-                "text": "2 mg IV",
-                "orderSentence": "Lorazepam 2 mg IV IV/PO"
-              },
-              {
-                "text": "2 mg PO",
-                "orderSentence": "Lorazepam 2 mg PO IV/PO"
-              },
-              {
-                "text": "4 mg PO",
-                "orderSentence": "Lorazepam 4 mg PO IV/PO"
+                "text": "1 mg",
+                "orderSentence": "Lorazepam 1 mg IV/PO"
               }
             ],
             "route": "IV/PO",
             "instructions": "1-2 mg IV slow push or 2-4 mg PO; may repeat q4-6h PRN; monitor respiratory status",
-            "orderSentence": "Lorazepam 1 mg IV IV/PO"
+            "orderSentence": "Lorazepam 1 mg IV/PO"
           },
           "contraindications": "Severe respiratory depression; acute narrow-angle glaucoma",
           "monitoring": "Respiratory depression, sedation",
@@ -424,28 +392,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg IV",
-                "orderSentence": "Diazepam 5 mg IV IV/PO"
-              },
-              {
-                "text": "10 mg IV",
-                "orderSentence": "Diazepam 10 mg IV IV/PO"
-              },
-              {
-                "text": "5 mg PO",
-                "orderSentence": "Diazepam 5 mg PO IV/PO"
-              },
-              {
-                "text": "10 mg PO",
-                "orderSentence": "Diazepam 10 mg PO IV/PO"
+                "text": "5 mg",
+                "orderSentence": "Diazepam 5 mg IV/PO"
               }
             ],
             "route": "IV/PO",
             "instructions": "5-10 mg IV slow push (2 mg/min) or PO; may repeat q4h PRN",
-            "orderSentence": "Diazepam 5 mg IV IV/PO"
+            "orderSentence": "Diazepam 5 mg IV/PO"
           },
-          "contraindications": "Same as lorazepam",
-          "monitoring": "Same as lorazepam",
+          "contraindications": "Severe respiratory depression; acute narrow-angle glaucoma",
+          "monitoring": "Respiratory depression, sedation",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -460,21 +416,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 units total",
-                "orderSentence": "OnabotulinumtoxinA (Botox) - Cervical dystonia 100 units total IM"
-              },
-              {
-                "text": "200 units total",
-                "orderSentence": "OnabotulinumtoxinA (Botox) - Cervical dystonia 200 units total IM"
-              },
-              {
-                "text": "300 units total",
-                "orderSentence": "OnabotulinumtoxinA (Botox) - Cervical dystonia 300 units total IM"
+                "text": "100 units",
+                "orderSentence": "OnabotulinumtoxinA (Botox) - Cervical dystonia 100 units IM"
               }
             ],
             "route": "IM",
             "instructions": "Start 100-200 units divided among affected muscles (SCM, splenius, trapezius, levator scapulae); adjust based on response; max 300 units/session; repeat q12wk",
-            "orderSentence": "OnabotulinumtoxinA (Botox) - Cervical dystonia 100 units total IM"
+            "orderSentence": "OnabotulinumtoxinA (Botox) - Cervical dystonia 100 units IM"
           },
           "contraindications": "Infection at site; myasthenia gravis; ALS",
           "monitoring": "Dysphagia (especially bilateral SCM); neck weakness; antibody formation",
@@ -490,19 +438,15 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 units total",
-                "orderSentence": "OnabotulinumtoxinA (Botox) - Blepharospasm 25 units total IM"
-              },
-              {
-                "text": "50 units total",
-                "orderSentence": "OnabotulinumtoxinA (Botox) - Blepharospasm 50 units total IM"
+                "text": "25 units",
+                "orderSentence": "OnabotulinumtoxinA (Botox) - Blepharospasm 25 units IM"
               }
             ],
             "route": "IM",
             "instructions": "1.25-5 units per site; inject orbicularis oculi at multiple points; total 25-50 units per eye; repeat q12wk",
-            "orderSentence": "OnabotulinumtoxinA (Botox) - Blepharospasm 25 units total IM"
+            "orderSentence": "OnabotulinumtoxinA (Botox) - Blepharospasm 25 units IM"
           },
-          "contraindications": "Same as above",
+          "contraindications": "Infection at site; myasthenia gravis; ALS",
           "monitoring": "Ptosis, diplopia, dry eyes, lagophthalmos",
           "ED": "-",
           "HOSP": "-",
@@ -516,19 +460,15 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 units total",
-                "orderSentence": "OnabotulinumtoxinA (Botox) - Writer's cramp 50 units total IM"
-              },
-              {
-                "text": "100 units total",
-                "orderSentence": "OnabotulinumtoxinA (Botox) - Writer's cramp 100 units total IM"
+                "text": "50 units",
+                "orderSentence": "OnabotulinumtoxinA (Botox) - Writer's cramp 50 units IM"
               }
             ],
             "route": "IM",
             "instructions": "10-50 units per muscle; EMG guidance required; target FCR, FCU, FDS as needed; repeat q12wk",
-            "orderSentence": "OnabotulinumtoxinA (Botox) - Writer's cramp 50 units total IM"
+            "orderSentence": "OnabotulinumtoxinA (Botox) - Writer's cramp 50 units IM"
           },
-          "contraindications": "Same as above",
+          "contraindications": "Infection at site; myasthenia gravis; ALS",
           "monitoring": "Finger weakness (may impair function)",
           "ED": "-",
           "HOSP": "-",
@@ -542,24 +482,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 units total",
-                "orderSentence": "AbobotulinumtoxinA (Dysport) - Cervical dystonia 500 units total IM"
-              },
-              {
-                "text": "750 units total",
-                "orderSentence": "AbobotulinumtoxinA (Dysport) - Cervical dystonia 750 units total IM"
-              },
-              {
-                "text": "1000 units total",
-                "orderSentence": "AbobotulinumtoxinA (Dysport) - Cervical dystonia 1000 units total IM"
+                "text": "500 units",
+                "orderSentence": "AbobotulinumtoxinA (Dysport) - Cervical dystonia 500 units IM"
               }
             ],
             "route": "IM",
             "instructions": "Start 500 units divided among affected muscles; max 1000 units/session; repeat q12wk",
-            "orderSentence": "AbobotulinumtoxinA (Dysport) - Cervical dystonia 500 units total IM"
+            "orderSentence": "AbobotulinumtoxinA (Dysport) - Cervical dystonia 500 units IM"
           },
-          "contraindications": "Same as onabotulinum",
-          "monitoring": "Same as onabotulinum",
+          "contraindications": "Infection at site; myasthenia gravis; ALS",
+          "monitoring": "Dysphagia (especially bilateral SCM); neck weakness; antibody formation",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -572,24 +504,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "120 units total",
-                "orderSentence": "IncobotulinumtoxinA (Xeomin) - Cervical dystonia 120 units total IM"
-              },
-              {
-                "text": "200 units total",
-                "orderSentence": "IncobotulinumtoxinA (Xeomin) - Cervical dystonia 200 units total IM"
-              },
-              {
-                "text": "300 units total",
-                "orderSentence": "IncobotulinumtoxinA (Xeomin) - Cervical dystonia 300 units total IM"
+                "text": "120 units",
+                "orderSentence": "IncobotulinumtoxinA (Xeomin) - Cervical dystonia 120 units IM"
               }
             ],
             "route": "IM",
             "instructions": "Start 120-200 units divided; max 300 units/session; repeat q12wk; may have lower immunogenicity",
-            "orderSentence": "IncobotulinumtoxinA (Xeomin) - Cervical dystonia 120 units total IM"
+            "orderSentence": "IncobotulinumtoxinA (Xeomin) - Cervical dystonia 120 units IM"
           },
-          "contraindications": "Same as onabotulinum",
-          "monitoring": "Same as onabotulinum",
+          "contraindications": "Infection at site; myasthenia gravis; ALS",
+          "monitoring": "Dysphagia (especially bilateral SCM); neck weakness; antibody formation",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -602,24 +526,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2500 units total",
-                "orderSentence": "RimabotulinumtoxinB (Myobloc) - Cervical dystonia 2500 units total IM"
-              },
-              {
-                "text": "5000 units total",
-                "orderSentence": "RimabotulinumtoxinB (Myobloc) - Cervical dystonia 5000 units total IM"
-              },
-              {
-                "text": "10000 units total",
-                "orderSentence": "RimabotulinumtoxinB (Myobloc) - Cervical dystonia 10000 units total IM"
+                "text": "2500 units",
+                "orderSentence": "RimabotulinumtoxinB (Myobloc) - Cervical dystonia 2500 units IM"
               }
             ],
             "route": "IM",
             "instructions": "Start 2500-5000 units divided; max 10000 units; repeat q12wk; higher dry mouth rate",
-            "orderSentence": "RimabotulinumtoxinB (Myobloc) - Cervical dystonia 2500 units total IM"
+            "orderSentence": "RimabotulinumtoxinB (Myobloc) - Cervical dystonia 2500 units IM"
           },
-          "contraindications": "Same; type B protein allergy",
-          "monitoring": "Dry mouth more common; dysphagia",
+          "contraindications": "Infection at site; myasthenia gravis; ALS; type B protein allergy",
+          "monitoring": "Dry mouth; dysphagia; neck weakness; antibody formation",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -634,29 +550,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg daily",
-                "orderSentence": "Trihexyphenidyl 1 mg daily PO"
-              },
-              {
-                "text": "2 mg TID",
-                "orderSentence": "Trihexyphenidyl 2 mg TID PO"
-              },
-              {
-                "text": "5 mg TID",
-                "orderSentence": "Trihexyphenidyl 5 mg TID PO"
-              },
-              {
-                "text": "10 mg TID",
-                "orderSentence": "Trihexyphenidyl 10 mg TID PO"
-              },
-              {
-                "text": "15 mg TID",
-                "orderSentence": "Trihexyphenidyl 15 mg TID PO"
+                "text": "1 mg",
+                "orderSentence": "Trihexyphenidyl 1 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 1 mg daily; increase by 1-2 mg q3-5d; typical target 6-30 mg/day divided TID; some patients require up to 60-80 mg/day",
-            "orderSentence": "Trihexyphenidyl 1 mg daily PO"
+            "orderSentence": "Trihexyphenidyl 1 mg PO"
           },
           "contraindications": "Narrow-angle glaucoma; GI obstruction; urinary retention; dementia",
           "monitoring": "Anticholinergic effects (dry mouth, constipation, urinary retention, confusion); cognitive effects in elderly",
@@ -672,28 +572,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.5 mg BID",
-                "orderSentence": "Benztropine 0.5 mg BID PO"
-              },
-              {
-                "text": "1 mg BID",
-                "orderSentence": "Benztropine 1 mg BID PO"
-              },
-              {
-                "text": "2 mg BID",
-                "orderSentence": "Benztropine 2 mg BID PO"
-              },
-              {
-                "text": "3 mg BID",
-                "orderSentence": "Benztropine 3 mg BID PO"
+                "text": "0.5 mg",
+                "orderSentence": "Benztropine 0.5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 0.5 mg BID; increase by 0.5 mg q5-7d; typical 1-4 mg/day; max 6 mg/day",
-            "orderSentence": "Benztropine 0.5 mg BID PO"
+            "orderSentence": "Benztropine 0.5 mg PO"
           },
-          "contraindications": "Same as trihexyphenidyl",
-          "monitoring": "Same as trihexyphenidyl",
+          "contraindications": "Narrow-angle glaucoma; GI obstruction; urinary retention; dementia",
+          "monitoring": "Anticholinergic effects (dry mouth, constipation, urinary retention, confusion); cognitive effects in elderly",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -706,25 +594,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg TID",
-                "orderSentence": "Baclofen 5 mg TID PO"
-              },
-              {
-                "text": "10 mg TID",
-                "orderSentence": "Baclofen 10 mg TID PO"
-              },
-              {
-                "text": "20 mg TID",
-                "orderSentence": "Baclofen 20 mg TID PO"
-              },
-              {
-                "text": "30 mg TID",
-                "orderSentence": "Baclofen 30 mg TID PO"
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg TID; increase by 5 mg/dose q3d; typical 30-80 mg/day divided TID; max 80-120 mg/day",
-            "orderSentence": "Baclofen 5 mg TID PO"
+            "orderSentence": "Baclofen 5 mg PO"
           },
           "contraindications": "Severe renal impairment (dose adjust); abrupt withdrawal risk",
           "monitoring": "Sedation, weakness; taper slowly if discontinuing",
@@ -740,25 +616,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.25 mg BID",
-                "orderSentence": "Clonazepam 0.25 mg BID PO"
-              },
-              {
-                "text": "0.5 mg BID",
-                "orderSentence": "Clonazepam 0.5 mg BID PO"
-              },
-              {
-                "text": "1 mg BID",
-                "orderSentence": "Clonazepam 1 mg BID PO"
-              },
-              {
-                "text": "1 mg TID",
-                "orderSentence": "Clonazepam 1 mg TID PO"
+                "text": "0.25 mg",
+                "orderSentence": "Clonazepam 0.25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 0.25 mg BID; increase by 0.25-0.5 mg q3-7d; typical 1-4 mg/day; max 6 mg/day",
-            "orderSentence": "Clonazepam 0.25 mg BID PO"
+            "orderSentence": "Clonazepam 0.25 mg PO"
           },
           "contraindications": "Respiratory depression; severe hepatic impairment; substance abuse history",
           "monitoring": "Sedation, dependence, falls; taper if discontinuing",
@@ -774,24 +638,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg TID",
-                "orderSentence": "Diazepam 2 mg TID PO"
-              },
-              {
-                "text": "5 mg TID",
-                "orderSentence": "Diazepam 5 mg TID PO"
-              },
-              {
-                "text": "10 mg TID",
-                "orderSentence": "Diazepam 10 mg TID PO"
+                "text": "2 mg",
+                "orderSentence": "Diazepam 2 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 2 mg TID; increase by 2-5 mg/day q3-7d; typical 10-40 mg/day divided",
-            "orderSentence": "Diazepam 2 mg TID PO"
+            "orderSentence": "Diazepam 2 mg PO"
           },
-          "contraindications": "Same as clonazepam",
-          "monitoring": "Same as clonazepam",
+          "contraindications": "Respiratory depression; severe hepatic impairment; substance abuse history",
+          "monitoring": "Sedation, dependence, falls; taper if discontinuing",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -804,17 +660,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25/100 mg TID",
-                "orderSentence": "Levodopa/Carbidopa 25/100 mg TID PO"
-              },
-              {
-                "text": "50/200 mg TID",
-                "orderSentence": "Levodopa/Carbidopa 50/200 mg TID PO"
+                "text": "25/100 mg",
+                "orderSentence": "Levodopa/Carbidopa 25/100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25/100 mg TID; if DRD, dramatic response at low dose; may titrate to 50/200 mg TID; response confirms diagnosis",
-            "orderSentence": "Levodopa/Carbidopa 25/100 mg TID PO"
+            "orderSentence": "Levodopa/Carbidopa 25/100 mg PO"
           },
           "contraindications": "None absolute; use caution in psychosis",
           "monitoring": "Nausea, orthostatic hypotension; dramatic improvement suggests DRD",
@@ -830,21 +682,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "12.5 mg daily",
-                "orderSentence": "Tetrabenazine 12.5 mg daily PO"
-              },
-              {
-                "text": "12.5 mg BID",
-                "orderSentence": "Tetrabenazine 12.5 mg BID PO"
-              },
-              {
-                "text": "25 mg TID",
-                "orderSentence": "Tetrabenazine 25 mg TID PO"
+                "text": "12.5 mg",
+                "orderSentence": "Tetrabenazine 12.5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 12.5 mg daily; increase by 12.5 mg q1wk; max 200 mg/day; CYP2D6 testing recommended",
-            "orderSentence": "Tetrabenazine 12.5 mg daily PO"
+            "orderSentence": "Tetrabenazine 12.5 mg PO"
           },
           "contraindications": "Depression; suicidality; Parkinsonism",
           "monitoring": "Depression, sedation, parkinsonism, akathisia; Black Box: suicidality",
@@ -860,24 +704,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "6 mg BID",
-                "orderSentence": "Deutetrabenazine (Austedo) 6 mg BID PO"
-              },
-              {
-                "text": "12 mg BID",
-                "orderSentence": "Deutetrabenazine (Austedo) 12 mg BID PO"
-              },
-              {
-                "text": "24 mg BID",
-                "orderSentence": "Deutetrabenazine (Austedo) 24 mg BID PO"
+                "text": "6 mg",
+                "orderSentence": "Deutetrabenazine (Austedo) 6 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 6 mg BID; increase by 6 mg/day weekly; max 48 mg/day",
-            "orderSentence": "Deutetrabenazine (Austedo) 6 mg BID PO"
+            "orderSentence": "Deutetrabenazine (Austedo) 6 mg PO"
           },
-          "contraindications": "Same as tetrabenazine",
-          "monitoring": "Same but may be better tolerated",
+          "contraindications": "Depression; suicidality; Parkinsonism",
+          "monitoring": "Depression, sedation, parkinsonism, akathisia; Black Box: suicidality; may be better tolerated than tetrabenazine",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -890,21 +726,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.1 mg BID",
-                "orderSentence": "Clonidine 0.1 mg BID PO"
-              },
-              {
-                "text": "0.2 mg BID",
-                "orderSentence": "Clonidine 0.2 mg BID PO"
-              },
-              {
-                "text": "0.3 mg BID",
-                "orderSentence": "Clonidine 0.3 mg BID PO"
+                "text": "0.1 mg",
+                "orderSentence": "Clonidine 0.1 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 0.1 mg BID; increase by 0.1 mg q1wk; max 0.6 mg/day",
-            "orderSentence": "Clonidine 0.1 mg BID PO"
+            "orderSentence": "Clonidine 0.1 mg PO"
           },
           "contraindications": "Severe bradycardia; renal impairment (adjust)",
           "monitoring": "Hypotension, bradycardia, sedation; rebound hypertension if stopped abruptly",
@@ -920,21 +748,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg BID",
-                "orderSentence": "Carbamazepine 100 mg BID PO"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Carbamazepine 200 mg BID PO"
-              },
-              {
-                "text": "400 mg BID",
-                "orderSentence": "Carbamazepine 400 mg BID PO"
+                "text": "100 mg",
+                "orderSentence": "Carbamazepine 100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 100 mg BID; increase by 100-200 mg q1wk; target 400-800 mg/day; check HLA-B*1502 in at-risk populations",
-            "orderSentence": "Carbamazepine 100 mg BID PO"
+            "orderSentence": "Carbamazepine 100 mg PO"
           },
           "contraindications": "Bone marrow suppression; AV block; SJS risk (HLA-B*1502)",
           "monitoring": "CBC, LFTs, sodium; drug levels (4-12 mcg/mL)",
@@ -980,12 +800,12 @@
               }
             ],
             "route": "Surgical",
-            "instructions": "Same as above",
+            "instructions": "Bilateral GPi electrode placement; programming over weeks-months; full effect may take 6-12 months",
             "orderSentence": "Deep brain stimulation (GPi-DBS) Bilateral GPi stimulation Surgical"
           },
-          "pretreatment": "Same as above",
-          "contraindications": "Same as above",
-          "monitoring": "Same as above",
+          "pretreatment": "MRI; neuropsych testing; multidisciplinary evaluation; genetic testing if indicated",
+          "contraindications": "Cognitive impairment; coagulopathy; infection; unrealistic expectations",
+          "monitoring": "Programming optimization; battery replacement q3-5yr; speech/swallowing",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -998,13 +818,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Continuous IT infusion",
-                "orderSentence": "Intrathecal baclofen pump Continuous IT infusion IT"
+                "text": "25 mcg",
+                "orderSentence": "Intrathecal baclofen pump 25 mcg IT"
               }
             ],
             "route": "IT",
             "instructions": "Test dose 25-100 mcg; maintenance typically 100-1000 mcg/day; titrate over months",
-            "orderSentence": "Intrathecal baclofen pump Continuous IT infusion IT"
+            "orderSentence": "Intrathecal baclofen pump 25 mcg IT"
           },
           "pretreatment": "IT baclofen trial with >50% improvement",
           "contraindications": "Infection; CSF obstruction; baclofen hypersensitivity",
@@ -1021,25 +841,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg daily",
-                "orderSentence": "D-penicillamine 250 mg daily PO"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "D-penicillamine 500 mg BID PO"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "D-penicillamine 750 mg BID PO"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "D-penicillamine 1000 mg BID PO"
+                "text": "250 mg",
+                "orderSentence": "D-penicillamine 250 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 250 mg daily; increase by 250 mg q4-7d; target 1000-1500 mg/day divided BID (take 1hr before meals); lifelong treatment",
-            "orderSentence": "D-penicillamine 250 mg daily PO"
+            "orderSentence": "D-penicillamine 250 mg PO"
           },
           "pretreatment": "24h urine copper, LFTs, CBC, urinalysis",
           "contraindications": "Penicillin allergy (not absolute but caution); nephrotoxicity",
@@ -1056,25 +864,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg TID",
-                "orderSentence": "Trientine (Syprine) 250 mg TID PO"
-              },
-              {
-                "text": "500 mg TID",
-                "orderSentence": "Trientine (Syprine) 500 mg TID PO"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "Trientine (Syprine) 750 mg BID PO"
+                "text": "250 mg",
+                "orderSentence": "Trientine (Syprine) 250 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 250 mg TID; target 750-1250 mg/day divided TID; take 1hr before or 2hr after meals",
-            "orderSentence": "Trientine (Syprine) 250 mg TID PO"
+            "orderSentence": "Trientine (Syprine) 250 mg PO"
           },
-          "pretreatment": "Same as D-penicillamine",
+          "pretreatment": "24h urine copper, LFTs, CBC, urinalysis",
           "contraindications": "Caution with iron supplements (separate by 2hr)",
-          "monitoring": "Same monitoring as D-penicillamine; fewer side effects",
+          "monitoring": "CBC, LFTs, urinalysis monthly initially then q3mo; fewer side effects than D-penicillamine",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -1087,13 +887,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg TID",
-                "orderSentence": "Zinc acetate (Galzin) 50 mg TID PO"
+                "text": "50 mg",
+                "orderSentence": "Zinc acetate (Galzin) 50 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "50 mg TID (elemental zinc); take between meals; blocks intestinal copper absorption",
-            "orderSentence": "Zinc acetate (Galzin) 50 mg TID PO"
+            "orderSentence": "Zinc acetate (Galzin) 50 mg PO"
           },
           "pretreatment": "Take separately from copper chelators",
           "contraindications": "GI upset",

@@ -1,7 +1,7 @@
 {
   "id": "normal-pressure-hydrocephalus",
   "title": "Normal Pressure Hydrocephalus",
-  "version": "1.0",
+  "version": "1.1",
   "icd10": [
     "** G91.2 (Normal pressure hydrocephalus)",
     "G91.0 (Communicating hydrocephalus)",
@@ -16,297 +16,267 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Pre-surgical screening; rule out infection",
-          "target": "Normal",
+          "target": "Normal"
+        },
+        {
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "BMP",
+          "ICU": "-",
           "rationale": "Electrolyte assessment; pre-surgical renal function",
-          "target": "Normal electrolytes, BUN, Cr",
+          "target": "Normal electrolytes, BUN, Cr"
+        },
+        {
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Coagulation panel (PT/INR, PTT)",
+          "ICU": "-",
           "rationale": "Pre-procedural assessment for LP and surgery",
-          "target": "INR <1.5, PTT <40",
-          "ED": "STAT",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "target": "INR <1.5, PTT <40"
         },
         {
-          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Hypothyroidism can cause cognitive impairment",
-          "target": "0.4-4.0 mIU/L",
+          "target": "0.4-4.0 mIU/L"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Vitamin B12",
+          "ICU": "-",
           "rationale": "B12 deficiency causes reversible dementia and gait ataxia",
-          "target": ">300 pg/mL",
-          "ED": "-",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "target": ">300 pg/mL"
         },
         {
-          "item": "Urinalysis with culture",
-          "rationale": "Rule out UTI as cause of incontinence or confusion",
-          "target": "Negative for infection",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Rule out UTI as cause of incontinence or confusion",
+          "target": "Negative for infection"
         },
         {
-          "item": "Hemoglobin A1c",
-          "rationale": "Diabetes contributes to small vessel disease and neuropathy",
-          "target": "<7%",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Diabetes contributes to small vessel disease and neuropathy",
+          "target": "<7%"
         }
       ],
       "Extended Workup": [
         {
-          "item": "Folate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Deficiency contributes to cognitive impairment",
-          "target": ">3 ng/mL",
+          "target": ">3 ng/mL"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "RPR or VDRL",
+          "ICU": "-",
           "rationale": "Neurosyphilis can cause dementia and gait abnormalities",
-          "target": "Nonreactive",
+          "target": "Nonreactive"
+        },
+        {
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "HIV antibody",
+          "ICU": "-",
           "rationale": "HIV-associated neurocognitive disorder in at-risk patients",
-          "target": "Negative",
-          "ED": "-",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "target": "Negative"
         },
         {
-          "item": "ESR, CRP",
-          "rationale": "Inflammatory or infectious causes of meningitis/encephalitis",
-          "target": "Normal",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Inflammatory or infectious causes of meningitis/encephalitis",
+          "target": "Normal"
         },
         {
-          "item": "Hepatic panel",
-          "rationale": "Hepatic encephalopathy in patients with liver disease",
-          "target": "Normal",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Hepatic encephalopathy in patients with liver disease",
+          "target": "Normal"
         },
         {
-          "item": "PSA (males)",
-          "rationale": "Prostate disease contributing to urinary symptoms",
-          "target": "Normal for age",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Prostate disease contributing to urinary symptoms",
+          "target": "Normal for age"
         }
       ],
       "Rare/Specialized": [
         {
-          "item": "Paraneoplastic antibody panel",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
           "rationale": "Autoimmune etiology if subacute presentation",
-          "target": "Negative",
+          "target": "Negative"
+        },
+        {
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-"
-        },
-        {
-          "item": "Anti-neuronal antibodies (NMDA-R, LGI1, CASPR2)",
+          "ICU": "-",
           "rationale": "Autoimmune encephalitis causing cognitive/behavioral changes",
-          "target": "Negative",
-          "ED": "-",
-          "HOSP": "EXT",
-          "OPD": "EXT",
-          "ICU": "-"
+          "target": "Negative"
         },
         {
-          "item": "Genetic testing for APP, PSEN1, PSEN2",
-          "rationale": "Early-onset dementia with family history",
-          "target": "No pathogenic variants",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Early-onset dementia with family history",
+          "target": "No pathogenic variants"
         }
       ],
       "Lumbar Puncture": [
         {
-          "item": "Opening pressure",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "rationale": "Confirm normal or mildly elevated pressure in NPH",
-          "target": "5-18 cm H2O (typically normal or low-normal in NPH)",
+          "target": "5-18 cm H2O (typically normal or low-normal in NPH)"
+        },
+        {
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Cell count (tubes 1 and 4)",
+          "ICU": "-",
           "rationale": "Rule out infection or inflammation",
-          "target": "WBC <5, RBC 0",
+          "target": "WBC <5, RBC 0"
+        },
+        {
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Protein",
+          "ICU": "-",
           "rationale": "Rule out infectious/inflammatory causes",
-          "target": "Normal 15-45 mg/dL",
+          "target": "Normal 15-45 mg/dL"
+        },
+        {
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "Glucose with serum glucose",
+          "ICU": "-",
           "rationale": "Rule out infectious meningitis",
-          "target": ">60% of serum glucose",
-          "ED": "URGENT",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "target": ">60% of serum glucose"
         },
         {
-          "item": "CSF Abeta-42, total tau, p-tau",
-          "rationale": "Differentiate from Alzheimer's disease (optional)",
-          "target": "Normal in NPH; low Abeta-42 with high tau in AD",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "rationale": "Differentiate from Alzheimer's disease (optional)",
+          "target": "Normal in NPH; low Abeta-42 with high tau in AD"
         }
       ]
     },
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "MRI Brain without contrast",
-          "timing": "Initial evaluation",
-          "target": "Ventriculomegaly with Evans index >0.3; callosal angle <90 degrees; DESH pattern; periventricular edema (transependymal flow); absence of cortical atrophy proportionate to ventricular size",
-          "contraindications": "MRI-incompatible devices; claustrophobia",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Initial evaluation",
+          "target": "Ventriculomegaly with Evans index >0.3; callosal angle <90 degrees; DESH pattern; periventricular edema (transependymal flow); absence of cortical atrophy proportionate to ventricular size",
+          "contraindications": "MRI-incompatible devices; claustrophobia"
         },
         {
-          "item": "CT Head non-contrast",
-          "timing": "If MRI unavailable or emergent presentation",
-          "target": "Ventriculomegaly out of proportion to sulcal enlargement; Evans index >0.3",
-          "contraindications": "Pregnancy (relative)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "If MRI unavailable or emergent presentation",
+          "target": "Ventriculomegaly out of proportion to sulcal enlargement; Evans index >0.3",
+          "contraindications": "Pregnancy (relative)"
         }
       ],
       "Extended": [
         {
-          "item": "MRI Brain with volumetric analysis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
           "timing": "Detailed assessment",
           "target": "Quantify ventricular volume; hippocampal volume preservation (unlike AD); tight high-convexity sulci",
-          "contraindications": "MRI contraindications",
+          "contraindications": "MRI contraindications"
+        },
+        {
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
-          "ICU": "-"
-        },
-        {
-          "item": "MRI with CSF flow study (phase-contrast)",
+          "ICU": "-",
           "timing": "Assess aqueductal CSF flow",
           "target": "Hyperdynamic aqueductal flow; increased stroke volume (>42 microL)",
-          "contraindications": "MRI contraindications",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "ROUTINE",
-          "ICU": "-"
+          "contraindications": "MRI contraindications"
         },
         {
-          "item": "MR spectroscopy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
           "timing": "Atypical cases to differentiate from AD",
           "target": "Normal NAA/Cr ratio (reduced in AD); no significant metabolic abnormality",
-          "contraindications": "MRI contraindications",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "EXT",
-          "ICU": "-"
+          "contraindications": "MRI contraindications"
         },
         {
-          "item": "FDG-PET Brain",
-          "timing": "Differentiate NPH from AD or FTD",
-          "target": "Preserved metabolism (unlike AD temporoparietal hypometabolism)",
-          "contraindications": "None",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Differentiate NPH from AD or FTD",
+          "target": "Preserved metabolism (unlike AD temporoparietal hypometabolism)",
+          "contraindications": "None"
         }
       ],
       "Rare/Specialized": [
         {
-          "item": "Intracranial pressure monitoring (continuous)",
-          "timing": "Diagnostic uncertainty after tap test",
-          "target": "B-waves present (indicates impaired CSF dynamics)",
-          "contraindications": "Coagulopathy; skin infection",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Diagnostic uncertainty after tap test",
+          "target": "B-waves present (indicates impaired CSF dynamics)",
+          "contraindications": "Coagulopathy; skin infection"
         },
         {
-          "item": "Infusion testing (CSF outflow resistance)",
-          "timing": "Research settings; predict shunt response",
-          "target": "Elevated Rout >12-18 mmHg/mL/min suggests shunt responsiveness",
-          "contraindications": "Coagulopathy",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Research settings; predict shunt response",
+          "target": "Elevated Rout >12-18 mmHg/mL/min suggests shunt responsiveness",
+          "contraindications": "Coagulopathy"
         },
         {
-          "item": "Radionuclide cisternography",
-          "timing": "Rarely used; assesses CSF flow patterns",
-          "target": "Delayed clearance over convexities; ventricular reflux",
-          "contraindications": "None",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "-",
+          "timing": "Rarely used; assesses CSF flow patterns",
+          "target": "Delayed clearance over convexities; ventricular reflux",
+          "contraindications": "None"
         }
       ]
     },
@@ -319,21 +289,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg BID",
-                "orderSentence": "Acetazolamide 250 mg BID PO"
-              },
-              {
-                "text": "250 mg TID",
-                "orderSentence": "Acetazolamide 250 mg TID PO"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "Acetazolamide 500 mg BID PO"
+                "text": "250 mg",
+                "orderSentence": "Acetazolamide 250 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 250 mg BID; titrate to 250 mg TID or 500 mg BID; max 2 g/day",
-            "orderSentence": "Acetazolamide 250 mg BID PO"
+            "orderSentence": "Acetazolamide 250 mg PO"
           },
           "contraindications": "Sulfa allergy; severe hepatic/renal disease; hypokalemia; metabolic acidosis",
           "monitoring": "BMP for potassium, bicarbonate; paresthesias",
@@ -349,13 +311,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "30-50 mL removed",
-                "orderSentence": "Serial therapeutic LP 30-50 mL removed LP"
+                "text": "30-50 mL",
+                "orderSentence": "Serial therapeutic LP 30-50 mL LP"
               }
             ],
             "route": "LP",
             "instructions": "Remove 30-50 mL every 1-4 weeks based on symptom recurrence",
-            "orderSentence": "Serial therapeutic LP 30-50 mL removed LP"
+            "orderSentence": "Serial therapeutic LP 30-50 mL LP"
           },
           "contraindications": "Coagulopathy; anticoagulation; skin infection",
           "monitoring": "Post-LP symptoms; duration of benefit",
@@ -373,21 +335,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg daily",
-                "orderSentence": "Memantine 5 mg daily PO"
-              },
-              {
-                "text": "5 mg BID",
-                "orderSentence": "Memantine 5 mg BID PO"
-              },
-              {
-                "text": "10 mg BID",
-                "orderSentence": "Memantine 10 mg BID PO"
+                "text": "5 mg",
+                "orderSentence": "Memantine 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg daily; increase by 5 mg/week; target 10 mg BID",
-            "orderSentence": "Memantine 5 mg daily PO"
+            "orderSentence": "Memantine 5 mg PO"
           },
           "contraindications": "Severe renal impairment (adjust dose if CrCl <30)",
           "monitoring": "Confusion, dizziness",
@@ -403,17 +357,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg qHS",
-                "orderSentence": "Donepezil 5 mg qHS PO"
-              },
-              {
-                "text": "10 mg qHS",
-                "orderSentence": "Donepezil 10 mg qHS PO"
+                "text": "5 mg",
+                "orderSentence": "Donepezil 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg qHS x 4-6 weeks; increase to 10 mg qHS",
-            "orderSentence": "Donepezil 5 mg qHS PO"
+            "orderSentence": "Donepezil 5 mg PO"
           },
           "contraindications": "Sick sinus syndrome; GI bleeding; COPD",
           "monitoring": "Bradycardia, GI symptoms",
@@ -429,21 +379,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg BID",
-                "orderSentence": "Oxybutynin 5 mg BID PO"
-              },
-              {
-                "text": "5 mg TID",
-                "orderSentence": "Oxybutynin 5 mg TID PO"
-              },
-              {
-                "text": "10 mg ER daily",
-                "orderSentence": "Oxybutynin 10 mg ER daily PO"
+                "text": "5 mg",
+                "orderSentence": "Oxybutynin 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg BID; may increase to 5 mg TID; or use ER 10-30 mg daily",
-            "orderSentence": "Oxybutynin 5 mg BID PO"
+            "orderSentence": "Oxybutynin 5 mg PO"
           },
           "contraindications": "Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction",
           "monitoring": "Anticholinergic effects; cognitive worsening",
@@ -459,17 +401,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg daily",
-                "orderSentence": "Mirabegron 25 mg daily PO"
-              },
-              {
-                "text": "50 mg daily",
-                "orderSentence": "Mirabegron 50 mg daily PO"
+                "text": "25 mg",
+                "orderSentence": "Mirabegron 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25 mg daily; may increase to 50 mg daily",
-            "orderSentence": "Mirabegron 25 mg daily PO"
+            "orderSentence": "Mirabegron 25 mg PO"
           },
           "contraindications": "Severe uncontrolled hypertension",
           "monitoring": "Blood pressure",
@@ -485,17 +423,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.4 mg daily",
-                "orderSentence": "Tamsulosin 0.4 mg daily PO"
-              },
-              {
-                "text": "0.8 mg daily",
-                "orderSentence": "Tamsulosin 0.8 mg daily PO"
+                "text": "0.4 mg",
+                "orderSentence": "Tamsulosin 0.4 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 0.4 mg daily; may increase to 0.8 mg daily",
-            "orderSentence": "Tamsulosin 0.4 mg daily PO"
+            "orderSentence": "Tamsulosin 0.4 mg PO"
           },
           "contraindications": "Orthostatic hypotension; planned cataract surgery (IFIS)",
           "monitoring": "Orthostatic hypotension",
@@ -511,21 +445,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg qHS",
-                "orderSentence": "Trazodone 25 mg qHS PO"
-              },
-              {
-                "text": "50 mg qHS",
-                "orderSentence": "Trazodone 50 mg qHS PO"
-              },
-              {
-                "text": "100 mg qHS",
-                "orderSentence": "Trazodone 100 mg qHS PO"
+                "text": "25 mg",
+                "orderSentence": "Trazodone 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25-50 mg qHS; titrate to 50-150 mg qHS",
-            "orderSentence": "Trazodone 25 mg qHS PO"
+            "orderSentence": "Trazodone 25 mg PO"
           },
           "contraindications": "Concurrent MAOIs; QT prolongation",
           "monitoring": "Orthostatic hypotension",
@@ -565,13 +491,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Programmable valve preferred",
-                "orderSentence": "Ventriculoperitoneal (VP) shunt Programmable valve preferred Surgical"
+                "text": "Programmable valve",
+                "orderSentence": "Ventriculoperitoneal (VP) shunt Programmable valve Surgical"
               }
             ],
             "route": "Surgical",
             "instructions": "Valve pressure setting adjusted based on symptoms; typical starting setting 120-180 mmH2O",
-            "orderSentence": "Ventriculoperitoneal (VP) shunt Programmable valve preferred Surgical"
+            "orderSentence": "Ventriculoperitoneal (VP) shunt Programmable valve Surgical"
           },
           "contraindications": "Active peritoneal infection; peritoneal adhesions; recent abdominal surgery; ascites",
           "monitoring": "Post-op neuro checks; shunt series imaging; valve setting verification",
@@ -587,16 +513,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Programmable valve preferred",
-                "orderSentence": "Ventriculoatrial (VA) shunt Programmable valve preferred Surgical"
+                "text": "Programmable valve",
+                "orderSentence": "Ventriculoatrial (VA) shunt Programmable valve Surgical"
               }
             ],
             "route": "Surgical",
             "instructions": "Catheter tip in right atrium; valve adjusted as VP shunt",
-            "orderSentence": "Ventriculoatrial (VA) shunt Programmable valve preferred Surgical"
+            "orderSentence": "Ventriculoatrial (VA) shunt Programmable valve Surgical"
           },
           "contraindications": "Active bacteremia; severe cardiac disease; pulmonary hypertension",
-          "monitoring": "Same as VP; plus cardiac monitoring; watch for shunt nephritis",
+          "monitoring": "Post-op neuro checks; shunt series imaging; valve setting verification; cardiac monitoring; watch for shunt nephritis",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "-",
@@ -609,16 +535,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Programmable valve preferred",
-                "orderSentence": "Lumboperitoneal (LP) shunt Programmable valve preferred Surgical"
+                "text": "Programmable valve",
+                "orderSentence": "Lumboperitoneal (LP) shunt Programmable valve Surgical"
               }
             ],
             "route": "Surgical",
             "instructions": "Catheter from lumbar subarachnoid space to peritoneum",
-            "orderSentence": "Lumboperitoneal (LP) shunt Programmable valve preferred Surgical"
+            "orderSentence": "Lumboperitoneal (LP) shunt Programmable valve Surgical"
           },
           "contraindications": "Spinal stenosis; arachnoiditis; Chiari malformation",
-          "monitoring": "Similar to VP; watch for overdrainage with positional changes",
+          "monitoring": "Post-op neuro checks; shunt series imaging; valve setting verification; watch for overdrainage with positional changes",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "-",
@@ -631,13 +557,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "NA",
-                "orderSentence": "Endoscopic third ventriculostomy (ETV) NA Surgical"
+                "text": "N/A",
+                "orderSentence": "Endoscopic third ventriculostomy (ETV) N/A Surgical"
               }
             ],
             "route": "Surgical",
             "instructions": "Create opening between third ventricle and interpeduncular cistern",
-            "orderSentence": "Endoscopic third ventriculostomy (ETV) NA Surgical"
+            "orderSentence": "Endoscopic third ventriculostomy (ETV) N/A Surgical"
           },
           "contraindications": "Communicating hydrocephalus (most iNPH); scarred prepontine cistern",
           "monitoring": "Post-op neuro checks; repeat imaging",
@@ -649,19 +575,19 @@
       ],
       "Post-Shunt Complication Management": [
         {
-          "item": "Valve pressure adjustment",
+          "item": "Valve pressure adjustment (overdrainage)",
           "route": "External",
           "indication": "Overdrainage symptoms (headache, subdural hematoma)",
           "dosing": {
             "doseOptions": [
               {
-                "text": "Increase valve setting",
-                "orderSentence": "Valve pressure adjustment Increase valve setting External programming"
+                "text": "Increase setting",
+                "orderSentence": "Valve pressure adjustment (overdrainage) Increase setting External programming"
               }
             ],
             "route": "External programming",
             "instructions": "Increase opening pressure by 20-30 mmH2O increments; recheck in 1-2 weeks",
-            "orderSentence": "Valve pressure adjustment Increase valve setting External programming"
+            "orderSentence": "Valve pressure adjustment (overdrainage) Increase setting External programming"
           },
           "contraindications": "None",
           "monitoring": "Symptom response; repeat imaging",
@@ -671,19 +597,19 @@
           "ICU": "-"
         },
         {
-          "item": "Valve pressure adjustment",
+          "item": "Valve pressure adjustment (underdrainage)",
           "route": "External",
           "indication": "Underdrainage (persistent or worsening NPH symptoms)",
           "dosing": {
             "doseOptions": [
               {
-                "text": "Decrease valve setting",
-                "orderSentence": "Valve pressure adjustment Decrease valve setting External programming"
+                "text": "Decrease setting",
+                "orderSentence": "Valve pressure adjustment (underdrainage) Decrease setting External programming"
               }
             ],
             "route": "External programming",
             "instructions": "Decrease opening pressure by 20-30 mmH2O increments; recheck in 1-2 weeks",
-            "orderSentence": "Valve pressure adjustment Decrease valve setting External programming"
+            "orderSentence": "Valve pressure adjustment (underdrainage) Decrease setting External programming"
           },
           "contraindications": "None",
           "monitoring": "Symptom response; repeat imaging",
@@ -699,13 +625,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "15-20 mg/kg IV q8-12h",
-                "orderSentence": "Vancomycin 15-20 mg/kg IV q8-12h IV"
+                "text": "15-20 mg/kg",
+                "orderSentence": "Vancomycin 15-20 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "15-20 mg/kg IV q8-12h; adjust for renal function; target trough 15-20 mcg/mL",
-            "orderSentence": "Vancomycin 15-20 mg/kg IV q8-12h IV"
+            "orderSentence": "Vancomycin 15-20 mg/kg IV"
           },
           "contraindications": "Vancomycin allergy",
           "monitoring": "Vancomycin trough; renal function",
@@ -721,13 +647,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 g IV q8h",
-                "orderSentence": "Cefepime 2 g IV q8h IV"
+                "text": "2 g",
+                "orderSentence": "Cefepime 2 g IV"
               }
             ],
             "route": "IV",
             "instructions": "2 g IV q8h; adjust for renal function",
-            "orderSentence": "Cefepime 2 g IV q8h IV"
+            "orderSentence": "Cefepime 2 g IV"
           },
           "contraindications": "Cephalosporin allergy",
           "monitoring": "Renal function",
