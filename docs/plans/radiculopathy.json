@@ -1,0 +1,1648 @@
+{
+  "id": "radiculopathy",
+  "title": "Radiculopathy - Cervical and Lumbar",
+  "version": "1.1",
+  "icd10": [
+    "** M54.10 (Radiculopathy",
+    "site unspecified)",
+    "M54.12 (Radiculopathy",
+    "cervical region)",
+    "M54.13 (Radiculopathy",
+    "cervicothoracic region)",
+    "M54.16 (Radiculopathy",
+    "lumbar region)",
+    "M54.17 (Radiculopathy",
+    "lumbosacral region)",
+    "G55 (Nerve root and plexus compressions in diseases classified elsewhere)",
+    "M50.10 (Cervical disc disorder with radiculopathy",
+    "unspecified)",
+    "M51.16 (Intervertebral disc disorders with radiculopathy",
+    "lumbar region)"
+  ],
+  "scope": "** Evaluation and management of cervical (C5-T1) and lumbar (L2-S1) radiculopathy in adults. Covers red flag identification, diagnostic workup including imaging and electrodiagnostic testing, conservative management, interventional treatments, and surgical indications. Excludes spinal cord compression (myelopathy), cauda equina syndrome (requires emergent surgical evaluation), thoracic radiculopathy, and post-surgical radiculopathy.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection screen if fever, malignancy screen",
+          "target": "Normal WBC; no anemia"
+        },
+        {
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline renal/hepatic function for medications; metabolic causes",
+          "target": "Normal"
+        },
+        {
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Inflammatory marker for infection, malignancy, spondyloarthropathy",
+          "target": "<20 mm/hr (age-adjusted)"
+        },
+        {
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Inflammatory marker for infection, malignancy",
+          "target": "<0.5 mg/dL"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes increases neuropathy risk; affects surgical outcomes",
+          "target": "<5.7%"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes screening",
+          "target": "<100 mg/dL"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Combined neuropathy may confuse presentation",
+          "target": ">300 pg/mL"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism can cause myopathy, neuropathy",
+          "target": "Normal (0.4-4.0 mIU/L)"
+        },
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Ankylosing spondylitis, spondyloarthropathy if young patient with inflammatory back pain",
+          "target": "Negative"
+        },
+        {
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "UTI can mimic/exacerbate symptoms; pre-operative screen",
+          "target": "Normal"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Prostate cancer metastases to spine",
+          "target": "Age-appropriate normal"
+        },
+        {
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "If fever or infection suspected",
+          "target": "No growth"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Multiple myeloma with vertebral lesions",
+          "target": "No M-spike"
+        },
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Endemic areas with radiculopathy, polyradiculopathy",
+          "target": "Negative"
+        },
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Atypical presentation, weight loss, subacute course",
+          "target": "Negative"
+        },
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Connective tissue disease",
+          "target": "Negative or low titer"
+        },
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Sarcoidosis with multifocal radiculopathy",
+          "target": "Normal"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "STAT if red flags; otherwise after 4-6 weeks conservative treatment fails",
+          "target": "Disc herniation, foraminal stenosis, nerve root compression",
+          "contraindications": "MRI-incompatible pacemaker; cochlear implant; metallic foreign body"
+        },
+        {
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "If infection, tumor, or inflammatory etiology suspected",
+          "target": "Enhancement pattern (abscess rim, tumor, leptomeningeal)",
+          "contraindications": "GFR <30 (for gadolinium); MRI-incompatible device; gadolinium allergy"
+        },
+        {
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Initial screen for instability, spondylolisthesis, fracture, alignment",
+          "target": "No fracture, normal alignment, no listhesis",
+          "contraindications": "Pregnancy (shield abdomen)"
+        }
+      ],
+      "Extended": [
+        {
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "If MRI contraindicated; bony detail for fracture, foraminal stenosis",
+          "target": "Foraminal narrowing, osteophytes, fracture",
+          "contraindications": "Pregnancy (relative); contrast allergy (if contrast used)"
+        },
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "MRI contraindicated and need for neural visualization",
+          "target": "Filling defect at nerve root, cord compression",
+          "contraindications": "Coagulopathy (for LP); intracranial mass"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "3-4 weeks after symptom onset to confirm radiculopathy, exclude peripheral neuropathy, localize level",
+          "target": "Fibrillations/positive sharp waves in myotomal distribution; reduced recruitment",
+          "contraindications": "Pacemaker (relative for needle EMG); anticoagulation (relative)"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "To confirm symptomatic level when imaging shows multilevel disease",
+          "target": ">50% pain relief confirms level",
+          "contraindications": "Coagulopathy; infection at injection site; allergy to contrast/anesthetic"
+        },
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Suspected occult fracture, metastatic disease, infection",
+          "target": "No increased uptake",
+          "contraindications": "Pregnancy"
+        },
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Occult malignancy, extent of metastatic disease",
+          "target": "No FDG-avid lesions",
+          "contraindications": "Pregnancy; uncontrolled diabetes"
+        },
+        {
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Identify painful disc level before fusion (controversial)",
+          "target": "Concordant pain reproduction",
+          "contraindications": "Coagulopathy; local infection; allergy"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Methylprednisolone",
+          "route": "IV",
+          "indication": "Severe acute radiculopathy with significant weakness",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "125 mg",
+                "orderSentence": "Methylprednisolone 125 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "125 mg IV once; may give for severe acute radicular symptoms",
+            "orderSentence": "Methylprednisolone 125 mg IV"
+          },
+          "contraindications": "Active infection; uncontrolled diabetes; GI bleeding",
+          "monitoring": "Glucose; BP; GI symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone",
+          "route": "IV/PO",
+          "indication": "Acute severe radiculopathy, disc herniation with inflammation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Dexamethasone 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV once, then 4 mg IV/PO q6h x 3-5 days; taper over 5-7 days",
+            "orderSentence": "Dexamethasone 10 mg IV"
+          },
+          "contraindications": "Active infection; uncontrolled diabetes; GI bleeding",
+          "monitoring": "Glucose; BP; psychiatric effects",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Prednisone",
+          "route": "PO",
+          "indication": "Acute radiculopathy with moderate-severe symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Prednisone 60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "60 mg daily x 5 days then taper; OR Medrol dose pack",
+            "orderSentence": "Prednisone 60 mg PO"
+          },
+          "contraindications": "Active GI bleed; uncontrolled DM; active infection",
+          "monitoring": "Glucose; BP; mood",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ketorolac",
+          "route": "IV/IM",
+          "indication": "Acute pain, anti-inflammatory",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Ketorolac 30 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mg IV/IM q6h; max 5 days; reduce to 15 mg if elderly/renal impairment",
+            "orderSentence": "Ketorolac 30 mg IV"
+          },
+          "contraindications": "CrCl <30; active GI bleed; aspirin allergy; post-CABG",
+          "monitoring": "Renal function; GI bleeding",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Morphine",
+          "route": "IV",
+          "indication": "Severe acute radicular pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-4 mg",
+                "orderSentence": "Morphine 2-4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2-4 mg IV q2-4h PRN severe pain; titrate to effect",
+            "orderSentence": "Morphine 2-4 mg IV"
+          },
+          "contraindications": "Respiratory depression; severe asthma; paralytic ileus",
+          "monitoring": "Respiratory status; sedation; pain scores",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hydromorphone",
+          "route": "IV",
+          "indication": "Severe acute radicular pain (alternative to morphine)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-1 mg",
+                "orderSentence": "Hydromorphone 0.5-1 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5-1 mg IV q2-4h PRN; titrate to effect",
+            "orderSentence": "Hydromorphone 0.5-1 mg IV"
+          },
+          "contraindications": "Respiratory depression; severe asthma; paralytic ileus",
+          "monitoring": "Respiratory status; sedation; pain scores",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Diazepam",
+          "route": "PO/IV",
+          "indication": "Acute muscle spasm",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Diazepam 5 mg PO/IV"
+              }
+            ],
+            "route": "PO/IV",
+            "instructions": "5-10 mg PO/IV q6-8h PRN for muscle spasm; short course (1-2 weeks)",
+            "orderSentence": "Diazepam 5 mg PO/IV"
+          },
+          "contraindications": "Severe respiratory insufficiency; myasthenia gravis; acute narrow-angle glaucoma",
+          "monitoring": "Sedation; respiratory depression; dependence",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments - Pain Management": [
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "Radicular pain, inflammation (first-line OTC)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg",
+                "orderSentence": "Ibuprofen 400 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-800 mg TID with food; max 3200 mg/day; short-term use preferred",
+            "orderSentence": "Ibuprofen 400 mg PO"
+          },
+          "contraindications": "CrCl <30; active GI bleed; aspirin allergy; third trimester pregnancy",
+          "monitoring": "GI symptoms; renal function with prolonged use",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Naproxen",
+          "route": "PO",
+          "indication": "Radicular pain, inflammation (longer duration)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Naproxen 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "250-500 mg BID with food; max 1500 mg/day",
+            "orderSentence": "Naproxen 250 mg PO"
+          },
+          "contraindications": "CrCl <30; active GI bleed; aspirin allergy; third trimester pregnancy",
+          "monitoring": "GI symptoms; renal function with prolonged use",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Meloxicam",
+          "route": "PO",
+          "indication": "Radicular pain (once daily dosing)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "7.5 mg",
+                "orderSentence": "Meloxicam 7.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "7.5-15 mg daily; max 15 mg/day",
+            "orderSentence": "Meloxicam 7.5 mg PO"
+          },
+          "contraindications": "CrCl <30; active GI bleed; aspirin allergy",
+          "monitoring": "GI symptoms; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Celecoxib",
+          "route": "PO",
+          "indication": "Radicular pain (GI-sparing COX-2)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Celecoxib 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100-200 mg BID; max 400 mg/day",
+            "orderSentence": "Celecoxib 100 mg PO"
+          },
+          "contraindications": "Sulfonamide allergy; CAD/CVD (increased CV risk); CrCl <30",
+          "monitoring": "CV events; GI symptoms; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Mild-moderate pain (adjunct, avoid hepatotoxicity)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650 mg",
+                "orderSentence": "Acetaminophen 650 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg q6h; max 3000 mg/day (2000 mg/day if liver disease)",
+            "orderSentence": "Acetaminophen 650 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; chronic alcohol use",
+          "monitoring": "LFTs with prolonged use",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic/radicular pain (first-line for radiculopathy)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; increase by 300 mg q1-3d; target 900-1800 mg TID; max 3600 mg/day",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust: CrCl 30-59 max 1400 mg/day; CrCl 15-29 max 600 mg/day; CrCl <15 max 300 mg/day)",
+          "monitoring": "Sedation; dizziness; edema; taper to discontinue",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic/radicular pain (first-line alternative)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID (600 mg/day)",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust per CrCl); Class V controlled",
+          "monitoring": "Sedation; weight gain; edema; dizziness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Neuropathic/radicular pain with depression/anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg PO"
+          },
+          "contraindications": "Hepatic impairment; CrCl <30; MAOIs; narrow-angle glaucoma",
+          "monitoring": "Nausea; BP; discontinuation syndrome (taper over 2+ weeks)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cyclobenzaprine",
+          "route": "PO",
+          "indication": "Muscle spasm (short-term)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Cyclobenzaprine 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5-10 mg TID; max 30 mg/day; limit to 2-3 weeks",
+            "orderSentence": "Cyclobenzaprine 5 mg PO"
+          },
+          "contraindications": "Arrhythmia; heart failure; MAOIs within 14 days; hyperthyroidism",
+          "monitoring": "Sedation; anticholinergic effects; dry mouth",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tizanidine",
+          "route": "PO",
+          "indication": "Muscle spasm (alternative to cyclobenzaprine)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg TID; increase by 2-4 mg q6-8h; max 36 mg/day in divided doses",
+            "orderSentence": "Tizanidine 2 mg PO"
+          },
+          "contraindications": "Concurrent ciprofloxacin or fluvoxamine (CYP1A2 inhibitors); hepatic impairment",
+          "monitoring": "LFTs at baseline, 1, 3, 6 months; sedation; hypotension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methocarbamol",
+          "route": "PO",
+          "indication": "Muscle spasm (less sedating)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1500 mg",
+                "orderSentence": "Methocarbamol 1500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1500 mg QID x 2-3 days, then 750 mg QID or 1500 mg TID",
+            "orderSentence": "Methocarbamol 1500 mg PO"
+          },
+          "contraindications": "Renal impairment (use caution); myasthenia gravis",
+          "monitoring": "Sedation; dizziness (less than other relaxants)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Muscle spasm (if other relaxants fail)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; increase by 5 mg/dose q3d; max 80 mg/day",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Withdrawal risk if stopped abruptly; renal impairment",
+          "monitoring": "Sedation; weakness; must taper to discontinue (seizure risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lidocaine patch 5%",
+          "route": "TOP",
+          "indication": "Localized radicular pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-3 patches",
+                "orderSentence": "Lidocaine patch 5% 1-3 patches TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Apply 1-3 patches to affected area for 12h on, 12h off",
+            "orderSentence": "Lidocaine patch 5% 1-3 patches TOP"
+          },
+          "contraindications": "Severe hepatic impairment; broken skin",
+          "monitoring": "Minimal systemic absorption; local skin irritation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Capsaicin cream 0.075%",
+          "route": "TOP",
+          "indication": "Localized radicular pain (adjunct)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Apply thin layer",
+                "orderSentence": "Capsaicin cream 0.075% Apply thin layer TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Apply TID-QID to affected area; takes 2-4 weeks for effect",
+            "orderSentence": "Capsaicin cream 0.075% Apply thin layer TOP"
+          },
+          "contraindications": "Open wounds; avoid eyes/mucous membranes",
+          "monitoring": "Initial burning (decreases with use); wash hands after",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "Neuropathic pain (second-line, helps sleep)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Amitriptyline 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS",
+            "orderSentence": "Amitriptyline 10 mg PO"
+          },
+          "contraindications": "Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly",
+          "monitoring": "ECG if dose >100 mg/day; anticholinergic effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nortriptyline",
+          "route": "PO",
+          "indication": "Neuropathic pain (second-line, less sedating than amitriptyline)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Nortriptyline 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS",
+            "orderSentence": "Nortriptyline 10 mg PO"
+          },
+          "contraindications": "Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly",
+          "monitoring": "ECG if dose >100 mg/day; fewer anticholinergic effects than amitriptyline",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Tramadol",
+          "route": "PO",
+          "indication": "Moderate radicular pain not controlled by NSAIDs/gabapentinoids",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Tramadol 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg q6h PRN; may use ER 100 mg daily; max 400 mg/day",
+            "orderSentence": "Tramadol 50 mg PO"
+          },
+          "contraindications": "Seizure disorder; MAOIs; SSRIs (serotonin syndrome); severe renal/hepatic impairment",
+          "monitoring": "Serotonin syndrome; seizures; dependence (Schedule IV)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxycodone",
+          "route": "PO",
+          "indication": "Moderate-severe radicular pain (short-term)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Oxycodone 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5-10 mg PO q4-6h PRN; for short-term use only",
+            "orderSentence": "Oxycodone 5 mg PO"
+          },
+          "contraindications": "Respiratory depression; paralytic ileus; MAOIs",
+          "monitoring": "Sedation; constipation; respiratory status; dependence (Schedule II)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxycodone/Acetaminophen",
+          "route": "PO",
+          "indication": "Moderate-severe radicular pain (short-term)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5/325 mg",
+                "orderSentence": "Oxycodone/Acetaminophen 5/325 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5-10/325 mg q4-6h PRN; max acetaminophen 3000 mg/day",
+            "orderSentence": "Oxycodone/Acetaminophen 5/325 mg PO"
+          },
+          "contraindications": "Respiratory depression; hepatic impairment; paralytic ileus",
+          "monitoring": "Sedation; respiratory status; LFTs; total acetaminophen intake",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Epidural steroid injection (ESI)",
+          "route": "Fluoroscopic",
+          "indication": "Radicular pain refractory to conservative treatment x 4-6 weeks",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Epidural steroid injection (ESI) Per protocol Fluoroscopic"
+              }
+            ],
+            "route": "Fluoroscopic",
+            "instructions": "Transforaminal or interlaminar approach; up to 3 injections per year",
+            "orderSentence": "Epidural steroid injection (ESI) Per protocol Fluoroscopic"
+          },
+          "contraindications": "Coagulopathy (INR >1.5, plt <100k); infection at site; allergy to contrast/steroids",
+          "monitoring": "Post-procedure neuro exam; glucose (diabetics); headache",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Transforaminal ESI (TFESI)",
+          "route": "Fluoroscopic",
+          "indication": "Unilateral radicular symptoms, foraminal stenosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Transforaminal ESI (TFESI) Per protocol Fluoroscopic"
+              }
+            ],
+            "route": "Fluoroscopic",
+            "instructions": "More selective nerve root coverage than interlaminar; up to 3 per year",
+            "orderSentence": "Transforaminal ESI (TFESI) Per protocol Fluoroscopic"
+          },
+          "contraindications": "Coagulopathy; infection; severe foraminal stenosis",
+          "monitoring": "Post-procedure neuro check; glucose monitoring",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Medial branch blocks",
+          "route": "Fluoroscopic",
+          "indication": "Facet-mediated pain component",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Medial branch blocks Per protocol Fluoroscopic"
+              }
+            ],
+            "route": "Fluoroscopic",
+            "instructions": "Diagnostic blocks before radiofrequency ablation consideration",
+            "orderSentence": "Medial branch blocks Per protocol Fluoroscopic"
+          },
+          "contraindications": "Coagulopathy; infection at site",
+          "monitoring": "Pain response documentation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Radiofrequency ablation (RFA)",
+          "route": "Fluoroscopic",
+          "indication": "Facet-mediated pain with positive diagnostic blocks",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Radiofrequency ablation (RFA) Per protocol Fluoroscopic"
+              }
+            ],
+            "route": "Fluoroscopic",
+            "instructions": "If >50% relief from diagnostic medial branch blocks x 2",
+            "orderSentence": "Radiofrequency ablation (RFA) Per protocol Fluoroscopic"
+          },
+          "contraindications": "Coagulopathy; infection; pacemaker (relative)",
+          "monitoring": "Neurologic exam post-procedure; pain scores",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Surgical Treatments (Specialist Decision)": [
+        {
+          "item": "Microdiscectomy",
+          "route": "Surgical",
+          "indication": "Herniated disc with refractory radiculopathy >6 weeks or progressive motor deficit",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Microdiscectomy N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Standard of care for single-level disc herniation with radiculopathy",
+            "orderSentence": "Microdiscectomy N/A Surgical"
+          },
+          "pretreatment": "MRI confirmation; failed conservative therapy (unless emergent); medical clearance",
+          "contraindications": "Active infection; uncorrectable coagulopathy",
+          "monitoring": "Post-op neuro checks; wound monitoring; pain control",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anterior cervical discectomy and fusion (ACDF)",
+          "route": "Surgical",
+          "indication": "Cervical disc herniation with radiculopathy, cervical spondylosis with radiculopathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Anterior cervical discectomy and fusion (ACDF) N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Most common cervical spine procedure for radiculopathy",
+            "orderSentence": "Anterior cervical discectomy and fusion (ACDF) N/A Surgical"
+          },
+          "pretreatment": "MRI confirmation; medical clearance; discussion of fusion alternatives",
+          "contraindications": "Active infection; severe osteoporosis (relative); uncorrectable coagulopathy",
+          "monitoring": "Swallowing assessment; airway monitoring; neuro checks",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cervical disc arthroplasty",
+          "route": "Surgical",
+          "indication": "Single-level cervical disc herniation (alternative to ACDF)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Cervical disc arthroplasty N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Motion-preserving alternative to fusion at appropriate levels (C3-7)",
+            "orderSentence": "Cervical disc arthroplasty N/A Surgical"
+          },
+          "pretreatment": "MRI confirmation; intact facet joints; no significant instability",
+          "contraindications": "Instability; facet arthropathy; osteoporosis; infection",
+          "monitoring": "Post-op neuro checks; wound monitoring",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Posterior cervical foraminotomy",
+          "route": "Surgical",
+          "indication": "Lateral/foraminal cervical disc herniation or foraminal stenosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Posterior cervical foraminotomy N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Motion-preserving option for lateral pathology",
+            "orderSentence": "Posterior cervical foraminotomy N/A Surgical"
+          },
+          "pretreatment": "MRI confirmation; lateral/foraminal pathology",
+          "contraindications": "Central disc herniation; instability",
+          "monitoring": "Post-op neuro checks; wound monitoring",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lumbar laminectomy/laminotomy",
+          "route": "Surgical",
+          "indication": "Lumbar stenosis with radiculopathy, large central disc",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Lumbar laminectomy/laminotomy N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Decompression for stenosis or central disc",
+            "orderSentence": "Lumbar laminectomy/laminotomy N/A Surgical"
+          },
+          "pretreatment": "MRI confirmation; failed conservative therapy",
+          "contraindications": "Active infection; uncorrectable coagulopathy",
+          "monitoring": "Post-op neuro checks; wound; urinary retention",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lumbar fusion (TLIF, PLIF, ALIF)",
+          "route": "Surgical",
+          "indication": "Radiculopathy with instability, spondylolisthesis, recurrent disc herniation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Lumbar fusion (TLIF, PLIF, ALIF) N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Reserved for instability or recurrent pathology",
+            "orderSentence": "Lumbar fusion (TLIF, PLIF, ALIF) N/A Surgical"
+          },
+          "pretreatment": "MRI/CT confirmation; bone density evaluation; medical clearance",
+          "contraindications": "Active infection; severe osteoporosis (relative); uncorrectable coagulopathy",
+          "monitoring": "Post-op neuro checks; hardware position; fusion assessment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Emergent decompression",
+          "route": "Surgical",
+          "indication": "Cauda equina syndrome (within 48h), severe/progressive motor deficit",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Emergent decompression N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Within 24-48h of symptom onset for best outcomes",
+            "orderSentence": "Emergent decompression N/A Surgical"
+          },
+          "pretreatment": "STAT MRI confirming compression",
+          "contraindications": "None absolute if true CES",
+          "monitoring": "Bladder function; motor recovery; wound",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Spine surgery (neurosurgery or orthopedic spine) consult STAT for cauda equina syndrome, progressive motor deficit, or myelopathic signs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Spine surgery consult URGENT for significant weakness (<4/5) or radiculopathy refractory to 6+ weeks conservative treatment",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for core strengthening, McKenzie exercises, nerve gliding, and posture training",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management/Interventional spine for epidural steroid injections if conservative treatment fails after 4-6 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PM&R (Physical Medicine & Rehabilitation) for comprehensive spine rehabilitation program",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EMG/NCS referral to confirm radiculopathy level and exclude peripheral neuropathy or plexopathy (optimal timing 3-4 weeks after symptom onset)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oncology consult for suspected spinal metastases or pathologic fracture",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Infectious disease consult for suspected epidural abscess, discitis, or vertebral osteomyelitis",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Rheumatology for suspected inflammatory spondyloarthropathy (ankylosing spondylitis, psoriatic arthritis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ergonomic assessment, workplace modifications, and ADL training",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychology/Pain psychology for chronic pain management, CBT for pain, catastrophizing assessment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology for atypical presentation, polyradiculopathy, or suspected inflammatory/infectious etiology",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Social work for disability assistance, return-to-work planning, and insurance navigation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED IMMEDIATELY if bladder or bowel incontinence, inability to urinate, saddle area numbness, or bilateral leg weakness (may indicate cauda equina syndrome)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT"
+        },
+        {
+          "item": "Return to ED if fever develops with back/neck pain (may indicate infection)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT"
+        },
+        {
+          "item": "Return if weakness is progressing or you are unable to lift foot/hand (progressive motor deficit requires urgent evaluation)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT"
+        },
+        {
+          "item": "Most radiculopathy improves with conservative treatment over 4-6 weeks; surgery is rarely needed",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stay active within pain limits; prolonged bed rest (>1-2 days) is not recommended and may delay recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Apply ice for first 48-72 hours (20 min on/off), then switch to heat for muscle relaxation",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid heavy lifting, twisting, and prolonged sitting; use proper body mechanics",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Sleep with pillow between knees (side) or under knees (back) to reduce spine stress",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "For cervical radiculopathy: avoid prolonged neck flexion (looking down at phone); use cervical pillow",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not stop gabapentin/pregabalin abruptly - taper under medical guidance to avoid withdrawal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Neuropathic pain medications (gabapentin, pregabalin) take 2-4 weeks to reach full effect",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Physical therapy exercises should be continued daily at home for best outcomes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not drive while taking opioids or sedating muscle relaxants",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow up with primary care or neurology in 2-4 weeks to assess treatment response",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Smoking cessation to improve disc nutrition and surgical outcomes (smoking accelerates disc degeneration)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Weight loss if BMI >25 to reduce spinal load and improve symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Core strengthening exercises to support spine (plank, bird-dog, bridges)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Proper lifting technique: bend at knees, keep load close, avoid twisting",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Ergonomic workstation setup: monitor at eye level, lumbar support, feet flat",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take breaks every 30-60 minutes if seated for prolonged periods",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain good posture: shoulders back, chin tucked, avoid forward head position",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular low-impact exercise (walking, swimming, stationary bike) to maintain fitness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid high-impact activities (running, jumping) during acute phase",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Yoga or Pilates (modified) for flexibility and core strength after acute phase resolves",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Use supportive mattress; avoid sleeping on stomach",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Manage stress as tension can worsen muscle spasm and pain perception",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Glycemic control if diabetic (HbA1c <7%) to reduce neuropathic component and improve surgical outcomes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Peripheral neuropathy",
+      "features": "Stocking-glove distribution, bilateral, length-dependent, not dermatomal",
+      "tests": "NCS/EMG shows polyneuropathy; HbA1c; B12; no imaging abnormality"
+    },
+    {
+      "diagnosis": "Lumbar spinal stenosis (neurogenic claudication)",
+      "features": "Bilateral leg symptoms, worse with walking/standing, better with sitting/flexion, older patients",
+      "tests": "MRI shows central stenosis; symptoms bilateral; walking tolerance limited"
+    },
+    {
+      "diagnosis": "Piriformis syndrome",
+      "features": "Buttock pain radiating to posterior thigh, negative straight leg raise, tenderness at piriformis",
+      "tests": "MRI spine normal; tenderness at piriformis; FAIR test positive"
+    },
+    {
+      "diagnosis": "Hip pathology (OA, AVN, labral tear)",
+      "features": "Groin pain, limited hip ROM, pain with hip flexion/rotation, normal spine exam",
+      "tests": "Hip X-ray/MRI; pain reproduced with hip exam, not spine"
+    },
+    {
+      "diagnosis": "Sacroiliac joint dysfunction",
+      "features": "Low back/buttock pain, positive SI joint provocative tests, pain at PSIS",
+      "tests": "SI joint injection diagnostic; MRI may show SI joint changes"
+    },
+    {
+      "diagnosis": "Greater trochanteric bursitis",
+      "features": "Lateral hip pain, tender at greater trochanter, pain with side-lying",
+      "tests": "Normal spine MRI; tenderness localized to trochanter"
+    },
+    {
+      "diagnosis": "Diabetic amyotrophy (lumbosacral plexopathy)",
+      "features": "Acute/subacute proximal thigh weakness and pain, weight loss, often bilateral sequential",
+      "tests": "EMG shows plexopathy; MRI lumbosacral plexus may show enhancement"
+    },
+    {
+      "diagnosis": "Meralgia paresthetica",
+      "features": "Lateral thigh numbness/burning only (L2-L3 distribution), no weakness",
+      "tests": "Normal EMG; may have abnormal lateral femoral cutaneous nerve conduction"
+    },
+    {
+      "diagnosis": "Herpes zoster (shingles)",
+      "features": "Dermatomal pain followed by vesicular rash, older/immunocompromised",
+      "tests": "Clinical diagnosis; vesicular rash in dermatomal pattern"
+    },
+    {
+      "diagnosis": "Vascular claudication",
+      "features": "Calf pain with walking, relieved by rest (not position), diminished pulses",
+      "tests": "ABI <0.9; Doppler shows arterial disease; spine MRI normal"
+    },
+    {
+      "diagnosis": "Cauda equina syndrome",
+      "features": "Saddle anesthesia, bladder/bowel dysfunction, bilateral leg weakness/numbness",
+      "tests": "STAT MRI shows large central disc or mass compressing cauda equina"
+    },
+    {
+      "diagnosis": "Spinal cord tumor (intra/extramedullary)",
+      "features": "Progressive symptoms, night pain, myelopathic signs, weight loss",
+      "tests": "MRI with contrast shows enhancing mass"
+    },
+    {
+      "diagnosis": "Epidural abscess",
+      "features": "Fever, severe localized back pain, rapid progression, risk factors (IVDU, diabetes)",
+      "tests": "MRI with contrast shows rim-enhancing collection; elevated WBC, ESR, CRP"
+    },
+    {
+      "diagnosis": "Vertebral metastases",
+      "features": "History of cancer, night pain, weight loss, multiple levels",
+      "tests": "MRI shows destructive lesions; bone scan; tumor markers; biopsy"
+    },
+    {
+      "diagnosis": "Ankylosing spondylitis",
+      "features": "Young male, morning stiffness >30 min, improves with activity, sacroiliitis",
+      "tests": "HLA-B27; MRI shows sacroiliitis; ESR elevated"
+    },
+    {
+      "diagnosis": "Spinal epidural hematoma",
+      "features": "Post-procedure or anticoagulation, acute severe pain, rapid neuro decline",
+      "tests": "STAT MRI shows epidural collection; coags abnormal"
+    },
+    {
+      "diagnosis": "Arachnoiditis",
+      "features": "Prior spine surgery or infection, diffuse radicular symptoms, clumped nerve roots",
+      "tests": "MRI shows clumped/adherent nerve roots in thecal sac"
+    },
+    {
+      "diagnosis": "Tarlov (perineural) cyst",
+      "features": "Incidental finding on MRI, may cause radicular symptoms if large",
+      "tests": "MRI shows sacral cyst; often asymptomatic"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "MRI is imaging modality of choice for suspected radiculopathy",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Boden SD et al. J Bone Joint Surg Am 1990](https://pubmed.ncbi.nlm.nih.gov/2312537/)"
+    },
+    {
+      "recommendation": "Most cervical and lumbar radiculopathy improves with conservative treatment",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Saal JA et al. Spine 1996](https://pubmed.ncbi.nlm.nih.gov/8961451/)"
+    },
+    {
+      "recommendation": "NSAIDs effective for acute radiculopathy pain",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Roelofs PD et al. Cochrane 2008](https://pubmed.ncbi.nlm.nih.gov/18253976/)"
+    },
+    {
+      "recommendation": "Gabapentin/pregabalin effective for radicular neuropathic pain",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Finnerup NB et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25575710/)"
+    },
+    {
+      "recommendation": "Oral steroids provide short-term benefit for lumbar radiculopathy",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Goldberg H et al. JAMA 2015](https://pubmed.ncbi.nlm.nih.gov/26151393/)"
+    },
+    {
+      "recommendation": "Epidural steroid injections provide short-term pain relief for lumbar radiculopathy",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Manchikanti L et al. Pain Physician 2021](https://pubmed.ncbi.nlm.nih.gov/33400438/)"
+    },
+    {
+      "recommendation": "EMG/NCS useful for confirming radiculopathy and excluding mimics after 3-4 weeks",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[AANEM Practice Parameter 2010](https://pubmed.ncbi.nlm.nih.gov/20645032/)"
+    },
+    {
+      "recommendation": "Surgery superior to conservative treatment for severe lumbar radiculopathy at 1 year",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[SPORT Trial: Weinstein JN et al. JAMA 2006](https://pubmed.ncbi.nlm.nih.gov/17105757/)"
+    },
+    {
+      "recommendation": "Cauda equina syndrome requires decompression within 48 hours for best outcomes",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Ahn UM et al. Spine 2000](https://pubmed.ncbi.nlm.nih.gov/10751293/)"
+    },
+    {
+      "recommendation": "Physical therapy effective for cervical and lumbar radiculopathy",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Kuijper B et al. BMJ 2009](https://pubmed.ncbi.nlm.nih.gov/19818915/)"
+    },
+    {
+      "recommendation": "Smoking cessation improves spine health and surgical outcomes",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Battie MC et al. Spine 1991](https://pubmed.ncbi.nlm.nih.gov/1836285/)"
+    },
+    {
+      "recommendation": "Short-term muscle relaxants may help acute radiculopathy with spasm",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Chou R et al. Cochrane 2003](https://pubmed.ncbi.nlm.nih.gov/14973984/)"
+    },
+    {
+      "recommendation": "ACDF effective for cervical radiculopathy refractory to conservative treatment",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Herkowitz HN et al. Spine 1990](https://pubmed.ncbi.nlm.nih.gov/2353855/)"
+    },
+    {
+      "recommendation": "Microdiscectomy effective for lumbar disc herniation with radiculopathy",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Peul WC et al. NEJM 2007](https://pubmed.ncbi.nlm.nih.gov/17538085/)"
+    },
+    {
+      "recommendation": "Duloxetine effective for chronic musculoskeletal pain including radiculopathy",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Skljarevski V et al. J Pain 2010](https://pubmed.ncbi.nlm.nih.gov/20338815/)"
+    },
+    {
+      "recommendation": "Red flags warrant urgent imaging and evaluation for serious pathology",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Chou R et al. Ann Intern Med 2007](https://pubmed.ncbi.nlm.nih.gov/17909209/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Pain scores (0-10 NRS)",
+      "frequency": "Each visit",
+      "action": "Escalate therapy; consider interventional/surgical referral",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Motor strength (MRC grading)",
+      "frequency": "Each visit; more frequent if weakness present",
+      "action": "Progressive weakness: urgent spine surgery consult; imaging",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Sensory exam (dermatomal)",
+      "frequency": "Each visit",
+      "action": "Document progression; correlate with imaging",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Deep tendon reflexes",
+      "frequency": "Each visit",
+      "action": "Hyperreflexia suggests myelopathy: MRI cervical spine",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Bladder function",
+      "frequency": "Each visit; more frequent if any symptoms",
+      "action": "Retention or incontinence: STAT catheterization, STAT MRI, emergent surgery consult",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Straight leg raise (lumbar) / Spurling test (cervical)",
+      "frequency": "Each visit",
+      "action": "Positive with worsening: consider imaging if not done",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Gait assessment",
+      "frequency": "Each visit",
+      "action": "Foot drop: EMG, surgical consult; ataxia: cervical MRI for myelopathy",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Functional status (ODI, NDI)",
+      "frequency": "Baseline, 6 weeks, 3 months, 6 months",
+      "action": "Not improving: reassess treatment strategy; consider surgery",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (if on NSAIDs >2 weeks)",
+      "frequency": "Baseline, then q3 months",
+      "action": "Decline: discontinue NSAIDs; switch to acetaminophen/other",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Glucose (if on steroids)",
+      "frequency": "Daily if inpatient; before/after ESI",
+      "action": "Adjust diabetes medications; short steroid courses",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "No red flags present; pain controlled with oral medications; able to ambulate; normal bladder function; motor strength >=4/5 and stable; reliable follow-up arranged within 2-4 weeks"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Severe pain requiring IV analgesia; significant motor weakness (<=3/5) requiring close monitoring; need for IV antibiotics (suspected infection); inability to ambulate safely; need for urgent MRI not available as outpatient"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Rapidly progressive motor deficit requiring emergent surgery; hemodynamic instability from sepsis (spinal infection); airway compromise (high cervical pathology); post-operative monitoring for complex spine surgery"
+    },
+    {
+      "disposition": "Emergent surgery consult",
+      "criteria": "Cauda equina syndrome (bladder dysfunction, saddle anesthesia, bilateral weakness); progressive motor deficit despite steroids; epidural abscess with neurologic deficit"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Spine surgery not available; MRI not available for emergent imaging; interventional spine services not available for ESI when indicated"
+    }
+  ]
+}

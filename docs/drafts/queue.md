@@ -22,23 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| ALS | [`als.md`](als.md) | `completed` | Claude | 2026-01-30 |
-| Alzheimer's Disease | [`alzheimers-disease.md`](alzheimers-disease.md) | `completed` | Claude | 2026-01-30 |
-| Carpal Tunnel Syndrome | [`carpal-tunnel-syndrome.md`](carpal-tunnel-syndrome.md) | `completed` | Claude | 2026-01-30 |
-| Dystonia | [`dystonia.md`](dystonia.md) | `completed` | Claude | 2026-01-30 |
-| Frontotemporal Dementia | [`frontotemporal-dementia.md`](frontotemporal-dementia.md) | `completed` | Claude | 2026-01-30 |
-| Huntington's Disease | [`huntingtons-disease.md`](huntingtons-disease.md) | `completed` | Claude | 2026-01-30 |
-| Lewy Body Dementia | [`lewy-body-dementia.md`](lewy-body-dementia.md) | `completed` | Claude | 2026-01-30 |
-| Migraine with Aura | [`migraine-with-aura.md`](migraine-with-aura.md) | `completed` | Claude | 2026-01-30 |
-| Mild Cognitive Impairment | [`mild-cognitive-impairment.md`](mild-cognitive-impairment.md) | `completed` | Claude | 2026-01-30 |
-| Myasthenia Gravis - Outpatient | [`myasthenia-gravis.md`](myasthenia-gravis.md) | `completed` | Claude | 2026-01-30 |
-| Normal Pressure Hydrocephalus | [`normal-pressure-hydrocephalus.md`](normal-pressure-hydrocephalus.md) | `completed` | Claude | 2026-01-30 |
-| Optic Neuritis | [`optic-neuritis.md`](optic-neuritis.md) | `completed` | Claude | 2026-01-30 |
-| Radiculopathy | [`radiculopathy.md`](radiculopathy.md) | `completed` | Claude | 2026-01-30 |
-| Small Fiber Neuropathy | [`small-fiber-neuropathy.md`](small-fiber-neuropathy.md) | `completed` | Claude | 2026-01-30 |
-| Tardive Dyskinesia | [`tardive-dyskinesia.md`](tardive-dyskinesia.md) | `completed` | Claude | 2026-01-30 |
-| Tension Headache | [`tension-headache.md`](tension-headache.md) | `completed` | Claude | 2026-01-30 |
-| Vascular Dementia | [`vascular-dementia.md`](vascular-dementia.md) | `completed` | Claude | 2026-01-30 |
+| *(empty)* | — | — | — | — |
 
 ---
 
@@ -87,6 +71,23 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 39 | Trigeminal Neuralgia | [`trigeminal-neuralgia.md`](../plans/trigeminal-neuralgia.md) | 2026-01-27 | 90%+ |
 | 40 | Vertigo/Dizziness Evaluation | [`vertigo-dizziness-evaluation.md`](../plans/vertigo-dizziness-evaluation.md) | 2026-01-27 | 90%+ |
 | 41 | Wernicke Encephalopathy | [`wernicke-encephalopathy.md`](../plans/wernicke-encephalopathy.md) | 2026-01-27 | 90%+ |
+| 42 | ALS | [`als.md`](../plans/als.md) | 2026-01-30 | 90%+ |
+| 43 | Alzheimer's Disease | [`alzheimers-disease.md`](../plans/alzheimers-disease.md) | 2026-01-30 | 90%+ |
+| 44 | Carpal Tunnel Syndrome | [`carpal-tunnel-syndrome.md`](../plans/carpal-tunnel-syndrome.md) | 2026-01-30 | 90%+ |
+| 45 | Dystonia | [`dystonia.md`](../plans/dystonia.md) | 2026-01-30 | 90%+ |
+| 46 | Frontotemporal Dementia | [`frontotemporal-dementia.md`](../plans/frontotemporal-dementia.md) | 2026-01-30 | 90%+ |
+| 47 | Huntington's Disease | [`huntingtons-disease.md`](../plans/huntingtons-disease.md) | 2026-01-30 | 90%+ |
+| 48 | Lewy Body Dementia | [`lewy-body-dementia.md`](../plans/lewy-body-dementia.md) | 2026-01-30 | 90%+ |
+| 49 | Migraine with Aura | [`migraine-with-aura.md`](../plans/migraine-with-aura.md) | 2026-01-30 | 90%+ |
+| 50 | Mild Cognitive Impairment | [`mild-cognitive-impairment.md`](../plans/mild-cognitive-impairment.md) | 2026-01-30 | 90%+ |
+| 51 | Myasthenia Gravis - Outpatient | [`myasthenia-gravis.md`](../plans/myasthenia-gravis.md) | 2026-01-30 | 90%+ |
+| 52 | Normal Pressure Hydrocephalus | [`normal-pressure-hydrocephalus.md`](../plans/normal-pressure-hydrocephalus.md) | 2026-01-30 | 90%+ |
+| 53 | Optic Neuritis | [`optic-neuritis.md`](../plans/optic-neuritis.md) | 2026-01-30 | 90%+ |
+| 54 | Radiculopathy | [`radiculopathy.md`](../plans/radiculopathy.md) | 2026-01-30 | 90%+ |
+| 55 | Small Fiber Neuropathy | [`small-fiber-neuropathy.md`](../plans/small-fiber-neuropathy.md) | 2026-01-30 | 90%+ |
+| 56 | Tardive Dyskinesia | [`tardive-dyskinesia.md`](../plans/tardive-dyskinesia.md) | 2026-01-30 | 90%+ |
+| 57 | Tension-Type Headache | [`tension-headache.md`](../plans/tension-headache.md) | 2026-01-30 | 90%+ |
+| 58 | Vascular Dementia | [`vascular-dementia.md`](../plans/vascular-dementia.md) | 2026-01-30 | 90%+ |
 
 ---
 
@@ -102,7 +103,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 - **TIA** and **Transient Ischemic Attack** both exist in `docs/plans/` — may be duplicates with different naming conventions.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
-- **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (pending).
+- **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
 - Queue updated 2026-01-29 to reconcile with actual repo contents. Many plans were added via batch commits and bypassed the queue workflow.
 
 ---

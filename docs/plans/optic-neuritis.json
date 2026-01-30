@@ -1,0 +1,1116 @@
+{
+  "id": "optic-neuritis",
+  "title": "Optic Neuritis",
+  "version": "1.1",
+  "icd10": [
+    "** H46.9 (Optic neuritis",
+    "unspecified)",
+    "H46.00 (Optic papillitis",
+    "unspecified eye)",
+    "H46.10 (Retrobulbar neuritis",
+    "unspecified eye)",
+    "G36.0 (Neuromyelitis optica - if NMOSD confirmed)",
+    "H46.8 (Other optic neuritis)"
+  ],
+  "scope": "** Acute evaluation and management of optic neuritis in adults. Covers typical demyelinating optic neuritis, atypical features requiring expanded workup, MS risk stratification, ONTT-based treatment, and NMO/MOG antibody evaluation. For established MS with optic neuritis as a relapse, can also use \"MS - Exacerbation\" template.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Infection screen, baseline before steroids",
+          "target": "Normal"
+        },
+        {
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Metabolic screen, renal function for contrast",
+          "target": "Normal"
+        },
+        {
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory/vasculitis screen; elevated in GCA",
+          "target": "Normal (<20 mm/hr); elevated in GCA"
+        },
+        {
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory marker",
+          "target": "Normal"
+        },
+        {
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Pre-steroid baseline",
+          "target": "Normal"
+        },
+        {
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "UTI screen before steroids",
+          "target": "Negative"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Combined NMO/MOGAD screen; critical for atypical cases",
+          "target": "Both negative"
+        },
+        {
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lupus/connective tissue disease",
+          "target": "Negative or low titer"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid eye disease (Graves ophthalmopathy)",
+          "target": "Normal"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Nutritional optic neuropathy",
+          "target": "Normal (>300 pg/mL)"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Nutritional optic neuropathy",
+          "target": "Normal"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis",
+          "target": "Negative"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated optic neuropathy",
+          "target": "Negative"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosarcoidosis",
+          "target": "Normal"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Endemic areas; Lyme optic neuropathy",
+          "target": "Negative"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Glycemic status before steroids",
+          "target": "<5.7%"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If ANA positive; SLE screen",
+          "target": "Negative"
+        },
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Sjogren syndrome",
+          "target": "Negative"
+        },
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "CNS/orbital vasculitis",
+          "target": "Negative"
+        },
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraproteinemic optic neuropathy",
+          "target": "No M-spike"
+        },
+        {
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Leber hereditary optic neuropathy (LHON)",
+          "target": "Normal"
+        },
+        {
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Wilson disease",
+          "target": "Normal"
+        },
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraneoplastic optic neuropathy",
+          "target": "Negative"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rule out elevated ICP (papilledema mimics)",
+          "target": "10-20 cm H2O"
+        },
+        {
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammation, rule out infection",
+          "target": "WBC <50 (mild pleocytosis acceptable); RBC 0"
+        },
+        {
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Elevated in inflammation",
+          "target": "Normal to mildly elevated (<100 mg/dL)"
+        },
+        {
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Low in infection",
+          "target": "Normal (>60% serum)"
+        },
+        {
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rule out infection",
+          "target": "No organisms"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Intrathecal IgG synthesis (supports MS)",
+          "target": ">=2 CSF-specific bands (not in serum)"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Intrathecal antibody synthesis",
+          "target": ">0.7 = elevated"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rule out malignancy",
+          "target": "Negative"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within 24-48h",
+          "target": "Optic nerve enhancement, swelling; enhancement >50% nerve length suggests atypical/NMOSD",
+          "contraindications": "GFR <30, gadolinium allergy"
+        },
+        {
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "With orbit MRI",
+          "target": "Demyelinating lesions (periventricular, juxtacortical, infratentorial); determines MS risk",
+          "contraindications": "GFR <30, gadolinium allergy"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within 1 week if MS suspected",
+          "target": "Cord lesions supporting MS diagnosis",
+          "contraindications": "GFR <30, gadolinium allergy"
+        }
+      ],
+      "Extended": [
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "During workup",
+          "target": "Prolonged P100 latency (confirms optic nerve dysfunction)",
+          "contraindications": "None significant"
+        },
+        {
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Baseline and at 3-6 months",
+          "target": "RNFL thickening acutely; thinning at follow-up indicates axonal loss",
+          "contraindications": "None significant"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At presentation and follow-up",
+          "target": "Central/cecocentral scotoma typical; document baseline",
+          "contraindications": "Patient cooperation required"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If sarcoidosis suspected",
+          "target": "Hilar lymphadenopathy",
+          "contraindications": "Contrast allergy"
+        },
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If malignancy/paraneoplastic suspected",
+          "target": "FDG-avid lesions",
+          "contraindications": "Pregnancy, uncontrolled diabetes"
+        },
+        {
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "Only if MRI unavailable/contraindicated",
+          "target": "Optic nerve enlargement, orbital mass",
+          "contraindications": "Contrast allergy"
+        },
+        {
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If retinal/vascular pathology suspected",
+          "target": "Disc leakage, vascular abnormality",
+          "contraindications": "Dye allergy"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Methylprednisolone",
+          "route": "IV",
+          "indication": "Acute optic neuritis - accelerates visual recovery per ONTT",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily for 3 days; infuse over 1-2 hours; followed by oral prednisone taper",
+            "orderSentence": "Methylprednisolone 1000 mg IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; active psychosis; severe hypertension",
+          "monitoring": "Glucose q6h (target <180); BP; mood; sleep; I/O",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Prednisone oral taper",
+          "route": "PO",
+          "indication": "Following IV methylprednisolone per ONTT protocol",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg/kg",
+                "orderSentence": "Prednisone oral taper 1 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 mg/kg/day (max 80 mg) x 11 days following 3 days IV steroids; then discontinue or rapid taper",
+            "orderSentence": "Prednisone oral taper 1 mg/kg PO"
+          },
+          "contraindications": "Same as IV steroids",
+          "monitoring": "Glucose; BP; mood; GI prophylaxis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Omeprazole",
+          "route": "PO",
+          "indication": "GI prophylaxis during steroids",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Omeprazole 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "20-40 mg daily during steroid course",
+            "orderSentence": "Omeprazole 20 mg PO"
+          },
+          "contraindications": "PPI allergy; osteoporosis (long-term)",
+          "monitoring": "None routine",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Insulin sliding scale",
+          "route": "SC",
+          "indication": "Steroid-induced hyperglycemia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Insulin sliding scale Per protocol SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Per institutional protocol if glucose >180 mg/dL",
+            "orderSentence": "Insulin sliding scale Per protocol SC"
+          },
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Glucose q6h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Pain with eye movement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO q6h as needed for pain; max 3000 mg/day (2000 mg if liver disease)",
+            "orderSentence": "Acetaminophen 650-1000 mg PO"
+          },
+          "contraindications": "Hepatic impairment; chronic alcohol use",
+          "monitoring": "LFTs if prolonged use",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "Pain with eye movement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400-800 mg",
+                "orderSentence": "Ibuprofen 400-800 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-800 mg PO q8h as needed for pain; max 2400 mg/day; take with food",
+            "orderSentence": "Ibuprofen 400-800 mg PO"
+          },
+          "contraindications": "Renal impairment; GI bleeding; concurrent anticoagulation",
+          "monitoring": "Renal function if prolonged",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Persistent periorbital pain/neuropathic symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; increase by 300 mg every 1-3 days; target 900-1800 mg/day divided TID",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose)",
+          "monitoring": "Sedation; dizziness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Artificial tears",
+          "route": "TOP",
+          "indication": "Dry eye secondary to reduced blink or lagophthalmos",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 drops",
+                "orderSentence": "Artificial tears 1-2 drops TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Preservative-free artificial tears 1-2 drops q2-4h as needed",
+            "orderSentence": "Artificial tears 1-2 drops TOP"
+          },
+          "contraindications": "None",
+          "monitoring": "None",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Plasmapheresis (PLEX)",
+          "route": "PLEX",
+          "indication": "Steroid-refractory or severe vision loss",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-7 exchanges",
+                "orderSentence": "Plasmapheresis (PLEX) 5-7 exchanges PLEX"
+              }
+            ],
+            "route": "PLEX",
+            "instructions": "5-7 exchanges every other day; typical volume 1-1.5 plasma volumes",
+            "orderSentence": "Plasmapheresis (PLEX) 5-7 exchanges PLEX"
+          },
+          "contraindications": "Hemodynamic instability; sepsis; line contraindication",
+          "monitoring": "BP; electrolytes; coags; fibrinogen; line infection",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "IVIG",
+          "route": "IV",
+          "indication": "Steroid-refractory (alternative to PLEX)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIG 0.4 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.4 g/kg/day for 5 days (total 2 g/kg); infuse slowly day 1",
+            "orderSentence": "IVIG 0.4 g/kg IV"
+          },
+          "contraindications": "IgA deficiency; renal failure; thrombosis risk",
+          "monitoring": "Renal function; headache; thrombosis",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Extended IV steroids",
+          "route": "IV",
+          "indication": "Incomplete response to 3-day course",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Extended IV steroids 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Extend to 5-7 total days if inadequate response",
+            "orderSentence": "Extended IV steroids 1000 mg IV"
+          },
+          "contraindications": "Same as initial course",
+          "monitoring": "Same as initial course",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying Therapies (If MS/NMOSD/MOGAD Confirmed)": [
+        {
+          "item": "MS DMT (various)",
+          "route": "Variable",
+          "indication": "If MS diagnosed based on MRI + clinical criteria",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "See MS - New Diagnosis template",
+                "orderSentence": "MS DMT (various) See MS - New Diagnosis template -"
+              }
+            ],
+            "route": "-",
+            "instructions": "See MS - New Diagnosis template",
+            "orderSentence": "MS DMT (various) See MS - New Diagnosis template -"
+          },
+          "pretreatment": "Per specific DMT",
+          "contraindications": "Per specific DMT",
+          "monitoring": "Per specific DMT",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rituximab",
+          "route": "IV",
+          "indication": "NMOSD (AQP4-IgG positive)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Rituximab 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV days 1 and 15; maintenance 1000 mg q6 months",
+            "orderSentence": "Rituximab 1000 mg IV"
+          },
+          "pretreatment": "Hepatitis B serology; TB test; immunoglobulins",
+          "contraindications": "Active Hep B; active infection",
+          "monitoring": "CD19/20; immunoglobulins annually",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Eculizumab (Soliris)",
+          "route": "IV",
+          "indication": "NMOSD (AQP4-IgG positive) - FDA approved",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "900 mg",
+                "orderSentence": "Eculizumab (Soliris) 900 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "900 mg weekly x 4; then 1200 mg at week 5; then 1200 mg q2 weeks",
+            "orderSentence": "Eculizumab (Soliris) 900 mg IV"
+          },
+          "pretreatment": "Meningococcal vaccination (2 weeks prior)",
+          "contraindications": "Unresolved Neisseria infection",
+          "monitoring": "CBC; LFTs; signs of meningococcal infection",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Immunosuppression (MOGAD)",
+          "route": "Variable",
+          "indication": "MOGAD (MOG-IgG positive) with relapsing course",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per agent",
+                "orderSentence": "Immunosuppression (MOGAD) Per agent Variable"
+              }
+            ],
+            "route": "Variable",
+            "instructions": "Rituximab, azathioprine, or mycophenolate per specialist",
+            "orderSentence": "Immunosuppression (MOGAD) Per agent Variable"
+          },
+          "pretreatment": "Per specific agent",
+          "contraindications": "Per specific agent",
+          "monitoring": "Per specific agent",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neuro-ophthalmology referral for comprehensive evaluation and follow-up",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology/MS specialist referral if brain MRI shows demyelinating lesions",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology referral if neuro-ophthalmology unavailable or alternate diagnosis suspected",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MS specialist/Neuroimmunology for DMT discussion if MS criteria met",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Low vision rehabilitation if significant persistent visual impairment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL adaptation if functional visual impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for disability resources if visual impairment affects employment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Vision typically improves over 2-4 weeks; 90%+ recover to 20/40 or better within 1 year",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return immediately if vision worsening after initial improvement (may indicate new attack or alternate diagnosis)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return if new symptoms: weakness, numbness, imbalance, bladder problems (may indicate MS)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not drive if vision in affected eye prevents safe driving; check with state DMV regarding vision requirements",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Heat may temporarily worsen symptoms (Uhthoff phenomenon) - this is not a new attack or permanent worsening",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Expect temporary steroid side effects: insomnia, mood changes, increased appetite, metallic taste during IV infusion",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Do not stop oral prednisone abruptly if on taper (adrenal suppression risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Monitor blood sugars if diabetic - steroids elevate glucose",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid sick contacts while on high-dose steroids (immunosuppression)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Keep follow-up appointments - important to monitor for MS development",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Contact physician if fever, new headache, or worsening vision on steroids",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Smoking cessation - smoking increases MS conversion risk and worsens outcomes",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Vitamin D supplementation 2000-5000 IU daily (target serum 25-OH vitamin D >40 ng/mL) - low levels associated with MS risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid prolonged heat exposure (hot tubs, saunas, exercising in heat) which can temporarily worsen vision (Uhthoff)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Use sunglasses if photophobia present",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular aerobic exercise as tolerated once acute symptoms resolve",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Adequate sleep (7-8 hours nightly) and stress management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Eye protection during activities if monocular vision (loss of depth perception)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "NMOSD-associated optic neuritis",
+      "features": "Severe vision loss (often <20/200); bilateral simultaneous or sequential; poor recovery; longitudinally extensive optic nerve enhancement (>50% nerve length)",
+      "tests": "AQP4-IgG positive (Mayo CDS1 or NMOFS); MRI pattern"
+    },
+    {
+      "diagnosis": "MOGAD-associated optic neuritis",
+      "features": "Often bilateral; anterior optic nerve involvement; perineural enhancement (\"optic nerve sheath sign\"); disc edema more prominent; better steroid response; tends to relapse",
+      "tests": "MOG-IgG positive (Mayo CDS1 or MOGFS)"
+    },
+    {
+      "diagnosis": "Anterior ischemic optic neuropathy (AION)",
+      "features": "Sudden painless vision loss; altitudinal field defect; disc edema with hemorrhages; age >50; vascular risk factors (hypertension, diabetes)",
+      "tests": "ESR/CRP for GCA; fluorescein angiography; cardiovascular risk assessment"
+    },
+    {
+      "diagnosis": "Giant cell arteritis (GCA)",
+      "features": "Age >50; headache; jaw claudication; scalp tenderness; elevated ESR/CRP; bilateral risk",
+      "tests": "ESR, CRP, temporal artery biopsy; prompt treatment to prevent fellow eye"
+    },
+    {
+      "diagnosis": "Papilledema",
+      "features": "Bilateral disc edema; transient visual obscurations; headache worse lying down; no RAPD unless asymmetric",
+      "tests": "LP with elevated opening pressure; MRI/MRV for venous sinus thrombosis"
+    },
+    {
+      "diagnosis": "Compressive optic neuropathy",
+      "features": "Progressive vision loss; proptosis; may have disc pallor or edema; optic canal mass",
+      "tests": "MRI orbits showing mass lesion; CT for bony detail"
+    },
+    {
+      "diagnosis": "Leber hereditary optic neuropathy (LHON)",
+      "features": "Painless; young males; sequential bilateral (weeks to months); central scotoma; no enhancement on MRI",
+      "tests": "Mitochondrial DNA testing (mutations: 11778, 3460, 14484)"
+    },
+    {
+      "diagnosis": "Toxic/nutritional optic neuropathy",
+      "features": "Bilateral symmetric; ethambutol, methanol, B12/folate deficiency; cecocentral scotoma",
+      "tests": "B12, folate, medication history, alcohol use"
+    },
+    {
+      "diagnosis": "Neurosyphilis",
+      "features": "May mimic optic neuritis; other neurologic signs; risk factors",
+      "tests": "RPR/VDRL, FTA-ABS, CSF VDRL"
+    },
+    {
+      "diagnosis": "Sarcoidosis",
+      "features": "Granulomatous optic neuropathy; uveitis; other systemic involvement",
+      "tests": "ACE, chest CT, tissue biopsy"
+    },
+    {
+      "diagnosis": "Idiopathic intracranial hypertension (IIH)",
+      "features": "Bilateral disc edema; obese young female; headache; transient visual obscurations",
+      "tests": "LP with elevated opening pressure; normal MRI/MRV"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "IV methylprednisolone accelerates visual recovery but does not change final outcome",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Beck RW et al. NEJM 1992 (ONTT)](https://pubmed.ncbi.nlm.nih.gov/1594973/)"
+    },
+    {
+      "recommendation": "Oral prednisone alone (1 mg/kg) increases recurrence rate - avoid as monotherapy",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Beck RW et al. NEJM 1992 (ONTT)](https://pubmed.ncbi.nlm.nih.gov/1594973/)"
+    },
+    {
+      "recommendation": "Visual prognosis excellent: 90%+ recover to 20/40 or better by 1 year",
+      "evidenceLevel": "Class I",
+      "source": "[Beck RW et al. Arch Ophthalmol 1993](https://pubmed.ncbi.nlm.nih.gov/8517838/)"
+    },
+    {
+      "recommendation": "Brain MRI lesions predict MS: 50% at 15 years with >=1 lesion vs 25% with normal MRI",
+      "evidenceLevel": "Class I",
+      "source": "[Beck RW et al. NEJM 2003 (ONTT 10-year)](https://pubmed.ncbi.nlm.nih.gov/12660385/); [Optic Neuritis Study Group 2008 (15-year)](https://pubmed.ncbi.nlm.nih.gov/18332318/)"
+    },
+    {
+      "recommendation": "Cell-based assay (FACS) preferred for AQP4/MOG antibody testing",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Pittock SJ et al. Neurology 2019](https://pubmed.ncbi.nlm.nih.gov/31434689/); [Waters P et al. J Neurol Neurosurg Psychiatry 2014](https://pubmed.ncbi.nlm.nih.gov/24009151/)"
+    },
+    {
+      "recommendation": "MOG-IgG associated with better visual recovery and relapsing course",
+      "evidenceLevel": "Class II",
+      "source": "[Jarius S et al. J Neuroinflammation 2018](https://pubmed.ncbi.nlm.nih.gov/30153836/)"
+    },
+    {
+      "recommendation": "PLEX beneficial for steroid-refractory demyelinating optic neuritis",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Roesner S et al. J Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/21822932/)"
+    },
+    {
+      "recommendation": "VEP shows prolonged P100 latency in optic neuritis",
+      "evidenceLevel": "Class I",
+      "source": "[Halliday AM et al. Lancet 1972](https://pubmed.ncbi.nlm.nih.gov/4113644/)"
+    },
+    {
+      "recommendation": "OCT RNFL thinning correlates with visual outcomes",
+      "evidenceLevel": "Class II",
+      "source": "[Trip SA et al. Brain 2005](https://pubmed.ncbi.nlm.nih.gov/16006539/)"
+    },
+    {
+      "recommendation": "Vitamin D deficiency associated with increased MS risk after optic neuritis",
+      "evidenceLevel": "Class II",
+      "source": "[Munger KL et al. JAMA 2006](https://pubmed.ncbi.nlm.nih.gov/17179460/)"
+    },
+    {
+      "recommendation": "Smoking increases MS conversion risk after CIS",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Hedstrom AK et al. Brain 2013](https://pubmed.ncbi.nlm.nih.gov/23365092/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Visual acuity",
+      "frequency": "Daily inpatient; each visit OPD",
+      "action": "If no improvement by 2 weeks, reconsider diagnosis or escalate treatment",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Color vision (Ishihara or HRR plates)",
+      "frequency": "Baseline and follow-up",
+      "action": "Persistent dyschromatopsia suggests residual dysfunction",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Pupillary exam (RAPD)",
+      "frequency": "Daily inpatient; each visit OPD",
+      "action": "Persistent or worsening RAPD concerning",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "Q6h during IV steroids",
+      "action": "Insulin sliding scale; endocrine consult if persistent >250",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Q shift during steroids",
+      "action": "Antihypertensives PRN",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "-"
+    },
+    {
+      "item": "Mood and sleep",
+      "frequency": "Daily during steroids",
+      "action": "Psychiatry consult; consider dose reduction",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "-"
+    },
+    {
+      "item": "Visual field (formal)",
+      "frequency": "Baseline, 1 month, 3 months, 6 months",
+      "action": "Worsening field concerning for progression",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "OCT (RNFL thickness)",
+      "frequency": "Baseline, 3 months, 6 months",
+      "action": ">20 micron loss associated with poorer outcome",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MRI brain (follow-up)",
+      "frequency": "3-6 months after initial; annually if MS risk",
+      "action": "If new lesions: MS diagnosed, start DMT",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "NMO/MOG antibodies (recheck)",
+      "frequency": "Repeat at 3-6 months if initially negative but atypical features",
+      "action": "If seroconversion: diagnosis changes, different treatment",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Mild-moderate vision loss with stable exam; able to perform ADLs safely; IV steroids completed or not indicated; reliable follow-up within 1-2 weeks with neuro-ophthalmology or neurology; understands return precautions"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Severe vision loss (20/200 or worse); bilateral involvement; diagnostic uncertainty requiring expedited workup; unable to care for self safely at home due to vision loss; IV steroids indicated and outpatient infusion not available"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Not typically required for isolated optic neuritis; consider if concurrent severe neurologic involvement (e.g., NMOSD with myelitis and respiratory compromise)"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Neuro-ophthalmology or MS specialist not available; PLEX needed but unavailable; MRI unavailable for urgent imaging"
+    }
+  ]
+}

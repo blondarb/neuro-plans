@@ -1,0 +1,1012 @@
+{
+  "id": "tension-headache",
+  "title": "Tension-Type Headache",
+  "version": "1.1",
+  "icd10": [
+    "** G44.209 (Tension-type headache",
+    "unspecified",
+    "not intractable)",
+    "G44.219 (Episodic tension-type headache",
+    "not intractable)",
+    "G44.221 (Chronic tension-type headache",
+    "not intractable)"
+  ],
+  "scope": "** Episodic and chronic tension-type headache diagnosis, acute treatment, and preventive therapy. Excludes secondary headaches, medication overuse headache (separate protocol), and trigeminal autonomic cephalalgias.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rule out anemia or infection as headache trigger",
+          "target": "Normal"
+        },
+        {
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Electrolyte abnormalities can trigger headaches",
+          "target": "Normal"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism associated with chronic headache",
+          "target": "Normal (0.4-4.0 mIU/L)"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rule out giant cell arteritis if age >50 with new headache",
+          "target": "Normal"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency associated with chronic pain and headache",
+          "target": ">30 ng/mL"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Iron deficiency associated with headache",
+          "target": ">50 ng/mL"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Low magnesium linked to headache disorders",
+          "target": ">4.2 mg/dL"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Rule out autoimmune disorder in atypical presentations",
+          "target": "Negative"
+        },
+        {
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Evaluate for sleep apnea contributing to chronic headache",
+          "target": "AHI <5"
+        },
+        {
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Consider in endemic areas with refractory symptoms",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Only if red flags present (see SNNOOP10 below)",
+          "target": "Normal",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "Acute severe headache or new neurological deficits",
+          "target": "No hemorrhage, mass, or hydrocephalus",
+          "contraindications": "Pregnancy (relative)"
+        }
+      ],
+      "Extended": [
+        {
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Atypical features, focal deficits, suspected secondary cause",
+          "target": "No enhancement or mass lesion",
+          "contraindications": "Gadolinium allergy, severe renal impairment"
+        },
+        {
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Suspected vascular etiology or cervical artery dissection",
+          "target": "Patent vessels; no dissection",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Cervicogenic component suspected",
+          "target": "Normal alignment; no disc disease",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Suspected cerebral venous thrombosis",
+          "target": "Patent venous sinuses",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Suspected idiopathic intracranial hypertension",
+          "target": "Normal (10-20 cm H2O)",
+          "contraindications": "Coagulopathy; mass lesion"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Ketorolac",
+          "route": "IV/IM",
+          "indication": "Severe acute TTH in ED; NSAID-responsive headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Ketorolac 30 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mg IV x1 (15 mg if >65y, renal impairment, or <50 kg); do not exceed 5 days total NSAIDs",
+            "orderSentence": "Ketorolac 30 mg IV"
+          },
+          "contraindications": "Renal impairment; GI bleed history; aspirin allergy; third trimester pregnancy",
+          "monitoring": "Renal function if repeated dosing",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Metoclopramide",
+          "route": "IV",
+          "indication": "Acute headache with nausea; has anti-headache properties",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Metoclopramide 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV over 15 min; pretreat with diphenhydramine 25 mg to prevent akathisia",
+            "orderSentence": "Metoclopramide 10 mg IV"
+          },
+          "contraindications": "Parkinson's disease; tardive dyskinesia history; bowel obstruction",
+          "monitoring": "Akathisia, dystonic reaction",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Diphenhydramine",
+          "route": "IV",
+          "indication": "Adjunct to prevent akathisia from dopamine antagonists",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Diphenhydramine 25 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "25 mg IV prior to metoclopramide",
+            "orderSentence": "Diphenhydramine 25 mg IV"
+          },
+          "contraindications": "Narrow-angle glaucoma; urinary retention",
+          "monitoring": "Sedation",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "First-line acute treatment for episodic TTH",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg",
+                "orderSentence": "Ibuprofen 400 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-800 mg PO at onset; may repeat q6-8h; max 2400 mg/day; limit to <10 days/month",
+            "orderSentence": "Ibuprofen 400 mg PO"
+          },
+          "contraindications": "Renal impairment; GI bleed history; aspirin allergy; third trimester",
+          "monitoring": "GI symptoms; renal function if prolonged use",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Naproxen",
+          "route": "PO",
+          "indication": "First-line acute treatment; longer duration than ibuprofen",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Naproxen 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "500-550 mg PO at onset; may repeat 250 mg in 12 hr; max 1250 mg/day; limit to <10 days/month",
+            "orderSentence": "Naproxen 500 mg PO"
+          },
+          "contraindications": "Renal impairment; GI bleed history; aspirin allergy; third trimester",
+          "monitoring": "GI symptoms; renal function if prolonged use",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "First-line if NSAID contraindicated; mild-moderate TTH",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Acetaminophen 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mg PO at onset; may repeat q6h; max 3000 mg/day (2000 mg if liver disease); limit to <10 days/month",
+            "orderSentence": "Acetaminophen 1000 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; avoid if >3 alcoholic drinks/day",
+          "monitoring": "LFTs if chronic use; total daily dose from all sources",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Aspirin",
+          "route": "PO",
+          "indication": "First-line acute treatment; anti-inflammatory",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650 mg",
+                "orderSentence": "Aspirin 650 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO at onset; max 4000 mg/day; limit to <10 days/month",
+            "orderSentence": "Aspirin 650 mg PO"
+          },
+          "contraindications": "Bleeding disorders; GI ulcer; aspirin allergy; children/teens (Reye syndrome); third trimester",
+          "monitoring": "GI symptoms; bleeding",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Caffeine/Analgesic combination",
+          "route": "PO",
+          "indication": "Enhanced efficacy with caffeine adjunct",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 tablets",
+                "orderSentence": "Caffeine/Analgesic combination 2 tablets PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Acetaminophen 250 mg/aspirin 250 mg/caffeine 65 mg: 2 tablets at onset; max 2 doses/24hr",
+            "orderSentence": "Caffeine/Analgesic combination 2 tablets PO"
+          },
+          "contraindications": "Aspirin or acetaminophen contraindications",
+          "monitoring": "Limit use to prevent caffeine dependence and MOH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Trigger point injection",
+          "route": "IM",
+          "indication": "Pericranial muscle tenderness; refractory to oral therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mL",
+                "orderSentence": "Trigger point injection 1-2 mL IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Inject 1-2 mL 1% lidocaine into tender points in trapezius, temporalis, or cervical paraspinals; may repeat q2-4wk",
+            "orderSentence": "Trigger point injection 1-2 mL IM"
+          },
+          "contraindications": "Local anesthetic allergy; infection at site",
+          "monitoring": "Local bruising; vasovagal response",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Greater occipital nerve block",
+          "route": "SC",
+          "indication": "Occipital-predominant pain; refractory cases",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-3 mL",
+                "orderSentence": "Greater occipital nerve block 2-3 mL SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "2-3 mL 2% lidocaine with or without 40 mg triamcinolone at greater occipital nerve bilaterally",
+            "orderSentence": "Greater occipital nerve block 2-3 mL SC"
+          },
+          "contraindications": "Local anesthetic allergy; infection at site",
+          "monitoring": "Immediate pain relief; monitor for vasovagal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy",
+          "route": "N/A",
+          "indication": "Musculoskeletal dysfunction; postural abnormalities",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Physical therapy N/A N/A"
+              }
+            ],
+            "route": "N/A",
+            "instructions": "1-2 sessions/week for 6-8 weeks focusing on cervical/shoulder mobility, posture, and relaxation techniques",
+            "orderSentence": "Physical therapy N/A N/A"
+          },
+          "contraindications": "None",
+          "monitoring": "Symptom improvement over 6-8 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Biofeedback/Relaxation therapy",
+          "route": "N/A",
+          "indication": "Stress-related TTH; patient preference for non-pharmacologic",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Biofeedback/Relaxation therapy N/A N/A"
+              }
+            ],
+            "route": "N/A",
+            "instructions": "Weekly sessions for 8-12 weeks; EMG biofeedback targeting frontalis/temporalis; may combine with CBT",
+            "orderSentence": "Biofeedback/Relaxation therapy N/A N/A"
+          },
+          "contraindications": "None",
+          "monitoring": "Symptom diary; headache frequency reduction",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cognitive behavioral therapy (CBT)",
+          "route": "N/A",
+          "indication": "Stress, anxiety, or depression contributing to headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Cognitive behavioral therapy (CBT) N/A N/A"
+              }
+            ],
+            "route": "N/A",
+            "instructions": "Weekly sessions for 8-12 weeks; focus on pain coping, stress management, and cognitive restructuring",
+            "orderSentence": "Cognitive behavioral therapy (CBT) N/A N/A"
+          },
+          "contraindications": "None",
+          "monitoring": "Symptom diary; validated headache disability measures",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying or Chronic Therapies (Preventive Medications)": [
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "First-line prevention for chronic TTH; ≥15 days/month",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Amitriptyline 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg qHS; titrate by 10-25 mg every 1-2 weeks; target 25-75 mg qHS; max 150 mg qHS",
+            "orderSentence": "Amitriptyline 10 mg PO"
+          },
+          "pretreatment": "ECG if age >50 or cardiac history",
+          "contraindications": "Cardiac conduction abnormality (QTc >450 ms); recent MI; narrow-angle glaucoma; urinary retention; concurrent MAOIs",
+          "monitoring": "Sedation, dry mouth, weight gain, constipation; ECG if dose >100 mg/day",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nortriptyline",
+          "route": "PO",
+          "indication": "Prevention if amitriptyline not tolerated (less sedating); chronic TTH",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Nortriptyline 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg qHS; titrate by 10-25 mg every 1-2 weeks; target 25-75 mg qHS; max 150 mg qHS",
+            "orderSentence": "Nortriptyline 10 mg PO"
+          },
+          "pretreatment": "ECG if age >50 or cardiac history",
+          "contraindications": "Cardiac conduction abnormality (QTc >450 ms); recent MI; narrow-angle glaucoma; urinary retention; concurrent MAOIs",
+          "monitoring": "Sedation (less than amitriptyline), dry mouth, weight gain, constipation; ECG if dose >100 mg/day",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venlafaxine XR",
+          "route": "PO",
+          "indication": "Prevention; comorbid depression or anxiety; TCA intolerant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg",
+                "orderSentence": "Venlafaxine XR 37.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg daily; increase by 37.5-75 mg every 1 week; target 75-150 mg daily",
+            "orderSentence": "Venlafaxine XR 37.5 mg PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Uncontrolled hypertension; concurrent MAOIs; abrupt discontinuation (taper required)",
+          "monitoring": "Blood pressure at higher doses (>150 mg); serotonin syndrome signs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mirtazapine",
+          "route": "PO",
+          "indication": "Prevention; comorbid insomnia, depression, or poor appetite",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "7.5 mg",
+                "orderSentence": "Mirtazapine 7.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 7.5-15 mg qHS; may increase to 30 mg qHS; more sedating at lower doses",
+            "orderSentence": "Mirtazapine 7.5 mg PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Concurrent MAOIs; severe hepatic impairment",
+          "monitoring": "Sedation, increased appetite, weight gain",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tizanidine",
+          "route": "PO",
+          "indication": "Prevention; prominent pericranial muscle tension",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg qHS; may increase by 2-4 mg every 3-7 days; max 36 mg/day in 3 divided doses",
+            "orderSentence": "Tizanidine 2 mg PO"
+          },
+          "pretreatment": "LFTs at baseline",
+          "contraindications": "Concurrent ciprofloxacin or fluvoxamine (CYP1A2 inhibitors); hepatic impairment",
+          "monitoring": "LFTs monthly for first 6 months then periodically; sedation, hypotension, dry mouth",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topiramate",
+          "route": "PO",
+          "indication": "Prevention; comorbid migraine or obesity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Topiramate 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg qHS; increase by 25 mg/week; target 50-100 mg BID",
+            "orderSentence": "Topiramate 25 mg PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Narrow-angle glaucoma; kidney stones; pregnancy (teratogen); metabolic acidosis",
+          "monitoring": "Cognitive effects (word-finding), paresthesias, weight loss, kidney stones, bicarbonate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Prevention; comorbid neuropathic pain or anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg every 3-5 days; target 900-1800 mg/day in 3 divided doses",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Severe renal impairment (dose adjust for CrCl)",
+          "monitoring": "Sedation, dizziness, peripheral edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology/Headache specialist referral for chronic TTH (≥15 days/month) not responding to first-line preventives",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for cervicogenic component, postural dysfunction, and pericranial muscle tension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Behavioral medicine/Psychology for stress management, biofeedback, and cognitive behavioral therapy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep medicine evaluation if underlying sleep disorder (insomnia, apnea) contributing to chronic headache",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology evaluation to rule out refractive error or eye strain as contributing factor",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dentistry/TMJ specialist if temporomandibular joint dysfunction contributing to headache",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry referral for comorbid depression or anxiety requiring pharmacologic management beyond preventive therapy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately for sudden severe headache (\"worst headache of life\") which may indicate hemorrhage or other serious cause",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return immediately for headache with fever, stiff neck, or altered mental status which may indicate infection",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return if new neurological symptoms develop (weakness, numbness, vision changes, speech difficulty)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain headache diary tracking frequency, triggers, medication use, and response to guide treatment optimization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit acute pain medication use to no more than 10 days per month to prevent medication overuse headache",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take acute medications early at headache onset for best efficacy rather than waiting for severe pain",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Identify and modify personal triggers (stress, poor posture, inadequate sleep, screen time, skipped meals)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular sleep schedule (7-8 hours, consistent bedtime and wake time) as sleep disturbance is a common trigger",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stress management through relaxation techniques, mindfulness meditation, or progressive muscle relaxation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular aerobic exercise (30 minutes moderate activity 5 times/week) shown to reduce chronic headache frequency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Ergonomic workplace assessment to optimize posture and reduce neck/shoulder strain during computer work",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit screen time and take regular breaks (20-20-20 rule: every 20 minutes, look 20 feet away for 20 seconds)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Adequate hydration (at least 64 oz water daily) as dehydration can trigger headache",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular meals to avoid fasting-triggered headache; do not skip meals",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit caffeine to moderate consistent intake (≤200 mg/day or ~2 cups coffee) to prevent withdrawal headaches",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stretching exercises for neck and shoulders daily, especially if sedentary work",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Migraine",
+      "features": "Unilateral, pulsating, moderate-severe intensity; nausea/vomiting; photo AND phonophobia; aggravated by physical activity",
+      "tests": "Clinical criteria (ICHD-3); normal imaging"
+    },
+    {
+      "diagnosis": "Medication overuse headache",
+      "features": "Daily or near-daily headache; acute medication use ≥10-15 days/month for ≥3 months",
+      "tests": "Headache diary documenting medication use; improves with withdrawal"
+    },
+    {
+      "diagnosis": "Cervicogenic headache",
+      "features": "Unilateral, starts in neck, radiates frontally; triggered by neck movement or sustained posture; reduced ROM",
+      "tests": "Physical exam (decreased ROM, tenderness); C-spine imaging; diagnostic block"
+    },
+    {
+      "diagnosis": "Temporomandibular joint dysfunction",
+      "features": "Pain in jaw, temple, or preauricular area; worse with chewing; clicking/popping of jaw; bruxism history",
+      "tests": "TMJ exam; panoramic dental X-ray; may need MRI TMJ"
+    },
+    {
+      "diagnosis": "Giant cell arteritis",
+      "features": "Age >50; new headache type; scalp tenderness; jaw claudication; visual changes; elevated ESR/CRP",
+      "tests": "ESR, CRP; temporal artery biopsy (gold standard)"
+    },
+    {
+      "diagnosis": "Idiopathic intracranial hypertension",
+      "features": "Positional headache (worse lying flat); papilledema; pulsatile tinnitus; visual obscurations; obesity",
+      "tests": "LP with opening pressure >25 cm H2O; MRI/MRV normal"
+    },
+    {
+      "diagnosis": "Intracranial mass lesion",
+      "features": "Progressive headache; worse in morning or with Valsalva; focal neurological signs",
+      "tests": "MRI brain with contrast"
+    },
+    {
+      "diagnosis": "Cervical artery dissection",
+      "features": "Sudden severe headache or neck pain; may have Horner syndrome; history of trauma or neck manipulation",
+      "tests": "MRA or CTA neck"
+    },
+    {
+      "diagnosis": "Trigeminal neuralgia",
+      "features": "Brief (seconds) electric shock-like pain; unilateral V2/V3 distribution; triggered by touch, chewing, or talking",
+      "tests": "MRI for vascular loop; clinical criteria"
+    },
+    {
+      "diagnosis": "Cluster headache",
+      "features": "Unilateral, periorbital, severe; autonomic features (lacrimation, rhinorrhea, ptosis, miosis); 15-180 min duration",
+      "tests": "Clinical history; attacks occur in clusters"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "ICHD-3 diagnostic criteria for tension-type headache",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Headache Classification Committee. Cephalalgia 2018](https://pubmed.ncbi.nlm.nih.gov/29368949/)"
+    },
+    {
+      "recommendation": "Amitriptyline effective for chronic TTH prevention",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Bendtsen et al. Neurology 1996](https://pubmed.ncbi.nlm.nih.gov/8710059/)"
+    },
+    {
+      "recommendation": "Simple analgesics (acetaminophen, NSAIDs, aspirin) for acute TTH",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Stephens et al. Cochrane 2016](https://pubmed.ncbi.nlm.nih.gov/27306653/)"
+    },
+    {
+      "recommendation": "Tricyclic antidepressants for chronic TTH prevention",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Jackson et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28179565/)"
+    },
+    {
+      "recommendation": "Biofeedback and relaxation training reduce headache frequency",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Nestoriuc et al. Pain 2008](https://pubmed.ncbi.nlm.nih.gov/18455618/)"
+    },
+    {
+      "recommendation": "Physical therapy for tension-type headache",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Espi-Lopez et al. Phys Ther 2014](https://pubmed.ncbi.nlm.nih.gov/24903113/)"
+    },
+    {
+      "recommendation": "Cognitive behavioral therapy reduces headache disability",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Holroyd et al. JAMA 2001](https://pubmed.ncbi.nlm.nih.gov/11565519/)"
+    },
+    {
+      "recommendation": "Medication overuse headache prevalence and management",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Diener et al. Nat Rev Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27615420/)"
+    },
+    {
+      "recommendation": "Ibuprofen 400-800 mg effective for acute TTH",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Steiner et al. Headache 2003](https://pubmed.ncbi.nlm.nih.gov/12656706/)"
+    },
+    {
+      "recommendation": "Combination analgesics (aspirin/acetaminophen/caffeine) effective",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Diener et al. Cephalalgia 2006](https://pubmed.ncbi.nlm.nih.gov/16472332/)"
+    },
+    {
+      "recommendation": "Venlafaxine for chronic TTH prevention",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Zissis et al. Headache 2007](https://pubmed.ncbi.nlm.nih.gov/17371352/)"
+    },
+    {
+      "recommendation": "Topiramate for chronic TTH (limited evidence)",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Lampl et al. J Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16485112/)"
+    },
+    {
+      "recommendation": "Greater occipital nerve block for refractory headache",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Afridi et al. Brain 2006](https://pubmed.ncbi.nlm.nih.gov/16330505/)"
+    },
+    {
+      "recommendation": "SNNOOP10 red flags for secondary headache",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Do et al. Neurology 2019](https://pubmed.ncbi.nlm.nih.gov/30587518/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Headache diary (frequency, severity, duration, medication use)",
+      "frequency": "Continuous at home; review each visit",
+      "action": "Optimize preventive therapy; consider referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Acute medication use days per month",
+      "frequency": "Monthly",
+      "action": "Counsel on MOH risk; consider prevention; detox if MOH",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "HIT-6 disability score",
+      "frequency": "Every 3 months",
+      "action": "Escalate preventive therapy if disability persists",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "LFTs (if on tizanidine)",
+      "frequency": "Baseline, monthly x 6 months, then q6mo",
+      "action": "Hold or discontinue if >3x ULN",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ECG (if on TCA)",
+      "frequency": "Baseline if age >50 or cardiac history; if dose >100 mg",
+      "action": "Reduce dose or switch agent if QTc prolonged",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood pressure (if on venlafaxine or SNRI)",
+      "frequency": "Each visit",
+      "action": "Reduce dose or add antihypertensive",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight (if on TCA or mirtazapine)",
+      "frequency": "Each visit",
+      "action": "Dietary counseling; consider switching agent",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Cognitive function (if on topiramate)",
+      "frequency": "Each visit",
+      "action": "Reduce dose or switch agent",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Bicarbonate (if on topiramate)",
+      "frequency": "Baseline, 3 months",
+      "action": "Consider dose reduction or discontinuation if acidosis",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Pain controlled with oral medications; able to tolerate PO; no red flags; follow-up arranged; MOH counseling provided"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Rare; consider if: intractable headache requiring IV therapy; need for medication overuse headache detoxification protocol"
+    },
+    {
+      "disposition": "Outpatient neurology follow-up",
+      "criteria": "Within 4-8 weeks for chronic TTH not responding to first-line treatment; sooner if diagnostic uncertainty"
+    },
+    {
+      "disposition": "Primary care follow-up",
+      "criteria": "Within 2-4 weeks for new episodic TTH to assess response to acute treatment and need for prevention"
+    }
+  ]
+}

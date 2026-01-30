@@ -1,0 +1,1433 @@
+{
+  "id": "huntingtons-disease",
+  "title": "Huntington's Disease",
+  "version": "1.1",
+  "icd10": [
+    "** G10 (Huntington disease)",
+    "F02.80 (Dementia in HD without behavioral disturbance)",
+    "F02.81 (Dementia in HD with behavioral disturbance)"
+  ],
+  "scope": "** Diagnosis confirmation via genetic testing, chorea management, psychiatric symptom treatment, cognitive decline management, dysphagia assessment, genetic counseling, and end-of-life planning. Focuses primarily on outpatient management. Excludes Huntington disease-like syndromes (HDL1-4) and other chorea etiologies.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Huntington gene test (HTT CAG repeat) (CPT 81401)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Definitive diagnosis; CAG repeat expansion",
+          "target": "≥36 CAG repeats diagnostic (40+ fully penetrant)"
+        },
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline; anemia contributes to fatigue; infection screen",
+          "target": "Normal"
+        },
+        {
+          "item": "BMP (CPT 80048)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Electrolytes; renal function for medication dosing",
+          "target": "Normal"
+        },
+        {
+          "item": "Hepatic panel (LFTs) (CPT 80076)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before tetrabenazine/deutetrabenazine; valproate if used",
+          "target": "Normal"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism can mimic apathy and cognitive slowing",
+          "target": "Normal"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency can worsen cognitive and psychiatric symptoms",
+          "target": ">300 pg/mL"
+        },
+        {
+          "item": "Vitamin D, 25-hydroxy (CPT 82306)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency common; contributes to falls and bone health",
+          "target": ">30 ng/mL"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Iron studies (CPT 83540), ferritin (CPT 82728)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurodegeneration with brain iron accumulation if HD-negative",
+          "target": "Normal"
+        },
+        {
+          "item": "Ceruloplasmin (CPT 82390), serum copper (CPT 82525)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Wilson's disease if younger onset, HD gene-negative",
+          "target": "Normal"
+        },
+        {
+          "item": "ACTN3 gene test (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Research; may modify age of onset",
+          "target": "Research use"
+        },
+        {
+          "item": "Acanthocyte screen (peripheral smear) (CPT 85060)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Chorea-acanthocytosis if HD gene-negative",
+          "target": "No acanthocytes"
+        },
+        {
+          "item": "Lipid panel (CPT 80061)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Cardiovascular risk; weight loss monitoring",
+          "target": "Normal"
+        },
+        {
+          "item": "Prealbumin (CPT 84134), albumin (CPT 82040)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Nutritional status assessment in advanced disease",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Genetic testing for HDL syndromes (PRNP, JPH3, TBP, ATN1) (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "HD-like phenotype with negative HTT test",
+          "target": "Identifies HD-like syndrome"
+        },
+        {
+          "item": "CSF biomarkers (neurofilament light chain) (CPT 83519)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Disease progression monitoring; research",
+          "target": "Elevated in active disease"
+        },
+        {
+          "item": "Kynurenine pathway metabolites (CPT 82542)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Research; therapeutic target assessment",
+          "target": "Research use"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI Brain without contrast (CPT 70551)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At diagnosis",
+          "target": "Caudate atrophy; lateral ventricle enlargement (\"boxcar\" ventricles)",
+          "contraindications": "MRI-incompatible devices"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI Brain volumetric (CPT 70553)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Baseline and annually for progression",
+          "target": "Quantify caudate and striatal volume loss",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "Swallowing evaluation (VFSS or FEES) (CPT 74230/92612)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At diagnosis and with dysphagia symptoms",
+          "target": "Identify aspiration risk; guide diet modification",
+          "contraindications": "None"
+        },
+        {
+          "item": "ECG (CPT 93000)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Baseline before tetrabenazine/deutetrabenazine",
+          "target": "QTc <450 ms",
+          "contraindications": "None"
+        },
+        {
+          "item": "Polysomnography (CPT 95810)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Sleep disturbance evaluation",
+          "target": "Rule out sleep apnea; assess sleep architecture",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "PET imaging (FDG or specific tracers) (CPT 78816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Research; atypical presentation",
+          "target": "Striatal hypometabolism",
+          "contraindications": "None"
+        },
+        {
+          "item": "Neuropsychological testing battery (CPT 96132)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At diagnosis and annually",
+          "target": "Baseline cognitive profile; monitor decline",
+          "contraindications": "None"
+        },
+        {
+          "item": "Genetic modifier testing (research) (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Prognosis; clinical trials",
+          "target": "Identifies modifiers of age of onset",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Lorazepam",
+          "route": "IV/PO",
+          "indication": "Severe chorea causing injury or exhaustion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Lorazepam 0.5 mg IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "0.5-2 mg IV/PO q4-6h PRN; short-term use only",
+            "orderSentence": "Lorazepam 0.5 mg IV/PO"
+          },
+          "contraindications": "Respiratory depression; acute narrow-angle glaucoma",
+          "monitoring": "Respiratory status, sedation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Haloperidol",
+          "route": "IV/IM",
+          "indication": "Severe psychosis with agitation; acute behavioral emergency",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Haloperidol 2 mg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "2-5 mg IM; may repeat q4-6h; max 20 mg/day; transition to oral",
+            "orderSentence": "Haloperidol 2 mg IM"
+          },
+          "contraindications": "QTc prolongation; history of NMS; worsens dystonia",
+          "monitoring": "ECG, EPS, sedation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Olanzapine",
+          "route": "IM/PO",
+          "indication": "Acute agitation with psychosis; alternative to haloperidol",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Olanzapine 5 mg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "5-10 mg IM; may repeat in 2 hours; max 30 mg/day",
+            "orderSentence": "Olanzapine 5 mg IM"
+          },
+          "contraindications": "Concurrent benzodiazepines (caution); diabetes",
+          "monitoring": "Glucose, sedation, EPS",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV fluids",
+          "route": "IV",
+          "indication": "Dehydration from dysphagia or decreased oral intake",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "NS at 75 mL/hr",
+                "orderSentence": "IV fluids NS at 75 mL/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "NS at 75-125 mL/hr; correct dehydration; transition to oral when safe",
+            "orderSentence": "IV fluids NS at 75 mL/hr IV"
+          },
+          "contraindications": "Fluid overload",
+          "monitoring": "I/O, electrolytes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Thiamine",
+          "route": "IV",
+          "indication": "Nutritional deficiency; altered mental status",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Thiamine 100 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "100 mg IV daily x 3-5 days; then oral",
+            "orderSentence": "Thiamine 100 mg IV"
+          },
+          "contraindications": "None",
+          "monitoring": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments - Chorea": [
+        {
+          "item": "Tetrabenazine (Xenazine)",
+          "route": "PO",
+          "indication": "FDA-approved for HD chorea; first-line",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg",
+                "orderSentence": "Tetrabenazine (Xenazine) 12.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 12.5 mg daily; increase by 12.5 mg q1wk; max 100 mg/day (25 mg per dose); CYP2D6 testing recommended",
+            "orderSentence": "Tetrabenazine (Xenazine) 12.5 mg PO"
+          },
+          "contraindications": "Active suicidality; untreated depression; concurrent MAOIs; hepatic impairment",
+          "monitoring": "Depression (PHQ-9 monthly), akathisia, parkinsonism, QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Deutetrabenazine (Austedo)",
+          "route": "PO",
+          "indication": "FDA-approved for HD chorea; better tolerability than tetrabenazine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6 mg",
+                "orderSentence": "Deutetrabenazine (Austedo) 6 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 6 mg daily; increase by 6 mg/wk; max 48 mg/day (24 mg per dose)",
+            "orderSentence": "Deutetrabenazine (Austedo) 6 mg PO"
+          },
+          "contraindications": "Active suicidality; untreated depression; concurrent MAOIs; hepatic impairment",
+          "monitoring": "Depression (PHQ-9 monthly), akathisia, parkinsonism, QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Valbenazine (Ingrezza)",
+          "route": "PO",
+          "indication": "Off-label for HD chorea; once daily dosing",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Valbenazine (Ingrezza) 40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 40 mg daily; may increase to 80 mg after 1 week",
+            "orderSentence": "Valbenazine (Ingrezza) 40 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; concurrent MAOIs; congenital long QT",
+          "monitoring": "Depression, akathisia, QTc prolongation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Risperidone",
+          "route": "PO",
+          "indication": "Chorea with psychosis; antipsychotic with motor benefit",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Risperidone 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.5 mg daily; titrate by 0.5 mg q1wk; max 6 mg/day",
+            "orderSentence": "Risperidone 0.5 mg PO"
+          },
+          "contraindications": "QTc prolongation; history of NMS",
+          "monitoring": "EPS, metabolic panel, prolactin",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Olanzapine",
+          "route": "PO",
+          "indication": "Chorea with weight loss; promotes weight gain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg",
+                "orderSentence": "Olanzapine 2.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5-5 mg qHS; titrate to effect; typical 5-15 mg/day",
+            "orderSentence": "Olanzapine 2.5 mg PO"
+          },
+          "contraindications": "Diabetes; significant metabolic risk",
+          "monitoring": "Weight, glucose, lipids",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonazepam",
+          "route": "PO",
+          "indication": "Adjunct for chorea; also helps myoclonus and anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg",
+                "orderSentence": "Clonazepam 0.25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.25 mg BID; titrate slowly; max 4 mg/day",
+            "orderSentence": "Clonazepam 0.25 mg PO"
+          },
+          "contraindications": "Severe respiratory disease; falls risk",
+          "monitoring": "Sedation, falls, cognitive effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amantadine",
+          "route": "PO",
+          "indication": "Mild chorea; may help fatigue",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Amantadine 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg daily; titrate to 100 mg TID; max 400 mg/day",
+            "orderSentence": "Amantadine 100 mg PO"
+          },
+          "contraindications": "End-stage renal disease; seizure history",
+          "monitoring": "Livedo reticularis, hallucinations, edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments - Psychiatric": [
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression; anxiety; irritability",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sertraline 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; titrate by 25-50 mg q1-2wk; max 200 mg/day",
+            "orderSentence": "Sertraline 25 mg PO"
+          },
+          "contraindications": "MAOIs within 14 days",
+          "monitoring": "Suicidality, serotonin syndrome",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Citalopram",
+          "route": "PO",
+          "indication": "Depression; anxiety; good tolerability",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Citalopram 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg daily; max 20 mg/day due to QTc risk",
+            "orderSentence": "Citalopram 10 mg PO"
+          },
+          "contraindications": "QTc >500 ms; concurrent QT-prolonging drugs",
+          "monitoring": "QTc if risk factors",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Escitalopram",
+          "route": "PO",
+          "indication": "Depression; anxiety; similar to citalopram",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Escitalopram 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5-10 mg daily; max 20 mg/day",
+            "orderSentence": "Escitalopram 5 mg PO"
+          },
+          "contraindications": "QTc >500 ms; concurrent QT-prolonging drugs",
+          "monitoring": "QTc if risk factors",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venlafaxine XR",
+          "route": "PO",
+          "indication": "Depression with fatigue; dual mechanism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg",
+                "orderSentence": "Venlafaxine XR 37.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg daily; titrate q1wk; max 225 mg/day",
+            "orderSentence": "Venlafaxine XR 37.5 mg PO"
+          },
+          "contraindications": "Uncontrolled hypertension",
+          "monitoring": "BP at higher doses",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mirtazapine",
+          "route": "PO",
+          "indication": "Depression with insomnia and weight loss; promotes appetite",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "7.5 mg",
+                "orderSentence": "Mirtazapine 7.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 7.5-15 mg qHS; titrate q1-2wk; max 45 mg",
+            "orderSentence": "Mirtazapine 7.5 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Weight, sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quetiapine",
+          "route": "PO",
+          "indication": "Psychosis; irritability; insomnia; less EPS than other antipsychotics",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Quetiapine 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg qHS; titrate by 25-50 mg q3d; typical 150-400 mg/day",
+            "orderSentence": "Quetiapine 25 mg PO"
+          },
+          "contraindications": "Uncontrolled diabetes",
+          "monitoring": "Glucose, lipids, QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Aripiprazole",
+          "route": "PO",
+          "indication": "Psychosis; irritability; weight-neutral",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Aripiprazole 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2-5 mg daily; titrate by 5 mg q1wk; max 30 mg/day",
+            "orderSentence": "Aripiprazole 2 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Akathisia, EPS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lamotrigine",
+          "route": "PO",
+          "indication": "Mood stabilization; irritability",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Lamotrigine 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily x 2wk; then 50 mg daily x 2wk; titrate by 50 mg q2wk; max 400 mg/day",
+            "orderSentence": "Lamotrigine 25 mg PO"
+          },
+          "contraindications": "History of severe rash with lamotrigine",
+          "monitoring": "Rash (SJS risk); slow titration mandatory",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Valproic acid",
+          "route": "PO",
+          "indication": "Irritability; aggression; mood stabilization",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Valproic acid 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg BID; titrate to level 50-100 mcg/mL",
+            "orderSentence": "Valproic acid 250 mg PO"
+          },
+          "contraindications": "Hepatic disease; pregnancy (teratogenic); mitochondrial disease",
+          "monitoring": "LFTs, ammonia, level, weight",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbamazepine",
+          "route": "PO",
+          "indication": "Irritability; aggression; alternative mood stabilizer",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Carbamazepine 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg BID; titrate by 200 mg/wk; target level 4-12 mcg/mL",
+            "orderSentence": "Carbamazepine 100 mg PO"
+          },
+          "contraindications": "AV block; blood dyscrasias; concurrent MAOIs",
+          "monitoring": "CBC, LFTs, level, HLA-B*1502 in Asians",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Buspirone",
+          "route": "PO",
+          "indication": "Anxiety without sedation; adjunct for irritability",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Buspirone 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; titrate by 5 mg q2-3d; max 60 mg/day",
+            "orderSentence": "Buspirone 5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs",
+          "monitoring": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments - Cognitive and Other": [
+        {
+          "item": "Donepezil",
+          "route": "PO",
+          "indication": "Cognitive impairment; limited evidence in HD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Donepezil 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg qHS; may increase to 10 mg after 4-6 weeks",
+            "orderSentence": "Donepezil 5 mg PO"
+          },
+          "contraindications": "GI bleeding; sick sinus syndrome",
+          "monitoring": "Nausea, bradycardia, diarrhea",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rivastigmine",
+          "route": "PO/Patch",
+          "indication": "Cognitive impairment; alternative to donepezil",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1.5 mg",
+                "orderSentence": "Rivastigmine 1.5 mg PO/Patch"
+              }
+            ],
+            "route": "PO/Patch",
+            "instructions": "Start 1.5 mg BID or 4.6 mg patch; titrate monthly",
+            "orderSentence": "Rivastigmine 1.5 mg PO/Patch"
+          },
+          "contraindications": "Severe hepatic impairment",
+          "monitoring": "Nausea, weight loss",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Memantine",
+          "route": "PO",
+          "indication": "Moderate-severe cognitive impairment; neuroprotective theory",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Memantine 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; titrate by 5 mg/wk; target 10 mg BID",
+            "orderSentence": "Memantine 5 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Confusion, constipation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "Apathy; excessive daytime sleepiness",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg each morning; may increase to 200 mg; avoid afternoon dosing",
+            "orderSentence": "Modafinil 100 mg PO"
+          },
+          "contraindications": "Arrhythmias; severe anxiety",
+          "monitoring": "Insomnia, anxiety, BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylphenidate",
+          "route": "PO",
+          "indication": "Apathy; bradyphrenia; fatigue",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Methylphenidate 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg at breakfast and lunch; titrate by 5-10 mg q1wk; max 60 mg/day",
+            "orderSentence": "Methylphenidate 5 mg PO"
+          },
+          "contraindications": "Severe anxiety; psychosis; cardiac arrhythmia",
+          "monitoring": "HR, BP, appetite, insomnia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Insomnia; irritability; mild sedation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Trazodone 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg qHS; titrate by 25-50 mg; max 200 mg for sleep",
+            "orderSentence": "Trazodone 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; priapism history",
+          "monitoring": "Orthostatic hypotension, priapism",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Insomnia; circadian rhythm disturbance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg",
+                "orderSentence": "Melatonin 3 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 3 mg 30 min before bed; may increase to 9 mg",
+            "orderSentence": "Melatonin 3 mg PO"
+          },
+          "contraindications": "None",
+          "monitoring": "Generally well-tolerated",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Botulinum toxin (onabotulinumtoxinA)",
+          "route": "IM",
+          "indication": "Focal dystonia; bruxism; sialorrhea",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Variable per muscle",
+                "orderSentence": "Botulinum toxin (onabotulinumtoxinA) Variable per muscle IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Dose depends on target muscles; repeat q12 weeks",
+            "orderSentence": "Botulinum toxin (onabotulinumtoxinA) Variable per muscle IM"
+          },
+          "contraindications": "Infection at site; myasthenia gravis",
+          "monitoring": "Weakness, dysphagia",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glycopyrrolate",
+          "route": "PO",
+          "indication": "Sialorrhea (drooling)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Glycopyrrolate 1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg BID; titrate to effect; max 2 mg TID",
+            "orderSentence": "Glycopyrrolate 1 mg PO"
+          },
+          "contraindications": "Glaucoma; urinary retention; GI obstruction",
+          "monitoring": "Dry mouth, constipation, urinary retention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Polyethylene glycol (MiraLAX)",
+          "route": "PO",
+          "indication": "Constipation (common with reduced mobility and anticholinergics)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "17 g",
+                "orderSentence": "Polyethylene glycol (MiraLAX) 17 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "17 g in 8 oz liquid daily; may increase to BID",
+            "orderSentence": "Polyethylene glycol (MiraLAX) 17 g PO"
+          },
+          "contraindications": "Bowel obstruction",
+          "monitoring": "Diarrhea if excessive",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "High-calorie nutritional supplements",
+          "route": "PO",
+          "indication": "Weight loss; increased metabolic demands",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 can",
+                "orderSentence": "High-calorie nutritional supplements 1 can PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1-3 cans (Ensure Plus, Boost Plus) daily between meals",
+            "orderSentence": "High-calorie nutritional supplements 1 can PO"
+          },
+          "contraindications": "None",
+          "monitoring": "Weight, nutritional markers",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Huntington Disease Society of America (HDSA) Center of Excellence for comprehensive multidisciplinary care",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic counselor for pre-test counseling, results disclosure, and family testing discussion",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry for depression, suicidality assessment, irritability, and psychosis management",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychology for baseline and serial cognitive assessment to guide care planning",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for swallowing evaluation and communication strategies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for gait training, fall prevention, and adaptive exercise program",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL adaptation, home safety evaluation, and energy conservation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dietitian/nutritionist for weight maintenance strategies and caloric supplementation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for caregiver support, disability planning, and community resources",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care for symptom management, advance care planning, and goals of care discussions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pulmonology for respiratory assessment in advanced disease and ventilation decisions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gastroenterology for PEG tube placement consideration in advanced dysphagia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "CRITICAL: Report suicidal thoughts immediately as depression is common and treatable in HD",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not drive if experiencing significant chorea, cognitive impairment, or sedating medication effects",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain high caloric intake (3000-4000 kcal/day may be needed) due to hypermetabolic state",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Eat slowly, take small bites, and remain upright 30 minutes after meals to reduce aspiration risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Complete advance directive and healthcare power of attorney while capacity is preserved",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Inform all healthcare providers about HD as many common medications can worsen symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "First-degree relatives have 50% risk; genetic counseling available but genetic testing is a personal choice",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid alcohol which worsens balance, cognition, and interacts with medications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular aerobic exercise (walking, swimming, stationary bike) improves motor function and mood",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Fall prevention: remove home hazards, adequate lighting, grab bars, non-slip surfaces",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain social engagement and meaningful activities to reduce depression and apathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cognitive engagement through puzzles, reading, and structured activities may help maintain function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Structure daily routine with consistent timing for medications, meals, and activities",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Caregiver respite and support groups essential to prevent caregiver burnout",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation to reduce aspiration pneumonia risk and cardiovascular disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit caffeine if insomnia or anxiety are problematic",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Huntington disease-like 1 (HDL1)",
+      "features": "Prion protein gene mutation; similar phenotype",
+      "tests": "PRNP gene testing"
+    },
+    {
+      "diagnosis": "Huntington disease-like 2 (HDL2)",
+      "features": "African ancestry; JPH3 gene mutation",
+      "tests": "JPH3 gene testing"
+    },
+    {
+      "diagnosis": "Spinocerebellar ataxia 17 (HDL4)",
+      "features": "Prominent ataxia; TBP gene expansion",
+      "tests": "TBP gene testing"
+    },
+    {
+      "diagnosis": "Chorea-acanthocytosis",
+      "features": "Orolingual dystonia; self-mutilation; acanthocytes",
+      "tests": "Peripheral smear; VPS13A gene testing"
+    },
+    {
+      "diagnosis": "McLeod syndrome",
+      "features": "X-linked; cardiomyopathy; elevated CK",
+      "tests": "Kell antigen typing; XK gene testing"
+    },
+    {
+      "diagnosis": "Sydenham chorea",
+      "features": "Post-streptococcal; younger patients; self-limited",
+      "tests": "ASO titer; anti-DNAse B"
+    },
+    {
+      "diagnosis": "Benign hereditary chorea",
+      "features": "Childhood onset; non-progressive; NKX2-1 mutation",
+      "tests": "NKX2-1 gene testing; family history"
+    },
+    {
+      "diagnosis": "Wilson's disease",
+      "features": "Younger onset; Kayser-Fleischer rings; hepatic disease",
+      "tests": "Ceruloplasmin; 24-hr urine copper; slit lamp"
+    },
+    {
+      "diagnosis": "Neuroacanthocytosis",
+      "features": "Peripheral neuropathy; seizures; elevated CK",
+      "tests": "Peripheral smear; genetic testing"
+    },
+    {
+      "diagnosis": "Tardive dyskinesia",
+      "features": "Antipsychotic exposure; orobuccal predominant",
+      "tests": "Medication history; AIMS scale"
+    },
+    {
+      "diagnosis": "Anti-NMDA receptor encephalitis",
+      "features": "Psychiatric symptoms; seizures; dyskinesias",
+      "tests": "NMDA receptor antibodies; CSF analysis"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Tetrabenazine reduces chorea in HD",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Huntington Study Group. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16894067/)"
+    },
+    {
+      "recommendation": "Deutetrabenazine reduces chorea with improved tolerability",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Huntington Study Group. JAMA 2016](https://pubmed.ncbi.nlm.nih.gov/27532915/)"
+    },
+    {
+      "recommendation": "CAG repeat length inversely correlates with age of onset",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Andrew et al. Nat Genet 1993](https://pubmed.ncbi.nlm.nih.gov/8401577/)"
+    },
+    {
+      "recommendation": "AAN practice parameter for HD treatment",
+      "evidenceLevel": "Guideline",
+      "source": "[Armstrong & Miyasaki. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/22815562/)"
+    },
+    {
+      "recommendation": "High suicide rate in HD requires screening",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Paulsen et al. J Neuropsychiatry Clin Neurosci 2005](https://pubmed.ncbi.nlm.nih.gov/16179652/)"
+    },
+    {
+      "recommendation": "UHDRS reliable for tracking disease progression",
+      "evidenceLevel": "Class II, Level A",
+      "source": "[Huntington Study Group. Mov Disord 1996](https://pubmed.ncbi.nlm.nih.gov/8684382/)"
+    },
+    {
+      "recommendation": "CYP2D6 genotype affects tetrabenazine metabolism",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Xenazine FDA prescribing information 2008](https://www.accessdata.fda.gov/drugsatfda_docs/label/2008/021894lbl.pdf)"
+    },
+    {
+      "recommendation": "Genetic counseling improves outcomes in at-risk individuals",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Tibben. Handb Clin Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/18808860/)"
+    },
+    {
+      "recommendation": "Dysphagia common and associated with aspiration risk",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Heemskerk & Roos. Dysphagia 2011](https://pubmed.ncbi.nlm.nih.gov/20803049/)"
+    },
+    {
+      "recommendation": "Multidisciplinary care improves outcomes",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Veenhuizen & Bherer. J Huntingtons Dis 2017](https://pubmed.ncbi.nlm.nih.gov/28339403/)"
+    },
+    {
+      "recommendation": "Exercise benefits motor and cognitive function",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Quinn et al. Cochrane Database Syst Rev 2022](https://pubmed.ncbi.nlm.nih.gov/35416314/)"
+    },
+    {
+      "recommendation": "Valbenazine effective for hyperkinetic movements",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Hauser et al. JAMA Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/28241163/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "UHDRS (Unified Huntington's Disease Rating Scale)",
+      "frequency": "Every 6-12 months",
+      "action": "Adjust medications; update care plan",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Depression screening (PHQ-9)",
+      "frequency": "Every visit; monthly if on VMAT2 inhibitor",
+      "action": "Intensify antidepressant; psychiatry referral if PHQ-9 >15",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Suicidality assessment",
+      "frequency": "Every visit",
+      "action": "Immediate psychiatric evaluation; safety planning",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Cognitive assessment (MoCA or MMSE)",
+      "frequency": "Every 6-12 months",
+      "action": "Update care planning; capacity assessment",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight",
+      "frequency": "Every visit",
+      "action": "Increase caloric intake; dietitian referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Swallowing function",
+      "frequency": "Annually or if symptoms",
+      "action": "Modify diet texture; speech therapy; PEG consideration",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ECG (if on VMAT2 inhibitor)",
+      "frequency": "Baseline and with dose changes",
+      "action": "Hold medication if QTc >500 ms; reduce dose",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Functional independence (TFC)",
+      "frequency": "Every 6-12 months",
+      "action": "Adjust level of care; advance care planning",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Caregiver burden assessment",
+      "frequency": "Annually",
+      "action": "Respite care; support resources",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Falls frequency",
+      "frequency": "Each visit",
+      "action": "PT referral; home safety; medication review",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Stable psychiatric status; adequate oral intake; safe swallowing; caregiver available; outpatient follow-up arranged"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Severe psychiatric symptoms requiring stabilization; aspiration pneumonia; significant weight loss requiring evaluation; severe chorea causing exhaustion or injury"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Aspiration with respiratory failure; severe rhabdomyolysis from chorea; neuroleptic malignant syndrome; suicidal attempt requiring medical stabilization"
+    },
+    {
+      "disposition": "Skilled nursing facility",
+      "criteria": "Advanced disease; 24-hour care needs; dysphagia requiring supervision; frequent falls; caregiver unable to provide required care"
+    },
+    {
+      "disposition": "Hospice referral",
+      "criteria": "End-stage disease (TFC stage 5); recurrent aspiration; patient/family goals favor comfort care"
+    }
+  ]
+}

@@ -1,0 +1,1399 @@
+{
+  "id": "frontotemporal-dementia",
+  "title": "Frontotemporal Dementia",
+  "version": "1.1",
+  "icd10": [
+    "** G31.09 (Frontotemporal dementia",
+    "unspecified)",
+    "G31.0 (Frontotemporal dementia)",
+    "F02.80 (Dementia in FTD without behavioral disturbance)",
+    "F02.81 (Dementia in FTD with behavioral disturbance)",
+    "G31.01 (Pick's disease)"
+  ],
+  "scope": "** Diagnosis and management of frontotemporal lobar degeneration syndromes including behavioral variant FTD (bvFTD), semantic variant primary progressive aphasia (svPPA), nonfluent/agrammatic variant PPA (nfvPPA), FTD with motor neuron disease (FTD-ALS), and genetic forms (C9orf72, MAPT, GRN). Covers diagnostic evaluation, symptomatic treatment, behavioral management, genetic counseling, safety planning, and caregiver support. Primarily outpatient-focused with coverage for ED and hospital presentations of behavioral crises.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rule out infection, anemia, malignancy contributing to behavioral changes",
+          "target": "Normal"
+        },
+        {
+          "item": "BMP (Na, K, BUN, Cr, glucose) (CPT 80048)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Metabolic causes of behavioral disturbance (hyponatremia, uremia, hypoglycemia)",
+          "target": "Normal electrolytes, renal function"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism can cause apathy; hyperthyroidism can cause behavioral changes",
+          "target": "0.4-4.0 mIU/L"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency causes neuropsychiatric symptoms and cognitive decline",
+          "target": ">300 pg/mL (>400 optimal)"
+        },
+        {
+          "item": "Folate (CPT 82746)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency contributes to cognitive impairment",
+          "target": ">3 ng/mL"
+        },
+        {
+          "item": "Hepatic panel (AST, ALT, albumin, ammonia) (CPT 80076)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hepatic encephalopathy; nutritional status; liver function for medications",
+          "target": "Normal"
+        },
+        {
+          "item": "Calcium (CPT 82310)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypercalcemia causes neuropsychiatric symptoms",
+          "target": "8.5-10.5 mg/dL"
+        },
+        {
+          "item": "Urinalysis (CPT 81001)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "UTI common cause of acute behavioral changes in elderly",
+          "target": "Negative for infection"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "RPR or VDRL (CPT 86592)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis is treatable cause of behavioral and cognitive changes",
+          "target": "Nonreactive"
+        },
+        {
+          "item": "HIV testing (CPT 87389)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated neurocognitive disorder if risk factors",
+          "target": "Negative"
+        },
+        {
+          "item": "ESR (CPT 85651), CRP (CPT 86140)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory or autoimmune causes; baseline before immunotherapy",
+          "target": "Normal"
+        },
+        {
+          "item": "ANA (CPT 86235), RF (CPT 86431)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen for systemic autoimmune disease",
+          "target": "Negative"
+        },
+        {
+          "item": "Creatine kinase (CPT 82550)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Elevated in FTD-ALS; baseline for motor neuron involvement",
+          "target": "Normal (elevated suggests MND)"
+        },
+        {
+          "item": "EMG/NCS referral (CPT 95907-95913)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If motor symptoms present; evaluate for ALS overlap",
+          "target": "Normal or denervation pattern"
+        },
+        {
+          "item": "Serum progranulin level (CPT 83519)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Low levels suggest GRN mutation (screening test)",
+          "target": "Normal (low <100 ng/mL suggests GRN mutation)"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "C9orf72 hexanucleotide repeat expansion (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Most common genetic cause of FTD; also causes ALS",
+          "target": "<30 repeats (pathogenic >30)"
+        },
+        {
+          "item": "MAPT (tau) gene sequencing (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Familial FTD with parkinsonism; tau-positive pathology",
+          "target": "No pathogenic mutation"
+        },
+        {
+          "item": "GRN (progranulin) gene sequencing (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Familial FTD; asymmetric atrophy; TDP-43 pathology",
+          "target": "No pathogenic mutation"
+        },
+        {
+          "item": "FTD genetic panel (TARDBP, VCP, CHMP2B, FUS) (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Extended genetic evaluation if first-line negative",
+          "target": "No pathogenic mutation"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (CPT 86235)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Rapid behavioral change; history of cancer; atypical features",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-neuronal antibodies (NMDA-R, LGI1, CASPR2, GAD65) (CPT 86255)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune encephalitis mimicking FTD",
+          "target": "Negative"
+        },
+        {
+          "item": "Heavy metal panel (lead, mercury, arsenic) (CPT 83015/83825/82175)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Occupational exposure history; atypical presentation",
+          "target": "Normal"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Cell count, protein, glucose (CPT 89050/89051)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rule out infection, inflammation",
+          "target": "WBC <5, protein <45 mg/dL, glucose >60% serum"
+        },
+        {
+          "item": "CSF Aβ42/Aβ40 ratio (CPT 83519)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Distinguish from AD (normal in FTD)",
+          "target": "Normal ratio >0.08 supports non-AD etiology"
+        },
+        {
+          "item": "CSF total tau (t-tau) (CPT 83519)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Non-specific neurodegeneration marker",
+          "target": "May be elevated but less than AD"
+        },
+        {
+          "item": "CSF phosphorylated tau (p-tau181) (CPT 83519)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "AD-specific; should be normal in FTD",
+          "target": "Normal p-tau supports FTD over AD"
+        },
+        {
+          "item": "CSF NfL (neurofilament light) (CPT 83519)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurodegeneration marker; prognostic; very high in ALS-FTD",
+          "target": "Elevated (higher = faster progression)"
+        },
+        {
+          "item": "14-3-3 protein (CPT 83519)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rapid progression; rule out CJD",
+          "target": "Negative (positive suggests CJD)"
+        },
+        {
+          "item": "RT-QuIC (CPT 83519)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Prion disease confirmation if suspected",
+          "target": "Negative"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (CSF) (CPT 86255)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Subacute behavioral change; seizures",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI Brain without contrast (CPT 70551)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At initial evaluation",
+          "target": "Frontal and/or anterior temporal atrophy; asymmetric patterns; rule out structural causes",
+          "contraindications": "MRI-incompatible devices, severe claustrophobia"
+        },
+        {
+          "item": "CT Head non-contrast (CPT 70450)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If MRI unavailable or contraindicated",
+          "target": "Rule out mass, hemorrhage, hydrocephalus; frontal atrophy visible",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "FDG-PET Brain (CPT 78816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Diagnostic confirmation; differentiate from AD",
+          "target": "Frontal and/or anterior temporal hypometabolism; sparing of posterior parietal (unlike AD)",
+          "contraindications": "None"
+        },
+        {
+          "item": "MRI Brain volumetrics (CPT 70553)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Quantify regional atrophy; track progression",
+          "target": "Frontal/temporal volume loss; hemispheric asymmetry",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "Amyloid PET (CPT 78816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Exclude AD pathology if clinical uncertainty",
+          "target": "Negative amyloid supports FTD diagnosis",
+          "contraindications": "None"
+        },
+        {
+          "item": "EEG (CPT 95819)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Seizures; behavioral episodes; differentiate from CJD",
+          "target": "Usually normal or mild slowing; no periodic discharges (CJD has)",
+          "contraindications": "None"
+        },
+        {
+          "item": "Sleep study (polysomnography) (CPT 95810)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "RBD suggests DLB rather than FTD; sleep disturbance common",
+          "target": "REM without atonia absent (if RBD, reconsider DLB)",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "DaTscan (ioflupane I-123) (CPT 78607)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Parkinsonism present; differentiate PSP/CBD from PD/DLB",
+          "target": "Reduced uptake in PSP/CBD; may be normal early in bvFTD",
+          "contraindications": "Iodine hypersensitivity"
+        },
+        {
+          "item": "Tau PET (flortaucipir) (CPT 78816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Research; distinguish tau-positive from TDP-43 FTD",
+          "target": "Tau-positive FTD shows frontal/temporal uptake",
+          "contraindications": "None"
+        },
+        {
+          "item": "Whole body PET-CT (CPT 78816)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Paraneoplastic workup if suspected",
+          "target": "Rule out occult malignancy",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent (Behavioral Crisis Management)": [
+        {
+          "item": "Lorazepam",
+          "route": "PO/IM/IV",
+          "indication": "Acute severe agitation when de-escalation fails",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Lorazepam 0.5 mg PO/IM/IV"
+              }
+            ],
+            "route": "PO/IM/IV",
+            "instructions": "0.5-1 mg PO or IM; may repeat q30min PRN; max 4 mg; short-term use only",
+            "orderSentence": "Lorazepam 0.5 mg PO/IM/IV"
+          },
+          "contraindications": "Respiratory depression; severe hepatic impairment; paradoxical agitation risk in elderly",
+          "monitoring": "Respiratory status; sedation; paradoxical reactions",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Haloperidol",
+          "route": "IM/IV",
+          "indication": "Severe aggression/psychosis when benzodiazepines insufficient",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Haloperidol 0.5 mg IM/IV"
+              }
+            ],
+            "route": "IM/IV",
+            "instructions": "0.5-2 mg IM q4-6h PRN; lowest effective dose; short-term crisis only",
+            "orderSentence": "Haloperidol 0.5 mg IM/IV"
+          },
+          "contraindications": "QT prolongation; Parkinson's disease; FTD-parkinsonism overlap (avoid if possible)",
+          "monitoring": "QTc; EPS; akathisia; sedation",
+          "ED": "STAT",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Environmental de-escalation",
+          "route": "N/A",
+          "indication": "First-line for all behavioral disturbance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Environmental de-escalation N/A N/A"
+              }
+            ],
+            "route": "N/A",
+            "instructions": "Reduce stimulation; dim lights; calm voice; remove triggers; one-to-one observation; familiar caregiver presence",
+            "orderSentence": "Environmental de-escalation N/A N/A"
+          },
+          "contraindications": "None",
+          "monitoring": "Response to intervention",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments (Behavioral and Neuropsychiatric)": [
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Agitation; irritability; disinhibition; insomnia; compulsive behaviors",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Trazodone 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg BID; titrate by 25-50 mg q3-5d; typical 150-300 mg/day divided; max 400 mg/day",
+            "orderSentence": "Trazodone 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; significant QT prolongation",
+          "monitoring": "Orthostatic hypotension (fall risk); priapism (rare); QTc; sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sertraline (Zoloft)",
+          "route": "PO",
+          "indication": "Depression; apathy; anxiety; compulsive behaviors; disinhibition",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sertraline (Zoloft) 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; increase by 25-50 mg every 1-2 weeks; typical 100-200 mg daily; max 200 mg",
+            "orderSentence": "Sertraline (Zoloft) 25 mg PO"
+          },
+          "contraindications": "MAOIs; uncontrolled seizures (lowers threshold slightly)",
+          "monitoring": "GI symptoms; bleeding risk; apathy (rarely worsens)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Citalopram",
+          "route": "PO",
+          "indication": "Depression; anxiety; compulsive behaviors",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Citalopram 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg daily; max 20 mg in elderly due to QT prolongation risk",
+            "orderSentence": "Citalopram 10 mg PO"
+          },
+          "contraindications": "QT prolongation; concurrent QT-prolonging drugs; severe hepatic impairment",
+          "monitoring": "ECG at baseline if cardiac risk; QTc monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Escitalopram (Lexapro)",
+          "route": "PO",
+          "indication": "Depression; anxiety; better tolerated than citalopram",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Escitalopram (Lexapro) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; increase to 10 mg after 1 week; max 10 mg in elderly",
+            "orderSentence": "Escitalopram (Lexapro) 5 mg PO"
+          },
+          "contraindications": "QT prolongation; concurrent MAOIs",
+          "monitoring": "QTc if cardiac risk factors",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fluvoxamine",
+          "route": "PO",
+          "indication": "Compulsive behaviors; repetitive behaviors; may have specific benefit in FTD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Fluvoxamine 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg qHS; titrate by 25-50 mg weekly; typical 100-200 mg/day; max 300 mg/day",
+            "orderSentence": "Fluvoxamine 25 mg PO"
+          },
+          "contraindications": "MAOIs; alosetron, tizanidine (drug interactions)",
+          "monitoring": "Multiple drug interactions (CYP1A2, 2C19, 3A4 inhibitor); GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mirtazapine (Remeron)",
+          "route": "PO",
+          "indication": "Depression with poor appetite, weight loss, and insomnia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "7.5 mg",
+                "orderSentence": "Mirtazapine (Remeron) 7.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 7.5-15 mg qHS; may increase to 30-45 mg qHS; lower doses more sedating",
+            "orderSentence": "Mirtazapine (Remeron) 7.5 mg PO"
+          },
+          "contraindications": "MAOIs; angle-closure glaucoma",
+          "monitoring": "Weight gain (often desired in FTD); sedation; hyperlipidemia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Bupropion (Wellbutrin)",
+          "route": "PO",
+          "indication": "Apathy-predominant FTD; depression; may help with motivation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Bupropion (Wellbutrin) 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg BID or 150 mg SR daily; titrate to 150 mg SR BID or 300 mg XL daily",
+            "orderSentence": "Bupropion (Wellbutrin) 100 mg PO"
+          },
+          "contraindications": "Seizure disorder; bulimia/anorexia; concurrent MAOIs; abrupt alcohol withdrawal",
+          "monitoring": "Seizure risk (dose-related); insomnia; agitation (may worsen some patients)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Sleep disturbance; circadian rhythm dysfunction; sundowning",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg",
+                "orderSentence": "Melatonin 3 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 3 mg qHS, 30 min before bed; may increase to 6-9 mg if needed",
+            "orderSentence": "Melatonin 3 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Daytime drowsiness; minimal side effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory (Behavioral Management)": [
+        {
+          "item": "Quetiapine (Seroquel)",
+          "route": "PO",
+          "indication": "Severe agitation/psychosis when non-pharmacologic and first-line fail",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg",
+                "orderSentence": "Quetiapine (Seroquel) 12.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 12.5-25 mg qHS; titrate slowly (25 mg increments); keep dose as low as possible; max 200 mg/day",
+            "orderSentence": "Quetiapine (Seroquel) 12.5 mg PO"
+          },
+          "contraindications": "Black box: increased mortality in dementia; avoid in FTD-parkinsonism",
+          "monitoring": "Metabolic effects; sedation; falls; QTc; EPS",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Olanzapine",
+          "route": "PO/IM",
+          "indication": "Severe agitation when other options fail; IM for acute crisis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg",
+                "orderSentence": "Olanzapine 2.5 mg PO/IM"
+              }
+            ],
+            "route": "PO/IM",
+            "instructions": "PO: Start 2.5 mg daily; increase slowly; max 10 mg; IM: 2.5-5 mg for acute crisis",
+            "orderSentence": "Olanzapine 2.5 mg PO/IM"
+          },
+          "contraindications": "Black box: increased mortality in dementia; diabetes; QT prolongation",
+          "monitoring": "Weight gain; metabolic syndrome; sedation; EPS",
+          "ED": "EXT",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Dextromethorphan/quinidine (Nuedexta)",
+          "route": "PO",
+          "indication": "Pseudobulbar affect; emotional lability; pathological laughing/crying",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20/10 mg",
+                "orderSentence": "Dextromethorphan/quinidine (Nuedexta) 20/10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 20/10 mg daily x 7 days; then 20/10 mg BID",
+            "orderSentence": "Dextromethorphan/quinidine (Nuedexta) 20/10 mg PO"
+          },
+          "contraindications": "QT prolongation; concurrent MAOIs; quinidine hypersensitivity; complete AV block",
+          "monitoring": "QTc; avoid in hepatic/renal impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Valproic acid",
+          "route": "PO",
+          "indication": "Impulsivity; aggression; mood instability (off-label)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "125 mg",
+                "orderSentence": "Valproic acid 125 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 125-250 mg BID; titrate to 500-1000 mg/day; monitor levels",
+            "orderSentence": "Valproic acid 125 mg PO"
+          },
+          "contraindications": "Hepatic disease; urea cycle disorders; mitochondrial disorders",
+          "monitoring": "Valproate level, LFTs, CBC, ammonia; weight gain; tremor; thrombocytopenia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Memantine (Namenda)",
+          "route": "PO",
+          "indication": "May help some behavioral symptoms; limited evidence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Memantine (Namenda) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; increase by 5 mg/week to 10 mg BID; evidence weak in FTD",
+            "orderSentence": "Memantine (Namenda) 5 mg PO"
+          },
+          "contraindications": "Severe renal impairment (reduce dose)",
+          "monitoring": "Confusion, dizziness; generally well tolerated",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylphenidate",
+          "route": "PO",
+          "indication": "Severe apathy unresponsive to other treatments",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg",
+                "orderSentence": "Methylphenidate 2.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5-5 mg BID (morning and noon); titrate slowly; max 20 mg/day",
+            "orderSentence": "Methylphenidate 2.5 mg PO"
+          },
+          "contraindications": "Severe anxiety; cardiac arrhythmias; glaucoma; concurrent MAOIs",
+          "monitoring": "BP, HR; appetite; insomnia; agitation; abuse potential",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Treatments to AVOID in FTD": [
+        {
+          "item": "Donepezil (Aricept)",
+          "route": "PO",
+          "indication": "AVOID - May worsen behavioral symptoms in FTD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "AVOID",
+                "orderSentence": "Donepezil (Aricept) AVOID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Do NOT use; cholinesterase inhibitors can worsen disinhibition, agitation, and behavioral symptoms in FTD",
+            "orderSentence": "Donepezil (Aricept) AVOID PO"
+          },
+          "contraindications": "FTD diagnosis",
+          "monitoring": "Worsening behavior if inadvertently started",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Rivastigmine (Exelon)",
+          "route": "PO/TD",
+          "indication": "AVOID - May worsen behavioral symptoms in FTD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "AVOID",
+                "orderSentence": "Rivastigmine (Exelon) AVOID PO/TD"
+              }
+            ],
+            "route": "PO/TD",
+            "instructions": "Do NOT use; cholinesterase inhibitors not recommended in FTD; may cause paradoxical worsening",
+            "orderSentence": "Rivastigmine (Exelon) AVOID PO/TD"
+          },
+          "contraindications": "FTD diagnosis",
+          "monitoring": "Worsening behavior if inadvertently started",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Galantamine (Razadyne)",
+          "route": "PO",
+          "indication": "AVOID - May worsen behavioral symptoms in FTD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "AVOID",
+                "orderSentence": "Galantamine (Razadyne) AVOID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Do NOT use; cholinesterase inhibitors contraindicated in FTD",
+            "orderSentence": "Galantamine (Razadyne) AVOID PO"
+          },
+          "contraindications": "FTD diagnosis",
+          "monitoring": "Worsening behavior if inadvertently started",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "FTD-ALS/Motor Neuron Disease Overlap": [
+        {
+          "item": "Riluzole",
+          "route": "PO",
+          "indication": "FTD with ALS overlap; may modestly slow MND progression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Riluzole 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg PO BID; take 1 hour before or 2 hours after meals",
+            "orderSentence": "Riluzole 50 mg PO"
+          },
+          "contraindications": "Hepatic impairment; pregnancy",
+          "monitoring": "LFTs monthly x 3 months, then q3mo; neutropenia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Edaravone (Radicava)",
+          "route": "IV/PO",
+          "indication": "FTD-ALS if early in disease course",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Edaravone (Radicava) 60 mg IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Initial: 60 mg IV daily x 14 days; maintenance: 60 mg IV daily x 10 days of 14-day cycles; oral formulation available",
+            "orderSentence": "Edaravone (Radicava) 60 mg IV/PO"
+          },
+          "contraindications": "Hypersensitivity; sulfite allergy",
+          "monitoring": "Infusion reactions; hypersensitivity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "~~Sodium phenylbutyrate/taurursodiol (Relyvrio)~~",
+          "route": "~~PO~~",
+          "indication": "~~FTD-ALS overlap; neuroprotective~~",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "**WITHDRAWN**",
+                "orderSentence": "~~Sodium phenylbutyrate/taurursodiol (Relyvrio)~~ **WITHDRAWN** N/A"
+              }
+            ],
+            "route": "N/A",
+            "instructions": "**WITHDRAWN FROM MARKET (April 2024)** - Amylyx withdrew Relyvrio after the Phase III PHOENIX trial failed to demonstrate efficacy. No longer available for prescribing.",
+            "orderSentence": "~~Sodium phenylbutyrate/taurursodiol (Relyvrio)~~ **WITHDRAWN** N/A"
+          },
+          "contraindications": "N/A",
+          "monitoring": "N/A",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Behavioral/cognitive neurology for diagnosis confirmation, FTD subtype classification, and treatment guidance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychology for comprehensive cognitive testing to establish baseline, characterize deficits, and track progression",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic counseling for all patients with suspected FTD given high heritability (30-50% familial); discuss testing implications",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for language variant PPA evaluation, communication strategies, and swallowing assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Geriatric psychiatry for complex behavioral management and psychotropic medication optimization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for caregiver support resources, community services, respite care, and long-term care planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment, cognitive strategies, home safety evaluation, and activity structuring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for fall prevention, mobility assessment, and exercise program particularly if motor features present",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care for symptom management and goals of care discussions, especially with advanced disease or ALS overlap",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuromuscular specialist if motor neuron disease features (weakness, fasciculations, bulbar symptoms) present",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Elder law attorney for advance directives, healthcare proxy, conservatorship, and financial planning while capacity exists",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately if sudden worsening of behavior, new weakness, difficulty breathing, or inability to swallow safely",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Complete advance directives (living will, healthcare proxy, POLST) while patient retains capacity; FTD can progress rapidly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Designate durable power of attorney for healthcare AND finances early as judgment may be impaired before memory",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not drive; FTD impairs judgment, impulse control, and decision-making even if memory appears intact",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Remove access to weapons, power tools, and dangerous equipment due to impaired judgment and safety awareness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Supervise financial decisions; patients with FTD are vulnerable to fraud, impulsive spending, and poor judgment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Secure medications to prevent accidental or intentional overdose; use locked medication storage",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Monitor for wandering; consider GPS tracking devices and door alarms as disease progresses",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report diagnosis to DMV per state requirements; most states require physician reporting for unsafe drivers",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Genetic testing results have implications for family members; discuss with genetic counselor before testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Structured daily routine with consistent schedule reduces anxiety and behavioral symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular physical activity (walking, supervised exercise) improves mood and maintains function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Simplified communication using short sentences, yes/no questions, and visual cues for PPA variants",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid overstimulation; reduce noise, crowds, and complex environments that trigger agitation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Caregiver education through AFTD (Association for Frontotemporal Degeneration) resources and support groups",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Respite care for caregivers to prevent burnout; FTD caregiving is particularly demanding due to behavioral symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Address hyperorality and dietary changes with portion control, healthy snack availability, and locked food storage if needed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Safe environment modifications: remove fall hazards, lock cabinets with dangerous items, install stove knob covers",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "One-to-one supervision may be needed for safety; consider adult day programs or in-home care",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation and alcohol avoidance to prevent additional brain injury and drug interactions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Alzheimer's disease",
+      "features": "Memory impairment prominent early; episodic memory loss; posterior cortical atrophy pattern",
+      "tests": "CSF Aβ42 low, p-tau elevated; amyloid PET positive; temporal-parietal atrophy on MRI"
+    },
+    {
+      "diagnosis": "Dementia with Lewy bodies",
+      "features": "Visual hallucinations; parkinsonism; REM sleep behavior disorder; fluctuating cognition",
+      "tests": "DaTscan reduced; RBD on sleep study; better response to cholinesterase inhibitors"
+    },
+    {
+      "diagnosis": "Primary psychiatric disorder",
+      "features": "Onset often younger; personal/family psychiatric history; may have insight; responds to treatment",
+      "tests": "Normal MRI; normal FDG-PET; improvement with psychiatric treatment"
+    },
+    {
+      "diagnosis": "Huntington's disease",
+      "features": "Chorea; family history (autosomal dominant); psychiatric symptoms precede motor",
+      "tests": "CAG repeat expansion; caudate atrophy on MRI"
+    },
+    {
+      "diagnosis": "Progressive supranuclear palsy (PSP)",
+      "features": "Vertical gaze palsy; axial rigidity; early falls; frontal features",
+      "tests": "\"Hummingbird sign\" on MRI; poor levodopa response"
+    },
+    {
+      "diagnosis": "Corticobasal syndrome (CBS)",
+      "features": "Asymmetric apraxia; alien limb; cortical sensory loss; dystonia",
+      "tests": "Asymmetric atrophy; may have FTD overlap"
+    },
+    {
+      "diagnosis": "Creutzfeldt-Jakob disease",
+      "features": "Rapid progression (weeks-months); myoclonus; ataxia; startle",
+      "tests": "MRI DWI ribboning; EEG periodic discharges; CSF RT-QuIC positive"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis",
+      "features": "Subacute onset; seizures; psychiatric features; often younger",
+      "tests": "Autoantibody panel positive; MRI limbic changes; CSF inflammation"
+    },
+    {
+      "diagnosis": "Normal pressure hydrocephalus",
+      "features": "Gait disturbance predominant; urinary incontinence; magnetic gait",
+      "tests": "MRI ventriculomegaly out of proportion to atrophy; large-volume LP improvement"
+    },
+    {
+      "diagnosis": "Vascular dementia",
+      "features": "Stepwise decline; vascular risk factors; focal deficits",
+      "tests": "Extensive white matter disease and strategic infarcts on MRI"
+    },
+    {
+      "diagnosis": "Medication/substance-induced",
+      "features": "Temporal relationship to drug exposure; anticholinergics, sedatives common culprits",
+      "tests": "Medication reconciliation; improvement with discontinuation"
+    },
+    {
+      "diagnosis": "Late-onset bipolar disorder",
+      "features": "Episodic mood symptoms; family history; intact cognition between episodes",
+      "tests": "Normal neuroimaging; psychiatric evaluation; treatment response"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Diagnostic criteria for bvFTD (International Consensus)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Rascovsky et al. Brain 2011](https://pubmed.ncbi.nlm.nih.gov/21824939/)"
+    },
+    {
+      "recommendation": "Diagnostic criteria for PPA variants",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Gorno-Tempini et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21325651/)"
+    },
+    {
+      "recommendation": "SSRIs for behavioral symptoms in FTD",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Herrmann et al. J Clin Psychiatry 2012](https://pubmed.ncbi.nlm.nih.gov/22687702/)"
+    },
+    {
+      "recommendation": "Trazodone for FTD behavioral symptoms",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Lebert et al. Dement Geriatr Cogn Disord 2004](https://pubmed.ncbi.nlm.nih.gov/15178936/)"
+    },
+    {
+      "recommendation": "Cholinesterase inhibitors not recommended in FTD",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Mendez et al. Am J Alzheimers Dis Other Demen 2007](https://pubmed.ncbi.nlm.nih.gov/17804830/)"
+    },
+    {
+      "recommendation": "Antipsychotic mortality risk in dementia",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Schneider et al. JAMA 2005](https://pubmed.ncbi.nlm.nih.gov/16219884/)"
+    },
+    {
+      "recommendation": "C9orf72 as most common genetic cause of FTD/ALS",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[DeJesus-Hernandez et al. Neuron 2011](https://pubmed.ncbi.nlm.nih.gov/21944778/); [Renton et al. Neuron 2011](https://pubmed.ncbi.nlm.nih.gov/21944779/)"
+    },
+    {
+      "recommendation": "MAPT and GRN mutations in familial FTD",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Rohrer et al. Lancet Neurol 2009](https://pubmed.ncbi.nlm.nih.gov/19345567/)"
+    },
+    {
+      "recommendation": "FDG-PET in FTD diagnosis",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Foster et al. Ann Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/17315189/)"
+    },
+    {
+      "recommendation": "CSF NfL as prognostic biomarker in FTD",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Rohrer et al. Neurology 2016](https://pubmed.ncbi.nlm.nih.gov/27164711/)"
+    },
+    {
+      "recommendation": "Memantine limited efficacy in FTD",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Boxer et al. Lancet Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/23684085/)"
+    },
+    {
+      "recommendation": "FTD-ALS continuum",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Burrell et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27083437/)"
+    },
+    {
+      "recommendation": "Serum progranulin as GRN mutation screen",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Finch et al. J Mol Diagn 2009](https://pubmed.ncbi.nlm.nih.gov/19359499/)"
+    },
+    {
+      "recommendation": "Practice guidelines for FTD management",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Tsai et al. Neurology 2021](https://pubmed.ncbi.nlm.nih.gov/34341099/)"
+    },
+    {
+      "recommendation": "Riluzole in ALS",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Miller et al. Cochrane 2012](https://pubmed.ncbi.nlm.nih.gov/22419334/)"
+    },
+    {
+      "recommendation": "Relyvrio (AMX0035) withdrawn after PHOENIX trial failure",
+      "evidenceLevel": "N/A",
+      "source": "Amylyx Pharmaceuticals press release, April 2024; PHOENIX trial (NCT05021536)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Cognitive testing (MoCA, MMSE, or FTLD-specific battery)",
+      "frequency": "Every 6-12 months",
+      "action": "Adjust care level; medication review; genetics if rapid",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Frontal assessment battery (FAB)",
+      "frequency": "Every 6-12 months",
+      "action": "Increase supervision; safety planning",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Functional status (ADL/IADL, FBI, CBI)",
+      "frequency": "Every 6 months",
+      "action": "Increase caregiver support; consider placement",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Behavioral assessment (NPI-Q, FBI)",
+      "frequency": "Each visit",
+      "action": "Adjust medications; non-pharmacologic strategies",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Motor function (if FTD-ALS)",
+      "frequency": "Every 3-6 months",
+      "action": "Respiratory support; PT/OT; feeding tube discussion",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight",
+      "frequency": "Each visit",
+      "action": "Nutritional consult; address hyperphagia or dysphagia",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Swallowing function",
+      "frequency": "Every 6-12 months or if symptoms",
+      "action": "Speech therapy; diet modification; feeding tube if needed",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Caregiver burden (Zarit Burden Interview)",
+      "frequency": "Every 6-12 months",
+      "action": "Respite care; support groups; social work",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Safety assessment",
+      "frequency": "Each visit",
+      "action": "Increase supervision; remove hazards; consider placement",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ECG (if on QT-prolonging medications)",
+      "frequency": "Baseline; with dose changes",
+      "action": "Reduce dose or switch medication",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "LFTs (if on valproic acid or riluzole)",
+      "frequency": "Monthly x 3, then q3mo",
+      "action": "Reduce or discontinue if >3x ULN",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Behavioral crisis resolved; safe environment; adequate caregiver supervision; outpatient follow-up arranged; medications optimized"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Severe behavioral disturbance unsafe for home; medical workup needed; medication adjustment requiring monitoring; caregiver unable to manage"
+    },
+    {
+      "disposition": "Admit to psychiatry",
+      "criteria": "Danger to self or others; severe aggression; psychotic features; requires locked unit for safety"
+    },
+    {
+      "disposition": "Memory care/Long-term care",
+      "criteria": "Progressive decline; wandering risk; 24-hour supervision needed; caregiver unable to provide safe care"
+    },
+    {
+      "disposition": "Hospice",
+      "criteria": "End-stage FTD; minimal responsiveness; recurrent aspiration; weight loss; goals focused on comfort; FVC <50% in FTD-ALS"
+    },
+    {
+      "disposition": "Outpatient follow-up",
+      "criteria": "Neurology/cognitive neurology every 3-6 months; more frequent if on psychotropics or rapid progression; genetics follow-up after testing"
+    }
+  ]
+}
