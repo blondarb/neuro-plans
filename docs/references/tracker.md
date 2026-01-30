@@ -9,7 +9,7 @@ title: Template Tracker
 **Created:** January 15, 2026
 **Last Updated:** January 30, 2026
 **Target:** 150+ validated templates
-**Current Status:** 62 templates approved
+**Current Status:** 67 templates approved
 
 ---
 
@@ -63,13 +63,13 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ⬜ | Headache - Cluster Evaluation | R51.9 | 🎯 OPD | Broad DDx approach |
 | ✅ | Migraine (without Aura) | G43.909 | 🎯 OPD | Approved |
 | ✅ | Migraine with Aura | G43.109 | 🎯 OPD | Approved |
-| ⬜ | Chronic Migraine | G43.709 | 🎯 OPD | Preventive therapy, CGRP agents |
+| ✅ | Chronic Migraine | G43.709 | 🎯 OPD | Approved |
 | ⬜ | Status Migrainosus | G43.901 | 🎯 OPD | Acute management |
 | ✅ | Cluster Headache | G44.009 | 🎯 OPD | Approved |
 | ✅ | Tension-Type Headache | G44.209 | 🎯 OPD | Approved |
 | ✅ | Medication Overuse Headache | G44.41 | 🎯 OPD | Approved |
 | ✅ | Idiopathic Intracranial Hypertension (IIH) | G93.2 | 🎯 OPD | Approved |
-| ⬜ | Low Pressure Headache / SIH | G96.00 | 🎯 OPD | Post-LP, spontaneous |
+| ✅ | Low Pressure Headache / SIH | G96.00 | 🎯 OPD | Approved |
 | ✅ | Trigeminal Neuralgia | G50.0 | 🎯 OPD | Approved |
 | ⬜ | New Daily Persistent Headache | G44.52 | 🎯 OPD | Refractory cases |
 | ⬜ | Thunderclap Headache Evaluation | R51.9 | 🎯 OPD | SAH, RCVS, other emergencies |
@@ -135,8 +135,8 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Huntington's Disease | G10 | 🎯 OPD | Approved |
 | ✅ | Tardive Dyskinesia | G24.01 | 🎯 OPD | Approved |
 | ✅ | Restless Legs Syndrome | G25.81 | 🎯 OPD | Approved |
-| ⬜ | Drug-Induced Parkinsonism | G21.11 | 🎯 OPD | Reversible |
-| ⬜ | Wilson's Disease | E83.01 | 🎯 OPD | Young onset movement disorder |
+| ✅ | Drug-Induced Parkinsonism | G21.11 | 🎯 OPD | Approved |
+| ✅ | Wilson's Disease | E83.01 | 🎯 OPD | Approved |
 | ⬜ | Progressive Supranuclear Palsy (PSP) | G23.1 | 🎯 OPD | Atypical parkinsonism |
 | ⬜ | Multiple System Atrophy (MSA) | G90.3 | 🎯 OPD | Atypical parkinsonism |
 | ⬜ | Corticobasal Degeneration (CBD) | G31.85 | 🎯 OPD | Rare |
@@ -242,7 +242,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Wernicke Encephalopathy | E51.2 | 🎯 OPD | Approved |
 | ⬜ | Horner Syndrome | G90.2 | 🎯 OPD | Localization |
 | ⬜ | Nystagmus Evaluation | H55.00 | 🎯 OPD | Central vs peripheral |
-| ⬜ | Post-Concussion Syndrome | F07.81 | 🎯 OPD | Common |
+| ✅ | Post-Concussion Syndrome | F07.81 | 🎯 OPD | Approved |
 | ⬜ | Traumatic Brain Injury (TBI) | S06.9 | 🎯 OPD | ED evaluation |
 | ⬜ | Chronic Traumatic Encephalopathy (CTE) | G31.89 | 🎯 OPD | Emerging area |
 | ⬜ | Sleep Apnea (Neurologic Aspects) | G47.33 | 🎯 OPD | Usually sleep medicine |

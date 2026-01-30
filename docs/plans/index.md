@@ -109,6 +109,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Medication Overuse Headache](medication-overuse-headache.md) | HOSP, OPD | G44.40, G44.41 |
 | [Migraine with Aura](migraine-with-aura.md) | ED, HOSP, OPD | G43.109, G43.101, G43.119 |
 | [Tension-Type Headache](tension-headache.md) | ED, HOSP, OPD | G44.209, G44.219, G44.221 |
+| [Chronic Migraine](chronic-migraine.md) | ED, HOSP, OPD | G43.709, G43.719, G43.701 |
+| [Low Pressure Headache / SIH](low-pressure-headache.md) | ED, HOSP, OPD | G96.00, G96.01, G96.02, G97.0 |
 
 ---
 
@@ -122,6 +124,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Dystonia](dystonia.md) | ED, HOSP, OPD | G24.9, G24.1, G24.2, G24.3 |
 | [Huntington's Disease](huntingtons-disease.md) | ED, HOSP, OPD | G10, F02.80, F02.81 |
 | [Tardive Dyskinesia](tardive-dyskinesia.md) | ED, HOSP, OPD | G24.01, G24.02, G24.09 |
+| [Drug-Induced Parkinsonism](drug-induced-parkinsonism.md) | ED, HOSP, OPD | G21.11, G21.19, G21.0 |
+| [Wilson's Disease](wilsons-disease.md) | ED, HOSP, OPD, ICU | E83.01, G25.2 |
 
 ---
 
@@ -194,6 +198,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [Vertigo / Dizziness](vertigo-dizziness-evaluation.md) | ED, HOSP, OPD | R42, H81.10 |
+| [Post-Concussion Syndrome](post-concussion-syndrome.md) | ED, HOSP, OPD | F07.81, S06.0X0A |
 
 ---
 

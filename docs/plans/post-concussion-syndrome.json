@@ -1,0 +1,1903 @@
+{
+  "id": "post-concussion-syndrome",
+  "title": "Post-Concussion Syndrome",
+  "version": "1.1",
+  "icd10": [
+    "** F07.81 (Postconcussional syndrome)",
+    "S06.0X0A (Concussion without loss of consciousness",
+    "initial encounter)",
+    "S06.0X1A (Concussion with loss of consciousness of 30 minutes or less",
+    "initial encounter)",
+    "S06.0X9A (Concussion with loss of consciousness of unspecified duration",
+    "initial encounter)",
+    "F07.89 (Other personality and behavioral disorders due to known physiological condition)",
+    "G44.309 (Post-traumatic headache",
+    "unspecified",
+    "not intractable)",
+    "G44.319 (Post-traumatic headache",
+    "unspecified",
+    "intractable)",
+    "R41.3 (Other amnesia)",
+    "R42 (Dizziness and giddiness)",
+    "R53.83 (Other fatigue)"
+  ],
+  "scope": "** Evaluation and management of persistent symptoms following mild traumatic brain injury (mTBI) or concussion in adults, defined as symptom persistence beyond 3 months from injury. Covers symptom-specific pharmacologic management (headache, dizziness, cognitive dysfunction, sleep disturbance, mood changes), vestibular rehabilitation, cognitive rehabilitation, graded return-to-activity protocols, neuropsychological testing, and mental health screening/treatment. Applicable primarily in outpatient setting with ED and inpatient considerations for acute re-evaluation. Excludes acute concussion management (first 0-4 weeks), moderate-severe TBI, pediatric concussion, and sports-specific return-to-play protocols.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Anemia can worsen fatigue, dizziness; baseline",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Electrolyte abnormalities, renal/hepatic function for medication dosing",
+          "target": "Normal"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism mimics PCS symptoms (fatigue, cognitive slowing, mood)",
+          "target": "Normal (0.4-4.0 mIU/L)"
+        },
+        {
+          "item": "Vitamin D, 25-OH (CPT 82306)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency common after TBI; associated with fatigue, mood, cognitive impairment",
+          "target": ">30 ng/mL"
+        },
+        {
+          "item": "Ferritin (CPT 82728)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Iron deficiency causes fatigue, cognitive impairment; especially in women",
+          "target": ">50 ng/mL"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency causes cognitive impairment, fatigue, neuropathy",
+          "target": ">300 pg/mL"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory markers if autoimmune or inflammatory etiology suspected",
+          "target": "Normal"
+        },
+        {
+          "item": "Folate (CPT 82746)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency contributes to fatigue, cognitive dysfunction",
+          "target": "Normal"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Low levels worsen headache and fatigue",
+          "target": ">1.8 mg/dL"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes/prediabetes contributes to cognitive impairment, neuropathy",
+          "target": "<5.7%"
+        },
+        {
+          "item": "Free T4 (CPT 84439)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If TSH abnormal; pituitary dysfunction post-TBI",
+          "target": "Normal"
+        },
+        {
+          "item": "Morning cortisol (CPT 82533)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Post-traumatic hypopituitarism (fatigue, hypotension, cognitive decline)",
+          "target": ">10 mcg/dL (AM)"
+        },
+        {
+          "item": "IGF-1 (CPT 84305)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Growth hormone deficiency post-TBI (fatigue, body composition, cognition)",
+          "target": "Age-adjusted normal"
+        },
+        {
+          "item": "Prolactin (CPT 84146)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Pituitary dysfunction screening post-TBI",
+          "target": "Normal"
+        },
+        {
+          "item": "Testosterone (males) (CPT 84403)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Post-traumatic hypogonadism (fatigue, mood, cognition)",
+          "target": "Normal for age"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Comprehensive pituitary panel",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If clinical suspicion for hypopituitarism (fatigue, weight gain, hyponatremia)",
+          "target": "Normal"
+        },
+        {
+          "item": "ACTH stimulation test (CPT 80400)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Adrenal insufficiency post-TBI if low morning cortisol",
+          "target": "Normal cortisol response"
+        },
+        {
+          "item": "GH stimulation test",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Growth hormone deficiency if low IGF-1 and clinical suspicion",
+          "target": "Normal GH peak"
+        },
+        {
+          "item": "Autoimmune panel (ANA, anti-TPO)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune thyroiditis, SLE if clinical suspicion",
+          "target": "Negative"
+        },
+        {
+          "item": "Heavy metals (lead, mercury)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Environmental exposure contributing to cognitive symptoms",
+          "target": "Normal"
+        },
+        {
+          "item": "Sleep study referral (polysomnography) (CPT 95810)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Post-traumatic sleep apnea or narcolepsy if excessive daytime sleepiness",
+          "target": "Normal AHI; normal sleep architecture"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "If acute re-presentation with new/worsening symptoms, worst headache, focal deficits",
+          "target": "Rule out hemorrhage, mass, hydrocephalus",
+          "contraindications": "Pregnancy (relative)"
+        },
+        {
+          "item": "MRI brain without contrast (CPT 70551)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within 2-4 weeks of persistent symptoms; or earlier if red flags",
+          "target": "Rule out structural lesion, contusion, DAI, subdural hematoma",
+          "contraindications": "Pacemaker, metal implants"
+        },
+        {
+          "item": "Videonystagmography (VNG) / vestibular testing (CPT 92540-92547)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If persistent dizziness/balance impairment >4 weeks",
+          "target": "Identify peripheral vs central vestibular dysfunction",
+          "contraindications": "None significant"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If progressive symptoms, new focal deficits, or concern for mass/inflammation",
+          "target": "Rule out mass, inflammation, enhancement",
+          "contraindications": "Contrast allergy, renal disease"
+        },
+        {
+          "item": "MRI cervical spine (CPT 72141)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If persistent neck pain, cervicogenic headache, radiculopathy",
+          "target": "Rule out disc herniation, ligamentous injury",
+          "contraindications": "Pacemaker, metal implants"
+        },
+        {
+          "item": "CT angiography head/neck (CPT 70496/70498)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "If new neurologic deficit, concern for dissection",
+          "target": "Rule out vascular dissection, stenosis",
+          "contraindications": "Contrast allergy, renal insufficiency"
+        },
+        {
+          "item": "EEG routine (CPT 95816)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If post-traumatic seizures suspected, episodic symptoms",
+          "target": "Rule out epileptiform activity",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Audiogram (CPT 92557)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If hearing loss, tinnitus",
+          "target": "Quantify hearing loss; identify type",
+          "contraindications": "None"
+        },
+        {
+          "item": "VEMP testing (CPT 92517)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If persistent vestibular symptoms; otolith dysfunction",
+          "target": "Otolith function assessment",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Dix-Hallpike maneuver (clinical test)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If positional dizziness",
+          "target": "Positive for BPPV (nystagmus pattern)",
+          "contraindications": "Cervical spine injury, severe positional vertigo"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "fMRI (functional MRI)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Research/specialized centers for refractory cases",
+          "target": "Altered connectivity patterns",
+          "contraindications": "Standard MRI contraindications"
+        },
+        {
+          "item": "DTI (diffusion tensor imaging)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Research; suspected diffuse axonal injury",
+          "target": "White matter tract disruption",
+          "contraindications": "Standard MRI contraindications"
+        },
+        {
+          "item": "PET-CT brain",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Refractory cases; research settings",
+          "target": "Regional metabolic abnormalities",
+          "contraindications": "Pregnancy, uncontrolled diabetes"
+        },
+        {
+          "item": "Neuropsychological testing (CPT 96132-96133)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "3+ months post-injury if cognitive complaints persist",
+          "target": "Objective cognitive deficits; identify pattern",
+          "contraindications": "Patient cooperation; acute distress"
+        },
+        {
+          "item": "Oculomotor/saccade testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If persistent visual/reading difficulties",
+          "target": "Saccadic dysfunction, convergence insufficiency",
+          "contraindications": "None"
+        },
+        {
+          "item": "Computerized neurocognitive testing (ImPACT, etc.)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Baseline comparison if available; track recovery",
+          "target": "Return to baseline",
+          "contraindications": "Patient cooperation"
+        }
+      ]
+    },
+    "Treatment": {
+      "Post-Traumatic Headache Treatment": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Mild-moderate post-traumatic headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mg",
+                "orderSentence": "Acetaminophen 500-1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "500-1000 mg PO q6h PRN; max 3000 mg/day",
+            "orderSentence": "Acetaminophen 500-1000 mg PO"
+          },
+          "contraindications": "Hepatic disease, chronic alcohol use",
+          "monitoring": "LFTs if frequent use",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "Mild-moderate post-traumatic headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400-600 mg",
+                "orderSentence": "Ibuprofen 400-600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-600 mg PO q6-8h PRN with food; max 2400 mg/day; limit to <15 days/month",
+            "orderSentence": "Ibuprofen 400-600 mg PO"
+          },
+          "contraindications": "Renal disease, GI bleeding, aspirin allergy",
+          "monitoring": "Renal function; risk of MOH",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Naproxen sodium",
+          "route": "PO",
+          "indication": "Mild-moderate post-traumatic headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250-500 mg",
+                "orderSentence": "Naproxen sodium 250-500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "250-500 mg PO BID PRN; max 1250 mg/day; limit to <15 days/month",
+            "orderSentence": "Naproxen sodium 250-500 mg PO"
+          },
+          "contraindications": "Renal disease, GI bleeding",
+          "monitoring": "Renal function; risk of MOH",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "First-line preventive for post-traumatic headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Amitriptyline 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg PO QHS; increase by 10 mg every 1-2 weeks; target 25-75 mg QHS; max 150 mg",
+            "orderSentence": "Amitriptyline 10 mg PO"
+          },
+          "contraindications": "Cardiac arrhythmia, glaucoma, urinary retention, recent MI",
+          "monitoring": "ECG at baseline; anticholinergic effects; weight gain; dry mouth",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nortriptyline",
+          "route": "PO",
+          "indication": "Alternative TCA for post-traumatic headache (fewer anticholinergic effects)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Nortriptyline 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg PO QHS; increase by 10 mg every 1-2 weeks; target 25-75 mg QHS; max 150 mg",
+            "orderSentence": "Nortriptyline 10 mg PO"
+          },
+          "contraindications": "Cardiac arrhythmia, glaucoma, urinary retention, recent MI",
+          "monitoring": "ECG at baseline; anticholinergic effects (less than amitriptyline); weight gain",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topiramate",
+          "route": "PO",
+          "indication": "Preventive for post-traumatic headache (second-line)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Topiramate 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg PO QHS; increase by 25 mg/week; target 50-100 mg BID; max 200 mg/day",
+            "orderSentence": "Topiramate 25 mg PO"
+          },
+          "contraindications": "Kidney stones, pregnancy, glaucoma",
+          "monitoring": "Bicarbonate; cognitive side effects (may worsen PCS cognition); weight loss; paresthesias",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Propranolol",
+          "route": "PO",
+          "indication": "Preventive for post-traumatic headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-40 mg",
+                "orderSentence": "Propranolol 20-40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 20-40 mg PO BID; target 80-240 mg/day",
+            "orderSentence": "Propranolol 20-40 mg PO"
+          },
+          "contraindications": "Asthma, heart block, bradycardia, decompensated HF",
+          "monitoring": "HR, BP; fatigue may worsen PCS fatigue",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venlafaxine XR",
+          "route": "PO",
+          "indication": "Dual headache prevention and mood improvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg",
+                "orderSentence": "Venlafaxine XR 37.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg PO daily; increase by 37.5 mg every 1-2 weeks; target 75-150 mg daily",
+            "orderSentence": "Venlafaxine XR 37.5 mg PO"
+          },
+          "contraindications": "Uncontrolled HTN, MAOI use, narrow-angle glaucoma",
+          "monitoring": "BP; serotonin syndrome risk; discontinuation syndrome",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Post-traumatic headache with neuropathic component",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100-300 mg",
+                "orderSentence": "Gabapentin 100-300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100-300 mg PO TID; increase by 300 mg/day every 3-5 days; target 900-2400 mg/day divided TID",
+            "orderSentence": "Gabapentin 100-300 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose)",
+          "monitoring": "Sedation, dizziness; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sumatriptan",
+          "route": "PO",
+          "indication": "Acute migraine-type post-traumatic headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50-100 mg",
+                "orderSentence": "Sumatriptan 50-100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50-100 mg PO once; may repeat in 2h; max 200 mg/24h; limit <9 days/month",
+            "orderSentence": "Sumatriptan 50-100 mg PO"
+          },
+          "contraindications": "CAD, stroke/TIA, uncontrolled HTN, hemiplegic migraine",
+          "monitoring": "Chest tightness, BP; risk of MOH",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occipital nerve block (CPT 64405)",
+          "route": "INJ",
+          "indication": "Refractory post-traumatic headache; occipital neuralgia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Bupivacaine 0.25-0.5%",
+                "orderSentence": "Occipital nerve block (CPT 64405) Bupivacaine 0.25-0.5% INJ"
+              }
+            ],
+            "route": "INJ",
+            "instructions": "2-3 mL per side with or without methylprednisolone 40 mg",
+            "orderSentence": "Occipital nerve block (CPT 64405) Bupivacaine 0.25-0.5% INJ"
+          },
+          "contraindications": "Local anesthetic allergy, infection at site",
+          "monitoring": "Local reaction; transient dizziness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "OnabotulinumtoxinA (Botox) (CPT J0585)",
+          "route": "IM",
+          "indication": "Chronic post-traumatic headache (>15 days/month for >3 months)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "155-195 units",
+                "orderSentence": "OnabotulinumtoxinA (Botox) (CPT J0585) 155-195 units IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "155-195 units IM q12 weeks per PREEMPT protocol",
+            "orderSentence": "OnabotulinumtoxinA (Botox) (CPT J0585) 155-195 units IM"
+          },
+          "contraindications": "Infection at injection sites, myasthenia gravis",
+          "monitoring": "Spread of toxin effect; neck weakness",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Vestibular/Dizziness Treatment": [
+        {
+          "item": "Canalith repositioning (Epley maneuver)",
+          "route": "-",
+          "indication": "BPPV (post-traumatic)",
+          "dosing": {
+            "instructions": "Perform in clinic; may need 2-3 sessions",
+            "orderSentence": "Canalith repositioning (Epley maneuver) - - - see dosing"
+          },
+          "contraindications": "Cervical spine injury (relative)",
+          "monitoring": "Resolution of positional nystagmus",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Meclizine",
+          "route": "PO",
+          "indication": "Acute vestibular symptoms (short-term only)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Meclizine 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25 mg PO q8h PRN; short-term only (<1-2 weeks); avoid chronic use",
+            "orderSentence": "Meclizine 25 mg PO"
+          },
+          "contraindications": "Glaucoma, urinary retention",
+          "monitoring": "Sedation; may impair vestibular compensation if used chronically",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dimenhydrinate",
+          "route": "PO",
+          "indication": "Acute vestibular symptoms (short-term only)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Dimenhydrinate 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg PO q6h PRN; short-term only (<1-2 weeks)",
+            "orderSentence": "Dimenhydrinate 50 mg PO"
+          },
+          "contraindications": "Same as meclizine",
+          "monitoring": "Sedation; avoid chronic use",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "PO/IV",
+          "indication": "Nausea associated with vestibular dysfunction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4-8 mg",
+                "orderSentence": "Ondansetron 4-8 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "4-8 mg PO/IV q8h PRN",
+            "orderSentence": "Ondansetron 4-8 mg PO"
+          },
+          "contraindications": "QT prolongation",
+          "monitoring": "QTc if risk factors",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vestibular rehabilitation therapy (VRT) (CPT 97110, 97112)",
+          "route": "-",
+          "indication": "Persistent dizziness, balance impairment, vestibular hypofunction",
+          "dosing": {
+            "instructions": "Specialized PT program; 1-2x/week for 6-12 weeks",
+            "orderSentence": "Vestibular rehabilitation therapy (VRT) (CPT 97110, 97112) - - - see dosing"
+          },
+          "contraindications": "Active vertigo crisis (defer until stable)",
+          "monitoring": "BESS score, DHI score, functional improvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Betahistine",
+          "route": "PO",
+          "indication": "Persistent vestibular symptoms (off-label in US)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "16 mg",
+                "orderSentence": "Betahistine 16 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "16 mg PO TID; not FDA-approved but used internationally",
+            "orderSentence": "Betahistine 16 mg PO"
+          },
+          "contraindications": "Peptic ulcer disease, pheochromocytoma",
+          "monitoring": "GI upset",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Cognitive and Fatigue Management": [
+        {
+          "item": "Methylphenidate",
+          "route": "PO",
+          "indication": "Cognitive fatigue, processing speed deficits, attention impairment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Methylphenidate 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO BID (morning and noon); increase by 5 mg/dose every 3-7 days; target 10-20 mg BID; max 60 mg/day; avoid afternoon dosing",
+            "orderSentence": "Methylphenidate 5 mg PO"
+          },
+          "contraindications": "Uncontrolled HTN, cardiac arrhythmia, glaucoma, anxiety disorder (relative), substance abuse history",
+          "monitoring": "HR, BP; appetite, weight, sleep; anxiety; potential for abuse",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amantadine",
+          "route": "PO",
+          "indication": "Cognitive fatigue, processing speed, motivation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Amantadine 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg PO every morning; increase to 100 mg BID after 1 week; max 200 mg BID",
+            "orderSentence": "Amantadine 100 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose), seizure history (relative)",
+          "monitoring": "Livedo reticularis, ankle edema, hallucinations, insomnia; renal function",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "Excessive daytime sleepiness, fatigue (off-label for TBI)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg PO every morning; may increase to 200 mg daily; max 400 mg/day",
+            "orderSentence": "Modafinil 100 mg PO"
+          },
+          "contraindications": "Cardiac arrhythmia, mitral valve prolapse, hepatic impairment",
+          "monitoring": "HR, BP; headache; Stevens-Johnson (rare); may reduce OCP efficacy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cognitive rehabilitation therapy (CPT 97530)",
+          "route": "-",
+          "indication": "Attention, memory, executive function deficits",
+          "dosing": {
+            "instructions": "Specialized OT/SLP program; 1-2x/week for 8-16 weeks",
+            "orderSentence": "Cognitive rehabilitation therapy (CPT 97530) - - - see dosing"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Neuropsychological re-testing at 3-6 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology (cognitive-linguistic therapy)",
+          "route": "-",
+          "indication": "Word-finding, processing speed, memory strategies",
+          "dosing": {
+            "instructions": "1-2x/week for 8-12 weeks",
+            "orderSentence": "Speech-language pathology (cognitive-linguistic therapy) - - - see dosing"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Functional cognitive improvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Sleep Disturbance Treatment": [
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Insomnia, circadian rhythm disruption post-TBI",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3-5 mg",
+                "orderSentence": "Melatonin 3-5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-5 mg PO 30-60 minutes before bedtime; may increase to 10 mg",
+            "orderSentence": "Melatonin 3-5 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Well tolerated; vivid dreams",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Insomnia (non-habit forming)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg",
+                "orderSentence": "Trazodone 25-50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg PO QHS; may increase to 100-150 mg; max 200 mg QHS",
+            "orderSentence": "Trazodone 25-50 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs",
+          "monitoring": "Orthostatic hypotension; priapism (rare); morning sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hydroxyzine",
+          "route": "PO",
+          "indication": "Insomnia with anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg",
+                "orderSentence": "Hydroxyzine 25-50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg PO QHS PRN",
+            "orderSentence": "Hydroxyzine 25-50 mg PO"
+          },
+          "contraindications": "QT prolongation, elderly (fall risk)",
+          "monitoring": "Sedation; anticholinergic effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ramelteon",
+          "route": "PO",
+          "indication": "Sleep onset insomnia (melatonin receptor agonist)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8 mg",
+                "orderSentence": "Ramelteon 8 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "8 mg PO QHS 30 minutes before bedtime",
+            "orderSentence": "Ramelteon 8 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment, concurrent fluvoxamine",
+          "monitoring": "Well tolerated; no abuse potential",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Suvorexant",
+          "route": "PO",
+          "indication": "Insomnia (orexin receptor antagonist)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Suvorexant 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg PO QHS; may increase to 20 mg; take within 30 min of bedtime",
+            "orderSentence": "Suvorexant 10 mg PO"
+          },
+          "contraindications": "Narcolepsy, severe hepatic impairment",
+          "monitoring": "Next-day somnolence; sleep paralysis (rare)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin (for sleep)",
+          "route": "PO",
+          "indication": "Insomnia with comorbid headache or pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100-300 mg",
+                "orderSentence": "Gabapentin (for sleep) 100-300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100-300 mg PO QHS; may titrate to 600 mg QHS",
+            "orderSentence": "Gabapentin (for sleep) 100-300 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose)",
+          "monitoring": "Sedation, dizziness; may also help headache",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Mood and Anxiety Treatment": [
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression, anxiety, irritability post-TBI",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sertraline 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg PO daily; increase by 25 mg every 1-2 weeks; target 50-150 mg daily; max 200 mg",
+            "orderSentence": "Sertraline 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs, uncontrolled bipolar",
+          "monitoring": "Suicidality monitoring (weeks 1-4); GI upset; sexual dysfunction; serotonin syndrome",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Escitalopram",
+          "route": "PO",
+          "indication": "Depression, anxiety post-TBI",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Escitalopram 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO daily; increase to 10 mg after 1 week; max 20 mg daily",
+            "orderSentence": "Escitalopram 5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs, QT prolongation",
+          "monitoring": "Suicidality monitoring; QTc; sexual dysfunction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Depression with comorbid pain (headache, musculoskeletal)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-30 mg",
+                "orderSentence": "Duloxetine 20-30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 20-30 mg PO daily; increase to 60 mg daily after 1-2 weeks; max 120 mg",
+            "orderSentence": "Duloxetine 20-30 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs, hepatic impairment, uncontrolled glaucoma",
+          "monitoring": "LFTs; BP; nausea (transient); discontinuation syndrome",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Bupropion XL",
+          "route": "PO",
+          "indication": "Depression with fatigue, low motivation; avoidance of sexual side effects",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg",
+                "orderSentence": "Bupropion XL 150 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 150 mg PO daily; may increase to 300 mg daily after 1-2 weeks; max 450 mg/day",
+            "orderSentence": "Bupropion XL 150 mg PO"
+          },
+          "contraindications": "Seizure disorder (lowers threshold), bulimia/anorexia, concurrent MAOIs",
+          "monitoring": "Seizure risk (dose-dependent); insomnia; agitation; avoid in patients with seizure history",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Buspirone",
+          "route": "PO",
+          "indication": "Anxiety (non-benzodiazepine)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Buspirone 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO TID; increase by 5 mg every 2-3 days; target 15-30 mg/day divided BID-TID; max 60 mg/day",
+            "orderSentence": "Buspirone 5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs",
+          "monitoring": "Dizziness, headache; takes 2-4 weeks for full effect; no abuse potential",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cognitive behavioral therapy (CBT)",
+          "route": "-",
+          "indication": "Depression, anxiety, PTSD, adjustment disorder post-TBI",
+          "dosing": {
+            "instructions": "Weekly sessions for 12-16 weeks; evidence-based for PCS",
+            "orderSentence": "Cognitive behavioral therapy (CBT) - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Symptom questionnaires (PHQ-9, GAD-7); functional improvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EMDR (Eye Movement Desensitization and Reprocessing)",
+          "route": "-",
+          "indication": "Post-traumatic stress disorder comorbid with PCS",
+          "dosing": {
+            "instructions": "Per therapist protocol; evidence-based for PTSD",
+            "orderSentence": "EMDR (Eye Movement Desensitization and Reprocessing) - - - see dosing"
+          },
+          "contraindications": "Active psychosis, acute suicidality",
+          "monitoring": "PTSD symptom scores (PCL-5)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Autonomic Dysfunction / Exertion Intolerance Treatment": [
+        {
+          "item": "Graded aerobic exercise program (Buffalo Concussion Treadmill Test protocol)",
+          "route": "-",
+          "indication": "Exercise intolerance, autonomic dysregulation post-concussion",
+          "dosing": {
+            "instructions": "Start at sub-symptom threshold HR; increase 5-10% per week; target 30 min moderate intensity",
+            "orderSentence": "Graded aerobic exercise program (Buffalo Concussion Treadmill Test protocol) - - - see dosing"
+          },
+          "contraindications": "Uncontrolled cardiac disease; active vertigo",
+          "monitoring": "HR monitoring; symptom provocation tracking; stop if symptoms worsen >2 points",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fludrocortisone",
+          "route": "PO",
+          "indication": "Orthostatic intolerance, post-concussion autonomic dysfunction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg",
+                "orderSentence": "Fludrocortisone 0.1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.1 mg PO daily; max 0.2 mg daily",
+            "orderSentence": "Fludrocortisone 0.1 mg PO"
+          },
+          "contraindications": "CHF, hypertension, renal failure",
+          "monitoring": "BP, potassium, edema; weight",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Midodrine",
+          "route": "PO",
+          "indication": "Orthostatic hypotension contributing to dizziness",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg",
+                "orderSentence": "Midodrine 2.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5 mg PO TID; increase to 5-10 mg TID; avoid evening dose",
+            "orderSentence": "Midodrine 2.5 mg PO"
+          },
+          "contraindications": "Supine HTN, urinary retention, pheochromocytoma",
+          "monitoring": "Supine BP; urinary symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Compression stockings",
+          "route": "-",
+          "indication": "Orthostatic intolerance",
+          "dosing": {
+            "instructions": "20-30 mmHg waist-high; wear during upright activity",
+            "orderSentence": "Compression stockings - - - see dosing"
+          },
+          "contraindications": "Peripheral arterial disease",
+          "monitoring": "Comfort, compliance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Salt supplementation",
+          "route": "PO",
+          "indication": "Orthostatic intolerance (if no HTN)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 g",
+                "orderSentence": "Salt supplementation 1-2 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1-2 g additional sodium daily via salt tablets or dietary increase",
+            "orderSentence": "Salt supplementation 1-2 g PO"
+          },
+          "contraindications": "Hypertension, CHF, renal disease",
+          "monitoring": "BP, edema",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Visual/Oculomotor Treatment": [
+        {
+          "item": "Neuro-optometric rehabilitation",
+          "route": "-",
+          "indication": "Convergence insufficiency, accommodative dysfunction, saccadic dysfunction",
+          "dosing": {
+            "instructions": "Specialized vision therapy; 1-2x/week for 8-12 weeks",
+            "orderSentence": "Neuro-optometric rehabilitation - - - see dosing"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Near point of convergence, symptom improvement",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prism glasses (temporary)",
+          "route": "-",
+          "indication": "Binocular vision dysfunction, diplopia",
+          "dosing": {
+            "instructions": "Prescribed by neuro-optometrist or ophthalmologist",
+            "orderSentence": "Prism glasses (temporary) - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Visual comfort, symptom relief",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "FL-41 tinted lenses",
+          "route": "-",
+          "indication": "Photophobia, light sensitivity",
+          "dosing": {
+            "instructions": "Worn as needed; indoor and outdoor versions",
+            "orderSentence": "FL-41 tinted lenses - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Subjective improvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consult",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Persistent symptoms >4 weeks, post-traumatic headache management, new neurologic deficits"
+        },
+        {
+          "item": "Neuropsychological testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Cognitive complaints persisting >3 months; objective assessment for rehab planning, disability documentation"
+        },
+        {
+          "item": "Vestibular rehabilitation (PT)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Persistent dizziness, balance impairment, BPPV"
+        },
+        {
+          "item": "Cognitive rehabilitation (OT/SLP)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Attention, memory, executive function deficits impacting function"
+        },
+        {
+          "item": "Physical therapy (cervical/general)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Cervicogenic headache, neck pain, deconditioning"
+        },
+        {
+          "item": "Psychiatry consult",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Depression, anxiety, PTSD, irritability not responding to first-line treatment"
+        },
+        {
+          "item": "Psychology/CBT referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Psychological symptoms, adjustment difficulties, pain management"
+        },
+        {
+          "item": "Neuro-ophthalmology / Neuro-optometry",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Persistent visual symptoms, convergence insufficiency, photophobia"
+        },
+        {
+          "item": "Sleep medicine",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Refractory insomnia, excessive daytime sleepiness, suspected sleep apnea"
+        },
+        {
+          "item": "ENT / Otolaryngology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Persistent tinnitus, hearing loss, vestibular dysfunction"
+        },
+        {
+          "item": "Sports medicine / Concussion specialist",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Graded return to activity guidance, exertion intolerance"
+        },
+        {
+          "item": "Endocrinology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "indication": "Suspected post-traumatic hypopituitarism"
+        },
+        {
+          "item": "Occupational medicine",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Return to work planning, workplace accommodations"
+        },
+        {
+          "item": "Social work",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Insurance navigation, disability, vocational rehab, family support"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED if: worst headache of life, new or worsening neurologic deficit, seizure, persistent vomiting, worsening confusion, loss of consciousness",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Post-concussion symptoms are real and expected to improve with appropriate management",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Gradual return to activity is key — avoid both complete rest and overexertion",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow the \"symptom threshold\" approach: stay active but stop before symptoms worsen significantly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Track symptoms daily using a symptom diary or validated scale (RPQ, PCSS)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid alcohol (worsens cognition, sleep, and balance; interacts with medications)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit caffeine (<200 mg/day); maintain consistent intake",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT use benzodiazepines chronically for anxiety/sleep (impairs recovery)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Screen time management: take breaks every 20-30 minutes; reduce brightness; use blue-light filters",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow up with neurology or concussion specialist within 2-4 weeks",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Bring list of all medications and symptom diary to all appointments",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report new symptoms or worsening immediately (seizure, vision change, personality change)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Sleep hygiene: aim for 7-9 hours; consistent wake/bed times; dark, cool, quiet room",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Graded aerobic exercise: start below symptom threshold; increase 10% per week",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stress management: mindfulness, meditation, deep breathing, progressive muscle relaxation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cognitive pacing: alternate demanding and easy tasks; take scheduled breaks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Use compensatory strategies: calendars, lists, alarms, voice memos for memory",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain social connections; avoid prolonged isolation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit multitasking; focus on one task at a time in quiet environment initially",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Wear sunglasses or FL-41 tinted lenses for photophobia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Use earplugs or noise-canceling headphones for phonophobia in noisy environments",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Healthy diet: anti-inflammatory, Mediterranean-style; regular meals; stay hydrated",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Prevent re-injury: no contact sports until fully recovered and cleared by specialist",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Second impact syndrome education: rare but catastrophic if re-injured before recovery",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Chronic migraine",
+      "features": "Pre-existing headache history before injury; meets ICHD-3 chronic migraine criteria independent of trauma",
+      "tests": "Headache diary, pre-injury history"
+    },
+    {
+      "diagnosis": "Cervicogenic headache",
+      "features": "Neck pain predominant, headache triggered by neck movement/posture, limited cervical ROM",
+      "tests": "Cervical exam, diagnostic block, cervical MRI"
+    },
+    {
+      "diagnosis": "Subdural hematoma (chronic)",
+      "features": "Progressive headache, cognitive decline, focal deficits; risk with anticoagulation, elderly, falls",
+      "tests": "CT head, MRI brain"
+    },
+    {
+      "diagnosis": "Depression / Anxiety disorder",
+      "features": "Mood symptoms predate injury or disproportionate to injury severity; lack of cognitive deficits on testing",
+      "tests": "PHQ-9, GAD-7, neuropsychological testing"
+    },
+    {
+      "diagnosis": "PTSD (Post-traumatic stress disorder)",
+      "features": "Re-experiencing trauma, avoidance, hyperarousal; nightmares; may overlap significantly with PCS",
+      "tests": "PCL-5, psychiatric evaluation"
+    },
+    {
+      "diagnosis": "Post-traumatic hypopituitarism",
+      "features": "Fatigue, weight changes, hyponatremia, sexual dysfunction; can present months after TBI",
+      "tests": "Pituitary hormones (cortisol, TSH, IGF-1, testosterone)"
+    },
+    {
+      "diagnosis": "Sleep apnea (new or worsened post-TBI)",
+      "features": "Excessive daytime sleepiness, snoring, witnessed apneas, morning headache",
+      "tests": "Polysomnography"
+    },
+    {
+      "diagnosis": "Benign paroxysmal positional vertigo (BPPV)",
+      "features": "Positional vertigo (brief episodes), positive Dix-Hallpike",
+      "tests": "Dix-Hallpike maneuver, VNG"
+    },
+    {
+      "diagnosis": "Medication side effects",
+      "features": "Symptoms correlate with medication initiation/dose changes",
+      "tests": "Medication review, trial discontinuation"
+    },
+    {
+      "diagnosis": "Functional neurological disorder (FND)",
+      "features": "Inconsistent exam findings, distractibility signs, Hoover sign",
+      "tests": "Clinical exam, neuropsychological testing"
+    },
+    {
+      "diagnosis": "Whiplash-associated disorder",
+      "features": "Neck pain predominant, limited ROM, no LOC at injury",
+      "tests": "Cervical imaging, clinical exam"
+    },
+    {
+      "diagnosis": "Idiopathic intracranial hypertension",
+      "features": "Headache with papilledema, visual obscurations, pulsatile tinnitus",
+      "tests": "Fundoscopy, LP with opening pressure, MRV"
+    },
+    {
+      "diagnosis": "CNS infection",
+      "features": "Fever, meningismus, progressive course",
+      "tests": "CBC, LP, MRI with contrast"
+    },
+    {
+      "diagnosis": "Malingering / Symptom exaggeration",
+      "features": "Medicolegal context, inconsistent performance, effort testing failure",
+      "tests": "Neuropsychological testing with embedded/stand-alone effort measures"
+    },
+    {
+      "diagnosis": "Normal aging / Pre-existing cognitive impairment",
+      "features": "Cognitive symptoms predate injury; stable rather than post-injury onset",
+      "tests": "Pre-injury cognitive testing, collateral history"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Definition and diagnostic criteria for PCS",
+      "evidenceLevel": "Consensus",
+      "source": "ICD-10 F07.81; McCrory P et al. Br J Sports Med 2017 (Berlin Consensus Statement on Concussion in Sport)"
+    },
+    {
+      "recommendation": "Persistent symptoms defined as >3 months post-injury",
+      "evidenceLevel": "Consensus",
+      "source": "Silverberg ND, Iverson GL. J Head Trauma Rehabil 2013"
+    },
+    {
+      "recommendation": "Graded aerobic exercise improves recovery from PCS",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Leddy JJ et al. Clin J Sport Med 2019 (Buffalo Concussion Treadmill Test)"
+    },
+    {
+      "recommendation": "Sub-threshold aerobic exercise safe and beneficial for PCS",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Leddy JJ et al. J Head Trauma Rehabil 2010"
+    },
+    {
+      "recommendation": "Vestibular rehabilitation effective for post-traumatic dizziness",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Alsalaheen BA et al. Am J Phys Med Rehabil 2010"
+    },
+    {
+      "recommendation": "Amitriptyline effective for chronic post-traumatic headache",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Cushman DM et al. Headache 2019"
+    },
+    {
+      "recommendation": "Topiramate for post-traumatic headache prevention",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Packard RC. Curr Pain Headache Rep 2000; VA/DoD Clinical Practice Guideline 2016"
+    },
+    {
+      "recommendation": "Cognitive rehabilitation improves attention and executive function post-TBI",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Cicerone KD et al. Arch Phys Med Rehabil 2019 (systematic review)"
+    },
+    {
+      "recommendation": "Neuropsychological testing recommended for persistent cognitive complaints",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Iverson GL et al. NeuroRehabilitation 2009"
+    },
+    {
+      "recommendation": "Methylphenidate improves cognitive fatigue and processing speed post-TBI",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Willmott C, Ponsford J. Neurology 2009"
+    },
+    {
+      "recommendation": "Amantadine improves cognitive function after TBI",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Giacino JT et al. NEJM 2012"
+    },
+    {
+      "recommendation": "Post-traumatic hypopituitarism occurs in up to 25% of TBI cases",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Tanriverdi F et al. J Clin Endocrinol Metab 2015"
+    },
+    {
+      "recommendation": "CBT effective for PCS-related mood and anxiety symptoms",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Potter S et al. Neuropsychol Rev 2016"
+    },
+    {
+      "recommendation": "Melatonin improves sleep quality post-TBI",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Grima NA et al. J Neurotrauma 2018"
+    },
+    {
+      "recommendation": "BPPV is common following concussion and responds to repositioning",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Fife TD et al. Neurology 2008 (AAN Practice Parameter)"
+    },
+    {
+      "recommendation": "Post-traumatic headache management follows migraine treatment paradigm",
+      "evidenceLevel": "Consensus",
+      "source": "Seifert T. Curr Pain Headache Rep 2011; AHS 2019"
+    },
+    {
+      "recommendation": "OnabotulinumtoxinA for chronic post-traumatic headache",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Yerry JA et al. Headache 2015"
+    },
+    {
+      "recommendation": "Occipital nerve block effective for post-traumatic headache",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Ashkenazi A, Levin M. Headache 2007"
+    },
+    {
+      "recommendation": "Modafinil for post-TBI fatigue and somnolence",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Kaiser PR et al. J Clin Psychopharmacol 2010"
+    },
+    {
+      "recommendation": "Berlin Consensus Statement on Concussion in Sport, 5th International Conference",
+      "evidenceLevel": "Consensus",
+      "source": "McCrory P et al. Br J Sports Med 2017"
+    },
+    {
+      "recommendation": "Amsterdam Consensus Statement on Concussion in Sport, 6th International Conference",
+      "evidenceLevel": "Consensus",
+      "source": "Patricios JS et al. Br J Sports Med 2023"
+    },
+    {
+      "recommendation": "VA/DoD Clinical Practice Guideline for Management of Concussion/mTBI",
+      "evidenceLevel": "Class I",
+      "source": "VA/DoD Evidence-Based Clinical Practice Guideline 2021"
+    },
+    {
+      "recommendation": "ACR Appropriateness Criteria for head trauma",
+      "evidenceLevel": "Class II, Level B",
+      "source": "ACR Appropriateness Criteria Panel 2020"
+    },
+    {
+      "recommendation": "Risk of chronic symptoms after mTBI: 15-30% at 3 months",
+      "evidenceLevel": "Class I",
+      "source": "Levin HS, Diaz-Arrastia RR. NEJM 2015"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Post-Concussion Symptom Scale (PCSS)",
+      "ED": "STAT",
+      "HOSP": "Daily",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "Per encounter",
+      "action": "Adjust treatment; consider additional referrals"
+    },
+    {
+      "item": "Rivermead Post-Concussion Symptoms Questionnaire (RPQ)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "q4-6 weeks",
+      "action": "Reassess treatment plan"
+    },
+    {
+      "item": "PHQ-9 (depression screen)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "q4-6 weeks",
+      "action": "Initiate/adjust antidepressant; psychiatry referral"
+    },
+    {
+      "item": "GAD-7 (anxiety screen)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "q4-6 weeks",
+      "action": "Initiate/adjust anxiolytic; therapy referral"
+    },
+    {
+      "item": "PCL-5 (PTSD screen)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q8-12 weeks",
+      "action": "PTSD-focused therapy; psychiatry referral"
+    },
+    {
+      "item": "Headache diary (frequency, severity)",
+      "ED": "-",
+      "HOSP": "Daily",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "Ongoing",
+      "action": "Adjust preventive; consider specialist referral"
+    },
+    {
+      "item": "Dizziness Handicap Inventory (DHI)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "q4-8 weeks",
+      "action": "Vestibular rehab referral/adjust"
+    },
+    {
+      "item": "Balance assessment (BESS, mBESS)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "q4-8 weeks",
+      "action": "Vestibular rehab"
+    },
+    {
+      "item": "Neurocognitive testing (ImPACT or equivalent)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "q3-6 months",
+      "ICU": "-",
+      "frequency": "Per protocol",
+      "action": "Cognitive rehab adjustment"
+    },
+    {
+      "item": "Sleep quality (PSQI or ISI)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "q4-6 weeks",
+      "action": "Adjust sleep medications; sleep medicine referral"
+    },
+    {
+      "item": "Vital signs",
+      "ED": "STAT",
+      "HOSP": "q shift",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "Per encounter",
+      "action": "Address abnormalities"
+    },
+    {
+      "item": "Medication side effects",
+      "ED": "-",
+      "HOSP": "Daily",
+      "OPD": "Each visit",
+      "ICU": "-",
+      "frequency": "Ongoing",
+      "action": "Dose adjustment or medication change"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Stable neurologic exam, no red flags on imaging (if obtained), no acute intervention needed, outpatient follow-up arranged, safety precautions reviewed"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "New or worsening neurologic deficit, suspected delayed intracranial hemorrhage, acute psychiatric crisis (suicidality), severe vestibular dysfunction preventing safe ambulation, inability to maintain hydration/nutrition"
+    },
+    {
+      "disposition": "Outpatient follow-up schedule",
+      "criteria": "Initial: 2-4 weeks post-injury; then q4-6 weeks until symptom resolution; neuropsychological testing at 3+ months if cognitive symptoms persist"
+    },
+    {
+      "disposition": "Return to work/school",
+      "criteria": "Gradual return with accommodations; symptom-dependent; coordinate with occupational medicine; may need reduced schedule, extra break time, modified duties"
+    },
+    {
+      "disposition": "Return to exercise",
+      "criteria": "Per graded protocol (Buffalo Treadmill Test); stepwise progression: (1) light aerobic, (2) moderate aerobic, (3) sport-specific, (4) non-contact drills, (5) full activity"
+    },
+    {
+      "disposition": "Return to driving",
+      "criteria": "When able to tolerate visual stimulation, has adequate reaction time, no dizziness/cognitive impairment at highway speeds; per physician clearance"
+    },
+    {
+      "disposition": "Specialty referral thresholds",
+      "criteria": "If no improvement at 4-6 weeks: neurology; if no improvement at 3 months: neuropsychology, multidisciplinary concussion program"
+    }
+  ]
+}

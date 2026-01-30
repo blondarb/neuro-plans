@@ -1,0 +1,1740 @@
+{
+  "id": "wilsons-disease",
+  "title": "Wilson's Disease",
+  "version": "1.1",
+  "icd10": [
+    "** E83.01 (Wilson's disease)",
+    "E83.09 (Other disorders of copper metabolism)",
+    "G25.5 (Other chorea — for movement disorder presentation)",
+    "G25.2 (Other specified forms of tremor — for tremor-predominant presentation)",
+    "F06.8 (Other specified mental disorders due to known physiological condition — psychiatric presentation)"
+  ],
+  "scope": "** Diagnosis and management of Wilson's disease in adolescents and adults presenting with neurologic, hepatic, or psychiatric manifestations. Covers diagnostic workup (ceruloplasmin, 24-hour urine copper, slit-lamp exam, hepatic copper, genetic testing), chelation therapy (D-penicillamine, trientine), zinc maintenance therapy, liver transplant evaluation, symptomatic management of neurological symptoms (dystonia, tremor, parkinsonism, psychiatric), and family screening. Excludes other copper metabolism disorders (Menkes disease), isolated non-Wilson hepatic cirrhosis, and drug-induced movement disorders.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Serum ceruloplasmin (CPT 82390)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Low in 85-95% of WD; screening test; may be normal in acute liver failure or inflammation",
+          "target": "<20 mg/dL (often <10 mg/dL in WD); normal does NOT exclude WD"
+        },
+        {
+          "item": "Serum copper (total) (CPT 82525)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Low-normal total copper (paradoxically) but elevated free copper in WD",
+          "target": "Total copper low-normal (40-80 mcg/dL); calculate free copper"
+        },
+        {
+          "item": "24-hour urine copper (CPT 82525)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Gold standard screening; elevated in WD; >100 mcg/24h suggestive; >40 mcg/24h in children",
+          "target": ">100 mcg/24h (often >200 in symptomatic WD); normal <40 mcg/24h"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Coombs-negative hemolytic anemia; baseline; thrombocytopenia (hypersplenism)",
+          "target": "Hemolytic anemia, thrombocytopenia suggest WD"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "AST/ALT elevation; synthetic function (albumin, bilirubin); renal function",
+          "target": "Elevated AST/ALT (often AST > ALT); low albumin; elevated bilirubin in advanced disease"
+        },
+        {
+          "item": "Direct and indirect bilirubin (CPT 82248)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Elevated indirect bilirubin in hemolysis; elevated direct in hepatic disease",
+          "target": "Elevated (especially indirect if hemolysis)"
+        },
+        {
+          "item": "PT/INR (CPT 85610)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hepatic synthetic function; coagulopathy in liver failure",
+          "target": "Elevated INR in advanced disease; INR >1.5 suggests significant hepatic dysfunction"
+        },
+        {
+          "item": "Reticulocyte count (CPT 85045)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Elevated in hemolytic anemia",
+          "target": "Elevated (>2%) suggests active hemolysis"
+        },
+        {
+          "item": "Direct Coombs test (DAT) (CPT 86880)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "NEGATIVE in WD hemolysis (Coombs-negative hemolytic anemia is classic)",
+          "target": "Negative (positive Coombs suggests other etiology)"
+        },
+        {
+          "item": "Haptoglobin (CPT 83010)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Low/undetectable in hemolysis",
+          "target": "Low or undetectable in active hemolysis"
+        },
+        {
+          "item": "LDH (CPT 83615)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Elevated in hemolysis",
+          "target": "Elevated in hemolysis"
+        },
+        {
+          "item": "Urinalysis (CPT 81003)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal tubular dysfunction (glycosuria, proteinuria, aminoaciduria — Fanconi syndrome)",
+          "target": "Glycosuria with normal serum glucose; proteinuria"
+        },
+        {
+          "item": "Phosphorus (CPT 84100)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypophosphatemia from renal tubular loss",
+          "target": "Low (Fanconi syndrome)"
+        },
+        {
+          "item": "Uric acid (CPT 84550)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Low uric acid suggests renal tubular dysfunction",
+          "target": "Low (<2 mg/dL suggests renal copper toxicity)"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline; glycosuria with normal glucose suggests Fanconi",
+          "target": "Normal (but glycosuria present = renal tubular)"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Free (non-ceruloplasmin-bound) copper (calculated)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Calculated: total serum copper (mcg/dL) minus (3 x ceruloplasmin [mg/dL]); elevated in WD",
+          "target": ">25 mcg/dL (often >50 in symptomatic WD); most specific biochemical marker"
+        },
+        {
+          "item": "Penicillamine challenge test (24-hour urine copper after 500 mg penicillamine x 2 doses)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Used in equivocal cases, especially pediatric; less validated in adults",
+          "target": ">1600 mcg/24h highly suggestive of WD (>25 mcmol/24h)"
+        },
+        {
+          "item": "ATP7B gene sequencing (CPT 81406)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Definitive diagnosis; identifies pathogenic variants; essential for family screening",
+          "target": "Two pathogenic variants = confirmed WD; one variant + clinical findings = probable WD"
+        },
+        {
+          "item": "Peripheral blood smear (CPT 85060)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Schistocytes, spherocytes in hemolytic anemia",
+          "target": "Fragmented RBCs, polychromasia"
+        },
+        {
+          "item": "Ammonia level (CPT 82140)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hepatic encephalopathy assessment in liver failure",
+          "target": "Normal <35 mcmol/L; elevated in hepatic failure"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Tissue hypoperfusion in fulminant hepatic failure",
+          "target": "Elevated in liver failure"
+        },
+        {
+          "item": "Alpha-fetoprotein (AFP) (CPT 82105)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HCC screening in cirrhotic patients",
+          "target": "Normal; elevated suggests HCC"
+        },
+        {
+          "item": "Hepatitis panel (HAV, HBV, HCV) (CPT 80074)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude concurrent viral hepatitis",
+          "target": "Negative"
+        },
+        {
+          "item": "ANA, anti-smooth muscle antibody (CPT 86235)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude autoimmune hepatitis (may coexist or mimic)",
+          "target": "Negative or low titer"
+        },
+        {
+          "item": "Iron studies (CPT 83540)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude hemochromatosis in hepatic presentation",
+          "target": "Normal ferritin and transferrin saturation"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction can present with tremor/psychiatric symptoms",
+          "target": "Normal"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency can cause neuropsychiatric symptoms",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Hepatic copper concentration (liver biopsy) (CPT 82525)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Gold standard for diagnosis; required when non-invasive testing equivocal; >250 mcg/g dry weight diagnostic",
+          "target": ">250 mcg/g dry weight (normal <50 mcg/g); values 50-250 can be seen in heterozygotes or cholestatic disease"
+        },
+        {
+          "item": "Radioactive copper incorporation study (⁶⁴Cu or ⁶⁷Cu)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Measures copper incorporation into ceruloplasmin over 48h; absent second peak in WD; rarely available",
+          "target": "Absent secondary rise at 48h (failure of copper incorporation into ceruloplasmin)"
+        },
+        {
+          "item": "Relative exchangeable copper (REC) ratio",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Emerging biomarker; ratio of exchangeable copper to total copper; highly sensitive/specific",
+          "target": ">18.5% diagnostic of WD"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (CPT 86255)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If atypical neurologic features not explained by WD alone",
+          "target": "Negative"
+        },
+        {
+          "item": "Heavy metal screen (lead, mercury, arsenic)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Toxic metal exposure can cause neuropsychiatric symptoms",
+          "target": "Normal"
+        },
+        {
+          "item": "Urine amino acids",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Fanconi syndrome confirmation (generalized aminoaciduria)",
+          "target": "Elevated (generalized aminoaciduria in Fanconi)"
+        },
+        {
+          "item": "Bone densitometry (DEXA) (CPT 77080)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Osteoporosis screening; copper toxicity causes bone loss",
+          "target": "T-score > -2.5"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Slit-lamp examination (ophthalmology)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "At initial evaluation; do NOT rely on naked-eye exam",
+          "target": "Kayser-Fleischer rings (present in >95% neurologic WD, ~50% hepatic-only); sunflower cataracts",
+          "contraindications": "None"
+        },
+        {
+          "item": "MRI brain without contrast (CPT 70551)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Within 24-48h if neurologic symptoms",
+          "target": "T2/FLAIR hyperintensity in basal ganglia (putamen — \"face of the giant panda\" sign on midbrain), thalamus, caudate, brainstem, cerebellum, white matter; T1 hyperintensity (copper/manganese deposition); cerebral atrophy",
+          "contraindications": "Pacemaker, metallic implants"
+        },
+        {
+          "item": "MRI brain with contrast (CPT 70553)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If additional characterization needed",
+          "target": "Rarely enhances; helps exclude other pathology",
+          "contraindications": "Contrast allergy, GFR <30"
+        },
+        {
+          "item": "Abdominal ultrasound with Doppler (CPT 76700)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "At diagnosis",
+          "target": "Hepatomegaly, splenomegaly, cirrhotic changes, portal hypertension, ascites",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "On admission for fulminant hepatic failure; baseline for ICU",
+          "target": "Aspiration, atelectasis, pleural effusion, pulmonary edema",
+          "contraindications": "None significant"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "CT abdomen with contrast (CPT 74178)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If ultrasound equivocal; HCC screening",
+          "target": "Cirrhosis, portal hypertension, hepatic lesions",
+          "contraindications": "Contrast allergy, renal impairment"
+        },
+        {
+          "item": "MRI abdomen (liver) (CPT 74183)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Liver characterization; iron vs copper deposition",
+          "target": "Hepatic signal abnormalities; excludes HCC",
+          "contraindications": "Per MRI"
+        },
+        {
+          "item": "FibroScan (transient elastography) (CPT 91200)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Non-invasive fibrosis assessment",
+          "target": "Liver stiffness <7.1 kPa = minimal fibrosis; >12.5 kPa = cirrhosis",
+          "contraindications": "Ascites, obesity (limited), pacemaker"
+        },
+        {
+          "item": "Upper endoscopy (EGD) (CPT 43239)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Variceal screening in cirrhotic patients",
+          "target": "No varices; if present, grade and treat",
+          "contraindications": "Active GI perforation"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Baseline; cardiac involvement",
+          "target": "Arrhythmias, conduction abnormalities",
+          "contraindications": "None"
+        },
+        {
+          "item": "Echocardiogram (CPT 93306)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If cardiac symptoms or cardiomyopathy suspected",
+          "target": "Normal function; WD cardiomyopathy rare",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "NCS/EMG (CPT 95907-95913 / 95886)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If peripheral neuropathy suspected",
+          "target": "Rule out concurrent neuropathy",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "EEG (CPT 95816)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If seizures suspected or encephalopathy",
+          "target": "Generalized slowing in encephalopathy; epileptiform discharges",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "PET brain (FDG) (CPT 78608)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If atypical features or diagnostic uncertainty",
+          "target": "Hypometabolism in basal ganglia, cerebellum",
+          "contraindications": "Per PET"
+        },
+        {
+          "item": "MR spectroscopy (brain) (CPT 76390)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Research; metabolic characterization",
+          "target": "Reduced NAA (neuronal loss) in basal ganglia",
+          "contraindications": "Per MRI"
+        },
+        {
+          "item": "DaTscan (CPT 78830)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Differentiate WD parkinsonism from idiopathic PD if uncertain",
+          "target": "May show reduced uptake (presynaptic dopaminergic loss); less specific in WD",
+          "contraindications": "Pregnancy, iodine allergy"
+        },
+        {
+          "item": "Liver biopsy (CPT 47000)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "When non-invasive testing equivocal; hepatic copper quantification",
+          "target": "Copper >250 mcg/g dry weight = diagnostic; histology shows steatosis, hepatitis, cirrhosis",
+          "contraindications": "Coagulopathy (INR >1.5), ascites (use transjugular), thrombocytopenia"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "N-acetylcysteine (NAC)",
+          "route": "IV",
+          "indication": "Fulminant hepatic failure; hepatoprotection",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg/kg",
+                "orderSentence": "N-acetylcysteine (NAC) 150 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "150 mg/kg IV over 1h, then 50 mg/kg over 4h, then 100 mg/kg over 16h (standard NAC protocol for liver failure)",
+            "orderSentence": "N-acetylcysteine (NAC) 150 mg/kg IV"
+          },
+          "contraindications": "None absolute",
+          "monitoring": "Anaphylactoid reaction, bronchospasm; monitor LFTs, INR",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Fresh frozen plasma (FFP)",
+          "route": "IV",
+          "indication": "Coagulopathy in fulminant hepatic failure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-15 mL/kg",
+                "orderSentence": "Fresh frozen plasma (FFP) 10-15 mL/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10-15 mL/kg IV; target INR <1.5 for procedures; use as bridge to transplant",
+            "orderSentence": "Fresh frozen plasma (FFP) 10-15 mL/kg IV"
+          },
+          "contraindications": "Volume overload; IgA deficiency",
+          "monitoring": "INR, fibrinogen, volume status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Vitamin K (phytonadione)",
+          "route": "IV",
+          "indication": "Coagulopathy; hepatic synthetic failure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Vitamin K (phytonadione) 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV daily x 3 days; limited efficacy in WD fulminant failure (hepatocyte loss)",
+            "orderSentence": "Vitamin K (phytonadione) 10 mg IV"
+          },
+          "contraindications": "Allergy",
+          "monitoring": "INR response",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lactulose",
+          "route": "PO",
+          "indication": "Hepatic encephalopathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Lactulose 30 mL PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "30 mL PO TID; titrate to 3-4 bowel movements/day",
+            "orderSentence": "Lactulose 30 mL PO"
+          },
+          "contraindications": "Bowel obstruction",
+          "monitoring": "Mental status, ammonia, stool output",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Rifaximin",
+          "route": "PO",
+          "indication": "Hepatic encephalopathy (adjunct to lactulose)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "550 mg",
+                "orderSentence": "Rifaximin 550 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "550 mg PO BID; add if lactulose alone insufficient",
+            "orderSentence": "Rifaximin 550 mg PO"
+          },
+          "contraindications": "C. difficile (relative)",
+          "monitoring": "Mental status, hepatic function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Albumin (25%)",
+          "route": "IV",
+          "indication": "Ascites management; hepatorenal syndrome",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g/kg",
+                "orderSentence": "Albumin (25%) 1 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 g/kg/day (max 100 g); for large-volume paracentesis or hepatorenal syndrome",
+            "orderSentence": "Albumin (25%) 1 g/kg IV"
+          },
+          "contraindications": "Heart failure",
+          "monitoring": "Volume status, serum albumin",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Platelet transfusion",
+          "route": "IV",
+          "indication": "Thrombocytopenia with active bleeding or pre-procedure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Dose per protocol",
+                "orderSentence": "Platelet transfusion Dose per protocol IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 unit apheresis platelets; target >50K for procedures, >10K if no bleeding",
+            "orderSentence": "Platelet transfusion Dose per protocol IV"
+          },
+          "contraindications": "ITP, TTP (relative)",
+          "monitoring": "Platelet count post-transfusion",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Plasmapheresis/Plasma exchange",
+          "route": "Extracorporeal",
+          "indication": "Fulminant WD with severe hemolysis; removes free copper",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 plasma volumes",
+                "orderSentence": "Plasmapheresis/Plasma exchange 1-1.5 plasma volumes Extracorporeal"
+              }
+            ],
+            "route": "Extracorporeal",
+            "instructions": "Daily exchange x 3-5 days; rapidly reduces free copper",
+            "orderSentence": "Plasmapheresis/Plasma exchange 1-1.5 plasma volumes Extracorporeal"
+          },
+          "contraindications": "Hemodynamic instability, severe sepsis",
+          "monitoring": "Copper levels, hemolysis markers, coagulation",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "DVT prophylaxis: Enoxaparin",
+          "route": "SC",
+          "indication": "Immobilized hospitalized patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily; hold if INR >1.5 or platelets <50K or active bleeding",
+            "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active bleeding, severe coagulopathy, CrCl <30 (use UFH)",
+          "monitoring": "Platelets, signs of bleeding",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Dystonia, spasticity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; titrate by 5 mg/dose every 3 days; target 30-80 mg/day divided TID; max 80 mg/day",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Severe renal impairment; abrupt withdrawal risk",
+          "monitoring": "Sedation, weakness; do NOT stop abruptly (withdrawal seizures)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Trihexyphenidyl",
+          "route": "PO",
+          "indication": "Dystonia (focal or generalized)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Trihexyphenidyl 1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg daily; increase by 1 mg every 3-5 days; target 6-15 mg/day divided TID; max 15 mg/day",
+            "orderSentence": "Trihexyphenidyl 1 mg PO"
+          },
+          "contraindications": "Glaucoma, urinary retention, dementia, age >65",
+          "monitoring": "Confusion, dry mouth, urinary retention, cognitive impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levodopa/Carbidopa",
+          "route": "PO",
+          "indication": "Parkinsonism (rigidity, bradykinesia)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Levodopa/Carbidopa 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25/100 mg TID; titrate by 25/100 mg q1-2 weeks; limited efficacy in WD parkinsonism (response variable)",
+            "orderSentence": "Levodopa/Carbidopa 100 mg PO"
+          },
+          "contraindications": "Narrow-angle glaucoma",
+          "monitoring": "Dyskinesia, nausea, orthostatic hypotension; often poor response in WD",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonazepam",
+          "route": "PO",
+          "indication": "Tremor, dystonia, chorea, sleep disturbance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Clonazepam 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.5 mg BID; titrate by 0.5 mg q3-5 days; max 4 mg/day",
+            "orderSentence": "Clonazepam 0.5 mg PO"
+          },
+          "contraindications": "Respiratory depression, severe hepatic disease, addiction risk",
+          "monitoring": "Sedation, respiratory depression, dependence; adjust dose in hepatic impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Botulinum toxin (OnabotulinumtoxinA)",
+          "route": "IM",
+          "indication": "Focal dystonia (cervical, oromandibular, limb)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Dose per target",
+                "orderSentence": "Botulinum toxin (OnabotulinumtoxinA) Dose per target IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Site-specific dosing: cervical dystonia 100-300 units; limb dystonia 50-200 units per muscle; q12 weeks",
+            "orderSentence": "Botulinum toxin (OnabotulinumtoxinA) Dose per target IM"
+          },
+          "contraindications": "Infection at injection site, myasthenia gravis",
+          "monitoring": "Weakness at injection site, dysphagia (cervical injections)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Propranolol",
+          "route": "PO",
+          "indication": "Tremor (postural/action component)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Propranolol 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 20 mg BID; titrate to 120-240 mg/day; limited efficacy for wing-beating tremor",
+            "orderSentence": "Propranolol 20 mg PO"
+          },
+          "contraindications": "Asthma, COPD, bradycardia, decompensated heart failure",
+          "monitoring": "HR, BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression, anxiety (common in WD)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sertraline 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; titrate to 100-200 mg/day",
+            "orderSentence": "Sertraline 25 mg PO"
+          },
+          "contraindications": "MAOI use; caution with hepatic impairment (reduce dose)",
+          "monitoring": "Hepatic function (use lower doses in liver disease); suicidality in young adults",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quetiapine",
+          "route": "PO",
+          "indication": "Psychosis, agitation, behavioral disturbance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg",
+                "orderSentence": "Quetiapine 12.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 12.5 mg QHS; titrate cautiously to 50-200 mg/day; avoid typical antipsychotics (worsen movement disorder)",
+            "orderSentence": "Quetiapine 12.5 mg PO"
+          },
+          "contraindications": "QTc prolongation; avoid typical antipsychotics (D2 blockade worsens dystonia/parkinsonism)",
+          "monitoring": "QTc, metabolic panel, sedation; use ONLY atypical antipsychotics",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain, tremor (adjunctive)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg QHS; increase by 300 mg/day every 3 days; target 900-1800 mg/day TID",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Sedation, dizziness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Omeprazole",
+          "route": "PO",
+          "indication": "GI protection during chelation therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Omeprazole 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "20 mg PO daily; take 30 min before chelator",
+            "orderSentence": "Omeprazole 20 mg PO"
+          },
+          "contraindications": "None absolute",
+          "monitoring": "Long-term: B12, Mg levels",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Liver transplantation evaluation",
+          "route": "Referral",
+          "indication": "Fulminant hepatic failure; decompensated cirrhosis unresponsive to chelation; severe neurologic WD refractory to 6+ months chelation (controversial)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Refer to transplant center",
+                "orderSentence": "Liver transplantation evaluation Refer to transplant center -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Urgent evaluation in fulminant WD (New Wilson Index ≥11 = transplant); King's Wilson criteria; MELD score >15 or acute liver failure",
+            "orderSentence": "Liver transplantation evaluation Refer to transplant center -"
+          },
+          "contraindications": "Absolute contraindications per transplant center protocol",
+          "monitoring": "Pre-transplant workup; transplant corrects metabolic defect (no lifelong chelation needed post-transplant)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Continuous venovenous hemofiltration (CVVH)",
+          "route": "Extracorporeal",
+          "indication": "Fulminant WD with renal failure or massive hemolysis; bridge to transplant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per ICU protocol",
+                "orderSentence": "Continuous venovenous hemofiltration (CVVH) Per ICU protocol Extracorporeal"
+              }
+            ],
+            "route": "Extracorporeal",
+            "instructions": "Continuous copper removal; bridge therapy to transplant",
+            "orderSentence": "Continuous venovenous hemofiltration (CVVH) Per ICU protocol Extracorporeal"
+          },
+          "contraindications": "N/A (life-saving in ICU)",
+          "monitoring": "Copper levels, hemodynamics, electrolytes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Molecular adsorbent recirculating system (MARS)",
+          "route": "Extracorporeal",
+          "indication": "Fulminant WD; albumin dialysis removes copper",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Molecular adsorbent recirculating system (MARS) Per protocol Extracorporeal"
+              }
+            ],
+            "route": "Extracorporeal",
+            "instructions": "Albumin dialysis; available at specialized centers; bridge to transplant",
+            "orderSentence": "Molecular adsorbent recirculating system (MARS) Per protocol Extracorporeal"
+          },
+          "contraindications": "Hemodynamic instability",
+          "monitoring": "Copper levels, bilirubin, coagulation, hemodynamics",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Tetrathiomolybdate (ammonium or bis-choline)",
+          "route": "PO",
+          "indication": "Investigational chelator; neurologic WD (may have less neurologic worsening than penicillamine)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Tetrathiomolybdate (ammonium or bis-choline) 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "20 mg TID with meals + 20 mg TID between meals (total 120 mg/day); investigational — available through clinical trials or compassionate use",
+            "orderSentence": "Tetrathiomolybdate (ammonium or bis-choline) 20 mg PO"
+          },
+          "contraindications": "Severe hepatic failure; not yet widely approved",
+          "monitoring": "CBC (bone marrow suppression), LFTs, copper levels, iron studies (iron deficiency from over-decoppering)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying Therapies (Chelation & Zinc)": [
+        {
+          "item": "D-Penicillamine (Cuprimine)",
+          "route": "PO",
+          "indication": "First-line chelation (symptomatic WD — hepatic or neurologic); removes copper via renal excretion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "D-Penicillamine (Cuprimine) 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250-500 mg/day; increase by 250 mg every 4-7 days; target 1000-1500 mg/day divided BID-QID; take on empty stomach (1h before or 2h after meals); SLOW titration reduces neurologic worsening risk",
+            "orderSentence": "D-Penicillamine (Cuprimine) 250 mg PO"
+          },
+          "pretreatment": "Baseline: CBC, UA, CMP, 24h urine copper; pyridoxine 25 mg/day (penicillamine depletes B6); pregnancy test in women of childbearing age",
+          "contraindications": "Penicillin allergy (may cross-react); pregnancy (teratogenic — switch to zinc); lupus-like syndrome; prior severe adverse reaction",
+          "monitoring": "CBC weekly x1 month then monthly x6 months then q3 months; UA for proteinuria every 2 weeks x3 months then monthly; LFTs monthly; 24h urine copper q3-6 months (target 200-500 mcg/24h on treatment); watch for neurologic WORSENING in first 6-8 weeks (occurs in 10-50%)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Trientine (Syprine, TETA)",
+          "route": "PO",
+          "indication": "Alternative first-line chelator; preferred if penicillamine intolerant or neurologic presentation (lower risk of neurologic worsening); removes copper via renal excretion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Trientine (Syprine, TETA) 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500-750 mg/day divided BID-TID; target 750-1500 mg/day; take on empty stomach (1h before or 2h after meals); available as trientine dihydrochloride or trientine tetrahydrochloride (Cuvrior — different dosing)",
+            "orderSentence": "Trientine (Syprine, TETA) 250 mg PO"
+          },
+          "pretreatment": "Baseline: CBC, CMP, 24h urine copper; iron studies (trientine chelates iron); pregnancy test",
+          "contraindications": "Pregnancy (teratogenic — switch to zinc); iron deficiency anemia (monitor closely)",
+          "monitoring": "CBC monthly x6 months then q3 months; LFTs monthly x6 months then q3 months; 24h urine copper q3-6 months (target 200-500 mcg/24h); iron studies q6 months (sideropenia risk); watch for neurologic worsening (less common than penicillamine, ~10-15%)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Zinc acetate (Galzin)",
+          "route": "PO",
+          "indication": "Maintenance therapy (after initial decoppering with chelator); mild/presymptomatic WD; pregnancy (safest option); family members with pre-clinical WD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Zinc acetate (Galzin) 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg elemental zinc TID (taken as zinc acetate 150 mg TID); take on empty stomach separated from meals by ≥1 hour; separate from chelator by ≥2 hours if used concurrently",
+            "orderSentence": "Zinc acetate (Galzin) 50 mg PO"
+          },
+          "pretreatment": "Baseline: CBC, CMP, 24h urine copper, serum zinc level",
+          "contraindications": "None absolute; GI intolerance common (nausea); do NOT use as sole therapy in symptomatic/severe WD (too slow onset)",
+          "monitoring": "24h urine copper q3-6 months (target <75 mcg/24h on zinc monotherapy); serum zinc level q3-6 months (target 125-150 mcg/dL); 24h urine zinc (confirms compliance: >2 mg/24h); LFTs q3-6 months; CBC q6 months (zinc-induced copper deficiency can cause neutropenia)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Zinc sulfate (alternative zinc formulation)",
+          "route": "PO",
+          "indication": "Alternative to zinc acetate for maintenance therapy; more GI side effects but less expensive",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "220 mg",
+                "orderSentence": "Zinc sulfate (alternative zinc formulation) 220 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "220 mg zinc sulfate TID (contains ~50 mg elemental zinc per 220 mg); take on empty stomach separated from meals by ≥1 hour; separate from chelator by ≥2 hours if used concurrently",
+            "orderSentence": "Zinc sulfate (alternative zinc formulation) 220 mg PO"
+          },
+          "pretreatment": "Baseline: CBC, CMP, 24h urine copper, serum zinc level",
+          "contraindications": "GI intolerance common (nausea, gastric irritation); do NOT use as sole therapy in symptomatic/severe WD (too slow onset)",
+          "monitoring": "24h urine copper q3-6 months (target <75 mcg/24h on zinc monotherapy); serum zinc level q3-6 months (target 125-150 mcg/dL); 24h urine zinc (confirms compliance: >2 mg/24h); LFTs q3-6 months; CBC q6 months (zinc-induced copper deficiency can cause neutropenia)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pyridoxine (Vitamin B6)",
+          "route": "PO",
+          "indication": "Required supplement with D-penicillamine therapy (penicillamine depletes B6)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Pyridoxine (Vitamin B6) 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25 mg PO daily; co-administer with penicillamine",
+            "orderSentence": "Pyridoxine (Vitamin B6) 25 mg PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "None",
+          "monitoring": "Clinical assessment; peripheral neuropathy symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Hepatology consultation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "indication": "All WD patients; liver disease staging, transplant evaluation, chelation management"
+        },
+        {
+          "item": "Neurology consultation",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "indication": "All neurologic WD; movement disorder management, monitoring for chelation-related worsening"
+        },
+        {
+          "item": "Movement disorder specialist",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Dystonia, tremor, parkinsonism management; botulinum toxin injections"
+        },
+        {
+          "item": "Ophthalmology (slit-lamp exam)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "ALL suspected WD — Kayser-Fleischer ring assessment; sunflower cataract screening"
+        },
+        {
+          "item": "Genetics / Genetic counselor",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "ATP7B testing confirmation, family screening, reproductive counseling"
+        },
+        {
+          "item": "Transplant hepatology/surgery",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "indication": "Fulminant hepatic failure, decompensated cirrhosis, New Wilson Index ≥11"
+        },
+        {
+          "item": "Psychiatry",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Depression, psychosis, personality change, behavioral disturbance (common in WD)"
+        },
+        {
+          "item": "Neuropsychology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Baseline cognitive assessment; monitor for cognitive decline"
+        },
+        {
+          "item": "Speech-language pathology (SLP)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Dysarthria, dysphagia evaluation and management"
+        },
+        {
+          "item": "Physical therapy (PT)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Dystonia management, gait training, falls prevention"
+        },
+        {
+          "item": "Occupational therapy (OT)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "ADL assistance, handwriting aids, adaptive equipment"
+        },
+        {
+          "item": "Nutrition / Dietitian",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Low-copper diet counseling; hepatic diet if cirrhotic"
+        },
+        {
+          "item": "Social work",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Chronic disease support, medication access (chelators are expensive), disability resources"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Wilson's disease is a lifelong condition requiring CONTINUOUS treatment — never stop chelation or zinc without physician guidance",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take chelation medication (penicillamine or trientine) on an EMPTY STOMACH — 1 hour before or 2 hours after meals",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "If taking zinc, separate from chelator by at least 2 hours; take zinc between meals",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return to ED if: worsening jaundice, confusion, vomiting blood, black stools, new neurologic symptoms, worsening speech or swallowing, severe abdominal pain",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report ANY new neurologic symptoms during the first 2-3 months of chelation (worsening is possible and requires dose adjustment)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid HIGH-COPPER FOODS during initial treatment: liver/organ meats, shellfish (especially lobster, oysters), chocolate, mushrooms, nuts, dried fruits, soy products",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid drinking water through copper pipes (consider water testing; use filter or bottled water if copper pipes present)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alcohol is STRICTLY prohibited — causes additional liver damage",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Women of childbearing age: pregnancy requires switching from chelator to zinc (chelators are teratogenic); discuss family planning with physician BEFORE conception",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ALL first-degree relatives (siblings, children, parents) MUST be screened for Wilson's disease — siblings have 25% risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carry a medical alert card/bracelet indicating Wilson's disease and current medications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular follow-up is ESSENTIAL — blood and urine tests needed every 3-6 months lifelong",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Low-copper diet during initial decoppering phase (avoid >1 mg copper/day); can liberalize slightly once stable on treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular exercise as tolerated; may improve dystonia and mood",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Strict alcohol avoidance (lifelong — hepatotoxic)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation (impairs liver function and overall health)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis A and B vaccination if not immune (protect remaining liver function)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid hepatotoxic medications (acetaminophen limit <2 g/day; avoid NSAIDs if cirrhotic; avoid statins if decompensated)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic counseling for reproductive planning; autosomal recessive — both parents are carriers; 25% risk for each sibling",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mental health support; depression and anxiety are common and treatable components of WD",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Screen all first-degree relatives: ceruloplasmin, 24h urine copper, LFTs, slit-lamp exam, ATP7B genetic testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Autoimmune hepatitis",
+      "features": "Young women, positive ANA/SMA/anti-LKM, elevated IgG, no KF rings, no neurologic features; can coexist with WD",
+      "tests": "ANA, SMA, IgG level, liver biopsy; ceruloplasmin, copper studies"
+    },
+    {
+      "diagnosis": "Drug-induced parkinsonism",
+      "features": "Temporal relationship to dopamine-blocking medication, symmetric, resolves with drug withdrawal",
+      "tests": "Medication review; ceruloplasmin normal; no KF rings"
+    },
+    {
+      "diagnosis": "Idiopathic Parkinson's disease",
+      "features": "Asymmetric onset, rest tremor (pill-rolling), levodopa-responsive, age >50 typically, no hepatic involvement",
+      "tests": "DaTscan; ceruloplasmin, 24h urine copper; slit-lamp (no KF rings)"
+    },
+    {
+      "diagnosis": "Juvenile Huntington's disease",
+      "features": "Family history (AD), progressive chorea, behavioral changes, caudate atrophy on MRI",
+      "tests": "Genetic testing (HTT CAG repeat); ceruloplasmin normal"
+    },
+    {
+      "diagnosis": "Dystonia (primary/DYT)",
+      "features": "Isolated dystonia without hepatic features, family history, onset typically in limb, no KF rings",
+      "tests": "Genetic testing (DYT1, etc.); ceruloplasmin normal; no hepatic involvement"
+    },
+    {
+      "diagnosis": "Hemochromatosis",
+      "features": "Iron overload, skin bronzing, diabetes, arthropathy, hepatic disease, no neurologic copper features",
+      "tests": "Iron studies (elevated ferritin, transferrin saturation); HFE gene; ceruloplasmin normal"
+    },
+    {
+      "diagnosis": "Non-alcoholic fatty liver disease (NAFLD)",
+      "features": "Metabolic syndrome, obesity, insulin resistance, no neurologic features, no KF rings",
+      "tests": "Metabolic workup; ceruloplasmin normal; liver biopsy (steatosis without copper)"
+    },
+    {
+      "diagnosis": "Viral hepatitis (B, C)",
+      "features": "Exposure risk factors, positive viral serologies, no KF rings or neurologic features",
+      "tests": "Hepatitis panel; ceruloplasmin normal"
+    },
+    {
+      "diagnosis": "Alcoholic liver disease",
+      "features": "Alcohol use history, AST:ALT ratio >2, no KF rings, no neurologic copper features",
+      "tests": "History; ceruloplasmin normal; liver biopsy"
+    },
+    {
+      "diagnosis": "Neuroacanthocytosis",
+      "features": "Orofacial dyskinesia, chorea, self-mutilation, acanthocytes on blood smear",
+      "tests": "Peripheral smear (acanthocytes); CK (elevated); ceruloplasmin normal"
+    },
+    {
+      "diagnosis": "Menkes disease",
+      "features": "X-linked; presents in infancy (not adolescent/adult); kinky hair, seizures, failure to thrive",
+      "tests": "Age of onset; genetic testing (ATP7A); ceruloplasmin very low but different gene"
+    },
+    {
+      "diagnosis": "Pantothenate kinase-associated neurodegeneration (PKAN)",
+      "features": "\"Eye of the tiger\" sign on MRI (globus pallidus), dystonia, retinopathy",
+      "tests": "MRI (iron deposition pattern differs from WD); PANK2 gene"
+    },
+    {
+      "diagnosis": "Acquired hepatocerebral degeneration",
+      "features": "Chronic liver disease from ANY cause; parkinsonism, ataxia; MRI shows T1 basal ganglia signal (manganese)",
+      "tests": "Underlying liver disease diagnosis; ceruloplasmin may be low from liver failure but 24h urine copper not markedly elevated; no ATP7B mutations"
+    },
+    {
+      "diagnosis": "Multiple sclerosis",
+      "features": "Relapsing white matter disease, optic neuritis, spinal cord lesions; no hepatic involvement",
+      "tests": "MRI brain/spine (demyelination); LP (oligoclonal bands); ceruloplasmin normal"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Ceruloplasmin <20 mg/dL as screening test for WD",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Ferenci et al., Liver Int 2003 [PubMed: 14506258](https://pubmed.ncbi.nlm.nih.gov/14506258/)"
+    },
+    {
+      "recommendation": "24-hour urine copper >100 mcg as diagnostic criterion",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Roberts & Schilsky, Hepatology 2008 (AASLD Practice Guidelines) [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/)"
+    },
+    {
+      "recommendation": "D-Penicillamine as first-line chelation therapy",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Walshe, Lancet 1956; Roberts & Schilsky, Hepatology 2008 [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/)"
+    },
+    {
+      "recommendation": "Trientine as alternative first-line chelator with lower neurologic worsening risk",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Walshe, Lancet 1982; Weiss et al., J Hepatol 2013 [PubMed: 23485523](https://pubmed.ncbi.nlm.nih.gov/23485523/)"
+    },
+    {
+      "recommendation": "Zinc acetate for maintenance therapy",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Brewer et al., Arch Neurol 1987; Czlonkowska et al., Ann Neurol 1996 [PubMed: 8967753](https://pubmed.ncbi.nlm.nih.gov/8967753/)"
+    },
+    {
+      "recommendation": "Neurologic worsening occurs in 10-50% of patients starting D-penicillamine",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Brewer et al., Arch Neurol 1994 [PubMed: 7944997](https://pubmed.ncbi.nlm.nih.gov/7944997/); Walshe & Yealland, J Neurol Neurosurg Psychiatry 1993 [PubMed: 8505642](https://pubmed.ncbi.nlm.nih.gov/8505642/)"
+    },
+    {
+      "recommendation": "Liver transplantation for fulminant WD and decompensated cirrhosis",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Arnon et al., Hepatology 2011 [PubMed: 21254169](https://pubmed.ncbi.nlm.nih.gov/21254169/); Dhawan et al., Gut 2005 [PubMed: 15753547](https://pubmed.ncbi.nlm.nih.gov/15753547/)"
+    },
+    {
+      "recommendation": "New Wilson Index ≥11 predicts need for transplantation in pediatric fulminant WD",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Dhawan et al., Gut 2005 [PubMed: 15753547](https://pubmed.ncbi.nlm.nih.gov/15753547/)"
+    },
+    {
+      "recommendation": "Kayser-Fleischer rings present in >95% of neurologic WD",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Walshe, Brain 1976; Ala et al., Lancet 2007 [PubMed: 17276780](https://pubmed.ncbi.nlm.nih.gov/17276780/)"
+    },
+    {
+      "recommendation": "Leipzig Scoring System for WD diagnosis (score ≥4 = established)",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "Ferenci et al., Liver Int 2003 (8th International Meeting on Wilson Disease) [PubMed: 14506258](https://pubmed.ncbi.nlm.nih.gov/14506258/)"
+    },
+    {
+      "recommendation": "ATP7B gene testing for definitive diagnosis and family screening",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Loudianos & Gitlin, Semin Liver Dis 2000 [PubMed: 11200483](https://pubmed.ncbi.nlm.nih.gov/11200483/); EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/)"
+    },
+    {
+      "recommendation": "MRI brain findings: T2 hyperintensity in putamen (\"face of giant panda\" sign)",
+      "evidenceLevel": "Class II, Level C",
+      "source": "King et al., Mov Disord 1996 [PubMed: 8866494](https://pubmed.ncbi.nlm.nih.gov/8866494/); Sinha et al., AJNR 2006 [PubMed: 16551993](https://pubmed.ncbi.nlm.nih.gov/16551993/)"
+    },
+    {
+      "recommendation": "Low-copper diet during initial decoppering phase",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Expert consensus; EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/)"
+    },
+    {
+      "recommendation": "Plasmapheresis for acute hemolytic crisis in fulminant WD",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "Jhang et al., J Clin Apher 2007 [PubMed: 17722038](https://pubmed.ncbi.nlm.nih.gov/17722038/); Akyildiz et al., Ther Apher Dial 2004 [PubMed: 15255163](https://pubmed.ncbi.nlm.nih.gov/15255163/)"
+    },
+    {
+      "recommendation": "Free (non-ceruloplasmin-bound) copper as monitoring parameter",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Walshe, Ann Clin Biochem 2003 [PubMed: 12880538](https://pubmed.ncbi.nlm.nih.gov/12880538/); EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/)"
+    },
+    {
+      "recommendation": "Pregnancy management: switch to zinc; chelators are teratogenic",
+      "evidenceLevel": "Class II, Level C",
+      "source": "Brewer et al., J Lab Clin Med 2000 [PubMed: 10638697](https://pubmed.ncbi.nlm.nih.gov/10638697/); Tarnacka et al., Fertil Steril 2000 [PubMed: 10685533](https://pubmed.ncbi.nlm.nih.gov/10685533/)"
+    },
+    {
+      "recommendation": "Family screening with ceruloplasmin, 24h urine copper, and ATP7B genotyping",
+      "evidenceLevel": "Class I, Level B",
+      "source": "EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/); Roberts & Schilsky, Hepatology 2008 [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/)"
+    },
+    {
+      "recommendation": "AASLD Practice Guidelines for Wilson Disease",
+      "evidenceLevel": "Class I (Guidelines)",
+      "source": "Roberts & Schilsky, Hepatology 2008 [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/); Schilsky, Clin Liver Dis 2017 [PubMed: 28364808](https://pubmed.ncbi.nlm.nih.gov/28364808/)"
+    },
+    {
+      "recommendation": "EASL Clinical Practice Guidelines on Wilson's Disease",
+      "evidenceLevel": "Class I (Guidelines)",
+      "source": "European Association for the Study of the Liver, J Hepatol 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/)"
+    },
+    {
+      "recommendation": "Trientine tetrahydrochloride (Cuvrior) as improved formulation",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Weiss et al., Lancet Gastroenterol Hepatol 2022 [PubMed: 35276119](https://pubmed.ncbi.nlm.nih.gov/35276119/)"
+    },
+    {
+      "recommendation": "Bis-choline tetrathiomolybdate for neurologic WD (phase 3 data)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Weiss et al., Lancet Gastroenterol Hepatol 2022 (WTX101-301 trial) [PubMed: 35276119](https://pubmed.ncbi.nlm.nih.gov/35276119/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "24-hour urine copper",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q3-6 months on chelation; q6-12 months on zinc maintenance",
+      "action": "Adjust chelator dose if outside range; <200 suggests over-chelation or non-compliance"
+    },
+    {
+      "item": "Serum free (non-ceruloplasmin-bound) copper",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q3-6 months",
+      "action": "Reduce chelator if over-treated; increase if still elevated"
+    },
+    {
+      "item": "LFTs (AST, ALT, bilirubin, albumin)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Monthly x6 months, then q3-6 months",
+      "action": "If worsening on treatment: assess compliance, consider dose adjustment, transplant evaluation"
+    },
+    {
+      "item": "CBC with differential",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Weekly x1 month (penicillamine), then monthly x6 months, then q3 months",
+      "action": "Penicillamine: hold if WBC <3000 or platelets <100K (bone marrow suppression); neutropenia on zinc (copper deficiency)"
+    },
+    {
+      "item": "INR/PT",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Monthly x6 months, then q3-6 months",
+      "action": "Worsening INR suggests progressive liver disease; transplant evaluation if persistent"
+    },
+    {
+      "item": "Urinalysis (for proteinuria)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Every 2 weeks x3 months on penicillamine, then monthly",
+      "action": "Penicillamine nephrotoxicity: hold if >1 g/24h proteinuria; may require switch to trientine"
+    },
+    {
+      "item": "Serum zinc level",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q3-6 months on zinc therapy",
+      "action": "Low: assess compliance; High: reduce dose"
+    },
+    {
+      "item": "24-hour urine zinc",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q6-12 months",
+      "action": "Low suggests non-compliance"
+    },
+    {
+      "item": "Neurologic exam (dystonia, tremor, speech, gait)",
+      "ED": "URGENT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Each visit; monthly during initial chelation",
+      "action": "If WORSENING in first 2-3 months: reduce chelator dose, consider switch to trientine or add zinc; persistent worsening → transplant evaluation"
+    },
+    {
+      "item": "Slit-lamp exam (KF rings)",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Annually on treatment",
+      "action": "Persistence or reappearance suggests inadequate treatment or non-compliance"
+    },
+    {
+      "item": "MRI brain",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Baseline; repeat at 6-12 months; then annually x3 years if neurologic",
+      "action": "Worsening lesions suggest inadequate treatment or chelation-induced worsening"
+    },
+    {
+      "item": "Hepatic fibrosis assessment (FibroScan or biomarkers)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Annually if cirrhotic",
+      "action": "Worsening fibrosis despite treatment: re-evaluate; transplant referral"
+    },
+    {
+      "item": "Iron studies",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q6 months on trientine",
+      "action": "Trientine chelates iron → sideropenia; supplement iron if deficient (separate from trientine by 2h)"
+    },
+    {
+      "item": "Bone density (DEXA)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Baseline; repeat q2 years",
+      "action": "Treat osteoporosis; calcium/vitamin D supplementation"
+    },
+    {
+      "item": "Depression/psychiatric screening",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "action": "Psychiatric referral; adjust medications"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Diagnosis established; chelation/zinc initiated and tolerated; stable neurologic exam; no hepatic decompensation; able to take oral medications; understands dietary restrictions and medication timing; follow-up arranged within 1-2 weeks"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "New diagnosis requiring inpatient workup; initiation of chelation therapy with monitoring; hepatic decompensation (ascites, jaundice, coagulopathy); moderate neurologic symptoms requiring inpatient management; inability to take oral medications"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Fulminant hepatic failure (encephalopathy, coagulopathy, renal failure); severe hemolytic crisis; status epilepticus; severe dystonic crisis with airway compromise; pending liver transplant evaluation"
+    },
+    {
+      "disposition": "Transfer to liver transplant center",
+      "criteria": "Fulminant Wilson's disease (New Wilson Index ≥11); decompensated cirrhosis unresponsive to chelation; King's criteria met; MELD score >15 with progressive decline"
+    },
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Stable on chelation or zinc maintenance; routine monitoring labs; presymptomatic WD diagnosed through family screening; mild hepatic or neurologic disease responding to treatment"
+    },
+    {
+      "disposition": "Inpatient rehabilitation",
+      "criteria": "Severe dystonia or parkinsonism affecting function; dysphagia requiring supervised feeding; gait instability requiring intensive PT"
+    }
+  ]
+}

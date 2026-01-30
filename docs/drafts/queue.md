@@ -22,11 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| Chronic Migraine | [`chronic-migraine.md`](chronic-migraine.md) | `completed` | claude/tier2-plans | 2026-01-30 |
-| Low Pressure Headache / SIH | [`low-pressure-headache.md`](low-pressure-headache.md) | `completed` | claude/tier2-plans | 2026-01-30 |
-| Post-Concussion Syndrome | [`post-concussion-syndrome.md`](post-concussion-syndrome.md) | `completed` | claude/tier2-plans | 2026-01-30 |
-| Drug-Induced Parkinsonism | [`drug-induced-parkinsonism.md`](drug-induced-parkinsonism.md) | `completed` | claude/tier2-plans | 2026-01-30 |
-| Wilson's Disease | [`wilsons-disease.md`](wilsons-disease.md) | `completed` | claude/tier2-plans | 2026-01-30 |
+| *(none)* | — | — | — | — |
 
 ---
 
@@ -96,6 +92,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 60 | Giant Cell Arteritis | [`giant-cell-arteritis.md`](../plans/giant-cell-arteritis.md) | 2026-01-30 | 90%+ |
 | 61 | Functional Neurological Disorder | [`functional-neurological-disorder.md`](../plans/functional-neurological-disorder.md) | 2026-01-30 | 90%+ |
 | 62 | Non-Convulsive Status Epilepticus | [`ncse.md`](../plans/ncse.md) | 2026-01-30 | 90%+ |
+| 63 | Chronic Migraine | [`chronic-migraine.md`](../plans/chronic-migraine.md) | 2026-01-30 | 90%+ |
+| 64 | Low Pressure Headache / SIH | [`low-pressure-headache.md`](../plans/low-pressure-headache.md) | 2026-01-30 | 90%+ |
+| 65 | Post-Concussion Syndrome | [`post-concussion-syndrome.md`](../plans/post-concussion-syndrome.md) | 2026-01-30 | 90%+ |
+| 66 | Drug-Induced Parkinsonism | [`drug-induced-parkinsonism.md`](../plans/drug-induced-parkinsonism.md) | 2026-01-30 | 90%+ |
+| 67 | Wilson's Disease | [`wilsons-disease.md`](../plans/wilsons-disease.md) | 2026-01-30 | 90%+ |
 
 ---
 
@@ -112,7 +113,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-01-30. Total approved: 62 plans.
+- Queue updated 2026-01-30. Total approved: 67 plans.
 
 ---
 
