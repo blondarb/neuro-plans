@@ -7,9 +7,9 @@ title: Template Tracker
 ## Project Tracker
 
 **Created:** January 15, 2026
-**Last Updated:** January 26, 2026
+**Last Updated:** January 30, 2026
 **Target:** 150+ validated templates
-**Current Status:** 9 templates approved
+**Current Status:** 57 templates approved
 
 ---
 
@@ -32,7 +32,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 |--------|-----------|--------|----------|-------|
 | ✅ | New Onset Seizure | R56.9 | 🎯 OPD | Approved |
 | ✅ | Status Epilepticus | G41.9 | 🎯 OPD | Approved |
-| ⬜ | Breakthrough Seizure (Known Epilepsy) | G40.909 | 🎯 OPD | Different from new onset |
+| ✅ | Breakthrough Seizure (Known Epilepsy) | G40.909 | 🎯 OPD | Approved |
 | ⬜ | Non-Convulsive Status Epilepticus (NCSE) | G41.0 | 🎯 OPD | Often missed diagnosis |
 | ⬜ | Alcohol Withdrawal Seizure | G40.509 | 🎯 OPD | Common in hospitalist practice |
 | ⬜ | Eclampsia/Seizure in Pregnancy | O15.9 | 🎯 OPD | Special ASM considerations |
@@ -44,9 +44,9 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
 | ✅ | Acute Ischemic Stroke | I63 | 🎯 OPD | Approved |
-| ⬜ | Intracerebral Hemorrhage (ICH) | I61.9 | 🎯 OPD | BP management, reversal agents |
-| ⬜ | Subarachnoid Hemorrhage (SAH) | I60.9 | 🎯 OPD | Aneurysmal vs traumatic |
-| ⬜ | Transient Ischemic Attack (TIA) | G45.9 | 🎯 OPD | Risk stratification, workup |
+| ✅ | Intracerebral Hemorrhage (ICH) | I61.9 | 🎯 OPD | Approved |
+| ✅ | Subarachnoid Hemorrhage (SAH) | I60.9 | 🎯 OPD | Approved |
+| ✅ | Transient Ischemic Attack (TIA) | G45.9 | 🎯 OPD | Approved |
 | ⬜ | Cerebral Venous Thrombosis (CVT) | I67.6 | 🎯 OPD | Often missed, anticoagulation |
 | ⬜ | Carotid/Vertebral Dissection | I77.71 | 🎯 OPD | Young stroke workup |
 | ⬜ | Posterior Reversible Encephalopathy (PRES) | F93.49 | 🎯 OPD | Hypertensive emergency |
@@ -61,16 +61,16 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
 | ⬜ | Headache - Cluster Evaluation | R51.9 | 🎯 OPD | Broad DDx approach |
-| ⬜ | Migraine without Aura | G43.909 | 🎯 OPD | Acute and preventive |
-| ⬜ | Migraine with Aura | G43.109 | 🎯 OPD | Acute and preventive |
+| ✅ | Migraine (without Aura) | G43.909 | 🎯 OPD | Approved |
+| ✅ | Migraine with Aura | G43.109 | 🎯 OPD | Approved |
 | ⬜ | Chronic Migraine | G43.709 | 🎯 OPD | Preventive therapy, CGRP agents |
 | ⬜ | Status Migrainosus | G43.901 | 🎯 OPD | Acute management |
-| ⬜ | Cluster Headache | G44.009 | 🎯 OPD | Acute and preventive |
-| ⬜ | Tension-Type Headache | G44.209 | 🎯 OPD | Usually PCP managed |
-| ⬜ | Medication Overuse Headache | G44.41 | 🎯 OPD | Very common |
-| ⬜ | Idiopathic Intracranial Hypertension (IIH) | G93.2 | 🎯 OPD | Diagnostic LP, management |
+| ✅ | Cluster Headache | G44.009 | 🎯 OPD | Approved |
+| ✅ | Tension-Type Headache | G44.209 | 🎯 OPD | Approved |
+| ✅ | Medication Overuse Headache | G44.41 | 🎯 OPD | Approved |
+| ✅ | Idiopathic Intracranial Hypertension (IIH) | G93.2 | 🎯 OPD | Approved |
 | ⬜ | Low Pressure Headache / SIH | G96.00 | 🎯 OPD | Post-LP, spontaneous |
-| ⬜ | Trigeminal Neuralgia | G50.0 | 🎯 OPD | Facial pain DDx |
+| ✅ | Trigeminal Neuralgia | G50.0 | 🎯 OPD | Approved |
 | ⬜ | New Daily Persistent Headache | G44.52 | 🎯 OPD | Refractory cases |
 | ⬜ | Thunderclap Headache Evaluation | R51.9 | 🎯 OPD | SAH, RCVS, other emergencies |
 | ⬜ | Giant Cell Arteritis (GCA) | M31.6 | 🎯 OPD | Vision-threatening |
@@ -79,13 +79,12 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
-| ✅ | MS - Exacerbation | G35 | 🎯 OPD | Approved |
 | ✅ | MS - New Diagnosis | G35 | 🎯 OPD | Approved |
-| ⬜ | MS - Chronic Management | G35 | 🎯 OPD | DMT monitoring, symptoms |
+| ✅ | MS - Chronic Management | G35 | 🎯 OPD | Approved |
+| ✅ | Optic Neuritis | H46.9 | 🎯 OPD | Approved |
+| ✅ | Acute Myelopathy | G95.9 | 🎯 OPD | Approved (covers transverse myelitis) |
 | ⬜ | Neuromyelitis Optica (NMOSD) | G36.0 | 🎯 OPD | AQP4+, different from MS |
 | ⬜ | MOG Antibody Disease (MOGAD) | G36.9 | 🎯 OPD | Distinct entity |
-| ⬜ | Transverse Myelitis | G37.3 | 🎯 OPD | Acute myelopathy DDx |
-| ⬜ | Optic Neuritis | H46.9 | 🎯 OPD | Isolated vs MS-related |
 | ⬜ | Acute Disseminated Encephalomyelitis (ADEM) | G04.81 | 🎯 OPD | More common in pediatrics |
 | ⬜ | Progressive Multifocal Leukoencephalopathy (PML) | A81.2 | 🎯 OPD | JCV, immunocompromised |
 | ⬜ | Diffuse White Matter Disease | R53.1 | 🎯 OPD | Differential diagnosis |
@@ -94,12 +93,18 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
-| ✅ | Guillain-Barré Syndrome (GBS) | G61.0 | 🎯 OPD | Approved |
+| ✅ | Guillain-Barre Syndrome (GBS) | G61.0 | 🎯 OPD | Approved |
 | ✅ | Myasthenia Gravis - Crisis | G70.01 | 🎯 OPD | Approved |
-| ⬜ | Myasthenia Gravis - Chronic Management | G70.00 | 🎯 OPD | Maintenance, monitoring |
+| ✅ | Myasthenia Gravis - New Diagnosis | G70.0 | 🎯 OPD | Approved |
+| ✅ | Myasthenia Gravis - Outpatient | G70.00 | 🎯 OPD | Approved |
 | ✅ | Peripheral Neuropathy (General) | G62.9 | 🎯 OPD | Approved |
-| ⬜ | CIDP (Chronic Inflammatory Demyelinating) | G61.81 | 🎯 OPD | Chronic GBS variant |
-| ⬜ | Amyotrophic Lateral Sclerosis (ALS) | G12.21 | 🎯 OPD | Diagnosis, symptom management |
+| ✅ | CIDP (Chronic Inflammatory Demyelinating) | G61.81 | 🎯 OPD | Approved |
+| ✅ | Amyotrophic Lateral Sclerosis (ALS) | G12.21 | 🎯 OPD | Approved |
+| ✅ | Diabetic Neuropathy | E11.42 | 🎯 OPD | Approved |
+| ✅ | Small Fiber Neuropathy | G62.9 | 🎯 OPD | Approved |
+| ✅ | Carpal Tunnel Syndrome | G56.00 | 🎯 OPD | Approved |
+| ✅ | Radiculopathy | M54.10 | 🎯 OPD | Approved |
+| ✅ | Neuromuscular Respiratory Failure | J96.00 | 🎯 OPD | Approved |
 | ⬜ | Lambert-Eaton Myasthenic Syndrome (LEMS) | G73.1 | 🎯 OPD | Paraneoplastic |
 | ⬜ | Inflammatory Myopathy (Dermatomyositis/PM) | G72.41 | 🎯 OPD | Weakness + rash |
 | ⬜ | Inclusion Body Myositis (IBM) | G72.41 | 🎯 OPD | Refractory myopathy |
@@ -107,38 +112,34 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ⬜ | Myotonic Dystrophy | G71.11 | 🎯 OPD | Multisystem |
 | ⬜ | Critical Illness Myopathy/Neuropathy | G72.81 | 🎯 OPD | ICU weakness |
 | ⬜ | Botulism | A05.1 | 🎯 OPD | Rare but critical |
-| ⬜ | Diabetic Neuropathy | E11.42 | 🎯 OPD | Most common cause |
-| ⬜ | Small Fiber Neuropathy | G62.9 | 🎯 OPD | Often missed |
 | ⬜ | B12 Deficiency Neuropathy | E53.8 | 🎯 OPD | Reversible |
 | ⬜ | Chemotherapy-Induced Neuropathy | G62.0 | 🎯 OPD | Growing population |
-| ⬜ | Carpal Tunnel Syndrome | G56.00 | 🎯 OPD | Usually PCP/hand surgery |
 | ⬜ | Ulnar Neuropathy | G56.20 | 🎯 OPD | Entrapment |
 | ⬜ | Peroneal Neuropathy | F57.30 | 🎯 OPD | Foot drop |
 | ⬜ | Multifocal Motor Neuropathy (MMN) | G61.82 | 🎯 OPD | GBS mimic |
 | ⬜ | Hereditary Neuropathy (CMT) | G60.0 | 🎯 OPD | Genetic |
 | ⬜ | Vasculitic Neuropathy | G63 | 🎯 OPD | Mononeuritis multiplex |
 | ⬜ | Autonomic Neuropathy | G90.09 | 🎯 OPD | Orthostatic, GI, cardiac |
-| ⬜ | Radiculopathy | M54.10 | 🎯 OPD | Common outpatient |
 | ⬜ | Plexopathy | G54.0 | 🎯 OPD | Brachial/lumbosacral |
 
 ### Movement Disorders
 
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
-| ⬜ | Parkinson's Disease - New Diagnosis | G20 | 🎯 OPD | Workup, initiation |
-| ⬜ | Parkinson's Disease - Management | G20 | 🎯 OPD | Medication adjustments |
+| ✅ | Parkinson's Disease - New Diagnosis | G20 | 🎯 OPD | Approved |
+| ✅ | Parkinson's Disease - Management | G20 | 🎯 OPD | Approved |
 | ⬜ | Parkinson's Disease - Motor Fluctuations | G20 | 🎯 OPD | On/off, dyskinesia |
 | ⬜ | Parkinson's Disease - Psychosis | F06.0 | 🎯 OPD | Common, management |
-| ⬜ | Essential Tremor | G25.0 | 🎯 OPD | DDx with Parkinson's |
-| ⬜ | Dystonia | G24.9 | 🎯 OPD | Classification, treatment |
-| ⬜ | Huntington's Disease | G10 | 🎯 OPD | Genetic, symptom management |
-| ⬜ | Tardive Dyskinesia | G24.01 | 🎯 OPD | Antipsychotic-induced |
+| ✅ | Essential Tremor | G25.0 | 🎯 OPD | Approved |
+| ✅ | Dystonia | G24.9 | 🎯 OPD | Approved |
+| ✅ | Huntington's Disease | G10 | 🎯 OPD | Approved |
+| ✅ | Tardive Dyskinesia | G24.01 | 🎯 OPD | Approved |
+| ✅ | Restless Legs Syndrome | G25.81 | 🎯 OPD | Approved |
 | ⬜ | Drug-Induced Parkinsonism | G21.11 | 🎯 OPD | Reversible |
 | ⬜ | Wilson's Disease | E83.01 | 🎯 OPD | Young onset movement disorder |
 | ⬜ | Progressive Supranuclear Palsy (PSP) | G23.1 | 🎯 OPD | Atypical parkinsonism |
 | ⬜ | Multiple System Atrophy (MSA) | G90.3 | 🎯 OPD | Atypical parkinsonism |
 | ⬜ | Corticobasal Degeneration (CBD) | G31.85 | 🎯 OPD | Rare |
-| ⬜ | Restless Legs Syndrome | G25.81 | 🎯 OPD | Common, often OPD |
 | ⬜ | Tics / Tourette Syndrome | F95.2 | 🎯 OPD | Tic disorders |
 | ⬜ | Ataxia Evaluation | R27.0 | 🎯 OPD | DDx approach |
 | ⬜ | Chorea Evaluation | G25.5 | 🎯 OPD | DDx approach |
@@ -148,16 +149,16 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
-| ⬜ | Dementia Evaluation (General) | R41.81 | 🎯 OPD | Broad workup approach |
-| ⬜ | Alzheimer's Disease | G30.9 | 🎯 OPD | Diagnosis, management |
-| ⬜ | Vascular Dementia | F01.50 | 🎯 OPD | Risk factor modification |
-| ⬜ | Lewy Body Dementia | G31.83 | 🎯 OPD | Special medication cautions |
-| ⬜ | Frontotemporal Dementia | G31.09 | 🎯 OPD | Behavioral variant |
-| ⬜ | Rapidly Progressive Dementia | F03.90 | 🎯 OPD | Urgent workup - CJD, autoimmune |
-| ⬜ | Normal Pressure Hydrocephalus (NPH) | G91.2 | 🎯 OPD | Treatable dementia |
+| ✅ | Dementia Evaluation (General) | R41.81 | 🎯 OPD | Approved |
+| ✅ | Alzheimer's Disease | G30.9 | 🎯 OPD | Approved |
+| ✅ | Vascular Dementia | F01.50 | 🎯 OPD | Approved |
+| ✅ | Lewy Body Dementia | G31.83 | 🎯 OPD | Approved |
+| ✅ | Frontotemporal Dementia | G31.09 | 🎯 OPD | Approved |
+| ✅ | Rapidly Progressive Dementia | F03.90 | 🎯 OPD | Approved |
+| ✅ | Normal Pressure Hydrocephalus (NPH) | G91.2 | 🎯 OPD | Approved |
+| ✅ | Mild Cognitive Impairment (MCI) | G31.84 | 🎯 OPD | Approved |
 | ⬜ | Creutzfeldt-Jakob Disease (CJD) | A81.00 | 🎯 OPD | Rare but important DDx |
 | ⬜ | Autoimmune Dementia/Encephalopathy | G04.81 | 🎯 OPD | Treatable |
-| ⬜ | Mild Cognitive Impairment (MCI) | G31.84 | 🎯 OPD | Early intervention |
 | ⬜ | Delirium vs Dementia | R41.0 | 🎯 OPD | Acute confusion workup |
 | ⬜ | Wernicke-Korsakoff Syndrome | F10.96 | 🎯 OPD | Thiamine deficiency |
 
@@ -165,10 +166,11 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
-| ✅ | Bacterial Meningitis | I00.9 | 🎯 OPD | Approved |
-| ⬜ | Viral Meningitis | A87.9 | 🎯 OPD | Supportive care focus |
+| ✅ | Bacterial Meningitis | G00.9 | 🎯 OPD | Approved |
 | ✅ | HSV Encephalitis | B00.4 | 🎯 OPD | Approved |
 | ✅ | Autoimmune Encephalitis | G04.81 | 🎯 OPD | Approved |
+| ✅ | Epidural Abscess | G06.1 | 🎯 OPD | Approved |
+| ⬜ | Viral Meningitis | A87.9 | 🎯 OPD | Supportive care focus |
 | ⬜ | Fungal Meningitis | G02 | 🎯 OPD | Immunocompromised |
 | ⬜ | TB Meningitis | A17.0 | 🎯 OPD | Chronic meningitis |
 | ⬜ | Neurocysticercosis | B69.0 | 🎯 OPD | Endemic areas |
@@ -181,11 +183,11 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
-| ⬜ | Brain Metastases | C79.31 | 🎯 OPD | Common, management |
+| ✅ | Brain Metastases | C79.31 | 🎯 OPD | Approved |
+| ✅ | Spinal Cord Compression (Malignant) | G95.20 | 🎯 OPD | Approved |
 | ⬜ | Glioblastoma (GBM) | C71.9 | 🎯 OPD | Primary brain tumor |
 | ⬜ | Leptomeningeal Carcinomatosis | C79.32 | 🎯 OPD | CSF cytology |
 | ⬜ | Paraneoplastic Neurological Syndrome | G13.0 | 🎯 OPD | Antibody panels |
-| ⬜ | Spinal Cord Compression (Malignant) | G95.20 | 🎯 OPD | Oncologic emergency |
 | ⬜ | Meningioma | D32.9 | 🎯 OPD | Often incidental |
 | ⬜ | Primary CNS Lymphoma | C85.19 | 🎯 OPD | Immunocompromised |
 | ⬜ | Radiation-Induced Neurologic Injury | G93.89 | 🎯 OPD | Delayed complications |
@@ -195,11 +197,11 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
+| ✅ | Cauda Equina Syndrome | G83.4 | 🎯 OPD | Approved |
 | ⬜ | Cervical Myelopathy (Degenerative) | M47.22 | 🎯 OPD | Common, surgical referral |
 | ⬜ | Lumbar Stenosis | M48.06 | 🎯 OPD | Common outpatient |
 | ⬜ | Syringomyelia | G95.0 | 🎯 OPD | Rare |
 | ⬜ | Subacute Combined Degeneration | E53.8 | 🎯 OPD | B12 deficiency |
-| ⬜ | Cauda Equina Syndrome | G83.4 | 🎯 OPD | Surgical emergency |
 
 ### Autoimmune & Inflammatory
 
@@ -224,19 +226,20 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
-| ⬜ | Elevated ICP Management | G93.2 | 🎯 OPD | General approach |
+| ✅ | Elevated ICP Management | G93.2 | 🎯 OPD | Approved |
+| ✅ | Neuromuscular Respiratory Failure | J96.00 | 🎯 OPD | Approved |
 | ⬜ | Brain Death Evaluation | G93.82 | 🎯 OPD | Legal/ethical protocol |
 | ⬜ | Anoxic Brain Injury / Prognostication | G93.1 | 🎯 OPD | Post-cardiac arrest |
-| ⬜ | Neuromuscular Respiratory Failure | J96.00 | 🎯 OPD | GBS, MG, ALS |
 | ⬜ | Hypertensive Encephalopathy | I67.4 | 🎯 OPD | BP management |
 
 ### Other / Miscellaneous
 
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
-| ⬜ | Syncope Evaluation (Neuro Perspective) | R55 | 🎯 OPD | DDx with seizure |
-| ⬜ | Vertigo / Dizziness Evaluation | R42 | 🎯 OPD | Central vs peripheral |
-| ⬜ | Bell's Palsy | G51.0 | 🎯 OPD | Facial weakness DDx |
+| ✅ | Syncope Evaluation (Neuro Perspective) | R55 | 🎯 OPD | Approved |
+| ✅ | Vertigo / Dizziness Evaluation | R42 | 🎯 OPD | Approved |
+| ✅ | Bell's Palsy | G51.0 | 🎯 OPD | Approved |
+| ✅ | Wernicke Encephalopathy | E51.2 | 🎯 OPD | Approved |
 | ⬜ | Horner Syndrome | G90.2 | 🎯 OPD | Localization |
 | ⬜ | Nystagmus Evaluation | H55.00 | 🎯 OPD | Central vs peripheral |
 | ⬜ | Post-Concussion Syndrome | F07.81 | 🎯 OPD | Common |
@@ -255,21 +258,23 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 
 | Category | Approved | To Build | Total |
 |----------|----------|----------|-------|
-| Seizure/Epilepsy | 2 | 6 | 8 |
-| Stroke/Cerebrovascular | 1 | 11 | 12 |
-| Headache | 0 | 14 | 14 |
-| Demyelinating | 2 | 8 | 10 |
-| Neuromuscular | 3 | 23 | 26 |
-| Movement Disorders | 0 | 18 | 18 |
-| Dementia/Cognitive | 0 | 12 | 12 |
-| CNS Infections | 3 | 8 | 11 |
-| Neuro-oncology | 0 | 9 | 9 |
-| Spinal Cord | 0 | 5 | 5 |
+| Seizure/Epilepsy | 3 | 5 | 8 |
+| Stroke/Cerebrovascular | 4 | 8 | 12 |
+| Headache | 7 | 7 | 14 |
+| Demyelinating | 4 | 5 | 9 |
+| Neuromuscular | 12 | 16 | 28 |
+| Movement Disorders | 7 | 11 | 18 |
+| Dementia/Cognitive | 8 | 4 | 12 |
+| CNS Infections | 4 | 8 | 12 |
+| Neuro-oncology | 2 | 7 | 9 |
+| Spinal Cord | 1 | 4 | 5 |
 | Autoimmune/Inflammatory | 0 | 5 | 5 |
 | Functional/Psychiatric | 0 | 4 | 4 |
-| Neurocritical Care | 0 | 5 | 5 |
-| Other/Miscellaneous | 0 | 14 | 14 |
-| **TOTAL** | **9** | **144** | **153** |
+| Neurocritical Care | 2 | 3 | 5 |
+| Other/Miscellaneous | 4 | 11 | 15 |
+| **TOTAL** | **58** | **98** | **156** |
+
+**Note:** 58 approved diagnoses map to 57 unique plan files (Parkinson's Disease has separate Management and New Diagnosis plans in a single file pair).
 
 ---
 
@@ -282,40 +287,88 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | 3 | MS - New Diagnosis | v1.0 | Jan 20, 2026 |
 | 4 | Peripheral Neuropathy | v1.0 | Jan 20, 2026 |
 | 5 | Acute Ischemic Stroke | v1.2 | Jan 21, 2026 |
-| 6 | Guillain-Barré Syndrome | v1.1 | Jan 26, 2026 |
+| 6 | Guillain-Barre Syndrome | v1.1 | Jan 26, 2026 |
 | 7 | Myasthenia Gravis - Crisis | v1.1 | Jan 26, 2026 |
 | 8 | Bacterial Meningitis | v1.1 | Jan 26, 2026 |
 | 9 | HSV Encephalitis | v1.0 | Jan 26, 2026 |
 | 10 | Autoimmune Encephalitis | v1.0 | Jan 26, 2026 |
+| 11 | Acute Myelopathy | v1.1 | Jan 27, 2026 |
+| 12 | Bell's Palsy | v1.1 | Jan 27, 2026 |
+| 13 | Brain Metastases | v1.1 | Jan 27, 2026 |
+| 14 | Breakthrough Seizure | v1.1 | Jan 27, 2026 |
+| 15 | Cauda Equina Syndrome | v1.1 | Jan 27, 2026 |
+| 16 | CIDP | v1.1 | Jan 27, 2026 |
+| 17 | Cluster Headache | v1.1 | Jan 27, 2026 |
+| 18 | Dementia Evaluation | v1.1 | Jan 27, 2026 |
+| 19 | Diabetic Neuropathy | v1.1 | Jan 27, 2026 |
+| 20 | Elevated ICP Management | v1.1 | Jan 27, 2026 |
+| 21 | Epidural Abscess | v1.1 | Jan 27, 2026 |
+| 22 | Essential Tremor | v1.1 | Jan 27, 2026 |
+| 23 | Idiopathic Intracranial Hypertension | v1.1 | Jan 27, 2026 |
+| 24 | Intracerebral Hemorrhage | v1.1 | Jan 27, 2026 |
+| 25 | Medication Overuse Headache | v1.1 | Jan 27, 2026 |
+| 26 | Migraine | v1.1 | Jan 27, 2026 |
+| 27 | MS - Chronic Management | v1.1 | Jan 27, 2026 |
+| 28 | Myasthenia Gravis - New Diagnosis | v1.1 | Jan 27, 2026 |
+| 29 | Neuromuscular Respiratory Failure | v1.1 | Jan 27, 2026 |
+| 30 | Parkinson's Disease | v1.1 | Jan 27, 2026 |
+| 31 | Rapidly Progressive Dementia | v1.1 | Jan 27, 2026 |
+| 32 | Restless Legs Syndrome | v1.1 | Jan 27, 2026 |
+| 33 | Spinal Cord Compression (Malignant) | v1.1 | Jan 27, 2026 |
+| 34 | Subarachnoid Hemorrhage | v1.1 | Jan 27, 2026 |
+| 35 | Syncope | v1.1 | Jan 27, 2026 |
+| 36 | Transient Ischemic Attack | v1.1 | Jan 27, 2026 |
+| 37 | Trigeminal Neuralgia | v1.1 | Jan 27, 2026 |
+| 38 | Vertigo/Dizziness Evaluation | v1.1 | Jan 27, 2026 |
+| 39 | Wernicke Encephalopathy | v1.1 | Jan 27, 2026 |
+| 40 | Parkinson's Disease - New Diagnosis | v1.1 | Jan 29, 2026 |
+| 41 | ALS | v1.1 | Jan 30, 2026 |
+| 42 | Alzheimer's Disease | v1.1 | Jan 30, 2026 |
+| 43 | Carpal Tunnel Syndrome | v1.1 | Jan 30, 2026 |
+| 44 | Dystonia | v1.1 | Jan 30, 2026 |
+| 45 | Frontotemporal Dementia | v1.1 | Jan 30, 2026 |
+| 46 | Huntington's Disease | v1.1 | Jan 30, 2026 |
+| 47 | Lewy Body Dementia | v1.1 | Jan 30, 2026 |
+| 48 | Migraine with Aura | v1.1 | Jan 30, 2026 |
+| 49 | Mild Cognitive Impairment | v1.1 | Jan 30, 2026 |
+| 50 | Myasthenia Gravis - Outpatient | v1.1 | Jan 30, 2026 |
+| 51 | Normal Pressure Hydrocephalus | v1.1 | Jan 30, 2026 |
+| 52 | Optic Neuritis | v1.1 | Jan 30, 2026 |
+| 53 | Radiculopathy | v1.1 | Jan 30, 2026 |
+| 54 | Small Fiber Neuropathy | v1.1 | Jan 30, 2026 |
+| 55 | Tardive Dyskinesia | v1.1 | Jan 30, 2026 |
+| 56 | Tension-Type Headache | v1.1 | Jan 30, 2026 |
+| 57 | Vascular Dementia | v1.1 | Jan 30, 2026 |
 
 ---
 
 ## NEXT PRIORITIES (Recommended Build Order)
 
-Based on outpatient product needs and clinical impact:
+All Tier 1 and Tier 2 items from the original roadmap are now complete. Updated priorities:
 
-### Tier 1: High-Volume Outpatient (Build Next)
-1. Migraine (Chronic Management) - very common
-2. TIA (Transient Ischemic Attack) - common, time-sensitive
-3. Parkinson's Disease - New Diagnosis - common
-4. Dementia Evaluation (General) - common
-5. Essential Tremor - common DDx
-6. Diabetic Neuropathy - most common neuropathy
+### Tier 1: High-Impact Gaps
+
+1. NMOSD (Neuromyelitis Optica) - distinct from MS, high-impact treatment decisions
+2. Cerebral Venous Thrombosis (CVT) - often missed, time-sensitive
+3. Giant Cell Arteritis (GCA) - vision-threatening emergency
+4. Functional Neurological Disorder (FND) - high-volume, growing area
+5. Non-Convulsive Status Epilepticus (NCSE) - often missed diagnosis
 
 ### Tier 2: Common Outpatient
-7. Cluster Headache
-8. Medication Overuse Headache
-9. MS - Chronic Management
-10. CIDP
-11. Restless Legs Syndrome
-12. MCI (Mild Cognitive Impairment)
 
-### Tier 3: Emergency/Inpatient Focus
-13. Intracerebral Hemorrhage (ICH)
-14. Subarachnoid Hemorrhage (SAH)
-15. NCSE (Non-Convulsive Status)
-16. Rapidly Progressive Dementia
-17. Cauda Equina Syndrome
+6. Chronic Migraine - preventive therapy, CGRP agents
+7. Low Pressure Headache / SIH - post-LP, spontaneous
+8. Post-Concussion Syndrome - common
+9. Drug-Induced Parkinsonism - reversible, common
+10. Wilson's Disease - must-not-miss in young movement disorder
+
+### Tier 3: Subspecialty / Rare
+
+11. Progressive Supranuclear Palsy (PSP)
+12. Multiple System Atrophy (MSA)
+13. Lambert-Eaton Myasthenic Syndrome (LEMS)
+14. Neurosarcoidosis
+15. Glioblastoma (GBM)
 
 ---
 
@@ -326,10 +379,20 @@ Based on outpatient product needs and clinical impact:
 - Physician review required before clinical deployment
 - Outpatient product prioritizes conditions with OPD setting coverage
 - ICD-10 codes from outpatient priority list included for billing integration
+- TIA duplicate resolved Jan 30: canonical file is `transient-ischemic-attack.md`
 
 ---
 
 ## CHANGE LOG
+
+**January 30, 2026**
+- Major update: 57 approved plans (was 9)
+- Marked 48 additional diagnoses as ✅ across all categories
+- Removed TIA duplicate (`tia.md`), canonical is `transient-ischemic-attack.md`
+- Added approved plans 11-57 to approved table
+- Updated statistics: 58 approved diagnoses, 98 to build, 156 total
+- Updated next priorities (Tiers 1-2 complete, new Tier 1-3)
+- Added Epidural Abscess, Acute Myelopathy, MG variants to tracker
 
 **January 26, 2026**
 - Combined outpatient product priority list with existing tracker
