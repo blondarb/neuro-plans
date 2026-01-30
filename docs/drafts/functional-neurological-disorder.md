@@ -1,7 +1,7 @@
 ---
 title: "Functional Neurological Disorder (FND)"
 description: "Clinical decision support for functional neurological disorder diagnosis and management"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,7 +20,7 @@ tags:
 
 # Functional Neurological Disorder (FND)
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
@@ -67,8 +67,8 @@ SECTION A: ACTION ITEMS
 | Prolactin (15-20 min post-event) (CPT 84146) | If differentiating epileptic vs functional seizures; elevated post-ictal in epileptic seizures | Normal in functional seizures; elevated (>2x baseline) post-epileptic seizure | URGENT | URGENT | - | URGENT |
 | Urine drug screen (CPT 80307) | Substance-related symptoms; psychiatric differential | Negative (document for differential) | STAT | STAT | - | STAT |
 | ANA (CPT 86235) | If autoimmune concern based on clinical features | Negative | - | ROUTINE | ROUTINE | - |
-| Anti-TPO antibodies | Hashimoto encephalopathy if cognitive symptoms prominent | Negative | - | ROUTINE | ROUTINE | - |
-| Ceruloplasmin, copper | Wilson disease if young onset movement disorder | Normal | - | EXT | EXT | - |
+| Anti-TPO antibodies (CPT 86376) | Hashimoto encephalopathy if cognitive symptoms prominent | Negative | - | ROUTINE | ROUTINE | - |
+| Ceruloplasmin, copper (CPT 82390+82525) | Wilson disease if young onset movement disorder | Normal | - | EXT | EXT | - |
 | HbA1c (CPT 83036) | Diabetic neuropathy comorbidity | Normal | - | ROUTINE | ROUTINE | - |
 
 *Note: Additional labs should be guided by clinical suspicion for comorbid conditions, NOT ordered reflexively. A negative workup does NOT diagnose FND -- FND is diagnosed by POSITIVE clinical signs.*
@@ -287,22 +287,22 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | DSM-5 FND diagnostic criteria (positive neurological signs required) | Expert Consensus | [American Psychiatric Association. DSM-5. 2013](https://psychiatry.org/psychiatrists/practice/dsm) |
-| FND is a positive diagnosis based on clinical signs, not exclusion | Expert Consensus | [Stone J et al. J Neurol Neurosurg Psychiatry 2020;91:615-621](https://pubmed.ncbi.nlm.nih.gov/32332150/) |
-| Hoover sign sensitivity and specificity for functional weakness | Class II | [Stone J et al. J Neurol 2002;249:1468-1474](https://pubmed.ncbi.nlm.nih.gov/12420099/) |
-| Video-EEG gold standard for PNES/functional seizure diagnosis | Class II | [LaFrance WC et al. Epilepsia 2013;54 Suppl 1:44-52](https://pubmed.ncbi.nlm.nih.gov/23458467/) |
+| FND is a positive diagnosis based on clinical signs, not exclusion | Expert Consensus | Stone J et al. J Neurol Neurosurg Psychiatry 2020;91:615-621 |
+| Hoover sign sensitivity and specificity for functional weakness | Class II | Stone J et al. J Neurol 2002;249:1468-1474 |
+| Video-EEG gold standard for PNES/functional seizure diagnosis | Class II | LaFrance WC et al. Epilepsia 2013;54 Suppl 1:44-52 |
 | CODES trial: CBT for dissociative seizures (largest RCT) | Class I (RCT) | [Goldstein LH et al. Lancet Psychiatry 2020;7:491-505](https://pubmed.ncbi.nlm.nih.gov/32445688/) |
 | Physiotherapy for FND (Nielsen et al. RCT) | Class I (RCT) | [Nielsen G et al. J Neurol Neurosurg Psychiatry 2015;86:1113-1119](https://pubmed.ncbi.nlm.nih.gov/25433033/) |
-| FND prognosis: ~40% same or worse at follow-up without treatment | Class II | [Stone J et al. Brain 2003;126:1692-1698](https://pubmed.ncbi.nlm.nih.gov/12805103/) |
-| neurosymptoms.org: validated patient education resource | Expert Consensus | [Stone J. Practical Neurology 2014;14:368-379](https://pubmed.ncbi.nlm.nih.gov/24778269/) |
-| Diagnosis communication approach ("software not hardware") | Expert Consensus | [Stone J et al. J Neurol Neurosurg Psychiatry 2020](https://pubmed.ncbi.nlm.nih.gov/32332150/) |
+| FND prognosis: ~40% same or worse at follow-up without treatment | Class II | Stone J et al. Brain 2003;126:1692-1698 |
+| neurosymptoms.org: validated patient education resource | Expert Consensus | Stone J. Practical Neurology 2014;14:368-379 |
+| Diagnosis communication approach ("software not hardware") | Expert Consensus | Stone J et al. J Neurol Neurosurg Psychiatry 2020 |
 | Comorbid epilepsy in 10-20% of PNES patients (dual diagnosis) | Class II | [Benbadis SR et al. Neurology 2001;57:915-917](https://pubmed.ncbi.nlm.nih.gov/11552032/) |
-| Tremor entrainment as positive sign for functional tremor | Class II | [Schwingenschuh P et al. Mov Disord 2016;31:1710-1719](https://pubmed.ncbi.nlm.nih.gov/27621220/) |
-| DaTscan normal in functional parkinsonism | Class III | [Gaig C et al. J Neurol Neurosurg Psychiatry 2012;83:1145-1149](https://pubmed.ncbi.nlm.nih.gov/22933815/) |
-| FND-specialized physiotherapy approach | Expert Consensus | [Nielsen G et al. Handb Clin Neurol 2016;139:555-569](https://pubmed.ncbi.nlm.nih.gov/27719870/) |
-| Anti-seizure medication taper in confirmed PNES | Expert Consensus | [LaFrance WC et al. Neurology 2022;98:186-196](https://pubmed.ncbi.nlm.nih.gov/35131906/) |
-| Benzodiazepine harm in functional seizures | Class III | [Reuber M et al. Epilepsy Behav 2003;4:74-78](https://pubmed.ncbi.nlm.nih.gov/12609231/) |
-| Multidisciplinary inpatient FND rehabilitation outcomes | Class III | [Saifee TA et al. J Neurol 2012;259:1934-1940](https://pubmed.ncbi.nlm.nih.gov/22361972/) |
-| Predictors of FND prognosis | Class II | [Gelauff J et al. J Neurol Neurosurg Psychiatry 2019;90:615-623](https://pubmed.ncbi.nlm.nih.gov/30683684/) |
+| Tremor entrainment as positive sign for functional tremor | Class II | Schwingenschuh P et al. Mov Disord 2016;31:1710-1719 |
+| DaTscan normal in functional parkinsonism | Class III | Gaig C et al. J Neurol Neurosurg Psychiatry 2012;83:1145-1149 |
+| FND-specialized physiotherapy approach | Expert Consensus | Nielsen G et al. Handb Clin Neurol 2016;139:555-569 |
+| Anti-seizure medication taper in confirmed PNES | Expert Consensus | LaFrance WC et al. Neurology 2022;98:186-196 |
+| Benzodiazepine harm in functional seizures | Class III | Reuber M et al. Epilepsy Behav 2003;4:74-78 |
+| Multidisciplinary inpatient FND rehabilitation outcomes | Class III | Saifee TA et al. J Neurol 2012;259:1934-1940 |
+| Predictors of FND prognosis | Class II | Gelauff J et al. J Neurol Neurosurg Psychiatry 2019;90:615-623 |
 
 ---
 
@@ -366,6 +366,10 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.2 (January 30, 2026)**
+- Citation verification: removed 13 unverified PubMed links (converted to plain text); retained 3 verified links (Goldstein, Nielsen, Benbadis) and DSM-5 org link
+- CPT enrichment: added 2 CPT codes (86376, 82390+82525)
 
 **v1.1 (January 30, 2026)**
 - Standardized structured dosing format in Section 3E (Pharmacologic Management)

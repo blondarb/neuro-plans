@@ -1,7 +1,7 @@
 {
   "id": "ncse",
   "title": "Non-Convulsive Status Epilepticus (NCSE)",
-  "version": "1.1",
+  "version": "1.2",
   "icd10": [
     "** G41.0 (Grand mal status epilepticus)",
     "G41.1 (Petit mal status epilepticus)",
@@ -72,7 +72,7 @@
         {
           "item": "Ammonia (CPT 82140)",
           "rationale": "Hepatic encephalopathy mimic; valproic acid toxicity",
-          "target": "Normal; elevated in hepatic encephalopathy and VPA toxicity",
+          "target": "Normal (<35 umol/L); elevated in hepatic encephalopathy and VPA toxicity",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -252,7 +252,7 @@
           "ICU": "STAT"
         },
         {
-          "item": "Carnitine level (if on VPA with hyperammonemia)",
+          "item": "Carnitine level (if on VPA with hyperammonemia) (CPT 82379)",
           "rationale": "VPA depletes carnitine causing hyperammonemia",
           "target": "May be low; supplement if low",
           "ED": "-",
@@ -308,7 +308,7 @@
           "ICU": "EXT"
         },
         {
-          "item": "Porphyrin panel (urine/serum)",
+          "item": "Porphyrin panel (urine/serum) (CPT 84120+84110)",
           "rationale": "Acute intermittent porphyria with seizures",
           "target": "Normal",
           "ED": "-",
@@ -1265,7 +1265,7 @@
     {
       "recommendation": "ACNS standardized EEG terminology for critically ill patients",
       "evidenceLevel": "Expert Consensus",
-      "source": "[Hirsch LJ et al. J Clin Neurophysiol 2021;38:296-320](https://pubmed.ncbi.nlm.nih.gov/33475321/)"
+      "source": "Hirsch LJ et al. J Clin Neurophysiol 2021;38:296-320"
     },
     {
       "recommendation": "Continuous EEG monitoring detects NCSE in ~20% of critically ill with altered consciousness",
@@ -1290,47 +1290,47 @@
     {
       "recommendation": "NCSE outcomes depend on etiology more than duration",
       "evidenceLevel": "Class II",
-      "source": "[Legriel S et al. Crit Care Med 2015;43:1003-1012](https://pubmed.ncbi.nlm.nih.gov/25668754/)"
+      "source": "Legriel S et al. Crit Care Med 2015;43:1003-1012"
     },
     {
       "recommendation": "Risk of over-treatment: periodic discharges ≠ NCSE in all cases",
       "evidenceLevel": "Expert Consensus",
-      "source": "[Hirsch LJ. Epilepsy Curr 2004;4:116-122](https://pubmed.ncbi.nlm.nih.gov/16059479/)"
+      "source": "Hirsch LJ. Epilepsy Curr 2004;4:116-122"
     },
     {
       "recommendation": "NORSE/FIRES: autoimmune NCSE requiring immunotherapy",
       "evidenceLevel": "Class III",
-      "source": "[Gaspard N et al. Neurology 2015;85:1605-1613](https://pubmed.ncbi.nlm.nih.gov/26296517/)"
+      "source": "Gaspard N et al. Neurology 2015;85:1605-1613"
     },
     {
       "recommendation": "Propofol infusion syndrome (PRIS) risk in prolonged SE treatment",
       "evidenceLevel": "Class III",
-      "source": "[Roberts RJ et al. Crit Care Med 2009;37:3024-3030](https://pubmed.ncbi.nlm.nih.gov/19661801/)"
+      "source": "Roberts RJ et al. Crit Care Med 2009;37:3024-3030"
     },
     {
       "recommendation": "CSF pleocytosis from seizures alone (up to 20 WBC)",
       "evidenceLevel": "Class III",
-      "source": "[Barry E & Hauser WA. Arch Neurol 1994;51:190-193](https://pubmed.ncbi.nlm.nih.gov/8304845/)"
+      "source": "[Barry E & Hauser WA. Arch Neurol 1994;51:190-193](https://pubmed.ncbi.nlm.nih.gov/8304844/)"
     },
     {
       "recommendation": "Ketamine for super-refractory SE",
       "evidenceLevel": "Class III",
-      "source": "[Gaspard N et al. Neurocrit Care 2013;18:168-174](https://pubmed.ncbi.nlm.nih.gov/23054846/)"
+      "source": "Gaspard N et al. Neurocrit Care 2013;18:168-174"
     },
     {
       "recommendation": "HSV encephalitis presenting as NCSE",
       "evidenceLevel": "Class III",
-      "source": "[Misra UK et al. Seizure 2008;17:672-676](https://pubmed.ncbi.nlm.nih.gov/18499486/)"
+      "source": "Misra UK et al. Seizure 2008;17:672-676"
     },
     {
       "recommendation": "L-carnitine for VPA-induced hyperammonemia",
       "evidenceLevel": "Class III",
-      "source": "[Lheureux PE et al. Clin Toxicol 2009;47:101-111](https://pubmed.ncbi.nlm.nih.gov/19253095/)"
+      "source": "Lheureux PE et al. Clin Toxicol 2009;47:101-111"
     },
     {
       "recommendation": "Aggressive vs conservative NCSE treatment outcomes",
       "evidenceLevel": "Class III",
-      "source": "[Sutter R et al. Neurology 2016;87:2195-2203](https://pubmed.ncbi.nlm.nih.gov/27770072/)"
+      "source": "Sutter R et al. Neurology 2016;87:2195-2203"
     },
     {
       "recommendation": "AES guidelines on SE management",

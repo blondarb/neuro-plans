@@ -1,7 +1,7 @@
 ---
 title: "Neuromyelitis Optica Spectrum Disorder (NMOSD)"
 description: "Clinical decision support for NMOSD diagnosis and management"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,7 +20,7 @@ tags:
 
 # Neuromyelitis Optica Spectrum Disorder (NMOSD)
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
@@ -71,12 +71,12 @@ SECTION A: ACTION ITEMS
 | **AQP4-IgG (aquaporin-4 antibody) - CSF** | Higher sensitivity in seronegative cases; send if serum negative | Positive supports diagnosis | URGENT | URGENT | ROUTINE | URGENT |
 | **MOG-IgG (myelin oligodendrocyte glycoprotein antibody) - serum** (CPT 86235) | Distinguishes MOGAD from NMOSD; cell-based assay required | Negative in NMOSD; positive = MOGAD (different prognosis/treatment) | URGENT | URGENT | ROUTINE | URGENT |
 | ANA (CPT 86235) | Lupus/connective tissue disease screen (comorbidity in NMOSD) | Negative or low titer | URGENT | ROUTINE | ROUTINE | URGENT |
-| Anti-dsDNA | If ANA positive; lupus cerebritis | Negative | - | ROUTINE | ROUTINE | - |
-| Anti-SSA/SSB (Ro/La) | Sjogren syndrome (common NMOSD comorbidity) | Negative | - | ROUTINE | ROUTINE | - |
-| Anti-TPO antibodies | Hashimoto thyroiditis (common NMOSD comorbidity) | Negative | - | ROUTINE | ROUTINE | - |
+| Anti-dsDNA (CPT 86225) | If ANA positive; lupus cerebritis | Negative | - | ROUTINE | ROUTINE | - |
+| Anti-SSA/SSB (Ro/La) (CPT 86235) | Sjogren syndrome (common NMOSD comorbidity) | Negative | - | ROUTINE | ROUTINE | - |
+| Anti-TPO antibodies (CPT 86376) | Hashimoto thyroiditis (common NMOSD comorbidity) | Negative | - | ROUTINE | ROUTINE | - |
 | Quantitative immunoglobulins (IgG, IgA, IgM) (CPT 82784) | Baseline before B-cell depletion therapy; IgA deficiency check before IVIG | Normal | - | ROUTINE | ROUTINE | - |
-| Complement C3, C4 | Complement-mediated disease; lupus screen | Normal | - | ROUTINE | ROUTINE | - |
-| Anti-cardiolipin, anti-beta-2 glycoprotein, lupus anticoagulant | Antiphospholipid syndrome (myelopathy/optic neuropathy mimic) | Negative | - | ROUTINE | ROUTINE | - |
+| Complement C3, C4 (CPT 86160+86162) | Complement-mediated disease; lupus screen | Normal | - | ROUTINE | ROUTINE | - |
+| Anti-cardiolipin, anti-beta-2 glycoprotein, lupus anticoagulant (CPT 86147+86146+85613) | Antiphospholipid syndrome (myelopathy/optic neuropathy mimic) | Negative | - | ROUTINE | ROUTINE | - |
 | ACE level (CPT 82164) | Neurosarcoidosis mimic | Normal | - | ROUTINE | ROUTINE | - |
 | HIV (CPT 87389) | HIV myelopathy mimic; pre-immunosuppression screen | Negative | - | ROUTINE | ROUTINE | - |
 | Hepatitis B surface antigen, core antibody, surface antibody (CPT 87340+86704+86706) | Pre-rituximab screen (reactivation risk) | Negative or immune | - | ROUTINE | ROUTINE | - |
@@ -93,10 +93,10 @@ SECTION A: ACTION ITEMS
 | Anti-NMDAR antibody (serum and CSF) | Overlap syndrome; encephalitis features | Negative | - | EXT | EXT | - |
 | Paraneoplastic antibody panel | If atypical features or malignancy suspected | All negative | - | EXT | EXT | - |
 | VDRL/RPR (CPT 86592) | Neurosyphilis myelopathy mimic | Negative | - | EXT | EXT | - |
-| Copper, ceruloplasmin | Wilson disease myelopathy mimic (young patients) | Normal | - | EXT | EXT | - |
-| Methylmalonic acid | Functional B12 deficiency if borderline B12 level | Normal | - | EXT | EXT | - |
-| Serum protein electrophoresis (SPEP) | Monoclonal gammopathy | Normal | - | EXT | EXT | - |
-| Very long chain fatty acids | Adrenomyeloneuropathy mimic (males) | Normal | - | EXT | EXT | - |
+| Copper, ceruloplasmin (CPT 82525+82390) | Wilson disease myelopathy mimic (young patients) | Normal | - | EXT | EXT | - |
+| Methylmalonic acid (CPT 83921) | Functional B12 deficiency if borderline B12 level | Normal | - | EXT | EXT | - |
+| Serum protein electrophoresis (SPEP) (CPT 86334) | Monoclonal gammopathy | Normal | - | EXT | EXT | - |
+| Very long chain fatty acids (CPT 82726) | Adrenomyeloneuropathy mimic (males) | Normal | - | EXT | EXT | - |
 
 ---
 
@@ -145,13 +145,13 @@ SECTION A: ACTION ITEMS
 | Protein (CPT 84157) | Often elevated in NMOSD (more so than MS) | Mildly to moderately elevated (50-200 mg/dL) | URGENT | ROUTINE | ROUTINE | - |
 | Glucose with paired serum glucose (CPT 82945) | Rule out infection | Normal (>60% of serum) | URGENT | ROUTINE | ROUTINE | - |
 | Oligoclonal bands (CSF AND paired serum) (CPT 83916) | Typically absent or transient in NMOSD (present in ~85% MS) | Negative (absence helps differentiate from MS) | URGENT | ROUTINE | ROUTINE | - |
-| IgG index | Intrathecal IgG synthesis; less commonly elevated in NMOSD than MS | Usually normal or mildly elevated | URGENT | ROUTINE | ROUTINE | - |
+| IgG index (CPT 86344) | Intrathecal IgG synthesis; less commonly elevated in NMOSD than MS | Usually normal or mildly elevated | URGENT | ROUTINE | ROUTINE | - |
 | AQP4-IgG (CSF) | Higher sensitivity if serum negative | Positive supports diagnosis | URGENT | URGENT | ROUTINE | - |
 | MOG-IgG (CSF) | If serum negative and MOGAD suspected | Positive = MOGAD | URGENT | URGENT | ROUTINE | - |
 | GFAP antibody (CSF) | Astrocytopathy overlap | Negative | - | ROUTINE | ROUTINE | - |
 | Gram stain and bacterial culture (CPT 87205+87070) | Rule out bacterial meningitis | No organisms | STAT | STAT | ROUTINE | - |
 | HSV 1/2 PCR (CPT 87529) | Rule out viral encephalitis | Negative | STAT | STAT | - | - |
-| VZV PCR | VZV myelitis mimic | Negative | URGENT | URGENT | - | - |
+| VZV PCR (CPT 87290) | VZV myelitis mimic | Negative | URGENT | URGENT | - | - |
 | Cytology (CPT 88104) | Carcinomatous meningitis mimic | Negative | - | ROUTINE | ROUTINE | - |
 | VDRL (CSF) | Neurosyphilis | Negative | - | ROUTINE | ROUTINE | - |
 | AFB culture and smear (CPT 87116) | TB myelitis if risk factors | Negative | - | ROUTINE | - | - |
@@ -334,25 +334,25 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | 2015 IPND diagnostic criteria for NMOSD | Expert Consensus | [Wingerchuk DM et al. Neurology 2015;85:177-189](https://pubmed.ncbi.nlm.nih.gov/26092914/) |
-| AQP4-IgG cell-based assay as diagnostic gold standard | Class II | [Waters PJ et al. Arch Neurol 2012;69:615-622](https://pubmed.ncbi.nlm.nih.gov/22782510/) |
+| AQP4-IgG cell-based assay as diagnostic gold standard | Class II | Waters PJ et al. Arch Neurol 2012;69:615-622 |
 | IV methylprednisolone for acute NMOSD attacks | Class III, Expert Consensus | [Trebst C et al. J Neurol 2014;261:1-16](https://pubmed.ncbi.nlm.nih.gov/24272588/) |
-| Early PLEX improves outcomes in severe NMOSD relapses | Class III | [Bonnan M et al. Mult Scler 2009;15:765-769](https://pubmed.ncbi.nlm.nih.gov/19482866/) |
-| PLEX within 5 days of steroid failure shows best outcomes | Class III | [Kleiter I et al. Neurol Neuroimmunol Neuroinflamm 2016;3:e215](https://pubmed.ncbi.nlm.nih.gov/27027097/) |
+| Early PLEX improves outcomes in severe NMOSD relapses | Class III | Bonnan M et al. Mult Scler 2009;15:765-769 |
+| PLEX within 5 days of steroid failure shows best outcomes | Class III | Kleiter I et al. Neurol Neuroimmunol Neuroinflamm 2016;3:e215 |
 | Eculizumab FDA approval (PREVENT trial) | Class I (RCT) | [Pittock SJ et al. N Engl J Med 2019;381:614-625](https://pubmed.ncbi.nlm.nih.gov/31050279/) |
 | Inebilizumab FDA approval (N-MOmentum trial) | Class I (RCT) | [Cree BAC et al. Lancet 2019;394:1352-1363](https://pubmed.ncbi.nlm.nih.gov/31495497/) |
-| Satralizumab FDA approval (SAkuraStar trial) | Class I (RCT) | [Traboulsee A et al. N Engl J Med 2020;382:1305-1315](https://pubmed.ncbi.nlm.nih.gov/32101664/) |
+| Satralizumab FDA approval (SAkuraStar trial) | Class I (RCT) | Traboulsee A et al. N Engl J Med 2020;382:1305-1315 |
 | Satralizumab with background immunotherapy (SAkuraSky trial) | Class I (RCT) | [Yamamura T et al. N Engl J Med 2019;381:2114-2124](https://pubmed.ncbi.nlm.nih.gov/31774956/) |
-| Ravulizumab FDA approval (CHAMPION-NMOSD trial) | Class I (RCT) | [Pittock SJ et al. Lancet Neurol 2023;22:677-689](https://pubmed.ncbi.nlm.nih.gov/37479377/) |
+| Ravulizumab FDA approval (CHAMPION-NMOSD trial) | Class I (RCT) | Pittock SJ et al. Lancet Neurol 2023;22:677-689 |
 | Rituximab efficacy in NMOSD | Class III, Retrospective | [Damato V et al. JAMA Neurol 2016;73:1342-1348](https://pubmed.ncbi.nlm.nih.gov/27668357/) |
-| MS DMTs (interferon, fingolimod, natalizumab) worsen NMOSD | Class III | [Asgari N et al. Mult Scler 2013;19:1656-1661](https://pubmed.ncbi.nlm.nih.gov/23653507/) |
-| Autoimmune comorbidities in AQP4+ NMOSD (~25%) | Class III | [Pittock SJ et al. Arch Neurol 2008;65:78-83](https://pubmed.ncbi.nlm.nih.gov/18195143/) |
+| MS DMTs (interferon, fingolimod, natalizumab) worsen NMOSD | Class III | Asgari N et al. Mult Scler 2013;19:1656-1661 |
+| Autoimmune comorbidities in AQP4+ NMOSD (~25%) | Class III | [Pittock SJ et al. Arch Neurol 2008;65:78-83](https://pubmed.ncbi.nlm.nih.gov/18195142/) |
 | CSF profile in NMOSD: neutrophilic pleocytosis, OCBs uncommon | Class II | [Jarius S et al. J Neuroinflammation 2012;9:14](https://pubmed.ncbi.nlm.nih.gov/22260418/) |
 | LETM (≥3 segments) as diagnostic feature of NMOSD | Class II | [Wingerchuk DM et al. Neurology 2006;66:1485-1489](https://pubmed.ncbi.nlm.nih.gov/16717206/) |
 | MOG-IgG as distinct entity from AQP4+ NMOSD | Class II | [Reindl M & Waters P. Nat Rev Neurol 2019;15:89-102](https://pubmed.ncbi.nlm.nih.gov/30559466/) |
 | Complement-mediated astrocyte injury in AQP4+ NMOSD (pathogenesis) | Class II | [Lucchinetti CF et al. Brain 2002;125:1450-1461](https://pubmed.ncbi.nlm.nih.gov/12076996/) |
-| AAN/ECTRIMS NMOSD treatment recommendations | Expert Consensus | [Reindl M et al. Lancet Neurol 2020;19:784-797](https://pubmed.ncbi.nlm.nih.gov/32822635/) |
-| Pregnancy management in NMOSD | Expert Consensus | [Mao-Draayer Y et al. Neurol Neuroimmunol Neuroinflamm 2020;7:e724](https://pubmed.ncbi.nlm.nih.gov/32327392/) |
-| OCT for monitoring in NMOSD | Class III | [Bennett JL et al. Neurology 2015;85:748-754](https://pubmed.ncbi.nlm.nih.gov/26245927/) |
+| AAN/ECTRIMS NMOSD treatment recommendations | Expert Consensus | Reindl M et al. Lancet Neurol 2020;19:784-797 |
+| Pregnancy management in NMOSD | Expert Consensus | Mao-Draayer Y et al. Neurol Neuroimmunol Neuroinflamm 2020;7:e724 |
+| OCT for monitoring in NMOSD | Class III | Bennett JL et al. Neurology 2015;85:748-754 |
 
 ---
 
@@ -406,6 +406,10 @@ The following MS medications may worsen NMOSD and are CONTRAINDICATED:
 ---
 
 ## CHANGE LOG
+
+**v1.2 (January 30, 2026)**
+- Citation verification: removed 9 unverified PubMed links (converted to plain text); fixed 1 PMID (Pittock 2008: 18195143→18195142)
+- CPT enrichment: added 11 CPT codes across Sections 1B (86225, 86235, 86376, 86160+86162, 86147+86146+85613), 1C (82525+82390, 83921, 86334, 82726), and LP (86344, 87290)
 
 **v1.1 (January 30, 2026)**
 - Standardized structured dosing format across all treatment sections (3A, 3B, 3D)

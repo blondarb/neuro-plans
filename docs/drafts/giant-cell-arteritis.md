@@ -1,7 +1,7 @@
 ---
 title: "Giant Cell Arteritis (GCA)"
 description: "Clinical decision support for giant cell arteritis diagnosis and management"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -21,7 +21,7 @@ tags:
 
 # Giant Cell Arteritis (GCA)
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
@@ -74,8 +74,8 @@ SECTION A: ACTION ITEMS
 | Serum protein electrophoresis (SPEP) (CPT 86334) | Monoclonal gammopathy/myeloma (elevated ESR differential) | Normal | - | ROUTINE | ROUTINE | - |
 | IL-6 level (CPT 83519) | Elevated in GCA; potential biomarker for monitoring (especially on tocilizumab where ESR/CRP are suppressed) | Elevated | - | ROUTINE | ROUTINE | - |
 | Vitamin D 25-OH (CPT 82306) | Baseline before long-term steroids (bone health) | >30 ng/mL; supplement if deficient | - | ROUTINE | ROUTINE | - |
-| DEXA scan baseline referral | Bone density before anticipated chronic steroid use | T-score >-2.5 | - | - | ROUTINE | - |
-| Complement C3, C4 | Complement-mediated vasculitis screen | Normal | - | ROUTINE | ROUTINE | - |
+| DEXA scan baseline referral (CPT 77080) | Bone density before anticipated chronic steroid use | T-score >-2.5 | - | - | ROUTINE | - |
+| Complement C3, C4 (CPT 86160+86162) | Complement-mediated vasculitis screen | Normal | - | ROUTINE | ROUTINE | - |
 
 *Note: Normal ESR does NOT exclude GCA -- approximately 4-10% of biopsy-proven GCA has normal ESR. Always obtain BOTH ESR and CRP. A normal ESR with normal CRP has very high negative predictive value but still does not fully exclude GCA if clinical suspicion is high.*
 
@@ -84,7 +84,7 @@ SECTION A: ACTION ITEMS
 | Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
 |------|-----------|----------------|:--:|:----:|:---:|:---:|
 | Anti-GBM antibody | If pulmonary-renal syndrome suspected | Negative | - | EXT | EXT | - |
-| Cryoglobulins | Cryoglobulinemic vasculitis mimic | Negative | - | EXT | EXT | - |
+| Cryoglobulins (CPT 82595) | Cryoglobulinemic vasculitis mimic | Negative | - | EXT | EXT | - |
 | ACE level (CPT 82164) | Sarcoidosis (granulomatous disease differential) | Normal | - | EXT | EXT | - |
 | IgG4 level | IgG4-related disease (pachymeningitis, aortitis mimic) | Normal (<135 mg/dL) | - | EXT | EXT | - |
 
@@ -277,22 +277,22 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | ACR 1990 classification criteria for GCA | Expert Consensus | [Hunder GG et al. Arthritis Rheum 1990;33:1122-1128](https://pubmed.ncbi.nlm.nih.gov/2202311/) |
-| ACR/EULAR 2022 classification criteria for GCA | Expert Consensus | [Ponte C et al. Ann Rheum Dis 2022;81:1647-1653](https://pubmed.ncbi.nlm.nih.gov/35110331/) |
+| ACR/EULAR 2022 classification criteria for GCA | Expert Consensus | Ponte C et al. Ann Rheum Dis 2022;81:1647-1653 |
 | GiACTA trial: tocilizumab for GCA (FDA approval) | Class I (RCT) | [Stone JH et al. N Engl J Med 2017;377:317-328](https://pubmed.ncbi.nlm.nih.gov/28745999/) |
 | Temporal artery ultrasound halo sign (TABUL study) | Class II | [Luqmani R et al. Health Technol Assess 2016;20:1-238](https://pubmed.ncbi.nlm.nih.gov/27925577/) |
-| Fast-track pathway for GCA diagnosis reduces vision loss | Class III | [Diamantopoulos AP et al. Ann Rheum Dis 2016;75:1961-1964](https://pubmed.ncbi.nlm.nih.gov/27381317/) |
-| IV methylprednisolone for vision-threatening GCA | Class III, Expert Consensus | [Hayreh SS et al. Ophthalmology 2002;109:1757-1765](https://pubmed.ncbi.nlm.nih.gov/12208727/) |
+| Fast-track pathway for GCA diagnosis reduces vision loss | Class III | Diamantopoulos AP et al. Ann Rheum Dis 2016;75:1961-1964 |
+| IV methylprednisolone for vision-threatening GCA | Class III, Expert Consensus | Hayreh SS et al. Ophthalmology 2002;109:1757-1765 |
 | Low-dose aspirin reduces ischemic complications in GCA | Class III | [Nesher G et al. Arthritis Rheum 2004;50:1332-1337](https://pubmed.ncbi.nlm.nih.gov/15077317/) |
-| Biopsy sensitivity: unilateral ~85%, bilateral ~90% | Class II | [Breuer GS et al. Isr Med Assoc J 2013;15:756-760](https://pubmed.ncbi.nlm.nih.gov/24449978/) |
+| Biopsy sensitivity: unilateral ~85%, bilateral ~90% | Class II | Breuer GS et al. Isr Med Assoc J 2013;15:756-760 |
 | Biopsy remains positive for 2-6 weeks after starting steroids | Class III | [Achkar AA et al. Ann Intern Med 1994;120:987-992](https://pubmed.ncbi.nlm.nih.gov/8185147/) |
-| GCA relapse rate on steroid taper (~50%) | Class II | [Martinez-Lado L et al. Semin Arthritis Rheum 2011;41:252-263](https://pubmed.ncbi.nlm.nih.gov/21276999/) |
-| ESR normal in ~4-10% of biopsy-proven GCA | Class III | [Parikh M et al. Clin Exp Rheumatol 2006;24(2 Suppl 41):S35-40](https://pubmed.ncbi.nlm.nih.gov/16859594/) |
-| Large-vessel GCA involvement (~50% on PET/CT) | Class II | [Blockmans D et al. Rheumatology 2006;45:432-437](https://pubmed.ncbi.nlm.nih.gov/16287916/) |
+| GCA relapse rate on steroid taper (~50%) | Class II | Martinez-Lado L et al. Semin Arthritis Rheum 2011;41:252-263 |
+| ESR normal in ~4-10% of biopsy-proven GCA | Class III | Parikh M et al. Clin Exp Rheumatol 2006;24(2 Suppl 41):S35-40 |
+| Large-vessel GCA involvement (~50% on PET/CT) | Class II | Blockmans D et al. Rheumatology 2006;45:432-437 |
 | Aortic aneurysm risk in GCA (17x increased) | Class II | [Evans JM et al. Ann Intern Med 1995;122:502-507](https://pubmed.ncbi.nlm.nih.gov/7872584/) |
 | Tocilizumab suppresses ESR/CRP; cannot use for monitoring | Class II | [Stone JH et al. N Engl J Med 2017](https://pubmed.ncbi.nlm.nih.gov/28745999/) |
 | Methotrexate as steroid-sparing in GCA (mixed evidence) | Class I (3 RCTs) | [Mahr AD et al. Arthritis Rheum 2007;56:2789-2797](https://pubmed.ncbi.nlm.nih.gov/17665429/) |
 | FDG-PET for large-vessel GCA diagnosis and monitoring | Class II | [Dejaco C et al. Ann Rheum Dis 2018;77:636-643](https://pubmed.ncbi.nlm.nih.gov/29358285/) |
-| BSR/BHPR guidelines for management of GCA | Expert Consensus | [Mackie SL et al. Rheumatology 2020;59:e1-e23](https://pubmed.ncbi.nlm.nih.gov/31728526/) |
+| BSR/BHPR guidelines for management of GCA | Expert Consensus | Mackie SL et al. Rheumatology 2020;59:e1-e23 |
 
 ---
 
@@ -351,6 +351,10 @@ Monitor visual acuity daily until stable
 ---
 
 ## CHANGE LOG
+
+**v1.2 (January 30, 2026)**
+- Citation verification: removed 8 unverified PubMed links (converted to plain text)
+- CPT enrichment: added 3 CPT codes (77080, 86160+86162, 82595)
 
 **v1.1 (January 30, 2026)**
 - Standardized structured dosing format across all treatment sections (3A, 3B, 3C, 3D)

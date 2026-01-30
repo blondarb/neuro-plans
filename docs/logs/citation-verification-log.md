@@ -13,19 +13,22 @@ This log tracks citation verification results to identify patterns and improve t
 
 | Metric | Count |
 |--------|-------|
-| Total Plans Audited | 12 |
-| Total Citations Checked | 105 |
-| Verified Correct | 19 |
-| Hallucinated PMIDs Found | 10 |
-| Corrections Applied | 10 |
+| Total Plans Audited | 17 |
+| Total Citations Checked | 187 |
+| Verified Correct (links retained) | 50 |
+| Hallucinated/Mismatched PMIDs Found | 58 |
+| PMID Corrections Applied (earlier batches) | 10 |
+| Links Removed (Tier 1 batch - bad PMIDs) | 48 |
+| Off-by-one PMID Fixes (Tier 1 batch) | 2 |
 | Citations Linked (new, verified via WebSearch) | 41 |
-| Generic References Left Unchanged | 38 |
+| Generic/Org References Left Unchanged | 39 |
 
 **Audit Accuracy Rate (Plans 1-2):** 66% (19/29 were correct; 10 were hallucinated)
 **Plans 3-7:** No pre-existing PMIDs to audit. 18 citations verified and linked via WebSearch. 20 generic references left unchanged.
 **Plans 8-12:** No pre-existing PMIDs to audit. 23 citations verified and linked via WebSearch. 3 citations could not be verified. 18 generic references left unchanged.
+**Plans 13-17 (Tier 1 Drafts):** 82 unique citations checked. 31 verified correct (links retained). 48 mismatched PMIDs had links removed (converted to plain text). 2 off-by-one PMID fixes applied. 1 org link unchanged. Hallucination rate: 59% (48/82).
 
-**Critical Finding:** 10 PMIDs were hallucinated - they linked to completely unrelated articles (pediatric growth hormone, rat neuroscience, immunology crystallization, dental, IBD) or non-existent pages.
+**Critical Finding:** 58 total PMIDs were hallucinated/mismatched across all batches. Tier 1 drafts had a 59% hallucination rate - significantly higher than the 34% seen in earlier plans. One citation ("Defined F" in CVT) had a completely fabricated author name.
 
 ---
 
@@ -388,11 +391,193 @@ This log tracks citation verification results to identify patterns and improve t
 
 ---
 
+### Neuromyelitis Optica Spectrum Disorder (NMOSD)
+
+**Date Audited:** 2026-01-30
+**Version:** 1.1 → 1.2
+**Auditor:** Claude (citation verification via PubMed fetch)
+
+#### Verified Correct - Links Retained (10)
+
+| # | Citation | PubMed ID | Status |
+|---|----------|-----------|--------|
+| 1 | Wingerchuk DM et al. Neurology 2015 (IPND criteria) | [26092914](https://pubmed.ncbi.nlm.nih.gov/26092914/) | ✅ Verified |
+| 2 | Trebst C et al. J Neurol 2014 | [24272588](https://pubmed.ncbi.nlm.nih.gov/24272588/) | ✅ Verified |
+| 3 | Pittock SJ et al. N Engl J Med 2019 (PREVENT) | [31050279](https://pubmed.ncbi.nlm.nih.gov/31050279/) | ✅ Verified |
+| 4 | Cree BAC et al. Lancet 2019 (N-MOmentum) | [31495497](https://pubmed.ncbi.nlm.nih.gov/31495497/) | ✅ Verified |
+| 5 | Yamamura T et al. N Engl J Med 2019 (SAkuraSky) | [31774956](https://pubmed.ncbi.nlm.nih.gov/31774956/) | ✅ Verified |
+| 6 | Damato V et al. JAMA Neurol 2016 (rituximab) | [27668357](https://pubmed.ncbi.nlm.nih.gov/27668357/) | ✅ Verified |
+| 7 | Pittock SJ et al. Arch Neurol 2008 (comorbidities) | [18195142](https://pubmed.ncbi.nlm.nih.gov/18195142/) | ✅ Fixed (was 18195143) |
+| 8 | Jarius S et al. J Neuroinflammation 2012 | [22260418](https://pubmed.ncbi.nlm.nih.gov/22260418/) | ✅ Verified |
+| 9 | Wingerchuk DM et al. Neurology 2006 (LETM) | [16717206](https://pubmed.ncbi.nlm.nih.gov/16717206/) | ✅ Verified |
+| 10 | Lucchinetti CF et al. Brain 2002 | [12076996](https://pubmed.ncbi.nlm.nih.gov/12076996/) | ✅ Verified |
+
+#### Mismatched PMIDs - Links Removed (9)
+
+| # | Citation | Bad PMID | Action |
+|---|----------|----------|--------|
+| 1 | Waters PJ et al. Arch Neurol 2012 | 22615280 | Link removed (plain text) |
+| 2 | Bonnan M et al. Mult Scler 2009 | 19015149 | Link removed |
+| 3 | Kleiter I et al. Neurol Neuroimmunol 2016 | 27027085 | Link removed |
+| 4 | Traboulsee A et al. N Engl J Med 2020 | 32130813 | Link removed |
+| 5 | Pittock SJ et al. Lancet Neurol 2023 (ravulizumab) | N/A | Link removed |
+| 6 | Asgari N et al. Mult Scler 2013 | 23539441 | Link removed |
+| 7 | Reindl M & Waters P. Nat Rev Neurol 2019 | 30559466 | Link removed |
+| 8 | Mao-Draayer Y et al. 2020 | N/A | Link removed |
+| 9 | Bennett JL et al. Neurology 2015 | N/A | Link removed |
+
+#### Off-by-One Fix (1)
+
+| # | Citation | Wrong PMID | Correct PMID | Status |
+|---|----------|------------|--------------|--------|
+| 1 | Pittock SJ et al. Arch Neurol 2008 (autoimmune comorbidities) | 18195143 | 18195142 | ✅ Fixed |
+
+---
+
+### Cerebral Venous Thrombosis (CVT)
+
+**Date Audited:** 2026-01-30
+**Version:** 1.1 → 1.2
+**Auditor:** Claude (citation verification via PubMed fetch)
+
+#### Verified Correct - Links Retained (5)
+
+| # | Citation | PubMed ID | Status |
+|---|----------|-----------|--------|
+| 1 | Saposnik G et al. Stroke 2011 (AHA/ASA) | [21293023](https://pubmed.ncbi.nlm.nih.gov/21293023/) | ✅ Verified (x3 rows) |
+| 2 | Ferro JM et al. Eur J Neurol 2017 (EAN guideline) | [28727262](https://pubmed.ncbi.nlm.nih.gov/28727262/) | ✅ Verified |
+| 3 | Ferro JM et al. Stroke 2004 (ISCVT) | [14976332](https://pubmed.ncbi.nlm.nih.gov/14976332/) | ✅ Verified (x2 rows) |
+| 4 | Dentali F et al. J Thromb Haemost 2012 | [22257124](https://pubmed.ncbi.nlm.nih.gov/22257124/) | ✅ Verified |
+| 5 | Pengo V et al. Blood 2018 (APS) | [30002145](https://pubmed.ncbi.nlm.nih.gov/30002145/) | ✅ Verified |
+
+#### Mismatched PMIDs - Links Removed (9)
+
+| # | Citation | Bad PMID | Action |
+|---|----------|----------|--------|
+| 1 | Einhaupl K et al. JNNP 1991 | N/A | Link removed |
+| 2 | Coutinho JM et al. Stroke 2010 | N/A | Link removed |
+| 3 | Ferro JM et al. Lancet Neurol 2019 (RE-SPECT) | N/A | Link removed |
+| 4 | Martinelli I et al. Blood 1998 | N/A | Link removed |
+| 5 | de Bruijn SF et al. Stroke 1998 | N/A | Link removed |
+| 6 | Ferro JM et al. Cerebrovasc Dis 2009 | N/A | Link removed |
+| 7 | Siddiqui FM et al. J Neurointerv Surg 2015 | 24827066 | Link removed |
+| 8 | Ferro JM et al. Stroke 2008 (seizures) | 18974380 | Link removed |
+| 9 | **Defined F et al. AJNR 2007** | 17885251 | Link removed; **fabricated author name** |
+
+---
+
+### Giant Cell Arteritis (GCA)
+
+**Date Audited:** 2026-01-30
+**Version:** 1.1 → 1.2
+**Auditor:** Claude (citation verification via PubMed fetch)
+
+#### Verified Correct - Links Retained (8)
+
+| # | Citation | PubMed ID | Status |
+|---|----------|-----------|--------|
+| 1 | Hunder GG et al. Arthritis Rheum 1990 (ACR criteria) | [2202311](https://pubmed.ncbi.nlm.nih.gov/2202311/) | ✅ Verified |
+| 2 | Stone JH et al. N Engl J Med 2017 (GiACTA) | [28745999](https://pubmed.ncbi.nlm.nih.gov/28745999/) | ✅ Verified (x2 rows) |
+| 3 | Luqmani R et al. Health Technol Assess 2016 (TABUL) | [27925577](https://pubmed.ncbi.nlm.nih.gov/27925577/) | ✅ Verified |
+| 4 | Nesher G et al. Arthritis Rheum 2004 (aspirin) | [15077317](https://pubmed.ncbi.nlm.nih.gov/15077317/) | ✅ Verified |
+| 5 | Achkar AA et al. Ann Intern Med 1994 (biopsy timing) | [8185147](https://pubmed.ncbi.nlm.nih.gov/8185147/) | ✅ Verified |
+| 6 | Evans JM et al. Ann Intern Med 1995 (aortic aneurysm) | [7872584](https://pubmed.ncbi.nlm.nih.gov/7872584/) | ✅ Verified |
+| 7 | Mahr AD et al. Arthritis Rheum 2007 (MTX) | [17665429](https://pubmed.ncbi.nlm.nih.gov/17665429/) | ✅ Verified |
+| 8 | Dejaco C et al. Ann Rheum Dis 2018 (FDG-PET) | [29358285](https://pubmed.ncbi.nlm.nih.gov/29358285/) | ✅ Verified |
+
+#### Mismatched PMIDs - Links Removed (8)
+
+| # | Citation | Bad PMID | Action |
+|---|----------|----------|--------|
+| 1 | Ponte C et al. Ann Rheum Dis 2022 | 35110331 | Link removed |
+| 2 | Diamantopoulos AP et al. Ann Rheum Dis 2016 | 27381317 | Link removed |
+| 3 | Hayreh SS et al. Ophthalmology 2002 | 12208727 | Link removed |
+| 4 | Breuer GS et al. Isr Med Assoc J 2013 | 24449978 | Link removed |
+| 5 | Martinez-Lado L et al. Semin Arthritis Rheum 2011 | 21276999 | Link removed |
+| 6 | Parikh M et al. Clin Exp Rheumatol 2006 | 16859594 | Link removed |
+| 7 | Blockmans D et al. Rheumatology 2006 | 16287916 | Link removed |
+| 8 | Mackie SL et al. Rheumatology 2020 | 31728526 | Link removed |
+
+---
+
+### Functional Neurological Disorder (FND)
+
+**Date Audited:** 2026-01-30
+**Version:** 1.1 → 1.2
+**Auditor:** Claude (citation verification via PubMed fetch)
+
+#### Verified Correct - Links Retained (3 PubMed + 1 Org)
+
+| # | Citation | PubMed ID | Status |
+|---|----------|-----------|--------|
+| 1 | Goldstein LH et al. Lancet Psychiatry 2020 (CODES trial) | [32445688](https://pubmed.ncbi.nlm.nih.gov/32445688/) | ✅ Verified |
+| 2 | Nielsen G et al. JNNP 2015 (PT RCT) | [25433033](https://pubmed.ncbi.nlm.nih.gov/25433033/) | ✅ Verified |
+| 3 | Benbadis SR et al. Neurology 2001 (dual diagnosis) | [11552032](https://pubmed.ncbi.nlm.nih.gov/11552032/) | ✅ Verified |
+| 4 | DSM-5 (APA 2013) | [psychiatry.org](https://psychiatry.org/psychiatrists/practice/dsm) | ✅ Org link (appropriate) |
+
+#### Mismatched PMIDs - Links Removed (13)
+
+| # | Citation | Bad PMID | Action |
+|---|----------|----------|--------|
+| 1 | Stone J et al. JNNP 2020 (positive diagnosis) | 32332150 | Link removed |
+| 2 | Stone J et al. J Neurol 2002 (Hoover sign) | 12420099 | Link removed |
+| 3 | LaFrance WC et al. Epilepsia 2013 (vEEG) | 23458467 | Link removed |
+| 4 | Stone J et al. Brain 2003 (prognosis) | 12805103 | Link removed |
+| 5 | Stone J. Practical Neurology 2014 (neurosymptoms.org) | 24778269 | Link removed |
+| 6 | Stone J et al. JNNP 2020 (communication) | 32332150 | Link removed (duplicate) |
+| 7 | Schwingenschuh P et al. Mov Disord 2016 (tremor) | 27621220 | Link removed |
+| 8 | Gaig C et al. JNNP 2012 (DaTscan) | 22933815 | Link removed |
+| 9 | Nielsen G et al. Handb Clin Neurol 2016 (PT approach) | 27719870 | Link removed |
+| 10 | LaFrance WC et al. Neurology 2022 (ASM taper) | 35131906 | Link removed |
+| 11 | Reuber M et al. Epilepsy Behav 2003 (BZD harm) | 12609231 | Link removed |
+| 12 | Saifee TA et al. J Neurol 2012 (inpatient rehab) | 22361972 | Link removed |
+| 13 | Gelauff J et al. JNNP 2019 (prognosis predictors) | 30683684 | Link removed |
+
+---
+
+### Non-Convulsive Status Epilepticus (NCSE)
+
+**Date Audited:** 2026-01-30
+**Version:** 1.1 → 1.2
+**Auditor:** Claude (citation verification via PubMed fetch)
+
+#### Verified Correct - Links Retained (5)
+
+| # | Citation | PubMed ID | Status |
+|---|----------|-----------|--------|
+| 1 | Leitinger M et al. Lancet Neurol 2016 (Salzburg criteria) | [27571157](https://pubmed.ncbi.nlm.nih.gov/27571157/) | ✅ Verified (x2 rows) |
+| 2 | Claassen J et al. Neurology 2004 (cEEG monitoring) | [15159471](https://pubmed.ncbi.nlm.nih.gov/15159471/) | ✅ Verified |
+| 3 | Kapur J et al. N Engl J Med 2019 (ESETT trial) | [31774955](https://pubmed.ncbi.nlm.nih.gov/31774955/) | ✅ Verified |
+| 4 | Herman ST et al. J Clin Neurophysiol 2015 (NCS guidelines) | [25626778](https://pubmed.ncbi.nlm.nih.gov/25626778/) | ✅ Verified |
+| 5 | Glauser T et al. Epilepsy Curr 2016 (AES guidelines) | [26900382](https://pubmed.ncbi.nlm.nih.gov/26900382/) | ✅ Verified |
+
+#### Mismatched PMIDs - Links Removed (9)
+
+| # | Citation | Bad PMID | Action |
+|---|----------|----------|--------|
+| 1 | Hirsch LJ et al. J Clin Neurophysiol 2021 (ACNS terminology) | 33475321 | Link removed |
+| 2 | Legriel S et al. Crit Care Med 2015 (outcomes) | 25668754 | Link removed |
+| 3 | Hirsch LJ. Epilepsy Curr 2004 (over-treatment) | 16059479 | Link removed |
+| 4 | Gaspard N et al. Neurology 2015 (NORSE/FIRES) | 26296517 | Link removed |
+| 5 | Roberts RJ et al. Crit Care Med 2009 (PRIS) | 19661801 | Link removed |
+| 6 | Gaspard N et al. Neurocrit Care 2013 (ketamine) | 23054846 | Link removed |
+| 7 | Misra UK et al. Seizure 2008 (HSV NCSE) | 18499486 | Link removed |
+| 8 | Lheureux PE et al. Clin Toxicol 2009 (L-carnitine) | 19253095 | Link removed |
+| 9 | Sutter R et al. Neurology 2016 (treatment outcomes) | 27770072 | Link removed |
+
+#### Off-by-One Fix (1)
+
+| # | Citation | Wrong PMID | Correct PMID | Status |
+|---|----------|------------|--------------|--------|
+| 1 | Barry E & Hauser WA. Arch Neurol 1994 (CSF pleocytosis) | 8304845 | 8304844 | ✅ Fixed |
+
+---
+
 ## Patterns & Improvement Opportunities
 
 ### CRITICAL Pattern: PMID Hallucination
 
-**Issue:** 10 PMIDs across 2 plans were completely fabricated. They linked to unrelated articles:
+**Issue:** 58 PMIDs across 7 plans were hallucinated/mismatched. Tier 1 drafts (5 plans) had 48 bad PMIDs (59% rate). They linked to unrelated articles:
 - Pediatric growth hormone papers instead of stroke PFO trials
 - Rat olfactory neuroscience instead of cardiac trials
 - HLA-DR crystallization (immunology) instead of carotid surgery trials
@@ -402,6 +587,8 @@ This log tracks citation verification results to identify patterns and improve t
 - Non-existent/invalid PMIDs
 
 **Root Cause:** AI model generated plausible-looking PMIDs without verification.
+
+**New Pattern (Tier 1):** Fabricated author names — "Defined F" in CVT plan was a completely hallucinated author. Citation text appeared plausible but the author name is nonsensical.
 
 **Egregious Examples Found:**
 - PMID 28902629 claimed to be CLOSE PFO trial → actually "Individualised growth response optimisation (iGRO) tool" (pediatric endocrinology!)
@@ -473,6 +660,17 @@ These sources are acceptable when PubMed links are not available:
 ---
 
 ## Change Log
+
+**2026-01-30 - Tier 1 Draft Citation Verification (5 Plans)**
+- Verified citations in: NMOSD, Cerebral Venous Thrombosis, Giant Cell Arteritis, Functional Neurological Disorder, Non-Convulsive Status Epilepticus
+- 82 unique citations checked via PubMed page fetch
+- 31 PMIDs verified correct (links retained)
+- 48 mismatched PMIDs found — links removed (converted to plain text)
+- 2 off-by-one PMID fixes applied (Pittock 2008: 18195143→18195142; Barry 1994: 8304845→8304844)
+- 1 fabricated author name identified ("Defined F" in CVT — completely hallucinated)
+- 1 org link unchanged (DSM-5 on psychiatry.org)
+- Hallucination rate: 59% (48/82) — highest batch rate recorded
+- All plans updated to v1.2
 
 **2026-01-29 - Batch Citation Verification (5 More Approved Plans)**
 - Verified citations in: Acute Myelopathy, Breakthrough Seizure, Cauda Equina Syndrome, Spinal Cord Compression (Malignant), Parkinson's Disease - New Diagnosis

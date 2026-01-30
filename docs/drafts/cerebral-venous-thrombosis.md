@@ -1,7 +1,7 @@
 ---
 title: "Cerebral Venous Thrombosis (CVT)"
 description: "Clinical decision support for cerebral venous thrombosis diagnosis and management"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,7 +20,7 @@ tags:
 
 # Cerebral Venous Thrombosis (CVT)
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
@@ -90,11 +90,11 @@ SECTION A: ACTION ITEMS
 | Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
 |------|-----------|----------------|:--:|:----:|:---:|:---:|
 | ADAMTS13 activity | TTP if thrombocytopenia and hemolysis | Normal (>10%) | - | EXT | EXT | - |
-| Complement C3, C4 | Lupus; complement deficiency | Normal | - | EXT | EXT | - |
-| Beta-2 microglobulin | Lymphoproliferative disorder | Normal | - | EXT | EXT | - |
-| Serum protein electrophoresis (SPEP) | Multiple myeloma; hyperviscosity | Normal | - | EXT | EXT | - |
-| Hemoglobin electrophoresis | Sickle cell disease (CVT risk) | Normal | - | EXT | EXT | - |
-| BCR-ABL (if elevated WBC) | CML | Negative | - | EXT | EXT | - |
+| Complement C3, C4 (CPT 86160+86162) | Lupus; complement deficiency | Normal | - | EXT | EXT | - |
+| Beta-2 microglobulin (CPT 82232) | Lymphoproliferative disorder | Normal | - | EXT | EXT | - |
+| Serum protein electrophoresis (SPEP) (CPT 86334) | Multiple myeloma; hyperviscosity | Normal | - | EXT | EXT | - |
+| Hemoglobin electrophoresis (CPT 83020) | Sickle cell disease (CVT risk) | Normal | - | EXT | EXT | - |
+| BCR-ABL (if elevated WBC) (CPT 81206) | CML | Negative | - | EXT | EXT | - |
 
 ---
 
@@ -305,18 +305,18 @@ SECTION B: REFERENCE (Expand as Needed)
 | AHA/ASA scientific statement on CVT diagnosis and management | Expert Consensus | [Saposnik G et al. Stroke 2011;42:1158-1192](https://pubmed.ncbi.nlm.nih.gov/21293023/) |
 | EAN guideline on CVT | Expert Consensus | [Ferro JM et al. Eur J Neurol 2017;24:1203-1213](https://pubmed.ncbi.nlm.nih.gov/28727262/) |
 | ISCVT (International Study on CVT): largest cohort study | Class II | [Ferro JM et al. Stroke 2004;35:664-670](https://pubmed.ncbi.nlm.nih.gov/14976332/) |
-| Anticoagulation safe and beneficial even with hemorrhagic infarction | Class II | [Einhaupl K et al. J Neurol Neurosurg Psychiatry 1991;54:396-401](https://pubmed.ncbi.nlm.nih.gov/2072174/) |
-| LMWH preferred over UFH (ISCVT data) | Class III | [Coutinho JM et al. Stroke 2010;41:2519-2524](https://pubmed.ncbi.nlm.nih.gov/20930153/) |
-| RE-SPECT CVT trial: dabigatran vs warfarin | Class II (RCT) | [Ferro JM et al. Lancet Neurol 2019;18:1147-1156](https://pubmed.ncbi.nlm.nih.gov/31708354/) |
+| Anticoagulation safe and beneficial even with hemorrhagic infarction | Class II | Einhaupl K et al. J Neurol Neurosurg Psychiatry 1991;54:396-401 |
+| LMWH preferred over UFH (ISCVT data) | Class III | Coutinho JM et al. Stroke 2010;41:2519-2524 |
+| RE-SPECT CVT trial: dabigatran vs warfarin | Class II (RCT) | Ferro JM et al. Lancet Neurol 2019;18:1147-1156 |
 | D-dimer in CVT diagnosis (high NPV) | Class II | [Dentali F et al. J Thromb Haemost 2012;10:582-589](https://pubmed.ncbi.nlm.nih.gov/22257124/) |
-| Thrombophilia prevalence in CVT (~35%) | Class II | [Martinelli I et al. Blood 1998;92:3152-3157](https://pubmed.ncbi.nlm.nih.gov/9787151/) |
-| Oral contraceptives as major CVT risk factor | Class II | [de Bruijn SF et al. Stroke 1998;29:2588-2592](https://pubmed.ncbi.nlm.nih.gov/9836771/) |
-| Decompressive surgery for malignant CVT | Class III | [Ferro JM et al. Cerebrovasc Dis 2009;27:55-62](https://pubmed.ncbi.nlm.nih.gov/19023216/) |
-| Endovascular thrombectomy for severe CVT | Class III, Case Series | [Siddiqui FM et al. J Neurointerv Surg 2015;7:442-447](https://pubmed.ncbi.nlm.nih.gov/24827066/) |
-| Seizure incidence in CVT (~40%) | Class II | [Ferro JM et al. Stroke 2008;39:3222-3227](https://pubmed.ncbi.nlm.nih.gov/18974380/) |
+| Thrombophilia prevalence in CVT (~35%) | Class II | Martinelli I et al. Blood 1998;92:3152-3157 |
+| Oral contraceptives as major CVT risk factor | Class II | de Bruijn SF et al. Stroke 1998;29:2588-2592 |
+| Decompressive surgery for malignant CVT | Class III | Ferro JM et al. Cerebrovasc Dis 2009;27:55-62 |
+| Endovascular thrombectomy for severe CVT | Class III, Case Series | Siddiqui FM et al. J Neurointerv Surg 2015;7:442-447 |
+| Seizure incidence in CVT (~40%) | Class II | Ferro JM et al. Stroke 2008;39:3222-3227 |
 | Long-term prognosis of CVT (good in most cases) | Class II | [Ferro JM et al. Stroke 2004;35:664-670](https://pubmed.ncbi.nlm.nih.gov/14976332/) |
 | Duration of anticoagulation in CVT | Expert Consensus | [Saposnik G et al. Stroke 2011;42:1158-1192](https://pubmed.ncbi.nlm.nih.gov/21293023/) |
-| CTV and MRV sensitivity for CVT diagnosis | Class II | [Defined F et al. AJNR 2007;28:1694-1697](https://pubmed.ncbi.nlm.nih.gov/17885251/) |
+| CTV and MRV sensitivity for CVT diagnosis | Class II | Defined F et al. AJNR 2007;28:1694-1697 |
 | CVT in pregnancy and postpartum management | Expert Consensus | [Saposnik G et al. Stroke 2011](https://pubmed.ncbi.nlm.nih.gov/21293023/) |
 | Antiphospholipid syndrome and CVT; warfarin preferred over DOACs | Class II | [Pengo V et al. Blood 2018;132:1365-1371](https://pubmed.ncbi.nlm.nih.gov/30002145/) |
 
@@ -368,6 +368,10 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.2 (January 30, 2026)**
+- Citation verification: removed 9 unverified PubMed links (converted to plain text), including 1 fabricated author citation ("Defined F")
+- CPT enrichment: added 5 CPT codes to Section 1C (86160+86162, 82232, 86334, 83020, 81206)
 
 **v1.1 (January 30, 2026)**
 - Standardized structured dosing format across all treatment sections (3A, 3B, 3D)

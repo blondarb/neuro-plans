@@ -1,7 +1,7 @@
 ---
 title: "Non-Convulsive Status Epilepticus (NCSE)"
 description: "Clinical decision support for non-convulsive status epilepticus diagnosis and management"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,7 +20,7 @@ tags:
 
 # Non-Convulsive Status Epilepticus (NCSE)
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
@@ -54,7 +54,7 @@ SECTION A: ACTION ITEMS
 | Calcium (ionized) (CPT 82340) | Hypocalcemia lowers seizure threshold | Normal | STAT | STAT | - | STAT |
 | Phosphorus (CPT 84100) | Metabolic derangement screen | Normal | STAT | STAT | - | STAT |
 | Blood glucose (CPT 82947) | Hypoglycemia as cause; hyperglycemia from stress/steroids | Normal; correct immediately if <60 mg/dL | STAT | STAT | - | STAT |
-| Ammonia (CPT 82140) | Hepatic encephalopathy mimic; valproic acid toxicity | Normal; elevated in hepatic encephalopathy and VPA toxicity | STAT | STAT | - | STAT |
+| Ammonia (CPT 82140) | Hepatic encephalopathy mimic; valproic acid toxicity | Normal (<35 umol/L); elevated in hepatic encephalopathy and VPA toxicity | STAT | STAT | - | STAT |
 | Lactate (CPT 83605) | Elevated post-convulsive SE; sepsis screen; metabolic status | May be elevated after convulsive activity; normalize in NCSE | STAT | STAT | - | STAT |
 | Anti-seizure medication levels (CPT 80185-80299) | Subtherapeutic levels as cause; toxicity as cause; guide loading | Therapeutic range for patient's medication | STAT | STAT | - | STAT |
 | Blood cultures (x2 sets) (CPT 87040) | Sepsis-related NCSE; CNS infection | No growth | STAT | STAT | - | STAT |
@@ -79,7 +79,7 @@ SECTION A: ACTION ITEMS
 | CRP (CPT 86140) | Inflammatory marker; infection screen | Normal | URGENT | ROUTINE | - | URGENT |
 | CPK (CPT 82550) | Rhabdomyolysis from prior convulsive activity | Normal; may be elevated after convulsive SE | URGENT | URGENT | - | URGENT |
 | VPA level (if on valproic acid) (CPT 80164) | VPA-induced hyperammonemia; toxicity; subtherapeutic level | Therapeutic (50-100 mcg/mL); correlate with ammonia | STAT | STAT | - | STAT |
-| Carnitine level (if on VPA with hyperammonemia) | VPA depletes carnitine causing hyperammonemia | May be low; supplement if low | - | ROUTINE | - | ROUTINE |
+| Carnitine level (if on VPA with hyperammonemia) (CPT 82379) | VPA depletes carnitine causing hyperammonemia | May be low; supplement if low | - | ROUTINE | - | ROUTINE |
 
 ### 1C. Rare/Specialized
 
@@ -90,7 +90,7 @@ SECTION A: ACTION ITEMS
 | RT-QuIC (CSF) | CJD exclusion in rapidly progressive encephalopathy with seizures | Negative | - | EXT | - | EXT |
 | Mitochondrial genetic testing | Mitochondrial epilepsy (MELAS, MERRF) | Negative | - | EXT | - | EXT |
 | CSF metagenomics (next-gen sequencing) | Occult CNS infection in culture-negative NCSE | No pathogens detected | - | EXT | - | EXT |
-| Porphyrin panel (urine/serum) | Acute intermittent porphyria with seizures | Normal | - | EXT | - | EXT |
+| Porphyrin panel (urine/serum) (CPT 84120+84110) | Acute intermittent porphyria with seizures | Normal | - | EXT | - | EXT |
 
 ---
 
@@ -308,20 +308,20 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Salzburg consensus criteria for NCSE | Expert Consensus | [Leitinger M et al. Lancet Neurol 2016;15:1054-1062](https://pubmed.ncbi.nlm.nih.gov/27571157/) |
-| ACNS standardized EEG terminology for critically ill patients | Expert Consensus | [Hirsch LJ et al. J Clin Neurophysiol 2021;38:296-320](https://pubmed.ncbi.nlm.nih.gov/33475321/) |
+| ACNS standardized EEG terminology for critically ill patients | Expert Consensus | Hirsch LJ et al. J Clin Neurophysiol 2021;38:296-320 |
 | Continuous EEG monitoring detects NCSE in ~20% of critically ill with altered consciousness | Class II | [Claassen J et al. Neurology 2004;62:1743-1748](https://pubmed.ncbi.nlm.nih.gov/15159471/) |
 | ESETT trial: levetiracetam, fosphenytoin, valproic acid equivalent for benzodiazepine-refractory SE | Class I (RCT) | [Kapur J et al. N Engl J Med 2019;381:2103-2113](https://pubmed.ncbi.nlm.nih.gov/31774955/) |
 | NCS guidelines for continuous EEG monitoring in critically ill | Expert Consensus | [Herman ST et al. J Clin Neurophysiol 2015;32:87-95](https://pubmed.ncbi.nlm.nih.gov/25626778/) |
 | Benzodiazepine trial for NCSE diagnosis | Expert Consensus | [Leitinger M et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27571157/) |
-| NCSE outcomes depend on etiology more than duration | Class II | [Legriel S et al. Crit Care Med 2015;43:1003-1012](https://pubmed.ncbi.nlm.nih.gov/25668754/) |
-| Risk of over-treatment: periodic discharges ≠ NCSE in all cases | Expert Consensus | [Hirsch LJ. Epilepsy Curr 2004;4:116-122](https://pubmed.ncbi.nlm.nih.gov/16059479/) |
-| NORSE/FIRES: autoimmune NCSE requiring immunotherapy | Class III | [Gaspard N et al. Neurology 2015;85:1605-1613](https://pubmed.ncbi.nlm.nih.gov/26296517/) |
-| Propofol infusion syndrome (PRIS) risk in prolonged SE treatment | Class III | [Roberts RJ et al. Crit Care Med 2009;37:3024-3030](https://pubmed.ncbi.nlm.nih.gov/19661801/) |
-| CSF pleocytosis from seizures alone (up to 20 WBC) | Class III | [Barry E & Hauser WA. Arch Neurol 1994;51:190-193](https://pubmed.ncbi.nlm.nih.gov/8304845/) |
-| Ketamine for super-refractory SE | Class III | [Gaspard N et al. Neurocrit Care 2013;18:168-174](https://pubmed.ncbi.nlm.nih.gov/23054846/) |
-| HSV encephalitis presenting as NCSE | Class III | [Misra UK et al. Seizure 2008;17:672-676](https://pubmed.ncbi.nlm.nih.gov/18499486/) |
-| L-carnitine for VPA-induced hyperammonemia | Class III | [Lheureux PE et al. Clin Toxicol 2009;47:101-111](https://pubmed.ncbi.nlm.nih.gov/19253095/) |
-| Aggressive vs conservative NCSE treatment outcomes | Class III | [Sutter R et al. Neurology 2016;87:2195-2203](https://pubmed.ncbi.nlm.nih.gov/27770072/) |
+| NCSE outcomes depend on etiology more than duration | Class II | Legriel S et al. Crit Care Med 2015;43:1003-1012 |
+| Risk of over-treatment: periodic discharges ≠ NCSE in all cases | Expert Consensus | Hirsch LJ. Epilepsy Curr 2004;4:116-122 |
+| NORSE/FIRES: autoimmune NCSE requiring immunotherapy | Class III | Gaspard N et al. Neurology 2015;85:1605-1613 |
+| Propofol infusion syndrome (PRIS) risk in prolonged SE treatment | Class III | Roberts RJ et al. Crit Care Med 2009;37:3024-3030 |
+| CSF pleocytosis from seizures alone (up to 20 WBC) | Class III | [Barry E & Hauser WA. Arch Neurol 1994;51:190-193](https://pubmed.ncbi.nlm.nih.gov/8304844/) |
+| Ketamine for super-refractory SE | Class III | Gaspard N et al. Neurocrit Care 2013;18:168-174 |
+| HSV encephalitis presenting as NCSE | Class III | Misra UK et al. Seizure 2008;17:672-676 |
+| L-carnitine for VPA-induced hyperammonemia | Class III | Lheureux PE et al. Clin Toxicol 2009;47:101-111 |
+| Aggressive vs conservative NCSE treatment outcomes | Class III | Sutter R et al. Neurology 2016;87:2195-2203 |
 | AES guidelines on SE management | Expert Consensus | [Glauser T et al. Epilepsy Curr 2016;16:48-61](https://pubmed.ncbi.nlm.nih.gov/26900382/) |
 
 ---
@@ -387,6 +387,10 @@ Option C: Goals-of-care discussion (super-refractory, poor prognosis)
 ---
 
 ## CHANGE LOG
+
+**v1.2 (January 30, 2026)**
+- Citation verification: removed 9 unverified PubMed links (converted to plain text); fixed 1 off-by-one PMID (Barry 1994: 8304845→8304844)
+- CPT enrichment: added 2 CPT codes (82379, 84120+84110); clarified ammonia target finding
 
 **v1.1 (January 30, 2026)**
 - Standardized structured dosing format across all treatment sections (3A-3E)
