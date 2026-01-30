@@ -22,7 +22,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| *(empty)* | — | — | — | — |
+| NMOSD | [`nmosd.md`](nmosd.md) | `pending` | — | 2026-01-30 |
+| Cerebral Venous Thrombosis | [`cerebral-venous-thrombosis.md`](cerebral-venous-thrombosis.md) | `pending` | — | 2026-01-30 |
+| Giant Cell Arteritis | [`giant-cell-arteritis.md`](giant-cell-arteritis.md) | `pending` | — | 2026-01-30 |
+| Functional Neurological Disorder | [`functional-neurological-disorder.md`](functional-neurological-disorder.md) | `pending` | — | 2026-01-30 |
+| Non-Convulsive Status Epilepticus | [`ncse.md`](ncse.md) | `pending` | — | 2026-01-30 |
 
 ---
 
