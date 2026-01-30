@@ -15,6 +15,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [Status Epilepticus](status-epilepticus.md) | ED, HOSP, ICU | G41.0, G41.9 |
+| [Non-Convulsive Status Epilepticus](ncse.md) | ED, HOSP, OPD, ICU | G41.0, G41.1, G41.2, G41.8 |
 | [New Onset Seizure](new-onset-seizure.md) | ED, HOSP, OPD | R56.9, G40.909 |
 | [Breakthrough Seizure](breakthrough-seizure.md) | ED, HOSP, OPD | G40.909, G40.919 |
 
@@ -28,6 +29,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Transient Ischemic Attack](transient-ischemic-attack.md) | ED, HOSP, OPD | G45.9 |
 | [Intracerebral Hemorrhage](intracerebral-hemorrhage.md) | ED, HOSP, ICU | I61.9 |
 | [Subarachnoid Hemorrhage](subarachnoid-hemorrhage.md) | ED, HOSP, ICU | I60.9 |
+| [Cerebral Venous Thrombosis](cerebral-venous-thrombosis.md) | ED, HOSP, OPD, ICU | I67.6, I63.6, G08 |
 
 ---
 
@@ -94,6 +96,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [MS New Diagnosis](ms-new-diagnosis.md) | HOSP, OPD | G35 |
 | [MS Chronic Management](ms-chronic-management.md) | HOSP, OPD | G35 |
 | [Optic Neuritis](optic-neuritis.md) | ED, HOSP, OPD | H46.9, H46.00, G36.0 |
+| [NMOSD](nmosd.md) | ED, HOSP, OPD, ICU | G36.0, G36.9 |
 
 ---
 
@@ -167,6 +170,22 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [Syncope Evaluation](syncope.md) | ED, HOSP, OPD | R55 |
+
+---
+
+## Vasculitis
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Giant Cell Arteritis](giant-cell-arteritis.md) | ED, HOSP, OPD, ICU | M31.6, M31.5 |
+
+---
+
+## Functional Disorders
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Functional Neurological Disorder](functional-neurological-disorder.md) | ED, HOSP, OPD, ICU | F44.4, F44.5, F44.6, F44.7 |
 
 ---
 

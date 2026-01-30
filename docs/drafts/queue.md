@@ -22,11 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| NMOSD | [`nmosd.md`](nmosd.md) | `completed` | claude/tier1-pipeline | 2026-01-30 |
-| Cerebral Venous Thrombosis | [`cerebral-venous-thrombosis.md`](cerebral-venous-thrombosis.md) | `completed` | claude/tier1-pipeline | 2026-01-30 |
-| Giant Cell Arteritis | [`giant-cell-arteritis.md`](giant-cell-arteritis.md) | `completed` | claude/tier1-pipeline | 2026-01-30 |
-| Functional Neurological Disorder | [`functional-neurological-disorder.md`](functional-neurological-disorder.md) | `completed` | claude/tier1-pipeline | 2026-01-30 |
-| Non-Convulsive Status Epilepticus | [`ncse.md`](ncse.md) | `completed` | claude/tier1-pipeline | 2026-01-30 |
+| *(none)* | — | — | — | — |
 
 ---
 
@@ -91,6 +87,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 55 | Tardive Dyskinesia | [`tardive-dyskinesia.md`](../plans/tardive-dyskinesia.md) | 2026-01-30 | 90%+ |
 | 56 | Tension-Type Headache | [`tension-headache.md`](../plans/tension-headache.md) | 2026-01-30 | 90%+ |
 | 57 | Vascular Dementia | [`vascular-dementia.md`](../plans/vascular-dementia.md) | 2026-01-30 | 90%+ |
+| 58 | NMOSD | [`nmosd.md`](../plans/nmosd.md) | 2026-01-30 | 90%+ |
+| 59 | Cerebral Venous Thrombosis | [`cerebral-venous-thrombosis.md`](../plans/cerebral-venous-thrombosis.md) | 2026-01-30 | 90%+ |
+| 60 | Giant Cell Arteritis | [`giant-cell-arteritis.md`](../plans/giant-cell-arteritis.md) | 2026-01-30 | 90%+ |
+| 61 | Functional Neurological Disorder | [`functional-neurological-disorder.md`](../plans/functional-neurological-disorder.md) | 2026-01-30 | 90%+ |
+| 62 | Non-Convulsive Status Epilepticus | [`ncse.md`](../plans/ncse.md) | 2026-01-30 | 90%+ |
 
 ---
 
@@ -107,7 +108,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-01-30. Total approved: 57 plans.
+- Queue updated 2026-01-30. Total approved: 62 plans.
 
 ---
 

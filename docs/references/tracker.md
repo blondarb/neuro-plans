@@ -9,7 +9,7 @@ title: Template Tracker
 **Created:** January 15, 2026
 **Last Updated:** January 30, 2026
 **Target:** 150+ validated templates
-**Current Status:** 57 templates approved
+**Current Status:** 62 templates approved
 
 ---
 
@@ -33,7 +33,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | New Onset Seizure | R56.9 | 🎯 OPD | Approved |
 | ✅ | Status Epilepticus | G41.9 | 🎯 OPD | Approved |
 | ✅ | Breakthrough Seizure (Known Epilepsy) | G40.909 | 🎯 OPD | Approved |
-| ⬜ | Non-Convulsive Status Epilepticus (NCSE) | G41.0 | 🎯 OPD | Often missed diagnosis |
+| ✅ | Non-Convulsive Status Epilepticus (NCSE) | G41.0 | 🎯 OPD | Approved |
 | ⬜ | Alcohol Withdrawal Seizure | G40.509 | 🎯 OPD | Common in hospitalist practice |
 | ⬜ | Eclampsia/Seizure in Pregnancy | O15.9 | 🎯 OPD | Special ASM considerations |
 | ⬜ | Drug-Resistant Epilepsy | G40.919 | 🎯 OPD | Subspecialty referral focus |
@@ -47,7 +47,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Intracerebral Hemorrhage (ICH) | I61.9 | 🎯 OPD | Approved |
 | ✅ | Subarachnoid Hemorrhage (SAH) | I60.9 | 🎯 OPD | Approved |
 | ✅ | Transient Ischemic Attack (TIA) | G45.9 | 🎯 OPD | Approved |
-| ⬜ | Cerebral Venous Thrombosis (CVT) | I67.6 | 🎯 OPD | Often missed, anticoagulation |
+| ✅ | Cerebral Venous Thrombosis (CVT) | I67.6 | 🎯 OPD | Approved |
 | ⬜ | Carotid/Vertebral Dissection | I77.71 | 🎯 OPD | Young stroke workup |
 | ⬜ | Posterior Reversible Encephalopathy (PRES) | F93.49 | 🎯 OPD | Hypertensive emergency |
 | ⬜ | Reversible Cerebral Vasoconstriction (RCVS) | I67.841 | 🎯 OPD | Thunderclap headache DDx |
@@ -73,7 +73,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Trigeminal Neuralgia | G50.0 | 🎯 OPD | Approved |
 | ⬜ | New Daily Persistent Headache | G44.52 | 🎯 OPD | Refractory cases |
 | ⬜ | Thunderclap Headache Evaluation | R51.9 | 🎯 OPD | SAH, RCVS, other emergencies |
-| ⬜ | Giant Cell Arteritis (GCA) | M31.6 | 🎯 OPD | Vision-threatening |
+| ✅ | Giant Cell Arteritis (GCA) | M31.6 | 🎯 OPD | Approved |
 
 ### Demyelinating Diseases
 
@@ -83,7 +83,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | MS - Chronic Management | G35 | 🎯 OPD | Approved |
 | ✅ | Optic Neuritis | H46.9 | 🎯 OPD | Approved |
 | ✅ | Acute Myelopathy | G95.9 | 🎯 OPD | Approved (covers transverse myelitis) |
-| ⬜ | Neuromyelitis Optica (NMOSD) | G36.0 | 🎯 OPD | AQP4+, different from MS |
+| ✅ | Neuromyelitis Optica (NMOSD) | G36.0 | 🎯 OPD | Approved |
 | ⬜ | MOG Antibody Disease (MOGAD) | G36.9 | 🎯 OPD | Distinct entity |
 | ⬜ | Acute Disseminated Encephalomyelitis (ADEM) | G04.81 | 🎯 OPD | More common in pediatrics |
 | ⬜ | Progressive Multifocal Leukoencephalopathy (PML) | A81.2 | 🎯 OPD | JCV, immunocompromised |
@@ -217,7 +217,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
-| ⬜ | Functional Neurological Disorder (FND) | F44.9 | 🎯 OPD | Positive diagnosis |
+| ✅ | Functional Neurological Disorder (FND) | F44.9 | 🎯 OPD | Approved |
 | ⬜ | Psychogenic Non-Epileptic Spells (PNES) | F44.4 | 🎯 OPD | Video EEG confirmation |
 | ⬜ | Functional Movement Disorder | F44.4 | 🎯 OPD | Clinical signs |
 | ⬜ | Functional Cognitive Disorder | F44.4 | 🎯 OPD | DDx with dementia |

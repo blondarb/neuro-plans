@@ -1,0 +1,1258 @@
+{
+  "id": "giant-cell-arteritis",
+  "title": "Giant Cell Arteritis (GCA)",
+  "version": "1.2",
+  "icd10": [
+    "** M31.6 (Other giant cell arteritis)",
+    "M31.5 (Giant cell arteritis with polymyalgia rheumatica)"
+  ],
+  "scope": "** Urgent diagnostic workup, empiric glucocorticoid treatment, and long-term management of giant cell arteritis. Covers cranial GCA (visual, neurologic), large-vessel GCA, overlap with polymyalgia rheumatica (PMR), vision-threatening presentations, steroid-sparing therapy, and disease monitoring. For isolated PMR without GCA features, GCA workup should still be considered. For other vasculitides (CNS vasculitis, PAN), use separate templates.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "ESR (Westergren) (CPT 85652)",
+          "rationale": "Elevated in >90% GCA; ESR >50 mm/hr supports diagnosis (ACR criteria); sensitivity ~80-90%",
+          "target": "Elevated (>50 mm/hr typical; often >80-100)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "More sensitive than ESR alone; elevated in ~95% GCA; combined ESR+CRP sensitivity >99%",
+          "target": "Elevated (>2.5 mg/dL typical)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Normocytic anemia of chronic disease; thrombocytosis (reactive); baseline before steroids",
+          "target": "Mild anemia; thrombocytosis; leukocytosis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Baseline before steroids; elevated alkaline phosphatase (hepatic involvement in ~30%)",
+          "target": "Elevated alkaline phosphatase; otherwise normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Pre-steroid baseline",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Glycemic status before long-term steroids",
+          "target": "<5.7% (document baseline for steroid-induced diabetes monitoring)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Albumin (CPT 82040)",
+          "rationale": "Nutritional status; inflammation marker",
+          "target": "May be low (acute phase reactant)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Fibrinogen (CPT 85384)",
+          "rationale": "Acute phase reactant; may be elevated",
+          "target": "Elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ferritin (CPT 82728)",
+          "rationale": "Acute phase reactant; anemia workup",
+          "target": "May be elevated",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
+          "rationale": "Baseline coagulation; pre-procedure (biopsy)",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urinalysis (CPT 81003)",
+          "rationale": "Renal vasculitis screen; baseline",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid disease comorbidity",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lipid panel (CPT 80061)",
+          "rationale": "Cardiovascular risk assessment; steroid effects on lipids",
+          "target": "Document baseline",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "Other vasculitis/connective tissue disease screen",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANCA (c-ANCA/PR3 and p-ANCA/MPO) (CPT 86235+86200)",
+          "rationale": "GPA (Wegener) or MPA vasculitis mimic",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis B and C serologies (CPT 87340+86803)",
+          "rationale": "Hepatitis-associated vasculitis; pre-immunosuppression",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quantiferon-TB Gold (CPT 86480)",
+          "rationale": "Pre-immunosuppression screen; granulomatous disease differential",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP) (CPT 86334)",
+          "rationale": "Monoclonal gammopathy/myeloma (elevated ESR differential)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IL-6 level (CPT 83519)",
+          "rationale": "Elevated in GCA; potential biomarker for monitoring (especially on tocilizumab where ESR/CRP are suppressed)",
+          "target": "Elevated",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin D 25-OH (CPT 82306)",
+          "rationale": "Baseline before long-term steroids (bone health)",
+          "target": ">30 ng/mL; supplement if deficient",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "DEXA scan baseline referral (CPT 77080)",
+          "rationale": "Bone density before anticipated chronic steroid use",
+          "target": "T-score >-2.5",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Complement C3, C4 (CPT 86160+86162)",
+          "rationale": "Complement-mediated vasculitis screen",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Anti-GBM antibody",
+          "rationale": "If pulmonary-renal syndrome suspected",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Cryoglobulins (CPT 82595)",
+          "rationale": "Cryoglobulinemic vasculitis mimic",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "ACE level (CPT 82164)",
+          "rationale": "Sarcoidosis (granulomatous disease differential)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "IgG4 level",
+          "rationale": "IgG4-related disease (pachymeningitis, aortitis mimic)",
+          "target": "Normal (<135 mg/dL)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Temporal artery ultrasound (halo sign) (CPT 93880)",
+          "timing": "Within 24h (before or within days of starting steroids; halo fades after ~2 weeks on steroids)",
+          "target": "Halo sign (hypoechoic wall thickening); compression sign; stenosis/occlusion; sensitivity ~77%, specificity ~96%",
+          "contraindications": "None significant; operator-dependent",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Temporal artery biopsy (CPT 37609)",
+          "timing": "Within 1-2 weeks of starting steroids (biopsy remains positive for 2-6 weeks on steroids; do NOT delay steroids for biopsy)",
+          "target": "Granulomatous inflammation with multinucleated giant cells; intimal hyperplasia; fragmented internal elastic lamina; sensitivity ~85% (bilateral increases to ~90%)",
+          "contraindications": "Anticoagulation (relative); infection at site",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediate if acute neurologic symptoms",
+          "target": "Rule out stroke, hemorrhage, mass",
+          "contraindications": "None significant",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "If stroke symptoms or cranial nerve palsy",
+          "target": "Acute infarction (vertebrobasilar territory more common); cranial nerve enhancement; pachymeningeal thickening",
+          "contraindications": "Standard MRI contraindications",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ophthalmologic examination (fundoscopy, visual acuity, visual fields, relative afferent pupillary defect)",
+          "timing": "STAT if visual symptoms",
+          "target": "Anterior ischemic optic neuropathy (AION): pale swollen disc; cherry-red spot (CRAO); visual field defects",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "CT angiography of aorta and branches (CTA) (CPT 71275)",
+          "timing": "Within 1-2 weeks; assess for large-vessel GCA",
+          "target": "Aortic wall thickening; stenosis of subclavian, axillary arteries; aortitis",
+          "contraindications": "Contrast allergy; renal insufficiency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MR angiography of aorta and branches (MRA)",
+          "timing": "Within 1-2 weeks; alternative to CTA for large-vessel assessment",
+          "target": "Vessel wall thickening and enhancement (mural inflammation); stenosis",
+          "contraindications": "MRI contraindications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "FDG-PET/CT (CPT 78816)",
+          "timing": "If large-vessel GCA suspected; assessment of disease extent; monitor treatment response",
+          "target": "Increased FDG uptake in aorta and large-vessel walls (vascular inflammation)",
+          "contraindications": "Uncontrolled diabetes; pregnancy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fluorescein angiography",
+          "timing": "If retinal artery occlusion suspected",
+          "target": "Delayed choroidal filling; optic disc hypoperfusion",
+          "contraindications": "Fluorescein allergy",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carotid Doppler ultrasound (CPT 93880)",
+          "timing": "If carotid territory symptoms",
+          "target": "Stenosis; wall thickening",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Contrast-enhanced MRI of temporal arteries (vessel wall imaging)",
+          "timing": "If biopsy equivocal or declined; alternative to US in some centers",
+          "target": "Mural enhancement and thickening of temporal arteries",
+          "contraindications": "MRI contraindications",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Aortic echocardiogram (TTE/TEE)",
+          "timing": "If aortic regurgitation or aortitis suspected",
+          "target": "Aortic root dilation; aortic regurgitation; wall thickening",
+          "contraindications": "TEE: esophageal pathology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Contralateral temporal artery biopsy",
+          "timing": "If initial biopsy negative but clinical suspicion remains high",
+          "target": "Contralateral biopsy increases sensitivity to ~90% (skip lesions)",
+          "contraindications": "Same as initial biopsy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent (Vision-Threatening GCA)": [
+        {
+          "item": "Methylprednisolone IV pulse (vision-threatening)",
+          "route": "IV",
+          "indication": "Visual symptoms: acute vision loss, amaurosis fugax, diplopia, AION, CRAO, cranial nerve palsy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone IV pulse (vision-threatening) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily for 3 days (some protocols use 500 mg-1000 mg); infuse over 1-2 hours; then transition to oral prednisone 1 mg/kg/day",
+            "orderSentence": "Methylprednisolone IV pulse (vision-threatening) 1000 mg IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis from steroids",
+          "monitoring": "Glucose q6h (target <180); BP; mood; electrolytes; GI prophylaxis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Aspirin (low-dose)",
+          "route": "PO",
+          "indication": "Antiplatelet therapy to reduce ischemic complications (visual loss, stroke) in GCA",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "81 mg daily",
+                "orderSentence": "Aspirin (low-dose) 81 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "81 mg PO daily",
+            "orderSentence": "Aspirin (low-dose) 81 mg daily PO"
+          },
+          "contraindications": "Active GI bleeding; aspirin allergy; concurrent anticoagulation (relative)",
+          "monitoring": "GI symptoms; bleeding signs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Omeprazole (GI prophylaxis)",
+          "route": "PO/IV",
+          "indication": "GI protection during high-dose steroids + aspirin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Omeprazole (GI prophylaxis) 40 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "40 mg PO/IV daily while on steroids",
+            "orderSentence": "Omeprazole (GI prophylaxis) 40 mg daily PO"
+          },
+          "contraindications": "PPI allergy",
+          "monitoring": "None routine",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Standard Oral Glucocorticoid Treatment (Non-Vision-Threatening)": [
+        {
+          "item": "Prednisone (initial high-dose)",
+          "route": "PO",
+          "indication": "GCA without visual symptoms; after IV pulse for vision-threatening GCA",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg/kg",
+                "orderSentence": "Prednisone (initial high-dose) 1 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 mg/kg/day PO (max 60 mg); take in morning with food; maintain initial dose 2-4 weeks until symptoms resolve and ESR/CRP normalize",
+            "orderSentence": "Prednisone (initial high-dose) 1 mg/kg PO"
+          },
+          "contraindications": "Active untreated infection; poorly controlled diabetes",
+          "monitoring": "Glucose; BP; weight; mood; bone density; cataracts; adrenal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Prednisone (taper phase 1: 40 mg → 20 mg)",
+          "route": "PO",
+          "indication": "After 2-4 weeks at initial dose with symptom resolution",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Prednisone (taper phase 1: 40 mg → 20 mg) 40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Reduce by 5-10 mg every 2 weeks from 40 mg to 20 mg; monitor symptoms and ESR/CRP at each step",
+            "orderSentence": "Prednisone (taper phase 1: 40 mg → 20 mg) 40 mg PO"
+          },
+          "contraindications": "Same as above",
+          "monitoring": "ESR/CRP at each taper step; symptom recurrence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prednisone (taper phase 2: 20 mg → 10 mg)",
+          "route": "PO",
+          "indication": "Continued improvement; normal inflammatory markers",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Prednisone (taper phase 2: 20 mg → 10 mg) 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Reduce by 2.5 mg every 2-4 weeks from 20 mg to 10 mg; slower taper reduces relapse risk",
+            "orderSentence": "Prednisone (taper phase 2: 20 mg → 10 mg) 20 mg PO"
+          },
+          "contraindications": "Same as above",
+          "monitoring": "ESR/CRP; symptoms; adrenal function assessment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prednisone (taper phase 3: 10 mg → off)",
+          "route": "PO",
+          "indication": "Near-remission; on steroid-sparing agent if available",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Prednisone (taper phase 3: 10 mg → off) 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Reduce by 1 mg every month from 10 mg to off; total steroid duration typically 12-24 months; some patients require low-dose indefinitely",
+            "orderSentence": "Prednisone (taper phase 3: 10 mg → off) 10 mg PO"
+          },
+          "contraindications": "Adrenal insufficiency risk on discontinuation",
+          "monitoring": "Morning cortisol if dose <7.5 mg; ACTH stimulation test before complete discontinuation; ESR/CRP",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium + Vitamin D (bone protection)",
+          "route": "PO",
+          "indication": "All patients on chronic steroids",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg Ca + 2000 IU Vit D",
+                "orderSentence": "Calcium + Vitamin D (bone protection) 1000 mg Ca + 2000 IU Vit D PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 1000-1200 mg/day + Vitamin D 2000-4000 IU/day (target 25-OH >30 ng/mL)",
+            "orderSentence": "Calcium + Vitamin D (bone protection) 1000 mg Ca + 2000 IU Vit D PO"
+          },
+          "contraindications": "Hypercalcemia; kidney stones",
+          "monitoring": "25-OH Vitamin D level; calcium; DEXA at baseline and annually",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alendronate (bisphosphonate for osteoporosis prevention)",
+          "route": "PO",
+          "indication": "Steroids anticipated >3 months; T-score ≤-1.0",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "70 mg weekly",
+                "orderSentence": "Alendronate (bisphosphonate for osteoporosis prevention) 70 mg weekly PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "70 mg PO weekly; take on empty stomach with 8 oz water; remain upright 30 min",
+            "orderSentence": "Alendronate (bisphosphonate for osteoporosis prevention) 70 mg weekly PO"
+          },
+          "contraindications": "Esophageal disorders; CrCl <35; hypocalcemia",
+          "monitoring": "DEXA q1-2 years; dental health (osteonecrosis of jaw); esophageal symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Steroid-Sparing Therapy": [
+        {
+          "item": "**Tocilizumab (Actemra)**",
+          "route": "SC",
+          "indication": "FDA-approved steroid-sparing agent for GCA (GiACTA trial); reduces relapse rate and steroid exposure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "162 mg",
+                "orderSentence": "**Tocilizumab (Actemra)** 162 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "162 mg SC weekly (preferred) or every 2 weeks; self-injectable; can also use 8 mg/kg IV q4wk",
+            "orderSentence": "**Tocilizumab (Actemra)** 162 mg SC"
+          },
+          "contraindications": "Active infection; hepatic impairment (ALT >5x ULN); diverticulitis; concurrent live vaccines; ANC <2000; platelets <100K",
+          "monitoring": "CBC q4-8 weeks; LFTs q4-8 weeks; lipid panel q3 months; infection surveillance; GI perforation risk; neutropenia; NOTE: tocilizumab suppresses ESR/CRP -- cannot use these for disease monitoring (use IL-6 or clinical assessment instead)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methotrexate",
+          "route": "PO",
+          "indication": "Steroid-sparing alternative (weaker evidence than tocilizumab); relapse prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "7.5 mg",
+                "orderSentence": "Methotrexate 7.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 7.5-10 mg PO weekly; titrate to 15-25 mg/week; take with folic acid 1 mg daily (except MTX day)",
+            "orderSentence": "Methotrexate 7.5 mg PO"
+          },
+          "contraindications": "Pregnancy; hepatic disease; CrCl <30; active infection; interstitial lung disease",
+          "monitoring": "CBC q2-4 weeks initially, then q1-3 months; LFTs q1-3 months; CrCl; pulmonary symptoms (pneumonitis); folate supplementation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Folic acid (with methotrexate)",
+          "route": "PO",
+          "indication": "Reduce methotrexate side effects (stomatitis, cytopenias)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg daily",
+                "orderSentence": "Folic acid (with methotrexate) 1 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 mg PO daily (skip day of MTX)",
+            "orderSentence": "Folic acid (with methotrexate) 1 mg daily PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "None routine",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Leflunomide",
+          "route": "PO",
+          "indication": "Alternative steroid-sparing if MTX intolerant (limited evidence)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg daily",
+                "orderSentence": "Leflunomide 10-20 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10-20 mg PO daily",
+            "orderSentence": "Leflunomide 10-20 mg daily PO"
+          },
+          "contraindications": "Pregnancy (Category X); hepatic disease",
+          "monitoring": "CBC; LFTs monthly x 6 months, then q1-3 months; BP; diarrhea",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Headache management; scalp tenderness",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Acetaminophen 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mg PO q6h PRN; max 3g/day",
+            "orderSentence": "Acetaminophen 1000 mg PO"
+          },
+          "contraindications": "Hepatic impairment",
+          "monitoring": "LFTs if chronic use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Steroid-induced insomnia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg qHS",
+                "orderSentence": "Trazodone 25-50 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg PO qHS; max 100 mg",
+            "orderSentence": "Trazodone 25-50 mg qHS PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation",
+          "monitoring": "Orthostatic hypotension; sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Insulin (steroid-induced diabetes)",
+          "route": "SC",
+          "indication": "Steroid-induced hyperglycemia not controlled with oral agents",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Insulin (steroid-induced diabetes) Per protocol SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Per endocrine protocol; anticipate afternoon/evening hyperglycemia pattern with morning steroid dosing",
+            "orderSentence": "Insulin (steroid-induced diabetes) Per protocol SC"
+          },
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Glucose QID; HbA1c q3 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trimethoprim-sulfamethoxazole (PJP prophylaxis)",
+          "route": "PO",
+          "indication": "PJP prophylaxis if on ≥20 mg prednisone for >4 weeks with additional immunosuppression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 DS tablet",
+                "orderSentence": "Trimethoprim-sulfamethoxazole (PJP prophylaxis) 1 DS tablet PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 DS tablet PO Monday/Wednesday/Friday",
+            "orderSentence": "Trimethoprim-sulfamethoxazole (PJP prophylaxis) 1 DS tablet PO"
+          },
+          "contraindications": "Sulfonamide allergy; renal impairment; hyperkalemia",
+          "monitoring": "CBC; renal function; electrolytes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Ophthalmology/neuro-ophthalmology for URGENT visual assessment (fundoscopy, visual fields, fluorescein angiography) if any visual symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Rheumatology for long-term GCA management, steroid-sparing therapy initiation, and disease monitoring",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vascular surgery for temporal artery biopsy (do NOT delay steroids while awaiting biopsy)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Endocrinology for steroid-induced diabetes management if persistent hyperglycemia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology if stroke symptoms, cranial nerve palsy, or CNS vasculitis suspected",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cardiology/vascular surgery if aortitis with aneurysm or significant large-vessel stenosis identified",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for PMR-associated weakness and deconditioning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for steroid side effect management support and medication cost assistance (tocilizumab is expensive)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nutrition/dietitian for weight management and diabetes prevention during chronic steroid use",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED IMMEDIATELY for any new or worsening vision changes (blurred vision, double vision, vision loss, shadows) -- this is a vision-threatening emergency requiring immediate treatment",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Report new headache, jaw pain while chewing, scalp tenderness, or limb claudication as these may indicate disease relapse",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Do NOT stop prednisone abruptly -- sudden discontinuation can cause adrenal crisis and disease flare",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Take prednisone in the morning with food to minimize insomnia and GI upset",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Monitor blood glucose as directed; report persistent readings >200 mg/dL",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Report signs of infection (fever >100.4F, cough, dysuria) promptly as steroids increase infection risk",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Attend all follow-up appointments for blood work (ESR/CRP monitoring guides treatment)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Do NOT miss tocilizumab injections if prescribed; medication adherence prevents relapse",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Weight-bearing exercise 30 minutes daily to maintain bone density and muscle strength on steroids",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Annual ophthalmology exam for steroid-induced cataract and glaucoma screening",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Calcium 1000-1200 mg/day + Vitamin D 2000-4000 IU daily for bone protection during steroid use",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Low-sodium, diabetic-friendly diet to mitigate steroid-induced weight gain, edema, and hyperglycemia",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Smoking cessation to reduce vascular inflammation and cardiovascular risk",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Annual influenza vaccine; pneumococcal and shingles (Shingrix) vaccination before immunosuppression",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid live vaccines while on immunosuppressive therapy",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Stress management and adequate sleep to support immune function and reduce steroid side effects",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Fall prevention measures (steroid myopathy increases fall risk; bone fragility increases fracture risk)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Non-arteritic anterior ischemic optic neuropathy (NAION)",
+      "features": "Younger patients possible; no systemic inflammation; \"disc at risk\" (small C/D ratio); no jaw claudication or scalp tenderness",
+      "tests": "Normal ESR/CRP; no temporal artery abnormality on US; no biopsy inflammation"
+    },
+    {
+      "diagnosis": "Migraine / tension-type headache",
+      "features": "Recurrent pattern; no systemic inflammation; no visual loss (aura resolves)",
+      "tests": "Normal ESR/CRP; normal temporal artery exam"
+    },
+    {
+      "diagnosis": "Trigeminal neuralgia",
+      "features": "Lancinating pain in V2/V3 distribution; triggered by touch/chewing; no inflammation",
+      "tests": "Normal ESR/CRP; MRI for vascular loop"
+    },
+    {
+      "diagnosis": "TMJ dysfunction",
+      "features": "Jaw pain with chewing; tenderness over TMJ; click/pop; bilateral possible",
+      "tests": "Normal ESR/CRP; dental/TMJ evaluation"
+    },
+    {
+      "diagnosis": "Polymyalgia rheumatica (without GCA)",
+      "features": "Proximal myalgias; morning stiffness; elevated ESR/CRP; NO headache, visual symptoms, or jaw claudication",
+      "tests": "Consider GCA workup if inflammatory markers very high or headache develops; lower steroid dose (15-20 mg) sufficient"
+    },
+    {
+      "diagnosis": "Other vasculitis (CNS vasculitis, PAN, GPA)",
+      "features": "Different vessel size involvement; different organ patterns; ANCA may be positive",
+      "tests": "ANCA; angiography; tissue biopsy; specific clinical features"
+    },
+    {
+      "diagnosis": "Atherosclerotic disease (carotid stenosis, vertebrobasilar disease)",
+      "features": "Cardiovascular risk factors; arterial territory symptoms; no systemic inflammation",
+      "tests": "Normal ESR/CRP; carotid Doppler/CTA; different vascular territory"
+    },
+    {
+      "diagnosis": "Multiple myeloma / Waldenstrom",
+      "features": "Elevated ESR from paraprotein; no temporal artery symptoms; bone pain; hyperviscosity",
+      "tests": "SPEP/UPEP; bone marrow biopsy; immunofixation"
+    },
+    {
+      "diagnosis": "Infection (endocarditis, osteomyelitis, TB)",
+      "features": "Fever; positive cultures; specific organ involvement",
+      "tests": "Blood cultures; site-specific imaging; cultures"
+    },
+    {
+      "diagnosis": "Lymphoma / malignancy",
+      "features": "B-symptoms; lymphadenopathy; elevated ESR from inflammation",
+      "tests": "CT chest/abd/pelvis; biopsy; LDH"
+    },
+    {
+      "diagnosis": "IgG4-related disease",
+      "features": "Multi-organ fibroinflammatory disease; aortitis; elevated IgG4; responds to rituximab",
+      "tests": "IgG4 level; tissue biopsy (IgG4+ plasma cells); different histology"
+    },
+    {
+      "diagnosis": "Takayasu arteritis",
+      "features": "Large-vessel vasculitis in young women (<40); claudication; absent pulses",
+      "tests": "Age of onset; angiography pattern; no giant cells on temporal artery"
+    },
+    {
+      "diagnosis": "Fibromyalgia",
+      "features": "Widespread pain; fatigue; no inflammation",
+      "tests": "Normal ESR/CRP; tender points; no objective inflammation"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "ACR 1990 classification criteria for GCA",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Hunder GG et al. Arthritis Rheum 1990;33:1122-1128](https://pubmed.ncbi.nlm.nih.gov/2202311/)"
+    },
+    {
+      "recommendation": "ACR/EULAR 2022 classification criteria for GCA",
+      "evidenceLevel": "Expert Consensus",
+      "source": "Ponte C et al. Ann Rheum Dis 2022;81:1647-1653"
+    },
+    {
+      "recommendation": "GiACTA trial: tocilizumab for GCA (FDA approval)",
+      "evidenceLevel": "Class I (RCT)",
+      "source": "[Stone JH et al. N Engl J Med 2017;377:317-328](https://pubmed.ncbi.nlm.nih.gov/28745999/)"
+    },
+    {
+      "recommendation": "Temporal artery ultrasound halo sign (TABUL study)",
+      "evidenceLevel": "Class II",
+      "source": "[Luqmani R et al. Health Technol Assess 2016;20:1-238](https://pubmed.ncbi.nlm.nih.gov/27925577/)"
+    },
+    {
+      "recommendation": "Fast-track pathway for GCA diagnosis reduces vision loss",
+      "evidenceLevel": "Class III",
+      "source": "Diamantopoulos AP et al. Ann Rheum Dis 2016;75:1961-1964"
+    },
+    {
+      "recommendation": "IV methylprednisolone for vision-threatening GCA",
+      "evidenceLevel": "Class III, Expert Consensus",
+      "source": "Hayreh SS et al. Ophthalmology 2002;109:1757-1765"
+    },
+    {
+      "recommendation": "Low-dose aspirin reduces ischemic complications in GCA",
+      "evidenceLevel": "Class III",
+      "source": "[Nesher G et al. Arthritis Rheum 2004;50:1332-1337](https://pubmed.ncbi.nlm.nih.gov/15077317/)"
+    },
+    {
+      "recommendation": "Biopsy sensitivity: unilateral ~85%, bilateral ~90%",
+      "evidenceLevel": "Class II",
+      "source": "Breuer GS et al. Isr Med Assoc J 2013;15:756-760"
+    },
+    {
+      "recommendation": "Biopsy remains positive for 2-6 weeks after starting steroids",
+      "evidenceLevel": "Class III",
+      "source": "[Achkar AA et al. Ann Intern Med 1994;120:987-992](https://pubmed.ncbi.nlm.nih.gov/8185147/)"
+    },
+    {
+      "recommendation": "GCA relapse rate on steroid taper (~50%)",
+      "evidenceLevel": "Class II",
+      "source": "Martinez-Lado L et al. Semin Arthritis Rheum 2011;41:252-263"
+    },
+    {
+      "recommendation": "ESR normal in ~4-10% of biopsy-proven GCA",
+      "evidenceLevel": "Class III",
+      "source": "Parikh M et al. Clin Exp Rheumatol 2006;24(2 Suppl 41):S35-40"
+    },
+    {
+      "recommendation": "Large-vessel GCA involvement (~50% on PET/CT)",
+      "evidenceLevel": "Class II",
+      "source": "Blockmans D et al. Rheumatology 2006;45:432-437"
+    },
+    {
+      "recommendation": "Aortic aneurysm risk in GCA (17x increased)",
+      "evidenceLevel": "Class II",
+      "source": "[Evans JM et al. Ann Intern Med 1995;122:502-507](https://pubmed.ncbi.nlm.nih.gov/7872584/)"
+    },
+    {
+      "recommendation": "Tocilizumab suppresses ESR/CRP; cannot use for monitoring",
+      "evidenceLevel": "Class II",
+      "source": "[Stone JH et al. N Engl J Med 2017](https://pubmed.ncbi.nlm.nih.gov/28745999/)"
+    },
+    {
+      "recommendation": "Methotrexate as steroid-sparing in GCA (mixed evidence)",
+      "evidenceLevel": "Class I (3 RCTs)",
+      "source": "[Mahr AD et al. Arthritis Rheum 2007;56:2789-2797](https://pubmed.ncbi.nlm.nih.gov/17665429/)"
+    },
+    {
+      "recommendation": "FDG-PET for large-vessel GCA diagnosis and monitoring",
+      "evidenceLevel": "Class II",
+      "source": "[Dejaco C et al. Ann Rheum Dis 2018;77:636-643](https://pubmed.ncbi.nlm.nih.gov/29358285/)"
+    },
+    {
+      "recommendation": "BSR/BHPR guidelines for management of GCA",
+      "evidenceLevel": "Expert Consensus",
+      "source": "Mackie SL et al. Rheumatology 2020;59:e1-e23"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "ESR (CPT 85652)",
+      "frequency": "Weekly x 4 weeks; then q2 weeks during taper; then monthly; then q3 months",
+      "action": "Rising ESR: evaluate for relapse; consider holding taper or increasing dose",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "CRP (CPT 86140)",
+      "frequency": "Same schedule as ESR",
+      "action": "Rising CRP: same as ESR; CRP normalizes faster and is more responsive to disease activity",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Visual acuity and visual fields",
+      "frequency": "Daily (inpatient) if visual symptoms; each OPD visit initially; then q3 months",
+      "action": "Any deterioration: urgent ophthalmology; consider IV steroids; escalate therapy",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "Q6h during IV steroids; daily during high-dose oral; fasting at OPD visits",
+      "action": "Insulin if needed; endocrine referral if HbA1c >7%",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "HbA1c",
+      "frequency": "Baseline; q3 months on steroids",
+      "action": "Diabetes management escalation; endocrine referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Q4h (inpatient); each OPD visit",
+      "action": "Antihypertensive initiation/adjustment",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Weight",
+      "frequency": "Each OPD visit",
+      "action": "Dietary counseling; exercise prescription",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Bone density (DEXA)",
+      "frequency": "Baseline; q1-2 years on steroids",
+      "action": "Bisphosphonate; calcium/vitamin D optimization",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CBC",
+      "frequency": "q1-3 months (more frequent if on methotrexate/tocilizumab)",
+      "action": "Dose adjustment of steroid-sparing agent; infection evaluation if leukopenia",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "LFTs",
+      "frequency": "q1-3 months (especially on methotrexate/tocilizumab)",
+      "action": "Dose reduction or agent switch",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Lipid panel",
+      "frequency": "q3-6 months on tocilizumab; annually on steroids",
+      "action": "Statin therapy if indicated",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "GCA symptom checklist (headache, jaw claudication, scalp tenderness, PMR symptoms, visual symptoms)",
+      "frequency": "Each visit",
+      "action": "If symptoms recur: increase steroid dose to last effective dose; re-evaluate with ESR/CRP",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Aortic imaging (CTA or MRA)",
+      "frequency": "Baseline if large-vessel involvement; then q1-2 years",
+      "action": "Vascular surgery referral if aneurysm >5 cm or rapidly expanding",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Ophthalmologic exam (cataracts, glaucoma)",
+      "frequency": "Annually while on chronic steroids",
+      "action": "Ophthalmology management; IOP-lowering drops if elevated",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "No visual symptoms or stable/improving vision; oral steroids initiated; able to tolerate oral medication; outpatient biopsy arranged; follow-up with rheumatology/ophthalmology within 1 week; patient educated on visual warning signs"
+    },
+    {
+      "disposition": "**Admit to floor**",
+      "criteria": "Acute vision loss or amaurosis fugax requiring IV methylprednisolone; new stroke symptoms; unable to tolerate oral steroids; significant steroid complications (severe hyperglycemia, psychosis); diagnostic uncertainty requiring expedited workup"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "Acute stroke with neurologic emergency; aortic dissection from aortitis; severe steroid complications requiring ICU monitoring; rare: severe systemic vasculitis with multiorgan involvement"
+    },
+    {
+      "disposition": "**Transfer to higher level of care**",
+      "criteria": "Neuro-ophthalmology or temporal artery biopsy not available; stroke requiring neurointerventional capability not available at current facility"
+    },
+    {
+      "disposition": "**Outpatient follow-up**",
+      "criteria": "All patients: rheumatology within 1-2 weeks; ophthalmology/neuro-ophthalmology within 1-2 weeks; PCP within 2-4 weeks (steroid monitoring); labs (ESR/CRP) at 1 week, then q2 weeks during initial taper"
+    },
+    {
+      "disposition": "**Readmission criteria**",
+      "criteria": "New visual symptoms (any); disease flare with headache/jaw claudication and rising ESR/CRP; severe steroid complications (psychosis, GI bleeding, severe hyperglycemia, infection)"
+    }
+  ]
+}
