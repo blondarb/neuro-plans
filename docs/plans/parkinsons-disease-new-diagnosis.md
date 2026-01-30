@@ -18,7 +18,7 @@ setting: "HOSP, OPD, ICU"
 
 **ICD-10:** G20 (Parkinson's disease), G20.A1 (Parkinson's disease without dyskinesia, without motor fluctuations), G20.A2 (Parkinson's disease without dyskinesia, with motor fluctuations), G20.B1 (Parkinson's disease with dyskinesia, without motor fluctuations), G20.B2 (Parkinson's disease with dyskinesia, with motor fluctuations), G20.C (Parkinsonism, unspecified)
 
-**SYNONYMS:** Parkinson disease, PD, idiopathic parkinsonism, paralysis agitans, shaking palsy, primary parkinsonism, Parkinson's, parkinsonism
+**SYNONYMS:** Parkinson disease, PD, idiopathic parkinsonism, paralysis agitans, shaking palsy, primary parkinsonism, Parkinson's, parkinsonism, tremor-dominant PD, PIGD
 
 **SCOPE:** Initial diagnosis and early management of idiopathic Parkinson's disease in adults. Covers diagnostic workup to exclude secondary causes and atypical parkinsonism, initiation of symptomatic therapy, and patient education. Excludes drug-induced parkinsonism, atypical parkinsonian syndromes (PSP, MSA, CBD, DLB), juvenile/young-onset PD, and advanced PD with motor fluctuations.
 
@@ -66,19 +66,19 @@ setting: "HOSP, OPD, ICU"
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC | - | ROUTINE | ROUTINE | - | General health, rule out anemia | Normal |
-| CMP | - | ROUTINE | ROUTINE | - | Hepatic/renal function for medication dosing | Normal |
-| TSH | - | ROUTINE | ROUTINE | - | Hypothyroidism can cause slowness/tremor | Normal |
-| Vitamin B12 | - | ROUTINE | ROUTINE | - | Deficiency can cause parkinsonism | >400 pg/mL |
-| RPR/VDRL | - | ROUTINE | ROUTINE | - | Neurosyphilis in differential | Negative |
+| CBC (CPT 85025) | - | ROUTINE | ROUTINE | - | General health, rule out anemia | Normal |
+| CMP (CPT 80053) | - | ROUTINE | ROUTINE | - | Hepatic/renal function for medication dosing | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Hypothyroidism can cause slowness/tremor | Normal |
+| Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | Deficiency can cause parkinsonism | >400 pg/mL |
+| RPR/VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis in differential | Negative |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Serum ceruloplasmin | - | ROUTINE | ROUTINE | - | Wilson disease if age <50 | 20-40 mg/dL |
+| Serum ceruloplasmin (CPT 82390) | - | ROUTINE | ROUTINE | - | Wilson disease if age <50 | 20-40 mg/dL |
 | 24-hour urine copper | - | EXT | EXT | - | Wilson disease if ceruloplasmin low/borderline | <100 mcg/24h |
-| HIV | - | ROUTINE | ROUTINE | - | HIV-associated parkinsonism | Negative |
+| HIV (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated parkinsonism | Negative |
 | Genetic testing (GBA, LRRK2, PRKN) | - | - | EXT | - | Young onset (<50), family history, Ashkenazi Jewish | Informational |
 | Alpha-synuclein seed amplification assay | - | - | EXT | - | Emerging biomarker for synucleinopathy | Pending validation |
 
@@ -98,18 +98,18 @@ setting: "HOSP, OPD, ICU"
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain without contrast | - | ROUTINE | ROUTINE | - | At diagnosis | Rule out structural cause, vascular parkinsonism | Pacemaker, metal |
-| MRI brain with contrast | - | ROUTINE | ROUTINE | - | If mass or infection suspected | Rule out structural lesion | Contrast allergy, renal disease |
+| MRI brain without contrast (CPT 70551) | - | ROUTINE | ROUTINE | - | At diagnosis | Rule out structural cause, vascular parkinsonism | Pacemaker, metal |
+| MRI brain with contrast (CPT 70552) | - | ROUTINE | ROUTINE | - | If mass or infection suspected | Rule out structural lesion | Contrast allergy, renal disease |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| DaTscan (I-123 ioflupane SPECT) | - | - | ROUTINE | - | Diagnostic uncertainty (ET vs PD, drug-induced) | Reduced striatal uptake in PD | Pregnancy, iodine allergy |
-| FDG-PET brain | - | - | EXT | - | Distinguish atypical parkinsonism | Hypometabolism pattern varies by diagnosis | Per PET |
+| DaTscan (CPT 78830) | - | - | ROUTINE | - | Diagnostic uncertainty (ET vs PD, drug-induced) | Reduced striatal uptake in PD | Pregnancy, iodine allergy |
+| FDG-PET brain (CPT 78608) | - | - | EXT | - | Distinguish atypical parkinsonism | Hypometabolism pattern varies by diagnosis | Per PET |
 | MRI susceptibility-weighted imaging | - | ROUTINE | ROUTINE | - | Wilson disease, iron deposition | Rule out basal ganglia abnormalities | Per MRI |
 | MIBG cardiac scintigraphy | - | - | EXT | - | Distinguish PD from MSA | Reduced uptake in PD | Drugs affecting uptake |
-| Polysomnography | - | - | ROUTINE | - | If REM sleep behavior disorder suspected | Confirm RBD | None |
+| Polysomnography (CPT 95810) | - | - | ROUTINE | - | If REM sleep behavior disorder suspected | Confirm RBD | None |
 | Olfactory testing (UPSIT) | - | - | ROUTINE | - | Supportive criterion; impaired in PD | Hyposmia | Nasal obstruction |
 
 ---

@@ -18,7 +18,7 @@ setting: "HOSP, OPD, ICU"
 
 **ICD-10:** R55 (Syncope and collapse), T67.1 (Heat syncope), G90.01 (Carotid sinus syncope), I95.1 (Orthostatic hypotension)
 
-**SYNONYMS:** Syncope, fainting, loss of consciousness, passing out, blackout, vasovagal syncope, neurocardiogenic syncope, reflex syncope, orthostatic syncope, cardiac syncope, convulsive syncope
+**SYNONYMS:** Syncope, fainting, loss of consciousness, LOC, passing out, blackout, vasovagal syncope, neurocardiogenic syncope, reflex syncope, orthostatic syncope, cardiac syncope, convulsive syncope, presyncope, near-syncope, near syncope, TLOC, transient loss of consciousness
 
 **SCOPE:** Evaluation and management of transient loss of consciousness (TLOC) due to syncope in adults. Includes risk stratification, etiologic workup, and treatment by type. Applies to ED, hospital, and outpatient settings. Excludes seizure, stroke, metabolic causes, and traumatic loss of consciousness.
 
@@ -44,22 +44,22 @@ setting: "HOSP, OPD, ICU"
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Fingerstick glucose | STAT | STAT | ROUTINE | STAT | Hypoglycemia as cause | 70-180 mg/dL |
-| CBC | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Anemia; hemorrhage | Normal |
-| BMP (electrolytes, creatinine) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Electrolyte abnormalities | Normal |
-| Troponin | STAT | STAT | - | STAT | Cardiac ischemia as trigger | Negative |
-| BNP or NT-proBNP | ROUTINE | ROUTINE | - | ROUTINE | Heart failure; risk stratification | Normal |
+| Fingerstick glucose (CPT 82962) | STAT | STAT | ROUTINE | STAT | Hypoglycemia as cause | 70-180 mg/dL |
+| CBC (CPT 85025) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Anemia; hemorrhage | Normal |
+| BMP (CPT 80048) (electrolytes, creatinine) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Electrolyte abnormalities | Normal |
+| Troponin (CPT 84484) | STAT | STAT | - | STAT | Cardiac ischemia as trigger | Negative |
+| BNP or NT-proBNP (CPT 83880) | ROUTINE | ROUTINE | - | ROUTINE | Heart failure; risk stratification | Normal |
 | Pregnancy test (if applicable) | STAT | STAT | ROUTINE | - | Ectopic pregnancy; influences workup | Document |
 
 ### 1B. Extended Labs (Based on Clinical Suspicion)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| TSH | - | ROUTINE | ROUTINE | - | Thyroid dysfunction | Normal |
-| Cortisol (AM) | - | EXT | EXT | - | Adrenal insufficiency if orthostatic | Normal |
-| D-dimer | URGENT | URGENT | - | URGENT | If PE suspected | Negative |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction | Normal |
+| Cortisol (CPT 82533) (AM) | - | EXT | EXT | - | Adrenal insufficiency if orthostatic | Normal |
+| D-dimer (CPT 85379) | URGENT | URGENT | - | URGENT | If PE suspected | Negative |
 | Toxicology screen | ROUTINE | ROUTINE | - | - | Drug/alcohol-induced | Negative |
-| Blood cultures | - | ROUTINE | - | ROUTINE | If infection suspected | Negative |
+| Blood cultures (CPT 87040) | - | ROUTINE | - | ROUTINE | If infection suspected | Negative |
 
 ---
 
@@ -69,9 +69,9 @@ setting: "HOSP, OPD, ICU"
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| 12-lead ECG | STAT | STAT | ROUTINE | STAT | Immediate; ALL patients | No arrhythmia, normal intervals | None |
+| 12-lead ECG (CPT 93000) | STAT | STAT | ROUTINE | STAT | Immediate; ALL patients | No arrhythmia, normal intervals | None |
 | Continuous telemetry | - | ROUTINE | - | ROUTINE | If admitted | No arrhythmia | None |
-| Transthoracic echocardiogram | URGENT | ROUTINE | ROUTINE | URGENT | If cardiac cause suspected | Normal structure/function | None |
+| Transthoracic echocardiogram (CPT 93306) | URGENT | ROUTINE | ROUTINE | URGENT | If cardiac cause suspected | Normal structure/function | None |
 | Exercise stress test | - | ROUTINE | ROUTINE | - | If exertional syncope | No ischemia, no arrhythmia | Acute MI, unstable angina |
 | Cardiac MRI | - | EXT | EXT | - | Suspected cardiomyopathy, ARVC | Normal or define pathology | Pacemaker, metal |
 
@@ -79,8 +79,8 @@ setting: "HOSP, OPD, ICU"
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Holter monitor (24-48 hour) | - | - | ROUTINE | - | Frequent symptoms | Correlate symptoms with rhythm | None |
-| Event recorder (2-4 weeks) | - | - | ROUTINE | - | Intermittent symptoms | Symptom-rhythm correlation | None |
+| Holter monitor (CPT 93224) (24-48 hour) | - | - | ROUTINE | - | Frequent symptoms | Correlate symptoms with rhythm | None |
+| Event recorder (CPT 93268) (2-4 weeks) | - | - | ROUTINE | - | Intermittent symptoms | Symptom-rhythm correlation | None |
 | Insertable loop recorder (ILR) | - | - | ROUTINE | - | Infrequent, unexplained recurrent syncope | Identify arrhythmia | None |
 | Electrophysiology study (EPS) | - | ROUTINE | EXT | - | Suspected arrhythmic cause; structural heart disease | Identify inducible arrhythmia | Active infection |
 
@@ -89,17 +89,17 @@ setting: "HOSP, OPD, ICU"
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | Orthostatic vital signs | STAT | STAT | ROUTINE | STAT | Immediate; ALL patients | No orthostatic hypotension | None |
-| Tilt table test | - | - | ROUTINE | - | Suspected vasovagal if recurrent; dx uncertain | Positive = cardioinhibitory or vasodepressor | Severe CAD, critical AS |
+| Tilt table test (CPT 95924) | - | - | ROUTINE | - | Suspected vasovagal if recurrent; dx uncertain | Positive = cardioinhibitory or vasodepressor | Severe CAD, critical AS |
 | Carotid sinus massage | - | ROUTINE | ROUTINE | - | Age >40 with unexplained syncope (not if carotid bruit) | Negative (<3 sec pause, <50 mmHg drop) | Carotid bruit, recent stroke/TIA |
-| Autonomic function tests | - | - | ROUTINE | - | Suspected autonomic failure | Characterize dysautonomia | Per test |
+| Autonomic function tests (CPT 95924) | - | - | ROUTINE | - | Suspected autonomic failure | Characterize dysautonomia | Per test |
 
 ### 2D. Neuroimaging (Select Cases Only)
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head | URGENT | ROUTINE | - | URGENT | Head trauma; focal neuro signs; NOT routine for syncope | No acute pathology | None (contrast: renal disease) |
-| MRI brain | - | EXT | EXT | - | Atypical features suggesting CNS cause | Normal | Pacemaker, metal |
-| EEG | - | EXT | EXT | - | If seizure suspected (prolonged LOC, postictal state, witnessed tonic-clonic) | No epileptiform activity | None |
+| CT head (CPT 70450) | URGENT | ROUTINE | - | URGENT | Head trauma; focal neuro signs; NOT routine for syncope | No acute pathology | None (contrast: renal disease) |
+| MRI brain (CPT 70551) | - | EXT | EXT | - | Atypical features suggesting CNS cause | Normal | Pacemaker, metal |
+| EEG (CPT 95816) | - | EXT | EXT | - | If seizure suspected (prolonged LOC, postictal state, witnessed tonic-clonic) | No epileptiform activity | None |
 | Carotid ultrasound | - | - | EXT | - | NOT indicated for typical syncope | N/A | None |
 
 ---

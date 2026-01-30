@@ -15,7 +15,7 @@ setting: "ED, HOSP, OPD, ICU"
 
 **DIAGNOSIS:** Bacterial Meningitis
 
-**ICD-10:** G00.9 (Bacterial meningitis, unspecified), G00.1 (Pneumococcal meningitis), G00.0 (Hemophilus meningitis), A39.0 (Meningococcal meningitis), G00.3 (Staphylococcal meningitis)
+**ICD-10:** G00.9 (Bacterial meningitis, unspecified), G00.0 (Hemophilus meningitis), G00.1 (Pneumococcal meningitis), G00.2 (Streptococcal meningitis), G00.3 (Staphylococcal meningitis), G00.8 (Other bacterial meningitis), G01 (Meningitis in bacterial diseases classified elsewhere), A39.0 (Meningococcal meningitis)
 
 **SYNONYMS:** Bacterial meningitis, meningitis, acute meningitis, purulent meningitis, pyogenic meningitis, meningococcal meningitis, pneumococcal meningitis, CNS infection, brain infection, spinal meningitis
 
@@ -35,30 +35,30 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Blood cultures x2 (different sites) | STAT | STAT | - | STAT | MUST be drawn BEFORE antibiotics but do NOT delay antibiotics to obtain; positive in 50-70% of bacterial meningitis | Organism identification and sensitivities |
-| CBC with differential | STAT | STAT | - | STAT | Leukocytosis with left shift; baseline; thrombocytopenia (DIC risk) | WBC elevated; neutrophilia |
-| CMP (BMP + LFTs) | STAT | STAT | - | STAT | Electrolytes (SIADH: hyponatremia), renal/hepatic function for antibiotic dosing | Normal; watch Na |
-| Procalcitonin | STAT | STAT | - | STAT | Highly sensitive for bacterial infection; helps distinguish bacterial from viral meningitis (>0.5 strongly suggests bacterial) | Elevated (>0.5 ng/mL bacterial; typically >2.0) |
-| CRP | STAT | STAT | - | STAT | Inflammatory marker; helps monitor treatment response | Elevated |
-| Lactate | STAT | STAT | - | STAT | Sepsis assessment; elevated in bacterial meningitis | <2 mmol/L (elevated suggests sepsis) |
-| Coagulation panel (PT/INR, aPTT, fibrinogen) | STAT | STAT | - | STAT | DIC screening (meningococcemia); coagulopathy before LP | Normal; DIC: elevated PT/aPTT, low fibrinogen, elevated D-dimer |
-| D-dimer | STAT | STAT | - | STAT | DIC assessment (especially meningococcemia) | Normal |
-| Blood glucose (concurrent with LP) | STAT | STAT | - | STAT | Calculate CSF:serum glucose ratio | Paired with CSF glucose |
-| Type and screen | STAT | ROUTINE | - | STAT | Potential need for blood products (DIC, sepsis) | On file |
-| Point-of-care glucose | STAT | STAT | - | STAT | Hypoglycemia assessment; sepsis | >60 mg/dL |
+| Blood cultures x2 (different sites) (CPT 87040) | STAT | STAT | - | STAT | MUST be drawn BEFORE antibiotics but do NOT delay antibiotics to obtain; positive in 50-70% of bacterial meningitis | Organism identification and sensitivities |
+| CBC with differential (CPT 85025) | STAT | STAT | - | STAT | Leukocytosis with left shift; baseline; thrombocytopenia (DIC risk) | WBC elevated; neutrophilia |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | - | STAT | Electrolytes (SIADH: hyponatremia), renal/hepatic function for antibiotic dosing | Normal; watch Na |
+| Procalcitonin (CPT 84145) | STAT | STAT | - | STAT | Highly sensitive for bacterial infection; helps distinguish bacterial from viral meningitis (>0.5 strongly suggests bacterial) | Elevated (>0.5 ng/mL bacterial; typically >2.0) |
+| CRP (CPT 86140) | STAT | STAT | - | STAT | Inflammatory marker; helps monitor treatment response | Elevated |
+| Lactate (CPT 83605) | STAT | STAT | - | STAT | Sepsis assessment; elevated in bacterial meningitis | <2 mmol/L (elevated suggests sepsis) |
+| Coagulation panel (PT/INR, aPTT, fibrinogen) (CPT 85610+85730+85384) | STAT | STAT | - | STAT | DIC screening (meningococcemia); coagulopathy before LP | Normal; DIC: elevated PT/aPTT, low fibrinogen, elevated D-dimer |
+| D-dimer (CPT 85379) | STAT | STAT | - | STAT | DIC assessment (especially meningococcemia) | Normal |
+| Blood glucose (concurrent with LP) (CPT 82947) | STAT | STAT | - | STAT | Calculate CSF:serum glucose ratio | Paired with CSF glucose |
+| Type and screen (CPT 86900) | STAT | ROUTINE | - | STAT | Potential need for blood products (DIC, sepsis) | On file |
+| Point-of-care glucose (CPT 82962) | STAT | STAT | - | STAT | Hypoglycemia assessment; sepsis | >60 mg/dL |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Serum osmolality | URGENT | ROUTINE | - | URGENT | SIADH assessment (common complication) | 280-295 mOsm/kg |
+| Serum osmolality (CPT 83930) | URGENT | ROUTINE | - | URGENT | SIADH assessment (common complication) | 280-295 mOsm/kg |
 | Urine osmolality and sodium | - | ROUTINE | - | ROUTINE | Confirm SIADH if hyponatremia | Urine osm >100, urine Na >40 in SIADH |
-| Serum cortisol (random or AM) | URGENT | ROUTINE | - | URGENT | Adrenal insufficiency (Waterhouse-Friderichsen in meningococcemia) | >18 µg/dL (random stress level) |
-| HIV 1/2 antigen/antibody | - | ROUTINE | - | - | Immunocompromise affects empiric coverage and differential | Negative |
+| Serum cortisol (random or AM) (CPT 82533) | URGENT | ROUTINE | - | URGENT | Adrenal insufficiency (Waterhouse-Friderichsen in meningococcemia) | >18 µg/dL (random stress level) |
+| HIV 1/2 antigen/antibody (CPT 87389) | - | ROUTINE | - | - | Immunocompromise affects empiric coverage and differential | Negative |
 | Complement levels (C5-C9, CH50, AH50) | - | ROUTINE | ROUTINE | - | Terminal complement deficiency predisposes to recurrent Neisseria meningitidis | Normal |
 | Immunoglobulin levels (IgG, IgA, IgM) | - | ROUTINE | ROUTINE | - | Hypogammaglobulinemia predisposes to encapsulated organisms | Normal |
-| TSH | - | ROUTINE | - | - | Thyroid dysfunction screen (critical illness) | Normal |
-| Troponin | URGENT | ROUTINE | - | URGENT | Sepsis-associated myocardial injury | Normal |
+| TSH (CPT 84443) | - | ROUTINE | - | - | Thyroid dysfunction screen (critical illness) | Normal |
+| Troponin (CPT 84484) | URGENT | ROUTINE | - | URGENT | Sepsis-associated myocardial injury | Normal |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
@@ -67,8 +67,8 @@ SECTION A: ACTION ITEMS
 | Metagenomic next-generation sequencing (mNGS) of CSF | - | EXT | - | EXT | Culture-negative meningitis; prior antibiotic exposure; atypical organisms | Pathogen identification |
 | Beta-D-glucan (serum) | - | EXT | - | EXT | If fungal meningitis suspected (immunocompromised) | Negative (<60 pg/mL) |
 | Galactomannan (serum) | - | EXT | - | EXT | Aspergillus (immunocompromised) | Negative |
-| Cryptococcal antigen (serum) | - | ROUTINE | - | ROUTINE | HIV/immunocompromised; chronic meningitis | Negative |
-| RPR/VDRL (serum) | - | ROUTINE | ROUTINE | - | Neurosyphilis in differential | Negative |
+| Cryptococcal antigen (serum) (CPT 87327) | - | ROUTINE | - | ROUTINE | HIV/immunocompromised; chronic meningitis | Negative |
+| RPR/VDRL (serum) (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis in differential | Negative |
 | QuantiFERON-TB Gold | - | ROUTINE | - | ROUTINE | TB meningitis in high-risk patients | Negative |
 | Skull base/sinus CT | - | ROUTINE | - | - | Recurrent meningitis: skull base fracture, CSF leak, sinusitis | No fracture or defect |
 
@@ -80,8 +80,8 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head without contrast | STAT | STAT | - | STAT | ONLY if LP delay indications present (see below). Do NOT delay antibiotics for CT. CT BEFORE LP only if: immunocompromised, history of CNS disease, new seizure, papilledema, altered consciousness (GCS <10), focal neurologic deficit | Mass effect, hydrocephalus, abscess, herniation risk | Pregnancy (relative) |
-| Chest X-ray | URGENT | ROUTINE | - | URGENT | Within first hours | Pneumonia (S. pneumoniae source), ARDS | None significant |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | ONLY if LP delay indications present (see below). Do NOT delay antibiotics for CT. CT BEFORE LP only if: immunocompromised, history of CNS disease, new seizure, papilledema, altered consciousness (GCS <10), focal neurologic deficit | Mass effect, hydrocephalus, abscess, herniation risk | Pregnancy (relative) |
+| Chest X-ray (CPT 71046) | URGENT | ROUTINE | - | URGENT | Within first hours | Pneumonia (S. pneumoniae source), ARDS | None significant |
 
 **CRITICAL: DO NOT DELAY ANTIBIOTICS FOR IMAGING.** If CT is needed before LP, give empiric antibiotics + dexamethasone FIRST, then CT, then LP. Blood cultures before antibiotics if possible, but NEVER delay antibiotics >30 minutes from presentation.
 
@@ -89,12 +89,12 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with and without contrast | - | URGENT | - | URGENT | Within 24-48h or sooner if complications suspected | Meningeal enhancement, abscess, empyema, cerebritis, venous sinus thrombosis, hydrocephalus | Pacemaker, metallic implants |
-| CT head with contrast | - | URGENT | - | URGENT | If MRI not available | Same as MRI (lower sensitivity) | Contrast allergy, renal impairment |
+| MRI brain with and without contrast (CPT 70553) | - | URGENT | - | URGENT | Within 24-48h or sooner if complications suspected | Meningeal enhancement, abscess, empyema, cerebritis, venous sinus thrombosis, hydrocephalus | Pacemaker, metallic implants |
+| CT head with contrast (CPT 70460) | - | URGENT | - | URGENT | If MRI not available | Same as MRI (lower sensitivity) | Contrast allergy, renal impairment |
 | MRV (MR venography) | - | ROUTINE | - | ROUTINE | If cerebral venous thrombosis suspected (persistent headache, focal signs, seizures) | Venous sinus thrombosis | Same as MRI |
 | CT temporal bones / skull base | - | ROUTINE | ROUTINE | - | Recurrent meningitis; suspected CSF leak | Fracture, tegmen dehiscence, cholesteatoma | None significant |
-| Echocardiogram | - | ROUTINE | - | - | If S. aureus or endocarditis suspected | Vegetations, embolic risk | None significant |
-| Continuous EEG | - | URGENT | - | URGENT | If altered mental status persists despite treatment; suspected non-convulsive seizures | Seizure activity, status epilepticus | None significant |
+| Echocardiogram (CPT 93306) | - | ROUTINE | - | - | If S. aureus or endocarditis suspected | Vegetations, embolic risk | None significant |
+| Continuous EEG (CPT 95700) | - | URGENT | - | URGENT | If altered mental status persists despite treatment; suspected non-convulsive seizures | Seizure activity, status epilepticus | None significant |
 
 ### 2C. Rare/Specialized
 
@@ -118,18 +118,18 @@ SECTION A: ACTION ITEMS
 | Study | ED | HOSP | OPD | Rationale | Target Finding |
 |-------|:--:|:----:|:---:|-----------|----------------|
 | Opening pressure | STAT | ROUTINE | - | Elevated in bacterial meningitis; monitor for elevated ICP | Typically 200-500 mm H2O (normal <200); markedly elevated suggests edema/hydrocephalus |
-| Cell count with differential (tubes 1 AND 4) | STAT | ROUTINE | - | Bacterial: neutrophilic pleocytosis; tube 1 vs 4 differentiates traumatic tap | WBC >1000 cells/µL with >80% neutrophils (bacterial); WBC 100-10,000 typical |
-| Protein | STAT | ROUTINE | - | Elevated in bacterial meningitis | Elevated (>100 mg/dL typical; often 100-500) |
-| Glucose with paired serum glucose | STAT | ROUTINE | - | CSF:serum ratio <0.4 strongly suggests bacterial meningitis | Low (<40 mg/dL; CSF:serum ratio <0.4) |
-| Gram stain | STAT | ROUTINE | - | Rapid identification; positive in 60-90% of untreated bacterial meningitis | Organisms identified (gram-positive diplococci = pneumococcus; gram-negative diplococci = meningococcus; gram-positive rods = Listeria; gram-negative rods = E. coli/Haemophilus) |
-| Bacterial culture and sensitivity | STAT | ROUTINE | - | Gold standard for organism identification and antibiotic sensitivities; may be negative after antibiotics | Organism identified with sensitivities |
-| BioFire FilmArray Meningitis/Encephalitis Panel | STAT | ROUTINE | - | Rapid multiplex PCR (14 pathogens in ~1 hour); especially valuable if prior antibiotics given | Identifies E. coli K1, H. influenzae, L. monocytogenes, N. meningitidis, S. agalactiae, S. pneumoniae, plus viruses (HSV, enterovirus, VZV, etc.) and Cryptococcus |
+| Cell count with differential (tubes 1 AND 4) (CPT 89051) | STAT | ROUTINE | - | Bacterial: neutrophilic pleocytosis; tube 1 vs 4 differentiates traumatic tap | WBC >1000 cells/µL with >80% neutrophils (bacterial); WBC 100-10,000 typical |
+| Protein (CPT 84157) | STAT | ROUTINE | - | Elevated in bacterial meningitis | Elevated (>100 mg/dL typical; often 100-500) |
+| Glucose with paired serum glucose (CPT 82945) | STAT | ROUTINE | - | CSF:serum ratio <0.4 strongly suggests bacterial meningitis | Low (<40 mg/dL; CSF:serum ratio <0.4) |
+| Gram stain (CPT 87205) | STAT | ROUTINE | - | Rapid identification; positive in 60-90% of untreated bacterial meningitis | Organisms identified (gram-positive diplococci = pneumococcus; gram-negative diplococci = meningococcus; gram-positive rods = Listeria; gram-negative rods = E. coli/Haemophilus) |
+| Bacterial culture and sensitivity (CPT 87070) | STAT | ROUTINE | - | Gold standard for organism identification and antibiotic sensitivities; may be negative after antibiotics | Organism identified with sensitivities |
+| BioFire FilmArray Meningitis/Encephalitis Panel (CPT 87483) | STAT | ROUTINE | - | Rapid multiplex PCR (14 pathogens in ~1 hour); especially valuable if prior antibiotics given | Identifies E. coli K1, H. influenzae, L. monocytogenes, N. meningitidis, S. agalactiae, S. pneumoniae, plus viruses (HSV, enterovirus, VZV, etc.) and Cryptococcus |
 | Lactate (CSF) | STAT | ROUTINE | - | CSF lactate >3.5 mmol/L highly suggestive of bacterial (sensitivity ~93%, specificity ~96%); useful post-antibiotics when cultures may be negative | <3.5 mmol/L (bacterial typically >4.0) |
-| HSV 1/2 PCR | STAT | ROUTINE | - | Exclude concurrent HSV encephalitis; do not miss treatable cause | Negative |
-| Cryptococcal antigen (CSF) | - | ROUTINE | - | If immunocompromised or subacute presentation | Negative |
-| AFB smear and culture | - | ROUTINE | - | If TB meningitis suspected (subacute, basilar enhancement, HIV) | Negative |
-| VDRL (CSF) | - | ROUTINE | - | Neurosyphilis screen | Negative |
-| Cytology | - | ROUTINE | - | If malignancy in differential | Negative |
+| HSV 1/2 PCR (CPT 87529) | STAT | ROUTINE | - | Exclude concurrent HSV encephalitis; do not miss treatable cause | Negative |
+| Cryptococcal antigen (CSF) (CPT 87327) | - | ROUTINE | - | If immunocompromised or subacute presentation | Negative |
+| AFB smear and culture (CPT 87116) | - | ROUTINE | - | If TB meningitis suspected (subacute, basilar enhancement, HIV) | Negative |
+| VDRL (CSF) (CPT 86592) | - | ROUTINE | - | Neurosyphilis screen | Negative |
+| Cytology (CPT 88104) | - | ROUTINE | - | If malignancy in differential | Negative |
 
 **Special Handling:** Culture and Gram stain must be processed IMMEDIATELY. BioFire ME Panel provides results in ~1 hour. CSF lactate must be processed promptly (do not let sample sit).
 
@@ -153,11 +153,11 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) | IV | - | 0.15 mg/kg :: IV :: q6h :: 0.15 mg/kg IV q6h x 4 days (typically 10 mg IV q6h). MUST be given BEFORE or simultaneously with first antibiotic dose. Greatest benefit for S. pneumoniae (reduces mortality and hearing loss). Discontinue if organism is NOT S. pneumoniae (some centers continue regardless) | Not proven beneficial if antibiotics already started >1h prior | Glucose q6h; GI prophylaxis; BP | STAT | STAT | - | STAT |
-| Vancomycin IV | IV | - | 15-20 mg/kg :: IV :: load :: 15-20 mg/kg IV q8-12h (target trough 15-20 µg/mL or AUC/MIC 400-600); loading dose 25-30 mg/kg if severe. Covers penicillin-resistant S. pneumoniae, MRSA | Red man syndrome (infuse over ≥1h); renal impairment (dose adjust) | Trough levels before 4th dose; renal function daily; watch for nephrotoxicity and ototoxicity | STAT | STAT | - | STAT |
-| Ceftriaxone IV | IV | - | 2 g :: IV :: q12h :: 2 g IV q12h. Covers S. pneumoniae (penicillin-sensitive), N. meningitidis, H. influenzae, gram-negative organisms | Cephalosporin allergy (cross-reactivity low with penicillin allergy); neonatal hyperbilirubinemia | CBC; LFTs; biliary sludge with prolonged use | STAT | STAT | - | STAT |
-| Ampicillin IV (add if Listeria risk) | IV | - | 2 g :: IV :: q4h :: 2 g IV q4h. ADD to vancomycin + ceftriaxone if: age >50, immunocompromised, alcoholism, pregnancy. Covers Listeria monocytogenes (resistant to cephalosporins) | Penicillin anaphylaxis (use TMP-SMX as alternative for Listeria) | Rash; renal function | STAT | STAT | - | STAT |
-| Acyclovir IV (empiric — until HSV excluded) | IV | - | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h. Add empirically if ANY suspicion of encephalitis (confusion, focal signs, seizures, temporal lobe changes). Discontinue when HSV PCR negative | Renal impairment (dose adjust); ensure adequate hydration | Renal function daily; adequate IV hydration (1 mL/kg/h); crystal nephropathy prevention | STAT | STAT | - | STAT |
+| Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) (CPT 96374) | IV | - | 0.15 mg/kg :: IV :: q6h :: 0.15 mg/kg IV q6h x 4 days (typically 10 mg IV q6h). MUST be given BEFORE or simultaneously with first antibiotic dose. Greatest benefit for S. pneumoniae (reduces mortality and hearing loss). Discontinue if organism is NOT S. pneumoniae (some centers continue regardless) | Not proven beneficial if antibiotics already started >1h prior | Glucose q6h; GI prophylaxis; BP | STAT | STAT | - | STAT |
+| Vancomycin IV (CPT 96365) | IV | - | 15-20 mg/kg :: IV :: load :: 15-20 mg/kg IV q8-12h (target trough 15-20 µg/mL or AUC/MIC 400-600); loading dose 25-30 mg/kg if severe. Covers penicillin-resistant S. pneumoniae, MRSA | Red man syndrome (infuse over ≥1h); renal impairment (dose adjust) | Trough levels before 4th dose; renal function daily; watch for nephrotoxicity and ototoxicity | STAT | STAT | - | STAT |
+| Ceftriaxone IV (CPT 96374) | IV | - | 2 g :: IV :: q12h :: 2 g IV q12h. Covers S. pneumoniae (penicillin-sensitive), N. meningitidis, H. influenzae, gram-negative organisms | Cephalosporin allergy (cross-reactivity low with penicillin allergy); neonatal hyperbilirubinemia | CBC; LFTs; biliary sludge with prolonged use | STAT | STAT | - | STAT |
+| Ampicillin IV (add if Listeria risk) (CPT 96374) | IV | - | 2 g :: IV :: q4h :: 2 g IV q4h. ADD to vancomycin + ceftriaxone if: age >50, immunocompromised, alcoholism, pregnancy. Covers Listeria monocytogenes (resistant to cephalosporins) | Penicillin anaphylaxis (use TMP-SMX as alternative for Listeria) | Rash; renal function | STAT | STAT | - | STAT |
+| Acyclovir IV (empiric — until HSV excluded) (CPT 96365) | IV | - | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h. Add empirically if ANY suspicion of encephalitis (confusion, focal signs, seizures, temporal lobe changes). Discontinue when HSV PCR negative | Renal impairment (dose adjust); ensure adequate hydration | Renal function daily; adequate IV hydration (1 mL/kg/h); crystal nephropathy prevention | STAT | STAT | - | STAT |
 | IV normal saline | IV | - | Isotonic fluid resuscitation for sepsis; maintenance fluids. Avoid hypo/hypernatremia | Volume overload | I/O; electrolytes q6-12h; watch for SIADH | STAT | STAT | - | STAT |
 | Vasopressors: Norepinephrine | IV | - | 0.1-0.5 µg/kg/min IV; first-line for septic shock after fluid resuscitation | Only via central line | MAP target ≥65 mmHg; continuous arterial monitoring | - | - | - | STAT |
 

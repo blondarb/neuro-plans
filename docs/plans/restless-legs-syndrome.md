@@ -16,9 +16,9 @@ setting: "HOSP, OPD, ICU"
 
 **DIAGNOSIS:** Restless Legs Syndrome (RLS) / Willis-Ekbom Disease
 
-**ICD-10:** G25.81 (Restless legs syndrome), G25.89 (Other specified extrapyramidal and movement disorders)
+**ICD-10:** G25.81 (Restless legs syndrome), G25.89 (Other specified extrapyramidal and movement disorders), G47.61 (Periodic limb movement disorder)
 
-**SYNONYMS:** Restless legs syndrome, RLS, Willis-Ekbom disease, WED, restless leg syndrome, Ekbom syndrome, anxietas tibiarum, leg jitters, nocturnal leg cramps (often confused with)
+**SYNONYMS:** Restless legs syndrome, RLS, Willis-Ekbom disease, WED, restless leg syndrome, Ekbom syndrome, anxietas tibiarum, leg jitters, nocturnal leg cramps (often confused with), periodic limb movement disorder, PLMD, akathisia (related)
 
 **SCOPE:** Diagnosis and management of restless legs syndrome in adults. Covers diagnostic criteria, workup for secondary causes, pharmacologic and non-pharmacologic treatment, and prevention of augmentation. Excludes periodic limb movement disorder as separate entity, akathisia, and leg cramps.
 
@@ -65,22 +65,22 @@ setting: "HOSP, OPD, ICU"
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Serum ferritin | - | ROUTINE | ROUTINE | - | Iron deficiency is treatable cause; target >75 ng/mL | >75 ng/mL (>100 preferred) |
-| Serum iron | - | ROUTINE | ROUTINE | - | Iron deficiency assessment | Normal |
-| TIBC | - | ROUTINE | ROUTINE | - | Iron deficiency assessment | Normal |
-| Transferrin saturation | - | ROUTINE | ROUTINE | - | Target >20% | >20% |
-| CBC | - | ROUTINE | ROUTINE | - | Anemia workup | Normal |
-| CMP | - | ROUTINE | ROUTINE | - | Renal function (uremia can cause RLS), electrolytes | Normal |
-| TSH | - | ROUTINE | ROUTINE | - | Thyroid dysfunction | Normal |
-| Glucose/HbA1c | - | ROUTINE | ROUTINE | - | Diabetes can cause neuropathy mimicking RLS | Normal |
+| Serum ferritin (CPT 82728) | - | ROUTINE | ROUTINE | - | Iron deficiency is treatable cause; target >75 ng/mL | >75 ng/mL (>100 preferred) |
+| Serum iron (CPT 83540) | - | ROUTINE | ROUTINE | - | Iron deficiency assessment | Normal |
+| TIBC (CPT 83550) | - | ROUTINE | ROUTINE | - | Iron deficiency assessment | Normal |
+| Transferrin saturation (CPT 84466) | - | ROUTINE | ROUTINE | - | Target >20% | >20% |
+| CBC (CPT 85025) | - | ROUTINE | ROUTINE | - | Anemia workup | Normal |
+| CMP (CPT 80053) | - | ROUTINE | ROUTINE | - | Renal function (uremia can cause RLS), electrolytes | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction | Normal |
+| Glucose (CPT 82947) / HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Diabetes can cause neuropathy mimicking RLS | Normal |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Vitamin B12 | - | ROUTINE | ROUTINE | - | Deficiency can cause neuropathy | >400 pg/mL |
-| Folate | - | ROUTINE | ROUTINE | - | Deficiency | Normal |
-| Magnesium | - | ROUTINE | ROUTINE | - | Deficiency can contribute | Normal |
+| Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | Deficiency can cause neuropathy | >400 pg/mL |
+| Folate (CPT 82746) | - | ROUTINE | ROUTINE | - | Deficiency | Normal |
+| Magnesium (CPT 83735) | - | ROUTINE | ROUTINE | - | Deficiency can contribute | Normal |
 | BUN/Creatinine | - | ROUTINE | ROUTINE | - | Uremic RLS | Normal |
 | Pregnancy test | - | ROUTINE | ROUTINE | - | RLS common in pregnancy; affects treatment | Document |
 
@@ -88,8 +88,8 @@ setting: "HOSP, OPD, ICU"
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Nerve conduction studies/EMG | - | - | EXT | - | If neuropathy suspected | Rule out neuropathy mimics |
-| ANA, anti-SSA/SSB | - | - | EXT | - | If autoimmune neuropathy suspected | Negative |
+| Nerve conduction studies (CPT 95907-95913) / EMG (CPT 95885) | - | - | EXT | - | If neuropathy suspected | Rule out neuropathy mimics |
+| ANA (CPT 86235), anti-SSA/SSB | - | - | EXT | - | If autoimmune neuropathy suspected | Negative |
 
 ---
 
@@ -105,9 +105,9 @@ setting: "HOSP, OPD, ICU"
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Polysomnography (PSG) | - | - | EXT | - | If PLMD suspected or other sleep disorder | PLMS >15/hour supports diagnosis | Not required for diagnosis |
+| Polysomnography (PSG) (CPT 95810) | - | - | EXT | - | If PLMD suspected or other sleep disorder | PLMS >15/hour supports diagnosis | Not required for diagnosis |
 | Actigraphy | - | - | EXT | - | Objective movement assessment | Document periodic movements | None |
-| MRI spine | - | - | EXT | - | If radiculopathy suspected | Rule out structural cause | Per MRI |
+| MRI spine (CPT 72141) | - | - | EXT | - | If radiculopathy suspected | Rule out structural cause | Per MRI |
 | Doppler ultrasound (legs) | - | - | EXT | - | If venous insufficiency suspected | Rule out venous disease | None |
 
 ---
@@ -132,8 +132,8 @@ setting: "HOSP, OPD, ICU"
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Ferrous sulfate | - | - | 325 mg :: - :: daily :: 325 mg (65 mg elemental iron) with vitamin C 100 mg, on empty stomach, daily or every other day | Iron overload, hemochromatosis | Ferritin q3 months; GI side effects | - | ROUTINE | ROUTINE | - |
 | Ferrous gluconate | PO | - | 324 mg :: PO :: daily :: 324 mg (36 mg elemental iron) daily; better tolerated | Same | Same | - | ROUTINE | ROUTINE | - |
-| IV iron (ferric carboxymaltose) | IV | - | 1000 mg :: IV :: once :: 1000 mg IV once (if oral intolerant or severe deficiency); may repeat | Iron overload, infection | Ferritin in 8 weeks; faster response | - | ROUTINE | ROUTINE | - |
-| IV iron sucrose | IV | - | 200 mg :: IV :: - :: 200 mg IV × 5 doses over 2 weeks | Same | Same | - | ROUTINE | ROUTINE | - |
+| IV iron (ferric carboxymaltose) (CPT 96365) | IV | - | 1000 mg :: IV :: once :: 1000 mg IV once (if oral intolerant or severe deficiency); may repeat | Iron overload, infection | Ferritin in 8 weeks; faster response | - | ROUTINE | ROUTINE | - |
+| IV iron sucrose (CPT 96365) | IV | - | 200 mg :: IV :: - :: 200 mg IV × 5 doses over 2 weeks | Same | Same | - | ROUTINE | ROUTINE | - |
 
 ### 3C. First-Line Pharmacologic Treatment - Alpha-2-Delta Ligands (PREFERRED)
 

@@ -16,9 +16,9 @@ setting: "HOSP, OPD, ICU"
 
 **DIAGNOSIS:** Trigeminal Neuralgia
 
-**ICD-10:** G50.0 (Trigeminal neuralgia), G50.1 (Atypical facial pain), G44.847 (Trigeminal autonomic cephalalgia)
+**ICD-10:** G50.0 (Trigeminal neuralgia), G50.1 (Atypical facial pain), G50.8 (Other disorders of trigeminal nerve), G44.847 (Trigeminal autonomic cephalalgia)
 
-**SYNONYMS:** Trigeminal neuralgia, TN, tic douloureux, facial neuralgia, classical trigeminal neuralgia, idiopathic trigeminal neuralgia, secondary trigeminal neuralgia, painful trigeminal neuropathy
+**SYNONYMS:** Trigeminal neuralgia, TN, tic douloureux, facial neuralgia, facial pain, CN V neuralgia, trigeminal neuropathy, classical trigeminal neuralgia, idiopathic trigeminal neuralgia, secondary trigeminal neuralgia, painful trigeminal neuropathy
 
 **SCOPE:** Evaluation and management of trigeminal neuralgia in adults including classical TN (with or without neurovascular compression), secondary TN, and painful trigeminal neuropathy. Covers medical management, procedural interventions, and surgical options. Applies to ED, hospital, and outpatient settings.
 
@@ -45,18 +45,18 @@ setting: "HOSP, OPD, ICU"
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC | - | ROUTINE | ROUTINE | - | Baseline for carbamazepine (bone marrow suppression) | Normal |
-| CMP (sodium, LFTs) | - | ROUTINE | ROUTINE | - | Carbamazepine: hyponatremia, hepatotoxicity | Normal |
+| CBC (CPT 85025) | - | ROUTINE | ROUTINE | - | Baseline for carbamazepine (bone marrow suppression) | Normal |
+| CMP (CPT 80053) (sodium, LFTs) | - | ROUTINE | ROUTINE | - | Carbamazepine: hyponatremia, hepatotoxicity | Normal |
 | HLA-B*1502 (Asian ancestry) | - | ROUTINE | ROUTINE | - | SJS/TEN risk with carbamazepine in Asian populations | Negative |
 
 ### 1B. Extended Labs (Atypical Presentations)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| ESR, CRP | - | ROUTINE | EXT | - | If vasculitis or GCA suspected (elderly, V1) | Normal |
-| ANA, SSA/SSB | - | - | EXT | - | Sjögren syndrome can cause trigeminal neuropathy | Negative |
-| CSF analysis | - | EXT | EXT | - | If MS or CNS infection suspected | Normal; or MS-consistent findings |
-| ACE level | - | - | EXT | - | Neurosarcoidosis | Normal |
+| ESR (CPT 85652), CRP (CPT 86140) | - | ROUTINE | EXT | - | If vasculitis or GCA suspected (elderly, V1) | Normal |
+| ANA (CPT 86235), SSA/SSB | - | - | EXT | - | Sjögren syndrome can cause trigeminal neuropathy | Negative |
+| CSF analysis (CPT 62270) | - | EXT | EXT | - | If MS or CNS infection suspected | Normal; or MS-consistent findings |
+| ACE level (CPT 82164) | - | - | EXT | - | Neurosarcoidosis | Normal |
 
 ---
 
@@ -66,9 +66,9 @@ setting: "HOSP, OPD, ICU"
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with dedicated trigeminal protocol | - | ROUTINE | ROUTINE | - | All patients; before treatment | Identify neurovascular compression, tumor, MS plaques | Pacemaker, metal |
-| MRA (if MRI equivocal) | - | ROUTINE | EXT | - | Evaluate vascular loop | Define vessel relationship | Same |
-| CT head (if MRI unavailable) | URGENT | ROUTINE | - | - | Emergent exclusion of mass | No mass | None (contrast: renal) |
+| MRI brain with dedicated trigeminal protocol (CPT 70553) | - | ROUTINE | ROUTINE | - | All patients; before treatment | Identify neurovascular compression, tumor, MS plaques | Pacemaker, metal |
+| MRA (CPT 70544) (if MRI equivocal) | - | ROUTINE | EXT | - | Evaluate vascular loop | Define vessel relationship | Same |
+| CT head (CPT 70450) (if MRI unavailable) | URGENT | ROUTINE | - | - | Emergent exclusion of mass | No mass | None (contrast: renal) |
 
 ### 2B. Specialized Protocols
 
@@ -81,7 +81,7 @@ setting: "HOSP, OPD, ICU"
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Trigeminal reflex testing (blink reflex) | - | - | EXT | - | If sensory loss; differentiate from neuropathy | Normal in classical TN; abnormal in secondary | None |
+| Trigeminal reflex testing (blink reflex) (CPT 95933) | - | - | EXT | - | If sensory loss; differentiate from neuropathy | Normal in classical TN; abnormal in secondary | None |
 | Dental/maxillofacial evaluation | - | - | ROUTINE | - | Exclude dental pathology as pain source | No dental cause | None |
 
 ---
@@ -116,9 +116,9 @@ setting: "HOSP, OPD, ICU"
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Fosphenytoin (severe exacerbation) | IV | - | 15-20 mg :: IV :: TID :: 15-20 mg PE/kg IV at 100-150 mg/min; then phenytoin 100 mg TID | - | Sinus bradycardia, heart block, Adams-Stokes syndrome | ECG, BP during infusion; phenytoin levels | STAT | STAT | - | - |
-| IV lidocaine | IV | - | 1-3 mg/kg :: IV :: - :: 1-3 mg/kg IV over 20-30 min (monitored setting); for severe refractory pain | - | Cardiac conduction abnormalities | Continuous cardiac monitoring | - | STAT | - | - |
-| Peripheral nerve block (V2/V3) | - | - | Lidocaine/bupivacaine at foramen rotundum/ovale | - | Infection, coagulopathy | Short-term relief | ROUTINE | ROUTINE | ROUTINE | - |
+| Fosphenytoin (severe exacerbation) (CPT 96365) | IV | - | 15-20 mg :: IV :: TID :: 15-20 mg PE/kg IV at 100-150 mg/min; then phenytoin 100 mg TID | - | Sinus bradycardia, heart block, Adams-Stokes syndrome | ECG, BP during infusion; phenytoin levels | STAT | STAT | - | - |
+| IV lidocaine (CPT 96365) | IV | - | 1-3 mg/kg :: IV :: - :: 1-3 mg/kg IV over 20-30 min (monitored setting); for severe refractory pain | - | Cardiac conduction abnormalities | Continuous cardiac monitoring | - | STAT | - | - |
+| Peripheral nerve block (V2/V3) (CPT 64400) | - | - | Lidocaine/bupivacaine at foramen rotundum/ovale | - | Infection, coagulopathy | Short-term relief | ROUTINE | ROUTINE | ROUTINE | - |
 
 ### 3E. Interventional Procedures (Refractory to Medical Therapy)
 

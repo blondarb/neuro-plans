@@ -15,7 +15,7 @@ setting: "ED, HOSP, OPD, ICU"
 
 **DIAGNOSIS:** Transient Ischemic Attack (TIA)
 
-**ICD-10:** G45.9 (Transient cerebral ischemic attack, unspecified), G45.0 (Vertebro-basilar artery syndrome), G45.1 (Carotid artery syndrome)
+**ICD-10:** G45.9 (Transient cerebral ischemic attack, unspecified), G45.0 (Vertebro-basilar artery syndrome), G45.1 (Carotid artery syndrome), G45.8 (Other transient cerebral ischemic attacks and related syndromes)
 
 **SYNONYMS:** Transient ischemic attack, TIA, mini-stroke, warning stroke, transient stroke, pre-stroke, temporary stroke symptoms, reversible ischemic neurological deficit
 
@@ -35,27 +35,27 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Point-of-care glucose | STAT | STAT | STAT | - | Hypoglycemia mimics TIA; must rule out immediately | >60 mg/dL |
-| CBC with differential | STAT | STAT | ROUTINE | - | Thrombocytosis or thrombocytopenia; polycythemia; anemia; infection | Normal |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | - | Electrolytes; renal function for contrast; hepatic function | Normal |
-| PT/INR | STAT | STAT | ROUTINE | - | Anticoagulant use; coagulopathy assessment | Normal |
-| Lipid panel (fasting or non-fasting) | STAT | STAT | ROUTINE | - | LDL target <70 mg/dL; statin initiation | LDL <70 |
-| HbA1c | STAT | STAT | ROUTINE | - | Diabetes screening; cardiovascular risk factor | <7.0% |
-| Troponin | STAT | STAT | - | - | Concurrent ACS; cardiac embolic source | Normal |
-| Blood glucose (fasting) | - | ROUTINE | ROUTINE | - | Diabetes screening | <126 mg/dL |
-| TSH | - | ROUTINE | ROUTINE | - | Hyperthyroidism → atrial fibrillation | Normal |
+| Point-of-care glucose (CPT 82962) | STAT | STAT | STAT | - | Hypoglycemia mimics TIA; must rule out immediately | >60 mg/dL |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | - | Thrombocytosis or thrombocytopenia; polycythemia; anemia; infection | Normal |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | - | Electrolytes; renal function for contrast; hepatic function | Normal |
+| PT/INR (CPT 85610) | STAT | STAT | ROUTINE | - | Anticoagulant use; coagulopathy assessment | Normal |
+| Lipid panel (fasting or non-fasting) (CPT 80061) | STAT | STAT | ROUTINE | - | LDL target <70 mg/dL; statin initiation | LDL <70 |
+| HbA1c (CPT 83036) | STAT | STAT | ROUTINE | - | Diabetes screening; cardiovascular risk factor | <7.0% |
+| Troponin (CPT 84484) | STAT | STAT | - | - | Concurrent ACS; cardiac embolic source | Normal |
+| Blood glucose (fasting) (CPT 82947) | - | ROUTINE | ROUTINE | - | Diabetes screening | <126 mg/dL |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Hyperthyroidism → atrial fibrillation | Normal |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| ESR / CRP | URGENT | ROUTINE | ROUTINE | - | Vasculitis screen; giant cell arteritis (age >50 with TIA); inflammatory markers | Normal |
-| Homocysteine | - | ROUTINE | ROUTINE | - | Elevated homocysteine as independent stroke risk factor | Normal (<15 µmol/L) |
-| Urine drug screen | URGENT | ROUTINE | - | - | Cocaine/amphetamine-associated TIA/stroke | Negative |
-| RPR/VDRL | - | ROUTINE | ROUTINE | - | Syphilitic vasculitis | Non-reactive |
-| HIV 1/2 antigen/antibody | - | ROUTINE | ROUTINE | - | HIV-associated vasculopathy | Negative |
-| Pregnancy test (β-hCG) | STAT | STAT | ROUTINE | - | Affects imaging and treatment decisions | Document result |
-| Magnesium | URGENT | ROUTINE | ROUTINE | - | Electrolyte management | Normal |
+| ESR (CPT 85652) / CRP (CPT 86140) | URGENT | ROUTINE | ROUTINE | - | Vasculitis screen; giant cell arteritis (age >50 with TIA); inflammatory markers | Normal |
+| Homocysteine (CPT 83090) | - | ROUTINE | ROUTINE | - | Elevated homocysteine as independent stroke risk factor | Normal (<15 µmol/L) |
+| Urine drug screen (CPT 80307) | URGENT | ROUTINE | - | - | Cocaine/amphetamine-associated TIA/stroke | Negative |
+| RPR/VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Syphilitic vasculitis | Non-reactive |
+| HIV 1/2 antigen/antibody (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated vasculopathy | Negative |
+| Pregnancy test (β-hCG) (CPT 84703) | STAT | STAT | ROUTINE | - | Affects imaging and treatment decisions | Document result |
+| Magnesium (CPT 83735) | URGENT | ROUTINE | ROUTINE | - | Electrolyte management | Normal |
 
 ### 1C. Rare/Specialized (Young TIA or Cryptogenic)
 
@@ -63,7 +63,7 @@ SECTION A: ACTION ITEMS
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Hypercoagulable panel (Protein C, S, antithrombin III, Factor V Leiden, prothrombin gene mutation) | - | EXT | ROUTINE | - | Young patient (<50); cryptogenic TIA; personal/family history of thrombosis | Normal |
 | Antiphospholipid antibodies (lupus anticoagulant, anticardiolipin, β2-glycoprotein I) | - | ROUTINE | ROUTINE | - | Young TIA; recurrent TIA; systemic lupus; recurrent pregnancy loss | Negative |
-| ANA, dsDNA | - | EXT | ROUTINE | - | Lupus cerebritis; vasculitis | Negative |
+| ANA (CPT 86235), dsDNA | - | EXT | ROUTINE | - | Lupus cerebritis; vasculitis | Negative |
 | ANCA (c-ANCA, p-ANCA) | - | EXT | EXT | - | CNS vasculitis | Negative |
 | Hemoglobin electrophoresis | - | EXT | EXT | - | Sickle cell disease (young patients, African descent) | Normal |
 | JAK2 mutation | - | EXT | EXT | - | Polycythemia vera; myeloproliferative disorders | Negative |
@@ -77,28 +77,28 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with DWI | STAT | STAT | URGENT | - | Within 24h (ideally <6h). DWI-positive in 30-50% of clinical TIA — these patients are at HIGHEST stroke risk and may be reclassified as minor stroke | DWI restriction = acute ischemia (even if symptoms resolved, this upgrades risk and may change to minor stroke diagnosis); FLAIR changes; prior infarcts | Pacemaker, metallic implants, severe claustrophobia |
-| CT head without contrast | STAT | STAT | - | - | Immediate (if MRI unavailable or contraindicated); excludes hemorrhage and mass | No hemorrhage; no mass; may show old infarcts | Pregnancy (relative) |
-| CTA head and neck (OR MRA head and neck) | STAT | STAT | URGENT | - | With initial imaging or within 24h. Evaluates extracranial AND intracranial vessels | Carotid stenosis (≥50% NASCET); intracranial stenosis; vertebral stenosis; dissection | Contrast allergy; renal impairment (for CTA). MRA: pacemaker |
-| ECG (12-lead) | STAT | STAT | ROUTINE | - | Immediately | Atrial fibrillation (detected in 5-10% on initial ECG); atrial flutter; acute MI; LVH; old infarct | None |
-| Continuous cardiac monitoring (telemetry) | STAT | STAT | - | - | Minimum 24h in ED/hospital; ideally 48-72h | Paroxysmal atrial fibrillation (detected in additional 5-7% with monitoring) | None |
+| MRI brain with DWI (CPT 70553) | STAT | STAT | URGENT | - | Within 24h (ideally <6h). DWI-positive in 30-50% of clinical TIA — these patients are at HIGHEST stroke risk and may be reclassified as minor stroke | DWI restriction = acute ischemia (even if symptoms resolved, this upgrades risk and may change to minor stroke diagnosis); FLAIR changes; prior infarcts | Pacemaker, metallic implants, severe claustrophobia |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | - | Immediate (if MRI unavailable or contraindicated); excludes hemorrhage and mass | No hemorrhage; no mass; may show old infarcts | Pregnancy (relative) |
+| CTA head and neck (CPT 70496, 70498) (OR MRA head and neck) | STAT | STAT | URGENT | - | With initial imaging or within 24h. Evaluates extracranial AND intracranial vessels | Carotid stenosis (≥50% NASCET); intracranial stenosis; vertebral stenosis; dissection | Contrast allergy; renal impairment (for CTA). MRA: pacemaker |
+| ECG (12-lead) (CPT 93000) | STAT | STAT | ROUTINE | - | Immediately | Atrial fibrillation (detected in 5-10% on initial ECG); atrial flutter; acute MI; LVH; old infarct | None |
+| Continuous cardiac monitoring (telemetry) (CPT 93228) | STAT | STAT | - | - | Minimum 24h in ED/hospital; ideally 48-72h | Paroxysmal atrial fibrillation (detected in additional 5-7% with monitoring) | None |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Transthoracic echocardiogram (TTE) | - | ROUTINE | ROUTINE | - | Within 24-48h | LV thrombus; PFO; valvular disease; cardiomyopathy; akinetic segments | None significant |
-| Transesophageal echocardiogram (TEE) with bubble study | - | ROUTINE | ROUTINE | - | If TTE nondiagnostic; cryptogenic TIA; young patient | PFO with right-to-left shunt; atrial septal aneurysm; LAA thrombus; aortic arch atheroma (≥4mm) | Esophageal pathology |
-| Carotid duplex ultrasound | URGENT | URGENT | URGENT | - | Within 24h (may be obtained instead of or in addition to CTA/MRA) | Carotid stenosis ≥50%; plaque characterization; hemodynamic significance | None significant |
+| Transthoracic echocardiogram (TTE) (CPT 93306) | - | ROUTINE | ROUTINE | - | Within 24-48h | LV thrombus; PFO; valvular disease; cardiomyopathy; akinetic segments | None significant |
+| Transesophageal echocardiogram (TEE) (CPT 93312) with bubble study | - | ROUTINE | ROUTINE | - | If TTE nondiagnostic; cryptogenic TIA; young patient | PFO with right-to-left shunt; atrial septal aneurysm; LAA thrombus; aortic arch atheroma (≥4mm) | Esophageal pathology |
+| Carotid duplex ultrasound (CPT 93880) | URGENT | URGENT | URGENT | - | Within 24h (may be obtained instead of or in addition to CTA/MRA) | Carotid stenosis ≥50%; plaque characterization; hemodynamic significance | None significant |
 | Extended cardiac monitoring (Holter 30-day or implantable loop recorder) | - | ROUTINE | ROUTINE | - | Arrange before discharge; especially if cryptogenic TIA | Paroxysmal AF (detected in 12-30% with prolonged monitoring in cryptogenic cases) | None significant |
-| Transcranial Doppler (TCD) with bubble study | - | ROUTINE | ROUTINE | - | If PFO evaluation needed (alternative to TEE bubble); also for intracranial stenosis and microembolic signals | Right-to-left shunt; intracranial stenosis; microembolic signals | Absent temporal bone window |
+| Transcranial Doppler (TCD) (CPT 93886) with bubble study | - | ROUTINE | ROUTINE | - | If PFO evaluation needed (alternative to TEE bubble); also for intracranial stenosis and microembolic signals | Right-to-left shunt; intracranial stenosis; microembolic signals | Absent temporal bone window |
 | CT perfusion | - | EXT | - | - | If diagnosis uncertain; evaluate for persistent hypoperfusion despite symptom resolution | Perfusion deficits suggesting ongoing ischemic risk | Contrast allergy; renal impairment |
 
 ### 2C. Rare/Specialized
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Conventional cerebral angiography (DSA) | - | EXT | EXT | - | If intracranial stenosis suspected on CTA/MRA; vasculitis workup; Moyamoya | Beading (vasculitis); intimal flap (dissection); Moyamoya collaterals; intracranial stenosis quantification | Contrast allergy; coagulopathy |
+| Conventional cerebral angiography (DSA) (CPT 36224) | - | EXT | EXT | - | If intracranial stenosis suspected on CTA/MRA; vasculitis workup; Moyamoya | Beading (vasculitis); intimal flap (dissection); Moyamoya collaterals; intracranial stenosis quantification | Contrast allergy; coagulopathy |
 | MRI vessel wall imaging | - | EXT | EXT | - | Intracranial stenosis characterization; vasculitis evaluation | Vessel wall enhancement (active inflammation, unstable plaque) | Standard MRI contraindications |
 | Fat-saturated MRI neck | - | ROUTINE | ROUTINE | - | If cervical dissection suspected (neck pain, Horner syndrome, young patient) | Intramural hematoma (crescent sign) | Standard MRI contraindications |
 | PET-CT | - | - | EXT | - | If occult malignancy suspected (Trousseau syndrome) | Malignancy | Pregnancy |

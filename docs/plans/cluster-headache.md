@@ -16,9 +16,9 @@ setting: "HOSP, OPD, ICU"
 
 **DIAGNOSIS:** Cluster Headache
 
-**ICD-10:** G44.009 (Cluster headache syndrome, unspecified, not intractable), G44.019 (Cluster headache syndrome, unspecified, intractable), G44.001 (Episodic cluster headache, not intractable), G44.011 (Episodic cluster headache, intractable), G44.009 (Chronic cluster headache)
+**ICD-10:** G44.009 (Cluster headache syndrome, unspecified, not intractable), G44.019 (Cluster headache syndrome, unspecified, intractable), G44.001 (Episodic cluster headache, not intractable), G44.011 (Episodic cluster headache, intractable), G44.021 (Chronic cluster headache, not intractable), G44.029 (Chronic cluster headache, not intractable, unspecified), G44.031 (Chronic cluster headache, intractable), G44.039 (Chronic cluster headache, intractable, unspecified)
 
-**SYNONYMS:** Cluster headache, CH, cluster headache syndrome, histamine headache, Horton's headache, alarm clock headache, suicide headache, trigeminal autonomic cephalalgia, TAC
+**SYNONYMS:** Cluster headache, CH, cluster headache syndrome, histamine headache, Horton's headache, Horton's neuralgia, alarm clock headache, suicide headache, trigeminal autonomic cephalalgia, TAC, episodic cluster headache, chronic cluster headache, cluster period, cluster bout, migrainous neuralgia, ciliary neuralgia, erythroprosopalgia, Sluder's neuralgia, sphenopalatine neuralgia, Bing-Horton syndrome, autonomic cephalalgia
 
 **SCOPE:** Diagnosis and management of episodic and chronic cluster headache in adults. Covers acute abortive treatment, transitional therapy, and preventive medication. Excludes other trigeminal autonomic cephalalgias (paroxysmal hemicrania, SUNCT/SUNA, hemicrania continua), migraine, and secondary causes of headache.
 
@@ -55,15 +55,15 @@ setting: "HOSP, OPD, ICU"
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC | - | ROUTINE | ROUTINE | - | Baseline | Normal |
-| CMP | - | ROUTINE | ROUTINE | - | Baseline; before starting verapamil | Normal |
-| TSH | - | ROUTINE | ROUTINE | - | Thyroid dysfunction | Normal |
+| CBC (CPT 85025) | - | ROUTINE | ROUTINE | - | Baseline | Normal |
+| CMP (CPT 80053) | - | ROUTINE | ROUTINE | - | Baseline; before starting verapamil | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction | Normal |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| ESR/CRP | URGENT | ROUTINE | ROUTINE | - | If GCA suspected (older patient, new onset) | Normal |
+| ESR (CPT 85652) / CRP (CPT 86140) | URGENT | ROUTINE | ROUTINE | - | If GCA suspected (older patient, new onset) | Normal |
 | Pituitary hormone panel | - | - | EXT | - | If pituitary lesion suspected | Normal |
 
 ### 1C. Rare/Specialized
@@ -81,14 +81,14 @@ setting: "HOSP, OPD, ICU"
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MRI brain with pituitary protocol | - | ROUTINE | ROUTINE | - | At diagnosis (once) | Rule out secondary causes (pituitary lesion, cavernous sinus lesion) | Pacemaker, metal |
-| MRA head | - | ROUTINE | ROUTINE | - | If vascular lesion suspected | Normal vasculature | Per MRI |
+| MRA head (CPT 70544) | - | ROUTINE | ROUTINE | - | If vascular lesion suspected | Normal vasculature | Per MRI |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head | STAT | STAT | - | - | If acute concern (thunderclap, first presentation) | Rule out hemorrhage | None |
-| ECG | STAT | STAT | ROUTINE | - | Before verapamil; baseline | Normal rhythm, PR interval | None |
+| CT head (CPT 70450) | STAT | STAT | - | - | If acute concern (thunderclap, first presentation) | Rule out hemorrhage | None |
+| ECG (CPT 93000) | STAT | STAT | ROUTINE | - | Before verapamil; baseline | Normal rhythm, PR interval | None |
 
 ---
 
@@ -115,7 +115,7 @@ setting: "HOSP, OPD, ICU"
 | Dexamethasone | PO | - | 4-8 mg :: PO :: BID :: 4-8 mg BID × 1-2 weeks, then taper | Same | Same | - | STAT | ROUTINE | - |
 | Greater occipital nerve block (GON block) | - | - | 2 mL :: - :: - :: Lidocaine 2% (2 mL) + triamcinolone 40 mg or methylprednisolone 40 mg; inject ipsilateral or bilateral | Anticoagulation, local infection | May provide 2-4 weeks relief | - | ROUTINE | ROUTINE | - |
 | Suboccipital steroid injection | - | - | Similar to GON block; ipsilateral | Same | Same | - | ROUTINE | ROUTINE | - |
-| DHE protocol (inpatient) | IV | - | 0.5-1 mg :: IV :: q8h :: DHE 0.5-1 mg IV q8h × 3-5 days (with antiemetic pretreatment) | CAD, CVA, uncontrolled HTN, triptans <24h | BP, nausea, peripheral vasoconstriction | - | STAT | - | - |
+| DHE protocol (inpatient) (CPT 96365) | IV | - | 0.5-1 mg :: IV :: q8h :: DHE 0.5-1 mg IV q8h × 3-5 days (with antiemetic pretreatment) | CAD, CVA, uncontrolled HTN, triptans <24h | BP, nausea, peripheral vasoconstriction | - | STAT | - | - |
 
 ### 3C. Preventive Therapy - First-Line
 

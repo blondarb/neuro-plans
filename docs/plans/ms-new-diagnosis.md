@@ -18,7 +18,7 @@ setting: "HOSP, OPD, ICU"
 
 **ICD-10:** G35 (Multiple sclerosis)
 
-**SYNONYMS:** Multiple sclerosis, MS, new onset MS, first demyelinating event, clinically isolated syndrome, CIS, demyelinating disease, CNS demyelination, disseminated sclerosis
+**SYNONYMS:** Multiple sclerosis, MS, new onset MS, first demyelinating event, clinically isolated syndrome, CIS, demyelinating disease, CNS demyelination, disseminated sclerosis, relapsing-remitting MS, RRMS, SPMS, PPMS
 
 **SCOPE:** Initial diagnostic workup and management of suspected or newly confirmed MS. Covers diagnostic criteria evaluation, mimics exclusion, acute symptom treatment, and DMT initiation framework. For established MS with acute relapse, use "MS - Exacerbation" template. For ongoing DMT management and monitoring, use "MS - Maintenance" template.
 
@@ -36,29 +36,29 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Infection screen, baseline before steroids | Normal |
-| CMP | STAT | STAT | ROUTINE | STAT | Metabolic screen, renal function | Normal |
-| TSH | URGENT | ROUTINE | ROUTINE | URGENT | Thyroid disease mimics MS | Normal |
-| Vitamin B12 | URGENT | ROUTINE | ROUTINE | URGENT | B12 deficiency causes myelopathy | Normal (>300 pg/mL) |
-| Folate | URGENT | ROUTINE | ROUTINE | URGENT | Folate deficiency causes myelopathy | Normal |
-| ESR | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory/vasculitis screen | Normal (<20 mm/hr) |
-| CRP | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory marker | Normal |
-| Urinalysis | STAT | STAT | ROUTINE | STAT | UTI as symptom trigger | Negative |
-| Blood glucose | STAT | STAT | ROUTINE | STAT | Pre-steroid baseline | Normal |
-| HbA1c | - | ROUTINE | ROUTINE | - | Glycemic status before steroids | <5.7% |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Infection screen, baseline before steroids | Normal |
+| CMP (CPT 80053) | STAT | STAT | ROUTINE | STAT | Metabolic screen, renal function | Normal |
+| TSH (CPT 84443) | URGENT | ROUTINE | ROUTINE | URGENT | Thyroid disease mimics MS | Normal |
+| Vitamin B12 (CPT 82607) | URGENT | ROUTINE | ROUTINE | URGENT | B12 deficiency causes myelopathy | Normal (>300 pg/mL) |
+| Folate (CPT 82746) | URGENT | ROUTINE | ROUTINE | URGENT | Folate deficiency causes myelopathy | Normal |
+| ESR (CPT 85652) | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory/vasculitis screen | Normal (<20 mm/hr) |
+| CRP (CPT 86140) | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory marker | Normal |
+| Urinalysis (CPT 81003) | STAT | STAT | ROUTINE | STAT | UTI as symptom trigger | Negative |
+| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Pre-steroid baseline | Normal |
+| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Glycemic status before steroids | <5.7% |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Vitamin D (25-OH) | - | ROUTINE | ROUTINE | - | Low levels associated with MS risk/activity | >30 ng/mL |
-| ANA | URGENT | ROUTINE | ROUTINE | URGENT | Lupus/connective tissue disease screen | Negative or low titer |
-| Anti-dsDNA | - | ROUTINE | ROUTINE | - | If ANA positive, lupus evaluation | Negative |
-| **Mayo CDS1 Panel** (AQP4-IgG + MOG-IgG by FACS) | URGENT | URGENT | ROUTINE | URGENT | Combined NMO/MOGAD screen; cell-based assay is gold standard | Both negative |
-| HIV | - | ROUTINE | ROUTINE | - | HIV-associated myelopathy/encephalopathy | Negative |
-| RPR/VDRL | - | ROUTINE | ROUTINE | - | Neurosyphilis mimics MS | Negative |
+| Vitamin D (25-OH) (CPT 82306) | - | ROUTINE | ROUTINE | - | Low levels associated with MS risk/activity | >30 ng/mL |
+| ANA (CPT 86235) | URGENT | ROUTINE | ROUTINE | URGENT | Lupus/connective tissue disease screen | Negative or low titer |
+| Anti-dsDNA (CPT 86225) | - | ROUTINE | ROUTINE | - | If ANA positive, lupus evaluation | Negative |
+| **Mayo CDS1 Panel** (AQP4-IgG + MOG-IgG by FACS) (CPT 86255) | URGENT | URGENT | ROUTINE | URGENT | Combined NMO/MOGAD screen; cell-based assay is gold standard | Both negative |
+| HIV (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated myelopathy/encephalopathy | Negative |
+| RPR/VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis mimics MS | Negative |
 | Lyme serology | - | ROUTINE | ROUTINE | - | Endemic areas; neuroborreliosis | Negative |
-| ACE level | - | ROUTINE | ROUTINE | - | Neurosarcoidosis | Normal |
+| ACE level (CPT 82164) | - | ROUTINE | ROUTINE | - | Neurosarcoidosis | Normal |
 
 *Note: If Mayo CDS1 Panel unavailable, order AQP4-IgG (Mayo NMOFS) and MOG-IgG (Mayo MOGFS) separately. FACS/cell-based assay preferred over ELISA for higher sensitivity/specificity.*
 
@@ -66,9 +66,9 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Anti-SSA/SSB (Ro/La) | - | EXT | EXT | - | SjÃ¶gren syndrome | Negative |
-| ANCA panel | - | EXT | EXT | - | CNS vasculitis | Negative |
-| Copper, ceruloplasmin | - | EXT | EXT | - | Wilson disease (young patients) | Normal |
+| Anti-SSA/SSB (Ro/La) (CPT 86235) | - | EXT | EXT | - | SjÃ¶gren syndrome | Negative |
+| ANCA panel (CPT 86235) | - | EXT | EXT | - | CNS vasculitis | Negative |
+| Copper, ceruloplasmin (CPT 82390) | - | EXT | EXT | - | Wilson disease (young patients) | Normal |
 | Very long chain fatty acids | - | EXT | EXT | - | Adrenomyeloneuropathy | Normal |
 | Mitochondrial DNA studies | - | EXT | EXT | - | Leber hereditary optic neuropathy | Normal |
 | Genetic testing (HLA-DRB1) | - | - | EXT | - | Research/prognostic, not diagnostic | Variable |
@@ -81,9 +81,9 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with and without contrast (MS protocol)* | URGENT | URGENT | ROUTINE | URGENT | Within 24-48h if acute; within 2 weeks if stable | Periventricular, juxtacortical, infratentorial, or cord lesions; gadolinium enhancement = active | GFR <30, gadolinium allergy, pacemaker |
-| MRI C-spine with and without contrast | URGENT | URGENT | ROUTINE | URGENT | With brain MRI | Cord lesions (short segment, peripheral, dorsal) | Same as above |
-| MRI T-spine with and without contrast | URGENT | ROUTINE | ROUTINE | URGENT | With brain/C-spine | Cord lesions | Same as above |
+| MRI brain with and without contrast (MS protocol)* (CPT 70553) | URGENT | URGENT | ROUTINE | URGENT | Within 24-48h if acute; within 2 weeks if stable | Periventricular, juxtacortical, infratentorial, or cord lesions; gadolinium enhancement = active | GFR <30, gadolinium allergy, pacemaker |
+| MRI C-spine with and without contrast (CPT 72156) | URGENT | URGENT | ROUTINE | URGENT | With brain MRI | Cord lesions (short segment, peripheral, dorsal) | Same as above |
+| MRI T-spine with and without contrast (CPT 72157) | URGENT | ROUTINE | ROUTINE | URGENT | With brain/C-spine | Cord lesions | Same as above |
 
 *MS MRI protocol should include: 3D FLAIR, 3D T1 pre/post-contrast, T2, DWI; for spine: sagittal STIR, axial T2
 
@@ -91,9 +91,9 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Visual evoked potentials (VEP) | - | ROUTINE | ROUTINE | - | During workup | Prolonged P100 latency (subclinical optic nerve involvement) | None significant |
-| OCT (Optical coherence tomography) | - | - | ROUTINE | - | Baseline | RNFL thinning (prior optic neuritis) | None significant |
-| MRI orbits with contrast | - | ROUTINE | ROUTINE | - | If optic neuritis suspected | Optic nerve enhancement, swelling | Gadolinium contraindications |
+| Visual evoked potentials (VEP) (CPT 95930) | - | ROUTINE | ROUTINE | - | During workup | Prolonged P100 latency (subclinical optic nerve involvement) | None significant |
+| OCT (Optical coherence tomography) (CPT 92134) | - | - | ROUTINE | - | Baseline | RNFL thinning (prior optic neuritis) | None significant |
+| MRI orbits with contrast (CPT 70540) | - | ROUTINE | ROUTINE | - | If optic neuritis suspected | Optic nerve enhancement, swelling | Gadolinium contraindications |
 
 *Note: OCT typically available only in outpatient neuro-ophthalmology or MS specialty clinics*
 
@@ -101,12 +101,12 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT chest | - | EXT | EXT | - | If sarcoidosis suspected | Hilar lymphadenopathy | Contrast allergy |
-| PET-CT | - | EXT | EXT | - | If CNS lymphoma or paraneoplastic suspected | FDG-avid lesions | Pregnancy, uncontrolled diabetes |
+| CT chest (CPT 71260) | - | EXT | EXT | - | If sarcoidosis suspected | Hilar lymphadenopathy | Contrast allergy |
+| PET-CT (CPT 78816) | - | EXT | EXT | - | If CNS lymphoma or paraneoplastic suspected | FDG-avid lesions | Pregnancy, uncontrolled diabetes |
 | Conventional angiography | - | EXT | EXT | - | If CNS vasculitis suspected | Beading, stenosis | Contrast allergy, renal failure |
 | Brain biopsy | - | EXT | - | - | Atypical cases, tumefactive lesions | Demyelination vs neoplasm vs other | Coagulopathy, inaccessible location |
 
-### LUMBAR PUNCTURE
+### LUMBAR PUNCTURE (CPT 62270)
 
 **Indication:** Supports MS diagnosis (2017 McDonald criteria); helps exclude mimics; required if dissemination in time cannot be demonstrated by MRI alone
 
@@ -117,15 +117,15 @@ SECTION A: ACTION ITEMS
 | Study | ED | HOSP | OPD | Rationale | Target Finding |
 |-------|:--:|:----:|:---:|-----------|----------------|
 | Opening pressure | URGENT | ROUTINE | ROUTINE | Rule out elevated ICP | 10-20 cm H2O |
-| Cell count (tubes 1 and 4) | URGENT | ROUTINE | ROUTINE | Inflammation, rule out infection | WBC <50 (mild pleocytosis acceptable); RBC 0 |
-| Protein | URGENT | ROUTINE | ROUTINE | Elevated in inflammation | Normal to mildly elevated (<100 mg/dL) |
-| Glucose with serum glucose | URGENT | ROUTINE | ROUTINE | Low in infection/carcinomatous | Normal (>60% serum) |
+| Cell count (tubes 1 and 4) (CPT 89051) | URGENT | ROUTINE | ROUTINE | Inflammation, rule out infection | WBC <50 (mild pleocytosis acceptable); RBC 0 |
+| Protein (CPT 84157) | URGENT | ROUTINE | ROUTINE | Elevated in inflammation | Normal to mildly elevated (<100 mg/dL) |
+| Glucose with serum glucose (CPT 82945) | URGENT | ROUTINE | ROUTINE | Low in infection/carcinomatous | Normal (>60% serum) |
 | Gram stain and culture | URGENT | ROUTINE | ROUTINE | Rule out infection | No organisms |
-| Oligoclonal bands (CSF AND serum) | URGENT | ROUTINE | ROUTINE | Intrathecal IgG synthesis | â‰¥2 CSF-specific bands (not in serum) |
-| IgG index | URGENT | ROUTINE | ROUTINE | Intrathecal antibody synthesis | >0.7 = elevated |
+| Oligoclonal bands (CSF AND serum) (CPT 83916) | URGENT | ROUTINE | ROUTINE | Intrathecal IgG synthesis | â‰¥2 CSF-specific bands (not in serum) |
+| IgG index (CPT 86327) | URGENT | ROUTINE | ROUTINE | Intrathecal antibody synthesis | >0.7 = elevated |
 | Myelin basic protein | - | ROUTINE | ROUTINE | Active demyelination marker | May be elevated acutely |
-| Cytology | - | ROUTINE | ROUTINE | Rule out malignancy | Negative |
-| VDRL (CSF) | - | ROUTINE | ROUTINE | Neurosyphilis | Negative |
+| Cytology (CPT 88104) | - | ROUTINE | ROUTINE | Rule out malignancy | Negative |
+| VDRL (CSF) (CPT 86592) | - | ROUTINE | ROUTINE | Neurosyphilis | Negative |
 
 **Special Handling:** OCBs stable at 4Â°C for days; send paired serum. Cytology requires rapid transport (<1 hour).
 
@@ -139,7 +139,7 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Methylprednisolone IV | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily Ã— 3-5 days | Active untreated infection, uncontrolled diabetes, psychosis history | Glucose q6h (target <180), BP, mood, sleep, I/O | STAT | STAT | - | STAT |
+| Methylprednisolone IV (CPT 96365) | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily Ã— 3-5 days | Active untreated infection, uncontrolled diabetes, psychosis history | Glucose q6h (target <180), BP, mood, sleep, I/O | STAT | STAT | - | STAT |
 | Omeprazole | PO | - | 20-40 mg :: PO :: daily :: 20-40 mg daily during steroids | PPI allergy | None routine | STAT | STAT | - | STAT |
 | Insulin sliding scale | - | - | 180 mg :: - :: - :: Per protocol if glucose >180 mg/dL | Hypoglycemia risk | Glucose q6h | STAT | STAT | - | STAT |
 | Prednisone oral taper (optional) | - | - | 60 mg :: PO :: daily :: 60 mg daily Ã— 7 days, then taper over 2 weeks | Same as IV steroids | Glucose, BP, mood | - | ROUTINE | ROUTINE | - |
@@ -189,8 +189,8 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Plasmapheresis (PLEX) | - | - | 5-7 exchanges over 10-14 days | Hemodynamic instability, sepsis, line contraindication | BP, electrolytes, coags, fibrinogen, line infection | - | URGENT | - | URGENT |
-| IVIG | PO | - | 0.4 g/kg :: PO :: - :: 0.4 g/kg/day Ã— 5 days | IgA deficiency, renal failure, thrombosis risk | Renal function, headache, thrombosis | - | URGENT | - | URGENT |
+| Plasmapheresis (PLEX) (CPT 36514) | - | - | 5-7 exchanges over 10-14 days | Hemodynamic instability, sepsis, line contraindication | BP, electrolytes, coags, fibrinogen, line infection | - | URGENT | - | URGENT |
+| IVIG (CPT 96365) | PO | - | 0.4 g/kg :: PO :: - :: 0.4 g/kg/day Ã— 5 days | IgA deficiency, renal failure, thrombosis risk | Renal function, headache, thrombosis | - | URGENT | - | URGENT |
 | Extended IV steroids | IV | - | Additional 2-5 days methylprednisolone (total 5-10 days) | As above | As above | - | ROUTINE | - | ROUTINE |
 | ACTH gel (H.P. Acthar) | IM | - | 80 units :: IM :: daily :: 80 units IM/SC daily Ã— 2-3 weeks | Similar to corticosteroids | Glucose, BP, electrolytes | - | EXT | EXT | - |
 

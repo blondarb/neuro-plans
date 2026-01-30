@@ -15,9 +15,9 @@ setting: "HOSP, OPD, ICU"
 
 **DIAGNOSIS:** Vertigo / Dizziness Evaluation
 
-**ICD-10:** R42 (Dizziness and giddiness), H81.10 (Benign paroxysmal positional vertigo, unspecified ear), H81.0 (Meniere's disease), H81.3 (Other peripheral vertigo), G45.0 (Vertebro-basilar artery syndrome), H81.4 (Vertigo of central origin)
+**ICD-10:** R42 (Dizziness and giddiness), H81.10 (Benign paroxysmal positional vertigo, unspecified ear), H81.00 (Meniere's disease, unspecified ear), H81.30 (Other peripheral vertigo, unspecified ear), H81.390 (Other peripheral vertigo, unspecified ear), G45.0 (Vertebro-basilar artery syndrome), H81.4 (Vertigo of central origin), H83.09 (Labyrinthitis, unspecified ear)
 
-**SYNONYMS:** Vertigo, dizziness, lightheadedness, light headedness, disequilibrium, presyncope, room spinning, BPPV, vestibular neuritis, labyrinthitis, Meniere's disease, imbalance, unsteadiness, giddiness
+**SYNONYMS:** Vertigo, dizziness, lightheadedness, light headedness, disequilibrium, presyncope, room spinning, BPPV, benign paroxysmal positional vertigo, vestibular neuritis, labyrinthitis, Meniere disease, Meniere's disease, imbalance, unsteadiness, giddiness, vestibular migraine
 
 **SCOPE:** Evaluation and management of acute vertigo and dizziness in adults. Covers differentiation of peripheral vs. central causes, the HINTS exam, Dix-Hallpike and canalith repositioning maneuvers, evaluation for posterior circulation stroke, and management of common vestibular disorders (BPPV, vestibular neuritis, Meniere's disease, vestibular migraine). Excludes chronic non-specific dizziness (persistent postural-perceptual dizziness), medication-induced dizziness (covered briefly), and presyncope/orthostatic hypotension (separate evaluation).
 
@@ -35,23 +35,23 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Blood glucose | STAT | STAT | ROUTINE | STAT | Hypoglycemia can cause dizziness/lightheadedness; hyperglycemia (diabetic neuropathy); metabolic dizziness | 70-180 mg/dL; hypo/hyperglycemia → correct and reassess |
-| CBC | STAT | STAT | ROUTINE | STAT | Anemia (lightheadedness, presyncope); infection (labyrinthitis); baseline | Normal; anemia (Hgb <10) can cause dizziness; infection markers |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Electrolyte abnormalities (hyponatremia, hypoglycemia); renal dysfunction; dehydration | Normal; hyponatremia <130 can cause neurologic symptoms including imbalance |
-| TSH | - | ROUTINE | ROUTINE | - | Thyroid dysfunction can cause dizziness/imbalance; hyperthyroidism especially | Normal; abnormal → thyroid evaluation |
-| ECG (12-lead) | STAT | STAT | ROUTINE | STAT | Cardiac arrhythmia causing presyncope/dizziness; differentiates cardiac from vestibular | Normal; arrhythmia → cardiac workup; prolonged QTc |
+| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Hypoglycemia can cause dizziness/lightheadedness; hyperglycemia (diabetic neuropathy); metabolic dizziness | 70-180 mg/dL; hypo/hyperglycemia → correct and reassess |
+| CBC (CPT 85025) | STAT | STAT | ROUTINE | STAT | Anemia (lightheadedness, presyncope); infection (labyrinthitis); baseline | Normal; anemia (Hgb <10) can cause dizziness; infection markers |
+| CMP (CPT 80053) (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Electrolyte abnormalities (hyponatremia, hypoglycemia); renal dysfunction; dehydration | Normal; hyponatremia <130 can cause neurologic symptoms including imbalance |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction can cause dizziness/imbalance; hyperthyroidism especially | Normal; abnormal → thyroid evaluation |
+| ECG (12-lead) (CPT 93000) | STAT | STAT | ROUTINE | STAT | Cardiac arrhythmia causing presyncope/dizziness; differentiates cardiac from vestibular | Normal; arrhythmia → cardiac workup; prolonged QTc |
 | Orthostatic vital signs | STAT | STAT | ROUTINE | STAT | Orthostatic hypotension is common cause of dizziness, especially in elderly; drop in SBP >20 or DBP >10 with symptoms | No orthostatic drop; positive orthostatics → volume status, medication review, autonomic evaluation |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Lipid panel | - | ROUTINE | ROUTINE | - | Vascular risk factors if central cause suspected; stroke risk stratification | LDL <70 (high risk) or <100; triglycerides; HDL |
-| HbA1c | - | ROUTINE | ROUTINE | - | Diabetes (vascular risk factor; diabetic neuropathy affecting balance) | <7.0%; elevated → diabetes management |
-| RPR / VDRL | - | - | ROUTINE | - | Neurosyphilis (rare cause of vertigo, especially in HIV); otosyphilis | Negative; positive → CSF analysis, penicillin treatment |
-| Vitamin B12 | - | ROUTINE | ROUTINE | - | B12 deficiency causes peripheral neuropathy and imbalance; subacute combined degeneration | >300 pg/mL; low → supplement and monitor |
-| Ferritin | - | ROUTINE | ROUTINE | - | Iron deficiency (even without anemia) can cause dizziness | >50 ng/mL; low → iron supplementation |
-| ANA / ESR / CRP | - | ROUTINE | ROUTINE | - | Autoimmune inner ear disease; vasculitis (CNS vasculitis affecting posterior circulation) | Normal; elevated → autoimmune/inflammatory workup |
+| Lipid panel (CPT 80061) | - | ROUTINE | ROUTINE | - | Vascular risk factors if central cause suspected; stroke risk stratification | LDL <70 (high risk) or <100; triglycerides; HDL |
+| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Diabetes (vascular risk factor; diabetic neuropathy affecting balance) | <7.0%; elevated → diabetes management |
+| RPR / VDRL (CPT 86592) | - | - | ROUTINE | - | Neurosyphilis (rare cause of vertigo, especially in HIV); otosyphilis | Negative; positive → CSF analysis, penicillin treatment |
+| Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | B12 deficiency causes peripheral neuropathy and imbalance; subacute combined degeneration | >300 pg/mL; low → supplement and monitor |
+| Ferritin (CPT 82728) | - | ROUTINE | ROUTINE | - | Iron deficiency (even without anemia) can cause dizziness | >50 ng/mL; low → iron supplementation |
+| ANA (CPT 86235) / ESR (CPT 85652) / CRP (CPT 86140) | - | ROUTINE | ROUTINE | - | Autoimmune inner ear disease; vasculitis (CNS vasculitis affecting posterior circulation) | Normal; elevated → autoimmune/inflammatory workup |
 | Drug levels (if applicable) | STAT | STAT | ROUTINE | STAT | Ototoxic medications (aminoglycosides, salicylates); anticonvulsant toxicity (phenytoin, carbamazepine) | Therapeutic; toxic levels → adjust or discontinue |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
@@ -59,7 +59,7 @@ SECTION A: ACTION ITEMS
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | FTA-ABS | - | - | ROUTINE | - | Confirmatory for syphilis if RPR positive; otosyphilis/neurosyphilis | Negative |
-| Lyme serology | - | - | ROUTINE | - | Lyme disease can cause cranial neuropathies, including vestibular neuritis; endemic areas | Negative; positive → Western blot confirmation |
+| Lyme serology (CPT 86618) | - | - | ROUTINE | - | Lyme disease can cause cranial neuropathies, including vestibular neuritis; endemic areas | Negative; positive → Western blot confirmation |
 | Anti-GAD65 antibodies | - | - | EXT | - | Cerebellar ataxia; autoimmune cerebellitis | Negative; positive → autoimmune cerebellar disease |
 | Paraneoplastic antibody panel | - | - | EXT | - | Paraneoplastic cerebellar degeneration (anti-Yo, anti-Hu); subacute ataxia with vertigo | Negative; positive → malignancy search |
 | CSF analysis | - | EXT | EXT | - | If infectious, inflammatory, or neoplastic cause suspected; normal in peripheral vestibular disorders | Normal; pleocytosis → infection/inflammation; protein elevation |
@@ -74,30 +74,30 @@ SECTION A: ACTION ITEMS
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | **HINTS exam (Head Impulse, Nystagmus, Test of Skew)** | STAT | STAT | ROUTINE | STAT | **CRITICAL bedside exam**; must be performed in patient with ACUTE VESTIBULAR SYNDROME (continuous vertigo, nausea, nystagmus, gait instability); performed by trained examiner; more sensitive than early MRI for stroke | **Peripheral pattern (benign):** Positive head impulse (catch-up saccade), horizontal nystagmus with unidirectional fast phase, no skew deviation; **Central pattern (concerning for stroke):** Negative/normal head impulse, direction-changing or vertical nystagmus, skew deviation | Cannot perform if patient not having acute continuous vertigo; requires examiner training |
-| CT head without contrast | STAT | STAT | - | STAT | **NOT sensitive for posterior fossa stroke** (sensitivity ~20-40%); useful for hemorrhage; may be appropriate for trauma or if MRI not available; does NOT rule out posterior circulation stroke | Cerebellar or brainstem hemorrhage; mass lesion; hydrocephalus; **NEGATIVE CT does NOT exclude stroke in posterior circulation** | None for non-contrast |
-| MRI brain with DWI | URGENT | URGENT | ROUTINE | URGENT | **Gold standard for posterior circulation stroke**; DWI highly sensitive for acute ischemia; **HOWEVER:** Early MRI (<48h) can miss 12-20% of small posterior fossa strokes — clinical (HINTS) may be more sensitive; repeat MRI if high suspicion and initial negative | Acute infarction (restricted diffusion); brainstem lesion; cerebellar lesion; MS plaque; tumor; vestibular schwannoma | MRI-incompatible implants; severe claustrophobia |
-| MRA head and neck (or CTA) | URGENT | URGENT | ROUTINE | URGENT | If central cause suspected; vertebral artery dissection; basilar artery stenosis; vertebrobasilar insufficiency | Vertebral artery dissection; stenosis; occlusion; aneurysm | MRA: same as MRI; CTA: contrast allergy, renal impairment |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | **NOT sensitive for posterior fossa stroke** (sensitivity ~20-40%); useful for hemorrhage; may be appropriate for trauma or if MRI not available; does NOT rule out posterior circulation stroke | Cerebellar or brainstem hemorrhage; mass lesion; hydrocephalus; **NEGATIVE CT does NOT exclude stroke in posterior circulation** | None for non-contrast |
+| MRI brain with DWI (CPT 70551) | URGENT | URGENT | ROUTINE | URGENT | **Gold standard for posterior circulation stroke**; DWI highly sensitive for acute ischemia; **HOWEVER:** Early MRI (<48h) can miss 12-20% of small posterior fossa strokes — clinical (HINTS) may be more sensitive; repeat MRI if high suspicion and initial negative | Acute infarction (restricted diffusion); brainstem lesion; cerebellar lesion; MS plaque; tumor; vestibular schwannoma | MRI-incompatible implants; severe claustrophobia |
+| MRA head (CPT 70544) and neck (CPT 70547) (or CTA head (CPT 70496) / neck (CPT 70498)) | URGENT | URGENT | ROUTINE | URGENT | If central cause suspected; vertebral artery dissection; basilar artery stenosis; vertebrobasilar insufficiency | Vertebral artery dissection; stenosis; occlusion; aneurysm | MRA: same as MRI; CTA: contrast allergy, renal impairment |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Dix-Hallpike maneuver | STAT | STAT | ROUTINE | STAT | **Diagnostic for BPPV** (posterior canal, most common); performed on ALL patients with episodic positional vertigo; positive if nystagmus and vertigo provoked with latency and limited duration | **Positive:** Upbeating-torsional nystagmus toward affected ear, 2-20 sec latency, <60 sec duration, fatigable with repetition = posterior canal BPPV | Cervical spine disease/instability (modify technique); carotid stenosis (theoretical) |
+| Dix-Hallpike maneuver (CPT 95992) | STAT | STAT | ROUTINE | STAT | **Diagnostic for BPPV** (posterior canal, most common); performed on ALL patients with episodic positional vertigo; positive if nystagmus and vertigo provoked with latency and limited duration | **Positive:** Upbeating-torsional nystagmus toward affected ear, 2-20 sec latency, <60 sec duration, fatigable with repetition = posterior canal BPPV | Cervical spine disease/instability (modify technique); carotid stenosis (theoretical) |
 | Supine roll test (Pagnini-McClure) | STAT | STAT | ROUTINE | STAT | **Diagnostic for horizontal canal BPPV**; patient supine, rapidly turn head 90° to each side; geotropic (toward ground) or apogeotropic (away from ground) horizontal nystagmus | Horizontal nystagmus provoked by head turning; geotropic (canalithiasis) vs. apogeotropic (cupulolithiasis) | Same as Dix-Hallpike |
-| Audiometry | - | URGENT | ROUTINE | - | Essential if hearing loss suspected (Meniere's disease, labyrinthitis, vestibular schwannoma); sudden sensorineural hearing loss is emergency | Meniere's: low-frequency sensorineural hearing loss; Schwannoma: asymmetric sensorineural hearing loss; Labyrinthitis: hearing loss + vertigo | Patient cooperation |
-| Echocardiogram (TTE ± TEE) | - | URGENT | ROUTINE | - | If cardioembolic source suspected for stroke; PFO evaluation; valvular disease | PFO; valve vegetations; thrombus; cardiomyopathy | None (TTE); TEE: esophageal pathology |
-| Holter / Event monitor | - | ROUTINE | ROUTINE | - | If paroxysmal arrhythmia suspected as cause of dizziness; palpitations with dizziness | Arrhythmia during symptoms | None |
-| Carotid ultrasound | - | ROUTINE | ROUTINE | - | Carotid stenosis (though carotid disease rarely causes isolated vertigo without other symptoms) | Stenosis; plaque | None |
+| Audiometry (CPT 92557) | - | URGENT | ROUTINE | - | Essential if hearing loss suspected (Meniere's disease, labyrinthitis, vestibular schwannoma); sudden sensorineural hearing loss is emergency | Meniere's: low-frequency sensorineural hearing loss; Schwannoma: asymmetric sensorineural hearing loss; Labyrinthitis: hearing loss + vertigo | Patient cooperation |
+| Echocardiogram (TTE) (CPT 93306) ± TEE | - | URGENT | ROUTINE | - | If cardioembolic source suspected for stroke; PFO evaluation; valvular disease | PFO; valve vegetations; thrombus; cardiomyopathy | None (TTE); TEE: esophageal pathology |
+| Holter (CPT 93224) / Event monitor (CPT 93268) | - | ROUTINE | ROUTINE | - | If paroxysmal arrhythmia suspected as cause of dizziness; palpitations with dizziness | Arrhythmia during symptoms | None |
+| Carotid ultrasound (CPT 93880) | - | ROUTINE | ROUTINE | - | Carotid stenosis (though carotid disease rarely causes isolated vertigo without other symptoms) | Stenosis; plaque | None |
 
 ### 2C. Rare/Advanced
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Videonystagmography (VNG) / Electronystagmography (ENG) | - | - | ROUTINE | - | Quantitative vestibular function testing; caloric testing (ice water or warm/cool air); localizes peripheral lesion; documents vestibular hypofunction | Unilateral weakness on calorics (peripheral lesion); central patterns | Perforated TM (water calorics) |
+| Videonystagmography (VNG) (CPT 92540) / Electronystagmography (ENG) (CPT 92540) | - | - | ROUTINE | - | Quantitative vestibular function testing; caloric testing (ice water or warm/cool air); localizes peripheral lesion; documents vestibular hypofunction | Unilateral weakness on calorics (peripheral lesion); central patterns | Perforated TM (water calorics) |
 | Video head impulse test (vHIT) | - | - | ROUTINE | - | Quantitative bedside test of vestibulo-ocular reflex; tests individual semicircular canals; more sensitive than bedside HIT | Reduced VOR gain; covert/overt saccades; identifies affected canal | Specialized equipment |
-| Vestibular evoked myogenic potentials (VEMP) | - | - | ROUTINE | - | Tests saccule (cVEMP) and utricle (oVEMP); superior semicircular canal dehiscence; Meniere's | Abnormal in superior canal dehiscence; saccular dysfunction | Hearing loss affects testing |
+| Vestibular evoked myogenic potentials (VEMP) (CPT 92517) | - | - | ROUTINE | - | Tests saccule (cVEMP) and utricle (oVEMP); superior semicircular canal dehiscence; Meniere's | Abnormal in superior canal dehiscence; saccular dysfunction | Hearing loss affects testing |
 | Rotary chair testing | - | - | EXT | - | Quantitative VOR assessment; bilateral vestibular hypofunction | Bilateral vestibular loss; gain/phase abnormalities | Specialized facility |
-| High-resolution CT temporal bones | - | - | ROUTINE | - | Superior semicircular canal dehiscence; cholesteatoma; temporal bone abnormality | Dehiscence of superior canal; bony erosion | Radiation |
+| High-resolution CT temporal bones (CPT 70480) | - | - | ROUTINE | - | Superior semicircular canal dehiscence; cholesteatoma; temporal bone abnormality | Dehiscence of superior canal; bony erosion | Radiation |
 | Electrocochleography (ECoG) | - | - | EXT | - | Meniere's disease confirmation; endolymphatic hydrops | Elevated SP/AP ratio in Meniere's | Requires audiologist |
 
 ### Lumbar Puncture
@@ -118,7 +118,7 @@ SECTION A: ACTION ITEMS
 | **IV fluids** | IV | - | If dehydrated from vomiting; NS or LR bolus then maintenance; assess orthostatic hypotension | - | Supportive care; correct volume depletion | STAT | STAT | - | STAT |
 | **Antiemetics** | IV | - | 4-8 mg :: IV :: - :: Ondansetron 4-8 mg IV/PO; metoclopramide 10 mg IV (avoid in elderly — EPS); prochlorperazine 5-10 mg IV/IM | - | Nausea is often the most debilitating symptom | STAT | STAT | ROUTINE | STAT |
 | **Rule out stroke** | - | - | **If ANY central features on HINTS:** STAT MRI with DWI; vascular imaging (MRA or CTA); neurology/stroke consultation; **Central features:** Normal/negative head impulse test, vertical or direction-changing nystagmus, skew deviation, focal neurologic signs, severe imbalance (cannot walk), hearing loss + vertigo without Meniere's history | - | HINTS is more sensitive than early CT or MRI for posterior circulation stroke; do NOT rely on negative CT to exclude stroke | STAT | STAT | - | STAT |
-| **Epley maneuver (canalith repositioning)** | - | - | 90% :: - :: - :: **For BPPV (positive Dix-Hallpike):** Immediately perform Epley maneuver; highly effective (80-90% single treatment); may repeat if symptoms persist; send home with instructions for home Epley or Brandt-Daroff exercises | - | Epley is definitive treatment for posterior canal BPPV; medications are NOT indicated for BPPV — repositioning maneuvers are the treatment | STAT | STAT | ROUTINE | STAT |
+| **Epley maneuver (canalith repositioning) (CPT 95992)** | - | - | 90% :: - :: - :: **For BPPV (positive Dix-Hallpike):** Immediately perform Epley maneuver; highly effective (80-90% single treatment); may repeat if symptoms persist; send home with instructions for home Epley or Brandt-Daroff exercises | - | Epley is definitive treatment for posterior canal BPPV; medications are NOT indicated for BPPV — repositioning maneuvers are the treatment | STAT | STAT | ROUTINE | STAT |
 
 ### 3B. Disease-Specific Treatment
 
@@ -216,7 +216,7 @@ SECTION A: ACTION ITEMS
 | Recommendation | ED | HOSP | OPD | ICU | Details |
 |---------------|:--:|:----:|:---:|:---:|---------|
 | Video-EEG monitoring | - | - | EXT | - | If seizure (vestibular aura) suspected; temporal lobe epilepsy can cause vertigo/dizziness |
-| Tilt table testing | - | - | ROUTINE | - | If neurally-mediated syncope or POTS suspected; recurrent presyncope |
+| Tilt table testing (CPT 95924) | - | - | ROUTINE | - | If neurally-mediated syncope or POTS suspected; recurrent presyncope |
 | Neuropsychological testing | - | - | EXT | - | If cognitive component suspected; anxiety/depression contributing |
 | Superior canal dehiscence workup | - | - | ROUTINE | - | If sound-induced or pressure-induced vertigo (Tullio phenomenon, Hennebert sign); CT temporal bones; VEMP |
 | Autoimmune inner ear disease workup | - | - | ROUTINE | - | If bilateral vestibular loss, bilateral hearing loss, or systemic autoimmune features; steroids trial |

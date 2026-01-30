@@ -18,7 +18,7 @@ setting: "HOSP, OPD, ICU"
 
 **ICD-10:** G35 (Multiple sclerosis)
 
-**SYNONYMS:** Multiple sclerosis, MS, relapsing-remitting MS, RRMS, secondary progressive MS, SPMS, primary progressive MS, PPMS, demyelinating disease, chronic MS management, MS disease-modifying therapy
+**SYNONYMS:** Multiple sclerosis, MS, relapsing-remitting MS, RRMS, secondary progressive MS, SPMS, primary progressive MS, PPMS, demyelinating disease, chronic MS management, MS disease-modifying therapy, disseminated sclerosis, CNS demyelination
 
 **SCOPE:** Long-term management of multiple sclerosis in adults including disease-modifying therapy (DMT) selection and monitoring, relapse management, symptom management, and pregnancy considerations. Excludes initial diagnosis workup (see MS New Diagnosis template) and acute relapse management as primary focus.
 
@@ -44,28 +44,28 @@ setting: "HOSP, OPD, ICU"
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | - | ROUTINE | ROUTINE | - | Baseline; many DMTs affect counts | Normal |
-| CMP | - | ROUTINE | ROUTINE | - | Hepatic/renal function | Normal |
-| LFTs (AST, ALT, bilirubin) | - | ROUTINE | ROUTINE | - | Baseline for hepatotoxic DMTs | Normal |
-| TSH | - | ROUTINE | ROUTINE | - | Alemtuzumab causes thyroid disease | Normal |
-| Urinalysis | - | ROUTINE | ROUTINE | - | UTI causes pseudorelapse | Negative |
-| Vitamin D (25-OH) | - | ROUTINE | ROUTINE | - | Deficiency common; may affect MS | >30 ng/mL (target 40-60) |
-| Hepatitis B/C serology | - | ROUTINE | ROUTINE | - | Reactivation risk with some DMTs | Document status |
-| HIV | - | ROUTINE | ROUTINE | - | Before immunosuppressive therapy | Negative |
+| CBC with differential (CPT 85025) | - | ROUTINE | ROUTINE | - | Baseline; many DMTs affect counts | Normal |
+| CMP (CPT 80053) | - | ROUTINE | ROUTINE | - | Hepatic/renal function | Normal |
+| LFTs (AST, ALT, bilirubin) (CPT 80076) | - | ROUTINE | ROUTINE | - | Baseline for hepatotoxic DMTs | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Alemtuzumab causes thyroid disease | Normal |
+| Urinalysis (CPT 81003) | - | ROUTINE | ROUTINE | - | UTI causes pseudorelapse | Negative |
+| Vitamin D (25-OH) (CPT 82306) | - | ROUTINE | ROUTINE | - | Deficiency common; may affect MS | >30 ng/mL (target 40-60) |
+| Hepatitis B/C serology (CPT 80074) | - | ROUTINE | ROUTINE | - | Reactivation risk with some DMTs | Document status |
+| HIV (CPT 87389) | - | ROUTINE | ROUTINE | - | Before immunosuppressive therapy | Negative |
 | VZV IgG | - | ROUTINE | ROUTINE | - | Vaccinate if seronegative before DMTs | Document; vaccinate if negative |
-| JC virus antibody (anti-JCV) | - | ROUTINE | ROUTINE | - | PML risk stratification for natalizumab | Document index |
-| Pregnancy test | - | ROUTINE | ROUTINE | - | Most DMTs contraindicated in pregnancy | Negative before starting DMT |
+| JC virus antibody (anti-JCV) (CPT 87798) | - | ROUTINE | ROUTINE | - | PML risk stratification for natalizumab | Document index |
+| Pregnancy test (CPT 84703) | - | ROUTINE | ROUTINE | - | Most DMTs contraindicated in pregnancy | Negative before starting DMT |
 
 ### 1B. Monitoring Labs (On DMT)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC | - | ROUTINE | ROUTINE | - | Lymphopenia (many DMTs), cytopenias | Per DMT thresholds |
-| LFTs | - | ROUTINE | ROUTINE | - | Hepatotoxicity monitoring | Normal |
+| CBC (CPT 85025) | - | ROUTINE | ROUTINE | - | Lymphopenia (many DMTs), cytopenias | Per DMT thresholds |
+| LFTs (CPT 80076) | - | ROUTINE | ROUTINE | - | Hepatotoxicity monitoring | Normal |
 | Lymphocyte count | - | ROUTINE | ROUTINE | - | Critical for many DMTs | Per DMT; usually >200-500 |
-| JCV antibody (if on natalizumab) | - | ROUTINE | ROUTINE | - | PML risk; repeat q6 months | Monitor index |
-| TSH (if on alemtuzumab) | - | ROUTINE | ROUTINE | - | Autoimmune thyroid disease | Normal; monthly × 48 months |
-| Creatinine, urinalysis (alemtuzumab) | - | ROUTINE | ROUTINE | - | Autoimmune nephropathy | Normal; monthly × 48 months |
+| JCV antibody (if on natalizumab) (CPT 87798) | - | ROUTINE | ROUTINE | - | PML risk; repeat q6 months | Monitor index |
+| TSH (if on alemtuzumab) (CPT 84443) | - | ROUTINE | ROUTINE | - | Autoimmune thyroid disease | Normal; monthly × 48 months |
+| Creatinine, urinalysis (alemtuzumab) (CPT 81003) | - | ROUTINE | ROUTINE | - | Autoimmune nephropathy | Normal; monthly × 48 months |
 | Platelet count (alemtuzumab) | - | ROUTINE | ROUTINE | - | ITP risk | Normal; monthly × 48 months |
 
 ---
@@ -76,16 +76,16 @@ setting: "HOSP, OPD, ICU"
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with and without contrast | - | ROUTINE | ROUTINE | - | Baseline, 6 months, then annually | No new/enlarging lesions | Pacemaker, metal; gadolinium in renal disease |
-| MRI cervical spine with and without contrast | - | ROUTINE | ROUTINE | - | Baseline, then PRN or q2-3 years | No new lesions | Same |
-| MRI thoracic spine (if indicated) | - | - | EXT | - | If thoracic symptoms | No new lesions | Same |
+| MRI brain with and without contrast (CPT 70553) | - | ROUTINE | ROUTINE | - | Baseline, 6 months, then annually | No new/enlarging lesions | Pacemaker, metal; gadolinium in renal disease |
+| MRI cervical spine with and without contrast (CPT 72156) | - | ROUTINE | ROUTINE | - | Baseline, then PRN or q2-3 years | No new lesions | Same |
+| MRI thoracic spine (if indicated) (CPT 72157) | - | - | EXT | - | If thoracic symptoms | No new lesions | Same |
 
 ### 2B. Additional Studies
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| OCT (optical coherence tomography) | - | - | ROUTINE | - | Baseline, annually | Stable RNFL thickness | None |
-| Evoked potentials (VEP, SSEP) | - | - | EXT | - | If clinical uncertainty | Baseline; monitor progression | None |
+| OCT (optical coherence tomography) (CPT 92134) | - | - | ROUTINE | - | Baseline, annually | Stable RNFL thickness | None |
+| Evoked potentials (VEP, SSEP) (CPT 95930) | - | - | EXT | - | If clinical uncertainty | Baseline; monitor progression | None |
 | Urodynamic studies | - | - | ROUTINE | - | If bladder symptoms | Characterize dysfunction | None |
 
 ---
@@ -137,9 +137,9 @@ setting: "HOSP, OPD, ICU"
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Methylprednisolone IV | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily × 3-5 days | Active infection (relative), uncontrolled DM | Glucose, BP, sleep, psychiatric | STAT | STAT | ROUTINE | - |
+| Methylprednisolone IV (CPT 96365) | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily × 3-5 days | Active infection (relative), uncontrolled DM | Glucose, BP, sleep, psychiatric | STAT | STAT | ROUTINE | - |
 | Prednisone oral (alternative) | IV | - | 1250 mg :: IV :: daily :: 1250 mg PO daily × 3-5 days (bioequivalent to IV) | Same | Same | - | ROUTINE | ROUTINE | - |
-| Plasma exchange (PLEX) | - | - | 5-7 exchanges over 2 weeks; severe relapse not responding to steroids | Hemodynamic instability | Electrolytes, coagulation | - | STAT | - | - |
+| Plasma exchange (PLEX) (CPT 36514) | - | - | 5-7 exchanges over 2 weeks; severe relapse not responding to steroids | Hemodynamic instability | Electrolytes, coagulation | - | STAT | - | - |
 | ACTH gel (Acthar) | IM | - | 80-120 units :: IM :: daily :: 80-120 units IM daily × 2-3 weeks; alternative to steroids | Same as steroids | Same | - | - | ROUTINE | - |
 
 ### 3F. Symptom Management

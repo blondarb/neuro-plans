@@ -17,7 +17,7 @@ setting: "ED, HOSP, OPD, ICU"
 
 **ICD-10:** G83.4 (Cauda equina syndrome), M48.06 (Spinal stenosis, lumbar region), M51.16 (Intervertebral disc disorders with radiculopathy, lumbar region), M51.17 (Intervertebral disc disorders with radiculopathy, lumbosacral region), G95.89 (Other specified diseases of spinal cord)
 
-**SYNONYMS:** Cauda equina syndrome, CES, cauda equina compression, saddle anesthesia, urinary retention with back pain, bowel/bladder dysfunction, lower spine emergency, cauda equina
+**SYNONYMS:** Cauda equina syndrome, CES, cauda equina compression, saddle anesthesia, saddle anesthesia syndrome, urinary retention with back pain, bowel/bladder dysfunction, lower spine emergency, cauda equina
 
 **SCOPE:** Emergency evaluation and management of cauda equina syndrome in adults. Covers urgent recognition of incomplete vs. complete CES, emergent MRI, surgical decompression timing, etiologic workup (disc herniation, tumor, abscess, hematoma), bladder management, and functional prognostication. Excludes conus medullaris syndrome (partially overlaps — key distinguishing features addressed), malignant epidural spinal cord compression above the conus (separate template), and chronic lumbar stenosis without CES features.
 
@@ -35,26 +35,26 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | - | STAT | Infection (epidural abscess); baseline for surgery; leukocytosis; anemia assessment | Normal; leukocytosis → consider abscess; thrombocytopenia affects surgical candidacy |
-| CMP (BMP + LFTs) | STAT | STAT | - | STAT | Electrolytes; renal function (contrast, NSAIDs); glucose; hepatic function (anesthetic risk) | Normal |
-| PT/INR, aPTT | STAT | STAT | - | STAT | Coagulopathy; anticoagulation status; surgical clearance; epidural hematoma etiology | Normal; INR <1.5 for surgery; prolonged → consider epidural hematoma |
-| ESR / CRP | STAT | STAT | - | STAT | Epidural abscess differential (ESR >20 mm/hr: 94% sensitivity for spinal abscess); discitis; malignancy | Normal; markedly elevated (ESR >30-50, CRP >10) → strongly consider abscess or infection |
-| Blood cultures (x2 sets) | STAT | STAT | - | STAT | Epidural abscess; bacteremia; source identification if infectious etiology suspected | Negative; positive → epidural abscess or hematogenous source |
-| Blood glucose | STAT | STAT | - | STAT | Baseline; anesthetic risk; diabetic patients at increased disc herniation and infection risk | <180 mg/dL |
-| Type and screen | STAT | STAT | - | STAT | Surgical candidacy; blood product availability for emergency decompression | On file |
-| Urinalysis | STAT | STAT | - | STAT | UTI (common comorbidity and mimicker of urinary symptoms); neurogenic bladder assessment; baseline | Normal; UTI may coexist — treat but do NOT attribute bladder dysfunction solely to UTI if CES features present |
-| Pregnancy test (β-hCG) | STAT | STAT | - | STAT | MRI and anesthetic planning; pregnancy may exacerbate disc herniation (increased lordosis/weight) | Negative; if positive → MRI still indicated (no gadolinium needed for CES diagnosis) |
-| Procalcitonin | STAT | STAT | - | STAT | Bacterial infection differential (more specific than CRP); if abscess suspected | <0.25 (low bacterial probability); >0.5 → consider abscess |
+| CBC with differential (CPT 85025) | STAT | STAT | - | STAT | Infection (epidural abscess); baseline for surgery; leukocytosis; anemia assessment | Normal; leukocytosis → consider abscess; thrombocytopenia affects surgical candidacy |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | - | STAT | Electrolytes; renal function (contrast, NSAIDs); glucose; hepatic function (anesthetic risk) | Normal |
+| PT/INR, aPTT (CPT 85610, 85730) | STAT | STAT | - | STAT | Coagulopathy; anticoagulation status; surgical clearance; epidural hematoma etiology | Normal; INR <1.5 for surgery; prolonged → consider epidural hematoma |
+| ESR / CRP (CPT 85652, 86140) | STAT | STAT | - | STAT | Epidural abscess differential (ESR >20 mm/hr: 94% sensitivity for spinal abscess); discitis; malignancy | Normal; markedly elevated (ESR >30-50, CRP >10) → strongly consider abscess or infection |
+| Blood cultures (x2 sets) (CPT 87040) | STAT | STAT | - | STAT | Epidural abscess; bacteremia; source identification if infectious etiology suspected | Negative; positive → epidural abscess or hematogenous source |
+| Blood glucose (CPT 82947) | STAT | STAT | - | STAT | Baseline; anesthetic risk; diabetic patients at increased disc herniation and infection risk | <180 mg/dL |
+| Type and screen (CPT 86900) | STAT | STAT | - | STAT | Surgical candidacy; blood product availability for emergency decompression | On file |
+| Urinalysis (CPT 81003) | STAT | STAT | - | STAT | UTI (common comorbidity and mimicker of urinary symptoms); neurogenic bladder assessment; baseline | Normal; UTI may coexist — treat but do NOT attribute bladder dysfunction solely to UTI if CES features present |
+| Pregnancy test (β-hCG) (CPT 84703) | STAT | STAT | - | STAT | MRI and anesthetic planning; pregnancy may exacerbate disc herniation (increased lordosis/weight) | Negative; if positive → MRI still indicated (no gadolinium needed for CES diagnosis) |
+| Procalcitonin (CPT 84145) | STAT | STAT | - | STAT | Bacterial infection differential (more specific than CRP); if abscess suspected | <0.25 (low bacterial probability); >0.5 → consider abscess |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| HbA1c | - | ROUTINE | ROUTINE | - | Diabetes assessment (risk factor for disc herniation, infection, neuropathy); post-operative wound healing | <7.0% |
+| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Diabetes assessment (risk factor for disc herniation, infection, neuropathy); post-operative wound healing | <7.0% |
 | Tumor markers (PSA, CEA, etc.) | - | ROUTINE | ROUTINE | - | If imaging suggests neoplastic etiology rather than disc herniation | Normal; elevated → guides oncologic workup |
-| SPEP / free light chains | - | ROUTINE | ROUTINE | - | Multiple myeloma presenting as cauda equina compression | No M-protein; normal kappa/lambda ratio |
+| SPEP / free light chains (CPT 86334) | - | ROUTINE | ROUTINE | - | Multiple myeloma presenting as cauda equina compression | No M-protein; normal kappa/lambda ratio |
 | LDH | - | ROUTINE | ROUTINE | - | Lymphoma; tumor burden | Normal; elevated → lymphoma, aggressive malignancy |
-| HIV | - | ROUTINE | ROUTINE | - | Immunocompromised → infection risk; primary CNS lymphoma differential | Negative |
+| HIV (CPT 87389) | - | ROUTINE | ROUTINE | - | Immunocompromised → infection risk; primary CNS lymphoma differential | Negative |
 | Urine culture | STAT | STAT | - | STAT | Pre-existing UTI; post-catheterization planning; differentiate neurogenic bladder from UTI | Negative; if positive → treat but continue CES workup |
 | Post-void residual (PVR) — bladder scan | STAT | STAT | ROUTINE | STAT | KEY DIAGNOSTIC TEST: bladder retention is hallmark of CES; PVR >200 mL is highly concerning; >500 mL strongly suggestive of neurogenic retention | PVR <100 mL (normal); PVR >200 mL → significant retention; >500 mL → almost certainly neurogenic |
 
@@ -77,8 +77,8 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI lumbar spine without contrast (emergent) | STAT | STAT | - | STAT | **Within 4 hours of ED arrival — SURGICAL EMERGENCY; ideally within 1 hour**; extends to thoracolumbar junction (T10-sacrum) to include conus medullaris | Large disc herniation (most common — 45% of CES cases) compressing cauda equina; canal compromise; level of compression; number of roots compressed; disc fragment migration; tumor, abscess, or hematoma as alternative cause; conus medullaris location and signal | MRI-incompatible implants; severe claustrophobia (sedate — do NOT delay MRI for anxiety); GFR <30 for contrast (but contrast NOT required for disc herniation diagnosis — obtain non-contrast first) |
-| MRI lumbar spine WITH contrast (gadolinium) | STAT | STAT | - | STAT | Add contrast if: suspected abscess, tumor, or inflammatory etiology; ring-enhancing epidural collection = abscess; homogeneous enhancement = tumor; nerve root enhancement = inflammatory/neoplastic | Epidural abscess (ring enhancement, restricted diffusion); tumor (enhancing mass); nerve root enhancement (inflammatory, leptomeningeal disease); distinguish from disc herniation (which does NOT enhance) | GFR <30 (gadolinium risk — benefit outweighs risk in emergency); gadolinium allergy (premedicate) |
+| MRI lumbar spine without contrast (emergent) (CPT 72148) | STAT | STAT | - | STAT | **Within 4 hours of ED arrival — SURGICAL EMERGENCY; ideally within 1 hour**; extends to thoracolumbar junction (T10-sacrum) to include conus medullaris | Large disc herniation (most common — 45% of CES cases) compressing cauda equina; canal compromise; level of compression; number of roots compressed; disc fragment migration; tumor, abscess, or hematoma as alternative cause; conus medullaris location and signal | MRI-incompatible implants; severe claustrophobia (sedate — do NOT delay MRI for anxiety); GFR <30 for contrast (but contrast NOT required for disc herniation diagnosis — obtain non-contrast first) |
+| MRI lumbar spine WITH contrast (gadolinium) (CPT 72158) | STAT | STAT | - | STAT | Add contrast if: suspected abscess, tumor, or inflammatory etiology; ring-enhancing epidural collection = abscess; homogeneous enhancement = tumor; nerve root enhancement = inflammatory/neoplastic | Epidural abscess (ring enhancement, restricted diffusion); tumor (enhancing mass); nerve root enhancement (inflammatory, leptomeningeal disease); distinguish from disc herniation (which does NOT enhance) | GFR <30 (gadolinium risk — benefit outweighs risk in emergency); gadolinium allergy (premedicate) |
 | Bladder scan (post-void residual) | STAT | STAT | - | STAT | **Before MRI if possible — critical triage tool**; have patient attempt to void → immediate bladder ultrasound for PVR | PVR >200 mL = significant retention → HIGH probability of CES; PVR >500 mL = almost certain neurogenic retention; normal PVR does NOT exclude early/incomplete CES | None (bedside ultrasound) |
 | Plain radiographs (lumbar spine AP/lateral) | STAT | STAT | - | STAT | While awaiting MRI; identifies vertebral collapse, spondylolisthesis, fracture, alignment; limited value but rapid triage tool | Disc space narrowing; spondylolisthesis; fracture; alignment abnormality; NOTE: X-rays CANNOT diagnose disc herniation — MRI is required | Pregnancy (shield abdomen) |
 
@@ -86,12 +86,12 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT lumbar spine without contrast | STAT | STAT | - | STAT | If MRI not available or contraindicated; inferior to MRI for soft tissue but shows bone and canal narrowing; CT myelogram if MRI impossible | Disc herniation (seen as soft tissue density in canal); bone fragments; canal diameter; fracture; spondylolisthesis | CT alone has limited sensitivity for disc herniation vs. MRI; myelogram adds invasive risk |
-| CT myelogram | STAT | STAT | - | STAT | If MRI absolutely contraindicated (implant); intrathecal contrast via LP → CT; demonstrates level of block and root compression | Complete or partial block; compressed cauda equina roots; level and extent of compression; may miss small free fragments | LP contraindicated if abscess suspected at LP site; coagulopathy; rare but important if MRI impossible |
+| CT lumbar spine without contrast (CPT 72131) | STAT | STAT | - | STAT | If MRI not available or contraindicated; inferior to MRI for soft tissue but shows bone and canal narrowing; CT myelogram if MRI impossible | Disc herniation (seen as soft tissue density in canal); bone fragments; canal diameter; fracture; spondylolisthesis | CT alone has limited sensitivity for disc herniation vs. MRI; myelogram adds invasive risk |
+| CT myelogram (CPT 72132) | STAT | STAT | - | STAT | If MRI absolutely contraindicated (implant); intrathecal contrast via LP → CT; demonstrates level of block and root compression | Complete or partial block; compressed cauda equina roots; level and extent of compression; may miss small free fragments | LP contraindicated if abscess suspected at LP site; coagulopathy; rare but important if MRI impossible |
 | MRI whole spine | - | URGENT | - | URGENT | If etiology unclear; evaluate for additional levels of disease; concurrent cord compression; tumor staging; multilevel disc disease | Additional sites of compression; intramedullary lesion (conus); multifocal disease | Same as lumbar MRI |
 | Urodynamic studies | - | - | ROUTINE | - | Post-acute phase; quantify bladder dysfunction; detrusor areflexia (CES pattern); plan long-term bladder management | Detrusor areflexia (areflexic bladder) = cauda equina denervation; decreased bladder sensation; increased capacity; poor emptying | Acute UTI; recent surgery (timing per surgeon) |
 | Anal manometry / pudendal nerve testing | - | - | EXT | - | Quantify sphincter dysfunction; prognostic for recovery; pudendal nerve conduction | Reduced anal sphincter pressures; denervated pudendal nerve | Patient tolerance; acute phase may not be appropriate |
-| EMG/NCS (lower extremities + paraspinal) | - | - | ROUTINE | - | 2-3 weeks post-onset (acute denervation takes 2-3 weeks to appear on EMG); prognosis; differentiate from peripheral neuropathy or plexopathy | Bilateral L4-S4 denervation; reduced CMAP amplitudes in bilateral L5/S1 distribution; absent H-reflexes bilaterally; bilateral pudendal neuropathy | Too early in acute phase (<2 weeks = may be false negative for denervation); patient tolerance |
+| EMG/NCS (lower extremities + paraspinal) (CPT 95886, 95907-95913) | - | - | ROUTINE | - | 2-3 weeks post-onset (acute denervation takes 2-3 weeks to appear on EMG); prognosis; differentiate from peripheral neuropathy or plexopathy | Bilateral L4-S4 denervation; reduced CMAP amplitudes in bilateral L5/S1 distribution; absent H-reflexes bilaterally; bilateral pudendal neuropathy | Too early in acute phase (<2 weeks = may be false negative for denervation); patient tolerance |
 
 ### 2C. Rare/Advanced
 
@@ -99,7 +99,7 @@ SECTION A: ACTION ITEMS
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | CT angiography (lumbar) | - | EXT | - | EXT | If vascular malformation suspected (spinal dural AV fistula causing venous hypertension → CES symptoms); progressive myelopathy/CES with dilated serpiginous vessels on MRI | Spinal AV fistula; AVM; arteriovenous malformation feeding vessels | Contrast allergy; renal impairment |
 | Spinal angiography | - | EXT | EXT | - | Definitive diagnosis and treatment of spinal dural AV fistula; also pre-operative embolization for vascular tumors | Fistula location; endovascular treatment candidate | Invasive; contrast risk; radiation exposure |
-| PET/CT | - | - | EXT | - | If malignancy causing CES — staging; unknown primary identification | Primary tumor; metastatic burden | Uncontrolled diabetes; pregnancy |
+| PET/CT (CPT 78816) | - | - | EXT | - | If malignancy causing CES — staging; unknown primary identification | Primary tumor; metastatic burden | Uncontrolled diabetes; pregnancy |
 | Cystometrogram | - | - | EXT | - | Formal bladder function assessment; post-decompression recovery monitoring; long-term bladder management planning | Bladder compliance; detrusor function; capacity; sensation thresholds | Active UTI |
 
 ### Lumbar Puncture

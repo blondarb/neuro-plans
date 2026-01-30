@@ -18,7 +18,7 @@ setting: "HOSP, OPD, ICU"
 
 **ICD-10:** G44.40 (Drug-induced headache, not elsewhere classified, not intractable), G44.41 (Drug-induced headache, not elsewhere classified, intractable)
 
-**SYNONYMS:** Medication overuse headache, MOH, rebound headache, analgesic overuse headache, drug-induced headache, medication-induced headache, chronic daily headache from medication overuse, transformed migraine
+**SYNONYMS:** Medication overuse headache, MOH, rebound headache, analgesic overuse headache, drug-induced headache, medication-induced headache, chronic daily headache from medication overuse, transformed migraine, analgesic rebound headache, triptan overuse headache, opioid overuse headache, ergotamine overuse headache, butalbital overuse headache, painkiller headache, medication misuse headache, CDH, chronic daily headache
 
 **SCOPE:** Diagnosis and management of medication overuse headache in adults. Covers identification of offending medications, withdrawal strategies, preventive medication initiation, and relapse prevention. Excludes primary headache disorders without overuse component, and headache due to medication side effects (not overuse).
 
@@ -59,18 +59,18 @@ setting: "HOSP, OPD, ICU"
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC | - | ROUTINE | ROUTINE | - | Baseline; anemia can contribute to headache | Normal |
-| CMP | - | ROUTINE | ROUTINE | - | Electrolytes, renal/hepatic function (chronic NSAID/acetaminophen use) | Normal |
-| TSH | - | ROUTINE | ROUTINE | - | Thyroid dysfunction | Normal |
+| CBC (CPT 85025) | - | ROUTINE | ROUTINE | - | Baseline; anemia can contribute to headache | Normal |
+| CMP (CPT 80053) | - | ROUTINE | ROUTINE | - | Electrolytes, renal/hepatic function (chronic NSAID/acetaminophen use) | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction | Normal |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| LFTs | - | ROUTINE | ROUTINE | - | If chronic acetaminophen use | Normal |
-| BUN/Creatinine | - | ROUTINE | ROUTINE | - | If chronic NSAID use | Normal |
-| ESR/CRP | - | ROUTINE | ROUTINE | - | If inflammatory/secondary cause suspected | Normal |
-| Urine drug screen | - | ROUTINE | ROUTINE | - | If opioid overuse/diversion suspected | Document |
+| LFTs (CPT 80076) | - | ROUTINE | ROUTINE | - | If chronic acetaminophen use | Normal |
+| BUN/Creatinine (CPT 82565) | - | ROUTINE | ROUTINE | - | If chronic NSAID use | Normal |
+| ESR (CPT 85652) / CRP (CPT 86140) | - | ROUTINE | ROUTINE | - | If inflammatory/secondary cause suspected | Normal |
+| Urine drug screen (CPT 80307) | - | ROUTINE | ROUTINE | - | If opioid overuse/diversion suspected | Document |
 
 ### 1C. Rare/Specialized
 
@@ -86,13 +86,13 @@ setting: "HOSP, OPD, ICU"
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain without contrast | - | ROUTINE | ROUTINE | - | If not previously done; red flags | Rule out secondary causes | Pacemaker, metal |
+| MRI brain without contrast (CPT 70551) | - | ROUTINE | ROUTINE | - | If not previously done; red flags | Rule out secondary causes | Pacemaker, metal |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with contrast | - | ROUTINE | ROUTINE | - | If mass, infection suspected | Rule out structural cause | Contrast allergy, renal disease |
+| MRI brain with contrast (CPT 70552) | - | ROUTINE | ROUTINE | - | If mass, infection suspected | Rule out structural cause | Contrast allergy, renal disease |
 | MRV | - | EXT | EXT | - | If IIH suspected | Patent venous sinuses | Per MRI |
 
 ---
@@ -123,9 +123,9 @@ setting: "HOSP, OPD, ICU"
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| IV DHE protocol | IV | - | 0.5-1 mg :: IV :: q8h :: DHE 0.5-1 mg IV q8h × 3-5 days (with metoclopramide 10 mg IV pretreatment) | CAD, CVA, uncontrolled HTN, pregnancy, triptans <24h | BP, nausea, EKG | - | STAT | - | - |
+| IV DHE protocol (CPT 96365) | IV | - | 0.5-1 mg :: IV :: q8h :: DHE 0.5-1 mg IV q8h × 3-5 days (with metoclopramide 10 mg IV pretreatment) | CAD, CVA, uncontrolled HTN, pregnancy, triptans <24h | BP, nausea, EKG | - | STAT | - | - |
 | IV magnesium | IV | - | 1-2 g :: IV :: daily :: 1-2 g IV daily × 3-5 days | Renal failure | Mg levels | - | ROUTINE | - | - |
-| IV ketorolac | IV | - | 15-30 mg :: IV :: q6h :: 15-30 mg IV q6h × 2-3 days (max 5 days) | Renal disease, GI bleeding | Renal function | - | ROUTINE | - | - |
+| IV ketorolac (CPT 96374) | IV | - | 15-30 mg :: IV :: q6h :: 15-30 mg IV q6h × 2-3 days (max 5 days) | Renal disease, GI bleeding | Renal function | - | ROUTINE | - | - |
 | IV valproate | IV | - | 500-1000 mg :: IV :: BID :: 500-1000 mg IV BID × 3-5 days | Pregnancy, hepatic disease | Ammonia, LFTs | - | ROUTINE | - | - |
 | IV diphenhydramine | IV | - | 25-50 mg :: IV :: q6h :: 25-50 mg IV q6h with antiemetics | Glaucoma | Sedation | - | ROUTINE | - | - |
 | Opioid taper protocol | - | - | Structured taper with addiction medicine if significant dependence | N/A | Withdrawal symptoms | - | ROUTINE | - | - |
@@ -139,7 +139,7 @@ setting: "HOSP, OPD, ICU"
 | Amitriptyline | - | - | 10-25 mg :: PO :: QHS :: Start 10-25 mg QHS; titrate to 50-100 mg QHS | - | Cardiac arrhythmia, glaucoma | QTc, sedation | - | ROUTINE | ROUTINE | - |
 | Propranolol | PO | - | 40 mg :: PO :: BID :: Start 40 mg BID; titrate to 80-160 mg/day | - | Asthma, heart block, bradycardia | HR, BP | - | ROUTINE | ROUTINE | - |
 | Venlafaxine XR | PO | - | 37.5 mg :: PO :: daily :: Start 37.5 mg daily; titrate to 75-150 mg daily | - | Uncontrolled HTN, MAOIs | BP | - | ROUTINE | ROUTINE | - |
-| OnabotulinumtoxinA | IM | - | 155-195 units :: IM :: - :: 155-195 units IM q12 weeks (if chronic migraine criteria met) | - | Infection at site, myasthenia | Spread of effect | - | - | ROUTINE | - |
+| OnabotulinumtoxinA (CPT J0585) | IM | - | 155-195 units :: IM :: - :: 155-195 units IM q12 weeks (if chronic migraine criteria met) | - | Infection at site, myasthenia | Spread of effect | - | - | ROUTINE | - |
 | CGRP monoclonal antibodies | SC | - | 70-140 mg :: SC :: monthly :: Erenumab 70-140 mg SC monthly; Fremanezumab 225 mg monthly or 675 mg quarterly; Galcanezumab 240 mg load then 120 mg monthly | - | Hypersensitivity | Constipation (erenumab), injection reactions | - | - | ROUTINE | - |
 | Valproate | PO | - | 250-500 mg :: PO :: BID :: Start 250-500 mg BID; titrate to 500-1000 mg BID | - | Pregnancy, hepatic disease | LFTs, ammonia, weight | - | ROUTINE | ROUTINE | - |
 

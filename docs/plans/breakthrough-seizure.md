@@ -15,9 +15,9 @@ setting: "ED, HOSP, OPD, ICU"
 
 **DIAGNOSIS:** Breakthrough Seizure in Known Epilepsy
 
-**ICD-10:** G40.909 (Epilepsy, unspecified, not intractable, without status epilepticus), G40.901 (Epilepsy, unspecified, not intractable, with status epilepticus), G40.919 (Epilepsy, unspecified, intractable, without status epilepticus), R56.9 (Unspecified convulsions)
+**ICD-10:** G40.909 (Epilepsy, unspecified, not intractable, without status epilepticus), G40.901 (Epilepsy, unspecified, not intractable, with status epilepticus), G40.919 (Epilepsy, unspecified, intractable, without status epilepticus), G40.911 (Epilepsy, unspecified, intractable, with status epilepticus), R56.9 (Unspecified convulsions), G40.309 (Generalized idiopathic epilepsy, not intractable, without status epilepticus), G40.209 (Localization-related epilepsy, not intractable, without status epilepticus)
 
-**SYNONYMS:** Breakthrough seizure, seizure in known epilepsy, recurrent seizure, uncontrolled seizure, epilepsy exacerbation, seizure on medications, drug-resistant epilepsy, refractory epilepsy, seizure despite treatment
+**SYNONYMS:** Breakthrough seizure, seizure in known epilepsy, recurrent seizure, uncontrolled seizure, epilepsy exacerbation, seizure on medications, drug-resistant epilepsy, refractory epilepsy, seizure despite treatment, BTS, non-adherence seizure, subtherapeutic seizure, epilepsy flare, seizure cluster, catamenial seizure, seizure recurrence, poorly controlled epilepsy, intractable epilepsy, pharmacoresistant epilepsy, DRE
 
 **SCOPE:** Evaluation and management of breakthrough seizures in adults with known epilepsy who are on established antiseizure medication (ASM) regimens. Covers identification of precipitants, medication level assessment, adjustment strategies, and evaluation for secondary causes. Excludes new-onset seizure (separate workup), status epilepticus (see SE template), and non-epileptic events (psychogenic non-epileptic seizures).
 
@@ -36,29 +36,29 @@ SECTION A: ACTION ITEMS
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Antiseizure medication (ASM) levels | STAT | STAT | ROUTINE | STAT | **CRITICAL**: Subtherapeutic levels are #1 cause of breakthrough seizures; check ALL ASMs with available assays | Therapeutic ranges (see Appendix); subtherapeutic = adjust dose or assess adherence |
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Infection as precipitant; baseline for ASM hematologic effects; thrombocytopenia (valproate) | Normal; leukocytosis → infection workup; low platelets → consider valproate toxicity |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Electrolyte abnormalities (hyponatremia common with carbamazepine/oxcarbazepine); renal function (affects ASM dosing); hepatic function (ASM metabolism, toxicity); glucose (hypoglycemia as seizure cause) | Normal; hyponatremia <130 mEq/L can provoke seizures; elevated LFTs → ASM hepatotoxicity |
-| Blood glucose | STAT | STAT | ROUTINE | STAT | Hypoglycemia is reversible seizure cause; hyperglycemia (DKA) can also cause seizures | 70-180 mg/dL; hypoglycemia <60 mg/dL → treat immediately |
-| Sodium | STAT | STAT | ROUTINE | STAT | Hyponatremia: carbamazepine and oxcarbazepine cause SIADH; <125-130 mEq/L can provoke seizures | 135-145 mEq/L; <130 → correct slowly (risk of osmotic demyelination) |
-| Calcium (ionized) | STAT | STAT | ROUTINE | STAT | Hypocalcemia can cause seizures; also check if hypocalcemic tetany suspected | Normal ionized Ca; low → replete |
-| Magnesium | STAT | STAT | ROUTINE | STAT | Hypomagnesemia lowers seizure threshold; chronic ASM use may deplete Mg | >2.0 mg/dL; low → replete |
-| Urinalysis | STAT | STAT | ROUTINE | STAT | UTI is common occult infection that provokes seizures, especially in elderly | Normal; pyuria/bacteriuria → treat UTI |
-| Urine drug screen (UDS) | STAT | STAT | - | STAT | Illicit drug use (cocaine, amphetamines) can provoke seizures; drug interactions with ASMs; adherence assessment | Negative; positive → specific drug-related seizure risk assessment |
-| Alcohol level | STAT | - | - | STAT | Alcohol withdrawal seizures; intoxication; binge drinking | Negative or low; elevated or history of recent heavy use → alcohol withdrawal protocol |
-| Pregnancy test (β-hCG) | STAT | STAT | ROUTINE | STAT | Pregnancy affects ASM levels (increased clearance, volume distribution); teratogenicity concerns; seizure risk in pregnancy | Document result; if positive → urgent neurology/OB consultation; ASM teratogenicity counseling |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Infection as precipitant; baseline for ASM hematologic effects; thrombocytopenia (valproate) | Normal; leukocytosis → infection workup; low platelets → consider valproate toxicity |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | STAT | Electrolyte abnormalities (hyponatremia common with carbamazepine/oxcarbazepine); renal function (affects ASM dosing); hepatic function (ASM metabolism, toxicity); glucose (hypoglycemia as seizure cause) | Normal; hyponatremia <130 mEq/L can provoke seizures; elevated LFTs → ASM hepatotoxicity |
+| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Hypoglycemia is reversible seizure cause; hyperglycemia (DKA) can also cause seizures | 70-180 mg/dL; hypoglycemia <60 mg/dL → treat immediately |
+| Sodium (CPT 84295) | STAT | STAT | ROUTINE | STAT | Hyponatremia: carbamazepine and oxcarbazepine cause SIADH; <125-130 mEq/L can provoke seizures | 135-145 mEq/L; <130 → correct slowly (risk of osmotic demyelination) |
+| Calcium, ionized (CPT 82330) | STAT | STAT | ROUTINE | STAT | Hypocalcemia can cause seizures; also check if hypocalcemic tetany suspected | Normal ionized Ca; low → replete |
+| Magnesium (CPT 83735) | STAT | STAT | ROUTINE | STAT | Hypomagnesemia lowers seizure threshold; chronic ASM use may deplete Mg | >2.0 mg/dL; low → replete |
+| Urinalysis (CPT 81003) | STAT | STAT | ROUTINE | STAT | UTI is common occult infection that provokes seizures, especially in elderly | Normal; pyuria/bacteriuria → treat UTI |
+| Urine drug screen (UDS) (CPT 80307) | STAT | STAT | - | STAT | Illicit drug use (cocaine, amphetamines) can provoke seizures; drug interactions with ASMs; adherence assessment | Negative; positive → specific drug-related seizure risk assessment |
+| Alcohol level (CPT 80320) | STAT | - | - | STAT | Alcohol withdrawal seizures; intoxication; binge drinking | Negative or low; elevated or history of recent heavy use → alcohol withdrawal protocol |
+| Pregnancy test (β-hCG) (CPT 84703) | STAT | STAT | ROUTINE | STAT | Pregnancy affects ASM levels (increased clearance, volume distribution); teratogenicity concerns; seizure risk in pregnancy | Document result; if positive → urgent neurology/OB consultation; ASM teratogenicity counseling |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Free (unbound) ASM levels | - | URGENT | ROUTINE | URGENT | For highly protein-bound drugs (phenytoin, valproate) in patients with hypoalbuminemia, renal failure, pregnancy, or polypharmacy; free level is the active fraction | Free phenytoin: 1-2 mcg/mL; free valproate: 5-15 mcg/mL; adjusted interpretation based on clinical context |
-| Ammonia | STAT | STAT | - | STAT | Valproate-induced hyperammonemic encephalopathy (can occur with normal LFTs); confusion/lethargy post-ictal vs. encephalopathy | <35 μmol/L; elevated → valproate toxicity; consider discontinuation |
-| Lactate | STAT | STAT | - | STAT | Post-ictal lactate elevation (typically resolves within 2h); persistent elevation may indicate status epilepticus or alternative cause | Mildly elevated post-ictal (normalizes quickly); persistent elevation concerning |
+| Ammonia (CPT 82140) | STAT | STAT | - | STAT | Valproate-induced hyperammonemic encephalopathy (can occur with normal LFTs); confusion/lethargy post-ictal vs. encephalopathy | <35 μmol/L; elevated → valproate toxicity; consider discontinuation |
+| Lactate (CPT 83605) | STAT | STAT | - | STAT | Post-ictal lactate elevation (typically resolves within 2h); persistent elevation may indicate status epilepticus or alternative cause | Mildly elevated post-ictal (normalizes quickly); persistent elevation concerning |
 | Prolactin | - | URGENT | ROUTINE | - | Elevated 10-20 min post-seizure (2-3x baseline); helps distinguish epileptic seizure from psychogenic non-epileptic seizure (PNES); must be drawn within 20 min | 2-3x baseline within 20 min of convulsive seizure; normal in PNES |
-| TSH | - | ROUTINE | ROUTINE | - | Thyroid dysfunction can affect seizure threshold and ASM metabolism | Normal |
-| Cortisol (AM) | - | ROUTINE | ROUTINE | - | Adrenal insufficiency; chronic ASM use (enzyme inducers) may affect cortisol | Normal |
-| B12 / Folate | - | ROUTINE | ROUTINE | - | Phenytoin and carbamazepine can deplete folate; B12 deficiency neuropathy; pregnancy planning | Normal; low → supplement |
-| Vitamin D (25-OH) | - | ROUTINE | ROUTINE | - | Enzyme-inducing ASMs (phenytoin, carbamazepine, phenobarbital) increase vitamin D metabolism → osteoporosis risk | >30 ng/mL; low → supplement |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction can affect seizure threshold and ASM metabolism | Normal |
+| Cortisol (AM) (CPT 82533) | - | ROUTINE | ROUTINE | - | Adrenal insufficiency; chronic ASM use (enzyme inducers) may affect cortisol | Normal |
+| B12 (CPT 82607) / Folate (CPT 82746) | - | ROUTINE | ROUTINE | - | Phenytoin and carbamazepine can deplete folate; B12 deficiency neuropathy; pregnancy planning | Normal; low → supplement |
+| Vitamin D, 25-OH (CPT 82306) | - | ROUTINE | ROUTINE | - | Enzyme-inducing ASMs (phenytoin, carbamazepine, phenobarbital) increase vitamin D metabolism → osteoporosis risk | >30 ng/mL; low → supplement |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
@@ -78,19 +78,19 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head without contrast | STAT | STAT | - | STAT | **NOT routinely needed** for uncomplicated breakthrough seizure in known epilepsy with return to baseline; **INDICATED if:** Head trauma (fall during seizure), prolonged post-ictal state (>30 min), focal neurologic deficit, new seizure semiology, anticoagulation, fever + seizure, first seizure at this facility | Acute hemorrhage; mass lesion; edema; hydrocephalus; prior surgical changes | None (for non-contrast); pregnancy (benefit outweighs minimal risk) |
-| MRI brain with and without contrast | - | URGENT | ROUTINE | - | **NOT acutely needed** if stable known epilepsy with unchanged seizures; **INDICATED if:** Change in seizure semiology, increased seizure frequency without clear precipitant, new focal deficit, concern for progressive lesion, presurgical evaluation | Tumor; mesial temporal sclerosis; cortical dysplasia; vascular malformation; new structural cause | MRI-incompatible implants; VNS devices (check MRI compatibility of specific device) |
-| ECG (12-lead) | STAT | STAT | ROUTINE | STAT | Post-ictal arrhythmia; syncope vs. seizure; QTc prolongation (some ASMs); baseline for ASM changes | Normal; arrhythmia may indicate cardiac cause; prolonged QTc (avoid QT-prolonging ASMs) | None |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | **NOT routinely needed** for uncomplicated breakthrough seizure in known epilepsy with return to baseline; **INDICATED if:** Head trauma (fall during seizure), prolonged post-ictal state (>30 min), focal neurologic deficit, new seizure semiology, anticoagulation, fever + seizure, first seizure at this facility | Acute hemorrhage; mass lesion; edema; hydrocephalus; prior surgical changes | None (for non-contrast); pregnancy (benefit outweighs minimal risk) |
+| MRI brain with and without contrast (CPT 70553) | - | URGENT | ROUTINE | - | **NOT acutely needed** if stable known epilepsy with unchanged seizures; **INDICATED if:** Change in seizure semiology, increased seizure frequency without clear precipitant, new focal deficit, concern for progressive lesion, presurgical evaluation | Tumor; mesial temporal sclerosis; cortical dysplasia; vascular malformation; new structural cause | MRI-incompatible implants; VNS devices (check MRI compatibility of specific device) |
+| ECG (12-lead) (CPT 93000) | STAT | STAT | ROUTINE | STAT | Post-ictal arrhythmia; syncope vs. seizure; QTc prolongation (some ASMs); baseline for ASM changes | Normal; arrhythmia may indicate cardiac cause; prolonged QTc (avoid QT-prolonging ASMs) | None |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| EEG (routine/outpatient) | - | URGENT | ROUTINE | - | Within 24-48h if possible (higher yield closer to seizure); characterize epileptiform activity; confirm epileptic vs. non-epileptic; guide ASM choice; localization | Epileptiform discharges (spikes, sharp waves); focal vs. generalized; specific epilepsy syndrome features | None |
-| Continuous EEG (cEEG) monitoring | - | STAT | - | STAT | **INDICATED if:** Prolonged or fluctuating alteration of consciousness; concern for nonconvulsive status epilepticus (NCSE); ICU patient with unexplained encephalopathy; frequent seizures | Ictal patterns; NCSE; interictal epileptiform activity; quantify seizure burden | None; resource-dependent |
+| EEG (routine/outpatient) (CPT 95816) | - | URGENT | ROUTINE | - | Within 24-48h if possible (higher yield closer to seizure); characterize epileptiform activity; confirm epileptic vs. non-epileptic; guide ASM choice; localization | Epileptiform discharges (spikes, sharp waves); focal vs. generalized; specific epilepsy syndrome features | None |
+| Continuous EEG (cEEG) monitoring (CPT 95700) | - | STAT | - | STAT | **INDICATED if:** Prolonged or fluctuating alteration of consciousness; concern for nonconvulsive status epilepticus (NCSE); ICU patient with unexplained encephalopathy; frequent seizures | Ictal patterns; NCSE; interictal epileptiform activity; quantify seizure burden | None; resource-dependent |
 | Ambulatory EEG (outpatient) | - | - | ROUTINE | - | Capture typical events if infrequent; home monitoring for 24-72h or longer | Ictal events; interictal discharges; seizure frequency | Patient cooperation required |
 | Video-EEG monitoring (EMU admission) | - | - | ROUTINE | - | Characterize events if diagnostic uncertainty (epileptic vs. PNES); presurgical evaluation; medication taper for surgery | Ictal semiology; EEG correlation; localization for surgery | Requires specialized unit |
-| Chest X-ray | STAT | STAT | - | STAT | Aspiration pneumonia (common post-ictal complication); ETT position if intubated | Infiltrate; aspiration pattern | None |
+| Chest X-ray (CPT 71046) | STAT | STAT | - | STAT | Aspiration pneumonia (common post-ictal complication); ETT position if intubated | Infiltrate; aspiration pattern | None |
 
 ### 2C. Rare/Advanced
 
@@ -115,7 +115,7 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| **Benzodiazepine (if actively seizing)** | IV | - | 0.1 mg/kg :: IV :: - :: **Lorazepam** 0.1 mg/kg IV (max 4 mg), may repeat x1 in 5 min; **OR Midazolam** 10 mg IM (if no IV access); **OR Diazepam** 0.2 mg/kg IV (max 10 mg); **Intranasal midazolam** 5-10 mg if no IV; **Rectal diazepam** 0.2-0.5 mg/kg (home rescue) | - | First-line for acute seizure termination; lorazepam preferred IV (longer CNS duration); follow status epilepticus protocol if seizure continues >5 min | STAT | STAT | - | STAT |
+| **Benzodiazepine (if actively seizing)** (CPT 96374) | IV | - | 0.1 mg/kg :: IV :: - :: **Lorazepam** 0.1 mg/kg IV (max 4 mg), may repeat x1 in 5 min; **OR Midazolam** 10 mg IM (if no IV access); **OR Diazepam** 0.2 mg/kg IV (max 10 mg); **Intranasal midazolam** 5-10 mg if no IV; **Rectal diazepam** 0.2-0.5 mg/kg (home rescue) | - | First-line for acute seizure termination; lorazepam preferred IV (longer CNS duration); follow status epilepticus protocol if seizure continues >5 min | STAT | STAT | - | STAT |
 | **Protect patient during seizure** | - | - | Clear environment of hazards; DO NOT restrain or put anything in mouth; turn on side (recovery position) when safe; suction secretions; monitor airway; time the seizure | - | Prevent injury; prepare for airway management if prolonged | STAT | STAT | - | STAT |
 | **Post-ictal care** | - | - | 92% :: - :: - :: Recovery position; monitor airway (aspiration risk); supplemental O2 if SpO2 <92%; assess for injuries (tongue laceration, shoulder dislocation, vertebral fracture); reassurance; reorientation | - | Post-ictal period is self-limited (typically 5-30 min); prolonged alteration → consider NCSE, repeat seizure, or alternative diagnosis | STAT | STAT | - | STAT |
 | **Administer home ASM (if missed)** | - | - | If patient missed doses → give maintenance ASM immediately; if patient does not have medication with them → administer from ED/hospital supply | - | Non-adherence is most common cause of breakthrough seizure; restoring therapeutic levels is priority | STAT | STAT | - | STAT |

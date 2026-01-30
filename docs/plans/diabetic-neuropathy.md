@@ -16,9 +16,9 @@ setting: "HOSP, OPD, ICU"
 
 **DIAGNOSIS:** Diabetic Neuropathy
 
-**ICD-10:** E11.40 (Type 2 diabetes with diabetic neuropathy, unspecified), E11.41 (Type 2 diabetes with diabetic mononeuropathy), E11.42 (Type 2 diabetes with diabetic polyneuropathy), E10.40-E10.42 (Type 1 equivalents), G63.2 (Diabetic polyneuropathy)
+**ICD-10:** E11.40 (Type 2 diabetes with diabetic neuropathy, unspecified), E11.41 (Type 2 diabetes with diabetic mononeuropathy), E11.42 (Type 2 diabetes with diabetic polyneuropathy), E10.40-E10.42 (Type 1 equivalents), G63.2 (Diabetic polyneuropathy), G62.9 (Polyneuropathy, unspecified)
 
-**SYNONYMS:** Diabetic peripheral neuropathy, DPN, diabetic polyneuropathy, diabetic sensorimotor neuropathy, diabetic autonomic neuropathy, painful diabetic neuropathy, PDN, diabetic amyotrophy, diabetic lumbosacral radiculoplexus neuropathy, DLRPN, proximal diabetic neuropathy
+**SYNONYMS:** Diabetic peripheral neuropathy, DPN, diabetic polyneuropathy, diabetic sensorimotor neuropathy, diabetic autonomic neuropathy, painful diabetic neuropathy, PDN, diabetic amyotrophy, diabetic lumbosacral radiculoplexus neuropathy, DLRPN, proximal diabetic neuropathy, diabetic nerve damage
 
 **SCOPE:** Evaluation and management of diabetic neuropathy in adults including distal symmetric polyneuropathy (most common), painful diabetic neuropathy, diabetic autonomic neuropathy, and focal/multifocal neuropathies. Applies to ED, hospital, and outpatient settings.
 
@@ -44,33 +44,33 @@ setting: "HOSP, OPD, ICU"
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| HbA1c | - | ROUTINE | ROUTINE | - | Glycemic control; correlates with neuropathy risk | <7% (individualized) |
-| Fasting glucose | ROUTINE | ROUTINE | ROUTINE | - | Current glycemic status | 80-130 mg/dL |
-| BMP (electrolytes, creatinine, BUN) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Renal function; uremic neuropathy | Normal |
-| CBC | ROUTINE | ROUTINE | ROUTINE | - | Anemia (B12 deficiency) | Normal |
-| Vitamin B12 | - | ROUTINE | ROUTINE | - | Metformin causes B12 deficiency; coexistent deficiency | >400 pg/mL |
-| Methylmalonic acid (MMA) | - | ROUTINE | ROUTINE | - | If B12 borderline (200-400) | Normal |
-| TSH | - | ROUTINE | ROUTINE | - | Hypothyroid neuropathy | Normal |
-| Lipid panel | - | ROUTINE | ROUTINE | - | Dyslipidemia contributes to neuropathy | LDL <100 (or <70 if ASCVD) |
+| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Glycemic control; correlates with neuropathy risk | <7% (individualized) |
+| Fasting glucose (CPT 82947) | ROUTINE | ROUTINE | ROUTINE | - | Current glycemic status | 80-130 mg/dL |
+| BMP (CPT 80048) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Renal function; uremic neuropathy | Normal |
+| CBC (CPT 85025) | ROUTINE | ROUTINE | ROUTINE | - | Anemia (B12 deficiency) | Normal |
+| Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | Metformin causes B12 deficiency; coexistent deficiency | >400 pg/mL |
+| Methylmalonic acid (MMA) (CPT 83921) | - | ROUTINE | ROUTINE | - | If B12 borderline (200-400) | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Hypothyroid neuropathy | Normal |
+| Lipid panel (CPT 80061) | - | ROUTINE | ROUTINE | - | Dyslipidemia contributes to neuropathy | LDL <100 (or <70 if ASCVD) |
 
 ### 1B. Extended Labs (Atypical Presentations)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| SPEP/UPEP with immunofixation | - | ROUTINE | ROUTINE | - | Monoclonal gammopathy-associated neuropathy | No M-spike |
+| SPEP/UPEP with immunofixation (CPT 86334, 86335) | - | ROUTINE | ROUTINE | - | Monoclonal gammopathy-associated neuropathy | No M-spike |
 | Serum free light chains | - | ROUTINE | ROUTINE | - | If SPEP negative but suspicion | Normal ratio |
-| Liver function tests | - | ROUTINE | ROUTINE | - | Hepatic disease, alcohol | Normal |
-| HIV | - | ROUTINE | EXT | - | If risk factors | Negative |
-| RPR/VDRL | - | ROUTINE | EXT | - | Syphilis if atypical | Nonreactive |
-| ESR, CRP | - | ROUTINE | EXT | - | Inflammatory/vasculitic neuropathy | Normal |
-| ANA | - | - | EXT | - | If connective tissue disease suspected | Negative |
-| Anti-GAD65, IA-2 antibodies | - | - | EXT | - | If type uncertain; LADA | Document |
+| Liver function tests (CPT 80076) | - | ROUTINE | ROUTINE | - | Hepatic disease, alcohol | Normal |
+| HIV (CPT 87389) | - | ROUTINE | EXT | - | If risk factors | Negative |
+| RPR/VDRL (CPT 86592) | - | ROUTINE | EXT | - | Syphilis if atypical | Nonreactive |
+| ESR (CPT 85652), CRP (CPT 86140) | - | ROUTINE | EXT | - | Inflammatory/vasculitic neuropathy | Normal |
+| ANA (CPT 86235) | - | - | EXT | - | If connective tissue disease suspected | Negative |
+| Anti-GAD65, IA-2 antibodies (CPT 86235) | - | - | EXT | - | If type uncertain; LADA | Document |
 
 ### 1C. Specialized Labs (Diabetic Amyotrophy/Atypical)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CSF analysis | - | EXT | EXT | - | Elevated protein in DLRPN; r/o inflammatory | Mild protein elevation in DLRPN |
+| CSF analysis (CPT 89051, 84157, 82945) | - | EXT | EXT | - | Elevated protein in DLRPN; r/o inflammatory | Mild protein elevation in DLRPN |
 | Paraneoplastic panel | - | EXT | EXT | - | If rapid progression, weight loss | Negative |
 
 ---
@@ -81,32 +81,32 @@ setting: "HOSP, OPD, ICU"
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Nerve conduction studies (NCS) | - | ROUTINE | ROUTINE | - | Baseline; atypical cases | Axonal sensorimotor polyneuropathy | Pacemaker (relative); anticoagulation (relative) |
-| Electromyography (EMG) | - | ROUTINE | ROUTINE | - | If motor involvement; amyotrophy | Denervation in affected muscles | Active infection at site |
+| Nerve conduction studies (NCS) (CPT 95907-95913) | - | ROUTINE | ROUTINE | - | Baseline; atypical cases | Axonal sensorimotor polyneuropathy | Pacemaker (relative); anticoagulation (relative) |
+| Electromyography (EMG) (CPT 95886) | - | ROUTINE | ROUTINE | - | If motor involvement; amyotrophy | Denervation in affected muscles | Active infection at site |
 | Quantitative sensory testing (QST) | - | - | EXT | - | Small fiber neuropathy; research | Abnormal thermal thresholds | None |
 
 ### 2B. Autonomic Testing
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Cardiovascular autonomic reflex tests | - | - | ROUTINE | - | If CAN suspected | Abnormal HR variability, Valsalva ratio | Arrhythmias |
-| Tilt table test | - | - | ROUTINE | - | Orthostatic hypotension evaluation | Orthostatic BP drop without HR rise | Severe coronary disease |
-| Sudomotor function (QSART) | - | - | EXT | - | Sudomotor dysfunction | Reduced sweat output | None |
+| Cardiovascular autonomic reflex tests (CPT 95924) | - | - | ROUTINE | - | If CAN suspected | Abnormal HR variability, Valsalva ratio | Arrhythmias |
+| Tilt table test (CPT 95924) | - | - | ROUTINE | - | Orthostatic hypotension evaluation | Orthostatic BP drop without HR rise | Severe coronary disease |
+| Sudomotor function (QSART) (CPT 95924) | - | - | EXT | - | Sudomotor dysfunction | Reduced sweat output | None |
 | Gastric emptying study | - | - | ROUTINE | - | If gastroparesis suspected | Delayed emptying | None |
 
 ### 2C. Small Fiber Neuropathy Assessment
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Skin punch biopsy (IENFD) | - | - | ROUTINE | - | Small fiber neuropathy; normal NCS | Reduced intraepidermal nerve fiber density | Anticoagulation (relative) |
+| Skin punch biopsy (IENFD) (CPT 11104) | - | - | ROUTINE | - | Small fiber neuropathy; normal NCS | Reduced intraepidermal nerve fiber density | Anticoagulation (relative) |
 | Corneal confocal microscopy | - | - | EXT | - | Non-invasive small fiber assessment | Reduced corneal nerve fiber density | None |
 
 ### 2D. Imaging (Select Cases)
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI lumbosacral plexus | - | ROUTINE | EXT | - | Diabetic amyotrophy; asymmetric weakness | Plexus/root enhancement in DLRPN | Pacemaker, metal |
-| MRI spine | URGENT | URGENT | EXT | - | R/o structural if myelopathy suspected | R/o compression | Same |
+| MRI lumbosacral plexus (CPT 72148) | - | ROUTINE | EXT | - | Diabetic amyotrophy; asymmetric weakness | Plexus/root enhancement in DLRPN | Pacemaker, metal |
+| MRI spine (CPT 72141) | URGENT | URGENT | EXT | - | R/o structural if myelopathy suspected | R/o compression | Same |
 
 ---
 
@@ -184,8 +184,8 @@ setting: "HOSP, OPD, ICU"
 | Glycemic control | - | - | Optimize; avoid rapid correction | Per diabetes management | HbA1c | - | ROUTINE | ROUTINE | - |
 | Physical therapy | - | - | Prevent contractures; strengthen | None | Function | - | ROUTINE | ROUTINE | - |
 | Pain management | - | - | Per neuropathic pain algorithm | Per agent | Per agent | - | ROUTINE | ROUTINE | - |
-| IVIG (severe/refractory) | PO | - | 2 g/kg :: PO :: - :: 2 g/kg over 2-5 days; may repeat | IgA deficiency | Renal function; infusion reactions | - | ROUTINE | EXT | - |
-| Methylprednisolone | IV | - | 1 g :: IV :: daily :: 1 g IV daily × 3-5 days; taper (may use if IVIG unavailable) | Uncontrolled DM (relative) | Glucose; infection | - | ROUTINE | EXT | - |
+| IVIG (severe/refractory) (CPT 96365) | PO | - | 2 g/kg :: PO :: - :: 2 g/kg over 2-5 days; may repeat | IgA deficiency | Renal function; infusion reactions | - | ROUTINE | EXT | - |
+| Methylprednisolone (CPT 96374) | IV | - | 1 g :: IV :: daily :: 1 g IV daily × 3-5 days; taper (may use if IVIG unavailable) | Uncontrolled DM (relative) | Glucose; infection | - | ROUTINE | EXT | - |
 
 ---
 

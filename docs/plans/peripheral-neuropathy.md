@@ -16,7 +16,7 @@ setting: "HOSP, OPD, ICU"
 
 **DIAGNOSIS:** Peripheral Neuropathy - New Diagnosis/Evaluation
 
-**ICD-10:** G62.9 (Polyneuropathy, unspecified); G60.9 (Hereditary and idiopathic neuropathy, unspecified); G62.0 (Drug-induced polyneuropathy); G62.1 (Alcoholic polyneuropathy); G63 (Polyneuropathy in diseases classified elsewhere)
+**ICD-10:** G62.9 (Polyneuropathy, unspecified); G60.0 (Hereditary motor and sensory neuropathy); G60.9 (Hereditary and idiopathic neuropathy, unspecified); G62.0 (Drug-induced polyneuropathy); G62.1 (Alcoholic polyneuropathy); G63 (Polyneuropathy in diseases classified elsewhere)
 
 **SYNONYMS:** Peripheral neuropathy, polyneuropathy, neuropathy, peripheral nerve disease, neuropathic disorder, sensorimotor neuropathy, distal symmetric polyneuropathy, DSPN, axonal neuropathy, demyelinating neuropathy, nerve damage
 
@@ -36,36 +36,36 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Anemia (B12), infection, malignancy screen | Normal |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Renal dysfunction (uremic neuropathy), hepatic disease, electrolytes | Normal |
-| Fasting glucose | STAT | STAT | ROUTINE | STAT | Diabetes screening | <100 mg/dL |
-| HbA1c | URGENT | ROUTINE | ROUTINE | URGENT | Diabetes/prediabetes (most common cause) | <5.7% |
-| Vitamin B12 | URGENT | ROUTINE | ROUTINE | URGENT | B12 deficiency neuropathy | >300 pg/mL |
-| Methylmalonic acid (MMA) | - | ROUTINE | ROUTINE | - | If B12 borderline (200-400); more sensitive | Normal |
-| Folate | URGENT | ROUTINE | ROUTINE | URGENT | Folate deficiency | Normal |
-| TSH | URGENT | ROUTINE | ROUTINE | URGENT | Hypothyroidism causes neuropathy | Normal (0.4-4.0 mIU/L) |
-| ESR | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory/vasculitic process | Normal (<20 mm/hr) |
-| CRP | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory marker | Normal |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Anemia (B12), infection, malignancy screen | Normal |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | STAT | Renal dysfunction (uremic neuropathy), hepatic disease, electrolytes | Normal |
+| Fasting glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Diabetes screening | <100 mg/dL |
+| HbA1c (CPT 83036) | URGENT | ROUTINE | ROUTINE | URGENT | Diabetes/prediabetes (most common cause) | <5.7% |
+| Vitamin B12 (CPT 82607) | URGENT | ROUTINE | ROUTINE | URGENT | B12 deficiency neuropathy | >300 pg/mL |
+| Methylmalonic acid (MMA) (CPT 83921) | - | ROUTINE | ROUTINE | - | If B12 borderline (200-400); more sensitive | Normal |
+| Folate (CPT 82746) | URGENT | ROUTINE | ROUTINE | URGENT | Folate deficiency | Normal |
+| TSH (CPT 84443) | URGENT | ROUTINE | ROUTINE | URGENT | Hypothyroidism causes neuropathy | Normal (0.4-4.0 mIU/L) |
+| ESR (CPT 85652) | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory/vasculitic process | Normal (<20 mm/hr) |
+| CRP (CPT 86140) | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory marker | Normal |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Oral glucose tolerance test (2-hour) | - | ROUTINE | ROUTINE | - | Detects IGT missed by FBG/HbA1c; high yield in idiopathic neuropathy (34-62% have abnormal OGTT) | <140 mg/dL at 2h |
-| Serum protein electrophoresis (SPEP) with immunofixation | - | ROUTINE | ROUTINE | - | Monoclonal gammopathy (MGUS, myeloma) | No M-spike |
-| 24-hour urine protein electrophoresis (UPEP) | - | ROUTINE | ROUTINE | - | Light chain disease | No monoclonal protein |
+| Serum protein electrophoresis (SPEP) with immunofixation (CPT 86334) | - | ROUTINE | ROUTINE | - | Monoclonal gammopathy (MGUS, myeloma) | No M-spike |
+| 24-hour urine protein electrophoresis (UPEP) (CPT 86335) | - | ROUTINE | ROUTINE | - | Light chain disease | No monoclonal protein |
 | Free light chains (kappa/lambda) | - | ROUTINE | ROUTINE | - | AL amyloidosis, light chain deposition | Normal ratio (0.26-1.65) |
-| Vitamin B1 (thiamine) | - | ROUTINE | ROUTINE | - | Alcoholism, malnutrition, bariatric surgery | Normal |
+| Vitamin B1 (thiamine) (CPT 84425) | - | ROUTINE | ROUTINE | - | Alcoholism, malnutrition, bariatric surgery | Normal |
 | Vitamin B6 (pyridoxine) | - | ROUTINE | ROUTINE | - | Deficiency OR toxicity (>200 mg/day) causes neuropathy | Normal (5-50 ng/mL) |
 | Vitamin E | - | ROUTINE | ROUTINE | - | Malabsorption, cholestasis | Normal |
-| Copper | - | ROUTINE | ROUTINE | - | Copper deficiency (zinc excess, bariatric surgery) | Normal |
-| Zinc | - | ROUTINE | ROUTINE | - | Zinc excess suppresses copper | Normal |
-| HIV antibody | - | ROUTINE | ROUTINE | - | HIV-associated distal sensory polyneuropathy | Negative |
-| Hepatitis B surface antigen/antibody | - | ROUTINE | ROUTINE | - | Hepatitis B-associated PAN, cryoglobulinemia | Negative |
-| Hepatitis C antibody | - | ROUTINE | ROUTINE | - | HCV-associated cryoglobulinemia, vasculitic neuropathy | Negative |
+| Copper (CPT 82390) | - | ROUTINE | ROUTINE | - | Copper deficiency (zinc excess, bariatric surgery) | Normal |
+| Zinc (CPT 84630) | - | ROUTINE | ROUTINE | - | Zinc excess suppresses copper | Normal |
+| HIV antibody (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated distal sensory polyneuropathy | Negative |
+| Hepatitis B surface antigen/antibody (CPT 80074) | - | ROUTINE | ROUTINE | - | Hepatitis B-associated PAN, cryoglobulinemia | Negative |
+| Hepatitis C antibody (CPT 80074) | - | ROUTINE | ROUTINE | - | HCV-associated cryoglobulinemia, vasculitic neuropathy | Negative |
 | Lyme serology (endemic areas) | - | ROUTINE | ROUTINE | - | Lyme neuroborreliosis | Negative |
-| ANA | - | ROUTINE | ROUTINE | - | Connective tissue disease screen | Negative or low titer |
-| RPR/VDRL | - | ROUTINE | ROUTINE | - | Syphilitic neuropathy | Negative |
+| ANA (CPT 86235) | - | ROUTINE | ROUTINE | - | Connective tissue disease screen | Negative or low titer |
+| RPR/VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Syphilitic neuropathy | Negative |
 | Rheumatoid factor | - | ROUTINE | ROUTINE | - | Rheumatoid vasculitis | Negative |
 | Anti-SSA/SSB (Ro/La) | - | ROUTINE | ROUTINE | - | SjÃƒÂ¶gren syndrome (small fiber) | Negative |
 | ACE level | - | ROUTINE | ROUTINE | - | Sarcoidosis | Normal |
@@ -74,14 +74,14 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Anti-MAG antibody | - | EXT | EXT | - | IgM paraproteinemic neuropathy | Negative |
-| Anti-ganglioside antibodies (GM1, GD1a, GD1b, GQ1b) | - | EXT | EXT | - | If motor-predominant or acute onset (GBS variants) | Negative |
-| Paraneoplastic panel | - | EXT | EXT | - | Subacute sensory neuronopathy, weight loss, smoking | Negative (Anti-Hu, CV2) |
+| Anti-MAG antibody (CPT 86255) | - | EXT | EXT | - | IgM paraproteinemic neuropathy | Negative |
+| Anti-ganglioside antibodies (GM1, GD1a, GD1b, GQ1b) (CPT 86255) | - | EXT | EXT | - | If motor-predominant or acute onset (GBS variants) | Negative |
+| Paraneoplastic panel (CPT 86255) | - | EXT | EXT | - | Subacute sensory neuronopathy, weight loss, smoking | Negative (Anti-Hu, CV2) |
 | Cryoglobulins | - | EXT | EXT | - | Hepatitis C, autoimmune, vasculitic neuropathy | Negative |
 | Anti-CASPR2, Anti-LGI1 | - | EXT | EXT | - | Neuromyotonia, Morvan syndrome | Negative |
 | Fat pad or sural nerve biopsy | - | EXT | EXT | - | Amyloidosis, vasculitis, CIDP variants | No amyloid or vasculitis |
 | Genetic testing (CMT panel, TTR gene) | - | - | EXT | - | Hereditary neuropathy, familial amyloidosis | No pathogenic variant |
-| Skin punch biopsy for IENFD | - | - | EXT | - | Small fiber neuropathy confirmation | >8.8 fibers/mm (varies by site/age) |
+| Skin punch biopsy for IENFD (CPT 11104) | - | - | EXT | - | Small fiber neuropathy confirmation | >8.8 fibers/mm (varies by site/age) |
 | Heavy metal panel (lead, arsenic, thallium, mercury) | - | EXT | EXT | - | Occupational/environmental exposure | Normal |
 
 ---
@@ -92,7 +92,7 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Nerve conduction studies (NCS) and EMG | - | ROUTINE | ROUTINE | - | Optimal 3-4 weeks after symptom onset (allows Wallerian degeneration to manifest); can be done earlier if acute weakness suspected | Pattern determines axonal vs demyelinating, distribution, severity | Pacemaker (relative); anticoagulation for needle EMG (relative) |
+| Nerve conduction studies (NCS) (CPT 95907-95913) and EMG (CPT 95886) | - | ROUTINE | ROUTINE | - | Optimal 3-4 weeks after symptom onset (allows Wallerian degeneration to manifest); can be done earlier if acute weakness suspected | Pattern determines axonal vs demyelinating, distribution, severity | Pacemaker (relative); anticoagulation for needle EMG (relative) |
 
 ### 2B. Extended
 
@@ -103,17 +103,17 @@ SECTION A: ACTION ITEMS
 | MRI brachial plexus with contrast | - | ROUTINE | ROUTINE | - | Brachial plexopathy, Parsonage-Turner syndrome | Plexus enhancement, denervation changes | Same as above |
 | Autonomic function testing (QSART, tilt table, HRV) | - | - | ROUTINE | - | Autonomic symptoms (orthostasis, anhidrosis, GI dysmotility) | Abnormal sudomotor or cardiovagal function | None significant |
 | Quantitative sensory testing (QST) | - | - | EXT | - | Small fiber neuropathy evaluation | Abnormal thermal thresholds | None significant |
-| Chest X-ray | URGENT | ROUTINE | ROUTINE | URGENT | Lung cancer (paraneoplastic), sarcoidosis | Normal | Pregnancy (relative) |
+| Chest X-ray (CPT 71046) | URGENT | ROUTINE | ROUTINE | URGENT | Lung cancer (paraneoplastic), sarcoidosis | Normal | Pregnancy (relative) |
 | CT chest/abdomen/pelvis | - | ROUTINE | ROUTINE | - | Occult malignancy if paraneoplastic suspected | No mass | Contrast allergy, renal impairment |
 
 ### 2C. Rare/Specialized
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| PET-CT | - | EXT | EXT | - | Occult malignancy, amyloidosis | No FDG-avid lesions | Pregnancy, uncontrolled diabetes |
+| PET-CT (CPT 78816) | - | EXT | EXT | - | Occult malignancy, amyloidosis | No FDG-avid lesions | Pregnancy, uncontrolled diabetes |
 | Nerve ultrasound | - | EXT | ROUTINE | - | CIDP (nerve enlargement), entrapment | Normal nerve caliber | None |
 | MR neurography | - | EXT | EXT | - | Focal nerve pathology, plexopathy | Normal nerve signal/caliber | Same as MRI |
-| Sural nerve biopsy | - | EXT | - | - | Vasculitic neuropathy, amyloidosis, CIDP | No vasculitis or amyloid deposits | Coagulopathy |
+| Sural nerve biopsy (CPT 64795) | - | EXT | - | - | Vasculitic neuropathy, amyloidosis, CIDP | No vasculitis or amyloid deposits | Coagulopathy |
 
 ### LUMBAR PUNCTURE
 
@@ -127,11 +127,11 @@ SECTION A: ACTION ITEMS
 |-------|:--:|:----:|:---:|-----------|----------------|
 | Opening pressure | URGENT | ROUTINE | ROUTINE | Rule out elevated ICP | 10-20 cm H2O |
 | Cell count (tubes 1 and 4) | URGENT | ROUTINE | ROUTINE | Inflammation, infection | WBC <5, RBC 0 |
-| Protein | URGENT | ROUTINE | ROUTINE | Albuminocytologic dissociation in GBS/CIDP | Normal 15-45 mg/dL; elevated in GBS/CIDP |
-| Glucose with serum glucose | URGENT | ROUTINE | ROUTINE | Infection, carcinomatous meningitis | Normal (>60% serum) |
+| Protein (CPT 84157) | URGENT | ROUTINE | ROUTINE | Albuminocytologic dissociation in GBS/CIDP | Normal 15-45 mg/dL; elevated in GBS/CIDP |
+| Glucose with serum glucose (CPT 82945) | URGENT | ROUTINE | ROUTINE | Infection, carcinomatous meningitis | Normal (>60% serum) |
 | Gram stain and culture | URGENT | ROUTINE | ROUTINE | Rule out infection | No organisms |
-| Cytology | - | ROUTINE | ROUTINE | Leptomeningeal carcinomatosis | Negative |
-| VDRL (CSF) | - | ROUTINE | ROUTINE | Neurosyphilis | Negative |
+| Cytology (CPT 88104) | - | ROUTINE | ROUTINE | Leptomeningeal carcinomatosis | Negative |
+| VDRL (CSF) (CPT 86592) | - | ROUTINE | ROUTINE | Neurosyphilis | Negative |
 | Lyme PCR/antibody index | - | ROUTINE | ROUTINE | Endemic areas | Negative |
 
 **Special Handling:** Cytology requires rapid transport (<1 hour).
@@ -208,7 +208,7 @@ SECTION A: ACTION ITEMS
 | IVIG | PO | CIDP, MMN, GBS | 2 g/kg :: PO :: - :: 2 g/kg divided over 2-5 days (induction); maintenance 0.4-1 g/kg every 2-4 weeks | - | IgA deficiency (use IgA-depleted product); renal failure; thrombosis risk | Renal function, headache, thrombosis, infusion reactions | - | URGENT | ROUTINE | URGENT |
 | Plasma exchange (PLEX) | - | CIDP, GBS | 5-7 exchanges over 10-14 days | - | Hemodynamic instability, sepsis | BP, electrolytes, coags, fibrinogen | - | URGENT | - | URGENT |
 | Prednisone | PO | CIDP, vasculitic neuropathy | 1 mg/kg :: PO :: - :: 1 mg/kg/day (max 80 mg) Ãƒâ€” 4-6 weeks; taper over 3-6 months | - | Active untreated infection, uncontrolled diabetes, psychosis | Glucose, BP, mood, bone density with prolonged use | - | ROUTINE | ROUTINE | - |
-| Rituximab | IV | Anti-MAG neuropathy, vasculitic neuropathy, refractory CIDP | 375 mg :: IV :: - :: 375 mg/mÃ‚Â² IV weekly Ãƒâ€” 4 weeks OR 1000 mg IV Ãƒâ€” 2 doses 14 days apart | - | Active hepatitis B; active infection | Hepatitis B serology, infusion reactions, infection monitoring | - | EXT | EXT | - |
+| Rituximab (CPT 96365) | IV | Anti-MAG neuropathy, vasculitic neuropathy, refractory CIDP | 375 mg :: IV :: - :: 375 mg/mÃ‚Â² IV weekly Ãƒâ€” 4 weeks OR 1000 mg IV Ãƒâ€” 2 doses 14 days apart | - | Active hepatitis B; active infection | Hepatitis B serology, infusion reactions, infection monitoring | - | EXT | EXT | - |
 | Azathioprine | PO | Steroid-sparing for CIDP, vasculitis | 50 mg :: PO :: daily :: Start 50 mg daily; increase to 2-3 mg/kg/day over weeks | - | TPMT deficiency (test before starting); pregnancy | CBC weekly Ãƒâ€” 1 month, then q2-4 weeks; LFTs monthly; TPMT genotype | - | EXT | ROUTINE | - |
 | Mycophenolate mofetil | PO | Steroid-sparing for CIDP, vasculitis | 500 mg :: PO :: BID :: 500 mg BID Ãƒâ€” 2 weeks, then 1000 mg BID | - | Pregnancy (teratogenic); concurrent azathioprine | CBC q2 weeks Ãƒâ€” 3 months, then monthly; GI upset | - | EXT | ROUTINE | - |
 | Cyclophosphamide | IV | Vasculitic neuropathy (severe) | 1-2 mg/kg :: IV :: monthly :: 1-2 mg/kg/day PO OR 500-1000 mg/mÃ‚Â² IV monthly Ãƒâ€” 6 months | - | Pregnancy; bone marrow suppression; active infection | CBC weekly; urinalysis (hemorrhagic cystitis); cumulative dose limit | - | EXT | EXT | - |

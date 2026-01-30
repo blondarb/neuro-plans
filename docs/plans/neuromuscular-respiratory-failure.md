@@ -17,7 +17,7 @@ setting: "HOSP, OPD, ICU"
 
 **ICD-10:** G70.00 (Myasthenia gravis without exacerbation), G70.01 (Myasthenia gravis with exacerbation), G61.0 (Guillain-Barré syndrome), J96.00 (Acute respiratory failure, unspecified hypoxia/hypercapnia), G71.0 (Muscular dystrophy), G12.21 (Amyotrophic lateral sclerosis)
 
-**SYNONYMS:** Neuromuscular respiratory failure, NMRF, respiratory failure from weakness, GBS respiratory failure, myasthenic respiratory failure, NIF less than 20, FVC less than 20, impending respiratory failure, neuromuscular ventilatory failure
+**SYNONYMS:** Neuromuscular respiratory failure, NMRF, respiratory failure from weakness, GBS respiratory failure, myasthenic respiratory failure, NIF less than 20, FVC less than 20, impending respiratory failure, neuromuscular ventilatory failure, ventilatory failure, diaphragmatic weakness
 
 **SCOPE:** Emergency evaluation and management of respiratory failure from neuromuscular disorders in adults. Covers recognition of impending respiratory failure, monitoring parameters (FVC, NIF), indications for intubation, non-invasive ventilation (NIV) considerations, disease-specific treatments (myasthenia gravis crisis, GBS, ALS, muscular dystrophy, other myopathies), and weaning considerations. Excludes central causes of respiratory failure (brainstem stroke, sedative overdose) and primary pulmonary causes (pneumonia, ARDS, COPD exacerbation).
 
@@ -35,18 +35,18 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Arterial blood gas (ABG) | STAT | STAT | - | STAT | **CRITICAL**: Assess ventilation (PaCO2) and oxygenation (PaO2); hypercapnia (PaCO2 >45) indicates hypoventilation; respiratory acidosis = severe; PaO2/FiO2 ratio | Normal: pH 7.35-7.45, PaCO2 35-45, PaO2 >80; **Hypercapnia with respiratory acidosis = impending/current respiratory failure** — consider intubation |
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Infection (pneumonia as trigger or complication); baseline; anemia (reduces O2 carrying capacity) | Normal; leukocytosis → infection; anemia → correct |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Electrolytes (K, Mg, Ca, Phos — all affect muscle function); renal function; glucose | Normal; hypokalemia, hypophosphatemia, hypomagnesemia, hypocalcemia can all worsen neuromuscular weakness |
-| Magnesium | STAT | STAT | ROUTINE | STAT | Hypomagnesemia worsens neuromuscular junction transmission and muscle weakness | >2.0 mg/dL; replete if low |
-| Phosphorus | STAT | STAT | ROUTINE | STAT | Hypophosphatemia causes profound muscle weakness including respiratory muscles | >2.5 mg/dL; replete if low (can cause respiratory failure at <1.0) |
-| Calcium (ionized) | STAT | STAT | ROUTINE | STAT | Hypocalcemia increases neuromuscular excitability; hypercalcemia causes weakness | Normal ionized Ca |
-| Acetylcholine receptor (AChR) antibodies | - | URGENT | ROUTINE | URGENT | **MG workup**: positive in 85% of generalized MG; 50% of ocular MG; confirms diagnosis | Positive = MG; negative does NOT exclude (check MuSK, LRP4) |
-| Anti-MuSK antibodies | - | URGENT | ROUTINE | URGENT | If AChR negative but MG suspected clinically; MuSK-positive MG has distinct features (bulbar predominant, may not respond well to cholinesterase inhibitors) | Positive = MuSK MG |
+| Arterial blood gas (ABG) (CPT 82803) | STAT | STAT | - | STAT | **CRITICAL**: Assess ventilation (PaCO2) and oxygenation (PaO2); hypercapnia (PaCO2 >45) indicates hypoventilation; respiratory acidosis = severe; PaO2/FiO2 ratio | Normal: pH 7.35-7.45, PaCO2 35-45, PaO2 >80; **Hypercapnia with respiratory acidosis = impending/current respiratory failure** — consider intubation |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Infection (pneumonia as trigger or complication); baseline; anemia (reduces O2 carrying capacity) | Normal; leukocytosis → infection; anemia → correct |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | STAT | Electrolytes (K, Mg, Ca, Phos — all affect muscle function); renal function; glucose | Normal; hypokalemia, hypophosphatemia, hypomagnesemia, hypocalcemia can all worsen neuromuscular weakness |
+| Magnesium (CPT 83735) | STAT | STAT | ROUTINE | STAT | Hypomagnesemia worsens neuromuscular junction transmission and muscle weakness | >2.0 mg/dL; replete if low |
+| Phosphorus (CPT 84100) | STAT | STAT | ROUTINE | STAT | Hypophosphatemia causes profound muscle weakness including respiratory muscles | >2.5 mg/dL; replete if low (can cause respiratory failure at <1.0) |
+| Calcium (ionized) (CPT 82330) | STAT | STAT | ROUTINE | STAT | Hypocalcemia increases neuromuscular excitability; hypercalcemia causes weakness | Normal ionized Ca |
+| Acetylcholine receptor (AChR) antibodies (CPT 86235) | - | URGENT | ROUTINE | URGENT | **MG workup**: positive in 85% of generalized MG; 50% of ocular MG; confirms diagnosis | Positive = MG; negative does NOT exclude (check MuSK, LRP4) |
+| Anti-MuSK antibodies (CPT 86235) | - | URGENT | ROUTINE | URGENT | If AChR negative but MG suspected clinically; MuSK-positive MG has distinct features (bulbar predominant, may not respond well to cholinesterase inhibitors) | Positive = MuSK MG |
 | Anti-LRP4 antibodies | - | ROUTINE | ROUTINE | - | If both AChR and MuSK negative ("seronegative MG"); less commonly available | Positive = LRP4 MG (rare) |
 | Creatine kinase (CK) | STAT | STAT | ROUTINE | STAT | Elevated in myopathies, muscular dystrophies; may be normal in MG, GBS, ALS | Normal in MG, GBS; elevated in myopathies, rhabdomyolysis; very high (>10,000) in inflammatory myopathies, dystrophies |
-| TSH | - | ROUTINE | ROUTINE | - | Thyroid dysfunction: hyperthyroidism worsens MG; hypothyroidism causes myopathy | Normal |
-| Procalcitonin / CRP | STAT | STAT | - | STAT | Infection as trigger (pneumonia, UTI can precipitate MG crisis); distinguish infection from disease exacerbation | Normal; elevated → infection workup |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction: hyperthyroidism worsens MG; hypothyroidism causes myopathy | Normal |
+| Procalcitonin (CPT 84145) / CRP (CPT 86140) | STAT | STAT | - | STAT | Infection as trigger (pneumonia, UTI can precipitate MG crisis); distinguish infection from disease exacerbation | Normal; elevated → infection workup |
 | Urine drug screen | STAT | - | - | STAT | Drugs affecting neuromuscular function; intoxication as mimicker | Negative |
 
 ### 1B. Extended Workup (Second-line)
@@ -54,14 +54,14 @@ SECTION A: ACTION ITEMS
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Pyridostigmine level (if available) | - | ROUTINE | - | ROUTINE | Rarely available; assess for cholinergic crisis (too much pyridostigmine vs. myasthenic crisis) | Therapeutic range varies; clinical assessment more reliable |
-| Anti-ganglioside antibodies (GM1, GD1a, GD1b, GQ1b) | - | URGENT | ROUTINE | URGENT | GBS workup; GQ1b positive in Miller Fisher syndrome | Positive supports GBS diagnosis; negative does NOT exclude |
+| Anti-ganglioside antibodies (GM1, GD1a, GD1b, GQ1b) (CPT 86255) | - | URGENT | ROUTINE | URGENT | GBS workup; GQ1b positive in Miller Fisher syndrome | Positive supports GBS diagnosis; negative does NOT exclude |
 | CSF analysis | - | URGENT | ROUTINE | - | GBS: albuminocytologic dissociation (elevated protein, normal cells — may not be present in first week); exclude infection | GBS: protein elevated (>45 mg/dL), WBC <10 (usually <5); may be normal early |
-| Repetitive nerve stimulation (RNS) | - | URGENT | ROUTINE | - | **MG diagnosis**: decremental response at 3 Hz stimulation (>10% decrement) in proximal muscles | >10% decrement = neuromuscular junction defect (MG); no decrement does NOT exclude MG |
-| Single-fiber EMG (SFEMG) | - | - | ROUTINE | - | **Most sensitive test for MG** (92-98%); increased jitter and blocking | Increased jitter = neuromuscular transmission defect |
-| Nerve conduction studies / EMG | - | URGENT | ROUTINE | URGENT | GBS: demyelinating pattern (prolonged F-waves, conduction block, temporal dispersion) or axonal (reduced amplitudes); ALS: widespread denervation; myopathy: myopathic units | GBS: demyelinating or axonal; ALS: diffuse denervation; myopathy: small, polyphasic MUPs |
-| CT chest (with contrast) | - | URGENT | ROUTINE | - | **Thymoma screening in MG**: 10-15% of MG patients have thymoma; all MG patients need chest imaging | Thymoma (anterior mediastinal mass); thymic hyperplasia; normal thymus |
+| Repetitive nerve stimulation (RNS) (CPT 95937) | - | URGENT | ROUTINE | - | **MG diagnosis**: decremental response at 3 Hz stimulation (>10% decrement) in proximal muscles | >10% decrement = neuromuscular junction defect (MG); no decrement does NOT exclude MG |
+| Single-fiber EMG (SFEMG) (CPT 95872) | - | - | ROUTINE | - | **Most sensitive test for MG** (92-98%); increased jitter and blocking | Increased jitter = neuromuscular transmission defect |
+| Nerve conduction studies (CPT 95907-95913) / EMG (CPT 95886) | - | URGENT | ROUTINE | URGENT | GBS: demyelinating pattern (prolonged F-waves, conduction block, temporal dispersion) or axonal (reduced amplitudes); ALS: widespread denervation; myopathy: myopathic units | GBS: demyelinating or axonal; ALS: diffuse denervation; myopathy: small, polyphasic MUPs |
+| CT chest (with contrast) (CPT 71260) | - | URGENT | ROUTINE | - | **Thymoma screening in MG**: 10-15% of MG patients have thymoma; all MG patients need chest imaging | Thymoma (anterior mediastinal mass); thymic hyperplasia; normal thymus |
 | Anti-striational (anti-titin, anti-RyR) antibodies | - | ROUTINE | ROUTINE | - | Associated with thymoma in MG; may indicate need for more aggressive thymoma search | Positive in older MG patients and thymoma-associated MG |
-| Paraneoplastic antibody panel | - | ROUTINE | ROUTINE | - | Paraneoplastic neuromuscular syndromes (LEMS with anti-VGCC and small cell lung cancer); myositis with malignancy | Anti-VGCC (LEMS); anti-Hu, anti-CV2 (paraneoplastic) |
+| Paraneoplastic antibody panel (CPT 86255) | - | ROUTINE | ROUTINE | - | Paraneoplastic neuromuscular syndromes (LEMS with anti-VGCC and small cell lung cancer); myositis with malignancy | Anti-VGCC (LEMS); anti-Hu, anti-CV2 (paraneoplastic) |
 | Anti-VGCC antibodies | - | URGENT | ROUTINE | - | Lambert-Eaton myasthenic syndrome (LEMS); associated with SCLC in 50-60% | Positive = LEMS (check for underlying malignancy) |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
@@ -85,23 +85,23 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Chest X-ray | STAT | STAT | - | STAT | Immediate; assess for aspiration, pneumonia (trigger for crisis), atelectasis, elevated hemidiaphragm | Aspiration pneumonia; atelectasis (from weak cough); elevated hemidiaphragm (diaphragm weakness); anterior mediastinal mass (thymoma) | None |
-| Bedside spirometry (FVC) | STAT | STAT | ROUTINE | STAT | **CRITICAL: q4-6h in unstable patients; q1-2h if rapidly declining**; most important monitoring parameter | FVC >20 mL/kg = adequate; FVC <15-20 mL/kg = consider intubation; FVC declining >30% from baseline = concerning | Patient cooperation required; cannot perform if intubated (use ventilator parameters) |
-| Negative inspiratory force (NIF/MIP) | STAT | STAT | ROUTINE | STAT | **CRITICAL: Assess inspiratory muscle strength**; complement to FVC; easier for fatigued patients | NIF < -30 cm H2O = adequate; NIF > -20 to -25 cm H2O (less negative) = weak, consider intubation | Patient cooperation |
+| Chest X-ray (CPT 71046) | STAT | STAT | - | STAT | Immediate; assess for aspiration, pneumonia (trigger for crisis), atelectasis, elevated hemidiaphragm | Aspiration pneumonia; atelectasis (from weak cough); elevated hemidiaphragm (diaphragm weakness); anterior mediastinal mass (thymoma) | None |
+| Bedside spirometry (FVC) (CPT 94010) | STAT | STAT | ROUTINE | STAT | **CRITICAL: q4-6h in unstable patients; q1-2h if rapidly declining**; most important monitoring parameter | FVC >20 mL/kg = adequate; FVC <15-20 mL/kg = consider intubation; FVC declining >30% from baseline = concerning | Patient cooperation required; cannot perform if intubated (use ventilator parameters) |
+| Negative inspiratory force (NIF/MIP) (CPT 94799) | STAT | STAT | ROUTINE | STAT | **CRITICAL: Assess inspiratory muscle strength**; complement to FVC; easier for fatigued patients | NIF < -30 cm H2O = adequate; NIF > -20 to -25 cm H2O (less negative) = weak, consider intubation | Patient cooperation |
 | Maximum expiratory pressure (MEP) | - | URGENT | ROUTINE | STAT | Assess cough strength; correlates with ability to clear secretions | MEP <40 cm H2O = weak cough; aspiration risk |
-| ABG (arterial blood gas) | STAT | STAT | - | STAT | Assess ventilation and oxygenation; hypercapnia is late sign | PaCO2 >45 = hypoventilation; rising PaCO2 is ominous; PaO2 <60 = hypoxemia |
-| ECG (12-lead) | STAT | STAT | - | STAT | Arrhythmia from autonomic dysfunction (GBS); cardiac involvement in muscular dystrophies; baseline for IVIG/PLEX | Arrhythmia; conduction abnormalities; cardiomyopathy (DMD, LGMD) |
+| ABG (arterial blood gas) (CPT 82803) | STAT | STAT | - | STAT | Assess ventilation and oxygenation; hypercapnia is late sign | PaCO2 >45 = hypoventilation; rising PaCO2 is ominous; PaO2 <60 = hypoxemia |
+| ECG (12-lead) (CPT 93000) | STAT | STAT | - | STAT | Arrhythmia from autonomic dysfunction (GBS); cardiac involvement in muscular dystrophies; baseline for IVIG/PLEX | Arrhythmia; conduction abnormalities; cardiomyopathy (DMD, LGMD) |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT chest with contrast | - | URGENT | ROUTINE | - | Within 24-48h for MG; thymoma screening; all newly diagnosed generalized MG | Thymoma (anterior mediastinal mass); thymic hyperplasia | Contrast allergy; renal impairment |
+| CT chest with contrast (CPT 71260) | - | URGENT | ROUTINE | - | Within 24-48h for MG; thymoma screening; all newly diagnosed generalized MG | Thymoma (anterior mediastinal mass); thymic hyperplasia | Contrast allergy; renal impairment |
 | MRI chest (non-contrast) | - | - | ROUTINE | - | If CT contraindicated or additional characterization needed | Thymoma; thymic abnormality | MRI-incompatible implants |
-| Echocardiogram | - | URGENT | ROUTINE | URGENT | Cardiomyopathy screening in muscular dystrophies (DMD, BMD, LGMD2I, myotonic dystrophy); autonomic dysfunction in GBS; baseline before IVIG | Cardiomyopathy; reduced EF; conduction abnormalities (perform ECG first) | None |
+| Echocardiogram (CPT 93306) | - | URGENT | ROUTINE | URGENT | Cardiomyopathy screening in muscular dystrophies (DMD, BMD, LGMD2I, myotonic dystrophy); autonomic dysfunction in GBS; baseline before IVIG | Cardiomyopathy; reduced EF; conduction abnormalities (perform ECG first) | None |
 | Diaphragm ultrasound | - | URGENT | ROUTINE | URGENT | Assess diaphragm excursion and thickness; non-invasive diaphragm function assessment; bedside | Reduced diaphragm excursion (<1.5 cm during tidal breathing, <4 cm during deep breath); paradoxical motion = diaphragm paralysis | Operator-dependent; obesity may limit views |
 | CT angiography (pulmonary) | - | URGENT | - | URGENT | If pulmonary embolism suspected (immobile patients at high VTE risk) | PE | Contrast allergy; renal impairment |
-| PET/CT | - | - | ROUTINE | - | If LEMS diagnosed to search for underlying malignancy (SCLC in 50-60%) | Lung mass; lymphadenopathy; occult malignancy | Uncontrolled diabetes |
+| PET/CT (CPT 78816) | - | - | ROUTINE | - | If LEMS diagnosed to search for underlying malignancy (SCLC in 50-60%) | Lung mass; lymphadenopathy; occult malignancy | Uncontrolled diabetes |
 
 ### 2C. Rare/Advanced
 
@@ -116,7 +116,7 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| LP with CSF analysis | - | URGENT | ROUTINE | - | GBS diagnosis (albuminocytologic dissociation); may be normal in first week; NOT typically needed for MG diagnosis | GBS: elevated protein (often >100 mg/dL after first week), normal WBC (<10, usually <5); cytoalbuminous dissociation | Coagulopathy; skin infection at LP site; elevated ICP |
+| LP (CPT 62270) with CSF analysis | - | URGENT | ROUTINE | - | GBS diagnosis (albuminocytologic dissociation); may be normal in first week; NOT typically needed for MG diagnosis | GBS: elevated protein (often >100 mg/dL after first week), normal WBC (<10, usually <5); cytoalbuminous dissociation | Coagulopathy; skin infection at LP site; elevated ICP |
 
 ---
 
@@ -141,8 +141,8 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| **IVIG (Intravenous Immunoglobulin)** | IV | - | 2 g/kg :: - :: daily x 5 days :: **First-line for MG crisis (with PLEX):** 2 g/kg total divided over 2-5 days (400 mg/kg/day x 5 days OR 1 g/kg/day x 2 days); **Onset:** 2-5 days; **Duration:** 3-6 weeks; **Pre-treatment:** Check IgA (IgA deficiency = anaphylaxis risk); renal function; volume status | - | Efficacy equivalent to PLEX (RCTs); easier logistics than PLEX; side effects: headache (aseptic meningitis), renal failure (sucrose-containing products), thrombosis, hemolysis; slower onset than PLEX | - | STAT | - | STAT |
-| **Plasma exchange (PLEX)** | - | - | **First-line for MG crisis (with IVIG):** 5-7 exchanges over 10-14 days (1-1.5 plasma volumes per exchange; typically 3-4 L); **Onset:** Faster than IVIG (improvement may begin after 2-3 exchanges); requires large-bore central venous access; **Caution:** Hypotension, citrate toxicity (hypocalcemia), infection | - | May work faster than IVIG; useful if rapid response needed; RCT showed PLEX and IVIG equivalent in MG exacerbation; PLEX preferred if IVIG contraindicated (IgA deficiency, renal failure) | - | STAT | - | STAT |
+| **IVIG (Intravenous Immunoglobulin)** (CPT 96365) | IV | - | 2 g/kg :: - :: daily x 5 days :: **First-line for MG crisis (with PLEX):** 2 g/kg total divided over 2-5 days (400 mg/kg/day x 5 days OR 1 g/kg/day x 2 days); **Onset:** 2-5 days; **Duration:** 3-6 weeks; **Pre-treatment:** Check IgA (IgA deficiency = anaphylaxis risk); renal function; volume status | - | Efficacy equivalent to PLEX (RCTs); easier logistics than PLEX; side effects: headache (aseptic meningitis), renal failure (sucrose-containing products), thrombosis, hemolysis; slower onset than PLEX | - | STAT | - | STAT |
+| **Plasma exchange (PLEX)** (CPT 36514) | - | - | **First-line for MG crisis (with IVIG):** 5-7 exchanges over 10-14 days (1-1.5 plasma volumes per exchange; typically 3-4 L); **Onset:** Faster than IVIG (improvement may begin after 2-3 exchanges); requires large-bore central venous access; **Caution:** Hypotension, citrate toxicity (hypocalcemia), infection | - | May work faster than IVIG; useful if rapid response needed; RCT showed PLEX and IVIG equivalent in MG exacerbation; PLEX preferred if IVIG contraindicated (IgA deficiency, renal failure) | - | STAT | - | STAT |
 | **HOLD pyridostigmine (cholinesterase inhibitors)** | - | - | **In intubated MG crisis patients:** STOP pyridostigmine while intubated; excessive secretions worsen pulmonary toilet; cannot distinguish myasthenic from cholinergic crisis if on pyridostigmine; **Resume cautiously when extubation nearing** | - | Pyridostigmine increases secretions; in intubated patient, secretions worsen; hold until preparing for extubation; some restart at lower dose (30 mg q6h) and titrate | STAT | STAT | - | STAT |
 | **Corticosteroids (delayed initiation)** | IV | - | 10-20 mg :: IV :: daily :: **CAUTION: Steroids can cause TRANSIENT WORSENING in MG (up to 50% of patients)**; **In crisis:** Start AFTER IVIG/PLEX initiated and patient stabilizing (days 3-5 or later); do NOT start steroids as initial therapy in crisis; **Protocol:** Prednisone 10-20 mg daily, increase by 10 mg every 3-5 days to 1 mg/kg/day (max 60-80 mg); OR IV methylprednisolone 1g daily x 3-5 days then oral | - | Steroids are maintenance therapy but can worsen MG acutely ("steroid dip"); always start with IVIG or PLEX first in crisis; steroid-sparing agents (azathioprine, mycophenolate) for long-term | - | URGENT | ROUTINE | URGENT |
 | **Treat precipitant** | - | - | **Infection:** Most common trigger; treat aggressively but AVOID contraindicated antibiotics (see list); **Medication-induced:** Stop offending drug; **Surgery/anesthesia:** Stress can trigger crisis; **Tapering immunosuppression:** Restart or increase | - | 30-40% of MG crises have identifiable trigger; treating trigger may hasten recovery | STAT | STAT | - | STAT |
@@ -151,8 +151,8 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| **IVIG** | - | - | 2 g/kg :: - :: daily x 5 days :: **First-line for GBS:** 2 g/kg total over 5 days (400 mg/kg/day x 5 days); start within 2-4 weeks of symptom onset for best efficacy; **Efficacy:** Equivalent to PLEX; faster recovery; fewer complications; **Onset:** Days to 1-2 weeks | - | RCTs show IVIG = PLEX; IVIG preferred due to availability and easier administration; start as soon as diagnosis confirmed (or highly likely); do NOT delay for CSF/EMG confirmation | - | STAT | - | STAT |
-| **Plasma exchange (PLEX)** | - | - | 200-250 mL/kg :: - :: - :: **Alternative to IVIG:** 5 exchanges over 1-2 weeks (200-250 mL/kg total); start within 2-4 weeks of onset; **Consider PLEX if:** IVIG contraindicated; IVIG failure; severe/refractory | - | PLEX and IVIG equivalent; do NOT combine (no added benefit, more complications); PLEX if renal failure (IVIG risk) | - | STAT | - | STAT |
+| **IVIG** (CPT 96365) | - | - | 2 g/kg :: - :: daily x 5 days :: **First-line for GBS:** 2 g/kg total over 5 days (400 mg/kg/day x 5 days); start within 2-4 weeks of symptom onset for best efficacy; **Efficacy:** Equivalent to PLEX; faster recovery; fewer complications; **Onset:** Days to 1-2 weeks | - | RCTs show IVIG = PLEX; IVIG preferred due to availability and easier administration; start as soon as diagnosis confirmed (or highly likely); do NOT delay for CSF/EMG confirmation | - | STAT | - | STAT |
+| **Plasma exchange (PLEX)** (CPT 36514) | - | - | 200-250 mL/kg :: - :: - :: **Alternative to IVIG:** 5 exchanges over 1-2 weeks (200-250 mL/kg total); start within 2-4 weeks of onset; **Consider PLEX if:** IVIG contraindicated; IVIG failure; severe/refractory | - | PLEX and IVIG equivalent; do NOT combine (no added benefit, more complications); PLEX if renal failure (IVIG risk) | - | STAT | - | STAT |
 | **Corticosteroids — NOT effective in GBS** | - | - | **Do NOT use steroids for GBS**; no benefit; may cause harm | - | Multiple RCTs: steroids do NOT improve GBS outcomes; may delay recovery | - | - | - | - |
 | **Autonomic monitoring** | - | - | 70% :: - :: - :: **GBS has significant autonomic dysfunction (up to 70%):** Cardiac monitoring (arrhythmias, heart block); BP monitoring (labile — hypertension and hypotension); ileus; urinary retention; treat arrhythmias; short-acting antihypertensives (avoid long-acting due to swings); pacing if bradycardia | - | Autonomic death is second leading cause of GBS mortality after respiratory failure; close cardiac monitoring; avoid medications that worsen autonomic dysfunction | - | STAT | - | STAT |
 | **Pain management** | PO | - | 300 mg :: PO :: TID :: Pain in GBS is common (60-90%) and often severe; neuropathic pain; back pain; radicular pain; **Treatment:** Gabapentin 300 mg TID → titrate; pregabalin; opioids PRN; AVOID NSAIDs if renal concerns | - | Pain can be as debilitating as weakness; multimodal approach; gabapentinoids first-line | - | STAT | ROUTINE | STAT |

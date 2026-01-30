@@ -35,16 +35,16 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Infection workup; anemia (reduced O2 carrying capacity); thrombocytopenia (bleeding risk); baseline | Normal; leukocytosis → infection; thrombocytopenia → hemorrhage risk |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Electrolytes (sodium critical for osmotherapy); renal function (contrast, mannitol); glucose; hepatic function | Normal; track sodium closely (goal varies by treatment); avoid hyponatremia |
-| Blood glucose | STAT | STAT | ROUTINE | STAT | Hyperglycemia worsens outcomes in brain injury; hypoglycemia mimics neurologic deterioration | 140-180 mg/dL target in critically ill; <180 in general |
-| PT/INR, aPTT | STAT | STAT | - | STAT | Coagulopathy (hemorrhagic causes); ICP monitor placement safety; surgical candidacy | Normal; INR <1.4 for ICP monitor placement |
-| Serum osmolality | STAT | STAT | - | STAT | **CRITICAL for osmotherapy monitoring**; baseline before mannitol/hypertonic saline; target for therapy | 280-295 mOsm/kg baseline; therapeutic target 300-320 (do not exceed 320) |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Infection workup; anemia (reduced O2 carrying capacity); thrombocytopenia (bleeding risk); baseline | Normal; leukocytosis → infection; thrombocytopenia → hemorrhage risk |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | STAT | Electrolytes (sodium critical for osmotherapy); renal function (contrast, mannitol); glucose; hepatic function | Normal; track sodium closely (goal varies by treatment); avoid hyponatremia |
+| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Hyperglycemia worsens outcomes in brain injury; hypoglycemia mimics neurologic deterioration | 140-180 mg/dL target in critically ill; <180 in general |
+| PT/INR (CPT 85610), aPTT (CPT 85730) | STAT | STAT | - | STAT | Coagulopathy (hemorrhagic causes); ICP monitor placement safety; surgical candidacy | Normal; INR <1.4 for ICP monitor placement |
+| Serum osmolality (CPT 83930) | STAT | STAT | - | STAT | **CRITICAL for osmotherapy monitoring**; baseline before mannitol/hypertonic saline; target for therapy | 280-295 mOsm/kg baseline; therapeutic target 300-320 (do not exceed 320) |
 | Sodium | STAT | STAT | - | STAT | **CRITICAL**; hypertonic saline therapy monitoring; cerebral salt wasting vs. SIADH; target for ICP management | 135-145 mEq/L baseline; therapeutic hypernatremia target 145-155 mEq/L (with hypertonic saline) |
-| Arterial blood gas (ABG) | STAT | STAT | - | STAT | Ventilation status (PaCO2 critical for ICP); oxygenation; pH; metabolic status | PaCO2 35-40 mmHg (normal); pH 7.35-7.45; PaO2 >80; for hyperventilation: target PaCO2 30-35 |
-| Lactate | STAT | STAT | - | STAT | Tissue perfusion; systemic sepsis; prognostic | <2 mmol/L; elevated → hypoperfusion, sepsis |
-| Type and screen | STAT | STAT | - | STAT | Surgical candidacy; potential for decompressive craniectomy or other neurosurgical intervention | On file |
-| Troponin | STAT | STAT | - | STAT | Neurogenic cardiac injury (stress cardiomyopathy); particularly in SAH, TBI, ICH | Normal; elevated → neurogenic stress cardiomyopathy; obtain echo |
+| Arterial blood gas (ABG) (CPT 82803) | STAT | STAT | - | STAT | Ventilation status (PaCO2 critical for ICP); oxygenation; pH; metabolic status | PaCO2 35-40 mmHg (normal); pH 7.35-7.45; PaO2 >80; for hyperventilation: target PaCO2 30-35 |
+| Lactate (CPT 83605) | STAT | STAT | - | STAT | Tissue perfusion; systemic sepsis; prognostic | <2 mmol/L; elevated → hypoperfusion, sepsis |
+| Type and screen (CPT 86900) | STAT | STAT | - | STAT | Surgical candidacy; potential for decompressive craniectomy or other neurosurgical intervention | On file |
+| Troponin (CPT 84484) | STAT | STAT | - | STAT | Neurogenic cardiac injury (stress cardiomyopathy); particularly in SAH, TBI, ICH | Normal; elevated → neurogenic stress cardiomyopathy; obtain echo |
 
 ### 1B. Extended Workup (Second-line)
 
@@ -52,10 +52,10 @@ SECTION A: ACTION ITEMS
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Serum osmolality (serial) | - | STAT | - | STAT | **q4-6h during osmotherapy**; osmolar gap calculation; prevent hyper-osmolar state | Maintain <320 mOsm/kg; osmolar gap >10-15 → accumulating mannitol |
 | Sodium (serial) | - | STAT | - | STAT | **q2-6h during active ICP management**; hypertonic saline monitoring; avoid rapid correction | Target 145-155 mEq/L during active ICP crisis; avoid fluctuations >10 mEq/24h |
-| Cortisol (AM, random) | - | ROUTINE | ROUTINE | ROUTINE | Adrenal insufficiency (pituitary injury in TBI, tumor); steroid responsiveness in tumor edema | >10 mcg/dL (AM); if low → cortisol stimulation test or empiric steroids |
-| TSH, free T4 | - | ROUTINE | ROUTINE | - | Pituitary injury (TBI, tumor, surgery); hypothyroidism | Normal |
-| Ammonia | STAT | STAT | - | STAT | Hepatic encephalopathy differential; can cause cerebral edema and elevated ICP | <35 μmol/L; elevated → hepatic cause; lactulose, rifaximin |
-| Toxicology screen | STAT | STAT | - | STAT | Intoxication as cause of altered mental status; drug-induced cerebral edema (rare) | Negative; specific toxin identification |
+| Cortisol (AM, random) (CPT 82533) | - | ROUTINE | ROUTINE | ROUTINE | Adrenal insufficiency (pituitary injury in TBI, tumor); steroid responsiveness in tumor edema | >10 mcg/dL (AM); if low → cortisol stimulation test or empiric steroids |
+| TSH (CPT 84443), free T4 (CPT 84439) | - | ROUTINE | ROUTINE | - | Pituitary injury (TBI, tumor, surgery); hypothyroidism | Normal |
+| Ammonia (CPT 82140) | STAT | STAT | - | STAT | Hepatic encephalopathy differential; can cause cerebral edema and elevated ICP | <35 μmol/L; elevated → hepatic cause; lactulose, rifaximin |
+| Toxicology screen (CPT 80307) | STAT | STAT | - | STAT | Intoxication as cause of altered mental status; drug-induced cerebral edema (rare) | Negative; specific toxin identification |
 | CSF analysis (if LP/EVD performed) | - | STAT | - | STAT | Infection (meningitis); malignancy (leptomeningeal disease); subarachnoid hemorrhage (xanthochromia); IIH (elevated OP with normal composition) | Normal CSF composition with elevated opening pressure → IIH; abnormal composition → specific diagnosis |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
@@ -77,20 +77,20 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head without contrast | STAT | STAT | - | STAT | **Immediate** — within minutes of suspected elevated ICP; before any intervention; determines etiology and guides treatment | Mass lesion (tumor, hematoma); midline shift (>5mm = significant); hydrocephalus; cerebral edema (effaced sulci, compressed ventricles); herniation signs (uncal, tonsillar); cisternal effacement | None for non-contrast CT; benefit always outweighs risk in emergency |
-| CT angiography (CTA) head | STAT | STAT | - | STAT | If vascular etiology suspected (SAH, venous sinus thrombosis, AVM); concurrent with non-contrast CT | Aneurysm (SAH); venous sinus thrombosis (filling defect in dural sinuses); AVM; dissection | Contrast allergy (premedicate if critical); renal impairment (benefit may outweigh risk) |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | **Immediate** — within minutes of suspected elevated ICP; before any intervention; determines etiology and guides treatment | Mass lesion (tumor, hematoma); midline shift (>5mm = significant); hydrocephalus; cerebral edema (effaced sulci, compressed ventricles); herniation signs (uncal, tonsillar); cisternal effacement | None for non-contrast CT; benefit always outweighs risk in emergency |
+| CT angiography (CTA) head (CPT 70496) | STAT | STAT | - | STAT | If vascular etiology suspected (SAH, venous sinus thrombosis, AVM); concurrent with non-contrast CT | Aneurysm (SAH); venous sinus thrombosis (filling defect in dural sinuses); AVM; dissection | Contrast allergy (premedicate if critical); renal impairment (benefit may outweigh risk) |
 | CT venography (CTV) | STAT | STAT | ROUTINE | STAT | If cerebral venous sinus thrombosis suspected (headache, papilledema, focal deficits, hypercoagulable state); can be done with CTA | Filling defect in dural sinuses (transverse, sigmoid, sagittal); "empty delta sign" on contrast CT; cord sign | Same as CTA |
-| MRI brain with and without contrast | URGENT | URGENT | ROUTINE | URGENT | When clinically stable; superior for tumor characterization, infection, posterior fossa; MRV for venous thrombosis; DWI for ischemia | Tumor; abscess; encephalitis; venous sinus thrombosis; ischemic stroke; PRES; herniation; meningeal enhancement | MRI-incompatible implants; hemodynamic instability |
-| Chest X-ray | STAT | STAT | - | STAT | ETT position confirmation; pulmonary complications (aspiration, ARDS); central line position | ETT position; no pulmonary infiltrate; line position | None |
+| MRI brain with and without contrast (CPT 70553) | URGENT | URGENT | ROUTINE | URGENT | When clinically stable; superior for tumor characterization, infection, posterior fossa; MRV for venous thrombosis; DWI for ischemia | Tumor; abscess; encephalitis; venous sinus thrombosis; ischemic stroke; PRES; herniation; meningeal enhancement | MRI-incompatible implants; hemodynamic instability |
+| Chest X-ray (CPT 71046) | STAT | STAT | - | STAT | ETT position confirmation; pulmonary complications (aspiration, ARDS); central line position | ETT position; no pulmonary infiltrate; line position | None |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MR venography (MRV) | - | URGENT | ROUTINE | URGENT | Cerebral venous sinus thrombosis confirmation; if CTV equivocal; can be done without contrast (TOF technique) | Venous sinus thrombosis; flow void absence | Same as MRI |
-| Transcranial Doppler (TCD) | - | URGENT | - | URGENT | Non-invasive ICP estimation (pulsatility index); vasospasm detection (SAH); cerebral circulatory arrest (brain death) | Pulsatility index >1.4 suggests elevated ICP; MCA velocities for vasospasm; reverberating flow = no cerebral circulation | None; operator-dependent |
+| Transcranial Doppler (TCD) (CPT 93886) | - | URGENT | - | URGENT | Non-invasive ICP estimation (pulsatility index); vasospasm detection (SAH); cerebral circulatory arrest (brain death) | Pulsatility index >1.4 suggests elevated ICP; MCA velocities for vasospasm; reverberating flow = no cerebral circulation | None; operator-dependent |
 | Optic nerve sheath diameter (ONSD) ultrasound | STAT | STAT | - | STAT | Bedside non-invasive ICP estimation; ONSD >5-5.5 mm suggests ICP >20 mmHg; useful when formal monitoring not available | ONSD >5 mm (some use 5.5 mm) = elevated ICP | Limited accuracy; operator-dependent; not a substitute for invasive monitoring |
-| CT perfusion | - | URGENT | - | URGENT | Ischemic stroke workup; penumbra assessment; vasospasm evaluation | Perfusion deficits; core vs. penumbra; vasospasm patterns | Contrast requirements |
+| CT perfusion (CPT 0042T) | - | URGENT | - | URGENT | Ischemic stroke workup; penumbra assessment; vasospasm evaluation | Perfusion deficits; core vs. penumbra; vasospasm patterns | Contrast requirements |
 | Fundoscopic examination | STAT | STAT | ROUTINE | STAT | Papilledema detection (takes hours-days to develop); retinal hemorrhages (Terson syndrome in SAH); IIH evaluation | Papilledema (indicates chronically or subacutely elevated ICP); absent papilledema does NOT exclude acute ICP elevation; venous pulsations absent if ICP >180 mm H2O | None |
 | Formal visual field testing | - | - | ROUTINE | - | IIH monitoring; chronic elevated ICP; document visual field loss for treatment decisions | Enlarged blind spot; peripheral constriction; nasal field loss | Patient cooperation required |
 
@@ -100,7 +100,7 @@ SECTION A: ACTION ITEMS
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | ICP monitor placement (invasive) | - | STAT | - | STAT | **Gold standard for ICP measurement**; indications: GCS ≤8 with abnormal CT, or GCS ≤8 with normal CT + 2 of (age >40, SBP <90, motor posturing); also for hydrocephalus management; typically EVD or parenchymal monitor | Direct ICP measurement; normal <15 mmHg; elevated >20-22 mmHg; treatment threshold >22 mmHg (Brain Trauma Foundation 2016) | Coagulopathy (correct first); infection at insertion site; uncontrolled bleeding diathesis |
 | External ventricular drain (EVD) | - | STAT | - | STAT | ICP monitoring + therapeutic CSF drainage; preferred in hydrocephalus; allows ICP waveform analysis | ICP measurement; CSF drainage; waveform analysis (P2 > P1 = decreased compliance) | Same as ICP monitor |
-| Continuous EEG monitoring | - | STAT | - | STAT | Detect subclinical seizures (common in TBI, ICH, SAH — up to 20-30%); guide sedation; burst suppression monitoring during barbiturate coma | No seizures; appropriate sedation level; burst suppression if pentobarbital coma | None; resource availability |
+| Continuous EEG monitoring (CPT 95700) | - | STAT | - | STAT | Detect subclinical seizures (common in TBI, ICH, SAH — up to 20-30%); guide sedation; burst suppression monitoring during barbiturate coma | No seizures; appropriate sedation level; burst suppression if pentobarbital coma | None; resource availability |
 | Nuclear medicine cerebral perfusion (SPECT/HMPAO) | - | - | - | EXT | Brain death confirmation (ancillary test); no cerebral blood flow | No uptake = brain death (if clinical criteria met and confounders excluded) | Limited availability |
 | CT/MRI perfusion for brain death | - | - | - | EXT | Brain death confirmation; no cerebral perfusion | No perfusion = brain death | Same as standard CT/MRI |
 
@@ -108,7 +108,7 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| LP with opening pressure | - | URGENT | ROUTINE | - | **IIH diagnosis and treatment**: measure opening pressure → therapeutic CSF removal; **CONTRAINDICATED if mass lesion, obstructive hydrocephalus, or herniation risk**; imaging FIRST | Opening pressure: normal <20 cm H2O (obese <25); IIH: >25 cm H2O with normal CSF composition; high-volume tap (20-30 mL) for symptomatic relief in IIH | **ABSOLUTE CONTRAINDICATION**: Mass lesion with mass effect; obstructive hydrocephalus; impending herniation; posterior fossa mass; midline shift; anticoagulation/coagulopathy; skin infection at LP site |
+| LP with opening pressure (CPT 62270) | - | URGENT | ROUTINE | - | **IIH diagnosis and treatment**: measure opening pressure → therapeutic CSF removal; **CONTRAINDICATED if mass lesion, obstructive hydrocephalus, or herniation risk**; imaging FIRST | Opening pressure: normal <20 cm H2O (obese <25); IIH: >25 cm H2O with normal CSF composition; high-volume tap (20-30 mL) for symptomatic relief in IIH | **ABSOLUTE CONTRAINDICATION**: Mass lesion with mass effect; obstructive hydrocephalus; impending herniation; posterior fossa mass; midline shift; anticoagulation/coagulopathy; skin infection at LP site |
 
 ---
 

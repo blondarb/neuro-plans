@@ -18,7 +18,7 @@ setting: "HOSP, OPD, ICU"
 
 **ICD-10:** G40.901 (Epilepsy, unspecified, not intractable, with status epilepticus), G41.0 (Grand mal status epilepticus), G41.1 (Petit mal status epilepticus), G41.2 (Complex partial status epilepticus), G41.8 (Other status epilepticus), G41.9 (Status epilepticus, unspecified)
 
-**SYNONYMS:** Status epilepticus, SE, continuous seizure activity, non-stop seizure, seizure emergency, convulsive status epilepticus, CSE, non-convulsive status epilepticus, NCSE, refractory status epilepticus, RSE, super-refractory SE, SRSE, prolonged seizure
+**SYNONYMS:** Status epilepticus, SE, continuous seizure activity, non-stop seizure, seizure emergency, convulsive status epilepticus, CSE, non-convulsive status epilepticus, NCSE, refractory status epilepticus, RSE, super-refractory SE, SRSE, prolonged seizure, epileptic crisis, unrelenting seizure, electrical status epilepticus, subtle status epilepticus, generalized convulsive status epilepticus, GCSE, epilepsia partialis continua, EPC, new-onset refractory status epilepticus, NORSE, febrile infection-related epilepsy syndrome, FIRES
 
 **SCOPE:** Management of convulsive status epilepticus (CSE) and non-convulsive status epilepticus (NCSE) in adults. Covers staged treatment protocol from emergent benzodiazepines through refractory and super-refractory phases. Includes diagnostic workup to identify underlying etiology and specific protocols for NORSE/FIRES. Excludes pediatric status epilepticus, neonatal seizures, and psychogenic non-epileptic status.
 
@@ -257,33 +257,33 @@ FULL TEMPLATE BEGINS BELOW
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Point-of-care glucose | STAT | STAT | - | STAT | Hypoglycemia is immediately reversible cause | >70 mg/dL |
-| CBC with differential | STAT | STAT | - | STAT | Infection screen, baseline before ASMs | Normal |
-| CMP (BMP + LFTs) | STAT | STAT | - | STAT | Electrolyte abnormalities, renal/hepatic function for ASM dosing | Normal |
-| Magnesium | STAT | STAT | - | STAT | Hypomagnesemia lowers seizure threshold | >1.8 mg/dL |
-| Calcium (ionized if available) | STAT | STAT | - | STAT | Hypocalcemia can cause seizures | Ionized 4.5-5.3 mg/dL |
-| Phosphorus | STAT | STAT | - | STAT | Hypophosphatemia lowers seizure threshold | >2.5 mg/dL |
-| Blood gas (ABG or VBG) | STAT | STAT | - | STAT | Acidosis, oxygenation, ventilation status | pH >7.2; correct severe acidosis |
-| Lactate | STAT | STAT | - | STAT | Elevated in prolonged seizure; marker of severity | Will be elevated; trending useful |
-| Urine drug screen | STAT | STAT | - | STAT | Illicit drugs, withdrawal states | Identify triggers |
-| Blood alcohol level | STAT | STAT | - | STAT | Alcohol withdrawal common cause | Correlate with history |
+| Point-of-care glucose (CPT 82962) | STAT | STAT | - | STAT | Hypoglycemia is immediately reversible cause | >70 mg/dL |
+| CBC with differential (CPT 85025) | STAT | STAT | - | STAT | Infection screen, baseline before ASMs | Normal |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | - | STAT | Electrolyte abnormalities, renal/hepatic function for ASM dosing | Normal |
+| Magnesium (CPT 83735) | STAT | STAT | - | STAT | Hypomagnesemia lowers seizure threshold | >1.8 mg/dL |
+| Calcium, ionized (CPT 82330) | STAT | STAT | - | STAT | Hypocalcemia can cause seizures | Ionized 4.5-5.3 mg/dL |
+| Phosphorus (CPT 84100) | STAT | STAT | - | STAT | Hypophosphatemia lowers seizure threshold | >2.5 mg/dL |
+| Blood gas (ABG or VBG) (CPT 82803) | STAT | STAT | - | STAT | Acidosis, oxygenation, ventilation status | pH >7.2; correct severe acidosis |
+| Lactate (CPT 83605) | STAT | STAT | - | STAT | Elevated in prolonged seizure; marker of severity | Will be elevated; trending useful |
+| Urine drug screen (CPT 80307) | STAT | STAT | - | STAT | Illicit drugs, withdrawal states | Identify triggers |
+| Blood alcohol level (CPT 80320) | STAT | STAT | - | STAT | Alcohol withdrawal common cause | Correlate with history |
 | ASM levels (if on therapy) | STAT | STAT | - | STAT | Subtherapeutic levels as precipitant | Therapeutic range |
-| Pregnancy test (women of childbearing age) | STAT | STAT | - | STAT | Eclampsia; affects ASM choice | Document status |
+| Pregnancy test (women of childbearing age) (CPT 81025) | STAT | STAT | - | STAT | Eclampsia; affects ASM choice | Document status |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Ammonia | URGENT | STAT | - | STAT | Hepatic encephalopathy, valproate toxicity, urea cycle disorders | <35 μmol/L |
-| TSH | URGENT | ROUTINE | - | URGENT | Thyroid storm/myxedema | Normal |
-| Troponin | URGENT | ROUTINE | - | STAT | Cardiac stress from prolonged seizure | May be elevated |
-| CPK/CK | URGENT | ROUTINE | - | STAT | Rhabdomyolysis from prolonged convulsions | Elevated; monitor trend |
-| Cortisol (random) | URGENT | ROUTINE | - | URGENT | Adrenal insufficiency | Normal stress response |
-| Serum osmolality | URGENT | ROUTINE | - | URGENT | Hypo/hyperosmolar states | 280-295 mOsm/kg |
-| Procalcitonin | URGENT | ROUTINE | - | URGENT | CNS infection if suspected | <0.5 ng/mL |
-| Coagulation panel (PT/INR, PTT) | URGENT | ROUTINE | - | STAT | Pre-LP, hemorrhage risk | Normal |
+| Ammonia (CPT 82140) | URGENT | STAT | - | STAT | Hepatic encephalopathy, valproate toxicity, urea cycle disorders | <35 μmol/L |
+| TSH (CPT 84443) | URGENT | ROUTINE | - | URGENT | Thyroid storm/myxedema | Normal |
+| Troponin (CPT 84484) | URGENT | ROUTINE | - | STAT | Cardiac stress from prolonged seizure | May be elevated |
+| CPK/CK (CPT 82550) | URGENT | ROUTINE | - | STAT | Rhabdomyolysis from prolonged convulsions | Elevated; monitor trend |
+| Cortisol (random) (CPT 82533) | URGENT | ROUTINE | - | URGENT | Adrenal insufficiency | Normal stress response |
+| Serum osmolality (CPT 83930) | URGENT | ROUTINE | - | URGENT | Hypo/hyperosmolar states | 280-295 mOsm/kg |
+| Procalcitonin (CPT 84145) | URGENT | ROUTINE | - | URGENT | CNS infection if suspected | <0.5 ng/mL |
+| Coagulation panel (PT/INR (CPT 85610), PTT (CPT 85730)) | URGENT | ROUTINE | - | STAT | Pre-LP, hemorrhage risk | Normal |
 | Type and screen | URGENT | ROUTINE | - | STAT | Anticipate possible surgical intervention | Available |
-| Urinalysis | URGENT | ROUTINE | - | URGENT | UTI as precipitant (especially elderly) | Negative |
+| Urinalysis (CPT 81003) | URGENT | ROUTINE | - | URGENT | UTI as precipitant (especially elderly) | Negative |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
@@ -291,8 +291,8 @@ FULL TEMPLATE BEGINS BELOW
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Autoimmune encephalitis panel (serum) | - | URGENT | - | URGENT | Anti-NMDAR, LGI1, CASPR2 in NORSE | Negative |
 | Paraneoplastic panel (serum) | - | URGENT | - | URGENT | Subacute onset, smoking history, weight loss | Negative |
-| HIV | - | ROUTINE | - | ROUTINE | HIV-associated CNS disease | Negative |
-| RPR/VDRL | - | ROUTINE | - | ROUTINE | Neurosyphilis | Negative |
+| HIV (CPT 87389) | - | ROUTINE | - | ROUTINE | HIV-associated CNS disease | Negative |
+| RPR/VDRL (CPT 86592) | - | ROUTINE | - | ROUTINE | Neurosyphilis | Negative |
 | Ceruloplasmin, serum copper | - | EXT | - | EXT | Wilson disease (young patients) | Normal |
 | Porphyrins (urine/serum) | - | EXT | - | EXT | Acute intermittent porphyria | Normal |
 | Mitochondrial DNA testing | - | - | - | EXT | MELAS, other mitochondrial disorders | Normal |
@@ -306,19 +306,19 @@ FULL TEMPLATE BEGINS BELOW
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head without contrast | STAT | STAT | - | STAT | Immediately after stabilization | Mass, hemorrhage, stroke, herniation, hydrocephalus | None in emergency |
-| Continuous EEG (cEEG) monitoring | STAT | STAT | - | STAT | As soon as available; mandatory in RSE/SRSE | Seizure burden, treatment response, NCSE detection | None significant |
-| Chest X-ray | STAT | STAT | - | STAT | Aspiration risk, ETT placement confirmation | Aspiration, ETT position | None |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | Immediately after stabilization | Mass, hemorrhage, stroke, herniation, hydrocephalus | None in emergency |
+| Continuous EEG (cEEG) monitoring (CPT 95700) | STAT | STAT | - | STAT | As soon as available; mandatory in RSE/SRSE | Seizure burden, treatment response, NCSE detection | None significant |
+| Chest X-ray (CPT 71046) | STAT | STAT | - | STAT | Aspiration risk, ETT placement confirmation | Aspiration, ETT position | None |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with and without contrast | - | URGENT | - | URGENT | When stable; within 24-48h | Encephalitis, stroke, tumor, cortical injury from SE | Hemodynamic instability, pacemaker |
-| CT angiography head/neck | URGENT | URGENT | - | URGENT | If stroke suspected | Large vessel occlusion, dissection | Contrast allergy, renal insufficiency |
-| MRA/MRV brain | - | ROUTINE | - | ROUTINE | If vascular etiology suspected | Venous thrombosis, vascular malformation | Same as MRI |
+| MRI brain with and without contrast (CPT 70553) | - | URGENT | - | URGENT | When stable; within 24-48h | Encephalitis, stroke, tumor, cortical injury from SE | Hemodynamic instability, pacemaker |
+| CT angiography head/neck (CTA head CPT 70496, CTA neck CPT 70498) | URGENT | URGENT | - | URGENT | If stroke suspected | Large vessel occlusion, dissection | Contrast allergy, renal insufficiency |
+| MRA/MRV brain (CPT 70544) | - | ROUTINE | - | ROUTINE | If vascular etiology suspected | Venous thrombosis, vascular malformation | Same as MRI |
 | CT chest/abdomen/pelvis | - | ROUTINE | - | ROUTINE | If paraneoplastic suspected | Occult malignancy | Contrast allergy |
-| Echocardiogram | - | ROUTINE | - | ROUTINE | If embolic stroke suspected, endocarditis | Vegetation, thrombus | None |
+| Echocardiogram (CPT 93306) | - | ROUTINE | - | ROUTINE | If embolic stroke suspected, endocarditis | Vegetation, thrombus | None |
 
 ### 2C. Rare/Specialized
 
@@ -327,7 +327,7 @@ FULL TEMPLATE BEGINS BELOW
 | PET-CT (whole body) | - | EXT | - | EXT | Occult malignancy workup | Tumor identification | Hemodynamic instability |
 | Brain biopsy | - | EXT | - | EXT | Refractory cases, suspected encephalitis | Histopathologic diagnosis | Coagulopathy, critical location |
 
-### LUMBAR PUNCTURE
+### LUMBAR PUNCTURE (CPT 62270)
 
 **Indication:** Suspected CNS infection (meningitis, encephalitis), autoimmune encephalitis, NORSE/FIRES, or unknown etiology after initial workup
 
@@ -338,15 +338,15 @@ FULL TEMPLATE BEGINS BELOW
 | Study | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |-------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Opening pressure | URGENT | STAT | - | STAT | Elevated ICP | 10-20 cm H2O |
-| Cell count (tubes 1 and 4) | URGENT | STAT | - | STAT | Infection, inflammation | WBC <5; RBC 0 |
-| Protein | URGENT | STAT | - | STAT | Elevated in infection, inflammation | 15-45 mg/dL |
-| Glucose with serum glucose | URGENT | STAT | - | STAT | Low in bacterial/fungal meningitis | >60% serum |
-| Gram stain and culture | URGENT | STAT | - | STAT | Bacterial meningitis | No organisms |
-| BioFire FilmArray ME Panel | URGENT | STAT | - | STAT | Rapid pathogen identification | Negative |
-| HSV-1/2 PCR | URGENT | STAT | - | STAT | HSV encephalitis | Negative |
+| Cell count (tubes 1 and 4) (CPT 89051) | URGENT | STAT | - | STAT | Infection, inflammation | WBC <5; RBC 0 |
+| Protein (CPT 84157) | URGENT | STAT | - | STAT | Elevated in infection, inflammation | 15-45 mg/dL |
+| Glucose with serum glucose (CPT 82945) | URGENT | STAT | - | STAT | Low in bacterial/fungal meningitis | >60% serum |
+| Gram stain and culture (CPT 87205, 87070) | URGENT | STAT | - | STAT | Bacterial meningitis | No organisms |
+| BioFire FilmArray ME Panel (CPT 87483) | URGENT | STAT | - | STAT | Rapid pathogen identification | Negative |
+| HSV-1/2 PCR (CPT 87529) | URGENT | STAT | - | STAT | HSV encephalitis | Negative |
 | Autoimmune encephalitis panel (CSF) | - | URGENT | - | URGENT | NORSE, limbic encephalitis | Negative |
-| Cytology | - | ROUTINE | - | ROUTINE | Carcinomatous meningitis | Negative |
-| Oligoclonal bands | - | ROUTINE | - | ROUTINE | Demyelinating disease | Negative |
+| Cytology (CPT 88104) | - | ROUTINE | - | ROUTINE | Carcinomatous meningitis | Negative |
+| Oligoclonal bands (CPT 83916) | - | ROUTINE | - | ROUTINE | Demyelinating disease | Negative |
 
 **Special Handling:** HSV PCR refrigerated. Cytology rapid transport (<1 hour). Cell count within 1 hour.
 
@@ -386,7 +386,7 @@ FULL TEMPLATE BEGINS BELOW
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Lorazepam IV | IV | - | 0.1 mg/kg :: IV :: - :: 0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min if still seizing; total max 8 mg | Acute narrow-angle glaucoma | RR, O2 sat, BP, sedation; airway equipment ready | STAT | STAT | - | STAT |
+| Lorazepam IV (CPT 96374) | IV | - | 0.1 mg/kg :: IV :: - :: 0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min if still seizing; total max 8 mg | Acute narrow-angle glaucoma | RR, O2 sat, BP, sedation; airway equipment ready | STAT | STAT | - | STAT |
 | Midazolam IM | IM | - | 10 mg :: IV :: once :: 10 mg IM (≥40 kg) or 0.2 mg/kg IM (if no IV access); single dose | Respiratory compromise | RR, O2 sat; prepare IV access | STAT | STAT | - | STAT |
 | Midazolam IV | IV | - | 0.2 mg/kg :: IV :: - :: 0.2 mg/kg IV (max 10 mg); may repeat x1 | Same as lorazepam | RR, O2 sat, BP | STAT | STAT | - | STAT |
 | Midazolam intranasal | IN | - | 5 mg :: IV :: - :: 5 mg per nostril (10 mg total) if no IV/IM access | Nasal obstruction | RR, O2 sat | STAT | STAT | - | STAT |
@@ -402,7 +402,7 @@ FULL TEMPLATE BEGINS BELOW
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Levetiracetam IV (ESETT dosing) | IV | - | 60 mg/kg :: IV :: - :: 60 mg/kg IV (max 4500 mg) over 10-15 min | None absolute; reduce if CrCl <50 | Generally well tolerated; agitation | STAT | STAT | - | STAT |
+| Levetiracetam IV (ESETT dosing) (CPT 96365) | IV | - | 60 mg/kg :: IV :: - :: 60 mg/kg IV (max 4500 mg) over 10-15 min | None absolute; reduce if CrCl <50 | Generally well tolerated; agitation | STAT | STAT | - | STAT |
 | Levetiracetam IV (conservative) | IV | - | 40 mg/kg :: IV :: - :: 40 mg/kg IV (max 4500 mg) over 10-15 min | None absolute; reduce if CrCl <50 | Generally well tolerated; agitation | STAT | STAT | - | STAT |
 | Fosphenytoin IV | IV | - | 20 mg :: IV :: - :: 20 mg PE/kg IV at 150 mg PE/min; may give additional 5-10 mg PE/kg if needed | 2nd/3rd degree AV block, sinus bradycardia, allergy | Continuous cardiac monitor, BP q5min during infusion | STAT | STAT | - | STAT |
 | Valproate IV | IV | - | 40 mg/kg :: IV :: - :: 40 mg/kg IV (max 3000 mg) over 10 min | Pregnancy, hepatic disease, mitochondrial disease, urea cycle disorders, pancreatitis | Ammonia, LFTs; avoid in unknown pregnancy status | STAT | STAT | - | STAT |

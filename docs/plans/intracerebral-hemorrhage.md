@@ -15,9 +15,9 @@ setting: "HOSP, OPD, ICU"
 
 **DIAGNOSIS:** Intracerebral Hemorrhage (ICH)
 
-**ICD-10:** I61.9 (Nontraumatic intracerebral hemorrhage, unspecified), I61.0 (ICH in hemisphere, subcortical), I61.1 (ICH in hemisphere, cortical), I61.3 (ICH in brain stem), I61.4 (ICH in cerebellum)
+**ICD-10:** I61.9 (Nontraumatic intracerebral hemorrhage, unspecified), I61.0 (ICH in hemisphere, subcortical), I61.1 (ICH in hemisphere, cortical), I61.2 (ICH in hemisphere, unspecified), I61.3 (ICH in brain stem), I61.4 (ICH in cerebellum), I61.5 (ICH, intraventricular), I61.6 (ICH, multiple localized), I62.9 (Nontraumatic intracranial hemorrhage, unspecified)
 
-**SYNONYMS:** Intracerebral hemorrhage, ICH, hemorrhagic stroke, brain bleed, cerebral hemorrhage, intraparenchymal hemorrhage, hypertensive hemorrhage, spontaneous ICH, bleeding in the brain
+**SYNONYMS:** Intracerebral hemorrhage, ICH, hemorrhagic stroke, brain bleed, cerebral hemorrhage, intraparenchymal hemorrhage, hypertensive hemorrhage, spontaneous ICH, bleeding in the brain, intracerebral bleed, cerebral bleed, hemorrhagic CVA
 
 **SCOPE:** Spontaneous (non-traumatic) intracerebral hemorrhage in adults. Covers acute BP management, anticoagulant reversal, ICH score and prognosis, ICP management, surgical indications, etiology workup, and secondary prevention. Excludes traumatic ICH, subarachnoid hemorrhage (separate template), hemorrhagic transformation of ischemic stroke, and subdural/epidural hematomas.
 
@@ -35,17 +35,17 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | - | STAT | Baseline; thrombocytopenia as cause or complication; transfusion needs | Platelets >100,000 (>50,000 minimum for hemostasis) |
-| PT/INR | STAT | STAT | - | STAT | Warfarin-related ICH requires emergent reversal; coagulopathy assessment | INR <1.4 target (if elevated: REVERSE IMMEDIATELY) |
-| aPTT | STAT | STAT | - | STAT | Heparin-related ICH; coagulopathy | Normal |
-| Fibrinogen | STAT | STAT | - | STAT | DIC; consumptive coagulopathy; tPA-related hemorrhage | >150 mg/dL (if <150: give cryoprecipitate) |
-| CMP (BMP + LFTs) | STAT | STAT | - | STAT | Electrolytes; renal function for contrast/medication; hepatic function for coagulopathy | Normal |
-| Blood glucose | STAT | STAT | - | STAT | Hyperglycemia worsens ICH outcomes; hypoglycemia mimics stroke | 140-180 mg/dL target |
-| Type and screen / crossmatch | STAT | STAT | - | STAT | Potential need for blood products, surgery, reversal agents | On file; crossmatch if OR likely |
-| Troponin | STAT | STAT | - | STAT | Neurogenic cardiac injury (stress cardiomyopathy); concurrent ACS | Normal |
-| Blood alcohol level | STAT | - | - | STAT | Coagulopathy; exam reliability; alcoholism is ICH risk factor | Document result |
-| Urine drug screen | STAT | - | - | STAT | Cocaine/amphetamine-associated ICH (sympathomimetic surge) | Negative |
-| Pregnancy test (β-hCG) | STAT | STAT | - | STAT | Affects management (eclampsia differential; imaging) | Document result |
+| CBC with differential (CPT 85025) | STAT | STAT | - | STAT | Baseline; thrombocytopenia as cause or complication; transfusion needs | Platelets >100,000 (>50,000 minimum for hemostasis) |
+| PT/INR (CPT 85610) | STAT | STAT | - | STAT | Warfarin-related ICH requires emergent reversal; coagulopathy assessment | INR <1.4 target (if elevated: REVERSE IMMEDIATELY) |
+| aPTT (CPT 85730) | STAT | STAT | - | STAT | Heparin-related ICH; coagulopathy | Normal |
+| Fibrinogen (CPT 85384) | STAT | STAT | - | STAT | DIC; consumptive coagulopathy; tPA-related hemorrhage | >150 mg/dL (if <150: give cryoprecipitate) |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | - | STAT | Electrolytes; renal function for contrast/medication; hepatic function for coagulopathy | Normal |
+| Blood glucose (CPT 82947) | STAT | STAT | - | STAT | Hyperglycemia worsens ICH outcomes; hypoglycemia mimics stroke | 140-180 mg/dL target |
+| Type and screen / crossmatch (CPT 86900) | STAT | STAT | - | STAT | Potential need for blood products, surgery, reversal agents | On file; crossmatch if OR likely |
+| Troponin (CPT 84484) | STAT | STAT | - | STAT | Neurogenic cardiac injury (stress cardiomyopathy); concurrent ACS | Normal |
+| Blood alcohol level (CPT 80320) | STAT | - | - | STAT | Coagulopathy; exam reliability; alcoholism is ICH risk factor | Document result |
+| Urine drug screen (CPT 80307) | STAT | - | - | STAT | Cocaine/amphetamine-associated ICH (sympathomimetic surge) | Negative |
+| Pregnancy test (β-hCG) (CPT 84703) | STAT | STAT | - | STAT | Affects management (eclampsia differential; imaging) | Document result |
 | Thrombin time (TT) and/or ecarin clotting time (ECT) | STAT | STAT | - | STAT | Dabigatran (direct thrombin inhibitor) detection; if patient on DOACs | Normal (prolonged = dabigatran present) |
 | Anti-Xa level (calibrated for specific DOAC) | STAT | STAT | - | STAT | Rivaroxaban/apixaban/edoxaban detection; guides reversal need | Negative/undetectable (elevated = DOAC present and active) |
 
@@ -53,19 +53,19 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Lipid panel | - | ROUTINE | ROUTINE | - | Cardiovascular risk; statin decision (controversial post-ICH) | Document baseline |
-| HbA1c | - | ROUTINE | ROUTINE | - | Diabetes management | <7.0% |
-| TSH | - | ROUTINE | - | - | Thyroid dysfunction | Normal |
-| ESR / CRP | - | ROUTINE | ROUTINE | - | Vasculitis screen; inflammatory etiology | Normal |
-| D-dimer | URGENT | ROUTINE | - | URGENT | DIC; venous thromboembolism | Normal |
-| Serum osmolality | - | ROUTINE | - | ROUTINE | Monitor during osmotherapy (mannitol/hypertonic saline) | 280-320 mOsm/kg; hold osmotherapy if >320 |
+| Lipid panel (CPT 80061) | - | ROUTINE | ROUTINE | - | Cardiovascular risk; statin decision (controversial post-ICH) | Document baseline |
+| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Diabetes management | <7.0% |
+| TSH (CPT 84443) | - | ROUTINE | - | - | Thyroid dysfunction | Normal |
+| ESR (CPT 85652) / CRP (CPT 86140) | - | ROUTINE | ROUTINE | - | Vasculitis screen; inflammatory etiology | Normal |
+| D-dimer (CPT 85379) | URGENT | ROUTINE | - | URGENT | DIC; venous thromboembolism | Normal |
+| Serum osmolality (CPT 83930) | - | ROUTINE | - | ROUTINE | Monitor during osmotherapy (mannitol/hypertonic saline) | 280-320 mOsm/kg; hold osmotherapy if >320 |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Hypercoagulable panel | - | EXT | EXT | - | Young patient ICH without clear etiology; cerebral venous thrombosis with secondary hemorrhage | Normal |
-| ANA, ANCA | - | EXT | EXT | - | CNS vasculitis-related hemorrhage | Negative |
+| ANA (CPT 86235), ANCA | - | EXT | EXT | - | CNS vasculitis-related hemorrhage | Negative |
 | Toxicology (expanded) | - | EXT | - | EXT | Sympathomimetic drug use; synthetic drug-associated hemorrhage | Negative |
 | Amyloid-beta PET | - | - | EXT | - | Cerebral amyloid angiopathy (CAA) confirmation; research context | Positive amyloid deposition in lobar distribution |
 | APOE genotype | - | - | EXT | - | CAA risk stratification; APOE ε2/ε4 associated with ICH | Document alleles |
@@ -78,22 +78,22 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head without contrast | STAT | STAT | - | STAT | Door-to-CT <25 minutes; determines ICH diagnosis, location, volume, IVH, hydrocephalus, midline shift | Hemorrhage location (deep: basal ganglia/thalamus = hypertensive; lobar: CAA, tumor, AVM), volume (ABC/2 method), intraventricular hemorrhage (IVH), hydrocephalus, midline shift >5mm | Pregnancy (benefit outweighs risk) |
-| CT angiography (CTA) head | STAT | STAT | - | STAT | With initial CT; identify "spot sign" (active contrast extravasation = hematoma expansion risk), underlying vascular malformation (AVM, aneurysm) | Spot sign (30-50% risk of expansion); AVM; aneurysm; dural AV fistula; Moyamoya | Contrast allergy; renal impairment (benefit outweighs risk in emergency) |
-| ECG (12-lead) | STAT | STAT | - | STAT | Baseline; neurogenic cardiac injury; arrhythmia; QTc prolongation risk | Normal; ST changes may be neurogenic | None |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | Door-to-CT <25 minutes; determines ICH diagnosis, location, volume, IVH, hydrocephalus, midline shift | Hemorrhage location (deep: basal ganglia/thalamus = hypertensive; lobar: CAA, tumor, AVM), volume (ABC/2 method), intraventricular hemorrhage (IVH), hydrocephalus, midline shift >5mm | Pregnancy (benefit outweighs risk) |
+| CT angiography (CTA) head (CPT 70496) | STAT | STAT | - | STAT | With initial CT; identify "spot sign" (active contrast extravasation = hematoma expansion risk), underlying vascular malformation (AVM, aneurysm) | Spot sign (30-50% risk of expansion); AVM; aneurysm; dural AV fistula; Moyamoya | Contrast allergy; renal impairment (benefit outweighs risk in emergency) |
+| ECG (12-lead) (CPT 93000) | STAT | STAT | - | STAT | Baseline; neurogenic cardiac injury; arrhythmia; QTc prolongation risk | Normal; ST changes may be neurogenic | None |
 | Repeat CT head (non-contrast) | - | STAT | - | STAT | At 6h and 24h OR any neurologic decline; assess for hematoma expansion (>33% or >6mL increase from baseline = significant expansion) | Stable hematoma size; no new hemorrhage; no hydrocephalus progression | Same as initial |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with and without contrast (include GRE/SWI sequences) | - | URGENT | ROUTINE | URGENT | Within 24-72h when stable; or urgently if underlying mass/AVM suspected | Underlying tumor; cavernous malformation; microbleeds (CAA pattern: lobar; hypertensive: deep). SWI shows microhemorrhages | Pacemaker; hemodynamic instability; MRI-incompatible monitoring |
+| MRI brain with and without contrast (CPT 70553) (include GRE/SWI sequences) | - | URGENT | ROUTINE | URGENT | Within 24-72h when stable; or urgently if underlying mass/AVM suspected | Underlying tumor; cavernous malformation; microbleeds (CAA pattern: lobar; hypertensive: deep). SWI shows microhemorrhages | Pacemaker; hemodynamic instability; MRI-incompatible monitoring |
 | MR venography (MRV) | - | ROUTINE | - | ROUTINE | If cerebral venous thrombosis (CVT) suspected as cause of hemorrhagic venous infarct | Venous sinus thrombosis | Same as MRI |
-| Conventional cerebral angiography (DSA) | - | URGENT | EXT | URGENT | Young patient (<50) with lobar ICH and no clear etiology; suspected AVM/aneurysm where CTA inconclusive; negative initial CTA but high suspicion | AVM; aneurysm; dural AV fistula; Moyamoya; vasculitis | Contrast allergy; renal impairment; coagulopathy |
+| Conventional cerebral angiography (DSA) (CPT 36224) | - | URGENT | EXT | URGENT | Young patient (<50) with lobar ICH and no clear etiology; suspected AVM/aneurysm where CTA inconclusive; negative initial CTA but high suspicion | AVM; aneurysm; dural AV fistula; Moyamoya; vasculitis | Contrast allergy; renal impairment; coagulopathy |
 | Delayed DSA (if initial negative) | - | - | ROUTINE | - | Repeat at 3-6 months; small AVM may be compressed by acute hematoma and missed initially | Unmasked AVM/aneurysm | Same as initial DSA |
-| Echocardiogram | - | ROUTINE | - | ROUTINE | Neurogenic cardiac injury; baseline cardiac function; endocarditis if mycotic aneurysm suspected | LV dysfunction; stress cardiomyopathy | None significant |
-| Continuous EEG (cEEG) | - | URGENT | - | STAT | If altered consciousness disproportionate to hemorrhage size; suspected seizures | Non-convulsive seizures; NCSE (seen in 20-30% of ICH patients) | None |
-| Chest X-ray | URGENT | ROUTINE | - | URGENT | Aspiration; pulmonary edema (neurogenic); baseline for ventilator | Normal | None |
+| Echocardiogram (CPT 93306) | - | ROUTINE | - | ROUTINE | Neurogenic cardiac injury; baseline cardiac function; endocarditis if mycotic aneurysm suspected | LV dysfunction; stress cardiomyopathy | None significant |
+| Continuous EEG (cEEG) (CPT 95700) | - | URGENT | - | STAT | If altered consciousness disproportionate to hemorrhage size; suspected seizures | Non-convulsive seizures; NCSE (seen in 20-30% of ICH patients) | None |
+| Chest X-ray (CPT 71046) | URGENT | ROUTINE | - | URGENT | Aspiration; pulmonary edema (neurogenic); baseline for ventilator | Normal | None |
 
 ### 2C. Rare/Specialized
 
@@ -116,15 +116,15 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Blood pressure reduction: Nicardipine IV | IV | - | 5 mg/h :: IV :: - :: 5 mg/h IV; increase by 2.5 mg/h q5-15min; max 15 mg/h. Target SBP 130-150 mmHg (INTERACT2: <140 safe; AHA 2022: <140 reasonable if presenting SBP 150-220) | Severe aortic stenosis; advanced HF | Continuous arterial line BP; neuro checks with each change; avoid SBP <110 (renal hypoperfusion) | STAT | STAT | - | STAT |
-| Blood pressure reduction: Labetalol IV | IV | - | 10-20 mg :: IV :: once :: 10-20 mg IV bolus over 1-2 min; may repeat or double q10min; max 300 mg. Alternative to nicardipine | Heart block (2nd/3rd degree); severe bradycardia; decompensated HF; asthma | HR; BP continuous | STAT | STAT | - | STAT |
-| Blood pressure reduction: Clevidipine IV | IV | - | 1-2 mg/h :: IV :: - :: 1-2 mg/h IV; titrate by doubling q90sec initially; max 32 mg/h | Soy/egg allergy; lipid disorders | BP continuous | STAT | STAT | - | STAT |
+| Blood pressure reduction: Nicardipine IV (CPT 96365) | IV | - | 5 mg/h :: IV :: - :: 5 mg/h IV; increase by 2.5 mg/h q5-15min; max 15 mg/h. Target SBP 130-150 mmHg (INTERACT2: <140 safe; AHA 2022: <140 reasonable if presenting SBP 150-220) | Severe aortic stenosis; advanced HF | Continuous arterial line BP; neuro checks with each change; avoid SBP <110 (renal hypoperfusion) | STAT | STAT | - | STAT |
+| Blood pressure reduction: Labetalol IV (CPT 96374) | IV | - | 10-20 mg :: IV :: once :: 10-20 mg IV bolus over 1-2 min; may repeat or double q10min; max 300 mg. Alternative to nicardipine | Heart block (2nd/3rd degree); severe bradycardia; decompensated HF; asthma | HR; BP continuous | STAT | STAT | - | STAT |
+| Blood pressure reduction: Clevidipine IV (CPT 96365) | IV | - | 1-2 mg/h :: IV :: - :: 1-2 mg/h IV; titrate by doubling q90sec initially; max 32 mg/h | Soy/egg allergy; lipid disorders | BP continuous | STAT | STAT | - | STAT |
 | Intubation and airway protection | - | - | GCS ≤8; inability to protect airway; respiratory failure; impending herniation. Use non-depolarizing agents; avoid succinylcholine if elevated ICP (relative) | N/A | Ventilator; head of bed 30°; avoid hyperventilation unless herniation | STAT | STAT | - | STAT |
-| Warfarin reversal: 4-factor PCC (Kcentra) | IV | - | 25-50 units/kg :: IV :: - :: 25-50 units/kg IV (dose based on INR: INR 2-4: 25 u/kg; INR 4-6: 35 u/kg; INR >6: 50 u/kg); infuse over 10-15 min. Reverses INR within 15-30 min. PREFERRED over FFP (faster, smaller volume) | Active DIC (relative); HIT (contains heparin traces) | INR 15 min after infusion; repeat if INR >1.4; thrombotic risk | STAT | STAT | - | STAT |
+| Warfarin reversal: 4-factor PCC (Kcentra) (CPT 96374) | IV | - | 25-50 units/kg :: IV :: - :: 25-50 units/kg IV (dose based on INR: INR 2-4: 25 u/kg; INR 4-6: 35 u/kg; INR >6: 50 u/kg); infuse over 10-15 min. Reverses INR within 15-30 min. PREFERRED over FFP (faster, smaller volume) | Active DIC (relative); HIT (contains heparin traces) | INR 15 min after infusion; repeat if INR >1.4; thrombotic risk | STAT | STAT | - | STAT |
 | Warfarin reversal: Vitamin K (phytonadione) | IV | - | 10 mg :: IV :: - :: 10 mg IV slow push (over 10 min) to sustain INR correction (PCC is temporary). ALWAYS give WITH PCC | Known severe allergic reaction (rare) | INR at 6h and 24h; anaphylaxis risk (rare with slow IV) | STAT | STAT | - | STAT |
 | Warfarin reversal: FFP (if PCC unavailable) | IV | - | 10-15 mL/kg :: IV :: - :: 10-15 mL/kg IV (typically 2-4 units). Slower than PCC; requires thawing and larger volume | Volume overload; transfusion reactions | INR; volume status | STAT | STAT | - | STAT |
-| Dabigatran reversal: Idarucizumab (Praxbind) | IV | - | 5 g :: IV :: - :: 5 g IV (two 2.5g boluses or infusions). Specific reversal agent for dabigatran. Reversal within minutes | None absolute | Thrombin time (TT), aPTT; clinical hemostasis | STAT | STAT | - | STAT |
-| Factor Xa inhibitor reversal: Andexanet alfa (Andexxa) | IV | - | 400 mg :: IV :: once :: For rivaroxaban/apixaban. Low-dose: 400 mg IV bolus then 4 mg/min x 2h (last dose >8h ago). High-dose: 800 mg IV bolus then 8 mg/min x 2h (last dose <8h ago or unknown, or rivaroxaban) | Thrombotic risk (10-15% VTE in trials) | Anti-Xa levels; thrombosis monitoring; arterial line | STAT | STAT | - | STAT |
+| Dabigatran reversal: Idarucizumab (Praxbind) (CPT 96374) | IV | - | 5 g :: IV :: - :: 5 g IV (two 2.5g boluses or infusions). Specific reversal agent for dabigatran. Reversal within minutes | None absolute | Thrombin time (TT), aPTT; clinical hemostasis | STAT | STAT | - | STAT |
+| Factor Xa inhibitor reversal: Andexanet alfa (Andexxa) (CPT 96365) | IV | - | 400 mg :: IV :: once :: For rivaroxaban/apixaban. Low-dose: 400 mg IV bolus then 4 mg/min x 2h (last dose >8h ago). High-dose: 800 mg IV bolus then 8 mg/min x 2h (last dose <8h ago or unknown, or rivaroxaban) | Thrombotic risk (10-15% VTE in trials) | Anti-Xa levels; thrombosis monitoring; arterial line | STAT | STAT | - | STAT |
 | Factor Xa inhibitor reversal: 4-factor PCC (if andexanet unavailable) | IV | - | 50 units/kg :: IV :: - :: 50 units/kg IV. Off-label but supported by guidelines if andexanet not available | Same as PCC | Anti-Xa levels; clinical hemostasis | STAT | STAT | - | STAT |
 | Heparin reversal: Protamine sulfate | IV | - | 1 mg :: IV :: - :: 1 mg per 100 units of heparin given in last 2-3h; max 50 mg; give slow IV over 10 min | Fish/protamine allergy | aPTT; BP (hypotension with rapid infusion); anaphylaxis | STAT | STAT | - | STAT |
 | Platelet transfusion | - | - | 1 unit :: - :: - :: 1 unit apheresis platelets if platelet count <100,000 AND active bleeding or pre-surgical. For antiplatelet-associated ICH: PATCH trial showed NO benefit from routine platelet transfusion (do NOT transfuse if platelets >100K on antiplatelet therapy) | HIT; ITP (consult hematology) | Platelet count; clinical hemostasis | STAT | STAT | - | STAT |

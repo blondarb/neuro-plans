@@ -18,7 +18,7 @@ setting: "HOSP, OPD, ICU"
 
 **ICD-10:** G25.0 (Essential tremor), G25.1 (Drug-induced tremor), G25.2 (Other specified forms of tremor), G25.9 (Extrapyramidal and movement disorder, unspecified)
 
-**SYNONYMS:** Essential tremor, ET, benign essential tremor, familial tremor, hereditary tremor, action tremor, postural tremor, kinetic tremor, senile tremor
+**SYNONYMS:** Essential tremor, ET, benign essential tremor, familial tremor, hereditary tremor, action tremor, postural tremor, kinetic tremor, senile tremor, benign tremor
 
 **SCOPE:** Diagnosis and management of essential tremor in adults. Covers diagnostic workup to differentiate from Parkinson's disease and other tremor disorders, pharmacologic and non-pharmacologic treatment options. Excludes enhanced physiologic tremor, drug-induced tremor, psychogenic tremor, and tremor as part of other movement disorders (PD, dystonia, cerebellar disease).
 
@@ -64,20 +64,20 @@ setting: "HOSP, OPD, ICU"
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| TSH | - | ROUTINE | ROUTINE | - | Hyperthyroidism causes tremor | Normal (0.4-4.0 mIU/L) |
-| Free T4 | - | ROUTINE | ROUTINE | - | If TSH abnormal | Normal |
-| CMP | - | ROUTINE | ROUTINE | - | Electrolyte abnormalities, hepatic/renal function | Normal |
-| Glucose | - | ROUTINE | ROUTINE | - | Hypoglycemia can cause tremor | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Hyperthyroidism causes tremor | Normal (0.4-4.0 mIU/L) |
+| Free T4 (CPT 84439) | - | ROUTINE | ROUTINE | - | If TSH abnormal | Normal |
+| CMP (CPT 80053) | - | ROUTINE | ROUTINE | - | Electrolyte abnormalities, hepatic/renal function | Normal |
+| Glucose (CPT 82947) | - | ROUTINE | ROUTINE | - | Hypoglycemia can cause tremor | Normal |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Serum ceruloplasmin | - | ROUTINE | ROUTINE | - | Wilson disease if <50 years or atypical features | 20-40 mg/dL |
+| Serum ceruloplasmin (CPT 82390) | - | ROUTINE | ROUTINE | - | Wilson disease if <50 years or atypical features | 20-40 mg/dL |
 | 24-hour urine copper | - | EXT | EXT | - | If ceruloplasmin low/borderline | <100 mcg/24h |
-| Liver function tests | - | ROUTINE | ROUTINE | - | Wilson disease, hepatic encephalopathy | Normal |
-| Serum copper | - | ROUTINE | ROUTINE | - | Wilson disease | Normal |
-| Vitamin B12 | - | ROUTINE | ROUTINE | - | Deficiency can cause tremor | >400 pg/mL |
+| Liver function tests (CPT 80076) | - | ROUTINE | ROUTINE | - | Wilson disease, hepatic encephalopathy | Normal |
+| Serum copper (CPT 82390) | - | ROUTINE | ROUTINE | - | Wilson disease | Normal |
+| Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | Deficiency can cause tremor | >400 pg/mL |
 | Drug/toxin screen | - | ROUTINE | ROUTINE | - | Drug-induced tremor | Negative |
 | Caffeine intake assessment | - | - | ROUTINE | - | Excessive caffeine exacerbates tremor | Assess |
 
@@ -105,10 +105,10 @@ setting: "HOSP, OPD, ICU"
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain without contrast | - | ROUTINE | ROUTINE | - | If atypical features or diagnostic uncertainty | Rule out structural cause, cerebellar lesions | Pacemaker, metal |
-| DaTscan (I-123 ioflupane SPECT) | - | - | ROUTINE | - | Differentiate ET from PD if uncertain | Normal in ET; reduced striatal uptake in PD | Pregnancy, iodine allergy |
+| MRI brain without contrast (CPT 70551) | - | ROUTINE | ROUTINE | - | If atypical features or diagnostic uncertainty | Rule out structural cause, cerebellar lesions | Pacemaker, metal |
+| DaTscan (CPT 78830) | - | - | ROUTINE | - | Differentiate ET from PD if uncertain | Normal in ET; reduced striatal uptake in PD | Pregnancy, iodine allergy |
 | Accelerometry/Tremor analysis | - | - | EXT | - | Objective quantification, research | Characterize tremor frequency (4-12 Hz) | None |
-| EMG | - | - | EXT | - | If neuropathic tremor suspected | Rule out neuropathy | None |
+| EMG (CPT 95885) | - | - | EXT | - | If neuropathic tremor suspected | Rule out neuropathy | None |
 | MRI with susceptibility-weighted imaging | - | ROUTINE | ROUTINE | - | If Wilson disease suspected | Rule out basal ganglia T2 hypointensity | Per MRI |
 
 ---

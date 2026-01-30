@@ -17,7 +17,7 @@ setting: "ED, HOSP, OPD, ICU"
 
 **ICD-10:** C79.31 (Secondary malignant neoplasm of brain), C79.32 (Secondary malignant neoplasm of cerebral meninges), C79.49 (Secondary malignant neoplasm of other parts of nervous system), G93.6 (Cerebral edema due to neoplasm)
 
-**SYNONYMS:** Brain metastases, brain mets, cerebral metastases, metastatic brain tumor, secondary brain cancer, brain tumor from cancer, metastatic disease to brain, brain lesions, CNS metastases
+**SYNONYMS:** Brain metastases, brain mets, cerebral metastases, brain metastasis, metastatic brain tumor, secondary brain tumor, secondary brain cancer, metastatic brain disease, brain tumor from cancer, metastatic disease to brain, brain lesions, CNS metastases
 
 **SCOPE:** Management of newly diagnosed or progressive brain metastases in adults. Covers initial stabilization, vasogenic edema management with corticosteroids, seizure management, imaging evaluation, molecular/histopathologic workup, treatment modalities (surgery, stereotactic radiosurgery, whole-brain radiation, systemic therapy with CNS penetration), and disposition. Excludes primary brain tumors (separate template), leptomeningeal carcinomatosis (partially addressed), and spinal metastases (separate template).
 
@@ -35,33 +35,33 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Baseline; chemotherapy planning; leukocytosis/infection; thrombocytopenia (bleeding risk, treatment candidacy) | WBC, platelets within normal limits; ALC (absolute lymphocyte count) for immunotherapy eligibility |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Renal function for contrast imaging; hepatic function for chemotherapy dosing; electrolytes (SIADH from brain lesions); glucose (steroid hyperglycemia) | Normal; anticipate glucose elevation with dexamethasone |
-| PT/INR, aPTT | STAT | STAT | ROUTINE | STAT | Coagulopathy assessment; surgical candidacy; hemorrhagic metastases (melanoma, RCC, choriocarcinoma, thyroid) | Normal |
-| Blood glucose | STAT | STAT | ROUTINE | STAT | Steroid-induced hyperglycemia; baseline before dexamethasone | <180 mg/dL; start insulin if persistently elevated |
-| Troponin | STAT | STAT | - | STAT | Cardiac evaluation if syncope or neurogenic cardiac injury | Normal |
-| Pregnancy test (β-hCG) | STAT | STAT | ROUTINE | STAT | Treatment planning; β-hCG-secreting tumors (choriocarcinoma, germ cell); radiation contraindication in pregnancy | Negative; if elevated consider choriocarcinoma or germ cell tumor |
-| LDH | STAT | ROUTINE | ROUTINE | STAT | Melanoma staging; tumor burden marker; prognostic | Normal; elevated in melanoma, lymphoma |
-| TSH, free T4 | - | ROUTINE | ROUTINE | - | Thyroid primary (thyroid cancer with brain metastases); fatigue/cognitive symptoms differential | Normal; abnormal may indicate thyroid primary |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Baseline; chemotherapy planning; leukocytosis/infection; thrombocytopenia (bleeding risk, treatment candidacy) | WBC, platelets within normal limits; ALC (absolute lymphocyte count) for immunotherapy eligibility |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | STAT | Renal function for contrast imaging; hepatic function for chemotherapy dosing; electrolytes (SIADH from brain lesions); glucose (steroid hyperglycemia) | Normal; anticipate glucose elevation with dexamethasone |
+| PT/INR, aPTT (CPT 85610+85730) | STAT | STAT | ROUTINE | STAT | Coagulopathy assessment; surgical candidacy; hemorrhagic metastases (melanoma, RCC, choriocarcinoma, thyroid) | Normal |
+| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Steroid-induced hyperglycemia; baseline before dexamethasone | <180 mg/dL; start insulin if persistently elevated |
+| Troponin (CPT 84484) | STAT | STAT | - | STAT | Cardiac evaluation if syncope or neurogenic cardiac injury | Normal |
+| Pregnancy test (β-hCG) (CPT 84703) | STAT | STAT | ROUTINE | STAT | Treatment planning; β-hCG-secreting tumors (choriocarcinoma, germ cell); radiation contraindication in pregnancy | Negative; if elevated consider choriocarcinoma or germ cell tumor |
+| LDH (CPT 83615) | STAT | ROUTINE | ROUTINE | STAT | Melanoma staging; tumor burden marker; prognostic | Normal; elevated in melanoma, lymphoma |
+| TSH, free T4 (CPT 84443+84439) | - | ROUTINE | ROUTINE | - | Thyroid primary (thyroid cancer with brain metastases); fatigue/cognitive symptoms differential | Normal; abnormal may indicate thyroid primary |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Tumor markers (CEA, CA 19-9, CA 125, CA 15-3, AFP, β-hCG) | - | ROUTINE | ROUTINE | - | Unknown primary: CEA (lung, GI, breast), CA 19-9 (pancreatic, GI), CA 125 (ovarian), CA 15-3 (breast), AFP (hepatocellular, germ cell), β-hCG (choriocarcinoma, germ cell) | Elevations guide primary site evaluation |
+| Tumor markers (CEA, CA 19-9, CA 125, CA 15-3, AFP, β-hCG) (CPT 82378, 86301, 86304, 82105, 84703) | - | ROUTINE | ROUTINE | - | Unknown primary: CEA (lung, GI, breast), CA 19-9 (pancreatic, GI), CA 125 (ovarian), CA 15-3 (breast), AFP (hepatocellular, germ cell), β-hCG (choriocarcinoma, germ cell) | Elevations guide primary site evaluation |
 | PSA (males) | - | ROUTINE | ROUTINE | - | Prostate cancer with brain metastases (rare but occurs) | Normal; elevated guides prostate workup |
 | Serum protein electrophoresis (SPEP) | - | ROUTINE | ROUTINE | - | Lymphoma/myeloma differential for CNS mass lesion | No monoclonal protein |
-| HIV, hepatitis B/C | - | ROUTINE | ROUTINE | - | Primary CNS lymphoma (PCNSL) differential; immunosuppression assessment; treatment implications | Negative |
-| ESR / CRP | - | ROUTINE | ROUTINE | - | Infection differential (abscess vs. metastasis); inflammatory markers | Normal |
-| Cortisol (AM) | - | ROUTINE | ROUTINE | - | If pituitary metastasis suspected; before initiating dexamethasone if possible | Normal (>10 mcg/dL AM) |
+| HIV, hepatitis B/C (CPT 87389) | - | ROUTINE | ROUTINE | - | Primary CNS lymphoma (PCNSL) differential; immunosuppression assessment; treatment implications | Negative |
+| ESR / CRP (CPT 85652+86140) | - | ROUTINE | ROUTINE | - | Infection differential (abscess vs. metastasis); inflammatory markers | Normal |
+| Cortisol (AM) (CPT 82533) | - | ROUTINE | ROUTINE | - | If pituitary metastasis suspected; before initiating dexamethasone if possible | Normal (>10 mcg/dL AM) |
 | Prolactin | - | ROUTINE | ROUTINE | - | Pituitary metastasis differential | Normal |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CSF cytology / flow cytometry | - | EXT | EXT | - | Leptomeningeal carcinomatosis evaluation; diagnostic if positive (sensitivity ~50% single LP, ~80% with repeat) | Negative; positive = leptomeningeal disease |
-| CSF protein, glucose, cell count | - | EXT | EXT | - | Leptomeningeal disease (elevated protein, low glucose, lymphocytic pleocytosis) | Normal; elevated protein and low glucose suggest LMD |
+| CSF cytology / flow cytometry (CPT 88104) | - | EXT | EXT | - | Leptomeningeal carcinomatosis evaluation; diagnostic if positive (sensitivity ~50% single LP, ~80% with repeat) | Negative; positive = leptomeningeal disease |
+| CSF protein, glucose, cell count (CPT 84157+82945+89051) | - | EXT | EXT | - | Leptomeningeal disease (elevated protein, low glucose, lymphocytic pleocytosis) | Normal; elevated protein and low glucose suggest LMD |
 | Circulating tumor DNA (ctDNA) / liquid biopsy | - | EXT | EXT | - | Unknown primary; molecular profiling when tissue biopsy not feasible; monitor treatment response | Detectable mutations guide therapy |
 | Next-generation sequencing (NGS) - blood | - | EXT | EXT | - | Identify actionable mutations (EGFR, ALK, BRAF, HER2, KRAS, ROS1) when tissue insufficient | Actionable driver mutations |
 | Paraneoplastic antibody panel | - | EXT | EXT | - | If clinical presentation suggests paraneoplastic syndrome mimicking or coexisting with metastatic disease | Negative; positive changes management |
@@ -75,21 +75,21 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head without contrast | STAT | STAT | - | STAT | Immediate in ED for acute presentation; identifies hemorrhage, mass effect, hydrocephalus | Mass lesion(s), hemorrhage, edema, midline shift, hydrocephalus; hemorrhagic metastases suggest melanoma, RCC, choriocarcinoma, thyroid | Pregnancy (benefit outweighs risk) |
-| MRI brain with and without contrast (gadolinium) | STAT | STAT | URGENT | STAT | Within 24h of presentation; GOLD STANDARD for brain metastases; thin-cut (≤1mm) 3D T1 post-contrast | Number/size/location of metastases; ring-enhancement pattern; hemorrhagic component; leptomeningeal enhancement; dural-based vs. parenchymal | MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia |
-| CT chest/abdomen/pelvis with contrast | URGENT | URGENT | ROUTINE | - | Within 24-48h if unknown primary; staging for known primary | Primary tumor identification; staging; additional metastatic disease | Contrast allergy; renal impairment |
-| ECG (12-lead) | STAT | STAT | - | STAT | Baseline; pre-treatment; QTc for anti-emetics/targeted therapies | Normal | None |
-| Chest X-ray | STAT | STAT | - | STAT | Lung primary (most common source of brain metastases); pulmonary metastases; aspiration if obtunded | Lung mass; effusion; lymphadenopathy | Pregnancy (shield) |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | Immediate in ED for acute presentation; identifies hemorrhage, mass effect, hydrocephalus | Mass lesion(s), hemorrhage, edema, midline shift, hydrocephalus; hemorrhagic metastases suggest melanoma, RCC, choriocarcinoma, thyroid | Pregnancy (benefit outweighs risk) |
+| MRI brain with and without contrast (gadolinium) (CPT 70553) | STAT | STAT | URGENT | STAT | Within 24h of presentation; GOLD STANDARD for brain metastases; thin-cut (≤1mm) 3D T1 post-contrast | Number/size/location of metastases; ring-enhancement pattern; hemorrhagic component; leptomeningeal enhancement; dural-based vs. parenchymal | MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia |
+| CT chest/abdomen/pelvis with contrast (CPT 71260+74178) | URGENT | URGENT | ROUTINE | - | Within 24-48h if unknown primary; staging for known primary | Primary tumor identification; staging; additional metastatic disease | Contrast allergy; renal impairment |
+| ECG (12-lead) (CPT 93000) | STAT | STAT | - | STAT | Baseline; pre-treatment; QTc for anti-emetics/targeted therapies | Normal | None |
+| Chest X-ray (CPT 71046) | STAT | STAT | - | STAT | Lung primary (most common source of brain metastases); pulmonary metastases; aspiration if obtunded | Lung mass; effusion; lymphadenopathy | Pregnancy (shield) |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| PET/CT (FDG) | - | ROUTINE | ROUTINE | - | Outpatient or during hospitalization; staging; unknown primary identification; ~85% sensitivity for primary site | Primary tumor; additional metastatic disease; lymph node involvement; treatment response assessment | Uncontrolled diabetes (glucose >200 impairs uptake); pregnancy |
-| CT angiography (head) | URGENT | URGENT | - | URGENT | If hemorrhagic metastasis to evaluate vascularity; pre-surgical planning | Tumor vascularity; relationship to major vessels | Contrast allergy; renal impairment |
+| PET/CT (FDG) (CPT 78816) | - | ROUTINE | ROUTINE | - | Outpatient or during hospitalization; staging; unknown primary identification; ~85% sensitivity for primary site | Primary tumor; additional metastatic disease; lymph node involvement; treatment response assessment | Uncontrolled diabetes (glucose >200 impairs uptake); pregnancy |
+| CT angiography (head) (CPT 70496) | URGENT | URGENT | - | URGENT | If hemorrhagic metastasis to evaluate vascularity; pre-surgical planning | Tumor vascularity; relationship to major vessels | Contrast allergy; renal impairment |
 | MR spectroscopy (MRS) | - | ROUTINE | ROUTINE | - | Differentiating tumor from abscess or radiation necrosis; elevated choline:creatine ratio in tumor; lipid/lactate peak in necrosis | Elevated choline, reduced NAA in tumor; elevated lipid/lactate in necrosis | Same as MRI |
 | MR perfusion (DSC or DCE) | - | ROUTINE | ROUTINE | - | Differentiating tumor recurrence from radiation necrosis; elevated rCBV in tumor | Elevated rCBV (>1.5-2.0) suggests tumor; low rCBV suggests radiation necrosis | Same as MRI |
-| MRI spine (whole) with contrast | - | URGENT | ROUTINE | - | If spinal symptoms or leptomeningeal disease suspected; staging for drop metastases | Spinal metastases; leptomeningeal enhancement; cord compression | Same as MRI |
+| MRI spine (whole) with contrast (CPT 72156+72157+72158) | - | URGENT | ROUTINE | - | If spinal symptoms or leptomeningeal disease suspected; staging for drop metastases | Spinal metastases; leptomeningeal enhancement; cord compression | Same as MRI |
 | Mammography / breast MRI (females) | - | ROUTINE | ROUTINE | - | Breast cancer is 2nd most common source of brain metastases in women | Breast mass or abnormality | Breast implants (mammography may be limited) |
 | Stereotactic biopsy planning MRI | - | URGENT | ROUTINE | - | If tissue diagnosis needed and surgical resection not planned; fiducial/frameless navigation sequences | Biopsy trajectory planning; avoidance of eloquent cortex and vasculature | Same as MRI |
 
@@ -106,7 +106,7 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| LP with CSF cytology, flow cytometry, protein, glucose, cell count | - | URGENT | EXT | URGENT | If leptomeningeal disease suspected (cranial neuropathies, radiculopathy, headache, altered mentation without adequate parenchymal lesion to explain); MUST ensure no obstructive hydrocephalus or significant mass effect first | Cytology: malignant cells (50% sensitivity single LP; repeat improves to ~80%); elevated opening pressure; elevated protein (>50 mg/dL); low glucose (<40 mg/dL or <60% serum); lymphocytic pleocytosis | CONTRAINDICATED if significant mass effect, large posterior fossa lesion, obstructive hydrocephalus, midline shift >5mm (herniation risk); coagulopathy; local infection at LP site |
+| LP (CPT 62270) with CSF cytology, flow cytometry, protein, glucose, cell count | - | URGENT | EXT | URGENT | If leptomeningeal disease suspected (cranial neuropathies, radiculopathy, headache, altered mentation without adequate parenchymal lesion to explain); MUST ensure no obstructive hydrocephalus or significant mass effect first | Cytology: malignant cells (50% sensitivity single LP; repeat improves to ~80%); elevated opening pressure; elevated protein (>50 mg/dL); low glucose (<40 mg/dL or <60% serum); lymphocytic pleocytosis | CONTRAINDICATED if significant mass effect, large posterior fossa lesion, obstructive hydrocephalus, midline shift >5mm (herniation risk); coagulopathy; local infection at LP site |
 
 ---
 
@@ -116,7 +116,7 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| **Dexamethasone (vasogenic edema)** | IV | - | 10 mg :: IV :: q6h :: **Symptomatic edema:** 10 mg IV loading dose, then 4 mg IV/PO q6h; **Moderate symptoms:** 4-8 mg/day; **Severe/impending herniation:** 10 mg IV bolus then 4-8 mg IV q6h (up to 16-24 mg/day); Taper as soon as clinically feasible over 2-4 weeks; GI prophylaxis with PPI (omeprazole 20 mg daily) while on steroids; Monitor glucose q6h initially | - | Dexamethasone is preferred corticosteroid (minimal mineralocorticoid effect, long half-life); symptomatic improvement in 24-72h; reduces vasogenic edema via BBB stabilization; no benefit in asymptomatic patients without edema (AVOID routine prophylactic use) | STAT | STAT | URGENT | STAT |
+| **Dexamethasone (vasogenic edema)** (CPT 96374) | IV | - | 10 mg :: IV :: q6h :: **Symptomatic edema:** 10 mg IV loading dose, then 4 mg IV/PO q6h; **Moderate symptoms:** 4-8 mg/day; **Severe/impending herniation:** 10 mg IV bolus then 4-8 mg IV q6h (up to 16-24 mg/day); Taper as soon as clinically feasible over 2-4 weeks; GI prophylaxis with PPI (omeprazole 20 mg daily) while on steroids; Monitor glucose q6h initially | - | Dexamethasone is preferred corticosteroid (minimal mineralocorticoid effect, long half-life); symptomatic improvement in 24-72h; reduces vasogenic edema via BBB stabilization; no benefit in asymptomatic patients without edema (AVOID routine prophylactic use) | STAT | STAT | URGENT | STAT |
 | **Seizure management (acute)** | IV | - | 0.1 mg/kg :: IV :: - :: **Active seizure:** Lorazepam 0.1 mg/kg IV (max 4 mg), may repeat x1 in 5 min; **Then:** Levetiracetam 1000-1500 mg IV load (preferred - no drug interactions with chemotherapy) OR valproic acid 20-30 mg/kg IV load (avoid with hepatic metastases); Phenytoin/fosphenytoin only if above unavailable (interacts with many chemotherapies and targeted agents) | - | Levetiracetam preferred: no hepatic enzyme induction (does NOT reduce efficacy of steroids, chemotherapy, or targeted agents), renal elimination, broad spectrum; AAN guidelines do NOT recommend prophylactic AEDs in brain tumor patients without seizures | STAT | STAT | - | STAT |
 | **No prophylactic anticonvulsants** | - | - | Do NOT start AEDs prophylactically in patients with brain metastases who have NOT had seizures; Applicable even peri-operatively (surgical prophylaxis may be used 7 days only per institutional protocol) | - | AAN Practice Parameter (Glantz et al., 2000; reaffirmed): No evidence supporting prophylactic AED use in brain tumor patients; side effects outweigh benefits; ASCO guideline concordant | STAT | STAT | ROUTINE | STAT |
 | **Airway/ICP management (obtunded patient)** | IV | - | 1-1.5 g/kg :: IV :: once :: **GCS ≤8:** Intubation; elevate HOB 30°; **Acute herniation:** Mannitol 1-1.5 g/kg IV bolus OR hypertonic saline (23.4% NaCl 30 mL via central line over 15 min or 3% NaCl 250 mL over 30 min); maintain PaCO2 30-35 mmHg (brief hyperventilation only as bridge to definitive treatment); Emergent neurosurgery consult for decompression | - | ICP management as bridge to definitive treatment (surgery/radiation); prolonged hyperventilation causes cerebral ischemia; osmotherapy reduces cerebral edema | STAT | - | - | STAT |

@@ -17,7 +17,7 @@ setting: "HOSP, OPD, ICU"
 
 **ICD-10:** I60.9 (Nontraumatic subarachnoid hemorrhage, unspecified), I60.7 (SAH from unspecified intracranial artery), I60.0-I60.6 (SAH from specific arteries)
 
-**SYNONYMS:** Subarachnoid hemorrhage, SAH, ruptured aneurysm, aneurysmal SAH, aSAH, thunderclap headache, worst headache of life, brain aneurysm rupture, bleeding around brain
+**SYNONYMS:** Subarachnoid hemorrhage, SAH, ruptured aneurysm, aneurysmal SAH, aSAH, subarachnoid bleed, thunderclap headache, worst headache of life, brain aneurysm rupture, bleeding around brain
 
 **SCOPE:** Spontaneous (non-traumatic) aneurysmal subarachnoid hemorrhage in adults. Covers thunderclap headache evaluation, CT/LP diagnosis, aneurysm identification and securing, vasospasm prevention and treatment (nimodipine, triple-H therapy), hydrocephalus management, and complications. Excludes traumatic SAH, perimesencephalic (non-aneurysmal) SAH management, and intracerebral hemorrhage (separate template).
 
@@ -35,39 +35,39 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | - | STAT | Baseline; thrombocytopenia; leukocytosis (stress response); pre-surgical | Normal |
-| CMP (BMP + LFTs) | STAT | STAT | - | STAT | Electrolytes (hyponatremia from cerebral salt wasting or SIADH is common); renal/hepatic function | Normal; watch Na closely |
-| PT/INR, aPTT | STAT | STAT | - | STAT | Coagulopathy assessment; pre-procedure; anticoagulant use | Normal |
-| Fibrinogen | STAT | STAT | - | STAT | Coagulopathy; DIC screen | >150 mg/dL |
-| Type and crossmatch | STAT | STAT | - | STAT | Surgical intervention likely; potential blood loss | On file; crossmatch 2-4 units |
-| Troponin | STAT | STAT | - | STAT | Neurogenic stunned myocardium occurs in 20-30% of SAH; stress cardiomyopathy | Often elevated (neurogenic — not ACS) |
-| BNP or NT-proBNP | URGENT | ROUTINE | - | URGENT | Neurogenic cardiac dysfunction; volume status assessment | Elevated (neurogenic) |
-| Blood glucose | STAT | STAT | - | STAT | Hyperglycemia worsens outcomes; stress response | 140-180 mg/dL target |
-| Magnesium | STAT | STAT | - | STAT | Hypomagnesemia increases vasospasm risk; maintain high-normal | >2.0 mg/dL (replete aggressively) |
-| Calcium (ionized) | STAT | STAT | - | STAT | Electrolyte management; nimodipine monitoring | Normal |
-| Phosphorus | STAT | ROUTINE | - | STAT | Electrolyte management; refeeding risk | Normal |
-| Lactate | STAT | ROUTINE | - | STAT | Perfusion status | <2 mmol/L |
-| Pregnancy test (β-hCG) | STAT | STAT | - | STAT | Affects imaging, anesthesia, and treatment decisions | Document result |
+| CBC with differential (CPT 85025) | STAT | STAT | - | STAT | Baseline; thrombocytopenia; leukocytosis (stress response); pre-surgical | Normal |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | - | STAT | Electrolytes (hyponatremia from cerebral salt wasting or SIADH is common); renal/hepatic function | Normal; watch Na closely |
+| PT/INR (CPT 85610), aPTT (CPT 85730) | STAT | STAT | - | STAT | Coagulopathy assessment; pre-procedure; anticoagulant use | Normal |
+| Fibrinogen (CPT 85384) | STAT | STAT | - | STAT | Coagulopathy; DIC screen | >150 mg/dL |
+| Type and crossmatch (CPT 86900) | STAT | STAT | - | STAT | Surgical intervention likely; potential blood loss | On file; crossmatch 2-4 units |
+| Troponin (CPT 84484) | STAT | STAT | - | STAT | Neurogenic stunned myocardium occurs in 20-30% of SAH; stress cardiomyopathy | Often elevated (neurogenic — not ACS) |
+| BNP or NT-proBNP (CPT 83880) | URGENT | ROUTINE | - | URGENT | Neurogenic cardiac dysfunction; volume status assessment | Elevated (neurogenic) |
+| Blood glucose (CPT 82947) | STAT | STAT | - | STAT | Hyperglycemia worsens outcomes; stress response | 140-180 mg/dL target |
+| Magnesium (CPT 83735) | STAT | STAT | - | STAT | Hypomagnesemia increases vasospasm risk; maintain high-normal | >2.0 mg/dL (replete aggressively) |
+| Calcium, ionized (CPT 82330) | STAT | STAT | - | STAT | Electrolyte management; nimodipine monitoring | Normal |
+| Phosphorus (CPT 84100) | STAT | ROUTINE | - | STAT | Electrolyte management; refeeding risk | Normal |
+| Lactate (CPT 83605) | STAT | ROUTINE | - | STAT | Perfusion status | <2 mmol/L |
+| Pregnancy test (β-hCG) (CPT 84703) | STAT | STAT | - | STAT | Affects imaging, anesthesia, and treatment decisions | Document result |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Serum osmolality | URGENT | ROUTINE | - | ROUTINE | Cerebral salt wasting vs SIADH differentiation; osmotherapy monitoring | 280-295 mOsm/kg |
+| Serum osmolality (CPT 83930) | URGENT | ROUTINE | - | ROUTINE | Cerebral salt wasting vs SIADH differentiation; osmotherapy monitoring | 280-295 mOsm/kg |
 | Urine osmolality and sodium | - | ROUTINE | - | ROUTINE | CSW: high urine Na, high urine osm, hypovolemic. SIADH: high urine Na, high urine osm, euvolemic | Differentiate CSW vs SIADH |
-| TSH | - | ROUTINE | - | - | Thyroid dysfunction screen | Normal |
-| Cortisol (AM) | - | ROUTINE | - | ROUTINE | Adrenal insufficiency (pituitary dysfunction from SAH) | >18 µg/dL |
-| Lipid panel | - | ROUTINE | ROUTINE | - | Cardiovascular risk assessment | Document |
-| HbA1c | - | ROUTINE | ROUTINE | - | Diabetes management | <7.0% |
-| Blood cultures | URGENT | ROUTINE | - | URGENT | If febrile (differentiate central fever vs infection) | No growth |
-| Procalcitonin | URGENT | ROUTINE | - | URGENT | Differentiate neurogenic fever from infection | <0.5 (elevated suggests infection) |
+| TSH (CPT 84443) | - | ROUTINE | - | - | Thyroid dysfunction screen | Normal |
+| Cortisol (AM) (CPT 82533) | - | ROUTINE | - | ROUTINE | Adrenal insufficiency (pituitary dysfunction from SAH) | >18 µg/dL |
+| Lipid panel (CPT 80061) | - | ROUTINE | ROUTINE | - | Cardiovascular risk assessment | Document |
+| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Diabetes management | <7.0% |
+| Blood cultures (CPT 87040) | URGENT | ROUTINE | - | URGENT | If febrile (differentiate central fever vs infection) | No growth |
+| Procalcitonin (CPT 84145) | URGENT | ROUTINE | - | URGENT | Differentiate neurogenic fever from infection | <0.5 (elevated suggests infection) |
 
 ### 1C. Rare/Specialized
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Urine catecholamines/metanephrines | - | EXT | EXT | - | Pheochromocytoma as cause of hypertensive hemorrhage | Normal |
-| Toxicology (cocaine, amphetamines) | STAT | ROUTINE | - | STAT | Sympathomimetic-associated SAH | Negative |
+| Toxicology (cocaine, amphetamines) (CPT 80307) | STAT | ROUTINE | - | STAT | Sympathomimetic-associated SAH | Negative |
 | Sickle cell screen | - | EXT | EXT | - | Sickle cell associated aneurysms and SAH (young patients, African descent) | Normal |
 | Connective tissue disorder workup (Ehlers-Danlos, Marfan) | - | - | EXT | - | Familial aneurysm syndromes; young SAH with marfanoid habitus or skin hyperextensibility | Clinical + genetic |
 
@@ -79,23 +79,23 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head without contrast | STAT | STAT | - | STAT | IMMEDIATE (door-to-CT <25 min). Sensitivity: 98-100% within 6h; ~93% at 12h; ~85% at 24h; declines after 3-5 days | Hyperdense blood in basal cisterns, Sylvian fissure, interhemispheric fissure; modified Fisher grade; hydrocephalus; intraventricular hemorrhage | None significant |
-| CT angiography (CTA) head | STAT | STAT | - | STAT | Simultaneously with non-contrast CT. Identifies aneurysm (sensitivity 95-100% for aneurysms >3mm) | Aneurysm location, size, morphology; multiple aneurysms (15-20% have >1); vasospasm (delayed) | Contrast allergy (premedicate); renal impairment (benefit outweighs risk) |
-| ECG (12-lead) | STAT | STAT | - | STAT | Immediately | Deep T-wave inversions ("cerebral T waves"), ST changes, QT prolongation, arrhythmias — all may be neurogenic; do NOT misdiagnose as primary cardiac event | None |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | IMMEDIATE (door-to-CT <25 min). Sensitivity: 98-100% within 6h; ~93% at 12h; ~85% at 24h; declines after 3-5 days | Hyperdense blood in basal cisterns, Sylvian fissure, interhemispheric fissure; modified Fisher grade; hydrocephalus; intraventricular hemorrhage | None significant |
+| CT angiography (CTA) head (CPT 70496) | STAT | STAT | - | STAT | Simultaneously with non-contrast CT. Identifies aneurysm (sensitivity 95-100% for aneurysms >3mm) | Aneurysm location, size, morphology; multiple aneurysms (15-20% have >1); vasospasm (delayed) | Contrast allergy (premedicate); renal impairment (benefit outweighs risk) |
+| ECG (12-lead) (CPT 93000) | STAT | STAT | - | STAT | Immediately | Deep T-wave inversions ("cerebral T waves"), ST changes, QT prolongation, arrhythmias — all may be neurogenic; do NOT misdiagnose as primary cardiac event | None |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Conventional cerebral angiography (DSA) | - | STAT | - | STAT | Within 24h — GOLD STANDARD for aneurysm identification; also therapeutic (coiling). If CTA negative but clinical suspicion high, DSA is mandatory | Aneurysm (location, neck width, dome-to-neck ratio, relationship to branches); may find aneurysm missed by CTA; vasospasm assessment | Contrast allergy; renal impairment; coagulopathy (relative) |
+| Conventional cerebral angiography (DSA) (CPT 36224) | - | STAT | - | STAT | Within 24h — GOLD STANDARD for aneurysm identification; also therapeutic (coiling). If CTA negative but clinical suspicion high, DSA is mandatory | Aneurysm (location, neck width, dome-to-neck ratio, relationship to branches); may find aneurysm missed by CTA; vasospasm assessment | Contrast allergy; renal impairment; coagulopathy (relative) |
 | Repeat DSA (if initial negative) | - | ROUTINE | - | ROUTINE | At 7-14 days if initial DSA negative and non-perimesencephalic pattern; small aneurysm may be thrombosed or compressed by hematoma | Previously missed aneurysm | Same as initial |
 | MRI/MRA brain | - | ROUTINE | ROUTINE | - | When stable; helpful for subacute diagnosis or if CT negative but suspicion persists | Blood products (FLAIR); aneurysm (MRA); ischemia from vasospasm (DWI) | Pacemaker; hemodynamic instability |
-| Transcranial Doppler (TCD) | - | STAT | - | STAT | Begin daily on post-bleed day 3; continue through day 14 (vasospasm window) | Mean flow velocities: MCA >120 cm/s concerning; >200 cm/s severe vasospasm. Lindegaard ratio >3 suggests vasospasm (>6 = severe) | Absent temporal bone window (~10%) |
-| CT perfusion (CTP) | - | URGENT | - | URGENT | If vasospasm suspected clinically (new deficit days 4-14) | Perfusion deficits in vascular territory of spastic vessel; mismatch (reversible ischemia) | Contrast allergy; renal impairment |
+| Transcranial Doppler (TCD) (CPT 93886) | - | STAT | - | STAT | Begin daily on post-bleed day 3; continue through day 14 (vasospasm window) | Mean flow velocities: MCA >120 cm/s concerning; >200 cm/s severe vasospasm. Lindegaard ratio >3 suggests vasospasm (>6 = severe) | Absent temporal bone window (~10%) |
+| CT perfusion (CTP) (CPT 0042T) | - | URGENT | - | URGENT | If vasospasm suspected clinically (new deficit days 4-14) | Perfusion deficits in vascular territory of spastic vessel; mismatch (reversible ischemia) | Contrast allergy; renal impairment |
 | CTA (repeat for vasospasm) | - | URGENT | - | URGENT | If clinical vasospasm suspected | Arterial narrowing; correlate with TCD and clinical exam | Same as initial CTA |
-| Echocardiogram (TTE) | - | ROUTINE | - | ROUTINE | Within 24-48h | Takotsubo (apical ballooning); regional wall motion abnormalities; EF assessment — neurogenic stunned myocardium in 20-30% | None significant |
-| Continuous EEG (cEEG) | - | URGENT | - | STAT | If altered consciousness; delayed deterioration; suspected seizures | Non-convulsive seizures; electrographic vasospasm correlate; periodic discharges | None |
-| Chest X-ray | URGENT | ROUTINE | - | URGENT | On admission; daily in ICU | Neurogenic pulmonary edema; aspiration; ARDS | None |
+| Echocardiogram (TTE) (CPT 93306) | - | ROUTINE | - | ROUTINE | Within 24-48h | Takotsubo (apical ballooning); regional wall motion abnormalities; EF assessment — neurogenic stunned myocardium in 20-30% | None significant |
+| Continuous EEG (cEEG) (CPT 95700) | - | URGENT | - | STAT | If altered consciousness; delayed deterioration; suspected seizures | Non-convulsive seizures; electrographic vasospasm correlate; periodic discharges | None |
+| Chest X-ray (CPT 71046) | URGENT | ROUTINE | - | URGENT | On admission; daily in ICU | Neurogenic pulmonary edema; aspiration; ARDS | None |
 
 ### 2C. Rare/Specialized
 
@@ -107,7 +107,7 @@ SECTION A: ACTION ITEMS
 
 ### LUMBAR PUNCTURE
 
-**Indication:** CT-negative suspected SAH. If CT head is normal but clinical suspicion (thunderclap headache "worst of my life") remains — LP is MANDATORY. Wait ≥6h (ideally 12h) from headache onset for xanthochromia to develop.
+**Indication:** CT-negative suspected SAH. If CT head is normal but clinical suspicion (thunderclap headache "worst of my life") remains — LP (CPT 62270) is MANDATORY. Wait ≥6h (ideally 12h) from headache onset for xanthochromia to develop.
 
 **Timing:** URGENT — but ≥6h from headache onset to allow xanthochromia development.
 
@@ -139,14 +139,14 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Blood pressure control: Nicardipine IV | IV | - | 5 mg/h :: IV :: - :: 5 mg/h IV; titrate by 2.5 mg/h q5-15min; max 15 mg/h. Target SBP <160 mmHg UNTIL aneurysm is secured (re-bleed risk highest in first 24h with uncontrolled HTN); after securing: target SBP <180 (or higher if vasospasm) | Severe aortic stenosis | Continuous arterial BP; neuro checks q1h | STAT | STAT | - | STAT |
-| Blood pressure control: Labetalol IV | IV | - | 10-20 mg :: IV :: - :: 10-20 mg IV q10-20min; max 300 mg. Alternative to nicardipine | Heart block; severe bradycardia; asthma | HR; BP continuous | STAT | STAT | - | STAT |
-| Blood pressure control: Clevidipine IV | IV | - | 1-2 mg/h :: IV :: - :: 1-2 mg/h IV; max 32 mg/h | Soy/egg allergy | BP continuous | STAT | STAT | - | STAT |
+| Blood pressure control: Nicardipine IV (CPT 96365) | IV | - | 5 mg/h :: IV :: - :: 5 mg/h IV; titrate by 2.5 mg/h q5-15min; max 15 mg/h. Target SBP <160 mmHg UNTIL aneurysm is secured (re-bleed risk highest in first 24h with uncontrolled HTN); after securing: target SBP <180 (or higher if vasospasm) | Severe aortic stenosis | Continuous arterial BP; neuro checks q1h | STAT | STAT | - | STAT |
+| Blood pressure control: Labetalol IV (CPT 96374) | IV | - | 10-20 mg :: IV :: - :: 10-20 mg IV q10-20min; max 300 mg. Alternative to nicardipine | Heart block; severe bradycardia; asthma | HR; BP continuous | STAT | STAT | - | STAT |
+| Blood pressure control: Clevidipine IV (CPT 96365) | IV | - | 1-2 mg/h :: IV :: - :: 1-2 mg/h IV; max 32 mg/h | Soy/egg allergy | BP continuous | STAT | STAT | - | STAT |
 | Nimodipine (CORNERSTONE of vasospasm prevention) | IV | - | 60 mg :: IV :: q4h :: 60 mg PO/NG q4h x 21 days. START within 96h of SAH onset. If hypotension: 30 mg q2h. This is an ORAL calcium channel blocker — do NOT give IV (severe hypotension). Proven to reduce poor outcomes from vasospasm | Hypotension (SBP <90 — reduce dose); do NOT crush extended-release formulations; use oral syringe if NG | BP with each dose; do NOT give IV; ensure enteral route only | - | STAT | - | STAT |
 | External ventricular drain (EVD) | - | - | For acute hydrocephalus (GCS declining; CT showing ventriculomegaly); allows ICP monitoring and CSF drainage. Set drain height per neurosurgery (typically 15-20 cm above tragus) | Coagulopathy (correct first) | ICP continuous; CSF output q1h; drain position; infection surveillance (CSF culture q3 days per some protocols) | STAT | STAT | - | STAT |
 | Seizure prophylaxis (short-term) | IV | - | 1000 mg :: IV :: BID :: Levetiracetam 1000 mg IV/PO load, then 500-1000 mg BID. AHA 2012: short-term (3-7 days) prophylaxis is reasonable. Avoid phenytoin (associated with worse cognitive outcomes in SAH — Naidech et al.) | Renal impairment (dose adjust) | Seizure monitoring | STAT | STAT | - | STAT |
 | Intubation / Airway protection | - | - | GCS ≤8; inability to protect airway; respiratory failure; impending herniation | N/A | Avoid hypotension during RSI; maintain SBP goal | STAT | STAT | - | STAT |
-| Aminocaproic acid (antifibrinolytic) | IV | - | 4g :: IV :: once :: 4g IV load then 1g/h IV infusion. ONLY use for short-term (<72h) if aneurysm securing will be delayed. Reduces re-bleeding risk but increases thrombotic risk. Discontinue once aneurysm is secured | Active DIC; DVT/PE; renal impairment | Coagulation; thrombotic events; discontinue when aneurysm treated | STAT | STAT | - | STAT |
+| Aminocaproic acid (antifibrinolytic) (CPT 96365) | IV | - | 4g :: IV :: once :: 4g IV load then 1g/h IV infusion. ONLY use for short-term (<72h) if aneurysm securing will be delayed. Reduces re-bleeding risk but increases thrombotic risk. Discontinue once aneurysm is secured | Active DIC; DVT/PE; renal impairment | Coagulation; thrombotic events; discontinue when aneurysm treated | STAT | STAT | - | STAT |
 | IV isotonic fluids (euvolemia) | IV | - | 1-1.5 mL/kg :: - :: - :: NS at 1-1.5 mL/kg/h (80-125 mL/h); goal euvolemia. Avoid hypovolemia (worsens vasospasm) and avoid aggressive hypervolemia (no proven benefit; risk of pulmonary edema). Target CVP 5-8 or clinical euvolemia | Volume overload; CHF | I/O; daily weights; CVP if central line; serum Na q6-8h | STAT | STAT | - | STAT |
 | Stress ulcer prophylaxis: Pantoprazole | IV | - | 40 mg :: IV :: daily :: 40 mg IV/PO daily | C. diff risk | GI symptoms | - | ROUTINE | - | ROUTINE |
 | DVT prophylaxis: Pneumatic compression devices | - | - | Apply bilaterally on admission; SAH patients are HIGH VTE risk | Acute DVT | Skin checks | STAT | STAT | - | STAT |

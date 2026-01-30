@@ -18,7 +18,7 @@ setting: "HOSP, OPD, ICU"
 
 **ICD-10:** G43.909 (Migraine, unspecified, not intractable), G43.919 (Migraine, unspecified, intractable), G43.901 (Migraine, unspecified, not intractable, with status migrainosus), G43.911 (Migraine, unspecified, intractable, with status migrainosus), G43.109 (Migraine with aura, not intractable), G43.709 (Chronic migraine without aura, not intractable)
 
-**SYNONYMS:** Migraine headache, migraine with aura, migraine without aura, classic migraine, common migraine, status migrainosus, intractable migraine, refractory migraine, chronic migraine, menstrual migraine, vestibular migraine, hemiplegic migraine, retinal migraine, basilar migraine
+**SYNONYMS:** Migraine headache, migraine with aura, migraine without aura, classic migraine, common migraine, status migrainosus, intractable migraine, refractory migraine, chronic migraine, menstrual migraine, vestibular migraine, hemiplegic migraine, retinal migraine, basilar migraine, migraine with brainstem aura, acephalgic migraine, silent migraine, ocular migraine, ophthalmic migraine, hormonal migraine, catamenial migraine, episodic migraine, transformed migraine, complicated migraine, severe headache, sick headache, vascular headache
 
 **SCOPE:** Evaluation and management of acute migraine, status migrainosus, and chronic migraine in adults. Covers abortive therapy, rescue treatment for refractory attacks, and preventive medication initiation. Includes special considerations for pregnancy and medication overuse. Excludes secondary headache disorders, cluster headache, and tension-type headache.
 
@@ -42,27 +42,27 @@ setting: "HOSP, OPD, ICU"
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC | URGENT | ROUTINE | ROUTINE | - | Rule out anemia, infection | Normal |
-| CMP | URGENT | ROUTINE | ROUTINE | - | Electrolyte abnormalities, renal function | Normal |
-| hCG (women of childbearing age) | STAT | STAT | ROUTINE | - | Pregnancy status affects treatment options | Document status |
-| TSH | - | ROUTINE | ROUTINE | - | Thyroid dysfunction can cause headache | Normal |
-| Magnesium | URGENT | ROUTINE | ROUTINE | - | Low levels may contribute to migraines | >1.8 mg/dL |
+| CBC (CPT 85025) | URGENT | ROUTINE | ROUTINE | - | Rule out anemia, infection | Normal |
+| CMP (CPT 80053) | URGENT | ROUTINE | ROUTINE | - | Electrolyte abnormalities, renal function | Normal |
+| hCG (women of childbearing age) (CPT 84703) | STAT | STAT | ROUTINE | - | Pregnancy status affects treatment options | Document status |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction can cause headache | Normal |
+| Magnesium (CPT 83735) | URGENT | ROUTINE | ROUTINE | - | Low levels may contribute to migraines | >1.8 mg/dL |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| ESR/CRP | URGENT | ROUTINE | ROUTINE | - | If GCA or inflammatory cause suspected (>50 years, new onset) | Normal |
-| Vitamin D | - | ROUTINE | ROUTINE | - | Deficiency associated with migraine frequency | >30 ng/mL |
-| Ferritin | - | ROUTINE | ROUTINE | - | Iron deficiency associated with migraine | >50 ng/mL |
-| Homocysteine | - | - | EXT | - | Elevated levels associated with migraine with aura | Normal |
+| ESR (CPT 85652) / CRP (CPT 86140) | URGENT | ROUTINE | ROUTINE | - | If GCA or inflammatory cause suspected (>50 years, new onset) | Normal |
+| Vitamin D (CPT 82306) | - | ROUTINE | ROUTINE | - | Deficiency associated with migraine frequency | >30 ng/mL |
+| Ferritin (CPT 82728) | - | ROUTINE | ROUTINE | - | Iron deficiency associated with migraine | >50 ng/mL |
+| Homocysteine (CPT 83090) | - | - | EXT | - | Elevated levels associated with migraine with aura | Normal |
 
 ### 1C. Rare/Specialized
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Lumbar puncture | URGENT | URGENT | - | - | Thunderclap headache, suspected SAH, IIH, meningitis | See LP section |
-| Autoimmune panel (ANA, etc.) | - | EXT | EXT | - | If vasculitis or autoimmune cause suspected | Negative |
+| Autoimmune panel (ANA (CPT 86235), etc.) | - | EXT | EXT | - | If vasculitis or autoimmune cause suspected | Negative |
 
 ---
 
@@ -72,19 +72,19 @@ setting: "HOSP, OPD, ICU"
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head without contrast | STAT | URGENT | - | - | If thunderclap, worst headache, focal deficits, altered mental status | Rule out hemorrhage, mass | None in emergency |
-| MRI brain without contrast | - | ROUTINE | ROUTINE | - | New headache pattern, focal features, refractory to treatment | Normal; rule out structural cause | Pacemaker, metal implants |
+| CT head without contrast (CPT 70450) | STAT | URGENT | - | - | If thunderclap, worst headache, focal deficits, altered mental status | Rule out hemorrhage, mass | None in emergency |
+| MRI brain without contrast (CPT 70551) | - | ROUTINE | ROUTINE | - | New headache pattern, focal features, refractory to treatment | Normal; rule out structural cause | Pacemaker, metal implants |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with and without contrast | - | ROUTINE | ROUTINE | - | If mass, infection, or inflammation suspected | Rule out enhancement | Contrast allergy, renal disease |
+| MRI brain with and without contrast (CPT 70553) | - | ROUTINE | ROUTINE | - | If mass, infection, or inflammation suspected | Rule out enhancement | Contrast allergy, renal disease |
 | MRV or CT venogram | URGENT | URGENT | - | - | Suspected cerebral venous thrombosis | Patent venous sinuses | Per modality |
-| MRA head | - | ROUTINE | ROUTINE | - | Suspected vasculopathy, aneurysm | Normal vasculature | Per modality |
-| ECG | STAT | STAT | - | - | Prior to DHE or triptan use | Normal QTc, no ischemia | None |
+| MRA head (CPT 70544) | - | ROUTINE | ROUTINE | - | Suspected vasculopathy, aneurysm | Normal vasculature | Per modality |
+| ECG (CPT 93000) | STAT | STAT | - | - | Prior to DHE or triptan use | Normal QTc, no ischemia | None |
 
-### LUMBAR PUNCTURE
+### LUMBAR PUNCTURE (CPT 62270)
 
 **Indication:** Thunderclap headache, suspected SAH (CT negative), suspected IIH (papilledema), suspected meningitis, atypical features
 
@@ -93,12 +93,12 @@ setting: "HOSP, OPD, ICU"
 | Study | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |-------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Opening pressure | STAT | STAT | - | - | IIH diagnosis | 10-20 cm H2O (elevated >25 suggests IIH) |
-| Cell count (tubes 1 and 4) | STAT | STAT | - | - | Infection, SAH | WBC <5; RBC 0 or clearing |
-| Protein | STAT | STAT | - | - | Infection, inflammation | 15-45 mg/dL |
-| Glucose | STAT | STAT | - | - | Infection | >60% serum |
+| Cell count (tubes 1 and 4) (CPT 89051) | STAT | STAT | - | - | Infection, SAH | WBC <5; RBC 0 or clearing |
+| Protein (CPT 84157) | STAT | STAT | - | - | Infection, inflammation | 15-45 mg/dL |
+| Glucose (CPT 82945) | STAT | STAT | - | - | Infection | >60% serum |
 | Xanthochromia | STAT | STAT | - | - | SAH if CT negative | Negative |
-| Gram stain and culture | STAT | STAT | - | - | Bacterial meningitis | No organisms |
-| CSF meningitis panel | URGENT | URGENT | - | - | Viral/bacterial pathogens | Negative |
+| Gram stain and culture (CPT 87205, 87070) | STAT | STAT | - | - | Bacterial meningitis | No organisms |
+| CSF meningitis panel (CPT 87483) | URGENT | URGENT | - | - | Viral/bacterial pathogens | Negative |
 
 ---
 
@@ -138,12 +138,12 @@ setting: "HOSP, OPD, ICU"
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | IV fluids | IV | - | 75-125 mL/hr :: - :: once :: NS or LR 1L bolus, then 75-125 mL/hr | - | Heart failure, volume overload | I/O | STAT | STAT | - | - |
-| Prochlorperazine IV | IV | - | 10 mg :: IV :: - :: 10 mg IV slow push over 5-10 min; may repeat in 30 min | - | QT prolongation, Parkinson's | QTc, akathisia, dystonia | STAT | STAT | - | - |
+| Prochlorperazine IV (CPT 96374) | IV | - | 10 mg :: IV :: - :: 10 mg IV slow push over 5-10 min; may repeat in 30 min | - | QT prolongation, Parkinson's | QTc, akathisia, dystonia | STAT | STAT | - | - |
 | Metoclopramide IV | IV | - | 10-20 mg :: IV :: - :: 10-20 mg IV over 15-30 min; may repeat in 30 min | - | QT prolongation, Parkinson's, seizures | QTc, akathisia, dystonia | STAT | STAT | - | - |
 | Diphenhydramine IV | IV | - | 25-50 mg :: IV :: - :: 25-50 mg IV to prevent akathisia (give with antiemetic) | - | Glaucoma, urinary retention | Sedation | STAT | STAT | - | - |
 | Ketorolac IV | IV | - | 30 mg :: IV :: - :: 30 mg IV (15 mg if >65y or CrCl <50); max 2 doses | - | Renal disease, GI bleeding, anticoagulation | Renal function | STAT | STAT | - | - |
 | Dexamethasone IV | IV | - | 10 mg :: IV :: once :: 10 mg IV once (reduces recurrence) | - | Active infection, uncontrolled DM | Glucose | URGENT | URGENT | - | - |
-| Magnesium sulfate IV | IV | - | 2 g :: IV :: - :: 2 g IV over 20-30 min | - | Renal failure, myasthenia | Mg levels, reflexes | URGENT | URGENT | - | - |
+| Magnesium sulfate IV (CPT 96365) | IV | - | 2 g :: IV :: - :: 2 g IV over 20-30 min | - | Renal failure, myasthenia | Mg levels, reflexes | URGENT | URGENT | - | - |
 | Valproate sodium IV | IV | - | 500-1000 mg :: IV :: - :: 500-1000 mg IV over 15-30 min | - | Pregnancy, hepatic disease, mitochondrial disease | Ammonia, LFTs | URGENT | URGENT | - | - |
 
 ### 3E. ED/Inpatient - Refractory/Second-Line Therapy (DHE Protocol)
@@ -190,7 +190,7 @@ setting: "HOSP, OPD, ICU"
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Valproate | PO | - | 250-500 mg :: PO :: BID :: Start 250-500 mg BID; target 500-1500 mg/day | Pregnancy, hepatic disease | LFTs, ammonia | - | ROUTINE | ROUTINE | - |
-| OnabotulinumtoxinA (Botox) | IM | - | 155-195 units :: IM :: - :: 155-195 units IM q12 weeks (chronic migraine only) | Infection at injection sites, myasthenia | Spread of toxin effect | - | - | ROUTINE | - |
+| OnabotulinumtoxinA (Botox) (CPT J0585) | IM | - | 155-195 units :: IM :: - :: 155-195 units IM q12 weeks (chronic migraine only) | Infection at injection sites, myasthenia | Spread of toxin effect | - | - | ROUTINE | - |
 | Atogepant (Qulipta) | PO | - | 10-60 mg :: PO :: daily :: 10-60 mg PO daily | Severe hepatic impairment | LFTs | - | - | ROUTINE | - |
 | Rimegepant (preventive) | - | - | 75 mg :: - :: - :: 75 mg every other day | CYP3A4 inhibitors | LFTs | - | - | ROUTINE | - |
 | Magnesium oxide | PO | - | 400-600 mg :: PO :: daily :: 400-600 mg PO daily | Renal failure | Diarrhea | - | ROUTINE | ROUTINE | - |

@@ -18,7 +18,7 @@ setting: "HOSP, OPD, ICU"
 
 **ICD-10:** G93.2 (Benign intracranial hypertension), G93.5 (Compression of brain)
 
-**SYNONYMS:** Idiopathic intracranial hypertension, IIH, pseudotumor cerebri, benign intracranial hypertension, primary intracranial hypertension
+**SYNONYMS:** Idiopathic intracranial hypertension, IIH, pseudotumor cerebri, PTC, benign intracranial hypertension, BIH, primary intracranial hypertension
 
 **SCOPE:** Evaluation and management of idiopathic intracranial hypertension in adults including diagnosis, medical management, and surgical interventions. Applies to ED, hospital, and outpatient settings. Excludes secondary causes of elevated ICP.
 
@@ -44,21 +44,21 @@ setting: "HOSP, OPD, ICU"
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Anemia (can cause papilledema); baseline | Normal |
-| CMP | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Renal function (for acetazolamide); electrolytes | Normal |
-| TSH | - | ROUTINE | ROUTINE | - | Hypothyroidism/hyperthyroidism can cause ICP | Normal |
+| CBC (CPT 85025) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Anemia (can cause papilledema); baseline | Normal |
+| CMP (CPT 80053) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Renal function (for acetazolamide); electrolytes | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Hypothyroidism/hyperthyroidism can cause ICP | Normal |
 | Vitamin A level | - | ROUTINE | ROUTINE | - | Hypervitaminosis A | Normal |
-| Pregnancy test | ROUTINE | ROUTINE | ROUTINE | - | Pregnancy considerations for treatment | Document |
+| Pregnancy test (CPT 84703) | ROUTINE | ROUTINE | ROUTINE | - | Pregnancy considerations for treatment | Document |
 
 ### 1B. CSF Analysis (Diagnostic LP)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Opening pressure | STAT | STAT | ROUTINE | - | Diagnostic criterion; ≥25 cm H2O in adults | Elevated (≥25 cm H2O) |
-| CSF cell count | STAT | STAT | ROUTINE | - | Rule out meningitis | Normal (≤5 WBC/μL) |
-| CSF protein | STAT | STAT | ROUTINE | - | Rule out meningitis, malignancy | Normal (≤45 mg/dL) |
-| CSF glucose | STAT | STAT | ROUTINE | - | Rule out infection | Normal (>60% serum) |
-| Cytology | - | ROUTINE | EXT | - | If malignancy suspected | Negative |
+| CSF cell count (CPT 89051) | STAT | STAT | ROUTINE | - | Rule out meningitis | Normal (≤5 WBC/μL) |
+| CSF protein (CPT 84157) | STAT | STAT | ROUTINE | - | Rule out meningitis, malignancy | Normal (≤45 mg/dL) |
+| CSF glucose (CPT 82945) | STAT | STAT | ROUTINE | - | Rule out infection | Normal (>60% serum) |
+| Cytology (CPT 88104) | - | ROUTINE | EXT | - | If malignancy suspected | Negative |
 | Cultures | ROUTINE | ROUTINE | - | - | If infection suspected | Negative |
 
 ### 1C. Extended Labs (If Secondary Cause Suspected)
@@ -67,7 +67,7 @@ setting: "HOSP, OPD, ICU"
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Iron studies | - | ROUTINE | ROUTINE | - | Iron deficiency anemia associated | Normal |
 | Cortisol (AM or stimulation test) | - | - | EXT | - | Adrenal insufficiency; steroid withdrawal | Normal |
-| ANA, dsDNA | - | - | EXT | - | SLE (cerebral venous thrombosis risk) | Negative |
+| ANA, dsDNA (CPT 86235, 86225) | - | - | EXT | - | SLE (cerebral venous thrombosis risk) | Negative |
 | Hypercoagulability panel | - | ROUTINE | EXT | - | If venous sinus thrombosis suspected | Normal |
 
 ---
@@ -78,8 +78,8 @@ setting: "HOSP, OPD, ICU"
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with and without contrast + MRV | STAT | STAT | ROUTINE | - | Before LP; rule out mass, CVT | No mass; may show empty sella, flattened globes, optic nerve sheath distension, transverse sinus stenosis | Pacemaker, metal |
-| CT head (if MRI unavailable) | STAT | STAT | - | - | Emergent exclusion of mass | No mass, hemorrhage | None (contrast: renal) |
+| MRI brain with and without contrast + MRV (CPT 70553) | STAT | STAT | ROUTINE | - | Before LP; rule out mass, CVT | No mass; may show empty sella, flattened globes, optic nerve sheath distension, transverse sinus stenosis | Pacemaker, metal |
+| CT head (if MRI unavailable) (CPT 70450) | STAT | STAT | - | - | Emergent exclusion of mass | No mass, hemorrhage | None (contrast: renal) |
 | CT venography | URGENT | URGENT | - | - | If MRV inconclusive for CVT | No venous sinus thrombosis | Renal disease; contrast allergy |
 
 ### 2B. Ophthalmologic Studies
@@ -87,11 +87,11 @@ setting: "HOSP, OPD, ICU"
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | Dilated fundoscopic exam | STAT | STAT | ROUTINE | - | All patients; before LP if possible | Papilledema grading (Frisen scale) | None |
-| Optical coherence tomography (OCT) | - | ROUTINE | ROUTINE | - | Quantify RNFL thickness; follow progression | Baseline RNFL; monitor for atrophy | None |
+| Optical coherence tomography (OCT) (CPT 92134) | - | ROUTINE | ROUTINE | - | Quantify RNFL thickness; follow progression | Baseline RNFL; monitor for atrophy | None |
 | Automated perimetry (visual fields) | - | ROUTINE | ROUTINE | - | Detect visual field defects; monitor | Document defects; enlarged blind spot | None |
 | Visual acuity | STAT | STAT | ROUTINE | STAT | Baseline and monitoring | 20/20 or stable | None |
 | Color vision testing | - | ROUTINE | ROUTINE | - | Optic nerve function | Normal | None |
-| Fundus photography | - | ROUTINE | ROUTINE | - | Document papilledema; follow | Baseline; monitor | None |
+| Fundus photography (CPT 92250) | - | ROUTINE | ROUTINE | - | Document papilledema; follow | Baseline; monitor | None |
 
 ### 2C. IIH MRI Findings (Supportive but Not Diagnostic)
 
@@ -142,8 +142,8 @@ setting: "HOSP, OPD, ICU"
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Large-volume LP | - | - | 20-40 mL :: - :: - :: Remove 20-40 mL CSF; immediate symptom relief | Mass lesion, coagulopathy, infection at site | Headache, symptoms; temporary benefit | URGENT | URGENT | ROUTINE | - |
-| Serial LPs | - | - | Bridge to surgery or when medical therapy insufficient | Same | Same; not long-term solution | - | ROUTINE | ROUTINE | - |
+| Large-volume LP (CPT 62272) | - | - | 20-40 mL :: - :: - :: Remove 20-40 mL CSF; immediate symptom relief | Mass lesion, coagulopathy, infection at site | Headache, symptoms; temporary benefit | URGENT | URGENT | ROUTINE | - |
+| Serial LPs (CPT 62272) | - | - | Bridge to surgery or when medical therapy insufficient | Same | Same; not long-term solution | - | ROUTINE | ROUTINE | - |
 
 ### 3F. Surgical Interventions (Vision-Threatening or Refractory)
 
@@ -157,10 +157,10 @@ setting: "HOSP, OPD, ICU"
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| High-dose IV acetazolamide | IV | - | 500 mg :: IV :: q6h :: 500 mg IV q6h initially | Per above | K+, bicarb | STAT | STAT | - | - |
+| High-dose IV acetazolamide (CPT 96374) | IV | - | 500 mg :: IV :: q6h :: 500 mg IV q6h initially | Per above | K+, bicarb | STAT | STAT | - | - |
 | Emergent therapeutic LP | - | - | Large-volume LP; may repeat daily | Mass lesion, coagulopathy | Symptoms, vision | STAT | STAT | - | - |
 | Urgent surgical referral | - | - | ONSF or shunt within days | Per procedure | Vision | STAT | STAT | - | - |
-| IV steroids (controversial) | IV | - | 250 mg :: IV :: q6h :: Methylprednisolone 250 mg IV q6h; short-term bridge only; can worsen IIH long-term | Contraindicated for maintenance | Glucose; short-term only | STAT | STAT | - | - |
+| IV steroids (controversial) (CPT 96365) | IV | - | 250 mg :: IV :: q6h :: Methylprednisolone 250 mg IV q6h; short-term bridge only; can worsen IIH long-term | Contraindicated for maintenance | Glucose; short-term only | STAT | STAT | - | - |
 
 ---
 

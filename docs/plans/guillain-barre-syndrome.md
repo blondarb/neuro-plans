@@ -35,33 +35,33 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Baseline; infection screen; exclude hematologic causes | Normal; leukocytosis suggests infection trigger |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Electrolyte abnormalities (hyponatremia from SIADH), renal/hepatic function for IVIG dosing | Normal |
-| Magnesium | STAT | STAT | ROUTINE | STAT | Hypomagnesemia worsens weakness; arrhythmia risk | >1.8 mg/dL |
-| Phosphorus | STAT | ROUTINE | ROUTINE | STAT | Hypophosphatemia causes weakness (mimic) | >2.5 mg/dL |
-| ESR / CRP | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory markers; infection screen | Mildly elevated (non-specific) |
-| Blood glucose | STAT | STAT | ROUTINE | STAT | Diabetes as comorbidity; hyperglycemia management | Normal |
-| Urinalysis | STAT | ROUTINE | ROUTINE | STAT | UTI as precipitant; baseline | Normal |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Baseline; infection screen; exclude hematologic causes | Normal; leukocytosis suggests infection trigger |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | STAT | Electrolyte abnormalities (hyponatremia from SIADH), renal/hepatic function for IVIG dosing | Normal |
+| Magnesium (CPT 83735) | STAT | STAT | ROUTINE | STAT | Hypomagnesemia worsens weakness; arrhythmia risk | >1.8 mg/dL |
+| Phosphorus (CPT 84100) | STAT | ROUTINE | ROUTINE | STAT | Hypophosphatemia causes weakness (mimic) | >2.5 mg/dL |
+| ESR (CPT 85652) / CRP (CPT 86140) | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory markers; infection screen | Mildly elevated (non-specific) |
+| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Diabetes as comorbidity; hyperglycemia management | Normal |
+| Urinalysis (CPT 81003) | STAT | ROUTINE | ROUTINE | STAT | UTI as precipitant; baseline | Normal |
 | Pregnancy test (β-hCG) | STAT | STAT | ROUTINE | STAT | Affects IVIG formulation choice; imaging considerations | Document result |
-| PT/INR, aPTT | STAT | ROUTINE | - | STAT | Coagulation status before procedures (LP, central line) | Normal |
-| Type and screen | STAT | ROUTINE | - | STAT | Potential need for PLEX | On file |
+| PT/INR (CPT 85610), aPTT (CPT 85730) | STAT | ROUTINE | - | STAT | Coagulation status before procedures (LP, central line) | Normal |
+| Type and screen (CPT 86900) | STAT | ROUTINE | - | STAT | Potential need for PLEX | On file |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Anti-ganglioside antibodies (GM1, GD1a, GD1b, GQ1b) | - | ROUTINE | ROUTINE | ROUTINE | GM1: AMAN; GQ1b: Miller Fisher; GD1a: AMAN; helps confirm diagnosis and subtype | Positive supports diagnosis (negative does not exclude) |
+| Anti-ganglioside antibodies (GM1, GD1a, GD1b, GQ1b) (CPT 86255) | - | ROUTINE | ROUTINE | ROUTINE | GM1: AMAN; GQ1b: Miller Fisher; GD1a: AMAN; helps confirm diagnosis and subtype | Positive supports diagnosis (negative does not exclude) |
 | Anti-GQ1b antibody | - | ROUTINE | ROUTINE | - | Miller Fisher syndrome (ataxia, ophthalmoplegia, areflexia) | Positive in >90% MFS |
 | Campylobacter jejuni serology (IgM, IgG) | - | ROUTINE | ROUTINE | - | Most common infectious trigger (30%); AMAN variant association | Positive IgM suggests recent infection |
 | Mycoplasma pneumoniae IgM | - | ROUTINE | ROUTINE | - | Common triggering infection | Positive IgM suggests recent infection |
 | CMV IgM | - | ROUTINE | ROUTINE | - | Triggering infection; associated with severe demyelinating GBS | Positive IgM |
 | EBV panel (VCA IgM, EBNA) | - | ROUTINE | ROUTINE | - | Triggering infection | Positive VCA IgM |
-| Hepatitis B surface antigen, anti-HBc | - | ROUTINE | ROUTINE | - | Screen before IVIG; reactivation risk | Negative |
-| Hepatitis C antibody | - | ROUTINE | ROUTINE | - | Cryoglobulinemia-associated neuropathy (differential) | Negative |
-| HIV 1/2 antigen/antibody | - | ROUTINE | ROUTINE | - | HIV-associated neuropathy; acute HIV can mimic GBS | Negative |
-| TSH | - | ROUTINE | ROUTINE | - | Thyroid dysfunction can cause weakness | Normal |
-| B12, methylmalonic acid | - | ROUTINE | ROUTINE | - | B12 deficiency neuropathy (differential) | Normal |
-| Serum protein electrophoresis (SPEP) with immunofixation | - | ROUTINE | ROUTINE | - | Paraproteinemia-associated neuropathy (differential); POEMS | Normal |
+| Hepatitis B surface antigen, anti-HBc (CPT 80074) | - | ROUTINE | ROUTINE | - | Screen before IVIG; reactivation risk | Negative |
+| Hepatitis C antibody (CPT 80074) | - | ROUTINE | ROUTINE | - | Cryoglobulinemia-associated neuropathy (differential) | Negative |
+| HIV 1/2 antigen/antibody (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated neuropathy; acute HIV can mimic GBS | Negative |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction can cause weakness | Normal |
+| B12 (CPT 82607), methylmalonic acid (CPT 83921) | - | ROUTINE | ROUTINE | - | B12 deficiency neuropathy (differential) | Normal |
+| Serum protein electrophoresis (SPEP) with immunofixation (CPT 86334) | - | ROUTINE | ROUTINE | - | Paraproteinemia-associated neuropathy (differential); POEMS | Normal |
 | IgA level (quantitative) | - | ROUTINE | - | ROUTINE | IgA deficiency contraindicates standard IVIG (anaphylaxis risk); check BEFORE IVIG if possible | Normal (>7 mg/dL) |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
@@ -72,10 +72,10 @@ SECTION A: ACTION ITEMS
 | Influenza A/B PCR | - | EXT | - | EXT | Triggering infection; seasonal | Negative |
 | COVID-19 PCR/antigen | - | ROUTINE | - | ROUTINE | Post-COVID GBS association reported | Document result |
 | Lyme serology (ELISA, Western blot) | - | EXT | EXT | - | Lyme-associated polyradiculopathy (differential); endemic areas | Negative |
-| Paraneoplastic panel (serum) | - | EXT | EXT | - | If atypical features or poor response to treatment | Negative |
+| Paraneoplastic panel (serum) (CPT 86255) | - | EXT | EXT | - | If atypical features or poor response to treatment | Negative |
 | Heavy metals (lead, arsenic, thallium) | - | EXT | EXT | - | Toxic neuropathy mimic; occupational exposure | Normal |
 | Porphyrins (urine ALA, PBG) | - | EXT | EXT | - | Acute intermittent porphyria mimic (motor predominant, autonomic dysfunction) | Normal |
-| Anti-MAG antibody | - | EXT | EXT | - | MAG-associated neuropathy (differential; chronic presentation) | Negative |
+| Anti-MAG antibody (CPT 86255) | - | EXT | EXT | - | MAG-associated neuropathy (differential; chronic presentation) | Negative |
 
 ---
 
@@ -85,26 +85,26 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI spine with and without contrast (whole spine) | URGENT | URGENT | ROUTINE | URGENT | Within 24h of presentation | Nerve root enhancement (anterior roots in AIDP); exclude compressive myelopathy, spinal cord lesion, epidural abscess | Pacemaker, metallic implants |
-| Nerve conduction studies / EMG (NCS/EMG) | - | URGENT | ROUTINE | URGENT | Ideally within 3-5 days of symptom onset (may be normal in first 48h); repeat at 2-3 weeks if initially non-diagnostic | Demyelinating pattern: prolonged distal latencies, conduction block, temporal dispersion, prolonged F-waves, absent H-reflex. Axonal pattern (AMAN): reduced CMAP amplitudes with normal velocities | None significant; avoid anticoagulated patients for EMG needle exam |
-| Chest X-ray | URGENT | ROUTINE | - | URGENT | On admission | Aspiration, atelectasis, baseline for ventilator management | None significant |
-| ECG (12-lead) | URGENT | ROUTINE | - | URGENT | On admission and PRN | Arrhythmias (sinus tachycardia, bradycardia, AV block); autonomic dysfunction | None |
+| MRI spine with and without contrast (whole spine) (CPT 72156) | URGENT | URGENT | ROUTINE | URGENT | Within 24h of presentation | Nerve root enhancement (anterior roots in AIDP); exclude compressive myelopathy, spinal cord lesion, epidural abscess | Pacemaker, metallic implants |
+| Nerve conduction studies (CPT 95907-95913) / EMG (CPT 95886) (NCS/EMG) | - | URGENT | ROUTINE | URGENT | Ideally within 3-5 days of symptom onset (may be normal in first 48h); repeat at 2-3 weeks if initially non-diagnostic | Demyelinating pattern: prolonged distal latencies, conduction block, temporal dispersion, prolonged F-waves, absent H-reflex. Axonal pattern (AMAN): reduced CMAP amplitudes with normal velocities | None significant; avoid anticoagulated patients for EMG needle exam |
+| Chest X-ray (CPT 71046) | URGENT | ROUTINE | - | URGENT | On admission | Aspiration, atelectasis, baseline for ventilator management | None significant |
+| ECG (12-lead) (CPT 93000) | URGENT | ROUTINE | - | URGENT | On admission and PRN | Arrhythmias (sinus tachycardia, bradycardia, AV block); autonomic dysfunction | None |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with and without contrast | - | ROUTINE | ROUTINE | ROUTINE | If Miller Fisher variant suspected or cranial nerve involvement | Cranial nerve enhancement (especially CN III, VI, VII); exclude central lesion | Same as MRI |
-| CT chest with contrast | - | EXT | EXT | - | If paraneoplastic etiology suspected; thymoma screen if MG in differential | Mass lesion | Contrast allergy, renal impairment |
+| MRI brain with and without contrast (CPT 70553) | - | ROUTINE | ROUTINE | ROUTINE | If Miller Fisher variant suspected or cranial nerve involvement | Cranial nerve enhancement (especially CN III, VI, VII); exclude central lesion | Same as MRI |
+| CT chest with contrast (CPT 71260) | - | EXT | EXT | - | If paraneoplastic etiology suspected; thymoma screen if MG in differential | Mass lesion | Contrast allergy, renal impairment |
 | Repeat NCS/EMG | - | ROUTINE | ROUTINE | - | At 2-4 weeks if initial study non-diagnostic or to assess prognosis | Evolution of findings; axonal degeneration predicts slower recovery | Same as initial |
-| Echocardiogram | - | ROUTINE | - | ROUTINE | If autonomic instability or new murmur | Cardiac function; Takotsubo in severe autonomic GBS | None significant |
+| Echocardiogram (CPT 93306) | - | ROUTINE | - | ROUTINE | If autonomic instability or new murmur | Cardiac function; Takotsubo in severe autonomic GBS | None significant |
 
 ### 2C. Rare/Specialized
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | Nerve ultrasound (high-resolution) | - | EXT | EXT | - | If diagnosis uncertain | Nerve enlargement in CIDP (helps differentiate); some enlargement reported in GBS | None |
-| Pulmonary function testing (formal) | - | ROUTINE | ROUTINE | - | If borderline respiratory function | Full spirometry for outpatient monitoring | Unable to cooperate |
+| Pulmonary function testing (formal) (CPT 94010) | - | ROUTINE | ROUTINE | - | If borderline respiratory function | Full spirometry for outpatient monitoring | Unable to cooperate |
 
 ### LUMBAR PUNCTURE
 
@@ -117,13 +117,13 @@ SECTION A: ACTION ITEMS
 | Study | ED | HOSP | OPD | Rationale | Target Finding |
 |-------|:--:|:----:|:---:|-----------|----------------|
 | Opening pressure | URGENT | ROUTINE | ROUTINE | Rule out elevated ICP | 10-20 cm H2O (normal) |
-| Cell count (tubes 1 and 4) | URGENT | ROUTINE | ROUTINE | Albuminocytologic dissociation | WBC <10 cells/µL (if >50 WBC, reconsider diagnosis — HIV, Lyme, sarcoidosis, lymphoma) |
-| Protein | URGENT | ROUTINE | ROUTINE | Classic finding: elevated protein with normal WBC | Elevated >45 mg/dL (often >100 mg/dL; may be normal in first week) |
-| Glucose with serum glucose | URGENT | ROUTINE | ROUTINE | Normal in GBS; low in infectious/malignant meningitis | Normal (>60% serum) |
+| Cell count (tubes 1 and 4) (CPT 89051) | URGENT | ROUTINE | ROUTINE | Albuminocytologic dissociation | WBC <10 cells/µL (if >50 WBC, reconsider diagnosis — HIV, Lyme, sarcoidosis, lymphoma) |
+| Protein (CPT 84157) | URGENT | ROUTINE | ROUTINE | Classic finding: elevated protein with normal WBC | Elevated >45 mg/dL (often >100 mg/dL; may be normal in first week) |
+| Glucose with serum glucose (CPT 82945) | URGENT | ROUTINE | ROUTINE | Normal in GBS; low in infectious/malignant meningitis | Normal (>60% serum) |
 | Gram stain and culture | URGENT | ROUTINE | ROUTINE | Exclude bacterial meningitis | No organisms |
-| Cytology | - | ROUTINE | ROUTINE | Exclude leptomeningeal lymphoma/carcinomatosis | Negative |
-| VDRL (CSF) | - | ROUTINE | ROUTINE | Neurosyphilis can mimic | Negative |
-| Oligoclonal bands, IgG index | - | ROUTINE | ROUTINE | Differentiate from MS; may be positive in GBS (non-specific) | Negative or low titer |
+| Cytology (CPT 88104) | - | ROUTINE | ROUTINE | Exclude leptomeningeal lymphoma/carcinomatosis | Negative |
+| VDRL (CSF) (CPT 86592) | - | ROUTINE | ROUTINE | Neurosyphilis can mimic | Negative |
+| Oligoclonal bands (CPT 83916), IgG index | - | ROUTINE | ROUTINE | Differentiate from MS; may be positive in GBS (non-specific) | Negative or low titer |
 
 **Special Handling:** Standard processing. Cell count and protein are the critical values.
 
@@ -137,8 +137,8 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| IVIG (intravenous immunoglobulin) | IV | - | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse over 4-8h per dose; slow initial rate and increase per protocol. Start within 2 weeks of symptom onset for maximum benefit | IgA deficiency (use IgA-depleted product); acute renal failure; anaphylaxis to immunoglobulin | Vital signs q15min during first infusion, then q30min; renal function (BUN, Cr) before and during; headache (aseptic meningitis); thrombotic events; hemolysis (haptoglobin, LDH, direct Coombs if symptoms) | - | STAT | - | STAT |
-| Plasmapheresis (PLEX) | - | - | 5 exchanges over 7-14 days (typically every other day); each exchange 1-1.5 plasma volumes; use albumin replacement. Start within 4 weeks of symptom onset | Hemodynamic instability, severe sepsis, active bleeding, heparin allergy (for circuit anticoagulation), poor vascular access | BP and HR continuous during exchange; calcium (citrate toxicity: tingling, cramping); fibrinogen; CBC; electrolytes; line site infection | - | STAT | - | STAT |
+| IVIG (intravenous immunoglobulin) (CPT 96365) | IV | - | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse over 4-8h per dose; slow initial rate and increase per protocol. Start within 2 weeks of symptom onset for maximum benefit | IgA deficiency (use IgA-depleted product); acute renal failure; anaphylaxis to immunoglobulin | Vital signs q15min during first infusion, then q30min; renal function (BUN, Cr) before and during; headache (aseptic meningitis); thrombotic events; hemolysis (haptoglobin, LDH, direct Coombs if symptoms) | - | STAT | - | STAT |
+| Plasmapheresis (PLEX) (CPT 36514) | - | - | 5 exchanges over 7-14 days (typically every other day); each exchange 1-1.5 plasma volumes; use albumin replacement. Start within 4 weeks of symptom onset | Hemodynamic instability, severe sepsis, active bleeding, heparin allergy (for circuit anticoagulation), poor vascular access | BP and HR continuous during exchange; calcium (citrate toxicity: tingling, cramping); fibrinogen; CBC; electrolytes; line site infection | - | STAT | - | STAT |
 | Intubation and mechanical ventilation | - | - | 20 mL/kg :: - :: - :: Indications (20/30/40 rule): FVC <20 mL/kg, NIF weaker than -30 cmH2O, >30% decline in FVC from baseline, or clinical respiratory distress. Use non-depolarizing agents (avoid succinylcholine — hyperkalemia risk). RSI with rocuronium preferred | N/A (life-saving) | Ventilator settings per ICU protocol; sedation; daily spontaneous breathing trial when improving | STAT | STAT | - | STAT |
 | DVT prophylaxis: Enoxaparin | SC | - | 40 mg :: SC :: daily :: 40 mg SC daily; start on admission | Active bleeding, platelets <50K, CrCl <30 (use UFH) | Platelets q3 days; anti-Xa if renal impairment | - | ROUTINE | - | ROUTINE |
 | DVT prophylaxis: Heparin SC (alternative) | SC | - | 5000 units :: SC :: - :: 5000 units SC q8-12h | Active bleeding, HIT | Platelets q3 days | - | ROUTINE | - | ROUTINE |
@@ -168,7 +168,7 @@ SECTION A: ACTION ITEMS
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Second course IVIG | PO | - | 0.4 g/kg :: PO :: daily x 5 days :: 0.4 g/kg/day x 5 days; consider if progressive deterioration after initial treatment or treatment-related fluctuation (TRF) | Same as initial IVIG | Same as initial IVIG | - | URGENT | - | URGENT |
 | PLEX after IVIG failure | - | - | 5 exchanges over 7-14 days; wait ≥2 weeks after IVIG to avoid washing out immunoglobulin | Same as initial PLEX | Same as initial PLEX | - | URGENT | - | URGENT |
-| IV methylprednisolone (NOT standard of care) | IV | - | 500 mg :: IV :: daily :: 500 mg IV daily x 5 days; evidence does NOT support steroids alone; may be considered in combination with IVIG per some centers for refractory cases | Active infection, uncontrolled diabetes | Glucose, BP, GI prophylaxis | - | EXT | - | EXT |
+| IV methylprednisolone (NOT standard of care) (CPT 96365) | IV | - | 500 mg :: IV :: daily :: 500 mg IV daily x 5 days; evidence does NOT support steroids alone; may be considered in combination with IVIG per some centers for refractory cases | Active infection, uncontrolled diabetes | Glucose, BP, GI prophylaxis | - | EXT | - | EXT |
 
 ### 3D. Disease-Modifying or Chronic Therapies
 

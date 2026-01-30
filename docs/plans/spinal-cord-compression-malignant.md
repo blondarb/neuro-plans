@@ -35,31 +35,31 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Baseline; surgical candidacy; chemotherapy effects; infection (epidural abscess differential) | Normal; leukocytosis may suggest infection; thrombocytopenia affects surgical/procedural candidacy |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Renal function (contrast, medications); electrolytes (hypercalcemia of malignancy); hepatic function (chemotherapy dosing, metastatic disease) | Normal; calcium >10.5 mg/dL → assess for hypercalcemia of malignancy |
-| PT/INR, aPTT | STAT | STAT | ROUTINE | STAT | Coagulopathy assessment; surgical candidacy; anticoagulation reversal if emergent surgery needed | Normal; INR <1.5 for surgery |
-| ESR / CRP | STAT | STAT | ROUTINE | STAT | Epidural abscess differential (highly elevated ESR >30-50 typically); inflammatory markers for malignancy | Normal-mildly elevated in malignancy; markedly elevated ESR/CRP → strongly consider abscess |
-| Blood cultures (x2 sets) | STAT | STAT | - | STAT | Epidural abscess differential; bacteremia if febrile | Negative; positive → epidural abscess more likely than tumor |
-| Blood glucose | STAT | STAT | ROUTINE | STAT | Baseline before high-dose dexamethasone; steroid hyperglycemia | <180 mg/dL; anticipate significant hyperglycemia with high-dose steroids |
-| Type and screen | STAT | STAT | - | STAT | Surgical candidacy; blood product availability | On file |
-| Calcium (ionized or corrected) | STAT | STAT | ROUTINE | STAT | Hypercalcemia of malignancy (present in 10-30% of cancer patients); can cause confusion, weakness mimicking cord compression progression | Corrected Ca <10.5 mg/dL; if elevated → IV fluids, calcitonin, bisphosphonate |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Baseline; surgical candidacy; chemotherapy effects; infection (epidural abscess differential) | Normal; leukocytosis may suggest infection; thrombocytopenia affects surgical/procedural candidacy |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | STAT | Renal function (contrast, medications); electrolytes (hypercalcemia of malignancy); hepatic function (chemotherapy dosing, metastatic disease) | Normal; calcium >10.5 mg/dL → assess for hypercalcemia of malignancy |
+| PT/INR, aPTT (CPT 85610, 85730) | STAT | STAT | ROUTINE | STAT | Coagulopathy assessment; surgical candidacy; anticoagulation reversal if emergent surgery needed | Normal; INR <1.5 for surgery |
+| ESR / CRP (CPT 85652, 86140) | STAT | STAT | ROUTINE | STAT | Epidural abscess differential (highly elevated ESR >30-50 typically); inflammatory markers for malignancy | Normal-mildly elevated in malignancy; markedly elevated ESR/CRP → strongly consider abscess |
+| Blood cultures (x2 sets) (CPT 87040) | STAT | STAT | - | STAT | Epidural abscess differential; bacteremia if febrile | Negative; positive → epidural abscess more likely than tumor |
+| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Baseline before high-dose dexamethasone; steroid hyperglycemia | <180 mg/dL; anticipate significant hyperglycemia with high-dose steroids |
+| Type and screen (CPT 86900) | STAT | STAT | - | STAT | Surgical candidacy; blood product availability | On file |
+| Calcium (ionized or corrected) (CPT 82310) | STAT | STAT | ROUTINE | STAT | Hypercalcemia of malignancy (present in 10-30% of cancer patients); can cause confusion, weakness mimicking cord compression progression | Corrected Ca <10.5 mg/dL; if elevated → IV fluids, calcitonin, bisphosphonate |
 | LDH | STAT | ROUTINE | ROUTINE | STAT | Tumor burden marker; lymphoma (very high LDH); prognostic | Normal; very high → lymphoma, aggressive malignancy |
-| Urinalysis | STAT | STAT | - | STAT | Urinary retention (neurogenic bladder from cord compression); UTI (fever differential); baseline renal function | Normal; retention with high post-void residual expected in cord compression |
+| Urinalysis (CPT 81003) | STAT | STAT | - | STAT | Urinary retention (neurogenic bladder from cord compression); UTI (fever differential); baseline renal function | Normal; retention with high post-void residual expected in cord compression |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Tumor markers (PSA, CEA, CA 19-9, CA 125, CA 15-3, AFP, β-hCG) | - | ROUTINE | ROUTINE | - | Unknown primary cancer; PSA (prostate — most common spinal metastasis), CEA (GI, lung), CA 15-3 (breast), etc. | Elevations guide primary site identification |
-| SPEP / UPEP with immunofixation | - | ROUTINE | ROUTINE | - | Multiple myeloma (common cause of vertebral compression/cord compression); M-protein, light chains | No monoclonal protein; if present → myeloma workup |
+| SPEP / UPEP with immunofixation (CPT 86334) | - | ROUTINE | ROUTINE | - | Multiple myeloma (common cause of vertebral compression/cord compression); M-protein, light chains | No monoclonal protein; if present → myeloma workup |
 | Free light chains (kappa/lambda ratio) | - | ROUTINE | ROUTINE | - | Myeloma; light chain disease | Normal ratio (0.26-1.65); abnormal suggests myeloma |
-| Serum protein electrophoresis | - | ROUTINE | ROUTINE | - | Myeloma; lymphoma | No M-spike |
+| Serum protein electrophoresis (CPT 86334) | - | ROUTINE | ROUTINE | - | Myeloma; lymphoma | No M-spike |
 | Alkaline phosphatase (bone-specific) | - | ROUTINE | ROUTINE | - | Osteoblastic metastases (prostate, breast); Paget's disease differential | Normal; elevated suggests bone turnover |
-| Phosphate | - | ROUTINE | ROUTINE | - | Hypercalcemia workup; oncologic emergency assessment | Normal |
+| Phosphate (CPT 84100) | - | ROUTINE | ROUTINE | - | Hypercalcemia workup; oncologic emergency assessment | Normal |
 | Uric acid | - | ROUTINE | - | ROUTINE | Tumor lysis syndrome risk (lymphoma, rapidly proliferating tumors); pre-treatment assessment | Normal |
-| Procalcitonin | STAT | STAT | - | STAT | If infection/abscess differential is high; more specific than CRP for bacterial infection | <0.25 ng/mL (low probability bacterial); >0.5 → consider abscess/infection |
-| TSH, free T4 | - | ROUTINE | ROUTINE | - | Thyroid cancer metastases (follicular thyroid cancer has bony tropism) | Normal |
-| Vitamin D (25-OH) | - | ROUTINE | ROUTINE | - | Bone health; pathologic fracture risk; supplement if deficient | >30 ng/mL |
+| Procalcitonin (CPT 84145) | STAT | STAT | - | STAT | If infection/abscess differential is high; more specific than CRP for bacterial infection | <0.25 ng/mL (low probability bacterial); >0.5 → consider abscess/infection |
+| TSH, free T4 (CPT 84443, 84439) | - | ROUTINE | ROUTINE | - | Thyroid cancer metastases (follicular thyroid cancer has bony tropism) | Normal |
+| Vitamin D (25-OH) (CPT 82306) | - | ROUTINE | ROUTINE | - | Bone health; pathologic fracture risk; supplement if deficient | >30 ng/mL |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
@@ -79,19 +79,19 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI entire spine with and without contrast (gadolinium) | STAT | STAT | URGENT | STAT | **Within 4 hours of presentation (24h max)**; GOLD STANDARD; must image ENTIRE spine (multifocal metastases in 30-40%) | Epidural mass with cord compression; level(s) of compression; Bilsky grade (0-3); vertebral body involvement; number of levels; intramedullary vs. extramedullary-intradural vs. epidural; cord signal change (T2 hyperintensity = edema/myelopathy — poor prognostic sign); paraspinal soft tissue extension | MRI-incompatible implants; severe claustrophobia (sedate); GFR <30 (gadolinium risk — benefit outweighs risk in emergency) |
+| MRI entire spine with and without contrast (gadolinium) (CPT 72156+72157+72158) | STAT | STAT | URGENT | STAT | **Within 4 hours of presentation (24h max)**; GOLD STANDARD; must image ENTIRE spine (multifocal metastases in 30-40%) | Epidural mass with cord compression; level(s) of compression; Bilsky grade (0-3); vertebral body involvement; number of levels; intramedullary vs. extramedullary-intradural vs. epidural; cord signal change (T2 hyperintensity = edema/myelopathy — poor prognostic sign); paraspinal soft tissue extension | MRI-incompatible implants; severe claustrophobia (sedate); GFR <30 (gadolinium risk — benefit outweighs risk in emergency) |
 | Plain radiographs (spine, targeted) | STAT | STAT | - | STAT | Immediate while awaiting MRI; identifies vertebral collapse, pathologic fracture, alignment; 70% sensitivity for vertebral metastases (30% miss rate) | Vertebral body collapse; pedicle erosion ("winking owl sign" on AP); pathologic fracture; kyphosis; alignment | Pregnancy (shield) |
-| CT chest/abdomen/pelvis with contrast | URGENT | URGENT | ROUTINE | - | Within 24-48h; staging; primary identification; lung is most common primary | Primary tumor; staging of metastatic disease; lymphadenopathy; visceral metastases | Contrast allergy; renal impairment |
+| CT chest/abdomen/pelvis with contrast (CPT 71260, 74178) | URGENT | URGENT | ROUTINE | - | Within 24-48h; staging; primary identification; lung is most common primary | Primary tumor; staging of metastatic disease; lymphadenopathy; visceral metastases | Contrast allergy; renal impairment |
 | CT spine (targeted level) without contrast | STAT | STAT | - | STAT | If MRI contraindicated or unavailable; pre-operative planning for bone assessment; vertebral body stability (SINS score); CT myelogram if MRI not possible | Bone destruction pattern (lytic vs. blastic vs. mixed); posterior element involvement; fracture; canal compromise; vertebral body collapse >50% | Pregnancy (risk vs. benefit) |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT myelogram | STAT | STAT | - | STAT | If MRI contraindicated (pacemaker, implant); intrathecal contrast via LP → CT; demonstrates level of block | Complete or partial subarachnoid block; level of compression; multiple levels of disease | LP contraindicated if complete block above puncture site (risk of neurologic deterioration); coagulopathy |
-| PET/CT (FDG) | - | ROUTINE | ROUTINE | - | Staging; primary identification; assessing treatment response; distinguishing active tumor from treated/necrotic bone | Active metastatic disease; primary tumor identification | Uncontrolled diabetes; pregnancy |
-| Bone scan (Tc-99m) | - | ROUTINE | ROUTINE | - | Skeletal staging; identifies additional osseous metastases; blastic > lytic sensitivity; useful for prostate, breast | Additional bone metastases; may miss purely lytic lesions (renal, thyroid, myeloma) | Pregnancy |
-| MRI brain with contrast | - | URGENT | ROUTINE | - | If lung primary or melanoma (high brain metastasis risk); symptoms suggesting intracranial disease | Brain metastases (concurrent in 10-30% of patients with MSCC) | Same as MRI |
+| CT myelogram (CPT 72132) | STAT | STAT | - | STAT | If MRI contraindicated (pacemaker, implant); intrathecal contrast via LP → CT; demonstrates level of block | Complete or partial subarachnoid block; level of compression; multiple levels of disease | LP contraindicated if complete block above puncture site (risk of neurologic deterioration); coagulopathy |
+| PET/CT (FDG) (CPT 78816) | - | ROUTINE | ROUTINE | - | Staging; primary identification; assessing treatment response; distinguishing active tumor from treated/necrotic bone | Active metastatic disease; primary tumor identification | Uncontrolled diabetes; pregnancy |
+| Bone scan (Tc-99m) (CPT 78300) | - | ROUTINE | ROUTINE | - | Skeletal staging; identifies additional osseous metastases; blastic > lytic sensitivity; useful for prostate, breast | Additional bone metastases; may miss purely lytic lesions (renal, thyroid, myeloma) | Pregnancy |
+| MRI brain with contrast (CPT 70552) | - | URGENT | ROUTINE | - | If lung primary or melanoma (high brain metastasis risk); symptoms suggesting intracranial disease | Brain metastases (concurrent in 10-30% of patients with MSCC) | Same as MRI |
 | CT-guided biopsy (vertebral/paraspinal) | - | URGENT | ROUTINE | - | Tissue diagnosis if unknown primary; CRITICAL for suspected lymphoma (radiosensitive — may not need surgery); obtain BEFORE steroids if lymphoma suspected (steroids can render biopsy non-diagnostic) | Histopathologic diagnosis; molecular profiling | Coagulopathy; inaccessible lesion |
 | DEXA scan | - | - | ROUTINE | - | Baseline bone density if prolonged steroids anticipated; osteoporosis risk | T-score; fracture risk assessment | None significant |
 
@@ -118,7 +118,7 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| **Dexamethasone (high-dose for MSCC)** | IV | - | 10 mg :: IV :: q6h :: **Standard loading dose:** 10 mg IV bolus STAT; **Then:** 4 mg IV/PO q6h (16 mg/day); **High-dose (severe deficits or rapidly progressive):** 96 mg IV bolus (controversial — see evidence) → 24 mg q6h x 3 days → rapid taper; **Moderate deficits / ambulatory:** 10 mg IV → 4 mg q6h; **Begin taper after definitive treatment initiated;** GI prophylaxis: PPI while on steroids; Monitor glucose q6h | - | Sorensen et al. (1994): Dexamethasone + radiation vs. radiation alone → 81% vs. 63% ambulatory at treatment end; High-dose (96 mg) vs. standard (10 mg): Vecht et al. (1989) — higher response rate at 1 week but more side effects; MOST centers now use moderate dose (10 mg load → 16 mg/day); Begin within 6h of diagnosis | STAT | STAT | URGENT | STAT |
+| **Dexamethasone (high-dose for MSCC)** (CPT 96374) | IV | - | 10 mg :: IV :: q6h :: **Standard loading dose:** 10 mg IV bolus STAT; **Then:** 4 mg IV/PO q6h (16 mg/day); **High-dose (severe deficits or rapidly progressive):** 96 mg IV bolus (controversial — see evidence) → 24 mg q6h x 3 days → rapid taper; **Moderate deficits / ambulatory:** 10 mg IV → 4 mg q6h; **Begin taper after definitive treatment initiated;** GI prophylaxis: PPI while on steroids; Monitor glucose q6h | - | Sorensen et al. (1994): Dexamethasone + radiation vs. radiation alone → 81% vs. 63% ambulatory at treatment end; High-dose (96 mg) vs. standard (10 mg): Vecht et al. (1989) — higher response rate at 1 week but more side effects; MOST centers now use moderate dose (10 mg load → 16 mg/day); Begin within 6h of diagnosis | STAT | STAT | URGENT | STAT |
 | **Spinal precautions / immobilization** | - | - | Strict log-roll precautions; flat bed transport; cervical collar if cervical spine involved; thoracolumbar brace (TLSO) if thoracolumbar; avoid flexion/extension; transfer on spine board if unstable fracture suspected | - | Unstable pathologic fracture may worsen cord compression with movement; SINS score guides instability assessment | STAT | STAT | - | STAT |
 | **Bladder management** | - | - | 200 mL :: - :: - :: Assess for urinary retention (cord compression causes neurogenic bladder); straight catheterize if retention → place Foley if residual >200 mL or ongoing retention; monitor I&O strictly | - | Urinary retention is a common presenting feature and may be the first sign of cord compression; bladder function correlates with motor recovery prognosis | STAT | STAT | - | STAT |
 | **DVT prophylaxis** | SC | - | 40 mg :: SC :: daily :: SCDs immediately; pharmacologic prophylaxis (enoxaparin 40 mg SQ daily) within 24-48h unless surgery imminent; spinal cord compression patients have VERY HIGH VTE risk (up to 25-50% without prophylaxis) | - | Cancer + immobility + spinal cord injury = extremely high VTE risk; mechanical prophylaxis alone insufficient | STAT | STAT | - | STAT |

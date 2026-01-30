@@ -15,7 +15,7 @@ setting: "ED, HOSP, OPD, ICU"
 
 **DIAGNOSIS:** Autoimmune Encephalitis
 
-**ICD-10:** G04.81 (Other autoimmune encephalitis)
+**ICD-10:** G04.81 (Other autoimmune encephalitis), G04.90 (Encephalitis and encephalomyelitis, unspecified)
 
 **SYNONYMS:** Autoimmune encephalitis, AE, anti-NMDA receptor encephalitis, anti-NMDAR encephalitis, limbic encephalitis, antibody-mediated encephalitis, paraneoplastic encephalitis, LGI1 encephalitis, CASPR2 encephalitis, rapid neurocognitive syndrome
 
@@ -35,28 +35,28 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Baseline; infection screen; pre-immunotherapy | Normal |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Metabolic screen; renal/hepatic baseline for immunotherapy | Normal |
-| TSH | URGENT | ROUTINE | ROUTINE | URGENT | Thyroid encephalopathy mimic; Hashimoto encephalopathy screen | Normal |
-| ESR | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory/vasculitis screen | Normal (<20 mm/hr) |
-| CRP | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory marker; infection screen | Normal |
-| Urinalysis with culture | STAT | STAT | ROUTINE | STAT | UTI as encephalopathy trigger | Negative |
-| Blood cultures (x2 sets) | STAT | STAT | - | STAT | Rule out septic encephalopathy | No growth |
-| Blood glucose | STAT | STAT | ROUTINE | STAT | Metabolic encephalopathy screen; pre-steroid baseline | Normal |
-| HbA1c | - | ROUTINE | ROUTINE | - | Glycemic status before high-dose steroids | <5.7% |
-| Ammonia | STAT | STAT | - | STAT | Hepatic encephalopathy mimic | Normal |
-| Lactate | STAT | STAT | - | STAT | Sepsis screen; metabolic screen | Normal (<2.0 mmol/L) |
-| PT/INR, aPTT | STAT | STAT | - | STAT | Coagulopathy screen pre-LP; DIC screen | Normal |
-| Magnesium | STAT | STAT | ROUTINE | STAT | Seizure threshold; metabolic screen | Normal |
-| Phosphorus | STAT | STAT | - | STAT | Metabolic screen | Normal |
-| Procalcitonin | URGENT | URGENT | - | URGENT | Distinguish bacterial vs autoimmune etiology | Normal (<0.1 ng/mL) |
-| Troponin | STAT | STAT | - | STAT | Cardiac involvement; autonomic instability assessment | Normal |
-| CPK | URGENT | URGENT | - | URGENT | Rhabdomyolysis from prolonged seizures/catatonia | Normal |
-| Urine drug screen | STAT | STAT | - | STAT | Toxic/drug-induced encephalopathy mimic | Negative |
-| Alcohol level | STAT | STAT | - | STAT | Alcohol-related encephalopathy | Negative |
-| Pregnancy test (females of childbearing age) | STAT | STAT | ROUTINE | STAT | Eclampsia mimic; treatment planning (teratogenicity) | As applicable |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Baseline; infection screen; pre-immunotherapy | Normal |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | STAT | Metabolic screen; renal/hepatic baseline for immunotherapy | Normal |
+| TSH (CPT 84443) | URGENT | ROUTINE | ROUTINE | URGENT | Thyroid encephalopathy mimic; Hashimoto encephalopathy screen | Normal |
+| ESR (CPT 85652) | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory/vasculitis screen | Normal (<20 mm/hr) |
+| CRP (CPT 86140) | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory marker; infection screen | Normal |
+| Urinalysis with culture (CPT 81003+87086) | STAT | STAT | ROUTINE | STAT | UTI as encephalopathy trigger | Negative |
+| Blood cultures (x2 sets) (CPT 87040) | STAT | STAT | - | STAT | Rule out septic encephalopathy | No growth |
+| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Metabolic encephalopathy screen; pre-steroid baseline | Normal |
+| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Glycemic status before high-dose steroids | <5.7% |
+| Ammonia (CPT 82140) | STAT | STAT | - | STAT | Hepatic encephalopathy mimic | Normal |
+| Lactate (CPT 83605) | STAT | STAT | - | STAT | Sepsis screen; metabolic screen | Normal (<2.0 mmol/L) |
+| PT/INR, aPTT (CPT 85610+85730) | STAT | STAT | - | STAT | Coagulopathy screen pre-LP; DIC screen | Normal |
+| Magnesium (CPT 83735) | STAT | STAT | ROUTINE | STAT | Seizure threshold; metabolic screen | Normal |
+| Phosphorus (CPT 84100) | STAT | STAT | - | STAT | Metabolic screen | Normal |
+| Procalcitonin (CPT 84145) | URGENT | URGENT | - | URGENT | Distinguish bacterial vs autoimmune etiology | Normal (<0.1 ng/mL) |
+| Troponin (CPT 84484) | STAT | STAT | - | STAT | Cardiac involvement; autonomic instability assessment | Normal |
+| CPK (CPT 82550) | URGENT | URGENT | - | URGENT | Rhabdomyolysis from prolonged seizures/catatonia | Normal |
+| Urine drug screen (CPT 80307) | STAT | STAT | - | STAT | Toxic/drug-induced encephalopathy mimic | Negative |
+| Alcohol level (CPT 80320) | STAT | STAT | - | STAT | Alcohol-related encephalopathy | Negative |
+| Pregnancy test (females of childbearing age) (CPT 81025) | STAT | STAT | ROUTINE | STAT | Eclampsia mimic; treatment planning (teratogenicity) | As applicable |
 | Peripheral blood smear | URGENT | URGENT | - | URGENT | TTP/HUS screen if thrombocytopenia | Normal |
-| LDH | URGENT | ROUTINE | ROUTINE | URGENT | Hemolysis screen; tumor marker | Normal |
+| LDH (CPT 83615) | URGENT | ROUTINE | ROUTINE | URGENT | Hemolysis screen; tumor marker | Normal |
 | Uric acid | - | ROUTINE | ROUTINE | - | Tumor lysis risk if malignancy suspected | Normal |
 | Lipase | STAT | STAT | - | STAT | Pancreatitis-related encephalopathy | Normal |
 
@@ -64,9 +64,9 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| **Anti-NMDAR antibody (serum AND CSF)** | URGENT | URGENT | ROUTINE | URGENT | Most common autoimmune encephalitis; CSF more sensitive than serum; cell-based assay (CBA) preferred | Negative |
-| **Anti-LGI1 antibody (serum AND CSF)** | URGENT | URGENT | ROUTINE | URGENT | Limbic encephalitis; faciobrachial dystonic seizures (FBDS); hyponatremia | Negative |
-| **Anti-CASPR2 antibody (serum AND CSF)** | URGENT | URGENT | ROUTINE | URGENT | Limbic encephalitis; Morvan syndrome; neuromyotonia; neuropathic pain | Negative |
+| **Anti-NMDAR antibody (serum AND CSF)** (CPT 86255) | URGENT | URGENT | ROUTINE | URGENT | Most common autoimmune encephalitis; CSF more sensitive than serum; cell-based assay (CBA) preferred | Negative |
+| **Anti-LGI1 antibody (serum AND CSF)** (CPT 86235) | URGENT | URGENT | ROUTINE | URGENT | Limbic encephalitis; faciobrachial dystonic seizures (FBDS); hyponatremia | Negative |
+| **Anti-CASPR2 antibody (serum AND CSF)** (CPT 86235) | URGENT | URGENT | ROUTINE | URGENT | Limbic encephalitis; Morvan syndrome; neuromyotonia; neuropathic pain | Negative |
 | **Anti-GABA-B antibody (serum AND CSF)** | URGENT | URGENT | ROUTINE | URGENT | Limbic encephalitis with prominent seizures; 50% associated with SCLC | Negative |
 | **Anti-AMPA antibody (serum AND CSF)** | URGENT | URGENT | ROUTINE | URGENT | Limbic encephalitis; relapsing course; associated with thymoma, lung, breast | Negative |
 | **Anti-DPPX antibody (serum AND CSF)** | URGENT | URGENT | ROUTINE | URGENT | Encephalitis with hyperexcitability, GI symptoms, PERM | Negative |
@@ -75,7 +75,7 @@ SECTION A: ACTION ITEMS
 | **Anti-GAD65 antibody (serum AND CSF)** | URGENT | URGENT | ROUTINE | URGENT | Limbic encephalitis, stiff-person spectrum, cerebellar ataxia; high titers (>20 nmol/L) significant | Negative or low titer |
 | **Mayo Autoimmune Evaluation - Encephalopathy (serum)** | URGENT | URGENT | ROUTINE | URGENT | Comprehensive panel: NMDAR, LGI1, CASPR2, GABA-B, AMPA, DPPX | All negative |
 | **Mayo Autoimmune Evaluation - Encephalopathy (CSF)** | URGENT | URGENT | ROUTINE | URGENT | CSF panel: NMDAR, LGI1, CASPR2, GABA-B, AMPA, DPPX | All negative |
-| ANA | URGENT | ROUTINE | ROUTINE | URGENT | Lupus cerebritis screen | Negative or low titer |
+| ANA (CPT 86235) | URGENT | ROUTINE | ROUTINE | URGENT | Lupus cerebritis screen | Negative or low titer |
 | Anti-dsDNA | - | ROUTINE | ROUTINE | - | If ANA positive; lupus evaluation | Negative |
 | Anti-SSA/SSB (Ro/La) | - | ROUTINE | ROUTINE | - | Sjogren syndrome with CNS involvement | Negative |
 | Anti-TPO antibodies | URGENT | ROUTINE | ROUTINE | URGENT | Hashimoto encephalopathy (SREAT) | Negative |
@@ -116,11 +116,11 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head without contrast | STAT | STAT | - | STAT | Immediate (ED triage) | Rule out mass, hemorrhage, hydrocephalus | None significant |
-| MRI brain with and without contrast | URGENT | URGENT | ROUTINE | URGENT | Within 24h | Mesial temporal T2/FLAIR hyperintensity (limbic encephalitis); cortical/subcortical signal changes; leptomeningeal enhancement | GFR <30, gadolinium allergy, pacemaker |
-| EEG (routine or continuous) | URGENT | URGENT | ROUTINE | STAT | Within 24h; continuous if ICU or altered consciousness | Extreme delta brush (anti-NMDAR); focal/generalized slowing; epileptiform discharges; subclinical seizures | None significant |
-| ECG (12-lead) | STAT | STAT | ROUTINE | STAT | Immediate | Autonomic dysfunction; arrhythmia; QTc prolongation (medication safety) | None |
-| Chest X-ray | STAT | STAT | - | STAT | Immediate | Mediastinal mass (thymoma); pulmonary mass (SCLC) | Pregnancy (relative) |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | Immediate (ED triage) | Rule out mass, hemorrhage, hydrocephalus | None significant |
+| MRI brain with and without contrast (CPT 70553) | URGENT | URGENT | ROUTINE | URGENT | Within 24h | Mesial temporal T2/FLAIR hyperintensity (limbic encephalitis); cortical/subcortical signal changes; leptomeningeal enhancement | GFR <30, gadolinium allergy, pacemaker |
+| EEG (routine or continuous) (CPT 95816) | URGENT | URGENT | ROUTINE | STAT | Within 24h; continuous if ICU or altered consciousness | Extreme delta brush (anti-NMDAR); focal/generalized slowing; epileptiform discharges; subclinical seizures | None significant |
+| ECG (12-lead) (CPT 93000) | STAT | STAT | ROUTINE | STAT | Immediate | Autonomic dysfunction; arrhythmia; QTc prolongation (medication safety) | None |
+| Chest X-ray (CPT 71046) | STAT | STAT | - | STAT | Immediate | Mediastinal mass (thymoma); pulmonary mass (SCLC) | Pregnancy (relative) |
 | Continuous telemetry | - | STAT | - | STAT | Continuous in hospital | Arrhythmia from autonomic instability | None |
 
 ### 2B. Extended
@@ -128,10 +128,10 @@ SECTION A: ACTION ITEMS
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MRI spine (cervical and thoracic) with and without contrast | - | ROUTINE | ROUTINE | ROUTINE | Within 48-72h | Concurrent myelitis; overlap syndromes | GFR <30, gadolinium allergy |
-| CT chest/abdomen/pelvis with contrast | - | URGENT | ROUTINE | URGENT | Within 48h | Occult malignancy: thymoma, lung cancer, ovarian teratoma, lymphoma | Contrast allergy, renal insufficiency |
+| CT chest/abdomen/pelvis with contrast (CPT 71260+74178) | - | URGENT | ROUTINE | URGENT | Within 48h | Occult malignancy: thymoma, lung cancer, ovarian teratoma, lymphoma | Contrast allergy, renal insufficiency |
 | Pelvic/transvaginal ultrasound (females) | - | URGENT | ROUTINE | URGENT | Within 48h | Ovarian teratoma (anti-NMDAR) | None significant |
 | Testicular ultrasound (males <50) | - | URGENT | ROUTINE | URGENT | Within 48h | Testicular germ cell tumor (anti-Ma2, KLHL11) | None significant |
-| FDG-PET/CT (whole body) | - | ROUTINE | ROUTINE | - | Within 1-2 weeks | Occult malignancy not seen on CT; FDG-avid tumor | Uncontrolled diabetes, pregnancy |
+| FDG-PET/CT (whole body) (CPT 78816) | - | ROUTINE | ROUTINE | - | Within 1-2 weeks | Occult malignancy not seen on CT; FDG-avid tumor | Uncontrolled diabetes, pregnancy |
 | Video-EEG monitoring (prolonged) | - | ROUTINE | ROUTINE | STAT | As needed | Characterize seizure semiology; subclinical seizures; extreme delta brush pattern | None |
 | FDG-PET brain | - | EXT | EXT | - | Within 1-2 weeks | Mesial temporal hypermetabolism (early) or hypometabolism (late); cortical metabolic changes | Same as PET/CT |
 
@@ -156,27 +156,27 @@ SECTION A: ACTION ITEMS
 | Study | ED | HOSP | OPD | Rationale | Target Finding |
 |-------|:--:|:----:|:---:|-----------|----------------|
 | Opening pressure | URGENT | ROUTINE | ROUTINE | Elevated ICP assessment | 10-20 cm H2O |
-| Cell count with differential (tubes 1 and 4) | STAT | STAT | ROUTINE | Lymphocytic pleocytosis supports autoimmune | WBC 5-80 (lymphocyte-predominant); RBC 0 |
-| Protein | STAT | STAT | ROUTINE | Mildly elevated in autoimmune; markedly elevated suggests infection/GBS | Normal to mildly elevated (usually <100 mg/dL) |
-| Glucose with paired serum glucose | STAT | STAT | ROUTINE | Low in infection/carcinomatous meningitis | Normal (>60% of serum) |
-| Gram stain and bacterial culture | STAT | STAT | ROUTINE | Rule out bacterial meningitis | No organisms |
-| HSV 1/2 PCR | STAT | STAT | ROUTINE | Rule out HSV encephalitis (most important mimic) | Negative |
+| Cell count with differential (tubes 1 and 4) (CPT 89051) | STAT | STAT | ROUTINE | Lymphocytic pleocytosis supports autoimmune | WBC 5-80 (lymphocyte-predominant); RBC 0 |
+| Protein (CPT 84157) | STAT | STAT | ROUTINE | Mildly elevated in autoimmune; markedly elevated suggests infection/GBS | Normal to mildly elevated (usually <100 mg/dL) |
+| Glucose with paired serum glucose (CPT 82945) | STAT | STAT | ROUTINE | Low in infection/carcinomatous meningitis | Normal (>60% of serum) |
+| Gram stain and bacterial culture (CPT 87205+87070) | STAT | STAT | ROUTINE | Rule out bacterial meningitis | No organisms |
+| HSV 1/2 PCR (CPT 87529) | STAT | STAT | ROUTINE | Rule out HSV encephalitis (most important mimic) | Negative |
 | VZV PCR | URGENT | URGENT | ROUTINE | Varicella encephalitis | Negative |
 | EBV PCR | - | ROUTINE | ROUTINE | EBV-associated encephalitis; lymphoma screen | Negative |
 | CMV PCR | - | ROUTINE | ROUTINE | Immunocompromised patients | Negative |
 | HHV-6 PCR | - | ROUTINE | ROUTINE | Post-transplant; limbic encephalitis mimic | Negative |
 | Enterovirus PCR | URGENT | URGENT | - | Viral meningitis/encephalitis | Negative |
 | West Nile virus IgM/IgG | - | ROUTINE | - | Endemic areas; flaccid paralysis | Negative |
-| Cryptococcal antigen | URGENT | ROUTINE | - | Immunocompromised; chronic meningitis | Negative |
-| VDRL (CSF) | - | ROUTINE | ROUTINE | Neurosyphilis | Negative |
-| Oligoclonal bands (CSF AND paired serum) | URGENT | ROUTINE | ROUTINE | Intrathecal IgG synthesis; MS/NMOSD overlap | May show CSF-specific bands |
+| Cryptococcal antigen (CPT 87327) | URGENT | ROUTINE | - | Immunocompromised; chronic meningitis | Negative |
+| VDRL (CSF) (CPT 86592) | - | ROUTINE | ROUTINE | Neurosyphilis | Negative |
+| Oligoclonal bands (CSF AND paired serum) (CPT 83916) | URGENT | ROUTINE | ROUTINE | Intrathecal IgG synthesis; MS/NMOSD overlap | May show CSF-specific bands |
 | IgG index | URGENT | ROUTINE | ROUTINE | Intrathecal antibody synthesis | May be elevated |
-| Cytology | - | ROUTINE | ROUTINE | Carcinomatous/lymphomatous meningitis | Negative |
+| Cytology (CPT 88104) | - | ROUTINE | ROUTINE | Carcinomatous/lymphomatous meningitis | Negative |
 | Flow cytometry | - | ROUTINE | ROUTINE | CNS lymphoma | Normal |
 | **Autoimmune encephalitis antibody panel (CSF)** | URGENT | URGENT | ROUTINE | NMDAR, LGI1, CASPR2, GABA-B, AMPA, DPPX -- CBA method | All negative |
 | **Anti-NMDAR IgG (CSF)** | URGENT | URGENT | ROUTINE | CSF more sensitive than serum for NMDAR | Negative |
-| AFB culture and smear | - | ROUTINE | - | TB meningitis if risk factors | Negative |
-| Fungal culture | - | ROUTINE | - | Immunocompromised | Negative |
+| AFB culture and smear (CPT 87116) | - | ROUTINE | - | TB meningitis if risk factors | Negative |
+| Fungal culture (CPT 87102) | - | ROUTINE | - | Immunocompromised | Negative |
 
 **Special Handling:** Send minimum 2 mL CSF to each reference lab. Anti-NMDAR CSF testing is more sensitive than serum -- ALWAYS send CSF. Antibody results take 1-3 weeks. Cytology requires rapid transport (<1 hour). Store extra CSF (frozen at -20C) for future testing.
 
@@ -202,10 +202,10 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Methylprednisolone IV | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily x 5 days; infuse over 1-2 hours | Active untreated infection; uncontrolled diabetes; psychosis from steroids | Glucose q6h (target <180); BP; mood/sleep; I/O; GI prophylaxis | URGENT | STAT | - | STAT |
+| Methylprednisolone IV (CPT 96365) | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily x 5 days; infuse over 1-2 hours | Active untreated infection; uncontrolled diabetes; psychosis from steroids | Glucose q6h (target <180); BP; mood/sleep; I/O; GI prophylaxis | URGENT | STAT | - | STAT |
 | Omeprazole (GI prophylaxis during steroids) | IV | - | 40 mg :: IV :: daily :: 40 mg IV/PO daily during steroid course | PPI allergy | None routine | URGENT | STAT | - | STAT |
 | Insulin sliding scale | - | - | 180 mg :: - :: - :: Per protocol if glucose >180 mg/dL | Hypoglycemia risk | Glucose q6h; adjust per response | URGENT | STAT | - | STAT |
-| IVIG (intravenous immunoglobulin) | IV | - | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol; premedicate with acetaminophen, diphenhydramine | IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure | Renal function daily; headache (aseptic meningitis); thrombosis; volume overload; check IgA level before first dose | - | STAT | - | STAT |
+| IVIG (intravenous immunoglobulin) (CPT 96365) | IV | - | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol; premedicate with acetaminophen, diphenhydramine | IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure | Renal function daily; headache (aseptic meningitis); thrombosis; volume overload; check IgA level before first dose | - | STAT | - | STAT |
 | Plasmapheresis (PLEX) | - | - | 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange; albumin replacement | Hemodynamic instability; sepsis; coagulopathy; poor vascular access | BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions | - | STAT | - | STAT |
 
 *Note: Methylprednisolone is typically started first (often in combination with IVIG or PLEX). IVIG and PLEX are considered equivalent first-line therapies and should be started concurrently or within days of steroids if clinical suspicion is high. For anti-NMDAR encephalitis, combination of all three first-line agents is common. PLEX may be preferred if rapid deterioration; IVIG may be preferred if hemodynamic instability or vascular access issues.*
