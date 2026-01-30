@@ -1,7 +1,7 @@
 {
   "id": "drug-induced-parkinsonism",
   "title": "Drug-Induced Parkinsonism",
-  "version": "1.0",
+  "version": "1.1",
   "icd10": [
     "** G21.11 (Neuroleptic induced parkinsonism)",
     "G21.19 (Other drug induced secondary parkinsonism)",
@@ -21,8 +21,8 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
-          "rationale": "General health assessment; rule out infection",
+          "ICU": "URGENT",
+          "rationale": "General health assessment; rule out infection; leukocytosis if NMS suspected",
           "target": "Normal"
         },
         {
@@ -30,7 +30,7 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
+          "ICU": "URGENT",
           "rationale": "Hepatic/renal function for medication dosing and clearance assessment",
           "target": "Normal"
         },
@@ -48,7 +48,7 @@
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
-          "ICU": "-",
+          "ICU": "STAT",
           "rationale": "Identify all dopamine-blocking or depleting agents including OTC and herbal",
           "target": "Complete list of all current and recent medications"
         },
@@ -57,7 +57,7 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
+          "ICU": "URGENT",
           "rationale": "Assess toxicity or supratherapeutic levels of causative agent (valproate, lithium)",
           "target": "Therapeutic range"
         },
@@ -66,7 +66,7 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
+          "ICU": "URGENT",
           "rationale": "Metabolic evaluation; diabetes as comorbidity",
           "target": "Normal"
         }
@@ -122,7 +122,7 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
-          "ICU": "-",
+          "ICU": "URGENT",
           "rationale": "Evaluate for NMS if fever, rigidity, autonomic instability present",
           "target": "Normal (30-200 U/L)"
         },
@@ -149,7 +149,7 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
+          "ICU": "URGENT",
           "rationale": "If on valproate; supratherapeutic levels increase risk",
           "target": "50-100 mcg/mL"
         },
@@ -158,7 +158,7 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-",
+          "ICU": "URGENT",
           "rationale": "If on lithium; toxicity can cause parkinsonism",
           "target": "0.6-1.2 mEq/L"
         }
@@ -229,7 +229,7 @@
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
-          "ICU": "-",
+          "ICU": "STAT",
           "timing": "At presentation",
           "target": "Establish temporal relationship between medication and symptom onset",
           "contraindications": "None"
@@ -329,20 +329,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Taper or discontinue dopamine-blocking agent per clinical judgment",
-                "orderSentence": "Discontinue causative DRBA Taper or discontinue dopamine-blocking agent per clinical judgment -"
+                "text": "-",
+                "orderSentence": "Discontinue causative DRBA - -"
               }
             ],
             "route": "-",
             "instructions": "Immediate discontinuation if not psychiatrically required; gradual taper over 1-2 weeks if on antipsychotic to avoid withdrawal psychosis",
-            "orderSentence": "Discontinue causative DRBA Taper or discontinue dopamine-blocking agent per clinical judgment -"
+            "orderSentence": "Discontinue causative DRBA - -"
           },
           "contraindications": "Active psychosis requiring continued antipsychotic (coordinate with psychiatry)",
           "monitoring": "Psychiatric status, withdrawal symptoms, rebound psychosis",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "STAT"
         },
         {
           "item": "Discontinue metoclopramide",
@@ -351,20 +351,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Discontinue immediately",
-                "orderSentence": "Discontinue metoclopramide Discontinue immediately -"
+                "text": "-",
+                "orderSentence": "Discontinue metoclopramide - -"
               }
             ],
             "route": "-",
-            "instructions": "Stop metoclopramide; switch to ondansetron 4-8 mg PO/IV q8h PRN for nausea",
-            "orderSentence": "Discontinue metoclopramide Discontinue immediately -"
+            "instructions": "Stop metoclopramide immediately; switch to ondansetron 4-8 mg PO/IV q8h PRN for nausea",
+            "orderSentence": "Discontinue metoclopramide - -"
           },
           "contraindications": "Active gastroparesis without alternative options",
           "monitoring": "Nausea control, GI motility",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "STAT"
         },
         {
           "item": "Discontinue prochlorperazine",
@@ -373,20 +373,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Discontinue immediately",
-                "orderSentence": "Discontinue prochlorperazine Discontinue immediately -"
+                "text": "-",
+                "orderSentence": "Discontinue prochlorperazine - -"
               }
             ],
             "route": "-",
-            "instructions": "Stop prochlorperazine; switch to ondansetron 4-8 mg PO/IV q8h PRN for nausea/vertigo",
-            "orderSentence": "Discontinue prochlorperazine Discontinue immediately -"
+            "instructions": "Stop prochlorperazine immediately; switch to ondansetron 4-8 mg PO/IV q8h PRN for nausea/vertigo",
+            "orderSentence": "Discontinue prochlorperazine - -"
           },
           "contraindications": "None",
           "monitoring": "Nausea/vertigo control",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "STAT"
         },
         {
           "item": "Dose reduction of causative agent",
@@ -395,20 +395,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Reduce to lowest effective dose",
-                "orderSentence": "Dose reduction of causative agent Reduce to lowest effective dose -"
+                "text": "-",
+                "orderSentence": "Dose reduction of causative agent - -"
               }
             ],
             "route": "-",
             "instructions": "Reduce causative agent to minimum effective dose if complete discontinuation not possible; reassess in 2-4 weeks",
-            "orderSentence": "Dose reduction of causative agent Reduce to lowest effective dose -"
+            "orderSentence": "Dose reduction of causative agent - -"
           },
           "contraindications": "Complete discontinuation preferable when safe",
           "monitoring": "Symptom improvement, psychiatric stability",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         }
       ],
       "Symptomatic Treatment": [
@@ -419,17 +419,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg daily",
-                "orderSentence": "Amantadine (Symmetrel) 100 mg daily PO"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Amantadine (Symmetrel) 100 mg BID PO"
+                "text": "100 mg",
+                "orderSentence": "Amantadine (Symmetrel) 100 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 100 mg daily; may increase to 100 mg BID after 1 week; max 300 mg/day; reduce dose in renal impairment (CrCl <50: 100 mg daily)",
-            "orderSentence": "Amantadine (Symmetrel) 100 mg daily PO"
+            "instructions": "Start 100 mg daily; may increase to 100 mg BID after 1 week; max 300 mg/day; reduce dose in renal impairment (CrCl <50: 100 mg daily; CrCl <15: contraindicated)",
+            "orderSentence": "Amantadine (Symmetrel) 100 mg PO"
           },
           "contraindications": "Severe renal impairment (CrCl <15); seizure history (relative); livedo reticularis (cosmetic); pregnancy",
           "monitoring": "Renal function, hallucinations, livedo reticularis, peripheral edema, confusion in elderly",
@@ -440,30 +436,18 @@
         },
         {
           "item": "Benztropine (Cogentin)",
-          "route": "PO, IM, IV",
+          "route": "PO",
           "indication": "Anticholinergic for DIP; particularly useful for tremor-predominant symptoms",
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.5 mg daily",
-                "orderSentence": "Benztropine (Cogentin) 0.5 mg daily PO"
-              },
-              {
-                "text": "0.5 mg BID",
-                "orderSentence": "Benztropine (Cogentin) 0.5 mg BID PO"
-              },
-              {
-                "text": "1 mg BID",
-                "orderSentence": "Benztropine (Cogentin) 1 mg BID PO"
-              },
-              {
-                "text": "2 mg BID",
-                "orderSentence": "Benztropine (Cogentin) 2 mg BID PO"
+                "text": "0.5 mg",
+                "orderSentence": "Benztropine (Cogentin) 0.5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 0.5 mg daily; titrate by 0.5 mg q5-7d; usual range 1-4 mg/day in divided doses; max 6 mg/day",
-            "orderSentence": "Benztropine (Cogentin) 0.5 mg daily PO"
+            "orderSentence": "Benztropine (Cogentin) 0.5 mg PO"
           },
           "contraindications": "Narrow-angle glaucoma; GI obstruction; urinary retention; dementia; elderly (relative - prefer amantadine)",
           "monitoring": "Anticholinergic effects (dry mouth, constipation, urinary retention, confusion, blurred vision), cognitive impairment in elderly, tachycardia",
@@ -473,27 +457,41 @@
           "ICU": "-"
         },
         {
+          "item": "Benztropine (Cogentin) - acute",
+          "route": "IM, IV",
+          "indication": "Acute anticholinergic relief for severe DIP or dystonic reaction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Benztropine (Cogentin) - acute 1 mg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "1-2 mg IM or IV for acute relief; may repeat in 30 min; transition to oral maintenance",
+            "orderSentence": "Benztropine (Cogentin) - acute 1 mg IM"
+          },
+          "contraindications": "Narrow-angle glaucoma; GI obstruction; urinary retention; dementia",
+          "monitoring": "Anticholinergic effects, sedation, heart rate",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
           "item": "Trihexyphenidyl (Artane)",
           "route": "PO",
           "indication": "Anticholinergic for DIP; alternative to benztropine",
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg daily",
-                "orderSentence": "Trihexyphenidyl (Artane) 1 mg daily PO"
-              },
-              {
-                "text": "2 mg TID",
-                "orderSentence": "Trihexyphenidyl (Artane) 2 mg TID PO"
-              },
-              {
-                "text": "5 mg TID",
-                "orderSentence": "Trihexyphenidyl (Artane) 5 mg TID PO"
+                "text": "1 mg",
+                "orderSentence": "Trihexyphenidyl (Artane) 1 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 1 mg daily; increase by 2 mg q3-5d; usual range 6-10 mg/day in divided doses; max 15 mg/day",
-            "orderSentence": "Trihexyphenidyl (Artane) 1 mg daily PO"
+            "orderSentence": "Trihexyphenidyl (Artane) 1 mg PO"
           },
           "contraindications": "Narrow-angle glaucoma; GI obstruction; urinary retention; dementia; elderly (relative)",
           "monitoring": "Anticholinergic effects (dry mouth, constipation, urinary retention, confusion), cognitive impairment, tachycardia",
@@ -503,33 +501,47 @@
           "ICU": "-"
         },
         {
-          "item": "Diphenhydramine (Benadryl)",
-          "route": "PO, IV, IM",
+          "item": "Diphenhydramine (Benadryl) IV/IM",
+          "route": "IV, IM",
           "indication": "Acute symptomatic relief of DIP in ED/inpatient; mild anticholinergic properties",
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg IV PRN",
-                "orderSentence": "Diphenhydramine (Benadryl) 25 mg IV PRN PO, IV, IM"
-              },
-              {
-                "text": "50 mg IV PRN",
-                "orderSentence": "Diphenhydramine (Benadryl) 50 mg IV PRN PO, IV, IM"
-              },
-              {
-                "text": "25 mg PO TID",
-                "orderSentence": "Diphenhydramine (Benadryl) 25 mg PO TID PO, IV, IM"
+                "text": "25 mg",
+                "orderSentence": "Diphenhydramine (Benadryl) IV/IM 25 mg IV"
               }
             ],
-            "route": "PO, IV, IM",
-            "instructions": "25-50 mg IV/IM for acute relief; 25-50 mg PO q6-8h for ongoing symptoms; max 300 mg/day",
-            "orderSentence": "Diphenhydramine (Benadryl) 25 mg IV PRN PO, IV, IM"
+            "route": "IV",
+            "instructions": "25-50 mg IV/IM for acute relief; may repeat q6-8h; max 300 mg/day",
+            "orderSentence": "Diphenhydramine (Benadryl) IV/IM 25 mg IV"
           },
           "contraindications": "Narrow-angle glaucoma; urinary retention",
           "monitoring": "Sedation, anticholinergic effects, falls in elderly",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Diphenhydramine (Benadryl) PO",
+          "route": "PO",
+          "indication": "Mild symptomatic relief of DIP; oral maintenance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Diphenhydramine (Benadryl) PO 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg PO q6-8h for ongoing symptoms; max 300 mg/day",
+            "orderSentence": "Diphenhydramine (Benadryl) PO 25 mg PO"
+          },
+          "contraindications": "Narrow-angle glaucoma; urinary retention",
+          "monitoring": "Sedation, anticholinergic effects, falls in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
           "ICU": "-"
         }
       ],
@@ -541,25 +553,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg QHS",
-                "orderSentence": "Quetiapine (Seroquel) 25 mg QHS PO"
-              },
-              {
-                "text": "50 mg BID",
-                "orderSentence": "Quetiapine (Seroquel) 50 mg BID PO"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Quetiapine (Seroquel) 100 mg BID PO"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Quetiapine (Seroquel) 200 mg BID PO"
+                "text": "25 mg",
+                "orderSentence": "Quetiapine (Seroquel) 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25 mg QHS; titrate based on psychiatric response; usual range 150-800 mg/day; lowest effective dose to minimize EPS risk",
-            "orderSentence": "Quetiapine (Seroquel) 25 mg QHS PO"
+            "orderSentence": "Quetiapine (Seroquel) 25 mg PO"
           },
           "contraindications": "QT prolongation; severe hepatic impairment; concurrent use of strong CYP3A4 inhibitors",
           "monitoring": "Metabolic panel (glucose, lipids), weight, QTc, sedation, orthostatic BP",
@@ -575,25 +575,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "12.5 mg daily",
-                "orderSentence": "Clozapine (Clozaril) 12.5 mg daily PO"
-              },
-              {
-                "text": "25 mg BID",
-                "orderSentence": "Clozapine (Clozaril) 25 mg BID PO"
-              },
-              {
-                "text": "50 mg BID",
-                "orderSentence": "Clozapine (Clozaril) 50 mg BID PO"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Clozapine (Clozaril) 100 mg BID PO"
+                "text": "12.5 mg",
+                "orderSentence": "Clozapine (Clozaril) 12.5 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 12.5 mg daily; titrate by 25-50 mg/day q1-2wk; usual range 150-450 mg/day; max 900 mg/day",
-            "orderSentence": "Clozapine (Clozaril) 12.5 mg daily PO"
+            "instructions": "Start 12.5 mg daily; titrate by 25-50 mg/day q1-2wk; usual range 150-450 mg/day; max 900 mg/day; requires Clozapine REMS enrollment",
+            "orderSentence": "Clozapine (Clozaril) 12.5 mg PO"
           },
           "contraindications": "Prior agranulocytosis; severe neutropenia (ANC <500); uncontrolled seizures; severe cardiac disease; ileus",
           "monitoring": "REMS program required (Clozapine REMS); ANC weekly x 6 months, then biweekly x 6 months, then monthly; metabolic panel, weight, glucose, lipids; seizure risk (dose-dependent); myocarditis (first month)",
@@ -609,25 +597,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg daily",
-                "orderSentence": "Aripiprazole (Abilify) 2 mg daily PO"
-              },
-              {
-                "text": "5 mg daily",
-                "orderSentence": "Aripiprazole (Abilify) 5 mg daily PO"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Aripiprazole (Abilify) 10 mg daily PO"
-              },
-              {
-                "text": "15 mg daily",
-                "orderSentence": "Aripiprazole (Abilify) 15 mg daily PO"
+                "text": "2 mg",
+                "orderSentence": "Aripiprazole (Abilify) 2 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 2-5 mg daily; titrate based on response; usual range 10-15 mg/day; max 30 mg/day",
-            "orderSentence": "Aripiprazole (Abilify) 2 mg daily PO"
+            "orderSentence": "Aripiprazole (Abilify) 2 mg PO"
           },
           "contraindications": "Hypersensitivity; caution in elderly with dementia",
           "monitoring": "Metabolic panel, weight, akathisia (can paradoxically worsen), EPS monitoring",
@@ -643,21 +619,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.5 mg daily",
-                "orderSentence": "Brexpiprazole (Rexulti) 0.5 mg daily PO"
-              },
-              {
-                "text": "1 mg daily",
-                "orderSentence": "Brexpiprazole (Rexulti) 1 mg daily PO"
-              },
-              {
-                "text": "2 mg daily",
-                "orderSentence": "Brexpiprazole (Rexulti) 2 mg daily PO"
+                "text": "0.5 mg",
+                "orderSentence": "Brexpiprazole (Rexulti) 0.5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 0.5 mg daily; titrate to 1-2 mg daily; max 4 mg/day",
-            "orderSentence": "Brexpiprazole (Rexulti) 0.5 mg daily PO"
+            "orderSentence": "Brexpiprazole (Rexulti) 0.5 mg PO"
           },
           "contraindications": "Hypersensitivity; caution in elderly with dementia",
           "monitoring": "Metabolic panel, weight, EPS monitoring",
@@ -673,13 +641,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Reduce by 25% q1-2 weeks",
-                "orderSentence": "Pimozide dose reduction Reduce by 25% q1-2 weeks PO"
+                "text": "-",
+                "orderSentence": "Pimozide dose reduction - PO"
               }
             ],
             "route": "PO",
-            "instructions": "Gradual taper; do not discontinue abruptly; coordinate with psychiatry for alternative",
-            "orderSentence": "Pimozide dose reduction Reduce by 25% q1-2 weeks PO"
+            "instructions": "Reduce by 25% q1-2 weeks; do not discontinue abruptly; coordinate with psychiatry for alternative",
+            "orderSentence": "Pimozide dose reduction - PO"
           },
           "contraindications": "Active psychosis without alternative (coordinate with psychiatry)",
           "monitoring": "ECG (QTc prolongation), psychiatric status",
@@ -695,13 +663,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25/100 mg TID",
-                "orderSentence": "Levodopa/Carbidopa (Sinemet) 25/100 mg TID PO"
+                "text": "25/100 mg",
+                "orderSentence": "Levodopa/Carbidopa (Sinemet) 25/100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25/100 mg TID with meals; titrate by 25/100 mg q1-2 weeks; response suggests underlying PD",
-            "orderSentence": "Levodopa/Carbidopa (Sinemet) 25/100 mg TID PO"
+            "orderSentence": "Levodopa/Carbidopa (Sinemet) 25/100 mg PO"
           },
           "contraindications": "Narrow-angle glaucoma; concurrent non-selective MAOIs; active psychosis (relative - may worsen)",
           "monitoring": "Nausea, orthostatic hypotension, dyskinesia, hallucinations (especially if psychotic history); caution: may worsen psychosis",
@@ -712,30 +680,44 @@
         },
         {
           "item": "Ondansetron (Zofran)",
-          "route": "PO, IV",
-          "indication": "Non-dopaminergic antiemetic substitute when metoclopramide or prochlorperazine is causative agent",
+          "route": "IV",
+          "indication": "Non-dopaminergic antiemetic substitute for acute settings when metoclopramide or prochlorperazine is causative agent",
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg IV PRN",
-                "orderSentence": "Ondansetron (Zofran) 4 mg IV PRN PO, IV"
-              },
-              {
-                "text": "8 mg PO PRN",
-                "orderSentence": "Ondansetron (Zofran) 8 mg PO PRN PO, IV"
-              },
-              {
-                "text": "4 mg PO TID",
-                "orderSentence": "Ondansetron (Zofran) 4 mg PO TID PO, IV"
+                "text": "4 mg",
+                "orderSentence": "Ondansetron (Zofran) 4 mg IV"
               }
             ],
-            "route": "PO, IV",
-            "instructions": "4-8 mg PO/IV q8h PRN for nausea; max 24 mg/day",
-            "orderSentence": "Ondansetron (Zofran) 4 mg IV PRN PO, IV"
+            "route": "IV",
+            "instructions": "4-8 mg IV q8h PRN for nausea; max 24 mg/day",
+            "orderSentence": "Ondansetron (Zofran) 4 mg IV"
           },
           "contraindications": "QT prolongation; severe hepatic impairment (max 8 mg/day)",
           "monitoring": "QTc if risk factors, constipation",
           "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ondansetron (Zofran) PO",
+          "route": "PO",
+          "indication": "Non-dopaminergic antiemetic substitute for oral maintenance when dopaminergic antiemetic is causative agent",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron (Zofran) PO 4 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "4-8 mg PO q8h PRN for nausea; max 24 mg/day",
+            "orderSentence": "Ondansetron (Zofran) PO 4 mg PO"
+          },
+          "contraindications": "QT prolongation; severe hepatic impairment (max 8 mg/day)",
+          "monitoring": "QTc if risk factors, constipation",
+          "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
           "ICU": "-"
@@ -747,13 +729,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg TID",
-                "orderSentence": "Domperidone (Motilium) 10 mg TID PO"
+                "text": "10 mg",
+                "orderSentence": "Domperidone (Motilium) 10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "10 mg TID before meals; max 30 mg/day; not FDA-approved in US (available via compassionate use/international pharmacy)",
-            "orderSentence": "Domperidone (Motilium) 10 mg TID PO"
+            "orderSentence": "Domperidone (Motilium) 10 mg PO"
           },
           "contraindications": "QT prolongation; prolactinoma; GI bleeding or obstruction; hepatic impairment",
           "monitoring": "ECG before initiation and periodically; QTc must be <450 ms; electrolytes",
@@ -778,14 +760,14 @@
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "Pharmacy consult for comprehensive medication reconciliation to identify all potential dopamine-blocking agents including OTC medications",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "ROUTINE"
         },
         {
           "item": "Physical therapy for gait training, balance assessment, and fall prevention given parkinsonian motor impairment",
@@ -985,102 +967,102 @@
     {
       "recommendation": "DIP is the second most common cause of parkinsonism after idiopathic PD; occurs in 20-40% of patients on DRBAs",
       "evidenceLevel": "Class II, Level B",
-      "source": "Shin HW, Chung SJ. J Clin Neurol 2012"
+      "source": "Shin HW, Chung SJ. J Clin Neurol 2012 [PubMed: 22787491](https://pubmed.ncbi.nlm.nih.gov/22787491/)"
     },
     {
       "recommendation": "Symmetric parkinsonism and absence of rest tremor favor DIP over idiopathic PD",
       "evidenceLevel": "Class II, Level B",
-      "source": "Lopez-Sendon J et al. Expert Rev Neurother 2012"
+      "source": "Lopez-Sendon J et al. Expert Rev Neurother 2012 [PubMed: 23002938](https://pubmed.ncbi.nlm.nih.gov/23002938/)"
     },
     {
       "recommendation": "DaTscan (ioflupane I-123) effectively differentiates DIP from idiopathic PD with high sensitivity and specificity",
       "evidenceLevel": "Class I, Level A",
-      "source": "Brigo F et al. Parkinsonism Relat Disord 2014"
+      "source": "Brigo F et al. Parkinsonism Relat Disord 2014 [PubMed: 25258329](https://pubmed.ncbi.nlm.nih.gov/25258329/)"
     },
     {
       "recommendation": "Metoclopramide is the most common non-antipsychotic cause of DIP; FDA black box warning for prolonged use",
       "evidenceLevel": "Class II, Level B",
-      "source": "Avorn J et al. Ann Intern Med 1995"
+      "source": "Avorn J et al. Ann Intern Med 1995 [PubMed: 7872590](https://pubmed.ncbi.nlm.nih.gov/7872590/)"
     },
     {
       "recommendation": "Symptoms typically resolve within weeks to months after discontinuation of the causative agent",
       "evidenceLevel": "Class II, Level B",
-      "source": "Brigo F et al. J Neurol Sci 2014"
+      "source": "Brigo F et al. J Neurol Sci 2014 [PubMed: 25108809](https://pubmed.ncbi.nlm.nih.gov/25108809/)"
     },
     {
       "recommendation": "Approximately 10-15% of DIP patients have persistent parkinsonism after drug withdrawal suggesting unmasked underlying PD",
       "evidenceLevel": "Class II, Level B",
-      "source": "Burn DJ, Brooks DJ. Brain 1993"
+      "source": "Burn DJ, Brooks DJ. Brain 1993 [PubMed: 8461577](https://pubmed.ncbi.nlm.nih.gov/8461577/)"
     },
     {
       "recommendation": "DaTscan is normal in pure DIP but abnormal in patients with DIP unmasking subclinical PD",
       "evidenceLevel": "Class I, Level A",
-      "source": "Tinazzi M et al. Neurology 2009"
+      "source": "Tinazzi M et al. Neurology 2009 [PubMed: 19528516](https://pubmed.ncbi.nlm.nih.gov/19528516/)"
     },
     {
       "recommendation": "Amantadine provides symptomatic benefit for drug-induced parkinsonism without worsening psychosis",
       "evidenceLevel": "Class III, Level C",
-      "source": "Silver H, Geraisy N. J Clin Psychiatry 1995"
+      "source": "Silver H, Geraisy N. J Clin Psychiatry 1995 [PubMed: 7615484](https://pubmed.ncbi.nlm.nih.gov/7615484/)"
     },
     {
       "recommendation": "Anticholinergics (benztropine, trihexyphenidyl) are effective for DIP but limited by cognitive side effects especially in elderly",
       "evidenceLevel": "Class II, Level B",
-      "source": "Ward KM, Bhatt DL. Drug Saf 2018"
+      "source": "Ward KM, Citrome L. Ther Adv Psychopharmacol 2018 [PubMed: 30181862](https://pubmed.ncbi.nlm.nih.gov/30181862/)"
     },
     {
       "recommendation": "Quetiapine and clozapine have lowest EPS risk among antipsychotics and are preferred substitutes",
       "evidenceLevel": "Class I, Level A",
-      "source": "Leucht S et al. Lancet 2013"
+      "source": "Leucht S et al. Lancet 2013 [PubMed: 23810019](https://pubmed.ncbi.nlm.nih.gov/23810019/)"
     },
     {
       "recommendation": "Clozapine has the lowest risk of EPS among all antipsychotics but requires REMS monitoring for agranulocytosis",
       "evidenceLevel": "Class I, Level A",
-      "source": "Kane J et al. Arch Gen Psychiatry 1988"
+      "source": "Kane J et al. Arch Gen Psychiatry 1988 [PubMed: 3046553](https://pubmed.ncbi.nlm.nih.gov/3046553/)"
     },
     {
       "recommendation": "Risperidone produces dose-dependent EPS; higher doses (>6 mg/day) have EPS risk similar to typical antipsychotics",
       "evidenceLevel": "Class I, Level B",
-      "source": "Divac N et al. Psychiatr Danub 2014"
+      "source": "Divac N et al. Psychiatr Danub 2014 [PubMed: 25191777](https://pubmed.ncbi.nlm.nih.gov/25191777/)"
     },
     {
       "recommendation": "Calcium channel blockers (flunarizine, cinnarizine) are important causes of DIP outside the US",
       "evidenceLevel": "Class II, Level B",
-      "source": "Bondon-Guitton E et al. Fundam Clin Pharmacol 2011"
+      "source": "Bondon-Guitton E et al. Fundam Clin Pharmacol 2011 [PubMed: 20608992](https://pubmed.ncbi.nlm.nih.gov/20608992/)"
     },
     {
       "recommendation": "Valproate-induced parkinsonism is dose-related and typically reversible with dose reduction or discontinuation",
       "evidenceLevel": "Class III, Level C",
-      "source": "Armon C et al. Neurology 1996"
+      "source": "Armon C et al. Neurology 1996 [PubMed: 8710098](https://pubmed.ncbi.nlm.nih.gov/8710098/)"
     },
     {
       "recommendation": "MDS Clinical Diagnostic Criteria distinguish clinically established and probable PD from secondary causes including DIP",
       "evidenceLevel": "Class I, Level A",
-      "source": "Postuma RB et al. Mov Disord 2015"
+      "source": "Postuma RB et al. Mov Disord 2015 [PubMed: 26474316](https://pubmed.ncbi.nlm.nih.gov/26474316/)"
     },
     {
       "recommendation": "Olfactory testing helps distinguish DIP (normal) from idiopathic PD (impaired) as a supportive clinical tool",
       "evidenceLevel": "Class II, Level B",
-      "source": "Morley JF, Duda JE. Mov Disord 2010"
+      "source": "Morley JF, Duda JE. Mov Disord 2010 [PubMed: 20669302](https://pubmed.ncbi.nlm.nih.gov/20669302/)"
     },
     {
       "recommendation": "MIBG cardiac scintigraphy shows reduced uptake in PD but normal uptake in pure DIP",
       "evidenceLevel": "Class II, Level B",
-      "source": "Spiegel J et al. Mov Disord 2005"
+      "source": "Spiegel J et al. Mov Disord 2005 [PubMed: 15584032](https://pubmed.ncbi.nlm.nih.gov/15584032/)"
     },
     {
       "recommendation": "Ondansetron is a safe antiemetic alternative that does not block dopamine receptors and does not cause parkinsonism",
       "evidenceLevel": "Class I, Level A",
-      "source": "Kovac AL. Drugs 2000"
+      "source": "Kovac AL. Drugs 2000 [PubMed: 10776835](https://pubmed.ncbi.nlm.nih.gov/10776835/)"
     },
     {
       "recommendation": "Risk factors for DIP include female sex, older age, pre-existing brain injury, and higher DRBA doses",
       "evidenceLevel": "Class II, Level B",
-      "source": "Thanvi B, Treadwell S. Postgrad Med J 2009"
+      "source": "Thanvi B, Treadwell S. Postgrad Med J 2009 [PubMed: 19789195](https://pubmed.ncbi.nlm.nih.gov/19789195/)"
     },
     {
       "recommendation": "Domperidone does not significantly cross the blood-brain barrier and has minimal extrapyramidal side effects compared to metoclopramide",
       "evidenceLevel": "Class II, Level B",
-      "source": "Reddymasu SC et al. Expert Opin Drug Saf 2007"
+      "source": "Reddymasu SC et al. Expert Opin Drug Saf 2007 [PubMed: 17559511](https://pubmed.ncbi.nlm.nih.gov/17559511/)"
     },
     {
       "recommendation": "Serial clinical monitoring with UPDRS motor scores recommended to track DIP resolution and identify non-resolving cases requiring DaTscan",
@@ -1105,7 +1087,7 @@
       "ED": "URGENT",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "-"
+      "ICU": "URGENT"
     },
     {
       "item": "Gait and balance assessment",

@@ -22,11 +22,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| Chronic Migraine | [`chronic-migraine.md`](chronic-migraine.md) | `pending` | claude/tier2-plans | 2026-01-30 |
-| Low Pressure Headache / SIH | [`low-pressure-headache.md`](low-pressure-headache.md) | `pending` | claude/tier2-plans | 2026-01-30 |
-| Post-Concussion Syndrome | [`post-concussion-syndrome.md`](post-concussion-syndrome.md) | `pending` | claude/tier2-plans | 2026-01-30 |
-| Drug-Induced Parkinsonism | [`drug-induced-parkinsonism.md`](drug-induced-parkinsonism.md) | `pending` | claude/tier2-plans | 2026-01-30 |
-| Wilson's Disease | [`wilsons-disease.md`](wilsons-disease.md) | `pending` | claude/tier2-plans | 2026-01-30 |
+| Chronic Migraine | [`chronic-migraine.md`](chronic-migraine.md) | `completed` | claude/tier2-plans | 2026-01-30 |
+| Low Pressure Headache / SIH | [`low-pressure-headache.md`](low-pressure-headache.md) | `completed` | claude/tier2-plans | 2026-01-30 |
+| Post-Concussion Syndrome | [`post-concussion-syndrome.md`](post-concussion-syndrome.md) | `completed` | claude/tier2-plans | 2026-01-30 |
+| Drug-Induced Parkinsonism | [`drug-induced-parkinsonism.md`](drug-induced-parkinsonism.md) | `completed` | claude/tier2-plans | 2026-01-30 |
+| Wilson's Disease | [`wilsons-disease.md`](wilsons-disease.md) | `completed` | claude/tier2-plans | 2026-01-30 |
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Chronic Migraine"
 description: "Clinical decision support for chronic migraine diagnosis and management including preventive therapies, acute treatment optimization, and medication overuse screening"
-version: "1.0"
-setting: "ED, HOSP, OPD"
+version: "1.1"
+setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
   - headache
@@ -20,8 +20,9 @@ tags:
 
 # Chronic Migraine
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -79,7 +80,7 @@ SECTION A: ACTION ITEMS
 | TSH (CPT 84443) | Thyroid dysfunction can cause or worsen chronic headache | Normal (0.4-4.0 mIU/L) | - | ROUTINE | ROUTINE | - |
 | Magnesium (CPT 83735) | Low magnesium associated with increased migraine frequency; many patients deficient | ≥1.8 mg/dL | URGENT | ROUTINE | ROUTINE | - |
 | hCG (women of childbearing age) (CPT 84703) | Pregnancy status affects treatment selection (many preventives contraindicated) | Document status | STAT | STAT | ROUTINE | - |
-| LFTs (CPT 80076) | Baseline before topiramate, valproate; screen for hepatotoxicity from chronic analgesics | Normal | - | ROUTINE | ROUTINE | - |
+| LFTs (CPT 80076) | Baseline before topiramate, valproate; screen for hepatotoxicity from chronic analgesics | Normal | URGENT | ROUTINE | ROUTINE | - |
 
 ### 1B. Extended Workup (Second-line)
 
@@ -117,8 +118,8 @@ SECTION A: ACTION ITEMS
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 | MRI brain with and without contrast (CPT 70553) | If mass, infection, inflammation, or meningeal enhancement suspected | Rule out enhancing lesion | Contrast allergy, renal disease (eGFR <30) | - | ROUTINE | ROUTINE | - |
-| MRA head (CPT 70544) | Suspected vasculopathy; RCVS; dissection | Normal vasculature | Per MRI | URGENT | ROUTINE | ROUTINE | - |
-| MRV head (CPT 70546) | Suspected cerebral venous thrombosis; papilledema | Patent venous sinuses | Per MRI | URGENT | URGENT | ROUTINE | - |
+| MRA head (CPT 70544) | Suspected vasculopathy; RCVS; dissection | Normal vasculature | MRI-incompatible devices, contrast allergy if contrast-enhanced, renal disease (eGFR <30) | URGENT | ROUTINE | ROUTINE | - |
+| MRV head (CPT 70546) | Suspected cerebral venous thrombosis; papilledema | Patent venous sinuses | MRI-incompatible devices, contrast allergy if contrast-enhanced, renal disease (eGFR <30) | URGENT | URGENT | ROUTINE | - |
 | CT head without contrast (CPT 70450) | Thunderclap headache; worst headache of life; focal deficits; altered mental status | Rule out hemorrhage, mass | None in emergency | STAT | URGENT | - | - |
 | ECG (CPT 93000) | Prior to DHE, triptan, or QT-prolonging medications | Normal QTc (<470 ms female, <450 ms male), no ischemia | None | STAT | STAT | ROUTINE | - |
 
@@ -126,7 +127,7 @@ SECTION A: ACTION ITEMS
 
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI cervical spine (CPT 72141) | Cervicogenic component suspected; occipital neuralgia | Rule out Chiari, structural pathology | Per MRI | - | EXT | ROUTINE | - |
+| MRI cervical spine (CPT 72141) | Cervicogenic component suspected; occipital neuralgia | Rule out Chiari, structural pathology | MRI-incompatible devices | - | EXT | ROUTINE | - |
 | Polysomnography (CPT 95810) | Suspected sleep apnea contributing to chronic headache | AHI <5 (normal) | None | - | - | ROUTINE | - |
 | Ophthalmologic exam with fundoscopy | Papilledema suspected; visual symptoms | Normal optic disc; no papilledema | None | URGENT | URGENT | ROUTINE | - |
 
@@ -157,17 +158,19 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Ibuprofen | PO | Mild-moderate migraine attack | 400-800 mg :: PO :: once :: 400-800 mg PO once; limit to ≤14 days/month; max 2400 mg/day | Renal disease, GI bleeding, aspirin-exacerbated respiratory disease | Renal function; medication days/month | - | ROUTINE | ROUTINE | - |
-| Naproxen sodium | PO | Mild-moderate migraine attack | 500-825 mg :: PO :: once :: 500-825 mg PO once; limit to ≤14 days/month | Same as ibuprofen | Renal function; medication days/month | - | ROUTINE | ROUTINE | - |
+| Naproxen sodium | PO | Mild-moderate migraine attack | 500-825 mg :: PO :: once :: 500-825 mg PO once; limit to ≤14 days/month | Renal disease, GI bleeding, aspirin-exacerbated respiratory disease | Renal function; medication days/month | - | ROUTINE | ROUTINE | - |
 | Acetaminophen | PO | Mild attack; NSAID contraindicated | 1000 mg :: PO :: once :: 1000 mg PO once; max 3000 mg/day; limit to ≤14 days/month | Hepatic disease, chronic alcohol use | LFTs if frequent use; medication days/month | - | ROUTINE | ROUTINE | - |
 
 ### 3B. Acute Treatment - Moderate-Severe Attacks (Triptans and Gepants)
 
+**CAUTION:** Serotonin syndrome risk when combining triptans with SNRIs (venlafaxine), SSRIs, or other serotonergic agents. Monitor for agitation, hyperthermia, clonus, hyperreflexia. Risk is generally low but clinically relevant.
+
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Sumatriptan SC | SC | Moderate-severe migraine; rapid relief needed | 6 mg :: SC :: once :: 6 mg SC once; may repeat in 2h; max 12 mg/24h; limit ≤9 days/month | CAD, stroke/TIA, uncontrolled HTN, hemiplegic migraine, MAOIs, pregnancy | Chest tightness, BP; medication days/month | STAT | STAT | - | - |
-| Sumatriptan PO | PO | Moderate-severe migraine | 50-100 mg :: PO :: once :: 50-100 mg PO once; may repeat in 2h; max 200 mg/24h; limit ≤9 days/month | Same as SC formulation | Same; medication days/month | - | ROUTINE | ROUTINE | - |
-| Rizatriptan | PO | Moderate-severe migraine | 5-10 mg :: PO :: once :: 5-10 mg PO (ODT available); may repeat in 2h; max 30 mg/24h; limit ≤9 days/month; use 5 mg if on propranolol | Same as sumatriptan; reduce dose with propranolol | Same | - | ROUTINE | ROUTINE | - |
-| Eletriptan | PO | Moderate-severe migraine; high efficacy | 40 mg :: PO :: once :: 40 mg PO once; may repeat in 2h; max 80 mg/24h; limit ≤9 days/month | Same as sumatriptan; severe hepatic impairment | Same | - | ROUTINE | ROUTINE | - |
+| Sumatriptan SC | SC | Moderate-severe migraine; rapid relief needed | 6 mg :: SC :: once :: 6 mg SC once; may repeat in 2h; max 12 mg/24h; limit ≤9 days/month | CAD, stroke/TIA, uncontrolled HTN, hemiplegic migraine, MAOIs, pregnancy | Chest tightness, BP; medication days/month; serotonin syndrome signs if on SNRI/SSRI | STAT | STAT | - | - |
+| Sumatriptan PO | PO | Moderate-severe migraine | 50-100 mg :: PO :: once :: 50-100 mg PO once; may repeat in 2h; max 200 mg/24h; limit ≤9 days/month | CAD, stroke/TIA, uncontrolled HTN, hemiplegic migraine, MAOIs, pregnancy | Chest tightness, BP; medication days/month; serotonin syndrome signs if on SNRI/SSRI | - | ROUTINE | ROUTINE | - |
+| Rizatriptan | PO | Moderate-severe migraine | 5-10 mg :: PO :: once :: 5-10 mg PO (ODT available); may repeat in 2h; max 30 mg/24h; limit ≤9 days/month; use 5 mg if on propranolol | CAD, stroke/TIA, uncontrolled HTN, hemiplegic migraine, MAOIs, pregnancy; reduce dose with propranolol | Chest tightness, BP; medication days/month; serotonin syndrome signs if on SNRI/SSRI | - | ROUTINE | ROUTINE | - |
+| Eletriptan | PO | Moderate-severe migraine; high efficacy | 40 mg :: PO :: once :: 40 mg PO once; may repeat in 2h; max 80 mg/24h; limit ≤9 days/month | CAD, stroke/TIA, uncontrolled HTN, hemiplegic migraine, MAOIs, pregnancy; severe hepatic impairment | Chest tightness, BP; medication days/month; serotonin syndrome signs if on SNRI/SSRI | - | ROUTINE | ROUTINE | - |
 | Ubrogepant | PO | Moderate-severe migraine; CV contraindications to triptans; lower MOH risk | 50-100 mg :: PO :: once :: 50-100 mg PO once; may repeat in 2h; max 200 mg/24h | Strong CYP3A4 inhibitors; severe hepatic/renal impairment | LFTs periodically; may have lower MOH risk | - | ROUTINE | ROUTINE | - |
 | Rimegepant (acute) | PO | Moderate-severe migraine; dual acute/preventive use; lower MOH risk | 75 mg :: PO :: once :: 75 mg PO ODT once daily PRN; do not exceed 1 dose/day | Strong CYP3A4 inhibitors; severe hepatic impairment | LFTs periodically; may have lower MOH risk | - | ROUTINE | ROUTINE | - |
 | Zavegepant nasal | IN | Moderate-severe migraine; need non-oral route | 10 mg :: IN :: once :: 10 mg intranasal once; do not repeat in 24h | Hypersensitivity | Nasal irritation; LFTs periodically | - | ROUTINE | ROUTINE | - |
@@ -193,10 +196,10 @@ SECTION A: ACTION ITEMS
 | Topiramate | PO | First-line oral preventive; Level A evidence; weight-neutral/loss | 25 mg :: PO :: daily :: Start 25 mg QHS; increase by 25 mg/week; target 50-100 mg BID; max 200 mg/day | Baseline BMP (bicarbonate), pregnancy test | Nephrolithiasis, pregnancy (teratogen - cleft palate), metabolic acidosis, glaucoma (acute angle-closure) | Bicarbonate q3-6mo, cognitive effects, paresthesias, weight, renal function | - | ROUTINE | ROUTINE | - |
 | Amitriptyline | PO | First-line; comorbid insomnia, depression, or tension-type features | 10-25 mg :: PO :: QHS :: Start 10-25 mg QHS; increase by 10-25 mg q1-2 weeks; target 50-150 mg QHS | Baseline ECG if >40 years or cardiac history | Cardiac arrhythmia, recent MI, narrow-angle glaucoma, urinary retention, MAOIs | QTc (ECG), anticholinergic effects, weight, sedation | - | ROUTINE | ROUTINE | - |
 | Propranolol | PO | First-line; comorbid anxiety, hypertension, or essential tremor | 40 mg :: PO :: BID :: Start 40 mg BID; increase every 1-2 weeks; target 80-240 mg/day in divided doses | Baseline HR, BP | Asthma/severe COPD, bradycardia (<60), heart block (2nd/3rd degree), decompensated HF, depression (relative) | HR, BP, fatigue, exercise tolerance, depression screening | - | ROUTINE | ROUTINE | - |
-| Venlafaxine XR | PO | First-line; comorbid depression, anxiety, or fibromyalgia | 37.5 mg :: PO :: daily :: Start 37.5 mg daily x 1 week; increase to 75 mg daily; target 75-150 mg daily; max 225 mg/day | Baseline BP | Uncontrolled HTN, MAOIs, narrow-angle glaucoma | BP (dose-dependent HTN), serotonin syndrome, withdrawal if abrupt discontinuation | - | ROUTINE | ROUTINE | - |
+| Venlafaxine XR | PO | First-line; comorbid depression, anxiety, or fibromyalgia | 37.5 mg :: PO :: daily :: Start 37.5 mg daily x 1 week; increase to 75 mg daily; target 75-150 mg daily; max 225 mg/day | Baseline BP | Uncontrolled HTN, MAOIs, narrow-angle glaucoma; serotonin syndrome risk with triptans (monitor closely) | BP (dose-dependent HTN), serotonin syndrome signs (agitation, hyperthermia, clonus), withdrawal if abrupt discontinuation | - | ROUTINE | ROUTINE | - |
 | Valproate/Divalproex | PO | First-line; Level A evidence; may benefit comorbid bipolar disorder | 250 mg :: PO :: BID :: Start 250 mg BID or 500 mg ER QHS; increase to 500-1000 mg/day; max 1500 mg/day | Baseline LFTs, CBC, pregnancy test (mandatory) | Pregnancy (neural tube defects - ABSOLUTE), hepatic disease, mitochondrial disease, pancreatitis | LFTs, ammonia, CBC, weight q3-6mo; mandatory contraception counseling in women | - | ROUTINE | ROUTINE | - |
 | Candesartan | PO | First-line; comorbid hypertension; Level B evidence | 8 mg :: PO :: daily :: Start 8 mg daily; increase to 16 mg daily after 4 weeks | Baseline BMP, BP | Pregnancy, bilateral renal artery stenosis, hyperkalemia | BP, potassium, renal function | - | - | ROUTINE | - |
-| Metoprolol succinate | PO | Alternative beta-blocker; comorbid hypertension | 25-50 mg :: PO :: daily :: Start 25-50 mg daily; target 100-200 mg daily | Baseline HR, BP | Same as propranolol | HR, BP, fatigue | - | ROUTINE | ROUTINE | - |
+| Metoprolol succinate | PO | Alternative beta-blocker; comorbid hypertension | 25-50 mg :: PO :: daily :: Start 25-50 mg daily; target 100-200 mg daily | Baseline HR, BP | Asthma/severe COPD, bradycardia (<60), heart block (2nd/3rd degree), decompensated HF, depression (relative) | HR, BP, fatigue | - | ROUTINE | ROUTINE | - |
 
 ### 3E. Preventive Therapies - CGRP Monoclonal Antibodies
 
@@ -229,7 +232,7 @@ SECTION A: ACTION ITEMS
 | Magnesium oxide | PO | Adjunctive preventive; Level B evidence; low side effect profile | 400-600 mg :: PO :: daily :: 400-600 mg PO daily; use chelated form (glycinate or citrate) if GI intolerance | None | Renal failure (CrCl <30) | Diarrhea (dose-limiting); check serum Mg if symptoms | - | ROUTINE | ROUTINE | - |
 | Riboflavin (Vitamin B2) | PO | Adjunctive preventive; Level B evidence; nutraceutical | 400 mg :: PO :: daily :: 400 mg PO daily; may take 3 months for full effect | None | None significant | Bright yellow urine (benign); minimal side effects | - | - | ROUTINE | - |
 | Coenzyme Q10 (CoQ10) | PO | Adjunctive preventive; Level C evidence; nutraceutical | 100 mg :: PO :: TID :: 100 mg PO TID (300 mg/day total); may take 3 months for full effect | None | Caution with warfarin (may reduce INR) | GI upset; monitor INR if on warfarin | - | - | ROUTINE | - |
-| Butterbur (Petasites) | PO | Preventive; Level A evidence (but safety concerns limit use) | 75 mg :: PO :: BID :: 75 mg PO BID of PA-free extract only; NOT recommended without PA-free verification | Verify PA-free (pyrrolizidine alkaloid-free) extract | Hepatotoxicity risk with non-PA-free products; ragweed allergy; pregnancy | LFTs if prolonged use; USE WITH CAUTION - AAN withdrew recommendation due to safety concerns | - | - | EXT | - |
+| Butterbur (Petasites) | PO | Preventive; Level A evidence (AAN recommendation withdrawn due to hepatotoxicity concerns - use with caution) | 75 mg :: PO :: BID :: 75 mg PO BID of PA-free extract only; NOT recommended without PA-free verification | Verify PA-free (pyrrolizidine alkaloid-free) extract | Hepatotoxicity risk with non-PA-free products; ragweed allergy; pregnancy | LFTs if prolonged use; USE WITH CAUTION - AAN withdrew recommendation due to safety concerns | - | - | EXT | - |
 
 ---
 
@@ -333,30 +336,30 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| ICHD-3 criteria for chronic migraine (1.3) | Expert Consensus | Headache Classification Committee of the International Headache Society. Cephalalgia 2018;38(1):1-211 |
-| Topiramate effective for chronic migraine prevention | Class I, Level A | Silberstein SD et al. Headache 2007;47(2):170-180 |
-| OnabotulinumtoxinA for chronic migraine (PREEMPT trial) | Class I, Level A | Dodick DW et al. Headache 2010;50(6):921-936 |
-| OnabotulinumtoxinA PREEMPT-2 results | Class I, Level A | Aurora SK et al. Cephalalgia 2010;30(7):804-814 |
-| Erenumab for chronic migraine prevention | Class I, Level A | Tepper SJ et al. Lancet Neurol 2017;16(6):425-434 |
-| Fremanezumab for chronic migraine (HALO-CM) | Class I, Level A | Silberstein SD et al. N Engl J Med 2017;377(22):2113-2122 |
-| Galcanezumab for chronic migraine (REGAIN) | Class I, Level A | Detke HC et al. Neurology 2018;91(24):e2211-e2221 |
-| Eptinezumab for chronic migraine (PROMISE-2) | Class I, Level A | Lipton RB et al. Neurology 2020;94(13):e1365-e1377 |
-| Atogepant for chronic migraine prevention (PROGRESS) | Class I, Level A | Pozo-Rosich P et al. Lancet 2023;402(10404):775-785 |
-| Rimegepant for migraine prevention | Class I, Level A | Croop R et al. Lancet 2021;397(10268):51-60 |
-| AAN/AHS practice guideline update on migraine prevention | Expert Consensus | Silberstein SD et al. Neurology 2012;78(17):1337-1345 |
-| AHS consensus statement on CGRP mAbs in migraine | Expert Consensus | American Headache Society. Headache 2019;59(1):1-18 |
-| Behavioral treatments for migraine (biofeedback, CBT, relaxation) | Class I, Level A | Penzien DB et al. Neurology 2005;64(10):2010-2015 |
-| Prochlorperazine/metoclopramide for acute migraine | Class I, Level A | Friedman BW et al. Ann Emerg Med 2008;52(4):399-406 |
-| Dexamethasone reduces migraine recurrence | Class I, Level A | Singh A et al. Acad Emerg Med 2008;15(12):1223-1233 |
-| DHE for refractory status migrainosus | Class II, Level B | Raskin NH. Neurology 1986;36(7):995-997 |
-| Riboflavin for migraine prevention | Class II, Level B | Schoenen J et al. Neurology 1998;50(2):466-470 |
-| Magnesium for migraine prevention | Class II, Level B | Peikert A et al. Cephalalgia 1996;16(4):257-263 |
-| Ubrogepant for acute migraine (ACHIEVE-I and ACHIEVE-II) | Class I, Level A | Dodick DW et al. JAMA 2019;322(24):2489-2496 |
-| Acupuncture for migraine prevention (Cochrane review) | Class I, Level A | Linde K et al. Cochrane Database Syst Rev 2016;(6):CD001218 |
-| Beta-blockers (propranolol) for migraine prevention | Class I, Level A | Linde K et al. Cochrane Database Syst Rev 2004;(2):CD003225 |
-| Medication overuse headache criteria and management | Expert Consensus | Diener HC et al. Nat Rev Neurol 2016;12(10):575-583 |
-| Candesartan for migraine prevention | Class II, Level B | Stovner LJ et al. JAMA 2014;311(11):1091-1099 |
-| Neuromodulation devices for migraine (sTMS, eTNS, nVNS) | Class II, Level B | Starling AJ et al. Headache 2018;58(S1):187-196 |
+| ICHD-3 criteria for chronic migraine (1.3) | Expert Consensus | Headache Classification Committee of the International Headache Society. Cephalalgia 2018;38(1):1-211 [PubMed](https://pubmed.ncbi.nlm.nih.gov/29368949/) |
+| Topiramate effective for chronic migraine prevention | Class I, Level A | Silberstein SD et al. Headache 2007;47(2):170-180 [PubMed](https://pubmed.ncbi.nlm.nih.gov/17300356/) |
+| OnabotulinumtoxinA for chronic migraine (PREEMPT trial) | Class I, Level A | Dodick DW et al. Headache 2010;50(6):921-936 [PubMed](https://pubmed.ncbi.nlm.nih.gov/20487038/) |
+| OnabotulinumtoxinA PREEMPT-2 results | Class I, Level A | Aurora SK et al. Cephalalgia 2010;30(7):804-814 [PubMed](https://pubmed.ncbi.nlm.nih.gov/20647171/) |
+| Erenumab for chronic migraine prevention | Class I, Level A | Tepper SJ et al. Lancet Neurol 2017;16(6):425-434 [PubMed](https://pubmed.ncbi.nlm.nih.gov/28460892/) |
+| Fremanezumab for chronic migraine (HALO-CM) | Class I, Level A | Silberstein SD et al. N Engl J Med 2017;377(22):2113-2122 [PubMed](https://pubmed.ncbi.nlm.nih.gov/29171818/) |
+| Galcanezumab for chronic migraine (REGAIN) | Class I, Level A | Detke HC et al. Neurology 2018;91(24):e2211-e2221 [PubMed](https://pubmed.ncbi.nlm.nih.gov/30446596/) |
+| Eptinezumab for chronic migraine (PROMISE-2) | Class I, Level A | Lipton RB et al. Neurology 2020;94(13):e1365-e1377 [PubMed](https://pubmed.ncbi.nlm.nih.gov/32209650/) |
+| Atogepant for chronic migraine prevention (PROGRESS) | Class I, Level A | Pozo-Rosich P et al. Lancet 2023;402(10404):775-785 [PubMed](https://pubmed.ncbi.nlm.nih.gov/37478885/) |
+| Rimegepant for migraine prevention | Class I, Level A | Croop R et al. Lancet 2021;397(10268):51-60 [PubMed](https://pubmed.ncbi.nlm.nih.gov/33338437/) |
+| AAN/AHS practice guideline update on migraine prevention | Expert Consensus | Silberstein SD et al. Neurology 2012;78(17):1337-1345 [PubMed](https://pubmed.ncbi.nlm.nih.gov/22529202/) |
+| AHS consensus statement on CGRP mAbs in migraine | Expert Consensus | American Headache Society. Headache 2019;59(1):1-18 [PubMed](https://pubmed.ncbi.nlm.nih.gov/30536394/) |
+| Behavioral treatments for migraine (biofeedback, CBT, relaxation) | Class I, Level A | Penzien DB et al. Neurology 2005;64(10):2010-2015 [PubMed](https://pubmed.ncbi.nlm.nih.gov/15929764/) |
+| Prochlorperazine/metoclopramide for acute migraine | Class I, Level A | Friedman BW et al. Ann Emerg Med 2008;52(4):399-406 [PubMed](https://pubmed.ncbi.nlm.nih.gov/18006188/) |
+| Dexamethasone reduces migraine recurrence | Class I, Level A | Singh A et al. Acad Emerg Med 2008;15(12):1223-1233 [PubMed](https://pubmed.ncbi.nlm.nih.gov/18976336/) |
+| DHE for refractory status migrainosus | Class II, Level B | Raskin NH. Neurology 1986;36(7):995-997 [PubMed](https://pubmed.ncbi.nlm.nih.gov/3520384/) |
+| Riboflavin for migraine prevention | Class II, Level B | Schoenen J et al. Neurology 1998;50(2):466-470 [PubMed](https://pubmed.ncbi.nlm.nih.gov/9484373/) |
+| Magnesium for migraine prevention | Class II, Level B | Peikert A et al. Cephalalgia 1996;16(4):257-263 [PubMed](https://pubmed.ncbi.nlm.nih.gov/8792038/) |
+| Ubrogepant for acute migraine (ACHIEVE-I and ACHIEVE-II) | Class I, Level A | Dodick DW et al. JAMA 2019;322(24):2489-2496 [PubMed](https://pubmed.ncbi.nlm.nih.gov/31860047/) |
+| Acupuncture for migraine prevention (Cochrane review) | Class I, Level A | Linde K et al. Cochrane Database Syst Rev 2016;(6):CD001218 [PubMed](https://pubmed.ncbi.nlm.nih.gov/27351677/) |
+| Beta-blockers (propranolol) for migraine prevention | Class I, Level A | Linde K et al. Cochrane Database Syst Rev 2004;(2):CD003225 [PubMed](https://pubmed.ncbi.nlm.nih.gov/15106196/) |
+| Medication overuse headache criteria and management | Expert Consensus | Diener HC et al. Nat Rev Neurol 2016;12(10):575-583 [PubMed](https://pubmed.ncbi.nlm.nih.gov/27615418/) |
+| Candesartan for migraine prevention | Class II, Level B | Stovner LJ et al. JAMA 2014;311(11):1091-1099 [PubMed](https://pubmed.ncbi.nlm.nih.gov/24643616/) |
+| Neuromodulation devices for migraine (sTMS, eTNS, nVNS) | Class II, Level B | Starling AJ et al. Headache 2018;58(S1):187-196 [PubMed](https://pubmed.ncbi.nlm.nih.gov/29527677/) |
 
 ---
 
@@ -376,10 +379,23 @@ SECTION B: REFERENCE (Expand as Needed)
 - Address comorbidities: depression (50%), anxiety (50%), sleep disorders (40%), obesity - treatment of comorbidities may improve headache
 - Pregnancy planning requires careful medication review: discontinue teratogens (topiramate, valproate), gepants; CGRP mAbs should be stopped (limited safety data); consider nerve blocks, magnesium, biofeedback
 - Goal of treatment: reduce headache frequency by ≥50%, reduce disability (MIDAS/HIT-6), optimize acute treatment, minimize medication overuse, improve quality of life
+- **Serotonin syndrome risk:** When combining triptans with SNRIs (venlafaxine) or SSRIs, monitor for agitation, hyperthermia, clonus, hyperreflexia, and diaphoresis; risk is generally low but clinically relevant per FDA advisory
 
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Expanded all cross-references to standalone content per C1/C2/C3/C4 (naproxen, sumatriptan PO, rizatriptan, eletriptan, metoprolol contraindications; MRA/MRV contraindications)
+- Added ICU to frontmatter setting field for consistency with table columns per S1
+- Added ECG OPD coverage (ROUTINE) for outpatient triptan/preventive initiation per S2/R3
+- Added LFTs ED coverage (URGENT) for status migrainosus patients needing IV valproate per R7
+- Added serotonin syndrome warning to Section 3B header and individual triptan monitoring fields per R4
+- Added serotonin syndrome interaction note to venlafaxine XR entry in Section 3D per R4
+- Added serotonin syndrome note to Clinical Decision Support Notes per R4
+- Updated butterbur indication text to explicitly note AAN recommendation withdrawal per M3
+- Added PubMed citation links to all 24 references in Section 8 per R5
+- Version incremented from 1.0 to 1.1
 
 **v1.0 (January 30, 2026)**
 - Initial template creation for Chronic Migraine

@@ -1,7 +1,7 @@
 {
   "id": "low-pressure-headache",
   "title": "Low Pressure Headache / Spontaneous Intracranial Hypotension",
-  "version": "1.0",
+  "version": "1.1",
   "icd10": [
     "** G96.00 (Cerebrospinal fluid leak",
     "unspecified)",
@@ -31,7 +31,7 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "CMP (CPT 80053)",
@@ -40,7 +40,7 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "Coagulation studies (PT/INR, aPTT) (CPT 85610, 85730)",
@@ -49,7 +49,7 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "ESR (CPT 85652) / CRP (CPT 86140)",
@@ -58,7 +58,7 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "Pregnancy test (beta-hCG) (CPT 84703)",
@@ -67,7 +67,7 @@
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "STAT"
         }
       ],
       "Extended Workup": [
@@ -87,7 +87,7 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "Blood cultures (CPT 87040)",
@@ -96,7 +96,7 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "Connective tissue markers (if recurrent SIH)",
@@ -125,7 +125,7 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "CT cisternography with intrathecal contrast",
@@ -145,7 +145,7 @@
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "Cell count (tubes 1 and 4) (CPT 89051)",
@@ -154,7 +154,7 @@
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "Protein (CPT 84157)",
@@ -163,7 +163,7 @@
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "Glucose with serum glucose (CPT 82945)",
@@ -172,7 +172,7 @@
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "Gram stain and culture (CPT 87205, 87070)",
@@ -181,7 +181,7 @@
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "RBC count (CPT 89051)",
@@ -190,7 +190,7 @@
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         }
       ]
     },
@@ -204,7 +204,7 @@
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "CT head without contrast (CPT 70450)",
@@ -214,7 +214,7 @@
           "ED": "STAT",
           "HOSP": "URGENT",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "STAT"
         }
       ],
       "Extended": [
@@ -314,7 +314,7 @@
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "STAT"
         },
         {
           "item": "Caffeine sodium benzoate IV",
@@ -336,7 +336,7 @@
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "Caffeine oral",
@@ -345,13 +345,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "200-300 mg q6h PRN",
-                "orderSentence": "Caffeine oral 200-300 mg q6h PRN PO"
+                "text": "200 mg q6h",
+                "orderSentence": "Caffeine oral 200 mg q6h PO"
               }
             ],
             "route": "PO",
             "instructions": "200-300 mg PO q6h (coffee ~100 mg/cup); max 900 mg/day; adjunct to other measures",
-            "orderSentence": "Caffeine oral 200-300 mg q6h PRN PO"
+            "orderSentence": "Caffeine oral 200 mg q6h PO"
           },
           "contraindications": "Cardiac arrhythmia, severe anxiety, insomnia",
           "monitoring": "Heart rate, sleep quality, anxiety",
@@ -367,20 +367,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Flat or Trendelenburg position for 24-48 hours initially",
-                "orderSentence": "Strict bed rest (Trendelenburg) Flat or Trendelenburg position for 24-48 hours initially -"
+                "text": "Flat or Trendelenburg position",
+                "orderSentence": "Strict bed rest (Trendelenburg) Flat or Trendelenburg position -"
               }
             ],
             "route": "-",
-            "instructions": "Strict bed rest in supine or slight Trendelenburg (10-15 degrees); allow bathroom privileges only",
-            "orderSentence": "Strict bed rest (Trendelenburg) Flat or Trendelenburg position for 24-48 hours initially -"
+            "instructions": "Strict bed rest in supine or slight Trendelenburg (10-15 degrees) for 24-48 hours initially; allow bathroom privileges only",
+            "orderSentence": "Strict bed rest (Trendelenburg) Flat or Trendelenburg position -"
           },
           "contraindications": "DVT risk with prolonged immobility",
           "monitoring": "DVT prophylaxis, skin integrity",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "STAT"
         },
         {
           "item": "Abdominal binder",
@@ -389,13 +389,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Apply snugly around abdomen",
-                "orderSentence": "Abdominal binder Apply snugly around abdomen -"
+                "text": "Apply snugly",
+                "orderSentence": "Abdominal binder Apply snugly -"
               }
             ],
             "route": "-",
             "instructions": "Apply abdominal binder continuously while upright; may improve symptoms by increasing epidural pressure",
-            "orderSentence": "Abdominal binder Apply snugly around abdomen -"
+            "orderSentence": "Abdominal binder Apply snugly -"
           },
           "contraindications": "Abdominal surgery, respiratory compromise",
           "monitoring": "Respiratory comfort, skin integrity",
@@ -433,13 +433,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "400-600 mg q6h",
-                "orderSentence": "Ibuprofen 400-600 mg q6h PO"
+                "text": "400 mg q6h",
+                "orderSentence": "Ibuprofen 400 mg q6h PO"
               }
             ],
             "route": "PO",
             "instructions": "400-600 mg PO q6h PRN; max 2400 mg/day; take with food",
-            "orderSentence": "Ibuprofen 400-600 mg q6h PO"
+            "orderSentence": "Ibuprofen 400 mg q6h PO"
           },
           "contraindications": "Renal disease, GI bleeding, anticoagulation, aspirin allergy",
           "monitoring": "Renal function, GI symptoms",
@@ -455,13 +455,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4-8 mg q8h PRN",
-                "orderSentence": "Ondansetron 4-8 mg q8h PRN IV"
+                "text": "4 mg q8h PRN",
+                "orderSentence": "Ondansetron 4 mg q8h PRN IV"
               }
             ],
             "route": "IV",
             "instructions": "4-8 mg IV or PO q8h PRN nausea; max 24 mg/day",
-            "orderSentence": "Ondansetron 4-8 mg q8h PRN IV"
+            "orderSentence": "Ondansetron 4 mg q8h PRN IV"
           },
           "contraindications": "QT prolongation, severe hepatic impairment",
           "monitoring": "QTc if repeated dosing",
@@ -469,6 +469,50 @@
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
           "ICU": "-"
+        },
+        {
+          "item": "Docusate sodium",
+          "route": "PO",
+          "indication": "Prevent straining during bed rest which can worsen CSF leak",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Docusate sodium 100 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO BID; continue throughout bed rest period and until regular activity resumes",
+            "orderSentence": "Docusate sodium 100 mg BID PO"
+          },
+          "contraindications": "Intestinal obstruction",
+          "monitoring": "Bowel frequency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Enoxaparin",
+          "route": "SC",
+          "indication": "DVT prophylaxis during prolonged bed rest in hospitalized SIH patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Enoxaparin 40 mg daily SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily; begin within 24 hours of admission if on bed rest >48 hours; hold 12 hours before and after epidural blood patch",
+            "orderSentence": "Enoxaparin 40 mg daily SC"
+          },
+          "contraindications": "Active bleeding, HIT, severe renal impairment (CrCl <30: reduce to 30 mg daily), coagulopathy, within 12 hours of EBP",
+          "monitoring": "Platelet count q2-3 days; signs of bleeding; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
         }
       ],
       "Epidural Blood Patch (Primary Definitive Treatment)": [
@@ -531,8 +575,8 @@
             "instructions": "Repeat EBP 5-7 days after first attempt if symptoms persist; may use larger volume (up to 30 mL); consider targeted approach if not done initially",
             "orderSentence": "Repeat epidural blood patch 20-30 mL autologous blood Epidural"
           },
-          "contraindications": "Same as above",
-          "monitoring": "Same as above; consider leak localization if second EBP fails",
+          "contraindications": "Active systemic infection/bacteremia, local skin infection, coagulopathy (INR >1.5, platelets <50K), patient refusal",
+          "monitoring": "Vital signs during and 1h post-procedure; neurologic exam; consider leak localization if second EBP fails",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -547,13 +591,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "200-300 mg BID",
-                "orderSentence": "Theophylline 200-300 mg BID PO"
+                "text": "200 mg BID",
+                "orderSentence": "Theophylline 200 mg BID PO"
               }
             ],
             "route": "PO",
-            "instructions": "200-300 mg PO BID; target serum level 10-15 mcg/mL; slow titration; may take 1-2 weeks for effect",
-            "orderSentence": "Theophylline 200-300 mg BID PO"
+            "instructions": "Start 200 mg PO BID; titrate to 300 mg BID based on serum levels; target serum level 10-15 mcg/mL; may take 1-2 weeks for effect",
+            "orderSentence": "Theophylline 200 mg BID PO"
           },
           "contraindications": "Seizure disorder, cardiac arrhythmia, active peptic ulcer, hepatic impairment",
           "monitoring": "Theophylline level q2-4 weeks initially; heart rate; GI symptoms; drug interactions (CYP1A2)",
@@ -569,20 +613,20 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "200-300 mg/day",
-                "orderSentence": "Hydrocortisone 200-300 mg/day IV"
+                "text": "200 mg daily",
+                "orderSentence": "Hydrocortisone 200 mg daily IV"
               }
             ],
             "route": "IV",
             "instructions": "200 mg IV on day 1 then taper: 200 mg IV daily x 2d, 150 mg x 2d, 100 mg x 2d, then convert to oral; total course 7-14 days",
-            "orderSentence": "Hydrocortisone 200-300 mg/day IV"
+            "orderSentence": "Hydrocortisone 200 mg daily IV"
           },
           "contraindications": "Active untreated infection, uncontrolled diabetes",
           "monitoring": "Blood glucose q6h, blood pressure, electrolytes",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "Prednisone (oral taper)",
@@ -591,13 +635,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "60 mg daily x 5d taper",
-                "orderSentence": "Prednisone (oral taper) 60 mg daily x 5d taper PO"
+                "text": "60 mg daily",
+                "orderSentence": "Prednisone (oral taper) 60 mg daily PO"
               }
             ],
             "route": "PO",
             "instructions": "60 mg PO daily x 5 days, then taper by 10 mg every 3-5 days over 3-4 weeks",
-            "orderSentence": "Prednisone (oral taper) 60 mg daily x 5d taper PO"
+            "orderSentence": "Prednisone (oral taper) 60 mg daily PO"
           },
           "contraindications": "Active untreated infection, uncontrolled diabetes, GI bleeding",
           "monitoring": "Blood glucose, blood pressure, mood, GI symptoms",
@@ -615,18 +659,10 @@
               {
                 "text": "300 mg qHS",
                 "orderSentence": "Gabapentin 300 mg qHS PO"
-              },
-              {
-                "text": "300 mg TID",
-                "orderSentence": "Gabapentin 300 mg TID PO"
-              },
-              {
-                "text": "600 mg TID",
-                "orderSentence": "Gabapentin 600 mg TID PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 300 mg qHS; titrate by 300 mg q3-5d; target 900-1800 mg/day divided TID; max 3600 mg/day",
+            "instructions": "Start 300 mg PO qHS; titrate by 300 mg q3-5d; target 900-1800 mg/day divided TID; max 3600 mg/day",
             "orderSentence": "Gabapentin 300 mg qHS PO"
           },
           "contraindications": "Severe renal impairment (adjust dose)",
@@ -645,14 +681,10 @@
               {
                 "text": "75 mg BID",
                 "orderSentence": "Pregabalin 75 mg BID PO"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Pregabalin 150 mg BID PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID",
+            "instructions": "Start 75 mg PO BID; increase to 150 mg BID after 1 week; max 300 mg BID",
             "orderSentence": "Pregabalin 75 mg BID PO"
           },
           "contraindications": "Severe renal impairment (adjust dose), angioedema history",
@@ -671,13 +703,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Fibrin sealant injected at leak site",
-                "orderSentence": "Epidural fibrin glue patch Fibrin sealant injected at leak site Epidural"
+                "text": "Fibrin sealant at leak site",
+                "orderSentence": "Epidural fibrin glue patch Fibrin sealant at leak site Epidural"
               }
             ],
             "route": "Epidural",
             "instructions": "Inject fibrin glue (e.g., Tisseel) at identified leak site under fluoroscopic or CT guidance; may combine with blood patch; performed by anesthesia or interventional radiology",
-            "orderSentence": "Epidural fibrin glue patch Fibrin sealant injected at leak site Epidural"
+            "orderSentence": "Epidural fibrin glue patch Fibrin sealant at leak site Epidural"
           },
           "contraindications": "Active infection, known allergy to fibrin/bovine components, coagulopathy",
           "monitoring": "Post-procedure neuro exam, headache assessment, vital signs; observe 2-4 hours post",
@@ -728,7 +760,7 @@
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "EXT",
-          "ICU": "-"
+          "ICU": "ROUTINE"
         },
         {
           "item": "CSF-venous fistula ligation/embolization",
@@ -772,7 +804,7 @@
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "EXT"
         },
         {
           "item": "Intrathecal saline infusion",
@@ -794,7 +826,7 @@
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "EXT"
         }
       ],
       "Subdural Hematoma Management (Complication of SIH)": [
@@ -818,7 +850,7 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "Epidural blood patch (treat underlying cause)",
@@ -827,16 +859,16 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Per EBP protocol above",
-                "orderSentence": "Epidural blood patch (treat underlying cause) Per EBP protocol above Epidural"
+                "text": "15-30 mL autologous blood",
+                "orderSentence": "Epidural blood patch (treat underlying cause) 15-30 mL autologous blood Epidural"
               }
             ],
             "route": "Epidural",
-            "instructions": "EBP should be performed BEFORE considering surgical evacuation; SDH from SIH often recurs after drainage if leak not addressed",
-            "orderSentence": "Epidural blood patch (treat underlying cause) Per EBP protocol above Epidural"
+            "instructions": "EBP should be performed BEFORE considering surgical evacuation; inject 15-30 mL autologous blood into epidural space under fluoroscopy; SDH from SIH often recurs after drainage if leak not addressed",
+            "orderSentence": "Epidural blood patch (treat underlying cause) 15-30 mL autologous blood Epidural"
           },
-          "contraindications": "Per EBP contraindications",
-          "monitoring": "Per EBP monitoring; serial CT for SDH",
+          "contraindications": "Active systemic infection/bacteremia, local skin infection, coagulopathy (INR >1.5, platelets <50K), patient refusal",
+          "monitoring": "Vital signs during and 1h post-procedure; neurologic exam; serial CT for SDH",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -862,7 +894,7 @@
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "STAT"
         }
       ]
     },
@@ -873,14 +905,14 @@
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "Anesthesiology or pain medicine consult for epidural blood patch placement",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
-          "ICU": "-"
+          "ICU": "URGENT"
         },
         {
           "item": "Neuroradiology consult for CT myelography interpretation and leak localization",
@@ -908,7 +940,7 @@
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "STAT"
         },
         {
           "item": "Headache specialist referral for chronic post-SIH headache or persistent symptoms despite leak resolution",
@@ -937,49 +969,57 @@
           "item": "Remain flat or in Trendelenburg position as much as possible to reduce headache while awaiting definitive treatment (upright posture worsens symptoms)",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Increase oral fluid intake to at least 2-3 liters daily to support CSF production and hydration",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Increase caffeine intake (coffee, tea) to 300-500 mg/day as this constricts cerebral blood vessels and may reduce headache",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Avoid Valsalva maneuvers (straining, heavy lifting, coughing) which can worsen or re-open CSF leaks",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "After epidural blood patch: lie flat for 1-2 hours post-procedure, then gradually increase activity over 24-48 hours; avoid heavy lifting for 2-4 weeks",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Return to ED immediately if headache suddenly becomes the worst headache of life, new neurologic symptoms develop (weakness, numbness, vision changes, confusion), or fever occurs (may indicate subdural hematoma, meningitis, or abscess)",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Some patients have persistent headache after successful leak treatment; this typically improves over weeks to months",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Follow up with neurology in 1-2 weeks after epidural blood patch to assess response and plan further workup if needed",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         }
       ],
       "Lifestyle & Prevention": [
@@ -987,43 +1027,43 @@
           "item": "Stay well-hydrated (2-3 L daily) to support CSF production and overall recovery",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Gradual return to physical activity after symptom resolution; avoid strenuous exercise for 4-6 weeks after blood patch",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Avoid excessive caffeine withdrawal if caffeine has been used therapeutically (taper gradually to prevent rebound headache)",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
-          "item": "DVT prophylaxis during prolonged bed rest: compression stockings and ambulation when tolerated; pharmacologic prophylaxis if hospitalized >48 hours on bed rest",
+          "item": "Compression stockings during prolonged bed rest for DVT prevention; ambulate when tolerated",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "-"
-        },
-        {
-          "item": "Stool softener (docusate 100 mg BID) during bed rest to avoid straining which can worsen CSF leak",
-          "ED": "-",
-          "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "-",
+          "ICU": "-"
         },
         {
           "item": "If connective tissue disorder identified: avoid contact sports and activities with high risk of spinal trauma",
           "ED": "-",
           "HOSP": "-",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Inform future anesthesiologists of SIH history; use smallest gauge spinal needle if LP/spinal anesthesia required in future",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         }
       ]
     }
@@ -1094,117 +1134,117 @@
     {
       "recommendation": "Orthostatic headache is hallmark of SIH",
       "evidenceLevel": "Expert consensus; diagnostic criterion",
-      "source": "Schievink WI. Spontaneous spinal cerebrospinal fluid leaks and intracranial hypotension. JAMA 2006"
+      "source": "Schievink WI. Spontaneous spinal cerebrospinal fluid leaks and intracranial hypotension. JAMA 2006 [PubMed: 16705110](https://pubmed.ncbi.nlm.nih.gov/16705110/)"
     },
     {
       "recommendation": "MRI brain with gadolinium showing pachymeningeal enhancement is most sensitive diagnostic finding",
       "evidenceLevel": "Class II, Level B",
-      "source": "Mokri B. Spontaneous low pressure, low CSF volume headaches: spontaneous CSF leaks. Headache 2013"
+      "source": "Mokri B. Spontaneous low pressure, low CSF volume headaches: spontaneous CSF leaks. Headache 2013 [PubMed: 23808630](https://pubmed.ncbi.nlm.nih.gov/23808630/)"
     },
     {
       "recommendation": "Epidural blood patch is first-line definitive treatment for PDPH",
       "evidenceLevel": "Class I, Level A",
-      "source": "Boonmak P, Boonmak S. Epidural blood patching for preventing and treating post-dural puncture headache. Cochrane Database Syst Rev 2010"
+      "source": "Boonmak P, Boonmak S. Epidural blood patching for preventing and treating post-dural puncture headache. Cochrane Database Syst Rev 2010 [PubMed: 20091522](https://pubmed.ncbi.nlm.nih.gov/20091522/)"
     },
     {
       "recommendation": "Epidural blood patch effective for SIH",
       "evidenceLevel": "Class II, Level B",
-      "source": "Sencakova D et al. The effect of epidural blood patch on intracranial volumes and pressures. Neurology 2001"
+      "source": "Sencakova D et al. The efficacy of epidural blood patch in spontaneous CSF leaks. Neurology 2001 [PubMed: 11723293](https://pubmed.ncbi.nlm.nih.gov/11723293/)"
     },
     {
       "recommendation": "CT myelography is gold standard for CSF leak localization",
       "evidenceLevel": "Class II, Level B",
-      "source": "Mokri B. Spontaneous cerebrospinal fluid leaks: from intracranial hypotension to cerebrospinal fluid hypovolemia. Mayo Clin Proc 1999"
+      "source": "Mokri B. Spontaneous cerebrospinal fluid leaks: from intracranial hypotension to cerebrospinal fluid hypovolemia. Mayo Clin Proc 1999 [PubMed: 10560599](https://pubmed.ncbi.nlm.nih.gov/10560599/)"
     },
     {
       "recommendation": "Caffeine provides short-term benefit for PDPH",
       "evidenceLevel": "Class II, Level B",
-      "source": "Camann WR et al. Effects of oral caffeine on postdural puncture headache. Anesth Analg 1990"
+      "source": "Camann WR et al. Effects of oral caffeine on postdural puncture headache. Anesth Analg 1990 [PubMed: 2405733](https://pubmed.ncbi.nlm.nih.gov/2405733/)"
     },
     {
       "recommendation": "Conservative treatment (bed rest, hydration, caffeine) as initial approach",
       "evidenceLevel": "Expert consensus",
-      "source": "Schievink WI. Spontaneous spinal cerebrospinal fluid leaks. Cephalalgia 2008"
+      "source": "Schievink WI. Spontaneous spinal cerebrospinal fluid leaks. Cephalalgia 2008 [PubMed: 19037970](https://pubmed.ncbi.nlm.nih.gov/19037970/)"
     },
     {
       "recommendation": "CSF opening pressure may be normal in 20-30% of SIH patients",
       "evidenceLevel": "Class III, Level B",
-      "source": "Schievink WI et al. Diagnostic criteria for headache due to spontaneous intracranial hypotension. Neurology 2011"
+      "source": "Schievink WI et al. Diagnostic criteria for headache due to spontaneous intracranial hypotension. Headache 2011 [PubMed: 21658029](https://pubmed.ncbi.nlm.nih.gov/21658029/)"
     },
     {
       "recommendation": "Targeted EBP has higher success rate than blind EBP for SIH",
       "evidenceLevel": "Class III, Level B",
-      "source": "Patel MR et al. CT-guided lumbar epidural blood patch for treatment of SIH. AJNR Am J Neuroradiol 2001"
+      "source": "Kranz PG et al. CT-guided epidural blood patching of directly observed or potential leak sites for the targeted treatment of spontaneous intracranial hypotension. AJNR Am J Neuroradiol 2011 [PubMed: 21349964](https://pubmed.ncbi.nlm.nih.gov/21349964/)"
     },
     {
       "recommendation": "Fibrin glue sealant effective for refractory CSF leaks",
       "evidenceLevel": "Class III, Level C",
-      "source": "Schievink WI et al. Treatment of spontaneous intracranial hypotension with percutaneous placement of fibrin sealant. J Neurosurg 2004"
+      "source": "Schievink WI et al. Treatment of spontaneous intracranial hypotension with percutaneous placement of fibrin sealant. J Neurosurg 2004 [PubMed: 15200130](https://pubmed.ncbi.nlm.nih.gov/15200130/)"
     },
     {
       "recommendation": "Surgical repair for refractory dural defects",
       "evidenceLevel": "Class III, Level C",
-      "source": "Schievink WI et al. Surgical treatment of spontaneous spinal cerebrospinal fluid leaks. J Neurosurg 1998"
+      "source": "Schievink WI et al. Surgical treatment of spontaneous spinal cerebrospinal fluid leaks. J Neurosurg 1998 [PubMed: 9452231](https://pubmed.ncbi.nlm.nih.gov/9452231/)"
     },
     {
       "recommendation": "Brain sagging on MRI correlates with clinical severity",
       "evidenceLevel": "Class III, Level B",
-      "source": "Savoiardo M et al. Headache and MRI findings in spontaneous intracranial hypotension. Neurology 2001"
+      "source": "Savoiardo M et al. Spontaneous intracranial hypotension with deep brain swelling. Brain 2007 [PubMed: 17535837](https://pubmed.ncbi.nlm.nih.gov/17535837/)"
     },
     {
       "recommendation": "Connective tissue disorders (EDS, Marfan) predispose to SIH",
       "evidenceLevel": "Class III, Level B",
-      "source": "Schievink WI et al. Connective tissue disorders with spontaneous spinal CSF leaks and intracranial hypotension. Neurology 2004"
+      "source": "Schievink WI et al. Connective tissue disorders with spontaneous spinal CSF leaks and intracranial hypotension. Neurosurgery 2004 [PubMed: 14683542](https://pubmed.ncbi.nlm.nih.gov/14683542/)"
     },
     {
       "recommendation": "Subdural hematomas complicate SIH and often resolve after leak treatment",
       "evidenceLevel": "Class III, Level B",
-      "source": "De Noronha RJ et al. Subdural haematoma: a potentially serious consequence of spontaneous intracranial hypotension. J Neurol Neurosurg Psychiatry 2003"
+      "source": "De Noronha RJ et al. Subdural haematoma: a potentially serious consequence of spontaneous intracranial hypotension. J Neurol Neurosurg Psychiatry 2003 [PubMed: 12754345](https://pubmed.ncbi.nlm.nih.gov/12754345/)"
     },
     {
       "recommendation": "CSF-venous fistulas are an underrecognized cause of SIH",
       "evidenceLevel": "Class III, Level C",
-      "source": "Schievink WI et al. A classification system of spontaneous spinal CSF leaks. Neurology 2016"
+      "source": "Schievink WI et al. A classification system of spontaneous spinal CSF leaks. Neurology 2016 [PubMed: 27440149](https://pubmed.ncbi.nlm.nih.gov/27440149/)"
     },
     {
       "recommendation": "Digital subtraction myelography is gold standard for CSF-venous fistula detection",
       "evidenceLevel": "Class III, Level C",
-      "source": "Farb RI et al. Spontaneous intracranial hypotension: a systematic imaging approach for CSF leak localization and management. AJNR Am J Neuroradiol 2019"
+      "source": "Farb RI et al. Spontaneous intracranial hypotension: a systematic imaging approach for CSF leak localization and management. AJNR Am J Neuroradiol 2019 [PubMed: 30923083](https://pubmed.ncbi.nlm.nih.gov/30923083/)"
     },
     {
       "recommendation": "Theophylline may increase CSF production via adenosine receptor antagonism",
       "evidenceLevel": "Class III, Level C",
-      "source": "Mokri B. Headaches caused by decreased intracranial pressure. Neurology 2002"
+      "source": "Mokri B. Headaches caused by decreased intracranial pressure: diagnosis and management. Curr Opin Neurol 2003 [PubMed: 12858068](https://pubmed.ncbi.nlm.nih.gov/12858068/)"
     },
     {
       "recommendation": "Hydrocortisone/corticosteroids as adjunctive therapy for refractory SIH",
       "evidenceLevel": "Class III, Level C",
-      "source": "Gentile S et al. Spontaneous intracranial hypotension: a mini review. Neurol Sci 2004"
+      "source": "Grimaldi D et al. Spontaneous low cerebrospinal pressure: a mini review. Neurol Sci 2004 [PubMed: 15549523](https://pubmed.ncbi.nlm.nih.gov/15549523/)"
     },
     {
       "recommendation": "ICHD-3 diagnostic criteria for headache attributed to low CSF pressure",
       "evidenceLevel": "Expert consensus",
-      "source": "Headache Classification Committee of the International Headache Society. ICHD-3. Cephalalgia 2018"
+      "source": "Headache Classification Committee of the International Headache Society. ICHD-3. Cephalalgia 2018 [PubMed: 29368949](https://pubmed.ncbi.nlm.nih.gov/29368949/)"
     },
     {
       "recommendation": "Intrathecal gadolinium MRI for slow leak detection",
       "evidenceLevel": "Class III, Level C",
-      "source": "Akbar JJ et al. The role of MR myelography with intrathecal gadolinium in localization of spinal CSF leaks in patients with spontaneous intracranial hypotension. AJNR Am J Neuroradiol 2012"
+      "source": "Akbar JJ et al. The role of MR myelography with intrathecal gadolinium in localization of spinal CSF leaks in patients with spontaneous intracranial hypotension. AJNR Am J Neuroradiol 2012 [PubMed: 22173753](https://pubmed.ncbi.nlm.nih.gov/22173753/)"
     },
     {
       "recommendation": "MR myelography for non-invasive leak screening",
       "evidenceLevel": "Class II, Level B",
-      "source": "Wang YF et al. Spontaneous intracranial hypotension: management and prognosis. Neurology 2021"
+      "source": "Wang SJ. Spontaneous intracranial hypotension. Continuum (Minneap Minn) 2021 [PubMed: 34048402](https://pubmed.ncbi.nlm.nih.gov/34048402/)"
     },
     {
       "recommendation": "Dynamic CT myelography for fast CSF leaks",
       "evidenceLevel": "Class III, Level C",
-      "source": "Kranz PG et al. Characteristics of spinal CSF leaks in patients with spontaneous intracranial hypotension. AJNR Am J Neuroradiol 2016"
+      "source": "Kranz PG et al. Imaging signs in spontaneous intracranial hypotension: prevalence and relationship to CSF pressure. AJNR Am J Neuroradiol 2016 [PubMed: 26869465](https://pubmed.ncbi.nlm.nih.gov/26869465/)"
     },
     {
       "recommendation": "Continuous epidural saline infusion as bridge therapy",
       "evidenceLevel": "Case series",
-      "source": "Bai J et al. Continuous epidural saline infusion as a non-surgical treatment for refractory spontaneous intracranial hypotension. Pain Physician 2017"
+      "source": "Bai J et al. Continuous epidural saline infusion for treatment of refractory spontaneous intracranial hypotension. Pain Physician 2017"
     }
   ],
   "monitoring": [
@@ -1215,7 +1255,7 @@
       "ED": "STAT",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "-"
+      "ICU": "STAT"
     },
     {
       "item": "Neurologic examination (mental status, cranial nerves, motor, sensory)",
@@ -1224,7 +1264,7 @@
       "ED": "STAT",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "-"
+      "ICU": "STAT"
     },
     {
       "item": "Orthostatic vital signs",
@@ -1233,7 +1273,7 @@
       "ED": "STAT",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "-"
+      "ICU": "STAT"
     },
     {
       "item": "CT head (for subdural collections)",
@@ -1242,7 +1282,7 @@
       "ED": "URGENT",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",
-      "ICU": "-"
+      "ICU": "URGENT"
     },
     {
       "item": "MRI brain with gadolinium (follow-up)",
@@ -1266,6 +1306,15 @@
       "item": "Blood glucose (if on steroids)",
       "frequency": "q6h while on IV steroids; daily on oral taper",
       "action": "Insulin sliding scale or hypoglycemic agent adjustment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Rebound intracranial hypertension monitoring",
+      "frequency": "Daily during first week after successful CSF leak treatment; each outpatient visit for 3 months",
+      "action": "Fundoscopic exam; consider LP to measure OP; acetazolamide if confirmed rebound IH",
       "ED": "-",
       "HOSP": "ROUTINE",
       "OPD": "ROUTINE",

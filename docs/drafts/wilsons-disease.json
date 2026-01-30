@@ -1,13 +1,12 @@
 {
   "id": "wilsons-disease",
   "title": "Wilson's Disease",
-  "version": "1.0",
+  "version": "1.1",
   "icd10": [
     "** E83.01 (Wilson's disease)",
     "E83.09 (Other disorders of copper metabolism)",
     "G25.5 (Other chorea — for movement disorder presentation)",
-    "K74.3 (Primary biliary cirrhosis — hepatic presentation)",
-    "G25.0 (Essential tremor — for tremor-predominant presentation)",
+    "G25.2 (Other specified forms of tremor — for tremor-predominant presentation)",
     "F06.8 (Other specified mental disorders due to known physiological condition — psychiatric presentation)"
   ],
   "scope": "** Diagnosis and management of Wilson's disease in adolescents and adults presenting with neurologic, hepatic, or psychiatric manifestations. Covers diagnostic workup (ceruloplasmin, 24-hour urine copper, slit-lamp exam, hepatic copper, genetic testing), chelation therapy (D-penicillamine, trientine), zinc maintenance therapy, liver transplant evaluation, symptomatic management of neurological symptoms (dystonia, tremor, parkinsonism, psychiatric), and family screening. Excludes other copper metabolism disorders (Menkes disease), isolated non-Wilson hepatic cirrhosis, and drug-induced movement disorders.",
@@ -368,6 +367,16 @@
           "timing": "At diagnosis",
           "target": "Hepatomegaly, splenomegaly, cirrhotic changes, portal hypertension, ascites",
           "contraindications": "None significant"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "On admission for fulminant hepatic failure; baseline for ICU",
+          "target": "Aspiration, atelectasis, pleural effusion, pulmonary edema",
+          "contraindications": "None significant"
         }
       ],
       "Extended": [
@@ -653,18 +662,18 @@
         },
         {
           "item": "Plasmapheresis/Plasma exchange",
-          "route": "-",
+          "route": "Extracorporeal",
           "indication": "Fulminant WD with severe hemolysis; removes free copper",
           "dosing": {
             "doseOptions": [
               {
                 "text": "1-1.5 plasma volumes",
-                "orderSentence": "Plasmapheresis/Plasma exchange 1-1.5 plasma volumes -"
+                "orderSentence": "Plasmapheresis/Plasma exchange 1-1.5 plasma volumes Extracorporeal"
               }
             ],
-            "route": "-",
+            "route": "Extracorporeal",
             "instructions": "Daily exchange x 3-5 days; rapidly reduces free copper",
-            "orderSentence": "Plasmapheresis/Plasma exchange 1-1.5 plasma volumes -"
+            "orderSentence": "Plasmapheresis/Plasma exchange 1-1.5 plasma volumes Extracorporeal"
           },
           "contraindications": "Hemodynamic instability, severe sepsis",
           "monitoring": "Copper levels, hemolysis markers, coagulation",
@@ -814,13 +823,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "20-40 mg",
-                "orderSentence": "Propranolol 20-40 mg PO"
+                "text": "20 mg",
+                "orderSentence": "Propranolol 20 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 20-40 mg BID; titrate to 120-240 mg/day; limited efficacy for wing-beating tremor",
-            "orderSentence": "Propranolol 20-40 mg PO"
+            "instructions": "Start 20 mg BID; titrate to 120-240 mg/day; limited efficacy for wing-beating tremor",
+            "orderSentence": "Propranolol 20 mg PO"
           },
           "contraindications": "Asthma, COPD, bradycardia, decompensated heart failure",
           "monitoring": "HR, BP",
@@ -836,13 +845,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25-50 mg",
-                "orderSentence": "Sertraline 25-50 mg PO"
+                "text": "25 mg",
+                "orderSentence": "Sertraline 25 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 25-50 mg daily; titrate to 100-200 mg/day",
-            "orderSentence": "Sertraline 25-50 mg PO"
+            "instructions": "Start 25 mg daily; titrate to 100-200 mg/day",
+            "orderSentence": "Sertraline 25 mg PO"
           },
           "contraindications": "MAOI use; caution with hepatic impairment (reduce dose)",
           "monitoring": "Hepatic function (use lower doses in liver disease); suicidality in young adults",
@@ -858,13 +867,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "12.5-25 mg",
-                "orderSentence": "Quetiapine 12.5-25 mg PO"
+                "text": "12.5 mg",
+                "orderSentence": "Quetiapine 12.5 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Start 12.5-25 mg QHS; titrate cautiously to 50-200 mg/day; avoid typical antipsychotics (worsen movement disorder)",
-            "orderSentence": "Quetiapine 12.5-25 mg PO"
+            "instructions": "Start 12.5 mg QHS; titrate cautiously to 50-200 mg/day; avoid typical antipsychotics (worsen movement disorder)",
+            "orderSentence": "Quetiapine 12.5 mg PO"
           },
           "contraindications": "QTc prolongation; avoid typical antipsychotics (D2 blockade worsens dystonia/parkinsonism)",
           "monitoring": "QTc, metabolic panel, sedation; use ONLY atypical antipsychotics",
@@ -921,7 +930,7 @@
       "Second-line/Refractory": [
         {
           "item": "Liver transplantation evaluation",
-          "route": "-",
+          "route": "Referral",
           "indication": "Fulminant hepatic failure; decompensated cirrhosis unresponsive to chelation; severe neurologic WD refractory to 6+ months chelation (controversial)",
           "dosing": {
             "doseOptions": [
@@ -943,18 +952,18 @@
         },
         {
           "item": "Continuous venovenous hemofiltration (CVVH)",
-          "route": "IV",
+          "route": "Extracorporeal",
           "indication": "Fulminant WD with renal failure or massive hemolysis; bridge to transplant",
           "dosing": {
             "doseOptions": [
               {
                 "text": "Per ICU protocol",
-                "orderSentence": "Continuous venovenous hemofiltration (CVVH) Per ICU protocol IV"
+                "orderSentence": "Continuous venovenous hemofiltration (CVVH) Per ICU protocol Extracorporeal"
               }
             ],
-            "route": "IV",
+            "route": "Extracorporeal",
             "instructions": "Continuous copper removal; bridge therapy to transplant",
-            "orderSentence": "Continuous venovenous hemofiltration (CVVH) Per ICU protocol IV"
+            "orderSentence": "Continuous venovenous hemofiltration (CVVH) Per ICU protocol Extracorporeal"
           },
           "contraindications": "N/A (life-saving in ICU)",
           "monitoring": "Copper levels, hemodynamics, electrolytes",
@@ -965,18 +974,18 @@
         },
         {
           "item": "Molecular adsorbent recirculating system (MARS)",
-          "route": "-",
+          "route": "Extracorporeal",
           "indication": "Fulminant WD; albumin dialysis removes copper",
           "dosing": {
             "doseOptions": [
               {
                 "text": "Per protocol",
-                "orderSentence": "Molecular adsorbent recirculating system (MARS) Per protocol -"
+                "orderSentence": "Molecular adsorbent recirculating system (MARS) Per protocol Extracorporeal"
               }
             ],
-            "route": "-",
+            "route": "Extracorporeal",
             "instructions": "Albumin dialysis; available at specialized centers; bridge to transplant",
-            "orderSentence": "Molecular adsorbent recirculating system (MARS) Per protocol -"
+            "orderSentence": "Molecular adsorbent recirculating system (MARS) Per protocol Extracorporeal"
           },
           "contraindications": "Hemodynamic instability",
           "monitoring": "Copper levels, bilirubin, coagulation, hemodynamics",
@@ -1081,7 +1090,7 @@
         {
           "item": "Zinc sulfate (alternative zinc formulation)",
           "route": "PO",
-          "indication": "Same as zinc acetate; more GI side effects but less expensive",
+          "indication": "Alternative to zinc acetate for maintenance therapy; more GI side effects but less expensive",
           "dosing": {
             "doseOptions": [
               {
@@ -1090,12 +1099,12 @@
               }
             ],
             "route": "PO",
-            "instructions": "220 mg zinc sulfate TID (contains ~50 mg elemental zinc per 220 mg); same timing as zinc acetate",
+            "instructions": "220 mg zinc sulfate TID (contains ~50 mg elemental zinc per 220 mg); take on empty stomach separated from meals by ≥1 hour; separate from chelator by ≥2 hours if used concurrently",
             "orderSentence": "Zinc sulfate (alternative zinc formulation) 220 mg PO"
           },
-          "pretreatment": "Same as zinc acetate",
-          "contraindications": "Same; more GI side effects (nausea, gastric irritation)",
-          "monitoring": "Same as zinc acetate",
+          "pretreatment": "Baseline: CBC, CMP, 24h urine copper, serum zinc level",
+          "contraindications": "GI intolerance common (nausea, gastric irritation); do NOT use as sole therapy in symptomatic/severe WD (too slow onset)",
+          "monitoring": "24h urine copper q3-6 months (target <75 mcg/24h on zinc monotherapy); serum zinc level q3-6 months (target 125-150 mcg/dL); 24h urine zinc (confirms compliance: >2 mg/24h); LFTs q3-6 months; CBC q6 months (zinc-induced copper deficiency can cause neutropenia)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -1117,30 +1126,8 @@
             "orderSentence": "Pyridoxine (Vitamin B6) 25 mg PO"
           },
           "pretreatment": "None",
-          "contraindications": "None specific",
-          "monitoring": "-",
-          "ED": "ROUTINE",
-          "HOSP": "ROUTINE",
-          "OPD": "-"
-        },
-        {
-          "item": "Combined chelation + zinc",
-          "route": "PO",
-          "indication": "Initial treatment of symptomatic WD; some experts use chelator + zinc simultaneously",
-          "dosing": {
-            "doseOptions": [
-              {
-                "text": "Per individual agents",
-                "orderSentence": "Combined chelation + zinc Per individual agents PO"
-              }
-            ],
-            "route": "PO",
-            "instructions": "Chelator (penicillamine or trientine) + zinc acetate; separate by ≥2 hours (zinc blocks chelator absorption if given together)",
-            "orderSentence": "Combined chelation + zinc Per individual agents PO"
-          },
-          "pretreatment": "Per individual agents",
-          "contraindications": "Per individual agents; ensure ≥2 hour separation",
-          "monitoring": "Per individual agents; 24h urine copper, serum zinc, LFTs",
+          "contraindications": "None",
+          "monitoring": "Clinical assessment; peripheral neuropathy symptoms",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -1260,73 +1247,85 @@
           "item": "Wilson's disease is a lifelong condition requiring CONTINUOUS treatment — never stop chelation or zinc without physician guidance",
           "ED": "-",
           "HOSP": "STAT",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Take chelation medication (penicillamine or trientine) on an EMPTY STOMACH — 1 hour before or 2 hours after meals",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "If taking zinc, separate from chelator by at least 2 hours; take zinc between meals",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Return to ED if: worsening jaundice, confusion, vomiting blood, black stools, new neurologic symptoms, worsening speech or swallowing, severe abdominal pain",
           "ED": "STAT",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Report ANY new neurologic symptoms during the first 2-3 months of chelation (worsening is possible and requires dose adjustment)",
           "ED": "-",
           "HOSP": "STAT",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Avoid HIGH-COPPER FOODS during initial treatment: liver/organ meats, shellfish (especially lobster, oysters), chocolate, mushrooms, nuts, dried fruits, soy products",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Avoid drinking water through copper pipes (consider water testing; use filter or bottled water if copper pipes present)",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Alcohol is STRICTLY prohibited — causes additional liver damage",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Women of childbearing age: pregnancy requires switching from chelator to zinc (chelators are teratogenic); discuss family planning with physician BEFORE conception",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "ALL first-degree relatives (siblings, children, parents) MUST be screened for Wilson's disease — siblings have 25% risk",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Carry a medical alert card/bracelet indicating Wilson's disease and current medications",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Regular follow-up is ESSENTIAL — blood and urine tests needed every 3-6 months lifelong",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         }
       ],
       "Lifestyle & Prevention": [
@@ -1334,55 +1333,64 @@
           "item": "Low-copper diet during initial decoppering phase (avoid >1 mg copper/day); can liberalize slightly once stable on treatment",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Regular exercise as tolerated; may improve dystonia and mood",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Strict alcohol avoidance (lifelong — hepatotoxic)",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Smoking cessation (impairs liver function and overall health)",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Hepatitis A and B vaccination if not immune (protect remaining liver function)",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Avoid hepatotoxic medications (acetaminophen limit <2 g/day; avoid NSAIDs if cirrhotic; avoid statins if decompensated)",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Genetic counseling for reproductive planning; autosomal recessive — both parents are carriers; 25% risk for each sibling",
           "ED": "-",
           "HOSP": "-",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Mental health support; depression and anxiety are common and treatable components of WD",
           "ED": "-",
           "HOSP": "ROUTINE",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Screen all first-degree relatives: ceruloplasmin, 24h urine copper, LFTs, slit-lamp exam, ATP7B genetic testing",
           "ED": "-",
           "HOSP": "-",
-          "OPD": "ROUTINE"
+          "OPD": "ROUTINE",
+          "ICU": "-"
         }
       ]
     }
@@ -1463,107 +1471,107 @@
     {
       "recommendation": "Ceruloplasmin <20 mg/dL as screening test for WD",
       "evidenceLevel": "Class II, Level B",
-      "source": "Ferenci et al., Liver Int 2003"
+      "source": "Ferenci et al., Liver Int 2003 [PubMed: 14506258](https://pubmed.ncbi.nlm.nih.gov/14506258/)"
     },
     {
       "recommendation": "24-hour urine copper >100 mcg as diagnostic criterion",
       "evidenceLevel": "Class II, Level B",
-      "source": "Roberts & Schilsky, Hepatology 2008 (AASLD Practice Guidelines)"
+      "source": "Roberts & Schilsky, Hepatology 2008 (AASLD Practice Guidelines) [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/)"
     },
     {
       "recommendation": "D-Penicillamine as first-line chelation therapy",
       "evidenceLevel": "Class II, Level B",
-      "source": "Walshe, Lancet 1956; Roberts & Schilsky, Hepatology 2008"
+      "source": "Walshe, Lancet 1956; Roberts & Schilsky, Hepatology 2008 [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/)"
     },
     {
       "recommendation": "Trientine as alternative first-line chelator with lower neurologic worsening risk",
       "evidenceLevel": "Class II, Level B",
-      "source": "Walshe, Lancet 1982; Weiss et al., J Hepatol 2013"
+      "source": "Walshe, Lancet 1982; Weiss et al., J Hepatol 2013 [PubMed: 23485523](https://pubmed.ncbi.nlm.nih.gov/23485523/)"
     },
     {
       "recommendation": "Zinc acetate for maintenance therapy",
       "evidenceLevel": "Class II, Level B",
-      "source": "Brewer et al., Arch Neurol 1987; Czlonkowska et al., Ann Neurol 1996"
+      "source": "Brewer et al., Arch Neurol 1987; Czlonkowska et al., Ann Neurol 1996 [PubMed: 8967753](https://pubmed.ncbi.nlm.nih.gov/8967753/)"
     },
     {
       "recommendation": "Neurologic worsening occurs in 10-50% of patients starting D-penicillamine",
       "evidenceLevel": "Class II, Level B",
-      "source": "Brewer et al., Arch Neurol 1994; Walshe & Yealland, J Neurol Neurosurg Psychiatry 1993"
+      "source": "Brewer et al., Arch Neurol 1994 [PubMed: 7944997](https://pubmed.ncbi.nlm.nih.gov/7944997/); Walshe & Yealland, J Neurol Neurosurg Psychiatry 1993 [PubMed: 8505642](https://pubmed.ncbi.nlm.nih.gov/8505642/)"
     },
     {
       "recommendation": "Liver transplantation for fulminant WD and decompensated cirrhosis",
       "evidenceLevel": "Class I, Level B",
-      "source": "Arnon et al., Hepatology 2011; Dhawan et al., Gut 2005"
+      "source": "Arnon et al., Hepatology 2011 [PubMed: 21254169](https://pubmed.ncbi.nlm.nih.gov/21254169/); Dhawan et al., Gut 2005 [PubMed: 15753547](https://pubmed.ncbi.nlm.nih.gov/15753547/)"
     },
     {
       "recommendation": "New Wilson Index ≥11 predicts need for transplantation in pediatric fulminant WD",
       "evidenceLevel": "Class II, Level B",
-      "source": "Dhawan et al., Gut 2005"
+      "source": "Dhawan et al., Gut 2005 [PubMed: 15753547](https://pubmed.ncbi.nlm.nih.gov/15753547/)"
     },
     {
       "recommendation": "Kayser-Fleischer rings present in >95% of neurologic WD",
       "evidenceLevel": "Class II, Level B",
-      "source": "Walshe, Brain 1976; Ala et al., Lancet 2007"
+      "source": "Walshe, Brain 1976; Ala et al., Lancet 2007 [PubMed: 17276780](https://pubmed.ncbi.nlm.nih.gov/17276780/)"
     },
     {
       "recommendation": "Leipzig Scoring System for WD diagnosis (score ≥4 = established)",
       "evidenceLevel": "Class IIa, Level C",
-      "source": "Ferenci et al., Liver Int 2003 (8th International Meeting on Wilson Disease)"
+      "source": "Ferenci et al., Liver Int 2003 (8th International Meeting on Wilson Disease) [PubMed: 14506258](https://pubmed.ncbi.nlm.nih.gov/14506258/)"
     },
     {
       "recommendation": "ATP7B gene testing for definitive diagnosis and family screening",
       "evidenceLevel": "Class I, Level B",
-      "source": "Loudianos & Gitlin, Semin Liver Dis 2000; EASL Clinical Practice Guidelines 2012"
+      "source": "Loudianos & Gitlin, Semin Liver Dis 2000 [PubMed: 11200483](https://pubmed.ncbi.nlm.nih.gov/11200483/); EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/)"
     },
     {
       "recommendation": "MRI brain findings: T2 hyperintensity in putamen (\"face of giant panda\" sign)",
       "evidenceLevel": "Class II, Level C",
-      "source": "King et al., Mov Disord 1996; Sinha et al., AJNR 2006"
+      "source": "King et al., Mov Disord 1996 [PubMed: 8866494](https://pubmed.ncbi.nlm.nih.gov/8866494/); Sinha et al., AJNR 2006 [PubMed: 16551993](https://pubmed.ncbi.nlm.nih.gov/16551993/)"
     },
     {
       "recommendation": "Low-copper diet during initial decoppering phase",
       "evidenceLevel": "Class III, Level C",
-      "source": "Expert consensus; EASL Clinical Practice Guidelines 2012"
+      "source": "Expert consensus; EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/)"
     },
     {
       "recommendation": "Plasmapheresis for acute hemolytic crisis in fulminant WD",
       "evidenceLevel": "Class IIb, Level C",
-      "source": "Jhang et al., J Clin Apher 2007; Akyildiz et al., Ther Apher Dial 2004"
+      "source": "Jhang et al., J Clin Apher 2007 [PubMed: 17722038](https://pubmed.ncbi.nlm.nih.gov/17722038/); Akyildiz et al., Ther Apher Dial 2004 [PubMed: 15255163](https://pubmed.ncbi.nlm.nih.gov/15255163/)"
     },
     {
       "recommendation": "Free (non-ceruloplasmin-bound) copper as monitoring parameter",
       "evidenceLevel": "Class II, Level B",
-      "source": "Walshe, Ann Clin Biochem 2003; EASL Clinical Practice Guidelines 2012"
+      "source": "Walshe, Ann Clin Biochem 2003 [PubMed: 12880538](https://pubmed.ncbi.nlm.nih.gov/12880538/); EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/)"
     },
     {
       "recommendation": "Pregnancy management: switch to zinc; chelators are teratogenic",
       "evidenceLevel": "Class II, Level C",
-      "source": "Brewer et al., J Lab Clin Med 2000; Tarnacka et al., Fertil Steril 2000"
+      "source": "Brewer et al., J Lab Clin Med 2000 [PubMed: 10638697](https://pubmed.ncbi.nlm.nih.gov/10638697/); Tarnacka et al., Fertil Steril 2000 [PubMed: 10685533](https://pubmed.ncbi.nlm.nih.gov/10685533/)"
     },
     {
       "recommendation": "Family screening with ceruloplasmin, 24h urine copper, and ATP7B genotyping",
       "evidenceLevel": "Class I, Level B",
-      "source": "EASL Clinical Practice Guidelines 2012; Roberts & Schilsky, Hepatology 2008"
+      "source": "EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/); Roberts & Schilsky, Hepatology 2008 [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/)"
     },
     {
       "recommendation": "AASLD Practice Guidelines for Wilson Disease",
       "evidenceLevel": "Class I (Guidelines)",
-      "source": "Roberts & Schilsky, Hepatology 2008; Schilsky, Clin Liver Dis 2017"
+      "source": "Roberts & Schilsky, Hepatology 2008 [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/); Schilsky, Clin Liver Dis 2017 [PubMed: 28364808](https://pubmed.ncbi.nlm.nih.gov/28364808/)"
     },
     {
       "recommendation": "EASL Clinical Practice Guidelines on Wilson's Disease",
       "evidenceLevel": "Class I (Guidelines)",
-      "source": "European Association for the Study of the Liver, J Hepatol 2012"
+      "source": "European Association for the Study of the Liver, J Hepatol 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/)"
     },
     {
       "recommendation": "Trientine tetrahydrochloride (Cuvrior) as improved formulation",
       "evidenceLevel": "Class II, Level B",
-      "source": "Weiss et al., Lancet Gastroenterol Hepatol 2022"
+      "source": "Weiss et al., Lancet Gastroenterol Hepatol 2022 [PubMed: 35276119](https://pubmed.ncbi.nlm.nih.gov/35276119/)"
     },
     {
       "recommendation": "Bis-choline tetrathiomolybdate for neurologic WD (phase 3 data)",
       "evidenceLevel": "Class II, Level B",
-      "source": "Weiss et al., Lancet Gastroenterol Hepatol 2022 (WTX101-301 trial)"
+      "source": "Weiss et al., Lancet Gastroenterol Hepatol 2022 (WTX101-301 trial) [PubMed: 35276119](https://pubmed.ncbi.nlm.nih.gov/35276119/)"
     }
   ],
   "monitoring": [

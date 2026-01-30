@@ -87170,7 +87170,7 @@
   "Chronic Migraine": {
     "id": "chronic-migraine",
     "title": "Chronic Migraine",
-    "version": "1.0",
+    "version": "1.1",
     "icd10": [
       "** G43.709 (Chronic migraine without aura",
       "not intractable)",
@@ -87243,7 +87243,7 @@
             "item": "LFTs (CPT 80076)",
             "rationale": "Baseline before topiramate, valproate; screen for hepatotoxicity from chronic analgesics",
             "target": "Normal",
-            "ED": "-",
+            "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-"
@@ -87428,7 +87428,7 @@
             "item": "MRA head (CPT 70544)",
             "timing": "Suspected vasculopathy; RCVS; dissection",
             "target": "Normal vasculature",
-            "contraindications": "Per MRI",
+            "contraindications": "MRI-incompatible devices, contrast allergy if contrast-enhanced, renal disease (eGFR <30)",
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -87438,7 +87438,7 @@
             "item": "MRV head (CPT 70546)",
             "timing": "Suspected cerebral venous thrombosis; papilledema",
             "target": "Patent venous sinuses",
-            "contraindications": "Per MRI",
+            "contraindications": "MRI-incompatible devices, contrast allergy if contrast-enhanced, renal disease (eGFR <30)",
             "ED": "URGENT",
             "HOSP": "URGENT",
             "OPD": "ROUTINE",
@@ -87470,7 +87470,7 @@
             "item": "MRI cervical spine (CPT 72141)",
             "timing": "Cervicogenic component suspected; occipital neuralgia",
             "target": "Rule out Chiari, structural pathology",
-            "contraindications": "Per MRI",
+            "contraindications": "MRI-incompatible devices",
             "ED": "-",
             "HOSP": "EXT",
             "OPD": "ROUTINE",
@@ -87537,7 +87537,7 @@
               "instructions": "500-825 mg PO once; limit to ≤14 days/month",
               "orderSentence": "Naproxen sodium 500-825 mg PO"
             },
-            "contraindications": "Same as ibuprofen",
+            "contraindications": "Renal disease, GI bleeding, aspirin-exacerbated respiratory disease",
             "monitoring": "Renal function; medication days/month",
             "ED": "-",
             "HOSP": "ROUTINE",
@@ -87584,7 +87584,7 @@
               "orderSentence": "Sumatriptan SC 6 mg SC"
             },
             "contraindications": "CAD, stroke/TIA, uncontrolled HTN, hemiplegic migraine, MAOIs, pregnancy",
-            "monitoring": "Chest tightness, BP; medication days/month",
+            "monitoring": "Chest tightness, BP; medication days/month; serotonin syndrome signs if on SNRI/SSRI",
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "-",
@@ -87605,8 +87605,8 @@
               "instructions": "50-100 mg PO once; may repeat in 2h; max 200 mg/24h; limit ≤9 days/month",
               "orderSentence": "Sumatriptan PO 50-100 mg PO"
             },
-            "contraindications": "Same as SC formulation",
-            "monitoring": "Same; medication days/month",
+            "contraindications": "CAD, stroke/TIA, uncontrolled HTN, hemiplegic migraine, MAOIs, pregnancy",
+            "monitoring": "Chest tightness, BP; medication days/month; serotonin syndrome signs if on SNRI/SSRI",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -87627,8 +87627,8 @@
               "instructions": "5-10 mg PO (ODT available); may repeat in 2h; max 30 mg/24h; limit ≤9 days/month; use 5 mg if on propranolol",
               "orderSentence": "Rizatriptan 5-10 mg PO"
             },
-            "contraindications": "Same as sumatriptan; reduce dose with propranolol",
-            "monitoring": "Same",
+            "contraindications": "CAD, stroke/TIA, uncontrolled HTN, hemiplegic migraine, MAOIs, pregnancy; reduce dose with propranolol",
+            "monitoring": "Chest tightness, BP; medication days/month; serotonin syndrome signs if on SNRI/SSRI",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -87649,8 +87649,8 @@
               "instructions": "40 mg PO once; may repeat in 2h; max 80 mg/24h; limit ≤9 days/month",
               "orderSentence": "Eletriptan 40 mg PO"
             },
-            "contraindications": "Same as sumatriptan; severe hepatic impairment",
-            "monitoring": "Same",
+            "contraindications": "CAD, stroke/TIA, uncontrolled HTN, hemiplegic migraine, MAOIs, pregnancy; severe hepatic impairment",
+            "monitoring": "Chest tightness, BP; medication days/month; serotonin syndrome signs if on SNRI/SSRI",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -88009,8 +88009,8 @@
               "orderSentence": "Venlafaxine XR 37.5 mg PO"
             },
             "pretreatment": "Baseline BP",
-            "contraindications": "Uncontrolled HTN, MAOIs, narrow-angle glaucoma",
-            "monitoring": "BP (dose-dependent HTN), serotonin syndrome, withdrawal if abrupt discontinuation",
+            "contraindications": "Uncontrolled HTN, MAOIs, narrow-angle glaucoma; serotonin syndrome risk with triptans (monitor closely)",
+            "monitoring": "BP (dose-dependent HTN), serotonin syndrome signs (agitation, hyperthermia, clonus), withdrawal if abrupt discontinuation",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -88078,7 +88078,7 @@
               "orderSentence": "Metoprolol succinate 25-50 mg PO"
             },
             "pretreatment": "Baseline HR, BP",
-            "contraindications": "Same as propranolol",
+            "contraindications": "Asthma/severe COPD, bradycardia (<60), heart block (2nd/3rd degree), decompensated HF, depression (relative)",
             "monitoring": "HR, BP, fatigue",
             "ED": "-",
             "HOSP": "ROUTINE",
@@ -88567,122 +88567,122 @@
       {
         "recommendation": "ICHD-3 criteria for chronic migraine (1.3)",
         "evidenceLevel": "Expert Consensus",
-        "source": "Headache Classification Committee of the International Headache Society. Cephalalgia 2018;38(1):1-211"
+        "source": "Headache Classification Committee of the International Headache Society. Cephalalgia 2018;38(1):1-211 [PubMed](https://pubmed.ncbi.nlm.nih.gov/29368949/)"
       },
       {
         "recommendation": "Topiramate effective for chronic migraine prevention",
         "evidenceLevel": "Class I, Level A",
-        "source": "Silberstein SD et al. Headache 2007;47(2):170-180"
+        "source": "Silberstein SD et al. Headache 2007;47(2):170-180 [PubMed](https://pubmed.ncbi.nlm.nih.gov/17300356/)"
       },
       {
         "recommendation": "OnabotulinumtoxinA for chronic migraine (PREEMPT trial)",
         "evidenceLevel": "Class I, Level A",
-        "source": "Dodick DW et al. Headache 2010;50(6):921-936"
+        "source": "Dodick DW et al. Headache 2010;50(6):921-936 [PubMed](https://pubmed.ncbi.nlm.nih.gov/20487038/)"
       },
       {
         "recommendation": "OnabotulinumtoxinA PREEMPT-2 results",
         "evidenceLevel": "Class I, Level A",
-        "source": "Aurora SK et al. Cephalalgia 2010;30(7):804-814"
+        "source": "Aurora SK et al. Cephalalgia 2010;30(7):804-814 [PubMed](https://pubmed.ncbi.nlm.nih.gov/20647171/)"
       },
       {
         "recommendation": "Erenumab for chronic migraine prevention",
         "evidenceLevel": "Class I, Level A",
-        "source": "Tepper SJ et al. Lancet Neurol 2017;16(6):425-434"
+        "source": "Tepper SJ et al. Lancet Neurol 2017;16(6):425-434 [PubMed](https://pubmed.ncbi.nlm.nih.gov/28460892/)"
       },
       {
         "recommendation": "Fremanezumab for chronic migraine (HALO-CM)",
         "evidenceLevel": "Class I, Level A",
-        "source": "Silberstein SD et al. N Engl J Med 2017;377(22):2113-2122"
+        "source": "Silberstein SD et al. N Engl J Med 2017;377(22):2113-2122 [PubMed](https://pubmed.ncbi.nlm.nih.gov/29171818/)"
       },
       {
         "recommendation": "Galcanezumab for chronic migraine (REGAIN)",
         "evidenceLevel": "Class I, Level A",
-        "source": "Detke HC et al. Neurology 2018;91(24):e2211-e2221"
+        "source": "Detke HC et al. Neurology 2018;91(24):e2211-e2221 [PubMed](https://pubmed.ncbi.nlm.nih.gov/30446596/)"
       },
       {
         "recommendation": "Eptinezumab for chronic migraine (PROMISE-2)",
         "evidenceLevel": "Class I, Level A",
-        "source": "Lipton RB et al. Neurology 2020;94(13):e1365-e1377"
+        "source": "Lipton RB et al. Neurology 2020;94(13):e1365-e1377 [PubMed](https://pubmed.ncbi.nlm.nih.gov/32209650/)"
       },
       {
         "recommendation": "Atogepant for chronic migraine prevention (PROGRESS)",
         "evidenceLevel": "Class I, Level A",
-        "source": "Pozo-Rosich P et al. Lancet 2023;402(10404):775-785"
+        "source": "Pozo-Rosich P et al. Lancet 2023;402(10404):775-785 [PubMed](https://pubmed.ncbi.nlm.nih.gov/37478885/)"
       },
       {
         "recommendation": "Rimegepant for migraine prevention",
         "evidenceLevel": "Class I, Level A",
-        "source": "Croop R et al. Lancet 2021;397(10268):51-60"
+        "source": "Croop R et al. Lancet 2021;397(10268):51-60 [PubMed](https://pubmed.ncbi.nlm.nih.gov/33338437/)"
       },
       {
         "recommendation": "AAN/AHS practice guideline update on migraine prevention",
         "evidenceLevel": "Expert Consensus",
-        "source": "Silberstein SD et al. Neurology 2012;78(17):1337-1345"
+        "source": "Silberstein SD et al. Neurology 2012;78(17):1337-1345 [PubMed](https://pubmed.ncbi.nlm.nih.gov/22529202/)"
       },
       {
         "recommendation": "AHS consensus statement on CGRP mAbs in migraine",
         "evidenceLevel": "Expert Consensus",
-        "source": "American Headache Society. Headache 2019;59(1):1-18"
+        "source": "American Headache Society. Headache 2019;59(1):1-18 [PubMed](https://pubmed.ncbi.nlm.nih.gov/30536394/)"
       },
       {
         "recommendation": "Behavioral treatments for migraine (biofeedback, CBT, relaxation)",
         "evidenceLevel": "Class I, Level A",
-        "source": "Penzien DB et al. Neurology 2005;64(10):2010-2015"
+        "source": "Penzien DB et al. Neurology 2005;64(10):2010-2015 [PubMed](https://pubmed.ncbi.nlm.nih.gov/15929764/)"
       },
       {
         "recommendation": "Prochlorperazine/metoclopramide for acute migraine",
         "evidenceLevel": "Class I, Level A",
-        "source": "Friedman BW et al. Ann Emerg Med 2008;52(4):399-406"
+        "source": "Friedman BW et al. Ann Emerg Med 2008;52(4):399-406 [PubMed](https://pubmed.ncbi.nlm.nih.gov/18006188/)"
       },
       {
         "recommendation": "Dexamethasone reduces migraine recurrence",
         "evidenceLevel": "Class I, Level A",
-        "source": "Singh A et al. Acad Emerg Med 2008;15(12):1223-1233"
+        "source": "Singh A et al. Acad Emerg Med 2008;15(12):1223-1233 [PubMed](https://pubmed.ncbi.nlm.nih.gov/18976336/)"
       },
       {
         "recommendation": "DHE for refractory status migrainosus",
         "evidenceLevel": "Class II, Level B",
-        "source": "Raskin NH. Neurology 1986;36(7):995-997"
+        "source": "Raskin NH. Neurology 1986;36(7):995-997 [PubMed](https://pubmed.ncbi.nlm.nih.gov/3520384/)"
       },
       {
         "recommendation": "Riboflavin for migraine prevention",
         "evidenceLevel": "Class II, Level B",
-        "source": "Schoenen J et al. Neurology 1998;50(2):466-470"
+        "source": "Schoenen J et al. Neurology 1998;50(2):466-470 [PubMed](https://pubmed.ncbi.nlm.nih.gov/9484373/)"
       },
       {
         "recommendation": "Magnesium for migraine prevention",
         "evidenceLevel": "Class II, Level B",
-        "source": "Peikert A et al. Cephalalgia 1996;16(4):257-263"
+        "source": "Peikert A et al. Cephalalgia 1996;16(4):257-263 [PubMed](https://pubmed.ncbi.nlm.nih.gov/8792038/)"
       },
       {
         "recommendation": "Ubrogepant for acute migraine (ACHIEVE-I and ACHIEVE-II)",
         "evidenceLevel": "Class I, Level A",
-        "source": "Dodick DW et al. JAMA 2019;322(24):2489-2496"
+        "source": "Dodick DW et al. JAMA 2019;322(24):2489-2496 [PubMed](https://pubmed.ncbi.nlm.nih.gov/31860047/)"
       },
       {
         "recommendation": "Acupuncture for migraine prevention (Cochrane review)",
         "evidenceLevel": "Class I, Level A",
-        "source": "Linde K et al. Cochrane Database Syst Rev 2016;(6):CD001218"
+        "source": "Linde K et al. Cochrane Database Syst Rev 2016;(6):CD001218 [PubMed](https://pubmed.ncbi.nlm.nih.gov/27351677/)"
       },
       {
         "recommendation": "Beta-blockers (propranolol) for migraine prevention",
         "evidenceLevel": "Class I, Level A",
-        "source": "Linde K et al. Cochrane Database Syst Rev 2004;(2):CD003225"
+        "source": "Linde K et al. Cochrane Database Syst Rev 2004;(2):CD003225 [PubMed](https://pubmed.ncbi.nlm.nih.gov/15106196/)"
       },
       {
         "recommendation": "Medication overuse headache criteria and management",
         "evidenceLevel": "Expert Consensus",
-        "source": "Diener HC et al. Nat Rev Neurol 2016;12(10):575-583"
+        "source": "Diener HC et al. Nat Rev Neurol 2016;12(10):575-583 [PubMed](https://pubmed.ncbi.nlm.nih.gov/27615418/)"
       },
       {
         "recommendation": "Candesartan for migraine prevention",
         "evidenceLevel": "Class II, Level B",
-        "source": "Stovner LJ et al. JAMA 2014;311(11):1091-1099"
+        "source": "Stovner LJ et al. JAMA 2014;311(11):1091-1099 [PubMed](https://pubmed.ncbi.nlm.nih.gov/24643616/)"
       },
       {
         "recommendation": "Neuromodulation devices for migraine (sTMS, eTNS, nVNS)",
         "evidenceLevel": "Class II, Level B",
-        "source": "Starling AJ et al. Headache 2018;58(S1):187-196"
+        "source": "Starling AJ et al. Headache 2018;58(S1):187-196 [PubMed](https://pubmed.ncbi.nlm.nih.gov/29527677/)"
       }
     ],
     "monitoring": [
@@ -88821,7 +88821,7 @@
   "Low Pressure Headache / Spontaneous Intracranial Hypotension": {
     "id": "low-pressure-headache",
     "title": "Low Pressure Headache / Spontaneous Intracranial Hypotension",
-    "version": "1.0",
+    "version": "1.1",
     "icd10": [
       "** G96.00 (Cerebrospinal fluid leak",
       "unspecified)",
@@ -88851,7 +88851,7 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "CMP (CPT 80053)",
@@ -88860,7 +88860,7 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "Coagulation studies (PT/INR, aPTT) (CPT 85610, 85730)",
@@ -88869,7 +88869,7 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "ESR (CPT 85652) / CRP (CPT 86140)",
@@ -88878,7 +88878,7 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "Pregnancy test (beta-hCG) (CPT 84703)",
@@ -88887,7 +88887,7 @@
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "STAT"
           }
         ],
         "Extended Workup": [
@@ -88907,7 +88907,7 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "Blood cultures (CPT 87040)",
@@ -88916,7 +88916,7 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "-",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "Connective tissue markers (if recurrent SIH)",
@@ -88945,7 +88945,7 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "CT cisternography with intrathecal contrast",
@@ -88965,7 +88965,7 @@
             "ED": "URGENT",
             "HOSP": "URGENT",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "Cell count (tubes 1 and 4) (CPT 89051)",
@@ -88974,7 +88974,7 @@
             "ED": "URGENT",
             "HOSP": "URGENT",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "Protein (CPT 84157)",
@@ -88983,7 +88983,7 @@
             "ED": "URGENT",
             "HOSP": "URGENT",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "Glucose with serum glucose (CPT 82945)",
@@ -88992,7 +88992,7 @@
             "ED": "URGENT",
             "HOSP": "URGENT",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "Gram stain and culture (CPT 87205, 87070)",
@@ -89001,7 +89001,7 @@
             "ED": "URGENT",
             "HOSP": "URGENT",
             "OPD": "-",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "RBC count (CPT 89051)",
@@ -89010,7 +89010,7 @@
             "ED": "URGENT",
             "HOSP": "URGENT",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           }
         ]
       },
@@ -89024,7 +89024,7 @@
             "ED": "URGENT",
             "HOSP": "URGENT",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "CT head without contrast (CPT 70450)",
@@ -89034,7 +89034,7 @@
             "ED": "STAT",
             "HOSP": "URGENT",
             "OPD": "-",
-            "ICU": "-"
+            "ICU": "STAT"
           }
         ],
         "Extended": [
@@ -89134,7 +89134,7 @@
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "-",
-            "ICU": "-"
+            "ICU": "STAT"
           },
           {
             "item": "Caffeine sodium benzoate IV",
@@ -89156,7 +89156,7 @@
             "ED": "URGENT",
             "HOSP": "URGENT",
             "OPD": "-",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "Caffeine oral",
@@ -89165,13 +89165,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "200-300 mg q6h PRN",
-                  "orderSentence": "Caffeine oral 200-300 mg q6h PRN PO"
+                  "text": "200 mg q6h",
+                  "orderSentence": "Caffeine oral 200 mg q6h PO"
                 }
               ],
               "route": "PO",
               "instructions": "200-300 mg PO q6h (coffee ~100 mg/cup); max 900 mg/day; adjunct to other measures",
-              "orderSentence": "Caffeine oral 200-300 mg q6h PRN PO"
+              "orderSentence": "Caffeine oral 200 mg q6h PO"
             },
             "contraindications": "Cardiac arrhythmia, severe anxiety, insomnia",
             "monitoring": "Heart rate, sleep quality, anxiety",
@@ -89187,20 +89187,20 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "Flat or Trendelenburg position for 24-48 hours initially",
-                  "orderSentence": "Strict bed rest (Trendelenburg) Flat or Trendelenburg position for 24-48 hours initially -"
+                  "text": "Flat or Trendelenburg position",
+                  "orderSentence": "Strict bed rest (Trendelenburg) Flat or Trendelenburg position -"
                 }
               ],
               "route": "-",
-              "instructions": "Strict bed rest in supine or slight Trendelenburg (10-15 degrees); allow bathroom privileges only",
-              "orderSentence": "Strict bed rest (Trendelenburg) Flat or Trendelenburg position for 24-48 hours initially -"
+              "instructions": "Strict bed rest in supine or slight Trendelenburg (10-15 degrees) for 24-48 hours initially; allow bathroom privileges only",
+              "orderSentence": "Strict bed rest (Trendelenburg) Flat or Trendelenburg position -"
             },
             "contraindications": "DVT risk with prolonged immobility",
             "monitoring": "DVT prophylaxis, skin integrity",
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "-",
-            "ICU": "-"
+            "ICU": "STAT"
           },
           {
             "item": "Abdominal binder",
@@ -89209,13 +89209,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "Apply snugly around abdomen",
-                  "orderSentence": "Abdominal binder Apply snugly around abdomen -"
+                  "text": "Apply snugly",
+                  "orderSentence": "Abdominal binder Apply snugly -"
                 }
               ],
               "route": "-",
               "instructions": "Apply abdominal binder continuously while upright; may improve symptoms by increasing epidural pressure",
-              "orderSentence": "Abdominal binder Apply snugly around abdomen -"
+              "orderSentence": "Abdominal binder Apply snugly -"
             },
             "contraindications": "Abdominal surgery, respiratory compromise",
             "monitoring": "Respiratory comfort, skin integrity",
@@ -89253,13 +89253,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "400-600 mg q6h",
-                  "orderSentence": "Ibuprofen 400-600 mg q6h PO"
+                  "text": "400 mg q6h",
+                  "orderSentence": "Ibuprofen 400 mg q6h PO"
                 }
               ],
               "route": "PO",
               "instructions": "400-600 mg PO q6h PRN; max 2400 mg/day; take with food",
-              "orderSentence": "Ibuprofen 400-600 mg q6h PO"
+              "orderSentence": "Ibuprofen 400 mg q6h PO"
             },
             "contraindications": "Renal disease, GI bleeding, anticoagulation, aspirin allergy",
             "monitoring": "Renal function, GI symptoms",
@@ -89275,13 +89275,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "4-8 mg q8h PRN",
-                  "orderSentence": "Ondansetron 4-8 mg q8h PRN IV"
+                  "text": "4 mg q8h PRN",
+                  "orderSentence": "Ondansetron 4 mg q8h PRN IV"
                 }
               ],
               "route": "IV",
               "instructions": "4-8 mg IV or PO q8h PRN nausea; max 24 mg/day",
-              "orderSentence": "Ondansetron 4-8 mg q8h PRN IV"
+              "orderSentence": "Ondansetron 4 mg q8h PRN IV"
             },
             "contraindications": "QT prolongation, severe hepatic impairment",
             "monitoring": "QTc if repeated dosing",
@@ -89289,6 +89289,50 @@
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-"
+          },
+          {
+            "item": "Docusate sodium",
+            "route": "PO",
+            "indication": "Prevent straining during bed rest which can worsen CSF leak",
+            "dosing": {
+              "doseOptions": [
+                {
+                  "text": "100 mg BID",
+                  "orderSentence": "Docusate sodium 100 mg BID PO"
+                }
+              ],
+              "route": "PO",
+              "instructions": "100 mg PO BID; continue throughout bed rest period and until regular activity resumes",
+              "orderSentence": "Docusate sodium 100 mg BID PO"
+            },
+            "contraindications": "Intestinal obstruction",
+            "monitoring": "Bowel frequency",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
+            "ICU": "-"
+          },
+          {
+            "item": "Enoxaparin",
+            "route": "SC",
+            "indication": "DVT prophylaxis during prolonged bed rest in hospitalized SIH patients",
+            "dosing": {
+              "doseOptions": [
+                {
+                  "text": "40 mg daily",
+                  "orderSentence": "Enoxaparin 40 mg daily SC"
+                }
+              ],
+              "route": "SC",
+              "instructions": "40 mg SC daily; begin within 24 hours of admission if on bed rest >48 hours; hold 12 hours before and after epidural blood patch",
+              "orderSentence": "Enoxaparin 40 mg daily SC"
+            },
+            "contraindications": "Active bleeding, HIT, severe renal impairment (CrCl <30: reduce to 30 mg daily), coagulopathy, within 12 hours of EBP",
+            "monitoring": "Platelet count q2-3 days; signs of bleeding; renal function",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "-",
+            "ICU": "ROUTINE"
           }
         ],
         "Epidural Blood Patch (Primary Definitive Treatment)": [
@@ -89351,8 +89395,8 @@
               "instructions": "Repeat EBP 5-7 days after first attempt if symptoms persist; may use larger volume (up to 30 mL); consider targeted approach if not done initially",
               "orderSentence": "Repeat epidural blood patch 20-30 mL autologous blood Epidural"
             },
-            "contraindications": "Same as above",
-            "monitoring": "Same as above; consider leak localization if second EBP fails",
+            "contraindications": "Active systemic infection/bacteremia, local skin infection, coagulopathy (INR >1.5, platelets <50K), patient refusal",
+            "monitoring": "Vital signs during and 1h post-procedure; neurologic exam; consider leak localization if second EBP fails",
             "ED": "-",
             "HOSP": "URGENT",
             "OPD": "ROUTINE",
@@ -89367,13 +89411,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "200-300 mg BID",
-                  "orderSentence": "Theophylline 200-300 mg BID PO"
+                  "text": "200 mg BID",
+                  "orderSentence": "Theophylline 200 mg BID PO"
                 }
               ],
               "route": "PO",
-              "instructions": "200-300 mg PO BID; target serum level 10-15 mcg/mL; slow titration; may take 1-2 weeks for effect",
-              "orderSentence": "Theophylline 200-300 mg BID PO"
+              "instructions": "Start 200 mg PO BID; titrate to 300 mg BID based on serum levels; target serum level 10-15 mcg/mL; may take 1-2 weeks for effect",
+              "orderSentence": "Theophylline 200 mg BID PO"
             },
             "contraindications": "Seizure disorder, cardiac arrhythmia, active peptic ulcer, hepatic impairment",
             "monitoring": "Theophylline level q2-4 weeks initially; heart rate; GI symptoms; drug interactions (CYP1A2)",
@@ -89389,20 +89433,20 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "200-300 mg/day",
-                  "orderSentence": "Hydrocortisone 200-300 mg/day IV"
+                  "text": "200 mg daily",
+                  "orderSentence": "Hydrocortisone 200 mg daily IV"
                 }
               ],
               "route": "IV",
               "instructions": "200 mg IV on day 1 then taper: 200 mg IV daily x 2d, 150 mg x 2d, 100 mg x 2d, then convert to oral; total course 7-14 days",
-              "orderSentence": "Hydrocortisone 200-300 mg/day IV"
+              "orderSentence": "Hydrocortisone 200 mg daily IV"
             },
             "contraindications": "Active untreated infection, uncontrolled diabetes",
             "monitoring": "Blood glucose q6h, blood pressure, electrolytes",
             "ED": "-",
             "HOSP": "URGENT",
             "OPD": "-",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "Prednisone (oral taper)",
@@ -89411,13 +89455,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "60 mg daily x 5d taper",
-                  "orderSentence": "Prednisone (oral taper) 60 mg daily x 5d taper PO"
+                  "text": "60 mg daily",
+                  "orderSentence": "Prednisone (oral taper) 60 mg daily PO"
                 }
               ],
               "route": "PO",
               "instructions": "60 mg PO daily x 5 days, then taper by 10 mg every 3-5 days over 3-4 weeks",
-              "orderSentence": "Prednisone (oral taper) 60 mg daily x 5d taper PO"
+              "orderSentence": "Prednisone (oral taper) 60 mg daily PO"
             },
             "contraindications": "Active untreated infection, uncontrolled diabetes, GI bleeding",
             "monitoring": "Blood glucose, blood pressure, mood, GI symptoms",
@@ -89435,18 +89479,10 @@
                 {
                   "text": "300 mg qHS",
                   "orderSentence": "Gabapentin 300 mg qHS PO"
-                },
-                {
-                  "text": "300 mg TID",
-                  "orderSentence": "Gabapentin 300 mg TID PO"
-                },
-                {
-                  "text": "600 mg TID",
-                  "orderSentence": "Gabapentin 600 mg TID PO"
                 }
               ],
               "route": "PO",
-              "instructions": "Start 300 mg qHS; titrate by 300 mg q3-5d; target 900-1800 mg/day divided TID; max 3600 mg/day",
+              "instructions": "Start 300 mg PO qHS; titrate by 300 mg q3-5d; target 900-1800 mg/day divided TID; max 3600 mg/day",
               "orderSentence": "Gabapentin 300 mg qHS PO"
             },
             "contraindications": "Severe renal impairment (adjust dose)",
@@ -89465,14 +89501,10 @@
                 {
                   "text": "75 mg BID",
                   "orderSentence": "Pregabalin 75 mg BID PO"
-                },
-                {
-                  "text": "150 mg BID",
-                  "orderSentence": "Pregabalin 150 mg BID PO"
                 }
               ],
               "route": "PO",
-              "instructions": "Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID",
+              "instructions": "Start 75 mg PO BID; increase to 150 mg BID after 1 week; max 300 mg BID",
               "orderSentence": "Pregabalin 75 mg BID PO"
             },
             "contraindications": "Severe renal impairment (adjust dose), angioedema history",
@@ -89491,13 +89523,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "Fibrin sealant injected at leak site",
-                  "orderSentence": "Epidural fibrin glue patch Fibrin sealant injected at leak site Epidural"
+                  "text": "Fibrin sealant at leak site",
+                  "orderSentence": "Epidural fibrin glue patch Fibrin sealant at leak site Epidural"
                 }
               ],
               "route": "Epidural",
               "instructions": "Inject fibrin glue (e.g., Tisseel) at identified leak site under fluoroscopic or CT guidance; may combine with blood patch; performed by anesthesia or interventional radiology",
-              "orderSentence": "Epidural fibrin glue patch Fibrin sealant injected at leak site Epidural"
+              "orderSentence": "Epidural fibrin glue patch Fibrin sealant at leak site Epidural"
             },
             "contraindications": "Active infection, known allergy to fibrin/bovine components, coagulopathy",
             "monitoring": "Post-procedure neuro exam, headache assessment, vital signs; observe 2-4 hours post",
@@ -89548,7 +89580,7 @@
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "EXT",
-            "ICU": "-"
+            "ICU": "ROUTINE"
           },
           {
             "item": "CSF-venous fistula ligation/embolization",
@@ -89592,7 +89624,7 @@
             "ED": "-",
             "HOSP": "EXT",
             "OPD": "-",
-            "ICU": "-"
+            "ICU": "EXT"
           },
           {
             "item": "Intrathecal saline infusion",
@@ -89614,7 +89646,7 @@
             "ED": "-",
             "HOSP": "EXT",
             "OPD": "-",
-            "ICU": "-"
+            "ICU": "EXT"
           }
         ],
         "Subdural Hematoma Management (Complication of SIH)": [
@@ -89638,7 +89670,7 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "Epidural blood patch (treat underlying cause)",
@@ -89647,16 +89679,16 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "Per EBP protocol above",
-                  "orderSentence": "Epidural blood patch (treat underlying cause) Per EBP protocol above Epidural"
+                  "text": "15-30 mL autologous blood",
+                  "orderSentence": "Epidural blood patch (treat underlying cause) 15-30 mL autologous blood Epidural"
                 }
               ],
               "route": "Epidural",
-              "instructions": "EBP should be performed BEFORE considering surgical evacuation; SDH from SIH often recurs after drainage if leak not addressed",
-              "orderSentence": "Epidural blood patch (treat underlying cause) Per EBP protocol above Epidural"
+              "instructions": "EBP should be performed BEFORE considering surgical evacuation; inject 15-30 mL autologous blood into epidural space under fluoroscopy; SDH from SIH often recurs after drainage if leak not addressed",
+              "orderSentence": "Epidural blood patch (treat underlying cause) 15-30 mL autologous blood Epidural"
             },
-            "contraindications": "Per EBP contraindications",
-            "monitoring": "Per EBP monitoring; serial CT for SDH",
+            "contraindications": "Active systemic infection/bacteremia, local skin infection, coagulopathy (INR >1.5, platelets <50K), patient refusal",
+            "monitoring": "Vital signs during and 1h post-procedure; neurologic exam; serial CT for SDH",
             "ED": "URGENT",
             "HOSP": "URGENT",
             "OPD": "ROUTINE",
@@ -89682,7 +89714,7 @@
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "-",
-            "ICU": "-"
+            "ICU": "STAT"
           }
         ]
       },
@@ -89693,14 +89725,14 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "Anesthesiology or pain medicine consult for epidural blood patch placement",
             "ED": "URGENT",
             "HOSP": "URGENT",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "Neuroradiology consult for CT myelography interpretation and leak localization",
@@ -89728,7 +89760,7 @@
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "-",
-            "ICU": "-"
+            "ICU": "STAT"
           },
           {
             "item": "Headache specialist referral for chronic post-SIH headache or persistent symptoms despite leak resolution",
@@ -89757,49 +89789,57 @@
             "item": "Remain flat or in Trendelenburg position as much as possible to reduce headache while awaiting definitive treatment (upright posture worsens symptoms)",
             "ED": "ROUTINE",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Increase oral fluid intake to at least 2-3 liters daily to support CSF production and hydration",
             "ED": "ROUTINE",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Increase caffeine intake (coffee, tea) to 300-500 mg/day as this constricts cerebral blood vessels and may reduce headache",
             "ED": "ROUTINE",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Avoid Valsalva maneuvers (straining, heavy lifting, coughing) which can worsen or re-open CSF leaks",
             "ED": "ROUTINE",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "After epidural blood patch: lie flat for 1-2 hours post-procedure, then gradually increase activity over 24-48 hours; avoid heavy lifting for 2-4 weeks",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Return to ED immediately if headache suddenly becomes the worst headache of life, new neurologic symptoms develop (weakness, numbness, vision changes, confusion), or fever occurs (may indicate subdural hematoma, meningitis, or abscess)",
             "ED": "ROUTINE",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Some patients have persistent headache after successful leak treatment; this typically improves over weeks to months",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Follow up with neurology in 1-2 weeks after epidural blood patch to assess response and plan further workup if needed",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           }
         ],
         "Lifestyle & Prevention": [
@@ -89807,43 +89847,43 @@
             "item": "Stay well-hydrated (2-3 L daily) to support CSF production and overall recovery",
             "ED": "ROUTINE",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Gradual return to physical activity after symptom resolution; avoid strenuous exercise for 4-6 weeks after blood patch",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Avoid excessive caffeine withdrawal if caffeine has been used therapeutically (taper gradually to prevent rebound headache)",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
-            "item": "DVT prophylaxis during prolonged bed rest: compression stockings and ambulation when tolerated; pharmacologic prophylaxis if hospitalized >48 hours on bed rest",
+            "item": "Compression stockings during prolonged bed rest for DVT prevention; ambulate when tolerated",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "-"
-          },
-          {
-            "item": "Stool softener (docusate 100 mg BID) during bed rest to avoid straining which can worsen CSF leak",
-            "ED": "-",
-            "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "-",
+            "ICU": "-"
           },
           {
             "item": "If connective tissue disorder identified: avoid contact sports and activities with high risk of spinal trauma",
             "ED": "-",
             "HOSP": "-",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Inform future anesthesiologists of SIH history; use smallest gauge spinal needle if LP/spinal anesthesia required in future",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           }
         ]
       }
@@ -89914,117 +89954,117 @@
       {
         "recommendation": "Orthostatic headache is hallmark of SIH",
         "evidenceLevel": "Expert consensus; diagnostic criterion",
-        "source": "Schievink WI. Spontaneous spinal cerebrospinal fluid leaks and intracranial hypotension. JAMA 2006"
+        "source": "Schievink WI. Spontaneous spinal cerebrospinal fluid leaks and intracranial hypotension. JAMA 2006 [PubMed: 16705110](https://pubmed.ncbi.nlm.nih.gov/16705110/)"
       },
       {
         "recommendation": "MRI brain with gadolinium showing pachymeningeal enhancement is most sensitive diagnostic finding",
         "evidenceLevel": "Class II, Level B",
-        "source": "Mokri B. Spontaneous low pressure, low CSF volume headaches: spontaneous CSF leaks. Headache 2013"
+        "source": "Mokri B. Spontaneous low pressure, low CSF volume headaches: spontaneous CSF leaks. Headache 2013 [PubMed: 23808630](https://pubmed.ncbi.nlm.nih.gov/23808630/)"
       },
       {
         "recommendation": "Epidural blood patch is first-line definitive treatment for PDPH",
         "evidenceLevel": "Class I, Level A",
-        "source": "Boonmak P, Boonmak S. Epidural blood patching for preventing and treating post-dural puncture headache. Cochrane Database Syst Rev 2010"
+        "source": "Boonmak P, Boonmak S. Epidural blood patching for preventing and treating post-dural puncture headache. Cochrane Database Syst Rev 2010 [PubMed: 20091522](https://pubmed.ncbi.nlm.nih.gov/20091522/)"
       },
       {
         "recommendation": "Epidural blood patch effective for SIH",
         "evidenceLevel": "Class II, Level B",
-        "source": "Sencakova D et al. The effect of epidural blood patch on intracranial volumes and pressures. Neurology 2001"
+        "source": "Sencakova D et al. The efficacy of epidural blood patch in spontaneous CSF leaks. Neurology 2001 [PubMed: 11723293](https://pubmed.ncbi.nlm.nih.gov/11723293/)"
       },
       {
         "recommendation": "CT myelography is gold standard for CSF leak localization",
         "evidenceLevel": "Class II, Level B",
-        "source": "Mokri B. Spontaneous cerebrospinal fluid leaks: from intracranial hypotension to cerebrospinal fluid hypovolemia. Mayo Clin Proc 1999"
+        "source": "Mokri B. Spontaneous cerebrospinal fluid leaks: from intracranial hypotension to cerebrospinal fluid hypovolemia. Mayo Clin Proc 1999 [PubMed: 10560599](https://pubmed.ncbi.nlm.nih.gov/10560599/)"
       },
       {
         "recommendation": "Caffeine provides short-term benefit for PDPH",
         "evidenceLevel": "Class II, Level B",
-        "source": "Camann WR et al. Effects of oral caffeine on postdural puncture headache. Anesth Analg 1990"
+        "source": "Camann WR et al. Effects of oral caffeine on postdural puncture headache. Anesth Analg 1990 [PubMed: 2405733](https://pubmed.ncbi.nlm.nih.gov/2405733/)"
       },
       {
         "recommendation": "Conservative treatment (bed rest, hydration, caffeine) as initial approach",
         "evidenceLevel": "Expert consensus",
-        "source": "Schievink WI. Spontaneous spinal cerebrospinal fluid leaks. Cephalalgia 2008"
+        "source": "Schievink WI. Spontaneous spinal cerebrospinal fluid leaks. Cephalalgia 2008 [PubMed: 19037970](https://pubmed.ncbi.nlm.nih.gov/19037970/)"
       },
       {
         "recommendation": "CSF opening pressure may be normal in 20-30% of SIH patients",
         "evidenceLevel": "Class III, Level B",
-        "source": "Schievink WI et al. Diagnostic criteria for headache due to spontaneous intracranial hypotension. Neurology 2011"
+        "source": "Schievink WI et al. Diagnostic criteria for headache due to spontaneous intracranial hypotension. Headache 2011 [PubMed: 21658029](https://pubmed.ncbi.nlm.nih.gov/21658029/)"
       },
       {
         "recommendation": "Targeted EBP has higher success rate than blind EBP for SIH",
         "evidenceLevel": "Class III, Level B",
-        "source": "Patel MR et al. CT-guided lumbar epidural blood patch for treatment of SIH. AJNR Am J Neuroradiol 2001"
+        "source": "Kranz PG et al. CT-guided epidural blood patching of directly observed or potential leak sites for the targeted treatment of spontaneous intracranial hypotension. AJNR Am J Neuroradiol 2011 [PubMed: 21349964](https://pubmed.ncbi.nlm.nih.gov/21349964/)"
       },
       {
         "recommendation": "Fibrin glue sealant effective for refractory CSF leaks",
         "evidenceLevel": "Class III, Level C",
-        "source": "Schievink WI et al. Treatment of spontaneous intracranial hypotension with percutaneous placement of fibrin sealant. J Neurosurg 2004"
+        "source": "Schievink WI et al. Treatment of spontaneous intracranial hypotension with percutaneous placement of fibrin sealant. J Neurosurg 2004 [PubMed: 15200130](https://pubmed.ncbi.nlm.nih.gov/15200130/)"
       },
       {
         "recommendation": "Surgical repair for refractory dural defects",
         "evidenceLevel": "Class III, Level C",
-        "source": "Schievink WI et al. Surgical treatment of spontaneous spinal cerebrospinal fluid leaks. J Neurosurg 1998"
+        "source": "Schievink WI et al. Surgical treatment of spontaneous spinal cerebrospinal fluid leaks. J Neurosurg 1998 [PubMed: 9452231](https://pubmed.ncbi.nlm.nih.gov/9452231/)"
       },
       {
         "recommendation": "Brain sagging on MRI correlates with clinical severity",
         "evidenceLevel": "Class III, Level B",
-        "source": "Savoiardo M et al. Headache and MRI findings in spontaneous intracranial hypotension. Neurology 2001"
+        "source": "Savoiardo M et al. Spontaneous intracranial hypotension with deep brain swelling. Brain 2007 [PubMed: 17535837](https://pubmed.ncbi.nlm.nih.gov/17535837/)"
       },
       {
         "recommendation": "Connective tissue disorders (EDS, Marfan) predispose to SIH",
         "evidenceLevel": "Class III, Level B",
-        "source": "Schievink WI et al. Connective tissue disorders with spontaneous spinal CSF leaks and intracranial hypotension. Neurology 2004"
+        "source": "Schievink WI et al. Connective tissue disorders with spontaneous spinal CSF leaks and intracranial hypotension. Neurosurgery 2004 [PubMed: 14683542](https://pubmed.ncbi.nlm.nih.gov/14683542/)"
       },
       {
         "recommendation": "Subdural hematomas complicate SIH and often resolve after leak treatment",
         "evidenceLevel": "Class III, Level B",
-        "source": "De Noronha RJ et al. Subdural haematoma: a potentially serious consequence of spontaneous intracranial hypotension. J Neurol Neurosurg Psychiatry 2003"
+        "source": "De Noronha RJ et al. Subdural haematoma: a potentially serious consequence of spontaneous intracranial hypotension. J Neurol Neurosurg Psychiatry 2003 [PubMed: 12754345](https://pubmed.ncbi.nlm.nih.gov/12754345/)"
       },
       {
         "recommendation": "CSF-venous fistulas are an underrecognized cause of SIH",
         "evidenceLevel": "Class III, Level C",
-        "source": "Schievink WI et al. A classification system of spontaneous spinal CSF leaks. Neurology 2016"
+        "source": "Schievink WI et al. A classification system of spontaneous spinal CSF leaks. Neurology 2016 [PubMed: 27440149](https://pubmed.ncbi.nlm.nih.gov/27440149/)"
       },
       {
         "recommendation": "Digital subtraction myelography is gold standard for CSF-venous fistula detection",
         "evidenceLevel": "Class III, Level C",
-        "source": "Farb RI et al. Spontaneous intracranial hypotension: a systematic imaging approach for CSF leak localization and management. AJNR Am J Neuroradiol 2019"
+        "source": "Farb RI et al. Spontaneous intracranial hypotension: a systematic imaging approach for CSF leak localization and management. AJNR Am J Neuroradiol 2019 [PubMed: 30923083](https://pubmed.ncbi.nlm.nih.gov/30923083/)"
       },
       {
         "recommendation": "Theophylline may increase CSF production via adenosine receptor antagonism",
         "evidenceLevel": "Class III, Level C",
-        "source": "Mokri B. Headaches caused by decreased intracranial pressure. Neurology 2002"
+        "source": "Mokri B. Headaches caused by decreased intracranial pressure: diagnosis and management. Curr Opin Neurol 2003 [PubMed: 12858068](https://pubmed.ncbi.nlm.nih.gov/12858068/)"
       },
       {
         "recommendation": "Hydrocortisone/corticosteroids as adjunctive therapy for refractory SIH",
         "evidenceLevel": "Class III, Level C",
-        "source": "Gentile S et al. Spontaneous intracranial hypotension: a mini review. Neurol Sci 2004"
+        "source": "Grimaldi D et al. Spontaneous low cerebrospinal pressure: a mini review. Neurol Sci 2004 [PubMed: 15549523](https://pubmed.ncbi.nlm.nih.gov/15549523/)"
       },
       {
         "recommendation": "ICHD-3 diagnostic criteria for headache attributed to low CSF pressure",
         "evidenceLevel": "Expert consensus",
-        "source": "Headache Classification Committee of the International Headache Society. ICHD-3. Cephalalgia 2018"
+        "source": "Headache Classification Committee of the International Headache Society. ICHD-3. Cephalalgia 2018 [PubMed: 29368949](https://pubmed.ncbi.nlm.nih.gov/29368949/)"
       },
       {
         "recommendation": "Intrathecal gadolinium MRI for slow leak detection",
         "evidenceLevel": "Class III, Level C",
-        "source": "Akbar JJ et al. The role of MR myelography with intrathecal gadolinium in localization of spinal CSF leaks in patients with spontaneous intracranial hypotension. AJNR Am J Neuroradiol 2012"
+        "source": "Akbar JJ et al. The role of MR myelography with intrathecal gadolinium in localization of spinal CSF leaks in patients with spontaneous intracranial hypotension. AJNR Am J Neuroradiol 2012 [PubMed: 22173753](https://pubmed.ncbi.nlm.nih.gov/22173753/)"
       },
       {
         "recommendation": "MR myelography for non-invasive leak screening",
         "evidenceLevel": "Class II, Level B",
-        "source": "Wang YF et al. Spontaneous intracranial hypotension: management and prognosis. Neurology 2021"
+        "source": "Wang SJ. Spontaneous intracranial hypotension. Continuum (Minneap Minn) 2021 [PubMed: 34048402](https://pubmed.ncbi.nlm.nih.gov/34048402/)"
       },
       {
         "recommendation": "Dynamic CT myelography for fast CSF leaks",
         "evidenceLevel": "Class III, Level C",
-        "source": "Kranz PG et al. Characteristics of spinal CSF leaks in patients with spontaneous intracranial hypotension. AJNR Am J Neuroradiol 2016"
+        "source": "Kranz PG et al. Imaging signs in spontaneous intracranial hypotension: prevalence and relationship to CSF pressure. AJNR Am J Neuroradiol 2016 [PubMed: 26869465](https://pubmed.ncbi.nlm.nih.gov/26869465/)"
       },
       {
         "recommendation": "Continuous epidural saline infusion as bridge therapy",
         "evidenceLevel": "Case series",
-        "source": "Bai J et al. Continuous epidural saline infusion as a non-surgical treatment for refractory spontaneous intracranial hypotension. Pain Physician 2017"
+        "source": "Bai J et al. Continuous epidural saline infusion for treatment of refractory spontaneous intracranial hypotension. Pain Physician 2017"
       }
     ],
     "monitoring": [
@@ -90035,7 +90075,7 @@
         "ED": "STAT",
         "HOSP": "ROUTINE",
         "OPD": "ROUTINE",
-        "ICU": "-"
+        "ICU": "STAT"
       },
       {
         "item": "Neurologic examination (mental status, cranial nerves, motor, sensory)",
@@ -90044,7 +90084,7 @@
         "ED": "STAT",
         "HOSP": "ROUTINE",
         "OPD": "ROUTINE",
-        "ICU": "-"
+        "ICU": "STAT"
       },
       {
         "item": "Orthostatic vital signs",
@@ -90053,7 +90093,7 @@
         "ED": "STAT",
         "HOSP": "ROUTINE",
         "OPD": "ROUTINE",
-        "ICU": "-"
+        "ICU": "STAT"
       },
       {
         "item": "CT head (for subdural collections)",
@@ -90062,7 +90102,7 @@
         "ED": "URGENT",
         "HOSP": "ROUTINE",
         "OPD": "ROUTINE",
-        "ICU": "-"
+        "ICU": "URGENT"
       },
       {
         "item": "MRI brain with gadolinium (follow-up)",
@@ -90086,6 +90126,15 @@
         "item": "Blood glucose (if on steroids)",
         "frequency": "q6h while on IV steroids; daily on oral taper",
         "action": "Insulin sliding scale or hypoglycemic agent adjustment",
+        "ED": "-",
+        "HOSP": "ROUTINE",
+        "OPD": "ROUTINE",
+        "ICU": "ROUTINE"
+      },
+      {
+        "item": "Rebound intracranial hypertension monitoring",
+        "frequency": "Daily during first week after successful CSF leak treatment; each outpatient visit for 3 months",
+        "action": "Fundoscopic exam; consider LP to measure OP; acetazolamide if confirmed rebound IH",
         "ED": "-",
         "HOSP": "ROUTINE",
         "OPD": "ROUTINE",
@@ -90126,7 +90175,7 @@
   "Post-Concussion Syndrome": {
     "id": "post-concussion-syndrome",
     "title": "Post-Concussion Syndrome",
-    "version": "1.0",
+    "version": "1.1",
     "icd10": [
       "** F07.81 (Postconcussional syndrome)",
       "S06.0X0A (Concussion without loss of consciousness",
@@ -90619,8 +90668,8 @@
               "instructions": "Start 10 mg PO QHS; increase by 10 mg every 1-2 weeks; target 25-75 mg QHS; max 150 mg",
               "orderSentence": "Nortriptyline 10 mg PO"
             },
-            "contraindications": "Same as amitriptyline (generally better tolerated)",
-            "monitoring": "ECG at baseline; anticholinergic effects (less than amitriptyline)",
+            "contraindications": "Cardiac arrhythmia, glaucoma, urinary retention, recent MI",
+            "monitoring": "ECG at baseline; anticholinergic effects (less than amitriptyline); weight gain",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -92029,7 +92078,7 @@
   "Drug-Induced Parkinsonism": {
     "id": "drug-induced-parkinsonism",
     "title": "Drug-Induced Parkinsonism",
-    "version": "1.0",
+    "version": "1.1",
     "icd10": [
       "** G21.11 (Neuroleptic induced parkinsonism)",
       "G21.19 (Other drug induced secondary parkinsonism)",
@@ -92049,8 +92098,8 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-",
-            "rationale": "General health assessment; rule out infection",
+            "ICU": "URGENT",
+            "rationale": "General health assessment; rule out infection; leukocytosis if NMS suspected",
             "target": "Normal"
           },
           {
@@ -92058,7 +92107,7 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-",
+            "ICU": "URGENT",
             "rationale": "Hepatic/renal function for medication dosing and clearance assessment",
             "target": "Normal"
           },
@@ -92076,7 +92125,7 @@
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "ROUTINE",
-            "ICU": "-",
+            "ICU": "STAT",
             "rationale": "Identify all dopamine-blocking or depleting agents including OTC and herbal",
             "target": "Complete list of all current and recent medications"
           },
@@ -92085,7 +92134,7 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-",
+            "ICU": "URGENT",
             "rationale": "Assess toxicity or supratherapeutic levels of causative agent (valproate, lithium)",
             "target": "Therapeutic range"
           },
@@ -92094,7 +92143,7 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-",
+            "ICU": "URGENT",
             "rationale": "Metabolic evaluation; diabetes as comorbidity",
             "target": "Normal"
           }
@@ -92150,7 +92199,7 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "-",
-            "ICU": "-",
+            "ICU": "URGENT",
             "rationale": "Evaluate for NMS if fever, rigidity, autonomic instability present",
             "target": "Normal (30-200 U/L)"
           },
@@ -92177,7 +92226,7 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-",
+            "ICU": "URGENT",
             "rationale": "If on valproate; supratherapeutic levels increase risk",
             "target": "50-100 mcg/mL"
           },
@@ -92186,7 +92235,7 @@
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-",
+            "ICU": "URGENT",
             "rationale": "If on lithium; toxicity can cause parkinsonism",
             "target": "0.6-1.2 mEq/L"
           }
@@ -92257,7 +92306,7 @@
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "ROUTINE",
-            "ICU": "-",
+            "ICU": "STAT",
             "timing": "At presentation",
             "target": "Establish temporal relationship between medication and symptom onset",
             "contraindications": "None"
@@ -92357,20 +92406,20 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "Taper or discontinue dopamine-blocking agent per clinical judgment",
-                  "orderSentence": "Discontinue causative DRBA Taper or discontinue dopamine-blocking agent per clinical judgment -"
+                  "text": "-",
+                  "orderSentence": "Discontinue causative DRBA - -"
                 }
               ],
               "route": "-",
               "instructions": "Immediate discontinuation if not psychiatrically required; gradual taper over 1-2 weeks if on antipsychotic to avoid withdrawal psychosis",
-              "orderSentence": "Discontinue causative DRBA Taper or discontinue dopamine-blocking agent per clinical judgment -"
+              "orderSentence": "Discontinue causative DRBA - -"
             },
             "contraindications": "Active psychosis requiring continued antipsychotic (coordinate with psychiatry)",
             "monitoring": "Psychiatric status, withdrawal symptoms, rebound psychosis",
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "STAT"
           },
           {
             "item": "Discontinue metoclopramide",
@@ -92379,20 +92428,20 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "Discontinue immediately",
-                  "orderSentence": "Discontinue metoclopramide Discontinue immediately -"
+                  "text": "-",
+                  "orderSentence": "Discontinue metoclopramide - -"
                 }
               ],
               "route": "-",
-              "instructions": "Stop metoclopramide; switch to ondansetron 4-8 mg PO/IV q8h PRN for nausea",
-              "orderSentence": "Discontinue metoclopramide Discontinue immediately -"
+              "instructions": "Stop metoclopramide immediately; switch to ondansetron 4-8 mg PO/IV q8h PRN for nausea",
+              "orderSentence": "Discontinue metoclopramide - -"
             },
             "contraindications": "Active gastroparesis without alternative options",
             "monitoring": "Nausea control, GI motility",
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "STAT"
           },
           {
             "item": "Discontinue prochlorperazine",
@@ -92401,20 +92450,20 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "Discontinue immediately",
-                  "orderSentence": "Discontinue prochlorperazine Discontinue immediately -"
+                  "text": "-",
+                  "orderSentence": "Discontinue prochlorperazine - -"
                 }
               ],
               "route": "-",
-              "instructions": "Stop prochlorperazine; switch to ondansetron 4-8 mg PO/IV q8h PRN for nausea/vertigo",
-              "orderSentence": "Discontinue prochlorperazine Discontinue immediately -"
+              "instructions": "Stop prochlorperazine immediately; switch to ondansetron 4-8 mg PO/IV q8h PRN for nausea/vertigo",
+              "orderSentence": "Discontinue prochlorperazine - -"
             },
             "contraindications": "None",
             "monitoring": "Nausea/vertigo control",
             "ED": "STAT",
             "HOSP": "STAT",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "STAT"
           },
           {
             "item": "Dose reduction of causative agent",
@@ -92423,20 +92472,20 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "Reduce to lowest effective dose",
-                  "orderSentence": "Dose reduction of causative agent Reduce to lowest effective dose -"
+                  "text": "-",
+                  "orderSentence": "Dose reduction of causative agent - -"
                 }
               ],
               "route": "-",
               "instructions": "Reduce causative agent to minimum effective dose if complete discontinuation not possible; reassess in 2-4 weeks",
-              "orderSentence": "Dose reduction of causative agent Reduce to lowest effective dose -"
+              "orderSentence": "Dose reduction of causative agent - -"
             },
             "contraindications": "Complete discontinuation preferable when safe",
             "monitoring": "Symptom improvement, psychiatric stability",
             "ED": "URGENT",
             "HOSP": "URGENT",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           }
         ],
         "Symptomatic Treatment": [
@@ -92447,17 +92496,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "100 mg daily",
-                  "orderSentence": "Amantadine (Symmetrel) 100 mg daily PO"
-                },
-                {
-                  "text": "100 mg BID",
-                  "orderSentence": "Amantadine (Symmetrel) 100 mg BID PO"
+                  "text": "100 mg",
+                  "orderSentence": "Amantadine (Symmetrel) 100 mg PO"
                 }
               ],
               "route": "PO",
-              "instructions": "Start 100 mg daily; may increase to 100 mg BID after 1 week; max 300 mg/day; reduce dose in renal impairment (CrCl <50: 100 mg daily)",
-              "orderSentence": "Amantadine (Symmetrel) 100 mg daily PO"
+              "instructions": "Start 100 mg daily; may increase to 100 mg BID after 1 week; max 300 mg/day; reduce dose in renal impairment (CrCl <50: 100 mg daily; CrCl <15: contraindicated)",
+              "orderSentence": "Amantadine (Symmetrel) 100 mg PO"
             },
             "contraindications": "Severe renal impairment (CrCl <15); seizure history (relative); livedo reticularis (cosmetic); pregnancy",
             "monitoring": "Renal function, hallucinations, livedo reticularis, peripheral edema, confusion in elderly",
@@ -92468,30 +92513,18 @@
           },
           {
             "item": "Benztropine (Cogentin)",
-            "route": "PO, IM, IV",
+            "route": "PO",
             "indication": "Anticholinergic for DIP; particularly useful for tremor-predominant symptoms",
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "0.5 mg daily",
-                  "orderSentence": "Benztropine (Cogentin) 0.5 mg daily PO"
-                },
-                {
-                  "text": "0.5 mg BID",
-                  "orderSentence": "Benztropine (Cogentin) 0.5 mg BID PO"
-                },
-                {
-                  "text": "1 mg BID",
-                  "orderSentence": "Benztropine (Cogentin) 1 mg BID PO"
-                },
-                {
-                  "text": "2 mg BID",
-                  "orderSentence": "Benztropine (Cogentin) 2 mg BID PO"
+                  "text": "0.5 mg",
+                  "orderSentence": "Benztropine (Cogentin) 0.5 mg PO"
                 }
               ],
               "route": "PO",
               "instructions": "Start 0.5 mg daily; titrate by 0.5 mg q5-7d; usual range 1-4 mg/day in divided doses; max 6 mg/day",
-              "orderSentence": "Benztropine (Cogentin) 0.5 mg daily PO"
+              "orderSentence": "Benztropine (Cogentin) 0.5 mg PO"
             },
             "contraindications": "Narrow-angle glaucoma; GI obstruction; urinary retention; dementia; elderly (relative - prefer amantadine)",
             "monitoring": "Anticholinergic effects (dry mouth, constipation, urinary retention, confusion, blurred vision), cognitive impairment in elderly, tachycardia",
@@ -92501,27 +92534,41 @@
             "ICU": "-"
           },
           {
+            "item": "Benztropine (Cogentin) - acute",
+            "route": "IM, IV",
+            "indication": "Acute anticholinergic relief for severe DIP or dystonic reaction",
+            "dosing": {
+              "doseOptions": [
+                {
+                  "text": "1 mg",
+                  "orderSentence": "Benztropine (Cogentin) - acute 1 mg IM"
+                }
+              ],
+              "route": "IM",
+              "instructions": "1-2 mg IM or IV for acute relief; may repeat in 30 min; transition to oral maintenance",
+              "orderSentence": "Benztropine (Cogentin) - acute 1 mg IM"
+            },
+            "contraindications": "Narrow-angle glaucoma; GI obstruction; urinary retention; dementia",
+            "monitoring": "Anticholinergic effects, sedation, heart rate",
+            "ED": "STAT",
+            "HOSP": "URGENT",
+            "OPD": "-",
+            "ICU": "-"
+          },
+          {
             "item": "Trihexyphenidyl (Artane)",
             "route": "PO",
             "indication": "Anticholinergic for DIP; alternative to benztropine",
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "1 mg daily",
-                  "orderSentence": "Trihexyphenidyl (Artane) 1 mg daily PO"
-                },
-                {
-                  "text": "2 mg TID",
-                  "orderSentence": "Trihexyphenidyl (Artane) 2 mg TID PO"
-                },
-                {
-                  "text": "5 mg TID",
-                  "orderSentence": "Trihexyphenidyl (Artane) 5 mg TID PO"
+                  "text": "1 mg",
+                  "orderSentence": "Trihexyphenidyl (Artane) 1 mg PO"
                 }
               ],
               "route": "PO",
               "instructions": "Start 1 mg daily; increase by 2 mg q3-5d; usual range 6-10 mg/day in divided doses; max 15 mg/day",
-              "orderSentence": "Trihexyphenidyl (Artane) 1 mg daily PO"
+              "orderSentence": "Trihexyphenidyl (Artane) 1 mg PO"
             },
             "contraindications": "Narrow-angle glaucoma; GI obstruction; urinary retention; dementia; elderly (relative)",
             "monitoring": "Anticholinergic effects (dry mouth, constipation, urinary retention, confusion), cognitive impairment, tachycardia",
@@ -92531,33 +92578,47 @@
             "ICU": "-"
           },
           {
-            "item": "Diphenhydramine (Benadryl)",
-            "route": "PO, IV, IM",
+            "item": "Diphenhydramine (Benadryl) IV/IM",
+            "route": "IV, IM",
             "indication": "Acute symptomatic relief of DIP in ED/inpatient; mild anticholinergic properties",
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "25 mg IV PRN",
-                  "orderSentence": "Diphenhydramine (Benadryl) 25 mg IV PRN PO, IV, IM"
-                },
-                {
-                  "text": "50 mg IV PRN",
-                  "orderSentence": "Diphenhydramine (Benadryl) 50 mg IV PRN PO, IV, IM"
-                },
-                {
-                  "text": "25 mg PO TID",
-                  "orderSentence": "Diphenhydramine (Benadryl) 25 mg PO TID PO, IV, IM"
+                  "text": "25 mg",
+                  "orderSentence": "Diphenhydramine (Benadryl) IV/IM 25 mg IV"
                 }
               ],
-              "route": "PO, IV, IM",
-              "instructions": "25-50 mg IV/IM for acute relief; 25-50 mg PO q6-8h for ongoing symptoms; max 300 mg/day",
-              "orderSentence": "Diphenhydramine (Benadryl) 25 mg IV PRN PO, IV, IM"
+              "route": "IV",
+              "instructions": "25-50 mg IV/IM for acute relief; may repeat q6-8h; max 300 mg/day",
+              "orderSentence": "Diphenhydramine (Benadryl) IV/IM 25 mg IV"
             },
             "contraindications": "Narrow-angle glaucoma; urinary retention",
             "monitoring": "Sedation, anticholinergic effects, falls in elderly",
             "ED": "URGENT",
             "HOSP": "ROUTINE",
             "OPD": "-",
+            "ICU": "-"
+          },
+          {
+            "item": "Diphenhydramine (Benadryl) PO",
+            "route": "PO",
+            "indication": "Mild symptomatic relief of DIP; oral maintenance",
+            "dosing": {
+              "doseOptions": [
+                {
+                  "text": "25 mg",
+                  "orderSentence": "Diphenhydramine (Benadryl) PO 25 mg PO"
+                }
+              ],
+              "route": "PO",
+              "instructions": "25-50 mg PO q6-8h for ongoing symptoms; max 300 mg/day",
+              "orderSentence": "Diphenhydramine (Benadryl) PO 25 mg PO"
+            },
+            "contraindications": "Narrow-angle glaucoma; urinary retention",
+            "monitoring": "Sedation, anticholinergic effects, falls in elderly",
+            "ED": "-",
+            "HOSP": "ROUTINE",
+            "OPD": "ROUTINE",
             "ICU": "-"
           }
         ],
@@ -92569,25 +92630,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "25 mg QHS",
-                  "orderSentence": "Quetiapine (Seroquel) 25 mg QHS PO"
-                },
-                {
-                  "text": "50 mg BID",
-                  "orderSentence": "Quetiapine (Seroquel) 50 mg BID PO"
-                },
-                {
-                  "text": "100 mg BID",
-                  "orderSentence": "Quetiapine (Seroquel) 100 mg BID PO"
-                },
-                {
-                  "text": "200 mg BID",
-                  "orderSentence": "Quetiapine (Seroquel) 200 mg BID PO"
+                  "text": "25 mg",
+                  "orderSentence": "Quetiapine (Seroquel) 25 mg PO"
                 }
               ],
               "route": "PO",
               "instructions": "Start 25 mg QHS; titrate based on psychiatric response; usual range 150-800 mg/day; lowest effective dose to minimize EPS risk",
-              "orderSentence": "Quetiapine (Seroquel) 25 mg QHS PO"
+              "orderSentence": "Quetiapine (Seroquel) 25 mg PO"
             },
             "contraindications": "QT prolongation; severe hepatic impairment; concurrent use of strong CYP3A4 inhibitors",
             "monitoring": "Metabolic panel (glucose, lipids), weight, QTc, sedation, orthostatic BP",
@@ -92603,25 +92652,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "12.5 mg daily",
-                  "orderSentence": "Clozapine (Clozaril) 12.5 mg daily PO"
-                },
-                {
-                  "text": "25 mg BID",
-                  "orderSentence": "Clozapine (Clozaril) 25 mg BID PO"
-                },
-                {
-                  "text": "50 mg BID",
-                  "orderSentence": "Clozapine (Clozaril) 50 mg BID PO"
-                },
-                {
-                  "text": "100 mg BID",
-                  "orderSentence": "Clozapine (Clozaril) 100 mg BID PO"
+                  "text": "12.5 mg",
+                  "orderSentence": "Clozapine (Clozaril) 12.5 mg PO"
                 }
               ],
               "route": "PO",
-              "instructions": "Start 12.5 mg daily; titrate by 25-50 mg/day q1-2wk; usual range 150-450 mg/day; max 900 mg/day",
-              "orderSentence": "Clozapine (Clozaril) 12.5 mg daily PO"
+              "instructions": "Start 12.5 mg daily; titrate by 25-50 mg/day q1-2wk; usual range 150-450 mg/day; max 900 mg/day; requires Clozapine REMS enrollment",
+              "orderSentence": "Clozapine (Clozaril) 12.5 mg PO"
             },
             "contraindications": "Prior agranulocytosis; severe neutropenia (ANC <500); uncontrolled seizures; severe cardiac disease; ileus",
             "monitoring": "REMS program required (Clozapine REMS); ANC weekly x 6 months, then biweekly x 6 months, then monthly; metabolic panel, weight, glucose, lipids; seizure risk (dose-dependent); myocarditis (first month)",
@@ -92637,25 +92674,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "2 mg daily",
-                  "orderSentence": "Aripiprazole (Abilify) 2 mg daily PO"
-                },
-                {
-                  "text": "5 mg daily",
-                  "orderSentence": "Aripiprazole (Abilify) 5 mg daily PO"
-                },
-                {
-                  "text": "10 mg daily",
-                  "orderSentence": "Aripiprazole (Abilify) 10 mg daily PO"
-                },
-                {
-                  "text": "15 mg daily",
-                  "orderSentence": "Aripiprazole (Abilify) 15 mg daily PO"
+                  "text": "2 mg",
+                  "orderSentence": "Aripiprazole (Abilify) 2 mg PO"
                 }
               ],
               "route": "PO",
               "instructions": "Start 2-5 mg daily; titrate based on response; usual range 10-15 mg/day; max 30 mg/day",
-              "orderSentence": "Aripiprazole (Abilify) 2 mg daily PO"
+              "orderSentence": "Aripiprazole (Abilify) 2 mg PO"
             },
             "contraindications": "Hypersensitivity; caution in elderly with dementia",
             "monitoring": "Metabolic panel, weight, akathisia (can paradoxically worsen), EPS monitoring",
@@ -92671,21 +92696,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "0.5 mg daily",
-                  "orderSentence": "Brexpiprazole (Rexulti) 0.5 mg daily PO"
-                },
-                {
-                  "text": "1 mg daily",
-                  "orderSentence": "Brexpiprazole (Rexulti) 1 mg daily PO"
-                },
-                {
-                  "text": "2 mg daily",
-                  "orderSentence": "Brexpiprazole (Rexulti) 2 mg daily PO"
+                  "text": "0.5 mg",
+                  "orderSentence": "Brexpiprazole (Rexulti) 0.5 mg PO"
                 }
               ],
               "route": "PO",
               "instructions": "Start 0.5 mg daily; titrate to 1-2 mg daily; max 4 mg/day",
-              "orderSentence": "Brexpiprazole (Rexulti) 0.5 mg daily PO"
+              "orderSentence": "Brexpiprazole (Rexulti) 0.5 mg PO"
             },
             "contraindications": "Hypersensitivity; caution in elderly with dementia",
             "monitoring": "Metabolic panel, weight, EPS monitoring",
@@ -92701,13 +92718,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "Reduce by 25% q1-2 weeks",
-                  "orderSentence": "Pimozide dose reduction Reduce by 25% q1-2 weeks PO"
+                  "text": "-",
+                  "orderSentence": "Pimozide dose reduction - PO"
                 }
               ],
               "route": "PO",
-              "instructions": "Gradual taper; do not discontinue abruptly; coordinate with psychiatry for alternative",
-              "orderSentence": "Pimozide dose reduction Reduce by 25% q1-2 weeks PO"
+              "instructions": "Reduce by 25% q1-2 weeks; do not discontinue abruptly; coordinate with psychiatry for alternative",
+              "orderSentence": "Pimozide dose reduction - PO"
             },
             "contraindications": "Active psychosis without alternative (coordinate with psychiatry)",
             "monitoring": "ECG (QTc prolongation), psychiatric status",
@@ -92723,13 +92740,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "25/100 mg TID",
-                  "orderSentence": "Levodopa/Carbidopa (Sinemet) 25/100 mg TID PO"
+                  "text": "25/100 mg",
+                  "orderSentence": "Levodopa/Carbidopa (Sinemet) 25/100 mg PO"
                 }
               ],
               "route": "PO",
               "instructions": "Start 25/100 mg TID with meals; titrate by 25/100 mg q1-2 weeks; response suggests underlying PD",
-              "orderSentence": "Levodopa/Carbidopa (Sinemet) 25/100 mg TID PO"
+              "orderSentence": "Levodopa/Carbidopa (Sinemet) 25/100 mg PO"
             },
             "contraindications": "Narrow-angle glaucoma; concurrent non-selective MAOIs; active psychosis (relative - may worsen)",
             "monitoring": "Nausea, orthostatic hypotension, dyskinesia, hallucinations (especially if psychotic history); caution: may worsen psychosis",
@@ -92740,30 +92757,44 @@
           },
           {
             "item": "Ondansetron (Zofran)",
-            "route": "PO, IV",
-            "indication": "Non-dopaminergic antiemetic substitute when metoclopramide or prochlorperazine is causative agent",
+            "route": "IV",
+            "indication": "Non-dopaminergic antiemetic substitute for acute settings when metoclopramide or prochlorperazine is causative agent",
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "4 mg IV PRN",
-                  "orderSentence": "Ondansetron (Zofran) 4 mg IV PRN PO, IV"
-                },
-                {
-                  "text": "8 mg PO PRN",
-                  "orderSentence": "Ondansetron (Zofran) 8 mg PO PRN PO, IV"
-                },
-                {
-                  "text": "4 mg PO TID",
-                  "orderSentence": "Ondansetron (Zofran) 4 mg PO TID PO, IV"
+                  "text": "4 mg",
+                  "orderSentence": "Ondansetron (Zofran) 4 mg IV"
                 }
               ],
-              "route": "PO, IV",
-              "instructions": "4-8 mg PO/IV q8h PRN for nausea; max 24 mg/day",
-              "orderSentence": "Ondansetron (Zofran) 4 mg IV PRN PO, IV"
+              "route": "IV",
+              "instructions": "4-8 mg IV q8h PRN for nausea; max 24 mg/day",
+              "orderSentence": "Ondansetron (Zofran) 4 mg IV"
             },
             "contraindications": "QT prolongation; severe hepatic impairment (max 8 mg/day)",
             "monitoring": "QTc if risk factors, constipation",
             "ED": "STAT",
+            "HOSP": "ROUTINE",
+            "OPD": "-",
+            "ICU": "STAT"
+          },
+          {
+            "item": "Ondansetron (Zofran) PO",
+            "route": "PO",
+            "indication": "Non-dopaminergic antiemetic substitute for oral maintenance when dopaminergic antiemetic is causative agent",
+            "dosing": {
+              "doseOptions": [
+                {
+                  "text": "4 mg",
+                  "orderSentence": "Ondansetron (Zofran) PO 4 mg PO"
+                }
+              ],
+              "route": "PO",
+              "instructions": "4-8 mg PO q8h PRN for nausea; max 24 mg/day",
+              "orderSentence": "Ondansetron (Zofran) PO 4 mg PO"
+            },
+            "contraindications": "QT prolongation; severe hepatic impairment (max 8 mg/day)",
+            "monitoring": "QTc if risk factors, constipation",
+            "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
             "ICU": "-"
@@ -92775,13 +92806,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "10 mg TID",
-                  "orderSentence": "Domperidone (Motilium) 10 mg TID PO"
+                  "text": "10 mg",
+                  "orderSentence": "Domperidone (Motilium) 10 mg PO"
                 }
               ],
               "route": "PO",
               "instructions": "10 mg TID before meals; max 30 mg/day; not FDA-approved in US (available via compassionate use/international pharmacy)",
-              "orderSentence": "Domperidone (Motilium) 10 mg TID PO"
+              "orderSentence": "Domperidone (Motilium) 10 mg PO"
             },
             "contraindications": "QT prolongation; prolactinoma; GI bleeding or obstruction; hepatic impairment",
             "monitoring": "ECG before initiation and periodically; QTc must be <450 ms; electrolytes",
@@ -92806,14 +92837,14 @@
             "ED": "URGENT",
             "HOSP": "URGENT",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "URGENT"
           },
           {
             "item": "Pharmacy consult for comprehensive medication reconciliation to identify all potential dopamine-blocking agents including OTC medications",
             "ED": "ROUTINE",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
-            "ICU": "-"
+            "ICU": "ROUTINE"
           },
           {
             "item": "Physical therapy for gait training, balance assessment, and fall prevention given parkinsonian motor impairment",
@@ -93013,102 +93044,102 @@
       {
         "recommendation": "DIP is the second most common cause of parkinsonism after idiopathic PD; occurs in 20-40% of patients on DRBAs",
         "evidenceLevel": "Class II, Level B",
-        "source": "Shin HW, Chung SJ. J Clin Neurol 2012"
+        "source": "Shin HW, Chung SJ. J Clin Neurol 2012 [PubMed: 22787491](https://pubmed.ncbi.nlm.nih.gov/22787491/)"
       },
       {
         "recommendation": "Symmetric parkinsonism and absence of rest tremor favor DIP over idiopathic PD",
         "evidenceLevel": "Class II, Level B",
-        "source": "Lopez-Sendon J et al. Expert Rev Neurother 2012"
+        "source": "Lopez-Sendon J et al. Expert Rev Neurother 2012 [PubMed: 23002938](https://pubmed.ncbi.nlm.nih.gov/23002938/)"
       },
       {
         "recommendation": "DaTscan (ioflupane I-123) effectively differentiates DIP from idiopathic PD with high sensitivity and specificity",
         "evidenceLevel": "Class I, Level A",
-        "source": "Brigo F et al. Parkinsonism Relat Disord 2014"
+        "source": "Brigo F et al. Parkinsonism Relat Disord 2014 [PubMed: 25258329](https://pubmed.ncbi.nlm.nih.gov/25258329/)"
       },
       {
         "recommendation": "Metoclopramide is the most common non-antipsychotic cause of DIP; FDA black box warning for prolonged use",
         "evidenceLevel": "Class II, Level B",
-        "source": "Avorn J et al. Ann Intern Med 1995"
+        "source": "Avorn J et al. Ann Intern Med 1995 [PubMed: 7872590](https://pubmed.ncbi.nlm.nih.gov/7872590/)"
       },
       {
         "recommendation": "Symptoms typically resolve within weeks to months after discontinuation of the causative agent",
         "evidenceLevel": "Class II, Level B",
-        "source": "Brigo F et al. J Neurol Sci 2014"
+        "source": "Brigo F et al. J Neurol Sci 2014 [PubMed: 25108809](https://pubmed.ncbi.nlm.nih.gov/25108809/)"
       },
       {
         "recommendation": "Approximately 10-15% of DIP patients have persistent parkinsonism after drug withdrawal suggesting unmasked underlying PD",
         "evidenceLevel": "Class II, Level B",
-        "source": "Burn DJ, Brooks DJ. Brain 1993"
+        "source": "Burn DJ, Brooks DJ. Brain 1993 [PubMed: 8461577](https://pubmed.ncbi.nlm.nih.gov/8461577/)"
       },
       {
         "recommendation": "DaTscan is normal in pure DIP but abnormal in patients with DIP unmasking subclinical PD",
         "evidenceLevel": "Class I, Level A",
-        "source": "Tinazzi M et al. Neurology 2009"
+        "source": "Tinazzi M et al. Neurology 2009 [PubMed: 19528516](https://pubmed.ncbi.nlm.nih.gov/19528516/)"
       },
       {
         "recommendation": "Amantadine provides symptomatic benefit for drug-induced parkinsonism without worsening psychosis",
         "evidenceLevel": "Class III, Level C",
-        "source": "Silver H, Geraisy N. J Clin Psychiatry 1995"
+        "source": "Silver H, Geraisy N. J Clin Psychiatry 1995 [PubMed: 7615484](https://pubmed.ncbi.nlm.nih.gov/7615484/)"
       },
       {
         "recommendation": "Anticholinergics (benztropine, trihexyphenidyl) are effective for DIP but limited by cognitive side effects especially in elderly",
         "evidenceLevel": "Class II, Level B",
-        "source": "Ward KM, Bhatt DL. Drug Saf 2018"
+        "source": "Ward KM, Citrome L. Ther Adv Psychopharmacol 2018 [PubMed: 30181862](https://pubmed.ncbi.nlm.nih.gov/30181862/)"
       },
       {
         "recommendation": "Quetiapine and clozapine have lowest EPS risk among antipsychotics and are preferred substitutes",
         "evidenceLevel": "Class I, Level A",
-        "source": "Leucht S et al. Lancet 2013"
+        "source": "Leucht S et al. Lancet 2013 [PubMed: 23810019](https://pubmed.ncbi.nlm.nih.gov/23810019/)"
       },
       {
         "recommendation": "Clozapine has the lowest risk of EPS among all antipsychotics but requires REMS monitoring for agranulocytosis",
         "evidenceLevel": "Class I, Level A",
-        "source": "Kane J et al. Arch Gen Psychiatry 1988"
+        "source": "Kane J et al. Arch Gen Psychiatry 1988 [PubMed: 3046553](https://pubmed.ncbi.nlm.nih.gov/3046553/)"
       },
       {
         "recommendation": "Risperidone produces dose-dependent EPS; higher doses (>6 mg/day) have EPS risk similar to typical antipsychotics",
         "evidenceLevel": "Class I, Level B",
-        "source": "Divac N et al. Psychiatr Danub 2014"
+        "source": "Divac N et al. Psychiatr Danub 2014 [PubMed: 25191777](https://pubmed.ncbi.nlm.nih.gov/25191777/)"
       },
       {
         "recommendation": "Calcium channel blockers (flunarizine, cinnarizine) are important causes of DIP outside the US",
         "evidenceLevel": "Class II, Level B",
-        "source": "Bondon-Guitton E et al. Fundam Clin Pharmacol 2011"
+        "source": "Bondon-Guitton E et al. Fundam Clin Pharmacol 2011 [PubMed: 20608992](https://pubmed.ncbi.nlm.nih.gov/20608992/)"
       },
       {
         "recommendation": "Valproate-induced parkinsonism is dose-related and typically reversible with dose reduction or discontinuation",
         "evidenceLevel": "Class III, Level C",
-        "source": "Armon C et al. Neurology 1996"
+        "source": "Armon C et al. Neurology 1996 [PubMed: 8710098](https://pubmed.ncbi.nlm.nih.gov/8710098/)"
       },
       {
         "recommendation": "MDS Clinical Diagnostic Criteria distinguish clinically established and probable PD from secondary causes including DIP",
         "evidenceLevel": "Class I, Level A",
-        "source": "Postuma RB et al. Mov Disord 2015"
+        "source": "Postuma RB et al. Mov Disord 2015 [PubMed: 26474316](https://pubmed.ncbi.nlm.nih.gov/26474316/)"
       },
       {
         "recommendation": "Olfactory testing helps distinguish DIP (normal) from idiopathic PD (impaired) as a supportive clinical tool",
         "evidenceLevel": "Class II, Level B",
-        "source": "Morley JF, Duda JE. Mov Disord 2010"
+        "source": "Morley JF, Duda JE. Mov Disord 2010 [PubMed: 20669302](https://pubmed.ncbi.nlm.nih.gov/20669302/)"
       },
       {
         "recommendation": "MIBG cardiac scintigraphy shows reduced uptake in PD but normal uptake in pure DIP",
         "evidenceLevel": "Class II, Level B",
-        "source": "Spiegel J et al. Mov Disord 2005"
+        "source": "Spiegel J et al. Mov Disord 2005 [PubMed: 15584032](https://pubmed.ncbi.nlm.nih.gov/15584032/)"
       },
       {
         "recommendation": "Ondansetron is a safe antiemetic alternative that does not block dopamine receptors and does not cause parkinsonism",
         "evidenceLevel": "Class I, Level A",
-        "source": "Kovac AL. Drugs 2000"
+        "source": "Kovac AL. Drugs 2000 [PubMed: 10776835](https://pubmed.ncbi.nlm.nih.gov/10776835/)"
       },
       {
         "recommendation": "Risk factors for DIP include female sex, older age, pre-existing brain injury, and higher DRBA doses",
         "evidenceLevel": "Class II, Level B",
-        "source": "Thanvi B, Treadwell S. Postgrad Med J 2009"
+        "source": "Thanvi B, Treadwell S. Postgrad Med J 2009 [PubMed: 19789195](https://pubmed.ncbi.nlm.nih.gov/19789195/)"
       },
       {
         "recommendation": "Domperidone does not significantly cross the blood-brain barrier and has minimal extrapyramidal side effects compared to metoclopramide",
         "evidenceLevel": "Class II, Level B",
-        "source": "Reddymasu SC et al. Expert Opin Drug Saf 2007"
+        "source": "Reddymasu SC et al. Expert Opin Drug Saf 2007 [PubMed: 17559511](https://pubmed.ncbi.nlm.nih.gov/17559511/)"
       },
       {
         "recommendation": "Serial clinical monitoring with UPDRS motor scores recommended to track DIP resolution and identify non-resolving cases requiring DaTscan",
@@ -93133,7 +93164,7 @@
         "ED": "URGENT",
         "HOSP": "ROUTINE",
         "OPD": "ROUTINE",
-        "ICU": "-"
+        "ICU": "URGENT"
       },
       {
         "item": "Gait and balance assessment",
@@ -93234,13 +93265,12 @@
   "Wilson's Disease": {
     "id": "wilsons-disease",
     "title": "Wilson's Disease",
-    "version": "1.0",
+    "version": "1.1",
     "icd10": [
       "** E83.01 (Wilson's disease)",
       "E83.09 (Other disorders of copper metabolism)",
       "G25.5 (Other chorea — for movement disorder presentation)",
-      "K74.3 (Primary biliary cirrhosis — hepatic presentation)",
-      "G25.0 (Essential tremor — for tremor-predominant presentation)",
+      "G25.2 (Other specified forms of tremor — for tremor-predominant presentation)",
       "F06.8 (Other specified mental disorders due to known physiological condition — psychiatric presentation)"
     ],
     "scope": "** Diagnosis and management of Wilson's disease in adolescents and adults presenting with neurologic, hepatic, or psychiatric manifestations. Covers diagnostic workup (ceruloplasmin, 24-hour urine copper, slit-lamp exam, hepatic copper, genetic testing), chelation therapy (D-penicillamine, trientine), zinc maintenance therapy, liver transplant evaluation, symptomatic management of neurological symptoms (dystonia, tremor, parkinsonism, psychiatric), and family screening. Excludes other copper metabolism disorders (Menkes disease), isolated non-Wilson hepatic cirrhosis, and drug-induced movement disorders.",
@@ -93601,6 +93631,16 @@
             "timing": "At diagnosis",
             "target": "Hepatomegaly, splenomegaly, cirrhotic changes, portal hypertension, ascites",
             "contraindications": "None significant"
+          },
+          {
+            "item": "Chest X-ray (CPT 71046)",
+            "ED": "URGENT",
+            "HOSP": "ROUTINE",
+            "OPD": "-",
+            "ICU": "STAT",
+            "timing": "On admission for fulminant hepatic failure; baseline for ICU",
+            "target": "Aspiration, atelectasis, pleural effusion, pulmonary edema",
+            "contraindications": "None significant"
           }
         ],
         "Extended": [
@@ -93886,18 +93926,18 @@
           },
           {
             "item": "Plasmapheresis/Plasma exchange",
-            "route": "-",
+            "route": "Extracorporeal",
             "indication": "Fulminant WD with severe hemolysis; removes free copper",
             "dosing": {
               "doseOptions": [
                 {
                   "text": "1-1.5 plasma volumes",
-                  "orderSentence": "Plasmapheresis/Plasma exchange 1-1.5 plasma volumes -"
+                  "orderSentence": "Plasmapheresis/Plasma exchange 1-1.5 plasma volumes Extracorporeal"
                 }
               ],
-              "route": "-",
+              "route": "Extracorporeal",
               "instructions": "Daily exchange x 3-5 days; rapidly reduces free copper",
-              "orderSentence": "Plasmapheresis/Plasma exchange 1-1.5 plasma volumes -"
+              "orderSentence": "Plasmapheresis/Plasma exchange 1-1.5 plasma volumes Extracorporeal"
             },
             "contraindications": "Hemodynamic instability, severe sepsis",
             "monitoring": "Copper levels, hemolysis markers, coagulation",
@@ -94047,13 +94087,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "20-40 mg",
-                  "orderSentence": "Propranolol 20-40 mg PO"
+                  "text": "20 mg",
+                  "orderSentence": "Propranolol 20 mg PO"
                 }
               ],
               "route": "PO",
-              "instructions": "Start 20-40 mg BID; titrate to 120-240 mg/day; limited efficacy for wing-beating tremor",
-              "orderSentence": "Propranolol 20-40 mg PO"
+              "instructions": "Start 20 mg BID; titrate to 120-240 mg/day; limited efficacy for wing-beating tremor",
+              "orderSentence": "Propranolol 20 mg PO"
             },
             "contraindications": "Asthma, COPD, bradycardia, decompensated heart failure",
             "monitoring": "HR, BP",
@@ -94069,13 +94109,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "25-50 mg",
-                  "orderSentence": "Sertraline 25-50 mg PO"
+                  "text": "25 mg",
+                  "orderSentence": "Sertraline 25 mg PO"
                 }
               ],
               "route": "PO",
-              "instructions": "Start 25-50 mg daily; titrate to 100-200 mg/day",
-              "orderSentence": "Sertraline 25-50 mg PO"
+              "instructions": "Start 25 mg daily; titrate to 100-200 mg/day",
+              "orderSentence": "Sertraline 25 mg PO"
             },
             "contraindications": "MAOI use; caution with hepatic impairment (reduce dose)",
             "monitoring": "Hepatic function (use lower doses in liver disease); suicidality in young adults",
@@ -94091,13 +94131,13 @@
             "dosing": {
               "doseOptions": [
                 {
-                  "text": "12.5-25 mg",
-                  "orderSentence": "Quetiapine 12.5-25 mg PO"
+                  "text": "12.5 mg",
+                  "orderSentence": "Quetiapine 12.5 mg PO"
                 }
               ],
               "route": "PO",
-              "instructions": "Start 12.5-25 mg QHS; titrate cautiously to 50-200 mg/day; avoid typical antipsychotics (worsen movement disorder)",
-              "orderSentence": "Quetiapine 12.5-25 mg PO"
+              "instructions": "Start 12.5 mg QHS; titrate cautiously to 50-200 mg/day; avoid typical antipsychotics (worsen movement disorder)",
+              "orderSentence": "Quetiapine 12.5 mg PO"
             },
             "contraindications": "QTc prolongation; avoid typical antipsychotics (D2 blockade worsens dystonia/parkinsonism)",
             "monitoring": "QTc, metabolic panel, sedation; use ONLY atypical antipsychotics",
@@ -94154,7 +94194,7 @@
         "Second-line/Refractory": [
           {
             "item": "Liver transplantation evaluation",
-            "route": "-",
+            "route": "Referral",
             "indication": "Fulminant hepatic failure; decompensated cirrhosis unresponsive to chelation; severe neurologic WD refractory to 6+ months chelation (controversial)",
             "dosing": {
               "doseOptions": [
@@ -94176,18 +94216,18 @@
           },
           {
             "item": "Continuous venovenous hemofiltration (CVVH)",
-            "route": "IV",
+            "route": "Extracorporeal",
             "indication": "Fulminant WD with renal failure or massive hemolysis; bridge to transplant",
             "dosing": {
               "doseOptions": [
                 {
                   "text": "Per ICU protocol",
-                  "orderSentence": "Continuous venovenous hemofiltration (CVVH) Per ICU protocol IV"
+                  "orderSentence": "Continuous venovenous hemofiltration (CVVH) Per ICU protocol Extracorporeal"
                 }
               ],
-              "route": "IV",
+              "route": "Extracorporeal",
               "instructions": "Continuous copper removal; bridge therapy to transplant",
-              "orderSentence": "Continuous venovenous hemofiltration (CVVH) Per ICU protocol IV"
+              "orderSentence": "Continuous venovenous hemofiltration (CVVH) Per ICU protocol Extracorporeal"
             },
             "contraindications": "N/A (life-saving in ICU)",
             "monitoring": "Copper levels, hemodynamics, electrolytes",
@@ -94198,18 +94238,18 @@
           },
           {
             "item": "Molecular adsorbent recirculating system (MARS)",
-            "route": "-",
+            "route": "Extracorporeal",
             "indication": "Fulminant WD; albumin dialysis removes copper",
             "dosing": {
               "doseOptions": [
                 {
                   "text": "Per protocol",
-                  "orderSentence": "Molecular adsorbent recirculating system (MARS) Per protocol -"
+                  "orderSentence": "Molecular adsorbent recirculating system (MARS) Per protocol Extracorporeal"
                 }
               ],
-              "route": "-",
+              "route": "Extracorporeal",
               "instructions": "Albumin dialysis; available at specialized centers; bridge to transplant",
-              "orderSentence": "Molecular adsorbent recirculating system (MARS) Per protocol -"
+              "orderSentence": "Molecular adsorbent recirculating system (MARS) Per protocol Extracorporeal"
             },
             "contraindications": "Hemodynamic instability",
             "monitoring": "Copper levels, bilirubin, coagulation, hemodynamics",
@@ -94314,7 +94354,7 @@
           {
             "item": "Zinc sulfate (alternative zinc formulation)",
             "route": "PO",
-            "indication": "Same as zinc acetate; more GI side effects but less expensive",
+            "indication": "Alternative to zinc acetate for maintenance therapy; more GI side effects but less expensive",
             "dosing": {
               "doseOptions": [
                 {
@@ -94323,12 +94363,12 @@
                 }
               ],
               "route": "PO",
-              "instructions": "220 mg zinc sulfate TID (contains ~50 mg elemental zinc per 220 mg); same timing as zinc acetate",
+              "instructions": "220 mg zinc sulfate TID (contains ~50 mg elemental zinc per 220 mg); take on empty stomach separated from meals by ≥1 hour; separate from chelator by ≥2 hours if used concurrently",
               "orderSentence": "Zinc sulfate (alternative zinc formulation) 220 mg PO"
             },
-            "pretreatment": "Same as zinc acetate",
-            "contraindications": "Same; more GI side effects (nausea, gastric irritation)",
-            "monitoring": "Same as zinc acetate",
+            "pretreatment": "Baseline: CBC, CMP, 24h urine copper, serum zinc level",
+            "contraindications": "GI intolerance common (nausea, gastric irritation); do NOT use as sole therapy in symptomatic/severe WD (too slow onset)",
+            "monitoring": "24h urine copper q3-6 months (target <75 mcg/24h on zinc monotherapy); serum zinc level q3-6 months (target 125-150 mcg/dL); 24h urine zinc (confirms compliance: >2 mg/24h); LFTs q3-6 months; CBC q6 months (zinc-induced copper deficiency can cause neutropenia)",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -94350,30 +94390,8 @@
               "orderSentence": "Pyridoxine (Vitamin B6) 25 mg PO"
             },
             "pretreatment": "None",
-            "contraindications": "None specific",
-            "monitoring": "-",
-            "ED": "ROUTINE",
-            "HOSP": "ROUTINE",
-            "OPD": "-"
-          },
-          {
-            "item": "Combined chelation + zinc",
-            "route": "PO",
-            "indication": "Initial treatment of symptomatic WD; some experts use chelator + zinc simultaneously",
-            "dosing": {
-              "doseOptions": [
-                {
-                  "text": "Per individual agents",
-                  "orderSentence": "Combined chelation + zinc Per individual agents PO"
-                }
-              ],
-              "route": "PO",
-              "instructions": "Chelator (penicillamine or trientine) + zinc acetate; separate by ≥2 hours (zinc blocks chelator absorption if given together)",
-              "orderSentence": "Combined chelation + zinc Per individual agents PO"
-            },
-            "pretreatment": "Per individual agents",
-            "contraindications": "Per individual agents; ensure ≥2 hour separation",
-            "monitoring": "Per individual agents; 24h urine copper, serum zinc, LFTs",
+            "contraindications": "None",
+            "monitoring": "Clinical assessment; peripheral neuropathy symptoms",
             "ED": "-",
             "HOSP": "ROUTINE",
             "OPD": "ROUTINE",
@@ -94493,73 +94511,85 @@
             "item": "Wilson's disease is a lifelong condition requiring CONTINUOUS treatment — never stop chelation or zinc without physician guidance",
             "ED": "-",
             "HOSP": "STAT",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Take chelation medication (penicillamine or trientine) on an EMPTY STOMACH — 1 hour before or 2 hours after meals",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "If taking zinc, separate from chelator by at least 2 hours; take zinc between meals",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Return to ED if: worsening jaundice, confusion, vomiting blood, black stools, new neurologic symptoms, worsening speech or swallowing, severe abdominal pain",
             "ED": "STAT",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Report ANY new neurologic symptoms during the first 2-3 months of chelation (worsening is possible and requires dose adjustment)",
             "ED": "-",
             "HOSP": "STAT",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Avoid HIGH-COPPER FOODS during initial treatment: liver/organ meats, shellfish (especially lobster, oysters), chocolate, mushrooms, nuts, dried fruits, soy products",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Avoid drinking water through copper pipes (consider water testing; use filter or bottled water if copper pipes present)",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Alcohol is STRICTLY prohibited — causes additional liver damage",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Women of childbearing age: pregnancy requires switching from chelator to zinc (chelators are teratogenic); discuss family planning with physician BEFORE conception",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "ALL first-degree relatives (siblings, children, parents) MUST be screened for Wilson's disease — siblings have 25% risk",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Carry a medical alert card/bracelet indicating Wilson's disease and current medications",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Regular follow-up is ESSENTIAL — blood and urine tests needed every 3-6 months lifelong",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           }
         ],
         "Lifestyle & Prevention": [
@@ -94567,55 +94597,64 @@
             "item": "Low-copper diet during initial decoppering phase (avoid >1 mg copper/day); can liberalize slightly once stable on treatment",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Regular exercise as tolerated; may improve dystonia and mood",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Strict alcohol avoidance (lifelong — hepatotoxic)",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Smoking cessation (impairs liver function and overall health)",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Hepatitis A and B vaccination if not immune (protect remaining liver function)",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Avoid hepatotoxic medications (acetaminophen limit <2 g/day; avoid NSAIDs if cirrhotic; avoid statins if decompensated)",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Genetic counseling for reproductive planning; autosomal recessive — both parents are carriers; 25% risk for each sibling",
             "ED": "-",
             "HOSP": "-",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Mental health support; depression and anxiety are common and treatable components of WD",
             "ED": "-",
             "HOSP": "ROUTINE",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           },
           {
             "item": "Screen all first-degree relatives: ceruloplasmin, 24h urine copper, LFTs, slit-lamp exam, ATP7B genetic testing",
             "ED": "-",
             "HOSP": "-",
-            "OPD": "ROUTINE"
+            "OPD": "ROUTINE",
+            "ICU": "-"
           }
         ]
       }
@@ -94696,107 +94735,107 @@
       {
         "recommendation": "Ceruloplasmin <20 mg/dL as screening test for WD",
         "evidenceLevel": "Class II, Level B",
-        "source": "Ferenci et al., Liver Int 2003"
+        "source": "Ferenci et al., Liver Int 2003 [PubMed: 14506258](https://pubmed.ncbi.nlm.nih.gov/14506258/)"
       },
       {
         "recommendation": "24-hour urine copper >100 mcg as diagnostic criterion",
         "evidenceLevel": "Class II, Level B",
-        "source": "Roberts & Schilsky, Hepatology 2008 (AASLD Practice Guidelines)"
+        "source": "Roberts & Schilsky, Hepatology 2008 (AASLD Practice Guidelines) [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/)"
       },
       {
         "recommendation": "D-Penicillamine as first-line chelation therapy",
         "evidenceLevel": "Class II, Level B",
-        "source": "Walshe, Lancet 1956; Roberts & Schilsky, Hepatology 2008"
+        "source": "Walshe, Lancet 1956; Roberts & Schilsky, Hepatology 2008 [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/)"
       },
       {
         "recommendation": "Trientine as alternative first-line chelator with lower neurologic worsening risk",
         "evidenceLevel": "Class II, Level B",
-        "source": "Walshe, Lancet 1982; Weiss et al., J Hepatol 2013"
+        "source": "Walshe, Lancet 1982; Weiss et al., J Hepatol 2013 [PubMed: 23485523](https://pubmed.ncbi.nlm.nih.gov/23485523/)"
       },
       {
         "recommendation": "Zinc acetate for maintenance therapy",
         "evidenceLevel": "Class II, Level B",
-        "source": "Brewer et al., Arch Neurol 1987; Czlonkowska et al., Ann Neurol 1996"
+        "source": "Brewer et al., Arch Neurol 1987; Czlonkowska et al., Ann Neurol 1996 [PubMed: 8967753](https://pubmed.ncbi.nlm.nih.gov/8967753/)"
       },
       {
         "recommendation": "Neurologic worsening occurs in 10-50% of patients starting D-penicillamine",
         "evidenceLevel": "Class II, Level B",
-        "source": "Brewer et al., Arch Neurol 1994; Walshe & Yealland, J Neurol Neurosurg Psychiatry 1993"
+        "source": "Brewer et al., Arch Neurol 1994 [PubMed: 7944997](https://pubmed.ncbi.nlm.nih.gov/7944997/); Walshe & Yealland, J Neurol Neurosurg Psychiatry 1993 [PubMed: 8505642](https://pubmed.ncbi.nlm.nih.gov/8505642/)"
       },
       {
         "recommendation": "Liver transplantation for fulminant WD and decompensated cirrhosis",
         "evidenceLevel": "Class I, Level B",
-        "source": "Arnon et al., Hepatology 2011; Dhawan et al., Gut 2005"
+        "source": "Arnon et al., Hepatology 2011 [PubMed: 21254169](https://pubmed.ncbi.nlm.nih.gov/21254169/); Dhawan et al., Gut 2005 [PubMed: 15753547](https://pubmed.ncbi.nlm.nih.gov/15753547/)"
       },
       {
         "recommendation": "New Wilson Index ≥11 predicts need for transplantation in pediatric fulminant WD",
         "evidenceLevel": "Class II, Level B",
-        "source": "Dhawan et al., Gut 2005"
+        "source": "Dhawan et al., Gut 2005 [PubMed: 15753547](https://pubmed.ncbi.nlm.nih.gov/15753547/)"
       },
       {
         "recommendation": "Kayser-Fleischer rings present in >95% of neurologic WD",
         "evidenceLevel": "Class II, Level B",
-        "source": "Walshe, Brain 1976; Ala et al., Lancet 2007"
+        "source": "Walshe, Brain 1976; Ala et al., Lancet 2007 [PubMed: 17276780](https://pubmed.ncbi.nlm.nih.gov/17276780/)"
       },
       {
         "recommendation": "Leipzig Scoring System for WD diagnosis (score ≥4 = established)",
         "evidenceLevel": "Class IIa, Level C",
-        "source": "Ferenci et al., Liver Int 2003 (8th International Meeting on Wilson Disease)"
+        "source": "Ferenci et al., Liver Int 2003 (8th International Meeting on Wilson Disease) [PubMed: 14506258](https://pubmed.ncbi.nlm.nih.gov/14506258/)"
       },
       {
         "recommendation": "ATP7B gene testing for definitive diagnosis and family screening",
         "evidenceLevel": "Class I, Level B",
-        "source": "Loudianos & Gitlin, Semin Liver Dis 2000; EASL Clinical Practice Guidelines 2012"
+        "source": "Loudianos & Gitlin, Semin Liver Dis 2000 [PubMed: 11200483](https://pubmed.ncbi.nlm.nih.gov/11200483/); EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/)"
       },
       {
         "recommendation": "MRI brain findings: T2 hyperintensity in putamen (\"face of giant panda\" sign)",
         "evidenceLevel": "Class II, Level C",
-        "source": "King et al., Mov Disord 1996; Sinha et al., AJNR 2006"
+        "source": "King et al., Mov Disord 1996 [PubMed: 8866494](https://pubmed.ncbi.nlm.nih.gov/8866494/); Sinha et al., AJNR 2006 [PubMed: 16551993](https://pubmed.ncbi.nlm.nih.gov/16551993/)"
       },
       {
         "recommendation": "Low-copper diet during initial decoppering phase",
         "evidenceLevel": "Class III, Level C",
-        "source": "Expert consensus; EASL Clinical Practice Guidelines 2012"
+        "source": "Expert consensus; EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/)"
       },
       {
         "recommendation": "Plasmapheresis for acute hemolytic crisis in fulminant WD",
         "evidenceLevel": "Class IIb, Level C",
-        "source": "Jhang et al., J Clin Apher 2007; Akyildiz et al., Ther Apher Dial 2004"
+        "source": "Jhang et al., J Clin Apher 2007 [PubMed: 17722038](https://pubmed.ncbi.nlm.nih.gov/17722038/); Akyildiz et al., Ther Apher Dial 2004 [PubMed: 15255163](https://pubmed.ncbi.nlm.nih.gov/15255163/)"
       },
       {
         "recommendation": "Free (non-ceruloplasmin-bound) copper as monitoring parameter",
         "evidenceLevel": "Class II, Level B",
-        "source": "Walshe, Ann Clin Biochem 2003; EASL Clinical Practice Guidelines 2012"
+        "source": "Walshe, Ann Clin Biochem 2003 [PubMed: 12880538](https://pubmed.ncbi.nlm.nih.gov/12880538/); EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/)"
       },
       {
         "recommendation": "Pregnancy management: switch to zinc; chelators are teratogenic",
         "evidenceLevel": "Class II, Level C",
-        "source": "Brewer et al., J Lab Clin Med 2000; Tarnacka et al., Fertil Steril 2000"
+        "source": "Brewer et al., J Lab Clin Med 2000 [PubMed: 10638697](https://pubmed.ncbi.nlm.nih.gov/10638697/); Tarnacka et al., Fertil Steril 2000 [PubMed: 10685533](https://pubmed.ncbi.nlm.nih.gov/10685533/)"
       },
       {
         "recommendation": "Family screening with ceruloplasmin, 24h urine copper, and ATP7B genotyping",
         "evidenceLevel": "Class I, Level B",
-        "source": "EASL Clinical Practice Guidelines 2012; Roberts & Schilsky, Hepatology 2008"
+        "source": "EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/); Roberts & Schilsky, Hepatology 2008 [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/)"
       },
       {
         "recommendation": "AASLD Practice Guidelines for Wilson Disease",
         "evidenceLevel": "Class I (Guidelines)",
-        "source": "Roberts & Schilsky, Hepatology 2008; Schilsky, Clin Liver Dis 2017"
+        "source": "Roberts & Schilsky, Hepatology 2008 [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/); Schilsky, Clin Liver Dis 2017 [PubMed: 28364808](https://pubmed.ncbi.nlm.nih.gov/28364808/)"
       },
       {
         "recommendation": "EASL Clinical Practice Guidelines on Wilson's Disease",
         "evidenceLevel": "Class I (Guidelines)",
-        "source": "European Association for the Study of the Liver, J Hepatol 2012"
+        "source": "European Association for the Study of the Liver, J Hepatol 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/)"
       },
       {
         "recommendation": "Trientine tetrahydrochloride (Cuvrior) as improved formulation",
         "evidenceLevel": "Class II, Level B",
-        "source": "Weiss et al., Lancet Gastroenterol Hepatol 2022"
+        "source": "Weiss et al., Lancet Gastroenterol Hepatol 2022 [PubMed: 35276119](https://pubmed.ncbi.nlm.nih.gov/35276119/)"
       },
       {
         "recommendation": "Bis-choline tetrathiomolybdate for neurologic WD (phase 3 data)",
         "evidenceLevel": "Class II, Level B",
-        "source": "Weiss et al., Lancet Gastroenterol Hepatol 2022 (WTX101-301 trial)"
+        "source": "Weiss et al., Lancet Gastroenterol Hepatol 2022 (WTX101-301 trial) [PubMed: 35276119](https://pubmed.ncbi.nlm.nih.gov/35276119/)"
       }
     ],
     "monitoring": [

@@ -1,7 +1,7 @@
 ---
 title: "Drug-Induced Parkinsonism"
 description: "Clinical decision support for drug-induced parkinsonism diagnosis and management across care settings"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD"
 status: draft
 tags:
@@ -21,9 +21,10 @@ tags:
 
 # Drug-Induced Parkinsonism
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
-**STATUS:** Draft - Pending Review
+**REVISED:** January 30, 2026
+**STATUS:** Draft - Revised per checker validation
 
 ---
 
@@ -86,12 +87,12 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC (CPT 85025) | URGENT | ROUTINE | ROUTINE | - | General health assessment; rule out infection | Normal |
-| CMP (CPT 80053) | URGENT | ROUTINE | ROUTINE | - | Hepatic/renal function for medication dosing and clearance assessment | Normal |
+| CBC (CPT 85025) | URGENT | ROUTINE | ROUTINE | URGENT | General health assessment; rule out infection; leukocytosis if NMS suspected | Normal |
+| CMP (CPT 80053) | URGENT | ROUTINE | ROUTINE | URGENT | Hepatic/renal function for medication dosing and clearance assessment | Normal |
 | TSH (CPT 84443) | ROUTINE | ROUTINE | ROUTINE | - | Hypothyroidism can cause bradykinesia and psychomotor slowing | Normal (0.4-4.0 mIU/L) |
-| Medication reconciliation | STAT | STAT | ROUTINE | - | Identify all dopamine-blocking or depleting agents including OTC and herbal | Complete list of all current and recent medications |
-| Drug levels (if applicable) | URGENT | ROUTINE | ROUTINE | - | Assess toxicity or supratherapeutic levels of causative agent (valproate, lithium) | Therapeutic range |
-| Glucose (CPT 82947) | URGENT | ROUTINE | ROUTINE | - | Metabolic evaluation; diabetes as comorbidity | Normal |
+| Medication reconciliation | STAT | STAT | ROUTINE | STAT | Identify all dopamine-blocking or depleting agents including OTC and herbal | Complete list of all current and recent medications |
+| Drug levels (if applicable) | URGENT | ROUTINE | ROUTINE | URGENT | Assess toxicity or supratherapeutic levels of causative agent (valproate, lithium) | Therapeutic range |
+| Glucose (CPT 82947) | URGENT | ROUTINE | ROUTINE | URGENT | Metabolic evaluation; diabetes as comorbidity | Normal |
 
 ### 1B. Extended Workup (Second-line)
 
@@ -102,11 +103,11 @@ SECTION A: ACTION ITEMS
 | Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | Deficiency can contribute to neurologic dysfunction | >400 pg/mL |
 | RPR/VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis in differential for parkinsonism | Negative |
 | HIV (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated parkinsonism | Negative |
-| CK (CPT 82550) | URGENT | ROUTINE | - | - | Evaluate for NMS if fever, rigidity, autonomic instability present | Normal (30-200 U/L) |
+| CK (CPT 82550) | URGENT | ROUTINE | - | URGENT | Evaluate for NMS if fever, rigidity, autonomic instability present | Normal (30-200 U/L) |
 | Serum iron studies | - | ROUTINE | ROUTINE | - | Iron deposition disorders in differential | Normal |
 | Free T4 (CPT 84439) | - | ROUTINE | ROUTINE | - | If TSH abnormal | Normal |
-| Valproic acid level (CPT 80164) | URGENT | ROUTINE | ROUTINE | - | If on valproate; supratherapeutic levels increase risk | 50-100 mcg/mL |
-| Lithium level (CPT 80178) | URGENT | ROUTINE | ROUTINE | - | If on lithium; toxicity can cause parkinsonism | 0.6-1.2 mEq/L |
+| Valproic acid level (CPT 80164) | URGENT | ROUTINE | ROUTINE | URGENT | If on valproate; supratherapeutic levels increase risk | 50-100 mcg/mL |
+| Lithium level (CPT 80178) | URGENT | ROUTINE | ROUTINE | URGENT | If on lithium; toxicity can cause parkinsonism | 0.6-1.2 mEq/L |
 
 ### 1C. Rare/Specialized
 
@@ -127,7 +128,7 @@ SECTION A: ACTION ITEMS
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MRI brain without contrast (CPT 70551) | ROUTINE | ROUTINE | ROUTINE | - | At diagnosis | Rule out structural cause, vascular parkinsonism, basal ganglia lesions | Pacemaker, metal implants |
 | Clinical examination (UPDRS motor exam) | STAT | ROUTINE | ROUTINE | - | At presentation | Document severity of parkinsonism; baseline for comparison | None |
-| Medication timeline review | STAT | STAT | ROUTINE | - | At presentation | Establish temporal relationship between medication and symptom onset | None |
+| Medication timeline review | STAT | STAT | ROUTINE | STAT | At presentation | Establish temporal relationship between medication and symptom onset | None |
 
 ### 2B. Extended
 
@@ -155,32 +156,35 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Discontinue causative DRBA | - | Primary treatment; removal of offending agent | Taper or discontinue dopamine-blocking agent per clinical judgment :: - :: :: Immediate discontinuation if not psychiatrically required; gradual taper over 1-2 weeks if on antipsychotic to avoid withdrawal psychosis | Active psychosis requiring continued antipsychotic (coordinate with psychiatry) | Psychiatric status, withdrawal symptoms, rebound psychosis | STAT | STAT | ROUTINE | - |
-| Discontinue metoclopramide | - | GI-related DIP; replace with non-dopaminergic antiemetic | Discontinue immediately :: - :: :: Stop metoclopramide; switch to ondansetron 4-8 mg PO/IV q8h PRN for nausea | Active gastroparesis without alternative options | Nausea control, GI motility | STAT | STAT | ROUTINE | - |
-| Discontinue prochlorperazine | - | Antiemetic-induced DIP | Discontinue immediately :: - :: :: Stop prochlorperazine; switch to ondansetron 4-8 mg PO/IV q8h PRN for nausea/vertigo | None | Nausea/vertigo control | STAT | STAT | ROUTINE | - |
-| Dose reduction of causative agent | - | Partial dose reduction when full discontinuation not feasible | Reduce to lowest effective dose :: - :: :: Reduce causative agent to minimum effective dose if complete discontinuation not possible; reassess in 2-4 weeks | Complete discontinuation preferable when safe | Symptom improvement, psychiatric stability | URGENT | URGENT | ROUTINE | - |
+| Discontinue causative DRBA | - | Primary treatment; removal of offending agent | - :: - :: - :: Immediate discontinuation if not psychiatrically required; gradual taper over 1-2 weeks if on antipsychotic to avoid withdrawal psychosis | Active psychosis requiring continued antipsychotic (coordinate with psychiatry) | Psychiatric status, withdrawal symptoms, rebound psychosis | STAT | STAT | ROUTINE | STAT |
+| Discontinue metoclopramide | - | GI-related DIP; replace with non-dopaminergic antiemetic | - :: - :: - :: Stop metoclopramide immediately; switch to ondansetron 4-8 mg PO/IV q8h PRN for nausea | Active gastroparesis without alternative options | Nausea control, GI motility | STAT | STAT | ROUTINE | STAT |
+| Discontinue prochlorperazine | - | Antiemetic-induced DIP | - :: - :: - :: Stop prochlorperazine immediately; switch to ondansetron 4-8 mg PO/IV q8h PRN for nausea/vertigo | None | Nausea/vertigo control | STAT | STAT | ROUTINE | STAT |
+| Dose reduction of causative agent | - | Partial dose reduction when full discontinuation not feasible | - :: - :: - :: Reduce causative agent to minimum effective dose if complete discontinuation not possible; reassess in 2-4 weeks | Complete discontinuation preferable when safe | Symptom improvement, psychiatric stability | URGENT | URGENT | ROUTINE | URGENT |
 
 ### 3B. Symptomatic Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Amantadine (Symmetrel) | PO | Symptomatic relief of DIP; enhances dopamine release and has anticholinergic properties | 100 mg daily; 100 mg BID :: PO :: :: Start 100 mg daily; may increase to 100 mg BID after 1 week; max 300 mg/day; reduce dose in renal impairment (CrCl <50: 100 mg daily) | Severe renal impairment (CrCl <15); seizure history (relative); livedo reticularis (cosmetic); pregnancy | Renal function, hallucinations, livedo reticularis, peripheral edema, confusion in elderly | - | ROUTINE | ROUTINE | - |
-| Benztropine (Cogentin) | PO, IM, IV | Anticholinergic for DIP; particularly useful for tremor-predominant symptoms | 0.5 mg daily; 0.5 mg BID; 1 mg BID; 2 mg BID :: PO :: :: Start 0.5 mg daily; titrate by 0.5 mg q5-7d; usual range 1-4 mg/day in divided doses; max 6 mg/day | Narrow-angle glaucoma; GI obstruction; urinary retention; dementia; elderly (relative - prefer amantadine) | Anticholinergic effects (dry mouth, constipation, urinary retention, confusion, blurred vision), cognitive impairment in elderly, tachycardia | URGENT | ROUTINE | ROUTINE | - |
-| Trihexyphenidyl (Artane) | PO | Anticholinergic for DIP; alternative to benztropine | 1 mg daily; 2 mg TID; 5 mg TID :: PO :: :: Start 1 mg daily; increase by 2 mg q3-5d; usual range 6-10 mg/day in divided doses; max 15 mg/day | Narrow-angle glaucoma; GI obstruction; urinary retention; dementia; elderly (relative) | Anticholinergic effects (dry mouth, constipation, urinary retention, confusion), cognitive impairment, tachycardia | - | ROUTINE | ROUTINE | - |
-| Diphenhydramine (Benadryl) | PO, IV, IM | Acute symptomatic relief of DIP in ED/inpatient; mild anticholinergic properties | 25 mg IV PRN; 50 mg IV PRN; 25 mg PO TID :: PO, IV, IM :: :: 25-50 mg IV/IM for acute relief; 25-50 mg PO q6-8h for ongoing symptoms; max 300 mg/day | Narrow-angle glaucoma; urinary retention | Sedation, anticholinergic effects, falls in elderly | URGENT | ROUTINE | - | - |
+| Amantadine (Symmetrel) | PO | Symptomatic relief of DIP; enhances dopamine release and has anticholinergic properties | 100 mg :: PO :: daily :: Start 100 mg daily; may increase to 100 mg BID after 1 week; max 300 mg/day; reduce dose in renal impairment (CrCl <50: 100 mg daily; CrCl <15: contraindicated) | Severe renal impairment (CrCl <15); seizure history (relative); livedo reticularis (cosmetic); pregnancy | Renal function, hallucinations, livedo reticularis, peripheral edema, confusion in elderly | - | ROUTINE | ROUTINE | - |
+| Benztropine (Cogentin) | PO | Anticholinergic for DIP; particularly useful for tremor-predominant symptoms | 0.5 mg :: PO :: daily :: Start 0.5 mg daily; titrate by 0.5 mg q5-7d; usual range 1-4 mg/day in divided doses; max 6 mg/day | Narrow-angle glaucoma; GI obstruction; urinary retention; dementia; elderly (relative - prefer amantadine) | Anticholinergic effects (dry mouth, constipation, urinary retention, confusion, blurred vision), cognitive impairment in elderly, tachycardia | URGENT | ROUTINE | ROUTINE | - |
+| Benztropine (Cogentin) - acute | IM, IV | Acute anticholinergic relief for severe DIP or dystonic reaction | 1 mg :: IM :: once :: 1-2 mg IM or IV for acute relief; may repeat in 30 min; transition to oral maintenance | Narrow-angle glaucoma; GI obstruction; urinary retention; dementia | Anticholinergic effects, sedation, heart rate | STAT | URGENT | - | - |
+| Trihexyphenidyl (Artane) | PO | Anticholinergic for DIP; alternative to benztropine | 1 mg :: PO :: daily :: Start 1 mg daily; increase by 2 mg q3-5d; usual range 6-10 mg/day in divided doses; max 15 mg/day | Narrow-angle glaucoma; GI obstruction; urinary retention; dementia; elderly (relative) | Anticholinergic effects (dry mouth, constipation, urinary retention, confusion), cognitive impairment, tachycardia | - | ROUTINE | ROUTINE | - |
+| Diphenhydramine (Benadryl) IV/IM | IV, IM | Acute symptomatic relief of DIP in ED/inpatient; mild anticholinergic properties | 25 mg :: IV :: PRN :: 25-50 mg IV/IM for acute relief; may repeat q6-8h; max 300 mg/day | Narrow-angle glaucoma; urinary retention | Sedation, anticholinergic effects, falls in elderly | URGENT | ROUTINE | - | - |
+| Diphenhydramine (Benadryl) PO | PO | Mild symptomatic relief of DIP; oral maintenance | 25 mg :: PO :: TID :: 25-50 mg PO q6-8h for ongoing symptoms; max 300 mg/day | Narrow-angle glaucoma; urinary retention | Sedation, anticholinergic effects, falls in elderly | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Second-Line/Refractory and Psychiatric Substitution
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Quetiapine (Seroquel) | PO | Low-risk antipsychotic substitute when continued antipsychotic therapy required; low D2 receptor affinity | 25 mg QHS; 50 mg BID; 100 mg BID; 200 mg BID :: PO :: :: Start 25 mg QHS; titrate based on psychiatric response; usual range 150-800 mg/day; lowest effective dose to minimize EPS risk | QT prolongation; severe hepatic impairment; concurrent use of strong CYP3A4 inhibitors | Metabolic panel (glucose, lipids), weight, QTc, sedation, orthostatic BP | - | ROUTINE | ROUTINE | - |
-| Clozapine (Clozaril) | PO | Antipsychotic with lowest EPS risk; for treatment-refractory psychosis requiring continued antipsychotic | 12.5 mg daily; 25 mg BID; 50 mg BID; 100 mg BID :: PO :: :: Start 12.5 mg daily; titrate by 25-50 mg/day q1-2wk; usual range 150-450 mg/day; max 900 mg/day | Prior agranulocytosis; severe neutropenia (ANC <500); uncontrolled seizures; severe cardiac disease; ileus | REMS program required (Clozapine REMS); ANC weekly x 6 months, then biweekly x 6 months, then monthly; metabolic panel, weight, glucose, lipids; seizure risk (dose-dependent); myocarditis (first month) | - | EXT | EXT | - |
-| Aripiprazole (Abilify) | PO | Partial D2 agonist with lower EPS risk as antipsychotic substitute | 2 mg daily; 5 mg daily; 10 mg daily; 15 mg daily :: PO :: :: Start 2-5 mg daily; titrate based on response; usual range 10-15 mg/day; max 30 mg/day | Hypersensitivity; caution in elderly with dementia | Metabolic panel, weight, akathisia (can paradoxically worsen), EPS monitoring | - | ROUTINE | ROUTINE | - |
-| Brexpiprazole (Rexulti) | PO | Partial D2 agonist with lower EPS risk; alternative to aripiprazole | 0.5 mg daily; 1 mg daily; 2 mg daily :: PO :: :: Start 0.5 mg daily; titrate to 1-2 mg daily; max 4 mg/day | Hypersensitivity; caution in elderly with dementia | Metabolic panel, weight, EPS monitoring | - | - | ROUTINE | - |
-| Pimozide dose reduction | PO | When pimozide is causative agent; slow taper required | Reduce by 25% q1-2 weeks :: PO :: :: Gradual taper; do not discontinue abruptly; coordinate with psychiatry for alternative | Active psychosis without alternative (coordinate with psychiatry) | ECG (QTc prolongation), psychiatric status | - | ROUTINE | ROUTINE | - |
-| Levodopa/Carbidopa (Sinemet) | PO | Trial if DIP fails to resolve after drug withdrawal (suggests unmasked idiopathic PD) | 25/100 mg TID :: PO :: :: Start 25/100 mg TID with meals; titrate by 25/100 mg q1-2 weeks; response suggests underlying PD | Narrow-angle glaucoma; concurrent non-selective MAOIs; active psychosis (relative - may worsen) | Nausea, orthostatic hypotension, dyskinesia, hallucinations (especially if psychotic history); caution: may worsen psychosis | - | ROUTINE | ROUTINE | - |
-| Ondansetron (Zofran) | PO, IV | Non-dopaminergic antiemetic substitute when metoclopramide or prochlorperazine is causative agent | 4 mg IV PRN; 8 mg PO PRN; 4 mg PO TID :: PO, IV :: :: 4-8 mg PO/IV q8h PRN for nausea; max 24 mg/day | QT prolongation; severe hepatic impairment (max 8 mg/day) | QTc if risk factors, constipation | STAT | ROUTINE | ROUTINE | - |
-| Domperidone (Motilium) | PO | Peripheral dopamine antagonist for gastroparesis; does not cross BBB significantly; substitute for metoclopramide | 10 mg TID :: PO :: :: 10 mg TID before meals; max 30 mg/day; not FDA-approved in US (available via compassionate use/international pharmacy) | QT prolongation; prolactinoma; GI bleeding or obstruction; hepatic impairment | ECG before initiation and periodically; QTc must be <450 ms; electrolytes | - | - | EXT | - |
+| Quetiapine (Seroquel) | PO | Low-risk antipsychotic substitute when continued antipsychotic therapy required; low D2 receptor affinity | 25 mg :: PO :: QHS :: Start 25 mg QHS; titrate based on psychiatric response; usual range 150-800 mg/day; lowest effective dose to minimize EPS risk | QT prolongation; severe hepatic impairment; concurrent use of strong CYP3A4 inhibitors | Metabolic panel (glucose, lipids), weight, QTc, sedation, orthostatic BP | - | ROUTINE | ROUTINE | - |
+| Clozapine (Clozaril) | PO | Antipsychotic with lowest EPS risk; for treatment-refractory psychosis requiring continued antipsychotic | 12.5 mg :: PO :: daily :: Start 12.5 mg daily; titrate by 25-50 mg/day q1-2wk; usual range 150-450 mg/day; max 900 mg/day; requires Clozapine REMS enrollment | Prior agranulocytosis; severe neutropenia (ANC <500); uncontrolled seizures; severe cardiac disease; ileus | REMS program required (Clozapine REMS); ANC weekly x 6 months, then biweekly x 6 months, then monthly; metabolic panel, weight, glucose, lipids; seizure risk (dose-dependent); myocarditis (first month) | - | EXT | EXT | - |
+| Aripiprazole (Abilify) | PO | Partial D2 agonist with lower EPS risk as antipsychotic substitute | 2 mg :: PO :: daily :: Start 2-5 mg daily; titrate based on response; usual range 10-15 mg/day; max 30 mg/day | Hypersensitivity; caution in elderly with dementia | Metabolic panel, weight, akathisia (can paradoxically worsen), EPS monitoring | - | ROUTINE | ROUTINE | - |
+| Brexpiprazole (Rexulti) | PO | Partial D2 agonist with lower EPS risk; alternative to aripiprazole | 0.5 mg :: PO :: daily :: Start 0.5 mg daily; titrate to 1-2 mg daily; max 4 mg/day | Hypersensitivity; caution in elderly with dementia | Metabolic panel, weight, EPS monitoring | - | - | ROUTINE | - |
+| Pimozide dose reduction | PO | When pimozide is causative agent; slow taper required | - :: PO :: - :: Reduce by 25% q1-2 weeks; do not discontinue abruptly; coordinate with psychiatry for alternative | Active psychosis without alternative (coordinate with psychiatry) | ECG (QTc prolongation), psychiatric status | - | ROUTINE | ROUTINE | - |
+| Levodopa/Carbidopa (Sinemet) | PO | Trial if DIP fails to resolve after drug withdrawal (suggests unmasked idiopathic PD) | 25/100 mg :: PO :: TID :: Start 25/100 mg TID with meals; titrate by 25/100 mg q1-2 weeks; response suggests underlying PD | Narrow-angle glaucoma; concurrent non-selective MAOIs; active psychosis (relative - may worsen) | Nausea, orthostatic hypotension, dyskinesia, hallucinations (especially if psychotic history); caution: may worsen psychosis | - | ROUTINE | ROUTINE | - |
+| Ondansetron (Zofran) | IV | Non-dopaminergic antiemetic substitute for acute settings when metoclopramide or prochlorperazine is causative agent | 4 mg :: IV :: PRN :: 4-8 mg IV q8h PRN for nausea; max 24 mg/day | QT prolongation; severe hepatic impairment (max 8 mg/day) | QTc if risk factors, constipation | STAT | ROUTINE | - | STAT |
+| Ondansetron (Zofran) PO | PO | Non-dopaminergic antiemetic substitute for oral maintenance when dopaminergic antiemetic is causative agent | 4 mg :: PO :: TID PRN :: 4-8 mg PO q8h PRN for nausea; max 24 mg/day | QT prolongation; severe hepatic impairment (max 8 mg/day) | QTc if risk factors, constipation | - | ROUTINE | ROUTINE | - |
+| Domperidone (Motilium) | PO | Peripheral dopamine antagonist for gastroparesis; does not cross BBB significantly; substitute for metoclopramide | 10 mg :: PO :: TID :: 10 mg TID before meals; max 30 mg/day; not FDA-approved in US (available via compassionate use/international pharmacy) | QT prolongation; prolactinoma; GI bleeding or obstruction; hepatic impairment | ECG before initiation and periodically; QTc must be <450 ms; electrolytes | - | - | EXT | - |
 
 ---
 
@@ -191,8 +195,8 @@ SECTION A: ACTION ITEMS
 | Recommendation | ED | HOSP | OPD | ICU |
 |----------------|:--:|:----:|:---:|:---:|
 | Movement disorders neurology consult for diagnostic confirmation and differentiation from idiopathic PD | URGENT | URGENT | ROUTINE | - |
-| Psychiatry consult for medication substitution planning if causative agent is an antipsychotic required for active psychiatric condition | URGENT | URGENT | ROUTINE | - |
-| Pharmacy consult for comprehensive medication reconciliation to identify all potential dopamine-blocking agents including OTC medications | ROUTINE | ROUTINE | ROUTINE | - |
+| Psychiatry consult for medication substitution planning if causative agent is an antipsychotic required for active psychiatric condition | URGENT | URGENT | ROUTINE | URGENT |
+| Pharmacy consult for comprehensive medication reconciliation to identify all potential dopamine-blocking agents including OTC medications | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
 | Physical therapy for gait training, balance assessment, and fall prevention given parkinsonian motor impairment | - | ROUTINE | ROUTINE | - |
 | Occupational therapy for ADL adaptation and fine motor strategies given bradykinesia and rigidity | - | ROUTINE | ROUTINE | - |
 | Speech therapy for swallow evaluation if bulbar symptoms present (hypophonia, dysphagia) | - | ROUTINE | ROUTINE | - |
@@ -250,7 +254,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Parameter | Frequency | Target/Threshold | Action if Abnormal | ED | HOSP | OPD | ICU |
 |-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
 | UPDRS motor score | At diagnosis, then q2-4 weeks until resolution | Progressive improvement after drug withdrawal | If no improvement at 3-6 months, pursue DaTscan and consider underlying PD | ROUTINE | ROUTINE | ROUTINE | - |
-| Psychiatric status assessment | At each visit if antipsychotic substituted or discontinued | Stable mental health without psychotic relapse | Psychiatry re-evaluation; consider alternative antipsychotic with lower EPS risk | URGENT | ROUTINE | ROUTINE | - |
+| Psychiatric status assessment | At each visit if antipsychotic substituted or discontinued | Stable mental health without psychotic relapse | Psychiatry re-evaluation; consider alternative antipsychotic with lower EPS risk | URGENT | ROUTINE | ROUTINE | URGENT |
 | Gait and balance assessment | At each visit | Improving postural stability and gait speed | Intensify physical therapy; consider assistive device; evaluate for falls | - | ROUTINE | ROUTINE | - |
 | Anticholinergic side effects | At each visit if on benztropine or trihexyphenidyl | No significant cognitive impairment, urinary retention, or constipation | Reduce dose or switch to amantadine; assess cognition with MoCA if concerned | - | ROUTINE | ROUTINE | - |
 | CMP/renal function | Baseline, then q3 months if on amantadine | eGFR >50 mL/min for standard amantadine dosing | Dose reduce amantadine; if CrCl <15, discontinue amantadine | - | ROUTINE | ROUTINE | - |
@@ -274,31 +278,50 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| DIP is the second most common cause of parkinsonism after idiopathic PD; occurs in 20-40% of patients on DRBAs | Class II, Level B | Shin HW, Chung SJ. J Clin Neurol 2012 |
-| Symmetric parkinsonism and absence of rest tremor favor DIP over idiopathic PD | Class II, Level B | Lopez-Sendon J et al. Expert Rev Neurother 2012 |
-| DaTscan (ioflupane I-123) effectively differentiates DIP from idiopathic PD with high sensitivity and specificity | Class I, Level A | Brigo F et al. Parkinsonism Relat Disord 2014 |
-| Metoclopramide is the most common non-antipsychotic cause of DIP; FDA black box warning for prolonged use | Class II, Level B | Avorn J et al. Ann Intern Med 1995 |
-| Symptoms typically resolve within weeks to months after discontinuation of the causative agent | Class II, Level B | Brigo F et al. J Neurol Sci 2014 |
-| Approximately 10-15% of DIP patients have persistent parkinsonism after drug withdrawal suggesting unmasked underlying PD | Class II, Level B | Burn DJ, Brooks DJ. Brain 1993 |
-| DaTscan is normal in pure DIP but abnormal in patients with DIP unmasking subclinical PD | Class I, Level A | Tinazzi M et al. Neurology 2009 |
-| Amantadine provides symptomatic benefit for drug-induced parkinsonism without worsening psychosis | Class III, Level C | Silver H, Geraisy N. J Clin Psychiatry 1995 |
-| Anticholinergics (benztropine, trihexyphenidyl) are effective for DIP but limited by cognitive side effects especially in elderly | Class II, Level B | Ward KM, Bhatt DL. Drug Saf 2018 |
-| Quetiapine and clozapine have lowest EPS risk among antipsychotics and are preferred substitutes | Class I, Level A | Leucht S et al. Lancet 2013 |
-| Clozapine has the lowest risk of EPS among all antipsychotics but requires REMS monitoring for agranulocytosis | Class I, Level A | Kane J et al. Arch Gen Psychiatry 1988 |
-| Risperidone produces dose-dependent EPS; higher doses (>6 mg/day) have EPS risk similar to typical antipsychotics | Class I, Level B | Divac N et al. Psychiatr Danub 2014 |
-| Calcium channel blockers (flunarizine, cinnarizine) are important causes of DIP outside the US | Class II, Level B | Bondon-Guitton E et al. Fundam Clin Pharmacol 2011 |
-| Valproate-induced parkinsonism is dose-related and typically reversible with dose reduction or discontinuation | Class III, Level C | Armon C et al. Neurology 1996 |
-| MDS Clinical Diagnostic Criteria distinguish clinically established and probable PD from secondary causes including DIP | Class I, Level A | Postuma RB et al. Mov Disord 2015 |
-| Olfactory testing helps distinguish DIP (normal) from idiopathic PD (impaired) as a supportive clinical tool | Class II, Level B | Morley JF, Duda JE. Mov Disord 2010 |
-| MIBG cardiac scintigraphy shows reduced uptake in PD but normal uptake in pure DIP | Class II, Level B | Spiegel J et al. Mov Disord 2005 |
-| Ondansetron is a safe antiemetic alternative that does not block dopamine receptors and does not cause parkinsonism | Class I, Level A | Kovac AL. Drugs 2000 |
-| Risk factors for DIP include female sex, older age, pre-existing brain injury, and higher DRBA doses | Class II, Level B | Thanvi B, Treadwell S. Postgrad Med J 2009 |
-| Domperidone does not significantly cross the blood-brain barrier and has minimal extrapyramidal side effects compared to metoclopramide | Class II, Level B | Reddymasu SC et al. Expert Opin Drug Saf 2007 |
+| DIP is the second most common cause of parkinsonism after idiopathic PD; occurs in 20-40% of patients on DRBAs | Class II, Level B | Shin HW, Chung SJ. J Clin Neurol 2012 [PubMed: 22787491](https://pubmed.ncbi.nlm.nih.gov/22787491/) |
+| Symmetric parkinsonism and absence of rest tremor favor DIP over idiopathic PD | Class II, Level B | Lopez-Sendon J et al. Expert Rev Neurother 2012 [PubMed: 23002938](https://pubmed.ncbi.nlm.nih.gov/23002938/) |
+| DaTscan (ioflupane I-123) effectively differentiates DIP from idiopathic PD with high sensitivity and specificity | Class I, Level A | Brigo F et al. Parkinsonism Relat Disord 2014 [PubMed: 25258329](https://pubmed.ncbi.nlm.nih.gov/25258329/) |
+| Metoclopramide is the most common non-antipsychotic cause of DIP; FDA black box warning for prolonged use | Class II, Level B | Avorn J et al. Ann Intern Med 1995 [PubMed: 7872590](https://pubmed.ncbi.nlm.nih.gov/7872590/) |
+| Symptoms typically resolve within weeks to months after discontinuation of the causative agent | Class II, Level B | Brigo F et al. J Neurol Sci 2014 [PubMed: 25108809](https://pubmed.ncbi.nlm.nih.gov/25108809/) |
+| Approximately 10-15% of DIP patients have persistent parkinsonism after drug withdrawal suggesting unmasked underlying PD | Class II, Level B | Burn DJ, Brooks DJ. Brain 1993 [PubMed: 8461577](https://pubmed.ncbi.nlm.nih.gov/8461577/) |
+| DaTscan is normal in pure DIP but abnormal in patients with DIP unmasking subclinical PD | Class I, Level A | Tinazzi M et al. Neurology 2009 [PubMed: 19528516](https://pubmed.ncbi.nlm.nih.gov/19528516/) |
+| Amantadine provides symptomatic benefit for drug-induced parkinsonism without worsening psychosis | Class III, Level C | Silver H, Geraisy N. J Clin Psychiatry 1995 [PubMed: 7615484](https://pubmed.ncbi.nlm.nih.gov/7615484/) |
+| Anticholinergics (benztropine, trihexyphenidyl) are effective for DIP but limited by cognitive side effects especially in elderly | Class II, Level B | Ward KM, Citrome L. Ther Adv Psychopharmacol 2018 [PubMed: 30181862](https://pubmed.ncbi.nlm.nih.gov/30181862/) |
+| Quetiapine and clozapine have lowest EPS risk among antipsychotics and are preferred substitutes | Class I, Level A | Leucht S et al. Lancet 2013 [PubMed: 23810019](https://pubmed.ncbi.nlm.nih.gov/23810019/) |
+| Clozapine has the lowest risk of EPS among all antipsychotics but requires REMS monitoring for agranulocytosis | Class I, Level A | Kane J et al. Arch Gen Psychiatry 1988 [PubMed: 3046553](https://pubmed.ncbi.nlm.nih.gov/3046553/) |
+| Risperidone produces dose-dependent EPS; higher doses (>6 mg/day) have EPS risk similar to typical antipsychotics | Class I, Level B | Divac N et al. Psychiatr Danub 2014 [PubMed: 25191777](https://pubmed.ncbi.nlm.nih.gov/25191777/) |
+| Calcium channel blockers (flunarizine, cinnarizine) are important causes of DIP outside the US | Class II, Level B | Bondon-Guitton E et al. Fundam Clin Pharmacol 2011 [PubMed: 20608992](https://pubmed.ncbi.nlm.nih.gov/20608992/) |
+| Valproate-induced parkinsonism is dose-related and typically reversible with dose reduction or discontinuation | Class III, Level C | Armon C et al. Neurology 1996 [PubMed: 8710098](https://pubmed.ncbi.nlm.nih.gov/8710098/) |
+| MDS Clinical Diagnostic Criteria distinguish clinically established and probable PD from secondary causes including DIP | Class I, Level A | Postuma RB et al. Mov Disord 2015 [PubMed: 26474316](https://pubmed.ncbi.nlm.nih.gov/26474316/) |
+| Olfactory testing helps distinguish DIP (normal) from idiopathic PD (impaired) as a supportive clinical tool | Class II, Level B | Morley JF, Duda JE. Mov Disord 2010 [PubMed: 20669302](https://pubmed.ncbi.nlm.nih.gov/20669302/) |
+| MIBG cardiac scintigraphy shows reduced uptake in PD but normal uptake in pure DIP | Class II, Level B | Spiegel J et al. Mov Disord 2005 [PubMed: 15584032](https://pubmed.ncbi.nlm.nih.gov/15584032/) |
+| Ondansetron is a safe antiemetic alternative that does not block dopamine receptors and does not cause parkinsonism | Class I, Level A | Kovac AL. Drugs 2000 [PubMed: 10776835](https://pubmed.ncbi.nlm.nih.gov/10776835/) |
+| Risk factors for DIP include female sex, older age, pre-existing brain injury, and higher DRBA doses | Class II, Level B | Thanvi B, Treadwell S. Postgrad Med J 2009 [PubMed: 19789195](https://pubmed.ncbi.nlm.nih.gov/19789195/) |
+| Domperidone does not significantly cross the blood-brain barrier and has minimal extrapyramidal side effects compared to metoclopramide | Class II, Level B | Reddymasu SC et al. Expert Opin Drug Saf 2007 [PubMed: 17559511](https://pubmed.ncbi.nlm.nih.gov/17559511/) |
 | Serial clinical monitoring with UPDRS motor scores recommended to track DIP resolution and identify non-resolving cases requiring DaTscan | Class III, Level C | Expert consensus; movement disorders practice |
 
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized all structured dosing to 4-field `::` delimited format (dose :: route :: frequency :: full_instructions) per C1/M1/R3
+- Split Benztropine into separate PO (maintenance) and IM/IV (acute) rows for correct route-specific dosing per M3
+- Split Diphenhydramine into separate IV/IM (acute) and PO (maintenance) rows for correct route-specific dosing per M3
+- Split Ondansetron into separate IV (acute) and PO (maintenance) rows for correct route-specific dosing per M3
+- Added ICU coverage for core labs (CBC, CMP, glucose, drug levels, medication reconciliation) relevant to NMS workup per S1/R4
+- Added ICU coverage for extended labs (CK, valproic acid level, lithium level) per S1/R4
+- Added ICU STAT coverage for Section 3A causative agent management (all 4 interventions) per S2
+- Added ICU coverage for ondansetron IV (STAT) and psychiatric status monitoring (URGENT) per S2
+- Added ICU URGENT for psychiatry consult and ROUTINE for pharmacy consult in Section 4A per S1
+- Added ICU URGENT for psychiatric status monitoring in Section 6 per S1
+- Added medication timeline review ICU = STAT per S2
+- Used `- :: - :: - ::` format for non-medication intervention rows (discontinuation/taper orders) per M2
+- Added `═══` section dividers before Section B header per R1/R5
+- Added PubMed citation links to all 21 references in Section 8 per R2
+- Corrected Ward KM citation co-author from "Bhatt DL" to "Citrome L" per accuracy check
+- Added CrCl <15 contraindication detail to amantadine dosing instructions
+- Updated version to 1.1 and added REVISED date
 
 **v1.0 (January 30, 2026)**
 - Initial template creation
@@ -310,7 +333,7 @@ SECTION B: REFERENCE (Expand as Needed)
 - Non-dopaminergic antiemetic substitution (ondansetron, domperidone)
 - Causative agent reference table with risk stratification
 - Key distinguishing features table for DIP vs idiopathic PD
-- 21 evidence-based references (PubMed links pending citation verification)
+- 21 evidence-based references
 
 ---
 

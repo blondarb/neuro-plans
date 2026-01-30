@@ -1,7 +1,7 @@
 ---
 title: "Post-Concussion Syndrome"
 description: "Clinical decision support for post-concussion syndrome diagnosis and management across care settings"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD"
 status: draft
 tags:
@@ -23,8 +23,9 @@ tags:
 
 # Post-Concussion Syndrome
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -137,12 +138,12 @@ SECTION A: ACTION ITEMS
 ### 3A. Post-Traumatic Headache Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Acetaminophen | PO | Mild-moderate post-traumatic headache | 500-1000 mg :: PO :: q6h PRN :: 500-1000 mg PO q6h PRN; max 3000 mg/day | Hepatic disease, chronic alcohol use | LFTs if frequent use | ROUTINE | ROUTINE | ROUTINE | - |
 | Ibuprofen | PO | Mild-moderate post-traumatic headache | 400-600 mg :: PO :: q6-8h PRN :: 400-600 mg PO q6-8h PRN with food; max 2400 mg/day; limit to <15 days/month | Renal disease, GI bleeding, aspirin allergy | Renal function; risk of MOH | ROUTINE | ROUTINE | ROUTINE | - |
 | Naproxen sodium | PO | Mild-moderate post-traumatic headache | 250-500 mg :: PO :: BID PRN :: 250-500 mg PO BID PRN; max 1250 mg/day; limit to <15 days/month | Renal disease, GI bleeding | Renal function; risk of MOH | ROUTINE | ROUTINE | ROUTINE | - |
 | Amitriptyline | PO | First-line preventive for post-traumatic headache | 10 mg :: PO :: QHS :: Start 10 mg PO QHS; increase by 10 mg every 1-2 weeks; target 25-75 mg QHS; max 150 mg | Cardiac arrhythmia, glaucoma, urinary retention, recent MI | ECG at baseline; anticholinergic effects; weight gain; dry mouth | - | ROUTINE | ROUTINE | - |
-| Nortriptyline | PO | Alternative TCA for post-traumatic headache (fewer anticholinergic effects) | 10 mg :: PO :: QHS :: Start 10 mg PO QHS; increase by 10 mg every 1-2 weeks; target 25-75 mg QHS; max 150 mg | Same as amitriptyline (generally better tolerated) | ECG at baseline; anticholinergic effects (less than amitriptyline) | - | ROUTINE | ROUTINE | - |
+| Nortriptyline | PO | Alternative TCA for post-traumatic headache (fewer anticholinergic effects) | 10 mg :: PO :: QHS :: Start 10 mg PO QHS; increase by 10 mg every 1-2 weeks; target 25-75 mg QHS; max 150 mg | Cardiac arrhythmia, glaucoma, urinary retention, recent MI | ECG at baseline; anticholinergic effects (less than amitriptyline); weight gain | - | ROUTINE | ROUTINE | - |
 | Topiramate | PO | Preventive for post-traumatic headache (second-line) | 25 mg :: PO :: QHS :: Start 25 mg PO QHS; increase by 25 mg/week; target 50-100 mg BID; max 200 mg/day | Kidney stones, pregnancy, glaucoma | Bicarbonate; cognitive side effects (may worsen PCS cognition); weight loss; paresthesias | - | - | ROUTINE | - |
 | Propranolol | PO | Preventive for post-traumatic headache | 20-40 mg :: PO :: BID :: Start 20-40 mg PO BID; target 80-240 mg/day | Asthma, heart block, bradycardia, decompensated HF | HR, BP; fatigue may worsen PCS fatigue | - | ROUTINE | ROUTINE | - |
 | Venlafaxine XR | PO | Dual headache prevention and mood improvement | 37.5 mg :: PO :: daily :: Start 37.5 mg PO daily; increase by 37.5 mg every 1-2 weeks; target 75-150 mg daily | Uncontrolled HTN, MAOI use, narrow-angle glaucoma | BP; serotonin syndrome risk; discontinuation syndrome | - | - | ROUTINE | - |
@@ -154,7 +155,7 @@ SECTION A: ACTION ITEMS
 ### 3B. Vestibular/Dizziness Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Canalith repositioning (Epley maneuver) | - | BPPV (post-traumatic) | Perform in clinic; may need 2-3 sessions | Cervical spine injury (relative) | Resolution of positional nystagmus | URGENT | ROUTINE | ROUTINE | - |
 | Meclizine | PO | Acute vestibular symptoms (short-term only) | 25 mg :: PO :: q8h PRN :: 25 mg PO q8h PRN; short-term only (<1-2 weeks); avoid chronic use | Glaucoma, urinary retention | Sedation; may impair vestibular compensation if used chronically | URGENT | ROUTINE | ROUTINE | - |
 | Dimenhydrinate | PO | Acute vestibular symptoms (short-term only) | 50 mg :: PO :: q6h PRN :: 50 mg PO q6h PRN; short-term only (<1-2 weeks) | Same as meclizine | Sedation; avoid chronic use | URGENT | ROUTINE | ROUTINE | - |
@@ -165,7 +166,7 @@ SECTION A: ACTION ITEMS
 ### 3C. Cognitive and Fatigue Management
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Methylphenidate | PO | Cognitive fatigue, processing speed deficits, attention impairment | 5 mg :: PO :: BID :: Start 5 mg PO BID (morning and noon); increase by 5 mg/dose every 3-7 days; target 10-20 mg BID; max 60 mg/day; avoid afternoon dosing | Uncontrolled HTN, cardiac arrhythmia, glaucoma, anxiety disorder (relative), substance abuse history | HR, BP; appetite, weight, sleep; anxiety; potential for abuse | - | - | ROUTINE | - |
 | Amantadine | PO | Cognitive fatigue, processing speed, motivation | 100 mg :: PO :: BID :: Start 100 mg PO every morning; increase to 100 mg BID after 1 week; max 200 mg BID | Renal impairment (adjust dose), seizure history (relative) | Livedo reticularis, ankle edema, hallucinations, insomnia; renal function | - | - | ROUTINE | - |
 | Modafinil | PO | Excessive daytime sleepiness, fatigue (off-label for TBI) | 100 mg :: PO :: daily :: Start 100 mg PO every morning; may increase to 200 mg daily; max 400 mg/day | Cardiac arrhythmia, mitral valve prolapse, hepatic impairment | HR, BP; headache; Stevens-Johnson (rare); may reduce OCP efficacy | - | - | ROUTINE | - |
@@ -175,7 +176,7 @@ SECTION A: ACTION ITEMS
 ### 3D. Sleep Disturbance Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Melatonin | PO | Insomnia, circadian rhythm disruption post-TBI | 3-5 mg :: PO :: QHS :: 3-5 mg PO 30-60 minutes before bedtime; may increase to 10 mg | None significant | Well tolerated; vivid dreams | - | ROUTINE | ROUTINE | - |
 | Trazodone | PO | Insomnia (non-habit forming) | 25-50 mg :: PO :: QHS :: Start 25-50 mg PO QHS; may increase to 100-150 mg; max 200 mg QHS | Concurrent MAOIs | Orthostatic hypotension; priapism (rare); morning sedation | - | ROUTINE | ROUTINE | - |
 | Hydroxyzine | PO | Insomnia with anxiety | 25-50 mg :: PO :: QHS :: 25-50 mg PO QHS PRN | QT prolongation, elderly (fall risk) | Sedation; anticholinergic effects | - | ROUTINE | ROUTINE | - |
@@ -186,7 +187,7 @@ SECTION A: ACTION ITEMS
 ### 3E. Mood and Anxiety Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Sertraline | PO | Depression, anxiety, irritability post-TBI | 25 mg :: PO :: daily :: Start 25 mg PO daily; increase by 25 mg every 1-2 weeks; target 50-150 mg daily; max 200 mg | Concurrent MAOIs, uncontrolled bipolar | Suicidality monitoring (weeks 1-4); GI upset; sexual dysfunction; serotonin syndrome | - | ROUTINE | ROUTINE | - |
 | Escitalopram | PO | Depression, anxiety post-TBI | 5 mg :: PO :: daily :: Start 5 mg PO daily; increase to 10 mg after 1 week; max 20 mg daily | Concurrent MAOIs, QT prolongation | Suicidality monitoring; QTc; sexual dysfunction | - | ROUTINE | ROUTINE | - |
 | Duloxetine | PO | Depression with comorbid pain (headache, musculoskeletal) | 20-30 mg :: PO :: daily :: Start 20-30 mg PO daily; increase to 60 mg daily after 1-2 weeks; max 120 mg | Concurrent MAOIs, hepatic impairment, uncontrolled glaucoma | LFTs; BP; nausea (transient); discontinuation syndrome | - | - | ROUTINE | - |
@@ -198,7 +199,7 @@ SECTION A: ACTION ITEMS
 ### 3F. Autonomic Dysfunction / Exertion Intolerance Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Graded aerobic exercise program (Buffalo Concussion Treadmill Test protocol) | - | Exercise intolerance, autonomic dysregulation post-concussion | Start at sub-symptom threshold HR; increase 5-10% per week; target 30 min moderate intensity | Uncontrolled cardiac disease; active vertigo | HR monitoring; symptom provocation tracking; stop if symptoms worsen >2 points | - | - | ROUTINE | - |
 | Fludrocortisone | PO | Orthostatic intolerance, post-concussion autonomic dysfunction | 0.1 mg :: PO :: daily :: Start 0.1 mg PO daily; max 0.2 mg daily | CHF, hypertension, renal failure | BP, potassium, edema; weight | - | - | EXT | - |
 | Midodrine | PO | Orthostatic hypotension contributing to dizziness | 2.5 mg :: PO :: TID :: Start 2.5 mg PO TID; increase to 5-10 mg TID; avoid evening dose | Supine HTN, urinary retention, pheochromocytoma | Supine BP; urinary symptoms | - | - | EXT | - |
@@ -208,7 +209,7 @@ SECTION A: ACTION ITEMS
 ### 3G. Visual/Oculomotor Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Neuro-optometric rehabilitation | - | Convergence insufficiency, accommodative dysfunction, saccadic dysfunction | Specialized vision therapy; 1-2x/week for 8-12 weeks | None significant | Near point of convergence, symptom improvement | - | - | ROUTINE | - |
 | Prism glasses (temporary) | - | Binocular vision dysfunction, diplopia | Prescribed by neuro-optometrist or ophthalmologist | None | Visual comfort, symptom relief | - | - | ROUTINE | - |
 | FL-41 tinted lenses | - | Photophobia, light sensitivity | Worn as needed; indoor and outdoor versions | None | Subjective improvement | - | ROUTINE | ROUTINE | - |
@@ -383,6 +384,12 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Fixed nortriptyline cross-reference: replaced "Same as amitriptyline" with self-contained contraindications (C1/M1)
+- Standardized all 7 treatment table separator rows with proper column alignment syntax (M2/R2)
+- Added REVISED date to metadata header (R7)
+- Version bump to 1.1 per checker review (R8)
 
 **v1.0 (January 30, 2026)**
 - Initial template creation
