@@ -1,3 +1,10 @@
+---
+title: "Trigeminal Neuralgia"
+description: "Clinical decision support for trigeminal neuralgia diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Trigeminal Neuralgia
 
 **VERSION:** 1.0
@@ -9,9 +16,9 @@
 
 **DIAGNOSIS:** Trigeminal Neuralgia
 
-**ICD-10:** G50.0 (Trigeminal neuralgia), G50.1 (Atypical facial pain), G44.847 (Trigeminal autonomic cephalalgia)
+**ICD-10:** G50.0 (Trigeminal neuralgia), G50.1 (Atypical facial pain), G50.8 (Other disorders of trigeminal nerve), G44.847 (Trigeminal autonomic cephalalgia)
 
-**SYNONYMS:** Trigeminal neuralgia, TN, tic douloureux, facial neuralgia, classical trigeminal neuralgia, idiopathic trigeminal neuralgia, secondary trigeminal neuralgia, painful trigeminal neuropathy
+**SYNONYMS:** Trigeminal neuralgia, TN, tic douloureux, facial neuralgia, facial pain, CN V neuralgia, trigeminal neuropathy, classical trigeminal neuralgia, idiopathic trigeminal neuralgia, secondary trigeminal neuralgia, painful trigeminal neuropathy
 
 **SCOPE:** Evaluation and management of trigeminal neuralgia in adults including classical TN (with or without neurovascular compression), secondary TN, and painful trigeminal neuropathy. Covers medical management, procedural interventions, and surgical options. Applies to ED, hospital, and outpatient settings.
 
@@ -38,18 +45,18 @@
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC | - | ROUTINE | ROUTINE | - | Baseline for carbamazepine (bone marrow suppression) | Normal |
-| CMP (sodium, LFTs) | - | ROUTINE | ROUTINE | - | Carbamazepine: hyponatremia, hepatotoxicity | Normal |
+| CBC (CPT 85025) | - | ROUTINE | ROUTINE | - | Baseline for carbamazepine (bone marrow suppression) | Normal |
+| CMP (CPT 80053) (sodium, LFTs) | - | ROUTINE | ROUTINE | - | Carbamazepine: hyponatremia, hepatotoxicity | Normal |
 | HLA-B*1502 (Asian ancestry) | - | ROUTINE | ROUTINE | - | SJS/TEN risk with carbamazepine in Asian populations | Negative |
 
 ### 1B. Extended Labs (Atypical Presentations)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| ESR, CRP | - | ROUTINE | EXT | - | If vasculitis or GCA suspected (elderly, V1) | Normal |
-| ANA, SSA/SSB | - | - | EXT | - | Sjögren syndrome can cause trigeminal neuropathy | Negative |
-| CSF analysis | - | EXT | EXT | - | If MS or CNS infection suspected | Normal; or MS-consistent findings |
-| ACE level | - | - | EXT | - | Neurosarcoidosis | Normal |
+| ESR (CPT 85652), CRP (CPT 86140) | - | ROUTINE | EXT | - | If vasculitis or GCA suspected (elderly, V1) | Normal |
+| ANA (CPT 86235), SSA/SSB | - | - | EXT | - | Sjögren syndrome can cause trigeminal neuropathy | Negative |
+| CSF analysis (CPT 62270) | - | EXT | EXT | - | If MS or CNS infection suspected | Normal; or MS-consistent findings |
+| ACE level (CPT 82164) | - | - | EXT | - | Neurosarcoidosis | Normal |
 
 ---
 
@@ -59,9 +66,9 @@
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with dedicated trigeminal protocol | - | ROUTINE | ROUTINE | - | All patients; before treatment | Identify neurovascular compression, tumor, MS plaques | Pacemaker, metal |
-| MRA (if MRI equivocal) | - | ROUTINE | EXT | - | Evaluate vascular loop | Define vessel relationship | Same |
-| CT head (if MRI unavailable) | URGENT | ROUTINE | - | - | Emergent exclusion of mass | No mass | None (contrast: renal) |
+| MRI brain with dedicated trigeminal protocol (CPT 70553) | - | ROUTINE | ROUTINE | - | All patients; before treatment | Identify neurovascular compression, tumor, MS plaques | Pacemaker, metal |
+| MRA (CPT 70544) (if MRI equivocal) | - | ROUTINE | EXT | - | Evaluate vascular loop | Define vessel relationship | Same |
+| CT head (CPT 70450) (if MRI unavailable) | URGENT | ROUTINE | - | - | Emergent exclusion of mass | No mass | None (contrast: renal) |
 
 ### 2B. Specialized Protocols
 
@@ -74,7 +81,7 @@
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Trigeminal reflex testing (blink reflex) | - | - | EXT | - | If sensory loss; differentiate from neuropathy | Normal in classical TN; abnormal in secondary | None |
+| Trigeminal reflex testing (blink reflex) (CPT 95933) | - | - | EXT | - | If sensory loss; differentiate from neuropathy | Normal in classical TN; abnormal in secondary | None |
 | Dental/maxillofacial evaluation | - | - | ROUTINE | - | Exclude dental pathology as pain source | No dental cause | None |
 
 ---
@@ -83,45 +90,45 @@
 
 ### 3A. First-Line Pharmacotherapy
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Carbamazepine (Tegretol) | ROUTINE | ROUTINE | ROUTINE | - | 100-200 mg BID; increase by 100-200 mg q3-7 days; target 400-1200 mg/day divided BID-TID | AV block, bone marrow suppression, MAOIs, Asian ancestry (check HLA-B*1502) | CBC, LFTs, Na q2-4 weeks initially, then q3-6 months; drug levels optional |
-| Oxcarbazepine (Trileptal) | ROUTINE | ROUTINE | ROUTINE | - | 150-300 mg BID; increase by 300 mg/week; target 600-1800 mg/day | Severe hyponatremia; less drug interactions than CBZ | Na (hyponatremia more common); CBC, LFTs less critical |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Carbamazepine (Tegretol) | PO | - | 100-200 mg :: PO :: BID :: 100-200 mg BID; increase by 100-200 mg q3-7 days; target 400-1200 mg/day divided BID-TID | AV block, bone marrow suppression, MAOIs, Asian ancestry (check HLA-B*1502) | CBC, LFTs, Na q2-4 weeks initially, then q3-6 months; drug levels optional | ROUTINE | ROUTINE | ROUTINE | - |
+| Oxcarbazepine (Trileptal) | - | - | 150-300 mg :: PO :: BID :: 150-300 mg BID; increase by 300 mg/week; target 600-1800 mg/day | Severe hyponatremia; less drug interactions than CBZ | Na (hyponatremia more common); CBC, LFTs less critical | ROUTINE | ROUTINE | ROUTINE | - |
 
 ### 3B. Second-Line Pharmacotherapy
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Baclofen | - | ROUTINE | ROUTINE | - | 5 mg TID; increase by 5 mg q3 days; target 30-80 mg/day divided TID | Renal impairment (dose reduce) | Sedation, weakness; taper slowly to avoid withdrawal |
-| Lamotrigine | - | ROUTINE | ROUTINE | - | 25 mg daily × 2 weeks, then 50 mg daily × 2 weeks, then increase by 50 mg q2 weeks; target 200-400 mg/day | History of rash with AEDs | Rash (SJS risk with rapid titration); slow titration mandatory |
-| Gabapentin | ROUTINE | ROUTINE | ROUTINE | - | 300 mg TID; titrate to 1800-3600 mg/day; less effective than CBZ/OXC | CrCl <60: reduce dose | Sedation; renal dosing |
-| Pregabalin | - | ROUTINE | ROUTINE | - | 75 mg BID; titrate to 150-300 mg BID | CrCl <60: reduce dose | Sedation, weight gain; renal dosing |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Baclofen | PO | - | 5 mg :: PO :: TID :: 5 mg TID; increase by 5 mg q3 days; target 30-80 mg/day divided TID | Renal impairment (dose reduce) | Sedation, weakness; taper slowly to avoid withdrawal | - | ROUTINE | ROUTINE | - |
+| Lamotrigine | - | - | 25 mg :: PO :: daily :: 25 mg daily × 2 weeks, then 50 mg daily × 2 weeks, then increase by 50 mg q2 weeks; target 200-400 mg/day | History of rash with AEDs | Rash (SJS risk with rapid titration); slow titration mandatory | - | ROUTINE | ROUTINE | - |
+| Gabapentin | - | - | 300 mg :: - :: TID :: 300 mg TID; titrate to 1800-3600 mg/day; less effective than CBZ/OXC | CrCl <60: reduce dose | Sedation; renal dosing | ROUTINE | ROUTINE | ROUTINE | - |
+| Pregabalin | PO | - | 75 mg :: PO :: BID :: 75 mg BID; titrate to 150-300 mg BID | CrCl <60: reduce dose | Sedation, weight gain; renal dosing | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Combination Therapy
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Carbamazepine + Baclofen | - | ROUTINE | ROUTINE | - | If monotherapy inadequate; use lower doses | Per individual agents | Per individual agents |
-| Carbamazepine + Lamotrigine | - | ROUTINE | ROUTINE | - | Additive efficacy; CBZ induces lamotrigine metabolism (need higher LTG dose) | Per individual agents | Drug interactions |
-| Oxcarbazepine + Gabapentin | - | ROUTINE | ROUTINE | - | If CBZ not tolerated | Per individual agents | Hyponatremia, sedation |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Carbamazepine + Baclofen | - | - | If monotherapy inadequate; use lower doses | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
+| Carbamazepine + Lamotrigine | - | - | Additive efficacy; CBZ induces lamotrigine metabolism (need higher LTG dose) | Per individual agents | Drug interactions | - | ROUTINE | ROUTINE | - |
+| Oxcarbazepine + Gabapentin | - | - | If CBZ not tolerated | Per individual agents | Hyponatremia, sedation | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Acute Exacerbation Management
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Fosphenytoin (severe exacerbation) | STAT | STAT | - | - | 15-20 mg PE/kg IV at 100-150 mg/min; then phenytoin 100 mg TID | Sinus bradycardia, heart block, Adams-Stokes syndrome | ECG, BP during infusion; phenytoin levels |
-| IV lidocaine | - | STAT | - | - | 1-3 mg/kg IV over 20-30 min (monitored setting); for severe refractory pain | Cardiac conduction abnormalities | Continuous cardiac monitoring |
-| Peripheral nerve block (V2/V3) | ROUTINE | ROUTINE | ROUTINE | - | Lidocaine/bupivacaine at foramen rotundum/ovale | Infection, coagulopathy | Short-term relief |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Fosphenytoin (severe exacerbation) (CPT 96365) | IV | - | 15-20 mg :: IV :: TID :: 15-20 mg PE/kg IV at 100-150 mg/min; then phenytoin 100 mg TID | - | Sinus bradycardia, heart block, Adams-Stokes syndrome | ECG, BP during infusion; phenytoin levels | STAT | STAT | - | - |
+| IV lidocaine (CPT 96365) | IV | - | 1-3 mg/kg :: IV :: - :: 1-3 mg/kg IV over 20-30 min (monitored setting); for severe refractory pain | - | Cardiac conduction abnormalities | Continuous cardiac monitoring | - | STAT | - | - |
+| Peripheral nerve block (V2/V3) (CPT 64400) | - | - | Lidocaine/bupivacaine at foramen rotundum/ovale | - | Infection, coagulopathy | Short-term relief | ROUTINE | ROUTINE | ROUTINE | - |
 
 ### 3E. Interventional Procedures (Refractory to Medical Therapy)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Percutaneous balloon compression | - | ROUTINE | - | - | Outpatient/short-stay; compresses gasserian ganglion | Coagulopathy | Facial numbness; recurrence 20-30% at 5 years |
-| Percutaneous glycerol rhizolysis | - | ROUTINE | - | - | Injection into Meckel's cave | Same | Same; less sensory loss |
-| Percutaneous radiofrequency thermocoagulation | - | ROUTINE | - | - | Thermal lesion of trigeminal ganglion | Same | Corneal anesthesia risk (V1); recurrence |
-| Stereotactic radiosurgery (Gamma Knife) | - | - | ROUTINE | - | Single high-dose radiation to trigeminal root; effect delayed 1-3 months | None absolute; prior radiation relative | Delayed response; facial numbness (10-30%) |
-| Microvascular decompression (MVD) | - | ROUTINE | - | - | Definitive surgery; move offending vessel; craniotomy | High surgical risk; no vascular compression | Hearing loss (1-2%), facial numbness (3%), stroke (<1%), recurrence 15-20% at 10 years |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Percutaneous balloon compression | - | - | Outpatient/short-stay; compresses gasserian ganglion | Coagulopathy | Facial numbness; recurrence 20-30% at 5 years | - | ROUTINE | - | - |
+| Percutaneous glycerol rhizolysis | - | - | Injection into Meckel's cave | Same | Same; less sensory loss | - | ROUTINE | - | - |
+| Percutaneous radiofrequency thermocoagulation | - | - | Thermal lesion of trigeminal ganglion | Same | Corneal anesthesia risk (V1); recurrence | - | ROUTINE | - | - |
+| Stereotactic radiosurgery (Gamma Knife) | - | - | Single high-dose radiation to trigeminal root; effect delayed 1-3 months | None absolute; prior radiation relative | Delayed response; facial numbness (10-30%) | - | - | ROUTINE | - |
+| Microvascular decompression (MVD) | - | - | Definitive surgery; move offending vessel; craniotomy | High surgical risk; no vascular compression | Hearing loss (1-2%), facial numbness (3%), stroke (<1%), recurrence 15-20% at 10 years | - | ROUTINE | - | - |
 
 ### 3F. Treatment for Specific Subtypes
 
@@ -217,7 +224,7 @@
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Carbamazepine first-line for TN | Class I, Level A | Multiple RCTs; AAN/EFNS Guidelines 2008, reaffirmed |
+| Carbamazepine first-line for TN | Class I, Level A | Multiple RCTs; [AAN/EFNS Guidelines 2008](https://pubmed.ncbi.nlm.nih.gov/18716236/), reaffirmed |
 | Oxcarbazepine as effective alternative | Class I, Level B | Multiple RCTs |
 | MVD most effective long-term for classical TN with compression | Class II, Level B | Multiple case series; long-term outcome data |
 | Percutaneous procedures effective for refractory TN | Class II, Level B | Multiple case series |

@@ -1,3 +1,10 @@
+---
+title: "Vertigo / Dizziness Evaluation"
+description: "Clinical decision support for vertigo / dizziness evaluation diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Vertigo / Dizziness Evaluation
 
 **VERSION:** 1.0
@@ -8,9 +15,9 @@
 
 **DIAGNOSIS:** Vertigo / Dizziness Evaluation
 
-**ICD-10:** R42 (Dizziness and giddiness), H81.10 (Benign paroxysmal positional vertigo, unspecified ear), H81.0 (Meniere's disease), H81.3 (Other peripheral vertigo), G45.0 (Vertebro-basilar artery syndrome), H81.4 (Vertigo of central origin)
+**ICD-10:** R42 (Dizziness and giddiness), H81.10 (Benign paroxysmal positional vertigo, unspecified ear), H81.00 (Meniere's disease, unspecified ear), H81.30 (Other peripheral vertigo, unspecified ear), H81.390 (Other peripheral vertigo, unspecified ear), G45.0 (Vertebro-basilar artery syndrome), H81.4 (Vertigo of central origin), H83.09 (Labyrinthitis, unspecified ear)
 
-**SYNONYMS:** Vertigo, dizziness, lightheadedness, light headedness, disequilibrium, presyncope, room spinning, BPPV, vestibular neuritis, labyrinthitis, Meniere's disease, imbalance, unsteadiness, giddiness
+**SYNONYMS:** Vertigo, dizziness, lightheadedness, light headedness, disequilibrium, presyncope, room spinning, BPPV, benign paroxysmal positional vertigo, vestibular neuritis, labyrinthitis, Meniere disease, Meniere's disease, imbalance, unsteadiness, giddiness, vestibular migraine
 
 **SCOPE:** Evaluation and management of acute vertigo and dizziness in adults. Covers differentiation of peripheral vs. central causes, the HINTS exam, Dix-Hallpike and canalith repositioning maneuvers, evaluation for posterior circulation stroke, and management of common vestibular disorders (BPPV, vestibular neuritis, Meniere's disease, vestibular migraine). Excludes chronic non-specific dizziness (persistent postural-perceptual dizziness), medication-induced dizziness (covered briefly), and presyncope/orthostatic hypotension (separate evaluation).
 
@@ -28,23 +35,23 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Blood glucose | STAT | STAT | ROUTINE | STAT | Hypoglycemia can cause dizziness/lightheadedness; hyperglycemia (diabetic neuropathy); metabolic dizziness | 70-180 mg/dL; hypo/hyperglycemia → correct and reassess |
-| CBC | STAT | STAT | ROUTINE | STAT | Anemia (lightheadedness, presyncope); infection (labyrinthitis); baseline | Normal; anemia (Hgb <10) can cause dizziness; infection markers |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Electrolyte abnormalities (hyponatremia, hypoglycemia); renal dysfunction; dehydration | Normal; hyponatremia <130 can cause neurologic symptoms including imbalance |
-| TSH | - | ROUTINE | ROUTINE | - | Thyroid dysfunction can cause dizziness/imbalance; hyperthyroidism especially | Normal; abnormal → thyroid evaluation |
-| ECG (12-lead) | STAT | STAT | ROUTINE | STAT | Cardiac arrhythmia causing presyncope/dizziness; differentiates cardiac from vestibular | Normal; arrhythmia → cardiac workup; prolonged QTc |
+| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Hypoglycemia can cause dizziness/lightheadedness; hyperglycemia (diabetic neuropathy); metabolic dizziness | 70-180 mg/dL; hypo/hyperglycemia → correct and reassess |
+| CBC (CPT 85025) | STAT | STAT | ROUTINE | STAT | Anemia (lightheadedness, presyncope); infection (labyrinthitis); baseline | Normal; anemia (Hgb <10) can cause dizziness; infection markers |
+| CMP (CPT 80053) (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Electrolyte abnormalities (hyponatremia, hypoglycemia); renal dysfunction; dehydration | Normal; hyponatremia <130 can cause neurologic symptoms including imbalance |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction can cause dizziness/imbalance; hyperthyroidism especially | Normal; abnormal → thyroid evaluation |
+| ECG (12-lead) (CPT 93000) | STAT | STAT | ROUTINE | STAT | Cardiac arrhythmia causing presyncope/dizziness; differentiates cardiac from vestibular | Normal; arrhythmia → cardiac workup; prolonged QTc |
 | Orthostatic vital signs | STAT | STAT | ROUTINE | STAT | Orthostatic hypotension is common cause of dizziness, especially in elderly; drop in SBP >20 or DBP >10 with symptoms | No orthostatic drop; positive orthostatics → volume status, medication review, autonomic evaluation |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Lipid panel | - | ROUTINE | ROUTINE | - | Vascular risk factors if central cause suspected; stroke risk stratification | LDL <70 (high risk) or <100; triglycerides; HDL |
-| HbA1c | - | ROUTINE | ROUTINE | - | Diabetes (vascular risk factor; diabetic neuropathy affecting balance) | <7.0%; elevated → diabetes management |
-| RPR / VDRL | - | - | ROUTINE | - | Neurosyphilis (rare cause of vertigo, especially in HIV); otosyphilis | Negative; positive → CSF analysis, penicillin treatment |
-| Vitamin B12 | - | ROUTINE | ROUTINE | - | B12 deficiency causes peripheral neuropathy and imbalance; subacute combined degeneration | >300 pg/mL; low → supplement and monitor |
-| Ferritin | - | ROUTINE | ROUTINE | - | Iron deficiency (even without anemia) can cause dizziness | >50 ng/mL; low → iron supplementation |
-| ANA / ESR / CRP | - | ROUTINE | ROUTINE | - | Autoimmune inner ear disease; vasculitis (CNS vasculitis affecting posterior circulation) | Normal; elevated → autoimmune/inflammatory workup |
+| Lipid panel (CPT 80061) | - | ROUTINE | ROUTINE | - | Vascular risk factors if central cause suspected; stroke risk stratification | LDL <70 (high risk) or <100; triglycerides; HDL |
+| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Diabetes (vascular risk factor; diabetic neuropathy affecting balance) | <7.0%; elevated → diabetes management |
+| RPR / VDRL (CPT 86592) | - | - | ROUTINE | - | Neurosyphilis (rare cause of vertigo, especially in HIV); otosyphilis | Negative; positive → CSF analysis, penicillin treatment |
+| Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | B12 deficiency causes peripheral neuropathy and imbalance; subacute combined degeneration | >300 pg/mL; low → supplement and monitor |
+| Ferritin (CPT 82728) | - | ROUTINE | ROUTINE | - | Iron deficiency (even without anemia) can cause dizziness | >50 ng/mL; low → iron supplementation |
+| ANA (CPT 86235) / ESR (CPT 85652) / CRP (CPT 86140) | - | ROUTINE | ROUTINE | - | Autoimmune inner ear disease; vasculitis (CNS vasculitis affecting posterior circulation) | Normal; elevated → autoimmune/inflammatory workup |
 | Drug levels (if applicable) | STAT | STAT | ROUTINE | STAT | Ototoxic medications (aminoglycosides, salicylates); anticonvulsant toxicity (phenytoin, carbamazepine) | Therapeutic; toxic levels → adjust or discontinue |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
@@ -52,7 +59,7 @@ SECTION A: ACTION ITEMS
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | FTA-ABS | - | - | ROUTINE | - | Confirmatory for syphilis if RPR positive; otosyphilis/neurosyphilis | Negative |
-| Lyme serology | - | - | ROUTINE | - | Lyme disease can cause cranial neuropathies, including vestibular neuritis; endemic areas | Negative; positive → Western blot confirmation |
+| Lyme serology (CPT 86618) | - | - | ROUTINE | - | Lyme disease can cause cranial neuropathies, including vestibular neuritis; endemic areas | Negative; positive → Western blot confirmation |
 | Anti-GAD65 antibodies | - | - | EXT | - | Cerebellar ataxia; autoimmune cerebellitis | Negative; positive → autoimmune cerebellar disease |
 | Paraneoplastic antibody panel | - | - | EXT | - | Paraneoplastic cerebellar degeneration (anti-Yo, anti-Hu); subacute ataxia with vertigo | Negative; positive → malignancy search |
 | CSF analysis | - | EXT | EXT | - | If infectious, inflammatory, or neoplastic cause suspected; normal in peripheral vestibular disorders | Normal; pleocytosis → infection/inflammation; protein elevation |
@@ -67,30 +74,30 @@ SECTION A: ACTION ITEMS
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | **HINTS exam (Head Impulse, Nystagmus, Test of Skew)** | STAT | STAT | ROUTINE | STAT | **CRITICAL bedside exam**; must be performed in patient with ACUTE VESTIBULAR SYNDROME (continuous vertigo, nausea, nystagmus, gait instability); performed by trained examiner; more sensitive than early MRI for stroke | **Peripheral pattern (benign):** Positive head impulse (catch-up saccade), horizontal nystagmus with unidirectional fast phase, no skew deviation; **Central pattern (concerning for stroke):** Negative/normal head impulse, direction-changing or vertical nystagmus, skew deviation | Cannot perform if patient not having acute continuous vertigo; requires examiner training |
-| CT head without contrast | STAT | STAT | - | STAT | **NOT sensitive for posterior fossa stroke** (sensitivity ~20-40%); useful for hemorrhage; may be appropriate for trauma or if MRI not available; does NOT rule out posterior circulation stroke | Cerebellar or brainstem hemorrhage; mass lesion; hydrocephalus; **NEGATIVE CT does NOT exclude stroke in posterior circulation** | None for non-contrast |
-| MRI brain with DWI | URGENT | URGENT | ROUTINE | URGENT | **Gold standard for posterior circulation stroke**; DWI highly sensitive for acute ischemia; **HOWEVER:** Early MRI (<48h) can miss 12-20% of small posterior fossa strokes — clinical (HINTS) may be more sensitive; repeat MRI if high suspicion and initial negative | Acute infarction (restricted diffusion); brainstem lesion; cerebellar lesion; MS plaque; tumor; vestibular schwannoma | MRI-incompatible implants; severe claustrophobia |
-| MRA head and neck (or CTA) | URGENT | URGENT | ROUTINE | URGENT | If central cause suspected; vertebral artery dissection; basilar artery stenosis; vertebrobasilar insufficiency | Vertebral artery dissection; stenosis; occlusion; aneurysm | MRA: same as MRI; CTA: contrast allergy, renal impairment |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | **NOT sensitive for posterior fossa stroke** (sensitivity ~20-40%); useful for hemorrhage; may be appropriate for trauma or if MRI not available; does NOT rule out posterior circulation stroke | Cerebellar or brainstem hemorrhage; mass lesion; hydrocephalus; **NEGATIVE CT does NOT exclude stroke in posterior circulation** | None for non-contrast |
+| MRI brain with DWI (CPT 70551) | URGENT | URGENT | ROUTINE | URGENT | **Gold standard for posterior circulation stroke**; DWI highly sensitive for acute ischemia; **HOWEVER:** Early MRI (<48h) can miss 12-20% of small posterior fossa strokes — clinical (HINTS) may be more sensitive; repeat MRI if high suspicion and initial negative | Acute infarction (restricted diffusion); brainstem lesion; cerebellar lesion; MS plaque; tumor; vestibular schwannoma | MRI-incompatible implants; severe claustrophobia |
+| MRA head (CPT 70544) and neck (CPT 70547) (or CTA head (CPT 70496) / neck (CPT 70498)) | URGENT | URGENT | ROUTINE | URGENT | If central cause suspected; vertebral artery dissection; basilar artery stenosis; vertebrobasilar insufficiency | Vertebral artery dissection; stenosis; occlusion; aneurysm | MRA: same as MRI; CTA: contrast allergy, renal impairment |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Dix-Hallpike maneuver | STAT | STAT | ROUTINE | STAT | **Diagnostic for BPPV** (posterior canal, most common); performed on ALL patients with episodic positional vertigo; positive if nystagmus and vertigo provoked with latency and limited duration | **Positive:** Upbeating-torsional nystagmus toward affected ear, 2-20 sec latency, <60 sec duration, fatigable with repetition = posterior canal BPPV | Cervical spine disease/instability (modify technique); carotid stenosis (theoretical) |
+| Dix-Hallpike maneuver (CPT 95992) | STAT | STAT | ROUTINE | STAT | **Diagnostic for BPPV** (posterior canal, most common); performed on ALL patients with episodic positional vertigo; positive if nystagmus and vertigo provoked with latency and limited duration | **Positive:** Upbeating-torsional nystagmus toward affected ear, 2-20 sec latency, <60 sec duration, fatigable with repetition = posterior canal BPPV | Cervical spine disease/instability (modify technique); carotid stenosis (theoretical) |
 | Supine roll test (Pagnini-McClure) | STAT | STAT | ROUTINE | STAT | **Diagnostic for horizontal canal BPPV**; patient supine, rapidly turn head 90° to each side; geotropic (toward ground) or apogeotropic (away from ground) horizontal nystagmus | Horizontal nystagmus provoked by head turning; geotropic (canalithiasis) vs. apogeotropic (cupulolithiasis) | Same as Dix-Hallpike |
-| Audiometry | - | URGENT | ROUTINE | - | Essential if hearing loss suspected (Meniere's disease, labyrinthitis, vestibular schwannoma); sudden sensorineural hearing loss is emergency | Meniere's: low-frequency sensorineural hearing loss; Schwannoma: asymmetric sensorineural hearing loss; Labyrinthitis: hearing loss + vertigo | Patient cooperation |
-| Echocardiogram (TTE ± TEE) | - | URGENT | ROUTINE | - | If cardioembolic source suspected for stroke; PFO evaluation; valvular disease | PFO; valve vegetations; thrombus; cardiomyopathy | None (TTE); TEE: esophageal pathology |
-| Holter / Event monitor | - | ROUTINE | ROUTINE | - | If paroxysmal arrhythmia suspected as cause of dizziness; palpitations with dizziness | Arrhythmia during symptoms | None |
-| Carotid ultrasound | - | ROUTINE | ROUTINE | - | Carotid stenosis (though carotid disease rarely causes isolated vertigo without other symptoms) | Stenosis; plaque | None |
+| Audiometry (CPT 92557) | - | URGENT | ROUTINE | - | Essential if hearing loss suspected (Meniere's disease, labyrinthitis, vestibular schwannoma); sudden sensorineural hearing loss is emergency | Meniere's: low-frequency sensorineural hearing loss; Schwannoma: asymmetric sensorineural hearing loss; Labyrinthitis: hearing loss + vertigo | Patient cooperation |
+| Echocardiogram (TTE) (CPT 93306) ± TEE | - | URGENT | ROUTINE | - | If cardioembolic source suspected for stroke; PFO evaluation; valvular disease | PFO; valve vegetations; thrombus; cardiomyopathy | None (TTE); TEE: esophageal pathology |
+| Holter (CPT 93224) / Event monitor (CPT 93268) | - | ROUTINE | ROUTINE | - | If paroxysmal arrhythmia suspected as cause of dizziness; palpitations with dizziness | Arrhythmia during symptoms | None |
+| Carotid ultrasound (CPT 93880) | - | ROUTINE | ROUTINE | - | Carotid stenosis (though carotid disease rarely causes isolated vertigo without other symptoms) | Stenosis; plaque | None |
 
 ### 2C. Rare/Advanced
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Videonystagmography (VNG) / Electronystagmography (ENG) | - | - | ROUTINE | - | Quantitative vestibular function testing; caloric testing (ice water or warm/cool air); localizes peripheral lesion; documents vestibular hypofunction | Unilateral weakness on calorics (peripheral lesion); central patterns | Perforated TM (water calorics) |
+| Videonystagmography (VNG) (CPT 92540) / Electronystagmography (ENG) (CPT 92540) | - | - | ROUTINE | - | Quantitative vestibular function testing; caloric testing (ice water or warm/cool air); localizes peripheral lesion; documents vestibular hypofunction | Unilateral weakness on calorics (peripheral lesion); central patterns | Perforated TM (water calorics) |
 | Video head impulse test (vHIT) | - | - | ROUTINE | - | Quantitative bedside test of vestibulo-ocular reflex; tests individual semicircular canals; more sensitive than bedside HIT | Reduced VOR gain; covert/overt saccades; identifies affected canal | Specialized equipment |
-| Vestibular evoked myogenic potentials (VEMP) | - | - | ROUTINE | - | Tests saccule (cVEMP) and utricle (oVEMP); superior semicircular canal dehiscence; Meniere's | Abnormal in superior canal dehiscence; saccular dysfunction | Hearing loss affects testing |
+| Vestibular evoked myogenic potentials (VEMP) (CPT 92517) | - | - | ROUTINE | - | Tests saccule (cVEMP) and utricle (oVEMP); superior semicircular canal dehiscence; Meniere's | Abnormal in superior canal dehiscence; saccular dysfunction | Hearing loss affects testing |
 | Rotary chair testing | - | - | EXT | - | Quantitative VOR assessment; bilateral vestibular hypofunction | Bilateral vestibular loss; gain/phase abnormalities | Specialized facility |
-| High-resolution CT temporal bones | - | - | ROUTINE | - | Superior semicircular canal dehiscence; cholesteatoma; temporal bone abnormality | Dehiscence of superior canal; bony erosion | Radiation |
+| High-resolution CT temporal bones (CPT 70480) | - | - | ROUTINE | - | Superior semicircular canal dehiscence; cholesteatoma; temporal bone abnormality | Dehiscence of superior canal; bony erosion | Radiation |
 | Electrocochleography (ECoG) | - | - | EXT | - | Meniere's disease confirmation; endolymphatic hydrops | Elevated SP/AP ratio in Meniere's | Requires audiologist |
 
 ### Lumbar Puncture
@@ -105,76 +112,76 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Protocol | Evidence/Rationale |
-|-----------|:--:|:----:|:---:|:---:|----------|-------------------|
-| **Symptomatic relief (vestibular suppressants)** | STAT | STAT | ROUTINE | STAT | **Acute severe vertigo:** Meclizine 25-50 mg PO q6-8h; OR Dimenhydrinate (Dramamine) 50 mg PO/IV q6h; OR Promethazine 25 mg PO/IM/IV q6h; OR Ondansetron 4-8 mg IV/PO q8h (for nausea); **IV fluids** for dehydration from vomiting; **Diazepam** 2-5 mg IV/PO for severe acute vertigo (benzodiazepines are potent vestibular suppressants) | Short-term use only (24-72h); vestibular suppressants interfere with central compensation if used chronically; avoid in suspected central cause until stroke ruled out |
-| **IV fluids** | STAT | STAT | - | STAT | If dehydrated from vomiting; NS or LR bolus then maintenance; assess orthostatic hypotension | Supportive care; correct volume depletion |
-| **Antiemetics** | STAT | STAT | ROUTINE | STAT | Ondansetron 4-8 mg IV/PO; metoclopramide 10 mg IV (avoid in elderly — EPS); prochlorperazine 5-10 mg IV/IM | Nausea is often the most debilitating symptom |
-| **Rule out stroke** | STAT | STAT | - | STAT | **If ANY central features on HINTS:** STAT MRI with DWI; vascular imaging (MRA or CTA); neurology/stroke consultation; **Central features:** Normal/negative head impulse test, vertical or direction-changing nystagmus, skew deviation, focal neurologic signs, severe imbalance (cannot walk), hearing loss + vertigo without Meniere's history | HINTS is more sensitive than early CT or MRI for posterior circulation stroke; do NOT rely on negative CT to exclude stroke |
-| **Epley maneuver (canalith repositioning)** | STAT | STAT | ROUTINE | STAT | **For BPPV (positive Dix-Hallpike):** Immediately perform Epley maneuver; highly effective (80-90% single treatment); may repeat if symptoms persist; send home with instructions for home Epley or Brandt-Daroff exercises | Epley is definitive treatment for posterior canal BPPV; medications are NOT indicated for BPPV — repositioning maneuvers are the treatment |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Symptomatic relief (vestibular suppressants)** | IV | - | 25-50 mg :: IV :: q6h :: **Acute severe vertigo:** Meclizine 25-50 mg PO q6-8h; OR Dimenhydrinate (Dramamine) 50 mg PO/IV q6h; OR Promethazine 25 mg PO/IM/IV q6h; OR Ondansetron 4-8 mg IV/PO q8h (for nausea); **IV fluids** for dehydration from vomiting; **Diazepam** 2-5 mg IV/PO for severe acute vertigo (benzodiazepines are potent vestibular suppressants) | - | Short-term use only (24-72h); vestibular suppressants interfere with central compensation if used chronically; avoid in suspected central cause until stroke ruled out | STAT | STAT | ROUTINE | STAT |
+| **IV fluids** | IV | - | If dehydrated from vomiting; NS or LR bolus then maintenance; assess orthostatic hypotension | - | Supportive care; correct volume depletion | STAT | STAT | - | STAT |
+| **Antiemetics** | IV | - | 4-8 mg :: IV :: - :: Ondansetron 4-8 mg IV/PO; metoclopramide 10 mg IV (avoid in elderly — EPS); prochlorperazine 5-10 mg IV/IM | - | Nausea is often the most debilitating symptom | STAT | STAT | ROUTINE | STAT |
+| **Rule out stroke** | - | - | **If ANY central features on HINTS:** STAT MRI with DWI; vascular imaging (MRA or CTA); neurology/stroke consultation; **Central features:** Normal/negative head impulse test, vertical or direction-changing nystagmus, skew deviation, focal neurologic signs, severe imbalance (cannot walk), hearing loss + vertigo without Meniere's history | - | HINTS is more sensitive than early CT or MRI for posterior circulation stroke; do NOT rely on negative CT to exclude stroke | STAT | STAT | - | STAT |
+| **Epley maneuver (canalith repositioning) (CPT 95992)** | - | - | 90% :: - :: - :: **For BPPV (positive Dix-Hallpike):** Immediately perform Epley maneuver; highly effective (80-90% single treatment); may repeat if symptoms persist; send home with instructions for home Epley or Brandt-Daroff exercises | - | Epley is definitive treatment for posterior canal BPPV; medications are NOT indicated for BPPV — repositioning maneuvers are the treatment | STAT | STAT | ROUTINE | STAT |
 
 ### 3B. Disease-Specific Treatment
 
 #### BENIGN PAROXYSMAL POSITIONAL VERTIGO (BPPV)
 
-| Treatment | Setting | Protocol | Evidence/Rationale |
-|-----------|---------|----------|-------------------|
-| **Epley maneuver (posterior canal)** | ED/OPD/HOSP | Standard canalith repositioning; patient starts seated, Dix-Hallpike position for 30 sec, rotate head 90° toward opposite side (30 sec), roll body to face down with head still turned (30 sec), sit up; NNT = 2-3 for resolution | First-line treatment for posterior canal BPPV; highly effective; may repeat same day or next visit |
-| **Semont maneuver (alternative)** | OPD | Alternative to Epley; patient moved rapidly from side to side; less commonly used but effective | Alternative if Epley difficult or ineffective |
-| **BBQ roll (Lempert maneuver) — horizontal canal** | ED/OPD | For horizontal canal BPPV; patient rotates 360° along long axis of body (log roll) toward unaffected side; 90° increments with 30 sec pauses | Treatment for horizontal canal BPPV; geotropic variant |
-| **Brandt-Daroff exercises (home)** | OPD | Patient alternates lying on each side x 30 sec, 10-20 repetitions, 3x daily; habituates symptoms; less effective than Epley for posterior canal | Adjunctive home therapy; may help with residual symptoms; promotes compensation |
-| **Avoid vestibular suppressants for BPPV** | All | Do NOT prescribe meclizine for ongoing BPPV treatment; medications delay compensation and do not address the mechanical problem | BPPV is a mechanical problem (otoliths); repositioning is definitive treatment |
-| **Post-treatment instructions** | OPD | Avoid lying flat for 1-2 nights (sleep propped up); avoid rapid head movements for 24-48h; avoid affected side lying for 1 week (controversial but commonly recommended) | Reduces immediate recurrence; evidence is mixed |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Epley maneuver (posterior canal)** | - | - | Standard canalith repositioning; patient starts seated, Dix-Hallpike position for 30 sec, rotate head 90° toward opposite side (30 sec), roll body to face down with head still turned (30 sec), sit up; NNT = 2-3 for resolution | - | First-line treatment for posterior canal BPPV; highly effective; may repeat same day or next visit | - | - | - | - |
+| **Semont maneuver (alternative)** | - | - | Alternative to Epley; patient moved rapidly from side to side; less commonly used but effective | - | Alternative if Epley difficult or ineffective | - | - | - | - |
+| **BBQ roll (Lempert maneuver) — horizontal canal** | - | - | For horizontal canal BPPV; patient rotates 360° along long axis of body (log roll) toward unaffected side; 90° increments with 30 sec pauses | - | Treatment for horizontal canal BPPV; geotropic variant | - | - | - | - |
+| **Brandt-Daroff exercises (home)** | - | - | Patient alternates lying on each side x 30 sec, 10-20 repetitions, 3x daily; habituates symptoms; less effective than Epley for posterior canal | - | Adjunctive home therapy; may help with residual symptoms; promotes compensation | - | - | - | - |
+| **Avoid vestibular suppressants for BPPV** | - | - | Do NOT prescribe meclizine for ongoing BPPV treatment; medications delay compensation and do not address the mechanical problem | - | BPPV is a mechanical problem (otoliths); repositioning is definitive treatment | - | - | - | - |
+| **Post-treatment instructions** | - | - | Avoid lying flat for 1-2 nights (sleep propped up); avoid rapid head movements for 24-48h; avoid affected side lying for 1 week (controversial but commonly recommended) | - | Reduces immediate recurrence; evidence is mixed | - | - | - | - |
 
 #### VESTIBULAR NEURITIS / LABYRINTHITIS
 
-| Treatment | Setting | Protocol | Evidence/Rationale |
-|-----------|---------|----------|-------------------|
-| **Corticosteroids** | ED/HOSP/OPD | **Prednisone 1 mg/kg/day (max 60 mg) x 10 days with taper** OR methylprednisolone 100 mg x 3 days then taper; start within 72 hours of symptom onset for best benefit | Strupp et al. (2004): Steroids improve vestibular function recovery in vestibular neuritis; start early; NNT ~4 for complete recovery |
-| **Antivirals (controversial)** | ED/HOSP/OPD | Valacyclovir 1000 mg TID x 7 days; evidence is WEAK; some use empirically if early presentation; thought to be HSV reactivation (like Bell's palsy) | Cochrane review: No clear benefit; some clinicians still use empirically, especially if labyrinthitis with hearing loss |
-| **Vestibular suppressants (short-term only)** | ED/HOSP | Meclizine 25 mg q8h OR dimenhydrinate 50 mg q6h OR diazepam 5 mg BID x 1-3 days ONLY; taper off as soon as tolerated | Short-term symptom relief; STOP after 72 hours maximum — prolonged use delays compensation |
-| **Early vestibular rehabilitation** | OPD | Refer to vestibular physical therapy; gaze stabilization exercises; balance training; habituation exercises; **START EARLY** (as soon as acute symptoms controlled) | Cochrane review: Vestibular rehabilitation is effective for unilateral vestibular hypofunction; early initiation improves outcomes |
-| **Education** | OPD | Explain natural history (acute symptoms resolve over days to weeks; full compensation may take weeks to months); reassurance; avoid prolonged bed rest | Reduce anxiety; promote activity and compensation |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Corticosteroids** | - | - | 1 mg/kg :: - :: daily x 10 days :: **Prednisone 1 mg/kg/day (max 60 mg) x 10 days with taper** OR methylprednisolone 100 mg x 3 days then taper; start within 72 hours of symptom onset for best benefit | - | [Strupp et al. (2004)](https://pubmed.ncbi.nlm.nih.gov/15269315/): Steroids improve vestibular function recovery in vestibular neuritis; start early; NNT ~4 for complete recovery | - | - | - | - |
+| **Antivirals (controversial)** | PO | - | 1000 mg :: PO :: TID :: Valacyclovir 1000 mg TID x 7 days; evidence is WEAK; some use empirically if early presentation; thought to be HSV reactivation (like Bell's palsy) | - | Cochrane review: No clear benefit; some clinicians still use empirically, especially if labyrinthitis with hearing loss | - | - | - | - |
+| **Vestibular suppressants (short-term only)** | PO | - | 25 mg :: PO :: q8h :: Meclizine 25 mg q8h OR dimenhydrinate 50 mg q6h OR diazepam 5 mg BID x 1-3 days ONLY; taper off as soon as tolerated | - | Short-term symptom relief; STOP after 72 hours maximum — prolonged use delays compensation | - | - | - | - |
+| **Early vestibular rehabilitation** | - | - | Refer to vestibular physical therapy; gaze stabilization exercises; balance training; habituation exercises; **START EARLY** (as soon as acute symptoms controlled) | - | Cochrane review: Vestibular rehabilitation is effective for unilateral vestibular hypofunction; early initiation improves outcomes | - | - | - | - |
+| **Education** | - | - | Explain natural history (acute symptoms resolve over days to weeks; full compensation may take weeks to months); reassurance; avoid prolonged bed rest | - | Reduce anxiety; promote activity and compensation | - | - | - | - |
 
 #### MENIERE'S DISEASE
 
-| Treatment | Setting | Protocol | Evidence/Rationale |
-|-----------|---------|----------|-------------------|
-| **Dietary modification** | OPD | Low sodium diet (<1500-2000 mg/day); limit caffeine and alcohol; regular meals; avoid MSG | First-line lifestyle modification; reduces endolymphatic hydrops; evidence is limited but widely recommended |
-| **Diuretics** | OPD | Hydrochlorothiazide 25-50 mg daily OR hydrochlorothiazide/triamterene (Dyazide, Maxzide); acetazolamide 250 mg BID as alternative | Reduces endolymph volume; widely used despite limited RCT evidence |
-| **Betahistine** | OPD | 16-24 mg TID (not available in US; available in Europe, Canada); H1 agonist/H3 antagonist; improves cochlear blood flow | Commonly used in Europe; evidence mixed; may reduce attack frequency |
-| **Intratympanic gentamicin** | OPD (Specialist) | Chemical vestibular ablation; destroys vestibular hair cells; reduces vertigo attacks but risks hearing loss; for refractory unilateral disease | Effective for vertigo control (>80%); risk of hearing loss (10-30%); used for refractory cases |
-| **Intratympanic steroids** | OPD (Specialist) | Dexamethasone intratympanic injection; may reduce attacks; less destructive than gentamicin | Alternative to gentamicin; preserves hearing; less consistent efficacy |
-| **Endolymphatic sac surgery** | OPD (Specialist) | Surgical decompression of endolymphatic sac; evidence is debated; some benefit in select patients | Controversial; Cochrane review shows limited evidence; considered for refractory cases |
-| **Vestibular nerve section / Labyrinthectomy** | OPD (Specialist) | Surgical destruction of vestibular nerve (preserves hearing) or entire labyrinth (destroys hearing); for refractory unilateral disease | Last resort; highly effective for vertigo; significant surgery |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Dietary modification** | PO | - | 1500-2000 mg/day :: PO :: - :: Low sodium diet (<1500-2000 mg/day); limit caffeine and alcohol; regular meals; avoid MSG | - | First-line lifestyle modification; reduces endolymphatic hydrops; evidence is limited but widely recommended | - | - | - | - |
+| **Diuretics** | - | - | 25-50 mg :: - :: daily :: Hydrochlorothiazide 25-50 mg daily OR hydrochlorothiazide/triamterene (Dyazide, Maxzide); acetazolamide 250 mg BID as alternative | - | Reduces endolymph volume; widely used despite limited RCT evidence | - | - | - | - |
+| **Betahistine** | - | - | 16-24 mg :: - :: TID :: 16-24 mg TID (not available in US; available in Europe, Canada); H1 agonist/H3 antagonist; improves cochlear blood flow | - | Commonly used in Europe; evidence mixed; may reduce attack frequency | - | - | - | - |
+| **Intratympanic gentamicin** | - | - | Chemical vestibular ablation; destroys vestibular hair cells; reduces vertigo attacks but risks hearing loss; for refractory unilateral disease | - | Effective for vertigo control (>80%); risk of hearing loss (10-30%); used for refractory cases | - | - | - | - |
+| **Intratympanic steroids** | - | - | Dexamethasone intratympanic injection; may reduce attacks; less destructive than gentamicin | - | Alternative to gentamicin; preserves hearing; less consistent efficacy | - | - | - | - |
+| **Endolymphatic sac surgery** | - | - | Surgical decompression of endolymphatic sac; evidence is debated; some benefit in select patients | - | Controversial; Cochrane review shows limited evidence; considered for refractory cases | - | - | - | - |
+| **Vestibular nerve section / Labyrinthectomy** | - | - | Surgical destruction of vestibular nerve (preserves hearing) or entire labyrinth (destroys hearing); for refractory unilateral disease | - | Last resort; highly effective for vertigo; significant surgery | - | - | - | - |
 
 #### VESTIBULAR MIGRAINE
 
-| Treatment | Setting | Protocol | Evidence/Rationale |
-|-----------|---------|----------|-------------------|
-| **Migraine lifestyle modifications** | OPD | Regular sleep; hydration; avoid triggers (specific to patient); regular meals; stress management | Baseline management for all migraine |
-| **Acute treatment** | ED/OPD | Triptans (sumatriptan 50-100 mg PO, 6 mg SQ); NSAIDs; antiemetics (ondansetron, metoclopramide); vestibular suppressants for vertigo component | Standard migraine abortive therapy; triptans can help vestibular symptoms |
-| **Preventive therapy** | OPD | **Beta-blockers:** Propranolol 40-160 mg daily; metoprolol 50-200 mg daily; **TCAs:** Amitriptyline 10-75 mg HS; nortriptyline; **Anticonvulsants:** Topiramate 25-100 mg BID; valproate; **SNRIs:** Venlafaxine 37.5-150 mg daily; **Other:** CGRP antagonists (emerging); verapamil | Same preventive agents as migraine; choose based on comorbidities (e.g., depression → amitriptyline; hypertension → beta-blocker) |
-| **Vestibular rehabilitation** | OPD | Helpful for chronic vestibular symptoms between attacks; balance training; habituation | May improve chronic symptoms and disability |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Migraine lifestyle modifications** | - | - | Regular sleep; hydration; avoid triggers (specific to patient); regular meals; stress management | - | Baseline management for all migraine | - | - | - | - |
+| **Acute treatment** | SC | - | 50-100 mg :: SC :: - :: Triptans (sumatriptan 50-100 mg PO, 6 mg SQ); NSAIDs; antiemetics (ondansetron, metoclopramide); vestibular suppressants for vertigo component | - | Standard migraine abortive therapy; triptans can help vestibular symptoms | - | - | - | - |
+| **Preventive therapy** | - | - | 40-160 mg :: - :: daily :: **Beta-blockers:** Propranolol 40-160 mg daily; metoprolol 50-200 mg daily; **TCAs:** Amitriptyline 10-75 mg HS; nortriptyline; **Anticonvulsants:** Topiramate 25-100 mg BID; valproate; **SNRIs:** Venlafaxine 37.5-150 mg daily; **Other:** CGRP antagonists (emerging); verapamil | - | Same preventive agents as migraine; choose based on comorbidities (e.g., depression → amitriptyline; hypertension → beta-blocker) | - | - | - | - |
+| **Vestibular rehabilitation** | - | - | Helpful for chronic vestibular symptoms between attacks; balance training; habituation | - | May improve chronic symptoms and disability | - | - | - | - |
 
 #### CENTRAL CAUSES (Posterior Circulation Stroke)
 
-| Treatment | Setting | Protocol | Evidence/Rationale |
-|-----------|---------|----------|-------------------|
-| **Stroke protocol** | ED/HOSP/ICU | If central cause suspected or identified: acute stroke protocol; consider IV thrombolysis (tPA/tenecteplase) if within window; endovascular therapy for basilar artery occlusion; aspirin if not tPA candidate; admit to stroke unit | Posterior circulation stroke is life-threatening; basilar artery occlusion has >80% mortality if untreated |
-| **Secondary stroke prevention** | HOSP/OPD | Dual antiplatelet therapy (aspirin + clopidogrel x 21 days per CHANCE/POINT); statin; BP control; diabetes management; address vascular risk factors | Per acute ischemic stroke guidelines |
-| **Anticoagulation (if indicated)** | HOSP/OPD | If vertebral artery dissection or cardiac source (atrial fibrillation, PFO with high-risk features) | Per stroke etiology |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Stroke protocol** | IV | - | If central cause suspected or identified: acute stroke protocol; consider IV thrombolysis (tPA/tenecteplase) if within window; endovascular therapy for basilar artery occlusion; aspirin if not tPA candidate; admit to stroke unit | - | Posterior circulation stroke is life-threatening; basilar artery occlusion has >80% mortality if untreated | - | - | - | - |
+| **Secondary stroke prevention** | - | - | Dual antiplatelet therapy (aspirin + clopidogrel x 21 days per CHANCE/POINT); statin; BP control; diabetes management; address vascular risk factors | - | Per acute ischemic stroke guidelines | - | - | - | - |
+| **Anticoagulation (if indicated)** | - | - | If vertebral artery dissection or cardiac source (atrial fibrillation, PFO with high-risk features) | - | Per stroke etiology | - | - | - | - |
 
 ### 3C. Medications to AVOID or Use with Caution
 
-| Medication | Risk | Action |
-|-----------|------|--------|
-| **Vestibular suppressants (prolonged use)** | Delay central vestibular compensation; prolong recovery | Limit to 24-72h in acute vestibular neuritis/labyrinthitis; do NOT use for BPPV |
-| **Ototoxic medications** (aminoglycosides, loop diuretics, salicylates, cisplatin) | Vestibular and/or cochlear toxicity | Avoid if possible; monitor hearing/vestibular function; limit duration |
-| **Alcohol** | Vestibular suppressant; dehydrating; positional alcohol nystagmus | Counsel on avoidance during acute episodes |
-| **Benzodiazepines (chronic use)** | Dependence; delay compensation; sedation | Short-term only (1-3 days) for acute severe vertigo |
-| **CNS depressants** | May worsen dizziness; impair compensation | Use cautiously; review medication list |
-| **Medications causing orthostatic hypotension** (antihypertensives, alpha-blockers, diuretics) | May cause/worsen dizziness | Review; adjust doses; check orthostatics |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Vestibular suppressants (prolonged use)** | - | - | - | - | - | - | - | - | - |
+| **Ototoxic medications** (aminoglycosides, loop diuretics, salicylates, cisplatin) | - | - | - | - | - | - | - | - | - |
+| **Alcohol** | - | - | - | - | - | - | - | - | - |
+| **Benzodiazepines (chronic use)** | - | - | - | - | - | - | - | - | - |
+| **CNS depressants** | - | - | - | - | - | - | - | - | - |
+| **Medications causing orthostatic hypotension** (antihypertensives, alpha-blockers, diuretics) | - | - | - | - | - | - | - | - | - |
 
 ---
 
@@ -209,7 +216,7 @@ SECTION A: ACTION ITEMS
 | Recommendation | ED | HOSP | OPD | ICU | Details |
 |---------------|:--:|:----:|:---:|:---:|---------|
 | Video-EEG monitoring | - | - | EXT | - | If seizure (vestibular aura) suspected; temporal lobe epilepsy can cause vertigo/dizziness |
-| Tilt table testing | - | - | ROUTINE | - | If neurally-mediated syncope or POTS suspected; recurrent presyncope |
+| Tilt table testing (CPT 95924) | - | - | ROUTINE | - | If neurally-mediated syncope or POTS suspected; recurrent presyncope |
 | Neuropsychological testing | - | - | EXT | - | If cognitive component suspected; anxiety/depression contributing |
 | Superior canal dehiscence workup | - | - | ROUTINE | - | If sound-induced or pressure-induced vertigo (Tullio phenomenon, Hennebert sign); CT temporal bones; VEMP |
 | Autoimmune inner ear disease workup | - | - | ROUTINE | - | If bilateral vestibular loss, bilateral hearing loss, or systemic autoimmune features; steroids trial |
@@ -347,29 +354,29 @@ SECTION B: SUPPORTING INFORMATION
 
 | Guideline | Source | Year | Key Recommendation |
 |-----------|--------|------|-------------------|
-| BPPV Practice Guideline | AAO-HNS | 2017 | Dix-Hallpike is gold standard for diagnosis; Epley maneuver is first-line treatment; vestibular suppressants NOT recommended |
+| BPPV Practice Guideline | [AAO-HNS](https://pubmed.ncbi.nlm.nih.gov/28248609/) | 2017 | Dix-Hallpike is gold standard for diagnosis; Epley maneuver is first-line treatment; vestibular suppressants NOT recommended |
 | Vestibular Migraine Diagnostic Criteria | ICHD-3 / Barany Society | 2012/2018 | Diagnostic criteria; often underdiagnosed; migraine preventives effective |
 | Meniere's Disease Guidelines | AAO-HNS | 2020 | Definite, probable, possible classification; conservative management first; intratympanic therapy for refractory |
-| HINTS Exam | Kattah et al. / Tarnutzer | 2009/2011 | HINTS more sensitive than early MRI for stroke in acute vestibular syndrome; requires training |
+| HINTS Exam | [Kattah et al.](https://pubmed.ncbi.nlm.nih.gov/19762709/) / [Tarnutzer](https://pubmed.ncbi.nlm.nih.gov/21576300/) | 2009/2011 | HINTS more sensitive than early MRI for stroke in acute vestibular syndrome; requires training |
 
 ### Landmark Studies
 
 | Study | Finding | Impact |
 |-------|---------|--------|
-| Kattah et al. (2009) | HINTS exam (H: head impulse; I: nystagmus; TS: test of skew) was 100% sensitive and 96% specific for stroke in acute vestibular syndrome; superior to MRI in first 24-48h | HINTS should be performed in acute vestibular syndrome; more sensitive than early MRI |
-| Strupp et al. (2004) | Methylprednisolone improved vestibular function recovery in vestibular neuritis vs. placebo | Steroids are standard of care for vestibular neuritis |
-| Hilton et al. Cochrane (2014) | Epley maneuver highly effective for posterior canal BPPV; NNT ~3 | Epley is definitive treatment for BPPV |
-| Tarnutzer et al. (2011) | Individual HINTS components analyzed; normal head impulse most predictive of stroke | "Dangerous" HIT (normal in acute vertigo) = central cause until proven otherwise |
-| Choi et al. (2018) | 12-20% of posterior fossa strokes missed on early MRI (<48h) but detected on repeat MRI | If high clinical suspicion for stroke and initial MRI negative, repeat MRI or treat as stroke |
-| Fife et al. AAO-HNS (2017) | Comprehensive BPPV guideline; repositioning maneuvers recommended; vestibular suppressants NOT recommended | Standard of care for BPPV |
+| [Kattah et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/19762709/) | HINTS exam (H: head impulse; I: nystagmus; TS: test of skew) was 100% sensitive and 96% specific for stroke in acute vestibular syndrome; superior to MRI in first 24-48h | HINTS should be performed in acute vestibular syndrome; more sensitive than early MRI |
+| [Strupp et al. (2004)](https://pubmed.ncbi.nlm.nih.gov/15269315/) | Methylprednisolone improved vestibular function recovery in vestibular neuritis vs. placebo | Steroids are standard of care for vestibular neuritis |
+| [Hilton et al. Cochrane (2014)](https://pubmed.ncbi.nlm.nih.gov/25485940/) | Epley maneuver highly effective for posterior canal BPPV; NNT ~3 | Epley is definitive treatment for BPPV |
+| [Tarnutzer et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21576300/) | Individual HINTS components analyzed; normal head impulse most predictive of stroke | "Dangerous" HIT (normal in acute vertigo) = central cause until proven otherwise |
+| [Choi et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30341546/) | 12-20% of posterior fossa strokes missed on early MRI (<48h) but detected on repeat MRI | If high clinical suspicion for stroke and initial MRI negative, repeat MRI or treat as stroke |
+| [Fife et al. AAO-HNS (2017)](https://pubmed.ncbi.nlm.nih.gov/28248609/) | Comprehensive BPPV guideline; repositioning maneuvers recommended; vestibular suppressants NOT recommended | Standard of care for BPPV |
 
 ### HINTS Exam Validity
 
 | Study | Sensitivity for Stroke | Specificity |
 |-------|----------------------|-------------|
-| Kattah et al. (2009) | 100% | 96% |
-| Newman-Toker et al. (2013) | 96% | 98% |
-| Tarnutzer et al. (2011, meta-analysis) | 98% (pooled) | 85% (pooled) |
+| [Kattah et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/19762709/) | 100% | 96% |
+| [Newman-Toker et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/24127701/) | 96% | 98% |
+| [Tarnutzer et al. (2011, meta-analysis)](https://pubmed.ncbi.nlm.nih.gov/21576300/) | 98% (pooled) | 85% (pooled) |
 
 **Important:** HINTS should ONLY be performed in the **Acute Vestibular Syndrome** (continuous vertigo/nystagmus lasting >24h). It is NOT valid for episodic vertigo (BPPV, Meniere's, vestibular migraine).
 

@@ -1,3 +1,10 @@
+---
+title: "Myasthenia Gravis - Exacerbation/Crisis"
+description: "Clinical decision support for myasthenia gravis - exacerbation/crisis diagnosis and management"
+version: "1.0"
+setting: "ED, HOSP, OPD, ICU"
+---
+
 # Myasthenia Gravis - Exacerbation/Crisis
 
 **VERSION:** 1.0
@@ -10,7 +17,7 @@
 
 **ICD-10:** G70.01 (Myasthenia gravis with exacerbation)
 
-**SYNONYMS:** Myasthenic crisis, MG crisis, MG exacerbation, myasthenia exacerbation, myasthenic respiratory failure, acute MG, worsening myasthenia
+**SYNONYMS:** Myasthenic crisis, MG crisis, MG exacerbation, myasthenia exacerbation, myasthenic respiratory failure, acute MG, worsening myasthenia, cholinergic crisis, myasthenia gravis crisis
 
 **SCOPE:** Acute exacerbation and myasthenic crisis in adults with known or suspected myasthenia gravis. Covers respiratory monitoring, emergent immunotherapy (IVIG/PLEX), cholinesterase inhibitor management, distinguishing myasthenic from cholinergic crisis, and medications to avoid. Excludes new diagnosis workup (see MG - New Diagnosis template), Lambert-Eaton syndrome, and chronic stable management.
 
@@ -28,29 +35,29 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Baseline; infection screen (common trigger); leukocytosis suggests infection | Normal |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Electrolytes, renal/hepatic function for medication dosing; hypokalemia worsens weakness | Normal |
-| Magnesium | STAT | STAT | ROUTINE | STAT | Hypomagnesemia worsens NMJ transmission; CONTRAINDICATED to give IV Mg in MG crisis | Confirm normal BEFORE any magnesium replacement |
-| TSH | URGENT | ROUTINE | ROUTINE | URGENT | Thyroid disease coexists in 10-15% of MG; thyrotoxicosis precipitates crisis | Normal |
-| Blood glucose | STAT | STAT | ROUTINE | STAT | Steroid-induced hyperglycemia management | Normal |
-| Urinalysis + urine culture | STAT | ROUTINE | ROUTINE | STAT | UTI as precipitant for exacerbation | Negative |
-| Blood cultures x2 | STAT | STAT | - | STAT | If febrile; infection is #1 trigger for crisis | No growth |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Baseline; infection screen (common trigger); leukocytosis suggests infection | Normal |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | STAT | Electrolytes, renal/hepatic function for medication dosing; hypokalemia worsens weakness | Normal |
+| Magnesium (CPT 83735) | STAT | STAT | ROUTINE | STAT | Hypomagnesemia worsens NMJ transmission; CONTRAINDICATED to give IV Mg in MG crisis | Confirm normal BEFORE any magnesium replacement |
+| TSH (CPT 84443) | URGENT | ROUTINE | ROUTINE | URGENT | Thyroid disease coexists in 10-15% of MG; thyrotoxicosis precipitates crisis | Normal |
+| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Steroid-induced hyperglycemia management | Normal |
+| Urinalysis (CPT 81003) + urine culture | STAT | ROUTINE | ROUTINE | STAT | UTI as precipitant for exacerbation | Negative |
+| Blood cultures x2 (CPT 87040) | STAT | STAT | - | STAT | If febrile; infection is #1 trigger for crisis | No growth |
 | Pregnancy test (β-hCG) | STAT | STAT | ROUTINE | STAT | Affects treatment choices; MG can fluctuate in pregnancy | Document result |
-| PT/INR, aPTT | STAT | ROUTINE | - | STAT | Coagulation before procedures; PLEX circuit anticoagulation | Normal |
-| ABG or VBG | STAT | STAT | - | STAT | Respiratory failure assessment; hypercapnia is LATE finding — do not wait for this | Normal; rising pCO2 = imminent failure |
+| PT/INR (CPT 85610), aPTT (CPT 85730) | STAT | ROUTINE | - | STAT | Coagulation before procedures; PLEX circuit anticoagulation | Normal |
+| ABG (CPT 82803) or VBG (CPT 82800) | STAT | STAT | - | STAT | Respiratory failure assessment; hypercapnia is LATE finding — do not wait for this | Normal; rising pCO2 = imminent failure |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| AChR binding antibody | - | ROUTINE | ROUTINE | - | Confirm diagnosis if not previously tested; positive in 85% generalized MG | Positive supports MG diagnosis |
-| AChR modulating antibody | - | ROUTINE | ROUTINE | - | Additional sensitivity when binding Ab equivocal | Positive supports diagnosis |
-| AChR blocking antibody | - | ROUTINE | ROUTINE | - | Part of full AChR panel | Positive supports diagnosis |
-| MuSK antibody | - | ROUTINE | ROUTINE | - | If AChR negative; MuSK-positive MG has different treatment implications (poor response to pyridostigmine, PLEX preferred over IVIG) | Check if AChR negative |
+| AChR binding antibody (CPT 86235) | - | ROUTINE | ROUTINE | - | Confirm diagnosis if not previously tested; positive in 85% generalized MG | Positive supports MG diagnosis |
+| AChR modulating antibody (CPT 86235) | - | ROUTINE | ROUTINE | - | Additional sensitivity when binding Ab equivocal | Positive supports diagnosis |
+| AChR blocking antibody (CPT 86235) | - | ROUTINE | ROUTINE | - | Part of full AChR panel | Positive supports diagnosis |
+| MuSK antibody (CPT 86235) | - | ROUTINE | ROUTINE | - | If AChR negative; MuSK-positive MG has different treatment implications (poor response to pyridostigmine, PLEX preferred over IVIG) | Check if AChR negative |
 | Anti-striated muscle antibody (anti-titin) | - | ROUTINE | ROUTINE | - | Associated with thymoma; especially in young patients | If positive, image for thymoma |
-| Procalcitonin | URGENT | ROUTINE | - | URGENT | Differentiate bacterial infection trigger from other causes of decompensation | <0.5 ng/mL |
-| Chest X-ray | STAT | ROUTINE | - | STAT | Aspiration pneumonia, atelectasis; baseline for ventilator | Clear lungs |
-| Lactate | URGENT | ROUTINE | - | URGENT | Sepsis screen if febrile | Normal (<2 mmol/L) |
+| Procalcitonin (CPT 84145) | URGENT | ROUTINE | - | URGENT | Differentiate bacterial infection trigger from other causes of decompensation | <0.5 ng/mL |
+| Chest X-ray (CPT 71046) | STAT | ROUTINE | - | STAT | Aspiration pneumonia, atelectasis; baseline for ventilator | Clear lungs |
+| Lactate (CPT 83605) | URGENT | ROUTINE | - | URGENT | Sepsis screen if febrile | Normal (<2 mmol/L) |
 | Drug level of immunosuppressant (if applicable) | - | ROUTINE | ROUTINE | - | Check azathioprine metabolites (6-TGN), mycophenolate levels, tacrolimus levels if on these agents | Therapeutic range |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
@@ -71,27 +78,27 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Chest X-ray | STAT | ROUTINE | - | STAT | Immediate in ED | Pneumonia, aspiration, atelectasis, mediastinal mass (thymoma) | None significant |
-| ECG (12-lead) | STAT | ROUTINE | - | STAT | On admission | Arrhythmia, myocarditis (rare but reported in MG, especially anti-Kv1.4+) | None |
-| Bedside spirometry (FVC and NIF) | STAT | STAT | ROUTINE | STAT | Immediately on presentation; serial monitoring | FVC >20 mL/kg; NIF more negative than -30 cmH2O | Patient cooperation required |
+| Chest X-ray (CPT 71046) | STAT | ROUTINE | - | STAT | Immediate in ED | Pneumonia, aspiration, atelectasis, mediastinal mass (thymoma) | None significant |
+| ECG (12-lead) (CPT 93000) | STAT | ROUTINE | - | STAT | On admission | Arrhythmia, myocarditis (rare but reported in MG, especially anti-Kv1.4+) | None |
+| Bedside spirometry (FVC and NIF) (CPT 94010) | STAT | STAT | ROUTINE | STAT | Immediately on presentation; serial monitoring | FVC >20 mL/kg; NIF more negative than -30 cmH2O | Patient cooperation required |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT chest with contrast | - | ROUTINE | ROUTINE | - | During admission if not recently done | Thymoma (present in 10-15%); thymic hyperplasia | Contrast allergy, renal impairment |
+| CT chest with contrast (CPT 71260) | - | ROUTINE | ROUTINE | - | During admission if not recently done | Thymoma (present in 10-15%); thymic hyperplasia | Contrast allergy, renal impairment |
 | MRI chest (alternative to CT) | - | ROUTINE | ROUTINE | - | If CT contraindicated | Thymoma evaluation | Pacemaker, metallic implants |
-| Repetitive nerve stimulation (RNS) | - | ROUTINE | ROUTINE | - | If diagnosis not confirmed; avoid during acute crisis (deferred to stable phase) | Decremental response >10% at 2-3 Hz in affected muscle | None significant |
-| Single-fiber EMG (SFEMG) | - | - | ROUTINE | - | Most sensitive test (95-99%); defer to outpatient stable phase | Increased jitter, blocking | Patient cooperation |
-| CT head | URGENT | ROUTINE | - | URGENT | If altered mental status to rule out other causes | Normal (MG does not affect brain parenchyma) | None significant |
+| Repetitive nerve stimulation (RNS) (CPT 95937) | - | ROUTINE | ROUTINE | - | If diagnosis not confirmed; avoid during acute crisis (deferred to stable phase) | Decremental response >10% at 2-3 Hz in affected muscle | None significant |
+| Single-fiber EMG (SFEMG) (CPT 95872) | - | - | ROUTINE | - | Most sensitive test (95-99%); defer to outpatient stable phase | Increased jitter, blocking | Patient cooperation |
+| CT head (CPT 70450) | URGENT | ROUTINE | - | URGENT | If altered mental status to rule out other causes | Normal (MG does not affect brain parenchyma) | None significant |
 
 ### 2C. Rare/Specialized
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| PET-CT | - | EXT | EXT | - | If thymoma on CT; staging | Metabolic activity, metastatic disease | Pregnancy |
-| Echocardiogram | - | ROUTINE | ROUTINE | ROUTINE | If cardiac symptoms or anti-Kv1.4 positive | Myocarditis, cardiomyopathy | None significant |
-| Pulmonary function tests (formal) | - | - | ROUTINE | - | Outpatient baseline after recovery | FVC baseline for future comparisons | Patient cooperation |
+| PET-CT (CPT 78816) | - | EXT | EXT | - | If thymoma on CT; staging | Metabolic activity, metastatic disease | Pregnancy |
+| Echocardiogram (CPT 93306) | - | ROUTINE | ROUTINE | ROUTINE | If cardiac symptoms or anti-Kv1.4 positive | Myocarditis, cardiomyopathy | None significant |
+| Pulmonary function tests (formal) (CPT 94010) | - | - | ROUTINE | - | Outpatient baseline after recovery | FVC baseline for future comparisons | Patient cooperation |
 
 ---
 
@@ -99,48 +106,48 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| IVIG (intravenous immunoglobulin) | - | STAT | - | STAT | 0.4 g/kg/day IV x 5 days (total 2 g/kg) OR 1 g/kg/day x 2 days (faster option). Start within 24h of crisis recognition | IgA deficiency (anaphylaxis risk — use IgA-depleted product); renal failure; thrombotic risk | Vital signs q15min first infusion; renal function daily; headache (aseptic meningitis); thrombotic events |
-| Plasmapheresis (PLEX) | - | STAT | - | STAT | 5 exchanges over 10-14 days (every other day); 1-1.5 plasma volumes per exchange. PREFERRED for MuSK-positive MG. Faster onset than IVIG (days vs 1-2 weeks) | Hemodynamic instability, severe sepsis, heparin allergy, poor vascular access | BP continuous during exchange; Ca2+ (citrate toxicity); fibrinogen; electrolytes; line infection |
-| Intubation and mechanical ventilation | STAT | STAT | - | STAT | Indications: FVC <20 mL/kg, NIF >-30 cmH2O (weaker), >30% FVC decline, clinical distress, inability to handle secretions. Use NON-DEPOLARIZING agents at REDUCED DOSE (MG patients are sensitive). Avoid succinylcholine (unpredictable response) | N/A (life-saving) | Ventilator per ICU protocol; daily SBT when improving |
-| Hold pyridostigmine during crisis | STAT | STAT | - | STAT | HOLD cholinesterase inhibitors during intubation/crisis — excess cholinergic stimulation increases secretions and complicates ventilator management. Resume at reduced dose during weaning | N/A | Secretion management; restart when extubation approaching |
-| Supplemental oxygen | STAT | STAT | - | STAT | As needed for SpO2 <94% | N/A | SpO2 monitoring |
-| IV fluids (isotonic) | STAT | STAT | - | STAT | NS maintenance; hydration for IVIG renal protection | Volume overload | I/O, electrolytes |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| IVIG (intravenous immunoglobulin) (CPT 96365) | IV | - | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg) OR 1 g/kg/day x 2 days (faster option). Start within 24h of crisis recognition | IgA deficiency (anaphylaxis risk — use IgA-depleted product); renal failure; thrombotic risk | Vital signs q15min first infusion; renal function daily; headache (aseptic meningitis); thrombotic events | - | STAT | - | STAT |
+| Plasmapheresis (PLEX) (CPT 36514) | - | - | 5 exchanges over 10-14 days (every other day); 1-1.5 plasma volumes per exchange. PREFERRED for MuSK-positive MG. Faster onset than IVIG (days vs 1-2 weeks) | Hemodynamic instability, severe sepsis, heparin allergy, poor vascular access | BP continuous during exchange; Ca2+ (citrate toxicity); fibrinogen; electrolytes; line infection | - | STAT | - | STAT |
+| Intubation and mechanical ventilation | - | - | 20 mL/kg :: - :: - :: Indications: FVC <20 mL/kg, NIF >-30 cmH2O (weaker), >30% FVC decline, clinical distress, inability to handle secretions. Use NON-DEPOLARIZING agents at REDUCED DOSE (MG patients are sensitive). Avoid succinylcholine (unpredictable response) | N/A (life-saving) | Ventilator per ICU protocol; daily SBT when improving | STAT | STAT | - | STAT |
+| Hold pyridostigmine during crisis | - | - | HOLD cholinesterase inhibitors during intubation/crisis — excess cholinergic stimulation increases secretions and complicates ventilator management. Resume at reduced dose during weaning | N/A | Secretion management; restart when extubation approaching | STAT | STAT | - | STAT |
+| Supplemental oxygen | - | - | 94% :: - :: - :: As needed for SpO2 <94% | N/A | SpO2 monitoring | STAT | STAT | - | STAT |
+| IV fluids (isotonic) | IV | - | NS maintenance; hydration for IVIG renal protection | Volume overload | I/O, electrolytes | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments
 
-| Treatment | Indication | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|------------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Pyridostigmine (when stable/recovering) | Symptomatic weakness improvement | - | ROUTINE | ROUTINE | ROUTINE | Resume at 30 mg PO TID during recovery; titrate by 30 mg/dose q3-5 days to 60 mg PO q4-6h; max 120 mg q4h (rarely needed). Take 30-60 min before meals for dysphagia | Cholinergic crisis (excessive dosing), mechanical bowel obstruction | GI symptoms (diarrhea, cramping, salivation = cholinergic excess); reduce dose if muscarinic symptoms |
-| Glycopyrrolate | Cholinergic side effects of pyridostigmine | - | ROUTINE | ROUTINE | ROUTINE | 1-2 mg PO BID-TID; or 0.2 mg IV PRN for excessive secretions | Angle-closure glaucoma, urinary retention, tachycardia | Heart rate; urinary retention; dry mouth |
-| Acetaminophen | Headache (IVIG-related or general) | STAT | ROUTINE | ROUTINE | STAT | 650-1000 mg PO q6h; max 4g/day | Severe liver disease | LFTs if prolonged |
-| Ondansetron | Nausea (IVIG-related) | - | ROUTINE | - | ROUTINE | 4 mg IV/PO q6h PRN | QT prolongation | QTc monitoring |
-| Diphenhydramine | IVIG premedication | - | ROUTINE | - | ROUTINE | 25-50 mg IV/PO 30 min before IVIG infusion | Angle-closure glaucoma; avoid in elderly (anticholinergic) | Sedation |
-| Enoxaparin | DVT prophylaxis | - | ROUTINE | - | ROUTINE | 40 mg SC daily | Active bleeding, CrCl <30 (use UFH) | Platelets q3 days |
-| Pneumatic compression devices | DVT prophylaxis | STAT | STAT | - | STAT | Apply bilaterally on admission | Acute DVT | Skin checks |
-| Pantoprazole | GI prophylaxis (if on steroids) | - | ROUTINE | ROUTINE | ROUTINE | 40 mg IV/PO daily | Prolonged use risks (C. diff, osteoporosis) | GI symptoms |
-| Insulin sliding scale | Steroid-induced hyperglycemia | - | ROUTINE | - | ROUTINE | Per institutional protocol; target glucose 140-180 mg/dL | Hypoglycemia | Blood glucose q6h or more frequent |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Pyridostigmine (when stable/recovering) | PO | Symptomatic weakness improvement | 30 mg :: PO :: q4h :: Resume at 30 mg PO TID during recovery; titrate by 30 mg/dose q3-5 days to 60 mg PO q4-6h; max 120 mg q4h (rarely needed). Take 30-60 min before meals for dysphagia | Cholinergic crisis (excessive dosing), mechanical bowel obstruction | GI symptoms (diarrhea, cramping, salivation = cholinergic excess); reduce dose if muscarinic symptoms | - | ROUTINE | ROUTINE | ROUTINE |
+| Glycopyrrolate | IV | Cholinergic side effects of pyridostigmine | 1-2 mg :: IV :: BID :: 1-2 mg PO BID-TID; or 0.2 mg IV PRN for excessive secretions | Angle-closure glaucoma, urinary retention, tachycardia | Heart rate; urinary retention; dry mouth | - | ROUTINE | ROUTINE | ROUTINE |
+| Acetaminophen | PO | Headache (IVIG-related or general) | 650-1000 mg :: PO :: q6h :: 650-1000 mg PO q6h; max 4g/day | Severe liver disease | LFTs if prolonged | STAT | ROUTINE | ROUTINE | STAT |
+| Ondansetron | IV | Nausea (IVIG-related) | 4 mg :: IV :: q6h :: 4 mg IV/PO q6h PRN | QT prolongation | QTc monitoring | - | ROUTINE | - | ROUTINE |
+| Diphenhydramine | IV | IVIG premedication | 25-50 mg :: IV :: - :: 25-50 mg IV/PO 30 min before IVIG infusion | Angle-closure glaucoma; avoid in elderly (anticholinergic) | Sedation | - | ROUTINE | - | ROUTINE |
+| Enoxaparin | SC | DVT prophylaxis | 40 mg :: SC :: daily :: 40 mg SC daily | Active bleeding, CrCl <30 (use UFH) | Platelets q3 days | - | ROUTINE | - | ROUTINE |
+| Pneumatic compression devices | - | DVT prophylaxis | Apply bilaterally on admission | Acute DVT | Skin checks | STAT | STAT | - | STAT |
+| Pantoprazole | IV | GI prophylaxis (if on steroids) | 40 mg :: IV :: daily :: 40 mg IV/PO daily | Prolonged use risks (C. diff, osteoporosis) | GI symptoms | - | ROUTINE | ROUTINE | ROUTINE |
+| Insulin sliding scale | - | Steroid-induced hyperglycemia | 140-180 mg :: - :: - :: Per institutional protocol; target glucose 140-180 mg/dL | Hypoglycemia | Blood glucose q6h or more frequent | - | ROUTINE | - | ROUTINE |
 
 ### 3C. Second-line/Refractory
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| IV methylprednisolone | - | URGENT | - | URGENT | 1000 mg IV daily x 3-5 days. CAUTION: steroids can transiently worsen MG in first 5-10 days — only initiate in monitored setting with respiratory support available. Some centers use slow oral prednisone uptitration instead | Uncontrolled diabetes (relative), active infection (relative) | FVC/NIF closely; glucose q6h; BP; GI prophylaxis |
-| Prednisone (oral uptitration) | - | ROUTINE | ROUTINE | - | Start 10-20 mg PO daily; increase by 10 mg every 3-5 days to target 1 mg/kg/day (max 60-80 mg); maintain for 4-8 weeks, then slow taper over months | Active infection, uncontrolled DM (relative) | Glucose, BP, weight, bone density, mood; GI prophylaxis; PJP prophylaxis if prolonged high-dose |
-| Second course IVIG or PLEX | - | URGENT | - | URGENT | Repeat standard dosing if inadequate response to first course; wait 2-4 weeks between courses | Same as initial | Same as initial |
-| Eculizumab | - | EXT | ROUTINE | - | 900 mg IV q1 week x 4 weeks, then 1200 mg IV q2 weeks; for AChR-positive refractory generalized MG | Unresolved Neisseria meningitidis infection; must vaccinate ≥2 weeks before starting | Meningococcal infection; complement levels; CBC |
-| Efgartigimod (Vyvgart) | - | EXT | ROUTINE | - | 10 mg/kg IV weekly x 4 weeks per cycle; repeat cycles based on clinical response; for AChR-positive generalized MG | Active infection, IgG <2 g/L | IgG levels (target reduction); infection signs; CBC |
-| Rituximab | - | EXT | ROUTINE | - | 375 mg/m2 IV weekly x 4 weeks OR 1000 mg IV x 2 doses 2 weeks apart; especially effective in MuSK-positive MG | Active infection, hepatitis B (reactivation risk — screen first) | CD20 count, immunoglobulins q3 months; hepatitis B screening; PML risk (rare) |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| IV methylprednisolone (CPT 96365) | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily x 3-5 days. CAUTION: steroids can transiently worsen MG in first 5-10 days — only initiate in monitored setting with respiratory support available. Some centers use slow oral prednisone uptitration instead | Uncontrolled diabetes (relative), active infection (relative) | FVC/NIF closely; glucose q6h; BP; GI prophylaxis | - | URGENT | - | URGENT |
+| Prednisone (oral uptitration) | PO | - | 10-20 mg :: PO :: daily :: Start 10-20 mg PO daily; increase by 10 mg every 3-5 days to target 1 mg/kg/day (max 60-80 mg); maintain for 4-8 weeks, then slow taper over months | Active infection, uncontrolled DM (relative) | Glucose, BP, weight, bone density, mood; GI prophylaxis; PJP prophylaxis if prolonged high-dose | - | ROUTINE | ROUTINE | - |
+| Second course IVIG or PLEX | - | - | Repeat standard dosing if inadequate response to first course; wait 2-4 weeks between courses | Same as initial | Same as initial | - | URGENT | - | URGENT |
+| Eculizumab | IV | - | 900 mg :: IV :: - :: 900 mg IV q1 week x 4 weeks, then 1200 mg IV q2 weeks; for AChR-positive refractory generalized MG | Unresolved Neisseria meningitidis infection; must vaccinate ≥2 weeks before starting | Meningococcal infection; complement levels; CBC | - | EXT | ROUTINE | - |
+| Efgartigimod (Vyvgart) | IV | - | 10 mg/kg :: IV :: - :: 10 mg/kg IV weekly x 4 weeks per cycle; repeat cycles based on clinical response; for AChR-positive generalized MG | Active infection, IgG <2 g/L | IgG levels (target reduction); infection signs; CBC | - | EXT | ROUTINE | - |
+| Rituximab | IV | - | 375 mg/m2 :: IV :: - :: 375 mg/m2 IV weekly x 4 weeks OR 1000 mg IV x 2 doses 2 weeks apart; especially effective in MuSK-positive MG | Active infection, hepatitis B (reactivation risk — screen first) | CD20 count, immunoglobulins q3 months; hepatitis B screening; PML risk (rare) | - | EXT | ROUTINE | - |
 
 ### 3D. Disease-Modifying or Chronic Therapies
 
-| Treatment | Route | ED | HOSP | OPD | ICU | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring |
-|-----------|-------|:--:|:----:|:---:|:---:|--------|---------------------------|-------------------|------------|
-| Azathioprine | PO | - | ROUTINE | ROUTINE | - | Start 50 mg PO daily; increase by 50 mg every 1-2 weeks to target 2-3 mg/kg/day; onset of effect 6-12 months | TPMT genotype/phenotype testing (deficiency → severe myelosuppression); hepatitis B screen; CBC, LFTs | TPMT deficiency; pregnancy; concurrent allopurinol (dose reduce by 75%) | CBC weekly x 4 weeks, then biweekly x 2 months, then monthly; LFTs monthly x 3, then q3 months |
-| Mycophenolate mofetil | PO | - | ROUTINE | ROUTINE | - | Start 500 mg PO BID; increase to 1000 mg PO BID after 2 weeks; max 1500 mg BID; onset 6-12 months | CBC, LFTs, pregnancy test (teratogenic — requires contraception) | Pregnancy (Category D), breastfeeding | CBC q1 week x 1 month, then biweekly x 2 months, then monthly; LFTs q3 months |
-| Tacrolimus | PO | - | - | ROUTINE | - | 3 mg PO daily in 2 divided doses; target trough 5-10 ng/mL; onset 3-6 months | Renal function, BP, glucose, tacrolimus level baseline | Renal failure, uncontrolled hypertension | Trough level q1 week initially, then monthly; Cr, K+, glucose, BP; drug interactions (CYP3A4) |
-| Cyclosporine | PO | - | - | ROUTINE | - | Start 2-3 mg/kg/day PO in 2 divided doses; target trough 100-200 ng/mL; onset 3-6 months | Renal function, BP, lipids, Mg | Renal failure, uncontrolled HTN, malignancy | Trough levels, Cr, BP, Mg, lipids monthly |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Azathioprine | PO | - | 50 mg :: PO :: daily :: Start 50 mg PO daily; increase by 50 mg every 1-2 weeks to target 2-3 mg/kg/day; onset of effect 6-12 months | - | TPMT deficiency; pregnancy; concurrent allopurinol (dose reduce by 75%) | CBC weekly x 4 weeks, then biweekly x 2 months, then monthly; LFTs monthly x 3, then q3 months | - | ROUTINE | ROUTINE | - |
+| Mycophenolate mofetil | PO | - | 500 mg :: PO :: BID :: Start 500 mg PO BID; increase to 1000 mg PO BID after 2 weeks; max 1500 mg BID; onset 6-12 months | - | Pregnancy (Category D), breastfeeding | CBC q1 week x 1 month, then biweekly x 2 months, then monthly; LFTs q3 months | - | ROUTINE | ROUTINE | - |
+| Tacrolimus | PO | - | 3 mg :: PO :: daily :: 3 mg PO daily in 2 divided doses; target trough 5-10 ng/mL; onset 3-6 months | - | Renal failure, uncontrolled hypertension | Trough level q1 week initially, then monthly; Cr, K+, glucose, BP; drug interactions (CYP3A4) | - | - | ROUTINE | - |
+| Cyclosporine | PO | - | 2-3 mg/kg :: PO :: - :: Start 2-3 mg/kg/day PO in 2 divided doses; target trough 100-200 ng/mL; onset 3-6 months | - | Renal failure, uncontrolled HTN, malignancy | Trough levels, Cr, BP, Mg, lipids monthly | - | - | ROUTINE | - |
 
 ---
 
@@ -266,21 +273,21 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| IVIG (2 g/kg over 2-5 days) for myasthenic crisis | Class I, Level A | Zinman et al. (2007); Gajdos et al. Cochrane (2012) |
+| IVIG (2 g/kg over 2-5 days) for myasthenic crisis | Class I, Level A | [Zinman et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/17353471/); [Gajdos et al. Cochrane (2012)](https://pubmed.ncbi.nlm.nih.gov/23235588/) |
 | PLEX (5 exchanges) for myasthenic crisis | Class I, Level A | Cortese et al. (2011); Cochrane Review |
-| IVIG and PLEX are equivalent for crisis | Class I, Level A | Barth et al. (2011) |
-| PLEX preferred for MuSK-positive MG | Class IIa, Level C | Expert consensus; Evoli et al. (2003) |
+| IVIG and PLEX are equivalent for crisis | Class I, Level A | [Barth et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21562253/) |
+| PLEX preferred for MuSK-positive MG | Class IIa, Level C | Expert consensus; [Evoli et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12821509/) |
 | Hold pyridostigmine during intubation/crisis | Class IIa, Level C | Expert consensus |
 | Avoid aminoglycosides, fluoroquinolones in MG | Class III (Harm) | FDA safety communication; multiple case reports |
 | Avoid IV magnesium in MG | Class III (Harm) | NMJ blockade; case reports of respiratory failure |
 | Steroids can transiently worsen MG (monitor closely when initiating) | Class IIa, Level B | Multiple observational studies |
-| Thymectomy benefit in non-thymomatous MG | Class I, Level B | MGTX trial (Wolfe et al. NEJM 2016) |
-| Eculizumab for refractory AChR+ generalized MG | Class I, Level A | REGAIN trial (Howard et al. Lancet Neurol 2017) |
-| Efgartigimod for AChR+ generalized MG | Class I, Level A | ADAPT trial (Howard et al. Lancet Neurol 2021) |
-| Rituximab for MuSK-positive MG | Class IIa, Level B | Hehir et al. (2017); Díaz-Manera et al. (2012) |
+| Thymectomy benefit in non-thymomatous MG | Class I, Level B | MGTX trial ([Wolfe et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27509100/)) |
+| Eculizumab for refractory AChR+ generalized MG | Class I, Level A | REGAIN trial ([Howard et al. Lancet Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/29066163/)) |
+| Efgartigimod for AChR+ generalized MG | Class I, Level A | ADAPT trial ([Howard et al. Lancet Neurol 2021](https://pubmed.ncbi.nlm.nih.gov/34146511/)) |
+| Rituximab for MuSK-positive MG | Class IIa, Level B | [Hehir et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28801338/); [Díaz-Manera et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22218276/) |
 | 20/30/40 rule for intubation | Class IIa, Level C | Wijdicks & Klein (2017) |
 | Bedside FVC superior to ABG for monitoring | Class I, Level B | Multiple studies; ABG changes are LATE findings |
-| Azathioprine as first-line steroid-sparing | Class I, Level B | Palace et al. (1998) |
+| Azathioprine as first-line steroid-sparing | Class I, Level B | [Palace et al. (1998)](https://pubmed.ncbi.nlm.nih.gov/9633727/) |
 | Mycophenolate as steroid-sparing | Class II, Level B | Mixed trial results but widely used |
 
 ---

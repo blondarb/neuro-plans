@@ -1,3 +1,10 @@
+---
+title: "HSV Encephalitis"
+description: "Clinical decision support for herpes simplex virus encephalitis diagnosis and management"
+version: "1.0"
+setting: "ED, HOSP, OPD, ICU"
+---
+
 # HSV Encephalitis
 
 **VERSION:** 1.0
@@ -10,7 +17,7 @@
 
 **ICD-10:** B00.4 (Herpesviral encephalitis), G05.1 (Encephalitis in diseases classified elsewhere)
 
-**SYNONYMS:** HSV encephalitis, herpes encephalitis, herpes simplex encephalitis, viral encephalitis, limbic encephalitis, temporal lobe encephalitis, brain infection, encephalitis
+**SYNONYMS:** HSV encephalitis, HSE, herpes encephalitis, herpes simplex encephalitis, viral encephalitis, limbic encephalitis, temporal lobe encephalitis, brain infection, encephalitis
 
 **SCOPE:** Acute HSV-1 encephalitis in adults — the most common cause of sporadic fatal encephalitis. Covers emergent empiric acyclovir, LP with HSV PCR, MRI findings, seizure management, and monitoring for complications (cerebral edema, SIADH, refractory status epilepticus). Excludes neonatal HSV, HSV-2 meningitis (Mollaret), CMV/EBV/VZV encephalitis, and autoimmune encephalitis (though post-HSV autoimmune encephalitis is addressed).
 
@@ -28,16 +35,16 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | - | STAT | Baseline; infection markers; lymphopenia may be present | Normal or mild leukocytosis |
-| CMP (BMP + LFTs) | STAT | STAT | - | STAT | Renal function for acyclovir dosing (nephrotoxic); electrolytes (SIADH); hepatic function | Normal; watch Na and Cr |
-| Blood cultures x2 | STAT | STAT | - | STAT | Exclude bacterial meningitis; concurrent bacteremia | No growth |
-| Coagulation panel (PT/INR, aPTT) | STAT | STAT | - | STAT | Before LP; coagulopathy workup if DIC suspected | Normal |
-| Blood glucose (paired with CSF) | STAT | STAT | - | STAT | CSF:serum glucose ratio interpretation | Document paired with LP |
-| Procalcitonin | URGENT | ROUTINE | - | URGENT | Low procalcitonin argues against bacterial meningitis | Low (<0.5 ng/mL favors viral) |
-| CRP | URGENT | ROUTINE | - | URGENT | Inflammatory marker; lower in viral than bacterial | Mild elevation |
+| CBC with differential (CPT 85025) | STAT | STAT | - | STAT | Baseline; infection markers; lymphopenia may be present | Normal or mild leukocytosis |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | - | STAT | Renal function for acyclovir dosing (nephrotoxic); electrolytes (SIADH); hepatic function | Normal; watch Na and Cr |
+| Blood cultures x2 (CPT 87040) | STAT | STAT | - | STAT | Exclude bacterial meningitis; concurrent bacteremia | No growth |
+| Coagulation panel (PT/INR, aPTT) (CPT 85610+85730) | STAT | STAT | - | STAT | Before LP; coagulopathy workup if DIC suspected | Normal |
+| Blood glucose (paired with CSF) (CPT 82947) | STAT | STAT | - | STAT | CSF:serum glucose ratio interpretation | Document paired with LP |
+| Procalcitonin (CPT 84145) | URGENT | ROUTINE | - | URGENT | Low procalcitonin argues against bacterial meningitis | Low (<0.5 ng/mL favors viral) |
+| CRP (CPT 86140) | URGENT | ROUTINE | - | URGENT | Inflammatory marker; lower in viral than bacterial | Mild elevation |
 | Serum sodium | STAT | STAT | - | STAT | SIADH is common complication of HSV encephalitis | 135-145 mEq/L; watch for hyponatremia |
-| Serum osmolality | URGENT | ROUTINE | - | URGENT | SIADH evaluation | 280-295 mOsm/kg |
-| Type and screen | STAT | ROUTINE | - | STAT | Potential surgical intervention for mass effect | On file |
+| Serum osmolality (CPT 83930) | URGENT | ROUTINE | - | URGENT | SIADH evaluation | 280-295 mOsm/kg |
+| Type and screen (CPT 86900) | STAT | ROUTINE | - | STAT | Potential surgical intervention for mass effect | On file |
 
 ### 1B. Extended Workup (Second-line)
 
@@ -46,18 +53,18 @@ SECTION A: ACTION ITEMS
 | HSV-1/2 IgG and IgM (serum) | - | ROUTINE | ROUTINE | - | Seroconversion supports diagnosis; IgG positive in most adults (not diagnostic alone); IgM suggests acute infection | Rising titers on paired sera (acute + convalescent at 2-4 weeks) |
 | HIV 1/2 antigen/antibody | - | ROUTINE | ROUTINE | - | Immunocompromise affects prognosis and treatment duration | Document result |
 | Urine osmolality and sodium | - | ROUTINE | - | ROUTINE | SIADH confirmation (urine osm >100, urine Na >40 with low serum Na) | Evaluate if hyponatremic |
-| TSH | - | ROUTINE | - | - | Thyroid dysfunction in encephalopathy differential | Normal |
-| Ammonia | URGENT | ROUTINE | - | URGENT | Hepatic encephalopathy in differential | Normal |
-| Troponin | URGENT | ROUTINE | - | URGENT | Stress cardiomyopathy; myocarditis in systemic viral illness | Normal |
-| Toxicology screen (urine) | URGENT | ROUTINE | - | URGENT | Altered mental status differential | Negative |
-| Blood alcohol level | URGENT | - | - | URGENT | Altered mental status differential | Negative |
+| TSH (CPT 84443) | - | ROUTINE | - | - | Thyroid dysfunction in encephalopathy differential | Normal |
+| Ammonia (CPT 82140) | URGENT | ROUTINE | - | URGENT | Hepatic encephalopathy in differential | Normal |
+| Troponin (CPT 84484) | URGENT | ROUTINE | - | URGENT | Stress cardiomyopathy; myocarditis in systemic viral illness | Normal |
+| Toxicology screen (urine) (CPT 80307) | URGENT | ROUTINE | - | URGENT | Altered mental status differential | Negative |
+| Blood alcohol level (CPT 80320) | URGENT | - | - | URGENT | Altered mental status differential | Negative |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Autoimmune encephalitis panel (serum) — NMDAR, LGI1, CASPR2 | - | ROUTINE | ROUTINE | ROUTINE | Post-HSV autoimmune encephalitis occurs in 20-27% (especially anti-NMDAR); also primary differential | Negative initially; recheck at 2-4 weeks if relapse |
-| Paraneoplastic panel (serum) | - | EXT | EXT | - | If atypical features or oncologic history | Negative |
+| Autoimmune encephalitis panel (serum) — NMDAR, LGI1, CASPR2 (CPT 86255) | - | ROUTINE | ROUTINE | ROUTINE | Post-HSV autoimmune encephalitis occurs in 20-27% (especially anti-NMDAR); also primary differential | Negative initially; recheck at 2-4 weeks if relapse |
+| Paraneoplastic panel (serum) (CPT 86255) | - | EXT | EXT | - | If atypical features or oncologic history | Negative |
 | VZV IgG/IgM (serum) | - | ROUTINE | ROUTINE | - | VZV encephalitis in differential (especially immunocompromised) | Negative |
 | Arboviral serologies (West Nile, EEE, St. Louis) | - | EXT | EXT | - | Geographic/seasonal risk; summer-fall encephalitis | Negative |
 | Rabies antibodies | - | EXT | EXT | - | Animal exposure history with rapidly progressive encephalitis | Negative |
@@ -71,10 +78,10 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head without contrast | STAT | STAT | - | STAT | Immediate — before LP to exclude mass effect; CT may be NORMAL early in HSV encephalitis | Temporal lobe hypodensity, edema, hemorrhage (late); may be normal in first 48-72h | Pregnancy (relative) |
-| MRI brain with and without contrast | STAT | STAT | - | STAT | Within 24h; STAT if available. MOST SENSITIVE imaging study — abnormal in >90% within 48h | T2/FLAIR hyperintensity in medial temporal lobes (unilateral or bilateral), insular cortex, inferior frontal gyri, cingulate gyrus. DWI restriction in acute phase. Hemorrhagic transformation. Leptomeningeal enhancement | Pacemaker, metallic implants |
-| EEG (routine or continuous) | URGENT | URGENT | - | STAT | Within 24h; continuous EEG if altered consciousness | Periodic lateralizing epileptiform discharges (PLEDs/LPDs) from temporal region — highly suggestive of HSV encephalitis; focal slowing; electrographic seizures; diffuse slowing | None significant |
-| ECG (12-lead) | URGENT | ROUTINE | - | URGENT | On admission | Baseline; myocarditis screen; QTc for medication interactions | None |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | Immediate — before LP to exclude mass effect; CT may be NORMAL early in HSV encephalitis | Temporal lobe hypodensity, edema, hemorrhage (late); may be normal in first 48-72h | Pregnancy (relative) |
+| MRI brain with and without contrast (CPT 70553) | STAT | STAT | - | STAT | Within 24h; STAT if available. MOST SENSITIVE imaging study — abnormal in >90% within 48h | T2/FLAIR hyperintensity in medial temporal lobes (unilateral or bilateral), insular cortex, inferior frontal gyri, cingulate gyrus. DWI restriction in acute phase. Hemorrhagic transformation. Leptomeningeal enhancement | Pacemaker, metallic implants |
+| EEG (routine or continuous) (CPT 95816) | URGENT | URGENT | - | STAT | Within 24h; continuous EEG if altered consciousness | Periodic lateralizing epileptiform discharges (PLEDs/LPDs) from temporal region — highly suggestive of HSV encephalitis; focal slowing; electrographic seizures; diffuse slowing | None significant |
+| ECG (12-lead) (CPT 93000) | URGENT | ROUTINE | - | URGENT | On admission | Baseline; myocarditis screen; QTc for medication interactions | None |
 
 ### 2B. Extended
 
@@ -82,15 +89,15 @@ SECTION A: ACTION ITEMS
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MRI brain with MRA/MRV | - | ROUTINE | - | ROUTINE | If vascular complication suspected | Venous sinus thrombosis; vasculopathy; large vessel occlusion | Same as MRI |
 | Repeat MRI brain | - | ROUTINE | - | ROUTINE | At 48-72h if initial MRI negative but suspicion high; at 7-14 days to assess extent of damage | Evolving temporal changes; hemorrhagic transformation; extent of necrosis | Same as MRI |
-| Continuous EEG (cEEG) monitoring | - | URGENT | - | STAT | 24-72h minimum if altered consciousness, seizures, or post-ictal state | Non-convulsive seizures, non-convulsive status epilepticus (NCSE), PLEDs | None |
-| Chest X-ray | URGENT | ROUTINE | - | URGENT | On admission | Aspiration; baseline for ventilator management | None |
+| Continuous EEG (cEEG) monitoring (CPT 95700) | - | URGENT | - | STAT | 24-72h minimum if altered consciousness, seizures, or post-ictal state | Non-convulsive seizures, non-convulsive status epilepticus (NCSE), PLEDs | None |
+| Chest X-ray (CPT 71046) | URGENT | ROUTINE | - | URGENT | On admission | Aspiration; baseline for ventilator management | None |
 
 ### 2C. Rare/Specialized
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | Brain biopsy | - | - | - | EXT | Only if: PCR negative, MRI atypical, no response to acyclovir, alternative diagnosis likely | Cowdry type A inclusions; viral culture; PCR on tissue | Neurosurgical risk; coagulopathy |
-| PET-CT brain | - | - | EXT | - | If autoimmune encephalitis relapse suspected post-HSV | Mesial temporal hypermetabolism (seizure focus) or hypometabolism | Pregnancy |
+| PET-CT brain (CPT 78816) | - | - | EXT | - | If autoimmune encephalitis relapse suspected post-HSV | Mesial temporal hypermetabolism (seizure focus) or hypometabolism | Pregnancy |
 | ICP monitoring (EVD) | - | - | - | URGENT | If clinical signs of elevated ICP; declining GCS despite treatment | ICP <22 mmHg; CPP >60 | Coagulopathy |
 
 ### LUMBAR PUNCTURE
@@ -104,22 +111,22 @@ SECTION A: ACTION ITEMS
 | Study | ED | HOSP | OPD | Rationale | Target Finding |
 |-------|:--:|:----:|:---:|-----------|----------------|
 | Opening pressure | STAT | ROUTINE | - | Elevated in some cases; monitor for ICP issues | Normal or mildly elevated (usually <300 mm H2O) |
-| Cell count with differential (tubes 1 and 4) | STAT | ROUTINE | - | Lymphocytic pleocytosis typical; RBCs may be present (hemorrhagic encephalitis); tube comparison for traumatic tap | WBC 10-500 cells/µL (lymphocyte predominant); RBC may be elevated (hemorrhagic necrosis) |
-| Protein | STAT | ROUTINE | - | Mildly to moderately elevated | Elevated (50-200 mg/dL typical; can be higher) |
-| Glucose with paired serum | STAT | ROUTINE | - | Usually NORMAL in HSV (distinguishes from bacterial/TB/fungal) | Normal (>60% serum glucose ratio); low glucose argues against HSV |
-| HSV-1/2 PCR (CSF) | STAT | ROUTINE | - | GOLD STANDARD diagnostic test; sensitivity 96-98%, specificity ~99%. May be NEGATIVE in first 72h — if clinical suspicion high and initial PCR negative, REPEAT at 3-7 days | Positive (HSV-1 in >90% adult cases; HSV-2 in neonatal/meningitis) |
-| Gram stain and bacterial culture | STAT | ROUTINE | - | Exclude bacterial meningitis | No organisms |
-| BioFire FilmArray ME Panel | STAT | ROUTINE | - | Rapid multiplex PCR — includes HSV-1/2, VZV, enterovirus, CMV, HHV-6, and bacterial pathogens; result in ~1 hour | HSV-1 detected (or other pathogen identified) |
+| Cell count with differential (tubes 1 and 4) (CPT 89051) | STAT | ROUTINE | - | Lymphocytic pleocytosis typical; RBCs may be present (hemorrhagic encephalitis); tube comparison for traumatic tap | WBC 10-500 cells/µL (lymphocyte predominant); RBC may be elevated (hemorrhagic necrosis) |
+| Protein (CPT 84157) | STAT | ROUTINE | - | Mildly to moderately elevated | Elevated (50-200 mg/dL typical; can be higher) |
+| Glucose with paired serum (CPT 82945) | STAT | ROUTINE | - | Usually NORMAL in HSV (distinguishes from bacterial/TB/fungal) | Normal (>60% serum glucose ratio); low glucose argues against HSV |
+| HSV-1/2 PCR (CSF) (CPT 87529) | STAT | ROUTINE | - | GOLD STANDARD diagnostic test; sensitivity 96-98%, specificity ~99%. May be NEGATIVE in first 72h — if clinical suspicion high and initial PCR negative, REPEAT at 3-7 days | Positive (HSV-1 in >90% adult cases; HSV-2 in neonatal/meningitis) |
+| Gram stain and bacterial culture (CPT 87205+87070) | STAT | ROUTINE | - | Exclude bacterial meningitis | No organisms |
+| BioFire FilmArray ME Panel (CPT 87483) | STAT | ROUTINE | - | Rapid multiplex PCR — includes HSV-1/2, VZV, enterovirus, CMV, HHV-6, and bacterial pathogens; result in ~1 hour | HSV-1 detected (or other pathogen identified) |
 | VZV PCR (CSF) | URGENT | ROUTINE | - | VZV encephalitis in differential; especially immunocompromised and elderly | Negative (positive → VZV encephalitis — treat with IV acyclovir) |
 | CMV PCR (CSF) | - | ROUTINE | - | If immunocompromised (HIV/transplant) | Negative |
 | EBV PCR (CSF) | - | ROUTINE | - | If immunocompromised; CNS lymphoma differential | Negative |
 | HHV-6 PCR (CSF) | - | ROUTINE | - | Post-transplant encephalitis; temporal lobe involvement similar to HSV | Negative |
 | Enterovirus PCR | - | ROUTINE | - | Viral meningitis differential | Negative |
 | Autoimmune encephalitis panel (CSF) — NMDAR, LGI1, CASPR2, GABA-B | - | ROUTINE | ROUTINE | Primary differential diagnosis; also detect post-HSV autoimmune encephalitis | Negative initially; recheck if relapse |
-| Oligoclonal bands, IgG index | - | ROUTINE | ROUTINE | Intrathecal antibody production; MS differential | May be positive (non-specific) |
-| Cytology | - | ROUTINE | - | Exclude leptomeningeal malignancy | Negative |
-| AFB smear and culture | - | ROUTINE | - | TB meningitis if subacute or basilar | Negative |
-| VDRL (CSF) | - | ROUTINE | - | Neurosyphilis screen | Negative |
+| Oligoclonal bands, IgG index (CPT 83916) | - | ROUTINE | ROUTINE | Intrathecal antibody production; MS differential | May be positive (non-specific) |
+| Cytology (CPT 88104) | - | ROUTINE | - | Exclude leptomeningeal malignancy | Negative |
+| AFB smear and culture (CPT 87116) | - | ROUTINE | - | TB meningitis if subacute or basilar | Negative |
+| VDRL (CSF) (CPT 86592) | - | ROUTINE | - | Neurosyphilis screen | Negative |
 
 **Special Handling:** HSV PCR sample can be refrigerated; do NOT freeze. Process CSF rapidly for cell count. Save extra CSF (frozen at -80°C) for future studies if needed.
 
@@ -135,39 +142,39 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Acyclovir IV | STAT | STAT | - | STAT | 10 mg/kg IV q8h (infuse over 1h). Base on IDEAL body weight (IBW). Duration: minimum 14-21 days. Dose adjust for renal impairment: CrCl 25-50: 10 mg/kg q12h; CrCl 10-25: 10 mg/kg q24h; HD: 10 mg/kg after each dialysis session | True acyclovir allergy (extremely rare). Renal impairment — dose adjust, do NOT withhold | Renal function (BUN, Cr) daily; ensure adequate hydration (1-1.5 mL/kg/h IV fluids); urine output; acyclovir crystal nephropathy (maintain urine output); CBC (rare neutropenia); LFTs |
-| IV normal saline (aggressive hydration) | STAT | STAT | - | STAT | 1-1.5 mL/kg/h continuous to prevent acyclovir nephrotoxicity; bolus 500-1000 mL if dehydrated | Volume overload, CHF | I/O; Cr daily; urine output >0.5 mL/kg/h |
-| Empiric antibiotics (vancomycin + ceftriaxone) | STAT | STAT | - | STAT | Standard meningitis dosing. Continue until bacterial meningitis excluded by CSF results (Gram stain negative, BioFire negative, cultures negative at 48-72h). See Bacterial Meningitis template for dosing | See Bacterial Meningitis template | Standard |
-| Dexamethasone | STAT | STAT | - | STAT | 0.15 mg/kg IV q6h x 4 days — give empirically with antibiotics until bacterial meningitis excluded. Discontinue when bacterial excluded. Role in HSV encephalitis itself is CONTROVERSIAL — some evidence for reducing edema but no clear mortality benefit; not standard of care for isolated HSV | Uncontrolled infection (relative) | Glucose; GI prophylaxis |
-| Levetiracetam (if seizures) | STAT | STAT | - | STAT | 1000-1500 mg IV load; then 500-1000 mg IV/PO BID; max 3000 mg/day. Seizures occur in 40-60% of HSV encephalitis | Severe renal impairment (dose adjust) | Renal function; behavioral side effects |
-| Lorazepam (seizure rescue) | STAT | STAT | - | STAT | 0.1 mg/kg IV (max 4 mg); repeat x1 in 5 min if needed | Respiratory depression | RR, SpO2; airway equipment ready |
-| Supplemental oxygen | STAT | STAT | - | STAT | If SpO2 <94% or intubated | N/A | SpO2 target ≥94% |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Acyclovir IV (CPT 96365) | IV | - | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h (infuse over 1h). Base on IDEAL body weight (IBW). Duration: minimum 14-21 days. Dose adjust for renal impairment: CrCl 25-50: 10 mg/kg q12h; CrCl 10-25: 10 mg/kg q24h; HD: 10 mg/kg after each dialysis session | True acyclovir allergy (extremely rare). Renal impairment — dose adjust, do NOT withhold | Renal function (BUN, Cr) daily; ensure adequate hydration (1-1.5 mL/kg/h IV fluids); urine output; acyclovir crystal nephropathy (maintain urine output); CBC (rare neutropenia); LFTs | STAT | STAT | - | STAT |
+| IV normal saline (aggressive hydration) | IV | - | 1-1.5 mL/kg :: - :: continuous :: 1-1.5 mL/kg/h continuous to prevent acyclovir nephrotoxicity; bolus 500-1000 mL if dehydrated | Volume overload, CHF | I/O; Cr daily; urine output >0.5 mL/kg/h | STAT | STAT | - | STAT |
+| Empiric antibiotics (vancomycin + ceftriaxone) | - | - | Standard meningitis dosing. Continue until bacterial meningitis excluded by CSF results (Gram stain negative, BioFire negative, cultures negative at 48-72h). See Bacterial Meningitis template for dosing | See Bacterial Meningitis template | Standard | STAT | STAT | - | STAT |
+| Dexamethasone | IV | - | 0.15 mg/kg :: IV :: q6h :: 0.15 mg/kg IV q6h x 4 days — give empirically with antibiotics until bacterial meningitis excluded. Discontinue when bacterial excluded. Role in HSV encephalitis itself is CONTROVERSIAL — some evidence for reducing edema but no clear mortality benefit; not standard of care for isolated HSV | Uncontrolled infection (relative) | Glucose; GI prophylaxis | STAT | STAT | - | STAT |
+| Levetiracetam (if seizures) | IV | - | 1000-1500 mg :: IV :: BID :: 1000-1500 mg IV load; then 500-1000 mg IV/PO BID; max 3000 mg/day. Seizures occur in 40-60% of HSV encephalitis | Severe renal impairment (dose adjust) | Renal function; behavioral side effects | STAT | STAT | - | STAT |
+| Lorazepam (seizure rescue) | IV | - | 0.1 mg/kg :: IV :: - :: 0.1 mg/kg IV (max 4 mg); repeat x1 in 5 min if needed | Respiratory depression | RR, SpO2; airway equipment ready | STAT | STAT | - | STAT |
+| Supplemental oxygen | - | - | 94% :: - :: - :: If SpO2 <94% or intubated | N/A | SpO2 target ≥94% | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments
 
-| Treatment | Indication | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|------------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Acetaminophen | Fever (temperature goal <38°C); headache | STAT | STAT | ROUTINE | STAT | 650-1000 mg PO/IV q6h; max 4g/day | Severe hepatic disease | Temperature; LFTs |
-| Mannitol 20% | Cerebral edema / elevated ICP | STAT | - | - | STAT | 1-1.5 g/kg IV bolus; then 0.25-0.5 g/kg q4-6h | Anuria | Serum osm <320; renal function; I/O |
-| Hypertonic saline 23.4% | Acute herniation | - | - | - | STAT | 30 mL IV via central line over 10-20 min | No central access | Na (target 145-155); osmolality |
-| Hypertonic saline 3% infusion | ICP management (less acute) | - | - | - | STAT | 0.5-1 mL/kg/h continuous; target Na 145-155 | Hypernatremia | Na q4-6h; osmolality |
-| Phenytoin/Fosphenytoin | Refractory seizures (second-line after levetiracetam) | STAT | STAT | - | STAT | Fosphenytoin 20 mg PE/kg IV at 150 mg PE/min; maintenance 100 mg PE q8h; target level 10-20 µg/mL | Bradycardia, heart block, hypotension (infusion rate-related) | Continuous telemetry during load; free phenytoin level; LFTs |
-| Lacosamide | Seizure management (adjunctive) | - | ROUTINE | ROUTINE | ROUTINE | 200 mg IV/PO load; then 100-200 mg BID; max 400 mg/day | PR prolongation, AV block | ECG; PR interval |
-| Ondansetron | Nausea/vomiting | STAT | ROUTINE | - | STAT | 4 mg IV/PO q6h PRN | QT prolongation | QTc |
-| Pantoprazole | GI prophylaxis (if steroids or critical illness) | - | ROUTINE | - | ROUTINE | 40 mg IV/PO daily | C. diff risk long-term | GI symptoms |
-| Enoxaparin | DVT prophylaxis | - | ROUTINE | - | ROUTINE | 40 mg SC daily (start when not actively seizing and no hemorrhagic transformation) | Active bleeding, hemorrhagic transformation, coagulopathy, platelets <50K | Platelets q3 days |
-| Pneumatic compression devices | DVT prophylaxis | STAT | STAT | - | STAT | Apply bilaterally on admission | Acute DVT | Skin checks |
-| Fluid restriction | SIADH management | - | ROUTINE | - | ROUTINE | 1-1.2 L/day if Na <130 with clinical SIADH | Dehydration (balance with acyclovir hydration needs) | Na q6-8h; urine osm/Na; I/O |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Acetaminophen | IV | Fever (temperature goal <38°C); headache | 650-1000 mg :: IV :: q6h :: 650-1000 mg PO/IV q6h; max 4g/day | Severe hepatic disease | Temperature; LFTs | STAT | STAT | ROUTINE | STAT |
+| Mannitol 20% | IV | Cerebral edema / elevated ICP | 1-1.5 g/kg :: IV :: once :: 1-1.5 g/kg IV bolus; then 0.25-0.5 g/kg q4-6h | Anuria | Serum osm <320; renal function; I/O | STAT | - | - | STAT |
+| Hypertonic saline 23.4% | IV | Acute herniation | 30 mL :: IV :: - :: 30 mL IV via central line over 10-20 min | No central access | Na (target 145-155); osmolality | - | - | - | STAT |
+| Hypertonic saline 3% infusion | - | ICP management (less acute) | 0.5-1 mL/kg :: - :: continuous :: 0.5-1 mL/kg/h continuous; target Na 145-155 | Hypernatremia | Na q4-6h; osmolality | - | - | - | STAT |
+| Phenytoin/Fosphenytoin | IV | Refractory seizures (second-line after levetiracetam) | 20 mg :: IV :: q8h :: Fosphenytoin 20 mg PE/kg IV at 150 mg PE/min; maintenance 100 mg PE q8h; target level 10-20 µg/mL | Bradycardia, heart block, hypotension (infusion rate-related) | Continuous telemetry during load; free phenytoin level; LFTs | STAT | STAT | - | STAT |
+| Lacosamide | IV | Seizure management (adjunctive) | 200 mg :: IV :: BID :: 200 mg IV/PO load; then 100-200 mg BID; max 400 mg/day | PR prolongation, AV block | ECG; PR interval | - | ROUTINE | ROUTINE | ROUTINE |
+| Ondansetron | IV | Nausea/vomiting | 4 mg :: IV :: q6h :: 4 mg IV/PO q6h PRN | QT prolongation | QTc | STAT | ROUTINE | - | STAT |
+| Pantoprazole | IV | GI prophylaxis (if steroids or critical illness) | 40 mg :: IV :: daily :: 40 mg IV/PO daily | C. diff risk long-term | GI symptoms | - | ROUTINE | - | ROUTINE |
+| Enoxaparin | SC | DVT prophylaxis | 40 mg :: SC :: daily :: 40 mg SC daily (start when not actively seizing and no hemorrhagic transformation) | Active bleeding, hemorrhagic transformation, coagulopathy, platelets <50K | Platelets q3 days | - | ROUTINE | - | ROUTINE |
+| Pneumatic compression devices | - | DVT prophylaxis | Apply bilaterally on admission | Acute DVT | Skin checks | STAT | STAT | - | STAT |
+| Fluid restriction | - | SIADH management | 1-1.2 L/day if Na <130 with clinical SIADH | Dehydration (balance with acyclovir hydration needs) | Na q6-8h; urine osm/Na; I/O | - | ROUTINE | - | ROUTINE |
 
 ### 3C. Second-line/Refractory
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Foscarnet IV (acyclovir-resistant HSV) | - | EXT | - | EXT | 60 mg/kg IV q8h or 90 mg/kg IV q12h; infuse over 1-2h with aggressive hydration. For proven or suspected acyclovir resistance (immunocompromised, HIV) | Renal failure (major nephrotoxin); electrolyte abnormalities | Cr daily; Ca, Mg, K, PO4 BID (causes severe electrolyte wasting); hydration 1-2 L NS before each dose |
-| Decompressive craniectomy | - | - | - | STAT | For malignant cerebral edema with impending herniation, unresponsive to medical ICP management; consider if age appropriate and prognosis not already dismal | Bilateral massive necrosis; moribund patient | Post-op neuro checks; ICP monitoring; wound care |
-| Immunotherapy for post-HSV autoimmune encephalitis | - | URGENT | ROUTINE | URGENT | If relapse at 2-6 weeks with new anti-NMDAR antibodies: IV methylprednisolone 1g/day x 5 days + IVIG 0.4 g/kg/day x 5 days; second-line: rituximab | Active HSV infection (ensure viral replication controlled) | NMDAR antibody titers; clinical response; viral PCR to confirm HSV not reactivated |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Foscarnet IV (acyclovir-resistant HSV) | IV | - | 60 mg/kg :: IV :: q8h :: 60 mg/kg IV q8h or 90 mg/kg IV q12h; infuse over 1-2h with aggressive hydration. For proven or suspected acyclovir resistance (immunocompromised, HIV) | Renal failure (major nephrotoxin); electrolyte abnormalities | Cr daily; Ca, Mg, K, PO4 BID (causes severe electrolyte wasting); hydration 1-2 L NS before each dose | - | EXT | - | EXT |
+| Decompressive craniectomy | - | - | For malignant cerebral edema with impending herniation, unresponsive to medical ICP management; consider if age appropriate and prognosis not already dismal | Bilateral massive necrosis; moribund patient | Post-op neuro checks; ICP monitoring; wound care | - | - | - | STAT |
+| Immunotherapy for post-HSV autoimmune encephalitis | IV | - | 1g/day :: IV :: daily x 5 days :: If relapse at 2-6 weeks with new anti-NMDAR antibodies: IV methylprednisolone 1g/day x 5 days + IVIG 0.4 g/kg/day x 5 days; second-line: rituximab | Active HSV infection (ensure viral replication controlled) | NMDAR antibody titers; clinical response; viral PCR to confirm HSV not reactivated | - | URGENT | ROUTINE | URGENT |
 
 ### 3D. Duration of Treatment and Discontinuation
 
@@ -278,13 +285,13 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| IV acyclovir 10 mg/kg q8h x 14-21 days | Class I, Level A | Whitley et al. (NEJM 1986) — acyclovir vs placebo landmark trial; reduced mortality from 70% to 20% |
-| Start acyclovir empirically; do NOT delay for diagnostics | Class I, Level A | IDSA Encephalitis Guidelines (Tunkel et al. CID 2008); every hour of delay worsens outcomes |
-| CSF HSV PCR as gold standard (sensitivity 96-98%) | Class I, Level A | Lakeman & Whitley (JID 1995) |
+| IV acyclovir 10 mg/kg q8h x 14-21 days | Class I, Level A | [Whitley et al. (NEJM 1986)](https://pubmed.ncbi.nlm.nih.gov/3001520/) — acyclovir vs placebo landmark trial; reduced mortality from 70% to 20% |
+| Start acyclovir empirically; do NOT delay for diagnostics | Class I, Level A | IDSA Encephalitis Guidelines ([Tunkel et al. CID 2008](https://pubmed.ncbi.nlm.nih.gov/18582201/)); every hour of delay worsens outcomes |
+| CSF HSV PCR as gold standard (sensitivity 96-98%) | Class I, Level A | [Lakeman & Whitley (JID 1995)](https://pubmed.ncbi.nlm.nih.gov/7706811/) |
 | Repeat HSV PCR if initially negative with high clinical suspicion | Class I, Level B | False negative rate ~5% in first 72h; Roullet (2007) |
 | MRI with DWI is most sensitive imaging | Class I, Level A | Sensitivity >90% within 48h; temporal lobe predilection |
 | EEG showing PLEDs supports diagnosis | Class IIa, Level B | Periodic lateralizing discharges in ~80% of HSV encephalitis |
-| Post-HSV autoimmune encephalitis (anti-NMDAR) in 20-27% | Class IIa, Level B | Armangue et al. (Lancet Neurol 2014); Prüss et al. (Ann Neurol 2012) |
+| Post-HSV autoimmune encephalitis (anti-NMDAR) in 20-27% | Class IIa, Level B | [Armangue et al. (Ann Neurol 2014)](https://pubmed.ncbi.nlm.nih.gov/24318406/); [Prüss et al. (Ann Neurol 2012)](https://pubmed.ncbi.nlm.nih.gov/23280840/) |
 | Dexamethasone for HSV encephalitis: NOT standard of care | Class IIb, Level C | DexEnceph trial (ongoing); animal data supportive; no clear human mortality benefit |
 | Foscarnet for acyclovir-resistant HSV | Class IIa, Level C | Expert consensus; primarily in immunocompromised |
 | Aggressive hydration to prevent acyclovir nephrotoxicity | Class I, Level B | Well-established; crystal nephropathy prevention |

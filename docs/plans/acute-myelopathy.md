@@ -1,3 +1,10 @@
+---
+title: "Acute Myelopathy Evaluation"
+description: "Clinical decision support for acute myelopathy evaluation diagnosis and management"
+version: "1.0"
+setting: "ED, HOSP, OPD, ICU"
+---
+
 # Acute Myelopathy Evaluation
 
 **VERSION:** 1.0
@@ -8,7 +15,7 @@
 
 **DIAGNOSIS:** Acute Myelopathy Evaluation
 
-**ICD-10:** G95.9 (Disease of spinal cord, unspecified), G95.89 (Other specified diseases of spinal cord), G37.3 (Acute transverse myelitis in demyelinating disease)
+**ICD-10:** G95.9 (Disease of spinal cord, unspecified), G95.89 (Other specified diseases of spinal cord), G37.3 (Acute transverse myelitis in demyelinating disease), G04.91 (Myelitis, unspecified)
 
 **SYNONYMS:** Acute myelopathy, transverse myelitis, TM, spinal cord inflammation, myelitis, NMOSD myelitis, spinal cord lesion, spinal cord syndrome, cord compression, spinal cord injury
 
@@ -28,32 +35,32 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Infection screen (epidural abscess); baseline; leukocytosis | Normal |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Renal/hepatic function for contrast and medication dosing; electrolytes | Normal |
-| ESR | STAT | STAT | ROUTINE | STAT | Markedly elevated in epidural abscess (>20 in ~95%); elevated in inflammatory/autoimmune | Normal; >20 raises concern for abscess/infection |
-| CRP | STAT | STAT | ROUTINE | STAT | Elevated in infection, inflammation; useful for monitoring treatment response | Normal |
-| Blood cultures x2 | STAT | STAT | - | STAT | If epidural abscess or infection suspected; S. aureus most common | No growth |
-| PT/INR, aPTT | STAT | STAT | - | STAT | Coagulopathy causing epidural hematoma; pre-LP; pre-surgical assessment | Normal |
-| Blood glucose | STAT | STAT | ROUTINE | STAT | Diabetic risk factor for epidural abscess; baseline | Normal |
-| Urinalysis | STAT | ROUTINE | ROUTINE | STAT | UTI as source for epidural abscess; baseline bladder function | Normal |
-| Type and screen | STAT | ROUTINE | - | STAT | Potential surgical intervention | On file |
-| Procalcitonin | URGENT | ROUTINE | - | URGENT | Bacterial infection differentiation | <0.5 ng/mL |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Infection screen (epidural abscess); baseline; leukocytosis | Normal |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | STAT | Renal/hepatic function for contrast and medication dosing; electrolytes | Normal |
+| ESR (CPT 85652) | STAT | STAT | ROUTINE | STAT | Markedly elevated in epidural abscess (>20 in ~95%); elevated in inflammatory/autoimmune | Normal; >20 raises concern for abscess/infection |
+| CRP (CPT 86140) | STAT | STAT | ROUTINE | STAT | Elevated in infection, inflammation; useful for monitoring treatment response | Normal |
+| Blood cultures x2 (CPT 87040) | STAT | STAT | - | STAT | If epidural abscess or infection suspected; S. aureus most common | No growth |
+| PT/INR, aPTT (CPT 85610, 85730) | STAT | STAT | - | STAT | Coagulopathy causing epidural hematoma; pre-LP; pre-surgical assessment | Normal |
+| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Diabetic risk factor for epidural abscess; baseline | Normal |
+| Urinalysis (CPT 81003) | STAT | ROUTINE | ROUTINE | STAT | UTI as source for epidural abscess; baseline bladder function | Normal |
+| Type and screen (CPT 86900) | STAT | ROUTINE | - | STAT | Potential surgical intervention | On file |
+| Procalcitonin (CPT 84145) | URGENT | ROUTINE | - | URGENT | Bacterial infection differentiation | <0.5 ng/mL |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| AQP4-IgG (aquaporin-4 antibody, serum) — cell-based assay | - | STAT | ROUTINE | STAT | NMOSD — longitudinally extensive transverse myelitis (≥3 segments); affects treatment (avoid interferon-beta, fingolimod) | Negative (positive = NMOSD) |
-| MOG-IgG antibody (serum) — cell-based assay | - | STAT | ROUTINE | STAT | MOGAD — often presents as myelitis; treatment implications differ from MS and NMOSD | Negative (positive = MOGAD) |
-| B12, methylmalonic acid | - | ROUTINE | ROUTINE | - | Subacute combined degeneration (posterior columns + corticospinal tracts) | Normal |
-| Copper and ceruloplasmin | - | ROUTINE | ROUTINE | - | Copper deficiency myelopathy (mimics B12 deficiency pattern) | Normal |
+| AQP4-IgG (aquaporin-4 antibody, serum) — cell-based assay (CPT 86255) | - | STAT | ROUTINE | STAT | NMOSD — longitudinally extensive transverse myelitis (≥3 segments); affects treatment (avoid interferon-beta, fingolimod) | Negative (positive = NMOSD) |
+| MOG-IgG antibody (serum) — cell-based assay (CPT 86255) | - | STAT | ROUTINE | STAT | MOGAD — often presents as myelitis; treatment implications differ from MS and NMOSD | Negative (positive = MOGAD) |
+| B12, methylmalonic acid (CPT 82607) | - | ROUTINE | ROUTINE | - | Subacute combined degeneration (posterior columns + corticospinal tracts) | Normal |
+| Copper and ceruloplasmin (CPT 82390) | - | ROUTINE | ROUTINE | - | Copper deficiency myelopathy (mimics B12 deficiency pattern) | Normal |
 | Zinc level | - | ROUTINE | ROUTINE | - | Zinc excess causes copper deficiency | Normal |
-| HIV 1/2 antigen/antibody | - | ROUTINE | ROUTINE | - | HIV-associated vacuolar myelopathy; opportunistic infections | Negative |
+| HIV 1/2 antigen/antibody (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated vacuolar myelopathy; opportunistic infections | Negative |
 | HTLV-1/2 antibody | - | ROUTINE | ROUTINE | - | HTLV-associated myelopathy/tropical spastic paraparesis (HAM/TSP) | Negative |
-| RPR/VDRL | - | ROUTINE | ROUTINE | - | Syphilitic myelitis (tabes dorsalis = posterior columns) | Non-reactive |
-| ANA, dsDNA | - | ROUTINE | ROUTINE | - | Lupus myelitis | Negative |
-| Anti-SSA (Ro), anti-SSB (La) | - | ROUTINE | ROUTINE | - | Sjögren syndrome myelitis | Negative |
-| ACE level (serum) | - | ROUTINE | ROUTINE | - | Neurosarcoidosis (spinal cord granulomas) | Normal |
+| RPR/VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Syphilitic myelitis (tabes dorsalis = posterior columns) | Non-reactive |
+| ANA, dsDNA (CPT 86235, 86225) | - | ROUTINE | ROUTINE | - | Lupus myelitis | Negative |
+| Anti-SSA (Ro), anti-SSB (La) (CPT 86235) | - | ROUTINE | ROUTINE | - | Sjögren syndrome myelitis | Negative |
+| ACE level (serum) (CPT 82164) | - | ROUTINE | ROUTINE | - | Neurosarcoidosis (spinal cord granulomas) | Normal |
 | QuantiFERON-TB Gold | - | ROUTINE | ROUTINE | - | Spinal TB (Pott disease, TB myelitis) | Negative |
 | Anti-thyroid antibodies (TPO, thyroglobulin) | - | ROUTINE | ROUTINE | - | Hashimoto encephalopathy/myelopathy | Negative |
 
@@ -64,7 +71,7 @@ SECTION A: ACTION ITEMS
 | Paraneoplastic panel (serum) — ANNA-1, CRMP-5, amphiphysin | - | ROUTINE | ROUTINE | - | Paraneoplastic myelitis (lung, breast, lymphoma); amphiphysin is classic for stiff-person / paraneoplastic myelopathy | Negative |
 | Anti-GFAP antibody (serum and CSF) | - | EXT | EXT | - | GFAP astrocytopathy — autoimmune meningoencephalomyelitis | Negative |
 | Antiphospholipid antibodies (lupus anticoagulant, anticardiolipin, β2-glycoprotein I) | - | ROUTINE | ROUTINE | - | Spinal cord infarction from hypercoagulable state | Negative |
-| Serum protein electrophoresis (SPEP) | - | ROUTINE | ROUTINE | - | Multiple myeloma (spinal cord compression from plasmacytoma); POEMS | Normal |
+| Serum protein electrophoresis (SPEP) (CPT 86334) | - | ROUTINE | ROUTINE | - | Multiple myeloma (spinal cord compression from plasmacytoma); POEMS | Normal |
 | Lyme antibody (ELISA, Western blot) | - | ROUTINE | ROUTINE | - | Lyme myelitis (endemic areas) | Negative |
 | CMV PCR (blood) | - | EXT | - | EXT | CMV myelitis (immunocompromised) | Negative |
 | VZV IgM, VZV PCR (blood) | - | EXT | - | EXT | VZV myelitis (may follow shingles) | Negative |
@@ -78,10 +85,10 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI entire spine (cervical, thoracic, lumbar) with and without gadolinium contrast | STAT | STAT | URGENT | STAT | IMMEDIATELY — within 4 hours of presentation maximum; faster if progressive deficit. Entire spine because multifocal lesions change differential (NMOSD, metastatic) | Compressive: epidural mass (abscess, tumor, hematoma), disc herniation. Non-compressive: cord signal change (T2 hyperintensity), enhancement pattern, longitudinal extent, location within cord cross-section | GFR <30 (give contrast anyway if emergent); gadolinium allergy (premedicate); pacemaker |
-| MRI brain with and without contrast | URGENT | URGENT | ROUTINE | URGENT | Within 24h (same session if possible) | MS (periventricular/juxtacortical lesions), NMOSD (area postrema, hypothalamic), ADEM (multifocal white matter), metastatic disease, leptomeningeal enhancement | Same as spine MRI |
+| MRI entire spine (cervical, thoracic, lumbar) with and without gadolinium contrast (CPT 72156+72157+72158) | STAT | STAT | URGENT | STAT | IMMEDIATELY — within 4 hours of presentation maximum; faster if progressive deficit. Entire spine because multifocal lesions change differential (NMOSD, metastatic) | Compressive: epidural mass (abscess, tumor, hematoma), disc herniation. Non-compressive: cord signal change (T2 hyperintensity), enhancement pattern, longitudinal extent, location within cord cross-section | GFR <30 (give contrast anyway if emergent); gadolinium allergy (premedicate); pacemaker |
+| MRI brain with and without contrast (CPT 70553) | URGENT | URGENT | ROUTINE | URGENT | Within 24h (same session if possible) | MS (periventricular/juxtacortical lesions), NMOSD (area postrema, hypothalamic), ADEM (multifocal white matter), metastatic disease, leptomeningeal enhancement | Same as spine MRI |
 | CT spine (without contrast) | STAT | STAT | - | STAT | ONLY if MRI unavailable or contraindicated; far less sensitive for cord pathology | Fracture, bony compression, large epidural mass, disc herniation | Pregnancy (relative) |
-| Chest X-ray | URGENT | ROUTINE | - | URGENT | Baseline; lung malignancy screening (metastatic cord compression); sarcoidosis (hilar adenopathy) | Normal |
+| Chest X-ray (CPT 71046) | URGENT | ROUTINE | - | URGENT | Baseline; lung malignancy screening (metastatic cord compression); sarcoidosis (hilar adenopathy) | Normal |
 
 **CRITICAL: If MRI shows compressive myelopathy → NEUROSURGERY STAT. Do not delay for additional workup.**
 
@@ -89,23 +96,23 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT chest/abdomen/pelvis with contrast | - | ROUTINE | ROUTINE | - | If metastatic cord compression or sarcoidosis suspected | Primary malignancy; lymphadenopathy | Contrast allergy, renal impairment |
+| CT chest/abdomen/pelvis with contrast (CPT 71260, 74178) | - | ROUTINE | ROUTINE | - | If metastatic cord compression or sarcoidosis suspected | Primary malignancy; lymphadenopathy | Contrast allergy, renal impairment |
 | CT angiography (CTA) of aorta | - | URGENT | - | URGENT | If spinal cord infarction suspected (especially post-aortic surgery) | Aortic dissection, aortic aneurysm, occlusion of artery of Adamkiewicz | Same as CT contrast |
 | MR angiography (MRA) of spinal vessels | - | EXT | EXT | - | Spinal dural arteriovenous fistula (dAVF); spinal AVM | Abnormal vascular flow voids; fistula identification | Same as MRI |
 | Conventional spinal angiography (DSA) | - | EXT | EXT | - | Gold standard for spinal dAVF/AVM; if MRA suggestive | Fistula or AVM identification and localization for treatment | Contrast allergy; coagulopathy |
-| PET-CT (whole body) | - | EXT | ROUTINE | - | Occult malignancy search | Primary tumor | Pregnancy; uncontrolled diabetes |
+| PET-CT (whole body) (CPT 78816) | - | EXT | ROUTINE | - | Occult malignancy search | Primary tumor | Pregnancy; uncontrolled diabetes |
 | Repeat MRI spine | - | ROUTINE | ROUTINE | - | At 2-4 weeks for treatment response; earlier if clinical worsening | Improving signal; resolving enhancement | Same as initial |
-| NCS/EMG | - | ROUTINE | ROUTINE | - | If concomitant peripheral neuropathy suspected (e.g., GBS mimicking myelopathy) | Peripheral nerve involvement vs pure cord | None significant |
+| NCS/EMG (CPT 95907-95913, 95886) | - | ROUTINE | ROUTINE | - | If concomitant peripheral neuropathy suspected (e.g., GBS mimicking myelopathy) | Peripheral nerve involvement vs pure cord | None significant |
 
 ### 2C. Rare/Specialized
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Somatosensory evoked potentials (SSEPs) | - | ROUTINE | ROUTINE | - | Assess dorsal column function; prognosis | Delayed or absent cortical potentials | None |
+| Somatosensory evoked potentials (SSEPs) (CPT 95925) | - | ROUTINE | ROUTINE | - | Assess dorsal column function; prognosis | Delayed or absent cortical potentials | None |
 | Motor evoked potentials (MEPs) | - | EXT | EXT | - | Corticospinal tract assessment | Delayed or absent | Epilepsy (relative); implanted devices |
 | Spinal cord biopsy | - | - | EXT | - | Extremely rare; only for diagnostic uncertainty when all other testing inconclusive and progressive decline | Tumor, vasculitis, infection, sarcoidosis | High morbidity; neurosurgical decision |
 
-### LUMBAR PUNCTURE
+### LUMBAR PUNCTURE (CPT 62270)
 
 **Indication:** ALL non-compressive myelopathies require LP. Perform AFTER MRI (need to exclude compressive cause and epidural abscess — LP through an abscess risks seeding meningitis).
 
@@ -116,15 +123,15 @@ SECTION A: ACTION ITEMS
 | Study | ED | HOSP | OPD | Rationale | Target Finding |
 |-------|:--:|:----:|:---:|-----------|----------------|
 | Opening pressure | URGENT | ROUTINE | ROUTINE | Elevated in some inflammatory conditions | Normal (10-20 cm H2O) |
-| Cell count with differential (tubes 1 and 4) | URGENT | ROUTINE | ROUTINE | Pleocytosis: infection, inflammation. MS: mild. NMOSD: moderate with neutrophils. Infection: marked | Variable by etiology |
-| Protein | URGENT | ROUTINE | ROUTINE | Elevated in GBS, infection, NMOSD, cord compression | Variable |
-| Glucose with paired serum | URGENT | ROUTINE | ROUTINE | Low in TB, bacterial, fungal, leptomeningeal malignancy | Normal in most inflammatory causes |
-| Oligoclonal bands (paired with serum) | - | ROUTINE | ROUTINE | Positive in MS (>90%); may be positive in NMOSD, sarcoidosis | Positive bands in CSF only = intrathecal synthesis (MS) |
-| IgG index | - | ROUTINE | ROUTINE | Elevated in MS and other inflammatory conditions | Normal <0.7 |
+| Cell count with differential (tubes 1 and 4) (CPT 89051) | URGENT | ROUTINE | ROUTINE | Pleocytosis: infection, inflammation. MS: mild. NMOSD: moderate with neutrophils. Infection: marked | Variable by etiology |
+| Protein (CPT 84157) | URGENT | ROUTINE | ROUTINE | Elevated in GBS, infection, NMOSD, cord compression | Variable |
+| Glucose with paired serum (CPT 82945) | URGENT | ROUTINE | ROUTINE | Low in TB, bacterial, fungal, leptomeningeal malignancy | Normal in most inflammatory causes |
+| Oligoclonal bands (paired with serum) (CPT 83916) | - | ROUTINE | ROUTINE | Positive in MS (>90%); may be positive in NMOSD, sarcoidosis | Positive bands in CSF only = intrathecal synthesis (MS) |
+| IgG index (CPT 86327) | - | ROUTINE | ROUTINE | Elevated in MS and other inflammatory conditions | Normal <0.7 |
 | AQP4-IgG (CSF) | - | ROUTINE | ROUTINE | NMOSD confirmation (serum is more sensitive; CSF adds specificity) | Negative |
 | MOG-IgG (CSF) | - | ROUTINE | ROUTINE | MOGAD confirmation | Negative |
 | Autoimmune encephalitis panel (CSF) | - | ROUTINE | ROUTINE | GFAP, NMDAR (rare spinal involvement) | Negative |
-| Cytology | - | ROUTINE | ROUTINE | Leptomeningeal carcinomatosis, lymphoma | Negative |
+| Cytology (CPT 88104) | - | ROUTINE | ROUTINE | Leptomeningeal carcinomatosis, lymphoma | Negative |
 | Flow cytometry | - | ROUTINE | ROUTINE | CNS lymphoma | Normal |
 | VDRL (CSF) | - | ROUTINE | ROUTINE | Neurosyphilis | Non-reactive |
 | ACE level (CSF) | - | ROUTINE | ROUTINE | Neurosarcoidosis | Normal |
@@ -143,43 +150,43 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| IV methylprednisolone (empiric — inflammatory myelitis) | - | STAT | - | STAT | 1000 mg IV daily x 3-5 days (infuse over 1-2h). Start empirically if inflammatory myelitis suspected (non-compressive cord lesion on MRI). Do NOT wait for antibody results | Active untreated infection (relative — treat infection concurrently if needed); uncontrolled diabetes | Glucose q6h; BP; GI prophylaxis (PPI); insomnia; psychosis (rare); weight; taper plan |
-| Emergent surgical decompression | STAT | STAT | - | STAT | For compressive myelopathy: epidural abscess, tumor with cord compression, acute disc herniation with myelopathy, epidural hematoma. Earlier decompression = better neurologic outcome. Within 24h is critical; within 12h is ideal | Medically unstable for surgery (optimize first) | Post-op neurologic exam; wound care; DVT prophylaxis |
-| Empiric IV antibiotics (if epidural abscess suspected) | STAT | STAT | - | STAT | Vancomycin 15-20 mg/kg IV q8-12h + ceftriaxone 2g IV q12h (or cefepime 2g IV q8h). Start BEFORE surgery. S. aureus is most common organism | See individual agents | Cultures; vancomycin trough; renal function |
-| DVT prophylaxis: Enoxaparin | - | ROUTINE | - | ROUTINE | 40 mg SC daily (start post-operatively or when not bleeding; within 24-48h) | Active bleeding; post-surgical (timing per surgeon); coagulopathy | Platelets q3 days |
-| Pneumatic compression devices | STAT | STAT | - | STAT | Apply bilaterally immediately — spinal cord injury patients are HIGH risk for DVT/PE | Acute DVT | Skin checks |
-| Bladder management | STAT | STAT | - | STAT | Foley catheter if urinary retention (very common in myelopathy); measure post-void residual if not catheterized; intermittent catheterization if PVR >200 mL | N/A | I/O; bladder scan; transition to intermittent cath when possible |
-| Bowel management | - | ROUTINE | - | ROUTINE | Bowel program: docusate + senna; digital stimulation if neurogenic bowel; avoid impaction | Bowel obstruction | Bowel function daily |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| IV methylprednisolone (empiric — inflammatory myelitis) (CPT 96365) | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily x 3-5 days (infuse over 1-2h). Start empirically if inflammatory myelitis suspected (non-compressive cord lesion on MRI). Do NOT wait for antibody results | Active untreated infection (relative — treat infection concurrently if needed); uncontrolled diabetes | Glucose q6h; BP; GI prophylaxis (PPI); insomnia; psychosis (rare); weight; taper plan | - | STAT | - | STAT |
+| Emergent surgical decompression | - | - | For compressive myelopathy: epidural abscess, tumor with cord compression, acute disc herniation with myelopathy, epidural hematoma. Earlier decompression = better neurologic outcome. Within 24h is critical; within 12h is ideal | Medically unstable for surgery (optimize first) | Post-op neurologic exam; wound care; DVT prophylaxis | STAT | STAT | - | STAT |
+| Empiric IV antibiotics (if epidural abscess suspected) | IV | - | 15-20 mg/kg :: IV :: q12h :: Vancomycin 15-20 mg/kg IV q8-12h + ceftriaxone 2g IV q12h (or cefepime 2g IV q8h). Start BEFORE surgery. S. aureus is most common organism | See individual agents | Cultures; vancomycin trough; renal function | STAT | STAT | - | STAT |
+| DVT prophylaxis: Enoxaparin | SC | - | 40 mg :: SC :: daily :: 40 mg SC daily (start post-operatively or when not bleeding; within 24-48h) | Active bleeding; post-surgical (timing per surgeon); coagulopathy | Platelets q3 days | - | ROUTINE | - | ROUTINE |
+| Pneumatic compression devices | - | - | Apply bilaterally immediately — spinal cord injury patients are HIGH risk for DVT/PE | Acute DVT | Skin checks | STAT | STAT | - | STAT |
+| Bladder management | - | - | 200 mL :: - :: - :: Foley catheter if urinary retention (very common in myelopathy); measure post-void residual if not catheterized; intermittent catheterization if PVR >200 mL | N/A | I/O; bladder scan; transition to intermittent cath when possible | STAT | STAT | - | STAT |
+| Bowel management | - | - | Bowel program: docusate + senna; digital stimulation if neurogenic bowel; avoid impaction | Bowel obstruction | Bowel function daily | - | ROUTINE | - | ROUTINE |
 
 ### 3B. Second-line / Specific Treatments
 
-| Treatment | Indication | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|------------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Plasma exchange (PLEX) | Steroid-refractory inflammatory myelitis; NMOSD exacerbation; severe transverse myelitis | - | URGENT | - | URGENT | 5-7 exchanges over 10-14 days (every other day); 1-1.5 plasma volumes per exchange | Hemodynamic instability; sepsis | BP; electrolytes; Ca2+; fibrinogen |
-| IVIG | Alternative to PLEX if PLEX unavailable; MOGAD (may be preferred); steroid-refractory | - | URGENT | - | URGENT | 0.4 g/kg/day x 5 days (total 2 g/kg) | IgA deficiency; renal failure | Renal function; headache; thrombosis |
-| Oral prednisone taper (after IV pulse) | Inflammatory myelitis; NMOSD | - | ROUTINE | ROUTINE | - | 1 mg/kg/day (max 60-80 mg) tapered over 4-8 weeks for first episode; longer taper for NMOSD/MOGAD | See steroid contraindications | Glucose; BP; bone health |
-| Gabapentin | Neuropathic pain, spasticity | - | ROUTINE | ROUTINE | ROUTINE | 300 mg PO qHS → titrate to 900-1800 mg TID | Severe renal impairment | Sedation; dizziness |
-| Baclofen | Spasticity | - | ROUTINE | ROUTINE | - | 5 mg PO TID; increase by 5 mg/dose q3 days; max 80 mg/day | Seizure history (lowers threshold); abrupt withdrawal causes seizures | Sedation; falls; do NOT stop abruptly |
-| Tizanidine | Spasticity (alternative) | - | ROUTINE | ROUTINE | - | 2 mg PO TID; max 36 mg/day | Hepatic impairment; concurrent CYP1A2 inhibitors (ciprofloxacin) | LFTs; sedation; hypotension |
-| Oxybutynin | Neurogenic bladder (overactive) | - | ROUTINE | ROUTINE | - | 5 mg PO BID-TID | Urinary retention; angle-closure glaucoma | Anticholinergic side effects; PVR |
-| Acetaminophen | Pain | STAT | ROUTINE | ROUTINE | STAT | 650-1000 mg PO q6h; max 4g/day | Hepatic disease | LFTs |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Plasma exchange (PLEX) (CPT 36514) | - | Steroid-refractory inflammatory myelitis; NMOSD exacerbation; severe transverse myelitis | 5-7 exchanges over 10-14 days (every other day); 1-1.5 plasma volumes per exchange | Hemodynamic instability; sepsis | BP; electrolytes; Ca2+; fibrinogen | - | URGENT | - | URGENT |
+| IVIG (CPT 96365) | - | Alternative to PLEX if PLEX unavailable; MOGAD (may be preferred); steroid-refractory | 0.4 g/kg :: - :: daily x 5 days :: 0.4 g/kg/day x 5 days (total 2 g/kg) | IgA deficiency; renal failure | Renal function; headache; thrombosis | - | URGENT | - | URGENT |
+| Oral prednisone taper (after IV pulse) | IV | Inflammatory myelitis; NMOSD | 1 mg/kg :: PO :: - :: 1 mg/kg/day (max 60-80 mg) tapered over 4-8 weeks for first episode; longer taper for NMOSD/MOGAD | See steroid contraindications | Glucose; BP; bone health | - | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | Neuropathic pain, spasticity | 300 mg :: PO :: qHS :: 300 mg PO qHS → titrate to 900-1800 mg TID | Severe renal impairment | Sedation; dizziness | - | ROUTINE | ROUTINE | ROUTINE |
+| Baclofen | PO | Spasticity | 5 mg :: PO :: TID :: 5 mg PO TID; increase by 5 mg/dose q3 days; max 80 mg/day | Seizure history (lowers threshold); abrupt withdrawal causes seizures | Sedation; falls; do NOT stop abruptly | - | ROUTINE | ROUTINE | - |
+| Tizanidine | PO | Spasticity (alternative) | 2 mg :: PO :: TID :: 2 mg PO TID; max 36 mg/day | Hepatic impairment; concurrent CYP1A2 inhibitors (ciprofloxacin) | LFTs; sedation; hypotension | - | ROUTINE | ROUTINE | - |
+| Oxybutynin | PO | Neurogenic bladder (overactive) | 5 mg :: PO :: BID :: 5 mg PO BID-TID | Urinary retention; angle-closure glaucoma | Anticholinergic side effects; PVR | - | ROUTINE | ROUTINE | - |
+| Acetaminophen | PO | Pain | 650-1000 mg :: PO :: q6h :: 650-1000 mg PO q6h; max 4g/day | Hepatic disease | LFTs | STAT | ROUTINE | ROUTINE | STAT |
 
 ### 3C. Disease-Modifying Therapy (Once Diagnosis Established)
 
-| Treatment | Diagnosis | Dosing | Monitoring |
-|-----------|-----------|--------|------------|
-| MS disease-modifying therapy | MS (see MS template) | Per MS-specific template; high-efficacy preferred if myelitis presentation | Per agent |
-| Rituximab | NMOSD (AQP4+); MOGAD (relapsing) | 375 mg/m2 weekly x 4 weeks OR 1000 mg x 2 (14 days apart); maintenance q6 months | CD19/20; immunoglobulins; infection |
-| Eculizumab | NMOSD (AQP4+) | 900 mg IV weekly x 4 → 1200 mg q2 weeks | Meningococcal vaccination (≥2 weeks before); complement levels; infection |
-| Inebilizumab | NMOSD (AQP4+) | 300 mg IV x 2 (14 days apart); then 300 mg q6 months | CD19; infection |
-| Satralizumab | NMOSD (AQP4+) | 120 mg SC at weeks 0, 2, 4, then q4 weeks | LFTs; infection |
-| Azathioprine | NMOSD (cost-effective alternative); neurosarcoidosis | 2-3 mg/kg/day PO | TPMT genotype; CBC weekly x 4, then biweekly, then monthly; LFTs |
-| Mycophenolate mofetil | NMOSD alternative; neurosarcoidosis | 1000-1500 mg PO BID | CBC; LFTs; pregnancy test (teratogenic) |
-| Anti-TB therapy | Spinal tuberculosis | RIPE x 12-18 months | LFTs; visual acuity |
-| IV penicillin G | Neurosyphilis | 18-24 MU/day IV x 14 days | RPR q3-6 months |
-| Radiation + surgery + steroids | Metastatic cord compression | Per oncology; dexamethasone 10 mg IV load → 4 mg IV q6h while radiation planned | Glucose; GI prophylaxis |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| MS disease-modifying therapy | - | - | Per MS-specific template; high-efficacy preferred if myelitis presentation | - | - | Per agent | - | - | - | - |
+| Rituximab | PO | - | 375 mg/m2 :: PO :: - :: 375 mg/m2 weekly x 4 weeks OR 1000 mg x 2 (14 days apart); maintenance q6 months | - | - | CD19/20; immunoglobulins; infection | - | - | - | - |
+| Eculizumab | IV | - | 900 mg :: IV :: - :: 900 mg IV weekly x 4 → 1200 mg q2 weeks | - | - | Meningococcal vaccination (≥2 weeks before); complement levels; infection | - | - | - | - |
+| Inebilizumab | IV | - | 300 mg :: IV :: - :: 300 mg IV x 2 (14 days apart); then 300 mg q6 months | - | - | CD19; infection | - | - | - | - |
+| Satralizumab | SC | - | 120 mg :: SC :: - :: 120 mg SC at weeks 0, 2, 4, then q4 weeks | - | - | LFTs; infection | - | - | - | - |
+| Azathioprine | PO | - | 2-3 mg/kg :: PO :: - :: 2-3 mg/kg/day PO | - | - | TPMT genotype; CBC weekly x 4, then biweekly, then monthly; LFTs | - | - | - | - |
+| Mycophenolate mofetil | PO | - | 1000-1500 mg :: PO :: BID :: 1000-1500 mg PO BID | - | - | CBC; LFTs; pregnancy test (teratogenic) | - | - | - | - |
+| Anti-TB therapy | - | - | RIPE x 12-18 months | - | - | LFTs; visual acuity | - | - | - | - |
+| IV penicillin G | IV | - | 18-24 MU/day IV x 14 days | - | - | RPR q3-6 months | - | - | - | - |
+| Radiation + surgery + steroids | IV | - | 10 mg :: IV :: q6h :: Per oncology; dexamethasone 10 mg IV load → 4 mg IV q6h while radiation planned | - | - | Glucose; GI prophylaxis | - | - | - | - |
 
 ---
 
@@ -290,16 +297,16 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| STAT MRI entire spine for acute myelopathy | Class I, Level B | AAN Practice Guideline; Transverse Myelitis Consortium Working Group (2002) |
+| STAT MRI entire spine for acute myelopathy | Class I, Level B | AAN Practice Guideline; [Transverse Myelitis Consortium Working Group (2002)](https://pubmed.ncbi.nlm.nih.gov/12236201/) |
 | IV methylprednisolone 1g/day x 3-5 days for inflammatory myelitis | Class I, Level B | Consensus; extrapolated from MS relapse data (ONTT) and TM studies |
-| PLEX for steroid-refractory inflammatory myelitis | Class IIa, Level B | Weinshenker et al. (Ann Neurol 1999); superior to sham in severe demyelinating attacks |
-| AQP4-IgG (cell-based assay) for NMOSD diagnosis | Class I, Level A | Wingerchuk et al. IPND 2015 criteria |
-| MOG-IgG for MOGAD diagnosis | Class I, Level B | Banwell et al. (Lancet Neurol 2023) |
-| Surgical decompression within 24h for compressive myelopathy | Class I, Level B | Fehlings et al. (2012); earlier surgery = better outcomes |
-| Epidural abscess: antibiotics + surgical drainage | Class I, Level B | Darouiche et al. (NEJM 2006) |
+| PLEX for steroid-refractory inflammatory myelitis | Class IIa, Level B | [Weinshenker et al. (Ann Neurol 1999)](https://pubmed.ncbi.nlm.nih.gov/10589540/); superior to sham in severe demyelinating attacks |
+| AQP4-IgG (cell-based assay) for NMOSD diagnosis | Class I, Level A | [Wingerchuk et al. IPND 2015 criteria](https://pubmed.ncbi.nlm.nih.gov/26092914/) |
+| MOG-IgG for MOGAD diagnosis | Class I, Level B | [Banwell et al. (Lancet Neurol 2023)](https://pubmed.ncbi.nlm.nih.gov/36706773/) |
+| Surgical decompression within 24h for compressive myelopathy | Class I, Level B | [Fehlings et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22384132/); earlier surgery = better outcomes |
+| Epidural abscess: antibiotics + surgical drainage | Class I, Level B | [Darouiche et al. (NEJM 2006)](https://pubmed.ncbi.nlm.nih.gov/17093252/) |
 | B12 replacement for subacute combined degeneration | Class I, Level A | Well-established; early treatment may be reversible |
 | Rituximab for NMOSD prevention | Class I, Level A | Multiple trials; standard of care |
-| Eculizumab for NMOSD prevention | Class I, Level A | PREVENT trial (Pittock et al. NEJM 2019) |
+| Eculizumab for NMOSD prevention | Class I, Level A | [PREVENT trial (Pittock et al. NEJM 2019)](https://pubmed.ncbi.nlm.nih.gov/31050279/) |
 | AQP4-IgG-positive NMOSD: avoid interferon-beta and fingolimod | Class III (Harm) | Case reports of worsening |
 | LP after MRI (not before) in acute myelopathy | Class I, Level C | Risk of seeding infection through abscess; need anatomic diagnosis first |
 | Bladder management with intermittent catheterization | Class I, Level B | Spinal cord injury guidelines; prevents UTI better than indwelling catheter |

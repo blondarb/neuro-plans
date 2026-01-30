@@ -1,0 +1,1305 @@
+{
+  "id": "tia",
+  "title": "Transient Ischemic Attack (TIA)",
+  "version": "1.0",
+  "icd10": [
+    "** G45.9 (Transient cerebral ischemic attack",
+    "unspecified)"
+  ],
+  "scope": "** Urgent evaluation, risk stratification (ABCD2), and secondary stroke prevention. Excludes completed stroke (see Acute Ischemic Stroke protocol).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential",
+          "rationale": "Polycythemia, thrombocytosis as stroke risk; anemia evaluation",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "BMP",
+          "rationale": "Electrolytes; glucose for hypoglycemia mimic; creatinine for contrast",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glucose (fingerstick)",
+          "rationale": "Rule out hypoglycemia as TIA mimic",
+          "target": "70-180 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "PT/INR, PTT",
+          "rationale": "Baseline coagulation; evaluate if on anticoagulation",
+          "target": "Normal or therapeutic",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lipid panel (fasting)",
+          "rationale": "LDL target <70 for secondary prevention",
+          "target": "LDL <70 mg/dL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c",
+          "rationale": "Diabetes assessment; target <7%",
+          "target": "<7%",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH",
+          "rationale": "Hyperthyroidism associated with atrial fibrillation",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Troponin",
+          "rationale": "Concurrent cardiac ischemia; AF with rapid rate",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Homocysteine",
+          "rationale": "Elevated levels increase stroke risk",
+          "target": "<15 μmol/L",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lipoprotein(a)",
+          "rationale": "Independent cardiovascular risk marker",
+          "target": "<30 mg/dL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "hsCRP",
+          "rationale": "Inflammatory marker; guides statin intensity",
+          "target": "<2 mg/L",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "BNP/NT-proBNP",
+          "rationale": "Heart failure; cardiac strain; AF risk",
+          "target": "Age-adjusted normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Uric acid",
+          "rationale": "Elevated associated with increased stroke risk",
+          "target": "<6 mg/dL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Hypercoagulability panel",
+          "rationale": "Age <50, cryptogenic, recurrent events; includes Factor V Leiden, prothrombin mutation, protein C/S, antithrombin III",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Antiphospholipid antibodies",
+          "rationale": "Lupus anticoagulant, anticardiolipin, anti-β2GP1; young stroke",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Hemoglobin electrophoresis",
+          "rationale": "Sickle cell disease if not known",
+          "target": "No sickling",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "ESR, ANA",
+          "rationale": "Suspected vasculitis",
+          "target": "Normal/Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Fabry disease testing (α-galactosidase A)",
+          "rationale": "Young cryptogenic stroke, family history, angiokeratomas",
+          "target": "Normal enzyme activity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT Head non-contrast",
+          "timing": "Immediate",
+          "target": "No hemorrhage; rule out stroke mimic",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI Brain with DWI",
+          "timing": "Within 24 hours",
+          "target": "No restricted diffusion (DWI+/ADC-) confirming infarct vs true TIA",
+          "contraindications": "MRI-incompatible devices",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "CTA Head and Neck",
+          "timing": "Same visit",
+          "target": "No significant stenosis (>50%) in carotid, vertebral, or intracranial vessels",
+          "contraindications": "Contrast allergy, CKD (relative)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "MRA Head and Neck",
+          "timing": "Alternative to CTA",
+          "target": "Patent vessels; no stenosis >50%",
+          "contraindications": "MRI contraindications",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carotid duplex ultrasound",
+          "timing": "Within 24-48 hours",
+          "target": "<50% stenosis bilaterally",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ECG (12-lead)",
+          "timing": "Immediate",
+          "target": "Sinus rhythm; no AF, LVH, or acute changes",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Transthoracic echocardiogram",
+          "timing": "Within 24-48 hours",
+          "target": "No thrombus, PFO, or significant valvular disease",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Cardiac telemetry (continuous)",
+          "timing": "24-72 hours minimum",
+          "target": "No atrial fibrillation or flutter",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Holter monitor (24-48 hour)",
+          "timing": "Outpatient",
+          "target": "No paroxysmal AF",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Extended cardiac monitoring (14-30 day)",
+          "timing": "Cryptogenic stroke/TIA",
+          "target": "Detect paroxysmal AF",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Transesophageal echocardiogram",
+          "timing": "Cryptogenic, young, embolic",
+          "target": "No PFO, LAA thrombus, aortic arch atheroma",
+          "contraindications": "Esophageal pathology",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Bubble study (TTE or TEE)",
+          "timing": "Suspected paradoxical embolism",
+          "target": "No right-to-left shunt",
+          "contraindications": "None specific",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CT/MR perfusion",
+          "timing": "Uncertain timing, large vessel occlusion symptoms",
+          "target": "No mismatch suggesting salvageable tissue",
+          "contraindications": "Contrast issues",
+          "ED": "EXT",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Vessel wall MRI",
+          "timing": "Suspected intracranial vasculitis or dissection",
+          "target": "No vessel wall enhancement",
+          "contraindications": "MRI contraindications",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "DSA (cerebral angiogram)",
+          "timing": "Vasculitis workup, moyamoya, uncertain vessel status",
+          "target": "Define vascular anatomy",
+          "contraindications": "Contrast allergy, bleeding risk",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Implantable loop recorder",
+          "timing": "Recurrent cryptogenic events after negative workup",
+          "target": "Detect occult AF",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Aspirin",
+          "route": "PO",
+          "indication": "Immediate antiplatelet therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "325 mg PO x1 load",
+                "orderSentence": "Aspirin 325 mg PO x1 load PO"
+              },
+              {
+                "text": "81 mg PO daily",
+                "orderSentence": "Aspirin 81 mg PO daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "325 mg loading dose, then 81 mg daily ongoing",
+            "orderSentence": "Aspirin 325 mg PO x1 load PO"
+          },
+          "contraindications": "Active GI bleed; aspirin allergy; planned thrombolysis",
+          "monitoring": "GI symptoms, bleeding",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clopidogrel (DAPT with aspirin)",
+          "route": "PO",
+          "indication": "ABCD2 ≥4 or minor stroke; first 21 days",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg PO x1 load",
+                "orderSentence": "Clopidogrel (DAPT with aspirin) 300 mg PO x1 load PO"
+              },
+              {
+                "text": "75 mg PO daily",
+                "orderSentence": "Clopidogrel (DAPT with aspirin) 75 mg PO daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "300 mg load then 75 mg daily with aspirin x21 days (POINT/CHANCE protocol)",
+            "orderSentence": "Clopidogrel (DAPT with aspirin) 300 mg PO x1 load PO"
+          },
+          "contraindications": "Active bleeding; planned surgery within 7 days",
+          "monitoring": "Bleeding, bruising",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ticagrelor (alternative DAPT)",
+          "route": "PO",
+          "indication": "Aspirin + ticagrelor if clopidogrel contraindicated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "180 mg PO x1 load",
+                "orderSentence": "Ticagrelor (alternative DAPT) 180 mg PO x1 load PO"
+              },
+              {
+                "text": "90 mg PO BID",
+                "orderSentence": "Ticagrelor (alternative DAPT) 90 mg PO BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "180 mg load then 90 mg BID with aspirin x30 days (THALES protocol)",
+            "orderSentence": "Ticagrelor (alternative DAPT) 180 mg PO x1 load PO"
+          },
+          "contraindications": "Active bleeding; prior ICH; severe hepatic impairment",
+          "monitoring": "Bleeding, dyspnea",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Atorvastatin",
+          "route": "PO",
+          "indication": "High-intensity statin for LDL <70",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "80 mg PO daily",
+                "orderSentence": "Atorvastatin 80 mg PO daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "80 mg daily (high-intensity); target LDL <70 mg/dL",
+            "orderSentence": "Atorvastatin 80 mg PO daily PO"
+          },
+          "contraindications": "Active liver disease; pregnancy",
+          "monitoring": "LFTs at baseline; myalgias",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Blood pressure management",
+          "route": "-",
+          "indication": "Permissive hypertension acutely; goal <140/90 long-term",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Target <180/110 first 24h",
+                "orderSentence": "Blood pressure management Target <180/110 first 24h -"
+              },
+              {
+                "text": "<140/90 after",
+                "orderSentence": "Blood pressure management <140/90 after -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Do NOT lower BP aggressively in first 24h unless >220/120 or end-organ damage",
+            "orderSentence": "Blood pressure management Target <180/110 first 24h -"
+          },
+          "contraindications": "Symptomatic hypotension",
+          "monitoring": "BP q1h x24h, then q4h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "IV fluids (isotonic saline)",
+          "route": "IV",
+          "indication": "Maintain euvolemia; avoid hypotension",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75-125 mL/hr NS",
+                "orderSentence": "IV fluids (isotonic saline) 75-125 mL/hr NS IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "75-125 mL/hr; adjust to maintain euvolemia; avoid D5W",
+            "orderSentence": "IV fluids (isotonic saline) 75-125 mL/hr NS IV"
+          },
+          "contraindications": "Fluid overload, CHF",
+          "monitoring": "Fluid balance, I/Os",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Pantoprazole",
+          "route": "IV/PO",
+          "indication": "GI protection with DAPT",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg IV daily",
+                "orderSentence": "Pantoprazole 40 mg IV daily IV/PO"
+              },
+              {
+                "text": "40 mg PO daily",
+                "orderSentence": "Pantoprazole 40 mg PO daily IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "40 mg daily",
+            "orderSentence": "Pantoprazole 40 mg IV daily IV/PO"
+          },
+          "contraindications": "None",
+          "monitoring": "None",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Cilostazol (triple antiplatelet)",
+          "route": "PO",
+          "indication": "Asian populations; high-risk stenosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg PO BID",
+                "orderSentence": "Cilostazol (triple antiplatelet) 100 mg PO BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg BID; add to aspirin in select cases",
+            "orderSentence": "Cilostazol (triple antiplatelet) 100 mg PO BID PO"
+          },
+          "contraindications": "Heart failure; bleeding",
+          "monitoring": "Bleeding, headache, palpitations",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Prasugrel",
+          "route": "PO",
+          "indication": "Clopidogrel resistance or failure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg PO x1 load",
+                "orderSentence": "Prasugrel 60 mg PO x1 load PO"
+              },
+              {
+                "text": "10 mg PO daily",
+                "orderSentence": "Prasugrel 10 mg PO daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "60 mg load then 10 mg daily; avoid if >75y or <60 kg",
+            "orderSentence": "Prasugrel 60 mg PO x1 load PO"
+          },
+          "contraindications": "Prior TIA/stroke (black box); bleeding risk",
+          "monitoring": "Bleeding",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying or Chronic Therapies (Secondary Prevention)": [
+        {
+          "item": "Aspirin (long-term)",
+          "route": "PO",
+          "indication": "Lifelong secondary prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "81 mg PO daily",
+                "orderSentence": "Aspirin (long-term) 81 mg PO daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "81 mg daily indefinitely",
+            "orderSentence": "Aspirin (long-term) 81 mg PO daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Active GI bleed",
+          "monitoring": "GI symptoms; annual CBC",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clopidogrel (monotherapy)",
+          "route": "PO",
+          "indication": "Alternative to aspirin if aspirin-intolerant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg PO daily",
+                "orderSentence": "Clopidogrel (monotherapy) 75 mg PO daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "75 mg daily",
+            "orderSentence": "Clopidogrel (monotherapy) 75 mg PO daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Active bleeding",
+          "monitoring": "Bleeding",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Aspirin + extended-release dipyridamole (Aggrenox)",
+          "route": "PO",
+          "indication": "Alternative antiplatelet regimen",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25/200 mg PO BID",
+                "orderSentence": "Aspirin + extended-release dipyridamole (Aggrenox) 25/200 mg PO BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "One capsule (25 mg ASA/200 mg ER dipyridamole) BID",
+            "orderSentence": "Aspirin + extended-release dipyridamole (Aggrenox) 25/200 mg PO BID PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Coronary stenosis (coronary steal); severe headache",
+          "monitoring": "Headache (often limits use); GI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Apixaban",
+          "route": "PO",
+          "indication": "Atrial fibrillation-related TIA",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg PO BID",
+                "orderSentence": "Apixaban 5 mg PO BID PO"
+              },
+              {
+                "text": "2.5 mg PO BID",
+                "orderSentence": "Apixaban 2.5 mg PO BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mg BID (2.5 mg BID if ≥2 of: age ≥80, weight ≤60 kg, Cr ≥1.5)",
+            "orderSentence": "Apixaban 5 mg PO BID PO"
+          },
+          "pretreatment": "Active major bleeding; mechanical valve",
+          "contraindications": "CrCl, bleeding signs",
+          "monitoring": "-",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Rivaroxaban",
+          "route": "PO",
+          "indication": "AF-related TIA",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg PO daily",
+                "orderSentence": "Rivaroxaban 20 mg PO daily PO"
+              },
+              {
+                "text": "15 mg PO daily",
+                "orderSentence": "Rivaroxaban 15 mg PO daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "20 mg daily with food (15 mg if CrCl 15-50)",
+            "orderSentence": "Rivaroxaban 20 mg PO daily PO"
+          },
+          "pretreatment": "Active major bleeding; mechanical valve",
+          "contraindications": "CrCl, bleeding",
+          "monitoring": "-",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Dabigatran",
+          "route": "PO",
+          "indication": "AF-related TIA",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg PO BID",
+                "orderSentence": "Dabigatran 150 mg PO BID PO"
+              },
+              {
+                "text": "110 mg PO BID",
+                "orderSentence": "Dabigatran 110 mg PO BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "150 mg BID (110 mg BID if CrCl 30-50 or age >80)",
+            "orderSentence": "Dabigatran 150 mg PO BID PO"
+          },
+          "pretreatment": "Active bleeding; CrCl <30; mechanical valve",
+          "contraindications": "CrCl, bleeding",
+          "monitoring": "-",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Warfarin",
+          "route": "PO",
+          "indication": "Mechanical valve; some hypercoagulable states",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-10 mg PO daily adjusted",
+                "orderSentence": "Warfarin 2-10 mg PO daily adjusted PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; adjust to INR 2-3 (2.5-3.5 for mechanical valve)",
+            "orderSentence": "Warfarin 2-10 mg PO daily adjusted PO"
+          },
+          "pretreatment": "Baseline INR",
+          "contraindications": "Pregnancy; active bleeding; frequent falls",
+          "monitoring": "INR weekly then monthly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lisinopril",
+          "route": "PO",
+          "indication": "Blood pressure control for secondary prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg PO daily",
+                "orderSentence": "Lisinopril 5 mg PO daily PO"
+              },
+              {
+                "text": "10 mg PO daily",
+                "orderSentence": "Lisinopril 10 mg PO daily PO"
+              },
+              {
+                "text": "20 mg PO daily",
+                "orderSentence": "Lisinopril 20 mg PO daily PO"
+              },
+              {
+                "text": "40 mg PO daily",
+                "orderSentence": "Lisinopril 40 mg PO daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5-10 mg daily; titrate to goal BP <130/80; max 40 mg",
+            "orderSentence": "Lisinopril 5 mg PO daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Angioedema; pregnancy; bilateral RAS; hyperkalemia",
+          "monitoring": "K+, Cr, BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amlodipine",
+          "route": "PO",
+          "indication": "BP control; add-on therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg PO daily",
+                "orderSentence": "Amlodipine 5 mg PO daily PO"
+              },
+              {
+                "text": "10 mg PO daily",
+                "orderSentence": "Amlodipine 10 mg PO daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; may increase to 10 mg daily",
+            "orderSentence": "Amlodipine 5 mg PO daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Severe aortic stenosis (relative)",
+          "monitoring": "Peripheral edema, BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Chlorthalidone",
+          "route": "PO",
+          "indication": "BP control; thiazide-like diuretic",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg PO daily",
+                "orderSentence": "Chlorthalidone 12.5 mg PO daily PO"
+              },
+              {
+                "text": "25 mg PO daily",
+                "orderSentence": "Chlorthalidone 25 mg PO daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 12.5 mg daily; may increase to 25 mg daily",
+            "orderSentence": "Chlorthalidone 12.5 mg PO daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Severe hypokalemia; severe hyponatremia",
+          "monitoring": "K+, Na+, uric acid, glucose",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ezetimibe",
+          "route": "PO",
+          "indication": "Add-on for LDL not at goal on statin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg PO daily",
+                "orderSentence": "Ezetimibe 10 mg PO daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10 mg daily",
+            "orderSentence": "Ezetimibe 10 mg PO daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Severe hepatic impairment",
+          "monitoring": "LFTs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PCSK9 inhibitor (evolocumab, alirocumab)",
+          "route": "SC",
+          "indication": "LDL >70 despite maximal statin + ezetimibe",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "140 mg SC q2wk",
+                "orderSentence": "PCSK9 inhibitor (evolocumab, alirocumab) 140 mg SC q2wk SC"
+              },
+              {
+                "text": "420 mg SC monthly",
+                "orderSentence": "PCSK9 inhibitor (evolocumab, alirocumab) 420 mg SC monthly SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Evolocumab 140 mg q2wk or 420 mg monthly; alirocumab 75-150 mg q2wk",
+            "orderSentence": "PCSK9 inhibitor (evolocumab, alirocumab) 140 mg SC q2wk SC"
+          },
+          "pretreatment": "LFTs, lipid panel",
+          "contraindications": "None",
+          "monitoring": "Injection site reactions; LDL",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Icosapent ethyl (Vascepa)",
+          "route": "PO",
+          "indication": "Triglycerides ≥150 despite statin; reduces CV events",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g PO BID",
+                "orderSentence": "Icosapent ethyl (Vascepa) 2 g PO BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2 g BID with meals",
+            "orderSentence": "Icosapent ethyl (Vascepa) 2 g PO BID PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Seafood/fish allergy (relative)",
+          "monitoring": "AF monitoring (slightly increased risk)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carotid endarterectomy (CEA)",
+          "route": "Surgical",
+          "indication": "Symptomatic carotid stenosis 70-99%; 50-69% in select",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Surgery",
+                "orderSentence": "Carotid endarterectomy (CEA) Surgery Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Perform within 2 weeks of TIA if stable; high-volume surgeon",
+            "orderSentence": "Carotid endarterectomy (CEA) Surgery Surgical"
+          },
+          "pretreatment": "None",
+          "contraindications": "Unstable plaque with delay; total occlusion",
+          "monitoring": "Surgical complications; stroke",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Carotid artery stenting (CAS)",
+          "route": "Endovascular",
+          "indication": "CEA high-risk; radiation neck; recurrent stenosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Stenting",
+                "orderSentence": "Carotid artery stenting (CAS) Stenting Endovascular"
+              }
+            ],
+            "route": "Endovascular",
+            "instructions": "Alternative to CEA; requires DAPT",
+            "orderSentence": "Carotid artery stenting (CAS) Stenting Endovascular"
+          },
+          "pretreatment": "None",
+          "contraindications": "Tortuous anatomy; heavy calcification",
+          "monitoring": "Hyperperfusion syndrome; stroke",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "PFO closure",
+          "route": "Endovascular",
+          "indication": "Age <60, PFO with shunt, cryptogenic stroke/TIA",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Device closure",
+                "orderSentence": "PFO closure Device closure Endovascular"
+              }
+            ],
+            "route": "Endovascular",
+            "instructions": "Consider after comprehensive evaluation; DAPT post-procedure",
+            "orderSentence": "PFO closure Device closure Endovascular"
+          },
+          "pretreatment": "None",
+          "contraindications": "Small PFO without shunt",
+          "monitoring": "AF (transient); device complications",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology/Stroke consult for urgent evaluation, risk stratification, and secondary prevention optimization",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology consultation for atrial fibrillation management, anticoagulation decisions, and PFO evaluation",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vascular surgery consultation for symptomatic carotid stenosis ≥50% to evaluate for endarterectomy timing",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Interventional neurology for carotid stenting evaluation if CEA high-risk or anatomically unsuitable",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiac electrophysiology for recurrent AF management and potential ablation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Registered dietitian for Mediterranean diet counseling and sodium restriction education",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation counseling and pharmacotherapy initiation if current smoker",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Call 911 immediately if symptoms return as this indicates high stroke risk (up to 10% in first 48 hours)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not drive for at least 2-4 weeks after TIA per state regulations and stroke risk",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take all medications as prescribed especially antiplatelet therapy which significantly reduces stroke risk",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Know stroke warning signs (FAST: Face drooping, Arm weakness, Speech difficulty, Time to call 911)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep follow-up appointments as early intervention reduces stroke risk by up to 80%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Blood pressure target <130/80 mmHg to significantly reduce stroke recurrence risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "LDL target <70 mg/dL with high-intensity statin for secondary prevention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation (reduces stroke risk by 50% within 1 year of quitting)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Mediterranean diet emphasizing fruits, vegetables, whole grains, fish, and olive oil",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit alcohol to ≤1 drink/day for women, ≤2 drinks/day for men",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular aerobic exercise (150 min/week moderate or 75 min/week vigorous)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Weight management with target BMI 18.5-24.9 kg/m²",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Sodium restriction <2300 mg/day (ideally <1500 mg if hypertensive)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Migraine with aura",
+      "features": "Gradual onset (minutes), visual scintillations, headache follows; younger patient",
+      "tests": "Clinical history; normal DWI"
+    },
+    {
+      "diagnosis": "Seizure with Todd's paralysis",
+      "features": "Preceding convulsion; confusion; gradual resolution over hours",
+      "tests": "EEG; clinical history"
+    },
+    {
+      "diagnosis": "Hypoglycemia",
+      "features": "Altered mentation, diaphoresis, tremor; resolves with glucose",
+      "tests": "Fingerstick glucose"
+    },
+    {
+      "diagnosis": "Peripheral vertigo (BPPV, vestibular neuritis)",
+      "features": "Isolated vertigo with nystagmus; positive Dix-Hallpike",
+      "tests": "HINTS exam; no central signs"
+    },
+    {
+      "diagnosis": "Transient global amnesia",
+      "features": "Isolated anterograde amnesia; repetitive questioning; resolves <24h",
+      "tests": "Clinical criteria; DWI may show hippocampal lesions"
+    },
+    {
+      "diagnosis": "Functional neurological disorder",
+      "features": "Inconsistent exam; incongruent symptoms; often with psychiatric comorbidity",
+      "tests": "Clinical exam; normal workup"
+    },
+    {
+      "diagnosis": "Bell's palsy",
+      "features": "Peripheral facial weakness (forehead involved); no other deficits",
+      "tests": "Clinical exam"
+    },
+    {
+      "diagnosis": "Hypertensive encephalopathy",
+      "features": "Severe HTN; headache; confusion; visual changes",
+      "tests": "BP, posterior MRI findings"
+    },
+    {
+      "diagnosis": "Demyelinating disease (MS)",
+      "features": "Younger patient; prior episodes; MRI with characteristic lesions",
+      "tests": "MRI brain/spine; CSF"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Dual antiplatelet therapy (DAPT) for 21 days after minor stroke/TIA",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Wang et al. NEJM 2021 (CHANCE-2)](https://pubmed.ncbi.nlm.nih.gov/34265411/); [Johnston et al. NEJM 2018 (POINT)](https://pubmed.ncbi.nlm.nih.gov/29766749/)"
+    },
+    {
+      "recommendation": "High-intensity statin for LDL <70 mg/dL",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Amarenco et al. NEJM 2006 (SPARCL)](https://pubmed.ncbi.nlm.nih.gov/16899775/)"
+    },
+    {
+      "recommendation": "CEA for symptomatic carotid stenosis 70-99%",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[NASCET Collaborators. NEJM 1991](https://pubmed.ncbi.nlm.nih.gov/1852179/)"
+    },
+    {
+      "recommendation": "ABCD2 score for TIA risk stratification",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Johnston et al. Lancet 2007](https://pubmed.ncbi.nlm.nih.gov/17258668/)"
+    },
+    {
+      "recommendation": "Extended cardiac monitoring for cryptogenic stroke",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Sanna et al. NEJM 2014 (CRYSTAL-AF)](https://pubmed.ncbi.nlm.nih.gov/24963567/)"
+    },
+    {
+      "recommendation": "PFO closure in cryptogenic stroke <60 years",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Mas et al. NEJM 2017 (CLOSE)](https://pubmed.ncbi.nlm.nih.gov/28902593/)"
+    },
+    {
+      "recommendation": "BP target <130/80 for secondary prevention",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[AHA/ASA Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34024117/)"
+    },
+    {
+      "recommendation": "Urgent TIA evaluation reduces stroke risk",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Rothwell et al. Lancet 2007 (EXPRESS)](https://pubmed.ncbi.nlm.nih.gov/17928046/)"
+    },
+    {
+      "recommendation": "DOACs preferred over warfarin for NVAF",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Ruff et al. Lancet 2014 (meta-analysis)](https://pubmed.ncbi.nlm.nih.gov/24315724/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurological exam",
+      "frequency": "q1h x 24h then q4h",
+      "action": "Immediate imaging if worsening",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "q1h x 24h then q4h",
+      "action": "Titrate antihypertensives",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Cardiac rhythm (telemetry)",
+      "frequency": "Continuous x 24-72h",
+      "action": "Anticoagulation if AF detected",
+      "ED": "URGENT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "-"
+    },
+    {
+      "item": "Extended cardiac monitoring",
+      "frequency": "14-30 days outpatient",
+      "action": "Anticoagulation if AF detected",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ABCD2 score",
+      "frequency": "At presentation",
+      "action": "High-risk patients need admission or rapid TIA clinic",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "-"
+    },
+    {
+      "item": "LDL cholesterol",
+      "frequency": "Baseline, 6 weeks, then annually",
+      "action": "Intensify statin or add ezetimibe/PCSK9i",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "HbA1c",
+      "frequency": "Baseline, then q3mo if diabetic",
+      "action": "Optimize diabetes management",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Creatinine/eGFR",
+      "frequency": "With contrast; then annually",
+      "action": "Dose-adjust medications",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Rapid TIA clinic (<24-48h)",
+      "criteria": "ABCD2 <4; no acute findings on imaging; reliable patient with close follow-up"
+    },
+    {
+      "disposition": "Admit to stroke unit",
+      "criteria": "ABCD2 ≥4; DWI positive (minor stroke); symptomatic carotid stenosis; new AF; unable to complete workup as outpatient"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Rare for isolated TIA; only if concurrent acute coronary syndrome or hemodynamic instability"
+    },
+    {
+      "disposition": "Discharge with urgent follow-up",
+      "criteria": "Completed rapid workup; started on secondary prevention; ABCD2 <4; no high-risk features"
+    }
+  ]
+}

@@ -157,68 +157,68 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Lorazepam IV/IM (if actively seizing) | 0.1 mg/kg IV (max 4 mg); may repeat once in 5 min | Respiratory depression, severe hypotension | RR, O2 sat, BP; have airway equipment ready | STAT | STAT | — | STAT |
-| Midazolam IM (if no IV access) | 10 mg IM (if >40 kg) or 0.2 mg/kg IM | Respiratory depression | RR, O2 sat; have airway equipment ready | STAT | STAT | — | STAT |
-| Midazolam intranasal (if no IV access) | 5 mg per nostril (total 10 mg) | Respiratory depression | RR, O2 sat | STAT | STAT | — | STAT |
-| Dextrose 50% IV | 25-50 mL IV if hypoglycemia confirmed or suspected | Hyperglycemia | Glucose | STAT | STAT | — | STAT |
-| Thiamine IV | 100-500 mg IV BEFORE glucose if alcohol use suspected | None significant | None | STAT | STAT | — | STAT |
-| Supplemental oxygen | 2-4 L NC or non-rebreather as needed | None | O2 sat >94% | STAT | STAT | — | STAT |
-| IV fluids (isotonic) | NS or LR bolus if hypotensive; maintenance if euvolemic | Fluid overload, severe hyponatremia | I/O, BP, Na | STAT | STAT | — | STAT |
-| Flumazenil (rescue only) | 0.2 mg IV over 30 sec; may repeat 0.2 mg q1min to max 1 mg | Chronic benzodiazepine use; seizure history; tricyclic overdose | **CAUTION:** May lower seizure threshold and precipitate seizures; use only if severe respiratory depression unresponsive to supportive care | STAT | STAT | — | STAT |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Lorazepam IV/IM (if actively seizing) | IM | - | 0.1 mg/kg :: IV :: once :: 0.1 mg/kg IV (max 4 mg); may repeat once in 5 min | Respiratory depression, severe hypotension | RR, O2 sat, BP; have airway equipment ready | STAT | STAT | — | STAT |
+| Midazolam IM (if no IV access) | IM | - | 10 mg :: IM :: - :: 10 mg IM (if >40 kg) or 0.2 mg/kg IM | Respiratory depression | RR, O2 sat; have airway equipment ready | STAT | STAT | — | STAT |
+| Midazolam intranasal (if no IV access) | IV | - | 5 mg :: - :: - :: 5 mg per nostril (total 10 mg) | Respiratory depression | RR, O2 sat | STAT | STAT | — | STAT |
+| Dextrose 50% IV | IV | - | 25-50 mL :: IV :: - :: 25-50 mL IV if hypoglycemia confirmed or suspected | Hyperglycemia | Glucose | STAT | STAT | — | STAT |
+| Thiamine IV | IV | - | 100-500 mg :: IV :: - :: 100-500 mg IV BEFORE glucose if alcohol use suspected | None significant | None | STAT | STAT | — | STAT |
+| Supplemental oxygen | INH | - | 2-4 L NC or non-rebreather as needed | None | O2 sat >94% | STAT | STAT | — | STAT |
+| IV fluids (isotonic) | IV | - | NS or LR bolus if hypotensive; maintenance if euvolemic | Fluid overload, severe hyponatremia | I/O, BP, Na | STAT | STAT | — | STAT |
+| Flumazenil (rescue only) | IV | - | 0.2 mg :: IV :: - :: 0.2 mg IV over 30 sec; may repeat 0.2 mg q1min to max 1 mg | Chronic benzodiazepine use; seizure history; tricyclic overdose | **CAUTION:** May lower seizure threshold and precipitate seizures; use only if severe respiratory depression unresponsive to supportive care | STAT | STAT | — | STAT |
 
 ### 3B. Anti-Seizure Medications (ASMs) - Acute Loading
 
-| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Levetiracetam IV | First-line acute loading | 40-60 mg/kg IV (max 4500 mg) over 15 min; OR 1500-3000 mg IV | None significant; reduce dose if CrCl <50 | Somnolence, agitation (rare) | STAT | STAT | — | STAT |
-| Levetiracetam PO | Acute loading if stable | 1500-3000 mg PO × 1, then start maintenance | Same | Same | URGENT | URGENT | URGENT | — |
-| Fosphenytoin IV | Alternative first-line | 20 mg PE/kg IV at 150 mg PE/min (max rate) | AV block, sinus bradycardia, pregnancy (relative) | Continuous cardiac monitoring, BP; purple glove syndrome rare with fosphenytoin | STAT | STAT | — | STAT |
-| Phenytoin IV | If fosphenytoin unavailable | 20 mg/kg IV at max 50 mg/min | AV block, sinus bradycardia, pregnancy | Cardiac monitor, BP; give via large vein (tissue necrosis risk) | STAT | STAT | — | STAT |
-| Valproate IV | Alternative (broad-spectrum) | 40 mg/kg IV over 10 min (max 3000 mg) | Pregnancy (teratogenic - neural tube defects), hepatic disease, mitochondrial disease, urea cycle disorders | LFTs, ammonia, platelets; pancreatitis risk | STAT | STAT | — | STAT |
-| Lacosamide IV | Alternative first-line | 200-400 mg IV over 15-30 min | PR prolongation >200 ms, 2nd/3rd degree AV block | ECG for PR interval; dizziness | URGENT | URGENT | — | URGENT |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Levetiracetam IV | IV | First-line acute loading | 40-60 mg/kg :: IV :: - :: 40-60 mg/kg IV (max 4500 mg) over 15 min; OR 1500-3000 mg IV | None significant; reduce dose if CrCl <50 | Somnolence, agitation (rare) | STAT | STAT | — | STAT |
+| Levetiracetam PO | PO | Acute loading if stable | 1500-3000 mg :: PO :: - :: 1500-3000 mg PO × 1, then start maintenance | Same | Same | URGENT | URGENT | URGENT | — |
+| Fosphenytoin IV | IV | Alternative first-line | 20 mg :: IV :: - :: 20 mg PE/kg IV at 150 mg PE/min (max rate) | AV block, sinus bradycardia, pregnancy (relative) | Continuous cardiac monitoring, BP; purple glove syndrome rare with fosphenytoin | STAT | STAT | — | STAT |
+| Phenytoin IV | IV | If fosphenytoin unavailable | 20 mg/kg :: IV :: - :: 20 mg/kg IV at max 50 mg/min | AV block, sinus bradycardia, pregnancy | Cardiac monitor, BP; give via large vein (tissue necrosis risk) | STAT | STAT | — | STAT |
+| Valproate IV | IV | Alternative (broad-spectrum) | 40 mg/kg :: IV :: - :: 40 mg/kg IV over 10 min (max 3000 mg) | Pregnancy (teratogenic - neural tube defects), hepatic disease, mitochondrial disease, urea cycle disorders | LFTs, ammonia, platelets; pancreatitis risk | STAT | STAT | — | STAT |
+| Lacosamide IV | IV | Alternative first-line | 200-400 mg :: IV :: - :: 200-400 mg IV over 15-30 min | PR prolongation >200 ms, 2nd/3rd degree AV block | ECG for PR interval; dizziness | URGENT | URGENT | — | URGENT |
 
 ### 3C. Anti-Seizure Medications (ASMs) - Maintenance Therapy
 
-| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Levetiracetam | First-line maintenance | 500-1500 mg PO/IV BID; start 500 mg BID, may increase by 500 mg/dose weekly; max 3000 mg/day | Renal impairment (adjust per CrCl) | Behavioral changes (irritability, depression - "Keppra rage"); renal function | — | ROUTINE | ROUTINE | ROUTINE |
-| Lamotrigine | First-line (especially women of childbearing potential) | Start 25 mg daily × 2 weeks; then 50 mg daily × 2 weeks; then 100 mg daily; target 200-400 mg/day in divided doses | Slow titration required (SJS/TEN risk) | Rash (stop if any rash; SJS/TEN risk higher with fast titration or valproate co-therapy) | — | ROUTINE | ROUTINE | — |
-| Lacosamide | First-line alternative | Start 100 mg PO BID; increase by 100 mg/day weekly; target 200-400 mg BID; max 400 mg BID | PR prolongation, 2nd/3rd degree AV block, severe hepatic impairment | ECG at baseline and dose changes; dizziness, diplopia | — | ROUTINE | ROUTINE | ROUTINE |
-| Oxcarbazepine | Focal seizures | Start 300 mg PO BID; increase by 300-600 mg/day every week; target 1200-2400 mg/day in divided doses | Hypersensitivity to carbamazepine | Sodium (hyponatremia in 2-3%); HLA-B*1502 screening in at-risk populations | — | ROUTINE | ROUTINE | — |
-| Carbamazepine | Focal seizures | Start 200 mg PO BID; increase by 200 mg/day weekly; target 800-1200 mg/day; max 1600 mg/day | AV block; bone marrow suppression; concurrent MAOIs | CBC, LFTs, sodium at baseline and periodically; HLA-B*1502 screening | — | ROUTINE | ROUTINE | — |
-| Valproate/Divalproex | Generalized seizures | Start 10-15 mg/kg/day in divided doses; increase by 5-10 mg/kg/week; target 1000-2000 mg/day; max 60 mg/kg/day | Pregnancy (teratogenic); hepatic disease; mitochondrial disease; pancreatitis history | LFTs, ammonia, CBC, platelets at baseline, then q3-6mo; weight gain, hair loss, tremor | — | ROUTINE | ROUTINE | ROUTINE |
-| Phenytoin | Focal or generalized | 300-400 mg daily (extended release) or divided TID (immediate release); adjust by level | Pregnancy (relative - fetal hydantoin syndrome); AV block | Free phenytoin level (target 1-2 μg/mL); total level 10-20 μg/mL; CBC, LFTs; gingival hyperplasia, hirsutism | — | ROUTINE | ROUTINE | ROUTINE |
-| Brivaracetam | Alternative to levetiracetam | Start 50 mg PO BID; may increase to 100 mg BID; max 200 mg/day | Hepatic impairment (reduce dose) | Less behavioral side effects than levetiracetam; somnolence; Schedule C-V | — | ROUTINE | ROUTINE | ROUTINE |
-| Zonisamide | Adjunctive or monotherapy | Start 100 mg daily; increase by 100 mg every 2 weeks; target 300-400 mg daily; max 600 mg/day | Sulfonamide allergy; kidney stones | Kidney stones (carbonic anhydrase inhibitor); oligohidrosis (pediatric); metabolic acidosis | — | — | ROUTINE | — |
-| Topiramate | Adjunctive or monotherapy | Start 25 mg BID; increase by 50 mg/day weekly; target 200-400 mg/day in divided doses; max 400 mg/day | Kidney stones; metabolic acidosis; glaucoma | Cognitive impairment ("dopamax"); paresthesias; kidney stones; weight loss | — | — | ROUTINE | — |
-| Clobazam | Adjunctive therapy | Start 5-10 mg daily; increase by 5-10 mg weekly; max 40 mg/day in divided doses | Severe hepatic impairment; sleep apnea (untreated) | Sedation; tolerance may develop; CYP2C19 poor metabolizers need lower dose | — | ROUTINE | ROUTINE | — |
-| Perampanel | Adjunctive for focal or GTCS | Start 2 mg qHS; increase by 2 mg weekly; target 8-12 mg qHS; max 12 mg/day | None absolute | Psychiatric effects (aggression, hostility); dizziness; take at bedtime; Schedule III | — | — | ROUTINE | — |
-| Cenobamate | Adjunctive for focal | Start 12.5 mg daily × 2 weeks; titrate slowly per package insert; target 200-400 mg daily | Familial short QT syndrome | Very slow titration required (DRESS risk); QT shortening; titration pack available | — | — | ROUTINE | — |
-| Phenobarbital | Refractory or resource-limited | Load 15-20 mg/kg IV; maintenance 1-3 mg/kg/day (60-180 mg/day); target level 15-40 μg/mL | Porphyria; severe respiratory disease | Sedation; cognitive effects; drug interactions (CYP inducer); level monitoring | — | ROUTINE | ROUTINE | ROUTINE |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Levetiracetam | IV | First-line maintenance | 500-1500 mg :: IV :: BID :: 500-1500 mg PO/IV BID; start 500 mg BID, may increase by 500 mg/dose weekly; max 3000 mg/day | Renal impairment (adjust per CrCl) | Behavioral changes (irritability, depression - "Keppra rage"); renal function | — | ROUTINE | ROUTINE | ROUTINE |
+| Lamotrigine | - | First-line (especially women of childbearing potential) | 25 mg :: PO :: daily :: Start 25 mg daily × 2 weeks; then 50 mg daily × 2 weeks; then 100 mg daily; target 200-400 mg/day in divided doses | Slow titration required (SJS/TEN risk) | Rash (stop if any rash; SJS/TEN risk higher with fast titration or valproate co-therapy) | — | ROUTINE | ROUTINE | — |
+| Lacosamide | PO | First-line alternative | 100 mg :: PO :: BID :: Start 100 mg PO BID; increase by 100 mg/day weekly; target 200-400 mg BID; max 400 mg BID | PR prolongation, 2nd/3rd degree AV block, severe hepatic impairment | ECG at baseline and dose changes; dizziness, diplopia | — | ROUTINE | ROUTINE | ROUTINE |
+| Oxcarbazepine | PO | Focal seizures | 300 mg :: PO :: BID :: Start 300 mg PO BID; increase by 300-600 mg/day every week; target 1200-2400 mg/day in divided doses | Hypersensitivity to carbamazepine | Sodium (hyponatremia in 2-3%); HLA-B*1502 screening in at-risk populations | — | ROUTINE | ROUTINE | — |
+| Carbamazepine | PO | Focal seizures | 200 mg :: PO :: BID :: Start 200 mg PO BID; increase by 200 mg/day weekly; target 800-1200 mg/day; max 1600 mg/day | AV block; bone marrow suppression; concurrent MAOIs | CBC, LFTs, sodium at baseline and periodically; HLA-B*1502 screening | — | ROUTINE | ROUTINE | — |
+| Valproate/Divalproex | PO | Generalized seizures | 10-15 mg/kg :: PO :: - :: Start 10-15 mg/kg/day in divided doses; increase by 5-10 mg/kg/week; target 1000-2000 mg/day; max 60 mg/kg/day | Pregnancy (teratogenic); hepatic disease; mitochondrial disease; pancreatitis history | LFTs, ammonia, CBC, platelets at baseline, then q3-6mo; weight gain, hair loss, tremor | — | ROUTINE | ROUTINE | ROUTINE |
+| Phenytoin | PO | Focal or generalized | 300-400 mg :: PO :: daily :: 300-400 mg daily (extended release) or divided TID (immediate release); adjust by level | Pregnancy (relative - fetal hydantoin syndrome); AV block | Free phenytoin level (target 1-2 μg/mL); total level 10-20 μg/mL; CBC, LFTs; gingival hyperplasia, hirsutism | — | ROUTINE | ROUTINE | ROUTINE |
+| Brivaracetam | PO | Alternative to levetiracetam | 50 mg :: PO :: BID :: Start 50 mg PO BID; may increase to 100 mg BID; max 200 mg/day | Hepatic impairment (reduce dose) | Less behavioral side effects than levetiracetam; somnolence; Schedule C-V | — | ROUTINE | ROUTINE | ROUTINE |
+| Zonisamide | PO | Adjunctive or monotherapy | 100 mg :: PO :: daily :: Start 100 mg daily; increase by 100 mg every 2 weeks; target 300-400 mg daily; max 600 mg/day | Sulfonamide allergy; kidney stones | Kidney stones (carbonic anhydrase inhibitor); oligohidrosis (pediatric); metabolic acidosis | — | — | ROUTINE | — |
+| Topiramate | PO | Adjunctive or monotherapy | 25 mg :: PO :: BID :: Start 25 mg BID; increase by 50 mg/day weekly; target 200-400 mg/day in divided doses; max 400 mg/day | Kidney stones; metabolic acidosis; glaucoma | Cognitive impairment ("dopamax"); paresthesias; kidney stones; weight loss | — | — | ROUTINE | — |
+| Clobazam | PO | Adjunctive therapy | 5-10 mg :: PO :: daily :: Start 5-10 mg daily; increase by 5-10 mg weekly; max 40 mg/day in divided doses | Severe hepatic impairment; sleep apnea (untreated) | Sedation; tolerance may develop; CYP2C19 poor metabolizers need lower dose | — | ROUTINE | ROUTINE | — |
+| Perampanel | PO | Adjunctive for focal or GTCS | 2 mg :: PO :: qHS :: Start 2 mg qHS; increase by 2 mg weekly; target 8-12 mg qHS; max 12 mg/day | None absolute | Psychiatric effects (aggression, hostility); dizziness; take at bedtime; Schedule III | — | — | ROUTINE | — |
+| Cenobamate | PO | Adjunctive for focal | 12.5 mg :: PO :: daily :: Start 12.5 mg daily × 2 weeks; titrate slowly per package insert; target 200-400 mg daily | Familial short QT syndrome | Very slow titration required (DRESS risk); QT shortening; titration pack available | — | — | ROUTINE | — |
+| Phenobarbital | IV | Refractory or resource-limited | 15-20 mg/kg :: IV :: - :: Load 15-20 mg/kg IV; maintenance 1-3 mg/kg/day (60-180 mg/day); target level 15-40 μg/mL | Porphyria; severe respiratory disease | Sedation; cognitive effects; drug interactions (CYP inducer); level monitoring | — | ROUTINE | ROUTINE | ROUTINE |
 
 ### 3D. Symptomatic Treatments
 
-| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Acetaminophen | Post-ictal headache | 650-1000 mg PO/IV q6h PRN; max 3000 mg/day (2000 mg if liver disease) | Severe hepatic impairment | LFTs if chronic use | URGENT | ROUTINE | ROUTINE | URGENT |
-| Ibuprofen | Post-ictal headache | 400-600 mg PO q6-8h PRN; max 2400 mg/day | Renal impairment; GI bleed; post-CABG | Renal function if prolonged use | — | ROUTINE | ROUTINE | — |
-| Ondansetron | Post-ictal nausea | 4-8 mg IV/PO q8h PRN | QT prolongation; severe hepatic impairment | QTc if multiple doses | URGENT | ROUTINE | ROUTINE | URGENT |
-| Lorazepam | Post-ictal agitation (if severe) | 0.5-2 mg IV/PO PRN; use with caution | Respiratory depression; altered mental status | RR, sedation level; avoid if post-ictal confusion resolving | URGENT | URGENT | — | URGENT |
-| Sertraline | Depression/anxiety (chronic) | Start 50 mg daily; increase by 25-50 mg q1-2 weeks; max 200 mg daily | Concurrent MAOIs | Suicidality monitoring weeks 1-4 | — | — | ROUTINE | — |
-| Escitalopram | Depression/anxiety (chronic) | Start 10 mg daily; max 20 mg daily | Concurrent MAOIs; QT prolongation | QTc if risk factors | — | — | ROUTINE | — |
-| Melatonin | Sleep disturbance | 3-5 mg PO qHS | None significant | Well tolerated; may help with ASM-related sleep disruption | — | ROUTINE | ROUTINE | — |
-| Trazodone | Insomnia | 25-100 mg PO qHS | Concurrent MAOIs | Orthostatic hypotension; priapism (rare) | — | ROUTINE | ROUTINE | — |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Acetaminophen | IV | Post-ictal headache | 650-1000 mg :: IV :: q6h :: 650-1000 mg PO/IV q6h PRN; max 3000 mg/day (2000 mg if liver disease) | - | Severe hepatic impairment | LFTs if chronic use | URGENT | ROUTINE | ROUTINE | URGENT |
+| Ibuprofen | PO | Post-ictal headache | 400-600 mg :: PO :: PRN :: 400-600 mg PO q6-8h PRN; max 2400 mg/day | - | Renal impairment; GI bleed; post-CABG | Renal function if prolonged use | — | ROUTINE | ROUTINE | — |
+| Ondansetron | IV | Post-ictal nausea | 4-8 mg :: IV :: q8h :: 4-8 mg IV/PO q8h PRN | - | QT prolongation; severe hepatic impairment | QTc if multiple doses | URGENT | ROUTINE | ROUTINE | URGENT |
+| Lorazepam | IV | Post-ictal agitation (if severe) | 0.5-2 mg :: IV :: PRN :: 0.5-2 mg IV/PO PRN; use with caution | - | Respiratory depression; altered mental status | RR, sedation level; avoid if post-ictal confusion resolving | URGENT | URGENT | — | URGENT |
+| Sertraline | PO | Depression/anxiety (chronic) | 50 mg :: PO :: daily :: Start 50 mg daily; increase by 25-50 mg q1-2 weeks; max 200 mg daily | - | Concurrent MAOIs | Suicidality monitoring weeks 1-4 | — | — | ROUTINE | — |
+| Escitalopram | PO | Depression/anxiety (chronic) | 10 mg :: PO :: daily :: Start 10 mg daily; max 20 mg daily | - | Concurrent MAOIs; QT prolongation | QTc if risk factors | — | — | ROUTINE | — |
+| Melatonin | PO | Sleep disturbance | 3-5 mg :: PO :: qHS :: 3-5 mg PO qHS | - | None significant | Well tolerated; may help with ASM-related sleep disruption | — | ROUTINE | ROUTINE | — |
+| Trazodone | PO | Insomnia | 25-100 mg :: PO :: qHS :: 25-100 mg PO qHS | - | Concurrent MAOIs | Orthostatic hypotension; priapism (rare) | — | ROUTINE | ROUTINE | — |
 
 ### 3E. Second-line/Refractory
 
-| Treatment | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Add second ASM | Choose complementary mechanism; see maintenance options | Per specific agent | Per specific agent | — | ROUTINE | ROUTINE | ROUTINE |
-| Epilepsy surgery evaluation referral | For drug-resistant epilepsy (failed 2+ appropriately chosen ASMs) | N/A | N/A | — | EXT | EXT | — |
-| Vagus nerve stimulator (VNS) | For drug-resistant epilepsy not surgical candidates | N/A | Device checks | — | — | EXT | — |
-| Dietary therapy (ketogenic diet, modified Atkins) | For drug-resistant epilepsy | Fatty acid oxidation disorders; pyruvate carboxylase deficiency | Metabolic panels; lipids; kidney function | — | — | EXT | — |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Add second ASM | - | - | Choose complementary mechanism; see maintenance options | Per specific agent | Per specific agent | — | ROUTINE | ROUTINE | ROUTINE |
+| Epilepsy surgery evaluation referral | - | - | For drug-resistant epilepsy (failed 2+ appropriately chosen ASMs) | N/A | N/A | — | EXT | EXT | — |
+| Vagus nerve stimulator (VNS) | - | - | For drug-resistant epilepsy not surgical candidates | N/A | Device checks | — | — | EXT | — |
+| Dietary therapy (ketogenic diet, modified Atkins) | - | - | For drug-resistant epilepsy | Fatty acid oxidation disorders; pyruvate carboxylase deficiency | Metabolic panels; lipids; kidney function | — | — | EXT | — |
 
 ---
 

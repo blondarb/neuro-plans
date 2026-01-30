@@ -1,3 +1,10 @@
+---
+title: "Acute Ischemic Stroke"
+description: "Clinical decision support for acute ischemic stroke diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Acute Ischemic Stroke
 
 **VERSION:** 1.0
@@ -8,9 +15,9 @@
 
 **DIAGNOSIS:** Acute Ischemic Stroke
 
-**ICD-10:** I63.9 (Cerebral infarction, unspecified), I63.50 (Cerebral infarction due to unspecified occlusion or stenosis of unspecified cerebral artery), I63.3 (Cerebral infarction due to thrombosis of cerebral arteries), I63.4 (Cerebral infarction due to embolism of cerebral arteries)
+**ICD-10:** I63.9 (Cerebral infarction, unspecified), I63.50 (Cerebral infarction due to unspecified occlusion or stenosis of unspecified cerebral artery), I63.30 (Cerebral infarction due to thrombosis of unspecified cerebral artery), I63.40 (Cerebral infarction due to embolism of unspecified cerebral artery), G45.9 (Transient cerebral ischemic attack, unspecified)
 
-**SYNONYMS:** Acute ischemic stroke, AIS, stroke, brain attack, cerebral infarction, CVA, cerebrovascular accident, thrombotic stroke, embolic stroke, ischemic CVA, code stroke
+**SYNONYMS:** Acute ischemic stroke, AIS, stroke, brain attack, cerebral infarction, CVA, cerebrovascular accident, thrombotic stroke, embolic stroke, ischemic CVA, ischemic stroke, code stroke
 
 **SCOPE:** Acute ischemic stroke in adults — covers initial stabilization, thrombolytic therapy (IV alteplase/tenecteplase), endovascular thrombectomy criteria, blood pressure management, stroke etiology workup, secondary prevention initiation, and early rehabilitation. Excludes hemorrhagic stroke (see Intracerebral Hemorrhage template), transient ischemic attack (see TIA template), pediatric stroke, and chronic post-stroke management.
 
@@ -28,28 +35,28 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Point-of-care glucose | STAT | STAT | - | STAT | Hypoglycemia mimics stroke; must rule out before tPA | >60 mg/dL |
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Baseline; thrombocytopenia contraindicates tPA if <100K | Platelets >100,000 |
-| BMP (Na, K, Cr, glucose, BUN) | STAT | STAT | ROUTINE | STAT | Electrolyte abnormalities, renal function for contrast/medication dosing | Normal |
-| PT/INR | STAT | STAT | - | STAT | Anticoagulant use; INR >1.7 contraindicates tPA | INR ≤1.7 for tPA eligibility |
-| aPTT | STAT | STAT | - | STAT | Heparin use; elevated aPTT contraindicates tPA | Normal range |
-| Troponin | STAT | STAT | - | STAT | Acute MI can cause cardioembolic stroke; stress cardiomyopathy | Normal |
-| Type and screen | STAT | ROUTINE | - | STAT | Potential need for blood products, surgical intervention | On file |
-| Lipid panel (fasting or non-fasting) | - | ROUTINE | ROUTINE | - | Baseline for statin therapy; cardiovascular risk assessment | LDL target <70 mg/dL |
-| HbA1c | - | ROUTINE | ROUTINE | - | Diabetes screening/management; cardiovascular risk factor | <7.0% (individualized) |
+| Point-of-care glucose (CPT 82962) | STAT | STAT | - | STAT | Hypoglycemia mimics stroke; must rule out before tPA | >60 mg/dL |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Baseline; thrombocytopenia contraindicates tPA if <100K | Platelets >100,000 |
+| BMP (Na, K, Cr, glucose, BUN) (CPT 80048) | STAT | STAT | ROUTINE | STAT | Electrolyte abnormalities, renal function for contrast/medication dosing | Normal |
+| PT/INR (CPT 85610) | STAT | STAT | - | STAT | Anticoagulant use; INR >1.7 contraindicates tPA | INR ≤1.7 for tPA eligibility |
+| aPTT (CPT 85730) | STAT | STAT | - | STAT | Heparin use; elevated aPTT contraindicates tPA | Normal range |
+| Troponin (CPT 84484) | STAT | STAT | - | STAT | Acute MI can cause cardioembolic stroke; stress cardiomyopathy | Normal |
+| Type and screen (CPT 86900) | STAT | ROUTINE | - | STAT | Potential need for blood products, surgical intervention | On file |
+| Lipid panel (fasting or non-fasting) (CPT 80061) | - | ROUTINE | ROUTINE | - | Baseline for statin therapy; cardiovascular risk assessment | LDL target <70 mg/dL |
+| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Diabetes screening/management; cardiovascular risk factor | <7.0% (individualized) |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Hepatic function panel (AST, ALT, albumin) | URGENT | ROUTINE | ROUTINE | URGENT | Liver disease affects anticoagulation, medication metabolism | Normal |
-| TSH | - | ROUTINE | ROUTINE | - | Thyroid dysfunction as cardiovascular risk factor; atrial fibrillation workup | Normal |
-| ESR / CRP | - | ROUTINE | ROUTINE | - | Vasculitis screen, inflammatory stroke etiology | Normal |
-| Urine drug screen | URGENT | ROUTINE | - | URGENT | Cocaine/amphetamine-associated vasospasm or stroke | Negative |
-| Pregnancy test (β-hCG) | STAT | STAT | ROUTINE | STAT | Affects treatment decisions (tPA risk-benefit), imaging choices | Negative |
-| Blood alcohol level | URGENT | - | - | URGENT | Intoxication as stroke mimic; affects exam reliability | Correlate with clinical picture |
-| Magnesium | URGENT | ROUTINE | ROUTINE | URGENT | Hypomagnesemia associated with arrhythmia, vascular risk | Normal (>1.8 mg/dL) |
-| Phosphorus | - | ROUTINE | ROUTINE | - | Refeeding risk if malnourished; metabolic panel | Normal |
+| Hepatic function panel (AST, ALT, albumin) (CPT 80076) | URGENT | ROUTINE | ROUTINE | URGENT | Liver disease affects anticoagulation, medication metabolism | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction as cardiovascular risk factor; atrial fibrillation workup | Normal |
+| ESR (CPT 85652) / CRP (CPT 86140) | - | ROUTINE | ROUTINE | - | Vasculitis screen, inflammatory stroke etiology | Normal |
+| Urine drug screen (CPT 80307) | URGENT | ROUTINE | - | URGENT | Cocaine/amphetamine-associated vasospasm or stroke | Negative |
+| Pregnancy test (β-hCG) (CPT 84703) | STAT | STAT | ROUTINE | STAT | Affects treatment decisions (tPA risk-benefit), imaging choices | Negative |
+| Blood alcohol level (CPT 80320) | URGENT | - | - | URGENT | Intoxication as stroke mimic; affects exam reliability | Correlate with clinical picture |
+| Magnesium (CPT 83735) | URGENT | ROUTINE | ROUTINE | URGENT | Hypomagnesemia associated with arrhythmia, vascular risk | Normal (>1.8 mg/dL) |
+| Phosphorus (CPT 84100) | - | ROUTINE | ROUTINE | - | Refeeding risk if malnourished; metabolic panel | Normal |
 | Prealbumin | - | ROUTINE | - | ROUTINE | Nutritional status for rehabilitation planning | Normal |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
@@ -58,16 +65,16 @@ SECTION A: ACTION ITEMS
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Hypercoagulable panel (protein C, protein S, antithrombin III, Factor V Leiden, prothrombin gene mutation) | - | EXT | EXT | - | Young stroke (<50), cryptogenic stroke, venous thrombosis history | Normal |
 | Antiphospholipid antibody panel (lupus anticoagulant, anticardiolipin, β2-glycoprotein I) | - | EXT | EXT | - | Young stroke, recurrent stroke, systemic lupus | Negative |
-| Homocysteine | - | ROUTINE | ROUTINE | - | Elevated homocysteine as independent stroke risk factor | Normal (<15 µmol/L) |
-| RPR/VDRL | - | ROUTINE | ROUTINE | - | Syphilitic vasculitis | Negative |
-| HIV | - | ROUTINE | ROUTINE | - | HIV-associated vasculopathy | Negative |
-| ANA, dsDNA | - | EXT | EXT | - | Lupus cerebritis, vasculitis | Negative |
+| Homocysteine (CPT 83090) | - | ROUTINE | ROUTINE | - | Elevated homocysteine as independent stroke risk factor | Normal (<15 µmol/L) |
+| RPR/VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Syphilitic vasculitis | Negative |
+| HIV (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated vasculopathy | Negative |
+| ANA (CPT 86235), dsDNA | - | EXT | EXT | - | Lupus cerebritis, vasculitis | Negative |
 | ANCA (c-ANCA, p-ANCA) | - | EXT | EXT | - | CNS vasculitis | Negative |
 | Complement levels (C3, C4) | - | EXT | EXT | - | Complement-mediated vasculitis | Normal |
 | Hemoglobin electrophoresis | - | EXT | EXT | - | Sickle cell disease (young patients, African descent) | Normal (HbAA) |
 | JAK2 mutation | - | EXT | EXT | - | Polycythemia vera, myeloproliferative disorders | Negative |
-| Fibrinogen | URGENT | ROUTINE | - | URGENT | DIC screen, coagulopathy evaluation | Normal (200-400 mg/dL) |
-| D-dimer | URGENT | ROUTINE | - | URGENT | DIC, paradoxical embolism through PFO, cancer-associated | Normal |
+| Fibrinogen (CPT 85384) | URGENT | ROUTINE | - | URGENT | DIC screen, coagulopathy evaluation | Normal (200-400 mg/dL) |
+| D-dimer (CPT 85379) | URGENT | ROUTINE | - | URGENT | DIC, paradoxical embolism through PFO, cancer-associated | Normal |
 
 ---
 
@@ -77,30 +84,30 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head without contrast | STAT | STAT | - | STAT | Door-to-CT <25 minutes | Exclude hemorrhage; may show early ischemic changes (loss of gray-white differentiation, sulcal effacement) | Pregnancy (relative) |
-| CT angiography head and neck (CTA) | STAT | STAT | - | STAT | With initial CT; door-to-CTA <25 min | Large vessel occlusion (LVO) for thrombectomy; carotid/vertebral stenosis or dissection | Contrast allergy (premedicate), eGFR <30 (benefit outweighs risk in acute setting) |
-| CT perfusion (CTP) | STAT | URGENT | - | STAT | With CTA if extended window (6-24h) or wake-up stroke | Ischemic penumbra (mismatch between core infarct and hypoperfused tissue); target mismatch ratio >1.8 | Same as CTA |
-| MRI brain with DWI (diffusion-weighted imaging) | URGENT | URGENT | ROUTINE | URGENT | Within 24h; STAT if diagnosis uncertain | Acute ischemic infarct (restricted diffusion); stroke location and extent; ASPECTS scoring | Pacemaker, metallic implants, severe claustrophobia |
-| ECG (12-lead) | STAT | STAT | ROUTINE | STAT | Immediate | Atrial fibrillation, acute MI, LVH, ST changes | None |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | Door-to-CT <25 minutes | Exclude hemorrhage; may show early ischemic changes (loss of gray-white differentiation, sulcal effacement) | Pregnancy (relative) |
+| CT angiography head and neck (CTA) (CPT 70496, 70498) | STAT | STAT | - | STAT | With initial CT; door-to-CTA <25 min | Large vessel occlusion (LVO) for thrombectomy; carotid/vertebral stenosis or dissection | Contrast allergy (premedicate), eGFR <30 (benefit outweighs risk in acute setting) |
+| CT perfusion (CTP) (CPT 0042T) | STAT | URGENT | - | STAT | With CTA if extended window (6-24h) or wake-up stroke | Ischemic penumbra (mismatch between core infarct and hypoperfused tissue); target mismatch ratio >1.8 | Same as CTA |
+| MRI brain with DWI (diffusion-weighted imaging) (CPT 70553) | URGENT | URGENT | ROUTINE | URGENT | Within 24h; STAT if diagnosis uncertain | Acute ischemic infarct (restricted diffusion); stroke location and extent; ASPECTS scoring | Pacemaker, metallic implants, severe claustrophobia |
+| ECG (12-lead) (CPT 93000) | STAT | STAT | ROUTINE | STAT | Immediate | Atrial fibrillation, acute MI, LVH, ST changes | None |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRA head and neck | - | URGENT | ROUTINE | URGENT | Within 24-48h | Intracranial stenosis, vertebrobasilar disease, dissection | Same as MRI |
-| Transthoracic echocardiogram (TTE) | - | ROUTINE | ROUTINE | ROUTINE | Within 24-48h | LV thrombus, PFO, valvular disease, cardiomyopathy, akinetic segments | None significant |
-| Transesophageal echocardiogram (TEE) with bubble study | - | ROUTINE | ROUTINE | - | Within 48-72h if TTE nondiagnostic or cryptogenic stroke | PFO with right-to-left shunt, atrial septal aneurysm, left atrial appendage thrombus, aortic arch atheroma | Esophageal pathology, uncooperative patient |
-| Carotid duplex ultrasound | - | ROUTINE | ROUTINE | - | Within 24-48h | Carotid stenosis ≥50%, plaque characterization | None significant |
-| Transcranial Doppler (TCD) | - | ROUTINE | ROUTINE | - | Within 24-48h | Intracranial stenosis, vasospasm, microembolic signals, right-to-left shunt (bubble study) | Absent temporal bone window (~10% patients) |
-| Continuous cardiac telemetry | STAT | STAT | - | STAT | Minimum 24h; ideally ≥48-72h | Paroxysmal atrial fibrillation, other arrhythmias | None |
+| MRA head and neck (CPT 70544, 70547) | - | URGENT | ROUTINE | URGENT | Within 24-48h | Intracranial stenosis, vertebrobasilar disease, dissection | Same as MRI |
+| Transthoracic echocardiogram (TTE) (CPT 93306) | - | ROUTINE | ROUTINE | ROUTINE | Within 24-48h | LV thrombus, PFO, valvular disease, cardiomyopathy, akinetic segments | None significant |
+| Transesophageal echocardiogram (TEE) (CPT 93312) with bubble study | - | ROUTINE | ROUTINE | - | Within 48-72h if TTE nondiagnostic or cryptogenic stroke | PFO with right-to-left shunt, atrial septal aneurysm, left atrial appendage thrombus, aortic arch atheroma | Esophageal pathology, uncooperative patient |
+| Carotid duplex ultrasound (CPT 93880) | - | ROUTINE | ROUTINE | - | Within 24-48h | Carotid stenosis ≥50%, plaque characterization | None significant |
+| Transcranial Doppler (TCD) (CPT 93886) | - | ROUTINE | ROUTINE | - | Within 24-48h | Intracranial stenosis, vasospasm, microembolic signals, right-to-left shunt (bubble study) | Absent temporal bone window (~10% patients) |
+| Continuous cardiac telemetry (CPT 93228) | STAT | STAT | - | STAT | Minimum 24h; ideally ≥48-72h | Paroxysmal atrial fibrillation, other arrhythmias | None |
 | Extended cardiac monitoring (Holter 30-day or implantable loop recorder) | - | ROUTINE | ROUTINE | - | Arrange before discharge if cryptogenic stroke | Paroxysmal atrial fibrillation (detected in 12-30% with prolonged monitoring) | None significant |
-| Chest X-ray | URGENT | ROUTINE | - | URGENT | Within 24h | Cardiomegaly, pulmonary edema, aspiration pneumonia | None significant |
+| Chest X-ray (CPT 71046) | URGENT | ROUTINE | - | URGENT | Within 24h | Cardiomegaly, pulmonary edema, aspiration pneumonia | None significant |
 
 ### 2C. Rare/Specialized
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Conventional cerebral angiography (DSA) | - | EXT | EXT | EXT | If vasculitis, dissection, or Moyamoya suspected | Beading pattern (vasculitis), intimal flap (dissection), Moyamoya collaterals | Contrast allergy, severe renal impairment, coagulopathy |
+| Conventional cerebral angiography (DSA) (CPT 36224) | - | EXT | EXT | EXT | If vasculitis, dissection, or Moyamoya suspected | Beading pattern (vasculitis), intimal flap (dissection), Moyamoya collaterals | Contrast allergy, severe renal impairment, coagulopathy |
 | MRI vessel wall imaging | - | EXT | EXT | - | If intracranial stenosis or vasculitis suspected | Vessel wall enhancement (vasculitis, unstable plaque), dissection | Same as MRI |
 | Fat-saturated MRI neck | - | EXT | EXT | - | If cervical dissection suspected | Intramural hematoma (crescent sign) | Same as MRI |
 | Cardiac MRI | - | EXT | EXT | - | If cardiomyopathy or cardiac mass suspected | Myocardial fibrosis, thrombus, tumor | Same as MRI |
@@ -112,60 +119,60 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| IV alteplase (tPA) | STAT | STAT | - | STAT | 0.9 mg/kg IV (max 90 mg); 10% as bolus over 1 min, remaining 90% infused over 60 min. Door-to-needle target <45 min | >4.5h from last known well (relative 3-4.5h window with additional exclusions); BP >185/110 despite treatment; platelets <100K; INR >1.7; active bleeding; recent surgery <14 days; recent stroke <3 months; intracranial hemorrhage history | Neuro checks q15min during infusion, q30min x 6h, then q1h x 18h; BP q15min x 2h, q30min x 6h, then q1h; hold anticoagulants/antiplatelets 24h |
-| Tenecteplase IV (if available) | STAT | STAT | - | STAT | 0.25 mg/kg IV single bolus (max 25 mg); preferred if LVO planned for thrombectomy | Same as alteplase | Same as alteplase |
-| Endovascular thrombectomy | STAT | STAT | - | STAT | For LVO (ICA, M1, M1-M2 junction, basilar); within 24h if eligible per DAWN/DEFUSE-3 criteria. 0-6h: NIHSS ≥6, ASPECTS ≥6. 6-24h: clinical-core mismatch on perfusion imaging | Large established infarct core (ASPECTS <6 in 0-6h window); no LVO; poor premorbid function (mRS >2 relative); life expectancy <6 months | Continuous monitoring in neuro-ICU post-procedure; groin check; BP per post-thrombectomy protocol |
-| Aspirin | STAT | STAT | - | STAT | 325 mg PO/PR load (give within 24-48h of onset); if tPA given, wait 24h and obtain CT before starting. Maintenance: 81-325 mg daily | Active GI bleed, true aspirin allergy, within 24h of tPA (wait for post-tPA CT) | GI symptoms, bleeding signs |
-| Blood pressure management PRE-tPA: Labetalol IV | STAT | STAT | - | STAT | 10-20 mg IV over 1-2 min; may repeat once; target BP <185/110 before tPA | Heart block (2nd/3rd degree), severe bradycardia, decompensated HF, asthma/severe COPD | Heart rate, BP continuous |
-| Blood pressure management PRE-tPA: Nicardipine IV | STAT | STAT | - | STAT | 5 mg/h IV infusion; increase by 2.5 mg/h q5-15min; max 15 mg/h; target BP <185/110 | Severe aortic stenosis | BP continuous monitoring |
-| Blood pressure management PRE-tPA: Clevidipine IV | STAT | STAT | - | STAT | 1-2 mg/h IV; titrate by doubling q90sec initially; max 32 mg/h | Soy/egg allergy, severe lipid disorders, defective lipid metabolism | BP continuous monitoring |
-| Blood pressure management POST-tPA (24h) | - | STAT | - | STAT | Target BP <180/105 x 24h post-tPA; use nicardipine or labetalol drip as above | See individual agents above | Neuro checks with each BP check; hold if SBP <100 |
-| Permissive hypertension (no tPA given) | STAT | STAT | - | STAT | Allow BP up to 220/120; treat only if >220/120 or end-organ damage (ACS, aortic dissection, hypertensive encephalopathy). Lower by 15% in first 24h | N/A | Neuro checks; avoid precipitous drops |
-| IV normal saline | STAT | STAT | - | STAT | Isotonic fluids; avoid dextrose-containing solutions (hyperglycemia worsens outcomes); avoid hypotonic solutions (cerebral edema risk) | Volume overload | I/O, electrolytes |
-| Supplemental oxygen | STAT | STAT | - | STAT | Only if SpO2 <94%; nasal cannula or mask as needed | N/A | SpO2 target ≥94%; avoid routine supplemental O2 if normoxic |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| IV alteplase (tPA) (CPT 96365) | IV | - | 0.9 mg/kg :: IV :: once :: 0.9 mg/kg IV (max 90 mg); 10% as bolus over 1 min, remaining 90% infused over 60 min. Door-to-needle target <45 min | >4.5h from last known well (relative 3-4.5h window with additional exclusions); BP >185/110 despite treatment; platelets <100K; INR >1.7; active bleeding; recent surgery <14 days; recent stroke <3 months; intracranial hemorrhage history | Neuro checks q15min during infusion, q30min x 6h, then q1h x 18h; BP q15min x 2h, q30min x 6h, then q1h; hold anticoagulants/antiplatelets 24h | STAT | STAT | - | STAT |
+| Tenecteplase IV (CPT 96374) (if available) | IV | - | 0.25 mg/kg :: IV :: once :: 0.25 mg/kg IV single bolus (max 25 mg); preferred if LVO planned for thrombectomy | Same as alteplase | Same as alteplase | STAT | STAT | - | STAT |
+| Endovascular thrombectomy | - | - | For LVO (ICA, M1, M1-M2 junction, basilar); within 24h if eligible per DAWN/DEFUSE-3 criteria. 0-6h: NIHSS ≥6, ASPECTS ≥6. 6-24h: clinical-core mismatch on perfusion imaging | Large established infarct core (ASPECTS <6 in 0-6h window); no LVO; poor premorbid function (mRS >2 relative); life expectancy <6 months | Continuous monitoring in neuro-ICU post-procedure; groin check; BP per post-thrombectomy protocol | STAT | STAT | - | STAT |
+| Aspirin | PO | - | 325 mg :: PO :: daily :: 325 mg PO/PR load (give within 24-48h of onset); if tPA given, wait 24h and obtain CT before starting. Maintenance: 81-325 mg daily | Active GI bleed, true aspirin allergy, within 24h of tPA (wait for post-tPA CT) | GI symptoms, bleeding signs | STAT | STAT | - | STAT |
+| Blood pressure management PRE-tPA: Labetalol IV (CPT 96374) | IV | - | 10-20 mg :: IV :: once :: 10-20 mg IV over 1-2 min; may repeat once; target BP <185/110 before tPA | Heart block (2nd/3rd degree), severe bradycardia, decompensated HF, asthma/severe COPD | Heart rate, BP continuous | STAT | STAT | - | STAT |
+| Blood pressure management PRE-tPA: Nicardipine IV (CPT 96365) | IV | - | 5 mg/h :: IV :: - :: 5 mg/h IV infusion; increase by 2.5 mg/h q5-15min; max 15 mg/h; target BP <185/110 | Severe aortic stenosis | BP continuous monitoring | STAT | STAT | - | STAT |
+| Blood pressure management PRE-tPA: Clevidipine IV (CPT 96365) | IV | - | 1-2 mg/h :: IV :: - :: 1-2 mg/h IV; titrate by doubling q90sec initially; max 32 mg/h | Soy/egg allergy, severe lipid disorders, defective lipid metabolism | BP continuous monitoring | STAT | STAT | - | STAT |
+| Blood pressure management POST-tPA (24h) | IV | - | Target BP <180/105 x 24h post-tPA; use nicardipine or labetalol drip as above | See individual agents above | Neuro checks with each BP check; hold if SBP <100 | - | STAT | - | STAT |
+| Permissive hypertension (no tPA given) | - | - | 15% :: - :: - :: Allow BP up to 220/120; treat only if >220/120 or end-organ damage (ACS, aortic dissection, hypertensive encephalopathy). Lower by 15% in first 24h | N/A | Neuro checks; avoid precipitous drops | STAT | STAT | - | STAT |
+| IV normal saline | IV | - | Isotonic fluids; avoid dextrose-containing solutions (hyperglycemia worsens outcomes); avoid hypotonic solutions (cerebral edema risk) | Volume overload | I/O, electrolytes | STAT | STAT | - | STAT |
+| Supplemental oxygen | - | - | 94% :: - :: - :: Only if SpO2 <94%; nasal cannula or mask as needed | N/A | SpO2 target ≥94%; avoid routine supplemental O2 if normoxic | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments
 
-| Treatment | Indication | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|------------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Acetaminophen | Fever (temp >38°C worsens outcomes) | STAT | STAT | - | STAT | 650-1000 mg PO/PR q6h; max 4g/day (2g if hepatic impairment) | Severe hepatic disease | Temperature q4h; LFTs if prolonged use |
-| Insulin (regular) | Hyperglycemia (glucose >180 worsens outcomes) | STAT | STAT | - | STAT | Sliding scale or insulin drip for persistent hyperglycemia; target glucose 140-180 mg/dL; avoid hypoglycemia (<60 mg/dL) | Hypoglycemia risk | BG q1h if drip; q6h if sliding scale |
-| Ondansetron | Nausea/vomiting (posterior circulation stroke) | URGENT | ROUTINE | ROUTINE | URGENT | 4 mg IV/PO q6h PRN | QT prolongation, serotonin syndrome risk | QTc if risk factors |
-| Enoxaparin | DVT prophylaxis | - | ROUTINE | - | ROUTINE | 40 mg SC daily; start within 24-48h if not receiving therapeutic anticoagulation; after post-tPA imaging clears hemorrhage | Active bleeding, platelets <50K, CrCl <30 (use UFH 5000u SC q8-12h) | Platelets q3 days; renal function |
-| Heparin (unfractionated) SC | DVT prophylaxis (alternative) | - | ROUTINE | - | ROUTINE | 5000 units SC q8-12h | Active bleeding, HIT | Platelets q3 days |
-| Pneumatic compression devices | DVT prophylaxis (non-pharmacologic) | STAT | STAT | - | STAT | Apply to both legs immediately on admission; use in addition to or instead of pharmacologic prophylaxis | Acute DVT, severe peripheral vascular disease | Skin checks daily |
-| Pantoprazole | GI prophylaxis (stress ulcer) | - | ROUTINE | - | ROUTINE | 40 mg IV/PO daily | C. difficile risk with prolonged use | GI symptoms |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Acetaminophen | PO | Fever (temp >38°C worsens outcomes) | 650-1000 mg :: PO :: q6h :: 650-1000 mg PO/PR q6h; max 4g/day (2g if hepatic impairment) | Severe hepatic disease | Temperature q4h; LFTs if prolonged use | STAT | STAT | - | STAT |
+| Insulin (regular) | IV | Hyperglycemia (glucose >180 worsens outcomes) | 140-180 mg :: IV :: - :: Sliding scale or insulin drip for persistent hyperglycemia; target glucose 140-180 mg/dL; avoid hypoglycemia (<60 mg/dL) | Hypoglycemia risk | BG q1h if drip; q6h if sliding scale | STAT | STAT | - | STAT |
+| Ondansetron | IV | Nausea/vomiting (posterior circulation stroke) | 4 mg :: IV :: q6h :: 4 mg IV/PO q6h PRN | QT prolongation, serotonin syndrome risk | QTc if risk factors | URGENT | ROUTINE | ROUTINE | URGENT |
+| Enoxaparin | SC | DVT prophylaxis | 40 mg :: SC :: daily :: 40 mg SC daily; start within 24-48h if not receiving therapeutic anticoagulation; after post-tPA imaging clears hemorrhage | Active bleeding, platelets <50K, CrCl <30 (use UFH 5000u SC q8-12h) | Platelets q3 days; renal function | - | ROUTINE | - | ROUTINE |
+| Heparin (unfractionated) SC | SC | DVT prophylaxis (alternative) | 5000 units :: SC :: - :: 5000 units SC q8-12h | Active bleeding, HIT | Platelets q3 days | - | ROUTINE | - | ROUTINE |
+| Pneumatic compression devices | - | DVT prophylaxis (non-pharmacologic) | Apply to both legs immediately on admission; use in addition to or instead of pharmacologic prophylaxis | Acute DVT, severe peripheral vascular disease | Skin checks daily | STAT | STAT | - | STAT |
+| Pantoprazole | IV | GI prophylaxis (stress ulcer) | 40 mg :: IV :: daily :: 40 mg IV/PO daily | C. difficile risk with prolonged use | GI symptoms | - | ROUTINE | - | ROUTINE |
 
 ### 3C. Second-line/Refractory
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Dual antiplatelet therapy (DAPT): Aspirin + Clopidogrel | - | URGENT | URGENT | - | Aspirin 81 mg + Clopidogrel 75 mg daily x 21 days (minor stroke NIHSS ≤3 or high-risk TIA ABCD2 ≥4); then single antiplatelet long-term. Load clopidogrel 300 mg if not previously on it | Major stroke (NIHSS >3), high bleeding risk, planned surgery | Bleeding signs; CBC |
-| Dual antiplatelet therapy: Aspirin + Ticagrelor | - | URGENT | URGENT | - | Aspirin 81 mg daily + Ticagrelor 90 mg BID x 30 days (THALES trial: minor stroke NIHSS ≤5); then single antiplatelet | Intracranial stenosis (may use), high bleeding risk, hepatic impairment | Bleeding signs; dyspnea (common side effect) |
-| Heparin IV drip (therapeutic) | - | URGENT | - | URGENT | Bolus 60-80 units/kg (max 5000u); infusion 12-18 units/kg/h; target aPTT 1.5-2.5x control. Use for: cardiac source with high re-embolization risk, arterial dissection, crescendo TIA, free-floating thrombus | Large infarct (hemorrhagic transformation risk), uncontrolled BP, within 24h of tPA | aPTT q6h until stable, then q12-24h; platelets q3 days; neuro checks |
-| Decompressive craniectomy (malignant MCA infarct) | - | - | - | STAT | For malignant MCA syndrome with >50% MCA territory infarct, age <60 preferred; within 48h of onset; reduces mortality from 70-80% to ~20% | Age >60 (relative — DESTINY II showed benefit up to age 80 but with higher disability); bilateral infarcts; hemorrhagic transformation | Post-operative neuro checks, ICP monitoring, wound care |
-| Osmotherapy: Mannitol 20% | - | - | - | STAT | 1-1.5 g/kg IV bolus for acute herniation; 0.25-0.5 g/kg q4-6h maintenance | Anuria, severe dehydration | Serum osmolality (hold if >320 mOsm/kg), osmolar gap, renal function, I/O |
-| Osmotherapy: Hypertonic saline 23.4% | - | - | - | STAT | 30 mL IV bolus via central line over 10-20 min for acute herniation | No central access for 23.4%; hypokalemia | Serum sodium (target 145-155 mEq/L), osmolality, central line integrity |
-| Hypertonic saline 3% infusion | - | - | - | STAT | 150-500 mL IV bolus or continuous infusion 0.5-1 mL/kg/h; target Na 145-155 | Hypernatremia, volume overload | Serum sodium q4-6h, osmolality |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Dual antiplatelet therapy (DAPT): Aspirin + Clopidogrel | - | - | 81 mg :: - :: daily :: Aspirin 81 mg + Clopidogrel 75 mg daily x 21 days (minor stroke NIHSS ≤3 or high-risk TIA ABCD2 ≥4); then single antiplatelet long-term. Load clopidogrel 300 mg if not previously on it | Major stroke (NIHSS >3), high bleeding risk, planned surgery | Bleeding signs; CBC | - | URGENT | URGENT | - |
+| Dual antiplatelet therapy: Aspirin + Ticagrelor | PO | - | 81 mg :: PO :: daily :: Aspirin 81 mg daily + Ticagrelor 90 mg BID x 30 days (THALES trial: minor stroke NIHSS ≤5); then single antiplatelet | Intracranial stenosis (may use), high bleeding risk, hepatic impairment | Bleeding signs; dyspnea (common side effect) | - | URGENT | URGENT | - |
+| Heparin IV drip (therapeutic) | IV | - | 60-80 units/kg :: IV :: once :: Bolus 60-80 units/kg (max 5000u); infusion 12-18 units/kg/h; target aPTT 1.5-2.5x control. Use for: cardiac source with high re-embolization risk, arterial dissection, crescendo TIA, free-floating thrombus | Large infarct (hemorrhagic transformation risk), uncontrolled BP, within 24h of tPA | aPTT q6h until stable, then q12-24h; platelets q3 days; neuro checks | - | URGENT | - | URGENT |
+| Decompressive craniectomy (malignant MCA infarct) | - | - | 50% :: - :: - :: For malignant MCA syndrome with >50% MCA territory infarct, age <60 preferred; within 48h of onset; reduces mortality from 70-80% to ~20% | Age >60 (relative — DESTINY II showed benefit up to age 80 but with higher disability); bilateral infarcts; hemorrhagic transformation | Post-operative neuro checks, ICP monitoring, wound care | - | - | - | STAT |
+| Osmotherapy: Mannitol 20% | IV | - | 1-1.5 g/kg :: IV :: once :: 1-1.5 g/kg IV bolus for acute herniation; 0.25-0.5 g/kg q4-6h maintenance | Anuria, severe dehydration | Serum osmolality (hold if >320 mOsm/kg), osmolar gap, renal function, I/O | - | - | - | STAT |
+| Osmotherapy: Hypertonic saline 23.4% | IV | - | 30 mL :: IV :: once :: 30 mL IV bolus via central line over 10-20 min for acute herniation | No central access for 23.4%; hypokalemia | Serum sodium (target 145-155 mEq/L), osmolality, central line integrity | - | - | - | STAT |
+| Hypertonic saline 3% infusion | IV | - | 150-500 mL :: IV :: continuous :: 150-500 mL IV bolus or continuous infusion 0.5-1 mL/kg/h; target Na 145-155 | Hypernatremia, volume overload | Serum sodium q4-6h, osmolality | - | - | - | STAT |
 
 ### 3D. Disease-Modifying / Chronic Therapies
 
-| Treatment | Route | ED | HOSP | OPD | ICU | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring |
-|-----------|-------|:--:|:----:|:---:|:---:|--------|---------------------------|-------------------|------------|
-| Atorvastatin | PO | - | STAT | ROUTINE | STAT | 80 mg PO daily (high-intensity); start within 24-48h regardless of baseline LDL | LFTs at baseline | Active liver disease, pregnancy, breastfeeding | LFTs at 12 weeks then annually; lipid panel at 4-12 weeks; CK if myalgia |
-| Rosuvastatin | PO | - | STAT | ROUTINE | STAT | 20-40 mg PO daily (high-intensity alternative) | LFTs at baseline | Active liver disease, pregnancy, CrCl <30 for 40mg | Same as atorvastatin |
-| Apixaban | PO | - | ROUTINE | ROUTINE | - | 5 mg PO BID (2.5 mg BID if ≥2 of: age ≥80, weight ≤60kg, Cr ≥1.5); start 4-14 days post-stroke for AF (timing based on infarct size). Preferred DOAC per guidelines | Active major bleeding, mechanical heart valve, severe hepatic impairment | Renal function; bleeding signs; CBC |
-| Rivaroxaban | PO | - | ROUTINE | ROUTINE | - | 20 mg PO daily with evening meal (15 mg daily if CrCl 15-50); start 4-14 days post-stroke for AF | Active bleeding, CrCl <15, severe hepatic impairment | Renal function q6-12 months; bleeding signs |
-| Dabigatran | PO | - | ROUTINE | ROUTINE | - | 150 mg PO BID (75 mg BID if CrCl 15-30); start 4-14 days post-stroke for AF | Active bleeding, CrCl <15, mechanical heart valve | Renal function q6-12 months; bleeding signs; GI side effects |
-| Warfarin | PO | - | ROUTINE | ROUTINE | - | 5 mg PO daily initial (2-3 mg if elderly, low weight, or interacting drugs); target INR 2.0-3.0 for AF; 2.5-3.5 for mechanical valve. Bridge with heparin | Active bleeding, pregnancy, severe hepatic disease | INR daily until stable, then weekly, then monthly; diet counseling (vitamin K) |
-| Lisinopril | PO | - | ROUTINE | ROUTINE | - | Start 5-10 mg PO daily; titrate to 20-40 mg daily; target BP <130/80 after acute phase | Angioedema history, bilateral renal artery stenosis, pregnancy | Cr and K+ at 1-2 weeks after initiation; BP |
-| Amlodipine | PO | - | ROUTINE | ROUTINE | - | Start 5 mg PO daily; max 10 mg daily | Severe aortic stenosis (relative) | BP, peripheral edema |
-| Losartan | PO | - | ROUTINE | ROUTINE | - | Start 50 mg PO daily; max 100 mg daily | Pregnancy, bilateral renal artery stenosis | Cr, K+, BP |
-| Metoprolol succinate | PO | - | ROUTINE | ROUTINE | - | Start 25 mg PO daily; titrate to 200 mg daily | Heart block, decompensated HF, severe bradycardia | HR, BP |
-| Ezetimibe | PO | - | ROUTINE | ROUTINE | - | 10 mg PO daily; add if LDL not at goal on max statin | Active liver disease | LFTs, lipid panel |
-| PCSK9 inhibitor (evolocumab) | SC | - | - | ROUTINE | - | 140 mg SC q2 weeks or 420 mg SC monthly; if LDL not at goal on max statin + ezetimibe | None absolute | Lipid panel q4-12 weeks; injection site reactions |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Atorvastatin | PO | - | 80 mg :: PO :: daily :: 80 mg PO daily (high-intensity); start within 24-48h regardless of baseline LDL | - | Active liver disease, pregnancy, breastfeeding | LFTs at 12 weeks then annually; lipid panel at 4-12 weeks; CK if myalgia | - | STAT | ROUTINE | STAT |
+| Rosuvastatin | PO | - | 20-40 mg :: PO :: daily :: 20-40 mg PO daily (high-intensity alternative) | - | Active liver disease, pregnancy, CrCl <30 for 40mg | Same as atorvastatin | - | STAT | ROUTINE | STAT |
+| Apixaban | PO | - | 5 mg :: PO :: BID :: 5 mg PO BID (2.5 mg BID if ≥2 of: age ≥80, weight ≤60kg, Cr ≥1.5); start 4-14 days post-stroke for AF (timing based on infarct size). Preferred DOAC per guidelines | - | Renal function; bleeding signs; CBC | - | - | ROUTINE | ROUTINE | - |
+| Rivaroxaban | PO | - | 20 mg :: PO :: daily :: 20 mg PO daily with evening meal (15 mg daily if CrCl 15-50); start 4-14 days post-stroke for AF | - | Renal function q6-12 months; bleeding signs | - | - | ROUTINE | ROUTINE | - |
+| Dabigatran | PO | - | 150 mg :: PO :: BID :: 150 mg PO BID (75 mg BID if CrCl 15-30); start 4-14 days post-stroke for AF | - | Renal function q6-12 months; bleeding signs; GI side effects | - | - | ROUTINE | ROUTINE | - |
+| Warfarin | PO | - | 5 mg :: PO :: daily :: 5 mg PO daily initial (2-3 mg if elderly, low weight, or interacting drugs); target INR 2.0-3.0 for AF; 2.5-3.5 for mechanical valve. Bridge with heparin | - | INR daily until stable, then weekly, then monthly; diet counseling (vitamin K) | - | - | ROUTINE | ROUTINE | - |
+| Lisinopril | PO | - | 5-10 mg :: PO :: daily :: Start 5-10 mg PO daily; titrate to 20-40 mg daily; target BP <130/80 after acute phase | - | Cr and K+ at 1-2 weeks after initiation; BP | - | - | ROUTINE | ROUTINE | - |
+| Amlodipine | PO | - | 5 mg :: PO :: daily :: Start 5 mg PO daily; max 10 mg daily | - | BP, peripheral edema | - | - | ROUTINE | ROUTINE | - |
+| Losartan | PO | - | 50 mg :: PO :: daily :: Start 50 mg PO daily; max 100 mg daily | - | Cr, K+, BP | - | - | ROUTINE | ROUTINE | - |
+| Metoprolol succinate | PO | - | 25 mg :: PO :: daily :: Start 25 mg PO daily; titrate to 200 mg daily | - | HR, BP | - | - | ROUTINE | ROUTINE | - |
+| Ezetimibe | PO | - | 10 mg :: PO :: daily :: 10 mg PO daily; add if LDL not at goal on max statin | - | LFTs, lipid panel | - | - | ROUTINE | ROUTINE | - |
+| PCSK9 inhibitor (evolocumab) | SC | - | 140 mg :: SC :: monthly :: 140 mg SC q2 weeks or 420 mg SC monthly; if LDL not at goal on max statin + ezetimibe | - | Lipid panel q4-12 weeks; injection site reactions | - | - | - | ROUTINE | - |
 
 ---
 
@@ -276,13 +283,13 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| IV alteplase within 4.5h | Class I, Level A | AHA/ASA 2019 Guidelines; NINDS trial; ECASS III |
-| Tenecteplase non-inferior to alteplase for LVO | Class IIa, Level B-R | AcT trial (2022); EXTEND-IA TNK |
-| Thrombectomy for LVO 0-6h | Class I, Level A | MR CLEAN, ESCAPE, EXTEND-IA, SWIFT-PRIME, REVASCAT |
-| Thrombectomy for LVO 6-24h (selected patients) | Class I, Level A | DAWN trial; DEFUSE-3 |
-| DAPT 21 days for minor stroke/high-risk TIA | Class I, Level A | CHANCE trial; POINT trial |
+| IV alteplase within 4.5h | Class I, Level A | [AHA/ASA 2019 Guidelines (Powers et al.)](https://pubmed.ncbi.nlm.nih.gov/31662037/); [NINDS trial (NEJM 1995)](https://pubmed.ncbi.nlm.nih.gov/7477192/); [ECASS III (Hacke et al. NEJM 2008)](https://pubmed.ncbi.nlm.nih.gov/18815396/) |
+| Tenecteplase non-inferior to alteplase for LVO | Class IIa, Level B-R | [AcT trial (Menon et al. Lancet 2022)](https://pubmed.ncbi.nlm.nih.gov/35779553/); EXTEND-IA TNK |
+| Thrombectomy for LVO 0-6h | Class I, Level A | [MR CLEAN (Berkhemer et al. NEJM 2015)](https://pubmed.ncbi.nlm.nih.gov/25517348/), ESCAPE, EXTEND-IA, SWIFT-PRIME, REVASCAT |
+| Thrombectomy for LVO 6-24h (selected patients) | Class I, Level A | [DAWN trial (Nogueira et al. NEJM 2018)](https://pubmed.ncbi.nlm.nih.gov/29129157/); [DEFUSE-3 (Albers et al. NEJM 2018)](https://pubmed.ncbi.nlm.nih.gov/29364767/) |
+| DAPT 21 days for minor stroke/high-risk TIA | Class I, Level A | [CHANCE trial (Wang et al. NEJM 2013)](https://pubmed.ncbi.nlm.nih.gov/23803136/); POINT trial |
 | Aspirin + ticagrelor 30 days for minor stroke | Class IIa, Level B-R | THALES trial |
-| High-intensity statin therapy | Class I, Level A | SPARCL trial; AHA/ASA 2021 |
+| High-intensity statin therapy | Class I, Level A | [SPARCL trial (Amarenco et al. NEJM 2006)](https://pubmed.ncbi.nlm.nih.gov/16899775/); AHA/ASA 2021 |
 | Anticoagulation for AF-related stroke | Class I, Level A | RE-LY, ROCKET-AF, ARISTOTLE, ENGAGE AF |
 | BP target <130/80 for secondary prevention | Class I, Level A | SPS3 trial; AHA/ASA 2021 |
 | Early mobilization (24-48h, not aggressive) | Class IIa, Level B-R | AVERT trial (very early <24h aggressive mobilization harmful) |

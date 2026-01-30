@@ -1,0 +1,1367 @@
+{
+  "id": "spinal-cord-compression-malignant",
+  "title": "Spinal Cord Compression (Malignant)",
+  "version": "1.0",
+  "icd10": [
+    "** G95.20 (Unspecified cord compression)",
+    "C79.49 (Secondary malignant neoplasm of other parts of nervous system)",
+    "C79.51 (Secondary malignant neoplasm of bone)",
+    "M49.50 (Collapsed vertebra in diseases classified elsewhere)",
+    "G82.20 (Paraplegia",
+    "unspecified)"
+  ],
+  "scope": "** Emergency evaluation and management of malignant (metastatic) spinal cord compression in adults. Covers dexamethasone protocols, emergent imaging, surgical decompression criteria (Patchell criteria), radiation therapy, vertebral body assessment, functional prognostication, and disposition. Excludes non-malignant compressive myelopathy (disc herniation, epidural abscess — separate templates), primary spinal cord tumors (intramedullary), and cauda equina syndrome from malignancy (partially overlaps — see separate template for CES).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline; surgical candidacy; chemotherapy effects; infection (epidural abscess differential)",
+          "target": "Normal; leukocytosis may suggest infection; thrombocytopenia affects surgical/procedural candidacy"
+        },
+        {
+          "item": "CMP (BMP + LFTs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal function (contrast, medications); electrolytes (hypercalcemia of malignancy); hepatic function (chemotherapy dosing, metastatic disease)",
+          "target": "Normal; calcium >10.5 mg/dL → assess for hypercalcemia of malignancy"
+        },
+        {
+          "item": "PT/INR, aPTT",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy assessment; surgical candidacy; anticoagulation reversal if emergent surgery needed",
+          "target": "Normal; INR <1.5 for surgery"
+        },
+        {
+          "item": "ESR / CRP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Epidural abscess differential (highly elevated ESR >30-50 typically); inflammatory markers for malignancy",
+          "target": "Normal-mildly elevated in malignancy; markedly elevated ESR/CRP → strongly consider abscess"
+        },
+        {
+          "item": "Blood cultures (x2 sets)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Epidural abscess differential; bacteremia if febrile",
+          "target": "Negative; positive → epidural abscess more likely than tumor"
+        },
+        {
+          "item": "Blood glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline before high-dose dexamethasone; steroid hyperglycemia",
+          "target": "<180 mg/dL; anticipate significant hyperglycemia with high-dose steroids"
+        },
+        {
+          "item": "Type and screen",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Surgical candidacy; blood product availability",
+          "target": "On file"
+        },
+        {
+          "item": "Calcium (ionized or corrected)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypercalcemia of malignancy (present in 10-30% of cancer patients); can cause confusion, weakness mimicking cord compression progression",
+          "target": "Corrected Ca <10.5 mg/dL; if elevated → IV fluids, calcitonin, bisphosphonate"
+        },
+        {
+          "item": "LDH",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Tumor burden marker; lymphoma (very high LDH); prognostic",
+          "target": "Normal; very high → lymphoma, aggressive malignancy"
+        },
+        {
+          "item": "Urinalysis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Urinary retention (neurogenic bladder from cord compression); UTI (fever differential); baseline renal function",
+          "target": "Normal; retention with high post-void residual expected in cord compression"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Tumor markers (PSA, CEA, CA 19-9, CA 125, CA 15-3, AFP, β-hCG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Unknown primary cancer; PSA (prostate — most common spinal metastasis), CEA (GI, lung), CA 15-3 (breast), etc.",
+          "target": "Elevations guide primary site identification"
+        },
+        {
+          "item": "SPEP / UPEP with immunofixation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Multiple myeloma (common cause of vertebral compression/cord compression); M-protein, light chains",
+          "target": "No monoclonal protein; if present → myeloma workup"
+        },
+        {
+          "item": "Free light chains (kappa/lambda ratio)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Myeloma; light chain disease",
+          "target": "Normal ratio (0.26-1.65); abnormal suggests myeloma"
+        },
+        {
+          "item": "Serum protein electrophoresis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Myeloma; lymphoma",
+          "target": "No M-spike"
+        },
+        {
+          "item": "Alkaline phosphatase (bone-specific)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Osteoblastic metastases (prostate, breast); Paget's disease differential",
+          "target": "Normal; elevated suggests bone turnover"
+        },
+        {
+          "item": "Phosphate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypercalcemia workup; oncologic emergency assessment",
+          "target": "Normal"
+        },
+        {
+          "item": "Uric acid",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Tumor lysis syndrome risk (lymphoma, rapidly proliferating tumors); pre-treatment assessment",
+          "target": "Normal"
+        },
+        {
+          "item": "Procalcitonin",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "If infection/abscess differential is high; more specific than CRP for bacterial infection",
+          "target": "<0.25 ng/mL (low probability bacterial); >0.5 → consider abscess/infection"
+        },
+        {
+          "item": "TSH, free T4",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid cancer metastases (follicular thyroid cancer has bony tropism)",
+          "target": "Normal"
+        },
+        {
+          "item": "Vitamin D (25-OH)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Bone health; pathologic fracture risk; supplement if deficient",
+          "target": ">30 ng/mL"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Flow cytometry (peripheral blood)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Lymphoma/leukemia presenting as epidural mass",
+          "target": "Abnormal lymphocyte population = lymphoproliferative disorder"
+        },
+        {
+          "item": "Bone marrow biopsy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Myeloma; lymphoma; unknown primary with bone marrow involvement",
+          "target": "Normal; abnormal → specific diagnosis"
+        },
+        {
+          "item": "Paraneoplastic antibody panel",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If myelopathy features atypical for compression (e.g., subacute progressive without clear structural compression)",
+          "target": "Negative; positive changes diagnosis from compression to paraneoplastic myelopathy"
+        },
+        {
+          "item": "AQP4-IgG (NMO antibody)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If imaging shows longitudinal intramedullary lesion rather than epidural compression → NMOSD differential",
+          "target": "Negative; positive → NMOSD not metastatic compression"
+        },
+        {
+          "item": "CT-guided biopsy of vertebral lesion",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Unknown primary; tissue diagnosis needed before treatment; lymphoma requires tissue for definitive diagnosis (sensitive to steroids — obtain tissue BEFORE steroids if possible in suspected lymphoma)",
+          "target": "Histopathologic diagnosis"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "LP — Generally NOT indicated",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "LP is NOT routinely indicated in MSCC; CSF cytology only if leptomeningeal disease suspected AND no complete block; CT myelogram if MRI not available (different indication)",
+          "target": "N/A — LP is diagnostic adjunct only in specific situations",
+          "contraindications": "CONTRAINDICATED with complete spinal block above LP level (risk of neurologic deterioration/coning); coagulopathy; local infection"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI entire spine with and without contrast (gadolinium)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT",
+          "timing": "**Within 4 hours of presentation (24h max)**; GOLD STANDARD; must image ENTIRE spine (multifocal metastases in 30-40%)",
+          "target": "Epidural mass with cord compression; level(s) of compression; Bilsky grade (0-3); vertebral body involvement; number of levels; intramedullary vs. extramedullary-intradural vs. epidural; cord signal change (T2 hyperintensity = edema/myelopathy — poor prognostic sign); paraspinal soft tissue extension",
+          "contraindications": "MRI-incompatible implants; severe claustrophobia (sedate); GFR <30 (gadolinium risk — benefit outweighs risk in emergency)"
+        },
+        {
+          "item": "Plain radiographs (spine, targeted)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Immediate while awaiting MRI; identifies vertebral collapse, pathologic fracture, alignment; 70% sensitivity for vertebral metastases (30% miss rate)",
+          "target": "Vertebral body collapse; pedicle erosion (\"winking owl sign\" on AP); pathologic fracture; kyphosis; alignment",
+          "contraindications": "Pregnancy (shield)"
+        },
+        {
+          "item": "CT chest/abdomen/pelvis with contrast",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within 24-48h; staging; primary identification; lung is most common primary",
+          "target": "Primary tumor; staging of metastatic disease; lymphadenopathy; visceral metastases",
+          "contraindications": "Contrast allergy; renal impairment"
+        },
+        {
+          "item": "CT spine (targeted level) without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If MRI contraindicated or unavailable; pre-operative planning for bone assessment; vertebral body stability (SINS score); CT myelogram if MRI not possible",
+          "target": "Bone destruction pattern (lytic vs. blastic vs. mixed); posterior element involvement; fracture; canal compromise; vertebral body collapse >50%",
+          "contraindications": "Pregnancy (risk vs. benefit)"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "CT myelogram",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If MRI contraindicated (pacemaker, implant); intrathecal contrast via LP → CT; demonstrates level of block",
+          "target": "Complete or partial subarachnoid block; level of compression; multiple levels of disease",
+          "contraindications": "LP contraindicated if complete block above puncture site (risk of neurologic deterioration); coagulopathy"
+        },
+        {
+          "item": "PET/CT (FDG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Staging; primary identification; assessing treatment response; distinguishing active tumor from treated/necrotic bone",
+          "target": "Active metastatic disease; primary tumor identification",
+          "contraindications": "Uncontrolled diabetes; pregnancy"
+        },
+        {
+          "item": "Bone scan (Tc-99m)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Skeletal staging; identifies additional osseous metastases; blastic > lytic sensitivity; useful for prostate, breast",
+          "target": "Additional bone metastases; may miss purely lytic lesions (renal, thyroid, myeloma)",
+          "contraindications": "Pregnancy"
+        },
+        {
+          "item": "MRI brain with contrast",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If lung primary or melanoma (high brain metastasis risk); symptoms suggesting intracranial disease",
+          "target": "Brain metastases (concurrent in 10-30% of patients with MSCC)",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "CT-guided biopsy (vertebral/paraspinal)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Tissue diagnosis if unknown primary; CRITICAL for suspected lymphoma (radiosensitive — may not need surgery); obtain BEFORE steroids if lymphoma suspected (steroids can render biopsy non-diagnostic)",
+          "target": "Histopathologic diagnosis; molecular profiling",
+          "contraindications": "Coagulopathy; inaccessible lesion"
+        },
+        {
+          "item": "DEXA scan",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Baseline bone density if prolonged steroids anticipated; osteoporosis risk",
+          "target": "T-score; fracture risk assessment",
+          "contraindications": "None significant"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Spinal angiography",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If highly vascular tumor suspected (RCC, thyroid) — pre-operative embolization to reduce surgical bleeding",
+          "target": "Tumor vascularity; feeding vessels; embolization candidacy",
+          "contraindications": "Contrast allergy; renal impairment; coagulopathy"
+        },
+        {
+          "item": "Pre-operative embolization",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "Highly vascular metastases (RCC, thyroid); 24-48h before surgery to reduce intraoperative blood loss",
+          "target": "Reduction of tumor blood supply",
+          "contraindications": "Contrast allergy; tumor supplying anterior spinal artery (risk of cord infarction)"
+        },
+        {
+          "item": "Dynamic flexion-extension radiographs",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Post-treatment stability assessment; if clinical instability suspected",
+          "target": "Mechanical instability (translation, angulation)",
+          "contraindications": "Acute cord compression (do NOT flex/extend if acute neurologic deficit)"
+        },
+        {
+          "item": "Nuclear medicine thyroid scan",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If thyroid primary suspected (follicular thyroid cancer has high bone tropism)",
+          "target": "Thyroid nodule; functional assessment",
+          "contraindications": "Recent iodinated contrast (wait 4-6 weeks)"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent Treatment": [
+        {
+          "item": "**Dexamethasone (high-dose for MSCC)**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "**Dexamethasone (high-dose for MSCC)** 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**Standard loading dose:** 10 mg IV bolus STAT; **Then:** 4 mg IV/PO q6h (16 mg/day); **High-dose (severe deficits or rapidly progressive):** 96 mg IV bolus (controversial — see evidence) → 24 mg q6h x 3 days → rapid taper; **Moderate deficits / ambulatory:** 10 mg IV → 4 mg q6h; **Begin taper after definitive treatment initiated;** GI prophylaxis: PPI while on steroids; Monitor glucose q6h",
+            "orderSentence": "**Dexamethasone (high-dose for MSCC)** 10 mg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Sorensen et al. (1994): Dexamethasone + radiation vs. radiation alone → 81% vs. 63% ambulatory at treatment end; High-dose (96 mg) vs. standard (10 mg): Vecht et al. (1989) — higher response rate at 1 week but more side effects; MOST centers now use moderate dose (10 mg load → 16 mg/day); Begin within 6h of diagnosis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Spinal precautions / immobilization**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Strict log-roll precautions; flat bed transport; cervical collar if cervical spine involved; thoracolumbar brace (TLSO) if thoracolumbar; avoid flexion/extension; transfer on spine board if unstable fracture suspected",
+            "orderSentence": "**Spinal precautions / immobilization** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Unstable pathologic fracture may worsen cord compression with movement; SINS score guides instability assessment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Bladder management**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mL",
+                "orderSentence": "**Bladder management** 200 mL -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Assess for urinary retention (cord compression causes neurogenic bladder); straight catheterize if retention → place Foley if residual >200 mL or ongoing retention; monitor I&O strictly",
+            "orderSentence": "**Bladder management** 200 mL -"
+          },
+          "contraindications": "-",
+          "monitoring": "Urinary retention is a common presenting feature and may be the first sign of cord compression; bladder function correlates with motor recovery prognosis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**DVT prophylaxis**",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "**DVT prophylaxis** 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "SCDs immediately; pharmacologic prophylaxis (enoxaparin 40 mg SQ daily) within 24-48h unless surgery imminent; spinal cord compression patients have VERY HIGH VTE risk (up to 25-50% without prophylaxis)",
+            "orderSentence": "**DVT prophylaxis** 40 mg SC"
+          },
+          "contraindications": "-",
+          "monitoring": "Cancer + immobility + spinal cord injury = extremely high VTE risk; mechanical prophylaxis alone insufficient",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Pain management**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "**Pain management** 650-1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Back pain often severe; acetaminophen 650-1000 mg q6h scheduled + opioids PRN (morphine 2-4 mg IV q3h PRN or oxycodone 5-10 mg PO q4h PRN); NSAIDs cautiously (renal function, bleeding risk); dexamethasone itself reduces pain from edema/inflammation; neuropathic pain: gabapentin 300 mg TID (titrate) or pregabalin 75 mg BID",
+            "orderSentence": "**Pain management** 650-1000 mg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Pain is the presenting symptom in 83-95% of patients; median 7 weeks before diagnosis; adequate analgesia essential for function and quality of life",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Bowel regimen**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "**Bowel regimen** 100 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Neurogenic bowel from cord compression + opioid constipation; docusate 100 mg BID + senna 2 tabs HS; bisacodyl suppository PRN; monitor for ileus",
+            "orderSentence": "**Bowel regimen** 100 mg -"
+          },
+          "contraindications": "-",
+          "monitoring": "Bowel dysfunction common; proactive management prevents complications",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Glucose monitoring**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Fingerstick q6h on high-dose dexamethasone; insulin sliding scale → basal-bolus if persistent >180; anticipate glucose will rise significantly within hours of steroid initiation",
+            "orderSentence": "**Glucose monitoring** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "High-dose dexamethasone causes severe hyperglycemia in majority of patients",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Definitive/Targeted Treatment": [
+        {
+          "item": "**Surgical decompression + stabilization**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**Indications (Patchell criteria + expanded):** (1) Single site of compression, (2) Paraplegia ≤48h, (3) Not radiosensitive tumor (not lymphoma, myeloma, SCLC, germ cell), (4) Life expectancy >3 months, (5) ECOG ≤2 / able to tolerate surgery, (6) Mechanical instability (SINS ≥7), (7) Neurologic deterioration during radiation; **Approach:** Posterior decompressive laminectomy ± instrumented stabilization; anterior corpectomy with cage/cement for anterior compression with instability; **Timing:** Within 24h of presentation (ideally <12h); Followed by radiation within 2-4 weeks post-op",
+            "orderSentence": "**Surgical decompression + stabilization** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "**Patchell et al. (2005) — LANDMARK:** Surgery + radiation vs. radiation alone: ambulatory rate 84% vs. 57% (p=0.001); maintained ambulation longer (122 vs. 13 days); more patients regained ambulation (62% vs. 19%); surgery retained continence longer; survival trend (126 vs. 100 days)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**External beam radiation therapy (EBRT)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**Primary modality if:** Radiosensitive tumor (lymphoma, myeloma, SCLC, seminoma), surgical contraindication, multiple noncontiguous levels, life expectancy <3 months, poor surgical candidate; **Standard:** 30 Gy in 10 fractions (2 weeks) or 20 Gy in 5 fractions (1 week); **Short course (poor prognosis):** 8 Gy single fraction; **Begin within 24h of diagnosis**; Can start same day as dexamethasone; Radiation field covers 1-2 vertebral bodies above and below involved segment",
+            "orderSentence": "**External beam radiation therapy (EBRT)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Rades et al. (2008): No significant difference between 30 Gy/10 vs. 20 Gy/5 for motor function recovery or local control; 8 Gy single fraction appropriate for poor prognosis (life expectancy <6 months)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Stereotactic body radiation therapy (SBRT) / Spine SRS**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**Indications:** Previously irradiated segment (re-irradiation); radioresistant histology (RCC, melanoma, sarcoma); oligometastatic disease; post-operative; **Dose:** 16-24 Gy single fraction or 24-30 Gy in 3 fractions; **Requires:** Spinal cord dose constraints (max cord dose 10-14 Gy single fraction); MRI-based planning; **Timing:** As soon as technically feasible",
+            "orderSentence": "**Stereotactic body radiation therapy (SBRT) / Spine SRS** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "RTOG 0631 and multiple institutional series: High local control (85-95%) for radioresistant histologies; superior to conventional EBRT for RCC, melanoma; separation surgery + SBRT emerging as preferred approach for radioresistant tumors",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Separation surgery + SBRT**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**Indication:** Epidural tumor compressing cord from radioresistant primary (RCC, melanoma, sarcoma); goal is NOT gross total resection — goal is to decompress cord and create ≥2mm separation between tumor and cord to enable safe SBRT delivery; Followed by SBRT within 2-4 weeks",
+            "orderSentence": "**Separation surgery + SBRT** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Laufer et al. (2013): Separation surgery + SBRT: 90% local control at 1 year for radioresistant tumors; allows definitive radiation dose to tumor while respecting cord tolerance",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Vertebroplasty / Kyphoplasty**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**Indications:** Painful pathologic compression fracture; vertebral body instability; post-radiation pain; NO epidural extension compressing cord (cement leak risk into canal); **SINS 7-12 (indeterminate stability):** Consider as adjunct; **Procedure:** Percutaneous PMMA cement injection into vertebral body",
+            "orderSentence": "**Vertebroplasty / Kyphoplasty** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Pain relief in 70-90% within 24-48h; structural support; does NOT address epidural disease; risk of cement leak into epidural space (1-5%)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Systemic chemotherapy**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**Radiosensitive tumors as primary/adjunct therapy:** Lymphoma (R-CHOP or equivalent); myeloma (bortezomib-based); SCLC (cisplatin/etoposide); germ cell (BEP); **Other primaries:** Per disease-specific guidelines after stabilization; coordinate with medical oncology",
+            "orderSentence": "**Systemic chemotherapy** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Chemosensitive tumors (lymphoma, myeloma, germ cell, SCLC) may respond rapidly to systemic therapy; may be used as primary treatment with radiation or as consolidation post-radiation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Hormonal therapy (if applicable)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Prostate cancer: ADT (LHRH agonist/antagonist) + enzalutamide/abiraterone/darolutamide; Breast cancer: anti-estrogen/AI per receptor status; Thyroid: levothyroxine suppression + RAI (spine metastases do NOT concentrate RAI well — external radiation preferred)",
+            "orderSentence": "**Hormonal therapy (if applicable)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Prostate and breast cancer spinal metastases may respond to hormonal manipulation; adjunct to radiation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Adjunctive Treatment": [
+        {
+          "item": "**Steroid taper**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-4 mg",
+                "orderSentence": "**Steroid taper** 2-4 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Begin taper once definitive treatment (surgery/radiation) initiated and neurologic status stable/improving; **Taper schedule:** Reduce by 2-4 mg every 3-5 days; typical: 16→12→8→6→4→2→off over 2-3 weeks; slower taper if symptoms recur; monitor for adrenal insufficiency if >2-3 weeks of steroids",
+            "orderSentence": "**Steroid taper** 2-4 mg -"
+          },
+          "contraindications": "-",
+          "monitoring": "Prolonged high-dose steroids cause significant morbidity; steroid myopathy (proximal weakness — may mimic neurologic progression); PJP risk; hyperglycemia; GI bleed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**PPI (stress ulcer/GI prophylaxis)**",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "**PPI (stress ulcer/GI prophylaxis)** 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Omeprazole 20 mg daily or pantoprazole 40 mg daily while on dexamethasone",
+            "orderSentence": "**PPI (stress ulcer/GI prophylaxis)** 20 mg PO"
+          },
+          "contraindications": "-",
+          "monitoring": "Steroid + critical illness increases GI bleed risk",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Calcium + Vitamin D**",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1200 mg",
+                "orderSentence": "**Calcium + Vitamin D** 1000-1200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 1000-1200 mg + Vitamin D 800-1000 IU daily during steroid course and beyond (bone health in cancer patients)",
+            "orderSentence": "**Calcium + Vitamin D** 1000-1200 mg PO"
+          },
+          "contraindications": "-",
+          "monitoring": "Steroid-induced osteoporosis prevention; already compromised bone integrity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Bone-modifying agents**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "**Bone-modifying agents** 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Zoledronic acid 4 mg IV q4 weeks OR denosumab 120 mg SQ q4 weeks; reduces skeletal-related events (SRE); dental clearance before starting (ONJ risk); renal adjustment for zoledronic acid (hold if GFR <35)",
+            "orderSentence": "**Bone-modifying agents** 4 mg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Zoledronic acid: Rosen et al. (2003) — reduced SRE by 48% in bone metastases; denosumab: Fizazi et al. (2011) — superior to zoledronic acid for SRE reduction in bone metastases (prostate trial)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Neuropathic pain management**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "**Neuropathic pain management** 300 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Gabapentin 300 mg TID → titrate to 600-900 mg TID; OR pregabalin 75 mg BID → titrate to 150-300 mg BID; duloxetine 30-60 mg daily as alternative; amitriptyline 10-25 mg HS (anticholinergic caution with urinary retention)",
+            "orderSentence": "**Neuropathic pain management** 300 mg -"
+          },
+          "contraindications": "-",
+          "monitoring": "Radicular and central neuropathic pain common in cord compression; adjuvant analgesics reduce opioid requirements",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Rehabilitation (inpatient)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "PT/OT evaluation within 24h of admission; early mobilization when cleared by spine surgery; adaptive equipment; wheelchair assessment if paraparetic/paraplegic; ROM exercises; strengthening; transfer training",
+            "orderSentence": "**Rehabilitation (inpatient)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Early rehabilitation improves functional outcomes; cancer rehabilitation is evidence-based; patients with MSCC benefit from structured rehab programs",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Skin care / pressure ulcer prevention**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Turn q2h; pressure-reducing mattress; heel protectors; skin assessment with Braden scale; nutrition optimization",
+            "orderSentence": "**Skin care / pressure ulcer prevention** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Immobile patients with cord compression at very high risk for pressure injuries; prevention is critical",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Medications to AVOID or Use with Caution": [
+        {
+          "item": "NSAIDs (prolonged use)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "NSAIDs (prolonged use) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Methotrexate (high-dose, with spinal radiation)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Methotrexate (high-dose, with spinal radiation) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Intrathecal chemotherapy (with spinal block)",
+          "route": "IT",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Intrathecal chemotherapy (with spinal block) - IT - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Anticoagulation (full-dose, peri-operative)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Anticoagulation (full-dose, peri-operative) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Steroids in suspected lymphoma (BEFORE biopsy)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Steroids in suspected lymphoma (BEFORE biopsy) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Bevacizumab (peri-operative)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Bevacizumab (peri-operative) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Bisphosphonates (if GFR <35 for zoledronic acid)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Bisphosphonates (if GFR <35 for zoledronic acid) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurosurgery / Spine surgery consultation — EMERGENT",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Radiation oncology consultation — EMERGENT",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Medical oncology consultation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Multidisciplinary spine tumor board",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Goals of care discussion",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical medicine & rehabilitation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Foley catheter management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Social work / case management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management / palliative care",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Interventional radiology consultation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Orthotics / bracing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wound care (post-operative)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nutrition / dietitian",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychology / psychiatry",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urology consultation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Home health referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Re-irradiation (spine)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Repeat surgery",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Intrathecal drug delivery",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Cement augmentation (post-radiation)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hospice referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clinical trial enrollment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Diagnosis",
+      "features": "Key Differentiating Features",
+      "tests": "Distinguishing Studies"
+    },
+    {
+      "diagnosis": "Spinal epidural abscess",
+      "features": "Fever (present in 50-66%); IV drug use, recent procedure, immunosuppression; rapidly progressive; ESR >20 (sensitivity 94%); CRP markedly elevated; ring-enhancing epidural collection on MRI; restricted diffusion in abscess; spine pain with percussion tenderness; leukocytosis",
+      "tests": "MRI: T2-hyperintense epidural collection with rim enhancement; restricted diffusion (DWI bright, ADC dark) within abscess; blood cultures (positive in 60%); ESR/CRP markedly elevated; procalcitonin >0.5"
+    },
+    {
+      "diagnosis": "Degenerative spinal stenosis (cervical/lumbar)",
+      "features": "Chronic progressive symptoms; myelopathic signs insidious onset; no cancer history; disc/osteophyte complex on imaging; NO destructive bone lesion; congenital canal narrowing",
+      "tests": "MRI: disc-osteophyte complex; ligamentum flavum hypertrophy; NO bone destruction; NO contrast enhancement of epidural mass; chronic degenerative changes"
+    },
+    {
+      "diagnosis": "Primary spinal cord tumor (intramedullary)",
+      "features": "Intramedullary (within cord parenchyma); ependymoma, astrocytoma; cord expansion with central lesion; no vertebral body destruction; slow progression; syrinx may be present",
+      "tests": "MRI: cord expansion with intramedullary enhancing lesion; no epidural mass; no vertebral body involvement; ependymoma: central location, hemosiderin cap; astrocytoma: eccentric, irregular"
+    },
+    {
+      "diagnosis": "Vertebral compression fracture (osteoporotic)",
+      "features": "No cancer history; older patient with osteoporosis; acute back pain after minor trauma/lifting; no neurologic deficits (usually); vertebral body collapsed but NO epidural mass; NO posterior element involvement",
+      "tests": "MRI: vertebral body edema (T1 low, STIR high) WITHOUT epidural mass or posterior element involvement; CT: no bone destruction beyond fracture; DEXA: osteoporosis; if ambiguous → biopsy"
+    },
+    {
+      "diagnosis": "Multiple myeloma",
+      "features": "Older adult; bone pain; anemia, renal insufficiency, hypercalcemia (\"CRAB\"); diffuse lytic lesions; monoclonal protein on SPEP; punched-out skull lesions; responsive to chemotherapy AND radiation",
+      "tests": "SPEP: M-protein; UPEP: Bence Jones protein; free light chains: abnormal ratio; bone marrow biopsy: >10% plasma cells; CT/MRI: multiple lytic lesions; biopsy: plasmacytoma; KEY: myeloma is RADIOSENSITIVE — radiation first-line"
+    },
+    {
+      "diagnosis": "Lymphoma (epidural)",
+      "features": "May present as isolated epidural mass; radiosensitive; responds dramatically to steroids (may \"melt\" before biopsy); younger patients; constitutional symptoms (B symptoms); elevated LDH",
+      "tests": "MRI: epidural mass; homogeneous enhancement; may be paraspinal; CT: lymphadenopathy; LDH elevated; flow cytometry; KEY: obtain biopsy BEFORE steroids if possible; radiation is primary treatment"
+    },
+    {
+      "diagnosis": "Transverse myelitis / NMOSD",
+      "features": "Intramedullary T2 lesion on MRI (NOT epidural mass); autoimmune history; AQP4/MOG antibodies; longitudinally extensive (≥3 segments in NMOSD); responds to IV steroids/PLEX; no bone lesion",
+      "tests": "MRI: intramedullary T2 hyperintensity, NOT epidural mass; AQP4-IgG or MOG-IgG positive; CSF: pleocytosis; no vertebral body destruction"
+    },
+    {
+      "diagnosis": "Spinal epidural hematoma",
+      "features": "Acute onset, often on anticoagulation; post-procedural (LP, epidural injection); acute neurogenic deficit; hyperacute T1 signal on MRI (blood)",
+      "tests": "MRI: epidural collection with blood signal characteristics (T1 hyperintense in subacute phase); history of anticoagulation or procedure; coagulation studies abnormal; neurosurgical emergency"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Guideline",
+      "evidenceLevel": "Source",
+      "source": "Year"
+    },
+    {
+      "recommendation": "MSCC Management",
+      "evidenceLevel": "NICE Clinical Guideline CG75 (updated)",
+      "source": "2008/2023"
+    },
+    {
+      "recommendation": "Spinal Metastases",
+      "evidenceLevel": "NCCN Clinical Practice Guidelines",
+      "source": "2025"
+    },
+    {
+      "recommendation": "Bone-Modifying Agents",
+      "evidenceLevel": "ASCO Clinical Practice Guideline",
+      "source": "2017"
+    },
+    {
+      "recommendation": "MSCC Radiation",
+      "evidenceLevel": "Cochrane Systematic Review (George et al.)",
+      "source": "2015"
+    },
+    {
+      "recommendation": "Study",
+      "evidenceLevel": "Finding",
+      "source": "Impact"
+    },
+    {
+      "recommendation": "[Patchell et al. (2005) — Lancet](https://pubmed.ncbi.nlm.nih.gov/16112300/)",
+      "evidenceLevel": "Direct decompressive surgery + radiation vs. radiation alone for MSCC: ambulatory 84% vs. 57% (p=0.001); regained ambulation 62% vs. 19%; maintained ambulation 122 vs. 13 days; maintained continence longer",
+      "source": "LANDMARK study establishing surgery + radiation as superior to radiation alone for single-level MSCC in non-radiosensitive tumors with life expectancy >3 months"
+    },
+    {
+      "recommendation": "[Sorensen et al. (1994)](https://pubmed.ncbi.nlm.nih.gov/8142159/)",
+      "evidenceLevel": "Dexamethasone + radiation vs. radiation alone: ambulation 81% vs. 63% at end of treatment; 59% vs. 33% at 3 months",
+      "source": "Established dexamethasone as standard adjunct to radiation in MSCC"
+    },
+    {
+      "recommendation": "[Vecht et al. (1989)](https://pubmed.ncbi.nlm.nih.gov/2771077/)",
+      "evidenceLevel": "High-dose (96 mg) vs. standard (10 mg) dexamethasone: faster initial response with high-dose but similar outcomes at 1 week; more side effects with high-dose",
+      "source": "Most centers now use moderate dose (10 mg load → 16 mg/day) due to side effect profile"
+    },
+    {
+      "recommendation": "[Rades et al. (2008)](https://pubmed.ncbi.nlm.nih.gov/18539406/)",
+      "evidenceLevel": "Short-course (20 Gy/5 fractions) vs. standard (30 Gy/10 fractions): no significant difference in motor function improvement for patients with poor prognosis",
+      "source": "Short-course radiation appropriate for patients with limited life expectancy"
+    },
+    {
+      "recommendation": "[Laufer et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23339593/)",
+      "evidenceLevel": "Separation surgery + SBRT for radioresistant MSCC: 90% local control at 1 year; enabled delivery of effective radiation doses to previously radioresistant tumors",
+      "source": "Established separation surgery + SBRT paradigm for RCC, melanoma, sarcoma spinal metastases"
+    },
+    {
+      "recommendation": "[Rosen et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/14534891/)",
+      "evidenceLevel": "Zoledronic acid reduced skeletal-related events by 48% compared to placebo in bone metastases from breast cancer and myeloma",
+      "source": "Standard bone-modifying therapy for cancer-related bone disease"
+    },
+    {
+      "recommendation": "[Fizazi et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21353695/)",
+      "evidenceLevel": "Denosumab superior to zoledronic acid in reducing SRE in prostate cancer bone metastases (HR 0.82, p=0.008)",
+      "source": "Denosumab as alternative/preferred bone-modifying agent; no renal adjustment needed"
+    },
+    {
+      "recommendation": "SINS Total Score",
+      "evidenceLevel": "Interpretation",
+      "source": "Action"
+    },
+    {
+      "recommendation": "0-6",
+      "evidenceLevel": "Stable",
+      "source": "Non-surgical management appropriate"
+    },
+    {
+      "recommendation": "7-12",
+      "evidenceLevel": "Indeterminate (potentially unstable)",
+      "source": "Surgical consultation recommended"
+    },
+    {
+      "recommendation": "13-18",
+      "evidenceLevel": "Unstable",
+      "source": "Surgical stabilization recommended"
+    },
+    {
+      "recommendation": "Parameter",
+      "evidenceLevel": "Score 0",
+      "source": "Score 1"
+    },
+    {
+      "recommendation": "General condition (KPS)",
+      "evidenceLevel": "Poor (10-40%)",
+      "source": "Moderate (50-70%)"
+    },
+    {
+      "recommendation": "Number of extraspinal bone metastases",
+      "evidenceLevel": "≥3",
+      "source": "1-2"
+    },
+    {
+      "recommendation": "Number of vertebral body metastases",
+      "evidenceLevel": "≥3",
+      "source": "2"
+    },
+    {
+      "recommendation": "Metastases to major organs",
+      "evidenceLevel": "Unremovable",
+      "source": "Removable"
+    },
+    {
+      "recommendation": "Primary tumor site",
+      "evidenceLevel": "Lung, osteosarcoma, stomach, bladder, esophagus, pancreas",
+      "source": "Liver, gallbladder, unidentified"
+    },
+    {
+      "recommendation": "Neurologic deficit (Frankel)",
+      "evidenceLevel": "Complete (A/B)",
+      "source": "Incomplete (C/D)"
+    },
+    {
+      "recommendation": "Tokuhashi Score",
+      "evidenceLevel": "Predicted Survival",
+      "source": "Recommended Treatment"
+    },
+    {
+      "recommendation": "0-8",
+      "evidenceLevel": "<6 months",
+      "source": "Palliative/conservative (short-course radiation)"
+    },
+    {
+      "recommendation": "9-11",
+      "evidenceLevel": "6-12 months",
+      "source": "Palliative or excisional surgery depending on factors"
+    },
+    {
+      "recommendation": "12-15",
+      "evidenceLevel": ">12 months",
+      "source": "Excisional surgery; aggressive treatment justified"
+    },
+    {
+      "recommendation": "Factor",
+      "evidenceLevel": "Assessment",
+      "source": "Treatment Implications"
+    },
+    {
+      "recommendation": "**N**eurologic",
+      "evidenceLevel": "Degree of cord compression (Bilsky grade); functional status; myelopathy",
+      "source": "High-grade compression (Bilsky 2-3) → surgical decompression; low-grade → radiation alone may suffice"
+    },
+    {
+      "recommendation": "**O**ncologic",
+      "evidenceLevel": "Radiosensitivity; expected tumor response to radiation",
+      "source": "Radiosensitive (lymphoma, myeloma, SCLC) → radiation primary; Radioresistant (RCC, melanoma, sarcoma) → surgery + SBRT"
+    },
+    {
+      "recommendation": "**M**echanical instability",
+      "evidenceLevel": "SINS score",
+      "source": "SINS ≥7 → surgical consultation for stabilization"
+    },
+    {
+      "recommendation": "**S**ystemic disease",
+      "evidenceLevel": "Extent of metastatic burden; medical comorbidities; life expectancy",
+      "source": "Widespread disease, poor prognosis → palliative approach; oligometastatic → aggressive local treatment"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic examination (motor strength, sensory level, rectal tone, reflexes)",
+      "frequency": "q4h x 48h → q6h",
+      "target": "Stable or improving motor function; stable sensory level; preserved rectal tone",
+      "action": "If declining: STAT MRI; escalate dexamethasone to 24 mg/day; emergent neurosurgery"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "q6h (q4h if on insulin drip)",
+      "target": "140-180 mg/dL",
+      "action": "Sliding scale → basal-bolus insulin; endocrine consult if refractory"
+    },
+    {
+      "item": "Pain score (NRS)",
+      "frequency": "q4h",
+      "target": "NRS <4/10",
+      "action": "Escalate analgesics; add neuropathic agents; palliative care consultation"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "q4h (continuous if neurogenic shock)",
+      "target": "SBP >90 (avoid hypotension — cord perfusion); MAP >65-70",
+      "action": "IV fluids; vasopressors if neurogenic shock; avoid excessive hypertension (post-operative bleeding risk)"
+    },
+    {
+      "item": "Bladder function (I&O, post-void residual)",
+      "frequency": "q shift; post-void residual daily",
+      "target": "Volitional voiding; PVR <200 mL",
+      "action": "Foley if retention; intermittent catheterization if PVR 200-500"
+    },
+    {
+      "item": "Bowel function",
+      "frequency": "Daily",
+      "target": "Bowel movement within 48-72h",
+      "action": "Aggressive bowel regimen; rectal exam; abdominal X-ray if distended"
+    },
+    {
+      "item": "Skin integrity (Braden scale)",
+      "frequency": "q shift",
+      "target": "No pressure injuries; Braden ≥18",
+      "action": "Turn q2h; specialty mattress; heel protectors; wound care if injury develops"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "q4h",
+      "target": "Afebrile",
+      "action": "If febrile: blood cultures, UA, chest imaging; consider abscess vs. tumor fever"
+    },
+    {
+      "item": "Respiratory function (if cervical/high thoracic)",
+      "frequency": "q4h; bedside spirometry daily",
+      "target": "FVC >15 mL/kg; stable respiratory rate",
+      "action": "If FVC declining: ICU transfer; prepare for intubation; consider phrenic nerve involvement"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Level of Care",
+      "criteria": "Criteria"
+    },
+    {
+      "disposition": "ICU admission",
+      "criteria": "Neurogenic shock (hypotension + bradycardia from spinal cord injury); respiratory compromise from high cervical lesion; post-operative monitoring (first 24h after major spine surgery); acute paraplegia/quadriplegia requiring close monitoring; hemodynamic instability"
+    },
+    {
+      "disposition": "General neurology/neurosurgery/oncology floor",
+      "criteria": "New MSCC diagnosis requiring workup and treatment planning; surgical candidate awaiting decompression; radiation therapy initiation; motor deficits requiring monitoring and rehabilitation; pain management; high-dose steroid initiation"
+    },
+    {
+      "disposition": "Observation",
+      "criteria": "Known metastatic disease with new pain but preserved neurologic function; MRI showing compression without cord signal change; stable neurologic exam"
+    }
+  ]
+}

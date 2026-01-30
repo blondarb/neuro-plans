@@ -1,0 +1,1402 @@
+{
+  "id": "hsv-encephalitis",
+  "title": "HSV Encephalitis",
+  "version": "1.0",
+  "icd10": [
+    "** B00.4 (Herpesviral encephalitis)",
+    "G05.1 (Encephalitis in diseases classified elsewhere)"
+  ],
+  "scope": "** Acute HSV-1 encephalitis in adults — the most common cause of sporadic fatal encephalitis. Covers emergent empiric acyclovir, LP with HSV PCR, MRI findings, seizure management, and monitoring for complications (cerebral edema, SIADH, refractory status epilepticus). Excludes neonatal HSV, HSV-2 meningitis (Mollaret), CMV/EBV/VZV encephalitis, and autoimmune encephalitis (though post-HSV autoimmune encephalitis is addressed).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Baseline; infection markers; lymphopenia may be present",
+          "target": "Normal or mild leukocytosis"
+        },
+        {
+          "item": "CMP (BMP + LFTs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Renal function for acyclovir dosing (nephrotoxic); electrolytes (SIADH); hepatic function",
+          "target": "Normal; watch Na and Cr"
+        },
+        {
+          "item": "Blood cultures x2",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Exclude bacterial meningitis; concurrent bacteremia",
+          "target": "No growth"
+        },
+        {
+          "item": "Coagulation panel (PT/INR, aPTT)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Before LP; coagulopathy workup if DIC suspected",
+          "target": "Normal"
+        },
+        {
+          "item": "Blood glucose (paired with CSF)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "CSF:serum glucose ratio interpretation",
+          "target": "Document paired with LP"
+        },
+        {
+          "item": "Procalcitonin",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Low procalcitonin argues against bacterial meningitis",
+          "target": "Low (<0.5 ng/mL favors viral)"
+        },
+        {
+          "item": "CRP",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Inflammatory marker; lower in viral than bacterial",
+          "target": "Mild elevation"
+        },
+        {
+          "item": "Serum sodium",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "SIADH is common complication of HSV encephalitis",
+          "target": "135-145 mEq/L; watch for hyponatremia"
+        },
+        {
+          "item": "Serum osmolality",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "SIADH evaluation",
+          "target": "280-295 mOsm/kg"
+        },
+        {
+          "item": "Type and screen",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Potential surgical intervention for mass effect",
+          "target": "On file"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "HSV-1/2 IgG and IgM (serum)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Seroconversion supports diagnosis; IgG positive in most adults (not diagnostic alone); IgM suggests acute infection",
+          "target": "Rising titers on paired sera (acute + convalescent at 2-4 weeks)"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Immunocompromise affects prognosis and treatment duration",
+          "target": "Document result"
+        },
+        {
+          "item": "Urine osmolality and sodium",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "SIADH confirmation (urine osm >100, urine Na >40 with low serum Na)",
+          "target": "Evaluate if hyponatremic"
+        },
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction in encephalopathy differential",
+          "target": "Normal"
+        },
+        {
+          "item": "Ammonia",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Hepatic encephalopathy in differential",
+          "target": "Normal"
+        },
+        {
+          "item": "Troponin",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Stress cardiomyopathy; myocarditis in systemic viral illness",
+          "target": "Normal"
+        },
+        {
+          "item": "Toxicology screen (urine)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Altered mental status differential",
+          "target": "Negative"
+        },
+        {
+          "item": "Blood alcohol level",
+          "ED": "URGENT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Altered mental status differential",
+          "target": "Negative"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Autoimmune encephalitis panel (serum) — NMDAR, LGI1, CASPR2",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Post-HSV autoimmune encephalitis occurs in 20-27% (especially anti-NMDAR); also primary differential",
+          "target": "Negative initially; recheck at 2-4 weeks if relapse"
+        },
+        {
+          "item": "Paraneoplastic panel (serum)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If atypical features or oncologic history",
+          "target": "Negative"
+        },
+        {
+          "item": "VZV IgG/IgM (serum)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "VZV encephalitis in differential (especially immunocompromised)",
+          "target": "Negative"
+        },
+        {
+          "item": "Arboviral serologies (West Nile, EEE, St. Louis)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Geographic/seasonal risk; summer-fall encephalitis",
+          "target": "Negative"
+        },
+        {
+          "item": "Rabies antibodies",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Animal exposure history with rapidly progressive encephalitis",
+          "target": "Negative"
+        },
+        {
+          "item": "Bartonella serology",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Cat exposure; neuroretinitis",
+          "target": "Negative"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Elevated in some cases; monitor for ICP issues",
+          "target": "Normal or mildly elevated (usually <300 mm H2O)"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Lymphocytic pleocytosis typical; RBCs may be present (hemorrhagic encephalitis); tube comparison for traumatic tap",
+          "target": "WBC 10-500 cells/µL (lymphocyte predominant); RBC may be elevated (hemorrhagic necrosis)"
+        },
+        {
+          "item": "Protein",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Mildly to moderately elevated",
+          "target": "Elevated (50-200 mg/dL typical; can be higher)"
+        },
+        {
+          "item": "Glucose with paired serum",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Usually NORMAL in HSV (distinguishes from bacterial/TB/fungal)",
+          "target": "Normal (>60% serum glucose ratio); low glucose argues against HSV"
+        },
+        {
+          "item": "HSV-1/2 PCR (CSF)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "GOLD STANDARD diagnostic test; sensitivity 96-98%, specificity ~99%. May be NEGATIVE in first 72h — if clinical suspicion high and initial PCR negative, REPEAT at 3-7 days",
+          "target": "Positive (HSV-1 in >90% adult cases; HSV-2 in neonatal/meningitis)"
+        },
+        {
+          "item": "Gram stain and bacterial culture",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Exclude bacterial meningitis",
+          "target": "No organisms"
+        },
+        {
+          "item": "BioFire FilmArray ME Panel",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Rapid multiplex PCR — includes HSV-1/2, VZV, enterovirus, CMV, HHV-6, and bacterial pathogens; result in ~1 hour",
+          "target": "HSV-1 detected (or other pathogen identified)"
+        },
+        {
+          "item": "VZV PCR (CSF)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "VZV encephalitis in differential; especially immunocompromised and elderly",
+          "target": "Negative (positive → VZV encephalitis — treat with IV acyclovir)"
+        },
+        {
+          "item": "CMV PCR (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "If immunocompromised (HIV/transplant)",
+          "target": "Negative"
+        },
+        {
+          "item": "EBV PCR (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "If immunocompromised; CNS lymphoma differential",
+          "target": "Negative"
+        },
+        {
+          "item": "HHV-6 PCR (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Post-transplant encephalitis; temporal lobe involvement similar to HSV",
+          "target": "Negative"
+        },
+        {
+          "item": "Enterovirus PCR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Viral meningitis differential",
+          "target": "Negative"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (CSF) — NMDAR, LGI1, CASPR2, GABA-B",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Primary differential diagnosis; also detect post-HSV autoimmune encephalitis",
+          "target": "Negative initially; recheck if relapse"
+        },
+        {
+          "item": "Oligoclonal bands, IgG index",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Intrathecal antibody production; MS differential",
+          "target": "May be positive (non-specific)"
+        },
+        {
+          "item": "Cytology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Exclude leptomeningeal malignancy",
+          "target": "Negative"
+        },
+        {
+          "item": "AFB smear and culture",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "TB meningitis if subacute or basilar",
+          "target": "Negative"
+        },
+        {
+          "item": "VDRL (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Neurosyphilis screen",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Immediate — before LP to exclude mass effect; CT may be NORMAL early in HSV encephalitis",
+          "target": "Temporal lobe hypodensity, edema, hemorrhage (late); may be normal in first 48-72h",
+          "contraindications": "Pregnancy (relative)"
+        },
+        {
+          "item": "MRI brain with and without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Within 24h; STAT if available. MOST SENSITIVE imaging study — abnormal in >90% within 48h",
+          "target": "T2/FLAIR hyperintensity in medial temporal lobes (unilateral or bilateral), insular cortex, inferior frontal gyri, cingulate gyrus. DWI restriction in acute phase. Hemorrhagic transformation. Leptomeningeal enhancement",
+          "contraindications": "Pacemaker, metallic implants"
+        },
+        {
+          "item": "EEG (routine or continuous)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Within 24h; continuous EEG if altered consciousness",
+          "target": "Periodic lateralizing epileptiform discharges (PLEDs/LPDs) from temporal region — highly suggestive of HSV encephalitis; focal slowing; electrographic seizures; diffuse slowing",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "ECG (12-lead)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "On admission",
+          "target": "Baseline; myocarditis screen; QTc for medication interactions",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with MRA/MRV",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "If vascular complication suspected",
+          "target": "Venous sinus thrombosis; vasculopathy; large vessel occlusion",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "Repeat MRI brain",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "At 48-72h if initial MRI negative but suspicion high; at 7-14 days to assess extent of damage",
+          "target": "Evolving temporal changes; hemorrhagic transformation; extent of necrosis",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "Continuous EEG (cEEG) monitoring",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "24-72h minimum if altered consciousness, seizures, or post-ictal state",
+          "target": "Non-convulsive seizures, non-convulsive status epilepticus (NCSE), PLEDs",
+          "contraindications": "None"
+        },
+        {
+          "item": "Chest X-ray",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "On admission",
+          "target": "Aspiration; baseline for ventilator management",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Brain biopsy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "EXT",
+          "timing": "Only if: PCR negative, MRI atypical, no response to acyclovir, alternative diagnosis likely",
+          "target": "Cowdry type A inclusions; viral culture; PCR on tissue",
+          "contraindications": "Neurosurgical risk; coagulopathy"
+        },
+        {
+          "item": "PET-CT brain",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If autoimmune encephalitis relapse suspected post-HSV",
+          "target": "Mesial temporal hypermetabolism (seizure focus) or hypometabolism",
+          "contraindications": "Pregnancy"
+        },
+        {
+          "item": "ICP monitoring (EVD)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If clinical signs of elevated ICP; declining GCS despite treatment",
+          "target": "ICP <22 mmHg; CPP >60",
+          "contraindications": "Coagulopathy"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Acyclovir IV",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg",
+                "orderSentence": "Acyclovir IV 10 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg/kg IV q8h (infuse over 1h). Base on IDEAL body weight (IBW). Duration: minimum 14-21 days. Dose adjust for renal impairment: CrCl 25-50: 10 mg/kg q12h; CrCl 10-25: 10 mg/kg q24h; HD: 10 mg/kg after each dialysis session",
+            "orderSentence": "Acyclovir IV 10 mg/kg IV"
+          },
+          "contraindications": "True acyclovir allergy (extremely rare). Renal impairment — dose adjust, do NOT withhold",
+          "monitoring": "Renal function (BUN, Cr) daily; ensure adequate hydration (1-1.5 mL/kg/h IV fluids); urine output; acyclovir crystal nephropathy (maintain urine output); CBC (rare neutropenia); LFTs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV normal saline (aggressive hydration)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 mL/kg",
+                "orderSentence": "IV normal saline (aggressive hydration) 1-1.5 mL/kg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "1-1.5 mL/kg/h continuous to prevent acyclovir nephrotoxicity; bolus 500-1000 mL if dehydrated",
+            "orderSentence": "IV normal saline (aggressive hydration) 1-1.5 mL/kg -"
+          },
+          "contraindications": "Volume overload, CHF",
+          "monitoring": "I/O; Cr daily; urine output >0.5 mL/kg/h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Empiric antibiotics (vancomycin + ceftriaxone)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Standard meningitis dosing. Continue until bacterial meningitis excluded by CSF results (Gram stain negative, BioFire negative, cultures negative at 48-72h). See Bacterial Meningitis template for dosing",
+            "orderSentence": "Empiric antibiotics (vancomycin + ceftriaxone) - - - see dosing"
+          },
+          "contraindications": "See Bacterial Meningitis template",
+          "monitoring": "Standard",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.15 mg/kg",
+                "orderSentence": "Dexamethasone 0.15 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.15 mg/kg IV q6h x 4 days — give empirically with antibiotics until bacterial meningitis excluded. Discontinue when bacterial excluded. Role in HSV encephalitis itself is CONTROVERSIAL — some evidence for reducing edema but no clear mortality benefit; not standard of care for isolated HSV",
+            "orderSentence": "Dexamethasone 0.15 mg/kg IV"
+          },
+          "contraindications": "Uncontrolled infection (relative)",
+          "monitoring": "Glucose; GI prophylaxis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam (if seizures)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1500 mg",
+                "orderSentence": "Levetiracetam (if seizures) 1000-1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000-1500 mg IV load; then 500-1000 mg IV/PO BID; max 3000 mg/day. Seizures occur in 40-60% of HSV encephalitis",
+            "orderSentence": "Levetiracetam (if seizures) 1000-1500 mg IV"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Renal function; behavioral side effects",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam (seizure rescue)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/kg",
+                "orderSentence": "Lorazepam (seizure rescue) 0.1 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg); repeat x1 in 5 min if needed",
+            "orderSentence": "Lorazepam (seizure rescue) 0.1 mg/kg IV"
+          },
+          "contraindications": "Respiratory depression",
+          "monitoring": "RR, SpO2; airway equipment ready",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Supplemental oxygen",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "94%",
+                "orderSentence": "Supplemental oxygen 94% -"
+              }
+            ],
+            "route": "-",
+            "instructions": "If SpO2 <94% or intubated",
+            "orderSentence": "Supplemental oxygen 94% -"
+          },
+          "contraindications": "N/A",
+          "monitoring": "SpO2 target ≥94%",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetaminophen",
+          "route": "IV",
+          "indication": "Fever (temperature goal <38°C); headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "650-1000 mg PO/IV q6h; max 4g/day",
+            "orderSentence": "Acetaminophen 650-1000 mg IV"
+          },
+          "contraindications": "Severe hepatic disease",
+          "monitoring": "Temperature; LFTs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mannitol 20%",
+          "route": "IV",
+          "indication": "Cerebral edema / elevated ICP",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 g/kg",
+                "orderSentence": "Mannitol 20% 1-1.5 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 g/kg IV bolus; then 0.25-0.5 g/kg q4-6h",
+            "orderSentence": "Mannitol 20% 1-1.5 g/kg IV"
+          },
+          "contraindications": "Anuria",
+          "monitoring": "Serum osm <320; renal function; I/O",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline 23.4%",
+          "route": "IV",
+          "indication": "Acute herniation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mL IV via central line over 10-20 min",
+            "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+          },
+          "contraindications": "No central access",
+          "monitoring": "Na (target 145-155); osmolality",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline 3% infusion",
+          "route": "-",
+          "indication": "ICP management (less acute)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-1 mL/kg",
+                "orderSentence": "Hypertonic saline 3% infusion 0.5-1 mL/kg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "0.5-1 mL/kg/h continuous; target Na 145-155",
+            "orderSentence": "Hypertonic saline 3% infusion 0.5-1 mL/kg -"
+          },
+          "contraindications": "Hypernatremia",
+          "monitoring": "Na q4-6h; osmolality",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Phenytoin/Fosphenytoin",
+          "route": "IV",
+          "indication": "Refractory seizures (second-line after levetiracetam)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Phenytoin/Fosphenytoin 20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Fosphenytoin 20 mg PE/kg IV at 150 mg PE/min; maintenance 100 mg PE q8h; target level 10-20 µg/mL",
+            "orderSentence": "Phenytoin/Fosphenytoin 20 mg IV"
+          },
+          "contraindications": "Bradycardia, heart block, hypotension (infusion rate-related)",
+          "monitoring": "Continuous telemetry during load; free phenytoin level; LFTs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lacosamide",
+          "route": "IV",
+          "indication": "Seizure management (adjunctive)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Lacosamide 200 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "200 mg IV/PO load; then 100-200 mg BID; max 400 mg/day",
+            "orderSentence": "Lacosamide 200 mg IV"
+          },
+          "contraindications": "PR prolongation, AV block",
+          "monitoring": "ECG; PR interval",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV",
+          "indication": "Nausea/vomiting",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV/PO q6h PRN",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation",
+          "monitoring": "QTc",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pantoprazole",
+          "route": "IV",
+          "indication": "GI prophylaxis (if steroids or critical illness)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole 40 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "40 mg IV/PO daily",
+            "orderSentence": "Pantoprazole 40 mg IV"
+          },
+          "contraindications": "C. diff risk long-term",
+          "monitoring": "GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Enoxaparin",
+          "route": "SC",
+          "indication": "DVT prophylaxis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily (start when not actively seizing and no hemorrhagic transformation)",
+            "orderSentence": "Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active bleeding, hemorrhagic transformation, coagulopathy, platelets <50K",
+          "monitoring": "Platelets q3 days",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pneumatic compression devices",
+          "route": "-",
+          "indication": "DVT prophylaxis",
+          "dosing": {
+            "instructions": "Apply bilaterally on admission",
+            "orderSentence": "Pneumatic compression devices - - - see dosing"
+          },
+          "contraindications": "Acute DVT",
+          "monitoring": "Skin checks",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Fluid restriction",
+          "route": "-",
+          "indication": "SIADH management",
+          "dosing": {
+            "instructions": "1-1.2 L/day if Na <130 with clinical SIADH",
+            "orderSentence": "Fluid restriction - - - see dosing"
+          },
+          "contraindications": "Dehydration (balance with acyclovir hydration needs)",
+          "monitoring": "Na q6-8h; urine osm/Na; I/O",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Foscarnet IV (acyclovir-resistant HSV)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg/kg",
+                "orderSentence": "Foscarnet IV (acyclovir-resistant HSV) 60 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "60 mg/kg IV q8h or 90 mg/kg IV q12h; infuse over 1-2h with aggressive hydration. For proven or suspected acyclovir resistance (immunocompromised, HIV)",
+            "orderSentence": "Foscarnet IV (acyclovir-resistant HSV) 60 mg/kg IV"
+          },
+          "contraindications": "Renal failure (major nephrotoxin); electrolyte abnormalities",
+          "monitoring": "Cr daily; Ca, Mg, K, PO4 BID (causes severe electrolyte wasting); hydration 1-2 L NS before each dose",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Decompressive craniectomy",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "For malignant cerebral edema with impending herniation, unresponsive to medical ICP management; consider if age appropriate and prognosis not already dismal",
+            "orderSentence": "Decompressive craniectomy - - - see dosing"
+          },
+          "contraindications": "Bilateral massive necrosis; moribund patient",
+          "monitoring": "Post-op neuro checks; ICP monitoring; wound care",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Immunotherapy for post-HSV autoimmune encephalitis",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1g/day",
+                "orderSentence": "Immunotherapy for post-HSV autoimmune encephalitis 1g/day IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "If relapse at 2-6 weeks with new anti-NMDAR antibodies: IV methylprednisolone 1g/day x 5 days + IVIG 0.4 g/kg/day x 5 days; second-line: rituximab",
+            "orderSentence": "Immunotherapy for post-HSV autoimmune encephalitis 1g/day IV"
+          },
+          "contraindications": "Active HSV infection (ensure viral replication controlled)",
+          "monitoring": "NMDAR antibody titers; clinical response; viral PCR to confirm HSV not reactivated",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consultation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "All suspected encephalitis; seizure management; EEG interpretation; post-HSV autoimmune evaluation"
+        },
+        {
+          "item": "Infectious disease consultation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "Antimicrobial management; acyclovir-resistant HSV; duration of therapy"
+        },
+        {
+          "item": "Neurosurgery consultation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "Cerebral edema with mass effect; ICP monitoring (EVD placement); decompressive craniectomy"
+        },
+        {
+          "item": "Critical care/ICU",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "Altered consciousness (GCS <12); respiratory failure; ICP management; status epilepticus"
+        },
+        {
+          "item": "Speech-language pathology (SLP)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "Dysphagia evaluation; aphasia assessment (temporal lobe involvement); cognitive-communication evaluation"
+        },
+        {
+          "item": "Physical therapy (PT)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "Early mobilization; prevent deconditioning; gait/balance training"
+        },
+        {
+          "item": "Occupational therapy (OT)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "ADL assessment; cognitive rehabilitation; memory aids"
+        },
+        {
+          "item": "Neuropsychology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Cognitive assessment (memory deficits common with temporal lobe damage); rehabilitation planning"
+        },
+        {
+          "item": "Psychiatry",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Behavioral changes; depression; anxiety; personality changes (frontal/temporal damage)"
+        },
+        {
+          "item": "Rehabilitation medicine (physiatry)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Rehabilitation planning; disposition (inpatient rehab, SNF)"
+        },
+        {
+          "item": "Social work",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Family support; discharge planning; long-term care needs"
+        },
+        {
+          "item": "Epilepsy specialist",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Post-encephalitis epilepsy management; temporal lobe epilepsy"
+        },
+        {
+          "item": "Palliative care",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "indication": "Goals of care for severe cases; prognostication"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED if: new confusion, seizure, fever recurrence, worsening headache, personality change, speech difficulty, new weakness",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "HSV encephalitis can cause long-term memory and cognitive deficits; rehabilitation is important",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Seizures may develop weeks to months after infection; report any episodic symptoms (staring, jerking, déjà vu, loss of awareness)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Post-HSV autoimmune encephalitis can occur 2-6 weeks later with new psychiatric/neurologic symptoms — report immediately",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take all medications as prescribed; do NOT stop antiepileptic drugs without neurologist guidance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow-up with neurology in 2-4 weeks; neuropsychology testing at 3-6 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cognitive rehabilitation and therapy are critical for recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Driving restrictions until seizure-free per state law (typically 3-12 months)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "HSV encephalitis is NOT contagious in the traditional sense; no isolation needed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Long-term suppressive antiviral therapy is NOT standard after encephalitis (unlike genital HSV)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cognitive rehabilitation: memory strategies, organizational tools, speech therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Seizure safety: avoid heights, swimming alone, operating heavy machinery until seizure-free",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Mental health support (depression, anxiety, PTSD common after encephalitis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Adequate sleep and stress management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Gradual return to work/school with accommodations as needed",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Autoimmune encephalitis (anti-NMDAR)",
+      "features": "Subacute; psychiatric symptoms (psychosis, agitation); orofacial dyskinesias; seizures; young women; often post-HSV",
+      "tests": "Anti-NMDAR antibody (CSF > serum); MRI may be normal or temporal; ovarian teratoma screen"
+    },
+    {
+      "diagnosis": "Bacterial meningitis",
+      "features": "Fever + meningismus; CSF neutrophilic pleocytosis with low glucose; more acute; no temporal preference on imaging",
+      "tests": "CSF Gram stain, culture, BioFire; procalcitonin elevated; CSF glucose low"
+    },
+    {
+      "diagnosis": "Viral meningitis (enterovirus)",
+      "features": "Headache + fever + meningismus; LESS confusion/focal deficits; CSF lymphocytic but fewer WBC; MRI normal",
+      "tests": "Enterovirus PCR (CSF); BioFire panel; normal MRI"
+    },
+    {
+      "diagnosis": "VZV encephalitis",
+      "features": "Immunocompromised; may have rash (but not always); vasculopathy pattern on MRI; cranial neuropathies",
+      "tests": "VZV PCR (CSF); VZV IgG intrathecal antibody"
+    },
+    {
+      "diagnosis": "Temporal lobe seizures / Status epilepticus",
+      "features": "Seizures may cause MRI signal change in temporal lobes mimicking encephalitis; fever if convulsive SE",
+      "tests": "EEG; HSV PCR negative; MRI DWI pattern; clinical course"
+    },
+    {
+      "diagnosis": "Limbic encephalitis (paraneoplastic: LGI1, GABA-B)",
+      "features": "Subacute memory loss, seizures, psychiatric changes; often >40 years; associated malignancy",
+      "tests": "Antibody panel (serum + CSF); CT chest/abdomen/pelvis; PET-CT"
+    },
+    {
+      "diagnosis": "Cerebral venous thrombosis",
+      "features": "Headache, seizures, focal deficits; papilledema; risk factors (OCPs, hypercoagulable)",
+      "tests": "MRV; CT venogram; D-dimer"
+    },
+    {
+      "diagnosis": "Brain abscess",
+      "features": "Focal symptoms + fever; ring-enhancing lesion; subacute",
+      "tests": "MRI with contrast (ring enhancement, restricted DWI centrally); blood cultures"
+    },
+    {
+      "diagnosis": "Acute disseminated encephalomyelitis (ADEM)",
+      "features": "Post-infectious; multifocal white matter lesions; children > adults",
+      "tests": "MRI (multifocal white matter); clinical context"
+    },
+    {
+      "diagnosis": "Tuberculosis meningitis",
+      "features": "Subacute (weeks); basilar meningitis; CSF low glucose, lymphocytic, very high protein",
+      "tests": "AFB culture; TB PCR; ADA; chest imaging"
+    },
+    {
+      "diagnosis": "Neurosyphilis",
+      "features": "Subacute; psychiatric symptoms; pupillary abnormalities; history of STI",
+      "tests": "CSF VDRL; FTA-ABS; RPR"
+    },
+    {
+      "diagnosis": "Primary CNS lymphoma",
+      "features": "Immunocompromised; progressive focal deficits; periventricular enhancing lesion",
+      "tests": "MRI with contrast; CSF cytology; EBV PCR (CSF); brain biopsy"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "IV acyclovir 10 mg/kg q8h x 14-21 days",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Whitley et al. (NEJM 1986)](https://pubmed.ncbi.nlm.nih.gov/3001520/) — acyclovir vs placebo landmark trial; reduced mortality from 70% to 20%"
+    },
+    {
+      "recommendation": "Start acyclovir empirically; do NOT delay for diagnostics",
+      "evidenceLevel": "Class I, Level A",
+      "source": "IDSA Encephalitis Guidelines ([Tunkel et al. CID 2008](https://pubmed.ncbi.nlm.nih.gov/18582201/)); every hour of delay worsens outcomes"
+    },
+    {
+      "recommendation": "CSF HSV PCR as gold standard (sensitivity 96-98%)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Lakeman & Whitley (JID 1995)](https://pubmed.ncbi.nlm.nih.gov/7706811/)"
+    },
+    {
+      "recommendation": "Repeat HSV PCR if initially negative with high clinical suspicion",
+      "evidenceLevel": "Class I, Level B",
+      "source": "False negative rate ~5% in first 72h; Roullet (2007)"
+    },
+    {
+      "recommendation": "MRI with DWI is most sensitive imaging",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Sensitivity >90% within 48h; temporal lobe predilection"
+    },
+    {
+      "recommendation": "EEG showing PLEDs supports diagnosis",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Periodic lateralizing discharges in ~80% of HSV encephalitis"
+    },
+    {
+      "recommendation": "Post-HSV autoimmune encephalitis (anti-NMDAR) in 20-27%",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Armangue et al. (Ann Neurol 2014)](https://pubmed.ncbi.nlm.nih.gov/24318406/); [Prüss et al. (Ann Neurol 2012)](https://pubmed.ncbi.nlm.nih.gov/23280840/)"
+    },
+    {
+      "recommendation": "Dexamethasone for HSV encephalitis: NOT standard of care",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "DexEnceph trial (ongoing); animal data supportive; no clear human mortality benefit"
+    },
+    {
+      "recommendation": "Foscarnet for acyclovir-resistant HSV",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "Expert consensus; primarily in immunocompromised"
+    },
+    {
+      "recommendation": "Aggressive hydration to prevent acyclovir nephrotoxicity",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Well-established; crystal nephropathy prevention"
+    },
+    {
+      "recommendation": "Empiric bacterial coverage until excluded",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Standard practice; cannot clinically distinguish bacterial meningitis from encephalitis at presentation"
+    },
+    {
+      "recommendation": "Repeat LP at end of treatment to confirm PCR negativity",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "Expert consensus; immunocompromised patients especially"
+    },
+    {
+      "recommendation": "14-day treatment minimum; 21 days for severe/immunocompromised",
+      "evidenceLevel": "Class I, Level B",
+      "source": "IDSA Guidelines; relapse rate higher with <14 days"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "GCS / Neurologic exam",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q1h x 24h, then q2h x 48h, then q4h",
+      "action": "If declining: STAT CT; ICP assessment; consider EVD"
+    },
+    {
+      "item": "Temperature",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q4h (q1h if febrile)",
+      "action": "Acetaminophen; cooling measures; reassess if persistent fever >72h on acyclovir"
+    },
+    {
+      "item": "Serum sodium",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q6-8h x 48h, then q12h",
+      "action": "If <130: SIADH → fluid restriction (balance with acyclovir hydration); if <120: 3% saline"
+    },
+    {
+      "item": "Serum creatinine",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Daily (twice daily if rising)",
+      "action": "If rising: increase hydration; consider dose adjustment; hold if severe (rare); monitor urine output"
+    },
+    {
+      "item": "BUN",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE",
+      "frequency": "Daily",
+      "action": "Dehydration; renal impairment"
+    },
+    {
+      "item": "Urine output",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q1h in ICU; q4h shift on floor",
+      "action": "Increase IV fluids; if oliguria: renal assessment"
+    },
+    {
+      "item": "Seizure monitoring (EEG)",
+      "ED": "-",
+      "HOSP": "URGENT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "cEEG 24-72h if altered consciousness; routine EEG daily if improving",
+      "action": "If seizures: load/adjust AEDs; if NCSE: aggressive treatment per SE protocol"
+    },
+    {
+      "item": "Blood pressure",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q1-4h based on severity",
+      "action": "Fluids; vasopressors if septic"
+    },
+    {
+      "item": "Oxygen saturation",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Continuous in ICU; q4h on floor",
+      "action": "Supplemental O2; intubation if respiratory failure"
+    },
+    {
+      "item": "Repeat MRI brain",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "At 48-72h (evolution); day 7-14 (extent of damage); 3-6 months (chronic changes)",
+      "action": "If worsening edema: ICP management; neurosurgery consult"
+    },
+    {
+      "item": "Repeat LP (HSV PCR)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE",
+      "frequency": "At end of treatment (day 14-21) to confirm PCR negativity; earlier if clinical suspicion of treatment failure",
+      "action": "If still positive: extend acyclovir 7+ more days; consider resistance"
+    },
+    {
+      "item": "Autoimmune antibodies (follow-up)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Recheck at 2-4 weeks if relapse or new psychiatric/neurologic symptoms",
+      "action": "If positive (especially NMDAR): immunotherapy protocol"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "NOT appropriate directly from ED for suspected HSV encephalitis — always admit. Discharge from hospital when: completing IV acyclovir course (or transitioned to monitoring); improved consciousness (GCS 15); no active seizures; stable neurologic exam; safe swallowing; rehabilitation arranged; follow-up confirmed"
+    },
+    {
+      "disposition": "Admit to floor (monitored bed)",
+      "criteria": "Mild encephalitis (GCS 13-15); stable; low seizure burden; able to cooperate with neuro checks"
+    },
+    {
+      "disposition": "Admit to ICU / Neuro-ICU",
+      "criteria": "GCS <13; active seizures or status epilepticus; need for continuous EEG; respiratory compromise; signs of elevated ICP; hemodynamic instability"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Need for neuro-ICU not available; need for neurosurgery (decompressive craniectomy); continuous EEG not available"
+    },
+    {
+      "disposition": "Inpatient rehabilitation",
+      "criteria": "Moderate-severe cognitive deficits (memory impairment, aphasia); motor deficits; able to participate in 3h/day therapy"
+    },
+    {
+      "disposition": "Skilled nursing facility",
+      "criteria": "Unable to tolerate intensive rehabilitation; requires ongoing nursing care"
+    }
+  ]
+}

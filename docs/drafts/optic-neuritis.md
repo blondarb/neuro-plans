@@ -183,7 +183,7 @@ SECTION A: ACTION ITEMS
 *DMT initiation requires confirmed diagnosis and specialist involvement. Not initiated in ED or ICU. See specific disease templates for detailed DMT options.*
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | MS DMT (various) | Variable | If MS diagnosed based on MRI + clinical criteria | See MS - New Diagnosis template | Per specific DMT | Per specific DMT | Per specific DMT | - | - | ROUTINE | - |
 | Rituximab | IV | NMOSD (AQP4-IgG positive) | 1000 mg IV x 2 doses 2 weeks apart :: IV :: q2wk x 2 then q6mo :: 1000 mg IV days 1 and 15; maintenance 1000 mg q6 months | Hepatitis B serology; TB test; immunoglobulins | Active Hep B; active infection | CD19/20; immunoglobulins annually | - | - | ROUTINE | - |
 | Eculizumab (Soliris) | IV | NMOSD (AQP4-IgG positive) - FDA approved | 900 mg IV weekly x 4 then 1200 mg q2wk :: IV :: weekly then q2wk :: 900 mg weekly x 4; then 1200 mg at week 5; then 1200 mg q2 weeks | Meningococcal vaccination (2 weeks prior) | Unresolved Neisseria infection | CBC; LFTs; signs of meningococcal infection | - | - | ROUTINE | - |

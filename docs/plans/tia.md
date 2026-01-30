@@ -15,7 +15,8 @@ tags:
 # Transient Ischemic Attack (TIA)
 
 **DIAGNOSIS:** Transient Ischemic Attack
-**ICD-10:** G45.9 (Transient cerebral ischemic attack, unspecified)
+**ICD-10:** G45.9 (Transient cerebral ischemic attack, unspecified), G45.0 (Vertebro-basilar artery syndrome), G45.1 (Carotid artery syndrome), G45.8 (Other transient cerebral ischemic attacks and related syndromes)
+**SYNONYMS:** Transient ischemic attack, TIA, mini-stroke, transient cerebral ischemia, cerebral TIA, transient neurological deficit, warning stroke, pre-stroke, temporary stroke symptoms, reversible ischemic neurological deficit
 **SCOPE:** Urgent evaluation, risk stratification (ABCD2), and secondary stroke prevention. Excludes completed stroke (see Acute Ischemic Stroke protocol).
 
 **STATUS:** Approved
@@ -36,23 +37,23 @@ tags:
 
 | Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
 |------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CBC with differential | Polycythemia, thrombocytosis as stroke risk; anemia evaluation | Normal | STAT | STAT | ROUTINE | - |
-| BMP | Electrolytes; glucose for hypoglycemia mimic; creatinine for contrast | Normal | STAT | STAT | ROUTINE | - |
-| Glucose (fingerstick) | Rule out hypoglycemia as TIA mimic | 70-180 mg/dL | STAT | STAT | - | - |
-| PT/INR, PTT | Baseline coagulation; evaluate if on anticoagulation | Normal or therapeutic | STAT | STAT | ROUTINE | - |
-| Lipid panel (fasting) | LDL target <70 for secondary prevention | LDL <70 mg/dL | - | ROUTINE | ROUTINE | - |
-| HbA1c | Diabetes assessment; target <7% | <7% | URGENT | ROUTINE | ROUTINE | - |
-| TSH | Hyperthyroidism associated with atrial fibrillation | Normal | - | ROUTINE | ROUTINE | - |
-| Troponin | Concurrent cardiac ischemia; AF with rapid rate | Negative | STAT | STAT | - | - |
+| CBC with differential (CPT 85025) | Polycythemia, thrombocytosis as stroke risk; anemia evaluation | Normal | STAT | STAT | ROUTINE | - |
+| BMP (CPT 80048) | Electrolytes; glucose for hypoglycemia mimic; creatinine for contrast | Normal | STAT | STAT | ROUTINE | - |
+| Glucose (fingerstick) (CPT 82962) | Rule out hypoglycemia as TIA mimic | 70-180 mg/dL | STAT | STAT | - | - |
+| PT/INR (CPT 85610), PTT (CPT 85730) | Baseline coagulation; evaluate if on anticoagulation | Normal or therapeutic | STAT | STAT | ROUTINE | - |
+| Lipid panel (fasting) (CPT 80061) | LDL target <70 for secondary prevention | LDL <70 mg/dL | - | ROUTINE | ROUTINE | - |
+| HbA1c (CPT 83036) | Diabetes assessment; target <7% | <7% | URGENT | ROUTINE | ROUTINE | - |
+| TSH (CPT 84443) | Hyperthyroidism associated with atrial fibrillation | Normal | - | ROUTINE | ROUTINE | - |
+| Troponin (CPT 84484) | Concurrent cardiac ischemia; AF with rapid rate | Negative | STAT | STAT | - | - |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
 |------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Homocysteine | Elevated levels increase stroke risk | <15 μmol/L | - | ROUTINE | ROUTINE | - |
+| Homocysteine (CPT 83090) | Elevated levels increase stroke risk | <15 μmol/L | - | ROUTINE | ROUTINE | - |
 | Lipoprotein(a) | Independent cardiovascular risk marker | <30 mg/dL | - | ROUTINE | ROUTINE | - |
 | hsCRP | Inflammatory marker; guides statin intensity | <2 mg/L | - | ROUTINE | ROUTINE | - |
-| BNP/NT-proBNP | Heart failure; cardiac strain; AF risk | Age-adjusted normal | URGENT | ROUTINE | ROUTINE | - |
+| BNP/NT-proBNP (CPT 83880) | Heart failure; cardiac strain; AF risk | Age-adjusted normal | URGENT | ROUTINE | ROUTINE | - |
 | Uric acid | Elevated associated with increased stroke risk | <6 mg/dL | - | ROUTINE | ROUTINE | - |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
@@ -62,7 +63,7 @@ tags:
 | Hypercoagulability panel | Age <50, cryptogenic, recurrent events; includes Factor V Leiden, prothrombin mutation, protein C/S, antithrombin III | Negative | - | EXT | EXT | - |
 | Antiphospholipid antibodies | Lupus anticoagulant, anticardiolipin, anti-β2GP1; young stroke | Negative | - | EXT | EXT | - |
 | Hemoglobin electrophoresis | Sickle cell disease if not known | No sickling | - | EXT | EXT | - |
-| ESR, ANA | Suspected vasculitis | Normal/Negative | - | EXT | EXT | - |
+| ESR (CPT 85652), ANA (CPT 86235) | Suspected vasculitis | Normal/Negative | - | EXT | EXT | - |
 | Fabry disease testing (α-galactosidase A) | Young cryptogenic stroke, family history, angiokeratomas | Normal enzyme activity | - | - | EXT | - |
 
 ---
@@ -73,22 +74,22 @@ tags:
 
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| CT Head non-contrast | Immediate | No hemorrhage; rule out stroke mimic | None | STAT | STAT | - | - |
-| MRI Brain with DWI | Within 24 hours | No restricted diffusion (DWI+/ADC-) confirming infarct vs true TIA | MRI-incompatible devices | URGENT | STAT | - | - |
-| CTA Head and Neck | Same visit | No significant stenosis (>50%) in carotid, vertebral, or intracranial vessels | Contrast allergy, CKD (relative) | STAT | STAT | - | - |
-| MRA Head and Neck | Alternative to CTA | Patent vessels; no stenosis >50% | MRI contraindications | URGENT | STAT | ROUTINE | - |
-| Carotid duplex ultrasound | Within 24-48 hours | <50% stenosis bilaterally | None | URGENT | STAT | ROUTINE | - |
-| ECG (12-lead) | Immediate | Sinus rhythm; no AF, LVH, or acute changes | None | STAT | STAT | ROUTINE | - |
-| Transthoracic echocardiogram | Within 24-48 hours | No thrombus, PFO, or significant valvular disease | None | URGENT | STAT | ROUTINE | - |
+| CT Head non-contrast (CPT 70450) | Immediate | No hemorrhage; rule out stroke mimic | None | STAT | STAT | - | - |
+| MRI Brain with DWI (CPT 70553) | Within 24 hours | No restricted diffusion (DWI+/ADC-) confirming infarct vs true TIA | MRI-incompatible devices | URGENT | STAT | - | - |
+| CTA Head and Neck (CPT 70496, 70498) | Same visit | No significant stenosis (>50%) in carotid, vertebral, or intracranial vessels | Contrast allergy, CKD (relative) | STAT | STAT | - | - |
+| MRA Head and Neck (CPT 70544, 70547) | Alternative to CTA | Patent vessels; no stenosis >50% | MRI contraindications | URGENT | STAT | ROUTINE | - |
+| Carotid duplex ultrasound (CPT 93880) | Within 24-48 hours | <50% stenosis bilaterally | None | URGENT | STAT | ROUTINE | - |
+| ECG (12-lead) (CPT 93000) | Immediate | Sinus rhythm; no AF, LVH, or acute changes | None | STAT | STAT | ROUTINE | - |
+| Transthoracic echocardiogram (CPT 93306) | Within 24-48 hours | No thrombus, PFO, or significant valvular disease | None | URGENT | STAT | ROUTINE | - |
 
 ### 2B. Extended
 
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| Cardiac telemetry (continuous) | 24-72 hours minimum | No atrial fibrillation or flutter | None | URGENT | STAT | - | - |
-| Holter monitor (24-48 hour) | Outpatient | No paroxysmal AF | None | - | - | ROUTINE | - |
+| Cardiac telemetry (continuous) (CPT 93228) | 24-72 hours minimum | No atrial fibrillation or flutter | None | URGENT | STAT | - | - |
+| Holter monitor (24-48 hour) (CPT 93224) | Outpatient | No paroxysmal AF | None | - | - | ROUTINE | - |
 | Extended cardiac monitoring (14-30 day) | Cryptogenic stroke/TIA | Detect paroxysmal AF | None | - | - | ROUTINE | - |
-| Transesophageal echocardiogram | Cryptogenic, young, embolic | No PFO, LAA thrombus, aortic arch atheroma | Esophageal pathology | - | URGENT | EXT | - |
+| Transesophageal echocardiogram (CPT 93312) | Cryptogenic, young, embolic | No PFO, LAA thrombus, aortic arch atheroma | Esophageal pathology | - | URGENT | EXT | - |
 | Bubble study (TTE or TEE) | Suspected paradoxical embolism | No right-to-left shunt | None specific | - | URGENT | ROUTINE | - |
 
 ### 2C. Rare/Specialized
@@ -97,7 +98,7 @@ tags:
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 | CT/MR perfusion | Uncertain timing, large vessel occlusion symptoms | No mismatch suggesting salvageable tissue | Contrast issues | EXT | EXT | - | - |
 | Vessel wall MRI | Suspected intracranial vasculitis or dissection | No vessel wall enhancement | MRI contraindications | - | EXT | EXT | - |
-| DSA (cerebral angiogram) | Vasculitis workup, moyamoya, uncertain vessel status | Define vascular anatomy | Contrast allergy, bleeding risk | - | EXT | EXT | - |
+| DSA (cerebral angiogram) (CPT 36224) | Vasculitis workup, moyamoya, uncertain vessel status | Define vascular anatomy | Contrast allergy, bleeding risk | - | EXT | EXT | - |
 | Implantable loop recorder | Recurrent cryptogenic events after negative workup | Detect occult AF | None | - | - | EXT | - |
 
 ---

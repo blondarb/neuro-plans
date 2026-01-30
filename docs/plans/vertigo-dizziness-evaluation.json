@@ -1,0 +1,968 @@
+{
+  "id": "vertigo-dizziness-evaluation",
+  "title": "Vertigo / Dizziness Evaluation",
+  "version": "1.0",
+  "icd10": [
+    "** R42 (Dizziness and giddiness)",
+    "H81.10 (Benign paroxysmal positional vertigo",
+    "unspecified ear)",
+    "H81.0 (Meniere's disease)",
+    "H81.3 (Other peripheral vertigo)",
+    "G45.0 (Vertebro-basilar artery syndrome)",
+    "H81.4 (Vertigo of central origin)"
+  ],
+  "scope": "** Evaluation and management of acute vertigo and dizziness in adults. Covers differentiation of peripheral vs. central causes, the HINTS exam, Dix-Hallpike and canalith repositioning maneuvers, evaluation for posterior circulation stroke, and management of common vestibular disorders (BPPV, vestibular neuritis, Meniere's disease, vestibular migraine). Excludes chronic non-specific dizziness (persistent postural-perceptual dizziness), medication-induced dizziness (covered briefly), and presyncope/orthostatic hypotension (separate evaluation).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Blood glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypoglycemia can cause dizziness/lightheadedness; hyperglycemia (diabetic neuropathy); metabolic dizziness",
+          "target": "70-180 mg/dL; hypo/hyperglycemia → correct and reassess"
+        },
+        {
+          "item": "CBC",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Anemia (lightheadedness, presyncope); infection (labyrinthitis); baseline",
+          "target": "Normal; anemia (Hgb <10) can cause dizziness; infection markers"
+        },
+        {
+          "item": "CMP (BMP + LFTs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolyte abnormalities (hyponatremia, hypoglycemia); renal dysfunction; dehydration",
+          "target": "Normal; hyponatremia <130 can cause neurologic symptoms including imbalance"
+        },
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction can cause dizziness/imbalance; hyperthyroidism especially",
+          "target": "Normal; abnormal → thyroid evaluation"
+        },
+        {
+          "item": "ECG (12-lead)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Cardiac arrhythmia causing presyncope/dizziness; differentiates cardiac from vestibular",
+          "target": "Normal; arrhythmia → cardiac workup; prolonged QTc"
+        },
+        {
+          "item": "Orthostatic vital signs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Orthostatic hypotension is common cause of dizziness, especially in elderly; drop in SBP >20 or DBP >10 with symptoms",
+          "target": "No orthostatic drop; positive orthostatics → volume status, medication review, autonomic evaluation"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Lipid panel",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Vascular risk factors if central cause suspected; stroke risk stratification",
+          "target": "LDL <70 (high risk) or <100; triglycerides; HDL"
+        },
+        {
+          "item": "HbA1c",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes (vascular risk factor; diabetic neuropathy affecting balance)",
+          "target": "<7.0%; elevated → diabetes management"
+        },
+        {
+          "item": "RPR / VDRL",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis (rare cause of vertigo, especially in HIV); otosyphilis",
+          "target": "Negative; positive → CSF analysis, penicillin treatment"
+        },
+        {
+          "item": "Vitamin B12",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency causes peripheral neuropathy and imbalance; subacute combined degeneration",
+          "target": ">300 pg/mL; low → supplement and monitor"
+        },
+        {
+          "item": "Ferritin",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Iron deficiency (even without anemia) can cause dizziness",
+          "target": ">50 ng/mL; low → iron supplementation"
+        },
+        {
+          "item": "ANA / ESR / CRP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune inner ear disease; vasculitis (CNS vasculitis affecting posterior circulation)",
+          "target": "Normal; elevated → autoimmune/inflammatory workup"
+        },
+        {
+          "item": "Drug levels (if applicable)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Ototoxic medications (aminoglycosides, salicylates); anticonvulsant toxicity (phenytoin, carbamazepine)",
+          "target": "Therapeutic; toxic levels → adjust or discontinue"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "FTA-ABS",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Confirmatory for syphilis if RPR positive; otosyphilis/neurosyphilis",
+          "target": "Negative"
+        },
+        {
+          "item": "Lyme serology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lyme disease can cause cranial neuropathies, including vestibular neuritis; endemic areas",
+          "target": "Negative; positive → Western blot confirmation"
+        },
+        {
+          "item": "Anti-GAD65 antibodies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Cerebellar ataxia; autoimmune cerebellitis",
+          "target": "Negative; positive → autoimmune cerebellar disease"
+        },
+        {
+          "item": "Paraneoplastic antibody panel",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraneoplastic cerebellar degeneration (anti-Yo, anti-Hu); subacute ataxia with vertigo",
+          "target": "Negative; positive → malignancy search"
+        },
+        {
+          "item": "CSF analysis",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If infectious, inflammatory, or neoplastic cause suspected; normal in peripheral vestibular disorders",
+          "target": "Normal; pleocytosis → infection/inflammation; protein elevation"
+        },
+        {
+          "item": "Genetic testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Familial episodic ataxia; spinocerebellar ataxia; hereditary vestibular disorders",
+          "target": "Specific mutations (CACNA1A for EA2; SCA genes)"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "LP — Generally NOT indicated",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "NOT routinely indicated for peripheral vestibular disorders; consider if meningitis, MS, CNS vasculitis, or leptomeningeal disease suspected",
+          "target": "Normal in BPPV, vestibular neuritis, Meniere's; abnormal → specific CNS pathology",
+          "contraindications": "Posterior fossa mass; elevated ICP"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "**HINTS exam (Head Impulse, Nystagmus, Test of Skew)**",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "**CRITICAL bedside exam**; must be performed in patient with ACUTE VESTIBULAR SYNDROME (continuous vertigo, nausea, nystagmus, gait instability); performed by trained examiner; more sensitive than early MRI for stroke",
+          "target": "**Peripheral pattern (benign):** Positive head impulse (catch-up saccade), horizontal nystagmus with unidirectional fast phase, no skew deviation; **Central pattern (concerning for stroke):** Negative/normal head impulse, direction-changing or vertical nystagmus, skew deviation",
+          "contraindications": "Cannot perform if patient not having acute continuous vertigo; requires examiner training"
+        },
+        {
+          "item": "CT head without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "**NOT sensitive for posterior fossa stroke** (sensitivity ~20-40%); useful for hemorrhage; may be appropriate for trauma or if MRI not available; does NOT rule out posterior circulation stroke",
+          "target": "Cerebellar or brainstem hemorrhage; mass lesion; hydrocephalus; **NEGATIVE CT does NOT exclude stroke in posterior circulation**",
+          "contraindications": "None for non-contrast"
+        },
+        {
+          "item": "MRI brain with DWI",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "**Gold standard for posterior circulation stroke**; DWI highly sensitive for acute ischemia; **HOWEVER:** Early MRI (<48h) can miss 12-20% of small posterior fossa strokes — clinical (HINTS) may be more sensitive; repeat MRI if high suspicion and initial negative",
+          "target": "Acute infarction (restricted diffusion); brainstem lesion; cerebellar lesion; MS plaque; tumor; vestibular schwannoma",
+          "contraindications": "MRI-incompatible implants; severe claustrophobia"
+        },
+        {
+          "item": "MRA head and neck (or CTA)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "If central cause suspected; vertebral artery dissection; basilar artery stenosis; vertebrobasilar insufficiency",
+          "target": "Vertebral artery dissection; stenosis; occlusion; aneurysm",
+          "contraindications": "MRA: same as MRI; CTA: contrast allergy, renal impairment"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Dix-Hallpike maneuver",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "**Diagnostic for BPPV** (posterior canal, most common); performed on ALL patients with episodic positional vertigo; positive if nystagmus and vertigo provoked with latency and limited duration",
+          "target": "**Positive:** Upbeating-torsional nystagmus toward affected ear, 2-20 sec latency, <60 sec duration, fatigable with repetition = posterior canal BPPV",
+          "contraindications": "Cervical spine disease/instability (modify technique); carotid stenosis (theoretical)"
+        },
+        {
+          "item": "Supine roll test (Pagnini-McClure)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "**Diagnostic for horizontal canal BPPV**; patient supine, rapidly turn head 90° to each side; geotropic (toward ground) or apogeotropic (away from ground) horizontal nystagmus",
+          "target": "Horizontal nystagmus provoked by head turning; geotropic (canalithiasis) vs. apogeotropic (cupulolithiasis)",
+          "contraindications": "Same as Dix-Hallpike"
+        },
+        {
+          "item": "Audiometry",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Essential if hearing loss suspected (Meniere's disease, labyrinthitis, vestibular schwannoma); sudden sensorineural hearing loss is emergency",
+          "target": "Meniere's: low-frequency sensorineural hearing loss; Schwannoma: asymmetric sensorineural hearing loss; Labyrinthitis: hearing loss + vertigo",
+          "contraindications": "Patient cooperation"
+        },
+        {
+          "item": "Echocardiogram (TTE ± TEE)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If cardioembolic source suspected for stroke; PFO evaluation; valvular disease",
+          "target": "PFO; valve vegetations; thrombus; cardiomyopathy",
+          "contraindications": "None (TTE); TEE: esophageal pathology"
+        },
+        {
+          "item": "Holter / Event monitor",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If paroxysmal arrhythmia suspected as cause of dizziness; palpitations with dizziness",
+          "target": "Arrhythmia during symptoms",
+          "contraindications": "None"
+        },
+        {
+          "item": "Carotid ultrasound",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Carotid stenosis (though carotid disease rarely causes isolated vertigo without other symptoms)",
+          "target": "Stenosis; plaque",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Videonystagmography (VNG) / Electronystagmography (ENG)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Quantitative vestibular function testing; caloric testing (ice water or warm/cool air); localizes peripheral lesion; documents vestibular hypofunction",
+          "target": "Unilateral weakness on calorics (peripheral lesion); central patterns",
+          "contraindications": "Perforated TM (water calorics)"
+        },
+        {
+          "item": "Video head impulse test (vHIT)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Quantitative bedside test of vestibulo-ocular reflex; tests individual semicircular canals; more sensitive than bedside HIT",
+          "target": "Reduced VOR gain; covert/overt saccades; identifies affected canal",
+          "contraindications": "Specialized equipment"
+        },
+        {
+          "item": "Vestibular evoked myogenic potentials (VEMP)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Tests saccule (cVEMP) and utricle (oVEMP); superior semicircular canal dehiscence; Meniere's",
+          "target": "Abnormal in superior canal dehiscence; saccular dysfunction",
+          "contraindications": "Hearing loss affects testing"
+        },
+        {
+          "item": "Rotary chair testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Quantitative VOR assessment; bilateral vestibular hypofunction",
+          "target": "Bilateral vestibular loss; gain/phase abnormalities",
+          "contraindications": "Specialized facility"
+        },
+        {
+          "item": "High-resolution CT temporal bones",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Superior semicircular canal dehiscence; cholesteatoma; temporal bone abnormality",
+          "target": "Dehiscence of superior canal; bony erosion",
+          "contraindications": "Radiation"
+        },
+        {
+          "item": "Electrocochleography (ECoG)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Meniere's disease confirmation; endolymphatic hydrops",
+          "target": "Elevated SP/AP ratio in Meniere's",
+          "contraindications": "Requires audiologist"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent Treatment": [
+        {
+          "item": "**Symptomatic relief (vestibular suppressants)**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg",
+                "orderSentence": "**Symptomatic relief (vestibular suppressants)** 25-50 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**Acute severe vertigo:** Meclizine 25-50 mg PO q6-8h; OR Dimenhydrinate (Dramamine) 50 mg PO/IV q6h; OR Promethazine 25 mg PO/IM/IV q6h; OR Ondansetron 4-8 mg IV/PO q8h (for nausea); **IV fluids** for dehydration from vomiting; **Diazepam** 2-5 mg IV/PO for severe acute vertigo (benzodiazepines are potent vestibular suppressants)",
+            "orderSentence": "**Symptomatic relief (vestibular suppressants)** 25-50 mg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Short-term use only (24-72h); vestibular suppressants interfere with central compensation if used chronically; avoid in suspected central cause until stroke ruled out",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**IV fluids**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "If dehydrated from vomiting; NS or LR bolus then maintenance; assess orthostatic hypotension",
+            "orderSentence": "**IV fluids** - IV - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Supportive care; correct volume depletion",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Antiemetics**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4-8 mg",
+                "orderSentence": "**Antiemetics** 4-8 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Ondansetron 4-8 mg IV/PO; metoclopramide 10 mg IV (avoid in elderly — EPS); prochlorperazine 5-10 mg IV/IM",
+            "orderSentence": "**Antiemetics** 4-8 mg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Nausea is often the most debilitating symptom",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Rule out stroke**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**If ANY central features on HINTS:** STAT MRI with DWI; vascular imaging (MRA or CTA); neurology/stroke consultation; **Central features:** Normal/negative head impulse test, vertical or direction-changing nystagmus, skew deviation, focal neurologic signs, severe imbalance (cannot walk), hearing loss + vertigo without Meniere's history",
+            "orderSentence": "**Rule out stroke** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "HINTS is more sensitive than early CT or MRI for posterior circulation stroke; do NOT rely on negative CT to exclude stroke",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Epley maneuver (canalith repositioning)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "90%",
+                "orderSentence": "**Epley maneuver (canalith repositioning)** 90% -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**For BPPV (positive Dix-Hallpike):** Immediately perform Epley maneuver; highly effective (80-90% single treatment); may repeat if symptoms persist; send home with instructions for home Epley or Brandt-Daroff exercises",
+            "orderSentence": "**Epley maneuver (canalith repositioning)** 90% -"
+          },
+          "contraindications": "-",
+          "monitoring": "Epley is definitive treatment for posterior canal BPPV; medications are NOT indicated for BPPV — repositioning maneuvers are the treatment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Disease-Specific Treatment": [
+        {
+          "item": "**Epley maneuver (posterior canal)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Standard canalith repositioning; patient starts seated, Dix-Hallpike position for 30 sec, rotate head 90° toward opposite side (30 sec), roll body to face down with head still turned (30 sec), sit up; NNT = 2-3 for resolution",
+            "orderSentence": "**Epley maneuver (posterior canal)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "First-line treatment for posterior canal BPPV; highly effective; may repeat same day or next visit",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Semont maneuver (alternative)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Alternative to Epley; patient moved rapidly from side to side; less commonly used but effective",
+            "orderSentence": "**Semont maneuver (alternative)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Alternative if Epley difficult or ineffective",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**BBQ roll (Lempert maneuver) — horizontal canal**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "For horizontal canal BPPV; patient rotates 360° along long axis of body (log roll) toward unaffected side; 90° increments with 30 sec pauses",
+            "orderSentence": "**BBQ roll (Lempert maneuver) — horizontal canal** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Treatment for horizontal canal BPPV; geotropic variant",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Brandt-Daroff exercises (home)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Patient alternates lying on each side x 30 sec, 10-20 repetitions, 3x daily; habituates symptoms; less effective than Epley for posterior canal",
+            "orderSentence": "**Brandt-Daroff exercises (home)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Adjunctive home therapy; may help with residual symptoms; promotes compensation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Avoid vestibular suppressants for BPPV**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Do NOT prescribe meclizine for ongoing BPPV treatment; medications delay compensation and do not address the mechanical problem",
+            "orderSentence": "**Avoid vestibular suppressants for BPPV** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "BPPV is a mechanical problem (otoliths); repositioning is definitive treatment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Post-treatment instructions**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Avoid lying flat for 1-2 nights (sleep propped up); avoid rapid head movements for 24-48h; avoid affected side lying for 1 week (controversial but commonly recommended)",
+            "orderSentence": "**Post-treatment instructions** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Reduces immediate recurrence; evidence is mixed",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Medications to AVOID or Use with Caution": [
+        {
+          "item": "**Vestibular suppressants (prolonged use)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Vestibular suppressants (prolonged use)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Ototoxic medications** (aminoglycosides, loop diuretics, salicylates, cisplatin)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Ototoxic medications** (aminoglycosides, loop diuretics, salicylates, cisplatin) - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Alcohol**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Alcohol** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Benzodiazepines (chronic use)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Benzodiazepines (chronic use)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**CNS depressants**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**CNS depressants** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Medications causing orthostatic hypotension** (antihypertensives, alpha-blockers, diuretics)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "**Medications causing orthostatic hypotension** (antihypertensives, alpha-blockers, diuretics) - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "HINTS exam (if acute vestibular syndrome)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dix-Hallpike maneuver",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurology consultation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Stroke consultation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Otolaryngology / Neurotology referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vestibular rehabilitation referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Driving restrictions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall precautions",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Audiometry",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry / Psychology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy (vestibular)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep medicine",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Headache specialist / Neurology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Video-EEG monitoring",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Tilt table testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychological testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Superior canal dehiscence workup",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Autoimmune inner ear disease workup",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Perilymphatic fistula evaluation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Type",
+      "features": "Description",
+      "tests": "Common Causes"
+    },
+    {
+      "diagnosis": "**Vertigo**",
+      "features": "Illusion of movement (usually spinning); room spinning or self-spinning",
+      "tests": "BPPV, vestibular neuritis, Meniere's disease, vestibular migraine, posterior circulation stroke"
+    },
+    {
+      "diagnosis": "**Presyncope / Lightheadedness**",
+      "features": "Feeling of impending faint; \"graying out\"",
+      "tests": "Orthostatic hypotension, cardiac arrhythmia, vasovagal syncope, dehydration"
+    },
+    {
+      "diagnosis": "**Disequilibrium / Imbalance**",
+      "features": "Unsteadiness; difficulty walking; feeling off-balance without spinning",
+      "tests": "Peripheral neuropathy, cerebellar disorders, bilateral vestibular loss, Parkinson's disease, cervical spondylosis"
+    },
+    {
+      "diagnosis": "**Non-specific dizziness**",
+      "features": "Vague lightheadedness, floating, difficulty concentrating",
+      "tests": "Anxiety/panic disorder, depression, hyperventilation, medication side effects, PPPD"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Guideline",
+      "evidenceLevel": "Source",
+      "source": "Year"
+    },
+    {
+      "recommendation": "BPPV Practice Guideline",
+      "evidenceLevel": "[AAO-HNS](https://pubmed.ncbi.nlm.nih.gov/28248609/)",
+      "source": "2017"
+    },
+    {
+      "recommendation": "Vestibular Migraine Diagnostic Criteria",
+      "evidenceLevel": "ICHD-3 / Barany Society",
+      "source": "2012/2018"
+    },
+    {
+      "recommendation": "Meniere's Disease Guidelines",
+      "evidenceLevel": "AAO-HNS",
+      "source": "2020"
+    },
+    {
+      "recommendation": "HINTS Exam",
+      "evidenceLevel": "[Kattah et al.](https://pubmed.ncbi.nlm.nih.gov/19762709/) / [Tarnutzer](https://pubmed.ncbi.nlm.nih.gov/21576300/)",
+      "source": "2009/2011"
+    },
+    {
+      "recommendation": "Study",
+      "evidenceLevel": "Finding",
+      "source": "Impact"
+    },
+    {
+      "recommendation": "[Kattah et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/19762709/)",
+      "evidenceLevel": "HINTS exam (H: head impulse; I: nystagmus; TS: test of skew) was 100% sensitive and 96% specific for stroke in acute vestibular syndrome; superior to MRI in first 24-48h",
+      "source": "HINTS should be performed in acute vestibular syndrome; more sensitive than early MRI"
+    },
+    {
+      "recommendation": "[Strupp et al. (2004)](https://pubmed.ncbi.nlm.nih.gov/15269315/)",
+      "evidenceLevel": "Methylprednisolone improved vestibular function recovery in vestibular neuritis vs. placebo",
+      "source": "Steroids are standard of care for vestibular neuritis"
+    },
+    {
+      "recommendation": "[Hilton et al. Cochrane (2014)](https://pubmed.ncbi.nlm.nih.gov/25485940/)",
+      "evidenceLevel": "Epley maneuver highly effective for posterior canal BPPV; NNT ~3",
+      "source": "Epley is definitive treatment for BPPV"
+    },
+    {
+      "recommendation": "[Tarnutzer et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21576300/)",
+      "evidenceLevel": "Individual HINTS components analyzed; normal head impulse most predictive of stroke",
+      "source": "\"Dangerous\" HIT (normal in acute vertigo) = central cause until proven otherwise"
+    },
+    {
+      "recommendation": "[Choi et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30341546/)",
+      "evidenceLevel": "12-20% of posterior fossa strokes missed on early MRI (<48h) but detected on repeat MRI",
+      "source": "If high clinical suspicion for stroke and initial MRI negative, repeat MRI or treat as stroke"
+    },
+    {
+      "recommendation": "[Fife et al. AAO-HNS (2017)](https://pubmed.ncbi.nlm.nih.gov/28248609/)",
+      "evidenceLevel": "Comprehensive BPPV guideline; repositioning maneuvers recommended; vestibular suppressants NOT recommended",
+      "source": "Standard of care for BPPV"
+    },
+    {
+      "recommendation": "Study",
+      "evidenceLevel": "Sensitivity for Stroke",
+      "source": "Specificity"
+    },
+    {
+      "recommendation": "[Kattah et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/19762709/)",
+      "evidenceLevel": "100%",
+      "source": "96%"
+    },
+    {
+      "recommendation": "[Newman-Toker et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/24127701/)",
+      "evidenceLevel": "96%",
+      "source": "98%"
+    },
+    {
+      "recommendation": "[Tarnutzer et al. (2011, meta-analysis)](https://pubmed.ncbi.nlm.nih.gov/21576300/)",
+      "evidenceLevel": "98% (pooled)",
+      "source": "85% (pooled)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (HINTS, cranial nerves, cerebellar)",
+      "frequency": "On presentation; q1-2h if central concern",
+      "target": "No focal deficits; peripheral pattern",
+      "action": "Central features → STAT MRI; neurology/stroke consultation"
+    },
+    {
+      "item": "Vital signs",
+      "frequency": "q1h initially",
+      "target": "Stable BP, HR",
+      "action": "Orthostatic hypotension → fluids; arrhythmia → cardiology"
+    },
+    {
+      "item": "Hydration status",
+      "frequency": "Continuous",
+      "target": "No dehydration",
+      "action": "IV fluids if dehydrated from vomiting"
+    },
+    {
+      "item": "Nausea/vomiting control",
+      "frequency": "q1h",
+      "target": "Controlled",
+      "action": "Antiemetics; IV fluids"
+    },
+    {
+      "item": "Gait assessment",
+      "frequency": "Before discharge",
+      "target": "Safe ambulation",
+      "action": "PT evaluation; fall precautions; walker if needed"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Level of Care",
+      "criteria": "Criteria"
+    },
+    {
+      "disposition": "ICU / Stroke unit",
+      "criteria": "Confirmed or highly suspected posterior circulation stroke; basilar artery occlusion; cerebellar stroke with mass effect/hydrocephalus"
+    },
+    {
+      "disposition": "General floor",
+      "criteria": "Intractable vomiting/dehydration requiring IV fluids and monitoring; diagnostic uncertainty requiring observation and further testing; elderly with high fall risk and no safe home environment"
+    },
+    {
+      "disposition": "Observation",
+      "criteria": "Prolonged symptoms requiring IV fluids and antiemetics; need for serial neurologic exams; MRI pending"
+    }
+  ]
+}

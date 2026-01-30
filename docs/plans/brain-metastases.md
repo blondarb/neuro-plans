@@ -1,3 +1,10 @@
+---
+title: "Brain Metastases"
+description: "Clinical decision support for brain metastases diagnosis and management"
+version: "1.0"
+setting: "ED, HOSP, OPD, ICU"
+---
+
 # Brain Metastases
 
 **VERSION:** 1.0
@@ -10,7 +17,7 @@
 
 **ICD-10:** C79.31 (Secondary malignant neoplasm of brain), C79.32 (Secondary malignant neoplasm of cerebral meninges), C79.49 (Secondary malignant neoplasm of other parts of nervous system), G93.6 (Cerebral edema due to neoplasm)
 
-**SYNONYMS:** Brain metastases, brain mets, cerebral metastases, metastatic brain tumor, secondary brain cancer, brain tumor from cancer, metastatic disease to brain, brain lesions, CNS metastases
+**SYNONYMS:** Brain metastases, brain mets, cerebral metastases, brain metastasis, metastatic brain tumor, secondary brain tumor, secondary brain cancer, metastatic brain disease, brain tumor from cancer, metastatic disease to brain, brain lesions, CNS metastases
 
 **SCOPE:** Management of newly diagnosed or progressive brain metastases in adults. Covers initial stabilization, vasogenic edema management with corticosteroids, seizure management, imaging evaluation, molecular/histopathologic workup, treatment modalities (surgery, stereotactic radiosurgery, whole-brain radiation, systemic therapy with CNS penetration), and disposition. Excludes primary brain tumors (separate template), leptomeningeal carcinomatosis (partially addressed), and spinal metastases (separate template).
 
@@ -28,33 +35,33 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Baseline; chemotherapy planning; leukocytosis/infection; thrombocytopenia (bleeding risk, treatment candidacy) | WBC, platelets within normal limits; ALC (absolute lymphocyte count) for immunotherapy eligibility |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Renal function for contrast imaging; hepatic function for chemotherapy dosing; electrolytes (SIADH from brain lesions); glucose (steroid hyperglycemia) | Normal; anticipate glucose elevation with dexamethasone |
-| PT/INR, aPTT | STAT | STAT | ROUTINE | STAT | Coagulopathy assessment; surgical candidacy; hemorrhagic metastases (melanoma, RCC, choriocarcinoma, thyroid) | Normal |
-| Blood glucose | STAT | STAT | ROUTINE | STAT | Steroid-induced hyperglycemia; baseline before dexamethasone | <180 mg/dL; start insulin if persistently elevated |
-| Troponin | STAT | STAT | - | STAT | Cardiac evaluation if syncope or neurogenic cardiac injury | Normal |
-| Pregnancy test (β-hCG) | STAT | STAT | ROUTINE | STAT | Treatment planning; β-hCG-secreting tumors (choriocarcinoma, germ cell); radiation contraindication in pregnancy | Negative; if elevated consider choriocarcinoma or germ cell tumor |
-| LDH | STAT | ROUTINE | ROUTINE | STAT | Melanoma staging; tumor burden marker; prognostic | Normal; elevated in melanoma, lymphoma |
-| TSH, free T4 | - | ROUTINE | ROUTINE | - | Thyroid primary (thyroid cancer with brain metastases); fatigue/cognitive symptoms differential | Normal; abnormal may indicate thyroid primary |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Baseline; chemotherapy planning; leukocytosis/infection; thrombocytopenia (bleeding risk, treatment candidacy) | WBC, platelets within normal limits; ALC (absolute lymphocyte count) for immunotherapy eligibility |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | STAT | Renal function for contrast imaging; hepatic function for chemotherapy dosing; electrolytes (SIADH from brain lesions); glucose (steroid hyperglycemia) | Normal; anticipate glucose elevation with dexamethasone |
+| PT/INR, aPTT (CPT 85610+85730) | STAT | STAT | ROUTINE | STAT | Coagulopathy assessment; surgical candidacy; hemorrhagic metastases (melanoma, RCC, choriocarcinoma, thyroid) | Normal |
+| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Steroid-induced hyperglycemia; baseline before dexamethasone | <180 mg/dL; start insulin if persistently elevated |
+| Troponin (CPT 84484) | STAT | STAT | - | STAT | Cardiac evaluation if syncope or neurogenic cardiac injury | Normal |
+| Pregnancy test (β-hCG) (CPT 84703) | STAT | STAT | ROUTINE | STAT | Treatment planning; β-hCG-secreting tumors (choriocarcinoma, germ cell); radiation contraindication in pregnancy | Negative; if elevated consider choriocarcinoma or germ cell tumor |
+| LDH (CPT 83615) | STAT | ROUTINE | ROUTINE | STAT | Melanoma staging; tumor burden marker; prognostic | Normal; elevated in melanoma, lymphoma |
+| TSH, free T4 (CPT 84443+84439) | - | ROUTINE | ROUTINE | - | Thyroid primary (thyroid cancer with brain metastases); fatigue/cognitive symptoms differential | Normal; abnormal may indicate thyroid primary |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Tumor markers (CEA, CA 19-9, CA 125, CA 15-3, AFP, β-hCG) | - | ROUTINE | ROUTINE | - | Unknown primary: CEA (lung, GI, breast), CA 19-9 (pancreatic, GI), CA 125 (ovarian), CA 15-3 (breast), AFP (hepatocellular, germ cell), β-hCG (choriocarcinoma, germ cell) | Elevations guide primary site evaluation |
+| Tumor markers (CEA, CA 19-9, CA 125, CA 15-3, AFP, β-hCG) (CPT 82378, 86301, 86304, 82105, 84703) | - | ROUTINE | ROUTINE | - | Unknown primary: CEA (lung, GI, breast), CA 19-9 (pancreatic, GI), CA 125 (ovarian), CA 15-3 (breast), AFP (hepatocellular, germ cell), β-hCG (choriocarcinoma, germ cell) | Elevations guide primary site evaluation |
 | PSA (males) | - | ROUTINE | ROUTINE | - | Prostate cancer with brain metastases (rare but occurs) | Normal; elevated guides prostate workup |
 | Serum protein electrophoresis (SPEP) | - | ROUTINE | ROUTINE | - | Lymphoma/myeloma differential for CNS mass lesion | No monoclonal protein |
-| HIV, hepatitis B/C | - | ROUTINE | ROUTINE | - | Primary CNS lymphoma (PCNSL) differential; immunosuppression assessment; treatment implications | Negative |
-| ESR / CRP | - | ROUTINE | ROUTINE | - | Infection differential (abscess vs. metastasis); inflammatory markers | Normal |
-| Cortisol (AM) | - | ROUTINE | ROUTINE | - | If pituitary metastasis suspected; before initiating dexamethasone if possible | Normal (>10 mcg/dL AM) |
+| HIV, hepatitis B/C (CPT 87389) | - | ROUTINE | ROUTINE | - | Primary CNS lymphoma (PCNSL) differential; immunosuppression assessment; treatment implications | Negative |
+| ESR / CRP (CPT 85652+86140) | - | ROUTINE | ROUTINE | - | Infection differential (abscess vs. metastasis); inflammatory markers | Normal |
+| Cortisol (AM) (CPT 82533) | - | ROUTINE | ROUTINE | - | If pituitary metastasis suspected; before initiating dexamethasone if possible | Normal (>10 mcg/dL AM) |
 | Prolactin | - | ROUTINE | ROUTINE | - | Pituitary metastasis differential | Normal |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CSF cytology / flow cytometry | - | EXT | EXT | - | Leptomeningeal carcinomatosis evaluation; diagnostic if positive (sensitivity ~50% single LP, ~80% with repeat) | Negative; positive = leptomeningeal disease |
-| CSF protein, glucose, cell count | - | EXT | EXT | - | Leptomeningeal disease (elevated protein, low glucose, lymphocytic pleocytosis) | Normal; elevated protein and low glucose suggest LMD |
+| CSF cytology / flow cytometry (CPT 88104) | - | EXT | EXT | - | Leptomeningeal carcinomatosis evaluation; diagnostic if positive (sensitivity ~50% single LP, ~80% with repeat) | Negative; positive = leptomeningeal disease |
+| CSF protein, glucose, cell count (CPT 84157+82945+89051) | - | EXT | EXT | - | Leptomeningeal disease (elevated protein, low glucose, lymphocytic pleocytosis) | Normal; elevated protein and low glucose suggest LMD |
 | Circulating tumor DNA (ctDNA) / liquid biopsy | - | EXT | EXT | - | Unknown primary; molecular profiling when tissue biopsy not feasible; monitor treatment response | Detectable mutations guide therapy |
 | Next-generation sequencing (NGS) - blood | - | EXT | EXT | - | Identify actionable mutations (EGFR, ALK, BRAF, HER2, KRAS, ROS1) when tissue insufficient | Actionable driver mutations |
 | Paraneoplastic antibody panel | - | EXT | EXT | - | If clinical presentation suggests paraneoplastic syndrome mimicking or coexisting with metastatic disease | Negative; positive changes management |
@@ -68,21 +75,21 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head without contrast | STAT | STAT | - | STAT | Immediate in ED for acute presentation; identifies hemorrhage, mass effect, hydrocephalus | Mass lesion(s), hemorrhage, edema, midline shift, hydrocephalus; hemorrhagic metastases suggest melanoma, RCC, choriocarcinoma, thyroid | Pregnancy (benefit outweighs risk) |
-| MRI brain with and without contrast (gadolinium) | STAT | STAT | URGENT | STAT | Within 24h of presentation; GOLD STANDARD for brain metastases; thin-cut (≤1mm) 3D T1 post-contrast | Number/size/location of metastases; ring-enhancement pattern; hemorrhagic component; leptomeningeal enhancement; dural-based vs. parenchymal | MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia |
-| CT chest/abdomen/pelvis with contrast | URGENT | URGENT | ROUTINE | - | Within 24-48h if unknown primary; staging for known primary | Primary tumor identification; staging; additional metastatic disease | Contrast allergy; renal impairment |
-| ECG (12-lead) | STAT | STAT | - | STAT | Baseline; pre-treatment; QTc for anti-emetics/targeted therapies | Normal | None |
-| Chest X-ray | STAT | STAT | - | STAT | Lung primary (most common source of brain metastases); pulmonary metastases; aspiration if obtunded | Lung mass; effusion; lymphadenopathy | Pregnancy (shield) |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | Immediate in ED for acute presentation; identifies hemorrhage, mass effect, hydrocephalus | Mass lesion(s), hemorrhage, edema, midline shift, hydrocephalus; hemorrhagic metastases suggest melanoma, RCC, choriocarcinoma, thyroid | Pregnancy (benefit outweighs risk) |
+| MRI brain with and without contrast (gadolinium) (CPT 70553) | STAT | STAT | URGENT | STAT | Within 24h of presentation; GOLD STANDARD for brain metastases; thin-cut (≤1mm) 3D T1 post-contrast | Number/size/location of metastases; ring-enhancement pattern; hemorrhagic component; leptomeningeal enhancement; dural-based vs. parenchymal | MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia |
+| CT chest/abdomen/pelvis with contrast (CPT 71260+74178) | URGENT | URGENT | ROUTINE | - | Within 24-48h if unknown primary; staging for known primary | Primary tumor identification; staging; additional metastatic disease | Contrast allergy; renal impairment |
+| ECG (12-lead) (CPT 93000) | STAT | STAT | - | STAT | Baseline; pre-treatment; QTc for anti-emetics/targeted therapies | Normal | None |
+| Chest X-ray (CPT 71046) | STAT | STAT | - | STAT | Lung primary (most common source of brain metastases); pulmonary metastases; aspiration if obtunded | Lung mass; effusion; lymphadenopathy | Pregnancy (shield) |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| PET/CT (FDG) | - | ROUTINE | ROUTINE | - | Outpatient or during hospitalization; staging; unknown primary identification; ~85% sensitivity for primary site | Primary tumor; additional metastatic disease; lymph node involvement; treatment response assessment | Uncontrolled diabetes (glucose >200 impairs uptake); pregnancy |
-| CT angiography (head) | URGENT | URGENT | - | URGENT | If hemorrhagic metastasis to evaluate vascularity; pre-surgical planning | Tumor vascularity; relationship to major vessels | Contrast allergy; renal impairment |
+| PET/CT (FDG) (CPT 78816) | - | ROUTINE | ROUTINE | - | Outpatient or during hospitalization; staging; unknown primary identification; ~85% sensitivity for primary site | Primary tumor; additional metastatic disease; lymph node involvement; treatment response assessment | Uncontrolled diabetes (glucose >200 impairs uptake); pregnancy |
+| CT angiography (head) (CPT 70496) | URGENT | URGENT | - | URGENT | If hemorrhagic metastasis to evaluate vascularity; pre-surgical planning | Tumor vascularity; relationship to major vessels | Contrast allergy; renal impairment |
 | MR spectroscopy (MRS) | - | ROUTINE | ROUTINE | - | Differentiating tumor from abscess or radiation necrosis; elevated choline:creatine ratio in tumor; lipid/lactate peak in necrosis | Elevated choline, reduced NAA in tumor; elevated lipid/lactate in necrosis | Same as MRI |
 | MR perfusion (DSC or DCE) | - | ROUTINE | ROUTINE | - | Differentiating tumor recurrence from radiation necrosis; elevated rCBV in tumor | Elevated rCBV (>1.5-2.0) suggests tumor; low rCBV suggests radiation necrosis | Same as MRI |
-| MRI spine (whole) with contrast | - | URGENT | ROUTINE | - | If spinal symptoms or leptomeningeal disease suspected; staging for drop metastases | Spinal metastases; leptomeningeal enhancement; cord compression | Same as MRI |
+| MRI spine (whole) with contrast (CPT 72156+72157+72158) | - | URGENT | ROUTINE | - | If spinal symptoms or leptomeningeal disease suspected; staging for drop metastases | Spinal metastases; leptomeningeal enhancement; cord compression | Same as MRI |
 | Mammography / breast MRI (females) | - | ROUTINE | ROUTINE | - | Breast cancer is 2nd most common source of brain metastases in women | Breast mass or abnormality | Breast implants (mammography may be limited) |
 | Stereotactic biopsy planning MRI | - | URGENT | ROUTINE | - | If tissue diagnosis needed and surgical resection not planned; fiducial/frameless navigation sequences | Biopsy trajectory planning; avoidance of eloquent cortex and vasculature | Same as MRI |
 
@@ -99,7 +106,7 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| LP with CSF cytology, flow cytometry, protein, glucose, cell count | - | URGENT | EXT | URGENT | If leptomeningeal disease suspected (cranial neuropathies, radiculopathy, headache, altered mentation without adequate parenchymal lesion to explain); MUST ensure no obstructive hydrocephalus or significant mass effect first | Cytology: malignant cells (50% sensitivity single LP; repeat improves to ~80%); elevated opening pressure; elevated protein (>50 mg/dL); low glucose (<40 mg/dL or <60% serum); lymphocytic pleocytosis | CONTRAINDICATED if significant mass effect, large posterior fossa lesion, obstructive hydrocephalus, midline shift >5mm (herniation risk); coagulopathy; local infection at LP site |
+| LP (CPT 62270) with CSF cytology, flow cytometry, protein, glucose, cell count | - | URGENT | EXT | URGENT | If leptomeningeal disease suspected (cranial neuropathies, radiculopathy, headache, altered mentation without adequate parenchymal lesion to explain); MUST ensure no obstructive hydrocephalus or significant mass effect first | Cytology: malignant cells (50% sensitivity single LP; repeat improves to ~80%); elevated opening pressure; elevated protein (>50 mg/dL); low glucose (<40 mg/dL or <60% serum); lymphocytic pleocytosis | CONTRAINDICATED if significant mass effect, large posterior fossa lesion, obstructive hydrocephalus, midline shift >5mm (herniation risk); coagulopathy; local infection at LP site |
 
 ---
 
@@ -107,47 +114,47 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Protocol | Evidence/Rationale |
-|-----------|:--:|:----:|:---:|:---:|----------|-------------------|
-| **Dexamethasone (vasogenic edema)** | STAT | STAT | URGENT | STAT | **Symptomatic edema:** 10 mg IV loading dose, then 4 mg IV/PO q6h; **Moderate symptoms:** 4-8 mg/day; **Severe/impending herniation:** 10 mg IV bolus then 4-8 mg IV q6h (up to 16-24 mg/day); Taper as soon as clinically feasible over 2-4 weeks; GI prophylaxis with PPI (omeprazole 20 mg daily) while on steroids; Monitor glucose q6h initially | Dexamethasone is preferred corticosteroid (minimal mineralocorticoid effect, long half-life); symptomatic improvement in 24-72h; reduces vasogenic edema via BBB stabilization; no benefit in asymptomatic patients without edema (AVOID routine prophylactic use) |
-| **Seizure management (acute)** | STAT | STAT | - | STAT | **Active seizure:** Lorazepam 0.1 mg/kg IV (max 4 mg), may repeat x1 in 5 min; **Then:** Levetiracetam 1000-1500 mg IV load (preferred - no drug interactions with chemotherapy) OR valproic acid 20-30 mg/kg IV load (avoid with hepatic metastases); Phenytoin/fosphenytoin only if above unavailable (interacts with many chemotherapies and targeted agents) | Levetiracetam preferred: no hepatic enzyme induction (does NOT reduce efficacy of steroids, chemotherapy, or targeted agents), renal elimination, broad spectrum; AAN guidelines do NOT recommend prophylactic AEDs in brain tumor patients without seizures |
-| **No prophylactic anticonvulsants** | STAT | STAT | ROUTINE | STAT | Do NOT start AEDs prophylactically in patients with brain metastases who have NOT had seizures; Applicable even peri-operatively (surgical prophylaxis may be used 7 days only per institutional protocol) | AAN Practice Parameter (Glantz et al., 2000; reaffirmed): No evidence supporting prophylactic AED use in brain tumor patients; side effects outweigh benefits; ASCO guideline concordant |
-| **Airway/ICP management (obtunded patient)** | STAT | - | - | STAT | **GCS ≤8:** Intubation; elevate HOB 30°; **Acute herniation:** Mannitol 1-1.5 g/kg IV bolus OR hypertonic saline (23.4% NaCl 30 mL via central line over 15 min or 3% NaCl 250 mL over 30 min); maintain PaCO2 30-35 mmHg (brief hyperventilation only as bridge to definitive treatment); Emergent neurosurgery consult for decompression | ICP management as bridge to definitive treatment (surgery/radiation); prolonged hyperventilation causes cerebral ischemia; osmotherapy reduces cerebral edema |
-| **DVT prophylaxis** | - | STAT | - | STAT | SCDs (sequential compression devices) immediately on admission; Pharmacologic prophylaxis: enoxaparin 40 mg SQ daily or heparin 5000 units SQ q8h - START within 24-48h unless hemorrhagic metastasis or planned surgery within 24h; Post-craniotomy: restart pharmacologic DVT ppx within 24-48h per neurosurgery guidance | Brain tumor patients have 20-30% VTE risk; mechanical prophylaxis alone insufficient; pharmacologic prophylaxis does NOT significantly increase intracranial hemorrhage risk (Perry et al., 2009; AVERT trial) |
-| **Stress ulcer prophylaxis** | STAT | STAT | ROUTINE | STAT | PPI (omeprazole 20 mg daily or pantoprazole 40 mg daily) while on dexamethasone; continue throughout steroid course | Combined corticosteroid + critical illness increases GI bleed risk |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Dexamethasone (vasogenic edema)** (CPT 96374) | IV | - | 10 mg :: IV :: q6h :: **Symptomatic edema:** 10 mg IV loading dose, then 4 mg IV/PO q6h; **Moderate symptoms:** 4-8 mg/day; **Severe/impending herniation:** 10 mg IV bolus then 4-8 mg IV q6h (up to 16-24 mg/day); Taper as soon as clinically feasible over 2-4 weeks; GI prophylaxis with PPI (omeprazole 20 mg daily) while on steroids; Monitor glucose q6h initially | - | Dexamethasone is preferred corticosteroid (minimal mineralocorticoid effect, long half-life); symptomatic improvement in 24-72h; reduces vasogenic edema via BBB stabilization; no benefit in asymptomatic patients without edema (AVOID routine prophylactic use) | STAT | STAT | URGENT | STAT |
+| **Seizure management (acute)** | IV | - | 0.1 mg/kg :: IV :: - :: **Active seizure:** Lorazepam 0.1 mg/kg IV (max 4 mg), may repeat x1 in 5 min; **Then:** Levetiracetam 1000-1500 mg IV load (preferred - no drug interactions with chemotherapy) OR valproic acid 20-30 mg/kg IV load (avoid with hepatic metastases); Phenytoin/fosphenytoin only if above unavailable (interacts with many chemotherapies and targeted agents) | - | Levetiracetam preferred: no hepatic enzyme induction (does NOT reduce efficacy of steroids, chemotherapy, or targeted agents), renal elimination, broad spectrum; AAN guidelines do NOT recommend prophylactic AEDs in brain tumor patients without seizures | STAT | STAT | - | STAT |
+| **No prophylactic anticonvulsants** | - | - | Do NOT start AEDs prophylactically in patients with brain metastases who have NOT had seizures; Applicable even peri-operatively (surgical prophylaxis may be used 7 days only per institutional protocol) | - | AAN Practice Parameter (Glantz et al., 2000; reaffirmed): No evidence supporting prophylactic AED use in brain tumor patients; side effects outweigh benefits; ASCO guideline concordant | STAT | STAT | ROUTINE | STAT |
+| **Airway/ICP management (obtunded patient)** | IV | - | 1-1.5 g/kg :: IV :: once :: **GCS ≤8:** Intubation; elevate HOB 30°; **Acute herniation:** Mannitol 1-1.5 g/kg IV bolus OR hypertonic saline (23.4% NaCl 30 mL via central line over 15 min or 3% NaCl 250 mL over 30 min); maintain PaCO2 30-35 mmHg (brief hyperventilation only as bridge to definitive treatment); Emergent neurosurgery consult for decompression | - | ICP management as bridge to definitive treatment (surgery/radiation); prolonged hyperventilation causes cerebral ischemia; osmotherapy reduces cerebral edema | STAT | - | - | STAT |
+| **DVT prophylaxis** | SC | - | 40 mg :: SC :: q8h :: SCDs (sequential compression devices) immediately on admission; Pharmacologic prophylaxis: enoxaparin 40 mg SQ daily or heparin 5000 units SQ q8h - START within 24-48h unless hemorrhagic metastasis or planned surgery within 24h; Post-craniotomy: restart pharmacologic DVT ppx within 24-48h per neurosurgery guidance | - | Brain tumor patients have 20-30% VTE risk; mechanical prophylaxis alone insufficient; pharmacologic prophylaxis does NOT significantly increase intracranial hemorrhage risk (Perry et al., 2009; AVERT trial) | - | STAT | - | STAT |
+| **Stress ulcer prophylaxis** | PO | - | 20 mg :: PO :: daily :: PPI (omeprazole 20 mg daily or pantoprazole 40 mg daily) while on dexamethasone; continue throughout steroid course | - | Combined corticosteroid + critical illness increases GI bleed risk | STAT | STAT | ROUTINE | STAT |
 
 ### 3B. Definitive/Targeted Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Protocol | Evidence/Rationale |
-|-----------|:--:|:----:|:---:|:---:|----------|-------------------|
-| **Surgical resection** | - | URGENT | - | - | **Indications:** Single (or limited ≤3) accessible metastasis; need for tissue diagnosis; symptomatic mass effect not responding to steroids; large lesion (>3-4 cm) not suitable for SRS alone; good performance status (KPS ≥70); controlled systemic disease; life expectancy >3 months; **Post-op:** MRI within 24-48h to assess residual; SRS to cavity within 2-4 weeks to reduce local recurrence (50-60% → 15-20%) | Patchell et al. (1990): Surgery + WBRT > WBRT alone for single brain metastasis (median survival 40 vs. 15 weeks); Cavity SRS post-resection: Mahajan et al. (2017): local control improved with cavity SRS vs. observation |
-| **Stereotactic radiosurgery (SRS)** | - | URGENT | ROUTINE | - | **Indications:** 1-4 metastases (most centers), up to 10-15 in select cases (JLGK0901); size ≤3-4 cm; **Dose:** Single fraction 15-24 Gy (dose based on size: ≤2cm: 20-24 Gy, 2.1-3cm: 18 Gy, 3.1-4cm: 15 Gy) OR fractionated SRS (3-5 fractions for larger lesions or eloquent location); **Timing:** Within 2-4 weeks of diagnosis; Serial MRI q2-3 months post-SRS | Yamamoto et al. (JLGK0901): SRS alone for 2-10 metastases non-inferior to 2-4 for survival; SRS vs. WBRT: better cognitive preservation (NCCTG N0574, Brown et al., 2016); SRS + HA-WBRT vs SRS alone per NRG-CC003 |
-| **Whole-brain radiation therapy (WBRT)** | - | URGENT | ROUTINE | - | **Indications:** >10-15 metastases; leptomeningeal disease; poor surgical/SRS candidates; miliary/diffuse pattern; **Standard:** 30 Gy in 10 fractions (or 20 Gy in 5 fractions for poor prognosis); **Hippocampal avoidance (HA-WBRT):** Preferred when technically feasible (no metastases within 5mm of hippocampus): 30 Gy in 10 fractions with hippocampal sparing + memantine 20 mg daily starting with WBRT x 6 months | HA-WBRT + memantine (NRG-CC001, Brown et al., 2020): significantly less cognitive deterioration vs. standard WBRT + memantine at 4 and 6 months; Memantine alone (RTOG 0614): trend toward better cognitive function |
-| **Systemic therapy with CNS activity** | - | ROUTINE | ROUTINE | - | **NSCLC with EGFR mutation:** Osimertinib 80 mg daily (CNS response rate 91%); **NSCLC with ALK rearrangement:** Lorlatinib 100 mg daily (intracranial response 82%) or alectinib 600 mg BID (CNS response 81%); **NSCLC with ROS1:** Lorlatinib; **Melanoma with BRAF V600:** Dabrafenib + trametinib (intracranial response 58%) or encorafenib + binimetinib; **Melanoma (any):** Ipilimumab + nivolumab (intracranial response 46-57% in asymptomatic); **HER2+ breast:** Tucatinib + trastuzumab + capecitabine (HER2CLIMB: intracranial response 47%); **Breast (HR+):** Abemaciclib (some CNS activity); **RCC:** Nivolumab + ipilimumab or cabozantinib | CNS-penetrant systemic therapy increasingly used as upfront or adjunct to SRS; may defer radiation in asymptomatic patients with actionable mutations and small metastases; Always coordinate with medical oncology |
-| **Corticosteroid taper** | - | ROUTINE | ROUTINE | - | Begin taper once definitive treatment initiated and symptoms improving; **Taper schedule:** Reduce by 2 mg every 3-5 days (from 16 mg/day: 16→12→8→6→4→2→1→off); Slower taper if symptoms recur; Monitor for adrenal insufficiency if >3 weeks of steroid use | Prolonged steroids cause significant morbidity: hyperglycemia, myopathy (steroid myopathy can be debilitating), immunosuppression, osteoporosis, PJP risk, insomnia, psychiatric effects, GI bleeding |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Surgical resection** | - | - | 60% :: - :: - :: **Indications:** Single (or limited ≤3) accessible metastasis; need for tissue diagnosis; symptomatic mass effect not responding to steroids; large lesion (>3-4 cm) not suitable for SRS alone; good performance status (KPS ≥70); controlled systemic disease; life expectancy >3 months; **Post-op:** MRI within 24-48h to assess residual; SRS to cavity within 2-4 weeks to reduce local recurrence (50-60% → 15-20%) | - | Patchell et al. (1990): Surgery + WBRT > WBRT alone for single brain metastasis (median survival 40 vs. 15 weeks); Cavity SRS post-resection: Mahajan et al. (2017): local control improved with cavity SRS vs. observation | - | URGENT | - | - |
+| **Stereotactic radiosurgery (SRS)** | - | - | **Indications:** 1-4 metastases (most centers), up to 10-15 in select cases (JLGK0901); size ≤3-4 cm; **Dose:** Single fraction 15-24 Gy (dose based on size: ≤2cm: 20-24 Gy, 2.1-3cm: 18 Gy, 3.1-4cm: 15 Gy) OR fractionated SRS (3-5 fractions for larger lesions or eloquent location); **Timing:** Within 2-4 weeks of diagnosis; Serial MRI q2-3 months post-SRS | - | Yamamoto et al. (JLGK0901): SRS alone for 2-10 metastases non-inferior to 2-4 for survival; SRS vs. WBRT: better cognitive preservation (NCCTG N0574, Brown et al., 2016); SRS + HA-WBRT vs SRS alone per NRG-CC003 | - | URGENT | ROUTINE | - |
+| **Whole-brain radiation therapy (WBRT)** | - | - | 20 mg :: - :: daily :: **Indications:** >10-15 metastases; leptomeningeal disease; poor surgical/SRS candidates; miliary/diffuse pattern; **Standard:** 30 Gy in 10 fractions (or 20 Gy in 5 fractions for poor prognosis); **Hippocampal avoidance (HA-WBRT):** Preferred when technically feasible (no metastases within 5mm of hippocampus): 30 Gy in 10 fractions with hippocampal sparing + memantine 20 mg daily starting with WBRT x 6 months | - | HA-WBRT + memantine (NRG-CC001, Brown et al., 2020): significantly less cognitive deterioration vs. standard WBRT + memantine at 4 and 6 months; Memantine alone (RTOG 0614): trend toward better cognitive function | - | URGENT | ROUTINE | - |
+| **Systemic therapy with CNS activity** | - | - | 80 mg :: - :: daily :: **NSCLC with EGFR mutation:** Osimertinib 80 mg daily (CNS response rate 91%); **NSCLC with ALK rearrangement:** Lorlatinib 100 mg daily (intracranial response 82%) or alectinib 600 mg BID (CNS response 81%); **NSCLC with ROS1:** Lorlatinib; **Melanoma with BRAF V600:** Dabrafenib + trametinib (intracranial response 58%) or encorafenib + binimetinib; **Melanoma (any):** Ipilimumab + nivolumab (intracranial response 46-57% in asymptomatic); **HER2+ breast:** Tucatinib + trastuzumab + capecitabine (HER2CLIMB: intracranial response 47%); **Breast (HR+):** Abemaciclib (some CNS activity); **RCC:** Nivolumab + ipilimumab or cabozantinib | - | CNS-penetrant systemic therapy increasingly used as upfront or adjunct to SRS; may defer radiation in asymptomatic patients with actionable mutations and small metastases; Always coordinate with medical oncology | - | ROUTINE | ROUTINE | - |
+| **Corticosteroid taper** | - | - | 2 mg :: - :: once :: Begin taper once definitive treatment initiated and symptoms improving; **Taper schedule:** Reduce by 2 mg every 3-5 days (from 16 mg/day: 16→12→8→6→4→2→1→off); Slower taper if symptoms recur; Monitor for adrenal insufficiency if >3 weeks of steroid use | - | Prolonged steroids cause significant morbidity: hyperglycemia, myopathy (steroid myopathy can be debilitating), immunosuppression, osteoporosis, PJP risk, insomnia, psychiatric effects, GI bleeding | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Adjunctive Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Protocol | Evidence/Rationale |
-|-----------|:--:|:----:|:---:|:---:|----------|-------------------|
-| **Levetiracetam (post-seizure maintenance)** | - | STAT | ROUTINE | STAT | 500-1500 mg PO/IV BID (start 500 mg BID, titrate to seizure control); Renal dosing if GFR <50; No drug interactions with chemotherapy, targeted therapy, or steroids | Preferred AED in brain tumor patients due to no CYP enzyme induction; does not reduce efficacy of dexamethasone, temozolomide, or targeted agents |
-| **PJP prophylaxis** | - | ROUTINE | ROUTINE | - | If dexamethasone >20 mg/week AND concomitant temozolomide or immunosuppression: TMP-SMX 1 DS tablet 3x/week (Mon/Wed/Fri) OR atovaquone 1500 mg daily if sulfa allergic | Risk of Pneumocystis with prolonged corticosteroids + additional immunosuppression |
-| **Glucose management (steroid-induced)** | STAT | STAT | ROUTINE | STAT | Fingerstick glucose q6h while on dexamethasone; Sliding scale insulin initially; Basal-bolus insulin if persistently >180 mg/dL; Anticipate glucose elevation typically 4-8 hours after steroid dose; May need 2-3x baseline insulin requirements | Dexamethasone causes significant hyperglycemia in 50-60% of patients; uncontrolled hyperglycemia worsens outcomes |
-| **Calcium/Vitamin D** | - | ROUTINE | ROUTINE | - | Calcium 1000-1200 mg + Vitamin D 800-1000 IU daily while on prolonged steroids (>2 weeks) | Steroid-induced osteoporosis prevention |
-| **Anti-emetics (for radiation/chemotherapy)** | - | ROUTINE | ROUTINE | - | Ondansetron 4-8 mg IV/PO q8h PRN; Dexamethasone itself is anti-emetic; Avoid metoclopramide in brain metastases patients (extrapyramidal effects) | Nausea common with elevated ICP and with radiation therapy |
-| **Memantine (with WBRT)** | - | ROUTINE | ROUTINE | - | 5 mg daily x1 week → 5 mg BID x1 week → 10 mg AM + 5 mg PM x1 week → 10 mg BID; Continue for 6 months total; Start day 1 of WBRT | RTOG 0614 and NRG-CC001: cognitive protection during WBRT; NMDA receptor antagonist reduces excitotoxic neuronal injury from radiation |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| **Levetiracetam (post-seizure maintenance)** | IV | - | 500-1500 mg :: IV :: BID :: 500-1500 mg PO/IV BID (start 500 mg BID, titrate to seizure control); Renal dosing if GFR <50; No drug interactions with chemotherapy, targeted therapy, or steroids | - | Preferred AED in brain tumor patients due to no CYP enzyme induction; does not reduce efficacy of dexamethasone, temozolomide, or targeted agents | - | STAT | ROUTINE | STAT |
+| **PJP prophylaxis** | PO | - | 20 mg :: PO :: daily :: If dexamethasone >20 mg/week AND concomitant temozolomide or immunosuppression: TMP-SMX 1 DS tablet 3x/week (Mon/Wed/Fri) OR atovaquone 1500 mg daily if sulfa allergic | - | Risk of Pneumocystis with prolonged corticosteroids + additional immunosuppression | - | ROUTINE | ROUTINE | - |
+| **Glucose management (steroid-induced)** | - | - | 180 mg :: - :: q6h :: Fingerstick glucose q6h while on dexamethasone; Sliding scale insulin initially; Basal-bolus insulin if persistently >180 mg/dL; Anticipate glucose elevation typically 4-8 hours after steroid dose; May need 2-3x baseline insulin requirements | - | Dexamethasone causes significant hyperglycemia in 50-60% of patients; uncontrolled hyperglycemia worsens outcomes | STAT | STAT | ROUTINE | STAT |
+| **Calcium/Vitamin D** | PO | - | 1000-1200 mg :: PO :: daily :: Calcium 1000-1200 mg + Vitamin D 800-1000 IU daily while on prolonged steroids (>2 weeks) | - | Steroid-induced osteoporosis prevention | - | ROUTINE | ROUTINE | - |
+| **Anti-emetics (for radiation/chemotherapy)** | IV | - | 4-8 mg :: IV :: q8h :: Ondansetron 4-8 mg IV/PO q8h PRN; Dexamethasone itself is anti-emetic; Avoid metoclopramide in brain metastases patients (extrapyramidal effects) | - | Nausea common with elevated ICP and with radiation therapy | - | ROUTINE | ROUTINE | - |
+| **Memantine (with WBRT)** | - | - | 5 mg :: - :: daily :: 5 mg daily x1 week → 5 mg BID x1 week → 10 mg AM + 5 mg PM x1 week → 10 mg BID; Continue for 6 months total; Start day 1 of WBRT | - | RTOG 0614 and NRG-CC001: cognitive protection during WBRT; NMDA receptor antagonist reduces excitotoxic neuronal injury from radiation | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Medications to AVOID or Use with Caution
 
-| Medication | Risk/Concern | Alternative |
-|-----------|-------------|-------------|
-| Prophylactic anticonvulsants (in patients without seizures) | No evidence of benefit; significant side effects (fatigue, rash, cognitive impairment); drug interactions with chemotherapy | Only treat seizures if they occur; levetiracetam first-line |
-| Phenytoin / Carbamazepine / Phenobarbital (enzyme-inducing AEDs) | Potent CYP3A4 induction reduces efficacy of dexamethasone, many chemotherapies (temozolomide, irinotecan, paclitaxel), targeted therapies (EGFR/ALK inhibitors), and immunotherapy metabolism | Levetiracetam, lacosamide, brivaracetam (non-enzyme-inducing AEDs) |
-| Bevacizumab (concurrent with surgery) | Impaired wound healing; hold 4-6 weeks before and 4 weeks after surgery | Coordinate timing with surgical and medical oncology teams |
-| Anticoagulation (full-dose, peri-operative) | Increased hemorrhage risk, especially with hemorrhagic metastases (melanoma, RCC); hold for procedures | Mechanical prophylaxis peri-operatively; restart anticoagulation 24-48h post-procedure per neurosurgery guidance |
-| Methotrexate (high-dose, with brain radiation) | Severe leukoencephalopathy when given concurrently or within weeks of cranial radiation | Sequence treatments; MTX before radiation if needed |
-| Live vaccines (while on dexamethasone or chemotherapy) | Immunosuppression risk; disseminated infection | Inactivated vaccines; defer live vaccines until immune recovery |
-| Lumbar puncture (with large posterior fossa lesion / significant mass effect) | Herniation risk | Imaging first; neurosurgery consultation; consider Ommaya reservoir for recurrent CSF sampling |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Prophylactic anticonvulsants (in patients without seizures) | - | - | - | - | - | - | - | - | - | - |
+| Phenytoin / Carbamazepine / Phenobarbital (enzyme-inducing AEDs) | - | - | - | - | - | - | - | - | - | - |
+| Bevacizumab (concurrent with surgery) | - | - | - | - | - | - | - | - | - | - |
+| Anticoagulation (full-dose, peri-operative) | - | - | - | - | - | - | - | - | - | - |
+| Methotrexate (high-dose, with brain radiation) | - | - | - | - | - | - | - | - | - | - |
+| Live vaccines (while on dexamethasone or chemotherapy) | - | - | - | - | - | - | - | - | - | - |
+| Lumbar puncture (with large posterior fossa lesion / significant mass effect) | - | - | - | - | - | - | - | - | - | - |
 
 ---
 
@@ -303,26 +310,26 @@ SECTION B: SUPPORTING INFORMATION
 |-----------|--------|------|-------------------|
 | Management of Brain Metastases | Congress of Neurological Surgeons (CNS) / AANS Systematic Review | 2019 | Surgery for single accessible metastasis with mass effect; SRS for limited brain metastases (1-4); WBRT for multiple (>10-15) or leptomeningeal disease; avoid prophylactic AEDs |
 | Brain Metastases Molecular Testing | NCCN Central Nervous System Cancers | v1.2025 | Comprehensive molecular profiling for actionable targets (EGFR, ALK, ROS1, BRAF, HER2, KRAS G12C, NTRK, RET, MET, PD-L1); guide systemic therapy selection |
-| Prophylactic Anticonvulsants | AAN Practice Parameter (Glantz et al.) | 2000 (reaffirmed) | Routine prophylactic AEDs NOT recommended in brain tumor patients without seizures |
-| Hippocampal Avoidance WBRT | NRG-CC001 (Brown et al.) | 2020 | HA-WBRT + memantine superior to standard WBRT + memantine for cognitive preservation |
-| SRS for Multiple Brain Metastases | JLGK0901 (Yamamoto et al.) | 2014 | SRS for 5-10 metastases non-inferior to 2-4 for overall survival |
-| Cognitive Outcomes SRS vs. WBRT | NCCTG N0574 (Brown et al.) | 2016 | SRS alone superior to SRS + WBRT for cognitive preservation; no overall survival difference |
+| Prophylactic Anticonvulsants | [AAN Practice Parameter (Glantz et al.)](https://pubmed.ncbi.nlm.nih.gov/10822423/) | 2000 (reaffirmed) | Routine prophylactic AEDs NOT recommended in brain tumor patients without seizures |
+| Hippocampal Avoidance WBRT | [NRG-CC001 (Brown et al.)](https://pubmed.ncbi.nlm.nih.gov/32058845/) | 2020 | HA-WBRT + memantine superior to standard WBRT + memantine for cognitive preservation |
+| SRS for Multiple Brain Metastases | [JLGK0901 (Yamamoto et al.)](https://pubmed.ncbi.nlm.nih.gov/24621620/) | 2014 | SRS for 5-10 metastases non-inferior to 2-4 for overall survival |
+| Cognitive Outcomes SRS vs. WBRT | [NCCTG N0574 (Brown et al.)](https://pubmed.ncbi.nlm.nih.gov/27458945/) | 2016 | SRS alone superior to SRS + WBRT for cognitive preservation; no overall survival difference |
 
 ### Landmark Studies
 
 | Study | Finding | Impact |
 |-------|---------|--------|
-| Patchell et al. (1990) | Surgery + WBRT vs. WBRT alone for single brain metastasis: median survival 40 vs. 15 weeks; lower recurrence at original site (20% vs. 52%) | Established surgery as standard for single brain metastasis |
-| Patchell et al. (1998) | Post-operative WBRT reduced brain recurrence (18% vs. 70%) but no survival benefit; improved neurologic death | Supported adjuvant radiation after surgery; now often SRS to cavity instead of WBRT |
-| Mahajan et al. (2017) - MD Anderson | SRS to surgical cavity vs. observation: 12-month local recurrence 28% vs. 59% (HR 0.46) | Established post-operative cavity SRS as standard of care |
-| Brown et al. (2016) - NCCTG N0574 | SRS alone vs. SRS + WBRT: cognitive deterioration at 3 months 64% vs. 92%; no OS difference | Shifted practice toward SRS alone with surveillance MRI rather than WBRT |
-| Yamamoto et al. (2014) - JLGK0901 | SRS for 5-10 vs. 2-4 brain metastases: similar overall survival (10.8 vs. 10.8 months) | Expanded SRS indications to higher numbers of metastases |
-| Brown et al. (2020) - NRG-CC001 | HA-WBRT + memantine vs. WBRT + memantine: less cognitive deterioration at 4 months (59% vs. 68%) and 6 months; less decline in executive function and memory | HA-WBRT + memantine = new standard when WBRT indicated |
-| Tawbi et al. (2018) - CheckMate 204 | Ipilimumab + nivolumab in melanoma brain metastases: intracranial response 57% in asymptomatic patients | Established immunotherapy as upfront option for melanoma brain metastases |
-| Reungwetwattana et al. (2018) - FLAURA CNS analysis | Osimertinib CNS response rate 91% in EGFR-mutant NSCLC with brain metastases vs. 68% standard EGFR TKI | Established osimertinib as preferred first-line for EGFR+ NSCLC with brain metastases |
-| Murthy et al. (2020) - HER2CLIMB | Tucatinib + trastuzumab + capecitabine: intracranial response 47%; CNS-PFS 9.9 vs. 4.2 months; OS benefit in brain metastases subgroup | Established tucatinib combination as standard for HER2+ breast cancer brain metastases |
-| Perry et al. (2009) - PRODIGE | Dalteparin vs. placebo in malignant glioma: no increase in intracranial hemorrhage with anticoagulation; VTE reduction | Supported pharmacologic DVT prophylaxis in brain tumor patients |
-| Levin et al. (2011) | Bevacizumab for radiation necrosis: significant radiographic and clinical improvement in ~65% of patients | Established bevacizumab as treatment option for symptomatic radiation necrosis refractory to steroids |
+| [Patchell et al. (1990)](https://pubmed.ncbi.nlm.nih.gov/2405271/) | Surgery + WBRT vs. WBRT alone for single brain metastasis: median survival 40 vs. 15 weeks; lower recurrence at original site (20% vs. 52%) | Established surgery as standard for single brain metastasis |
+| [Patchell et al. (1998)](https://pubmed.ncbi.nlm.nih.gov/9809728/) | Post-operative WBRT reduced brain recurrence (18% vs. 70%) but no survival benefit; improved neurologic death | Supported adjuvant radiation after surgery; now often SRS to cavity instead of WBRT |
+| [Mahajan et al. (2017) - MD Anderson](https://pubmed.ncbi.nlm.nih.gov/28687375/) | SRS to surgical cavity vs. observation: 12-month local recurrence 28% vs. 59% (HR 0.46) | Established post-operative cavity SRS as standard of care |
+| [Brown et al. (2016) - NCCTG N0574](https://pubmed.ncbi.nlm.nih.gov/27458945/) | SRS alone vs. SRS + WBRT: cognitive deterioration at 3 months 64% vs. 92%; no OS difference | Shifted practice toward SRS alone with surveillance MRI rather than WBRT |
+| [Yamamoto et al. (2014) - JLGK0901](https://pubmed.ncbi.nlm.nih.gov/24621620/) | SRS for 5-10 vs. 2-4 brain metastases: similar overall survival (10.8 vs. 10.8 months) | Expanded SRS indications to higher numbers of metastases |
+| [Brown et al. (2020) - NRG-CC001](https://pubmed.ncbi.nlm.nih.gov/32058845/) | HA-WBRT + memantine vs. WBRT + memantine: less cognitive deterioration at 4 months (59% vs. 68%) and 6 months; less decline in executive function and memory | HA-WBRT + memantine = new standard when WBRT indicated |
+| [Tawbi et al. (2018) - CheckMate 204](https://pubmed.ncbi.nlm.nih.gov/30134131/) | Ipilimumab + nivolumab in melanoma brain metastases: intracranial response 57% in asymptomatic patients | Established immunotherapy as upfront option for melanoma brain metastases |
+| [Reungwetwattana et al. (2018) - FLAURA CNS analysis](https://pubmed.ncbi.nlm.nih.gov/30153097/) | Osimertinib CNS response rate 91% in EGFR-mutant NSCLC with brain metastases vs. 68% standard EGFR TKI | Established osimertinib as preferred first-line for EGFR+ NSCLC with brain metastases |
+| [Murthy et al. (2020) - HER2CLIMB](https://pubmed.ncbi.nlm.nih.gov/31825569/) | Tucatinib + trastuzumab + capecitabine: intracranial response 47%; CNS-PFS 9.9 vs. 4.2 months; OS benefit in brain metastases subgroup | Established tucatinib combination as standard for HER2+ breast cancer brain metastases |
+| [Perry et al. (2010) - PRODIGE](https://pubmed.ncbi.nlm.nih.gov/20598077/) | Dalteparin vs. placebo in malignant glioma: no increase in intracranial hemorrhage with anticoagulation; VTE reduction | Supported pharmacologic DVT prophylaxis in brain tumor patients |
+| [Levin et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/20399573/) | Bevacizumab for radiation necrosis: significant radiographic and clinical improvement in ~65% of patients | Established bevacizumab as treatment option for symptomatic radiation necrosis refractory to steroids |
 
 ### Grading Scales
 

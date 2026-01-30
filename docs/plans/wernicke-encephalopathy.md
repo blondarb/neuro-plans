@@ -1,3 +1,10 @@
+---
+title: "Wernicke Encephalopathy"
+description: "Clinical decision support for wernicke encephalopathy diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Wernicke Encephalopathy
 
 **VERSION:** 1.0
@@ -11,7 +18,7 @@
 
 **ICD-10:** E51.2 (Wernicke encephalopathy), E51.11 (Dry beriberi), F10.96 (Alcohol use, unspecified with alcohol-induced persisting amnestic disorder)
 
-**SYNONYMS:** Wernicke encephalopathy, WE, Wernicke-Korsakoff syndrome, WKS, thiamine deficiency encephalopathy, acute thiamine deficiency, alcohol-related brain damage, nutritional encephalopathy
+**SYNONYMS:** Wernicke encephalopathy, WE, Wernicke syndrome, Wernicke-Korsakoff syndrome, WKS, thiamine deficiency encephalopathy, Wernicke-Korsakoff, acute thiamine deficiency, alcohol-related brain damage, nutritional encephalopathy
 
 **SCOPE:** Diagnosis and treatment of Wernicke encephalopathy in adults including classic and non-alcoholic etiologies. Covers acute treatment, prevention of Korsakoff syndrome, and at-risk populations. Applies primarily to ED, hospital, and ICU settings as this is a medical emergency. Excludes chronic Korsakoff syndrome management.
 
@@ -36,25 +43,25 @@
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Fingerstick glucose | STAT | STAT | - | STAT | Hypoglycemia; DO NOT give dextrose before thiamine | Normal; treat hypoglycemia AFTER thiamine |
-| BMP | STAT | STAT | - | STAT | Electrolytes; magnesium essential for thiamine function | Correct abnormalities |
-| Magnesium | STAT | STAT | - | STAT | Required cofactor for thiamine; replace if low | >2.0 mg/dL |
-| Phosphorus | STAT | STAT | - | STAT | Refeeding syndrome risk | >2.5 mg/dL |
-| CBC | STAT | ROUTINE | - | STAT | Macrocytic anemia (alcohol, B12/folate deficiency) | Document |
-| LFTs, albumin | STAT | ROUTINE | - | STAT | Hepatic dysfunction; malnutrition | Document |
-| Ammonia | STAT | STAT | - | STAT | Hepatic encephalopathy (may coexist) | Normal |
-| Lactate | STAT | STAT | - | STAT | Thiamine deficiency causes lactic acidosis | Normal |
-| Blood alcohol level | STAT | STAT | - | - | Document; withdrawal risk | Document |
+| Fingerstick glucose (CPT 82962) | STAT | STAT | - | STAT | Hypoglycemia; DO NOT give dextrose before thiamine | Normal; treat hypoglycemia AFTER thiamine |
+| BMP (CPT 80048) | STAT | STAT | - | STAT | Electrolytes; magnesium essential for thiamine function | Correct abnormalities |
+| Magnesium (CPT 83735) | STAT | STAT | - | STAT | Required cofactor for thiamine; replace if low | >2.0 mg/dL |
+| Phosphorus (CPT 84100) | STAT | STAT | - | STAT | Refeeding syndrome risk | >2.5 mg/dL |
+| CBC (CPT 85025) | STAT | ROUTINE | - | STAT | Macrocytic anemia (alcohol, B12/folate deficiency) | Document |
+| LFTs, albumin (CPT 80076) | STAT | ROUTINE | - | STAT | Hepatic dysfunction; malnutrition | Document |
+| Ammonia (CPT 82140) | STAT | STAT | - | STAT | Hepatic encephalopathy (may coexist) | Normal |
+| Lactate (CPT 83605) | STAT | STAT | - | STAT | Thiamine deficiency causes lactic acidosis | Normal |
+| Blood alcohol level (CPT 80320) | STAT | STAT | - | - | Document; withdrawal risk | Document |
 
 ### 1B. Extended Labs
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Thiamine level (whole blood or RBC transketolase) | - | ROUTINE | - | ROUTINE | Confirms deficiency (do not delay treatment for result) | Low (but treat empirically) |
-| Vitamin B12, folate | - | ROUTINE | ROUTINE | - | Often co-deficient in alcohol use | Normal; supplement if low |
-| TSH | - | ROUTINE | - | - | Exclude thyroid dysfunction | Normal |
-| Urine drug screen | STAT | ROUTINE | - | - | Concomitant intoxication | Document |
-| Coagulation studies (PT/INR) | - | ROUTINE | - | ROUTINE | Liver disease; coagulopathy | Normal |
+| Thiamine level (whole blood or RBC transketolase) (CPT 84425) | - | ROUTINE | - | ROUTINE | Confirms deficiency (do not delay treatment for result) | Low (but treat empirically) |
+| Vitamin B12, folate (CPT 82607+82746) | - | ROUTINE | ROUTINE | - | Often co-deficient in alcohol use | Normal; supplement if low |
+| TSH (CPT 84443) | - | ROUTINE | - | - | Exclude thyroid dysfunction | Normal |
+| Urine drug screen (CPT 80307) | STAT | ROUTINE | - | - | Concomitant intoxication | Document |
+| Coagulation studies (PT/INR) (CPT 85610) | - | ROUTINE | - | ROUTINE | Liver disease; coagulopathy | Normal |
 
 ### 1C. Specialized Labs (If Diagnosis Uncertain)
 
@@ -72,8 +79,8 @@
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with FLAIR/DWI | - | URGENT | - | URGENT | After stabilization; supports diagnosis | Bilateral symmetric T2/FLAIR hyperintensity in medial thalami, mammillary bodies, periaqueductal gray, tectal plate | Pacemaker, metal |
-| CT head | STAT | STAT | - | STAT | Exclude other causes (hemorrhage, mass); often normal in WE | No mass, hemorrhage | None |
+| MRI brain with FLAIR/DWI (CPT 70551) | - | URGENT | - | URGENT | After stabilization; supports diagnosis | Bilateral symmetric T2/FLAIR hyperintensity in medial thalami, mammillary bodies, periaqueductal gray, tectal plate | Pacemaker, metal |
+| CT head (CPT 70450) | STAT | STAT | - | STAT | Exclude other causes (hemorrhage, mass); often normal in WE | No mass, hemorrhage | None |
 
 ### 2B. MRI Findings in Wernicke Encephalopathy
 
@@ -91,8 +98,8 @@
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| EEG | - | ROUTINE | - | ROUTINE | If seizure suspected or encephalopathy unclear | Diffuse slowing (non-specific) | None |
-| Lumbar puncture | - | EXT | - | EXT | If meningitis or encephalitis suspected | Normal; r/o infection | Mass lesion |
+| EEG (CPT 95816) | - | ROUTINE | - | ROUTINE | If seizure suspected or encephalopathy unclear | Diffuse slowing (non-specific) | None |
+| Lumbar puncture (CPT 62270) | - | EXT | - | EXT | If meningitis or encephalitis suspected | Normal; r/o infection | Mass lesion |
 
 ---
 
@@ -100,47 +107,47 @@
 
 ### 3A. Acute Thiamine Replacement (CRITICAL - Do Not Delay)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Thiamine IV (high-dose) - Suspected/Confirmed WE | STAT | STAT | - | STAT | 500 mg IV TID × 3-5 days (in 100 mL NS over 30 min); then 250 mg IV daily × 3-5 days; then oral | Rare anaphylaxis (give slowly) | Anaphylaxis (rare); clinical response |
-| Thiamine IV (prophylaxis - at-risk patients) | STAT | STAT | - | STAT | 200-500 mg IV TID × 3 days; then oral | Same | Same |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Thiamine IV (high-dose) - Suspected/Confirmed WE (CPT 96374) | IV | - | 500 mg :: IV :: TID :: 500 mg IV TID × 3-5 days (in 100 mL NS over 30 min); then 250 mg IV daily × 3-5 days; then oral | Rare anaphylaxis (give slowly) | Anaphylaxis (rare); clinical response | STAT | STAT | - | STAT |
+| Thiamine IV (prophylaxis - at-risk patients) (CPT 96374) | IV | - | 200-500 mg :: IV :: TID :: 200-500 mg IV TID × 3 days; then oral | Same | Same | STAT | STAT | - | STAT |
 
 ### 3B. Maintenance Thiamine
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Thiamine oral (after IV course) | - | ROUTINE | ROUTINE | - | 100 mg TID × weeks to months; indefinitely if ongoing risk | None | Compliance; symptoms |
-| Thiamine IM (if IV not possible, unreliable oral) | STAT | ROUTINE | ROUTINE | - | 250 mg IM daily × 3-5 days | Coagulopathy (relative) | Clinical response |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Thiamine oral (after IV course) | IV | - | 100 mg :: PO :: TID :: 100 mg TID × weeks to months; indefinitely if ongoing risk | None | Compliance; symptoms | - | ROUTINE | ROUTINE | - |
+| Thiamine IM (if IV not possible, unreliable oral) | IM | - | 250 mg :: IM :: daily :: 250 mg IM daily × 3-5 days | Coagulopathy (relative) | Clinical response | STAT | ROUTINE | ROUTINE | - |
 
 ### 3C. Electrolyte Replacement
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Magnesium sulfate IV | STAT | STAT | - | STAT | 1-2 g IV over 1-2 hours; repeat as needed; target Mg >2.0 | Renal failure (adjust dose); heart block | Mg levels; reflexes |
-| Potassium replacement | STAT | STAT | - | STAT | Per deficit; often needed with Mg | Renal failure; hyperkalemia | K+ levels |
-| Phosphorus replacement | STAT | STAT | - | STAT | If low (refeeding); K-Phos or Na-Phos IV/PO | Hypercalcite; renal failure | Phos levels |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Magnesium sulfate IV (CPT 96374) | IV | - | 1-2 g :: IV :: - :: 1-2 g IV over 1-2 hours; repeat as needed; target Mg >2.0 | Renal failure (adjust dose); heart block | Mg levels; reflexes | STAT | STAT | - | STAT |
+| Potassium replacement | - | - | Per deficit; often needed with Mg | Renal failure; hyperkalemia | K+ levels | STAT | STAT | - | STAT |
+| Phosphorus replacement | IV | - | If low (refeeding); K-Phos or Na-Phos IV/PO | Hypercalcite; renal failure | Phos levels | STAT | STAT | - | STAT |
 
 ### 3D. Glucose Administration
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| THIAMINE BEFORE GLUCOSE | STAT | STAT | - | STAT | ALWAYS give thiamine before or with dextrose/carbohydrates; glucose metabolism depletes thiamine | None | Give thiamine first |
-| Dextrose (if hypoglycemic) | STAT | STAT | - | STAT | D50 25-50 mL IV or D10 infusion; AFTER thiamine | Give thiamine first | Glucose levels |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| THIAMINE BEFORE GLUCOSE | - | - | ALWAYS give thiamine before or with dextrose/carbohydrates; glucose metabolism depletes thiamine | - | None | Give thiamine first | STAT | STAT | - | STAT |
+| Dextrose (if hypoglycemic) | IV | - | 25-50 mL :: IV :: - :: D50 25-50 mL IV or D10 infusion; AFTER thiamine | - | Give thiamine first | Glucose levels | STAT | STAT | - | STAT |
 
 ### 3E. Alcohol Withdrawal Prevention/Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Benzodiazepines (symptom-triggered or scheduled) | STAT | STAT | - | STAT | Lorazepam 1-4 mg IV q15min PRN (CIWA-guided); or scheduled dosing if severe | Respiratory depression; caution with hepatic impairment | CIWA score; sedation; respiratory status |
-| Folate | - | ROUTINE | ROUTINE | - | 1 mg daily | None | None |
-| Multivitamin | - | ROUTINE | ROUTINE | - | Daily | None | None |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Benzodiazepines (symptom-triggered or scheduled) | IV | - | 1-4 mg :: IV :: PRN :: Lorazepam 1-4 mg IV q15min PRN (CIWA-guided); or scheduled dosing if severe | Respiratory depression; caution with hepatic impairment | CIWA score; sedation; respiratory status | STAT | STAT | - | STAT |
+| Folate | PO | - | 1 mg :: PO :: daily :: 1 mg daily | None | None | - | ROUTINE | ROUTINE | - |
+| Multivitamin | - | - | Daily | None | None | - | ROUTINE | ROUTINE | - |
 
 ### 3F. Nutritional Support
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Nutrition consult | - | ROUTINE | - | ROUTINE | Refeeding protocol; caloric needs | None | Refeeding syndrome |
-| Gradual refeeding | - | ROUTINE | - | ROUTINE | Start low calorie (10-15 kcal/kg); advance slowly | None | Phosphorus, K+, Mg, glucose |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Nutrition consult | - | - | Refeeding protocol; caloric needs | None | Refeeding syndrome | - | ROUTINE | - | ROUTINE |
+| Gradual refeeding | - | - | Start low calorie (10-15 kcal/kg); advance slowly | None | Phosphorus, K+, Mg, glucose | - | ROUTINE | - | ROUTINE |
 
 ---
 
@@ -242,7 +249,7 @@
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| High-dose IV thiamine (500 mg TID) for suspected WE | Class II, Level B | EFNS guidelines; Cochrane review (limited RCT data but expert consensus) |
+| High-dose IV thiamine (500 mg TID) for suspected WE | Class II, Level B | [EFNS guidelines](https://pubmed.ncbi.nlm.nih.gov/20642790/); Cochrane review (limited RCT data but expert consensus) |
 | Thiamine before glucose in at-risk patients | Class I (practice standard) | Physiologic rationale; case reports of precipitation |
 | MRI typical findings in WE | Class II, Level B | Multiple case series; imaging studies |
 | Magnesium replacement essential | Class II, Level B | Cofactor for thiamine-dependent enzymes |

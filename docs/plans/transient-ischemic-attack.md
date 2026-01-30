@@ -1,3 +1,10 @@
+---
+title: "Transient Ischemic Attack (TIA)"
+description: "Clinical decision support for transient ischemic attack (tia) diagnosis and management"
+version: "1.0"
+setting: "ED, HOSP, OPD, ICU"
+---
+
 # Transient Ischemic Attack (TIA)
 
 **VERSION:** 1.0
@@ -8,7 +15,7 @@
 
 **DIAGNOSIS:** Transient Ischemic Attack (TIA)
 
-**ICD-10:** G45.9 (Transient cerebral ischemic attack, unspecified), G45.0 (Vertebro-basilar artery syndrome), G45.1 (Carotid artery syndrome)
+**ICD-10:** G45.9 (Transient cerebral ischemic attack, unspecified), G45.0 (Vertebro-basilar artery syndrome), G45.1 (Carotid artery syndrome), G45.8 (Other transient cerebral ischemic attacks and related syndromes)
 
 **SYNONYMS:** Transient ischemic attack, TIA, mini-stroke, warning stroke, transient stroke, pre-stroke, temporary stroke symptoms, reversible ischemic neurological deficit
 
@@ -28,27 +35,27 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Point-of-care glucose | STAT | STAT | STAT | - | Hypoglycemia mimics TIA; must rule out immediately | >60 mg/dL |
-| CBC with differential | STAT | STAT | ROUTINE | - | Thrombocytosis or thrombocytopenia; polycythemia; anemia; infection | Normal |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | - | Electrolytes; renal function for contrast; hepatic function | Normal |
-| PT/INR | STAT | STAT | ROUTINE | - | Anticoagulant use; coagulopathy assessment | Normal |
-| Lipid panel (fasting or non-fasting) | STAT | STAT | ROUTINE | - | LDL target <70 mg/dL; statin initiation | LDL <70 |
-| HbA1c | STAT | STAT | ROUTINE | - | Diabetes screening; cardiovascular risk factor | <7.0% |
-| Troponin | STAT | STAT | - | - | Concurrent ACS; cardiac embolic source | Normal |
-| Blood glucose (fasting) | - | ROUTINE | ROUTINE | - | Diabetes screening | <126 mg/dL |
-| TSH | - | ROUTINE | ROUTINE | - | Hyperthyroidism → atrial fibrillation | Normal |
+| Point-of-care glucose (CPT 82962) | STAT | STAT | STAT | - | Hypoglycemia mimics TIA; must rule out immediately | >60 mg/dL |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | - | Thrombocytosis or thrombocytopenia; polycythemia; anemia; infection | Normal |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | - | Electrolytes; renal function for contrast; hepatic function | Normal |
+| PT/INR (CPT 85610) | STAT | STAT | ROUTINE | - | Anticoagulant use; coagulopathy assessment | Normal |
+| Lipid panel (fasting or non-fasting) (CPT 80061) | STAT | STAT | ROUTINE | - | LDL target <70 mg/dL; statin initiation | LDL <70 |
+| HbA1c (CPT 83036) | STAT | STAT | ROUTINE | - | Diabetes screening; cardiovascular risk factor | <7.0% |
+| Troponin (CPT 84484) | STAT | STAT | - | - | Concurrent ACS; cardiac embolic source | Normal |
+| Blood glucose (fasting) (CPT 82947) | - | ROUTINE | ROUTINE | - | Diabetes screening | <126 mg/dL |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Hyperthyroidism → atrial fibrillation | Normal |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| ESR / CRP | URGENT | ROUTINE | ROUTINE | - | Vasculitis screen; giant cell arteritis (age >50 with TIA); inflammatory markers | Normal |
-| Homocysteine | - | ROUTINE | ROUTINE | - | Elevated homocysteine as independent stroke risk factor | Normal (<15 µmol/L) |
-| Urine drug screen | URGENT | ROUTINE | - | - | Cocaine/amphetamine-associated TIA/stroke | Negative |
-| RPR/VDRL | - | ROUTINE | ROUTINE | - | Syphilitic vasculitis | Non-reactive |
-| HIV 1/2 antigen/antibody | - | ROUTINE | ROUTINE | - | HIV-associated vasculopathy | Negative |
-| Pregnancy test (β-hCG) | STAT | STAT | ROUTINE | - | Affects imaging and treatment decisions | Document result |
-| Magnesium | URGENT | ROUTINE | ROUTINE | - | Electrolyte management | Normal |
+| ESR (CPT 85652) / CRP (CPT 86140) | URGENT | ROUTINE | ROUTINE | - | Vasculitis screen; giant cell arteritis (age >50 with TIA); inflammatory markers | Normal |
+| Homocysteine (CPT 83090) | - | ROUTINE | ROUTINE | - | Elevated homocysteine as independent stroke risk factor | Normal (<15 µmol/L) |
+| Urine drug screen (CPT 80307) | URGENT | ROUTINE | - | - | Cocaine/amphetamine-associated TIA/stroke | Negative |
+| RPR/VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Syphilitic vasculitis | Non-reactive |
+| HIV 1/2 antigen/antibody (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated vasculopathy | Negative |
+| Pregnancy test (β-hCG) (CPT 84703) | STAT | STAT | ROUTINE | - | Affects imaging and treatment decisions | Document result |
+| Magnesium (CPT 83735) | URGENT | ROUTINE | ROUTINE | - | Electrolyte management | Normal |
 
 ### 1C. Rare/Specialized (Young TIA or Cryptogenic)
 
@@ -56,7 +63,7 @@ SECTION A: ACTION ITEMS
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Hypercoagulable panel (Protein C, S, antithrombin III, Factor V Leiden, prothrombin gene mutation) | - | EXT | ROUTINE | - | Young patient (<50); cryptogenic TIA; personal/family history of thrombosis | Normal |
 | Antiphospholipid antibodies (lupus anticoagulant, anticardiolipin, β2-glycoprotein I) | - | ROUTINE | ROUTINE | - | Young TIA; recurrent TIA; systemic lupus; recurrent pregnancy loss | Negative |
-| ANA, dsDNA | - | EXT | ROUTINE | - | Lupus cerebritis; vasculitis | Negative |
+| ANA (CPT 86235), dsDNA | - | EXT | ROUTINE | - | Lupus cerebritis; vasculitis | Negative |
 | ANCA (c-ANCA, p-ANCA) | - | EXT | EXT | - | CNS vasculitis | Negative |
 | Hemoglobin electrophoresis | - | EXT | EXT | - | Sickle cell disease (young patients, African descent) | Normal |
 | JAK2 mutation | - | EXT | EXT | - | Polycythemia vera; myeloproliferative disorders | Negative |
@@ -70,28 +77,28 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with DWI | STAT | STAT | URGENT | - | Within 24h (ideally <6h). DWI-positive in 30-50% of clinical TIA — these patients are at HIGHEST stroke risk and may be reclassified as minor stroke | DWI restriction = acute ischemia (even if symptoms resolved, this upgrades risk and may change to minor stroke diagnosis); FLAIR changes; prior infarcts | Pacemaker, metallic implants, severe claustrophobia |
-| CT head without contrast | STAT | STAT | - | - | Immediate (if MRI unavailable or contraindicated); excludes hemorrhage and mass | No hemorrhage; no mass; may show old infarcts | Pregnancy (relative) |
-| CTA head and neck (OR MRA head and neck) | STAT | STAT | URGENT | - | With initial imaging or within 24h. Evaluates extracranial AND intracranial vessels | Carotid stenosis (≥50% NASCET); intracranial stenosis; vertebral stenosis; dissection | Contrast allergy; renal impairment (for CTA). MRA: pacemaker |
-| ECG (12-lead) | STAT | STAT | ROUTINE | - | Immediately | Atrial fibrillation (detected in 5-10% on initial ECG); atrial flutter; acute MI; LVH; old infarct | None |
-| Continuous cardiac monitoring (telemetry) | STAT | STAT | - | - | Minimum 24h in ED/hospital; ideally 48-72h | Paroxysmal atrial fibrillation (detected in additional 5-7% with monitoring) | None |
+| MRI brain with DWI (CPT 70553) | STAT | STAT | URGENT | - | Within 24h (ideally <6h). DWI-positive in 30-50% of clinical TIA — these patients are at HIGHEST stroke risk and may be reclassified as minor stroke | DWI restriction = acute ischemia (even if symptoms resolved, this upgrades risk and may change to minor stroke diagnosis); FLAIR changes; prior infarcts | Pacemaker, metallic implants, severe claustrophobia |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | - | Immediate (if MRI unavailable or contraindicated); excludes hemorrhage and mass | No hemorrhage; no mass; may show old infarcts | Pregnancy (relative) |
+| CTA head and neck (CPT 70496, 70498) (OR MRA head and neck) | STAT | STAT | URGENT | - | With initial imaging or within 24h. Evaluates extracranial AND intracranial vessels | Carotid stenosis (≥50% NASCET); intracranial stenosis; vertebral stenosis; dissection | Contrast allergy; renal impairment (for CTA). MRA: pacemaker |
+| ECG (12-lead) (CPT 93000) | STAT | STAT | ROUTINE | - | Immediately | Atrial fibrillation (detected in 5-10% on initial ECG); atrial flutter; acute MI; LVH; old infarct | None |
+| Continuous cardiac monitoring (telemetry) (CPT 93228) | STAT | STAT | - | - | Minimum 24h in ED/hospital; ideally 48-72h | Paroxysmal atrial fibrillation (detected in additional 5-7% with monitoring) | None |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Transthoracic echocardiogram (TTE) | - | ROUTINE | ROUTINE | - | Within 24-48h | LV thrombus; PFO; valvular disease; cardiomyopathy; akinetic segments | None significant |
-| Transesophageal echocardiogram (TEE) with bubble study | - | ROUTINE | ROUTINE | - | If TTE nondiagnostic; cryptogenic TIA; young patient | PFO with right-to-left shunt; atrial septal aneurysm; LAA thrombus; aortic arch atheroma (≥4mm) | Esophageal pathology |
-| Carotid duplex ultrasound | URGENT | URGENT | URGENT | - | Within 24h (may be obtained instead of or in addition to CTA/MRA) | Carotid stenosis ≥50%; plaque characterization; hemodynamic significance | None significant |
+| Transthoracic echocardiogram (TTE) (CPT 93306) | - | ROUTINE | ROUTINE | - | Within 24-48h | LV thrombus; PFO; valvular disease; cardiomyopathy; akinetic segments | None significant |
+| Transesophageal echocardiogram (TEE) (CPT 93312) with bubble study | - | ROUTINE | ROUTINE | - | If TTE nondiagnostic; cryptogenic TIA; young patient | PFO with right-to-left shunt; atrial septal aneurysm; LAA thrombus; aortic arch atheroma (≥4mm) | Esophageal pathology |
+| Carotid duplex ultrasound (CPT 93880) | URGENT | URGENT | URGENT | - | Within 24h (may be obtained instead of or in addition to CTA/MRA) | Carotid stenosis ≥50%; plaque characterization; hemodynamic significance | None significant |
 | Extended cardiac monitoring (Holter 30-day or implantable loop recorder) | - | ROUTINE | ROUTINE | - | Arrange before discharge; especially if cryptogenic TIA | Paroxysmal AF (detected in 12-30% with prolonged monitoring in cryptogenic cases) | None significant |
-| Transcranial Doppler (TCD) with bubble study | - | ROUTINE | ROUTINE | - | If PFO evaluation needed (alternative to TEE bubble); also for intracranial stenosis and microembolic signals | Right-to-left shunt; intracranial stenosis; microembolic signals | Absent temporal bone window |
+| Transcranial Doppler (TCD) (CPT 93886) with bubble study | - | ROUTINE | ROUTINE | - | If PFO evaluation needed (alternative to TEE bubble); also for intracranial stenosis and microembolic signals | Right-to-left shunt; intracranial stenosis; microembolic signals | Absent temporal bone window |
 | CT perfusion | - | EXT | - | - | If diagnosis uncertain; evaluate for persistent hypoperfusion despite symptom resolution | Perfusion deficits suggesting ongoing ischemic risk | Contrast allergy; renal impairment |
 
 ### 2C. Rare/Specialized
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Conventional cerebral angiography (DSA) | - | EXT | EXT | - | If intracranial stenosis suspected on CTA/MRA; vasculitis workup; Moyamoya | Beading (vasculitis); intimal flap (dissection); Moyamoya collaterals; intracranial stenosis quantification | Contrast allergy; coagulopathy |
+| Conventional cerebral angiography (DSA) (CPT 36224) | - | EXT | EXT | - | If intracranial stenosis suspected on CTA/MRA; vasculitis workup; Moyamoya | Beading (vasculitis); intimal flap (dissection); Moyamoya collaterals; intracranial stenosis quantification | Contrast allergy; coagulopathy |
 | MRI vessel wall imaging | - | EXT | EXT | - | Intracranial stenosis characterization; vasculitis evaluation | Vessel wall enhancement (active inflammation, unstable plaque) | Standard MRI contraindications |
 | Fat-saturated MRI neck | - | ROUTINE | ROUTINE | - | If cervical dissection suspected (neck pain, Horner syndrome, young patient) | Intramural hematoma (crescent sign) | Standard MRI contraindications |
 | PET-CT | - | - | EXT | - | If occult malignancy suspected (Trousseau syndrome) | Malignancy | Pregnancy |
@@ -102,36 +109,36 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Acute/Emergent
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Aspirin (loading dose) | STAT | STAT | STAT | - | 325 mg PO loading dose immediately upon TIA diagnosis (give in ED). Do NOT delay antiplatelet therapy | Active GI bleed; true aspirin allergy; thrombocytopenia <50K | GI symptoms; bleeding |
-| Clopidogrel (loading dose for DAPT) | STAT | STAT | STAT | - | 300 mg PO loading dose (give with aspirin for DAPT). DAPT is standard for high-risk TIA (ABCD2 ≥4) or minor stroke per CHANCE and POINT trials | Active bleeding; severe hepatic impairment | Bleeding; CBC |
-| Dual antiplatelet therapy (DAPT maintenance): Aspirin + Clopidogrel | - | STAT | STAT | - | Aspirin 81 mg daily + Clopidogrel 75 mg daily x 21 days (CHANCE protocol) or x 90 days (POINT protocol — higher bleeding risk with longer duration). Then transition to single antiplatelet (typically clopidogrel 75 mg or aspirin 81 mg monotherapy) | Major bleeding risk; planned surgery | Bleeding signs; CBC monthly |
-| Dual antiplatelet therapy (alternative): Aspirin + Ticagrelor | - | STAT | STAT | - | Aspirin 81 mg daily + Ticagrelor 90 mg BID x 30 days (THALES trial; for minor stroke NIHSS ≤5). Then single antiplatelet | Intracranial hemorrhage history; high bleeding risk; hepatic impairment | Bleeding; dyspnea (common side effect); avoid strong CYP3A4 inhibitors |
-| High-intensity statin | STAT | STAT | STAT | - | Atorvastatin 80 mg PO daily (or Rosuvastatin 20-40 mg). Start immediately regardless of baseline LDL | Active liver disease; pregnancy | LFTs at 12 weeks; lipid panel at 4-12 weeks; CK if myalgia |
-| Blood pressure management (acute) | STAT | STAT | - | - | If SBP >220 or DBP >120 in ED: lower gently (15-25% in first 24h). If lower BP levels: permissive hypertension in first 24-48h unless end-organ damage. Avoid precipitous drops | Carotid stenosis with hemodynamic TIA: do NOT aggressively lower BP (may worsen symptoms) | Neuro checks with each change; BP q1h acutely |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Aspirin (loading dose) | PO | - | 325 mg :: PO :: load :: 325 mg PO loading dose immediately upon TIA diagnosis (give in ED). Do NOT delay antiplatelet therapy | Active GI bleed; true aspirin allergy; thrombocytopenia <50K | GI symptoms; bleeding | STAT | STAT | STAT | - |
+| Clopidogrel (loading dose for DAPT) | PO | - | 300 mg :: PO :: load :: 300 mg PO loading dose (give with aspirin for DAPT). DAPT is standard for high-risk TIA (ABCD2 ≥4) or minor stroke per CHANCE and POINT trials | Active bleeding; severe hepatic impairment | Bleeding; CBC | STAT | STAT | STAT | - |
+| Dual antiplatelet therapy (DAPT maintenance): Aspirin + Clopidogrel | - | - | 81 mg :: - :: daily :: Aspirin 81 mg daily + Clopidogrel 75 mg daily x 21 days (CHANCE protocol) or x 90 days (POINT protocol — higher bleeding risk with longer duration). Then transition to single antiplatelet (typically clopidogrel 75 mg or aspirin 81 mg monotherapy) | Major bleeding risk; planned surgery | Bleeding signs; CBC monthly | - | STAT | STAT | - |
+| Dual antiplatelet therapy (alternative): Aspirin + Ticagrelor | PO | - | 81 mg :: PO :: daily :: Aspirin 81 mg daily + Ticagrelor 90 mg BID x 30 days (THALES trial; for minor stroke NIHSS ≤5). Then single antiplatelet | Intracranial hemorrhage history; high bleeding risk; hepatic impairment | Bleeding; dyspnea (common side effect); avoid strong CYP3A4 inhibitors | - | STAT | STAT | - |
+| High-intensity statin | PO | - | 80 mg :: PO :: daily :: Atorvastatin 80 mg PO daily (or Rosuvastatin 20-40 mg). Start immediately regardless of baseline LDL | Active liver disease; pregnancy | LFTs at 12 weeks; lipid panel at 4-12 weeks; CK if myalgia | STAT | STAT | STAT | - |
+| Blood pressure management (acute) | - | - | 25% :: - :: - :: If SBP >220 or DBP >120 in ED: lower gently (15-25% in first 24h). If lower BP levels: permissive hypertension in first 24-48h unless end-organ damage. Avoid precipitous drops | Carotid stenosis with hemodynamic TIA: do NOT aggressively lower BP (may worsen symptoms) | Neuro checks with each change; BP q1h acutely | STAT | STAT | - | - |
 
 ### 3B. Secondary Prevention (Initiate Urgently)
 
-| Treatment | Route | ED | HOSP | OPD | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring |
-|-----------|-------|:--:|:----:|:---:|--------|---------------------------|-------------------|------------|
-| Antihypertensive therapy (chronic) | PO | - | ROUTINE | ROUTINE | Target BP <130/80 mmHg. Start/restart 24-48h after TIA once stable. Agent choice per comorbidities: ACE-I/ARB first-line. Consider: Lisinopril 10-20 mg daily, Amlodipine 5-10 mg, Losartan 50-100 mg, Chlorthalidone 12.5-25 mg | Baseline BP, Cr, K+ | Bilateral renal artery stenosis (ACE-I/ARB); pregnancy | Home BP monitoring; Cr and K+ at 1-2 weeks |
-| Anticoagulation (if atrial fibrillation detected) | PO | - | ROUTINE | ROUTINE | Start DOAC within 1-3 days for TIA (can start earlier than stroke). Preferred: Apixaban 5 mg BID (2.5 mg BID if criteria met). Alternative: Rivaroxaban 20 mg daily; Dabigatran 150 mg BID. Discontinue antiplatelet when anticoagulant started (do NOT combine long-term unless specific indication) | ECG/cardiac monitoring confirming AF; CHA2DS2-VASc score; bleeding risk (HAS-BLED) | Active bleeding; mechanical valve (use warfarin); severe renal impairment | Renal function q6-12 months; bleeding signs |
-| Carotid endarterectomy (CEA) | Surgery | - | URGENT | URGENT | For symptomatic carotid stenosis ≥50% (NASCET criteria); ideally performed within 2 weeks of TIA (maximum benefit). NNT = 6 for 70-99% stenosis; NNT = 22 for 50-69% stenosis | Carotid imaging confirming stenosis ≥50%; cardiac clearance | Near-occlusion (controversial); life expectancy <5 years; severe cardiac comorbidity | Post-op: BP monitoring; neuro checks q1h x 24h; wound hematoma; cranial nerve injury |
-| Carotid artery stenting (CAS) | Endovascular | - | ROUTINE | ROUTINE | Alternative to CEA if: high surgical risk, prior neck radiation, prior CEA with restenosis, surgically inaccessible. Requires DAPT (aspirin + clopidogrel) post-stenting | Same as CEA; cardiac catheterization access | Severe aortic arch tortuosity; fresh thrombus | Post-procedure: BP management; neuro checks; DAPT compliance; restenosis surveillance |
-| PFO closure | Procedure | - | - | ROUTINE | For cryptogenic TIA/stroke age 18-60 with PFO and right-to-left shunt. Reduces recurrent stroke vs medical therapy alone (CLOSE, RESPECT, REDUCE trials). Requires 3-6 months DAPT then aspirin indefinitely | TEE/TCD confirming PFO with shunt; cryptogenic classification; no other identified stroke mechanism | Anatomic constraints; active infection | Echo at 6-12 months; aspirin long-term |
-| Ezetimibe | PO | - | ROUTINE | ROUTINE | 10 mg PO daily; add if LDL not at goal on max statin | Active liver disease | LFTs; lipid panel |
-| PCSK9 inhibitor (evolocumab or alirocumab) | SC | - | - | ROUTINE | Evolocumab 140 mg SC q2 weeks or 420 mg monthly; if LDL not at goal on statin + ezetimibe | None absolute | Lipid panel q4-12 weeks; injection site |
-| Diabetes management (optimize) | PO/SC | - | ROUTINE | ROUTINE | Target HbA1c <7% (individualized); GLP-1 agonists and SGLT2 inhibitors have cardiovascular benefit | Per agent | Per agent | HbA1c q3 months; renal function |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Antihypertensive therapy (chronic) | PO | - | 10-20 mg :: PO :: daily :: Target BP <130/80 mmHg. Start/restart 24-48h after TIA once stable. Agent choice per comorbidities: ACE-I/ARB first-line. Consider: Lisinopril 10-20 mg daily, Amlodipine 5-10 mg, Losartan 50-100 mg, Chlorthalidone 12.5-25 mg | Bilateral renal artery stenosis (ACE-I/ARB); pregnancy | Home BP monitoring; Cr and K+ at 1-2 weeks | - | ROUTINE | ROUTINE | - |
+| Anticoagulation (if atrial fibrillation detected) | PO | - | 5 mg :: - :: BID :: Start DOAC within 1-3 days for TIA (can start earlier than stroke). Preferred: Apixaban 5 mg BID (2.5 mg BID if criteria met). Alternative: Rivaroxaban 20 mg daily; Dabigatran 150 mg BID. Discontinue antiplatelet when anticoagulant started (do NOT combine long-term unless specific indication) | Active bleeding; mechanical valve (use warfarin); severe renal impairment | Renal function q6-12 months; bleeding signs | - | ROUTINE | ROUTINE | - |
+| Carotid endarterectomy (CEA) | Surgery | - | 50% :: - :: - :: For symptomatic carotid stenosis ≥50% (NASCET criteria); ideally performed within 2 weeks of TIA (maximum benefit). NNT = 6 for 70-99% stenosis; NNT = 22 for 50-69% stenosis | Near-occlusion (controversial); life expectancy <5 years; severe cardiac comorbidity | Post-op: BP monitoring; neuro checks q1h x 24h; wound hematoma; cranial nerve injury | - | URGENT | URGENT | - |
+| Carotid artery stenting (CAS) | Endovascular | - | Alternative to CEA if: high surgical risk, prior neck radiation, prior CEA with restenosis, surgically inaccessible. Requires DAPT (aspirin + clopidogrel) post-stenting | Severe aortic arch tortuosity; fresh thrombus | Post-procedure: BP management; neuro checks; DAPT compliance; restenosis surveillance | - | ROUTINE | ROUTINE | - |
+| PFO closure | Procedure | - | For cryptogenic TIA/stroke age 18-60 with PFO and right-to-left shunt. Reduces recurrent stroke vs medical therapy alone (CLOSE, RESPECT, REDUCE trials). Requires 3-6 months DAPT then aspirin indefinitely | Anatomic constraints; active infection | Echo at 6-12 months; aspirin long-term | - | - | ROUTINE | - |
+| Ezetimibe | PO | - | 10 mg :: PO :: daily :: 10 mg PO daily; add if LDL not at goal on max statin | LFTs; lipid panel | - | - | ROUTINE | ROUTINE | - |
+| PCSK9 inhibitor (evolocumab or alirocumab) | SC | - | 140 mg :: SC :: monthly :: Evolocumab 140 mg SC q2 weeks or 420 mg monthly; if LDL not at goal on statin + ezetimibe | Lipid panel q4-12 weeks; injection site | - | - | - | ROUTINE | - |
+| Diabetes management (optimize) | PO/SC | - | 7% :: - :: - :: Target HbA1c <7% (individualized); GLP-1 agonists and SGLT2 inhibitors have cardiovascular benefit | Per agent | HbA1c q3 months; renal function | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Medications for Specific Etiologies
 
-| Treatment | Indication | Dosing | Monitoring |
-|-----------|------------|--------|------------|
-| Anticoagulation (warfarin) | Mechanical heart valve + TIA | Warfarin to target INR 2.5-3.5; bridge with heparin | INR weekly then monthly |
-| DAPT long-term (aspirin + clopidogrel) | Intracranial stenosis 70-99% (SAMMPRIS trial: medical > stenting) | Aspirin 325 mg + clopidogrel 75 mg daily x 90 days; then single antiplatelet + aggressive risk factor management | Bleeding; MRA q6-12 months |
-| Anticoagulation | Cervical artery dissection | Antiplatelet or anticoagulation (both equally effective per CADISS trial); typically 3-6 months | Repeat vascular imaging at 3-6 months |
-| Colchicine | Residual inflammatory risk (LoDoCo2 / COLCOT trials support in ACS — emerging data for stroke prevention) | 0.5 mg PO daily | GI symptoms; CBC |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Anticoagulation (warfarin) | - | Mechanical heart valve + TIA | Warfarin to target INR 2.5-3.5; bridge with heparin | - | INR weekly then monthly | - | - | - | - |
+| DAPT long-term (aspirin + clopidogrel) | - | Intracranial stenosis 70-99% (SAMMPRIS trial: medical > stenting) | 325 mg :: PO :: daily :: Aspirin 325 mg + clopidogrel 75 mg daily x 90 days; then single antiplatelet + aggressive risk factor management | - | Bleeding; MRA q6-12 months | - | - | - | - |
+| Anticoagulation | - | Cervical artery dissection | Antiplatelet or anticoagulation (both equally effective per CADISS trial); typically 3-6 months | - | Repeat vascular imaging at 3-6 months | - | - | - | - |
+| Colchicine | PO | Residual inflammatory risk (LoDoCo2 / COLCOT trials support in ACS — emerging data for stroke prevention) | 0.5 mg :: PO :: daily :: 0.5 mg PO daily | - | GI symptoms; CBC | - | - | - | - |
 
 ---
 
@@ -232,20 +239,20 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| DAPT (aspirin + clopidogrel 21 days) for minor stroke / high-risk TIA | Class I, Level A | CHANCE trial (Wang et al. NEJM 2013) |
-| DAPT (aspirin + clopidogrel 90 days) for minor stroke / high-risk TIA | Class IIa, Level B | POINT trial (Johnston et al. NEJM 2018); higher ICH risk than 21 days |
-| Aspirin + ticagrelor x 30 days for minor stroke (NIHSS ≤5) | Class IIa, Level B | THALES trial (Johnston et al. NEJM 2020) |
-| High-intensity statin for TIA secondary prevention | Class I, Level A | SPARCL trial (Amarenco et al. NEJM 2006); AHA/ASA 2021 |
-| LDL target <70 mg/dL | Class I, Level A | TST trial (Amarenco et al. NEJM 2020) |
-| BP target <130/80 for secondary prevention | Class I, Level A | SPS3 trial; PROGRESS; AHA/ASA 2021 |
-| CEA within 2 weeks for symptomatic stenosis ≥50% | Class I, Level A | NASCET (NEJM 1991); ECST; Rothwell et al. (Lancet 2004) — maximum benefit if performed within 2 weeks |
+| DAPT (aspirin + clopidogrel 21 days) for minor stroke / high-risk TIA | Class I, Level A | [CHANCE trial (Wang et al. NEJM 2013)](https://pubmed.ncbi.nlm.nih.gov/23803136/) |
+| DAPT (aspirin + clopidogrel 90 days) for minor stroke / high-risk TIA | Class IIa, Level B | [POINT trial (Johnston et al. NEJM 2018)](https://pubmed.ncbi.nlm.nih.gov/29766750/); higher ICH risk than 21 days |
+| Aspirin + ticagrelor x 30 days for minor stroke (NIHSS ≤5) | Class IIa, Level B | [THALES trial (Johnston et al. NEJM 2020)](https://pubmed.ncbi.nlm.nih.gov/32668111/) |
+| High-intensity statin for TIA secondary prevention | Class I, Level A | [SPARCL trial (Amarenco et al. NEJM 2006)](https://pubmed.ncbi.nlm.nih.gov/16899775/); AHA/ASA 2021 |
+| LDL target <70 mg/dL | Class I, Level A | [TST trial (Amarenco et al. NEJM 2020)](https://pubmed.ncbi.nlm.nih.gov/31738483/) |
+| BP target <130/80 for secondary prevention | Class I, Level A | [SPS3 trial](https://pubmed.ncbi.nlm.nih.gov/23726159/); [PROGRESS](https://pubmed.ncbi.nlm.nih.gov/11589932/); AHA/ASA 2021 |
+| CEA within 2 weeks for symptomatic stenosis ≥50% | Class I, Level A | [NASCET (NEJM 1991)](https://pubmed.ncbi.nlm.nih.gov/1852179/); ECST; [Rothwell et al. (Lancet 2004)](https://pubmed.ncbi.nlm.nih.gov/15043958/) — maximum benefit if performed within 2 weeks |
 | DOACs preferred over warfarin for AF-related TIA/stroke | Class I, Level A | RE-LY, ROCKET-AF, ARISTOTLE, ENGAGE AF |
-| Extended cardiac monitoring for cryptogenic TIA | Class IIa, Level B | CRYSTAL-AF (Sanna et al. NEJM 2014); EMBRACE (Gladstone et al. NEJM 2014) |
+| Extended cardiac monitoring for cryptogenic TIA | Class IIa, Level B | [CRYSTAL-AF (Sanna et al. NEJM 2014)](https://pubmed.ncbi.nlm.nih.gov/24963567/); [EMBRACE (Gladstone et al. NEJM 2014)](https://pubmed.ncbi.nlm.nih.gov/24963566/) |
 | PFO closure for cryptogenic stroke/TIA age 18-60 | Class IIa, Level B | CLOSE, RESPECT, REDUCE trials |
-| MRI DWI within 24h (DWI+ = higher stroke risk) | Class I, Level B | AHA/ASA Guidelines; Coutts et al. (Stroke 2012) |
-| ABCD2 score for risk stratification | Class IIa, Level B | Johnston et al. (Lancet 2007); useful but imperfect; imaging adds value |
-| Rapid TIA evaluation reduces 90-day stroke risk | Class I, Level B | EXPRESS trial (Rothwell et al. Lancet 2007); SOS-TIA (Lavallée et al. Lancet Neurol 2007) |
-| Medical therapy superior to stenting for intracranial stenosis | Class I, Level A | SAMMPRIS trial (Chimowitz et al. NEJM 2011) |
+| MRI DWI within 24h (DWI+ = higher stroke risk) | Class I, Level B | AHA/ASA Guidelines; [Coutts et al. (Stroke 2012)](https://pubmed.ncbi.nlm.nih.gov/22302109/) |
+| ABCD2 score for risk stratification | Class IIa, Level B | [Johnston et al. (Lancet 2007)](https://pubmed.ncbi.nlm.nih.gov/17227200/); useful but imperfect; imaging adds value |
+| Rapid TIA evaluation reduces 90-day stroke risk | Class I, Level B | [EXPRESS trial (Rothwell et al. Lancet 2007)](https://pubmed.ncbi.nlm.nih.gov/17928046/); [SOS-TIA (Lavallée et al. Lancet Neurol 2007)](https://pubmed.ncbi.nlm.nih.gov/17928270/) |
+| Medical therapy superior to stenting for intracranial stenosis | Class I, Level A | [SAMMPRIS trial (Chimowitz et al. NEJM 2011)](https://pubmed.ncbi.nlm.nih.gov/21899409/) |
 | OSA screening and CPAP | Class IIa, Level B | AHA/ASA 2021 Guidelines |
 
 ---

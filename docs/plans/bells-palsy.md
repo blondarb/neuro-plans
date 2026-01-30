@@ -1,3 +1,10 @@
+---
+title: "Bell's Palsy"
+description: "Clinical decision support for bell's palsy / idiopathic facial paralysis diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Bell's Palsy
 
 **VERSION:** 1.0
@@ -11,7 +18,7 @@
 
 **ICD-10:** G51.0 (Bell's palsy), G51.8 (Other disorders of facial nerve), G51.9 (Disorder of facial nerve, unspecified), B02.21 (Postherpetic geniculate ganglionitis - Ramsay Hunt)
 
-**SYNONYMS:** Bell's palsy, Bell palsy, idiopathic facial paralysis, facial palsy, facial nerve palsy, acute peripheral facial palsy, seventh nerve palsy, CN VII palsy, facial weakness
+**SYNONYMS:** Bell's palsy, Bell palsy, idiopathic facial paralysis, facial palsy, facial nerve palsy, acute peripheral facial palsy, seventh nerve palsy, CN VII palsy, facial weakness, facial droop, facial paralysis
 
 **SCOPE:** Diagnosis and management of Bell's palsy (idiopathic facial nerve palsy) in adults. Covers workup to exclude secondary causes, medical treatment, and eye protection. Includes Ramsay Hunt syndrome (herpes zoster oticus) which requires different treatment. Excludes central facial palsy (stroke), facial nerve tumors, traumatic facial nerve injury, and bilateral facial palsy workup.
 
@@ -49,28 +56,28 @@
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC | URGENT | ROUTINE | ROUTINE | - | Infection, leukemia (CN involvement) | Normal |
-| CMP | URGENT | ROUTINE | ROUTINE | - | Diabetes (risk factor), electrolytes | Normal; glucose <126 fasting |
-| Glucose / HbA1c | URGENT | ROUTINE | ROUTINE | - | Diabetes is major risk factor; affects prognosis | Normal |
+| CBC (CPT 85025) | URGENT | ROUTINE | ROUTINE | - | Infection, leukemia (CN involvement) | Normal |
+| CMP (CPT 80053) | URGENT | ROUTINE | ROUTINE | - | Diabetes (risk factor), electrolytes | Normal; glucose <126 fasting |
+| Glucose (CPT 82947) / HbA1c (CPT 83036) | URGENT | ROUTINE | ROUTINE | - | Diabetes is major risk factor; affects prognosis | Normal |
 
 ### 1B. Extended Workup (Second-line - Selected Patients)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Lyme serology (IgM/IgG) | - | ROUTINE | ROUTINE | - | Endemic areas; Lyme disease can cause facial palsy | Negative |
-| ESR/CRP | - | ROUTINE | ROUTINE | - | Inflammatory conditions, vasculitis | Normal |
-| HIV | - | ROUTINE | ROUTINE | - | HIV-associated facial palsy | Negative |
-| RPR/VDRL | - | ROUTINE | ROUTINE | - | Syphilis in differential | Negative |
-| ANA | - | EXT | EXT | - | Autoimmune etiology (SLE, Sjogren's) | Negative |
+| Lyme serology (CPT 86618) (IgM/IgG) | - | ROUTINE | ROUTINE | - | Endemic areas; Lyme disease can cause facial palsy | Negative |
+| ESR (CPT 85652) / CRP (CPT 86140) | - | ROUTINE | ROUTINE | - | Inflammatory conditions, vasculitis | Normal |
+| HIV (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated facial palsy | Negative |
+| RPR/VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Syphilis in differential | Negative |
+| ANA (CPT 86235) | - | EXT | EXT | - | Autoimmune etiology (SLE, Sjogren's) | Negative |
 | SSA (Ro) / SSB (La) | - | EXT | EXT | - | Sjogren's syndrome | Negative |
 | VZV serology (IgM) | - | ROUTINE | ROUTINE | - | Ramsay Hunt syndrome (if vesicles or suspicion) | Document status |
-| ACE level | - | EXT | EXT | - | Sarcoidosis if bilateral or recurrent | Normal |
+| ACE level (CPT 82164) | - | EXT | EXT | - | Sarcoidosis if bilateral or recurrent | Normal |
 
 ### 1C. Rare/Specialized
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CSF analysis (LP) | - | URGENT | - | - | Atypical presentation, suspected Lyme neuroborreliosis, GBS, meningitis | See LP section |
+| CSF analysis (LP) (CPT 62270) | - | URGENT | - | - | Atypical presentation, suspected Lyme neuroborreliosis, GBS, meningitis | See LP section |
 | Serum glucose tolerance test | - | - | ROUTINE | - | If HbA1c borderline; diabetes evaluation | Normal |
 
 ### LUMBAR PUNCTURE
@@ -104,11 +111,11 @@
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with IAC protocol | - | ROUTINE | ROUTINE | - | If atypical, progressive, no recovery at 4-6 weeks | Facial nerve enhancement (may be normal in Bell's); exclude mass, stroke | Pacemaker, metal |
-| MRI with contrast | - | ROUTINE | ROUTINE | - | If tumor suspected | Rule out schwannoma, parotid tumor | Contrast allergy |
-| CT temporal bone | - | ROUTINE | ROUTINE | - | If trauma or mastoid pathology suspected | Fracture, cholesteatoma | None |
-| Chest X-ray | - | ROUTINE | ROUTINE | - | If sarcoidosis suspected | Hilar adenopathy | None |
-| Electrodiagnostic studies (ENoG, EMG) | - | - | ROUTINE | - | Severe palsy (HB IV-VI) at 2-3 weeks; prognosis | >90% degeneration = poor prognosis | None |
+| MRI brain with IAC protocol (CPT 70553) | - | ROUTINE | ROUTINE | - | If atypical, progressive, no recovery at 4-6 weeks | Facial nerve enhancement (may be normal in Bell's); exclude mass, stroke | Pacemaker, metal |
+| MRI with contrast (CPT 70552) | - | ROUTINE | ROUTINE | - | If tumor suspected | Rule out schwannoma, parotid tumor | Contrast allergy |
+| CT temporal bone (CPT 70480) | - | ROUTINE | ROUTINE | - | If trauma or mastoid pathology suspected | Fracture, cholesteatoma | None |
+| Chest X-ray (CPT 71046) | - | ROUTINE | ROUTINE | - | If sarcoidosis suspected | Hilar adenopathy | None |
+| Electrodiagnostic studies (ENoG, EMG) (CPT 95885) | - | - | ROUTINE | - | Severe palsy (HB IV-VI) at 2-3 weeks; prognosis | >90% degeneration = poor prognosis | None |
 
 ---
 
@@ -116,68 +123,68 @@
 
 ### 3A. Corticosteroids (All Patients)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Prednisone | STAT | STAT | ROUTINE | - | 60-80 mg PO daily × 7 days (can taper over days 8-10 or stop); START WITHIN 72 HOURS of onset | Active infection (relative), uncontrolled DM (relative) | Glucose (especially diabetics), GI prophylaxis |
-| Prednisolone | STAT | STAT | ROUTINE | - | 60-80 mg PO daily × 7 days (equivalent alternative) | Same | Same |
-| Methylprednisolone IV | STAT | STAT | - | - | 1000 mg IV daily × 3-5 days (if unable to take PO or severe/Ramsay Hunt) | Same | Same |
-| Dexamethasone | STAT | STAT | - | - | 10 mg IV/PO daily × 7-10 days (alternative) | Same | Same |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Prednisone | PO | - | 60-80 mg :: PO :: daily :: 60-80 mg PO daily × 7 days (can taper over days 8-10 or stop); START WITHIN 72 HOURS of onset | Active infection (relative), uncontrolled DM (relative) | Glucose (especially diabetics), GI prophylaxis | STAT | STAT | ROUTINE | - |
+| Prednisolone | PO | - | 60-80 mg :: PO :: daily :: 60-80 mg PO daily × 7 days (equivalent alternative) | Same | Same | STAT | STAT | ROUTINE | - |
+| Methylprednisolone IV (CPT 96374) | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily × 3-5 days (if unable to take PO or severe/Ramsay Hunt) | Same | Same | STAT | STAT | - | - |
+| Dexamethasone (CPT 96374) | IV | - | 10 mg :: IV :: daily :: 10 mg IV/PO daily × 7-10 days (alternative) | Same | Same | STAT | STAT | - | - |
 
 ### 3B. Antiviral Therapy
 
 **Note:** Antivirals alone have NOT been shown to improve outcomes in Bell's palsy. Use in combination with steroids for moderate-severe cases and always for Ramsay Hunt syndrome.
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Valacyclovir (moderate-severe Bell's) | STAT | STAT | ROUTINE | - | 1000 mg PO TID × 7 days; ALWAYS with steroids | Renal impairment (reduce dose) | Renal function |
-| Acyclovir (alternative) | STAT | STAT | ROUTINE | - | 400 mg PO 5× daily × 7-10 days; or 800 mg PO TID × 7 days | Renal impairment | Renal function |
-| Valacyclovir (Ramsay Hunt) | STAT | STAT | ROUTINE | - | 1000 mg PO TID × 7-10 days; MANDATORY with steroids | Renal impairment | Renal function |
-| Acyclovir IV (severe Ramsay Hunt) | - | STAT | - | - | 10 mg/kg IV q8h × 7-10 days | Renal impairment | Renal function, hydration |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Valacyclovir (moderate-severe Bell's) | PO | - | 1000 mg :: PO :: TID :: 1000 mg PO TID × 7 days; ALWAYS with steroids | Renal impairment (reduce dose) | Renal function | STAT | STAT | ROUTINE | - |
+| Acyclovir (alternative) | PO | - | 400 mg :: PO :: daily :: 400 mg PO 5× daily × 7-10 days; or 800 mg PO TID × 7 days | Renal impairment | Renal function | STAT | STAT | ROUTINE | - |
+| Valacyclovir (Ramsay Hunt) | PO | - | 1000 mg :: PO :: TID :: 1000 mg PO TID × 7-10 days; MANDATORY with steroids | Renal impairment | Renal function | STAT | STAT | ROUTINE | - |
+| Acyclovir IV (severe Ramsay Hunt) (CPT 96365) | IV | - | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h × 7-10 days | Renal impairment | Renal function, hydration | - | STAT | - | - |
 
 ### 3C. Eye Protection (CRITICAL - All Patients)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Artificial tears (preservative-free) | STAT | STAT | ROUTINE | - | 1-2 drops affected eye q1-2h while awake | None | Corneal status |
-| Lubricating eye ointment (Lacri-Lube) | STAT | STAT | ROUTINE | - | Thin strip in affected eye at bedtime (and up to TID) | None | Corneal status |
-| Eye patch or moisture chamber | STAT | STAT | ROUTINE | - | At night and in dusty/windy environments | None | Corneal status |
-| Tape eyelid closed at night | STAT | STAT | ROUTINE | - | If unable to close eye (use paper tape) | None | Corneal status |
-| Wraparound glasses/sunglasses | - | ROUTINE | ROUTINE | - | During day for eye protection | None | Corneal status |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Artificial tears (preservative-free) | - | - | 1-2 drops affected eye q1-2h while awake | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Lubricating eye ointment (Lacri-Lube) | - | - | Thin strip in affected eye at bedtime (and up to TID) | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Eye patch or moisture chamber | Transdermal | - | At night and in dusty/windy environments | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Tape eyelid closed at night | - | - | If unable to close eye (use paper tape) | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Wraparound glasses/sunglasses | - | - | During day for eye protection | None | Corneal status | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Pain Management
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Acetaminophen | ROUTINE | ROUTINE | ROUTINE | - | 650-1000 mg PO q6h PRN; max 3000 mg/day | Hepatic disease | LFTs if prolonged use |
-| Ibuprofen | ROUTINE | ROUTINE | ROUTINE | - | 400-600 mg PO q6h PRN with food | Renal disease, GI bleeding | Renal function |
-| Gabapentin (post-herpetic neuralgia) | - | ROUTINE | ROUTINE | - | 100-300 mg TID; titrate as needed for Ramsay Hunt | Renal impairment | Sedation |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Acetaminophen | PO | - | 650-1000 mg :: PO :: q6h :: 650-1000 mg PO q6h PRN; max 3000 mg/day | - | Hepatic disease | LFTs if prolonged use | ROUTINE | ROUTINE | ROUTINE | - |
+| Ibuprofen | PO | - | 400-600 mg :: PO :: q6h :: 400-600 mg PO q6h PRN with food | - | Renal disease, GI bleeding | Renal function | ROUTINE | ROUTINE | ROUTINE | - |
+| Gabapentin (post-herpetic neuralgia) | PO | - | 100-300 mg :: PO :: TID :: 100-300 mg TID; titrate as needed for Ramsay Hunt | - | Renal impairment | Sedation | - | ROUTINE | ROUTINE | - |
 
 ### 3E. Lyme Disease Treatment (If Positive)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Doxycycline | - | STAT | ROUTINE | - | 100 mg PO BID × 14-21 days (isolated facial palsy) | Pregnancy, children <8 | GI upset |
-| Ceftriaxone IV | - | STAT | - | - | 2 g IV daily × 14-21 days (if CNS involvement) | Cephalosporin allergy | Standard |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Doxycycline | PO | - | 100 mg :: PO :: BID :: 100 mg PO BID × 14-21 days (isolated facial palsy) | Pregnancy, children <8 | GI upset | - | STAT | ROUTINE | - |
+| Ceftriaxone IV (CPT 96365) | IV | - | 2 g :: IV :: daily :: 2 g IV daily × 14-21 days (if CNS involvement) | Cephalosporin allergy | Standard | - | STAT | - | - |
 
 ### 3F. Physical Therapy
 
-| Treatment | ED | HOSP | OPD | ICU | Details | Contraindications | Notes |
-|-----------|:--:|:----:|:---:|:---:|---------|-------------------|-------|
-| Facial exercises | - | ROUTINE | ROUTINE | - | Mirror exercises, gentle facial movements | None | Start when recovery begins |
-| Facial massage | - | - | ROUTINE | - | Gentle massage to maintain muscle tone | None | Patient/family can perform |
-| Electrical stimulation | - | - | EXT | - | Controversial; limited evidence | None | Not routinely recommended |
-| Neuromuscular retraining | - | - | ROUTINE | - | Specialized PT for synkinesis prevention | None | If incomplete recovery |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Facial exercises | - | - | Mirror exercises, gentle facial movements | None | Start when recovery begins | - | ROUTINE | ROUTINE | - |
+| Facial massage | - | - | Gentle massage to maintain muscle tone | None | Patient/family can perform | - | - | ROUTINE | - |
+| Electrical stimulation | - | - | Controversial; limited evidence | None | Not routinely recommended | - | - | EXT | - |
+| Neuromuscular retraining | - | - | Specialized PT for synkinesis prevention | None | If incomplete recovery | - | - | ROUTINE | - |
 
 ### 3G. Surgical Options (Refractory Cases)
 
-| Treatment | ED | HOSP | OPD | ICU | Indication | Contraindications | Notes |
-|-----------|:--:|:----:|:---:|:---:|------------|-------------------|-------|
-| Surgical decompression | - | - | EXT | - | >90% degeneration on ENoG within 14 days; controversial | Poor surgical candidate | Rarely performed; controversial benefit |
-| Gold weight/platinum chain eyelid implant | - | - | EXT | - | Persistent lagophthalmos (>6-12 months) | None | Improves eye closure |
-| Tarsorrhaphy | - | ROUTINE | ROUTINE | - | Persistent exposure keratopathy | None | Temporary or permanent |
-| Static facial sling | - | - | EXT | - | Permanent severe palsy | None | Improves cosmesis |
-| Hypoglossal-facial nerve anastomosis | - | - | EXT | - | Complete permanent paralysis | None | Restores tone and some movement |
-| Cross-face nerve graft | - | - | EXT | - | Permanent paralysis, younger patients | None | Extended recovery time |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Surgical decompression | - | >90% degeneration on ENoG within 14 days; controversial | - | Poor surgical candidate | Rarely performed; controversial benefit | - | - | EXT | - |
+| Gold weight/platinum chain eyelid implant | - | Persistent lagophthalmos (>6-12 months) | - | None | Improves eye closure | - | - | EXT | - |
+| Tarsorrhaphy | - | Persistent exposure keratopathy | - | None | Temporary or permanent | - | ROUTINE | ROUTINE | - |
+| Static facial sling | - | Permanent severe palsy | - | None | Improves cosmesis | - | - | EXT | - |
+| Hypoglossal-facial nerve anastomosis | - | Complete permanent paralysis | - | None | Restores tone and some movement | - | - | EXT | - |
+| Cross-face nerve graft | - | Permanent paralysis, younger patients | - | None | Extended recovery time | - | - | EXT | - |
 
 ---
 
@@ -264,10 +271,10 @@
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Corticosteroids improve recovery | Class I, Level A | Scottish Bell's Palsy Study (Sullivan 2007); Cochrane Reviews |
-| Start steroids within 72 hours | Class I, Level A | Sullivan et al., NEJM 2007 |
+| Corticosteroids improve recovery | Class I, Level A | Scottish Bell's Palsy Study ([Sullivan et al. NEJM 2007](https://pubmed.ncbi.nlm.nih.gov/17942873/)); Cochrane Reviews |
+| Start steroids within 72 hours | Class I, Level A | [Sullivan et al. NEJM 2007](https://pubmed.ncbi.nlm.nih.gov/17942873/) |
 | Antivirals alone not effective | Class I, Level A | Cochrane Reviews 2015 |
-| Antivirals + steroids for severe Bell's | Class II, Level B | AAN Guidelines 2012 |
+| Antivirals + steroids for severe Bell's | Class II, Level B | [AAN Guidelines (Gronseth & Paduga, Neurology 2012)](https://pubmed.ncbi.nlm.nih.gov/23136264/) |
 | Antivirals mandatory for Ramsay Hunt | Class I, Level B | Multiple studies; AAN Guidelines |
 | Eye protection essential | Class I, Level C | Expert consensus |
 | ENoG for prognosis in severe cases | Class II, Level B | Multiple studies |

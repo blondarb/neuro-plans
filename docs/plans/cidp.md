@@ -1,3 +1,10 @@
+---
+title: "Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)"
+description: "Clinical decision support for chronic inflammatory demyelinating polyneuropathy (cidp) diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)
 
 **VERSION:** 1.0
@@ -55,26 +62,26 @@
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | URGENT | ROUTINE | ROUTINE | - | Baseline, exclude hematologic disease | Normal |
-| CMP | URGENT | ROUTINE | ROUTINE | - | Renal/hepatic function, glucose | Normal |
-| HbA1c | - | ROUTINE | ROUTINE | - | Diabetes-associated neuropathy | <6.5% |
-| TSH | - | ROUTINE | ROUTINE | - | Thyroid dysfunction | Normal |
-| Vitamin B12 | - | ROUTINE | ROUTINE | - | Deficiency neuropathy | >400 pg/mL |
-| Serum protein electrophoresis (SPEP) | - | ROUTINE | ROUTINE | - | Monoclonal gammopathy (MGUS, myeloma) | No M-spike |
-| Immunofixation (serum) | - | ROUTINE | ROUTINE | - | Paraprotein identification | Negative |
+| CBC with differential (CPT 85025) | URGENT | ROUTINE | ROUTINE | - | Baseline, exclude hematologic disease | Normal |
+| CMP (CPT 80053) | URGENT | ROUTINE | ROUTINE | - | Renal/hepatic function, glucose | Normal |
+| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Diabetes-associated neuropathy | <6.5% |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction | Normal |
+| Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | Deficiency neuropathy | >400 pg/mL |
+| Serum protein electrophoresis (SPEP) (CPT 86334) | - | ROUTINE | ROUTINE | - | Monoclonal gammopathy (MGUS, myeloma) | No M-spike |
+| Immunofixation (serum) (CPT 86334) | - | ROUTINE | ROUTINE | - | Paraprotein identification | Negative |
 | Free light chains (serum) | - | ROUTINE | ROUTINE | - | Light chain disease | Normal ratio |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| HIV | - | ROUTINE | ROUTINE | - | HIV-associated neuropathy | Negative |
-| Hepatitis B/C | - | ROUTINE | ROUTINE | - | Before immunotherapy; hepatitis-associated neuropathy | Negative |
-| ANA | - | ROUTINE | ROUTINE | - | Connective tissue disease | Negative |
-| Anti-MAG antibody | - | ROUTINE | ROUTINE | - | MAG-associated neuropathy (DADS variant) | Negative |
-| Anti-GM1, anti-GD1a antibodies | - | ROUTINE | ROUTINE | - | MMN, GBS variants | Negative |
-| Anti-ganglioside panel | - | ROUTINE | ROUTINE | - | Immune-mediated neuropathies | Negative |
-| Urine protein electrophoresis (UPEP) | - | ROUTINE | ROUTINE | - | Multiple myeloma, POEMS | Negative |
+| HIV (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated neuropathy | Negative |
+| Hepatitis B/C (CPT 80074) | - | ROUTINE | ROUTINE | - | Before immunotherapy; hepatitis-associated neuropathy | Negative |
+| ANA (CPT 86235) | - | ROUTINE | ROUTINE | - | Connective tissue disease | Negative |
+| Anti-MAG antibody (CPT 86255) | - | ROUTINE | ROUTINE | - | MAG-associated neuropathy (DADS variant) | Negative |
+| Anti-GM1, anti-GD1a antibodies (CPT 86255) | - | ROUTINE | ROUTINE | - | MMN, GBS variants | Negative |
+| Anti-ganglioside panel (CPT 86255) | - | ROUTINE | ROUTINE | - | Immune-mediated neuropathies | Negative |
+| Urine protein electrophoresis (UPEP) (CPT 86335) | - | ROUTINE | ROUTINE | - | Multiple myeloma, POEMS | Negative |
 | VEGF level | - | EXT | EXT | - | POEMS syndrome if suspected | Normal |
 | IgG/IgA/IgM levels | - | ROUTINE | ROUTINE | - | Before IVIG; IgA deficiency screening | Normal; document IgA level |
 
@@ -94,11 +101,11 @@
 | Study | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |-------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Opening pressure | - | ROUTINE | - | - | Baseline | Normal |
-| Cell count (tubes 1 and 4) | - | ROUTINE | - | - | Exclude infection, malignancy | WBC <10/mm³ (albuminocytologic dissociation) |
-| Protein | - | ROUTINE | - | - | Typically elevated in CIDP | Often >45-100 mg/dL |
-| Glucose | - | ROUTINE | - | - | Infection | Normal |
-| Cytology | - | ROUTINE | - | - | Carcinomatous meningitis | Negative |
-| Oligoclonal bands | - | ROUTINE | - | - | MS, other inflammatory | Usually negative in CIDP |
+| Cell count (tubes 1 and 4) (CPT 89051) | - | ROUTINE | - | - | Exclude infection, malignancy | WBC <10/mm³ (albuminocytologic dissociation) |
+| Protein (CPT 84157) | - | ROUTINE | - | - | Typically elevated in CIDP | Often >45-100 mg/dL |
+| Glucose (CPT 82945) | - | ROUTINE | - | - | Infection | Normal |
+| Cytology (CPT 88104) | - | ROUTINE | - | - | Carcinomatous meningitis | Negative |
+| Oligoclonal bands (CPT 83916) | - | ROUTINE | - | - | MS, other inflammatory | Usually negative in CIDP |
 
 ---
 
@@ -108,8 +115,8 @@
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Nerve conduction studies (NCS) | - | URGENT | ROUTINE | - | At diagnosis | Demyelinating features (see criteria) | Anticoagulation (for needle EMG) |
-| Electromyography (EMG) | - | URGENT | ROUTINE | - | At diagnosis | Secondary axonal changes; denervation | Same |
+| Nerve conduction studies (NCS) (CPT 95907-95913) | - | URGENT | ROUTINE | - | At diagnosis | Demyelinating features (see criteria) | Anticoagulation (for needle EMG) |
+| Electromyography (EMG) (CPT 95886) | - | URGENT | ROUTINE | - | At diagnosis | Secondary axonal changes; denervation | Same |
 | MRI spine with contrast (cervical/lumbar) | - | ROUTINE | ROUTINE | - | At diagnosis | Nerve root enlargement/enhancement | Contrast allergy, renal disease |
 
 ### 2B. Extended
@@ -118,8 +125,8 @@
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MRI brachial/lumbosacral plexus | - | ROUTINE | ROUTINE | - | If plexopathy suspected | Plexus enlargement/enhancement | Per MRI |
 | Nerve ultrasound | - | - | ROUTINE | - | Emerging modality | Nerve enlargement (CSA increase) | None |
-| PET-CT | - | - | EXT | - | POEMS, lymphoma, malignancy workup | Sclerotic lesions, lymphadenopathy | Per PET |
-| Nerve biopsy (sural) | - | - | EXT | - | Diagnostic uncertainty; vasculitis suspected | Demyelination, inflammation | Rarely needed |
+| PET-CT (CPT 78816) | - | - | EXT | - | POEMS, lymphoma, malignancy workup | Sclerotic lesions, lymphadenopathy | Per PET |
+| Nerve biopsy (sural) (CPT 64795) | - | - | EXT | - | Diagnostic uncertainty; vasculitis suspected | Demyelination, inflammation | Rarely needed |
 
 ---
 
@@ -127,37 +134,37 @@
 
 ### 3A. First-Line Immunotherapy
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| IVIG (Intravenous Immunoglobulin) | - | STAT | ROUTINE | - | Induction: 2 g/kg divided over 2-5 days; Maintenance: 0.4-1 g/kg q3-4 weeks (adjust based on response) | IgA deficiency (use IgA-depleted product), renal failure, thrombosis history | Renal function, headache, aseptic meningitis, thrombosis |
-| SCIG (Subcutaneous Immunoglobulin) | - | - | ROUTINE | - | Convert from IVIG at equivalent weekly dose (total monthly IVIG dose ÷ 4); administer weekly | Same (fewer systemic reactions) | Local site reactions |
-| Plasma exchange (PLEX) | - | STAT | - | - | 5-7 exchanges over 2-3 weeks; 1-1.5 plasma volumes/exchange | Hemodynamic instability, line access | Hemodynamics, electrolytes (Ca, Mg), fibrinogen |
-| Corticosteroids | - | STAT | ROUTINE | - | Prednisone 60-80 mg daily or 1 mg/kg/day × 4-8 weeks, then slow taper over 6-12 months; OR pulsed methylprednisolone 1000 mg IV × 3 days monthly | Uncontrolled DM, active infection, osteoporosis (relative) | Glucose, BP, bone density, weight, infection |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| IVIG (Intravenous Immunoglobulin) (CPT 96365) | IV | - | 2 g/kg :: PO :: - :: Induction: 2 g/kg divided over 2-5 days; Maintenance: 0.4-1 g/kg q3-4 weeks (adjust based on response) | IgA deficiency (use IgA-depleted product), renal failure, thrombosis history | Renal function, headache, aseptic meningitis, thrombosis | - | STAT | ROUTINE | - |
+| SCIG (Subcutaneous Immunoglobulin) | SC | - | Convert from IVIG at equivalent weekly dose (total monthly IVIG dose ÷ 4); administer weekly | Same (fewer systemic reactions) | Local site reactions | - | - | ROUTINE | - |
+| Plasma exchange (PLEX) (CPT 36514) | - | - | 5-7 exchanges over 2-3 weeks; 1-1.5 plasma volumes/exchange | Hemodynamic instability, line access | Hemodynamics, electrolytes (Ca, Mg), fibrinogen | - | STAT | - | - |
+| Corticosteroids | IV | - | 60-80 mg :: IV :: daily :: Prednisone 60-80 mg daily or 1 mg/kg/day × 4-8 weeks, then slow taper over 6-12 months; OR pulsed methylprednisolone 1000 mg IV × 3 days monthly | Uncontrolled DM, active infection, osteoporosis (relative) | Glucose, BP, bone density, weight, infection | - | STAT | ROUTINE | - |
 
 ### 3B. Second-Line / Steroid-Sparing Agents
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Azathioprine | - | ROUTINE | ROUTINE | - | Start 50 mg daily; increase by 50 mg q2 weeks to 2-3 mg/kg/day | TPMT deficiency (check before starting), pregnancy | CBC, LFTs, TPMT level |
-| Mycophenolate mofetil | - | ROUTINE | ROUTINE | - | Start 500 mg BID; increase to 1000-1500 mg BID | Pregnancy, severe GI disease | CBC, LFTs |
-| Rituximab | - | - | ROUTINE | - | 375 mg/m² IV weekly × 4 OR 1000 mg IV × 2 doses (days 1 and 15); repeat q6 months PRN | Active infection, hepatitis B (screen) | Infusion reactions, infection, B-cell counts |
-| Cyclophosphamide | - | - | EXT | - | Pulse: 500-1000 mg/m² IV monthly × 6; rarely used due to toxicity | Severe cytopenias, active infection | CBC, renal function, bladder toxicity |
-| Cyclosporine | - | - | EXT | - | 3-5 mg/kg/day in 2 divided doses; target trough 100-200 ng/mL | Renal impairment, uncontrolled HTN | Renal function, BP, drug levels |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Azathioprine | PO | - | 50 mg :: PO :: daily :: Start 50 mg daily; increase by 50 mg q2 weeks to 2-3 mg/kg/day | TPMT deficiency (check before starting), pregnancy | CBC, LFTs, TPMT level | - | ROUTINE | ROUTINE | - |
+| Mycophenolate mofetil | PO | - | 500 mg :: PO :: BID :: Start 500 mg BID; increase to 1000-1500 mg BID | Pregnancy, severe GI disease | CBC, LFTs | - | ROUTINE | ROUTINE | - |
+| Rituximab | IV | - | 375 mg :: IV :: PRN :: 375 mg/m² IV weekly × 4 OR 1000 mg IV × 2 doses (days 1 and 15); repeat q6 months PRN | Active infection, hepatitis B (screen) | Infusion reactions, infection, B-cell counts | - | - | ROUTINE | - |
+| Cyclophosphamide | IV | - | 500-1000 mg :: IV :: monthly :: Pulse: 500-1000 mg/m² IV monthly × 6; rarely used due to toxicity | Severe cytopenias, active infection | CBC, renal function, bladder toxicity | - | - | EXT | - |
+| Cyclosporine | PO | - | 3-5 mg/kg :: PO :: - :: 3-5 mg/kg/day in 2 divided doses; target trough 100-200 ng/mL | Renal impairment, uncontrolled HTN | Renal function, BP, drug levels | - | - | EXT | - |
 
 ### 3C. Anti-Nodal Antibody-Positive CIDP (Special Population)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Rituximab (first-line for anti-nodal CIDP) | - | - | ROUTINE | - | 375 mg/m² weekly × 4 OR 1000 mg × 2 doses | Per above | Poor response to IVIG expected; rituximab preferred |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Rituximab (first-line for anti-nodal CIDP) | PO | - | 375 mg :: PO :: - :: 375 mg/m² weekly × 4 OR 1000 mg × 2 doses | Per above | Poor response to IVIG expected; rituximab preferred | - | - | ROUTINE | - |
 
 ### 3D. Symptomatic Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Gabapentin (neuropathic pain) | - | ROUTINE | ROUTINE | - | Start 100-300 mg TID; titrate to 900-3600 mg/day | Renal impairment (adjust) | Sedation, dizziness |
-| Pregabalin (neuropathic pain) | - | ROUTINE | ROUTINE | - | Start 75 mg BID; titrate to 150-300 mg BID | Renal impairment (adjust) | Same |
-| Duloxetine (neuropathic pain) | - | ROUTINE | ROUTINE | - | Start 30 mg daily; increase to 60 mg daily | Severe hepatic/renal impairment, MAOIs | Nausea, BP |
-| Amitriptyline (neuropathic pain) | - | ROUTINE | ROUTINE | - | Start 10-25 mg QHS; titrate to 50-100 mg QHS | Cardiac arrhythmia, glaucoma | QTc, anticholinergic effects |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Gabapentin (neuropathic pain) | PO | - | 100-300 mg :: PO :: TID :: Start 100-300 mg TID; titrate to 900-3600 mg/day | - | Renal impairment (adjust) | Sedation, dizziness | - | ROUTINE | ROUTINE | - |
+| Pregabalin (neuropathic pain) | PO | - | 75 mg :: PO :: BID :: Start 75 mg BID; titrate to 150-300 mg BID | - | Renal impairment (adjust) | Same | - | ROUTINE | ROUTINE | - |
+| Duloxetine (neuropathic pain) | PO | - | 30 mg :: PO :: daily :: Start 30 mg daily; increase to 60 mg daily | - | Severe hepatic/renal impairment, MAOIs | Nausea, BP | - | ROUTINE | ROUTINE | - |
+| Amitriptyline (neuropathic pain) | - | - | 10-25 mg :: PO :: QHS :: Start 10-25 mg QHS; titrate to 50-100 mg QHS | - | Cardiac arrhythmia, glaucoma | QTc, anticholinergic effects | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -244,9 +251,9 @@
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| EFNS/PNS Diagnostic Criteria | Class I | Van den Bergh et al., Eur J Neurol 2021 |
-| IVIG effective for CIDP | Class I, Level A | ICE trial; Cochrane Reviews |
-| SCIG non-inferior to IVIG | Class I, Level A | PATH trial |
+| EFNS/PNS Diagnostic Criteria | Class I | [Van den Bergh et al., Eur J Neurol 2021](https://pubmed.ncbi.nlm.nih.gov/34327760/) |
+| IVIG effective for CIDP | Class I, Level A | [ICE trial (Hughes et al., Lancet Neurol 2008)](https://pubmed.ncbi.nlm.nih.gov/18178525/); [Cochrane Reviews (Eftimov et al., 2013)](https://pubmed.ncbi.nlm.nih.gov/24379104/) |
+| SCIG non-inferior to IVIG | Class I, Level A | [PATH trial (van Schaik et al., Lancet Neurol 2018)](https://pubmed.ncbi.nlm.nih.gov/29122523/) |
 | Corticosteroids effective for CIDP | Class I, Level A | Cochrane Reviews |
 | Plasma exchange effective | Class I, Level A | Cochrane Reviews |
 | IVIG, steroids, PLEX equivalent efficacy | Class I | Multiple comparative studies |

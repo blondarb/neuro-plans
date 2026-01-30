@@ -1,3 +1,10 @@
+---
+title: "Rapidly Progressive Dementia"
+description: "Clinical decision support for rapidly progressive dementia (rpd) diagnosis and management"
+version: "1.0"
+setting: "ED, HOSP, OPD, ICU"
+---
+
 # Rapidly Progressive Dementia
 
 **VERSION:** 1.0
@@ -8,7 +15,9 @@
 
 **DIAGNOSIS:** Rapidly Progressive Dementia (RPD)
 
-**ICD-10:** F03.90 (Unspecified dementia without behavioral disturbance), G31.9 (Degenerative disease of nervous system, unspecified), A81.00 (Creutzfeldt-Jakob disease, unspecified)
+**ICD-10:** F03.90 (Unspecified dementia without behavioral disturbance), G31.9 (Degenerative disease of nervous system, unspecified), A81.00 (Creutzfeldt-Jakob disease, unspecified), G30.9 (Alzheimer's disease, unspecified), G31.09 (Other frontotemporal dementia)
+
+**SYNONYMS:** Rapidly progressive dementia, RPD, rapidly progressive cognitive decline, subacute dementia, prion disease evaluation, CJD workup, Creutzfeldt-Jakob disease, rapid onset dementia, fast progressing dementia, subacute encephalopathy, prion disease, fast dementia
 
 **SCOPE:** Urgent evaluation of cognitive decline progressing over weeks to months (typically <1-2 years from symptom onset to severe disability). Covers comprehensive workup to identify treatable causes including autoimmune encephalitis, infectious etiologies, toxic-metabolic causes, CNS malignancy, and prion disease (CJD). The key principle: assume a treatable cause exists until proven otherwise. Excludes typical slowly progressive dementias (Alzheimer's, FTD) unless presenting atypically fast, and acute delirium (<days).
 
@@ -26,38 +35,38 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | STAT | STAT | ROUTINE | STAT | Infection screen; hematologic malignancy; B12 deficiency (macrocytosis) | Normal |
-| CMP (BMP + LFTs) | STAT | STAT | ROUTINE | STAT | Hepatic encephalopathy (ammonia); renal failure (uremia); electrolyte abnormalities (Na, Ca); hypo/hyperglycemia | Normal |
-| TSH, free T4 | URGENT | ROUTINE | ROUTINE | URGENT | Hypothyroid encephalopathy (Hashimoto encephalopathy); hyperthyroidism | Normal |
-| B12, methylmalonic acid (MMA) | URGENT | ROUTINE | ROUTINE | URGENT | B12 deficiency — reversible cause of cognitive decline and myelopathy | B12 >300 pg/mL; MMA normal |
-| Folate | - | ROUTINE | ROUTINE | - | Deficiency associated with cognitive impairment | Normal |
-| ESR | URGENT | ROUTINE | ROUTINE | URGENT | Vasculitis screen; inflammatory conditions; infection; malignancy | Normal (<20 mm/h age-adjusted) |
-| CRP | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory marker | Normal |
-| RPR or VDRL (syphilis screen) | URGENT | ROUTINE | ROUTINE | URGENT | Neurosyphilis — treatable cause; "the great imitator" | Non-reactive |
-| HIV 1/2 antigen/antibody | URGENT | ROUTINE | ROUTINE | URGENT | HIV-associated neurocognitive disorder (HAND); opportunistic infections | Negative |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Infection screen; hematologic malignancy; B12 deficiency (macrocytosis) | Normal |
+| CMP (CPT 80053) | STAT | STAT | ROUTINE | STAT | Hepatic encephalopathy (ammonia); renal failure (uremia); electrolyte abnormalities (Na, Ca); hypo/hyperglycemia | Normal |
+| TSH (CPT 84443), free T4 (CPT 84439) | URGENT | ROUTINE | ROUTINE | URGENT | Hypothyroid encephalopathy (Hashimoto encephalopathy); hyperthyroidism | Normal |
+| B12 (CPT 82607), methylmalonic acid (MMA) (CPT 83921) | URGENT | ROUTINE | ROUTINE | URGENT | B12 deficiency — reversible cause of cognitive decline and myelopathy | B12 >300 pg/mL; MMA normal |
+| Folate (CPT 82746) | - | ROUTINE | ROUTINE | - | Deficiency associated with cognitive impairment | Normal |
+| ESR (CPT 85652) | URGENT | ROUTINE | ROUTINE | URGENT | Vasculitis screen; inflammatory conditions; infection; malignancy | Normal (<20 mm/h age-adjusted) |
+| CRP (CPT 86140) | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory marker | Normal |
+| RPR or VDRL (CPT 86592) | URGENT | ROUTINE | ROUTINE | URGENT | Neurosyphilis — treatable cause; "the great imitator" | Non-reactive |
+| HIV 1/2 antigen/antibody (CPT 87389) | URGENT | ROUTINE | ROUTINE | URGENT | HIV-associated neurocognitive disorder (HAND); opportunistic infections | Negative |
 | Ammonia | URGENT | ROUTINE | ROUTINE | URGENT | Hepatic encephalopathy | Normal (<35 µmol/L) |
-| Urinalysis + urine culture | STAT | ROUTINE | ROUTINE | STAT | UTI causing delirium (especially elderly) | Negative |
+| Urinalysis (CPT 81003) + urine culture | STAT | ROUTINE | ROUTINE | STAT | UTI causing delirium (especially elderly) | Negative |
 | Urine drug screen | URGENT | ROUTINE | ROUTINE | URGENT | Substance-related cognitive impairment; prescription drug toxicity | Negative or expected medications only |
-| Blood glucose | STAT | STAT | ROUTINE | STAT | Hypoglycemia; diabetic encephalopathy | Normal |
+| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Hypoglycemia; diabetic encephalopathy | Normal |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Anti-thyroid antibodies (anti-TPO, anti-thyroglobulin) | - | ROUTINE | ROUTINE | - | Hashimoto encephalopathy (SREAT) — treatable with steroids even if euthyroid | Negative (positive + encephalopathy = consider SREAT) |
-| ANA | - | ROUTINE | ROUTINE | - | Lupus cerebritis; systemic autoimmune disease | Negative |
+| ANA (CPT 86235) | - | ROUTINE | ROUTINE | - | Lupus cerebritis; systemic autoimmune disease | Negative |
 | dsDNA antibodies | - | ROUTINE | ROUTINE | - | Lupus cerebritis (specific) | Negative |
 | Complement levels (C3, C4) | - | ROUTINE | ROUTINE | - | Lupus; complement-mediated disease | Normal |
 | ANCA (c-ANCA, p-ANCA) | - | ROUTINE | ROUTINE | - | CNS vasculitis (granulomatosis with polyangiitis, microscopic polyangiitis) | Negative |
 | ACE level (serum) | - | ROUTINE | ROUTINE | - | Neurosarcoidosis | Normal |
-| Serum protein electrophoresis (SPEP) + immunofixation | - | ROUTINE | ROUTINE | - | Multiple myeloma; POEMS; Waldenström; M-protein-associated neuropathy/encephalopathy | Normal pattern |
+| Serum protein electrophoresis (SPEP) (CPT 86334) + immunofixation | - | ROUTINE | ROUTINE | - | Multiple myeloma; POEMS; Waldenström; M-protein-associated neuropathy/encephalopathy | Normal pattern |
 | LDH | - | ROUTINE | ROUTINE | - | Lymphoma; hemolysis; intravascular lymphoma | Normal |
 | Peripheral blood smear | - | ROUTINE | - | - | Intravascular lymphoma (schistocytes); TTP (schistocytes + thrombocytopenia) | Normal |
-| Thiamine (B1) level | - | ROUTINE | ROUTINE | - | Wernicke encephalopathy — reversible with treatment; alcoholism, malnutrition, bariatric surgery | Normal (>70 nmol/L) |
-| Copper and ceruloplasmin | - | ROUTINE | ROUTINE | - | Wilson disease (young patients <50); acquired copper deficiency (zinc excess, gastric surgery) | Normal |
-| Zinc level | - | ROUTINE | ROUTINE | - | Zinc excess causes copper deficiency → myeloneuropathy + cognitive decline | Normal |
-| Cortisol (AM or random) | - | ROUTINE | ROUTINE | - | Adrenal insufficiency causing encephalopathy | Normal (>18 µg/dL AM) |
-| Heavy metals (lead, mercury, arsenic) | - | EXT | EXT | - | Occupational/environmental exposure | Normal |
+| Thiamine (B1) level (CPT 84425) | - | ROUTINE | ROUTINE | - | Wernicke encephalopathy — reversible with treatment; alcoholism, malnutrition, bariatric surgery | Normal (>70 nmol/L) |
+| Copper (CPT 82390) and ceruloplasmin (CPT 82390) | - | ROUTINE | ROUTINE | - | Wilson disease (young patients <50); acquired copper deficiency (zinc excess, gastric surgery) | Normal |
+| Zinc level (CPT 84630) | - | ROUTINE | ROUTINE | - | Zinc excess causes copper deficiency → myeloneuropathy + cognitive decline | Normal |
+| Cortisol (CPT 82533) | - | ROUTINE | ROUTINE | - | Adrenal insufficiency causing encephalopathy | Normal (>18 µg/dL AM) |
+| Heavy metals: lead (CPT 83655), mercury (CPT 83825), arsenic (CPT 82175) | - | EXT | EXT | - | Occupational/environmental exposure | Normal |
 | Paraneoplastic panel (serum) — comprehensive | - | ROUTINE | ROUTINE | - | ANNA-1 (Hu), ANNA-2 (Ri), CRMP-5 (CV2), amphiphysin, PCA-1 (Yo), PCA-2, PCA-Tr (DNER), GAD65 | Negative |
 | Autoimmune encephalitis panel (serum) — NMDAR, LGI1, CASPR2, GABA-B, GABA-A, AMPA, DPPX, IgLON5 | - | ROUTINE | ROUTINE | - | Treatable autoimmune encephalitis — most important reversible cause to identify | Negative |
 
@@ -65,12 +74,12 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| 14-3-3 protein (CSF) | - | ROUTINE | ROUTINE | - | CJD biomarker; elevated in rapid neuronal destruction. Sensitivity ~90% but NOT specific (also elevated in stroke, encephalitis, seizures) | Negative (positive supports CJD in right clinical context) |
-| RT-QuIC (Real-Time Quaking-Induced Conversion) — CSF | - | ROUTINE | ROUTINE | - | MOST SPECIFIC test for prion disease; sensitivity 92%, specificity 99-100%. Gold standard CSF prion test | Negative (positive = prion disease essentially confirmed) |
-| Tau protein (CSF — total tau) | - | ROUTINE | ROUTINE | - | Markedly elevated in CJD (>1150 pg/mL); also elevated in AD but less extreme | Normal (<400 pg/mL; CJD often >10,000) |
+| 14-3-3 protein (CSF) (CPT 83519) | - | ROUTINE | ROUTINE | - | CJD biomarker; elevated in rapid neuronal destruction. Sensitivity ~90% but NOT specific (also elevated in stroke, encephalitis, seizures) | Negative (positive supports CJD in right clinical context) |
+| RT-QuIC (CPT 86235) — CSF | - | ROUTINE | ROUTINE | - | MOST SPECIFIC test for prion disease; sensitivity 92%, specificity 99-100%. Gold standard CSF prion test | Negative (positive = prion disease essentially confirmed) |
+| Tau protein (CSF — total tau) (CPT 83519) | - | ROUTINE | ROUTINE | - | Markedly elevated in CJD (>1150 pg/mL); also elevated in AD but less extreme | Normal (<400 pg/mL; CJD often >10,000) |
 | Neuron-specific enolase (NSE) — CSF | - | ROUTINE | - | - | Elevated in CJD (>35 ng/mL); marker of neuronal damage | Normal |
-| AD biomarkers (CSF Aβ42, p-tau, t-tau) | - | ROUTINE | ROUTINE | - | Rapidly progressive Alzheimer disease (rpAD) is the most common misdiagnosis of CJD; AD biomarker pattern distinguishes | Aβ42/Aβ40 ratio normal; p-tau/t-tau ratio helps distinguish |
-| Neurofilament light chain (NfL) — CSF or serum | - | ROUTINE | ROUTINE | - | Non-specific marker of neuronal damage; markedly elevated in CJD, moderately in many RPDs | Baseline for comparison |
+| AD biomarkers (CSF Aβ42, p-tau, t-tau) (CPT 83519) | - | ROUTINE | ROUTINE | - | Rapidly progressive Alzheimer disease (rpAD) is the most common misdiagnosis of CJD; AD biomarker pattern distinguishes | Aβ42/Aβ40 ratio normal; p-tau/t-tau ratio helps distinguish |
+| Neurofilament light chain (NfL) (CPT 83519) — CSF or serum | - | ROUTINE | ROUTINE | - | Non-specific marker of neuronal damage; markedly elevated in CJD, moderately in many RPDs | Baseline for comparison |
 | Whipple disease PCR (CSF and duodenal biopsy) | - | EXT | EXT | - | Tropheryma whipplei — rare but treatable cause of RPD with oculomasticatory myorhythmia; GI symptoms, arthralgia | Negative |
 | PRNG gene analysis (blood) | - | EXT | EXT | - | Genetic prion disease (familial CJD, fatal familial insomnia, GSS); family history of early dementia or movement disorder | No mutation |
 | QuantiFERON-TB Gold / PPD | - | ROUTINE | ROUTINE | - | TB meningitis with cognitive decline | Negative |
@@ -87,19 +96,19 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with and without contrast + DWI | STAT | STAT | ROUTINE | STAT | Within 24h. DWI is CRITICAL — cortical ribboning on DWI is highly suggestive of CJD | CJD: cortical ribboning (DWI/FLAIR high signal in cortex), caudate/putamen signal. Autoimmune: mesial temporal T2/FLAIR. Vasculitis: multifocal white matter lesions. Lymphoma: enhancing mass. Wernicke: mamillary body/thalamic signal. MS: periventricular/juxtacortical lesions | Pacemaker, metallic implants |
-| EEG (routine or prolonged) | URGENT | URGENT | ROUTINE | URGENT | Within 24h | CJD: periodic sharp wave complexes (PSWCs) at 1-2 Hz — sensitivity ~65% (higher in sCJD-MM1). Seizures: electrographic activity. NCSE: subclinical seizures. Autoimmune: extreme delta brush (NMDAR) | None significant |
-| CT head without contrast | STAT | STAT | - | STAT | Immediate if acute presentation or focal deficit | Mass lesion, hydrocephalus, hemorrhage, large infarct | Pregnancy (relative) |
+| MRI brain with and without contrast (CPT 70553) + DWI | STAT | STAT | ROUTINE | STAT | Within 24h. DWI is CRITICAL — cortical ribboning on DWI is highly suggestive of CJD | CJD: cortical ribboning (DWI/FLAIR high signal in cortex), caudate/putamen signal. Autoimmune: mesial temporal T2/FLAIR. Vasculitis: multifocal white matter lesions. Lymphoma: enhancing mass. Wernicke: mamillary body/thalamic signal. MS: periventricular/juxtacortical lesions | Pacemaker, metallic implants |
+| EEG (CPT 95816) | URGENT | URGENT | ROUTINE | URGENT | Within 24h | CJD: periodic sharp wave complexes (PSWCs) at 1-2 Hz — sensitivity ~65% (higher in sCJD-MM1). Seizures: electrographic activity. NCSE: subclinical seizures. Autoimmune: extreme delta brush (NMDAR) | None significant |
+| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | Immediate if acute presentation or focal deficit | Mass lesion, hydrocephalus, hemorrhage, large infarct | Pregnancy (relative) |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MRA/MRV brain | - | ROUTINE | ROUTINE | - | If vasculitis or venous thrombosis suspected | CNS vasculitis (beading); dural sinus thrombosis | Same as MRI |
-| MRI spine | - | ROUTINE | ROUTINE | - | If concurrent myelopathy (B12 deficiency, copper deficiency, neurosarcoidosis) | Cord signal change (posterior columns in B12/copper); sarcoid enhancement | Same as MRI |
-| Continuous EEG (cEEG) | - | URGENT | - | STAT | If altered consciousness; suspected NCSE | Non-convulsive seizures; subclinical status | None |
-| FDG-PET brain | - | EXT | ROUTINE | - | Differentiate neurodegenerative patterns; detect occult malignancy; autoimmune encephalitis (mesial temporal hypermetabolism) | AD: temporoparietal hypometabolism. FTD: frontal/temporal. CJD: cortical/striatal. Lymphoma: hypermetabolic mass. Autoimmune: mesial temporal hypermetabolism | Pregnancy; uncontrolled diabetes |
-| PET-CT body (whole body) | - | EXT | ROUTINE | - | Occult malignancy search (paraneoplastic); lymphoma staging | Primary tumor identification | Same as FDG-PET |
+| MRI spine (CPT 72141) | - | ROUTINE | ROUTINE | - | If concurrent myelopathy (B12 deficiency, copper deficiency, neurosarcoidosis) | Cord signal change (posterior columns in B12/copper); sarcoid enhancement | Same as MRI |
+| Continuous EEG (cEEG) (CPT 95700) | - | URGENT | - | STAT | If altered consciousness; suspected NCSE | Non-convulsive seizures; subclinical status | None |
+| FDG-PET brain (CPT 78608) | - | EXT | ROUTINE | - | Differentiate neurodegenerative patterns; detect occult malignancy; autoimmune encephalitis (mesial temporal hypermetabolism) | AD: temporoparietal hypometabolism. FTD: frontal/temporal. CJD: cortical/striatal. Lymphoma: hypermetabolic mass. Autoimmune: mesial temporal hypermetabolism | Pregnancy; uncontrolled diabetes |
+| PET-CT body (CPT 78816) | - | EXT | ROUTINE | - | Occult malignancy search (paraneoplastic); lymphoma staging | Primary tumor identification | Same as FDG-PET |
 | CT chest/abdomen/pelvis with contrast | - | ROUTINE | ROUTINE | - | Cancer screening (paraneoplastic); sarcoidosis (hilar adenopathy) | Mass, lymphadenopathy | Contrast allergy, renal impairment |
 | Conventional cerebral angiography (DSA) | - | EXT | EXT | - | If CNS vasculitis suspected (MRA normal does not exclude small-vessel vasculitis) | Beading (alternating stenosis/dilation) | Contrast allergy, coagulopathy |
 | Testicular ultrasound (males) | - | ROUTINE | - | - | Testicular germ cell tumor (paraneoplastic; anti-NMDAR in males) | Normal | None |
@@ -126,17 +135,17 @@ SECTION A: ACTION ITEMS
 | Study | ED | HOSP | OPD | Rationale | Target Finding |
 |-------|:--:|:----:|:---:|-----------|----------------|
 | Opening pressure | URGENT | ROUTINE | ROUTINE | Elevated ICP in mass, hydrocephalus, venous thrombosis | Normal (10-20 cm H2O) |
-| Cell count with differential (tubes 1 and 4) | URGENT | ROUTINE | ROUTINE | Pleocytosis suggests infection, autoimmune, or lymphoma; normal in CJD | Normal in CJD; elevated in autoimmune/infectious |
-| Protein | URGENT | ROUTINE | ROUTINE | Elevated in infection, inflammation, malignancy; mildly elevated or normal in CJD | Normal or mildly elevated in CJD; elevated in infection/autoimmune |
-| Glucose with paired serum | URGENT | ROUTINE | ROUTINE | Low in bacterial/TB/fungal meningitis, carcinomatous meningitis | Normal in CJD, autoimmune; low in infectious/malignant |
+| Cell count with differential (CPT 89051) | URGENT | ROUTINE | ROUTINE | Pleocytosis suggests infection, autoimmune, or lymphoma; normal in CJD | Normal in CJD; elevated in autoimmune/infectious |
+| Protein (CPT 84157) | URGENT | ROUTINE | ROUTINE | Elevated in infection, inflammation, malignancy; mildly elevated or normal in CJD | Normal or mildly elevated in CJD; elevated in infection/autoimmune |
+| Glucose with paired serum (CPT 82945) | URGENT | ROUTINE | ROUTINE | Low in bacterial/TB/fungal meningitis, carcinomatous meningitis | Normal in CJD, autoimmune; low in infectious/malignant |
 | Gram stain and culture | URGENT | ROUTINE | ROUTINE | Exclude chronic bacterial infection | No organisms |
-| RT-QuIC (Real-Time Quaking-Induced Conversion) | - | ROUTINE | ROUTINE | Most sensitive and specific CSF test for prion disease (sensitivity 92%, specificity 99-100%) | Negative |
-| 14-3-3 protein | - | ROUTINE | ROUTINE | CJD biomarker; rapid neuronal destruction marker | Negative |
-| Total tau protein | - | ROUTINE | ROUTINE | Markedly elevated in CJD (>1150 pg/mL); moderately elevated in AD | Normal (<400 pg/mL) |
+| RT-QuIC (CPT 86235) | - | ROUTINE | ROUTINE | Most sensitive and specific CSF test for prion disease (sensitivity 92%, specificity 99-100%) | Negative |
+| 14-3-3 protein (CPT 83519) | - | ROUTINE | ROUTINE | CJD biomarker; rapid neuronal destruction marker | Negative |
+| Total tau protein (CPT 83519) | - | ROUTINE | ROUTINE | Markedly elevated in CJD (>1150 pg/mL); moderately elevated in AD | Normal (<400 pg/mL) |
 | NSE (neuron-specific enolase) | - | ROUTINE | ROUTINE | CJD biomarker | Normal |
 | Autoimmune encephalitis panel (CSF) — NMDAR, LGI1, CASPR2, GABA-B, GABA-A, AMPA, DPPX | - | ROUTINE | ROUTINE | CSF more sensitive than serum for NMDAR antibodies; identifies treatable autoimmune etiology | Negative |
 | Paraneoplastic antibodies (CSF) | - | ROUTINE | ROUTINE | More sensitive than serum for some antibodies | Negative |
-| Oligoclonal bands, IgG index | - | ROUTINE | ROUTINE | Intrathecal antibody synthesis (MS, autoimmune, neurosarcoidosis) | Negative |
+| Oligoclonal bands (CPT 83916), IgG index | - | ROUTINE | ROUTINE | Intrathecal antibody synthesis (MS, autoimmune, neurosarcoidosis) | Negative |
 | Cytology (send 10 mL minimum; repeat x3 for sensitivity) | - | ROUTINE | ROUTINE | Leptomeningeal carcinomatosis/lymphoma; sensitivity improves with volume and repeat | Negative |
 | Flow cytometry | - | ROUTINE | ROUTINE | CNS lymphoma (B-cell clonality) | Normal |
 | HSV 1/2 PCR | - | ROUTINE | ROUTINE | HSV encephalitis; post-HSV autoimmune encephalitis | Negative |
@@ -149,8 +158,8 @@ SECTION A: ACTION ITEMS
 | ACE level (CSF) | - | ROUTINE | ROUTINE | Neurosarcoidosis | Normal |
 | Whipple PCR (T. whipplei) | - | EXT | EXT | Whipple disease | Negative |
 | Beta-2 microglobulin (CSF) | - | ROUTINE | - | CNS lymphoma marker | Normal |
-| Alzheimer biomarkers (Aβ42, Aβ40, p-tau 181, t-tau) | - | ROUTINE | ROUTINE | rpAD pattern: low Aβ42, elevated p-tau; helps distinguish from CJD (where p-tau is NOT as elevated relative to t-tau) | Context-dependent |
-| Neurofilament light chain (NfL) — CSF | - | ROUTINE | ROUTINE | Non-specific neuronal damage; very elevated in CJD | Baseline |
+| Alzheimer biomarkers (Aβ42, Aβ40, p-tau 181, t-tau) (CPT 83519) | - | ROUTINE | ROUTINE | rpAD pattern: low Aβ42, elevated p-tau; helps distinguish from CJD (where p-tau is NOT as elevated relative to t-tau) | Context-dependent |
+| Neurofilament light chain (NfL) (CPT 83519) — CSF | - | ROUTINE | ROUTINE | Non-specific neuronal damage; very elevated in CJD | Baseline |
 
 **Save 5-10 mL of CSF frozen at -80°C for future studies.**
 
@@ -160,40 +169,40 @@ SECTION A: ACTION ITEMS
 
 ### 3A. Empiric / Treatable Causes — TREAT WHILE AWAITING RESULTS
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Indication | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|------------|-------------------|------------|
-| Thiamine (B1) IV | STAT | STAT | - | STAT | 500 mg IV TID x 3-5 days, then 250 mg IV daily x 3-5 days, then 100 mg PO daily ongoing | Empiric for Wernicke encephalopathy if ANY suspicion (alcohol, malnutrition, bariatric surgery); treat before glucose | None significant | Clinical response (confusion, ataxia, ophthalmoplegia should improve) |
-| IV methylprednisolone (empiric immunotherapy trial) | - | URGENT | - | URGENT | 1000 mg IV daily x 3-5 days. Consider when autoimmune etiology suspected and workup pending. Document pre-treatment baseline exam. | Suspected autoimmune encephalitis, Hashimoto encephalopathy (SREAT), neurosarcoidosis, CNS vasculitis | Active infection (rule out first); uncertain prion disease (steroids do not help CJD and may mask diagnosis) | Glucose q6h; BP; GI prophylaxis; response assessment |
-| IVIG (empiric immunotherapy trial) | - | URGENT | - | URGENT | 0.4 g/kg/day x 5 days (total 2 g/kg). Add to steroids or as alternative if steroid-intolerant | Suspected autoimmune encephalitis; concurrent with steroid trial | IgA deficiency; renal failure; thrombotic risk | Renal function; headache; thrombotic events |
-| Acyclovir IV (if HSV not excluded) | STAT | STAT | - | STAT | 10 mg/kg IV q8h. Continue until HSV PCR confirmed negative | Empiric while awaiting HSV PCR; fever + encephalopathy | Renal impairment (dose adjust) | Cr daily; hydration |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Thiamine (B1) IV (CPT 96374) | IV | Empiric for Wernicke encephalopathy if ANY suspicion (alcohol, malnutrition, bariatric surgery); treat before glucose | 500 mg :: IV :: TID :: 500 mg IV TID x 3-5 days, then 250 mg IV daily x 3-5 days, then 100 mg PO daily ongoing | None significant | Clinical response (confusion, ataxia, ophthalmoplegia should improve) | STAT | STAT | - | STAT |
+| IV methylprednisolone (CPT 96365) | IV | Suspected autoimmune encephalitis, Hashimoto encephalopathy (SREAT), neurosarcoidosis, CNS vasculitis | 1000 mg :: IV :: daily :: 1000 mg IV daily x 3-5 days. Consider when autoimmune etiology suspected and workup pending. Document pre-treatment baseline exam. | Active infection (rule out first); uncertain prion disease (steroids do not help CJD and may mask diagnosis) | Glucose q6h; BP; GI prophylaxis; response assessment | - | URGENT | - | URGENT |
+| IVIG (empiric immunotherapy trial) | - | Suspected autoimmune encephalitis; concurrent with steroid trial | 0.4 g/kg :: - :: daily x 5 days :: 0.4 g/kg/day x 5 days (total 2 g/kg). Add to steroids or as alternative if steroid-intolerant | IgA deficiency; renal failure; thrombotic risk | Renal function; headache; thrombotic events | - | URGENT | - | URGENT |
+| Acyclovir IV (CPT 96365) | IV | Empiric while awaiting HSV PCR; fever + encephalopathy | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h. Continue until HSV PCR confirmed negative | Renal impairment (dose adjust) | Cr daily; hydration | STAT | STAT | - | STAT |
 
 ### 3B. Targeted Treatments (Once Diagnosis Established)
 
-| Treatment | Diagnosis | Dosing | Duration | Monitoring |
-|-----------|-----------|--------|----------|------------|
-| IV methylprednisolone → oral prednisone taper | Autoimmune encephalitis, SREAT, neurosarcoidosis | 1g IV x 5d → prednisone 1 mg/kg/day with slow taper over 3-6 months | Months to years (diagnosis-dependent) | Glucose, BP, bone density, weight, mood |
-| IVIG | Autoimmune encephalitis (NMDAR, LGI1, CASPR2) | 0.4 g/kg/day x 5 days; repeat monthly for maintenance | Months; taper based on clinical response | Renal function; IgG levels |
-| Rituximab | Refractory autoimmune encephalitis; anti-NMDAR | 375 mg/m2 IV weekly x 4 weeks OR 1000 mg IV x 2 doses (2 weeks apart) | Repeat q6 months based on CD19/20 counts | CD19/20 counts; immunoglobulins; infection risk; PML risk |
-| Cyclophosphamide | Refractory autoimmune encephalitis; CNS vasculitis | 750-1000 mg/m2 IV monthly x 6 months (pulse) OR oral 1-2 mg/kg/day | 6-12 months for vasculitis | CBC (nadir at 10-14 days); urinalysis (hemorrhagic cystitis — give MESNA); fertility preservation discussion |
-| Penicillin G IV | Neurosyphilis | 18-24 million units/day IV (3-4 MU q4h) x 14 days | 14 days | RPR titer follow-up q3-6 months (4-fold decline expected) |
-| Tumor-directed therapy | Paraneoplastic (treat underlying cancer) | Per oncology | Per oncology | Clinical response; antibody titers |
-| Teratoma resection | Anti-NMDAR with ovarian teratoma | Surgical removal | One-time (but may recur) | Repeat imaging; antibody titers |
-| B12 replacement | B12 deficiency | Cyanocobalamin 1000 µg IM daily x 7 days, then weekly x 4, then monthly long-term | Lifelong if pernicious anemia | B12 and MMA levels at 3 months |
-| Antifungals (amphotericin B + flucytosine) | Cryptococcal meningitis | Amphotericin B 0.7-1 mg/kg/day IV + flucytosine 100 mg/kg/day x 2 weeks (induction) | Weeks (induction) then fluconazole maintenance | Renal function; electrolytes; LFTs |
-| Anti-TB regimen | TB meningitis | RIPE: rifampin + isoniazid + pyrazinamide + ethambutol | 12 months minimum (2 months intensive + 10 months continuation) | LFTs; visual acuity (ethambutol); drug interactions |
-| No disease-modifying treatment | Prion disease (CJD) | Supportive care only; no effective treatment exists | N/A | Comfort care; goals of care discussion |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| IV methylprednisolone (CPT 96365) → oral prednisone taper | IV | - | 1g :: IV :: - :: 1g IV x 5d → prednisone 1 mg/kg/day with slow taper over 3-6 months | - | Glucose, BP, bone density, weight, mood | - | - | - | - |
+| IVIG | PO | - | 0.4 g/kg :: PO :: monthly :: 0.4 g/kg/day x 5 days; repeat monthly for maintenance | - | Renal function; IgG levels | - | - | - | - |
+| Rituximab (CPT 96365) | IV | - | 375 mg/m2 :: IV :: - :: 375 mg/m2 IV weekly x 4 weeks OR 1000 mg IV x 2 doses (2 weeks apart) | - | CD19/20 counts; immunoglobulins; infection risk; PML risk | - | - | - | - |
+| Cyclophosphamide (CPT 96365) | IV | - | 750-1000 mg/m2 :: IV :: monthly :: 750-1000 mg/m2 IV monthly x 6 months (pulse) OR oral 1-2 mg/kg/day | - | CBC (nadir at 10-14 days); urinalysis (hemorrhagic cystitis — give MESNA); fertility preservation discussion | - | - | - | - |
+| Penicillin G IV (CPT 96365) | IV | - | 18-24 million units/day IV (3-4 MU q4h) x 14 days | - | RPR titer follow-up q3-6 months (4-fold decline expected) | - | - | - | - |
+| Tumor-directed therapy | - | - | Per oncology | - | Clinical response; antibody titers | - | - | - | - |
+| Teratoma resection | - | - | Surgical removal | - | Repeat imaging; antibody titers | - | - | - | - |
+| B12 replacement | IM | - | Cyanocobalamin 1000 µg IM daily x 7 days, then weekly x 4, then monthly long-term | - | B12 and MMA levels at 3 months | - | - | - | - |
+| Antifungals (amphotericin B + flucytosine) (CPT 96365) | IV | - | 0.7-1 mg/kg :: IV :: - :: Amphotericin B 0.7-1 mg/kg/day IV + flucytosine 100 mg/kg/day x 2 weeks (induction) | - | Renal function; electrolytes; LFTs | - | - | - | - |
+| Anti-TB regimen | - | - | RIPE: rifampin + isoniazid + pyrazinamide + ethambutol | - | LFTs; visual acuity (ethambutol); drug interactions | - | - | - | - |
+| No disease-modifying treatment | - | - | Supportive care only; no effective treatment exists | - | Comfort care; goals of care discussion | - | - | - | - |
 
 ### 3C. Symptomatic Treatments
 
-| Treatment | Indication | Dosing | Contraindications | Monitoring |
-|-----------|------------|--------|-------------------|------------|
-| Levetiracetam | Seizures | 500-1500 mg PO/IV BID; max 3000 mg/day | Severe renal impairment (dose adjust) | Renal function; behavioral changes |
-| Lorazepam | Agitation, myoclonus (CJD) | 0.5-1 mg PO/IV q6-8h PRN | Respiratory depression | Sedation; respiratory status |
-| Clonazepam | Myoclonus (CJD) | 0.5 mg PO BID; increase to 1-2 mg TID | Respiratory depression; fall risk | Sedation; fall prevention |
-| Valproic acid | Myoclonus (adjunctive); seizures | 250-500 mg PO BID; target level 50-100 µg/mL | Hepatic disease; pancreatitis; pregnancy | LFTs; ammonia; drug level; CBC |
-| Quetiapine | Agitation, psychosis, behavioral disturbance | 25-50 mg PO qHS; increase by 25 mg/day; max 200-400 mg/day | QT prolongation; Parkinson disease (avoid all antipsychotics in Lewy body) | QTc; metabolic panel; sedation |
-| Trazodone | Insomnia, behavioral disturbance | 25-50 mg PO qHS; max 150 mg | Priapism (rare); orthostatic hypotension | Sedation; orthostasis |
-| Melatonin | Insomnia | 3-10 mg PO qHS | None significant | Sleep quality |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Levetiracetam (CPT 96374) | IV | Seizures | 500-1500 mg :: IV :: BID :: 500-1500 mg PO/IV BID; max 3000 mg/day | - | Severe renal impairment (dose adjust) | Renal function; behavioral changes | - | - | - | - |
+| Lorazepam (CPT 96374) | IV | Agitation, myoclonus (CJD) | 0.5-1 mg :: IV :: PRN :: 0.5-1 mg PO/IV q6-8h PRN | - | Respiratory depression | Sedation; respiratory status | - | - | - | - |
+| Clonazepam | PO | Myoclonus (CJD) | 0.5 mg :: PO :: BID :: 0.5 mg PO BID; increase to 1-2 mg TID | - | Respiratory depression; fall risk | Sedation; fall prevention | - | - | - | - |
+| Valproic acid | PO | Myoclonus (adjunctive); seizures | 250-500 mg :: PO :: BID :: 250-500 mg PO BID; target level 50-100 µg/mL | - | Hepatic disease; pancreatitis; pregnancy | LFTs; ammonia; drug level; CBC | - | - | - | - |
+| Quetiapine | PO | Agitation, psychosis, behavioral disturbance | 25-50 mg :: PO :: qHS :: 25-50 mg PO qHS; increase by 25 mg/day; max 200-400 mg/day | - | QT prolongation; Parkinson disease (avoid all antipsychotics in Lewy body) | QTc; metabolic panel; sedation | - | - | - | - |
+| Trazodone | PO | Insomnia, behavioral disturbance | 25-50 mg :: PO :: qHS :: 25-50 mg PO qHS; max 150 mg | - | Priapism (rare); orthostatic hypotension | Sedation; orthostasis | - | - | - | - |
+| Melatonin | PO | Insomnia | 3-10 mg :: PO :: qHS :: 3-10 mg PO qHS | - | None significant | Sleep quality | - | - | - | - |
 
 ---
 
@@ -302,15 +311,15 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| RT-QuIC for CJD diagnosis (sensitivity 92%, specificity 99-100%) | Class I, Level A | McGuire et al. (Ann Neurol 2012); Atarashi et al. (Nat Med 2011) |
-| MRI DWI cortical ribboning for CJD | Class I, Level A | Vitali et al. (Neurology 2011); Young et al. (AJNR 2005) |
-| CSF 14-3-3 protein for CJD (sensitivity ~90%, lower specificity) | Class IIa, Level B | WHO diagnostic criteria; Muayqil et al. (2012) |
-| Comprehensive autoimmune antibody testing in RPD | Class I, Level B | Graus et al. (Lancet Neurol 2016) — diagnostic criteria for autoimmune encephalitis |
-| Empiric immunotherapy trial for suspected autoimmune encephalitis | Class IIa, Level C | Expert consensus; Dalmau & Graus (NEJM 2018) |
-| Anti-NMDAR encephalitis: immunotherapy + teratoma resection | Class I, Level B | Titulaer et al. (Lancet Neurol 2013) |
-| Anti-LGI1: steroids as first-line | Class IIa, Level B | Irani et al. (Brain 2010) |
-| Hashimoto encephalopathy (SREAT): steroid-responsive | Class IIb, Level C | Castillo et al. (Arch Neurol 2006); diagnosis of exclusion |
-| Thiamine for Wernicke: high-dose IV (500 mg TID) | Class I, Level B | Thomson & Marshall (2006); Galvin et al. (2010) |
+| RT-QuIC for CJD diagnosis (sensitivity 92%, specificity 99-100%) | Class I, Level A | [McGuire et al. (Ann Neurol 2012)](https://pubmed.ncbi.nlm.nih.gov/22926858/); [Atarashi et al. (Nat Med 2011)](https://pubmed.ncbi.nlm.nih.gov/21278748/) |
+| MRI DWI cortical ribboning for CJD | Class I, Level A | [Vitali et al. (Neurology 2011)](https://pubmed.ncbi.nlm.nih.gov/21471469/); [Young et al. (AJNR 2005)](https://pubmed.ncbi.nlm.nih.gov/15956529/) |
+| CSF 14-3-3 protein for CJD (sensitivity ~90%, lower specificity) | Class IIa, Level B | WHO diagnostic criteria; [Muayqil et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22993290/) |
+| Comprehensive autoimmune antibody testing in RPD | Class I, Level B | [Graus et al. (Lancet Neurol 2016)](https://pubmed.ncbi.nlm.nih.gov/26906964/) — diagnostic criteria for autoimmune encephalitis |
+| Empiric immunotherapy trial for suspected autoimmune encephalitis | Class IIa, Level C | Expert consensus; [Dalmau & Graus (NEJM 2018)](https://pubmed.ncbi.nlm.nih.gov/29490181/) |
+| Anti-NMDAR encephalitis: immunotherapy + teratoma resection | Class I, Level B | [Titulaer et al. (Lancet Neurol 2013)](https://pubmed.ncbi.nlm.nih.gov/23290630/) |
+| Anti-LGI1: steroids as first-line | Class IIa, Level B | [Irani et al. (Brain 2010)](https://pubmed.ncbi.nlm.nih.gov/20663977/) |
+| Hashimoto encephalopathy (SREAT): steroid-responsive | Class IIb, Level C | [Castillo et al. (Arch Neurol 2006)](https://pubmed.ncbi.nlm.nih.gov/16476807/); diagnosis of exclusion |
+| Thiamine for Wernicke: high-dose IV (500 mg TID) | Class I, Level B | [Thomson & Marshall (2006)](https://pubmed.ncbi.nlm.nih.gov/16384871/); [Galvin et al. (2010)](https://pubmed.ncbi.nlm.nih.gov/20642790/) |
 | Neurosyphilis: IV penicillin G x 14 days | Class I, Level A | CDC STI Treatment Guidelines |
 | CJD: no effective treatment; supportive care only | Class I, Level A | No disease-modifying therapy exists; multiple trials failed |
 | Brain biopsy when non-invasive workup inconclusive | Class IIa, Level C | Expert consensus; diagnostic yield 57-65% in RPD |

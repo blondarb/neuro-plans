@@ -1,3 +1,10 @@
+---
+title: "Parkinson's Disease - New Diagnosis"
+description: "Clinical decision support for parkinson's disease - new diagnosis diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Parkinson's Disease - New Diagnosis
 
 **VERSION:** 1.0
@@ -11,7 +18,7 @@
 
 **ICD-10:** G20 (Parkinson's disease), G20.A1 (Parkinson's disease without dyskinesia, without motor fluctuations), G20.A2 (Parkinson's disease without dyskinesia, with motor fluctuations), G20.B1 (Parkinson's disease with dyskinesia, without motor fluctuations), G20.B2 (Parkinson's disease with dyskinesia, with motor fluctuations), G20.C (Parkinsonism, unspecified)
 
-**SYNONYMS:** Parkinson disease, PD, idiopathic parkinsonism, paralysis agitans, shaking palsy, primary parkinsonism, Parkinson's, parkinsonism
+**SYNONYMS:** Parkinson disease, PD, idiopathic parkinsonism, paralysis agitans, shaking palsy, primary parkinsonism, Parkinson's, parkinsonism, tremor-dominant PD, PIGD
 
 **SCOPE:** Initial diagnosis and early management of idiopathic Parkinson's disease in adults. Covers diagnostic workup to exclude secondary causes and atypical parkinsonism, initiation of symptomatic therapy, and patient education. Excludes drug-induced parkinsonism, atypical parkinsonian syndromes (PSP, MSA, CBD, DLB), juvenile/young-onset PD, and advanced PD with motor fluctuations.
 
@@ -59,19 +66,19 @@
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC | - | ROUTINE | ROUTINE | - | General health, rule out anemia | Normal |
-| CMP | - | ROUTINE | ROUTINE | - | Hepatic/renal function for medication dosing | Normal |
-| TSH | - | ROUTINE | ROUTINE | - | Hypothyroidism can cause slowness/tremor | Normal |
-| Vitamin B12 | - | ROUTINE | ROUTINE | - | Deficiency can cause parkinsonism | >400 pg/mL |
-| RPR/VDRL | - | ROUTINE | ROUTINE | - | Neurosyphilis in differential | Negative |
+| CBC (CPT 85025) | - | ROUTINE | ROUTINE | - | General health, rule out anemia | Normal |
+| CMP (CPT 80053) | - | ROUTINE | ROUTINE | - | Hepatic/renal function for medication dosing | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Hypothyroidism can cause slowness/tremor | Normal |
+| Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | Deficiency can cause parkinsonism | >400 pg/mL |
+| RPR/VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis in differential | Negative |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Serum ceruloplasmin | - | ROUTINE | ROUTINE | - | Wilson disease if age <50 | 20-40 mg/dL |
+| Serum ceruloplasmin (CPT 82390) | - | ROUTINE | ROUTINE | - | Wilson disease if age <50 | 20-40 mg/dL |
 | 24-hour urine copper | - | EXT | EXT | - | Wilson disease if ceruloplasmin low/borderline | <100 mcg/24h |
-| HIV | - | ROUTINE | ROUTINE | - | HIV-associated parkinsonism | Negative |
+| HIV (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated parkinsonism | Negative |
 | Genetic testing (GBA, LRRK2, PRKN) | - | - | EXT | - | Young onset (<50), family history, Ashkenazi Jewish | Informational |
 | Alpha-synuclein seed amplification assay | - | - | EXT | - | Emerging biomarker for synucleinopathy | Pending validation |
 
@@ -91,18 +98,18 @@
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain without contrast | - | ROUTINE | ROUTINE | - | At diagnosis | Rule out structural cause, vascular parkinsonism | Pacemaker, metal |
-| MRI brain with contrast | - | ROUTINE | ROUTINE | - | If mass or infection suspected | Rule out structural lesion | Contrast allergy, renal disease |
+| MRI brain without contrast (CPT 70551) | - | ROUTINE | ROUTINE | - | At diagnosis | Rule out structural cause, vascular parkinsonism | Pacemaker, metal |
+| MRI brain with contrast (CPT 70552) | - | ROUTINE | ROUTINE | - | If mass or infection suspected | Rule out structural lesion | Contrast allergy, renal disease |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| DaTscan (I-123 ioflupane SPECT) | - | - | ROUTINE | - | Diagnostic uncertainty (ET vs PD, drug-induced) | Reduced striatal uptake in PD | Pregnancy, iodine allergy |
-| FDG-PET brain | - | - | EXT | - | Distinguish atypical parkinsonism | Hypometabolism pattern varies by diagnosis | Per PET |
+| DaTscan (CPT 78830) | - | - | ROUTINE | - | Diagnostic uncertainty (ET vs PD, drug-induced) | Reduced striatal uptake in PD | Pregnancy, iodine allergy |
+| FDG-PET brain (CPT 78608) | - | - | EXT | - | Distinguish atypical parkinsonism | Hypometabolism pattern varies by diagnosis | Per PET |
 | MRI susceptibility-weighted imaging | - | ROUTINE | ROUTINE | - | Wilson disease, iron deposition | Rule out basal ganglia abnormalities | Per MRI |
 | MIBG cardiac scintigraphy | - | - | EXT | - | Distinguish PD from MSA | Reduced uptake in PD | Drugs affecting uptake |
-| Polysomnography | - | - | ROUTINE | - | If REM sleep behavior disorder suspected | Confirm RBD | None |
+| Polysomnography (CPT 95810) | - | - | ROUTINE | - | If REM sleep behavior disorder suspected | Confirm RBD | None |
 | Olfactory testing (UPSIT) | - | - | ROUTINE | - | Supportive criterion; impaired in PD | Hyposmia | Nasal obstruction |
 
 ---
@@ -111,67 +118,67 @@
 
 ### 3A. Dopaminergic Therapy - Levodopa
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Carbidopa/Levodopa (Sinemet) | - | ROUTINE | ROUTINE | - | Start 25/100 mg TID with meals; titrate by 25/100 mg q1-2 weeks; usual maintenance 300-800 mg levodopa/day | Narrow-angle glaucoma; caution with MAOIs | Dyskinesia, nausea, orthostatic hypotension |
-| Carbidopa/Levodopa CR | - | ROUTINE | ROUTINE | - | 25/100 or 50/200 mg BID-TID; ~30% less bioavailable than IR | Same | Same; less predictable absorption |
-| Carbidopa/Levodopa ODT (Parcopa) | - | ROUTINE | ROUTINE | - | Same dosing as IR; dissolves on tongue | Same | Same; useful for dysphagia |
-| Carbidopa/Levodopa ER (Rytary) | - | - | ROUTINE | - | Start 23.75/95 mg TID; titrate per response | Same | Same; more sustained release |
-| Carbidopa/Levodopa intestinal gel (Duopa) | - | - | EXT | - | Continuous infusion via PEG-J; specialist prescribing | Advanced PD; requires surgical placement | Device complications |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Carbidopa/Levodopa (Sinemet) | PO | - | 100 mg :: PO :: TID :: Start 25/100 mg TID with meals; titrate by 25/100 mg q1-2 weeks; usual maintenance 300-800 mg levodopa/day | Narrow-angle glaucoma; caution with MAOIs | Dyskinesia, nausea, orthostatic hypotension | - | ROUTINE | ROUTINE | - |
+| Carbidopa/Levodopa CR | PO | - | 200 mg :: PO :: BID :: 25/100 or 50/200 mg BID-TID; ~30% less bioavailable than IR | Same | Same; less predictable absorption | - | ROUTINE | ROUTINE | - |
+| Carbidopa/Levodopa ODT (Parcopa) | - | - | Same dosing as IR; dissolves on tongue | Same | Same; useful for dysphagia | - | ROUTINE | ROUTINE | - |
+| Carbidopa/Levodopa ER (Rytary) | PO | - | 95 mg :: PO :: TID :: Start 23.75/95 mg TID; titrate per response | Same | Same; more sustained release | - | - | ROUTINE | - |
+| Carbidopa/Levodopa intestinal gel (Duopa) | IV | - | Continuous infusion via PEG-J; specialist prescribing | Advanced PD; requires surgical placement | Device complications | - | - | EXT | - |
 
 ### 3B. Dopamine Agonists
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Pramipexole (Mirapex) | - | ROUTINE | ROUTINE | - | Start 0.125 mg TID; titrate weekly to 0.5-1.5 mg TID; max 4.5 mg/day | Impulse control disorders (relative); renal impairment (reduce dose) | ICDs (gambling, hypersexuality, shopping), sleepiness, hallucinations |
-| Pramipexole ER | - | ROUTINE | ROUTINE | - | Start 0.375 mg daily; titrate weekly; max 4.5 mg/day | Same | Same |
-| Ropinirole (Requip) | - | ROUTINE | ROUTINE | - | Start 0.25 mg TID; titrate weekly to 3-8 mg TID; max 24 mg/day | ICDs, hepatic impairment | Same as pramipexole |
-| Ropinirole XL | - | ROUTINE | ROUTINE | - | Start 2 mg daily; titrate weekly; max 24 mg/day | Same | Same |
-| Rotigotine patch (Neupro) | - | ROUTINE | ROUTINE | - | Start 2 mg/24h; increase by 2 mg/week; max 8 mg/24h (early PD) | Sulfite allergy, application site reactions | ICDs, skin reactions |
-| Apomorphine SC (Apokyn) | - | - | EXT | - | Rescue for off episodes; start 0.2 mL (2 mg) test dose; max 0.6 mL (6 mg) | Severe hypotension, 5-HT3 antagonist use | BP, nausea (pretreat with trimethobenzamide) |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Pramipexole (Mirapex) | PO | - | 0.125 mg :: PO :: TID :: Start 0.125 mg TID; titrate weekly to 0.5-1.5 mg TID; max 4.5 mg/day | Impulse control disorders (relative); renal impairment (reduce dose) | ICDs (gambling, hypersexuality, shopping), sleepiness, hallucinations | - | ROUTINE | ROUTINE | - |
+| Pramipexole ER | PO | - | 0.375 mg :: PO :: daily :: Start 0.375 mg daily; titrate weekly; max 4.5 mg/day | Same | Same | - | ROUTINE | ROUTINE | - |
+| Ropinirole (Requip) | PO | - | 0.25 mg :: PO :: TID :: Start 0.25 mg TID; titrate weekly to 3-8 mg TID; max 24 mg/day | ICDs, hepatic impairment | Same as pramipexole | - | ROUTINE | ROUTINE | - |
+| Ropinirole XL | PO | - | 2 mg :: PO :: daily :: Start 2 mg daily; titrate weekly; max 24 mg/day | Same | Same | - | ROUTINE | ROUTINE | - |
+| Rotigotine patch (Neupro) | Transdermal | - | 2 mg :: PO :: - :: Start 2 mg/24h; increase by 2 mg/week; max 8 mg/24h (early PD) | Sulfite allergy, application site reactions | ICDs, skin reactions | - | ROUTINE | ROUTINE | - |
+| Apomorphine SC (Apokyn) | SC | - | 0.2 mL :: PO :: - :: Rescue for off episodes; start 0.2 mL (2 mg) test dose; max 0.6 mL (6 mg) | Severe hypotension, 5-HT3 antagonist use | BP, nausea (pretreat with trimethobenzamide) | - | - | EXT | - |
 
 ### 3C. MAO-B Inhibitors
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Rasagiline (Azilect) | - | ROUTINE | ROUTINE | - | 0.5-1 mg daily; may use as monotherapy early PD or adjunct | MAOIs, meperidine, tramadol, methadone, cyclobenzaprine | Serotonin syndrome; insomnia if taken late |
-| Selegiline (Eldepryl) | - | ROUTINE | ROUTINE | - | 5 mg BID (breakfast and lunch); avoid evening dosing | Same as rasagiline | Insomnia, orthostatic hypotension |
-| Selegiline ODT (Zelapar) | - | ROUTINE | ROUTINE | - | 1.25-2.5 mg daily (buccal absorption) | Same | Same |
-| Safinamide (Xadago) | - | - | ROUTINE | - | 50-100 mg daily; adjunct to levodopa | Same; severe hepatic impairment, retinal disease | Dyskinesia, falls |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Rasagiline (Azilect) | - | - | 0.5-1 mg :: - :: daily :: 0.5-1 mg daily; may use as monotherapy early PD or adjunct | MAOIs, meperidine, tramadol, methadone, cyclobenzaprine | Serotonin syndrome; insomnia if taken late | - | ROUTINE | ROUTINE | - |
+| Selegiline (Eldepryl) | PO | - | 5 mg :: PO :: BID :: 5 mg BID (breakfast and lunch); avoid evening dosing | Same as rasagiline | Insomnia, orthostatic hypotension | - | ROUTINE | ROUTINE | - |
+| Selegiline ODT (Zelapar) | - | - | 1.25-2.5 mg :: - :: daily :: 1.25-2.5 mg daily (buccal absorption) | Same | Same | - | ROUTINE | ROUTINE | - |
+| Safinamide (Xadago) | PO | - | 50-100 mg :: PO :: daily :: 50-100 mg daily; adjunct to levodopa | Same; severe hepatic impairment, retinal disease | Dyskinesia, falls | - | - | ROUTINE | - |
 
 ### 3D. COMT Inhibitors (Adjunct to Levodopa)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Entacapone (Comtan) | - | ROUTINE | ROUTINE | - | 200 mg with each levodopa dose; max 8 doses/day | None absolute | Orange urine, diarrhea, dyskinesia |
-| Carbidopa/Levodopa/Entacapone (Stalevo) | - | ROUTINE | ROUTINE | - | Various strengths; replace existing C/L with equivalent | Same | Same |
-| Opicapone (Ongentys) | - | - | ROUTINE | - | 50 mg daily at bedtime; separate from levodopa by 1 hour | None absolute | Dyskinesia, constipation |
-| Tolcapone (Tasmar) | - | - | EXT | - | 100-200 mg TID; rarely used due to hepatotoxicity | Hepatic disease | LFTs q2-4 weeks x6mo, then periodically |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Entacapone (Comtan) | PO | - | 200 mg :: PO :: - :: 200 mg with each levodopa dose; max 8 doses/day | - | None absolute | Orange urine, diarrhea, dyskinesia | - | ROUTINE | ROUTINE | - |
+| Carbidopa/Levodopa/Entacapone (Stalevo) | - | - | Various strengths; replace existing C/L with equivalent | - | Same | Same | - | ROUTINE | ROUTINE | - |
+| Opicapone (Ongentys) | PO | - | 50 mg :: PO :: daily :: 50 mg daily at bedtime; separate from levodopa by 1 hour | - | None absolute | Dyskinesia, constipation | - | - | ROUTINE | - |
+| Tolcapone (Tasmar) | - | - | 100-200 mg :: - :: TID :: 100-200 mg TID; rarely used due to hepatotoxicity | - | Hepatic disease | LFTs q2-4 weeks x6mo, then periodically | - | - | EXT | - |
 
 ### 3E. Anticholinergics (Tremor-predominant, Younger Patients)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Trihexyphenidyl (Artane) | - | ROUTINE | ROUTINE | - | Start 1 mg daily; titrate to 2 mg TID; max 15 mg/day | Glaucoma, urinary retention, cognitive impairment, age >65 | Confusion, urinary retention, dry mouth |
-| Benztropine (Cogentin) | - | ROUTINE | ROUTINE | - | Start 0.5 mg daily; titrate to 1-2 mg BID; max 6 mg/day | Same | Same |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Trihexyphenidyl (Artane) | PO | - | 1 mg :: PO :: daily :: Start 1 mg daily; titrate to 2 mg TID; max 15 mg/day | Glaucoma, urinary retention, cognitive impairment, age >65 | Confusion, urinary retention, dry mouth | - | ROUTINE | ROUTINE | - |
+| Benztropine (Cogentin) | PO | - | 0.5 mg :: PO :: daily :: Start 0.5 mg daily; titrate to 1-2 mg BID; max 6 mg/day | Same | Same | - | ROUTINE | ROUTINE | - |
 
 ### 3F. Amantadine
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Amantadine IR | - | ROUTINE | ROUTINE | - | 100 mg BID-TID; avoid evening dosing | Renal impairment (reduce dose), seizures | Livedo reticularis, edema, hallucinations, insomnia |
-| Amantadine ER (Gocovri) | - | - | ROUTINE | - | 137-274 mg at bedtime; for dyskinesia | Same | Same |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Amantadine IR | PO | - | 100 mg :: PO :: BID :: 100 mg BID-TID; avoid evening dosing | Renal impairment (reduce dose), seizures | Livedo reticularis, edema, hallucinations, insomnia | - | ROUTINE | ROUTINE | - |
+| Amantadine ER (Gocovri) | PO | - | 137-274 mg :: PO :: - :: 137-274 mg at bedtime; for dyskinesia | Same | Same | - | - | ROUTINE | - |
 
 ### 3G. Non-Motor Symptom Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Rivastigmine (cognitive) | - | - | ROUTINE | - | Patch 4.6-13.3 mg/24h; for PD dementia | GI bleeding, bradycardia | Nausea, bradycardia |
-| Quetiapine (psychosis) | - | ROUTINE | ROUTINE | - | 12.5-100 mg QHS; does not worsen parkinsonism | Metabolic syndrome | Sedation, glucose, QTc |
-| Pimavanserin (Nuplazid) | - | - | ROUTINE | - | 34 mg daily; for PD psychosis | QTc prolongation | QTc monitoring |
-| Droxidopa (orthostatic hypotension) | - | ROUTINE | ROUTINE | - | Start 100 mg TID; max 600 mg TID | Supine HTN | BP supine and standing |
-| Fludrocortisone (orthostatic hypotension) | - | ROUTINE | ROUTINE | - | 0.1-0.2 mg daily | Heart failure, HTN | K+, edema, supine BP |
-| Polyethylene glycol (constipation) | - | ROUTINE | ROUTINE | - | 17 g daily in water | Bowel obstruction | Bowel movements |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Rivastigmine (cognitive) | PO | - | 4.6-13.3 mg :: PO :: - :: Patch 4.6-13.3 mg/24h; for PD dementia | GI bleeding, bradycardia | Nausea, bradycardia | - | - | ROUTINE | - |
+| Quetiapine (psychosis) | - | - | 12.5-100 mg :: - :: QHS :: 12.5-100 mg QHS; does not worsen parkinsonism | Metabolic syndrome | Sedation, glucose, QTc | - | ROUTINE | ROUTINE | - |
+| Pimavanserin (Nuplazid) | PO | - | 34 mg :: PO :: daily :: 34 mg daily; for PD psychosis | QTc prolongation | QTc monitoring | - | - | ROUTINE | - |
+| Droxidopa (orthostatic hypotension) | - | - | 100 mg :: PO :: TID :: Start 100 mg TID; max 600 mg TID | Supine HTN | BP supine and standing | - | ROUTINE | ROUTINE | - |
+| Fludrocortisone (orthostatic hypotension) | - | - | 0.1-0.2 mg :: PO :: daily :: 0.1-0.2 mg daily | Heart failure, HTN | K+, edema, supine BP | - | ROUTINE | ROUTINE | - |
+| Polyethylene glycol (constipation) | PO | - | 17 g :: PO :: daily :: 17 g daily in water | Bowel obstruction | Bowel movements | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -260,7 +267,7 @@
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| MDS Clinical Diagnostic Criteria for PD | Class I | Postuma et al., Mov Disord 2015 |
+| MDS Clinical Diagnostic Criteria for PD | Class I | [Postuma et al., Mov Disord 2015](https://pubmed.ncbi.nlm.nih.gov/26474316/) |
 | Levodopa most effective symptomatic therapy | Class I, Level A | Cochrane Reviews |
 | Dopamine agonists monotherapy early PD | Class I, Level A | Multiple RCTs |
 | MAO-B inhibitors mild symptomatic benefit | Class I, Level A | ADAGIO, TEMPO trials |

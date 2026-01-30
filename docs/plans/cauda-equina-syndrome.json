@@ -1,0 +1,1259 @@
+{
+  "id": "cauda-equina-syndrome",
+  "title": "Cauda Equina Syndrome",
+  "version": "1.0",
+  "icd10": [
+    "** G83.4 (Cauda equina syndrome)",
+    "M48.06 (Spinal stenosis",
+    "lumbar region)",
+    "M51.16 (Intervertebral disc disorders with radiculopathy",
+    "lumbar region)",
+    "M51.17 (Intervertebral disc disorders with radiculopathy",
+    "lumbosacral region)",
+    "G95.89 (Other specified diseases of spinal cord)"
+  ],
+  "scope": "** Emergency evaluation and management of cauda equina syndrome in adults. Covers urgent recognition of incomplete vs. complete CES, emergent MRI, surgical decompression timing, etiologic workup (disc herniation, tumor, abscess, hematoma), bladder management, and functional prognostication. Excludes conus medullaris syndrome (partially overlaps — key distinguishing features addressed), malignant epidural spinal cord compression above the conus (separate template), and chronic lumbar stenosis without CES features.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Infection (epidural abscess); baseline for surgery; leukocytosis; anemia assessment",
+          "target": "Normal; leukocytosis → consider abscess; thrombocytopenia affects surgical candidacy"
+        },
+        {
+          "item": "CMP (BMP + LFTs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Electrolytes; renal function (contrast, NSAIDs); glucose; hepatic function (anesthetic risk)",
+          "target": "Normal"
+        },
+        {
+          "item": "PT/INR, aPTT",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy; anticoagulation status; surgical clearance; epidural hematoma etiology",
+          "target": "Normal; INR <1.5 for surgery; prolonged → consider epidural hematoma"
+        },
+        {
+          "item": "ESR / CRP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Epidural abscess differential (ESR >20 mm/hr: 94% sensitivity for spinal abscess); discitis; malignancy",
+          "target": "Normal; markedly elevated (ESR >30-50, CRP >10) → strongly consider abscess or infection"
+        },
+        {
+          "item": "Blood cultures (x2 sets)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Epidural abscess; bacteremia; source identification if infectious etiology suspected",
+          "target": "Negative; positive → epidural abscess or hematogenous source"
+        },
+        {
+          "item": "Blood glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Baseline; anesthetic risk; diabetic patients at increased disc herniation and infection risk",
+          "target": "<180 mg/dL"
+        },
+        {
+          "item": "Type and screen",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Surgical candidacy; blood product availability for emergency decompression",
+          "target": "On file"
+        },
+        {
+          "item": "Urinalysis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "UTI (common comorbidity and mimicker of urinary symptoms); neurogenic bladder assessment; baseline",
+          "target": "Normal; UTI may coexist — treat but do NOT attribute bladder dysfunction solely to UTI if CES features present"
+        },
+        {
+          "item": "Pregnancy test (β-hCG)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "MRI and anesthetic planning; pregnancy may exacerbate disc herniation (increased lordosis/weight)",
+          "target": "Negative; if positive → MRI still indicated (no gadolinium needed for CES diagnosis)"
+        },
+        {
+          "item": "Procalcitonin",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Bacterial infection differential (more specific than CRP); if abscess suspected",
+          "target": "<0.25 (low bacterial probability); >0.5 → consider abscess"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "HbA1c",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes assessment (risk factor for disc herniation, infection, neuropathy); post-operative wound healing",
+          "target": "<7.0%"
+        },
+        {
+          "item": "Tumor markers (PSA, CEA, etc.)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If imaging suggests neoplastic etiology rather than disc herniation",
+          "target": "Normal; elevated → guides oncologic workup"
+        },
+        {
+          "item": "SPEP / free light chains",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Multiple myeloma presenting as cauda equina compression",
+          "target": "No M-protein; normal kappa/lambda ratio"
+        },
+        {
+          "item": "LDH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lymphoma; tumor burden",
+          "target": "Normal; elevated → lymphoma, aggressive malignancy"
+        },
+        {
+          "item": "HIV",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Immunocompromised → infection risk; primary CNS lymphoma differential",
+          "target": "Negative"
+        },
+        {
+          "item": "Urine culture",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Pre-existing UTI; post-catheterization planning; differentiate neurogenic bladder from UTI",
+          "target": "Negative; if positive → treat but continue CES workup"
+        },
+        {
+          "item": "Post-void residual (PVR) — bladder scan",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "KEY DIAGNOSTIC TEST: bladder retention is hallmark of CES; PVR >200 mL is highly concerning; >500 mL strongly suggestive of neurogenic retention",
+          "target": "PVR <100 mL (normal); PVR >200 mL → significant retention; >500 mL → almost certainly neurogenic"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CSF analysis (only at surgery or LP if needed)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If inflammatory/infectious etiology suspected (GBS affecting cauda equina = rare); leptomeningeal carcinomatosis",
+          "target": "Normal; elevated protein → GBS, tumor; malignant cells → leptomeningeal disease"
+        },
+        {
+          "item": "Paraneoplastic antibody panel",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Atypical CES without structural cause; paraneoplastic cauda equina neuritis (anti-CRMP5/CV2, anti-amphiphysin)",
+          "target": "Negative; positive → paraneoplastic syndrome"
+        },
+        {
+          "item": "Anti-ganglioside antibodies (GM1, GD1b, GQ1b)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "GBS variant affecting cauda equina roots (rare); if imaging shows nerve root enhancement without structural compression",
+          "target": "Negative; positive → GBS/CIDP affecting cauda equina"
+        },
+        {
+          "item": "AQP4-IgG / MOG-IgG",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If conus medullaris lesion rather than cauda equina compression; NMOSD can affect conus",
+          "target": "Negative; positive → NMOSD/MOGAD"
+        },
+        {
+          "item": "Sarcoidosis workup (ACE, chest CT, lysozyme)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Neurosarcoidosis affecting cauda equina (nerve root inflammation/enhancement without structural lesion); elevated ACE",
+          "target": "Normal ACE; chest CT: no hilar lymphadenopathy; if positive → neurosarcoidosis"
+        },
+        {
+          "item": "EMG/NCS",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Chronic or atypical CES; differentiate from peripheral neuropathy, plexopathy; establish nerve root involvement pattern; prognostic (denervation = poor recovery)",
+          "target": "Abnormal: acute denervation (fibrillations, positive sharp waves) in L4-S4 myotomes bilaterally; absent H-reflex bilaterally; abnormal pudendal nerve conduction"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "LP — Generally NOT indicated acutely",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "LP is NOT required for diagnosis of typical CES (disc herniation, tumor, abscess seen on MRI); ONLY if inflammatory/infectious etiology without clear structural cause; OR CT myelogram if MRI impossible",
+          "target": "CSF protein elevation (GBS, tumor); pleocytosis (infection, inflammation); malignant cells (leptomeningeal disease); albuminocytologic dissociation (GBS)",
+          "contraindications": "Do NOT perform LP if large disc herniation compressing cauda equina (could theoretically worsen by altering pressure dynamics — proceed to surgery instead); coagulopathy; abscess at LP site"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI lumbar spine without contrast (emergent)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "**Within 4 hours of ED arrival — SURGICAL EMERGENCY; ideally within 1 hour**; extends to thoracolumbar junction (T10-sacrum) to include conus medullaris",
+          "target": "Large disc herniation (most common — 45% of CES cases) compressing cauda equina; canal compromise; level of compression; number of roots compressed; disc fragment migration; tumor, abscess, or hematoma as alternative cause; conus medullaris location and signal",
+          "contraindications": "MRI-incompatible implants; severe claustrophobia (sedate — do NOT delay MRI for anxiety); GFR <30 for contrast (but contrast NOT required for disc herniation diagnosis — obtain non-contrast first)"
+        },
+        {
+          "item": "MRI lumbar spine WITH contrast (gadolinium)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Add contrast if: suspected abscess, tumor, or inflammatory etiology; ring-enhancing epidural collection = abscess; homogeneous enhancement = tumor; nerve root enhancement = inflammatory/neoplastic",
+          "target": "Epidural abscess (ring enhancement, restricted diffusion); tumor (enhancing mass); nerve root enhancement (inflammatory, leptomeningeal disease); distinguish from disc herniation (which does NOT enhance)",
+          "contraindications": "GFR <30 (gadolinium risk — benefit outweighs risk in emergency); gadolinium allergy (premedicate)"
+        },
+        {
+          "item": "Bladder scan (post-void residual)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "**Before MRI if possible — critical triage tool**; have patient attempt to void → immediate bladder ultrasound for PVR",
+          "target": "PVR >200 mL = significant retention → HIGH probability of CES; PVR >500 mL = almost certain neurogenic retention; normal PVR does NOT exclude early/incomplete CES",
+          "contraindications": "None (bedside ultrasound)"
+        },
+        {
+          "item": "Plain radiographs (lumbar spine AP/lateral)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "While awaiting MRI; identifies vertebral collapse, spondylolisthesis, fracture, alignment; limited value but rapid triage tool",
+          "target": "Disc space narrowing; spondylolisthesis; fracture; alignment abnormality; NOTE: X-rays CANNOT diagnose disc herniation — MRI is required",
+          "contraindications": "Pregnancy (shield abdomen)"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "CT lumbar spine without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If MRI not available or contraindicated; inferior to MRI for soft tissue but shows bone and canal narrowing; CT myelogram if MRI impossible",
+          "target": "Disc herniation (seen as soft tissue density in canal); bone fragments; canal diameter; fracture; spondylolisthesis",
+          "contraindications": "CT alone has limited sensitivity for disc herniation vs. MRI; myelogram adds invasive risk"
+        },
+        {
+          "item": "CT myelogram",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If MRI absolutely contraindicated (implant); intrathecal contrast via LP → CT; demonstrates level of block and root compression",
+          "target": "Complete or partial block; compressed cauda equina roots; level and extent of compression; may miss small free fragments",
+          "contraindications": "LP contraindicated if abscess suspected at LP site; coagulopathy; rare but important if MRI impossible"
+        },
+        {
+          "item": "MRI whole spine",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If etiology unclear; evaluate for additional levels of disease; concurrent cord compression; tumor staging; multilevel disc disease",
+          "target": "Additional sites of compression; intramedullary lesion (conus); multifocal disease",
+          "contraindications": "Same as lumbar MRI"
+        },
+        {
+          "item": "Urodynamic studies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Post-acute phase; quantify bladder dysfunction; detrusor areflexia (CES pattern); plan long-term bladder management",
+          "target": "Detrusor areflexia (areflexic bladder) = cauda equina denervation; decreased bladder sensation; increased capacity; poor emptying",
+          "contraindications": "Acute UTI; recent surgery (timing per surgeon)"
+        },
+        {
+          "item": "Anal manometry / pudendal nerve testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Quantify sphincter dysfunction; prognostic for recovery; pudendal nerve conduction",
+          "target": "Reduced anal sphincter pressures; denervated pudendal nerve",
+          "contraindications": "Patient tolerance; acute phase may not be appropriate"
+        },
+        {
+          "item": "EMG/NCS (lower extremities + paraspinal)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "2-3 weeks post-onset (acute denervation takes 2-3 weeks to appear on EMG); prognosis; differentiate from peripheral neuropathy or plexopathy",
+          "target": "Bilateral L4-S4 denervation; reduced CMAP amplitudes in bilateral L5/S1 distribution; absent H-reflexes bilaterally; bilateral pudendal neuropathy",
+          "contraindications": "Too early in acute phase (<2 weeks = may be false negative for denervation); patient tolerance"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CT angiography (lumbar)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "timing": "If vascular malformation suspected (spinal dural AV fistula causing venous hypertension → CES symptoms); progressive myelopathy/CES with dilated serpiginous vessels on MRI",
+          "target": "Spinal AV fistula; AVM; arteriovenous malformation feeding vessels",
+          "contraindications": "Contrast allergy; renal impairment"
+        },
+        {
+          "item": "Spinal angiography",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Definitive diagnosis and treatment of spinal dural AV fistula; also pre-operative embolization for vascular tumors",
+          "target": "Fistula location; endovascular treatment candidate",
+          "contraindications": "Invasive; contrast risk; radiation exposure"
+        },
+        {
+          "item": "PET/CT",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If malignancy causing CES — staging; unknown primary identification",
+          "target": "Primary tumor; metastatic burden",
+          "contraindications": "Uncontrolled diabetes; pregnancy"
+        },
+        {
+          "item": "Cystometrogram",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Formal bladder function assessment; post-decompression recovery monitoring; long-term bladder management planning",
+          "target": "Bladder compliance; detrusor function; capacity; sensation thresholds",
+          "contraindications": "Active UTI"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent Treatment": [
+        {
+          "item": "**Emergent surgical decompression**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**THIS IS A SURGICAL EMERGENCY — TIME IS NERVE**; Emergent neurosurgery/spine surgery consultation; posterior lumbar laminectomy with discectomy (most common procedure); **Timing:** Within 24h of symptom onset — ideally within 24h but outcome improves the sooner surgery is performed; <24h clearly better than >48h; some evidence supports <12h for best outcomes; **Complete CES (CES-R with retention):** Truly emergent — surgery as soon as possible (within hours); **Incomplete CES (CES-I):** Urgent — surgery within 24h; risk of progressing to complete",
+            "orderSentence": "**Emergent surgical decompression** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Ahn et al. (2000): Decompression <48h = significantly better outcomes for bladder recovery (70% vs. 30%); Todd (2005) meta-analysis: Earlier surgery = better outcomes, but exact time threshold debated; DeBois et al. (2019): <24h optimal, <48h acceptable; Srikandarajah et al. (2020): Urgent surgery (<24h) associated with better functional outcomes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Bladder management**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mL",
+                "orderSentence": "**Bladder management** 200 mL -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Bladder scan (PVR) STAT on arrival** — do NOT wait for MRI; if PVR >200 mL → Foley catheter placement; if PVR >500 mL → Foley + strict I&O monitoring; avoid overdistension (>600 mL causes detrusor damage — may become irreversible); document voiding pattern; post-operative: trial of void at 24-48h with PVR checks; CIC (clean intermittent catheterization) teaching if retention persists",
+            "orderSentence": "**Bladder management** 200 mL -"
+          },
+          "contraindications": "-",
+          "monitoring": "Bladder overdistension causes detrusor muscle damage → irreversible areflexic bladder; early catheterization prevents secondary damage; bladder recovery is the MOST SENSITIVE indicator of CES recovery and the MOST COMMON persistent deficit",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Pain management**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "**Pain management** 650-1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Back pain and radicular pain often severe; acetaminophen 650-1000 mg q6h (scheduled) + opioids (morphine 2-4 mg IV q3h PRN or hydromorphone 0.5-1 mg IV q3h PRN); NSAIDs: ketorolac 15-30 mg IV q6h (short-term, if no surgical contraindication and normal renal function — pre-op use is surgeon-dependent); neuropathic: gabapentin 300 mg TID (start if radicular pain prominent); avoid excessive sedation that obscures neurologic exam",
+            "orderSentence": "**Pain management** 650-1000 mg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Adequate analgesia essential for patient assessment and MRI tolerance; balance with need for neurologic monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Dexamethasone (if tumor or abscess)**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "**Dexamethasone (if tumor or abscess)** 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**Disc herniation CES:** Steroids NOT routinely indicated (no evidence of benefit; some centers use short course); **Tumor-related CES:** Dexamethasone 10 mg IV bolus → 4 mg q6h (same as MSCC protocol); **Abscess-related CES:** Dexamethasone controversial (may impair immune response) — use only if severe edema with rapid neurologic decline",
+            "orderSentence": "**Dexamethasone (if tumor or abscess)** 10 mg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "No RCT evidence supporting steroids for disc-related CES; tumor CES: Sorensen et al. (1994) supports steroids; abscess: prioritize antibiotics + surgical drainage",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Antibiotics (if abscess suspected)**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-30 mg/kg",
+                "orderSentence": "**Antibiotics (if abscess suspected)** 25-30 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**Epidural abscess causing CES:** Empiric: Vancomycin 25-30 mg/kg IV load + ceftriaxone 2g IV q12h (or cefepime 2g IV q8h); adjust to culture/sensitivity; MRSA coverage essential; **Duration:** Typically 6-8 weeks IV antibiotics for epidural abscess; **Timing:** Start AFTER blood cultures drawn but do NOT delay if patient is deteriorating",
+            "orderSentence": "**Antibiotics (if abscess suspected)** 25-30 mg/kg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "S. aureus (including MRSA) is most common organism in epidural abscess (60-70%); gram-negative coverage for UTI/abdominal source; streptococci, anaerobes less common",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**DVT prophylaxis**",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "**DVT prophylaxis** 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "SCDs immediately; pharmacologic prophylaxis: enoxaparin 40 mg SQ daily starting post-operatively (typically 12-24h after surgery per surgeon protocol); immobile CES patients at high VTE risk",
+            "orderSentence": "**DVT prophylaxis** 40 mg SC"
+          },
+          "contraindications": "-",
+          "monitoring": "Immobility + lower extremity weakness = high DVT risk; mechanical prophylaxis pre-operatively; early pharmacologic prophylaxis post-operatively",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Bowel management**",
+          "route": "PR",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "**Bowel management** 100 mg PR"
+              }
+            ],
+            "route": "PR",
+            "instructions": "Assess rectal tone (digital rectal exam — absent/reduced in CES); bowel regimen: docusate 100 mg BID + senna 2 tabs HS; bisacodyl suppository daily if no BM in 48h; monitor for fecal incontinence vs. constipation (both occur in CES); opioid-related constipation compounds the issue",
+            "orderSentence": "**Bowel management** 100 mg PR"
+          },
+          "contraindications": "-",
+          "monitoring": "Bowel dysfunction common in CES; S2-S4 denervation affects external anal sphincter and rectal sensation; proactive management prevents complications",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Definitive/Targeted Treatment": [
+        {
+          "item": "**Lumbar laminectomy + discectomy (disc herniation CES)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**Most common surgery:** Posterior approach; laminectomy at affected level(s); remove herniated disc fragment; decompress cauda equina; **Approach:** Midline; may require bilateral laminotomy or hemi-laminectomy for lateralized discs; large central herniations often require bilateral approach; **Key:** Ensure COMPLETE decompression — incomplete decompression leads to persistent deficit; intraoperative confirmation with direct visualization of free cauda equina nerve roots",
+            "orderSentence": "**Lumbar laminectomy + discectomy (disc herniation CES)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Gold standard for disc-related CES; no RCT comparing surgery vs. non-operative (would be unethical to randomize given natural history); observational data uniformly supports early surgical decompression",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Microdiscectomy (if technically appropriate)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Minimally invasive approach; appropriate for contained disc herniations without significant canal stenosis; faster recovery; less tissue disruption; may not provide adequate decompression for massive central disc herniation",
+            "orderSentence": "**Microdiscectomy (if technically appropriate)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Smaller incision, less muscle disruption; but surgeon must ensure adequate decompression — do NOT compromise canal visualization for a smaller incision in CES",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Surgical drainage + decompression (epidural abscess)**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Posterior approach; laminectomy; drain abscess; culture material; irrigate; leave wound open or with drain; may require multi-level decompression; **Combined with:** IV antibiotics 6-8 weeks; follow with serial MRI and inflammatory markers",
+            "orderSentence": "**Surgical drainage + decompression (epidural abscess)** - IV - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Epidural abscess with CES = surgical emergency; medical management alone (antibiotics without surgery) only if: no neurologic deficit AND very high surgical risk; most CES presentations require surgery",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Tumor resection + decompression**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "If tumor-related CES (e.g., schwannoma, ependymoma, metastasis); posterior decompression ± en bloc or piecemeal tumor resection; send pathology; may need subsequent radiation/chemotherapy",
+            "orderSentence": "**Tumor resection + decompression** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Intradural-extramedullary tumors (schwannoma, meningioma, myxopapillary ependymoma) are potentially curable with complete resection; metastatic CES → decompression + radiation",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Hematoma evacuation**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Epidural hematoma causing CES (spontaneous on anticoagulation, post-procedural, or post-traumatic); emergent laminectomy with hematoma evacuation; reverse anticoagulation STAT",
+            "orderSentence": "**Hematoma evacuation** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Spontaneous spinal epidural hematoma: Groen & Ponssen (1990): better outcomes with surgery <12h of onset; anticoagulation reversal essential (4F-PCC for warfarin, idarucizumab for dabigatran, andexanet for Xa inhibitors)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Non-operative management (rare, selected cases)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**ONLY appropriate if:** (1) Imaging does NOT show significant structural compression, (2) Symptoms are improving spontaneously, (3) Patient refuses surgery (document informed refusal thoroughly), (4) Medically inoperable (extremely high surgical risk); **Requires:** Close monitoring with serial neuro exams q2-4h; repeat MRI if worsening; immediate surgery if any progression",
+            "orderSentence": "**Non-operative management (rare, selected cases)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Non-operative management is NOT standard of care for CES with structural compression; delayed surgery has worse outcomes; informed consent must document risks of non-operative management (permanent bladder/bowel/sexual dysfunction, progressive weakness)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Adjunctive Treatment": [
+        {
+          "item": "**Clean intermittent catheterization (CIC) training**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mL",
+                "orderSentence": "**Clean intermittent catheterization (CIC) training** 100 mL -"
+              }
+            ],
+            "route": "-",
+            "instructions": "If bladder function does not recover by 48-72h post-surgery; teach patient CIC q4-6h; target PVR <100 mL before discontinuing CIC; may take weeks to months to recover",
+            "orderSentence": "**Clean intermittent catheterization (CIC) training** 100 mL -"
+          },
+          "contraindications": "-",
+          "monitoring": "CIC is preferred over indwelling Foley for long-term bladder management (lower UTI risk); most patients can learn self-catheterization; bladder recovery may take 6-12 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Neuropathic pain management**",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "**Neuropathic pain management** 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Gabapentin 300 mg PO TID → titrate to 600-900 mg TID over 1-2 weeks; OR pregabalin 75 mg BID → 150-300 mg BID; duloxetine 30 mg daily → 60 mg daily; amitriptyline 10-25 mg HS (caution: urinary retention may worsen); topical lidocaine 5% patches for localized radicular pain",
+            "orderSentence": "**Neuropathic pain management** 300 mg PO"
+          },
+          "contraindications": "-",
+          "monitoring": "Neuropathic pain (burning, tingling, electric shocks in perineum, legs) is common and debilitating after CES; may persist chronically; multimodal approach needed",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Physical therapy / rehabilitation**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "PT evaluation within 24h post-operatively; early mobilization; lower extremity strengthening; gait training; core stabilization; progressive activity as tolerated; pelvic floor PT for bladder/bowel recovery",
+            "orderSentence": "**Physical therapy / rehabilitation** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Early rehabilitation improves functional outcomes; pelvic floor rehabilitation is evidence-based for bladder/bowel recovery after CES",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Occupational therapy**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "ADL assessment; adaptive equipment; if lower extremity weakness impairs function; bathroom modifications; return-to-work planning",
+            "orderSentence": "**Occupational therapy** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Functional independence optimization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Pelvic floor rehabilitation**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Specialized pelvic floor PT; biofeedback for bladder and bowel retraining; Kegel exercises (if able); electrical stimulation of pelvic floor; sacral neuromodulation evaluation if persistent dysfunction >12 months",
+            "orderSentence": "**Pelvic floor rehabilitation** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Evidence supports pelvic floor PT for bladder and bowel recovery after CES; biofeedback improves outcomes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Psychological support**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "CES has devastating psychosocial impact (sexual dysfunction, incontinence, chronic pain, disability in often-young patients); depression screening (PHQ-9); anxiety screening; sexual health counseling; support groups; consider psychiatry referral",
+            "orderSentence": "**Psychological support** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Depression affects 30-60% of CES patients long-term; sexual dysfunction is profoundly distressing; early psychological intervention improves coping and recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Stool softener / bowel program**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "**Stool softener / bowel program** 100 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Docusate 100 mg BID + senna 2 tabs HS; bisacodyl suppository PRN; digital stimulation for areflexic bowel; timed bowel program; fiber supplementation; adequate hydration",
+            "orderSentence": "**Stool softener / bowel program** 100 mg -"
+          },
+          "contraindications": "-",
+          "monitoring": "Neurogenic bowel management reduces complications (impaction, incontinence); establish routine bowel program early",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Medications to AVOID or Use with Caution": [
+        {
+          "item": "Anticholinergics (oxybutynin, tolterodine — for urgency)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Anticholinergics (oxybutynin, tolterodine — for urgency) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Tricyclic antidepressants (amitriptyline, nortriptyline)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Tricyclic antidepressants (amitriptyline, nortriptyline) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Alpha-blockers (tamsulosin, silodosin) — without urologic guidance",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Alpha-blockers (tamsulosin, silodosin) — without urologic guidance - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "NSAIDs (prolonged, peri-operative)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "NSAIDs (prolonged, peri-operative) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Epidural steroid injection (as treatment for CES)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Epidural steroid injection (as treatment for CES) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Chiropractic manipulation (lumbar)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Chiropractic manipulation (lumbar) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Excessive IV fluids (post-operatively)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Excessive IV fluids (post-operatively) - IV - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurosurgery / Spine surgery consultation — EMERGENCY",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Post-void residual (bladder scan)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Digital rectal examination",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Comprehensive neurologic exam documentation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Classify CES subtype",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Informed consent for surgery",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Transfer to surgical center (if no spine surgeon)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Urology consultation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PM&R / Rehabilitation consultation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management consultation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sexual health counseling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Colorectal surgery / GI consultation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work / case management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Medicolegal documentation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Revision surgery",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sacral neuromodulation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Intrathecal baclofen pump",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Chronic pain management program",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatric referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Legal documentation review",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Diagnosis",
+      "features": "Key Differentiating Features",
+      "tests": "Distinguishing Studies"
+    },
+    {
+      "diagnosis": "Conus medullaris syndrome",
+      "features": "Upper motor neuron AND lower motor neuron signs; bilateral and symmetric; early bladder/bowel dysfunction; back pain less prominent than radicular pain; reflexes may be hyperactive (UMN) or absent (LMN); typically at T12-L2 level; more symmetric than CES",
+      "tests": "MRI: lesion at T12-L2 level (conus); cord signal change (T2 hyperintensity); CES lesion is below L1-L2 (cauda equina roots only); conus lesion → Babinski may be present (CES → absent or flexor)"
+    },
+    {
+      "diagnosis": "Lumbar spinal stenosis (without CES)",
+      "features": "Neurogenic claudication (walking-induced symptoms relieved by sitting/flexion); chronic progressive course; bilateral leg pain/weakness with walking; no bladder/bowel dysfunction (unless severe CES from stenosis); intermittent symptoms",
+      "tests": "MRI: multilevel stenosis; trefoil canal shape; ligamentum flavum hypertrophy; NO acute disc herniation; symptoms are exercise-induced, not constant; PVR normal"
+    },
+    {
+      "diagnosis": "Acute disc herniation (without CES)",
+      "features": "Unilateral radiculopathy; no bilateral symptoms; no saddle anesthesia; no bladder/bowel dysfunction; straight leg raise positive; single dermatomal pattern",
+      "tests": "MRI: lateral or posterolateral disc herniation compressing single root; NO cauda equina compression; normal PVR; normal rectal tone"
+    },
+    {
+      "diagnosis": "Epidural abscess",
+      "features": "Fever (50-66%); IVDU, immunocompromised, recent procedure; rapidly progressive; ESR >20 (94% sensitivity); severe spinal tenderness; leukocytosis; can cause CES if lumbar location",
+      "tests": "MRI: ring-enhancing epidural collection with restricted diffusion; blood cultures positive (60%); ESR/CRP markedly elevated; clinical triad: back pain → radiculopathy → weakness (classic but only 10-15% present with full triad)"
+    },
+    {
+      "diagnosis": "Epidural hematoma",
+      "features": "Acute onset; anticoagulation or post-procedural (epidural injection, spinal surgery, LP); severe back pain → rapid progressive weakness; coagulopathy history",
+      "tests": "MRI: epidural collection with blood signal (T1 bright in subacute); coagulation studies abnormal; anticoagulation history; post-procedural temporal relationship"
+    },
+    {
+      "diagnosis": "Guillain-Barré syndrome (GBS)",
+      "features": "Ascending symmetric weakness; areflexia; post-infectious (Campylobacter, CMV, EBV); sensory symptoms but often mild; facial weakness may be present; no saddle anesthesia typically; CSF: albuminocytologic dissociation",
+      "tests": "MRI spine: may show nerve root enhancement BUT no structural compression; CSF: elevated protein, normal cells; NCS: demyelinating pattern or AMAN pattern; anti-ganglioside antibodies"
+    },
+    {
+      "diagnosis": "Peripheral neuropathy (bilateral)",
+      "features": "Chronic course; distal > proximal; length-dependent pattern; diabetes, alcohol; stocking-glove distribution; gradual onset; reflexes may be reduced distally; NO saddle anesthesia; NO acute bladder retention",
+      "tests": "EMG/NCS: diffuse length-dependent neuropathy; MRI: no structural compression; HbA1c; B12; SPEP; gradual course distinguishes from acute CES"
+    },
+    {
+      "diagnosis": "Lumbosacral plexopathy",
+      "features": "Unilateral (usually); painful; diabetic amyotrophy; radiation-induced; tumor infiltration; asymmetric weakness/sensory loss in lumbosacral plexus distribution; typically NO bladder dysfunction (unless bilateral)",
+      "tests": "MRI pelvis: plexus enhancement or mass; EMG: plexus distribution denervation; CT abdomen/pelvis: retroperitoneal mass; HbA1c; typically unilateral"
+    },
+    {
+      "diagnosis": "Functional neurological disorder (FND)",
+      "features": "Inconsistent exam findings; Hoover's sign positive; non-anatomical sensory pattern; normal imaging; normal PVR; no objective sphincter dysfunction; give-way weakness; history of psychological stressors",
+      "tests": "MRI: normal; PVR: normal; rectal tone: normal; neurophysiology: normal; psychiatric history; clinical inconsistency (e.g., inability to lift leg on command but normal gait observed); NOTE: FND is a diagnosis of exclusion in CES — always obtain MRI first"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Guideline",
+      "evidenceLevel": "Source",
+      "source": "Year"
+    },
+    {
+      "recommendation": "Cauda Equina Syndrome Standards of Care",
+      "evidenceLevel": "British Association of Spine Surgeons (BASS) / Society of British Neurological Surgeons (SBNS)",
+      "source": "2020"
+    },
+    {
+      "recommendation": "CES Emergency Pathway",
+      "evidenceLevel": "NICE / NHS England",
+      "source": "2018 (updated 2023)"
+    },
+    {
+      "recommendation": "AANS/CNS Guidelines on Lumbar Disc Herniation",
+      "evidenceLevel": "AANS/CNS Joint Section on Disorders of the Spine and Peripheral Nerves",
+      "source": "2014"
+    },
+    {
+      "recommendation": "Study",
+      "evidenceLevel": "Finding",
+      "source": "Impact"
+    },
+    {
+      "recommendation": "[Ahn et al. (2000)](https://pubmed.ncbi.nlm.nih.gov/10851100/)",
+      "evidenceLevel": "Systematic review: Decompression <48h of CES onset → 70% bladder recovery vs. 30% if >48h; motor outcomes also significantly better with early surgery",
+      "source": "Established 48h as important threshold; but sooner is always better"
+    },
+    {
+      "recommendation": "[Todd (2005)](https://pubmed.ncbi.nlm.nih.gov/16455534/) — Meta-analysis",
+      "evidenceLevel": "42 studies: Earlier decompression consistently associated with better outcomes across motor, bladder, and bowel domains; no clear cutoff but <24h is optimal",
+      "source": "Confirmed urgency of CES surgical decompression; surgical timing is KEY modifiable factor"
+    },
+    {
+      "recommendation": "Srikandarajah et al. (2020)",
+      "evidenceLevel": "UK Cohort: Urgent surgery (<24h) vs. delayed (>24h): better bladder outcomes (OR 2.1) and motor outcomes (OR 1.6) with urgent surgery",
+      "source": "Modern evidence supporting <24h surgical timing; NHS pathway development"
+    },
+    {
+      "recommendation": "DeBois et al. (2019)",
+      "evidenceLevel": "Timing analysis: <12h, 12-24h, 24-48h, >48h: progressive decline in outcomes with each delay interval; <12h had best bladder recovery",
+      "source": "Supports as-soon-as-possible approach; <12h may be ideal"
+    },
+    {
+      "recommendation": "[Gleave & Macfarlane (2002)](https://pubmed.ncbi.nlm.nih.gov/12389883/)",
+      "evidenceLevel": "CES-I vs. CES-R outcomes: CES-I (incomplete) with early surgery → 95% good bladder outcome; CES-R (retention) with early surgery → 53% good bladder outcome; CES-R with delayed surgery → 27% good outcome",
+      "source": "Established CES-I vs. CES-R classification; demonstrated that retention onset is critical prognostic marker"
+    },
+    {
+      "recommendation": "[Groen & Ponssen (1990)](https://pubmed.ncbi.nlm.nih.gov/2243224/)",
+      "evidenceLevel": "Spinal epidural hematoma: better outcomes with surgery <12h of onset; anticoagulation most common cause",
+      "source": "Established surgical urgency for hematoma-related CES"
+    },
+    {
+      "recommendation": "[Kostuik et al. (1986)](https://pubmed.ncbi.nlm.nih.gov/2936744/)",
+      "evidenceLevel": "Classic paper on CES natural history: untreated CES from disc herniation → permanent bladder dysfunction in >90%, persistent weakness in >70%, chronic pain in >80%",
+      "source": "Established that CES without surgical treatment leads to devastating permanent deficits"
+    },
+    {
+      "recommendation": "McCarthy et al. (2014)",
+      "evidenceLevel": "Medicolegal analysis: CES is the most litigated condition in spinal surgery; delayed diagnosis is the most common reason for successful claims; failure to perform timely MRI and delayed surgery are key factors",
+      "source": "Documentation of timeline is CRITICAL; standardized CES pathways reduce medicolegal risk"
+    },
+    {
+      "recommendation": "Subtype",
+      "evidenceLevel": "Definition",
+      "source": "Key Features"
+    },
+    {
+      "recommendation": "CES-Suspected (CES-S)",
+      "evidenceLevel": "Bilateral radiculopathy/symptoms WITHOUT bladder dysfunction",
+      "source": "Bilateral leg pain/weakness; bilateral sensory changes; NO urinary symptoms; normal PVR"
+    },
+    {
+      "recommendation": "CES-Incomplete (CES-I)",
+      "evidenceLevel": "Altered urinary function WITHOUT retention",
+      "source": "Difficulty initiating stream; reduced sensation of voiding; urgency; partial retention (PVR 200-500 mL); reduced but present perineal sensation; reduced anal tone"
+    },
+    {
+      "recommendation": "CES-Retention (CES-R)",
+      "evidenceLevel": "Painless urinary retention WITH overflow incontinence",
+      "source": "Painless retention (PVR >500 mL); overflow incontinence; absent perineal sensation; absent anal tone; often absent bulbocavernosus reflex"
+    },
+    {
+      "recommendation": "Component",
+      "evidenceLevel": "Bilateral L4",
+      "source": "Bilateral L5"
+    },
+    {
+      "recommendation": "Motor",
+      "evidenceLevel": "Knee extension (quad)",
+      "source": "Ankle dorsiflexion (TA), great toe extension (EHL), hip abduction"
+    },
+    {
+      "recommendation": "Sensory",
+      "evidenceLevel": "Medial leg/shin",
+      "source": "Lateral leg, dorsum of foot, first web space"
+    },
+    {
+      "recommendation": "Reflex",
+      "evidenceLevel": "Patellar (L3-L4)",
+      "source": "Tibialis posterior (L5 — inconsistent)"
+    },
+    {
+      "recommendation": "Function",
+      "evidenceLevel": "Walking, stairs",
+      "source": "Heel walking"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic examination (lower extremity strength, sensation, reflexes)",
+      "frequency": "q2-4h pre-operatively; q4h post-operatively x 48h",
+      "target": "Stable pre-op; improving post-op",
+      "action": "Pre-op worsening: escalate surgical urgency; post-op worsening: STAT MRI (hematoma, residual compression, re-herniation)"
+    },
+    {
+      "item": "Perianal/perineal sensation and rectal tone",
+      "frequency": "q4h (at minimum with each neuro check)",
+      "target": "Improving or stable",
+      "action": "Worsening: STAT MRI"
+    },
+    {
+      "item": "Bladder function / PVR",
+      "frequency": "Continuous monitoring via Foley with hourly I&O pre/post-op; Trial of void at 24-48h post-op with PVR check",
+      "target": "PVR <100 mL to discontinue catheter; voiding spontaneously",
+      "action": "PVR >200 mL after trial of void → replace Foley; begin CIC teaching; urology consult"
+    },
+    {
+      "item": "Pain assessment (NRS)",
+      "frequency": "q4h",
+      "target": "NRS <4/10",
+      "action": "Escalate analgesics; add neuropathic agents; new/worsening pain post-op → concern for hematoma/complication"
+    },
+    {
+      "item": "Wound assessment (post-operative)",
+      "frequency": "q8h",
+      "target": "No drainage, swelling, erythema, dehiscence",
+      "action": "Wound complication → surgical team notification; drain output monitoring"
+    },
+    {
+      "item": "Bowel function",
+      "frequency": "Daily",
+      "target": "BM within 48-72h post-op",
+      "action": "Bowel regimen intensification; abdominal X-ray if distended; rectal exam"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "q4h",
+      "target": "Afebrile",
+      "action": "Fever: wound infection, UTI (Foley-associated), DVT, abscess; cultures and imaging as indicated"
+    },
+    {
+      "item": "DVT screening",
+      "frequency": "Daily calf circumference; symptoms",
+      "target": "No DVT signs",
+      "action": "Bilateral lower extremity duplex US if symptoms; therapeutic anticoagulation if confirmed"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Level of Care",
+      "criteria": "Criteria"
+    },
+    {
+      "disposition": "ICU admission",
+      "criteria": "Post-operative monitoring (surgeon-dependent — many post-laminectomies go to floor); bilateral lower extremity paralysis with hemodynamic concerns; epidural abscess with sepsis; significant comorbidities affecting anesthetic recovery; autonomic dysfunction"
+    },
+    {
+      "disposition": "General neurosurgery/spine floor",
+      "criteria": "ALL CES patients require admission; pre-operative CES awaiting surgical decompression; post-operative monitoring; pain management; bladder/bowel monitoring; PT/OT initiation; epidural abscess requiring IV antibiotics"
+    },
+    {
+      "disposition": "Observation (NOT appropriate)",
+      "criteria": "CES is NEVER an observation diagnosis — all suspected CES patients require emergent MRI and admission for surgical evaluation; even if MRI is negative for structural compression, admission for monitoring is prudent if clinical suspicion is high"
+    }
+  ]
+}

@@ -1,0 +1,1292 @@
+{
+  "id": "epidural-abscess",
+  "title": "Spinal Epidural Abscess",
+  "version": "1.0",
+  "icd10": [
+    "** G06.1 (Intraspinal abscess and granuloma)",
+    "M46.40 (Discitis",
+    "unspecified site)",
+    "M46.46 (Discitis",
+    "lumbar region)",
+    "M46.47 (Discitis",
+    "lumbosacral region)",
+    "A41.9 (Sepsis",
+    "unspecified organism)"
+  ],
+  "scope": "** Emergency evaluation and management of spinal epidural abscess in adults. Covers the classic triad (back pain, fever, neurologic deficit), emergent MRI, surgical drainage vs. medical management decision-making, empiric and targeted antibiotic therapy, and neurologic monitoring. Includes associated vertebral osteomyelitis and discitis. Excludes brain abscess (separate template), subdural empyema, and post-operative wound infections (partially overlaps).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Blood cultures (x2 sets, before antibiotics)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "**CRITICAL: Positive in 60-70%**; identifies organism for targeted therapy; guides antibiotic duration; S. aureus most common (60-70%); draw from 2 separate sites",
+          "target": "Positive → organism identification; S. aureus (MRSA vs. MSSA) most common; also Streptococci, gram-negatives, anaerobes"
+        },
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Leukocytosis (WBC >12,000 in 60-80%); left shift; bandemia; baseline for monitoring; thrombocytopenia may indicate DIC/sepsis",
+          "target": "Leukocytosis (66%); normal WBC does NOT exclude SEA (20-40% have normal WBC); leukopenia concerning for overwhelming sepsis"
+        },
+        {
+          "item": "CMP (BMP + LFTs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal function (antibiotic dosing, contrast); electrolytes; hepatic function; glucose (diabetes is major risk factor)",
+          "target": "Normal or abnormal; elevated glucose → diabetes workup; renal dysfunction affects antibiotic choice"
+        },
+        {
+          "item": "ESR (erythrocyte sedimentation rate)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "**Highly sensitive (>94%)**; ESR >20 mm/hr in nearly all cases of SEA; ESR >30-50 typical; useful for monitoring treatment response",
+          "target": "ESR >20 mm/hr (sensitivity 94%); mean ESR is typically 50-80 mm/hr; if normal → SEA very unlikely"
+        },
+        {
+          "item": "CRP (C-reactive protein)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Elevated in >90% of SEA; more responsive to treatment changes than ESR; useful for monitoring",
+          "target": "Elevated (typically >10 mg/dL); declines faster than ESR with successful treatment"
+        },
+        {
+          "item": "Procalcitonin",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "More specific for bacterial infection than CRP; helps distinguish bacterial from non-infectious inflammation; prognostic",
+          "target": ">0.5 ng/mL suggests bacterial infection; >2.0 ng/mL concerning for sepsis; useful in atypical presentations"
+        },
+        {
+          "item": "Blood glucose / HbA1c",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "**Diabetes is a major risk factor (30-50% of SEA patients)**; undiagnosed diabetes common; affects wound healing and immune function",
+          "target": "Document diabetes status; HbA1c >6.5% = diabetes; glucose control target <180 mg/dL"
+        },
+        {
+          "item": "PT/INR, aPTT",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy from sepsis (DIC); surgical candidacy; baseline before anticoagulation decisions; epidural hematoma differential",
+          "target": "Normal; prolonged → concern for DIC, liver dysfunction; affects surgical risk"
+        },
+        {
+          "item": "Lactate",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Sepsis assessment; tissue hypoperfusion; prognostic",
+          "target": "<2 mmol/L (normal); >4 mmol/L = severe sepsis/septic shock requiring aggressive resuscitation"
+        },
+        {
+          "item": "Type and screen",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Surgical candidacy; blood product availability",
+          "target": "On file"
+        },
+        {
+          "item": "Urinalysis + urine culture",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Urinary source (UTI is common source of hematogenous spread, especially gram-negative SEA); concurrent UTI",
+          "target": "Normal or pyuria/bacteriuria; if positive → potential primary source"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "HIV antibody/antigen",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Immunocompromised state; increases SEA risk; affects prognosis and opportunistic infection risk",
+          "target": "Negative; if positive → CD4 count, viral load; consider opportunistic organisms"
+        },
+        {
+          "item": "Hepatitis B/C serologies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "IVDU population (risk factor for SEA); affects long-term antibiotic choice; liver function",
+          "target": "Negative; if positive → affects drug selection, hepatotoxicity monitoring"
+        },
+        {
+          "item": "Hemoglobin A1c",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Undiagnosed or poorly controlled diabetes",
+          "target": "<6.5% (normal); ≥6.5% = diabetes; 5.7-6.4% = prediabetes"
+        },
+        {
+          "item": "D-dimer",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "DIC screening; VTE risk (prolonged immobility + inflammation); not specific but elevated in SEA",
+          "target": "Elevated (non-specific); very high levels → consider DIC"
+        },
+        {
+          "item": "Fibrinogen",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "DIC assessment; sepsis-associated coagulopathy",
+          "target": ">150 mg/dL; low fibrinogen = DIC or consumption"
+        },
+        {
+          "item": "Albumin / prealbumin",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Nutritional status; wound healing; chronicity of illness; prognostic",
+          "target": ">3.5 g/dL (albumin); low = poor nutrition, chronic illness"
+        },
+        {
+          "item": "Repeat blood cultures (during treatment)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Document clearance of bacteremia; if persistently positive → evaluate for endocarditis, undrained collection, treatment failure",
+          "target": "Negative by 48-72h of appropriate antibiotics; persistent positivity → echocardiogram, repeat imaging"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Surgical specimen culture (intraoperative)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "**Gold standard for organism identification**; culture of abscess material at surgery; sensitivity higher than blood cultures; also send for Gram stain and histopathology",
+          "target": "Organism identification; guides targeted antibiotic therapy"
+        },
+        {
+          "item": "CT-guided aspiration/biopsy culture",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "If non-operative management chosen; tissue diagnosis; culture for organism identification; distinguishes abscess from tumor/hematoma",
+          "target": "Organism identification; Gram stain; histopathology (rule out tumor)"
+        },
+        {
+          "item": "Acid-fast bacilli (AFB) smear and culture",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "TB spine (Pott's disease); endemic areas; immunocompromised; chronic presentation with vertebral destruction",
+          "target": "Negative; positive → TB requires different treatment (anti-TB regimen; may not need surgery if no instability/neurologic deficit)"
+        },
+        {
+          "item": "Fungal cultures",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Immunocompromised; IVDU; indwelling catheters; endemic fungi (coccidioidomycosis, blastomycosis, histoplasmosis); chronic presentation",
+          "target": "Negative; positive → prolonged antifungal therapy (6-12+ months)"
+        },
+        {
+          "item": "Brucella serology / cultures",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Endemic areas (Mediterranean, Middle East); unpasteurized dairy; occupational exposure (farmers, veterinarians); chronic back pain",
+          "target": "Negative; positive → doxycycline + streptomycin/gentamicin or rifampin"
+        },
+        {
+          "item": "16S rRNA PCR (on tissue)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Culture-negative SEA; prior antibiotic exposure; fastidious organisms",
+          "target": "Identifies organism even when cultures are negative; research/reference lab"
+        },
+        {
+          "item": "Transthoracic echocardiogram (TTE)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "**Infective endocarditis screen**; IE present in 10-15% of SEA patients with S. aureus bacteremia; affects antibiotic duration and management",
+          "target": "Normal; vegetations → endocarditis diagnosis; changes antibiotic duration to 4-6 weeks minimum"
+        },
+        {
+          "item": "Transesophageal echocardiogram (TEE)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "If TTE negative but high suspicion for endocarditis (S. aureus bacteremia, IVDU, prosthetic valve, persistent fever); TEE more sensitive than TTE",
+          "target": "Normal; vegetations → endocarditis; TEE sensitivity 90-95% vs. TTE 65%"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "LP — Generally NOT indicated",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "**LP is generally CONTRAINDICATED in suspected SEA**; risk of seeding infection into subarachnoid space → meningitis/spinal subdural empyema; imaging (MRI) is diagnostic modality of choice",
+          "target": "N/A",
+          "contraindications": "**AVOID LP if SEA suspected** — LP may spread infection into intradural space; if meningitis suspected concurrently, discuss with neurosurgery/ID before LP"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI entire spine with and without contrast (gadolinium)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT",
+          "timing": "**GOLD STANDARD — within 4 hours of ED presentation if neurologic deficit; within 24h if no deficit**; contrast essential for abscess characterization; image ENTIRE spine (multifocal in 15-20%)",
+          "target": "Epidural collection with ring enhancement; T1 hypointense, T2 hyperintense; restricted diffusion (DWI bright, ADC dark within abscess); vertebral body involvement (osteomyelitis); disc involvement (discitis); cord compression; degree of canal compromise",
+          "contraindications": "MRI-incompatible implants; severe claustrophobia (sedate — do NOT delay); GFR <30 (gadolinium risk — but benefit outweighs risk in emergency)"
+        },
+        {
+          "item": "Plain radiographs (spine)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Immediate while awaiting MRI; identifies vertebral body destruction, disc space narrowing, alignment abnormality; LOW sensitivity for early SEA",
+          "target": "Disc space narrowing; vertebral body destruction (late finding — takes 2-4 weeks to appear); alignment; pathologic fracture",
+          "contraindications": "Pregnancy (shield)"
+        },
+        {
+          "item": "CT spine without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If MRI unavailable or contraindicated; inferior to MRI for soft tissue and epidural collection; shows bone destruction better than MRI",
+          "target": "Bone destruction; disc space narrowing; paraspinal soft tissue mass; canal compromise; less sensitive than MRI for epidural abscess extent",
+          "contraindications": "Pregnancy (relative)"
+        },
+        {
+          "item": "Chest X-ray",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Primary pulmonary source (pneumonia); lung abscess; TB (apical infiltrate, cavitation); septic emboli",
+          "target": "Primary infection source; pulmonary complications; TB features",
+          "contraindications": "Pregnancy (shield)"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "CT chest/abdomen/pelvis with contrast",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Source identification if not obvious; look for primary infection (lung abscess, intra-abdominal abscess, psoas abscess); staging for concurrent infection",
+          "target": "Primary source: lung abscess, intra-abdominal abscess, psoas abscess (contiguous spread), renal/perinephric abscess; endocarditis emboli",
+          "contraindications": "Contrast allergy; renal impairment"
+        },
+        {
+          "item": "Echocardiogram (TTE → TEE if needed)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "**All patients with S. aureus bacteremia should have echocardiogram**; endocarditis in 10-15% of S. aureus SEA",
+          "target": "Vegetations; valvular regurgitation; abscess; Duke criteria",
+          "contraindications": "None (TTE); TEE: esophageal pathology, uncooperative patient"
+        },
+        {
+          "item": "CT myelogram",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "timing": "Only if MRI absolutely contraindicated; intrathecal contrast via LP followed by CT; demonstrates level of compression; risk of meningitis seeding with LP",
+          "target": "Complete or partial block; level of compression; intradural vs. extradural",
+          "contraindications": "Infection at LP site (SEA itself may preclude LP at involved level); coagulopathy"
+        },
+        {
+          "item": "Nuclear medicine bone scan (Tc-99m)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If MRI unavailable; can identify osteomyelitis; may show uptake before radiographic changes; less specific than MRI",
+          "target": "Increased uptake at infection site(s); may identify multifocal disease",
+          "contraindications": "Pregnancy; limited specificity"
+        },
+        {
+          "item": "Gallium-67 or Indium-111 WBC scan",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Chronic/subacute infection; differentiating active infection from degenerative changes; research use",
+          "target": "Increased uptake at infection site",
+          "contraindications": "Limited availability; time-consuming; replaced largely by MRI"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CT-guided biopsy/aspiration",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "If diagnosis uncertain; culture acquisition for non-surgical management; distinguish abscess from tumor or hematoma",
+          "target": "Organism identification; Gram stain; histopathology confirming infection vs. other pathology",
+          "contraindications": "Coagulopathy; inaccessible location; very small collection"
+        },
+        {
+          "item": "PET/CT (FDG)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Chronic/recurrent infection; assess treatment response; identify additional sites of infection; research use",
+          "target": "Increased FDG uptake at infection site; may identify occult primary source",
+          "contraindications": "Uncontrolled diabetes (glucose >200); pregnancy"
+        },
+        {
+          "item": "Repeat MRI (during treatment)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At 2-4 weeks or if clinical worsening; assess treatment response; monitor for abscess expansion; may appear worse before better on imaging",
+          "target": "Stable or decreasing collection size; resolving edema; NOTE: Imaging may lag behind clinical improvement (may appear worse at 2 weeks even with successful treatment)",
+          "contraindications": "Same as initial MRI"
+        },
+        {
+          "item": "Post-treatment MRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At end of antibiotic course (6-8 weeks); baseline for comparison; assess for residual disease",
+          "target": "Resolution or significant improvement of collection; healed osteomyelitis; residual enhancement may persist for months (does not necessarily indicate active infection)",
+          "contraindications": "Same as MRI"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent Treatment": [
+        {
+          "item": "**Empiric IV antibiotics (STAT)**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-30 mg/kg",
+                "orderSentence": "**Empiric IV antibiotics (STAT)** 25-30 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**Start IMMEDIATELY after blood cultures drawn — do NOT delay for MRI or organism identification**; **First-line empiric:** Vancomycin 25-30 mg/kg IV load (max 2g), then 15-20 mg/kg IV q8-12h (target trough 15-20 mcg/mL) PLUS Ceftriaxone 2g IV q12h OR Cefepime 2g IV q8h; **Alternative for β-lactam allergy:** Vancomycin + aztreonam 2g IV q8h OR Vancomycin + fluoroquinolone (levofloxacin 750 mg daily); **If Pseudomonas risk (IVDU, immunocompromised):** Add anti-pseudomonal coverage with cefepime or piperacillin-tazobactam 4.5g IV q6h; **Adjust to culture results when available**",
+            "orderSentence": "**Empiric IV antibiotics (STAT)** 25-30 mg/kg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Vancomycin covers MRSA (most important cause); ceftriaxone/cefepime covers MSSA, streptococci, gram-negatives; early antibiotics are associated with better outcomes; every hour of delay increases mortality in sepsis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Emergent surgical decompression + drainage**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**INDICATIONS (Surgery preferred):** (1) Neurologic deficit (any weakness, bowel/bladder dysfunction), (2) Sepsis/hemodynamic instability not improving with antibiotics, (3) Significant cord compression on imaging, (4) Failure of medical therapy (no improvement at 48-72h, worsening at any time), (5) Unknown organism (need tissue diagnosis); **Procedure:** Posterior laminectomy with abscess drainage; cultures from abscess; débridement of infected tissue; may need instrumentation if instability; **Timing:** Within 24h of diagnosis; emergent (within hours) if progressive deficit",
+            "orderSentence": "**Emergent surgical decompression + drainage** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Darouiche (2006): Surgical outcomes better than medical management in patients with neurologic deficit; earlier surgery (within 24h) associated with better neurologic recovery; pre-operative neurologic status is #1 predictor of outcome",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**DVT prophylaxis**",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "**DVT prophylaxis** 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "SCDs immediately; pharmacologic prophylaxis: enoxaparin 40 mg SQ daily — timing is nuanced: may start within 24h of admission if no imminent surgery; post-operatively start 12-24h after surgery per surgeon; high VTE risk population",
+            "orderSentence": "**DVT prophylaxis** 40 mg SC"
+          },
+          "contraindications": "-",
+          "monitoring": "Immobile + infection + inflammatory state = very high DVT risk; mechanical prophylaxis universal; pharmacologic prophylaxis as soon as surgically safe",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Pain management**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "**Pain management** 650-1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Back pain often severe; acetaminophen 650-1000 mg q6h (scheduled) + opioids (morphine 2-4 mg IV q3h PRN or hydromorphone 0.5-1 mg IV q3h PRN); NSAIDs: use cautiously (renal function, surgical bleeding) — some ID physicians avoid NSAIDs in active infection; neuropathic agents (gabapentin) if radicular component",
+            "orderSentence": "**Pain management** 650-1000 mg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Severe pain is hallmark of SEA; adequate analgesia is essential; balance with need for neurologic monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Sepsis resuscitation (if septic)**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL/kg",
+                "orderSentence": "**Sepsis resuscitation (if septic)** 30 mL/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Surviving Sepsis guidelines: lactate measurement; blood cultures before antibiotics; IV crystalloid 30 mL/kg for hypotension or lactate ≥4 mmol/L; vasopressors (norepinephrine first-line) if MAP <65 despite fluids; reassess volume status; repeat lactate if initially elevated",
+            "orderSentence": "**Sepsis resuscitation (if septic)** 30 mL/kg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Sepsis from SEA has high mortality; early aggressive resuscitation improves outcomes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Glucose control**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "180 mg",
+                "orderSentence": "**Glucose control** 180 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Target glucose <180 mg/dL; insulin infusion if critically ill; sliding scale or basal-bolus for non-ICU patients; diabetes is major risk factor — optimize control",
+            "orderSentence": "**Glucose control** 180 mg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Hyperglycemia impairs immune function and wound healing; tight glucose control improves infection outcomes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Definitive/Targeted Treatment": [
+        {
+          "item": "**Targeted IV antibiotic therapy (based on culture results)**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2g",
+                "orderSentence": "**Targeted IV antibiotic therapy (based on culture results)** 2g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**Tailor to organism and sensitivities; typical regimens:** — **MSSA:** Nafcillin 2g IV q4h OR cefazolin 2g IV q8h (preferred for tolerability); duration 6-8 weeks; — **MRSA:** Vancomycin 15-20 mg/kg IV q8-12h (trough 15-20) for 6-8 weeks; alternatives: daptomycin 6-8 mg/kg IV daily (avoid if pneumonia), linezolid 600 mg IV/PO q12h (monitor for toxicity if >2 weeks); — **Streptococci:** Penicillin G 4 million units IV q4h or ceftriaxone 2g IV q12h x 6 weeks; — **Enterococcus:** Ampicillin 2g IV q4h (if susceptible) ± gentamicin synergy; vancomycin if ampicillin-resistant; — **Gram-negatives:** Ceftriaxone 2g IV q12h or cefepime 2g IV q8h or ciprofloxacin 400 mg IV q8h x 6 weeks depending on sensitivities; — **Pseudomonas:** Cefepime 2g IV q8h or meropenem 2g IV q8h x 6 weeks",
+            "orderSentence": "**Targeted IV antibiotic therapy (based on culture results)** 2g IV"
+          },
+          "contraindications": "-",
+          "monitoring": "IV antibiotics are standard for SEA/osteomyelitis; oral transition data emerging (OVIVA trial) but traditionally 6-8 weeks IV; de-escalate from empiric coverage once cultures return",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Duration of antibiotics**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**SEA without osteomyelitis:** 4-6 weeks IV; **SEA with vertebral osteomyelitis (most cases):** 6-8 weeks IV; **SEA with endocarditis:** 6 weeks minimum from first negative blood culture; duration guided by clinical response, inflammatory markers (ESR, CRP), repeat imaging; may extend if slow response",
+            "orderSentence": "**Duration of antibiotics** - IV - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "IDSA guidelines: 6 weeks for vertebral osteomyelitis; 4-6 weeks for epidural abscess alone; endocarditis requires 6-week minimum; individualized based on response",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Oral antibiotic transition (selected cases)**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "750 mg",
+                "orderSentence": "**Oral antibiotic transition (selected cases)** 750 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**OVIVA trial (2019):** Oral antibiotics non-inferior to IV for bone/joint infections after initial 2 weeks IV in stable patients; **Candidates:** Clinically improving; afebrile; tolerating PO; CRP trending down; adherent; close follow-up available; **Oral options:** Fluoroquinolone (levofloxacin 750 mg daily or ciprofloxacin 750 mg BID) + rifampin 300 mg BID (NOT monotherapy); linezolid 600 mg BID (monitor CBC, neuropathy); TMP-SMX DS 2 tabs BID (for MRSA); **NOT for:** Endocarditis, undrained abscess, persistent bacteremia, non-adherent patient",
+            "orderSentence": "**Oral antibiotic transition (selected cases)** 750 mg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "OVIVA trial showed oral switch after 2 weeks IV is non-inferior for bone/joint infections; reduces costs, IV complications, hospital stay; requires careful patient selection and close monitoring; NOT standard for all SEA cases",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Surgical drainage (if not done emergently)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**If initial medical management:** Re-evaluate need for surgery at 48-72h; indications for delayed surgery: failure to improve, neurologic deterioration, persistent fever/bacteremia, abscess enlargement on imaging; **Procedure:** Laminectomy + drainage; send cultures even if already on antibiotics (may still grow organism); instrumented fusion if instability/destruction",
+            "orderSentence": "**Surgical drainage (if not done emergently)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Surgery provides source control, tissue diagnosis, and decompression; delayed surgery for medical failure still beneficial if performed before complete paralysis",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Medical management alone (selected cases)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**Candidates for medical management without surgery:** (1) No neurologic deficit, (2) Organism identified (blood cultures positive), (3) Small abscess (<3 cm collection), (4) Poor surgical candidate (extreme comorbidities), (5) Panspinal disease (multiple levels — surgery impractical); **Requirements:** Very close neurologic monitoring (q2-4h initially); repeat MRI at 48-72h and weekly; immediate surgery if any deterioration; adherent patient",
+            "orderSentence": "**Medical management alone (selected cases)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Observational studies: ~40% of SEA can be managed medically if no neurologic deficit and criteria met; HOWEVER, 10-20% will fail medical therapy and require surgery; early surgery generally preferred if feasible",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Adjunctive Treatment": [
+        {
+          "item": "**PICC line placement**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "If prolonged IV antibiotics planned (6-8 weeks); enables outpatient IV therapy (OPAT); placed once stabilized and duration confirmed; confirm tip position with X-ray",
+            "orderSentence": "**PICC line placement** - IV - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Required for OPAT; reduces peripheral IV complications; monitor for PICC-associated infection",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Outpatient parenteral antibiotic therapy (OPAT)**",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Once clinically stable (afebrile, pain controlled, neurologically stable, adequate PO intake, safe home environment); PICC in place; infusion teaching completed; close ID follow-up (weekly visits); VNA nursing for line care",
+            "orderSentence": "**Outpatient parenteral antibiotic therapy (OPAT)** - PO - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Reduces hospital stay; comparable outcomes to inpatient therapy in appropriate patients; weekly ID visits with labs (CBC, CMP, drug levels, CRP)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Rifampin (adjunctive)**",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "**Rifampin (adjunctive)** 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "For staphylococcal osteomyelitis (vertebral involvement); enhances bone penetration; prevents biofilm; **ONLY as adjunctive therapy — never monotherapy (rapid resistance)**; Rifampin 300 mg PO BID added to primary anti-staphylococcal agent; check interactions (CYP3A4 inducer — reduces warfarin, HIV meds, oral contraceptives, etc.)",
+            "orderSentence": "**Rifampin (adjunctive)** 300 mg PO"
+          },
+          "contraindications": "-",
+          "monitoring": "Rifampin improves outcomes in staphylococcal bone infections; biofilm activity; excellent bone penetration; drug interactions are significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Bracing / spinal orthosis**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "If spinal instability (vertebral body destruction, kyphosis, instrumentation); TLSO for thoracolumbar; cervical collar for cervical; duration: typically 6-12 weeks or until radiographic healing",
+            "orderSentence": "**Bracing / spinal orthosis** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "External stabilization; pain relief; prevents pathologic fracture progression; may allow non-operative management of mild instability",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Nutritional optimization**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1.2-1.5 g/kg",
+                "orderSentence": "**Nutritional optimization** 1.2-1.5 g/kg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Protein supplementation (1.2-1.5 g/kg/day); calorie optimization; correct vitamin deficiencies; dietitian consultation; affects wound healing and immune function",
+            "orderSentence": "**Nutritional optimization** 1.2-1.5 g/kg -"
+          },
+          "contraindications": "-",
+          "monitoring": "Malnutrition common in chronic illness; protein essential for wound healing; improves infection outcomes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Diabetes optimization**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "180 mg",
+                "orderSentence": "**Diabetes optimization** 180 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Endocrinology consult if poorly controlled; insulin titration; goal HbA1c <7.5% (individualized); glucose <180 mg/dL during acute illness",
+            "orderSentence": "**Diabetes optimization** 180 mg PO"
+          },
+          "contraindications": "-",
+          "monitoring": "Diabetes is major risk factor; uncontrolled diabetes impairs healing and immune response",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Substance abuse counseling (if applicable)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30%",
+                "orderSentence": "**Substance abuse counseling (if applicable)** 30% -"
+              }
+            ],
+            "route": "-",
+            "instructions": "IVDU is major risk factor for SEA (20-30% of cases); addiction medicine consultation; harm reduction; hepatitis/HIV screening; reduces recurrence risk",
+            "orderSentence": "**Substance abuse counseling (if applicable)** 30% -"
+          },
+          "contraindications": "-",
+          "monitoring": "IVDU patients at high risk for recurrent infection; addressing substance use reduces future SEA risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Medications to AVOID or Use with Caution": [
+        {
+          "item": "Daptomycin (with pneumonia)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Daptomycin (with pneumonia) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Rifampin monotherapy",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Rifampin monotherapy - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Linezolid >2-4 weeks",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Linezolid >2-4 weeks - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Aminoglycosides (prolonged use)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Aminoglycosides (prolonged use) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Corticosteroids (routine use)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Corticosteroids (routine use) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "NSAIDs (prolonged, peri-operative)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "NSAIDs (prolonged, peri-operative) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "LP (in suspected SEA)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "LP (in suspected SEA) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Epidural steroid injection (as treatment or in area of abscess)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Epidural steroid injection (as treatment or in area of abscess) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Spine surgery / Neurosurgery consultation — EMERGENT",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Infectious disease consultation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurologic examination — serial monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Source identification",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood cultures (before antibiotics)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Fall precautions / mobility assessment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Documentation of timeline",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Echocardiogram (TTE ± TEE)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Dental evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PICC placement / vascular access",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work / case management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Addiction medicine (if IVDU)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management service",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical / occupational therapy",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "VNA / home health",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Repeat MRI",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CT-guided drainage (percutaneous)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Revision surgery / repeat drainage",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Infectious disease second opinion",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Long-term suppressive antibiotics",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Spinal fusion (delayed)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hyperbaric oxygen therapy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Diagnosis",
+      "features": "Key Differentiating Features",
+      "tests": "Distinguishing Studies"
+    },
+    {
+      "diagnosis": "Malignant spinal cord compression (MSCC) / Metastatic epidural disease",
+      "features": "Known cancer history; bone destruction without disc involvement (SEA typically involves disc); no fever (usually); no elevated ESR/CRP/WBC (unless concurrent infection); may be painful but not typically as acute; enhances but no ring-enhancement or diffusion restriction",
+      "tests": "MRI: enhancing epidural mass WITHOUT ring enhancement or restricted diffusion; bone destruction; CT/PET: metastatic staging; tumor markers; biopsy if uncertain; ESR/CRP may be mildly elevated in malignancy but not as high as SEA"
+    },
+    {
+      "diagnosis": "Vertebral compression fracture (osteoporotic)",
+      "features": "Older patient; osteoporosis history; no fever; acute onset with movement; no neurologic deficit (usually); no elevated inflammatory markers; vertebral body wedging; may have benign edema",
+      "tests": "MRI: vertebral body edema WITHOUT epidural collection; no ring enhancement; normal ESR/CRP; DEXA: osteoporosis; mechanism (fall, lifting); responds to bracing/pain management"
+    },
+    {
+      "diagnosis": "Disc herniation (without infection)",
+      "features": "No fever; no elevated inflammatory markers; unilateral radiculopathy (usually); no epidural collection on MRI; common, benign presentation",
+      "tests": "MRI: disc herniation without epidural enhancement; no T2 hyperintense collection; normal ESR/CRP; normal WBC; unilateral symptoms more common"
+    },
+    {
+      "diagnosis": "Spinal epidural hematoma",
+      "features": "Anticoagulation; post-procedural (epidural injection, LP, surgery); acute onset; hematoma signal characteristics on MRI (not ring-enhancing); no fever; rapidly progressive",
+      "tests": "MRI: epidural collection with blood signal (T1 hyperintense in subacute phase); NO ring enhancement; NO restricted diffusion in hematoma (unlike abscess); coagulation studies; anticoagulation history; recent procedure"
+    },
+    {
+      "diagnosis": "Transverse myelitis / NMOSD",
+      "features": "Intramedullary (within cord) rather than epidural; autoimmune; no fever; no elevated ESR/CRP (or mildly elevated); subacute onset; responds to steroids/PLEX",
+      "tests": "MRI: intramedullary T2 hyperintensity, NOT epidural collection; AQP4/MOG antibodies; CSF: pleocytosis but sterile; normal inflammatory markers"
+    },
+    {
+      "diagnosis": "Degenerative lumbar stenosis",
+      "features": "Chronic symptoms (claudication); older patient; no fever; no inflammatory markers; bilateral symptoms with walking; relieved by sitting/flexion; chronic findings on MRI",
+      "tests": "MRI: chronic stenosis (ligamentum flavum hypertrophy, disc bulging, facet hypertrophy) WITHOUT acute epidural collection; normal ESR/CRP; chronic history"
+    },
+    {
+      "diagnosis": "Vertebral osteomyelitis (without epidural extension)",
+      "features": "Similar to SEA but NO epidural collection; disc and vertebral body involvement; back pain and fever; elevated inflammatory markers; may progress to SEA",
+      "tests": "MRI: vertebral body and disc enhancement and edema WITHOUT epidural collection; blood cultures may be positive; requires IV antibiotics but not emergent surgical decompression (unless instability or progression to SEA)"
+    },
+    {
+      "diagnosis": "Psoas abscess",
+      "features": "Contiguous spread can cause spinal infection; flank/groin pain; hip flexion pain; may track from spine or vice versa; fever; iliopsoas enhancement on imaging",
+      "tests": "CT/MRI: psoas muscle enlargement with rim-enhancing collection; may extend to spine; blood cultures; percutaneous drainage often possible"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Guideline",
+      "evidenceLevel": "Source",
+      "source": "Year"
+    },
+    {
+      "recommendation": "Vertebral Osteomyelitis Guidelines",
+      "evidenceLevel": "IDSA Clinical Practice Guideline",
+      "source": "2015"
+    },
+    {
+      "recommendation": "Spinal Epidural Abscess Management",
+      "evidenceLevel": "AANS/CNS Joint Guidelines",
+      "source": "2017"
+    },
+    {
+      "recommendation": "Native Vertebral Osteomyelitis",
+      "evidenceLevel": "British Infection Association / British Orthopaedic Association",
+      "source": "2015"
+    },
+    {
+      "recommendation": "Study",
+      "evidenceLevel": "Finding",
+      "source": "Impact"
+    },
+    {
+      "recommendation": "[Darouiche (2006) — NEJM Review](https://pubmed.ncbi.nlm.nih.gov/17093252/)",
+      "evidenceLevel": "Comprehensive review of SEA: S. aureus most common (60-70%); pre-operative neurologic status is #1 predictor of outcome; early surgery associated with better outcomes; medical management reasonable in selected cases without deficit",
+      "source": "Established framework for surgical vs. medical management decision-making"
+    },
+    {
+      "recommendation": "[Siddiq et al. (2004)](https://pubmed.ncbi.nlm.nih.gov/15596629/) — Meta-analysis",
+      "evidenceLevel": "915 patients: Surgical treatment associated with better neurologic outcomes than medical management alone; patients presenting with neurologic deficit benefit most from early surgery",
+      "source": "Supports surgical decompression as preferred approach, especially with neurologic deficit"
+    },
+    {
+      "recommendation": "[Connor et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23662888/)",
+      "evidenceLevel": "Timing of surgery: decompression within 24h of neurologic deficit associated with significantly better outcomes than delayed surgery",
+      "source": "Established 24h window for surgical decompression"
+    },
+    {
+      "recommendation": "[Patel et al. (2014)](https://pubmed.ncbi.nlm.nih.gov/24231778/)",
+      "evidenceLevel": "Risk factors for poor outcome: advanced age, diabetes, MRSA, delayed diagnosis, pre-operative paralysis, cervical/thoracic location",
+      "source": "Identified high-risk patients who may benefit from aggressive surgical approach"
+    },
+    {
+      "recommendation": "[Berbari et al. (2015) — IDSA Guidelines](https://pubmed.ncbi.nlm.nih.gov/26229122/)",
+      "evidenceLevel": "6-week IV antibiotic duration for vertebral osteomyelitis; longer for complicated cases (endocarditis, undrained abscess); rifampin adjunct for staphylococcal infections",
+      "source": "Standardized antibiotic duration and adjunctive therapy"
+    },
+    {
+      "recommendation": "[OVIVA Trial (2019)](https://pubmed.ncbi.nlm.nih.gov/30699315/)",
+      "evidenceLevel": "Oral antibiotics non-inferior to IV for bone/joint infections after initial IV therapy in stable patients; oral switch after 2 weeks IV",
+      "source": "Opened possibility of early oral transition for selected patients; reduces hospitalization/OPAT burden; requires careful patient selection"
+    },
+    {
+      "recommendation": "[Reihsaus et al. (2000)](https://pubmed.ncbi.nlm.nih.gov/11153548/)",
+      "evidenceLevel": "Meta-analysis: mortality 5%; permanent paralysis 4-22%; earlier surgery and better pre-operative function = better outcomes",
+      "source": "Established prognostic importance of pre-operative neurologic status and early intervention"
+    },
+    {
+      "recommendation": "Organism",
+      "evidenceLevel": "Frequency",
+      "source": "Key Features"
+    },
+    {
+      "recommendation": "Staphylococcus aureus",
+      "evidenceLevel": "60-70% (MRSA 30-50% of S. aureus)",
+      "source": "Most common; hematogenous spread; IVDU, skin infection, catheters; MRSA requires vancomycin"
+    },
+    {
+      "recommendation": "Coagulase-negative Staphylococci",
+      "evidenceLevel": "5-10%",
+      "source": "Post-procedural; hardware-associated"
+    },
+    {
+      "recommendation": "Streptococci (including viridans, pneumoniae)",
+      "evidenceLevel": "5-10%",
+      "source": "Endocarditis association; dental source"
+    },
+    {
+      "recommendation": "Gram-negative bacilli (E. coli, Pseudomonas, Klebsiella)",
+      "evidenceLevel": "10-15%",
+      "source": "Urinary source; IVDU (Pseudomonas); diabetics"
+    },
+    {
+      "recommendation": "Enterococcus",
+      "evidenceLevel": "2-5%",
+      "source": "Urinary source; GI/biliary source"
+    },
+    {
+      "recommendation": "Anaerobes",
+      "evidenceLevel": "2-5%",
+      "source": "Often polymicrobial; abdominal/pelvic source"
+    },
+    {
+      "recommendation": "Mycobacterium tuberculosis",
+      "evidenceLevel": "<5% (higher in endemic areas)",
+      "source": "Subacute/chronic; Pott's disease; vertebral destruction; cold abscess; paraspinal extension"
+    },
+    {
+      "recommendation": "Fungi (Candida, Aspergillus)",
+      "evidenceLevel": "<2%",
+      "source": "IVDU; immunocompromised; indwelling catheters"
+    },
+    {
+      "recommendation": "Culture-negative",
+      "evidenceLevel": "10-20%",
+      "source": "Prior antibiotics; fastidious organisms; consider TB, Brucella, fungi"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic examination (motor strength, sensory level, rectal tone, bladder)",
+      "frequency": "q2-4h initially; q4-6h once stable",
+      "target": "Stable or improving; NO new deficits",
+      "action": "ANY deterioration → STAT MRI → emergent surgical consultation → likely emergent decompression"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "q4h",
+      "target": "Afebrile (<38°C) by 48-72h of antibiotics",
+      "action": "Persistent fever: repeat cultures; imaging for undrained collection; reassess antibiotics; echocardiogram"
+    },
+    {
+      "item": "Blood pressure / hemodynamics",
+      "frequency": "Continuous if septic; q4h if stable",
+      "target": "MAP >65; resolving sepsis",
+      "action": "Vasopressors; fluid resuscitation; ICU care for septic shock"
+    },
+    {
+      "item": "Pain score (NRS)",
+      "frequency": "q4h",
+      "target": "Improving; NRS <4/10",
+      "action": "Escalate analgesia; worsening pain may indicate abscess enlargement or instability"
+    },
+    {
+      "item": "Blood cultures (repeat)",
+      "frequency": "Daily until negative",
+      "target": "Negative cultures within 48-72h of appropriate antibiotics",
+      "action": "Persistent bacteremia: echocardiogram (TEE); imaging for undrained focus; consider surgery"
+    },
+    {
+      "item": "WBC, CRP",
+      "frequency": "Daily initially",
+      "target": "Trending down",
+      "action": "Rising inflammatory markers: treatment failure; repeat imaging; reassess management"
+    },
+    {
+      "item": "Vancomycin trough (if on vancomycin)",
+      "frequency": "Before 4th dose; then 2-3x/week",
+      "target": "15-20 mcg/mL (for serious infection)",
+      "action": "Adjust dose if outside range; monitor renal function"
+    },
+    {
+      "item": "Renal function (BUN/Cr)",
+      "frequency": "Daily initially; 2-3x/week ongoing",
+      "target": "Stable",
+      "action": "Nephrotoxicity: adjust vancomycin and other renally-cleared drugs; adequate hydration"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "q6h (q4h if critically ill)",
+      "target": "<180 mg/dL",
+      "action": "Insulin titration"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Level of Care",
+      "criteria": "Criteria"
+    },
+    {
+      "disposition": "ICU admission",
+      "criteria": "Sepsis/septic shock; hemodynamic instability; respiratory compromise; post-operative monitoring (surgeon-dependent); severe neurologic deficit with close monitoring needed"
+    },
+    {
+      "disposition": "General medical/neurosurgery floor",
+      "criteria": "ALL patients with confirmed or suspected SEA require admission; IV antibiotic initiation; neurologic monitoring; surgical evaluation; pre-operative preparation if surgery planned"
+    },
+    {
+      "disposition": "Observation (NOT appropriate)",
+      "criteria": "SEA is NEVER an observation diagnosis; all patients require admission until diagnosis confirmed/excluded and treatment initiated"
+    }
+  ]
+}

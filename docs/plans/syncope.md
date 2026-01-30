@@ -1,3 +1,10 @@
+---
+title: "Syncope Evaluation"
+description: "Clinical decision support for syncope diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Syncope Evaluation
 
 **VERSION:** 1.0
@@ -11,7 +18,7 @@
 
 **ICD-10:** R55 (Syncope and collapse), T67.1 (Heat syncope), G90.01 (Carotid sinus syncope), I95.1 (Orthostatic hypotension)
 
-**SYNONYMS:** Syncope, fainting, loss of consciousness, passing out, blackout, vasovagal syncope, neurocardiogenic syncope, reflex syncope, orthostatic syncope, cardiac syncope, convulsive syncope
+**SYNONYMS:** Syncope, fainting, loss of consciousness, LOC, passing out, blackout, vasovagal syncope, neurocardiogenic syncope, reflex syncope, orthostatic syncope, cardiac syncope, convulsive syncope, presyncope, near-syncope, near syncope, TLOC, transient loss of consciousness
 
 **SCOPE:** Evaluation and management of transient loss of consciousness (TLOC) due to syncope in adults. Includes risk stratification, etiologic workup, and treatment by type. Applies to ED, hospital, and outpatient settings. Excludes seizure, stroke, metabolic causes, and traumatic loss of consciousness.
 
@@ -37,22 +44,22 @@
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Fingerstick glucose | STAT | STAT | ROUTINE | STAT | Hypoglycemia as cause | 70-180 mg/dL |
-| CBC | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Anemia; hemorrhage | Normal |
-| BMP (electrolytes, creatinine) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Electrolyte abnormalities | Normal |
-| Troponin | STAT | STAT | - | STAT | Cardiac ischemia as trigger | Negative |
-| BNP or NT-proBNP | ROUTINE | ROUTINE | - | ROUTINE | Heart failure; risk stratification | Normal |
+| Fingerstick glucose (CPT 82962) | STAT | STAT | ROUTINE | STAT | Hypoglycemia as cause | 70-180 mg/dL |
+| CBC (CPT 85025) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Anemia; hemorrhage | Normal |
+| BMP (CPT 80048) (electrolytes, creatinine) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Electrolyte abnormalities | Normal |
+| Troponin (CPT 84484) | STAT | STAT | - | STAT | Cardiac ischemia as trigger | Negative |
+| BNP or NT-proBNP (CPT 83880) | ROUTINE | ROUTINE | - | ROUTINE | Heart failure; risk stratification | Normal |
 | Pregnancy test (if applicable) | STAT | STAT | ROUTINE | - | Ectopic pregnancy; influences workup | Document |
 
 ### 1B. Extended Labs (Based on Clinical Suspicion)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| TSH | - | ROUTINE | ROUTINE | - | Thyroid dysfunction | Normal |
-| Cortisol (AM) | - | EXT | EXT | - | Adrenal insufficiency if orthostatic | Normal |
-| D-dimer | URGENT | URGENT | - | URGENT | If PE suspected | Negative |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction | Normal |
+| Cortisol (CPT 82533) (AM) | - | EXT | EXT | - | Adrenal insufficiency if orthostatic | Normal |
+| D-dimer (CPT 85379) | URGENT | URGENT | - | URGENT | If PE suspected | Negative |
 | Toxicology screen | ROUTINE | ROUTINE | - | - | Drug/alcohol-induced | Negative |
-| Blood cultures | - | ROUTINE | - | ROUTINE | If infection suspected | Negative |
+| Blood cultures (CPT 87040) | - | ROUTINE | - | ROUTINE | If infection suspected | Negative |
 
 ---
 
@@ -62,9 +69,9 @@
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| 12-lead ECG | STAT | STAT | ROUTINE | STAT | Immediate; ALL patients | No arrhythmia, normal intervals | None |
+| 12-lead ECG (CPT 93000) | STAT | STAT | ROUTINE | STAT | Immediate; ALL patients | No arrhythmia, normal intervals | None |
 | Continuous telemetry | - | ROUTINE | - | ROUTINE | If admitted | No arrhythmia | None |
-| Transthoracic echocardiogram | URGENT | ROUTINE | ROUTINE | URGENT | If cardiac cause suspected | Normal structure/function | None |
+| Transthoracic echocardiogram (CPT 93306) | URGENT | ROUTINE | ROUTINE | URGENT | If cardiac cause suspected | Normal structure/function | None |
 | Exercise stress test | - | ROUTINE | ROUTINE | - | If exertional syncope | No ischemia, no arrhythmia | Acute MI, unstable angina |
 | Cardiac MRI | - | EXT | EXT | - | Suspected cardiomyopathy, ARVC | Normal or define pathology | Pacemaker, metal |
 
@@ -72,8 +79,8 @@
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Holter monitor (24-48 hour) | - | - | ROUTINE | - | Frequent symptoms | Correlate symptoms with rhythm | None |
-| Event recorder (2-4 weeks) | - | - | ROUTINE | - | Intermittent symptoms | Symptom-rhythm correlation | None |
+| Holter monitor (CPT 93224) (24-48 hour) | - | - | ROUTINE | - | Frequent symptoms | Correlate symptoms with rhythm | None |
+| Event recorder (CPT 93268) (2-4 weeks) | - | - | ROUTINE | - | Intermittent symptoms | Symptom-rhythm correlation | None |
 | Insertable loop recorder (ILR) | - | - | ROUTINE | - | Infrequent, unexplained recurrent syncope | Identify arrhythmia | None |
 | Electrophysiology study (EPS) | - | ROUTINE | EXT | - | Suspected arrhythmic cause; structural heart disease | Identify inducible arrhythmia | Active infection |
 
@@ -82,17 +89,17 @@
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | Orthostatic vital signs | STAT | STAT | ROUTINE | STAT | Immediate; ALL patients | No orthostatic hypotension | None |
-| Tilt table test | - | - | ROUTINE | - | Suspected vasovagal if recurrent; dx uncertain | Positive = cardioinhibitory or vasodepressor | Severe CAD, critical AS |
+| Tilt table test (CPT 95924) | - | - | ROUTINE | - | Suspected vasovagal if recurrent; dx uncertain | Positive = cardioinhibitory or vasodepressor | Severe CAD, critical AS |
 | Carotid sinus massage | - | ROUTINE | ROUTINE | - | Age >40 with unexplained syncope (not if carotid bruit) | Negative (<3 sec pause, <50 mmHg drop) | Carotid bruit, recent stroke/TIA |
-| Autonomic function tests | - | - | ROUTINE | - | Suspected autonomic failure | Characterize dysautonomia | Per test |
+| Autonomic function tests (CPT 95924) | - | - | ROUTINE | - | Suspected autonomic failure | Characterize dysautonomia | Per test |
 
 ### 2D. Neuroimaging (Select Cases Only)
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head | URGENT | ROUTINE | - | URGENT | Head trauma; focal neuro signs; NOT routine for syncope | No acute pathology | None (contrast: renal disease) |
-| MRI brain | - | EXT | EXT | - | Atypical features suggesting CNS cause | Normal | Pacemaker, metal |
-| EEG | - | EXT | EXT | - | If seizure suspected (prolonged LOC, postictal state, witnessed tonic-clonic) | No epileptiform activity | None |
+| CT head (CPT 70450) | URGENT | ROUTINE | - | URGENT | Head trauma; focal neuro signs; NOT routine for syncope | No acute pathology | None (contrast: renal disease) |
+| MRI brain (CPT 70551) | - | EXT | EXT | - | Atypical features suggesting CNS cause | Normal | Pacemaker, metal |
+| EEG (CPT 95816) | - | EXT | EXT | - | If seizure suspected (prolonged LOC, postictal state, witnessed tonic-clonic) | No epileptiform activity | None |
 | Carotid ultrasound | - | - | EXT | - | NOT indicated for typical syncope | N/A | None |
 
 ---
@@ -101,57 +108,57 @@
 
 ### 3A. Acute Management (ED/Hospital)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| IV access | STAT | STAT | - | STAT | Establish if unstable | None | Access |
-| IV fluid resuscitation | STAT | ROUTINE | - | STAT | NS 500-1000 mL bolus if hypovolemic/dehydrated | Heart failure | Volume status |
-| Trendelenburg position | STAT | ROUTINE | - | STAT | Legs elevated if hypotensive | None | BP |
-| Telemetry monitoring | STAT | ROUTINE | - | ROUTINE | Continuous if high-risk | None | Arrhythmia |
-| Correct reversible causes | STAT | STAT | - | STAT | Treat hemorrhage, dehydration, arrhythmia, MI | Per condition | Per condition |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| IV access | IV | - | Establish if unstable | None | Access | STAT | STAT | - | STAT |
+| IV fluid resuscitation | IV | - | 500-1000 mL :: - :: once :: NS 500-1000 mL bolus if hypovolemic/dehydrated | Heart failure | Volume status | STAT | ROUTINE | - | STAT |
+| Trendelenburg position | - | - | Legs elevated if hypotensive | None | BP | STAT | ROUTINE | - | STAT |
+| Telemetry monitoring | - | - | Continuous if high-risk | None | Arrhythmia | STAT | ROUTINE | - | ROUTINE |
+| Correct reversible causes | - | - | Treat hemorrhage, dehydration, arrhythmia, MI | Per condition | Per condition | STAT | STAT | - | STAT |
 
 ### 3B. Vasovagal Syncope Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Education and reassurance | ROUTINE | ROUTINE | ROUTINE | - | Benign prognosis; triggers; warning signs | None | None |
-| Trigger avoidance | - | ROUTINE | ROUTINE | - | Identify and avoid (prolonged standing, heat, dehydration) | None | Recurrence |
-| Counter-pressure maneuvers | - | ROUTINE | ROUTINE | - | Leg crossing, hand grip, arm tensing when prodrome felt | None | Effectiveness |
-| Increased fluid/salt intake | - | ROUTINE | ROUTINE | - | 2-3 L fluid/day; 6-9 g salt/day (if no HTN/HF) | HTN, heart failure | BP |
-| Compression stockings | - | - | ROUTINE | - | Waist-high, 30-40 mmHg | Peripheral vascular disease | Compliance |
-| Tilt training | - | - | EXT | - | Progressive standing against wall; controversial efficacy | None | Tolerance |
-| Fludrocortisone | - | - | ROUTINE | - | 0.1-0.2 mg daily (refractory cases) | HTN, HF | K+, BP, edema |
-| Midodrine | - | - | ROUTINE | - | 2.5-10 mg TID (refractory cases) | Supine HTN, urinary retention | Supine HTN |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Education and reassurance | - | - | Benign prognosis; triggers; warning signs | None | None | ROUTINE | ROUTINE | ROUTINE | - |
+| Trigger avoidance | - | - | Identify and avoid (prolonged standing, heat, dehydration) | None | Recurrence | - | ROUTINE | ROUTINE | - |
+| Counter-pressure maneuvers | - | - | Leg crossing, hand grip, arm tensing when prodrome felt | None | Effectiveness | - | ROUTINE | ROUTINE | - |
+| Increased fluid/salt intake | PO | - | 6-9 g :: PO :: - :: 2-3 L fluid/day; 6-9 g salt/day (if no HTN/HF) | HTN, heart failure | BP | - | ROUTINE | ROUTINE | - |
+| Compression stockings | - | - | Waist-high, 30-40 mmHg | Peripheral vascular disease | Compliance | - | - | ROUTINE | - |
+| Tilt training | - | - | Progressive standing against wall; controversial efficacy | None | Tolerance | - | - | EXT | - |
+| Fludrocortisone | PO | - | 0.1-0.2 mg :: PO :: daily :: 0.1-0.2 mg daily (refractory cases) | HTN, HF | K+, BP, edema | - | - | ROUTINE | - |
+| Midodrine | PO | - | 2.5-10 mg :: PO :: TID :: 2.5-10 mg TID (refractory cases) | Supine HTN, urinary retention | Supine HTN | - | - | ROUTINE | - |
 
 ### 3C. Orthostatic Syncope Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Identify/discontinue offending meds | STAT | STAT | ROUTINE | STAT | Review diuretics, vasodilators, antihypertensives | Clinical judgment | BP |
-| Volume repletion | STAT | ROUTINE | ROUTINE | STAT | IV fluids acutely; oral fluids long-term (2-3 L/day) | Heart failure | Volume status |
-| Salt supplementation | - | ROUTINE | ROUTINE | - | 6-10 g/day if no HTN/HF | HTN, HF | BP |
-| Compression garments | - | - | ROUTINE | - | Waist-high stockings 30-40 mmHg; abdominal binder | PVD | Compliance |
-| Elevate head of bed | - | ROUTINE | ROUTINE | - | 10-20 degrees at night (reduces nocturnal diuresis) | None | Tolerance |
-| Midodrine | - | ROUTINE | ROUTINE | - | 2.5-10 mg TID; last dose before 6 PM | Supine HTN, urinary retention | Supine BP |
-| Fludrocortisone | - | ROUTINE | ROUTINE | - | 0.1-0.3 mg daily | HTN, HF, hypokalemia | K+, BP |
-| Droxidopa (Northera) | - | - | ROUTINE | - | 100-600 mg TID; for neurogenic orthostatic hypotension | Supine HTN | Supine BP |
-| Pyridostigmine | - | - | EXT | - | 30-60 mg TID; augments ganglionic transmission | Asthma, GI obstruction | Cholinergic effects |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Identify/discontinue offending meds | - | - | Review diuretics, vasodilators, antihypertensives | Clinical judgment | BP | STAT | STAT | ROUTINE | STAT |
+| Volume repletion | IV | - | IV fluids acutely; oral fluids long-term (2-3 L/day) | Heart failure | Volume status | STAT | ROUTINE | ROUTINE | STAT |
+| Salt supplementation | PO | - | 6-10 g/day :: PO :: - :: 6-10 g/day if no HTN/HF | HTN, HF | BP | - | ROUTINE | ROUTINE | - |
+| Compression garments | - | - | Waist-high stockings 30-40 mmHg; abdominal binder | PVD | Compliance | - | - | ROUTINE | - |
+| Elevate head of bed | - | - | 10-20 degrees at night (reduces nocturnal diuresis) | None | Tolerance | - | ROUTINE | ROUTINE | - |
+| Midodrine | PO | - | 2.5-10 mg :: PO :: TID :: 2.5-10 mg TID; last dose before 6 PM | Supine HTN, urinary retention | Supine BP | - | ROUTINE | ROUTINE | - |
+| Fludrocortisone | PO | - | 0.1-0.3 mg :: PO :: daily :: 0.1-0.3 mg daily | HTN, HF, hypokalemia | K+, BP | - | ROUTINE | ROUTINE | - |
+| Droxidopa (Northera) | - | - | 100-600 mg :: - :: TID :: 100-600 mg TID; for neurogenic orthostatic hypotension | Supine HTN | Supine BP | - | - | ROUTINE | - |
+| Pyridostigmine | PO | - | 30-60 mg :: PO :: TID :: 30-60 mg TID; augments ganglionic transmission | Asthma, GI obstruction | Cholinergic effects | - | - | EXT | - |
 
 ### 3D. Carotid Sinus Syncope Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Avoid tight collars, neck pressure | - | ROUTINE | ROUTINE | - | Patient education | None | Recurrence |
-| Dual-chamber pacemaker | - | ROUTINE | ROUTINE | - | If cardioinhibitory type (pause >3 sec) | None | Device checks |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Avoid tight collars, neck pressure | - | - | Patient education | - | None | Recurrence | - | ROUTINE | ROUTINE | - |
+| Dual-chamber pacemaker | - | - | If cardioinhibitory type (pause >3 sec) | - | None | Device checks | - | ROUTINE | ROUTINE | - |
 
 ### 3E. Cardiac Syncope Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Treat underlying arrhythmia | STAT | STAT | ROUTINE | STAT | Per arrhythmia type | Per treatment | ECG, telemetry |
-| Pacemaker | - | ROUTINE | ROUTINE | - | Sick sinus syndrome, high-grade AV block, bradycardia-induced syncope | None | Device checks |
-| ICD (implantable cardioverter-defibrillator) | - | ROUTINE | ROUTINE | - | Ventricular arrhythmias; high-risk cardiomyopathy | Terminal illness | Device checks |
-| Catheter ablation | - | ROUTINE | ROUTINE | - | Arrhythmia amenable to ablation (SVT, VT) | Extensive comorbidity | Recurrence |
-| Treat structural heart disease | STAT | ROUTINE | ROUTINE | STAT | Aortic valve replacement for AS; revascularization for ischemia | Per condition | Per condition |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Treat underlying arrhythmia | - | - | Per arrhythmia type | Per treatment | ECG, telemetry | STAT | STAT | ROUTINE | STAT |
+| Pacemaker | - | - | Sick sinus syndrome, high-grade AV block, bradycardia-induced syncope | None | Device checks | - | ROUTINE | ROUTINE | - |
+| ICD (implantable cardioverter-defibrillator) | - | - | Ventricular arrhythmias; high-risk cardiomyopathy | Terminal illness | Device checks | - | ROUTINE | ROUTINE | - |
+| Catheter ablation | - | - | Arrhythmia amenable to ablation (SVT, VT) | Extensive comorbidity | Recurrence | - | ROUTINE | ROUTINE | - |
+| Treat structural heart disease | - | - | Aortic valve replacement for AS; revascularization for ischemia | Per condition | Per condition | STAT | ROUTINE | ROUTINE | STAT |
 
 ---
 
@@ -249,14 +256,14 @@
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| ECG for all syncope patients | Class I, Level B | ESC 2018 Syncope Guidelines |
-| Echo if cardiac cause suspected | Class I, Level B | ESC 2018; AHA/ACCF 2017 |
-| Tilt test for recurrent vasovagal syncope | Class IIa, Level B | ESC 2018 |
-| Pacemaker for cardioinhibitory carotid sinus syncope | Class I, Level B | ESC 2018 |
-| ILR for recurrent unexplained syncope | Class I, Level A | ISSUE-3 trial; ESC 2018 |
-| Counter-pressure maneuvers for vasovagal | Class IIa, Level B | PC-Trial |
+| ECG for all syncope patients | Class I, Level B | [ESC 2018 Syncope Guidelines](https://pubmed.ncbi.nlm.nih.gov/29562304/) |
+| Echo if cardiac cause suspected | Class I, Level B | [ESC 2018](https://pubmed.ncbi.nlm.nih.gov/29562304/); AHA/ACCF 2017 |
+| Tilt test for recurrent vasovagal syncope | Class IIa, Level B | [ESC 2018](https://pubmed.ncbi.nlm.nih.gov/29562304/) |
+| Pacemaker for cardioinhibitory carotid sinus syncope | Class I, Level B | [ESC 2018](https://pubmed.ncbi.nlm.nih.gov/29562304/) |
+| ILR for recurrent unexplained syncope | Class I, Level A | [ISSUE-3 trial](https://pubmed.ncbi.nlm.nih.gov/22565936/); [ESC 2018](https://pubmed.ncbi.nlm.nih.gov/29562304/) |
+| Counter-pressure maneuvers for vasovagal | Class IIa, Level B | [PC-Trial](https://pubmed.ncbi.nlm.nih.gov/17045903/) |
 | Midodrine for refractory orthostatic hypotension | Class IIa, Level B | Multiple RCTs |
-| Risk stratification scores (Canadian Syncope Risk Score) | Class IIa, Level B | Thiruganasambandamoorthy et al. |
+| Risk stratification scores (Canadian Syncope Risk Score) | Class IIa, Level B | [Thiruganasambandamoorthy et al.](https://pubmed.ncbi.nlm.nih.gov/27378464/) |
 
 ---
 

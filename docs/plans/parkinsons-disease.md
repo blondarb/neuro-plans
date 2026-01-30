@@ -13,7 +13,8 @@ tags:
 # Parkinson's Disease
 
 **DIAGNOSIS:** Parkinson's Disease
-**ICD-10:** G20 (Parkinson's disease)
+**ICD-10:** G20 (Parkinson's disease), G20.A1 (Parkinson's disease without dyskinesia, without motor fluctuations), G20.A2 (Parkinson's disease without dyskinesia, with motor fluctuations), G20.B1 (Parkinson's disease with dyskinesia, without motor fluctuations), G20.B2 (Parkinson's disease with dyskinesia, with motor fluctuations), G20.C (Parkinsonism, unspecified)
+**SYNONYMS:** Parkinson's disease, PD, parkinsonism, idiopathic Parkinson's disease, paralysis agitans, shaking palsy, Parkinson disease, dopamine deficiency syndrome, tremor-dominant PD, PIGD
 **SCOPE:** Diagnosis confirmation, dopaminergic therapy initiation and optimization, motor fluctuation management, and non-motor symptom treatment. Excludes Parkinson-plus syndromes (MSA, PSP, CBD, DLB - separate protocols).
 
 **STATUS:** Approved
@@ -34,22 +35,22 @@ tags:
 
 | Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
 |------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CBC | Baseline; rule out anemia contributing to fatigue | Normal | STAT | ROUTINE | ROUTINE | - |
-| BMP | Renal function for medication dosing; electrolytes | Normal | STAT | ROUTINE | ROUTINE | - |
-| Hepatic panel (LFTs) | Baseline before COMT inhibitors | Normal | - | ROUTINE | ROUTINE | - |
-| TSH | Rule out hypothyroidism mimicking bradykinesia | Normal | - | ROUTINE | ROUTINE | - |
-| Vitamin B12 | Deficiency can cause parkinsonism; common in elderly | >300 pg/mL | - | ROUTINE | ROUTINE | - |
-| Vitamin D, 25-hydroxy | Deficiency common; associated with falls and disease severity | >30 ng/mL | - | ROUTINE | ROUTINE | - |
+| CBC (CPT 85025) | Baseline; rule out anemia contributing to fatigue | Normal | STAT | ROUTINE | ROUTINE | - |
+| BMP (CPT 80048) | Renal function for medication dosing; electrolytes | Normal | STAT | ROUTINE | ROUTINE | - |
+| Hepatic panel (LFTs) (CPT 80076) | Baseline before COMT inhibitors | Normal | - | ROUTINE | ROUTINE | - |
+| TSH (CPT 84443) | Rule out hypothyroidism mimicking bradykinesia | Normal | - | ROUTINE | ROUTINE | - |
+| Vitamin B12 (CPT 82607) | Deficiency can cause parkinsonism; common in elderly | >300 pg/mL | - | ROUTINE | ROUTINE | - |
+| Vitamin D, 25-hydroxy (CPT 82306) | Deficiency common; associated with falls and disease severity | >30 ng/mL | - | ROUTINE | ROUTINE | - |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
 |------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Ceruloplasmin, serum copper | Wilson's disease if age <50 | Normal | - | EXT | ROUTINE | - |
+| Ceruloplasmin (CPT 82390), serum copper (CPT 82390) | Wilson's disease if age <50 | Normal | - | EXT | ROUTINE | - |
 | 24-hour urine copper | Wilson's disease confirmation | <100 μg/24hr | - | - | EXT | - |
-| Ferritin, iron studies | Neurodegeneration with brain iron accumulation | Normal | - | ROUTINE | ROUTINE | - |
-| RPR or VDRL | Syphilis can cause parkinsonism | Nonreactive | - | EXT | EXT | - |
-| HIV testing | HIV-associated parkinsonism | Negative | - | EXT | EXT | - |
+| Ferritin (CPT 82728), iron studies (CPT 83540, 83550) | Neurodegeneration with brain iron accumulation | Normal | - | ROUTINE | ROUTINE | - |
+| RPR or VDRL (CPT 86592) | Syphilis can cause parkinsonism | Nonreactive | - | EXT | EXT | - |
+| HIV testing (CPT 87389) | HIV-associated parkinsonism | Negative | - | EXT | EXT | - |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
@@ -67,23 +68,23 @@ tags:
 
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI Brain without contrast | At diagnosis | Normal (rules out structural causes, vascular parkinsonism, NPH) | MRI-incompatible devices | URGENT | ROUTINE | ROUTINE | - |
+| MRI Brain without contrast (CPT 70551) | At diagnosis | Normal (rules out structural causes, vascular parkinsonism, NPH) | MRI-incompatible devices | URGENT | ROUTINE | ROUTINE | - |
 
 ### 2B. Extended
 
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| DaTscan (ioflupane I-123 SPECT) | Diagnostic uncertainty; essential tremor vs PD | Reduced dopamine transporter uptake in striatum | Hypersensitivity to iodine | - | EXT | ROUTINE | - |
+| DaTscan (CPT 78830) | Diagnostic uncertainty; essential tremor vs PD | Reduced dopamine transporter uptake in striatum | Hypersensitivity to iodine | - | EXT | ROUTINE | - |
 | MRI Brain with SWI sequence | Suspected atypical parkinsonism or iron deposition | No "hot cross bun" (MSA) or "hummingbird" (PSP) signs | MRI contraindications | - | EXT | ROUTINE | - |
 | Cardiac MIBG scan | Differentiate PD from MSA | Reduced uptake in PD (preserved in MSA) | Recent MI; drugs affecting uptake | - | - | EXT | - |
-| Sleep study (polysomnography) | REM sleep behavior disorder evaluation | Confirms RBD (prodromal marker) | None | - | - | ROUTINE | - |
-| Autonomic function testing | Dysautonomia assessment | Orthostatic hypotension, abnormal HR variability | None | - | ROUTINE | ROUTINE | - |
+| Sleep study (polysomnography) (CPT 95810) | REM sleep behavior disorder evaluation | Confirms RBD (prodromal marker) | None | - | - | ROUTINE | - |
+| Autonomic function testing (CPT 95924) | Dysautonomia assessment | Orthostatic hypotension, abnormal HR variability | None | - | ROUTINE | ROUTINE | - |
 
 ### 2C. Rare/Specialized
 
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| FDG-PET | Atypical parkinsonism differentiation | Pattern recognition for PD vs PSP vs MSA | None | - | - | EXT | - |
+| FDG-PET (CPT 78608) | Atypical parkinsonism differentiation | Pattern recognition for PD vs PSP vs MSA | None | - | - | EXT | - |
 | Transcranial ultrasound | Screening tool | Hyperechogenicity of substantia nigra | Inadequate bone window | - | - | EXT | - |
 
 ---

@@ -1,0 +1,958 @@
+{
+  "id": "cluster-headache",
+  "title": "Cluster Headache",
+  "version": "1.0",
+  "icd10": [
+    "** G44.009 (Cluster headache syndrome",
+    "unspecified",
+    "not intractable)",
+    "G44.019 (Cluster headache syndrome",
+    "unspecified",
+    "intractable)",
+    "G44.001 (Episodic cluster headache",
+    "not intractable)",
+    "G44.011 (Episodic cluster headache",
+    "intractable)",
+    "G44.009 (Chronic cluster headache)"
+  ],
+  "scope": "** Diagnosis and management of episodic and chronic cluster headache in adults. Covers acute abortive treatment, transitional therapy, and preventive medication. Excludes other trigeminal autonomic cephalalgias (paroxysmal hemicrania, SUNCT/SUNA, hemicrania continua), migraine, and secondary causes of headache.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline; before starting verapamil",
+          "target": "Normal"
+        },
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction",
+          "target": "Normal"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "ESR/CRP",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If GCA suspected (older patient, new onset)",
+          "target": "Normal"
+        },
+        {
+          "item": "Pituitary hormone panel",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If pituitary lesion suspected",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Lumbar puncture",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Only if secondary cause suspected",
+          "target": "Normal"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with pituitary protocol",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At diagnosis (once)",
+          "target": "Rule out secondary causes (pituitary lesion, cavernous sinus lesion)",
+          "contraindications": "Pacemaker, metal"
+        },
+        {
+          "item": "MRA head",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If vascular lesion suspected",
+          "target": "Normal vasculature",
+          "contraindications": "Per MRI"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "CT head",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "If acute concern (thunderclap, first presentation)",
+          "target": "Rule out hemorrhage",
+          "contraindications": "None"
+        },
+        {
+          "item": "ECG",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Before verapamil; baseline",
+          "target": "Normal rhythm, PR interval",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Abortive Treatment (During Attack)": [
+        {
+          "item": "High-flow oxygen",
+          "route": "INH",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100%",
+                "orderSentence": "High-flow oxygen 100% INH"
+              }
+            ],
+            "route": "INH",
+            "instructions": "100% O2 at 12-15 L/min via non-rebreather mask × 15-20 min; can repeat",
+            "orderSentence": "High-flow oxygen 100% INH"
+          },
+          "contraindications": "None; safe in COPD for acute use",
+          "monitoring": "O2 sat; usually aborts attack in 15 min",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sumatriptan SC",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6 mg",
+                "orderSentence": "Sumatriptan SC 6 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "6 mg SC; may use up to 2 doses/24h (minimum 1h apart); max 12 mg/24h",
+            "orderSentence": "Sumatriptan SC 6 mg SC"
+          },
+          "contraindications": "CAD, uncontrolled HTN, recent stroke/TIA, hemiplegic migraine",
+          "monitoring": "Chest tightness, BP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sumatriptan nasal",
+          "route": "IN",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Sumatriptan nasal 20 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "20 mg intranasal; less effective than SC",
+            "orderSentence": "Sumatriptan nasal 20 mg SC"
+          },
+          "contraindications": "Same as SC",
+          "monitoring": "Same",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Zolmitriptan nasal",
+          "route": "IN",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Zolmitriptan nasal 5 mg IN"
+              }
+            ],
+            "route": "IN",
+            "instructions": "5 mg intranasal; may repeat in 2h; max 10 mg/24h",
+            "orderSentence": "Zolmitriptan nasal 5 mg IN"
+          },
+          "contraindications": "Same as sumatriptan",
+          "monitoring": "Same",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lidocaine intranasal",
+          "route": "IN",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mL",
+                "orderSentence": "Lidocaine intranasal 1 mL -"
+              }
+            ],
+            "route": "-",
+            "instructions": "4% lidocaine 1 mL applied to ipsilateral nostril (head tilted back); can repeat",
+            "orderSentence": "Lidocaine intranasal 1 mL -"
+          },
+          "contraindications": "Local anesthetic allergy",
+          "monitoring": "May provide partial/temporary relief",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Octreotide SC",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mcg",
+                "orderSentence": "Octreotide SC 100 mcg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "100 mcg SC; second-line if triptans contraindicated",
+            "orderSentence": "Octreotide SC 100 mcg SC"
+          },
+          "contraindications": "None significant",
+          "monitoring": "GI upset",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Transitional (Bridge) Therapy": [
+        {
+          "item": "Prednisone",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60-80 mg",
+                "orderSentence": "Prednisone 60-80 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "60-80 mg daily × 5 days, then taper by 10 mg q3 days; OR 1 mg/kg × 5 days then rapid taper; total course ~2-3 weeks",
+            "orderSentence": "Prednisone 60-80 mg -"
+          },
+          "contraindications": "Uncontrolled DM, active infection",
+          "monitoring": "Glucose, GI prophylaxis",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dexamethasone",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4-8 mg",
+                "orderSentence": "Dexamethasone 4-8 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "4-8 mg BID × 1-2 weeks, then taper",
+            "orderSentence": "Dexamethasone 4-8 mg PO"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Greater occipital nerve block (GON block)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mL",
+                "orderSentence": "Greater occipital nerve block (GON block) 2 mL -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Lidocaine 2% (2 mL) + triamcinolone 40 mg or methylprednisolone 40 mg; inject ipsilateral or bilateral",
+            "orderSentence": "Greater occipital nerve block (GON block) 2 mL -"
+          },
+          "contraindications": "Anticoagulation, local infection",
+          "monitoring": "May provide 2-4 weeks relief",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Suboccipital steroid injection",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Similar to GON block; ipsilateral",
+            "orderSentence": "Suboccipital steroid injection - - - see dosing"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "DHE protocol (inpatient)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-1 mg",
+                "orderSentence": "DHE protocol (inpatient) 0.5-1 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "DHE 0.5-1 mg IV q8h × 3-5 days (with antiemetic pretreatment)",
+            "orderSentence": "DHE protocol (inpatient) 0.5-1 mg IV"
+          },
+          "contraindications": "CAD, CVA, uncontrolled HTN, triptans <24h",
+          "monitoring": "BP, nausea, peripheral vasoconstriction",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Preventive Therapy - First-Line": [
+        {
+          "item": "Verapamil",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "80 mg",
+                "orderSentence": "Verapamil 80 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 80 mg TID; increase by 80 mg q1-2 weeks to 240-960 mg/day in divided doses (some patients need >480 mg/day)",
+            "orderSentence": "Verapamil 80 mg PO"
+          },
+          "contraindications": "Heart block (2nd/3rd degree), sick sinus, severe LV dysfunction, WPW",
+          "monitoring": "ECG at baseline, after each dose increase; PR interval (hold if >280 ms)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lithium",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Lithium 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg BID-TID; target serum level 0.6-1.0 mEq/L; usual dose 600-1200 mg/day",
+            "orderSentence": "Lithium 300 mg PO"
+          },
+          "contraindications": "Renal impairment, thyroid disease, dehydration, sodium depletion",
+          "monitoring": "Lithium level, renal function, TSH q3-6 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Preventive Therapy - Second-Line": [
+        {
+          "item": "Topiramate",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Topiramate 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; titrate to 100-200 mg/day",
+            "orderSentence": "Topiramate 25 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Kidney stones, glaucoma, pregnancy",
+          "monitoring": "Cognitive effects, paresthesias, metabolic acidosis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "9-10 mg",
+                "orderSentence": "Melatonin 9-10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "9-10 mg QHS (higher than sleep doses)",
+            "orderSentence": "Melatonin 9-10 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "None significant",
+          "monitoring": "Sedation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Galcanezumab (CGRP mAb)",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Galcanezumab (CGRP mAb) 300 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "300 mg SC monthly (FDA approved for episodic CH)",
+            "orderSentence": "Galcanezumab (CGRP mAb) 300 mg SC"
+          },
+          "pretreatment": "-",
+          "contraindications": "Hypersensitivity",
+          "monitoring": "Injection site reactions",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Valproate",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-2000 mg/day",
+                "orderSentence": "Valproate 500-2000 mg/day PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "500-2000 mg/day in divided doses",
+            "orderSentence": "Valproate 500-2000 mg/day PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Pregnancy, hepatic disease",
+          "monitoring": "LFTs, ammonia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "900-3600 mg/day",
+                "orderSentence": "Gabapentin 900-3600 mg/day PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "900-3600 mg/day; limited evidence",
+            "orderSentence": "Gabapentin 900-3600 mg/day PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Renal impairment",
+          "monitoring": "Sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ergotamine (prophylactic)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mg",
+                "orderSentence": "Ergotamine (prophylactic) 1-2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1-2 mg at bedtime if nocturnal attacks",
+            "orderSentence": "Ergotamine (prophylactic) 1-2 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "Same as DHE",
+          "monitoring": "Limited to <2 weeks to avoid overuse",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Refractory Chronic Cluster Headache": [
+        {
+          "item": "Combination verapamil + lithium",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Use both at therapeutic doses",
+            "orderSentence": "Combination verapamil + lithium - - - see dosing"
+          },
+          "contraindications": "Per individual agents",
+          "monitoring": "Per individual agents",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "OnabotulinumtoxinA",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Off-label; pericranial injections",
+            "orderSentence": "OnabotulinumtoxinA - - - see dosing"
+          },
+          "contraindications": "Infection at site",
+          "monitoring": "Limited evidence",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Occipital nerve stimulation (ONS)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Implantable device; for refractory cases",
+            "orderSentence": "Occipital nerve stimulation (ONS) - - - see dosing"
+          },
+          "contraindications": "Poor surgical candidate",
+          "monitoring": "Specialist decision",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Sphenopalatine ganglion stimulation",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Implantable device (Pulsante)",
+            "orderSentence": "Sphenopalatine ganglion stimulation - - - see dosing"
+          },
+          "contraindications": "Poor surgical candidate",
+          "monitoring": "Specialist decision",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Deep brain stimulation (hypothalamus)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Research settings; highly refractory",
+            "orderSentence": "Deep brain stimulation (hypothalamus) - - - see dosing"
+          },
+          "contraindications": "Multiple",
+          "monitoring": "Specialist decision",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Headache specialist/Neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "All patients; diagnosis confirmation and management"
+        },
+        {
+          "item": "Cardiology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Before high-dose verapamil if cardiac history"
+        },
+        {
+          "item": "Pain management",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Refractory cases, nerve block expertise"
+        },
+        {
+          "item": "Neurosurgery",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "indication": "Neuromodulation candidacy (ONS, DBS)"
+        },
+        {
+          "item": "Home oxygen supply",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Arrange high-flow O2 for home use"
+        },
+        {
+          "item": "Psychiatry",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Depression, suicide risk (cluster headache has high depression rate)"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Oxygen therapy is FIRST-LINE for acute attacks - keep tank accessible",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Sumatriptan SC auto-injector for breakthrough attacks; do not exceed 2/day",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid alcohol during cluster periods (potent trigger)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid napping or irregular sleep schedules (can trigger attacks)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Attacks often occur at same time daily (circadian pattern) - prepare",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT use over-the-counter pain medications (ineffective, risk of MOH)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cluster periods may be seasonal - anticipate and start preventive early",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Depression is common; seek help if mood changes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Clusterbusters.org and headache support groups for resources",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Complete alcohol abstinence during cluster periods",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain regular sleep schedule; avoid naps",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid high altitudes during cluster periods",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid vasodilators (nitroglycerin, sildenafil) during cluster periods",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid strong smells (perfumes, solvents) during cluster periods",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation (association with cluster headache)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep headache diary to identify patterns and triggers",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Migraine",
+      "features": "Longer duration (4-72h), bilateral possible, photophobia/phonophobia, prefers rest vs restlessness",
+      "tests": "Clinical criteria (ICHD-3)"
+    },
+    {
+      "diagnosis": "Paroxysmal hemicrania",
+      "features": "Shorter attacks (2-30 min), higher frequency (>5/day), ABSOLUTE response to indomethacin",
+      "tests": "Indomethacin trial (completely responsive)"
+    },
+    {
+      "diagnosis": "SUNCT/SUNA",
+      "features": "Very short attacks (1-600 sec), very high frequency, conjunctival injection/tearing",
+      "tests": "Clinical criteria; shorter duration"
+    },
+    {
+      "diagnosis": "Hemicrania continua",
+      "features": "Continuous baseline pain with exacerbations, responds to indomethacin",
+      "tests": "Indomethacin trial"
+    },
+    {
+      "diagnosis": "Trigeminal neuralgia",
+      "features": "Electric shock-like, seconds duration, triggered by touch/chewing",
+      "tests": "MRI for neurovascular compression; much shorter attacks"
+    },
+    {
+      "diagnosis": "Pituitary tumor",
+      "features": "Visual field deficits, hormonal abnormalities, progressive",
+      "tests": "MRI pituitary"
+    },
+    {
+      "diagnosis": "Cavernous sinus lesion",
+      "features": "Persistent symptoms, cranial nerve palsies",
+      "tests": "MRI/MRA"
+    },
+    {
+      "diagnosis": "Giant cell arteritis",
+      "features": "Age >50, jaw claudication, scalp tenderness, elevated ESR",
+      "tests": "ESR/CRP, temporal artery biopsy"
+    },
+    {
+      "diagnosis": "Primary stabbing headache",
+      "features": "Brief (seconds), random location, no autonomic features",
+      "tests": "Clinical"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "High-flow oxygen effective for acute cluster",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple RCTs; Cochrane Reviews"
+    },
+    {
+      "recommendation": "Sumatriptan SC effective for acute cluster",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple RCTs"
+    },
+    {
+      "recommendation": "Verapamil effective for prevention",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple RCTs"
+    },
+    {
+      "recommendation": "Lithium effective for chronic cluster",
+      "evidenceLevel": "Class II, Level B",
+      "source": "RCTs with limitations"
+    },
+    {
+      "recommendation": "Corticosteroids effective for transitional therapy",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Multiple studies"
+    },
+    {
+      "recommendation": "Greater occipital nerve block effective",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Multiple studies"
+    },
+    {
+      "recommendation": "Galcanezumab approved for episodic CH",
+      "evidenceLevel": "Class I, Level A",
+      "source": "FDA approved 2019; [GAAIN trial (Goadsby et al., NEJM 2019)](https://pubmed.ncbi.nlm.nih.gov/31291515/)"
+    },
+    {
+      "recommendation": "Indomethacin response distinguishes paroxysmal hemicrania",
+      "evidenceLevel": "Class I",
+      "source": "Diagnostic criterion"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Attack frequency/severity diary",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Daily during bout",
+      "action": "Adjust preventive"
+    },
+    {
+      "item": "ECG (verapamil patients)",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Baseline, after each dose increase",
+      "action": "Hold/reduce verapamil"
+    },
+    {
+      "item": "Lithium level",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Weekly until stable, then q3 months",
+      "action": "Adjust dose"
+    },
+    {
+      "item": "Renal function (lithium)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q3-6 months",
+      "action": "May need to discontinue"
+    },
+    {
+      "item": "TSH (lithium)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q6 months",
+      "action": "Lithium-induced hypothyroidism"
+    },
+    {
+      "item": "Blood pressure",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "action": "Adjust verapamil"
+    },
+    {
+      "item": "Depression screening",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "action": "Refer psychiatry"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Attack aborted with O2/triptan, preventive medication initiated or adjusted, home O2 arranged, follow-up planned"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "Severe refractory attacks, need for IV DHE protocol, unable to manage at home, new diagnosis requiring workup"
+    },
+    {
+      "disposition": "Headache specialist referral",
+      "criteria": "All patients; chronic cluster, refractory cases, neuromodulation consideration"
+    },
+    {
+      "disposition": "Urgent follow-up",
+      "criteria": "Within 1-2 weeks if in active cluster period"
+    }
+  ]
+}

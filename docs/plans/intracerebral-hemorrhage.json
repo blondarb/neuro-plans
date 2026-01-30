@@ -1,0 +1,1605 @@
+{
+  "id": "intracerebral-hemorrhage",
+  "title": "Intracerebral Hemorrhage",
+  "version": "1.0",
+  "icd10": [
+    "** I61.9 (Nontraumatic intracerebral hemorrhage",
+    "unspecified)",
+    "I61.0 (ICH in hemisphere",
+    "subcortical)",
+    "I61.1 (ICH in hemisphere",
+    "cortical)",
+    "I61.3 (ICH in brain stem)",
+    "I61.4 (ICH in cerebellum)"
+  ],
+  "scope": "** Spontaneous (non-traumatic) intracerebral hemorrhage in adults. Covers acute BP management, anticoagulant reversal, ICH score and prognosis, ICP management, surgical indications, etiology workup, and secondary prevention. Excludes traumatic ICH, subarachnoid hemorrhage (separate template), hemorrhagic transformation of ischemic stroke, and subdural/epidural hematomas.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Baseline; thrombocytopenia as cause or complication; transfusion needs",
+          "target": "Platelets >100,000 (>50,000 minimum for hemostasis)"
+        },
+        {
+          "item": "PT/INR",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Warfarin-related ICH requires emergent reversal; coagulopathy assessment",
+          "target": "INR <1.4 target (if elevated: REVERSE IMMEDIATELY)"
+        },
+        {
+          "item": "aPTT",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Heparin-related ICH; coagulopathy",
+          "target": "Normal"
+        },
+        {
+          "item": "Fibrinogen",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "DIC; consumptive coagulopathy; tPA-related hemorrhage",
+          "target": ">150 mg/dL (if <150: give cryoprecipitate)"
+        },
+        {
+          "item": "CMP (BMP + LFTs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Electrolytes; renal function for contrast/medication; hepatic function for coagulopathy",
+          "target": "Normal"
+        },
+        {
+          "item": "Blood glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hyperglycemia worsens ICH outcomes; hypoglycemia mimics stroke",
+          "target": "140-180 mg/dL target"
+        },
+        {
+          "item": "Type and screen / crossmatch",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Potential need for blood products, surgery, reversal agents",
+          "target": "On file; crossmatch if OR likely"
+        },
+        {
+          "item": "Troponin",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Neurogenic cardiac injury (stress cardiomyopathy); concurrent ACS",
+          "target": "Normal"
+        },
+        {
+          "item": "Blood alcohol level",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy; exam reliability; alcoholism is ICH risk factor",
+          "target": "Document result"
+        },
+        {
+          "item": "Urine drug screen",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Cocaine/amphetamine-associated ICH (sympathomimetic surge)",
+          "target": "Negative"
+        },
+        {
+          "item": "Pregnancy test (β-hCG)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Affects management (eclampsia differential; imaging)",
+          "target": "Document result"
+        },
+        {
+          "item": "Thrombin time (TT) and/or ecarin clotting time (ECT)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Dabigatran (direct thrombin inhibitor) detection; if patient on DOACs",
+          "target": "Normal (prolonged = dabigatran present)"
+        },
+        {
+          "item": "Anti-Xa level (calibrated for specific DOAC)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Rivaroxaban/apixaban/edoxaban detection; guides reversal need",
+          "target": "Negative/undetectable (elevated = DOAC present and active)"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Lipid panel",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Cardiovascular risk; statin decision (controversial post-ICH)",
+          "target": "Document baseline"
+        },
+        {
+          "item": "HbA1c",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes management",
+          "target": "<7.0%"
+        },
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction",
+          "target": "Normal"
+        },
+        {
+          "item": "ESR / CRP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Vasculitis screen; inflammatory etiology",
+          "target": "Normal"
+        },
+        {
+          "item": "D-dimer",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "DIC; venous thromboembolism",
+          "target": "Normal"
+        },
+        {
+          "item": "Serum osmolality",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Monitor during osmotherapy (mannitol/hypertonic saline)",
+          "target": "280-320 mOsm/kg; hold osmotherapy if >320"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Hypercoagulable panel",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Young patient ICH without clear etiology; cerebral venous thrombosis with secondary hemorrhage",
+          "target": "Normal"
+        },
+        {
+          "item": "ANA, ANCA",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "CNS vasculitis-related hemorrhage",
+          "target": "Negative"
+        },
+        {
+          "item": "Toxicology (expanded)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "Sympathomimetic drug use; synthetic drug-associated hemorrhage",
+          "target": "Negative"
+        },
+        {
+          "item": "Amyloid-beta PET",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Cerebral amyloid angiopathy (CAA) confirmation; research context",
+          "target": "Positive amyloid deposition in lobar distribution"
+        },
+        {
+          "item": "APOE genotype",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "CAA risk stratification; APOE ε2/ε4 associated with ICH",
+          "target": "Document alleles"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Door-to-CT <25 minutes; determines ICH diagnosis, location, volume, IVH, hydrocephalus, midline shift",
+          "target": "Hemorrhage location (deep: basal ganglia/thalamus = hypertensive; lobar: CAA, tumor, AVM), volume (ABC/2 method), intraventricular hemorrhage (IVH), hydrocephalus, midline shift >5mm",
+          "contraindications": "Pregnancy (benefit outweighs risk)"
+        },
+        {
+          "item": "CT angiography (CTA) head",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "With initial CT; identify \"spot sign\" (active contrast extravasation = hematoma expansion risk), underlying vascular malformation (AVM, aneurysm)",
+          "target": "Spot sign (30-50% risk of expansion); AVM; aneurysm; dural AV fistula; Moyamoya",
+          "contraindications": "Contrast allergy; renal impairment (benefit outweighs risk in emergency)"
+        },
+        {
+          "item": "ECG (12-lead)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Baseline; neurogenic cardiac injury; arrhythmia; QTc prolongation risk",
+          "target": "Normal; ST changes may be neurogenic",
+          "contraindications": "None"
+        },
+        {
+          "item": "Repeat CT head (non-contrast)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "At 6h and 24h OR any neurologic decline; assess for hematoma expansion (>33% or >6mL increase from baseline = significant expansion)",
+          "target": "Stable hematoma size; no new hemorrhage; no hydrocephalus progression",
+          "contraindications": "Same as initial"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with and without contrast (include GRE/SWI sequences)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Within 24-72h when stable; or urgently if underlying mass/AVM suspected",
+          "target": "Underlying tumor; cavernous malformation; microbleeds (CAA pattern: lobar; hypertensive: deep). SWI shows microhemorrhages",
+          "contraindications": "Pacemaker; hemodynamic instability; MRI-incompatible monitoring"
+        },
+        {
+          "item": "MR venography (MRV)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "If cerebral venous thrombosis (CVT) suspected as cause of hemorrhagic venous infarct",
+          "target": "Venous sinus thrombosis",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "Conventional cerebral angiography (DSA)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "EXT",
+          "ICU": "URGENT",
+          "timing": "Young patient (<50) with lobar ICH and no clear etiology; suspected AVM/aneurysm where CTA inconclusive; negative initial CTA but high suspicion",
+          "target": "AVM; aneurysm; dural AV fistula; Moyamoya; vasculitis",
+          "contraindications": "Contrast allergy; renal impairment; coagulopathy"
+        },
+        {
+          "item": "Delayed DSA (if initial negative)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Repeat at 3-6 months; small AVM may be compressed by acute hematoma and missed initially",
+          "target": "Unmasked AVM/aneurysm",
+          "contraindications": "Same as initial DSA"
+        },
+        {
+          "item": "Echocardiogram",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "Neurogenic cardiac injury; baseline cardiac function; endocarditis if mycotic aneurysm suspected",
+          "target": "LV dysfunction; stress cardiomyopathy",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Continuous EEG (cEEG)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If altered consciousness disproportionate to hemorrhage size; suspected seizures",
+          "target": "Non-convulsive seizures; NCSE (seen in 20-30% of ICH patients)",
+          "contraindications": "None"
+        },
+        {
+          "item": "Chest X-ray",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Aspiration; pulmonary edema (neurogenic); baseline for ventilator",
+          "target": "Normal",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Brain biopsy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If underlying tumor, vasculitis, or amyloid angiopathy suspected and non-invasive workup inconclusive",
+          "target": "Tumor; vasculitis; amyloid",
+          "contraindications": "Surgical risk"
+        },
+        {
+          "item": "Amyloid PET scan",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "CAA diagnosis in lobar ICH with microbleeds",
+          "target": "Amyloid deposition",
+          "contraindications": "Research/limited availability"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Blood pressure reduction: Nicardipine IV",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/h",
+                "orderSentence": "Blood pressure reduction: Nicardipine IV 5 mg/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg/h IV; increase by 2.5 mg/h q5-15min; max 15 mg/h. Target SBP 130-150 mmHg (INTERACT2: <140 safe; AHA 2022: <140 reasonable if presenting SBP 150-220)",
+            "orderSentence": "Blood pressure reduction: Nicardipine IV 5 mg/h IV"
+          },
+          "contraindications": "Severe aortic stenosis; advanced HF",
+          "monitoring": "Continuous arterial line BP; neuro checks with each change; avoid SBP <110 (renal hypoperfusion)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood pressure reduction: Labetalol IV",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg",
+                "orderSentence": "Blood pressure reduction: Labetalol IV 10-20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10-20 mg IV bolus over 1-2 min; may repeat or double q10min; max 300 mg. Alternative to nicardipine",
+            "orderSentence": "Blood pressure reduction: Labetalol IV 10-20 mg IV"
+          },
+          "contraindications": "Heart block (2nd/3rd degree); severe bradycardia; decompensated HF; asthma",
+          "monitoring": "HR; BP continuous",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood pressure reduction: Clevidipine IV",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mg/h",
+                "orderSentence": "Blood pressure reduction: Clevidipine IV 1-2 mg/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2 mg/h IV; titrate by doubling q90sec initially; max 32 mg/h",
+            "orderSentence": "Blood pressure reduction: Clevidipine IV 1-2 mg/h IV"
+          },
+          "contraindications": "Soy/egg allergy; lipid disorders",
+          "monitoring": "BP continuous",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Intubation and airway protection",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "GCS ≤8; inability to protect airway; respiratory failure; impending herniation. Use non-depolarizing agents; avoid succinylcholine if elevated ICP (relative)",
+            "orderSentence": "Intubation and airway protection - - - see dosing"
+          },
+          "contraindications": "N/A",
+          "monitoring": "Ventilator; head of bed 30°; avoid hyperventilation unless herniation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Warfarin reversal: 4-factor PCC (Kcentra)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 units/kg",
+                "orderSentence": "Warfarin reversal: 4-factor PCC (Kcentra) 25-50 units/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "25-50 units/kg IV (dose based on INR: INR 2-4: 25 u/kg; INR 4-6: 35 u/kg; INR >6: 50 u/kg); infuse over 10-15 min. Reverses INR within 15-30 min. PREFERRED over FFP (faster, smaller volume)",
+            "orderSentence": "Warfarin reversal: 4-factor PCC (Kcentra) 25-50 units/kg IV"
+          },
+          "contraindications": "Active DIC (relative); HIT (contains heparin traces)",
+          "monitoring": "INR 15 min after infusion; repeat if INR >1.4; thrombotic risk",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Warfarin reversal: Vitamin K (phytonadione)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Warfarin reversal: Vitamin K (phytonadione) 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV slow push (over 10 min) to sustain INR correction (PCC is temporary). ALWAYS give WITH PCC",
+            "orderSentence": "Warfarin reversal: Vitamin K (phytonadione) 10 mg IV"
+          },
+          "contraindications": "Known severe allergic reaction (rare)",
+          "monitoring": "INR at 6h and 24h; anaphylaxis risk (rare with slow IV)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Warfarin reversal: FFP (if PCC unavailable)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-15 mL/kg",
+                "orderSentence": "Warfarin reversal: FFP (if PCC unavailable) 10-15 mL/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10-15 mL/kg IV (typically 2-4 units). Slower than PCC; requires thawing and larger volume",
+            "orderSentence": "Warfarin reversal: FFP (if PCC unavailable) 10-15 mL/kg IV"
+          },
+          "contraindications": "Volume overload; transfusion reactions",
+          "monitoring": "INR; volume status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dabigatran reversal: Idarucizumab (Praxbind)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 g",
+                "orderSentence": "Dabigatran reversal: Idarucizumab (Praxbind) 5 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 g IV (two 2.5g boluses or infusions). Specific reversal agent for dabigatran. Reversal within minutes",
+            "orderSentence": "Dabigatran reversal: Idarucizumab (Praxbind) 5 g IV"
+          },
+          "contraindications": "None absolute",
+          "monitoring": "Thrombin time (TT), aPTT; clinical hemostasis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Factor Xa inhibitor reversal: Andexanet alfa (Andexxa)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg",
+                "orderSentence": "Factor Xa inhibitor reversal: Andexanet alfa (Andexxa) 400 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "For rivaroxaban/apixaban. Low-dose: 400 mg IV bolus then 4 mg/min x 2h (last dose >8h ago). High-dose: 800 mg IV bolus then 8 mg/min x 2h (last dose <8h ago or unknown, or rivaroxaban)",
+            "orderSentence": "Factor Xa inhibitor reversal: Andexanet alfa (Andexxa) 400 mg IV"
+          },
+          "contraindications": "Thrombotic risk (10-15% VTE in trials)",
+          "monitoring": "Anti-Xa levels; thrombosis monitoring; arterial line",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Factor Xa inhibitor reversal: 4-factor PCC (if andexanet unavailable)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 units/kg",
+                "orderSentence": "Factor Xa inhibitor reversal: 4-factor PCC (if andexanet unavailable) 50 units/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "50 units/kg IV. Off-label but supported by guidelines if andexanet not available",
+            "orderSentence": "Factor Xa inhibitor reversal: 4-factor PCC (if andexanet unavailable) 50 units/kg IV"
+          },
+          "contraindications": "Same as PCC",
+          "monitoring": "Anti-Xa levels; clinical hemostasis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Heparin reversal: Protamine sulfate",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Heparin reversal: Protamine sulfate 1 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 mg per 100 units of heparin given in last 2-3h; max 50 mg; give slow IV over 10 min",
+            "orderSentence": "Heparin reversal: Protamine sulfate 1 mg IV"
+          },
+          "contraindications": "Fish/protamine allergy",
+          "monitoring": "aPTT; BP (hypotension with rapid infusion); anaphylaxis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Platelet transfusion",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 unit",
+                "orderSentence": "Platelet transfusion 1 unit -"
+              }
+            ],
+            "route": "-",
+            "instructions": "1 unit apheresis platelets if platelet count <100,000 AND active bleeding or pre-surgical. For antiplatelet-associated ICH: PATCH trial showed NO benefit from routine platelet transfusion (do NOT transfuse if platelets >100K on antiplatelet therapy)",
+            "orderSentence": "Platelet transfusion 1 unit -"
+          },
+          "contraindications": "HIT; ITP (consult hematology)",
+          "monitoring": "Platelet count; clinical hemostasis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Tranexamic acid (TXA)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g",
+                "orderSentence": "Tranexamic acid (TXA) 1 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 g IV over 10 min then 1 g IV over 8h. TICH-2 trial: did NOT reduce mortality but reduced hematoma expansion. Not routine; consider if spot sign positive or early presentation with active expansion",
+            "orderSentence": "Tranexamic acid (TXA) 1 g IV"
+          },
+          "contraindications": "Active DVT/PE; hypercoagulable state",
+          "monitoring": "Thrombotic events; clinical hemostasis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ICP management: Head of bed elevation",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "HOB 30°; head in midline (optimize venous drainage); avoid neck flexion/compression",
+            "orderSentence": "ICP management: Head of bed elevation - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "ICP if monitored",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ICP management: Mannitol 20%",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 g/kg",
+                "orderSentence": "ICP management: Mannitol 20% 1-1.5 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 g/kg IV bolus for acute herniation; 0.25-0.5 g/kg q4-6h maintenance",
+            "orderSentence": "ICP management: Mannitol 20% 1-1.5 g/kg IV"
+          },
+          "contraindications": "Anuria; serum osm >320",
+          "monitoring": "Serum osm q4-6h; osmolar gap; Cr; I/O",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ICP management: Hypertonic saline 23.4%",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "ICP management: Hypertonic saline 23.4% 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mL IV bolus via central line over 10-20 min for acute herniation",
+            "orderSentence": "ICP management: Hypertonic saline 23.4% 30 mL IV"
+          },
+          "contraindications": "No central access",
+          "monitoring": "Na (target 145-155); osmolality",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ICP management: Hypertonic saline 3%",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150-500 mL",
+                "orderSentence": "ICP management: Hypertonic saline 3% 150-500 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "150-500 mL bolus or 0.5-1 mL/kg/h infusion; target Na 145-155",
+            "orderSentence": "ICP management: Hypertonic saline 3% 150-500 mL IV"
+          },
+          "contraindications": "Hypernatremia >160",
+          "monitoring": "Na q4-6h; osmolality",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Levetiracetam",
+          "route": "IV",
+          "indication": "Seizure treatment (NOT routine prophylaxis — AHA 2022 recommends against routine prophylaxis). Treat if clinical or electrographic seizures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1500 mg",
+                "orderSentence": "Levetiracetam 1000-1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000-1500 mg IV load; then 500-1000 mg IV/PO BID",
+            "orderSentence": "Levetiracetam 1000-1500 mg IV"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Seizure monitoring; cEEG; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "IV",
+          "indication": "Fever (target normothermia <37.5°C; fever worsens ICH outcomes)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "650-1000 mg PO/IV q6h; max 4g/day",
+            "orderSentence": "Acetaminophen 650-1000 mg IV"
+          },
+          "contraindications": "Severe hepatic disease",
+          "monitoring": "Temperature q4h; LFTs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Surface cooling / Arctic Sun",
+          "route": "-",
+          "indication": "Refractory fever (targeted temperature management)",
+          "dosing": {
+            "instructions": "Target 36-37°C; avoid shivering (counterproductive)",
+            "orderSentence": "Surface cooling / Arctic Sun - - - see dosing"
+          },
+          "contraindications": "N/A",
+          "monitoring": "Core temperature; shivering assessment (BSAS)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Insulin (regular)",
+          "route": "IV",
+          "indication": "Hyperglycemia (target 140-180 mg/dL)",
+          "dosing": {
+            "instructions": "Sliding scale or insulin drip",
+            "orderSentence": "Insulin (regular) - IV - see dosing"
+          },
+          "contraindications": "Hypoglycemia",
+          "monitoring": "BG q1h if drip; q6h if sliding scale",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pantoprazole",
+          "route": "IV",
+          "indication": "GI prophylaxis (Cushing ulcer risk from elevated ICP)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole 40 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "40 mg IV/PO daily",
+            "orderSentence": "Pantoprazole 40 mg IV"
+          },
+          "contraindications": "C. diff risk",
+          "monitoring": "GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Enoxaparin",
+          "route": "SC",
+          "indication": "DVT prophylaxis (start 24-48h after hemorrhage stabilizes; after repeat CT shows stability)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily. AHA 2022: intermittent pneumatic compression devices on admission; pharmacologic prophylaxis after hemorrhage stable on repeat imaging",
+            "orderSentence": "Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active hemorrhagic expansion; within 24h of ICH onset; pre-surgical",
+          "monitoring": "Platelet count; repeat CT before starting",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pneumatic compression devices",
+          "route": "-",
+          "indication": "DVT prophylaxis (start IMMEDIATELY)",
+          "dosing": {
+            "instructions": "Apply bilaterally on admission; ICH patients are HIGH VTE risk",
+            "orderSentence": "Pneumatic compression devices - - - see dosing"
+          },
+          "contraindications": "Acute DVT",
+          "monitoring": "Skin checks",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV",
+          "indication": "Nausea/vomiting (posterior fossa hemorrhage; elevated ICP)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV q6h PRN",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation",
+          "monitoring": "QTc",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Surgical Interventions": [
+        {
+          "item": "External ventricular drain (EVD)",
+          "route": "-",
+          "indication": "IVH with acute hydrocephalus; GCS declining; need for ICP monitoring",
+          "dosing": {
+            "instructions": "Neurosurgery places; allows CSF drainage and ICP monitoring; target ICP <22, CPP >60",
+            "orderSentence": "External ventricular drain (EVD) - - - see dosing"
+          },
+          "contraindications": "Coagulopathy (correct first); futile care",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Intraventricular tPA via EVD",
+          "route": "-",
+          "indication": "IVH with hydrocephalus (CLEAR III trial: reduced mortality in severe IVH but did NOT improve functional outcome)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Intraventricular tPA via EVD 1 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Alteplase 1 mg q8h via EVD; up to 12 doses; clamp EVD 1h after dosing then open to drain",
+            "orderSentence": "Intraventricular tPA via EVD 1 mg -"
+          },
+          "contraindications": "Active systemic bleeding; coagulopathy",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Surgical hematoma evacuation (craniotomy)",
+          "route": "-",
+          "indication": "Lobar ICH >30 mL with deterioration; cerebellar hemorrhage >3 cm OR with brainstem compression/hydrocephalus (STRONGEST surgical indication). STICH/STICH-II: no clear benefit for supratentorial deep ICH",
+          "dosing": {
+            "instructions": "Craniotomy or craniectomy for clot evacuation",
+            "orderSentence": "Surgical hematoma evacuation (craniotomy) - - - see dosing"
+          },
+          "contraindications": "Deep ICH (generally no benefit from open surgery); GCS 3-4 without brainstem reflexes (futile); severe coagulopathy",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Minimally invasive surgery (MIS) — endoscopic or stereotactic aspiration",
+          "route": "-",
+          "indication": "Supratentorial ICH >30 mL with stable or mild deficits (MISTIE III, ENRICH trials: emerging data; ENRICH showed benefit for lobar ICH)",
+          "dosing": {
+            "instructions": "Stereotactic catheter-based aspiration or endoscopic evacuation with lower morbidity than craniotomy",
+            "orderSentence": "Minimally invasive surgery (MIS) — endoscopic or stereotactic aspiration - - - see dosing"
+          },
+          "contraindications": "Deep location (relative); coagulopathy",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Decompressive craniectomy",
+          "route": "-",
+          "indication": "Massive ICH with refractory elevated ICP; malignant cerebellar edema",
+          "dosing": {
+            "instructions": "Bone flap removal to allow brain expansion",
+            "orderSentence": "Decompressive craniectomy - - - see dosing"
+          },
+          "contraindications": "Futile prognosis; bilateral fixed dilated pupils",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Suboccipital decompressive craniectomy",
+          "route": "-",
+          "indication": "Cerebellar hemorrhage with brainstem compression",
+          "dosing": {
+            "instructions": "Posterior fossa decompression; life-saving for cerebellar ICH with brainstem compression",
+            "orderSentence": "Suboccipital decompressive craniectomy - - - see dosing"
+          },
+          "contraindications": "Moribund patient",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Secondary Prevention (After Acute Phase)": [
+        {
+          "item": "Antihypertensive therapy (long-term)",
+          "route": "PO",
+          "indication": "ALL ICH patients; BP is most important modifiable risk factor",
+          "dosing": {
+            "instructions": "Target SBP <130 mmHg (SPS3 trial, PROGRESS trial); agent choice per comorbidities (ACE-I, ARB, CCB, thiazide)",
+            "orderSentence": "Antihypertensive therapy (long-term) - PO - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "Home BP monitoring; clinic BP",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Statin (controversial post-ICH)",
+          "route": "PO",
+          "indication": "Risk-benefit discussion; SPARCL showed small increased ICH risk with atorvastatin but overall cardiovascular benefit. AHA 2022: statin not contraindicated after ICH",
+          "dosing": {
+            "instructions": "Per cardiovascular risk; individualize",
+            "orderSentence": "Statin (controversial post-ICH) - PO - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "Lipid panel",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Anticoagulation restart (if AF or mechanical valve)",
+          "route": "PO",
+          "indication": "Most controversial decision. AHA 2022: may restart anticoagulation at 4-8 weeks for patients with strong indication (AF with high CHA2DS2-VASc). Avoid in CAA-related lobar ICH if possible",
+          "dosing": {
+            "instructions": "Apixaban preferred (APACHE-AF trial: lowest ICH recurrence). Timing: 4-8 weeks; individualized risk-benefit",
+            "orderSentence": "Anticoagulation restart (if AF or mechanical valve) - PO - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "Imaging stability; bleeding risk; CHA2DS2-VASc vs HAS-BLED",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Antiplatelet restart",
+          "route": "PO",
+          "indication": "RESTART trial: restarting antiplatelet after ICH is associated with LOWER risk of recurrent ICH; may restart at 2-4 weeks for patients with cardiovascular indication",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "81 mg",
+                "orderSentence": "Antiplatelet restart 81 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Aspirin 81 mg or clopidogrel 75 mg daily",
+            "orderSentence": "Antiplatelet restart 81 mg PO"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "Bleeding signs",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Left atrial appendage occlusion (LAAO/Watchman)",
+          "route": "Procedure",
+          "indication": "AF patients who cannot tolerate long-term anticoagulation post-ICH (lobar ICH, CAA)",
+          "dosing": {
+            "instructions": "Interventional cardiology procedure; eliminates need for long-term anticoagulation in AF",
+            "orderSentence": "Left atrial appendage occlusion (LAAO/Watchman) - Procedure - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "-",
+          "monitoring": "Procedural risks",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurosurgery",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "ALL ICH patients; surgical decision for EVD, hematoma evacuation, decompression"
+        },
+        {
+          "item": "Neurology / Neurocritical care",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "Medical management; BP optimization; ICP management; seizure management"
+        },
+        {
+          "item": "Hematology",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "Anticoagulant reversal guidance; coagulopathy management; thrombocytopenia"
+        },
+        {
+          "item": "Pharmacy (clinical pharmacist)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "indication": "Reversal agent dosing; anticoagulant identification; drug interactions"
+        },
+        {
+          "item": "Cardiology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "indication": "AF management; anticoagulation restart decision; LAAO evaluation; neurogenic cardiac injury"
+        },
+        {
+          "item": "Speech-language pathology (SLP)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "Dysphagia screening before PO intake; aphasia assessment"
+        },
+        {
+          "item": "Physical therapy (PT)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "Early mobilization (24-48h if stable); fall prevention; strength"
+        },
+        {
+          "item": "Occupational therapy (OT)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "ADL assessment; cognitive rehabilitation; adaptive equipment"
+        },
+        {
+          "item": "Rehabilitation medicine (physiatry)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Rehabilitation disposition; functional prognosis"
+        },
+        {
+          "item": "Social work",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Family support; advance directives; discharge planning"
+        },
+        {
+          "item": "Palliative care",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "indication": "Goals of care discussion (especially ICH score ≥3); early palliative involvement improves care quality"
+        },
+        {
+          "item": "Interventional neuroradiology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "indication": "AVM/aneurysm treatment planning; dural AV fistula"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "ICH is serious but outcomes vary; early aggressive treatment improves survival",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Call 911 if: sudden headache, new weakness, speech changes, altered consciousness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Blood pressure control is the MOST IMPORTANT factor in preventing recurrence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take all medications as prescribed; never stop blood pressure medications without physician guidance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT restart anticoagulation or antiplatelet without specific neurology/cardiology guidance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Home blood pressure monitoring daily; keep log; target per physician guidance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow-up with neurology in 2-4 weeks; neurosurgery if applicable",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT drive until cleared",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Fall prevention at home",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Blood pressure target <130/80 mmHg (most important)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation (doubles ICH risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol cessation or limitation (heavy drinking increases ICH risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cocaine/amphetamine cessation (sympathomimetic ICH)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid excessive anticoagulation (keep INR in range if on warfarin)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular exercise (moderate intensity after recovery)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Weight management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "DASH or Mediterranean diet",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Depression screening (PHQ-9 at 1-3 months)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Hemorrhagic transformation of ischemic stroke",
+      "features": "Prior ischemic infarct on imaging; onset timing suggests ischemic → hemorrhagic evolution",
+      "tests": "CT/MRI timing; DWI changes preceding hemorrhage"
+    },
+    {
+      "diagnosis": "Cerebral venous thrombosis (CVT) with hemorrhagic infarct",
+      "features": "Headache, seizures, often young women (OCPs, pregnancy); hemorrhage doesn't respect arterial territory; parasagittal location",
+      "tests": "MRV/CT venography (thrombosed sinus); D-dimer"
+    },
+    {
+      "diagnosis": "Brain tumor with hemorrhage",
+      "features": "Subacute symptoms preceding hemorrhage; ring enhancement around hemorrhage; disproportionate edema",
+      "tests": "MRI with contrast (underlying enhancing mass); biopsy"
+    },
+    {
+      "diagnosis": "Cerebral amyloid angiopathy (CAA)",
+      "features": "Lobar location (NOT deep); age >55; recurrent lobar hemorrhages; cortical superficial siderosis; multiple lobar microbleeds on SWI",
+      "tests": "MRI SWI (lobar microbleeds, superficial siderosis); Boston criteria"
+    },
+    {
+      "diagnosis": "Vascular malformation (AVM, cavernoma)",
+      "features": "Younger patient; recurrent hemorrhages at same location; AVM on CTA/DSA; cavernoma on MRI (popcorn appearance)",
+      "tests": "CTA; DSA; MRI (especially SWI)"
+    },
+    {
+      "diagnosis": "Ruptured aneurysm extending into parenchyma",
+      "features": "Subarachnoid + intraparenchymal hemorrhage; near aneurysm location",
+      "tests": "CTA (aneurysm); DSA"
+    },
+    {
+      "diagnosis": "Hypertensive ICH",
+      "features": "Deep location (putamen, thalamus, pons, cerebellum); history of poorly controlled HTN",
+      "tests": "Clinical; typical location; no underlying lesion on workup"
+    },
+    {
+      "diagnosis": "Moyamoya disease",
+      "features": "Young adults or Asian patients; recurrent stroke; stenotic proximal vessels with collateral network",
+      "tests": "MRA (ICA/MCA stenosis with Moyamoya collaterals); DSA"
+    },
+    {
+      "diagnosis": "Coagulopathy-related ICH",
+      "features": "Multiple hemorrhages; known coagulopathy or anticoagulant use",
+      "tests": "Coagulation panel; medication history"
+    },
+    {
+      "diagnosis": "Mycotic aneurysm",
+      "features": "Endocarditis; distal vessel location; fever",
+      "tests": "Blood cultures; echocardiogram; CTA/DSA"
+    },
+    {
+      "diagnosis": "Trauma",
+      "features": "History of trauma; scalp laceration; subdural or epidural components",
+      "tests": "Clinical history; CT pattern"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "SBP target <140 mmHg in acute ICH (presenting SBP 150-220)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "INTERACT2 ([Anderson et al. NEJM 2013](https://pubmed.ncbi.nlm.nih.gov/23713578/)); AHA/ASA 2022 Guidelines"
+    },
+    {
+      "recommendation": "Intensive BP lowering safe but benefit on functional outcome modest",
+      "evidenceLevel": "Class IIa, Level A",
+      "source": "ATACH-2 ([Qureshi et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27276234/)) — <140 vs <180 safe; no functional difference"
+    },
+    {
+      "recommendation": "4-factor PCC preferred over FFP for warfarin reversal",
+      "evidenceLevel": "Class I, Level B",
+      "source": "INCH trial ([Steiner et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/26898390/))"
+    },
+    {
+      "recommendation": "Idarucizumab for dabigatran reversal",
+      "evidenceLevel": "Class I, Level B",
+      "source": "RE-VERSE AD trial ([Pollack et al. NEJM 2017](https://pubmed.ncbi.nlm.nih.gov/28693366/))"
+    },
+    {
+      "recommendation": "Andexanet alfa for factor Xa inhibitor reversal",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "ANNEXA-4 ([Connolly et al. NEJM 2019](https://pubmed.ncbi.nlm.nih.gov/30730782/))"
+    },
+    {
+      "recommendation": "Platelet transfusion NOT beneficial for antiplatelet-associated ICH",
+      "evidenceLevel": "Class III (No Benefit)",
+      "source": "PATCH trial ([Baharoglu et al. Lancet 2016](https://pubmed.ncbi.nlm.nih.gov/27178479/))"
+    },
+    {
+      "recommendation": "TXA reduces expansion but NOT mortality",
+      "evidenceLevel": "Class IIb, Level B",
+      "source": "TICH-2 ([Sprigg et al. Lancet 2018](https://pubmed.ncbi.nlm.nih.gov/29778325/))"
+    },
+    {
+      "recommendation": "Surgical evacuation for cerebellar ICH with deterioration",
+      "evidenceLevel": "Class I, Level B",
+      "source": "AHA/ASA Guidelines; strong consensus"
+    },
+    {
+      "recommendation": "No benefit from routine supratentorial open surgery",
+      "evidenceLevel": "Class III (No Benefit)",
+      "source": "STICH ([Mendelow et al. Lancet 2005](https://pubmed.ncbi.nlm.nih.gov/15680453/)); STICH II (2013)"
+    },
+    {
+      "recommendation": "Minimally invasive surgery emerging benefit",
+      "evidenceLevel": "Class IIb, Level B",
+      "source": "MISTIE III ([Hanley et al. Lancet 2019](https://pubmed.ncbi.nlm.nih.gov/30739747/)); ENRICH (2024)"
+    },
+    {
+      "recommendation": "EVD for IVH with hydrocephalus",
+      "evidenceLevel": "Class I, Level B",
+      "source": "AHA/ASA Guidelines"
+    },
+    {
+      "recommendation": "Intraventricular tPA (CLEAR III)",
+      "evidenceLevel": "Class IIb, Level B",
+      "source": "[Hanley et al. (Lancet 2017)](https://pubmed.ncbi.nlm.nih.gov/28081952/) — reduced mortality but not functional outcome"
+    },
+    {
+      "recommendation": "Seizure prophylaxis NOT recommended routinely",
+      "evidenceLevel": "Class III (No Benefit)",
+      "source": "AHA/ASA 2022 — treat clinical/electrographic seizures; cEEG if altered"
+    },
+    {
+      "recommendation": "Anticoagulation restart 4-8 weeks for AF",
+      "evidenceLevel": "Class IIb, Level B",
+      "source": "AHA/ASA 2022; observational data"
+    },
+    {
+      "recommendation": "Antiplatelet restart appears safe (RESTART trial)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[RESTART trial (Lancet 2019)](https://pubmed.ncbi.nlm.nih.gov/31128924/)"
+    },
+    {
+      "recommendation": "DVT prophylaxis: pneumatic devices immediately; pharmacologic at 24-48h",
+      "evidenceLevel": "Class I, Level B",
+      "source": "AHA/ASA 2022 Guidelines"
+    },
+    {
+      "recommendation": "ICH Score for prognosis",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Hemphill et al. (Stroke 2001)](https://pubmed.ncbi.nlm.nih.gov/11283388/)"
+    },
+    {
+      "recommendation": "Normothermia improves outcomes",
+      "evidenceLevel": "Class I, Level C",
+      "source": "AHA/ASA Guidelines"
+    },
+    {
+      "recommendation": "Avoid self-fulfilling prophecy (DNR discussion timing)",
+      "evidenceLevel": "Class I, Level C",
+      "source": "AHA/ASA 2022: delay new DNR orders until at least 24h after admission"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Blood pressure (arterial line preferred in ICU)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q5min x 2h during acute reduction; q15min x 6h; then q1h x 24h; then q4h",
+      "action": "Titrate antihypertensives; avoid SBP <110"
+    },
+    {
+      "item": "GCS / Neurologic exam",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q1h x 24h, then q2h x 24h, then q4h",
+      "action": "If declining: STAT CT; ICP assessment; neurosurgery"
+    },
+    {
+      "item": "ICP (if EVD in place)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Continuous; assess q1h",
+      "action": "Tiered ICP management: drain CSF → osmotherapy → sedation → hypothermia → decompression"
+    },
+    {
+      "item": "Repeat CT head",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "At 6h (routine); at 24h; and with ANY neurologic decline",
+      "action": "If expanding: re-evaluate BP; reversal; surgical consultation"
+    },
+    {
+      "item": "Temperature",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q4h; q1h if febrile",
+      "action": "Aggressive fever management; cooling devices; infection workup"
+    },
+    {
+      "item": "Blood glucose",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q6h (q1h if insulin drip)",
+      "action": "Insulin; avoid <60"
+    },
+    {
+      "item": "Serum sodium",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q6h during osmotherapy; q12h otherwise",
+      "action": "Adjust osmotherapy"
+    },
+    {
+      "item": "Serum osmolality",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q6h during mannitol",
+      "action": "Hold mannitol if >320"
+    },
+    {
+      "item": "INR (if on warfarin)",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "15 min after PCC; then q6h x 24h; then daily",
+      "action": "Additional reversal agents"
+    },
+    {
+      "item": "Hemoglobin",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE",
+      "frequency": "q6-12h x 48h",
+      "action": "Transfuse PRBCs"
+    },
+    {
+      "item": "EEG / Seizure monitoring",
+      "ED": "-",
+      "HOSP": "URGENT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "cEEG 24-48h minimum if altered consciousness",
+      "action": "AED loading; aggressive management"
+    },
+    {
+      "item": "Swallowing screen",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "URGENT",
+      "frequency": "Before any PO intake",
+      "action": "NPO; SLP evaluation"
+    },
+    {
+      "item": "ICH Score (calculate at admission)",
+      "ED": "STAT",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Once (prognostic)",
+      "action": "Goals of care discussion if score ≥3"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Small ICH; stable exam; GCS 15; ambulatory; adequate home support; medications filled; BP controlled; follow-up arranged"
+    },
+    {
+      "disposition": "Admit to stroke unit/floor (monitored)",
+      "criteria": "Small-moderate ICH; GCS 13-15; no surgical indication; stable repeat CT; BP controlled on oral/IV medications"
+    },
+    {
+      "disposition": "Admit to neuro-ICU",
+      "criteria": "ALL moderate-large ICH; GCS <13 or declining; anticoagulant-related ICH; posterior fossa ICH; IVH with hydrocephalus; EVD in place; requiring arterial line and IV antihypertensives; post-surgical"
+    },
+    {
+      "disposition": "Emergent surgery",
+      "criteria": "Cerebellar ICH >3 cm with brainstem compression or hydrocephalus; deteriorating lobar ICH >30 mL; obstructive hydrocephalus needing EVD"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Need for neurosurgery not available; need for neuro-ICU; need for reversal agents not available; need for endovascular treatment"
+    },
+    {
+      "disposition": "Inpatient rehabilitation",
+      "criteria": "Significant deficits but able to participate in 3h/day therapy; medically stable"
+    },
+    {
+      "disposition": "Comfort care / Hospice",
+      "criteria": "ICH score ≥4; devastating ICH with poor prognosis after family goals of care discussion"
+    }
+  ]
+}

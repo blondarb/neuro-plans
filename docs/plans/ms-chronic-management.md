@@ -1,3 +1,10 @@
+---
+title: "Multiple Sclerosis - Chronic Management"
+description: "Clinical decision support for multiple sclerosis - chronic management diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Multiple Sclerosis - Chronic Management
 
 **VERSION:** 1.0
@@ -11,7 +18,7 @@
 
 **ICD-10:** G35 (Multiple sclerosis)
 
-**SYNONYMS:** Multiple sclerosis, MS, relapsing-remitting MS, RRMS, secondary progressive MS, SPMS, primary progressive MS, PPMS, demyelinating disease, chronic MS management, MS disease-modifying therapy
+**SYNONYMS:** Multiple sclerosis, MS, relapsing-remitting MS, RRMS, secondary progressive MS, SPMS, primary progressive MS, PPMS, demyelinating disease, chronic MS management, MS disease-modifying therapy, disseminated sclerosis, CNS demyelination
 
 **SCOPE:** Long-term management of multiple sclerosis in adults including disease-modifying therapy (DMT) selection and monitoring, relapse management, symptom management, and pregnancy considerations. Excludes initial diagnosis workup (see MS New Diagnosis template) and acute relapse management as primary focus.
 
@@ -37,28 +44,28 @@
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential | - | ROUTINE | ROUTINE | - | Baseline; many DMTs affect counts | Normal |
-| CMP | - | ROUTINE | ROUTINE | - | Hepatic/renal function | Normal |
-| LFTs (AST, ALT, bilirubin) | - | ROUTINE | ROUTINE | - | Baseline for hepatotoxic DMTs | Normal |
-| TSH | - | ROUTINE | ROUTINE | - | Alemtuzumab causes thyroid disease | Normal |
-| Urinalysis | - | ROUTINE | ROUTINE | - | UTI causes pseudorelapse | Negative |
-| Vitamin D (25-OH) | - | ROUTINE | ROUTINE | - | Deficiency common; may affect MS | >30 ng/mL (target 40-60) |
-| Hepatitis B/C serology | - | ROUTINE | ROUTINE | - | Reactivation risk with some DMTs | Document status |
-| HIV | - | ROUTINE | ROUTINE | - | Before immunosuppressive therapy | Negative |
+| CBC with differential (CPT 85025) | - | ROUTINE | ROUTINE | - | Baseline; many DMTs affect counts | Normal |
+| CMP (CPT 80053) | - | ROUTINE | ROUTINE | - | Hepatic/renal function | Normal |
+| LFTs (AST, ALT, bilirubin) (CPT 80076) | - | ROUTINE | ROUTINE | - | Baseline for hepatotoxic DMTs | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Alemtuzumab causes thyroid disease | Normal |
+| Urinalysis (CPT 81003) | - | ROUTINE | ROUTINE | - | UTI causes pseudorelapse | Negative |
+| Vitamin D (25-OH) (CPT 82306) | - | ROUTINE | ROUTINE | - | Deficiency common; may affect MS | >30 ng/mL (target 40-60) |
+| Hepatitis B/C serology (CPT 80074) | - | ROUTINE | ROUTINE | - | Reactivation risk with some DMTs | Document status |
+| HIV (CPT 87389) | - | ROUTINE | ROUTINE | - | Before immunosuppressive therapy | Negative |
 | VZV IgG | - | ROUTINE | ROUTINE | - | Vaccinate if seronegative before DMTs | Document; vaccinate if negative |
-| JC virus antibody (anti-JCV) | - | ROUTINE | ROUTINE | - | PML risk stratification for natalizumab | Document index |
-| Pregnancy test | - | ROUTINE | ROUTINE | - | Most DMTs contraindicated in pregnancy | Negative before starting DMT |
+| JC virus antibody (anti-JCV) (CPT 87798) | - | ROUTINE | ROUTINE | - | PML risk stratification for natalizumab | Document index |
+| Pregnancy test (CPT 84703) | - | ROUTINE | ROUTINE | - | Most DMTs contraindicated in pregnancy | Negative before starting DMT |
 
 ### 1B. Monitoring Labs (On DMT)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC | - | ROUTINE | ROUTINE | - | Lymphopenia (many DMTs), cytopenias | Per DMT thresholds |
-| LFTs | - | ROUTINE | ROUTINE | - | Hepatotoxicity monitoring | Normal |
+| CBC (CPT 85025) | - | ROUTINE | ROUTINE | - | Lymphopenia (many DMTs), cytopenias | Per DMT thresholds |
+| LFTs (CPT 80076) | - | ROUTINE | ROUTINE | - | Hepatotoxicity monitoring | Normal |
 | Lymphocyte count | - | ROUTINE | ROUTINE | - | Critical for many DMTs | Per DMT; usually >200-500 |
-| JCV antibody (if on natalizumab) | - | ROUTINE | ROUTINE | - | PML risk; repeat q6 months | Monitor index |
-| TSH (if on alemtuzumab) | - | ROUTINE | ROUTINE | - | Autoimmune thyroid disease | Normal; monthly × 48 months |
-| Creatinine, urinalysis (alemtuzumab) | - | ROUTINE | ROUTINE | - | Autoimmune nephropathy | Normal; monthly × 48 months |
+| JCV antibody (if on natalizumab) (CPT 87798) | - | ROUTINE | ROUTINE | - | PML risk; repeat q6 months | Monitor index |
+| TSH (if on alemtuzumab) (CPT 84443) | - | ROUTINE | ROUTINE | - | Autoimmune thyroid disease | Normal; monthly × 48 months |
+| Creatinine, urinalysis (alemtuzumab) (CPT 81003) | - | ROUTINE | ROUTINE | - | Autoimmune nephropathy | Normal; monthly × 48 months |
 | Platelet count (alemtuzumab) | - | ROUTINE | ROUTINE | - | ITP risk | Normal; monthly × 48 months |
 
 ---
@@ -69,16 +76,16 @@
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with and without contrast | - | ROUTINE | ROUTINE | - | Baseline, 6 months, then annually | No new/enlarging lesions | Pacemaker, metal; gadolinium in renal disease |
-| MRI cervical spine with and without contrast | - | ROUTINE | ROUTINE | - | Baseline, then PRN or q2-3 years | No new lesions | Same |
-| MRI thoracic spine (if indicated) | - | - | EXT | - | If thoracic symptoms | No new lesions | Same |
+| MRI brain with and without contrast (CPT 70553) | - | ROUTINE | ROUTINE | - | Baseline, 6 months, then annually | No new/enlarging lesions | Pacemaker, metal; gadolinium in renal disease |
+| MRI cervical spine with and without contrast (CPT 72156) | - | ROUTINE | ROUTINE | - | Baseline, then PRN or q2-3 years | No new lesions | Same |
+| MRI thoracic spine (if indicated) (CPT 72157) | - | - | EXT | - | If thoracic symptoms | No new lesions | Same |
 
 ### 2B. Additional Studies
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| OCT (optical coherence tomography) | - | - | ROUTINE | - | Baseline, annually | Stable RNFL thickness | None |
-| Evoked potentials (VEP, SSEP) | - | - | EXT | - | If clinical uncertainty | Baseline; monitor progression | None |
+| OCT (optical coherence tomography) (CPT 92134) | - | - | ROUTINE | - | Baseline, annually | Stable RNFL thickness | None |
+| Evoked potentials (VEP, SSEP) (CPT 95930) | - | - | EXT | - | If clinical uncertainty | Baseline; monitor progression | None |
 | Urodynamic studies | - | - | ROUTINE | - | If bladder symptoms | Characterize dysfunction | None |
 
 ---
@@ -87,53 +94,53 @@
 
 ### 3A. Disease-Modifying Therapies - Platform/Injectable (Moderate Efficacy)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Glatiramer acetate (Copaxone) | - | - | ROUTINE | - | 20 mg SC daily or 40 mg SC 3×/week | Hypersensitivity | Injection site reactions; lipoatrophy |
-| Interferon beta-1a (Avonex) | - | - | ROUTINE | - | 30 mcg IM weekly | Depression, hepatic disease | CBC, LFTs q6 months; flu-like symptoms |
-| Interferon beta-1a (Rebif) | - | - | ROUTINE | - | 22 or 44 mcg SC 3×/week (titrate) | Same | Same |
-| Interferon beta-1b (Betaseron, Extavia) | - | - | ROUTINE | - | 250 mcg SC every other day | Same | Same |
-| Peginterferon beta-1a (Plegridy) | - | - | ROUTINE | - | 125 mcg SC q2 weeks | Same | Same |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Glatiramer acetate (Copaxone) | SC | - | 20 mg :: SC :: daily :: 20 mg SC daily or 40 mg SC 3×/week | - | Hypersensitivity | Injection site reactions; lipoatrophy | - | - | ROUTINE | - |
+| Interferon beta-1a (Avonex) | IM | - | 30 mcg :: IM :: - :: 30 mcg IM weekly | - | Depression, hepatic disease | CBC, LFTs q6 months; flu-like symptoms | - | - | ROUTINE | - |
+| Interferon beta-1a (Rebif) | SC | - | 44 mcg :: SC :: - :: 22 or 44 mcg SC 3×/week (titrate) | - | Same | Same | - | - | ROUTINE | - |
+| Interferon beta-1b (Betaseron, Extavia) | SC | - | 250 mcg :: SC :: - :: 250 mcg SC every other day | - | Same | Same | - | - | ROUTINE | - |
+| Peginterferon beta-1a (Plegridy) | SC | - | 125 mcg :: SC :: - :: 125 mcg SC q2 weeks | - | Same | Same | - | - | ROUTINE | - |
 
 ### 3B. Disease-Modifying Therapies - Oral (Moderate-High Efficacy)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Dimethyl fumarate (Tecfidera) | - | - | ROUTINE | - | 120 mg BID × 7 days, then 240 mg BID | Lymphopenia (<500), PML risk | CBC q6 months; LFTs; GI symptoms, flushing |
-| Diroximel fumarate (Vumerity) | - | - | ROUTINE | - | 231 mg BID × 7 days, then 462 mg BID | Same | Same; less GI effects |
-| Monomethyl fumarate (Bafiertam) | - | - | ROUTINE | - | 95 mg BID × 7 days, then 190 mg BID | Same | Same |
-| Teriflunomide (Aubagio) | - | - | ROUTINE | - | 14 mg daily | Pregnancy (teratogenic), hepatic disease | LFTs monthly × 6mo; CBC; BP; pregnancy test; accelerated elimination available |
-| Fingolimod (Gilenya) | - | - | ROUTINE | - | 0.5 mg daily; first dose observation 6h | Recent MI, unstable angina, heart block, bradycardia | First-dose cardiac monitoring (6h); ophtho exam (macular edema); LFTs; varicella status; lymphocyte count |
-| Siponimod (Mayzent) | - | - | ROUTINE | - | Titration pack, then 2 mg daily (1 mg if CYP2C9 *2/*3); approved for active SPMS | Same as fingolimod; CYP2C9 testing required | Same as fingolimod; CYP2C9 genotype |
-| Ozanimod (Zeposia) | - | - | ROUTINE | - | Titration: 0.23 mg × 4d, 0.46 mg × 3d, then 0.92 mg daily | Same as fingolimod | Same; less first-dose effect |
-| Ponesimod (Ponvory) | - | - | ROUTINE | - | Titration over 14 days to 20 mg daily | Same as fingolimod | Same |
-| Cladribine (Mavenclad) | - | - | ROUTINE | - | 3.5 mg/kg total over 2 years (Year 1: 1.75 mg/kg in 2 cycles; Year 2: same); highly active RRMS | Pregnancy, HIV, active infection, malignancy | CBC q2 months Year 1, then q6 months; lymphocyte >500-800 to start |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Dimethyl fumarate (Tecfidera) | PO | - | 120 mg :: PO :: BID :: 120 mg BID × 7 days, then 240 mg BID | - | Lymphopenia (<500), PML risk | CBC q6 months; LFTs; GI symptoms, flushing | - | - | ROUTINE | - |
+| Diroximel fumarate (Vumerity) | PO | - | 231 mg :: PO :: BID :: 231 mg BID × 7 days, then 462 mg BID | - | Same | Same; less GI effects | - | - | ROUTINE | - |
+| Monomethyl fumarate (Bafiertam) | PO | - | 95 mg :: PO :: BID :: 95 mg BID × 7 days, then 190 mg BID | - | Same | Same | - | - | ROUTINE | - |
+| Teriflunomide (Aubagio) | PO | - | 14 mg :: PO :: daily :: 14 mg daily | - | Pregnancy (teratogenic), hepatic disease | LFTs monthly × 6mo; CBC; BP; pregnancy test; accelerated elimination available | - | - | ROUTINE | - |
+| Fingolimod (Gilenya) | PO | - | 0.5 mg :: PO :: daily :: 0.5 mg daily; first dose observation 6h | - | Recent MI, unstable angina, heart block, bradycardia | First-dose cardiac monitoring (6h); ophtho exam (macular edema); LFTs; varicella status; lymphocyte count | - | - | ROUTINE | - |
+| Siponimod (Mayzent) | PO | - | 2 mg :: PO :: daily :: Titration pack, then 2 mg daily (1 mg if CYP2C9 *2/*3); approved for active SPMS | - | Same as fingolimod; CYP2C9 testing required | Same as fingolimod; CYP2C9 genotype | - | - | ROUTINE | - |
+| Ozanimod (Zeposia) | PO | - | 0.23 mg :: PO :: daily :: Titration: 0.23 mg × 4d, 0.46 mg × 3d, then 0.92 mg daily | - | Same as fingolimod | Same; less first-dose effect | - | - | ROUTINE | - |
+| Ponesimod (Ponvory) | PO | - | 20 mg :: PO :: daily :: Titration over 14 days to 20 mg daily | - | Same as fingolimod | Same | - | - | ROUTINE | - |
+| Cladribine (Mavenclad) | - | - | 3.5 mg/kg :: - :: - :: 3.5 mg/kg total over 2 years (Year 1: 1.75 mg/kg in 2 cycles; Year 2: same); highly active RRMS | - | Pregnancy, HIV, active infection, malignancy | CBC q2 months Year 1, then q6 months; lymphocyte >500-800 to start | - | - | ROUTINE | - |
 
 ### 3C. Disease-Modifying Therapies - Infusion (High Efficacy)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Natalizumab (Tysabri) | - | - | ROUTINE | - | 300 mg IV q4 weeks | PML risk (JCV+, prior immunosuppression, duration >2y) | JCV antibody q6 months; MRI q6-12 months; infusion reactions |
-| Ocrelizumab (Ocrevus) | - | - | ROUTINE | - | 300 mg IV × 2 doses (2 weeks apart), then 600 mg IV q6 months | Active Hep B, active infection | Pre-infusion CBC, LFTs; HBV screening; infection monitoring; malignancy screening |
-| Ofatumumab (Kesimpta) | - | - | ROUTINE | - | 20 mg SC weeks 0, 1, 2, then 20 mg SC monthly | Same as ocrelizumab | Same; self-administered SC |
-| Ublituximab (Briumvi) | - | - | ROUTINE | - | 150 mg IV day 1, 450 mg IV day 15, then 450 mg IV q6 months | Same as ocrelizumab | Same |
-| Alemtuzumab (Lemtrada) | - | - | ROUTINE | - | Year 1: 12 mg IV daily × 5 days; Year 2: 12 mg IV daily × 3 days; highly active MS, REMS | Active infection, HIV, immunocompromised | CBC, LFTs, creatinine, urinalysis, TSH monthly × 48 months after last dose; REMS program |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Natalizumab (Tysabri) | IV | - | 300 mg :: IV :: - :: 300 mg IV q4 weeks | - | PML risk (JCV+, prior immunosuppression, duration >2y) | JCV antibody q6 months; MRI q6-12 months; infusion reactions | - | - | ROUTINE | - |
+| Ocrelizumab (Ocrevus) | IV | - | 300 mg :: IV :: - :: 300 mg IV × 2 doses (2 weeks apart), then 600 mg IV q6 months | - | Active Hep B, active infection | Pre-infusion CBC, LFTs; HBV screening; infection monitoring; malignancy screening | - | - | ROUTINE | - |
+| Ofatumumab (Kesimpta) | SC | - | 20 mg :: SC :: monthly :: 20 mg SC weeks 0, 1, 2, then 20 mg SC monthly | - | Same as ocrelizumab | Same; self-administered SC | - | - | ROUTINE | - |
+| Ublituximab (Briumvi) | IV | - | 150 mg :: IV :: - :: 150 mg IV day 1, 450 mg IV day 15, then 450 mg IV q6 months | - | Same as ocrelizumab | Same | - | - | ROUTINE | - |
+| Alemtuzumab (Lemtrada) | IV | - | 12 mg :: IV :: daily :: Year 1: 12 mg IV daily × 5 days; Year 2: 12 mg IV daily × 3 days; highly active MS, REMS | - | Active infection, HIV, immunocompromised | CBC, LFTs, creatinine, urinalysis, TSH monthly × 48 months after last dose; REMS program | - | - | ROUTINE | - |
 
 ### 3D. Treatment for Progressive MS
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Ocrelizumab (PPMS) | - | - | ROUTINE | - | 300 mg × 2, then 600 mg q6 months | Per above | Per above; only approved for PPMS |
-| Siponimod (active SPMS) | - | - | ROUTINE | - | Per above | Per above | Per above |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Ocrelizumab (PPMS) | PO | - | 300 mg :: PO :: - :: 300 mg × 2, then 600 mg q6 months | - | Per above | Per above; only approved for PPMS | - | - | ROUTINE | - |
+| Siponimod (active SPMS) | - | - | Per above | - | Per above | Per above | - | - | ROUTINE | - |
 
 ### 3E. Acute Relapse Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Methylprednisolone IV | STAT | STAT | ROUTINE | - | 1000 mg IV daily × 3-5 days | Active infection (relative), uncontrolled DM | Glucose, BP, sleep, psychiatric |
-| Prednisone oral (alternative) | - | ROUTINE | ROUTINE | - | 1250 mg PO daily × 3-5 days (bioequivalent to IV) | Same | Same |
-| Plasma exchange (PLEX) | - | STAT | - | - | 5-7 exchanges over 2 weeks; severe relapse not responding to steroids | Hemodynamic instability | Electrolytes, coagulation |
-| ACTH gel (Acthar) | - | - | ROUTINE | - | 80-120 units IM daily × 2-3 weeks; alternative to steroids | Same as steroids | Same |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Methylprednisolone IV (CPT 96365) | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily × 3-5 days | Active infection (relative), uncontrolled DM | Glucose, BP, sleep, psychiatric | STAT | STAT | ROUTINE | - |
+| Prednisone oral (alternative) | IV | - | 1250 mg :: IV :: daily :: 1250 mg PO daily × 3-5 days (bioequivalent to IV) | Same | Same | - | ROUTINE | ROUTINE | - |
+| Plasma exchange (PLEX) (CPT 36514) | - | - | 5-7 exchanges over 2 weeks; severe relapse not responding to steroids | Hemodynamic instability | Electrolytes, coagulation | - | STAT | - | - |
+| ACTH gel (Acthar) | IM | - | 80-120 units :: IM :: daily :: 80-120 units IM daily × 2-3 weeks; alternative to steroids | Same as steroids | Same | - | - | ROUTINE | - |
 
 ### 3F. Symptom Management
 
@@ -249,13 +256,13 @@
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | High-efficacy DMTs reduce relapses/progression | Class I, Level A | Multiple RCTs |
-| Ocrelizumab effective for PPMS | Class I, Level A | ORATORIO trial |
+| Ocrelizumab effective for PPMS | Class I, Level A | [ORATORIO trial](https://pubmed.ncbi.nlm.nih.gov/28002688/) |
 | Early high-efficacy treatment improves long-term outcomes | Class II, Level B | Observational data |
 | IV steroids for acute relapse | Class I, Level A | Multiple RCTs |
 | Vitamin D supplementation may reduce relapse | Class II, Level B | Observational data; RCTs ongoing |
 | Exercise improves fatigue and quality of life | Class I, Level A | Multiple RCTs |
 | Natalizumab PML risk stratification | Class I | JCV antibody testing; risk algorithms |
-| Siponimod for active SPMS | Class I, Level A | EXPAND trial |
+| Siponimod for active SPMS | Class I, Level A | [EXPAND trial](https://pubmed.ncbi.nlm.nih.gov/29576505/) |
 
 ---
 

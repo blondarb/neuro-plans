@@ -1,3 +1,10 @@
+---
+title: "Cluster Headache"
+description: "Clinical decision support for cluster headache diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Cluster Headache
 
 **VERSION:** 1.0
@@ -9,9 +16,9 @@
 
 **DIAGNOSIS:** Cluster Headache
 
-**ICD-10:** G44.009 (Cluster headache syndrome, unspecified, not intractable), G44.019 (Cluster headache syndrome, unspecified, intractable), G44.001 (Episodic cluster headache, not intractable), G44.011 (Episodic cluster headache, intractable), G44.009 (Chronic cluster headache)
+**ICD-10:** G44.009 (Cluster headache syndrome, unspecified, not intractable), G44.019 (Cluster headache syndrome, unspecified, intractable), G44.001 (Episodic cluster headache, not intractable), G44.011 (Episodic cluster headache, intractable), G44.021 (Chronic cluster headache, not intractable), G44.029 (Chronic cluster headache, not intractable, unspecified), G44.031 (Chronic cluster headache, intractable), G44.039 (Chronic cluster headache, intractable, unspecified)
 
-**SYNONYMS:** Cluster headache, CH, cluster headache syndrome, histamine headache, Horton's headache, alarm clock headache, suicide headache, trigeminal autonomic cephalalgia, TAC
+**SYNONYMS:** Cluster headache, CH, cluster headache syndrome, histamine headache, Horton's headache, Horton's neuralgia, alarm clock headache, suicide headache, trigeminal autonomic cephalalgia, TAC, episodic cluster headache, chronic cluster headache, cluster period, cluster bout, migrainous neuralgia, ciliary neuralgia, erythroprosopalgia, Sluder's neuralgia, sphenopalatine neuralgia, Bing-Horton syndrome, autonomic cephalalgia
 
 **SCOPE:** Diagnosis and management of episodic and chronic cluster headache in adults. Covers acute abortive treatment, transitional therapy, and preventive medication. Excludes other trigeminal autonomic cephalalgias (paroxysmal hemicrania, SUNCT/SUNA, hemicrania continua), migraine, and secondary causes of headache.
 
@@ -48,15 +55,15 @@
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC | - | ROUTINE | ROUTINE | - | Baseline | Normal |
-| CMP | - | ROUTINE | ROUTINE | - | Baseline; before starting verapamil | Normal |
-| TSH | - | ROUTINE | ROUTINE | - | Thyroid dysfunction | Normal |
+| CBC (CPT 85025) | - | ROUTINE | ROUTINE | - | Baseline | Normal |
+| CMP (CPT 80053) | - | ROUTINE | ROUTINE | - | Baseline; before starting verapamil | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction | Normal |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| ESR/CRP | URGENT | ROUTINE | ROUTINE | - | If GCA suspected (older patient, new onset) | Normal |
+| ESR (CPT 85652) / CRP (CPT 86140) | URGENT | ROUTINE | ROUTINE | - | If GCA suspected (older patient, new onset) | Normal |
 | Pituitary hormone panel | - | - | EXT | - | If pituitary lesion suspected | Normal |
 
 ### 1C. Rare/Specialized
@@ -74,14 +81,14 @@
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MRI brain with pituitary protocol | - | ROUTINE | ROUTINE | - | At diagnosis (once) | Rule out secondary causes (pituitary lesion, cavernous sinus lesion) | Pacemaker, metal |
-| MRA head | - | ROUTINE | ROUTINE | - | If vascular lesion suspected | Normal vasculature | Per MRI |
+| MRA head (CPT 70544) | - | ROUTINE | ROUTINE | - | If vascular lesion suspected | Normal vasculature | Per MRI |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head | STAT | STAT | - | - | If acute concern (thunderclap, first presentation) | Rule out hemorrhage | None |
-| ECG | STAT | STAT | ROUTINE | - | Before verapamil; baseline | Normal rhythm, PR interval | None |
+| CT head (CPT 70450) | STAT | STAT | - | - | If acute concern (thunderclap, first presentation) | Rule out hemorrhage | None |
+| ECG (CPT 93000) | STAT | STAT | ROUTINE | - | Before verapamil; baseline | Normal rhythm, PR interval | None |
 
 ---
 
@@ -89,54 +96,54 @@
 
 ### 3A. Acute/Abortive Treatment (During Attack)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| High-flow oxygen | STAT | STAT | ROUTINE | - | 100% O2 at 12-15 L/min via non-rebreather mask × 15-20 min; can repeat | None; safe in COPD for acute use | O2 sat; usually aborts attack in 15 min |
-| Sumatriptan SC | STAT | STAT | ROUTINE | - | 6 mg SC; may use up to 2 doses/24h (minimum 1h apart); max 12 mg/24h | CAD, uncontrolled HTN, recent stroke/TIA, hemiplegic migraine | Chest tightness, BP |
-| Sumatriptan nasal | STAT | STAT | ROUTINE | - | 20 mg intranasal; less effective than SC | Same as SC | Same |
-| Zolmitriptan nasal | STAT | STAT | ROUTINE | - | 5 mg intranasal; may repeat in 2h; max 10 mg/24h | Same as sumatriptan | Same |
-| Lidocaine intranasal | URGENT | URGENT | ROUTINE | - | 4% lidocaine 1 mL applied to ipsilateral nostril (head tilted back); can repeat | Local anesthetic allergy | May provide partial/temporary relief |
-| Octreotide SC | - | EXT | EXT | - | 100 mcg SC; second-line if triptans contraindicated | None significant | GI upset |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| High-flow oxygen | INH | - | 100% :: INH :: - :: 100% O2 at 12-15 L/min via non-rebreather mask × 15-20 min; can repeat | None; safe in COPD for acute use | O2 sat; usually aborts attack in 15 min | STAT | STAT | ROUTINE | - |
+| Sumatriptan SC | SC | - | 6 mg :: SC :: - :: 6 mg SC; may use up to 2 doses/24h (minimum 1h apart); max 12 mg/24h | CAD, uncontrolled HTN, recent stroke/TIA, hemiplegic migraine | Chest tightness, BP | STAT | STAT | ROUTINE | - |
+| Sumatriptan nasal | IN | - | 20 mg :: SC :: - :: 20 mg intranasal; less effective than SC | Same as SC | Same | STAT | STAT | ROUTINE | - |
+| Zolmitriptan nasal | IN | - | 5 mg :: IN :: - :: 5 mg intranasal; may repeat in 2h; max 10 mg/24h | Same as sumatriptan | Same | STAT | STAT | ROUTINE | - |
+| Lidocaine intranasal | IN | - | 1 mL :: - :: - :: 4% lidocaine 1 mL applied to ipsilateral nostril (head tilted back); can repeat | Local anesthetic allergy | May provide partial/temporary relief | URGENT | URGENT | ROUTINE | - |
+| Octreotide SC | SC | - | 100 mcg :: SC :: - :: 100 mcg SC; second-line if triptans contraindicated | None significant | GI upset | - | EXT | EXT | - |
 
 ### 3B. Transitional (Bridge) Therapy
 
 **Purpose:** Rapid suppression of attacks while preventive medication takes effect (2-3 weeks)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Prednisone | - | STAT | ROUTINE | - | 60-80 mg daily × 5 days, then taper by 10 mg q3 days; OR 1 mg/kg × 5 days then rapid taper; total course ~2-3 weeks | Uncontrolled DM, active infection | Glucose, GI prophylaxis |
-| Dexamethasone | - | STAT | ROUTINE | - | 4-8 mg BID × 1-2 weeks, then taper | Same | Same |
-| Greater occipital nerve block (GON block) | - | ROUTINE | ROUTINE | - | Lidocaine 2% (2 mL) + triamcinolone 40 mg or methylprednisolone 40 mg; inject ipsilateral or bilateral | Anticoagulation, local infection | May provide 2-4 weeks relief |
-| Suboccipital steroid injection | - | ROUTINE | ROUTINE | - | Similar to GON block; ipsilateral | Same | Same |
-| DHE protocol (inpatient) | - | STAT | - | - | DHE 0.5-1 mg IV q8h × 3-5 days (with antiemetic pretreatment) | CAD, CVA, uncontrolled HTN, triptans <24h | BP, nausea, peripheral vasoconstriction |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Prednisone | - | - | 60-80 mg :: - :: daily :: 60-80 mg daily × 5 days, then taper by 10 mg q3 days; OR 1 mg/kg × 5 days then rapid taper; total course ~2-3 weeks | Uncontrolled DM, active infection | Glucose, GI prophylaxis | - | STAT | ROUTINE | - |
+| Dexamethasone | PO | - | 4-8 mg :: PO :: BID :: 4-8 mg BID × 1-2 weeks, then taper | Same | Same | - | STAT | ROUTINE | - |
+| Greater occipital nerve block (GON block) | - | - | 2 mL :: - :: - :: Lidocaine 2% (2 mL) + triamcinolone 40 mg or methylprednisolone 40 mg; inject ipsilateral or bilateral | Anticoagulation, local infection | May provide 2-4 weeks relief | - | ROUTINE | ROUTINE | - |
+| Suboccipital steroid injection | - | - | Similar to GON block; ipsilateral | Same | Same | - | ROUTINE | ROUTINE | - |
+| DHE protocol (inpatient) (CPT 96365) | IV | - | 0.5-1 mg :: IV :: q8h :: DHE 0.5-1 mg IV q8h × 3-5 days (with antiemetic pretreatment) | CAD, CVA, uncontrolled HTN, triptans <24h | BP, nausea, peripheral vasoconstriction | - | STAT | - | - |
 
 ### 3C. Preventive Therapy - First-Line
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Verapamil | - | ROUTINE | ROUTINE | - | Start 80 mg TID; increase by 80 mg q1-2 weeks to 240-960 mg/day in divided doses (some patients need >480 mg/day) | Heart block (2nd/3rd degree), sick sinus, severe LV dysfunction, WPW | ECG at baseline, after each dose increase; PR interval (hold if >280 ms) |
-| Lithium | - | ROUTINE | ROUTINE | - | Start 300 mg BID-TID; target serum level 0.6-1.0 mEq/L; usual dose 600-1200 mg/day | Renal impairment, thyroid disease, dehydration, sodium depletion | Lithium level, renal function, TSH q3-6 months |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Verapamil | PO | - | 80 mg :: PO :: TID :: Start 80 mg TID; increase by 80 mg q1-2 weeks to 240-960 mg/day in divided doses (some patients need >480 mg/day) | Heart block (2nd/3rd degree), sick sinus, severe LV dysfunction, WPW | ECG at baseline, after each dose increase; PR interval (hold if >280 ms) | - | ROUTINE | ROUTINE | - |
+| Lithium | PO | - | 300 mg :: PO :: BID :: Start 300 mg BID-TID; target serum level 0.6-1.0 mEq/L; usual dose 600-1200 mg/day | Renal impairment, thyroid disease, dehydration, sodium depletion | Lithium level, renal function, TSH q3-6 months | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Preventive Therapy - Second-Line
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Topiramate | - | ROUTINE | ROUTINE | - | Start 25 mg daily; titrate to 100-200 mg/day | Kidney stones, glaucoma, pregnancy | Cognitive effects, paresthesias, metabolic acidosis |
-| Melatonin | - | - | ROUTINE | - | 9-10 mg QHS (higher than sleep doses) | None significant | Sedation |
-| Galcanezumab (CGRP mAb) | - | - | ROUTINE | - | 300 mg SC monthly (FDA approved for episodic CH) | Hypersensitivity | Injection site reactions |
-| Valproate | - | ROUTINE | ROUTINE | - | 500-2000 mg/day in divided doses | Pregnancy, hepatic disease | LFTs, ammonia |
-| Gabapentin | - | ROUTINE | ROUTINE | - | 900-3600 mg/day; limited evidence | Renal impairment | Sedation |
-| Ergotamine (prophylactic) | - | - | ROUTINE | - | 1-2 mg at bedtime if nocturnal attacks | Same as DHE | Limited to <2 weeks to avoid overuse |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Topiramate | PO | - | 25 mg :: PO :: daily :: Start 25 mg daily; titrate to 100-200 mg/day | - | Kidney stones, glaucoma, pregnancy | Cognitive effects, paresthesias, metabolic acidosis | - | ROUTINE | ROUTINE | - |
+| Melatonin | PO | - | 9-10 mg :: PO :: QHS :: 9-10 mg QHS (higher than sleep doses) | - | None significant | Sedation | - | - | ROUTINE | - |
+| Galcanezumab (CGRP mAb) | SC | - | 300 mg :: SC :: monthly :: 300 mg SC monthly (FDA approved for episodic CH) | - | Hypersensitivity | Injection site reactions | - | - | ROUTINE | - |
+| Valproate | PO | - | 500-2000 mg/day :: PO :: - :: 500-2000 mg/day in divided doses | - | Pregnancy, hepatic disease | LFTs, ammonia | - | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | - | 900-3600 mg/day :: PO :: - :: 900-3600 mg/day; limited evidence | - | Renal impairment | Sedation | - | ROUTINE | ROUTINE | - |
+| Ergotamine (prophylactic) | - | - | 1-2 mg :: PO :: - :: 1-2 mg at bedtime if nocturnal attacks | - | Same as DHE | Limited to <2 weeks to avoid overuse | - | - | ROUTINE | - |
 
 ### 3E. Refractory Chronic Cluster Headache
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Combination verapamil + lithium | - | ROUTINE | ROUTINE | - | Use both at therapeutic doses | Per individual agents | Per individual agents |
-| OnabotulinumtoxinA | - | - | EXT | - | Off-label; pericranial injections | Infection at site | Limited evidence |
-| Occipital nerve stimulation (ONS) | - | - | EXT | - | Implantable device; for refractory cases | Poor surgical candidate | Specialist decision |
-| Sphenopalatine ganglion stimulation | - | - | EXT | - | Implantable device (Pulsante) | Poor surgical candidate | Specialist decision |
-| Deep brain stimulation (hypothalamus) | - | - | EXT | - | Research settings; highly refractory | Multiple | Specialist decision |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Combination verapamil + lithium | - | - | Use both at therapeutic doses | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
+| OnabotulinumtoxinA | - | - | Off-label; pericranial injections | Infection at site | Limited evidence | - | - | EXT | - |
+| Occipital nerve stimulation (ONS) | - | - | Implantable device; for refractory cases | Poor surgical candidate | Specialist decision | - | - | EXT | - |
+| Sphenopalatine ganglion stimulation | - | - | Implantable device (Pulsante) | Poor surgical candidate | Specialist decision | - | - | EXT | - |
+| Deep brain stimulation (hypothalamus) | - | - | Research settings; highly refractory | Multiple | Specialist decision | - | - | EXT | - |
 
 ---
 
@@ -226,7 +233,7 @@
 | Lithium effective for chronic cluster | Class II, Level B | RCTs with limitations |
 | Corticosteroids effective for transitional therapy | Class II, Level B | Multiple studies |
 | Greater occipital nerve block effective | Class II, Level B | Multiple studies |
-| Galcanezumab approved for episodic CH | Class I, Level A | FDA approved 2019; GAAIN trial |
+| Galcanezumab approved for episodic CH | Class I, Level A | FDA approved 2019; [GAAIN trial (Goadsby et al., NEJM 2019)](https://pubmed.ncbi.nlm.nih.gov/31291515/) |
 | Indomethacin response distinguishes paroxysmal hemicrania | Class I | Diagnostic criterion |
 
 ---

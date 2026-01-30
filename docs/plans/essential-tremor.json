@@ -1,0 +1,1028 @@
+{
+  "id": "essential-tremor",
+  "title": "Essential Tremor",
+  "version": "1.0",
+  "icd10": [
+    "** G25.0 (Essential tremor)",
+    "G25.1 (Drug-induced tremor)",
+    "G25.2 (Other specified forms of tremor)",
+    "G25.9 (Extrapyramidal and movement disorder",
+    "unspecified)"
+  ],
+  "scope": "** Diagnosis and management of essential tremor in adults. Covers diagnostic workup to differentiate from Parkinson's disease and other tremor disorders, pharmacologic and non-pharmacologic treatment options. Excludes enhanced physiologic tremor, drug-induced tremor, psychogenic tremor, and tremor as part of other movement disorders (PD, dystonia, cerebellar disease).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hyperthyroidism causes tremor",
+          "target": "Normal (0.4-4.0 mIU/L)"
+        },
+        {
+          "item": "Free T4",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If TSH abnormal",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Electrolyte abnormalities, hepatic/renal function",
+          "target": "Normal"
+        },
+        {
+          "item": "Glucose",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypoglycemia can cause tremor",
+          "target": "Normal"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Serum ceruloplasmin",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Wilson disease if <50 years or atypical features",
+          "target": "20-40 mg/dL"
+        },
+        {
+          "item": "24-hour urine copper",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If ceruloplasmin low/borderline",
+          "target": "<100 mcg/24h"
+        },
+        {
+          "item": "Liver function tests",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Wilson disease, hepatic encephalopathy",
+          "target": "Normal"
+        },
+        {
+          "item": "Serum copper",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Wilson disease",
+          "target": "Normal"
+        },
+        {
+          "item": "Vitamin B12",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency can cause tremor",
+          "target": ">400 pg/mL"
+        },
+        {
+          "item": "Drug/toxin screen",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Drug-induced tremor",
+          "target": "Negative"
+        },
+        {
+          "item": "Caffeine intake assessment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Excessive caffeine exacerbates tremor",
+          "target": "Assess"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Genetic testing (LINGO1, ETM1/2)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Family history, research interest",
+          "target": "Informational"
+        },
+        {
+          "item": "Anti-neuronal antibodies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If autoimmune cause suspected",
+          "target": "Negative"
+        },
+        {
+          "item": "Heavy metal levels",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Mercury, lead exposure",
+          "target": "Normal"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Clinical examination",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At diagnosis",
+          "target": "Bilateral action tremor, no rest tremor, no parkinsonism",
+          "contraindications": "None"
+        },
+        {
+          "item": "Handwriting sample",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At diagnosis, follow-up",
+          "target": "Large, tremulous writing (vs micrographia in PD)",
+          "contraindications": "None"
+        },
+        {
+          "item": "Spiral drawing test",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At diagnosis, follow-up",
+          "target": "Objective tremor assessment",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain without contrast",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If atypical features or diagnostic uncertainty",
+          "target": "Rule out structural cause, cerebellar lesions",
+          "contraindications": "Pacemaker, metal"
+        },
+        {
+          "item": "DaTscan (I-123 ioflupane SPECT)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Differentiate ET from PD if uncertain",
+          "target": "Normal in ET; reduced striatal uptake in PD",
+          "contraindications": "Pregnancy, iodine allergy"
+        },
+        {
+          "item": "Accelerometry/Tremor analysis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Objective quantification, research",
+          "target": "Characterize tremor frequency (4-12 Hz)",
+          "contraindications": "None"
+        },
+        {
+          "item": "EMG",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If neuropathic tremor suspected",
+          "target": "Rule out neuropathy",
+          "contraindications": "None"
+        },
+        {
+          "item": "MRI with susceptibility-weighted imaging",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If Wilson disease suspected",
+          "target": "Rule out basal ganglia T2 hypointensity",
+          "contraindications": "Per MRI"
+        }
+      ]
+    },
+    "Treatment": {
+      "First-Line Pharmacologic Treatment": [
+        {
+          "item": "Propranolol (Inderal)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-40 mg",
+                "orderSentence": "Propranolol (Inderal) 20-40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 20-40 mg BID-TID; titrate to 120-320 mg/day in divided doses",
+            "orderSentence": "Propranolol (Inderal) 20-40 mg PO"
+          },
+          "contraindications": "Asthma, COPD, bradycardia, AV block, decompensated heart failure, depression",
+          "monitoring": "HR, BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Propranolol LA",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60-80 mg",
+                "orderSentence": "Propranolol LA 60-80 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 60-80 mg daily; titrate to 160-320 mg daily",
+            "orderSentence": "Propranolol LA 60-80 mg PO"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Primidone (Mysoline)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5-25 mg",
+                "orderSentence": "Primidone (Mysoline) 12.5-25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 12.5-25 mg QHS; titrate very slowly by 12.5-25 mg/week to 250-750 mg/day in divided doses",
+            "orderSentence": "Primidone (Mysoline) 12.5-25 mg PO"
+          },
+          "contraindications": "Porphyria, severe sedation",
+          "monitoring": "Sedation, ataxia, nausea (start very low)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-Line Pharmacologic Treatment": [
+        {
+          "item": "Topiramate (Topamax)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Topiramate (Topamax) 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; titrate by 25-50 mg/week to 100-400 mg/day in divided doses",
+            "orderSentence": "Topiramate (Topamax) 25 mg PO"
+          },
+          "contraindications": "Kidney stones, glaucoma, pregnancy",
+          "monitoring": "Cognitive effects, paresthesias, weight loss",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin (Neurontin)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin (Neurontin) 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg daily; titrate to 300-600 mg TID (900-1800 mg/day)",
+            "orderSentence": "Gabapentin (Neurontin) 300 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose)",
+          "monitoring": "Sedation, dizziness, edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alprazolam (Xanax)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25-0.5 mg",
+                "orderSentence": "Alprazolam (Xanax) 0.25-0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.25-0.5 mg TID; max 3 mg/day; use cautiously",
+            "orderSentence": "Alprazolam (Xanax) 0.25-0.5 mg PO"
+          },
+          "contraindications": "Respiratory depression, addiction potential, elderly falls",
+          "monitoring": "Sedation, dependence, falls",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonazepam (Klonopin)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Clonazepam (Klonopin) 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.5 mg TID; titrate to 2-4 mg/day",
+            "orderSentence": "Clonazepam (Klonopin) 0.5 mg PO"
+          },
+          "contraindications": "Same as alprazolam",
+          "monitoring": "Same",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Atenolol",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50-100 mg",
+                "orderSentence": "Atenolol 50-100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50-100 mg daily; less CNS penetration than propranolol",
+            "orderSentence": "Atenolol 50-100 mg PO"
+          },
+          "contraindications": "Same as propranolol",
+          "monitoring": "HR, BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nadolol",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40-160 mg",
+                "orderSentence": "Nadolol 40-160 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "40-160 mg daily; long-acting, once daily",
+            "orderSentence": "Nadolol 40-160 mg PO"
+          },
+          "contraindications": "Same as propranolol",
+          "monitoring": "HR, BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Third-Line and Adjunctive Treatments": [
+        {
+          "item": "Botulinum toxin (OnabotulinumtoxinA)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50-100 units",
+                "orderSentence": "Botulinum toxin (OnabotulinumtoxinA) 50-100 units -"
+              }
+            ],
+            "route": "-",
+            "instructions": "50-100 units per arm for hand tremor; 40-400 units for head tremor; q3 months",
+            "orderSentence": "Botulinum toxin (OnabotulinumtoxinA) 50-100 units -"
+          },
+          "contraindications": "Infection at injection site, myasthenia",
+          "monitoring": "Weakness, dysphagia (head/voice injections)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Propranolol + Primidone combination",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Use lower doses of each; synergistic effect",
+            "orderSentence": "Propranolol + Primidone combination - - - see dosing"
+          },
+          "contraindications": "Per individual agents",
+          "monitoring": "Per individual agents",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nimodipine",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Nimodipine 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "30 mg TID; limited evidence",
+            "orderSentence": "Nimodipine 30 mg PO"
+          },
+          "contraindications": "Hypotension",
+          "monitoring": "BP",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Zonisamide",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100-200 mg",
+                "orderSentence": "Zonisamide 100-200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100-200 mg daily; off-label",
+            "orderSentence": "Zonisamide 100-200 mg PO"
+          },
+          "contraindications": "Sulfa allergy, kidney stones",
+          "monitoring": "Kidney stones, cognitive",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Interventional Treatments": [
+        {
+          "item": "Deep brain stimulation (DBS)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "VIM thalamus target; bilateral or unilateral",
+            "orderSentence": "Deep brain stimulation (DBS) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "Bleeding risk, active infection, severe cognitive impairment",
+          "monitoring": "Speech, gait, stimulator function",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI-guided focused ultrasound (MRgFUS)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "VIM thalamotomy; unilateral only",
+            "orderSentence": "MRI-guided focused ultrasound (MRgFUS) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "Skull density ratio issues, intracranial lesions",
+          "monitoring": "Speech, gait, sensory changes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Gamma Knife thalamotomy",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "VIM target; unilateral; delayed effect",
+            "orderSentence": "Gamma Knife thalamotomy - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "Per radiosurgery",
+          "monitoring": "Same as MRgFUS",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Non-Pharmacologic Treatments": [
+        {
+          "item": "Weighted utensils",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Reduce tremor amplitude during eating",
+            "orderSentence": "Weighted utensils - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "OT can assist with selection",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wrist weights",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Dampen tremor during activities",
+            "orderSentence": "Wrist weights - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "May cause fatigue",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Adaptive devices",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Two-handled cups, rocker knives, button hooks",
+            "orderSentence": "Adaptive devices - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "OT referral",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cala Trio device",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "FDA-approved wrist-worn peripheral nerve stimulation; 2x daily for 40 min",
+            "orderSentence": "Cala Trio device - - - see dosing"
+          },
+          "contraindications": "Pacemaker/implanted device, pregnancy",
+          "monitoring": "Prescription medical device",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Limit caffeine",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Caffeine exacerbates tremor",
+            "orderSentence": "Limit caffeine - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Patient education",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid triggers",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Stress, fatigue, stimulants worsen tremor",
+            "orderSentence": "Avoid triggers - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Patient education",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress management",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Relaxation techniques, biofeedback",
+            "orderSentence": "Stress management - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Tremor worsens with anxiety",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Movement disorder specialist",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Diagnostic uncertainty, treatment-refractory tremor, DBS candidacy"
+        },
+        {
+          "item": "Occupational therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Adaptive equipment, handwriting strategies, ADL assistance"
+        },
+        {
+          "item": "Physical therapy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Balance, gait training if affected"
+        },
+        {
+          "item": "Speech therapy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Voice tremor management"
+        },
+        {
+          "item": "Neurosurgery",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "DBS candidacy evaluation"
+        },
+        {
+          "item": "Interventional radiology/MRgFUS center",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Focused ultrasound evaluation"
+        },
+        {
+          "item": "Neuropsychology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Pre-DBS cognitive assessment"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "ET is a chronic condition but does not reduce life expectancy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Tremor may worsen slowly over time but many patients do well with treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol provides temporary relief but is not a recommended treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Medications work best when taken consistently",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid caffeine and stimulants which worsen tremor",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Get adequate sleep; fatigue worsens tremor",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Join International Essential Tremor Foundation support network",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Inform doctors of ET before procedures (tremor may complicate surgery)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Reduce or eliminate caffeine intake",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain regular sleep schedule",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stress reduction techniques",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit alcohol to social amounts (not as tremor treatment)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular exercise for overall health",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Use adaptive equipment for functional independence",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Parkinson's disease",
+      "features": "Rest tremor (4-6 Hz), asymmetric onset, bradykinesia, rigidity, postural instability",
+      "tests": "Clinical exam; DaTscan reduced in PD"
+    },
+    {
+      "diagnosis": "Enhanced physiologic tremor",
+      "features": "Low amplitude, high frequency (8-12 Hz), associated with anxiety, caffeine, medications, hyperthyroidism",
+      "tests": "TSH, medication review, resolves with trigger removal"
+    },
+    {
+      "diagnosis": "Drug-induced tremor",
+      "features": "Temporal relationship to medication (lithium, valproate, SSRIs, stimulants, bronchodilators)",
+      "tests": "Medication review; improves with dose reduction"
+    },
+    {
+      "diagnosis": "Dystonic tremor",
+      "features": "Irregular, jerky, \"null point\" present, associated dystonic posturing",
+      "tests": "Clinical features; may respond to botox"
+    },
+    {
+      "diagnosis": "Cerebellar tremor",
+      "features": "Intention tremor worse at target, associated ataxia, dysmetria, other cerebellar signs",
+      "tests": "MRI brain; cerebellar atrophy/lesion"
+    },
+    {
+      "diagnosis": "Wilson disease",
+      "features": "Young onset (<50), KF rings, liver disease, psychiatric symptoms, varied movement disorders",
+      "tests": "Ceruloplasmin, 24h urine copper, slit lamp exam"
+    },
+    {
+      "diagnosis": "Psychogenic tremor",
+      "features": "Variable frequency, distractible, entrainment, inconsistent pattern, sudden onset",
+      "tests": "Clinical observation; psychiatric assessment"
+    },
+    {
+      "diagnosis": "Orthostatic tremor",
+      "features": "High frequency (13-18 Hz), occurs only when standing, relief with sitting/walking",
+      "tests": "EMG shows characteristic high frequency"
+    },
+    {
+      "diagnosis": "Hyperthyroidism",
+      "features": "Associated hyperthyroid symptoms (weight loss, palpitations, heat intolerance)",
+      "tests": "TSH, free T4"
+    },
+    {
+      "diagnosis": "Rubral (Holmes) tremor",
+      "features": "Combination of rest, postural, and action tremor; large amplitude; midbrain lesion",
+      "tests": "MRI brain showing midbrain pathology"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Propranolol effective for ET",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Cochrane Reviews; AAN Guidelines 2011"
+    },
+    {
+      "recommendation": "Primidone effective for ET",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Cochrane Reviews; AAN Guidelines 2011"
+    },
+    {
+      "recommendation": "Propranolol + Primidone combination",
+      "evidenceLevel": "Class II, Level B",
+      "source": "AAN Guidelines 2011"
+    },
+    {
+      "recommendation": "Topiramate effective for ET",
+      "evidenceLevel": "Class I, Level B",
+      "source": "AAN Guidelines 2011"
+    },
+    {
+      "recommendation": "Gabapentin possibly effective",
+      "evidenceLevel": "Class II, Level U",
+      "source": "AAN Guidelines 2011"
+    },
+    {
+      "recommendation": "Botulinum toxin for hand tremor",
+      "evidenceLevel": "Class II, Level B",
+      "source": "AAN Guidelines 2011"
+    },
+    {
+      "recommendation": "DBS effective for medically refractory ET",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple RCTs"
+    },
+    {
+      "recommendation": "MRgFUS (focused ultrasound) effective",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Elias et al., NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27557301/)"
+    },
+    {
+      "recommendation": "DaTscan differentiates ET from PD",
+      "evidenceLevel": "Class II, Level B",
+      "source": "FDA approved 2011"
+    },
+    {
+      "recommendation": "Cala Trio wrist device",
+      "evidenceLevel": "Class II, Level B",
+      "source": "FDA approved 2018"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Tremor severity (clinical rating scale)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "action": "Adjust medications"
+    },
+    {
+      "item": "Functional impact (FTM, QUEST)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q6-12 months",
+      "action": "Add therapy, consider surgery"
+    },
+    {
+      "item": "Handwriting sample/spiral drawing",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "action": "Objective tracking"
+    },
+    {
+      "item": "Heart rate",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit if on beta-blocker",
+      "action": "Reduce dose if bradycardic"
+    },
+    {
+      "item": "Blood pressure",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit if on beta-blocker",
+      "action": "Reduce dose if hypotensive"
+    },
+    {
+      "item": "Sedation/cognitive effects",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "action": "Reduce dose or switch agent"
+    },
+    {
+      "item": "Mood",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "action": "Monitor; beta-blockers can cause depression"
+    },
+    {
+      "item": "TSH",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Annually if on medications",
+      "action": "Adjust thyroid replacement if applicable"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Most patients; diagnosis confirmed, treatment initiated"
+    },
+    {
+      "disposition": "Movement disorder referral",
+      "criteria": "Diagnostic uncertainty, DaTscan consideration, treatment-refractory, surgical candidacy"
+    },
+    {
+      "disposition": "DBS evaluation",
+      "criteria": "Moderate-severe tremor refractory to medications, adequate cognitive function, no surgical contraindications"
+    },
+    {
+      "disposition": "MRgFUS evaluation",
+      "criteria": "Unilateral tremor dominant, medications failed, not DBS candidate, meets skull density criteria"
+    },
+    {
+      "disposition": "Occupational therapy",
+      "criteria": "Functional impairment with ADLs; need for adaptive equipment"
+    }
+  ]
+}

@@ -1,0 +1,1225 @@
+{
+  "id": "transient-ischemic-attack",
+  "title": "Transient Ischemic Attack (TIA)",
+  "version": "1.0",
+  "icd10": [
+    "** G45.9 (Transient cerebral ischemic attack",
+    "unspecified)",
+    "G45.0 (Vertebro-basilar artery syndrome)",
+    "G45.1 (Carotid artery syndrome)"
+  ],
+  "scope": "** Acute evaluation and secondary prevention after transient ischemic attack in adults. Covers risk stratification (ABCD2), urgent workup (MRI with DWI, vascular imaging, cardiac evaluation), dual antiplatelet therapy initiation, and rapid secondary prevention. TIA is a medical emergency — 90-day stroke risk is 10-15% without intervention, highest in first 48h. Excludes completed ischemic stroke (see Acute Ischemic Stroke template), hemorrhagic stroke, and TIA mimics.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Point-of-care glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "-",
+          "rationale": "Hypoglycemia mimics TIA; must rule out immediately",
+          "target": ">60 mg/dL"
+        },
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thrombocytosis or thrombocytopenia; polycythemia; anemia; infection",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP (BMP + LFTs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Electrolytes; renal function for contrast; hepatic function",
+          "target": "Normal"
+        },
+        {
+          "item": "PT/INR",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Anticoagulant use; coagulopathy assessment",
+          "target": "Normal"
+        },
+        {
+          "item": "Lipid panel (fasting or non-fasting)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "LDL target <70 mg/dL; statin initiation",
+          "target": "LDL <70"
+        },
+        {
+          "item": "HbA1c",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes screening; cardiovascular risk factor",
+          "target": "<7.0%"
+        },
+        {
+          "item": "Troponin",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Concurrent ACS; cardiac embolic source",
+          "target": "Normal"
+        },
+        {
+          "item": "Blood glucose (fasting)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes screening",
+          "target": "<126 mg/dL"
+        },
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hyperthyroidism → atrial fibrillation",
+          "target": "Normal"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "ESR / CRP",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Vasculitis screen; giant cell arteritis (age >50 with TIA); inflammatory markers",
+          "target": "Normal"
+        },
+        {
+          "item": "Homocysteine",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Elevated homocysteine as independent stroke risk factor",
+          "target": "Normal (<15 µmol/L)"
+        },
+        {
+          "item": "Urine drug screen",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Cocaine/amphetamine-associated TIA/stroke",
+          "target": "Negative"
+        },
+        {
+          "item": "RPR/VDRL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Syphilitic vasculitis",
+          "target": "Non-reactive"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated vasculopathy",
+          "target": "Negative"
+        },
+        {
+          "item": "Pregnancy test (β-hCG)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Affects imaging and treatment decisions",
+          "target": "Document result"
+        },
+        {
+          "item": "Magnesium",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Electrolyte management",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Hypercoagulable panel (Protein C, S, antithrombin III, Factor V Leiden, prothrombin gene mutation)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Young patient (<50); cryptogenic TIA; personal/family history of thrombosis",
+          "target": "Normal"
+        },
+        {
+          "item": "Antiphospholipid antibodies (lupus anticoagulant, anticardiolipin, β2-glycoprotein I)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Young TIA; recurrent TIA; systemic lupus; recurrent pregnancy loss",
+          "target": "Negative"
+        },
+        {
+          "item": "ANA, dsDNA",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lupus cerebritis; vasculitis",
+          "target": "Negative"
+        },
+        {
+          "item": "ANCA (c-ANCA, p-ANCA)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "CNS vasculitis",
+          "target": "Negative"
+        },
+        {
+          "item": "Hemoglobin electrophoresis",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Sickle cell disease (young patients, African descent)",
+          "target": "Normal"
+        },
+        {
+          "item": "JAK2 mutation",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Polycythemia vera; myeloproliferative disorders",
+          "target": "Negative"
+        },
+        {
+          "item": "Lipoprotein(a)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Independent cardiovascular risk factor; elevated in 20% of population",
+          "target": "<50 mg/dL"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with DWI",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "-",
+          "timing": "Within 24h (ideally <6h). DWI-positive in 30-50% of clinical TIA — these patients are at HIGHEST stroke risk and may be reclassified as minor stroke",
+          "target": "DWI restriction = acute ischemia (even if symptoms resolved, this upgrades risk and may change to minor stroke diagnosis); FLAIR changes; prior infarcts",
+          "contraindications": "Pacemaker, metallic implants, severe claustrophobia"
+        },
+        {
+          "item": "CT head without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "Immediate (if MRI unavailable or contraindicated); excludes hemorrhage and mass",
+          "target": "No hemorrhage; no mass; may show old infarcts",
+          "contraindications": "Pregnancy (relative)"
+        },
+        {
+          "item": "CTA head and neck (OR MRA head and neck)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "-",
+          "timing": "With initial imaging or within 24h. Evaluates extracranial AND intracranial vessels",
+          "target": "Carotid stenosis (≥50% NASCET); intracranial stenosis; vertebral stenosis; dissection",
+          "contraindications": "Contrast allergy; renal impairment (for CTA). MRA: pacemaker"
+        },
+        {
+          "item": "ECG (12-lead)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Immediately",
+          "target": "Atrial fibrillation (detected in 5-10% on initial ECG); atrial flutter; acute MI; LVH; old infarct",
+          "contraindications": "None"
+        },
+        {
+          "item": "Continuous cardiac monitoring (telemetry)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "Minimum 24h in ED/hospital; ideally 48-72h",
+          "target": "Paroxysmal atrial fibrillation (detected in additional 5-7% with monitoring)",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Transthoracic echocardiogram (TTE)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within 24-48h",
+          "target": "LV thrombus; PFO; valvular disease; cardiomyopathy; akinetic segments",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Transesophageal echocardiogram (TEE) with bubble study",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If TTE nondiagnostic; cryptogenic TIA; young patient",
+          "target": "PFO with right-to-left shunt; atrial septal aneurysm; LAA thrombus; aortic arch atheroma (≥4mm)",
+          "contraindications": "Esophageal pathology"
+        },
+        {
+          "item": "Carotid duplex ultrasound",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "-",
+          "timing": "Within 24h (may be obtained instead of or in addition to CTA/MRA)",
+          "target": "Carotid stenosis ≥50%; plaque characterization; hemodynamic significance",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Extended cardiac monitoring (Holter 30-day or implantable loop recorder)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Arrange before discharge; especially if cryptogenic TIA",
+          "target": "Paroxysmal AF (detected in 12-30% with prolonged monitoring in cryptogenic cases)",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Transcranial Doppler (TCD) with bubble study",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If PFO evaluation needed (alternative to TEE bubble); also for intracranial stenosis and microembolic signals",
+          "target": "Right-to-left shunt; intracranial stenosis; microembolic signals",
+          "contraindications": "Absent temporal bone window"
+        },
+        {
+          "item": "CT perfusion",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "If diagnosis uncertain; evaluate for persistent hypoperfusion despite symptom resolution",
+          "target": "Perfusion deficits suggesting ongoing ischemic risk",
+          "contraindications": "Contrast allergy; renal impairment"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Conventional cerebral angiography (DSA)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If intracranial stenosis suspected on CTA/MRA; vasculitis workup; Moyamoya",
+          "target": "Beading (vasculitis); intimal flap (dissection); Moyamoya collaterals; intracranial stenosis quantification",
+          "contraindications": "Contrast allergy; coagulopathy"
+        },
+        {
+          "item": "MRI vessel wall imaging",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Intracranial stenosis characterization; vasculitis evaluation",
+          "target": "Vessel wall enhancement (active inflammation, unstable plaque)",
+          "contraindications": "Standard MRI contraindications"
+        },
+        {
+          "item": "Fat-saturated MRI neck",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If cervical dissection suspected (neck pain, Horner syndrome, young patient)",
+          "target": "Intramural hematoma (crescent sign)",
+          "contraindications": "Standard MRI contraindications"
+        },
+        {
+          "item": "PET-CT",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If occult malignancy suspected (Trousseau syndrome)",
+          "target": "Malignancy",
+          "contraindications": "Pregnancy"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Aspirin (loading dose)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "325 mg",
+                "orderSentence": "Aspirin (loading dose) 325 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "325 mg PO loading dose immediately upon TIA diagnosis (give in ED). Do NOT delay antiplatelet therapy",
+            "orderSentence": "Aspirin (loading dose) 325 mg PO"
+          },
+          "contraindications": "Active GI bleed; true aspirin allergy; thrombocytopenia <50K",
+          "monitoring": "GI symptoms; bleeding",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "-"
+        },
+        {
+          "item": "Clopidogrel (loading dose for DAPT)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Clopidogrel (loading dose for DAPT) 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "300 mg PO loading dose (give with aspirin for DAPT). DAPT is standard for high-risk TIA (ABCD2 ≥4) or minor stroke per CHANCE and POINT trials",
+            "orderSentence": "Clopidogrel (loading dose for DAPT) 300 mg PO"
+          },
+          "contraindications": "Active bleeding; severe hepatic impairment",
+          "monitoring": "Bleeding; CBC",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "-"
+        },
+        {
+          "item": "Dual antiplatelet therapy (DAPT maintenance): Aspirin + Clopidogrel",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "81 mg",
+                "orderSentence": "Dual antiplatelet therapy (DAPT maintenance): Aspirin + Clopidogrel 81 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Aspirin 81 mg daily + Clopidogrel 75 mg daily x 21 days (CHANCE protocol) or x 90 days (POINT protocol — higher bleeding risk with longer duration). Then transition to single antiplatelet (typically clopidogrel 75 mg or aspirin 81 mg monotherapy)",
+            "orderSentence": "Dual antiplatelet therapy (DAPT maintenance): Aspirin + Clopidogrel 81 mg -"
+          },
+          "contraindications": "Major bleeding risk; planned surgery",
+          "monitoring": "Bleeding signs; CBC monthly",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "-"
+        },
+        {
+          "item": "Dual antiplatelet therapy (alternative): Aspirin + Ticagrelor",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "81 mg",
+                "orderSentence": "Dual antiplatelet therapy (alternative): Aspirin + Ticagrelor 81 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Aspirin 81 mg daily + Ticagrelor 90 mg BID x 30 days (THALES trial; for minor stroke NIHSS ≤5). Then single antiplatelet",
+            "orderSentence": "Dual antiplatelet therapy (alternative): Aspirin + Ticagrelor 81 mg PO"
+          },
+          "contraindications": "Intracranial hemorrhage history; high bleeding risk; hepatic impairment",
+          "monitoring": "Bleeding; dyspnea (common side effect); avoid strong CYP3A4 inhibitors",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "-"
+        },
+        {
+          "item": "High-intensity statin",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "80 mg",
+                "orderSentence": "High-intensity statin 80 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Atorvastatin 80 mg PO daily (or Rosuvastatin 20-40 mg). Start immediately regardless of baseline LDL",
+            "orderSentence": "High-intensity statin 80 mg PO"
+          },
+          "contraindications": "Active liver disease; pregnancy",
+          "monitoring": "LFTs at 12 weeks; lipid panel at 4-12 weeks; CK if myalgia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "-"
+        },
+        {
+          "item": "Blood pressure management (acute)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25%",
+                "orderSentence": "Blood pressure management (acute) 25% -"
+              }
+            ],
+            "route": "-",
+            "instructions": "If SBP >220 or DBP >120 in ED: lower gently (15-25% in first 24h). If lower BP levels: permissive hypertension in first 24-48h unless end-organ damage. Avoid precipitous drops",
+            "orderSentence": "Blood pressure management (acute) 25% -"
+          },
+          "contraindications": "Carotid stenosis with hemodynamic TIA: do NOT aggressively lower BP (may worsen symptoms)",
+          "monitoring": "Neuro checks with each change; BP q1h acutely",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Secondary Prevention (Initiate Urgently)": [
+        {
+          "item": "Antihypertensive therapy (chronic)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg",
+                "orderSentence": "Antihypertensive therapy (chronic) 10-20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Target BP <130/80 mmHg. Start/restart 24-48h after TIA once stable. Agent choice per comorbidities: ACE-I/ARB first-line. Consider: Lisinopril 10-20 mg daily, Amlodipine 5-10 mg, Losartan 50-100 mg, Chlorthalidone 12.5-25 mg",
+            "orderSentence": "Antihypertensive therapy (chronic) 10-20 mg PO"
+          },
+          "contraindications": "Bilateral renal artery stenosis (ACE-I/ARB); pregnancy",
+          "monitoring": "Home BP monitoring; Cr and K+ at 1-2 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anticoagulation (if atrial fibrillation detected)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Anticoagulation (if atrial fibrillation detected) 5 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Start DOAC within 1-3 days for TIA (can start earlier than stroke). Preferred: Apixaban 5 mg BID (2.5 mg BID if criteria met). Alternative: Rivaroxaban 20 mg daily; Dabigatran 150 mg BID. Discontinue antiplatelet when anticoagulant started (do NOT combine long-term unless specific indication)",
+            "orderSentence": "Anticoagulation (if atrial fibrillation detected) 5 mg -"
+          },
+          "contraindications": "Active bleeding; mechanical valve (use warfarin); severe renal impairment",
+          "monitoring": "Renal function q6-12 months; bleeding signs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carotid endarterectomy (CEA)",
+          "route": "Surgery",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50%",
+                "orderSentence": "Carotid endarterectomy (CEA) 50% -"
+              }
+            ],
+            "route": "-",
+            "instructions": "For symptomatic carotid stenosis ≥50% (NASCET criteria); ideally performed within 2 weeks of TIA (maximum benefit). NNT = 6 for 70-99% stenosis; NNT = 22 for 50-69% stenosis",
+            "orderSentence": "Carotid endarterectomy (CEA) 50% -"
+          },
+          "contraindications": "Near-occlusion (controversial); life expectancy <5 years; severe cardiac comorbidity",
+          "monitoring": "Post-op: BP monitoring; neuro checks q1h x 24h; wound hematoma; cranial nerve injury",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "-"
+        },
+        {
+          "item": "Carotid artery stenting (CAS)",
+          "route": "Endovascular",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Alternative to CEA if: high surgical risk, prior neck radiation, prior CEA with restenosis, surgically inaccessible. Requires DAPT (aspirin + clopidogrel) post-stenting",
+            "orderSentence": "Carotid artery stenting (CAS) - Endovascular - see dosing"
+          },
+          "contraindications": "Severe aortic arch tortuosity; fresh thrombus",
+          "monitoring": "Post-procedure: BP management; neuro checks; DAPT compliance; restenosis surveillance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PFO closure",
+          "route": "Procedure",
+          "indication": "-",
+          "dosing": {
+            "instructions": "For cryptogenic TIA/stroke age 18-60 with PFO and right-to-left shunt. Reduces recurrent stroke vs medical therapy alone (CLOSE, RESPECT, REDUCE trials). Requires 3-6 months DAPT then aspirin indefinitely",
+            "orderSentence": "PFO closure - Procedure - see dosing"
+          },
+          "contraindications": "Anatomic constraints; active infection",
+          "monitoring": "Echo at 6-12 months; aspirin long-term",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ezetimibe",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Ezetimibe 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10 mg PO daily; add if LDL not at goal on max statin",
+            "orderSentence": "Ezetimibe 10 mg PO"
+          },
+          "contraindications": "LFTs; lipid panel",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PCSK9 inhibitor (evolocumab or alirocumab)",
+          "route": "SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "140 mg",
+                "orderSentence": "PCSK9 inhibitor (evolocumab or alirocumab) 140 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Evolocumab 140 mg SC q2 weeks or 420 mg monthly; if LDL not at goal on statin + ezetimibe",
+            "orderSentence": "PCSK9 inhibitor (evolocumab or alirocumab) 140 mg SC"
+          },
+          "contraindications": "Lipid panel q4-12 weeks; injection site",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Diabetes management (optimize)",
+          "route": "PO/SC",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "7%",
+                "orderSentence": "Diabetes management (optimize) 7% -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Target HbA1c <7% (individualized); GLP-1 agonists and SGLT2 inhibitors have cardiovascular benefit",
+            "orderSentence": "Diabetes management (optimize) 7% -"
+          },
+          "contraindications": "Per agent",
+          "monitoring": "HbA1c q3 months; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Medications for Specific Etiologies": [
+        {
+          "item": "Anticoagulation (warfarin)",
+          "route": "-",
+          "indication": "Mechanical heart valve + TIA",
+          "dosing": {
+            "instructions": "Warfarin to target INR 2.5-3.5; bridge with heparin",
+            "orderSentence": "Anticoagulation (warfarin) - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "INR weekly then monthly",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "DAPT long-term (aspirin + clopidogrel)",
+          "route": "-",
+          "indication": "Intracranial stenosis 70-99% (SAMMPRIS trial: medical > stenting)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "325 mg",
+                "orderSentence": "DAPT long-term (aspirin + clopidogrel) 325 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Aspirin 325 mg + clopidogrel 75 mg daily x 90 days; then single antiplatelet + aggressive risk factor management",
+            "orderSentence": "DAPT long-term (aspirin + clopidogrel) 325 mg PO"
+          },
+          "contraindications": "-",
+          "monitoring": "Bleeding; MRA q6-12 months",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Anticoagulation",
+          "route": "-",
+          "indication": "Cervical artery dissection",
+          "dosing": {
+            "instructions": "Antiplatelet or anticoagulation (both equally effective per CADISS trial); typically 3-6 months",
+            "orderSentence": "Anticoagulation - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Repeat vascular imaging at 3-6 months",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Colchicine",
+          "route": "PO",
+          "indication": "Residual inflammatory risk (LoDoCo2 / COLCOT trials support in ACS — emerging data for stroke prevention)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Colchicine 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.5 mg PO daily",
+            "orderSentence": "Colchicine 0.5 mg PO"
+          },
+          "contraindications": "-",
+          "monitoring": "GI symptoms; CBC",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology (stroke team)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "-",
+          "indication": "All TIA patients; risk stratification; workup direction; secondary prevention"
+        },
+        {
+          "item": "Vascular surgery",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "-",
+          "indication": "Symptomatic carotid stenosis ≥50% for CEA; ideally within 2 weeks"
+        },
+        {
+          "item": "Neurointerventional / Endovascular",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Carotid stenting; intracranial stenosis management; PFO closure referral"
+        },
+        {
+          "item": "Cardiology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Newly detected AF; PFO evaluation; anticoagulation management; cardiac optimization"
+        },
+        {
+          "item": "Electrophysiology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Extended cardiac monitoring arrangement; AF management"
+        },
+        {
+          "item": "Primary care (expedited)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Risk factor management; medication titration; chronic disease management"
+        },
+        {
+          "item": "Smoking cessation program",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Active smokers"
+        },
+        {
+          "item": "Nutrition / Dietitian",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Mediterranean/DASH diet counseling; weight management"
+        },
+        {
+          "item": "Diabetes educator",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "If new or uncontrolled diabetes"
+        },
+        {
+          "item": "Social work",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Medication assistance; transportation; caregiver support"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "TIA is a WARNING — risk of full stroke is HIGHEST in first 48h; take this very seriously",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Call 911 IMMEDIATELY if any symptom recurs: sudden weakness, numbness, speech difficulty, vision changes, severe headache, loss of balance (F.A.S.T.)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take all medications EXACTLY as prescribed; do NOT stop aspirin, clopidogrel, or statin without medical guidance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT drive for at least 2 weeks (state laws vary; some require neurologist clearance)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return for follow-up within 1-2 weeks with neurology; primary care within 2-4 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Blood pressure monitoring at home daily; keep log; target per physician guidance (<130/80)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report any bleeding (bruising, blood in stool/urine, nosebleed) while on DAPT",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Carry updated medication list at all times",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Notify all providers of TIA history (dental, surgical, emergency)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Smoking cessation (ABSOLUTE — doubles stroke risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Blood pressure target <130/80 mmHg",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "LDL target <70 mg/dL (high-intensity statin)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Mediterranean or DASH diet",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Sodium restriction <2.3 g/day (ideally <1.5 g)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular aerobic exercise: 40 min moderate intensity, 3-4 days/week (after medical clearance)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Weight management (BMI 18.5-24.9)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol limitation: ≤1 drink/day women, ≤2 drinks/day men",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "HbA1c target <7% (individualized)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "OSA screening (STOP-BANG); CPAP if diagnosed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Depression / anxiety screening (PHQ-9)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Migraine with aura",
+      "features": "Gradual onset (\"marching\" symptoms over minutes); visual aura (scintillating scotoma); headache follows; younger; history of migraine",
+      "tests": "Normal MRI DWI; clinical history; gradual onset differentiates from sudden TIA"
+    },
+    {
+      "diagnosis": "Seizure with Todd's paralysis",
+      "features": "Witnessed seizure; post-ictal confusion; resolves in hours; focal weakness post-seizure",
+      "tests": "EEG; MRI DWI negative; clinical history"
+    },
+    {
+      "diagnosis": "Hypoglycemia",
+      "features": "Glucose <60; diaphoresis; tremor; confusion; resolves with glucose",
+      "tests": "POC glucose"
+    },
+    {
+      "diagnosis": "Peripheral vertigo (BPPV, vestibular neuritis)",
+      "features": "Isolated vertigo without other neurologic deficits; positive HINTS (peripheral pattern); nystagmus characteristics",
+      "tests": "HINTS exam; MRI DWI negative; normal CTA"
+    },
+    {
+      "diagnosis": "Multiple sclerosis exacerbation",
+      "features": "Young patient; symptoms disseminated in space and time; prior episodes; weeks duration",
+      "tests": "MRI brain (periventricular/juxtacortical lesions); oligoclonal bands"
+    },
+    {
+      "diagnosis": "Brain tumor",
+      "features": "Subacute progressive symptoms; headache; may have transient symptoms from seizure or compression",
+      "tests": "MRI with contrast (enhancing mass)"
+    },
+    {
+      "diagnosis": "Conversion disorder / FND",
+      "features": "Non-anatomic deficit distribution; Hoover sign; give-way weakness; psychological stressor",
+      "tests": "Normal MRI; normal vascular imaging; clinical exam"
+    },
+    {
+      "diagnosis": "Syncope / Pre-syncope",
+      "features": "Loss of consciousness; lightheadedness; no focal neurologic deficit",
+      "tests": "Orthostatic vitals; ECG; echo; tilt table"
+    },
+    {
+      "diagnosis": "Labyrinthine infarction",
+      "features": "Isolated sudden hearing loss + vertigo (AICA territory); may be a TIA equivalent",
+      "tests": "Audiometry (sensorineural hearing loss); MRI DWI (may show pontine or cerebellar infarct)"
+    },
+    {
+      "diagnosis": "Subdural hematoma",
+      "features": "Fluctuating symptoms; trauma history or anticoagulation; subacute",
+      "tests": "CT (extra-axial collection)"
+    },
+    {
+      "diagnosis": "Transient global amnesia",
+      "features": "Isolated anterograde amnesia lasting hours; no motor or speech deficit; age >50; benign",
+      "tests": "Clinical presentation; MRI DWI (may show small hippocampal DWI lesions)"
+    },
+    {
+      "diagnosis": "Metabolic encephalopathy",
+      "features": "Bilateral, non-focal; confusion predominant; abnormal labs",
+      "tests": "BMP; ammonia; LFTs; TSH"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "DAPT (aspirin + clopidogrel 21 days) for minor stroke / high-risk TIA",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[CHANCE trial (Wang et al. NEJM 2013)](https://pubmed.ncbi.nlm.nih.gov/23803136/)"
+    },
+    {
+      "recommendation": "DAPT (aspirin + clopidogrel 90 days) for minor stroke / high-risk TIA",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[POINT trial (Johnston et al. NEJM 2018)](https://pubmed.ncbi.nlm.nih.gov/29766750/); higher ICH risk than 21 days"
+    },
+    {
+      "recommendation": "Aspirin + ticagrelor x 30 days for minor stroke (NIHSS ≤5)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[THALES trial (Johnston et al. NEJM 2020)](https://pubmed.ncbi.nlm.nih.gov/32668111/)"
+    },
+    {
+      "recommendation": "High-intensity statin for TIA secondary prevention",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[SPARCL trial (Amarenco et al. NEJM 2006)](https://pubmed.ncbi.nlm.nih.gov/16899775/); AHA/ASA 2021"
+    },
+    {
+      "recommendation": "LDL target <70 mg/dL",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[TST trial (Amarenco et al. NEJM 2020)](https://pubmed.ncbi.nlm.nih.gov/31738483/)"
+    },
+    {
+      "recommendation": "BP target <130/80 for secondary prevention",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[SPS3 trial](https://pubmed.ncbi.nlm.nih.gov/23726159/); [PROGRESS](https://pubmed.ncbi.nlm.nih.gov/11589932/); AHA/ASA 2021"
+    },
+    {
+      "recommendation": "CEA within 2 weeks for symptomatic stenosis ≥50%",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[NASCET (NEJM 1991)](https://pubmed.ncbi.nlm.nih.gov/1852179/); ECST; [Rothwell et al. (Lancet 2004)](https://pubmed.ncbi.nlm.nih.gov/15043958/) — maximum benefit if performed within 2 weeks"
+    },
+    {
+      "recommendation": "DOACs preferred over warfarin for AF-related TIA/stroke",
+      "evidenceLevel": "Class I, Level A",
+      "source": "RE-LY, ROCKET-AF, ARISTOTLE, ENGAGE AF"
+    },
+    {
+      "recommendation": "Extended cardiac monitoring for cryptogenic TIA",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[CRYSTAL-AF (Sanna et al. NEJM 2014)](https://pubmed.ncbi.nlm.nih.gov/24963567/); [EMBRACE (Gladstone et al. NEJM 2014)](https://pubmed.ncbi.nlm.nih.gov/24963566/)"
+    },
+    {
+      "recommendation": "PFO closure for cryptogenic stroke/TIA age 18-60",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "CLOSE, RESPECT, REDUCE trials"
+    },
+    {
+      "recommendation": "MRI DWI within 24h (DWI+ = higher stroke risk)",
+      "evidenceLevel": "Class I, Level B",
+      "source": "AHA/ASA Guidelines; [Coutts et al. (Stroke 2012)](https://pubmed.ncbi.nlm.nih.gov/22302109/)"
+    },
+    {
+      "recommendation": "ABCD2 score for risk stratification",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Johnston et al. (Lancet 2007)](https://pubmed.ncbi.nlm.nih.gov/17227200/); useful but imperfect; imaging adds value"
+    },
+    {
+      "recommendation": "Rapid TIA evaluation reduces 90-day stroke risk",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[EXPRESS trial (Rothwell et al. Lancet 2007)](https://pubmed.ncbi.nlm.nih.gov/17928046/); [SOS-TIA (Lavallée et al. Lancet Neurol 2007)](https://pubmed.ncbi.nlm.nih.gov/17928270/)"
+    },
+    {
+      "recommendation": "Medical therapy superior to stenting for intracranial stenosis",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[SAMMPRIS trial (Chimowitz et al. NEJM 2011)](https://pubmed.ncbi.nlm.nih.gov/21899409/)"
+    },
+    {
+      "recommendation": "OSA screening and CPAP",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "AHA/ASA 2021 Guidelines"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (deficit recurrence)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q1h x 6h, then q4h in hospital; each outpatient visit",
+      "action": "If symptoms recur: STAT MRI DWI; may need admission; upgrade to stroke protocol if persistent >24h or DWI+"
+    },
+    {
+      "item": "Blood pressure",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q1h x 6h in ED; q4h in hospital; daily at home",
+      "action": "Antihypertensive titration; avoid SBP <100 if carotid stenosis"
+    },
+    {
+      "item": "Heart rhythm (telemetry)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "-",
+      "frequency": "Continuous x 24-72h minimum",
+      "action": "If AF detected: anticoagulation; discontinue antiplatelet"
+    },
+    {
+      "item": "Blood glucose",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q6h in hospital; HbA1c at follow-up",
+      "action": "Diabetes management"
+    },
+    {
+      "item": "Lipid panel",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Baseline; repeat at 4-12 weeks on statin",
+      "action": "Intensify statin; add ezetimibe or PCSK9i"
+    },
+    {
+      "item": "Renal function (Cr)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "At baseline; after starting ACE-I/ARB",
+      "action": "Dose adjust medications"
+    },
+    {
+      "item": "CBC",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Baseline; at 1 month on DAPT",
+      "action": "Monitor for bleeding on DAPT"
+    },
+    {
+      "item": "ABCD2 Score (at presentation)",
+      "ED": "STAT",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "-",
+      "frequency": "Once (risk stratification)",
+      "action": "≥4: admit or rapid TIA clinic within 24h; <4: may discharge with 24-48h follow-up if imaging complete"
+    },
+    {
+      "item": "Extended cardiac monitoring",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "30-day Holter or ILR post-discharge (especially cryptogenic)",
+      "action": "Anticoagulation if AF detected"
+    },
+    {
+      "item": "Carotid imaging follow-up",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "After CEA/CAS: duplex at 1 month, 6 months, then annually",
+      "action": "Repeat intervention if significant restenosis"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Admit to hospital (preferred for high-risk)",
+      "criteria": "ABCD2 ≥4; crescendo TIA (recurrent within 24h); large vessel stenosis identified; atrial fibrillation detected; DWI-positive on MRI; incomplete workup that cannot be completed within 24h as outpatient"
+    },
+    {
+      "disposition": "Rapid TIA clinic / 24-48h outpatient workup",
+      "criteria": "ABCD2 <4; symptoms fully resolved; no large vessel disease on imaging; no AF on ECG; MRI/CTA completed and negative; reliable follow-up; medications started"
+    },
+    {
+      "disposition": "Discharge from ED (with next-day follow-up)",
+      "criteria": "Low risk (ABCD2 0-3); all imaging completed and normal (MRI DWI negative, CTA normal, ECG sinus); medications started; reliable patient; follow-up within 24-48h guaranteed"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Rarely needed; consider if hemodynamic TIA with critical stenosis; malignant hypertension; crescendo TIA progressing to stroke"
+    },
+    {
+      "disposition": "Transfer to stroke center",
+      "criteria": "If vascular imaging, MRI, or neurology consultation not available within 24h"
+    }
+  ]
+}

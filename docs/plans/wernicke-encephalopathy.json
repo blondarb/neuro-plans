@@ -1,0 +1,808 @@
+{
+  "id": "wernicke-encephalopathy",
+  "title": "Wernicke Encephalopathy",
+  "version": "1.0",
+  "icd10": [
+    "** E51.2 (Wernicke encephalopathy)",
+    "E51.11 (Dry beriberi)",
+    "F10.96 (Alcohol use",
+    "unspecified with alcohol-induced persisting amnestic disorder)"
+  ],
+  "scope": "** Diagnosis and treatment of Wernicke encephalopathy in adults including classic and non-alcoholic etiologies. Covers acute treatment, prevention of Korsakoff syndrome, and at-risk populations. Applies primarily to ED, hospital, and ICU settings as this is a medical emergency. Excludes chronic Korsakoff syndrome management.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Fingerstick glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hypoglycemia; DO NOT give dextrose before thiamine",
+          "target": "Normal; treat hypoglycemia AFTER thiamine"
+        },
+        {
+          "item": "BMP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Electrolytes; magnesium essential for thiamine function",
+          "target": "Correct abnormalities"
+        },
+        {
+          "item": "Magnesium",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Required cofactor for thiamine; replace if low",
+          "target": ">2.0 mg/dL"
+        },
+        {
+          "item": "Phosphorus",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Refeeding syndrome risk",
+          "target": ">2.5 mg/dL"
+        },
+        {
+          "item": "CBC",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Macrocytic anemia (alcohol, B12/folate deficiency)",
+          "target": "Document"
+        },
+        {
+          "item": "LFTs, albumin",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hepatic dysfunction; malnutrition",
+          "target": "Document"
+        },
+        {
+          "item": "Ammonia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hepatic encephalopathy (may coexist)",
+          "target": "Normal"
+        },
+        {
+          "item": "Lactate",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Thiamine deficiency causes lactic acidosis",
+          "target": "Normal"
+        },
+        {
+          "item": "Blood alcohol level",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Document; withdrawal risk",
+          "target": "Document"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Thiamine level (whole blood or RBC transketolase)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Confirms deficiency (do not delay treatment for result)",
+          "target": "Low (but treat empirically)"
+        },
+        {
+          "item": "Vitamin B12, folate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Often co-deficient in alcohol use",
+          "target": "Normal; supplement if low"
+        },
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Exclude thyroid dysfunction",
+          "target": "Normal"
+        },
+        {
+          "item": "Urine drug screen",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Concomitant intoxication",
+          "target": "Document"
+        },
+        {
+          "item": "Coagulation studies (PT/INR)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Liver disease; coagulopathy",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "RBC transketolase activity",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Functional thiamine status; low in deficiency",
+          "target": "Low activity"
+        },
+        {
+          "item": "Thiamine pyrophosphate (TPP) effect",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": ">25% increase suggests deficiency",
+          "target": "Normal"
+        },
+        {
+          "item": "CSF analysis",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "If meningitis suspected; usually normal in WE",
+          "target": "Normal; mild protein elevation possible"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with FLAIR/DWI",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "After stabilization; supports diagnosis",
+          "target": "Bilateral symmetric T2/FLAIR hyperintensity in medial thalami, mammillary bodies, periaqueductal gray, tectal plate",
+          "contraindications": "Pacemaker, metal"
+        },
+        {
+          "item": "CT head",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Exclude other causes (hemorrhage, mass); often normal in WE",
+          "target": "No mass, hemorrhage",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "EEG",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "If seizure suspected or encephalopathy unclear",
+          "target": "Diffuse slowing (non-specific)",
+          "contraindications": "None"
+        },
+        {
+          "item": "Lumbar puncture",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "timing": "If meningitis or encephalitis suspected",
+          "target": "Normal; r/o infection",
+          "contraindications": "Mass lesion"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute Thiamine Replacement (CRITICAL - Do Not Delay)": [
+        {
+          "item": "Thiamine IV (high-dose) - Suspected/Confirmed WE",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Thiamine IV (high-dose) - Suspected/Confirmed WE 500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500 mg IV TID × 3-5 days (in 100 mL NS over 30 min); then 250 mg IV daily × 3-5 days; then oral",
+            "orderSentence": "Thiamine IV (high-dose) - Suspected/Confirmed WE 500 mg IV"
+          },
+          "contraindications": "Rare anaphylaxis (give slowly)",
+          "monitoring": "Anaphylaxis (rare); clinical response",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Thiamine IV (prophylaxis - at-risk patients)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200-500 mg",
+                "orderSentence": "Thiamine IV (prophylaxis - at-risk patients) 200-500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "200-500 mg IV TID × 3 days; then oral",
+            "orderSentence": "Thiamine IV (prophylaxis - at-risk patients) 200-500 mg IV"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Maintenance Thiamine": [
+        {
+          "item": "Thiamine oral (after IV course)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Thiamine oral (after IV course) 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg TID × weeks to months; indefinitely if ongoing risk",
+            "orderSentence": "Thiamine oral (after IV course) 100 mg PO"
+          },
+          "contraindications": "None",
+          "monitoring": "Compliance; symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Thiamine IM (if IV not possible, unreliable oral)",
+          "route": "IM",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Thiamine IM (if IV not possible, unreliable oral) 250 mg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "250 mg IM daily × 3-5 days",
+            "orderSentence": "Thiamine IM (if IV not possible, unreliable oral) 250 mg IM"
+          },
+          "contraindications": "Coagulopathy (relative)",
+          "monitoring": "Clinical response",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Electrolyte Replacement": [
+        {
+          "item": "Magnesium sulfate IV",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 g",
+                "orderSentence": "Magnesium sulfate IV 1-2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2 g IV over 1-2 hours; repeat as needed; target Mg >2.0",
+            "orderSentence": "Magnesium sulfate IV 1-2 g IV"
+          },
+          "contraindications": "Renal failure (adjust dose); heart block",
+          "monitoring": "Mg levels; reflexes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Potassium replacement",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Per deficit; often needed with Mg",
+            "orderSentence": "Potassium replacement - - - see dosing"
+          },
+          "contraindications": "Renal failure; hyperkalemia",
+          "monitoring": "K+ levels",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Phosphorus replacement",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "If low (refeeding); K-Phos or Na-Phos IV/PO",
+            "orderSentence": "Phosphorus replacement - IV - see dosing"
+          },
+          "contraindications": "Hypercalcite; renal failure",
+          "monitoring": "Phos levels",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Glucose Administration": [
+        {
+          "item": "THIAMINE BEFORE GLUCOSE",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "ALWAYS give thiamine before or with dextrose/carbohydrates; glucose metabolism depletes thiamine",
+            "orderSentence": "THIAMINE BEFORE GLUCOSE - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "None",
+          "monitoring": "Give thiamine first",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dextrose (if hypoglycemic)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mL",
+                "orderSentence": "Dextrose (if hypoglycemic) 25-50 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "D50 25-50 mL IV or D10 infusion; AFTER thiamine",
+            "orderSentence": "Dextrose (if hypoglycemic) 25-50 mL IV"
+          },
+          "pretreatment": "-",
+          "contraindications": "Give thiamine first",
+          "monitoring": "Glucose levels",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Alcohol Withdrawal Prevention/Treatment": [
+        {
+          "item": "Benzodiazepines (symptom-triggered or scheduled)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-4 mg",
+                "orderSentence": "Benzodiazepines (symptom-triggered or scheduled) 1-4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Lorazepam 1-4 mg IV q15min PRN (CIWA-guided); or scheduled dosing if severe",
+            "orderSentence": "Benzodiazepines (symptom-triggered or scheduled) 1-4 mg IV"
+          },
+          "contraindications": "Respiratory depression; caution with hepatic impairment",
+          "monitoring": "CIWA score; sedation; respiratory status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Folate",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Folate 1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 mg daily",
+            "orderSentence": "Folate 1 mg PO"
+          },
+          "contraindications": "None",
+          "monitoring": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Multivitamin",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Daily",
+            "orderSentence": "Multivitamin - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Nutritional Support": [
+        {
+          "item": "Nutrition consult",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Refeeding protocol; caloric needs",
+            "orderSentence": "Nutrition consult - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Refeeding syndrome",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Gradual refeeding",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Start low calorie (10-15 kcal/kg); advance slowly",
+            "orderSentence": "Gradual refeeding - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Phosphorus, K+, Mg, glucose",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Patient Instructions": [
+        {
+          "item": "Neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "indication": "Diagnosis confirmation; atypical presentations; persistent deficits"
+        },
+        {
+          "item": "Addiction medicine/psychiatry",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Alcohol use disorder; relapse prevention"
+        },
+        {
+          "item": "Nutrition/dietitian",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "indication": "Refeeding; nutritional rehabilitation"
+        },
+        {
+          "item": "Social work",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Discharge planning; resources; housing"
+        },
+        {
+          "item": "Physical/occupational therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Gait ataxia; functional rehabilitation"
+        },
+        {
+          "item": "Speech therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "indication": "Swallowing assessment if impaired"
+        },
+        {
+          "item": "Neuropsychology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Cognitive assessment if persistent deficits"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Wernicke encephalopathy is a medical emergency caused by thiamine (vitamin B1) deficiency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Without treatment, permanent brain damage (Korsakoff syndrome) can occur",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take thiamine supplements as prescribed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "If alcohol use disorder: Thiamine is critical; take before drinking if relapse",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol cessation is essential to prevent recurrence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Eat a balanced diet; malnutrition worsens risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report confusion, vision changes, unsteady walking",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "SAMHSA helpline 1-800-662-4357 for alcohol treatment resources",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Hepatic encephalopathy",
+      "features": "Asterixis; elevated ammonia; liver disease",
+      "tests": "Ammonia level; LFTs"
+    },
+    {
+      "diagnosis": "Alcohol intoxication",
+      "features": "Positive alcohol level; resolves as level clears",
+      "tests": "Blood alcohol; clinical course"
+    },
+    {
+      "diagnosis": "Alcohol withdrawal",
+      "features": "Tremor, tachycardia, diaphoresis; after cessation",
+      "tests": "History; CIWA score"
+    },
+    {
+      "diagnosis": "Hypoglycemia",
+      "features": "Low glucose; rapid response to dextrose",
+      "tests": "Fingerstick glucose"
+    },
+    {
+      "diagnosis": "Meningitis/encephalitis",
+      "features": "Fever, meningismus, CSF abnormalities",
+      "tests": "LP; CSF analysis"
+    },
+    {
+      "diagnosis": "Stroke (thalamic, brainstem)",
+      "features": "Acute onset; focal signs; imaging findings",
+      "tests": "MRI/CT; usually asymmetric"
+    },
+    {
+      "diagnosis": "Central pontine myelinolysis",
+      "features": "History of rapid sodium correction; imaging",
+      "tests": "MRI; sodium history"
+    },
+    {
+      "diagnosis": "Normal pressure hydrocephalus",
+      "features": "Triad: gait, dementia, incontinence; enlarged ventricles",
+      "tests": "MRI; LP trial"
+    },
+    {
+      "diagnosis": "Drug intoxication",
+      "features": "Toxicology positive; specific syndromes",
+      "tests": "Tox screen; history"
+    },
+    {
+      "diagnosis": "Non-convulsive status epilepticus",
+      "features": "EEG shows seizure activity",
+      "tests": "EEG"
+    },
+    {
+      "diagnosis": "Posterior reversible encephalopathy (PRES)",
+      "features": "Hypertension; posterior white matter edema",
+      "tests": "MRI; BP"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "High-dose IV thiamine (500 mg TID) for suspected WE",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[EFNS guidelines](https://pubmed.ncbi.nlm.nih.gov/20642790/); Cochrane review (limited RCT data but expert consensus)"
+    },
+    {
+      "recommendation": "Thiamine before glucose in at-risk patients",
+      "evidenceLevel": "Class I (practice standard)",
+      "source": "Physiologic rationale; case reports of precipitation"
+    },
+    {
+      "recommendation": "MRI typical findings in WE",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Multiple case series; imaging studies"
+    },
+    {
+      "recommendation": "Magnesium replacement essential",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Cofactor for thiamine-dependent enzymes"
+    },
+    {
+      "recommendation": "Oral thiamine poorly absorbed in alcoholics",
+      "evidenceLevel": "Class II",
+      "source": "Pharmacokinetic studies; supports IV administration"
+    },
+    {
+      "recommendation": "Prophylactic thiamine in at-risk populations",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Observational data; prevention superior to treatment"
+    },
+    {
+      "recommendation": "Classic triad present in minority",
+      "evidenceLevel": "Class II",
+      "source": "Autopsy studies show only 10-16% have all three features"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Mental status (GCS, orientation)",
+      "ED": "STAT",
+      "HOSP": "q4h",
+      "OPD": "Every visit",
+      "ICU": "q1-2h",
+      "frequency": "Per setting",
+      "action": "Continue thiamine; r/o other causes"
+    },
+    {
+      "item": "Oculomotor exam (nystagmus, gaze palsy)",
+      "ED": "STAT",
+      "HOSP": "Daily",
+      "OPD": "Every visit",
+      "ICU": "Daily",
+      "frequency": "Daily until improved",
+      "action": "Continue treatment"
+    },
+    {
+      "item": "Gait/ataxia assessment",
+      "ED": "-",
+      "HOSP": "Daily",
+      "OPD": "Every visit",
+      "ICU": "-",
+      "frequency": "Daily until improved",
+      "action": "PT/OT; continue treatment"
+    },
+    {
+      "item": "Magnesium",
+      "ED": "STAT",
+      "HOSP": "Daily until stable",
+      "OPD": "PRN",
+      "ICU": "q6-12h",
+      "frequency": "Per setting",
+      "action": "Replace"
+    },
+    {
+      "item": "Potassium",
+      "ED": "STAT",
+      "HOSP": "Daily until stable",
+      "OPD": "PRN",
+      "ICU": "q6-12h",
+      "frequency": "Per setting",
+      "action": "Replace"
+    },
+    {
+      "item": "Phosphorus",
+      "ED": "STAT",
+      "HOSP": "Daily until stable",
+      "OPD": "PRN",
+      "ICU": "q12h",
+      "frequency": "Per setting",
+      "action": "Replace"
+    },
+    {
+      "item": "Blood glucose",
+      "ED": "STAT",
+      "HOSP": "q6h initially",
+      "OPD": "PRN",
+      "ICU": "q4-6h",
+      "frequency": "Per setting",
+      "action": "Give thiamine before glucose"
+    },
+    {
+      "item": "CIWA score (if alcohol withdrawal risk)",
+      "ED": "STAT",
+      "HOSP": "q4-8h",
+      "OPD": "-",
+      "ICU": "q2-4h",
+      "frequency": "Per protocol",
+      "action": "Benzodiazepines PRN"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "All suspected or confirmed Wernicke encephalopathy; need IV thiamine"
+    },
+    {
+      "disposition": "ICU admission",
+      "criteria": "Altered mental status; severe withdrawal risk; hemodynamic instability"
+    },
+    {
+      "disposition": "Discharge criteria",
+      "criteria": "Mental status normalized; tolerating oral thiamine; safe discharge plan"
+    },
+    {
+      "disposition": "Neurology follow-up",
+      "criteria": "2-4 weeks post-discharge; assess for persistent deficits"
+    },
+    {
+      "disposition": "Addiction medicine follow-up",
+      "criteria": "If alcohol use disorder; outpatient treatment program"
+    },
+    {
+      "disposition": "Urgent readmission",
+      "criteria": "Recurrent symptoms; inability to take oral thiamine; relapse"
+    }
+  ]
+}

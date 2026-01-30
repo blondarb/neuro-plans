@@ -1,0 +1,1339 @@
+{
+  "id": "elevated-icp-management",
+  "title": "Elevated Intracranial Pressure Management",
+  "version": "1.0",
+  "icd10": [
+    "** G93.2 (Benign intracranial hypertension [IIH])",
+    "G93.5 (Compression of brain)",
+    "G93.6 (Cerebral edema)",
+    "G91.1 (Obstructive hydrocephalus)",
+    "G91.2 (Normal pressure hydrocephalus)",
+    "S06.1X (Traumatic cerebral edema)"
+  ],
+  "scope": "** Emergency evaluation and management of elevated intracranial pressure in adults. Covers recognition of elevated ICP (Cushing triad, papilledema, declining GCS), emergent interventions (osmotherapy, hyperventilation, sedation, CSF drainage), ICP monitoring indications, surgical decompression, and specific etiology-based management. Includes management across etiologies: traumatic brain injury, stroke (ischemic/hemorrhagic), tumor, infection, hydrocephalus, and idiopathic intracranial hypertension. Excludes pediatric ICP management (different thresholds/approaches).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection workup; anemia (reduced O2 carrying capacity); thrombocytopenia (bleeding risk); baseline",
+          "target": "Normal; leukocytosis → infection; thrombocytopenia → hemorrhage risk"
+        },
+        {
+          "item": "CMP (BMP + LFTs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolytes (sodium critical for osmotherapy); renal function (contrast, mannitol); glucose; hepatic function",
+          "target": "Normal; track sodium closely (goal varies by treatment); avoid hyponatremia"
+        },
+        {
+          "item": "Blood glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hyperglycemia worsens outcomes in brain injury; hypoglycemia mimics neurologic deterioration",
+          "target": "140-180 mg/dL target in critically ill; <180 in general"
+        },
+        {
+          "item": "PT/INR, aPTT",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy (hemorrhagic causes); ICP monitor placement safety; surgical candidacy",
+          "target": "Normal; INR <1.4 for ICP monitor placement"
+        },
+        {
+          "item": "Serum osmolality",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "**CRITICAL for osmotherapy monitoring**; baseline before mannitol/hypertonic saline; target for therapy",
+          "target": "280-295 mOsm/kg baseline; therapeutic target 300-320 (do not exceed 320)"
+        },
+        {
+          "item": "Sodium",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "**CRITICAL**; hypertonic saline therapy monitoring; cerebral salt wasting vs. SIADH; target for ICP management",
+          "target": "135-145 mEq/L baseline; therapeutic hypernatremia target 145-155 mEq/L (with hypertonic saline)"
+        },
+        {
+          "item": "Arterial blood gas (ABG)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Ventilation status (PaCO2 critical for ICP); oxygenation; pH; metabolic status",
+          "target": "PaCO2 35-40 mmHg (normal); pH 7.35-7.45; PaO2 >80; for hyperventilation: target PaCO2 30-35"
+        },
+        {
+          "item": "Lactate",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Tissue perfusion; systemic sepsis; prognostic",
+          "target": "<2 mmol/L; elevated → hypoperfusion, sepsis"
+        },
+        {
+          "item": "Type and screen",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Surgical candidacy; potential for decompressive craniectomy or other neurosurgical intervention",
+          "target": "On file"
+        },
+        {
+          "item": "Troponin",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Neurogenic cardiac injury (stress cardiomyopathy); particularly in SAH, TBI, ICH",
+          "target": "Normal; elevated → neurogenic stress cardiomyopathy; obtain echo"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Serum osmolality (serial)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "**q4-6h during osmotherapy**; osmolar gap calculation; prevent hyper-osmolar state",
+          "target": "Maintain <320 mOsm/kg; osmolar gap >10-15 → accumulating mannitol"
+        },
+        {
+          "item": "Sodium (serial)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "**q2-6h during active ICP management**; hypertonic saline monitoring; avoid rapid correction",
+          "target": "Target 145-155 mEq/L during active ICP crisis; avoid fluctuations >10 mEq/24h"
+        },
+        {
+          "item": "Cortisol (AM, random)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Adrenal insufficiency (pituitary injury in TBI, tumor); steroid responsiveness in tumor edema",
+          "target": ">10 mcg/dL (AM); if low → cortisol stimulation test or empiric steroids"
+        },
+        {
+          "item": "TSH, free T4",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Pituitary injury (TBI, tumor, surgery); hypothyroidism",
+          "target": "Normal"
+        },
+        {
+          "item": "Ammonia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hepatic encephalopathy differential; can cause cerebral edema and elevated ICP",
+          "target": "<35 μmol/L; elevated → hepatic cause; lactulose, rifaximin"
+        },
+        {
+          "item": "Toxicology screen",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Intoxication as cause of altered mental status; drug-induced cerebral edema (rare)",
+          "target": "Negative; specific toxin identification"
+        },
+        {
+          "item": "CSF analysis (if LP/EVD performed)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Infection (meningitis); malignancy (leptomeningeal disease); subarachnoid hemorrhage (xanthochromia); IIH (elevated OP with normal composition)",
+          "target": "Normal CSF composition with elevated opening pressure → IIH; abnormal composition → specific diagnosis"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CSF opening pressure (LP)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "**IIH diagnosis**: OP >25 cm H2O (obese patients >28 cm); therapeutic in IIH; NOT indicated if mass lesion or obstructive hydrocephalus",
+          "target": "IIH: OP >25 cm H2O with normal composition; if OP >40-50 → severe"
+        },
+        {
+          "item": "Pentobarbital level",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "If barbiturate coma induced for refractory ICP; therapeutic monitoring; guide dosing; monitor for toxicity",
+          "target": "Therapeutic: 30-50 mcg/mL (for burst suppression); higher may be needed"
+        },
+        {
+          "item": "EEG (continuous)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Monitor for burst suppression during barbiturate coma; detect subclinical seizures (common in brain injury); guide sedation titration",
+          "target": "Target: burst suppression pattern during barbiturate coma; no seizures"
+        },
+        {
+          "item": "Jugular venous oxygen saturation (SjvO2)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "Advanced cerebral metabolism monitoring; guide CPP management; detect ischemia or hyperemia",
+          "target": "55-75%; <55% = ischemia (increase CPP or reduce CMRO2); >75% = hyperemia"
+        },
+        {
+          "item": "Brain tissue oxygen (PbtO2)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "Direct brain oxygenation monitoring; guide therapy in severe TBI; multimodal monitoring",
+          "target": ">20 mmHg; <15 mmHg = brain hypoxia → intervene"
+        },
+        {
+          "item": "Cerebral microdialysis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "Research/specialized centers; metabolic monitoring; lactate:pyruvate ratio; glucose; glutamate",
+          "target": "Lactate:pyruvate ratio <40 (normal); elevated = metabolic crisis"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "LP with opening pressure",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**IIH diagnosis and treatment**: measure opening pressure → therapeutic CSF removal; **CONTRAINDICATED if mass lesion, obstructive hydrocephalus, or herniation risk**; imaging FIRST",
+          "target": "Opening pressure: normal <20 cm H2O (obese <25); IIH: >25 cm H2O with normal CSF composition; high-volume tap (20-30 mL) for symptomatic relief in IIH",
+          "contraindications": "**ABSOLUTE CONTRAINDICATION**: Mass lesion with mass effect; obstructive hydrocephalus; impending herniation; posterior fossa mass; midline shift; anticoagulation/coagulopathy; skin infection at LP site"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "**Immediate** — within minutes of suspected elevated ICP; before any intervention; determines etiology and guides treatment",
+          "target": "Mass lesion (tumor, hematoma); midline shift (>5mm = significant); hydrocephalus; cerebral edema (effaced sulci, compressed ventricles); herniation signs (uncal, tonsillar); cisternal effacement",
+          "contraindications": "None for non-contrast CT; benefit always outweighs risk in emergency"
+        },
+        {
+          "item": "CT angiography (CTA) head",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If vascular etiology suspected (SAH, venous sinus thrombosis, AVM); concurrent with non-contrast CT",
+          "target": "Aneurysm (SAH); venous sinus thrombosis (filling defect in dural sinuses); AVM; dissection",
+          "contraindications": "Contrast allergy (premedicate if critical); renal impairment (benefit may outweigh risk)"
+        },
+        {
+          "item": "CT venography (CTV)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "If cerebral venous sinus thrombosis suspected (headache, papilledema, focal deficits, hypercoagulable state); can be done with CTA",
+          "target": "Filling defect in dural sinuses (transverse, sigmoid, sagittal); \"empty delta sign\" on contrast CT; cord sign",
+          "contraindications": "Same as CTA"
+        },
+        {
+          "item": "MRI brain with and without contrast",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "When clinically stable; superior for tumor characterization, infection, posterior fossa; MRV for venous thrombosis; DWI for ischemia",
+          "target": "Tumor; abscess; encephalitis; venous sinus thrombosis; ischemic stroke; PRES; herniation; meningeal enhancement",
+          "contraindications": "MRI-incompatible implants; hemodynamic instability"
+        },
+        {
+          "item": "Chest X-ray",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "ETT position confirmation; pulmonary complications (aspiration, ARDS); central line position",
+          "target": "ETT position; no pulmonary infiltrate; line position",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MR venography (MRV)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Cerebral venous sinus thrombosis confirmation; if CTV equivocal; can be done without contrast (TOF technique)",
+          "target": "Venous sinus thrombosis; flow void absence",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "Transcranial Doppler (TCD)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Non-invasive ICP estimation (pulsatility index); vasospasm detection (SAH); cerebral circulatory arrest (brain death)",
+          "target": "Pulsatility index >1.4 suggests elevated ICP; MCA velocities for vasospasm; reverberating flow = no cerebral circulation",
+          "contraindications": "None; operator-dependent"
+        },
+        {
+          "item": "Optic nerve sheath diameter (ONSD) ultrasound",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Bedside non-invasive ICP estimation; ONSD >5-5.5 mm suggests ICP >20 mmHg; useful when formal monitoring not available",
+          "target": "ONSD >5 mm (some use 5.5 mm) = elevated ICP",
+          "contraindications": "Limited accuracy; operator-dependent; not a substitute for invasive monitoring"
+        },
+        {
+          "item": "CT perfusion",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Ischemic stroke workup; penumbra assessment; vasospasm evaluation",
+          "target": "Perfusion deficits; core vs. penumbra; vasospasm patterns",
+          "contraindications": "Contrast requirements"
+        },
+        {
+          "item": "Fundoscopic examination",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Papilledema detection (takes hours-days to develop); retinal hemorrhages (Terson syndrome in SAH); IIH evaluation",
+          "target": "Papilledema (indicates chronically or subacutely elevated ICP); absent papilledema does NOT exclude acute ICP elevation; venous pulsations absent if ICP >180 mm H2O",
+          "contraindications": "None"
+        },
+        {
+          "item": "Formal visual field testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "IIH monitoring; chronic elevated ICP; document visual field loss for treatment decisions",
+          "target": "Enlarged blind spot; peripheral constriction; nasal field loss",
+          "contraindications": "Patient cooperation required"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "ICP monitor placement (invasive)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "**Gold standard for ICP measurement**; indications: GCS ≤8 with abnormal CT, or GCS ≤8 with normal CT + 2 of (age >40, SBP <90, motor posturing); also for hydrocephalus management; typically EVD or parenchymal monitor",
+          "target": "Direct ICP measurement; normal <15 mmHg; elevated >20-22 mmHg; treatment threshold >22 mmHg (Brain Trauma Foundation 2016)",
+          "contraindications": "Coagulopathy (correct first); infection at insertion site; uncontrolled bleeding diathesis"
+        },
+        {
+          "item": "External ventricular drain (EVD)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "ICP monitoring + therapeutic CSF drainage; preferred in hydrocephalus; allows ICP waveform analysis",
+          "target": "ICP measurement; CSF drainage; waveform analysis (P2 > P1 = decreased compliance)",
+          "contraindications": "Same as ICP monitor"
+        },
+        {
+          "item": "Continuous EEG monitoring",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Detect subclinical seizures (common in TBI, ICH, SAH — up to 20-30%); guide sedation; burst suppression monitoring during barbiturate coma",
+          "target": "No seizures; appropriate sedation level; burst suppression if pentobarbital coma",
+          "contraindications": "None; resource availability"
+        },
+        {
+          "item": "Nuclear medicine cerebral perfusion (SPECT/HMPAO)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "EXT",
+          "timing": "Brain death confirmation (ancillary test); no cerebral blood flow",
+          "target": "No uptake = brain death (if clinical criteria met and confounders excluded)",
+          "contraindications": "Limited availability"
+        },
+        {
+          "item": "CT/MRI perfusion for brain death",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "EXT",
+          "timing": "Brain death confirmation; no cerebral perfusion",
+          "target": "No perfusion = brain death",
+          "contraindications": "Same as standard CT/MRI"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent Treatment": [
+        {
+          "item": "**Airway management / Intubation**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.3 mg/kg",
+                "orderSentence": "**Airway management / Intubation** 0.3 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**GCS ≤8: Secure airway**; RSI with agents that do NOT raise ICP; preferred: etomidate 0.3 mg/kg OR propofol 1-2 mg/kg + rocuronium 1.2 mg/kg OR succinylcholine 1.5 mg/kg; AVOID ketamine in severe TBI (controversial — emerging data suggest may be safe); lidocaine 1.5 mg/kg IV 2-3 min before laryngoscopy (may blunt ICP spike — controversial benefit); avoid hypotension during RSI",
+            "orderSentence": "**Airway management / Intubation** 0.3 mg/kg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Airway protection; ventilation control (PaCO2 management); GCS ≤8 cannot protect airway; avoid hypoxia (PaO2 <60) and hypotension (SBP <90) — both worsen outcomes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Head of bed elevation**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**Elevate HOB 30°**; neutral head position (avoid neck flexion/rotation that impedes jugular venous drainage); avoid tight cervical collar if possible; reverse Trendelenburg if cervical spine immobilization required",
+            "orderSentence": "**Head of bed elevation** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Promotes venous drainage; reduces ICP by 3-5 mmHg; no evidence of reduced CPP with 30° elevation; simple and immediate intervention",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Hyperventilation (temporary)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**Acute herniation ONLY (bridging therapy)**; target PaCO2 30-35 mmHg; induces cerebral vasoconstriction → reduced cerebral blood volume → reduced ICP; **Duration: <30 minutes ideally, maximum 2-4 hours**; taper gradually; avoid PaCO2 <25 (causes ischemia)",
+            "orderSentence": "**Hyperventilation (temporary)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "BTF Guidelines: Avoid prophylactic hyperventilation; use only for acute ICP crisis/herniation as bridge to definitive therapy; prolonged hyperventilation causes rebound vasodilation and ischemia; monitor with SjvO2 or PbtO2 if prolonged use needed",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Osmotherapy — Mannitol**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 g/kg",
+                "orderSentence": "**Osmotherapy — Mannitol** 1-1.5 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**Mannitol 20%:** 1-1.5 g/kg IV bolus (e.g., 100g = 500 mL of 20% for 70 kg patient) over 15-20 minutes; repeat doses: 0.25-0.5 g/kg q4-6h PRN; **Hold if:** serum osmolality >320 mOsm/kg, osmolar gap >15-20; **Requires:** Foley catheter (massive diuresis); volume replacement; **Onset:** 15-30 min; **Duration:** 2-6 hours",
+            "orderSentence": "**Osmotherapy — Mannitol** 1-1.5 g/kg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Creates osmotic gradient → draws water from brain parenchyma; reduces brain volume; also improves blood rheology; BTF: Level II evidence; monitor for renal toxicity (ATN), hypovolemia, rebound edema",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Osmotherapy — Hypertonic Saline**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "**Osmotherapy — Hypertonic Saline** 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**23.4% NaCl:** 30 mL IV bolus over 15-20 min via central line (preferred for acute crisis); **3% NaCl:** 250-500 mL IV bolus over 30 min (can give peripherally); **Continuous infusion:** 3% NaCl at 30-50 mL/hr to maintain Na 145-155 mEq/L; **Target sodium:** 145-155 mEq/L; avoid >160; correct slowly if hypernatremia develops (no faster than 8-10 mEq/24h decrease)",
+            "orderSentence": "**Osmotherapy — Hypertonic Saline** 30 mL IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Equivalent or superior to mannitol for ICP reduction; does NOT cause diuresis (better for hypovolemic patients); no osmolality ceiling (unlike mannitol); does not accumulate in injured brain (mannitol may); preferred in many centers; SAFE-TBI trial (2021): 20% mannitol = HTS for ICP control",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Sedation and analgesia**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-75 mcg/kg",
+                "orderSentence": "**Sedation and analgesia** 25-75 mcg/kg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Goal:** Reduce metabolic demand, prevent agitation-induced ICP spikes; **Propofol:** 25-75 mcg/kg/min (first-line; reduces CMRO2 and ICP; allows rapid awakening for neuro exams); **Fentanyl:** 25-100 mcg/hr (analgesia without histamine release); **Midazolam:** 0.05-0.2 mg/kg/hr (alternative to propofol); **Avoid:** Ketamine in severe ICP (controversial); prolonged propofol (PRIS syndrome >48-72h at high doses)",
+            "orderSentence": "**Sedation and analgesia** 25-75 mcg/kg -"
+          },
+          "contraindications": "-",
+          "monitoring": "Agitation, pain, coughing raise ICP; sedation reduces cerebral metabolic rate; propofol has favorable ICP properties; daily sedation holiday for neuro assessment if stable",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Neuromuscular blockade**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.2 mg/kg",
+                "orderSentence": "**Neuromuscular blockade** 0.1-0.2 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "For refractory ICP spikes with ventilator dyssynchrony, coughing, posturing; **Cisatracurium** 0.1-0.2 mg/kg bolus → 1-3 mcg/kg/min infusion (organ-independent metabolism); **Rocuronium** 0.6-1 mg/kg bolus → 0.6 mg/kg/hr; **Requires:** Concurrent sedation/analgesia; train-of-four monitoring; prevents detection of seizures (need cEEG)",
+            "orderSentence": "**Neuromuscular blockade** 0.1-0.2 mg/kg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Prevents ICP spikes from coughing, posturing; reduces intrathoracic pressure; use judiciously — obscures neuro exam and seizure detection; requires cEEG monitoring",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Seizure prophylaxis / treatment**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1500 mg",
+                "orderSentence": "**Seizure prophylaxis / treatment** 1000-1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**Prophylaxis (TBI):** Levetiracetam 1000-1500 mg IV load → 500-1000 mg q12h x 7 days (BTF: early seizure prophylaxis x 7 days for severe TBI); **Active seizure:** Lorazepam 0.1 mg/kg (max 4 mg) → Levetiracetam 60 mg/kg load (max 4500 mg) OR fosphenytoin 20 mg PE/kg; **Status epilepticus:** Per SE protocol",
+            "orderSentence": "**Seizure prophylaxis / treatment** 1000-1500 mg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Seizures dramatically increase CMRO2 and ICP; early seizures occur in 10-15% of severe TBI; prophylaxis beyond 7 days NOT recommended (does not prevent late epilepsy); levetiracetam preferred (no drug interactions, IV/PO equivalent)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Temperature control**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "**Temperature control** 650-1000 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Avoid fever aggressively**: fever increases CMRO2 by 10-13% per °C; target 36-37°C; acetaminophen 650-1000 mg q4-6h; cooling blankets; **Therapeutic hypothermia:** 32-35°C controversial; EUROTHERM (2015) showed harm from prophylactic hypothermia to 32-35°C in TBI; may use for refractory ICP as rescue",
+            "orderSentence": "**Temperature control** 650-1000 mg -"
+          },
+          "contraindications": "-",
+          "monitoring": "Fever worsens neurologic outcomes; aggressive normothermia is standard; therapeutic hypothermia is rescue therapy only (not prophylactic); if used: 32-35°C, avoid shivering (increases CMRO2), slow rewarming",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Blood pressure / CPP management**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**Target CPP 60-70 mmHg** (CPP = MAP - ICP); avoid CPP <60 (ischemia) and >70 (BTF: avoid aggressive CPP >70 due to ARDS risk); **If hypotensive:** IV fluids (isotonic crystalloid; avoid hypotonic fluids); vasopressors (norepinephrine first-line); **If hypertensive with ICP crisis:** Treat ICP first (osmotherapy, sedation); avoid precipitously lowering BP (reduces CPP)",
+            "orderSentence": "**Blood pressure / CPP management** - IV - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "CPP is the primary determinant of cerebral perfusion; BTF 2016: target CPP 60-70; lower threshold 60 mmHg; aggressive CPP >70 increases ARDS risk without outcome benefit; individualized based on autoregulation status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Definitive/Targeted Treatment (Tier 2 — Moderate ICP Elevation)": [
+        {
+          "item": "**ICP monitor / EVD placement**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**Indications (BTF 2016):** GCS ≤8 + abnormal CT; OR GCS ≤8 + normal CT + ≥2 of: age >40, SBP <90, motor posturing; **EVD preferred if:** Hydrocephalus; need for CSF drainage; **Parenchymal monitor if:** No hydrocephalus; cannot drain CSF; **Target ICP:** <22 mmHg (BTF 2016); some centers use <20",
+            "orderSentence": "**ICP monitor / EVD placement** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Invasive ICP monitoring guides therapy; EVD allows therapeutic CSF drainage; parenchymal monitors cannot drain; infection risk ~5-10%; ventriculostomy is both diagnostic and therapeutic",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**CSF drainage (via EVD)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mL",
+                "orderSentence": "**CSF drainage (via EVD)** 5-10 mL -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Continuous drainage:** Set drain to maintain ICP <22 mmHg; drain 5-10 mL CSF if ICP spike; **Intermittent drainage:** Drain for ICP >22, then clamp to re-measure; **Typical:** Remove 5-20 mL for ICP crisis; **Rate:** Avoid draining >20 mL/hour (risk of over-drainage, collapse of ventricles, hemorrhage)",
+            "orderSentence": "**CSF drainage (via EVD)** 5-10 mL -"
+          },
+          "contraindications": "-",
+          "monitoring": "Immediate ICP reduction; removes volume (CSF) from closed cranial compartment; critical for hydrocephalus; risk: infection, hemorrhage, over-drainage",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Repeat osmotherapy dosing**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25-0.5 g/kg",
+                "orderSentence": "**Repeat osmotherapy dosing** 0.25-0.5 g/kg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Scheduled or PRN osmotherapy based on ICP readings; **Mannitol:** 0.25-0.5 g/kg q4-6h; **HTS 3%:** 30 mL/hr continuous or 250 mL bolus PRN; **Monitor:** Serum osm q4-6h (hold mannitol if >320); serum Na q2-4h (target 145-155 with HTS)",
+            "orderSentence": "**Repeat osmotherapy dosing** 0.25-0.5 g/kg -"
+          },
+          "contraindications": "-",
+          "monitoring": "Sustained osmotherapy for sustained ICP elevation; alternating mannitol and HTS may extend treatment window; monitor for accumulation",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Decompressive craniectomy**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**Indications:** Refractory ICP despite maximal medical therapy; malignant MCA stroke (large hemispheric infarct with edema); large ICH with mass effect; traumatic brain injury with refractory ICP; **Timing:** TBI: DECRA trial (2011) — early DC did not improve 6-mo outcomes but reduced ICP/ICU stay; RESCUEicp (2016) — late rescue DC improved survival but increased severe disability; **Stroke:** DESTINY/DECIMAL/HAMLET — DC improves survival in malignant MCA stroke age <60 (NNT=2); must discuss goals of care",
+            "orderSentence": "**Decompressive craniectomy** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Removes skull to allow brain expansion; definitive ICP reduction; increases survival but may increase proportion surviving with severe disability; requires extensive goals of care discussion; timing and patient selection critical",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Dexamethasone (tumor/vasogenic edema)**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "**Dexamethasone (tumor/vasogenic edema)** 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**ONLY for vasogenic edema from tumor or abscess**; **NOT for TBI, stroke, or cytotoxic edema** (steroids worsen outcomes in TBI — CRASH trial); **Dose:** 10 mg IV load → 4 mg IV q6h; **Duration:** Until definitive tumor treatment; taper over 1-2 weeks after radiation/surgery; GI prophylaxis with PPI",
+            "orderSentence": "**Dexamethasone (tumor/vasogenic edema)** 10 mg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Reduces vasogenic edema around tumors; inhibits VEGF; dramatic effect within 24-48h; CRASH trial: steroids HARMFUL in TBI — avoid; no benefit in stroke",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Surgical evacuation of mass lesion**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "**Surgical evacuation of mass lesion** 30 mL -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Epidural hematoma:** Emergent if >30 mL, >15mm thickness, or >5mm midline shift, or GCS deterioration; **Subdural hematoma:** Emergent if >10mm thickness, >5mm midline shift, or GCS decrease >2 points; **ICH:** Consider if lobar >30 mL and deteriorating; cerebellar >3cm or hydrocephalus; **Tumor:** Resection or debulking for mass effect",
+            "orderSentence": "**Surgical evacuation of mass lesion** 30 mL -"
+          },
+          "contraindications": "-",
+          "monitoring": "Removes compressive mass → immediate ICP reduction; life-saving for epidural hematoma; subdural and ICH outcomes less clearly improved by surgery but indicated for mass effect and herniation",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Refractory ICP Management (Tier 3 — Rescue Therapies)": [
+        {
+          "item": "**Pentobarbital coma**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg/kg",
+                "orderSentence": "**Pentobarbital coma** 5-10 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**LAST RESORT for refractory ICP**; **Protocol:** Pentobarbital 5-10 mg/kg IV load over 30 min → 1-3 mg/kg/hr infusion; titrate to ICP <22 mmHg or burst suppression on EEG; **Target:** Burst suppression (3-10 second bursts with 10-20 second suppression); **Monitor:** Continuous EEG; drug levels (30-50 mcg/mL); hemodynamics (causes hypotension — often need vasopressors); **Duration:** 24-48h then attempt to wean; may need 3-5 days",
+            "orderSentence": "**Pentobarbital coma** 5-10 mg/kg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Reduces CMRO2 to minimal levels; dramatic ICP reduction; causes severe hypotension (need vasopressors); immunosuppression; ileus; prolonged sedation; no proven mortality benefit but reduces ICP; requires ICU expertise",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Therapeutic hypothermia (rescue)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "**For refractory ICP only** (NOT prophylactic); **Target:** 32-35°C; **Method:** Surface cooling (Arctic Sun) or intravascular cooling catheter; **Duration:** 24-72h; **Rewarming:** Slow — 0.25°C/hour (rapid rewarming causes ICP rebound); **Complications:** Shivering (treat with paralysis, buspirone, meperidine), coagulopathy, infection, arrhythmia",
+            "orderSentence": "**Therapeutic hypothermia (rescue)** - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Reduces CMRO2 and ICP; EUROTHERM (2015): prophylactic hypothermia HARMFUL in TBI; rescue hypothermia for refractory ICP still used but evidence weak; prevents fever spikes; requires expertise",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Lumbar CSF drainage**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mL/h",
+                "orderSentence": "**Lumbar CSF drainage** 5-10 mL/h -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**ONLY if:** Communicating hydrocephalus; ICP refractory to EVD drainage; no mass lesion or obstructive hydrocephalus; basal cisterns visible; **Method:** Lumbar drain at 10-15 cm H2O; drain 5-10 mL/hour; **Risk:** Tonsillar herniation if used inappropriately; overdrainage",
+            "orderSentence": "**Lumbar CSF drainage** 5-10 mL/h -"
+          },
+          "contraindications": "-",
+          "monitoring": "Drains CSF from lumbar space; reduces overall CSF volume; effective adjunct in communicating hydrocephalus; must NOT be used with obstructive hydrocephalus or significant mass effect",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**High-dose hypertonic saline (23.4%)**",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "**High-dose hypertonic saline (23.4%)** 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**For refractory ICP crisis**; 30 mL IV bolus via central line; can repeat; target sodium up to 155-160 mEq/L in refractory cases (with close monitoring); **Risk:** Central pontine myelinolysis if rapid sodium changes (maintain stable elevated sodium; do not rapidly correct back to normal)",
+            "orderSentence": "**High-dose hypertonic saline (23.4%)** 30 mL IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Potent osmotherapy; can achieve higher sodium targets than 3% NaCl; reserved for refractory cases; requires central line access",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Decompressive craniectomy (rescue)**",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "26.9%",
+                "orderSentence": "**Decompressive craniectomy (rescue)** 26.9% -"
+              }
+            ],
+            "route": "-",
+            "instructions": "As above; indicated for refractory ICP after failure of all medical therapies; must discuss survival with potential severe disability (RESCUEicp: DC improved survival from 26.9% to 48.9% but increased severe disability); goals of care critical",
+            "orderSentence": "**Decompressive craniectomy (rescue)** 26.9% -"
+          },
+          "contraindications": "-",
+          "monitoring": "RESCUEicp (2016): More patients survived with DC but at cost of more survivors with severe disability; DECRA (2011): Early prophylactic DC did not improve functional outcomes; decision requires extensive patient/family discussion",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Medications to AVOID": [
+        {
+          "item": "Corticosteroids in TBI",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Corticosteroids in TBI - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Corticosteroids in ischemic stroke",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Corticosteroids in ischemic stroke - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Hypotonic fluids (D5W, 0.45% NaCl)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Hypotonic fluids (D5W, 0.45% NaCl) - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Prolonged aggressive hyperventilation",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Prolonged aggressive hyperventilation - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Ketamine (traditionally)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Ketamine (traditionally) - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Nitroprusside",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Nitroprusside - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Propofol infusion syndrome (prolonged high-dose propofol)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Propofol infusion syndrome (prolonged high-dose propofol) - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurosurgery consultation — EMERGENT",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neuro-ICU admission",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Continuous ICP monitoring (invasive)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Continuous EtCO2 / frequent ABG",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Serial neurologic examination",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HOB elevation 30° / midline head",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Avoid Valsalva / ICP-raising maneuvers",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Normothermia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Euvolemia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Ophthalmology consultation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology consultation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physiatry / Rehabilitation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care / Ethics",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Social work",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clinical neurophysiology / EEG",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Multimodal neuromonitoring",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Targeted temperature management",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Brain death evaluation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "VP shunt / CSF diversion (long-term)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Transverse sinus stenting (IIH)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Category",
+      "features": "Etiologies",
+      "tests": "Key Features"
+    },
+    {
+      "diagnosis": "**Traumatic**",
+      "features": "Traumatic brain injury (TBI); epidural hematoma; subdural hematoma; contusions; diffuse axonal injury",
+      "tests": "History of trauma; CT findings; mechanism of injury"
+    },
+    {
+      "diagnosis": "**Vascular**",
+      "features": "Ischemic stroke (malignant edema); intracerebral hemorrhage; subarachnoid hemorrhage; cerebral venous sinus thrombosis",
+      "tests": "Sudden onset; focal deficits; CT/MRI findings; angiography for vascular lesions"
+    },
+    {
+      "diagnosis": "**Neoplastic**",
+      "features": "Primary brain tumor; metastatic disease; leptomeningeal carcinomatosis",
+      "tests": "Subacute progressive; known cancer history; MRI with contrast"
+    },
+    {
+      "diagnosis": "**Infectious**",
+      "features": "Meningitis; encephalitis; brain abscess; subdural empyema",
+      "tests": "Fever; meningismus; CSF analysis; ring-enhancing lesion"
+    },
+    {
+      "diagnosis": "**Hydrocephalus**",
+      "features": "Obstructive (tumor, hemorrhage, aqueductal stenosis); communicating (post-infectious, post-hemorrhagic); normal pressure hydrocephalus",
+      "tests": "Ventricular enlargement on imaging; gait disturbance, dementia, incontinence (NPH triad)"
+    },
+    {
+      "diagnosis": "**Idiopathic Intracranial Hypertension (IIH)**",
+      "features": "Pseudotumor cerebri",
+      "tests": "Young obese women; headache; papilledema; pulsatile tinnitus; normal imaging; elevated OP on LP"
+    },
+    {
+      "diagnosis": "**Metabolic**",
+      "features": "Hepatic encephalopathy; hypertensive encephalopathy (PRES); hyponatremia (cerebral edema); hypoxic-ischemic injury",
+      "tests": "Metabolic derangement; toxic screen; liver function; blood pressure"
+    },
+    {
+      "diagnosis": "**Other**",
+      "features": "High altitude cerebral edema (HACE); post-operative; radiation necrosis; posterior reversible encephalopathy syndrome (PRES)",
+      "tests": "Exposure history; post-procedural; imaging pattern (PRES: posterior white matter edema)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Guideline",
+      "evidenceLevel": "Source",
+      "source": "Year"
+    },
+    {
+      "recommendation": "[Guidelines for the Management of Severe Traumatic Brain Injury](https://pubmed.ncbi.nlm.nih.gov/27654000/)",
+      "evidenceLevel": "Brain Trauma Foundation (BTF)",
+      "source": "2016 (4th ed)"
+    },
+    {
+      "recommendation": "Malignant MCA Stroke Guidelines",
+      "evidenceLevel": "AHA/ASA",
+      "source": "2019"
+    },
+    {
+      "recommendation": "ICH Guidelines",
+      "evidenceLevel": "AHA/ASA",
+      "source": "2022"
+    },
+    {
+      "recommendation": "SAH Guidelines",
+      "evidenceLevel": "AHA/ASA",
+      "source": "2023"
+    },
+    {
+      "recommendation": "IIH Guidelines",
+      "evidenceLevel": "British Consensus Guidelines",
+      "source": "2018"
+    },
+    {
+      "recommendation": "Study",
+      "evidenceLevel": "Finding",
+      "source": "Impact"
+    },
+    {
+      "recommendation": "[BTF Guidelines (2016)](https://pubmed.ncbi.nlm.nih.gov/27654000/)",
+      "evidenceLevel": "ICP threshold changed from 20 to 22 mmHg; CPP target 60-70 (avoid >70); Level IIA evidence for ICP monitoring improving outcomes",
+      "source": "Standard of care for TBI ICP management"
+    },
+    {
+      "recommendation": "[CRASH Trial (2004)](https://pubmed.ncbi.nlm.nih.gov/15474134/)",
+      "evidenceLevel": "Corticosteroids HARMFUL in TBI — 14-day mortality increased (25.7% vs. 22.3%, RR 1.15); 6-month mortality increased",
+      "source": "Steroids absolutely contraindicated in TBI"
+    },
+    {
+      "recommendation": "[DECRA Trial (2011)](https://pubmed.ncbi.nlm.nih.gov/21434843/)",
+      "evidenceLevel": "Early decompressive craniectomy (within 72h) for refractory ICP in TBI did NOT improve 6-month functional outcome (though reduced ICP and ICU stay)",
+      "source": "Questioned early prophylactic DC; did not stop DC but informed timing decisions"
+    },
+    {
+      "recommendation": "[RESCUEicp Trial (2016)](https://pubmed.ncbi.nlm.nih.gov/27602507/)",
+      "evidenceLevel": "Late/rescue DC for refractory ICP in TBI improved survival (48.9% vs. 26.9%) but increased proportion with severe disability; similar rates of favorable outcome",
+      "source": "DC is life-saving but increases survival with disability; requires goals of care discussion"
+    },
+    {
+      "recommendation": "[DESTINY/DECIMAL/HAMLET (pooled)](https://pubmed.ncbi.nlm.nih.gov/17303527/)",
+      "evidenceLevel": "DC for malignant MCA stroke <60 years within 48h reduces mortality (NNT=2); higher survival with moderate-severe disability (mRS 4); DC should be offered",
+      "source": "Standard of care for malignant MCA stroke in appropriate patients"
+    },
+    {
+      "recommendation": "[EUROTHERM (2015)](https://pubmed.ncbi.nlm.nih.gov/26444221/)",
+      "evidenceLevel": "Prophylactic hypothermia (32-35°C) in TBI HARMFUL — worse outcomes; trial stopped early",
+      "source": "Hypothermia NOT recommended prophylactically; rescue use only for refractory ICP"
+    },
+    {
+      "recommendation": "[INTERACT2](https://pubmed.ncbi.nlm.nih.gov/23713578/) / [ATACH-2](https://pubmed.ncbi.nlm.nih.gov/27276234/) (ICH)",
+      "evidenceLevel": "Intensive BP lowering (SBP <140) safe in ICH; modest benefit in INTERACT2; no benefit in ATACH-2",
+      "source": "SBP <140 within 6h is current recommendation for ICH"
+    },
+    {
+      "recommendation": "SAFE-TBI (2021)",
+      "evidenceLevel": "20% mannitol vs. hypertonic saline (various concentrations): no significant difference in ICP control or outcomes",
+      "source": "Either osmotic agent acceptable; hypertonic saline may be preferred in hypovolemia"
+    },
+    {
+      "recommendation": "Parameter",
+      "evidenceLevel": "Target",
+      "source": "Evidence Level"
+    },
+    {
+      "recommendation": "ICP",
+      "evidenceLevel": "<22 mmHg",
+      "source": "BTF Level IIB"
+    },
+    {
+      "recommendation": "CPP",
+      "evidenceLevel": "60-70 mmHg",
+      "source": "BTF Level IIB (avoid CPP <60; avoid >70 due to ARDS risk)"
+    },
+    {
+      "recommendation": "PaCO2",
+      "evidenceLevel": "35-40 mmHg (normocapnia)",
+      "source": "BTF Level IIB"
+    },
+    {
+      "recommendation": "PaCO2 (hyperventilation crisis)",
+      "evidenceLevel": "30-35 mmHg (brief, <30 min)",
+      "source": "BTF Level III"
+    },
+    {
+      "recommendation": "Temperature",
+      "evidenceLevel": "36-37°C (normothermia)",
+      "source": "BTF Level IIB"
+    },
+    {
+      "recommendation": "Glucose",
+      "evidenceLevel": "140-180 mg/dL",
+      "source": "General critical care consensus"
+    },
+    {
+      "recommendation": "SBP (avoid hypotension)",
+      "evidenceLevel": ">100 mmHg (or >110 for TBI age 50-69)",
+      "source": "BTF Level III"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "ICP (if monitored)",
+      "frequency": "Continuous",
+      "target": "<22 mmHg (BTF 2016); some centers <20",
+      "action": "Tiered therapy escalation (osmotherapy → sedation → CSF drainage → hyperventilation → DC)"
+    },
+    {
+      "item": "CPP (MAP - ICP)",
+      "frequency": "Continuous (calculated)",
+      "target": "60-70 mmHg",
+      "action": "If low: IV fluids, vasopressors; if high (>70) and ICP elevated: focus on ICP reduction"
+    },
+    {
+      "item": "Neurologic exam (GCS, pupils, motor)",
+      "frequency": "q1h initially; q2-4h when stable",
+      "target": "Stable or improving",
+      "action": "Decline: STAT CT; escalate ICP therapy; surgical evaluation"
+    },
+    {
+      "item": "Serum sodium",
+      "frequency": "q2-4h during active osmotherapy",
+      "target": "135-155 mEq/L (target varies); avoid rapid changes",
+      "action": "Adjust osmotherapy; correct slowly if needed"
+    },
+    {
+      "item": "Serum osmolality",
+      "frequency": "q4-6h during mannitol therapy",
+      "target": "<320 mOsm/kg (some use <315)",
+      "action": "Hold mannitol if >320; switch to HTS"
+    },
+    {
+      "item": "ABG / PaCO2",
+      "frequency": "q4-6h; more frequent if adjusting ventilation",
+      "target": "35-40 mmHg (normocapnia); 30-35 only for acute crisis",
+      "action": "Adjust ventilator; avoid hyperventilation except for crisis"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "Continuous",
+      "target": "36-37°C; strict normothermia",
+      "action": "Aggressive cooling; acetaminophen; treat infection source"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "q4-6h",
+      "target": "140-180 mg/dL",
+      "action": "Insulin titration"
+    },
+    {
+      "item": "Urine output",
+      "frequency": "Hourly",
+      "target": "0.5-1 mL/kg/hr",
+      "action": "Assess volume status; diuresis from mannitol expected (replace losses)"
+    },
+    {
+      "item": "Hemodynamics (MAP)",
+      "frequency": "Continuous",
+      "target": "MAP to maintain CPP 60-70",
+      "action": "Vasopressors; volume"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Level of Care",
+      "criteria": "Criteria"
+    },
+    {
+      "disposition": "Neuro-ICU",
+      "criteria": "Any patient requiring ICP monitoring; GCS ≤8; signs of herniation; requiring osmotherapy, sedation, or mechanical ventilation for ICP; post-operative after decompressive craniectomy or hematoma evacuation; status epilepticus; hemodynamic instability"
+    },
+    {
+      "disposition": "Step-down / Intermediate care",
+      "criteria": "Stable ICP; improving neurologically; EVD weaning; transitioning off invasive monitoring; stable post-operative"
+    },
+    {
+      "disposition": "General neurology/neurosurgery floor",
+      "criteria": "Stable IIH on medical therapy; post-VP shunt; stable post-operative without ICP concerns"
+    }
+  ]
+}

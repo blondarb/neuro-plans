@@ -1,0 +1,916 @@
+{
+  "id": "idiopathic-intracranial-hypertension",
+  "title": "Idiopathic Intracranial Hypertension (IIH)",
+  "version": "1.0",
+  "icd10": [
+    "** G93.2 (Benign intracranial hypertension)",
+    "G93.5 (Compression of brain)"
+  ],
+  "scope": "** Evaluation and management of idiopathic intracranial hypertension in adults including diagnosis, medical management, and surgical interventions. Applies to ED, hospital, and outpatient settings. Excludes secondary causes of elevated ICP.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Anemia (can cause papilledema); baseline",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Renal function (for acetazolamide); electrolytes",
+          "target": "Normal"
+        },
+        {
+          "item": "TSH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism/hyperthyroidism can cause ICP",
+          "target": "Normal"
+        },
+        {
+          "item": "Vitamin A level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypervitaminosis A",
+          "target": "Normal"
+        },
+        {
+          "item": "Pregnancy test",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Pregnancy considerations for treatment",
+          "target": "Document"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Opening pressure",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diagnostic criterion; ≥25 cm H2O in adults",
+          "target": "Elevated (≥25 cm H2O)"
+        },
+        {
+          "item": "CSF cell count",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rule out meningitis",
+          "target": "Normal (≤5 WBC/μL)"
+        },
+        {
+          "item": "CSF protein",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rule out meningitis, malignancy",
+          "target": "Normal (≤45 mg/dL)"
+        },
+        {
+          "item": "CSF glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rule out infection",
+          "target": "Normal (>60% serum)"
+        },
+        {
+          "item": "Cytology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If malignancy suspected",
+          "target": "Negative"
+        },
+        {
+          "item": "Cultures",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "If infection suspected",
+          "target": "Negative"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Iron studies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Iron deficiency anemia associated",
+          "target": "Normal"
+        },
+        {
+          "item": "Cortisol (AM or stimulation test)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Adrenal insufficiency; steroid withdrawal",
+          "target": "Normal"
+        },
+        {
+          "item": "ANA, dsDNA",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "SLE (cerebral venous thrombosis risk)",
+          "target": "Negative"
+        },
+        {
+          "item": "Hypercoagulability panel",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If venous sinus thrombosis suspected",
+          "target": "Normal"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with and without contrast + MRV",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Before LP; rule out mass, CVT",
+          "target": "No mass; may show empty sella, flattened globes, optic nerve sheath distension, transverse sinus stenosis",
+          "contraindications": "Pacemaker, metal"
+        },
+        {
+          "item": "CT head (if MRI unavailable)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "Emergent exclusion of mass",
+          "target": "No mass, hemorrhage",
+          "contraindications": "None (contrast: renal)"
+        },
+        {
+          "item": "CT venography",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "If MRV inconclusive for CVT",
+          "target": "No venous sinus thrombosis",
+          "contraindications": "Renal disease; contrast allergy"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Dilated fundoscopic exam",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "All patients; before LP if possible",
+          "target": "Papilledema grading (Frisen scale)",
+          "contraindications": "None"
+        },
+        {
+          "item": "Optical coherence tomography (OCT)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Quantify RNFL thickness; follow progression",
+          "target": "Baseline RNFL; monitor for atrophy",
+          "contraindications": "None"
+        },
+        {
+          "item": "Automated perimetry (visual fields)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Detect visual field defects; monitor",
+          "target": "Document defects; enlarged blind spot",
+          "contraindications": "None"
+        },
+        {
+          "item": "Visual acuity",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Baseline and monitoring",
+          "target": "20/20 or stable",
+          "contraindications": "None"
+        },
+        {
+          "item": "Color vision testing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Optic nerve function",
+          "target": "Normal",
+          "contraindications": "None"
+        },
+        {
+          "item": "Fundus photography",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Document papilledema; follow",
+          "target": "Baseline; monitor",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Weight Management (Cornerstone for Obese Patients)": [
+        {
+          "item": "Weight loss (diet/lifestyle)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10%",
+                "orderSentence": "Weight loss (diet/lifestyle) 10% -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Target 5-10% body weight loss; improves ICP",
+            "orderSentence": "Weight loss (diet/lifestyle) 10% -"
+          },
+          "contraindications": "None",
+          "monitoring": "Weight; symptoms; visual function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Bariatric surgery referral",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Consider if BMI >35 with comorbidities; effective for IIH",
+            "orderSentence": "Bariatric surgery referral - - - see dosing"
+          },
+          "contraindications": "Per surgical criteria",
+          "monitoring": "Weight; ICP",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nutrition/dietitian referral",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Structured weight loss program",
+            "orderSentence": "Nutrition/dietitian referral - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Progress",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "First-Line Medical Therapy": [
+        {
+          "item": "Acetazolamide (Diamox)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Acetazolamide (Diamox) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "500 mg BID; titrate to 2-4 g/day as tolerated; IIHTT used up to 4 g/day",
+            "orderSentence": "Acetazolamide (Diamox) 500 mg PO"
+          },
+          "contraindications": "Sulfa allergy, severe renal/hepatic disease, hypokalemia",
+          "monitoring": "K+, bicarb, renal function q1-3 months; paresthesias (expected); fatigue, dysgeusia",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Potassium supplementation",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-40 mEq",
+                "orderSentence": "Potassium supplementation 20-40 mEq -"
+              }
+            ],
+            "route": "-",
+            "instructions": "20-40 mEq daily; PRN based on K+ level",
+            "orderSentence": "Potassium supplementation 20-40 mEq -"
+          },
+          "contraindications": "Renal failure, hyperkalemia",
+          "monitoring": "K+ levels",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-Line/Adjunctive Medical Therapy": [
+        {
+          "item": "Topiramate",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Topiramate 25 mg -"
+              }
+            ],
+            "route": "-",
+            "instructions": "25 mg BID; titrate to 50-100 mg BID; also promotes weight loss",
+            "orderSentence": "Topiramate 25 mg -"
+          },
+          "contraindications": "Nephrolithiasis, glaucoma, pregnancy",
+          "monitoring": "Weight; cognitive effects; metabolic acidosis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Furosemide (add-on)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-40 mg",
+                "orderSentence": "Furosemide (add-on) 20-40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "20-40 mg daily; if acetazolamide insufficient alone",
+            "orderSentence": "Furosemide (add-on) 20-40 mg PO"
+          },
+          "contraindications": "Sulfa allergy (cross-reactivity uncommon), severe dehydration",
+          "monitoring": "K+, renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Headache Management": [
+        {
+          "item": "Acetazolamide (treats underlying cause)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Per above",
+            "orderSentence": "Acetazolamide (treats underlying cause) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "Per above",
+          "monitoring": "Per above",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Analgesics (acute)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "NSAIDs, acetaminophen PRN; avoid opioids",
+            "orderSentence": "Analgesics (acute) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "NSAID: GI/renal issues",
+          "monitoring": "Limit use to prevent MOH",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Migraine prophylaxis (if comorbid)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Topiramate (dual benefit); beta-blockers, amitriptyline",
+            "orderSentence": "Migraine prophylaxis (if comorbid) - - - see dosing"
+          },
+          "pretreatment": "-",
+          "contraindications": "Per medication",
+          "monitoring": "Per medication",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Therapeutic Lumbar Puncture": [
+        {
+          "item": "Large-volume LP",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-40 mL",
+                "orderSentence": "Large-volume LP 20-40 mL -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Remove 20-40 mL CSF; immediate symptom relief",
+            "orderSentence": "Large-volume LP 20-40 mL -"
+          },
+          "contraindications": "Mass lesion, coagulopathy, infection at site",
+          "monitoring": "Headache, symptoms; temporary benefit",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serial LPs",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Bridge to surgery or when medical therapy insufficient",
+            "orderSentence": "Serial LPs - - - see dosing"
+          },
+          "contraindications": "Same",
+          "monitoring": "Same; not long-term solution",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Surgical Interventions (Vision-Threatening or Refractory)": [
+        {
+          "item": "Optic nerve sheath fenestration (ONSF)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Incision in optic nerve sheath; protects vision; does not reduce ICP",
+            "orderSentence": "Optic nerve sheath fenestration (ONSF) - - - see dosing"
+          },
+          "contraindications": "Severe optic atrophy (relative)",
+          "monitoring": "Visual fields, acuity post-op",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF shunting (VP or LP shunt)",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Ventriculoperitoneal or lumboperitoneal shunt; reduces ICP and headache",
+            "orderSentence": "CSF shunting (VP or LP shunt) - - - see dosing"
+          },
+          "contraindications": "Infection, peritoneal pathology",
+          "monitoring": "Shunt function; revision rate high (50%+)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venous sinus stenting",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Stent transverse sinus stenosis; emerging therapy",
+            "orderSentence": "Venous sinus stenting - - - see dosing"
+          },
+          "contraindications": "No significant stenosis; venous anatomy",
+          "monitoring": "ICP; stent patency; headache",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Fulminant IIH (Urgent Vision Loss)": [
+        {
+          "item": "High-dose IV acetazolamide",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "High-dose IV acetazolamide 500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500 mg IV q6h initially",
+            "orderSentence": "High-dose IV acetazolamide 500 mg IV"
+          },
+          "contraindications": "Per above",
+          "monitoring": "K+, bicarb",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Emergent therapeutic LP",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Large-volume LP; may repeat daily",
+            "orderSentence": "Emergent therapeutic LP - - - see dosing"
+          },
+          "contraindications": "Mass lesion, coagulopathy",
+          "monitoring": "Symptoms, vision",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Urgent surgical referral",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "ONSF or shunt within days",
+            "orderSentence": "Urgent surgical referral - - - see dosing"
+          },
+          "contraindications": "Per procedure",
+          "monitoring": "Vision",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "IV steroids (controversial)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "IV steroids (controversial) 250 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Methylprednisolone 250 mg IV q6h; short-term bridge only; can worsen IIH long-term",
+            "orderSentence": "IV steroids (controversial) 250 mg IV"
+          },
+          "contraindications": "Contraindicated for maintenance",
+          "monitoring": "Glucose; short-term only",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neuro-ophthalmology",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "All patients; diagnosis, monitoring, management"
+        },
+        {
+          "item": "Neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Headache management; atypical cases"
+        },
+        {
+          "item": "Neurosurgery",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "Fulminant IIH; shunt evaluation"
+        },
+        {
+          "item": "Interventional neuroradiology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Venous sinus stenting evaluation"
+        },
+        {
+          "item": "Ophthalmology",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "If neuro-ophthalmology unavailable"
+        },
+        {
+          "item": "Bariatric surgery",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Obese patients; BMI >35"
+        },
+        {
+          "item": "Nutrition/dietitian",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Weight loss counseling"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "IIH is a chronic condition requiring ongoing monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Weight loss is critical for long-term management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take acetazolamide as prescribed; stay hydrated",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report new visual symptoms immediately (blurred vision, double vision, vision loss)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report worsening headache, nausea/vomiting, pulsatile tinnitus",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid medications that can worsen IIH (vitamin A, tetracyclines)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep all ophthalmology appointments; visual field testing is critical",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "IIH Research Foundation (ihrfoundation.org) for resources",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Cerebral venous thrombosis",
+      "features": "Acute headache; hypercoagulable state; may have focal signs",
+      "tests": "MRV, CT venography"
+    },
+    {
+      "diagnosis": "Meningitis (infectious or carcinomatous)",
+      "features": "Fever, meningismus, abnormal CSF",
+      "tests": "CSF analysis, cultures, cytology"
+    },
+    {
+      "diagnosis": "Intracranial mass (tumor, abscess)",
+      "features": "Focal signs; mass on imaging",
+      "tests": "MRI with contrast"
+    },
+    {
+      "diagnosis": "Hydrocephalus",
+      "features": "Enlarged ventricles; gait, cognition changes",
+      "tests": "MRI/CT"
+    },
+    {
+      "diagnosis": "Medication-induced ICP elevation",
+      "features": "History of causative medication",
+      "tests": "History; resolve after discontinuation"
+    },
+    {
+      "diagnosis": "Sleep apnea",
+      "features": "Nocturnal headaches; daytime somnolence; may coexist",
+      "tests": "Sleep study"
+    },
+    {
+      "diagnosis": "Systemic hypertension (hypertensive encephalopathy)",
+      "features": "Severely elevated BP; may cause papilledema",
+      "tests": "BP measurement"
+    },
+    {
+      "diagnosis": "Optic neuritis",
+      "features": "Unilateral vision loss; pain with eye movement; no papilledema initially",
+      "tests": "MRI orbits; OCT"
+    },
+    {
+      "diagnosis": "Hypervitaminosis A",
+      "features": "History of vitamin A/retinoid use",
+      "tests": "Vitamin A level"
+    },
+    {
+      "diagnosis": "Anemia (severe)",
+      "features": "Can cause papilledema without true ICP elevation",
+      "tests": "CBC"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Acetazolamide effective for IIH",
+      "evidenceLevel": "Class I, Level A",
+      "source": "IIHTT (Idiopathic Intracranial Hypertension Treatment Trial)"
+    },
+    {
+      "recommendation": "Weight loss improves IIH",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Multiple studies; IIHTT secondary analysis"
+    },
+    {
+      "recommendation": "ONSF protects vision in IIH",
+      "evidenceLevel": "Class III, Level B",
+      "source": "Case series; observational data"
+    },
+    {
+      "recommendation": "CSF shunting reduces ICP and headache",
+      "evidenceLevel": "Class III, Level B",
+      "source": "Case series; high revision rate noted"
+    },
+    {
+      "recommendation": "Venous sinus stenting emerging therapy",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Growing evidence; case series"
+    },
+    {
+      "recommendation": "Modified Dandy criteria for diagnosis",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Friedman et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23966248/)"
+    },
+    {
+      "recommendation": "Topiramate as adjunct with weight loss benefit",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Observational data"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Visual acuity",
+      "ED": "STAT",
+      "HOSP": "Daily",
+      "OPD": "Every visit",
+      "ICU": "STAT",
+      "frequency": "Ongoing",
+      "action": "Escalate treatment"
+    },
+    {
+      "item": "Visual fields (perimetry)",
+      "ED": "-",
+      "HOSP": "Daily (if fulminant)",
+      "OPD": "q1-3 months",
+      "ICU": "-",
+      "frequency": "Per risk",
+      "action": "Escalate treatment"
+    },
+    {
+      "item": "Papilledema grade (Frisen)",
+      "ED": "STAT",
+      "HOSP": "Daily",
+      "OPD": "Every visit",
+      "ICU": "STAT",
+      "frequency": "Ongoing",
+      "action": "Continue treatment"
+    },
+    {
+      "item": "OCT (RNFL thickness)",
+      "ED": "-",
+      "HOSP": "Baseline",
+      "OPD": "q3-6 months",
+      "ICU": "-",
+      "frequency": "Per schedule",
+      "action": "Indicates chronic damage"
+    },
+    {
+      "item": "Weight",
+      "ED": "-",
+      "HOSP": "Weekly",
+      "OPD": "Every visit",
+      "ICU": "-",
+      "frequency": "Ongoing",
+      "action": "Reinforce; consider bariatric"
+    },
+    {
+      "item": "Potassium",
+      "ED": "-",
+      "HOSP": "Daily initially",
+      "OPD": "q1-3 months",
+      "ICU": "-",
+      "frequency": "On acetazolamide",
+      "action": "Supplement"
+    },
+    {
+      "item": "Bicarbonate",
+      "ED": "-",
+      "HOSP": "Daily initially",
+      "OPD": "q1-3 months",
+      "ICU": "-",
+      "frequency": "On acetazolamide",
+      "action": "May need dose reduction"
+    },
+    {
+      "item": "Creatinine",
+      "ED": "-",
+      "HOSP": "Baseline",
+      "OPD": "q3-6 months",
+      "ICU": "-",
+      "frequency": "On acetazolamide",
+      "action": "Adjust dose if impaired"
+    },
+    {
+      "item": "Headache severity",
+      "ED": "ROUTINE",
+      "HOSP": "Daily",
+      "OPD": "Every visit",
+      "ICU": "-",
+      "frequency": "Ongoing",
+      "action": "Optimize treatment"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Mild-moderate symptoms; stable vision; reliable follow-up"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "New diagnosis with significant papilledema; fulminant IIH; progressive vision loss; unable to tolerate oral medications"
+    },
+    {
+      "disposition": "ICU admission",
+      "criteria": "Rarely needed; severe headache requiring IV therapy; post-operative monitoring"
+    },
+    {
+      "disposition": "Neuro-ophthalmology follow-up",
+      "criteria": "q2-4 weeks initially; q1-3 months when stable"
+    },
+    {
+      "disposition": "Urgent follow-up",
+      "criteria": "Any decline in vision; worsening headache; medication intolerance"
+    }
+  ]
+}

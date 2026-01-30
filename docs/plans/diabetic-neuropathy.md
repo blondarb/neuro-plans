@@ -1,3 +1,10 @@
+---
+title: "Diabetic Neuropathy"
+description: "Clinical decision support for diabetic neuropathy diagnosis and management"
+version: "1.0"
+setting: "HOSP, OPD, ICU"
+---
+
 # Diabetic Neuropathy
 
 **VERSION:** 1.0
@@ -9,9 +16,9 @@
 
 **DIAGNOSIS:** Diabetic Neuropathy
 
-**ICD-10:** E11.40 (Type 2 diabetes with diabetic neuropathy, unspecified), E11.41 (Type 2 diabetes with diabetic mononeuropathy), E11.42 (Type 2 diabetes with diabetic polyneuropathy), E10.40-E10.42 (Type 1 equivalents), G63.2 (Diabetic polyneuropathy)
+**ICD-10:** E11.40 (Type 2 diabetes with diabetic neuropathy, unspecified), E11.41 (Type 2 diabetes with diabetic mononeuropathy), E11.42 (Type 2 diabetes with diabetic polyneuropathy), E10.40-E10.42 (Type 1 equivalents), G63.2 (Diabetic polyneuropathy), G62.9 (Polyneuropathy, unspecified)
 
-**SYNONYMS:** Diabetic peripheral neuropathy, DPN, diabetic polyneuropathy, diabetic sensorimotor neuropathy, diabetic autonomic neuropathy, painful diabetic neuropathy, PDN, diabetic amyotrophy, diabetic lumbosacral radiculoplexus neuropathy, DLRPN, proximal diabetic neuropathy
+**SYNONYMS:** Diabetic peripheral neuropathy, DPN, diabetic polyneuropathy, diabetic sensorimotor neuropathy, diabetic autonomic neuropathy, painful diabetic neuropathy, PDN, diabetic amyotrophy, diabetic lumbosacral radiculoplexus neuropathy, DLRPN, proximal diabetic neuropathy, diabetic nerve damage
 
 **SCOPE:** Evaluation and management of diabetic neuropathy in adults including distal symmetric polyneuropathy (most common), painful diabetic neuropathy, diabetic autonomic neuropathy, and focal/multifocal neuropathies. Applies to ED, hospital, and outpatient settings.
 
@@ -37,33 +44,33 @@
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| HbA1c | - | ROUTINE | ROUTINE | - | Glycemic control; correlates with neuropathy risk | <7% (individualized) |
-| Fasting glucose | ROUTINE | ROUTINE | ROUTINE | - | Current glycemic status | 80-130 mg/dL |
-| BMP (electrolytes, creatinine, BUN) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Renal function; uremic neuropathy | Normal |
-| CBC | ROUTINE | ROUTINE | ROUTINE | - | Anemia (B12 deficiency) | Normal |
-| Vitamin B12 | - | ROUTINE | ROUTINE | - | Metformin causes B12 deficiency; coexistent deficiency | >400 pg/mL |
-| Methylmalonic acid (MMA) | - | ROUTINE | ROUTINE | - | If B12 borderline (200-400) | Normal |
-| TSH | - | ROUTINE | ROUTINE | - | Hypothyroid neuropathy | Normal |
-| Lipid panel | - | ROUTINE | ROUTINE | - | Dyslipidemia contributes to neuropathy | LDL <100 (or <70 if ASCVD) |
+| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Glycemic control; correlates with neuropathy risk | <7% (individualized) |
+| Fasting glucose (CPT 82947) | ROUTINE | ROUTINE | ROUTINE | - | Current glycemic status | 80-130 mg/dL |
+| BMP (CPT 80048) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Renal function; uremic neuropathy | Normal |
+| CBC (CPT 85025) | ROUTINE | ROUTINE | ROUTINE | - | Anemia (B12 deficiency) | Normal |
+| Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | Metformin causes B12 deficiency; coexistent deficiency | >400 pg/mL |
+| Methylmalonic acid (MMA) (CPT 83921) | - | ROUTINE | ROUTINE | - | If B12 borderline (200-400) | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Hypothyroid neuropathy | Normal |
+| Lipid panel (CPT 80061) | - | ROUTINE | ROUTINE | - | Dyslipidemia contributes to neuropathy | LDL <100 (or <70 if ASCVD) |
 
 ### 1B. Extended Labs (Atypical Presentations)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| SPEP/UPEP with immunofixation | - | ROUTINE | ROUTINE | - | Monoclonal gammopathy-associated neuropathy | No M-spike |
+| SPEP/UPEP with immunofixation (CPT 86334, 86335) | - | ROUTINE | ROUTINE | - | Monoclonal gammopathy-associated neuropathy | No M-spike |
 | Serum free light chains | - | ROUTINE | ROUTINE | - | If SPEP negative but suspicion | Normal ratio |
-| Liver function tests | - | ROUTINE | ROUTINE | - | Hepatic disease, alcohol | Normal |
-| HIV | - | ROUTINE | EXT | - | If risk factors | Negative |
-| RPR/VDRL | - | ROUTINE | EXT | - | Syphilis if atypical | Nonreactive |
-| ESR, CRP | - | ROUTINE | EXT | - | Inflammatory/vasculitic neuropathy | Normal |
-| ANA | - | - | EXT | - | If connective tissue disease suspected | Negative |
-| Anti-GAD65, IA-2 antibodies | - | - | EXT | - | If type uncertain; LADA | Document |
+| Liver function tests (CPT 80076) | - | ROUTINE | ROUTINE | - | Hepatic disease, alcohol | Normal |
+| HIV (CPT 87389) | - | ROUTINE | EXT | - | If risk factors | Negative |
+| RPR/VDRL (CPT 86592) | - | ROUTINE | EXT | - | Syphilis if atypical | Nonreactive |
+| ESR (CPT 85652), CRP (CPT 86140) | - | ROUTINE | EXT | - | Inflammatory/vasculitic neuropathy | Normal |
+| ANA (CPT 86235) | - | - | EXT | - | If connective tissue disease suspected | Negative |
+| Anti-GAD65, IA-2 antibodies (CPT 86235) | - | - | EXT | - | If type uncertain; LADA | Document |
 
 ### 1C. Specialized Labs (Diabetic Amyotrophy/Atypical)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CSF analysis | - | EXT | EXT | - | Elevated protein in DLRPN; r/o inflammatory | Mild protein elevation in DLRPN |
+| CSF analysis (CPT 89051, 84157, 82945) | - | EXT | EXT | - | Elevated protein in DLRPN; r/o inflammatory | Mild protein elevation in DLRPN |
 | Paraneoplastic panel | - | EXT | EXT | - | If rapid progression, weight loss | Negative |
 
 ---
@@ -74,32 +81,32 @@
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Nerve conduction studies (NCS) | - | ROUTINE | ROUTINE | - | Baseline; atypical cases | Axonal sensorimotor polyneuropathy | Pacemaker (relative); anticoagulation (relative) |
-| Electromyography (EMG) | - | ROUTINE | ROUTINE | - | If motor involvement; amyotrophy | Denervation in affected muscles | Active infection at site |
+| Nerve conduction studies (NCS) (CPT 95907-95913) | - | ROUTINE | ROUTINE | - | Baseline; atypical cases | Axonal sensorimotor polyneuropathy | Pacemaker (relative); anticoagulation (relative) |
+| Electromyography (EMG) (CPT 95886) | - | ROUTINE | ROUTINE | - | If motor involvement; amyotrophy | Denervation in affected muscles | Active infection at site |
 | Quantitative sensory testing (QST) | - | - | EXT | - | Small fiber neuropathy; research | Abnormal thermal thresholds | None |
 
 ### 2B. Autonomic Testing
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Cardiovascular autonomic reflex tests | - | - | ROUTINE | - | If CAN suspected | Abnormal HR variability, Valsalva ratio | Arrhythmias |
-| Tilt table test | - | - | ROUTINE | - | Orthostatic hypotension evaluation | Orthostatic BP drop without HR rise | Severe coronary disease |
-| Sudomotor function (QSART) | - | - | EXT | - | Sudomotor dysfunction | Reduced sweat output | None |
+| Cardiovascular autonomic reflex tests (CPT 95924) | - | - | ROUTINE | - | If CAN suspected | Abnormal HR variability, Valsalva ratio | Arrhythmias |
+| Tilt table test (CPT 95924) | - | - | ROUTINE | - | Orthostatic hypotension evaluation | Orthostatic BP drop without HR rise | Severe coronary disease |
+| Sudomotor function (QSART) (CPT 95924) | - | - | EXT | - | Sudomotor dysfunction | Reduced sweat output | None |
 | Gastric emptying study | - | - | ROUTINE | - | If gastroparesis suspected | Delayed emptying | None |
 
 ### 2C. Small Fiber Neuropathy Assessment
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Skin punch biopsy (IENFD) | - | - | ROUTINE | - | Small fiber neuropathy; normal NCS | Reduced intraepidermal nerve fiber density | Anticoagulation (relative) |
+| Skin punch biopsy (IENFD) (CPT 11104) | - | - | ROUTINE | - | Small fiber neuropathy; normal NCS | Reduced intraepidermal nerve fiber density | Anticoagulation (relative) |
 | Corneal confocal microscopy | - | - | EXT | - | Non-invasive small fiber assessment | Reduced corneal nerve fiber density | None |
 
 ### 2D. Imaging (Select Cases)
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI lumbosacral plexus | - | ROUTINE | EXT | - | Diabetic amyotrophy; asymmetric weakness | Plexus/root enhancement in DLRPN | Pacemaker, metal |
-| MRI spine | URGENT | URGENT | EXT | - | R/o structural if myelopathy suspected | R/o compression | Same |
+| MRI lumbosacral plexus (CPT 72148) | - | ROUTINE | EXT | - | Diabetic amyotrophy; asymmetric weakness | Plexus/root enhancement in DLRPN | Pacemaker, metal |
+| MRI spine (CPT 72141) | URGENT | URGENT | EXT | - | R/o structural if myelopathy suspected | R/o compression | Same |
 
 ---
 
@@ -107,49 +114,49 @@
 
 ### 3A. Glycemic Control (Foundation of Treatment)
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Intensive glycemic control | - | ROUTINE | ROUTINE | - | Target HbA1c <7% (individualized); avoid hypoglycemia | Hypoglycemia unawareness with CAN | HbA1c q3 months until stable |
-| Continuous glucose monitoring | - | - | ROUTINE | - | If hypoglycemia unawareness | None | Sensor accuracy |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Intensive glycemic control | - | - | 7% :: - :: - :: Target HbA1c <7% (individualized); avoid hypoglycemia | Hypoglycemia unawareness with CAN | HbA1c q3 months until stable | - | ROUTINE | ROUTINE | - |
+| Continuous glucose monitoring | - | - | If hypoglycemia unawareness | None | Sensor accuracy | - | - | ROUTINE | - |
 
 ### 3B. Neuropathic Pain - First-Line Agents
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Duloxetine (Cymbalta) | - | ROUTINE | ROUTINE | - | 30 mg daily × 1 week, then 60 mg daily; max 120 mg/day | MAOIs, uncontrolled glaucoma, hepatic impairment | Nausea, BP; serotonin syndrome |
-| Pregabalin (Lyrica) | - | ROUTINE | ROUTINE | - | 50 mg TID or 75 mg BID; titrate to 300 mg/day; max 600 mg/day | CrCl <60: reduce dose | Sedation, edema, weight gain; renal dosing |
-| Gabapentin (Neurontin) | ROUTINE | ROUTINE | ROUTINE | - | 300 mg QHS, titrate by 300 mg q3-7 days; target 1800-3600 mg/day divided TID | CrCl <60: reduce dose | Sedation, edema; renal dosing |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Duloxetine (Cymbalta) | PO | - | 30 mg :: PO :: daily :: 30 mg daily × 1 week, then 60 mg daily; max 120 mg/day | MAOIs, uncontrolled glaucoma, hepatic impairment | Nausea, BP; serotonin syndrome | - | ROUTINE | ROUTINE | - |
+| Pregabalin (Lyrica) | PO | - | 50 mg :: PO :: TID :: 50 mg TID or 75 mg BID; titrate to 300 mg/day; max 600 mg/day | CrCl <60: reduce dose | Sedation, edema, weight gain; renal dosing | - | ROUTINE | ROUTINE | - |
+| Gabapentin (Neurontin) | PO | - | 300 mg :: PO :: QHS :: 300 mg QHS, titrate by 300 mg q3-7 days; target 1800-3600 mg/day divided TID | CrCl <60: reduce dose | Sedation, edema; renal dosing | ROUTINE | ROUTINE | ROUTINE | - |
 
 ### 3C. Neuropathic Pain - Second-Line Agents
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Venlafaxine XR | - | ROUTINE | ROUTINE | - | 37.5-75 mg daily; titrate to 150-225 mg/day | MAOIs, uncontrolled HTN | BP; serotonin syndrome |
-| Amitriptyline | - | ROUTINE | ROUTINE | - | 10-25 mg QHS; titrate to 50-100 mg QHS | Cardiac disease, glaucoma, urinary retention | ECG if >100 mg; anticholinergic effects |
-| Nortriptyline | - | ROUTINE | ROUTINE | - | 10-25 mg QHS; titrate to 75 mg QHS | Same as amitriptyline | Same; fewer anticholinergic effects |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Venlafaxine XR | PO | - | 37.5-75 mg :: PO :: daily :: 37.5-75 mg daily; titrate to 150-225 mg/day | MAOIs, uncontrolled HTN | BP; serotonin syndrome | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | - | - | 10-25 mg :: PO :: QHS :: 10-25 mg QHS; titrate to 50-100 mg QHS | Cardiac disease, glaucoma, urinary retention | ECG if >100 mg; anticholinergic effects | - | ROUTINE | ROUTINE | - |
+| Nortriptyline | - | - | 10-25 mg :: PO :: QHS :: 10-25 mg QHS; titrate to 75 mg QHS | Same as amitriptyline | Same; fewer anticholinergic effects | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Neuropathic Pain - Topical Agents
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Capsaicin 8% patch (Qutenza) | - | - | ROUTINE | - | Apply to painful area × 30-60 min q3 months; in-office | Open wounds; capsaicin allergy | BP during application; pain |
-| Lidocaine 5% patch | - | ROUTINE | ROUTINE | - | Up to 3 patches daily; 12h on/12h off | Allergy to local anesthetics | Local irritation |
-| Capsaicin cream 0.075% | - | - | ROUTINE | - | Apply TID-QID; takes 2-4 weeks for effect | Open wounds | Initial burning (improves) |
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Capsaicin 8% patch (Qutenza) | Transdermal | - | Apply to painful area × 30-60 min q3 months; in-office | - | Open wounds; capsaicin allergy | BP during application; pain | - | - | ROUTINE | - |
+| Lidocaine 5% patch | Transdermal | - | Up to 3 patches daily; 12h on/12h off | - | Allergy to local anesthetics | Local irritation | - | ROUTINE | ROUTINE | - |
+| Capsaicin cream 0.075% | - | - | Apply TID-QID; takes 2-4 weeks for effect | - | Open wounds | Initial burning (improves) | - | - | ROUTINE | - |
 
 ### 3E. Neuropathic Pain - Third-Line/Refractory
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Tramadol | - | ROUTINE | ROUTINE | - | 50-100 mg q4-6h PRN; max 400 mg/day | Seizure disorder, opioid dependence, MAOIs | Seizures; serotonin syndrome; dependence |
-| Tapentadol ER | - | - | ROUTINE | - | 50 mg BID; titrate by 50 mg q3 days; max 500 mg/day | Respiratory depression, severe hepatic impairment | Respiratory; GI effects |
-| Spinal cord stimulation | - | - | EXT | - | Referral to interventional pain for refractory cases | Infection, coagulopathy | Device complications |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Tramadol | PO | - | 50-100 mg :: PO :: PRN :: 50-100 mg q4-6h PRN; max 400 mg/day | Seizure disorder, opioid dependence, MAOIs | Seizures; serotonin syndrome; dependence | - | ROUTINE | ROUTINE | - |
+| Tapentadol ER | PO | - | 50 mg :: PO :: BID :: 50 mg BID; titrate by 50 mg q3 days; max 500 mg/day | Respiratory depression, severe hepatic impairment | Respiratory; GI effects | - | - | ROUTINE | - |
+| Spinal cord stimulation | - | - | Referral to interventional pain for refractory cases | Infection, coagulopathy | Device complications | - | - | EXT | - |
 
 ### 3F. Combination Therapy
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Duloxetine + Pregabalin | - | ROUTINE | ROUTINE | - | If monotherapy inadequate; use lower doses of each | Per individual agents | Per individual agents |
-| Gabapentinoid + TCA | - | ROUTINE | ROUTINE | - | If monotherapy inadequate | Per individual agents | Sedation; anticholinergic |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Duloxetine + Pregabalin | - | - | If monotherapy inadequate; use lower doses of each | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
+| Gabapentinoid + TCA | - | - | If monotherapy inadequate | Per individual agents | Sedation; anticholinergic | - | ROUTINE | ROUTINE | - |
 
 ### 3G. Diabetic Autonomic Neuropathy Treatment
 
@@ -172,13 +179,13 @@
 
 ### 3H. Diabetic Amyotrophy (DLRPN) Treatment
 
-| Treatment | ED | HOSP | OPD | ICU | Dosing | Contraindications | Monitoring |
-|-----------|:--:|:----:|:---:|:---:|--------|-------------------|------------|
-| Glycemic control | - | ROUTINE | ROUTINE | - | Optimize; avoid rapid correction | Per diabetes management | HbA1c |
-| Physical therapy | - | ROUTINE | ROUTINE | - | Prevent contractures; strengthen | None | Function |
-| Pain management | - | ROUTINE | ROUTINE | - | Per neuropathic pain algorithm | Per agent | Per agent |
-| IVIG (severe/refractory) | - | ROUTINE | EXT | - | 2 g/kg over 2-5 days; may repeat | IgA deficiency | Renal function; infusion reactions |
-| Methylprednisolone | - | ROUTINE | EXT | - | 1 g IV daily × 3-5 days; taper (may use if IVIG unavailable) | Uncontrolled DM (relative) | Glucose; infection |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+| Glycemic control | - | - | Optimize; avoid rapid correction | Per diabetes management | HbA1c | - | ROUTINE | ROUTINE | - |
+| Physical therapy | - | - | Prevent contractures; strengthen | None | Function | - | ROUTINE | ROUTINE | - |
+| Pain management | - | - | Per neuropathic pain algorithm | Per agent | Per agent | - | ROUTINE | ROUTINE | - |
+| IVIG (severe/refractory) (CPT 96365) | PO | - | 2 g/kg :: PO :: - :: 2 g/kg over 2-5 days; may repeat | IgA deficiency | Renal function; infusion reactions | - | ROUTINE | EXT | - |
+| Methylprednisolone (CPT 96374) | IV | - | 1 g :: IV :: daily :: 1 g IV daily × 3-5 days; taper (may use if IVIG unavailable) | Uncontrolled DM (relative) | Glucose; infection | - | ROUTINE | EXT | - |
 
 ---
 
@@ -279,7 +286,7 @@
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Intensive glycemic control prevents/slows neuropathy | Class I, Level A | DCCT/EDIC (Type 1); UKPDS (Type 2) |
+| Intensive glycemic control prevents/slows neuropathy | Class I, Level A | [DCCT (DCCT Research Group, NEJM 1993)](https://pubmed.ncbi.nlm.nih.gov/8366922/); [UKPDS 33 (Lancet 1998)](https://pubmed.ncbi.nlm.nih.gov/9742976/) |
 | Duloxetine effective for painful DPN | Class I, Level A | Multiple RCTs; FDA-approved |
 | Pregabalin effective for painful DPN | Class I, Level A | Multiple RCTs; FDA-approved |
 | Gabapentin effective for painful DPN | Class I, Level B | Multiple RCTs |
