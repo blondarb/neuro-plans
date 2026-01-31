@@ -1,7 +1,7 @@
 ---
 title: "Status Migrainosus"
 description: "Clinical decision support for evaluation and management of status migrainosus"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,7 +20,7 @@ tags:
 
 # Status Migrainosus
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
 **REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
@@ -156,11 +156,11 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Sumatriptan SC | SC | Triptan-naive or triptan-responsive patients without vascular contraindications; most effective when given early | 6 mg SC once :: SC :: once :: 6 mg SC once; may repeat x1 in 2h; max 12 mg/24h | CAD, prior stroke/TIA, uncontrolled hypertension (>140/90), hemiplegic or basilar migraine, pregnancy, use of ergotamine/DHE within 24h, concurrent MAOI | Chest tightness, blood pressure, coronary symptoms | STAT | STAT | - | STAT |
-| Sumatriptan nasal | IN | Alternative triptan route when SC not tolerated or for moderate attacks | 20 mg IN once :: IN :: once :: 20 mg intranasal; may repeat in 2h; max 40 mg/24h | Same as sumatriptan SC | Same as sumatriptan SC | URGENT | URGENT | ROUTINE | URGENT |
+| Sumatriptan nasal | IN | Alternative triptan route when SC not tolerated or for moderate attacks | 20 mg IN once :: IN :: once :: 20 mg intranasal; may repeat in 2h; max 40 mg/24h | CAD, prior stroke/TIA, uncontrolled hypertension (>140/90), hemiplegic or basilar migraine, pregnancy, use of ergotamine/DHE within 24h, concurrent MAOI | Chest tightness, blood pressure, coronary symptoms | URGENT | URGENT | ROUTINE | URGENT |
 | Valproate sodium IV | IV | Acute migraine treatment for patients who cannot receive triptans/DHE or as adjunct; also anti-nausea properties | 500 mg IV once; 1000 mg IV once :: IV :: once :: 500-1000 mg IV over 15-30 min; may repeat once in 8h | Pregnancy (teratogenic - neural tube defects), hepatic disease, mitochondrial disease (POLG mutation), urea cycle disorders, pancreatitis | Ammonia, LFTs, platelet count | URGENT | URGENT | - | URGENT |
 | Chlorpromazine IV | IV | Alternative dopamine antagonist with potent analgesic and sedative effect for refractory migraine | 12.5 mg IV once; 25 mg IV once :: IV :: once :: 12.5-25 mg IV over 20 min with 500 mL NS bolus; may repeat x2 q30min; max 75 mg | QT prolongation, severe hypotension, Parkinson disease | BP q15min (orthostatic hypotension common), QTc, sedation | URGENT | URGENT | - | URGENT |
 | Droperidol IV | IV | Alternative dopamine antagonist with strong antiemetic and analgesic effect; FDA black box for QT prolongation requires ECG | 2.5 mg IV once :: IV :: once :: 2.5 mg IV over 2-5 min; may repeat x1 in 30 min; max 5 mg | QT prolongation (QTc >440 ms), hypokalemia, hypomagnesemia, Parkinson disease | ECG before and after (FDA black box), QTc, BP, akathisia | URGENT | URGENT | - | URGENT |
-| Ondansetron IV | IV | Antiemetic for nausea/vomiting when dopamine antagonists contraindicated (Parkinson disease) | 4 mg IV once; 8 mg IV once :: IV :: once :: 4-8 mg IV over 2-5 min; may repeat q6-8h; max 32 mg/24h | QT prolongation (dose-dependent), concurrent serotonergic drugs (caution) | QTc at higher doses | URGENT | ROUTINE | ROUTINE | URGENT |
+| Ondansetron IV | IV | Antiemetic for nausea/vomiting when dopamine antagonists contraindicated (Parkinson disease) | 4 mg IV once :: IV :: once :: 4 mg IV over 2-5 min; may repeat q6-8h; max 16 mg/24h (FDA max single IV dose 16 mg due to QT risk) | QT prolongation (dose-dependent), concurrent serotonergic drugs (caution) | QTc at higher doses | URGENT | ROUTINE | ROUTINE | URGENT |
 | Greater occipital nerve block | Local | Acute pain relief and potential sustained benefit (3-4 weeks); safe in pregnancy | 2-3 mL per side :: Local :: once :: Bupivacaine 0.5% 2-3 mL per side (bilateral) at greater occipital nerve; may add triamcinolone 20 mg per side | Local anesthetic allergy, infection at injection site, concurrent anticoagulation (relative) | Local reaction, vasovagal response | URGENT | ROUTINE | ROUTINE | URGENT |
 | Supraorbital nerve block | Local | Additional peripheral nerve block targeting frontal headache distribution | 1-2 mL per side :: Local :: once :: Bupivacaine 0.5% 1-2 mL per side at supraorbital notch | Local anesthetic allergy, infection at site | Local reaction | - | ROUTINE | ROUTINE | - |
 
@@ -171,8 +171,8 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Dihydroergotamine (DHE) IV - test dose | IV | First dose to assess tolerability before initiating repetitive DHE protocol | 0.5 mg IV once :: IV :: once :: Premedicate: metoclopramide 10 mg IV + diphenhydramine 25 mg IV 30 min prior; then DHE 0.5 mg IV over 3-5 min as test dose | Pregnancy, CAD, CVA, PVD, uncontrolled HTN (>180/110), triptan within 24h, ergot allergy, basilar/hemiplegic migraine, severe hepatic or renal disease, concurrent CYP3A4 inhibitors | BP q15min during infusion, chest pain, limb ischemia, nausea | URGENT | STAT | - | URGENT |
-| Dihydroergotamine (DHE) IV - repetitive protocol | IV | Repetitive IV DHE for sustained break of status migrainosus (Raskin protocol) | 0.5 mg IV q8h; 1 mg IV q8h :: IV :: q8h :: If test dose tolerated: 0.5-1 mg IV q8h for up to 3-5 days; premedicate each dose with antiemetic; may titrate to 1 mg if 0.5 mg tolerated | Same as test dose | Same as test dose; daily ECG during protocol | - | STAT | - | URGENT |
-| DHE nasal spray | IN | Alternative to IV DHE for patients who decline IV protocol or as bridge to outpatient | 0.5 mg per nostril once :: IN :: once :: 0.5 mg per nostril (1 mg total); may repeat once in 15 min; max 3 mg/24h; max 4 mg/week | Same as IV DHE | Nausea, nasal congestion | - | ROUTINE | ROUTINE | - |
+| Dihydroergotamine (DHE) IV - repetitive protocol | IV | Repetitive IV DHE for sustained break of status migrainosus (Raskin protocol) | 0.5 mg IV q8h; 1 mg IV q8h :: IV :: q8h :: If test dose tolerated: 0.5-1 mg IV q8h for up to 3-5 days; premedicate each dose with antiemetic; may titrate to 1 mg if 0.5 mg tolerated | Pregnancy, CAD, CVA, PVD, uncontrolled HTN (>180/110), triptan within 24h, ergot allergy, basilar/hemiplegic migraine, severe hepatic or renal disease, concurrent CYP3A4 inhibitors | BP q15min during infusion, chest pain, limb ischemia, nausea; daily ECG during protocol | - | STAT | - | URGENT |
+| DHE nasal spray | IN | Alternative to IV DHE for patients who decline IV protocol or as bridge to outpatient | 0.5 mg per nostril once :: IN :: once :: 0.5 mg per nostril (1 mg total); may repeat once in 15 min; max 3 mg/24h; max 4 mg/week | Pregnancy, CAD, CVA, PVD, uncontrolled HTN (>180/110), triptan within 24h, ergot allergy, basilar/hemiplegic migraine, severe hepatic or renal disease, concurrent CYP3A4 inhibitors | Nausea, nasal congestion, BP, chest pain | - | ROUTINE | ROUTINE | - |
 | Ketamine IV sub-anesthetic | IV | Refractory status migrainosus not responding to standard therapies; NMDA receptor antagonism disrupts central sensitization | 0.1 mg/kg bolus; 0.1-0.5 mg/kg/hr :: IV :: continuous :: 0.1 mg/kg IV bolus, then 0.1-0.5 mg/kg/hr infusion; titrate by 0.1 mg/kg/hr q30min; max 1 mg/kg/hr; typical duration 24-48h | Uncontrolled hypertension, active psychosis, elevated ICP (relative), age <18 | BP, HR (may increase), dissociative symptoms, nystagmus, sedation level, psychiatric effects | - | EXT | - | URGENT |
 | Propofol sub-anesthetic bolus | IV | Brief burst-like suppression of migraine pain via GABA modulation; requires monitored setting | 20-30 mg IV once :: IV :: once :: 20-30 mg IV bolus; may repeat q5min up to 100 mg total; must have respiratory monitoring | Egg/soy allergy, hemodynamic instability, respiratory compromise without airway support | O2 sat, BP, respiratory status; requires procedural sedation monitoring | - | EXT | - | URGENT |
 | Lidocaine IV infusion | IV | Sodium channel blockade for refractory status migrainosus; typically inpatient protocol | 1-2 mg/kg bolus; 1-2 mg/min :: IV :: continuous :: Load 1-2 mg/kg IV over 20 min, then 1-2 mg/min (60-120 mg/hr) infusion x 24-48h | Heart block, severe CHF, hepatic failure | Continuous cardiac monitoring, lidocaine level q12h (target <5 mcg/mL), neuro checks for toxicity (perioral numbness, tinnitus, seizures) | - | EXT | - | EXT |
@@ -186,7 +186,9 @@ SECTION A: ACTION ITEMS
 | Acetaminophen IV | IV | Mild-moderate pain adjunct when NSAIDs contraindicated; pregnancy-safe option | 1000 mg IV q6h :: IV :: q6h :: 1000 mg IV q6h; max 3000 mg/day (2000 mg/day if hepatic risk) | Severe hepatic disease (Child-Pugh C), chronic alcohol use (>3 drinks/day) | LFTs if repeated use >3 days | URGENT | ROUTINE | - | URGENT |
 | Methylprednisolone IV | IV | Alternative to dexamethasone for acute anti-inflammatory effect in severe cases | 125 mg IV once :: IV :: once :: 125 mg IV once | Active infection, uncontrolled DM | Blood glucose, mood | URGENT | URGENT | - | URGENT |
 | Promethazine IV/IM | IV, IM | Antiemetic and sedative adjunct for nausea-predominant status migrainosus when other antiemetics inadequate | 12.5 mg IV once; 25 mg IM once :: IV, IM :: once :: 12.5-25 mg IV slow push (over 10-15 min to reduce phlebitis) or 25 mg deep IM; may repeat q4-6h; max 75 mg/day | QT prolongation, respiratory depression (especially with opioids), tissue necrosis risk with IV extravasation | Sedation, respiratory status, IV site (severe vesicant) | URGENT | ROUTINE | - | URGENT |
-| Triptans PO (for post-discharge rescue) | PO | Outpatient rescue for breakthrough migraine after discharge from status migrainosus treatment | Per specific triptan :: PO :: PRN :: Sumatriptan 100 mg PO, rizatriptan 10 mg PO, or eletriptan 40 mg PO; use within first hour of recurrence; limit to ≤9 days/month | CAD, prior stroke/TIA, uncontrolled HTN, hemiplegic migraine, concurrent ergot/DHE | Cardiovascular symptoms | - | ROUTINE | ROUTINE | - |
+| Sumatriptan PO (post-discharge rescue) | PO | Outpatient rescue for breakthrough migraine after discharge from status migrainosus treatment | 100 mg PO once :: PO :: PRN :: 100 mg PO at onset; may repeat in 2h; max 200 mg/24h; limit to ≤9 days/month | CAD, prior stroke/TIA, uncontrolled HTN (>140/90), hemiplegic or basilar migraine, pregnancy, concurrent ergot/DHE within 24h | Chest tightness, blood pressure, coronary symptoms | - | ROUTINE | ROUTINE | - |
+| Rizatriptan PO (post-discharge rescue) | PO | Outpatient rescue for breakthrough migraine; rapid-onset oral triptan option | 10 mg PO once :: PO :: PRN :: 10 mg PO at onset (ODT available); may repeat in 2h; max 30 mg/24h; limit to ≤9 days/month; use 5 mg if on propranolol | CAD, prior stroke/TIA, uncontrolled HTN (>140/90), hemiplegic or basilar migraine, pregnancy, concurrent ergot/DHE within 24h, concurrent MAOI | Chest tightness, blood pressure, coronary symptoms | - | ROUTINE | ROUTINE | - |
+| Eletriptan PO (post-discharge rescue) | PO | Outpatient rescue for breakthrough migraine; high efficacy oral triptan option | 40 mg PO once :: PO :: PRN :: 40 mg PO at onset; may repeat in 2h; max 80 mg/24h; limit to ≤9 days/month | CAD, prior stroke/TIA, uncontrolled HTN (>140/90), hemiplegic or basilar migraine, pregnancy, concurrent ergot/DHE within 24h, severe hepatic impairment | Chest tightness, blood pressure, coronary symptoms | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -207,29 +209,29 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient/Family Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Return immediately if thunderclap headache onset, fever, neck stiffness, new neurologic deficits, or altered mental status develop (may indicate secondary cause requiring emergency evaluation) | ROUTINE | ROUTINE | ROUTINE |
-| Return to ED if headache recurs at severe intensity within 72 hours of discharge despite rescue medications (may require repeat parenteral therapy) | ROUTINE | ROUTINE | ROUTINE |
-| Treat recurrent migraine within the first hour of onset for maximal medication efficacy (early treatment is more effective than delayed treatment) | ROUTINE | ROUTINE | ROUTINE |
-| Avoid medication overuse: limit triptans to no more than 9 days per month and NSAIDs to no more than 14 days per month to prevent medication overuse headache | ROUTINE | ROUTINE | ROUTINE |
-| Keep a detailed headache diary documenting frequency, severity (0-10), triggers, medications used, and response to treatment for follow-up appointments | - | ROUTINE | ROUTINE |
-| Follow up with neurology or headache specialist within 2-4 weeks of discharge for preventive therapy initiation and treatment plan adjustment | ROUTINE | ROUTINE | ROUTINE |
-| Do not drive until headache has fully resolved and no sedating medications are on board due to impaired reaction time and concentration | ROUTINE | ROUTINE | ROUTINE |
-| Take all prescribed discharge medications as directed and do not abruptly discontinue steroids if prescribed a taper (may cause rebound headache or adrenal insufficiency) | ROUTINE | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Return immediately if thunderclap headache onset, fever, neck stiffness, new neurologic deficits, or altered mental status develop (may indicate secondary cause requiring emergency evaluation) | ROUTINE | ROUTINE | ROUTINE | - |
+| Return to ED if headache recurs at severe intensity within 72 hours of discharge despite rescue medications (may require repeat parenteral therapy) | ROUTINE | ROUTINE | ROUTINE | - |
+| Treat recurrent migraine within the first hour of onset for maximal medication efficacy (early treatment is more effective than delayed treatment) | ROUTINE | ROUTINE | ROUTINE | - |
+| Avoid medication overuse: limit triptans to no more than 9 days per month and NSAIDs to no more than 14 days per month to prevent medication overuse headache | ROUTINE | ROUTINE | ROUTINE | - |
+| Keep a detailed headache diary documenting frequency, severity (0-10), triggers, medications used, and response to treatment for follow-up appointments | - | ROUTINE | ROUTINE | - |
+| Follow up with neurology or headache specialist within 2-4 weeks of discharge for preventive therapy initiation and treatment plan adjustment | ROUTINE | ROUTINE | ROUTINE | - |
+| Do not drive until headache has fully resolved and no sedating medications are on board due to impaired reaction time and concentration | ROUTINE | ROUTINE | ROUTINE | - |
+| Take all prescribed discharge medications as directed and do not abruptly discontinue steroids if prescribed a taper (may cause rebound headache or adrenal insufficiency) | ROUTINE | ROUTINE | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Maintain a regular sleep schedule of 7-8 hours per night as both sleep deprivation and oversleeping are established migraine triggers | - | ROUTINE | ROUTINE |
-| Regular aerobic exercise (30 minutes, 5 days per week) reduces migraine frequency through endorphin release and stress reduction | - | ROUTINE | ROUTINE |
-| Stress management with biofeedback, progressive muscle relaxation, or cognitive behavioral therapy (Level A evidence for migraine prevention) | - | ROUTINE | ROUTINE |
-| Stay well-hydrated with at least 64 ounces of water daily as dehydration is a common and modifiable migraine trigger | ROUTINE | ROUTINE | ROUTINE |
-| Avoid known dietary triggers including alcohol (especially red wine), aged cheeses, MSG, processed meats, and skipped meals | - | ROUTINE | ROUTINE |
-| Limit caffeine to consistent moderate intake (less than 200 mg per day) and avoid abrupt caffeine withdrawal which is a potent headache trigger | - | ROUTINE | ROUTINE |
-| Discuss preventive medication initiation at follow-up if experiencing 4 or more migraine days per month, significant disability, or recurrent status migrainosus episodes | - | ROUTINE | ROUTINE |
-| Identify and manage comorbid conditions that worsen migraine including depression, anxiety, insomnia, and obesity | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Maintain a regular sleep schedule of 7-8 hours per night as both sleep deprivation and oversleeping are established migraine triggers | - | ROUTINE | ROUTINE | - |
+| Regular aerobic exercise (30 minutes, 5 days per week) reduces migraine frequency through endorphin release and stress reduction | - | ROUTINE | ROUTINE | - |
+| Stress management with biofeedback, progressive muscle relaxation, or cognitive behavioral therapy (Level A evidence for migraine prevention) | - | ROUTINE | ROUTINE | - |
+| Stay well-hydrated with at least 64 ounces of water daily as dehydration is a common and modifiable migraine trigger | ROUTINE | ROUTINE | ROUTINE | - |
+| Avoid known dietary triggers including alcohol (especially red wine), aged cheeses, MSG, processed meats, and skipped meals | - | ROUTINE | ROUTINE | - |
+| Limit caffeine to consistent moderate intake (less than 200 mg per day) and avoid abrupt caffeine withdrawal which is a potent headache trigger | - | ROUTINE | ROUTINE | - |
+| Discuss preventive medication initiation at follow-up if experiencing 4 or more migraine days per month, significant disability, or recurrent status migrainosus episodes | - | ROUTINE | ROUTINE | - |
+| Identify and manage comorbid conditions that worsen migraine including depression, anxiety, insomnia, and obesity | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -319,6 +321,17 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Removed all cross-references across treatment tables; each row now fully self-contained
+- Expanded "Same as sumatriptan SC" in sumatriptan nasal row (Section 3B) to full contraindications and monitoring per C1
+- Expanded "Same as test dose" in DHE repetitive protocol row (Section 3C) to full contraindications and monitoring per C2
+- Expanded "Same as IV DHE" in DHE nasal spray row (Section 3C) to full contraindications and added BP/chest pain monitoring per C3
+- Added ICU venue column to Section 4B (Patient/Family Instructions) for structural consistency across all tables per S1
+- Added ICU venue column to Section 4C (Lifestyle & Prevention) for structural consistency across all tables per S2
+- Corrected ondansetron IV max dose from 32 mg/24h to 16 mg/24h per FDA safety guidance on QT prolongation risk per V1
+- Expanded grouped "Triptans PO (post-discharge rescue)" row into individual entries for sumatriptan, rizatriptan, and eletriptan with complete standalone dosing per R4
+- Updated version to 1.1
 
 **v1.0 (January 30, 2026)**
 - Initial template creation

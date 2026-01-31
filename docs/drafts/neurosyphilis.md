@@ -1,7 +1,7 @@
 ---
 title: "Neurosyphilis"
 description: "Clinical decision support for evaluation and management of neurosyphilis"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,8 +20,9 @@ tags:
 
 # Neurosyphilis
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -173,17 +174,17 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Gabapentin | PO | Neuropathic pain (lightning pains of tabes dorsalis; lancinating pain) | 300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day | Severe renal impairment (dose adjust: CrCl <60) | Sedation; dizziness; edema; renal function | - | ROUTINE | ROUTINE | - |
-| Pregabalin | PO | Neuropathic pain (tabes dorsalis; alternative to gabapentin) | 75 mg BID; 150 mg BID; 300 mg BID :: PO :: :: Start 75 mg BID; may increase q1wk; max 600 mg/day | Severe renal impairment (dose adjust); angioedema history | Sedation; weight gain; edema; renal function | - | ROUTINE | ROUTINE | - |
-| Carbamazepine | PO | Lancinating/lightning pain of tabes dorsalis (particularly effective for paroxysmal neuropathic pain) | 100 mg BID; 200 mg BID; 400 mg BID :: PO :: :: Start 100 mg BID; titrate by 200 mg/day q1wk; target 400-800 mg/day; max 1200 mg/day | AV block; history of bone marrow suppression; concurrent MAOIs; HLA-B*1502 positive (Asian descent -- screen before starting) | CBC with differential q2wk x 2 months then q3 months; LFTs; sodium (SIADH); drug level (target 4-12 ug/mL) | - | ROUTINE | ROUTINE | - |
-| Duloxetine | PO | Neuropathic pain (tabes dorsalis); concurrent depression | 30 mg daily; 60 mg daily :: PO :: :: Start 30 mg daily x 1 wk; increase to 60 mg daily; max 120 mg/day | Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma | LFTs; blood pressure; serotonin syndrome symptoms | - | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | Neuropathic pain (lightning pains of tabes dorsalis; lancinating pain) | 300 mg :: PO :: TID :: Start 300 mg qHS; titrate by 300 mg q1-3d to 300-900 mg TID; max 3600 mg/day | Severe renal impairment (dose adjust: CrCl <60) | Sedation; dizziness; edema; renal function | - | ROUTINE | ROUTINE | - |
+| Pregabalin | PO | Neuropathic pain (tabes dorsalis; alternative to gabapentin) | 75 mg :: PO :: BID :: Start 75 mg BID; may increase to 150-300 mg BID q1wk; max 600 mg/day | Severe renal impairment (dose adjust); angioedema history | Sedation; weight gain; edema; renal function | - | ROUTINE | ROUTINE | - |
+| Carbamazepine | PO | Lancinating/lightning pain of tabes dorsalis (particularly effective for paroxysmal neuropathic pain) | 100 mg :: PO :: BID :: Start 100 mg BID; titrate by 200 mg/day q1wk; target 400-800 mg/day; max 1200 mg/day | AV block; history of bone marrow suppression; concurrent MAOIs; HLA-B*1502 positive (Asian descent -- screen before starting) | CBC with differential q2wk x 2 months then q3 months; LFTs; sodium (SIADH); drug level (target 4-12 ug/mL) | - | ROUTINE | ROUTINE | - |
+| Duloxetine | PO | Neuropathic pain (tabes dorsalis); concurrent depression | 30 mg :: PO :: daily :: Start 30 mg daily x 1 wk; increase to 60 mg daily; max 120 mg/day | Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma | LFTs; blood pressure; serotonin syndrome symptoms | - | ROUTINE | ROUTINE | - |
 | Levetiracetam | IV/PO | Seizures (neurosyphilis-related seizures; meningovascular with cortical involvement) | 1000-1500 mg BID :: IV :: BID :: 1000-1500 mg IV load; then 500-1000 mg IV/PO BID; max 3000 mg/day | Severe renal impairment (dose adjust) | Renal function; mood/behavioral changes | STAT | STAT | ROUTINE | STAT |
 | Lorazepam | IV | Active seizure rescue | 0.1 mg/kg IV push :: IV :: PRN seizure :: 0.1 mg/kg IV (max 4 mg); may repeat x1 in 5 min | Respiratory depression; severe hepatic failure | RR, SpO2; airway equipment ready | STAT | STAT | - | STAT |
-| Sertraline | PO | Depression (common with general paresis and chronic neurosyphilis) | 50 mg daily; 100 mg daily; 150 mg daily :: PO :: :: Start 50 mg daily; increase by 50 mg q2-4wk; max 200 mg/day | Concurrent MAOIs; QT prolongation | Suicidality monitoring (first 4 weeks); serotonin syndrome | - | ROUTINE | ROUTINE | - |
-| Quetiapine | PO | Psychotic symptoms (general paresis with psychosis, paranoid delusions, grandiosity) | 25 mg BID; 50 mg BID; 100 mg BID :: PO :: :: Start 25 mg BID; titrate slowly; target 150-300 mg/day for psychosis | QT prolongation; dementia-related psychosis (black box) | Metabolic panel q3 months; fasting glucose; lipids; QTc; tardive dyskinesia monitoring | - | ROUTINE | ROUTINE | - |
+| Sertraline | PO | Depression (common with general paresis and chronic neurosyphilis) | 50 mg :: PO :: daily :: Start 50 mg daily; increase by 50 mg q2-4wk; max 200 mg/day | Concurrent MAOIs; QT prolongation | Suicidality monitoring (first 4 weeks); serotonin syndrome | - | ROUTINE | ROUTINE | - |
+| Quetiapine | PO | Psychotic symptoms (general paresis with psychosis, paranoid delusions, grandiosity) | 25 mg :: PO :: BID :: Start 25 mg BID; titrate slowly to 50-100 mg BID; target 150-300 mg/day for psychosis | QT prolongation; dementia-related psychosis (black box) | Metabolic panel q3 months; fasting glucose; lipids; QTc; tardive dyskinesia monitoring | - | ROUTINE | ROUTINE | - |
 | Haloperidol | IV/IM | Acute agitation with psychosis (general paresis with severe agitation) | 2-5 mg q4-6h PRN :: IV :: PRN agitation :: 2-5 mg IV/IM q4-6h PRN; max 20 mg/day | QT prolongation; Parkinson disease; dementia (black box) | QTc monitoring; EPS; vital signs | STAT | STAT | - | STAT |
 | Metoclopramide | PO | Gastroparesis (visceral autonomic neuropathy in tabes dorsalis) | 10 mg TID :: PO :: TID :: 10 mg PO 30 min before meals and at bedtime; max 40 mg/day; limit to 12 weeks | Parkinson disease; tardive dyskinesia; bowel obstruction | Tardive dyskinesia; EPS (limit duration) | - | ROUTINE | ROUTINE | - |
-| Oxybutynin | PO | Bladder dysfunction (neurogenic bladder in tabes dorsalis; urgency/incontinence) | 5 mg BID; 5 mg TID :: PO :: :: Start 5 mg BID; may increase to TID; max 15 mg/day | Urinary retention; uncontrolled narrow-angle glaucoma; GI obstruction | Post-void residual; anticholinergic effects (cognition in elderly) | - | ROUTINE | ROUTINE | - |
+| Oxybutynin | PO | Bladder dysfunction (neurogenic bladder in tabes dorsalis; urgency/incontinence) | 5 mg :: PO :: BID :: Start 5 mg BID; may increase to 5 mg TID; max 15 mg/day | Urinary retention; uncontrolled narrow-angle glaucoma; GI obstruction | Post-void residual; anticholinergic effects (cognition in elderly) | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Second-line/Refractory
 
@@ -218,30 +219,30 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Return to ED if: new vision loss, worsening headache, new weakness, seizure, confusion, hearing loss, or high fever after starting treatment (Jarisch-Herxheimer reaction may worsen in first 24h) | STAT | STAT | ROUTINE |
-| Complete the FULL course of IV penicillin (10-14 days); do NOT stop treatment early even if symptoms improve, as incomplete treatment leads to relapse and progressive CNS damage | - | ROUTINE | ROUTINE |
-| Expect possible fever, chills, headache, and muscle aches within 2-12 hours of first penicillin dose (Jarisch-Herxheimer reaction); this is a normal inflammatory response and NOT an allergic reaction; notify nursing staff but do NOT stop antibiotics | STAT | STAT | - |
-| Abstain from sexual contact until treatment is complete and RPR titers decline to confirm cure; use condoms consistently after treatment | - | ROUTINE | ROUTINE |
-| All sexual partners from the past 90 days (primary), 6 months (secondary), or 1 year (latent) must be notified and tested for syphilis | - | ROUTINE | ROUTINE |
-| Follow-up blood tests (RPR titers) required at 3, 6, 12, and 24 months after treatment to confirm cure; failure of titers to decline by 4-fold at 6-12 months may indicate treatment failure | - | ROUTINE | ROUTINE |
-| Follow-up lumbar puncture required at 6 months (and possibly 3, 12, and 24 months) after treatment to confirm CSF normalization | - | ROUTINE | ROUTINE |
-| Report any new neurologic symptoms (vision changes, hearing changes, numbness, balance problems, cognitive changes) between follow-up visits as they may indicate treatment failure or reinfection | - | ROUTINE | ROUTINE |
-| If HIV positive: ensure adherence to antiretroviral therapy as HIV co-infection increases risk of treatment failure and neurosyphilis relapse | - | ROUTINE | ROUTINE |
-| Driving restrictions if cognitive impairment, seizures, or significant visual deficit until cleared by neurology | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Return to ED if: new vision loss, worsening headache, new weakness, seizure, confusion, hearing loss, or high fever after starting treatment (Jarisch-Herxheimer reaction may worsen in first 24h) | STAT | STAT | ROUTINE | STAT |
+| Complete the FULL course of IV penicillin (10-14 days); do NOT stop treatment early even if symptoms improve, as incomplete treatment leads to relapse and progressive CNS damage | - | ROUTINE | ROUTINE | ROUTINE |
+| Expect possible fever, chills, headache, and muscle aches within 2-12 hours of first penicillin dose (Jarisch-Herxheimer reaction); this is a normal inflammatory response and NOT an allergic reaction; notify nursing staff but do NOT stop antibiotics | STAT | STAT | - | STAT |
+| Abstain from sexual contact until treatment is complete and RPR titers decline to confirm cure; use condoms consistently after treatment | - | ROUTINE | ROUTINE | - |
+| All sexual partners from the past 90 days (primary), 6 months (secondary), or 1 year (latent) must be notified and tested for syphilis | - | ROUTINE | ROUTINE | - |
+| Follow-up blood tests (RPR titers) required at 3, 6, 12, and 24 months after treatment to confirm cure; failure of titers to decline by 4-fold at 6-12 months may indicate treatment failure | - | ROUTINE | ROUTINE | - |
+| Follow-up lumbar puncture required at 6 months (and possibly 3, 12, and 24 months) after treatment to confirm CSF normalization | - | ROUTINE | ROUTINE | - |
+| Report any new neurologic symptoms (vision changes, hearing changes, numbness, balance problems, cognitive changes) between follow-up visits as they may indicate treatment failure or reinfection | - | ROUTINE | ROUTINE | - |
+| If HIV positive: ensure adherence to antiretroviral therapy as HIV co-infection increases risk of treatment failure and neurosyphilis relapse | - | ROUTINE | ROUTINE | - |
+| Driving restrictions if cognitive impairment, seizures, or significant visual deficit until cleared by neurology | - | ROUTINE | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Safer sex practices: consistent condom use reduces but does not eliminate syphilis transmission risk; regular STI screening for sexually active individuals | - | ROUTINE | ROUTINE |
-| Alcohol cessation as alcohol worsens cognitive impairment and neuropathy, and complicates medication adherence and follow-up | - | ROUTINE | ROUTINE |
-| HIV pre-exposure prophylaxis (PrEP) discussion for patients at ongoing risk who are HIV-negative | - | ROUTINE | ROUTINE |
-| Fall prevention measures including assistive devices, home safety evaluation, and nightlight use for patients with sensory ataxia (tabes dorsalis), as proprioceptive loss worsens in darkness | - | ROUTINE | ROUTINE |
-| Cognitive rehabilitation strategies including memory aids, structured routines, and supervised medication management for patients with general paresis | - | ROUTINE | ROUTINE |
-| Regular exercise appropriate to functional level for cardiovascular health and prevention of deconditioning | - | ROUTINE | ROUTINE |
-| Smoking cessation to reduce vascular risk (especially important in meningovascular syphilis with stroke risk) | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Safer sex practices: consistent condom use reduces but does not eliminate syphilis transmission risk; regular STI screening for sexually active individuals | - | ROUTINE | ROUTINE | - |
+| Alcohol cessation as alcohol worsens cognitive impairment and neuropathy, and complicates medication adherence and follow-up | - | ROUTINE | ROUTINE | - |
+| HIV pre-exposure prophylaxis (PrEP) discussion for patients at ongoing risk who are HIV-negative | - | ROUTINE | ROUTINE | - |
+| Fall prevention measures including assistive devices, home safety evaluation, and nightlight use for patients with sensory ataxia (tabes dorsalis), as proprioceptive loss worsens in darkness | - | ROUTINE | ROUTINE | - |
+| Cognitive rehabilitation strategies including memory aids, structured routines, and supervised medication management for patients with general paresis | - | ROUTINE | ROUTINE | - |
+| Regular exercise appropriate to functional level for cardiovascular health and prevention of deconditioning | - | ROUTINE | ROUTINE | - |
+| Smoking cessation to reduce vascular risk (especially important in meningovascular syphilis with stroke risk) | - | ROUTINE | ROUTINE | - |
 
 ═══════════════════════════════════════════════════════════════
 SECTION B: REFERENCE (Expand as Needed)
@@ -317,6 +318,12 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized structured dosing format for all Section 3B medications (gabapentin, pregabalin, carbamazepine, duloxetine, sertraline, quetiapine, oxybutynin) to use `dose :: route :: frequency :: instructions` format for clickable order sentences
+- Added ICU venue column to Section 4B (Patient Instructions) and Section 4C (Lifestyle & Prevention) for complete 4-setting coverage
+- Added REVISED date to header metadata
+- Updated version to 1.1
 
 **v1.0 (January 30, 2026)**
 - Initial template creation

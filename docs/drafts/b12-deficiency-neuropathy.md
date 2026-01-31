@@ -1,7 +1,7 @@
 ---
 title: "B12 Deficiency Neuropathy"
 description: "Clinical decision support for evaluation and management of B12 deficiency neuropathy"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -21,7 +21,7 @@ tags:
 
 # B12 Deficiency Neuropathy
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
 **REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
@@ -135,34 +135,34 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Cyanocobalamin IM | IM | Confirmed or suspected B12 deficiency with neurological symptoms; preferred parenteral route | 1000 mcg daily x 7 days :: IM :: :: 1000 mcg IM daily x 7 days, then 1000 mcg IM weekly x 4 weeks, then 1000 mcg IM monthly indefinitely | Cobalt or cobalamin hypersensitivity (rare); Leber hereditary optic neuropathy (relative) | Reticulocyte count at day 5-7 (reticulocyte crisis confirms response); B12 and MMA at 1-2 months; CBC at 1-2 months; potassium during first 48 hours (hypokalemia from erythropoiesis) | STAT | STAT | ROUTINE | STAT |
-| Hydroxocobalamin IM | IM | Alternative to cyanocobalamin; longer-acting; preferred in some countries; better for cyanide toxicity | 1000 mcg daily x 7 days :: IM :: :: 1000 mcg IM daily x 7 days, then 1000 mcg IM every other day x 2 weeks, then 1000 mcg IM monthly indefinitely | Same as cyanocobalamin | Same as cyanocobalamin | STAT | STAT | ROUTINE | STAT |
-| Cyanocobalamin SC | SC | If IM injection contraindicated (anticoagulation, thrombocytopenia) or patient preference | 1000 mcg daily x 7 days :: SC :: :: 1000 mcg SC daily x 7 days, then 1000 mcg SC weekly x 4 weeks, then 1000 mcg SC monthly indefinitely | Same as cyanocobalamin | Same as cyanocobalamin | URGENT | URGENT | ROUTINE | URGENT |
-| Potassium supplementation | IV/PO | Prevent hypokalemia during B12 replacement; erythropoiesis consumes potassium | 20-40 mEq :: PO :: daily :: Monitor potassium q12-24h during first 48 hours of B12 replacement; supplement if K <3.5 mEq/L | Hyperkalemia; renal failure (use cautiously) | Potassium levels q12-24h during initial treatment | URGENT | URGENT | - | URGENT |
-| Magnesium sulfate IV | IV | Correct hypomagnesemia; magnesium required for enzymatic reactions involving B12 | 2 g :: IV :: once :: 2 g IV over 2 hours if Mg <1.5; then oral supplementation | Renal failure; heart block | Magnesium levels; cardiac monitoring during IV infusion | URGENT | URGENT | - | URGENT |
-| Folic acid | PO | Correct concurrent folate deficiency; MUST give with B12 to avoid masking B12 deficiency | 1 mg daily :: PO :: :: 1 mg PO daily; NEVER give folate without B12 in suspected B12 deficiency (may worsen neurological damage) | None significant | Ensure B12 is being co-administered; reticulocyte count | URGENT | URGENT | ROUTINE | URGENT |
+| Cyanocobalamin IM | IM | Confirmed or suspected B12 deficiency with neurological symptoms; preferred parenteral route | 1000 mcg :: IM :: daily x 7 days :: 1000 mcg IM daily x 7 days, then 1000 mcg IM weekly x 4 weeks, then 1000 mcg IM monthly indefinitely | Cobalt or cobalamin hypersensitivity (rare); Leber hereditary optic neuropathy (relative) | Reticulocyte count at day 5-7 (reticulocyte crisis confirms response); B12 and MMA at 1-2 months; CBC at 1-2 months; potassium during first 48 hours (hypokalemia from erythropoiesis) | STAT | STAT | ROUTINE | STAT |
+| Hydroxocobalamin IM | IM | Alternative to cyanocobalamin; longer-acting; preferred in some countries; better for cyanide toxicity | 1000 mcg :: IM :: daily x 7 days :: 1000 mcg IM daily x 7 days, then 1000 mcg IM every other day x 2 weeks, then 1000 mcg IM monthly indefinitely | Cobalt or cobalamin hypersensitivity (rare); Leber hereditary optic neuropathy (relative) | Reticulocyte count at day 5-7; B12 and MMA at 1-2 months; CBC at 1-2 months; potassium during first 48 hours (hypokalemia from erythropoiesis) | STAT | STAT | ROUTINE | STAT |
+| Cyanocobalamin SC | SC | If IM injection contraindicated (anticoagulation, thrombocytopenia) or patient preference | 1000 mcg :: SC :: daily x 7 days :: 1000 mcg SC daily x 7 days, then 1000 mcg SC weekly x 4 weeks, then 1000 mcg SC monthly indefinitely | Cobalt or cobalamin hypersensitivity (rare); Leber hereditary optic neuropathy (relative) | Reticulocyte count at day 5-7; B12 and MMA at 1-2 months; CBC at 1-2 months; potassium during first 48 hours (hypokalemia from erythropoiesis) | URGENT | URGENT | ROUTINE | URGENT |
+| Potassium supplementation | IV/PO | Prevent hypokalemia during B12 replacement; erythropoiesis consumes potassium | 20 mEq :: PO :: daily PRN :: 20-40 mEq PO daily; monitor potassium q12-24h during first 48 hours of B12 replacement; supplement if K <3.5 mEq/L | Hyperkalemia; renal failure (use cautiously) | Potassium levels q12-24h during initial treatment | URGENT | URGENT | - | URGENT |
+| Magnesium sulfate IV | IV | Correct hypomagnesemia; magnesium required for enzymatic reactions involving B12 | 2 g :: IV :: once PRN :: 2 g IV over 2 hours if Mg <1.5 mg/dL; then oral magnesium oxide 400 mg PO daily | Renal failure; heart block | Magnesium levels; cardiac monitoring during IV infusion | URGENT | URGENT | - | URGENT |
+| Folic acid | PO | Correct concurrent folate deficiency; MUST give with B12 to avoid masking B12 deficiency | 1 mg :: PO :: daily :: 1 mg PO daily; NEVER give folate without B12 in suspected B12 deficiency (may worsen neurological damage) | None significant | Ensure B12 is being co-administered; reticulocyte count | URGENT | URGENT | ROUTINE | URGENT |
 
 ### 3B. Symptomatic Treatments - Neuropathic Pain
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Gabapentin | PO | Neuropathic pain (first-line); burning, tingling, shooting pain | 300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg every 1-3 days; target 900-1800 mg TID; max 3600 mg/day; adjust for renal function | CrCl <60: reduce dose (CrCl 30-59: max 1400 mg/day; CrCl 15-29: max 700 mg/day; CrCl <15: max 300 mg/day) | Sedation, dizziness, peripheral edema; taper to discontinue (do not stop abruptly) | - | ROUTINE | ROUTINE | - |
-| Pregabalin | PO | Neuropathic pain (first-line alternative) | 75 mg BID; 150 mg BID; 300 mg BID :: PO :: :: Start 75 mg BID; may increase to 150 mg BID after 1 week; max 300 mg BID (600 mg/day); adjust for renal function | CrCl <60: reduce dose; Schedule V controlled substance | Sedation, weight gain, peripheral edema; dizziness | - | ROUTINE | ROUTINE | - |
-| Duloxetine | PO | Neuropathic pain (first-line); especially effective for painful neuropathy with comorbid depression | 30 mg daily; 60 mg daily :: PO :: :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | Hepatic impairment; CrCl <30; concurrent MAOIs; uncontrolled narrow-angle glaucoma | Nausea (usually transient); BP monitoring; discontinuation syndrome (taper over 2+ weeks) | - | ROUTINE | ROUTINE | - |
-| Venlafaxine XR | PO | Neuropathic pain (second-line SNRI) | 37.5 mg daily; 75 mg daily; 150 mg daily :: PO :: :: Start 37.5-75 mg daily; increase by 75 mg every 4-7 days; max 225 mg/day | Uncontrolled hypertension; concurrent MAOIs | BP monitoring; serotonin syndrome; discontinuation syndrome | - | ROUTINE | ROUTINE | - |
-| Amitriptyline | PO | Neuropathic pain (second-line); useful for concurrent insomnia | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma; elderly (anticholinergic burden) | ECG if dose >100 mg/day; anticholinergic effects; sedation; weight gain | - | ROUTINE | ROUTINE | - |
-| Nortriptyline | PO | Neuropathic pain (second-line); fewer anticholinergic effects than amitriptyline | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma; elderly | ECG if dose >100 mg/day; fewer anticholinergic effects than amitriptyline; sedation | - | ROUTINE | ROUTINE | - |
-| Capsaicin cream 0.075% | TOP | Localized neuropathic pain in feet or hands | Apply TID-QID :: TOP :: :: Apply thin layer TID-QID to affected area; takes 2-4 weeks for full effect; wash hands thoroughly after application | Open wounds; avoid eyes and mucous membranes | Initial burning sensation (decreases with continued use); do not apply to broken skin | - | - | ROUTINE | - |
-| Lidocaine 5% patch | TOP | Localized neuropathic pain; adjunct therapy | Apply 1-3 patches daily :: TOP :: :: Apply 1-3 patches to painful area for 12 hours on, 12 hours off; max 3 patches simultaneously | Severe hepatic impairment; application to broken skin | Minimal systemic absorption; local skin irritation | - | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | Neuropathic pain (first-line); burning, tingling, shooting pain | 300 mg :: PO :: qHS :: Start 300 mg qHS; titrate by 300 mg every 1-3 days to TID dosing; target 900-1800 mg/day divided TID; max 3600 mg/day; adjust for renal function (CrCl 30-59: max 1400 mg/day; CrCl 15-29: max 700 mg/day; CrCl <15: max 300 mg/day) | Severe renal impairment (dose adjust required); respiratory depression with opioids | Sedation, dizziness, peripheral edema; taper to discontinue (do not stop abruptly) | - | ROUTINE | ROUTINE | - |
+| Pregabalin | PO | Neuropathic pain (first-line alternative) | 75 mg :: PO :: BID :: Start 75 mg BID; may increase to 150 mg BID after 1 week; max 300 mg BID (600 mg/day); adjust for renal function (CrCl <60: reduce dose); Schedule V controlled substance | Severe renal impairment (dose adjust required); history of substance abuse (relative) | Sedation, weight gain, peripheral edema; dizziness; taper to discontinue | - | ROUTINE | ROUTINE | - |
+| Duloxetine | PO | Neuropathic pain (first-line); especially effective for painful neuropathy with comorbid depression | 30 mg :: PO :: daily :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | Hepatic impairment; CrCl <30; concurrent MAOIs; uncontrolled narrow-angle glaucoma | Nausea (usually transient); BP monitoring; discontinuation syndrome (taper over 2+ weeks) | - | ROUTINE | ROUTINE | - |
+| Venlafaxine XR | PO | Neuropathic pain (second-line SNRI) | 37.5 mg :: PO :: daily :: Start 37.5 mg daily; increase by 75 mg every 4-7 days; target 150 mg daily; max 225 mg/day | Uncontrolled hypertension; concurrent MAOIs | BP monitoring; serotonin syndrome; discontinuation syndrome (taper over 2+ weeks) | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | PO | Neuropathic pain (second-line); useful for concurrent insomnia | 10 mg :: PO :: qHS :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma; elderly (anticholinergic burden) | ECG if dose >100 mg/day; anticholinergic effects; sedation; weight gain | - | ROUTINE | ROUTINE | - |
+| Nortriptyline | PO | Neuropathic pain (second-line); fewer anticholinergic effects than amitriptyline | 10 mg :: PO :: qHS :: Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS | Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma; elderly | ECG if dose >100 mg/day; anticholinergic effects (fewer than amitriptyline); sedation | - | ROUTINE | ROUTINE | - |
+| Capsaicin cream 0.075% | TOP | Localized neuropathic pain in feet or hands | 0.075% cream :: TOP :: TID-QID :: Apply thin layer TID-QID to affected area; takes 2-4 weeks for full effect; wash hands thoroughly after application | Open wounds; avoid eyes and mucous membranes | Initial burning sensation (decreases with continued use); do not apply to broken skin | - | - | ROUTINE | - |
+| Lidocaine 5% patch | TOP | Localized neuropathic pain; adjunct therapy | 1-3 patches :: TOP :: daily :: Apply 1-3 patches to painful area for 12 hours on, 12 hours off; max 3 patches simultaneously | Severe hepatic impairment; application to broken skin | Minimal systemic absorption; local skin irritation | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Second-line/Refractory
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Tramadol | PO | Moderate neuropathic pain refractory to first-line agents | 50 mg q6h PRN; 100 mg q6h PRN :: PO :: :: Start 50 mg q6h PRN; may increase to 100 mg q6h; max 400 mg/day; ER formulation 100-300 mg daily | Seizure disorder; concurrent MAOIs; concurrent SSRIs/SNRIs (serotonin syndrome risk) | Seizure risk; serotonin syndrome; dependence (Schedule IV); constipation | - | ROUTINE | ROUTINE | - |
-| Capsaicin 8% patch (Qutenza) | TOP | Localized neuropathic pain refractory to standard topical therapy | Apply x 30-60 min :: TOP :: :: Applied by healthcare provider for 30-60 minutes; may repeat every 3 months; pretreat area with topical lidocaine | Open wounds; capsaicin allergy | BP during application; pain during and after application; must be applied in clinical setting | - | - | ROUTINE | - |
-| High-dose oral B12 (if parenteral not tolerated) | PO | B12 replacement when injections refused or contraindicated; compliance concerns | 1000-2000 mcg daily :: PO :: :: 1000-2000 mcg PO daily; ~1% absorbed passively independent of intrinsic factor; may be adequate for mild deficiency; monitor closely | None significant | B12 and MMA levels at 2-3 months to confirm adequate absorption; if MMA remains elevated, switch to parenteral | - | - | ROUTINE | - |
-| Methylcobalamin SL | SL | Alternative oral B12 formulation; may have improved bioavailability | 1000-5000 mcg daily :: SL :: :: 1000-5000 mcg sublingual daily; dissolve under tongue; efficacy data limited compared to IM | None significant | B12 and MMA levels at 2-3 months; switch to parenteral if inadequate response | - | - | ROUTINE | - |
+| Tramadol | PO | Moderate neuropathic pain refractory to first-line agents | 50 mg :: PO :: q6h PRN :: Start 50 mg q6h PRN; may increase to 100 mg q6h; max 400 mg/day; ER formulation 100-300 mg daily | Seizure disorder; concurrent MAOIs; concurrent SSRIs/SNRIs (serotonin syndrome risk) | Seizure risk; serotonin syndrome; dependence (Schedule IV); constipation | - | ROUTINE | ROUTINE | - |
+| Capsaicin 8% patch (Qutenza) | TOP | Localized neuropathic pain refractory to standard topical therapy | 8% patch :: TOP :: q3 months :: Applied by healthcare provider for 30-60 minutes; may repeat every 3 months; pretreat area with topical lidocaine | Open wounds; capsaicin allergy | BP during application; pain during and after application; must be applied in clinical setting | - | - | ROUTINE | - |
+| High-dose oral B12 (if parenteral not tolerated) | PO | B12 replacement when injections refused or contraindicated; compliance concerns | 1000 mcg :: PO :: daily :: 1000-2000 mcg PO daily; ~1% absorbed passively independent of intrinsic factor; may be adequate for mild deficiency; monitor closely | None significant | B12 and MMA levels at 2-3 months to confirm adequate absorption; if MMA remains elevated, switch to parenteral | - | - | ROUTINE | - |
+| Methylcobalamin SL | SL | Alternative oral B12 formulation; may have improved bioavailability | 1000 mcg :: SL :: daily :: 1000-5000 mcg sublingual daily; dissolve under tongue; efficacy data limited compared to IM | None significant | B12 and MMA levels at 2-3 months; switch to parenteral if inadequate response | - | - | ROUTINE | - |
 
 **Combination Therapy Note:** For refractory neuropathic pain, combining agents from different classes (e.g., gabapentinoid + SNRI, or gabapentinoid + TCA) is often more effective than maximizing monotherapy. Avoid combining TCAs with SNRIs (serotonin syndrome risk). Neuropathic pain from B12 deficiency often improves or resolves with adequate B12 replacement alone; allow 3-6 months of treatment before concluding pain is refractory.
 
@@ -187,34 +187,34 @@ tags:
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| B12 injections are lifelong if pernicious anemia is the cause; stopping injections will cause neuropathy to recur and worsen | - | ROUTINE | ROUTINE |
-| Neurological symptoms may take 3-12 months to improve after starting B12 replacement; improvement depends on duration and severity of deficiency before treatment | - | ROUTINE | ROUTINE |
-| Return immediately if worsening weakness, difficulty walking, or new bladder/bowel dysfunction develops (may indicate progressive myelopathy requiring urgent evaluation) | ROUTINE | ROUTINE | ROUTINE |
-| If self-administering B12 injections, use proper IM technique and rotate injection sites (outer thigh or deltoid); attend injection training with nursing | - | ROUTINE | ROUTINE |
-| Do not take folate supplements without B12 as folate alone may mask B12 deficiency while neurological damage continues to progress | ROUTINE | ROUTINE | ROUTINE |
-| Inspect feet daily for cuts, blisters, or wounds using a mirror for soles; impaired sensation increases injury risk | - | ROUTINE | ROUTINE |
-| Use night lights, handrails, and remove throw rugs to prevent falls from impaired balance and proprioception | - | ROUTINE | ROUTINE |
-| Test bath water temperature with elbow before entering as impaired sensation increases burn risk | - | ROUTINE | ROUTINE |
-| Neuropathic pain medications take 2-4 weeks to reach full effect; do not stop gabapentin or pregabalin abruptly | - | ROUTINE | ROUTINE |
-| Report new numbness, tingling, or weakness to your neurologist as this may indicate inadequate treatment or alternative diagnosis | - | ROUTINE | ROUTINE |
-| If vegan or vegetarian, lifelong B12 supplementation is required as plant-based diets contain no natural B12 | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| B12 injections are lifelong if pernicious anemia is the cause; stopping injections will cause neuropathy to recur and worsen | - | ROUTINE | ROUTINE | - |
+| Neurological symptoms may take 3-12 months to improve after starting B12 replacement; improvement depends on duration and severity of deficiency before treatment | - | ROUTINE | ROUTINE | - |
+| Return immediately if worsening weakness, difficulty walking, or new bladder/bowel dysfunction develops (may indicate progressive myelopathy requiring urgent evaluation) | ROUTINE | ROUTINE | ROUTINE | - |
+| If self-administering B12 injections, use proper IM technique and rotate injection sites (outer thigh or deltoid); attend injection training with nursing | - | ROUTINE | ROUTINE | - |
+| Do not take folate supplements without B12 as folate alone may mask B12 deficiency while neurological damage continues to progress | ROUTINE | ROUTINE | ROUTINE | - |
+| Inspect feet daily for cuts, blisters, or wounds using a mirror for soles; impaired sensation increases injury risk | - | ROUTINE | ROUTINE | - |
+| Use night lights, handrails, and remove throw rugs to prevent falls from impaired balance and proprioception | - | ROUTINE | ROUTINE | - |
+| Test bath water temperature with elbow before entering as impaired sensation increases burn risk | - | ROUTINE | ROUTINE | - |
+| Neuropathic pain medications take 2-4 weeks to reach full effect; do not stop gabapentin or pregabalin abruptly | - | ROUTINE | ROUTINE | - |
+| Report new numbness, tingling, or weakness to your neurologist as this may indicate inadequate treatment or alternative diagnosis | - | ROUTINE | ROUTINE | - |
+| If vegan or vegetarian, lifelong B12 supplementation is required as plant-based diets contain no natural B12 | - | ROUTINE | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Complete alcohol cessation as alcohol independently causes neuropathy and worsens B12 malabsorption | ROUTINE | ROUTINE | ROUTINE |
-| Smoking cessation to improve vascular health and support nerve recovery | - | ROUTINE | ROUTINE |
-| Dietary sources of B12: meat, fish, eggs, dairy, fortified cereals; supplement if dietary intake insufficient | - | ROUTINE | ROUTINE |
-| Fall prevention: remove throw rugs, ensure adequate lighting, install grab bars, use assistive devices for sensory ataxia and proprioceptive loss | - | ROUTINE | ROUTINE |
-| Regular exercise as tolerated (walking, swimming, stationary bike) to maintain strength and cardiovascular health; avoid exercises requiring intact proprioception without supervision | - | ROUTINE | ROUTINE |
-| Avoid excessive vitamin B6 supplementation (>100 mg/day) which independently causes peripheral neuropathy | - | ROUTINE | ROUTINE |
-| Annual screening for gastric carcinoid/adenocarcinoma if pernicious anemia confirmed (3-fold increased risk of gastric cancer) | - | - | ROUTINE |
-| Metformin users: annual B12 screening as metformin reduces B12 absorption by 10-30% | - | ROUTINE | ROUTINE |
-| Review medications for B12-lowering agents: proton pump inhibitors, H2 blockers, metformin, colchicine, nitrous oxide exposure | - | ROUTINE | ROUTINE |
-| Nitrous oxide avoidance: inform anesthesia team of B12 deficiency before any surgical procedures as N2O irreversibly oxidizes B12 and precipitates acute neurological deterioration | ROUTINE | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Complete alcohol cessation as alcohol independently causes neuropathy and worsens B12 malabsorption | ROUTINE | ROUTINE | ROUTINE | - |
+| Smoking cessation to improve vascular health and support nerve recovery | - | ROUTINE | ROUTINE | - |
+| Dietary sources of B12: meat, fish, eggs, dairy, fortified cereals; supplement if dietary intake insufficient | - | ROUTINE | ROUTINE | - |
+| Fall prevention: remove throw rugs, ensure adequate lighting, install grab bars, use assistive devices for sensory ataxia and proprioceptive loss | - | ROUTINE | ROUTINE | - |
+| Regular exercise as tolerated (walking, swimming, stationary bike) to maintain strength and cardiovascular health; avoid exercises requiring intact proprioception without supervision | - | ROUTINE | ROUTINE | - |
+| Avoid excessive vitamin B6 supplementation (>100 mg/day) which independently causes peripheral neuropathy | - | ROUTINE | ROUTINE | - |
+| Annual screening for gastric carcinoid/adenocarcinoma if pernicious anemia confirmed (3-fold increased risk of gastric cancer) | - | - | ROUTINE | - |
+| Metformin users: annual B12 screening as metformin reduces B12 absorption by 10-30% | - | ROUTINE | ROUTINE | - |
+| Review medications for B12-lowering agents: proton pump inhibitors, H2 blockers, metformin, colchicine, nitrous oxide exposure | - | ROUTINE | ROUTINE | - |
+| Nitrous oxide avoidance: inform anesthesia team of B12 deficiency before any surgical procedures as N2O irreversibly oxidizes B12 and precipitates acute neurological deterioration | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
 
 ---
 
@@ -293,6 +293,16 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Eliminated all cross-references ("Same as cyanocobalamin") in Section 3A; hydroxocobalamin IM and cyanocobalamin SC rows now self-contained with full contraindications and monitoring
+- Standardized structured dosing format across all treatment sections (3A, 3B, 3C) to `[dose] :: [route] :: [frequency] :: [full_instructions]`
+- Added ICU column to Section 4B (Patient Instructions) and Section 4C (Lifestyle & Prevention) for consistent 4-venue coverage
+- Cleaned gabapentin contraindications: moved renal dose adjustments to dosing field, added respiratory depression warning with opioids
+- Added taper instructions to pregabalin and venlafaxine monitoring
+- Corrected nortriptyline monitoring to be self-contained (removed comparative reference to amitriptyline)
+- Improved magnesium sulfate dosing: added threshold and oral maintenance step-down
+- Added nitrous oxide avoidance to ICU setting (Section 4C) for pre-surgical safety communication
 
 **v1.0 (January 30, 2026)**
 - Initial template creation

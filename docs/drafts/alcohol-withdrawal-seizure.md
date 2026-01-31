@@ -1,7 +1,7 @@
 ---
 title: "Alcohol Withdrawal Seizure"
 description: "Clinical decision support for evaluation and management of alcohol withdrawal seizures"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,8 +20,9 @@ tags:
 
 # Alcohol Withdrawal Seizure
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -182,42 +183,42 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Lorazepam IV | IV | Acute seizure cessation and withdrawal seizure prevention | 2 mg IV PRN; 4 mg IV PRN :: IV :: :: 2-4 mg IV push over 2 min; may repeat q5-10min; max 8-10 mg in first hour; preferred in hepatic impairment (no hepatic metabolism) | Acute narrow-angle glaucoma; severe respiratory depression without ventilator support | RR, O2 sat, BP, sedation level; airway equipment at bedside | STAT | STAT | - | STAT |
-| Diazepam IV | IV | Acute seizure cessation; preferred for smooth withdrawal prophylaxis due to long-acting metabolites | 5 mg IV PRN; 10 mg IV PRN :: IV :: :: 5-10 mg IV push over 2-5 min; may repeat q5-10min; max 30 mg in first hour; long-acting active metabolite (desmethyldiazepam) provides smoother withdrawal coverage | Severe hepatic impairment (use lorazepam instead); severe respiratory depression | RR, O2 sat, BP, sedation level; active metabolites accumulate in liver disease | STAT | STAT | - | STAT |
+| Lorazepam IV | IV | Acute seizure cessation and withdrawal seizure prevention | 2-4 mg :: IV :: PRN q5-10min :: 2-4 mg IV push over 2 min; may repeat q5-10min; max 8-10 mg in first hour; preferred in hepatic impairment (no hepatic metabolism) | Acute narrow-angle glaucoma; severe respiratory depression without ventilator support | RR, O2 sat, BP, sedation level; airway equipment at bedside | STAT | STAT | - | STAT |
+| Diazepam IV | IV | Acute seizure cessation; preferred for smooth withdrawal prophylaxis due to long-acting metabolites | 5-10 mg :: IV :: PRN q5-10min :: 5-10 mg IV push over 2-5 min; may repeat q5-10min; max 30 mg in first hour; long-acting active metabolite (desmethyldiazepam) provides smoother withdrawal coverage | Severe hepatic impairment (use lorazepam instead); severe respiratory depression | RR, O2 sat, BP, sedation level; active metabolites accumulate in liver disease | STAT | STAT | - | STAT |
 | Midazolam IM | IM | Acute seizure if no IV access | 10 mg :: IM :: once :: 10 mg IM (if >=40 kg) or 0.2 mg/kg IM; single dose; obtain IV access urgently | Respiratory compromise | RR, O2 sat; prepare IV access immediately | STAT | STAT | - | STAT |
-| Thiamine IV (high-dose) | IV | Wernicke encephalopathy prevention and treatment; MUST give before or with glucose | 500 mg IV x3/day x 3 days; 250 mg IV daily x 5 days :: IV :: :: 500 mg IV TID for 3 days (diluted in 100 mL NS over 30 min), then 250 mg IV daily for 5 days; give BEFORE glucose | Rare anaphylaxis (extremely uncommon); have epinephrine available | Infusion reaction (rare); anaphylaxis extremely rare | STAT | STAT | - | STAT |
-| Dextrose 50% IV | IV | Hypoglycemia correction; give AFTER thiamine | 50 mL :: IV :: once :: 50 mL IV push (25g) if glucose <70 or unknown; ALWAYS give thiamine first or simultaneously | Document hyperglycemia | Glucose recheck in 15-30 min | STAT | STAT | - | STAT |
-| Magnesium sulfate IV | IV | Hypomagnesemia correction; required cofactor for thiamine metabolism | 2 g IV x1; 1 g IV q6h :: IV :: :: 2 g IV over 1 hour initially; then 1 g IV q6h until Mg >2.0 mg/dL; severe deficiency may require 4-6 g over first 24 hours | Renal failure (monitor levels closely); myasthenia gravis | Mg levels q12-24h; deep tendon reflexes; respiratory status; renal function | STAT | STAT | - | STAT |
-| Supplemental oxygen | INH | Maintain oxygenation during and after seizure | 2-4 L NC; 15 L NRB :: INH :: :: 2-4 L nasal cannula or non-rebreather as needed to maintain O2 sat >94% | None | O2 sat continuous | STAT | STAT | - | STAT |
-| IV fluids (isotonic) | IV | Volume resuscitation; chronic alcohol users are often dehydrated | NS 500 mL bolus; NS 150 mL/hr :: IV :: :: NS or LR bolus 500-1000 mL, then 150-250 mL/hr maintenance; add dextrose (D5NS) once thiamine given; correct dehydration | Fluid overload; severe hyponatremia (use caution with rate) | I/O, BP, Na; avoid rapid correction of hyponatremia (max 8-10 mEq/L per 24h) | STAT | STAT | - | STAT |
+| Thiamine IV (high-dose) | IV | Wernicke encephalopathy prevention and treatment; MUST give before or with glucose | 500 mg :: IV :: TID x 3 days, then 250 mg daily x 5 days :: 500 mg IV TID for 3 days (diluted in 100 mL NS over 30 min), then 250 mg IV daily for 5 days; give BEFORE glucose | Rare anaphylaxis (extremely uncommon); have epinephrine available | Infusion reaction (rare); anaphylaxis extremely rare | STAT | STAT | - | STAT |
+| Dextrose 50% IV | IV | Hypoglycemia correction; give AFTER thiamine | 25 g (50 mL) :: IV :: once :: 50 mL IV push (25 g) if glucose <70 or unknown; ALWAYS give thiamine first or simultaneously | Document hyperglycemia | Glucose recheck in 15-30 min | STAT | STAT | - | STAT |
+| Magnesium sulfate IV | IV | Hypomagnesemia correction; required cofactor for thiamine metabolism | 2 g :: IV :: once, then 1 g q6h :: 2 g IV over 1 hour initially; then 1 g IV q6h until Mg >2.0 mg/dL; severe deficiency may require 4-6 g over first 24 hours | Renal failure (monitor levels closely); myasthenia gravis | Mg levels q12-24h; deep tendon reflexes; respiratory status; renal function | STAT | STAT | - | STAT |
+| Supplemental oxygen | INH | Maintain oxygenation during and after seizure | 2-15 L :: INH :: continuous PRN :: 2-4 L nasal cannula or non-rebreather as needed to maintain O2 sat >94% | None | O2 sat continuous | STAT | STAT | - | STAT |
+| IV fluids (isotonic) | IV | Volume resuscitation; chronic alcohol users are often dehydrated | 500-1000 mL :: IV :: bolus, then 150-250 mL/hr :: NS or LR bolus 500-1000 mL, then 150-250 mL/hr maintenance; add dextrose (D5NS) once thiamine given; correct dehydration | Fluid overload; severe hyponatremia (use caution with rate) | I/O, BP, Na; avoid rapid correction of hyponatremia (max 8-10 mEq/L per 24h) | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic/Withdrawal Management
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Chlordiazepoxide PO | PO | Symptom-triggered withdrawal management (CIWA-Ar based); preferred for mild-moderate withdrawal when oral route available | 25 mg q6h PRN; 50 mg q6h PRN; 100 mg q6h PRN :: PO :: :: CIWA-Ar >=10: give 25-100 mg PO q1h until CIWA <10; then PRN dosing; typical total day 1: 200-400 mg; taper over 3-5 days; long half-life provides smooth coverage | Severe hepatic impairment (use lorazepam); respiratory depression; acute intoxication | CIWA-Ar q1h during active treatment, then q4h when stable; RR, sedation level | - | ROUTINE | - | - |
-| Diazepam PO | PO | Symptom-triggered withdrawal management; alternative to chlordiazepoxide | 5 mg q6h PRN; 10 mg q6h PRN; 20 mg q6h PRN :: PO :: :: CIWA-Ar >=10: give 10-20 mg PO q1-2h until CIWA <10; then PRN dosing; taper over 3-5 days; long-acting metabolites | Severe hepatic impairment (use lorazepam); respiratory depression | CIWA-Ar q1h during active treatment, then q4h; RR, sedation level | URGENT | ROUTINE | - | - |
-| Lorazepam PO | PO | Symptom-triggered withdrawal management; preferred in liver disease (no hepatic metabolism required) | 1 mg q6h PRN; 2 mg q6h PRN :: PO :: :: CIWA-Ar >=10: give 1-2 mg PO q1-2h until CIWA <10; then PRN dosing; shorter half-life requires more frequent dosing; preferred if AST/ALT elevated or known cirrhosis | Severe respiratory depression | CIWA-Ar q1h during active treatment, then q4h; RR, sedation level; shorter acting - watch for rebound | URGENT | ROUTINE | - | URGENT |
-| Oxazepam PO | PO | Withdrawal management in severe liver disease; no active metabolites | 15 mg q6h PRN; 30 mg q6h PRN :: PO :: :: 15-30 mg PO q6-8h; CIWA-Ar guided; no active metabolites; safest in severe hepatic impairment | Severe respiratory depression | CIWA-Ar; shorter half-life requires frequent monitoring | - | ROUTINE | - | - |
-| Folic acid PO | PO | Folate deficiency correction; common in chronic alcohol use | 1 mg daily :: PO :: :: 1 mg PO daily; continue long-term if alcohol use disorder | None significant | Folate levels | - | ROUTINE | ROUTINE | ROUTINE |
-| Multivitamin PO | PO | Nutritional supplementation; multiple micronutrient deficiencies in chronic alcohol use | 1 tab daily :: PO :: :: 1 multivitamin tablet PO daily | None significant | Nutritional status | - | ROUTINE | ROUTINE | ROUTINE |
-| Potassium chloride | IV/PO | Hypokalemia correction; common in alcoholism and with vomiting | 20 mEq IV over 1h; 40 mEq PO :: IV/PO :: :: Replace per level: K 3.0-3.5 → 40 mEq PO; K <3.0 → 20-40 mEq IV over 1-2 hours; check Mg (must replete Mg for K to correct) | Renal failure; hyperkalemia | K levels q6-12h; cardiac monitor if IV replacement | URGENT | ROUTINE | ROUTINE | STAT |
-| Calcium gluconate IV | IV | Hypocalcemia correction; ionized calcium low | 1-2 g IV over 10 min :: IV :: :: 1-2 g calcium gluconate IV over 10-20 min; check Mg (required for calcium homeostasis) | Digoxin use (cardiac arrhythmia risk) | Ionized calcium; cardiac monitor during infusion | URGENT | ROUTINE | - | STAT |
-| Phosphorus replacement | IV/PO | Hypophosphatemia correction; common in alcoholism and refeeding | K-Phos 250 mg PO TID; NaPhos 15 mmol IV :: IV/PO :: :: Mild (2.0-2.5): K-Phos 250 mg PO TID; Moderate (1.0-2.0): NaPhos 15-30 mmol IV over 4-6h; Severe (<1.0): 30-45 mmol IV over 6h | Hyperphosphatemia; renal failure | Phosphorus levels q12-24h; calcium (inversely related) | URGENT | ROUTINE | ROUTINE | STAT |
-| Ondansetron | IV | Nausea/vomiting (common in withdrawal) | 4 mg IV q8h PRN :: IV :: :: 4 mg IV q8h PRN; may also use PO/ODT formulation | QT prolongation; severe hepatic impairment | QTc if multiple doses | URGENT | ROUTINE | ROUTINE | URGENT |
-| Acetaminophen | PO/IV | Headache and pain management; avoid NSAIDs due to bleeding and hepatic risk | 650 mg PO q6h PRN; 1000 mg IV q6h PRN :: PO/IV :: :: 650-1000 mg PO/IV q6h PRN; max 2000 mg/day in liver disease (3000 mg/day if normal liver) | Severe hepatic impairment (reduce max dose) | LFTs if prolonged use; reduce dose in liver disease | URGENT | ROUTINE | ROUTINE | URGENT |
+| Chlordiazepoxide PO | PO | Symptom-triggered withdrawal management (CIWA-Ar based); preferred for mild-moderate withdrawal when oral route available | 25-100 mg :: PO :: q1h PRN (CIWA-Ar guided) :: CIWA-Ar >=10: give 25-100 mg PO q1h until CIWA <10; then PRN dosing; typical total day 1: 200-400 mg; taper over 3-5 days; long half-life provides smooth coverage | Severe hepatic impairment (use lorazepam); respiratory depression; acute intoxication | CIWA-Ar q1h during active treatment, then q4h when stable; RR, sedation level | URGENT | ROUTINE | - | - |
+| Diazepam PO | PO | Symptom-triggered withdrawal management; alternative to chlordiazepoxide | 10-20 mg :: PO :: q1-2h PRN (CIWA-Ar guided) :: CIWA-Ar >=10: give 10-20 mg PO q1-2h until CIWA <10; then PRN dosing; taper over 3-5 days; long-acting metabolites | Severe hepatic impairment (use lorazepam); respiratory depression | CIWA-Ar q1h during active treatment, then q4h; RR, sedation level | URGENT | ROUTINE | - | - |
+| Lorazepam PO | PO | Symptom-triggered withdrawal management; preferred in liver disease (no hepatic metabolism required) | 1-2 mg :: PO :: q1-2h PRN (CIWA-Ar guided) :: CIWA-Ar >=10: give 1-2 mg PO q1-2h until CIWA <10; then PRN dosing; shorter half-life requires more frequent dosing; preferred if AST/ALT elevated or known cirrhosis | Severe respiratory depression | CIWA-Ar q1h during active treatment, then q4h; RR, sedation level; shorter acting - watch for rebound | URGENT | ROUTINE | ROUTINE | URGENT |
+| Oxazepam PO | PO | Withdrawal management in severe liver disease; no active metabolites | 15-30 mg :: PO :: q6-8h PRN (CIWA-Ar guided) :: 15-30 mg PO q6-8h; CIWA-Ar guided; no active metabolites; safest in severe hepatic impairment | Severe respiratory depression | CIWA-Ar; shorter half-life requires frequent monitoring | - | ROUTINE | - | - |
+| Folic acid PO | PO | Folate deficiency correction; common in chronic alcohol use | 1 mg :: PO :: daily :: 1 mg PO daily; continue long-term if alcohol use disorder | None significant | Folate levels | - | ROUTINE | ROUTINE | ROUTINE |
+| Multivitamin PO | PO | Nutritional supplementation; multiple micronutrient deficiencies in chronic alcohol use | 1 tablet :: PO :: daily :: 1 multivitamin tablet PO daily | None significant | Nutritional status | - | ROUTINE | ROUTINE | ROUTINE |
+| Potassium chloride | IV/PO | Hypokalemia correction; common in alcoholism and with vomiting | 20-40 mEq :: IV/PO :: per level PRN :: Replace per level: K 3.0-3.5: 40 mEq PO; K <3.0: 20-40 mEq IV over 1-2 hours; check Mg (must replete Mg for K to correct) | Renal failure; hyperkalemia | K levels q6-12h; cardiac monitor if IV replacement | URGENT | ROUTINE | ROUTINE | STAT |
+| Calcium gluconate IV | IV | Hypocalcemia correction; ionized calcium low | 1-2 g :: IV :: once over 10-20 min :: 1-2 g calcium gluconate IV over 10-20 min; check Mg (required for calcium homeostasis) | Digoxin use (cardiac arrhythmia risk) | Ionized calcium; cardiac monitor during infusion | URGENT | ROUTINE | - | STAT |
+| Phosphorus replacement | IV/PO | Hypophosphatemia correction; common in alcoholism and refeeding | 15-45 mmol IV or 250 mg PO :: IV/PO :: per level :: Mild (2.0-2.5): K-Phos 250 mg PO TID; Moderate (1.0-2.0): NaPhos 15-30 mmol IV over 4-6h; Severe (<1.0): 30-45 mmol IV over 6h | Hyperphosphatemia; renal failure | Phosphorus levels q12-24h; calcium (inversely related) | URGENT | ROUTINE | ROUTINE | STAT |
+| Ondansetron | IV | Nausea/vomiting (common in withdrawal) | 4 mg :: IV :: q8h PRN :: 4 mg IV q8h PRN; may also use PO/ODT formulation | QT prolongation; severe hepatic impairment | QTc if multiple doses | URGENT | ROUTINE | ROUTINE | URGENT |
+| Acetaminophen | PO/IV | Headache and pain management; avoid NSAIDs due to bleeding and hepatic risk | 650-1000 mg :: PO/IV :: q6h PRN :: 650-1000 mg PO/IV q6h PRN; max 2000 mg/day in liver disease (3000 mg/day if normal liver) | Severe hepatic impairment (reduce max dose) | LFTs if prolonged use; reduce dose in liver disease | URGENT | ROUTINE | ROUTINE | URGENT |
 
 ### 3C. Second-line/Refractory
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Phenobarbital IV | IV | Refractory alcohol withdrawal not controlled by benzodiazepines alone; synergistic with benzodiazepines at GABA-A receptor | 130 mg IV q30min PRN; 260 mg IV load :: IV :: :: 130-260 mg IV q15-30 min, titrate to symptom control; max loading 10-20 mg/kg; maintenance 32-65 mg IV/PO q8-12h; can be used as primary agent or adjunct | Porphyria; severe respiratory disease (unless intubated) | RR (respiratory depression additive with benzodiazepines); sedation; intubation equipment at bedside; phenobarbital level if prolonged use | URGENT | URGENT | - | STAT |
-| Propofol infusion | IV | Severe refractory withdrawal with seizures requiring ICU-level sedation; GABA-A and NMDA activity | 1-2 mg/kg bolus; 20-80 mcg/kg/min :: IV :: :: Load 1-2 mg/kg IV bolus; infusion 20-80 mcg/kg/min; titrate to RASS -2 to -3; max 200 mcg/kg/min; limit duration <48h at high doses | Propofol infusion syndrome risk; egg/soy allergy | cEEG if concern for seizures; triglycerides q24h; CPK; metabolic acidosis panel; hemodynamics | - | - | - | STAT |
-| Dexmedetomidine infusion | IV | Adjunctive sedation for withdrawal; reduces benzodiazepine requirement; treats sympathetic hyperactivity | 0.2-1.5 mcg/kg/hr :: IV :: :: Start 0.2 mcg/kg/hr; titrate to effect (max 1.5 mcg/kg/hr); no loading dose in hemodynamically unstable patients; reduces BZD requirements by 30-50% | Severe bradycardia; 2nd/3rd degree heart block; hypotension | HR, BP (bradycardia and hypotension); does NOT prevent seizures - must continue benzodiazepines | - | URGENT | - | STAT |
-| Valproate IV | IV | Adjunctive for withdrawal seizure prevention when benzodiazepines insufficient; NOT a substitute for benzodiazepines | 20-40 mg/kg IV load :: IV :: :: 20-40 mg/kg IV over 30 min; then 250-500 mg IV q8h; monitor ammonia | Pregnancy (teratogenic); hepatic disease (common in this population); pancreatitis; mitochondrial disease | LFTs, ammonia, platelets; hepatotoxicity risk higher in alcoholic liver disease; pancreatitis risk | - | URGENT | - | URGENT |
-| Levetiracetam IV | IV | Adjunctive seizure prophylaxis; NOT a substitute for benzodiazepines for withdrawal management; may be considered if concurrent epilepsy diagnosis or concern for non-withdrawal seizures | 1000-1500 mg IV q12h :: IV :: :: 1000-1500 mg IV q12h; does NOT treat withdrawal syndrome itself; use as adjunct only | Renal impairment (adjust dose if CrCl <50) | Behavioral changes; renal function; does NOT replace benzodiazepines | - | ROUTINE | ROUTINE | ROUTINE |
-| Carbamazepine PO | PO | Alternative/adjunctive for mild-moderate withdrawal; may reduce withdrawal severity and seizure risk; evidence in European literature | 200 mg TID; 400 mg TID :: PO :: :: Start 200 mg TID on day 1; may increase to 400 mg TID; taper over 5-7 days; can be used alone for mild withdrawal or as adjunct | Hepatic disease; bone marrow suppression; AV block; HLA-B*1502 positive (Asian populations) | CBC, LFTs, sodium (hyponatremia risk); drug interactions | - | ROUTINE | ROUTINE | - |
-| Gabapentin PO | PO | Adjunctive for mild-moderate withdrawal symptoms; may reduce benzodiazepine requirements; limited evidence for seizure prevention | 300 mg TID; 600 mg TID; 900 mg TID :: PO :: :: Start 300-600 mg TID; may increase to 900 mg TID; taper over 5-7 days; limited evidence for seizure prevention; better evidence for anxiety/insomnia symptoms | Renal impairment (adjust dose) | Sedation; renal function; NOT a substitute for benzodiazepines in moderate-severe withdrawal | - | ROUTINE | ROUTINE | - |
+| Phenobarbital IV | IV | Refractory alcohol withdrawal not controlled by benzodiazepines alone; synergistic with benzodiazepines at GABA-A receptor | 130-260 mg :: IV :: q15-30min PRN, then 32-65 mg q8-12h :: 130-260 mg IV q15-30 min, titrate to symptom control; max loading 10-20 mg/kg; maintenance 32-65 mg IV/PO q8-12h; can be used as primary agent or adjunct | Porphyria; severe respiratory disease (unless intubated) | RR (respiratory depression additive with benzodiazepines); sedation; intubation equipment at bedside; phenobarbital level if prolonged use | URGENT | URGENT | - | STAT |
+| Propofol infusion | IV | Severe refractory withdrawal with seizures requiring ICU-level sedation; GABA-A and NMDA activity | 1-2 mg/kg bolus, then 20-80 mcg/kg/min :: IV :: continuous infusion :: Load 1-2 mg/kg IV bolus; infusion 20-80 mcg/kg/min; titrate to RASS -2 to -3; max 200 mcg/kg/min; limit duration <48h at high doses | Propofol infusion syndrome risk; egg/soy allergy | cEEG if concern for seizures; triglycerides q24h; CPK; metabolic acidosis panel; hemodynamics | - | - | - | STAT |
+| Dexmedetomidine infusion | IV | Adjunctive sedation for withdrawal; reduces benzodiazepine requirement; treats sympathetic hyperactivity | 0.2 mcg/kg/hr :: IV :: continuous infusion (max 1.5 mcg/kg/hr) :: Start 0.2 mcg/kg/hr; titrate to effect (max 1.5 mcg/kg/hr); no loading dose in hemodynamically unstable patients; reduces BZD requirements by 30-50% | Severe bradycardia; 2nd/3rd degree heart block; hypotension | HR, BP (bradycardia and hypotension); does NOT prevent seizures - must continue benzodiazepines | - | URGENT | - | STAT |
+| Valproate IV | IV | Adjunctive for withdrawal seizure prevention when benzodiazepines insufficient; NOT a substitute for benzodiazepines | 20-40 mg/kg :: IV :: load, then 250-500 mg q8h :: 20-40 mg/kg IV over 30 min; then 250-500 mg IV q8h; monitor ammonia | Pregnancy (teratogenic); hepatic disease (common in this population); pancreatitis; mitochondrial disease | LFTs, ammonia, platelets; hepatotoxicity risk higher in alcoholic liver disease; pancreatitis risk | - | URGENT | - | URGENT |
+| Levetiracetam IV | IV | Adjunctive seizure prophylaxis; NOT a substitute for benzodiazepines for withdrawal management; may be considered if concurrent epilepsy diagnosis or concern for non-withdrawal seizures | 1000-1500 mg :: IV :: q12h :: 1000-1500 mg IV q12h; does NOT treat withdrawal syndrome itself; use as adjunct only | Renal impairment (adjust dose if CrCl <50) | Behavioral changes; renal function; does NOT replace benzodiazepines | - | ROUTINE | ROUTINE | ROUTINE |
+| Carbamazepine PO | PO | Alternative/adjunctive for mild-moderate withdrawal; may reduce withdrawal severity and seizure risk; evidence in European literature | 200 mg :: PO :: TID (titrate to 400 mg TID) :: Start 200 mg TID on day 1; may increase to 400 mg TID; taper over 5-7 days; can be used alone for mild withdrawal or as adjunct | Hepatic disease; bone marrow suppression; AV block; HLA-B*1502 positive (Asian populations) | CBC, LFTs, sodium (hyponatremia risk); drug interactions | - | ROUTINE | ROUTINE | - |
+| Gabapentin PO | PO | Adjunctive for mild-moderate withdrawal symptoms; may reduce benzodiazepine requirements; limited evidence for seizure prevention | 300-600 mg :: PO :: TID (titrate to 900 mg TID) :: Start 300-600 mg TID; may increase to 900 mg TID; taper over 5-7 days; limited evidence for seizure prevention; better evidence for anxiety/insomnia symptoms | Renal impairment (adjust dose) | Sedation; renal function; NOT a substitute for benzodiazepines in moderate-severe withdrawal | - | ROUTINE | ROUTINE | - |
 
 **IMPORTANT CLINICAL NOTES:**
 - **Phenytoin is NOT effective** for alcohol withdrawal seizures and should NOT be used unless there is a concurrent established epilepsy diagnosis requiring phenytoin
@@ -246,35 +247,35 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Return to ED immediately if another seizure occurs, seizure lasts >5 minutes, difficulty breathing, persistent confusion, chest pain, or severe tremors/hallucinations (may indicate progression to delirium tremens) | STAT | STAT | STAT |
-| Do NOT drive until cleared by neurology; seizures impair driving safety and most states require seizure-free interval | STAT | STAT | STAT |
-| Do NOT stop drinking alcohol abruptly without medical supervision as this can provoke seizures and life-threatening withdrawal (seek medical detoxification) | STAT | STAT | STAT |
-| Take all medications exactly as prescribed, especially benzodiazepines during the taper period; do NOT stop benzodiazepines abruptly | ROUTINE | ROUTINE | ROUTINE |
-| Avoid operating heavy machinery, working at heights, swimming alone, or bathing alone until seizure-free and cleared by neurology | ROUTINE | ROUTINE | ROUTINE |
-| Inform family members or housemates about seizure first aid: stay with person, protect head, do NOT put anything in mouth, time the seizure, call 911 if seizure lasts >5 minutes | ROUTINE | ROUTINE | ROUTINE |
-| Eat regular balanced meals to prevent hypoglycemia and maintain electrolyte balance; malnutrition increases seizure risk | - | ROUTINE | ROUTINE |
-| Keep follow-up appointments with neurology and addiction medicine; recurrent withdrawal episodes worsen seizure severity via kindling | - | ROUTINE | ROUTINE |
-| Wear medical identification bracelet indicating seizure history | - | ROUTINE | ROUTINE |
-| Understand that each episode of alcohol withdrawal increases future seizure risk (kindling phenomenon); this is a progressive condition | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Return to ED immediately if another seizure occurs, seizure lasts >5 minutes, difficulty breathing, persistent confusion, chest pain, or severe tremors/hallucinations (may indicate progression to delirium tremens) | STAT | STAT | STAT | - |
+| Do NOT drive until cleared by neurology; seizures impair driving safety and most states require seizure-free interval | STAT | STAT | STAT | - |
+| Do NOT stop drinking alcohol abruptly without medical supervision as this can provoke seizures and life-threatening withdrawal (seek medical detoxification) | STAT | STAT | STAT | - |
+| Take all medications exactly as prescribed, especially benzodiazepines during the taper period; do NOT stop benzodiazepines abruptly | ROUTINE | ROUTINE | ROUTINE | - |
+| Avoid operating heavy machinery, working at heights, swimming alone, or bathing alone until seizure-free and cleared by neurology | ROUTINE | ROUTINE | ROUTINE | - |
+| Inform family members or housemates about seizure first aid: stay with person, protect head, do NOT put anything in mouth, time the seizure, call 911 if seizure lasts >5 minutes | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Eat regular balanced meals to prevent hypoglycemia and maintain electrolyte balance; malnutrition increases seizure risk | - | ROUTINE | ROUTINE | - |
+| Keep follow-up appointments with neurology and addiction medicine; recurrent withdrawal episodes worsen seizure severity via kindling | - | ROUTINE | ROUTINE | - |
+| Wear medical identification bracelet indicating seizure history | - | ROUTINE | ROUTINE | - |
+| Understand that each episode of alcohol withdrawal increases future seizure risk (kindling phenomenon); this is a progressive condition | - | ROUTINE | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Alcohol cessation is the definitive treatment and most important intervention to prevent recurrent withdrawal seizures | ROUTINE | ROUTINE | ROUTINE |
-| Supervised medical detoxification for future alcohol cessation attempts to prevent withdrawal seizures and delirium tremens | ROUTINE | ROUTINE | ROUTINE |
-| Balanced nutrition with emphasis on thiamine-containing foods (whole grains, legumes, lean meats) to rebuild depleted stores | - | ROUTINE | ROUTINE |
-| Sleep hygiene: maintain regular sleep schedule; sleep deprivation independently lowers seizure threshold | - | ROUTINE | ROUTINE |
-| Thiamine supplementation 100 mg PO daily indefinitely if continued alcohol use or malnutrition risk persists | - | ROUTINE | ROUTINE |
-| Folic acid supplementation 1 mg PO daily for chronic deficiency prevention | - | ROUTINE | ROUTINE |
-| Avoid illicit drugs (especially stimulants: cocaine, amphetamines) which independently lower seizure threshold | ROUTINE | ROUTINE | ROUTINE |
-| Stress management and coping strategies as alternatives to alcohol use; consider cognitive behavioral therapy (CBT) | - | - | ROUTINE |
-| Home safety modifications: remove sharp furniture edges, avoid glass shower doors, keep bathroom door unlocked due to seizure risk | - | ROUTINE | ROUTINE |
-| Regular exercise to improve overall health and support alcohol recovery; avoid extreme exertion that leads to dehydration | - | - | ROUTINE |
-| Engage with peer support groups (Alcoholics Anonymous, SMART Recovery) for sustained sobriety | - | ROUTINE | ROUTINE |
-| Avoid medications that lower seizure threshold (tramadol, bupropion at high doses, certain antipsychotics) without neurology guidance | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Alcohol cessation is the definitive treatment and most important intervention to prevent recurrent withdrawal seizures | ROUTINE | ROUTINE | ROUTINE | - |
+| Supervised medical detoxification for future alcohol cessation attempts to prevent withdrawal seizures and delirium tremens | ROUTINE | ROUTINE | ROUTINE | - |
+| Balanced nutrition with emphasis on thiamine-containing foods (whole grains, legumes, lean meats) to rebuild depleted stores | - | ROUTINE | ROUTINE | - |
+| Sleep hygiene: maintain regular sleep schedule; sleep deprivation independently lowers seizure threshold | - | ROUTINE | ROUTINE | - |
+| Thiamine supplementation 100 mg PO daily indefinitely if continued alcohol use or malnutrition risk persists | - | ROUTINE | ROUTINE | ROUTINE |
+| Folic acid supplementation 1 mg PO daily for chronic deficiency prevention | - | ROUTINE | ROUTINE | ROUTINE |
+| Avoid illicit drugs (especially stimulants: cocaine, amphetamines) which independently lower seizure threshold | ROUTINE | ROUTINE | ROUTINE | - |
+| Stress management and coping strategies as alternatives to alcohol use; consider cognitive behavioral therapy (CBT) | - | - | ROUTINE | - |
+| Home safety modifications: remove sharp furniture edges, avoid glass shower doors, keep bathroom door unlocked due to seizure risk | - | ROUTINE | ROUTINE | - |
+| Regular exercise to improve overall health and support alcohol recovery; avoid extreme exertion that leads to dehydration | - | - | ROUTINE | - |
+| Engage with peer support groups (Alcoholics Anonymous, SMART Recovery) for sustained sobriety | - | ROUTINE | ROUTINE | - |
+| Avoid medications that lower seizure threshold (tramadol, bupropion at high doses, certain antipsychotics) without neurology guidance | - | ROUTINE | ROUTINE | ROUTINE |
 
 ---
 
@@ -355,6 +356,16 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized all medication dosing to structured 4-field format (dose :: route :: frequency :: full_instructions) across Sections 3A, 3B, 3C for clickable order sentence support
+- Added ICU column to Section 4B (Patient Instructions) for family communication coverage
+- Added ICU column to Section 4C (Lifestyle & Prevention) for completeness
+- Added OPD coverage for Lorazepam PO in Section 3B (medically supervised outpatient detox)
+- Changed Chlordiazepoxide ED priority from "-" to URGENT (ED patients may need oral withdrawal management while awaiting admission)
+- Populated empty frequency fields (3rd :: position) in all medication dosing cells
+- Removed redundant summary dose text from structured dosing fields
+- Corrected Dextrose 50% dose field to "25 g (50 mL)" for clarity
 
 **v1.0 (January 30, 2026)**
 - Initial template creation
