@@ -22,7 +22,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| *(none)* | — | — | — | — |
+| RCVS | `rcvs.md` | `pending` | — | 2026-01-30 |
+| CNS Vasculitis (PACNS) | `cns-vasculitis.md` | `pending` | — | 2026-01-30 |
+| Viral Meningitis | `viral-meningitis.md` | `pending` | — | 2026-01-30 |
+| Brain Abscess | `brain-abscess.md` | `pending` | — | 2026-01-30 |
+| Paraneoplastic Neurological Syndrome | `paraneoplastic-neurological-syndrome.md` | `pending` | — | 2026-01-30 |
 
 ---
 
