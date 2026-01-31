@@ -9,7 +9,7 @@ title: Template Tracker
 **Created:** January 15, 2026
 **Last Updated:** January 30, 2026
 **Target:** 150+ validated templates
-**Current Status:** 67 templates approved
+**Current Status:** 72 templates approved
 
 ---
 
@@ -105,7 +105,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Carpal Tunnel Syndrome | G56.00 | 🎯 OPD | Approved |
 | ✅ | Radiculopathy | M54.10 | 🎯 OPD | Approved |
 | ✅ | Neuromuscular Respiratory Failure | J96.00 | 🎯 OPD | Approved |
-| ⬜ | Lambert-Eaton Myasthenic Syndrome (LEMS) | G73.1 | 🎯 OPD | Paraneoplastic |
+| ✅ | Lambert-Eaton Myasthenic Syndrome (LEMS) | G73.1 | 🎯 OPD | Approved |
 | ⬜ | Inflammatory Myopathy (Dermatomyositis/PM) | G72.41 | 🎯 OPD | Weakness + rash |
 | ⬜ | Inclusion Body Myositis (IBM) | G72.41 | 🎯 OPD | Refractory myopathy |
 | ⬜ | Muscular Dystrophy (Adult) | G71.0 | 🎯 OPD | Rare adult presentations |
@@ -137,8 +137,8 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Restless Legs Syndrome | G25.81 | 🎯 OPD | Approved |
 | ✅ | Drug-Induced Parkinsonism | G21.11 | 🎯 OPD | Approved |
 | ✅ | Wilson's Disease | E83.01 | 🎯 OPD | Approved |
-| ⬜ | Progressive Supranuclear Palsy (PSP) | G23.1 | 🎯 OPD | Atypical parkinsonism |
-| ⬜ | Multiple System Atrophy (MSA) | G90.3 | 🎯 OPD | Atypical parkinsonism |
+| ✅ | Progressive Supranuclear Palsy (PSP) | G23.1 | 🎯 OPD | Approved |
+| ✅ | Multiple System Atrophy (MSA) | G90.3 | 🎯 OPD | Approved |
 | ⬜ | Corticobasal Degeneration (CBD) | G31.85 | 🎯 OPD | Rare |
 | ⬜ | Tics / Tourette Syndrome | F95.2 | 🎯 OPD | Tic disorders |
 | ⬜ | Ataxia Evaluation | R27.0 | 🎯 OPD | DDx approach |
@@ -185,7 +185,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 |--------|-----------|--------|----------|-------|
 | ✅ | Brain Metastases | C79.31 | 🎯 OPD | Approved |
 | ✅ | Spinal Cord Compression (Malignant) | G95.20 | 🎯 OPD | Approved |
-| ⬜ | Glioblastoma (GBM) | C71.9 | 🎯 OPD | Primary brain tumor |
+| ✅ | Glioblastoma (GBM) | C71.9 | 🎯 OPD | Approved |
 | ⬜ | Leptomeningeal Carcinomatosis | C79.32 | 🎯 OPD | CSF cytology |
 | ⬜ | Paraneoplastic Neurological Syndrome | G13.0 | 🎯 OPD | Antibody panels |
 | ⬜ | Meningioma | D32.9 | 🎯 OPD | Often incidental |
@@ -207,7 +207,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
-| ⬜ | Neurosarcoidosis | D86.82 | 🎯 OPD | Multisystem |
+| ✅ | Neurosarcoidosis | D86.82 | 🎯 OPD | Approved |
 | ⬜ | Susac Syndrome | H35.89 | 🎯 OPD | Rare |
 | ⬜ | Neuro-Behcet's | M35.2 | 🎯 OPD | Rare |
 | ⬜ | Stiff Person Syndrome | G25.82 | 🎯 OPD | Rare |

@@ -22,11 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| Progressive Supranuclear Palsy | `progressive-supranuclear-palsy.md` | `completed` | claude/tier3 | 2026-01-30 |
-| Multiple System Atrophy | `multiple-system-atrophy.md` | `completed` | claude/tier3 | 2026-01-30 |
-| Lambert-Eaton Syndrome | `lambert-eaton-syndrome.md` | `completed` | claude/tier3 | 2026-01-30 |
-| Neurosarcoidosis | `neurosarcoidosis.md` | `completed` | claude/tier3 | 2026-01-30 |
-| Glioblastoma | `glioblastoma.md` | `completed` | claude/tier3 | 2026-01-30 |
+| *(none)* | — | — | — | — |
 
 ---
 
@@ -101,6 +97,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 65 | Post-Concussion Syndrome | [`post-concussion-syndrome.md`](../plans/post-concussion-syndrome.md) | 2026-01-30 | 90%+ |
 | 66 | Drug-Induced Parkinsonism | [`drug-induced-parkinsonism.md`](../plans/drug-induced-parkinsonism.md) | 2026-01-30 | 90%+ |
 | 67 | Wilson's Disease | [`wilsons-disease.md`](../plans/wilsons-disease.md) | 2026-01-30 | 90%+ |
+| 68 | Progressive Supranuclear Palsy | [`progressive-supranuclear-palsy.md`](../plans/progressive-supranuclear-palsy.md) | 2026-01-30 | 90%+ |
+| 69 | Multiple System Atrophy | [`multiple-system-atrophy.md`](../plans/multiple-system-atrophy.md) | 2026-01-30 | 90%+ |
+| 70 | Lambert-Eaton Syndrome | [`lambert-eaton-syndrome.md`](../plans/lambert-eaton-syndrome.md) | 2026-01-30 | 90%+ |
+| 71 | Neurosarcoidosis | [`neurosarcoidosis.md`](../plans/neurosarcoidosis.md) | 2026-01-30 | 90%+ |
+| 72 | Glioblastoma | [`glioblastoma.md`](../plans/glioblastoma.md) | 2026-01-30 | 90%+ |
 
 ---
 
@@ -117,7 +118,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-01-30. Total approved: 67 plans.
+- Queue updated 2026-01-30. Total approved: 72 plans.
 
 ---
 

@@ -49,6 +49,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Small Fiber Neuropathy](small-fiber-neuropathy.md) | ED, HOSP, OPD | G62.9, G62.89, G90.09 |
 | [Carpal Tunnel Syndrome](carpal-tunnel-syndrome.md) | ED, HOSP, OPD, ICU | G56.00, G56.01, G56.02 |
 | [Radiculopathy](radiculopathy.md) | ED, HOSP, OPD, ICU | M54.10, M54.12, G55, M50.10 |
+| [Lambert-Eaton Syndrome](lambert-eaton-syndrome.md) | ED, HOSP, OPD, ICU | G73.1, C34.90, G70.80 |
 
 ---
 
@@ -78,6 +79,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [Brain Metastases](brain-metastases.md) | ED, HOSP, OPD, ICU | C79.31 |
+| [Glioblastoma](glioblastoma.md) | ED, HOSP, OPD, ICU | C71.9, C71.0-C71.8 |
 
 ---
 
@@ -126,6 +128,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Tardive Dyskinesia](tardive-dyskinesia.md) | ED, HOSP, OPD | G24.01, G24.02, G24.09 |
 | [Drug-Induced Parkinsonism](drug-induced-parkinsonism.md) | ED, HOSP, OPD | G21.11, G21.19, G21.0 |
 | [Wilson's Disease](wilsons-disease.md) | ED, HOSP, OPD, ICU | E83.01, G25.2 |
+| [Progressive Supranuclear Palsy](progressive-supranuclear-palsy.md) | ED, HOSP, OPD, ICU | G23.1, F02.80, F02.81 |
+| [Multiple System Atrophy](multiple-system-atrophy.md) | ED, HOSP, OPD, ICU | G90.3, G23.2, G23.3 |
 
 ---
 
@@ -174,6 +178,14 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [Syncope Evaluation](syncope.md) | ED, HOSP, OPD | R55 |
+
+---
+
+## Inflammatory
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Neurosarcoidosis](neurosarcoidosis.md) | ED, HOSP, OPD, ICU | D86.82, D86.89, G53 |
 
 ---
 
