@@ -1,7 +1,7 @@
 ---
 title: "MOG Antibody Disease (MOGAD)"
 description: "Evidence-based clinical decision support for diagnosis, acute treatment, relapse prevention, and monitoring of MOGAD"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,8 +20,9 @@ tags:
 
 # MOG Antibody Disease (MOGAD)
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -105,9 +106,9 @@ SECTION A: ACTION ITEMS
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 | MRI brain with and without contrast (CPT 70553) | Within 24h if acute; within 2 weeks if stable | Fluffy/ill-defined T2/FLAIR white matter lesions; deep gray matter involvement; thalamic lesions (ADEM-like); cortical lesions; absent Dawson fingers (unlike MS) | GFR <30, gadolinium allergy, pacemaker | URGENT | URGENT | ROUTINE | URGENT |
-| MRI orbits with and without contrast and fat suppression (CPT 70543) | Within 24-48h if optic neuritis suspected | Optic nerve enhancement with perineural enhancement (characteristic of MOGAD); bilateral involvement common; anterior/long segment enhancement (unlike MS short segment) | Same as above | URGENT | URGENT | ROUTINE | URGENT |
-| MRI C-spine with and without contrast (CPT 72156) | With brain MRI | Longitudinally extensive transverse myelitis (LETM >=3 segments); central/H-sign cord lesion; conus medullaris involvement | Same as above | URGENT | URGENT | ROUTINE | URGENT |
-| MRI T-spine with and without contrast (CPT 72157) | With brain/C-spine MRI | LETM; conus medullaris involvement (more common in MOGAD than MS/NMOSD) | Same as above | URGENT | URGENT | ROUTINE | URGENT |
+| MRI orbits with and without contrast and fat suppression (CPT 70543) | Within 24-48h if optic neuritis suspected | Optic nerve enhancement with perineural enhancement (characteristic of MOGAD); bilateral involvement common; anterior/long segment enhancement (unlike MS short segment) | GFR <30, gadolinium allergy, pacemaker | URGENT | URGENT | ROUTINE | URGENT |
+| MRI C-spine with and without contrast (CPT 72156) | With brain MRI | Longitudinally extensive transverse myelitis (LETM >=3 segments); central/H-sign cord lesion; conus medullaris involvement | GFR <30, gadolinium allergy, pacemaker | URGENT | URGENT | ROUTINE | URGENT |
+| MRI T-spine with and without contrast (CPT 72157) | With brain/C-spine MRI | LETM; conus medullaris involvement (more common in MOGAD than MS/NMOSD) | GFR <30, gadolinium allergy, pacemaker | URGENT | URGENT | ROUTINE | URGENT |
 | CT head without contrast (CPT 70450) | Immediate (ED triage) | Rule out hemorrhage, mass, hydrocephalus before LP | None significant | STAT | STAT | - | STAT |
 | ECG (12-lead) (CPT 93000) | Immediate | Baseline cardiac rhythm; QTc assessment for medication safety | None | STAT | STAT | ROUTINE | STAT |
 
@@ -126,7 +127,7 @@ SECTION A: ACTION ITEMS
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 | FDG-PET brain | If diagnostic uncertainty | Metabolic changes corresponding to inflammatory lesions | Uncontrolled diabetes, pregnancy | - | EXT | EXT | - |
 | Conventional cerebral angiography | If vasculitis strongly suspected | Rule out CNS vasculitis | Contrast allergy, coagulopathy | - | EXT | - | - |
-| MRI brain with 7T (research) | Diagnostic uncertainty between MS and MOGAD | Central vein sign absent in MOGAD (present in MS); paramagnetic rim lesions absent in MOGAD | Same as standard MRI | - | - | EXT | - |
+| MRI brain with 7T (research) | Diagnostic uncertainty between MS and MOGAD | Central vein sign absent in MOGAD (present in MS); paramagnetic rim lesions absent in MOGAD | GFR <30, gadolinium allergy, pacemaker | - | - | EXT | - |
 
 ### LUMBAR PUNCTURE
 
@@ -164,11 +165,11 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Methylprednisolone IV (CPT 96365) | IV | First-line acute attack treatment for MOGAD optic neuritis, transverse myelitis, or ADEM-like attacks | 1000 mg daily x 5 days :: IV :: daily x 5 days :: 1000 mg IV daily for 5 days; infuse over 1-2 hours; follow with slow oral prednisone taper | Active untreated infection; uncontrolled diabetes; psychosis from steroids; active GI bleeding | Glucose q6h (target <180); BP; mood/sleep; I/O; GI prophylaxis with PPI | URGENT | STAT | - | STAT |
-| Omeprazole (GI prophylaxis during steroids) | PO/IV | GI ulcer prevention during high-dose steroid therapy | 40 mg daily :: PO :: daily :: 40 mg PO/IV daily during IV steroid course and oral taper | PPI allergy | None routine | URGENT | STAT | ROUTINE | STAT |
+| Methylprednisolone IV (CPT 96365) | IV | First-line acute attack treatment for MOGAD optic neuritis, transverse myelitis, or ADEM-like attacks | 1000 mg :: IV :: daily x 5 days :: 1000 mg IV daily for 5 days; infuse over 1-2 hours; follow with slow oral prednisone taper | Active untreated infection; uncontrolled diabetes; psychosis from steroids; active GI bleeding | Glucose q6h (target <180); BP; mood/sleep; I/O; GI prophylaxis with PPI | URGENT | STAT | - | STAT |
+| Omeprazole (GI prophylaxis during steroids) | PO/IV | GI ulcer prevention during high-dose steroid therapy | 40 mg :: PO :: daily :: 40 mg PO/IV daily during IV steroid course and oral taper | PPI allergy | None routine | URGENT | STAT | ROUTINE | STAT |
 | Insulin sliding scale | SC | Steroid-induced hyperglycemia management | Per protocol :: SC :: PRN :: Per institutional protocol if glucose >180 mg/dL | Hypoglycemia risk | Glucose q6h; adjust per response | URGENT | STAT | - | STAT |
-| IVIG (intravenous immunoglobulin) (CPT 96365) | IV | Alternative first-line acute treatment; especially useful if steroids contraindicated or if steroid-refractory; strong evidence in MOGAD | 0.4 g/kg daily x 5 days :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol; premedicate with acetaminophen 650 mg and diphenhydramine 25 mg | IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure | Renal function daily; headache (aseptic meningitis); thrombosis risk; volume overload; check IgA level before first dose | - | STAT | - | STAT |
-| Oral prednisone taper (CRITICAL: slow taper) | PO | Post-IV steroid taper; HIGH RELAPSE RATE with rapid taper in MOGAD -- taper over 3-6 months minimum | 1 mg/kg daily; 60 mg x 2 wk; 50 mg x 2 wk; 40 mg x 2 wk; 30 mg x 2 wk; 20 mg x 2 wk; 15 mg x 2 wk; 10 mg x 2 wk; 5 mg x 2 wk; then stop :: PO :: daily :: Start 1 mg/kg/day (max 60 mg) after IV pulse; taper by approximately 5-10 mg every 2 weeks over 3-6 months; do NOT taper faster than 5 mg/month below 20 mg; relapse risk highest when prednisone <20 mg or within 2 months of discontinuation | Active infection; uncontrolled diabetes; avascular necrosis; psychosis | Glucose; BP; bone density (DEXA if >3 months); weight; mood; cataracts; adrenal insufficiency assessment on taper | - | ROUTINE | ROUTINE | - |
+| IVIG (intravenous immunoglobulin) (CPT 96365) | IV | Alternative first-line acute treatment; especially useful if steroids contraindicated or if steroid-refractory; strong evidence in MOGAD | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol; premedicate with acetaminophen 650 mg and diphenhydramine 25 mg | IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure | Renal function daily; headache (aseptic meningitis); thrombosis risk; volume overload; check IgA level before first dose | - | STAT | - | STAT |
+| Oral prednisone taper (CRITICAL: slow taper) | PO | Post-IV steroid taper; HIGH RELAPSE RATE with rapid taper in MOGAD -- taper over 3-6 months minimum | 60 mg :: PO :: daily with taper :: Start 1 mg/kg/day (max 60 mg) after IV pulse; taper: 60 mg x 2 wk; 50 mg x 2 wk; 40 mg x 2 wk; 30 mg x 2 wk; 20 mg x 2 wk; 15 mg x 2 wk; 10 mg x 2 wk; 5 mg x 2 wk; then stop; do NOT taper faster than 5 mg/month below 20 mg; relapse risk highest when prednisone <20 mg or within 2 months of discontinuation | Active infection; uncontrolled diabetes; avascular necrosis; psychosis | Glucose; BP; bone density (DEXA if >3 months); weight; mood; cataracts; adrenal insufficiency assessment on taper | - | ROUTINE | ROUTINE | - |
 
 *Note: MOGAD has a HIGH relapse rate with rapid steroid taper -- this is a key differentiating feature from MS. Taper prednisone slowly over 3-6 months minimum. Many patients relapse when prednisone drops below 10-20 mg/day. If relapse occurs during taper, return to the last effective dose and initiate steroid-sparing maintenance therapy.*
 
@@ -176,25 +177,25 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Gabapentin | PO | Neuropathic pain from transverse myelitis; painful tonic spasms | 300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day divided TID | Renal impairment (adjust dose per CrCl) | Sedation; dizziness; edema; renal function | - | ROUTINE | ROUTINE | - |
-| Pregabalin | PO | Neuropathic pain from transverse myelitis; alternative to gabapentin | 75 mg BID; 150 mg BID; 300 mg BID :: PO :: :: Start 75 mg BID; may increase q1wk; max 600 mg/day | Renal impairment (adjust dose per CrCl); angioedema history | Sedation; dizziness; weight gain; edema | - | ROUTINE | ROUTINE | - |
-| Baclofen | PO | Spasticity and painful tonic spasms from myelitis | 5 mg TID; 10 mg TID; 20 mg TID :: PO :: :: Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day | Seizure disorder (lower threshold); renal impairment | Sedation; weakness; abrupt withdrawal causes seizures/hallucinations | - | ROUTINE | ROUTINE | - |
-| Tizanidine | PO | Spasticity from myelitis; alternative to baclofen | 2 mg qHS; 4 mg TID; 8 mg TID :: PO :: :: Start 2 mg qHS; titrate by 2-4 mg q1-4d; max 36 mg/day divided TID | Hepatic impairment; concurrent fluvoxamine or ciprofloxacin (CYP1A2 inhibitors) | LFTs at baseline, 1, 3, 6 months; sedation; hypotension; dry mouth | - | ROUTINE | ROUTINE | - |
-| Oxybutynin | PO | Neurogenic bladder urgency/frequency from myelitis | 5 mg BID; 5 mg TID :: PO :: :: Start 5 mg BID; max 5 mg TID | Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction | Anticholinergic effects; cognitive effects (especially elderly); dry mouth | - | ROUTINE | ROUTINE | - |
-| Tamsulosin | PO | Urinary retention from myelitis-related neurogenic bladder | 0.4 mg daily :: PO :: :: 0.4 mg PO daily; take 30 min after same meal each day | Orthostatic hypotension; planned cataract surgery (intraoperative floppy iris) | Orthostatic BP; dizziness | - | ROUTINE | ROUTINE | - |
-| Acetaminophen | PO/IV | Pain control; headache from steroids or acute attack | 1000 mg q6h PRN :: PO :: :: 1000 mg PO/IV q6h PRN; max 3000 mg/day (2000 mg if liver disease) | Severe hepatic impairment; allergy | LFTs if prolonged use | STAT | STAT | ROUTINE | STAT |
-| Docusate sodium | PO | Constipation prevention during opioid use or immobility from myelitis | 100 mg BID :: PO :: :: 100 mg PO BID | Intestinal obstruction | Bowel function | - | ROUTINE | ROUTINE | - |
-| Polyethylene glycol 3350 (MiraLAX) | PO | Constipation from neurogenic bowel or immobility | 17 g daily :: PO :: :: 17 g (1 capful) dissolved in 8 oz water daily | Intestinal obstruction; bowel perforation | Bowel function; electrolytes if prolonged | - | ROUTINE | ROUTINE | - |
-| Levetiracetam | PO/IV | Seizure management in ADEM-like presentation with cortical involvement | 500 mg BID; 750 mg BID; 1000 mg BID; 1500 mg BID :: PO :: :: Start 500 mg BID; increase by 500 mg/day q1-2wk; max 3000 mg/day | Renal impairment (adjust dose per CrCl) | Behavioral changes (rage, irritability); suicidality screening; renal function | STAT | STAT | ROUTINE | STAT |
+| Gabapentin | PO | Neuropathic pain from transverse myelitis; painful tonic spasms | 300 mg :: PO :: TID :: Start 300 mg qHS; titrate by 300 mg q1-3d; target 300-900 mg TID; max 3600 mg/day divided TID | Renal impairment (adjust dose per CrCl) | Sedation; dizziness; edema; renal function | - | ROUTINE | ROUTINE | - |
+| Pregabalin | PO | Neuropathic pain from transverse myelitis; alternative to gabapentin | 75 mg :: PO :: BID :: Start 75 mg BID; may increase q1wk to 150 mg BID; max 600 mg/day | Renal impairment (adjust dose per CrCl); angioedema history | Sedation; dizziness; weight gain; edema | - | ROUTINE | ROUTINE | - |
+| Baclofen | PO | Spasticity and painful tonic spasms from myelitis | 5 mg :: PO :: TID :: Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day | Seizure disorder (lower threshold); renal impairment | Sedation; weakness; abrupt withdrawal causes seizures/hallucinations | - | ROUTINE | ROUTINE | - |
+| Tizanidine | PO | Spasticity from myelitis; alternative to baclofen | 2 mg :: PO :: TID :: Start 2 mg qHS; titrate by 2-4 mg q1-4d; max 36 mg/day divided TID | Hepatic impairment; concurrent fluvoxamine or ciprofloxacin (CYP1A2 inhibitors) | LFTs at baseline, 1, 3, 6 months; sedation; hypotension; dry mouth | - | ROUTINE | ROUTINE | - |
+| Oxybutynin | PO | Neurogenic bladder urgency/frequency from myelitis | 5 mg :: PO :: BID :: Start 5 mg BID; max 5 mg TID | Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction | Anticholinergic effects; cognitive effects (especially elderly); dry mouth | - | ROUTINE | ROUTINE | - |
+| Tamsulosin | PO | Urinary retention from myelitis-related neurogenic bladder | 0.4 mg :: PO :: daily :: 0.4 mg PO daily; take 30 min after same meal each day | Orthostatic hypotension; planned cataract surgery (intraoperative floppy iris) | Orthostatic BP; dizziness | - | ROUTINE | ROUTINE | - |
+| Acetaminophen | PO/IV | Pain control; headache from steroids or acute attack | 1000 mg :: PO :: q6h PRN :: 1000 mg PO/IV q6h PRN; max 3000 mg/day (2000 mg if liver disease) | Severe hepatic impairment; allergy | LFTs if prolonged use | STAT | STAT | ROUTINE | STAT |
+| Docusate sodium | PO | Constipation prevention during opioid use or immobility from myelitis | 100 mg :: PO :: BID :: 100 mg PO BID | Intestinal obstruction | Bowel function | - | ROUTINE | ROUTINE | - |
+| Polyethylene glycol 3350 (MiraLAX) | PO | Constipation from neurogenic bowel or immobility | 17 g :: PO :: daily :: 17 g (1 capful) dissolved in 8 oz water daily | Intestinal obstruction; bowel perforation | Bowel function; electrolytes if prolonged | - | ROUTINE | ROUTINE | - |
+| Levetiracetam | PO/IV | Seizure management in ADEM-like presentation with cortical involvement | 500 mg :: PO :: BID :: Start 500 mg BID; increase by 500 mg/day q1-2wk; max 3000 mg/day | Renal impairment (adjust dose per CrCl) | Behavioral changes (rage, irritability); suicidality screening; renal function | STAT | STAT | ROUTINE | STAT |
 
 ### 3C. Second-line/Refractory (Acute Attack)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Plasmapheresis (PLEX) | - | Steroid-refractory acute attack; severe optic neuritis or myelitis not responding to IV steroids within 5-7 days | 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange; albumin replacement | Hemodynamic instability; sepsis; coagulopathy; poor vascular access | BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions | - | URGENT | - | URGENT |
-| Repeat IV methylprednisolone (extended course) | IV | Incomplete response to initial 5-day course; may extend to 7-10 days in severe cases | 1000 mg daily :: IV :: daily :: 1000 mg IV daily; extend course to 7-10 days total if partial response after initial 5 days | Active untreated infection; uncontrolled diabetes; steroid psychosis | Glucose q6h; BP; mood; I/O; infection surveillance; bone protection | - | URGENT | - | URGENT |
-| IVIG (if not used as first-line) | IV | Steroid-refractory attack; second-line acute treatment after IV steroids | 0.4 g/kg daily x 5 days :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); premedicate with acetaminophen and diphenhydramine | IgA deficiency; recent thromboembolic event; renal failure | Renal function daily; headache; thrombosis; volume overload | - | URGENT | - | URGENT |
-| Combined PLEX + IVIG (sequential) | IV/- | Severe refractory attack not responding to steroids alone; sequential approach: PLEX first, then IVIG (PLEX removes IVIG, so give IVIG after PLEX completion) | PLEX x 5-7 exchanges, then IVIG 0.4 g/kg x 5 days starting after final PLEX exchange | Per individual contraindications above | Per individual monitoring above; coordinate timing carefully | - | EXT | - | EXT |
+| Plasmapheresis (PLEX) | Extracorporeal | Steroid-refractory acute attack; severe optic neuritis or myelitis not responding to IV steroids within 5-7 days | 5-7 exchanges :: Extracorporeal :: q2d x 10-14 days :: 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange; albumin replacement | Hemodynamic instability; sepsis; coagulopathy; poor vascular access | BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions | - | URGENT | - | URGENT |
+| Repeat IV methylprednisolone (extended course) | IV | Incomplete response to initial 5-day course; may extend to 7-10 days in severe cases | 1000 mg :: IV :: daily :: 1000 mg IV daily; extend course to 7-10 days total if partial response after initial 5 days | Active untreated infection; uncontrolled diabetes; steroid psychosis | Glucose q6h; BP; mood; I/O; infection surveillance; bone protection | - | URGENT | - | URGENT |
+| IVIG (if not used as first-line) | IV | Steroid-refractory attack; second-line acute treatment after IV steroids | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); premedicate with acetaminophen and diphenhydramine | IgA deficiency; recent thromboembolic event; renal failure | Renal function daily; headache; thrombosis; volume overload | - | URGENT | - | URGENT |
+| Combined PLEX + IVIG (sequential) | Extracorporeal/IV | Severe refractory attack not responding to steroids alone; sequential approach: PLEX first, then IVIG (PLEX removes IVIG, so give IVIG after PLEX completion) | PLEX x 5-7 exchanges then IVIG 0.4 g/kg x 5 days :: Extracorporeal/IV :: sequential :: PLEX x 5-7 exchanges, then IVIG 0.4 g/kg/day x 5 days starting at least 24 hours after final PLEX exchange | Hemodynamic instability; sepsis; coagulopathy; IgA deficiency; renal failure | BP during PLEX; electrolytes; coagulation; renal function during IVIG; coordinate timing carefully | - | EXT | - | EXT |
 
 *Note: For steroid-refractory cases, PLEX is typically preferred for severe optic neuritis and myelitis. IVIG may be preferred if hemodynamic instability or poor vascular access. If using sequential PLEX followed by IVIG, begin IVIG at least 24 hours after the last PLEX exchange to avoid removal of infused immunoglobulin.*
 
@@ -202,14 +203,14 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| IVIG maintenance (most evidence in MOGAD) | IV | First-line maintenance immunotherapy for relapsing MOGAD; strongest evidence base among maintenance options; reduces relapse rate and steroid dependence | 0.4 g/kg monthly; 1 g/kg q4wk; 2 g/kg q4-6wk :: IV :: :: 0.4-2 g/kg IV every 4-6 weeks; typical starting dose 1 g/kg monthly; adjust dose/interval based on relapse frequency and trough IgG levels | IgA level (rule out deficiency); renal function; baseline immunoglobulin levels; hepatitis B/C screening; pregnancy test | IgA deficiency (anaphylaxis risk); recent thromboembolic event; uncontrolled renal disease; hyperviscosity syndrome | IgG trough levels q3 months (target >800 mg/dL); renal function; CBC; headache (aseptic meningitis); thrombosis surveillance; hemolysis (DAT if anemia) | - | ROUTINE | ROUTINE | - |
-| Subcutaneous immunoglobulin (SCIg) | SC | Alternative to IV maintenance IVIG; allows home self-administration; equivalent efficacy | Equivalent weekly dose to monthly IVIG divided into weekly SC infusions :: SC :: :: Convert from IVIG: divide monthly dose by 4 for weekly dosing; typical 0.1-0.4 g/kg/week SC; adjust per response | Same as IVIG; patient training for self-administration | Same as IVIG; skin infection at infusion site | IgG trough levels q3 months; injection site reactions; same systemic monitoring as IVIG | - | - | ROUTINE | - |
-| Oral prednisone (low-dose maintenance) | PO | Bridge immunosuppression while steroid-sparing agent takes effect; some patients require low-dose maintenance long-term | 5 mg daily; 7.5 mg daily; 10 mg daily :: PO :: :: 5-10 mg PO daily; aim to taper off within 3-6 months once steroid-sparing agent established; some patients require indefinite low-dose (5 mg) | Active infection; uncontrolled diabetes; avascular necrosis | Glucose; BP; bone density (DEXA if >3 months); weight; mood; cataracts; adrenal assessment on taper | - | - | ROUTINE | - |
-| Azathioprine (Imuran) | PO | Steroid-sparing maintenance immunotherapy; takes 3-6 months for full effect -- bridge with prednisone | 50 mg daily; 100 mg daily; 150 mg daily :: PO :: :: Start 50 mg PO daily; increase by 50 mg every 2-4 weeks to target 2-3 mg/kg/day; onset of action 3-6 months | TPMT deficiency (myelosuppression risk); pregnancy (Category D -- teratogenic); concurrent allopurinol (reduce dose by 75%) | TPMT genotype/phenotype BEFORE starting; CBC q2 weeks x 2 months, then monthly; LFTs q month x 3 months, then q3 months; pancreatitis; MCV (macrocytosis indicates therapeutic effect) | - | - | ROUTINE | - |
-| Mycophenolate mofetil (CellCept) | PO | Steroid-sparing maintenance immunotherapy; alternative to azathioprine; takes 2-3 months for full effect | 500 mg BID; 750 mg BID; 1000 mg BID :: PO :: :: Start 500 mg PO BID; increase to 1000 mg PO BID over 2-4 weeks; target 2000-3000 mg/day | Pregnancy test; CBC; LFTs; hepatitis B/C screening; baseline immunoglobulin levels | Pregnancy (Category D -- teratogenic; requires two forms of contraception); active infection; live vaccines | CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms (nausea, diarrhea); infection surveillance; pregnancy prevention (two methods required) | - | - | ROUTINE | - |
-| Rituximab (Rituxan) | IV | Second-line maintenance for MOGAD refractory to IVIG, azathioprine, or mycophenolate; less evidence than in AQP4-NMOSD; some MOGAD patients respond poorly to rituximab | 375 mg/m2 weekly x 4 doses; 1000 mg x 2 (day 0 and 14) :: IV :: :: 375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0 and day 14); re-dose every 6 months or based on CD19/CD20 B-cell repopulation; premedicate with methylprednisolone 100 mg, acetaminophen, diphenhydramine | Hepatitis B serology (HBsAg, anti-HBc, anti-HBs); hepatitis C; CBC; immunoglobulin levels; CD19/CD20 B-cell counts; TB screening (PPD or QuantiFERON); pregnancy test; vaccinations current (no live vaccines within 4 weeks) | Active hepatitis B; severe active infection; live vaccines within 4 weeks; severe hypersensitivity to murine proteins | Hepatitis B serology before first dose; CBC q2-4 weeks; immunoglobulin levels q3-6 months; CD19/CD20 B-cell counts q3 months; infusion reactions; PML surveillance; infection monitoring | - | ROUTINE | ROUTINE | - |
-| Tocilizumab (Actemra) | IV/SC | Third-line maintenance for MOGAD refractory to IVIG and standard immunosuppressants; emerging evidence | 8 mg/kg IV q4wk; 162 mg SC q2wk :: IV/SC :: :: 8 mg/kg IV every 4 weeks (max 800 mg) OR 162 mg SC every 2 weeks | CBC; LFTs; lipids; TB screening; hepatitis B/C; pregnancy test | Active infection; hepatic impairment (ALT >5x ULN); diverticulitis; concurrent live vaccines | CBC, LFTs, lipids q4-8 weeks; CRP suppressed (cannot use as infection marker); infection surveillance; GI perforation risk; neutropenia | - | - | EXT | - |
-| Calcium + Vitamin D (bone protection with steroids) | PO | Osteoporosis prevention during prolonged corticosteroid therapy | 1000 mg calcium + 2000 IU vitamin D daily :: PO :: :: Calcium 1000-1200 mg/day + Vitamin D 1000-2000 IU/day | Hypercalcemia; kidney stones | 25-OH Vitamin D level; calcium; DEXA at baseline if anticipated steroid use >3 months | - | ROUTINE | ROUTINE | - |
+| IVIG maintenance (most evidence in MOGAD) | IV | First-line maintenance immunotherapy for relapsing MOGAD; strongest evidence base among maintenance options; reduces relapse rate and steroid dependence | 1 g/kg :: IV :: q4wk :: 0.4-2 g/kg IV every 4-6 weeks; typical starting dose 1 g/kg monthly; adjust dose/interval based on relapse frequency and trough IgG levels | IgA level (rule out deficiency); renal function; baseline immunoglobulin levels; hepatitis B/C screening; pregnancy test | IgA deficiency (anaphylaxis risk); recent thromboembolic event; uncontrolled renal disease; hyperviscosity syndrome | IgG trough levels q3 months (target >800 mg/dL); renal function; CBC; headache (aseptic meningitis); thrombosis surveillance; hemolysis (DAT if anemia) | - | ROUTINE | ROUTINE | - |
+| Subcutaneous immunoglobulin (SCIg) | SC | Alternative to IV maintenance IVIG; allows home self-administration; equivalent efficacy | 0.1-0.4 g/kg :: SC :: weekly :: Convert from IVIG: divide monthly dose by 4 for weekly dosing; typical 0.1-0.4 g/kg/week SC; adjust per response | IgA level (rule out deficiency); renal function; baseline immunoglobulin levels; hepatitis B/C screening; patient training for self-administration | IgA deficiency (anaphylaxis risk); recent thromboembolic event; uncontrolled renal disease; skin infection at infusion site | IgG trough levels q3 months; injection site reactions; renal function; CBC; thrombosis surveillance | - | - | ROUTINE | - |
+| Oral prednisone (low-dose maintenance) | PO | Bridge immunosuppression while steroid-sparing agent takes effect; some patients require low-dose maintenance long-term | 5-10 mg :: PO :: daily :: 5-10 mg PO daily; aim to taper off within 3-6 months once steroid-sparing agent established; some patients require indefinite low-dose (5 mg) | Baseline glucose; BP; DEXA if anticipated >3 months | Active infection; uncontrolled diabetes; avascular necrosis | Glucose; BP; bone density (DEXA if >3 months); weight; mood; cataracts; adrenal assessment on taper | - | - | ROUTINE | - |
+| Azathioprine (Imuran) | PO | Steroid-sparing maintenance immunotherapy; takes 3-6 months for full effect -- bridge with prednisone | 50 mg :: PO :: daily :: Start 50 mg PO daily; increase by 50 mg every 2-4 weeks to target 2-3 mg/kg/day; onset of action 3-6 months | TPMT genotype/phenotype BEFORE starting; CBC; LFTs; hepatitis B/C screening; pregnancy test | TPMT deficiency (myelosuppression risk); pregnancy (Category D -- teratogenic); concurrent allopurinol (reduce dose by 75%) | CBC q2 weeks x 2 months, then monthly; LFTs q month x 3 months, then q3 months; pancreatitis; MCV (macrocytosis indicates therapeutic effect) | - | - | ROUTINE | - |
+| Mycophenolate mofetil (CellCept) | PO | Steroid-sparing maintenance immunotherapy; alternative to azathioprine; takes 2-3 months for full effect | 500 mg :: PO :: BID :: Start 500 mg PO BID; increase to 1000 mg PO BID over 2-4 weeks; target 2000-3000 mg/day | Pregnancy test; CBC; LFTs; hepatitis B/C screening; baseline immunoglobulin levels | Pregnancy (Category D -- teratogenic; requires two forms of contraception); active infection; live vaccines | CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms (nausea, diarrhea); infection surveillance; pregnancy prevention (two methods required) | - | - | ROUTINE | - |
+| Rituximab (Rituxan) | IV | Second-line maintenance for MOGAD refractory to IVIG, azathioprine, or mycophenolate; less evidence than in AQP4-NMOSD; some MOGAD patients respond poorly to rituximab | 1000 mg :: IV :: q6 months :: 375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0 and day 14); re-dose every 6 months or based on CD19/CD20 B-cell repopulation; premedicate with methylprednisolone 100 mg, acetaminophen, diphenhydramine | Hepatitis B serology (HBsAg, anti-HBc, anti-HBs); hepatitis C; CBC; immunoglobulin levels; CD19/CD20 B-cell counts; TB screening (PPD or QuantiFERON); pregnancy test; vaccinations current (no live vaccines within 4 weeks) | Active hepatitis B; severe active infection; live vaccines within 4 weeks; severe hypersensitivity to murine proteins | Hepatitis B serology before first dose; CBC q2-4 weeks; immunoglobulin levels q3-6 months; CD19/CD20 B-cell counts q3 months; infusion reactions; PML surveillance; infection monitoring | - | ROUTINE | ROUTINE | - |
+| Tocilizumab (Actemra) | IV/SC | Third-line maintenance for MOGAD refractory to IVIG and standard immunosuppressants; emerging evidence | 8 mg/kg :: IV :: q4wk :: 8 mg/kg IV every 4 weeks (max 800 mg) OR 162 mg SC every 2 weeks | CBC; LFTs; lipids; TB screening; hepatitis B/C; pregnancy test | Active infection; hepatic impairment (ALT >5x ULN); diverticulitis; concurrent live vaccines | CBC, LFTs, lipids q4-8 weeks; CRP suppressed (cannot use as infection marker); infection surveillance; GI perforation risk; neutropenia | - | - | EXT | - |
+| Calcium + Vitamin D (bone protection with steroids) | PO | Osteoporosis prevention during prolonged corticosteroid therapy | 1000 mg calcium + 2000 IU vitamin D :: PO :: daily :: Calcium 1000-1200 mg/day + Vitamin D 1000-2000 IU/day | Baseline 25-OH Vitamin D level; calcium level | Hypercalcemia; kidney stones | 25-OH Vitamin D level; calcium; DEXA at baseline if anticipated steroid use >3 months | - | ROUTINE | ROUTINE | - |
 
 *Note: IVIG maintenance has the strongest evidence base for relapse prevention in MOGAD. Rituximab may be LESS effective in MOGAD compared to AQP4-NMOSD because MOG-IgG is produced primarily by short-lived plasmablasts rather than long-lived plasma cells. Treatment decisions (monophasic vs relapsing) should be guided by: (1) number of attacks, (2) severity of attacks, (3) persistent MOG-IgG seropositivity (seropositive patients more likely to relapse), (4) residual disability. First attack with seroconversion to negative may be observed without maintenance therapy. Multiple relapses or persistent seropositivity warrants maintenance immunotherapy.*
 
@@ -238,34 +239,34 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Return to ED immediately for new or worsening vision loss, new weakness, numbness, or bladder/bowel dysfunction (may indicate new attack or relapse) | Y | Y | Y |
-| Do NOT stop oral prednisone abruptly -- rapid steroid taper causes high relapse risk in MOGAD and may cause adrenal crisis | Y | Y | Y |
-| Report any new visual changes immediately including blurred vision, eye pain with movement, or color desaturation (may indicate optic neuritis relapse) | Y | Y | Y |
-| Do NOT drive until visual acuity and visual fields have been formally assessed and cleared by ophthalmology/neuro-ophthalmology | Y | Y | Y |
-| MOGAD is a treatable condition -- most patients recover well from attacks, especially with early and aggressive treatment | Y | Y | Y |
-| Report any signs of infection (fever >100.4F, cough, dysuria, rash) immediately while on immunosuppressive therapy | - | Y | Y |
-| Avoid live vaccines while on immunosuppressive therapy; inform all healthcare providers of immunosuppressed status | - | Y | Y |
-| Keep an attack diary documenting new symptoms, dates, and steroid dose at time of relapse to guide treatment decisions | - | Y | Y |
-| Pregnancy planning must be discussed with neurology before conception; some maintenance therapies are teratogenic | - | Y | Y |
-| IVIG infusions must not be skipped or delayed without neurology approval; missed infusions increase relapse risk | - | Y | Y |
-| Medical alert bracelet recommended (MOGAD, immunosuppressed, steroid-dependent) | - | Y | Y |
-| Follow-up with neurology within 1-2 weeks after acute attack treatment to assess response and plan taper/maintenance | - | Y | Y |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Return to ED immediately for new or worsening vision loss, new weakness, numbness, or bladder/bowel dysfunction (may indicate new attack or relapse) | Y | Y | Y | - |
+| Do NOT stop oral prednisone abruptly -- rapid steroid taper causes high relapse risk in MOGAD and may cause adrenal crisis | Y | Y | Y | - |
+| Report any new visual changes immediately including blurred vision, eye pain with movement, or color desaturation (may indicate optic neuritis relapse) | Y | Y | Y | - |
+| Do NOT drive until visual acuity and visual fields have been formally assessed and cleared by ophthalmology/neuro-ophthalmology | Y | Y | Y | - |
+| MOGAD is a treatable condition -- most patients recover well from attacks, especially with early and aggressive treatment | Y | Y | Y | - |
+| Report any signs of infection (fever >100.4F, cough, dysuria, rash) immediately while on immunosuppressive therapy | - | Y | Y | - |
+| Avoid live vaccines while on immunosuppressive therapy; inform all healthcare providers of immunosuppressed status | - | Y | Y | - |
+| Keep an attack diary documenting new symptoms, dates, and steroid dose at time of relapse to guide treatment decisions | - | Y | Y | - |
+| Pregnancy planning must be discussed with neurology before conception; some maintenance therapies are teratogenic | - | Y | Y | - |
+| IVIG infusions must not be skipped or delayed without neurology approval; missed infusions increase relapse risk | - | Y | Y | - |
+| Medical alert bracelet recommended (MOGAD, immunosuppressed, steroid-dependent) | - | Y | Y | - |
+| Follow-up with neurology within 1-2 weeks after acute attack treatment to assess response and plan taper/maintenance | - | Y | Y | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Vitamin D supplementation (2000-4000 IU daily) to maintain levels >30 ng/mL given association between low vitamin D and demyelinating disease activity | - | Y | Y |
-| Smoking cessation to reduce vascular risk and potential inflammatory disease activity | - | Y | Y |
-| Low-sodium diet during steroid therapy to reduce fluid retention, hypertension, and weight gain | - | Y | Y |
-| Calcium supplementation (1000-1200 mg daily) during prolonged steroid use to prevent osteoporosis | - | Y | Y |
-| Regular low-impact exercise (swimming, stationary bike, yoga) to maintain strength and reduce fatigue without overexertion | - | Y | Y |
-| Adequate sleep hygiene and stress management as fatigue is common in demyelinating disease | - | Y | Y |
-| Fall prevention measures at home (remove rugs, install grab bars, adequate lighting) if myelitis-related weakness or gait instability | - | Y | Y |
-| Influenza and pneumococcal vaccination recommended while on immunosuppression (inactivated vaccines are safe) | - | Y | Y |
-| Avoid extreme heat exposure (Uhthoff phenomenon: transient worsening of neurological symptoms with elevated body temperature) | - | Y | Y |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Vitamin D supplementation (2000-4000 IU daily) to maintain levels >30 ng/mL given association between low vitamin D and demyelinating disease activity | - | Y | Y | - |
+| Smoking cessation to reduce vascular risk and potential inflammatory disease activity | - | Y | Y | - |
+| Low-sodium diet during steroid therapy to reduce fluid retention, hypertension, and weight gain | - | Y | Y | - |
+| Calcium supplementation (1000-1200 mg daily) during prolonged steroid use to prevent osteoporosis | - | Y | Y | - |
+| Regular low-impact exercise (swimming, stationary bike, yoga) to maintain strength and reduce fatigue without overexertion | - | Y | Y | - |
+| Adequate sleep hygiene and stress management as fatigue is common in demyelinating disease | - | Y | Y | - |
+| Fall prevention measures at home (remove rugs, install grab bars, adequate lighting) if myelitis-related weakness or gait instability | - | Y | Y | - |
+| Influenza and pneumococcal vaccination recommended while on immunosuppression (inactivated vaccines are safe) | - | Y | Y | - |
+| Avoid extreme heat exposure (Uhthoff phenomenon: transient worsening of neurological symptoms with elevated body temperature) | - | Y | Y | - |
 
 ---
 
@@ -413,6 +414,17 @@ Supporting features:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Checker validation and rebuilder revisions applied (all revisions approved)
+- Section 3A: Fixed structured dosing format -- populated frequency fields for all acute treatments (methylprednisolone, omeprazole, insulin, IVIG, oral prednisone taper)
+- Section 3B: Fixed structured dosing format -- populated frequency fields for all symptomatic treatments (gabapentin, pregabalin, baclofen, tizanidine, oxybutynin, tamsulosin, acetaminophen, docusate, polyethylene glycol, levetiracetam)
+- Section 3C: Fixed structured dosing format -- populated frequency fields and updated Route for PLEX from "-" to "Extracorporeal"; updated combined PLEX+IVIG route and dosing format; expanded contraindications/monitoring for combined therapy to be self-contained (no cross-references)
+- Section 3D: Fixed structured dosing format -- populated frequency fields for all maintenance therapies (IVIG, SCIg, prednisone, azathioprine, mycophenolate, rituximab, tocilizumab, calcium+vitamin D); added Pre-Treatment Requirements for SCIg, oral prednisone, and calcium+vitamin D; moved pre-treatment labs from contraindications column to Pre-Treatment Requirements for mycophenolate
+- Section 4B: Added ICU column (marked "-" as patient instructions are not applicable in ICU setting)
+- Section 4C: Added ICU column (marked "-" as lifestyle recommendations are not applicable in ICU setting)
+- Added REVISED date to document header
+- Updated version from 1.0 to 1.1 in frontmatter and header
 
 **v1.0 (January 30, 2026)**
 - Initial template creation

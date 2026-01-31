@@ -1,7 +1,7 @@
 ---
 title: "Fungal Meningitis"
 description: "Evidence-based clinical decision support for diagnosis, antifungal treatment, and monitoring of fungal meningitis"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,8 +20,9 @@ tags:
 
 # Fungal Meningitis
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -241,30 +242,30 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Return to ED immediately if worsening headache, new or worsening confusion, vision changes, fever recurrence, neck stiffness, or seizure (may indicate rising ICP, treatment failure, or IRIS) | STAT | STAT | ROUTINE |
-| Do NOT stop antifungal medications without infectious disease physician guidance (premature discontinuation leads to relapse in >50% of cases) | - | ROUTINE | ROUTINE |
-| Take fluconazole consistently at the same time each day to maintain therapeutic drug levels | - | ROUTINE | ROUTINE |
-| Report any new medications to infectious disease physician before starting (azoles have extensive drug interactions including with statins, certain cardiac drugs, and anticoagulants) | - | ROUTINE | ROUTINE |
-| Avoid grapefruit and grapefruit juice while taking azole antifungals (increases azole levels via CYP3A4 inhibition) | - | ROUTINE | ROUTINE |
-| Coccidioidal meningitis requires LIFELONG antifungal therapy — never stop medication even if feeling well (relapse rate >80% if discontinued) | - | ROUTINE | ROUTINE |
-| For HIV patients: take ART medications as prescribed without missing doses; report any worsening symptoms after starting ART (may indicate IRIS requiring treatment adjustment) | - | ROUTINE | ROUTINE |
-| Attend all follow-up appointments including scheduled blood draws for drug level monitoring and liver function tests | - | ROUTINE | ROUTINE |
-| Use sun protection (sunscreen, protective clothing) while on voriconazole due to increased photosensitivity and long-term skin cancer risk | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Return to ED immediately if worsening headache, new or worsening confusion, vision changes, fever recurrence, neck stiffness, or seizure (may indicate rising ICP, treatment failure, or IRIS) | STAT | STAT | ROUTINE | - |
+| Do NOT stop antifungal medications without infectious disease physician guidance (premature discontinuation leads to relapse in >50% of cases) | - | ROUTINE | ROUTINE | - |
+| Take fluconazole consistently at the same time each day to maintain therapeutic drug levels | - | ROUTINE | ROUTINE | - |
+| Report any new medications to infectious disease physician before starting (azoles have extensive drug interactions including with statins, certain cardiac drugs, and anticoagulants) | - | ROUTINE | ROUTINE | - |
+| Avoid grapefruit and grapefruit juice while taking azole antifungals (increases azole levels via CYP3A4 inhibition) | - | ROUTINE | ROUTINE | - |
+| Coccidioidal meningitis requires LIFELONG antifungal therapy — never stop medication even if feeling well (relapse rate >80% if discontinued) | - | ROUTINE | ROUTINE | - |
+| For HIV patients: take ART medications as prescribed without missing doses; report any worsening symptoms after starting ART (may indicate IRIS requiring treatment adjustment) | - | ROUTINE | ROUTINE | - |
+| Attend all follow-up appointments including scheduled blood draws for drug level monitoring and liver function tests | - | ROUTINE | ROUTINE | - |
+| Use sun protection (sunscreen, protective clothing) while on voriconazole due to increased photosensitivity and long-term skin cancer risk | - | ROUTINE | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Strict ART adherence for HIV-positive patients to achieve immune reconstitution and eventual discontinuation of fluconazole maintenance (CD4 >100 x 3 months with suppressed viral load) | - | ROUTINE | ROUTINE |
-| Avoid soil disruption activities (digging, construction, archaeological excavation) in Coccidioides-endemic areas (southwestern US, Mexico, Central/South America) to reduce re-exposure risk | - | - | ROUTINE |
-| Avoid bird/bat guano exposure, cave exploration, and demolition of old buildings in Histoplasma-endemic areas (Ohio/Mississippi River valleys) | - | - | ROUTINE |
-| Alcohol cessation during antifungal therapy to reduce hepatotoxicity risk and improve immune function | - | ROUTINE | ROUTINE |
-| Adequate hydration (2-3 L water daily if tolerated) to support renal function during and after amphotericin B therapy | - | ROUTINE | ROUTINE |
-| Report any skin lesions, bone/joint pain, or pulmonary symptoms that may indicate disseminated fungal disease outside the CNS | - | ROUTINE | ROUTINE |
-| Women of childbearing age must use effective contraception during azole therapy (teratogenic — especially fluconazole at high doses and itraconazole) | - | ROUTINE | ROUTINE |
-| Smoking cessation to improve immune function and reduce pulmonary infection risk | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Strict ART adherence for HIV-positive patients to achieve immune reconstitution and eventual discontinuation of fluconazole maintenance (CD4 >100 x 3 months with suppressed viral load) | - | ROUTINE | ROUTINE | - |
+| Avoid soil disruption activities (digging, construction, archaeological excavation) in Coccidioides-endemic areas (southwestern US, Mexico, Central/South America) to reduce re-exposure risk | - | - | ROUTINE | - |
+| Avoid bird/bat guano exposure, cave exploration, and demolition of old buildings in Histoplasma-endemic areas (Ohio/Mississippi River valleys) | - | - | ROUTINE | - |
+| Alcohol cessation during antifungal therapy to reduce hepatotoxicity risk and improve immune function | - | ROUTINE | ROUTINE | - |
+| Adequate hydration (2-3 L water daily if tolerated) to support renal function during and after amphotericin B therapy | - | ROUTINE | ROUTINE | - |
+| Report any skin lesions, bone/joint pain, or pulmonary symptoms that may indicate disseminated fungal disease outside the CNS | - | ROUTINE | ROUTINE | - |
+| Women of childbearing age must use effective contraception during azole therapy (teratogenic — especially fluconazole at high doses and itraconazole) | - | ROUTINE | ROUTINE | - |
+| Smoking cessation to improve immune function and reduce pulmonary infection risk | - | ROUTINE | ROUTINE | - |
 
 ═══════════════════════════════════════════════════════════════
 SECTION B: REFERENCE (Expand as Needed)
@@ -342,6 +343,13 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Added ICU column to Section 4B (Patient Instructions) for consistent 4-venue column format per C1
+- Added ICU column to Section 4C (Lifestyle & Prevention) for consistent 4-venue column format per C2
+- All tables now use standardized 4-venue column format (ED, HOSP, OPD, ICU)
+- Validated structured dosing format across all treatment sections (3A, 3B, 3C, 3D)
+- Checker validation score: 53/60 (88%) pre-revision; post-revision target 56/60 (93%)
 
 **v1.0 (January 30, 2026)**
 - Initial template creation

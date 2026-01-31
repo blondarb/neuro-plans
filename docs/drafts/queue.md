@@ -22,11 +22,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| Fungal Meningitis | `fungal-meningitis.md` | `pending` | — | 2026-01-30 |
-| Tuberculous Meningitis | `tb-meningitis.md` | `pending` | — | 2026-01-30 |
-| MOG Antibody Disease (MOGAD) | `mogad.md` | `pending` | — | 2026-01-30 |
-| Critical Illness Myopathy/Neuropathy | `critical-illness-myopathy-neuropathy.md` | `pending` | — | 2026-01-30 |
-| Anoxic Brain Injury / Neuroprognostication | `anoxic-brain-injury.md` | `pending` | — | 2026-01-30 |
+| Fungal Meningitis | `fungal-meningitis.md` | `completed` | claude/tier6 | 2026-01-30 |
+| Tuberculous Meningitis | `tb-meningitis.md` | `completed` | claude/tier6 | 2026-01-30 |
+| MOG Antibody Disease (MOGAD) | `mogad.md` | `completed` | claude/tier6 | 2026-01-30 |
+| Critical Illness Myopathy/Neuropathy | `critical-illness-myopathy-neuropathy.md` | `completed` | claude/tier6 | 2026-01-30 |
+| Anoxic Brain Injury / Neuroprognostication | `anoxic-brain-injury.md` | `completed` | claude/tier6 | 2026-01-30 |
 
 ---
 

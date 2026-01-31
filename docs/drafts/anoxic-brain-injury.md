@@ -1,7 +1,7 @@
 ---
 title: "Anoxic Brain Injury / Neuroprognostication"
 description: "Evidence-based clinical decision support for post-cardiac arrest care, neuroprognostication, and rehabilitation of anoxic brain injury"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,8 +20,9 @@ tags:
 
 # Anoxic Brain Injury / Neuroprognostication
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -55,58 +56,58 @@ tags:
 
 ---
 
-===============================================================
+═══════════════════════════════════════════════════════════════
 SECTION A: ACTION ITEMS
-===============================================================
+═══════════════════════════════════════════════════════════════
 
 ## 1. LABORATORY WORKUP
 
 ### 1A. Essential/Core Labs
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential (CPT 85025) | STAT | STAT | - | STAT | Baseline; infection screen; thrombocytopenia from ischemia-reperfusion | Normal |
-| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | - | STAT | Electrolytes; renal function (ischemic ATN common); hepatic injury (shock liver); glucose management | Normal; watch Cr, LFTs, K |
-| Arterial blood gas (ABG) (CPT 82803) | STAT | STAT | - | STAT | Oxygenation; ventilation; acid-base status; lactate clearance | pH 7.35-7.45; PaCO2 35-45; PaO2 >60; lactate trending down |
-| Lactate (CPT 83605) | STAT | STAT | - | STAT | Tissue perfusion marker; serial clearance predicts survival | <2 mmol/L; clearance >20% at 6h is favorable |
-| Troponin (serial) (CPT 84484) | STAT | STAT | - | STAT | Myocardial injury is nearly universal post-arrest; ACS as precipitant; myocardial dysfunction severity | Trend; peak predicts myocardial dysfunction severity |
-| PT/INR (CPT 85610), aPTT (CPT 85730) | STAT | STAT | - | STAT | Coagulopathy from ischemia-reperfusion (DIC common); pre-procedural | Normal |
-| Fibrinogen (CPT 85384) | STAT | STAT | - | STAT | DIC screen; consumptive coagulopathy from prolonged arrest | >150 mg/dL |
-| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Hyperglycemia worsens neurological outcomes; hypoglycemia mimics encephalopathy | 140-180 mg/dL target (avoid <70 and >180) |
-| Magnesium (CPT 83735) | STAT | STAT | - | STAT | Hypomagnesemia lowers seizure threshold; arrhythmia risk | >2.0 mg/dL |
-| Calcium, ionized (CPT 82330) | STAT | STAT | - | STAT | Cardiac rhythm stability; seizure threshold | Normal |
-| Phosphorus (CPT 84100) | STAT | ROUTINE | - | STAT | Refeeding risk; electrolyte management | Normal |
-| Pregnancy test (beta-hCG) (CPT 84703) | STAT | STAT | - | STAT | Affects imaging and medication decisions | Document result |
-| Blood type and screen (CPT 86900) | STAT | STAT | - | STAT | Potential need for blood products; DIC management | On file |
-| Urine drug screen (CPT 80307) | STAT | - | - | STAT | Toxicologic cause of arrest (cocaine, opioids, amphetamines); affects prognostication timeline | Document result |
-| Blood alcohol level (CPT 80320) | STAT | - | - | STAT | Confounding factor for neurological exam; withdrawal risk | Document result |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| CBC with differential (CPT 85025) | Baseline; infection screen; thrombocytopenia from ischemia-reperfusion | Normal | STAT | STAT | ROUTINE | STAT |
+| CMP (BMP + LFTs) (CPT 80053) | Electrolytes; renal function (ischemic ATN common); hepatic injury (shock liver); glucose management | Normal; watch Cr, LFTs, K | STAT | STAT | ROUTINE | STAT |
+| Arterial blood gas (ABG) (CPT 82803) | Oxygenation; ventilation; acid-base status; lactate clearance | pH 7.35-7.45; PaCO2 35-45; PaO2 >60; lactate trending down | STAT | STAT | - | STAT |
+| Lactate (CPT 83605) | Tissue perfusion marker; serial clearance predicts survival | <2 mmol/L; clearance >20% at 6h is favorable | STAT | STAT | - | STAT |
+| Troponin (serial) (CPT 84484) | Myocardial injury is nearly universal post-arrest; ACS as precipitant; myocardial dysfunction severity | Trend; peak predicts myocardial dysfunction severity | STAT | STAT | - | STAT |
+| PT/INR (CPT 85610), aPTT (CPT 85730) | Coagulopathy from ischemia-reperfusion (DIC common); pre-procedural | Normal | STAT | STAT | - | STAT |
+| Fibrinogen (CPT 85384) | DIC screen; consumptive coagulopathy from prolonged arrest | >150 mg/dL | STAT | STAT | - | STAT |
+| Blood glucose (CPT 82947) | Hyperglycemia worsens neurological outcomes; hypoglycemia mimics encephalopathy | 140-180 mg/dL target (avoid <70 and >180) | STAT | STAT | ROUTINE | STAT |
+| Magnesium (CPT 83735) | Hypomagnesemia lowers seizure threshold; arrhythmia risk | >2.0 mg/dL | STAT | STAT | ROUTINE | STAT |
+| Calcium, ionized (CPT 82330) | Cardiac rhythm stability; seizure threshold | Normal | STAT | STAT | ROUTINE | STAT |
+| Phosphorus (CPT 84100) | Refeeding risk; electrolyte management | Normal | STAT | ROUTINE | ROUTINE | STAT |
+| Pregnancy test (beta-hCG) (CPT 84703) | Affects imaging and medication decisions | Document result | STAT | STAT | - | STAT |
+| Blood type and screen (CPT 86900) | Potential need for blood products; DIC management | On file | STAT | STAT | - | STAT |
+| Urine drug screen (CPT 80307) | Toxicologic cause of arrest (cocaine, opioids, amphetamines); affects prognostication timeline | Document result | STAT | - | - | STAT |
+| Blood alcohol level (CPT 80320) | Confounding factor for neurological exam; withdrawal risk | Document result | STAT | - | - | STAT |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Neuron-Specific Enolase (NSE) (CPT 83519) | - | URGENT | - | URGENT | Prognostic biomarker; draw at 24h, 48h, and 72h post-ROSC. NSE >33 ug/L at 48-72h associated with poor outcome (FPR <5% per ERC/ESICM 2021). Must exclude hemolysis (falsely elevates NSE) | <33 ug/L at 48-72h suggests potential for recovery; >60 ug/L highly predictive of poor outcome |
-| D-dimer (CPT 85379) | URGENT | ROUTINE | - | URGENT | DIC screening; ischemia-reperfusion coagulopathy | Normal |
-| Procalcitonin (CPT 84145) | URGENT | ROUTINE | - | URGENT | Differentiate post-arrest SIRS from infection; guide antibiotic decisions | <0.5 ng/mL (elevated common post-arrest without infection) |
-| Cortisol (AM) (CPT 82533) | - | ROUTINE | - | ROUTINE | Adrenal insufficiency from prolonged shock; critical illness-related corticosteroid insufficiency | >18 ug/dL |
-| TSH (CPT 84443) | - | ROUTINE | - | - | Hypothyroidism as contributing factor | Normal |
-| BNP / NT-proBNP (CPT 83880) | URGENT | ROUTINE | - | URGENT | Post-arrest myocardial dysfunction severity; volume status | Elevated (expected post-arrest) |
-| Ammonia (CPT 82140) | URGENT | ROUTINE | - | URGENT | Hepatic encephalopathy confounding neurologic exam; shock liver | Normal |
-| Serum osmolality (CPT 83930) | - | ROUTINE | - | ROUTINE | Monitor during osmotherapy if cerebral edema develops | 280-320 mOsm/kg |
-| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Diabetes management; glucose control optimization | <7.0% |
-| Lipid panel (CPT 80061) | - | ROUTINE | ROUTINE | - | Cardiovascular risk for secondary prevention | Document baseline |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Neuron-Specific Enolase (NSE) (CPT 83519) | Prognostic biomarker; draw at 24h, 48h, and 72h post-ROSC. NSE >33 ug/L at 48-72h associated with poor outcome (FPR <5% per ERC/ESICM 2021). Must exclude hemolysis (falsely elevates NSE) | <33 ug/L at 48-72h suggests potential for recovery; >60 ug/L highly predictive of poor outcome | - | URGENT | - | URGENT |
+| D-dimer (CPT 85379) | DIC screening; ischemia-reperfusion coagulopathy | Normal | URGENT | ROUTINE | - | URGENT |
+| Procalcitonin (CPT 84145) | Differentiate post-arrest SIRS from infection; guide antibiotic decisions | <0.5 ng/mL (elevated common post-arrest without infection) | URGENT | ROUTINE | - | URGENT |
+| Cortisol (AM) (CPT 82533) | Adrenal insufficiency from prolonged shock; critical illness-related corticosteroid insufficiency | >18 ug/dL | - | ROUTINE | - | ROUTINE |
+| TSH (CPT 84443) | Hypothyroidism as contributing factor | Normal | - | ROUTINE | ROUTINE | - |
+| BNP / NT-proBNP (CPT 83880) | Post-arrest myocardial dysfunction severity; volume status | Elevated (expected post-arrest) | URGENT | ROUTINE | - | URGENT |
+| Ammonia (CPT 82140) | Hepatic encephalopathy confounding neurologic exam; shock liver | Normal | URGENT | ROUTINE | - | URGENT |
+| Serum osmolality (CPT 83930) | Monitor during osmotherapy if cerebral edema develops | 280-320 mOsm/kg | - | ROUTINE | - | ROUTINE |
+| HbA1c (CPT 83036) | Diabetes management; glucose control optimization | <7.0% | - | ROUTINE | ROUTINE | - |
+| Lipid panel (CPT 80061) | Cardiovascular risk for secondary prevention | Document baseline | - | ROUTINE | ROUTINE | - |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| S100B protein | - | EXT | - | EXT | Additional prognostic biomarker; less studied than NSE; elevated >0.18 ug/L at 24-48h suggests poor outcome | Normal |
-| Tau protein (serum or CSF) | - | EXT | - | EXT | Emerging biomarker for axonal injury severity; research context | Lower levels favorable |
-| GFAP (glial fibrillary acidic protein) | - | EXT | - | EXT | Emerging astrocytic injury biomarker; elevated in severe ABI | Lower levels favorable |
-| Neurofilament light chain (NfL) serum | - | EXT | - | EXT | Emerging biomarker for axonal injury; correlates with outcome at 24-72h post-arrest | Lower levels favorable |
-| Genetic testing (SCN5A, KCNQ1, etc.) | - | - | EXT | - | Channelopathy workup if arrest etiology unclear in young patient without structural heart disease | Document result |
-| Toxicology (expanded) | STAT | EXT | - | STAT | Cyanide, carbon monoxide, organophosphates if environmental exposure suspected | Negative |
-| Carboxyhemoglobin (CPT 82375) | STAT | - | - | STAT | Carbon monoxide poisoning as cause of anoxia; house fire, CO exposure | <3% (non-smoker); <10% (smoker) |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| S100B protein | Additional prognostic biomarker; less studied than NSE; elevated >0.18 ug/L at 24-48h suggests poor outcome | Normal | - | EXT | - | EXT |
+| Tau protein (serum or CSF) | Emerging biomarker for axonal injury severity; research context | Lower levels favorable | - | EXT | - | EXT |
+| GFAP (glial fibrillary acidic protein) | Emerging astrocytic injury biomarker; elevated in severe ABI | Lower levels favorable | - | EXT | - | EXT |
+| Neurofilament light chain (NfL) serum | Emerging biomarker for axonal injury; correlates with outcome at 24-72h post-arrest | Lower levels favorable | - | EXT | - | EXT |
+| Genetic testing (SCN5A, KCNQ1, etc.) | Channelopathy workup if arrest etiology unclear in young patient without structural heart disease | Document result | - | - | EXT | - |
+| Toxicology (expanded) | Cyanide, carbon monoxide, organophosphates if environmental exposure suspected | Negative | STAT | EXT | - | STAT |
+| Carboxyhemoglobin (CPT 82375) | Carbon monoxide poisoning as cause of anoxia; house fire, CO exposure | <3% (non-smoker); <10% (smoker) | STAT | - | - | STAT |
 
 ---
 
@@ -114,33 +115,33 @@ SECTION A: ACTION ITEMS
 
 ### 2A. Essential/First-line
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | Immediately post-ROSC; rule out primary intracranial event as cause of arrest | Exclude hemorrhage, stroke, herniation, mass as primary cause. Post-anoxic findings: diffuse sulcal effacement, loss of gray-white differentiation (GWR) — GWR <1.1 at 24-48h predicts poor outcome | Pregnancy (benefit outweighs risk) |
-| ECG (12-lead) (CPT 93000) | STAT | STAT | - | STAT | Immediately post-ROSC; identify STEMI (emergent cath), arrhythmia, QTc, Brugada, channelopathy | STEMI -> emergent PCI; arrhythmia identification; QTc assessment | None |
-| Chest X-ray (CPT 71046) | STAT | ROUTINE | - | STAT | ETT position; rib fractures from CPR; aspiration; pulmonary edema | Normal; exclude complications | None |
-| Coronary angiography / cardiac catheterization (CPT 93458) | STAT | STAT | - | STAT | Emergent if STEMI; urgent if no obvious non-cardiac etiology and shockable rhythm (VF/VT). AHA/ILCOR: emergent PCI for STEMI; consider early cath for non-STEMI arrests with shockable rhythm | Identify and treat coronary occlusion as precipitant of arrest | Active bleeding; known anaphylaxis to contrast |
-| Continuous EEG (cEEG) (CPT 95700) | - | STAT | - | STAT | Initiate within 12h of ICU admission; detect nonconvulsive seizures (NCSE in 10-30% of comatose post-arrest); monitor for burst-suppression; assess background reactivity for prognostication at >=72h | Background: continuous vs burst-suppression vs suppression; reactivity to stimuli; seizures/NCSE. Highly malignant patterns (suppression, burst-suppression without reactivity) predict poor outcome | None |
-| Echocardiogram (TTE) (CPT 93306) | URGENT | URGENT | - | URGENT | Within 24h; assess post-arrest myocardial dysfunction (stunned myocardium); EF for hemodynamic management; identify structural cause (HCM, valvular) | Post-arrest EF often 25-40% (usually recovers by 72h); wall motion abnormalities; structural abnormality | None |
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
+| CT head without contrast (CPT 70450) | Immediately post-ROSC; rule out primary intracranial event as cause of arrest | Exclude hemorrhage, stroke, herniation, mass as primary cause. Post-anoxic findings: diffuse sulcal effacement, loss of gray-white differentiation (GWR) — GWR <1.1 at 24-48h predicts poor outcome | Pregnancy (benefit outweighs risk) | STAT | STAT | - | STAT |
+| ECG (12-lead) (CPT 93000) | Immediately post-ROSC; identify STEMI (emergent cath), arrhythmia, QTc, Brugada, channelopathy | STEMI -> emergent PCI; arrhythmia identification; QTc assessment | None | STAT | STAT | - | STAT |
+| Chest X-ray (CPT 71046) | ETT position; rib fractures from CPR; aspiration; pulmonary edema | Normal; exclude complications | None | STAT | ROUTINE | - | STAT |
+| Coronary angiography / cardiac catheterization (CPT 93458) | Emergent if STEMI; urgent if no obvious non-cardiac etiology and shockable rhythm (VF/VT). AHA/ILCOR: emergent PCI for STEMI; consider early cath for non-STEMI arrests with shockable rhythm | Identify and treat coronary occlusion as precipitant of arrest | Active bleeding; known anaphylaxis to contrast | STAT | STAT | - | STAT |
+| Continuous EEG (cEEG) (CPT 95700) | Initiate within 12h of ICU admission; detect nonconvulsive seizures (NCSE in 10-30% of comatose post-arrest); monitor for burst-suppression; assess background reactivity for prognostication at >=72h | Background: continuous vs burst-suppression vs suppression; reactivity to stimuli; seizures/NCSE. Highly malignant patterns (suppression, burst-suppression without reactivity) predict poor outcome | None | - | STAT | - | STAT |
+| Echocardiogram (TTE) (CPT 93306) | Within 24h; assess post-arrest myocardial dysfunction (stunned myocardium); EF for hemodynamic management; identify structural cause (HCM, valvular) | Post-arrest EF often 25-40% (usually recovers by 72h); wall motion abnormalities; structural abnormality | None | URGENT | URGENT | - | URGENT |
 
 ### 2B. Extended
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with DWI/ADC (CPT 70553) | - | URGENT | ROUTINE | URGENT | Day 2-7 post-ROSC (optimal at day 3-5); critical for neuroprognostication. DWI is most sensitive imaging modality for anoxic injury | Extensive cortical and subcortical restricted diffusion (DWI bright, ADC dark) = poor outcome. Diffuse cortical involvement, basal ganglia, thalamic, brainstem involvement all predict poor outcome. Quantitative ADC values may improve accuracy | Pacemaker (non-MRI-conditional); hemodynamic instability; active TTM devices (MRI-compatible alternatives exist) |
-| SSEP (somatosensory evoked potentials) (CPT 95925) | - | URGENT | - | URGENT | Perform at >=72h post-ROSC after rewarming and sedation washout. Bilateral absence of N20 cortical responses is one of the most reliable poor prognostic indicators (FPR <1%) | Bilateral N20 present = good sign. Bilateral N20 absent = poor prognosis (FPR ~0-1% per AAN). N20 amplitude <0.62 uV also predictive | None absolute; requires cooperative technician and reduced electrical interference |
-| CT head with quantitative GWR measurement | - | URGENT | - | URGENT | At 24-48h post-ROSC; measure gray-white matter ratio at basal ganglia level and centrum semiovale | GWR <1.10 at caudate nucleus level at 24-48h predicts poor outcome (FPR <5%). Diffuse sulcal effacement, absent basal cisterns, loss of differentiation | Same as CT |
-| MR spectroscopy (CPT 76390) | - | EXT | - | EXT | If available; assess metabolic injury severity | Reduced NAA/Cr ratio; elevated lactate peak = poor prognosis | Same as MRI |
-| Cardiac MRI (CPT 75557) | - | ROUTINE | ROUTINE | - | After stabilization; assess myocardial injury, cardiomyopathy, fibrosis, ARVC | Structural/ischemic etiology of arrest; myocardial viability | Same as MRI |
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
+| MRI brain with DWI/ADC (CPT 70553) | Day 2-7 post-ROSC (optimal at day 3-5); critical for neuroprognostication. DWI is most sensitive imaging modality for anoxic injury | Extensive cortical and subcortical restricted diffusion (DWI bright, ADC dark) = poor outcome. Diffuse cortical involvement, basal ganglia, thalamic, brainstem involvement all predict poor outcome. Quantitative ADC values may improve accuracy | Pacemaker (non-MRI-conditional); hemodynamic instability; active TTM devices (MRI-compatible alternatives exist) | - | URGENT | ROUTINE | URGENT |
+| SSEP (somatosensory evoked potentials) (CPT 95925) | Perform at >=72h post-ROSC after rewarming and sedation washout. Bilateral absence of N20 cortical responses is one of the most reliable poor prognostic indicators (FPR <1%) | Bilateral N20 present = good sign. Bilateral N20 absent = poor prognosis (FPR ~0-1% per AAN). N20 amplitude <0.62 uV also predictive | None absolute; requires cooperative technician and reduced electrical interference | - | URGENT | - | URGENT |
+| CT head with quantitative GWR measurement | At 24-48h post-ROSC; measure gray-white matter ratio at basal ganglia level and centrum semiovale | GWR <1.10 at caudate nucleus level at 24-48h predicts poor outcome (FPR <5%). Diffuse sulcal effacement, absent basal cisterns, loss of differentiation | Pregnancy (benefit outweighs risk) | - | URGENT | - | URGENT |
+| MR spectroscopy (CPT 76390) | If available; assess metabolic injury severity | Reduced NAA/Cr ratio; elevated lactate peak = poor prognosis | Pacemaker (non-MRI-conditional); hemodynamic instability | - | EXT | - | EXT |
+| Cardiac MRI (CPT 75557) | After stabilization; assess myocardial injury, cardiomyopathy, fibrosis, ARVC | Structural/ischemic etiology of arrest; myocardial viability | Pacemaker (non-MRI-conditional); hemodynamic instability | - | ROUTINE | ROUTINE | - |
 
 ### 2C. Rare/Specialized
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT angiography coronary (CPT 75574) | URGENT | ROUTINE | - | URGENT | If catheterization deferred or non-STEMI; non-invasive coronary evaluation | Coronary disease; anomalous coronary artery | Contrast allergy; renal impairment |
-| Electrophysiology study (EPS) (CPT 93620) | - | - | ROUTINE | - | After recovery; if arrhythmic etiology suspected and ICD consideration | Inducible VT/VF; risk stratification for ICD | Hemodynamic instability |
-| Brain CT perfusion (CPT 0042T) | - | EXT | - | EXT | Research context; assess global cerebral perfusion | Absent cortical perfusion predicts poor outcome | Contrast allergy |
-| PET brain (FDG) (CPT 78608) | - | - | EXT | - | Research/rare context; cortical metabolic assessment | Absent cortical metabolism | Pregnancy |
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
+| CT angiography coronary (CPT 75574) | If catheterization deferred or non-STEMI; non-invasive coronary evaluation | Coronary disease; anomalous coronary artery | Contrast allergy; renal impairment | URGENT | ROUTINE | - | URGENT |
+| Electrophysiology study (EPS) (CPT 93620) | After recovery; if arrhythmic etiology suspected and ICD consideration | Inducible VT/VF; risk stratification for ICD | Hemodynamic instability | - | - | ROUTINE | - |
+| Brain CT perfusion (CPT 0042T) | Research context; assess global cerebral perfusion | Absent cortical perfusion predicts poor outcome | Contrast allergy | - | EXT | - | EXT |
+| PET brain (FDG) (CPT 78608) | Research/rare context; cortical metabolic assessment | Absent cortical metabolism | Pregnancy | - | - | EXT | - |
 
 ---
 
@@ -158,59 +159,59 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Targeted Temperature Management (TTM) — cooling to 32-36C | IV/External | ALL comatose cardiac arrest survivors (GCS motor <6 after ROSC). TTM2 trial: no difference between 33C vs 36C; both superior to fever. AHA/ILCOR 2020: target 32-36C for at least 24h | Initiate cooling ASAP post-ROSC; use surface (Arctic Sun) or intravascular (Thermogard) cooling. Target temperature within 4h. Maintain for at least 24h. Rewarm at 0.25C/h (avoid >0.5C/h). Prevent fever (<37.7C) for at least 72h after ROSC | Active hemorrhage (relative); refractory cardiogenic shock (relative); terminal illness (relative) | Core temperature (esophageal or bladder probe) continuously; shivering assessment (BSAS) q1h; electrolytes (K, Mg, Ca, Phos) q4-6h during cooling; coagulation q12h; skin checks q4h for surface cooling | STAT | STAT | - | STAT |
-| Shivering management: Meperidine (Demerol) | IV | Shivering during TTM (counterproductive; increases metabolic demand and defeats cooling) | 25-50 mg PRN :: IV :: q4h :: 25-50 mg IV q4h PRN shivering; first-line anti-shivering agent | MAOIs; seizure disorder (lowers threshold); renal impairment (normeperidine accumulation) | Shivering scale (BSAS); sedation; respiratory status | - | - | - | STAT |
-| Shivering management: Buspirone | PO/NG | Adjunctive anti-shivering during TTM | 30 mg :: PO :: q8h :: 30 mg PO/NG q8h; lowers shivering threshold by 0.7C | MAOIs | Shivering scale | - | - | - | ROUTINE |
-| Shivering management: Magnesium sulfate | IV | Adjunctive anti-shivering; lowers shivering threshold and seizure threshold | 2-4 g :: IV :: once :: 2-4 g IV bolus then 1-2 g/h infusion; target Mg 3-4 mg/dL | Renal failure (accumulation); severe bradycardia | Mg level q4-6h; deep tendon reflexes; HR | - | - | - | STAT |
-| Neuromuscular blockade: Cisatracurium | IV | Refractory shivering despite first-line measures during TTM; note: obscures clinical exam and must be discontinued well before prognostication | 0.15 mg/kg bolus :: IV :: then infusion :: 0.15 mg/kg IV bolus, then 1-3 mcg/kg/min infusion; titrate to train-of-four 1-2/4 | Caution in myasthenia gravis | Train-of-four (TOF) q4h; cEEG mandatory when paralyzed (seizures undetectable clinically) | - | - | - | STAT |
-| Hemodynamic support: Norepinephrine | IV | Post-arrest myocardial dysfunction with MAP <65 mmHg; first-line vasopressor for post-arrest shock | 0.1-0.5 mcg/kg/min :: IV :: infusion :: Start 0.05-0.1 mcg/kg/min; titrate to MAP >65 (or >80 if signs of cerebral hypoperfusion); max 2 mcg/kg/min | Peripheral line extravasation (central access preferred) | Arterial line BP; MAP; urine output; lactate q4-6h | STAT | STAT | - | STAT |
-| Hemodynamic support: Dobutamine | IV | Post-arrest cardiogenic shock with reduced EF (<30%); augment cardiac output when vasopressors alone insufficient | 2.5-20 mcg/kg/min :: IV :: infusion :: Start 2.5 mcg/kg/min; titrate to cardiac output and MAP; consider with echo guidance | LVOT obstruction; severe tachyarrhythmia | HR; BP; cardiac output (echo or PA catheter); arrhythmia | - | - | - | STAT |
-| Hemodynamic support: Vasopressin | IV | Adjunctive vasopressor for refractory hypotension when norepinephrine dose >0.3 mcg/kg/min | 0.01-0.04 units/min :: IV :: infusion :: 0.01-0.04 units/min; does not titrate above 0.04 | Digital ischemia (relative); peripheral vascular disease | MAP; urine output; peripheral perfusion; serum Na | - | - | - | STAT |
-| Seizure treatment: Levetiracetam | IV | First-line for post-anoxic seizures and NCSE (common in 10-30% of comatose post-arrest patients). Treat all electrographic seizures aggressively | 1000-1500 mg BID :: IV :: BID :: 1000-1500 mg IV load; then 500-1000 mg IV BID; transition to PO when able. No hepatic metabolism; minimal drug interactions | Severe renal impairment (dose adjust for CrCl <30) | cEEG; renal function; seizure recurrence | STAT | STAT | - | STAT |
-| Seizure treatment: Valproic acid (Depakote) | IV | Second-line for post-anoxic seizures; add if seizures refractory to levetiracetam | 20-40 mg/kg IV load; 500 mg BID :: IV :: BID :: 20-40 mg/kg IV load over 15 min (max 3000 mg); then 500 mg IV q12h; target level 50-100 ug/mL | Hepatic failure; mitochondrial disease (Alpers); pregnancy (teratogenic); thrombocytopenia | LFTs; ammonia; CBC; drug level; pancreatitis symptoms | STAT | STAT | - | STAT |
-| Glucose management: Regular insulin | IV | Hyperglycemia (>180 mg/dL); target 140-180 mg/dL; avoid hypoglycemia (<70 mg/dL) which worsens neurologic injury | Insulin drip per ICU protocol :: IV :: infusion :: Continuous insulin infusion titrated to BG 140-180; transition to sliding scale when hemodynamically stable and tolerating nutrition | Hypoglycemia risk | BG q1h while on drip; q4-6h on sliding scale; potassium with each BG | STAT | STAT | - | STAT |
-| Mechanical ventilation optimization | - | ALL intubated post-arrest patients; target normoxia and normocapnia | Target PaO2 75-100 mmHg (avoid hyperoxia PaO2 >300); PaCO2 35-45 mmHg (avoid hypo/hypercapnia); PEEP as needed | N/A | ABG q4-6h during active TTM; SpO2 continuous; EtCO2 continuous | STAT | STAT | - | STAT |
+| Targeted Temperature Management (TTM) — cooling to 32-36C | IV/External | ALL comatose cardiac arrest survivors (GCS motor <6 after ROSC). TTM2 trial: no difference between 33C vs 36C; both superior to fever. AHA/ILCOR 2020: target 32-36C for at least 24h | 32-36C :: external/IV :: continuous x 24h :: Initiate cooling ASAP post-ROSC; use surface (Arctic Sun) or intravascular (Thermogard) cooling; target temperature within 4h; maintain for at least 24h; rewarm at 0.25C/h (avoid >0.5C/h); prevent fever (<37.7C) for at least 72h after ROSC | Active hemorrhage (relative); refractory cardiogenic shock (relative); terminal illness (relative) | Core temperature (esophageal or bladder probe) continuously; shivering assessment (BSAS) q1h; electrolytes (K, Mg, Ca, Phos) q4-6h during cooling; coagulation q12h; skin checks q4h for surface cooling | STAT | STAT | - | STAT |
+| Meperidine (Demerol) | IV | Shivering during TTM (counterproductive; increases metabolic demand and defeats cooling); first-line anti-shivering agent | 25-50 mg :: IV :: q4h PRN :: 25-50 mg IV q4h PRN shivering; first-line anti-shivering agent | MAOIs; seizure disorder (lowers threshold); renal impairment (normeperidine accumulation) | Shivering scale (BSAS); sedation; respiratory status | - | - | - | STAT |
+| Buspirone | PO/NG | Adjunctive anti-shivering during TTM; lowers shivering threshold by 0.7C | 30 mg :: PO :: q8h :: 30 mg PO/NG q8h; lowers shivering threshold by 0.7C | MAOIs | Shivering scale | - | - | - | ROUTINE |
+| Magnesium sulfate | IV | Adjunctive anti-shivering; lowers shivering threshold and seizure threshold | 2-4 g :: IV :: bolus then infusion :: 2-4 g IV bolus then 1-2 g/h infusion; target Mg 3-4 mg/dL | Renal failure (accumulation); severe bradycardia | Mg level q4-6h; deep tendon reflexes; HR | - | - | - | STAT |
+| Cisatracurium | IV | Refractory shivering despite first-line measures during TTM; note: obscures clinical exam and must be discontinued well before prognostication | 0.15 mg/kg :: IV :: bolus then infusion :: 0.15 mg/kg IV bolus, then 1-3 mcg/kg/min infusion; titrate to train-of-four 1-2/4 | Caution in myasthenia gravis | Train-of-four (TOF) q4h; cEEG mandatory when paralyzed (seizures undetectable clinically) | - | - | - | STAT |
+| Norepinephrine | IV | Post-arrest myocardial dysfunction with MAP <65 mmHg; first-line vasopressor for post-arrest shock | 0.1-0.5 mcg/kg/min :: IV :: infusion :: Start 0.05-0.1 mcg/kg/min; titrate to MAP >65 (or >80 if signs of cerebral hypoperfusion); max 2 mcg/kg/min | Peripheral line extravasation (central access preferred) | Arterial line BP; MAP; urine output; lactate q4-6h | STAT | STAT | - | STAT |
+| Dobutamine | IV | Post-arrest cardiogenic shock with reduced EF (<30%); augment cardiac output when vasopressors alone insufficient | 2.5-20 mcg/kg/min :: IV :: infusion :: Start 2.5 mcg/kg/min; titrate to cardiac output and MAP; consider with echo guidance | LVOT obstruction; severe tachyarrhythmia | HR; BP; cardiac output (echo or PA catheter); arrhythmia | - | - | - | STAT |
+| Vasopressin | IV | Adjunctive vasopressor for refractory hypotension when norepinephrine dose >0.3 mcg/kg/min | 0.01-0.04 units/min :: IV :: infusion :: 0.01-0.04 units/min; does not titrate above 0.04 | Digital ischemia (relative); peripheral vascular disease | MAP; urine output; peripheral perfusion; serum Na | - | - | - | STAT |
+| Levetiracetam | IV | First-line for post-anoxic seizures and NCSE (common in 10-30% of comatose post-arrest patients); treat all electrographic seizures aggressively | 1000-1500 mg :: IV :: BID :: 1000-1500 mg IV load; then 500-1000 mg IV BID; transition to PO when able; no hepatic metabolism; minimal drug interactions | Severe renal impairment (dose adjust for CrCl <30) | cEEG; renal function; seizure recurrence | STAT | STAT | - | STAT |
+| Valproic acid (Depakote) | IV | Second-line for post-anoxic seizures; add if seizures refractory to levetiracetam | 20-40 mg/kg :: IV :: load then BID :: 20-40 mg/kg IV load over 15 min (max 3000 mg); then 500 mg IV q12h; target level 50-100 ug/mL | Hepatic failure; mitochondrial disease (Alpers); pregnancy (teratogenic); thrombocytopenia | LFTs; ammonia; CBC; drug level; pancreatitis symptoms | STAT | STAT | - | STAT |
+| Regular insulin | IV | Hyperglycemia (>180 mg/dL); target 140-180 mg/dL; avoid hypoglycemia (<70 mg/dL) which worsens neurologic injury | per protocol :: IV :: infusion :: Continuous insulin infusion titrated to BG 140-180; transition to sliding scale when hemodynamically stable and tolerating nutrition | Hypoglycemia risk | BG q1h while on drip; q4-6h on sliding scale; potassium with each BG | STAT | STAT | - | STAT |
+| Mechanical ventilation optimization | - | ALL intubated post-arrest patients; target normoxia and normocapnia | per protocol :: - :: continuous :: Target PaO2 75-100 mmHg (avoid hyperoxia PaO2 >300); PaCO2 35-45 mmHg (avoid hypo/hypercapnia); PEEP as needed | N/A | ABG q4-6h during active TTM; SpO2 continuous; EtCO2 continuous | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Sedation: Propofol | IV | Sedation during TTM; additional anti-seizure properties; preferred for shorter-acting effect facilitating neurological assessment | 5-80 mcg/kg/min :: IV :: infusion :: 5-50 mcg/kg/min; titrate to RASS -4 to -5 during active TTM; wean after rewarming | Propofol infusion syndrome risk (monitor for metabolic acidosis, rhabdomyolysis, hypertriglyceridemia if >48h at high doses >70 mcg/kg/min); egg/soy allergy | Triglycerides q24h; CK if prolonged use; RASS; cEEG | - | - | - | STAT |
-| Sedation: Fentanyl | IV | Analgesia and sedation during TTM; preferred analgesic during hypothermia (hepatic metabolism reduced) | 25-200 mcg/h :: IV :: infusion :: 25-100 mcg/h continuous infusion; titrate to RASS target; bolus 25-50 mcg PRN | Respiratory depression (ventilated patients); severe hepatic impairment | RASS; respiratory rate (if not ventilated); bowel function | - | - | - | STAT |
-| Sedation: Midazolam | IV | Alternative/adjunctive sedation if propofol contraindicated; anti-seizure properties | 0.02-0.1 mg/kg/h :: IV :: infusion :: 0.02-0.1 mg/kg/h continuous; accumulates with prolonged use; prolongs sedation washout (confounder for prognostication) | Severe hepatic impairment; prolonged use delays prognostication | RASS; cEEG; watch for prolonged effect delaying prognostication | - | - | - | STAT |
-| Acetaminophen | IV | Fever prevention and treatment post-TTM; target normothermia (<37.7C) for at least 72h post-ROSC | 650-1000 mg q6h :: IV :: q6h :: 1000 mg IV q6h scheduled (not PRN); max 4g/day | Severe hepatic impairment | Temperature q4h; LFTs | - | STAT | - | STAT |
-| Pantoprazole | IV | GI stress ulcer prophylaxis; post-arrest patients at high risk | 40 mg daily :: IV :: daily :: 40 mg IV daily; transition to PO when tolerating | C. difficile risk with prolonged use | GI symptoms | - | ROUTINE | - | ROUTINE |
-| Enoxaparin | SC | DVT prophylaxis; immobilized comatose patients at high VTE risk; start after active hemorrhage excluded and hemostasis adequate | 40 mg daily :: SC :: daily :: 40 mg SC daily; start 24-48h post-ROSC if no active bleeding | Active hemorrhage; platelet count <50,000; DIC | Platelet count; signs of bleeding; anti-Xa level if renal impairment | - | ROUTINE | - | ROUTINE |
-| Pneumatic compression devices | - | DVT prophylaxis; start IMMEDIATELY in all post-arrest patients | Apply bilaterally on admission; maintain continuously when not ambulating | Active DVT; skin breakdown | Skin checks; compliance | STAT | STAT | - | STAT |
-| Myoclonus treatment: Clonazepam | PO/NG | Post-anoxic myoclonus (both early status myoclonus and Lance-Adams syndrome); first-line for myoclonus suppression | 0.5 mg BID; 1 mg BID; 2 mg TID :: PO :: BID-TID :: Start 0.5 mg PO BID; titrate by 0.5 mg q3d to effect; max 6 mg/day | Severe respiratory depression (non-ventilated); severe hepatic impairment | Sedation; respiratory status; swallowing function | - | ROUTINE | ROUTINE | ROUTINE |
-| Myoclonus treatment: Valproic acid | PO/IV | Post-anoxic myoclonus (adjunctive or alternative to clonazepam) | 250 mg BID; 500 mg BID; 750 mg TID :: PO :: BID-TID :: Start 250 mg PO BID; titrate to 500-1000 mg TID; target level 50-100 ug/mL | Hepatic failure; mitochondrial disease; pregnancy | LFTs; ammonia; CBC; drug level | - | ROUTINE | ROUTINE | ROUTINE |
-| Myoclonus treatment: Levetiracetam | PO/IV | Post-anoxic myoclonus (adjunctive; less effective as monotherapy for myoclonus than clonazepam) | 500 mg BID; 1000 mg BID; 1500 mg BID :: PO :: BID :: Start 500 mg PO BID; titrate to 1000-1500 mg BID | Severe renal impairment (dose adjust) | Behavioral changes; renal function | - | ROUTINE | ROUTINE | ROUTINE |
+| Propofol | IV | Sedation during TTM; additional anti-seizure properties; preferred for shorter-acting effect facilitating neurological assessment | 5-80 mcg/kg/min :: IV :: infusion :: 5-50 mcg/kg/min; titrate to RASS -4 to -5 during active TTM; wean after rewarming | Propofol infusion syndrome risk (monitor for metabolic acidosis, rhabdomyolysis, hypertriglyceridemia if >48h at high doses >70 mcg/kg/min); egg/soy allergy | Triglycerides q24h; CK if prolonged use; RASS; cEEG | - | - | - | STAT |
+| Fentanyl | IV | Analgesia and sedation during TTM; preferred analgesic during hypothermia (hepatic metabolism reduced) | 25-200 mcg/h :: IV :: infusion :: 25-100 mcg/h continuous infusion; titrate to RASS target; bolus 25-50 mcg PRN | Respiratory depression (ventilated patients); severe hepatic impairment | RASS; respiratory rate (if not ventilated); bowel function | - | - | - | STAT |
+| Midazolam | IV | Alternative/adjunctive sedation if propofol contraindicated; anti-seizure properties | 0.02-0.1 mg/kg/h :: IV :: infusion :: 0.02-0.1 mg/kg/h continuous; accumulates with prolonged use; prolongs sedation washout (confounder for prognostication) | Severe hepatic impairment; prolonged use delays prognostication | RASS; cEEG; watch for prolonged effect delaying prognostication | - | - | - | STAT |
+| Acetaminophen | IV | Fever prevention and treatment post-TTM; target normothermia (<37.7C) for at least 72h post-ROSC | 1000 mg :: IV :: q6h :: 1000 mg IV q6h scheduled (not PRN); max 4g/day | Severe hepatic impairment | Temperature q4h; LFTs | - | STAT | - | STAT |
+| Pantoprazole | IV | GI stress ulcer prophylaxis; post-arrest patients at high risk | 40 mg :: IV :: daily :: 40 mg IV daily; transition to PO when tolerating | C. difficile risk with prolonged use | GI symptoms | - | ROUTINE | - | ROUTINE |
+| Enoxaparin | SC | DVT prophylaxis; immobilized comatose patients at high VTE risk; start after active hemorrhage excluded and hemostasis adequate | 40 mg :: SC :: daily :: 40 mg SC daily; start 24-48h post-ROSC if no active bleeding | Active hemorrhage; platelet count <50,000; DIC | Platelet count; signs of bleeding; anti-Xa level if renal impairment | - | ROUTINE | - | ROUTINE |
+| Pneumatic compression devices | External | DVT prophylaxis; start IMMEDIATELY in all post-arrest patients | apply bilaterally :: external :: continuous :: Apply bilaterally on admission; maintain continuously when not ambulating | Active DVT; skin breakdown | Skin checks; compliance | STAT | STAT | - | STAT |
+| Clonazepam | PO/NG | Post-anoxic myoclonus (both early status myoclonus and Lance-Adams syndrome); first-line for myoclonus suppression | 0.5 mg :: PO :: BID :: Start 0.5 mg PO BID; titrate by 0.5 mg q3d to effect; max 6 mg/day | Severe respiratory depression (non-ventilated); severe hepatic impairment | Sedation; respiratory status; swallowing function | - | ROUTINE | ROUTINE | ROUTINE |
+| Valproic acid (myoclonus) | PO/IV | Post-anoxic myoclonus (adjunctive or alternative to clonazepam) | 250 mg :: PO :: BID :: Start 250 mg PO BID; titrate to 500-1000 mg TID; target level 50-100 ug/mL | Hepatic failure; mitochondrial disease; pregnancy | LFTs; ammonia; CBC; drug level | - | ROUTINE | ROUTINE | ROUTINE |
+| Levetiracetam (myoclonus) | PO/IV | Post-anoxic myoclonus (adjunctive; less effective as monotherapy for myoclonus than clonazepam) | 500 mg :: PO :: BID :: Start 500 mg PO BID; titrate to 1000-1500 mg BID | Severe renal impairment (dose adjust) | Behavioral changes; renal function | - | ROUTINE | ROUTINE | ROUTINE |
 
 ### 3C. Second-line/Refractory
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Refractory seizures: Lacosamide | IV | Post-anoxic refractory seizures not controlled by levetiracetam and valproic acid | 200 mg IV load; 100 mg BID :: IV :: BID :: 200 mg IV load over 15 min; then 100-200 mg IV BID; target level 10-20 ug/mL | PR prolongation >200 ms; second/third-degree heart block; severe hepatic impairment | ECG (PR interval); cardiac rhythm | - | URGENT | - | URGENT |
-| Refractory seizures: Phenobarbital | IV | Refractory post-anoxic status epilepticus (third-line ASM) | 15-20 mg/kg IV load; 1-3 mg/kg/day :: IV :: daily :: 15-20 mg/kg IV load at 50-75 mg/min; then 1-3 mg/kg/day maintenance; target level 20-40 ug/mL | Severe respiratory depression (intubated patients only); acute intermittent porphyria | Drug level; respiratory status; BP (causes hypotension); sedation | - | - | - | STAT |
-| Refractory status epilepticus: Midazolam infusion | IV | Continuous seizure activity despite two ASMs (refractory status epilepticus protocol) | 0.2 mg/kg bolus; 0.1-2 mg/kg/h infusion :: IV :: infusion :: 0.2 mg/kg IV bolus, then start 0.1 mg/kg/h; titrate q15min by 0.1 mg/kg/h to EEG seizure suppression or burst-suppression; max 2 mg/kg/h | Hemodynamic instability (may worsen) | cEEG mandatory; BP; vasopressor requirements | - | - | - | STAT |
-| Refractory status epilepticus: Pentobarbital | IV | Super-refractory post-anoxic status epilepticus (when midazolam/propofol infusions fail) | 5 mg/kg IV load; 1-5 mg/kg/h :: IV :: infusion :: 5 mg/kg IV load over 1h (may repeat 5 mg/kg boluses); maintenance 1-5 mg/kg/h; titrate to burst-suppression on cEEG | Hemodynamic instability (severe myocardial depression); porphyria | cEEG; arterial line; vasopressors (nearly always required); ileus; temperature (poikilothermia) | - | - | - | STAT |
-| Refractory status epilepticus: Ketamine | IV | Adjunctive for refractory post-anoxic seizures; NMDA antagonism addresses late-stage glutamate excitotoxicity | 1-2 mg/kg IV bolus; 1-5 mg/kg/h :: IV :: infusion :: 1-2 mg/kg IV bolus; then 1-5 mg/kg/h infusion; titrate to cEEG | Elevated ICP (relative — disputed); severe hypertension | cEEG; BP (may increase); HR; oral secretions | - | - | - | STAT |
-| Cerebral edema: Mannitol 20% | IV | Elevated ICP with clinical signs of herniation (post-anoxic cerebral edema); acute temporizing measure | 1-1.5 g/kg bolus :: IV :: once :: 1-1.5 g/kg IV bolus for acute herniation; 0.25-0.5 g/kg q4-6h maintenance | Anuria; serum osmolality >320 | Serum osmolality q4-6h; Cr; urine output | - | - | - | STAT |
-| Cerebral edema: Hypertonic saline 23.4% | IV | Acute herniation from post-anoxic cerebral edema; requires central venous access | 30 mL bolus :: IV :: once :: 30 mL IV via central line over 10-20 min for acute herniation | No central access; hypernatremia >160 | Na q4-6h; osmolality | - | - | - | STAT |
-| Cerebral edema: Hypertonic saline 3% | IV | ICP management; less emergent than 23.4%; can give via peripheral line | 150-500 mL bolus :: IV :: once :: 150-500 mL bolus or 0.5-1 mL/kg/h continuous infusion; target Na 145-155 | Hypernatremia >160 | Na q4-6h; osmolality | - | - | - | STAT |
+| Lacosamide | IV | Post-anoxic refractory seizures not controlled by levetiracetam and valproic acid | 200 mg :: IV :: load then BID :: 200 mg IV load over 15 min; then 100-200 mg IV BID; target level 10-20 ug/mL | PR prolongation >200 ms; second/third-degree heart block; severe hepatic impairment | ECG (PR interval); cardiac rhythm | - | URGENT | - | URGENT |
+| Phenobarbital | IV | Refractory post-anoxic status epilepticus (third-line ASM) | 15-20 mg/kg :: IV :: load then daily :: 15-20 mg/kg IV load at 50-75 mg/min; then 1-3 mg/kg/day maintenance; target level 20-40 ug/mL | Severe respiratory depression (intubated patients only); acute intermittent porphyria | Drug level; respiratory status; BP (causes hypotension); sedation | - | - | - | STAT |
+| Midazolam infusion (RSE) | IV | Continuous seizure activity despite two ASMs (refractory status epilepticus protocol) | 0.2 mg/kg :: IV :: bolus then infusion :: 0.2 mg/kg IV bolus, then start 0.1 mg/kg/h; titrate q15min by 0.1 mg/kg/h to EEG seizure suppression or burst-suppression; max 2 mg/kg/h | Hemodynamic instability (may worsen) | cEEG mandatory; BP; vasopressor requirements | - | - | - | STAT |
+| Pentobarbital | IV | Super-refractory post-anoxic status epilepticus (when midazolam/propofol infusions fail) | 5 mg/kg :: IV :: load then infusion :: 5 mg/kg IV load over 1h (may repeat 5 mg/kg boluses); maintenance 1-5 mg/kg/h; titrate to burst-suppression on cEEG | Hemodynamic instability (severe myocardial depression); porphyria | cEEG; arterial line; vasopressors (nearly always required); ileus; temperature (poikilothermia) | - | - | - | STAT |
+| Ketamine | IV | Adjunctive for refractory post-anoxic seizures; NMDA antagonism addresses late-stage glutamate excitotoxicity | 1-2 mg/kg :: IV :: bolus then infusion :: 1-2 mg/kg IV bolus; then 1-5 mg/kg/h infusion; titrate to cEEG | Elevated ICP (relative — disputed); severe hypertension | cEEG; BP (may increase); HR; oral secretions | - | - | - | STAT |
+| Mannitol 20% | IV | Elevated ICP with clinical signs of herniation (post-anoxic cerebral edema); acute temporizing measure | 1-1.5 g/kg :: IV :: bolus :: 1-1.5 g/kg IV bolus for acute herniation; 0.25-0.5 g/kg q4-6h maintenance | Anuria; serum osmolality >320 | Serum osmolality q4-6h; Cr; urine output | - | - | - | STAT |
+| Hypertonic saline 23.4% | IV | Acute herniation from post-anoxic cerebral edema; requires central venous access | 30 mL :: IV :: bolus :: 30 mL IV via central line over 10-20 min for acute herniation | No central access; hypernatremia >160 | Na q4-6h; osmolality | - | - | - | STAT |
+| Hypertonic saline 3% | IV | ICP management; less emergent than 23.4%; can give via peripheral line | 150-500 mL :: IV :: bolus or infusion :: 150-500 mL bolus or 0.5-1 mL/kg/h continuous infusion; target Na 145-155 | Hypernatremia >160 | Na q4-6h; osmolality | - | - | - | STAT |
 
 ### 3D. Chronic/Rehabilitation Therapies (Survivors)
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
 | ICD (implantable cardioverter-defibrillator) | Procedure | Secondary prevention of sudden cardiac death in survivors with cardiac etiology and EF <=35% (or per electrophysiology study); typically implanted before discharge or at 40 days post-MI | Per cardiology/electrophysiology; ICD vs S-ICD per anatomy | Cardiac workup complete; EF assessment; electrophysiology study if indicated; shared decision-making | Active infection; terminal illness with <1yr life expectancy | Device checks q3-6 months; wound; inappropriate shocks | - | ROUTINE | ROUTINE | - |
-| Amantadine | PO | Arousal promotion in patients with disorders of consciousness (vegetative state/minimally conscious state); accelerates functional recovery | 100 mg BID :: PO :: BID :: 100 mg PO BID (via NG if needed); increase to 200 mg BID; give before noon to avoid insomnia | Renal impairment (dose adjust); seizure history (relative — lowers threshold) | Renal function; seizure activity; livedo reticularis; hallucinations | - | ROUTINE | ROUTINE | ROUTINE |
-| Sertraline | PO | Depression and emotional lability in ABI survivors; common post-anoxic complication | 25 mg daily; 50 mg daily; 100 mg daily :: PO :: daily :: Start 25 mg PO daily; increase by 25 mg q1-2 weeks; max 200 mg daily | MAOIs; QT prolongation | Suicidality; serotonin syndrome signs; QTc if risk factors | - | ROUTINE | ROUTINE | - |
-| Methylphenidate | PO | Cognitive impairment and attention deficits in ABI survivors; post-anoxic apathy/abulia | 5 mg BID; 10 mg BID; 20 mg BID :: PO :: BID :: Start 5 mg PO BID (morning and noon); titrate by 5 mg q3-5 days; max 60 mg/day; avoid afternoon dosing | Uncontrolled hypertension; severe anxiety; cardiac arrhythmia; psychosis | HR; BP; appetite; sleep; behavioral changes | - | ROUTINE | ROUTINE | - |
-| Modafinil | PO | Excessive daytime somnolence and fatigue in ABI survivors | 100 mg daily; 200 mg daily :: PO :: daily :: Start 100 mg PO daily in morning; increase to 200 mg; max 400 mg/day | Severe hepatic impairment; cardiac arrhythmia | BP; HR; sleep quality; mood | - | - | ROUTINE | - |
-| Baclofen | PO | Spasticity in ABI survivors with upper motor neuron signs; post-anoxic posturing or hypertonia | 5 mg TID; 10 mg TID; 20 mg TID :: PO :: TID :: Start 5 mg PO TID; titrate by 5 mg/dose q3d; max 80 mg/day; do not stop abruptly | Renal impairment (dose adjust); seizure risk (withdrawal) | Sedation; weakness; urinary retention | - | ROUTINE | ROUTINE | ROUTINE |
-| Tizanidine | PO | Spasticity alternative; post-anoxic hypertonia | 2 mg TID; 4 mg TID; 8 mg TID :: PO :: TID :: Start 2 mg PO TID; titrate by 2 mg q3-7d; max 36 mg/day | Hepatic impairment; concurrent CYP1A2 inhibitors (fluvoxamine, ciprofloxacin) | LFTs at baseline, 1mo, 3mo, 6mo; BP (hypotension); sedation | - | ROUTINE | ROUTINE | - |
-| Botulinum toxin type A (Botox) | IM | Focal spasticity in ABI survivors (upper or lower extremity) not responding to oral agents | Per muscle group :: IM :: q12 weeks :: Dose per target muscles; typical total 200-400 units; repeat q12 weeks; onset 3-7 days | Infection at injection site; neuromuscular junction disorder | Weakness (focal); dysphagia (if cervical muscles); antibody formation | - | - | ROUTINE | - |
+| Amantadine | PO | Arousal promotion in patients with disorders of consciousness (vegetative state/minimally conscious state); accelerates functional recovery | 100 mg :: PO :: BID :: 100 mg PO BID (via NG if needed); increase to 200 mg BID; give before noon to avoid insomnia | Baseline renal function; seizure history assessment | Renal impairment (dose adjust); seizure history (relative — lowers threshold) | Renal function; seizure activity; livedo reticularis; hallucinations | - | ROUTINE | ROUTINE | ROUTINE |
+| Sertraline | PO | Depression and emotional lability in ABI survivors; common post-anoxic complication | 25 mg :: PO :: daily :: Start 25 mg PO daily; increase by 25 mg q1-2 weeks; max 200 mg daily | Baseline ECG if cardiac risk factors | MAOIs; QT prolongation | Suicidality; serotonin syndrome signs; QTc if risk factors | - | ROUTINE | ROUTINE | - |
+| Methylphenidate | PO | Cognitive impairment and attention deficits in ABI survivors; post-anoxic apathy/abulia | 5 mg :: PO :: BID :: Start 5 mg PO BID (morning and noon); titrate by 5 mg q3-5 days; max 60 mg/day; avoid afternoon dosing | Baseline HR and BP; cardiac arrhythmia screen | Uncontrolled hypertension; severe anxiety; cardiac arrhythmia; psychosis | HR; BP; appetite; sleep; behavioral changes | - | ROUTINE | ROUTINE | - |
+| Modafinil | PO | Excessive daytime somnolence and fatigue in ABI survivors | 100 mg :: PO :: daily :: Start 100 mg PO daily in morning; increase to 200 mg; max 400 mg/day | Baseline hepatic function; cardiac screening | Severe hepatic impairment; cardiac arrhythmia | BP; HR; sleep quality; mood | - | - | ROUTINE | - |
+| Baclofen | PO | Spasticity in ABI survivors with upper motor neuron signs; post-anoxic posturing or hypertonia | 5 mg :: PO :: TID :: Start 5 mg PO TID; titrate by 5 mg/dose q3d; max 80 mg/day; do not stop abruptly | Baseline renal function | Renal impairment (dose adjust); seizure risk (withdrawal) | Sedation; weakness; urinary retention | - | ROUTINE | ROUTINE | ROUTINE |
+| Tizanidine | PO | Spasticity alternative; post-anoxic hypertonia | 2 mg :: PO :: TID :: Start 2 mg PO TID; titrate by 2 mg q3-7d; max 36 mg/day | Baseline LFTs; avoid concurrent CYP1A2 inhibitors | Hepatic impairment; concurrent CYP1A2 inhibitors (fluvoxamine, ciprofloxacin) | LFTs at baseline, 1mo, 3mo, 6mo; BP (hypotension); sedation | - | ROUTINE | ROUTINE | - |
+| Botulinum toxin type A (Botox) | IM | Focal spasticity in ABI survivors (upper or lower extremity) not responding to oral agents | per muscle group :: IM :: q12 weeks :: Dose per target muscles; typical total 200-400 units; repeat q12 weeks; onset 3-7 days | Muscle selection by trained provider; identify target muscles with ultrasound/EMG guidance | Infection at injection site; neuromuscular junction disorder | Weakness (focal); dysphagia (if cervical muscles); antibody formation | - | - | ROUTINE | - |
 
 ---
 
@@ -236,38 +237,38 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient / Family Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Explain that anoxic brain injury occurs because the brain was deprived of oxygen during cardiac arrest and that recovery is unpredictable in the first 72 hours | STAT | ROUTINE | ROUTINE |
-| Reassure family that targeted temperature management (cooling) is a standard evidence-based treatment and that the patient appears deeply sedated because of medications and cooling, not necessarily because of brain injury severity | STAT | ROUTINE | - |
-| Explain that formal neuroprognostication will not occur until at least 72 hours after rewarming because sedation and hypothermia confound the neurological exam | - | ROUTINE | - |
-| Inform family that neuroprognostication uses multiple tests together (exam, EEG, SSEP, MRI, blood tests) and that no single test alone determines outcome | - | ROUTINE | - |
-| If poor prognosis confirmed through multimodal testing, discuss goals of care including comfort care, withdrawal of life-sustaining treatment, and organ donation in a compassionate and unhurried manner | - | ROUTINE | - |
-| For survivors: explain that recovery from anoxic brain injury is a prolonged process (months to years); cognitive, emotional, and physical deficits are common; and rehabilitation is essential | - | ROUTINE | ROUTINE |
-| For survivors: report immediately if new seizures (shaking, staring, confusion), worsening weakness, difficulty swallowing, or significant mood changes occur as these may indicate complications requiring treatment adjustment | - | ROUTINE | ROUTINE |
-| For survivors: do not drive until formally cleared by neurology due to risk of seizures and cognitive impairment following anoxic brain injury | - | ROUTINE | ROUTINE |
-| Provide written information about cardiac arrest survivors support groups and brain injury advocacy organizations (Brain Injury Association of America, Sudden Cardiac Arrest Foundation) | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Explain that anoxic brain injury occurs because the brain was deprived of oxygen during cardiac arrest and that recovery is unpredictable in the first 72 hours | STAT | ROUTINE | ROUTINE | STAT |
+| Reassure family that targeted temperature management (cooling) is a standard evidence-based treatment and that the patient appears deeply sedated because of medications and cooling, not necessarily because of brain injury severity | STAT | ROUTINE | - | STAT |
+| Explain that formal neuroprognostication will not occur until at least 72 hours after rewarming because sedation and hypothermia confound the neurological exam | - | ROUTINE | - | ROUTINE |
+| Inform family that neuroprognostication uses multiple tests together (exam, EEG, SSEP, MRI, blood tests) and that no single test alone determines outcome | - | ROUTINE | - | ROUTINE |
+| If poor prognosis confirmed through multimodal testing, discuss goals of care including comfort care, withdrawal of life-sustaining treatment, and organ donation in a compassionate and unhurried manner | - | ROUTINE | - | ROUTINE |
+| For survivors: explain that recovery from anoxic brain injury is a prolonged process (months to years); cognitive, emotional, and physical deficits are common; and rehabilitation is essential | - | ROUTINE | ROUTINE | ROUTINE |
+| For survivors: report immediately if new seizures (shaking, staring, confusion), worsening weakness, difficulty swallowing, or significant mood changes occur as these may indicate complications requiring treatment adjustment | - | ROUTINE | ROUTINE | ROUTINE |
+| For survivors: do not drive until formally cleared by neurology due to risk of seizures and cognitive impairment following anoxic brain injury | - | ROUTINE | ROUTINE | - |
+| Provide written information about cardiac arrest survivors support groups and brain injury advocacy organizations (Brain Injury Association of America, Sudden Cardiac Arrest Foundation) | - | ROUTINE | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Cardiac rehabilitation program enrollment for all cardiac arrest survivors to improve cardiovascular fitness and reduce recurrence risk | - | ROUTINE | ROUTINE |
-| Smoking cessation as smoking increases cardiac arrhythmia and recurrent arrest risk | - | ROUTINE | ROUTINE |
-| Strict medication adherence for cardiac medications (antiarrhythmics, beta-blockers, antiplatelets, statins) to prevent recurrent arrest | - | ROUTINE | ROUTINE |
-| Alcohol cessation or strict limitation to reduce cardiomyopathy progression and seizure threshold lowering | - | ROUTINE | ROUTINE |
-| Regular aerobic exercise (30 min moderate intensity 5 days/week) after cardiac rehabilitation clearance to improve cardiovascular outcomes | - | - | ROUTINE |
-| Mediterranean or DASH diet for cardiovascular risk reduction | - | ROUTINE | ROUTINE |
-| Blood pressure target <130/80 mmHg for cardiovascular risk reduction | - | ROUTINE | ROUTINE |
-| HbA1c target <7.0% for diabetic patients to reduce cardiovascular risk | - | ROUTINE | ROUTINE |
-| CPAP compliance if obstructive sleep apnea present as OSA increases arrhythmia and recurrent arrest risk | - | ROUTINE | ROUTINE |
-| Home AED (automated external defibrillator) placement for household members trained in BLS if patient at ongoing arrhythmia risk | - | - | ROUTINE |
-| Fall prevention program for ABI survivors with gait instability, cognitive impairment, or seizure risk | - | ROUTINE | ROUTINE |
-| Cognitive rehabilitation exercises (memory aids, structured routines, environmental modifications) for daily function optimization | - | - | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Cardiac rehabilitation program enrollment for all cardiac arrest survivors to improve cardiovascular fitness and reduce recurrence risk | - | ROUTINE | ROUTINE | - |
+| Smoking cessation as smoking increases cardiac arrhythmia and recurrent arrest risk | - | ROUTINE | ROUTINE | - |
+| Strict medication adherence for cardiac medications (antiarrhythmics, beta-blockers, antiplatelets, statins) to prevent recurrent arrest | - | ROUTINE | ROUTINE | - |
+| Alcohol cessation or strict limitation to reduce cardiomyopathy progression and seizure threshold lowering | - | ROUTINE | ROUTINE | - |
+| Regular aerobic exercise (30 min moderate intensity 5 days/week) after cardiac rehabilitation clearance to improve cardiovascular outcomes | - | - | ROUTINE | - |
+| Mediterranean or DASH diet for cardiovascular risk reduction | - | ROUTINE | ROUTINE | - |
+| Blood pressure target <130/80 mmHg for cardiovascular risk reduction | - | ROUTINE | ROUTINE | - |
+| HbA1c target <7.0% for diabetic patients to reduce cardiovascular risk | - | ROUTINE | ROUTINE | - |
+| CPAP compliance if obstructive sleep apnea present as OSA increases arrhythmia and recurrent arrest risk | - | ROUTINE | ROUTINE | - |
+| Home AED (automated external defibrillator) placement for household members trained in BLS if patient at ongoing arrhythmia risk | - | - | ROUTINE | - |
+| Fall prevention program for ABI survivors with gait instability, cognitive impairment, or seizure risk | - | ROUTINE | ROUTINE | - |
+| Cognitive rehabilitation exercises (memory aids, structured routines, environmental modifications) for daily function optimization | - | - | ROUTINE | - |
 
-===============================================================
+═══════════════════════════════════════════════════════════════
 SECTION B: REFERENCE (Expand as Needed)
-===============================================================
+═══════════════════════════════════════════════════════════════
 
 ## 5. DIFFERENTIAL DIAGNOSIS
 
@@ -287,21 +288,21 @@ SECTION B: REFERENCE (Expand as Needed)
 
 ## 6. MONITORING PARAMETERS
 
-| Parameter | ED | HOSP | OPD | ICU | Frequency | Target/Threshold | Action if Abnormal |
-|-----------|:--:|:----:|:---:|:---:|-----------|------------------|-------------------|
-| Core temperature (esophageal or bladder) | STAT | STAT | - | STAT | Continuous during TTM; q4h after rewarming | 32-36C during TTM; <37.7C for 72h post-ROSC | Adjust cooling device; anti-shivering protocol; investigate fever source |
-| Arterial blood pressure (arterial line preferred) | STAT | STAT | ROUTINE | STAT | Continuous (ICU); q15min (ED); q4h (OPD) | MAP >65 mmHg (>80 if cerebral hypoperfusion signs); avoid SBP <90 | Titrate vasopressors/inotropes; volume resuscitation; echo |
-| GCS / Neurologic exam | STAT | STAT | ROUTINE | STAT | q1h x 24h during TTM; q2h x 24h after rewarming; q4h thereafter; formal exam at >=72h after rewarming | Improvement in motor response; pupillary reactivity; brainstem reflexes | If declining: STAT CT; rule out new event; reassess prognostication |
-| Continuous EEG (cEEG) | - | STAT | - | STAT | Continuous x 48-72h minimum; longer if seizures detected | No seizures; improving background (continuous, reactive); absence of highly malignant patterns | Treat seizures aggressively; highly malignant pattern (suppression, burst-suppression without reactivity) is poor prognostic sign |
-| Blood glucose | STAT | STAT | ROUTINE | STAT | q1h during insulin drip; q4-6h on sliding scale | 140-180 mg/dL | Adjust insulin; avoid hypoglycemia <70 |
-| Serum electrolytes (K, Mg, Ca, Phos) | STAT | STAT | - | STAT | q4-6h during TTM (hypothermia causes intracellular K shift, hypomagnesemia); q12h after rewarming | K 4.0-4.5; Mg >2.0; Ca normal; Phos normal | Aggressive replacement; arrhythmia risk if uncorrected |
-| Lactate clearance | STAT | STAT | - | STAT | q4-6h until normal | <2 mmol/L; clearance >20% at 6h | Optimize perfusion; volume; vasopressors |
-| NSE (neuron-specific enolase) | - | URGENT | - | URGENT | At 24h, 48h, 72h post-ROSC; check for hemolysis (invalidates result) | <33 ug/L at 48-72h; rising trend unfavorable | Interpret as part of multimodal prognostication; >60 ug/L highly predictive of poor outcome |
-| Pupillary light reflex (including automated pupillometry if available) | STAT | STAT | ROUTINE | STAT | q1h during acute phase; formal assessment at >=72h after rewarming | Present and reactive; NPi >=3.0 on automated pupillometry | Absent at >=72h after rewarming is poor prognostic sign; automated pupillometry >quantitative; reduce confounder effect |
-| Serum sodium | - | ROUTINE | - | STAT | q6h during osmotherapy; q12h otherwise | 135-155 mEq/L (higher if on hypertonic saline) | Adjust osmotherapy; free water restriction vs replacement |
-| Serum osmolality | - | ROUTINE | - | STAT | q6h during mannitol therapy | <320 mOsm/kg; osmolar gap <10 | Hold mannitol if >320 |
-| Shivering assessment (BSAS) | - | - | - | STAT | q1h during TTM | BSAS 0 (no shivering) | Stepwise anti-shivering protocol |
-| ICP (if monitoring in place) | - | - | - | STAT | Continuous | ICP <22 mmHg; CPP 60-70 mmHg | Tiered ICP management; osmotherapy; sedation |
+| Parameter | Frequency | Target/Threshold | Action if Abnormal | ED | HOSP | OPD | ICU |
+|-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
+| Core temperature (esophageal or bladder) | Continuous during TTM; q4h after rewarming | 32-36C during TTM; <37.7C for 72h post-ROSC | Adjust cooling device; anti-shivering protocol; investigate fever source | STAT | STAT | - | STAT |
+| Arterial blood pressure (arterial line preferred) | Continuous (ICU); q15min (ED); q4h (OPD) | MAP >65 mmHg (>80 if cerebral hypoperfusion signs); avoid SBP <90 | Titrate vasopressors/inotropes; volume resuscitation; echo | STAT | STAT | ROUTINE | STAT |
+| GCS / Neurologic exam | q1h x 24h during TTM; q2h x 24h after rewarming; q4h thereafter; formal exam at >=72h after rewarming | Improvement in motor response; pupillary reactivity; brainstem reflexes | If declining: STAT CT; rule out new event; reassess prognostication | STAT | STAT | ROUTINE | STAT |
+| Continuous EEG (cEEG) | Continuous x 48-72h minimum; longer if seizures detected | No seizures; improving background (continuous, reactive); absence of highly malignant patterns | Treat seizures aggressively; highly malignant pattern (suppression, burst-suppression without reactivity) is poor prognostic sign | - | STAT | - | STAT |
+| Blood glucose | q1h during insulin drip; q4-6h on sliding scale | 140-180 mg/dL | Adjust insulin; avoid hypoglycemia <70 | STAT | STAT | ROUTINE | STAT |
+| Serum electrolytes (K, Mg, Ca, Phos) | q4-6h during TTM (hypothermia causes intracellular K shift, hypomagnesemia); q12h after rewarming | K 4.0-4.5; Mg >2.0; Ca normal; Phos normal | Aggressive replacement; arrhythmia risk if uncorrected | STAT | STAT | - | STAT |
+| Lactate clearance | q4-6h until normal | <2 mmol/L; clearance >20% at 6h | Optimize perfusion; volume; vasopressors | STAT | STAT | - | STAT |
+| NSE (neuron-specific enolase) | At 24h, 48h, 72h post-ROSC; check for hemolysis (invalidates result) | <33 ug/L at 48-72h; rising trend unfavorable | Interpret as part of multimodal prognostication; >60 ug/L highly predictive of poor outcome | - | URGENT | - | URGENT |
+| Pupillary light reflex (including automated pupillometry if available) | q1h during acute phase; formal assessment at >=72h after rewarming | Present and reactive; NPi >=3.0 on automated pupillometry | Absent at >=72h after rewarming is poor prognostic sign; automated pupillometry more quantitative; reduce confounder effect | STAT | STAT | ROUTINE | STAT |
+| Serum sodium | q6h during osmotherapy; q12h otherwise | 135-155 mEq/L (higher if on hypertonic saline) | Adjust osmotherapy; free water restriction vs replacement | - | ROUTINE | - | STAT |
+| Serum osmolality | q6h during mannitol therapy | <320 mOsm/kg; osmolar gap <10 | Hold mannitol if >320 | - | ROUTINE | - | STAT |
+| Shivering assessment (BSAS) | q1h during TTM | BSAS 0 (no shivering) | Stepwise anti-shivering protocol | - | - | - | STAT |
+| ICP (if monitoring in place) | Continuous | ICP <22 mmHg; CPP 60-70 mmHg | Tiered ICP management; osmotherapy; sedation | - | - | - | STAT |
 
 ## 7. DISPOSITION CRITERIA
 
@@ -442,6 +443,20 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Fixed column order in all lab tables (1A, 1B, 1C) to place venue columns (ED/HOSP/OPD/ICU) as last 4 columns per style guide
+- Fixed column order in all imaging tables (2A, 2B, 2C) to place venue columns as last 4 columns per style guide
+- Fixed column order in Section 6 Monitoring to place venue columns as last 4 columns per style guide
+- Standardized structured dosing format (dose :: route :: frequency :: instructions) across all treatment tables (3A, 3B, 3C, 3D)
+- Added OPD coverage for follow-up labs (CBC, CMP, glucose, Mg, Ca, Phos) in Section 1A for survivor clinic visits
+- Added ICU column to Sections 4B and 4C for setting consistency
+- Updated section dividers to Unicode box-drawing characters
+- Added Pre-Treatment Requirements to Section 3D medications (amantadine, sertraline, methylphenidate, modafinil, baclofen, tizanidine, botox)
+- Cleaned up treatment names to remove redundant section headers (e.g., "Shivering management:" prefix removed)
+- Fixed pneumatic compression devices Route column (was "-", now "External")
+- Added REVISED date to header metadata
+- Updated version to 1.1
 
 **v1.0 (January 30, 2026)**
 - Initial template creation
