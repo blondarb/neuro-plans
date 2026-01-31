@@ -22,7 +22,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| *(none)* | — | — | — | — |
+| Myotonic Dystrophy | `myotonic-dystrophy.md` | `pending` | — | 2026-01-31 |
+| Narcolepsy | `narcolepsy.md` | `pending` | — | 2026-01-31 |
+| Ataxia Evaluation | `ataxia-evaluation.md` | `pending` | — | 2026-01-31 |
+| Primary CNS Lymphoma | `primary-cns-lymphoma.md` | `pending` | — | 2026-01-31 |
+| Cervical Myelopathy | `cervical-myelopathy.md` | `pending` | — | 2026-01-31 |
 
 ---
 
