@@ -22,11 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| Inclusion Body Myositis | `inclusion-body-myositis.md` | `completed` | tier8 | 2026-01-30 |
-| Meningioma | `meningioma.md` | `completed` | tier8 | 2026-01-30 |
-| Psychogenic Non-Epileptic Spells (PNES) | `pnes.md` | `completed` | tier8 | 2026-01-30 |
-| Lyme Neuroborreliosis | `lyme-neuroborreliosis.md` | `completed` | tier8 | 2026-01-30 |
-| Stiff Person Syndrome | `stiff-person-syndrome.md` | `completed` | tier8 | 2026-01-30 |
+| *(none)* | — | — | — | — |
 
 ---
 
@@ -126,6 +122,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 90 | Inflammatory Myopathy (DM/PM) | [`inflammatory-myopathy.md`](../plans/inflammatory-myopathy.md) | 2026-01-30 | 90%+ |
 | 91 | B12 Deficiency Neuropathy | [`b12-deficiency-neuropathy.md`](../plans/b12-deficiency-neuropathy.md) | 2026-01-30 | 90%+ |
 | 92 | Neurosyphilis | [`neurosyphilis.md`](../plans/neurosyphilis.md) | 2026-01-30 | 90%+ |
+| 93 | Inclusion Body Myositis | [`inclusion-body-myositis.md`](../plans/inclusion-body-myositis.md) | 2026-01-30 | 90%+ |
+| 94 | Meningioma | [`meningioma.md`](../plans/meningioma.md) | 2026-01-30 | 90%+ |
+| 95 | Psychogenic Non-Epileptic Spells (PNES) | [`pnes.md`](../plans/pnes.md) | 2026-01-30 | 90%+ |
+| 96 | Lyme Neuroborreliosis | [`lyme-neuroborreliosis.md`](../plans/lyme-neuroborreliosis.md) | 2026-01-30 | 90%+ |
+| 97 | Stiff Person Syndrome | [`stiff-person-syndrome.md`](../plans/stiff-person-syndrome.md) | 2026-01-30 | 90%+ |
 
 ---
 
@@ -142,7 +143,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-01-30. Total approved: 92 plans.
+- Queue updated 2026-01-30. Total approved: 97 plans.
 
 ---
 

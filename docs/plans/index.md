@@ -56,6 +56,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Lambert-Eaton Syndrome](lambert-eaton-syndrome.md) | ED, HOSP, OPD, ICU | G73.1, C34.90, G70.80 |
 | [Critical Illness Myopathy/Neuropathy](critical-illness-myopathy-neuropathy.md) | ED, HOSP, OPD, ICU | G72.81, G62.81, M62.81 |
 | [Inflammatory Myopathy (DM/PM)](inflammatory-myopathy.md) | ED, HOSP, OPD, ICU | G72.41, M33.10, M33.20 |
+| [Inclusion Body Myositis](inclusion-body-myositis.md) | ED, HOSP, OPD | G72.41 |
 
 ---
 
@@ -71,6 +72,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Fungal Meningitis](fungal-meningitis.md) | ED, HOSP, OPD, ICU | G02, B45.1, B38.4 |
 | [Tuberculous Meningitis](tb-meningitis.md) | ED, HOSP, OPD, ICU | A17.0 |
 | [Neurosyphilis](neurosyphilis.md) | ED, HOSP, OPD, ICU | A52.2, A52.3, A52.13 |
+| [Lyme Neuroborreliosis](lyme-neuroborreliosis.md) | ED, HOSP, OPD | A69.22 |
 
 ---
 
@@ -93,6 +95,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Glioblastoma](glioblastoma.md) | ED, HOSP, OPD, ICU | C71.9, C71.0-C71.8 |
 | [Leptomeningeal Carcinomatosis](leptomeningeal-carcinomatosis.md) | ED, HOSP, OPD, ICU | C79.32, C79.49 |
 | [Paraneoplastic Neurological Syndrome](paraneoplastic-neurological-syndrome.md) | ED, HOSP, OPD, ICU | G13.0, G13.1 |
+| [Meningioma](meningioma.md) | ED, HOSP, OPD, ICU | D32.9 |
 
 ---
 
@@ -205,6 +208,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [Neurosarcoidosis](neurosarcoidosis.md) | ED, HOSP, OPD, ICU | D86.82, D86.89, G53 |
+| [Stiff Person Syndrome](stiff-person-syndrome.md) | ED, HOSP, OPD, ICU | G25.82 |
 
 ---
 
@@ -222,6 +226,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [Functional Neurological Disorder](functional-neurological-disorder.md) | ED, HOSP, OPD, ICU | F44.4, F44.5, F44.6, F44.7 |
+| [Psychogenic Non-Epileptic Spells (PNES)](pnes.md) | ED, HOSP, OPD | F44.5 |
 
 ---
 

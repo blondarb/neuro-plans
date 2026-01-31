@@ -9,7 +9,7 @@ title: Template Tracker
 **Created:** January 15, 2026
 **Last Updated:** January 30, 2026
 **Target:** 150+ validated templates
-**Current Status:** 92 templates approved
+**Current Status:** 97 templates approved
 
 ---
 
@@ -107,7 +107,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Neuromuscular Respiratory Failure | J96.00 | 🎯 OPD | Approved |
 | ✅ | Lambert-Eaton Myasthenic Syndrome (LEMS) | G73.1 | 🎯 OPD | Approved |
 | ✅ | Inflammatory Myopathy (Dermatomyositis/PM) | G72.41 | 🎯 OPD | Approved |
-| ⬜ | Inclusion Body Myositis (IBM) | G72.41 | 🎯 OPD | Refractory myopathy |
+| ✅ | Inclusion Body Myositis (IBM) | G72.41 | 🎯 OPD | Approved |
 | ⬜ | Muscular Dystrophy (Adult) | G71.0 | 🎯 OPD | Rare adult presentations |
 | ⬜ | Myotonic Dystrophy | G71.11 | 🎯 OPD | Multisystem |
 | ✅ | Critical Illness Myopathy/Neuropathy | G72.81 | 🎯 OPD | Approved |
@@ -177,7 +177,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Brain Abscess | G06.0 | 🎯 OPD | Neurosurgery consult |
 | ⬜ | HIV-Associated Neurocognitive Disorder | B20 | 🎯 OPD | AIDS dementia complex |
 | ✅ | Neurosyphilis | A52.2 | 🎯 OPD | Approved |
-| ⬜ | Lyme Neuroborreliosis | A69.22 | 🎯 OPD | Endemic areas |
+| ✅ | Lyme Neuroborreliosis | A69.22 | 🎯 OPD | Approved |
 
 ### Neuro-Oncology
 
@@ -188,7 +188,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Glioblastoma (GBM) | C71.9 | 🎯 OPD | Approved |
 | ✅ | Leptomeningeal Carcinomatosis | C79.32 | 🎯 OPD | Approved |
 | ✅ | Paraneoplastic Neurological Syndrome | G13.0 | 🎯 OPD | Antibody panels |
-| ⬜ | Meningioma | D32.9 | 🎯 OPD | Often incidental |
+| ✅ | Meningioma | D32.9 | 🎯 OPD | Approved |
 | ⬜ | Primary CNS Lymphoma | C85.19 | 🎯 OPD | Immunocompromised |
 | ⬜ | Radiation-Induced Neurologic Injury | G93.89 | 🎯 OPD | Delayed complications |
 | ⬜ | Myelopathy (General) | G99.2 | 🎯 OPD | DDx approach |
@@ -210,7 +210,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Neurosarcoidosis | D86.82 | 🎯 OPD | Approved |
 | ⬜ | Susac Syndrome | H35.89 | 🎯 OPD | Rare |
 | ⬜ | Neuro-Behcet's | M35.2 | 🎯 OPD | Rare |
-| ⬜ | Stiff Person Syndrome | G25.82 | 🎯 OPD | Rare |
+| ✅ | Stiff Person Syndrome | G25.82 | 🎯 OPD | Approved |
 | ⬜ | Hashimoto's Encephalopathy (SREAT) | E06.3 | 🎯 OPD | Diagnosis of exclusion |
 
 ### Functional & Psychiatric
@@ -218,7 +218,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
 | ✅ | Functional Neurological Disorder (FND) | F44.9 | 🎯 OPD | Approved |
-| ⬜ | Psychogenic Non-Epileptic Spells (PNES) | F44.4 | 🎯 OPD | Video EEG confirmation |
+| ✅ | Psychogenic Non-Epileptic Spells (PNES) | F44.4 | 🎯 OPD | Approved |
 | ⬜ | Functional Movement Disorder | F44.4 | 🎯 OPD | Clinical signs |
 | ⬜ | Functional Cognitive Disorder | F44.4 | 🎯 OPD | DDx with dementia |
 
@@ -262,19 +262,19 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | Stroke/Cerebrovascular | 9 | 3 | 12 |
 | Headache | 12 | 2 | 14 |
 | Demyelinating | 6 | 3 | 9 |
-| Neuromuscular | 15 | 13 | 28 |
+| Neuromuscular | 16 | 12 | 28 |
 | Movement Disorders | 11 | 7 | 18 |
 | Dementia/Cognitive | 9 | 3 | 12 |
-| CNS Infections | 9 | 3 | 12 |
-| Neuro-oncology | 5 | 4 | 9 |
+| CNS Infections | 10 | 2 | 12 |
+| Neuro-oncology | 6 | 3 | 9 |
 | Spinal Cord | 1 | 4 | 5 |
-| Autoimmune/Inflammatory | 1 | 4 | 5 |
-| Functional/Psychiatric | 1 | 3 | 4 |
+| Autoimmune/Inflammatory | 2 | 3 | 5 |
+| Functional/Psychiatric | 2 | 2 | 4 |
 | Neurocritical Care | 4 | 1 | 5 |
 | Other/Miscellaneous | 5 | 10 | 15 |
-| **TOTAL** | **93** | **63** | **156** |
+| **TOTAL** | **98** | **58** | **156** |
 
-**Note:** 93 approved diagnoses map to 92 unique plan files (Parkinson's Disease has separate Management and New Diagnosis plans in a single file pair).
+**Note:** 98 approved diagnoses map to 97 unique plan files (Parkinson's Disease has separate Management and New Diagnosis plans in a single file pair).
 
 ---
 
@@ -374,6 +374,11 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | 90 | Inflammatory Myopathy (DM/PM) | v1.1 | Jan 30, 2026 |
 | 91 | B12 Deficiency Neuropathy | v1.1 | Jan 30, 2026 |
 | 92 | Neurosyphilis | v1.1 | Jan 30, 2026 |
+| 93 | Inclusion Body Myositis | v1.1 | Jan 30, 2026 |
+| 94 | Meningioma | v1.1 | Jan 30, 2026 |
+| 95 | Psychogenic Non-Epileptic Spells (PNES) | v1.1 | Jan 30, 2026 |
+| 96 | Lyme Neuroborreliosis | v1.1 | Jan 30, 2026 |
+| 97 | Stiff Person Syndrome | v1.1 | Jan 30, 2026 |
 
 ---
 
