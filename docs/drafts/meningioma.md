@@ -1,7 +1,7 @@
 ---
 title: Meningioma
 description: Comprehensive clinical decision support for meningioma including incidental findings, symptomatic management, surgical planning, radiation therapy, and recurrence monitoring across WHO grades I-III.
-version: "1.0"
+version: "1.1"
 setting: ED, HOSP, OPD, ICU
 status: draft
 tags:
@@ -22,10 +22,10 @@ tags:
 
 # Meningioma
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
 **REVISED:** January 30, 2026
-**STATUS:** Draft - Pending Review
+**STATUS:** Draft - Revised per checker pipeline
 
 ---
 
@@ -41,9 +41,9 @@ tags:
 
 **PRIORITY KEY:** STAT = Immediate | URGENT = Within hours | ROUTINE = Standard | EXT = Extended/atypical cases | - = Not applicable to this setting
 
-===============================================================
+═══════════════════════════════════════════════════════════════
 SECTION A: ACTION ITEMS
-===============================================================
+═══════════════════════════════════════════════════════════════
 
 ## 1. LABORATORY WORKUP
 
@@ -102,21 +102,21 @@ SECTION A: ACTION ITEMS
 
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MR venography (MRV) (CPT 70547) | Pre-operative for parasagittal and falcine meningiomas; assess venous sinus patency and degree of invasion | Patent vs. occluded sagittal sinus; degree of sinus invasion (partial vs. complete); collateral venous drainage pathways; critical for surgical planning | Same as MRI | - | URGENT | ROUTINE | - |
+| MR venography (MRV) (CPT 70547) | Pre-operative for parasagittal and falcine meningiomas; assess venous sinus patency and degree of invasion | Patent vs. occluded sagittal sinus; degree of sinus invasion (partial vs. complete); collateral venous drainage pathways; critical for surgical planning | MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia | - | URGENT | ROUTINE | - |
 | CT angiography (CTA) of head (CPT 70496) | Pre-operative vascular mapping; large or vascular meningiomas; skull base tumors encasing major arteries | Arterial supply identification; ICA/vertebral artery encasement assessment; surgical planning for vascular control | Contrast allergy; renal impairment | - | URGENT | ROUTINE | - |
 | Digital subtraction angiography (DSA) (CPT 36224) | Pre-operative embolization planning for large vascular meningiomas; assess feeding vessels and collateral supply | Tumor blush; feeding arteries (MMA, occipital, APhA); degree of vascularity; potential for pre-operative embolization to reduce intraoperative blood loss | Contrast allergy; renal impairment; coagulopathy; vascular access complications | - | ROUTINE | ROUTINE | - |
 | Pre-operative embolization (CPT 61624) | 24-48h before surgery for large hypervascular meningiomas; reduces intraoperative blood loss | Reduced tumor vascularity; confirmation of embolized feeding vessels | Eloquent vessel supply; dangerous anastomoses (ECA to ICA); coagulopathy | - | ROUTINE | - | - |
-| MRI orbits with contrast (CPT 70543) | Sphenoid wing or optic nerve sheath meningioma with visual symptoms | Optic nerve compression; optic canal involvement; orbital extension | Same as MRI | - | ROUTINE | ROUTINE | - |
+| MRI orbits with contrast (CPT 70543) | Sphenoid wing or optic nerve sheath meningioma with visual symptoms | Optic nerve compression; optic canal involvement; orbital extension | MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia | - | ROUTINE | ROUTINE | - |
 | Formal visual field testing (Humphrey) (CPT 92083) | Baseline for parasellar, sphenoid wing, or optic nerve sheath meningiomas; monitor visual function pre and post treatment | Visual field deficit pattern (bitemporal hemianopia if chiasmal; homonymous if optic tract) | Patient cooperation required | - | ROUTINE | ROUTINE | - |
 | Audiometry (CPT 92557) | Baseline for cerebellopontine angle (CPA) meningiomas or those involving internal auditory canal | Sensorineural hearing loss; speech discrimination score | Patient cooperation required | - | ROUTINE | ROUTINE | - |
-| MRI spine (whole) with contrast (CPT 72156+72157+72158) | If NF2 suspected (multiple meningiomas); spinal symptoms suggesting spinal meningioma | Spinal meningiomas; drop metastases (very rare, grade III only) | Same as MRI | - | ROUTINE | ROUTINE | - |
+| MRI spine (whole) with contrast (CPT 72156+72157+72158) | If NF2 suspected (multiple meningiomas); spinal symptoms suggesting spinal meningioma | Spinal meningiomas; drop metastases (very rare, grade III only) | MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia | - | ROUTINE | ROUTINE | - |
 
 ### 2C. Rare/Specialized
 
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MR perfusion (DSC or DCE) (CPT 70553) | Atypical imaging features; differentiate meningioma from hemangiopericytoma/SFT, dural metastases, or lymphoma | Elevated rCBV in meningioma; hemangiopericytoma may show higher rCBV; dural metastases variable | Same as MRI | - | EXT | EXT | - |
-| MR spectroscopy (MRS) (CPT 76390) | Atypical imaging appearance; differentiate from other dural-based lesions | Elevated alanine peak (characteristic of meningioma); elevated glutamine/glutamate; low NAA (extra-axial, no neuronal markers) | Same as MRI | - | EXT | EXT | - |
+| MR perfusion (DSC or DCE) (CPT 70553) | Atypical imaging features; differentiate meningioma from hemangiopericytoma/SFT, dural metastases, or lymphoma | Elevated rCBV in meningioma; hemangiopericytoma may show higher rCBV; dural metastases variable | MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia | - | EXT | EXT | - |
+| MR spectroscopy (MRS) (CPT 76390) | Atypical imaging appearance; differentiate from other dural-based lesions | Elevated alanine peak (characteristic of meningioma); elevated glutamine/glutamate; low NAA (extra-axial, no neuronal markers) | MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia | - | EXT | EXT | - |
 | FDG-PET or Ga-68 DOTATATE PET (CPT 78816) | Ga-68 DOTATATE: somatostatin receptor-positive meningioma detection; recurrence monitoring; treatment planning for peptide receptor radionuclide therapy (PRRT); FDG-PET: differentiate high-grade from low-grade meningioma | DOTATATE: high uptake in meningioma (somatostatin receptor 2a positive); FDG: higher uptake in grade II/III vs. grade I | Pregnancy; limited availability for DOTATATE | - | - | EXT | - |
 | Octreotide scan (In-111 pentetreotide) (CPT 78802) | Somatostatin receptor expression assessment for potential somatostatin analog therapy in recurrent meningioma | Positive uptake indicates somatostatin receptor expression (treatment target) | Pregnancy | - | - | EXT | - |
 
@@ -150,6 +150,8 @@ SECTION A: ACTION ITEMS
 | Acetaminophen | PO | Headache from tumor-associated edema or post-operative; avoid NSAIDs peri-operatively due to bleeding risk | 1000 mg :: PO :: q6h PRN :: 650-1000 mg PO q6h PRN headache; max 3 g/day (2 g/day if hepatic impairment) | Severe hepatic impairment; allergy | LFTs if prolonged use | STAT | STAT | ROUTINE | STAT |
 | Insulin (steroid-induced hyperglycemia) | SC/IV | Glucose management while on dexamethasone; hyperglycemia common with steroid use | Variable :: SC :: per sliding scale :: Fingerstick glucose q6h; sliding scale insulin initially; basal-bolus if persistently >180 mg/dL; may need 2-3x baseline insulin on dexamethasone; anticipate glucose improvement as steroids taper | Hypoglycemia risk | Glucose q6h (q1h if insulin drip) | STAT | STAT | ROUTINE | STAT |
 | Calcium + Vitamin D | PO | Steroid-induced osteoporosis prevention if prolonged dexamethasone (>2 weeks) anticipated | 1000 mg Ca + 800 IU Vit D :: PO :: daily :: Calcium 1000-1200 mg + Vitamin D 800-1000 IU daily while on steroids | Hypercalcemia; renal stones (relative) | Calcium level; vitamin D level | - | ROUTINE | ROUTINE | - |
+| TMP-SMX (PJP prophylaxis) | PO | Pneumocystis jirovecii pneumonia prophylaxis if dexamethasone >20 mg/week AND concomitant temozolomide, bevacizumab, or other immunosuppression | 1 DS tab :: PO :: 3x/week (Mon/Wed/Fri) :: TMP-SMX 1 DS tablet 3x/week (Mon/Wed/Fri); if sulfa allergic: atovaquone 1500 mg PO daily or dapsone 100 mg PO daily (check G6PD first) | Sulfa allergy (use alternative); severe renal impairment; megaloblastic anemia from folate deficiency | CBC q2-4 weeks; renal function; rash; report fever/dyspnea | - | ROUTINE | ROUTINE | - |
+| Levetiracetam (perioperative prophylaxis) | PO/IV | Short-course perioperative seizure prophylaxis for craniotomy in patients without seizure history; 7-day course only per institutional protocol; NOT recommended beyond 7 days without documented seizure | 500 mg :: PO :: BID x 7 days :: Levetiracetam 500 mg BID starting day of surgery; discontinue at 7 days post-operatively unless seizure occurs; if seizure occurs, convert to maintenance dosing | None absolute; reduce dose if CrCl <50 | Behavioral changes; generally well tolerated | - | ROUTINE | - | ROUTINE |
 
 ### 3C. Second-line/Refractory
 
@@ -169,8 +171,8 @@ SECTION A: ACTION ITEMS
 | Surgical resection (craniotomy) | - | Symptomatic meningioma; growing meningioma on serial imaging; large meningiomas (>3 cm) with mass effect; WHO grade II/III meningiomas; Simpson Grade I-III resection goal based on location | Per neurosurgical approach :: - :: per surgical planning :: Approach depends on location: convexity (direct), parasagittal (with sinus evaluation), skull base (various approaches - subfrontal, pterional, retrosigmoid, transpetrosal); aim for Simpson Grade I (complete resection with dural attachment and involved bone) when safely achievable | Pre-operative MRI within 2 weeks; MRV for parasagittal tumors; CTA/DSA for vascular assessment of skull base tumors; consider pre-operative embolization for hypervascular tumors; medical optimization; DVT prophylaxis plan | Poor surgical candidate (advanced age with significant comorbidities, KPS <50); tumor in surgically inaccessible location; patient preference for observation or radiation | Post-op MRI within 48h; neurologic exams q2-4h for 24-48h; wound care; DVT prophylaxis; pain management; taper dexamethasone post-operatively | - | STAT | ROUTINE | - |
 | Stereotactic radiosurgery (SRS) - Gamma Knife / CyberKnife / LINAC | - | WHO grade I meningiomas <=3 cm not amenable to surgery or patient preference; residual/recurrent meningiomas after subtotal resection; cavernous sinus meningiomas (surgery high risk); adjuvant after subtotal resection of WHO grade II | 12-16 Gy :: - :: single fraction :: 12-16 Gy to tumor margin in single fraction (typically 13-14 Gy for skull base; 14-16 Gy for convexity); dose depends on proximity to critical structures (optic chiasm <=8 Gy, brainstem <=12 Gy) | High-resolution MRI for treatment planning (thin-cut, contrast-enhanced); frame-based or frameless immobilization; pathologic confirmation preferred (especially if imaging atypical) | Tumor >3 cm (relative; may use fractionated SRT instead); too close to optic apparatus for single fraction (use fractionated); diffuse/en plaque meningioma | MRI at 6 months, then annually for 5 years, then q2 years; monitor for radiation necrosis (1-3%); cranial nerve deficits (optic, trigeminal, facial depending on location) | - | - | ROUTINE | - |
 | Fractionated stereotactic radiotherapy (fSRT) | - | WHO grade I meningiomas >3 cm or near critical structures (optic chiasm, brainstem); WHO grade II after subtotal resection or recurrence; large skull base meningiomas | 50-54 Gy :: - :: 28-30 fractions :: 50-54 Gy in 28-30 fractions (1.8 Gy/fraction) over 5-6 weeks; conforms to irregularly shaped tumors near critical structures | MRI-based treatment planning; immobilization mask fitting; adequate interval from surgery (typically 4-6 weeks) | Pregnancy; prior full-dose radiation to same area (assess cumulative dose) | MRI q6 months for 2 years, then annually; radiation necrosis risk; fatigue during treatment; alopecia at entry sites | - | - | ROUTINE | - |
-| Adjuvant radiation therapy (WHO grade II - atypical) | - | WHO grade II (atypical) meningioma after subtotal resection (Simpson grade IV-V); consider after gross total resection if high proliferation index (Ki-67 >10%) or brain invasion; reduces recurrence rate | 54-60 Gy :: - :: 30-33 fractions :: 54-60 Gy in 30-33 fractions; begin 4-6 weeks after surgery; target tumor bed with margin | Post-operative MRI for treatment planning; adequate wound healing; pathologic confirmation of WHO grade II | Same as fSRT | MRI q3-4 months for first 2 years, then q6 months; monitor for recurrence which is common in grade II (35-40% at 5 years even with treatment) | - | - | ROUTINE | - |
-| Adjuvant radiation therapy (WHO grade III - anaplastic) | - | WHO grade III (anaplastic/malignant) meningioma after any extent of resection; radiation indicated regardless of surgical completeness due to high recurrence rate (50-80% at 5 years) | 59.4-60 Gy :: - :: 33 fractions :: 59.4-60 Gy in 33 fractions (1.8 Gy/fraction) over 6.5 weeks; some centers consider dose escalation; target tumor bed with 1-2 cm CTV margin | Post-operative MRI for treatment planning; pathologic confirmation of WHO grade III; molecular profiling | Same as fSRT | MRI q2-3 months for first 2 years given high recurrence risk; close clinical follow-up; consider systemic therapy trials | - | - | ROUTINE | - |
+| Adjuvant radiation therapy (WHO grade II - atypical) | - | WHO grade II (atypical) meningioma after subtotal resection (Simpson grade IV-V); consider after gross total resection if high proliferation index (Ki-67 >10%) or brain invasion; reduces recurrence rate | 54-60 Gy :: - :: 30-33 fractions :: 54-60 Gy in 30-33 fractions; begin 4-6 weeks after surgery; target tumor bed with margin | Post-operative MRI for treatment planning; adequate wound healing; pathologic confirmation of WHO grade II | Pregnancy; prior full-dose radiation to same area (assess cumulative dose) | MRI q3-4 months for first 2 years, then q6 months; monitor for recurrence which is common in grade II (35-40% at 5 years even with treatment) | - | - | ROUTINE | - |
+| Adjuvant radiation therapy (WHO grade III - anaplastic) | - | WHO grade III (anaplastic/malignant) meningioma after any extent of resection; radiation indicated regardless of surgical completeness due to high recurrence rate (50-80% at 5 years) | 59.4-60 Gy :: - :: 33 fractions :: 59.4-60 Gy in 33 fractions (1.8 Gy/fraction) over 6.5 weeks; some centers consider dose escalation; target tumor bed with 1-2 cm CTV margin | Post-operative MRI for treatment planning; pathologic confirmation of WHO grade III; molecular profiling | Pregnancy; prior full-dose radiation to same area (assess cumulative dose) | MRI q2-3 months for first 2 years given high recurrence risk; close clinical follow-up; consider systemic therapy trials | - | - | ROUTINE | - |
 | Observation (watchful waiting) | - | Asymptomatic incidental meningiomas (especially small <2 cm); elderly patients with slowly growing tumors; patient preference; no significant edema or mass effect | Serial MRI surveillance :: - :: per monitoring schedule :: MRI at 3 months (first scan), then 6 months, then annually for 5 years, then q2 years if stable; intervene if growth >2-3 mm/year, development of symptoms, or new edema | Baseline MRI with volumetric assessment; patient counseling about observation rationale and surveillance plan; reliable patient for follow-up | Not appropriate for symptomatic meningiomas, WHO grade II/III, or rapidly growing tumors | MRI per schedule; clinical assessment at each visit; patient education on symptoms warranting urgent evaluation (new headache, seizure, focal deficit) | - | - | ROUTINE | - |
 
 ---
@@ -227,9 +229,9 @@ SECTION A: ACTION ITEMS
 | Sun protection during radiation therapy course due to scalp sensitivity | - | - | ROUTINE | - |
 | Weight-bearing exercise and calcium/vitamin D supplementation for bone health if on prolonged steroids | - | - | ROUTINE | - |
 
-===============================================================
+═══════════════════════════════════════════════════════════════
 SECTION B: REFERENCE (Expand as Needed)
-===============================================================
+═══════════════════════════════════════════════════════════════
 
 ## 5. DIFFERENTIAL DIAGNOSIS
 
@@ -306,6 +308,18 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Checker/Rebuilder pipeline validation pass (v3.0 checker)
+- Added TMP-SMX (PJP prophylaxis) to Section 3B for patients on prolonged dexamethasone with concurrent immunosuppression per R1
+- Added perioperative AED prophylaxis (levetiracetam 7-day short course) to Section 3B per S2
+- Fixed section dividers to Unicode format for consistency with approved plans per C1
+- Updated version metadata and status
+- All treatment tables confirmed compliant with standardized 10-column format
+- All medications confirmed on individual rows with structured dosing (:: format)
+- Verified setting coverage across ED/HOSP/OPD/ICU for all sections
+- Eliminated all cross-references ("Same as MRI", "Same as fSRT") by expanding to full contraindication text in imaging and treatment rows
+- Confirmed no cross-references remain in any table rows
 
 **v1.0 (January 30, 2026)**
 - Initial template creation

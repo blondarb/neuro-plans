@@ -1,8 +1,8 @@
 ---
 title: "Inclusion Body Myositis (IBM)"
 description: "Clinical decision support for evaluation and management of inclusion body myositis"
-version: "1.0"
-setting: "ED, HOSP, OPD"
+version: "1.1"
+setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
   - neuromuscular
@@ -21,7 +21,7 @@ tags:
 
 # Inclusion Body Myositis (IBM)
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
 **REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
@@ -40,9 +40,9 @@ tags:
 
 **PRIORITY KEY:** STAT = Immediate | URGENT = Within hours | ROUTINE = Standard | EXT = Extended/atypical cases | - = Not applicable to this setting
 
-===============================================================
+═══════════════════════════════════════════════════════════════
 SECTION A: ACTION ITEMS
-===============================================================
+═══════════════════════════════════════════════════════════════
 
 ## 1. LABORATORY WORKUP
 
@@ -136,7 +136,7 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | IV fluids (normal saline) | IV | Dehydration and fall-related injury in patients presenting to ED with IBM-related falls; rhabdomyolysis if CK significantly elevated | 125-250 mL/h :: IV :: continuous :: 125-250 mL/h NS for hydration; increase to 200-300 mL/h if CK >5000 (rare in IBM but possible with falls/crush) | Heart failure; volume overload | Urine output; electrolytes; renal function | STAT | STAT | - | - |
-| Acetaminophen | PO/IV | Pain management for fall-related injuries; myalgia (uncommon in IBM but may occur) | 650-1000 mg q6h PRN :: PO :: :: 650-1000 mg PO q6h PRN pain; max 4 g/day (2 g/day if hepatic impairment); IV: 1000 mg q6h if NPO | Severe liver disease; hepatic impairment (reduce dose) | LFTs if prolonged use | STAT | STAT | ROUTINE | - |
+| Acetaminophen | PO | Pain management for fall-related injuries; myalgia (uncommon in IBM but may occur) | 650-1000 mg :: PO :: q6h PRN :: 650-1000 mg PO q6h PRN pain; max 4 g/day (2 g/day if hepatic impairment); IV alternative: 1000 mg IV q6h if NPO | Severe liver disease; hepatic impairment (reduce dose) | LFTs if prolonged use | STAT | STAT | ROUTINE | - |
 | DVT prophylaxis: Enoxaparin | SC | VTE prevention in immobilized patients admitted with fall-related injuries or acute deconditioning | 40 mg :: SC :: daily :: 40 mg SC daily; start on admission if immobile | Active bleeding; platelets <50K; CrCl <30 (use UFH) | Platelets q3 days; anti-Xa if renal impairment | - | ROUTINE | - | - |
 | DVT prophylaxis: Heparin SC (alternative) | SC | VTE prevention if enoxaparin contraindicated (CrCl <30) | 5000 units :: SC :: q8-12h :: 5000 units SC q8-12h | Active bleeding; HIT history | Platelets q3 days | - | ROUTINE | - | - |
 | Aspiration pneumonia treatment: Ampicillin-sulbactam | IV | Aspiration pneumonia from IBM-related dysphagia | 3 g :: IV :: q6h :: 3 g (ampicillin 2 g / sulbactam 1 g) IV q6h; duration 5-7 days; switch to oral amoxicillin-clavulanate when improving | Penicillin allergy; severe hepatic impairment | Temperature; WBC; chest X-ray improvement; renal function for dose adjustment | STAT | STAT | - | - |
@@ -149,15 +149,15 @@ SECTION A: ACTION ITEMS
 | Creatine monohydrate | PO | Modest improvement in muscle strength and endurance in IBM (limited evidence); well-tolerated nutritional supplement | 5 g :: PO :: daily :: 5 g PO daily mixed in water or juice; no loading phase needed; take with meal | Severe renal impairment (relative, monitor) | Renal function at baseline and q6 months; serum creatinine (will be mildly elevated from supplement, not nephrotoxicity) | - | ROUTINE | ROUTINE | - |
 | Alendronate | PO | Osteoporosis prevention in older adults with IBM at high fall risk; bone protection if corticosteroid trial | 70 mg :: PO :: weekly :: 70 mg PO weekly on empty stomach with full glass of water; remain upright 30 min after | GFR <35; esophageal disorders; inability to remain upright 30 min; hypocalcemia | DEXA at baseline and q2 years; renal function; calcium; dental exam (ONJ risk) | - | - | ROUTINE | - |
 | Calcium carbonate + Vitamin D | PO | Bone health and fall prevention in older adults with IBM; vitamin D deficiency common and worsens muscle weakness | 1000-1200 mg Ca + 1000-2000 IU D :: PO :: daily :: Calcium 1000-1200 mg + Vitamin D 1000-2000 IU PO daily; higher vitamin D doses if deficient (50,000 IU weekly x 8 weeks then maintenance) | Hypercalcemia; hyperparathyroidism; renal stones (relative) | Serum calcium; vitamin D level q3-6 months until replete | - | ROUTINE | ROUTINE | - |
-| Gabapentin | PO | Neuropathic pain or painful cramps associated with IBM; concurrent peripheral neuropathy common in older adults | 300 mg qHS; 300 mg BID; 300 mg TID :: PO :: :: Start 300 mg PO qHS; increase by 300 mg/day every 3-5 days; target 900-1800 mg/day divided TID; max 3600 mg/day; reduce dose if CrCl <60 | Severe renal impairment (dose adjust); respiratory depression risk in elderly | Sedation; dizziness; fall risk (critical in IBM patients); renal function for dose adjustment | - | ROUTINE | ROUTINE | - |
-| Pregabalin | PO | Neuropathic pain or muscle cramps if gabapentin not tolerated | 75 mg BID; 150 mg BID :: PO :: :: Start 75 mg PO BID; may increase to 150 mg BID after 1 week; max 300 mg BID; reduce dose if CrCl <60 | Severe renal impairment (dose adjust); angioedema history | Sedation; dizziness; fall risk; peripheral edema; weight gain; renal function | - | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | Neuropathic pain or painful cramps associated with IBM; concurrent peripheral neuropathy common in older adults | 300 mg :: PO :: TID :: Start 300 mg PO qHS; increase by 300 mg/day every 3-5 days; target 900-1800 mg/day divided TID; max 3600 mg/day; reduce dose if CrCl <60 | Severe renal impairment (dose adjust); respiratory depression risk in elderly | Sedation; dizziness; fall risk (critical in IBM patients); renal function for dose adjustment | - | ROUTINE | ROUTINE | - |
+| Pregabalin | PO | Neuropathic pain or muscle cramps if gabapentin not tolerated | 75 mg :: PO :: BID :: Start 75 mg PO BID; may increase to 150 mg BID after 1 week; max 300 mg BID; reduce dose if CrCl <60 | Severe renal impairment (dose adjust); angioedema history | Sedation; dizziness; fall risk; peripheral edema; weight gain; renal function | - | ROUTINE | ROUTINE | - |
 | Docusate sodium | PO | Constipation prevention (immobility, reduced activity) | 100 mg :: PO :: BID :: 100 mg PO BID | GI obstruction | Bowel function | - | ROUTINE | ROUTINE | - |
 | Polyethylene glycol (MiraLAX) | PO | Constipation (immobility-related, common in IBM due to reduced activity) | 17 g :: PO :: daily :: 17 g (1 capful) dissolved in 8 oz liquid PO daily; adjust frequency based on response | GI obstruction; bowel perforation | Bowel function; hydration status | - | ROUTINE | ROUTINE | - |
 | Omeprazole | PO | GERD management in patients with dysphagia; GI protection if aspirin or NSAID use | 20 mg :: PO :: daily :: 20 mg PO daily; take 30 minutes before breakfast | PPI allergy; long-term use concerns (B12, Mg, bone density) | Magnesium if prolonged use; B12 level | - | ROUTINE | ROUTINE | - |
-| Sertraline | PO | Depression (common comorbidity in chronic progressive neuromuscular disease); also helps anxiety | 25 mg daily; 50 mg daily; 100 mg daily :: PO :: :: Start 25 mg PO daily; increase to 50 mg after 1 week; may titrate by 25-50 mg q2-4 weeks; max 200 mg/day | Concurrent MAOIs (14-day washout); concurrent pimozide | Suicidality monitoring (first 4 weeks); serotonin syndrome; hyponatremia (SIADH, especially elderly); fall risk | - | ROUTINE | ROUTINE | - |
-| Escitalopram | PO | Depression and anxiety in IBM patients; alternative to sertraline | 5 mg daily; 10 mg daily; 20 mg daily :: PO :: :: Start 5 mg PO daily in elderly; increase to 10 mg after 1 week; max 20 mg/day (10 mg in age >65 per FDA) | Concurrent MAOIs; QTc prolongation; concurrent pimozide | QTc if risk factors; hyponatremia (SIADH, especially elderly); suicidality monitoring | - | ROUTINE | ROUTINE | - |
-| Trazodone | PO | Insomnia (common in chronic disease; adjustment disorder; pain-related) | 25-50 mg qHS :: PO :: :: Start 25-50 mg PO qHS; may increase to 100 mg qHS; max 200 mg for insomnia | Concurrent MAOIs; QTc prolongation (high dose) | Sedation; orthostatic hypotension (fall risk in IBM); priapism (rare) | - | ROUTINE | ROUTINE | - |
-| Modafinil | PO | Daytime fatigue and somnolence associated with chronic progressive disease | 100 mg daily; 200 mg daily :: PO :: :: Start 100 mg PO every morning; may increase to 200 mg daily; avoid afternoon dosing | Hypersensitivity; severe hepatic impairment; cardiac arrhythmia | BP; heart rate; mood; insomnia; hepatic function | - | - | ROUTINE | - |
+| Sertraline | PO | Depression (common comorbidity in chronic progressive neuromuscular disease); also helps anxiety | 50 mg :: PO :: daily :: Start 25 mg PO daily; increase to 50 mg after 1 week; may titrate by 25-50 mg q2-4 weeks; max 200 mg/day | Concurrent MAOIs (14-day washout); concurrent pimozide | Suicidality monitoring (first 4 weeks); serotonin syndrome; hyponatremia (SIADH, especially elderly); fall risk | - | ROUTINE | ROUTINE | - |
+| Escitalopram | PO | Depression and anxiety in IBM patients; alternative to sertraline | 10 mg :: PO :: daily :: Start 5 mg PO daily in elderly; increase to 10 mg after 1 week; max 20 mg/day (10 mg in age >65 per FDA) | Concurrent MAOIs; QTc prolongation; concurrent pimozide | QTc if risk factors; hyponatremia (SIADH, especially elderly); suicidality monitoring | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Insomnia (common in chronic disease; adjustment disorder; pain-related) | 50 mg :: PO :: qHS :: Start 25-50 mg PO qHS; may increase to 100 mg qHS; max 200 mg for insomnia | Concurrent MAOIs; QTc prolongation (high dose) | Sedation; orthostatic hypotension (fall risk in IBM); priapism (rare) | - | ROUTINE | ROUTINE | - |
+| Modafinil | PO | Daytime fatigue and somnolence associated with chronic progressive disease | 100 mg :: PO :: daily :: Start 100 mg PO every morning; may increase to 200 mg daily; avoid afternoon dosing | Hypersensitivity; severe hepatic impairment; cardiac arrhythmia | BP; heart rate; mood; insomnia; hepatic function | - | - | ROUTINE | - |
 
 ### 3C. Second-line/Refractory
 
@@ -202,45 +202,45 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Return to ED immediately if new difficulty breathing or worsening shortness of breath (may indicate aspiration pneumonia or respiratory muscle weakness) | STAT | STAT | ROUTINE |
-| Return to ED if choking episodes during eating or drinking, or inability to swallow medications (aspiration risk requiring urgent evaluation) | STAT | STAT | ROUTINE |
-| Return to ED if fall with head injury, inability to get up, or new severe pain (high fall risk due to quadriceps weakness) | STAT | STAT | ROUTINE |
-| Return to ED if fever with cough or difficulty breathing (may indicate aspiration pneumonia given dysphagia risk) | STAT | STAT | ROUTINE |
-| Expect slow but progressive weakness over years; IBM is a chronic condition without cure, but many patients remain ambulatory for 10-15 years after diagnosis | - | ROUTINE | ROUTINE |
-| Use assistive devices as recommended by PT/OT (cane, walker, wheelchair) to prevent falls and maintain independence -- early adoption improves safety | - | ROUTINE | ROUTINE |
-| Modify diet texture as recommended by speech therapist; avoid thin liquids if swallow evaluation shows aspiration risk; use thickened liquids and soft foods as directed | - | ROUTINE | ROUTINE |
-| Sit upright during and for 30 minutes after meals to reduce aspiration risk; eat slowly and take small bites | - | ROUTINE | ROUTINE |
-| Report any new difficulty swallowing, coughing during meals, or unintentional weight loss to neurology (may indicate worsening dysphagia requiring intervention) | - | ROUTINE | ROUTINE |
-| Wear supportive footwear with non-slip soles; use grab bars in bathroom; remove loose rugs and floor obstacles to prevent falls | - | ROUTINE | ROUTINE |
-| Do not drive if quadriceps weakness limits ability to safely brake or operate pedals; discuss driving safety with neurology and OT | - | ROUTINE | ROUTINE |
-| Maintain regular exercise as tolerated -- supervised low-to-moderate intensity exercise is safe and may help maintain function longer; avoid extreme exertion or eccentric exercises | - | ROUTINE | ROUTINE |
-| Attend all scheduled follow-up appointments (strength assessment and swallow monitoring essential to guide management) | - | ROUTINE | ROUTINE |
-| Carry a medical identification card or bracelet indicating IBM diagnosis in case of emergency | - | - | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Return to ED immediately if new difficulty breathing or worsening shortness of breath (may indicate aspiration pneumonia or respiratory muscle weakness) | STAT | STAT | ROUTINE | - |
+| Return to ED if choking episodes during eating or drinking, or inability to swallow medications (aspiration risk requiring urgent evaluation) | STAT | STAT | ROUTINE | - |
+| Return to ED if fall with head injury, inability to get up, or new severe pain (high fall risk due to quadriceps weakness) | STAT | STAT | ROUTINE | - |
+| Return to ED if fever with cough or difficulty breathing (may indicate aspiration pneumonia given dysphagia risk) | STAT | STAT | ROUTINE | - |
+| Expect slow but progressive weakness over years; IBM is a chronic condition without cure, but many patients remain ambulatory for 10-15 years after diagnosis | - | ROUTINE | ROUTINE | - |
+| Use assistive devices as recommended by PT/OT (cane, walker, wheelchair) to prevent falls and maintain independence -- early adoption improves safety | - | ROUTINE | ROUTINE | - |
+| Modify diet texture as recommended by speech therapist; avoid thin liquids if swallow evaluation shows aspiration risk; use thickened liquids and soft foods as directed | - | ROUTINE | ROUTINE | - |
+| Sit upright during and for 30 minutes after meals to reduce aspiration risk; eat slowly and take small bites | - | ROUTINE | ROUTINE | - |
+| Report any new difficulty swallowing, coughing during meals, or unintentional weight loss to neurology (may indicate worsening dysphagia requiring intervention) | - | ROUTINE | ROUTINE | - |
+| Wear supportive footwear with non-slip soles; use grab bars in bathroom; remove loose rugs and floor obstacles to prevent falls | - | ROUTINE | ROUTINE | - |
+| Do not drive if quadriceps weakness limits ability to safely brake or operate pedals; discuss driving safety with neurology and OT | - | ROUTINE | ROUTINE | - |
+| Maintain regular exercise as tolerated -- supervised low-to-moderate intensity exercise is safe and may help maintain function longer; avoid extreme exertion or eccentric exercises | - | ROUTINE | ROUTINE | - |
+| Attend all scheduled follow-up appointments (strength assessment and swallow monitoring essential to guide management) | - | ROUTINE | ROUTINE | - |
+| Carry a medical identification card or bracelet indicating IBM diagnosis in case of emergency | - | - | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Supervised progressive resistance exercise program (moderate intensity) -- evidence supports safety and modest functional benefit in IBM; focus on non-atrophied muscle groups; 2-3 sessions per week | - | ROUTINE | ROUTINE |
-| Low-impact aerobic exercise (stationary cycling, water-based exercise, swimming) to maintain cardiovascular fitness and slow deconditioning | - | ROUTINE | ROUTINE |
-| High-protein diet (1.2-1.5 g/kg/day protein) to support muscle preservation and slow sarcopenia progression; adequate caloric intake to prevent weight loss | - | ROUTINE | ROUTINE |
-| Home safety evaluation by OT to remove fall hazards, install grab bars, raised toilet seat, shower bench, stair rails, and adequate lighting | - | ROUTINE | ROUTINE |
-| Annual influenza vaccination (inactivated) and pneumococcal vaccination per guidelines given aspiration risk and respiratory vulnerability | - | ROUTINE | ROUTINE |
-| Fall prevention program including balance exercises, home modifications, medication review for fall-risk-increasing medications, and vision correction | - | ROUTINE | ROUTINE |
-| Adequate hydration (minimum 1.5-2 L/day) to support muscle health and prevent constipation | - | ROUTINE | ROUTINE |
-| Alcohol limitation as alcohol worsens muscle weakness and increases fall risk | - | ROUTINE | ROUTINE |
-| Adequate sleep (7-9 hours) to support muscle recovery and overall health | - | ROUTINE | ROUTINE |
-| Weight management to reduce load on weakened quadriceps and improve mobility; avoid obesity which accelerates functional decline | - | ROUTINE | ROUTINE |
-| Vitamin D supplementation to maintain level >30 ng/mL for muscle and bone health; higher dose repletion if deficient | - | ROUTINE | ROUTINE |
-| Assistive device progression planning with PT/OT: ankle-foot orthosis (AFO) for foot drop, cane, walker, wheelchair as needed for safety | - | ROUTINE | ROUTINE |
-| Caregiver education on safe transfer techniques, fall management, and recognizing signs of aspiration to optimize home safety | - | ROUTINE | ROUTINE |
-| Social engagement and meaningful activities adaptation to maintain quality of life despite progressive physical limitations | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Supervised progressive resistance exercise program (moderate intensity) -- evidence supports safety and modest functional benefit in IBM; focus on non-atrophied muscle groups; 2-3 sessions per week | - | ROUTINE | ROUTINE | - |
+| Low-impact aerobic exercise (stationary cycling, water-based exercise, swimming) to maintain cardiovascular fitness and slow deconditioning | - | ROUTINE | ROUTINE | - |
+| High-protein diet (1.2-1.5 g/kg/day protein) to support muscle preservation and slow sarcopenia progression; adequate caloric intake to prevent weight loss | - | ROUTINE | ROUTINE | - |
+| Home safety evaluation by OT to remove fall hazards, install grab bars, raised toilet seat, shower bench, stair rails, and adequate lighting | - | ROUTINE | ROUTINE | - |
+| Annual influenza vaccination (inactivated) and pneumococcal vaccination per guidelines given aspiration risk and respiratory vulnerability | - | ROUTINE | ROUTINE | - |
+| Fall prevention program including balance exercises, home modifications, medication review for fall-risk-increasing medications, and vision correction | - | ROUTINE | ROUTINE | - |
+| Adequate hydration (minimum 1.5-2 L/day) to support muscle health and prevent constipation | - | ROUTINE | ROUTINE | - |
+| Alcohol limitation as alcohol worsens muscle weakness and increases fall risk | - | ROUTINE | ROUTINE | - |
+| Adequate sleep (7-9 hours) to support muscle recovery and overall health | - | ROUTINE | ROUTINE | - |
+| Weight management to reduce load on weakened quadriceps and improve mobility; avoid obesity which accelerates functional decline | - | ROUTINE | ROUTINE | - |
+| Vitamin D supplementation to maintain level >30 ng/mL for muscle and bone health; higher dose repletion if deficient | - | ROUTINE | ROUTINE | - |
+| Assistive device progression planning with PT/OT: ankle-foot orthosis (AFO) for foot drop, cane, walker, wheelchair as needed for safety | - | ROUTINE | ROUTINE | - |
+| Caregiver education on safe transfer techniques, fall management, and recognizing signs of aspiration to optimize home safety | - | ROUTINE | ROUTINE | - |
+| Social engagement and meaningful activities adaptation to maintain quality of life despite progressive physical limitations | - | ROUTINE | ROUTINE | - |
 
-===============================================================
+═══════════════════════════════════════════════════════════════
 SECTION B: REFERENCE (Expand as Needed)
-===============================================================
+═══════════════════════════════════════════════════════════════
 
 ## 5. DIFFERENTIAL DIAGNOSIS
 
@@ -319,6 +319,22 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Checker/Rebuilder validation pass (score improvement: 47/60 -> target 54/60)
+- Fixed frontmatter: added ICU to setting list (C1/C2/S2)
+- Standardized all section dividers to unicode format (R2)
+- Fixed structured dosing format for 7 medications to proper 4-field `::` format (C3/M1-M6):
+  - Acetaminophen: fixed route (PO/IV -> PO); standardized dosing fields
+  - Gabapentin: standardized dose field from titration list to target dose
+  - Pregabalin: standardized dose field from titration list to target dose
+  - Sertraline: standardized dose field to 50 mg target with titration in instructions
+  - Escitalopram: standardized dose field to 10 mg target with titration in instructions
+  - Trazodone: standardized dose field to 50 mg target with frequency qHS
+  - Modafinil: standardized dose field to 100 mg target with titration in instructions
+- Added ICU column to Section 4B Patient Instructions table (C1/S2) -- all rows marked "-" (IBM patients in ICU are not receiving patient education)
+- Added ICU column to Section 4C Lifestyle & Prevention table (C2/S2) -- all rows marked "-" (lifestyle recommendations not applicable to ICU setting)
+- Version bumped from 1.0 to 1.1
 
 **v1.0 (January 30, 2026)**
 - Initial template creation

@@ -1,8 +1,8 @@
 ---
 title: "Lyme Neuroborreliosis"
 description: "Clinical decision support for evaluation and management of Lyme neuroborreliosis (nervous system Lyme disease)"
-version: "1.0"
-setting: "ED, HOSP, OPD"
+version: "1.1"
+setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
   - cns-infection
@@ -22,8 +22,9 @@ tags:
 
 # Lyme Neuroborreliosis
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -40,9 +41,9 @@ tags:
 
 **PRIORITY KEY:** STAT = Immediate | URGENT = Within hours | ROUTINE = Standard | EXT = Extended/atypical cases | - = Not applicable to this setting
 
-===============================================================
+═══════════════════════════════════════════════════════════════
 SECTION A: ACTION ITEMS
-===============================================================
+═══════════════════════════════════════════════════════════════
 
 ## 1. LABORATORY WORKUP
 
@@ -50,13 +51,13 @@ SECTION A: ACTION ITEMS
 
 | Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
 |------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Lyme ELISA or EIA (serum) (CPT 86618) | First-tier screening test in two-tier algorithm; sensitivity 70-100% depending on disease stage (lower in early infection <2 weeks); high sensitivity in disseminated/late disease | Positive or equivocal (proceed to Western blot); negative in very early infection does not exclude | STAT | STAT | ROUTINE | - |
-| Lyme Western blot IgM and IgG (serum) (CPT 86617) | Second-tier confirmatory test; IgM positive if >=2 of 3 bands (23, 39, 41 kDa); IgG positive if >=5 of 10 bands; IgM only reliable within first 4 weeks of illness | IgM: >=2 of 3 bands (early disease). IgG: >=5 of 10 bands (disseminated/late disease). IgM alone unreliable after 4 weeks | STAT | STAT | ROUTINE | - |
-| CBC with differential (CPT 85025) | Baseline; infection markers; rule out hematologic mimics; lymphocytosis may be present | Normal or mild lymphocytosis | STAT | STAT | ROUTINE | - |
-| CMP (BMP + LFTs) (CPT 80053) | Renal function for antibiotic dosing; hepatic function (Lyme hepatitis may coexist); electrolytes | Normal; document baseline Cr and LFTs | STAT | STAT | ROUTINE | - |
-| ESR (CPT 85651) | Inflammatory marker; often elevated in disseminated Lyme disease | May be mildly to moderately elevated | URGENT | ROUTINE | ROUTINE | - |
-| CRP (CPT 86140) | Inflammatory marker; baseline | May be mildly elevated | URGENT | ROUTINE | ROUTINE | - |
-| Blood glucose (paired with CSF if LP performed) (CPT 82947) | CSF:serum glucose ratio interpretation | Document paired with LP | STAT | STAT | - | - |
+| Lyme ELISA or EIA (serum) (CPT 86618) | First-tier screening test in two-tier algorithm; sensitivity 70-100% depending on disease stage (lower in early infection <2 weeks); high sensitivity in disseminated/late disease | Positive or equivocal (proceed to Western blot); negative in very early infection does not exclude | STAT | STAT | ROUTINE | STAT |
+| Lyme Western blot IgM and IgG (serum) (CPT 86617) | Second-tier confirmatory test; IgM positive if >=2 of 3 bands (23, 39, 41 kDa); IgG positive if >=5 of 10 bands; IgM only reliable within first 4 weeks of illness | IgM: >=2 of 3 bands (early disease). IgG: >=5 of 10 bands (disseminated/late disease). IgM alone unreliable after 4 weeks | STAT | STAT | ROUTINE | STAT |
+| CBC with differential (CPT 85025) | Baseline; infection markers; rule out hematologic mimics; lymphocytosis may be present | Normal or mild lymphocytosis | STAT | STAT | ROUTINE | STAT |
+| CMP (BMP + LFTs) (CPT 80053) | Renal function for antibiotic dosing; hepatic function (Lyme hepatitis may coexist); electrolytes | Normal; document baseline Cr and LFTs | STAT | STAT | ROUTINE | STAT |
+| ESR (CPT 85651) | Inflammatory marker; often elevated in disseminated Lyme disease | May be mildly to moderately elevated | URGENT | ROUTINE | ROUTINE | ROUTINE |
+| CRP (CPT 86140) | Inflammatory marker; baseline | May be mildly elevated | URGENT | ROUTINE | ROUTINE | ROUTINE |
+| Blood glucose (paired with CSF if LP performed) (CPT 82947) | CSF:serum glucose ratio interpretation | Document paired with LP | STAT | STAT | - | STAT |
 
 ### 1B. Extended Workup (Second-line)
 
@@ -95,22 +96,22 @@ SECTION A: ACTION ITEMS
 
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI brain with and without contrast (CPT 70553) | Within 24-48h; STAT if altered mental status, focal deficits, or concern for encephalomyelitis | Cranial nerve enhancement (especially CN VII); leptomeningeal enhancement; white matter lesions (late neuroborreliosis); may be NORMAL in early neuroborreliosis with isolated cranial neuropathy or meningitis | Pacemaker, metallic implants | STAT | STAT | ROUTINE | - |
-| CT head without contrast (CPT 70450) | Immediate in ED if acute neurologic presentation (altered consciousness, focal deficit, papilledema) to rule out mass/hemorrhage before LP | Usually normal; excludes mass lesion before LP | Pregnancy (relative) | STAT | STAT | - | - |
+| MRI brain with and without contrast (CPT 70553) | Within 24-48h; STAT if altered mental status, focal deficits, or concern for encephalomyelitis | Cranial nerve enhancement (especially CN VII); leptomeningeal enhancement; white matter lesions (late neuroborreliosis); may be NORMAL in early neuroborreliosis with isolated cranial neuropathy or meningitis | Pacemaker, metallic implants | STAT | STAT | ROUTINE | STAT |
+| CT head without contrast (CPT 70450) | Immediate in ED if acute neurologic presentation (altered consciousness, focal deficit, papilledema) to rule out mass/hemorrhage before LP | Usually normal; excludes mass lesion before LP | Pregnancy (relative) | STAT | STAT | - | STAT |
 
 ### 2B. Extended
 
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI spine (cervical/thoracic) with contrast (CPT 72156) | If myelopathy symptoms (weakness, sensory level, bladder dysfunction) suggesting Lyme myelitis | Spinal cord T2 hyperintensity; nerve root enhancement (radiculitis); meningeal enhancement | Same as MRI | - | ROUTINE | ROUTINE | - |
+| MRI spine (cervical/thoracic) with contrast (CPT 72156) | If myelopathy symptoms (weakness, sensory level, bladder dysfunction) suggesting Lyme myelitis | Spinal cord T2 hyperintensity; nerve root enhancement (radiculitis); meningeal enhancement | Same as MRI | - | ROUTINE | ROUTINE | URGENT |
 | Nerve conduction studies / EMG (CPT 95907+95861) | If peripheral neuropathy or radiculopathy symptoms to characterize pattern and severity | Axonal polyneuropathy (late neuroborreliosis); radiculopathy pattern (early); mononeuritis multiplex (rare) | Anticoagulation (relative for EMG) | - | ROUTINE | ROUTINE | - |
-| ECG (12-lead) (CPT 93000) | Screen for Lyme carditis (AV block) which may coexist with neuroborreliosis; baseline before ceftriaxone | PR prolongation or AV block (Lyme carditis); baseline QTc | None | URGENT | ROUTINE | ROUTINE | - |
+| ECG (12-lead) (CPT 93000) | Screen for Lyme carditis (AV block) which may coexist with neuroborreliosis; baseline before ceftriaxone | PR prolongation or AV block (Lyme carditis); baseline QTc | None | URGENT | ROUTINE | ROUTINE | STAT |
 
 ### 2C. Rare/Specialized
 
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| EEG (routine or continuous) (CPT 95816) | If seizures, altered mental status, or encephalopathy | Focal or generalized slowing (encephalopathy); epileptiform discharges (rare in Lyme) | None significant | URGENT | URGENT | - | - |
+| EEG (routine or continuous) (CPT 95816) | If seizures, altered mental status, or encephalopathy | Focal or generalized slowing (encephalopathy); epileptiform discharges (rare in Lyme) | None significant | URGENT | URGENT | ROUTINE | URGENT |
 | Evoked potentials (VEP, BAEP, SSEP) (CPT 95930) | If subclinical demyelination suspected (late neuroborreliosis); optic nerve or brainstem involvement | Prolonged latencies suggesting demyelination | None significant | - | ROUTINE | ROUTINE | - |
 | Echocardiogram (TTE) (CPT 93306) | If PR prolongation or AV block on ECG (Lyme carditis workup) | Normal or valvular abnormalities; evaluate cardiac function | None significant | - | ROUTINE | ROUTINE | - |
 
@@ -159,11 +160,11 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Ceftriaxone (CPT 96365) | IV | First-line treatment for neuroborreliosis with CNS involvement (meningitis, encephalomyelitis, encephalopathy) and cranial neuropathy with CSF pleocytosis; also for Lyme radiculopathy with CSF abnormalities | 2 g daily :: IV :: daily :: 2 g IV once daily for 14-28 days (most experts recommend 14-21 days); infuse over 30-60 min; standard duration 14 days for most cases, 21-28 days for late neuroborreliosis or encephalomyelitis | Cephalosporin anaphylaxis; severe penicillin allergy (cross-reactivity ~1-2%); caution with biliary disease (ceftriaxone can cause biliary sludge/pseudolithiasis) | Renal function (BUN, Cr) weekly; CBC weekly; LFTs; monitor for C. difficile diarrhea; biliary symptoms; IV site assessment | STAT | STAT | ROUTINE | - |
+| Ceftriaxone (CPT 96365) | IV | First-line treatment for neuroborreliosis with CNS involvement (meningitis, encephalomyelitis, encephalopathy) and cranial neuropathy with CSF pleocytosis; also for Lyme radiculopathy with CSF abnormalities | 2 g daily :: IV :: daily :: 2 g IV once daily for 14-28 days (most experts recommend 14-21 days); infuse over 30-60 min; standard duration 14 days for most cases, 21-28 days for late neuroborreliosis or encephalomyelitis | Cephalosporin anaphylaxis; severe penicillin allergy (cross-reactivity ~1-2%); caution with biliary disease (ceftriaxone can cause biliary sludge/pseudolithiasis) | Renal function (BUN, Cr) weekly; CBC weekly; LFTs; monitor for C. difficile diarrhea; biliary symptoms; IV site assessment | STAT | STAT | ROUTINE | STAT |
 | Doxycycline | PO | First-line for isolated facial palsy WITHOUT CSF pleocytosis or other evidence of CNS involvement; also acceptable for Lyme radiculopathy without meningitis in European practice; IDSA/AAN guidelines support oral doxycycline for cranial neuropathy without meningitis | 100 mg BID :: PO :: BID :: 100 mg PO BID for 14-21 days; take with full glass of water; remain upright 30 min after dosing to prevent esophageal ulceration | Pregnancy; children <8 years; severe hepatic impairment; concurrent retinoids; esophageal stricture | GI tolerance; photosensitivity counseling; LFTs if prolonged course | STAT | STAT | ROUTINE | - |
-| Cefotaxime (alternative to ceftriaxone) | IV | Alternative parenteral beta-lactam for neuroborreliosis when ceftriaxone is contraindicated (biliary disease) or unavailable; equivalent CNS penetration | 2 g q8h :: IV :: q8h :: 2 g IV every 8 hours for 14-28 days | Cephalosporin anaphylaxis; severe penicillin allergy | Renal function; CBC; LFTs; C. difficile monitoring | STAT | STAT | - | - |
-| Penicillin G (aqueous crystalline) | IV | Alternative parenteral antibiotic for neuroborreliosis; effective but less commonly used than ceftriaxone due to q4h dosing requirement; reserved for beta-lactam-tolerant patients when ceftriaxone unavailable | 18-24 million units/day :: IV :: divided q4h :: 3-4 million units IV q4h (total 18-24 million units/day) for 14-28 days | Penicillin anaphylaxis | Renal function; serum potassium (high-dose penicillin contains potassium); seizure risk at very high doses | STAT | STAT | - | - |
-| Dexamethasone (if bacterial meningitis not excluded) | IV | Empiric adjunctive therapy if bacterial meningitis cannot yet be excluded pending culture results; give BEFORE or WITH first antibiotic dose; discontinue if Lyme meningitis confirmed (no role for steroids in Lyme meningitis) | 0.15 mg/kg q6h x 4 days :: IV :: q6h :: 0.15 mg/kg IV q6h for 4 days (discontinue if Lyme meningitis confirmed); administer before or with first antibiotic dose | Active untreated infection (relative); uncontrolled diabetes | Glucose; blood pressure; discontinue when Lyme confirmed | STAT | STAT | - | - |
+| Cefotaxime (alternative to ceftriaxone) | IV | Alternative parenteral beta-lactam for neuroborreliosis when ceftriaxone is contraindicated (biliary disease) or unavailable; equivalent CNS penetration | 2 g q8h :: IV :: q8h :: 2 g IV every 8 hours for 14-28 days | Cephalosporin anaphylaxis; severe penicillin allergy | Renal function; CBC; LFTs; C. difficile monitoring | STAT | STAT | - | STAT |
+| Penicillin G (aqueous crystalline) | IV | Alternative parenteral antibiotic for neuroborreliosis; effective but less commonly used than ceftriaxone due to q4h dosing requirement; reserved for beta-lactam-tolerant patients when ceftriaxone unavailable | 18-24 million units/day :: IV :: divided q4h :: 3-4 million units IV q4h (total 18-24 million units/day) for 14-28 days | Penicillin anaphylaxis | Renal function; serum potassium (high-dose penicillin contains potassium); seizure risk at very high doses | STAT | STAT | - | STAT |
+| Dexamethasone (if bacterial meningitis not excluded) | IV | Empiric adjunctive therapy if bacterial meningitis cannot yet be excluded pending culture results; give BEFORE or WITH first antibiotic dose; discontinue if Lyme meningitis confirmed (no role for steroids in Lyme meningitis) | 0.15 mg/kg q6h x 4 days :: IV :: q6h :: 0.15 mg/kg IV q6h for 4 days (discontinue if Lyme meningitis confirmed); administer before or with first antibiotic dose | Active untreated infection (relative); uncontrolled diabetes | Glucose; blood pressure; discontinue when Lyme confirmed | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments
 
@@ -171,12 +172,12 @@ SECTION A: ACTION ITEMS
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Ibuprofen | PO | Headache and pain management in Lyme meningitis; radicular pain | 400-600 mg q6-8h :: PO :: q6-8h :: 400-600 mg PO q6-8h as needed; max 2400 mg/day; take with food | Renal impairment; active GI bleed; aspirin-exacerbated respiratory disease; third trimester pregnancy | GI symptoms; renal function; blood pressure | STAT | ROUTINE | ROUTINE | - |
 | Acetaminophen | PO/IV | Headache and pain management; fever reduction; alternative if NSAIDs contraindicated | 650-1000 mg q6h :: PO :: q6h :: 650-1000 mg PO/IV q6h; max 3 g/day (2 g/day if hepatic impairment) | Severe hepatic disease; active liver failure | LFTs; hepatic function | STAT | ROUTINE | ROUTINE | - |
-| Gabapentin | PO | Neuropathic pain (Lyme radiculopathy; painful radiculoneuritis/Bannwarth syndrome; peripheral neuropathy) | 300 mg qHS; 300 mg TID; 600 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q1-3d; target 300-900 mg TID; max 3600 mg/day; dose adjust for renal impairment | Severe renal impairment (dose adjust: CrCl <60) | Sedation; dizziness; edema; renal function | - | ROUTINE | ROUTINE | - |
-| Pregabalin | PO | Neuropathic pain (Lyme radiculopathy; peripheral neuropathy); alternative to gabapentin | 75 mg BID; 150 mg BID :: PO :: :: Start 75 mg BID; may increase to 150-300 mg BID q1wk; max 600 mg/day; dose adjust for renal impairment | Severe renal impairment (dose adjust); angioedema history | Sedation; weight gain; edema; renal function | - | ROUTINE | ROUTINE | - |
-| Duloxetine | PO | Neuropathic pain (late Lyme peripheral neuropathy); concurrent depression | 30 mg daily; 60 mg daily :: PO :: :: Start 30 mg daily x 1 wk; increase to 60 mg daily; max 120 mg/day | Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma | LFTs; blood pressure; serotonin syndrome symptoms | - | ROUTINE | ROUTINE | - |
-| Amitriptyline | PO | Neuropathic pain (Lyme radiculopathy; chronic pain); may also help with insomnia | 10 mg qHS; 25 mg qHS; 50 mg qHS :: PO :: :: Start 10-25 mg qHS; titrate by 10-25 mg q1-2wk; max 150 mg/day | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly (anticholinergic risk) | ECG if dose >100 mg/day; anticholinergic effects; sedation; weight | - | ROUTINE | ROUTINE | - |
-| Prednisone (facial palsy adjunctive -- controversial) | PO | Short course for acute facial nerve palsy to reduce inflammation and improve recovery; evidence extrapolated from Bell's palsy data; NOT standard of care for Lyme facial palsy and NOT recommended by most experts; discuss with specialist | 60 mg daily x 5 days then taper :: PO :: :: 60 mg daily x 5 days, then taper over 5 days; controversial in Lyme -- some experts avoid due to concern for impaired immune clearance of Borrelia; use ONLY with concurrent antibiotics | Active untreated infection without antibiotics; uncontrolled diabetes | Glucose; blood pressure; GI prophylaxis | - | ROUTINE | ROUTINE | - |
-| Artificial tears (lubricant eye drops) | TOP | Eye protection for facial palsy (incomplete eye closure); prevents exposure keratopathy and corneal abrasion | Apply q1-2h while awake :: TOP :: :: Apply lubricant drops q1-2h while awake; use lubricant ointment at bedtime; tape eye closed at night if unable to fully close | None significant | Corneal integrity; refer ophthalmology if corneal exposure | STAT | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | Neuropathic pain (Lyme radiculopathy; painful radiculoneuritis/Bannwarth syndrome; peripheral neuropathy) | 300 mg :: PO :: TID :: Start 300 mg qHS; titrate by 300 mg q1-3d to 300 mg TID; target 900-1800 mg/day divided TID; max 3600 mg/day; dose adjust for CrCl <60 | Severe renal impairment (dose adjust: CrCl <60) | Sedation; dizziness; edema; renal function | - | ROUTINE | ROUTINE | - |
+| Pregabalin | PO | Neuropathic pain (Lyme radiculopathy; peripheral neuropathy); alternative to gabapentin | 75 mg :: PO :: BID :: Start 75 mg BID; may increase to 150 mg BID after 1 wk; max 300 mg BID (600 mg/day); dose adjust for renal impairment | Severe renal impairment (dose adjust); angioedema history | Sedation; weight gain; edema; renal function | - | ROUTINE | ROUTINE | - |
+| Duloxetine | PO | Neuropathic pain (late Lyme peripheral neuropathy); concurrent depression | 30 mg :: PO :: daily :: Start 30 mg daily x 1 wk; increase to 60 mg daily; max 120 mg/day | Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma | LFTs; blood pressure; serotonin syndrome symptoms | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | PO | Neuropathic pain (Lyme radiculopathy; chronic pain); may also help with insomnia | 10 mg :: PO :: qHS :: Start 10-25 mg qHS; titrate by 10-25 mg q1-2wk; target 50-75 mg qHS; max 150 mg/day | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly (anticholinergic risk) | ECG if dose >100 mg/day; anticholinergic effects; sedation; weight | - | ROUTINE | ROUTINE | - |
+| Prednisone (facial palsy adjunctive -- controversial) | PO | Short course for acute facial nerve palsy to reduce inflammation and improve recovery; evidence extrapolated from Bell's palsy data; NOT standard of care for Lyme facial palsy and NOT recommended by most experts; discuss with specialist | 60 mg :: PO :: daily x 5 days :: 60 mg daily x 5 days, then taper over 5 days; controversial in Lyme -- some experts avoid due to concern for impaired immune clearance of Borrelia; use ONLY with concurrent antibiotics | Active untreated infection without antibiotics; uncontrolled diabetes | Glucose; blood pressure; GI prophylaxis | - | ROUTINE | ROUTINE | - |
+| Artificial tears (lubricant eye drops) | TOP | Eye protection for facial palsy (incomplete eye closure); prevents exposure keratopathy and corneal abrasion | 1-2 drops :: TOP :: q1-2h while awake :: Apply lubricant drops q1-2h while awake; use lubricant ointment at bedtime; tape eye closed at night if unable to fully close | None significant | Corneal integrity; refer ophthalmology if corneal exposure | STAT | ROUTINE | ROUTINE | - |
 | Ondansetron | IV/PO | Nausea and vomiting associated with Lyme meningitis or vertigo | 4 mg q6-8h PRN :: IV :: PRN :: 4-8 mg IV/PO q6-8h as needed; max 24 mg/day | QT prolongation; severe hepatic impairment (max 8 mg/day) | QTc if risk factors | STAT | ROUTINE | ROUTINE | - |
 | Meclizine | PO | Vertigo associated with cranial nerve VIII involvement (vestibulocochlear nerve) | 25 mg q6-8h PRN :: PO :: PRN :: 25 mg PO q6-8h as needed for vertigo; max 100 mg/day | Urinary retention; glaucoma | Sedation; anticholinergic effects | STAT | ROUTINE | ROUTINE | - |
 
@@ -184,10 +185,10 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Doxycycline (extended course for late neuroborreliosis) | PO | Late neuroborreliosis with encephalopathy or peripheral neuropathy; some European guidelines support oral doxycycline for all neuroborreliosis (including meningitis); may be used as step-down therapy after initial IV ceftriaxone | 200 mg BID :: PO :: BID :: 200 mg PO BID (or 100 mg BID) for 21-28 days; European trials (IDSA 2020 guidelines) suggest oral doxycycline may be equivalent to IV ceftriaxone for neuroborreliosis | Pregnancy; children <8 years; severe hepatic impairment | LFTs; GI tolerance; photosensitivity counseling | - | ROUTINE | ROUTINE | - |
+| Doxycycline (extended course for late neuroborreliosis) | PO | Late neuroborreliosis with encephalopathy or peripheral neuropathy; some European guidelines support oral doxycycline for all neuroborreliosis (including meningitis); may be used as step-down therapy after initial IV ceftriaxone | 100 mg :: PO :: BID :: 100 mg PO BID for 21-28 days (some European protocols use 200 mg BID); IDSA 2020 guidelines suggest oral doxycycline may be equivalent to IV ceftriaxone for neuroborreliosis | Pregnancy; children <8 years; severe hepatic impairment | LFTs; GI tolerance; photosensitivity counseling | - | ROUTINE | ROUTINE | - |
 | Azithromycin (third-line alternative) | PO | Third-line alternative ONLY when both ceftriaxone and doxycycline are contraindicated; inferior CNS penetration; less well-studied for neuroborreliosis | 500 mg daily :: PO :: daily :: 500 mg PO daily for 14-21 days; limited evidence for CNS disease; use only if no other option | QT prolongation; hepatic impairment; concurrent QT-prolonging drugs | LFTs; QTc; GI tolerance; hearing (rare ototoxicity) | - | ROUTINE | ROUTINE | - |
 | IV immunoglobulin (IVIG) (for severe Bannwarth syndrome -- rare) | IV | Severe, refractory painful radiculoneuritis (Bannwarth syndrome) not responding to antibiotics and analgesics; limited evidence; case reports only | 0.4 g/kg/day x 5 days :: IV :: daily x 5 days :: 0.4 g/kg/day IV for 5 days; infuse slowly starting at 0.5 mL/kg/h; premedicate with acetaminophen and diphenhydramine | IgA deficiency (anaphylaxis risk); renal impairment; hypercoagulability | Renal function; infusion reactions; CBC; consider IgA level before first dose | - | EXT | - | - |
-| Carbamazepine | PO | Lancinating/paroxysmal neuropathic pain in Lyme radiculopathy (similar mechanism to trigeminal neuralgia pain) refractory to gabapentin/pregabalin | 100 mg BID; 200 mg BID; 400 mg BID :: PO :: :: Start 100 mg BID; titrate by 200 mg/day q1wk; target 400-800 mg/day; max 1200 mg/day | AV block; history of bone marrow suppression; concurrent MAOIs; HLA-B*1502 positive (Asian descent -- screen before starting) | CBC with differential q2wk x 2 months then q3 months; LFTs; sodium (SIADH); drug level (target 4-12 ug/mL) | - | ROUTINE | ROUTINE | - |
+| Carbamazepine | PO | Lancinating/paroxysmal neuropathic pain in Lyme radiculopathy (similar mechanism to trigeminal neuralgia pain) refractory to gabapentin/pregabalin | 100 mg :: PO :: BID :: Start 100 mg BID; titrate by 200 mg/day q1wk; target 400-800 mg/day divided BID; max 1200 mg/day | AV block; history of bone marrow suppression; concurrent MAOIs; HLA-B*1502 positive (Asian descent -- screen before starting) | CBC with differential q2wk x 2 months then q3 months; LFTs; sodium (SIADH); drug level (target 4-12 ug/mL) | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -197,15 +198,15 @@ SECTION A: ACTION ITEMS
 
 | Recommendation | ED | HOSP | OPD | ICU |
 |----------------|:--:|:----:|:---:|:---:|
-| Infectious disease consultation for treatment optimization, duration guidance, co-infection management, and complex diagnostic interpretation | URGENT | ROUTINE | ROUTINE | - |
-| Neurology consultation for diagnosis confirmation, CSF interpretation, differentiation from MS and other neurologic mimics, and management of neurologic complications | STAT | STAT | ROUTINE | - |
+| Infectious disease consultation for treatment optimization, duration guidance, co-infection management, and complex diagnostic interpretation | URGENT | ROUTINE | ROUTINE | STAT |
+| Neurology consultation for diagnosis confirmation, CSF interpretation, differentiation from MS and other neurologic mimics, and management of neurologic complications | STAT | STAT | ROUTINE | STAT |
 | Ophthalmology evaluation for ALL patients with incomplete eye closure from facial palsy to assess corneal exposure risk and recommend eye protection strategy | URGENT | URGENT | ROUTINE | - |
 | Audiology evaluation for patients with hearing loss, tinnitus, or vestibular symptoms (cranial nerve VIII involvement) for baseline audiometry | - | ROUTINE | ROUTINE | - |
 | Physical therapy for gait training and balance rehabilitation if ataxia or weakness from myelopathy or peripheral neuropathy | - | ROUTINE | ROUTINE | - |
 | Occupational therapy for ADL assessment and adaptive strategies for patients with hand weakness or fine motor deficits from peripheral neuropathy | - | ROUTINE | ROUTINE | - |
 | Neuropsychology for formal cognitive testing if encephalopathy or cognitive complaints persist after antibiotic treatment to establish baseline and guide rehabilitation | - | ROUTINE | ROUTINE | - |
 | Pain management referral for refractory neuropathic pain not responding to first-line and second-line analgesics | - | ROUTINE | ROUTINE | - |
-| Cardiology consultation if ECG shows PR prolongation or AV block (Lyme carditis may coexist with neuroborreliosis and requires separate management) | URGENT | URGENT | ROUTINE | - |
+| Cardiology consultation if ECG shows PR prolongation or AV block (Lyme carditis may coexist with neuroborreliosis and requires separate management) | URGENT | URGENT | ROUTINE | STAT |
 | Social work for discharge planning, home health services coordination, and support resources for prolonged IV antibiotic therapy | - | ROUTINE | ROUTINE | - |
 
 ### 4B. Patient Instructions
@@ -234,9 +235,9 @@ SECTION A: ACTION ITEMS
 | Alcohol avoidance during antibiotic treatment (potential hepatotoxicity with doxycycline; general immune recovery support) | - | ROUTINE | ROUTINE |
 | No reinfection immunity: prior Lyme disease does NOT prevent future infections; continue tick prevention measures indefinitely in endemic areas | - | ROUTINE | ROUTINE |
 
-===============================================================
+═══════════════════════════════════════════════════════════════
 SECTION B: REFERENCE (Expand as Needed)
-===============================================================
+═══════════════════════════════════════════════════════════════
 
 ## 5. DIFFERENTIAL DIAGNOSIS
 
@@ -258,16 +259,16 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Parameter | Frequency | Target/Threshold | Action if Abnormal | ED | HOSP | OPD | ICU |
 |-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
-| Neurologic exam (cranial nerves, motor, sensory, gait, mental status) | q8-12h inpatient; each outpatient visit | Stable or improving | If declining: reassess diagnosis; repeat imaging; repeat LP; consider treatment failure or alternative diagnosis | STAT | STAT | ROUTINE | - |
+| Neurologic exam (cranial nerves, motor, sensory, gait, mental status) | q8-12h inpatient; each outpatient visit | Stable or improving | If declining: reassess diagnosis; repeat imaging; repeat LP; consider treatment failure or alternative diagnosis | STAT | STAT | ROUTINE | STAT |
 | Facial nerve function (House-Brackmann scale) | Daily inpatient; each outpatient visit for facial palsy patients | Progressive improvement; most recover within 1-2 months | If no improvement by 3 months: repeat Lyme serologies; consider EMG; ophthalmology for corneal protection; neurology reassessment | - | ROUTINE | ROUTINE | - |
-| Temperature | q4-8h inpatient | Afebrile; fever resolves within 48-72h of antibiotics | Persistent fever >48h: reassess diagnosis; evaluate for co-infection (Babesia, Anaplasma); blood cultures | STAT | ROUTINE | - | - |
-| ECG (PR interval) | Admission and daily if PR prolonged; repeat if palpitations or syncope | PR <300 ms; no high-degree AV block | If PR >300 ms or Mobitz II/complete heart block: cardiology STAT; temporary pacemaker may be needed; IV ceftriaxone continues | URGENT | ROUTINE | ROUTINE | - |
+| Temperature | q4-8h inpatient | Afebrile; fever resolves within 48-72h of antibiotics | Persistent fever >48h: reassess diagnosis; evaluate for co-infection (Babesia, Anaplasma); blood cultures | STAT | ROUTINE | - | STAT |
+| ECG (PR interval) | Admission and daily if PR prolonged; repeat if palpitations or syncope | PR <300 ms; no high-degree AV block | If PR >300 ms or Mobitz II/complete heart block: cardiology STAT; temporary pacemaker may be needed; IV ceftriaxone continues | URGENT | ROUTINE | ROUTINE | STAT |
 | Serum Lyme serologies (follow-up) | 4-6 weeks after treatment; 3 and 6 months | Declining antibody titers over time (IgM resolves; IgG may persist for years) | Persistent IgG is common and does NOT indicate treatment failure; clinical improvement is the primary measure of treatment response | - | - | ROUTINE | - |
-| Renal function (BUN, Cr) | Baseline, then weekly during IV antibiotics | Stable; CrCl >60 | Dose adjust antibiotics if renal function declines | - | ROUTINE | ROUTINE | - |
+| Renal function (BUN, Cr) | Baseline, then weekly during IV antibiotics | Stable; CrCl >60 | Dose adjust antibiotics if renal function declines | - | ROUTINE | ROUTINE | ROUTINE |
 | Hepatic function (LFTs) | Baseline, then weekly during doxycycline; at completion of therapy | Normal | If transaminases >3x ULN: consider switching antibiotic; evaluate for hepatotoxicity | - | ROUTINE | ROUTINE | - |
-| CBC | Baseline, then weekly during antibiotic therapy | Normal | Leukopenia/thrombocytopenia may suggest co-infection (Anaplasma/Ehrlichia); C. difficile if diarrhea | - | ROUTINE | ROUTINE | - |
-| Pain scores (VAS or NRS) | Each visit; daily inpatient if neuropathic pain | Decreasing pain scores | Escalate analgesic therapy per Section 3B; consider pain management referral | STAT | ROUTINE | ROUTINE | - |
-| Cognitive function (if encephalopathy) | Baseline and at follow-up visits; formal testing at 3-6 months if persistent | Improvement; return to baseline | If persistent cognitive deficits >6 months after treatment: neuropsychology evaluation; consider PTLDS; supportive care | - | ROUTINE | ROUTINE | - |
+| CBC | Baseline, then weekly during antibiotic therapy | Normal | Leukopenia/thrombocytopenia may suggest co-infection (Anaplasma/Ehrlichia); C. difficile if diarrhea | - | ROUTINE | ROUTINE | ROUTINE |
+| Pain scores (VAS or NRS) | Each visit; daily inpatient if neuropathic pain | Decreasing pain scores | Escalate analgesic therapy per Section 3B; consider pain management referral | STAT | ROUTINE | ROUTINE | ROUTINE |
+| Cognitive function (if encephalopathy) | Baseline and at follow-up visits; formal testing at 3-6 months if persistent | Improvement; return to baseline | If persistent cognitive deficits >6 months after treatment: neuropsychology evaluation; consider PTLDS; supportive care | - | ROUTINE | ROUTINE | ROUTINE |
 
 ## 7. DISPOSITION CRITERIA
 
@@ -303,6 +304,18 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Fixed section dividers to Unicode format per style guide
+- Added ICU setting coverage across all applicable sections (labs, imaging, treatments, referrals, monitoring)
+- Updated frontmatter setting field to include ICU
+- Fixed structured dosing format for gabapentin, pregabalin, duloxetine, amitriptyline, carbamazepine, prednisone, artificial tears (standardized to dose :: route :: frequency :: instructions)
+- Corrected doxycycline extended course dosing to standard 100 mg BID (200 mg BID noted as European alternative)
+- Added ICU coverage for ceftriaxone, cefotaxime, penicillin G, dexamethasone in Section 3A
+- Added ICU coverage for ID, neurology, and cardiology consults in Section 4A
+- Added ICU coverage for neurologic exam, temperature, ECG, renal function, CBC, pain scores, cognitive function in Section 6
+- Added OPD and ICU coverage for EEG in Section 2C
+- Added ICU coverage for ECG and MRI spine in Section 2B
 
 **v1.0 (January 30, 2026)**
 - Initial template creation
