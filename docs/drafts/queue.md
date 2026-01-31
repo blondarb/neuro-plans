@@ -22,7 +22,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| *(none)* | — | — | — | — |
+| Alcohol Withdrawal Seizure | `alcohol-withdrawal-seizure.md` | `pending` | claude/tier7 | 2026-01-30 |
+| Status Migrainosus | `status-migrainosus.md` | `pending` | claude/tier7 | 2026-01-30 |
+| Inflammatory Myopathy (DM/PM) | `inflammatory-myopathy.md` | `pending` | claude/tier7 | 2026-01-30 |
+| B12 Deficiency Neuropathy | `b12-deficiency-neuropathy.md` | `pending` | claude/tier7 | 2026-01-30 |
+| Neurosyphilis | `neurosyphilis.md` | `pending` | claude/tier7 | 2026-01-30 |
 
 ---
 
