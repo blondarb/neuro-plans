@@ -1,7 +1,7 @@
 ---
 title: "Paraneoplastic Neurological Syndrome"
 description: "Evidence-based clinical decision support for diagnosis, cancer screening, immunotherapy, and management of paraneoplastic neurological syndromes"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,8 +20,9 @@ tags:
 
 # Paraneoplastic Neurological Syndrome
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -68,7 +69,7 @@ SECTION A: ACTION ITEMS
 | Pregnancy test (females of childbearing age) (CPT 81025) | STAT | STAT | ROUTINE | STAT | Teratogenicity of immunosuppressants; imaging planning | As applicable |
 | Troponin (CPT 84484) | STAT | STAT | - | STAT | Cardiac involvement; autonomic instability assessment | Normal |
 | CPK (CPT 82550) | URGENT | URGENT | ROUTINE | URGENT | Myositis (dermatomyositis overlap); seizure-related rhabdomyolysis | Normal |
-| Uric acid | - | ROUTINE | ROUTINE | - | Tumor lysis risk if malignancy identified | Normal |
+| Uric acid (CPT 84550) | - | ROUTINE | ROUTINE | - | Tumor lysis risk if malignancy identified | Normal |
 
 ### 1B. Paraneoplastic Antibody Panel
 
@@ -145,7 +146,7 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| FDG-PET brain | - | EXT | EXT | - | Within 1-2 weeks | Cerebellar hypermetabolism (early) or hypometabolism (late); mesial temporal metabolic changes | Same as PET/CT |
+| FDG-PET brain | - | EXT | EXT | - | Within 1-2 weeks | Cerebellar hypermetabolism (early) or hypometabolism (late); mesial temporal metabolic changes | Uncontrolled diabetes; pregnancy |
 | Repetitive nerve stimulation (RNS) (CPT 95937) | - | ROUTINE | ROUTINE | - | During NCS/EMG session | Decremental response at 3 Hz (MG); incremental response >100% at 50 Hz or post-exercise (LEMS) | None significant |
 | CT-guided biopsy (identified tumor) | - | EXT | EXT | - | After tumor identified | Histopathological confirmation of malignancy | Coagulopathy, inaccessible location |
 | Colonoscopy | - | EXT | EXT | - | If indicated by age/symptoms or specific antibody profile | Colorectal malignancy screening | Active bowel perforation |
@@ -190,12 +191,12 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Methylprednisolone IV | IV | First-line immunotherapy for acute paraneoplastic neurological syndrome; reduces CNS inflammation | 1000 mg daily x 5 days :: IV :: :: 1000 mg IV daily for 3-5 days; infuse over 1-2 hours | Active untreated infection; uncontrolled diabetes; psychosis from steroids | Glucose q6h (target <180); BP; mood/sleep; I/O; GI prophylaxis | URGENT | STAT | - | STAT |
-| Omeprazole (GI prophylaxis during steroids) | PO/IV | Stress ulcer prevention during high-dose corticosteroids | 40 mg daily :: IV :: :: 40 mg IV/PO daily during steroid course and taper | PPI allergy | None routine | URGENT | STAT | ROUTINE | STAT |
-| Insulin sliding scale | SC | Steroid-induced hyperglycemia management | Per protocol :: SC :: :: Per institutional protocol if glucose >180 mg/dL | Hypoglycemia risk | Glucose q6h; adjust per response | URGENT | STAT | - | STAT |
-| IVIG (intravenous immunoglobulin) | IV | First-line immunotherapy; antibody-mediated mechanism; given concurrently or sequentially with IV steroids | 0.4 g/kg daily x 5 days :: IV :: :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol; premedicate with acetaminophen, diphenhydramine | IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure | Renal function daily; headache (aseptic meningitis); thrombosis; volume overload; check IgA level before first dose | - | STAT | - | STAT |
-| Plasmapheresis (PLEX) | IV | First-line immunotherapy; removes pathogenic antibodies; preferred for cell-surface antibody syndromes | 5-7 exchanges over 10-14 days :: IV :: :: 1-1.5 plasma volumes per exchange; albumin replacement preferred | Hemodynamic instability; sepsis; coagulopathy; poor vascular access | BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions | - | STAT | - | STAT |
-| Lorazepam (acute seizure) | IV | Seizure management in paraneoplastic limbic encephalitis | 0.1 mg/kg IV push; 4 mg IV push :: IV :: :: 0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min; max 8 mg total | Respiratory depression; acute narrow-angle glaucoma | Respiratory status; sedation level; airway patency | STAT | STAT | - | STAT |
+| Methylprednisolone IV | IV | First-line immunotherapy for acute paraneoplastic neurological syndrome; reduces CNS inflammation | 1000 mg :: IV :: daily x 3-5 days :: 1000 mg IV daily for 3-5 days; infuse over 1-2 hours | Active untreated infection; uncontrolled diabetes; psychosis from steroids | Glucose q6h (target <180); BP; mood/sleep; I/O; GI prophylaxis | URGENT | STAT | - | STAT |
+| Omeprazole (GI prophylaxis during steroids) | PO/IV | Stress ulcer prevention during high-dose corticosteroids | 40 mg :: IV/PO :: daily :: 40 mg IV/PO daily during steroid course and taper | PPI allergy | None routine | URGENT | STAT | ROUTINE | STAT |
+| Insulin sliding scale | SC | Steroid-induced hyperglycemia management | Per protocol :: SC :: PRN :: Per institutional sliding scale protocol if glucose >180 mg/dL | Hypoglycemia risk | Glucose q6h; adjust per response | URGENT | STAT | - | STAT |
+| IVIG (intravenous immunoglobulin) | IV | First-line immunotherapy; antibody-mediated mechanism; given concurrently or sequentially with IV steroids | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol; premedicate with acetaminophen, diphenhydramine | IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure | Renal function daily; headache (aseptic meningitis); thrombosis; volume overload; check IgA level before first dose | - | STAT | - | STAT |
+| Plasmapheresis (PLEX) | IV | First-line immunotherapy; removes pathogenic antibodies; preferred for cell-surface antibody syndromes | 1-1.5 plasma volumes :: IV :: every other day x 5-7 exchanges :: 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange; albumin replacement preferred | Hemodynamic instability; sepsis; coagulopathy; poor vascular access | BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions | - | STAT | - | STAT |
+| Lorazepam (acute seizure) | IV | Seizure management in paraneoplastic limbic encephalitis | 4 mg :: IV :: push PRN seizure :: 0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min; max 8 mg total | Respiratory depression; acute narrow-angle glaucoma | Respiratory status; sedation level; airway patency | STAT | STAT | - | STAT |
 
 *Note: Immunotherapy should be initiated as soon as paraneoplastic syndrome is clinically suspected. Do NOT wait for antibody results. The most critical intervention is identifying and treating the underlying tumor -- tumor-directed therapy (surgery, chemotherapy, radiation) is the primary treatment and improves neurological outcomes. Cell-surface antibody syndromes are more responsive to immunotherapy than intracellular antibody syndromes.*
 
@@ -203,19 +204,19 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Levetiracetam | IV/PO | Seizure management in paraneoplastic limbic encephalitis; preferred first-line ASM | 500 mg BID; 1000 mg BID; 1500 mg BID :: PO :: :: Load: 1000-1500 mg IV; Maintenance: 500-1500 mg IV/PO BID; max 3000 mg/day | Renal impairment (adjust dose per CrCl) | Behavioral changes (rage, irritability); suicidality; renal function | STAT | STAT | ROUTINE | STAT |
-| Lacosamide | IV/PO | Second-line ASM for seizures; favorable drug interaction profile with immunotherapy | 100 mg BID; 200 mg BID :: PO :: :: Load: 200-400 mg IV; Maintenance: 100-200 mg IV/PO BID; max 400 mg/day | Second/third degree AV block; severe hepatic impairment | ECG (PR prolongation); dizziness; cardiac monitoring during load | URGENT | URGENT | ROUTINE | URGENT |
-| Gabapentin | PO | Neuropathic pain from paraneoplastic sensory neuropathy | 300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day divided TID | Renal impairment (adjust per CrCl) | Sedation; dizziness; peripheral edema; respiratory depression (with opioids) | - | ROUTINE | ROUTINE | ROUTINE |
-| Pregabalin | PO | Neuropathic pain from paraneoplastic sensory neuropathy; alternative to gabapentin | 75 mg BID; 150 mg BID; 300 mg BID :: PO :: :: Start 75 mg BID; may increase q1wk; max 600 mg/day | Renal impairment (adjust per CrCl); angioedema history | Sedation; dizziness; weight gain; peripheral edema | - | ROUTINE | ROUTINE | - |
-| Duloxetine | PO | Neuropathic pain; concurrent depression management | 30 mg daily; 60 mg daily :: PO :: :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma | LFTs; BP; sodium (hyponatremia risk); suicidality | - | ROUTINE | ROUTINE | - |
-| Clonazepam | PO | Opsoclonus-myoclonus symptom relief; myoclonus management | 0.5 mg BID; 1 mg BID; 2 mg BID :: PO :: :: Start 0.5 mg BID; titrate by 0.5 mg q3d; max 6 mg/day | Severe hepatic impairment; acute narrow-angle glaucoma; respiratory depression | Sedation; tolerance; dependence; respiratory depression | - | ROUTINE | ROUTINE | ROUTINE |
-| Meclizine | PO | Vertigo and vestibular symptoms from cerebellar involvement | 25 mg TID PRN :: PO :: :: 25 mg PO q8h PRN vertigo; max 75 mg/day | Concurrent anticholinergic use; urinary retention; glaucoma | Sedation; anticholinergic effects | URGENT | ROUTINE | ROUTINE | - |
-| Ondansetron | IV/PO | Nausea/vomiting from cerebellar involvement or brainstem dysfunction | 4 mg q8h PRN; 8 mg q8h PRN :: IV :: :: 4-8 mg IV/PO q8h PRN nausea; max 24 mg/day | QTc prolongation; concomitant apomorphine | QTc if risk factors; constipation | STAT | ROUTINE | ROUTINE | STAT |
-| Amitriptyline | PO | Neuropathic pain; insomnia from paraneoplastic sensory neuropathy | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: :: Start 10 mg qHS; titrate by 10-25 mg q1-2wk; max 150 mg/day | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly | ECG if dose >100 mg/day; anticholinergic effects; QTc monitoring | - | ROUTINE | ROUTINE | - |
-| Baclofen | PO | Stiffness/spasticity from paraneoplastic stiff-person spectrum or myelopathy | 5 mg TID; 10 mg TID; 20 mg TID :: PO :: :: Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day | Renal impairment; abrupt withdrawal risk (seizures, hallucinations) | Sedation; weakness; hepatic function; do NOT stop abruptly | - | ROUTINE | ROUTINE | ROUTINE |
-| Diazepam | PO | Stiff-person spectrum; muscle spasms; paraneoplastic rigidity | 2 mg BID; 5 mg BID; 10 mg TID :: PO :: :: Start 2 mg BID; titrate to effect; max 40 mg/day | Severe respiratory depression; myasthenia gravis; acute narrow-angle glaucoma | Sedation; respiratory depression; tolerance; dependence | - | ROUTINE | ROUTINE | ROUTINE |
-| Melatonin | PO | Sleep-wake disturbance; circadian dysregulation | 3 mg qHS; 5 mg qHS; 10 mg qHS :: PO :: :: 3-10 mg PO qHS | None significant | Sleep quality; no significant drug interactions | - | ROUTINE | ROUTINE | ROUTINE |
-| Sertraline | PO | Depression and anxiety associated with chronic paraneoplastic neurological syndrome | 25 mg daily; 50 mg daily; 100 mg daily; 200 mg daily :: PO :: :: Start 25-50 mg daily; increase by 25-50 mg q1-2wk; max 200 mg/day | Concurrent MAOIs; QT prolongation (rare) | Suicidality monitoring; hyponatremia (SIADH); GI side effects | - | ROUTINE | ROUTINE | - |
+| Levetiracetam | IV/PO | Seizure management in paraneoplastic limbic encephalitis; preferred first-line ASM | 500 mg :: IV/PO :: BID :: Load: 1000-1500 mg IV; Maintenance: 500 mg BID, titrate to 1000-1500 mg BID; max 3000 mg/day | Renal impairment (adjust dose per CrCl) | Behavioral changes (rage, irritability); suicidality; renal function | STAT | STAT | ROUTINE | STAT |
+| Lacosamide | IV/PO | Second-line ASM for seizures; favorable drug interaction profile with immunotherapy | 100 mg :: IV/PO :: BID :: Load: 200-400 mg IV; Maintenance: 100 mg BID, titrate to 200 mg BID; max 400 mg/day | Second/third degree AV block; severe hepatic impairment | ECG (PR prolongation); dizziness; cardiac monitoring during load | URGENT | URGENT | ROUTINE | URGENT |
+| Gabapentin | PO | Neuropathic pain from paraneoplastic sensory neuropathy | 300 mg :: PO :: TID :: Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day divided TID | Renal impairment (adjust per CrCl) | Sedation; dizziness; peripheral edema; respiratory depression (with opioids) | - | ROUTINE | ROUTINE | ROUTINE |
+| Pregabalin | PO | Neuropathic pain from paraneoplastic sensory neuropathy; alternative to gabapentin | 75 mg :: PO :: BID :: Start 75 mg BID; may increase q1wk to 150-300 mg BID; max 600 mg/day | Renal impairment (adjust per CrCl); angioedema history | Sedation; dizziness; weight gain; peripheral edema | - | ROUTINE | ROUTINE | - |
+| Duloxetine | PO | Neuropathic pain; concurrent depression management | 30 mg :: PO :: daily :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma | LFTs; BP; sodium (hyponatremia risk); suicidality | - | ROUTINE | ROUTINE | - |
+| Clonazepam | PO | Opsoclonus-myoclonus symptom relief; myoclonus management | 0.5 mg :: PO :: BID :: Start 0.5 mg BID; titrate by 0.5 mg q3d; max 6 mg/day | Severe hepatic impairment; acute narrow-angle glaucoma; respiratory depression | Sedation; tolerance; dependence; respiratory depression | - | ROUTINE | ROUTINE | ROUTINE |
+| Meclizine | PO | Vertigo and vestibular symptoms from cerebellar involvement | 25 mg :: PO :: TID PRN :: 25 mg PO q8h PRN vertigo; max 75 mg/day | Concurrent anticholinergic use; urinary retention; glaucoma | Sedation; anticholinergic effects | URGENT | ROUTINE | ROUTINE | - |
+| Ondansetron | IV/PO | Nausea/vomiting from cerebellar involvement or brainstem dysfunction | 4 mg :: IV/PO :: q8h PRN :: 4-8 mg IV/PO q8h PRN nausea; max 24 mg/day | QTc prolongation; concomitant apomorphine | QTc if risk factors; constipation | STAT | ROUTINE | ROUTINE | STAT |
+| Amitriptyline | PO | Neuropathic pain; insomnia from paraneoplastic sensory neuropathy | 10 mg :: PO :: qHS :: Start 10 mg qHS; titrate by 10-25 mg q1-2wk; max 150 mg/day | Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly | ECG if dose >100 mg/day; anticholinergic effects; QTc monitoring | - | ROUTINE | ROUTINE | - |
+| Baclofen | PO | Stiffness/spasticity from paraneoplastic stiff-person spectrum or myelopathy | 5 mg :: PO :: TID :: Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day | Renal impairment; abrupt withdrawal risk (seizures, hallucinations) | Sedation; weakness; hepatic function; do NOT stop abruptly | - | ROUTINE | ROUTINE | ROUTINE |
+| Diazepam | PO | Stiff-person spectrum; muscle spasms; paraneoplastic rigidity | 2 mg :: PO :: BID :: Start 2 mg BID; titrate to effect; max 40 mg/day | Severe respiratory depression; myasthenia gravis; acute narrow-angle glaucoma | Sedation; respiratory depression; tolerance; dependence | - | ROUTINE | ROUTINE | ROUTINE |
+| Melatonin | PO | Sleep-wake disturbance; circadian dysregulation | 3 mg :: PO :: qHS :: Start 3 mg qHS; may increase to 5-10 mg qHS | None significant | Sleep quality; no significant drug interactions | - | ROUTINE | ROUTINE | ROUTINE |
+| Sertraline | PO | Depression and anxiety associated with chronic paraneoplastic neurological syndrome | 25 mg :: PO :: daily :: Start 25-50 mg daily; increase by 25-50 mg q1-2wk; max 200 mg/day | Concurrent MAOIs; QT prolongation (rare) | Suicidality monitoring; hyponatremia (SIADH); GI side effects | - | ROUTINE | ROUTINE | - |
 
 *Note: Symptomatic treatments provide supportive care while immunotherapy and tumor-directed therapy address the underlying cause. Avoid carbamazepine/oxcarbazepine if hyponatremia is present (common in paraneoplastic SIADH). Benzodiazepines are first-line for stiff-person spectrum disorders. Neuropathic pain management follows standard guidelines but may be refractory to conventional agents if the underlying tumor is not treated.*
 
@@ -223,12 +224,12 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Rituximab | IV | Second-line immunotherapy for refractory paraneoplastic syndrome; B-cell depletion; more effective for cell-surface antibody syndromes | 375 mg/m2 weekly x 4 doses; 1000 mg x 2 doses :: IV :: :: 375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0 and day 14); premedicate with methylprednisolone 100 mg, acetaminophen, diphenhydramine | Active hepatitis B; severe active infection; live vaccines within 4 weeks | Hepatitis B serology (before first dose); CBC q2-4 weeks; immunoglobulin levels q3 months; CD19/CD20 B-cell counts; infusion reactions; PML surveillance | - | URGENT | ROUTINE | URGENT |
-| Cyclophosphamide | IV | Second-line immunotherapy for refractory paraneoplastic syndrome; used for intracellular antibody syndromes unresponsive to first-line | 750 mg/m2 monthly x 6 cycles :: IV :: :: 750 mg/m2 IV monthly x 6 cycles; pre-hydrate with 1L NS; administer with MESNA (uroprotection) | Pregnancy; active infection; bone marrow failure; bladder outlet obstruction | CBC weekly x 4 weeks after each cycle (nadir day 10-14); urinalysis; BMP; LFTs; fertility counseling; hemorrhagic cystitis prevention | - | URGENT | ROUTINE | URGENT |
-| Oral prednisone taper | PO | Transition from IV methylprednisolone; sustained immunosuppression during tumor workup | 1 mg/kg daily; 40 mg daily; 20 mg daily; 10 mg daily :: PO :: :: 1 mg/kg/day (max 60 mg) x 2 weeks; taper by 10 mg/week to 20 mg; then by 5 mg/week to discontinuation or low-dose maintenance | Active infection; uncontrolled diabetes; avascular necrosis | Glucose; BP; bone density if prolonged; mood; weight; adrenal insufficiency on taper | - | ROUTINE | ROUTINE | - |
-| Repeated IVIG cycles | IV | Maintenance immunotherapy for partially responsive paraneoplastic syndrome | 0.4 g/kg daily x 5 days; 1 g/kg x 2 days :: IV :: :: IVIG 0.4 g/kg/day x 5 days (repeat q4 weeks) or 1 g/kg x 2 days q4 weeks | IgA deficiency; thromboembolic history | Renal function; headache; IgG trough levels; infusion reactions | - | URGENT | ROUTINE | URGENT |
-| Repeated PLEX cycles | IV | Maintenance plasmapheresis for partially responsive paraneoplastic syndrome | 5 exchanges over 10 days :: IV :: :: 5 exchanges (repeat q4-6 weeks as needed); 1-1.5 plasma volumes per exchange | Hemodynamic instability; sepsis; coagulopathy | Same as first-line PLEX | - | URGENT | - | URGENT |
-| Tocilizumab | IV | Third-line immunotherapy for refractory cases; IL-6 receptor blockade | 8 mg/kg q4 weeks :: IV :: :: 8 mg/kg IV every 4 weeks (max 800 mg/dose) | Active infection; hepatic impairment (ALT >5x ULN); diverticulitis; concurrent live vaccines | CBC, LFTs, lipids q4-8 weeks; infection surveillance; GI perforation risk; neutropenia | - | EXT | EXT | EXT |
+| Rituximab | IV | Second-line immunotherapy for refractory paraneoplastic syndrome; B-cell depletion; more effective for cell-surface antibody syndromes | 375 mg/m2 :: IV :: weekly x 4 doses :: 375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0 and day 14); premedicate with methylprednisolone 100 mg, acetaminophen, diphenhydramine | Active hepatitis B; severe active infection; live vaccines within 4 weeks | Hepatitis B serology (before first dose); CBC q2-4 weeks; immunoglobulin levels q3 months; CD19/CD20 B-cell counts; infusion reactions; PML surveillance | - | URGENT | ROUTINE | URGENT |
+| Cyclophosphamide | IV | Second-line immunotherapy for refractory paraneoplastic syndrome; used for intracellular antibody syndromes unresponsive to first-line | 750 mg/m2 :: IV :: monthly x 6 cycles :: 750 mg/m2 IV monthly x 6 cycles; pre-hydrate with 1L NS; administer with MESNA (uroprotection) | Pregnancy; active infection; bone marrow failure; bladder outlet obstruction | CBC weekly x 4 weeks after each cycle (nadir day 10-14); urinalysis; BMP; LFTs; fertility counseling; hemorrhagic cystitis prevention | - | URGENT | ROUTINE | URGENT |
+| Oral prednisone taper | PO | Transition from IV methylprednisolone; sustained immunosuppression during tumor workup | 1 mg/kg :: PO :: daily :: 1 mg/kg/day (max 60 mg) x 2 weeks; taper by 10 mg/week to 20 mg; then by 5 mg/week to discontinuation or low-dose maintenance | Active infection; uncontrolled diabetes; avascular necrosis | Glucose; BP; bone density if prolonged; mood; weight; adrenal insufficiency on taper | - | ROUTINE | ROUTINE | - |
+| Repeated IVIG cycles | IV | Maintenance immunotherapy for partially responsive paraneoplastic syndrome | 0.4 g/kg :: IV :: daily x 5 days q4 weeks :: 0.4 g/kg/day x 5 days (repeat q4 weeks) or 1 g/kg x 2 days q4 weeks | IgA deficiency; thromboembolic history | Renal function; headache; IgG trough levels; infusion reactions | - | URGENT | ROUTINE | URGENT |
+| Repeated PLEX cycles | IV | Maintenance plasmapheresis for partially responsive paraneoplastic syndrome | 1-1.5 plasma volumes :: IV :: every other day x 5 exchanges q4-6 weeks :: 5 exchanges (repeat q4-6 weeks as needed); 1-1.5 plasma volumes per exchange; albumin replacement preferred | Hemodynamic instability; sepsis; coagulopathy | BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions | - | URGENT | - | URGENT |
+| Tocilizumab | IV | Third-line immunotherapy for refractory cases; IL-6 receptor blockade | 8 mg/kg :: IV :: q4 weeks :: 8 mg/kg IV every 4 weeks (max 800 mg/dose) | Active infection; hepatic impairment (ALT >5x ULN); diverticulitis; concurrent live vaccines | CBC, LFTs, lipids q4-8 weeks; infection surveillance; GI perforation risk; neutropenia | - | EXT | EXT | EXT |
 
 *Note: Second-line therapy should be initiated if no improvement within 2-4 weeks of first-line therapy OR if clinically worsening. For intracellular antibody syndromes (anti-Hu, anti-Yo, anti-Ri), neurological prognosis is often poor despite aggressive immunotherapy -- tumor treatment remains the primary therapeutic intervention. For cell-surface antibody syndromes, escalation to rituximab is associated with improved outcomes. Cyclophosphamide is considered when rituximab fails or for aggressive intracellular antibody syndromes.*
 
@@ -236,12 +237,12 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Rituximab (maintenance) | IV | Long-term immunosuppression for relapse prevention in cell-surface antibody paraneoplastic syndromes | 500 mg q6 months; 1000 mg q6 months :: IV :: :: 500-1000 mg IV every 6 months; re-dose based on CD19/CD20 B-cell repopulation or clinical relapse | Hepatitis B/C serology; quantitative immunoglobulins; CBC; LFTs; chest X-ray; TB screening (QuantiFERON); vaccinations current (no live vaccines within 4 weeks) | Active hepatitis B; severe active infection; live vaccines within 4 weeks; severe hypogammaglobulinemia (IgG <300) | CD19/CD20 counts q3 months; immunoglobulin levels q3-6 months; hepatitis B surveillance; infection monitoring; PML surveillance; CBC q3 months | - | - | ROUTINE | - |
-| Mycophenolate mofetil (CellCept) | PO | Steroid-sparing immunosuppression for maintenance; prevents relapse | 500 mg BID; 1000 mg BID; 1500 mg BID :: PO :: :: Start 500 mg PO BID; increase to 1000 mg PO BID over 2-4 weeks; target 1500-3000 mg/day | CBC; LFTs; pregnancy test (females); contraception plan | Pregnancy (Category D -- teratogenic); active infection | CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms; infection surveillance; pregnancy prevention | - | - | ROUTINE | - |
-| Azathioprine (Imuran) | PO | Steroid-sparing immunosuppression; alternative to mycophenolate | 50 mg daily; 100 mg daily; 150 mg daily :: PO :: :: Start 50 mg PO daily; increase by 50 mg every 2 weeks to target 2-3 mg/kg/day | TPMT genotype/activity (mandatory before starting); CBC; LFTs | TPMT deficiency (myelosuppression risk); pregnancy (relative); concurrent allopurinol (reduce dose by 75%) | TPMT genotype before starting; CBC q2 weeks x 2 months, then monthly; LFTs; pancreatitis; infection surveillance | - | - | ROUTINE | - |
-| Oral prednisone (low-dose maintenance) | PO | Low-dose maintenance immunosuppression while steroid-sparing agent reaches full effect | 5 mg daily; 10 mg daily :: PO :: :: 5-10 mg PO daily; aim to taper off within 3-6 months if on steroid-sparing agent | Poorly controlled diabetes; active infection; avascular necrosis | Glucose; BP; bone density (DEXA if >3 months); weight; mood; cataracts; adrenal assessment on taper | - | - | ROUTINE | - |
-| IVIG (maintenance) | IV | Maintenance immunotherapy for partially responsive paraneoplastic syndrome; especially cell-surface antibody syndromes | 0.4 g/kg q4 weeks; 1 g/kg q4 weeks :: IV :: :: 0.4 g/kg IV every 4 weeks OR 1 g/kg IV every 4-6 weeks; adjust per response | IgA level; renal function; CBC; coagulation screen | IgA deficiency; thromboembolic history; renal failure | Renal function; headache; IgG trough levels; infusion reactions; thrombosis surveillance | - | - | ROUTINE | - |
-| Calcium + Vitamin D (bone protection) | PO | Osteoporosis prevention during prolonged steroid use | 1000-1200 mg calcium + 1000-2000 IU vitamin D daily :: PO :: :: Calcium 1000-1200 mg/day + Vitamin D 1000-2000 IU/day | Hypercalcemia; kidney stones | 25-OH Vitamin D level; calcium; DEXA baseline if anticipated steroid use >3 months | - | ROUTINE | ROUTINE | - |
+| Rituximab (maintenance) | IV | Long-term immunosuppression for relapse prevention in cell-surface antibody paraneoplastic syndromes | 500 mg :: IV :: q6 months :: 500-1000 mg IV every 6 months; re-dose based on CD19/CD20 B-cell repopulation or clinical relapse | Hepatitis B/C serology; quantitative immunoglobulins; CBC; LFTs; chest X-ray; TB screening (QuantiFERON); vaccinations current (no live vaccines within 4 weeks) | Active hepatitis B; severe active infection; live vaccines within 4 weeks; severe hypogammaglobulinemia (IgG <300) | CD19/CD20 counts q3 months; immunoglobulin levels q3-6 months; hepatitis B surveillance; infection monitoring; PML surveillance; CBC q3 months | - | - | ROUTINE | - |
+| Mycophenolate mofetil (CellCept) | PO | Steroid-sparing immunosuppression for maintenance; prevents relapse | 500 mg :: PO :: BID :: Start 500 mg PO BID; increase to 1000 mg PO BID over 2-4 weeks; target 1500-3000 mg/day | CBC; LFTs; pregnancy test (females); contraception plan | Pregnancy (Category D -- teratogenic); active infection | CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms; infection surveillance; pregnancy prevention | - | - | ROUTINE | - |
+| Azathioprine (Imuran) | PO | Steroid-sparing immunosuppression; alternative to mycophenolate | 50 mg :: PO :: daily :: Start 50 mg PO daily; increase by 50 mg every 2 weeks to target 2-3 mg/kg/day | TPMT genotype/activity (mandatory before starting); CBC; LFTs | TPMT deficiency (myelosuppression risk); pregnancy (relative); concurrent allopurinol (reduce dose by 75%) | TPMT genotype before starting; CBC q2 weeks x 2 months, then monthly; LFTs; pancreatitis; infection surveillance | - | - | ROUTINE | - |
+| Oral prednisone (low-dose maintenance) | PO | Low-dose maintenance immunosuppression while steroid-sparing agent reaches full effect | 5 mg :: PO :: daily :: 5-10 mg PO daily; aim to taper off within 3-6 months if on steroid-sparing agent | Baseline glucose; BP; DEXA if anticipated use >3 months | Poorly controlled diabetes; active infection; avascular necrosis | Glucose; BP; bone density (DEXA if >3 months); weight; mood; cataracts; adrenal assessment on taper | - | - | ROUTINE | - |
+| IVIG (maintenance) | IV | Maintenance immunotherapy for partially responsive paraneoplastic syndrome; especially cell-surface antibody syndromes | 0.4 g/kg :: IV :: q4 weeks :: 0.4 g/kg IV every 4 weeks OR 1 g/kg IV every 4-6 weeks; adjust per response | IgA level; renal function; CBC; coagulation screen | IgA deficiency; thromboembolic history; renal failure | Renal function; headache; IgG trough levels; infusion reactions; thrombosis surveillance | - | - | ROUTINE | - |
+| Calcium + Vitamin D (bone protection) | PO | Osteoporosis prevention during prolonged steroid use | 1000-1200 mg calcium + 1000-2000 IU vitamin D :: PO :: daily :: Calcium 1000-1200 mg/day + Vitamin D 1000-2000 IU/day | 25-OH Vitamin D level; calcium level; DEXA baseline if steroid use >3 months | Hypercalcemia; kidney stones; hypervitaminosis D | 25-OH Vitamin D level; calcium; DEXA q1-2 years | - | ROUTINE | ROUTINE | - |
 
 *Note: Long-term immunosuppression is guided by antibody subtype, tumor status, and clinical response. Cell-surface antibody syndromes (anti-NMDAR, anti-LGI1, anti-CASPR2) are more amenable to chronic immunosuppression. Intracellular antibody syndromes (anti-Hu, anti-Yo) have limited benefit from maintenance immunotherapy once neuronal damage has occurred. Duration of therapy is individualized -- typically minimum 2 years for responsive syndromes. Monitor for immunosuppression-related complications (infection, secondary malignancy). Tumor surveillance must continue alongside immunosuppression.*
 
@@ -274,37 +275,37 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient/Family Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Return to ED immediately for new seizures, sudden behavioral changes, worsening weakness, difficulty breathing, or loss of consciousness (may indicate disease progression or autonomic crisis) | Y | Y | Y |
-| Paraneoplastic neurological syndrome is caused by the immune system attacking the nervous system in response to an underlying cancer -- treating the cancer is the most important step in treatment | Y | Y | Y |
-| Neurological recovery depends on antibody type: cell-surface antibody syndromes often improve with treatment; intracellular antibody syndromes may have limited neurological recovery despite tumor treatment | - | Y | Y |
-| Do NOT drive until cleared by neurology due to risk of seizures, cerebellar dysfunction, or cognitive impairment | Y | Y | Y |
-| Report any signs of infection (fever >100.4F, cough, dysuria, rash) immediately while on immunotherapy as immune suppression increases infection risk | - | Y | Y |
-| Avoid live vaccines while on immunosuppressive therapy; inform all healthcare providers of immunosuppression status | - | Y | Y |
-| Do not stop anti-seizure medications abruptly (risk of rebound seizures) | - | Y | Y |
-| Keep a symptom diary documenting neurological changes, seizure frequency, and functional status to track treatment response | - | Y | Y |
-| Cancer screening follow-up appointments are critical -- repeat imaging every 6 months for at least 2 years if initial tumor screen is negative | - | Y | Y |
-| Avoid alcohol and recreational drugs (lower seizure threshold, interact with medications, and may mask neurological changes) | - | Y | Y |
-| Pregnancy must be avoided during immunotherapy; discuss contraception with neurology and OB/GYN | - | Y | Y |
-| Fall prevention measures at home (remove throw rugs, install grab bars, adequate lighting) due to cerebellar ataxia and sensory neuropathy | - | Y | Y |
-| Medical alert bracelet recommended (paraneoplastic syndrome, seizure risk, immunosuppressed) | - | Y | Y |
-| Cognitive rehabilitation exercises as directed by occupational therapy and neuropsychology | - | Y | Y |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Return to ED immediately for new seizures, sudden behavioral changes, worsening weakness, difficulty breathing, or loss of consciousness (may indicate disease progression or autonomic crisis) | Y | Y | Y | - |
+| Paraneoplastic neurological syndrome is caused by the immune system attacking the nervous system in response to an underlying cancer -- treating the cancer is the most important step in treatment | Y | Y | Y | Y |
+| Neurological recovery depends on antibody type: cell-surface antibody syndromes often improve with treatment; intracellular antibody syndromes may have limited neurological recovery despite tumor treatment | - | Y | Y | Y |
+| Do NOT drive until cleared by neurology due to risk of seizures, cerebellar dysfunction, or cognitive impairment | Y | Y | Y | - |
+| Report any signs of infection (fever >100.4F, cough, dysuria, rash) immediately while on immunotherapy as immune suppression increases infection risk | - | Y | Y | - |
+| Avoid live vaccines while on immunosuppressive therapy; inform all healthcare providers of immunosuppression status | - | Y | Y | - |
+| Do not stop anti-seizure medications abruptly (risk of rebound seizures) | - | Y | Y | - |
+| Keep a symptom diary documenting neurological changes, seizure frequency, and functional status to track treatment response | - | Y | Y | - |
+| Cancer screening follow-up appointments are critical -- repeat imaging every 6 months for at least 2 years if initial tumor screen is negative | - | Y | Y | - |
+| Avoid alcohol and recreational drugs (lower seizure threshold, interact with medications, and may mask neurological changes) | - | Y | Y | - |
+| Pregnancy must be avoided during immunotherapy; discuss contraception with neurology and OB/GYN | - | Y | Y | - |
+| Fall prevention measures at home (remove throw rugs, install grab bars, adequate lighting) due to cerebellar ataxia and sensory neuropathy | - | Y | Y | - |
+| Medical alert bracelet recommended (paraneoplastic syndrome, seizure risk, immunosuppressed) | - | Y | Y | - |
+| Cognitive rehabilitation exercises as directed by occupational therapy and neuropsychology | - | Y | Y | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Smoking cessation to reduce lung cancer risk and improve overall oncologic outcomes | - | Y | Y |
-| Low-sodium diet to reduce fluid retention on corticosteroids and manage steroid-induced hypertension | - | Y | Y |
-| Low-impact exercise (swimming, stationary bike, seated exercises) to maintain strength and cardiovascular fitness within functional limitations | - | Y | Y |
-| Energy conservation with scheduled rest periods to manage cancer-related and treatment-related fatigue | - | Y | Y |
-| Aspiration precautions including modified diet texture and supervised meals if bulbar dysfunction present | - | Y | Y |
-| Frequent repositioning every 2 hours to prevent pressure ulcers during immobility | - | Y | - |
-| Calcium and vitamin D supplementation for bone protection during prolonged corticosteroid use | - | Y | Y |
-| Nutritional optimization with dietitian consultation to maintain weight and support immune function during treatment | - | Y | Y |
-| Home safety evaluation to remove fall hazards and install assistive devices for cerebellar ataxia and peripheral neuropathy | - | - | Y |
-| CPAP compliance if obstructive sleep apnea identified during evaluation to prevent nocturnal hypoxia | - | Y | Y |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Smoking cessation to reduce lung cancer risk and improve overall oncologic outcomes | - | Y | Y | - |
+| Low-sodium diet to reduce fluid retention on corticosteroids and manage steroid-induced hypertension | - | Y | Y | - |
+| Low-impact exercise (swimming, stationary bike, seated exercises) to maintain strength and cardiovascular fitness within functional limitations | - | Y | Y | - |
+| Energy conservation with scheduled rest periods to manage cancer-related and treatment-related fatigue | - | Y | Y | - |
+| Aspiration precautions including modified diet texture and supervised meals if bulbar dysfunction present | - | Y | Y | Y |
+| Frequent repositioning every 2 hours to prevent pressure ulcers during immobility | - | Y | - | Y |
+| Calcium and vitamin D supplementation for bone protection during prolonged corticosteroid use | - | Y | Y | - |
+| Nutritional optimization with dietitian consultation to maintain weight and support immune function during treatment | - | Y | Y | Y |
+| Home safety evaluation to remove fall hazards and install assistive devices for cerebellar ataxia and peripheral neuropathy | - | - | Y | - |
+| CPAP compliance if obstructive sleep apnea identified during evaluation to prevent nocturnal hypoxia | - | Y | Y | Y |
 
 ---
 
@@ -478,6 +479,19 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized all dosing fields across Sections 3A, 3B, 3C, 3D to structured format: `[standard_dose] :: [route] :: [frequency] :: [full_instructions]`
+- Fixed empty frequency fields in dosing format (all medications now have populated frequency field)
+- Removed multiple dose tiers from standard_dose field; starting dose used as standard_dose with titration in instructions
+- Added CPT code for uric acid (CPT 84550) in Section 1A
+- Added ICU column to Section 4B (Patient/Family Instructions) and Section 4C (Lifestyle & Prevention) for table consistency
+- Fixed cross-reference "Same as PET/CT" in Section 2C FDG-PET brain row; replaced with explicit contraindications
+- Fixed cross-reference "Same as first-line PLEX" in Section 3C Repeated PLEX row; replaced with explicit monitoring parameters
+- Corrected Section 3D Oral prednisone row: moved contraindications from Pre-Treatment Requirements to Contraindications column; added proper pre-treatment requirements
+- Corrected Section 3D Calcium + Vitamin D row: moved contraindications from Pre-Treatment Requirements to Contraindications column; added proper pre-treatment requirements
+- Added aspiration precautions and repositioning to ICU setting in Section 4C
+- Updated version to 1.1
 
 **v1.0 (January 30, 2026)**
 - Initial template creation

@@ -1,7 +1,7 @@
 ---
 title: "Viral Meningitis"
 description: "Evidence-based clinical decision support for diagnosis, management, and follow-up of viral (aseptic) meningitis"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,8 +20,9 @@ tags:
 
 # Viral Meningitis
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -46,42 +47,42 @@ SECTION A: ACTION ITEMS
 
 ### 1A. Essential/Core Labs
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CBC with differential (CPT 85025) | Infection screen; leukocytosis may be mild or absent in viral meningitis; helps differentiate from bacterial (marked leukocytosis with left shift) | Normal or mild leukocytosis; lymphocyte predominance favors viral | STAT | STAT | ROUTINE | STAT |
-| CMP (BMP + LFTs) (CPT 80053) | Renal function for medication dosing (acyclovir); electrolytes (SIADH risk); hepatic function baseline | Normal; watch sodium for SIADH | STAT | STAT | ROUTINE | STAT |
-| Blood cultures x2 (different sites) (CPT 87040) | MUST be drawn BEFORE empiric antibiotics; exclude concurrent bacteremia; positive blood cultures argue against isolated viral meningitis | No growth (expected in viral meningitis) | STAT | STAT | - | STAT |
-| Procalcitonin (CPT 84145) | Highly useful for distinguishing bacterial from viral meningitis; procalcitonin <0.5 ng/mL strongly argues against bacterial etiology (negative predictive value >95%) | Low (<0.5 ng/mL favors viral; >2.0 ng/mL favors bacterial) | STAT | STAT | - | STAT |
-| CRP (CPT 86140) | Inflammatory marker; typically lower in viral than bacterial meningitis; helps monitor clinical course | Normal to mildly elevated (markedly elevated suggests bacterial) | STAT | STAT | ROUTINE | STAT |
-| Blood glucose (paired with CSF) (CPT 82947) | Calculate CSF:serum glucose ratio; normal ratio (>0.6) expected in viral meningitis; low ratio (<0.4) suggests bacterial, TB, or fungal | Pair with CSF glucose; CSF:serum ratio >0.6 expected | STAT | STAT | - | STAT |
-| Coagulation panel (PT/INR, aPTT) (CPT 85610+85730) | Pre-LP coagulopathy screen; sepsis-associated DIC risk if bacterial meningitis not yet excluded | Normal (coagulopathy argues against benign viral process) | STAT | STAT | - | STAT |
-| Lactate (serum) (CPT 83605) | Sepsis screening; elevated serum lactate suggests systemic bacterial infection rather than viral meningitis | <2 mmol/L (elevated suggests bacterial sepsis) | STAT | STAT | - | STAT |
-| Point-of-care glucose (CPT 82962) | Rapid sepsis and hypoglycemia assessment | >60 mg/dL | STAT | STAT | - | STAT |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Infection screen; leukocytosis may be mild or absent in viral meningitis; helps differentiate from bacterial (marked leukocytosis with left shift) | Normal or mild leukocytosis; lymphocyte predominance favors viral |
+| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | STAT | Renal function for medication dosing (acyclovir); electrolytes (SIADH risk); hepatic function baseline | Normal; watch sodium for SIADH |
+| Blood cultures x2 (different sites) (CPT 87040) | STAT | STAT | - | STAT | MUST be drawn BEFORE empiric antibiotics; exclude concurrent bacteremia; positive blood cultures argue against isolated viral meningitis | No growth (expected in viral meningitis) |
+| Procalcitonin (CPT 84145) | STAT | STAT | - | STAT | Highly useful for distinguishing bacterial from viral meningitis; procalcitonin <0.5 ng/mL strongly argues against bacterial etiology (negative predictive value >95%) | Low (<0.5 ng/mL favors viral; >2.0 ng/mL favors bacterial) |
+| CRP (CPT 86140) | STAT | STAT | ROUTINE | STAT | Inflammatory marker; typically lower in viral than bacterial meningitis; helps monitor clinical course | Normal to mildly elevated (markedly elevated suggests bacterial) |
+| Blood glucose (paired with CSF) (CPT 82947) | STAT | STAT | - | STAT | Calculate CSF:serum glucose ratio; normal ratio (>0.6) expected in viral meningitis; low ratio (<0.4) suggests bacterial, TB, or fungal | Pair with CSF glucose; CSF:serum ratio >0.6 expected |
+| Coagulation panel (PT/INR, aPTT) (CPT 85610+85730) | STAT | STAT | - | STAT | Pre-LP coagulopathy screen; sepsis-associated DIC risk if bacterial meningitis not yet excluded | Normal (coagulopathy argues against benign viral process) |
+| Lactate (serum) (CPT 83605) | STAT | STAT | - | STAT | Sepsis screening; elevated serum lactate suggests systemic bacterial infection rather than viral meningitis | <2 mmol/L (elevated suggests bacterial sepsis) |
+| Point-of-care glucose (CPT 82962) | STAT | STAT | - | STAT | Rapid sepsis and hypoglycemia assessment | >60 mg/dL |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| HIV 1/2 antigen/antibody (4th gen) (CPT 87389) | ALL patients with viral meningitis should be tested for HIV; acute HIV seroconversion is an important cause of aseptic meningitis (present in 10-17% of acute HIV); missed HIV has major treatment implications | Negative; if positive, obtain viral load and CD4 count | URGENT | ROUTINE | ROUTINE | URGENT |
-| HIV viral load (RNA PCR) (CPT 87536) | If acute HIV seroconversion suspected (high-risk exposure, rash, pharyngitis, lymphadenopathy); antibody test may be negative early | Negative; if positive, confirms acute HIV infection | - | ROUTINE | ROUTINE | - |
-| Serum osmolality (CPT 83930) | SIADH assessment (can occur with any meningitis, though less common in viral than bacterial) | 280-295 mOsm/kg | URGENT | ROUTINE | - | URGENT |
-| TSH (CPT 84443) | Thyroid dysfunction in altered mental status differential | Normal | - | ROUTINE | ROUTINE | - |
-| RPR/VDRL (serum) (CPT 86592) | Neurosyphilis can mimic viral meningitis with lymphocytic CSF; screen in sexually active adults | Negative | - | ROUTINE | ROUTINE | - |
-| Hepatitis B surface antigen, Hepatitis C antibody | Concurrent viral hepatitis screen; shared risk factors with HIV; affects management | Negative | - | ROUTINE | ROUTINE | - |
-| Monospot / EBV VCA IgM (CPT 86308) | EBV meningitis in differential (infectious mononucleosis); pharyngitis, lymphadenopathy, splenomegaly | Negative | - | ROUTINE | ROUTINE | - |
-| Serum tryptase or ACE level | Sarcoidosis (neurosarcoidosis mimics chronic aseptic meningitis); obtain if recurrent or atypical | Normal | - | EXT | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| HIV 1/2 antigen/antibody (4th gen) (CPT 87389) | URGENT | ROUTINE | ROUTINE | URGENT | ALL patients with viral meningitis should be tested for HIV; acute HIV seroconversion is an important cause of aseptic meningitis (present in 10-17% of acute HIV); missed HIV has major treatment implications | Negative; if positive, obtain viral load and CD4 count |
+| HIV viral load (RNA PCR) (CPT 87536) | - | ROUTINE | ROUTINE | - | If acute HIV seroconversion suspected (high-risk exposure, rash, pharyngitis, lymphadenopathy); antibody test may be negative early | Negative; if positive, confirms acute HIV infection |
+| Serum osmolality (CPT 83930) | URGENT | ROUTINE | - | URGENT | SIADH assessment (can occur with any meningitis, though less common in viral than bacterial) | 280-295 mOsm/kg |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid dysfunction in altered mental status differential | Normal |
+| RPR/VDRL (serum) (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis can mimic viral meningitis with lymphocytic CSF; screen in sexually active adults | Negative |
+| Hepatitis B surface antigen, Hepatitis C antibody | - | ROUTINE | ROUTINE | - | Concurrent viral hepatitis screen; shared risk factors with HIV; affects management | Negative |
+| Monospot / EBV VCA IgM (CPT 86308) | - | ROUTINE | ROUTINE | - | EBV meningitis in differential (infectious mononucleosis); pharyngitis, lymphadenopathy, splenomegaly | Negative |
+| Serum tryptase or ACE level | - | EXT | ROUTINE | - | Sarcoidosis (neurosarcoidosis mimics chronic aseptic meningitis); obtain if recurrent or atypical | Normal |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Arboviral serologies (West Nile IgM/IgG, Eastern equine, St. Louis encephalitis) | Seasonal (summer-fall); geographic risk; mosquito exposure; West Nile virus can cause meningitis in addition to encephalitis | Negative; if positive, confirms arboviral etiology (supportive care only) | - | ROUTINE | ROUTINE | ROUTINE |
-| Cryptococcal antigen (serum) (CPT 87327) | If immunocompromised (HIV, transplant, chronic steroids); chronic meningitis presentation; headache predominant | Negative (<60 pg/mL) | - | ROUTINE | - | ROUTINE |
-| QuantiFERON-TB Gold / T-SPOT | TB meningitis in differential (subacute, basilar, low glucose); high-risk populations (immigrants, HIV, incarcerated) | Negative | - | ROUTINE | ROUTINE | ROUTINE |
-| Beta-D-glucan (serum) | If fungal meningitis suspected (immunocompromised, chronic presentation) | Negative (<60 pg/mL) | - | EXT | EXT | EXT |
-| Autoimmune encephalitis panel (serum) (CPT 86255) | If recurrent aseptic meningitis or encephalitic features; NMDAR, LGI1, CASPR2 antibodies | Negative | - | EXT | EXT | EXT |
-| Complement levels (C3, C4, CH50) | Recurrent meningitis; complement deficiency predisposes to Neisseria infection | Normal | - | EXT | ROUTINE | - |
-| Immunoglobulin levels (IgG, IgA, IgM) | Recurrent meningitis; hypogammaglobulinemia predisposes to recurrent infections | Normal | - | EXT | ROUTINE | - |
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Arboviral serologies (West Nile IgM/IgG, Eastern equine, St. Louis encephalitis) | - | ROUTINE | ROUTINE | ROUTINE | Seasonal (summer-fall); geographic risk; mosquito exposure; West Nile virus can cause meningitis in addition to encephalitis | Negative; if positive, confirms arboviral etiology (supportive care only) |
+| Cryptococcal antigen (serum) (CPT 87327) | - | ROUTINE | - | ROUTINE | If immunocompromised (HIV, transplant, chronic steroids); chronic meningitis presentation; headache predominant | Negative (<60 pg/mL) |
+| QuantiFERON-TB Gold / T-SPOT | - | ROUTINE | ROUTINE | ROUTINE | TB meningitis in differential (subacute, basilar, low glucose); high-risk populations (immigrants, HIV, incarcerated) | Negative |
+| Beta-D-glucan (serum) | - | EXT | EXT | EXT | If fungal meningitis suspected (immunocompromised, chronic presentation) | Negative (<60 pg/mL) |
+| Autoimmune encephalitis panel (serum) (CPT 86255) | - | EXT | EXT | EXT | If recurrent aseptic meningitis or encephalitic features; NMDAR, LGI1, CASPR2 antibodies | Negative |
+| Complement levels (C3, C4, CH50) | - | EXT | ROUTINE | - | Recurrent meningitis; complement deficiency predisposes to Neisseria infection | Normal |
+| Immunoglobulin levels (IgG, IgA, IgM) | - | EXT | ROUTINE | - | Recurrent meningitis; hypogammaglobulinemia predisposes to recurrent infections | Normal |
 
 ---
 
@@ -120,24 +121,24 @@ SECTION A: ACTION ITEMS
 
 **Opening Pressure:** ALWAYS measure and document.
 
-| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|-------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Opening pressure | Usually normal or mildly elevated in viral meningitis; markedly elevated suggests bacterial, fungal, or TB meningitis | Normal to mildly elevated (10-25 cm H2O); >30 cm H2O uncommon in viral — consider alternative diagnosis | STAT | ROUTINE | ROUTINE | STAT |
-| Cell count with differential (tubes 1 AND 4) (CPT 89051) | HALLMARK: Lymphocytic pleocytosis; tube 1 vs 4 comparison differentiates traumatic tap; early viral meningitis (<48h) may show neutrophil predominance that shifts to lymphocytes on repeat LP | WBC 10-500 cells/uL with lymphocyte predominance (>50%); NOTE: early viral meningitis may have neutrophil predominance in first 24-48h | STAT | ROUTINE | ROUTINE | STAT |
-| Protein (CPT 84157) | Mildly elevated in viral meningitis; markedly elevated (>200 mg/dL) suggests bacterial, TB, or fungal | Normal to mildly elevated (50-100 mg/dL); >200 mg/dL argues against simple viral meningitis | STAT | ROUTINE | ROUTINE | STAT |
-| Glucose with paired serum glucose (CPT 82945) | NORMAL glucose is key differentiator from bacterial meningitis; CSF:serum ratio >0.6 expected in viral | Normal (>40 mg/dL; CSF:serum ratio >0.6); LOW glucose (<40 or ratio <0.4) argues strongly against viral — consider bacterial, TB, fungal, or carcinomatous meningitis | STAT | ROUTINE | ROUTINE | STAT |
-| Gram stain (CPT 87205) | Rule out bacterial meningitis; should be NEGATIVE in viral meningitis | No organisms seen (negative Gram stain expected) | STAT | ROUTINE | - | STAT |
-| Bacterial culture and sensitivity (CPT 87070) | Gold standard to exclude bacterial meningitis; negative cultures at 48-72h help confirm viral etiology | No growth at 48-72h (expected in viral meningitis) | STAT | ROUTINE | - | STAT |
-| BioFire FilmArray Meningitis/Encephalitis Panel (CPT 87483) | Rapid multiplex PCR (~1 hour turnaround); identifies 14 pathogens: 6 bacteria (E. coli K1, H. influenzae, L. monocytogenes, N. meningitidis, S. agalactiae, S. pneumoniae), 7 viruses (CMV, enterovirus, HSV-1, HSV-2, HHV-6, parechovirus, VZV), and Cryptococcus neoformans/gattii | Viral pathogen identified (most commonly enterovirus); negative for bacterial pathogens allows de-escalation of empiric antibiotics | STAT | STAT | - | STAT |
-| Enterovirus PCR (CSF) (CPT 87498) | Most common cause of viral meningitis (50-80% of identified cases); summer-fall seasonality; rapid confirmation allows discontinuation of empiric antibiotics and acyclovir | Positive in enteroviral meningitis; negative does not exclude viral etiology | STAT | ROUTINE | - | STAT |
-| HSV-1/2 PCR (CSF) (CPT 87529) | CRITICAL: Exclude HSV encephalitis (treatable and fatal if missed); HSV-2 causes benign recurrent (Mollaret) meningitis | Negative (positive HSV-1 → treat as HSV encephalitis; positive HSV-2 → Mollaret meningitis, consider suppressive therapy) | STAT | ROUTINE | - | STAT |
-| VZV PCR (CSF) | VZV meningitis can occur with or without rash (zoster sine herpete); immunocompromised patients at higher risk | Negative; if positive → IV acyclovir treatment indicated | URGENT | ROUTINE | ROUTINE | URGENT |
-| CSF lactate | CSF lactate <3.5 mmol/L strongly argues against bacterial meningitis (sensitivity ~93%, specificity ~96%); valuable when Gram stain negative and clinical picture unclear | <3.5 mmol/L (viral); >3.5 mmol/L (bacterial) | STAT | ROUTINE | - | STAT |
-| West Nile virus IgM (CSF) | Summer-fall; mosquito exposure; elderly; flaccid paralysis; encephalitic features | Negative; if positive, confirms WNV neuroinvasive disease (supportive care) | - | ROUTINE | ROUTINE | ROUTINE |
-| Cryptococcal antigen (CSF) (CPT 87327) | If immunocompromised (HIV, transplant); subacute or chronic meningitis | Negative | - | ROUTINE | - | ROUTINE |
-| Cytology (CPT 88104) | If malignancy in differential (subacute, cranial neuropathies, known cancer) | Negative for malignant cells | - | ROUTINE | - | - |
-| VDRL (CSF) (CPT 86592) | Neurosyphilis screen; lymphocytic CSF with normal glucose | Negative | - | ROUTINE | ROUTINE | - |
-| AFB smear and culture (CPT 87116) | If TB meningitis suspected (subacute presentation, basilar enhancement, low glucose, high protein, immigrant/HIV) | Negative | - | ROUTINE | - | ROUTINE |
+| Study | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|-------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Opening pressure | STAT | ROUTINE | ROUTINE | STAT | Usually normal or mildly elevated in viral meningitis; markedly elevated suggests bacterial, fungal, or TB meningitis | Normal to mildly elevated (10-25 cm H2O); >30 cm H2O uncommon in viral — consider alternative diagnosis |
+| Cell count with differential (tubes 1 AND 4) (CPT 89051) | STAT | ROUTINE | ROUTINE | STAT | HALLMARK: Lymphocytic pleocytosis; tube 1 vs 4 comparison differentiates traumatic tap; early viral meningitis (<48h) may show neutrophil predominance that shifts to lymphocytes on repeat LP | WBC 10-500 cells/uL with lymphocyte predominance (>50%); NOTE: early viral meningitis may have neutrophil predominance in first 24-48h |
+| Protein (CPT 84157) | STAT | ROUTINE | ROUTINE | STAT | Mildly elevated in viral meningitis; markedly elevated (>200 mg/dL) suggests bacterial, TB, or fungal | Normal to mildly elevated (50-100 mg/dL); >200 mg/dL argues against simple viral meningitis |
+| Glucose with paired serum glucose (CPT 82945) | STAT | ROUTINE | ROUTINE | STAT | NORMAL glucose is key differentiator from bacterial meningitis; CSF:serum ratio >0.6 expected in viral | Normal (>40 mg/dL; CSF:serum ratio >0.6); LOW glucose (<40 or ratio <0.4) argues strongly against viral — consider bacterial, TB, fungal, or carcinomatous meningitis |
+| Gram stain (CPT 87205) | STAT | ROUTINE | - | STAT | Rule out bacterial meningitis; should be NEGATIVE in viral meningitis | No organisms seen (negative Gram stain expected) |
+| Bacterial culture and sensitivity (CPT 87070) | STAT | ROUTINE | - | STAT | Gold standard to exclude bacterial meningitis; negative cultures at 48-72h help confirm viral etiology | No growth at 48-72h (expected in viral meningitis) |
+| BioFire FilmArray Meningitis/Encephalitis Panel (CPT 87483) | STAT | STAT | - | STAT | Rapid multiplex PCR (~1 hour turnaround); identifies 14 pathogens: 6 bacteria (E. coli K1, H. influenzae, L. monocytogenes, N. meningitidis, S. agalactiae, S. pneumoniae), 7 viruses (CMV, enterovirus, HSV-1, HSV-2, HHV-6, parechovirus, VZV), and Cryptococcus neoformans/gattii | Viral pathogen identified (most commonly enterovirus); negative for bacterial pathogens allows de-escalation of empiric antibiotics |
+| Enterovirus PCR (CSF) (CPT 87498) | STAT | ROUTINE | - | STAT | Most common cause of viral meningitis (50-80% of identified cases); summer-fall seasonality; rapid confirmation allows discontinuation of empiric antibiotics and acyclovir | Positive in enteroviral meningitis; negative does not exclude viral etiology |
+| HSV-1/2 PCR (CSF) (CPT 87529) | STAT | ROUTINE | - | STAT | CRITICAL: Exclude HSV encephalitis (treatable and fatal if missed); HSV-2 causes benign recurrent (Mollaret) meningitis | Negative (positive HSV-1 → treat as HSV encephalitis; positive HSV-2 → Mollaret meningitis, consider suppressive therapy) |
+| VZV PCR (CSF) | URGENT | ROUTINE | ROUTINE | URGENT | VZV meningitis can occur with or without rash (zoster sine herpete); immunocompromised patients at higher risk | Negative; if positive → IV acyclovir treatment indicated |
+| CSF lactate | STAT | ROUTINE | - | STAT | CSF lactate <3.5 mmol/L strongly argues against bacterial meningitis (sensitivity ~93%, specificity ~96%); valuable when Gram stain negative and clinical picture unclear | <3.5 mmol/L (viral); >3.5 mmol/L (bacterial) |
+| West Nile virus IgM (CSF) | - | ROUTINE | ROUTINE | ROUTINE | Summer-fall; mosquito exposure; elderly; flaccid paralysis; encephalitic features | Negative; if positive, confirms WNV neuroinvasive disease (supportive care) |
+| Cryptococcal antigen (CSF) (CPT 87327) | - | ROUTINE | - | ROUTINE | If immunocompromised (HIV, transplant); subacute or chronic meningitis | Negative |
+| Cytology (CPT 88104) | - | ROUTINE | - | - | If malignancy in differential (subacute, cranial neuropathies, known cancer) | Negative for malignant cells |
+| VDRL (CSF) (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis screen; lymphocytic CSF with normal glucose | Negative |
+| AFB smear and culture (CPT 87116) | - | ROUTINE | - | ROUTINE | If TB meningitis suspected (subacute presentation, basilar enhancement, low glucose, high protein, immigrant/HIV) | Negative |
 
 **Special Handling:** BioFire ME Panel provides results in ~1 hour — prioritize this test for rapid de-escalation of empiric antibiotics. CSF viral cultures have low sensitivity and are NOT recommended as first-line. Save extra CSF (frozen at -80C) for additional testing if needed.
 
@@ -160,43 +161,43 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Ceftriaxone IV (empiric — until bacterial meningitis excluded) (CPT 96374) | IV | Empiric bacterial coverage; covers S. pneumoniae, N. meningitidis, H. influenzae, gram-negatives; continue until CSF cultures negative at 48-72h and BioFire negative for bacteria | 2 g q12h :: IV :: :: 2 g IV q12h; start within 30 minutes of presentation; discontinue when bacterial meningitis excluded (negative Gram stain + negative BioFire + CSF consistent with viral + cultures negative at 48-72h) | Cephalosporin allergy (true anaphylaxis — use chloramphenicol or meropenem as alternative) | CBC; LFTs; biliary sludge with prolonged use | STAT | STAT | - | STAT |
-| Vancomycin IV (empiric — until bacterial meningitis excluded) (CPT 96365) | IV | Covers penicillin-resistant S. pneumoniae and MRSA; essential component of empiric bacterial meningitis coverage | 15-20 mg/kg q8-12h :: IV :: :: 15-20 mg/kg IV q8-12h (target trough 15-20 ug/mL or AUC/MIC 400-600); loading dose 25-30 mg/kg if severe; discontinue when bacterial meningitis excluded | Red man syndrome (infuse over 1h minimum); renal impairment (dose adjust) | Trough levels before 4th dose; renal function daily; watch nephrotoxicity and ototoxicity | STAT | STAT | - | STAT |
-| Ampicillin IV (add if age >50, immunocompromised, or alcoholism) (CPT 96374) | IV | Covers Listeria monocytogenes (resistant to cephalosporins); add to vancomycin + ceftriaxone if risk factors present: age >50, immunocompromised, alcoholism, pregnancy | 2 g q4h :: IV :: :: 2 g IV q4h; discontinue when bacterial meningitis excluded and Listeria not identified | Penicillin anaphylaxis (use TMP-SMX as Listeria alternative) | Rash; renal function | STAT | STAT | - | STAT |
-| Acyclovir IV (empiric — until HSV excluded) (CPT 96365) | IV | CRITICAL: Empiric HSV coverage; HSV encephalitis is fatal if untreated; start on ALL patients with meningitis until HSV PCR returns negative and no encephalitic features present | 10 mg/kg q8h :: IV :: :: 10 mg/kg IV q8h (based on ideal body weight); infuse over 1h; discontinue when HSV PCR negative AND no encephalitic features (confusion, focal deficits, seizures, temporal lobe MRI changes). CrCl 25-50: q12h; CrCl 10-25: q24h | Renal impairment (dose adjust; do NOT withhold) | Renal function (BUN, Cr) daily; ensure adequate hydration (1 mL/kg/h); urine output; acyclovir crystal nephropathy risk | STAT | STAT | - | STAT |
-| Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) | IV | Give empirically with antibiotics; greatest benefit if bacterial meningitis (especially S. pneumoniae); discontinue when bacterial meningitis excluded | 0.15 mg/kg q6h x 4 days :: IV :: :: 0.15 mg/kg IV q6h (typically 10 mg IV q6h) x 4 days; MUST be given BEFORE or simultaneously with first antibiotic dose; discontinue when bacterial meningitis excluded; no proven benefit in viral meningitis | Not beneficial if antibiotics already started >1h prior | Glucose q6h; GI prophylaxis; blood pressure | STAT | STAT | - | STAT |
-| IV normal saline | IV | Volume resuscitation; maintain hydration for acyclovir clearance (prevent crystal nephropathy); correct dehydration from poor oral intake, vomiting | Maintenance 1-1.5 mL/kg/h :: IV :: :: 1-1.5 mL/kg/h continuous; bolus 500-1000 mL if dehydrated or hypotensive | Volume overload; CHF | I/O; electrolytes q6-12h; watch for SIADH (fluid restrict if Na <130) | STAT | STAT | - | STAT |
+| Ceftriaxone IV (empiric — until bacterial meningitis excluded) (CPT 96374) | IV | Empiric bacterial coverage; covers S. pneumoniae, N. meningitidis, H. influenzae, gram-negatives; continue until CSF cultures negative at 48-72h and BioFire negative for bacteria | 2 g :: IV :: q12h :: 2 g IV q12h; start within 30 minutes of presentation; discontinue when bacterial meningitis excluded (negative Gram stain + negative BioFire + CSF consistent with viral + cultures negative at 48-72h) | Cephalosporin allergy (true anaphylaxis — use chloramphenicol or meropenem as alternative) | CBC; LFTs; biliary sludge with prolonged use | STAT | STAT | - | STAT |
+| Vancomycin IV (empiric — until bacterial meningitis excluded) (CPT 96365) | IV | Covers penicillin-resistant S. pneumoniae and MRSA; essential component of empiric bacterial meningitis coverage | 15-20 mg/kg :: IV :: q8-12h :: 15-20 mg/kg IV q8-12h (target trough 15-20 ug/mL or AUC/MIC 400-600); loading dose 25-30 mg/kg if severe; discontinue when bacterial meningitis excluded | Red man syndrome (infuse over 1h minimum); renal impairment (dose adjust) | Trough levels before 4th dose; renal function daily; watch nephrotoxicity and ototoxicity | STAT | STAT | - | STAT |
+| Ampicillin IV (add if age >50, immunocompromised, or alcoholism) (CPT 96374) | IV | Covers Listeria monocytogenes (resistant to cephalosporins); add to vancomycin + ceftriaxone if risk factors present: age >50, immunocompromised, alcoholism, pregnancy | 2 g :: IV :: q4h :: 2 g IV q4h; discontinue when bacterial meningitis excluded and Listeria not identified | Penicillin anaphylaxis (use TMP-SMX as Listeria alternative) | Rash; renal function | STAT | STAT | - | STAT |
+| Acyclovir IV (empiric — until HSV excluded) (CPT 96365) | IV | CRITICAL: Empiric HSV coverage; HSV encephalitis is fatal if untreated; start on ALL patients with meningitis until HSV PCR returns negative and no encephalitic features present | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h (based on ideal body weight); infuse over 1h; discontinue when HSV PCR negative AND no encephalitic features (confusion, focal deficits, seizures, temporal lobe MRI changes). CrCl 25-50: q12h; CrCl 10-25: q24h | Renal impairment (dose adjust; do NOT withhold) | Renal function (BUN, Cr) daily; ensure adequate hydration (1 mL/kg/h); urine output; acyclovir crystal nephropathy risk | STAT | STAT | - | STAT |
+| Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) | IV | Give empirically with antibiotics; greatest benefit if bacterial meningitis (especially S. pneumoniae); discontinue when bacterial meningitis excluded | 0.15 mg/kg :: IV :: q6h x 4 days :: 0.15 mg/kg IV q6h (typically 10 mg IV q6h) x 4 days; MUST be given BEFORE or simultaneously with first antibiotic dose; discontinue when bacterial meningitis excluded; no proven benefit in viral meningitis | Not beneficial if antibiotics already started >1h prior | Glucose q6h; GI prophylaxis; blood pressure | STAT | STAT | - | STAT |
+| IV normal saline | IV | Volume resuscitation; maintain hydration for acyclovir clearance (prevent crystal nephropathy); correct dehydration from poor oral intake, vomiting | 1-1.5 mL/kg/h :: IV :: continuous :: 1-1.5 mL/kg/h continuous maintenance; bolus 500-1000 mL if dehydrated or hypotensive | Volume overload; CHF | I/O; electrolytes q6-12h; watch for SIADH (fluid restrict if Na <130) | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Acetaminophen | PO/IV | Headache and fever reduction; first-line analgesic and antipyretic for viral meningitis | 650-1000 mg q6h :: PO :: :: 650-1000 mg PO/IV q6h; max 4 g/day; IV formulation for patients unable to take PO | Severe hepatic disease (Child-Pugh C); acetaminophen allergy | Temperature; LFTs if prolonged use; total daily dose | STAT | STAT | ROUTINE | STAT |
-| Ibuprofen | PO | Headache and fever; anti-inflammatory for meningeal inflammation; may be more effective than acetaminophen alone for meningitis headache | 400-600 mg q6h :: PO :: :: 400-600 mg PO q6h with food; max 2400 mg/day; use in combination with acetaminophen for refractory headache | Renal impairment; GI bleed risk; coagulopathy; allergy; dehydration | Renal function; GI symptoms; avoid if not adequately hydrated | URGENT | ROUTINE | ROUTINE | - |
-| Ketorolac | IV/IM | Severe headache refractory to oral analgesics; potent anti-inflammatory; short-term use only | 15-30 mg q6h :: IV :: :: 15-30 mg IV q6h (15 mg if age >65, renal impairment, or weight <50 kg); max 5 days; transition to oral NSAID | Renal impairment; GI bleed; coagulopathy; age >65 (dose reduce); concurrent anticoagulants | Renal function daily; GI symptoms; limit to 5 days maximum | STAT | URGENT | - | STAT |
-| Ondansetron | IV/PO | Nausea and vomiting (common with meningitis; worsened by meningeal irritation) | 4 mg q6h PRN :: IV :: :: 4 mg IV/PO q6h PRN; may increase to 8 mg q6h if refractory | QT prolongation; congenital long QT syndrome | QTc if risk factors or concurrent QT-prolonging medications | STAT | ROUTINE | ROUTINE | STAT |
-| Metoclopramide | IV | Nausea refractory to ondansetron; also has prokinetic effect | 10 mg q6h PRN :: IV :: :: 10 mg IV q6-8h PRN; max 30 days use (tardive dyskinesia risk) | Parkinson disease; history of tardive dyskinesia; bowel obstruction; pheochromocytoma | Extrapyramidal symptoms; tardive dyskinesia (limit duration) | URGENT | ROUTINE | - | URGENT |
-| Prochlorperazine | IV/PO | Nausea and vomiting refractory to ondansetron; also effective for headache with nausea | 5-10 mg q6h PRN :: IV :: :: 5-10 mg IV q6-8h PRN; max 40 mg/day | Parkinson disease; seizure history (lowers threshold); QT prolongation | Extrapyramidal symptoms; QTc; sedation | URGENT | ROUTINE | - | URGENT |
-| IV fluids (maintenance) | IV | Maintain hydration during period of poor oral intake; support acyclovir clearance; replace insensible losses from fever | 75-125 mL/h :: IV :: :: 75-125 mL/h 0.9% normal saline or LR; adjust based on I/O and clinical status | Volume overload; SIADH (restrict if Na <130) | Electrolytes q12-24h; I/O; daily weight | STAT | STAT | - | STAT |
-| Pantoprazole | IV/PO | GI prophylaxis if receiving dexamethasone or if critical illness | 40 mg daily :: IV :: :: 40 mg IV/PO daily; discontinue when dexamethasone stopped | C. diff risk with prolonged use | GI symptoms | - | ROUTINE | - | ROUTINE |
+| Acetaminophen | PO/IV | Headache and fever reduction; first-line analgesic and antipyretic for viral meningitis | 650-1000 mg :: PO :: q6h :: 650-1000 mg PO/IV q6h; max 4 g/day; IV formulation for patients unable to take PO | Severe hepatic disease (Child-Pugh C); acetaminophen allergy | Temperature; LFTs if prolonged use; total daily dose | STAT | STAT | ROUTINE | STAT |
+| Ibuprofen | PO | Headache and fever; anti-inflammatory for meningeal inflammation; may be more effective than acetaminophen alone for meningitis headache | 400-600 mg :: PO :: q6h :: 400-600 mg PO q6h with food; max 2400 mg/day; use in combination with acetaminophen for refractory headache | Renal impairment; GI bleed risk; coagulopathy; allergy; dehydration | Renal function; GI symptoms; avoid if not adequately hydrated | URGENT | ROUTINE | ROUTINE | - |
+| Ketorolac | IV/IM | Severe headache refractory to oral analgesics; potent anti-inflammatory; short-term use only | 15-30 mg :: IV :: q6h :: 15-30 mg IV q6h (15 mg if age >65, renal impairment, or weight <50 kg); max 5 days; transition to oral NSAID | Renal impairment; GI bleed; coagulopathy; age >65 (dose reduce); concurrent anticoagulants | Renal function daily; GI symptoms; limit to 5 days maximum | STAT | URGENT | - | STAT |
+| Ondansetron | IV/PO | Nausea and vomiting (common with meningitis; worsened by meningeal irritation) | 4 mg :: IV :: q6h PRN :: 4 mg IV/PO q6h PRN; may increase to 8 mg q6h if refractory | QT prolongation; congenital long QT syndrome | QTc if risk factors or concurrent QT-prolonging medications | STAT | ROUTINE | ROUTINE | STAT |
+| Metoclopramide | IV | Nausea refractory to ondansetron; also has prokinetic effect | 10 mg :: IV :: q6h PRN :: 10 mg IV q6-8h PRN; max 30 days use (tardive dyskinesia risk) | Parkinson disease; history of tardive dyskinesia; bowel obstruction; pheochromocytoma | Extrapyramidal symptoms; tardive dyskinesia (limit duration) | URGENT | ROUTINE | - | URGENT |
+| Prochlorperazine | IV/PO | Nausea and vomiting refractory to ondansetron; also effective for headache with nausea | 5-10 mg :: IV :: q6h PRN :: 5-10 mg IV q6-8h PRN; max 40 mg/day | Parkinson disease; seizure history (lowers threshold); QT prolongation | Extrapyramidal symptoms; QTc; sedation | URGENT | ROUTINE | - | URGENT |
+| IV fluids (maintenance) | IV | Maintain hydration during period of poor oral intake; support acyclovir clearance; replace insensible losses from fever | 75-125 mL/h :: IV :: continuous :: 75-125 mL/h 0.9% normal saline or LR; adjust based on I/O and clinical status | Volume overload; SIADH (restrict if Na <130) | Electrolytes q12-24h; I/O; daily weight | STAT | STAT | - | STAT |
+| Pantoprazole | IV/PO | GI prophylaxis if receiving dexamethasone or if critical illness | 40 mg :: IV :: daily :: 40 mg IV/PO daily; discontinue when dexamethasone stopped | C. diff risk with prolonged use | GI symptoms | - | ROUTINE | - | ROUTINE |
 
 ### 3C. Second-line/Refractory
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Morphine | IV | Severe headache refractory to acetaminophen + NSAIDs; use sparingly and short-term only; avoid in patients who can tolerate oral analgesics | 2-4 mg q3-4h PRN :: IV :: :: 2-4 mg IV q3-4h PRN; titrate to pain relief; minimize use; transition to non-opioid regimen as soon as possible | Respiratory depression; altered mental status; opioid allergy; ileus | Respiratory rate; sedation level; pain scores; bowel function | URGENT | URGENT | - | URGENT |
-| Valacyclovir (for HSV-2 Mollaret meningitis) | PO | Suppressive antiviral therapy for recurrent HSV-2 meningitis (Mollaret meningitis); reduces frequency and severity of recurrences | 500 mg BID; 1000 mg daily :: PO :: :: 500 mg PO BID or 1000 mg PO daily for suppressive therapy; duration individualized (months to years); discuss risk/benefit with patient | Renal impairment (dose adjust); thrombotic thrombocytopenic purpura (rare, high dose) | Renal function at baseline and periodically; CBC if prolonged use | - | ROUTINE | ROUTINE | - |
-| Acyclovir IV (for confirmed VZV meningitis) | IV | Targeted therapy for VZV meningitis (with or without rash); immunocompromised patients require IV therapy; immunocompetent may be treated with oral valacyclovir if mild | 10 mg/kg q8h :: IV :: :: 10 mg/kg IV q8h (based on ideal body weight) x 10-14 days; transition to oral valacyclovir 1000 mg PO TID when clinically improving | Renal impairment (dose adjust) | Renal function daily; adequate hydration; urine output | - | STAT | - | STAT |
-| Valacyclovir (for VZV meningitis — oral step-down) | PO | Oral step-down for VZV meningitis in immunocompetent patients who are clinically improving; total treatment duration 10-14 days | 1000 mg TID :: PO :: :: 1000 mg PO TID; complete total 10-14 day course (combined IV + PO) | Renal impairment (dose adjust) | Renal function | - | ROUTINE | ROUTINE | - |
-| Levetiracetam (if seizures occur) | IV/PO | Seizure management if seizures develop (uncommon in uncomplicated viral meningitis; suggests encephalitis component); NOT routine prophylaxis | 1000-1500 mg BID :: IV :: :: 1000-1500 mg IV load then 500-1000 mg IV/PO BID; max 3000 mg/day | Severe renal impairment (dose adjust) | Renal function; mood/behavioral changes | STAT | STAT | - | STAT |
-| Lorazepam (seizure rescue) | IV | Active seizure rescue; rare in isolated viral meningitis; more common if encephalitis component | 0.1 mg/kg IV push :: IV :: :: 0.1 mg/kg IV (max 4 mg); may repeat x1 in 5 min | Respiratory depression | Respiratory rate; SpO2; airway equipment ready | STAT | STAT | - | STAT |
-| Mannitol 20% (if elevated ICP) | IV | Elevated ICP management (rare in viral meningitis; suggests alternative diagnosis or complication) | 1-1.5 g/kg bolus :: IV :: :: 1-1.5 g/kg IV bolus; then 0.25-0.5 g/kg q4-6h | Anuria; severe dehydration | Serum osmolality (<320); osmolar gap; renal function; I/O | STAT | - | - | STAT |
+| Morphine | IV | Severe headache refractory to acetaminophen + NSAIDs; use sparingly and short-term only; avoid in patients who can tolerate oral analgesics | 2-4 mg :: IV :: q3-4h PRN :: 2-4 mg IV q3-4h PRN; titrate to pain relief; minimize use; transition to non-opioid regimen as soon as possible | Respiratory depression; altered mental status; opioid allergy; ileus | Respiratory rate; sedation level; pain scores; bowel function | URGENT | URGENT | - | URGENT |
+| Valacyclovir (for HSV-2 Mollaret meningitis) | PO | Suppressive antiviral therapy for recurrent HSV-2 meningitis (Mollaret meningitis); reduces frequency and severity of recurrences | 500 mg :: PO :: BID :: 500 mg PO BID or 1000 mg PO daily for suppressive therapy; duration individualized (months to years); discuss risk/benefit with patient | Renal impairment (dose adjust); thrombotic thrombocytopenic purpura (rare, high dose) | Renal function at baseline and periodically; CBC if prolonged use | - | ROUTINE | ROUTINE | - |
+| Acyclovir IV (for confirmed VZV meningitis) | IV | Targeted therapy for VZV meningitis (with or without rash); immunocompromised patients require IV therapy; immunocompetent may be treated with oral valacyclovir if mild | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h (based on ideal body weight) x 10-14 days; transition to oral valacyclovir 1000 mg PO TID when clinically improving | Renal impairment (dose adjust) | Renal function daily; adequate hydration; urine output | - | STAT | - | STAT |
+| Valacyclovir (for VZV meningitis — oral step-down) | PO | Oral step-down for VZV meningitis in immunocompetent patients who are clinically improving; total treatment duration 10-14 days | 1000 mg :: PO :: TID :: 1000 mg PO TID; complete total 10-14 day course (combined IV + PO) | Renal impairment (dose adjust) | Renal function | - | ROUTINE | ROUTINE | - |
+| Levetiracetam (if seizures occur) | IV/PO | Seizure management if seizures develop (uncommon in uncomplicated viral meningitis; suggests encephalitis component); NOT routine prophylaxis | 1000-1500 mg :: IV :: load then BID :: 1000-1500 mg IV load then 500-1000 mg IV/PO BID; max 3000 mg/day | Severe renal impairment (dose adjust) | Renal function; mood/behavioral changes | STAT | STAT | - | STAT |
+| Lorazepam (seizure rescue) | IV | Active seizure rescue; rare in isolated viral meningitis; more common if encephalitis component | 0.1 mg/kg :: IV :: push PRN seizure :: 0.1 mg/kg IV (max 4 mg); may repeat x1 in 5 min | Respiratory depression | Respiratory rate; SpO2; airway equipment ready | STAT | STAT | - | STAT |
+| Mannitol 20% (if elevated ICP) | IV | Elevated ICP management (rare in viral meningitis; suggests alternative diagnosis or complication) | 1-1.5 g/kg :: IV :: bolus then q4-6h :: 1-1.5 g/kg IV bolus; then 0.25-0.5 g/kg q4-6h | Anuria; severe dehydration | Serum osmolality (<320); osmolar gap; renal function; I/O | STAT | - | - | STAT |
 
 ### 3D. Disease-Modifying or Chronic Therapies
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Valacyclovir (chronic suppression for Mollaret meningitis) | PO | Chronic suppressive therapy for recurrent HSV-2 meningitis (Mollaret meningitis); initiate after second or third recurrence; reduces frequency of episodes | 500 mg BID; 1000 mg daily :: PO :: :: 500 mg PO BID or 1000 mg PO daily; continue for 6-12 months then reassess; some patients require indefinite suppression | Confirm HSV-2 by CSF PCR during acute episode; baseline renal function; educate patient on adherence and expected benefit | Renal impairment (dose adjust CrCl <30: 500 mg daily); TTP/HUS (rare, high-dose) | Renal function q3-6 months; CBC annually; symptom recurrence diary | - | - | ROUTINE | - |
+| Valacyclovir (chronic suppression for Mollaret meningitis) | PO | Chronic suppressive therapy for recurrent HSV-2 meningitis (Mollaret meningitis); initiate after second or third recurrence; reduces frequency of episodes | 500 mg :: PO :: BID :: 500 mg PO BID or 1000 mg PO daily; continue for 6-12 months then reassess; some patients require indefinite suppression | Confirm HSV-2 by CSF PCR during acute episode; baseline renal function; educate patient on adherence and expected benefit | Renal impairment (dose adjust CrCl <30: 500 mg daily); TTP/HUS (rare, high-dose) | Renal function q3-6 months; CBC annually; symptom recurrence diary | - | - | ROUTINE | - |
 
 ---
 
@@ -217,33 +218,33 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Return to ED immediately if: worsening headache, new confusion or personality change, seizure, high fever (>39C/102.2F), new rash (especially petechial/purpuric), neck stiffness worsening, vision changes, new weakness — these may indicate bacterial meningitis or encephalitis | STAT | STAT | ROUTINE |
-| Viral meningitis is usually self-limited and resolves in 7-10 days; headache and fatigue may persist for 2-4 weeks during recovery | - | ROUTINE | ROUTINE |
-| Stay well-hydrated (drink at least 2 liters of fluids daily) to support recovery and prevent dehydration | ROUTINE | ROUTINE | ROUTINE |
-| Take acetaminophen and/or ibuprofen on a scheduled basis (not PRN) for the first 3-5 days to control headache and fever; taper as symptoms improve | ROUTINE | ROUTINE | ROUTINE |
-| Avoid bright lights and loud environments if photophobia and phonophobia persist (dim rooms and sunglasses may help) | - | ROUTINE | ROUTINE |
-| Rest in a quiet, dark room; gradual return to activity over 1-2 weeks as symptoms improve; avoid strenuous exercise until headache-free | - | ROUTINE | ROUTINE |
-| Enteroviral meningitis is mildly contagious via fecal-oral route; practice good hand hygiene (handwashing after bathroom use) for 2 weeks to prevent transmission to household contacts | - | ROUTINE | ROUTINE |
-| Follow up with primary care in 1-2 weeks; follow up with neurology if persistent headache, cognitive symptoms, or new neurologic symptoms develop | - | ROUTINE | ROUTINE |
-| Report any recurrent episodes of headache with fever and neck stiffness (recurrent meningitis requires additional workup for underlying cause) | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Return to ED immediately if: worsening headache, new confusion or personality change, seizure, high fever (>39C/102.2F), new rash (especially petechial/purpuric), neck stiffness worsening, vision changes, new weakness — these may indicate bacterial meningitis or encephalitis | STAT | STAT | ROUTINE | - |
+| Viral meningitis is usually self-limited and resolves in 7-10 days; headache and fatigue may persist for 2-4 weeks during recovery | - | ROUTINE | ROUTINE | - |
+| Stay well-hydrated (drink at least 2 liters of fluids daily) to support recovery and prevent dehydration | ROUTINE | ROUTINE | ROUTINE | - |
+| Take acetaminophen and/or ibuprofen on a scheduled basis (not PRN) for the first 3-5 days to control headache and fever; taper as symptoms improve | ROUTINE | ROUTINE | ROUTINE | - |
+| Avoid bright lights and loud environments if photophobia and phonophobia persist (dim rooms and sunglasses may help) | - | ROUTINE | ROUTINE | - |
+| Rest in a quiet, dark room; gradual return to activity over 1-2 weeks as symptoms improve; avoid strenuous exercise until headache-free | - | ROUTINE | ROUTINE | - |
+| Enteroviral meningitis is mildly contagious via fecal-oral route; practice good hand hygiene (handwashing after bathroom use) for 2 weeks to prevent transmission to household contacts | - | ROUTINE | ROUTINE | - |
+| Follow up with primary care in 1-2 weeks; follow up with neurology if persistent headache, cognitive symptoms, or new neurologic symptoms develop | - | ROUTINE | ROUTINE | - |
+| Report any recurrent episodes of headache with fever and neck stiffness (recurrent meningitis requires additional workup for underlying cause) | - | ROUTINE | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Hand hygiene education (handwashing with soap for 20 seconds, especially after bathroom use) to prevent enteroviral transmission | - | ROUTINE | ROUTINE |
-| Mosquito bite prevention (DEET-containing repellent, protective clothing, screen windows) for patients in arboviral-endemic areas during summer-fall season to reduce West Nile virus and other arboviral meningitis risk | - | - | ROUTINE |
-| HIV testing and prevention counseling for all patients with viral meningitis (acute HIV is an important cause of aseptic meningitis) | - | ROUTINE | ROUTINE |
-| Ensure up-to-date vaccination (MMR, varicella) to prevent vaccine-preventable causes of viral meningitis (mumps, measles) | - | ROUTINE | ROUTINE |
-| Avoid close contact with individuals who have hand-foot-mouth disease or known enteroviral illness during outbreaks (especially pregnant women, immunocompromised, neonates) | - | ROUTINE | ROUTINE |
-| Smoking cessation to support immune function and reduce upper respiratory infection risk | - | ROUTINE | ROUTINE |
-| Adequate sleep (7-9 hours per night) and stress management during recovery period to support immune function | - | ROUTINE | ROUTINE |
-| For patients with Mollaret (recurrent HSV-2) meningitis: discuss suppressive antiviral therapy with neurology/infectious disease to reduce recurrence frequency | - | ROUTINE | ROUTINE |
-| Avoid sharing eating utensils, drinking glasses, and towels during acute illness to prevent enteroviral transmission to household contacts | - | ROUTINE | ROUTINE |
-| Pneumococcal and meningococcal vaccination review to ensure up-to-date status (does NOT prevent viral meningitis but prevents future bacterial meningitis risk) | - | ROUTINE | ROUTINE |
-| Safe sexual practices counseling for patients with HSV-2 meningitis (Mollaret) to reduce transmission risk and inform partners | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Hand hygiene education (handwashing with soap for 20 seconds, especially after bathroom use) to prevent enteroviral transmission | - | ROUTINE | ROUTINE | - |
+| Mosquito bite prevention (DEET-containing repellent, protective clothing, screen windows) for patients in arboviral-endemic areas during summer-fall season to reduce West Nile virus and other arboviral meningitis risk | - | - | ROUTINE | - |
+| HIV testing and prevention counseling for all patients with viral meningitis (acute HIV is an important cause of aseptic meningitis) | - | ROUTINE | ROUTINE | - |
+| Ensure up-to-date vaccination (MMR, varicella) to prevent vaccine-preventable causes of viral meningitis (mumps, measles) | - | ROUTINE | ROUTINE | - |
+| Avoid close contact with individuals who have hand-foot-mouth disease or known enteroviral illness during outbreaks (especially pregnant women, immunocompromised, neonates) | - | ROUTINE | ROUTINE | - |
+| Smoking cessation to support immune function and reduce upper respiratory infection risk | - | ROUTINE | ROUTINE | - |
+| Adequate sleep (7-9 hours per night) and stress management during recovery period to support immune function | - | ROUTINE | ROUTINE | - |
+| For patients with Mollaret (recurrent HSV-2) meningitis: discuss suppressive antiviral therapy with neurology/infectious disease to reduce recurrence frequency | - | ROUTINE | ROUTINE | - |
+| Avoid sharing eating utensils, drinking glasses, and towels during acute illness to prevent enteroviral transmission to household contacts | - | ROUTINE | ROUTINE | - |
+| Pneumococcal and meningococcal vaccination review to ensure up-to-date status (does NOT prevent viral meningitis but prevents future bacterial meningitis risk) | - | ROUTINE | ROUTINE | - |
+| Safe sexual practices counseling for patients with HSV-2 meningitis (Mollaret) to reduce transmission risk and inform partners | - | ROUTINE | ROUTINE | - |
 
 ═══════════════════════════════════════════════════════════════
 SECTION B: REFERENCE (Expand as Needed)
@@ -319,6 +320,12 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized lab table column order to `Test | ED | HOSP | OPD | ICU | Rationale | Target Finding` across Sections 1A, 1B, 1C, and Lumbar Puncture for consistency with approved template format
+- Added ICU venue column to Section 4B (Patient Instructions) and Section 4C (Lifestyle & Prevention) — all tables now have 4 venue columns
+- Standardized ALL medication dosing to `dose :: route :: frequency :: instructions` format across Sections 3A, 3B, 3C, and 3D (separated dose and frequency into proper fields for clickable order sentence generation)
+- Updated version to 1.1; added REVISED date
 
 **v1.0 (January 30, 2026)**
 - Initial template creation

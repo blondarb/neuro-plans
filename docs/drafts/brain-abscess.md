@@ -1,7 +1,7 @@
 ---
 title: "Brain Abscess"
 description: "Evidence-based clinical decision support for diagnosis, antimicrobial treatment, surgical management, and follow-up of brain abscess"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -20,8 +20,9 @@ tags:
 
 # Brain Abscess
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -38,9 +39,9 @@ tags:
 
 **PRIORITY KEY:** STAT = Immediate | URGENT = Within hours | ROUTINE = Standard | EXT = Extended/atypical cases | - = Not applicable to this setting
 
-===============================================================
+═══════════════════════════════════════════════════════════════
 SECTION A: ACTION ITEMS
-===============================================================
+═══════════════════════════════════════════════════════════════
 
 ## 1. LABORATORY WORKUP
 
@@ -169,40 +170,41 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Ceftriaxone (CPT 96374) | IV | Empiric broad-spectrum coverage for Streptococci, gram-negatives, H. influenzae; penetrates blood-brain barrier well | 2 g q12h :: IV :: :: 2 g IV q12h; duration 6-8 weeks total IV therapy; adjust based on culture results | Cephalosporin anaphylaxis (use meropenem as alternative); biliary sludge with prolonged use | CBC weekly; LFTs biweekly; renal function weekly; biliary symptoms | STAT | STAT | - | STAT |
-| Metronidazole (CPT 96374) | IV | Empiric anaerobic coverage (Bacteroides, Fusobacterium, Prevotella); excellent CNS penetration; essential for abscess from dental, sinus, or otogenic source | 500 mg q8h :: IV :: :: 500 mg IV q8h; then transition to 500 mg PO q8h when clinically stable; duration 6-8 weeks total; excellent oral bioavailability allows early PO switch | Disulfiram-like reaction with alcohol; first-trimester pregnancy; severe hepatic impairment | Peripheral neuropathy with prolonged use (>4 weeks: reassess); LFTs; metallic taste; seizure threshold | STAT | STAT | - | STAT |
-| Vancomycin (CPT 96365) | IV | ADD if: post-surgical/post-traumatic abscess, MRSA risk, penetrating trauma, or unknown source; covers MRSA and penicillin-resistant Streptococci | 15-20 mg/kg q8-12h :: IV :: :: 15-20 mg/kg IV q8-12h; target trough 15-20 ug/mL or AUC/MIC 400-600; loading dose 25-30 mg/kg for severe cases | Renal impairment (dose adjust); red man syndrome (infuse over >=1h) | Trough levels before 4th dose then q48-72h; renal function daily initially then twice weekly; ototoxicity | STAT | STAT | - | STAT |
-| Dexamethasone (CPT 96374) | IV | Significant mass effect, cerebral edema, impending herniation, or declining neurologic status; NOT routine for all brain abscesses; may reduce antibiotic penetration | 10 mg q6h :: IV :: :: 10 mg IV q6h (0.15 mg/kg q6h) for 48-72h then rapid taper over 5-7 days; use ONLY for significant edema/mass effect; taper as soon as clinically feasible | Active untreated infection (relative; benefit of edema reduction may outweigh risk); may impair abscess encapsulation | Glucose q6h; GI prophylaxis; blood pressure; taper schedule; do NOT use prolonged course | STAT | STAT | - | STAT |
-| Levetiracetam (seizure prophylaxis) (CPT 96374) | IV | Seizure prophylaxis in brain abscess (seizure incidence 25-50%); recommended for all supratentorial abscesses, especially frontal and temporal locations | 1000 mg BID; 1500 mg BID :: IV :: :: 1000-1500 mg IV load; then 500-1000 mg IV/PO BID; max 3000 mg/day; continue for at least 3-6 months after resolution | Severe renal impairment (dose adjust CrCl <30) | Renal function; behavioral/mood changes; CBC | STAT | STAT | ROUTINE | STAT |
-| Mannitol 20% | IV | Elevated ICP management; acute cerebral herniation; bridge to surgical decompression | 1-1.5 g/kg bolus; 0.25-0.5 g/kg q4-6h :: IV :: :: 1-1.5 g/kg IV bolus over 20 min; then 0.25-0.5 g/kg q4-6h PRN for ICP >22; hold if serum osm >320 | Anuria; severe dehydration; active intracranial bleeding | Serum osmolality (<320 mOsm/kg); osmolar gap; renal function; serum Na; I/O | STAT | - | - | STAT |
-| Hypertonic saline 23.4% | IV | Acute herniation syndrome; more sustained ICP reduction than mannitol | 30 mL over 10-20 min :: IV :: :: 30 mL via central line over 10-20 min; target Na 145-155 mEq/L | No central access (peripheral administration causes tissue necrosis) | Serum Na q4-6h; osmolality; central line access confirmed | STAT | - | - | STAT |
-| IV normal saline | IV | Maintenance fluids; avoid hypotonic solutions which worsen cerebral edema | 0.9% NaCl at 75-125 mL/h :: IV :: :: Isotonic fluids only; avoid D5W and half-normal saline; maintain euvolemia | Volume overload; CHF | I/O; electrolytes daily; serum Na | STAT | STAT | - | STAT |
+| Ceftriaxone (CPT 96374) | IV | Empiric broad-spectrum coverage for Streptococci, gram-negatives, H. influenzae; penetrates blood-brain barrier well | 2 g :: IV :: q12h :: 2 g IV q12h; duration 6-8 weeks total IV therapy; adjust based on culture results | Cephalosporin anaphylaxis (use meropenem as alternative); biliary sludge with prolonged use | CBC weekly; LFTs biweekly; renal function weekly; biliary symptoms | STAT | STAT | - | STAT |
+| Metronidazole (CPT 96374) | IV | Empiric anaerobic coverage (Bacteroides, Fusobacterium, Prevotella); excellent CNS penetration; essential for abscess from dental, sinus, or otogenic source | 500 mg :: IV :: q8h :: 500 mg IV q8h; then transition to 500 mg PO q8h when clinically stable; duration 6-8 weeks total; excellent oral bioavailability allows early PO switch | Disulfiram-like reaction with alcohol; first-trimester pregnancy; severe hepatic impairment | Peripheral neuropathy with prolonged use (>4 weeks: reassess); LFTs; metallic taste; seizure threshold | STAT | STAT | - | STAT |
+| Vancomycin (CPT 96365) | IV | ADD if: post-surgical/post-traumatic abscess, MRSA risk, penetrating trauma, or unknown source; covers MRSA and penicillin-resistant Streptococci | 15-20 mg/kg :: IV :: q8-12h :: 15-20 mg/kg IV q8-12h; target trough 15-20 ug/mL or AUC/MIC 400-600; loading dose 25-30 mg/kg for severe cases | Renal impairment (dose adjust); red man syndrome (infuse over >=1h) | Trough levels before 4th dose then q48-72h; renal function daily initially then twice weekly; ototoxicity | STAT | STAT | - | STAT |
+| Dexamethasone (CPT 96374) | IV | Significant mass effect, cerebral edema, impending herniation, or declining neurologic status; NOT routine for all brain abscesses; may reduce antibiotic penetration | 10 mg :: IV :: q6h :: 10 mg IV q6h (0.15 mg/kg q6h) for 48-72h then rapid taper over 5-7 days; use ONLY for significant edema/mass effect; taper as soon as clinically feasible | Active untreated infection (relative; benefit of edema reduction may outweigh risk); may impair abscess encapsulation | Glucose q6h; GI prophylaxis; blood pressure; taper schedule; do NOT use prolonged course | STAT | STAT | - | STAT |
+| Levetiracetam (seizure prophylaxis) (CPT 96374) | IV | Seizure prophylaxis in brain abscess (seizure incidence 25-50%); recommended for all supratentorial abscesses, especially frontal and temporal locations | 1000 mg :: IV :: BID :: 1000 mg IV load; then 500-1000 mg IV/PO BID; titrate to 1500 mg BID if needed; max 3000 mg/day; continue for at least 3-6 months after resolution | Severe renal impairment (dose adjust CrCl <30) | Renal function; behavioral/mood changes; CBC | STAT | STAT | ROUTINE | STAT |
+| Mannitol 20% | IV | Elevated ICP management; acute cerebral herniation; bridge to surgical decompression | 1 g/kg :: IV :: bolus then 0.25-0.5 g/kg q4-6h :: 1-1.5 g/kg IV bolus over 20 min; then 0.25-0.5 g/kg q4-6h PRN for ICP >22; hold if serum osm >320 | Anuria; severe dehydration; active intracranial bleeding | Serum osmolality (<320 mOsm/kg); osmolar gap; renal function; serum Na; I/O | STAT | - | - | STAT |
+| Hypertonic saline 23.4% | IV | Acute herniation syndrome; more sustained ICP reduction than mannitol | 30 mL :: IV :: once over 10-20 min :: 30 mL via central line over 10-20 min; target Na 145-155 mEq/L; may repeat PRN | No central access (peripheral administration causes tissue necrosis) | Serum Na q4-6h; osmolality; central line access confirmed | STAT | - | - | STAT |
+| IV normal saline | IV | Maintenance fluids; avoid hypotonic solutions which worsen cerebral edema | 0.9% NaCl :: IV :: continuous at 75-125 mL/h :: Isotonic fluids only; avoid D5W and half-normal saline; maintain euvolemia | Volume overload; CHF | I/O; electrolytes daily; serum Na | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Lorazepam (seizure rescue) | IV | Active seizure; breakthrough seizure on prophylaxis | 0.1 mg/kg IV push; 4 mg IV push :: IV :: :: 0.1 mg/kg IV (max 4 mg) over 2 min; may repeat x1 in 5 min; max 8 mg total | Respiratory depression; severe hypotension | Respiratory rate; SpO2; blood pressure; airway equipment at bedside | STAT | STAT | - | STAT |
-| Acetaminophen | PO/IV | Fever management; headache; temperature goal <38C to reduce cerebral metabolic demand | 650-1000 mg q6h :: PO :: :: 650-1000 mg PO/IV q6h; max 4 g/day; IV route if unable to take PO | Severe hepatic disease; metronidazole concurrent use (monitor LFTs closely) | Temperature; LFTs (especially with concurrent metronidazole) | STAT | STAT | ROUTINE | STAT |
-| Ondansetron | IV | Nausea and vomiting (common with elevated ICP and metronidazole use) | 4 mg q6h PRN :: IV :: :: 4 mg IV/PO q6h PRN nausea; max 16 mg/day | QT prolongation; severe hepatic impairment (max 8 mg/day) | QTc if risk factors; hepatic function | STAT | ROUTINE | - | STAT |
-| Pantoprazole | IV | GI prophylaxis with steroids and critical illness; stress ulcer prevention | 40 mg daily :: IV :: :: 40 mg IV/PO daily | Long-term use risks (C. diff, hypomagnesemia); only while on steroids or in ICU | GI symptoms; consider discontinuation when steroids stopped | - | ROUTINE | - | ROUTINE |
-| Enoxaparin | SC | DVT prophylaxis; prolonged immobilization and hospitalization are significant VTE risk factors | 40 mg daily :: SC :: :: 40 mg SC daily; start 24-48h post-surgery if no active bleeding; hold if upcoming surgery | Active intracranial bleeding; recent craniotomy (<24h); coagulopathy; platelets <50K | Platelets q3 days (HIT monitoring); coagulation panel; clinical DVT signs | - | ROUTINE | - | ROUTINE |
-| Pneumatic compression devices | - | DVT prophylaxis; apply on admission; use in conjunction with pharmacologic prophylaxis when safe | Apply bilaterally on admission :: - :: :: Bilateral sequential compression devices; use from admission through ambulation | Acute DVT in lower extremity; severe peripheral vascular disease | Skin integrity; proper fit; compliance | STAT | STAT | - | STAT |
-| Phenytoin/Fosphenytoin (seizure rescue second-line) | IV | Refractory seizure not responding to levetiracetam; status epilepticus protocol | 20 mg PE/kg IV load; 100 mg PE q8h :: IV :: :: Fosphenytoin 20 mg PE/kg IV at 150 mg PE/min; maintenance 100 mg PE q8h; target free phenytoin level 1-2 ug/mL (total 10-20 ug/mL) | Bradycardia; second/third-degree heart block; hypotension | Continuous telemetry during load; free phenytoin level; LFTs; CBC | STAT | STAT | - | STAT |
+| Lorazepam (seizure rescue) | IV | Active seizure; breakthrough seizure on prophylaxis | 4 mg :: IV :: push PRN seizure :: 0.1 mg/kg IV (max 4 mg) over 2 min; may repeat x1 in 5 min; max 8 mg total | Respiratory depression; severe hypotension | Respiratory rate; SpO2; blood pressure; airway equipment at bedside | STAT | STAT | - | STAT |
+| Acetaminophen | PO/IV | Fever management; headache; temperature goal <38C to reduce cerebral metabolic demand | 1000 mg :: PO :: q6h PRN :: 650-1000 mg PO/IV q6h; max 4 g/day; IV route if unable to take PO | Severe hepatic disease; metronidazole concurrent use (monitor LFTs closely) | Temperature; LFTs (especially with concurrent metronidazole) | STAT | STAT | ROUTINE | STAT |
+| Ondansetron | IV | Nausea and vomiting (common with elevated ICP and metronidazole use) | 4 mg :: IV :: q6h PRN :: 4 mg IV/PO q6h PRN nausea; max 16 mg/day | QT prolongation; severe hepatic impairment (max 8 mg/day) | QTc if risk factors; hepatic function | STAT | ROUTINE | - | STAT |
+| Pantoprazole | IV | GI prophylaxis with steroids and critical illness; stress ulcer prevention | 40 mg :: IV :: daily :: 40 mg IV/PO daily; discontinue when steroids stopped and no longer in ICU | Long-term use risks (C. diff, hypomagnesemia); only while on steroids or in ICU | GI symptoms; consider discontinuation when steroids stopped | - | ROUTINE | - | ROUTINE |
+| Enoxaparin | SC | DVT prophylaxis; prolonged immobilization and hospitalization are significant VTE risk factors | 40 mg :: SC :: daily :: 40 mg SC daily; start 24-48h post-surgery if no active bleeding; hold if upcoming surgery | Active intracranial bleeding; recent craniotomy (<24h); coagulopathy; platelets <50K | Platelets q3 days (HIT monitoring); coagulation panel; clinical DVT signs | - | ROUTINE | - | ROUTINE |
+| Pneumatic compression devices | Mechanical | DVT prophylaxis; apply on admission; use in conjunction with pharmacologic prophylaxis when safe | Bilateral :: Mechanical :: continuous :: Bilateral sequential compression devices; apply on admission; use from admission through ambulation | Acute DVT in lower extremity; severe peripheral vascular disease | Skin integrity; proper fit; compliance | STAT | STAT | - | STAT |
+| Fosphenytoin (seizure rescue second-line) | IV | Refractory seizure not responding to levetiracetam; status epilepticus protocol | 20 mg PE/kg :: IV :: load then 100 mg PE q8h :: Fosphenytoin 20 mg PE/kg IV at 150 mg PE/min; maintenance 100 mg PE q8h; target free phenytoin level 1-2 ug/mL (total 10-20 ug/mL) | Bradycardia; second/third-degree heart block; hypotension | Continuous telemetry during load; free phenytoin level; LFTs; CBC | STAT | STAT | - | STAT |
 
 ### 3C. Second-line/Refractory — Targeted Therapy by Source and Organism
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Penicillin G | IV | Targeted therapy for penicillin-sensitive Streptococci (most common brain abscess isolate); adjust based on culture sensitivities | 4 million units q4h :: IV :: :: 4 million units IV q4h (24 million units/day); duration 6-8 weeks total; excellent CNS penetration | Penicillin anaphylaxis; use ceftriaxone or meropenem alternative | Renal function; CBC; rash; interstitial nephritis with prolonged use | - | STAT | - | STAT |
-| Meropenem | IV | Broad-spectrum alternative if cephalosporin allergy; ESBL gram-negative organisms; polymicrobial abscess; Nocardia (some species) | 2 g q8h :: IV :: :: 2 g IV q8h (meningitic dosing for CNS penetration); duration 6-8 weeks | Carbapenem allergy; lowers seizure threshold (less than imipenem) | Renal function; CBC; seizure monitoring; LFTs | - | STAT | - | STAT |
-| TMP-SMX (Trimethoprim-Sulfamethoxazole) | IV/PO | Nocardia brain abscess (first-line); Toxoplasma alternative; Stenotrophomonas | 5 mg/kg (TMP component) q6-8h :: IV :: :: 5 mg/kg IV q6-8h based on TMP component; transition to PO when stable; Nocardia: treat 6-12 months total | Sulfa allergy; G6PD deficiency; severe renal impairment; megaloblastic anemia from folate deficiency | Renal function; CBC weekly (cytopenias); potassium (hyperkalemia); LFTs; rash (Stevens-Johnson risk) | - | STAT | ROUTINE | STAT |
-| Pyrimethamine + Sulfadiazine | PO | Toxoplasma brain abscess (first-line); HIV/AIDS with CD4 <100 and ring-enhancing lesions | Pyrimethamine 200 mg load then 50-75 mg daily; Sulfadiazine 1-1.5 g q6h :: PO :: :: Pyrimethamine 200 mg PO load x1, then 50-75 mg PO daily + Sulfadiazine 1-1.5 g PO q6h + Leucovorin 10-25 mg PO daily (to prevent myelosuppression); treat 6 weeks minimum then maintenance | Sulfa allergy (use clindamycin + pyrimethamine alternative); bone marrow suppression; megaloblastic anemia | CBC twice weekly x 2 weeks then weekly; LFTs; renal function; leucovorin compliance essential; hydration for sulfadiazine crystalluria | - | STAT | ROUTINE | STAT |
-| Leucovorin (folinic acid) | PO | Prevent pyrimethamine-induced bone marrow suppression; MUST co-administer with pyrimethamine | 10-25 mg daily :: PO :: :: 10-25 mg PO daily; continue throughout pyrimethamine therapy and 1 week after discontinuation | None significant | CBC; signs of myelosuppression | - | ROUTINE | ROUTINE | ROUTINE |
-| Voriconazole | IV/PO | Aspergillus brain abscess (first-line); other mold infections in immunocompromised | 6 mg/kg q12h x2 doses then 4 mg/kg q12h :: IV :: :: 6 mg/kg IV q12h x 2 loading doses, then 4 mg/kg IV q12h; transition to 200-300 mg PO BID when stable; duration 6-12 months minimum | Hepatic impairment; concurrent strong CYP3A4 inducers (rifampin, carbamazepine); QT prolongation; visual disturbances; IV form contraindicated if CrCl <50 (cyclodextrin accumulation) | Voriconazole trough levels (target 2-5 ug/mL); LFTs weekly initially then biweekly; visual changes; QTc; drug interactions (CYP2C19 polymorphisms) | - | STAT | ROUTINE | STAT |
-| Amphotericin B (liposomal) | IV | Mucormycosis brain abscess; severe/refractory fungal abscess; amphotericin-sensitive fungi when azoles inadequate | 5 mg/kg daily :: IV :: :: 5 mg/kg IV daily; infuse over 2h; duration based on clinical response (typically 4-6 weeks IV then transition to oral azole); pre-medicate with acetaminophen and diphenhydramine | Renal impairment (liposomal less nephrotoxic than conventional); infusion reactions | Renal function daily; electrolytes daily (K, Mg — wasting common); CBC; infusion reactions; pre-medicate | - | STAT | - | STAT |
-| Linezolid | IV/PO | MRSA brain abscess alternative to vancomycin; excellent CNS penetration; useful when vancomycin levels difficult to maintain | 600 mg q12h :: IV :: :: 600 mg IV/PO q12h; 100% oral bioavailability; duration limited to 4 weeks ideally due to toxicity (use vancomycin for remainder) | Concurrent MAOIs; serotonergic agents; thrombocytopenia; duration >4 weeks increases toxicity risk | CBC weekly (thrombocytopenia, anemia); peripheral neuropathy; lactic acidosis; optic neuritis (rare but serious with prolonged use >28 days); serotonin syndrome risk | - | STAT | ROUTINE | STAT |
-| Fluconazole | IV/PO | Candida brain abscess (uncommon); Cryptococcus consolidation therapy after amphotericin induction | 800 mg daily; 400 mg daily :: IV :: :: 800 mg IV/PO daily x 2 weeks induction (with amphotericin for Crypto), then 400 mg PO daily consolidation x 8 weeks; maintenance 200 mg PO daily for Crypto in HIV | Hepatic impairment; QT prolongation; concurrent terfenadine/cisapride | LFTs biweekly; QTc; drug interactions (CYP2C9/3A4 inhibitor) | - | STAT | ROUTINE | STAT |
+| Penicillin G | IV | Targeted therapy for penicillin-sensitive Streptococci (most common brain abscess isolate); adjust based on culture sensitivities | 4 million units :: IV :: q4h :: 4 million units IV q4h (24 million units/day); duration 6-8 weeks total; excellent CNS penetration | Penicillin anaphylaxis; use ceftriaxone or meropenem alternative | Renal function; CBC; rash; interstitial nephritis with prolonged use | - | STAT | - | STAT |
+| Meropenem | IV | Broad-spectrum alternative if cephalosporin allergy; ESBL gram-negative organisms; polymicrobial abscess; Nocardia (some species) | 2 g :: IV :: q8h :: 2 g IV q8h (meningitic dosing for CNS penetration); duration 6-8 weeks | Carbapenem allergy; lowers seizure threshold (less than imipenem) | Renal function; CBC; seizure monitoring; LFTs | - | STAT | - | STAT |
+| TMP-SMX (Trimethoprim-Sulfamethoxazole) | IV/PO | Nocardia brain abscess (first-line); Toxoplasma alternative; Stenotrophomonas | 5 mg/kg TMP :: IV :: q6-8h :: 5 mg/kg IV q6-8h based on TMP component; transition to PO when stable; Nocardia: treat 6-12 months total | Sulfa allergy; G6PD deficiency; severe renal impairment; megaloblastic anemia from folate deficiency | Renal function; CBC weekly (cytopenias); potassium (hyperkalemia); LFTs; rash (Stevens-Johnson risk) | - | STAT | ROUTINE | STAT |
+| Pyrimethamine | PO | Toxoplasma brain abscess (first-line); HIV/AIDS with CD4 <100 and ring-enhancing lesions; MUST co-administer with sulfadiazine and leucovorin | 200 mg :: PO :: load x1 then 50-75 mg daily :: Pyrimethamine 200 mg PO load x1, then 50-75 mg PO daily; treat 6 weeks minimum then maintenance; always co-administer with sulfadiazine and leucovorin | Bone marrow suppression; megaloblastic anemia; must give leucovorin concurrently | CBC twice weekly x 2 weeks then weekly; LFTs; renal function; leucovorin compliance essential | - | STAT | ROUTINE | STAT |
+| Sulfadiazine | PO | Toxoplasma brain abscess (first-line); used in combination with pyrimethamine and leucovorin | 1-1.5 g :: PO :: q6h :: 1-1.5 g PO q6h; treat 6 weeks minimum then maintenance; maintain adequate hydration to prevent crystalluria | Sulfa allergy (use clindamycin as alternative); severe renal impairment; crystalluria risk | Renal function; urinalysis for crystalluria; hydration status; CBC; rash (Stevens-Johnson risk) | - | STAT | ROUTINE | STAT |
+| Leucovorin (folinic acid) | PO | Prevent pyrimethamine-induced bone marrow suppression; MUST co-administer with pyrimethamine | 10-25 mg :: PO :: daily :: 10-25 mg PO daily; continue throughout pyrimethamine therapy and 1 week after discontinuation | None significant | CBC; signs of myelosuppression | - | ROUTINE | ROUTINE | ROUTINE |
+| Voriconazole | IV/PO | Aspergillus brain abscess (first-line); other mold infections in immunocompromised | 6 mg/kg :: IV :: q12h x2 load then 4 mg/kg q12h :: 6 mg/kg IV q12h x 2 loading doses, then 4 mg/kg IV q12h; transition to 200-300 mg PO BID when stable; duration 6-12 months minimum | Hepatic impairment; concurrent strong CYP3A4 inducers (rifampin, carbamazepine); QT prolongation; visual disturbances; IV form contraindicated if CrCl <50 (cyclodextrin accumulation) | Voriconazole trough levels (target 2-5 ug/mL); LFTs weekly initially then biweekly; visual changes; QTc; drug interactions (CYP2C19 polymorphisms) | - | STAT | ROUTINE | STAT |
+| Amphotericin B (liposomal) | IV | Mucormycosis brain abscess; severe/refractory fungal abscess; amphotericin-sensitive fungi when azoles inadequate | 5 mg/kg :: IV :: daily :: 5 mg/kg IV daily; infuse over 2h; duration based on clinical response (typically 4-6 weeks IV then transition to oral azole); pre-medicate with acetaminophen and diphenhydramine | Renal impairment (liposomal less nephrotoxic than conventional); infusion reactions | Renal function daily; electrolytes daily (K, Mg -- wasting common); CBC; infusion reactions; pre-medicate | - | STAT | - | STAT |
+| Linezolid | IV/PO | MRSA brain abscess alternative to vancomycin; excellent CNS penetration; useful when vancomycin levels difficult to maintain | 600 mg :: IV :: q12h :: 600 mg IV/PO q12h; 100% oral bioavailability; duration limited to 4 weeks ideally due to toxicity (use vancomycin for remainder) | Concurrent MAOIs; serotonergic agents; thrombocytopenia; duration >4 weeks increases toxicity risk | CBC weekly (thrombocytopenia, anemia); peripheral neuropathy; lactic acidosis; optic neuritis (rare but serious with prolonged use >28 days); serotonin syndrome risk | - | STAT | ROUTINE | STAT |
+| Fluconazole | IV/PO | Candida brain abscess (uncommon); Cryptococcus consolidation therapy after amphotericin induction | 800 mg :: IV :: daily :: 800 mg IV/PO daily x 2 weeks induction (with amphotericin for Crypto), then 400 mg PO daily consolidation x 8 weeks; maintenance 200 mg PO daily for Crypto in HIV | Hepatic impairment; QT prolongation; concurrent terfenadine/cisapride | LFTs biweekly; QTc; drug interactions (CYP2C9/3A4 inhibitor) | - | STAT | ROUTINE | STAT |
 
 ### 3D. Surgical Management (Disease-Modifying)
 
@@ -238,42 +240,42 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Return to ED immediately if worsening headache, new confusion, seizure, fever recurrence, new weakness, vision changes, or vomiting (may indicate abscess enlargement, re-accumulation, or ventriculitis) | STAT | STAT | ROUTINE |
-| Complete the full 6-8 week IV antibiotic course without interruption (premature discontinuation risks relapse and treatment failure) | - | ROUTINE | ROUTINE |
-| Report any signs of PICC line infection: redness, swelling, drainage at line site, or new fever during home IV therapy | - | ROUTINE | ROUTINE |
-| Report numbness, tingling, or pain in hands/feet which may indicate metronidazole-induced peripheral neuropathy requiring medication change | - | ROUTINE | ROUTINE |
-| Do NOT consume alcohol during and for 48 hours after metronidazole therapy due to severe disulfiram-like reaction (nausea, vomiting, flushing, tachycardia) | - | ROUTINE | ROUTINE |
-| Follow-up MRI scans are essential to confirm abscess resolution (typically at 2, 4, and 8 weeks during treatment, then every 2-3 months until resolved) | - | ROUTINE | ROUTINE |
-| Do NOT drive until cleared by neurology due to seizure risk (seizures occur in 25-50% of brain abscess; state laws typically require 3-12 months seizure-free) | - | ROUTINE | ROUTINE |
-| Take antiepileptic medications as prescribed; do NOT stop abruptly (risk of breakthrough seizure) | - | ROUTINE | ROUTINE |
-| Follow-up with neurosurgery in 2-4 weeks for post-operative evaluation and imaging review | - | ROUTINE | ROUTINE |
-| Follow-up with infectious disease in 1-2 weeks after discharge for antibiotic response assessment and lab monitoring | - | ROUTINE | ROUTINE |
-| Notify healthcare team immediately if PICC line becomes occluded, dislodged, or if unable to infuse medications (line malfunction delays critical antibiotic doses) | - | ROUTINE | ROUTINE |
-| Keep a daily symptom diary including temperature, headache severity, and any new neurologic symptoms to share with medical team at follow-up visits | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Return to ED immediately if worsening headache, new confusion, seizure, fever recurrence, new weakness, vision changes, or vomiting (may indicate abscess enlargement, re-accumulation, or ventriculitis) | STAT | STAT | ROUTINE | - |
+| Complete the full 6-8 week IV antibiotic course without interruption (premature discontinuation risks relapse and treatment failure) | - | ROUTINE | ROUTINE | - |
+| Report any signs of PICC line infection: redness, swelling, drainage at line site, or new fever during home IV therapy | - | ROUTINE | ROUTINE | - |
+| Report numbness, tingling, or pain in hands/feet which may indicate metronidazole-induced peripheral neuropathy requiring medication change | - | ROUTINE | ROUTINE | - |
+| Do NOT consume alcohol during and for 48 hours after metronidazole therapy due to severe disulfiram-like reaction (nausea, vomiting, flushing, tachycardia) | - | ROUTINE | ROUTINE | - |
+| Follow-up MRI scans are essential to confirm abscess resolution (typically at 2, 4, and 8 weeks during treatment, then every 2-3 months until resolved) | - | ROUTINE | ROUTINE | - |
+| Do NOT drive until cleared by neurology due to seizure risk (seizures occur in 25-50% of brain abscess; state laws typically require 3-12 months seizure-free) | - | ROUTINE | ROUTINE | - |
+| Take antiepileptic medications as prescribed; do NOT stop abruptly (risk of breakthrough seizure) | - | ROUTINE | ROUTINE | - |
+| Follow-up with neurosurgery in 2-4 weeks for post-operative evaluation and imaging review | - | ROUTINE | ROUTINE | - |
+| Follow-up with infectious disease in 1-2 weeks after discharge for antibiotic response assessment and lab monitoring | - | ROUTINE | ROUTINE | - |
+| Notify healthcare team immediately if PICC line becomes occluded, dislodged, or if unable to infuse medications (line malfunction delays critical antibiotic doses) | - | ROUTINE | ROUTINE | - |
+| Keep a daily symptom diary including temperature, headache severity, and any new neurologic symptoms to share with medical team at follow-up visits | - | ROUTINE | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Dental evaluation and treatment of all dental pathology to prevent odontogenic brain abscess recurrence (dental source accounts for 25-30% of cases) | - | ROUTINE | ROUTINE |
-| Smoking cessation to reduce sinusitis and upper respiratory infection risk which predispose to CNS infection | - | ROUTINE | ROUTINE |
-| Alcohol cessation during antibiotic therapy (metronidazole interaction) and to support immune function | - | ROUTINE | ROUTINE |
-| IV drug use cessation counseling and harm reduction (IVDU is major risk factor for hematogenous brain abscess especially right-to-left shunt) | - | ROUTINE | ROUTINE |
-| Glycemic control optimization (HbA1c target <7%) to reduce infection risk and improve immune response | - | ROUTINE | ROUTINE |
-| Seizure safety precautions: avoid heights, swimming alone, unsupervised bathing, and operating heavy machinery until seizure-free period established | - | ROUTINE | ROUTINE |
-| Adequate nutrition and hydration to support immune function and wound healing during prolonged antibiotic course | - | ROUTINE | ROUTINE |
-| Cognitive rehabilitation if residual deficits present; memory strategies and organizational tools for frontal/temporal lobe involvement | - | ROUTINE | ROUTINE |
-| Screen for hereditary hemorrhagic telangiectasia (HHT) if pulmonary AVM identified as source (autosomal dominant; genetic testing and family screening) | - | ROUTINE | ROUTINE |
-| Regular dental hygiene and preventive care to reduce odontogenic infection risk (professional cleaning every 6 months; treat cavities promptly) | - | - | ROUTINE |
-| Avoid immunosuppressive medications unless medically necessary; discuss risks with prescribing physician if immunosuppression required | - | ROUTINE | ROUTINE |
-| Gradual return to work and daily activities with accommodations as needed; fatigue is common during prolonged antibiotic treatment | - | - | ROUTINE |
-| Mental health support for depression and anxiety which are common during prolonged treatment and recovery from brain abscess | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Dental evaluation and treatment of all dental pathology to prevent odontogenic brain abscess recurrence (dental source accounts for 25-30% of cases) | - | ROUTINE | ROUTINE | - |
+| Smoking cessation to reduce sinusitis and upper respiratory infection risk which predispose to CNS infection | - | ROUTINE | ROUTINE | - |
+| Alcohol cessation during antibiotic therapy (metronidazole interaction) and to support immune function | - | ROUTINE | ROUTINE | - |
+| IV drug use cessation counseling and harm reduction (IVDU is major risk factor for hematogenous brain abscess especially right-to-left shunt) | - | ROUTINE | ROUTINE | - |
+| Glycemic control optimization (HbA1c target <7%) to reduce infection risk and improve immune response | - | ROUTINE | ROUTINE | - |
+| Seizure safety precautions: avoid heights, swimming alone, unsupervised bathing, and operating heavy machinery until seizure-free period established | - | ROUTINE | ROUTINE | - |
+| Adequate nutrition and hydration to support immune function and wound healing during prolonged antibiotic course | - | ROUTINE | ROUTINE | - |
+| Cognitive rehabilitation if residual deficits present; memory strategies and organizational tools for frontal/temporal lobe involvement | - | ROUTINE | ROUTINE | - |
+| Screen for hereditary hemorrhagic telangiectasia (HHT) if pulmonary AVM identified as source (autosomal dominant; genetic testing and family screening) | - | ROUTINE | ROUTINE | - |
+| Regular dental hygiene and preventive care to reduce odontogenic infection risk (professional cleaning every 6 months; treat cavities promptly) | - | - | ROUTINE | - |
+| Avoid immunosuppressive medications unless medically necessary; discuss risks with prescribing physician if immunosuppression required | - | ROUTINE | ROUTINE | - |
+| Gradual return to work and daily activities with accommodations as needed; fatigue is common during prolonged antibiotic treatment | - | - | ROUTINE | - |
+| Mental health support for depression and anxiety which are common during prolonged treatment and recovery from brain abscess | - | ROUTINE | ROUTINE | - |
 
-===============================================================
+═══════════════════════════════════════════════════════════════
 SECTION B: REFERENCE (Expand as Needed)
-===============================================================
+═══════════════════════════════════════════════════════════════
 
 ## 5. DIFFERENTIAL DIAGNOSIS
 
@@ -346,6 +348,16 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized all structured dosing fields to 4-field `::` format (dose :: route :: frequency :: instructions) across Sections 3A, 3B, 3C
+- Split Pyrimethamine + Sulfadiazine combined row into individual medication rows per style guide (one drug per row)
+- Added ICU column to Section 4B (Patient Instructions) and Section 4C (Lifestyle & Prevention) for consistent 4-venue coverage
+- Fixed section dividers from ASCII `===` to Unicode box-drawing characters
+- Standardized Pneumatic compression devices route and dosing format
+- Renamed Phenytoin/Fosphenytoin to Fosphenytoin for clarity
+- Added REVISED date to header metadata
+- Updated version to v1.1
 
 **v1.0 (January 30, 2026)**
 - Initial template creation
