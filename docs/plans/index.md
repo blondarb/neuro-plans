@@ -57,6 +57,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Critical Illness Myopathy/Neuropathy](critical-illness-myopathy-neuropathy.md) | ED, HOSP, OPD, ICU | G72.81, G62.81, M62.81 |
 | [Inflammatory Myopathy (DM/PM)](inflammatory-myopathy.md) | ED, HOSP, OPD, ICU | G72.41, M33.10, M33.20 |
 | [Inclusion Body Myositis](inclusion-body-myositis.md) | ED, HOSP, OPD | G72.41 |
+| [Myotonic Dystrophy](myotonic-dystrophy.md) | ED, HOSP, OPD | G71.11, G71.12, G71.19 |
 
 ---
 
@@ -84,6 +85,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Spinal Cord Compression (Malignant)](spinal-cord-compression-malignant.md) | ED, HOSP, ICU | G95.20 |
 | [Cauda Equina Syndrome](cauda-equina-syndrome.md) | ED, HOSP | G83.4 |
 | [Epidural Abscess](epidural-abscess.md) | ED, HOSP, ICU | G06.1 |
+| [Cervical Spondylotic Myelopathy](cervical-myelopathy.md) | ED, HOSP, OPD, ICU | M47.12, M47.22, M50.00 |
 
 ---
 
@@ -96,6 +98,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Leptomeningeal Carcinomatosis](leptomeningeal-carcinomatosis.md) | ED, HOSP, OPD, ICU | C79.32, C79.49 |
 | [Paraneoplastic Neurological Syndrome](paraneoplastic-neurological-syndrome.md) | ED, HOSP, OPD, ICU | G13.0, G13.1 |
 | [Meningioma](meningioma.md) | ED, HOSP, OPD, ICU | D32.9 |
+| [Primary CNS Lymphoma](primary-cns-lymphoma.md) | ED, HOSP, OPD, ICU | C85.19, C83.30 |
 
 ---
 
@@ -150,6 +153,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Wilson's Disease](wilsons-disease.md) | ED, HOSP, OPD, ICU | E83.01, G25.2 |
 | [Progressive Supranuclear Palsy](progressive-supranuclear-palsy.md) | ED, HOSP, OPD, ICU | G23.1, F02.80, F02.81 |
 | [Multiple System Atrophy](multiple-system-atrophy.md) | ED, HOSP, OPD, ICU | G90.3, G23.2, G23.3 |
+| [Ataxia Evaluation](ataxia-evaluation.md) | ED, HOSP, OPD | R27.0, G11.9 |
 
 ---
 
@@ -236,6 +240,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 |------|------------------|--------|
 | [Vertigo / Dizziness](vertigo-dizziness-evaluation.md) | ED, HOSP, OPD | R42, H81.10 |
 | [Post-Concussion Syndrome](post-concussion-syndrome.md) | ED, HOSP, OPD | F07.81, S06.0X0A |
+| [Narcolepsy](narcolepsy.md) | ED, HOSP, OPD | G47.411, G47.419 |
 
 ---
 

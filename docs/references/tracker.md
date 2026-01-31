@@ -9,7 +9,7 @@ title: Template Tracker
 **Created:** January 15, 2026
 **Last Updated:** January 30, 2026
 **Target:** 150+ validated templates
-**Current Status:** 97 templates approved
+**Current Status:** 102 templates approved
 
 ---
 
@@ -109,7 +109,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Inflammatory Myopathy (Dermatomyositis/PM) | G72.41 | 🎯 OPD | Approved |
 | ✅ | Inclusion Body Myositis (IBM) | G72.41 | 🎯 OPD | Approved |
 | ⬜ | Muscular Dystrophy (Adult) | G71.0 | 🎯 OPD | Rare adult presentations |
-| ⬜ | Myotonic Dystrophy | G71.11 | 🎯 OPD | Multisystem |
+| ✅ | Myotonic Dystrophy | G71.11 | 🎯 OPD | Approved |
 | ✅ | Critical Illness Myopathy/Neuropathy | G72.81 | 🎯 OPD | Approved |
 | ⬜ | Botulism | A05.1 | 🎯 OPD | Rare but critical |
 | ✅ | B12 Deficiency Neuropathy | E53.8 | 🎯 OPD | Approved |
@@ -141,7 +141,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Multiple System Atrophy (MSA) | G90.3 | 🎯 OPD | Approved |
 | ⬜ | Corticobasal Degeneration (CBD) | G31.85 | 🎯 OPD | Rare |
 | ⬜ | Tics / Tourette Syndrome | F95.2 | 🎯 OPD | Tic disorders |
-| ⬜ | Ataxia Evaluation | R27.0 | 🎯 OPD | DDx approach |
+| ✅ | Ataxia Evaluation | R27.0 | 🎯 OPD | Approved |
 | ⬜ | Chorea Evaluation | G25.5 | 🎯 OPD | DDx approach |
 | ⬜ | Gait Disorder Evaluation | R26.9 | 🎯 OPD | Multifactorial |
 
@@ -189,7 +189,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Leptomeningeal Carcinomatosis | C79.32 | 🎯 OPD | Approved |
 | ✅ | Paraneoplastic Neurological Syndrome | G13.0 | 🎯 OPD | Antibody panels |
 | ✅ | Meningioma | D32.9 | 🎯 OPD | Approved |
-| ⬜ | Primary CNS Lymphoma | C85.19 | 🎯 OPD | Immunocompromised |
+| ✅ | Primary CNS Lymphoma | C85.19 | 🎯 OPD | Approved |
 | ⬜ | Radiation-Induced Neurologic Injury | G93.89 | 🎯 OPD | Delayed complications |
 | ⬜ | Myelopathy (General) | G99.2 | 🎯 OPD | DDx approach |
 
@@ -198,7 +198,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
 | ✅ | Cauda Equina Syndrome | G83.4 | 🎯 OPD | Approved |
-| ⬜ | Cervical Myelopathy (Degenerative) | M47.22 | 🎯 OPD | Common, surgical referral |
+| ✅ | Cervical Myelopathy (Degenerative) | M47.22 | 🎯 OPD | Approved |
 | ⬜ | Lumbar Stenosis | M48.06 | 🎯 OPD | Common outpatient |
 | ⬜ | Syringomyelia | G95.0 | 🎯 OPD | Rare |
 | ⬜ | Subacute Combined Degeneration | E53.8 | 🎯 OPD | B12 deficiency |
@@ -246,7 +246,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ⬜ | Traumatic Brain Injury (TBI) | S06.9 | 🎯 OPD | ED evaluation |
 | ⬜ | Chronic Traumatic Encephalopathy (CTE) | G31.89 | 🎯 OPD | Emerging area |
 | ⬜ | Sleep Apnea (Neurologic Aspects) | G47.33 | 🎯 OPD | Usually sleep medicine |
-| ⬜ | Narcolepsy | G47.419 | 🎯 OPD | Sleep medicine |
+| ✅ | Narcolepsy | G47.419 | 🎯 OPD | Approved |
 | ⬜ | Insomnia (Neurologic) | G47.00 | 🎯 OPD | Sleep medicine |
 | ⬜ | REM Sleep Behavior Disorder | G47.52 | 🎯 OPD | Often precedes PD |
 | ⬜ | Parasomnia | G47.50 | 🎯 OPD | Sleep medicine |
@@ -262,19 +262,19 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | Stroke/Cerebrovascular | 9 | 3 | 12 |
 | Headache | 12 | 2 | 14 |
 | Demyelinating | 6 | 3 | 9 |
-| Neuromuscular | 16 | 12 | 28 |
-| Movement Disorders | 11 | 7 | 18 |
+| Neuromuscular | 17 | 11 | 28 |
+| Movement Disorders | 12 | 6 | 18 |
 | Dementia/Cognitive | 9 | 3 | 12 |
 | CNS Infections | 10 | 2 | 12 |
-| Neuro-oncology | 6 | 3 | 9 |
-| Spinal Cord | 1 | 4 | 5 |
+| Neuro-oncology | 7 | 2 | 9 |
+| Spinal Cord | 2 | 3 | 5 |
 | Autoimmune/Inflammatory | 2 | 3 | 5 |
 | Functional/Psychiatric | 2 | 2 | 4 |
 | Neurocritical Care | 4 | 1 | 5 |
-| Other/Miscellaneous | 5 | 10 | 15 |
-| **TOTAL** | **98** | **58** | **156** |
+| Other/Miscellaneous | 6 | 9 | 15 |
+| **TOTAL** | **103** | **53** | **156** |
 
-**Note:** 98 approved diagnoses map to 97 unique plan files (Parkinson's Disease has separate Management and New Diagnosis plans in a single file pair).
+**Note:** 103 approved diagnoses map to 102 unique plan files (Parkinson's Disease has separate Management and New Diagnosis plans in a single file pair).
 
 ---
 
@@ -379,6 +379,11 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | 95 | Psychogenic Non-Epileptic Spells (PNES) | v1.1 | Jan 30, 2026 |
 | 96 | Lyme Neuroborreliosis | v1.1 | Jan 30, 2026 |
 | 97 | Stiff Person Syndrome | v1.1 | Jan 30, 2026 |
+| 98 | Myotonic Dystrophy | v1.1 | Jan 31, 2026 |
+| 99 | Narcolepsy | v1.1 | Jan 31, 2026 |
+| 100 | Ataxia Evaluation | v1.1 | Jan 31, 2026 |
+| 101 | Primary CNS Lymphoma | v1.1 | Jan 31, 2026 |
+| 102 | Cervical Spondylotic Myelopathy | v1.1 | Jan 31, 2026 |
 
 ---
 

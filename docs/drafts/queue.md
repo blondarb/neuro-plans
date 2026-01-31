@@ -22,11 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| Myotonic Dystrophy | `myotonic-dystrophy.md` | `completed` | tier9 | 2026-01-31 |
-| Narcolepsy | `narcolepsy.md` | `completed` | tier9 | 2026-01-31 |
-| Ataxia Evaluation | `ataxia-evaluation.md` | `completed` | tier9 | 2026-01-31 |
-| Primary CNS Lymphoma | `primary-cns-lymphoma.md` | `completed` | tier9 | 2026-01-31 |
-| Cervical Myelopathy | `cervical-myelopathy.md` | `completed` | tier9 | 2026-01-31 |
+| *(none)* | — | — | — | — |
 
 ---
 
@@ -131,6 +127,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 95 | Psychogenic Non-Epileptic Spells (PNES) | [`pnes.md`](../plans/pnes.md) | 2026-01-30 | 90%+ |
 | 96 | Lyme Neuroborreliosis | [`lyme-neuroborreliosis.md`](../plans/lyme-neuroborreliosis.md) | 2026-01-30 | 90%+ |
 | 97 | Stiff Person Syndrome | [`stiff-person-syndrome.md`](../plans/stiff-person-syndrome.md) | 2026-01-30 | 90%+ |
+| 98 | Myotonic Dystrophy | [`myotonic-dystrophy.md`](../plans/myotonic-dystrophy.md) | 2026-01-31 | 90%+ |
+| 99 | Narcolepsy | [`narcolepsy.md`](../plans/narcolepsy.md) | 2026-01-31 | 90%+ |
+| 100 | Ataxia Evaluation | [`ataxia-evaluation.md`](../plans/ataxia-evaluation.md) | 2026-01-31 | 90%+ |
+| 101 | Primary CNS Lymphoma | [`primary-cns-lymphoma.md`](../plans/primary-cns-lymphoma.md) | 2026-01-31 | 90%+ |
+| 102 | Cervical Spondylotic Myelopathy | [`cervical-myelopathy.md`](../plans/cervical-myelopathy.md) | 2026-01-31 | 90%+ |
 
 ---
 
@@ -147,7 +148,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-01-30. Total approved: 97 plans.
+- Queue updated 2026-01-31. Total approved: 102 plans.
 
 ---
 
