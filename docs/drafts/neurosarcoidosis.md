@@ -1,7 +1,7 @@
 ---
 title: "Neurosarcoidosis"
 description: "Clinical decision support for neurosarcoidosis diagnosis and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -21,8 +21,9 @@ tags:
 
 # Neurosarcoidosis
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -54,71 +55,71 @@ SECTION A: ACTION ITEMS
 
 ### 1A. Essential/Core Labs
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Baseline; infection screen; leukopenia in sarcoidosis; pre-immunotherapy | Normal; lymphopenia common |
-| CMP (BMP + LFTs) (CPT 80053) | STAT | STAT | ROUTINE | STAT | Metabolic screen; hepatic involvement (granulomatous hepatitis); renal function; hypercalcemia screening | Normal; elevated ALP/GGT suggests hepatic involvement |
-| Calcium (total and ionized) (CPT 82310+82330) | STAT | STAT | ROUTINE | STAT | Hypercalcemia from granulomatous 1,25-dihydroxyvitamin D production; present in 10-17% of sarcoidosis | Normal (8.5-10.5 mg/dL) |
-| ESR (CPT 85652) | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory marker; often elevated in active sarcoidosis | Elevated (non-specific) |
-| CRP (CPT 86140) | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory marker; infection screen | Normal to mildly elevated |
-| Serum ACE level (CPT 82164) | URGENT | URGENT | ROUTINE | URGENT | Elevated in ~60% of systemic sarcoidosis but only ~30-50% of neurosarcoidosis; limited sensitivity; false positives in DM, hyperthyroidism, lymphoma | Elevated (>52 U/L; varies by lab) |
-| TSH (CPT 84443) | URGENT | ROUTINE | ROUTINE | URGENT | Hypothalamic-pituitary dysfunction screen; central hypothyroidism | Normal |
-| Free T4 (CPT 84439) | URGENT | ROUTINE | ROUTINE | URGENT | Central hypothyroidism from hypothalamic-pituitary sarcoidosis | Normal |
-| Prolactin (CPT 84146) | URGENT | ROUTINE | ROUTINE | URGENT | Elevated with hypothalamic/pituitary stalk involvement; usually mild elevation (<100 ng/mL) | Normal (<25 ng/mL) |
-| AM cortisol (CPT 82533) | URGENT | ROUTINE | ROUTINE | URGENT | Adrenal insufficiency from HPA axis involvement; central hypoadrenalism | Normal (>10 mcg/dL at 8AM) |
-| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Diabetes insipidus screen; pre-steroid baseline | Normal |
-| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Glycemic status before high-dose steroids | <5.7% |
-| Urinalysis with culture (CPT 81003+87086) | STAT | STAT | ROUTINE | STAT | Infection screen; 24h urine calcium if hypercalcemia | Negative |
-| Blood cultures (x2 sets) (CPT 87040) | STAT | STAT | - | STAT | Rule out infection (particularly TB, fungal before immunosuppression) | No growth |
-| PT/INR, aPTT (CPT 85610+85730) | STAT | STAT | - | STAT | Coagulation status pre-LP; pre-procedure | Normal |
-| Magnesium (CPT 83735) | STAT | STAT | ROUTINE | STAT | Seizure threshold; metabolic screen | Normal |
-| Phosphorus (CPT 84100) | STAT | STAT | ROUTINE | STAT | Metabolic screen | Normal |
-| LDH (CPT 83615) | URGENT | ROUTINE | ROUTINE | URGENT | Marker of granulomatous activity; lymphoma screen | Normal |
-| Uric acid (CPT 84550) | - | ROUTINE | ROUTINE | - | Elevated in active sarcoidosis | Normal |
-| Procalcitonin (CPT 84145) | URGENT | URGENT | - | URGENT | Distinguish bacterial infection from granulomatous inflammation | Normal (<0.1 ng/mL) |
-| Serum protein electrophoresis (SPEP) (CPT 86334) | - | ROUTINE | ROUTINE | - | Polyclonal hypergammaglobulinemia common in sarcoidosis; lymphoma screen | Polyclonal pattern or normal |
-| Quantitative immunoglobulins (IgG, IgA, IgM) (CPT 82784) | - | ROUTINE | ROUTINE | - | Baseline before immunotherapy; hypergammaglobulinemia | Normal or elevated IgG |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| CBC with differential (CPT 85025) | Baseline; infection screen; leukopenia in sarcoidosis; pre-immunotherapy | Normal; lymphopenia common | STAT | STAT | ROUTINE | STAT |
+| CMP (BMP + LFTs) (CPT 80053) | Metabolic screen; hepatic involvement (granulomatous hepatitis); renal function; hypercalcemia screening | Normal; elevated ALP/GGT suggests hepatic involvement | STAT | STAT | ROUTINE | STAT |
+| Calcium (total and ionized) (CPT 82310+82330) | Hypercalcemia from granulomatous 1,25-dihydroxyvitamin D production; present in 10-17% of sarcoidosis | Normal (8.5-10.5 mg/dL) | STAT | STAT | ROUTINE | STAT |
+| ESR (CPT 85652) | Inflammatory marker; often elevated in active sarcoidosis | Elevated (non-specific) | URGENT | ROUTINE | ROUTINE | URGENT |
+| CRP (CPT 86140) | Inflammatory marker; infection screen | Normal to mildly elevated | URGENT | ROUTINE | ROUTINE | URGENT |
+| Serum ACE level (CPT 82164) | Elevated in ~60% of systemic sarcoidosis but only ~30-50% of neurosarcoidosis; limited sensitivity; false positives in DM, hyperthyroidism, lymphoma | Elevated (>52 U/L; varies by lab) | URGENT | URGENT | ROUTINE | URGENT |
+| TSH (CPT 84443) | Hypothalamic-pituitary dysfunction screen; central hypothyroidism | Normal | URGENT | ROUTINE | ROUTINE | URGENT |
+| Free T4 (CPT 84439) | Central hypothyroidism from hypothalamic-pituitary sarcoidosis | Normal | URGENT | ROUTINE | ROUTINE | URGENT |
+| Prolactin (CPT 84146) | Elevated with hypothalamic/pituitary stalk involvement; usually mild elevation (<100 ng/mL) | Normal (<25 ng/mL) | URGENT | ROUTINE | ROUTINE | URGENT |
+| AM cortisol (CPT 82533) | Adrenal insufficiency from HPA axis involvement; central hypoadrenalism | Normal (>10 mcg/dL at 8AM) | URGENT | ROUTINE | ROUTINE | URGENT |
+| Blood glucose (CPT 82947) | Diabetes insipidus screen; pre-steroid baseline | Normal | STAT | STAT | ROUTINE | STAT |
+| HbA1c (CPT 83036) | Glycemic status before high-dose steroids | <5.7% | - | ROUTINE | ROUTINE | - |
+| Urinalysis with culture (CPT 81003+87086) | Infection screen; 24h urine calcium if hypercalcemia | Negative | STAT | STAT | ROUTINE | STAT |
+| Blood cultures (x2 sets) (CPT 87040) | Rule out infection (particularly TB, fungal before immunosuppression) | No growth | STAT | STAT | - | STAT |
+| PT/INR, aPTT (CPT 85610+85730) | Coagulation status pre-LP; pre-procedure | Normal | STAT | STAT | - | STAT |
+| Magnesium (CPT 83735) | Seizure threshold; metabolic screen | Normal | STAT | STAT | ROUTINE | STAT |
+| Phosphorus (CPT 84100) | Metabolic screen | Normal | STAT | STAT | ROUTINE | STAT |
+| LDH (CPT 83615) | Marker of granulomatous activity; lymphoma screen | Normal | URGENT | ROUTINE | ROUTINE | URGENT |
+| Uric acid (CPT 84550) | Elevated in active sarcoidosis | Normal | - | ROUTINE | ROUTINE | - |
+| Procalcitonin (CPT 84145) | Distinguish bacterial infection from granulomatous inflammation | Normal (<0.1 ng/mL) | URGENT | URGENT | - | URGENT |
+| Serum protein electrophoresis (SPEP) (CPT 86334) | Polyclonal hypergammaglobulinemia common in sarcoidosis; lymphoma screen | Polyclonal pattern or normal | - | ROUTINE | ROUTINE | - |
+| Quantitative immunoglobulins (IgG, IgA, IgM) (CPT 82784) | Baseline before immunotherapy; hypergammaglobulinemia | Normal or elevated IgG | - | ROUTINE | ROUTINE | - |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| 1,25-dihydroxyvitamin D (calcitriol) (CPT 82652) | - | ROUTINE | ROUTINE | - | Elevated due to granulomatous production by activated macrophages; more specific than calcium alone | Elevated (supports sarcoidosis) |
-| 25-hydroxyvitamin D (CPT 82306) | - | ROUTINE | ROUTINE | - | May be low (consumed by granulomatous conversion to 1,25-D); guides supplementation | Normal (>30 ng/mL) |
-| 24-hour urine calcium (CPT 82340) | - | ROUTINE | ROUTINE | - | Hypercalciuria (more common than hypercalcemia); nephrolithiasis risk | <300 mg/24h |
-| Serum lysozyme (CPT 86318) | - | ROUTINE | ROUTINE | - | Elevated in active sarcoidosis; marker of macrophage activity | Normal |
-| Soluble IL-2 receptor (sIL-2R) (CPT 86235) | - | ROUTINE | ROUTINE | - | Elevated in active sarcoidosis; may be more sensitive than ACE; correlates with disease activity | Normal |
-| ANA (CPT 86235) | URGENT | ROUTINE | ROUTINE | URGENT | Lupus/vasculitis screen | Negative or low titer |
-| Anti-dsDNA (CPT 86225) | - | ROUTINE | ROUTINE | - | If ANA positive; lupus cerebritis exclusion | Negative |
-| ANCA (c-ANCA and p-ANCA) (CPT 86235) | - | ROUTINE | ROUTINE | - | Granulomatosis with polyangiitis exclusion (CNS vasculitis mimic) | Negative |
-| Anti-SSA/SSB (Ro/La) | - | ROUTINE | ROUTINE | - | Sjogren syndrome with CNS involvement | Negative |
-| RPR/VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis exclusion (granulomatous meningitis mimic) | Negative |
-| Lyme serology (CPT 86618) | - | ROUTINE | ROUTINE | - | Lyme neuroborreliosis (cranial neuropathy, meningitis mimic) | Negative |
-| QuantiFERON-TB Gold or PPD (CPT 86480) | - | URGENT | ROUTINE | URGENT | TB exclusion before immunosuppression; TB meningitis is critical differential | Negative |
-| HIV (CPT 87389) | - | ROUTINE | ROUTINE | - | Immunocompromised screen; CNS lymphoma risk | Negative |
-| Hepatitis B surface antigen + core antibody (CPT 80074) | - | ROUTINE | ROUTINE | - | Reactivation risk before immunosuppression (rituximab, methotrexate) | Negative |
-| Hepatitis C antibody (CPT 80074) | - | ROUTINE | ROUTINE | - | Screen before immunosuppression | Negative |
-| LH, FSH | - | ROUTINE | ROUTINE | - | Hypogonadotropic hypogonadism from pituitary involvement | Normal |
-| Testosterone (males) or estradiol (premenopausal females) | - | ROUTINE | ROUTINE | - | Central hypogonadism screen | Normal |
-| IGF-1 (CPT 84305) | - | ROUTINE | ROUTINE | - | Growth hormone deficiency from pituitary involvement | Normal |
-| Serum osmolality + urine osmolality (CPT 83930+83935) | URGENT | ROUTINE | ROUTINE | URGENT | Diabetes insipidus screen (central DI from hypothalamic/posterior pituitary involvement) | Serum 275-295 mOsm/kg; urine concentrated |
-| Water deprivation test (supervised) | - | ROUTINE | ROUTINE | - | Confirm central diabetes insipidus if polyuria/polydipsia | Normal concentration ability |
-| Anti-AQP4 (NMO-IgG) (CPT 86255) | - | ROUTINE | ROUTINE | - | NMOSD exclusion if longitudinally extensive transverse myelitis | Negative |
-| Anti-MOG IgG | - | ROUTINE | ROUTINE | - | MOGAD exclusion if optic neuritis or myelitis | Negative |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| 1,25-dihydroxyvitamin D (calcitriol) (CPT 82652) | Elevated due to granulomatous production by activated macrophages; more specific than calcium alone | Elevated (supports sarcoidosis) | - | ROUTINE | ROUTINE | - |
+| 25-hydroxyvitamin D (CPT 82306) | May be low (consumed by granulomatous conversion to 1,25-D); guides supplementation | Normal (>30 ng/mL) | - | ROUTINE | ROUTINE | - |
+| 24-hour urine calcium (CPT 82340) | Hypercalciuria (more common than hypercalcemia); nephrolithiasis risk | <300 mg/24h | - | ROUTINE | ROUTINE | - |
+| Serum lysozyme (CPT 86318) | Elevated in active sarcoidosis; marker of macrophage activity | Normal | - | ROUTINE | ROUTINE | - |
+| Soluble IL-2 receptor (sIL-2R) (CPT 86235) | Elevated in active sarcoidosis; may be more sensitive than ACE; correlates with disease activity | Normal | - | ROUTINE | ROUTINE | - |
+| ANA (CPT 86235) | Lupus/vasculitis screen | Negative or low titer | URGENT | ROUTINE | ROUTINE | URGENT |
+| Anti-dsDNA (CPT 86225) | If ANA positive; lupus cerebritis exclusion | Negative | - | ROUTINE | ROUTINE | - |
+| ANCA (c-ANCA and p-ANCA) (CPT 86235) | Granulomatosis with polyangiitis exclusion (CNS vasculitis mimic) | Negative | - | ROUTINE | ROUTINE | - |
+| Anti-SSA/SSB (Ro/La) | Sjogren syndrome with CNS involvement | Negative | - | ROUTINE | ROUTINE | - |
+| RPR/VDRL (CPT 86592) | Neurosyphilis exclusion (granulomatous meningitis mimic) | Negative | - | ROUTINE | ROUTINE | - |
+| Lyme serology (CPT 86618) | Lyme neuroborreliosis (cranial neuropathy, meningitis mimic) | Negative | - | ROUTINE | ROUTINE | - |
+| QuantiFERON-TB Gold or PPD (CPT 86480) | TB exclusion before immunosuppression; TB meningitis is critical differential | Negative | - | URGENT | ROUTINE | URGENT |
+| HIV (CPT 87389) | Immunocompromised screen; CNS lymphoma risk | Negative | - | ROUTINE | ROUTINE | - |
+| Hepatitis B surface antigen + core antibody (CPT 80074) | Reactivation risk before immunosuppression (rituximab, methotrexate) | Negative | - | ROUTINE | ROUTINE | - |
+| Hepatitis C antibody (CPT 80074) | Screen before immunosuppression | Negative | - | ROUTINE | ROUTINE | - |
+| LH, FSH | Hypogonadotropic hypogonadism from pituitary involvement | Normal | - | ROUTINE | ROUTINE | - |
+| Testosterone (males) or estradiol (premenopausal females) | Central hypogonadism screen | Normal | - | ROUTINE | ROUTINE | - |
+| IGF-1 (CPT 84305) | Growth hormone deficiency from pituitary involvement | Normal | - | ROUTINE | ROUTINE | - |
+| Serum osmolality + urine osmolality (CPT 83930+83935) | Diabetes insipidus screen (central DI from hypothalamic/posterior pituitary involvement) | Serum 275-295 mOsm/kg; urine concentrated | URGENT | ROUTINE | ROUTINE | URGENT |
+| Water deprivation test (supervised) | Confirm central diabetes insipidus if polyuria/polydipsia | Normal concentration ability | - | ROUTINE | ROUTINE | - |
+| Anti-AQP4 (NMO-IgG) (CPT 86255) | NMOSD exclusion if longitudinally extensive transverse myelitis | Negative | - | ROUTINE | ROUTINE | - |
+| Anti-MOG IgG | MOGAD exclusion if optic neuritis or myelitis | Negative | - | ROUTINE | ROUTINE | - |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Chitotriosidase (CPT 82657) | - | EXT | EXT | - | Elevated in active sarcoidosis; macrophage activation marker; may monitor treatment response | Normal |
-| Serum amyloid A (SAA) | - | EXT | EXT | - | Inflammatory marker in refractory sarcoidosis; monitor activity | Normal |
-| Bronchoalveolar lavage (BAL) with CD4/CD8 ratio | - | EXT | EXT | - | CD4/CD8 ratio >3.5 supports sarcoidosis; helps differentiate from other granulomatous diseases | CD4/CD8 >3.5 |
-| Kveim test | - | EXT | EXT | - | Historical; rarely available; skin biopsy 4-6 weeks after injection of sarcoid tissue extract | Granuloma formation |
-| Anti-neuronal antibody panel | - | EXT | EXT | - | Paraneoplastic/autoimmune encephalitis exclusion if atypical presentation | Negative |
-| 14-3-3 protein (CSF) | - | EXT | EXT | - | Prion disease exclusion if rapidly progressive | Negative |
-| RT-QuIC (CSF) | - | EXT | EXT | - | Prion disease exclusion | Negative |
-| CSF metagenomics (next-generation sequencing) | - | EXT | EXT | - | Occult infection exclusion when standard testing negative | No pathogens detected |
-| Genetic testing (BTNL2, HLA-DRB1) | - | - | EXT | - | Sarcoidosis susceptibility genes; research/atypical cases | Informational |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Chitotriosidase (CPT 82657) | Elevated in active sarcoidosis; macrophage activation marker; may monitor treatment response | Normal | - | EXT | EXT | - |
+| Serum amyloid A (SAA) | Inflammatory marker in refractory sarcoidosis; monitor activity | Normal | - | EXT | EXT | - |
+| Bronchoalveolar lavage (BAL) with CD4/CD8 ratio | CD4/CD8 ratio >3.5 supports sarcoidosis; helps differentiate from other granulomatous diseases | CD4/CD8 >3.5 | - | EXT | EXT | - |
+| Kveim test | Historical; rarely available; skin biopsy 4-6 weeks after injection of sarcoid tissue extract | Granuloma formation | - | EXT | EXT | - |
+| Anti-neuronal antibody panel | Paraneoplastic/autoimmune encephalitis exclusion if atypical presentation | Negative | - | EXT | EXT | - |
+| 14-3-3 protein (CSF) | Prion disease exclusion if rapidly progressive | Negative | - | EXT | EXT | - |
+| RT-QuIC (CSF) | Prion disease exclusion | Negative | - | EXT | EXT | - |
+| CSF metagenomics (next-generation sequencing) | Occult infection exclusion when standard testing negative | No pathogens detected | - | EXT | EXT | - |
+| Genetic testing (BTNL2, HLA-DRB1) | Sarcoidosis susceptibility genes; research/atypical cases | Informational | - | - | EXT | - |
 
 ---
 
@@ -126,43 +127,43 @@ SECTION A: ACTION ITEMS
 
 ### 2A. Essential/First-line
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | Immediate (ED triage) | Rule out mass, hemorrhage, hydrocephalus; calcified granulomas | None significant |
-| MRI brain with and without gadolinium (CPT 70553) | URGENT | URGENT | ROUTINE | URGENT | Within 24h | Leptomeningeal enhancement (most common); pachymeningeal enhancement; hypothalamic/pituitary enhancement; cranial nerve enhancement (especially CN II, VII); parenchymal granulomas; periventricular white matter lesions; hydrocephalus | GFR <30; gadolinium allergy; pacemaker |
-| MRI spine (cervical and thoracic) with and without contrast (CPT 72156+72157) | URGENT | URGENT | ROUTINE | URGENT | Within 24-48h if myelopathy suspected | Intramedullary lesions; leptomeningeal enhancement; cord expansion; dorsal subpial enhancement ("trident sign"); longitudinally extensive lesions | GFR <30; gadolinium allergy |
-| CT chest (with or without contrast) (CPT 71260) | URGENT | URGENT | ROUTINE | URGENT | Within 24-48h | Bilateral hilar lymphadenopathy (Scadding stages); pulmonary infiltrates; mediastinal lymphadenopathy -- present in up to 90% of sarcoidosis | Contrast allergy; renal insufficiency |
-| ECG (12-lead) (CPT 93000) | STAT | STAT | ROUTINE | STAT | Immediate | Conduction abnormalities (cardiac sarcoidosis); QTc prolongation; heart block | None |
-| Chest X-ray (CPT 71046) | STAT | STAT | ROUTINE | STAT | Immediate | Bilateral hilar lymphadenopathy; pulmonary infiltrates | Pregnancy (relative) |
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
+| CT head without contrast (CPT 70450) | Immediate (ED triage) | Rule out mass, hemorrhage, hydrocephalus; calcified granulomas | None significant | STAT | STAT | - | STAT |
+| MRI brain with and without gadolinium (CPT 70553) | Within 24h | Leptomeningeal enhancement (most common); pachymeningeal enhancement; hypothalamic/pituitary enhancement; cranial nerve enhancement (especially CN II, VII); parenchymal granulomas; periventricular white matter lesions; hydrocephalus | GFR <30; gadolinium allergy; pacemaker | URGENT | URGENT | ROUTINE | URGENT |
+| MRI spine (cervical and thoracic) with and without contrast (CPT 72156+72157) | Within 24-48h if myelopathy suspected | Intramedullary lesions; leptomeningeal enhancement; cord expansion; dorsal subpial enhancement ("trident sign"); longitudinally extensive lesions | GFR <30; gadolinium allergy | URGENT | URGENT | ROUTINE | URGENT |
+| CT chest (with or without contrast) (CPT 71260) | Within 24-48h | Bilateral hilar lymphadenopathy (Scadding stages); pulmonary infiltrates; mediastinal lymphadenopathy -- present in up to 90% of sarcoidosis | Contrast allergy; renal insufficiency | URGENT | URGENT | ROUTINE | URGENT |
+| ECG (12-lead) (CPT 93000) | Immediate | Conduction abnormalities (cardiac sarcoidosis); QTc prolongation; heart block | None | STAT | STAT | ROUTINE | STAT |
+| Chest X-ray (CPT 71046) | Immediate | Bilateral hilar lymphadenopathy; pulmonary infiltrates | Pregnancy (relative) | STAT | STAT | ROUTINE | STAT |
 
 ### 2B. Extended
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| FDG-PET/CT (whole body) (CPT 78816) | - | ROUTINE | ROUTINE | - | Within 1-2 weeks | FDG-avid lymph nodes, pulmonary infiltrates, or other sites for biopsy targeting; disease activity assessment; identify biopsy-accessible sites | Uncontrolled diabetes; pregnancy |
-| Gallium-67 scan | - | ROUTINE | ROUTINE | - | Within 1-2 weeks | Lambda sign (bilateral hilar + right paratracheal uptake); panda sign (lacrimal + parotid uptake); largely replaced by FDG-PET | Pregnancy |
-| Cardiac MRI (CPT 75561) | - | ROUTINE | ROUTINE | - | Within 1-2 weeks | Cardiac sarcoidosis (late gadolinium enhancement, myocardial edema); conduction disease; cardiomyopathy | Pacemaker; GFR <30 |
-| Echocardiogram (CPT 93306) | - | ROUTINE | ROUTINE | URGENT | Within 48h | Cardiac sarcoidosis; wall motion abnormalities; systolic/diastolic dysfunction | None significant |
-| CT orbits with contrast | - | ROUTINE | ROUTINE | - | If orbital/optic nerve involvement | Optic nerve/sheath enhancement; orbital mass; lacrimal gland enlargement | Contrast allergy |
-| EMG/NCS (electromyography/nerve conduction studies) (CPT 95907-95913) | - | ROUTINE | ROUTINE | - | Within 1-2 weeks | Small fiber neuropathy; axonal polyneuropathy; mononeuritis multiplex; polyradiculopathy | Anticoagulation (relative for needle EMG) |
-| Pulmonary function tests (PFTs) (CPT 94010) | - | ROUTINE | ROUTINE | - | Within 1-2 weeks | Restrictive pattern; reduced DLCO; pulmonary sarcoidosis staging | Unable to cooperate |
-| Ophthalmologic slit lamp examination | URGENT | URGENT | ROUTINE | URGENT | Within 24-48h | Anterior uveitis; posterior uveitis; optic disc edema; lacrimal gland enlargement; keratoconjunctivitis sicca | None |
-| Visual evoked potentials (VEPs) (CPT 95930) | - | ROUTINE | ROUTINE | - | Within 1-2 weeks | Optic neuropathy assessment; P100 latency prolongation | None significant |
-| Holter monitor/event monitor (CPT 93224) | - | ROUTINE | ROUTINE | - | Within 1 week | Cardiac arrhythmias from cardiac sarcoidosis | None |
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
+| FDG-PET/CT (whole body) (CPT 78816) | Within 1-2 weeks | FDG-avid lymph nodes, pulmonary infiltrates, or other sites for biopsy targeting; disease activity assessment; identify biopsy-accessible sites | Uncontrolled diabetes; pregnancy | - | ROUTINE | ROUTINE | - |
+| Gallium-67 scan | Within 1-2 weeks | Lambda sign (bilateral hilar + right paratracheal uptake); panda sign (lacrimal + parotid uptake); largely replaced by FDG-PET | Pregnancy | - | ROUTINE | ROUTINE | - |
+| Cardiac MRI (CPT 75561) | Within 1-2 weeks | Cardiac sarcoidosis (late gadolinium enhancement, myocardial edema); conduction disease; cardiomyopathy | Pacemaker; GFR <30 | - | ROUTINE | ROUTINE | - |
+| Echocardiogram (CPT 93306) | Within 48h | Cardiac sarcoidosis; wall motion abnormalities; systolic/diastolic dysfunction | None significant | - | ROUTINE | ROUTINE | URGENT |
+| CT orbits with contrast | If orbital/optic nerve involvement | Optic nerve/sheath enhancement; orbital mass; lacrimal gland enlargement | Contrast allergy | - | ROUTINE | ROUTINE | - |
+| EMG/NCS (electromyography/nerve conduction studies) (CPT 95907-95913) | Within 1-2 weeks | Small fiber neuropathy; axonal polyneuropathy; mononeuritis multiplex; polyradiculopathy | Anticoagulation (relative for needle EMG) | - | ROUTINE | ROUTINE | - |
+| Pulmonary function tests (PFTs) (CPT 94010) | Within 1-2 weeks | Restrictive pattern; reduced DLCO; pulmonary sarcoidosis staging | Unable to cooperate | - | ROUTINE | ROUTINE | - |
+| Ophthalmologic slit lamp examination | Within 24-48h | Anterior uveitis; posterior uveitis; optic disc edema; lacrimal gland enlargement; keratoconjunctivitis sicca | None | URGENT | URGENT | ROUTINE | URGENT |
+| Visual evoked potentials (VEPs) (CPT 95930) | Within 1-2 weeks | Optic neuropathy assessment; P100 latency prolongation | None significant | - | ROUTINE | ROUTINE | - |
+| Holter monitor/event monitor (CPT 93224) | Within 1 week | Cardiac arrhythmias from cardiac sarcoidosis | None | - | ROUTINE | ROUTINE | - |
 
 ### 2C. Rare/Specialized
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Meningeal biopsy (open or stereotactic) | - | EXT | - | - | When tissue diagnosis required | Non-caseating granulomas with multinucleated giant cells; exclusion of infection/malignancy; definite neurosarcoidosis diagnosis | Coagulopathy; inaccessible location |
-| Lymph node biopsy (mediastinal or peripheral) | - | EXT | EXT | - | When systemic tissue confirmation needed | Non-caseating granulomas; probable neurosarcoidosis diagnosis | Coagulopathy |
-| Transbronchial lung biopsy (TBLB) | - | EXT | EXT | - | If hilar lymphadenopathy present | Non-caseating granulomas; high yield (60-90%) with EBUS guidance | Coagulopathy; severe pulmonary hypertension |
-| Endobronchial ultrasound (EBUS) with biopsy | - | EXT | EXT | - | Preferred for mediastinal lymph node sampling | Non-caseating granulomas; diagnostic yield >90% for stage I-II sarcoidosis | Same as TBLB |
-| Skin biopsy (if skin lesions present) | - | ROUTINE | ROUTINE | - | When cutaneous sarcoidosis suspected | Non-caseating granulomas; easiest biopsy site | Coagulopathy |
-| Minor salivary gland biopsy (lip biopsy) | - | EXT | EXT | - | Alternative biopsy site when other sites not accessible | Non-caseating granulomas; yield ~30-60% | Coagulopathy |
-| Conjunctival biopsy | - | EXT | EXT | - | If lacrimal/conjunctival nodules present | Non-caseating granulomas | None significant |
-| Brain biopsy (stereotactic) | - | EXT | - | - | Last resort; when diagnosis uncertain and treatment-critical | Non-caseating granulomas; definite neurosarcoidosis | Coagulopathy; deep lesion location |
-| FDG-PET brain | - | EXT | EXT | - | If brain MRI equivocal | Focal or diffuse hypermetabolism; meningeal uptake | Uncontrolled diabetes |
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
+| Meningeal biopsy (open or stereotactic) | When tissue diagnosis required | Non-caseating granulomas with multinucleated giant cells; exclusion of infection/malignancy; definite neurosarcoidosis diagnosis | Coagulopathy; inaccessible location | - | EXT | - | - |
+| Lymph node biopsy (mediastinal or peripheral) | When systemic tissue confirmation needed | Non-caseating granulomas; probable neurosarcoidosis diagnosis | Coagulopathy | - | EXT | EXT | - |
+| Transbronchial lung biopsy (TBLB) | If hilar lymphadenopathy present | Non-caseating granulomas; high yield (60-90%) with EBUS guidance | Coagulopathy; severe pulmonary hypertension | - | EXT | EXT | - |
+| Endobronchial ultrasound (EBUS) with biopsy | Preferred for mediastinal lymph node sampling | Non-caseating granulomas; diagnostic yield >90% for stage I-II sarcoidosis | Same as TBLB | - | EXT | EXT | - |
+| Skin biopsy (if skin lesions present) | When cutaneous sarcoidosis suspected | Non-caseating granulomas; easiest biopsy site | Coagulopathy | - | ROUTINE | ROUTINE | - |
+| Minor salivary gland biopsy (lip biopsy) | Alternative biopsy site when other sites not accessible | Non-caseating granulomas; yield ~30-60% | Coagulopathy | - | EXT | EXT | - |
+| Conjunctival biopsy | If lacrimal/conjunctival nodules present | Non-caseating granulomas | None significant | - | EXT | EXT | - |
+| Brain biopsy (stereotactic) | Last resort; when diagnosis uncertain and treatment-critical | Non-caseating granulomas; definite neurosarcoidosis | Coagulopathy; deep lesion location | - | EXT | - | - |
+| FDG-PET brain | If brain MRI equivocal | Focal or diffuse hypermetabolism; meningeal uptake | Uncontrolled diabetes | - | EXT | EXT | - |
 
 ### LUMBAR PUNCTURE
 
@@ -172,26 +173,26 @@ SECTION A: ACTION ITEMS
 
 **Volume Required:** 15-20 mL (sufficient for comprehensive infectious, inflammatory, and cytology studies)
 
-| Study | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|-------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Opening pressure (CPT 89050) | URGENT | ROUTINE | ROUTINE | - | Elevated ICP assessment; hydrocephalus from meningeal involvement | 10-20 cm H2O (often elevated in neurosarcoidosis) |
-| Cell count with differential (tubes 1 and 4) (CPT 89051) | STAT | STAT | ROUTINE | STAT | Lymphocytic pleocytosis (50-70% of neurosarcoidosis); distinguish from infection | WBC 10-100 (lymphocyte-predominant); RBC 0 |
-| Protein (CPT 84157) | STAT | STAT | ROUTINE | STAT | Elevated in 50-70% of neurosarcoidosis; usually 50-200 mg/dL | Normal to elevated (often 50-200 mg/dL) |
-| Glucose with paired serum glucose (CPT 82945) | STAT | STAT | ROUTINE | STAT | Low in ~18% of neurosarcoidosis; also low in TB, fungal, bacterial meningitis | Normal or low (>40 mg/dL; >60% of serum) |
-| CSF ACE level (CPT 82164) | URGENT | URGENT | ROUTINE | URGENT | Elevated in ~50-70% of neurosarcoidosis; limited sensitivity (50%) but reasonable specificity (~90%); NOT diagnostic alone | Elevated supports diagnosis (normal does not exclude) |
-| Oligoclonal bands (CSF AND paired serum) (CPT 83916) | URGENT | ROUTINE | ROUTINE | - | Intrathecal IgG synthesis; present in ~30-40% of neurosarcoidosis; helps differentiate from MS | May show CSF-specific bands |
-| IgG index (CPT 83787) | URGENT | ROUTINE | ROUTINE | - | Intrathecal antibody synthesis | May be elevated |
-| Gram stain and bacterial culture (CPT 87205+87070) | STAT | STAT | ROUTINE | STAT | Rule out bacterial meningitis | No organisms |
-| AFB smear and culture (CPT 87116) | URGENT | URGENT | ROUTINE | URGENT | TB meningitis exclusion (CRITICAL differential for granulomatous meningitis) | Negative |
-| Fungal culture (CPT 87102) | URGENT | URGENT | ROUTINE | - | Fungal meningitis exclusion (cryptococcal, coccidioidomycosis) | Negative |
-| Cryptococcal antigen (CPT 87327) | URGENT | URGENT | - | URGENT | Cryptococcal meningitis exclusion | Negative |
-| CSF VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis exclusion | Negative |
-| Cytology (CPT 88104) | - | ROUTINE | ROUTINE | - | Carcinomatous/lymphomatous meningitis exclusion | Negative for malignant cells |
-| Flow cytometry (CPT 88184) | - | ROUTINE | ROUTINE | - | CNS lymphoma exclusion | Normal |
-| HSV PCR (CPT 87529) | STAT | STAT | - | STAT | Viral encephalitis exclusion | Negative |
-| TB PCR (GeneXpert) | URGENT | URGENT | ROUTINE | - | Rapid TB meningitis exclusion; more sensitive than AFB smear | Negative |
-| CSF CD4/CD8 ratio | - | ROUTINE | ROUTINE | - | Elevated CD4/CD8 ratio supports neurosarcoidosis (similar to BAL) | Elevated (>3.0 suggestive) |
-| Adenosine deaminase (ADA) (CPT 86235) | URGENT | ROUTINE | ROUTINE | - | Elevated in TB meningitis (>10 IU/L); helps differentiate TB from sarcoid | Normal (<10 IU/L) |
+| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|-------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Opening pressure (CPT 89050) | Elevated ICP assessment; hydrocephalus from meningeal involvement | 10-20 cm H2O (often elevated in neurosarcoidosis) | URGENT | ROUTINE | ROUTINE | - |
+| Cell count with differential (tubes 1 and 4) (CPT 89051) | Lymphocytic pleocytosis (50-70% of neurosarcoidosis); distinguish from infection | WBC 10-100 (lymphocyte-predominant); RBC 0 | STAT | STAT | ROUTINE | STAT |
+| Protein (CPT 84157) | Elevated in 50-70% of neurosarcoidosis; usually 50-200 mg/dL | Normal to elevated (often 50-200 mg/dL) | STAT | STAT | ROUTINE | STAT |
+| Glucose with paired serum glucose (CPT 82945) | Low in ~18% of neurosarcoidosis; also low in TB, fungal, bacterial meningitis | Normal or low (>40 mg/dL; >60% of serum) | STAT | STAT | ROUTINE | STAT |
+| CSF ACE level (CPT 82164) | Elevated in ~50-70% of neurosarcoidosis; limited sensitivity (50%) but reasonable specificity (~90%); NOT diagnostic alone | Elevated supports diagnosis (normal does not exclude) | URGENT | URGENT | ROUTINE | URGENT |
+| Oligoclonal bands (CSF AND paired serum) (CPT 83916) | Intrathecal IgG synthesis; present in ~30-40% of neurosarcoidosis; helps differentiate from MS | May show CSF-specific bands | URGENT | ROUTINE | ROUTINE | - |
+| IgG index (CPT 83787) | Intrathecal antibody synthesis | May be elevated | URGENT | ROUTINE | ROUTINE | - |
+| Gram stain and bacterial culture (CPT 87205+87070) | Rule out bacterial meningitis | No organisms | STAT | STAT | ROUTINE | STAT |
+| AFB smear and culture (CPT 87116) | TB meningitis exclusion (CRITICAL differential for granulomatous meningitis) | Negative | URGENT | URGENT | ROUTINE | URGENT |
+| Fungal culture (CPT 87102) | Fungal meningitis exclusion (cryptococcal, coccidioidomycosis) | Negative | URGENT | URGENT | ROUTINE | - |
+| Cryptococcal antigen (CPT 87327) | Cryptococcal meningitis exclusion | Negative | URGENT | URGENT | - | URGENT |
+| CSF VDRL (CPT 86592) | Neurosyphilis exclusion | Negative | - | ROUTINE | ROUTINE | - |
+| Cytology (CPT 88104) | Carcinomatous/lymphomatous meningitis exclusion | Negative for malignant cells | - | ROUTINE | ROUTINE | - |
+| Flow cytometry (CPT 88184) | CNS lymphoma exclusion | Normal | - | ROUTINE | ROUTINE | - |
+| HSV PCR (CPT 87529) | Viral encephalitis exclusion | Negative | STAT | STAT | - | STAT |
+| TB PCR (GeneXpert) | Rapid TB meningitis exclusion; more sensitive than AFB smear | Negative | URGENT | URGENT | ROUTINE | - |
+| CSF CD4/CD8 ratio | Elevated CD4/CD8 ratio supports neurosarcoidosis (similar to BAL) | Elevated (>3.0 suggestive) | - | ROUTINE | ROUTINE | - |
+| Adenosine deaminase (ADA) (CPT 86235) | Elevated in TB meningitis (>10 IU/L); helps differentiate TB from sarcoid | Normal (<10 IU/L) | URGENT | ROUTINE | ROUTINE | - |
 
 **Special Handling:** CSF ACE level requires prompt processing; send AFB and fungal cultures in sufficient volume (minimum 2 mL each). Cytology requires rapid transport (<1 hour). Store extra CSF (frozen at -20C) for future testing.
 
@@ -205,14 +206,14 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Methylprednisolone IV | IV | Acute severe neurosarcoidosis (optic neuropathy, myelopathy, cranial neuropathy, acute hydrocephalus, mass lesion with edema) | 1000 mg daily x 3-5 days :: IV :: :: 1000 mg IV daily for 3-5 days; infuse over 1-2 hours | Active untreated infection (especially TB); uncontrolled diabetes; active GI bleeding; psychosis from steroids | Glucose q6h (target <180 mg/dL); BP; mood/sleep; I/O; GI prophylaxis; electrolytes | STAT | STAT | - | STAT |
-| Omeprazole (GI prophylaxis during steroids) | PO/IV | GI protection during high-dose corticosteroid therapy | 40 mg daily :: PO :: :: 40 mg IV/PO daily during steroid course and oral taper | PPI allergy | None routine | URGENT | STAT | ROUTINE | STAT |
-| Insulin sliding scale | SC | Steroid-induced hyperglycemia management | Per protocol :: SC :: :: Per sliding scale if glucose >180 mg/dL; adjust per glucose trends | Hypoglycemia risk | Glucose q6h; adjust per response | URGENT | STAT | - | STAT |
-| Dexamethasone (acute elevated ICP/mass effect) | IV | Cerebral edema from granulomatous mass lesion; acute elevated ICP | 10 mg IV load; 4 mg q6h :: IV :: :: 10 mg IV loading dose, then 4 mg IV q6h; taper over days-weeks as clinically improving | Active untreated infection; uncontrolled diabetes | Glucose; BP; neurological status; GI prophylaxis | STAT | STAT | - | STAT |
-| Lorazepam (acute seizure) | IV | Seizure secondary to cortical/meningeal sarcoidosis | 0.1 mg/kg IV; max 4 mg :: IV :: :: 0.1 mg/kg IV push (max 4 mg/dose); may repeat x1 in 5 minutes | Respiratory depression; acute narrow-angle glaucoma | Respiratory status; sedation level; airway patency | STAT | STAT | - | STAT |
-| Desmopressin (acute diabetes insipidus) | IV/SC/IN | Central diabetes insipidus from hypothalamic/posterior pituitary sarcoidosis | 1-2 mcg IV/SC; 10-20 mcg intranasal :: IV :: :: 1-2 mcg IV/SC q12h or 10-20 mcg intranasal BID; titrate to urine output and serum sodium | Hyponatremia; type IIb von Willebrand disease | Sodium q4-6h initially; urine output; urine specific gravity; serum osmolality; weight | STAT | STAT | ROUTINE | STAT |
-| Mannitol (acute elevated ICP) | IV | Acute elevated ICP from mass lesion or obstructive hydrocephalus pending surgical intervention | 1 g/kg IV over 15-20 min :: IV :: :: 1 g/kg IV bolus over 15-20 minutes; may repeat 0.5 g/kg q6h; maintain serum osmolality <320 mOsm/kg | Anuria; severe dehydration; active intracranial hemorrhage | Serum osmolality q6h; electrolytes; renal function; I/O | STAT | STAT | - | STAT |
-| Hypertonic saline 3% (acute elevated ICP) | IV | Acute elevated ICP from obstructive hydrocephalus or mass effect | 250 mL IV over 15-30 min :: IV :: :: 250 mL 3% NaCl IV over 15-30 minutes; may repeat; target sodium 145-155 mEq/L | Hypernatremia >155 mEq/L; severe CHF | Sodium q2-4h; serum osmolality; central line preferred for concentrations >3% | STAT | STAT | - | STAT |
+| Methylprednisolone | IV | Acute severe neurosarcoidosis (optic neuropathy, myelopathy, cranial neuropathy, acute hydrocephalus, mass lesion with edema) | 1000 mg :: IV :: daily :: 1000 mg IV daily for 3-5 days; infuse over 1-2 hours | Active untreated infection (especially TB); uncontrolled diabetes; active GI bleeding; psychosis from steroids | Glucose q6h (target <180 mg/dL); BP; mood/sleep; I/O; GI prophylaxis; electrolytes | STAT | STAT | - | STAT |
+| Omeprazole | PO | GI protection during high-dose corticosteroid therapy | 40 mg :: PO :: daily :: 40 mg PO daily during steroid course and oral taper; IV if NPO | PPI allergy | None routine | URGENT | STAT | ROUTINE | STAT |
+| Insulin sliding scale | SC | Steroid-induced hyperglycemia management | Per protocol :: SC :: PRN :: Per sliding scale if glucose >180 mg/dL; adjust per glucose trends | Hypoglycemia risk | Glucose q6h; adjust per response | URGENT | STAT | - | STAT |
+| Dexamethasone | IV | Cerebral edema from granulomatous mass lesion; acute elevated ICP | 10 mg :: IV :: q6h :: 10 mg IV loading dose, then 4 mg IV q6h; taper over days-weeks as clinically improving | Active untreated infection; uncontrolled diabetes | Glucose; BP; neurological status; GI prophylaxis | STAT | STAT | - | STAT |
+| Lorazepam | IV | Seizure secondary to cortical/meningeal sarcoidosis | 4 mg :: IV :: PRN seizure :: 0.1 mg/kg IV push (max 4 mg/dose); may repeat x1 in 5 minutes | Respiratory depression; acute narrow-angle glaucoma | Respiratory status; sedation level; airway patency | STAT | STAT | - | STAT |
+| Desmopressin | IV | Central diabetes insipidus from hypothalamic/posterior pituitary sarcoidosis | 1-2 mcg :: IV :: q12h :: 1-2 mcg IV/SC q12h; or 10-20 mcg intranasal BID; titrate to urine output and serum sodium | Hyponatremia; type IIb von Willebrand disease | Sodium q4-6h initially; urine output; urine specific gravity; serum osmolality; weight | STAT | STAT | ROUTINE | STAT |
+| Mannitol | IV | Acute elevated ICP from mass lesion or obstructive hydrocephalus pending surgical intervention | 1 g/kg :: IV :: PRN ICP :: 1 g/kg IV bolus over 15-20 minutes; may repeat 0.5 g/kg q6h; maintain serum osmolality <320 mOsm/kg | Anuria; severe dehydration; active intracranial hemorrhage | Serum osmolality q6h; electrolytes; renal function; I/O | STAT | STAT | - | STAT |
+| Hypertonic saline 3% | IV | Acute elevated ICP from obstructive hydrocephalus or mass effect | 250 mL :: IV :: PRN ICP :: 250 mL 3% NaCl IV over 15-30 minutes; may repeat; target sodium 145-155 mEq/L | Hypernatremia >155 mEq/L; severe CHF | Sodium q2-4h; serum osmolality; central line preferred for concentrations >3% | STAT | STAT | - | STAT |
 
 *Note: High-dose IV corticosteroids are the mainstay of acute neurosarcoidosis treatment. Do NOT delay steroids if neurosarcoidosis is clinically suspected -- tissue confirmation can proceed in parallel. Always exclude TB meningitis before or concurrently with initiating immunosuppression (send AFB cultures + TB PCR before starting steroids).*
 
@@ -220,18 +221,19 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Gabapentin | PO | Neuropathic pain from peripheral neuropathy or radiculopathy | 300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q1-3d; target 900-1800 mg TID; max 3600 mg/day | Renal impairment (adjust dose per CrCl) | Sedation; dizziness; peripheral edema; renal function | - | ROUTINE | ROUTINE | - |
-| Pregabalin | PO | Neuropathic pain; alternative to gabapentin | 75 mg BID; 150 mg BID; 300 mg BID :: PO :: :: Start 75 mg BID; may increase q1wk; max 600 mg/day | Renal impairment (adjust dose); Class V controlled substance | Sedation; weight gain; peripheral edema; renal function | - | ROUTINE | ROUTINE | - |
-| Duloxetine | PO | Neuropathic pain; comorbid depression | 30 mg daily; 60 mg daily :: PO :: :: Start 30 mg daily x 1 week, then increase to 60 mg daily; max 120 mg/day | Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma | BP; hepatic function; serotonin syndrome risk; suicidality monitoring | - | ROUTINE | ROUTINE | - |
-| Carbamazepine | PO | Trigeminal neuralgia from CN V sarcoidosis | 100 mg BID; 200 mg BID; 400 mg BID :: PO :: :: Start 100 mg BID; titrate by 200 mg/day q3-7d; target level 4-12 mcg/mL; max 1200 mg/day | AV block; bone marrow suppression; HLA-B*1502 positive (SJS risk); hepatic porphyria | CBC q2 weeks x 2 months, then q3 months; LFTs; sodium (SIADH); drug level; HLA-B*1502 before starting in at-risk populations | - | ROUTINE | ROUTINE | - |
-| Levetiracetam | PO/IV | Seizures secondary to cortical or meningeal neurosarcoidosis | 500 mg BID; 750 mg BID; 1000 mg BID; 1500 mg BID :: PO :: :: Start 500 mg BID; increase by 500 mg/day q1-2wk; max 3000 mg/day | Renal impairment (adjust dose per CrCl) | Behavioral changes (rage, irritability); suicidality; renal function | STAT | STAT | ROUTINE | STAT |
-| Lacosamide | PO/IV | Seizures; second-line ASM or adjunctive therapy | 100 mg BID; 150 mg BID; 200 mg BID :: PO :: :: Start 100 mg BID; increase by 50 mg/dose q1wk; max 400 mg/day | Second/third degree AV block; severe hepatic impairment | ECG (PR prolongation); dizziness; cardiac monitoring during IV load | URGENT | URGENT | ROUTINE | URGENT |
-| Levothyroxine | PO | Central hypothyroidism from hypothalamic-pituitary sarcoidosis | 25-50 mcg daily; 75-100 mcg daily :: PO :: :: Start 25-50 mcg daily (lower in elderly/cardiac disease); titrate q6-8 weeks by 12.5-25 mcg; target free T4 in upper half of normal range (NOT TSH-guided for central hypothyroidism) | Adrenal insufficiency (must correct cortisol FIRST); acute MI | Free T4 (NOT TSH) q6-8 weeks; monitor for adrenal crisis if cortisol not replaced | - | ROUTINE | ROUTINE | - |
-| Hydrocortisone (physiologic replacement) | PO | Central adrenal insufficiency from HPA axis sarcoidosis | 10 mg AM; 5 mg PM :: PO :: :: 10 mg on waking + 5 mg in early afternoon; stress dosing: double or triple during illness/surgery | Active infection (relative); peptic ulcer | AM cortisol (before dose); ACTH stimulation test; stress dose education | - | ROUTINE | ROUTINE | ROUTINE |
-| Testosterone replacement (males) | IM/TOP | Hypogonadotropic hypogonadism from pituitary sarcoidosis | Testosterone cypionate 200 mg IM q2wk; or topical gel 1% (50 mg daily) :: IM :: :: Testosterone cypionate 100-200 mg IM every 2 weeks or topical gel per product | Prostate cancer; breast cancer; polycythemia (Hct >54%); OSA (untreated); desire for fertility | Testosterone level; PSA; Hct q3 months initially; DRE annually; lipids | - | - | ROUTINE | - |
-| Calcium + Vitamin D (bone protection) | PO | Bone protection during chronic corticosteroid therapy; AVOID vitamin D supplementation if hypercalcemia | 1000-1200 mg/day calcium + 800-1000 IU/day vitamin D :: PO :: :: Calcium 500-600 mg PO BID + Vitamin D 800-1000 IU daily; HOLD vitamin D if serum calcium elevated | Hypercalcemia; hypercalciuria; nephrolithiasis (avoid vitamin D in active sarcoid hypercalcemia) | Serum calcium; 25-OH vitamin D; 24h urine calcium; DEXA if steroids >3 months | - | ROUTINE | ROUTINE | - |
-| Acetazolamide | PO | Communicating hydrocephalus; elevated ICP from meningeal sarcoidosis (adjunct to steroids) | 250 mg BID; 500 mg BID :: PO :: :: Start 250 mg BID; may increase to 500 mg BID; max 2000 mg/day | Sulfa allergy; severe renal/hepatic failure; hypokalemia; metabolic acidosis | BMP (potassium, bicarbonate); renal function; paresthesias; kidney stones | - | ROUTINE | ROUTINE | - |
-| Artificial tears | TOP | Keratoconjunctivitis sicca from lacrimal gland sarcoidosis | PRN; 1-2 drops q2-4h :: TOP :: :: 1-2 drops in each eye q2-4h PRN for dryness; preservative-free preferred for frequent use | None significant | Symptom relief; ophthalmology follow-up | - | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | Neuropathic pain from peripheral neuropathy or radiculopathy | 300 mg :: PO :: TID :: Start 300 mg qHS; titrate by 300 mg q1-3d; target 900-1800 mg TID; max 3600 mg/day | Renal impairment (adjust dose per CrCl) | Sedation; dizziness; peripheral edema; renal function | - | ROUTINE | ROUTINE | - |
+| Pregabalin | PO | Neuropathic pain; alternative to gabapentin | 75 mg :: PO :: BID :: Start 75 mg BID; may increase q1wk; max 600 mg/day | Renal impairment (adjust dose); Class V controlled substance | Sedation; weight gain; peripheral edema; renal function | - | ROUTINE | ROUTINE | - |
+| Duloxetine | PO | Neuropathic pain; comorbid depression | 30 mg :: PO :: daily :: Start 30 mg daily x 1 week, then increase to 60 mg daily; max 120 mg/day | Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma | BP; hepatic function; serotonin syndrome risk; suicidality monitoring | - | ROUTINE | ROUTINE | - |
+| Carbamazepine | PO | Trigeminal neuralgia from CN V sarcoidosis | 100 mg :: PO :: BID :: Start 100 mg BID; titrate by 200 mg/day q3-7d; target level 4-12 mcg/mL; max 1200 mg/day | AV block; bone marrow suppression; HLA-B*1502 positive (SJS risk); hepatic porphyria | CBC q2 weeks x 2 months, then q3 months; LFTs; sodium (SIADH); drug level; HLA-B*1502 before starting in at-risk populations | - | ROUTINE | ROUTINE | - |
+| Levetiracetam | IV | Seizures secondary to cortical or meningeal neurosarcoidosis | 500 mg :: IV :: BID :: Start 500 mg BID (IV or PO); increase by 500 mg/day q1-2wk; max 3000 mg/day; transition to PO when tolerated | Renal impairment (adjust dose per CrCl) | Behavioral changes (rage, irritability); suicidality; renal function | STAT | STAT | ROUTINE | STAT |
+| Lacosamide | IV | Seizures; second-line ASM or adjunctive therapy | 100 mg :: IV :: BID :: Start 100 mg BID (IV or PO); increase by 50 mg/dose q1wk; max 400 mg/day; transition to PO when tolerated | Second/third degree AV block; severe hepatic impairment | ECG (PR prolongation); dizziness; cardiac monitoring during IV load | URGENT | URGENT | ROUTINE | URGENT |
+| Levothyroxine | PO | Central hypothyroidism from hypothalamic-pituitary sarcoidosis | 25 mcg :: PO :: daily :: Start 25-50 mcg daily (lower in elderly/cardiac disease); titrate q6-8 weeks by 12.5-25 mcg; target free T4 in upper half of normal range (NOT TSH-guided for central hypothyroidism) | Adrenal insufficiency (must correct cortisol FIRST); acute MI | Free T4 (NOT TSH) q6-8 weeks; monitor for adrenal crisis if cortisol not replaced | - | ROUTINE | ROUTINE | - |
+| Hydrocortisone (physiologic replacement) | PO | Central adrenal insufficiency from HPA axis sarcoidosis | 10 mg :: PO :: BID :: 10 mg on waking + 5 mg in early afternoon; stress dosing: double or triple during illness/surgery | Active infection (relative); peptic ulcer | AM cortisol (before dose); ACTH stimulation test; stress dose education | - | ROUTINE | ROUTINE | ROUTINE |
+| Testosterone cypionate (males) | IM | Hypogonadotropic hypogonadism from pituitary sarcoidosis | 200 mg :: IM :: q2wk :: 100-200 mg IM every 2 weeks; titrate based on testosterone trough levels | Prostate cancer; breast cancer; polycythemia (Hct >54%); OSA (untreated); desire for fertility | Testosterone level; PSA; Hct q3 months initially; DRE annually; lipids | - | - | ROUTINE | - |
+| Testosterone gel 1% (males) | TOP | Hypogonadotropic hypogonadism from pituitary sarcoidosis; alternative to IM injection | 50 mg :: TOP :: daily :: 50 mg (5g gel) applied to shoulders/upper arms daily; wash hands after application; avoid skin-to-skin transfer | Prostate cancer; breast cancer; polycythemia (Hct >54%); women/children skin contact | Testosterone level; PSA; Hct q3 months initially; DRE annually; lipids | - | - | ROUTINE | - |
+| Calcium + Vitamin D (bone protection) | PO | Bone protection during chronic corticosteroid therapy; AVOID vitamin D supplementation if hypercalcemia | 500 mg :: PO :: BID :: Calcium 500-600 mg PO BID + Vitamin D 800-1000 IU daily; HOLD vitamin D if serum calcium elevated | Hypercalcemia; hypercalciuria; nephrolithiasis (avoid vitamin D in active sarcoid hypercalcemia) | Serum calcium; 25-OH vitamin D; 24h urine calcium; DEXA if steroids >3 months | - | ROUTINE | ROUTINE | - |
+| Acetazolamide | PO | Communicating hydrocephalus; elevated ICP from meningeal sarcoidosis (adjunct to steroids) | 250 mg :: PO :: BID :: Start 250 mg BID; may increase to 500 mg BID; max 2000 mg/day | Sulfa allergy; severe renal/hepatic failure; hypokalemia; metabolic acidosis | BMP (potassium, bicarbonate); renal function; paresthesias; kidney stones | - | ROUTINE | ROUTINE | - |
+| Artificial tears | TOP | Keratoconjunctivitis sicca from lacrimal gland sarcoidosis | 1-2 drops :: TOP :: q2-4h PRN :: 1-2 drops in each eye q2-4h PRN for dryness; preservative-free preferred for frequent use | None significant | Symptom relief; ophthalmology follow-up | - | ROUTINE | ROUTINE | - |
 
 *Note: Hormonal replacement is essential when hypothalamic-pituitary involvement is documented. Always correct adrenal insufficiency BEFORE starting thyroid replacement to avoid precipitating adrenal crisis. Vitamin D supplementation should be used cautiously in sarcoidosis due to risk of exacerbating hypercalcemia through granulomatous 1,25-D overproduction.*
 
@@ -239,12 +241,12 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Prednisone (oral taper following IV methylprednisolone) | PO | Transition from IV steroids; maintenance corticosteroid therapy | 1 mg/kg daily; taper by 5-10 mg q2wk :: PO :: :: Start 1 mg/kg/day (max 60 mg) after IV pulse; taper by 10 mg every 2 weeks to 20 mg, then by 5 mg every 2-4 weeks to lowest effective dose (goal 5-10 mg daily or off); total taper over 6-12 months | Active infection; uncontrolled diabetes; avascular necrosis; psychosis from steroids | Glucose; BP; weight; mood; bone density (DEXA if >3 months); ophthalmology (cataracts, glaucoma); adrenal function on taper | - | ROUTINE | ROUTINE | - |
-| Methotrexate (steroid-sparing agent -- first-line) | PO | Steroid-sparing immunosuppression; relapsing neurosarcoidosis; inability to taper steroids below 10 mg/day | 7.5 mg weekly; 10 mg weekly; 15 mg weekly; 20 mg weekly; 25 mg weekly :: PO :: :: Start 7.5-10 mg PO once weekly; increase by 2.5-5 mg q2-4wk; target 15-25 mg weekly; always co-prescribe folic acid 1 mg daily (except MTX day) | Pregnancy (Category X -- teratogenic); severe hepatic/renal disease; active infection; bone marrow suppression; significant pleural effusion/ascites | CBC q2 weeks x 2 months, then monthly; LFTs monthly; renal function q3 months; chest X-ray annually; hepatic fibrosis screen (FibroScan or liver biopsy if cumulative dose >1.5g); pulmonary toxicity (cough, dyspnea) | - | ROUTINE | ROUTINE | - |
-| Mycophenolate mofetil (CellCept) | PO | Steroid-sparing agent; alternative to methotrexate; relapsing neurosarcoidosis | 500 mg BID; 1000 mg BID; 1500 mg BID :: PO :: :: Start 500 mg PO BID; increase by 500 mg every 2 weeks; target 1000-1500 mg BID (2000-3000 mg/day total) | Pregnancy (Category D -- teratogenic); active infection; concurrent live vaccines | CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms (diarrhea, nausea); infection surveillance; pregnancy prevention | - | ROUTINE | ROUTINE | - |
-| Azathioprine (Imuran) | PO | Steroid-sparing agent; alternative to methotrexate/mycophenolate | 50 mg daily; 100 mg daily; 150 mg daily :: PO :: :: Start 50 mg PO daily; increase by 50 mg every 2 weeks to target 2-3 mg/kg/day; onset of action 3-6 months | TPMT deficiency (check before starting); concurrent allopurinol (reduce dose 75%); pregnancy (relative) | TPMT genotype/activity before starting; CBC q2 weeks x 2 months, then monthly; LFTs monthly; amylase if abdominal pain (pancreatitis) | - | ROUTINE | ROUTINE | - |
-| Hydroxychloroquine (Plaquenil) | PO | Mild neurosarcoidosis; cutaneous sarcoidosis with mild CNS involvement; adjunctive therapy | 200 mg BID :: PO :: :: 200 mg PO BID (max 5 mg/kg/day based on actual body weight); onset 2-3 months | Retinal disease; G6PD deficiency; QTc prolongation | Baseline and annual ophthalmologic exam (OCT + visual fields) after 5 years (or earlier if risk factors); CBC; LFTs; ECG | - | ROUTINE | ROUTINE | - |
-| Leflunomide | PO | Steroid-sparing agent; alternative to methotrexate (similar mechanism) | 20 mg daily :: PO :: :: Loading dose: 100 mg PO daily x 3 days (optional); then 20 mg PO daily | Pregnancy (Category X); severe hepatic impairment; immunodeficiency | LFTs monthly x 6 months, then q2 months; CBC; BP; cholestyramine washout if pregnancy desired (11g TID x 11 days) | - | - | ROUTINE | - |
+| Prednisone | PO | Transition from IV steroids; maintenance corticosteroid therapy | 60 mg :: PO :: daily :: Start 1 mg/kg/day (max 60 mg) after IV pulse; taper by 10 mg every 2 weeks to 20 mg, then by 5 mg every 2-4 weeks to lowest effective dose (goal 5-10 mg daily or off); total taper over 6-12 months | Active infection; uncontrolled diabetes; avascular necrosis; psychosis from steroids | Glucose; BP; weight; mood; bone density (DEXA if >3 months); ophthalmology (cataracts, glaucoma); adrenal function on taper | - | ROUTINE | ROUTINE | - |
+| Methotrexate | PO | Steroid-sparing immunosuppression; relapsing neurosarcoidosis; inability to taper steroids below 10 mg/day | 10 mg :: PO :: weekly :: Start 7.5-10 mg PO once weekly; increase by 2.5-5 mg q2-4wk; target 15-25 mg weekly; always co-prescribe folic acid 1 mg daily (except MTX day) | Pregnancy (Category X -- teratogenic); severe hepatic/renal disease; active infection; bone marrow suppression; significant pleural effusion/ascites | CBC q2 weeks x 2 months, then monthly; LFTs monthly; renal function q3 months; chest X-ray annually; hepatic fibrosis screen (FibroScan or liver biopsy if cumulative dose >1.5g); pulmonary toxicity (cough, dyspnea) | - | ROUTINE | ROUTINE | - |
+| Mycophenolate mofetil | PO | Steroid-sparing agent; alternative to methotrexate; relapsing neurosarcoidosis | 500 mg :: PO :: BID :: Start 500 mg PO BID; increase by 500 mg every 2 weeks; target 1000-1500 mg BID (2000-3000 mg/day total) | Pregnancy (Category D -- teratogenic); active infection; concurrent live vaccines | CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms (diarrhea, nausea); infection surveillance; pregnancy prevention | - | ROUTINE | ROUTINE | - |
+| Azathioprine | PO | Steroid-sparing agent; alternative to methotrexate/mycophenolate | 50 mg :: PO :: daily :: Start 50 mg PO daily; increase by 50 mg every 2 weeks to target 2-3 mg/kg/day; onset of action 3-6 months | TPMT deficiency (check before starting); concurrent allopurinol (reduce dose 75%); pregnancy (relative) | TPMT genotype/activity before starting; CBC q2 weeks x 2 months, then monthly; LFTs monthly; amylase if abdominal pain (pancreatitis) | - | ROUTINE | ROUTINE | - |
+| Hydroxychloroquine | PO | Mild neurosarcoidosis; cutaneous sarcoidosis with mild CNS involvement; adjunctive therapy | 200 mg :: PO :: BID :: 200 mg PO BID (max 5 mg/kg/day based on actual body weight); onset 2-3 months | Retinal disease; G6PD deficiency; QTc prolongation | Baseline and annual ophthalmologic exam (OCT + visual fields) after 5 years (or earlier if risk factors); CBC; LFTs; ECG | - | ROUTINE | ROUTINE | - |
+| Leflunomide | PO | Steroid-sparing agent; alternative to methotrexate (similar mechanism) | 20 mg :: PO :: daily :: Loading dose: 100 mg PO daily x 3 days (optional); then 20 mg PO daily | Pregnancy (Category X); severe hepatic impairment; immunodeficiency | LFTs monthly x 6 months, then q2 months; CBC; BP; cholestyramine washout if pregnancy desired (11g TID x 11 days) | - | - | ROUTINE | - |
 
 *Note: Steroid-sparing agents should be initiated early (within 1-3 months) for patients requiring prolonged corticosteroid therapy. Methotrexate is the most commonly used and best-studied steroid-sparing agent in neurosarcoidosis. Allow 2-3 months for onset of steroid-sparing effect before concluding failure. Folic acid supplementation is mandatory with methotrexate to reduce toxicity.*
 
@@ -252,10 +254,10 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Infliximab (Remicade) | IV | Refractory neurosarcoidosis failing methotrexate/mycophenolate; severe/progressive disease; CNS mass lesions; optic neuropathy not responding to steroids | 3-5 mg/kg IV at weeks 0, 2, 6; then q4-8wk :: IV :: :: 3-5 mg/kg IV at weeks 0, 2, and 6 (induction), then every 4-8 weeks (maintenance); may increase to 7-10 mg/kg if inadequate response; infuse over 2 hours minimum | TB testing (QuantiFERON); Hepatitis B/C screening; CBC, LFTs, CMP; chest X-ray; age-appropriate cancer screening; heart failure assessment (NYHA class); pregnancy test | Active or latent TB (treat first); active serious infection; decompensated CHF (NYHA III-IV); demyelinating disease; live vaccines within 4 weeks | CBC with differential q2-4 months; LFTs q3 months; ANA/anti-dsDNA annually (drug-induced lupus); infection surveillance; infusion reactions; skin cancer screening annually; heart failure symptoms | - | URGENT | ROUTINE | URGENT |
-| Adalimumab (Humira) | SC | Refractory neurosarcoidosis; alternative to infliximab; may be preferred for outpatient self-administration | 40 mg SC q2wk; 80 mg SC q2wk :: SC :: :: 80 mg SC at week 0, then 40 mg SC every other week; may increase to 40 mg weekly or 80 mg q2wk if inadequate response | TB testing (QuantiFERON); Hepatitis B/C screening; CBC, LFTs; chest X-ray; pregnancy test | Active or latent TB (treat first); active serious infection; decompensated CHF; demyelinating disease; live vaccines within 4 weeks | CBC q2-4 months; LFTs q3 months; ANA annually; infection surveillance; injection site reactions; skin cancer screening | - | - | ROUTINE | - |
-| Rituximab | IV | Refractory neurosarcoidosis failing anti-TNF therapy; B-cell-mediated disease component | 375 mg/m2 IV weekly x 4 doses; or 1000 mg IV x 2 doses (day 0 and day 14) :: IV :: :: 375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0 and day 14); re-dose based on CD19/CD20 repopulation or clinical relapse; premedicate with methylprednisolone 100 mg, acetaminophen, diphenhydramine | Hepatitis B serology; CBC, CMP; quantitative immunoglobulins; JCV antibody (PML risk); pregnancy test; vaccination update | Active hepatitis B; severe active infection; live vaccines within 4 weeks; severe hypogammaglobulinemia | Hepatitis B surveillance; CBC q2-4 weeks initially; immunoglobulin levels q3 months; CD19/CD20 B-cell counts q3 months; infusion reactions; PML surveillance; infection monitoring | - | URGENT | ROUTINE | URGENT |
-| Cyclophosphamide | IV | Severe refractory neurosarcoidosis with progressive neurological decline despite other therapies; last resort | 750 mg/m2 IV monthly x 6 cycles :: IV :: :: 750 mg/m2 IV monthly for 6 cycles; pre-hydrate with 1L NS; administer with MESNA for uroprotection; consider dose reduction for renal impairment | Pregnancy (Category D); CBC, CMP, UA before each cycle; fertility counseling | Pregnancy; active infection; bone marrow failure; bladder outlet obstruction | CBC weekly x 4 weeks after each cycle (nadir day 10-14); urinalysis (hemorrhagic cystitis); BMP; LFTs; fertility preservation discussion; malignancy risk (bladder cancer) | - | URGENT | ROUTINE | URGENT |
+| Infliximab | IV | Refractory neurosarcoidosis failing methotrexate/mycophenolate; severe/progressive disease; CNS mass lesions; optic neuropathy not responding to steroids | 5 mg/kg :: IV :: q6-8wk :: 3-5 mg/kg IV at weeks 0, 2, and 6 (induction), then every 4-8 weeks (maintenance); may increase to 7-10 mg/kg if inadequate response; infuse over 2 hours minimum | TB testing (QuantiFERON); Hepatitis B/C screening; CBC, LFTs, CMP; chest X-ray; age-appropriate cancer screening; heart failure assessment (NYHA class); pregnancy test | Active or latent TB (treat first); active serious infection; decompensated CHF (NYHA III-IV); demyelinating disease; live vaccines within 4 weeks | CBC with differential q2-4 months; LFTs q3 months; ANA/anti-dsDNA annually (drug-induced lupus); infection surveillance; infusion reactions; skin cancer screening annually; heart failure symptoms | - | URGENT | ROUTINE | URGENT |
+| Adalimumab | SC | Refractory neurosarcoidosis; alternative to infliximab; may be preferred for outpatient self-administration | 40 mg :: SC :: q2wk :: 80 mg SC at week 0, then 40 mg SC every other week; may increase to 40 mg weekly or 80 mg q2wk if inadequate response | TB testing (QuantiFERON); Hepatitis B/C screening; CBC, LFTs; chest X-ray; pregnancy test | Active or latent TB (treat first); active serious infection; decompensated CHF; demyelinating disease; live vaccines within 4 weeks | CBC q2-4 months; LFTs q3 months; ANA annually; infection surveillance; injection site reactions; skin cancer screening | - | - | ROUTINE | - |
+| Rituximab | IV | Refractory neurosarcoidosis failing anti-TNF therapy; B-cell-mediated disease component | 1000 mg :: IV :: q2wk x2 :: 375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0 and day 14); re-dose based on CD19/CD20 repopulation or clinical relapse; premedicate with methylprednisolone 100 mg, acetaminophen, diphenhydramine | Hepatitis B serology; CBC, CMP; quantitative immunoglobulins; JCV antibody (PML risk); pregnancy test; vaccination update | Active hepatitis B; severe active infection; live vaccines within 4 weeks; severe hypogammaglobulinemia | Hepatitis B surveillance; CBC q2-4 weeks initially; immunoglobulin levels q3 months; CD19/CD20 B-cell counts q3 months; infusion reactions; PML surveillance; infection monitoring | - | URGENT | ROUTINE | URGENT |
+| Cyclophosphamide | IV | Severe refractory neurosarcoidosis with progressive neurological decline despite other therapies; last resort | 750 mg/m2 :: IV :: monthly x6 :: 750 mg/m2 IV monthly for 6 cycles; pre-hydrate with 1L NS; administer with MESNA for uroprotection; consider dose reduction for renal impairment | Pregnancy (Category D); CBC, CMP, UA before each cycle; fertility counseling | Pregnancy; active infection; bone marrow failure; bladder outlet obstruction | CBC weekly x 4 weeks after each cycle (nadir day 10-14); urinalysis (hemorrhagic cystitis); BMP; LFTs; fertility preservation discussion; malignancy risk (bladder cancer) | - | URGENT | ROUTINE | URGENT |
 
 *Note: Anti-TNF agents (infliximab, adalimumab) are the most effective biologic therapies for refractory neurosarcoidosis. Infliximab has the most evidence. ALWAYS exclude latent TB before starting anti-TNF therapy (granulomatous infection can be catastrophically reactivated). Treatment duration is typically 1-2 years minimum; relapse is common on discontinuation. Rituximab and cyclophosphamide are reserved for cases refractory to anti-TNF agents.*
 
@@ -287,39 +289,39 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Return to ED immediately for sudden vision loss, new weakness, difficulty walking, severe headache, seizures, or difficulty breathing (may indicate disease progression or complications) | Y | Y | Y |
-| Neurosarcoidosis is a chronic, treatable condition -- improvement may be gradual over weeks to months with appropriate immunotherapy | Y | Y | Y |
-| Do NOT stop corticosteroids abruptly as this may cause adrenal crisis and disease flare; always taper under physician supervision | - | Y | Y |
-| Report signs of infection immediately (fever >100.4F, cough, dysuria, rash, wound redness) as immunosuppressive therapy increases infection risk | - | Y | Y |
-| Avoid live vaccines while on immunosuppressive therapy (inform all physicians and pharmacists of immunosuppression status) | - | Y | Y |
-| Monitor blood sugars if diabetic or if on corticosteroids -- steroids significantly elevate blood glucose | Y | Y | Y |
-| Do not drive until cleared by neurology if visual impairment, seizures, or significant neurological deficits are present | Y | Y | Y |
-| Keep a symptom diary tracking visual changes, weakness, numbness, headaches, fatigue, and pain to monitor treatment response | - | Y | Y |
-| Take methotrexate on the same day each week; take folic acid daily EXCEPT on methotrexate day to reduce side effects | - | Y | Y |
-| Report excessive thirst or urination (may indicate diabetes insipidus from hypothalamic involvement requiring treatment adjustment) | - | Y | Y |
-| Pregnancy must be avoided during methotrexate, mycophenolate, or cyclophosphamide therapy; discuss contraception with neurology and OB/GYN | - | Y | Y |
-| Attend all follow-up appointments -- neurosarcoidosis requires regular monitoring with MRI, labs, and clinical assessments | - | Y | Y |
-| Wear medical alert identification (bracelet/card) indicating neurosarcoidosis, immunosuppressive medications, and adrenal insufficiency if applicable | - | Y | Y |
-| Sun protection is important while on methotrexate and immunosuppressive therapy due to increased skin cancer risk | - | Y | Y |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Return to ED immediately for sudden vision loss, new weakness, difficulty walking, severe headache, seizures, or difficulty breathing (may indicate disease progression or complications) | Y | Y | Y | - |
+| Neurosarcoidosis is a chronic, treatable condition -- improvement may be gradual over weeks to months with appropriate immunotherapy | Y | Y | Y | - |
+| Do NOT stop corticosteroids abruptly as this may cause adrenal crisis and disease flare; always taper under physician supervision | - | Y | Y | - |
+| Report signs of infection immediately (fever >100.4F, cough, dysuria, rash, wound redness) as immunosuppressive therapy increases infection risk | - | Y | Y | - |
+| Avoid live vaccines while on immunosuppressive therapy (inform all physicians and pharmacists of immunosuppression status) | - | Y | Y | - |
+| Monitor blood sugars if diabetic or if on corticosteroids -- steroids significantly elevate blood glucose | Y | Y | Y | - |
+| Do not drive until cleared by neurology if visual impairment, seizures, or significant neurological deficits are present | Y | Y | Y | - |
+| Keep a symptom diary tracking visual changes, weakness, numbness, headaches, fatigue, and pain to monitor treatment response | - | Y | Y | - |
+| Take methotrexate on the same day each week; take folic acid daily EXCEPT on methotrexate day to reduce side effects | - | Y | Y | - |
+| Report excessive thirst or urination (may indicate diabetes insipidus from hypothalamic involvement requiring treatment adjustment) | - | Y | Y | - |
+| Pregnancy must be avoided during methotrexate, mycophenolate, or cyclophosphamide therapy; discuss contraception with neurology and OB/GYN | - | Y | Y | - |
+| Attend all follow-up appointments -- neurosarcoidosis requires regular monitoring with MRI, labs, and clinical assessments | - | Y | Y | - |
+| Wear medical alert identification (bracelet/card) indicating neurosarcoidosis, immunosuppressive medications, and adrenal insufficiency if applicable | - | Y | Y | - |
+| Sun protection is important while on methotrexate and immunosuppressive therapy due to increased skin cancer risk | - | Y | Y | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Smoking cessation to improve pulmonary function and reduce infection risk during immunosuppression | Y | Y | Y |
-| Alcohol avoidance or strict limitation while on methotrexate due to additive hepatotoxicity | - | Y | Y |
-| Low-sodium diet to reduce fluid retention and hypertension from corticosteroid therapy | - | Y | Y |
-| Calcium-rich diet (dairy, leafy greens) for bone protection during chronic steroid use; AVOID excessive vitamin D supplementation unless calcium is normal | - | Y | Y |
-| Regular weight-bearing exercise as tolerated (walking, resistance training) to prevent steroid-related osteoporosis and deconditioning | - | Y | Y |
-| Adequate hydration (2-3 L/day) especially if on methotrexate or if hypercalciuria present to prevent nephrolithiasis | - | Y | Y |
-| Fall prevention measures at home (remove loose rugs, adequate lighting, grab bars in bathroom) given myelopathy and balance impairment | - | Y | Y |
-| Stress management and adequate sleep (7-8 hours nightly) as stress may exacerbate symptoms and fatigue | - | Y | Y |
-| Vaccinations should be up to date before initiating immunosuppressive therapy (especially pneumococcal, influenza, hepatitis B); avoid live vaccines on immunosuppression | - | Y | Y |
-| Sun protection (SPF 50+, protective clothing) during immunosuppressive therapy due to increased skin cancer risk | - | Y | Y |
-| Energy conservation techniques (pacing activities, scheduled rest periods) to manage sarcoidosis-related fatigue | - | Y | Y |
-| Annual ophthalmologic examination even if asymptomatic due to risk of subclinical uveitis and steroid-related cataracts/glaucoma | - | - | Y |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Smoking cessation to improve pulmonary function and reduce infection risk during immunosuppression | Y | Y | Y | - |
+| Alcohol avoidance or strict limitation while on methotrexate due to additive hepatotoxicity | - | Y | Y | - |
+| Low-sodium diet to reduce fluid retention and hypertension from corticosteroid therapy | - | Y | Y | - |
+| Calcium-rich diet (dairy, leafy greens) for bone protection during chronic steroid use; AVOID excessive vitamin D supplementation unless calcium is normal | - | Y | Y | - |
+| Regular weight-bearing exercise as tolerated (walking, resistance training) to prevent steroid-related osteoporosis and deconditioning | - | Y | Y | - |
+| Adequate hydration (2-3 L/day) especially if on methotrexate or if hypercalciuria present to prevent nephrolithiasis | - | Y | Y | - |
+| Fall prevention measures at home (remove loose rugs, adequate lighting, grab bars in bathroom) given myelopathy and balance impairment | - | Y | Y | - |
+| Stress management and adequate sleep (7-8 hours nightly) as stress may exacerbate symptoms and fatigue | - | Y | Y | - |
+| Vaccinations should be up to date before initiating immunosuppressive therapy (especially pneumococcal, influenza, hepatitis B); avoid live vaccines on immunosuppression | - | Y | Y | - |
+| Sun protection (SPF 50+, protective clothing) during immunosuppressive therapy due to increased skin cancer risk | - | Y | Y | - |
+| Energy conservation techniques (pacing activities, scheduled rest periods) to manage sarcoidosis-related fatigue | - | Y | Y | - |
+| Annual ophthalmologic examination even if asymptomatic due to risk of subclinical uveitis and steroid-related cataracts/glaucoma | - | - | Y | - |
 
 ---
 
@@ -498,6 +500,17 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Checker/Rebuilder pipeline: validated against 6 quality domains; applied all approved revisions
+- R6: Reordered ALL lab tables (1A, 1B, 1C) and imaging tables (2A, 2B, 2C) and LP table to place venue columns (ED/HOSP/OPD/ICU) as last 4 columns per style guide CSS requirements
+- R1: Standardized structured dosing format across ALL treatment sections (3A, 3B, 3C, 3D) to use `[dose] :: [route] :: [frequency] :: [full_instructions]` with exactly 4 fields
+- R2: Cleaned up Route column in all treatment tables to show single primary route instead of multi-route (e.g., "IV" instead of "IV/SC/IN")
+- R3: Split testosterone replacement into two separate rows (testosterone cypionate IM and testosterone gel topical) for proper order sentence generation
+- R5/R8: Added ICU column to Section 4B (Patient Instructions) and Section 4C (Lifestyle & Prevention) for 4-column venue consistency
+- M1-M4: Fixed structured dosing format across all treatment rows -- each now has standard_dose, route, frequency, and full_instructions fields
+- Updated version to 1.1; added REVISED date
+- No clinical content changes; all medication dosing and clinical recommendations unchanged
 
 **v1.0 (January 30, 2026)**
 - Initial creation

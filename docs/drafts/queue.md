@@ -22,11 +22,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| Progressive Supranuclear Palsy | `progressive-supranuclear-palsy.md` | `pending` | — | 2026-01-30 |
-| Multiple System Atrophy | `multiple-system-atrophy.md` | `pending` | — | 2026-01-30 |
-| Lambert-Eaton Syndrome | `lambert-eaton-syndrome.md` | `pending` | — | 2026-01-30 |
-| Neurosarcoidosis | `neurosarcoidosis.md` | `pending` | — | 2026-01-30 |
-| Glioblastoma | `glioblastoma.md` | `pending` | — | 2026-01-30 |
+| Progressive Supranuclear Palsy | `progressive-supranuclear-palsy.md` | `completed` | claude/tier3 | 2026-01-30 |
+| Multiple System Atrophy | `multiple-system-atrophy.md` | `completed` | claude/tier3 | 2026-01-30 |
+| Lambert-Eaton Syndrome | `lambert-eaton-syndrome.md` | `completed` | claude/tier3 | 2026-01-30 |
+| Neurosarcoidosis | `neurosarcoidosis.md` | `completed` | claude/tier3 | 2026-01-30 |
+| Glioblastoma | `glioblastoma.md` | `completed` | claude/tier3 | 2026-01-30 |
 
 ---
 
