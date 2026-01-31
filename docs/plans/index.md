@@ -18,6 +18,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Non-Convulsive Status Epilepticus](ncse.md) | ED, HOSP, OPD, ICU | G41.0, G41.1, G41.2, G41.8 |
 | [New Onset Seizure](new-onset-seizure.md) | ED, HOSP, OPD | R56.9, G40.909 |
 | [Breakthrough Seizure](breakthrough-seizure.md) | ED, HOSP, OPD | G40.909, G40.919 |
+| [Alcohol Withdrawal Seizure](alcohol-withdrawal-seizure.md) | ED, HOSP, OPD, ICU | G40.509, F10.231, F10.239 |
 
 ---
 
@@ -54,6 +55,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Radiculopathy](radiculopathy.md) | ED, HOSP, OPD, ICU | M54.10, M54.12, G55, M50.10 |
 | [Lambert-Eaton Syndrome](lambert-eaton-syndrome.md) | ED, HOSP, OPD, ICU | G73.1, C34.90, G70.80 |
 | [Critical Illness Myopathy/Neuropathy](critical-illness-myopathy-neuropathy.md) | ED, HOSP, OPD, ICU | G72.81, G62.81, M62.81 |
+| [Inflammatory Myopathy (DM/PM)](inflammatory-myopathy.md) | ED, HOSP, OPD, ICU | G72.41, M33.10, M33.20 |
 
 ---
 
@@ -68,6 +70,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Brain Abscess](brain-abscess.md) | ED, HOSP, OPD, ICU | G06.0 |
 | [Fungal Meningitis](fungal-meningitis.md) | ED, HOSP, OPD, ICU | G02, B45.1, B38.4 |
 | [Tuberculous Meningitis](tb-meningitis.md) | ED, HOSP, OPD, ICU | A17.0 |
+| [Neurosyphilis](neurosyphilis.md) | ED, HOSP, OPD, ICU | A52.2, A52.3, A52.13 |
 
 ---
 
@@ -126,6 +129,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Tension-Type Headache](tension-headache.md) | ED, HOSP, OPD | G44.209, G44.219, G44.221 |
 | [Chronic Migraine](chronic-migraine.md) | ED, HOSP, OPD | G43.709, G43.719, G43.701 |
 | [Low Pressure Headache / SIH](low-pressure-headache.md) | ED, HOSP, OPD | G96.00, G96.01, G96.02, G97.0 |
+| [Status Migrainosus](status-migrainosus.md) | ED, HOSP, OPD, ICU | G43.901, G43.911, G43.919 |
 
 ---
 
@@ -184,6 +188,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [Wernicke Encephalopathy](wernicke-encephalopathy.md) | ED, HOSP, ICU | E51.2 |
+| [B12 Deficiency Neuropathy](b12-deficiency-neuropathy.md) | ED, HOSP, OPD, ICU | E53.8, G63.4, G32.0 |
 
 ---
 

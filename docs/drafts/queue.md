@@ -22,11 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| Alcohol Withdrawal Seizure | `alcohol-withdrawal-seizure.md` | `completed` | claude/tier7 | 2026-01-30 |
-| Status Migrainosus | `status-migrainosus.md` | `completed` | claude/tier7 | 2026-01-30 |
-| Inflammatory Myopathy (DM/PM) | `inflammatory-myopathy.md` | `completed` | claude/tier7 | 2026-01-30 |
-| B12 Deficiency Neuropathy | `b12-deficiency-neuropathy.md` | `completed` | claude/tier7 | 2026-01-30 |
-| Neurosyphilis | `neurosyphilis.md` | `completed` | claude/tier7 | 2026-01-30 |
+| *(none)* | — | — | — | — |
 
 ---
 
@@ -121,6 +117,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 85 | MOG Antibody Disease (MOGAD) | [`mogad.md`](../plans/mogad.md) | 2026-01-30 | 90%+ |
 | 86 | Critical Illness Myopathy/Neuropathy | [`critical-illness-myopathy-neuropathy.md`](../plans/critical-illness-myopathy-neuropathy.md) | 2026-01-30 | 90%+ |
 | 87 | Anoxic Brain Injury | [`anoxic-brain-injury.md`](../plans/anoxic-brain-injury.md) | 2026-01-30 | 90%+ |
+| 88 | Alcohol Withdrawal Seizure | [`alcohol-withdrawal-seizure.md`](../plans/alcohol-withdrawal-seizure.md) | 2026-01-30 | 90%+ |
+| 89 | Status Migrainosus | [`status-migrainosus.md`](../plans/status-migrainosus.md) | 2026-01-30 | 90%+ |
+| 90 | Inflammatory Myopathy (DM/PM) | [`inflammatory-myopathy.md`](../plans/inflammatory-myopathy.md) | 2026-01-30 | 90%+ |
+| 91 | B12 Deficiency Neuropathy | [`b12-deficiency-neuropathy.md`](../plans/b12-deficiency-neuropathy.md) | 2026-01-30 | 90%+ |
+| 92 | Neurosyphilis | [`neurosyphilis.md`](../plans/neurosyphilis.md) | 2026-01-30 | 90%+ |
 
 ---
 
@@ -137,7 +138,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-01-30. Total approved: 87 plans.
+- Queue updated 2026-01-30. Total approved: 92 plans.
 
 ---
 

@@ -9,7 +9,7 @@ title: Template Tracker
 **Created:** January 15, 2026
 **Last Updated:** January 30, 2026
 **Target:** 150+ validated templates
-**Current Status:** 87 templates approved
+**Current Status:** 92 templates approved
 
 ---
 
@@ -34,7 +34,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Status Epilepticus | G41.9 | 🎯 OPD | Approved |
 | ✅ | Breakthrough Seizure (Known Epilepsy) | G40.909 | 🎯 OPD | Approved |
 | ✅ | Non-Convulsive Status Epilepticus (NCSE) | G41.0 | 🎯 OPD | Approved |
-| ⬜ | Alcohol Withdrawal Seizure | G40.509 | 🎯 OPD | Common in hospitalist practice |
+| ✅ | Alcohol Withdrawal Seizure | G40.509 | 🎯 OPD | Approved |
 | ⬜ | Eclampsia/Seizure in Pregnancy | O15.9 | 🎯 OPD | Special ASM considerations |
 | ⬜ | Drug-Resistant Epilepsy | G40.919 | 🎯 OPD | Subspecialty referral focus |
 | ⬜ | Epilepsy Evaluation | G40.909 | 🎯 OPD | General workup |
@@ -64,7 +64,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Migraine (without Aura) | G43.909 | 🎯 OPD | Approved |
 | ✅ | Migraine with Aura | G43.109 | 🎯 OPD | Approved |
 | ✅ | Chronic Migraine | G43.709 | 🎯 OPD | Approved |
-| ⬜ | Status Migrainosus | G43.901 | 🎯 OPD | Acute management |
+| ✅ | Status Migrainosus | G43.901 | 🎯 OPD | Approved |
 | ✅ | Cluster Headache | G44.009 | 🎯 OPD | Approved |
 | ✅ | Tension-Type Headache | G44.209 | 🎯 OPD | Approved |
 | ✅ | Medication Overuse Headache | G44.41 | 🎯 OPD | Approved |
@@ -106,13 +106,13 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Radiculopathy | M54.10 | 🎯 OPD | Approved |
 | ✅ | Neuromuscular Respiratory Failure | J96.00 | 🎯 OPD | Approved |
 | ✅ | Lambert-Eaton Myasthenic Syndrome (LEMS) | G73.1 | 🎯 OPD | Approved |
-| ⬜ | Inflammatory Myopathy (Dermatomyositis/PM) | G72.41 | 🎯 OPD | Weakness + rash |
+| ✅ | Inflammatory Myopathy (Dermatomyositis/PM) | G72.41 | 🎯 OPD | Approved |
 | ⬜ | Inclusion Body Myositis (IBM) | G72.41 | 🎯 OPD | Refractory myopathy |
 | ⬜ | Muscular Dystrophy (Adult) | G71.0 | 🎯 OPD | Rare adult presentations |
 | ⬜ | Myotonic Dystrophy | G71.11 | 🎯 OPD | Multisystem |
 | ✅ | Critical Illness Myopathy/Neuropathy | G72.81 | 🎯 OPD | Approved |
 | ⬜ | Botulism | A05.1 | 🎯 OPD | Rare but critical |
-| ⬜ | B12 Deficiency Neuropathy | E53.8 | 🎯 OPD | Reversible |
+| ✅ | B12 Deficiency Neuropathy | E53.8 | 🎯 OPD | Approved |
 | ⬜ | Chemotherapy-Induced Neuropathy | G62.0 | 🎯 OPD | Growing population |
 | ⬜ | Ulnar Neuropathy | G56.20 | 🎯 OPD | Entrapment |
 | ⬜ | Peroneal Neuropathy | F57.30 | 🎯 OPD | Foot drop |
@@ -176,7 +176,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ⬜ | Neurocysticercosis | B69.0 | 🎯 OPD | Endemic areas |
 | ✅ | Brain Abscess | G06.0 | 🎯 OPD | Neurosurgery consult |
 | ⬜ | HIV-Associated Neurocognitive Disorder | B20 | 🎯 OPD | AIDS dementia complex |
-| ⬜ | Neurosyphilis | A52.2 | 🎯 OPD | Great imitator |
+| ✅ | Neurosyphilis | A52.2 | 🎯 OPD | Approved |
 | ⬜ | Lyme Neuroborreliosis | A69.22 | 🎯 OPD | Endemic areas |
 
 ### Neuro-Oncology
@@ -258,23 +258,23 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 
 | Category | Approved | To Build | Total |
 |----------|----------|----------|-------|
-| Seizure/Epilepsy | 4 | 4 | 8 |
+| Seizure/Epilepsy | 5 | 3 | 8 |
 | Stroke/Cerebrovascular | 9 | 3 | 12 |
-| Headache | 11 | 3 | 14 |
+| Headache | 12 | 2 | 14 |
 | Demyelinating | 6 | 3 | 9 |
-| Neuromuscular | 14 | 14 | 28 |
+| Neuromuscular | 15 | 13 | 28 |
 | Movement Disorders | 11 | 7 | 18 |
 | Dementia/Cognitive | 9 | 3 | 12 |
-| CNS Infections | 8 | 4 | 12 |
+| CNS Infections | 9 | 3 | 12 |
 | Neuro-oncology | 5 | 4 | 9 |
 | Spinal Cord | 1 | 4 | 5 |
 | Autoimmune/Inflammatory | 1 | 4 | 5 |
 | Functional/Psychiatric | 1 | 3 | 4 |
 | Neurocritical Care | 4 | 1 | 5 |
 | Other/Miscellaneous | 5 | 10 | 15 |
-| **TOTAL** | **89** | **67** | **156** |
+| **TOTAL** | **93** | **63** | **156** |
 
-**Note:** 88 approved diagnoses map to 87 unique plan files (Parkinson's Disease has separate Management and New Diagnosis plans in a single file pair).
+**Note:** 93 approved diagnoses map to 92 unique plan files (Parkinson's Disease has separate Management and New Diagnosis plans in a single file pair).
 
 ---
 
@@ -369,6 +369,11 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | 85 | MOGAD | v1.1 | Jan 30, 2026 |
 | 86 | Critical Illness Myopathy/Neuropathy | v1.1 | Jan 30, 2026 |
 | 87 | Anoxic Brain Injury | v1.1 | Jan 30, 2026 |
+| 88 | Alcohol Withdrawal Seizure | v1.1 | Jan 30, 2026 |
+| 89 | Status Migrainosus | v1.1 | Jan 30, 2026 |
+| 90 | Inflammatory Myopathy (DM/PM) | v1.1 | Jan 30, 2026 |
+| 91 | B12 Deficiency Neuropathy | v1.1 | Jan 30, 2026 |
+| 92 | Neurosyphilis | v1.1 | Jan 30, 2026 |
 
 ---
 
