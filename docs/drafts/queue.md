@@ -22,11 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| Fungal Meningitis | `fungal-meningitis.md` | `completed` | claude/tier6 | 2026-01-30 |
-| Tuberculous Meningitis | `tb-meningitis.md` | `completed` | claude/tier6 | 2026-01-30 |
-| MOG Antibody Disease (MOGAD) | `mogad.md` | `completed` | claude/tier6 | 2026-01-30 |
-| Critical Illness Myopathy/Neuropathy | `critical-illness-myopathy-neuropathy.md` | `completed` | claude/tier6 | 2026-01-30 |
-| Anoxic Brain Injury / Neuroprognostication | `anoxic-brain-injury.md` | `completed` | claude/tier6 | 2026-01-30 |
+| *(none)* | — | — | — | — |
 
 ---
 
@@ -116,6 +112,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 80 | Viral Meningitis | [`viral-meningitis.md`](../plans/viral-meningitis.md) | 2026-01-30 | 90%+ |
 | 81 | Brain Abscess | [`brain-abscess.md`](../plans/brain-abscess.md) | 2026-01-30 | 90%+ |
 | 82 | Paraneoplastic Neurological Syndrome | [`paraneoplastic-neurological-syndrome.md`](../plans/paraneoplastic-neurological-syndrome.md) | 2026-01-30 | 90%+ |
+| 83 | Fungal Meningitis | [`fungal-meningitis.md`](../plans/fungal-meningitis.md) | 2026-01-30 | 90%+ |
+| 84 | Tuberculous Meningitis | [`tb-meningitis.md`](../plans/tb-meningitis.md) | 2026-01-30 | 90%+ |
+| 85 | MOG Antibody Disease (MOGAD) | [`mogad.md`](../plans/mogad.md) | 2026-01-30 | 90%+ |
+| 86 | Critical Illness Myopathy/Neuropathy | [`critical-illness-myopathy-neuropathy.md`](../plans/critical-illness-myopathy-neuropathy.md) | 2026-01-30 | 90%+ |
+| 87 | Anoxic Brain Injury | [`anoxic-brain-injury.md`](../plans/anoxic-brain-injury.md) | 2026-01-30 | 90%+ |
 
 ---
 
@@ -132,7 +133,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-01-30. Total approved: 82 plans.
+- Queue updated 2026-01-30. Total approved: 87 plans.
 
 ---
 

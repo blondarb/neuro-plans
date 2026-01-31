@@ -53,6 +53,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Carpal Tunnel Syndrome](carpal-tunnel-syndrome.md) | ED, HOSP, OPD, ICU | G56.00, G56.01, G56.02 |
 | [Radiculopathy](radiculopathy.md) | ED, HOSP, OPD, ICU | M54.10, M54.12, G55, M50.10 |
 | [Lambert-Eaton Syndrome](lambert-eaton-syndrome.md) | ED, HOSP, OPD, ICU | G73.1, C34.90, G70.80 |
+| [Critical Illness Myopathy/Neuropathy](critical-illness-myopathy-neuropathy.md) | ED, HOSP, OPD, ICU | G72.81, G62.81, M62.81 |
 
 ---
 
@@ -65,6 +66,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Autoimmune Encephalitis](autoimmune-encephalitis.md) | HOSP, ICU | G04.81 |
 | [Viral Meningitis](viral-meningitis.md) | ED, HOSP, OPD, ICU | A87.9, A87.0 |
 | [Brain Abscess](brain-abscess.md) | ED, HOSP, OPD, ICU | G06.0 |
+| [Fungal Meningitis](fungal-meningitis.md) | ED, HOSP, OPD, ICU | G02, B45.1, B38.4 |
+| [Tuberculous Meningitis](tb-meningitis.md) | ED, HOSP, OPD, ICU | A17.0 |
 
 ---
 
@@ -96,6 +99,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 |------|------------------|--------|
 | [Elevated ICP Management](elevated-icp-management.md) | HOSP, ICU | G93.2, G93.5 |
 | [Brain Death Evaluation](brain-death-evaluation.md) | ED, HOSP, ICU | G93.82 |
+| [Anoxic Brain Injury](anoxic-brain-injury.md) | ED, HOSP, ICU | G93.1, G93.82 |
 
 ---
 
@@ -107,6 +111,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [MS Chronic Management](ms-chronic-management.md) | HOSP, OPD | G35 |
 | [Optic Neuritis](optic-neuritis.md) | ED, HOSP, OPD | H46.9, H46.00, G36.0 |
 | [NMOSD](nmosd.md) | ED, HOSP, OPD, ICU | G36.0, G36.9 |
+| [MOGAD](mogad.md) | ED, HOSP, OPD, ICU | G36.9, G36.0 |
 
 ---
 

@@ -9,7 +9,7 @@ title: Template Tracker
 **Created:** January 15, 2026
 **Last Updated:** January 30, 2026
 **Target:** 150+ validated templates
-**Current Status:** 82 templates approved
+**Current Status:** 87 templates approved
 
 ---
 
@@ -84,7 +84,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Optic Neuritis | H46.9 | 🎯 OPD | Approved |
 | ✅ | Acute Myelopathy | G95.9 | 🎯 OPD | Approved (covers transverse myelitis) |
 | ✅ | Neuromyelitis Optica (NMOSD) | G36.0 | 🎯 OPD | Approved |
-| ⬜ | MOG Antibody Disease (MOGAD) | G36.9 | 🎯 OPD | Distinct entity |
+| ✅ | MOG Antibody Disease (MOGAD) | G36.9 | 🎯 OPD | Approved |
 | ⬜ | Acute Disseminated Encephalomyelitis (ADEM) | G04.81 | 🎯 OPD | More common in pediatrics |
 | ⬜ | Progressive Multifocal Leukoencephalopathy (PML) | A81.2 | 🎯 OPD | JCV, immunocompromised |
 | ⬜ | Diffuse White Matter Disease | R53.1 | 🎯 OPD | Differential diagnosis |
@@ -110,7 +110,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ⬜ | Inclusion Body Myositis (IBM) | G72.41 | 🎯 OPD | Refractory myopathy |
 | ⬜ | Muscular Dystrophy (Adult) | G71.0 | 🎯 OPD | Rare adult presentations |
 | ⬜ | Myotonic Dystrophy | G71.11 | 🎯 OPD | Multisystem |
-| ⬜ | Critical Illness Myopathy/Neuropathy | G72.81 | 🎯 OPD | ICU weakness |
+| ✅ | Critical Illness Myopathy/Neuropathy | G72.81 | 🎯 OPD | Approved |
 | ⬜ | Botulism | A05.1 | 🎯 OPD | Rare but critical |
 | ⬜ | B12 Deficiency Neuropathy | E53.8 | 🎯 OPD | Reversible |
 | ⬜ | Chemotherapy-Induced Neuropathy | G62.0 | 🎯 OPD | Growing population |
@@ -171,8 +171,8 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Autoimmune Encephalitis | G04.81 | 🎯 OPD | Approved |
 | ✅ | Epidural Abscess | G06.1 | 🎯 OPD | Approved |
 | ✅ | Viral Meningitis | A87.9 | 🎯 OPD | Supportive care focus |
-| ⬜ | Fungal Meningitis | G02 | 🎯 OPD | Immunocompromised |
-| ⬜ | TB Meningitis | A17.0 | 🎯 OPD | Chronic meningitis |
+| ✅ | Fungal Meningitis | G02 | 🎯 OPD | Approved |
+| ✅ | TB Meningitis | A17.0 | 🎯 OPD | Approved |
 | ⬜ | Neurocysticercosis | B69.0 | 🎯 OPD | Endemic areas |
 | ✅ | Brain Abscess | G06.0 | 🎯 OPD | Neurosurgery consult |
 | ⬜ | HIV-Associated Neurocognitive Disorder | B20 | 🎯 OPD | AIDS dementia complex |
@@ -229,7 +229,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Elevated ICP Management | G93.2 | 🎯 OPD | Approved |
 | ✅ | Neuromuscular Respiratory Failure | J96.00 | 🎯 OPD | Approved |
 | ✅ | Brain Death Evaluation | G93.82 | 🎯 OPD | Approved |
-| ⬜ | Anoxic Brain Injury / Prognostication | G93.1 | 🎯 OPD | Post-cardiac arrest |
+| ✅ | Anoxic Brain Injury / Prognostication | G93.1 | 🎯 OPD | Approved |
 | ⬜ | Hypertensive Encephalopathy | I67.4 | 🎯 OPD | BP management |
 
 ### Other / Miscellaneous
@@ -258,23 +258,23 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 
 | Category | Approved | To Build | Total |
 |----------|----------|----------|-------|
-| Seizure/Epilepsy | 3 | 5 | 8 |
-| Stroke/Cerebrovascular | 4 | 8 | 12 |
-| Headache | 7 | 7 | 14 |
-| Demyelinating | 4 | 5 | 9 |
-| Neuromuscular | 12 | 16 | 28 |
-| Movement Disorders | 7 | 11 | 18 |
-| Dementia/Cognitive | 8 | 4 | 12 |
-| CNS Infections | 4 | 8 | 12 |
-| Neuro-oncology | 2 | 7 | 9 |
+| Seizure/Epilepsy | 4 | 4 | 8 |
+| Stroke/Cerebrovascular | 9 | 3 | 12 |
+| Headache | 11 | 3 | 14 |
+| Demyelinating | 6 | 3 | 9 |
+| Neuromuscular | 14 | 14 | 28 |
+| Movement Disorders | 11 | 7 | 18 |
+| Dementia/Cognitive | 9 | 3 | 12 |
+| CNS Infections | 8 | 4 | 12 |
+| Neuro-oncology | 5 | 4 | 9 |
 | Spinal Cord | 1 | 4 | 5 |
-| Autoimmune/Inflammatory | 0 | 5 | 5 |
-| Functional/Psychiatric | 0 | 4 | 4 |
-| Neurocritical Care | 2 | 3 | 5 |
-| Other/Miscellaneous | 4 | 11 | 15 |
-| **TOTAL** | **58** | **98** | **156** |
+| Autoimmune/Inflammatory | 1 | 4 | 5 |
+| Functional/Psychiatric | 1 | 3 | 4 |
+| Neurocritical Care | 4 | 1 | 5 |
+| Other/Miscellaneous | 5 | 10 | 15 |
+| **TOTAL** | **89** | **67** | **156** |
 
-**Note:** 58 approved diagnoses map to 57 unique plan files (Parkinson's Disease has separate Management and New Diagnosis plans in a single file pair).
+**Note:** 88 approved diagnoses map to 87 unique plan files (Parkinson's Disease has separate Management and New Diagnosis plans in a single file pair).
 
 ---
 
@@ -339,6 +339,36 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | 55 | Tardive Dyskinesia | v1.1 | Jan 30, 2026 |
 | 56 | Tension-Type Headache | v1.1 | Jan 30, 2026 |
 | 57 | Vascular Dementia | v1.1 | Jan 30, 2026 |
+| 58 | NMOSD | v1.1 | Jan 30, 2026 |
+| 59 | Cerebral Venous Thrombosis | v1.1 | Jan 30, 2026 |
+| 60 | Giant Cell Arteritis | v1.1 | Jan 30, 2026 |
+| 61 | Functional Neurological Disorder | v1.1 | Jan 30, 2026 |
+| 62 | Non-Convulsive Status Epilepticus | v1.1 | Jan 30, 2026 |
+| 63 | Chronic Migraine | v1.1 | Jan 30, 2026 |
+| 64 | Low Pressure Headache / SIH | v1.1 | Jan 30, 2026 |
+| 65 | Post-Concussion Syndrome | v1.1 | Jan 30, 2026 |
+| 66 | Drug-Induced Parkinsonism | v1.1 | Jan 30, 2026 |
+| 67 | Wilson's Disease | v1.1 | Jan 30, 2026 |
+| 68 | Progressive Supranuclear Palsy | v1.1 | Jan 30, 2026 |
+| 69 | Multiple System Atrophy | v1.1 | Jan 30, 2026 |
+| 70 | Lambert-Eaton Syndrome | v1.1 | Jan 30, 2026 |
+| 71 | Neurosarcoidosis | v1.1 | Jan 30, 2026 |
+| 72 | Glioblastoma | v1.1 | Jan 30, 2026 |
+| 73 | Cervical Artery Dissection | v1.1 | Jan 30, 2026 |
+| 74 | PRES | v1.1 | Jan 30, 2026 |
+| 75 | Creutzfeldt-Jakob Disease | v1.1 | Jan 30, 2026 |
+| 76 | Brain Death Evaluation | v1.1 | Jan 30, 2026 |
+| 77 | Leptomeningeal Carcinomatosis | v1.1 | Jan 30, 2026 |
+| 78 | RCVS | v1.1 | Jan 30, 2026 |
+| 79 | CNS Vasculitis (PACNS) | v1.1 | Jan 30, 2026 |
+| 80 | Viral Meningitis | v1.1 | Jan 30, 2026 |
+| 81 | Brain Abscess | v1.1 | Jan 30, 2026 |
+| 82 | Paraneoplastic Neurological Syndrome | v1.1 | Jan 30, 2026 |
+| 83 | Fungal Meningitis | v1.1 | Jan 30, 2026 |
+| 84 | Tuberculous Meningitis | v1.1 | Jan 30, 2026 |
+| 85 | MOGAD | v1.1 | Jan 30, 2026 |
+| 86 | Critical Illness Myopathy/Neuropathy | v1.1 | Jan 30, 2026 |
+| 87 | Anoxic Brain Injury | v1.1 | Jan 30, 2026 |
 
 ---
 
