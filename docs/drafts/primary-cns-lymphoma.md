@@ -1,7 +1,7 @@
 ---
 title: Primary CNS Lymphoma (PCNSL)
 description: Comprehensive clinical decision support for primary CNS lymphoma (diffuse large B-cell lymphoma confined to the CNS) including diagnosis, staging, high-dose methotrexate-based chemotherapy, and HIV-associated management.
-version: "1.0"
+version: "1.1"
 setting: ED, HOSP, OPD, ICU
 status: draft
 tags:
@@ -21,9 +21,9 @@ tags:
 
 # Primary CNS Lymphoma (PCNSL)
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
-**REVISED:** January 30, 2026
+**REVISED:** January 31, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -109,11 +109,11 @@ SECTION A: ACTION ITEMS
 
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI brain with DWI/ADC maps (CPT 70553) | With initial MRI; critical for differential diagnosis | Restricted diffusion (bright DWI, dark ADC) = PCNSL (highly cellular tumor); GBM necrotic center does NOT restrict; abscess center DOES restrict | Same as MRI | STAT | STAT | URGENT | STAT |
-| MR perfusion (DSC) (CPT 70553) | With diagnostic MRI; differentiates from high-grade glioma | Lower rCBV than GBM (PCNSL has lower vascularity); moderate rCBV elevation compared to normal brain | Same as MRI | - | URGENT | ROUTINE | - |
-| MR spectroscopy (MRS) (CPT 76390) | With diagnostic MRI; tumor characterization | Elevated choline (highly cellular); elevated lipid and lactate peaks; reduced NAA; high Cho/Cr ratio; large lipid peak more prominent than in GBM | Same as MRI | - | URGENT | ROUTINE | - |
+| MRI brain with DWI/ADC maps (CPT 70553) | With initial MRI; critical for differential diagnosis | Restricted diffusion (bright DWI, dark ADC) = PCNSL (highly cellular tumor); GBM necrotic center does NOT restrict; abscess center DOES restrict | MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia | STAT | STAT | URGENT | STAT |
+| MR perfusion (DSC) (CPT 70553) | With diagnostic MRI; differentiates from high-grade glioma | Lower rCBV than GBM (PCNSL has lower vascularity); moderate rCBV elevation compared to normal brain | MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia | - | URGENT | ROUTINE | - |
+| MR spectroscopy (MRS) (CPT 76390) | With diagnostic MRI; tumor characterization | Elevated choline (highly cellular); elevated lipid and lactate peaks; reduced NAA; high Cho/Cr ratio; large lipid peak more prominent than in GBM | MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia | - | URGENT | ROUTINE | - |
 | Slit lamp ophthalmologic examination | Within 1 week of diagnosis; mandatory staging per IPCG; 15-25% of PCNSL has occular involvement | Vitreous cells, subretinal infiltrates, or retinal/vitreal lymphoma deposits indicating intraocular involvement; changes management if positive | None | - | URGENT | ROUTINE | - |
-| MRI spine (whole) with contrast (CPT 72156+72157+72158) | If spinal symptoms present or CSF positive for lymphoma cells; leptomeningeal staging | Leptomeningeal enhancement; nerve root thickening; intramedullary lesion (rare) | Same as MRI | - | ROUTINE | ROUTINE | - |
+| MRI spine (whole) with contrast (CPT 72156+72157+72158) | If spinal symptoms present or CSF positive for lymphoma cells; leptomeningeal staging | Leptomeningeal enhancement; nerve root thickening; intramedullary lesion (rare) | MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia | - | ROUTINE | ROUTINE | - |
 | Testicular ultrasound (males) (CPT 76870) | Staging per IPCG guidelines; testis is a sanctuary site; concurrent testicular lymphoma in 2-5% | No testicular mass; if present, changes staging and treatment approach | None | - | ROUTINE | ROUTINE | - |
 | Echocardiogram (TTE) (CPT 93306) | Baseline cardiac function before anthracycline-containing regimens or high-dose chemotherapy with ASCT | LVEF >50%; adequate cardiac function for chemotherapy | None | - | ROUTINE | ROUTINE | - |
 
@@ -246,7 +246,7 @@ SECTION A: ACTION ITEMS
 | Recommendation | ED | HOSP | OPD | ICU |
 |----------------|:--:|:----:|:---:|:---:|
 | Return immediately for new or worsening headache, sudden weakness, vision changes, speech difficulty, or seizures (may indicate tumor progression or increased intracranial pressure) | STAT | STAT | ROUTINE | - |
-| Return immediately for fever >100.4F, chills, or signs of infection during chemotherapy as this may indicate life-threatening neutropenic sepsis requiring emergency evaluation | - | STAT | ROUTINE | - |
+| Return immediately for fever >100.4F, chills, or signs of infection during chemotherapy as this may indicate life-threatening neutropenic sepsis requiring emergency evaluation | STAT | STAT | ROUTINE | - |
 | Do not drive until cleared by neurology due to seizure risk, visual changes, and cognitive impairment from tumor and treatment | - | ROUTINE | ROUTINE | - |
 | Do not stop dexamethasone abruptly (if prescribed) as this may cause adrenal crisis; follow prescribed taper schedule exactly | - | ROUTINE | ROUTINE | - |
 | Report any mouth sores, difficulty swallowing, or abdominal pain during methotrexate treatment as mucositis requires early intervention | - | ROUTINE | ROUTINE | - |
@@ -333,8 +333,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | High-dose methotrexate (>=3 g/m2) is the backbone of PCNSL induction therapy | Class I, Level A | [Ferreri et al. Lancet 2009 (IELSG #20)](https://pubmed.ncbi.nlm.nih.gov/19230772/) |
-| Combination of HD-MTX with rituximab improves outcomes in PCNSL (IELSG #32) | Class I, Level A | [Ferreri et al. Lancet Haematol 2016 (IELSG #32)](https://pubmed.ncbi.nlm.nih.gov/27344reassess/) |
-| MATRix regimen (MTX, Ara-C, Thiotepa, Rituximab) is effective induction for PCNSL | Class I, Level A | [Ferreri et al. Lancet Haematol 2016 (IELSG #32)](https://pubmed.ncbi.nlm.nih.gov/27216018/) |
+| Combination of HD-MTX with rituximab improves outcomes in PCNSL (IELSG #32); MATRix regimen (MTX, Ara-C, Thiotepa, Rituximab) is effective induction for PCNSL | Class I, Level A | [Ferreri et al. Lancet Haematol 2016 (IELSG #32)](https://pubmed.ncbi.nlm.nih.gov/27216018/) |
 | R-MPV regimen (Rituximab, Methotrexate, Procarbazine, Vincristine) followed by reduced-dose WBRT | Class II, Level B | [Morris et al. J Clin Oncol 2013](https://pubmed.ncbi.nlm.nih.gov/23547075/) |
 | Reduced-dose WBRT (23.4 Gy) after CR to MTX-based chemotherapy preserves neurocognitive function (RTOG 1114) | Class II, Level B | [Thiel et al. Lancet Haematol 2022 (G-PCNSL-SG-1)](https://pubmed.ncbi.nlm.nih.gov/34732322/) |
 | WBRT omission with ASCT consolidation is noninferior to WBRT in younger patients | Class I, Level B | [Houillier et al. Lancet Haematol 2019 (PRECIS)](https://pubmed.ncbi.nlm.nih.gov/31285178/) |
@@ -360,6 +359,12 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 31, 2026)**
+- Fixed broken PubMed link for IELSG #32 reference (C1: merged duplicate rows, corrected PMID to 27216018)
+- Replaced all "Same as MRI" cross-references in Section 2B with full contraindication text for MRI DWI/ADC, MR perfusion, MR spectroscopy, and MRI spine rows (C2/M1)
+- Added ED STAT priority to neutropenic fever return precaution in Section 4B (S2/R5)
+- Checker validation: 50/60 (83%) pre-revision; target 90%+ post-revision
 
 **v1.0 (January 30, 2026)**
 - Initial template creation

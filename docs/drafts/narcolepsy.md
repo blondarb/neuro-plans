@@ -1,7 +1,7 @@
 ---
 title: "Narcolepsy"
 description: "Clinical decision support for narcolepsy type 1 and type 2 diagnosis and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD"
 status: draft
 tags:
@@ -21,9 +21,9 @@ tags:
 
 # Narcolepsy
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
-**REVISED:** January 30, 2026
+**REVISED:** January 31, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -175,37 +175,37 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Modafinil (Provigil) | PO | First-line wake-promoting agent for EDS | 100 mg daily; 200 mg daily; 200 mg BID :: PO :: :: Start 100 mg each morning; increase to 200 mg daily after 1 week; may split 200 mg AM + 200 mg early afternoon if needed; max 400 mg/day | Hypersensitivity; severe hepatic impairment; may reduce efficacy of hormonal contraceptives | Blood pressure; rash (rare Stevens-Johnson); sleep quality; contraceptive efficacy | - | ROUTINE | ROUTINE | - |
-| Armodafinil (Nuvigil) | PO | First-line wake-promoting agent for EDS; longer duration than modafinil | 150 mg daily; 250 mg daily :: PO :: :: Start 150 mg each morning; may increase to 250 mg daily; longer half-life than modafinil | Hypersensitivity; severe hepatic impairment; may reduce efficacy of hormonal contraceptives | Blood pressure; rash (rare Stevens-Johnson); sleep quality; contraceptive efficacy | - | ROUTINE | ROUTINE | - |
-| Solriamfetol (Sunosi) | PO | EDS in narcolepsy; dopamine/norepinephrine reuptake inhibitor | 75 mg daily; 150 mg daily :: PO :: :: Start 75 mg once daily upon awakening; may increase to 150 mg daily after ≥3 days; max 150 mg/day for narcolepsy | Concurrent MAOIs; uncontrolled hypertension; severe renal impairment (eGFR <15); end-stage renal disease | Blood pressure; heart rate; psychiatric symptoms; weight; renal function | - | ROUTINE | ROUTINE | - |
-| Pitolisant (Wakix) | PO | EDS and cataplexy in narcolepsy; histamine-3 receptor antagonist/inverse agonist | 8.9 mg daily; 17.8 mg daily; 35.6 mg daily :: PO :: :: Start 8.9 mg once daily upon awakening; titrate weekly: 8.9 mg → 17.8 mg → 35.6 mg; max 35.6 mg/day | Severe hepatic impairment; concurrent strong CYP2D6 inhibitors (max 17.8 mg); QT-prolonging drugs | QTc interval if risk factors; hepatic function; insomnia; headache | - | ROUTINE | ROUTINE | - |
+| Modafinil (Provigil) | PO | First-line wake-promoting agent for EDS | 100 mg :: PO :: daily :: Start 100 mg each morning; increase to 200 mg daily after 1 week; may split 200 mg AM + 200 mg early afternoon if needed; max 400 mg/day | Hypersensitivity; severe hepatic impairment; may reduce efficacy of hormonal contraceptives | Blood pressure; rash (rare Stevens-Johnson); sleep quality; contraceptive efficacy | - | ROUTINE | ROUTINE | - |
+| Armodafinil (Nuvigil) | PO | First-line wake-promoting agent for EDS; longer duration than modafinil | 150 mg :: PO :: daily :: Start 150 mg each morning; may increase to 250 mg daily; longer half-life than modafinil; max 250 mg/day | Hypersensitivity; severe hepatic impairment; may reduce efficacy of hormonal contraceptives | Blood pressure; rash (rare Stevens-Johnson); sleep quality; contraceptive efficacy | - | ROUTINE | ROUTINE | - |
+| Solriamfetol (Sunosi) | PO | EDS in narcolepsy; dopamine/norepinephrine reuptake inhibitor | 75 mg :: PO :: daily :: Start 75 mg once daily upon awakening; may increase to 150 mg daily after ≥3 days; max 150 mg/day for narcolepsy | Concurrent MAOIs; uncontrolled hypertension; severe renal impairment (eGFR <15); end-stage renal disease | Blood pressure; heart rate; psychiatric symptoms; weight; renal function | - | ROUTINE | ROUTINE | - |
+| Pitolisant (Wakix) | PO | EDS and cataplexy in narcolepsy; histamine-3 receptor antagonist/inverse agonist | 8.9 mg :: PO :: daily :: Start 8.9 mg once daily upon awakening; titrate weekly: 8.9 mg to 17.8 mg to 35.6 mg; max 35.6 mg/day | Severe hepatic impairment; concurrent strong CYP2D6 inhibitors (max 17.8 mg); QT-prolonging drugs | QTc interval if risk factors; hepatic function; insomnia; headache | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Treatment - Cataplexy and REM-Related Symptoms
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Sodium oxybate (Xyrem) | PO | First-line for cataplexy; also improves EDS and disrupted nocturnal sleep; REMS program (Xyrem REMS) | 4.5 g/night; 6 g/night; 9 g/night :: PO :: :: Start 4.5 g/night divided into 2 equal doses (2.25 g at bedtime + 2.25 g 2.5-4 hours later); titrate by 1.5 g/night every 1-2 weeks; effective range 6-9 g/night; max 9 g/night | Succinic semialdehyde dehydrogenase deficiency; concurrent sedative-hypnotics or alcohol; concurrent opioids; untreated sleep-disordered breathing | Respiratory depression; CNS depression; sleepwalking; depression/suicidality; sodium intake (high sodium content); abuse potential | - | ROUTINE | ROUTINE | - |
-| Lower-sodium oxybate (Xywav) | PO | First-line for cataplexy; 92% less sodium than Xyrem; also improves EDS and disrupted nocturnal sleep; REMS program (Xywav REMS) | 4.5 g/night; 6 g/night; 9 g/night :: PO :: :: Start 4.5 g/night divided into 2 equal doses at bedtime and 2.5-4 hours later; titrate by 1.5 g/night every 1-2 weeks; max 9 g/night | Succinic semialdehyde dehydrogenase deficiency; concurrent sedative-hypnotics or alcohol; concurrent opioids | Respiratory depression; CNS depression; sleepwalking; depression/suicidality; abuse potential | - | ROUTINE | ROUTINE | - |
-| Venlafaxine | PO | Anticataplectic agent; also treats comorbid depression and anxiety | 37.5 mg daily; 75 mg daily; 150 mg daily :: PO :: :: Start 37.5 mg daily; increase by 37.5-75 mg every 1-2 weeks; target 75-225 mg/day; max 225 mg/day | Concurrent MAOIs; uncontrolled hypertension; abrupt discontinuation risk | Blood pressure; heart rate; serotonin syndrome; discontinuation symptoms if stopped abruptly; suicidality in young adults | - | ROUTINE | ROUTINE | - |
-| Fluoxetine | PO | Anticataplectic agent; also treats comorbid depression | 10 mg daily; 20 mg daily; 40 mg daily :: PO :: :: Start 10-20 mg daily; increase by 10-20 mg every 2-4 weeks; target 20-60 mg/day; max 80 mg/day | Concurrent MAOIs; concurrent pimozide or thioridazine | Serotonin syndrome; QTc at higher doses; activation/insomnia; suicidality in young adults | - | ROUTINE | ROUTINE | - |
-| Clomipramine | PO | Potent anticataplectic agent; tricyclic antidepressant with strong REM-suppressive properties | 10 mg daily; 25 mg daily; 75 mg daily :: PO :: :: Start 10-25 mg at bedtime; titrate by 25 mg every 1-2 weeks; target 25-75 mg/day; max 150 mg/day | Recent MI; concurrent MAOIs; cardiac conduction disease; urinary retention; narrow-angle glaucoma | ECG if dose >75 mg/day or age >40; anticholinergic effects; orthostatic hypotension; weight gain; sexual dysfunction | - | ROUTINE | ROUTINE | - |
+| Sodium oxybate (Xyrem) | PO | First-line for cataplexy; also improves EDS and disrupted nocturnal sleep; REMS program (Xyrem REMS) | 2.25 g :: PO :: BID nightly :: Start 4.5 g/night divided into 2 equal doses (2.25 g at bedtime + 2.25 g 2.5-4 hours later); titrate by 1.5 g/night every 1-2 weeks; effective range 6-9 g/night; max 9 g/night | Succinic semialdehyde dehydrogenase deficiency; concurrent sedative-hypnotics or alcohol; concurrent opioids; untreated sleep-disordered breathing | Respiratory depression; CNS depression; sleepwalking; depression/suicidality; sodium intake (high sodium content); abuse potential | - | ROUTINE | ROUTINE | - |
+| Lower-sodium oxybate (Xywav) | PO | First-line for cataplexy; 92% less sodium than Xyrem; also improves EDS and disrupted nocturnal sleep; REMS program (Xywav REMS) | 2.25 g :: PO :: BID nightly :: Start 4.5 g/night divided into 2 equal doses at bedtime and 2.5-4 hours later; titrate by 1.5 g/night every 1-2 weeks; max 9 g/night | Succinic semialdehyde dehydrogenase deficiency; concurrent sedative-hypnotics or alcohol; concurrent opioids | Respiratory depression; CNS depression; sleepwalking; depression/suicidality; abuse potential | - | ROUTINE | ROUTINE | - |
+| Venlafaxine | PO | Anticataplectic agent; also treats comorbid depression and anxiety | 37.5 mg :: PO :: daily :: Start 37.5 mg daily; increase by 37.5-75 mg every 1-2 weeks; target 75-225 mg/day; max 225 mg/day | Concurrent MAOIs; uncontrolled hypertension; abrupt discontinuation risk | Blood pressure; heart rate; serotonin syndrome; discontinuation symptoms if stopped abruptly; suicidality in young adults | - | ROUTINE | ROUTINE | - |
+| Fluoxetine | PO | Anticataplectic agent; also treats comorbid depression | 10 mg :: PO :: daily :: Start 10-20 mg daily; increase by 10-20 mg every 2-4 weeks; target 20-60 mg/day; max 80 mg/day | Concurrent MAOIs; concurrent pimozide or thioridazine | Serotonin syndrome; QTc at higher doses; activation/insomnia; suicidality in young adults | - | ROUTINE | ROUTINE | - |
+| Clomipramine | PO | Potent anticataplectic agent; tricyclic antidepressant with strong REM-suppressive properties | 10 mg :: PO :: QHS :: Start 10-25 mg at bedtime; titrate by 25 mg every 1-2 weeks; target 25-75 mg/day; max 150 mg/day | Recent MI; concurrent MAOIs; cardiac conduction disease; urinary retention; narrow-angle glaucoma | ECG if dose >75 mg/day or age >40; anticholinergic effects; orthostatic hypotension; weight gain; sexual dysfunction | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Second-Line / Refractory Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Methylphenidate (Ritalin) | PO | EDS refractory to first-line agents; rapid onset of action | 5 mg BID; 10 mg BID; 20 mg BID :: PO :: :: Start 5 mg BID (morning and early afternoon); titrate by 5-10 mg/week; max 60 mg/day; avoid evening dosing | Concurrent MAOIs; severe anxiety or agitation; motor tics/Tourette; glaucoma; structural cardiac abnormalities | Blood pressure; heart rate; weight; appetite; growth (pediatric); psychiatric symptoms; abuse potential | - | ROUTINE | ROUTINE | - |
-| Dextroamphetamine (Dexedrine) | PO | EDS refractory to modafinil/solriamfetol; potent wake-promoting agent | 5 mg daily; 10 mg BID; 20 mg BID :: PO :: :: Start 5 mg once or twice daily; titrate by 5 mg/week; max 60 mg/day; avoid evening dosing | Concurrent MAOIs; advanced atherosclerosis; symptomatic cardiovascular disease; moderate-severe hypertension; glaucoma; agitated states; history of drug abuse | Blood pressure; heart rate; weight; appetite; psychiatric symptoms; abuse potential (Schedule II) | - | ROUTINE | ROUTINE | - |
-| Mixed amphetamine salts (Adderall) | PO | EDS refractory to first-line agents; combined amphetamine formulation | 5 mg daily; 10 mg BID; 20 mg BID :: PO :: :: Start 5 mg once or twice daily; titrate by 5-10 mg/week; max 60 mg/day; avoid evening dosing | Concurrent MAOIs; advanced atherosclerosis; symptomatic cardiovascular disease; moderate-severe hypertension; glaucoma; agitated states; history of drug abuse | Blood pressure; heart rate; weight; appetite; psychiatric symptoms; abuse potential (Schedule II) | - | ROUTINE | ROUTINE | - |
-| Protriptyline | PO | Anticataplectic agent with stimulant properties; less sedating TCA | 5 mg daily; 10 mg BID; 20 mg BID :: PO :: :: Start 5 mg in the morning; titrate by 5-10 mg every 1-2 weeks; max 60 mg/day | Recent MI; concurrent MAOIs; cardiac conduction disease; urinary retention; narrow-angle glaucoma | ECG if dose >20 mg/day or age >40; anticholinergic effects; dry mouth; urinary retention | - | - | EXT | - |
+| Methylphenidate (Ritalin) | PO | EDS refractory to first-line agents; rapid onset of action | 5 mg :: PO :: BID :: Start 5 mg BID (morning and early afternoon); titrate by 5-10 mg/week; max 60 mg/day; avoid evening dosing | Concurrent MAOIs; severe anxiety or agitation; motor tics/Tourette; glaucoma; structural cardiac abnormalities | Blood pressure; heart rate; weight; appetite; growth (pediatric); psychiatric symptoms; abuse potential | - | ROUTINE | ROUTINE | - |
+| Dextroamphetamine (Dexedrine) | PO | EDS refractory to modafinil/solriamfetol; potent wake-promoting agent | 5 mg :: PO :: daily :: Start 5 mg once or twice daily; titrate by 5 mg/week; max 60 mg/day; avoid evening dosing | Concurrent MAOIs; advanced atherosclerosis; symptomatic cardiovascular disease; moderate-severe hypertension; glaucoma; agitated states; history of drug abuse | Blood pressure; heart rate; weight; appetite; psychiatric symptoms; abuse potential (Schedule II) | - | ROUTINE | ROUTINE | - |
+| Mixed amphetamine salts (Adderall) | PO | EDS refractory to first-line agents; combined amphetamine formulation | 5 mg :: PO :: daily :: Start 5 mg once or twice daily; titrate by 5-10 mg/week; max 60 mg/day; avoid evening dosing | Concurrent MAOIs; advanced atherosclerosis; symptomatic cardiovascular disease; moderate-severe hypertension; glaucoma; agitated states; history of drug abuse | Blood pressure; heart rate; weight; appetite; psychiatric symptoms; abuse potential (Schedule II) | - | ROUTINE | ROUTINE | - |
+| Protriptyline | PO | Anticataplectic agent with stimulant properties; less sedating TCA | 5 mg :: PO :: daily :: Start 5 mg in the morning; titrate by 5-10 mg every 1-2 weeks; max 60 mg/day | Recent MI; concurrent MAOIs; cardiac conduction disease; urinary retention; narrow-angle glaucoma | ECG if dose >20 mg/day or age >40; anticholinergic effects; dry mouth; urinary retention | - | - | EXT | - |
 
 ### 3E. Adjunctive / Symptomatic Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Melatonin | PO | Disrupted nocturnal sleep; circadian rhythm support | 3 mg QHS; 5 mg QHS :: PO :: :: 3-5 mg 30 minutes before bedtime; may help consolidate nighttime sleep | Autoimmune conditions (theoretical) | Daytime sedation; next-day grogginess | - | ROUTINE | ROUTINE | - |
-| Trazodone | PO | Disrupted nocturnal sleep; comorbid insomnia | 25 mg QHS; 50 mg QHS; 100 mg QHS :: PO :: :: Start 25-50 mg at bedtime; max 100 mg; avoid if nocturnal oxybate used | Concurrent MAOIs; may worsen daytime sedation | Priapism (rare); orthostatic hypotension; next-day sedation | - | ROUTINE | ROUTINE | - |
-| Atomoxetine | PO | EDS with comorbid ADHD; norepinephrine reuptake inhibitor with mild anticataplectic properties | 40 mg daily; 80 mg daily :: PO :: :: Start 40 mg daily; increase to 80 mg after ≥3 days; max 100 mg/day | Concurrent MAOIs; narrow-angle glaucoma; pheochromocytoma; severe cardiovascular disease | Blood pressure; heart rate; hepatic function (rare hepatotoxicity); suicidality in children/adolescents | - | - | EXT | - |
+| Melatonin | PO | Disrupted nocturnal sleep; circadian rhythm support | 3 mg :: PO :: QHS :: 3-5 mg 30 minutes before bedtime; may help consolidate nighttime sleep | Autoimmune conditions (theoretical) | Daytime sedation; next-day grogginess | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Disrupted nocturnal sleep; comorbid insomnia | 25 mg :: PO :: QHS :: Start 25-50 mg at bedtime; max 100 mg; avoid if nocturnal oxybate used | Concurrent MAOIs; may worsen daytime sedation | Priapism (rare); orthostatic hypotension; next-day sedation | - | ROUTINE | ROUTINE | - |
+| Atomoxetine | PO | EDS with comorbid ADHD; norepinephrine reuptake inhibitor with mild anticataplectic properties | 40 mg :: PO :: daily :: Start 40 mg daily; increase to 80 mg after ≥3 days; max 100 mg/day | Concurrent MAOIs; narrow-angle glaucoma; pheochromocytoma; severe cardiovascular disease | Blood pressure; heart rate; hepatic function (rare hepatotoxicity); suicidality in children/adolescents | - | - | EXT | - |
 
 ---
 
@@ -224,30 +224,30 @@ tags:
 
 ### 4B. Patient/Family Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Narcolepsy is a lifelong neurological condition caused by loss of brain cells that produce hypocretin; it is not laziness or a psychological problem | ROUTINE | ROUTINE | ROUTINE |
-| Do not drive until excessive daytime sleepiness is adequately controlled with treatment (risk of sleep attacks at the wheel) | ROUTINE | ROUTINE | ROUTINE |
-| Report to state DMV as required by local law; obtain fitness-to-drive evaluation through MWT when applicable | - | - | ROUTINE |
-| Take scheduled 15-20 minute naps during the day to improve alertness (naps are therapeutic, not a sign of inadequate treatment) | - | ROUTINE | ROUTINE |
-| Do not abruptly stop antidepressant medications used for cataplexy as this may cause severe rebound cataplexy (status cataplecticus) | ROUTINE | ROUTINE | ROUTINE |
-| Notify all providers about narcolepsy diagnosis before any sedation or anesthesia (heightened sensitivity to sedatives) | ROUTINE | ROUTINE | ROUTINE |
-| Avoid alcohol, which worsens excessive sleepiness and disrupts nocturnal sleep | ROUTINE | ROUTINE | ROUTINE |
-| Wear medical alert identification stating narcolepsy diagnosis, especially if taking sodium oxybate | - | ROUTINE | ROUTINE |
-| Narcolepsy Network (narcolepsynetwork.org) and Wake Up Narcolepsy (wakeupnarcolepsy.org) for patient resources and support groups | - | - | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Narcolepsy is a lifelong neurological condition caused by loss of brain cells that produce hypocretin; it is not laziness or a psychological problem | ROUTINE | ROUTINE | ROUTINE | - |
+| Do not drive until excessive daytime sleepiness is adequately controlled with treatment (risk of sleep attacks at the wheel) | ROUTINE | ROUTINE | ROUTINE | - |
+| Report to state DMV as required by local law; obtain fitness-to-drive evaluation through MWT when applicable | - | - | ROUTINE | - |
+| Take scheduled 15-20 minute naps during the day to improve alertness (naps are therapeutic, not a sign of inadequate treatment) | - | ROUTINE | ROUTINE | - |
+| Do not abruptly stop antidepressant medications used for cataplexy as this may cause severe rebound cataplexy (status cataplecticus) | ROUTINE | ROUTINE | ROUTINE | - |
+| Notify all providers about narcolepsy diagnosis before any sedation or anesthesia (heightened sensitivity to sedatives) | ROUTINE | ROUTINE | ROUTINE | - |
+| Avoid alcohol, which worsens excessive sleepiness and disrupts nocturnal sleep | ROUTINE | ROUTINE | ROUTINE | - |
+| Wear medical alert identification stating narcolepsy diagnosis, especially if taking sodium oxybate | - | ROUTINE | ROUTINE | - |
+| Narcolepsy Network (narcolepsynetwork.org) and Wake Up Narcolepsy (wakeupnarcolepsy.org) for patient resources and support groups | - | - | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Maintain strict sleep-wake schedule with consistent bedtime and wake time to consolidate nocturnal sleep | - | ROUTINE | ROUTINE |
-| Regular moderate exercise (30 minutes daily) to improve alertness and overall health; avoid vigorous exercise close to bedtime | - | - | ROUTINE |
-| Avoid heavy meals during the day as postprandial sleepiness exacerbates EDS | - | ROUTINE | ROUTINE |
-| Limit caffeine to morning hours only; excessive caffeine may disrupt nighttime sleep without adequately controlling EDS | - | ROUTINE | ROUTINE |
-| Inform employer about narcolepsy for reasonable workplace accommodations (scheduled nap breaks, flexible schedule) under ADA | - | - | ROUTINE |
-| Avoid shift work and jobs requiring sustained vigilance (air traffic control, long-haul driving) unless EDS is well-controlled | - | - | ROUTINE |
-| Emotional management strategies to reduce cataplexy triggers; cognitive behavioral techniques for emotional regulation | - | - | ROUTINE |
-| Weight management as narcolepsy type 1 is associated with obesity and metabolic syndrome | - | - | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Maintain strict sleep-wake schedule with consistent bedtime and wake time to consolidate nocturnal sleep | - | ROUTINE | ROUTINE | - |
+| Regular moderate exercise (30 minutes daily) to improve alertness and overall health; avoid vigorous exercise close to bedtime | - | - | ROUTINE | - |
+| Avoid heavy meals during the day as postprandial sleepiness exacerbates EDS | - | ROUTINE | ROUTINE | - |
+| Limit caffeine to morning hours only; excessive caffeine may disrupt nighttime sleep without adequately controlling EDS | - | ROUTINE | ROUTINE | - |
+| Inform employer about narcolepsy for reasonable workplace accommodations (scheduled nap breaks, flexible schedule) under ADA | - | - | ROUTINE | - |
+| Avoid shift work and jobs requiring sustained vigilance (air traffic control, long-haul driving) unless EDS is well-controlled | - | - | ROUTINE | - |
+| Emotional management strategies to reduce cataplexy triggers; cognitive behavioral techniques for emotional regulation | - | - | ROUTINE | - |
+| Weight management as narcolepsy type 1 is associated with obesity and metabolic syndrome | - | - | ROUTINE | - |
 
 ---
 
@@ -343,6 +343,11 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 31, 2026)**
+- Standardized structured dosing format to `dose :: route :: frequency :: instructions` for all 15 medications in sections 3B-3E
+- Added ICU column to sections 4B (Patient/Family Instructions) and 4C (Lifestyle & Prevention) for table consistency
+- Updated version metadata and revised date
 
 **v1.0 (January 30, 2026)**
 - Initial template creation
