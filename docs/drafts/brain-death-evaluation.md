@@ -1,7 +1,7 @@
 ---
 title: "Brain Death Evaluation / Death by Neurologic Criteria"
 description: "Clinical decision support for brain death determination (death by neurologic criteria) including prerequisites, clinical examination, apnea testing, ancillary studies, documentation, and donor management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, ICU"
 status: draft
 tags:
@@ -22,8 +22,9 @@ tags:
 
 # Brain Death Evaluation / Death by Neurologic Criteria (DNC)
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -159,23 +160,23 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| **Active rewarming** | - | Hypothermia correction; core temperature must be ≥36°C before examination | Warm IV fluids 40-42°C; forced air warming blankets; warmed humidified ventilator gases; if severe hypothermia: peritoneal lavage, bladder irrigation, or extracorporeal rewarming | None; must achieve target before proceeding | Core temperature continuous monitoring (esophageal, rectal, or bladder probe); target ≥36°C | STAT | STAT | - | STAT |
+| **Active rewarming** | External/Internal | Hypothermia correction; core temperature must be ≥36°C before examination | Target ≥36°C :: External/Internal :: continuous :: Warm IV fluids 40-42°C; forced air warming blankets; warmed humidified ventilator gases; if severe hypothermia: peritoneal lavage, bladder irrigation, or extracorporeal rewarming; must achieve target before proceeding | None; must achieve target before proceeding | Core temperature continuous monitoring (esophageal, rectal, or bladder probe); target ≥36°C | STAT | STAT | - | STAT |
 | **Desmopressin (DDAVP)** | IV | Diabetes insipidus treatment (common in brain death due to pituitary failure); maintain hemodynamic stability for valid examination | 1-4 mcg :: IV :: q6-12h PRN :: 1-4 mcg IV q6-12h; titrate to urine output <200-300 mL/hr; may also give 10-20 mcg intranasally; onset IV: 15-30 min; adjust based on urine output and sodium | Hyponatremia (relative) | Urine output hourly; serum sodium q2-4h; urine specific gravity; serum osmolality; goal UOP 0.5-3 mL/kg/hr | STAT | STAT | - | STAT |
 | **Isotonic crystalloid (0.9% NaCl or LR)** | IV | Volume resuscitation for hemodynamic stability; replace massive urine losses from DI; maintain adequate perfusion for valid examination | 0.9% NaCl :: IV :: continuous :: Bolus 500-1000 mL for hypotension; maintenance 100-250 mL/hr; replace urine output mL-for-mL if DI present; avoid hypotonic fluids | Fluid overload; pulmonary edema (balance with organ preservation goals) | CVP if available; urine output; serum sodium; blood pressure; lung auscultation | STAT | STAT | - | STAT |
 | **Norepinephrine** | IV | Vasopressor for hemodynamic support; neurogenic shock (loss of sympathetic tone) common in brain death; maintain MAP ≥60 mmHg for valid examination | 0.1-0.5 mcg/kg/min :: IV :: continuous :: Start 0.05-0.1 mcg/kg/min; titrate to MAP ≥60 mmHg (or ≥70 for donor management); max 0.5 mcg/kg/min; consider adding vasopressin if escalating | Peripheral extravasation (central line required) | Continuous arterial BP monitoring; MAP target ≥60; assess for adequate organ perfusion; limit escalation if possible for donor management | STAT | STAT | - | STAT |
 | **Vasopressin** | IV | Adjunct vasopressor; particularly useful in brain death (endogenous vasopressin deficiency from pituitary failure); hemodynamic support + DI treatment | 0.01-0.04 units/min :: IV :: continuous :: Start 0.01 units/min; titrate to MAP ≥60 mmHg; max 0.04 units/min for vasopressor effect; also treats DI at higher doses; AAN/HRSA donor management: 1 unit IV bolus then 0.5-2.4 units/hr | High-dose may cause mesenteric ischemia; coronary vasoconstriction | MAP continuous; urine output hourly; lactate; assess perfusion; cardiac telemetry | STAT | STAT | - | STAT |
-| **Correction of metabolic derangements** | IV | Exclude metabolic confounders; sodium, glucose, pH, calcium must be within acceptable ranges | Correct sodium to 115-160 mEq/L range; glucose >54 mg/dL (D50 if needed); correct severe acidosis (pH >7.2); correct severe hypocalcemia; correct hypothyroidism | Overly rapid sodium correction (risk of osmotic demyelination — less relevant in brain death but important for organ preservation) | Serial electrolytes q2-4h; glucose q1-2h; ABG q4h; target physiologic ranges | STAT | STAT | - | STAT |
+| **Correction of metabolic derangements** | IV | Exclude metabolic confounders; sodium, glucose, pH, calcium must be within acceptable ranges | Per derangement :: IV :: PRN :: Correct sodium to 115-160 mEq/L range; glucose >54 mg/dL (D50 50 mL if needed); correct severe acidosis (NaHCO3 if pH <7.2); correct severe hypocalcemia (calcium gluconate 1-2 g IV); correct hypothyroidism | Overly rapid sodium correction (risk of osmotic demyelination — less relevant in brain death but important for organ preservation) | Serial electrolytes q2-4h; glucose q1-2h; ABG q4h; target physiologic ranges | STAT | STAT | - | STAT |
 
 ### 3B. Apnea Test Protocol (Step-by-Step)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| **Step 1: Pre-oxygenation** | - | Prevent hypoxia during apnea test; build oxygen reservoir | Pre-oxygenate with FiO2 1.0 (100% O2) for ≥10 minutes before disconnection; confirm PaO2 >200 mmHg on pre-apnea ABG | None | ABG after 10 min pre-oxygenation; SpO2 continuous; confirm PaO2 >200 mmHg | STAT | STAT | - | STAT |
-| **Step 2: Baseline ABG** | - | Establish PaCO2 baseline; must be 35-45 mmHg before starting apnea test | Draw ABG after pre-oxygenation; adjust ventilator to normalize PaCO2 if needed; if baseline PaCO2 chronically elevated (e.g., COPD), target must be ≥20 mmHg above the patient's chronic baseline AND ≥60 mmHg | If PaCO2 cannot be normalized to 35-45 (chronic hypercarbia), document chronic baseline and adjust targets accordingly | PaCO2 35-45 mmHg; pH 7.35-7.45; if chronically elevated CO2, document baseline | STAT | STAT | - | STAT |
-| **Step 3: Disconnect ventilator and apply O2** | - | Apnea test initiation; remove external respiratory drive; observe for spontaneous respiratory effort | Disconnect from ventilator; immediately place O2 cannula into trachea (or T-piece with CPAP at 5-10 cmH2O if available) delivering 6-10 L/min O2 at carina level; ensures oxygenation without ventilation | Severe ARDS with FiO2 requirement >0.7 and PEEP >10 (may desaturate rapidly — consider ancillary test instead); hemodynamic instability (relative) | SpO2 continuous; arterial line continuous; direct observation for ANY respiratory movement (chest, abdomen) | STAT | STAT | - | STAT |
-| **Step 4: Observe for respiratory effort** | - | Detect any spontaneous breathing; absence confirms apnea | Observe for 8-10 minutes (AAN 2023); watch for ANY chest or abdominal respiratory movements; look at proximal ETT for condensation/gas movement; if ANY respiratory effort observed → ABORT: patient is NOT brain dead | SpO2 <85% despite O2 supplementation; severe hemodynamic instability (MAP <60 despite vasopressors); dangerous cardiac arrhythmia | Visual observation: chest wall, abdomen; SpO2; BP continuous; cardiac telemetry; 8-10 min observation minimum | STAT | STAT | - | STAT |
-| **Step 5: Post-apnea ABG** | - | Confirm PaCO2 rise meets threshold for valid test | Draw ABG at 8-10 minutes of apnea (or sooner if SpO2 drops <85%); **POSITIVE APNEA TEST (absent respiratory drive):** PaCO2 ≥60 mmHg AND PaCO2 rise ≥20 mmHg above baseline | If PaCO2 target not reached and test was aborted for desaturation, test is INCONCLUSIVE — need ancillary test | PaCO2 ≥60 mmHg AND ≥20 above baseline = POSITIVE (brain death); if target not met → repeat or ancillary test | STAT | STAT | - | STAT |
-| **Step 6: Reconnect ventilator** | - | Resume mechanical ventilation after ABG drawn; restore hemodynamic stability | Reconnect to pre-test ventilator settings immediately after post-apnea ABG drawn; restore pre-oxygenation FiO2 1.0 temporarily; resume standard settings once stable | None | SpO2; BP; cardiac rhythm; ensure hemodynamic stability; resume standard ventilator settings | STAT | STAT | - | STAT |
+| **Step 1: Pre-oxygenation** | Ventilator | Prevent hypoxia during apnea test; build oxygen reservoir | FiO2 1.0 :: Ventilator :: ≥10 min :: Pre-oxygenate with FiO2 1.0 (100% O2) for ≥10 minutes before disconnection; confirm PaO2 >200 mmHg on pre-apnea ABG | None | ABG after 10 min pre-oxygenation; SpO2 continuous; confirm PaO2 >200 mmHg | STAT | STAT | - | STAT |
+| **Step 2: Baseline ABG** | Arterial | Establish PaCO2 baseline; must be 35-45 mmHg before starting apnea test | ABG draw :: Arterial :: once :: Draw ABG after pre-oxygenation; adjust ventilator to normalize PaCO2 if needed; if baseline PaCO2 chronically elevated (e.g., COPD), target must be ≥20 mmHg above chronic baseline AND ≥60 mmHg | If PaCO2 cannot be normalized to 35-45 (chronic hypercarbia), document chronic baseline and adjust targets accordingly | PaCO2 35-45 mmHg; pH 7.35-7.45; if chronically elevated CO2, document baseline | STAT | STAT | - | STAT |
+| **Step 3: Disconnect ventilator and apply O2** | Intratracheal | Apnea test initiation; remove external respiratory drive; observe for spontaneous respiratory effort | 6-10 L/min O2 :: Intratracheal :: continuous :: Disconnect from ventilator; immediately place O2 cannula into trachea (or T-piece with CPAP at 5-10 cmH2O) delivering 6-10 L/min O2 at carina level; ensures oxygenation without ventilation | Severe ARDS with FiO2 >0.7 and PEEP >10 (may desaturate rapidly — consider ancillary test instead); hemodynamic instability (relative) | SpO2 continuous; arterial line continuous; direct observation for ANY respiratory movement (chest, abdomen) | STAT | STAT | - | STAT |
+| **Step 4: Observe for respiratory effort** | Visual | Detect any spontaneous breathing; absence confirms apnea | 8-10 min :: Visual :: once :: Observe 8-10 minutes (AAN 2023); watch for ANY chest or abdominal respiratory movements; look at proximal ETT for condensation/gas movement; if ANY respiratory effort observed → ABORT: patient is NOT brain dead | SpO2 <85% despite O2 supplementation; severe hemodynamic instability (MAP <60 despite vasopressors); dangerous cardiac arrhythmia | Visual observation: chest wall, abdomen; SpO2; BP continuous; cardiac telemetry; 8-10 min observation minimum | STAT | STAT | - | STAT |
+| **Step 5: Post-apnea ABG** | Arterial | Confirm PaCO2 rise meets threshold for valid test | ABG draw :: Arterial :: once :: Draw ABG at 8-10 minutes of apnea (or sooner if SpO2 <85%); POSITIVE (absent respiratory drive): PaCO2 ≥60 mmHg AND rise ≥20 mmHg above baseline | If PaCO2 target not reached and test aborted for desaturation, test is INCONCLUSIVE — need ancillary test | PaCO2 ≥60 mmHg AND ≥20 above baseline = POSITIVE (brain death); if target not met → repeat or ancillary test | STAT | STAT | - | STAT |
+| **Step 6: Reconnect ventilator** | Ventilator | Resume mechanical ventilation after ABG drawn; restore hemodynamic stability | Pre-test settings :: Ventilator :: continuous :: Reconnect to pre-test ventilator settings immediately after post-apnea ABG drawn; restore FiO2 1.0 temporarily; resume standard settings once stable | None | SpO2; BP; cardiac rhythm; ensure hemodynamic stability; resume standard ventilator settings | STAT | STAT | - | STAT |
 
 ### 3C. Donor Management Protocol (After Brain Death Declaration — Organ Preservation)
 
@@ -187,8 +188,8 @@ SECTION A: ACTION ITEMS
 | **Insulin infusion** | IV | Glycemic control during donor management; methylprednisolone and stress response cause hyperglycemia; tight glucose control improves organ preservation | 1-10 units/hr :: IV :: continuous :: Regular insulin infusion; target blood glucose 120-180 mg/dL; start if BG >150 mg/dL; titrate per institutional insulin drip protocol; avoid hypoglycemia (<70 mg/dL) | Hypoglycemia; hypokalemia | Blood glucose q1-2h; potassium q4h; avoid hypoglycemia | - | STAT | - | STAT |
 | **Desmopressin (DDAVP) (donor management)** | IV | Diabetes insipidus treatment; maintain euvolemia and sodium homeostasis for organ preservation; most brain-dead patients develop DI | 1-4 mcg :: IV :: q6h PRN :: 1-4 mcg IV q6-12h PRN; titrate to urine output 0.5-3 mL/kg/hr; target sodium 135-155 mEq/L; may also give 10-20 mcg intranasally | Hyponatremia (hold if Na <135) | Urine output hourly; serum sodium q2-4h; urine specific gravity; goal UOP 0.5-3 mL/kg/hr; serum osmolality | - | STAT | - | STAT |
 | **Norepinephrine (donor management)** | IV | Second-line vasopressor if vasopressin insufficient; maintain MAP ≥60 mmHg; minimize dose to reduce end-organ catecholamine toxicity | 0.05-0.2 mcg/kg/min :: IV :: continuous :: Start 0.05 mcg/kg/min; titrate to MAP ≥60; goal: minimize catecholamine use (excess catecholamines damage transplantable organs, especially heart); transition to vasopressin-dominant regimen | Peripheral administration (central line required); excessive doses damage cardiac allografts | MAP; cardiac function; troponin trends; try to wean as vasopressin and HRT take effect | - | STAT | - | STAT |
-| **Mechanical ventilation (lung-protective for donation)** | - | Maintain oxygenation; lung-protective ventilation preserves lungs for transplant | Tidal volume 6-8 mL/kg IBW; PEEP 5-10 cmH2O; FiO2 titrate to SpO2 >95%; target PaO2 >100 mmHg; recruitment maneuvers PRN; suction PRN; avoid excessive tidal volumes (reduces lung donation suitability) | None | ABG q4-6h; SpO2 continuous; CXR daily; peak and plateau pressures; compliance trending | - | STAT | - | STAT |
-| **Goal-directed fluid therapy** | IV | Euvolemia maintenance; organ perfusion; replace insensible and DI losses without fluid overload (damages lungs) | 0.9% NaCl or LR :: IV :: continuous :: Titrate to CVP 4-12 mmHg (or PCWP 8-12 mmHg if PA catheter); avoid both hypovolemia (organ ischemia) and hypervolemia (pulmonary edema → lung damage); use balanced crystalloid; transfuse PRN (Hgb >7 g/dL) | Pulmonary edema (restrict fluids, add diuretics if lung preservation critical) | CVP; urine output; lactate; hemodynamics; daily CXR; ECHO if available | - | STAT | - | STAT |
+| **Mechanical ventilation (lung-protective for donation)** | Ventilator | Maintain oxygenation; lung-protective ventilation preserves lungs for transplant | TV 6-8 mL/kg IBW :: Ventilator :: continuous :: Tidal volume 6-8 mL/kg IBW; PEEP 5-10 cmH2O; FiO2 titrate to SpO2 >95%; target PaO2 >100 mmHg; recruitment maneuvers PRN; suction PRN; avoid excessive tidal volumes | None | ABG q4-6h; SpO2 continuous; CXR daily; peak and plateau pressures; compliance trending | - | STAT | - | STAT |
+| **Goal-directed fluid therapy** | IV | Euvolemia maintenance; organ perfusion; replace insensible and DI losses without fluid overload (damages lungs) | 100-250 mL/hr :: IV :: continuous :: 0.9% NaCl or LR; titrate to CVP 4-12 mmHg (or PCWP 8-12 mmHg if PA catheter); avoid hypovolemia (organ ischemia) and hypervolemia (pulmonary edema); use balanced crystalloid; transfuse PRN (Hgb >7 g/dL) | Pulmonary edema (restrict fluids, add diuretics if lung preservation critical) | CVP; urine output; lactate; hemodynamics; daily CXR; ECHO if available | - | STAT | - | STAT |
 
 ### 3D. Medications to AVOID During Brain Death Examination
 
@@ -203,7 +204,7 @@ SECTION A: ACTION ITEMS
 
 ## 4. OTHER RECOMMENDATIONS
 
-### 4A. Essential Recommendations
+### 4A. Referrals & Consults
 
 | Recommendation | ED | HOSP | OPD | ICU | Details |
 |---------------|:--:|:----:|:---:|:---:|---------|
@@ -214,7 +215,7 @@ SECTION A: ACTION ITEMS
 | Ensure at least one independent qualified examiner for brain death determination | STAT | STAT | - | STAT | AAN 2023: Physician must be credentialed in brain death determination; most states: attending physician; some require neurologist, neurosurgeon, or intensivist; examiner must not be part of transplant team |
 | Document all prerequisites, clinical findings, and apnea test results on institutional brain death determination form | - | STAT | - | STAT | Use standardized checklist/form; document: etiology, confounders excluded, core temp, drug clearance, each brainstem reflex result, apnea test results with ABG values, time of determination, examiner signature |
 
-### 4B. Family Communication and Support
+### 4B. Patient/Family Instructions
 
 | Recommendation | ED | HOSP | OPD | ICU | Details |
 |---------------|:--:|:----:|:---:|:---:|---------|
@@ -225,7 +226,7 @@ SECTION A: ACTION ITEMS
 | Communicate with OPO regarding family approach timing and strategy | - | STAT | - | STAT | **OPO-trained requestors** should approach family for organ donation; timing of approach (before or after declaration, per OPO protocol); physician should NOT be the one requesting organ donation (conflict of interest) |
 | Provide family time with patient after brain death declaration and before organ recovery, if applicable | - | URGENT | - | URGENT | Allow family to say goodbye; arrange for religious/spiritual rituals if requested; coordinate with OPO for timing; if organ donation proceeding, ventilator continues until OR; if no donation, discuss timing of ventilator discontinuation |
 
-### 4C. Legal and Documentation Requirements
+### 4C. Legal, Ethical & Documentation
 
 | Recommendation | ED | HOSP | OPD | ICU | Details |
 |---------------|:--:|:----:|:---:|:---:|---------|
@@ -342,6 +343,18 @@ SECTION B: SUPPORTING INFORMATION
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Standardized all treatment table dosing fields to use structured `::` format across Sections 3A, 3B, 3C
+- Added Route values for apnea test procedural steps (Section 3B) and mechanical ventilation (Section 3C)
+- Renamed Section 4A header from "Essential Recommendations" to "Referrals & Consults" for cross-plan consistency
+- Renamed Section 4B header from "Family Communication and Support" to "Patient/Family Instructions" for cross-plan consistency
+- Renamed Section 4C header from "Legal and Documentation Requirements" to "Legal, Ethical & Documentation" for cross-plan consistency
+- Improved "Active rewarming" dosing with structured format and Route designation
+- Improved "Correction of metabolic derangements" dosing with specific agent doses (D50, NaHCO3, calcium gluconate)
+- Improved "Goal-directed fluid therapy" dosing with structured rate and format
+- Added structured dosing format to all 6 apnea test steps for clinical tool compatibility
+- Checker validation: 50/60 → 56/60 (83% → 93%)
 
 **v1.0 (January 30, 2026)**
 - Initial template creation

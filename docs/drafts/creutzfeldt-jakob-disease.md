@@ -1,7 +1,7 @@
 ---
 title: "Creutzfeldt-Jakob Disease (CJD)"
 description: "Clinical decision support for Creutzfeldt-Jakob disease (CJD) diagnosis, symptomatic management, and palliative care"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -22,8 +22,9 @@ tags:
 
 # Creutzfeldt-Jakob Disease (CJD)
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -59,46 +60,46 @@ SECTION A: ACTION ITEMS
 
 ### 1A. Essential/Core Labs
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Baseline; infection screen; rule out hematologic causes of encephalopathy | Normal |
-| CMP (CPT 80053) | STAT | STAT | ROUTINE | STAT | Metabolic encephalopathy screen (hepatic, renal, electrolyte); baseline before medications | Normal |
-| TSH (CPT 84443), free T4 (CPT 84439) | URGENT | ROUTINE | ROUTINE | URGENT | Hashimoto encephalopathy (SREAT) is a treatable mimic; hypothyroid encephalopathy | Normal |
-| B12 (CPT 82607), methylmalonic acid (MMA) (CPT 83921) | URGENT | ROUTINE | ROUTINE | URGENT | B12 deficiency is a reversible cause of cognitive decline; rule out before accepting prion diagnosis | B12 >300 pg/mL; MMA normal |
-| ESR (CPT 85652) | URGENT | ROUTINE | ROUTINE | URGENT | Vasculitis screen; inflammatory conditions; normal in CJD (helps exclude autoimmune/inflammatory mimics) | Normal (<20 mm/h age-adjusted) |
-| CRP (CPT 86140) | URGENT | ROUTINE | ROUTINE | URGENT | Inflammatory marker; elevated suggests non-prion etiology (autoimmune, infection, vasculitis) | Normal |
-| RPR or VDRL (CPT 86592) | URGENT | ROUTINE | ROUTINE | URGENT | Neurosyphilis is a treatable RPD mimic | Non-reactive |
-| HIV 1/2 antigen/antibody (CPT 87389) | URGENT | ROUTINE | ROUTINE | URGENT | HIV-associated neurocognitive disorder; opportunistic infections | Negative |
-| Ammonia (CPT 82140) | URGENT | ROUTINE | - | URGENT | Hepatic encephalopathy mimic | Normal (<35 micromol/L) |
-| Blood glucose (CPT 82947) | STAT | STAT | ROUTINE | STAT | Hypoglycemia; diabetic encephalopathy | Normal |
-| Urinalysis (CPT 81003) + urine culture | STAT | ROUTINE | ROUTINE | STAT | UTI causing delirium superimposed on CJD | Negative |
-| Urine drug screen | URGENT | ROUTINE | - | URGENT | Substance-related cognitive impairment; drug toxicity | Negative or expected medications only |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| CBC with differential (CPT 85025) | Baseline; infection screen; rule out hematologic causes of encephalopathy | Normal | STAT | STAT | ROUTINE | STAT |
+| CMP (CPT 80053) | Metabolic encephalopathy screen (hepatic, renal, electrolyte); baseline before medications | Normal | STAT | STAT | ROUTINE | STAT |
+| TSH (CPT 84443), free T4 (CPT 84439) | Hashimoto encephalopathy (SREAT) is a treatable mimic; hypothyroid encephalopathy | Normal | URGENT | ROUTINE | ROUTINE | URGENT |
+| B12 (CPT 82607), methylmalonic acid (MMA) (CPT 83921) | B12 deficiency is a reversible cause of cognitive decline; rule out before accepting prion diagnosis | B12 >300 pg/mL; MMA normal | URGENT | ROUTINE | ROUTINE | URGENT |
+| ESR (CPT 85652) | Vasculitis screen; inflammatory conditions; normal in CJD (helps exclude autoimmune/inflammatory mimics) | Normal (<20 mm/h age-adjusted) | URGENT | ROUTINE | ROUTINE | URGENT |
+| CRP (CPT 86140) | Inflammatory marker; elevated suggests non-prion etiology (autoimmune, infection, vasculitis) | Normal | URGENT | ROUTINE | ROUTINE | URGENT |
+| RPR or VDRL (CPT 86592) | Neurosyphilis is a treatable RPD mimic | Non-reactive | URGENT | ROUTINE | ROUTINE | URGENT |
+| HIV 1/2 antigen/antibody (CPT 87389) | HIV-associated neurocognitive disorder; opportunistic infections | Negative | URGENT | ROUTINE | ROUTINE | URGENT |
+| Ammonia (CPT 82140) | Hepatic encephalopathy mimic | Normal (<35 micromol/L) | URGENT | ROUTINE | - | URGENT |
+| Blood glucose (CPT 82947) | Hypoglycemia; diabetic encephalopathy | Normal | STAT | STAT | ROUTINE | STAT |
+| Urinalysis (CPT 81003) + urine culture | UTI causing delirium superimposed on CJD | Negative | STAT | ROUTINE | ROUTINE | STAT |
+| Urine drug screen | Substance-related cognitive impairment; drug toxicity | Negative or expected medications only | URGENT | ROUTINE | - | URGENT |
 
 ### 1B. Extended Workup (Second-line)
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Anti-thyroid antibodies (anti-TPO, anti-thyroglobulin) | - | ROUTINE | ROUTINE | - | Hashimoto encephalopathy (SREAT) -- treatable with steroids; can mimic CJD | Negative (positive + encephalopathy = consider SREAT) |
-| ANA (CPT 86235) | - | ROUTINE | ROUTINE | - | Lupus cerebritis; systemic autoimmune disease mimicking RPD | Negative |
-| Autoimmune encephalitis panel (serum) -- NMDAR, LGI1, CASPR2, GABA-B, GABA-A, AMPA, DPPX, IgLON5 | - | ROUTINE | ROUTINE | - | Treatable autoimmune encephalitis is the most important reversible CJD mimic to identify | Negative |
-| Paraneoplastic panel (serum) -- comprehensive (ANNA-1/Hu, ANNA-2/Ri, CRMP-5, amphiphysin, PCA-1/Yo, GAD65) | - | ROUTINE | ROUTINE | - | Paraneoplastic encephalitis can mimic CJD presentation | Negative |
-| Folate (CPT 82746) | - | ROUTINE | ROUTINE | - | Deficiency associated with cognitive impairment | Normal |
-| LDH | - | ROUTINE | ROUTINE | - | Lymphoma; intravascular lymphoma (CJD mimic) | Normal |
-| Peripheral blood smear | - | ROUTINE | - | - | Intravascular lymphoma (schistocytes); TTP | Normal |
-| ACE level (serum) | - | ROUTINE | ROUTINE | - | Neurosarcoidosis | Normal |
-| Serum protein electrophoresis (SPEP) (CPT 86334) + immunofixation | - | ROUTINE | ROUTINE | - | CNS lymphoma; POEMS; paraneoplastic | Normal pattern |
-| Thiamine (B1) level (CPT 84425) | - | ROUTINE | ROUTINE | - | Wernicke encephalopathy -- reversible with treatment | Normal (>70 nmol/L) |
-| Copper (CPT 82390) and ceruloplasmin | - | ROUTINE | ROUTINE | - | Wilson disease (if age <50) | Normal |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Anti-thyroid antibodies (anti-TPO, anti-thyroglobulin) | Hashimoto encephalopathy (SREAT) -- treatable with steroids; can mimic CJD | Negative (positive + encephalopathy = consider SREAT) | - | ROUTINE | ROUTINE | - |
+| ANA (CPT 86235) | Lupus cerebritis; systemic autoimmune disease mimicking RPD | Negative | - | ROUTINE | ROUTINE | - |
+| Autoimmune encephalitis panel (serum) -- NMDAR, LGI1, CASPR2, GABA-B, GABA-A, AMPA, DPPX, IgLON5 | Treatable autoimmune encephalitis is the most important reversible CJD mimic to identify | Negative | - | ROUTINE | ROUTINE | - |
+| Paraneoplastic panel (serum) -- comprehensive (ANNA-1/Hu, ANNA-2/Ri, CRMP-5, amphiphysin, PCA-1/Yo, GAD65) | Paraneoplastic encephalitis can mimic CJD presentation | Negative | - | ROUTINE | ROUTINE | - |
+| Folate (CPT 82746) | Deficiency associated with cognitive impairment | Normal | - | ROUTINE | ROUTINE | - |
+| LDH | Lymphoma; intravascular lymphoma (CJD mimic) | Normal | - | ROUTINE | ROUTINE | - |
+| Peripheral blood smear | Intravascular lymphoma (schistocytes); TTP | Normal | - | ROUTINE | - | - |
+| ACE level (serum) | Neurosarcoidosis | Normal | - | ROUTINE | ROUTINE | - |
+| Serum protein electrophoresis (SPEP) (CPT 86334) + immunofixation | CNS lymphoma; POEMS; paraneoplastic | Normal pattern | - | ROUTINE | ROUTINE | - |
+| Thiamine (B1) level (CPT 84425) | Wernicke encephalopathy -- reversible with treatment | Normal (>70 nmol/L) | - | ROUTINE | ROUTINE | - |
+| Copper (CPT 82390) and ceruloplasmin | Wilson disease (if age <50) | Normal | - | ROUTINE | ROUTINE | - |
 
 ### 1C. Rare/Specialized (Prion-Specific and Genetic)
 
-| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------|:--:|:----:|:---:|:---:|-----------|----------------|
-| PRNP gene analysis (blood) (CPT 81479) | - | ROUTINE | ROUTINE | - | Identifies genetic/familial prion disease (fCJD, GSS, FFI); determines codon 129 polymorphism (methionine/valine) which influences sCJD phenotype and prognosis; important for family counseling | No pathogenic mutation; document codon 129 genotype (MM, MV, VV) |
-| Codon 129 polymorphism (PRNP) | - | ROUTINE | ROUTINE | - | MM homozygosity most common in sCJD-MM1 (classic rapid form); MV and VV associated with different clinical phenotypes and prognosis | MM most common in sCJD; VV/MV in some atypical forms |
-| Neurofilament light chain (NfL) (CPT 83519) -- serum | - | ROUTINE | ROUTINE | - | Markedly elevated in CJD; useful as accessible blood biomarker of neuronal damage; may support diagnosis when CSF unavailable | Markedly elevated (>10,000 pg/mL in CJD) |
-| Prion protein gene full sequencing | - | EXT | EXT | - | If PRNP targeted analysis negative but clinical suspicion for genetic prion disease remains high | No pathogenic variant |
-| AD biomarkers (serum p-tau217, p-tau181) | - | ROUTINE | ROUTINE | - | Rapidly progressive Alzheimer disease is the most common misdiagnosis of CJD; serum AD biomarkers help distinguish | Normal p-tau ratio (elevated suggests rpAD, not CJD) |
+| Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|------|-----------|----------------|:--:|:----:|:---:|:---:|
+| PRNP gene analysis (blood) (CPT 81479) | Identifies genetic/familial prion disease (fCJD, GSS, FFI); determines codon 129 polymorphism (methionine/valine) which influences sCJD phenotype and prognosis; important for family counseling | No pathogenic mutation; document codon 129 genotype (MM, MV, VV) | - | ROUTINE | ROUTINE | - |
+| Codon 129 polymorphism (PRNP) | MM homozygosity most common in sCJD-MM1 (classic rapid form); MV and VV associated with different clinical phenotypes and prognosis | MM most common in sCJD; VV/MV in some atypical forms | - | ROUTINE | ROUTINE | - |
+| Neurofilament light chain (NfL) (CPT 83519) -- serum | Markedly elevated in CJD; useful as accessible blood biomarker of neuronal damage; may support diagnosis when CSF unavailable | Markedly elevated (>10,000 pg/mL in CJD) | - | ROUTINE | ROUTINE | - |
+| Prion protein gene full sequencing | If PRNP targeted analysis negative but clinical suspicion for genetic prion disease remains high | No pathogenic variant | - | EXT | EXT | - |
+| AD biomarkers (serum p-tau217, p-tau181) | Rapidly progressive Alzheimer disease is the most common misdiagnosis of CJD; serum AD biomarkers help distinguish | Normal p-tau ratio (elevated suggests rpAD, not CJD) | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -106,29 +107,29 @@ SECTION A: ACTION ITEMS
 
 ### 2A. Essential/First-line
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with and without contrast (CPT 70553) + DWI/FLAIR | STAT | STAT | ROUTINE | STAT | Within 24h. DWI is CRITICAL -- cortical ribboning on DWI is highly characteristic of CJD. 3T preferred for sensitivity | sCJD: cortical ribboning on DWI (high signal in neocortex) + caudate/putamen signal on DWI/FLAIR. vCJD: pulvinar sign (bilateral pulvinar thalamic high signal). fCJD: variable by mutation. Sensitivity of MRI DWI for sCJD >90% | Pacemaker; metallic implants; severe claustrophobia |
-| EEG (routine) (CPT 95816) | URGENT | URGENT | ROUTINE | URGENT | Within 24h | sCJD: periodic sharp wave complexes (PSWCs) at 1-2 Hz -- triphasic morphology; generalized; sensitivity ~65% (highest in sCJD-MM1 subtype). Also rules out non-convulsive status epilepticus | None significant |
-| CT head without contrast (CPT 70450) | STAT | STAT | - | STAT | Immediate if acute presentation, focal deficit, or pre-LP | Mass lesion; hydrocephalus; hemorrhage; CT is typically normal early in CJD but may show atrophy in later stages | Pregnancy (relative) |
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
+| MRI brain with and without contrast (CPT 70553) + DWI/FLAIR | Within 24h. DWI is CRITICAL -- cortical ribboning on DWI is highly characteristic of CJD. 3T preferred for sensitivity | sCJD: cortical ribboning on DWI (high signal in neocortex) + caudate/putamen signal on DWI/FLAIR. vCJD: pulvinar sign (bilateral pulvinar thalamic high signal). fCJD: variable by mutation. Sensitivity of MRI DWI for sCJD >90% | Pacemaker; metallic implants; severe claustrophobia | STAT | STAT | ROUTINE | STAT |
+| EEG (routine) (CPT 95816) | Within 24h | sCJD: periodic sharp wave complexes (PSWCs) at 1-2 Hz -- triphasic morphology; generalized; sensitivity ~65% (highest in sCJD-MM1 subtype). Also rules out non-convulsive status epilepticus | None significant | URGENT | URGENT | ROUTINE | URGENT |
+| CT head without contrast (CPT 70450) | Immediate if acute presentation, focal deficit, or pre-LP | Mass lesion; hydrocephalus; hemorrhage; CT is typically normal early in CJD but may show atrophy in later stages | Pregnancy (relative) | STAT | STAT | - | STAT |
 
 ### 2B. Extended
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Continuous EEG monitoring (cEEG) (CPT 95700) | - | URGENT | - | STAT | If altered consciousness, suspected NCSE, or fluctuating exam | Non-convulsive seizures; evolution of PSWCs; helps distinguish CJD periodic pattern from seizures | None |
-| FDG-PET brain (CPT 78608) | - | EXT | ROUTINE | - | Within 1-2 weeks | CJD: cortical and striatal hypometabolism (often asymmetric early); helps distinguish from AD pattern (temporoparietal); may be useful when MRI is equivocal | Pregnancy; uncontrolled diabetes |
-| MRA brain | - | ROUTINE | ROUTINE | - | If vasculitis suspected as alternative diagnosis | CNS vasculitis (beading); normal in CJD | Same as MRI |
-| CT chest/abdomen/pelvis with contrast | - | ROUTINE | ROUTINE | - | If paraneoplastic syndrome suspected | Occult malignancy (paraneoplastic RPD mimic) | Contrast allergy; renal impairment |
-| Sleep polysomnography | - | - | EXT | - | If fatal familial insomnia (FFI) suspected | Absent sleep spindles; disrupted sleep architecture; progressive total insomnia | Cooperation required |
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
+| Continuous EEG monitoring (cEEG) (CPT 95700) | If altered consciousness, suspected NCSE, or fluctuating exam | Non-convulsive seizures; evolution of PSWCs; helps distinguish CJD periodic pattern from seizures | None | - | URGENT | - | STAT |
+| FDG-PET brain (CPT 78608) | Within 1-2 weeks | CJD: cortical and striatal hypometabolism (often asymmetric early); helps distinguish from AD pattern (temporoparietal); may be useful when MRI is equivocal | Pregnancy; uncontrolled diabetes | - | EXT | ROUTINE | - |
+| MRA brain | If vasculitis suspected as alternative diagnosis | CNS vasculitis (beading); normal in CJD | Same as MRI | - | ROUTINE | ROUTINE | - |
+| CT chest/abdomen/pelvis with contrast | If paraneoplastic syndrome suspected | Occult malignancy (paraneoplastic RPD mimic) | Contrast allergy; renal impairment | - | ROUTINE | ROUTINE | - |
+| Sleep polysomnography | If fatal familial insomnia (FFI) suspected | Absent sleep spindles; disrupted sleep architecture; progressive total insomnia | Cooperation required | - | - | EXT | - |
 
 ### 2C. Rare/Specialized
 
-| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| Brain biopsy | - | EXT | - | - | When all non-invasive testing inconclusive and treatable etiology must be excluded; NOT required for CJD diagnosis if RT-QuIC positive and MRI/EEG consistent | Spongiform change; PrP immunostaining (definite CJD); also rules out vasculitis, lymphoma, autoimmune | Coagulopathy; surgical risk; biopsy only changes management if treatable diagnosis possible |
-| Second opinion MRI neuroradiology review | - | ROUTINE | ROUTINE | - | If initial MRI read as normal but clinical suspicion for CJD remains high | Subtle DWI cortical signal missed on initial read; CJD MRI findings require expertise | None |
-| Nasal brushing for RT-QuIC | - | EXT | EXT | - | Emerging alternative to CSF RT-QuIC; non-invasive; sensitivity 97% in some studies | Positive RT-QuIC from olfactory mucosa supports prion diagnosis | None significant; early-stage research |
+| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
+|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
+| Brain biopsy | When all non-invasive testing inconclusive and treatable etiology must be excluded; NOT required for CJD diagnosis if RT-QuIC positive and MRI/EEG consistent | Spongiform change; PrP immunostaining (definite CJD); also rules out vasculitis, lymphoma, autoimmune | Coagulopathy; surgical risk; biopsy only changes management if treatable diagnosis possible | - | EXT | - | - |
+| Second opinion MRI neuroradiology review | If initial MRI read as normal but clinical suspicion for CJD remains high | Subtle DWI cortical signal missed on initial read; CJD MRI findings require expertise | None | - | ROUTINE | ROUTINE | - |
+| Nasal brushing for RT-QuIC | Emerging alternative to CSF RT-QuIC; non-invasive; sensitivity 97% in some studies | Positive RT-QuIC from olfactory mucosa supports prion diagnosis | None significant; early-stage research | - | EXT | EXT | - |
 
 ### LUMBAR PUNCTURE
 
@@ -138,26 +139,26 @@ SECTION A: ACTION ITEMS
 
 **Volume Required:** 15-20 mL (multiple specialized tests required; save extra frozen at -80 degrees C for future studies)
 
-| Study | ED | HOSP | OPD | Rationale | Target Finding |
-|-------|:--:|:----:|:---:|-----------|----------------|
-| Opening pressure | URGENT | ROUTINE | ROUTINE | Elevated ICP assessment; typically normal in CJD | Normal (10-20 cm H2O); normal in CJD |
-| Cell count with differential (tubes 1 and 4) (CPT 89051) | URGENT | ROUTINE | ROUTINE | Normal or minimal pleocytosis in CJD; elevated WBC suggests autoimmune or infectious etiology | Normal in CJD (WBC <5); elevated WBC suggests non-prion diagnosis |
-| Protein (CPT 84157) | URGENT | ROUTINE | ROUTINE | Mildly elevated or normal in CJD; markedly elevated suggests infection/autoimmune | Normal or mildly elevated in CJD (usually <100 mg/dL) |
-| Glucose with paired serum glucose (CPT 82945) | URGENT | ROUTINE | ROUTINE | Low in bacterial/TB/fungal meningitis, carcinomatous meningitis; normal in CJD | Normal in CJD (>60% of serum) |
-| Gram stain and bacterial culture (CPT 87205+87070) | URGENT | ROUTINE | ROUTINE | Exclude chronic bacterial infection | No organisms |
-| **RT-QuIC (real-time quaking-induced conversion) (CPT 86235)** | URGENT | URGENT | ROUTINE | GOLD STANDARD for CJD diagnosis. Sensitivity 92%, specificity 99-100%. Detects misfolded prion protein amplification. Send to National Prion Disease Pathology Surveillance Center (Cleveland) or Quest/Mayo | Negative (positive = prion disease essentially confirmed) |
-| 14-3-3 protein (CPT 83519) | URGENT | ROUTINE | ROUTINE | Elevated in rapid neuronal destruction. Sensitivity ~90% for sCJD but NOT specific (also elevated in stroke, encephalitis, seizures, CNS lymphoma). Largely superseded by RT-QuIC | Negative (positive supports CJD in right clinical context but has significant false-positive rate) |
-| Total tau protein (CPT 83519) | URGENT | ROUTINE | ROUTINE | Markedly elevated in CJD (>1150 pg/mL has sensitivity 90%, specificity 86%). Higher levels correlate with more rapid progression. Not specific (also elevated in AD, stroke) | Normal (<400 pg/mL); CJD often >1150, frequently >10,000 pg/mL |
-| Neuron-specific enolase (NSE) | - | ROUTINE | ROUTINE | Elevated in CJD (>35 ng/mL); marker of neuronal damage; less specific than tau or RT-QuIC | Normal (<35 ng/mL); elevated in CJD |
-| Neurofilament light chain (NfL) (CPT 83519) -- CSF | - | ROUTINE | ROUTINE | Markedly elevated in CJD; non-specific marker of neuronal damage; useful for tracking progression | Markedly elevated in CJD (often >10,000 pg/mL) |
-| Autoimmune encephalitis panel (CSF) -- NMDAR, LGI1, CASPR2, GABA-B, GABA-A, AMPA, DPPX | URGENT | ROUTINE | ROUTINE | CSF more sensitive than serum for NMDAR antibodies; rule out treatable autoimmune encephalitis before accepting CJD diagnosis | Negative |
-| Alzheimer biomarkers (CSF Abeta42, Abeta40, p-tau 181, t-tau) (CPT 83519) | - | ROUTINE | ROUTINE | Rapidly progressive AD (rpAD) is the most common misdiagnosis of CJD. AD pattern: low Abeta42/Abeta40 ratio + elevated p-tau. In CJD: t-tau markedly elevated but p-tau NOT proportionally elevated (p-tau/t-tau ratio very low) | Context-dependent; p-tau/t-tau ratio helps distinguish CJD from rpAD |
-| Oligoclonal bands (CPT 83916), IgG index | - | ROUTINE | ROUTINE | Intrathecal antibody synthesis (MS, autoimmune, neurosarcoidosis); typically absent in CJD | Absent in CJD; present suggests inflammatory/autoimmune etiology |
-| HSV 1/2 PCR (CPT 87529) | URGENT | ROUTINE | - | HSV encephalitis mimic | Negative |
-| Cytology (CPT 88104) | - | ROUTINE | ROUTINE | Leptomeningeal carcinomatosis/lymphoma (RPD mimic) | Negative |
-| Flow cytometry | - | ROUTINE | ROUTINE | CNS lymphoma (B-cell clonality) | Normal |
-| VDRL (CSF) (CPT 86592) | - | ROUTINE | ROUTINE | Neurosyphilis | Non-reactive |
-| Cryptococcal antigen (CPT 87327) | URGENT | ROUTINE | - | Cryptococcal meningitis (immunocompromised) | Negative |
+| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|-------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Opening pressure | Elevated ICP assessment; typically normal in CJD | Normal (10-20 cm H2O); normal in CJD | URGENT | ROUTINE | ROUTINE | URGENT |
+| Cell count with differential (tubes 1 and 4) (CPT 89051) | Normal or minimal pleocytosis in CJD; elevated WBC suggests autoimmune or infectious etiology | Normal in CJD (WBC <5); elevated WBC suggests non-prion diagnosis | URGENT | ROUTINE | ROUTINE | URGENT |
+| Protein (CPT 84157) | Mildly elevated or normal in CJD; markedly elevated suggests infection/autoimmune | Normal or mildly elevated in CJD (usually <100 mg/dL) | URGENT | ROUTINE | ROUTINE | URGENT |
+| Glucose with paired serum glucose (CPT 82945) | Low in bacterial/TB/fungal meningitis, carcinomatous meningitis; normal in CJD | Normal in CJD (>60% of serum) | URGENT | ROUTINE | ROUTINE | URGENT |
+| Gram stain and bacterial culture (CPT 87205+87070) | Exclude chronic bacterial infection | No organisms | URGENT | ROUTINE | ROUTINE | URGENT |
+| **RT-QuIC (real-time quaking-induced conversion) (CPT 86235)** | GOLD STANDARD for CJD diagnosis. Sensitivity 92%, specificity 99-100%. Detects misfolded prion protein amplification. Send to National Prion Disease Pathology Surveillance Center (Cleveland) or Quest/Mayo | Negative (positive = prion disease essentially confirmed) | URGENT | URGENT | ROUTINE | URGENT |
+| 14-3-3 protein (CPT 83519) | Elevated in rapid neuronal destruction. Sensitivity ~90% for sCJD but NOT specific (also elevated in stroke, encephalitis, seizures, CNS lymphoma). Largely superseded by RT-QuIC | Negative (positive supports CJD in right clinical context but has significant false-positive rate) | URGENT | ROUTINE | ROUTINE | URGENT |
+| Total tau protein (CPT 83519) | Markedly elevated in CJD (>1150 pg/mL has sensitivity 90%, specificity 86%). Higher levels correlate with more rapid progression. Not specific (also elevated in AD, stroke) | Normal (<400 pg/mL); CJD often >1150, frequently >10,000 pg/mL | URGENT | ROUTINE | ROUTINE | URGENT |
+| Neuron-specific enolase (NSE) | Elevated in CJD (>35 ng/mL); marker of neuronal damage; less specific than tau or RT-QuIC | Normal (<35 ng/mL); elevated in CJD | - | ROUTINE | ROUTINE | - |
+| Neurofilament light chain (NfL) (CPT 83519) -- CSF | Markedly elevated in CJD; non-specific marker of neuronal damage; useful for tracking progression | Markedly elevated in CJD (often >10,000 pg/mL) | - | ROUTINE | ROUTINE | - |
+| Autoimmune encephalitis panel (CSF) -- NMDAR, LGI1, CASPR2, GABA-B, GABA-A, AMPA, DPPX | CSF more sensitive than serum for NMDAR antibodies; rule out treatable autoimmune encephalitis before accepting CJD diagnosis | Negative | URGENT | ROUTINE | ROUTINE | URGENT |
+| Alzheimer biomarkers (CSF Abeta42, Abeta40, p-tau 181, t-tau) (CPT 83519) | Rapidly progressive AD (rpAD) is the most common misdiagnosis of CJD. AD pattern: low Abeta42/Abeta40 ratio + elevated p-tau. In CJD: t-tau markedly elevated but p-tau NOT proportionally elevated (p-tau/t-tau ratio very low) | Context-dependent; p-tau/t-tau ratio helps distinguish CJD from rpAD | - | ROUTINE | ROUTINE | - |
+| Oligoclonal bands (CPT 83916), IgG index | Intrathecal antibody synthesis (MS, autoimmune, neurosarcoidosis); typically absent in CJD | Absent in CJD; present suggests inflammatory/autoimmune etiology | - | ROUTINE | ROUTINE | - |
+| HSV 1/2 PCR (CPT 87529) | HSV encephalitis mimic | Negative | URGENT | ROUTINE | - | URGENT |
+| Cytology (CPT 88104) | Leptomeningeal carcinomatosis/lymphoma (RPD mimic) | Negative | - | ROUTINE | ROUTINE | - |
+| Flow cytometry | CNS lymphoma (B-cell clonality) | Normal | - | ROUTINE | ROUTINE | - |
+| VDRL (CSF) (CPT 86592) | Neurosyphilis | Non-reactive | - | ROUTINE | ROUTINE | - |
+| Cryptococcal antigen (CPT 87327) | Cryptococcal meningitis (immunocompromised) | Negative | URGENT | ROUTINE | - | URGENT |
 
 **Special Handling:** RT-QuIC requires specific collection and shipping procedures -- contact National Prion Disease Pathology Surveillance Center (1-216-368-0587) or reference lab for specimen requirements. Send CSF on dry ice. Standard prion precautions NOT required for CSF handling (prion concentration in CSF is very low). Save 5-10 mL of CSF frozen at -80 degrees C for future studies.
 
@@ -173,8 +174,8 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Lorazepam (acute seizure) | IV | Acute seizure or status epilepticus | 0.1 mg/kg IV push PRN seizure :: IV :: :: 0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min; max 8 mg total | Respiratory depression; acute narrow-angle glaucoma | Respiratory status; sedation level; airway patency | STAT | STAT | - | STAT |
-| Levetiracetam (seizure management) | IV | Seizure prophylaxis and treatment in CJD; preferred first-line ASM due to minimal drug interactions | 1000-1500 mg IV BID :: IV :: :: Load 1000-1500 mg IV; maintenance 500-1500 mg PO/IV BID; max 3000 mg/day | Severe renal impairment (dose adjust per CrCl) | Behavioral changes; renal function; seizure frequency | STAT | STAT | ROUTINE | STAT |
+| Lorazepam (acute seizure) | IV | Acute seizure or status epilepticus | 4 mg :: IV :: PRN seizure :: 0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min; max 8 mg total | Respiratory depression; acute narrow-angle glaucoma | Respiratory status; sedation level; airway patency | STAT | STAT | - | STAT |
+| Levetiracetam (seizure management) | IV | Seizure prophylaxis and treatment in CJD; preferred first-line ASM due to minimal drug interactions | 1000 mg :: IV :: BID :: Load 1000-1500 mg IV; maintenance 500-1500 mg PO/IV BID; max 3000 mg/day | Severe renal impairment (dose adjust per CrCl) | Behavioral changes; renal function; seizure frequency | STAT | STAT | ROUTINE | STAT |
 | Thiamine (B1) IV -- empiric | IV | Empiric for Wernicke encephalopathy while RPD workup pending; treat before glucose | 500 mg :: IV :: TID :: 500 mg IV TID x 3 days, then 250 mg IV daily x 3-5 days, then 100 mg PO daily | None significant | Clinical response (confusion, ataxia, ophthalmoplegia) | STAT | STAT | - | STAT |
 | IV methylprednisolone (empiric trial) | IV | Empiric immunotherapy trial ONLY if autoimmune encephalitis remains in differential; do NOT continue if CJD confirmed (steroids do not help CJD) | 1000 mg :: IV :: daily :: 1000 mg IV daily x 3-5 days; infuse over 1-2 hours; DISCONTINUE if CJD confirmed | Active untreated infection; CJD confirmed (no benefit); uncontrolled diabetes | Glucose q6h; BP; GI prophylaxis; clinical response assessment | - | URGENT | - | URGENT |
 
@@ -184,34 +185,34 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Clonazepam (first-line for myoclonus) | PO | Myoclonus -- most effective treatment for CJD-associated myoclonus; reduces startle response and involuntary jerking | 0.5 mg BID; 1 mg BID; 2 mg TID :: PO :: :: Start 0.5 mg PO BID; increase by 0.5 mg every 3-5 days as tolerated; target 1-2 mg TID; max 6 mg/day | Respiratory depression; severe hepatic impairment; fall risk (elderly); acute narrow-angle glaucoma | Sedation level; respiratory status; fall risk assessment; swallowing function (may worsen dysphagia) | URGENT | STAT | ROUTINE | STAT |
-| Valproic acid (adjunctive for myoclonus) | PO | Myoclonus and seizure control -- add to or substitute for clonazepam if insufficient myoclonus control or excessive sedation from benzodiazepines | 250 mg BID; 500 mg BID; 750 mg BID :: PO :: :: Start 250 mg PO BID; increase by 250 mg every 3-5 days; target level 50-100 mcg/mL; max 2000 mg/day | Hepatic disease; pancreatitis; urea cycle disorders; pregnancy (teratogenic) | LFTs; ammonia; CBC (thrombocytopenia); drug level q1-2 weeks until stable; pancreatitis symptoms | URGENT | ROUTINE | ROUTINE | URGENT |
-| Levetiracetam (adjunctive for myoclonus) | PO | Myoclonus -- alternative or adjunct when benzodiazepine sedation is limiting; also provides seizure coverage | 500 mg BID; 1000 mg BID; 1500 mg BID :: PO :: :: Start 500 mg PO BID; increase by 500 mg/day every 1-2 weeks; max 3000 mg/day | Severe renal impairment (dose adjust per CrCl) | Behavioral changes (irritability, aggression); renal function; seizure/myoclonus diary | - | ROUTINE | ROUTINE | ROUTINE |
-| Piracetam (adjunctive for myoclonus) | PO | Cortical myoclonus -- may be effective for CJD myoclonus; not FDA-approved in US but available internationally | 2400 mg TID; 4800 mg TID :: PO :: :: Start 2400 mg PO TID; may increase to 4800 mg TID; max 24 g/day | Severe renal impairment; cerebral hemorrhage | Renal function; clinical response | - | EXT | EXT | - |
+| Clonazepam (first-line for myoclonus) | PO | Myoclonus -- most effective treatment for CJD-associated myoclonus; reduces startle response and involuntary jerking | 0.5 mg :: PO :: BID :: Start 0.5 mg PO BID; increase by 0.5 mg every 3-5 days as tolerated; target 1-2 mg TID; max 6 mg/day | Respiratory depression; severe hepatic impairment; fall risk (elderly); acute narrow-angle glaucoma | Sedation level; respiratory status; fall risk assessment; swallowing function (may worsen dysphagia) | URGENT | STAT | ROUTINE | STAT |
+| Valproic acid (adjunctive for myoclonus) | PO | Myoclonus and seizure control -- add to or substitute for clonazepam if insufficient myoclonus control or excessive sedation from benzodiazepines | 250 mg :: PO :: BID :: Start 250 mg PO BID; increase by 250 mg every 3-5 days; target level 50-100 mcg/mL; max 2000 mg/day | Hepatic disease; pancreatitis; urea cycle disorders; pregnancy (teratogenic) | LFTs; ammonia; CBC (thrombocytopenia); drug level q1-2 weeks until stable; pancreatitis symptoms | URGENT | ROUTINE | ROUTINE | URGENT |
+| Levetiracetam (adjunctive for myoclonus) | PO | Myoclonus -- alternative or adjunct when benzodiazepine sedation is limiting; also provides seizure coverage | 500 mg :: PO :: BID :: Start 500 mg PO BID; increase by 500 mg/day every 1-2 weeks; max 3000 mg/day | Severe renal impairment (dose adjust per CrCl) | Behavioral changes (irritability, aggression); renal function; seizure/myoclonus diary | - | ROUTINE | ROUTINE | ROUTINE |
+| Piracetam (adjunctive for myoclonus) | PO | Cortical myoclonus -- may be effective for CJD myoclonus; not FDA-approved in US but available internationally | 2400 mg :: PO :: TID :: Start 2400 mg PO TID; may increase to 4800 mg TID; max 24 g/day | Severe renal impairment; cerebral hemorrhage | Renal function; clinical response | - | EXT | EXT | - |
 
 ### 3C. Symptomatic Treatments -- Behavioral and Other Symptoms
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Quetiapine (agitation/psychosis) | PO | Agitation, psychosis, behavioral disturbance in CJD -- preferred atypical antipsychotic due to lower EPS risk | 25 mg qHS; 50 mg BID; 100 mg BID :: PO :: :: Start 25 mg PO qHS; increase by 25 mg/day every 2-3 days; max 200-400 mg/day | QTc prolongation; Lewy body dementia (must distinguish from CJD -- DLB has worse antipsychotic sensitivity) | QTc; metabolic panel; sedation; fall risk; EPS monitoring | - | ROUTINE | ROUTINE | ROUTINE |
-| Haloperidol (acute severe agitation) | IV | Acute severe agitation or psychosis not responsive to reorientation and non-pharmacologic measures | 0.5-2 mg IV PRN agitation; 0.5-1 mg IV PRN agitation :: IV :: :: 0.5-2 mg IV/IM q4-6h PRN agitation; use lowest effective dose; max 10 mg/day | QTc >500 ms; Parkinson disease; neuroleptic malignant syndrome history | ECG (QTc before and after); EPS; NMS surveillance (temperature, rigidity, CPK) | STAT | URGENT | - | STAT |
-| Trazodone (insomnia) | PO | Sleep disruption and insomnia -- common in CJD; preferred over benzodiazepine hypnotics to avoid excessive sedation | 25 mg qHS; 50 mg qHS; 100 mg qHS :: PO :: :: Start 25 mg PO qHS; increase by 25 mg every 3-5 days; max 150 mg qHS | Concurrent MAOIs; QTc prolongation; priapism risk | Sedation; orthostatic hypotension; swallowing safety | - | ROUTINE | ROUTINE | - |
-| Melatonin (insomnia) | PO | Sleep-wake cycle disruption -- may be tried first given excellent safety profile | 3-10 mg qHS :: PO :: :: 3-10 mg PO qHS; start at 3 mg | None significant | Sleep quality | - | ROUTINE | ROUTINE | - |
-| Morphine (pain and distress) | IV | Pain, suffering, and distress in advanced CJD -- palliative intent; myoclonus can be painful | 2-4 mg IV q4h PRN; 1-2 mg IV q2h PRN :: IV :: :: Start 1-2 mg IV q2-4h PRN; titrate to comfort; convert to scheduled dosing if frequent PRN use | Respiratory depression (acceptable in comfort-focused care); severe hepatic impairment | Respiratory rate; comfort level; sedation; bowel function (constipation prophylaxis) | - | ROUTINE | - | ROUTINE |
-| Morphine oral/sublingual (outpatient palliative) | PO | Pain and distress management in home hospice setting | 5-10 mg q4h PRN; 15-30 mg q12h sustained-release :: PO :: :: Immediate release: 5-10 mg PO q4h PRN; convert to sustained-release when dose established; sublingual concentrated solution for dysphagia | Same as IV morphine | Same as IV morphine; stool softener/laxative prophylaxis | - | ROUTINE | ROUTINE | - |
-| Glycopyrrolate (sialorrhea) | PO | Excessive drooling/sialorrhea -- common in advanced CJD with bulbar dysfunction | 1 mg TID; 2 mg TID :: PO :: :: Start 1 mg PO TID; increase to 2 mg TID as needed | Narrow-angle glaucoma; urinary retention; GI obstruction | Anticholinergic effects; urinary retention; constipation; dry mouth | - | ROUTINE | ROUTINE | - |
-| Hyoscine (scopolamine) patch (sialorrhea) | TOP | Alternative for sialorrhea management when oral medications difficult due to dysphagia | 1.5 mg patch q72h :: TOP :: :: Apply 1 transdermal patch behind ear every 72 hours; rotate ears | Narrow-angle glaucoma; urinary retention | Confusion (may worsen); dry mouth; urinary retention | - | ROUTINE | ROUTINE | - |
-| Ondansetron (nausea) | IV | Nausea and vomiting -- may occur with brainstem involvement or medication side effects | 4 mg IV q8h PRN :: IV :: :: 4 mg IV q8h PRN; or 4-8 mg PO q8h PRN | QTc prolongation; severe hepatic impairment | QTc if repeated dosing | URGENT | ROUTINE | ROUTINE | URGENT |
-| Docusate + senna (constipation prophylaxis) | PO | Constipation prevention -- universal need with immobility and opioid use | 100 mg BID + 8.6 mg BID :: PO :: :: Docusate 100 mg PO BID + senna 8.6 mg PO BID; titrate senna to effect | Bowel obstruction | Bowel frequency; abdominal distension | - | ROUTINE | ROUTINE | - |
-| Polyethylene glycol (PEG 3350) (constipation) | PO | Constipation refractory to docusate/senna | 17 g daily :: PO :: :: 17 g PO daily in 8 oz water; may increase to BID | Bowel obstruction; ileus | Bowel frequency; electrolytes if prolonged use | - | ROUTINE | ROUTINE | - |
+| Quetiapine (agitation/psychosis) | PO | Agitation, psychosis, behavioral disturbance in CJD -- preferred atypical antipsychotic due to lower EPS risk | 25 mg :: PO :: qHS :: Start 25 mg PO qHS; increase by 25 mg/day every 2-3 days; max 200-400 mg/day | QTc prolongation; Lewy body dementia (must distinguish from CJD -- DLB has worse antipsychotic sensitivity) | QTc; metabolic panel; sedation; fall risk; EPS monitoring | - | ROUTINE | ROUTINE | ROUTINE |
+| Haloperidol (acute severe agitation) | IV | Acute severe agitation or psychosis not responsive to reorientation and non-pharmacologic measures | 0.5 mg :: IV :: PRN agitation :: 0.5-2 mg IV/IM q4-6h PRN agitation; use lowest effective dose; max 10 mg/day | QTc >500 ms; Parkinson disease; neuroleptic malignant syndrome history | ECG (QTc before and after); EPS; NMS surveillance (temperature, rigidity, CPK) | STAT | URGENT | - | STAT |
+| Trazodone (insomnia) | PO | Sleep disruption and insomnia -- common in CJD; preferred over benzodiazepine hypnotics to avoid excessive sedation | 25 mg :: PO :: qHS :: Start 25 mg PO qHS; increase by 25 mg every 3-5 days; max 150 mg qHS | Concurrent MAOIs; QTc prolongation; priapism risk | Sedation; orthostatic hypotension; swallowing safety | - | ROUTINE | ROUTINE | - |
+| Melatonin (insomnia) | PO | Sleep-wake cycle disruption -- may be tried first given excellent safety profile | 3 mg :: PO :: qHS :: 3-10 mg PO qHS; start at 3 mg | None significant | Sleep quality | - | ROUTINE | ROUTINE | - |
+| Morphine (pain and distress) | IV | Pain, suffering, and distress in advanced CJD -- palliative intent; myoclonus can be painful | 2 mg :: IV :: q4h PRN :: Start 1-2 mg IV q2-4h PRN; titrate to comfort; convert to scheduled dosing if frequent PRN use | Respiratory depression (acceptable in comfort-focused care); severe hepatic impairment | Respiratory rate; comfort level; sedation; bowel function (constipation prophylaxis) | - | ROUTINE | - | ROUTINE |
+| Morphine oral/sublingual (outpatient palliative) | PO | Pain and distress management in home hospice setting | 5 mg :: PO :: q4h PRN :: Immediate release: 5-10 mg PO q4h PRN; convert to sustained-release when dose established; sublingual concentrated solution for dysphagia | Respiratory depression (acceptable in comfort-focused care); severe hepatic impairment | Respiratory rate; comfort level; sedation; bowel function; stool softener/laxative prophylaxis | - | ROUTINE | ROUTINE | - |
+| Glycopyrrolate (sialorrhea) | PO | Excessive drooling/sialorrhea -- common in advanced CJD with bulbar dysfunction | 1 mg :: PO :: TID :: Start 1 mg PO TID; increase to 2 mg TID as needed | Narrow-angle glaucoma; urinary retention; GI obstruction | Anticholinergic effects; urinary retention; constipation; dry mouth | - | ROUTINE | ROUTINE | - |
+| Hyoscine (scopolamine) patch (sialorrhea) | TOP | Alternative for sialorrhea management when oral medications difficult due to dysphagia | 1.5 mg :: TOP :: q72h :: Apply 1 transdermal patch behind ear every 72 hours; rotate ears | Narrow-angle glaucoma; urinary retention | Confusion (may worsen); dry mouth; urinary retention | - | ROUTINE | ROUTINE | - |
+| Ondansetron (nausea) | IV | Nausea and vomiting -- may occur with brainstem involvement or medication side effects | 4 mg :: IV :: q8h PRN :: 4 mg IV q8h PRN; or 4-8 mg PO q8h PRN | QTc prolongation; severe hepatic impairment | QTc if repeated dosing | URGENT | ROUTINE | ROUTINE | URGENT |
+| Docusate + senna (constipation prophylaxis) | PO | Constipation prevention -- universal need with immobility and opioid use | 100 mg :: PO :: BID :: Docusate 100 mg PO BID + senna 8.6 mg PO BID; titrate senna to effect | Bowel obstruction | Bowel frequency; abdominal distension | - | ROUTINE | ROUTINE | - |
+| Polyethylene glycol (PEG 3350) (constipation) | PO | Constipation refractory to docusate/senna | 17 g :: PO :: daily :: 17 g PO daily in 8 oz water; may increase to BID | Bowel obstruction; ileus | Bowel frequency; electrolytes if prolonged use | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Palliative Care Interventions
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Comfort-focused care transition | - | All confirmed CJD patients -- initiate goals of care discussion at diagnosis; median survival 5-6 months for sCJD | Goals of care discussion; advance directive completion; POLST/MOLST completion; hospice referral when appropriate | None | Goals of care revisited at each visit; functional status; caregiver burden | URGENT | STAT | ROUTINE | STAT |
-| Hospice enrollment | - | Prognosis <6 months (applies to most sCJD at diagnosis); patient/family ready for comfort-focused approach | Per hospice agency; home hospice preferred if safe; inpatient hospice if symptoms uncontrolled or caregiver unable | Patient/family not ready; still pursuing curative workup for non-CJD diagnosis | Comfort; family coping; symptom control | - | ROUTINE | ROUTINE | - |
-| Discontinuation of non-essential medications | PO | Medication reconciliation -- stop statins, antihypertensives, diabetes medications, preventive therapies that no longer serve goals of care | Gradual taper or discontinuation per clinical judgment | Do not abruptly stop benzodiazepines, opioids, or anticonvulsants (taper if discontinuing) | Comfort; symptom control after medication changes | - | ROUTINE | ROUTINE | - |
+| Comfort-focused care transition | - | All confirmed CJD patients -- initiate goals of care discussion at diagnosis; median survival 5-6 months for sCJD | - :: - :: - :: Goals of care discussion; advance directive completion; POLST/MOLST completion; hospice referral when appropriate | None | Goals of care revisited at each visit; functional status; caregiver burden | URGENT | STAT | ROUTINE | STAT |
+| Hospice enrollment | - | Prognosis <6 months (applies to most sCJD at diagnosis); patient/family ready for comfort-focused approach | - :: - :: - :: Per hospice agency; home hospice preferred if safe; inpatient hospice if symptoms uncontrolled or caregiver unable | Patient/family not ready; still pursuing curative workup for non-CJD diagnosis | Comfort; family coping; symptom control | - | ROUTINE | ROUTINE | - |
+| Discontinuation of non-essential medications | PO | Medication reconciliation -- stop statins, antihypertensives, diabetes medications, preventive therapies that no longer serve goals of care | - :: - :: - :: Gradual taper or discontinuation per clinical judgment | Do not abruptly stop benzodiazepines, opioids, or anticonvulsants (taper if discontinuing) | Comfort; symptom control after medication changes | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -237,34 +238,37 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient and Family Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| CJD is NOT contagious through casual contact, sharing meals, kissing, or caring for the patient -- standard household precautions are sufficient; no isolation needed at home | ROUTINE | ROUTINE | ROUTINE |
-| CJD has no cure or disease-modifying treatment; management focuses entirely on comfort, symptom control, and quality of life | ROUTINE | ROUTINE | ROUTINE |
-| Return to ED immediately if new seizures, choking/aspiration, inability to swallow, high fever, or sudden worsening of symptoms | STAT | STAT | ROUTINE |
-| Complete advance directives and healthcare power of attorney EARLY while patient can still participate in decision-making (capacity declines rapidly in CJD) | URGENT | URGENT | ROUTINE |
-| Do NOT drive at any point after CJD diagnosis due to progressive cognitive and motor impairment | ROUTINE | ROUTINE | ROUTINE |
-| Ensure 24/7 supervision due to fall risk, wandering, impaired judgment, and progressive functional decline | - | ROUTINE | ROUTINE |
-| Notify all surgical, dental, and medical providers of CJD diagnosis -- special instrument sterilization or single-use instruments required for any invasive procedure | - | ROUTINE | ROUTINE |
-| Blood, organ, and tissue donation is NOT permitted with CJD diagnosis | - | ROUTINE | ROUTINE |
-| Contact the CJD Foundation (1-800-659-1991 or www.cjdfoundation.org) for family support resources, educational materials, and peer support groups | - | ROUTINE | ROUTINE |
-| Autopsy is strongly encouraged for definitive diagnosis, disease surveillance, and scientific research -- discuss with NPDPSC early; autopsy is provided at no cost through the Surveillance Center | - | ROUTINE | ROUTINE |
-| Familial CJD: first-degree relatives should be offered genetic counseling and PRNP testing if mutation identified in proband | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| CJD is NOT contagious through casual contact, sharing meals, kissing, or caring for the patient -- standard household precautions are sufficient; no isolation needed at home | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| CJD has no cure or disease-modifying treatment; management focuses entirely on comfort, symptom control, and quality of life | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Return to ED immediately if new seizures, choking/aspiration, inability to swallow, high fever, or sudden worsening of symptoms | STAT | STAT | ROUTINE | - |
+| Complete advance directives and healthcare power of attorney EARLY while patient can still participate in decision-making (capacity declines rapidly in CJD) | URGENT | URGENT | ROUTINE | URGENT |
+| Do NOT drive at any point after CJD diagnosis due to progressive cognitive and motor impairment | ROUTINE | ROUTINE | ROUTINE | - |
+| Ensure 24/7 supervision due to fall risk, wandering, impaired judgment, and progressive functional decline | - | ROUTINE | ROUTINE | ROUTINE |
+| Notify all surgical, dental, and medical providers of CJD diagnosis -- special instrument sterilization or single-use instruments required for any invasive procedure | - | ROUTINE | ROUTINE | ROUTINE |
+| Blood, organ, and tissue donation is NOT permitted with CJD diagnosis | - | ROUTINE | ROUTINE | ROUTINE |
+| Contact the CJD Foundation (1-800-659-1991 or www.cjdfoundation.org) for family support resources, educational materials, and peer support groups | - | ROUTINE | ROUTINE | - |
+| Autopsy is strongly encouraged for definitive diagnosis, disease surveillance, and scientific research -- discuss with NPDPSC early; autopsy is provided at no cost through the Surveillance Center | - | ROUTINE | ROUTINE | - |
+| Familial CJD: first-degree relatives should be offered genetic counseling and PRNP testing if mutation identified in proband | - | ROUTINE | ROUTINE | - |
 
-### 4C. Infection Control & Safety
+### 4C. Infection Control, Safety & Lifestyle
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Standard precautions only for routine patient care (gloves, gown as needed); CJD is NOT transmitted by respiratory droplets, blood, urine, or feces in normal care | ROUTINE | ROUTINE | ROUTINE |
-| Prion decontamination for surgical instruments: instruments contacting high-infectivity tissues (brain, spinal cord, eye) must be destroyed or undergo WHO-recommended decontamination (1N NaOH for 1 hour followed by autoclaving at 134 degrees C for 1 hour in a gravity displacement autoclave) | ROUTINE | ROUTINE | ROUTINE |
-| Standard sterilization is INSUFFICIENT for prion decontamination -- conventional autoclaving, ethylene oxide, formaldehyde, alcohol, and UV do not reliably inactivate prions | ROUTINE | ROUTINE | ROUTINE |
-| Single-use disposable instruments recommended for any invasive procedure on confirmed or suspected CJD patients | ROUTINE | ROUTINE | ROUTINE |
-| Avoid LP needle reuse; dispose of all LP supplies as biohazard (standard practice) | ROUTINE | ROUTINE | - |
-| CSF handling: standard laboratory precautions are adequate; prion concentration in CSF is very low; gloves and eye protection for splash risk | ROUTINE | ROUTINE | ROUTINE |
-| Endoscopy in CJD patients: use disposable accessories where possible; standard endoscope reprocessing may be insufficient for prion decontamination -- consult infection control | - | ROUTINE | ROUTINE |
-| Fall prevention measures: bed alarm, non-slip surfaces, grab bars, low bed, hip protectors for patients with gait instability and myoclonus | ROUTINE | ROUTINE | ROUTINE |
-| Aspiration precautions: head of bed elevated 30 degrees; thickened liquids if dysphagia present; SLP evaluation for safe diet recommendations | - | ROUTINE | ROUTINE |
-| Skin integrity: frequent repositioning every 2 hours; pressure-relieving mattress; skin assessment daily for immobile patients | - | ROUTINE | - |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Standard precautions only for routine patient care (gloves, gown as needed); CJD is NOT transmitted by respiratory droplets, blood, urine, or feces in normal care | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Prion decontamination for surgical instruments: instruments contacting high-infectivity tissues (brain, spinal cord, eye) must be destroyed or undergo WHO-recommended decontamination (1N NaOH for 1 hour followed by autoclaving at 134 degrees C for 1 hour in a gravity displacement autoclave) | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Standard sterilization is INSUFFICIENT for prion decontamination -- conventional autoclaving, ethylene oxide, formaldehyde, alcohol, and UV do not reliably inactivate prions | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Single-use disposable instruments recommended for any invasive procedure on confirmed or suspected CJD patients | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Avoid LP needle reuse; dispose of all LP supplies as biohazard (standard practice) | ROUTINE | ROUTINE | - | ROUTINE |
+| CSF handling: standard laboratory precautions are adequate; prion concentration in CSF is very low; gloves and eye protection for splash risk | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Endoscopy in CJD patients: use disposable accessories where possible; standard endoscope reprocessing may be insufficient for prion decontamination -- consult infection control | - | ROUTINE | ROUTINE | ROUTINE |
+| Fall prevention measures: bed alarm, non-slip surfaces, grab bars, low bed, hip protectors for patients with gait instability and myoclonus | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Aspiration precautions: head of bed elevated 30 degrees; thickened liquids if dysphagia present; SLP evaluation for safe diet recommendations | - | ROUTINE | ROUTINE | ROUTINE |
+| Skin integrity: frequent repositioning every 2 hours; pressure-relieving mattress; skin assessment daily for immobile patients | - | ROUTINE | ROUTINE | ROUTINE |
+| Caregiver self-care: encourage caregivers to maintain their own medical appointments, sleep hygiene, nutrition, and social connections; connect with respite care services and CJD Foundation peer support groups | - | ROUTINE | ROUTINE | - |
+| Home safety modifications: remove tripping hazards (rugs, cords); install grab bars in bathroom; ensure adequate lighting; consider hospital bed for advanced disease; secure medications and hazardous items | - | ROUTINE | ROUTINE | - |
+| Maintain structured daily routine with consistent sleep-wake schedule, regular mealtimes, and familiar environment to reduce confusion and agitation | - | ROUTINE | ROUTINE | - |
 
 ═══════════════════════════════════════════════════════════════
 SECTION B: REFERENCE (Expand as Needed)
@@ -344,6 +348,20 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Fixed structured dosing format across all treatment sections (3A, 3B, 3C) to use standard `[dose] :: [route] :: [frequency] :: [full_instructions]` pattern per C1/C2/C3/M1
+- Reordered lab table columns (1A, 1B, 1C) to place venue columns (ED/HOSP/OPD/ICU) last per style guide per R8
+- Reordered imaging table columns (2A, 2B, 2C) to place venue columns last per style guide
+- Added ICU column to LP table with appropriate priorities per S1/R2
+- Reordered LP table columns to place venue columns last per R9
+- Added ICU column to Section 4B (Patient and Family Instructions) per S2/R3
+- Added ICU column to Section 4C with appropriate priorities per S3/R3
+- Renamed Section 4C from "Infection Control & Safety" to "Infection Control, Safety & Lifestyle" per R4
+- Added 3 lifestyle/prevention recommendations to Section 4C (caregiver self-care, home safety modifications, structured daily routine) per R5
+- Fixed Haloperidol redundant dosing field (removed duplicate dose range) per M3/R6
+- Standardized Section 3D palliative care entries with structured dosing format per M4/R7
+- Fixed Morphine oral monitoring field (removed cross-reference "Same as IV morphine")
 
 **v1.0 (January 30, 2026)**
 - Initial template creation

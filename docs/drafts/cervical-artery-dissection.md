@@ -1,7 +1,7 @@
 ---
 title: "Cervical Artery Dissection"
 description: "Clinical decision support for carotid and vertebral artery dissection diagnosis and management"
-version: "1.0"
+version: "1.1"
 status: draft
 setting: "ED, HOSP, OPD, ICU"
 tags:
@@ -22,8 +22,9 @@ tags:
 
 # Cervical Artery Dissection
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -133,11 +134,11 @@ SECTION A: ACTION ITEMS
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | IV alteplase (tPA) | IV | Acute ischemic stroke within 4.5h of last known well due to dissection-related embolism | 0.9 mg/kg :: IV :: once :: 0.9 mg/kg IV (max 90 mg); 10% as bolus over 1 min, remaining 90% infused over 60 min. Dissection is NOT a contraindication to IV tPA if within window | Standard tPA exclusions: >4.5h from last known well; BP >185/110 despite treatment; platelets <100K; INR >1.7; active bleeding; intracranial hemorrhage; intracranial dissection with SAH | Neuro checks q15min during infusion, q30min x 6h, then q1h x 18h; BP q15min x 2h, q30min x 6h; hold anticoagulants/antiplatelets 24h post-tPA | STAT | STAT | - | STAT |
 | Tenecteplase IV | IV | Acute ischemic stroke with LVO from dissection; preferred if thrombectomy planned | 0.25 mg/kg :: IV :: once :: 0.25 mg/kg IV single bolus (max 25 mg); preferred over alteplase if LVO planned for thrombectomy | Same as alteplase | Same as alteplase | STAT | STAT | - | STAT |
-| Endovascular thrombectomy | Endovascular | Large vessel occlusion from dissection-related embolism or in-situ thrombosis; within 24h if eligible per DAWN/DEFUSE-3 criteria | Mechanical thrombectomy for LVO (ICA, M1, basilar); stenting of dissection considered on case-by-case basis | Large established infarct (ASPECTS <6 in 0-6h window); no LVO; poor premorbid function (mRS >2) | Continuous neuro-ICU monitoring post-procedure; groin check; BP per post-thrombectomy protocol | STAT | STAT | - | STAT |
-| Heparin IV infusion (therapeutic) | IV | Acute dissection with high embolic risk: free-floating thrombus, crescendo TIA, recurrent embolic events despite antiplatelet, critical flow-limiting stenosis | 60-80 units/kg bolus; 12-18 units/kg/h :: IV :: continuous :: Bolus 60-80 units/kg (max 5000 units); infusion 12-18 units/kg/h; target aPTT 1.5-2.5x control (typically 60-80 sec) | Active hemorrhagic infarct; intracranial dissection with SAH; large completed infarct (hemorrhagic transformation risk); uncontrolled BP; active bleeding | aPTT q6h until stable, then q12-24h; platelets q3 days (HIT surveillance); daily neuro checks; signs of bleeding | STAT | STAT | - | STAT |
-| Aspirin loading dose | PO/PR | Acute dissection without stroke or with minor ischemic stroke; first-line antiplatelet per CADISS trial | 325 mg :: PO :: once :: 325 mg PO/PR loading dose; if tPA was given, wait 24h and obtain CT head before starting. Transition to maintenance 81-325 mg daily | Active GI bleeding; true aspirin allergy; within 24h of tPA (wait for post-tPA CT) | GI symptoms; bleeding signs | STAT | STAT | - | STAT |
-| Blood pressure management: Labetalol IV | IV | BP control in acute dissection with stroke; target BP <185/110 if tPA candidate; permissive hypertension if no tPA | 10-20 mg :: IV :: q10-20min PRN :: 10-20 mg IV over 1-2 min; may repeat q10-20min; max 300 mg. Target: <185/110 pre-tPA; <180/105 post-tPA; <220/120 if no tPA | Heart block (2nd/3rd degree); severe bradycardia; decompensated HF; asthma/severe COPD | Heart rate; BP continuous monitoring | STAT | STAT | - | STAT |
-| Blood pressure management: Nicardipine IV | IV | Continuous BP control in acute dissection with stroke or severe hypertension | 5 mg/h :: IV :: continuous :: 5 mg/h IV infusion; increase by 2.5 mg/h q5-15min; max 15 mg/h | Severe aortic stenosis | BP continuous monitoring; headache and flushing common | STAT | STAT | - | STAT |
+| Endovascular thrombectomy | Endovascular | Large vessel occlusion from dissection-related embolism or in-situ thrombosis; within 24h if eligible per DAWN/DEFUSE-3 criteria | N/A :: Endovascular :: once :: Mechanical thrombectomy for LVO (ICA, M1, basilar); stenting of dissection considered on case-by-case basis | Large established infarct (ASPECTS <6 in 0-6h window); no LVO; poor premorbid function (mRS >2) | Continuous neuro-ICU monitoring post-procedure; groin check; BP per post-thrombectomy protocol | STAT | STAT | - | STAT |
+| Heparin IV infusion (therapeutic) | IV | Acute dissection with high embolic risk: free-floating thrombus, crescendo TIA, recurrent embolic events despite antiplatelet, critical flow-limiting stenosis | 60-80 units/kg :: IV :: continuous :: Bolus 60-80 units/kg (max 5000 units); then infusion 12-18 units/kg/h; target aPTT 1.5-2.5x control (typically 60-80 sec) | Active hemorrhagic infarct; intracranial dissection with SAH; large completed infarct (hemorrhagic transformation risk); uncontrolled BP; active bleeding | aPTT q6h until stable, then q12-24h; platelets q3 days (HIT surveillance); daily neuro checks; signs of bleeding | STAT | STAT | - | STAT |
+| Aspirin loading dose | PO | Acute dissection without stroke or with minor ischemic stroke; first-line antiplatelet per CADISS trial | 325 mg :: PO :: once :: 325 mg PO/PR loading dose; if tPA was given, wait 24h and obtain CT head before starting. Transition to maintenance 81-325 mg daily | Active GI bleeding; true aspirin allergy; within 24h of tPA (wait for post-tPA CT) | GI symptoms; bleeding signs | STAT | STAT | - | STAT |
+| Labetalol IV | IV | BP control in acute dissection with stroke; target BP <185/110 if tPA candidate; permissive hypertension if no tPA | 10-20 mg :: IV :: q10-20min PRN :: 10-20 mg IV over 1-2 min; may repeat q10-20min; max 300 mg. Target: <185/110 pre-tPA; <180/105 post-tPA; <220/120 if no tPA | Heart block (2nd/3rd degree); severe bradycardia; decompensated HF; asthma/severe COPD | Heart rate; BP continuous monitoring | STAT | STAT | - | STAT |
+| Nicardipine IV | IV | Continuous BP control in acute dissection with stroke or severe hypertension | 5 mg/h :: IV :: continuous :: 5 mg/h IV infusion; increase by 2.5 mg/h q5-15min; max 15 mg/h | Severe aortic stenosis | BP continuous monitoring; headache and flushing common | STAT | STAT | - | STAT |
 | IV normal saline | IV | Isotonic fluid resuscitation and maintenance in acute dissection | 125-150 mL/h :: IV :: continuous :: Isotonic fluids; avoid hypotonic solutions (cerebral edema risk); avoid dextrose-containing fluids (hyperglycemia worsens ischemic outcomes) | Volume overload | I/O; electrolytes | STAT | STAT | - | STAT |
 | Supplemental oxygen | INH | Maintain oxygenation in acute stroke from dissection | 2-4 L/min :: INH :: continuous :: Only if SpO2 <94%; nasal cannula or mask as needed; target SpO2 >=94% | Not applicable | SpO2 continuous monitoring; avoid routine supplemental O2 if normoxic | STAT | STAT | - | STAT |
 
@@ -145,37 +146,37 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Acetaminophen | PO | Headache and neck pain from dissection; fever management (temperature >38C worsens ischemic outcomes) | 650-1000 mg q6h :: PO :: q6h :: 650-1000 mg PO q6h PRN; max 4g/day (2g if hepatic impairment) | Severe hepatic disease | Temperature; LFTs if prolonged use; pain assessment | STAT | STAT | ROUTINE | STAT |
-| Ibuprofen | PO | Headache and neck pain from dissection if not on anticoagulation; short-term use only | 400-600 mg q6-8h :: PO :: q6-8h :: 400-600 mg PO q6-8h PRN with food; max 2400 mg/day; limit to <7 days | Concurrent anticoagulation (increased bleeding risk); GI bleeding history; renal impairment; concurrent aspirin (may reduce antiplatelet efficacy) | GI symptoms; renal function; bleeding signs | URGENT | ROUTINE | ROUTINE | - |
-| Gabapentin | PO | Neuropathic pain (Horner syndrome-associated pain, persistent neck/face pain) | 300 mg qHS; 300 mg TID; 600 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q1-3 days; target 900-1800 mg/day divided TID; max 3600 mg/day | Renal impairment (adjust dose for CrCl <60) | Sedation; dizziness; peripheral edema; renal function | - | ROUTINE | ROUTINE | - |
-| Ondansetron | IV/PO | Nausea and vomiting (vertebral dissection with posterior circulation symptoms) | 4 mg q6h PRN :: IV :: q6h :: 4 mg IV/PO q6h PRN nausea | QT prolongation; serotonin syndrome risk | QTc if risk factors | URGENT | ROUTINE | ROUTINE | URGENT |
-| Meclizine | PO | Vertigo from vertebral artery dissection with posterior circulation ischemia | 25 mg q6-8h PRN :: PO :: q6-8h :: 25 mg PO q6-8h PRN vertigo; short-term use only (may mask central symptoms) | Glaucoma; urinary retention | Sedation; anticholinergic effects; monitor for central vertigo signs | URGENT | ROUTINE | ROUTINE | - |
-| Enoxaparin (prophylactic) | SC | DVT prophylaxis if not on therapeutic anticoagulation and limited mobility | 40 mg daily :: SC :: daily :: 40 mg SC daily; start within 24-48h; hold if on therapeutic anticoagulation | Active bleeding; platelets <50K; CrCl <30 (use UFH 5000 units SC q8-12h instead) | Platelets q3 days; renal function | - | ROUTINE | - | ROUTINE |
-| Pneumatic compression devices | Mechanical | DVT prophylaxis (non-pharmacologic); use in addition to or instead of pharmacologic prophylaxis | Apply to both lower extremities immediately on admission | Acute DVT in lower extremity; severe peripheral vascular disease | Skin checks daily | STAT | STAT | - | STAT |
-| Pantoprazole | IV/PO | GI prophylaxis for patients on antithrombotic therapy; stress ulcer prevention | 40 mg daily :: PO :: daily :: 40 mg IV/PO daily | C. difficile risk with prolonged use | GI symptoms | - | ROUTINE | ROUTINE | ROUTINE |
+| Acetaminophen | PO | Headache and neck pain from dissection; fever management (temperature >38C worsens ischemic outcomes) | 650-1000 mg :: PO :: q6h PRN :: 650-1000 mg PO q6h PRN; max 4g/day (2g if hepatic impairment) | Severe hepatic disease | Temperature; LFTs if prolonged use; pain assessment | STAT | STAT | ROUTINE | STAT |
+| Ibuprofen | PO | Headache and neck pain from dissection if not on anticoagulation; short-term use only | 400-600 mg :: PO :: q6-8h PRN :: 400-600 mg PO q6-8h PRN with food; max 2400 mg/day; limit to <7 days | Concurrent anticoagulation (increased bleeding risk); GI bleeding history; renal impairment; concurrent aspirin (may reduce antiplatelet efficacy) | GI symptoms; renal function; bleeding signs | URGENT | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | Neuropathic pain (Horner syndrome-associated pain, persistent neck/face pain) | 300 mg :: PO :: qHS :: Start 300 mg PO qHS; titrate by 300 mg q1-3 days; target 900-1800 mg/day divided TID; max 3600 mg/day | Renal impairment (adjust dose for CrCl <60) | Sedation; dizziness; peripheral edema; renal function | - | ROUTINE | ROUTINE | - |
+| Ondansetron | IV | Nausea and vomiting (vertebral dissection with posterior circulation symptoms) | 4 mg :: IV :: q6h PRN :: 4 mg IV/PO q6h PRN nausea | QT prolongation; serotonin syndrome risk | QTc if risk factors | URGENT | ROUTINE | ROUTINE | URGENT |
+| Meclizine | PO | Vertigo from vertebral artery dissection with posterior circulation ischemia | 25 mg :: PO :: q6-8h PRN :: 25 mg PO q6-8h PRN vertigo; short-term use only (may mask central symptoms) | Glaucoma; urinary retention | Sedation; anticholinergic effects; monitor for central vertigo signs | URGENT | ROUTINE | ROUTINE | - |
+| Enoxaparin (prophylactic) | SC | DVT prophylaxis if not on therapeutic anticoagulation and limited mobility | 40 mg :: SC :: daily :: 40 mg SC daily; start within 24-48h; hold if on therapeutic anticoagulation | Active bleeding; platelets <50K; CrCl <30 (use UFH 5000 units SC q8-12h instead) | Platelets q3 days; renal function | - | ROUTINE | - | ROUTINE |
+| Pneumatic compression devices | Mechanical | DVT prophylaxis (non-pharmacologic); use in addition to or instead of pharmacologic prophylaxis | N/A :: Mechanical :: continuous :: Apply to both lower extremities immediately on admission | Acute DVT in lower extremity; severe peripheral vascular disease | Skin checks daily | STAT | STAT | - | STAT |
+| Pantoprazole | PO | GI prophylaxis for patients on antithrombotic therapy; stress ulcer prevention | 40 mg :: PO :: daily :: 40 mg IV/PO daily | C. difficile risk with prolonged use | GI symptoms | - | ROUTINE | ROUTINE | ROUTINE |
 
 ### 3C. Second-line/Refractory
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Dual antiplatelet therapy: Aspirin + Clopidogrel | PO | High-risk dissection with minor stroke (NIHSS <=3) or recurrent TIA on single antiplatelet; short-term use (21-90 days) | 81 mg daily + 75 mg daily :: PO :: daily :: Aspirin 81 mg daily + Clopidogrel 75 mg daily x 21-90 days; load clopidogrel 300 mg if not previously on it; then transition to single antiplatelet | Major stroke (NIHSS >3); high bleeding risk; planned surgery | Bleeding signs; CBC monthly | - | URGENT | ROUTINE | - |
-| Enoxaparin (therapeutic) | SC | Bridge from IV heparin to oral anticoagulation; alternative to IV heparin in stable dissection with embolic risk | 1 mg/kg q12h :: SC :: q12h :: 1 mg/kg SC q12h; adjust for renal function (1 mg/kg daily if CrCl 15-30); bridge to warfarin if needed | Active bleeding; CrCl <15; HIT; large hemorrhagic infarct | Anti-Xa levels (target 0.5-1.0 IU/mL); platelets q3 days; renal function | - | ROUTINE | ROUTINE | ROUTINE |
-| Warfarin | PO | Dissection with high embolic risk when anticoagulation chosen over antiplatelet; CADISS trial showed equivalent outcomes | 5 mg daily :: PO :: daily :: Start 5 mg PO daily (2-3 mg if elderly, low weight, or drug interactions); target INR 2.0-3.0; overlap with heparin bridge until INR therapeutic x 2 consecutive days | Active bleeding; pregnancy (teratogenic); severe hepatic disease; inability to monitor INR | INR daily until stable, then weekly, then monthly; diet counseling (vitamin K consistency); bleeding signs | - | ROUTINE | ROUTINE | - |
-| Carotid/vertebral artery stenting | Endovascular | Refractory ischemia despite optimal antithrombotic therapy; symptomatic recurrent stenosis; expanding pseudoaneurysm with embolic events | Case-by-case basis; endovascular stenting of dissected segment; dual antiplatelet pre- and post-procedure | Active hemorrhage; vascular Ehlers-Danlos (extreme caution — vessel fragility); vessel too tortuous for access | Post-procedure: continuous neuro monitoring x 24h; dual antiplatelet compliance; follow-up imaging at 1, 3, 6 months | - | EXT | - | EXT |
-| Osmotherapy: Mannitol 20% | IV | Acute cerebral edema from large territory infarct due to dissection-related stroke | 1-1.5 g/kg bolus; 0.25-0.5 g/kg q4-6h :: IV :: q4-6h :: 1-1.5 g/kg IV bolus for acute herniation; 0.25-0.5 g/kg q4-6h maintenance | Anuria; severe dehydration | Serum osmolality (hold if >320 mOsm/kg); osmolar gap; renal function; I/O | - | - | - | STAT |
-| Hypertonic saline 23.4% | IV | Acute herniation from massive stroke due to dissection-related occlusion | 30 mL via central line :: IV :: once :: 30 mL IV bolus via central line over 10-20 min for acute herniation | No central access for 23.4%; hypokalemia | Serum sodium (target 145-155 mEq/L); osmolality; central line integrity | - | - | - | STAT |
-| Decompressive craniectomy | Surgical | Malignant MCA infarction from carotid dissection with complete ICA occlusion and poor collaterals | Surgery within 48h of onset; age <60 preferred; >50% MCA territory infarct; reduces mortality from 70-80% to ~20% | Bilateral infarcts; hemorrhagic transformation; age >60 (relative) | Post-operative neuro checks; ICP monitoring; wound care | - | - | - | STAT |
+| Aspirin + Clopidogrel (DAPT) | PO | High-risk dissection with minor stroke (NIHSS <=3) or recurrent TIA on single antiplatelet; short-term use (21-90 days) | 81 mg + 75 mg :: PO :: daily :: Aspirin 81 mg daily + Clopidogrel 75 mg daily x 21-90 days; load clopidogrel 300 mg if not previously on it; then transition to single antiplatelet | Major stroke (NIHSS >3); high bleeding risk; planned surgery | Bleeding signs; CBC monthly | - | URGENT | ROUTINE | - |
+| Enoxaparin (therapeutic) | SC | Bridge from IV heparin to oral anticoagulation; alternative to IV heparin in stable dissection with embolic risk | 1 mg/kg :: SC :: q12h :: 1 mg/kg SC q12h; adjust for renal function (1 mg/kg daily if CrCl 15-30); bridge to warfarin if needed | Active bleeding; CrCl <15; HIT; large hemorrhagic infarct | Anti-Xa levels (target 0.5-1.0 IU/mL); platelets q3 days; renal function | - | ROUTINE | ROUTINE | ROUTINE |
+| Warfarin | PO | Dissection with high embolic risk when anticoagulation chosen over antiplatelet; CADISS trial showed equivalent outcomes | 5 mg :: PO :: daily :: Start 5 mg PO daily (2-3 mg if elderly, low weight, or drug interactions); target INR 2.0-3.0; overlap with heparin bridge until INR therapeutic x 2 consecutive days | Active bleeding; pregnancy (teratogenic); severe hepatic disease; inability to monitor INR | INR daily until stable, then weekly, then monthly; diet counseling (vitamin K consistency); bleeding signs | - | ROUTINE | ROUTINE | - |
+| Carotid/vertebral artery stenting | Endovascular | Refractory ischemia despite optimal antithrombotic therapy; symptomatic recurrent stenosis; expanding pseudoaneurysm with embolic events | N/A :: Endovascular :: once :: Endovascular stenting of dissected segment; case-by-case basis; dual antiplatelet pre- and post-procedure | Active hemorrhage; vascular Ehlers-Danlos (extreme caution — vessel fragility); vessel too tortuous for access | Post-procedure: continuous neuro monitoring x 24h; dual antiplatelet compliance; follow-up imaging at 1, 3, 6 months | - | EXT | - | EXT |
+| Mannitol 20% | IV | Acute cerebral edema from large territory infarct due to dissection-related stroke | 1-1.5 g/kg :: IV :: once :: 1-1.5 g/kg IV bolus for acute herniation; then 0.25-0.5 g/kg q4-6h maintenance | Anuria; severe dehydration | Serum osmolality (hold if >320 mOsm/kg); osmolar gap; renal function; I/O | - | - | - | STAT |
+| Hypertonic saline 23.4% | IV | Acute herniation from massive stroke due to dissection-related occlusion | 30 mL :: IV :: once :: 30 mL IV bolus via central line over 10-20 min for acute herniation | No central access for 23.4%; hypokalemia | Serum sodium (target 145-155 mEq/L); osmolality; central line integrity | - | - | - | STAT |
+| Decompressive craniectomy | Surgical | Malignant MCA infarction from carotid dissection with complete ICA occlusion and poor collaterals | N/A :: Surgical :: once :: Surgery within 48h of onset; age <60 preferred; >50% MCA territory infarct; reduces mortality from 70-80% to ~20% | Bilateral infarcts; hemorrhagic transformation; age >60 (relative) | Post-operative neuro checks; ICP monitoring; wound care | - | - | - | STAT |
 
 ### 3D. Disease-Modifying / Chronic Therapies
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Aspirin (maintenance) | PO | Long-term secondary stroke prevention post-dissection; first-line per CADISS trial equivalence data | 81-325 mg daily :: PO :: daily :: 81 mg PO daily preferred for long-term use; 325 mg daily acceptable; duration minimum 3-6 months; many neurologists continue indefinitely if vascular risk factors present | Baseline CBC; renal function | Active GI bleeding; true aspirin allergy | GI symptoms; annual CBC; bleeding assessment at follow-up | - | ROUTINE | ROUTINE | - |
-| Clopidogrel (maintenance) | PO | Alternative antiplatelet for aspirin-intolerant patients; long-term secondary prevention post-dissection | 75 mg daily :: PO :: daily :: 75 mg PO daily; duration minimum 3-6 months; if aspirin intolerant, may use long-term | Baseline CBC | Active pathologic bleeding; hypersensitivity to clopidogrel | CBC; bleeding assessment; bruising | - | ROUTINE | ROUTINE | - |
-| Apixaban | PO | Dissection with concurrent atrial fibrillation; alternative anticoagulant if warfarin not preferred | 5 mg BID; 2.5 mg BID :: PO :: BID :: 5 mg PO BID standard dose; 2.5 mg BID if >=2 of: age >=80, weight <=60 kg, Cr >=1.5; for concurrent AF or physician preference for anticoagulation strategy | Renal function; hepatic function; CBC | Active pathologic bleeding; prosthetic heart valve | Renal function q6-12 months; bleeding signs; CBC | - | ROUTINE | ROUTINE | - |
-| Atorvastatin | PO | Vascular risk reduction; secondary stroke prevention in dissection patients with atherosclerotic risk factors | 40-80 mg daily :: PO :: daily :: 40-80 mg PO daily; high-intensity statin therapy for secondary stroke prevention | Baseline LFTs; lipid panel | Active liver disease; pregnancy; breastfeeding | LFTs at 12 weeks then annually; lipid panel at 4-12 weeks; CK if myalgia | - | ROUTINE | ROUTINE | - |
-| Lisinopril | PO | Blood pressure management for secondary stroke prevention; target BP <130/80 after acute phase | 5-10 mg daily; 20 mg daily; 40 mg daily :: PO :: daily :: Start 5-10 mg PO daily; titrate to 20-40 mg daily; target BP <130/80 | Baseline Cr; K+ | Bilateral renal artery stenosis; angioedema history; pregnancy | Cr and K+ at 1-2 weeks; BP at follow-up visits | - | ROUTINE | ROUTINE | - |
-| Amlodipine | PO | Alternative or adjunctive antihypertensive for secondary stroke prevention | 5 mg daily; 10 mg daily :: PO :: daily :: Start 5 mg PO daily; max 10 mg daily | None required | Severe aortic stenosis (relative) | BP; peripheral edema | - | ROUTINE | ROUTINE | - |
+| Aspirin (maintenance) | PO | Long-term secondary stroke prevention post-dissection; first-line per CADISS trial equivalence data | 81 mg :: PO :: daily :: 81 mg PO daily preferred for long-term use; 325 mg daily acceptable; duration minimum 3-6 months; many neurologists continue indefinitely if vascular risk factors present | Baseline CBC; renal function | Active GI bleeding; true aspirin allergy | GI symptoms; annual CBC; bleeding assessment at follow-up | - | ROUTINE | ROUTINE | - |
+| Clopidogrel (maintenance) | PO | Alternative antiplatelet for aspirin-intolerant patients; long-term secondary prevention post-dissection | 75 mg :: PO :: daily :: 75 mg PO daily; duration minimum 3-6 months; if aspirin intolerant, may use long-term | Baseline CBC | Active pathologic bleeding; hypersensitivity to clopidogrel | CBC; bleeding assessment; bruising | - | ROUTINE | ROUTINE | - |
+| Apixaban | PO | Dissection with concurrent atrial fibrillation; alternative anticoagulant if warfarin not preferred | 5 mg :: PO :: BID :: 5 mg PO BID standard dose; 2.5 mg BID if >=2 of: age >=80, weight <=60 kg, Cr >=1.5; for concurrent AF or physician preference for anticoagulation strategy | Renal function; hepatic function; CBC | Active pathologic bleeding; prosthetic heart valve | Renal function q6-12 months; bleeding signs; CBC | - | ROUTINE | ROUTINE | - |
+| Atorvastatin | PO | Vascular risk reduction; secondary stroke prevention in dissection patients with atherosclerotic risk factors | 40-80 mg :: PO :: daily :: 40-80 mg PO daily; high-intensity statin therapy for secondary stroke prevention | Baseline LFTs; lipid panel | Active liver disease; pregnancy; breastfeeding | LFTs at 12 weeks then annually; lipid panel at 4-12 weeks; CK if myalgia | - | ROUTINE | ROUTINE | - |
+| Lisinopril | PO | Blood pressure management for secondary stroke prevention; target BP <130/80 after acute phase | 5-10 mg :: PO :: daily :: Start 5-10 mg PO daily; titrate to 20-40 mg daily; target BP <130/80 | Baseline Cr; K+ | Bilateral renal artery stenosis; angioedema history; pregnancy | Cr and K+ at 1-2 weeks; BP at follow-up visits | - | ROUTINE | ROUTINE | - |
+| Amlodipine | PO | Alternative or adjunctive antihypertensive for secondary stroke prevention | 5 mg :: PO :: daily :: Start 5 mg PO daily; max 10 mg daily | None required | Severe aortic stenosis (relative) | BP; peripheral edema | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -201,34 +202,34 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Call 911 immediately if new or worsening symptoms: sudden weakness, numbness, vision changes, speech difficulty, severe headache, loss of balance (may indicate stroke from dissection) | STAT | STAT | ROUTINE |
-| Do NOT drive until cleared by neurology (minimum 2 weeks; Horner syndrome may affect vision) | URGENT | URGENT | ROUTINE |
-| Take all antithrombotic medications exactly as prescribed; do NOT stop aspirin, clopidogrel, or anticoagulant without medical advice (stopping increases stroke risk) | URGENT | URGENT | ROUTINE |
-| Avoid high-risk neck activities: vigorous chiropractic manipulation, extreme cervical extension/rotation, contact sports, roller coasters, heavy lifting with Valsalva (may worsen dissection or cause recurrence) | URGENT | URGENT | ROUTINE |
-| Report new neck pain, headache (especially pulsatile), drooping eyelid, double vision, or pulsatile tinnitus as these may indicate dissection extension or new dissection | URGENT | ROUTINE | ROUTINE |
-| If on warfarin: maintain consistent vitamin K intake; attend all INR monitoring appointments; report any signs of bleeding (bruising, blood in stool/urine, gum bleeding) | - | ROUTINE | ROUTINE |
-| Follow-up imaging (CTA or MRA neck) scheduled at 3-6 months to assess vessel healing; do NOT skip this appointment | - | ROUTINE | ROUTINE |
-| Follow-up appointment with neurology in 2-4 weeks for treatment reassessment; primary care in 4 weeks for vascular risk factor management | - | ROUTINE | ROUTINE |
-| Avoid straining and heavy lifting (>20 lbs) for 4-6 weeks to reduce risk of dissection propagation | URGENT | ROUTINE | ROUTINE |
-| Gradual return to light exercise after 2-4 weeks with physician clearance; avoid high-impact sports for 3-6 months minimum | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Call 911 immediately if new or worsening symptoms: sudden weakness, numbness, vision changes, speech difficulty, severe headache, loss of balance (may indicate stroke from dissection) | STAT | STAT | ROUTINE | - |
+| Do NOT drive until cleared by neurology (minimum 2 weeks; Horner syndrome may affect vision) | URGENT | URGENT | ROUTINE | - |
+| Take all antithrombotic medications exactly as prescribed; do NOT stop aspirin, clopidogrel, or anticoagulant without medical advice (stopping increases stroke risk) | URGENT | URGENT | ROUTINE | - |
+| Avoid high-risk neck activities: vigorous chiropractic manipulation, extreme cervical extension/rotation, contact sports, roller coasters, heavy lifting with Valsalva (may worsen dissection or cause recurrence) | URGENT | URGENT | ROUTINE | - |
+| Report new neck pain, headache (especially pulsatile), drooping eyelid, double vision, or pulsatile tinnitus as these may indicate dissection extension or new dissection | URGENT | ROUTINE | ROUTINE | - |
+| If on warfarin: maintain consistent vitamin K intake; attend all INR monitoring appointments; report any signs of bleeding (bruising, blood in stool/urine, gum bleeding) | - | ROUTINE | ROUTINE | - |
+| Follow-up imaging (CTA or MRA neck) scheduled at 3-6 months to assess vessel healing; do NOT skip this appointment | - | ROUTINE | ROUTINE | - |
+| Follow-up appointment with neurology in 2-4 weeks for treatment reassessment; primary care in 4 weeks for vascular risk factor management | - | ROUTINE | ROUTINE | - |
+| Avoid straining and heavy lifting (>20 lbs) for 4-6 weeks to reduce risk of dissection propagation | URGENT | ROUTINE | ROUTINE | - |
+| Gradual return to light exercise after 2-4 weeks with physician clearance; avoid high-impact sports for 3-6 months minimum | - | ROUTINE | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Avoid chiropractic cervical manipulation permanently given dissection history (recurrence risk) | URGENT | ROUTINE | ROUTINE |
-| Blood pressure target <130/80 mmHg for secondary stroke prevention | - | ROUTINE | ROUTINE |
-| Smoking cessation (absolute) as smoking impairs vascular healing and increases recurrence risk | - | ROUTINE | ROUTINE |
-| Moderate alcohol use only (<=1 drink/day women, <=2 drinks/day men); excess alcohol increases bleeding risk on antithrombotics | - | ROUTINE | ROUTINE |
-| Mediterranean or DASH diet for vascular risk reduction | - | ROUTINE | ROUTINE |
-| Regular moderate-intensity aerobic exercise (30-40 min, 3-5 days/week) after medical clearance; avoid contact sports and extreme neck positions | - | - | ROUTINE |
-| Weight management (BMI 18.5-24.9) for vascular risk reduction | - | ROUTINE | ROUTINE |
-| Glycemic control (HbA1c <7%) if diabetic to reduce vascular risk | - | ROUTINE | ROUTINE |
-| Avoid oral contraceptives or hormone replacement therapy without neurology input given vascular event history | - | ROUTINE | ROUTINE |
-| Home blood pressure monitoring with log for physician review at follow-up visits | - | ROUTINE | ROUTINE |
-| Stress management and emotional support; anxiety and depression common after young stroke diagnosis | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Avoid chiropractic cervical manipulation permanently given dissection history (recurrence risk) | URGENT | ROUTINE | ROUTINE | - |
+| Blood pressure target <130/80 mmHg for secondary stroke prevention | - | ROUTINE | ROUTINE | - |
+| Smoking cessation (absolute) as smoking impairs vascular healing and increases recurrence risk | - | ROUTINE | ROUTINE | - |
+| Moderate alcohol use only (<=1 drink/day women, <=2 drinks/day men); excess alcohol increases bleeding risk on antithrombotics | - | ROUTINE | ROUTINE | - |
+| Mediterranean or DASH diet for vascular risk reduction | - | ROUTINE | ROUTINE | - |
+| Regular moderate-intensity aerobic exercise (30-40 min, 3-5 days/week) after medical clearance; avoid contact sports and extreme neck positions | - | - | ROUTINE | - |
+| Weight management (BMI 18.5-24.9) for vascular risk reduction | - | ROUTINE | ROUTINE | - |
+| Glycemic control (HbA1c <7%) if diabetic to reduce vascular risk | - | ROUTINE | ROUTINE | - |
+| Avoid oral contraceptives or hormone replacement therapy without neurology input given vascular event history | - | ROUTINE | ROUTINE | - |
+| Home blood pressure monitoring with log for physician review at follow-up visits | - | ROUTINE | ROUTINE | - |
+| Stress management and emotional support; anxiety and depression common after young stroke diagnosis | - | ROUTINE | ROUTINE | - |
 
 ═══════════════════════════════════════════════════════════════
 SECTION B: REFERENCE (Expand as Needed)
@@ -306,6 +307,25 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Fixed structured dosing format across all treatment sections (3A, 3B, 3C, 3D) to use proper `[dose] :: [route] :: [frequency] :: [instructions]` format
+- Fixed Gabapentin dosing: corrected malformed dosing field (was missing frequency, had multiple doses in dose field)
+- Fixed Acetaminophen, Ibuprofen, Ondansetron, Meclizine dosing: separated dose from frequency in structured fields
+- Fixed Heparin IV dosing: clean bolus dose in first field with infusion details in instructions
+- Fixed Apixaban dosing: standard dose (5 mg) in first field; reduced dose in instructions
+- Fixed Lisinopril dosing: starting dose (5-10 mg) in first field; titration in instructions
+- Fixed Amlodipine dosing: starting dose (5 mg) in first field; max in instructions
+- Fixed Aspirin maintenance dosing: standard dose (81 mg) in first field
+- Fixed Atorvastatin dosing: dose range in first field with instructions in fourth field
+- Fixed Mannitol dosing: bolus dose in first field; maintenance in instructions
+- Fixed DAPT row: cleaned dosing format for combined regimen
+- Fixed Enoxaparin therapeutic dosing: separated dose from frequency
+- Added structured dosing format to procedure rows (thrombectomy, stenting, craniectomy, pneumatic compression) using N/A for dose field
+- Added ICU column to Section 4B (Patient Instructions) for venue consistency
+- Added ICU column to Section 4C (Lifestyle & Prevention) for venue consistency
+- Simplified treatment names: removed "Blood pressure management:" prefix from Labetalol and Nicardipine; removed "Osmotherapy:" prefix from Mannitol
+- Updated version to 1.1; added REVISED date
 
 **v1.0 (January 30, 2026)**
 - Initial template creation

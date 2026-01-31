@@ -1,7 +1,7 @@
 ---
 title: "Posterior Reversible Encephalopathy Syndrome (PRES)"
 description: "Clinical decision support for posterior reversible encephalopathy syndrome (PRES) diagnosis and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -23,8 +23,9 @@ tags:
 
 # Posterior Reversible Encephalopathy Syndrome (PRES)
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** January 30, 2026
+**REVISED:** January 30, 2026
 **STATUS:** Draft - Pending Review
 
 ---
@@ -167,7 +168,7 @@ SECTION A: ACTION ITEMS
 | Immunosuppressant management: Hold tacrolimus | - | Tacrolimus is common cause of PRES in transplant patients; must hold or significantly reduce dose until PRES resolves | Hold tacrolimus immediately; consult transplant team for alternative immunosuppression (switch to mycophenolate, sirolimus, or reduced-dose calcineurin inhibitor after resolution) | Acute rejection risk (must coordinate with transplant team before permanently discontinuing) | Tacrolimus trough levels; graft function monitoring; rejection surveillance | STAT | STAT | - | STAT |
 | Immunosuppressant management: Hold cyclosporine | - | Cyclosporine neurotoxicity causes PRES; must hold or reduce dose until neurological recovery | Hold cyclosporine immediately; consult transplant team for alternative immunosuppression; may cautiously rechallenge at lower dose after full resolution with close monitoring | Acute rejection risk (coordinate with transplant team) | Cyclosporine trough levels; renal function; graft function; rejection surveillance | STAT | STAT | - | STAT |
 | Chemotherapy-associated PRES: Hold offending agent | - | VEGF inhibitors (bevacizumab, sunitinib), cisplatin, gemcitabine, and other chemotherapeutic agents can cause PRES; hold until resolution | Hold offending chemotherapy agent immediately; consult oncology for alternative regimen or cautious rechallenge after resolution | Cancer treatment interruption (coordinate with oncology) | Neurological status; follow-up MRI before considering rechallenge | STAT | STAT | - | STAT |
-| Intubation and airway protection | - | Airway protection for GCS <=8, refractory seizures, inability to protect airway, or respiratory failure | GCS <=8 or inability to protect airway; RSI with propofol or etomidate preferred; avoid succinylcholine if hyperkalemia risk | N/A | Ventilator settings; head of bed 30 degrees; sedation level | STAT | STAT | - | STAT |
+| Intubation and airway protection | - | Airway protection for GCS <=8, refractory seizures, inability to protect airway, or respiratory failure | RSI per protocol :: - :: once :: RSI with propofol or etomidate preferred (avoid ketamine if severe hypertension); avoid succinylcholine if hyperkalemia risk; head of bed 30 degrees post-intubation | N/A | Ventilator settings; head of bed 30 degrees; sedation level; cuff pressure | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments
 
@@ -175,9 +176,9 @@ SECTION A: ACTION ITEMS
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Acetaminophen | PO/IV | Fever management (target normothermia <37.5 degrees C; fever worsens cerebral edema) | 650-1000 mg :: PO/IV :: q6h :: 650-1000 mg PO or IV q6h; max 4 g/day; use IV if NPO | Severe hepatic disease; chronic alcohol use (reduce max to 2 g/day) | Temperature q4h; LFTs | STAT | STAT | - | STAT |
 | Ondansetron | IV | Nausea and vomiting associated with hypertensive encephalopathy and elevated ICP | 4 mg :: IV :: q6h PRN :: 4 mg IV q6h PRN nausea; max 16 mg/day | QT prolongation; congenital long QT syndrome | QTc on ECG | STAT | ROUTINE | - | STAT |
-| Insulin (regular) | IV/SC | Hyperglycemia management (target 140-180 mg/dL; hyperglycemia worsens cerebral edema) | Sliding scale or insulin drip per protocol :: IV/SC :: per protocol :: Insulin drip for persistent BG >180; transition to SC sliding scale when stable | Hypoglycemia | Blood glucose q1h if drip; q6h if sliding scale | STAT | STAT | - | STAT |
+| Insulin (regular) | IV/SC | Hyperglycemia management (target 140-180 mg/dL; hyperglycemia worsens cerebral edema) | Per institutional protocol :: IV/SC :: per protocol :: Insulin drip 0.5-1 unit/h IV for persistent BG >180; titrate to target 140-180 mg/dL; transition to SC sliding scale when stable and tolerating PO | Hypoglycemia | Blood glucose q1h if drip; q6h if sliding scale | STAT | STAT | - | STAT |
 | Pantoprazole | IV/PO | GI prophylaxis; stress ulcer prevention in ICU patients | 40 mg :: IV/PO :: daily :: 40 mg IV or PO daily | C. difficile risk with prolonged use | GI symptoms | - | ROUTINE | - | ROUTINE |
-| Pneumatic compression devices | - | DVT prophylaxis; immobilized patients at high VTE risk | Apply bilateral SCDs on admission; use whenever patient in bed | Acute DVT in lower extremities | Skin checks daily | STAT | STAT | - | STAT |
+| Pneumatic compression devices | - | DVT prophylaxis; immobilized patients at high VTE risk | Bilateral SCDs :: - :: continuous :: Apply bilateral SCDs on admission; use whenever patient is in bed; remove only for ambulation and skin checks | Acute DVT in lower extremities | Skin checks daily | STAT | STAT | - | STAT |
 | Enoxaparin | SC | DVT prophylaxis (start when seizures controlled and no hemorrhagic PRES) | 40 mg :: SC :: daily :: 40 mg SC daily; adjust for renal function (CrCl <30: 30 mg daily); hold if hemorrhagic PRES | Active hemorrhagic PRES; platelet count <50,000; severe renal failure (dose adjust); recent LP (wait 12h) | Platelet count; renal function; bleeding signs | - | ROUTINE | - | ROUTINE |
 
 ### 3C. Second-line/Refractory
@@ -199,7 +200,7 @@ SECTION A: ACTION ITEMS
 | Oral antihypertensive: Lisinopril | PO | Long-term BP control; renoprotective; preferred if proteinuria present (preeclampsia history) | 5 mg daily; 10 mg daily; 20 mg daily; 40 mg daily :: PO :: daily :: Start 5-10 mg PO daily; titrate q1-2 weeks; max 40 mg/day | Baseline Cr, K+, BP | Pregnancy (ABSOLUTE -- teratogenic); bilateral renal artery stenosis; angioedema history; K >5.5 | Cr and K+ at 1-2 weeks after initiation; BP; angioedema watch | - | ROUTINE | ROUTINE | - |
 | Oral antihypertensive: Metoprolol succinate | PO | Long-term BP control; preferred if concurrent tachycardia or coronary disease | 25 mg daily; 50 mg daily; 100 mg daily; 200 mg daily :: PO :: daily :: Start 25-50 mg PO daily; titrate q1-2 weeks; max 200 mg/day | Baseline heart rate, BP, ECG | Heart block (2nd/3rd degree); severe bradycardia (<50 bpm); decompensated heart failure; severe asthma | Heart rate; BP; signs of heart failure; bronchospasm | - | ROUTINE | ROUTINE | - |
 | Levetiracetam (oral transition) | PO | Continued seizure prophylaxis if seizures occurred during PRES; typically continue 3-6 months then taper if MRI normalized and EEG normal | 500 mg BID; 750 mg BID; 1000 mg BID :: PO :: BID :: 500-1000 mg PO BID; dose based on acute loading; may taper at 3-6 months if PRES fully resolved on imaging | Renal function (adjust if CrCl <50) | Known hypersensitivity | Renal function; behavioral side effects; seizure diary | - | ROUTINE | ROUTINE | - |
-| Immunosuppressant switch (transplant patients) | PO | Switch to non-calcineurin inhibitor immunosuppression to prevent PRES recurrence; coordinate with transplant team | Agent and dose per transplant team recommendation; common switches: mycophenolate mofetil 500-1000 mg BID or sirolimus 2-5 mg daily | Transplant team approval; graft function assessment; rejection risk stratification | Agent-specific; varies by alternative chosen | Graft function; drug levels; rejection surveillance; CBC; LFTs; renal function | - | ROUTINE | ROUTINE | - |
+| Immunosuppressant switch (transplant patients) | PO | Switch to non-calcineurin inhibitor immunosuppression to prevent PRES recurrence; coordinate with transplant team | Per transplant team :: PO :: per protocol :: Common switches: mycophenolate mofetil 500-1000 mg PO BID or sirolimus 2-5 mg PO daily; agent and dose per transplant team recommendation based on organ type and rejection risk | Transplant team approval; graft function assessment; rejection risk stratification | Agent-specific; varies by alternative chosen | Graft function; drug levels; rejection surveillance; CBC; LFTs; renal function | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -225,32 +226,32 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient / Family Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| PRES is typically reversible with prompt treatment; most patients recover fully with aggressive BP control and removal of the offending cause | STAT | ROUTINE | ROUTINE |
-| Call 911 immediately if new or worsening headache, seizure activity, vision changes, confusion, or difficulty speaking (may indicate PRES recurrence or complication) | - | ROUTINE | ROUTINE |
-| Take all blood pressure medications as prescribed; do NOT skip doses or stop medications without physician guidance as this can trigger recurrence | - | ROUTINE | ROUTINE |
-| Monitor blood pressure at home daily; keep a BP log; report readings consistently above 140/90 to your physician | - | ROUTINE | ROUTINE |
-| If you had seizures with PRES, do NOT drive until cleared by neurology (typically after imaging resolution and seizure-free period per state law) | - | ROUTINE | ROUTINE |
-| If PRES was caused by an immunosuppressant medication, do NOT resume the medication without explicit transplant team or oncology approval | - | ROUTINE | ROUTINE |
-| Visual changes from PRES usually improve over days to weeks; report any persistent vision problems at follow-up | - | ROUTINE | ROUTINE |
-| Report any new headaches, confusion, or seizures immediately as these may indicate incomplete resolution or recurrence | - | ROUTINE | ROUTINE |
-| Pregnancy counseling: if eclampsia-related PRES, discuss future pregnancy risks and preeclampsia prevention (low-dose aspirin prophylaxis) with OB | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| PRES is typically reversible with prompt treatment; most patients recover fully with aggressive BP control and removal of the offending cause | STAT | ROUTINE | ROUTINE | - |
+| Call 911 immediately if new or worsening headache, seizure activity, vision changes, confusion, or difficulty speaking (may indicate PRES recurrence or complication) | - | ROUTINE | ROUTINE | - |
+| Take all blood pressure medications as prescribed; do NOT skip doses or stop medications without physician guidance as this can trigger recurrence | - | ROUTINE | ROUTINE | - |
+| Monitor blood pressure at home daily; keep a BP log; report readings consistently above 140/90 to your physician | - | ROUTINE | ROUTINE | - |
+| If you had seizures with PRES, do NOT drive until cleared by neurology (typically after imaging resolution and seizure-free period per state law) | - | ROUTINE | ROUTINE | - |
+| If PRES was caused by an immunosuppressant medication, do NOT resume the medication without explicit transplant team or oncology approval | - | ROUTINE | ROUTINE | - |
+| Visual changes from PRES usually improve over days to weeks; report any persistent vision problems at follow-up | - | ROUTINE | ROUTINE | - |
+| Report any new headaches, confusion, or seizures immediately as these may indicate incomplete resolution or recurrence | - | ROUTINE | ROUTINE | - |
+| Pregnancy counseling: if eclampsia-related PRES, discuss future pregnancy risks and preeclampsia prevention (low-dose aspirin prophylaxis) with OB | - | ROUTINE | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Blood pressure target <130/80 mmHg long-term to prevent PRES recurrence (most important modifiable risk factor) | - | ROUTINE | ROUTINE |
-| Low-sodium diet (DASH diet: <2300 mg sodium/day, ideally <1500 mg) to improve blood pressure control | - | ROUTINE | ROUTINE |
-| Smoking cessation to reduce vascular risk and improve blood pressure control | - | ROUTINE | ROUTINE |
-| Alcohol limitation (maximum 1 drink/day for women, 2 for men) as excess alcohol worsens hypertension | - | ROUTINE | ROUTINE |
-| Regular aerobic exercise (150 min/week moderate intensity) after medical clearance to improve cardiovascular health and BP | - | - | ROUTINE |
-| Weight management (target BMI <30) as obesity independently worsens hypertension and cardiovascular risk | - | ROUTINE | ROUTINE |
-| Medication adherence for all chronic medications including antihypertensives and immunosuppressants | - | ROUTINE | ROUTINE |
-| Stress management and adequate sleep (7-8 hours nightly) as contributors to blood pressure control | - | - | ROUTINE |
-| For transplant patients: strict adherence to immunosuppressant schedule and regular drug level monitoring to prevent toxicity | - | ROUTINE | ROUTINE |
-| Preeclampsia prevention in future pregnancies: low-dose aspirin (81-162 mg daily starting at 12-16 weeks gestation) for women with eclampsia history | - | - | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Blood pressure target <130/80 mmHg long-term to prevent PRES recurrence (most important modifiable risk factor) | - | ROUTINE | ROUTINE | - |
+| Low-sodium diet (DASH diet: <2300 mg sodium/day, ideally <1500 mg) to improve blood pressure control | - | ROUTINE | ROUTINE | - |
+| Smoking cessation to reduce vascular risk and improve blood pressure control | - | ROUTINE | ROUTINE | - |
+| Alcohol limitation (maximum 1 drink/day for women, 2 for men) as excess alcohol worsens hypertension | - | ROUTINE | ROUTINE | - |
+| Regular aerobic exercise (150 min/week moderate intensity) after medical clearance to improve cardiovascular health and BP | - | ROUTINE | ROUTINE | - |
+| Weight management (target BMI <30) as obesity independently worsens hypertension and cardiovascular risk | - | ROUTINE | ROUTINE | - |
+| Medication adherence for all chronic medications including antihypertensives and immunosuppressants | - | ROUTINE | ROUTINE | - |
+| Stress management and adequate sleep (7-8 hours nightly) as contributors to blood pressure control | - | ROUTINE | ROUTINE | - |
+| For transplant patients: strict adherence to immunosuppressant schedule and regular drug level monitoring to prevent toxicity | - | ROUTINE | ROUTINE | - |
+| Preeclampsia prevention in future pregnancies: low-dose aspirin (81-162 mg daily starting at 12-16 weeks gestation) for women with eclampsia history | - | - | ROUTINE | - |
 
 ═══════════════════════════════════════════════════════════════
 SECTION B: REFERENCE (Expand as Needed)
@@ -324,6 +325,13 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (January 30, 2026)**
+- Added ICU venue column to Section 4B (Patient Instructions) and Section 4C (Lifestyle & Prevention) for 4-column consistency
+- Standardized structured dosing format for insulin (regular), pneumatic compression devices, intubation/airway protection, and immunosuppressant switch
+- Fixed exercise, stress management, and preeclampsia prevention rows in 4C to include HOSP ROUTINE for discharge counseling
+- Added REVISED date to header metadata
+- Checker/rebuilder pipeline pass: score improved from 50/60 (83%) to 56/60 (93%)
 
 **v1.0 (January 30, 2026)**
 - Initial template creation

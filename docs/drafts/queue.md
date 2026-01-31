@@ -22,11 +22,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| Cervical Artery Dissection | `cervical-artery-dissection.md` | `pending` | — | 2026-01-30 |
-| PRES | `pres.md` | `pending` | — | 2026-01-30 |
-| Creutzfeldt-Jakob Disease | `creutzfeldt-jakob-disease.md` | `pending` | — | 2026-01-30 |
-| Brain Death Evaluation | `brain-death-evaluation.md` | `pending` | — | 2026-01-30 |
-| Leptomeningeal Carcinomatosis | `leptomeningeal-carcinomatosis.md` | `pending` | — | 2026-01-30 |
+| Cervical Artery Dissection | `cervical-artery-dissection.md` | `completed` | claude/tier4 | 2026-01-30 |
+| PRES | `pres.md` | `completed` | claude/tier4 | 2026-01-30 |
+| Creutzfeldt-Jakob Disease | `creutzfeldt-jakob-disease.md` | `completed` | claude/tier4 | 2026-01-30 |
+| Brain Death Evaluation | `brain-death-evaluation.md` | `completed` | claude/tier4 | 2026-01-30 |
+| Leptomeningeal Carcinomatosis | `leptomeningeal-carcinomatosis.md` | `completed` | claude/tier4 | 2026-01-30 |
 
 ---
 
