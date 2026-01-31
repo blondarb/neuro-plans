@@ -9,7 +9,7 @@ title: Template Tracker
 **Created:** January 15, 2026
 **Last Updated:** January 30, 2026
 **Target:** 150+ validated templates
-**Current Status:** 77 templates approved
+**Current Status:** 82 templates approved
 
 ---
 
@@ -50,8 +50,8 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Cerebral Venous Thrombosis (CVT) | I67.6 | 🎯 OPD | Approved |
 | ✅ | Carotid/Vertebral Dissection | I77.71 | 🎯 OPD | Approved |
 | ✅ | Posterior Reversible Encephalopathy (PRES) | F93.49 | 🎯 OPD | Approved |
-| ⬜ | Reversible Cerebral Vasoconstriction (RCVS) | I67.841 | 🎯 OPD | Thunderclap headache DDx |
-| ⬜ | CNS Vasculitis | I67.7 | 🎯 OPD | Rare, comprehensive workup |
+| ✅ | Reversible Cerebral Vasoconstriction (RCVS) | I67.841 | 🎯 OPD | Thunderclap headache DDx |
+| ✅ | CNS Vasculitis | I67.7 | 🎯 OPD | Rare, comprehensive workup |
 | ⬜ | Moyamoya Disease | I67.5 | 🎯 OPD | Rare |
 | ⬜ | Post-Stroke Management | I69.30 | 🎯 OPD | Secondary prevention |
 | ⬜ | Carotid Stenosis | SI65.29 | 🎯 OPD | Surgical evaluation |
@@ -170,11 +170,11 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | HSV Encephalitis | B00.4 | 🎯 OPD | Approved |
 | ✅ | Autoimmune Encephalitis | G04.81 | 🎯 OPD | Approved |
 | ✅ | Epidural Abscess | G06.1 | 🎯 OPD | Approved |
-| ⬜ | Viral Meningitis | A87.9 | 🎯 OPD | Supportive care focus |
+| ✅ | Viral Meningitis | A87.9 | 🎯 OPD | Supportive care focus |
 | ⬜ | Fungal Meningitis | G02 | 🎯 OPD | Immunocompromised |
 | ⬜ | TB Meningitis | A17.0 | 🎯 OPD | Chronic meningitis |
 | ⬜ | Neurocysticercosis | B69.0 | 🎯 OPD | Endemic areas |
-| ⬜ | Brain Abscess | G06.0 | 🎯 OPD | Neurosurgery consult |
+| ✅ | Brain Abscess | G06.0 | 🎯 OPD | Neurosurgery consult |
 | ⬜ | HIV-Associated Neurocognitive Disorder | B20 | 🎯 OPD | AIDS dementia complex |
 | ⬜ | Neurosyphilis | A52.2 | 🎯 OPD | Great imitator |
 | ⬜ | Lyme Neuroborreliosis | A69.22 | 🎯 OPD | Endemic areas |
@@ -187,7 +187,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Spinal Cord Compression (Malignant) | G95.20 | 🎯 OPD | Approved |
 | ✅ | Glioblastoma (GBM) | C71.9 | 🎯 OPD | Approved |
 | ✅ | Leptomeningeal Carcinomatosis | C79.32 | 🎯 OPD | Approved |
-| ⬜ | Paraneoplastic Neurological Syndrome | G13.0 | 🎯 OPD | Antibody panels |
+| ✅ | Paraneoplastic Neurological Syndrome | G13.0 | 🎯 OPD | Antibody panels |
 | ⬜ | Meningioma | D32.9 | 🎯 OPD | Often incidental |
 | ⬜ | Primary CNS Lymphoma | C85.19 | 🎯 OPD | Immunocompromised |
 | ⬜ | Radiation-Induced Neurologic Injury | G93.89 | 🎯 OPD | Delayed complications |

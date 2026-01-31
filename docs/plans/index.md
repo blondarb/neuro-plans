@@ -32,6 +32,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Cerebral Venous Thrombosis](cerebral-venous-thrombosis.md) | ED, HOSP, OPD, ICU | I67.6, I63.6, G08 |
 | [Cervical Artery Dissection](cervical-artery-dissection.md) | ED, HOSP, OPD, ICU | I77.71, I77.74, I67.0 |
 | [PRES](pres.md) | ED, HOSP, OPD, ICU | I67.83, I67.4 |
+| [RCVS](rcvs.md) | ED, HOSP, OPD, ICU | I67.841, I67.848 |
 
 ---
 
@@ -62,6 +63,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Bacterial Meningitis](bacterial-meningitis.md) | ED, HOSP, ICU | G00.9 |
 | [HSV Encephalitis](hsv-encephalitis.md) | ED, HOSP, ICU | B00.4 |
 | [Autoimmune Encephalitis](autoimmune-encephalitis.md) | HOSP, ICU | G04.81 |
+| [Viral Meningitis](viral-meningitis.md) | ED, HOSP, OPD, ICU | A87.9, A87.0 |
+| [Brain Abscess](brain-abscess.md) | ED, HOSP, OPD, ICU | G06.0 |
 
 ---
 
@@ -83,6 +86,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Brain Metastases](brain-metastases.md) | ED, HOSP, OPD, ICU | C79.31 |
 | [Glioblastoma](glioblastoma.md) | ED, HOSP, OPD, ICU | C71.9, C71.0-C71.8 |
 | [Leptomeningeal Carcinomatosis](leptomeningeal-carcinomatosis.md) | ED, HOSP, OPD, ICU | C79.32, C79.49 |
+| [Paraneoplastic Neurological Syndrome](paraneoplastic-neurological-syndrome.md) | ED, HOSP, OPD, ICU | G13.0, G13.1 |
 
 ---
 
@@ -199,6 +203,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [Giant Cell Arteritis](giant-cell-arteritis.md) | ED, HOSP, OPD, ICU | M31.6, M31.5 |
+| [CNS Vasculitis (PACNS)](cns-vasculitis.md) | ED, HOSP, OPD, ICU | I67.7 |
 
 ---
 

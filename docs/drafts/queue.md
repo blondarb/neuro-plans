@@ -22,11 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| RCVS | `rcvs.md` | `completed` | claude/tier5 | 2026-01-30 |
-| CNS Vasculitis (PACNS) | `cns-vasculitis.md` | `completed` | claude/tier5 | 2026-01-30 |
-| Viral Meningitis | `viral-meningitis.md` | `completed` | claude/tier5 | 2026-01-30 |
-| Brain Abscess | `brain-abscess.md` | `completed` | claude/tier5 | 2026-01-30 |
-| Paraneoplastic Neurological Syndrome | `paraneoplastic-neurological-syndrome.md` | `completed` | claude/tier5 | 2026-01-30 |
+| *(none)* | — | — | — | — |
 
 ---
 
@@ -111,6 +107,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 75 | Creutzfeldt-Jakob Disease | [`creutzfeldt-jakob-disease.md`](../plans/creutzfeldt-jakob-disease.md) | 2026-01-30 | 90%+ |
 | 76 | Brain Death Evaluation | [`brain-death-evaluation.md`](../plans/brain-death-evaluation.md) | 2026-01-30 | 90%+ |
 | 77 | Leptomeningeal Carcinomatosis | [`leptomeningeal-carcinomatosis.md`](../plans/leptomeningeal-carcinomatosis.md) | 2026-01-30 | 90%+ |
+| 78 | RCVS | [`rcvs.md`](../plans/rcvs.md) | 2026-01-30 | 90%+ |
+| 79 | CNS Vasculitis (PACNS) | [`cns-vasculitis.md`](../plans/cns-vasculitis.md) | 2026-01-30 | 90%+ |
+| 80 | Viral Meningitis | [`viral-meningitis.md`](../plans/viral-meningitis.md) | 2026-01-30 | 90%+ |
+| 81 | Brain Abscess | [`brain-abscess.md`](../plans/brain-abscess.md) | 2026-01-30 | 90%+ |
+| 82 | Paraneoplastic Neurological Syndrome | [`paraneoplastic-neurological-syndrome.md`](../plans/paraneoplastic-neurological-syndrome.md) | 2026-01-30 | 90%+ |
 
 ---
 
@@ -127,7 +128,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-01-30. Total approved: 77 plans.
+- Queue updated 2026-01-30. Total approved: 82 plans.
 
 ---
 
