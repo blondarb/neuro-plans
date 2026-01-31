@@ -22,7 +22,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| *(none)* | — | — | — | — |
+| Inclusion Body Myositis | `inclusion-body-myositis.md` | `pending` | — | 2026-01-30 |
+| Meningioma | `meningioma.md` | `pending` | — | 2026-01-30 |
+| Psychogenic Non-Epileptic Spells (PNES) | `pnes.md` | `pending` | — | 2026-01-30 |
+| Lyme Neuroborreliosis | `lyme-neuroborreliosis.md` | `pending` | — | 2026-01-30 |
+| Stiff Person Syndrome | `stiff-person-syndrome.md` | `pending` | — | 2026-01-30 |
 
 ---
 
