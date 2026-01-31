@@ -30,6 +30,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Intracerebral Hemorrhage](intracerebral-hemorrhage.md) | ED, HOSP, ICU | I61.9 |
 | [Subarachnoid Hemorrhage](subarachnoid-hemorrhage.md) | ED, HOSP, ICU | I60.9 |
 | [Cerebral Venous Thrombosis](cerebral-venous-thrombosis.md) | ED, HOSP, OPD, ICU | I67.6, I63.6, G08 |
+| [Cervical Artery Dissection](cervical-artery-dissection.md) | ED, HOSP, OPD, ICU | I77.71, I77.74, I67.0 |
+| [PRES](pres.md) | ED, HOSP, OPD, ICU | I67.83, I67.4 |
 
 ---
 
@@ -80,6 +82,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 |------|------------------|--------|
 | [Brain Metastases](brain-metastases.md) | ED, HOSP, OPD, ICU | C79.31 |
 | [Glioblastoma](glioblastoma.md) | ED, HOSP, OPD, ICU | C71.9, C71.0-C71.8 |
+| [Leptomeningeal Carcinomatosis](leptomeningeal-carcinomatosis.md) | ED, HOSP, OPD, ICU | C79.32, C79.49 |
 
 ---
 
@@ -88,6 +91,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [Elevated ICP Management](elevated-icp-management.md) | HOSP, ICU | G93.2, G93.5 |
+| [Brain Death Evaluation](brain-death-evaluation.md) | ED, HOSP, ICU | G93.82 |
 
 ---
 
@@ -145,6 +149,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Vascular Dementia](vascular-dementia.md) | OPD, HOSP, ED | F01.50, F01.51, I67.3 |
 | [Mild Cognitive Impairment](mild-cognitive-impairment.md) | OPD, HOSP | G31.84, F06.7, R41.81 |
 | [Normal Pressure Hydrocephalus](normal-pressure-hydrocephalus.md) | ED, HOSP, OPD | G91.2, G91.0 |
+| [Creutzfeldt-Jakob Disease](creutzfeldt-jakob-disease.md) | ED, HOSP, OPD, ICU | A81.00, A81.01, A81.09 |
 
 ---
 

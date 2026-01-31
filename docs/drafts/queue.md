@@ -22,11 +22,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| Cervical Artery Dissection | `cervical-artery-dissection.md` | `completed` | claude/tier4 | 2026-01-30 |
-| PRES | `pres.md` | `completed` | claude/tier4 | 2026-01-30 |
-| Creutzfeldt-Jakob Disease | `creutzfeldt-jakob-disease.md` | `completed` | claude/tier4 | 2026-01-30 |
-| Brain Death Evaluation | `brain-death-evaluation.md` | `completed` | claude/tier4 | 2026-01-30 |
-| Leptomeningeal Carcinomatosis | `leptomeningeal-carcinomatosis.md` | `completed` | claude/tier4 | 2026-01-30 |
+| *(none)* | — | — | — | — |
 
 ---
 
@@ -106,6 +102,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 70 | Lambert-Eaton Syndrome | [`lambert-eaton-syndrome.md`](../plans/lambert-eaton-syndrome.md) | 2026-01-30 | 90%+ |
 | 71 | Neurosarcoidosis | [`neurosarcoidosis.md`](../plans/neurosarcoidosis.md) | 2026-01-30 | 90%+ |
 | 72 | Glioblastoma | [`glioblastoma.md`](../plans/glioblastoma.md) | 2026-01-30 | 90%+ |
+| 73 | Cervical Artery Dissection | [`cervical-artery-dissection.md`](../plans/cervical-artery-dissection.md) | 2026-01-30 | 90%+ |
+| 74 | PRES | [`pres.md`](../plans/pres.md) | 2026-01-30 | 90%+ |
+| 75 | Creutzfeldt-Jakob Disease | [`creutzfeldt-jakob-disease.md`](../plans/creutzfeldt-jakob-disease.md) | 2026-01-30 | 90%+ |
+| 76 | Brain Death Evaluation | [`brain-death-evaluation.md`](../plans/brain-death-evaluation.md) | 2026-01-30 | 90%+ |
+| 77 | Leptomeningeal Carcinomatosis | [`leptomeningeal-carcinomatosis.md`](../plans/leptomeningeal-carcinomatosis.md) | 2026-01-30 | 90%+ |
 
 ---
 
@@ -122,7 +123,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-01-30. Total approved: 72 plans.
+- Queue updated 2026-01-30. Total approved: 77 plans.
 
 ---
 

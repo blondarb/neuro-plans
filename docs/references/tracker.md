@@ -9,7 +9,7 @@ title: Template Tracker
 **Created:** January 15, 2026
 **Last Updated:** January 30, 2026
 **Target:** 150+ validated templates
-**Current Status:** 72 templates approved
+**Current Status:** 77 templates approved
 
 ---
 
@@ -48,8 +48,8 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Subarachnoid Hemorrhage (SAH) | I60.9 | 🎯 OPD | Approved |
 | ✅ | Transient Ischemic Attack (TIA) | G45.9 | 🎯 OPD | Approved |
 | ✅ | Cerebral Venous Thrombosis (CVT) | I67.6 | 🎯 OPD | Approved |
-| ⬜ | Carotid/Vertebral Dissection | I77.71 | 🎯 OPD | Young stroke workup |
-| ⬜ | Posterior Reversible Encephalopathy (PRES) | F93.49 | 🎯 OPD | Hypertensive emergency |
+| ✅ | Carotid/Vertebral Dissection | I77.71 | 🎯 OPD | Approved |
+| ✅ | Posterior Reversible Encephalopathy (PRES) | F93.49 | 🎯 OPD | Approved |
 | ⬜ | Reversible Cerebral Vasoconstriction (RCVS) | I67.841 | 🎯 OPD | Thunderclap headache DDx |
 | ⬜ | CNS Vasculitis | I67.7 | 🎯 OPD | Rare, comprehensive workup |
 | ⬜ | Moyamoya Disease | I67.5 | 🎯 OPD | Rare |
@@ -157,7 +157,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Rapidly Progressive Dementia | F03.90 | 🎯 OPD | Approved |
 | ✅ | Normal Pressure Hydrocephalus (NPH) | G91.2 | 🎯 OPD | Approved |
 | ✅ | Mild Cognitive Impairment (MCI) | G31.84 | 🎯 OPD | Approved |
-| ⬜ | Creutzfeldt-Jakob Disease (CJD) | A81.00 | 🎯 OPD | Rare but important DDx |
+| ✅ | Creutzfeldt-Jakob Disease (CJD) | A81.00 | 🎯 OPD | Approved |
 | ⬜ | Autoimmune Dementia/Encephalopathy | G04.81 | 🎯 OPD | Treatable |
 | ⬜ | Delirium vs Dementia | R41.0 | 🎯 OPD | Acute confusion workup |
 | ⬜ | Wernicke-Korsakoff Syndrome | F10.96 | 🎯 OPD | Thiamine deficiency |
@@ -186,7 +186,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Brain Metastases | C79.31 | 🎯 OPD | Approved |
 | ✅ | Spinal Cord Compression (Malignant) | G95.20 | 🎯 OPD | Approved |
 | ✅ | Glioblastoma (GBM) | C71.9 | 🎯 OPD | Approved |
-| ⬜ | Leptomeningeal Carcinomatosis | C79.32 | 🎯 OPD | CSF cytology |
+| ✅ | Leptomeningeal Carcinomatosis | C79.32 | 🎯 OPD | Approved |
 | ⬜ | Paraneoplastic Neurological Syndrome | G13.0 | 🎯 OPD | Antibody panels |
 | ⬜ | Meningioma | D32.9 | 🎯 OPD | Often incidental |
 | ⬜ | Primary CNS Lymphoma | C85.19 | 🎯 OPD | Immunocompromised |
@@ -228,7 +228,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 |--------|-----------|--------|----------|-------|
 | ✅ | Elevated ICP Management | G93.2 | 🎯 OPD | Approved |
 | ✅ | Neuromuscular Respiratory Failure | J96.00 | 🎯 OPD | Approved |
-| ⬜ | Brain Death Evaluation | G93.82 | 🎯 OPD | Legal/ethical protocol |
+| ✅ | Brain Death Evaluation | G93.82 | 🎯 OPD | Approved |
 | ⬜ | Anoxic Brain Injury / Prognostication | G93.1 | 🎯 OPD | Post-cardiac arrest |
 | ⬜ | Hypertensive Encephalopathy | I67.4 | 🎯 OPD | BP management |
 
