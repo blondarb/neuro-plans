@@ -22,7 +22,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Status | Session | Last Updated |
 |------|------|--------|---------|--------------|
-| *(none)* | — | — | — | — |
+| Drug-Resistant Epilepsy | [`drug-resistant-epilepsy.md`](drug-resistant-epilepsy.md) | `completed` | Claude Opus 4.5 | 2026-01-31 |
+| Epilepsy - Chronic Management | [`epilepsy-chronic-management.md`](epilepsy-chronic-management.md) | `completed` | Claude Opus 4.5 | 2026-01-31 |
+| Eclampsia / Seizure in Pregnancy | [`eclampsia-seizure-pregnancy.md`](eclampsia-seizure-pregnancy.md) | `completed` | Claude Opus 4.5 | 2026-01-31 |
+| Moyamoya Disease | [`moyamoya-disease.md`](moyamoya-disease.md) | `completed` | Claude Opus 4.5 | 2026-01-31 |
+| Post-Stroke Management | [`post-stroke-management.md`](post-stroke-management.md) | `completed` | Claude Opus 4.5 | 2026-01-31 |
 
 ---
 
@@ -149,6 +153,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
 - Queue updated 2026-01-31. Total approved: 102 plans.
+- **Tier 10 batch** (2026-01-31): 5 new drafts added — Drug-Resistant Epilepsy, Epilepsy Chronic Management, Eclampsia/Seizure in Pregnancy, Moyamoya Disease, Post-Stroke Management. Awaiting physician approval.
 
 ---
 
