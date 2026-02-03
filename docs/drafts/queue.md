@@ -24,11 +24,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | ICD-10 | File | Status | Session | Last Updated |
 |------|--------|------|--------|---------|--------------|
-| Carotid Stenosis | I65.29 | `carotid-stenosis.md` | `pending` | — | 2026-02-01 |
-| Headache Evaluation | R51.9 | `headache-evaluation.md` | `pending` | — | 2026-02-01 |
+| Carotid Stenosis | I65.29 | `carotid-stenosis.md` | `completed` | Claude | 2026-02-02 |
+| Headache Evaluation | R51.9 | `headache-evaluation.md` | `completed` | Claude | 2026-02-02 |
 | Thunderclap Headache Evaluation | R51.9 | `thunderclap-headache-evaluation.md` | `in_progress` | Claude | 2026-02-02 |
-| Botulism | A05.1 | `botulism.md` | `pending` | — | 2026-02-01 |
-| Peroneal Neuropathy | G57.30 | `peroneal-neuropathy.md` | `pending` | — | 2026-02-01 |
+| Botulism | A05.1 | `botulism.md` | `completed` | Claude | 2026-02-02 |
+| Peroneal Neuropathy | G57.30 | `peroneal-neuropathy.md` | `completed` | Claude | 2026-02-02 |
 | Plexopathy | G54.0 | `plexopathy.md` | `pending` | — | 2026-02-01 |
 | Tics / Tourette Syndrome | F95.2 | `tics-tourette-syndrome.md` | `pending` | — | 2026-02-01 |
 | Neurocysticercosis | B69.0 | `neurocysticercosis.md` | `pending` | — | 2026-02-01 |
