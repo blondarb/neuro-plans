@@ -298,7 +298,7 @@ tags:
 |----------------|----------------|--------|
 | MCI diagnostic criteria and subtypes | Class I, Level A | [Petersen et al. Arch Neurol 2004](https://pubmed.ncbi.nlm.nih.gov/15477521/); [Albert et al. Alzheimers Dement 2011](https://pubmed.ncbi.nlm.nih.gov/21514249/) |
 | Neuropsychological testing for MCI diagnosis | Class I, Level A | [AAN Practice Parameter 2018](https://pubmed.ncbi.nlm.nih.gov/29282327/) |
-| CSF biomarkers for AD pathology | Class I, Level A | [Hansson et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/30244989/) |
+| CSF biomarkers for AD pathology | Class I, Level A | [Hansson et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/30698147/) |
 | Amyloid PET for AD diagnosis in MCI | Class I, Level A | [Johnson et al. Alzheimers Dement 2013](https://pubmed.ncbi.nlm.nih.gov/23360977/) |
 | Cholinesterase inhibitors limited benefit in MCI | Class I, Level B | [Petersen et al. NEJM 2005](https://pubmed.ncbi.nlm.nih.gov/15800226/); [Russ & Morling, Cochrane 2012](https://pubmed.ncbi.nlm.nih.gov/22972104/) |
 | Lecanemab slows decline in MCI due to AD | Class I, Level A | [van Dyck et al. NEJM 2023 (Clarity AD)](https://pubmed.ncbi.nlm.nih.gov/36449413/) |
@@ -306,7 +306,7 @@ tags:
 | Physical exercise may slow cognitive decline | Class II, Level B | [Livingston et al. Lancet 2020 (Lancet Commission on Dementia)](https://pubmed.ncbi.nlm.nih.gov/32738937/) |
 | Mediterranean/MIND diet reduces dementia risk | Class II, Level B | [Morris et al. Alzheimers Dement 2015](https://pubmed.ncbi.nlm.nih.gov/25681666/) |
 | Cardiovascular risk factor control protects cognition | Class I, Level A | [Ngandu et al. Lancet 2015 (FINGER trial)](https://pubmed.ncbi.nlm.nih.gov/25771249/) |
-| Sleep apnea treatment improves cognition | Class II, Level B | [Osorio et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/25878179/) |
+| Sleep apnea treatment improves cognition | Class II, Level B | [Osorio et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/25878183/) |
 | MCI progression rate to dementia (~10-15%/year) | Epidemiological | [Mitchell & Shiri-Feshki, Acta Psychiatr Scand 2009](https://pubmed.ncbi.nlm.nih.gov/19327298/) |
 | Hearing loss as modifiable dementia risk factor | Class II, Level B | [Lin et al. Arch Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/21320988/) |
 | Modifiable risk factors for dementia prevention | Class II, Level A | [Livingston et al. Lancet 2024 (Lancet Commission Update)](https://pubmed.ncbi.nlm.nih.gov/39096926/) |

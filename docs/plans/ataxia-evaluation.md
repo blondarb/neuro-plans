@@ -367,30 +367,30 @@ SECTION B: SUPPORTING INFORMATION
 
 | Guideline | Source | Year | Key Recommendation |
 |-----------|--------|------|-------------------|
-| Approach to the Patient with Chronic Progressive Ataxia | [Manto & Marmolino. Cerebellum 2009](https://pubmed.ncbi.nlm.nih.gov/19484583/) | 2009 | Systematic evaluation approach including history, exam, imaging, labs, and genetic testing |
-| AAN Practice Parameter: Evaluation of Ataxia | [Fogel & Perlman. Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17438218/) | 2007 | Genetic testing algorithm based on clinical features; MRI as first-line imaging |
-| European Guidelines for Spinocerebellar Ataxias | [van de Warrenburg et al. Eur J Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/24330321/) | 2014 | Diagnostic approach and management of hereditary cerebellar ataxias |
-| Treatment of Degenerative Ataxias | [Zesiewicz et al. Neurology 2018](https://pubmed.ncbi.nlm.nih.gov/29848788/) | 2018 | AAN guideline update on pharmacotherapy for degenerative ataxias; riluzole and aminopyridine evidence |
+| Approach to the Patient with Chronic Progressive Ataxia | [Manto & Marmolino. Cerebellum 2009](https://pubmed.ncbi.nlm.nih.gov/19859773/) | 2009 | Systematic evaluation approach including history, exam, imaging, labs, and genetic testing |
+| AAN Practice Parameter: Evaluation of Ataxia | [Fogel & Perlman. Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17303531/) | 2007 | Genetic testing algorithm based on clinical features; MRI as first-line imaging |
+| European Guidelines for Spinocerebellar Ataxias | [van de Warrenburg et al. Eur J Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/25540720/) | 2014 | Diagnostic approach and management of hereditary cerebellar ataxias |
+| Treatment of Degenerative Ataxias | [Zesiewicz et al. Neurology 2018](https://pubmed.ncbi.nlm.nih.gov/29440566/) | 2018 | AAN guideline update on pharmacotherapy for degenerative ataxias; riluzole and aminopyridine evidence |
 
 ### Landmark Studies and Key Evidence
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Paraneoplastic cerebellar degeneration — early tumor treatment improves outcomes | Class III, Level C | [Shams'ili et al. Brain 2003](https://pubmed.ncbi.nlm.nih.gov/12937085/) |
-| Anti-GAD antibodies in autoimmune cerebellar ataxia — high titers (>2000 IU/mL) associated with cerebellar syndrome | Class III, Level C | [Honnorat et al. Brain 2001](https://pubmed.ncbi.nlm.nih.gov/11157551/) |
-| Gluten ataxia — anti-gliadin antibodies in sporadic ataxia; response to gluten-free diet | Class III, Level C | [Hadjivassiliou et al. Lancet 1998](https://pubmed.ncbi.nlm.nih.gov/9886529/) |
-| Gluten ataxia — most common cause of sporadic ataxia; anti-gliadin prevalence | Class III, Level C | [Hadjivassiliou et al. Brain 2003](https://pubmed.ncbi.nlm.nih.gov/12615643/) |
-| 4-Aminopyridine effective for episodic ataxia type 2 and downbeat nystagmus | Class I, Level B | [Strupp et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21220722/) |
-| Riluzole for cerebellar ataxia — moderate improvement in SARA scores across mixed ataxia etiologies | Class I, Level B | [Romano et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/26067125/) |
-| Acetazolamide for episodic ataxia type 2 — reduces episode frequency and severity | Class III, Level C | [Griggs et al. Ann Neurol 1978](https://pubmed.ncbi.nlm.nih.gov/727714/) |
-| Omaveloxolone (Skyclarys) — FDA-approved for Friedreich ataxia; improved mFARS score | Class I, Level B | [Lynch et al. N Engl J Med 2024](https://pubmed.ncbi.nlm.nih.gov/38354141/) |
+| Paraneoplastic cerebellar degeneration — early tumor treatment improves outcomes | Class III, Level C | [Shams'ili et al. Brain 2003](https://pubmed.ncbi.nlm.nih.gov/12764061/) |
+| Anti-GAD antibodies in autoimmune cerebellar ataxia — high titers (>2000 IU/mL) associated with cerebellar syndrome | Class III, Level C | [Honnorat et al. Brain 2001](https://pubmed.ncbi.nlm.nih.gov/11706981/) |
+| Gluten ataxia — anti-gliadin antibodies in sporadic ataxia; response to gluten-free diet | Class III, Level C | [Hadjivassiliou et al. Lancet 1998](https://pubmed.ncbi.nlm.nih.gov/9843103/) |
+| Gluten ataxia — most common cause of sporadic ataxia; anti-gliadin prevalence | Class III, Level C | [Hadjivassiliou et al. Brain 2003](https://pubmed.ncbi.nlm.nih.gov/12566288/) |
+| 4-Aminopyridine effective for episodic ataxia type 2 and downbeat nystagmus | Class I, Level B | [Strupp et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21734179/) |
+| Riluzole for cerebellar ataxia — moderate improvement in SARA scores across mixed ataxia etiologies | Class I, Level B | [Romano et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/26321318/) |
+| Acetazolamide for episodic ataxia type 2 — reduces episode frequency and severity | Class III, Level C | [Griggs et al. Ann Neurol 1978](https://pubmed.ncbi.nlm.nih.gov/677818/) |
+| Omaveloxolone (Skyclarys) — FDA-approved for Friedreich ataxia; improved mFARS score | Class I, Level B | [Lynch et al. N Engl J Med 2024](https://pubmed.ncbi.nlm.nih.gov/41583108/) |
 | IVIG for autoimmune cerebellar ataxia (anti-GAD) — case series showing improvement | Class IV, Level C | [Arino et al. JAMA Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/24934144/) |
 | Friedreich ataxia — natural history and cardiac involvement require surveillance | Class III, Level C | [Pandolfo. Arch Neurol 2008](https://pubmed.ncbi.nlm.nih.gov/18852343/) |
-| SARA scale — validated rating scale for cerebellar ataxia assessment and monitoring | Validation study | [Schmitz-Hubsch et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16801660/) |
-| Alcohol-related cerebellar degeneration — anterior vermis atrophy pattern; abstinence may halt progression | Class III, Level C | [Fitzpatrick et al. Eur Radiol 2008](https://pubmed.ncbi.nlm.nih.gov/18175105/) |
-| MSA-C diagnostic criteria and natural history | Consensus criteria | [Gilman et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18695389/) |
-| Thiamine replacement for Wernicke encephalopathy — IV thiamine prevents permanent cerebellar damage | Class III, Level C | [Galvin et al. J Neurol Neurosurg Psychiatry 2010](https://pubmed.ncbi.nlm.nih.gov/20185465/) |
-| Rituximab for autoimmune cerebellar ataxia — emerging evidence for anti-GAD and paraneoplastic | Class IV, Level C | [Jarius et al. J Neuroimmunol 2010](https://pubmed.ncbi.nlm.nih.gov/20655592/) |
+| SARA scale — validated rating scale for cerebellar ataxia assessment and monitoring | Validation study | [Schmitz-Hubsch et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16769946/) |
+| Alcohol-related cerebellar degeneration — anterior vermis atrophy pattern; abstinence may halt progression | Class III, Level C | [Fitzpatrick et al. Eur Radiol 2008](https://pubmed.ncbi.nlm.nih.gov/18034347/) |
+| MSA-C diagnostic criteria and natural history | Consensus criteria | [Gilman et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18725592/) |
+| Thiamine replacement for Wernicke encephalopathy — IV thiamine prevents permanent cerebellar damage | Class III, Level C | [Galvin et al. J Neurol Neurosurg Psychiatry 2010](https://pubmed.ncbi.nlm.nih.gov/21294435/) |
+| Rituximab for autoimmune cerebellar ataxia — emerging evidence for anti-GAD and paraneoplastic | Class IV, Level C | [Jarius et al. J Neuroimmunol 2010](https://pubmed.ncbi.nlm.nih.gov/20813415/) |
 
 ---
 

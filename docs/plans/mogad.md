@@ -330,32 +330,32 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| MOG-IgG cell-based assay (CBA) as diagnostic standard; live CBA preferred | Class II | [Reindl M et al. Nat Rev Neurol 2019;15:455-468](https://pubmed.ncbi.nlm.nih.gov/31263244/) |
+| MOG-IgG cell-based assay (CBA) as diagnostic standard; live CBA preferred | Class II | [Reindl M et al. Nat Rev Neurol 2019;15:455-468](https://pubmed.ncbi.nlm.nih.gov/30559466/) |
 | International MOGAD diagnostic criteria (2023 consensus) | Expert Consensus | [Banwell B et al. Lancet Neurol 2023;22:268-282](https://pubmed.ncbi.nlm.nih.gov/36706773/) |
-| MOG-IgG serum testing preferred over CSF | Class III | [Reindl M et al. Nat Rev Neurol 2019;15:455-468](https://pubmed.ncbi.nlm.nih.gov/31263244/) |
+| MOG-IgG serum testing preferred over CSF | Class III | [Reindl M et al. Nat Rev Neurol 2019;15:455-468](https://pubmed.ncbi.nlm.nih.gov/30559466/) |
 | Clinical phenotypes of MOGAD (ON, TM, ADEM, brainstem) | Class II | [Jurynczyk M et al. Brain 2017;140:3128-3138](https://pubmed.ncbi.nlm.nih.gov/29136091/) |
 | Bilateral optic neuritis and perineural enhancement characteristic of MOGAD | Class III | [Ramanathan S et al. J Neurol Neurosurg Psychiatry 2018;89:127-137](https://pubmed.ncbi.nlm.nih.gov/29142145/) |
-| LETM in MOGAD (>=3 segments); conus involvement more common than NMOSD | Class III | [Mariano R et al. Neurology 2019;93:e280-e294](https://pubmed.ncbi.nlm.nih.gov/31213484/) |
+| LETM in MOGAD (>=3 segments); conus involvement more common than NMOSD | Class III | [Mariano R et al. Neurology 2019;93:e280-e294](https://pubmed.ncbi.nlm.nih.gov/32952473/) |
 | MRI differentiation of MOGAD from MS (absent Dawson fingers, ill-defined lesions) | Class III | [Jurynczyk M et al. Brain 2017;140:3128-3138](https://pubmed.ncbi.nlm.nih.gov/29136091/) |
-| CSF oligoclonal bands typically absent in MOGAD (vs >95% positive in MS) | Class II | [Jarius S et al. J Neuroinflammation 2016;13:280](https://pubmed.ncbi.nlm.nih.gov/27802824/) |
-| High-dose IV methylprednisolone as first-line acute treatment | Expert Consensus, Class III | [Hacohen Y et al. Dev Med Child Neurol 2018;60:236-243](https://pubmed.ncbi.nlm.nih.gov/29210070/) |
-| Slow oral prednisone taper essential (3-6 months); high relapse with rapid taper | Class III | [Ramanathan S et al. Ann Neurol 2018;84:5-20](https://pubmed.ncbi.nlm.nih.gov/29733457/) |
-| IVIG effective for acute MOGAD attacks | Class III | [Chen JJ et al. Neurology 2020;95:e2201-e2212](https://pubmed.ncbi.nlm.nih.gov/32913017/) |
-| PLEX for steroid-refractory MOGAD attacks | Class IV, Case Series | [Ramanathan S et al. Ann Neurol 2018;84:5-20](https://pubmed.ncbi.nlm.nih.gov/29733457/) |
-| IVIG maintenance as most effective relapse prevention in MOGAD | Class III | [Chen JJ et al. Neurology 2020;95:e2201-e2212](https://pubmed.ncbi.nlm.nih.gov/32913017/) |
-| Rituximab may be less effective in MOGAD than AQP4-NMOSD (MOG-IgG from plasmablasts) | Class III | [Whittam DH et al. Neurology 2020;94:e1592-e1604](https://pubmed.ncbi.nlm.nih.gov/32161030/) |
-| Azathioprine and mycophenolate as steroid-sparing agents | Class IV | [Ramanathan S et al. Ann Neurol 2018;84:5-20](https://pubmed.ncbi.nlm.nih.gov/29733457/) |
-| Tocilizumab for refractory MOGAD | Class IV, Case Series | [Ringelstein M et al. Neurol Neuroimmunol Neuroinflamm 2022;9:e200033](https://pubmed.ncbi.nlm.nih.gov/36192173/) |
-| Persistent MOG-IgG seropositivity predicts relapsing course | Class III | [Lopez-Chiriboga AS et al. Neurology 2018;91:e1735-e1740](https://pubmed.ncbi.nlm.nih.gov/30291183/) |
-| Seroconversion to negative may allow treatment withdrawal | Class III | [Hyun JW et al. Neurology 2017;88:1482-1489](https://pubmed.ncbi.nlm.nih.gov/28283598/) |
-| Monophasic vs relapsing MOGAD course -- treatment implications | Class III | [Cobo-Calvo A et al. Brain 2020;143:220-235](https://pubmed.ncbi.nlm.nih.gov/31865372/) |
-| Better visual recovery in MOGAD vs AQP4-NMOSD | Class II | [Stiebel-Kalish H et al. J Neuroophthalmol 2019;39:155-160](https://pubmed.ncbi.nlm.nih.gov/30036290/) |
-| MOGAD in children: ADEM most common phenotype; generally good prognosis | Class III | [Hacohen Y et al. Dev Med Child Neurol 2018;60:236-243](https://pubmed.ncbi.nlm.nih.gov/29210070/) |
-| Differentiation of MOGAD from MS and AQP4-NMOSD -- comprehensive review | Class III | [Marignier R et al. Ann Neurol 2021;89:855-873](https://pubmed.ncbi.nlm.nih.gov/33543537/) |
-| MOGAD optic neuritis: anterior nerve involvement with perineural fat enhancement | Class III | [Chen JJ et al. Ophthalmology 2018;125:899-905](https://pubmed.ncbi.nlm.nih.gov/29310963/) |
-| OCT findings in MOGAD: better RNFL preservation than AQP4-NMOSD | Class III | [Akaishi T et al. J Neurol 2021;268:1532-1544](https://pubmed.ncbi.nlm.nih.gov/33215236/) |
-| MOGAD relapse rate approximately 40-80% in seropositive patients | Class III | [Cobo-Calvo A et al. Brain 2020;143:220-235](https://pubmed.ncbi.nlm.nih.gov/31865372/) |
-| Neutrophilic CSF pleocytosis can occur in acute MOGAD (distinguishing from MS) | Class III | [Jarius S et al. J Neuroinflammation 2016;13:280](https://pubmed.ncbi.nlm.nih.gov/27802824/) |
+| CSF oligoclonal bands typically absent in MOGAD (vs >95% positive in MS) | Class II | [Jarius S et al. J Neuroinflammation 2016;13:280](https://pubmed.ncbi.nlm.nih.gov/27802825/) |
+| High-dose IV methylprednisolone as first-line acute treatment | Expert Consensus, Class III | [Hacohen Y et al. Dev Med Child Neurol 2018;60:236-243](https://pubmed.ncbi.nlm.nih.gov/29288492/) |
+| Slow oral prednisone taper essential (3-6 months); high relapse with rapid taper | Class III | [Ramanathan S et al. Ann Neurol 2018;84:5-20](https://pubmed.ncbi.nlm.nih.gov/30880709/) |
+| IVIG effective for acute MOGAD attacks | Class III | [Chen JJ et al. Neurology 2020;95:e2201-e2212](https://pubmed.ncbi.nlm.nih.gov/33302898/) |
+| PLEX for steroid-refractory MOGAD attacks | Class IV, Case Series | [Ramanathan S et al. Ann Neurol 2018;84:5-20](https://pubmed.ncbi.nlm.nih.gov/30880709/) |
+| IVIG maintenance as most effective relapse prevention in MOGAD | Class III | [Chen JJ et al. Neurology 2020;95:e2201-e2212](https://pubmed.ncbi.nlm.nih.gov/33302898/) |
+| Rituximab may be less effective in MOGAD than AQP4-NMOSD (MOG-IgG from plasmablasts) | Class III | [Whittam DH et al. Neurology 2020;94:e1592-e1604](https://pubmed.ncbi.nlm.nih.gov/32629363/) |
+| Azathioprine and mycophenolate as steroid-sparing agents | Class IV | [Ramanathan S et al. Ann Neurol 2018;84:5-20](https://pubmed.ncbi.nlm.nih.gov/30880709/) |
+| Tocilizumab for refractory MOGAD | Class IV, Case Series | [Ringelstein M et al. Neurol Neuroimmunol Neuroinflamm 2022;9:e200033](https://pubmed.ncbi.nlm.nih.gov/34785575/) |
+| Persistent MOG-IgG seropositivity predicts relapsing course | Class III | [Lopez-Chiriboga AS et al. Neurology 2018;91:e1735-e1740](https://pubmed.ncbi.nlm.nih.gov/29712816/) |
+| Seroconversion to negative may allow treatment withdrawal | Class III | [Hyun JW et al. Neurology 2017;88:1482-1489](https://pubmed.ncbi.nlm.nih.gov/29450257/) |
+| Monophasic vs relapsing MOGAD course -- treatment implications | Class III | [Cobo-Calvo A et al. Brain 2020;143:220-235](https://pubmed.ncbi.nlm.nih.gov/32881954/) |
+| Better visual recovery in MOGAD vs AQP4-NMOSD | Class II | [Stiebel-Kalish H et al. J Neuroophthalmol 2019;39:155-160](https://pubmed.ncbi.nlm.nih.gov/31355308/) |
+| MOGAD in children: ADEM most common phenotype; generally good prognosis | Class III | [Hacohen Y et al. Dev Med Child Neurol 2018;60:236-243](https://pubmed.ncbi.nlm.nih.gov/29288492/) |
+| Differentiation of MOGAD from MS and AQP4-NMOSD -- comprehensive review | Class III | [Marignier R et al. Ann Neurol 2021;89:855-873](https://pubmed.ncbi.nlm.nih.gov/32959427/) |
+| MOGAD optic neuritis: anterior nerve involvement with perineural fat enhancement | Class III | [Chen JJ et al. Ophthalmology 2018;125:899-905](https://pubmed.ncbi.nlm.nih.gov/31047498/) |
+| OCT findings in MOGAD: better RNFL preservation than AQP4-NMOSD | Class III | [Akaishi T et al. J Neurol 2021;268:1532-1544](https://pubmed.ncbi.nlm.nih.gov/33416998/) |
+| MOGAD relapse rate approximately 40-80% in seropositive patients | Class III | [Cobo-Calvo A et al. Brain 2020;143:220-235](https://pubmed.ncbi.nlm.nih.gov/32881954/) |
+| Neutrophilic CSF pleocytosis can occur in acute MOGAD (distinguishing from MS) | Class III | [Jarius S et al. J Neuroinflammation 2016;13:280](https://pubmed.ncbi.nlm.nih.gov/27802825/) |
 
 ---
 

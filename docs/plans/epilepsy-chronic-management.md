@@ -247,14 +247,14 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Lamotrigine and levetiracetam first-line for focal epilepsy; valproate first-line for generalized | Class I evidence (RCTs) | [Marson et al. Lancet 2021 (SANAD II)](https://pubmed.ncbi.nlm.nih.gov/33838758/) |
-| Valproate should be avoided in women of childbearing potential due to teratogenicity and neurodevelopmental effects | Class I evidence; Regulatory guidance | [Tomson et al. Lancet Neurol 2018 (EURAP)](https://pubmed.ncbi.nlm.nih.gov/29506874/) |
-| ASM withdrawal after 2+ seizure-free years: ~35% recurrence risk; abnormal EEG and known etiology increase risk | Class I evidence (systematic review) | [Lamberink et al. Lancet Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/28389188/) |
-| Depression and anxiety highly prevalent in epilepsy; SSRIs safe and do not worsen seizures | Class II evidence; Guideline | [Mula et al. Epilepsia 2017](https://pubmed.ncbi.nlm.nih.gov/28880995/) |
+| Valproate should be avoided in women of childbearing potential due to teratogenicity and neurodevelopmental effects | Class I evidence; Regulatory guidance | [Tomson et al. Lancet Neurol 2018 (EURAP)](https://pubmed.ncbi.nlm.nih.gov/30129470/) |
+| ASM withdrawal after 2+ seizure-free years: ~35% recurrence risk; abnormal EEG and known etiology increase risk | Class I evidence (systematic review) | [Lamberink et al. Lancet Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/28483337/) |
+| Depression and anxiety highly prevalent in epilepsy; SSRIs safe and do not worsen seizures | Class II evidence; Guideline | [Mula et al. Epilepsia 2017](https://pubmed.ncbi.nlm.nih.gov/29046989/) |
 | SUDEP risk reduction: optimize seizure control, nocturnal supervision, avoid prone sleeping | AAN Practice Guideline | [Harden et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28438841/) |
-| Enzyme-inducing ASMs reduce bone mineral density; screening and supplementation recommended | Class II evidence | [Vestergaard. Acta Neurol Scand 2005](https://pubmed.ncbi.nlm.nih.gov/16281865/) |
+| Enzyme-inducing ASMs reduce bone mineral density; screening and supplementation recommended | Class II evidence | [Vestergaard. Acta Neurol Scand 2005](https://pubmed.ncbi.nlm.nih.gov/16218908/) |
 | Enzyme-inducing ASMs reduce oral contraceptive efficacy; IUDs recommended | Class III evidence; Guideline | [Reimers. Seizure 2015](https://pubmed.ncbi.nlm.nih.gov/26216689/) |
-| Lamotrigine levels decrease 50-70% during pregnancy; monthly monitoring recommended | Class II evidence | [Pennell et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18354078/) |
-| Refer drug-resistant epilepsy for surgical evaluation; surgery superior to continued medical therapy for mesial TLE | Class I evidence (RCT) | [Wiebe et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11519503/) |
+| Lamotrigine levels decrease 50-70% during pregnancy; monthly monitoring recommended | Class II evidence | [Pennell et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18046009/) |
+| Refer drug-resistant epilepsy for surgical evaluation; surgery superior to continued medical therapy for mesial TLE | Class I evidence (RCT) | [Wiebe et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11484687/) |
 | Seizure diary improves seizure reporting accuracy and patient engagement | Expert consensus | Expert consensus; standard clinical practice |
 
 ---

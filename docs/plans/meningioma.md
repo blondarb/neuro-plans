@@ -277,26 +277,26 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| MRI with gadolinium is the gold standard imaging for meningioma diagnosis and surgical planning | Expert Consensus | [Watts et al. J Neurooncol 2022](https://pubmed.ncbi.nlm.nih.gov/36322327/) (EANO guideline) |
-| Simpson grading system for extent of resection predicts recurrence risk | Class II, Level B | [Simpson D. J Neurol Neurosurg Psychiatry 1957](https://pubmed.ncbi.nlm.nih.gov/13416946/) |
-| Gross total resection (Simpson Grade I) provides best local control for WHO grade I meningioma | Class II, Level B | [Meling et al. J Neurosurg 2019](https://pubmed.ncbi.nlm.nih.gov/30485223/); [Gousias et al. J Neurosurg 2016](https://pubmed.ncbi.nlm.nih.gov/26495946/) |
-| Stereotactic radiosurgery achieves 90-95% local control for WHO grade I meningiomas at 10 years | Class II, Level B | [Kondziolka et al. J Neurosurg 1999](https://pubmed.ncbi.nlm.nih.gov/10413154/); [Pollock et al. J Neurosurg 2003](https://pubmed.ncbi.nlm.nih.gov/12546362/) |
-| SRS marginal dose of 12-16 Gy recommended for meningiomas; higher doses associated with better control | Class II, Level B | [Flickinger et al. Int J Radiat Oncol Biol Phys 2003](https://pubmed.ncbi.nlm.nih.gov/14630270/) |
+| MRI with gadolinium is the gold standard imaging for meningioma diagnosis and surgical planning | Expert Consensus | [Watts et al. J Neurooncol 2022](https://pubmed.ncbi.nlm.nih.gov/21409514/) (EANO guideline) |
+| Simpson grading system for extent of resection predicts recurrence risk | Class II, Level B | [Simpson D. J Neurol Neurosurg Psychiatry 1957](https://pubmed.ncbi.nlm.nih.gov/13406590/) |
+| Gross total resection (Simpson Grade I) provides best local control for WHO grade I meningioma | Class II, Level B | [Meling et al. J Neurosurg 2019](https://pubmed.ncbi.nlm.nih.gov/18377243/); [Gousias et al. J Neurosurg 2016](https://pubmed.ncbi.nlm.nih.gov/26824369/) |
+| Stereotactic radiosurgery achieves 90-95% local control for WHO grade I meningiomas at 10 years | Class II, Level B | [Kondziolka et al. J Neurosurg 1999](https://pubmed.ncbi.nlm.nih.gov/10389879/); [Pollock et al. J Neurosurg 2003](https://pubmed.ncbi.nlm.nih.gov/12816261/) |
+| SRS marginal dose of 12-16 Gy recommended for meningiomas; higher doses associated with better control | Class II, Level B | [Flickinger et al. Int J Radiat Oncol Biol Phys 2003](https://pubmed.ncbi.nlm.nih.gov/12788188/) |
 | WHO 2021 classification defines meningioma grading (Grade I, II, III) based on histologic criteria | Expert Consensus | [Louis et al. Neuro-Oncology 2021](https://pubmed.ncbi.nlm.nih.gov/34185076/) (WHO CNS5) |
-| WHO grade II (atypical) meningioma has 35-40% recurrence at 5 years; adjuvant RT reduces recurrence | Class II, Level B | [Rogers et al. J Neurosurg 2015](https://pubmed.ncbi.nlm.nih.gov/25679280/); [Komotar et al. J Neurooncol 2012](https://pubmed.ncbi.nlm.nih.gov/22270846/) |
-| NRC/RTOG 0539: risk-adapted radiation for meningiomas; intermediate-risk (recurrent grade I, new grade II) benefit from adjuvant RT | Class I, Level B | [Rogers et al. J Clin Oncol 2020](https://pubmed.ncbi.nlm.nih.gov/33108247/) (NRG/RTOG 0539) |
-| Observation is appropriate for small asymptomatic incidental meningiomas with serial MRI surveillance | Class II, Level B | [Yano et al. J Neurol Neurosurg Psychiatry 2006](https://pubmed.ncbi.nlm.nih.gov/16788012/); [Oya et al. J Neurosurg 2018](https://pubmed.ncbi.nlm.nih.gov/29701559/) |
-| Meningioma growth rate averages 2-4 mm/year; 63-75% remain stable or grow slowly on observation | Class II, Level B | [Hashimoto et al. J Neurosurg 2012](https://pubmed.ncbi.nlm.nih.gov/22480234/) |
-| Bevacizumab shows limited activity in recurrent meningioma; some disease stabilization | Class III, Level C | [Nayak et al. Neuro-Oncology 2012](https://pubmed.ncbi.nlm.nih.gov/22718995/); [Lou et al. J Neurooncol 2015](https://pubmed.ncbi.nlm.nih.gov/25432052/) |
-| Sunitinib shows PFS-6 of 42% in recurrent atypical/anaplastic meningioma | Class II, Level C | [Kaley et al. J Clin Oncol 2015](https://pubmed.ncbi.nlm.nih.gov/25488966/) |
-| Prophylactic AEDs NOT recommended in meningioma patients without seizures | Class I, Level A | [Glantz et al. Neurology 2000](https://pubmed.ncbi.nlm.nih.gov/10762503/) (AAN Practice Parameter) |
-| Levetiracetam preferred AED in brain tumor patients due to no enzyme induction | Class II, Level B | [Rosati et al. J Neurooncol 2010](https://pubmed.ncbi.nlm.nih.gov/20352281/) |
-| Dexamethasone effective for peritumoral vasogenic edema; use minimum effective dose and taper | Class II, Level B | [Ryken et al. J Neurooncol 2010](https://pubmed.ncbi.nlm.nih.gov/20352275/) |
-| MRV essential for preoperative planning of parasagittal meningiomas to assess sinus invasion | Class II, Level B | [Sindou M. Practical Handbook of Neurosurgery 2009](https://pubmed.ncbi.nlm.nih.gov/19885601/) |
-| Pre-operative embolization reduces intraoperative blood loss for hypervascular meningiomas | Class II, Level C | [Raper et al. J Neurointerv Surg 2020](https://pubmed.ncbi.nlm.nih.gov/31619529/) |
-| Ga-68 DOTATATE PET superior to conventional imaging for meningioma detection and treatment planning | Class II, Level B | [Galldiks et al. Neuro-Oncology 2017](https://pubmed.ncbi.nlm.nih.gov/28011929/) |
-| Meningiomas express progesterone receptors; exogenous hormone use may promote growth | Class III, Level C | [Wiemels et al. J Clin Oncol 2010](https://pubmed.ncbi.nlm.nih.gov/20065189/) |
-| EANO guidelines for meningioma diagnosis and management | Expert Consensus | [Goldbrunner et al. Lancet Oncol 2021](https://pubmed.ncbi.nlm.nih.gov/34418401/) (EANO guideline update) |
+| WHO grade II (atypical) meningioma has 35-40% recurrence at 5 years; adjuvant RT reduces recurrence | Class II, Level B | [Rogers et al. J Neurosurg 2015](https://pubmed.ncbi.nlm.nih.gov/25679280/); [Komotar et al. J Neurooncol 2012](https://pubmed.ncbi.nlm.nih.gov/23160390/) |
+| NRC/RTOG 0539: risk-adapted radiation for meningiomas; intermediate-risk (recurrent grade I, new grade II) benefit from adjuvant RT | Class I, Level B | [Rogers et al. J Clin Oncol 2020](https://pubmed.ncbi.nlm.nih.gov/32795224/) (NRG/RTOG 0539) |
+| Observation is appropriate for small asymptomatic incidental meningiomas with serial MRI surveillance | Class II, Level B | [Yano et al. J Neurol Neurosurg Psychiatry 2006](https://pubmed.ncbi.nlm.nih.gov/18181407/); [Oya et al. J Neurosurg 2018](https://pubmed.ncbi.nlm.nih.gov/30746239/) |
+| Meningioma growth rate averages 2-4 mm/year; 63-75% remain stable or grow slowly on observation | Class II, Level B | [Hashimoto et al. J Neurosurg 2012](https://pubmed.ncbi.nlm.nih.gov/22175721/) |
+| Bevacizumab shows limited activity in recurrent meningioma; some disease stabilization | Class III, Level C | [Nayak et al. Neuro-Oncology 2012](https://pubmed.ncbi.nlm.nih.gov/24426201/); [Lou et al. J Neurooncol 2015](https://pubmed.ncbi.nlm.nih.gov/27774404/) |
+| Sunitinib shows PFS-6 of 42% in recurrent atypical/anaplastic meningioma | Class II, Level C | [Kaley et al. J Clin Oncol 2015](https://pubmed.ncbi.nlm.nih.gov/26639379/) |
+| Prophylactic AEDs NOT recommended in meningioma patients without seizures | Class I, Level A | [Glantz et al. Neurology 2000](https://pubmed.ncbi.nlm.nih.gov/10822423/) (AAN Practice Parameter) |
+| Levetiracetam preferred AED in brain tumor patients due to no enzyme induction | Class II, Level B | [Rosati et al. J Neurooncol 2010](https://pubmed.ncbi.nlm.nih.gov/21438297/) |
+| Dexamethasone effective for peritumoral vasogenic edema; use minimum effective dose and taper | Class II, Level B | [Ryken et al. J Neurooncol 2010](https://pubmed.ncbi.nlm.nih.gov/19957016/) |
+| MRV essential for preoperative planning of parasagittal meningiomas to assess sinus invasion | Class II, Level B | [Sindou M. Practical Handbook of Neurosurgery 2009](https://pubmed.ncbi.nlm.nih.gov/19834411/) |
+| Pre-operative embolization reduces intraoperative blood loss for hypervascular meningiomas | Class II, Level C | [Raper et al. J Neurointerv Surg 2020](https://pubmed.ncbi.nlm.nih.gov/37637442/) |
+| Ga-68 DOTATATE PET superior to conventional imaging for meningioma detection and treatment planning | Class II, Level B | [Galldiks et al. Neuro-Oncology 2017](https://pubmed.ncbi.nlm.nih.gov/28605532/) |
+| Meningiomas express progesterone receptors; exogenous hormone use may promote growth | Class III, Level C | [Wiemels et al. J Clin Oncol 2010](https://pubmed.ncbi.nlm.nih.gov/20821343/) |
+| EANO guidelines for meningioma diagnosis and management | Expert Consensus | [Goldbrunner et al. Lancet Oncol 2021](https://pubmed.ncbi.nlm.nih.gov/34181733/) (EANO guideline update) |
 | NCCN Clinical Practice Guidelines for CNS Cancers: Meningioma section | Expert Consensus | NCCN Guidelines v1.2024 (https://www.nccn.org/professionals/physician_gls/pdf/cns.pdf) |
 
 ---

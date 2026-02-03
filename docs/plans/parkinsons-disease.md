@@ -251,15 +251,15 @@ tags:
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Levodopa most effective symptomatic treatment | Class I, Level A | [Fahn et al. NEJM 2004 (ELLDOPA)](https://pubmed.ncbi.nlm.nih.gov/15590952/) |
-| MAO-B inhibitors provide mild motor benefit | Class I, Level A | [Rascol et al. NEJM 2005 (rasagiline)](https://pubmed.ncbi.nlm.nih.gov/15728780/) |
-| Pimavanserin for PD psychosis | Class I, Level A | [Cummings et al. Lancet 2014](https://pubmed.ncbi.nlm.nih.gov/24315521/) |
-| DBS improves motor fluctuations | Class I, Level A | [Weaver et al. JAMA 2009](https://pubmed.ncbi.nlm.nih.gov/19126699/) |
+| MAO-B inhibitors provide mild motor benefit | Class I, Level A | [Rascol et al. NEJM 2005 (rasagiline)](https://pubmed.ncbi.nlm.nih.gov/16217047/) |
+| Pimavanserin for PD psychosis | Class I, Level A | [Cummings et al. Lancet 2014](https://pubmed.ncbi.nlm.nih.gov/24183563/) |
+| DBS improves motor fluctuations | Class I, Level A | [Weaver et al. JAMA 2009](https://pubmed.ncbi.nlm.nih.gov/19126811/) |
 | Rivastigmine for PD dementia | Class I, Level A | [Emre et al. NEJM 2004](https://pubmed.ncbi.nlm.nih.gov/15590953/) |
 | Exercise improves motor function | Class II, Level B | [Schenkman et al. JAMA Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/29228079/) |
-| LSVT LOUD improves speech | Class I, Level B | [Ramig et al. JSLHR 2001](https://pubmed.ncbi.nlm.nih.gov/11407973/) |
-| Clonazepam and melatonin for RBD | Class II, Level B | [Aurora et al. AASM 2010](https://pubmed.ncbi.nlm.nih.gov/21135521/) |
-| Amantadine reduces dyskinesia | Class I, Level A | [Ory-Magne et al. Lancet Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/24726067/) |
-| Duopa for motor fluctuations | Class I, Level A | [Olanow et al. Lancet Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/24184024/) |
+| LSVT LOUD improves speech | Class I, Level B | [Ramig et al. JSLHR 2001](https://pubmed.ncbi.nlm.nih.gov/11708525/) |
+| Clonazepam and melatonin for RBD | Class II, Level B | [Aurora et al. AASM 2010](https://pubmed.ncbi.nlm.nih.gov/21061864/) |
+| Amantadine reduces dyskinesia | Class I, Level A | [Ory-Magne et al. Lancet Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/25340202/) |
+| Duopa for motor fluctuations | Class I, Level A | [Olanow et al. Lancet Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/24361112/) |
 
 ---
 

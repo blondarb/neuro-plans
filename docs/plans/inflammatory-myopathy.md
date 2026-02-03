@@ -338,32 +338,32 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| IVIG for dermatomyositis (ProDERM trial) | Class I, Level A | [Aggarwal R et al. NEJM 2022](https://pubmed.ncbi.nlm.nih.gov/36260794/) |
-| Myositis-specific antibody classification and clinical significance | Class II, Level B | [Betteridge Z et al. Nat Rev Rheumatol 2020](https://pubmed.ncbi.nlm.nih.gov/32839602/) |
-| Anti-TIF1-gamma association with malignancy in DM | Class II, Level B | [Trallero-Araguas E et al. Rheumatology 2012](https://pubmed.ncbi.nlm.nih.gov/22539482/); [Oldroyd A et al. Rheumatology 2019](https://pubmed.ncbi.nlm.nih.gov/30590730/) |
-| Anti-MDA5 and rapidly progressive ILD | Class II, Level B | [Sato S et al. Arthritis Rheum 2009](https://pubmed.ncbi.nlm.nih.gov/19248105/); [Moghadam-Kia S et al. Chest 2016](https://pubmed.ncbi.nlm.nih.gov/27445093/) |
-| Anti-SRP and immune-mediated necrotizing myopathy | Class II, Level B | [Hengstman GJ et al. Ann Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16634041/); [Allenbach Y et al. Neurology 2014](https://pubmed.ncbi.nlm.nih.gov/24808022/) |
-| Anti-HMGCR necrotizing myopathy | Class II, Level B | [Mammen AL et al. N Engl J Med 2011](https://pubmed.ncbi.nlm.nih.gov/21992115/) |
-| High-dose corticosteroids as first-line treatment | Class II, Level B | Expert consensus; [Oddis CV, Aggarwal R. Nat Rev Rheumatol 2018](https://pubmed.ncbi.nlm.nih.gov/29867057/) |
-| Methotrexate as steroid-sparing agent | Class II, Level B | [Bunch TW et al. Medicine 1980](https://pubmed.ncbi.nlm.nih.gov/7432151/) |
-| Azathioprine as steroid-sparing agent | Class II, Level B | [Bunch TW et al. Medicine 1980](https://pubmed.ncbi.nlm.nih.gov/7432151/) |
-| Mycophenolate for inflammatory myopathy | Class II, Level B | [Rowin J et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16966546/); [Pisoni CN et al. Rheumatology 2007](https://pubmed.ncbi.nlm.nih.gov/17586862/) |
-| Rituximab for refractory inflammatory myopathy (RIM trial) | Class I, Level B | [Oddis CV et al. Arthritis Rheum 2013](https://pubmed.ncbi.nlm.nih.gov/23740368/) |
-| Cyclophosphamide for ILD in anti-synthetase syndrome | Class II, Level C | [Fischer A et al. J Rheumatol 2006](https://pubmed.ncbi.nlm.nih.gov/16652425/) |
-| Triple therapy (steroids + tacrolimus + cyclophosphamide) for anti-MDA5 ILD | Class II, Level C | [Tsuji H et al. Rheumatology 2020](https://pubmed.ncbi.nlm.nih.gov/31697388/) |
-| JAK inhibitors (tofacitinib) for refractory DM | Class III (case series) | [Chen Z et al. Clin Rheumatol 2021](https://pubmed.ncbi.nlm.nih.gov/33420630/); [Paik JJ et al. Brain 2021](https://pubmed.ncbi.nlm.nih.gov/33585898/) |
-| Hydroxychloroquine for DM skin disease | Class II, Level C | [Ang GC, Werth VP. Curr Rheumatol Rep 2005](https://pubmed.ncbi.nlm.nih.gov/16078084/) |
-| ENMC classification of inflammatory myopathies | Expert consensus | [Hoogendijk JE et al. Neuromuscul Disord 2004](https://pubmed.ncbi.nlm.nih.gov/14609683/) |
-| ACR/EULAR classification criteria for idiopathic inflammatory myopathies | Class I | [Lundberg IE et al. Ann Rheum Dis 2017](https://pubmed.ncbi.nlm.nih.gov/28646086/) |
-| Muscle biopsy findings in DM vs PM vs IMNM | Class II | [Dalakas MC. NEJM 2015](https://pubmed.ncbi.nlm.nih.gov/26132883/) |
-| Malignancy screening in dermatomyositis | Class II, Level B | [Hill CL et al. Lancet 2001](https://pubmed.ncbi.nlm.nih.gov/11166885/); [Olazagasti JM et al. Arthritis Care Res 2015](https://pubmed.ncbi.nlm.nih.gov/25155471/) |
+| IVIG for dermatomyositis (ProDERM trial) | Class I, Level A | [Aggarwal R et al. NEJM 2022](https://pubmed.ncbi.nlm.nih.gov/36198179/) |
+| Myositis-specific antibody classification and clinical significance | Class II, Level B | [Betteridge Z et al. Nat Rev Rheumatol 2020](https://pubmed.ncbi.nlm.nih.gov/33253107/) |
+| Anti-TIF1-gamma association with malignancy in DM | Class II, Level B | [Trallero-Araguas E et al. Rheumatology 2012](https://pubmed.ncbi.nlm.nih.gov/21953614/); [Oldroyd A et al. Rheumatology 2019](https://pubmed.ncbi.nlm.nih.gov/31660533/) |
+| Anti-MDA5 and rapidly progressive ILD | Class II, Level B | [Sato S et al. Arthritis Rheum 2009](https://pubmed.ncbi.nlm.nih.gov/19565506/); [Moghadam-Kia S et al. Chest 2016](https://pubmed.ncbi.nlm.nih.gov/26760521/) |
+| Anti-SRP and immune-mediated necrotizing myopathy | Class II, Level B | [Hengstman GJ et al. Ann Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16937013/); [Allenbach Y et al. Neurology 2014](https://pubmed.ncbi.nlm.nih.gov/24797170/) |
+| Anti-HMGCR necrotizing myopathy | Class II, Level B | [Mammen AL et al. N Engl J Med 2011](https://pubmed.ncbi.nlm.nih.gov/22319905/) |
+| High-dose corticosteroids as first-line treatment | Class II, Level B | Expert consensus; [Oddis CV, Aggarwal R. Nat Rev Rheumatol 2018](https://pubmed.ncbi.nlm.nih.gov/30206373/) |
+| Methotrexate as steroid-sparing agent | Class II, Level B | [Bunch TW et al. Medicine 1980](https://pubmed.ncbi.nlm.nih.gov/24823302/) |
+| Azathioprine as steroid-sparing agent | Class II, Level B | [Bunch TW et al. Medicine 1980](https://pubmed.ncbi.nlm.nih.gov/24823302/) |
+| Mycophenolate for inflammatory myopathy | Class II, Level B | [Rowin J et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16636243/); [Pisoni CN et al. Rheumatology 2007](https://pubmed.ncbi.nlm.nih.gov/17003173/) |
+| Rituximab for refractory inflammatory myopathy (RIM trial) | Class I, Level B | [Oddis CV et al. Arthritis Rheum 2013](https://pubmed.ncbi.nlm.nih.gov/23124935/) |
+| Cyclophosphamide for ILD in anti-synthetase syndrome | Class II, Level C | [Fischer A et al. J Rheumatol 2006](https://pubmed.ncbi.nlm.nih.gov/16783860/) |
+| Triple therapy (steroids + tacrolimus + cyclophosphamide) for anti-MDA5 ILD | Class II, Level C | [Tsuji H et al. Rheumatology 2020](https://pubmed.ncbi.nlm.nih.gov/32276271/) |
+| JAK inhibitors (tofacitinib) for refractory DM | Class III (case series) | [Chen Z et al. Clin Rheumatol 2021](https://pubmed.ncbi.nlm.nih.gov/34674082/); [Paik JJ et al. Brain 2021](https://pubmed.ncbi.nlm.nih.gov/36238874/) |
+| Hydroxychloroquine for DM skin disease | Class II, Level C | [Ang GC, Werth VP. Curr Rheumatol Rep 2005](https://pubmed.ncbi.nlm.nih.gov/16853894/) |
+| ENMC classification of inflammatory myopathies | Expert consensus | [Hoogendijk JE et al. Neuromuscul Disord 2004](https://pubmed.ncbi.nlm.nih.gov/15099594/) |
+| ACR/EULAR classification criteria for idiopathic inflammatory myopathies | Class I | [Lundberg IE et al. Ann Rheum Dis 2017](https://pubmed.ncbi.nlm.nih.gov/29079590/) |
+| Muscle biopsy findings in DM vs PM vs IMNM | Class II | [Dalakas MC. NEJM 2015](https://pubmed.ncbi.nlm.nih.gov/26200989/) |
+| Malignancy screening in dermatomyositis | Class II, Level B | [Hill CL et al. Lancet 2001](https://pubmed.ncbi.nlm.nih.gov/11438157/); [Olazagasti JM et al. Arthritis Care Res 2015](https://pubmed.ncbi.nlm.nih.gov/26404949/) |
 | MRI for guiding muscle biopsy site selection | Class II, Level B | [Tomasova Studynkova J et al. Rheumatology 2007](https://pubmed.ncbi.nlm.nih.gov/17478465/) |
 | Exercise safety and benefit in inflammatory myopathy | Class I, Level B | [Alemo Munters L et al. Arthritis Res Ther 2013](https://pubmed.ncbi.nlm.nih.gov/24286216/) |
-| Anti-synthetase syndrome clinical spectrum | Class II | [Connors GR et al. Semin Respir Crit Care Med 2010](https://pubmed.ncbi.nlm.nih.gov/21213203/) |
+| Anti-synthetase syndrome clinical spectrum | Class II | [Connors GR et al. Semin Respir Crit Care Med 2010](https://pubmed.ncbi.nlm.nih.gov/21338842/) |
 | DVT prophylaxis in immobilized patients | Class I, Level C | Standard of care for immobilized patients |
 | PCP prophylaxis during immunosuppression | Class II, Level C | Expert consensus; standard infectious disease practice |
-| Rhabdomyolysis management with aggressive IV hydration | Class II, Level B | [Bosch X et al. NEJM 2009](https://pubmed.ncbi.nlm.nih.gov/19571312/) |
-| Dysphagia management in inflammatory myopathy | Class II, Level C | [Oh TH et al. Semin Arthritis Rheum 2007](https://pubmed.ncbi.nlm.nih.gov/17583772/) |
+| Rhabdomyolysis management with aggressive IV hydration | Class II, Level B | [Bosch X et al. NEJM 2009](https://pubmed.ncbi.nlm.nih.gov/19571284/) |
+| Dysphagia management in inflammatory myopathy | Class II, Level C | [Oh TH et al. Semin Arthritis Rheum 2007](https://pubmed.ncbi.nlm.nih.gov/19096596/) |
 
 ---
 

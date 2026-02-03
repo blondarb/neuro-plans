@@ -282,7 +282,7 @@ SECTION B: REFERENCE (Expand as Needed)
 |----------------|----------------|--------|
 | SBP target <140 mmHg in acute ICH (presenting SBP 150-220) | Class I, Level A | INTERACT2 ([Anderson et al. NEJM 2013](https://pubmed.ncbi.nlm.nih.gov/23713578/)); AHA/ASA 2022 Guidelines |
 | Intensive BP lowering safe but benefit on functional outcome modest | Class IIa, Level A | ATACH-2 ([Qureshi et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27276234/)) — <140 vs <180 safe; no functional difference |
-| 4-factor PCC preferred over FFP for warfarin reversal | Class I, Level B | INCH trial ([Steiner et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/26898390/)) |
+| 4-factor PCC preferred over FFP for warfarin reversal | Class I, Level B | INCH trial ([Steiner et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27647638/)) |
 | Idarucizumab for dabigatran reversal | Class I, Level B | RE-VERSE AD trial ([Pollack et al. NEJM 2017](https://pubmed.ncbi.nlm.nih.gov/28693366/)) |
 | Andexanet alfa for factor Xa inhibitor reversal | Class IIa, Level B | ANNEXA-4 ([Connolly et al. NEJM 2019](https://pubmed.ncbi.nlm.nih.gov/30730782/)) |
 | Platelet transfusion NOT beneficial for antiplatelet-associated ICH | Class III (No Benefit) | PATCH trial ([Baharoglu et al. Lancet 2016](https://pubmed.ncbi.nlm.nih.gov/27178479/)) |

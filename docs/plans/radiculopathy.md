@@ -329,20 +329,20 @@ tags:
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | MRI is imaging modality of choice for suspected radiculopathy | Class I, Level A | [Boden SD et al. J Bone Joint Surg Am 1990](https://pubmed.ncbi.nlm.nih.gov/2312537/) |
-| Most cervical and lumbar radiculopathy improves with conservative treatment | Class I, Level A | [Saal JA et al. Spine 1996](https://pubmed.ncbi.nlm.nih.gov/8961451/) |
+| Most cervical and lumbar radiculopathy improves with conservative treatment | Class I, Level A | [Saal JA et al. Spine 1996](https://pubmed.ncbi.nlm.nih.gov/9112320/) |
 | NSAIDs effective for acute radiculopathy pain | Class I, Level A | [Roelofs PD et al. Cochrane 2008](https://pubmed.ncbi.nlm.nih.gov/18253976/) |
 | Gabapentin/pregabalin effective for radicular neuropathic pain | Class I, Level A | [Finnerup NB et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25575710/) |
-| Oral steroids provide short-term benefit for lumbar radiculopathy | Class I, Level B | [Goldberg H et al. JAMA 2015](https://pubmed.ncbi.nlm.nih.gov/26151393/) |
-| Epidural steroid injections provide short-term pain relief for lumbar radiculopathy | Class I, Level B | [Manchikanti L et al. Pain Physician 2021](https://pubmed.ncbi.nlm.nih.gov/33400438/) |
+| Oral steroids provide short-term benefit for lumbar radiculopathy | Class I, Level B | [Goldberg H et al. JAMA 2015](https://pubmed.ncbi.nlm.nih.gov/25988461/) |
+| Epidural steroid injections provide short-term pain relief for lumbar radiculopathy | Class I, Level B | [Manchikanti L et al. Pain Physician 2021](https://pubmed.ncbi.nlm.nih.gov/34554683/) |
 | EMG/NCS useful for confirming radiculopathy and excluding mimics after 3-4 weeks | Class II, Level B | [AANEM Practice Parameter 2010](https://pubmed.ncbi.nlm.nih.gov/20645032/) |
 | Surgery superior to conservative treatment for severe lumbar radiculopathy at 1 year | Class I, Level A | [SPORT Trial: Weinstein JN et al. JAMA 2006](https://pubmed.ncbi.nlm.nih.gov/17105757/) |
-| Cauda equina syndrome requires decompression within 48 hours for best outcomes | Class II, Level B | [Ahn UM et al. Spine 2000](https://pubmed.ncbi.nlm.nih.gov/10751293/) |
-| Physical therapy effective for cervical and lumbar radiculopathy | Class I, Level B | [Kuijper B et al. BMJ 2009](https://pubmed.ncbi.nlm.nih.gov/19818915/) |
-| Smoking cessation improves spine health and surgical outcomes | Class II, Level B | [Battie MC et al. Spine 1991](https://pubmed.ncbi.nlm.nih.gov/1836285/) |
-| Short-term muscle relaxants may help acute radiculopathy with spasm | Class II, Level B | [Chou R et al. Cochrane 2003](https://pubmed.ncbi.nlm.nih.gov/14973984/) |
-| ACDF effective for cervical radiculopathy refractory to conservative treatment | Class I, Level B | [Herkowitz HN et al. Spine 1990](https://pubmed.ncbi.nlm.nih.gov/2353855/) |
-| Microdiscectomy effective for lumbar disc herniation with radiculopathy | Class I, Level A | [Peul WC et al. NEJM 2007](https://pubmed.ncbi.nlm.nih.gov/17538085/) |
-| Duloxetine effective for chronic musculoskeletal pain including radiculopathy | Class I, Level A | [Skljarevski V et al. J Pain 2010](https://pubmed.ncbi.nlm.nih.gov/20338815/) |
+| Cauda equina syndrome requires decompression within 48 hours for best outcomes | Class II, Level B | [Ahn UM et al. Spine 2000](https://pubmed.ncbi.nlm.nih.gov/10851107/) |
+| Physical therapy effective for cervical and lumbar radiculopathy | Class I, Level B | [Kuijper B et al. BMJ 2009](https://pubmed.ncbi.nlm.nih.gov/19812130/) |
+| Smoking cessation improves spine health and surgical outcomes | Class II, Level B | [Battie MC et al. Spine 1991](https://pubmed.ncbi.nlm.nih.gov/1948392/) |
+| Short-term muscle relaxants may help acute radiculopathy with spasm | Class II, Level B | [Chou R et al. Cochrane 2003](https://pubmed.ncbi.nlm.nih.gov/17670120/) |
+| ACDF effective for cervical radiculopathy refractory to conservative treatment | Class I, Level B | [Herkowitz HN et al. Spine 1990](https://pubmed.ncbi.nlm.nih.gov/2263967/) |
+| Microdiscectomy effective for lumbar disc herniation with radiculopathy | Class I, Level A | [Peul WC et al. NEJM 2007](https://pubmed.ncbi.nlm.nih.gov/17538084/) |
+| Duloxetine effective for chronic musculoskeletal pain including radiculopathy | Class I, Level A | [Skljarevski V et al. J Pain 2010](https://pubmed.ncbi.nlm.nih.gov/20472510/) |
 | Red flags warrant urgent imaging and evaluation for serious pathology | Class II, Level B | [Chou R et al. Ann Intern Med 2007](https://pubmed.ncbi.nlm.nih.gov/17909209/) |
 
 ---

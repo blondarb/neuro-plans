@@ -331,22 +331,22 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Benzodiazepines are first-line treatment for alcohol withdrawal seizures | Class I, Level A | [Mayo-Smith MF. NEJM 1997;337:689-695](https://pubmed.ncbi.nlm.nih.gov/9278467/) |
+| Benzodiazepines are first-line treatment for alcohol withdrawal seizures | Class I, Level A | [Mayo-Smith MF. NEJM 1997;337:689-695](https://pubmed.ncbi.nlm.nih.gov/9214531/) |
 | Symptom-triggered therapy (CIWA-Ar) reduces total benzodiazepine dose and treatment duration vs fixed-schedule dosing | Class I, Level A | [Saitz R et al. JAMA 1994;272:519-523](https://pubmed.ncbi.nlm.nih.gov/8046805/) |
-| Phenytoin is NOT effective for alcohol withdrawal seizures | Class I, Level A | [Rathlev NK et al. Ann Emerg Med 1994;24:116-118](https://pubmed.ncbi.nlm.nih.gov/8010553/); [Chance JF. Ann Emerg Med 1991;20:520-522](https://pubmed.ncbi.nlm.nih.gov/2024791/) |
-| Lorazepam IV reduces seizure recurrence in alcohol withdrawal | Class I, Level A | [D'Onofrio G et al. Ann Emerg Med 1999;34:725-731](https://pubmed.ncbi.nlm.nih.gov/10577399/) |
-| High-dose IV thiamine (500 mg TID) for Wernicke encephalopathy prevention in at-risk patients | Class IIa, Level B | [Ambrose ML et al. J Clin Neurosci 2001;8:256-259](https://pubmed.ncbi.nlm.nih.gov/11386801/); [Thomson AD et al. Alcohol Alcohol 2002;37:513-521](https://pubmed.ncbi.nlm.nih.gov/12414541/) |
-| Alcohol withdrawal seizures occur in 6-48 hours after last drink; peak at 12-24 hours | Class II, Level B | [Victor M, Brausch C. Electroencephalogr Clin Neurophysiol 1967;22:63-70](https://pubmed.ncbi.nlm.nih.gov/4163649/) |
+| Phenytoin is NOT effective for alcohol withdrawal seizures | Class I, Level A | [Rathlev NK et al. Ann Emerg Med 1994;24:116-118](https://pubmed.ncbi.nlm.nih.gov/8135426/); [Chance JF. Ann Emerg Med 1991;20:520-522](https://pubmed.ncbi.nlm.nih.gov/2024792/) |
+| Lorazepam IV reduces seizure recurrence in alcohol withdrawal | Class I, Level A | [D'Onofrio G et al. Ann Emerg Med 1999;34:725-731](https://pubmed.ncbi.nlm.nih.gov/10637988/) |
+| High-dose IV thiamine (500 mg TID) for Wernicke encephalopathy prevention in at-risk patients | Class IIa, Level B | [Ambrose ML et al. J Clin Neurosci 2001;8:256-259](https://pubmed.ncbi.nlm.nih.gov/11825301/); [Thomson AD et al. Alcohol Alcohol 2002;37:513-521](https://pubmed.ncbi.nlm.nih.gov/12414541/) |
+| Alcohol withdrawal seizures occur in 6-48 hours after last drink; peak at 12-24 hours | Class II, Level B | [Victor M, Brausch C. Electroencephalogr Clin Neurophysiol 1967;22:63-70](https://pubmed.ncbi.nlm.nih.gov/6065665/) |
 | Kindling phenomenon: progressive worsening of withdrawal with repeated episodes | Class II, Level B | [Ballenger JC, Post RM. Br J Psychiatry 1978;133:1-14](https://pubmed.ncbi.nlm.nih.gov/352467/) |
 | CT head recommended for all first alcohol withdrawal seizures due to high incidence of concurrent traumatic pathology | Class II, Level B | [Earnest MP et al. Neurology 1988;38:1561-1565](https://pubmed.ncbi.nlm.nih.gov/3419599/) |
-| Magnesium supplementation for alcohol withdrawal | Class IIb, Level B | [Wilson A, Bhagwan T. Cochrane Database Syst Rev 2001](https://pubmed.ncbi.nlm.nih.gov/11279756/) |
-| Phenobarbital as adjunct or alternative for severe alcohol withdrawal | Class IIa, Level B | [Tidwell WP et al. Ann Pharmacother 2018;52:57-65](https://pubmed.ncbi.nlm.nih.gov/28886676/) |
+| Magnesium supplementation for alcohol withdrawal | Class IIb, Level B | [Wilson A, Bhagwan T. Cochrane Database Syst Rev 2001](https://pubmed.ncbi.nlm.nih.gov/11405969/) |
+| Phenobarbital as adjunct or alternative for severe alcohol withdrawal | Class IIa, Level B | [Tidwell WP et al. Ann Pharmacother 2018;52:57-65](https://pubmed.ncbi.nlm.nih.gov/30385536/) |
 | ASAM Clinical Practice Guideline on alcohol withdrawal management | Guideline | [ASAM 2020 Clinical Practice Guideline](https://pubmed.ncbi.nlm.nih.gov/31916890/) |
-| ACEP Clinical Policy on alcohol withdrawal management | Guideline | [Wolf SJ et al. Ann Emerg Med 2022;79:e1-e26](https://pubmed.ncbi.nlm.nih.gov/34112510/) |
-| Dexmedetomidine as adjunctive therapy reduces benzodiazepine requirements in alcohol withdrawal | Class IIb, Level B | [Mueller SW et al. Pharmacotherapy 2014;34:127-135](https://pubmed.ncbi.nlm.nih.gov/23907726/) |
-| Gabapentin and carbamazepine may have role in mild-moderate alcohol withdrawal | Class IIb, Level B | [Myrick H et al. Am J Psychiatry 2009;166:1025-1034](https://pubmed.ncbi.nlm.nih.gov/19487400/) |
-| Alcohol withdrawal seizures are provoked/acute symptomatic seizures and do not establish a diagnosis of epilepsy | Class I | [Beghi E et al. Epilepsia 2010;51:671-675](https://pubmed.ncbi.nlm.nih.gov/19874385/) |
-| Thiamine must be given before glucose to prevent precipitating Wernicke encephalopathy | Class IIa, Level C | Expert consensus; [Galvin R et al. Eur J Intern Med 2010;21:509-514](https://pubmed.ncbi.nlm.nih.gov/21111935/) |
+| ACEP Clinical Policy on alcohol withdrawal management | Guideline | [Wolf SJ et al. Ann Emerg Med 2022;79:e1-e26](https://pubmed.ncbi.nlm.nih.gov/37588456/) |
+| Dexmedetomidine as adjunctive therapy reduces benzodiazepine requirements in alcohol withdrawal | Class IIb, Level B | [Mueller SW et al. Pharmacotherapy 2014;34:127-135](https://pubmed.ncbi.nlm.nih.gov/24420913/) |
+| Gabapentin and carbamazepine may have role in mild-moderate alcohol withdrawal | Class IIb, Level B | [Myrick H et al. Am J Psychiatry 2009;166:1025-1034](https://pubmed.ncbi.nlm.nih.gov/20108855/) |
+| Alcohol withdrawal seizures are provoked/acute symptomatic seizures and do not establish a diagnosis of epilepsy | Class I | [Beghi E et al. Epilepsia 2010;51:671-675](https://pubmed.ncbi.nlm.nih.gov/19732133/) |
+| Thiamine must be given before glucose to prevent precipitating Wernicke encephalopathy | Class IIa, Level C | Expert consensus; [Galvin R et al. Eur J Intern Med 2010;21:509-514](https://pubmed.ncbi.nlm.nih.gov/21294435/) |
 
 ---
 

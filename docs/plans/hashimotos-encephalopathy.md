@@ -425,35 +425,35 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Hashimoto's encephalopathy as steroid-responsive encephalopathy (SREAT) | Class IV, Expert Consensus | [Castillo P et al. Arch Neurol 2006;63:197-202](https://pubmed.ncbi.nlm.nih.gov/16476807/) |
-| Anti-TPO antibodies in >95% of HE cases; diagnosis of exclusion | Class IV, Case Series | [Ferracci F et al. J Neurol Neurosurg Psychiatry 2004;75:1083-1086](https://pubmed.ncbi.nlm.nih.gov/15258206/) |
+| Anti-TPO antibodies in >95% of HE cases; diagnosis of exclusion | Class IV, Case Series | [Ferracci F et al. J Neurol Neurosurg Psychiatry 2004;75:1083-1086](https://pubmed.ncbi.nlm.nih.gov/15494144/) |
 | SREAT terminology preferred; relationship to thyroid autoimmunity uncertain | Expert Consensus | [Graus F et al. Lancet Neurol 2016;15:391-404](https://pubmed.ncbi.nlm.nih.gov/26906964/) |
 | Two clinical subtypes: diffuse progressive (type 1) and relapsing-remitting (type 2) | Class IV, Case Series | [Kothbauer-Margreiter I et al. J Neurol 1996;243:585-593](https://pubmed.ncbi.nlm.nih.gov/8865025/) |
 | CSF protein elevation in 75-80%; pleocytosis in ~25% | Class IV, Systematic Review | [Chong JY et al. Arch Neurol 2003;60:164-171](https://pubmed.ncbi.nlm.nih.gov/12580699/) |
 | EEG abnormalities in ~90% (generalized slowing, FIRDA, triphasic waves) | Class IV, Case Series | [Chong JY et al. Arch Neurol 2003;60:164-171](https://pubmed.ncbi.nlm.nih.gov/12580699/) |
-| Seizures in ~60-70% of HE; status epilepticus in ~10-15% | Class IV, Systematic Review | [Laurent C et al. Medicine 2016;95:e4075](https://pubmed.ncbi.nlm.nih.gov/27583849/) |
+| Seizures in ~60-70% of HE; status epilepticus in ~10-15% | Class IV, Systematic Review | [Laurent C et al. Medicine 2016;95:e4075](https://pubmed.ncbi.nlm.nih.gov/27442631/) |
 | Dramatic steroid response (improvement within days) | Class IV, Case Series | [Brain L et al. Lancet 1966;2:512-514](https://pubmed.ncbi.nlm.nih.gov/4161638/) |
 | High-dose IV methylprednisolone as first-line treatment | Class IV, Expert Consensus | [Castillo P et al. Arch Neurol 2006;63:197-202](https://pubmed.ncbi.nlm.nih.gov/16476807/) |
-| Relapse rate ~40-50%; associated with rapid steroid taper | Class IV, Case Series | [Olmez I et al. J Neuropsychiatry Clin Neurosci 2013;25:13-19](https://pubmed.ncbi.nlm.nih.gov/23487188/) |
-| IVIG effective in steroid-refractory cases | Class IV, Case Reports | [Jacob S & Bhatt M. J Neurol 2009;256:2005-2007](https://pubmed.ncbi.nlm.nih.gov/19655214/) |
+| Relapse rate ~40-50%; associated with rapid steroid taper | Class IV, Case Series | [Olmez I et al. J Neuropsychiatry Clin Neurosci 2013;25:13-19](https://pubmed.ncbi.nlm.nih.gov/24460337/) |
+| IVIG effective in steroid-refractory cases | Class IV, Case Reports | [Jacob S & Bhatt M. J Neurol 2009;256:2005-2007](https://pubmed.ncbi.nlm.nih.gov/20729959/) |
 | Plasmapheresis for acute refractory HE | Class IV, Case Reports | [Boers PM & Colebatch JG. Clin Neurol Neurosurg 2001;103:199-201](https://pubmed.ncbi.nlm.nih.gov/11532563/) |
-| Azathioprine and mycophenolate as steroid-sparing agents | Class IV, Case Series | [Ferracci F et al. Thyroid 2006;16:37-42](https://pubmed.ncbi.nlm.nih.gov/16487011/) |
-| Rituximab for refractory HE | Class IV, Case Reports | [Olmez I et al. J Neuropsychiatry Clin Neurosci 2013;25:13-19](https://pubmed.ncbi.nlm.nih.gov/23487188/) |
+| Azathioprine and mycophenolate as steroid-sparing agents | Class IV, Case Series | [Ferracci F et al. Thyroid 2006;16:37-42](https://pubmed.ncbi.nlm.nih.gov/16786216/) |
+| Rituximab for refractory HE | Class IV, Case Reports | [Olmez I et al. J Neuropsychiatry Clin Neurosci 2013;25:13-19](https://pubmed.ncbi.nlm.nih.gov/24460337/) |
 | Anti-TPO titers do not correlate with disease severity or activity | Class IV | [Chong JY et al. Arch Neurol 2003;60:164-171](https://pubmed.ncbi.nlm.nih.gov/12580699/) |
 | Anti-TPO antibodies found in 10-13% of general population (low specificity) | Class II, Epidemiologic | [Hollowell JG et al. J Clin Endocrinol Metab 2002;87:489-499](https://pubmed.ncbi.nlm.nih.gov/11836274/) |
-| Patients may be euthyroid, hypothyroid, or hyperthyroid at presentation | Class IV, Systematic Review | [Laurent C et al. Medicine 2016;95:e4075](https://pubmed.ncbi.nlm.nih.gov/27583849/) |
+| Patients may be euthyroid, hypothyroid, or hyperthyroid at presentation | Class IV, Systematic Review | [Laurent C et al. Medicine 2016;95:e4075](https://pubmed.ncbi.nlm.nih.gov/27442631/) |
 | MRI normal in ~50%; subcortical white matter changes in others | Class IV, Case Series | [Chong JY et al. Arch Neurol 2003;60:164-171](https://pubmed.ncbi.nlm.nih.gov/12580699/) |
 | MRI patchy enhancement or stroke-like lesions in type 2 | Class IV | [Kothbauer-Margreiter I et al. J Neurol 1996;243:585-593](https://pubmed.ncbi.nlm.nih.gov/8865025/) |
-| CSF oligoclonal bands present in ~25% of HE | Class IV | [Ferracci F et al. J Neurol Neurosurg Psychiatry 2004;75:1083-1086](https://pubmed.ncbi.nlm.nih.gov/15258206/) |
+| CSF oligoclonal bands present in ~25% of HE | Class IV | [Ferracci F et al. J Neurol Neurosurg Psychiatry 2004;75:1083-1086](https://pubmed.ncbi.nlm.nih.gov/15494144/) |
 | Anti-NAE (alpha-enolase) antibodies as proposed biomarker | Class IV, Research | [Fujii A et al. J Neuroimmunol 2005;162:130-136](https://pubmed.ncbi.nlm.nih.gov/15833368/) |
-| Female predominance (4:1 female-to-male ratio) | Class IV, Systematic Review | [Laurent C et al. Medicine 2016;95:e4075](https://pubmed.ncbi.nlm.nih.gov/27583849/) |
+| Female predominance (4:1 female-to-male ratio) | Class IV, Systematic Review | [Laurent C et al. Medicine 2016;95:e4075](https://pubmed.ncbi.nlm.nih.gov/27442631/) |
 | Mean age of onset 45-55 years; range 9-86 years | Class IV, Systematic Review | [Chong JY et al. Arch Neurol 2003;60:164-171](https://pubmed.ncbi.nlm.nih.gov/12580699/) |
 | Levetiracetam as preferred ASM in autoimmune encephalopathy | Expert Consensus | [Britton J. Handb Clin Neurol 2016;133:219-245](https://pubmed.ncbi.nlm.nih.gov/27112680/) |
 | Cognitive outcomes: majority improve but ~25% have persistent deficits | Class IV | [Castillo P et al. Arch Neurol 2006;63:197-202](https://pubmed.ncbi.nlm.nih.gov/16476807/) |
 | Importance of excluding defined autoimmune encephalitides before HE diagnosis | Expert Consensus | [Graus F et al. Lancet Neurol 2016;15:391-404](https://pubmed.ncbi.nlm.nih.gov/26906964/) |
 | Original description of Hashimoto's encephalopathy | Class IV, Case Report | [Brain L et al. Lancet 1966;2:512-514](https://pubmed.ncbi.nlm.nih.gov/4161638/) |
-| Long-term immunosuppression for relapsing HE | Class IV, Expert Practice | [Olmez I et al. J Neuropsychiatry Clin Neurosci 2013](https://pubmed.ncbi.nlm.nih.gov/23487188/) |
+| Long-term immunosuppression for relapsing HE | Class IV, Expert Practice | [Olmez I et al. J Neuropsychiatry Clin Neurosci 2013](https://pubmed.ncbi.nlm.nih.gov/24460337/) |
 | Thyroid hormone replacement does not treat the encephalopathy | Class IV | [Chong JY et al. Arch Neurol 2003](https://pubmed.ncbi.nlm.nih.gov/12580699/) |
-| Psychiatric symptoms in 35-45% (psychosis, depression, hallucinations) | Class IV, Systematic Review | [Laurent C et al. Medicine 2016;95:e4075](https://pubmed.ncbi.nlm.nih.gov/27583849/) |
+| Psychiatric symptoms in 35-45% (psychosis, depression, hallucinations) | Class IV, Systematic Review | [Laurent C et al. Medicine 2016;95:e4075](https://pubmed.ncbi.nlm.nih.gov/27442631/) |
 
 ---
 

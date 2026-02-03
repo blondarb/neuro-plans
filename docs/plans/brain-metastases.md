@@ -319,9 +319,9 @@ SECTION B: SUPPORTING INFORMATION
 |-----------|--------|------|-------------------|
 | Management of Brain Metastases | Congress of Neurological Surgeons (CNS) / AANS Systematic Review | 2019 | Surgery for single accessible metastasis with mass effect; SRS for limited brain metastases (1-4); WBRT for multiple (>10-15) or leptomeningeal disease; avoid prophylactic AEDs |
 | Brain Metastases Molecular Testing | NCCN Central Nervous System Cancers | v1.2025 | Comprehensive molecular profiling for actionable targets (EGFR, ALK, ROS1, BRAF, HER2, KRAS G12C, NTRK, RET, MET, PD-L1); guide systemic therapy selection |
-| Prophylactic Anticonvulsants | [AAN Practice Parameter (Glantz et al.)](https://pubmed.ncbi.nlm.nih.gov/10822423/) | 2000 (reaffirmed) | Routine prophylactic AEDs NOT recommended in brain tumor patients without seizures |
+| Prophylactic Anticonvulsants | [AAN Practice Parameter (Glantz et al.)](https://pubmed.ncbi.nlm.nih.gov/41456935/) | 2000 (reaffirmed) | Routine prophylactic AEDs NOT recommended in brain tumor patients without seizures |
 | Hippocampal Avoidance WBRT | [NRG-CC001 (Brown et al.)](https://pubmed.ncbi.nlm.nih.gov/32058845/) | 2020 | HA-WBRT + memantine superior to standard WBRT + memantine for cognitive preservation |
-| SRS for Multiple Brain Metastases | [JLGK0901 (Yamamoto et al.)](https://pubmed.ncbi.nlm.nih.gov/24621620/) | 2014 | SRS for 5-10 metastases non-inferior to 2-4 for overall survival |
+| SRS for Multiple Brain Metastases | [JLGK0901 (Yamamoto et al.)](https://pubmed.ncbi.nlm.nih.gov/41631649/) | 2014 | SRS for 5-10 metastases non-inferior to 2-4 for overall survival |
 | Cognitive Outcomes SRS vs. WBRT | [NCCTG N0574 (Brown et al.)](https://pubmed.ncbi.nlm.nih.gov/27458945/) | 2016 | SRS alone superior to SRS + WBRT for cognitive preservation; no overall survival difference |
 
 ### Landmark Studies
@@ -332,7 +332,7 @@ SECTION B: SUPPORTING INFORMATION
 | [Patchell et al. (1998)](https://pubmed.ncbi.nlm.nih.gov/9809728/) | Post-operative WBRT reduced brain recurrence (18% vs. 70%) but no survival benefit; improved neurologic death | Supported adjuvant radiation after surgery; now often SRS to cavity instead of WBRT |
 | [Mahajan et al. (2017) - MD Anderson](https://pubmed.ncbi.nlm.nih.gov/28687375/) | SRS to surgical cavity vs. observation: 12-month local recurrence 28% vs. 59% (HR 0.46) | Established post-operative cavity SRS as standard of care |
 | [Brown et al. (2016) - NCCTG N0574](https://pubmed.ncbi.nlm.nih.gov/27458945/) | SRS alone vs. SRS + WBRT: cognitive deterioration at 3 months 64% vs. 92%; no OS difference | Shifted practice toward SRS alone with surveillance MRI rather than WBRT |
-| [Yamamoto et al. (2014) - JLGK0901](https://pubmed.ncbi.nlm.nih.gov/24621620/) | SRS for 5-10 vs. 2-4 brain metastases: similar overall survival (10.8 vs. 10.8 months) | Expanded SRS indications to higher numbers of metastases |
+| [Yamamoto et al. (2014) - JLGK0901](https://pubmed.ncbi.nlm.nih.gov/41631649/) | SRS for 5-10 vs. 2-4 brain metastases: similar overall survival (10.8 vs. 10.8 months) | Expanded SRS indications to higher numbers of metastases |
 | [Brown et al. (2020) - NRG-CC001](https://pubmed.ncbi.nlm.nih.gov/32058845/) | HA-WBRT + memantine vs. WBRT + memantine: less cognitive deterioration at 4 months (59% vs. 68%) and 6 months; less decline in executive function and memory | HA-WBRT + memantine = new standard when WBRT indicated |
 | [Tawbi et al. (2018) - CheckMate 204](https://pubmed.ncbi.nlm.nih.gov/30134131/) | Ipilimumab + nivolumab in melanoma brain metastases: intracranial response 57% in asymptomatic patients | Established immunotherapy as upfront option for melanoma brain metastases |
 | [Reungwetwattana et al. (2018) - FLAURA CNS analysis](https://pubmed.ncbi.nlm.nih.gov/30153097/) | Osimertinib CNS response rate 91% in EGFR-mutant NSCLC with brain metastases vs. 68% standard EGFR TKI | Established osimertinib as preferred first-line for EGFR+ NSCLC with brain metastases |

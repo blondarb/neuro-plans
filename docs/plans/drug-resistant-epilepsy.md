@@ -306,19 +306,19 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Definition of DRE: failure of 2 appropriately chosen and tolerated ASMs | ILAE Consensus Definition | [Kwan et al. Epilepsia 2010](https://pubmed.ncbi.nlm.nih.gov/19817823/) |
-| Only ~5% of patients failing 2 ASMs achieve seizure freedom with further medication trials | Class II evidence | [Kwan & Brodie. NEJM 2000](https://pubmed.ncbi.nlm.nih.gov/10681270/) |
-| Temporal lobectomy superior to medical therapy for mesial TLE | Class I, Level A (RCT) | [Wiebe et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11519503/) |
+| Definition of DRE: failure of 2 appropriately chosen and tolerated ASMs | ILAE Consensus Definition | [Kwan et al. Epilepsia 2010](https://pubmed.ncbi.nlm.nih.gov/19889013/) |
+| Only ~5% of patients failing 2 ASMs achieve seizure freedom with further medication trials | Class II evidence | [Kwan & Brodie. NEJM 2000](https://pubmed.ncbi.nlm.nih.gov/10660394/) |
+| Temporal lobectomy superior to medical therapy for mesial TLE | Class I, Level A (RCT) | [Wiebe et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11484687/) |
 | Delayed surgical referral worsens outcomes; early surgery recommended | Class II evidence | [Engel et al. JAMA 2012 (ERSET)](https://pubmed.ncbi.nlm.nih.gov/22399728/) |
-| VNS reduces seizure frequency ~50% in responders; efficacy improves over years | Class I evidence | [Morris & Mueller. Epilepsy Behav 2017](https://pubmed.ncbi.nlm.nih.gov/10681269/) |
-| RNS achieves median 53% seizure reduction at 2 years, improving over time (long-term data) | Class I evidence (pivotal trial) | [Nair et al. Epilepsia 2020](https://pubmed.ncbi.nlm.nih.gov/33190226/) |
-| DBS of anterior nucleus of thalamus: 69% median seizure reduction at 5 years (SANTE trial) | Class I evidence (RCT) | [Fisher et al. Epilepsia 2010 (SANTE)](https://pubmed.ncbi.nlm.nih.gov/20067507/) |
-| Cenobamate: high responder rate (21% seizure-free) in treatment-resistant focal epilepsy | Class I evidence (RCT) | [Krauss et al. Lancet Neurol 2020 (C017 study)](https://pubmed.ncbi.nlm.nih.gov/31521534/) |
-| Ketogenic diet effective in adult DRE; ~50% achieve >50% seizure reduction | Class II evidence (systematic review) | [Liu et al. Seizure 2018](https://pubmed.ncbi.nlm.nih.gov/29290504/) |
+| VNS reduces seizure frequency ~50% in responders; efficacy improves over years | Class I evidence | [Morris & Mueller. Epilepsy Behav 2017](https://pubmed.ncbi.nlm.nih.gov/30356612/) |
+| RNS achieves median 53% seizure reduction at 2 years, improving over time (long-term data) | Class I evidence (pivotal trial) | [Nair et al. Epilepsia 2020](https://pubmed.ncbi.nlm.nih.gov/37900633/) |
+| DBS of anterior nucleus of thalamus: 69% median seizure reduction at 5 years (SANTE trial) | Class I evidence (RCT) | [Fisher et al. Epilepsia 2010 (SANTE)](https://pubmed.ncbi.nlm.nih.gov/20394643/) |
+| Cenobamate: high responder rate (21% seizure-free) in treatment-resistant focal epilepsy | Class I evidence (RCT) | [Krauss et al. Lancet Neurol 2020 (C017 study)](https://pubmed.ncbi.nlm.nih.gov/32199090/) |
+| Ketogenic diet effective in adult DRE; ~50% achieve >50% seizure reduction | Class II evidence (systematic review) | [Liu et al. Seizure 2018](https://pubmed.ncbi.nlm.nih.gov/30399461/) |
 | Cannabidiol (Epidiolex) reduces seizures in Dravet and LGS | Class I evidence (RCTs) | [Devinsky et al. NEJM 2017](https://pubmed.ncbi.nlm.nih.gov/28538134/) |
 | SUDEP risk increases with DRE; risk reduction strategies recommended | Professional society guideline | [Harden et al. Neurology 2017 (AAN Practice Guideline)](https://pubmed.ncbi.nlm.nih.gov/28438841/) |
-| Presurgical evaluation should be offered to all patients meeting DRE criteria | AAN/AES Guideline | [Engel et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/14504323/) |
-| PNES coexists with epilepsy in 10-20% of DRE patients; video-EEG essential | Class III evidence | [LaFrance et al. Epilepsia 2013](https://pubmed.ncbi.nlm.nih.gov/23551090/) |
+| Presurgical evaluation should be offered to all patients meeting DRE criteria | AAN/AES Guideline | [Engel et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/12743222/) |
+| PNES coexists with epilepsy in 10-20% of DRE patients; video-EEG essential | Class III evidence | [LaFrance et al. Epilepsia 2013](https://pubmed.ncbi.nlm.nih.gov/24111933/) |
 
 ---
 

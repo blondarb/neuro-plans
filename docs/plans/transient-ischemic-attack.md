@@ -259,7 +259,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Extended cardiac monitoring for cryptogenic TIA | Class IIa, Level B | [CRYSTAL-AF (Sanna et al. NEJM 2014)](https://pubmed.ncbi.nlm.nih.gov/24963567/); [EMBRACE (Gladstone et al. NEJM 2014)](https://pubmed.ncbi.nlm.nih.gov/24963566/) |
 | PFO closure for cryptogenic stroke/TIA age 18-60 | Class IIa, Level B | CLOSE, RESPECT, REDUCE trials |
 | MRI DWI within 24h (DWI+ = higher stroke risk) | Class I, Level B | AHA/ASA Guidelines; [Coutts et al. (Stroke 2012)](https://pubmed.ncbi.nlm.nih.gov/22302109/) |
-| ABCD2 score for risk stratification | Class IIa, Level B | [Johnston et al. (Lancet 2007)](https://pubmed.ncbi.nlm.nih.gov/17227200/); useful but imperfect; imaging adds value |
+| ABCD2 score for risk stratification | Class IIa, Level B | [Johnston et al. (Lancet 2007)](https://pubmed.ncbi.nlm.nih.gov/19030430/); useful but imperfect; imaging adds value |
 | Rapid TIA evaluation reduces 90-day stroke risk | Class I, Level B | [EXPRESS trial (Rothwell et al. Lancet 2007)](https://pubmed.ncbi.nlm.nih.gov/17928046/); [SOS-TIA (Lavallée et al. Lancet Neurol 2007)](https://pubmed.ncbi.nlm.nih.gov/17928270/) |
 | Medical therapy superior to stenting for intracranial stenosis | Class I, Level A | [SAMMPRIS trial (Chimowitz et al. NEJM 2011)](https://pubmed.ncbi.nlm.nih.gov/21899409/) |
 | OSA screening and CPAP | Class IIa, Level B | AHA/ASA 2021 Guidelines |

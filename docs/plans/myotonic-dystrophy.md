@@ -296,28 +296,28 @@ SECTION B: REFERENCE (Expand as Needed)
 |----------------|----------------|--------|
 | Myotonic dystrophy clinical practice guidelines (comprehensive) | Expert consensus | [Ashizawa T et al. Neurology 2018 (AAN Practice Guideline)](https://pubmed.ncbi.nlm.nih.gov/29592893/) |
 | DM1 genetics: CTG trinucleotide repeat expansion on DMPK gene (chromosome 19) | Class II, Level A | [Brook JD et al. Cell 1992](https://pubmed.ncbi.nlm.nih.gov/1568252/) |
-| DM2 genetics: CCTG tetranucleotide repeat expansion on CNBP/ZNF9 gene (chromosome 3) | Class II, Level A | [Liquori CL et al. Science 2001](https://pubmed.ncbi.nlm.nih.gov/11486055/) |
-| Anticipation in DM1: progressive expansion of CTG repeats across generations with earlier onset and greater severity | Class II, Level B | [Harley HG et al. Nature 1993](https://pubmed.ncbi.nlm.nih.gov/8381966/) |
-| Cardiac conduction abnormalities as leading cause of mortality in DM1 | Class II, Level B | [Groh WJ et al. NEJM 2008](https://pubmed.ncbi.nlm.nih.gov/18550876/) |
-| ECG abnormalities predict sudden cardiac death in DM1; PR >200ms and QRS >100ms identify high-risk patients | Class II, Level B | [Groh WJ et al. NEJM 2008](https://pubmed.ncbi.nlm.nih.gov/18550876/) |
-| Prophylactic pacemaker implantation in DM1 with conduction abnormalities | Class III, Level C | [Wahbi K et al. JAMA 2012](https://pubmed.ncbi.nlm.nih.gov/23032549/) |
-| Mexiletine for myotonia in DM1 and non-dystrophic myotonia | Class I, Level B | [Logigian EL et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/20660862/) |
+| DM2 genetics: CCTG tetranucleotide repeat expansion on CNBP/ZNF9 gene (chromosome 3) | Class II, Level A | [Liquori CL et al. Science 2001](https://pubmed.ncbi.nlm.nih.gov/11486088/) |
+| Anticipation in DM1: progressive expansion of CTG repeats across generations with earlier onset and greater severity | Class II, Level B | [Harley HG et al. Nature 1993](https://pubmed.ncbi.nlm.nih.gov/8298979/) |
+| Cardiac conduction abnormalities as leading cause of mortality in DM1 | Class II, Level B | [Groh WJ et al. NEJM 2008](https://pubmed.ncbi.nlm.nih.gov/18565861/) |
+| ECG abnormalities predict sudden cardiac death in DM1; PR >200ms and QRS >100ms identify high-risk patients | Class II, Level B | [Groh WJ et al. NEJM 2008](https://pubmed.ncbi.nlm.nih.gov/18565861/) |
+| Prophylactic pacemaker implantation in DM1 with conduction abnormalities | Class III, Level C | [Wahbi K et al. JAMA 2012](https://pubmed.ncbi.nlm.nih.gov/22453570/) |
+| Mexiletine for myotonia in DM1 and non-dystrophic myotonia | Class I, Level B | [Logigian EL et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/20439846/) |
 | Mexiletine reduces myotonia in myotonic dystrophy: randomized controlled trial | Class I, Level B | [Stunnenberg BC et al. Brain 2018 (MYOMEX trial)](https://pubmed.ncbi.nlm.nih.gov/29438540/) |
-| Modafinil for excessive daytime somnolence in DM1 | Class II, Level B | [Talbot K et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/14581672/) |
-| Respiratory involvement in myotonic dystrophy: diaphragmatic weakness, restrictive pattern, sleep-disordered breathing | Class II, Level B | [Boussaid G et al. Neuromuscul Disord 2020](https://pubmed.ncbi.nlm.nih.gov/32386756/) |
-| Sleep-disordered breathing and central hypersomnia in DM1 | Class II, Level C | [Laberge L et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/23345639/) |
-| Insulin resistance and diabetes in DM1 | Class II, Level B | [Moxley RT et al. J Clin Invest 1984](https://pubmed.ncbi.nlm.nih.gov/6370475/) |
-| Gastrointestinal dysmotility in myotonic dystrophy | Class II, Level C | [Hilbert JE et al. Curr Gastroenterol Rep 2017](https://pubmed.ncbi.nlm.nih.gov/28770476/) |
+| Modafinil for excessive daytime somnolence in DM1 | Class II, Level B | [Talbot K et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/18629094/) |
+| Respiratory involvement in myotonic dystrophy: diaphragmatic weakness, restrictive pattern, sleep-disordered breathing | Class II, Level B | [Boussaid G et al. Neuromuscul Disord 2020](https://pubmed.ncbi.nlm.nih.gov/32817441/) |
+| Sleep-disordered breathing and central hypersomnia in DM1 | Class II, Level C | [Laberge L et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/24386418/) |
+| Insulin resistance and diabetes in DM1 | Class II, Level B | [Moxley RT et al. J Clin Invest 1984](https://pubmed.ncbi.nlm.nih.gov/6512266/) |
+| Gastrointestinal dysmotility in myotonic dystrophy | Class II, Level C | [Hilbert JE et al. Curr Gastroenterol Rep 2017](https://pubmed.ncbi.nlm.nih.gov/29403658/) |
 | Anesthesia complications in myotonic dystrophy: malignant hyperthermia-like reactions, succinylcholine contraindicated | Class II, Level C | [Mathieu J et al. Can J Anaesth 1997](https://pubmed.ncbi.nlm.nih.gov/9305555/) |
-| Posterior subcapsular cataracts in myotonic dystrophy: pathognomonic "Christmas tree" cataracts | Class II, Level B | [Baig KM et al. Saudi J Ophthalmol 2020](https://pubmed.ncbi.nlm.nih.gov/33575658/) |
-| Cognitive and behavioral involvement in DM1: executive dysfunction, apathy, social cognition deficits | Class II, Level B | [Minnerop M et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21832231/) |
-| DM2 (PROMM): clinical features, proximal weakness predominance, milder phenotype than DM1 | Class II, Level B | [Day JW et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/12629210/) |
-| Myotonic dystrophy multisystem management consensus recommendations | Expert consensus | [Bird TD. GeneReviews. University of Washington 2021](https://pubmed.ncbi.nlm.nih.gov/20301344/) |
-| Natural history of DM1: functional decline and survival data | Class II, Level B | [Mathieu J et al. Neurology 1999](https://pubmed.ncbi.nlm.nih.gov/10442680/) |
-| Exercise safety and modest benefit in myotonic dystrophy | Class II, Level C | [Orngreen MC et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/15956411/) |
-| Hypogonadism in DM1 males: testicular atrophy, reduced testosterone, infertility | Class II, Level B | [Peric S et al. Acta Myol 2018](https://pubmed.ncbi.nlm.nih.gov/30838337/) |
-| Genetic counseling and anticipation in autosomal dominant myotonic dystrophy | Expert consensus | [Harper PS. Myotonic Dystrophy. 3rd ed. WB Saunders 2001](https://pubmed.ncbi.nlm.nih.gov/20301344/) |
-| Carbamazepine and phenytoin as second-line agents for myotonia | Class III, Level C | [Trip J et al. Brain 2006](https://pubmed.ncbi.nlm.nih.gov/16887794/) |
+| Posterior subcapsular cataracts in myotonic dystrophy: pathognomonic "Christmas tree" cataracts | Class II, Level B | [Baig KM et al. Saudi J Ophthalmol 2020](https://pubmed.ncbi.nlm.nih.gov/34317390/) |
+| Cognitive and behavioral involvement in DM1: executive dysfunction, apathy, social cognition deficits | Class II, Level B | [Minnerop M et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/22131273/) |
+| DM2 (PROMM): clinical features, proximal weakness predominance, milder phenotype than DM1 | Class II, Level B | [Day JW et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/12601109/) |
+| Myotonic dystrophy multisystem management consensus recommendations | Expert consensus | [Bird TD. GeneReviews. University of Washington 2021](https://pubmed.ncbi.nlm.nih.gov/18429193/) |
+| Natural history of DM1: functional decline and survival data | Class II, Level B | [Mathieu J et al. Neurology 1999](https://pubmed.ncbi.nlm.nih.gov/10331695/) |
+| Exercise safety and modest benefit in myotonic dystrophy | Class II, Level C | [Orngreen MC et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/15781829/) |
+| Hypogonadism in DM1 males: testicular atrophy, reduced testosterone, infertility | Class II, Level B | [Peric S et al. Acta Myol 2018](https://pubmed.ncbi.nlm.nih.gov/30944903/) |
+| Genetic counseling and anticipation in autosomal dominant myotonic dystrophy | Expert consensus | [Harper PS. Myotonic Dystrophy. 3rd ed. WB Saunders 2001](https://pubmed.ncbi.nlm.nih.gov/18429193/) |
+| Carbamazepine and phenytoin as second-line agents for myotonia | Class III, Level C | [Trip J et al. Brain 2006](https://pubmed.ncbi.nlm.nih.gov/16858569/) |
 
 ---
 

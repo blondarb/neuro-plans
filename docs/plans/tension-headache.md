@@ -264,18 +264,18 @@ Limit acute analgesic use to <10 days/month for combination analgesics, opioids,
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | ICHD-3 diagnostic criteria for tension-type headache | Expert Consensus | [Headache Classification Committee. Cephalalgia 2018](https://pubmed.ncbi.nlm.nih.gov/29368949/) |
-| Amitriptyline effective for chronic TTH prevention | Class I, Level A | [Bendtsen et al. Neurology 1996](https://pubmed.ncbi.nlm.nih.gov/8710059/) |
+| Amitriptyline effective for chronic TTH prevention | Class I, Level A | [Bendtsen et al. Neurology 1996](https://pubmed.ncbi.nlm.nih.gov/8795600/) |
 | Simple analgesics (acetaminophen, NSAIDs, aspirin) for acute TTH | Class I, Level A | [Stephens et al. Cochrane 2016](https://pubmed.ncbi.nlm.nih.gov/27306653/) |
-| Tricyclic antidepressants for chronic TTH prevention | Class I, Level A | [Jackson et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28179565/) |
-| Biofeedback and relaxation training reduce headache frequency | Class II, Level B | [Nestoriuc et al. Pain 2008](https://pubmed.ncbi.nlm.nih.gov/18455618/) |
-| Physical therapy for tension-type headache | Class II, Level B | [Espi-Lopez et al. Phys Ther 2014](https://pubmed.ncbi.nlm.nih.gov/24903113/) |
-| Cognitive behavioral therapy reduces headache disability | Class I, Level B | [Holroyd et al. JAMA 2001](https://pubmed.ncbi.nlm.nih.gov/11565519/) |
-| Medication overuse headache prevalence and management | Expert Consensus | [Diener et al. Nat Rev Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27615420/) |
-| Ibuprofen 400-800 mg effective for acute TTH | Class I, Level A | [Steiner et al. Headache 2003](https://pubmed.ncbi.nlm.nih.gov/12656706/) |
-| Combination analgesics (aspirin/acetaminophen/caffeine) effective | Class I, Level A | [Diener et al. Cephalalgia 2006](https://pubmed.ncbi.nlm.nih.gov/16472332/) |
-| Venlafaxine for chronic TTH prevention | Class II, Level B | [Zissis et al. Headache 2007](https://pubmed.ncbi.nlm.nih.gov/17371352/) |
-| Topiramate for chronic TTH (limited evidence) | Class III, Level C | [Lampl et al. J Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16485112/) |
-| Greater occipital nerve block for refractory headache | Class II, Level B | [Afridi et al. Brain 2006](https://pubmed.ncbi.nlm.nih.gov/16330505/) |
+| Tricyclic antidepressants for chronic TTH prevention | Class I, Level A | [Jackson et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28446651/) |
+| Biofeedback and relaxation training reduce headache frequency | Class II, Level B | [Nestoriuc et al. Pain 2008](https://pubmed.ncbi.nlm.nih.gov/18726688/) |
+| Physical therapy for tension-type headache | Class II, Level B | [Espi-Lopez et al. Phys Ther 2014](https://pubmed.ncbi.nlm.nih.gov/25440210/) |
+| Cognitive behavioral therapy reduces headache disability | Class I, Level B | [Holroyd et al. JAMA 2001](https://pubmed.ncbi.nlm.nih.gov/11325322/) |
+| Medication overuse headache prevalence and management | Expert Consensus | [Diener et al. Nat Rev Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27615418/) |
+| Ibuprofen 400-800 mg effective for acute TTH | Class I, Level A | [Steiner et al. Headache 2003](https://pubmed.ncbi.nlm.nih.gov/12786937/) |
+| Combination analgesics (aspirin/acetaminophen/caffeine) effective | Class I, Level A | [Diener et al. Cephalalgia 2006](https://pubmed.ncbi.nlm.nih.gov/16686921/) |
+| Venlafaxine for chronic TTH prevention | Class II, Level B | [Zissis et al. Headache 2007](https://pubmed.ncbi.nlm.nih.gov/17346304/) |
+| Topiramate for chronic TTH (limited evidence) | Class III, Level C | [Lampl et al. J Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16961787/) |
+| Greater occipital nerve block for refractory headache | Class II, Level B | [Afridi et al. Brain 2006](https://pubmed.ncbi.nlm.nih.gov/18778577/) |
 | SNNOOP10 red flags for secondary headache | Expert Consensus | [Do et al. Neurology 2019](https://pubmed.ncbi.nlm.nih.gov/30587518/) |
 
 ---

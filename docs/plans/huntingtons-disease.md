@@ -260,16 +260,16 @@ tags:
 |----------------|----------------|--------|
 | Tetrabenazine reduces chorea in HD | Class I, Level A | [Huntington Study Group. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16894067/) |
 | Deutetrabenazine reduces chorea with improved tolerability | Class I, Level A | [Huntington Study Group. JAMA 2016](https://pubmed.ncbi.nlm.nih.gov/27532915/) |
-| CAG repeat length inversely correlates with age of onset | Class II, Level B | [Andrew et al. Nat Genet 1993](https://pubmed.ncbi.nlm.nih.gov/8401577/) |
-| AAN practice parameter for HD treatment | Guideline | [Armstrong & Miyasaki. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/22815562/) |
-| High suicide rate in HD requires screening | Class II, Level B | [Paulsen et al. J Neuropsychiatry Clin Neurosci 2005](https://pubmed.ncbi.nlm.nih.gov/16179652/) |
+| CAG repeat length inversely correlates with age of onset | Class II, Level B | [Andrew et al. Nat Genet 1993](https://pubmed.ncbi.nlm.nih.gov/8401589/) |
+| AAN practice parameter for HD treatment | Guideline | [Armstrong & Miyasaki. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/22815556/) |
+| High suicide rate in HD requires screening | Class II, Level B | [Paulsen et al. J Neuropsychiatry Clin Neurosci 2005](https://pubmed.ncbi.nlm.nih.gov/16387989/) |
 | UHDRS reliable for tracking disease progression | Class II, Level A | [Huntington Study Group. Mov Disord 1996](https://pubmed.ncbi.nlm.nih.gov/8684382/) |
 | CYP2D6 genotype affects tetrabenazine metabolism | Class II, Level B | [Xenazine FDA prescribing information 2008](https://www.accessdata.fda.gov/drugsatfda_docs/label/2008/021894lbl.pdf) |
-| Genetic counseling improves outcomes in at-risk individuals | Class II, Level B | [Tibben. Handb Clin Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/18808860/) |
-| Dysphagia common and associated with aspiration risk | Class II, Level C | [Heemskerk & Roos. Dysphagia 2011](https://pubmed.ncbi.nlm.nih.gov/20803049/) |
-| Multidisciplinary care improves outcomes | Class III, Level C | [Veenhuizen & Bherer. J Huntingtons Dis 2017](https://pubmed.ncbi.nlm.nih.gov/28339403/) |
-| Exercise benefits motor and cognitive function | Class II, Level B | [Quinn et al. Cochrane Database Syst Rev 2022](https://pubmed.ncbi.nlm.nih.gov/35416314/) |
-| Valbenazine effective for hyperkinetic movements | Class I, Level A | [Hauser et al. JAMA Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/28241163/) |
+| Genetic counseling improves outcomes in at-risk individuals | Class II, Level B | [Tibben. Handb Clin Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/17352941/) |
+| Dysphagia common and associated with aspiration risk | Class II, Level C | [Heemskerk & Roos. Dysphagia 2011](https://pubmed.ncbi.nlm.nih.gov/20838817/) |
+| Multidisciplinary care improves outcomes | Class III, Level C | [Veenhuizen & Bherer. J Huntingtons Dis 2017](https://pubmed.ncbi.nlm.nih.gov/28287174/) |
+| Exercise benefits motor and cognitive function | Class II, Level B | [Quinn et al. Cochrane Database Syst Rev 2022](https://pubmed.ncbi.nlm.nih.gov/35994403/) |
+| Valbenazine effective for hyperkinetic movements | Class I, Level A | [Hauser et al. JAMA Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/29114728/) |
 
 ---
 

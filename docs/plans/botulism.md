@@ -312,22 +312,22 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Heptavalent botulinum antitoxin (HBAT) — early administration reduces mortality and duration of illness | Class IIa, Level B | [Arnon et al. JAMA 2006](https://pubmed.ncbi.nlm.nih.gov/16507803/); [Tacket et al. Am J Med 1984](https://pubmed.ncbi.nlm.nih.gov/6702902/) |
-| BabyBIG (human botulism immune globulin) for infant botulism — reduces hospitalization by 3+ weeks | Class I, Level A | [Arnon et al. N Engl J Med 2006](https://pubmed.ncbi.nlm.nih.gov/16467544/) |
-| EMG/NCS with repetitive nerve stimulation — incremental response at high-rate stimulation diagnostic | Class IIa, Level B | [Cherington M. J Neurol Neurosurg Psychiatry 1982](https://pubmed.ncbi.nlm.nih.gov/6278099/); [Gutierrez et al. Muscle Nerve 2000](https://pubmed.ncbi.nlm.nih.gov/10918203/) |
+| Heptavalent botulinum antitoxin (HBAT) — early administration reduces mortality and duration of illness | Class IIa, Level B | [Arnon et al. JAMA 2006](https://pubmed.ncbi.nlm.nih.gov/16893656/); [Tacket et al. Am J Med 1984](https://pubmed.ncbi.nlm.nih.gov/6720725/) |
+| BabyBIG (human botulism immune globulin) for infant botulism — reduces hospitalization by 3+ weeks | Class I, Level A | [Arnon et al. N Engl J Med 2006](https://pubmed.ncbi.nlm.nih.gov/16452558/) |
+| EMG/NCS with repetitive nerve stimulation — incremental response at high-rate stimulation diagnostic | Class IIa, Level B | [Cherington M. J Neurol Neurosurg Psychiatry 1982](https://pubmed.ncbi.nlm.nih.gov/6763148/); [Gutierrez et al. Muscle Nerve 2000](https://pubmed.ncbi.nlm.nih.gov/10639608/) |
 | Mouse bioassay — gold standard for botulinum toxin detection; serum sensitivity ~33-44% | Class IIa, Level C | [CDC. MMWR Recomm Rep 1998](https://pubmed.ncbi.nlm.nih.gov/9639369/) |
 | Respiratory monitoring (FVC/NIF) for intubation decisions in neuromuscular respiratory failure | Class I, Level B | [Lawn et al. Arch Neurol 2001](https://pubmed.ncbi.nlm.nih.gov/11405803/); [Wijdicks & Borel, Neurology 1998](https://pubmed.ncbi.nlm.nih.gov/9443451/) |
-| Wound debridement AFTER antitoxin administration for wound botulism | Class IIa, Level C | [Werner et al. Clin Infect Dis 2000](https://pubmed.ncbi.nlm.nih.gov/10770748/); CDC guidelines |
-| Avoid aminoglycosides — potentiate neuromuscular blockade in botulism | Class III (Harm), Level C | [Santos et al. Ann Intern Med 1981](https://pubmed.ncbi.nlm.nih.gov/6263133/) |
+| Wound debridement AFTER antitoxin administration for wound botulism | Class IIa, Level C | [Werner et al. Clin Infect Dis 2000](https://pubmed.ncbi.nlm.nih.gov/11049786/); CDC guidelines |
+| Avoid aminoglycosides — potentiate neuromuscular blockade in botulism | Class III (Harm), Level C | [Santos et al. Ann Intern Med 1981](https://pubmed.ncbi.nlm.nih.gov/7031210/) |
 | Contact CDC Emergency Operations Center (770-488-7100) for antitoxin access | Class I, Level C | [CDC Botulism Treatment Guidelines](https://pubmed.ncbi.nlm.nih.gov/9639369/) |
 | Botulism is a nationally notifiable disease — mandatory reporting | Class I, Level C | CDC nationally notifiable conditions; state public health law |
-| Do not administer antibiotics in infant botulism (risk of toxin release from bacterial lysis) | Class III (Harm), Level C | [Arnon et al. N Engl J Med 2006](https://pubmed.ncbi.nlm.nih.gov/16467544/); IBTPP guidelines |
-| Prolonged mechanical ventilation expected (median 58 days type A; 26 days type B) | Class IIa, Level B | [Wilcox et al. Chest 1990](https://pubmed.ncbi.nlm.nih.gov/2340814/) |
+| Do not administer antibiotics in infant botulism (risk of toxin release from bacterial lysis) | Class III (Harm), Level C | [Arnon et al. N Engl J Med 2006](https://pubmed.ncbi.nlm.nih.gov/16452558/); IBTPP guidelines |
+| Prolonged mechanical ventilation expected (median 58 days type A; 26 days type B) | Class IIa, Level B | [Wilcox et al. Chest 1990](https://pubmed.ncbi.nlm.nih.gov/2394143/) |
 | DVT prophylaxis for immobilized patients | Class I, Level C | Standard of care for immobilized patients |
 | Early rehabilitation improves functional outcomes | Class I, Level B | Standard of care in neuromuscular disease |
-| Metronidazole preferred over aminoglycosides for wound botulism antibiotic therapy | Class IIa, Level C | Expert consensus; [Werner et al. Clin Infect Dis 2000](https://pubmed.ncbi.nlm.nih.gov/10770748/) |
+| Metronidazole preferred over aminoglycosides for wound botulism antibiotic therapy | Class IIa, Level C | Expert consensus; [Werner et al. Clin Infect Dis 2000](https://pubmed.ncbi.nlm.nih.gov/11049786/) |
 | Succinylcholine avoidance in neuromuscular junction disorders | Class III (Harm), Level C | Risk of hyperkalemia and prolonged blockade |
-| Antitoxin most effective when given within 24h of symptom onset; still beneficial up to 72h | Class IIa, Level B | [Tacket et al. Am J Med 1984](https://pubmed.ncbi.nlm.nih.gov/6702902/); retrospective data |
+| Antitoxin most effective when given within 24h of symptom onset; still beneficial up to 72h | Class IIa, Level B | [Tacket et al. Am J Med 1984](https://pubmed.ncbi.nlm.nih.gov/6720725/); retrospective data |
 
 ---
 

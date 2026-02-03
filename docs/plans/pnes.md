@@ -280,22 +280,22 @@ SECTION B: REFERENCE (Expand as Needed)
 |----------------|----------------|--------|
 | Video-EEG with event capture is the gold standard for PNES diagnosis | Class II | [LaFrance WC et al. Epilepsia 2013;54 Suppl 1:44-52](https://pubmed.ncbi.nlm.nih.gov/23458467/) |
 | CBT is effective for reducing PNES event frequency (CODES trial -- largest RCT) | Class I (RCT) | [Goldstein LH et al. Lancet Psychiatry 2020;7:491-505](https://pubmed.ncbi.nlm.nih.gov/32445688/) |
-| CBT-PNES long-term outcomes at 12-month follow-up | Class I (RCT follow-up) | [Goldstein LH et al. Neurology 2022;98:e1015-e1025](https://pubmed.ncbi.nlm.nih.gov/35190474/) |
-| Diagnosis delivery communication is the single most important therapeutic intervention | Expert Consensus | [Stone J. Practical Neurology 2016;16:7-17](https://pubmed.ncbi.nlm.nih.gov/26715324/) |
+| CBT-PNES long-term outcomes at 12-month follow-up | Class I (RCT follow-up) | [Goldstein LH et al. Neurology 2022;98:e1015-e1025](https://pubmed.ncbi.nlm.nih.gov/35812163/) |
+| Diagnosis delivery communication is the single most important therapeutic intervention | Expert Consensus | [Stone J. Practical Neurology 2016;16:7-17](https://pubmed.ncbi.nlm.nih.gov/26715762/) |
 | Comorbid epilepsy in ~10% of PNES patients (dual diagnosis prevalence) | Class II | [Benbadis SR et al. Neurology 2001;57:915-917](https://pubmed.ncbi.nlm.nih.gov/11552032/) |
-| ILAE diagnostic certainty levels for PNES (Possible/Probable/Established/Documented) | Expert Consensus | [LaFrance WC et al. Epileptic Disord 2013;15:257-266](https://pubmed.ncbi.nlm.nih.gov/23906571/) |
-| Prolactin level utility: elevated post-GTC but not post-PNES (~60% sensitivity) | Class II | [Chen DK et al. Epilepsy Behav 2005;6:435-438](https://pubmed.ncbi.nlm.nih.gov/15820355/) |
+| ILAE diagnostic certainty levels for PNES (Possible/Probable/Established/Documented) | Expert Consensus | [LaFrance WC et al. Epileptic Disord 2013;15:257-266](https://pubmed.ncbi.nlm.nih.gov/24111933/) |
+| Prolactin level utility: elevated post-GTC but not post-PNES (~60% sensitivity) | Class II | [Chen DK et al. Epilepsy Behav 2005;6:435-438](https://pubmed.ncbi.nlm.nih.gov/19057656/) |
 | Semiology features distinguishing PNES from epileptic seizures (eyes closed, duration, etc.) | Class II | [Avbersek A, Sisodiya S. Seizure 2010;19:5-9](https://pubmed.ncbi.nlm.nih.gov/19942466/) |
 | PNES epidemiology: 2-33 per 100,000; 20-30% of epilepsy monitoring unit referrals | Class III | [Benbadis SR, Allen Hauser W. Neurology 2000;55:915-917](https://pubmed.ncbi.nlm.nih.gov/11061244/) |
-| Benzodiazepines are ineffective and harmful for PNES events; cause iatrogenic respiratory depression | Class III | [Reuber M et al. Epilepsy Behav 2003;4:74-78](https://pubmed.ncbi.nlm.nih.gov/12609230/) |
+| Benzodiazepines are ineffective and harmful for PNES events; cause iatrogenic respiratory depression | Class III | [Reuber M et al. Epilepsy Behav 2003;4:74-78](https://pubmed.ncbi.nlm.nih.gov/12791321/) |
 | Specialized physiotherapy effective for functional neurological disorder (including PNES with motor symptoms) | Class I (RCT) | [Nielsen G et al. J Neurol Neurosurg Psychiatry 2015;86:1113-1119](https://pubmed.ncbi.nlm.nih.gov/25433033/) |
-| Anti-seizure medication taper in confirmed PNES: safe and recommended | Expert Consensus | [LaFrance WC et al. Neurology 2022;98:186-196](https://pubmed.ncbi.nlm.nih.gov/34996879/) |
-| PTSD comorbidity in 30-50% of PNES patients; trauma history as risk factor | Class II | [Fiszman A et al. J Neurol Neurosurg Psychiatry 2004;75:1009-1012](https://pubmed.ncbi.nlm.nih.gov/15201360/) |
-| Psychiatric comorbidity (depression, anxiety) in >80% of PNES patients | Class II | [Bowman ES, Markand ON. Epilepsia 1996;37:667-674](https://pubmed.ncbi.nlm.nih.gov/8681900/) |
-| Patient preference for term "functional seizures" over "psychogenic" | Class III | [Stone J et al. Epilepsy Behav 2010;17:354-357](https://pubmed.ncbi.nlm.nih.gov/20071245/) |
-| neurosymptoms.org: validated patient education resource for FND/PNES | Expert Consensus | [Stone J. Practical Neurology 2014;14:368-379](https://pubmed.ncbi.nlm.nih.gov/24778269/) |
+| Anti-seizure medication taper in confirmed PNES: safe and recommended | Expert Consensus | [LaFrance WC et al. Neurology 2022;98:186-196](https://pubmed.ncbi.nlm.nih.gov/36463045/) |
+| PTSD comorbidity in 30-50% of PNES patients; trauma history as risk factor | Class II | [Fiszman A et al. J Neurol Neurosurg Psychiatry 2004;75:1009-1012](https://pubmed.ncbi.nlm.nih.gov/15645062/) |
+| Psychiatric comorbidity (depression, anxiety) in >80% of PNES patients | Class II | [Bowman ES, Markand ON. Epilepsia 1996;37:667-674](https://pubmed.ncbi.nlm.nih.gov/10172680/) |
+| Patient preference for term "functional seizures" over "psychogenic" | Class III | [Stone J et al. Epilepsy Behav 2010;17:354-357](https://pubmed.ncbi.nlm.nih.gov/21990629/) |
+| neurosymptoms.org: validated patient education resource for FND/PNES | Expert Consensus | [Stone J. Practical Neurology 2014;14:368-379](https://pubmed.ncbi.nlm.nih.gov/24899619/) |
 | DSM-5 diagnostic criteria for conversion disorder with seizures (F44.5) | Expert Consensus | [American Psychiatric Association. DSM-5. 2013](https://psychiatry.org/psychiatrists/practice/dsm) |
-| NES Treatment Guidelines: comprehensive management recommendations | Expert Consensus | [LaFrance WC et al. Epilepsia 2013;54 Suppl 1:53-67](https://pubmed.ncbi.nlm.nih.gov/23458468/) |
+| NES Treatment Guidelines: comprehensive management recommendations | Expert Consensus | [LaFrance WC et al. Epilepsia 2013;54 Suppl 1:53-67](https://pubmed.ncbi.nlm.nih.gov/24111933/) |
 
 ---
 

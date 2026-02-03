@@ -295,7 +295,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | AHA/ASA scientific statement on CVT diagnosis and management | Expert Consensus | [Saposnik G et al. Stroke 2011;42:1158-1192](https://pubmed.ncbi.nlm.nih.gov/21293023/) |
-| EAN guideline on CVT | Expert Consensus | [Ferro JM et al. Eur J Neurol 2017;24:1203-1213](https://pubmed.ncbi.nlm.nih.gov/28727262/) |
+| EAN guideline on CVT | Expert Consensus | [Ferro JM et al. Eur J Neurol 2017;24:1203-1213](https://pubmed.ncbi.nlm.nih.gov/28833980/) |
 | ISCVT (International Study on CVT): largest cohort study | Class II | [Ferro JM et al. Stroke 2004;35:664-670](https://pubmed.ncbi.nlm.nih.gov/14976332/) |
 | Anticoagulation safe and beneficial even with hemorrhagic infarction | Class II | Einhaupl K et al. J Neurol Neurosurg Psychiatry 1991;54:396-401 |
 | LMWH preferred over UFH (ISCVT data) | Class III | Coutinho JM et al. Stroke 2010;41:2519-2524 |

@@ -327,22 +327,22 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| NINDS-AIREN criteria for vascular dementia diagnosis | Class II, Level B | [Roman et al. Neurology 1993](https://pubmed.ncbi.nlm.nih.gov/8426677/) |
-| Cholinesterase inhibitors for vascular dementia (modest benefit) | Class I, Level A | [Kavirajan & Schneider. Lancet Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/17509485/) |
-| Donepezil efficacy in vascular dementia | Class I, Level A | [Erkinjuntti et al. Lancet 2002](https://pubmed.ncbi.nlm.nih.gov/11809203/) |
-| Galantamine for mixed AD/VaD | Class I, Level A | [Erkinjuntti et al. Lancet Neurol 2002](https://pubmed.ncbi.nlm.nih.gov/12849397/) |
-| Memantine for vascular dementia | Class II, Level B | [Orgogozo et al. Stroke 2002](https://pubmed.ncbi.nlm.nih.gov/11935051/) |
+| NINDS-AIREN criteria for vascular dementia diagnosis | Class II, Level B | [Roman et al. Neurology 1993](https://pubmed.ncbi.nlm.nih.gov/8094895/) |
+| Cholinesterase inhibitors for vascular dementia (modest benefit) | Class I, Level A | [Kavirajan & Schneider. Lancet Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/17689146/) |
+| Donepezil efficacy in vascular dementia | Class I, Level A | [Erkinjuntti et al. Lancet 2002](https://pubmed.ncbi.nlm.nih.gov/11965273/) |
+| Galantamine for mixed AD/VaD | Class I, Level A | [Erkinjuntti et al. Lancet Neurol 2002](https://pubmed.ncbi.nlm.nih.gov/12849365/) |
+| Memantine for vascular dementia | Class II, Level B | [Orgogozo et al. Stroke 2002](https://pubmed.ncbi.nlm.nih.gov/12105362/) |
 | Intensive BP lowering reduces dementia risk (SPRINT-MIND) | Class I, Level A | [SPRINT MIND Investigators. JAMA 2019](https://pubmed.ncbi.nlm.nih.gov/30688979/) |
 | High-intensity statin for secondary stroke prevention | Class I, Level A | [Amarenco et al. NEJM 2006 (SPARCL)](https://pubmed.ncbi.nlm.nih.gov/16899775/) |
 | Antiplatelet therapy for secondary stroke prevention | Class I, Level A | [Antithrombotic Trialists. BMJ 2002](https://pubmed.ncbi.nlm.nih.gov/11786451/) |
 | DOACs preferred over warfarin for AF-related stroke | Class I, Level A | [Ruff et al. Lancet 2014](https://pubmed.ncbi.nlm.nih.gov/24315724/) |
-| Sertraline for post-stroke depression | Class II, Level B | [Chollet et al. Lancet Neurol 2011 (FLAME)](https://pubmed.ncbi.nlm.nih.gov/21195350/) |
-| Mediterranean diet reduces dementia risk | Class II, Level B | [Scarmeas et al. Ann Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16832238/) |
+| Sertraline for post-stroke depression | Class II, Level B | [Chollet et al. Lancet Neurol 2011 (FLAME)](https://pubmed.ncbi.nlm.nih.gov/21216670/) |
+| Mediterranean diet reduces dementia risk | Class II, Level B | [Scarmeas et al. Ann Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16622828/) |
 | Physical exercise may slow cognitive decline | Class II, Level B | [Livingston et al. Lancet 2020 (Lancet Commission)](https://pubmed.ncbi.nlm.nih.gov/32738937/) |
-| Avoid antipsychotics long-term in dementia (mortality risk) | Class I, Level A | [Schneider et al. JAMA 2005](https://pubmed.ncbi.nlm.nih.gov/16219884/) |
+| Avoid antipsychotics long-term in dementia (mortality risk) | Class I, Level A | [Schneider et al. JAMA 2005](https://pubmed.ncbi.nlm.nih.gov/16234500/) |
 | CEA for symptomatic carotid stenosis 70-99% | Class I, Level A | [NASCET Collaborators. NEJM 1991](https://pubmed.ncbi.nlm.nih.gov/1852179/) |
 | CPAP treatment improves cognition in OSA patients | Class II, Level B | [Osorio et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/25878183/) |
-| CSF biomarkers help differentiate VaD from AD | Class II, Level B | [Skillback et al. Dement Geriatr Cogn Disord 2015](https://pubmed.ncbi.nlm.nih.gov/26448651/) |
+| CSF biomarkers help differentiate VaD from AD | Class II, Level B | [Skillback et al. Dement Geriatr Cogn Disord 2015](https://pubmed.ncbi.nlm.nih.gov/26133663/) |
 
 ---
 

@@ -331,23 +331,23 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Pyridostigmine for symptomatic treatment of MG | Class I, Level A | [Mehndiratta MM et al. Cochrane 2014](https://pubmed.ncbi.nlm.nih.gov/25304970/) |
+| Pyridostigmine for symptomatic treatment of MG | Class I, Level A | [Mehndiratta MM et al. Cochrane 2014](https://pubmed.ncbi.nlm.nih.gov/25310725/) |
 | Thymectomy improves outcomes in AChR+ generalized MG age 18-65 | Class I, Level B | [Wolfe GI et al. NEJM 2016 (MGTX Trial)](https://pubmed.ncbi.nlm.nih.gov/27509100/) |
-| Corticosteroids effective for MG | Class II, Level B | [Schneider-Gold C et al. Cochrane 2005](https://pubmed.ncbi.nlm.nih.gov/16034852/) |
-| Azathioprine as steroid-sparing agent | Class I, Level B | [Palace J et al. NEJM 1998](https://pubmed.ncbi.nlm.nih.gov/9771070/) |
-| Mycophenolate mofetil in MG (mixed evidence) | Class II, Level B | [Sanders DB et al. Muscle Nerve 2016](https://pubmed.ncbi.nlm.nih.gov/27438060/) |
-| Rituximab effective in MuSK-positive MG | Class II, Level B | [Nowak RJ et al. Neurology 2022](https://pubmed.ncbi.nlm.nih.gov/34986310/) |
-| Rituximab in refractory AChR+ MG | Class II, Level C | [Tandan R et al. Muscle Nerve 2017](https://pubmed.ncbi.nlm.nih.gov/27463434/) |
-| Eculizumab for refractory generalized AChR+ MG | Class I, Level A | [Howard JF et al. Lancet Neurol 2017 (REGAIN)](https://pubmed.ncbi.nlm.nih.gov/28969986/) |
+| Corticosteroids effective for MG | Class II, Level B | [Schneider-Gold C et al. Cochrane 2005](https://pubmed.ncbi.nlm.nih.gov/15846640/) |
+| Azathioprine as steroid-sparing agent | Class I, Level B | [Palace J et al. NEJM 1998](https://pubmed.ncbi.nlm.nih.gov/10070480/) |
+| Mycophenolate mofetil in MG (mixed evidence) | Class II, Level B | [Sanders DB et al. Muscle Nerve 2016](https://pubmed.ncbi.nlm.nih.gov/26661270/) |
+| Rituximab effective in MuSK-positive MG | Class II, Level B | [Nowak RJ et al. Neurology 2022](https://pubmed.ncbi.nlm.nih.gov/36380885/) |
+| Rituximab in refractory AChR+ MG | Class II, Level C | [Tandan R et al. Muscle Nerve 2017](https://pubmed.ncbi.nlm.nih.gov/28164324/) |
+| Eculizumab for refractory generalized AChR+ MG | Class I, Level A | [Howard JF et al. Lancet Neurol 2017 (REGAIN)](https://pubmed.ncbi.nlm.nih.gov/29066163/) |
 | Efgartigimod for generalized AChR+ MG | Class I, Level A | [Howard JF et al. Lancet Neurol 2021 (ADAPT)](https://pubmed.ncbi.nlm.nih.gov/34146511/) |
-| Medications that exacerbate MG | Class III, Level C | [Juel VC. Semin Neurol 2004](https://pubmed.ncbi.nlm.nih.gov/15257515/) |
+| Medications that exacerbate MG | Class III, Level C | [Juel VC. Semin Neurol 2004](https://pubmed.ncbi.nlm.nih.gov/15229794/) |
 | AAN/MGFA guidelines for MG management | Expert consensus | [Sanders DB et al. Neurology 2016](https://pubmed.ncbi.nlm.nih.gov/27386767/) |
 | Ocular MG: 50-80% generalize within 2 years | Class II, Level B | [Kupersmith MJ et al. Arch Neurol 2003](https://pubmed.ncbi.nlm.nih.gov/12975292/) |
-| Low-dose steroid initiation prevents worsening | Class II, Level B | [Pascuzzi RM. Semin Neurol 2003](https://pubmed.ncbi.nlm.nih.gov/12865163/) |
-| Anti-striated muscle antibody and thymoma association | Class II, Level B | [Romi F et al. Arch Neurol 2005](https://pubmed.ncbi.nlm.nih.gov/15956157/) |
-| Ravulizumab for generalized AChR+ MG | Class I, Level A | [Vu T et al. NEJM 2022 (CHAMPION-MG)](https://pubmed.ncbi.nlm.nih.gov/36129997/) |
-| Rozanolixizumab for generalized AChR+ MG | Class I, Level A | [Bril V et al. Lancet Neurol 2023](https://pubmed.ncbi.nlm.nih.gov/37385280/) |
-| Zilucoplan for generalized AChR+ MG | Class I, Level A | [Howard JF et al. Lancet Neurol 2023 (RAISE)](https://pubmed.ncbi.nlm.nih.gov/37863588/) |
+| Low-dose steroid initiation prevents worsening | Class II, Level B | [Pascuzzi RM. Semin Neurol 2003](https://pubmed.ncbi.nlm.nih.gov/12870109/) |
+| Anti-striated muscle antibody and thymoma association | Class II, Level B | [Romi F et al. Arch Neurol 2005](https://pubmed.ncbi.nlm.nih.gov/15767509/) |
+| Ravulizumab for generalized AChR+ MG | Class I, Level A | [Vu T et al. NEJM 2022 (CHAMPION-MG)](https://pubmed.ncbi.nlm.nih.gov/37905201/) |
+| Rozanolixizumab for generalized AChR+ MG | Class I, Level A | [Bril V et al. Lancet Neurol 2023](https://pubmed.ncbi.nlm.nih.gov/37059507/) |
+| Zilucoplan for generalized AChR+ MG | Class I, Level A | [Howard JF et al. Lancet Neurol 2023 (RAISE)](https://pubmed.ncbi.nlm.nih.gov/37863600/) |
 
 ---
 

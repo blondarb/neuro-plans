@@ -265,15 +265,15 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Magnesium sulfate superior to phenytoin and diazepam for eclampsia prevention and treatment | Class I, Level A (large RCTs) | [The Magpie Trial. Lancet 2002](https://pubmed.ncbi.nlm.nih.gov/12076175/) |
-| MgSO4 reduces eclampsia risk by 58% compared to placebo in severe preeclampsia | Class I, Level A | [Altman et al. BJOG 2002 (Magpie follow-up)](https://pubmed.ncbi.nlm.nih.gov/12402601/) |
+| MgSO4 reduces eclampsia risk by 58% compared to placebo in severe preeclampsia | Class I, Level A | [Altman et al. BJOG 2002 (Magpie follow-up)](https://pubmed.ncbi.nlm.nih.gov/12197373/) |
 | Labetalol and nifedipine equally effective for acute severe hypertension in pregnancy | Class I (RCT) | [Shekhar et al. Pregnancy Hypertens 2016](https://pubmed.ncbi.nlm.nih.gov/26907777/) |
-| PRES is the neuroimaging correlate of eclampsia in majority of cases | Class III evidence (case series) | [Brewer et al. AJNR 2013](https://pubmed.ncbi.nlm.nih.gov/22936094/) |
+| PRES is the neuroimaging correlate of eclampsia in majority of cases | Class III evidence (case series) | [Brewer et al. AJNR 2013](https://pubmed.ncbi.nlm.nih.gov/23764728/) |
 | Low-dose aspirin 81 mg from 12-16 weeks reduces preeclampsia risk in high-risk women | Class I, Level A | [Rolnik et al. NEJM 2017 (ASPRE trial)](https://pubmed.ncbi.nlm.nih.gov/28657417/) |
-| Lamotrigine and levetiracetam preferred ASMs in pregnancy (lowest teratogenicity) | Class II evidence; Registry data | [Tomson et al. Lancet Neurol 2018 (EURAP)](https://pubmed.ncbi.nlm.nih.gov/29506874/) |
-| Lamotrigine levels decrease 50-70% during pregnancy; monthly monitoring needed | Class II evidence | [Pennell et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18354078/) |
+| Lamotrigine and levetiracetam preferred ASMs in pregnancy (lowest teratogenicity) | Class II evidence; Registry data | [Tomson et al. Lancet Neurol 2018 (EURAP)](https://pubmed.ncbi.nlm.nih.gov/30129470/) |
+| Lamotrigine levels decrease 50-70% during pregnancy; monthly monitoring needed | Class II evidence | [Pennell et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18046009/) |
 | Delivery is definitive treatment for eclampsia; timing depends on gestational age and maternal/fetal status | Guideline | [ACOG Practice Bulletin 222: Gestational Hypertension and Preeclampsia 2020](https://pubmed.ncbi.nlm.nih.gov/32443079/) |
-| Postpartum eclampsia occurs in up to 26% of eclampsia cases; monitoring continues 48h post-delivery | Class III evidence | [Al-Safi et al. Am J Obstet Gynecol 2011](https://pubmed.ncbi.nlm.nih.gov/21282835/) |
-| CVT risk is 12x higher in pregnancy/postpartum; must be excluded in seizures with headache | Class III evidence | [Ferro et al. Stroke 2004](https://pubmed.ncbi.nlm.nih.gov/14988574/) |
+| Postpartum eclampsia occurs in up to 26% of eclampsia cases; monitoring continues 48h post-delivery | Class III evidence | [Al-Safi et al. Am J Obstet Gynecol 2011](https://pubmed.ncbi.nlm.nih.gov/21979459/) |
+| CVT risk is 12x higher in pregnancy/postpartum; must be excluded in seizures with headache | Class III evidence | [Ferro et al. Stroke 2004](https://pubmed.ncbi.nlm.nih.gov/14976332/) |
 
 ---
 

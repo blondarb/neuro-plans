@@ -291,26 +291,26 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Thunderclap headache as hallmark presentation; recurrent thunderclap headaches over 1-4 weeks are pathognomonic for RCVS | Class II, Level B | [Ducros et al. Brain 2007](https://pubmed.ncbi.nlm.nih.gov/17533168/) — largest prospective cohort (67 patients); defined clinical spectrum |
-| Vasoconstrictor exposure identification and withdrawal as cornerstone of management | Class II, Level B | [Ducros & Bousser. Lancet Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/23237903/) — comprehensive review of triggers and management |
-| CTA/MRA as first-line vascular imaging; "string of beads" pattern; may be normal early | Class II, Level B | [Chen et al. Cephalalgia 2010](https://pubmed.ncbi.nlm.nih.gov/19614691/) — CTA sensitivity and serial imaging findings |
-| Calcium channel blockers (verapamil, nimodipine) as mainstay therapy | Class III, Level C | [Ducros et al. Brain 2007](https://pubmed.ncbi.nlm.nih.gov/17533168/); [Singhal et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21220720/) — observational data; no RCTs available |
-| Verapamil preferred first-line CCB for RCVS | Class III, Level C | [Singhal & Bernstein. Neurocrit Care 2005](https://pubmed.ncbi.nlm.nih.gov/16159052/) — early description of verapamil use; expert consensus |
-| Nimodipine as alternative CCB with cerebrovascular selectivity | Class III, Level C | [Calabrese et al. Ann Intern Med 2007](https://pubmed.ncbi.nlm.nih.gov/17210890/) — narrative review and recommendations |
-| Resolution of vasoconstriction within 12 weeks confirms diagnosis | Class II, Level B | [Ducros et al. Brain 2007](https://pubmed.ncbi.nlm.nih.gov/17533168/) — resolution documented by serial angiography |
-| Convexity SAH occurs in ~30% of RCVS patients | Class II, Level B | [Ducros et al. Stroke 2010](https://pubmed.ncbi.nlm.nih.gov/20966404/) — hemorrhagic and ischemic complications of RCVS |
-| CSF is typically normal in RCVS (distinguishes from PACNS) | Class II, Level B | [Ducros et al. Brain 2007](https://pubmed.ncbi.nlm.nih.gov/17533168/); [Calabrese et al. Ann Intern Med 2007](https://pubmed.ncbi.nlm.nih.gov/17210890/) |
-| MRI vessel wall imaging differentiates RCVS (no enhancement) from PACNS (concentric enhancement) | Class II, Level B | [Mandell et al. Stroke 2012](https://pubmed.ncbi.nlm.nih.gov/22308252/) — vessel wall MRI distinguishing RCVS from vasculitis |
-| PRES overlap occurs in 10-40% of RCVS patients | Class II, Level B | [Singhal et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21220720/) — RCVS clinical and radiographic spectrum |
-| Ischemic stroke complicates 10-40% of RCVS, typically watershed distribution | Class II, Level B | [Ducros et al. Stroke 2010](https://pubmed.ncbi.nlm.nih.gov/20966404/) |
-| Transcranial Doppler for non-invasive monitoring of vasoconstriction | Class III, Level C | [Chen et al. Ann Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/21793098/) — TCD changes correlate with angiographic findings |
-| Postpartum angiopathy is a recognized RCVS variant | Class II, Level B | [Fugate et al. Stroke 2012](https://pubmed.ncbi.nlm.nih.gov/22246694/) — postpartum cerebral angiopathy and RCVS |
-| Intra-arterial vasodilators for refractory RCVS with progressive ischemia | Class III, Level C | [Elstner et al. J Neurol Neurosurg Psychiatry 2009](https://pubmed.ncbi.nlm.nih.gov/19289478/) — case series of endovascular rescue |
-| Avoid glucocorticoids in uncomplicated RCVS (may worsen outcomes; risk of misdiagnosis) | Class III, Level C | [Singhal et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28250024/) — glucocorticoid use associated with worse outcomes in RCVS |
-| Recurrence rate of RCVS is low (~5-8%) | Class II, Level B | [Topcuoglu et al. Stroke 2017](https://pubmed.ncbi.nlm.nih.gov/28526763/) — recurrence and long-term prognosis |
-| Blood pressure management: avoid both severe hypertension and aggressive lowering | Class III, Level C | Expert consensus; [Ducros & Bousser. Lancet Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/23237903/) |
-| Cannabis is an emerging common trigger for RCVS | Class III, Level C | [Wolff et al. Cerebrovasc Dis 2015](https://pubmed.ncbi.nlm.nih.gov/26184913/) — cannabis-associated RCVS; systematic review |
-| RCVS diagnostic criteria and proposed scoring system | Class II, Level B | [Rocha et al. Stroke 2019](https://pubmed.ncbi.nlm.nih.gov/31272315/) — RCVS2 score for clinical diagnosis |
+| Thunderclap headache as hallmark presentation; recurrent thunderclap headaches over 1-4 weeks are pathognomonic for RCVS | Class II, Level B | [Ducros et al. Brain 2007](https://pubmed.ncbi.nlm.nih.gov/18025032/) — largest prospective cohort (67 patients); defined clinical spectrum |
+| Vasoconstrictor exposure identification and withdrawal as cornerstone of management | Class II, Level B | [Ducros & Bousser. Lancet Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/22995694/) — comprehensive review of triggers and management |
+| CTA/MRA as first-line vascular imaging; "string of beads" pattern; may be normal early | Class II, Level B | [Chen et al. Cephalalgia 2010](https://pubmed.ncbi.nlm.nih.gov/19614685/) — CTA sensitivity and serial imaging findings |
+| Calcium channel blockers (verapamil, nimodipine) as mainstay therapy | Class III, Level C | [Ducros et al. Brain 2007](https://pubmed.ncbi.nlm.nih.gov/18025032/); [Singhal et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21601163/) — observational data; no RCTs available |
+| Verapamil preferred first-line CCB for RCVS | Class III, Level C | [Singhal & Bernstein. Neurocrit Care 2005](https://pubmed.ncbi.nlm.nih.gov/16159105/) — early description of verapamil use; expert consensus |
+| Nimodipine as alternative CCB with cerebrovascular selectivity | Class III, Level C | [Calabrese et al. Ann Intern Med 2007](https://pubmed.ncbi.nlm.nih.gov/17200220/) — narrative review and recommendations |
+| Resolution of vasoconstriction within 12 weeks confirms diagnosis | Class II, Level B | [Ducros et al. Brain 2007](https://pubmed.ncbi.nlm.nih.gov/18025032/) — resolution documented by serial angiography |
+| Convexity SAH occurs in ~30% of RCVS patients | Class II, Level B | [Ducros et al. Stroke 2010](https://pubmed.ncbi.nlm.nih.gov/20884871/) — hemorrhagic and ischemic complications of RCVS |
+| CSF is typically normal in RCVS (distinguishes from PACNS) | Class II, Level B | [Ducros et al. Brain 2007](https://pubmed.ncbi.nlm.nih.gov/18025032/); [Calabrese et al. Ann Intern Med 2007](https://pubmed.ncbi.nlm.nih.gov/17200220/) |
+| MRI vessel wall imaging differentiates RCVS (no enhancement) from PACNS (concentric enhancement) | Class II, Level B | [Mandell et al. Stroke 2012](https://pubmed.ncbi.nlm.nih.gov/22156692/) — vessel wall MRI distinguishing RCVS from vasculitis |
+| PRES overlap occurs in 10-40% of RCVS patients | Class II, Level B | [Singhal et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21601163/) — RCVS clinical and radiographic spectrum |
+| Ischemic stroke complicates 10-40% of RCVS, typically watershed distribution | Class II, Level B | [Ducros et al. Stroke 2010](https://pubmed.ncbi.nlm.nih.gov/20884871/) |
+| Transcranial Doppler for non-invasive monitoring of vasoconstriction | Class III, Level C | [Chen et al. Ann Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/21796667/) — TCD changes correlate with angiographic findings |
+| Postpartum angiopathy is a recognized RCVS variant | Class II, Level B | [Fugate et al. Stroke 2012](https://pubmed.ncbi.nlm.nih.gov/22223244/) — postpartum cerebral angiopathy and RCVS |
+| Intra-arterial vasodilators for refractory RCVS with progressive ischemia | Class III, Level C | [Elstner et al. J Neurol Neurosurg Psychiatry 2009](https://pubmed.ncbi.nlm.nih.gov/20035503/) — case series of endovascular rescue |
+| Avoid glucocorticoids in uncomplicated RCVS (may worsen outcomes; risk of misdiagnosis) | Class III, Level C | [Singhal et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/27940651/) — glucocorticoid use associated with worse outcomes in RCVS |
+| Recurrence rate of RCVS is low (~5-8%) | Class II, Level B | [Topcuoglu et al. Stroke 2017](https://pubmed.ncbi.nlm.nih.gov/29321703/) — recurrence and long-term prognosis |
+| Blood pressure management: avoid both severe hypertension and aggressive lowering | Class III, Level C | Expert consensus; [Ducros & Bousser. Lancet Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/22995694/) |
+| Cannabis is an emerging common trigger for RCVS | Class III, Level C | [Wolff et al. Cerebrovasc Dis 2015](https://pubmed.ncbi.nlm.nih.gov/25547150/) — cannabis-associated RCVS; systematic review |
+| RCVS diagnostic criteria and proposed scoring system | Class II, Level B | [Rocha et al. Stroke 2019](https://pubmed.ncbi.nlm.nih.gov/31203787/) — RCVS2 score for clinical diagnosis |
 
 ---
 

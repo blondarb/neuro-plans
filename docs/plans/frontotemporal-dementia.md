@@ -295,21 +295,21 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Diagnostic criteria for bvFTD (International Consensus) | Class I, Level A | [Rascovsky et al. Brain 2011](https://pubmed.ncbi.nlm.nih.gov/21824939/) |
+| Diagnostic criteria for bvFTD (International Consensus) | Class I, Level A | [Rascovsky et al. Brain 2011](https://pubmed.ncbi.nlm.nih.gov/21810890/) |
 | Diagnostic criteria for PPA variants | Class I, Level A | [Gorno-Tempini et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21325651/) |
-| SSRIs for behavioral symptoms in FTD | Class II, Level B | [Herrmann et al. J Clin Psychiatry 2012](https://pubmed.ncbi.nlm.nih.gov/22687702/) |
-| Trazodone for FTD behavioral symptoms | Class II, Level B | [Lebert et al. Dement Geriatr Cogn Disord 2004](https://pubmed.ncbi.nlm.nih.gov/15178936/) |
+| SSRIs for behavioral symptoms in FTD | Class II, Level B | [Herrmann et al. J Clin Psychiatry 2012](https://pubmed.ncbi.nlm.nih.gov/23658467/) |
+| Trazodone for FTD behavioral symptoms | Class II, Level B | [Lebert et al. Dement Geriatr Cogn Disord 2004](https://pubmed.ncbi.nlm.nih.gov/15178953/) |
 | Cholinesterase inhibitors not recommended in FTD | Class II, Level B | [Mendez et al. Am J Alzheimers Dis Other Demen 2007](https://pubmed.ncbi.nlm.nih.gov/17804830/) |
-| Antipsychotic mortality risk in dementia | Class I, Level A | [Schneider et al. JAMA 2005](https://pubmed.ncbi.nlm.nih.gov/16219884/) |
+| Antipsychotic mortality risk in dementia | Class I, Level A | [Schneider et al. JAMA 2005](https://pubmed.ncbi.nlm.nih.gov/16234500/) |
 | C9orf72 as most common genetic cause of FTD/ALS | Class I, Level A | [DeJesus-Hernandez et al. Neuron 2011](https://pubmed.ncbi.nlm.nih.gov/21944778/); [Renton et al. Neuron 2011](https://pubmed.ncbi.nlm.nih.gov/21944779/) |
-| MAPT and GRN mutations in familial FTD | Class I, Level A | [Rohrer et al. Lancet Neurol 2009](https://pubmed.ncbi.nlm.nih.gov/19345567/) |
-| FDG-PET in FTD diagnosis | Class II, Level B | [Foster et al. Ann Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/17315189/) |
-| CSF NfL as prognostic biomarker in FTD | Class II, Level B | [Rohrer et al. Neurology 2016](https://pubmed.ncbi.nlm.nih.gov/27164711/) |
-| Memantine limited efficacy in FTD | Class II, Level C | [Boxer et al. Lancet Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/23684085/) |
-| FTD-ALS continuum | Class I, Level A | [Burrell et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27083437/) |
-| Serum progranulin as GRN mutation screen | Class II, Level B | [Finch et al. J Mol Diagn 2009](https://pubmed.ncbi.nlm.nih.gov/19359499/) |
-| Practice guidelines for FTD management | Class III, Level C | [Tsai et al. Neurology 2021](https://pubmed.ncbi.nlm.nih.gov/34341099/) |
-| Riluzole in ALS | Class I, Level A | [Miller et al. Cochrane 2012](https://pubmed.ncbi.nlm.nih.gov/22419334/) |
+| MAPT and GRN mutations in familial FTD | Class I, Level A | [Rohrer et al. Lancet Neurol 2009](https://pubmed.ncbi.nlm.nih.gov/20029230/) |
+| FDG-PET in FTD diagnosis | Class II, Level B | [Foster et al. Ann Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/18693901/) |
+| CSF NfL as prognostic biomarker in FTD | Class II, Level B | [Rohrer et al. Neurology 2016](https://pubmed.ncbi.nlm.nih.gov/27581216/) |
+| Memantine limited efficacy in FTD | Class II, Level C | [Boxer et al. Lancet Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/23290598/) |
+| FTD-ALS continuum | Class I, Level A | [Burrell et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/28230552/) |
+| Serum progranulin as GRN mutation screen | Class II, Level B | [Finch et al. J Mol Diagn 2009](https://pubmed.ncbi.nlm.nih.gov/20930952/) |
+| Practice guidelines for FTD management | Class III, Level C | [Tsai et al. Neurology 2021](https://pubmed.ncbi.nlm.nih.gov/34746377/) |
+| Riluzole in ALS | Class I, Level A | [Miller et al. Cochrane 2012](https://pubmed.ncbi.nlm.nih.gov/22419278/) |
 | Relyvrio (AMX0035) withdrawn after PHOENIX trial failure | N/A | Amylyx Pharmaceuticals press release, April 2024; PHOENIX trial (NCT05021536) |
 
 ---

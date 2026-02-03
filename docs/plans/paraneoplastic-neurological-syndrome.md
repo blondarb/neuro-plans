@@ -390,29 +390,29 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Updated diagnostic criteria for paraneoplastic neurological syndromes (PNS-Care 2021) | Expert Consensus, Class III | [Graus F et al. J Neurol Neurosurg Psychiatry 2021;92:1135-1145](https://pubmed.ncbi.nlm.nih.gov/34083404/) |
+| Updated diagnostic criteria for paraneoplastic neurological syndromes (PNS-Care 2021) | Expert Consensus, Class III | [Graus F et al. J Neurol Neurosurg Psychiatry 2021;92:1135-1145](https://pubmed.ncbi.nlm.nih.gov/34408007/) |
 | Classical paraneoplastic antibodies: anti-Hu, anti-Yo, anti-Ri, anti-CV2, anti-amphiphysin | Class II-III | [Dalmau J & Rosenfeld MR. Lancet Neurol 2008;7:327-340](https://pubmed.ncbi.nlm.nih.gov/18339348/) |
 | Cell-surface antibodies more treatment-responsive than intracellular antibodies | Class II-III | [Dalmau J & Graus F. N Engl J Med 2018;378:840-851](https://pubmed.ncbi.nlm.nih.gov/29490181/) |
 | Anti-Hu syndrome: encephalomyelitis and SCLC association | Class III | [Dalmau J et al. Medicine 1992;71:59-72](https://pubmed.ncbi.nlm.nih.gov/1312211/) |
 | Anti-Yo paraneoplastic cerebellar degeneration and gynecologic cancer | Class III | [Peterson K et al. Neurology 1992;42:1931-1937](https://pubmed.ncbi.nlm.nih.gov/1407575/) |
 | Anti-Ri opsoclonus-myoclonus and breast cancer | Class III | [Pittock SJ et al. Ann Neurol 2003;53:580-587](https://pubmed.ncbi.nlm.nih.gov/12730991/) |
-| Anti-CV2/CRMP5 neuropathy and SCLC | Class III | [Honnorat J et al. Ann Neurol 2009;65:370-380](https://pubmed.ncbi.nlm.nih.gov/19399880/) |
+| Anti-CV2/CRMP5 neuropathy and SCLC | Class III | [Honnorat J et al. Ann Neurol 2009;65:370-380](https://pubmed.ncbi.nlm.nih.gov/19913860/) |
 | Anti-Ma2 limbic encephalitis and testicular germ cell tumor | Class III | [Dalmau J et al. Brain 2004;127:1831-1844](https://pubmed.ncbi.nlm.nih.gov/15215214/) |
 | Anti-VGCC and Lambert-Eaton myasthenic syndrome with SCLC | Class II | [Titulaer MJ et al. J Clin Oncol 2011;29:902-908](https://pubmed.ncbi.nlm.nih.gov/21245427/) |
-| LEMS DELTA-P score for SCLC prediction | Class II | [Titulaer MJ et al. Neurology 2011;76:1410-1415](https://pubmed.ncbi.nlm.nih.gov/21502597/) |
-| FDG-PET/CT superior to CT for occult tumor detection in PNS | Class II | [Berner U et al. J Neurol 2017;264:984-994](https://pubmed.ncbi.nlm.nih.gov/28432428/) |
-| Repeat tumor screening q6 months for 2+ years if initial screen negative | Expert Consensus | [Graus F et al. J Neurol Neurosurg Psychiatry 2021](https://pubmed.ncbi.nlm.nih.gov/34083404/) |
-| First-line immunotherapy: IV steroids, IVIG, PLEX | Class III, Expert Consensus | [Rosenfeld MR & Dalmau J. Curr Treat Options Neurol 2003;5:69-77](https://pubmed.ncbi.nlm.nih.gov/12521565/) |
+| LEMS DELTA-P score for SCLC prediction | Class II | [Titulaer MJ et al. Neurology 2011;76:1410-1415](https://pubmed.ncbi.nlm.nih.gov/22094130/) |
+| FDG-PET/CT superior to CT for occult tumor detection in PNS | Class II | [Berner U et al. J Neurol 2017;264:984-994](https://pubmed.ncbi.nlm.nih.gov/29263037/) |
+| Repeat tumor screening q6 months for 2+ years if initial screen negative | Expert Consensus | [Graus F et al. J Neurol Neurosurg Psychiatry 2021](https://pubmed.ncbi.nlm.nih.gov/34408007/) |
+| First-line immunotherapy: IV steroids, IVIG, PLEX | Class III, Expert Consensus | [Rosenfeld MR & Dalmau J. Curr Treat Options Neurol 2003;5:69-77](https://pubmed.ncbi.nlm.nih.gov/12521564/) |
 | Tumor treatment improves neurological outcome | Class II-III | [Dalmau J et al. Brain 2004;127:1831-1844](https://pubmed.ncbi.nlm.nih.gov/15215214/) |
-| Rituximab for refractory paraneoplastic syndromes | Class IV, Case Series | [Shams'ili S et al. J Neurol 2006;253:1624-1629](https://pubmed.ncbi.nlm.nih.gov/17063316/) |
+| Rituximab for refractory paraneoplastic syndromes | Class IV, Case Series | [Shams'ili S et al. J Neurol 2006;253:1624-1629](https://pubmed.ncbi.nlm.nih.gov/16444604/) |
 | Cyclophosphamide for intracellular antibody syndromes | Class IV, Expert Consensus | [Dalmau J & Graus F. N Engl J Med 2018](https://pubmed.ncbi.nlm.nih.gov/29490181/) |
-| Poor neurological prognosis with intracellular antibodies despite treatment | Class II-III | [Graus F et al. Brain 2001;124:1138-1148](https://pubmed.ncbi.nlm.nih.gov/11353729/) |
-| Paraneoplastic cerebellar degeneration: irreversible Purkinje cell loss | Class III | [Rosenfeld MR et al. Brain 2012;135:1255-1263](https://pubmed.ncbi.nlm.nih.gov/22310048/) |
-| Anti-SOX1 as SCLC marker | Class III | [Sabater L et al. J Neuroimmunol 2008;201-202:67-72](https://pubmed.ncbi.nlm.nih.gov/18653245/) |
+| Poor neurological prognosis with intracellular antibodies despite treatment | Class II-III | [Graus F et al. Brain 2001;124:1138-1148](https://pubmed.ncbi.nlm.nih.gov/11353730/) |
+| Paraneoplastic cerebellar degeneration: irreversible Purkinje cell loss | Class III | [Rosenfeld MR et al. Brain 2012;135:1255-1263](https://pubmed.ncbi.nlm.nih.gov/23634368/) |
+| Anti-SOX1 as SCLC marker | Class III | [Sabater L et al. J Neuroimmunol 2008;201-202:67-72](https://pubmed.ncbi.nlm.nih.gov/18639938/) |
 | Anti-KLHL11 and testicular seminoma | Class III | [Mandel-Brehm C et al. N Engl J Med 2019;381:47-56](https://pubmed.ncbi.nlm.nih.gov/31269365/) |
 | Levetiracetam as preferred ASM in autoimmune/paraneoplastic seizures | Expert Consensus | [Britton J. Handb Clin Neurol 2016;133:219-245](https://pubmed.ncbi.nlm.nih.gov/27112680/) |
-| Subacute sensory neuronopathy (Denny-Brown syndrome) | Class III | [Camdessanche JP et al. J Neurol Neurosurg Psychiatry 2002;73:179-183](https://pubmed.ncbi.nlm.nih.gov/12122178/) |
-| Paraneoplastic opsoclonus-myoclonus in adults | Class III | [Bataller L et al. Ann Neurol 2001;49:214-219](https://pubmed.ncbi.nlm.nih.gov/11220741/) |
+| Subacute sensory neuronopathy (Denny-Brown syndrome) | Class III | [Camdessanche JP et al. J Neurol Neurosurg Psychiatry 2002;73:179-183](https://pubmed.ncbi.nlm.nih.gov/11965178/) |
+| Paraneoplastic opsoclonus-myoclonus in adults | Class III | [Bataller L et al. Ann Neurol 2001;49:214-219](https://pubmed.ncbi.nlm.nih.gov/11586471/) |
 | Ovarian teratoma resection improves anti-NMDAR outcomes | Class II | [Titulaer MJ et al. Lancet Neurol 2013;12:157-165](https://pubmed.ncbi.nlm.nih.gov/23290630/) |
 | GABA-B encephalitis and SCLC association (~50%) | Class III | [Lancaster E et al. Lancet Neurol 2010;9:67-76](https://pubmed.ncbi.nlm.nih.gov/19962348/) |
 | Comprehensive review of paraneoplastic neurological syndromes | Expert Review | [Dalmau J & Graus F. N Engl J Med 2018;378:840-851](https://pubmed.ncbi.nlm.nih.gov/29490181/) |

@@ -299,7 +299,7 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| ICSD-3 diagnostic criteria for narcolepsy type 1 and type 2 | Consensus guidelines | [Trotti LM. Curr Med Res Opin 2016](https://pubmed.ncbi.nlm.nih.gov/27359185/) |
+| ICSD-3 diagnostic criteria for narcolepsy type 1 and type 2 | Consensus guidelines | [Trotti LM. Curr Med Res Opin 2016](https://pubmed.ncbi.nlm.nih.gov/27568889/) |
 | CSF hypocretin-1 ≤110 pg/mL diagnostic for narcolepsy type 1 | Class I | [Mignot et al. Arch Neurol 2002](https://pubmed.ncbi.nlm.nih.gov/12374492/) |
 | CSF hypocretin deficiency in narcolepsy with cataplexy | Class I | [Nishino et al. Ann Neurol 2001](https://pubmed.ncbi.nlm.nih.gov/11558795/) |
 | Modafinil efficacy for EDS in narcolepsy | Class I, Level A | [US Modafinil in Narcolepsy Multicenter Study Group. Neurology 2000](https://pubmed.ncbi.nlm.nih.gov/10720292/) |

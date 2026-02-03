@@ -281,17 +281,17 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| IV methylprednisolone accelerates visual recovery but does not change final outcome | Class I, Level A | [Beck RW et al. NEJM 1992 (ONTT)](https://pubmed.ncbi.nlm.nih.gov/1594973/) |
-| Oral prednisone alone (1 mg/kg) increases recurrence rate - avoid as monotherapy | Class I, Level A | [Beck RW et al. NEJM 1992 (ONTT)](https://pubmed.ncbi.nlm.nih.gov/1594973/) |
-| Visual prognosis excellent: 90%+ recover to 20/40 or better by 1 year | Class I | [Beck RW et al. Arch Ophthalmol 1993](https://pubmed.ncbi.nlm.nih.gov/8517838/) |
-| Brain MRI lesions predict MS: 50% at 15 years with >=1 lesion vs 25% with normal MRI | Class I | [Beck RW et al. NEJM 2003 (ONTT 10-year)](https://pubmed.ncbi.nlm.nih.gov/12660385/); [Optic Neuritis Study Group 2008 (15-year)](https://pubmed.ncbi.nlm.nih.gov/18332318/) |
-| Cell-based assay (FACS) preferred for AQP4/MOG antibody testing | Class II, Level B | [Pittock SJ et al. Neurology 2019](https://pubmed.ncbi.nlm.nih.gov/31434689/); [Waters P et al. J Neurol Neurosurg Psychiatry 2014](https://pubmed.ncbi.nlm.nih.gov/24009151/) |
-| MOG-IgG associated with better visual recovery and relapsing course | Class II | [Jarius S et al. J Neuroinflammation 2018](https://pubmed.ncbi.nlm.nih.gov/30153836/) |
-| PLEX beneficial for steroid-refractory demyelinating optic neuritis | Class II, Level B | [Roesner S et al. J Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/21822932/) |
-| VEP shows prolonged P100 latency in optic neuritis | Class I | [Halliday AM et al. Lancet 1972](https://pubmed.ncbi.nlm.nih.gov/4113644/) |
-| OCT RNFL thinning correlates with visual outcomes | Class II | [Trip SA et al. Brain 2005](https://pubmed.ncbi.nlm.nih.gov/16006539/) |
+| IV methylprednisolone accelerates visual recovery but does not change final outcome | Class I, Level A | [Beck RW et al. NEJM 1992 (ONTT)](https://pubmed.ncbi.nlm.nih.gov/1734247/) |
+| Oral prednisone alone (1 mg/kg) increases recurrence rate - avoid as monotherapy | Class I, Level A | [Beck RW et al. NEJM 1992 (ONTT)](https://pubmed.ncbi.nlm.nih.gov/1734247/) |
+| Visual prognosis excellent: 90%+ recover to 20/40 or better by 1 year | Class I | [Beck RW et al. Arch Ophthalmol 1993](https://pubmed.ncbi.nlm.nih.gov/8512477/) |
+| Brain MRI lesions predict MS: 50% at 15 years with >=1 lesion vs 25% with normal MRI | Class I | [Beck RW et al. NEJM 2003 (ONTT 10-year)](https://pubmed.ncbi.nlm.nih.gov/14627798/); [Optic Neuritis Study Group 2008 (15-year)](https://pubmed.ncbi.nlm.nih.gov/18332318/) |
+| Cell-based assay (FACS) preferred for AQP4/MOG antibody testing | Class II, Level B | [Pittock SJ et al. Neurology 2019](https://pubmed.ncbi.nlm.nih.gov/31551274/); [Waters P et al. J Neurol Neurosurg Psychiatry 2014](https://pubmed.ncbi.nlm.nih.gov/24133290/) |
+| MOG-IgG associated with better visual recovery and relapsing course | Class II | [Jarius S et al. J Neuroinflammation 2018](https://pubmed.ncbi.nlm.nih.gov/29724224/) |
+| PLEX beneficial for steroid-refractory demyelinating optic neuritis | Class II, Level B | [Roesner S et al. J Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/23750041/) |
+| VEP shows prolonged P100 latency in optic neuritis | Class I | [Halliday AM et al. Lancet 1972](https://pubmed.ncbi.nlm.nih.gov/4112367/) |
+| OCT RNFL thinning correlates with visual outcomes | Class II | [Trip SA et al. Brain 2005](https://pubmed.ncbi.nlm.nih.gov/16201598/) |
 | Vitamin D deficiency associated with increased MS risk after optic neuritis | Class II | [Munger KL et al. JAMA 2006](https://pubmed.ncbi.nlm.nih.gov/17179460/) |
-| Smoking increases MS conversion risk after CIS | Class II, Level B | [Hedstrom AK et al. Brain 2013](https://pubmed.ncbi.nlm.nih.gov/23365092/) |
+| Smoking increases MS conversion risk after CIS | Class II, Level B | [Hedstrom AK et al. Brain 2013](https://pubmed.ncbi.nlm.nih.gov/24266115/) |
 
 ---
 

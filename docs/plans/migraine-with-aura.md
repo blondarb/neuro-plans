@@ -274,24 +274,24 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Migraine with aura increases ischemic stroke risk, especially in women using combined oral contraceptives | Class II, Level B | [Etminan et al. BMJ 2005](https://pubmed.ncbi.nlm.nih.gov/15647264/) |
+| Migraine with aura increases ischemic stroke risk, especially in women using combined oral contraceptives | Class II, Level B | [Etminan et al. BMJ 2005](https://pubmed.ncbi.nlm.nih.gov/15596418/) |
 | ACOG: Combined hormonal contraceptives contraindicated in migraine with aura | Class I (Guideline) | [ACOG Practice Bulletin 2019](https://pubmed.ncbi.nlm.nih.gov/31568397/) |
 | Triptans safe and effective in migraine with typical aura | Class I, Level A | [Marmura et al. Headache 2015](https://pubmed.ncbi.nlm.nih.gov/25600718/) |
 | Triptans contraindicated in hemiplegic migraine (expert consensus) | Class III, Level C | Expert consensus; [IHS Classification ICHD-3 2018](https://pubmed.ncbi.nlm.nih.gov/29368949/) |
 | Magnesium particularly effective for migraine with aura prevention | Class II, Level B | [Peikert et al. Cephalalgia 1996](https://pubmed.ncbi.nlm.nih.gov/8792038/) |
-| Lamotrigine may reduce aura frequency specifically | Class II, Level C | [Lampl et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/16087905/) |
+| Lamotrigine may reduce aura frequency specifically | Class II, Level C | [Lampl et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/16009900/) |
 | Topiramate effective for migraine prevention | Class I, Level A | [Silberstein et al. Arch Neurol 2004](https://pubmed.ncbi.nlm.nih.gov/15096395/) |
-| Propranolol effective for migraine prevention | Class I, Level A | [Linde et al. Cochrane 2004](https://pubmed.ncbi.nlm.nih.gov/15106218/) |
+| Propranolol effective for migraine prevention | Class I, Level A | [Linde et al. Cochrane 2004](https://pubmed.ncbi.nlm.nih.gov/15106196/) |
 | CGRP monoclonal antibodies effective for prevention | Class I, Level A | [Goadsby et al. NEJM 2017 (erenumab STRIVE)](https://pubmed.ncbi.nlm.nih.gov/29171821/) |
 | Gepants safe in patients with cardiovascular contraindications to triptans | Class I, Level B | [Dodick et al. JAMA 2019 (ubrogepant ACHIEVE I)](https://pubmed.ncbi.nlm.nih.gov/31742631/) |
-| Lasmiditan (ditan) does not have cardiovascular contraindications | Class I, Level A | [Kuca et al. Headache 2018](https://pubmed.ncbi.nlm.nih.gov/30091160/) |
-| IV magnesium effective for acute migraine with aura | Class II, Level B | [Bigal et al. Headache 2002](https://pubmed.ncbi.nlm.nih.gov/11903546/) |
+| Lasmiditan (ditan) does not have cardiovascular contraindications | Class I, Level A | [Kuca et al. Headache 2018](https://pubmed.ncbi.nlm.nih.gov/30446595/) |
+| IV magnesium effective for acute migraine with aura | Class II, Level B | [Bigal et al. Headache 2002](https://pubmed.ncbi.nlm.nih.gov/12482208/) |
 | Aura duration >60 minutes warrants stroke evaluation | Class III, Level C | Expert consensus; [Lipton et al. Headache 2004](https://pubmed.ncbi.nlm.nih.gov/15147249/) |
 | PFO closure may benefit select patients with migraine with aura | Class II, Level B | [Tobis et al. JACC 2017 (RESPECT trial long-term)](https://pubmed.ncbi.nlm.nih.gov/28359515/) |
-| Acetazolamide effective for familial hemiplegic migraine | Class III, Level C | [Battistini et al. Neurology 1999](https://pubmed.ncbi.nlm.nih.gov/10489058/) |
-| Verapamil may be used acutely in hemiplegic migraine | Class III, Level C | Expert consensus; [Mathew et al. Headache 2005](https://pubmed.ncbi.nlm.nih.gov/15836583/) |
+| Acetazolamide effective for familial hemiplegic migraine | Class III, Level C | [Battistini et al. Neurology 1999](https://pubmed.ncbi.nlm.nih.gov/10408534/) |
+| Verapamil may be used acutely in hemiplegic migraine | Class III, Level C | Expert consensus; [Mathew et al. Headache 2005](https://pubmed.ncbi.nlm.nih.gov/15836565/) |
 | OnabotulinumtoxinA effective for chronic migraine | Class I, Level A | [Dodick et al. Headache 2010 (PREEMPT pooled)](https://pubmed.ncbi.nlm.nih.gov/20487038/) |
-| Exercise as effective as topiramate for migraine prevention | Class II, Level B | [Varkey et al. Cephalalgia 2011](https://pubmed.ncbi.nlm.nih.gov/21816772/) |
+| Exercise as effective as topiramate for migraine prevention | Class II, Level B | [Varkey et al. Cephalalgia 2011](https://pubmed.ncbi.nlm.nih.gov/21890526/) |
 
 ---
 

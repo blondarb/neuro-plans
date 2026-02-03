@@ -269,21 +269,21 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Serum B12 <200 pg/mL diagnostic; MMA and homocysteine for borderline levels | Class II, Level B | [Stabler SP. NEJM 2013](https://pubmed.ncbi.nlm.nih.gov/23323868/) |
+| Serum B12 <200 pg/mL diagnostic; MMA and homocysteine for borderline levels | Class II, Level B | [Stabler SP. NEJM 2013](https://pubmed.ncbi.nlm.nih.gov/23697526/) |
 | Parenteral B12 replacement for neurological B12 deficiency | Class II, Level B | [Devalia V et al. Br J Haematol 2014](https://pubmed.ncbi.nlm.nih.gov/24942828/) |
 | High-dose oral B12 (1000-2000 mcg/day) may be as effective as IM for maintenance in selected patients | Class I, Level B | [Vidal-Alaball J et al. Cochrane Database Syst Rev 2005](https://pubmed.ncbi.nlm.nih.gov/16034940/) |
-| Intrinsic factor antibodies highly specific (>95%) for pernicious anemia | Class II, Level B | [Toh BH et al. NEJM 1997](https://pubmed.ncbi.nlm.nih.gov/9321534/) |
-| MRI posterior column T2 hyperintensity in subacute combined degeneration | Class III, Level C | [Timms SR et al. Neuroradiology 1993](https://pubmed.ncbi.nlm.nih.gov/8433786/) |
-| Neurological damage may be irreversible if treatment delayed >6 months | Class II, Level B | [Healton EB et al. Medicine (Baltimore) 1991](https://pubmed.ncbi.nlm.nih.gov/1988766/) |
+| Intrinsic factor antibodies highly specific (>95%) for pernicious anemia | Class II, Level B | [Toh BH et al. NEJM 1997](https://pubmed.ncbi.nlm.nih.gov/9358143/) |
+| MRI posterior column T2 hyperintensity in subacute combined degeneration | Class III, Level C | [Timms SR et al. Neuroradiology 1993](https://pubmed.ncbi.nlm.nih.gov/8274505/) |
+| Neurological damage may be irreversible if treatment delayed >6 months | Class II, Level B | [Healton EB et al. Medicine (Baltimore) 1991](https://pubmed.ncbi.nlm.nih.gov/1648656/) |
 | Gabapentin, pregabalin, duloxetine first-line for neuropathic pain | Class I, Level A | [Finnerup NB et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25575710/) |
-| Folate supplementation without B12 may worsen neurological manifestations | Class II, Level B | [Reynolds EH. Lancet Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/17052663/) |
+| Folate supplementation without B12 may worsen neurological manifestations | Class II, Level B | [Reynolds EH. Lancet Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/17052662/) |
 | Metformin-associated B12 deficiency in 10-30% of users | Class I, Level B | [Aroda VR et al. J Clin Endocrinol Metab 2016](https://pubmed.ncbi.nlm.nih.gov/26900641/) |
-| Nitrous oxide precipitates acute neurological deterioration in B12-deficient patients | Class III, Level C | [Flippo TS, Holder WD Jr. South Med J 1993](https://pubmed.ncbi.nlm.nih.gov/8351556/) |
-| Pernicious anemia associated with 3-fold increased risk of gastric carcinoid and adenocarcinoma | Class II, Level B | [Hsing AW et al. JNCI 1993](https://pubmed.ncbi.nlm.nih.gov/8515870/) |
+| Nitrous oxide precipitates acute neurological deterioration in B12-deficient patients | Class III, Level C | [Flippo TS, Holder WD Jr. South Med J 1993](https://pubmed.ncbi.nlm.nih.gov/8250714/) |
+| Pernicious anemia associated with 3-fold increased risk of gastric carcinoid and adenocarcinoma | Class II, Level B | [Hsing AW et al. JNCI 1993](https://pubmed.ncbi.nlm.nih.gov/8431855/) |
 | Hypokalemia during B12 replacement from rapid erythropoiesis can be life-threatening | Class III, Level C | Expert consensus; case reports |
-| Celiac disease as cause of B12 malabsorption | Class II, Level B | [Dahele A, Ghosh S. Eur J Gastroenterol Hepatol 2001](https://pubmed.ncbi.nlm.nih.gov/11711768/) |
+| Celiac disease as cause of B12 malabsorption | Class II, Level B | [Dahele A, Ghosh S. Eur J Gastroenterol Hepatol 2001](https://pubmed.ncbi.nlm.nih.gov/11294962/) |
 | NCS/EMG shows axonal sensorimotor polyneuropathy in B12 deficiency neuropathy | Class II, Level B | [Saperstein DS et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/14504339/) |
-| Copper deficiency mimics B12 deficiency myeloneuropathy; should be excluded | Class III, Level C | [Kumar N et al. Mayo Clin Proc 2006](https://pubmed.ncbi.nlm.nih.gov/17036559/) |
+| Copper deficiency mimics B12 deficiency myeloneuropathy; should be excluded | Class III, Level C | [Kumar N et al. Mayo Clin Proc 2006](https://pubmed.ncbi.nlm.nih.gov/17036563/) |
 
 ---
 

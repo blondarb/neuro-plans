@@ -261,17 +261,17 @@ tags:
 | Botulinum toxin first-line for cervical dystonia | Class I, Level A | [Simpson DM et al. Neurology 2008 (AAN Guideline)](https://pubmed.ncbi.nlm.nih.gov/18458229/) |
 | Botulinum toxin for blepharospasm | Class I, Level A | [Simpson DM et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18458229/) |
 | GPi-DBS effective for generalized dystonia | Class I, Level A | [Vidailhet M et al. NEJM 2005](https://pubmed.ncbi.nlm.nih.gov/15689584/) |
-| DBS superior effect in DYT1-positive patients | Class II, Level B | [Coubes P et al. J Neurosurg 2004](https://pubmed.ncbi.nlm.nih.gov/15540920/) |
-| Trihexyphenidyl for generalized dystonia | Class II, Level C | [Burke RE et al. Neurology 1986](https://pubmed.ncbi.nlm.nih.gov/3703234/) |
-| Levodopa trial for suspected dopa-responsive dystonia | Class II, Level B | [Nygaard TG et al. Neurology 1991](https://pubmed.ncbi.nlm.nih.gov/1891117/) |
+| DBS superior effect in DYT1-positive patients | Class II, Level B | [Coubes P et al. J Neurosurg 2004](https://pubmed.ncbi.nlm.nih.gov/15309907/) |
+| Trihexyphenidyl for generalized dystonia | Class II, Level C | [Burke RE et al. Neurology 1986](https://pubmed.ncbi.nlm.nih.gov/3511401/) |
+| Levodopa trial for suspected dopa-responsive dystonia | Class II, Level B | [Nygaard TG et al. Neurology 1991](https://pubmed.ncbi.nlm.nih.gov/1899474/) |
 | Dystonia classification consensus | Expert consensus | [Albanese A et al. Mov Disord 2013](https://pubmed.ncbi.nlm.nih.gov/23649720/) |
 | Wilson's disease diagnosis and treatment | Class I, Level A | [Roberts EA, Schilsky ML. Hepatology 2008 (AASLD Guideline)](https://pubmed.ncbi.nlm.nih.gov/18506894/) |
 | D-penicillamine for Wilson's disease | Class I, Level A | [Roberts EA, Schilsky ML. Hepatology 2008](https://pubmed.ncbi.nlm.nih.gov/18506894/) |
-| Intrathecal baclofen for severe dystonia | Class II, Level B | [Albright AL et al. J Neurosurg 2001](https://pubmed.ncbi.nlm.nih.gov/11453401/) |
-| Benztropine/diphenhydramine for acute dystonic reaction | Class III, Level C | [van Harten PN et al. J Clin Psychiatry 1999](https://pubmed.ncbi.nlm.nih.gov/10401919/) |
-| Carbamazepine for paroxysmal kinesigenic dyskinesia | Class II, Level B | [Bruno MK et al. Brain 2004](https://pubmed.ncbi.nlm.nih.gov/14607786/) |
-| EFNS guidelines on dystonia diagnosis and treatment | Expert consensus | [Albanese A et al. Eur J Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/20649898/) |
-| Tetrabenazine for hyperkinetic movement disorders | Class II, Level B | [Jankovic J, Beach J. Neurology 1997](https://pubmed.ncbi.nlm.nih.gov/9109891/) |
+| Intrathecal baclofen for severe dystonia | Class II, Level B | [Albright AL et al. J Neurosurg 2001](https://pubmed.ncbi.nlm.nih.gov/18428811/) |
+| Benztropine/diphenhydramine for acute dystonic reaction | Class III, Level C | [van Harten PN et al. J Clin Psychiatry 1999](https://pubmed.ncbi.nlm.nih.gov/10626048/) |
+| Carbamazepine for paroxysmal kinesigenic dyskinesia | Class II, Level B | [Bruno MK et al. Brain 2004](https://pubmed.ncbi.nlm.nih.gov/15469950/) |
+| EFNS guidelines on dystonia diagnosis and treatment | Expert consensus | [Albanese A et al. Eur J Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/20482602/) |
+| Tetrabenazine for hyperkinetic movement disorders | Class II, Level B | [Jankovic J, Beach J. Neurology 1997](https://pubmed.ncbi.nlm.nih.gov/9040721/) |
 
 ---
 

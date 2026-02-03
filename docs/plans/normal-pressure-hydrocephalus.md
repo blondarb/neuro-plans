@@ -288,17 +288,17 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Evans index >0.3 diagnostic for ventriculomegaly | Class II, Level B | [Relkin et al. Neurosurgery 2005 (iNPH Guidelines)](https://pubmed.ncbi.nlm.nih.gov/16234657/) |
-| Callosal angle <90 degrees supports iNPH diagnosis | Class III, Level C | [Virhammar et al. J Neurosurg 2014](https://pubmed.ncbi.nlm.nih.gov/24506247/) |
-| DESH (disproportionately enlarged subarachnoid-space hydrocephalus) pattern | Class II, Level B | [Hashimoto et al. AJNR 2010](https://pubmed.ncbi.nlm.nih.gov/20150305/) |
-| High-volume LP (tap test) predicts shunt response | Class II, Level B | [Marmarou et al. J Neurosurg 2005](https://pubmed.ncbi.nlm.nih.gov/16234659/) |
-| Extended lumbar drainage more sensitive than single tap test | Class II, Level B | [Walchenbach et al. J Neurol Neurosurg Psychiatry 2002](https://pubmed.ncbi.nlm.nih.gov/12122181/) |
-| VP shunt improves symptoms in selected iNPH patients | Class II, Level B | [Hebb et al. Can J Neurol Sci 2001](https://pubmed.ncbi.nlm.nih.gov/11513352/) |
-| Programmable valves reduce revision surgery rates | Class II, Level B | [Zemack et al. Eur J Neurol 2003](https://pubmed.ncbi.nlm.nih.gov/14641516/) |
-| Gait improvement most responsive to shunting | Class II, Level B | [Ishikawa et al. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/22442434/) |
-| Short symptom duration predicts better shunt outcome | Class II, Level B | [Relkin et al. Neurosurgery 2005](https://pubmed.ncbi.nlm.nih.gov/16234657/) |
-| CSF biomarkers help differentiate NPH from AD | Class III, Level C | [Tarnaris et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21282586/) |
-| Shunt infection rate 5-10%; requires shunt removal for treatment | Class III, Level C | [McGirt et al. J Neurosurg 2003](https://pubmed.ncbi.nlm.nih.gov/12959439/) |
+| Evans index >0.3 diagnostic for ventriculomegaly | Class II, Level B | [Relkin et al. Neurosurgery 2005 (iNPH Guidelines)](https://pubmed.ncbi.nlm.nih.gov/16160425/) |
+| Callosal angle <90 degrees supports iNPH diagnosis | Class III, Level C | [Virhammar et al. J Neurosurg 2014](https://pubmed.ncbi.nlm.nih.gov/24074491/) |
+| DESH (disproportionately enlarged subarachnoid-space hydrocephalus) pattern | Class II, Level B | [Hashimoto et al. AJNR 2010](https://pubmed.ncbi.nlm.nih.gov/21921530/) |
+| High-volume LP (tap test) predicts shunt response | Class II, Level B | [Marmarou et al. J Neurosurg 2005](https://pubmed.ncbi.nlm.nih.gov/16028756/) |
+| Extended lumbar drainage more sensitive than single tap test | Class II, Level B | [Walchenbach et al. J Neurol Neurosurg Psychiatry 2002](https://pubmed.ncbi.nlm.nih.gov/11909911/) |
+| VP shunt improves symptoms in selected iNPH patients | Class II, Level B | [Hebb et al. Can J Neurol Sci 2001](https://pubmed.ncbi.nlm.nih.gov/11846911/) |
+| Programmable valves reduce revision surgery rates | Class II, Level B | [Zemack et al. Eur J Neurol 2003](https://pubmed.ncbi.nlm.nih.gov/12650416/) |
+| Gait improvement most responsive to shunting | Class II, Level B | [Ishikawa et al. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/37857491/) |
+| Short symptom duration predicts better shunt outcome | Class II, Level B | [Relkin et al. Neurosurgery 2005](https://pubmed.ncbi.nlm.nih.gov/16160425/) |
+| CSF biomarkers help differentiate NPH from AD | Class III, Level C | [Tarnaris et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21411220/) |
+| Shunt infection rate 5-10%; requires shunt removal for treatment | Class III, Level C | [McGirt et al. J Neurosurg 2003](https://pubmed.ncbi.nlm.nih.gov/12816268/) |
 | Japanese iNPH Guidelines diagnostic criteria | Class II, Level B | [Mori et al. Neurol Med Chir 2012](https://pubmed.ncbi.nlm.nih.gov/23037929/) |
 
 ---

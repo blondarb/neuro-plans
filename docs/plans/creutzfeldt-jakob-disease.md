@@ -320,22 +320,22 @@ SECTION B: REFERENCE (Expand as Needed)
 | RT-QuIC for CJD diagnosis (sensitivity 92%, specificity 99-100%) -- gold standard CSF prion biomarker | Class I, Level A | [McGuire et al. (Ann Neurol 2012)](https://pubmed.ncbi.nlm.nih.gov/22926858/); [Atarashi et al. (Nat Med 2011)](https://pubmed.ncbi.nlm.nih.gov/21278748/) |
 | MRI DWI cortical ribboning for CJD diagnosis (sensitivity >90%) | Class I, Level A | [Vitali et al. (Neurology 2011)](https://pubmed.ncbi.nlm.nih.gov/21471469/); [Young et al. (AJNR 2005)](https://pubmed.ncbi.nlm.nih.gov/15956529/) |
 | CSF 14-3-3 protein for CJD (sensitivity ~90%, specificity 70-85%) | Class IIa, Level B | [Muayqil et al. (BMC Neurol 2012)](https://pubmed.ncbi.nlm.nih.gov/22993290/); WHO diagnostic criteria |
-| CSF total tau >1150 pg/mL for CJD diagnosis (sensitivity 90%, specificity 86%) | Class IIa, Level B | [Hamlin et al. (Neurology 2012)](https://pubmed.ncbi.nlm.nih.gov/22302548/) |
+| CSF total tau >1150 pg/mL for CJD diagnosis (sensitivity 90%, specificity 86%) | Class IIa, Level B | [Hamlin et al. (Neurology 2012)](https://pubmed.ncbi.nlm.nih.gov/24203918/) |
 | CDC diagnostic criteria for probable sporadic CJD (updated 2018) | Class I, Level A | [CDC Prion Disease - Diagnostic Criteria](https://www.cdc.gov/prion-disease/hcp/diagnostic-criteria/) |
 | WHO surveillance criteria for CJD classification (definite, probable, possible) | Class I, Level A | [WHO Manual for Surveillance of Human Transmissible Spongiform Encephalopathies (2003)](https://www.who.int/publications/i/item/WHO-CDS-CSR-EPH-2002-6) |
-| EEG periodic sharp wave complexes in CJD -- sensitivity ~65% (highest in MM1 subtype) | Class IIa, Level B | [Steinhoff et al. (Clin Neurophysiol 2004)](https://pubmed.ncbi.nlm.nih.gov/15351383/) |
-| PRNP codon 129 polymorphism influences CJD phenotype and susceptibility | Class I, Level B | [Parchi et al. (Ann Neurol 1999)](https://pubmed.ncbi.nlm.nih.gov/10482261/) |
-| Molecular classification of sCJD subtypes (MM1, VV2, MV2K, etc.) | Class I, Level B | [Parchi et al. (Ann Neurol 1999)](https://pubmed.ncbi.nlm.nih.gov/10482261/); [Parchi et al. (Brain 2012)](https://pubmed.ncbi.nlm.nih.gov/23065788/) |
-| Clonazepam for CJD-associated myoclonus | Class IIb, Level C | Expert consensus; [Brown et al. (Neurology 1986)](https://pubmed.ncbi.nlm.nih.gov/3520375/) |
-| No disease-modifying treatment exists for CJD; multiple clinical trials have failed | Class I, Level A | [Stewart et al. (Neurology 2008)](https://pubmed.ncbi.nlm.nih.gov/18725590/) -- quinacrine trial; [Geschwind et al. (Ann Neurol 2013)](https://pubmed.ncbi.nlm.nih.gov/24038413/) -- quinacrine RCT |
-| Rapidly progressive AD is the most common misdiagnosis of CJD | Class IIa, Level B | [Paterson et al. (Brain 2012)](https://pubmed.ncbi.nlm.nih.gov/23065788/); NPDPSC autopsy series data |
+| EEG periodic sharp wave complexes in CJD -- sensitivity ~65% (highest in MM1 subtype) | Class IIa, Level B | [Steinhoff et al. (Clin Neurophysiol 2004)](https://pubmed.ncbi.nlm.nih.gov/16012615/) |
+| PRNP codon 129 polymorphism influences CJD phenotype and susceptibility | Class I, Level B | [Parchi et al. (Ann Neurol 1999)](https://pubmed.ncbi.nlm.nih.gov/10443888/) |
+| Molecular classification of sCJD subtypes (MM1, VV2, MV2K, etc.) | Class I, Level B | [Parchi et al. (Ann Neurol 1999)](https://pubmed.ncbi.nlm.nih.gov/10443888/); [Parchi et al. (Brain 2012)](https://pubmed.ncbi.nlm.nih.gov/22744790/) |
+| Clonazepam for CJD-associated myoclonus | Class IIb, Level C | Expert consensus; [Brown et al. (Neurology 1986)](https://pubmed.ncbi.nlm.nih.gov/3031745/) |
+| No disease-modifying treatment exists for CJD; multiple clinical trials have failed | Class I, Level A | [Stewart et al. (Neurology 2008)](https://pubmed.ncbi.nlm.nih.gov/19711662/) -- quinacrine trial; [Geschwind et al. (Ann Neurol 2013)](https://pubmed.ncbi.nlm.nih.gov/24298908/) -- quinacrine RCT |
+| Rapidly progressive AD is the most common misdiagnosis of CJD | Class IIa, Level B | [Paterson et al. (Brain 2012)](https://pubmed.ncbi.nlm.nih.gov/22744790/); NPDPSC autopsy series data |
 | Prion decontamination requires NaOH + extended autoclaving; standard sterilization insufficient | Class I, Level A | [WHO Infection Control Guidelines for TSE (2000)](https://www.who.int/publications/i/item/WHO-CDS-CSR-APH-2000.3) |
-| Pulvinar sign (bilateral pulvinar high signal on MRI) characteristic of variant CJD | Class I, Level B | [Zeidler et al. (Lancet 2000)](https://pubmed.ncbi.nlm.nih.gov/10744092/) |
+| Pulvinar sign (bilateral pulvinar high signal on MRI) characteristic of variant CJD | Class I, Level B | [Zeidler et al. (Lancet 2000)](https://pubmed.ncbi.nlm.nih.gov/11189730/) |
 | National Prion Disease Pathology Surveillance Center (NPDPSC) for diagnostic referral and autopsy | Class I, Level C | [NPDPSC (Case Western Reserve University)](https://case.edu/medicine/npdpsc/) |
-| Serum neurofilament light chain (NfL) markedly elevated in CJD; emerging blood biomarker | Class IIa, Level B | [Thompson et al. (Ann Clin Transl Neurol 2018)](https://pubmed.ncbi.nlm.nih.gov/30349859/) |
+| Serum neurofilament light chain (NfL) markedly elevated in CJD; emerging blood biomarker | Class IIa, Level B | [Thompson et al. (Ann Clin Transl Neurol 2018)](https://pubmed.ncbi.nlm.nih.gov/30271887/) |
 | CSF p-tau/t-tau ratio distinguishes CJD from Alzheimer disease | Class IIa, Level B | [Skillback et al. (J Alzheimers Dis 2014)](https://pubmed.ncbi.nlm.nih.gov/24898646/) |
-| Palliative care approach recommended for all confirmed CJD patients at diagnosis | Class I, Level C | Expert consensus; [Mead et al. (Prion 2013)](https://pubmed.ncbi.nlm.nih.gov/23370273/) |
-| Nasal brushing RT-QuIC as emerging non-invasive prion diagnostic (sensitivity ~97%) | Class IIa, Level B | [Orru et al. (NEJM 2014)](https://pubmed.ncbi.nlm.nih.gov/25099575/); [Bongianni et al. (NEJM 2017)](https://pubmed.ncbi.nlm.nih.gov/28125426/) |
+| Palliative care approach recommended for all confirmed CJD patients at diagnosis | Class I, Level C | Expert consensus; [Mead et al. (Prion 2013)](https://pubmed.ncbi.nlm.nih.gov/24511559/) |
+| Nasal brushing RT-QuIC as emerging non-invasive prion diagnostic (sensitivity ~97%) | Class IIa, Level B | [Orru et al. (NEJM 2014)](https://pubmed.ncbi.nlm.nih.gov/25377698/); [Bongianni et al. (NEJM 2017)](https://pubmed.ncbi.nlm.nih.gov/27942718/) |
 
 ---
 

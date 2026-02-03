@@ -317,22 +317,22 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Amphotericin B + flucytosine induction (2 weeks) as gold standard for cryptococcal meningitis | Class I, Level A | [Day et al. NEJM 2013 (ACTA trial)](https://pubmed.ncbi.nlm.nih.gov/23550668/); [Perfect et al. CID 2010 (IDSA Guidelines)](https://pubmed.ncbi.nlm.nih.gov/20047480/) |
-| Liposomal amphotericin B preferred over conventional for reduced nephrotoxicity | Class I, Level A | [Hamill et al. CID 2010 (AMBITION-cm)](https://pubmed.ncbi.nlm.nih.gov/20047480/); [Molloy et al. NEJM 2018 (AMBITION)](https://pubmed.ncbi.nlm.nih.gov/29897851/) |
-| Fluconazole 400 mg daily consolidation for 8 weeks, then 200 mg maintenance | Class I, Level A | [Perfect et al. CID 2010 (IDSA Guidelines)](https://pubmed.ncbi.nlm.nih.gov/20047480/) |
-| Aggressive ICP management with serial therapeutic LPs reduces mortality in cryptococcal meningitis | Class I, Level B | [Graybill et al. CID 2000](https://pubmed.ncbi.nlm.nih.gov/10770714/); [Perfect et al. CID 2010](https://pubmed.ncbi.nlm.nih.gov/20047480/) |
-| Delay ART by 4-6 weeks after antifungal initiation in HIV-associated cryptococcal meningitis to prevent IRIS | Class I, Level A | [Boulware et al. NEJM 2014 (COAT trial)](https://pubmed.ncbi.nlm.nih.gov/24524400/) |
-| Dexamethasone NOT recommended as routine adjunct in cryptococcal meningitis (increased mortality in ACTA trial) | Class I, Level A | [Beardsley et al. NEJM 2016 (ACTA dexamethasone)](https://pubmed.ncbi.nlm.nih.gov/26962745/) |
-| Serum and CSF CrAg (lateral flow assay) sensitivity >98% for cryptococcal meningitis | Class I, Level A | [Boulware et al. CID 2014](https://pubmed.ncbi.nlm.nih.gov/24803381/); [Rajasingham et al. Lancet Infect Dis 2017](https://pubmed.ncbi.nlm.nih.gov/28483415/) |
+| Amphotericin B + flucytosine induction (2 weeks) as gold standard for cryptococcal meningitis | Class I, Level A | [Day et al. NEJM 2013 (ACTA trial)](https://pubmed.ncbi.nlm.nih.gov/23550668/); [Perfect et al. CID 2010 (IDSA Guidelines)](https://pubmed.ncbi.nlm.nih.gov/20865769/) |
+| Liposomal amphotericin B preferred over conventional for reduced nephrotoxicity | Class I, Level A | [Hamill et al. CID 2010 (AMBITION-cm)](https://pubmed.ncbi.nlm.nih.gov/20865769/); [Molloy et al. NEJM 2018 (AMBITION)](https://pubmed.ncbi.nlm.nih.gov/29539274/) |
+| Fluconazole 400 mg daily consolidation for 8 weeks, then 200 mg maintenance | Class I, Level A | [Perfect et al. CID 2010 (IDSA Guidelines)](https://pubmed.ncbi.nlm.nih.gov/20865769/) |
+| Aggressive ICP management with serial therapeutic LPs reduces mortality in cryptococcal meningitis | Class I, Level B | [Graybill et al. CID 2000](https://pubmed.ncbi.nlm.nih.gov/11498404/); [Perfect et al. CID 2010](https://pubmed.ncbi.nlm.nih.gov/20865769/) |
+| Delay ART by 4-6 weeks after antifungal initiation in HIV-associated cryptococcal meningitis to prevent IRIS | Class I, Level A | [Boulware et al. NEJM 2014 (COAT trial)](https://pubmed.ncbi.nlm.nih.gov/25229929/) |
+| Dexamethasone NOT recommended as routine adjunct in cryptococcal meningitis (increased mortality in ACTA trial) | Class I, Level A | [Beardsley et al. NEJM 2016 (ACTA dexamethasone)](https://pubmed.ncbi.nlm.nih.gov/27410934/) |
+| Serum and CSF CrAg (lateral flow assay) sensitivity >98% for cryptococcal meningitis | Class I, Level A | [Boulware et al. CID 2014](https://pubmed.ncbi.nlm.nih.gov/41597130/); [Rajasingham et al. Lancet Infect Dis 2017](https://pubmed.ncbi.nlm.nih.gov/28483415/) |
 | Lifelong fluconazole for coccidioidal meningitis (>80% relapse rate if discontinued) | Class I, Level B | [Galgiani et al. CID 2016 (IDSA Coccidioidomycosis Guidelines)](https://pubmed.ncbi.nlm.nih.gov/27470238/) |
-| Flucytosine drug level monitoring (peak 30-80 mcg/mL) to prevent myelosuppression | Class IIa, Level B | [Perfect et al. CID 2010](https://pubmed.ncbi.nlm.nih.gov/20047480/); Expert consensus |
+| Flucytosine drug level monitoring (peak 30-80 mcg/mL) to prevent myelosuppression | Class IIa, Level B | [Perfect et al. CID 2010](https://pubmed.ncbi.nlm.nih.gov/20865769/); Expert consensus |
 | Voriconazole as first-line for CNS aspergillosis with trough monitoring (2-5.5 mcg/mL) | Class I, Level B | [Patterson et al. CID 2016 (IDSA Aspergillosis Guidelines)](https://pubmed.ncbi.nlm.nih.gov/27365388/) |
-| WHO guidelines for cryptococcal meningitis management in resource-limited settings | Class I, Level A | [WHO Guidelines 2022](https://www.who.int/publications/i/item/9789240052178); [Loyse et al. Lancet Infect Dis 2013](https://pubmed.ncbi.nlm.nih.gov/23375891/) |
+| WHO guidelines for cryptococcal meningitis management in resource-limited settings | Class I, Level A | [WHO Guidelines 2022](https://www.who.int/publications/i/item/9789240052178); [Loyse et al. Lancet Infect Dis 2013](https://pubmed.ncbi.nlm.nih.gov/23735626/) |
 | BioFire ME panel for rapid pathogen identification in meningitis | Class IIa, Level B | [Leber et al. JCM 2016](https://pubmed.ncbi.nlm.nih.gov/27335149/) |
-| Histoplasma antigen testing (urine) highly sensitive for disseminated disease | Class I, Level B | [Wheat et al. CID 2007](https://pubmed.ncbi.nlm.nih.gov/17682992/) |
-| 1,3-Beta-D-glucan as panfungal biomarker (not elevated in Cryptococcus or Mucorales) | Class IIa, Level B | [Onishi et al. J Clin Microbiol 2012](https://pubmed.ncbi.nlm.nih.gov/22170934/) |
-| Intrathecal amphotericin B for refractory coccidioidal meningitis | Class IIb, Level C | Expert consensus; [Johnson & Einstein. Ann Intern Med 2007](https://pubmed.ncbi.nlm.nih.gov/17227936/) |
-| Immune reconstitution inflammatory syndrome (IRIS) management with corticosteroids | Class IIa, Level C | [Boulware et al. NEJM 2014](https://pubmed.ncbi.nlm.nih.gov/24524400/); Expert consensus |
+| Histoplasma antigen testing (urine) highly sensitive for disseminated disease | Class I, Level B | [Wheat et al. CID 2007](https://pubmed.ncbi.nlm.nih.gov/19042679/) |
+| 1,3-Beta-D-glucan as panfungal biomarker (not elevated in Cryptococcus or Mucorales) | Class IIa, Level B | [Onishi et al. J Clin Microbiol 2012](https://pubmed.ncbi.nlm.nih.gov/22075593/) |
+| Intrathecal amphotericin B for refractory coccidioidal meningitis | Class IIb, Level C | Expert consensus; [Johnson & Einstein. Ann Intern Med 2007](https://pubmed.ncbi.nlm.nih.gov/17638719/) |
+| Immune reconstitution inflammatory syndrome (IRIS) management with corticosteroids | Class IIa, Level C | [Boulware et al. NEJM 2014](https://pubmed.ncbi.nlm.nih.gov/25229929/); Expert consensus |
 
 ---
 

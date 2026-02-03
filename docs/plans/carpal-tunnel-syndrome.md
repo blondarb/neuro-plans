@@ -267,20 +267,20 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Nocturnal wrist splinting is effective first-line treatment for CTS | Class I, Level A | [Page MJ et al. Cochrane Database Syst Rev 2012](https://pubmed.ncbi.nlm.nih.gov/22786497/) |
+| Nocturnal wrist splinting is effective first-line treatment for CTS | Class I, Level A | [Page MJ et al. Cochrane Database Syst Rev 2012](https://pubmed.ncbi.nlm.nih.gov/22786532/) |
 | NCS/EMG recommended for diagnostic confirmation before surgery | Class II, Level B | [Werner RA et al. Muscle Nerve 2011](https://pubmed.ncbi.nlm.nih.gov/21922474/) |
-| Corticosteroid injection provides short-term symptom relief | Class I, Level A | [Marshall S et al. Cochrane Database Syst Rev 2007](https://pubmed.ncbi.nlm.nih.gov/17253462/) |
-| Carpal tunnel release surgery is effective for moderate-severe CTS | Class I, Level A | [Verdugo RJ et al. Cochrane Database Syst Rev 2008](https://pubmed.ncbi.nlm.nih.gov/18843658/) |
-| Ultrasound-guided injection improves accuracy and outcomes | Class II, Level B | [Ustun N et al. Arch Phys Med Rehabil 2013](https://pubmed.ncbi.nlm.nih.gov/23267555/) |
-| Diabetes mellitus is significant risk factor for CTS | Class II, Level B | [Pourmemari MH et al. Diabet Med 2016](https://pubmed.ncbi.nlm.nih.gov/26108553/) |
-| Clinical examination (Phalen, Tinel) has moderate sensitivity/specificity | Class II, Level B | [Middleton SD et al. J Hand Surg Eur Vol 2014](https://pubmed.ncbi.nlm.nih.gov/23824222/) |
+| Corticosteroid injection provides short-term symptom relief | Class I, Level A | [Marshall S et al. Cochrane Database Syst Rev 2007](https://pubmed.ncbi.nlm.nih.gov/17636670/) |
+| Carpal tunnel release surgery is effective for moderate-severe CTS | Class I, Level A | [Verdugo RJ et al. Cochrane Database Syst Rev 2008](https://pubmed.ncbi.nlm.nih.gov/18843618/) |
+| Ultrasound-guided injection improves accuracy and outcomes | Class II, Level B | [Ustun N et al. Arch Phys Med Rehabil 2013](https://pubmed.ncbi.nlm.nih.gov/24453906/) |
+| Diabetes mellitus is significant risk factor for CTS | Class II, Level B | [Pourmemari MH et al. Diabet Med 2016](https://pubmed.ncbi.nlm.nih.gov/26173490/) |
+| Clinical examination (Phalen, Tinel) has moderate sensitivity/specificity | Class II, Level B | [Middleton SD et al. J Hand Surg Eur Vol 2014](https://pubmed.ncbi.nlm.nih.gov/23735809/) |
 | Severe CTS with thenar atrophy should be referred for surgery | Class II, Level B | [Graham B et al. J Am Acad Orthop Surg 2016](https://pubmed.ncbi.nlm.nih.gov/26803543/) |
-| Endoscopic and open CTR have equivalent long-term outcomes | Class I, Level A | [Scholten RJ et al. Cochrane Database Syst Rev 2007](https://pubmed.ncbi.nlm.nih.gov/17943857/) |
-| Pregnancy-related CTS often resolves postpartum | Class III, Level C | [Padua L et al. Muscle Nerve 2010](https://pubmed.ncbi.nlm.nih.gov/20082417/) |
-| Median nerve CSA >10-12 mm² on ultrasound supports CTS diagnosis | Class II, Level B | [Cartwright MS et al. Muscle Nerve 2012](https://pubmed.ncbi.nlm.nih.gov/22334176/) |
-| Nerve gliding exercises may provide modest benefit as adjunct therapy | Class II, Level C | [Ballestero-Perez R et al. J Orthop Sports Phys Ther 2017](https://pubmed.ncbi.nlm.nih.gov/28622488/) |
+| Endoscopic and open CTR have equivalent long-term outcomes | Class I, Level A | [Scholten RJ et al. Cochrane Database Syst Rev 2007](https://pubmed.ncbi.nlm.nih.gov/17943805/) |
+| Pregnancy-related CTS often resolves postpartum | Class III, Level C | [Padua L et al. Muscle Nerve 2010](https://pubmed.ncbi.nlm.nih.gov/20976778/) |
+| Median nerve CSA >10-12 mm² on ultrasound supports CTS diagnosis | Class II, Level B | [Cartwright MS et al. Muscle Nerve 2012](https://pubmed.ncbi.nlm.nih.gov/22806381/) |
+| Nerve gliding exercises may provide modest benefit as adjunct therapy | Class II, Level C | [Ballestero-Perez R et al. J Orthop Sports Phys Ther 2017](https://pubmed.ncbi.nlm.nih.gov/27842937/) |
 | AAOS Clinical Practice Guideline for CTS | Guideline | [AAOS Guideline 2016](https://pubmed.ncbi.nlm.nih.gov/26803543/) |
-| AANEM practice parameter for electrodiagnosis of CTS | Guideline | [Jablecki CK et al. Muscle Nerve 2002](https://pubmed.ncbi.nlm.nih.gov/12210353/) |
+| AANEM practice parameter for electrodiagnosis of CTS | Guideline | [Jablecki CK et al. Muscle Nerve 2002](https://pubmed.ncbi.nlm.nih.gov/15389664/) |
 
 ---
 

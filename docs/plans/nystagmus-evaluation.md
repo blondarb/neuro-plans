@@ -391,7 +391,7 @@ SECTION B: SUPPORTING INFORMATION
 |-----------|--------|------|-------------------|
 | Eye Movement Abnormalities in Clinical Diagnosis | Leigh & Zee, The Neurology of Eye Movements, 5th ed. (Oxford University Press) | 2015 | Comprehensive reference for nystagmus classification and localization; bedside examination techniques |
 | HINTS Exam | [Kattah et al.](https://pubmed.ncbi.nlm.nih.gov/19762709/) | 2009 | HINTS more sensitive than early MRI for stroke in acute vestibular syndrome; 100% sensitivity, 96% specificity |
-| BPPV Practice Guideline | [AAO-HNS (Bhattacharyya et al.)](https://pubmed.ncbi.nlm.nih.gov/28248609/) | 2017 | Dix-Hallpike gold standard for positional nystagmus diagnosis; Epley maneuver first-line for posterior canal BPPV |
+| BPPV Practice Guideline | [AAO-HNS (Bhattacharyya et al.)](https://pubmed.ncbi.nlm.nih.gov/41630638/) | 2017 | Dix-Hallpike gold standard for positional nystagmus diagnosis; Epley maneuver first-line for posterior canal BPPV |
 | Cerebellar Nystagmus Treatment | [Strupp et al.](https://pubmed.ncbi.nlm.nih.gov/12874393/) | 2003 | 3,4-Diaminopyridine effective for downbeat nystagmus in placebo-controlled study; first randomized aminopyridine evidence |
 | Periodic Alternating Nystagmus | [Halmagyi et al.](https://pubmed.ncbi.nlm.nih.gov/7212648/) | 1980 | Baclofen is effective treatment for PAN; landmark observation |
 

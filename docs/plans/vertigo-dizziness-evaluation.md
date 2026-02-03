@@ -363,7 +363,7 @@ SECTION B: SUPPORTING INFORMATION
 
 | Guideline | Source | Year | Key Recommendation |
 |-----------|--------|------|-------------------|
-| BPPV Practice Guideline | [AAO-HNS](https://pubmed.ncbi.nlm.nih.gov/28248609/) | 2017 | Dix-Hallpike is gold standard for diagnosis; Epley maneuver is first-line treatment; vestibular suppressants NOT recommended |
+| BPPV Practice Guideline | [AAO-HNS](https://pubmed.ncbi.nlm.nih.gov/29344368/) | 2017 | Dix-Hallpike is gold standard for diagnosis; Epley maneuver is first-line treatment; vestibular suppressants NOT recommended |
 | Vestibular Migraine Diagnostic Criteria | ICHD-3 / Barany Society | 2012/2018 | Diagnostic criteria; often underdiagnosed; migraine preventives effective |
 | Meniere's Disease Guidelines | AAO-HNS | 2020 | Definite, probable, possible classification; conservative management first; intratympanic therapy for refractory |
 | HINTS Exam | [Kattah et al.](https://pubmed.ncbi.nlm.nih.gov/19762709/) / [Tarnutzer](https://pubmed.ncbi.nlm.nih.gov/21576300/) | 2009/2011 | HINTS more sensitive than early MRI for stroke in acute vestibular syndrome; requires training |
@@ -377,7 +377,7 @@ SECTION B: SUPPORTING INFORMATION
 | [Hilton et al. Cochrane (2014)](https://pubmed.ncbi.nlm.nih.gov/25485940/) | Epley maneuver highly effective for posterior canal BPPV; NNT ~3 | Epley is definitive treatment for BPPV |
 | [Tarnutzer et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21576300/) | Individual HINTS components analyzed; normal head impulse most predictive of stroke | "Dangerous" HIT (normal in acute vertigo) = central cause until proven otherwise |
 | [Choi et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30341546/) | 12-20% of posterior fossa strokes missed on early MRI (<48h) but detected on repeat MRI | If high clinical suspicion for stroke and initial MRI negative, repeat MRI or treat as stroke |
-| [Fife et al. AAO-HNS (2017)](https://pubmed.ncbi.nlm.nih.gov/28248609/) | Comprehensive BPPV guideline; repositioning maneuvers recommended; vestibular suppressants NOT recommended | Standard of care for BPPV |
+| [Fife et al. AAO-HNS (2017)](https://pubmed.ncbi.nlm.nih.gov/29344368/) | Comprehensive BPPV guideline; repositioning maneuvers recommended; vestibular suppressants NOT recommended | Standard of care for BPPV |
 
 ### HINTS Exam Validity
 

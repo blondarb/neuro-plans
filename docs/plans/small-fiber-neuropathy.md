@@ -309,20 +309,20 @@ tags:
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Skin biopsy (IENFD) as diagnostic standard for SFN | Class II, Level B | [Lauria et al. European Journal of Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/20298428/) |
-| QSART for sudomotor function assessment in SFN | Class II, Level B | [Low et al. Muscle & Nerve 1983](https://pubmed.ncbi.nlm.nih.gov/6308464/) |
-| Impaired glucose tolerance as cause of SFN | Class II, Level B | [Singleton et al. Neurology 2001](https://pubmed.ncbi.nlm.nih.gov/11723275/) |
-| Sjogren syndrome associated with SFN | Class II, Level B | [Chai et al. Annals of Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/15984030/) |
-| Duloxetine for neuropathic pain | Class I, Level A | [Lunn et al. Cochrane 2014](https://pubmed.ncbi.nlm.nih.gov/24399144/) |
+| QSART for sudomotor function assessment in SFN | Class II, Level B | [Low et al. Muscle & Nerve 1983](https://pubmed.ncbi.nlm.nih.gov/6652106/) |
+| Impaired glucose tolerance as cause of SFN | Class II, Level B | [Singleton et al. Neurology 2001](https://pubmed.ncbi.nlm.nih.gov/11706115/) |
+| Sjogren syndrome associated with SFN | Class II, Level B | [Chai et al. Annals of Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/17282462/) |
+| Duloxetine for neuropathic pain | Class I, Level A | [Lunn et al. Cochrane 2014](https://pubmed.ncbi.nlm.nih.gov/24385423/) |
 | Gabapentin for neuropathic pain | Class I, Level A | [Wiffen et al. Cochrane 2017](https://pubmed.ncbi.nlm.nih.gov/28597471/) |
 | Pregabalin for neuropathic pain | Class I, Level A | [Derry et al. Cochrane 2019](https://pubmed.ncbi.nlm.nih.gov/30673120/) |
 | TCAs for neuropathic pain | Class II, Level B | [Moore et al. Cochrane 2015](https://pubmed.ncbi.nlm.nih.gov/25879104/) |
 | Fludrocortisone for orthostatic hypotension | Class II, Level C | [Freeman et al. Neurology 2018 Consensus Statement](https://pubmed.ncbi.nlm.nih.gov/29666232/) |
-| Midodrine for orthostatic hypotension | Class I, Level A | [Wright et al. Am Heart J 1998](https://pubmed.ncbi.nlm.nih.gov/9463419/) |
-| Droxidopa for neurogenic orthostatic hypotension | Class I, Level A | [Biaggioni et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/25646278/) |
+| Midodrine for orthostatic hypotension | Class I, Level A | [Wright et al. Am Heart J 1998](https://pubmed.ncbi.nlm.nih.gov/18301662/) |
+| Droxidopa for neurogenic orthostatic hypotension | Class I, Level A | [Biaggioni et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/25757803/) |
 | IVIG for autoimmune SFN | Class III, Level C | [Liu et al. J Periph Nerv Syst 2014](https://pubmed.ncbi.nlm.nih.gov/24750390/) |
-| Fabry disease as cause of SFN | Class II, Level B | [Biegstraaten et al. Orphanet J Rare Dis 2012](https://pubmed.ncbi.nlm.nih.gov/22452838/) |
+| Fabry disease as cause of SFN | Class II, Level B | [Biegstraaten et al. Orphanet J Rare Dis 2012](https://pubmed.ncbi.nlm.nih.gov/22497776/) |
 | TTR amyloidosis neuropathy treatment | Class I, Level A | [Adams et al. NEJM 2018 (Patisiran trial)](https://pubmed.ncbi.nlm.nih.gov/29972757/) |
-| Sodium channelopathies (SCN9A) in SFN | Class II, Level B | [Faber et al. Ann Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/22522478/) |
+| Sodium channelopathies (SCN9A) in SFN | Class II, Level B | [Faber et al. Ann Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/21698661/) |
 
 ---
 
