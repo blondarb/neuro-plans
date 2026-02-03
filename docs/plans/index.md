@@ -157,6 +157,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
+| [Parkinson's Disease](parkinsons-disease.md) | ED, HOSP, OPD | G20, G20.A1, G20.A2, G20.B1, G20.B2, G20.C |
 | [Parkinson's Disease - New Diagnosis](parkinsons-disease-new-diagnosis.md) | HOSP, OPD | G20, G20.A1, G20.C |
 | [Essential Tremor](essential-tremor.md) | HOSP, OPD | G25.0 |
 | [Restless Legs Syndrome](restless-legs-syndrome.md) | HOSP, OPD | G25.81 |
