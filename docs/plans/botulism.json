@@ -1,7 +1,7 @@
 {
   "id": "botulism",
   "title": "Botulism",
-  "version": "1.1",
+  "version": "1.2",
   "icd10": [
     "** A05.1 (Botulism food poisoning — foodborne botulism)",
     "T48.1X1A (Poisoning by skeletal muscle relaxants",
@@ -98,7 +98,7 @@
           "target": "Normal"
         },
         {
-          "item": "Pregnancy test (beta-hCG)",
+          "item": "Pregnancy test (beta-hCG) (CPT 84703)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -136,7 +136,7 @@
           "target": "Positive confirms diagnosis (negative does NOT exclude)"
         },
         {
-          "item": "Stool botulinum toxin assay and culture",
+          "item": "Stool botulinum toxin assay and culture (CPT 87045)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -145,7 +145,7 @@
           "target": "Positive toxin or culture of C. botulinum"
         },
         {
-          "item": "Wound culture (anaerobic)",
+          "item": "Wound culture (anaerobic) (CPT 87075)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -190,7 +190,7 @@
           "target": "Normal"
         },
         {
-          "item": "AChR antibody panel (binding, blocking, modulating)",
+          "item": "AChR antibody panel (binding, blocking, modulating) (CPT 86235, 86255)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -199,7 +199,7 @@
           "target": "Negative"
         },
         {
-          "item": "Anti-MuSK antibody",
+          "item": "Anti-MuSK antibody (CPT 86255)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -219,7 +219,7 @@
       ],
       "Rare/Specialized": [
         {
-          "item": "Anti-ganglioside antibodies (GM1, GD1a, GQ1b)",
+          "item": "Anti-ganglioside antibodies (GM1, GD1a, GQ1b) (CPT 86255)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
@@ -228,7 +228,7 @@
           "target": "Negative"
         },
         {
-          "item": "Edrophonium (Tensilon) test",
+          "item": "Edrophonium (Tensilon) test (CPT 95857)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
@@ -237,7 +237,7 @@
           "target": "No improvement (negative) in botulism"
         },
         {
-          "item": "Heavy metals (lead, arsenic, thallium)",
+          "item": "Heavy metals (lead, arsenic, thallium) (CPT 83655, 82175, 83015)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
@@ -255,7 +255,7 @@
           "target": "No tick found"
         },
         {
-          "item": "Organophosphate/carbamate level (cholinesterase)",
+          "item": "Organophosphate/carbamate level (cholinesterase) (CPT 82480)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "-",
@@ -264,7 +264,7 @@
           "target": "Normal cholinesterase levels"
         },
         {
-          "item": "CSF analysis (LP) — if diagnostic uncertainty",
+          "item": "CSF analysis (LP) (CPT 62270) — if diagnostic uncertainty",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
@@ -273,7 +273,7 @@
           "target": "Normal in botulism (protein normal, WBC normal)"
         },
         {
-          "item": "Porphyrins (urine ALA, PBG)",
+          "item": "Porphyrins (urine ALA, PBG) (CPT 82135, 84106)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
@@ -316,7 +316,7 @@
           "target": "Normal (>60% serum)"
         },
         {
-          "item": "Gram stain and culture",
+          "item": "Gram stain and culture (CPT 87205, 87070)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -400,7 +400,7 @@
           "contraindications": "Contrast allergy, renal impairment"
         },
         {
-          "item": "CT abdomen/pelvis (wound botulism with IVDU)",
+          "item": "CT abdomen/pelvis (wound botulism with IVDU) (CPT 74178)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "-",
@@ -456,19 +456,19 @@
     "Treatment": {
       "Acute/Emergent": [
         {
-          "item": "Heptavalent botulinum antitoxin (HBAT) (equine-derived, serotypes A-G) — obtained from CDC",
+          "item": "Heptavalent botulinum antitoxin (HBAT) (equine-derived, serotypes A-G) — obtained from CDC (CPT 96365, 96366)",
           "route": "IV",
           "indication": "All forms of botulism (foodborne, wound, adult intestinal colonization, inhalational); administer as early as possible — antitoxin neutralizes circulating toxin but does NOT reverse already-bound toxin",
           "dosing": {
             "doseOptions": [
               {
                 "text": "1 vial",
-                "orderSentence": "Heptavalent botulinum antitoxin (HBAT) (equine-derived, serotypes A-G) — obtained from CDC 1 vial IV"
+                "orderSentence": "Heptavalent botulinum antitoxin (HBAT) (equine-derived, serotypes A-G) — obtained from CDC (CPT 96365, 96366) 1 vial IV"
               }
             ],
             "route": "IV",
             "instructions": "1 vial (containing equine-derived antibodies to types A-G) IV; dilute 1:10 in 0.9% NS; infuse slowly over 15-30 min initially, increase rate per CDC protocol; contact CDC Emergency Operations Center 770-488-7100 (24/7) to obtain antitoxin; administer as soon as clinical suspicion is high — do NOT wait for lab confirmation",
-            "orderSentence": "Heptavalent botulinum antitoxin (HBAT) (equine-derived, serotypes A-G) — obtained from CDC 1 vial IV"
+            "orderSentence": "Heptavalent botulinum antitoxin (HBAT) (equine-derived, serotypes A-G) — obtained from CDC (CPT 96365, 96366) 1 vial IV"
           },
           "contraindications": "History of equine protein hypersensitivity (perform skin test first per CDC protocol); serum sickness risk 5-10% (monitor for 10-21 days post-infusion)",
           "monitoring": "Skin test before infusion if history of atopy or equine exposure; monitor VS q5min during infusion and q15min x 4h post; observe for anaphylaxis (epinephrine at bedside); delayed serum sickness (fever, rash, arthralgias at 10-21 days)",
@@ -478,19 +478,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "BabyBIG (botulism immune globulin intravenous, human)",
+          "item": "BabyBIG (botulism immune globulin intravenous, human) (CPT 96365, 96366)",
           "route": "IV",
           "indication": "Infant botulism ONLY (age <1 year); FDA-approved for infant botulism types A and B",
           "dosing": {
             "doseOptions": [
               {
                 "text": "50 mg/kg",
-                "orderSentence": "BabyBIG (botulism immune globulin intravenous, human) 50 mg/kg IV"
+                "orderSentence": "BabyBIG (botulism immune globulin intravenous, human) (CPT 96365, 96366) 50 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "50 mg/kg (1 mL/kg) IV single dose; infuse at 0.5 mL/kg/h initially, increase to 1.0 mL/kg/h if tolerated; obtain from California Infant Botulism Treatment and Prevention Program (IBTPP) at 510-231-7600 (24/7)",
-            "orderSentence": "BabyBIG (botulism immune globulin intravenous, human) 50 mg/kg IV"
+            "orderSentence": "BabyBIG (botulism immune globulin intravenous, human) (CPT 96365, 96366) 50 mg/kg IV"
           },
           "contraindications": "IgA deficiency; prior severe reaction to human immunoglobulin",
           "monitoring": "Vital signs q15min during infusion; watch for anaphylaxis; renal function",
@@ -500,19 +500,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Intubation and mechanical ventilation",
+          "item": "Intubation and mechanical ventilation (CPT 31500)",
           "route": "-",
           "indication": "Respiratory failure — single most important cause of death in botulism",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "Intubation and mechanical ventilation N/A -"
+                "orderSentence": "Intubation and mechanical ventilation (CPT 31500) N/A -"
               }
             ],
             "route": "-",
             "instructions": "Indications: FVC <15-20 mL/kg, NIF weaker than -30 cmH2O, >30% decline in FVC from baseline, rising pCO2, clinical respiratory distress, inability to protect airway due to bulbar weakness. Use non-depolarizing agents (rocuronium preferred). AVOID succinylcholine (risk of exaggerated response in denervated muscle). Anticipate PROLONGED ventilation (weeks to months)",
-            "orderSentence": "Intubation and mechanical ventilation N/A -"
+            "orderSentence": "Intubation and mechanical ventilation (CPT 31500) N/A -"
           },
           "contraindications": "N/A (life-saving)",
           "monitoring": "Ventilator settings per ICU protocol; daily assessment; plan for tracheostomy if ventilation expected >14 days",
@@ -544,19 +544,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Metronidazole (wound botulism)",
+          "item": "Metronidazole (wound botulism) (CPT 96365)",
           "route": "IV",
           "indication": "Wound botulism — eradicate C. botulinum from wound; adjunct to debridement",
           "dosing": {
             "doseOptions": [
               {
                 "text": "500 mg",
-                "orderSentence": "Metronidazole (wound botulism) 500 mg IV"
+                "orderSentence": "Metronidazole (wound botulism) (CPT 96365) 500 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "500 mg IV q8h x 10-14 days; alternative to penicillin (avoids aminoglycoside interaction concern)",
-            "orderSentence": "Metronidazole (wound botulism) 500 mg IV"
+            "orderSentence": "Metronidazole (wound botulism) (CPT 96365) 500 mg IV"
           },
           "contraindications": "Severe hepatic impairment; disulfiram-like reaction with alcohol",
           "monitoring": "LFTs; neuropathy (prolonged use); seizures (rare)",
@@ -566,19 +566,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Penicillin G (wound botulism — alternative)",
+          "item": "Penicillin G (wound botulism — alternative) (CPT 96365)",
           "route": "IV",
           "indication": "Wound botulism — alternative to metronidazole for C. botulinum eradication",
           "dosing": {
             "doseOptions": [
               {
                 "text": "3 million units",
-                "orderSentence": "Penicillin G (wound botulism — alternative) 3 million units IV"
+                "orderSentence": "Penicillin G (wound botulism — alternative) (CPT 96365) 3 million units IV"
               }
             ],
             "route": "IV",
             "instructions": "3 million units IV q4h x 10-14 days",
-            "orderSentence": "Penicillin G (wound botulism — alternative) 3 million units IV"
+            "orderSentence": "Penicillin G (wound botulism — alternative) (CPT 96365) 3 million units IV"
           },
           "contraindications": "Penicillin allergy; AVOID aminoglycosides concurrently (potentiate neuromuscular blockade)",
           "monitoring": "Allergic reaction; renal function",
@@ -654,19 +654,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "IV fluid resuscitation (0.9% NS)",
+          "item": "IV fluid resuscitation (0.9% NS) (CPT 96360, 96361)",
           "route": "IV",
           "indication": "Dehydration from GI prodrome (foodborne botulism — nausea, vomiting, diarrhea)",
           "dosing": {
             "doseOptions": [
               {
                 "text": "20 mL/kg",
-                "orderSentence": "IV fluid resuscitation (0.9% NS) 20 mL/kg IV"
+                "orderSentence": "IV fluid resuscitation (0.9% NS) (CPT 96360, 96361) 20 mL/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "20 mL/kg IV bolus, then maintenance; target euvolemia",
-            "orderSentence": "IV fluid resuscitation (0.9% NS) 20 mL/kg IV"
+            "orderSentence": "IV fluid resuscitation (0.9% NS) (CPT 96360, 96361) 20 mL/kg IV"
           },
           "contraindications": "Fluid overload, CHF",
           "monitoring": "I/O, BMP, volume status",
@@ -678,19 +678,19 @@
       ],
       "Symptomatic Treatments": [
         {
-          "item": "Atropine",
+          "item": "Atropine (CPT 96374)",
           "route": "IV",
           "indication": "Bradycardia from autonomic dysfunction; excessive secretions",
           "dosing": {
             "doseOptions": [
               {
                 "text": "0.5-1 mg",
-                "orderSentence": "Atropine 0.5-1 mg IV"
+                "orderSentence": "Atropine (CPT 96374) 0.5-1 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.5-1 mg IV PRN for symptomatic bradycardia; may repeat q3-5 min; max 3 mg",
-            "orderSentence": "Atropine 0.5-1 mg IV"
+            "orderSentence": "Atropine (CPT 96374) 0.5-1 mg IV"
           },
           "contraindications": "Tachycardia, angle-closure glaucoma",
           "monitoring": "HR, rhythm; urinary retention",
@@ -700,19 +700,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Glycopyrrolate",
+          "item": "Glycopyrrolate (CPT 96374)",
           "route": "IV/PO",
           "indication": "Excessive oral secretions (antisialagogue); preferred over atropine for secretion management",
           "dosing": {
             "doseOptions": [
               {
                 "text": "0.2 mg",
-                "orderSentence": "Glycopyrrolate 0.2 mg IV"
+                "orderSentence": "Glycopyrrolate (CPT 96374) 0.2 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.2 mg IV q4-6h PRN; or 1-2 mg PO TID",
-            "orderSentence": "Glycopyrrolate 0.2 mg IV"
+            "orderSentence": "Glycopyrrolate (CPT 96374) 0.2 mg IV"
           },
           "contraindications": "Ileus, urinary retention, angle-closure glaucoma",
           "monitoring": "Secretion volume; HR; bowel function",
@@ -744,19 +744,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Metoclopramide",
+          "item": "Metoclopramide (CPT 96374)",
           "route": "IV",
           "indication": "Gastroparesis, nausea, ileus (autonomic dysfunction common)",
           "dosing": {
             "doseOptions": [
               {
                 "text": "10 mg",
-                "orderSentence": "Metoclopramide 10 mg IV"
+                "orderSentence": "Metoclopramide (CPT 96374) 10 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "10 mg IV q6h PRN; max 40 mg/day; limit to <12 weeks",
-            "orderSentence": "Metoclopramide 10 mg IV"
+            "orderSentence": "Metoclopramide (CPT 96374) 10 mg IV"
           },
           "contraindications": "Seizure history, Parkinson disease, GI obstruction",
           "monitoring": "Tardive dyskinesia with prolonged use",
@@ -766,19 +766,19 @@
           "ICU": "ROUTINE"
         },
         {
-          "item": "Ondansetron",
+          "item": "Ondansetron (CPT 96374)",
           "route": "IV",
           "indication": "Nausea and vomiting (foodborne botulism GI symptoms)",
           "dosing": {
             "doseOptions": [
               {
                 "text": "4 mg",
-                "orderSentence": "Ondansetron 4 mg IV"
+                "orderSentence": "Ondansetron (CPT 96374) 4 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "4 mg IV q6-8h PRN",
-            "orderSentence": "Ondansetron 4 mg IV"
+            "orderSentence": "Ondansetron (CPT 96374) 4 mg IV"
           },
           "contraindications": "QT prolongation, severe hepatic impairment",
           "monitoring": "ECG if QT concern",
@@ -898,19 +898,19 @@
           "ICU": "ROUTINE"
         },
         {
-          "item": "Lorazepam",
+          "item": "Lorazepam (CPT 96374)",
           "route": "IV",
           "indication": "Anxiety, agitation in intubated patient",
           "dosing": {
             "doseOptions": [
               {
                 "text": "0.5-1 mg",
-                "orderSentence": "Lorazepam 0.5-1 mg IV"
+                "orderSentence": "Lorazepam (CPT 96374) 0.5-1 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.5-1 mg IV q6-8h PRN; use with caution — may worsen hypotonia",
-            "orderSentence": "Lorazepam 0.5-1 mg IV"
+            "orderSentence": "Lorazepam (CPT 96374) 0.5-1 mg IV"
           },
           "contraindications": "Respiratory depression (extreme caution if not intubated)",
           "monitoring": "RR, sedation scale; avoid in non-intubated patients",
@@ -966,19 +966,19 @@
           "ICU": "-"
         },
         {
-          "item": "Tracheostomy",
+          "item": "Tracheostomy (CPT 31600)",
           "route": "Surgical",
           "indication": "Prolonged mechanical ventilation (>14 days expected — common in botulism)",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "Tracheostomy N/A Surgical"
+                "orderSentence": "Tracheostomy (CPT 31600) N/A Surgical"
               }
             ],
             "route": "Surgical",
             "instructions": "Perform when ventilation anticipated >14 days; improves patient comfort, oral hygiene, weaning potential",
-            "orderSentence": "Tracheostomy N/A Surgical"
+            "orderSentence": "Tracheostomy (CPT 31600) N/A Surgical"
           },
           "contraindications": "Coagulopathy (correct first)",
           "monitoring": "Stoma site; decannulation readiness in recovery",
@@ -988,19 +988,19 @@
           "ICU": "ROUTINE"
         },
         {
-          "item": "Percutaneous gastrostomy (PEG)",
+          "item": "Percutaneous gastrostomy (PEG) (CPT 43246)",
           "route": "Surgical",
           "indication": "Prolonged inability to swallow safely; enteral nutrition access",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "Percutaneous gastrostomy (PEG) N/A Surgical"
+                "orderSentence": "Percutaneous gastrostomy (PEG) (CPT 43246) N/A Surgical"
               }
             ],
             "route": "Surgical",
             "instructions": "Place when dysphagia expected to persist >2-3 weeks",
-            "orderSentence": "Percutaneous gastrostomy (PEG) N/A Surgical"
+            "orderSentence": "Percutaneous gastrostomy (PEG) (CPT 43246) N/A Surgical"
           },
           "contraindications": "Coagulopathy, abdominal pathology",
           "monitoring": "Tube site; feeding tolerance",
