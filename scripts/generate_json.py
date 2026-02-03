@@ -1104,48 +1104,59 @@ class ParityChecker:
         with open(self.plans_json_path, 'r', encoding='utf-8') as f:
             plans_data = json.load(f)
 
-        # First, try to get the actual title from the markdown file
-        # This is the most reliable way to match
-        md_title = None
-        md_content = self.markdown_path.read_text(encoding='utf-8')
+        # Try to find the plan by id first (matches the id-keyed structure)
+        plan_data = None
+        md_id = self.markdown_path.stem
+        if md_id in plans_data:
+            plan_data = plans_data[md_id]
 
-        # Try frontmatter title first - handle quoted titles with apostrophes
-        import re
-        frontmatter_match = re.search(r'^---\s*\n.*?title:\s*"([^"\n]+)"',
-                                       md_content, re.DOTALL)
-        if frontmatter_match:
-            md_title = frontmatter_match.group(1).strip()
+        # Fallback: search by id field within plan entries (for title-keyed data)
+        if not plan_data:
+            for key, value in plans_data.items():
+                if isinstance(value, dict) and value.get('id') == md_id:
+                    plan_data = value
+                    break
 
-        # Try single-quoted frontmatter title
-        if not md_title:
-            frontmatter_match = re.search(r"^---\s*\n.*?title:\s*'([^'\n]+)'",
+        # Fallback: try matching by title from the markdown file
+        if not plan_data:
+            md_title = None
+            md_content = self.markdown_path.read_text(encoding='utf-8')
+
+            # Try frontmatter title first - handle quoted titles with apostrophes
+            import re
+            frontmatter_match = re.search(r'^---\s*\n.*?title:\s*"([^"\n]+)"',
                                            md_content, re.DOTALL)
             if frontmatter_match:
                 md_title = frontmatter_match.group(1).strip()
 
-        # Fall back to DIAGNOSIS line (strip bold markdown markers)
-        if not md_title:
-            diagnosis_match = re.search(r'DIAGNOSIS:\s*\*?\*?\s*(.+)', md_content)
-            if diagnosis_match:
-                md_title = diagnosis_match.group(1).strip()
-                # Remove any trailing bold markers
-                md_title = re.sub(r'^\*+\s*', '', md_title)
+            # Try single-quoted frontmatter title
+            if not md_title:
+                frontmatter_match = re.search(r"^---\s*\n.*?title:\s*'([^'\n]+)'",
+                                               md_content, re.DOTALL)
+                if frontmatter_match:
+                    md_title = frontmatter_match.group(1).strip()
 
-        # Find the plan by matching title from markdown
-        plan_data = None
-        if md_title and md_title in plans_data:
-            plan_data = plans_data[md_title]
+            # Fall back to DIAGNOSIS line (strip bold markdown markers)
+            if not md_title:
+                diagnosis_match = re.search(r'DIAGNOSIS:\s*\*?\*?\s*(.+)', md_content)
+                if diagnosis_match:
+                    md_title = diagnosis_match.group(1).strip()
+                    # Remove any trailing bold markers
+                    md_title = re.sub(r'^\*+\s*', '', md_title)
 
-        # Try different name formats as fallback
-        if not plan_data:
-            plan_name = self.markdown_path.stem.replace('-', ' ').title()
-            for key in plans_data:
-                if key.lower().replace(' ', '-') == self.markdown_path.stem.lower():
-                    plan_data = plans_data[key]
-                    break
-                if key.lower() == plan_name.lower():
-                    plan_data = plans_data[key]
-                    break
+            if md_title and md_title in plans_data:
+                plan_data = plans_data[md_title]
+
+            # Try different name formats as fallback
+            if not plan_data:
+                plan_name = self.markdown_path.stem.replace('-', ' ').title()
+                for key in plans_data:
+                    if key.lower().replace(' ', '-') == self.markdown_path.stem.lower():
+                        plan_data = plans_data[key]
+                        break
+                    if key.lower() == plan_name.lower():
+                        plan_data = plans_data[key]
+                        break
 
         if not plan_data:
             return counts
@@ -1810,7 +1821,7 @@ def merge_into_plans_json(new_plan: dict, plans_json_path: Path):
         plans_data = {}
 
     # Add or update the plan
-    plan_key = new_plan.get('title', new_plan.get('id', 'Unknown'))
+    plan_key = new_plan.get('id', new_plan.get('title', 'Unknown'))
     plans_data[plan_key] = new_plan
 
     # Write back
@@ -1883,9 +1894,33 @@ def main():
         if not plans_dir.exists():
             print(f"Error: Directory {plans_dir} not found")
             sys.exit(1)
-        markdown_files = list(plans_dir.glob('*.md'))
+        all_md_files = list(plans_dir.glob('*.md'))
+        # Filter out non-plan files
+        markdown_files = []
+        skipped_files = []
+        for f in all_md_files:
+            # Skip index.md
+            if f.name == 'index.md':
+                skipped_files.append(f.name)
+                continue
+            # Skip report files (e.g., *-report-*.md)
+            if re.search(r'-report-', f.name):
+                skipped_files.append(f.name)
+                continue
+            # Skip files without plan-like frontmatter (must have version: field)
+            try:
+                content = f.read_text(encoding='utf-8')
+                if not re.search(r'^---\s*\n.*?version:\s*', content, re.DOTALL):
+                    skipped_files.append(f.name)
+                    continue
+            except Exception:
+                skipped_files.append(f.name)
+                continue
+            markdown_files.append(f)
+        if skipped_files:
+            print(f"Skipped {len(skipped_files)} non-plan file(s): {', '.join(sorted(skipped_files))}")
         if not markdown_files:
-            print(f"No markdown files found in {plans_dir}")
+            print(f"No plan files found in {plans_dir}")
             sys.exit(1)
     elif args.markdown_file:
         markdown_files = [Path(args.markdown_file)]
