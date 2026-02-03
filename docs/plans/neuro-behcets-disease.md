@@ -25,7 +25,7 @@ tags:
 
 **ICD-10:** M35.2 (Behcet's disease), G09 (Sequelae of inflammatory diseases of central nervous system), I67.89 (Other cerebrovascular disease), I67.6 (Nonpyogenic thrombosis of intracranial venous system), G04.81 (Other encephalitis and encephalomyelitis)
 
-**CPT CODES:** 70553 (MRI brain with/without contrast), 70551 (MRI brain without contrast), 72156 (MRI cervical spine with/without contrast), 72157 (MRI thoracic spine with/without contrast), 89050 (CSF cell count), 89051 (CSF differential), 84157 (CSF protein), 86235 (HLA typing), 85025 (CBC), 80053 (CMP), 85652 (ESR), 86140 (CRP), 70547 (MR venography), 70496 (CTA head), 70544 (MRA head without contrast), 70549 (MRA head with/without contrast), 95816 (EEG), 93000 (ECG), 95907-95913 (EMG/NCS), 62270 (lumbar puncture), 96365 (IV infusion initial hour), 96374 (IV push), 92235 (fluorescein angiography), 92134 (OCT), 93971 (Doppler ultrasound extremities), 71275 (CT pulmonary angiography), 83519 (AQP4/MOG antibody), 87556 (TB PCR)
+**CPT CODES:** 70553 (MRI brain with/without contrast), 70551 (MRI brain without contrast), 72156 (MRI cervical spine with/without contrast), 72157 (MRI thoracic spine with/without contrast), 89050 (CSF cell count), 89051 (CSF differential), 84157 (CSF protein), 81374 (HLA-B51 typing), 86039 (ANA), 85025 (CBC), 80053 (CMP), 85652 (ESR), 86140 (CRP), 70547 (MR venography), 70496 (CTA head), 70544 (MRA head without contrast), 70549 (MRA head with/without contrast), 95816 (EEG), 93000 (ECG), 95907-95913 (EMG/NCS), 62270 (lumbar puncture), 96365 (IV infusion initial hour), 96374 (IV push), 92235 (fluorescein angiography), 92134 (OCT), 92004 (ophthalmologic exam), 93971 (Doppler ultrasound extremities), 71275 (CT pulmonary angiography), 83519 (AQP4/MOG/IL-6 immunoassay), 87556 (TB PCR)
 
 **SYNONYMS:** Neuro-Behcet's disease, Neuro-Behcet disease, neurological Behcet's disease, Behcet's disease with neurological involvement, NBD, CNS Behcet's disease, cerebral Behcet's, brainstem Behcet's, Behcet neurovasculitis, Adamantiades-Behcet disease with CNS involvement, Behcet meningoencephalitis, Silk Road disease with neurological features, parenchymal Neuro-Behcet's, non-parenchymal Neuro-Behcet's
 
@@ -74,9 +74,9 @@ SECTION A: ACTION ITEMS
 
 | Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
 |------|-----------|----------------|:--:|:----:|:---:|:---:|
-| HLA-B51 typing (CPT 86235) | Present in 50-70% of Behcet's patients (especially along Silk Road populations); supports diagnosis but not diagnostic alone; negative does not exclude | Positive supports diagnosis | - | ROUTINE | ROUTINE | - |
+| HLA-B51 typing (CPT 81374) | Present in 50-70% of Behcet's patients (especially along Silk Road populations); supports diagnosis but not diagnostic alone; negative does not exclude | Positive supports diagnosis | - | ROUTINE | ROUTINE | - |
 | Pathergy test (skin prick) | Positive in 40-60% of Behcet's (higher in Middle Eastern/Asian populations); needle prick causes papule/pustule >=2mm at 24-48h; part of ISG and ICBD criteria | Positive (>=2mm papule/pustule at 24-48h) | - | ROUTINE | ROUTINE | - |
-| ANA (CPT 86235) | Lupus/vasculitis screen; SLE can mimic NBD | Negative or low titer (typically negative in Behcet's) | URGENT | ROUTINE | ROUTINE | URGENT |
+| ANA (CPT 86039) | Lupus/vasculitis screen; SLE can mimic NBD | Negative or low titer (typically negative in Behcet's) | URGENT | ROUTINE | ROUTINE | URGENT |
 | Anti-dsDNA (CPT 86225) | SLE exclusion if ANA positive; CNS lupus differential | Negative | - | ROUTINE | ROUTINE | - |
 | ANCA (c-ANCA/PR3, p-ANCA/MPO) (CPT 86235) | GPA/MPA exclusion; CNS vasculitis differential | Negative | - | ROUTINE | ROUTINE | - |
 | Anti-SSA/SSB (Ro/La) (CPT 86235) | Sjogren syndrome with CNS involvement exclusion | Negative | - | ROUTINE | ROUTINE | - |
@@ -98,7 +98,7 @@ SECTION A: ACTION ITEMS
 | Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
 |------|-----------|----------------|:--:|:----:|:---:|:---:|
 | CSF neopterin | Marker of intrathecal immune activation; correlates with NBD disease activity; research use | Elevated supports active NBD | - | EXT | EXT | - |
-| CSF IL-6 level | Elevated in active pNBD; more sensitive than routine CSF markers for disease activity monitoring | Elevated in active parenchymal disease | - | EXT | EXT | - |
+| CSF IL-6 level (CPT 83519) | Elevated in active pNBD; more sensitive than routine CSF markers for disease activity monitoring | Elevated in active parenchymal disease | - | EXT | EXT | - |
 | CSF S100B | Marker of CNS tissue damage; predicts severity in acute pNBD | Elevated in severe parenchymal disease | - | EXT | EXT | - |
 | Anti-neuronal antibody panel (CPT 86255) | Autoimmune encephalitis exclusion if atypical presentation with cognitive/behavioral features | Negative | - | EXT | EXT | - |
 | Aquaporin-4 (AQP4) antibody (CPT 83519) | NMOSD exclusion if longitudinally extensive myelitis or optic neuritis | Negative | - | EXT | EXT | - |
@@ -130,7 +130,7 @@ SECTION A: ACTION ITEMS
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 | MRA head and neck (CPT 70544+70549) | Within 48h | Arterial stenosis/occlusion (rare in NBD but reported); aneurysm; arterial vasculitis assessment | MRI contraindications | - | ROUTINE | ROUTINE | - |
 | CT chest with contrast (CPT 71260) | Within 48h | Pulmonary artery aneurysm (pathognomonic for Behcet's -- Hughes-Stovin syndrome); mediastinal lymphadenopathy; sarcoidosis exclusion | Contrast allergy; renal insufficiency | - | ROUTINE | ROUTINE | - |
-| Ophthalmologic slit lamp examination | Within 24-48h | Anterior uveitis; posterior uveitis (retinal vasculitis); hypopyon; optic disc edema; retinal vein occlusion; **Ocular involvement in 50-70% of BD** | None | URGENT | URGENT | ROUTINE | URGENT |
+| Ophthalmologic slit lamp examination (CPT 92004) | Within 24-48h | Anterior uveitis; posterior uveitis (retinal vasculitis); hypopyon; optic disc edema; retinal vein occlusion; **Ocular involvement in 50-70% of BD** | None | URGENT | URGENT | ROUTINE | URGENT |
 | Fluorescein angiography (retinal) (CPT 92235) | Within 1-2 weeks | Retinal vasculitis (both arteries and veins); capillary leakage; retinal ischemia; macular edema | Fluorescein allergy | - | ROUTINE | ROUTINE | - |
 | OCT (optical coherence tomography) (CPT 92134) | Within 1-2 weeks | Retinal nerve fiber layer thinning; macular edema; monitor ocular disease activity | None | - | ROUTINE | ROUTINE | - |
 | EEG (CPT 95816) | Within 48h if seizures or encephalopathy | Focal or generalized slowing; epileptiform discharges; subclinical seizures | None | URGENT | ROUTINE | ROUTINE | URGENT |
@@ -167,7 +167,7 @@ SECTION A: ACTION ITEMS
 | Glucose with paired serum glucose (CPT 82945) | Usually normal in NBD (distinguishes from TB, fungal, bacterial meningitis); occasionally mildly low | Normal (>40 mg/dL; >60% of serum); low glucose argues against NBD | STAT | STAT | ROUTINE | STAT |
 | Oligoclonal bands (CSF AND paired serum) (CPT 83916) | Intrathecal IgG synthesis; present in ~15-20% of NBD (less common than in MS); helps differentiate | CSF-specific bands present (less common than MS) | URGENT | ROUTINE | ROUTINE | - |
 | IgG index (CPT 83787) | Intrathecal antibody synthesis | Mildly elevated | URGENT | ROUTINE | ROUTINE | - |
-| CSF IL-6 | Elevated in active pNBD; the most sensitive CSF marker for active NBD; correlates with disease activity and prognosis | Elevated in active pNBD (>20 pg/mL suggests active disease) | URGENT | ROUTINE | ROUTINE | - |
+| CSF IL-6 (CPT 83519) | Elevated in active pNBD; the most sensitive CSF marker for active NBD; correlates with disease activity and prognosis | Elevated in active pNBD (>20 pg/mL suggests active disease) | URGENT | ROUTINE | ROUTINE | - |
 | Gram stain and bacterial culture (CPT 87205+87070) | Rule out bacterial meningitis | No organisms | STAT | STAT | ROUTINE | STAT |
 | AFB smear and culture (CPT 87116) | TB meningitis exclusion (critical differential for chronic meningitis) | Negative | URGENT | URGENT | ROUTINE | URGENT |
 | Fungal culture (CPT 87102) | Fungal meningitis exclusion | Negative | URGENT | URGENT | ROUTINE | - |

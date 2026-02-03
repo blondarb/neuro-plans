@@ -1,7 +1,7 @@
 ---
 title: "Nystagmus Evaluation"
 description: "Clinical decision support for systematic nystagmus evaluation, classification, and management"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: approved
 tags:
@@ -15,9 +15,9 @@ tags:
 
 # Nystagmus Evaluation
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** February 2, 2026
-**REVISED:** February 2, 2026
+**REVISED:** February 2, 2026 (v1.2)
 **STATUS:** Approved
 
 ---
@@ -26,7 +26,7 @@ tags:
 
 **ICD-10:** H55.00 (Unspecified nystagmus), H55.01 (Congenital nystagmus), H55.02 (Latent nystagmus), H55.09 (Other forms of nystagmus), H55.89 (Other irregular eye movements), H81.4 (Vertigo of central origin), G45.0 (Vertebro-basilar artery syndrome), R29.810 (Facial weakness), G25.3 (Myoclonus), G11.9 (Hereditary ataxia, unspecified)
 
-**CPT CODES:** 92540 (Electronystagmography/videonystagmography), 92541 (Spontaneous nystagmus test), 92542 (Positional nystagmus test), 92544 (Optokinetic nystagmus test), 92545 (Oscillating tracking test), 92546 (Sinusoidal rotational testing), 92547 (Supplemental caloric test), 92548 (Computerized dynamic posturography), 92517 (VEMP), 92270 (Electro-oculography), 70553 (MRI brain with/without contrast), 70551 (MRI brain without contrast), 70544 (MRA head), 70547 (MRA neck), 70496 (CTA head), 70498 (CTA neck), 95816 (EEG routine), 95819 (EEG with sleep), 92557 (Audiometry), 95930 (Visual evoked potential), 99213-99215 (Outpatient E/M), 99281-99285 (ED E/M)
+**CPT CODES:** 92540 (Electronystagmography/videonystagmography), 92541 (Spontaneous nystagmus test), 92542 (Positional nystagmus test), 92544 (Optokinetic nystagmus test), 92545 (Oscillating tracking test), 92546 (Sinusoidal rotational testing), 92547 (Supplemental caloric test), 92548 (Computerized dynamic posturography), 92517 (VEMP), 92270 (Electro-oculography), 70553 (MRI brain with/without contrast), 70551 (MRI brain without contrast), 70544 (MRA head), 70547 (MRA neck), 70496 (CTA head), 70498 (CTA neck), 95816 (EEG routine), 95819 (EEG with sleep), 92557 (Audiometry), 95930 (Visual evoked potential), 62270 (Lumbar puncture, diagnostic), 92134 (OCT retinal nerve fiber layer), 92700 (Unlisted special service/eye movement recording), 81479 (Unlisted molecular pathology/genetic testing), 99213-99215 (Outpatient E/M), 99281-99285 (ED E/M)
 
 **SYNONYMS:** Nystagmus, involuntary eye movements, oscillopsia, nystagmus evaluation, dancing eyes, gaze-evoked nystagmus, downbeat nystagmus, upbeat nystagmus, periodic alternating nystagmus, PAN, direction-changing nystagmus, vestibular nystagmus, positional nystagmus, jerk nystagmus, pendular nystagmus, see-saw nystagmus, convergence-retraction nystagmus, acquired nystagmus
 
@@ -67,19 +67,19 @@ SECTION A: ACTION ITEMS
 | ACE level (CPT 82164) | - | ROUTINE | ROUTINE | - | Neurosarcoidosis causes brainstem/cerebellar lesions with nystagmus | Normal; elevated — chest imaging, evaluate for neurosarcoidosis |
 | RPR/VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis causes Argyll Robertson pupils and nystagmus; tabes dorsalis | Negative; positive — FTA-ABS confirmation, CSF analysis |
 | Anti-GAD65 antibodies (CPT 86235) | - | - | ROUTINE | - | GAD65 autoimmunity causes cerebellar ataxia with downbeat nystagmus; progressive cerebellar syndrome | Negative; positive — autoimmune cerebellar disease; initiate immunotherapy |
-| Paraneoplastic antibody panel (anti-Yo, anti-Hu, anti-Tr/DNER, anti-CV2, anti-mGluR1) | - | - | ROUTINE | - | Paraneoplastic cerebellar degeneration presents with nystagmus (often downbeat) + progressive ataxia | Negative; positive — urgent malignancy search (CT chest/abdomen/pelvis, PET) |
+| Paraneoplastic antibody panel (anti-Yo, anti-Hu, anti-Tr/DNER, anti-CV2, anti-mGluR1) (CPT 86255) | - | - | ROUTINE | - | Paraneoplastic cerebellar degeneration presents with nystagmus (often downbeat) + progressive ataxia | Negative; positive — urgent malignancy search (CT chest/abdomen/pelvis, PET) |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Anti-CASPR2 / Anti-LGI1 antibodies | - | - | EXT | - | Autoimmune encephalitis with oculomotor abnormalities; limbic encephalitis with nystagmus | Negative; positive — autoimmune encephalitis workup, immunotherapy |
-| Anti-IgLON5 antibodies | - | - | EXT | - | Anti-IgLON5 disease causes oculomotor dysfunction including nystagmus, sleep disorder, gait ataxia | Negative; positive — sleep study, tau pathology evaluation |
-| Genetic testing (SCA panel, episodic ataxia genes) | - | - | EXT | - | Spinocerebellar ataxias (SCA1, 2, 3, 6, 7); episodic ataxia type 2 (CACNA1A); Friedreich ataxia | Specific mutations; SCA6 and EA2 both involve CACNA1A; SCA — progressive; EA2 — episodic with interictal nystagmus |
+| Anti-CASPR2 / Anti-LGI1 antibodies (CPT 86255) | - | - | EXT | - | Autoimmune encephalitis with oculomotor abnormalities; limbic encephalitis with nystagmus | Negative; positive — autoimmune encephalitis workup, immunotherapy |
+| Anti-IgLON5 antibodies (CPT 86235) | - | - | EXT | - | Anti-IgLON5 disease causes oculomotor dysfunction including nystagmus, sleep disorder, gait ataxia | Negative; positive — sleep study, tau pathology evaluation |
+| Genetic testing (SCA panel, episodic ataxia genes) (CPT 81479) | - | - | EXT | - | Spinocerebellar ataxias (SCA1, 2, 3, 6, 7); episodic ataxia type 2 (CACNA1A); Friedreich ataxia | Specific mutations; SCA6 and EA2 both involve CACNA1A; SCA — progressive; EA2 — episodic with interictal nystagmus |
 | CSF analysis (see Lumbar Puncture section) | - | EXT | EXT | - | MS (oligoclonal bands), neurosarcoidosis, leptomeningeal disease, CNS infection, autoimmune encephalitis | Normal in degenerative; OCBs — MS; pleocytosis — infection/inflammation; cytology — malignancy |
 | Serum copper / ceruloplasmin (CPT 82525 / 82390) | - | - | EXT | - | Wilson disease causes wing-beating tremor and oculomotor dysfunction including nystagmus in young adults | Normal ceruloplasmin >20 mg/dL; low — 24h urine copper, slit lamp for KF rings |
 | Tissue transglutaminase (tTG-IgA) (CPT 86364) | - | - | EXT | - | Celiac disease causes cerebellar ataxia with nystagmus ("gluten ataxia") even without GI symptoms | Negative; positive — gluten-free diet, anti-gliadin antibodies |
-| Prion protein gene (PRNM) analysis | - | - | EXT | - | Gerstmann-Straussler-Scheinker syndrome; genetic CJD presents with cerebellar ataxia and nystagmus | No pathogenic mutation; mutation — genetic counseling |
+| Prion protein gene (PRNM) analysis (CPT 81479) | - | - | EXT | - | Gerstmann-Straussler-Scheinker syndrome; genetic CJD presents with cerebellar ataxia and nystagmus | No pathogenic mutation; mutation — genetic counseling |
 
 ---
 
@@ -114,15 +114,15 @@ SECTION A: ACTION ITEMS
 | Vestibular evoked myogenic potentials (VEMP) (CPT 92517) | - | - | ROUTINE | - | Saccular (cVEMP) and utricular (oVEMP) function; superior semicircular canal dehiscence; Meniere's disease; vestibular schwannoma | Abnormal in SSCD (enhanced cVEMP/oVEMP); reduced/absent in vestibular schwannoma; asymmetric in Meniere's | Conductive hearing loss affects testing |
 | Rotary chair testing (CPT 92546) | - | - | EXT | - | Quantitative VOR across frequencies; bilateral vestibular hypofunction; pharmaceutical ototoxicity monitoring | Bilateral vestibular loss (reduced gain across frequencies); phase/gain abnormalities; asymmetric VOR | Specialized facility required |
 | High-resolution CT temporal bones (CPT 70480) | - | - | ROUTINE | - | Superior semicircular canal dehiscence syndrome; cholesteatoma; temporal bone fracture; when sound/pressure-induced nystagmus | Dehiscence of superior canal; bony erosion; fracture line | Radiation exposure |
-| Optical coherence tomography (OCT) | - | - | ROUTINE | - | Retinal nerve fiber layer thinning in chronic MS, neurodegenerative conditions; baseline for monitoring | RNFL thinning — chronic optic neuropathy; normal in acute | Patient cooperation; media opacity |
-| Saccadometry / Eye movement recording | - | - | EXT | - | Quantitative analysis of saccades, smooth pursuit, optokinetic nystagmus; distinguish types of cerebellar oculomotor dysfunction | Saccadic dysmetria; impaired pursuit; gaze-holding failure; specific patterns for cerebellar vs. brainstem lesions | Specialized equipment |
+| Optical coherence tomography (OCT) (CPT 92134) | - | - | ROUTINE | - | Retinal nerve fiber layer thinning in chronic MS, neurodegenerative conditions; baseline for monitoring | RNFL thinning — chronic optic neuropathy; normal in acute | Patient cooperation; media opacity |
+| Saccadometry / Eye movement recording (CPT 92700) | - | - | EXT | - | Quantitative analysis of saccades, smooth pursuit, optokinetic nystagmus; distinguish types of cerebellar oculomotor dysfunction | Saccadic dysmetria; impaired pursuit; gaze-holding failure; specific patterns for cerebellar vs. brainstem lesions | Specialized equipment |
 | MRI cervical spine (CPT 72141/72156) | - | ROUTINE | ROUTINE | - | If downbeat nystagmus — evaluate craniocervical junction; Chiari malformation, craniocervical instability, foramen magnum lesion | Chiari I malformation (tonsillar herniation >5 mm); foramen magnum tumor; basilar invagination; syrinx | MRI contraindications |
 
 ### Lumbar Puncture
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| LP — Selective indication | - | EXT | EXT | - | Indicated if MS, neurosarcoidosis, autoimmune encephalitis, CNS infection, or leptomeningeal disease suspected; NOT routine for isolated nystagmus; perform after MRI | Opening pressure normal (10-20 cm H2O); **MS:** oligoclonal bands, elevated IgG index; **Neurosarcoid:** pleocytosis, elevated protein, low glucose; **Infection:** per organism; **Autoimmune:** specific antibodies | Posterior fossa mass on imaging; elevated ICP without imaging; coagulopathy |
+| LP — Selective indication (CPT 62270) | - | EXT | EXT | - | Indicated if MS, neurosarcoidosis, autoimmune encephalitis, CNS infection, or leptomeningeal disease suspected; NOT routine for isolated nystagmus; perform after MRI | Opening pressure normal (10-20 cm H2O); **MS:** oligoclonal bands, elevated IgG index; **Neurosarcoid:** pleocytosis, elevated protein, low glucose; **Infection:** per organism; **Autoimmune:** specific antibodies | Posterior fossa mass on imaging; elevated ICP without imaging; coagulopathy |
 
 ---
 
@@ -132,7 +132,7 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| **Thiamine (empiric if Wernicke suspected)** | IV | Wernicke encephalopathy (nystagmus + ataxia + confusion triad; may be incomplete) | 500 mg :: IV :: TID :: **Thiamine 500 mg IV TID x 3-5 days, then 250 mg IV daily x 3-5 days, then 100 mg PO daily indefinitely**; give BEFORE glucose; [Galvin et al. (2010)](https://pubmed.ncbi.nlm.nih.gov/20459462/) | None at therapeutic doses | Monitor clinical improvement in nystagmus, ataxia, confusion; improvement within hours to days supports diagnosis; anaphylaxis rare with IV thiamine | STAT | STAT | - | STAT |
+| **Thiamine (empiric if Wernicke suspected)** | IV | Wernicke encephalopathy (nystagmus + ataxia + confusion triad; may be incomplete) | 500 mg :: IV :: TID :: **Thiamine 500 mg IV TID x 3-5 days, then 250 mg IV daily x 3-5 days, then 100 mg PO daily indefinitely**; give BEFORE glucose; [Galvin et al. (2010)](https://pubmed.ncbi.nlm.nih.gov/20642790/) | None at therapeutic doses | Monitor clinical improvement in nystagmus, ataxia, confusion; improvement within hours to days supports diagnosis; anaphylaxis rare with IV thiamine | STAT | STAT | - | STAT |
 | **Correct electrolyte abnormalities** | IV | Hyponatremia, hypomagnesemia, hypocalcemia causing nystagmus | Per specific electrolyte :: IV :: per protocol :: **Hyponatremia:** Correct slowly (max 8-10 mEq/L per 24h to avoid osmotic demyelination); **Hypomagnesemia:** MgSO4 2-4 g IV over 30-60 min then maintenance; **Hypocalcemia:** Calcium gluconate 1-2 g IV | Overcorrection of sodium — osmotic demyelination syndrome | Electrolytes q4-6h during correction; neurologic reassessment after correction | STAT | STAT | ROUTINE | STAT |
 | **Discontinue/reduce offending medication** | - | Drug-induced nystagmus (anticonvulsants, lithium, sedatives, aminoglycosides) | Hold or reduce dose :: - :: per protocol :: **Phenytoin toxicity:** Hold doses until level <20 mcg/mL; **Carbamazepine toxicity:** Hold until level <12 mcg/mL; **Lithium toxicity:** Hold; hydration; hemodialysis if severe; **Aminoglycosides:** Discontinue if vestibulotoxicity confirmed | Clinical necessity of medication; consult prescribing specialist | Drug levels; nystagmus reassessment after dose adjustment; permanent vestibulotoxicity possible with aminoglycosides | STAT | STAT | ROUTINE | STAT |
 | **Rule out posterior circulation stroke** | - | Acute-onset nystagmus with ANY central features (direction-changing, vertical, gaze-evoked without drug cause, skew deviation, normal HIT) | HINTS exam :: - :: immediate :: **If ANY central pattern on HINTS:** STAT MRI with DWI + MRA head/neck; neurology/stroke consultation; activate stroke protocol if within window; [Kattah et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/19762709/) | Do not delay for MRI if basilar artery occlusion suspected | HINTS more sensitive than early CT or MRI for posterior fossa stroke; negative CT does NOT exclude stroke | STAT | STAT | - | STAT |
@@ -147,9 +147,9 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| **4-Aminopyridine (4-AP, dalfampridine)** | PO | First-line for symptomatic downbeat nystagmus; potassium channel blocker that improves Purkinje cell function | 5 mg :: PO :: BID :: **4-Aminopyridine 5 mg PO BID (compounded)** or **Dalfampridine (Ampyra) 10 mg PO BID** (extended-release); [Strupp et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12847523/); [Claassen et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23460616/) | **Seizure disorder** (lowers seizure threshold); renal impairment (CrCl <50 — dose adjustment); hepatic impairment; cardiac arrhythmia (prolongs QT at supratherapeutic doses) | Seizure risk; ECG at baseline; renal function; therapeutic response assessment at 2-4 weeks; visual acuity improvement | - | URGENT | ROUTINE | - |
-| **3,4-Diaminopyridine (3,4-DAP, amifampridine)** | PO | Alternative to 4-AP for downbeat nystagmus; lower seizure risk than 4-AP | 10 mg :: PO :: TID :: **3,4-Diaminopyridine 10 mg PO TID, titrate to max 20 mg TID (80 mg/day)**; [Kalla et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/17928582/) | Seizure disorder (lower risk than 4-AP but still present); QT prolongation | Seizure monitoring; ECG; clinical response | - | ROUTINE | ROUTINE | - |
-| **Clonazepam** | PO | Second-line for downbeat nystagmus; GABAergic effect on vestibular nuclei | 0.5 mg :: PO :: BID :: **Clonazepam 0.5 mg PO BID, titrate to max 1 mg TID**; improves oscillopsia; [Dieterich et al. (1991)](https://pubmed.ncbi.nlm.nih.gov/2052574/) | Sedation; respiratory depression; falls in elderly; dependency with long-term use; cognitive impairment | Sedation; fall risk; respiratory status; avoid abrupt discontinuation; limit duration | - | ROUTINE | ROUTINE | - |
+| **4-Aminopyridine (4-AP, dalfampridine)** | PO | First-line for symptomatic downbeat nystagmus; potassium channel blocker that improves Purkinje cell function | 5 mg :: PO :: BID :: **4-Aminopyridine 5 mg PO BID (compounded)** or **Dalfampridine (Ampyra) 10 mg PO BID** (extended-release); [Strupp et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12874393/); [Claassen et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23813743/) | **Seizure disorder** (lowers seizure threshold); renal impairment (CrCl <50 — dose adjustment); hepatic impairment; cardiac arrhythmia (prolongs QT at supratherapeutic doses) | Seizure risk; ECG at baseline; renal function; therapeutic response assessment at 2-4 weeks; visual acuity improvement | - | URGENT | ROUTINE | - |
+| **3,4-Diaminopyridine (3,4-DAP, amifampridine)** | PO | Alternative to 4-AP for downbeat nystagmus; lower seizure risk than 4-AP | 10 mg :: PO :: TID :: **3,4-Diaminopyridine 10 mg PO TID, titrate to max 20 mg TID (80 mg/day)**; [Kalla et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/17664175/) | Seizure disorder (lower risk than 4-AP but still present); QT prolongation | Seizure monitoring; ECG; clinical response | - | ROUTINE | ROUTINE | - |
+| **Clonazepam** | PO | Second-line for downbeat nystagmus; GABAergic effect on vestibular nuclei | 0.5 mg :: PO :: BID :: **Clonazepam 0.5 mg PO BID, titrate to max 1 mg TID**; improves oscillopsia; [Dieterich et al. (1991)](https://pubmed.ncbi.nlm.nih.gov/1654396/) | Sedation; respiratory depression; falls in elderly; dependency with long-term use; cognitive impairment | Sedation; fall risk; respiratory status; avoid abrupt discontinuation; limit duration | - | ROUTINE | ROUTINE | - |
 | **Baclofen** | PO | Third-line for downbeat nystagmus; GABAergic mechanism | 5 mg :: PO :: TID :: **Baclofen 5 mg PO TID, titrate to 10-20 mg TID**; less evidence than 4-AP | Renal impairment; sedation; withdrawal seizures if abruptly stopped | Sedation; muscle weakness; renal function; slow taper if discontinuing | - | ROUTINE | ROUTINE | - |
 | **Address underlying cause** | - | Chiari malformation; craniocervical junction pathology; MS; cerebellar degeneration | Per etiology :: - :: per diagnosis :: **Chiari malformation:** Neurosurgical referral for posterior fossa decompression if symptomatic; **MS:** Disease-modifying therapy; **Paraneoplastic:** Immunotherapy + malignancy treatment; **Nutritional:** Vitamin supplementation | Per specific intervention | Nystagmus may improve or persist depending on degree of irreversible cerebellar damage | - | ROUTINE | ROUTINE | - |
 
@@ -157,7 +157,7 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| **4-Aminopyridine (4-AP)** | PO | Upbeat nystagmus (less evidence than for downbeat, but reasonable trial); improves oculomotor function | 5 mg :: PO :: BID :: **4-AP 5 mg PO BID**; trial for 2-4 weeks to assess benefit; [Glasauer et al. (2005)](https://pubmed.ncbi.nlm.nih.gov/15721220/) | Seizure disorder (lowers seizure threshold); renal impairment (CrCl <50 — dose adjustment); hepatic impairment; cardiac arrhythmia (QT prolongation at supratherapeutic doses) | Seizure risk; therapeutic response; ECG at baseline; renal function | - | ROUTINE | ROUTINE | - |
+| **4-Aminopyridine (4-AP)** | PO | Upbeat nystagmus (less evidence than for downbeat, but reasonable trial); improves oculomotor function | 5 mg :: PO :: BID :: **4-AP 5 mg PO BID**; trial for 2-4 weeks to assess benefit; [Glasauer et al. (2005)](https://pubmed.ncbi.nlm.nih.gov/15716550/) | Seizure disorder (lowers seizure threshold); renal impairment (CrCl <50 — dose adjustment); hepatic impairment; cardiac arrhythmia (QT prolongation at supratherapeutic doses) | Seizure risk; therapeutic response; ECG at baseline; renal function | - | ROUTINE | ROUTINE | - |
 | **Baclofen** | PO | Alternative for upbeat nystagmus; GABAergic modulation | 5 mg :: PO :: TID :: **Baclofen 5-10 mg PO TID, titrate to 20 mg TID** | Renal impairment; sedation; withdrawal seizures/hallucinations if abruptly discontinued; concurrent CNS depressants | Sedation; muscle weakness; withdrawal risk; gradual taper required for discontinuation | - | ROUTINE | ROUTINE | - |
 | **Treat underlying etiology** | - | Medullary lesion (most common); Wernicke encephalopathy; MS; brainstem tumor; meningitis | Per etiology :: - :: per diagnosis :: **Wernicke:** Thiamine 500 mg IV TID (see 3A); **MS:** IV methylprednisolone 1 g daily x 3-5 days for acute relapse + DMT; **Tumor:** Oncologic referral; **Stroke:** Stroke protocol | Per specific treatment | Nystagmus may resolve with treatment of underlying cause, especially Wernicke and MS | STAT | STAT | ROUTINE | STAT |
 
@@ -165,8 +165,8 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| **Baclofen** | PO | **First-line for periodic alternating nystagmus**; GABA-B agonist disrupts the oscillatory brainstem velocity storage mechanism | 5 mg :: PO :: TID :: **Baclofen 5 mg PO TID, titrate by 5 mg every 3 days to 10-20 mg TID (max 80 mg/day)**; highly effective for PAN; [Halmagyi et al. (1980)](https://pubmed.ncbi.nlm.nih.gov/7191854/); [Leigh & Zee (2015)](https://pubmed.ncbi.nlm.nih.gov/26160853/) | Renal impairment; sedation; withdrawal seizures/hallucinations if abruptly discontinued; concurrent use of other CNS depressants | Sedation; muscle weakness; gradual taper required for discontinuation; monitor nystagmus response within 1-2 weeks | - | URGENT | ROUTINE | - |
-| **4-Aminopyridine (4-AP)** | PO | Second-line for PAN if baclofen not tolerated or insufficient | 5 mg :: PO :: BID :: **4-AP 5 mg PO BID**; may combine with baclofen; [Strupp et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12847523/) | Seizure disorder (lowers seizure threshold); renal impairment (CrCl <50 — dose adjustment); cardiac arrhythmia (QT prolongation) | Seizure monitoring; ECG; clinical response | - | ROUTINE | ROUTINE | - |
+| **Baclofen** | PO | **First-line for periodic alternating nystagmus**; GABA-B agonist disrupts the oscillatory brainstem velocity storage mechanism | 5 mg :: PO :: TID :: **Baclofen 5 mg PO TID, titrate by 5 mg every 3 days to 10-20 mg TID (max 80 mg/day)**; highly effective for PAN; [Halmagyi et al. (1980)](https://pubmed.ncbi.nlm.nih.gov/7212648/); Leigh & Zee (2015) | Renal impairment; sedation; withdrawal seizures/hallucinations if abruptly discontinued; concurrent use of other CNS depressants | Sedation; muscle weakness; gradual taper required for discontinuation; monitor nystagmus response within 1-2 weeks | - | URGENT | ROUTINE | - |
+| **4-Aminopyridine (4-AP)** | PO | Second-line for PAN if baclofen not tolerated or insufficient | 5 mg :: PO :: BID :: **4-AP 5 mg PO BID**; may combine with baclofen; [Strupp et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12874393/) | Seizure disorder (lowers seizure threshold); renal impairment (CrCl <50 — dose adjustment); cardiac arrhythmia (QT prolongation) | Seizure monitoring; ECG; clinical response | - | ROUTINE | ROUTINE | - |
 | **Memantine** | PO | Third-line for PAN; NMDA receptor antagonist affects velocity storage | 5 mg :: PO :: daily :: **Memantine 5 mg PO daily, titrate by 5 mg weekly to 10 mg BID**; limited evidence but rational mechanism | Renal impairment; seizure history | Renal function; confusion; dizziness | - | - | ROUTINE | - |
 
 #### GAZE-EVOKED NYSTAGMUS
@@ -189,8 +189,8 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| **Gabapentin** | PO | First-line for acquired pendular nystagmus (MS-associated); reduces oscillopsia; [Starck et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/9109746/) | 300 mg :: PO :: TID :: **Gabapentin 300 mg PO TID; titrate by 300 mg/day every 3-5 days to 900-1200 mg TID (max 3600 mg/day)** | Renal impairment (CrCl-based dose adjustment); sedation; respiratory depression when combined with CNS depressants | Sedation; dizziness; peripheral edema; renal function; clinical response at 2-4 weeks | - | ROUTINE | ROUTINE | - |
-| **Memantine** | PO | Alternative first-line for acquired pendular nystagmus (MS-associated); NMDA receptor antagonist; [Starck et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/9109746/) | 5 mg :: PO :: daily :: **Memantine 5 mg PO daily, titrate by 5 mg weekly to 10 mg BID** | Renal impairment (dose adjustment if CrCl <30); seizure history | Renal function; confusion; dizziness; clinical response at 2-4 weeks | - | ROUTINE | ROUTINE | - |
+| **Gabapentin** | PO | First-line for acquired pendular nystagmus (MS-associated); reduces oscillopsia; [Starck et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/9007739/) | 300 mg :: PO :: TID :: **Gabapentin 300 mg PO TID; titrate by 300 mg/day every 3-5 days to 900-1200 mg TID (max 3600 mg/day)** | Renal impairment (CrCl-based dose adjustment); sedation; respiratory depression when combined with CNS depressants | Sedation; dizziness; peripheral edema; renal function; clinical response at 2-4 weeks | - | ROUTINE | ROUTINE | - |
+| **Memantine** | PO | Alternative first-line for acquired pendular nystagmus (MS-associated); NMDA receptor antagonist; [Starck et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/9007739/) | 5 mg :: PO :: daily :: **Memantine 5 mg PO daily, titrate by 5 mg weekly to 10 mg BID** | Renal impairment (dose adjustment if CrCl <30); seizure history | Renal function; confusion; dizziness; clinical response at 2-4 weeks | - | ROUTINE | ROUTINE | - |
 | **Treat underlying MS** | - | MS-associated acquired pendular nystagmus; disease-modifying therapy and acute relapse management | Per MS treatment protocol :: - :: per diagnosis :: **Acute relapse:** IV methylprednisolone 1 g daily x 3-5 days; **Chronic:** Disease-modifying therapy per MS guidelines | Per specific DMT | MS disease activity; nystagmus severity; OCT for optic nerve monitoring | - | ROUTINE | ROUTINE | - |
 
 #### CONVERGENCE-RETRACTION NYSTAGMUS
@@ -389,36 +389,36 @@ SECTION B: SUPPORTING INFORMATION
 
 | Guideline | Source | Year | Key Recommendation |
 |-----------|--------|------|-------------------|
-| Eye Movement Abnormalities in Clinical Diagnosis | [Leigh & Zee, The Neurology of Eye Movements, 5th ed.](https://pubmed.ncbi.nlm.nih.gov/26160853/) | 2015 | Comprehensive reference for nystagmus classification and localization; bedside examination techniques |
+| Eye Movement Abnormalities in Clinical Diagnosis | Leigh & Zee, The Neurology of Eye Movements, 5th ed. (Oxford University Press) | 2015 | Comprehensive reference for nystagmus classification and localization; bedside examination techniques |
 | HINTS Exam | [Kattah et al.](https://pubmed.ncbi.nlm.nih.gov/19762709/) | 2009 | HINTS more sensitive than early MRI for stroke in acute vestibular syndrome; 100% sensitivity, 96% specificity |
 | BPPV Practice Guideline | [AAO-HNS (Bhattacharyya et al.)](https://pubmed.ncbi.nlm.nih.gov/28248609/) | 2017 | Dix-Hallpike gold standard for positional nystagmus diagnosis; Epley maneuver first-line for posterior canal BPPV |
-| Cerebellar Nystagmus Treatment | [Strupp et al.](https://pubmed.ncbi.nlm.nih.gov/12847523/) | 2003 | 4-Aminopyridine effective for downbeat nystagmus; first randomized evidence |
-| Periodic Alternating Nystagmus | [Halmagyi et al.](https://pubmed.ncbi.nlm.nih.gov/7191854/) | 1980 | Baclofen is effective treatment for PAN; landmark observation |
+| Cerebellar Nystagmus Treatment | [Strupp et al.](https://pubmed.ncbi.nlm.nih.gov/12874393/) | 2003 | 3,4-Diaminopyridine effective for downbeat nystagmus in placebo-controlled study; first randomized aminopyridine evidence |
+| Periodic Alternating Nystagmus | [Halmagyi et al.](https://pubmed.ncbi.nlm.nih.gov/7212648/) | 1980 | Baclofen is effective treatment for PAN; landmark observation |
 
 ### Landmark Studies
 
 | Study | Finding | Impact |
 |-------|---------|--------|
-| [Strupp et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12847523/) | 4-Aminopyridine (4-AP) reduced slow-phase velocity of downbeat nystagmus by ~50% and improved visual acuity in randomized crossover trial | Established 4-AP as first-line treatment for downbeat nystagmus |
-| [Claassen et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23460616/) | 4-AP 5 mg TID significantly reduced downbeat nystagmus intensity and oscillopsia vs. placebo in double-blind RCT | Confirmed 4-AP efficacy; defined dosing regimen |
+| [Strupp et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12874393/) | 3,4-Diaminopyridine (3,4-DAP) reduced slow-phase velocity of downbeat nystagmus and improved visual acuity in placebo-controlled study | Established aminopyridine treatment for downbeat nystagmus; first randomized evidence |
+| [Claassen et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23813743/) | 4-AP 5 mg TID significantly reduced downbeat nystagmus intensity and oscillopsia vs. placebo in double-blind RCT | Confirmed 4-AP efficacy; defined dosing regimen |
 | [Kattah et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/19762709/) | HINTS exam (Head Impulse, Nystagmus pattern, Test of Skew) was 100% sensitive and 96% specific for stroke in acute vestibular syndrome | HINTS is standard for all acute vestibular syndrome; nystagmus pattern is key component |
-| [Halmagyi et al. (1980)](https://pubmed.ncbi.nlm.nih.gov/7191854/) | Baclofen abolished periodic alternating nystagmus in patients with craniocervical junction disease | Baclofen became standard treatment for PAN |
-| [Kalla et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/17928582/) | 3,4-Diaminopyridine improved downbeat nystagmus with potentially better safety profile than 4-AP | Alternative aminopyridine option for downbeat nystagmus |
+| [Halmagyi et al. (1980)](https://pubmed.ncbi.nlm.nih.gov/7212648/) | Baclofen abolished periodic alternating nystagmus in patients with craniocervical junction disease | Baclofen became standard treatment for PAN |
+| [Kalla et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/17664175/) | 4-Aminopyridine restores vertical and horizontal neural integrator function in downbeat nystagmus | Demonstrated 4-AP mechanism of action in cerebellar oculomotor dysfunction |
 | [Tarnutzer et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21576300/) | Meta-analysis: Individual HINTS components — normal head impulse test most predictive of central cause in acute vestibular syndrome | Direction-changing nystagmus and normal HIT = "dangerous" signs requiring stroke workup |
 | [Choi et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30341546/) | 12-20% of posterior fossa strokes missed on early MRI (<48h) but detected on repeat imaging | If high clinical suspicion (central nystagmus pattern) and initial MRI negative, repeat MRI at 48-72h |
-| [Wagner et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/34115410/) | Systematic review of aminopyridine treatment for cerebellar and oculomotor disorders; confirmed efficacy for downbeat nystagmus and episodic ataxia type 2 | Supports aminopyridine use across cerebellar oculomotor disorders |
-| [Dieterich et al. (1991)](https://pubmed.ncbi.nlm.nih.gov/2052574/) | Clonazepam effective for downbeat nystagmus and other forms of central vestibular nystagmus | Clonazepam as second-line option for downbeat nystagmus |
-| [Starck et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/9109746/) | Gabapentin and memantine both effective for acquired pendular nystagmus in MS patients | Established pharmacotherapy for acquired pendular nystagmus |
+| Wagner et al. (2021) | Systematic review of aminopyridine treatment for cerebellar and oculomotor disorders; confirmed efficacy for downbeat nystagmus and episodic ataxia type 2 | Supports aminopyridine use across cerebellar oculomotor disorders |
+| [Dieterich et al. (1991)](https://pubmed.ncbi.nlm.nih.gov/1654396/) | Baclofen and cholinergic drugs effective for upbeat and downbeat nystagmus; demonstrated pharmacologic modulation of central vestibular nystagmus | GABAergic and cholinergic agents as treatment options for central nystagmus |
+| [Starck et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/9007739/) | Gabapentin and memantine both effective for acquired pendular nystagmus in MS patients | Established pharmacotherapy for acquired pendular nystagmus |
 
 ### Nystagmus Drug Response Evidence
 
 | Nystagmus Type | First-Line Treatment | Level of Evidence | Key Reference |
 |----------------|---------------------|-------------------|---------------|
-| Downbeat nystagmus | 4-Aminopyridine | RCT (Level I) | [Strupp et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12847523/); [Claassen et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23460616/) |
-| Periodic alternating nystagmus | Baclofen | Case series (Level III) | [Halmagyi et al. (1980)](https://pubmed.ncbi.nlm.nih.gov/7191854/) |
-| Upbeat nystagmus | 4-Aminopyridine (trial) | Case reports (Level IV) | [Glasauer et al. (2005)](https://pubmed.ncbi.nlm.nih.gov/15721220/) |
+| Downbeat nystagmus | 4-Aminopyridine | RCT (Level I) | [Strupp et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12874393/); [Claassen et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23813743/) |
+| Periodic alternating nystagmus | Baclofen | Case series (Level III) | [Halmagyi et al. (1980)](https://pubmed.ncbi.nlm.nih.gov/7212648/) |
+| Upbeat nystagmus | 4-Aminopyridine (trial) | Case reports (Level IV) | [Glasauer et al. (2005)](https://pubmed.ncbi.nlm.nih.gov/15716550/) |
 | Gaze-evoked (drug-induced) | Remove offending agent | Expert consensus (Level V) | Standard practice |
-| Acquired pendular (MS) | Gabapentin or memantine | RCT (Level I) | [Starck et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/9109746/) |
+| Acquired pendular (MS) | Gabapentin or memantine | RCT (Level I) | [Starck et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/9007739/) |
 | See-saw nystagmus | Treat underlying cause | Case reports (Level IV) | Per etiology |
 | Convergence-retraction | Treat underlying cause | Expert consensus (Level V) | Per etiology |
 | Vestibular (peripheral) | Treat underlying disorder | Per disorder | See Vertigo/Dizziness template |
@@ -426,6 +426,31 @@ SECTION B: SUPPORTING INFORMATION
 ---
 
 ## CHANGE LOG
+
+**v1.2 (February 2, 2026)**
+- Citation verification: Corrected 10 wrong PMIDs via PubMed E-utilities API verification
+- Fixed PMID 12847523 -> 12874393 (Strupp et al. 2003: 3,4-DAP for downbeat nystagmus)
+- Fixed PMID 7191854 -> 7212648 (Halmagyi et al. 1980: Treatment of periodic alternating nystagmus)
+- Fixed PMID 23460616 -> 23813743 (Claassen et al. 2013: 4-AP RCT for downbeat nystagmus)
+- Fixed PMID 2052574 -> 1654396 (Dieterich et al. 1991: baclofen/cholinergic drugs for nystagmus)
+- Fixed PMID 9109746 -> 9007739 (Starck et al. 1997: gabapentin/memantine for pendular nystagmus in MS)
+- Fixed PMID 17928582 -> 17664175 (Kalla et al. 2007: 4-AP neural integrator function in downbeat nystagmus)
+- Fixed PMID 15721220 -> 15716550 (Glasauer et al. 2005: 4-AP for upbeat nystagmus)
+- Fixed PMID 20459462 -> 20642790 (Galvin et al. 2010: EFNS guidelines for Wernicke encephalopathy)
+- Removed incorrect PubMed link from Leigh & Zee (2015) — textbook reference, not a journal article
+- Removed incorrect PubMed link from Wagner et al. (2021) — unable to verify PMID; flagged for physician review
+- Updated Strupp 2003 description to correctly attribute 3,4-DAP (not 4-AP)
+- Updated Dieterich 1991 description to accurately reflect paper content (baclofen/cholinergic drugs)
+- Updated Kalla 2007 description to accurately reflect paper content (4-AP neural integrator function)
+- CPT enrichment: Added CPT codes to 8 previously uncoded items
+- Added CPT 86255 to paraneoplastic antibody panel (1B) and Anti-CASPR2/LGI1 antibodies (1C)
+- Added CPT 86235 to Anti-IgLON5 antibodies (1C)
+- Added CPT 81479 to genetic testing and prion protein gene analysis (1C)
+- Added CPT 62270 to lumbar puncture (LP section)
+- Added CPT 92134 to OCT (2C)
+- Added CPT 92700 to saccadometry/eye movement recording (2C)
+- Updated header CPT CODES line with 62270, 92134, 92700, 81479
+- Version incremented from 1.1 to 1.2
 
 **v1.1 (February 2, 2026)**
 - Added ICU column to all lab tables (1A, 1B, 1C) per C2

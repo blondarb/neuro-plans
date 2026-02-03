@@ -1,7 +1,7 @@
 ---
 title: "HIV-Associated Neurocognitive Disorder"
 description: "Clinical decision support for evaluation and management of HIV-associated neurocognitive disorder (HAND)"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD"
 status: approved
 tags:
@@ -14,7 +14,7 @@ tags:
 
 # HIV-Associated Neurocognitive Disorder
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** February 2, 2026
 **REVISED:** February 2, 2026
 **STATUS:** Approved
@@ -183,9 +183,9 @@ SECTION A: ACTION ITEMS
 | Escitalopram | PO | Depression/anxiety comorbid with HAND; well tolerated; minimal CYP interactions | 5 mg :: PO :: daily :: Start 5-10 mg daily; max 20 mg daily | Concurrent MAOIs; QT prolongation | QTc if risk factors; suicidality monitoring; check interactions with PIs | - | ROUTINE | ROUTINE | - |
 | Mirtazapine | PO | Depression with insomnia and weight loss (common in HIV); appetite stimulation; dual benefit in HIV wasting with depression | 15 mg :: PO :: QHS :: Start 15 mg QHS; increase to 30-45 mg; lower dose more sedating | Concurrent MAOIs; caution with CYP3A4 inhibitors (PIs may increase levels) | Weight gain (desired in wasting); sedation; neutropenia (rare) | - | ROUTINE | ROUTINE | - |
 | Bupropion | PO | Depression with fatigue, psychomotor slowing; avoid in seizure risk; may assist with stimulant cessation in comorbid methamphetamine use | 150 mg :: PO :: daily :: Start 150 mg XL daily; increase to 300 mg XL daily after 1 week if needed | Seizure disorder; eating disorders; concurrent MAOIs; abrupt alcohol/benzodiazepine withdrawal | Seizure risk; insomnia; anxiety; blood pressure | - | ROUTINE | ROUTINE | - |
-| Methylphenidate | PO | Psychomotor slowing, apathy, and fatigue in HAND; evidence for improved attention and processing speed in HIV cognitive impairment; [Hinkin et al., J Clin Exp Neuropsychol 2001](https://pubmed.ncbi.nlm.nih.gov/11806849/) | 5 mg :: PO :: BID :: Start 5 mg BID (morning and noon); increase by 5-10 mg/week; target 20-40 mg/day in divided doses; avoid evening dosing | Uncontrolled hypertension; cardiac arrhythmias; glaucoma; concurrent MAOIs; active psychosis; substance abuse history (relative) | Heart rate; blood pressure; appetite; insomnia; psychiatric symptoms; abuse potential | - | ROUTINE | ROUTINE | - |
+| Methylphenidate | PO | Psychomotor slowing, apathy, and fatigue in HAND; evidence for improved attention and processing speed in HIV cognitive impairment; [Hinkin et al., J Neuropsychiatry Clin Neurosci 2001](https://pubmed.ncbi.nlm.nih.gov/11449032/) | 5 mg :: PO :: BID :: Start 5 mg BID (morning and noon); increase by 5-10 mg/week; target 20-40 mg/day in divided doses; avoid evening dosing | Uncontrolled hypertension; cardiac arrhythmias; glaucoma; concurrent MAOIs; active psychosis; substance abuse history (relative) | Heart rate; blood pressure; appetite; insomnia; psychiatric symptoms; abuse potential | - | ROUTINE | ROUTINE | - |
 | Modafinil | PO | Fatigue and excessive daytime sleepiness in HAND; alternative to methylphenidate with lower abuse potential | 100 mg :: PO :: QAM :: Start 100 mg QAM; increase to 200 mg QAM after 1 week; max 200 mg daily | Hypersensitivity; cardiac arrhythmias; concurrent CYP3A4 concerns (may reduce PI levels -- monitor) | Blood pressure; interactions with PIs (may reduce darunavir levels); sleep quality; SJS risk (rare) | - | ROUTINE | ROUTINE | - |
-| Memantine (Namenda) | PO | NMDA receptor-mediated neurotoxicity in HIV; moderate-severe HAND; limited but emerging evidence for neuroprotection in HAND; [Schifitto et al., Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17485647/) | 5 mg :: PO :: daily :: Start 5 mg daily; increase by 5 mg/week to 10 mg BID; max 20 mg/day | Severe renal impairment (CrCl <30) | Confusion; dizziness; constipation; renal function | - | EXT | ROUTINE | - |
+| Memantine (Namenda) | PO | NMDA receptor-mediated neurotoxicity in HIV; moderate-severe HAND; limited but emerging evidence for neuroprotection in HAND; [Schifitto et al., AIDS 2007](https://pubmed.ncbi.nlm.nih.gov/17721095/) | 5 mg :: PO :: daily :: Start 5 mg daily; increase by 5 mg/week to 10 mg BID; max 20 mg/day | Severe renal impairment (CrCl <30) | Confusion; dizziness; constipation; renal function | - | EXT | ROUTINE | - |
 | Trazodone | PO | Insomnia comorbid with HAND; sleep disruption common in HIV; alternative to benzodiazepines (avoid in HAND) | 25 mg :: PO :: QHS :: Start 25 mg QHS; titrate to 50-100 mg QHS as needed; max 100 mg QHS for insomnia | Orthostatic hypotension; concurrent MAOIs; priapism risk | Sedation; orthostasis; falls risk | - | ROUTINE | ROUTINE | - |
 | Quetiapine | PO | Agitation, psychosis, or severe behavioral disturbance in HAD; lowest effective dose; use non-pharmacologic interventions first | 12.5 mg :: PO :: QHS :: Start 12.5-25 mg QHS; titrate slowly to lowest effective dose; max 100-200 mg for behavioral symptoms in dementia | QT prolongation; metabolic syndrome; Parkinsonism | **Caution: metabolic effects compound ART metabolic toxicity**; QTc; glucose; lipids; weight; EPS monitoring | - | ROUTINE | ROUTINE | - |
 | Haloperidol | IV/IM | Acute agitation or psychosis in ED/inpatient setting with HAD; short-term use only | 2 mg :: IV/IM :: PRN agitation :: 2-5 mg IV/IM PRN; may repeat q30min; max 20 mg/24h; switch to oral atypical ASAP | QT prolongation; Parkinsonism; NMS risk | QTc before and during use; EPS; NMS monitoring; avoid in DLB (not typical in HAND) | STAT | STAT | - | - |
@@ -237,7 +237,7 @@ SECTION A: ACTION ITEMS
 | Keep all follow-up appointments; cognitive monitoring requires regular neuropsychological testing to track changes over time | - | ROUTINE | ROUTINE |
 | Return to ED if sudden confusion, severe headache, fever with cognitive changes, new weakness, seizures, or vision changes (may indicate OI, not just HAND) | ROUTINE | ROUTINE | ROUTINE |
 | Sleep hygiene: maintain consistent sleep schedule; insomnia worsens cognitive function and is treatable | - | ROUTINE | ROUTINE |
-| Exercise regularly (30 min moderate activity, 5 days/week); physical activity improves cognition in HIV; [Fazeli et al., J Assoc Nurses AIDS Care 2014](https://pubmed.ncbi.nlm.nih.gov/24513104/) | - | ROUTINE | ROUTINE |
+| Exercise regularly (30 min moderate activity, 5 days/week); physical activity improves cognition in HIV; [Fazeli et al., J Neurovirol 2014](https://pubmed.ncbi.nlm.nih.gov/24554483/) | - | ROUTINE | ROUTINE |
 
 ### 4C. Lifestyle & Prevention
 
@@ -323,20 +323,20 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Frascati criteria define HAND classification (ANI, MND, HAD) based on neuropsychological testing in >=5 domains | Expert consensus (international) | [Antinori et al. Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17914061/) |
-| HAND prevalence remains 30-50% despite effective ART; ANI is most common form in ART era | Class II evidence | [Heaton et al. J Int Neuropsychol Soc 2011](https://pubmed.ncbi.nlm.nih.gov/21092312/) |
-| CD4 nadir is strongest predictor of HAND regardless of current CD4 | Class II evidence | [Ellis et al. Arch Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/21220651/) |
-| CSF viral escape occurs in 5-10% of virologically suppressed patients; treatable with CNS-penetrating ART | Class III evidence | [Canestri et al. AIDS 2010](https://pubmed.ncbi.nlm.nih.gov/20453629/) |
-| Higher CPE score ART regimens associated with better CSF viral suppression | Class II evidence | [Letendre et al. Arch Neurol 2008](https://pubmed.ncbi.nlm.nih.gov/18541782/) |
-| CPE score does not consistently predict neurocognitive improvement (controversy exists) | Class II evidence (conflicting results) | [Marra et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19564582/) |
-| Dolutegravir achieves therapeutic CSF concentrations and has high CPE score | Class II evidence | [Letendre et al. Antimicrob Agents Chemother 2014](https://pubmed.ncbi.nlm.nih.gov/24366744/) |
-| ART initiation improves neurocognitive function in most patients; greatest benefit in first 6-12 months | Class I evidence (SMART/START substudy) | [Wright et al. AIDS 2010](https://pubmed.ncbi.nlm.nih.gov/20299958/) |
-| Depression and substance use are major confounders in HAND diagnosis and must be addressed | Expert consensus | [Mind Exchange Working Group. Clin Infect Dis 2013](https://pubmed.ncbi.nlm.nih.gov/23126480/) |
-| Methamphetamine use compounds HIV neurotoxicity and accelerates HAND progression | Class II evidence | [Carey et al. Curr HIV/AIDS Rep 2006](https://pubmed.ncbi.nlm.nih.gov/16863270/) |
-| Methylphenidate improves psychomotor speed and attention in HIV cognitive impairment | Class II evidence (RCT) | [Hinkin et al. J Clin Exp Neuropsychol 2001](https://pubmed.ncbi.nlm.nih.gov/11806849/) |
-| Exercise improves neurocognitive outcomes in people living with HIV | Class II evidence | [Fazeli et al. J Assoc Nurses AIDS Care 2014](https://pubmed.ncbi.nlm.nih.gov/24513104/) |
-| HCV co-infection independently worsens neurocognitive impairment in HIV | Class II evidence | [Clifford et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/15699371/) |
+| HAND prevalence remains 30-50% despite effective ART; ANI is most common form in ART era | Class II evidence | [Heaton et al. J Neurovirol 2011](https://pubmed.ncbi.nlm.nih.gov/21174240/) |
+| CD4 nadir is strongest predictor of HAND regardless of current CD4 | Class II evidence | [Ellis et al. AIDS 2011](https://pubmed.ncbi.nlm.nih.gov/21750419/) |
+| CSF viral escape occurs in 5-10% of virologically suppressed patients; treatable with CNS-penetrating ART | Class III evidence | [Canestri et al. Clin Infect Dis 2010](https://pubmed.ncbi.nlm.nih.gov/20100092/) |
+| Higher CPE score ART regimens associated with better CSF viral suppression | Class II evidence | [Letendre et al. Arch Neurol 2008](https://pubmed.ncbi.nlm.nih.gov/18195140/) |
+| CPE score does not consistently predict neurocognitive improvement (controversy exists) | Class II evidence (conflicting results) | [Marra et al. AIDS 2009](https://pubmed.ncbi.nlm.nih.gov/19424052/) |
+| Dolutegravir achieves therapeutic CSF concentrations and has high CPE score | Class II evidence | [Letendre et al. Clin Infect Dis 2014](https://pubmed.ncbi.nlm.nih.gov/24944232/) |
+| ART initiation improves neurocognitive function in most patients; greatest benefit in first 6-12 months | Class I evidence (SMART/START substudy) | Wright et al. (SMART/START neurocognitive substudies) -- unable to verify specific PMID; see [Wright et al. AIDS 2018](https://pubmed.ncbi.nlm.nih.gov/29424786/) for START neurocognitive substudy |
+| Depression and substance use are major confounders in HAND diagnosis and must be addressed | Expert consensus | [Mind Exchange Working Group. Clin Infect Dis 2013](https://pubmed.ncbi.nlm.nih.gov/23175555/) |
+| Methamphetamine use compounds HIV neurotoxicity and accelerates HAND progression | Class II evidence | [Carey et al. AIDS Behav 2006](https://pubmed.ncbi.nlm.nih.gov/16477511/) |
+| Methylphenidate improves psychomotor speed and attention in HIV cognitive impairment | Class II evidence (RCT) | [Hinkin et al. J Neuropsychiatry Clin Neurosci 2001](https://pubmed.ncbi.nlm.nih.gov/11449032/) |
+| Exercise improves neurocognitive outcomes in people living with HIV | Class II evidence | [Fazeli et al. J Neurovirol 2014](https://pubmed.ncbi.nlm.nih.gov/24554483/) |
+| HCV co-infection independently worsens neurocognitive impairment in HIV | Class II evidence | [Clifford et al. AIDS 2005](https://pubmed.ncbi.nlm.nih.gov/16251830/) |
 | AAN and EACS recommend neurocognitive screening for all PLWH | Professional society guideline | [EACS Guidelines 2023; AAN Practice Parameter](https://www.eacsociety.org/guidelines/) |
-| Immune reconstitution inflammatory syndrome (IRIS) can cause paradoxical neurologic worsening after ART initiation | Class III evidence | [Johnson & Nath. Curr Treat Options Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/21484356/) |
+| Immune reconstitution inflammatory syndrome (IRIS) can cause paradoxical neurologic worsening after ART initiation | Class III evidence | [Johnson & Nath. Curr Opin Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/21499099/) |
 
 ---
 
@@ -358,6 +358,25 @@ SECTION B: REFERENCE (Expand as Needed)
 
 ## CHANGE LOG
 
+**v1.2 (February 2, 2026)**
+- Citation verification: corrected 13 of 15 PubMed PMIDs that linked to wrong articles
+- Fixed PMID for Heaton HAND prevalence: 21092312 (wrong) to 21174240 (J Neurovirol 2011)
+- Fixed PMID for Ellis CD4 nadir: 21220651 (wrong) to 21750419 (AIDS 2011)
+- Fixed PMID for Canestri CSF escape: 20453629 (wrong) to 20100092 (Clin Infect Dis 2010)
+- Fixed PMID for Letendre CPE score: 18541782 (wrong) to 18195140 (Arch Neurol 2008)
+- Fixed PMID for Marra CPE controversy: 19564582 (wrong) to 19424052 (AIDS 2009)
+- Fixed PMID for Letendre dolutegravir CSF: 24366744 (wrong) to 24944232 (Clin Infect Dis 2014)
+- Fixed PMID for Mind Exchange Working Group: 23126480 (wrong) to 23175555 (Clin Infect Dis 2013)
+- Fixed PMID for Carey methamphetamine: 16863270 (wrong) to 16477511 (AIDS Behav 2006)
+- Fixed PMID for Hinkin methylphenidate: 11806849 (wrong) to 11449032 (J Neuropsychiatry Clin Neurosci 2001)
+- Fixed PMID for Fazeli exercise: 24513104 (wrong) to 24554483 (J Neurovirol 2014)
+- Fixed PMID for Clifford HCV: 15699371 (wrong) to 16251830 (AIDS 2005)
+- Fixed PMID for Johnson/Nath IRIS: 21484356 (wrong) to 21499099 (Curr Opin Neurol 2011)
+- Fixed inline Schifitto memantine PMID: 17485647 (wrong) to 17721095 (AIDS 2007)
+- Wright et al. AIDS 2010 (PMID 20299958) could not be verified; replaced with plain text and reference to verified Wright et al. AIDS 2018 START substudy (PMID 29424786)
+- Corrected journal names to match verified PubMed records throughout Section 8 and inline citations
+- CPT codes already present throughout all sections; no additional codes needed
+
 **v1.1 (February 2, 2026)**
 - Added REVISED date line and updated STATUS to "Revised per checker/rebuilder v1.1"
 - Updated version from 1.0 to 1.1 in frontmatter and header
@@ -372,7 +391,7 @@ SECTION B: REFERENCE (Expand as Needed)
 - Removed hedging language from efavirenz, nevirapine, and maraviroc indication text
 - Added OPD ROUTINE coverage to urinalysis (Section 1A)
 - Converted all "consider" directives to active directive language across all sections
-- Fixed methylphenidate citation to consistent PMID 11806849 (Hinkin et al., J Clin Exp Neuropsychol 2001)
+- Fixed methylphenidate citation to consistent PMID (Hinkin et al. 2001); PMID later corrected in v1.2
 - Replaced arrow symbols with plain language connectors throughout target finding columns
 
 **v1.0 (February 2, 2026)**

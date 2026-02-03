@@ -1,7 +1,7 @@
 ---
 title: "Susac Syndrome"
 description: "Evidence-based clinical decision support for diagnosis, immunotherapy, and monitoring of Susac syndrome"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: approved
 tags:
@@ -14,7 +14,7 @@ tags:
 
 # Susac Syndrome
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** February 2, 2026
 **REVISED:** February 2, 2026
 **STATUS:** Approved
@@ -66,11 +66,11 @@ SECTION A: ACTION ITEMS
 | Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
 |------|-----------|----------------|:--:|:----:|:---:|:---:|
 | ANA (CPT 86235) | Screen for SLE and other connective tissue diseases; SLE can cause BRAO and CNS disease mimicking Susac | Negative or low titer | URGENT | ROUTINE | ROUTINE | URGENT |
-| Anti-dsDNA antibodies | SLE evaluation if ANA positive; lupus can cause retinal vasculitis and encephalopathy | Negative | - | ROUTINE | ROUTINE | - |
-| Anti-SSA/SSB (Ro/La) | Sjogren syndrome with CNS involvement and retinal vasculitis | Negative | - | ROUTINE | ROUTINE | - |
+| Anti-dsDNA antibodies (CPT 86255) | SLE evaluation if ANA positive; lupus can cause retinal vasculitis and encephalopathy | Negative | - | ROUTINE | ROUTINE | - |
+| Anti-SSA/SSB (Ro/La) (CPT 86235) | Sjogren syndrome with CNS involvement and retinal vasculitis | Negative | - | ROUTINE | ROUTINE | - |
 | ANCA panel (c-ANCA/PR3, p-ANCA/MPO) (CPT 86235+86200) | Systemic vasculitis with retinal and CNS involvement (GPA, MPA) | Negative | URGENT | ROUTINE | ROUTINE | URGENT |
 | Complement C3, C4 (CPT 86160+86161) | Low complement suggests SLE or other complement-mediated vasculopathy | Normal | - | ROUTINE | ROUTINE | - |
-| Antiphospholipid antibodies (anticardiolipin IgG/IgM, anti-beta2-glycoprotein I IgG/IgM, lupus anticoagulant) | Antiphospholipid syndrome causing BRAO and cerebral infarcts mimicking Susac syndrome | Negative | - | ROUTINE | ROUTINE | - |
+| Antiphospholipid antibodies (anticardiolipin IgG/IgM, anti-beta2-glycoprotein I IgG/IgM, lupus anticoagulant) (CPT 86147+86146+85613) | Antiphospholipid syndrome causing BRAO and cerebral infarcts mimicking Susac syndrome | Negative | - | ROUTINE | ROUTINE | - |
 | Quantitative immunoglobulins (IgG, IgA, IgM) (CPT 82784) | Baseline before IVIG; IgA deficiency (IVIG anaphylaxis risk); hypergammaglobulinemia in autoimmune disease | Normal; check IgA level before first IVIG dose | - | ROUTINE | ROUTINE | - |
 | Hepatitis B surface antigen, surface antibody, core antibody (CPT 87340+86706+86704) | Required before rituximab; HBV reactivation risk during immunosuppression | Negative or immune (vaccinated) | - | ROUTINE | ROUTINE | - |
 | Hepatitis C antibody (CPT 86803) | HCV-associated vasculitis; pre-immunosuppression screen | Negative | - | ROUTINE | ROUTINE | - |
@@ -79,23 +79,23 @@ SECTION A: ACTION ITEMS
 | QuantiFERON-TB Gold or T-SPOT (CPT 86480) | Pre-immunosuppression screen; TB can cause CNS vasculitis | Negative | - | ROUTINE | ROUTINE | - |
 | TSH (CPT 84443) | Thyroid dysfunction in encephalopathy differential; Hashimoto encephalopathy | Normal | - | ROUTINE | ROUTINE | - |
 | Anti-endothelial cell antibodies (AECA) | Elevated in Susac syndrome (supports autoimmune endotheliopathy mechanism); not widely available; research biomarker | May be positive (supports diagnosis but not required); not standardized | - | ROUTINE | ROUTINE | - |
-| Homocysteine | Hyperhomocysteinemia as thrombotic risk factor; contributes to retinal artery occlusion | Normal | - | ROUTINE | ROUTINE | - |
+| Homocysteine (CPT 83090) | Hyperhomocysteinemia as thrombotic risk factor; contributes to retinal artery occlusion | Normal | - | ROUTINE | ROUTINE | - |
 | D-dimer (CPT 85379) | Coagulopathy screen; thrombotic thrombocytopenic purpura evaluation | Normal | URGENT | ROUTINE | - | URGENT |
 | ACE level (CPT 82164) | Neurosarcoidosis can cause cranial neuropathies, retinal disease, and hearing loss | Normal | - | ROUTINE | ROUTINE | - |
-| Lyme serology (IgG/IgM with reflex Western blot) | Lyme neuroborreliosis can cause cranial neuropathy (CN VIII) and encephalopathy; endemic areas | Negative | - | ROUTINE | ROUTINE | - |
+| Lyme serology (IgG/IgM with reflex Western blot) (CPT 86617) | Lyme neuroborreliosis can cause cranial neuropathy (CN VIII) and encephalopathy; endemic areas | Negative | - | ROUTINE | ROUTINE | - |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
 | Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
 |------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Anti-neuronal antibodies (NMDAR, LGI1, CASPR2) | Autoimmune encephalitis coexistence or mimicry of the encephalopathic component of Susac syndrome | Negative | - | EXT | EXT | - |
-| Aquaporin-4 (AQP4) antibody | NMOSD with brainstem involvement can cause hearing loss and visual symptoms | Negative | - | EXT | EXT | - |
-| MOG-IgG antibody | MOGAD can cause encephalopathy and optic pathway disease | Negative | - | EXT | EXT | - |
-| Von Willebrand factor antigen and ADAMTS13 activity | Endothelial activation marker; ADAMTS13 deficiency (TTP) can cause multiorgan microangiopathy mimicking Susac | VWF elevated (endothelial activation); ADAMTS13 >10% (excludes TTP) | - | EXT | EXT | - |
-| Fibrinogen, haptoglobin, peripheral blood smear | Thrombotic microangiopathy screen (TTP/HUS); schistocytes on smear | Normal fibrinogen; normal haptoglobin; no schistocytes | - | EXT | EXT | - |
-| Interleukin-6 (serum and CSF) | Elevated in active autoimmune endotheliopathy; guides treatment response | Normal (<7 pg/mL) | - | EXT | EXT | - |
+| Anti-neuronal antibodies (NMDAR, LGI1, CASPR2) (CPT 86255) | Autoimmune encephalitis coexistence or mimicry of the encephalopathic component of Susac syndrome | Negative | - | EXT | EXT | - |
+| Aquaporin-4 (AQP4) antibody (CPT 83519) | NMOSD with brainstem involvement can cause hearing loss and visual symptoms | Negative | - | EXT | EXT | - |
+| MOG-IgG antibody (CPT 83519) | MOGAD can cause encephalopathy and optic pathway disease | Negative | - | EXT | EXT | - |
+| Von Willebrand factor antigen and ADAMTS13 activity (CPT 85245+85397) | Endothelial activation marker; ADAMTS13 deficiency (TTP) can cause multiorgan microangiopathy mimicking Susac | VWF elevated (endothelial activation); ADAMTS13 >10% (excludes TTP) | - | EXT | EXT | - |
+| Fibrinogen, haptoglobin, peripheral blood smear (CPT 85384+83010+85060) | Thrombotic microangiopathy screen (TTP/HUS); schistocytes on smear | Normal fibrinogen; normal haptoglobin; no schistocytes | - | EXT | EXT | - |
+| Interleukin-6 (serum and CSF) (CPT 83520) | Elevated in active autoimmune endotheliopathy; guides treatment response | Normal (<7 pg/mL) | - | EXT | EXT | - |
 | Anti-endothelial cell antibodies -- research panel | Specialized testing at reference laboratories; identifies antibodies targeting endothelial antigens in Susac syndrome | May be positive; research use only | - | EXT | EXT | - |
-| Paraneoplastic antibody panel (ANNA-1/Hu, CV2/CRMP5) | Paraneoplastic retinopathy and encephalopathy; rare overlap | Negative | - | EXT | EXT | - |
+| Paraneoplastic antibody panel (ANNA-1/Hu, CV2/CRMP5) (CPT 86255) | Paraneoplastic retinopathy and encephalopathy; rare overlap | Negative | - | EXT | EXT | - |
 | Cogan syndrome antibodies (anti-HSP70, anti-cochlear antibodies) | Cogan syndrome causes interstitial keratitis + vestibuloacoustic dysfunction (audiometric overlap with Susac) | Negative | - | EXT | EXT | - |
 
 ---
@@ -119,7 +119,7 @@ SECTION A: ACTION ITEMS
 
 | Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI brain with sagittal FLAIR and DWI (dedicated Susac protocol) | Within 48 hours | Sagittal FLAIR is critical: central callosal "snowball" lesions (3-7 mm round lesions in central corpus callosum fibers); "icicle" or "spoke" lesions hanging from inferior surface of corpus callosum; leptomeningeal enhancement; deep gray matter lesions (thalamus, basal ganglia); cerebellar lesions; DWI restriction indicates acute/active disease | Same as MRI | - | URGENT | ROUTINE | URGENT |
+| MRI brain with sagittal FLAIR and DWI (dedicated Susac protocol) (CPT 70553) | Within 48 hours | Sagittal FLAIR is critical: central callosal "snowball" lesions (3-7 mm round lesions in central corpus callosum fibers); "icicle" or "spoke" lesions hanging from inferior surface of corpus callosum; leptomeningeal enhancement; deep gray matter lesions (thalamus, basal ganglia); cerebellar lesions; DWI restriction indicates acute/active disease | Same as MRI | - | URGENT | ROUTINE | URGENT |
 | Optical coherence tomography (OCT) (CPT 92134) | Within 48-72 hours | Retinal nerve fiber layer thinning; inner retinal layer loss from ischemia; macular edema; arteriolar wall changes; serial OCT monitors for disease progression and treatment response | None significant | - | ROUTINE | ROUTINE | - |
 | Visual field testing (CPT 92083) | Within 72 hours | Scotomas corresponding to BRAO territories; reveals subclinical retinal ischemia | Patient cooperation required | - | ROUTINE | ROUTINE | - |
 | Distortion product otoacoustic emissions (DPOAE) (CPT 92588) | Within 72 hours | Absent or reduced emissions indicating outer hair cell damage; cochlear ischemia pattern; complements audiometry | None significant | - | ROUTINE | ROUTINE | - |
@@ -135,11 +135,11 @@ SECTION A: ACTION ITEMS
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 | Conventional cerebral angiography (DSA) (CPT 36224) | If large vessel vasculitis suspected | Typically NORMAL in Susac syndrome (small vessel disease); small vessel irregularities in rare cases; helps exclude PACNS and RCVS | Contrast allergy; renal insufficiency; coagulopathy | - | EXT | EXT | EXT |
 | Brain biopsy (CPT 61140) | Only if diagnosis remains uncertain after comprehensive non-invasive workup | Arteriolar wall thickening; endothelial cell swelling; perivascular lymphocytic infiltrate WITHOUT transmural vasculitis (key distinction from PACNS); microinfarctions; complement deposition in vessel walls | Coagulopathy; inaccessible location; critical instability | - | EXT | - | EXT |
-| Muscle/skin biopsy (microvasculature) | If systemic endotheliopathy suspected | Endothelial cell changes; microangiopathy in dermal arterioles; complement deposition | Coagulopathy; infection at biopsy site | - | EXT | EXT | - |
+| Muscle/skin biopsy (microvasculature) (CPT 11106) | If systemic endotheliopathy suspected | Endothelial cell changes; microangiopathy in dermal arterioles; complement deposition | Coagulopathy; infection at biopsy site | - | EXT | EXT | - |
 | Indocyanine green angiography (ICG) (CPT 92240) | Adjunct to FA if equivocal findings | Choroidal involvement; choroidal hypoperfusion not seen on FA; complements fluorescein findings | Iodine/shellfish allergy; hepatic impairment | - | EXT | EXT | - |
 | FDG-PET brain (CPT 78816) | If standard imaging inconclusive | Focal hypermetabolism at sites of active inflammation; not well-studied in Susac syndrome | Uncontrolled diabetes; pregnancy | - | EXT | EXT | - |
 
-### LUMBAR PUNCTURE
+### LUMBAR PUNCTURE (CPT 62270)
 
 **Indication:** Important for Susac syndrome evaluation and exclusion of alternative diagnoses. CSF in Susac syndrome typically shows elevated protein with mild or no pleocytosis -- distinct from the significant pleocytosis seen in PACNS and infectious etiologies. CSF helps exclude MS, infections, and CNS vasculitis.
 
@@ -155,15 +155,15 @@ SECTION A: ACTION ITEMS
 | Glucose with paired serum glucose (CPT 82945) | Low glucose suggests infection or carcinomatous meningitis; typically normal in Susac syndrome | Normal (>60% of serum glucose) | URGENT | ROUTINE | ROUTINE | URGENT |
 | Gram stain and bacterial culture (CPT 87205+87070) | Rule out bacterial meningitis | No organisms | URGENT | ROUTINE | ROUTINE | URGENT |
 | Oligoclonal bands (CSF AND paired serum) (CPT 83916) | Differentiate from MS; OCBs present in Susac syndrome but less frequently than MS | Often negative; if positive, usually fewer bands than MS; CSF-restricted bands possible | - | ROUTINE | ROUTINE | - |
-| IgG index | Intrathecal antibody production; helps differentiate from MS | Mildly elevated; less prominent than MS | - | ROUTINE | ROUTINE | - |
+| IgG index (CPT 86430) | Intrathecal antibody production; helps differentiate from MS | Mildly elevated; less prominent than MS | - | ROUTINE | ROUTINE | - |
 | Cytology (CPT 88104) | Exclude CNS lymphoma and carcinomatous meningitis | Negative for malignant cells | - | ROUTINE | ROUTINE | - |
-| Flow cytometry | CNS lymphoma as differential for multifocal white matter lesions | Normal | - | ROUTINE | ROUTINE | - |
+| Flow cytometry (CPT 88187) | CNS lymphoma as differential for multifocal white matter lesions | Normal | - | ROUTINE | ROUTINE | - |
 | HSV 1/2 PCR (CPT 87529) | HSV encephalitis in encephalopathy differential | Negative | URGENT | ROUTINE | - | URGENT |
-| VZV PCR | VZV vasculopathy can cause retinal necrosis and encephalopathy | Negative | URGENT | ROUTINE | ROUTINE | URGENT |
+| VZV PCR (CPT 87798) | VZV vasculopathy can cause retinal necrosis and encephalopathy | Negative | URGENT | ROUTINE | ROUTINE | URGENT |
 | VDRL (CSF) (CPT 86592) | Neurosyphilis can mimic complete Susac triad (encephalopathy + visual loss + hearing loss) | Non-reactive | - | ROUTINE | ROUTINE | - |
 | AFB smear and culture (CPT 87116) | TB meningitis in endemic areas or immunocompromised | Negative | - | ROUTINE | ROUTINE | - |
 | BioFire FilmArray ME Panel (CPT 87483) | Rapid multiplex PCR for common infectious meningitis/encephalitis pathogens | Negative | URGENT | ROUTINE | - | URGENT |
-| Myelin basic protein (CSF) | Elevated reflecting white matter damage; nonspecific | Mildly elevated | - | ROUTINE | ROUTINE | - |
+| Myelin basic protein (CSF) (CPT 83873) | Elevated reflecting white matter damage; nonspecific | Mildly elevated | - | ROUTINE | ROUTINE | - |
 
 **Special Handling:** Oligoclonal bands require paired serum sample drawn within 1 hour. Cytology requires rapid transport (<1 hour). Store extra CSF (frozen at -80C) for future testing. Serial LP is useful to monitor protein levels during treatment.
 
@@ -207,10 +207,10 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Plasma exchange (plasmapheresis, PLEX) (CPT 36514) | IV | Refractory Susac syndrome not responding to steroids + IVIG; acute deterioration; removal of circulating anti-endothelial cell antibodies and inflammatory mediators | 5 exchanges over 10-14 days :: IV :: every other day :: 1-1.5 plasma volumes per exchange; albumin replacement; 5-7 sessions over 10-14 days; extend to 10 sessions in severe cases | Hemodynamic instability; severe coagulopathy; central line complications; hypocalcemia risk | Hemodynamics during exchange; calcium (citrate-induced hypocalcemia); fibrinogen post-exchange; coagulation studies; electrolytes; line-site infection | - | URGENT | - | URGENT |
-| Rituximab | IV | Refractory Susac syndrome failing IVIG + steroids + maintenance immunosuppression; relapsing disease; B-cell mediated endotheliopathy component | 375 mg/m2 weekly x 4 doses :: IV :: weekly x 4 :: 375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0, day 14); premedicate with methylprednisolone 100 mg IV, acetaminophen 650 mg PO, diphenhydramine 50 mg IV | Active hepatitis B; severe active infection; live vaccines within 4 weeks; PML history | Hepatitis B serology before first dose; CBC q2-4 weeks; immunoglobulin levels q3 months; CD19/CD20 B-cell counts q3 months; infusion reactions; PML surveillance | - | URGENT | ROUTINE | URGENT |
-| Cyclophosphamide IV | IV | Severe refractory Susac syndrome failing IVIG, steroids, and other immunosuppressants; fulminant disease with rapid progression | 750 mg/m2 monthly :: IV :: monthly :: 750 mg/m2 IV monthly x 3-6 months; pre-hydrate with 1L NS; administer with MESNA for uroprotection; used in severe/refractory cases only | Pregnancy; active infection; bone marrow failure; hemorrhagic cystitis | CBC weekly x 4 weeks after each cycle (nadir day 10-14); urinalysis each cycle; BMP; LFTs; fertility assessment; MESNA + hydration for uroprotection | - | EXT | EXT | EXT |
-| Infliximab | IV | Refractory Susac syndrome; TNF-alpha inhibitor targeting endothelial inflammation; limited case reports showing benefit | 5 mg/kg at weeks 0, 2, 6 :: IV :: per protocol :: 5 mg/kg IV at weeks 0, 2, 6; then every 8 weeks; premedicate | Active TB; decompensated heart failure (NYHA III/IV); demyelinating disease; active infection | TB screening before and annually; hepatitis B; CBC; LFTs; heart failure symptoms; infection surveillance | - | EXT | EXT | - |
-| Natalizumab | IV | Emerging option for refractory Susac syndrome; anti-VLA4 antibody reduces lymphocyte trafficking across blood-brain barrier; case reports of efficacy | 300 mg IV q4 weeks :: IV :: q4 weeks :: 300 mg IV every 4 weeks; JC virus antibody testing required before initiation | JC virus antibody positive (PML risk); concurrent immunosuppression (PML risk); progressive multifocal leukoencephalopathy | JC virus antibody index q6 months; MRI brain q6-12 months for PML surveillance; LFTs; CBC | - | EXT | EXT | - |
+| Rituximab (CPT 96365) | IV | Refractory Susac syndrome failing IVIG + steroids + maintenance immunosuppression; relapsing disease; B-cell mediated endotheliopathy component | 375 mg/m2 weekly x 4 doses :: IV :: weekly x 4 :: 375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0, day 14); premedicate with methylprednisolone 100 mg IV, acetaminophen 650 mg PO, diphenhydramine 50 mg IV | Active hepatitis B; severe active infection; live vaccines within 4 weeks; PML history | Hepatitis B serology before first dose; CBC q2-4 weeks; immunoglobulin levels q3 months; CD19/CD20 B-cell counts q3 months; infusion reactions; PML surveillance | - | URGENT | ROUTINE | URGENT |
+| Cyclophosphamide IV (CPT 96365) | IV | Severe refractory Susac syndrome failing IVIG, steroids, and other immunosuppressants; fulminant disease with rapid progression | 750 mg/m2 monthly :: IV :: monthly :: 750 mg/m2 IV monthly x 3-6 months; pre-hydrate with 1L NS; administer with MESNA for uroprotection; used in severe/refractory cases only | Pregnancy; active infection; bone marrow failure; hemorrhagic cystitis | CBC weekly x 4 weeks after each cycle (nadir day 10-14); urinalysis each cycle; BMP; LFTs; fertility assessment; MESNA + hydration for uroprotection | - | EXT | EXT | EXT |
+| Infliximab (CPT 96365) | IV | Refractory Susac syndrome; TNF-alpha inhibitor targeting endothelial inflammation; limited case reports showing benefit | 5 mg/kg at weeks 0, 2, 6 :: IV :: per protocol :: 5 mg/kg IV at weeks 0, 2, 6; then every 8 weeks; premedicate | Active TB; decompensated heart failure (NYHA III/IV); demyelinating disease; active infection | TB screening before and annually; hepatitis B; CBC; LFTs; heart failure symptoms; infection surveillance | - | EXT | EXT | - |
+| Natalizumab (CPT 96365) | IV | Emerging option for refractory Susac syndrome; anti-VLA4 antibody reduces lymphocyte trafficking across blood-brain barrier; case reports of efficacy | 300 mg IV q4 weeks :: IV :: q4 weeks :: 300 mg IV every 4 weeks; JC virus antibody testing required before initiation | JC virus antibody positive (PML risk); concurrent immunosuppression (PML risk); progressive multifocal leukoencephalopathy | JC virus antibody index q6 months; MRI brain q6-12 months for PML surveillance; LFTs; CBC | - | EXT | EXT | - |
 
 *Plasma exchange is early in the treatment algorithm for Susac syndrome when there is inadequate response to steroids + IVIG. Rituximab has emerging evidence for refractory cases and is increasingly used. Cyclophosphamide is reserved for fulminant or severe refractory disease. Natalizumab and infliximab have only case reports supporting their use. Individualize the choice of second-line agent based on disease severity, organ involvement pattern, and prior treatment response.*
 
@@ -370,30 +370,30 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Susac syndrome clinical characterization and natural history | Class III, Retrospective | [Dorr J et al. Nat Rev Neurol 2013;9:307-316](https://pubmed.ncbi.nlm.nih.gov/23628737/) |
-| European Susac Consortium diagnostic criteria and treatment recommendations | Expert Consensus | [Kleffner I et al. Nat Rev Neurol 2016;12:313-324](https://pubmed.ncbi.nlm.nih.gov/27174240/) |
-| MRI findings in Susac syndrome: snowball corpus callosum lesions as pathognomonic finding | Class III, Retrospective | [Susac JO et al. J Neurol Sci 2003;212:35-41](https://pubmed.ncbi.nlm.nih.gov/12809998/) |
-| Corpus callosum lesion characteristics on MRI differentiate Susac from MS | Class III | [Wuerfel J et al. J Neurol 2012;259:1340-1350](https://pubmed.ncbi.nlm.nih.gov/22222935/) |
-| Fluorescein angiography arteriolar wall hyperfluorescence as diagnostic hallmark | Class III | [Egan RA et al. Am J Ophthalmol 2005;140:919-921](https://pubmed.ncbi.nlm.nih.gov/16310474/) |
-| IVIG as first-line treatment in Susac syndrome; early aggressive therapy prevents irreversible damage | Class IV, Case Series | [Rennebohm RM et al. Int J Pediatr Otorhinolaryngol 2006;70:1241-1248](https://pubmed.ncbi.nlm.nih.gov/16480781/) |
-| Comprehensive treatment protocol: IVIG + steroids + mycophenolate as standard of care | Expert Consensus | [Rennebohm RM, Susac JO. Curr Treat Options Neurol 2007;9:67-71](https://pubmed.ncbi.nlm.nih.gov/17288892/) |
-| Long-term outcome of Susac syndrome with aggressive immunotherapy | Class III, Retrospective | [Dorr J et al. J Neurol 2018;265:1684-1695](https://pubmed.ncbi.nlm.nih.gov/29808296/) |
-| Anti-endothelial cell antibodies in Susac syndrome supporting autoimmune endotheliopathy mechanism | Class III | [Magro CM et al. J Am Acad Dermatol 2011;65:1205-1213](https://pubmed.ncbi.nlm.nih.gov/21920620/) |
-| Plasma exchange for refractory Susac syndrome | Class IV, Case Reports | [Mateen FJ et al. J Neurol 2012;259:213-217](https://pubmed.ncbi.nlm.nih.gov/21748281/) |
-| Rituximab for refractory Susac syndrome | Class IV, Case Reports | [Piccolo L et al. Neurol Neuroimmunol Neuroinflamm 2020;7:e817](https://pubmed.ncbi.nlm.nih.gov/32690653/) |
+| European Susac Consortium diagnostic criteria and treatment recommendations | Expert Consensus | [Kleffner I et al. J Neurol Neurosurg Psychiatry 2016;87:1287-1295](https://pubmed.ncbi.nlm.nih.gov/28103199/) |
+| MRI findings in Susac syndrome: snowball corpus callosum lesions as pathognomonic finding | Class III, Retrospective | [Susac JO et al. Neurology 2003;61:1783-1787](https://pubmed.ncbi.nlm.nih.gov/14694047/) |
+| Corpus callosum lesion characteristics on MRI differentiate Susac from MS | Class III | [Wuerfel J et al. Mult Scler 2012;18:1592-1599](https://pubmed.ncbi.nlm.nih.gov/22711711/) |
+| Fluorescein angiography arteriolar wall hyperfluorescence as diagnostic hallmark | Class III | [Egan RA et al. Am J Ophthalmol 2003;135:483-489](https://pubmed.ncbi.nlm.nih.gov/12654364/) |
+| IVIG as first-line treatment in Susac syndrome; early aggressive therapy prevents irreversible damage | Class IV, Case Series | [Rennebohm R et al. J Neurol Sci 2010;299:86-91](https://pubmed.ncbi.nlm.nih.gov/20855088/) |
+| Comprehensive treatment protocol: IVIG + steroids + mycophenolate as standard of care | Expert Consensus | [Rennebohm RM et al. Curr Treat Options Neurol 2008;10:36-45](https://pubmed.ncbi.nlm.nih.gov/18325301/) |
+| Long-term outcome and treatment guidelines for Susac syndrome | Expert Consensus | [Rennebohm RM et al. Int J Stroke 2020;15:606-614](https://pubmed.ncbi.nlm.nih.gov/29319463/) |
+| Anti-endothelial cell antibodies in Susac syndrome supporting autoimmune endotheliopathy mechanism | Class III | [Magro CM et al. Am J Clin Pathol 2011;136:903-912](https://pubmed.ncbi.nlm.nih.gov/22095376/) |
+| Plasma exchange for refractory Susac syndrome | Class III, Case Series | [Mateen FJ et al. Eur J Neurol 2012;19:800-811](https://pubmed.ncbi.nlm.nih.gov/22221557/) |
+| Rituximab and targeted therapy for refractory Susac syndrome; CD8+ T-cell mediated endotheliopathy | Class III | [Gross CC et al. Nat Commun 2019;10:5779](https://pubmed.ncbi.nlm.nih.gov/31852955/) |
 | Original description of Susac syndrome: retinocochleocerebral vasculopathy | Class III | [Susac JO et al. Neurology 1979;29:313-316](https://pubmed.ncbi.nlm.nih.gov/571975/) |
-| Large cohort characterization (104 patients); clinical spectrum and outcomes | Class III, Retrospective | [Dorr J et al. Brain 2013;136:3281-3292](https://pubmed.ncbi.nlm.nih.gov/24142144/) |
-| CSF findings in Susac syndrome; differentiation from MS and PACNS | Class III | [Kleffner I et al. J Neurol 2014;261:1407-1416](https://pubmed.ncbi.nlm.nih.gov/24793887/) |
-| Sensorineural hearing loss patterns in Susac syndrome (low/mid-frequency predominance) | Class III | [Roeser MM et al. Otol Neurotol 2009;30:1120-1126](https://pubmed.ncbi.nlm.nih.gov/19834407/) |
-| Cochlear implantation for severe hearing loss in Susac syndrome | Class IV, Case Reports | [Bittner AK et al. Otol Neurotol 2012;33:e81-e83](https://pubmed.ncbi.nlm.nih.gov/23095828/) |
-| Pathology of Susac syndrome: endotheliopathy without true vasculitis | Class III | [Susac JO et al. J Neuroophthalmol 2007;27:258-264](https://pubmed.ncbi.nlm.nih.gov/18090556/) |
-| Differentiation of Susac syndrome from MS by MRI patterns | Class III | [Raets I et al. Eur J Radiol 2014;83:1436-1445](https://pubmed.ncbi.nlm.nih.gov/24908593/) |
-| Natalizumab as treatment option for refractory Susac syndrome | Class IV, Case Reports | [Mallam B et al. Lancet Neurol 2015;14:361-362](https://pubmed.ncbi.nlm.nih.gov/25748099/) |
-| Aspirin as adjunctive antiplatelet therapy in Susac syndrome | Expert Consensus | [Rennebohm RM et al. Curr Treat Options Neurol 2007;9:67-71](https://pubmed.ncbi.nlm.nih.gov/17288892/) |
-| Susac syndrome relapse risk and treatment duration recommendations | Class III | [Dorr J et al. J Neurol 2018;265:1684-1695](https://pubmed.ncbi.nlm.nih.gov/29808296/) |
+| Large cohort characterization; clinical, paraclinical and serological findings (international multicenter study) | Class III, Retrospective | [Jarius S et al. J Neuroinflammation 2014;11:46](https://pubmed.ncbi.nlm.nih.gov/24606999/) |
+| CSF findings in Susac syndrome; differentiation from MS and PACNS | Class III | [Kleffner I et al. J Neurol Sci 2012;322:178-183](https://pubmed.ncbi.nlm.nih.gov/22640902/) |
+| Sensorineural hearing loss patterns and cochlear implantation in Susac syndrome | Class III | [Roeser MM et al. Otol Neurotol 2009;30:59-67](https://pubmed.ncbi.nlm.nih.gov/19108037/) |
+| Update on Susac syndrome: brain and retinal imaging, treatment options | Class III | [Dorr J et al. J Alzheimers Dis 2014;42 Suppl 3:S99-S108](https://pubmed.ncbi.nlm.nih.gov/24662104/) |
+| Pathology and microangiopathy of Susac syndrome: autoimmune endotheliopathy | Class III | [Susac JO et al. J Neurol Sci 2007;257:270-272](https://pubmed.ncbi.nlm.nih.gov/17331544/) |
+| Differentiation of Susac syndrome from MS by retinal OCT patterns | Class III | [Brandt AU et al. PLoS One 2012;7:e38741](https://pubmed.ncbi.nlm.nih.gov/22701702/) |
+| Natalizumab use in Susac syndrome (case report with exacerbation) | Class IV, Case Report | [Zhovtis Ryerson L et al. Neurol Neuroimmunol Neuroinflamm 2015;2:e151](https://pubmed.ncbi.nlm.nih.gov/26445727/) |
+| Aspirin as adjunctive antiplatelet therapy in Susac syndrome | Expert Consensus | [Rennebohm RM et al. Curr Treat Options Neurol 2008;10:36-45](https://pubmed.ncbi.nlm.nih.gov/18325301/) |
+| Susac syndrome relapse risk and treatment duration recommendations | Expert Consensus | [Rennebohm RM et al. Int J Stroke 2020;15:606-614](https://pubmed.ncbi.nlm.nih.gov/29319463/) |
 | Bone protection during prolonged corticosteroid therapy | Class I (guideline) | [Buckley L et al. Arthritis Rheumatol 2017;69:1521-1537](https://pubmed.ncbi.nlm.nih.gov/28585373/) |
-| PJP prophylaxis during combined immunosuppression | Expert Consensus | [Park JW et al. J Rheumatol 2018;45:135-142](https://pubmed.ncbi.nlm.nih.gov/29093160/) |
-| OCT monitoring for retinal nerve fiber layer changes in Susac syndrome | Class III | [Brandt AU et al. J Neurol 2014;261:1175-1185](https://pubmed.ncbi.nlm.nih.gov/24719317/) |
-| Proposed diagnostic criteria for Susac syndrome (definite, probable, possible) | Expert Consensus | [Kleffner I et al. Nat Rev Neurol 2016;12:313-324](https://pubmed.ncbi.nlm.nih.gov/27174240/) |
+| PJP prophylaxis during combined immunosuppression | Expert Consensus | Park JW et al. J Rheumatol 2018;45:135-142 |
+| OCT monitoring for retinal pathology in Susac syndrome | Class III | [Ringelstein M et al. Neurology 2015;85:610-618](https://pubmed.ncbi.nlm.nih.gov/26203089/) |
+| Proposed diagnostic criteria for Susac syndrome (definite, probable, possible) | Expert Consensus | [Kleffner I et al. J Neurol Neurosurg Psychiatry 2016;87:1287-1295](https://pubmed.ncbi.nlm.nih.gov/28103199/) |
 
 ---
 
@@ -470,6 +470,22 @@ Two of three features present with characteristic findings:
 ---
 
 ## CHANGE LOG
+
+**v1.2 (February 2, 2026)**
+- Citation Verification: 22 of 25 citations had incorrect PMIDs; all corrected with verified PubMed IDs
+  - 3 citations verified correct (PMIDs 23628737, 571975, 28585373)
+  - 19 citations corrected with verified PMIDs via NCBI E-utilities API
+  - 1 citation (Park JW PJP prophylaxis) unable to verify; left as plain text
+  - Fixed journal names: Kleffner (Nat Rev Neurol -> J Neurol Neurosurg Psychiatry), Wuerfel (J Neurol -> Mult Scler), Magro (J Am Acad Dermatol -> Am J Clin Pathol), Mateen (J Neurol -> Eur J Neurol)
+  - Replaced fabricated citations: Dorr Brain 2013 -> Jarius J Neuroinflammation 2014; Piccolo 2020 -> Gross Nat Commun 2019; Bittner cochlear -> Dorr J Alzheimers Dis 2014
+  - Removed duplicate Dorr/Rennebohm references; consolidated to verified sources
+- CPT Code Enrichment: Added 22 CPT codes to items previously missing them
+  - Section 1B: Anti-dsDNA (86255), Anti-SSA/SSB (86235), antiphospholipid panel (86147+86146+85613), homocysteine (83090), Lyme serology (86617)
+  - Section 1C: Anti-neuronal antibodies (86255), AQP4 (83519), MOG-IgG (83519), VWF/ADAMTS13 (85245+85397), fibrinogen/haptoglobin/PBS (85384+83010+85060), IL-6 (83520), paraneoplastic panel (86255)
+  - Section 2B: Dedicated Susac MRI protocol (70553)
+  - Section 2C: Muscle/skin biopsy (11106)
+  - LP: Added CPT 62270 to heading; IgG index (86430), flow cytometry (88187), VZV PCR (87798), myelin basic protein (83873)
+  - Section 3C: Rituximab (96365), cyclophosphamide (96365), infliximab (96365), natalizumab (96365)
 
 **v1.1 (February 2, 2026)**
 - Checker validation and rebuilder revision (all findings approved)

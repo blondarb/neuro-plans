@@ -90,40 +90,40 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CBC with differential (85025) | STAT | STAT | ROUTINE | STAT | Infection screen; malignancy screen; assess for leukocytosis or anemia | Normal WBC; no anemia; no atypical cells |
-| CMP - BMP + LFTs (80053) | STAT | STAT | ROUTINE | STAT | Baseline renal/hepatic function for medications; electrolytes; glucose | Normal electrolytes; normal glucose |
-| HbA1c (83036) | URGENT | URGENT | ROUTINE | URGENT | Diabetes is major cause of lumbosacral plexopathy (diabetic amyotrophy); may be initial presentation | <5.7%; elevated suggests diabetic amyotrophy |
-| ESR (85652) | URGENT | URGENT | ROUTINE | URGENT | Elevated in inflammatory, neoplastic, and infectious etiologies | <20 mm/hr (age-adjusted) |
-| CRP (86140) | URGENT | URGENT | ROUTINE | URGENT | Acute-phase reactant for inflammatory and infectious causes | <0.5 mg/dL |
-| Fasting glucose (82947) | URGENT | URGENT | ROUTINE | URGENT | Screen for diabetes; diabetic amyotrophy may present in pre-diabetes | <100 mg/dL |
+| CBC with differential (CPT 85025) | STAT | STAT | ROUTINE | STAT | Infection screen; malignancy screen; assess for leukocytosis or anemia | Normal WBC; no anemia; no atypical cells |
+| CMP - BMP + LFTs (CPT 80053) | STAT | STAT | ROUTINE | STAT | Baseline renal/hepatic function for medications; electrolytes; glucose | Normal electrolytes; normal glucose |
+| HbA1c (CPT 83036) | URGENT | URGENT | ROUTINE | URGENT | Diabetes is major cause of lumbosacral plexopathy (diabetic amyotrophy); may be initial presentation | <5.7%; elevated suggests diabetic amyotrophy |
+| ESR (CPT 85652) | URGENT | URGENT | ROUTINE | URGENT | Elevated in inflammatory, neoplastic, and infectious etiologies | <20 mm/hr (age-adjusted) |
+| CRP (CPT 86140) | URGENT | URGENT | ROUTINE | URGENT | Acute-phase reactant for inflammatory and infectious causes | <0.5 mg/dL |
+| Fasting glucose (CPT 82947) | URGENT | URGENT | ROUTINE | URGENT | Screen for diabetes; diabetic amyotrophy may present in pre-diabetes | <100 mg/dL |
 
 ### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| TSH (84443) | - | ROUTINE | ROUTINE | - | Thyroid disease can cause myopathy and neuropathy; confounding factor | Normal (0.4-4.0 mIU/L) |
-| Vitamin B12 (82607) | - | ROUTINE | ROUTINE | - | B12 deficiency causes neuropathy that may overlap with plexopathy | >300 pg/mL |
-| ANA (86038) | - | ROUTINE | ROUTINE | - | Connective tissue disease associated with vasculitic plexopathy | Negative or low titer |
-| ANCA panel (86200, 86235) | - | ROUTINE | ROUTINE | - | Vasculitis (granulomatosis with polyangiitis, microscopic polyangiitis) causing plexopathy | Negative |
-| SPEP with immunofixation (86335, 86334) | - | ROUTINE | ROUTINE | - | Paraproteinemia; lymphoma; amyloidosis causing plexopathy | No M-spike; no monoclonal band |
-| Coagulation panel - PT/INR, PTT (85610, 85730) | STAT | STAT | - | STAT | If retroperitoneal hematoma suspected; pre-procedural assessment | INR <1.5; PTT normal |
-| LDH (83615) | - | ROUTINE | ROUTINE | - | Elevated in lymphoma and other malignancies | Normal (120-246 U/L) |
-| Uric acid (84550) | - | ROUTINE | ROUTINE | - | Tumor lysis; gout causing nerve compression (rare) | Normal (3.5-7.2 mg/dL) |
-| Urinalysis (81001) | URGENT | ROUTINE | ROUTINE | - | UTI as confounding factor; proteinuria in vasculitis | Normal |
+| TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid disease can cause myopathy and neuropathy; confounding factor | Normal (0.4-4.0 mIU/L) |
+| Vitamin B12 (CPT 82607) | - | ROUTINE | ROUTINE | - | B12 deficiency causes neuropathy that may overlap with plexopathy | >300 pg/mL |
+| ANA (CPT 86038) | - | ROUTINE | ROUTINE | - | Connective tissue disease associated with vasculitic plexopathy | Negative or low titer |
+| ANCA panel (CPT 86200, 86235) | - | ROUTINE | ROUTINE | - | Vasculitis (granulomatosis with polyangiitis, microscopic polyangiitis) causing plexopathy | Negative |
+| SPEP with immunofixation (CPT 84165, 86334, 86335) | - | ROUTINE | ROUTINE | - | Paraproteinemia; lymphoma; amyloidosis causing plexopathy | No M-spike; no monoclonal band |
+| Coagulation panel - PT/INR, PTT (CPT 85610, 85730) | STAT | STAT | - | STAT | If retroperitoneal hematoma suspected; pre-procedural assessment | INR <1.5; PTT normal |
+| LDH (CPT 83615) | - | ROUTINE | ROUTINE | - | Elevated in lymphoma and other malignancies | Normal (120-246 U/L) |
+| Uric acid (CPT 84550) | - | ROUTINE | ROUTINE | - | Tumor lysis; gout causing nerve compression (rare) | Normal (3.5-7.2 mg/dL) |
+| Urinalysis (CPT 81001) | URGENT | ROUTINE | ROUTINE | - | UTI as confounding factor; proteinuria in vasculitis | Normal |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| CSF analysis (89050, 89051) | - | EXT | EXT | - | Elevated protein in DLRPN/diabetic amyotrophy and neoplastic plexopathy; cytology for leptomeningeal disease | Protein <45 mg/dL; no malignant cells; normal cell count |
-| Paraneoplastic panel (86255) | - | EXT | EXT | - | Paraneoplastic plexopathy (anti-Hu, anti-CV2/CRMP5); subacute progressive course with occult malignancy | Negative |
-| Ganglioside antibodies - GM1, GD1a, GD1b (86255) | - | EXT | EXT | - | Multifocal motor neuropathy mimicking plexopathy; GBS variants | Negative |
-| Anti-LRP4 antibodies (86235) | - | EXT | EXT | - | Associated with hereditary neuralgic amyotrophy (SEPT9 mutation); research use | Negative |
-| Lyme serology (86618) | - | EXT | EXT | - | Endemic areas; Lyme can cause polyradiculoplexopathy | Negative |
-| ACE level (82164) | - | EXT | EXT | - | Sarcoidosis with multifocal neuropathy/plexopathy | Normal |
-| HIV serology (86703) | - | EXT | EXT | - | HIV-associated plexopathy; CMV polyradiculopathy in immunocompromised | Negative |
-| Cryoglobulins (86157) | - | EXT | EXT | - | Cryoglobulinemic vasculitis causing plexopathy | Negative |
-| Genetic testing - SEPT9 gene (81479) | - | - | EXT | - | Hereditary neuralgic amyotrophy (recurrent episodes, family history) | No pathogenic variant |
+| CSF analysis (CPT 89050, 89051) | - | EXT | EXT | - | Elevated protein in DLRPN/diabetic amyotrophy and neoplastic plexopathy; cytology for leptomeningeal disease | Protein <45 mg/dL; no malignant cells; normal cell count |
+| Paraneoplastic panel (CPT 86255) | - | EXT | EXT | - | Paraneoplastic plexopathy (anti-Hu, anti-CV2/CRMP5); subacute progressive course with occult malignancy | Negative |
+| Ganglioside antibodies - GM1, GD1a, GD1b (CPT 86255) | - | EXT | EXT | - | Multifocal motor neuropathy mimicking plexopathy; GBS variants | Negative |
+| Anti-LRP4 antibodies (CPT 86235) | - | EXT | EXT | - | Associated with hereditary neuralgic amyotrophy (SEPT9 mutation); research use | Negative |
+| Lyme serology (CPT 86618) | - | EXT | EXT | - | Endemic areas; Lyme can cause polyradiculoplexopathy | Negative |
+| ACE level (CPT 82164) | - | EXT | EXT | - | Sarcoidosis with multifocal neuropathy/plexopathy | Normal |
+| HIV serology (CPT 86703) | - | EXT | EXT | - | HIV-associated plexopathy; CMV polyradiculopathy in immunocompromised | Negative |
+| Cryoglobulins (CPT 86157) | - | EXT | EXT | - | Cryoglobulinemic vasculitis causing plexopathy | Negative |
+| Genetic testing - SEPT9 gene (CPT 81479) | - | - | EXT | - | Hereditary neuralgic amyotrophy (recurrent episodes, family history) | No pathogenic variant |
 
 ---
 
@@ -133,31 +133,31 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brachial plexus with and without contrast (73221) | URGENT | URGENT | ROUTINE | URGENT | STAT if mass suspected; within 1 week for inflammatory/traumatic | Nerve T2 hyperintensity; muscle denervation edema; enhancing mass; nerve enlargement | MRI-incompatible pacemaker; cochlear implant; GFR <30 for gadolinium |
-| MRI lumbosacral plexus with and without contrast (72197) | URGENT | URGENT | ROUTINE | URGENT | STAT if mass suspected or retroperitoneal hematoma; within 1 week otherwise | Nerve enhancement; mass lesion; psoas hematoma; diffuse vs. focal nerve signal abnormality | MRI-incompatible device; GFR <30 for gadolinium; claustrophobia |
-| MRI lumbar spine without contrast (72148) | URGENT | URGENT | ROUTINE | URGENT | Concurrent with plexus imaging to exclude radiculopathy | Disc herniation; foraminal stenosis; conus/cauda equina lesion | MRI-incompatible device |
-| MRI cervical spine without contrast (72141) | URGENT | URGENT | ROUTINE | URGENT | If brachial plexopathy - exclude cervical radiculopathy | Disc herniation; foraminal stenosis; cord lesion | MRI-incompatible device |
-| EMG/NCS - electrodiagnostic studies (95886, 95909) | - | ROUTINE | ROUTINE | - | Optimal at 3-4 weeks after symptom onset; can perform earlier for baseline | Denervation in plexus distribution crossing multiple nerve territories; myokymic discharges (radiation); conduction block (compression) | Anticoagulation (relative for needle EMG); pacemaker (relative) |
+| MRI brachial plexus with and without contrast (CPT 73221) | URGENT | URGENT | ROUTINE | URGENT | STAT if mass suspected; within 1 week for inflammatory/traumatic | Nerve T2 hyperintensity; muscle denervation edema; enhancing mass; nerve enlargement | MRI-incompatible pacemaker; cochlear implant; GFR <30 for gadolinium |
+| MRI lumbosacral plexus with and without contrast (CPT 72197) | URGENT | URGENT | ROUTINE | URGENT | STAT if mass suspected or retroperitoneal hematoma; within 1 week otherwise | Nerve enhancement; mass lesion; psoas hematoma; diffuse vs. focal nerve signal abnormality | MRI-incompatible device; GFR <30 for gadolinium; claustrophobia |
+| MRI lumbar spine without contrast (CPT 72148) | URGENT | URGENT | ROUTINE | URGENT | Concurrent with plexus imaging to exclude radiculopathy | Disc herniation; foraminal stenosis; conus/cauda equina lesion | MRI-incompatible device |
+| MRI cervical spine without contrast (CPT 72141) | URGENT | URGENT | ROUTINE | URGENT | If brachial plexopathy - exclude cervical radiculopathy | Disc herniation; foraminal stenosis; cord lesion | MRI-incompatible device |
+| EMG/NCS - electrodiagnostic studies (CPT 95886, 95909) | - | ROUTINE | ROUTINE | - | Optimal at 3-4 weeks after symptom onset; can perform earlier for baseline | Denervation in plexus distribution crossing multiple nerve territories; myokymic discharges (radiation); conduction block (compression) | Anticoagulation (relative for needle EMG); pacemaker (relative) |
 
 ### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| CT chest with contrast (71260) | URGENT | URGENT | ROUTINE | URGENT | If Pancoast tumor suspected (lower trunk brachial plexopathy + Horner) | Lung apex mass; mediastinal lymphadenopathy | Contrast allergy; renal insufficiency (GFR <30) |
-| CT abdomen/pelvis with contrast (74178) | STAT | STAT | ROUTINE | STAT | If retroperitoneal hematoma suspected; pelvic mass | Retroperitoneal hematoma; pelvic mass compressing lumbosacral plexus | Contrast allergy; renal insufficiency |
-| CT angiography - upper extremity (73206) or lower extremity (73706) | STAT | URGENT | - | STAT | Post-traumatic plexopathy to assess vascular injury | Vascular compromise; pseudoaneurysm; arteriovenous fistula | Contrast allergy; renal insufficiency |
-| Ultrasound - nerve (76881, 76882) | - | ROUTINE | ROUTINE | - | Real-time assessment of nerve continuity; guide injection | Nerve enlargement; loss of fascicular pattern; mass | None significant |
-| PET-CT (78816) | - | EXT | ROUTINE | - | Differentiate radiation plexopathy from tumor recurrence; occult malignancy | FDG-avid mass suggests tumor recurrence; diffuse uptake may be inflammatory | Pregnancy; uncontrolled diabetes |
+| CT chest with contrast (CPT 71260) | URGENT | URGENT | ROUTINE | URGENT | If Pancoast tumor suspected (lower trunk brachial plexopathy + Horner) | Lung apex mass; mediastinal lymphadenopathy | Contrast allergy; renal insufficiency (GFR <30) |
+| CT abdomen/pelvis with contrast (CPT 74178) | STAT | STAT | ROUTINE | STAT | If retroperitoneal hematoma suspected; pelvic mass | Retroperitoneal hematoma; pelvic mass compressing lumbosacral plexus | Contrast allergy; renal insufficiency |
+| CT angiography - upper extremity (CPT 73206) or lower extremity (CPT 73706) | STAT | URGENT | - | STAT | Post-traumatic plexopathy to assess vascular injury | Vascular compromise; pseudoaneurysm; arteriovenous fistula | Contrast allergy; renal insufficiency |
+| Ultrasound - nerve (CPT 76881, 76882) | - | ROUTINE | ROUTINE | - | Real-time assessment of nerve continuity; guide injection | Nerve enlargement; loss of fascicular pattern; mass | None significant |
+| PET-CT (CPT 78816) | - | EXT | ROUTINE | - | Differentiate radiation plexopathy from tumor recurrence; occult malignancy | FDG-avid mass suggests tumor recurrence; diffuse uptake may be inflammatory | Pregnancy; uncontrolled diabetes |
 
 ### 2C. Rare/Specialized
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MR neurography - dedicated plexus protocol (73221) | - | EXT | ROUTINE | - | High-resolution nerve imaging when standard MRI equivocal | Fascicular detail; intraneural pathology; nerve continuity assessment | MRI-incompatible device; GFR <30 |
-| Nerve biopsy - typically sural or superficial peroneal (64795) | - | EXT | EXT | - | Vasculitis suspected; amyloidosis; sarcoidosis; diagnosis uncertain after non-invasive workup | Vasculitis (necrotizing); amyloid deposits; granulomas; perivascular inflammation | Coagulopathy; patient preference |
-| Muscle biopsy (20206) | - | EXT | EXT | - | If concurrent myopathy suspected; vasculitic neuropathy confirmation | Neurogenic atrophy pattern; perifascicular atrophy (if myopathy); vasculitis | Coagulopathy; infection at site |
-| Bone scan (78300) | - | EXT | ROUTINE | - | Suspected skeletal metastasis causing plexus compression | No increased uptake at plexus level | Pregnancy |
-| SSEP - somatosensory evoked potentials (95925, 95926) | - | EXT | EXT | - | Pre-ganglionic vs. post-ganglionic lesion localization (traumatic) | Absent cortical response with preserved SNAPs suggests pre-ganglionic (root avulsion) | None significant |
+| MR neurography - dedicated plexus protocol (CPT 73221) | - | EXT | ROUTINE | - | High-resolution nerve imaging when standard MRI equivocal | Fascicular detail; intraneural pathology; nerve continuity assessment | MRI-incompatible device; GFR <30 |
+| Nerve biopsy - typically sural or superficial peroneal (CPT 64795) | - | EXT | EXT | - | Vasculitis suspected; amyloidosis; sarcoidosis; diagnosis uncertain after non-invasive workup | Vasculitis (necrotizing); amyloid deposits; granulomas; perivascular inflammation | Coagulopathy; patient preference |
+| Muscle biopsy (CPT 20206) | - | EXT | EXT | - | If concurrent myopathy suspected; vasculitic neuropathy confirmation | Neurogenic atrophy pattern; perifascicular atrophy (if myopathy); vasculitis | Coagulopathy; infection at site |
+| Bone scan (CPT 78300) | - | EXT | ROUTINE | - | Suspected skeletal metastasis causing plexus compression | No increased uptake at plexus level | Pregnancy |
+| SSEP - somatosensory evoked potentials (CPT 95925, 95926) | - | EXT | EXT | - | Pre-ganglionic vs. post-ganglionic lesion localization (traumatic) | Absent cortical response with preserved SNAPs suggests pre-ganglionic (root avulsion) | None significant |
 
 ---
 
@@ -167,12 +167,12 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Methylprednisolone | IV | Severe acute inflammatory plexopathy (neuralgic amyotrophy with progressive weakness); neoplastic plexopathy with impending cord/nerve compromise | 1000 mg :: IV :: daily x 3-5 days :: 1000 mg IV daily x 3-5 days then transition to oral prednisone taper | Active infection; uncontrolled diabetes; GI bleeding; psychosis | Glucose q6h; BP; psychiatric effects; GI prophylaxis | STAT | STAT | - | STAT |
-| Dexamethasone | IV/PO | Acute plexopathy with severe pain and inflammation; peritumoral edema | 10 mg :: IV :: once then 4 mg q6h :: 10 mg IV loading dose, then 4 mg IV/PO q6h; taper over 7-14 days | Active infection; uncontrolled diabetes; GI bleeding | Glucose; BP; psychiatric effects; insomnia | STAT | STAT | ROUTINE | STAT |
+| Methylprednisolone (CPT 96365, 96366) | IV | Severe acute inflammatory plexopathy (neuralgic amyotrophy with progressive weakness); neoplastic plexopathy with impending cord/nerve compromise | 1000 mg :: IV :: daily x 3-5 days :: 1000 mg IV daily x 3-5 days then transition to oral prednisone taper | Active infection; uncontrolled diabetes; GI bleeding; psychosis | Glucose q6h; BP; psychiatric effects; GI prophylaxis | STAT | STAT | - | STAT |
+| Dexamethasone (CPT 96374 when IV) | IV/PO | Acute plexopathy with severe pain and inflammation; peritumoral edema | 10 mg :: IV :: once then 4 mg q6h :: 10 mg IV loading dose, then 4 mg IV/PO q6h; taper over 7-14 days | Active infection; uncontrolled diabetes; GI bleeding | Glucose; BP; psychiatric effects; insomnia | STAT | STAT | ROUTINE | STAT |
 | Prednisone | PO | Acute inflammatory plexopathy (Parsonage-Turner); diabetic amyotrophy (controversial) | 60 mg :: PO :: daily x 5-7 days :: 60 mg PO daily x 5-7 days then taper over 2-4 weeks; total course 4-6 weeks for inflammatory etiology | Active GI bleed; uncontrolled DM; active infection | Glucose; BP; mood; weight; bone density if prolonged | URGENT | URGENT | ROUTINE | - |
-| Ketorolac | IV/IM | Acute severe plexopathy pain (short-term) | 30 mg :: IV :: q6h :: 30 mg IV/IM q6h; max 5 days; reduce to 15 mg if elderly or renal impairment | CrCl <30; active GI bleed; aspirin allergy; post-CABG | Renal function; GI bleeding | STAT | STAT | - | STAT |
-| Morphine | IV | Severe acute plexopathy pain unresponsive to non-opioids | 2-4 mg :: IV :: q2-4h PRN :: 2-4 mg IV q2-4h PRN severe pain; titrate to effect | Respiratory depression; severe asthma; paralytic ileus | Respiratory status; sedation; pain scores | STAT | STAT | - | STAT |
-| Hydromorphone | IV | Severe acute plexopathy pain (alternative to morphine) | 0.5-1 mg :: IV :: q2-4h PRN :: 0.5-1 mg IV q2-4h PRN; titrate to effect | Respiratory depression; severe asthma; paralytic ileus | Respiratory status; sedation; pain scores | STAT | STAT | - | STAT |
+| Ketorolac (CPT 96374 when IV) | IV/IM | Acute severe plexopathy pain (short-term) | 30 mg :: IV :: q6h :: 30 mg IV/IM q6h; max 5 days; reduce to 15 mg if elderly or renal impairment | CrCl <30; active GI bleed; aspirin allergy; post-CABG | Renal function; GI bleeding | STAT | STAT | - | STAT |
+| Morphine (CPT 96374) | IV | Severe acute plexopathy pain unresponsive to non-opioids | 2-4 mg :: IV :: q2-4h PRN :: 2-4 mg IV q2-4h PRN severe pain; titrate to effect | Respiratory depression; severe asthma; paralytic ileus | Respiratory status; sedation; pain scores | STAT | STAT | - | STAT |
+| Hydromorphone (CPT 96374) | IV | Severe acute plexopathy pain (alternative to morphine) | 0.5-1 mg :: IV :: q2-4h PRN :: 0.5-1 mg IV q2-4h PRN; titrate to effect | Respiratory depression; severe asthma; paralytic ileus | Respiratory status; sedation; pain scores | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments - Pain Management
 
@@ -195,8 +195,8 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| IVIg (intravenous immunoglobulin) | IV | Severe/refractory neuralgic amyotrophy; diabetic amyotrophy (DLRPN) with vasculitic features; atypical inflammatory plexopathy | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); repeat q4 weeks x 3-6 months if responsive | IgA deficiency (anaphylaxis risk); renal insufficiency; hypercoagulable state | Renal function; IgA level before first dose; infusion reaction vitals q15 min; headache (aseptic meningitis); thrombotic events | - | URGENT | ROUTINE | URGENT |
-| Plasma exchange (PLEX) | IV | Severe inflammatory plexopathy refractory to steroids and IVIg; CIDP-like plexopathy | 5 exchanges :: IV :: q other day x 10-14 days :: 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange | Hemodynamic instability; severe coagulopathy; poor IV access | BP during exchange; electrolytes (Ca, K, Mg); fibrinogen; coags; line site infection | - | URGENT | - | URGENT |
+| IVIg (intravenous immunoglobulin) (CPT 96365, 96366) | IV | Severe/refractory neuralgic amyotrophy; diabetic amyotrophy (DLRPN) with vasculitic features; atypical inflammatory plexopathy | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); repeat q4 weeks x 3-6 months if responsive | IgA deficiency (anaphylaxis risk); renal insufficiency; hypercoagulable state | Renal function; IgA level before first dose; infusion reaction vitals q15 min; headache (aseptic meningitis); thrombotic events | - | URGENT | ROUTINE | URGENT |
+| Plasma exchange (PLEX) (CPT 36514) | IV | Severe inflammatory plexopathy refractory to steroids and IVIg; CIDP-like plexopathy | 5 exchanges :: IV :: q other day x 10-14 days :: 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange | Hemodynamic instability; severe coagulopathy; poor IV access | BP during exchange; electrolytes (Ca, K, Mg); fibrinogen; coags; line site infection | - | URGENT | - | URGENT |
 | Methotrexate | PO | Steroid-sparing agent for chronic inflammatory plexopathy | 7.5 mg :: PO :: weekly :: Start 7.5 mg weekly; increase by 2.5 mg q2-4 weeks; max 25 mg weekly; add folic acid 1 mg daily | Pregnancy; severe hepatic/renal impairment; active infection; bone marrow suppression | CBC, LFTs, creatinine q2-4 weeks x 3 months then q3 months; folic acid supplementation | - | EXT | ROUTINE | - |
 | Azathioprine | PO | Steroid-sparing agent for chronic relapsing plexopathy | 50 mg :: PO :: daily :: Start 50 mg daily; titrate to 2-3 mg/kg/day over 4-6 weeks; check TPMT before starting | TPMT deficiency; pregnancy; concurrent allopurinol (dose reduction required) | TPMT genotype before starting; CBC q2 weeks x 2 months then q3 months; LFTs | - | EXT | ROUTINE | - |
 | Mycophenolate mofetil | PO | Steroid-sparing for chronic inflammatory plexopathy (alternative) | 500 mg :: PO :: BID :: Start 500 mg BID; increase to 1000 mg BID over 2-4 weeks; max 3000 mg/day | Pregnancy (teratogenic); active infection | CBC q2 weeks x 3 months then monthly; GI symptoms; opportunistic infections | - | EXT | ROUTINE | - |
@@ -207,12 +207,12 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Surgical decompression of hematoma | Surgical | Retroperitoneal hematoma compressing lumbosacral plexus; expanding hematoma despite reversal of anticoagulation | N/A :: Surgical :: emergent :: Emergent or urgent depending on progression; coordinate with vascular/general surgery | Uncontrolled coagulopathy (correct first); hemodynamic instability (stabilize first) | Post-op neuro checks; coagulation status; hemoglobin; drain output | STAT | STAT | - | STAT |
-| Brachial plexus exploration and nerve repair (64713, 64856) | Surgical | Traumatic brachial plexus injury with no recovery by 3-6 months; sharp/penetrating injuries (early repair) | N/A :: Surgical :: planned :: Timing depends on mechanism: sharp injuries repair early (days-weeks); closed traction injuries explore at 3-6 months if no EMG recovery | Active infection; patient factors precluding prolonged surgery | Post-op neuro exam; wound; serial EMG at 3-6 month intervals to assess reinnervation | - | EXT | ROUTINE | - |
-| Nerve transfer | Surgical | Proximal brachial plexus injury (root avulsion) where direct repair not possible | N/A :: Surgical :: planned :: Transfer of expendable donor nerve to target nerve; best results within 6-12 months of injury | Active infection; poor donor nerve options; extensive pan-plexus injury | Serial clinical and EMG evaluation; recovery takes 6-18 months | - | EXT | ROUTINE | - |
-| Nerve graft (64910) | Surgical | Gap in nerve continuity after traumatic injury or tumor resection | N/A :: Surgical :: planned :: Sural nerve or other donor nerve graft to bridge gap; best results with gaps <6 cm | Active infection; severe medical comorbidities; poor regenerative potential | Serial EMG; clinical exam q3 months; donor site sensory deficit expected | - | EXT | ROUTINE | - |
+| Brachial plexus exploration and nerve repair (CPT 64713, 64856) | Surgical | Traumatic brachial plexus injury with no recovery by 3-6 months; sharp/penetrating injuries (early repair) | N/A :: Surgical :: planned :: Timing depends on mechanism: sharp injuries repair early (days-weeks); closed traction injuries explore at 3-6 months if no EMG recovery | Active infection; patient factors precluding prolonged surgery | Post-op neuro exam; wound; serial EMG at 3-6 month intervals to assess reinnervation | - | EXT | ROUTINE | - |
+| Nerve transfer (CPT 64905) | Surgical | Proximal brachial plexus injury (root avulsion) where direct repair not possible | N/A :: Surgical :: planned :: Transfer of expendable donor nerve to target nerve; best results within 6-12 months of injury | Active infection; poor donor nerve options; extensive pan-plexus injury | Serial clinical and EMG evaluation; recovery takes 6-18 months | - | EXT | ROUTINE | - |
+| Nerve graft (CPT 64910) | Surgical | Gap in nerve continuity after traumatic injury or tumor resection | N/A :: Surgical :: planned :: Sural nerve or other donor nerve graft to bridge gap; best results with gaps <6 cm | Active infection; severe medical comorbidities; poor regenerative potential | Serial EMG; clinical exam q3 months; donor site sensory deficit expected | - | EXT | ROUTINE | - |
 | Tumor resection | Surgical | Neoplastic plexopathy - resectable tumor compressing plexus | N/A :: Surgical :: planned or urgent :: Coordinate with oncology and nerve surgery; intraoperative monitoring recommended | Unresectable tumor (radiation instead); poor surgical candidate | Post-op neuro exam; oncology follow-up; adjuvant therapy per oncology | - | URGENT | ROUTINE | - |
 | Radiation therapy | External beam | Neoplastic plexopathy (Pancoast tumor, lymphoma, metastatic disease) | Per protocol :: External beam :: per radiation oncology :: Dose and fractionation per tumor type and radiation oncology plan | Prior radiation to same field (cumulative dose limits); pregnancy | Radiation plexopathy monitoring (may develop months-years later); skin integrity; CBC | - | ROUTINE | ROUTINE | - |
-| Epidural steroid injection / nerve root block | Fluoroscopic | Plexopathy with concurrent radicular component; diagnostic block to differentiate radiculopathy from plexopathy | Per protocol :: Fluoroscopic :: q2-4 weeks x 3 :: Fluoroscopic-guided transforaminal approach; diagnostic and therapeutic | Coagulopathy (INR >1.5, plt <100k); infection at site; allergy to contrast/steroids | Post-procedure neuro exam; glucose (diabetics); headache | - | EXT | ROUTINE | - |
+| Epidural steroid injection / nerve root block (CPT 64483) | Fluoroscopic | Plexopathy with concurrent radicular component; diagnostic block to differentiate radiculopathy from plexopathy | Per protocol :: Fluoroscopic :: q2-4 weeks x 3 :: Fluoroscopic-guided transforaminal approach; diagnostic and therapeutic | Coagulopathy (INR >1.5, plt <100k); infection at site; allergy to contrast/steroids | Post-procedure neuro exam; glucose (diabetics); headache | - | EXT | ROUTINE | - |
 
 ---
 
@@ -338,22 +338,22 @@ SECTION B: REFERENCE
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Neuralgic amyotrophy is the most common non-traumatic brachial plexopathy; annual incidence 1-3/100,000 | Class II, Level B | [van Alfen N, van Engelen BG. Brain 2006](https://pubmed.ncbi.nlm.nih.gov/16488712/) |
-| MRI with STIR sequences is essential for plexus evaluation; detects denervation muscle edema and nerve signal abnormalities | Class II, Level B | [Stable-Delma A et al. Skeletal Radiol 2021](https://pubmed.ncbi.nlm.nih.gov/32594186/) |
-| EMG/NCS is the gold standard for confirming and localizing plexopathy; optimal timing 3-4 weeks post-onset | Class I, Level A | [Ferrante MA. Continuum (Minneap Minn) 2014](https://pubmed.ncbi.nlm.nih.gov/25299278/) |
-| Diabetic lumbosacral radiculoplexus neuropathy (DLRPN) is caused by microvasculitis; immunotherapy may help | Class II, Level B | [Dyck PJB et al. Brain 1999](https://pubmed.ncbi.nlm.nih.gov/10581222/) |
-| IVIg did not show significant benefit over placebo in DLRPN in a randomized trial but may help selected severe cases | Class I, Level B | [Dyck PJB et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16682673/) |
-| Corticosteroids are commonly used for acute neuralgic amyotrophy but evidence is limited to retrospective/observational data | Class III, Level C | [van Alfen N et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19752455/) |
-| Radiation-induced plexopathy: myokymic discharges on EMG are pathognomonic; differentiates from tumor recurrence | Class II, Level B | [Harper CM et al. Neurology 1989](https://pubmed.ncbi.nlm.nih.gov/2538774/) |
-| PET-CT helps differentiate radiation plexopathy from tumor recurrence (FDG-avid suggests recurrence) | Class II, Level B | [Basu S et al. Mol Imaging Biol 2011](https://pubmed.ncbi.nlm.nih.gov/20809198/) |
+| Neuralgic amyotrophy is the most common non-traumatic brachial plexopathy; annual incidence 1-3/100,000 | Class II, Level B | [van Alfen N, van Engelen BG. Brain 2006](https://pubmed.ncbi.nlm.nih.gov/16371410/) |
+| MRI with STIR sequences is essential for plexus evaluation; detects denervation muscle edema and nerve signal abnormalities | Class II, Level B | Stable-Delma A et al. Skeletal Radiol 2021 |
+| EMG/NCS is the gold standard for confirming and localizing plexopathy; optimal timing 3-4 weeks post-onset | Class I, Level A | [Ferrante MA. Continuum (Minneap Minn) 2014](https://pubmed.ncbi.nlm.nih.gov/25299285/) |
+| Diabetic lumbosacral radiculoplexus neuropathy (DLRPN) is caused by microvasculitis; immunotherapy may help | Class II, Level B | [Dyck PJ et al. Neurology 1999](https://pubmed.ncbi.nlm.nih.gov/10599791/) |
+| IVIg did not show significant benefit over placebo in DLRPN in a randomized trial but may help selected severe cases | Class I, Level B | Dyck PJB et al. Neurology 2006 |
+| Corticosteroids are commonly used for acute neuralgic amyotrophy but evidence is limited to retrospective/observational data | Class III, Level C | [van Eijk JJ, van Alfen N et al. J Neurol Neurosurg Psychiatry 2009](https://pubmed.ncbi.nlm.nih.gov/19321467/) |
+| Radiation-induced plexopathy: myokymic discharges on EMG are pathognomonic; differentiates from tumor recurrence | Class II, Level B | [Harper CM Jr et al. Neurology 1989](https://pubmed.ncbi.nlm.nih.gov/2538777/) |
+| PET-CT helps differentiate radiation plexopathy from tumor recurrence (FDG-avid suggests recurrence) | Class II, Level B | Basu S et al. Mol Imaging Biol 2011 |
 | Gabapentin/pregabalin are first-line for neuropathic pain including plexopathy-related neuropathic pain | Class I, Level A | [Finnerup NB et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25575710/) |
-| Early nerve repair (within 6 months) for traumatic brachial plexus injury improves outcomes | Class II, Level B | [Terzis JK, Kostopoulos VK. Plast Reconstr Surg 2007](https://pubmed.ncbi.nlm.nih.gov/17440360/) |
-| Nerve transfer procedures improve functional outcomes for proximal brachial plexus injuries with root avulsion | Class II, Level B | [Bertelli JA, Ghizoni MF. J Neurosurg 2004](https://pubmed.ncbi.nlm.nih.gov/15085024/) |
-| Tight glycemic control is cornerstone of management for diabetic amyotrophy; avoid rapid HbA1c reduction >2% in 3 months | Class II, Level B | [Gibbons CH, Freeman R. Ann Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25425460/) |
-| Hereditary neuralgic amyotrophy (SEPT9 mutations) in recurrent episodes or family history | Class III, Level C | [Kuhlenbäumer G et al. Nat Genet 2005](https://pubmed.ncbi.nlm.nih.gov/16086015/) |
-| Duloxetine is effective for diabetic neuropathic pain and benefits plexopathy-related neuropathic pain | Class I, Level A | [Lunn MPT et al. Cochrane 2014](https://pubmed.ncbi.nlm.nih.gov/24399461/) |
-| Retroperitoneal hematoma causing lumbosacral plexopathy requires urgent CT and anticoagulation reversal | Class III, Level C | [Patel A et al. Am J Emerg Med 2019](https://pubmed.ncbi.nlm.nih.gov/30037622/) |
-| Physical therapy and occupational therapy improve functional outcomes in plexopathy rehabilitation | Class II, Level B | [Merrell GA et al. Hand Clin 2005](https://pubmed.ncbi.nlm.nih.gov/15882594/) |
+| Early nerve repair (within 6 months) for traumatic brachial plexus injury improves outcomes | Class II, Level B | [Terzis JK, Kostopoulos VK. Plast Reconstr Surg 2007](https://pubmed.ncbi.nlm.nih.gov/17496583/) |
+| Nerve transfer procedures improve functional outcomes for proximal brachial plexus injuries with root avulsion | Class II, Level B | [Bertelli JA, Ghizoni MF. J Neurosurg 2004](https://pubmed.ncbi.nlm.nih.gov/15540915/) |
+| Tight glycemic control is cornerstone of management for diabetic amyotrophy; avoid rapid HbA1c reduction >2% in 3 months | Class II, Level B | [Gibbons CH, Freeman R. Brain 2015](https://pubmed.ncbi.nlm.nih.gov/25392197/) |
+| Hereditary neuralgic amyotrophy (SEPT9 mutations) in recurrent episodes or family history | Class III, Level C | [Kuhlenbäumer G et al. Nat Genet 2005](https://pubmed.ncbi.nlm.nih.gov/16186812/) |
+| Duloxetine is effective for diabetic neuropathic pain and benefits plexopathy-related neuropathic pain | Class I, Level A | [Lunn MPT et al. Cochrane 2014](https://pubmed.ncbi.nlm.nih.gov/24385423/) |
+| Retroperitoneal hematoma causing lumbosacral plexopathy requires urgent CT and anticoagulation reversal | Class III, Level C | Patel A et al. Am J Emerg Med 2019 |
+| Physical therapy and occupational therapy improve functional outcomes in plexopathy rehabilitation | Class II, Level B | Merrell GA et al. Hand Clin 2005 |
 
 ---
 

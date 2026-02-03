@@ -25,7 +25,7 @@ tags:
 
 **ICD-10:** E06.3 (Autoimmune thyroiditis), G93.49 (Other encephalopathy, not elsewhere classified), E03.9 (Hypothyroidism, unspecified)
 
-**CPT CODES:** 86376 (anti-TPO antibody), 86800 (anti-thyroglobulin antibody), 84443 (TSH), 84436 (thyroxine, total), 84439 (free T4), 84480 (T3, total), 84481 (free T3), 89051 (CSF cell count), 84157 (CSF protein), 70553 (MRI brain with/without contrast), 95816 (EEG routine), 95819 (EEG with sleep), 95700-95720 (continuous EEG), 62270 (lumbar puncture), 96365 (IV infusion, first hour), 96366 (IV infusion, additional hour), 80053 (CMP), 85025 (CBC), 86235 (nuclear antigen antibody), 86140 (CRP), 85652 (ESR), 78816 (FDG-PET), 86225 (anti-dsDNA), 86160 (complement C3), 86161 (complement C4), 86200 (CCP/ANCA), 82784 (immunoglobulin quantitative), 86255 (antibody, fluorescent), 83519 (immunoassay), 86327 (IgG index), 70544 (MRA head), 70547 (MRA neck), 72156 (MRI C-spine w/wo), 72157 (MRI T-spine w/wo), 78607 (SPECT brain), 36224 (cerebral angiography), 36514 (plasmapheresis), 88184 (flow cytometry), 86788 (West Nile IgM), 86789 (West Nile IgG), 87529 (viral PCR), 88104 (cytology)
+**CPT CODES:** 86376 (anti-TPO antibody), 86800 (anti-thyroglobulin antibody), 84443 (TSH), 84436 (thyroxine, total), 84439 (free T4), 84480 (T3, total), 84481 (free T3), 89051 (CSF cell count), 84157 (CSF protein), 70553 (MRI brain with/without contrast), 95816 (EEG routine), 95819 (EEG with sleep), 95700-95720 (continuous EEG), 62270 (lumbar puncture), 96365 (IV infusion, first hour), 96366 (IV infusion, additional hour), 80053 (CMP), 85025 (CBC), 86235 (nuclear antigen antibody), 86140 (CRP), 85652 (ESR), 78816 (FDG-PET), 86225 (anti-dsDNA), 86160 (complement C3), 86161 (complement C4), 86200 (CCP/ANCA), 82784 (immunoglobulin quantitative), 86255 (antibody, fluorescent), 83519 (immunoassay), 86327 (IgG index), 70544 (MRA head), 70547 (MRA neck), 72156 (MRI C-spine w/wo), 72157 (MRI T-spine w/wo), 78607 (SPECT brain), 36224 (cerebral angiography), 36514 (plasmapheresis), 88184 (flow cytometry), 86788 (West Nile IgM), 86789 (West Nile IgG), 87529 (viral PCR), 88104 (cytology), 61140 (brain biopsy)
 
 **SYNONYMS:** Hashimoto's encephalopathy, HE, steroid-responsive encephalopathy associated with autoimmune thyroiditis, SREAT, Hashimoto encephalopathy, autoimmune thyroid encephalopathy, anti-TPO encephalopathy, thyroid autoimmune encephalopathy, encephalopathy with thyroid autoantibodies, myxedema madness, nonvasculitic autoimmune inflammatory meningoencephalitis, NAIM, thyroid antibody-associated encephalopathy
 
@@ -109,9 +109,9 @@ SECTION A: ACTION ITEMS
 | CSF oligoclonal bands with paired serum (CPT 83916) | - | ROUTINE | ROUTINE | - | Intrathecal IgG synthesis; elevated in ~25% of HE | May show CSF-specific bands |
 | CSF IgG index (CPT 86327) | - | ROUTINE | ROUTINE | - | Intrathecal antibody synthesis | May be elevated |
 | Anti-alpha-enolase antibodies (NAE) | - | EXT | EXT | - | Proposed biomarker in HE subset (attacks neuronal surface); research test | Positive may support HE |
-| CSF anti-TPO antibodies | - | EXT | EXT | - | Intrathecal production of anti-TPO; not widely validated | Positive may support intrathecal production |
+| CSF anti-TPO antibodies (CPT 86376) | - | EXT | EXT | - | Intrathecal production of anti-TPO; not widely validated | Positive may support intrathecal production |
 | Next-generation sequencing (CSF metagenomics) (CPT 81321) | - | EXT | EXT | - | Occult infection exclusion when standard testing negative | No pathogens detected |
-| Brain biopsy (last resort) | - | EXT | - | - | Perivascular lymphocytic infiltration; exclusion of other pathology | Lymphocytic perivascular cuffing, no vasculitis |
+| Brain biopsy (last resort) (CPT 61140) | - | EXT | - | - | Perivascular lymphocytic infiltration; exclusion of other pathology | Lymphocytic perivascular cuffing, no vasculitis |
 
 ---
 
@@ -145,7 +145,7 @@ SECTION A: ACTION ITEMS
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MRI spine (cervical and thoracic) with and without contrast (CPT 72156+72157) | - | ROUTINE | ROUTINE | - | If myelopathic signs present | Concurrent myelitis; overlap syndromes (NMOSD, MOGAD) | GFR <30, gadolinium allergy |
 | SPECT brain (CPT 78607) | - | EXT | EXT | - | If PET unavailable | Regional hypoperfusion; frontal or temporal abnormalities | None significant |
-| Brain biopsy | - | EXT | - | - | Last resort; diagnosis uncertain despite full workup | Perivascular lymphocytic infiltration without vasculitis; exclusion of other pathology | Coagulopathy, inaccessible location |
+| Brain biopsy (CPT 61140) | - | EXT | - | - | Last resort; diagnosis uncertain despite full workup | Perivascular lymphocytic infiltration without vasculitis; exclusion of other pathology | Coagulopathy, inaccessible location |
 
 ### LUMBAR PUNCTURE (CPT 62270)
 

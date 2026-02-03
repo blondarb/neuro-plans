@@ -25,7 +25,7 @@ tags:
 
 **ICD-10:** G57.30 (Lesion of lateral popliteal nerve, unspecified lower limb); G57.31 (Lesion of lateral popliteal nerve, right lower limb); G57.32 (Lesion of lateral popliteal nerve, left lower limb); G57.33 (Lesion of lateral popliteal nerve, bilateral lower limbs); G57.80 (Other mononeuropathies of lower limb, unspecified); G57.90 (Unspecified mononeuropathy of lower limb, unspecified)
 
-**CPT CODES:** 95907 (NCS, 1-2 studies); 95908 (NCS, 3-4 studies); 95909 (NCS, 5-6 studies); 95886 (Needle EMG, complete); 95885 (Needle EMG, limited); 76882 (Ultrasound, extremity, limited); 73721 (MRI knee without contrast); 73723 (MRI knee with and without contrast); 73720 (MRI lower extremity without contrast); 64708 (Neuroplasty, major peripheral nerve); 64712 (Neuroplasty, sciatic nerve); 27884 (Decompression fasciotomy, leg); 27690 (Transfer or transplant tendon); 95999 (Unlisted neurological procedure); 97110 (Therapeutic exercises); 97116 (Gait training); L1960 (AFO, custom molded); L4396 (AFO, prefabricated)
+**CPT CODES:** 95907 (NCS, 1-2 studies); 95908 (NCS, 3-4 studies); 95909 (NCS, 5-6 studies); 95886 (Needle EMG, complete); 95885 (Needle EMG, limited); 76882 (Ultrasound, extremity, limited); 73721 (MRI knee without contrast); 73723 (MRI knee with and without contrast); 73720 (MRI lower extremity without contrast); 64708 (Neuroplasty, major peripheral nerve); 64712 (Neuroplasty, sciatic nerve); 27884 (Decompression fasciotomy, leg); 27690 (Transfer or transplant tendon); 95999 (Unlisted neurological procedure); 97110 (Therapeutic exercises); 97116 (Gait training); 97032 (Electrical stimulation, attended); L1960 (AFO, custom molded); L4396 (AFO, prefabricated)
 
 **CLINICAL SYNONYMS:** Common peroneal neuropathy, common fibular neuropathy, peroneal nerve palsy, fibular nerve palsy, peroneal nerve entrapment, foot drop neuropathy, lateral popliteal nerve lesion, peroneal nerve compression at fibular head, drop foot from peroneal injury, crossed-leg palsy, peroneal nerve injury, fibular tunnel syndrome
 
@@ -113,7 +113,7 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Ankle-foot orthosis (AFO) | External | First-line for foot drop regardless of etiology; prevents tripping, ankle sprains, and gait instability | Custom or prefabricated AFO :: External :: Continuous during ambulation :: Fit AFO immediately when foot drop identified; custom molded if expected >6 months; prefabricated for acute/temporary use; dorsiflexion assist type preferred | None | Skin breakdown at calf/ankle; fit adjustment; compliance | ROUTINE | ROUTINE | ROUTINE | - |
+| Ankle-foot orthosis (AFO) (HCPCS L1960/L4396) | External | First-line for foot drop regardless of etiology; prevents tripping, ankle sprains, and gait instability | Custom or prefabricated AFO :: External :: Continuous during ambulation :: Fit AFO immediately when foot drop identified; custom molded if expected >6 months; prefabricated for acute/temporary use; dorsiflexion assist type preferred | None | Skin breakdown at calf/ankle; fit adjustment; compliance | ROUTINE | ROUTINE | ROUTINE | - |
 | Remove compressive cause | External | Eliminate identified external compression at fibular head | Discontinue :: External :: Immediately :: Stop leg crossing; remove tight casts, stockings, or braces; pad fibular head if bedbound; modify positioning | None | Ensure compliance; reassess nerve function | URGENT | URGENT | URGENT | URGENT |
 | Weight-bearing precautions (if fracture) | External | Proximal fibula fracture associated with peroneal nerve injury | Non-weight-bearing :: External :: Until fracture healing :: Per orthopedic guidance; typically 6-8 weeks | None | Fracture healing on follow-up imaging | URGENT | URGENT | ROUTINE | - |
 
@@ -134,7 +134,7 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Physical therapy (CPT 97110/97116) | External | Core rehabilitation for foot drop; nerve recovery optimization; gait training | PT prescription :: External :: 2-3x/week :: Ankle dorsiflexion/eversion strengthening; gait training with AFO; balance exercises; nerve gliding; electrical stimulation (NMES) to tibialis anterior | Acute fracture (modify program) | Muscle strength grading (MRC scale); gait quality; functional improvement | - | ROUTINE | ROUTINE | - |
-| Neuromuscular electrical stimulation (NMES) | External | Prevent muscle atrophy during reinnervation; maintain ankle dorsiflexor mass | NMES device :: External :: Daily :: Apply to tibialis anterior; 20-30 minutes daily; per PT protocol; during period of denervation/reinnervation | Pacemaker/defibrillator; over open wound; deep vein thrombosis | Muscle bulk; contraction quality; skin irritation | - | ROUTINE | ROUTINE | - |
+| Neuromuscular electrical stimulation (NMES) (CPT 97032) | External | Prevent muscle atrophy during reinnervation; maintain ankle dorsiflexor mass | NMES device :: External :: Daily :: Apply to tibialis anterior; 20-30 minutes daily; per PT protocol; during period of denervation/reinnervation | Pacemaker/defibrillator; over open wound; deep vein thrombosis | Muscle bulk; contraction quality; skin irritation | - | ROUTINE | ROUTINE | - |
 | Fibular head padding/protection | External | Prevent further compression in hospitalized or bedbound patients | Foam pad :: External :: Continuous while in bed :: Place foam pad at lateral knee/fibular head; avoid leg crossing; reposition every 2 hours | None | Skin integrity; compliance | - | ROUTINE | ROUTINE | URGENT |
 | Vitamin B complex supplementation | PO | Nutritional support for nerve recovery (adjunctive) | B-complex :: PO :: daily :: One B-complex tablet daily; ensure adequate B1, B6, B12; not evidence-based as monotherapy for recovery | B6 >200 mg/day causes neuropathy | None specific | - | - | ROUTINE | - |
 
@@ -269,20 +269,20 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Common peroneal neuropathy is the most common mononeuropathy of the lower extremity; fibular head is the most frequent compression site | Class II, Level B | [Stewart JD. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18391155/) |
-| EMG/NCS is the gold standard for diagnosis and localization of peroneal neuropathy; conduction block at fibular head distinguishes demyelinating from axonal lesion | Class II, Level B | [Katirji B et al. Neurology 1988](https://pubmed.ncbi.nlm.nih.gov/2832786/) |
-| Habitual leg crossing is the most common identifiable cause of peroneal neuropathy at the fibular head | Class III, Level C | [Aprile I et al. Neurol Sci 2005](https://pubmed.ncbi.nlm.nih.gov/15995827/) |
-| Weight loss >10 kg is a significant risk factor for peroneal neuropathy (loss of protective fat pad at fibular head) | Class III, Level C | [Sotaniemi KA. J Neurol Neurosurg Psychiatry 1984](https://pubmed.ncbi.nlm.nih.gov/6707657/) |
-| Diabetes mellitus increases susceptibility to focal compression neuropathies including peroneal nerve | Class II, Level B | [Pourmemari MH et al. Acta Neurol Scand 2018](https://pubmed.ncbi.nlm.nih.gov/29488200/) |
-| AFO use improves gait mechanics and reduces fall risk in patients with foot drop | Class II, Level B | [Alam M et al. Prosthet Orthot Int 2014](https://pubmed.ncbi.nlm.nih.gov/24327668/) |
-| Surgical decompression of peroneal nerve at fibular head shows good outcomes in selected entrapment cases | Class III, Level C | [Mont MA et al. Clin Orthop Relat Res 1996](https://pubmed.ncbi.nlm.nih.gov/8769449/) |
-| Peroneal intraneural ganglion cysts originate from the superior tibiofibular joint via the articular branch; surgical disconnection of articular branch prevents recurrence | Class III, Level C | [Spinner RJ et al. J Neurosurg 2003](https://pubmed.ncbi.nlm.nih.gov/12546362/) |
-| Posterior tibial tendon transfer provides durable functional improvement in irreversible foot drop | Class III, Level C | [Vigasio A et al. J Bone Joint Surg Am 2008](https://pubmed.ncbi.nlm.nih.gov/18519322/) |
-| MRI and ultrasound are complementary for evaluating structural causes of peroneal neuropathy | Class III, Level C | [Visser LH. Muscle Nerve 2006](https://pubmed.ncbi.nlm.nih.gov/16897762/) |
-| HNPP (PMP22 deletion) should be suspected in recurrent or bilateral peroneal neuropathy, especially with family history | Class III, Level C | [Mouton P et al. Brain 1999](https://pubmed.ncbi.nlm.nih.gov/10219780/) |
-| Neuromuscular electrical stimulation helps maintain muscle bulk during denervation period but evidence is limited | Class III, Level C | [Kern H et al. Eur J Transl Myol 2014](https://pubmed.ncbi.nlm.nih.gov/26913147/) |
-| Short head of biceps femoris EMG helps differentiate peroneal neuropathy at fibular head from sciatic neuropathy (peroneal division) | Class II, Level B | [Marciniak C et al. PM R 2013](https://pubmed.ncbi.nlm.nih.gov/23159698/) |
-| AANEM practice parameter: electrodiagnostic evaluation of patients with suspected peroneal neuropathy at the knee | Guideline | [Katirji B. Muscle Nerve 2005](https://pubmed.ncbi.nlm.nih.gov/16025526/) |
+| Common peroneal neuropathy is the most common mononeuropathy of the lower extremity; fibular head is the most frequent compression site | Class II, Level B | [Stewart JD. Pract Neurol 2008](https://pubmed.ncbi.nlm.nih.gov/18502948/) |
+| EMG/NCS is the gold standard for diagnosis and localization of peroneal neuropathy; conduction block at fibular head distinguishes demyelinating from axonal lesion | Class II, Level B | [Katirji MB et al. Neurology 1988](https://pubmed.ncbi.nlm.nih.gov/2847078/) |
+| Habitual leg crossing is the most common identifiable cause of peroneal neuropathy at the fibular head | Class III, Level C | [Aprile I et al. Neurol Sci 2000](https://pubmed.ncbi.nlm.nih.gov/11441574/) |
+| Weight loss >10 kg is a significant risk factor for peroneal neuropathy (loss of protective fat pad at fibular head) | Class III, Level C | [Sotaniemi KA. J Neurol Neurosurg Psychiatry 1984](https://pubmed.ncbi.nlm.nih.gov/6610724/) |
+| Diabetes mellitus increases susceptibility to focal compression neuropathies including peroneal nerve | Class II, Level B | Pourmemari MH et al. Acta Neurol Scand 2018 (unable to verify; flagged for physician review) |
+| AFO use improves gait mechanics and reduces fall risk in patients with foot drop | Class II, Level B | [Alam M et al. ScientificWorldJournal 2014](https://pubmed.ncbi.nlm.nih.gov/24892102/) |
+| Surgical decompression of peroneal nerve at fibular head shows good outcomes in selected entrapment cases | Class III, Level C | [Mont MA et al. J Bone Joint Surg Am 1996](https://pubmed.ncbi.nlm.nih.gov/8666604/) |
+| Peroneal intraneural ganglion cysts originate from the superior tibiofibular joint via the articular branch; surgical disconnection of articular branch prevents recurrence | Class III, Level C | [Spinner RJ et al. J Neurosurg 2003](https://pubmed.ncbi.nlm.nih.gov/12924708/) |
+| Posterior tibial tendon transfer provides durable functional improvement in irreversible foot drop | Class III, Level C | [Vigasio A et al. Clin Orthop Relat Res 2008](https://pubmed.ncbi.nlm.nih.gov/18414961/) |
+| MRI and ultrasound are complementary for evaluating structural causes of peroneal neuropathy | Class III, Level C | [Visser LH. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/17060577/) |
+| HNPP (PMP22 deletion) should be suspected in recurrent or bilateral peroneal neuropathy, especially with family history | Class III, Level C | [Mouton P et al. Neurology 1999](https://pubmed.ncbi.nlm.nih.gov/10227632/) |
+| Neuromuscular electrical stimulation helps maintain muscle bulk during denervation period but evidence is limited | Class III, Level C | [Kern H et al. Eur J Transl Myol 2014](https://pubmed.ncbi.nlm.nih.gov/26913127/) |
+| Short head of biceps femoris EMG helps differentiate peroneal neuropathy at fibular head from sciatic neuropathy (peroneal division) | Class II, Level B | [Marciniak C. Phys Med Rehabil Clin N Am 2013](https://pubmed.ncbi.nlm.nih.gov/23177035/) |
+| AANEM practice parameter: electrodiagnostic evaluation of patients with suspected peroneal neuropathy at the knee | Guideline | [Marciniak C et al. Muscle Nerve 2005](https://pubmed.ncbi.nlm.nih.gov/15768387/) |
 
 ═══════════════════════════════════════════════════════════════
 
@@ -344,6 +344,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Diagnostic nerve block | 64450 | Injection, anesthetic agent, other peripheral nerve |
 | Therapeutic exercises | 97110 | Therapeutic procedure, 15 min |
 | Gait training | 97116 | Gait training, 15 min |
+| Neuromuscular electrical stimulation | 97032 | Electrical stimulation, attended, 15 min |
 | AFO, custom molded | L1960 | Ankle-foot orthosis, custom molded |
 | AFO, prefabricated | L4396 | Ankle-foot orthosis, prefabricated |
 

@@ -1,7 +1,7 @@
 ---
 title: "Headache Evaluation"
 description: "Clinical decision support for systematic headache evaluation including red flag identification, primary vs secondary headache classification, and diagnostic workup algorithm"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: approved
 tags:
@@ -15,7 +15,7 @@ tags:
 
 # Headache Evaluation
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** February 2, 2026
 **REVISED:** February 2, 2026
 **STATUS:** Approved
@@ -159,7 +159,7 @@ SECTION A: ACTION ITEMS
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Acetaminophen | PO/IV | Mild-moderate headache pain during workup | 1000 mg :: PO :: once :: 1000 mg PO/IV once; may repeat q6h; max 3000 mg/day | Hepatic disease, chronic alcohol use (>3 drinks/day) | LFTs if frequent use | STAT | ROUTINE | ROUTINE | STAT |
 | Ibuprofen | PO | Mild-moderate headache pain during workup | 400-800 mg :: PO :: once :: 400-800 mg PO once; may repeat q6h; max 2400 mg/day | Renal disease, GI bleeding history, aspirin allergy, third trimester pregnancy | Renal function, GI symptoms | STAT | ROUTINE | ROUTINE | - |
-| Ketorolac | IV/IM | Moderate-severe headache pain during workup | 30 mg :: IV :: once :: 30 mg IV once (15 mg if >65y, CrCl <50, or weight <50 kg); max 2 doses in 24h | Renal disease (CrCl <30), active GI bleeding, anticoagulation, third trimester pregnancy | Renal function, bleeding | STAT | STAT | - | STAT |
+| Ketorolac (CPT 96374) | IV/IM | Moderate-severe headache pain during workup | 30 mg :: IV :: once :: 30 mg IV once (15 mg if >65y, CrCl <50, or weight <50 kg); max 2 doses in 24h | Renal disease (CrCl <30), active GI bleeding, anticoagulation, third trimester pregnancy | Renal function, bleeding | STAT | STAT | - | STAT |
 | Naproxen sodium | PO | Mild-moderate headache pain during workup | 500-825 mg :: PO :: once :: 500-825 mg PO once; may repeat 250-500 mg in 6-8h; max 1250 mg first day | Renal disease, GI bleeding history, aspirin allergy, third trimester pregnancy | Renal function, GI symptoms | - | ROUTINE | ROUTINE | - |
 
 ### 3B. Acute Symptomatic Treatment - Antiemetics / Headache Cocktail
@@ -167,30 +167,30 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Prochlorperazine (CPT 96374) | IV | Moderate-severe headache with nausea; dopamine-mediated headache relief | 10 mg :: IV :: once :: 10 mg IV slow push over 5-10 min; may repeat once in 30 min | QT prolongation, Parkinson disease, history of dystonic reaction | QTc, akathisia, dystonic reaction | STAT | STAT | - | STAT |
-| Metoclopramide | IV | Moderate-severe headache with nausea; alternative to prochlorperazine | 10-20 mg :: IV :: once :: 10-20 mg IV over 15-30 min; may repeat once in 30 min | QT prolongation, Parkinson disease, seizure disorder, bowel obstruction | QTc, akathisia, dystonic reaction | STAT | STAT | - | STAT |
-| Diphenhydramine | IV | Prevention of akathisia/dystonia from dopamine antagonist antiemetics | 25-50 mg :: IV :: once :: 25-50 mg IV push (co-administer with prochlorperazine or metoclopramide) | Glaucoma, urinary retention, elderly (increased sedation risk) | Sedation level | STAT | STAT | - | STAT |
-| Ondansetron | IV/PO | Nausea/vomiting when dopamine antagonists contraindicated (Parkinson, QTc prolongation) | 4-8 mg :: IV :: once :: 4-8 mg IV/PO once; may repeat q8h | QT prolongation (dose-dependent), serotonin syndrome risk with concurrent serotonergic drugs | QTc | URGENT | ROUTINE | ROUTINE | URGENT |
-| Dexamethasone | IV | Reduce headache recurrence; anti-inflammatory effect for suspected inflammatory etiology | 10 mg :: IV :: once :: 10 mg IV once (reduces 24-72h headache recurrence) | Active untreated infection, uncontrolled diabetes (relative), psychosis (relative) | Glucose, blood pressure | URGENT | URGENT | - | URGENT |
+| Metoclopramide (CPT 96374) | IV | Moderate-severe headache with nausea; alternative to prochlorperazine | 10-20 mg :: IV :: once :: 10-20 mg IV over 15-30 min; may repeat once in 30 min | QT prolongation, Parkinson disease, seizure disorder, bowel obstruction | QTc, akathisia, dystonic reaction | STAT | STAT | - | STAT |
+| Diphenhydramine (CPT 96374) | IV | Prevention of akathisia/dystonia from dopamine antagonist antiemetics | 25-50 mg :: IV :: once :: 25-50 mg IV push (co-administer with prochlorperazine or metoclopramide) | Glaucoma, urinary retention, elderly (increased sedation risk) | Sedation level | STAT | STAT | - | STAT |
+| Ondansetron (CPT 96374) | IV/PO | Nausea/vomiting when dopamine antagonists contraindicated (Parkinson, QTc prolongation) | 4-8 mg :: IV :: once :: 4-8 mg IV/PO once; may repeat q8h | QT prolongation (dose-dependent), serotonin syndrome risk with concurrent serotonergic drugs | QTc | URGENT | ROUTINE | ROUTINE | URGENT |
+| Dexamethasone (CPT 96374) | IV | Reduce headache recurrence; anti-inflammatory effect for suspected inflammatory etiology | 10 mg :: IV :: once :: 10 mg IV once (reduces 24-72h headache recurrence) | Active untreated infection, uncontrolled diabetes (relative), psychosis (relative) | Glucose, blood pressure | URGENT | URGENT | - | URGENT |
 
 ### 3C. IV Fluids and Supportive Care
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| IV normal saline | IV | Dehydration contributing to headache; pre-procedure hydration (LP); NPO status | 1000 mL :: IV :: bolus then continuous :: NS 1L bolus over 1h, then 75-125 mL/hr maintenance | Decompensated heart failure, severe volume overload | Intake/output, daily weights if admitted | STAT | STAT | - | STAT |
+| IV normal saline (CPT 96360) | IV | Dehydration contributing to headache; pre-procedure hydration (LP); NPO status | 1000 mL :: IV :: bolus then continuous :: NS 1L bolus over 1h, then 75-125 mL/hr maintenance | Decompensated heart failure, severe volume overload | Intake/output, daily weights if admitted | STAT | STAT | - | STAT |
 | Magnesium sulfate (CPT 96365) | IV | Low magnesium; adjunctive headache treatment especially if migraine suspected | 2 g :: IV :: once :: 2 g IV in 100 mL NS over 20-30 min | Renal failure (GFR <30), myasthenia gravis, heart block | Magnesium level, deep tendon reflexes, respiratory status | URGENT | URGENT | - | URGENT |
 
 ### 3D. Empiric Treatment When Secondary Cause Suspected
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Ceftriaxone | IV | Empiric meningitis coverage pending CSF results (give BEFORE LP if delay anticipated) | 2 g :: IV :: q12h :: 2 g IV q12h (meningitis dosing); give STAT if bacterial meningitis suspected | Cephalosporin allergy (severe); adjust if PCN allergy documented | Renal function, rash, C. difficile | STAT | STAT | - | STAT |
-| Vancomycin | IV | Empiric meningitis coverage for resistant organisms (give with ceftriaxone) | 15-20 mg/kg :: IV :: q8-12h :: 15-20 mg/kg IV q8-12h (target trough 15-20 mcg/mL); max 2 g/dose | Vancomycin allergy; red man syndrome (infuse over 1h minimum) | Trough levels, renal function, ototoxicity | STAT | STAT | - | STAT |
-| Acyclovir | IV | Empiric HSV encephalitis coverage if fever, altered mental status, temporal lobe abnormalities | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h (based on ideal body weight); adjust for renal function | Renal insufficiency (dose adjust); ensure adequate hydration | Renal function q24h, urine output | STAT | STAT | - | STAT |
-| Dexamethasone (for meningitis) | IV | Reduce inflammation and improve outcomes in bacterial meningitis (give BEFORE or with first antibiotic dose) | 0.15 mg/kg :: IV :: q6h :: 0.15 mg/kg IV q6h x 4 days (typically 10 mg q6h); start before or with first antibiotic dose | Active fungal infection; defer if viral meningitis confirmed | Glucose, blood pressure | STAT | STAT | - | STAT |
+| Ceftriaxone (CPT 96374) | IV | Empiric meningitis coverage pending CSF results (give BEFORE LP if delay anticipated) | 2 g :: IV :: q12h :: 2 g IV q12h (meningitis dosing); give STAT if bacterial meningitis suspected | Cephalosporin allergy (severe); adjust if PCN allergy documented | Renal function, rash, C. difficile | STAT | STAT | - | STAT |
+| Vancomycin (CPT 96365) | IV | Empiric meningitis coverage for resistant organisms (give with ceftriaxone) | 15-20 mg/kg :: IV :: q8-12h :: 15-20 mg/kg IV q8-12h (target trough 15-20 mcg/mL); max 2 g/dose | Vancomycin allergy; red man syndrome (infuse over 1h minimum) | Trough levels, renal function, ototoxicity | STAT | STAT | - | STAT |
+| Acyclovir (CPT 96365) | IV | Empiric HSV encephalitis coverage if fever, altered mental status, temporal lobe abnormalities | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h (based on ideal body weight); adjust for renal function | Renal insufficiency (dose adjust); ensure adequate hydration | Renal function q24h, urine output | STAT | STAT | - | STAT |
+| Dexamethasone (for meningitis) (CPT 96374) | IV | Reduce inflammation and improve outcomes in bacterial meningitis (give BEFORE or with first antibiotic dose) | 0.15 mg/kg :: IV :: q6h :: 0.15 mg/kg IV q6h x 4 days (typically 10 mg q6h); start before or with first antibiotic dose | Active fungal infection; defer if viral meningitis confirmed | Glucose, blood pressure | STAT | STAT | - | STAT |
 | Nimodipine | PO | Suspected SAH with vasospasm; RCVS | 60 mg :: PO :: q4h :: 60 mg PO q4h x 21 days; reduce to 30 mg q4h if hypotension | Hypotension (SBP <90); do NOT give IV (severe hypotension risk) | Blood pressure q1h initially, then q4h | STAT | STAT | - | STAT |
-| Heparin drip | IV | Confirmed cerebral venous thrombosis (CVT) | 80 units/kg :: IV :: continuous :: 80 units/kg bolus, then 18 units/kg/hr; target PTT 60-80 sec | Active hemorrhagic infarction (relative; still often treated), uncontrolled bleeding | PTT q6h until stable, then q12h; platelet count | STAT | STAT | - | STAT |
-| Mannitol | IV | Emergent ICP reduction in suspected mass lesion with herniation signs | 1-1.5 g/kg :: IV :: once :: 1-1.5 g/kg IV bolus over 15-20 min; may repeat 0.25-0.5 g/kg q6h | Anuria, severe dehydration, active intracranial hemorrhage (relative) | Serum osmolality (<320), electrolytes, urine output, neuro checks | STAT | - | - | STAT |
-| Hypertonic saline (23.4%) | IV | Emergent ICP reduction; alternative to mannitol | 30 mL :: IV :: once :: 30 mL of 23.4% NaCl IV over 15-20 min via central line | Hypernatremia (Na >160) | Sodium q2-4h (target 145-155), osmolality | STAT | - | - | STAT |
+| Heparin drip (CPT 96365) | IV | Confirmed cerebral venous thrombosis (CVT) | 80 units/kg :: IV :: continuous :: 80 units/kg bolus, then 18 units/kg/hr; target PTT 60-80 sec | Active hemorrhagic infarction (relative; still often treated), uncontrolled bleeding | PTT q6h until stable, then q12h; platelet count | STAT | STAT | - | STAT |
+| Mannitol (CPT 96365) | IV | Emergent ICP reduction in suspected mass lesion with herniation signs | 1-1.5 g/kg :: IV :: once :: 1-1.5 g/kg IV bolus over 15-20 min; may repeat 0.25-0.5 g/kg q6h | Anuria, severe dehydration, active intracranial hemorrhage (relative) | Serum osmolality (<320), electrolytes, urine output, neuro checks | STAT | - | - | STAT |
+| Hypertonic saline (23.4%) (CPT 96374) | IV | Emergent ICP reduction; alternative to mannitol | 30 mL :: IV :: once :: 30 mL of 23.4% NaCl IV over 15-20 min via central line | Hypernatremia (Na >160) | Sodium q2-4h (target 145-155), osmolality | STAT | - | - | STAT |
 
 ### 3E. Empiric Treatment When Primary Headache Suspected
 
@@ -296,20 +296,20 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| CT head within 6 hours has >95% sensitivity for SAH | Class I, Level A | [Perry et al. BMJ 2011](https://pubmed.ncbi.nlm.nih.gov/21791490/) |
-| LP required if CT negative and SAH suspected (within 6-12h for xanthochromia) | Class I, Level B | [Edlow et al. Acad Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18616449/) |
+| CT head within 6 hours has >95% sensitivity for SAH | Class I, Level A | [Perry et al. BMJ 2011](https://pubmed.ncbi.nlm.nih.gov/21768192/) |
+| LP required if CT negative and SAH suspected (within 6-12h for xanthochromia) | Class I, Level B | [Edlow et al. Ann Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18809105/) |
 | Ottawa SAH Rule for thunderclap headache risk stratification | Class II, Level B | [Perry et al. JAMA 2013](https://pubmed.ncbi.nlm.nih.gov/24065011/) |
-| SNOOP mnemonic for headache red flags | Expert consensus | [Dodick. N Engl J Med 2006](https://pubmed.ncbi.nlm.nih.gov/16495396/); [Do et al. Lancet Neurol 2019](https://pubmed.ncbi.nlm.nih.gov/30497828/) |
-| Prochlorperazine/metoclopramide effective for acute undifferentiated headache in ED | Class I, Level A | [Friedman et al. Ann Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18006188/); [Kelley and Tepper. Headache 2012](https://pubmed.ncbi.nlm.nih.gov/22946834/) |
+| SNOOP mnemonic for headache red flags | Expert consensus | [Dodick. N Engl J Med 2006](https://pubmed.ncbi.nlm.nih.gov/16407511/); [Do et al. Neurology 2019](https://pubmed.ncbi.nlm.nih.gov/30587518/) |
+| Prochlorperazine/metoclopramide effective for acute undifferentiated headache in ED | Class I, Level A | [Friedman et al. Ann Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18006188/); [Kelley and Tepper. Headache 2012](https://pubmed.ncbi.nlm.nih.gov/22309235/) |
 | Dexamethasone reduces 24-72h headache recurrence | Class I, Level A | [Singh et al. Acad Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18976336/) |
-| ACR Appropriateness Criteria for headache imaging | Expert consensus, Class II | [ACR Appropriateness Criteria: Headache 2019](https://pubmed.ncbi.nlm.nih.gov/31054741/) |
-| AHS consensus statement: choosing wisely in headache medicine | Expert consensus | [Loder et al. Headache 2013](https://pubmed.ncbi.nlm.nih.gov/23808661/) |
-| Neuroimaging not indicated for stable migraine pattern without red flags | Class II, Level B | [Sandrini et al. Neurol Sci 2004](https://pubmed.ncbi.nlm.nih.gov/15549530/); [AAN Practice Parameter, Frishberg 2000](https://pubmed.ncbi.nlm.nih.gov/10993987/) |
-| Dexamethasone before antibiotics in bacterial meningitis improves outcomes | Class I, Level A | [de Gans and van de Beek. N Engl J Med 2002](https://pubmed.ncbi.nlm.nih.gov/12417547/) |
+| ACR Appropriateness Criteria for headache imaging | Expert consensus, Class II | [ACR Appropriateness Criteria: Headache 2019](https://pubmed.ncbi.nlm.nih.gov/31685104/) |
+| AHS consensus statement: choosing wisely in headache medicine | Expert consensus | [Loder et al. Headache 2013](https://pubmed.ncbi.nlm.nih.gov/24266337/) |
+| Neuroimaging not indicated for stable migraine pattern without red flags | Class II, Level B | [Sandrini et al. Eur J Neurol 2004](https://pubmed.ncbi.nlm.nih.gov/15061822/); AAN Practice Parameter, Frishberg 2000 |
+| Dexamethasone before antibiotics in bacterial meningitis improves outcomes | Class I, Level A | [de Gans and van de Beek. N Engl J Med 2002](https://pubmed.ncbi.nlm.nih.gov/12432041/) |
 | ICHD-3 diagnostic criteria for primary headache disorders | Expert consensus (Gold Standard) | [ICHD-3. Cephalalgia 2018](https://pubmed.ncbi.nlm.nih.gov/29368949/) |
-| High-flow oxygen effective for acute cluster headache | Class I, Level A | [Cohen et al. J Neurol Neurosurg Psychiatry 2009](https://pubmed.ncbi.nlm.nih.gov/19151014/) |
-| ESR and CRP for GCA screening; sensitivity improves with combined testing | Class II, Level B | [Salvarani et al. N Engl J Med 2002](https://pubmed.ncbi.nlm.nih.gov/12140307/); [Costello et al. BMC Musculoskelet Disord 2020](https://pubmed.ncbi.nlm.nih.gov/32527251/) |
-| CTA for aneurysm detection approaches sensitivity of conventional angiography | Class I, Level A | [White et al. Radiology 2000](https://pubmed.ncbi.nlm.nih.gov/10657181/) |
+| High-flow oxygen effective for acute cluster headache | Class I, Level A | [Cohen et al. JAMA 2009](https://pubmed.ncbi.nlm.nih.gov/19996400/) |
+| ESR and CRP for GCA screening; sensitivity improves with combined testing | Class II, Level B | [Salvarani et al. N Engl J Med 2002](https://pubmed.ncbi.nlm.nih.gov/12140303/); Costello et al. BMC Musculoskelet Disord 2020 |
+| CTA for aneurysm detection approaches sensitivity of conventional angiography | Class I, Level A | [White et al. Radiology 2000](https://pubmed.ncbi.nlm.nih.gov/11058629/) |
 | MRV or CTV for cerebral venous thrombosis diagnosis | Class II, Level B | [Saposnik et al. Stroke 2011](https://pubmed.ncbi.nlm.nih.gov/21293023/) |
 
 ---
@@ -328,6 +328,23 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.2 (February 2, 2026)**
+- Citation verification: 12 incorrect PMIDs corrected via PubMed API verification
+- Fixed PMID for Perry BMJ 2011 SAH CT sensitivity (21791490 -> 21768192)
+- Fixed PMID and journal for Edlow 2008 LP/SAH (18616449 -> 18809105; Acad Emerg Med -> Ann Emerg Med)
+- Fixed PMID for Dodick NEJM 2006 SNOOP mnemonic (16495396 -> 16407511)
+- Fixed PMID and journal for Do et al. 2019 SNNOOP10 red flags (30497828 -> 30587518; Lancet Neurol -> Neurology)
+- Fixed PMID for Kelley and Tepper Headache 2012 (22946834 -> 22309235)
+- Fixed PMID for ACR Appropriateness Criteria Headache 2019 (31054741 -> 31685104)
+- Fixed PMID for Loder et al. Headache 2013 choosing wisely (23808661 -> 24266337)
+- Fixed PMID and journal for Sandrini et al. 2004 neuroimaging (15549530 -> 15061822; Neurol Sci -> Eur J Neurol)
+- Fixed PMID for de Gans and van de Beek NEJM 2002 meningitis (12417547 -> 12432041)
+- Fixed PMID and journal for Cohen et al. 2009 oxygen cluster headache (19151014 -> 19996400; JNNP -> JAMA)
+- Fixed PMID for Salvarani et al. NEJM 2002 GCA (12140307 -> 12140303)
+- Fixed PMID for White et al. Radiology 2000 CTA aneurysm (10657181 -> 11058629)
+- Removed unverifiable PMID links: AAN Practice Parameter Frishberg 2000, Costello et al. BMC 2020 (left as plain text per citation verifier protocol)
+- CPT code enrichment: Added CPT codes to 12 IV treatment items (96374 for IV push, 96365 for infusions, 96360 for hydration)
 
 **v1.1 (February 2, 2026)**
 - Added Section A / Section B dividers with ═══ format per template standard

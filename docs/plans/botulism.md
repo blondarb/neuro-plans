@@ -1,7 +1,7 @@
 ---
 title: "Botulism"
 description: "Clinical decision support for botulism diagnosis and management"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: approved
 tags:
@@ -14,7 +14,7 @@ tags:
 
 # Botulism
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** February 2, 2026
 **REVISED:** February 2, 2026
 **STATUS:** Approved
@@ -25,7 +25,7 @@ tags:
 
 **ICD-10:** A05.1 (Botulism food poisoning — foodborne botulism), T48.1X1A (Poisoning by skeletal muscle relaxants, accidental — iatrogenic botulism), A48.51 (Infant botulism), A48.52 (Wound botulism), A48.59 (Other specified botulism — adult intestinal colonization, inhalational)
 
-**CPT CODES:** 95907-95913 (nerve conduction studies), 95886 (needle EMG), 95937 (repetitive nerve stimulation), 95872 (single-fiber EMG), 87900 (bacterial toxin assay — mouse bioassay, sent via public health), 87045 (stool culture), 87075 (anaerobic wound culture), 80053 (CMP), 85025 (CBC), 83735 (magnesium), 82803 (ABG), 62270 (lumbar puncture), 71046 (chest X-ray), 93000 (ECG), 70450 (CT head), 70553 (MRI brain), 72156 (MRI spine), 71260 (CT chest), 74178 (CT abdomen/pelvis), 94010 (spirometry/PFTs), 94726 (FVC), 86235 (AChR/antibody panel), 86255 (antibody assay), 99291-99292 (critical care E/M), 31500 (intubation), 97110-97542 (physical therapy)
+**CPT CODES:** 95907-95913 (nerve conduction studies), 95886 (needle EMG), 95937 (repetitive nerve stimulation), 95872 (single-fiber EMG), 95857 (Tensilon test), 87900 (bacterial toxin assay — mouse bioassay, sent via public health), 87045 (stool culture), 87075 (anaerobic wound culture), 80053 (CMP), 85025 (CBC), 83735 (magnesium), 84100 (phosphorus), 82947 (glucose), 82803 (ABG), 85610 (PT/INR), 85730 (aPTT), 87040 (blood cultures), 81003 (urinalysis), 84703 (pregnancy test), 83605 (lactate), 86900 (type and screen), 85652 (ESR), 86140 (CRP), 84443 (TSH), 86235 (AChR/antibody panel), 86255 (antibody assay), 82550 (CK), 83655 (lead), 82175 (arsenic), 83015 (thallium), 82480 (cholinesterase), 82135 (ALA), 84106 (PBG), 62270 (lumbar puncture), 89051 (CSF cell count), 84157 (CSF protein), 82945 (CSF glucose), 87205 (Gram stain), 87070 (CSF culture), 71046 (chest X-ray), 93000 (ECG), 70450 (CT head), 70553 (MRI brain), 72156 (MRI spine), 71260 (CT chest), 74178 (CT abdomen/pelvis), 93306 (echocardiogram), 94010 (spirometry/PFTs), 94726 (FVC), 96365 (IV infusion initial hour), 96366 (IV infusion additional hour), 96374 (IV push), 96360 (IV hydration initial hour), 96361 (IV hydration additional hour), 31500 (intubation), 31600 (tracheostomy), 43246 (PEG placement), 99291-99292 (critical care E/M), 97110-97542 (physical therapy)
 
 **SYNONYMS:** Botulism, botulinum toxin poisoning, Clostridium botulinum poisoning, food poisoning botulism, foodborne botulism, wound botulism, infant botulism, iatrogenic botulism, descending paralysis, botulinum intoxication, sausage poisoning, botulism food poisoning, adult intestinal toxemia botulism, inhalational botulism
 
@@ -78,7 +78,7 @@ SECTION A: ACTION ITEMS
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Anti-ganglioside antibodies (GM1, GD1a, GQ1b) (CPT 86255) | - | EXT | EXT | - | Exclude GBS variants if diagnostic uncertainty persists | Negative |
-| Edrophonium (Tensilon) test | - | EXT | EXT | - | Differentiates from MG (positive in MG, negative in botulism); rarely performed now | No improvement (negative) in botulism |
+| Edrophonium (Tensilon) test (CPT 95857) | - | EXT | EXT | - | Differentiates from MG (positive in MG, negative in botulism); rarely performed now | No improvement (negative) in botulism |
 | Heavy metals (lead, arsenic, thallium) (CPT 83655, 82175, 83015) | - | EXT | EXT | - | Toxic neuropathy differential; environmental exposure | Normal |
 | Tick paralysis assessment (physical exam) | STAT | STAT | - | STAT | Ascending paralysis mimic; search skin/scalp for embedded tick | No tick found |
 | Organophosphate/carbamate level (cholinesterase) (CPT 82480) | - | EXT | - | EXT | Cholinergic crisis differential (excess secretions + weakness); toxicology screen | Normal cholinesterase levels |
@@ -144,32 +144,32 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Heptavalent botulinum antitoxin (HBAT) (equine-derived, serotypes A-G) — obtained from CDC | IV | All forms of botulism (foodborne, wound, adult intestinal colonization, inhalational); administer as early as possible — antitoxin neutralizes circulating toxin but does NOT reverse already-bound toxin | 1 vial :: IV :: :: 1 vial (containing equine-derived antibodies to types A-G) IV; dilute 1:10 in 0.9% NS; infuse slowly over 15-30 min initially, increase rate per CDC protocol; contact CDC Emergency Operations Center 770-488-7100 (24/7) to obtain antitoxin; administer as soon as clinical suspicion is high — do NOT wait for lab confirmation | History of equine protein hypersensitivity (perform skin test first per CDC protocol); serum sickness risk 5-10% (monitor for 10-21 days post-infusion) | Skin test before infusion if history of atopy or equine exposure; monitor VS q5min during infusion and q15min x 4h post; observe for anaphylaxis (epinephrine at bedside); delayed serum sickness (fever, rash, arthralgias at 10-21 days) | STAT | STAT | - | STAT |
-| BabyBIG (botulism immune globulin intravenous, human) | IV | Infant botulism ONLY (age <1 year); FDA-approved for infant botulism types A and B | 50 mg/kg :: IV :: :: 50 mg/kg (1 mL/kg) IV single dose; infuse at 0.5 mL/kg/h initially, increase to 1.0 mL/kg/h if tolerated; obtain from California Infant Botulism Treatment and Prevention Program (IBTPP) at 510-231-7600 (24/7) | IgA deficiency; prior severe reaction to human immunoglobulin | Vital signs q15min during infusion; watch for anaphylaxis; renal function | - | STAT | - | STAT |
-| Intubation and mechanical ventilation | - | Respiratory failure — single most important cause of death in botulism | N/A :: - :: :: Indications: FVC <15-20 mL/kg, NIF weaker than -30 cmH2O, >30% decline in FVC from baseline, rising pCO2, clinical respiratory distress, inability to protect airway due to bulbar weakness. Use non-depolarizing agents (rocuronium preferred). AVOID succinylcholine (risk of exaggerated response in denervated muscle). Anticipate PROLONGED ventilation (weeks to months) | N/A (life-saving) | Ventilator settings per ICU protocol; daily assessment; plan for tracheostomy if ventilation expected >14 days | STAT | STAT | - | STAT |
+| Heptavalent botulinum antitoxin (HBAT) (equine-derived, serotypes A-G) — obtained from CDC (CPT 96365, 96366) | IV | All forms of botulism (foodborne, wound, adult intestinal colonization, inhalational); administer as early as possible — antitoxin neutralizes circulating toxin but does NOT reverse already-bound toxin | 1 vial :: IV :: :: 1 vial (containing equine-derived antibodies to types A-G) IV; dilute 1:10 in 0.9% NS; infuse slowly over 15-30 min initially, increase rate per CDC protocol; contact CDC Emergency Operations Center 770-488-7100 (24/7) to obtain antitoxin; administer as soon as clinical suspicion is high — do NOT wait for lab confirmation | History of equine protein hypersensitivity (perform skin test first per CDC protocol); serum sickness risk 5-10% (monitor for 10-21 days post-infusion) | Skin test before infusion if history of atopy or equine exposure; monitor VS q5min during infusion and q15min x 4h post; observe for anaphylaxis (epinephrine at bedside); delayed serum sickness (fever, rash, arthralgias at 10-21 days) | STAT | STAT | - | STAT |
+| BabyBIG (botulism immune globulin intravenous, human) (CPT 96365, 96366) | IV | Infant botulism ONLY (age <1 year); FDA-approved for infant botulism types A and B | 50 mg/kg :: IV :: :: 50 mg/kg (1 mL/kg) IV single dose; infuse at 0.5 mL/kg/h initially, increase to 1.0 mL/kg/h if tolerated; obtain from California Infant Botulism Treatment and Prevention Program (IBTPP) at 510-231-7600 (24/7) | IgA deficiency; prior severe reaction to human immunoglobulin | Vital signs q15min during infusion; watch for anaphylaxis; renal function | - | STAT | - | STAT |
+| Intubation and mechanical ventilation (CPT 31500) | - | Respiratory failure — single most important cause of death in botulism | N/A :: - :: :: Indications: FVC <15-20 mL/kg, NIF weaker than -30 cmH2O, >30% decline in FVC from baseline, rising pCO2, clinical respiratory distress, inability to protect airway due to bulbar weakness. Use non-depolarizing agents (rocuronium preferred). AVOID succinylcholine (risk of exaggerated response in denervated muscle). Anticipate PROLONGED ventilation (weeks to months) | N/A (life-saving) | Ventilator settings per ICU protocol; daily assessment; plan for tracheostomy if ventilation expected >14 days | STAT | STAT | - | STAT |
 | Wound debridement and drainage (wound botulism) | Surgical | Wound botulism — remove source of ongoing toxin production; perform AFTER antitoxin administration to avoid releasing more toxin into circulation | N/A :: Surgical :: :: Thorough surgical debridement of infected wound; drain abscess if present; obtain tissue for anaerobic culture; perform AFTER antitoxin has been given | Hemodynamic instability (stabilize first) | Wound site; CBC; signs of secondary infection | - | STAT | - | STAT |
-| Metronidazole (wound botulism) | IV | Wound botulism — eradicate C. botulinum from wound; adjunct to debridement | 500 mg :: IV :: :: 500 mg IV q8h x 10-14 days; alternative to penicillin (avoids aminoglycoside interaction concern) | Severe hepatic impairment; disulfiram-like reaction with alcohol | LFTs; neuropathy (prolonged use); seizures (rare) | - | STAT | - | STAT |
-| Penicillin G (wound botulism — alternative) | IV | Wound botulism — alternative to metronidazole for C. botulinum eradication | 3 million units :: IV :: :: 3 million units IV q4h x 10-14 days | Penicillin allergy; AVOID aminoglycosides concurrently (potentiate neuromuscular blockade) | Allergic reaction; renal function | - | STAT | - | STAT |
+| Metronidazole (wound botulism) (CPT 96365) | IV | Wound botulism — eradicate C. botulinum from wound; adjunct to debridement | 500 mg :: IV :: :: 500 mg IV q8h x 10-14 days; alternative to penicillin (avoids aminoglycoside interaction concern) | Severe hepatic impairment; disulfiram-like reaction with alcohol | LFTs; neuropathy (prolonged use); seizures (rare) | - | STAT | - | STAT |
+| Penicillin G (wound botulism — alternative) (CPT 96365) | IV | Wound botulism — alternative to metronidazole for C. botulinum eradication | 3 million units :: IV :: :: 3 million units IV q4h x 10-14 days | Penicillin allergy; AVOID aminoglycosides concurrently (potentiate neuromuscular blockade) | Allergic reaction; renal function | - | STAT | - | STAT |
 | DVT prophylaxis: Enoxaparin | SC | Immobilized patients at high risk of VTE | 40 mg :: SC :: :: 40 mg SC daily; start on admission | Active bleeding, platelets <50K, CrCl <30 (use UFH) | Platelets q3 days; anti-Xa if renal impairment | - | ROUTINE | - | ROUTINE |
 | DVT prophylaxis: Heparin SC (alternative) | SC | VTE prophylaxis if enoxaparin contraindicated | 5000 units :: SC :: :: 5000 units SC q8-12h | Active bleeding, HIT | Platelets q3 days | - | ROUTINE | - | ROUTINE |
 | Pneumatic compression devices | - | All immobilized patients | N/A :: - :: :: Apply bilaterally on admission; continue until ambulatory | Acute DVT, severe PVD | Skin checks daily | STAT | STAT | - | STAT |
-| IV fluid resuscitation (0.9% NS) | IV | Dehydration from GI prodrome (foodborne botulism — nausea, vomiting, diarrhea) | 20 mL/kg :: IV :: :: 20 mL/kg IV bolus, then maintenance; target euvolemia | Fluid overload, CHF | I/O, BMP, volume status | STAT | STAT | - | STAT |
+| IV fluid resuscitation (0.9% NS) (CPT 96360, 96361) | IV | Dehydration from GI prodrome (foodborne botulism — nausea, vomiting, diarrhea) | 20 mL/kg :: IV :: :: 20 mL/kg IV bolus, then maintenance; target euvolemia | Fluid overload, CHF | I/O, BMP, volume status | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Atropine | IV | Bradycardia from autonomic dysfunction; excessive secretions | 0.5-1 mg :: IV :: :: 0.5-1 mg IV PRN for symptomatic bradycardia; may repeat q3-5 min; max 3 mg | Tachycardia, angle-closure glaucoma | HR, rhythm; urinary retention | STAT | STAT | - | STAT |
-| Glycopyrrolate | IV/PO | Excessive oral secretions (antisialagogue); preferred over atropine for secretion management | 0.2 mg :: IV :: :: 0.2 mg IV q4-6h PRN; or 1-2 mg PO TID | Ileus, urinary retention, angle-closure glaucoma | Secretion volume; HR; bowel function | - | ROUTINE | - | ROUTINE |
+| Atropine (CPT 96374) | IV | Bradycardia from autonomic dysfunction; excessive secretions | 0.5-1 mg :: IV :: :: 0.5-1 mg IV PRN for symptomatic bradycardia; may repeat q3-5 min; max 3 mg | Tachycardia, angle-closure glaucoma | HR, rhythm; urinary retention | STAT | STAT | - | STAT |
+| Glycopyrrolate (CPT 96374) | IV/PO | Excessive oral secretions (antisialagogue); preferred over atropine for secretion management | 0.2 mg :: IV :: :: 0.2 mg IV q4-6h PRN; or 1-2 mg PO TID | Ileus, urinary retention, angle-closure glaucoma | Secretion volume; HR; bowel function | - | ROUTINE | - | ROUTINE |
 | Acetaminophen | PO/IV | Pain, headache, fever | 650-1000 mg :: PO :: :: 650-1000 mg PO/IV q6h; max 4g/day (2g if hepatic impairment) | Severe liver disease | LFTs if prolonged | STAT | ROUTINE | ROUTINE | STAT |
-| Metoclopramide | IV | Gastroparesis, nausea, ileus (autonomic dysfunction common) | 10 mg :: IV :: :: 10 mg IV q6h PRN; max 40 mg/day; limit to <12 weeks | Seizure history, Parkinson disease, GI obstruction | Tardive dyskinesia with prolonged use | - | ROUTINE | - | ROUTINE |
-| Ondansetron | IV | Nausea and vomiting (foodborne botulism GI symptoms) | 4 mg :: IV :: :: 4 mg IV q6-8h PRN | QT prolongation, severe hepatic impairment | ECG if QT concern | STAT | ROUTINE | - | ROUTINE |
+| Metoclopramide (CPT 96374) | IV | Gastroparesis, nausea, ileus (autonomic dysfunction common) | 10 mg :: IV :: :: 10 mg IV q6h PRN; max 40 mg/day; limit to <12 weeks | Seizure history, Parkinson disease, GI obstruction | Tardive dyskinesia with prolonged use | - | ROUTINE | - | ROUTINE |
+| Ondansetron (CPT 96374) | IV | Nausea and vomiting (foodborne botulism GI symptoms) | 4 mg :: IV :: :: 4 mg IV q6-8h PRN | QT prolongation, severe hepatic impairment | ECG if QT concern | STAT | ROUTINE | - | ROUTINE |
 | Docusate sodium | PO | Constipation (immobility + autonomic dysfunction) | 100 mg :: PO :: :: 100 mg PO BID | GI obstruction | Bowel function | - | ROUTINE | ROUTINE | ROUTINE |
 | Senna | PO | Constipation | 8.6-17.2 mg :: PO :: :: 8.6-17.2 mg PO qHS | GI obstruction | Bowel function | - | ROUTINE | ROUTINE | - |
 | Polyethylene glycol (MiraLAX) | PO | Constipation (if docusate insufficient) | 17 g :: PO :: :: 17 g PO daily in 8 oz water | GI obstruction | Bowel function | - | ROUTINE | ROUTINE | - |
 | Artificial tears (methylcellulose) | Ophthalmic | Dry eyes from impaired blinking (CN VII involvement, reduced lacrimation) | 1-2 drops :: Ophthalmic :: :: 1-2 drops each eye q2-4h while awake; lubricating ointment at night | None significant | Corneal integrity; ophthalmology if corneal exposure | - | ROUTINE | ROUTINE | ROUTINE |
 | Melatonin | PO | Insomnia, ICU delirium prevention | 3-5 mg :: PO :: :: 3-5 mg PO qHS | None significant | Sleep quality | - | ROUTINE | - | ROUTINE |
-| Lorazepam | IV | Anxiety, agitation in intubated patient | 0.5-1 mg :: IV :: :: 0.5-1 mg IV q6-8h PRN; use with caution — may worsen hypotonia | Respiratory depression (extreme caution if not intubated) | RR, sedation scale; avoid in non-intubated patients | - | URGENT | - | URGENT |
+| Lorazepam (CPT 96374) | IV | Anxiety, agitation in intubated patient | 0.5-1 mg :: IV :: :: 0.5-1 mg IV q6-8h PRN; use with caution — may worsen hypotonia | Respiratory depression (extreme caution if not intubated) | RR, sedation scale; avoid in non-intubated patients | - | URGENT | - | URGENT |
 
 ### 3C. Second-line/Refractory
 
@@ -177,8 +177,8 @@ SECTION A: ACTION ITEMS
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Guanidine hydrochloride | PO | Historical agent to enhance acetylcholine release at NMJ; limited efficacy; NOT standard of care; may provide modest improvement in chronic phase | 15-35 mg/kg :: PO :: :: 15-35 mg/kg/day divided TID-QID; start low and titrate; limited evidence for benefit | Bone marrow suppression, renal impairment | CBC, BMP weekly; bone marrow toxicity (aplastic anemia reported) | - | EXT | EXT | EXT |
 | 4-Aminopyridine (dalfampridine) | PO | Potassium channel blocker to enhance neuromuscular transmission; off-label, limited evidence; may improve strength in recovery phase | 10 mg :: PO :: :: 10 mg PO BID (extended-release); off-label use | Seizure history (lowers threshold), renal impairment (CrCl <50) | Seizures; renal function | - | EXT | EXT | - |
-| Tracheostomy | Surgical | Prolonged mechanical ventilation (>14 days expected — common in botulism) | N/A :: Surgical :: :: Perform when ventilation anticipated >14 days; improves patient comfort, oral hygiene, weaning potential | Coagulopathy (correct first) | Stoma site; decannulation readiness in recovery | - | ROUTINE | - | ROUTINE |
-| Percutaneous gastrostomy (PEG) | Surgical | Prolonged inability to swallow safely; enteral nutrition access | N/A :: Surgical :: :: Place when dysphagia expected to persist >2-3 weeks | Coagulopathy, abdominal pathology | Tube site; feeding tolerance | - | ROUTINE | - | ROUTINE |
+| Tracheostomy (CPT 31600) | Surgical | Prolonged mechanical ventilation (>14 days expected — common in botulism) | N/A :: Surgical :: :: Perform when ventilation anticipated >14 days; improves patient comfort, oral hygiene, weaning potential | Coagulopathy (correct first) | Stoma site; decannulation readiness in recovery | - | ROUTINE | - | ROUTINE |
+| Percutaneous gastrostomy (PEG) (CPT 43246) | Surgical | Prolonged inability to swallow safely; enteral nutrition access | N/A :: Surgical :: :: Place when dysphagia expected to persist >2-3 weeks | Coagulopathy, abdominal pathology | Tube site; feeding tolerance | - | ROUTINE | - | ROUTINE |
 
 ### 3D. Recovery/Rehabilitation Therapies
 
@@ -385,6 +385,12 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.2 (February 2, 2026)**
+- Citation verification: 11 unique PMIDs reviewed; all existing PubMed links retained pending physician verification (web access unavailable during verification session)
+- CPT enrichment: Added CPT codes to 12 items (Tensilon test 95857, HBAT infusion 96365/96366, BabyBIG infusion 96365/96366, intubation 31500, metronidazole IV 96365, penicillin G IV 96365, IV fluids 96360/96361, atropine IV push 96374, glycopyrrolate IV push 96374, metoclopramide IV push 96374, ondansetron IV push 96374, lorazepam IV push 96374, tracheostomy 31600, PEG 43246)
+- Expanded CPT CODES header line with all codes referenced inline (added 30+ codes previously missing from header)
+- No clinical content changes
 
 **v1.1 (February 2, 2026)**
 - Validated per checker pipeline (v1.1)

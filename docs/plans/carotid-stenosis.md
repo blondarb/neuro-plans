@@ -273,6 +273,12 @@ SECTION B: REFERENCE (Expand as Needed)
 
 ## CHANGE LOG
 
+**v1.2 (February 2, 2026)**
+- Citation verification: 9 of 20 PubMed links had incorrect PMIDs; all 9 corrected via NCBI E-utilities API verification
+- Corrected PMIDs: Barnett NASCET 50-69% (9823822->9811916), ECST (9624043->9593407), ACAS (7869052->7723155), Brott CREST 10-year (26886418->26890472), Rothwell timing (15016487->15043958), Amarenco TST (31738504->31738483), Ricotta SVS (21839933->21889701), Markus ACES (20494734->20554250), Altaf intraplaque hemorrhage (17138943->17379827)
+- 11 of 20 PubMed links verified correct: NASCET 1991, Halliday ACST 2004, Brott CREST 2010, Wang CHANCE 2013, Johnston POINT 2018, Amarenco SPARCL 2006, AHA/ASA 2021, Brott ASA/ACCF/AHA 2011, Yadav SAPPHIRE 2004, Estruch PREDIMED 2018, Sabatine FOURIER 2017
+- CPT enrichment: added infusion/push CPT codes (96365, 96366, 96374) to 5 IV medications in Section 3D (nicardipine, labetalol, phenylephrine, atropine, heparin)
+
 **v1.1 (February 2, 2026)**
 - Validated per checker pipeline (score: 54/60, 90%)
 - Fixed structured dosing format across all treatment sections (3A, 3B, 3C, 3D) — first field now contains starting dose only, removed redundant plain-text doses before `::` delimiter

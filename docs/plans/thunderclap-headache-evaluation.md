@@ -1,7 +1,7 @@
 ---
 title: "Thunderclap Headache Evaluation"
 description: "Clinical decision support for emergency evaluation of thunderclap headache"
-version: "1.2"
+version: "1.3"
 setting: "ED, HOSP, OPD, ICU"
 status: approved
 tags:
@@ -14,7 +14,7 @@ tags:
 
 # Thunderclap Headache Evaluation
 
-**VERSION:** 1.2
+**VERSION:** 1.3
 **CREATED:** February 2, 2026
 **REVISED:** February 2, 2026
 **STATUS:** Approved
@@ -25,7 +25,7 @@ tags:
 
 **ICD-10:** R51.9 (Headache, unspecified), G44.1 (Vascular headache, not elsewhere classified), I60.9 (Nontraumatic subarachnoid hemorrhage, unspecified), I67.6 (Nonpyogenic thrombosis of intracranial venous system — cerebral venous thrombosis), I67.841 (Reversible cerebrovascular vasoconstriction syndrome), I67.0 (Dissection of cerebral arteries, non-ruptured), E23.6 (Other disorders of pituitary gland — pituitary apoplexy), I63.9 (Cerebral infarction, unspecified)
 
-**CPT CODES:** 70450 (CT head without contrast), 70460 (CT head with contrast), 70496 (CTA head), 70498 (CTA neck), 70547 (MRA head without contrast), 70549 (MRA head with/without contrast), 70553 (MRI brain with/without contrast), 70544 (MRA head without contrast), 70557 (MRI brain functional), 62270 (lumbar puncture), 89050 (CSF cell count), 89051 (CSF differential), 89060 (CSF crystal/xanthochromia), 85025 (CBC), 80053 (CMP), 85610 (PT/INR), 85730 (aPTT), 84484 (troponin), 93000 (ECG), 93886 (transcranial Doppler), 36224 (cerebral angiography/DSA), 85306 (antithrombin III), 81240 (Factor V Leiden), 85303 (protein C), 85301 (protein S), 85613 (lupus anticoagulant), 86147 (anticardiolipin antibody), 86146 (anti-beta-2 glycoprotein), 83003 (growth hormone), 84305 (IGF-1), 83002 (LH), 83001 (FSH), 84439 (free T4), 82024 (ACTH), 82382 (urine catecholamines), 83835 (urine metanephrines), 72141 (MRI cervical spine), 72146 (MRI thoracic spine), 72148 (MRI lumbar spine), 75705 (spinal angiography)
+**CPT CODES:** 70450 (CT head without contrast), 70460 (CT head with contrast), 70496 (CTA head), 70498 (CTA neck), 70547 (MRA head without contrast), 70549 (MRA head with/without contrast), 70553 (MRI brain with/without contrast), 70544 (MRA head without contrast), 70557 (MRI brain functional), 62270 (lumbar puncture), 89050 (CSF cell count), 89051 (CSF differential), 89060 (CSF crystal/xanthochromia), 85025 (CBC), 80053 (CMP), 85610 (PT/INR), 85730 (aPTT), 84484 (troponin), 93000 (ECG), 93886 (transcranial Doppler), 36224 (cerebral angiography/DSA), 85306 (antithrombin III), 81240 (Factor V Leiden), 85303 (protein C), 85301 (protein S), 85613 (lupus anticoagulant), 86147 (anticardiolipin antibody), 86146 (anti-beta-2 glycoprotein), 83003 (growth hormone), 84305 (IGF-1), 83002 (LH), 83001 (FSH), 84439 (free T4), 82024 (ACTH), 82382 (urine catecholamines), 83835 (urine metanephrines), 72141 (MRI cervical spine), 72146 (MRI thoracic spine), 72148 (MRI lumbar spine), 75705 (spinal angiography), 85652 (ESR), 86140 (CRP), 82947 (blood glucose), 84703 (pregnancy test/beta-hCG), 86900 (type and screen), 85379 (D-dimer), 85384 (fibrinogen), 83605 (lactate), 87040 (blood cultures), 84145 (procalcitonin), 84443 (TSH), 82533 (AM cortisol), 84146 (prolactin), 80307 (toxicology screen), 80061 (lipid panel), 83735 (magnesium), 71046 (chest X-ray), 93306 (echocardiogram/TTE), 0042T (CT perfusion), 87070 (Gram stain), 96365 (IV infusion initial hour), 96374 (IV push), 96360 (IV fluids)
 
 **SYNONYMS:** Thunderclap headache, thunderclap headache evaluation, sudden severe headache, worst headache of life, sentinel headache, explosive headache, acute severe headache, hyperacute headache, crash headache, sudden-onset severe headache, peracute headache, TCH, thunderclap cephalgia
 
@@ -192,11 +192,11 @@ SECTION A: ACTION ITEMS
 | Nimodipine (if RCVS confirmed) | PO | RCVS — empiric calcium channel blocker; off-label but widely used | 60 mg :: PO :: q4h :: 60 mg PO q4h; duration 4-12 weeks until vasoconstriction resolves on follow-up imaging | Hypotension | BP with each dose | - | STAT | ROUTINE | STAT |
 | Heparin IV (if CVT confirmed) (CPT 96365) | IV | Cerebral venous thrombosis — anticoagulation is standard even with hemorrhagic venous infarct | 80 units/kg :: IV :: bolus :: 80 units/kg IV bolus; then 18 units/kg/h infusion. Target aPTT 1.5-2.5x control. Transition to LMWH or warfarin | Active major hemorrhage (ICH from CVT is NOT a contraindication per guidelines); HIT | aPTT q6h until therapeutic; platelets q3 days; neuro checks | STAT | STAT | - | STAT |
 | Aspirin (if cervical artery dissection confirmed) | PO | Cervical artery dissection — antiplatelet therapy (equivalent to anticoagulation per CADISS trial) | 325 mg :: PO :: daily :: Aspirin 325 mg PO daily x 3-6 months. Preferred in patients with large infarct or hemorrhagic transformation | Active hemorrhagic stroke; allergy | Neuro checks; GI symptoms | STAT | STAT | ROUTINE | STAT |
-| Heparin then warfarin (if cervical artery dissection confirmed — anticoagulation option) | IV/PO | Cervical artery dissection — anticoagulation alternative (equivalent to antiplatelet per CADISS trial) | 80 units/kg :: IV :: bolus :: 80 units/kg IV bolus; then 18 units/kg/h infusion; transition to warfarin (INR 2-3) x 3-6 months. Preferred if recurrent ischemic events on antiplatelet | Active hemorrhagic stroke; massive infarct; HIT | INR; aPTT q6h until therapeutic; neuro checks | STAT | STAT | ROUTINE | STAT |
-| Hydrocortisone (if pituitary apoplexy with hemodynamic instability) | IV | Acute adrenal crisis in pituitary apoplexy | 100 mg :: IV :: bolus :: 100 mg IV bolus; then 50 mg IV q8h until endocrine evaluation complete. Life-saving — do not wait for cortisol results if clinical suspicion high | None in acute crisis | BP; glucose; electrolytes; cortisol levels | STAT | STAT | - | STAT |
-| Ceftriaxone (if bacterial meningitis suspected) | IV | Febrile thunderclap headache with meningeal signs — empiric gram-negative and pneumococcal coverage | 2 g :: IV :: q12h :: Ceftriaxone 2 g IV q12h. Do NOT delay antibiotics for LP or imaging | Cephalosporin allergy (use meropenem or chloramphenicol) | CSF culture results; clinical response; renal function | STAT | STAT | - | STAT |
-| Vancomycin (if bacterial meningitis suspected) | IV | Empiric MRSA and resistant pneumococcal coverage in meningitis | 15-20 mg/kg :: IV :: q8-12h :: 15-20 mg/kg IV q8-12h; target trough 15-20 mcg/mL. Administer with ceftriaxone for empiric coverage | Vancomycin allergy (use linezolid) | Vancomycin trough; renal function; ototoxicity | STAT | STAT | - | STAT |
-| Dexamethasone (if bacterial meningitis suspected) | IV | Reduce inflammation and improve outcomes in bacterial meningitis (especially pneumococcal) | 0.15 mg/kg :: IV :: q6h :: 0.15 mg/kg IV q6h x 4 days. Give 15-20 min before or with first antibiotic dose | GI bleeding (relative); immunocompromised (relative) | Blood glucose; GI symptoms | STAT | STAT | - | STAT |
+| Heparin then warfarin (if cervical artery dissection confirmed — anticoagulation option) (CPT 96365) | IV/PO | Cervical artery dissection — anticoagulation alternative (equivalent to antiplatelet per CADISS trial) | 80 units/kg :: IV :: bolus :: 80 units/kg IV bolus; then 18 units/kg/h infusion; transition to warfarin (INR 2-3) x 3-6 months. Preferred if recurrent ischemic events on antiplatelet | Active hemorrhagic stroke; massive infarct; HIT | INR; aPTT q6h until therapeutic; neuro checks | STAT | STAT | ROUTINE | STAT |
+| Hydrocortisone (if pituitary apoplexy with hemodynamic instability) (CPT 96374) | IV | Acute adrenal crisis in pituitary apoplexy | 100 mg :: IV :: bolus :: 100 mg IV bolus; then 50 mg IV q8h until endocrine evaluation complete. Life-saving — do not wait for cortisol results if clinical suspicion high | None in acute crisis | BP; glucose; electrolytes; cortisol levels | STAT | STAT | - | STAT |
+| Ceftriaxone (if bacterial meningitis suspected) (CPT 96374) | IV | Febrile thunderclap headache with meningeal signs — empiric gram-negative and pneumococcal coverage | 2 g :: IV :: q12h :: Ceftriaxone 2 g IV q12h. Do NOT delay antibiotics for LP or imaging | Cephalosporin allergy (use meropenem or chloramphenicol) | CSF culture results; clinical response; renal function | STAT | STAT | - | STAT |
+| Vancomycin (if bacterial meningitis suspected) (CPT 96365) | IV | Empiric MRSA and resistant pneumococcal coverage in meningitis | 15-20 mg/kg :: IV :: q8-12h :: 15-20 mg/kg IV q8-12h; target trough 15-20 mcg/mL. Administer with ceftriaxone for empiric coverage | Vancomycin allergy (use linezolid) | Vancomycin trough; renal function; ototoxicity | STAT | STAT | - | STAT |
+| Dexamethasone (if bacterial meningitis suspected) (CPT 96374) | IV | Reduce inflammation and improve outcomes in bacterial meningitis (especially pneumococcal) | 0.15 mg/kg :: IV :: q6h :: 0.15 mg/kg IV q6h x 4 days. Give 15-20 min before or with first antibiotic dose | GI bleeding (relative); immunocompromised (relative) | Blood glucose; GI symptoms | STAT | STAT | - | STAT |
 | Remove vasoconstrictor triggers (if RCVS suspected) | - | Immediately discontinue all potential triggers: triptans, ergotamines, SSRIs/SNRIs, cannabis, cocaine, amphetamines, nasal decongestants, nicotine patches | - :: - :: immediate :: Discontinue all vasoconstrictor agents immediately upon suspicion of RCVS; document all discontinued medications | None | Document all discontinued medications; headache frequency decreases after trigger removal | STAT | STAT | ROUTINE | STAT |
 
 ### 3C. Headache-Specific Red Flag Management
@@ -204,7 +204,7 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Pneumatic compression devices (DVT prophylaxis) | External | All admitted thunderclap headache patients (immobilized during workup; many diagnoses carry VTE risk) | - :: External :: continuous :: Apply bilateral sequential compression devices on admission; maintain until patient is ambulatory | Acute DVT in affected limb | Skin checks; device compliance | STAT | STAT | - | STAT |
-| Pantoprazole (stress ulcer prophylaxis) | IV | ICU admission or steroid use | 40 mg :: IV :: daily :: 40 mg IV/PO daily | C. diff risk (long-term) | GI symptoms | - | ROUTINE | - | ROUTINE |
+| Pantoprazole (stress ulcer prophylaxis) (CPT 96374) | IV | ICU admission or steroid use | 40 mg :: IV :: daily :: 40 mg IV/PO daily | C. diff risk (long-term) | GI symptoms | - | ROUTINE | - | ROUTINE |
 | Docusate (stool softener) | PO | Avoid Valsalva/straining (may increase ICP; re-bleed risk in SAH) | 100 mg :: PO :: BID :: 100 mg PO BID | Bowel obstruction | Bowel movements | - | ROUTINE | - | ROUTINE |
 
 ---
@@ -308,17 +308,17 @@ SECTION B: REFERENCE (Expand as Needed)
 |----------------|----------------|--------|
 | CT head sensitivity ~98-100% within 6h for SAH | Class I, Level A | [Perry et al. (BMJ 2011)](https://pubmed.ncbi.nlm.nih.gov/21768192/) — Prospective cohort; 3132 patients; sensitivity 100% (95% CI 97-100%) for CT within 6h |
 | LP mandatory if CT negative but clinical suspicion for SAH persists | Class I, Level B | [AHA/ASA SAH Guidelines (Connolly et al. Stroke 2012)](https://pubmed.ncbi.nlm.nih.gov/22556195/) |
-| Xanthochromia by spectrophotometry is gold standard CSF test for SAH | Class I, Level B | [Edlow JA et al. (Stroke 2016; AHA scientific statement)](https://pubmed.ncbi.nlm.nih.gov/27217503/); sensitivity >95% at 12h-2 weeks |
-| CTA sensitivity 95-100% for aneurysms >3mm | Class I, Level A | [White PM et al. (Radiology 2003)](https://pubmed.ncbi.nlm.nih.gov/14500398/) — Meta-analysis of CTA for intracranial aneurysm detection; [PMID 16902176 (Stroke 2006)](https://pubmed.ncbi.nlm.nih.gov/16902176/) — **PHYSICIAN REVIEW: author name unverified; confirm correct article** |
-| Anticoagulation for CVT even with hemorrhagic infarct | Class I, Level A | [EFNS Guidelines (Ferro et al. Eur J Neurol 2017)](https://pubmed.ncbi.nlm.nih.gov/28128773/); [AHA/ASA CVT Guidelines (Saposnik et al. Stroke 2011)](https://pubmed.ncbi.nlm.nih.gov/21293023/) |
+| Xanthochromia by spectrophotometry is gold standard CSF test for SAH | Class I, Level B | [Dubosh NM, Bellolio MF, Rabinstein AA, Edlow JA (Stroke 2016)](https://pubmed.ncbi.nlm.nih.gov/26797666/); sensitivity >95% at 12h-2 weeks |
+| CTA sensitivity 95-100% for aneurysms >3mm | Class I, Level A | [White PM et al. (Radiology 2001)](https://pubmed.ncbi.nlm.nih.gov/11376263/) — Prospective blinded comparison of CTA and MRA for intracranial aneurysm detection; [White PM et al. (Radiology 2000)](https://pubmed.ncbi.nlm.nih.gov/11058629/) — Systematic review of noninvasive imaging for intracranial aneurysms |
+| Anticoagulation for CVT even with hemorrhagic infarct | Class I, Level A | [ESO Guidelines (Ferro et al. Eur J Neurol 2017)](https://pubmed.ncbi.nlm.nih.gov/28833980/); [AHA/ASA CVT Guidelines (Saposnik et al. Stroke 2011)](https://pubmed.ncbi.nlm.nih.gov/21293023/) |
 | Nimodipine 60 mg PO q4h x 21 days for SAH vasospasm prevention | Class I, Level A | [Pickard et al. (BMJ 1989)](https://pubmed.ncbi.nlm.nih.gov/2496789/) |
-| RCVS: calcium channel blockers (nimodipine/verapamil) for headache and vasoconstriction | Class IIa, Level C | [Ducros et al. (Brain 2007)](https://pubmed.ncbi.nlm.nih.gov/17468116/); [Singhal et al. (Neurology 2011)](https://pubmed.ncbi.nlm.nih.gov/21383328/) |
-| RCVS: vasoconstriction resolves within 12 weeks — follow-up imaging to confirm | Class I, Level B | [Calabrese et al. (Ann Intern Med 2007)](https://pubmed.ncbi.nlm.nih.gov/17210890/) |
-| Cervical artery dissection: antiplatelet vs anticoagulation equivalent | Class I, Level B | [CADISS trial (Markus et al. Lancet Neurol 2015)](https://pubmed.ncbi.nlm.nih.gov/25987284/) |
-| Pituitary apoplexy: emergent corticosteroid replacement is life-saving | Class I, Level C | [UK Pituitary Apoplexy Guidelines (Rajasekaran et al. Clin Endocrinol 2011)](https://pubmed.ncbi.nlm.nih.gov/20550536/) |
-| D-dimer sensitivity ~97% for CVT; negative D-dimer has high NPV | Class IIa, Level B | [Kosinski et al. (Stroke 2004)](https://pubmed.ncbi.nlm.nih.gov/15243148/) |
-| Ottawa SAH Rule: 100% sensitivity for ruling out SAH in ED (validated clinical decision rule) | Class IIa, Level B | [Perry et al. (JAMA 2013)](https://pubmed.ncbi.nlm.nih.gov/24065012/) |
-| Recurrent thunderclap headaches over days suggest RCVS over SAH | Class IIa, Level C | [Ducros et al. (Brain 2007)](https://pubmed.ncbi.nlm.nih.gov/17468116/) |
+| RCVS: calcium channel blockers (nimodipine/verapamil) for headache and vasoconstriction | Class IIa, Level C | [Ducros et al. (Brain 2007)](https://pubmed.ncbi.nlm.nih.gov/18025032/); [Singhal et al. (Arch Neurol 2011)](https://pubmed.ncbi.nlm.nih.gov/21482916/) |
+| RCVS: vasoconstriction resolves within 12 weeks — follow-up imaging to confirm | Class I, Level B | [Calabrese et al. (Ann Intern Med 2007)](https://pubmed.ncbi.nlm.nih.gov/17200220/) |
+| Cervical artery dissection: antiplatelet vs anticoagulation equivalent | Class I, Level B | [CADISS trial (Markus et al. Lancet Neurol 2015)](https://pubmed.ncbi.nlm.nih.gov/25684164/) |
+| Pituitary apoplexy: emergent corticosteroid replacement is life-saving | Class I, Level C | [UK Pituitary Apoplexy Guidelines (Rajasekaran et al. Clin Endocrinol 2011)](https://pubmed.ncbi.nlm.nih.gov/21044119/) |
+| D-dimer sensitivity ~97% for CVT; negative D-dimer has high NPV | Class IIa, Level B | [Dentali et al. (J Thromb Haemost 2012)](https://pubmed.ncbi.nlm.nih.gov/22257124/) |
+| Ottawa SAH Rule: 100% sensitivity for ruling out SAH in ED (validated clinical decision rule) | Class IIa, Level B | [Perry et al. (JAMA 2013)](https://pubmed.ncbi.nlm.nih.gov/24065011/) |
+| Recurrent thunderclap headaches over days suggest RCVS over SAH | Class IIa, Level C | [Ducros et al. (Brain 2007)](https://pubmed.ncbi.nlm.nih.gov/18025032/) |
 | Primary thunderclap headache is a diagnosis of exclusion only | Class I, Level C | [ICHD-3 (Headache Classification Committee, Cephalalgia 2018)](https://pubmed.ncbi.nlm.nih.gov/29368949/) |
 | SBP <160 until aneurysm secured in SAH | Class I, Level B | [AHA/ASA SAH Guidelines (Connolly et al. Stroke 2012)](https://pubmed.ncbi.nlm.nih.gov/22556195/) |
 | Early aneurysm securing (<24h) improves outcomes | Class I, Level B | [AHA/ASA SAH Guidelines 2012](https://pubmed.ncbi.nlm.nih.gov/22556195/); [de Gans et al. (Neurosurgery 2002)](https://pubmed.ncbi.nlm.nih.gov/11844269/) |
@@ -326,6 +326,22 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.3 (February 2, 2026) — Full Citation Verification via PubMed API + CPT Enrichment (Phase 2)**
+- **Citation Verification (PubMed API):** Verified all 17 unique PMIDs against NCBI E-utilities API. Found 11 incorrect PMIDs; corrected 10, replaced 1 hallucinated citation.
+- **PMID Fix:** Edlow SAH Stroke 2016 — PMID 27217503 was wrong (Henninger, atrial fibrillation). Corrected to Dubosh NM et al. Stroke 2016, PMID 26797666 (Edlow is senior author)
+- **PMID Fix:** White PM Radiology — PMID 14500398 was wrong (Letsch, bone marrow/melanoma). Replaced with two correct White PM references: PMID 11376263 (Radiology 2001, prospective blinded comparison) and PMID 11058629 (Radiology 2000, systematic review)
+- **PMID Fix:** CTA Stroke 2006 — Removed incorrect PMID 16902176 (Cremonesi, carotid stenting); replaced with second White PM reference
+- **PMID Fix:** Ferro CVT guidelines — PMID 28128773 was wrong (Yao, hip/knee). Corrected to PMID 28833980 (Ferro et al. ESO guideline, Eur J Neurol 2017). Changed label from "EFNS" to "ESO"
+- **PMID Fix:** Ducros Brain 2007 RCVS — PMID 17468116 was wrong (Kronenbuerger, eyeblink conditioning). Corrected to PMID 18025032
+- **PMID Fix:** Singhal RCVS — PMID 21383328 was wrong (Kwok, atrial fibrillation/dementia). Corrected to PMID 21482916 (Singhal et al. Arch Neurol 2011). Corrected journal name from "Neurology" to "Arch Neurol"
+- **PMID Fix:** Calabrese RCVS Ann Intern Med 2007 — PMID 17210890 was wrong (Kroos, Pompe disease). Corrected to PMID 17200220
+- **PMID Fix:** CADISS trial Markus Lancet Neurol 2015 — PMID 25987284 was wrong (Ducros, CSF pressure). Corrected to PMID 25684164
+- **PMID Fix:** Rajasekaran pituitary apoplexy Clin Endocrinol 2011 — PMID 20550536 was wrong (Geer, Cushing's MRI). Corrected to PMID 21044119
+- **Citation Replacement:** "Kosinski et al. (Stroke 2004)" could not be verified (no matching article found in PubMed). Replaced with Dentali et al. (J Thromb Haemost 2012), PMID 22257124 — systematic review and meta-analysis of D-dimer in CVT diagnosis
+- **PMID Fix:** Perry Ottawa SAH Rule JAMA 2013 — PMID 24065012 was off by one (Berry, osteoporotic fracture). Corrected to PMID 24065011
+- **CPT Enrichment (Phase 2):** Added CPT codes to Section 3A-3C treatment infusion/push rows; added CPT codes to LP section CSF studies
+- Updated version to 1.3
 
 **v1.2 (February 2, 2026) — Citation Verification & CPT Enrichment**
 - **Citation Verification:** Verified 16 of 17 PubMed citations; 15 confirmed correct, 1 flagged for physician review (PMID 16902176 — author name unverified)

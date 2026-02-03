@@ -1,7 +1,7 @@
 ---
 title: "Paresthesia / Numbness / Tingling"
 description: "Clinical decision support for evaluation of undifferentiated paresthesia, numbness, and tingling"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: approved
 tags:
@@ -17,7 +17,7 @@ tags:
 
 # Paresthesia / Numbness / Tingling
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** February 2, 2026
 **REVISED:** February 2, 2026
 **STATUS:** Approved
@@ -28,7 +28,7 @@ tags:
 
 **ICD-10:** R20.2 (Paresthesia of skin); R20.0 (Anesthesia of skin); R20.1 (Hypoesthesia of skin); R20.8 (Other disturbances of skin sensation); R20.9 (Unspecified disturbances of skin sensation)
 
-**CPT CODES:** 95907-95913 (nerve conduction studies, NCS), 95886 (EMG, each extremity), 95885 (EMG, limited), 70553 (MRI brain with/without contrast), 72141 (MRI cervical spine without contrast), 72156 (MRI cervical spine with/without contrast), 72148 (MRI lumbar spine without contrast), 72158 (MRI lumbar spine with/without contrast), 72146 (MRI thoracic spine without contrast), 85025 (CBC with differential), 80053 (CMP), 83036 (HbA1c), 82607 (vitamin B12), 84443 (TSH), 86235 (ANA), 85652 (ESR), 86140 (CRP), 89240 (QSART), 95923 (autonomic function testing), 11104 (skin punch biopsy for IENFD)
+**CPT CODES:** 95907-95913 (nerve conduction studies, NCS), 95886 (EMG, each extremity), 95885 (EMG, limited), 70553 (MRI brain with/without contrast), 70450 (CT head without contrast), 70496/70498 (CTA head/neck), 72156 (MRI cervical spine with/without contrast), 72157 (MRI thoracic spine with/without contrast), 72158 (MRI lumbar spine with/without contrast), 85025 (CBC with differential), 80053 (CMP), 82947 (fasting glucose), 83036 (HbA1c), 82607 (vitamin B12), 83921 (MMA), 82746 (folate), 84443 (TSH), 86235 (ANA/Anti-SSA/SSB), 85652 (ESR), 86140 (CRP), 82330 (ionized calcium), 83735 (magnesium), 84100 (phosphorus), 82951 (OGTT), 86334 (SPEP), 83883 (free light chains), 84207 (vitamin B6), 84446 (vitamin E), 86431 (rheumatoid factor), 86618 (Lyme serology), 82164 (ACE level), 86255 (antibody testing), 82784 (cryoglobulins), 86200 (ANCA), 86160/86161 (complement C3/C4), 89240 (QSART), 95923 (autonomic function testing), 11104 (skin punch biopsy for IENFD), 62270 (lumbar puncture), 96365/96366 (IV infusion), 36514 (plasmapheresis)
 
 **SYNONYMS:** Paresthesia, numbness, tingling, pins and needles, sensory loss, hypoesthesia, dysesthesia, numbness and tingling, acroparesthesia, prickling sensation, altered sensation, sensory disturbance, neuropathic sensory symptoms, loss of feeling, dead feeling in extremities
 
@@ -66,23 +66,23 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Oral glucose tolerance test (2-hour) | - | ROUTINE | ROUTINE | - | Detects impaired glucose tolerance missed by FBG/HbA1c; high yield in idiopathic neuropathy (34-62% have abnormal OGTT) | <140 mg/dL at 2h |
+| Oral glucose tolerance test (2-hour) (CPT 82951) | - | ROUTINE | ROUTINE | - | Detects impaired glucose tolerance missed by FBG/HbA1c; high yield in idiopathic neuropathy (34-62% have abnormal OGTT) | <140 mg/dL at 2h |
 | Serum protein electrophoresis (SPEP) with immunofixation (CPT 86334) | - | ROUTINE | ROUTINE | - | Monoclonal gammopathy (MGUS, myeloma, amyloidosis) - particularly if sensory-predominant neuropathy | No M-spike |
-| Free light chains (kappa/lambda) | - | ROUTINE | ROUTINE | - | AL amyloidosis, light chain deposition disease | Normal ratio (0.26-1.65) |
+| Free light chains (kappa/lambda) (CPT 83883) | - | ROUTINE | ROUTINE | - | AL amyloidosis, light chain deposition disease | Normal ratio (0.26-1.65) |
 | Vitamin B1 (thiamine) (CPT 84425) | - | ROUTINE | ROUTINE | ROUTINE | Alcoholism, malnutrition, bariatric surgery | Normal |
-| Vitamin B6 (pyridoxine) | - | ROUTINE | ROUTINE | - | Deficiency OR toxicity (>200 mg/day) both cause neuropathy; ask about supplements | Normal (5-50 ng/mL) |
-| Vitamin E | - | ROUTINE | ROUTINE | - | Malabsorption syndromes, cholestasis; causes large fiber sensory neuropathy and ataxia | Normal |
+| Vitamin B6 (pyridoxine) (CPT 84207) | - | ROUTINE | ROUTINE | - | Deficiency OR toxicity (>200 mg/day) both cause neuropathy; ask about supplements | Normal (5-50 ng/mL) |
+| Vitamin E (CPT 84446) | - | ROUTINE | ROUTINE | - | Malabsorption syndromes, cholestasis; causes large fiber sensory neuropathy and ataxia | Normal |
 | Copper (CPT 82390) | - | ROUTINE | ROUTINE | - | Copper deficiency (zinc excess, bariatric surgery); myeloneuropathy mimics B12 deficiency | Normal |
 | Zinc (CPT 84630) | - | ROUTINE | ROUTINE | - | Zinc excess suppresses copper absorption | Normal |
 | HIV antibody (CPT 87389) | - | ROUTINE | ROUTINE | - | HIV-associated distal sensory polyneuropathy; antiretroviral neurotoxicity | Negative |
 | Hepatitis B surface antigen/antibody (CPT 80074) | - | ROUTINE | ROUTINE | - | Hepatitis B-associated PAN, cryoglobulinemia | Negative |
 | Hepatitis C antibody (CPT 80074) | - | ROUTINE | ROUTINE | - | HCV-associated cryoglobulinemia, vasculitic neuropathy | Negative |
 | ANA (CPT 86235) | - | ROUTINE | ROUTINE | - | Connective tissue disease screen (lupus, scleroderma, Sjogren) | Negative or low titer |
-| Anti-SSA/SSB (Ro/La) | - | ROUTINE | ROUTINE | - | Sjogren syndrome - common cause of small fiber neuropathy and sensory ganglionopathy | Negative |
-| Rheumatoid factor | - | ROUTINE | ROUTINE | - | Rheumatoid vasculitis | Negative |
+| Anti-SSA/SSB (Ro/La) (CPT 86235) | - | ROUTINE | ROUTINE | - | Sjogren syndrome - common cause of small fiber neuropathy and sensory ganglionopathy | Negative |
+| Rheumatoid factor (CPT 86431) | - | ROUTINE | ROUTINE | - | Rheumatoid vasculitis | Negative |
 | RPR/VDRL (CPT 86592) | - | ROUTINE | ROUTINE | - | Syphilitic neuropathy (tabes dorsalis) | Negative |
-| Lyme serology (endemic areas) | - | ROUTINE | ROUTINE | - | Lyme neuroborreliosis - radiculoneuropathy, cranial neuropathy | Negative |
-| ACE level | - | ROUTINE | ROUTINE | - | Sarcoidosis - can cause mononeuropathy multiplex or small fiber neuropathy | Normal |
+| Lyme serology (endemic areas) (CPT 86618) | - | ROUTINE | ROUTINE | - | Lyme neuroborreliosis - radiculoneuropathy, cranial neuropathy | Negative |
+| ACE level (CPT 82164) | - | ROUTINE | ROUTINE | - | Sarcoidosis - can cause mononeuropathy multiplex or small fiber neuropathy | Normal |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
@@ -91,15 +91,15 @@ SECTION A: ACTION ITEMS
 | Anti-ganglioside antibodies (GM1, GD1a, GD1b, GQ1b) (CPT 86255) | - | EXT | EXT | EXT | If acute onset or motor-predominant (GBS variants); GQ1b for Miller Fisher syndrome | Negative |
 | Anti-MAG antibody (CPT 86255) | - | EXT | EXT | - | IgM paraproteinemic neuropathy; distal sensory-predominant with tremor and ataxia | Negative |
 | Paraneoplastic panel (anti-Hu, CV2, amphiphysin) (CPT 86255) | - | EXT | EXT | - | Subacute sensory neuronopathy/ganglionopathy; weight loss, smoking history, non-length-dependent pattern | Negative |
-| Cryoglobulins | - | EXT | EXT | - | Hepatitis C, autoimmune-associated vasculitic neuropathy | Negative |
-| Anti-CASPR2, Anti-LGI1 | - | EXT | EXT | EXT | Neuromyotonia, painful neuropathy, Morvan syndrome; cramps with sensory symptoms | Negative |
+| Cryoglobulins (CPT 82784) | - | EXT | EXT | - | Hepatitis C, autoimmune-associated vasculitic neuropathy | Negative |
+| Anti-CASPR2, Anti-LGI1 (CPT 86255) | - | EXT | EXT | EXT | Neuromyotonia, painful neuropathy, Morvan syndrome; cramps with sensory symptoms | Negative |
 | Heavy metal panel (lead, arsenic, thallium, mercury) (CPT 83018, 83015, 83825) | - | EXT | EXT | - | Occupational/environmental exposure; arsenic and thallium cause painful neuropathy | Normal |
-| Genetic testing (CMT panel, TTR gene) | - | - | EXT | - | Hereditary neuropathy if family history, pes cavus, slowly progressive from youth; TTR for familial amyloidosis | No pathogenic variant |
+| Genetic testing (CMT panel, TTR gene) (CPT 81479) | - | - | EXT | - | Hereditary neuropathy if family history, pes cavus, slowly progressive from youth; TTR for familial amyloidosis | No pathogenic variant |
 | Skin punch biopsy for IENFD (CPT 11104) | - | - | EXT | - | Small fiber neuropathy confirmation when NCS normal but symptoms persistent | Normal IENFD (>8.8 fibers/mm at distal leg; varies by site/age/sex) |
-| Fat pad biopsy (Congo red staining) | - | EXT | EXT | - | Amyloidosis screening if paraprotein present or autonomic features | No amyloid deposits |
+| Fat pad biopsy (Congo red staining) (CPT 88313) | - | EXT | EXT | - | Amyloidosis screening if paraprotein present or autonomic features | No amyloid deposits |
 | 24-hour urine protein electrophoresis (UPEP) (CPT 86335) | - | ROUTINE | ROUTINE | - | Light chain disease, amyloidosis | No monoclonal protein |
-| Complement levels (C3, C4) | - | EXT | EXT | - | Vasculitis evaluation, cryoglobulinemia | Normal |
-| ANCA (p-ANCA, c-ANCA) | - | EXT | EXT | - | ANCA-associated vasculitis causing mononeuropathy multiplex | Negative |
+| Complement levels (C3, C4) (CPT 86160, 86161) | - | EXT | EXT | - | Vasculitis evaluation, cryoglobulinemia | Normal |
+| ANCA (p-ANCA, c-ANCA) (CPT 86200) | - | EXT | EXT | - | ANCA-associated vasculitis causing mononeuropathy multiplex | Negative |
 
 ═══════════════════════════════════════════════════════════════
 
@@ -121,23 +121,25 @@ SECTION A: ACTION ITEMS
 | MRI cervical spine with and without contrast (CPT 72156) | URGENT | ROUTINE | ROUTINE | URGENT | If myelopathy suspected (bilateral sensory level, UMN signs, bowel/bladder), or cervical radiculopathy | No cord compression, syrinx, demyelination, or enhancement | GFR <30, pacemaker, gadolinium allergy |
 | MRI thoracic spine with and without contrast (CPT 72157) | URGENT | ROUTINE | ROUTINE | URGENT | If thoracic sensory level identified on exam; bilateral lower extremity numbness | No cord lesion, compression, or transverse myelitis | GFR <30, pacemaker, gadolinium allergy |
 | MRI lumbar spine with and without contrast (CPT 72158) | URGENT | ROUTINE | ROUTINE | URGENT | Lumbosacral radiculopathy, cauda equina syndrome, lumbosacral plexopathy | No nerve root compression, stenosis, or mass | GFR <30, pacemaker, gadolinium allergy |
-| MRI brachial plexus with contrast | - | ROUTINE | ROUTINE | - | Brachial plexopathy, Parsonage-Turner syndrome; unilateral arm weakness with pain | No plexus enhancement, mass, or denervation | GFR <30, pacemaker, gadolinium allergy |
-| MRI lumbar plexus with contrast | - | ROUTINE | ROUTINE | - | Lumbosacral plexopathy; asymmetric proximal leg weakness and numbness | No plexus enhancement, mass | GFR <30, pacemaker, gadolinium allergy |
+| MRI brachial plexus with contrast (CPT 73221) | - | ROUTINE | ROUTINE | - | Brachial plexopathy, Parsonage-Turner syndrome; unilateral arm weakness with pain | No plexus enhancement, mass, or denervation | GFR <30, pacemaker, gadolinium allergy |
+| MRI lumbar plexus with contrast (CPT 72197) | - | ROUTINE | ROUTINE | - | Lumbosacral plexopathy; asymmetric proximal leg weakness and numbness | No plexus enhancement, mass | GFR <30, pacemaker, gadolinium allergy |
 | Autonomic function testing (QSART, tilt table, HRV) (CPT 89240, 95923) | - | - | ROUTINE | - | If autonomic symptoms (orthostasis, anhidrosis, GI dysmotility) accompany sensory symptoms | Normal sudomotor and cardiovagal function | None significant |
-| Quantitative sensory testing (QST) | - | - | EXT | - | Small fiber neuropathy evaluation when NCS normal | Normal thermal and vibratory thresholds | None significant |
-| Nerve ultrasound | - | EXT | ROUTINE | - | Entrapment neuropathy (carpal tunnel, cubital tunnel); CIDP (nerve enlargement) | Normal nerve caliber; no focal swelling at entrapment sites | None |
+| Quantitative sensory testing (QST) (CPT 0108T) | - | - | EXT | - | Small fiber neuropathy evaluation when NCS normal | Normal thermal and vibratory thresholds | None significant |
+| Nerve ultrasound (CPT 76882) | - | EXT | ROUTINE | - | Entrapment neuropathy (carpal tunnel, cubital tunnel); CIDP (nerve enlargement) | Normal nerve caliber; no focal swelling at entrapment sites | None |
 | Chest X-ray (CPT 71046) | URGENT | ROUTINE | ROUTINE | - | Lung cancer (paraneoplastic), sarcoidosis, Pancoast tumor (brachial plexopathy) | Normal | Pregnancy (relative) |
 
 ### 2C. Rare/Specialized
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MR neurography | - | EXT | EXT | - | Focal nerve pathology, plexopathy, peripheral nerve tumor | Normal nerve signal and caliber | Pacemaker, metallic implants |
+| MR neurography (CPT 76498) | - | EXT | EXT | - | Focal nerve pathology, plexopathy, peripheral nerve tumor | Normal nerve signal and caliber | Pacemaker, metallic implants |
 | PET-CT (CPT 78816) | - | EXT | EXT | - | Occult malignancy if paraneoplastic suspected, amyloidosis | No FDG-avid lesions | Pregnancy, uncontrolled diabetes |
-| CT chest/abdomen/pelvis | - | ROUTINE | ROUTINE | - | Occult malignancy if paraneoplastic panel positive or unexplained weight loss | No mass | Contrast allergy, renal impairment |
+| CT chest/abdomen/pelvis (CPT 74177) | - | ROUTINE | ROUTINE | - | Occult malignancy if paraneoplastic panel positive or unexplained weight loss | No mass | Contrast allergy, renal impairment |
 | Sural nerve biopsy (CPT 64795) | - | EXT | - | - | Vasculitic neuropathy, amyloidosis, CIDP variants; when non-invasive workup inconclusive | No vasculitis, amyloid deposits, or granulomas | Coagulopathy |
 
 ### LUMBAR PUNCTURE
+
+**CPT:** 62270 (diagnostic lumbar puncture)
 
 **Indication:** Suspected inflammatory/demyelinating neuropathy (GBS, CIDP), myelopathy of unclear etiology, leptomeningeal disease, infectious etiology, or polyradiculopathy
 
@@ -148,15 +150,15 @@ SECTION A: ACTION ITEMS
 | Study | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |-------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Opening pressure | URGENT | ROUTINE | ROUTINE | URGENT | Rule out elevated ICP | 10-20 cm H2O |
-| Cell count (tubes 1 and 4) | URGENT | ROUTINE | ROUTINE | URGENT | Inflammation, infection, leptomeningeal disease | WBC <5, RBC 0 |
+| Cell count (tubes 1 and 4) (CPT 89051) | URGENT | ROUTINE | ROUTINE | URGENT | Inflammation, infection, leptomeningeal disease | WBC <5, RBC 0 |
 | Protein (CPT 84157) | URGENT | ROUTINE | ROUTINE | URGENT | Albuminocytologic dissociation in GBS/CIDP; elevated in meningitis, myelitis | Normal 15-45 mg/dL; elevated in GBS/CIDP |
 | Glucose with serum glucose (CPT 82945) | URGENT | ROUTINE | ROUTINE | URGENT | Infection, carcinomatous meningitis | Normal (>60% serum) |
-| Gram stain and culture | URGENT | ROUTINE | ROUTINE | URGENT | Rule out infection | No organisms |
+| Gram stain and culture (CPT 87070, 87205) | URGENT | ROUTINE | ROUTINE | URGENT | Rule out infection | No organisms |
 | Cytology (CPT 88104) | - | ROUTINE | ROUTINE | - | Leptomeningeal carcinomatosis | Negative |
 | VDRL (CSF) (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis (tabes dorsalis) | Negative |
-| Oligoclonal bands and IgG index | - | ROUTINE | ROUTINE | - | Multiple sclerosis if CNS demyelination suspected | Negative; positive OCBs in 85-95% of MS |
-| Lyme PCR/antibody index | - | ROUTINE | ROUTINE | - | Endemic areas; polyradiculopathy | Negative |
-| ACE (CSF) | - | EXT | EXT | - | Neurosarcoidosis | Normal |
+| Oligoclonal bands and IgG index (CPT 83916, 82784) | - | ROUTINE | ROUTINE | - | Multiple sclerosis if CNS demyelination suspected | Negative; positive OCBs in 85-95% of MS |
+| Lyme PCR/antibody index (CPT 86618, 87539) | - | ROUTINE | ROUTINE | - | Endemic areas; polyradiculopathy | Negative |
+| ACE (CSF) (CPT 82164) | - | EXT | EXT | - | Neurosarcoidosis | Normal |
 
 **Special Handling:** Cytology requires rapid transport (<1 hour). Oligoclonal bands require paired serum sample.
 
@@ -173,7 +175,7 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | tPA (alteplase) | IV | Acute hemisensory deficit with confirmed acute ischemic stroke within treatment window | 0.9 mg/kg :: IV :: once :: 0.9 mg/kg IV (max 90 mg); 10% bolus over 1 min, remainder over 60 min | Active bleeding, recent surgery, INR >1.7, platelets <100K; see Acute Ischemic Stroke plan for full contraindications | BP q15min x 2h, then q30min x 6h, then q1h x 16h; neuro checks q15min; bleeding precautions | STAT | - | - | STAT |
-| Methylprednisolone IV (acute myelopathy/transverse myelitis) | IV | Acute myelopathy with sensory level and suspected inflammatory/demyelinating etiology | 1000 mg :: IV :: daily :: 1000 mg IV daily x 3-5 days | Active untreated infection, uncontrolled diabetes | Glucose monitoring Q6h; BP; GI prophylaxis; insomnia management | STAT | STAT | - | STAT |
+| Methylprednisolone IV (acute myelopathy/transverse myelitis) (CPT 96365, 96366) | IV | Acute myelopathy with sensory level and suspected inflammatory/demyelinating etiology | 1000 mg :: IV :: daily :: 1000 mg IV daily x 3-5 days | Active untreated infection, uncontrolled diabetes | Glucose monitoring Q6h; BP; GI prophylaxis; insomnia management | STAT | STAT | - | STAT |
 | Thiamine IV (if alcoholic or malnourished) | IV | Wernicke encephalopathy prophylaxis in malnourished patients with neuropathic symptoms | 500 mg :: IV :: TID :: 500 mg IV TID x 3 days, then 250 mg IV daily x 3-5 days, then oral | None significant | Anaphylaxis (rare) | STAT | STAT | - | STAT |
 | Vitamin B12 IM (if deficient) | IM | Documented B12 deficiency with neurological symptoms (do not wait for MMA result) | 1000 mcg :: IM :: daily :: 1000 mcg IM daily x 7 days, then weekly x 4 weeks, then monthly indefinitely | Cobalt allergy | Reticulocyte count at 1 week; B12 level at 1-2 months; neurological exam | URGENT | URGENT | ROUTINE | URGENT |
 | Calcium gluconate IV (symptomatic hypocalcemia) | IV | Perioral/acral paresthesia with documented hypocalcemia and tetany | 1-2 g :: IV :: over 10-20 min :: 1-2 g (10-20 mL of 10% solution) IV over 10-20 min; may repeat; follow with continuous infusion if persistent | Digoxin use (risk of fatal arrhythmia); hypercalcemia | Cardiac monitor during infusion; repeat calcium level q4-6h; ECG | STAT | STAT | - | STAT |
@@ -202,8 +204,8 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| IVIG | IV | GBS, CIDP, or other autoimmune neuropathy causing paresthesia/weakness | 2 g/kg :: IV :: over 2-5 days :: 2 g/kg divided over 2-5 days (induction); maintenance 0.4-1 g/kg every 2-4 weeks for CIDP | IgA deficiency (use IgA-depleted product); renal failure; thrombosis risk | Renal function, headache, thrombosis, infusion reactions | - | URGENT | ROUTINE | URGENT |
-| Plasma exchange (PLEX) | IV | GBS, CIDP (alternative to IVIG) | 1 plasma volume :: IV :: every other day :: 5-7 exchanges of 1 plasma volume each over 10-14 days | Hemodynamic instability, sepsis | BP, electrolytes, coagulation studies, fibrinogen | - | URGENT | - | URGENT |
+| IVIG (CPT 96365, 96366) | IV | GBS, CIDP, or other autoimmune neuropathy causing paresthesia/weakness | 2 g/kg :: IV :: over 2-5 days :: 2 g/kg divided over 2-5 days (induction); maintenance 0.4-1 g/kg every 2-4 weeks for CIDP | IgA deficiency (use IgA-depleted product); renal failure; thrombosis risk | Renal function, headache, thrombosis, infusion reactions | - | URGENT | ROUTINE | URGENT |
+| Plasma exchange (PLEX) (CPT 36514) | IV | GBS, CIDP (alternative to IVIG) | 1 plasma volume :: IV :: every other day :: 5-7 exchanges of 1 plasma volume each over 10-14 days | Hemodynamic instability, sepsis | BP, electrolytes, coagulation studies, fibrinogen | - | URGENT | - | URGENT |
 | Prednisone | PO | CIDP, vasculitic neuropathy, sarcoid neuropathy | 1 mg/kg :: PO :: daily :: 1 mg/kg/day (max 80 mg) x 4-6 weeks; taper over 3-6 months | Active untreated infection, uncontrolled diabetes, psychosis | Glucose, BP, mood, bone density with prolonged use; GI prophylaxis | - | ROUTINE | ROUTINE | - |
 | Ibuprofen | PO | Mild radicular pain, musculoskeletal pain contributing to symptoms | 400 mg :: PO :: q6-8h :: 400-600 mg q6-8h PRN; max 2400 mg/day; limit duration | GI bleeding, renal impairment, concurrent anticoagulation, cardiovascular disease | Renal function, GI symptoms | ROUTINE | ROUTINE | ROUTINE | - |
 | Oral corticosteroid taper (cervical/lumbar radiculopathy) | PO | Acute radiculopathy with significant pain and function limitation | 60 mg :: PO :: daily :: Methylprednisolone dose pack or prednisone 60 mg x 5 days, 40 mg x 5 days, 20 mg x 5 days (15-day taper) | Active infection, uncontrolled diabetes, GI bleed | Glucose; short course so bone density not needed | ROUTINE | ROUTINE | ROUTINE | - |
@@ -364,23 +366,35 @@ SECTION B: REFERENCE (Expand as Needed)
 | Systematic approach to evaluation of peripheral neuropathy | Practice Parameter | [England JD et al. Neurology 2009; AAN Practice Parameter](https://pubmed.ncbi.nlm.nih.gov/19056666/) |
 | Diabetes and prediabetes are most common cause of polyneuropathy in developed countries | Class I | [Dyck PJ et al. Neurology 1993](https://pubmed.ncbi.nlm.nih.gov/8469345/) |
 | OGTT detects IGT in 34-62% of idiopathic neuropathy patients | Class II, Level B | [Singleton JR et al. Diabetes Care 2001](https://pubmed.ncbi.nlm.nih.gov/11473085/) |
-| NCS/EMG for characterization of neuropathy (axonal vs demyelinating) | Class I, Level B | AAN Practice Parameter; [Cho SC et al. Phys Med Rehabil Clin N Am 2003](https://pubmed.ncbi.nlm.nih.gov/12510035/) |
+| NCS/EMG for characterization of neuropathy (axonal vs demyelinating) | Class I, Level B | AAN Practice Parameter; [Cho SC et al. Muscle Nerve 2004](https://pubmed.ncbi.nlm.nih.gov/15389656/) |
 | Gabapentin, pregabalin, duloxetine first-line for neuropathic pain | Class I, Level A | [Finnerup NB et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25575710/) |
 | Tricyclic antidepressants effective for neuropathic pain | Class I, Level A | [Finnerup NB et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25575710/) |
 | SPEP indicated in idiopathic neuropathy workup | Class II, Level B | [England JD et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19056666/) |
 | Skin biopsy (IENFD) for small fiber neuropathy diagnosis | Class II, Level B | [Lauria G et al. Eur J Neurol 2010](https://pubmed.ncbi.nlm.nih.gov/20642627/) |
-| B12 deficiency neuropathy: early treatment improves outcomes | Class II, Level B | [Healton EB et al. Medicine 1991](https://pubmed.ncbi.nlm.nih.gov/1988766/) |
-| Acute stroke: time-critical evaluation of sensory deficits | Class I, Level A | AHA/ASA Stroke Guidelines 2019 |
+| B12 deficiency neuropathy: early treatment improves outcomes | Class II, Level B | [Healton EB et al. Medicine 1991](https://pubmed.ncbi.nlm.nih.gov/1648656/) |
+| Acute stroke: time-critical evaluation of sensory deficits | Class I, Level A | [Powers WJ et al. AHA/ASA Stroke Guidelines 2019](https://pubmed.ncbi.nlm.nih.gov/31662037/) |
 | GBS: IVIG or PLEX within 2 weeks of onset | Class I, Level A | [Hughes RA et al. Cochrane Review 2014](https://pubmed.ncbi.nlm.nih.gov/25238327/) |
-| Hypocalcemia causes perioral and acral paresthesia | Class III | Standard physiology texts; [Cooper MS et al. BMJ 2008](https://pubmed.ncbi.nlm.nih.gov/18556318/) |
+| Hypocalcemia causes perioral and acral paresthesia | Class III | Standard physiology texts; [Cooper MS et al. BMJ 2008](https://pubmed.ncbi.nlm.nih.gov/18535072/) |
 | Excessive vitamin B6 causes sensory neuropathy | Class II | [Schaumburg H et al. N Engl J Med 1983](https://pubmed.ncbi.nlm.nih.gov/6308447/) |
-| Cervical spondylotic myelopathy: surgical decompression for progressive deficit | Class II, Level B | [Fehlings MG et al. Spine 2017](https://pubmed.ncbi.nlm.nih.gov/28072639/) |
-| Combination therapy for neuropathic pain improves outcomes | Class II, Level B | [Gilron I et al. NEJM 2005](https://pubmed.ncbi.nlm.nih.gov/15784664/) |
+| Cervical spondylotic myelopathy: surgical decompression for progressive deficit | Class II, Level B | [Fehlings MG et al. Global Spine J 2017](https://pubmed.ncbi.nlm.nih.gov/29164035/) |
+| Combination therapy for neuropathic pain improves outcomes | Class II, Level B | [Gilron I et al. NEJM 2005](https://pubmed.ncbi.nlm.nih.gov/15800228/) |
 | Localization-based approach to sensory symptoms | Expert Consensus | [Brazis PW et al. Localization in Clinical Neurology, 8th ed. 2021] |
 
 ---
 
 ## CHANGE LOG
+
+**v1.2 (February 2, 2026)**
+- Citation Verification: Fixed 5 incorrect PMIDs in Section 8 (Cho SC 12510035->15389656, Healton EB 1988766->1648656, Cooper MS 18556318->18535072, Fehlings MG 28072639->29164035, Gilron I 15784664->15800228)
+- Citation Verification: Corrected journal name for Cho SC (Phys Med Rehabil Clin N Am 2003 -> Muscle Nerve 2004) and Fehlings MG (Spine 2017 -> Global Spine J 2017)
+- Citation Verification: Added PubMed link for AHA/ASA Stroke Guidelines 2019 (Powers WJ et al. PMID 31662037)
+- CPT Enrichment: Added CPT codes to 8 labs in Section 1B (OGTT 82951, free light chains 83883, vitamin B6 84207, vitamin E 84446, Anti-SSA/SSB 86235, rheumatoid factor 86431, Lyme serology 86618, ACE level 82164)
+- CPT Enrichment: Added CPT codes to 6 labs in Section 1C (cryoglobulins 82784, Anti-CASPR2/LGI1 86255, genetic testing 81479, fat pad biopsy 88313, complement C3/C4 86160/86161, ANCA 86200)
+- CPT Enrichment: Added CPT codes to 5 imaging studies in Section 2B/2C (MRI brachial plexus 73221, MRI lumbar plexus 72197, QST 0108T, nerve ultrasound 76882, MR neurography 76498, CT chest/abdomen/pelvis 74177)
+- CPT Enrichment: Added CPT 62270 to Lumbar Puncture section header
+- CPT Enrichment: Added CPT codes to 5 CSF studies in LP section (cell count 89051, Gram stain/culture 87070/87205, oligoclonal bands 83916/82784, Lyme PCR 86618/87539, ACE CSF 82164)
+- CPT Enrichment: Added infusion CPT codes to 3 IV treatments (methylprednisolone IV 96365/96366, IVIG 96365/96366, PLEX 36514)
+- Updated version to 1.2
 
 **v1.1 (February 2, 2026)**
 - Added ICU column to all laboratory tables (1A, 1B, 1C) with appropriate priority assignments per C2
