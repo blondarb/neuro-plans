@@ -39,6 +39,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [RCVS](rcvs.md) | ED, HOSP, OPD, ICU | I67.841, I67.848 |
 | [Moyamoya Disease](moyamoya-disease.md) | ED, HOSP, OPD, ICU | I67.5, I63.9, I61.9 |
 | [Post-Stroke Management](post-stroke-management.md) | ED, HOSP, OPD | I69.30, I69.398, Z86.73 |
+| [Carotid Stenosis](carotid-stenosis.md) | ED, HOSP, OPD, ICU | I65.29 |
 
 ---
 
@@ -63,6 +64,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Inflammatory Myopathy (DM/PM)](inflammatory-myopathy.md) | ED, HOSP, OPD, ICU | G72.41, M33.10, M33.20 |
 | [Inclusion Body Myositis](inclusion-body-myositis.md) | ED, HOSP, OPD | G72.41 |
 | [Myotonic Dystrophy](myotonic-dystrophy.md) | ED, HOSP, OPD | G71.11, G71.12, G71.19 |
+| [Peroneal Neuropathy](peroneal-neuropathy.md) | ED, HOSP, OPD, ICU | G57.30 |
+| [Plexopathy](plexopathy.md) | ED, HOSP, OPD, ICU | G54.0 |
 
 ---
 
@@ -79,6 +82,9 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Tuberculous Meningitis](tb-meningitis.md) | ED, HOSP, OPD, ICU | A17.0 |
 | [Neurosyphilis](neurosyphilis.md) | ED, HOSP, OPD, ICU | A52.2, A52.3, A52.13 |
 | [Lyme Neuroborreliosis](lyme-neuroborreliosis.md) | ED, HOSP, OPD | A69.22 |
+| [Botulism](botulism.md) | ED, HOSP, OPD, ICU | A05.1 |
+| [Neurocysticercosis](neurocysticercosis.md) | ED, HOSP, OPD, ICU | B69.0 |
+| [HIV-Associated Neurocognitive Disorder](hiv-associated-neurocognitive-disorder.md) | ED, HOSP, OPD | B20 |
 
 ---
 
@@ -141,6 +147,9 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Chronic Migraine](chronic-migraine.md) | ED, HOSP, OPD | G43.709, G43.719, G43.701 |
 | [Low Pressure Headache / SIH](low-pressure-headache.md) | ED, HOSP, OPD | G96.00, G96.01, G96.02, G97.0 |
 | [Status Migrainosus](status-migrainosus.md) | ED, HOSP, OPD, ICU | G43.901, G43.911, G43.919 |
+| [Headache Evaluation](headache-evaluation.md) | ED, HOSP, OPD, ICU | R51.9 |
+| [Thunderclap Headache Evaluation](thunderclap-headache-evaluation.md) | ED, HOSP, OPD, ICU | R51.9 |
+| [Headache, Unspecified](headache-unspecified.md) | ED, HOSP, OPD | R51.9 |
 
 ---
 
@@ -159,6 +168,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Progressive Supranuclear Palsy](progressive-supranuclear-palsy.md) | ED, HOSP, OPD, ICU | G23.1, F02.80, F02.81 |
 | [Multiple System Atrophy](multiple-system-atrophy.md) | ED, HOSP, OPD, ICU | G90.3, G23.2, G23.3 |
 | [Ataxia Evaluation](ataxia-evaluation.md) | ED, HOSP, OPD | R27.0, G11.9 |
+| [Tics / Tourette Syndrome](tics-tourette-syndrome.md) | ED, HOSP, OPD | F95.2 |
+| [Tremor, Unspecified](tremor-unspecified.md) | ED, HOSP, OPD, ICU | R25.1 |
 
 ---
 
@@ -218,6 +229,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 |------|------------------|--------|
 | [Neurosarcoidosis](neurosarcoidosis.md) | ED, HOSP, OPD, ICU | D86.82, D86.89, G53 |
 | [Stiff Person Syndrome](stiff-person-syndrome.md) | ED, HOSP, OPD, ICU | G25.82 |
+| [Hashimoto's Encephalopathy](hashimotos-encephalopathy.md) | ED, HOSP, OPD, ICU | E06.3 |
 
 ---
 
@@ -227,6 +239,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 |------|------------------|--------|
 | [Giant Cell Arteritis](giant-cell-arteritis.md) | ED, HOSP, OPD, ICU | M31.6, M31.5 |
 | [CNS Vasculitis (PACNS)](cns-vasculitis.md) | ED, HOSP, OPD, ICU | I67.7 |
+| [Susac Syndrome](susac-syndrome.md) | ED, HOSP, OPD, ICU | H35.89 |
+| [Neuro-Behcet's Disease](neuro-behcets-disease.md) | ED, HOSP, OPD, ICU | M35.2 |
 
 ---
 
@@ -246,6 +260,9 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Vertigo / Dizziness](vertigo-dizziness-evaluation.md) | ED, HOSP, OPD | R42, H81.10 |
 | [Post-Concussion Syndrome](post-concussion-syndrome.md) | ED, HOSP, OPD | F07.81, S06.0X0A |
 | [Narcolepsy](narcolepsy.md) | ED, HOSP, OPD | G47.411, G47.419 |
+| [Nystagmus Evaluation](nystagmus-evaluation.md) | ED, HOSP, OPD, ICU | H55.00 |
+| [Tinnitus Evaluation](tinnitus-evaluation.md) | ED, HOSP, OPD, ICU | H93.19 |
+| [Paresthesia / Numbness / Tingling](paresthesia-numbness-tingling.md) | ED, HOSP, OPD, ICU | R20.2 |
 
 ---
 

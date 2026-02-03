@@ -24,23 +24,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | ICD-10 | File | Status | Session | Last Updated |
 |------|--------|------|--------|---------|--------------|
-| Carotid Stenosis | I65.29 | `carotid-stenosis.md` | `completed` | Claude | 2026-02-02 |
-| Headache Evaluation | R51.9 | `headache-evaluation.md` | `completed` | Claude | 2026-02-02 |
-| Thunderclap Headache Evaluation | R51.9 | `thunderclap-headache-evaluation.md` | `completed` | Claude | 2026-02-02 |
-| Botulism | A05.1 | `botulism.md` | `completed` | Claude | 2026-02-02 |
-| Peroneal Neuropathy | G57.30 | `peroneal-neuropathy.md` | `completed` | Claude | 2026-02-02 |
-| Plexopathy | G54.0 | `plexopathy.md` | `completed` | Claude | 2026-02-02 |
-| Tics / Tourette Syndrome | F95.2 | `tics-tourette-syndrome.md` | `completed` | Claude | 2026-02-02 |
-| Neurocysticercosis | B69.0 | `neurocysticercosis.md` | `completed` | Claude | 2026-02-02 |
-| HIV-Associated Neurocognitive Disorder | B20 | `hiv-associated-neurocognitive-disorder.md` | `completed` | Claude | 2026-02-02 |
-| Susac Syndrome | H35.89 | `susac-syndrome.md` | `completed` | Claude | 2026-02-02 |
-| Neuro-Behcet's Disease | M35.2 | `neuro-behcets-disease.md` | `completed` | Claude | 2026-02-02 |
-| Hashimoto's Encephalopathy | E06.3 | `hashimotos-encephalopathy.md` | `completed` | Claude | 2026-02-02 |
-| Nystagmus Evaluation | H55.00 | `nystagmus-evaluation.md` | `completed` | Claude | 2026-02-02 |
-| Tinnitus Evaluation | H93.19 | `tinnitus-evaluation.md` | `completed` | Claude | 2026-02-02 |
-| Paresthesia / Numbness / Tingling | R20.2 | `paresthesia-numbness-tingling.md` | `completed` | Claude | 2026-02-02 |
-| Headache, Unspecified | R51.9 | `headache-unspecified.md` | `completed` | Claude | 2026-02-02 |
-| Tremor, Unspecified | R25.1 | `tremor-unspecified.md` | `completed` | Claude | 2026-02-02 |
+| *(empty — all Tier 11 plans approved)* | — | — | — | — | — |
 
 ---
 
@@ -155,6 +139,23 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 105 | Eclampsia / Seizure in Pregnancy | [`eclampsia-seizure-pregnancy.md`](../plans/eclampsia-seizure-pregnancy.md) | 2026-02-02 | 90%+ |
 | 106 | Moyamoya Disease | [`moyamoya-disease.md`](../plans/moyamoya-disease.md) | 2026-02-02 | 90%+ |
 | 107 | Post-Stroke Management | [`post-stroke-management.md`](../plans/post-stroke-management.md) | 2026-02-02 | 90%+ |
+| 108 | Carotid Stenosis | [`carotid-stenosis.md`](../plans/carotid-stenosis.md) | 2026-02-02 | 90%+ |
+| 109 | Headache Evaluation | [`headache-evaluation.md`](../plans/headache-evaluation.md) | 2026-02-02 | 90%+ |
+| 110 | Thunderclap Headache Evaluation | [`thunderclap-headache-evaluation.md`](../plans/thunderclap-headache-evaluation.md) | 2026-02-02 | 90%+ |
+| 111 | Botulism | [`botulism.md`](../plans/botulism.md) | 2026-02-02 | 90%+ |
+| 112 | Peroneal Neuropathy | [`peroneal-neuropathy.md`](../plans/peroneal-neuropathy.md) | 2026-02-02 | 90%+ |
+| 113 | Plexopathy | [`plexopathy.md`](../plans/plexopathy.md) | 2026-02-02 | 90%+ |
+| 114 | Tics / Tourette Syndrome | [`tics-tourette-syndrome.md`](../plans/tics-tourette-syndrome.md) | 2026-02-02 | 90%+ |
+| 115 | Neurocysticercosis | [`neurocysticercosis.md`](../plans/neurocysticercosis.md) | 2026-02-02 | 90%+ |
+| 116 | HIV-Associated Neurocognitive Disorder | [`hiv-associated-neurocognitive-disorder.md`](../plans/hiv-associated-neurocognitive-disorder.md) | 2026-02-02 | 90%+ |
+| 117 | Susac Syndrome | [`susac-syndrome.md`](../plans/susac-syndrome.md) | 2026-02-02 | 90%+ |
+| 118 | Neuro-Behcet's Disease | [`neuro-behcets-disease.md`](../plans/neuro-behcets-disease.md) | 2026-02-02 | 90%+ |
+| 119 | Hashimoto's Encephalopathy | [`hashimotos-encephalopathy.md`](../plans/hashimotos-encephalopathy.md) | 2026-02-02 | 90%+ |
+| 120 | Nystagmus Evaluation | [`nystagmus-evaluation.md`](../plans/nystagmus-evaluation.md) | 2026-02-02 | 90%+ |
+| 121 | Tinnitus Evaluation | [`tinnitus-evaluation.md`](../plans/tinnitus-evaluation.md) | 2026-02-02 | 90%+ |
+| 122 | Paresthesia / Numbness / Tingling | [`paresthesia-numbness-tingling.md`](../plans/paresthesia-numbness-tingling.md) | 2026-02-02 | 90%+ |
+| 123 | Headache, Unspecified | [`headache-unspecified.md`](../plans/headache-unspecified.md) | 2026-02-02 | 90%+ |
+| 124 | Tremor, Unspecified | [`tremor-unspecified.md`](../plans/tremor-unspecified.md) | 2026-02-02 | 90%+ |
 
 ---
 
@@ -171,7 +172,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-02-02. Total approved: 107 plans.
+- Queue updated 2026-02-02. Total approved: 124 plans.
 - **Tier 10 batch** (2026-01-31): 5 new drafts added — Drug-Resistant Epilepsy, Epilepsy Chronic Management, Eclampsia/Seizure in Pregnancy, Moyamoya Disease, Post-Stroke Management. Awaiting physician approval.
 - **Tier 11 HIGH PRIORITY batch** (2026-02-01): 17 plans queued as physician-prioritized. Includes vascular (Carotid Stenosis), headache workups (Headache Evaluation, Thunderclap, Headache Unspecified), rare/infectious (Botulism, Neurocysticercosis, HIV-HAND), autoimmune/inflammatory (Susac, Neuro-Behcet's, Hashimoto's Encephalopathy), peripheral (Peroneal Neuropathy, Plexopathy, Paresthesia), movement (Tics/Tourette, Tremor Unspecified), and symptom evaluations (Nystagmus, Tinnitus). Note: "Headache Evaluation" and "Headache, Unspecified" may overlap — physician to clarify scope.
 
