@@ -25,7 +25,7 @@ tags:
 
 **ICD-10:** R51.9 (Headache, unspecified), R51.0 (Headache with orthostatic component, unspecified), G44.1 (Vascular headache, not elsewhere classified), G44.89 (Other headache syndrome)
 
-**CPT CODES:** 99281-99285 (ED E/M levels), 70450 (CT head without contrast), 70551 (MRI brain without contrast), 70553 (MRI brain with/without contrast), 85025 (CBC), 80048 (BMP), 80053 (CMP), 84443 (TSH), 83735 (magnesium), 84703 (hCG qualitative), 85652 (ESR), 86140 (CRP), 62270 (lumbar puncture), 96374 (IV push), 96365 (IV infusion), 93000 (ECG), 96372 (therapeutic injection IM/SC)
+**CPT CODES:** 99281-99285 (ED E/M levels), 70450 (CT head without contrast), 70551 (MRI brain without contrast), 70553 (MRI brain with/without contrast), 70544 (MRA head), 70546 (MRV brain), 70496 (CTA head), 70498 (CTA neck), 72141 (MRI cervical spine without contrast), 85025 (CBC), 80048 (BMP), 80053 (CMP), 84443 (TSH), 83735 (magnesium), 84703 (hCG qualitative), 85652 (ESR), 86140 (CRP), 82306 (Vitamin D 25-OH), 82728 (ferritin), 87040 (blood cultures), 84145 (procalcitonin), 86038 (ANA), 86618 (Lyme serology), 93000 (ECG), 62270 (lumbar puncture), 64405 (occipital nerve block), 96374 (IV push), 96365 (IV infusion), 96372 (therapeutic injection IM/SC)
 
 **SYNONYMS:** Headache NOS, headache not otherwise specified, undifferentiated headache, unclassified headache, cephalgia unspecified, cephalalgia NOS, head pain unspecified, acute headache NOS, nonspecific headache, headache of unknown etiology, headache under evaluation, primary headache NOS, new headache NOS, recurrent headache unspecified
 
@@ -168,13 +168,13 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Acetaminophen | PO | First-line oral analgesic in pregnancy for any headache | 1000 mg :: PO :: q6h :: 1000 mg PO q6h; max 3000 mg/day | Hepatic disease | LFTs if frequent use | STAT | STAT | ROUTINE | - |
-| Acetaminophen IV | IV | First-line parenteral analgesic in pregnancy when oral not tolerated | 1000 mg :: IV :: q6h :: 1000 mg IV over 15 min q6h; max 3000 mg/day | Hepatic disease | LFTs if frequent use | STAT | STAT | - | - |
-| Metoclopramide | IV | Safe in pregnancy; anti-headache and anti-emetic | 10 mg :: IV :: q8h :: 10 mg IV q8h | Parkinson's disease | Akathisia | STAT | STAT | ROUTINE | - |
+| Acetaminophen IV (CPT 96374) | IV | First-line parenteral analgesic in pregnancy when oral not tolerated | 1000 mg :: IV :: q6h :: 1000 mg IV over 15 min q6h; max 3000 mg/day | Hepatic disease | LFTs if frequent use | STAT | STAT | - | - |
+| Metoclopramide (CPT 96374) | IV | Safe in pregnancy; anti-headache and anti-emetic | 10 mg :: IV :: q8h :: 10 mg IV q8h | Parkinson's disease | Akathisia | STAT | STAT | ROUTINE | - |
 | Metoclopramide | PO | Safe in pregnancy; anti-headache and anti-emetic for outpatient use | 10 mg :: PO :: q8h :: 10 mg PO q8h | Parkinson's disease | Akathisia | - | ROUTINE | ROUTINE | - |
-| Ondansetron | IV | Anti-emetic adjunct; caution in first trimester | 4 mg :: IV :: q8h :: 4 mg IV q8h | QT prolongation; first trimester (relative -- limited data) | QTc | URGENT | ROUTINE | - | - |
+| Ondansetron (CPT 96374) | IV | Anti-emetic adjunct; caution in first trimester | 4 mg :: IV :: q8h :: 4 mg IV q8h | QT prolongation; first trimester (relative -- limited data) | QTc | URGENT | ROUTINE | - | - |
 | Ondansetron | PO | Anti-emetic adjunct for outpatient use; caution in first trimester | 4 mg :: PO :: q8h :: 4 mg PO q8h | QT prolongation; first trimester (relative -- limited data) | QTc | - | ROUTINE | ROUTINE | - |
-| Magnesium sulfate | IV | Adjunct for headache in pregnancy; also seizure prophylaxis benefit | 2 g :: IV :: x1 :: 2 g IV over 20-30 min | Renal failure; myasthenia gravis | Reflexes, respiratory rate, Mg level | URGENT | URGENT | - | - |
-| Occipital nerve block (lidocaine) | Local injection | Non-systemic option; safe in pregnancy | 2-3 mL :: SC :: PRN :: 2% lidocaine 2-3 mL per side at greater occipital nerve | Local anesthetic allergy | Local reaction; vasovagal | - | ROUTINE | ROUTINE | - |
+| Magnesium sulfate (CPT 96365) | IV | Adjunct for headache in pregnancy; also seizure prophylaxis benefit | 2 g :: IV :: x1 :: 2 g IV over 20-30 min | Renal failure; myasthenia gravis | Reflexes, respiratory rate, Mg level | URGENT | URGENT | - | - |
+| Occipital nerve block - lidocaine (CPT 64405) | Local injection | Non-systemic option; safe in pregnancy | 2-3 mL :: SC :: PRN :: 2% lidocaine 2-3 mL per side at greater occipital nerve | Local anesthetic allergy | Local reaction; vasovagal | - | ROUTINE | ROUTINE | - |
 
 ### 3F. Empiric Outpatient Bridging (Discharge from ED/Hospital)
 

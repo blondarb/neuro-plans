@@ -1,0 +1,1456 @@
+{
+  "id": "thunderclap-headache-evaluation",
+  "title": "Thunderclap Headache Evaluation",
+  "version": "1.1",
+  "icd10": [
+    "** R51.9 (Headache",
+    "unspecified)",
+    "G44.1 (Vascular headache",
+    "not elsewhere classified)",
+    "I60.9 (Nontraumatic subarachnoid hemorrhage",
+    "unspecified)",
+    "I67.6 (Nonpyogenic thrombosis of intracranial venous system — cerebral venous thrombosis)",
+    "I67.841 (Reversible cerebrovascular vasoconstriction syndrome)",
+    "I67.0 (Dissection of cerebral arteries",
+    "non-ruptured)",
+    "E23.6 (Other disorders of pituitary gland — pituitary apoplexy)",
+    "I63.9 (Cerebral infarction",
+    "unspecified)"
+  ],
+  "scope": "** Emergency evaluation of thunderclap headache (TCH) in adults, defined as a severe headache reaching peak intensity within 60 seconds of onset. Covers the systematic diagnostic algorithm to identify or exclude life-threatening secondary causes: subarachnoid hemorrhage (SAH), cerebral venous thrombosis (CVT), reversible cerebral vasoconstriction syndrome (RCVS), cervical artery dissection, pituitary apoplexy, hypertensive emergency, meningitis, and cerebral infarction. Emphasizes the CT-then-LP algorithm, indications for CTA/MRA/MRV, time-sensitive workup, and disposition. Excludes ongoing management of specific diagnoses once identified (see individual templates: SAH, CVT, RCVS, cervical artery dissection, bacterial meningitis, etc.). This is a diagnostic evaluation template, not a disease management plan.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT",
+          "rationale": "Baseline; infection screen (elevated WBC in meningitis); thrombocytopenia (CVT risk); leukocytosis",
+          "target": "Normal; elevated WBC raises concern for meningitis"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT",
+          "rationale": "Electrolytes; renal function (contrast planning for CTA); hepatic function; glucose",
+          "target": "Normal"
+        },
+        {
+          "item": "PT/INR (CPT 85610), aPTT (CPT 85730)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy assessment; pre-LP safety; anticoagulant use (CVT workup); baseline for potential heparin",
+          "target": "Normal"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT",
+          "rationale": "Giant cell arteritis (age >50); vasculitis screen",
+          "target": "<30 mm/h (age-adjusted)"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT",
+          "rationale": "Inflammatory marker; infection; vasculitis",
+          "target": "<1.0 mg/dL"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hyperglycemia worsens outcomes in stroke; compare with CSF glucose if LP performed",
+          "target": "Normal"
+        },
+        {
+          "item": "Troponin (CPT 84484)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Neurogenic stunned myocardium in SAH (20-30%); concurrent ACS with hypertensive crisis",
+          "target": "Normal (elevated in SAH-neurogenic)"
+        },
+        {
+          "item": "Pregnancy test (β-hCG) (CPT 84703)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT",
+          "rationale": "Affects imaging decisions (contrast, radiation); pregnancy-related causes (CVT, eclampsia, pituitary apoplexy)",
+          "target": "Document result"
+        },
+        {
+          "item": "Type and screen (CPT 86900)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "If SAH confirmed or suspected; potential surgical intervention",
+          "target": "On file"
+        },
+        {
+          "item": "D-dimer (CPT 85379)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "URGENT",
+          "rationale": "Elevated in CVT (sensitivity ~97%, poor specificity); negative D-dimer has high NPV for CVT",
+          "target": "<0.5 µg/mL (negative essentially excludes CVT in low-probability cases)"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Fibrinogen (CPT 85384)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Coagulopathy; DIC screen; pre-procedure",
+          "target": ">150 mg/dL"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Perfusion status; sepsis (meningitis concern)",
+          "target": "<2 mmol/L"
+        },
+        {
+          "item": "Blood cultures (CPT 87040)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "If febrile or meningitis suspected",
+          "target": "No growth"
+        },
+        {
+          "item": "Procalcitonin (CPT 84145)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Differentiate infectious from non-infectious etiology if febrile",
+          "target": "<0.5 ng/mL"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Pituitary apoplexy may present with acute hypopituitarism",
+          "target": "Normal"
+        },
+        {
+          "item": "AM cortisol (CPT 82533)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "If pituitary apoplexy suspected — acute adrenal insufficiency is life-threatening",
+          "target": ">18 µg/dL"
+        },
+        {
+          "item": "Prolactin (CPT 84146)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Elevated in pituitary apoplexy (compression of remaining gland) or baseline stalk effect",
+          "target": "Document"
+        },
+        {
+          "item": "Toxicology screen (urine) (CPT 80307)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Cocaine, amphetamines — sympathomimetic-associated SAH, RCVS, dissection",
+          "target": "Negative"
+        },
+        {
+          "item": "Lipid panel (CPT 80061)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Cardiovascular risk; vascular etiology risk stratification",
+          "target": "Document"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hypomagnesemia increases vasospasm risk if SAH; needed for general ICU management",
+          "target": ">2.0 mg/dL"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Thrombophilia panel (Factor V Leiden, prothrombin mutation, protein C/S, antithrombin III)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Young patient with CVT and no clear risk factor; hypercoagulable state",
+          "target": "Normal"
+        },
+        {
+          "item": "Antiphospholipid antibodies (lupus anticoagulant, anticardiolipin, anti-beta-2 glycoprotein)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "CVT or stroke in young patient; antiphospholipid syndrome",
+          "target": "Negative"
+        },
+        {
+          "item": "Pituitary hormone panel (GH, IGF-1, LH, FSH, free T4, ACTH)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Suspected pituitary apoplexy; assess degree of hypopituitarism",
+          "target": "Variable; document deficiencies"
+        },
+        {
+          "item": "Urine catecholamines/metanephrines",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Pheochromocytoma as cause of hypertensive headache crisis",
+          "target": "Normal"
+        },
+        {
+          "item": "Connective tissue disorder workup",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Young patient with dissection or aneurysm; Ehlers-Danlos, Marfan, fibromuscular dysplasia features",
+          "target": "Clinical + genetic"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure (CPT 89060)",
+          "rationale": "Elevated in SAH, CVT, meningitis; low in spontaneous intracranial hypotension (SIH)",
+          "target": "Normal: 6-20 cm H2O. Elevated: >20 cm H2O (SAH, CVT, meningitis). Low: <6 cm H2O (SIH — different mechanism)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cell count (tubes 1 AND 4) (CPT 89050)",
+          "rationale": "Distinguish SAH from traumatic tap: SAH = RBC count does NOT clear significantly between tube 1 and tube 4",
+          "target": "SAH: RBCs in tube 4 ≥ tube 1 (no clearing). Traumatic tap: tube 4 << tube 1 (clearing >25%)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Xanthochromia (visual and/or spectrophotometry) (CPT 89060)",
+          "rationale": "Most reliable CSF test for SAH; develops >6h post-bleed from RBC breakdown (bilirubin); spectrophotometry more sensitive than visual inspection",
+          "target": "Present = SAH (sensitivity >95% at 12h-2 weeks). Absent at >12h from onset = essentially excludes SAH",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Protein (CPT 89060)",
+          "rationale": "Elevated in SAH, meningitis, CVT",
+          "target": "Normal 15-45 mg/dL; elevated in SAH and infection",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Glucose (CPT 89060)",
+          "rationale": "Low CSF:serum glucose ratio (<0.4) suggests bacterial meningitis; normal in SAH",
+          "target": "Normal >60% of serum glucose",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Gram stain and culture (CPT 87070, 87040)",
+          "rationale": "Exclude bacterial meningitis (meningeal signs overlap with SAH)",
+          "target": "No organisms",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CSF WBC with differential",
+          "rationale": "Neutrophilic pleocytosis (bacterial meningitis); lymphocytic (viral/fungal); mild pleocytosis in SAH (reactive)",
+          "target": "SAH: mild pleocytosis (reactive). Meningitis: significant pleocytosis",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT",
+          "timing": "IMMEDIATE — door-to-CT target <25 min. This is the FIRST test for ALL thunderclap headaches. Sensitivity for SAH: ~98-100% within 6h of onset; ~93% at 12h; ~85% at 24h; declines significantly after 3-5 days",
+          "target": "Hyperdense blood in basal cisterns, Sylvian fissure, interhemispheric fissure (SAH); parenchymal hemorrhage; hydrocephalus; mass (pituitary apoplexy); hypodensity (infarct)",
+          "contraindications": "None significant — no reason to delay"
+        },
+        {
+          "item": "CT angiography (CTA) head and neck (CPT 70496, 70498)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT",
+          "timing": "Obtain simultaneously with or immediately after non-contrast CT. Essential to identify: aneurysm (SAH), segmental vasoconstriction (RCVS), dissection (vertebral or carotid), venous thrombosis (if CT venogram protocol included)",
+          "target": "Aneurysm (location, size, morphology); \"string of beads\" vasoconstriction (RCVS); intimal flap or pseudoaneurysm (dissection); vessel occlusion",
+          "contraindications": "Contrast allergy (premedicate if time allows; benefit usually outweighs risk in emergency); renal impairment (relative — do not delay for Cr in acute thunderclap)"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Immediately — within minutes of arrival",
+          "target": "Deep T-wave inversions (\"cerebral T waves\"), ST changes, QT prolongation (SAH); arrhythmia; hypertensive emergency findings",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with/without contrast (CPT 70553)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "URGENT",
+          "timing": "Within 24h if CT negative and diagnosis uncertain. FLAIR detects subacute blood (SAH >12h); DWI detects ischemia (infarct, vasospasm); T1 with contrast for pituitary mass; SWI/GRE for microhemorrhages",
+          "target": "FLAIR hyperintensity in sulci (subacute SAH); DWI restriction (stroke); pituitary mass with hemorrhage; cortical/convexity SAH (RCVS)",
+          "contraindications": "Pacemaker/ICD (conditional devices may be scanned); hemodynamic instability; agitation (sedation may be needed)"
+        },
+        {
+          "item": "MRA head (CPT 70544/70547)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "URGENT",
+          "timing": "With MRI; alternative to CTA if contrast contraindicated or for follow-up",
+          "target": "Aneurysm; segmental vasoconstriction (RCVS — may be normal early in course); dissection",
+          "contraindications": "Standard MRI contraindications"
+        },
+        {
+          "item": "MRV head (MR venography) (CPT 70547)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "URGENT",
+          "timing": "If CVT suspected (headache + risk factors: OCP use, pregnancy/postpartum, thrombophilia, dehydration); or CT venogram unavailable",
+          "target": "Absent flow signal in dural sinuses/cortical veins (thrombosis)",
+          "contraindications": "Standard MRI contraindications"
+        },
+        {
+          "item": "CT venography (CTV) (CPT 70496)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Obtained with CTA using delayed-phase protocol; preferred in ED for speed if CVT suspected",
+          "target": "Filling defect in dural sinus; \"empty delta sign\" (superior sagittal sinus thrombosis)",
+          "contraindications": "Contrast allergy; renal impairment (relative)"
+        },
+        {
+          "item": "Conventional cerebral angiography (DSA) (CPT 36224)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "GOLD STANDARD for aneurysm detection if CTA negative but clinical suspicion remains high; also detects RCVS vasoconstriction (may require repeat at 2-3 weeks if initially normal); diagnoses vasculitis",
+          "target": "Aneurysm missed by CTA; segmental vasoconstriction (RCVS); vasculitis (irregular vessel narrowing); dissection",
+          "contraindications": "Contrast allergy; renal impairment; coagulopathy (correct first); hemodynamic instability"
+        },
+        {
+          "item": "Repeat DSA (if initial negative)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "7-14 days if initial DSA negative and non-perimesencephalic SAH pattern; also repeat at 2-4 weeks for suspected RCVS (vasoconstriction may develop delayed)",
+          "target": "Previously missed aneurysm; interval development of vasoconstriction",
+          "contraindications": "Same as initial DSA"
+        },
+        {
+          "item": "Transcranial Doppler (TCD) (CPT 93886)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If SAH confirmed — begin daily from post-bleed day 3 through day 14 (vasospasm window); also detects elevated flow velocities in RCVS",
+          "target": "MCA mean velocity >120 cm/s concerning; >200 cm/s severe vasospasm; Lindegaard ratio >3",
+          "contraindications": "Absent temporal bone window (~10%)"
+        },
+        {
+          "item": "MRI sella (dedicated pituitary protocol) (CPT 70553)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "URGENT",
+          "timing": "If pituitary apoplexy suspected (headache + visual field cut + ophthalmoplegia + known pituitary adenoma)",
+          "target": "Hemorrhagic or necrotic pituitary mass; sellar expansion; optic chiasm compression",
+          "contraindications": "Standard MRI contraindications"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "On admission if SAH or meningitis; neurogenic pulmonary edema in SAH",
+          "target": "Neurogenic pulmonary edema; aspiration; widened mediastinum (aortic dissection with headache)",
+          "contraindications": "None"
+        },
+        {
+          "item": "Echocardiogram (TTE) (CPT 93306)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "If SAH confirmed — neurogenic stunned myocardium (20-30%); if embolic cause suspected",
+          "target": "Takotsubo; regional wall motion abnormalities; valvular vegetation; PFO",
+          "contraindications": "None significant"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "3D rotational angiography",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "timing": "During DSA for complex aneurysm anatomy",
+          "target": "Detailed aneurysm morphology",
+          "contraindications": "Same as DSA"
+        },
+        {
+          "item": "CT perfusion (CTP) (CPT 0042T)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If vasospasm suspected in confirmed SAH (post-bleed days 4-14); also detects perfusion deficit in RCVS with stroke",
+          "target": "Perfusion deficits; mismatch (reversible ischemia)",
+          "contraindications": "Contrast allergy; renal impairment"
+        },
+        {
+          "item": "Spinal MRI",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If spinal SAH suspected (back/leg pain with meningismus; intracranial imaging negative)",
+          "target": "Spinal subarachnoid blood; spinal vascular malformation",
+          "contraindications": "Standard MRI contraindications"
+        },
+        {
+          "item": "Conventional spinal angiography",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "timing": "If spinal SAH with suspected vascular malformation",
+          "target": "Spinal AVM/AVF",
+          "contraindications": "Same as DSA"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent — Stabilization & Symptom Management": [
+        {
+          "item": "Nicardipine IV (CPT 96365)",
+          "route": "IV",
+          "indication": "Hypertensive emergency (SBP >180); SAH with SBP >160; hypertensive crisis with thunderclap",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/h",
+                "orderSentence": "Nicardipine IV (CPT 96365) 5 mg/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg/h IV; titrate by 2.5 mg/h q5-15min; max 15 mg/h. Target SBP <160 if SAH suspected (until aneurysm secured). For hypertensive emergency: reduce MAP by 20-25% in first hour",
+            "orderSentence": "Nicardipine IV (CPT 96365) 5 mg/h IV"
+          },
+          "contraindications": "Severe aortic stenosis",
+          "monitoring": "Continuous arterial BP; neuro checks q1h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Labetalol IV (CPT 96374)",
+          "route": "IV",
+          "indication": "Alternative to nicardipine for BP control",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg",
+                "orderSentence": "Labetalol IV (CPT 96374) 10-20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10-20 mg IV q10-20min; max 300 mg. Alternative first-line for hypertensive emergency",
+            "orderSentence": "Labetalol IV (CPT 96374) 10-20 mg IV"
+          },
+          "contraindications": "Heart block; severe bradycardia; asthma; cocaine use (relative — unopposed alpha)",
+          "monitoring": "HR; BP continuous",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acetaminophen IV (CPT 96374)",
+          "route": "IV",
+          "indication": "First-line pain control for thunderclap headache during evaluation; avoid masking exam",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Acetaminophen IV (CPT 96374) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV q6h; max 4g/day. Safe first-line — does not affect coagulation or mask pupillary exam",
+            "orderSentence": "Acetaminophen IV (CPT 96374) 1000 mg IV"
+          },
+          "contraindications": "Hepatic impairment (reduce dose); <50 kg (weight-based dosing)",
+          "monitoring": "Pain score; hepatic function if repeat dosing",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ketorolac IV (CPT 96374)",
+          "route": "IV",
+          "indication": "Moderate-severe headache pain; use ONLY after SAH excluded or deemed unlikely (affects platelet function)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-30 mg",
+                "orderSentence": "Ketorolac IV (CPT 96374) 15-30 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "15-30 mg IV once; max 120 mg/day. Do NOT use if SAH suspected (platelet inhibition increases re-bleed risk); do NOT use if LP planned within 24h (relative)",
+            "orderSentence": "Ketorolac IV (CPT 96374) 15-30 mg IV"
+          },
+          "contraindications": "SAH suspected; active bleeding; renal impairment; coagulopathy; GI bleed",
+          "monitoring": "Renal function; GI symptoms",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ondansetron (CPT 96374)",
+          "route": "IV",
+          "indication": "Nausea/vomiting (common with thunderclap headache and elevated ICP)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron (CPT 96374) 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV q6h PRN",
+            "orderSentence": "Ondansetron (CPT 96374) 4 mg IV"
+          },
+          "contraindications": "QT prolongation; severe hepatic impairment",
+          "monitoring": "QTc if repeated dosing",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Metoclopramide (CPT 96374)",
+          "route": "IV",
+          "indication": "Alternative antiemetic; also has analgesic properties for headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Metoclopramide (CPT 96374) 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV over 15 min; may repeat once. Avoid in patients with Parkinson's or dystonic reactions",
+            "orderSentence": "Metoclopramide (CPT 96374) 10 mg IV"
+          },
+          "contraindications": "Parkinson's disease; bowel obstruction; pheochromocytoma; seizure history (relative)",
+          "monitoring": "Dystonic reactions; akathisia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV isotonic fluids (CPT 96360)",
+          "route": "IV",
+          "indication": "Volume resuscitation and hydration; dehydration worsens headache and may worsen CVT",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 mL/kg/h",
+                "orderSentence": "IV isotonic fluids (CPT 96360) 1-1.5 mL/kg/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "NS at 1-1.5 mL/kg/h; goal euvolemia. Essential for pre-contrast hydration (CTA) and general resuscitation",
+            "orderSentence": "IV isotonic fluids (CPT 96360) 1-1.5 mL/kg/h IV"
+          },
+          "contraindications": "Volume overload; CHF",
+          "monitoring": "I/O; serum Na",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam (CPT 96374)",
+          "route": "IV",
+          "indication": "ONLY if SAH confirmed or seizure occurs; not routine for undifferentiated thunderclap headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Levetiracetam (CPT 96374) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV load; then 500-1000 mg IV/PO BID. Use short-term (3-7 days) in confirmed SAH per AHA guidelines",
+            "orderSentence": "Levetiracetam (CPT 96374) 1000 mg IV"
+          },
+          "contraindications": "Renal impairment (dose adjust)",
+          "monitoring": "Seizure activity; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Intubation / Airway protection",
+          "route": "-",
+          "indication": "GCS ≤8; inability to protect airway; respiratory failure; clinical herniation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Intubation / Airway protection - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Rapid sequence intubation per institutional protocol; use hemodynamically neutral agents; avoid succinylcholine if hyperkalemia risk",
+            "orderSentence": "Intubation / Airway protection - -"
+          },
+          "contraindications": "Difficult airway (prepare backup plan)",
+          "monitoring": "Avoid hypotension during RSI; maintain BP goals; continuous SpO2; ETCO2",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Cause-Specific Initial Treatment (Start While Awaiting Definitive Management)": [
+        {
+          "item": "Nimodipine (if SAH confirmed)",
+          "route": "PO",
+          "indication": "SAH confirmed — vasospasm prevention (CORNERSTONE therapy)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Nimodipine (if SAH confirmed) 60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "60 mg PO/NG q4h x 21 days. START within 96h of SAH. If hypotension: 30 mg q2h. Do NOT give IV — oral only",
+            "orderSentence": "Nimodipine (if SAH confirmed) 60 mg PO"
+          },
+          "contraindications": "Hypotension (SBP <90 — reduce dose)",
+          "monitoring": "BP with each dose; ensure enteral route only",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Nimodipine (if RCVS confirmed)",
+          "route": "PO",
+          "indication": "RCVS — empiric calcium channel blocker; off-label but widely used",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Nimodipine (if RCVS confirmed) 60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "60 mg PO q4h; duration 4-12 weeks until vasoconstriction resolves on follow-up imaging",
+            "orderSentence": "Nimodipine (if RCVS confirmed) 60 mg PO"
+          },
+          "contraindications": "Hypotension",
+          "monitoring": "BP with each dose",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Heparin IV (if CVT confirmed) (CPT 96365)",
+          "route": "IV",
+          "indication": "Cerebral venous thrombosis — anticoagulation is standard even with hemorrhagic venous infarct",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "80 units/kg",
+                "orderSentence": "Heparin IV (if CVT confirmed) (CPT 96365) 80 units/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "80 units/kg IV bolus; then 18 units/kg/h infusion. Target aPTT 1.5-2.5x control. Transition to LMWH or warfarin",
+            "orderSentence": "Heparin IV (if CVT confirmed) (CPT 96365) 80 units/kg IV"
+          },
+          "contraindications": "Active major hemorrhage (ICH from CVT is NOT a contraindication per guidelines); HIT",
+          "monitoring": "aPTT q6h until therapeutic; platelets q3 days; neuro checks",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Aspirin (if cervical artery dissection confirmed)",
+          "route": "PO",
+          "indication": "Cervical artery dissection — antiplatelet therapy (equivalent to anticoagulation per CADISS trial)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "325 mg",
+                "orderSentence": "Aspirin (if cervical artery dissection confirmed) 325 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Aspirin 325 mg PO daily x 3-6 months. Preferred in patients with large infarct or hemorrhagic transformation",
+            "orderSentence": "Aspirin (if cervical artery dissection confirmed) 325 mg PO"
+          },
+          "contraindications": "Active hemorrhagic stroke; allergy",
+          "monitoring": "Neuro checks; GI symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Heparin then warfarin (if cervical artery dissection confirmed — anticoagulation option)",
+          "route": "IV/PO",
+          "indication": "Cervical artery dissection — anticoagulation alternative (equivalent to antiplatelet per CADISS trial)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "80 units/kg",
+                "orderSentence": "Heparin then warfarin (if cervical artery dissection confirmed — anticoagulation option) 80 units/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "80 units/kg IV bolus; then 18 units/kg/h infusion; transition to warfarin (INR 2-3) x 3-6 months. Preferred if recurrent ischemic events on antiplatelet",
+            "orderSentence": "Heparin then warfarin (if cervical artery dissection confirmed — anticoagulation option) 80 units/kg IV"
+          },
+          "contraindications": "Active hemorrhagic stroke; massive infarct; HIT",
+          "monitoring": "INR; aPTT q6h until therapeutic; neuro checks",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hydrocortisone (if pituitary apoplexy with hemodynamic instability)",
+          "route": "IV",
+          "indication": "Acute adrenal crisis in pituitary apoplexy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Hydrocortisone (if pituitary apoplexy with hemodynamic instability) 100 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "100 mg IV bolus; then 50 mg IV q8h until endocrine evaluation complete. Life-saving — do not wait for cortisol results if clinical suspicion high",
+            "orderSentence": "Hydrocortisone (if pituitary apoplexy with hemodynamic instability) 100 mg IV"
+          },
+          "contraindications": "None in acute crisis",
+          "monitoring": "BP; glucose; electrolytes; cortisol levels",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ceftriaxone (if bacterial meningitis suspected)",
+          "route": "IV",
+          "indication": "Febrile thunderclap headache with meningeal signs — empiric gram-negative and pneumococcal coverage",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Ceftriaxone (if bacterial meningitis suspected) 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Ceftriaxone 2 g IV q12h. Do NOT delay antibiotics for LP or imaging",
+            "orderSentence": "Ceftriaxone (if bacterial meningitis suspected) 2 g IV"
+          },
+          "contraindications": "Cephalosporin allergy (use meropenem or chloramphenicol)",
+          "monitoring": "CSF culture results; clinical response; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Vancomycin (if bacterial meningitis suspected)",
+          "route": "IV",
+          "indication": "Empiric MRSA and resistant pneumococcal coverage in meningitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-20 mg/kg",
+                "orderSentence": "Vancomycin (if bacterial meningitis suspected) 15-20 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "15-20 mg/kg IV q8-12h; target trough 15-20 mcg/mL. Administer with ceftriaxone for empiric coverage",
+            "orderSentence": "Vancomycin (if bacterial meningitis suspected) 15-20 mg/kg IV"
+          },
+          "contraindications": "Vancomycin allergy (use linezolid)",
+          "monitoring": "Vancomycin trough; renal function; ototoxicity",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone (if bacterial meningitis suspected)",
+          "route": "IV",
+          "indication": "Reduce inflammation and improve outcomes in bacterial meningitis (especially pneumococcal)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.15 mg/kg",
+                "orderSentence": "Dexamethasone (if bacterial meningitis suspected) 0.15 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.15 mg/kg IV q6h x 4 days. Give 15-20 min before or with first antibiotic dose",
+            "orderSentence": "Dexamethasone (if bacterial meningitis suspected) 0.15 mg/kg IV"
+          },
+          "contraindications": "GI bleeding (relative); immunocompromised (relative)",
+          "monitoring": "Blood glucose; GI symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Remove vasoconstrictor triggers (if RCVS suspected)",
+          "route": "-",
+          "indication": "Immediately discontinue all potential triggers: triptans, ergotamines, SSRIs/SNRIs, cannabis, cocaine, amphetamines, nasal decongestants, nicotine patches",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Remove vasoconstrictor triggers (if RCVS suspected) - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Discontinue all vasoconstrictor agents immediately upon suspicion of RCVS; document all discontinued medications",
+            "orderSentence": "Remove vasoconstrictor triggers (if RCVS suspected) - -"
+          },
+          "contraindications": "None",
+          "monitoring": "Document all discontinued medications; headache frequency decreases after trigger removal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Headache-Specific Red Flag Management": [
+        {
+          "item": "Pneumatic compression devices (DVT prophylaxis)",
+          "route": "External",
+          "indication": "All admitted thunderclap headache patients (immobilized during workup; many diagnoses carry VTE risk)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Pneumatic compression devices (DVT prophylaxis) - External"
+              }
+            ],
+            "route": "External",
+            "instructions": "Apply bilateral sequential compression devices on admission; maintain until patient is ambulatory",
+            "orderSentence": "Pneumatic compression devices (DVT prophylaxis) - External"
+          },
+          "contraindications": "Acute DVT in affected limb",
+          "monitoring": "Skin checks; device compliance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pantoprazole (stress ulcer prophylaxis)",
+          "route": "IV",
+          "indication": "ICU admission or steroid use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole (stress ulcer prophylaxis) 40 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "40 mg IV/PO daily",
+            "orderSentence": "Pantoprazole (stress ulcer prophylaxis) 40 mg IV"
+          },
+          "contraindications": "C. diff risk (long-term)",
+          "monitoring": "GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Docusate (stool softener)",
+          "route": "PO",
+          "indication": "Avoid Valsalva/straining (may increase ICP; re-bleed risk in SAH)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Docusate (stool softener) 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO BID",
+            "orderSentence": "Docusate (stool softener) 100 mg PO"
+          },
+          "contraindications": "Bowel obstruction",
+          "monitoring": "Bowel movements",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology / Vascular neurology — ALL thunderclap headaches; diagnostic guidance; RCVS management; CVT management; dissection",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurosurgery — SAH confirmed or suspected; aneurysm securing; EVD for hydrocephalus; pituitary apoplexy (transsphenoidal approach)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Interventional neuroradiology / Neuroendovascular — aneurysm coiling; intra-arterial vasospasm treatment; thrombectomy for CVT (refractory); stenting for dissection",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurocritical care / Neurointensivist — SAH ICU management; deteriorating patient; vasospasm monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ophthalmology — pituitary apoplexy (visual field assessment); papilledema evaluation; Terson syndrome (vitreous hemorrhage in SAH)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Endocrinology — pituitary apoplexy hormone replacement; long-term pituitary monitoring",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Hematology — CVT with thrombophilia; coagulopathy management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Infectious disease — meningitis confirmed or atypical CSF findings",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Headache specialist / Neurology outpatient — negative workup; primary thunderclap headache; migraine variant; follow-up for recurrence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work / Case management — family support; disposition planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Thunderclap headache is a neurological emergency — every episode requires evaluation until a cause is identified or excluded",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Call 911 immediately if: sudden severe headache (\"worst headache of life\"), loss of consciousness, seizure, new weakness, vision changes, fever with stiff neck",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT take aspirin, ibuprofen, or blood thinners before evaluation is complete (may worsen bleeding if SAH)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid triggers: cocaine, amphetamines, triptans, heavy exertion, Valsalva until diagnosis is confirmed",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "If discharged after negative workup: return immediately if headache recurs with same severity, if new symptoms develop (weakness, vision changes, confusion), or if fever develops",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report any recurrent thunderclap headaches over days-to-weeks to the treating team immediately — recurrence indicates RCVS and requires follow-up imaging even if initial workup is negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow up with neurology within 1-2 weeks after discharge; return sooner if symptoms recur",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "First-degree relatives of SAH patients: undergo aneurysm screening if 2 or more family members are affected",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Stop all cocaine and amphetamine use immediately (strongly associated with SAH, RCVS, and dissection)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stop smoking (strongest modifiable risk factor for aneurysm formation)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain blood pressure control (<130/80 mmHg long-term)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid vasoconstrictor medications (triptans, ergotamines, decongestants) until RCVS excluded",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit alcohol intake (heavy drinking increases SAH risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain adequate hydration (dehydration may contribute to CVT risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Discontinue oral contraceptives if CVT diagnosed; use non-estrogen alternatives (oral contraceptives increase CVT risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid extreme exertion or Valsalva maneuvers during the acute evaluation period",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Subarachnoid hemorrhage (SAH)",
+      "features": "Sudden severe headache; loss of consciousness in 50%; meningismus; may have focal deficits; up to 25% present with sentinel headache days before rupture",
+      "tests": "CT head (blood in basal cisterns); LP (xanthochromia, non-clearing RBCs); CTA (aneurysm)"
+    },
+    {
+      "diagnosis": "Reversible cerebral vasoconstriction syndrome (RCVS)",
+      "features": "Recurrent thunderclap headaches over 1-3 weeks; triggered by exertion, Valsalva, sexual activity, showering, emotional stress; vasoconstrictor exposure history; may have convexity SAH; no aneurysm",
+      "tests": "CTA/MRA (multifocal segmental narrowing — may be normal in first week); MRI (convexity SAH, PRES overlap, stroke); resolves on follow-up imaging at 12 weeks"
+    },
+    {
+      "diagnosis": "Cerebral venous thrombosis (CVT)",
+      "features": "Headache (may be thunderclap or progressive); seizures; focal deficits; risk factors: OCP, pregnancy/postpartum, thrombophilia, dehydration; may have hemorrhagic venous infarct",
+      "tests": "MRV or CTV (absent flow in dural sinuses); CT may show \"cord sign\" (hyperdense sinus); D-dimer elevated"
+    },
+    {
+      "diagnosis": "Cervical artery dissection (carotid or vertebral)",
+      "features": "Headache/neck pain (ipsilateral); Horner syndrome (carotid); may have stroke; history of minor trauma, chiropractic manipulation, or connective tissue disorder",
+      "tests": "CTA neck (intimal flap, pseudoaneurysm, string sign); MRI neck (crescent sign — intramural hematoma on fat-sat T1)"
+    },
+    {
+      "diagnosis": "Pituitary apoplexy",
+      "features": "Sudden headache + visual field defect (bitemporal hemianopia) + ophthalmoplegia (CN III, IV, VI); known pituitary adenoma (often undiagnosed); may have signs of acute adrenal crisis (hypotension, hyponatremia)",
+      "tests": "MRI sella (hemorrhagic/necrotic pituitary mass with sellar expansion); hormone panel (cortisol, TSH, prolactin); visual field testing"
+    },
+    {
+      "diagnosis": "Hypertensive emergency",
+      "features": "Severely elevated BP (>180/120) with headache and end-organ damage (encephalopathy, renal failure, retinal hemorrhages); no blood on CT; may overlap with PRES",
+      "tests": "CT (no blood; may show PRES features); BP measurement; end-organ evaluation; MRI (posterior white matter edema in PRES)"
+    },
+    {
+      "diagnosis": "Bacterial meningitis",
+      "features": "Fever + headache + nuchal rigidity + altered mental status (classic triad in ~50%); may have rash (meningococcemia); progresses rapidly",
+      "tests": "LP (neutrophilic pleocytosis, low glucose, high protein, positive gram stain/culture); blood cultures; procalcitonin elevated; CT typically normal"
+    },
+    {
+      "diagnosis": "Primary intracerebral hemorrhage",
+      "features": "Focal deficits with headache; parenchymal hematoma on CT with minimal subarachnoid blood; hypertensive basal ganglia/thalamic location",
+      "tests": "CT (parenchymal hemorrhage, not cisternal pattern); CTA (no aneurysm unless hemorrhage extends into subarachnoid space)"
+    },
+    {
+      "diagnosis": "Posterior reversible encephalopathy syndrome (PRES)",
+      "features": "Headache, seizures, visual disturbance, altered mental status; hypertension; often overlaps with RCVS or eclampsia",
+      "tests": "MRI (posterior white matter vasogenic edema on FLAIR/T2); CT may be normal early; usually reversible with BP control"
+    },
+    {
+      "diagnosis": "Ischemic stroke",
+      "features": "Sudden onset focal deficits; headache present in 25% of strokes; basilar artery occlusion may present with thunderclap headache and rapid deterioration",
+      "tests": "CT (early signs of infarct; may be normal within 6h); CTA (large vessel occlusion); MRI DWI (acute restricted diffusion)"
+    },
+    {
+      "diagnosis": "Primary (benign) thunderclap headache",
+      "features": "Diagnosis of EXCLUSION after complete negative workup; mimics SAH presentation; may recur; some may represent undiagnosed RCVS",
+      "tests": "Normal CT, LP, CTA, MRI/MRA; clinical follow-up"
+    },
+    {
+      "diagnosis": "Spontaneous intracranial hypotension (SIH) / CSF leak",
+      "features": "Orthostatic headache (worse upright, better supine); may present acutely with thunderclap; may have subdural hygromas",
+      "tests": "MRI (diffuse pachymeningeal enhancement, brain sagging); LP (low opening pressure <6 cm H2O); CT myelography for leak localization"
+    },
+    {
+      "diagnosis": "Colloid cyst of third ventricle",
+      "features": "Positional thunderclap headache with transient obstruction of foramen of Monro; may cause acute hydrocephalus; rare but dangerous",
+      "tests": "CT/MRI (hyperdense/enhancing cyst at foramen of Monro; acute hydrocephalus if obstructing)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "CT head sensitivity ~98-100% within 6h for SAH",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Perry et al. (BMJ 2011)](https://pubmed.ncbi.nlm.nih.gov/21768192/) — Prospective cohort; 3132 patients; sensitivity 100% (95% CI 97-100%) for CT within 6h"
+    },
+    {
+      "recommendation": "LP mandatory if CT negative but clinical suspicion for SAH persists",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[AHA/ASA SAH Guidelines (Connolly et al. Stroke 2012)](https://pubmed.ncbi.nlm.nih.gov/22556195/)"
+    },
+    {
+      "recommendation": "Xanthochromia by spectrophotometry is gold standard CSF test for SAH",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[UK National SAH Guidelines (Edlow et al. Stroke 2016)](https://pubmed.ncbi.nlm.nih.gov/27217503/); sensitivity >95% at 12h-2 weeks"
+    },
+    {
+      "recommendation": "CTA sensitivity 95-100% for aneurysms >3mm",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[White PM et al. (Radiology 2003)](https://pubmed.ncbi.nlm.nih.gov/14500398/) — Meta-analysis of CTA for intracranial aneurysm detection; [Defined et al. (Stroke 2006)](https://pubmed.ncbi.nlm.nih.gov/16902176/) — requires full author verification"
+    },
+    {
+      "recommendation": "Anticoagulation for CVT even with hemorrhagic infarct",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[EFNS Guidelines (Ferro et al. Eur J Neurol 2017)](https://pubmed.ncbi.nlm.nih.gov/28128773/); [AHA/ASA CVT Guidelines (Saposnik et al. Stroke 2011)](https://pubmed.ncbi.nlm.nih.gov/21293023/)"
+    },
+    {
+      "recommendation": "Nimodipine 60 mg PO q4h x 21 days for SAH vasospasm prevention",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Pickard et al. (BMJ 1989)](https://pubmed.ncbi.nlm.nih.gov/2496789/)"
+    },
+    {
+      "recommendation": "RCVS: calcium channel blockers (nimodipine/verapamil) for headache and vasoconstriction",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Ducros et al. (Brain 2007)](https://pubmed.ncbi.nlm.nih.gov/17468116/); [Singhal et al. (Neurology 2011)](https://pubmed.ncbi.nlm.nih.gov/21383328/)"
+    },
+    {
+      "recommendation": "RCVS: vasoconstriction resolves within 12 weeks — follow-up imaging to confirm",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Calabrese et al. (Ann Intern Med 2007)](https://pubmed.ncbi.nlm.nih.gov/17210890/)"
+    },
+    {
+      "recommendation": "Cervical artery dissection: antiplatelet vs anticoagulation equivalent",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[CADISS trial (Markus et al. Lancet Neurol 2015)](https://pubmed.ncbi.nlm.nih.gov/25987284/)"
+    },
+    {
+      "recommendation": "Pituitary apoplexy: emergent corticosteroid replacement is life-saving",
+      "evidenceLevel": "Class I, Level C",
+      "source": "[UK Pituitary Apoplexy Guidelines (Rajasekaran et al. Clin Endocrinol 2011)](https://pubmed.ncbi.nlm.nih.gov/20550536/)"
+    },
+    {
+      "recommendation": "D-dimer sensitivity ~97% for CVT; negative D-dimer has high NPV",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Kosinski et al. (Stroke 2004)](https://pubmed.ncbi.nlm.nih.gov/15243148/)"
+    },
+    {
+      "recommendation": "Ottawa SAH Rule: 100% sensitivity for ruling out SAH in ED (validated clinical decision rule)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Perry et al. (JAMA 2013)](https://pubmed.ncbi.nlm.nih.gov/24065012/)"
+    },
+    {
+      "recommendation": "Recurrent thunderclap headaches over days suggest RCVS over SAH",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Ducros et al. (Brain 2007)](https://pubmed.ncbi.nlm.nih.gov/17468116/)"
+    },
+    {
+      "recommendation": "Primary thunderclap headache is a diagnosis of exclusion only",
+      "evidenceLevel": "Class I, Level C",
+      "source": "[ICHD-3 (Headache Classification Committee, Cephalalgia 2018)](https://pubmed.ncbi.nlm.nih.gov/29368949/)"
+    },
+    {
+      "recommendation": "SBP <160 until aneurysm secured in SAH",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[AHA/ASA SAH Guidelines (Connolly et al. Stroke 2012)](https://pubmed.ncbi.nlm.nih.gov/22556195/)"
+    },
+    {
+      "recommendation": "Early aneurysm securing (<24h) improves outcomes",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[AHA/ASA SAH Guidelines 2012](https://pubmed.ncbi.nlm.nih.gov/22556195/); [de Gans et al. (Neurosurgery 2002)](https://pubmed.ncbi.nlm.nih.gov/11844269/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Blood pressure",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Continuous in ED and ICU. q1h on floor. SAH: SBP <160 until aneurysm secured. Hypertensive emergency: reduce MAP 20-25% in first hour",
+      "action": "Titrate antihypertensives; arterial line if labile"
+    },
+    {
+      "item": "GCS / Neurologic exam",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q1h x 12h; then q2h x 24h; then q4h. Document GCS, pupillary response, motor exam, speech",
+      "action": "If declining: STAT repeat CT; reassess diagnosis; escalate care"
+    },
+    {
+      "item": "Headache severity (pain scale 0-10)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q2-4h; with each assessment",
+      "action": "If worsening or new thunderclap recurrence: repeat imaging; RCVS likely if recurrent"
+    },
+    {
+      "item": "Temperature",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q4h (q1h if febrile)",
+      "action": "If febrile: infection workup (blood cultures, UA, CXR); LP if not yet performed; antibiotics if meningitis suspected"
+    },
+    {
+      "item": "Serum sodium",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q8h (q6h if SAH confirmed — hyponatremia common)",
+      "action": "If <135: differentiate CSW vs SIADH (if SAH); fluid/salt management"
+    },
+    {
+      "item": "Blood glucose",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q6h",
+      "action": "Insulin if hyperglycemic; avoid <60"
+    },
+    {
+      "item": "ICP (if EVD placed for SAH/hydrocephalus)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Continuous; record q1h",
+      "action": "CSF drainage; osmotherapy; surgical decompression"
+    },
+    {
+      "item": "Troponin / BNP",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE",
+      "frequency": "Troponin q8h x 24h; then daily if SAH",
+      "action": "If rising: echo; cardiology consult"
+    },
+    {
+      "item": "aPTT (if on heparin for CVT or dissection)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q6h until therapeutic, then daily",
+      "action": "Adjust heparin dose; assess for bleeding"
+    },
+    {
+      "item": "Repeat CT head",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Repeat if neurologic change; at 24h if SAH; post-LP if concern for herniation",
+      "action": "New hemorrhage or infarct: escalate to appropriate pathway"
+    },
+    {
+      "item": "Transcranial Doppler (if SAH confirmed)",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Daily from day 3 through day 14",
+      "action": "If velocities rising: CTA/CTP; induced hypertension if symptomatic"
+    },
+    {
+      "item": "Cortisol / pituitary hormones (if apoplexy)",
+      "ED": "-",
+      "HOSP": "URGENT",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT",
+      "frequency": "At diagnosis; repeat at 48-72h; long-term outpatient monitoring",
+      "action": "Replacement therapy; endocrinology follow-up"
+    },
+    {
+      "item": "Visual fields (if pituitary apoplexy)",
+      "ED": "-",
+      "HOSP": "URGENT",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT",
+      "frequency": "At presentation; daily if visual deficits present",
+      "action": "Neurosurgical decompression if worsening"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home from ED (negative workup)",
+      "criteria": "Complete negative evaluation: normal CT head, normal CTA head/neck, normal LP (performed ≥6h from onset with no xanthochromia, no excess RBCs, normal opening pressure). Stable neurologic exam. Patient understands return precautions. Neurology follow-up arranged within 1-2 weeks. Obtain outpatient MRI/MRA if not performed in ED"
+    },
+    {
+      "disposition": "Admit to observation / inpatient neurology",
+      "criteria": "Inconclusive workup (LP pending, CTA pending, awaiting MRI); persistent severe headache requiring IV analgesia; recurrent thunderclap headaches (RCVS likely); new neurologic deficit; abnormal labs requiring monitoring"
+    },
+    {
+      "disposition": "Admit to Neuro-ICU",
+      "criteria": "Confirmed SAH (all cases — minimum 14-21 days ICU monitoring); CVT with hemorrhagic infarct or declining GCS; pituitary apoplexy with hemodynamic instability; large territorial stroke from dissection or RCVS; any thunderclap headache patient with GCS ≤12 or declining exam"
+    },
+    {
+      "disposition": "Transfer to comprehensive stroke center",
+      "criteria": "SAH confirmed and no neurosurgery or interventional neuroradiology available on-site — TRANSFER IMMEDIATELY; suspected CVT or dissection requiring endovascular intervention not available locally"
+    },
+    {
+      "disposition": "Outpatient follow-up (after negative ED evaluation)",
+      "criteria": "Neurology within 1-2 weeks; outpatient MRI/MRA if not done; repeat CTA/MRA at 4-6 weeks if RCVS suspected (vasoconstriction may develop delayed); aneurysm screening for family members if SAH"
+    }
+  ]
+}

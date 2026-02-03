@@ -1,0 +1,1210 @@
+{
+  "id": "peroneal-neuropathy",
+  "title": "Peroneal Neuropathy (Common Peroneal / Common Fibular Neuropathy)",
+  "version": "1.1",
+  "icd10": [
+    "** G57.30 (Lesion of lateral popliteal nerve",
+    "unspecified lower limb)",
+    "G57.31 (Lesion of lateral popliteal nerve",
+    "right lower limb)",
+    "G57.32 (Lesion of lateral popliteal nerve",
+    "left lower limb)",
+    "G57.33 (Lesion of lateral popliteal nerve",
+    "bilateral lower limbs)",
+    "G57.80 (Other mononeuropathies of lower limb",
+    "unspecified)",
+    "G57.90 (Unspecified mononeuropathy of lower limb",
+    "unspecified)"
+  ],
+  "scope": "** Evaluation and management of common peroneal (fibular) neuropathy at the fibular head from initial presentation through electrodiagnostic confirmation, conservative management, and surgical referral. Covers foot drop assessment, localization with EMG/NCS, differentiation from L5 radiculopathy and sciatic neuropathy, ankle-foot orthosis fitting, physical therapy, and indications for surgical decompression or tendon transfer. Settings: ED (acute foot drop evaluation), HOSP (post-surgical/post-traumatic), OPD (primary management). For deep peroneal neuropathy (anterior tarsal tunnel syndrome), refer to specialized evaluation.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Fasting glucose (CPT 82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Diabetes is the most common metabolic cause of peroneal neuropathy (increased nerve vulnerability)",
+          "target": "<100 mg/dL"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen for diabetes/prediabetes; diabetic nerves more susceptible to compression",
+          "target": "<5.7%"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection screen (post-traumatic); anemia workup; hematologic malignancy",
+          "target": "Normal"
+        },
+        {
+          "item": "BMP (CPT 80048)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolyte abnormalities; renal function (affects medication dosing)",
+          "target": "Normal"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "ESR (CPT 85652)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Vasculitic neuropathy screen; inflammatory etiology",
+          "target": "<20 mm/hr"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory marker; vasculitis, autoimmune",
+          "target": "<3.0 mg/L"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism increases susceptibility to entrapment neuropathy",
+          "target": "0.4-4.0 mIU/L"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Concomitant peripheral neuropathy contributing to nerve vulnerability",
+          "target": ">300 pg/mL"
+        },
+        {
+          "item": "Folate (CPT 82746)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Nutritional neuropathy; often deficient with B12",
+          "target": ">7 ng/mL"
+        },
+        {
+          "item": "Rheumatoid factor (CPT 86431)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "RA-associated peroneal neuropathy (Baker cyst, synovial compression at knee)",
+          "target": "Negative"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Connective tissue disease/vasculitic neuropathy screen",
+          "target": "Negative"
+        },
+        {
+          "item": "ANCA panel (CPT 86235/86236)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Vasculitic neuropathy (mononeuritis multiplex pattern)",
+          "target": "Negative"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP) (CPT 86335)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Paraproteinemic neuropathy; myeloma with focal nerve involvement",
+          "target": "No M-spike"
+        },
+        {
+          "item": "Uric acid (CPT 84550)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Gout with tophi at fibular head (rare but reported cause)",
+          "target": "Normal (3.5-7.2 mg/dL male; 2.5-6.2 mg/dL female)"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Anti-ganglioside antibodies (GM1, anti-MAG) (CPT 86255)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Multifocal motor neuropathy with conduction block mimicking peroneal neuropathy",
+          "target": "Negative"
+        },
+        {
+          "item": "Cryoglobulins (CPT 82784)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Cryoglobulinemic vasculitis causing mononeuropathy",
+          "target": "Negative"
+        },
+        {
+          "item": "Hepatitis B/C panel (CPT 87340/86803)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Vasculitic neuropathy associated with hepatitis (PAN, cryoglobulinemia)",
+          "target": "Negative"
+        },
+        {
+          "item": "HIV antibody/antigen (CPT 87389)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "HIV-associated neuropathy; vasculitic mononeuropathy",
+          "target": "Negative"
+        },
+        {
+          "item": "Genetic testing (CMT panel) (CPT 81405)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Hereditary neuropathy with liability to pressure palsies (HNPP) if recurrent or bilateral",
+          "target": "No PMP22 deletion"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Nerve conduction studies (NCS) (CPT 95907-95909) and EMG (CPT 95885-95886)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Gold standard for diagnosis and localization; optimal timing 2-3 weeks post-onset for denervation; NCS abnormalities may be immediate",
+          "target": "Focal slowing or conduction block at fibular head; reduced CMAP amplitude peroneal nerve; normal superficial peroneal SNAP if at fibular head; denervation in tibialis anterior, peroneus longus, extensor digitorum brevis",
+          "contraindications": "Anticoagulation for needle EMG (relative)"
+        },
+        {
+          "item": "Knee X-ray (CPT 73560)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Exclude fracture of proximal fibula, osteophytes, or bony mass at fibular head",
+          "target": "Normal; no fracture or mass at fibular head",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI knee without contrast (CPT 73721)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Evaluate for mass lesion (ganglion cyst, nerve sheath tumor, Baker cyst) compressing peroneal nerve at fibular head",
+          "target": "No mass lesion; normal peroneal nerve signal",
+          "contraindications": "Pacemaker; claustrophobia"
+        },
+        {
+          "item": "MRI knee with and without contrast (CPT 73723)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If tumor or intraneural pathology suspected; post-gadolinium enhancement in nerve sheath tumor",
+          "target": "No enhancing mass",
+          "contraindications": "GFR <30; pacemaker; gadolinium allergy"
+        },
+        {
+          "item": "Ultrasound of peroneal nerve at fibular head (CPT 76882)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Point-of-care evaluation; can visualize nerve swelling, ganglion cyst, entrapment; operator-dependent",
+          "target": "Normal nerve caliber at fibular head (<5 mm CSA typical); no cyst or mass",
+          "contraindications": "None"
+        },
+        {
+          "item": "MRI lumbar spine without contrast (CPT 72148)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Rule out L5 radiculopathy if clinical localization uncertain",
+          "target": "No L4-L5 or L5-S1 foraminal stenosis/disc herniation",
+          "contraindications": "Pacemaker; claustrophobia"
+        },
+        {
+          "item": "MRI lumbar spine with and without contrast (CPT 72158)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If neoplastic or inflammatory radiculopathy suspected",
+          "target": "No enhancing nerve root lesion",
+          "contraindications": "GFR <30; pacemaker; gadolinium allergy"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "MR neurography of lower extremity (CPT 73720)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "High-resolution nerve imaging if standard MRI inconclusive; can visualize nerve fascicular detail",
+          "target": "Normal nerve signal and caliber; no intraneural or perineural pathology",
+          "contraindications": "Pacemaker; claustrophobia"
+        },
+        {
+          "item": "CT knee without contrast (CPT 73700)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Bony pathology at fibular head not visualized on X-ray",
+          "target": "No fracture, exostosis, or osteochondroma",
+          "contraindications": "Pregnancy (relative)"
+        },
+        {
+          "item": "Diagnostic nerve block (peroneal at fibular head) (CPT 64450)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Confirm localization if clinical and electrodiagnostic data discordant",
+          "target": "Temporary symptom improvement confirms localization",
+          "contraindications": "Infection; anticoagulation; allergy to local anesthetic"
+        },
+        {
+          "item": "MRI pelvis (CPT 72196)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Exclude sciatic nerve lesion or pelvic mass causing proximal nerve injury",
+          "target": "Normal sciatic nerve; no pelvic mass",
+          "contraindications": "GFR <30; pacemaker"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Ankle-foot orthosis (AFO)",
+          "route": "External",
+          "indication": "First-line for foot drop regardless of etiology; prevents tripping, ankle sprains, and gait instability",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Custom or prefabricated AFO",
+                "orderSentence": "Ankle-foot orthosis (AFO) Custom or prefabricated AFO External"
+              }
+            ],
+            "route": "External",
+            "instructions": "Fit AFO immediately when foot drop identified; custom molded if expected >6 months; prefabricated for acute/temporary use; dorsiflexion assist type preferred",
+            "orderSentence": "Ankle-foot orthosis (AFO) Custom or prefabricated AFO External"
+          },
+          "contraindications": "None",
+          "monitoring": "Skin breakdown at calf/ankle; fit adjustment; compliance",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Remove compressive cause",
+          "route": "External",
+          "indication": "Eliminate identified external compression at fibular head",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Discontinue",
+                "orderSentence": "Remove compressive cause Discontinue External"
+              }
+            ],
+            "route": "External",
+            "instructions": "Stop leg crossing; remove tight casts, stockings, or braces; pad fibular head if bedbound; modify positioning",
+            "orderSentence": "Remove compressive cause Discontinue External"
+          },
+          "contraindications": "None",
+          "monitoring": "Ensure compliance; reassess nerve function",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Weight-bearing precautions (if fracture)",
+          "route": "External",
+          "indication": "Proximal fibula fracture associated with peroneal nerve injury",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Non-weight-bearing",
+                "orderSentence": "Weight-bearing precautions (if fracture) Non-weight-bearing External"
+              }
+            ],
+            "route": "External",
+            "instructions": "Per orthopedic guidance; typically 6-8 weeks",
+            "orderSentence": "Weight-bearing precautions (if fracture) Non-weight-bearing External"
+          },
+          "contraindications": "None",
+          "monitoring": "Fracture healing on follow-up imaging",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain/dysesthesia along lateral leg or dorsal foot",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; increase by 300 mg q3-7d as tolerated; target 900-1800 mg/day divided TID; max 3600 mg/day",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Renal impairment (dose adjust per CrCl)",
+          "monitoring": "Sedation, dizziness, peripheral edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain (alternative to gabapentin)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg/day for neuropathic pain",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Renal impairment; Class V controlled",
+          "monitoring": "Sedation, weight gain, edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Neuropathic pain with comorbid depression/anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily; increase to 60 mg after 1 week; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg PO"
+          },
+          "contraindications": "Hepatic impairment; CrCl <30; MAOIs; narrow-angle glaucoma",
+          "monitoring": "Nausea, BP; taper to discontinue",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "Nocturnal neuropathic pain (second-line)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Amitriptyline 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg qHS; increase by 10 mg weekly; max 75 mg qHS",
+            "orderSentence": "Amitriptyline 10 mg PO"
+          },
+          "contraindications": "Cardiac conduction abnormality; urinary retention; glaucoma; elderly",
+          "monitoring": "ECG if >50 mg; anticholinergic effects",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "Acute pain/inflammation at injury site",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg",
+                "orderSentence": "Ibuprofen 400 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Ibuprofen 400 mg TID with food; short course 7-14 days; not for chronic neuropathic pain",
+            "orderSentence": "Ibuprofen 400 mg PO"
+          },
+          "contraindications": "GI bleeding; renal impairment; cardiovascular disease; third trimester pregnancy",
+          "monitoring": "GI symptoms; renal function",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Naproxen",
+          "route": "PO",
+          "indication": "Acute pain/inflammation (alternative NSAID)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Naproxen 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Naproxen 500 mg BID with food; short course 7-14 days",
+            "orderSentence": "Naproxen 500 mg PO"
+          },
+          "contraindications": "GI bleeding; renal impairment; cardiovascular disease",
+          "monitoring": "GI symptoms; renal function",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topical lidocaine 5% patch",
+          "route": "TOP",
+          "indication": "Localized neuropathic pain over lateral leg/dorsal foot",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 patch",
+                "orderSentence": "Topical lidocaine 5% patch 1 patch TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Apply over painful area 12h on, 12h off; up to 3 patches simultaneously",
+            "orderSentence": "Topical lidocaine 5% patch 1 patch TOP"
+          },
+          "contraindications": "Broken skin; severe hepatic impairment",
+          "monitoring": "Minimal systemic absorption; local skin irritation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rehabilitative/Conservative": [
+        {
+          "item": "Physical therapy (CPT 97110/97116)",
+          "route": "External",
+          "indication": "Core rehabilitation for foot drop; nerve recovery optimization; gait training",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "PT prescription",
+                "orderSentence": "Physical therapy (CPT 97110/97116) PT prescription External"
+              }
+            ],
+            "route": "External",
+            "instructions": "Ankle dorsiflexion/eversion strengthening; gait training with AFO; balance exercises; nerve gliding; electrical stimulation (NMES) to tibialis anterior",
+            "orderSentence": "Physical therapy (CPT 97110/97116) PT prescription External"
+          },
+          "contraindications": "Acute fracture (modify program)",
+          "monitoring": "Muscle strength grading (MRC scale); gait quality; functional improvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuromuscular electrical stimulation (NMES)",
+          "route": "External",
+          "indication": "Prevent muscle atrophy during reinnervation; maintain ankle dorsiflexor mass",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "NMES device",
+                "orderSentence": "Neuromuscular electrical stimulation (NMES) NMES device External"
+              }
+            ],
+            "route": "External",
+            "instructions": "Apply to tibialis anterior; 20-30 minutes daily; per PT protocol; during period of denervation/reinnervation",
+            "orderSentence": "Neuromuscular electrical stimulation (NMES) NMES device External"
+          },
+          "contraindications": "Pacemaker/defibrillator; over open wound; deep vein thrombosis",
+          "monitoring": "Muscle bulk; contraction quality; skin irritation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fibular head padding/protection",
+          "route": "External",
+          "indication": "Prevent further compression in hospitalized or bedbound patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Foam pad",
+                "orderSentence": "Fibular head padding/protection Foam pad External"
+              }
+            ],
+            "route": "External",
+            "instructions": "Place foam pad at lateral knee/fibular head; avoid leg crossing; reposition every 2 hours",
+            "orderSentence": "Fibular head padding/protection Foam pad External"
+          },
+          "contraindications": "None",
+          "monitoring": "Skin integrity; compliance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Vitamin B complex supplementation",
+          "route": "PO",
+          "indication": "Nutritional support for nerve recovery (adjunctive)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "B-complex",
+                "orderSentence": "Vitamin B complex supplementation B-complex PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "One B-complex tablet daily; ensure adequate B1, B6, B12; not evidence-based as monotherapy for recovery",
+            "orderSentence": "Vitamin B complex supplementation B-complex PO"
+          },
+          "contraindications": "B6 >200 mg/day causes neuropathy",
+          "monitoring": "None specific",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Surgical Treatment": [
+        {
+          "item": "Peroneal nerve decompression at fibular head (CPT 64708)",
+          "route": "Surgical",
+          "indication": "Entrapment neuropathy with identifiable compression (fibrous band, tight peroneal tunnel); failed conservative management 3-6 months; progressive weakness",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Surgical decompression",
+                "orderSentence": "Peroneal nerve decompression at fibular head (CPT 64708) Surgical decompression Outpatient surgery"
+              }
+            ],
+            "route": "Outpatient surgery",
+            "instructions": "Release of peroneal tunnel (fascial arch of peroneus longus); neurolysis of common peroneal nerve at fibular head; typically outpatient",
+            "orderSentence": "Peroneal nerve decompression at fibular head (CPT 64708) Surgical decompression Outpatient surgery"
+          },
+          "contraindications": "Active infection; severe medical comorbidity; complete nerve transection (requires repair instead)",
+          "monitoring": "Post-op motor/sensory exam; wound healing; EMG at 3-6 months post-op",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Peroneal nerve repair/grafting (CPT 64712)",
+          "route": "Surgical",
+          "indication": "Complete nerve transection from trauma (laceration, fracture); no recovery on serial EMG at 3-6 months with absent motor units on voluntary activation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Nerve repair or cable graft",
+                "orderSentence": "Peroneal nerve repair/grafting (CPT 64712) Nerve repair or cable graft Inpatient surgery"
+              }
+            ],
+            "route": "Inpatient surgery",
+            "instructions": "Direct repair if gap <2 cm; sural nerve cable graft if gap >2 cm; timing optimal within 6 months of injury",
+            "orderSentence": "Peroneal nerve repair/grafting (CPT 64712) Nerve repair or cable graft Inpatient surgery"
+          },
+          "contraindications": "Severe medical comorbidity; poor surgical candidate; gap too large for grafting (>6-8 cm)",
+          "monitoring": "Serial EMG q3 months; motor function; reinnervation signs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Posterior tibial tendon transfer (CPT 27690)",
+          "route": "Surgical",
+          "indication": "Irreversible foot drop; no EMG evidence of reinnervation at 12-18 months; functional deficit despite AFO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Tendon transfer",
+                "orderSentence": "Posterior tibial tendon transfer (CPT 27690) Tendon transfer Inpatient surgery"
+              }
+            ],
+            "route": "Inpatient surgery",
+            "instructions": "Transfer of posterior tibialis tendon to dorsum of foot to restore dorsiflexion; requires intact posterior tibial nerve",
+            "orderSentence": "Posterior tibial tendon transfer (CPT 27690) Tendon transfer Inpatient surgery"
+          },
+          "contraindications": "Active infection; non-ambulatory patient; insufficient posterior tibial muscle",
+          "monitoring": "Post-op immobilization 6-8 weeks; PT for retraining; gait analysis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ganglion cyst excision (CPT 27347)",
+          "route": "Surgical",
+          "indication": "Ganglion cyst at fibular head compressing peroneal nerve; identified on MRI or ultrasound",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Surgical excision",
+                "orderSentence": "Ganglion cyst excision (CPT 27347) Surgical excision Outpatient surgery"
+              }
+            ],
+            "route": "Outpatient surgery",
+            "instructions": "Excise cyst with capsular base; decompress nerve simultaneously",
+            "orderSentence": "Ganglion cyst excision (CPT 27347) Surgical excision Outpatient surgery"
+          },
+          "contraindications": "Active infection; asymptomatic cyst",
+          "monitoring": "Recurrence (10-15%); nerve function post-op",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Electrodiagnostic medicine/neurology for NCS/EMG to confirm diagnosis, localize lesion, and assess severity; optimal timing 2-3 weeks post-onset",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Orthopedic surgery or peripheral nerve surgery referral if mass lesion, fracture, or failed conservative management >3-6 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical medicine and rehabilitation (PM&R) for comprehensive foot drop rehabilitation program and AFO fitting",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for gait training, ankle strengthening, balance exercises, and NMES program",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Orthotics/prosthetics for custom AFO fitting if foot drop expected to persist >6 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurosurgery consultation if sciatic nerve or proximal lesion suspected on imaging",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Endocrinology for diabetes optimization if contributing to nerve vulnerability",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Podiatry if secondary foot deformity developing (equinovarus contracture)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational medicine for workplace modification if occupational factors contributed to compression",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetics referral if HNPP suspected (recurrent pressure palsies, family history)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Wear ankle-foot orthosis (AFO) during all walking to prevent tripping and ankle injury; remove only for bathing and sleeping",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not cross legs while sitting as this compresses the peroneal nerve at the fibular head and worsens injury",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid prolonged squatting, kneeling, or positions that put pressure on the outer knee area",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Perform ankle dorsiflexion and eversion exercises as instructed by physical therapist to maintain muscle strength during recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Check lateral leg and foot daily for skin breakdown, especially if sensation is reduced; report any sores or ulcers",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report worsening weakness (new difficulty lifting toes), spreading numbness, or pain to physician as this indicates progression requiring urgent re-evaluation",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nerve recovery is slow (approximately 1 inch per month); improvement takes 6-12 months; maintain therapy and AFO use during this period",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid tight boots, stockings, or knee braces that compress the area below the outer knee",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Use caution on stairs and uneven surfaces; the AFO helps but does not fully replace normal ankle function",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "If diabetic, maintain strict blood sugar control as elevated glucose impairs nerve recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pad the lateral knee area when sleeping on the side; place a pillow between the legs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Lose weight if overweight/obese; excess weight increases pressure on peripheral nerves and slows recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid habitual leg crossing; this is the most common compressive cause of peroneal neuropathy (\"crossed-leg palsy\")",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Optimize glycemic control (HbA1c <7%) as diabetes impairs nerve recovery and increases vulnerability to compression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stop smoking to improve microvascular circulation and nerve healing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Maintain adequate nutrition including B vitamins, protein, and micronutrients for nerve repair",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wear appropriate footwear: avoid high-top boots or tight lace-up shoes that compress the dorsal foot (deep peroneal branch)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "For hospitalized patients: apply fibular head padding, reposition frequently, and avoid external compression to prevent iatrogenic peroneal neuropathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Implement fall prevention measures at home: remove loose rugs, ensure adequate lighting, install grab bars if balance impaired",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Notify surgical team of peroneal neuropathy risk during any planned lower extremity surgery, especially knee replacement or proximal fibula procedures",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "L5 radiculopathy",
+      "features": "Back pain radiating to leg; weakness includes hip abduction (gluteus medius) and toe extension; inversion weakness (tibialis posterior - L5 innervated but tibial nerve); positive straight leg raise; reflex usually normal (no L5 reflex); sensory loss extends to medial foot",
+      "tests": "MRI lumbar spine (L4-L5 disc, foraminal stenosis); EMG shows denervation in L5 myotome including non-peroneal muscles (tibialis posterior, gluteus medius); normal peroneal NCS across fibular head"
+    },
+    {
+      "diagnosis": "Sciatic neuropathy",
+      "features": "Weakness involves both peroneal AND tibial nerve distributions (plantar flexion weakness); hamstring weakness possible; hip/buttock pain; history of hip surgery, injection, or trauma",
+      "tests": "EMG shows denervation in tibial-innervated muscles (gastrocnemius, tibialis posterior); abnormal tibial NCS; short head biceps femoris (peroneal division) vs long head (tibial division) helps localize within sciatic"
+    },
+    {
+      "diagnosis": "Lumbosacral plexopathy",
+      "features": "Involves multiple nerve distributions (femoral + peroneal + tibial); hip flexion and knee extension weakness possible; pelvic pain; diabetes, malignancy, or radiation history",
+      "tests": "EMG shows denervation across L2-S1 myotome; MRI pelvis/plexus; CT abdomen/pelvis for mass"
+    },
+    {
+      "diagnosis": "Hereditary neuropathy with liability to pressure palsies (HNPP)",
+      "features": "Recurrent, episodic pressure palsies at multiple sites; family history; young onset; disproportionate slowing on NCS at compression sites",
+      "tests": "Genetic testing for PMP22 deletion; NCS shows diffuse conduction slowing at entrapment sites; nerve biopsy shows tomaculous neuropathy"
+    },
+    {
+      "diagnosis": "Anterior horn cell disease (ALS)",
+      "features": "Progressive weakness without sensory loss; fasciculations; upper motor neuron signs (hyperreflexia, Babinski); bulbar symptoms in advanced disease",
+      "tests": "EMG shows widespread denervation/reinnervation in 3+ regions; normal sensory NCS; no conduction block at fibular head"
+    },
+    {
+      "diagnosis": "Multifocal motor neuropathy with conduction block (MMN)",
+      "features": "Asymmetric distal weakness (often upper limb first); no sensory loss; conduction block outside typical entrapment sites; may mimic peroneal neuropathy",
+      "tests": "Anti-GM1 antibodies; NCS shows motor conduction block in non-entrapment sites; normal sensory studies"
+    },
+    {
+      "diagnosis": "Deep peroneal neuropathy (anterior tarsal tunnel)",
+      "features": "Weakness limited to EDB; sensory loss confined to first web space; foot dorsiflexion preserved; compression at ankle (tight shoes, trauma)",
+      "tests": "EMG/NCS localizes to ankle; fibular head conduction normal; selective EDB denervation only"
+    },
+    {
+      "diagnosis": "Compartment syndrome (anterior compartment)",
+      "features": "Acute onset with trauma; severe pain, tense compartment; pain with passive stretch of toes; late finding: foot drop",
+      "tests": "Compartment pressure measurement (>30 mmHg or within 30 mmHg of diastolic); clinical diagnosis; surgical emergency"
+    },
+    {
+      "diagnosis": "Mononeuritis multiplex (vasculitic)",
+      "features": "Stepwise involvement of multiple nerves; systemic symptoms (fever, weight loss, rash); painful",
+      "tests": "ESR, CRP, ANCA, hepatitis panel; nerve biopsy shows vasculitis; multifocal EMG abnormalities"
+    },
+    {
+      "diagnosis": "Superficial peroneal neuropathy",
+      "features": "Sensory loss over lateral leg and dorsal foot; no motor weakness (unless proximal injury); lateral leg pain; injury at mid-leg fascial defect",
+      "tests": "EMG/NCS: abnormal superficial peroneal SNAP; normal deep peroneal motor; normal tibialis anterior on EMG"
+    },
+    {
+      "diagnosis": "Functional (psychogenic) foot drop",
+      "features": "Inconsistent weakness on formal testing; give-way weakness; Hoover sign positive; no EMG abnormalities; foot dragged but toe clears ground on distraction",
+      "tests": "Normal NCS/EMG; inconsistent exam; psychiatric comorbidity; symptom onset with psychosocial stressor"
+    },
+    {
+      "diagnosis": "Peroneal intraneural ganglion cyst",
+      "features": "Progressive foot drop; palpable fullness at fibular head; ascending weakness pattern follows articular branch from superior tibiofibular joint",
+      "tests": "MRI shows intraneural cyst with tubular extension along articular branch; ultrasound shows cystic structure within nerve"
+    },
+    {
+      "diagnosis": "Knee dislocation/proximal fibula fracture",
+      "features": "Acute traumatic onset; significant knee instability; vascular injury risk (popliteal artery); high-energy mechanism",
+      "tests": "X-ray/CT shows fracture or dislocation; vascular assessment (ABI, CTA); NCS after acute phase"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Common peroneal neuropathy is the most common mononeuropathy of the lower extremity; fibular head is the most frequent compression site",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Stewart JD. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18391155/)"
+    },
+    {
+      "recommendation": "EMG/NCS is the gold standard for diagnosis and localization of peroneal neuropathy; conduction block at fibular head distinguishes demyelinating from axonal lesion",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Katirji B et al. Neurology 1988](https://pubmed.ncbi.nlm.nih.gov/2832786/)"
+    },
+    {
+      "recommendation": "Habitual leg crossing is the most common identifiable cause of peroneal neuropathy at the fibular head",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Aprile I et al. Neurol Sci 2005](https://pubmed.ncbi.nlm.nih.gov/15995827/)"
+    },
+    {
+      "recommendation": "Weight loss >10 kg is a significant risk factor for peroneal neuropathy (loss of protective fat pad at fibular head)",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Sotaniemi KA. J Neurol Neurosurg Psychiatry 1984](https://pubmed.ncbi.nlm.nih.gov/6707657/)"
+    },
+    {
+      "recommendation": "Diabetes mellitus increases susceptibility to focal compression neuropathies including peroneal nerve",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Pourmemari MH et al. Acta Neurol Scand 2018](https://pubmed.ncbi.nlm.nih.gov/29488200/)"
+    },
+    {
+      "recommendation": "AFO use improves gait mechanics and reduces fall risk in patients with foot drop",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Alam M et al. Prosthet Orthot Int 2014](https://pubmed.ncbi.nlm.nih.gov/24327668/)"
+    },
+    {
+      "recommendation": "Surgical decompression of peroneal nerve at fibular head shows good outcomes in selected entrapment cases",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Mont MA et al. Clin Orthop Relat Res 1996](https://pubmed.ncbi.nlm.nih.gov/8769449/)"
+    },
+    {
+      "recommendation": "Peroneal intraneural ganglion cysts originate from the superior tibiofibular joint via the articular branch; surgical disconnection of articular branch prevents recurrence",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Spinner RJ et al. J Neurosurg 2003](https://pubmed.ncbi.nlm.nih.gov/12546362/)"
+    },
+    {
+      "recommendation": "Posterior tibial tendon transfer provides durable functional improvement in irreversible foot drop",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Vigasio A et al. J Bone Joint Surg Am 2008](https://pubmed.ncbi.nlm.nih.gov/18519322/)"
+    },
+    {
+      "recommendation": "MRI and ultrasound are complementary for evaluating structural causes of peroneal neuropathy",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Visser LH. Muscle Nerve 2006](https://pubmed.ncbi.nlm.nih.gov/16897762/)"
+    },
+    {
+      "recommendation": "HNPP (PMP22 deletion) should be suspected in recurrent or bilateral peroneal neuropathy, especially with family history",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Mouton P et al. Brain 1999](https://pubmed.ncbi.nlm.nih.gov/10219780/)"
+    },
+    {
+      "recommendation": "Neuromuscular electrical stimulation helps maintain muscle bulk during denervation period but evidence is limited",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Kern H et al. Eur J Transl Myol 2014](https://pubmed.ncbi.nlm.nih.gov/26913147/)"
+    },
+    {
+      "recommendation": "Short head of biceps femoris EMG helps differentiate peroneal neuropathy at fibular head from sciatic neuropathy (peroneal division)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Marciniak C et al. PM R 2013](https://pubmed.ncbi.nlm.nih.gov/23159698/)"
+    },
+    {
+      "recommendation": "AANEM practice parameter: electrodiagnostic evaluation of patients with suspected peroneal neuropathy at the knee",
+      "evidenceLevel": "Guideline",
+      "source": "[Katirji B. Muscle Nerve 2005](https://pubmed.ncbi.nlm.nih.gov/16025526/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Ankle dorsiflexion strength (MRC grade)",
+      "frequency": "Each visit",
+      "action": "If no improvement at 3 months, repeat EMG; if worsening, expedite surgical referral",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Ankle eversion strength",
+      "frequency": "Each visit",
+      "action": "Eversion loss suggests superficial peroneal involvement; reassess localization",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Toe extension strength",
+      "frequency": "Each visit",
+      "action": "If isolated loss, evaluate for deep peroneal branch lesion",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Sensory exam (lateral leg, dorsal foot)",
+      "frequency": "Each visit",
+      "action": "Expanding sensory loss suggests progression or alternative diagnosis",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Gait assessment",
+      "frequency": "Each visit",
+      "action": "Adjust AFO; modify PT program; assess surgical candidacy if no improvement",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "EMG/NCS (follow-up)",
+      "frequency": "3-6 months post-onset; then q6 months if not recovering",
+      "action": "If no reinnervation at 6 months, pursue surgical exploration; if reinnervation present, continue conservative management",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "AFO fit and compliance",
+      "frequency": "Each visit",
+      "action": "Refit if needed; address compliance barriers",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "HbA1c (diabetic patients)",
+      "frequency": "Every 3 months",
+      "action": "Intensify diabetes management for nerve recovery optimization",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Skin integrity (lateral leg, foot)",
+      "frequency": "Each visit; daily if inpatient",
+      "action": "Initiate wound care; adjust AFO/padding; podiatry referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Fall assessment",
+      "frequency": "Each visit",
+      "action": "Modify PT program; home safety evaluation; add assistive device",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Post-surgical motor/sensory function",
+      "frequency": "2 weeks, 6 weeks, 3 months, 6 months, 12 months post-op",
+      "action": "If no improvement by 6 months post-decompression, repeat EMG and evaluate for revision or tendon transfer",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Foot drop identified; AFO fitted; able to ambulate safely with AFO; outpatient neurology/EMG follow-up arranged; no progressive deficit; no compartment syndrome"
+    },
+    {
+      "disposition": "**Admit to floor**",
+      "criteria": "Acute traumatic peroneal nerve injury requiring surgical evaluation; post-knee surgery with new foot drop; compartment syndrome requiring fasciotomy; progressive mononeuropathy multiplex requiring inpatient workup"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "Compartment syndrome with vascular compromise; polytrauma with peroneal nerve injury; not typical for isolated peroneal neuropathy"
+    },
+    {
+      "disposition": "**Urgent surgical referral**",
+      "criteria": "Suspected compartment syndrome; mass lesion causing acute progressive nerve compression; complete nerve transection from open injury; rapidly progressive foot drop with no identifiable compressive cause"
+    },
+    {
+      "disposition": "**Routine surgical referral**",
+      "criteria": "Failed conservative therapy at 3-6 months; ganglion cyst or mass at fibular head; no EMG evidence of reinnervation at 6 months; chronic complete foot drop for tendon transfer evaluation"
+    },
+    {
+      "disposition": "**Outpatient follow-up**",
+      "criteria": "Most patients; initial evaluation with EMG at 2-3 weeks; repeat EMG at 3-6 months; PT prescription; AFO fitting; reassess at 4-6 week intervals"
+    }
+  ]
+}

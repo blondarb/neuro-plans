@@ -25,7 +25,7 @@ tags:
 
 **ICD-10:** E06.3 (Autoimmune thyroiditis), G93.49 (Other encephalopathy, not elsewhere classified), E03.9 (Hypothyroidism, unspecified)
 
-**CPT CODES:** 86376 (anti-TPO antibody), 86800 (anti-thyroglobulin antibody), 84443 (TSH), 84436 (thyroxine, total), 84439 (free T4), 84480 (T3, total), 84481 (free T3), 89051 (CSF cell count), 84157 (CSF protein), 70553 (MRI brain with/without contrast), 95816 (EEG routine), 95819 (EEG with sleep), 95700-95720 (continuous EEG), 62270 (lumbar puncture), 96365 (IV infusion, first hour), 96366 (IV infusion, additional hour), 80053 (CMP), 85025 (CBC), 86235 (nuclear antigen antibody), 86140 (CRP), 85652 (ESR), 78816 (FDG-PET)
+**CPT CODES:** 86376 (anti-TPO antibody), 86800 (anti-thyroglobulin antibody), 84443 (TSH), 84436 (thyroxine, total), 84439 (free T4), 84480 (T3, total), 84481 (free T3), 89051 (CSF cell count), 84157 (CSF protein), 70553 (MRI brain with/without contrast), 95816 (EEG routine), 95819 (EEG with sleep), 95700-95720 (continuous EEG), 62270 (lumbar puncture), 96365 (IV infusion, first hour), 96366 (IV infusion, additional hour), 80053 (CMP), 85025 (CBC), 86235 (nuclear antigen antibody), 86140 (CRP), 85652 (ESR), 78816 (FDG-PET), 86225 (anti-dsDNA), 86160 (complement C3), 86161 (complement C4), 86200 (CCP/ANCA), 82784 (immunoglobulin quantitative), 86255 (antibody, fluorescent), 83519 (immunoassay), 86327 (IgG index), 70544 (MRA head), 70547 (MRA neck), 72156 (MRI C-spine w/wo), 72157 (MRI T-spine w/wo), 78607 (SPECT brain), 36224 (cerebral angiography), 36514 (plasmapheresis), 88184 (flow cytometry), 86788 (West Nile IgM), 86789 (West Nile IgG), 87529 (viral PCR), 88104 (cytology)
 
 **SYNONYMS:** Hashimoto's encephalopathy, HE, steroid-responsive encephalopathy associated with autoimmune thyroiditis, SREAT, Hashimoto encephalopathy, autoimmune thyroid encephalopathy, anti-TPO encephalopathy, thyroid autoimmune encephalopathy, encephalopathy with thyroid autoantibodies, myxedema madness, nonvasculitic autoimmune inflammatory meningoencephalitis, NAIM, thyroid antibody-associated encephalopathy
 
@@ -76,20 +76,20 @@ SECTION A: ACTION ITEMS
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | ANA (CPT 86235) | URGENT | ROUTINE | ROUTINE | URGENT | Lupus cerebritis screen; SLE can cause encephalopathy with thyroid antibodies | Negative or low titer |
-| Anti-dsDNA | - | ROUTINE | ROUTINE | - | If ANA positive; lupus evaluation | Negative |
-| Anti-SSA/SSB (Ro/La) | - | ROUTINE | ROUTINE | - | Sjogren syndrome with CNS involvement | Negative |
-| Complement C3, C4 | - | ROUTINE | ROUTINE | - | Lupus; complement-mediated disease | Normal |
-| ANCA (c-ANCA, p-ANCA) | - | ROUTINE | ROUTINE | - | CNS vasculitis screen | Negative |
+| Anti-dsDNA (CPT 86225) | - | ROUTINE | ROUTINE | - | If ANA positive; lupus evaluation | Negative |
+| Anti-SSA/SSB (Ro/La) (CPT 86235) | - | ROUTINE | ROUTINE | - | Sjogren syndrome with CNS involvement | Negative |
+| Complement C3, C4 (CPT 86160+86161) | - | ROUTINE | ROUTINE | - | Lupus; complement-mediated disease | Normal |
+| ANCA (c-ANCA, p-ANCA) (CPT 86235+86200) | - | ROUTINE | ROUTINE | - | CNS vasculitis screen | Negative |
 | ACE level (CPT 82164) | - | ROUTINE | ROUTINE | - | Neurosarcoidosis screen | Normal |
 | Anti-NMDAR antibody (serum AND CSF) (CPT 86255) | URGENT | URGENT | ROUTINE | URGENT | Rule out antibody-mediated autoimmune encephalitis (most important exclusion) | Negative |
 | Anti-LGI1 antibody (serum AND CSF) (CPT 86235) | URGENT | URGENT | ROUTINE | URGENT | Rule out LGI1 encephalitis (limbic encephalitis mimic) | Negative |
 | Anti-CASPR2 antibody (serum AND CSF) (CPT 86235) | URGENT | URGENT | ROUTINE | URGENT | Rule out CASPR2-associated encephalitis | Negative |
-| Anti-GABA-B antibody (serum AND CSF) | URGENT | URGENT | ROUTINE | URGENT | Rule out GABA-B encephalitis (seizure-prominent mimic) | Negative |
-| Anti-GAD65 antibody (serum AND CSF) | URGENT | URGENT | ROUTINE | URGENT | Rule out GAD65-associated encephalitis; stiff-person spectrum | Negative or low titer |
+| Anti-GABA-B antibody (serum AND CSF) (CPT 86255) | URGENT | URGENT | ROUTINE | URGENT | Rule out GABA-B encephalitis (seizure-prominent mimic) | Negative |
+| Anti-GAD65 antibody (serum AND CSF) (CPT 86255) | URGENT | URGENT | ROUTINE | URGENT | Rule out GAD65-associated encephalitis; stiff-person spectrum | Negative or low titer |
 | Mayo Autoimmune Evaluation - Encephalopathy (serum) | URGENT | URGENT | ROUTINE | URGENT | Comprehensive panel to exclude defined antibody-mediated etiologies | All negative |
 | Mayo Autoimmune Evaluation - Encephalopathy (CSF) | URGENT | URGENT | ROUTINE | URGENT | CSF panel for antibody-mediated encephalitis | All negative |
-| AQP4-IgG (NMO antibody) | - | ROUTINE | ROUTINE | - | NMOSD overlap if concurrent myelitis or optic neuritis | Negative |
-| Quantitative immunoglobulins (IgG, IgA, IgM) | - | ROUTINE | ROUTINE | - | Baseline before immunotherapy; IgA deficiency (IVIG contraindication) | Normal |
+| AQP4-IgG (NMO antibody) (CPT 86255) | - | ROUTINE | ROUTINE | - | NMOSD overlap if concurrent myelitis or optic neuritis | Negative |
+| Quantitative immunoglobulins (IgG, IgA, IgM) (CPT 82784+82784+82784) | - | ROUTINE | ROUTINE | - | Baseline before immunotherapy; IgA deficiency (IVIG contraindication) | Normal |
 | RPR/VDRL (CPT 86592) | URGENT | ROUTINE | ROUTINE | URGENT | Neurosyphilis screen | Nonreactive |
 | HIV antibody (CPT 86703) | URGENT | ROUTINE | ROUTINE | URGENT | HIV-associated encephalopathy | Negative |
 | Lyme serology (CPT 86618) | - | ROUTINE | ROUTINE | - | If endemic area; Lyme encephalopathy | Negative |
@@ -100,17 +100,17 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Anti-neuronal nuclear antibody type 1 (ANNA-1/anti-Hu) | - | EXT | EXT | - | Paraneoplastic encephalitis mimic | Negative |
-| Anti-neuronal nuclear antibody type 2 (ANNA-2/anti-Ri) | - | EXT | EXT | - | Paraneoplastic screen | Negative |
-| Anti-CV2/CRMP5 | - | EXT | EXT | - | Paraneoplastic encephalitis mimic | Negative |
-| Anti-Ma2/Ta | - | EXT | EXT | - | Paraneoplastic limbic encephalitis mimic | Negative |
-| 14-3-3 protein (CSF) | - | EXT | EXT | - | Prion disease exclusion in rapidly progressive cases | Negative |
-| RT-QuIC (CSF) | - | EXT | EXT | - | Prion disease exclusion | Negative |
+| Anti-neuronal nuclear antibody type 1 (ANNA-1/anti-Hu) (CPT 86255) | - | EXT | EXT | - | Paraneoplastic encephalitis mimic | Negative |
+| Anti-neuronal nuclear antibody type 2 (ANNA-2/anti-Ri) (CPT 86255) | - | EXT | EXT | - | Paraneoplastic screen | Negative |
+| Anti-CV2/CRMP5 (CPT 86235) | - | EXT | EXT | - | Paraneoplastic encephalitis mimic | Negative |
+| Anti-Ma2/Ta (CPT 86255) | - | EXT | EXT | - | Paraneoplastic limbic encephalitis mimic | Negative |
+| 14-3-3 protein (CSF) (CPT 83519) | - | EXT | EXT | - | Prion disease exclusion in rapidly progressive cases | Negative |
+| RT-QuIC (CSF) (CPT 83519) | - | EXT | EXT | - | Prion disease exclusion | Negative |
 | CSF oligoclonal bands with paired serum (CPT 83916) | - | ROUTINE | ROUTINE | - | Intrathecal IgG synthesis; elevated in ~25% of HE | May show CSF-specific bands |
-| CSF IgG index | - | ROUTINE | ROUTINE | - | Intrathecal antibody synthesis | May be elevated |
+| CSF IgG index (CPT 86327) | - | ROUTINE | ROUTINE | - | Intrathecal antibody synthesis | May be elevated |
 | Anti-alpha-enolase antibodies (NAE) | - | EXT | EXT | - | Proposed biomarker in HE subset (attacks neuronal surface); research test | Positive may support HE |
 | CSF anti-TPO antibodies | - | EXT | EXT | - | Intrathecal production of anti-TPO; not widely validated | Positive may support intrathecal production |
-| Next-generation sequencing (CSF metagenomics) | - | EXT | EXT | - | Occult infection exclusion when standard testing negative | No pathogens detected |
+| Next-generation sequencing (CSF metagenomics) (CPT 81321) | - | EXT | EXT | - | Occult infection exclusion when standard testing negative | No pathogens detected |
 | Brain biopsy (last resort) | - | EXT | - | - | Perivascular lymphocytic infiltration; exclusion of other pathology | Lymphocytic perivascular cuffing, no vasculitis |
 
 ---
@@ -132,22 +132,22 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI brain with epilepsy protocol | - | ROUTINE | ROUTINE | - | If seizures recurrent | Subtle cortical lesions; hippocampal sclerosis; exclude structural cause | Gadolinium contraindications |
-| MRA head and neck | - | ROUTINE | ROUTINE | - | Within 48-72h if vasculitis suspected | Rule out CNS vasculitis; large vessel disease | Gadolinium contraindications |
+| MRI brain with epilepsy protocol (CPT 70553) | - | ROUTINE | ROUTINE | - | If seizures recurrent | Subtle cortical lesions; hippocampal sclerosis; exclude structural cause | Gadolinium contraindications |
+| MRA head and neck (CPT 70544+70547) | - | ROUTINE | ROUTINE | - | Within 48-72h if vasculitis suspected | Rule out CNS vasculitis; large vessel disease | Gadolinium contraindications |
 | CT chest/abdomen/pelvis with contrast (CPT 71260+74178) | - | ROUTINE | ROUTINE | - | Within 48-72h | Occult malignancy screen (paraneoplastic mimic); thyroid pathology | Contrast allergy, renal insufficiency |
 | FDG-PET brain (CPT 78816) | - | EXT | EXT | - | Within 1-2 weeks | Cortical hypometabolism; differentiate from other encephalopathies | Uncontrolled diabetes, pregnancy |
-| Video-EEG monitoring (prolonged) | - | ROUTINE | ROUTINE | STAT | As needed | Characterize seizure semiology; detect subclinical seizures; distinguish epileptic from non-epileptic events | None |
-| Cerebral angiography (conventional) | - | EXT | - | - | If CNS vasculitis strongly suspected | Rule out primary CNS vasculitis (beading pattern) | Contrast allergy, renal insufficiency, coagulopathy |
+| Video-EEG monitoring (prolonged) (CPT 95711-95720) | - | ROUTINE | ROUTINE | STAT | As needed | Characterize seizure semiology; detect subclinical seizures; distinguish epileptic from non-epileptic events | None |
+| Cerebral angiography (conventional) (CPT 36224) | - | EXT | - | - | If CNS vasculitis strongly suspected | Rule out primary CNS vasculitis (beading pattern) | Contrast allergy, renal insufficiency, coagulopathy |
 
 ### 2C. Rare/Specialized
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| MRI spine (cervical and thoracic) with and without contrast | - | ROUTINE | ROUTINE | - | If myelopathic signs present | Concurrent myelitis; overlap syndromes (NMOSD, MOGAD) | GFR <30, gadolinium allergy |
-| SPECT brain | - | EXT | EXT | - | If PET unavailable | Regional hypoperfusion; frontal or temporal abnormalities | None significant |
+| MRI spine (cervical and thoracic) with and without contrast (CPT 72156+72157) | - | ROUTINE | ROUTINE | - | If myelopathic signs present | Concurrent myelitis; overlap syndromes (NMOSD, MOGAD) | GFR <30, gadolinium allergy |
+| SPECT brain (CPT 78607) | - | EXT | EXT | - | If PET unavailable | Regional hypoperfusion; frontal or temporal abnormalities | None significant |
 | Brain biopsy | - | EXT | - | - | Last resort; diagnosis uncertain despite full workup | Perivascular lymphocytic infiltration without vasculitis; exclusion of other pathology | Coagulopathy, inaccessible location |
 
-### LUMBAR PUNCTURE
+### LUMBAR PUNCTURE (CPT 62270)
 
 **Indication:** Essential for diagnosis of Hashimoto's encephalopathy; rules out infectious encephalitis; CSF abnormalities present in ~75-80% of cases (elevated protein is the most common finding); supports exclusion of defined antibody-mediated autoimmune encephalitides
 
@@ -163,16 +163,16 @@ SECTION A: ACTION ITEMS
 | Glucose with paired serum glucose (CPT 82945) | STAT | STAT | ROUTINE | STAT | Low in infection; typically normal in HE | Normal (>60% of serum) |
 | Gram stain and bacterial culture (CPT 87205+87070) | STAT | STAT | ROUTINE | STAT | Rule out bacterial meningitis | No organisms |
 | HSV 1/2 PCR (CPT 87529) | STAT | STAT | ROUTINE | STAT | Rule out HSV encephalitis (critical mimic) | Negative |
-| VZV PCR | URGENT | URGENT | ROUTINE | URGENT | Varicella encephalitis | Negative |
-| EBV PCR | - | ROUTINE | ROUTINE | - | Viral encephalitis screen | Negative |
-| Enterovirus PCR | URGENT | URGENT | - | URGENT | Viral meningitis/encephalitis | Negative |
-| West Nile virus IgM/IgG | - | ROUTINE | - | - | Endemic areas | Negative |
+| VZV PCR (CPT 87529) | URGENT | URGENT | ROUTINE | URGENT | Varicella encephalitis | Negative |
+| EBV PCR (CPT 87529) | - | ROUTINE | ROUTINE | - | Viral encephalitis screen | Negative |
+| Enterovirus PCR (CPT 87529) | URGENT | URGENT | - | URGENT | Viral meningitis/encephalitis | Negative |
+| West Nile virus IgM/IgG (CPT 86788+86789) | - | ROUTINE | - | - | Endemic areas | Negative |
 | Cryptococcal antigen (CPT 87327) | URGENT | ROUTINE | - | URGENT | Immunocompromised; chronic meningitis | Negative |
 | VDRL (CSF) (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis | Negative |
 | Oligoclonal bands (CSF AND paired serum) (CPT 83916) | URGENT | ROUTINE | ROUTINE | URGENT | Intrathecal IgG synthesis; present in ~25% of HE | May show CSF-specific bands |
-| IgG index | URGENT | ROUTINE | ROUTINE | URGENT | Intrathecal antibody synthesis | May be mildly elevated |
+| IgG index (CPT 86327) | URGENT | ROUTINE | ROUTINE | URGENT | Intrathecal antibody synthesis | May be mildly elevated |
 | Cytology (CPT 88104) | - | ROUTINE | ROUTINE | - | Carcinomatous/lymphomatous meningitis exclusion | Negative |
-| Flow cytometry | - | ROUTINE | ROUTINE | - | CNS lymphoma exclusion | Normal |
+| Flow cytometry (CPT 88184) | - | ROUTINE | ROUTINE | - | CNS lymphoma exclusion | Normal |
 | **Autoimmune encephalitis antibody panel (CSF)** | URGENT | URGENT | ROUTINE | URGENT | NMDAR, LGI1, CASPR2, GABA-B, AMPA, DPPX -- to EXCLUDE defined autoimmune encephalitides | All negative (REQUIRED for HE diagnosis) |
 | AFB culture and smear (CPT 87116) | - | ROUTINE | - | - | TB meningitis if risk factors | Negative |
 
@@ -214,11 +214,11 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | IVIG (intravenous immunoglobulin) (CPT 96365) | IV | Steroid-refractory HE; relapsing disease; steroid contraindications | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol; premedicate with acetaminophen, diphenhydramine | IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure | Renal function daily; headache (aseptic meningitis); thrombosis; volume overload; check IgA level before first dose | - | URGENT | - | URGENT |
-| Plasmapheresis (PLEX) | - | Steroid-refractory; rapidly progressive encephalopathy; severe presentation | 5-7 exchanges :: - :: over 10-14 days :: 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange; albumin replacement | Hemodynamic instability; sepsis; coagulopathy; poor vascular access | BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions | - | URGENT | - | URGENT |
+| Plasmapheresis (PLEX) (CPT 36514) | - | Steroid-refractory; rapidly progressive encephalopathy; severe presentation | 5-7 exchanges :: - :: over 10-14 days :: 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange; albumin replacement | Hemodynamic instability; sepsis; coagulopathy; poor vascular access | BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions | - | URGENT | - | URGENT |
 | Azathioprine (Imuran) | PO | Steroid-sparing maintenance; relapsing HE | 50 mg :: PO :: daily :: Start 50 mg PO daily; increase by 50 mg every 2 weeks to target 2-3 mg/kg/day | TPMT deficiency (check before starting); pregnancy (relative) | TPMT genotype/activity before starting; CBC q2 weeks x 2 months, then monthly; LFTs; pancreatitis | - | - | ROUTINE | - |
 | Mycophenolate mofetil (CellCept) | PO | Steroid-sparing maintenance; relapsing HE | 500 mg :: PO :: BID :: Start 500 mg PO BID; increase to 1000 mg PO BID over 2-4 weeks (target 1500-3000 mg/day) | Pregnancy (Category D -- teratogenic); active infection | CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms; infection surveillance; pregnancy prevention | - | - | ROUTINE | - |
-| Rituximab | IV | Refractory to steroids and other steroid-sparing agents; multiple relapses | 375 mg/m2 :: IV :: weekly x 4 :: 375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0 and day 14); premedicate with methylprednisolone 100 mg, acetaminophen, diphenhydramine | Active hepatitis B; severe active infection; live vaccines within 4 weeks | Hepatitis B serology (before first dose); CBC with differential q2-4 weeks; immunoglobulin levels q3 months; CD19/CD20 B-cell counts; infusion reactions; PML surveillance | - | URGENT | ROUTINE | URGENT |
-| Cyclophosphamide | IV | Severe refractory HE failing all other agents | 750 mg/m2 :: IV :: monthly :: 750 mg/m2 IV monthly x 6 cycles; pre-hydrate with 1L NS; administer with MESNA (uroprotection) | Pregnancy; active infection; bone marrow failure | CBC weekly x 4 weeks after each cycle (nadir day 10-14); urinalysis; BMP; LFTs; fertility counseling; hemorrhagic cystitis prevention | - | EXT | EXT | EXT |
+| Rituximab (CPT 96365) | IV | Refractory to steroids and other steroid-sparing agents; multiple relapses | 375 mg/m2 :: IV :: weekly x 4 :: 375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0 and day 14); premedicate with methylprednisolone 100 mg, acetaminophen, diphenhydramine | Active hepatitis B; severe active infection; live vaccines within 4 weeks | Hepatitis B serology (before first dose); CBC with differential q2-4 weeks; immunoglobulin levels q3 months; CD19/CD20 B-cell counts; infusion reactions; PML surveillance | - | URGENT | ROUTINE | URGENT |
+| Cyclophosphamide (CPT 96365) | IV | Severe refractory HE failing all other agents | 750 mg/m2 :: IV :: monthly :: 750 mg/m2 IV monthly x 6 cycles; pre-hydrate with 1L NS; administer with MESNA (uroprotection) | Pregnancy; active infection; bone marrow failure | CBC weekly x 4 weeks after each cycle (nadir day 10-14); urinalysis; BMP; LFTs; fertility counseling; hemorrhagic cystitis prevention | - | EXT | EXT | EXT |
 | Methotrexate | PO | Steroid-sparing alternative; relapsing HE | 7.5 mg :: PO :: weekly :: Start 7.5 mg PO weekly; increase to 15-25 mg weekly over 4-8 weeks; supplement with folic acid 1 mg daily | Pregnancy; hepatic disease; renal impairment; active infection; bone marrow suppression | CBC monthly; LFTs monthly; renal function; pulmonary symptoms | - | - | ROUTINE | - |
 
 *Note: Second-line agents are indicated for patients who are steroid-refractory (reconsider diagnosis if no steroid response at all), who relapse during steroid taper, or who have contraindications to prolonged steroids. IVIG and PLEX are used for acute flares or severe presentations. Azathioprine and mycophenolate are the most commonly used steroid-sparing maintenance agents. Rituximab is reserved for multiply-relapsing or refractory cases.*

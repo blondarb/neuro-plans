@@ -1,0 +1,1392 @@
+{
+  "id": "tics-tourette-syndrome",
+  "title": "Tics / Tourette Syndrome",
+  "version": "1.1",
+  "icd10": [
+    "** F95.2 (Tourette syndrome)",
+    "F95.0 (Transient tic disorder)",
+    "F95.1 (Chronic motor or vocal tic disorder)",
+    "F95.8 (Other tic disorders)",
+    "F95.9 (Tic disorder",
+    "unspecified)"
+  ],
+  "scope": "** Diagnosis, severity assessment, and management of tic disorders including Tourette syndrome, chronic motor/vocal tic disorder, and provisional tic disorder. Covers Comprehensive Behavioral Intervention for Tics (CBIT), pharmacotherapy with alpha-2 agonists, antipsychotics, VMAT2 inhibitors, and botulinum toxin. Addresses common comorbidities (ADHD, OCD, anxiety, depression). Includes YGTSS scoring, DBS for medically refractory cases, and psychosocial support. Settings: ED (tic-related emergencies, severe exacerbations), HOSP (refractory cases, DBS), OPD (primary management setting).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before starting medications; exclude systemic illness",
+          "target": "Normal"
+        },
+        {
+          "item": "BMP (CPT 80048)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Electrolyte abnormalities; baseline renal function before medications",
+          "target": "Normal"
+        },
+        {
+          "item": "Hepatic panel (AST, ALT, Alk Phos, bilirubin, albumin) (CPT 80076)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before antipsychotic or VMAT2 inhibitor therapy",
+          "target": "Normal"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hyperthyroidism can cause hyperkinetic movements mimicking tics",
+          "target": "Normal (0.4-4.0 mIU/L)"
+        },
+        {
+          "item": "Fasting glucose (CPT 82947)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline metabolic screening before antipsychotic therapy",
+          "target": "<100 mg/dL"
+        },
+        {
+          "item": "Lipid panel (CPT 80061)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before antipsychotic therapy (metabolic syndrome risk)",
+          "target": "Normal"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Ceruloplasmin (CPT 82390)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Wilson's disease screen if onset after age 10 or atypical features",
+          "target": ">20 mg/dL (low suggests Wilson's)"
+        },
+        {
+          "item": "ASO titer (CPT 86060)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "PANDAS/PANS evaluation if abrupt tic onset with behavioral changes",
+          "target": "Normal (elevated suggests recent streptococcal infection)"
+        },
+        {
+          "item": "Anti-DNAse B (CPT 86215)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "PANDAS/PANS evaluation; more specific for GAS infection",
+          "target": "Normal"
+        },
+        {
+          "item": "CRP (CPT 86140), ESR (CPT 85651)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory markers if autoimmune/post-infectious etiology suspected",
+          "target": "Normal"
+        },
+        {
+          "item": "Ferritin (CPT 82728)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Iron deficiency can worsen tics and restless legs (common comorbidity)",
+          "target": ">50 ng/mL preferred"
+        },
+        {
+          "item": "Prolactin (CPT 84146)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before dopamine receptor blocking agents; monitor for hyperprolactinemia",
+          "target": "Normal (male <15 ng/mL, female <25 ng/mL)"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Metabolic monitoring if on atypical antipsychotics",
+          "target": "<5.7%"
+        },
+        {
+          "item": "CYP2D6 genotyping (CPT 81226)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Pharmacogenomic guidance for tetrabenazine dosing (requires genotyping >50 mg/day)",
+          "target": "Report metabolizer status"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Serum copper (CPT 82525), 24-hour urine copper (CPT 82525)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Wilson's disease confirmation if ceruloplasmin low or borderline",
+          "target": "Copper: 75-145 mcg/dL; urine <40 mcg/24hr"
+        },
+        {
+          "item": "Anti-neuronal antibodies (NMDAR, LGI1, CASPR2) (CPT 86255)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune encephalitis presenting with tics/movement disorder",
+          "target": "Negative"
+        },
+        {
+          "item": "Throat culture for Group A Streptococcus (CPT 87081)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Active streptococcal infection in PANDAS evaluation",
+          "target": "Negative"
+        },
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Stimulant or substance use causing tics or exacerbation",
+          "target": "Negative"
+        },
+        {
+          "item": "Genetic testing for SLITRK1, HDC, CNTNAP2 (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Rare monogenic tic disorders; research/family planning",
+          "target": "No pathogenic variants"
+        },
+        {
+          "item": "Comprehensive autoimmune panel (ANA, complement, anti-thyroid antibodies) (CPT 86235, 86200, 86376)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "PANS workup with non-streptococcal autoimmune trigger",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI Brain without and with contrast (CPT 70553)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Atypical tics; adult onset; focal neurological signs; to exclude structural/secondary causes",
+          "target": "Normal; no basal ganglia or structural lesions",
+          "contraindications": "MRI-incompatible devices"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "EEG routine (CPT 95816)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Differentiate tics from epileptic myoclonus or absence seizures",
+          "target": "Normal; no epileptiform discharges",
+          "contraindications": "None"
+        },
+        {
+          "item": "EEG with sleep (CPT 95819)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Suspected seizure disorder mimicking tics; tics with staring episodes",
+          "target": "Normal background; no epileptiform discharges",
+          "contraindications": "None"
+        },
+        {
+          "item": "Echocardiogram (CPT 93306)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Baseline before starting medications with QTc prolongation risk (pimozide, haloperidol)",
+          "target": "Normal structure and function",
+          "contraindications": "None"
+        },
+        {
+          "item": "ECG (CPT 93000)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Baseline QTc before antipsychotics (especially pimozide); cardiac screening",
+          "target": "Normal sinus rhythm; QTc <450 msec",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "MRI Brain with SWI/iron sequences (CPT 70553)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Suspected Wilson's disease or neurodegeneration with brain iron accumulation",
+          "target": "No T2 hypointensity in basal ganglia",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "Slit lamp examination by ophthalmology (CPT 92012)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Wilson's disease evaluation; Kayser-Fleischer rings",
+          "target": "No KF rings",
+          "contraindications": "None"
+        },
+        {
+          "item": "Neuropsychological testing (CPT 96116, 96132)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Formal assessment of ADHD, OCD, learning disabilities; pre-DBS evaluation",
+          "target": "Characterize cognitive profile; guide treatment",
+          "contraindications": "None"
+        },
+        {
+          "item": "Polysomnography (CPT 95810)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Sleep disturbance assessment; tics persisting in sleep; restless legs evaluation",
+          "target": "Normal sleep architecture",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Behavioral Therapy (First-line)": [
+        {
+          "item": "Comprehensive Behavioral Intervention for Tics (CBIT)",
+          "route": "In-person/telehealth",
+          "indication": "First-line for all tic disorders causing functional impairment; AAN Level A recommendation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8 sessions",
+                "orderSentence": "Comprehensive Behavioral Intervention for Tics (CBIT) 8 sessions In-person"
+              }
+            ],
+            "route": "In-person",
+            "instructions": "8 sessions over 10 weeks; includes psychoeducation, habit reversal training (awareness training + competing response), relaxation techniques, and function-based assessment",
+            "orderSentence": "Comprehensive Behavioral Intervention for Tics (CBIT) 8 sessions In-person"
+          },
+          "contraindications": "Severe cognitive impairment preventing participation; active psychosis",
+          "monitoring": "YGTSS score at baseline and after completion; functional improvement; patient engagement",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Habit Reversal Training (HRT)",
+          "route": "In-person/telehealth",
+          "indication": "Core component of CBIT; delivered alone if full CBIT unavailable",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8-12 sessions",
+                "orderSentence": "Habit Reversal Training (HRT) 8-12 sessions In-person"
+              }
+            ],
+            "route": "In-person",
+            "instructions": "Awareness training for premonitory urge recognition; competing response training; social support",
+            "orderSentence": "Habit Reversal Training (HRT) 8-12 sessions In-person"
+          },
+          "contraindications": "Severe cognitive impairment",
+          "monitoring": "YGTSS score; competing response use; tic frequency",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Exposure and Response Prevention (ERP)",
+          "route": "In-person/telehealth",
+          "indication": "Alternative behavioral approach for patients who tolerate premonitory urges poorly",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8-12 sessions",
+                "orderSentence": "Exposure and Response Prevention (ERP) 8-12 sessions In-person"
+              }
+            ],
+            "route": "In-person",
+            "instructions": "Graduated exposure to premonitory urge sensations with response prevention; habituation-based",
+            "orderSentence": "Exposure and Response Prevention (ERP) 8-12 sessions In-person"
+          },
+          "contraindications": "Active psychosis; severe cognitive impairment",
+          "monitoring": "YGTSS score; premonitory urge rating (PUTS); tolerance of urges",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "First-line Pharmacotherapy (Alpha-2 Agonists)": [
+        {
+          "item": "Guanfacine (Intuniv)",
+          "route": "PO",
+          "indication": "First-line medication; preferred alpha-2 agonist for tics; also treats comorbid ADHD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Guanfacine (Intuniv) 1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg qHS; increase by 1 mg q1wk; target 1-4 mg/day (divided BID for IR, daily for ER); max 4 mg/day",
+            "orderSentence": "Guanfacine (Intuniv) 1 mg PO"
+          },
+          "contraindications": "Second- or third-degree heart block; hypotension; concurrent use of strong CYP3A4 inhibitors",
+          "monitoring": "BP, HR at each visit; sedation; rebound hypertension if stopped abruptly; taper over 1 week to discontinue",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonidine (Catapres)",
+          "route": "PO",
+          "indication": "First-line medication; alpha-2 agonist for tics; also treats comorbid ADHD and insomnia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.05 mg",
+                "orderSentence": "Clonidine (Catapres) 0.05 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.05 mg qHS; increase by 0.05 mg q3-7d; target 0.1-0.3 mg/day divided BID-QID; max 0.4 mg/day",
+            "orderSentence": "Clonidine (Catapres) 0.05 mg PO"
+          },
+          "contraindications": "Second- or third-degree heart block; severe hypotension",
+          "monitoring": "BP, HR at each visit; sedation, dry mouth; rebound hypertension if stopped abruptly; taper over 1-2 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonidine transdermal patch (Catapres-TTS)",
+          "route": "Transdermal",
+          "indication": "Alternative delivery; improved compliance; steady-state levels",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/24hr",
+                "orderSentence": "Clonidine transdermal patch (Catapres-TTS) 0.1 mg/24hr Transdermal"
+              }
+            ],
+            "route": "Transdermal",
+            "instructions": "Start 0.1 mg/24hr patch; increase by 0.1 mg q1-2wk; max 0.3 mg/24hr; change patch weekly",
+            "orderSentence": "Clonidine transdermal patch (Catapres-TTS) 0.1 mg/24hr Transdermal"
+          },
+          "contraindications": "Second- or third-degree heart block; skin sensitivity at application site",
+          "monitoring": "BP, HR; skin irritation at application site; rotate placement sites",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line Pharmacotherapy (Antipsychotics)": [
+        {
+          "item": "Fluphenazine",
+          "route": "PO",
+          "indication": "Second-line; typical antipsychotic with evidence for tic suppression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Fluphenazine 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.5 mg daily; increase by 0.5 mg q1wk; target 1.5-5 mg/day; max 10 mg/day",
+            "orderSentence": "Fluphenazine 0.5 mg PO"
+          },
+          "contraindications": "Parkinsonism; CNS depression; comatose states; blood dyscrasias",
+          "monitoring": "Sedation; weight; EPS/tardive dyskinesia (AIMS q6mo); prolactin; QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Aripiprazole (Abilify)",
+          "route": "PO",
+          "indication": "Second-line; atypical antipsychotic; favorable metabolic profile; AAN Level B",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Aripiprazole (Abilify) 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg daily; increase by 2.5-5 mg q1-2wk; target 2.5-15 mg/day; max 20 mg/day",
+            "orderSentence": "Aripiprazole (Abilify) 2 mg PO"
+          },
+          "contraindications": "Hypersensitivity; caution with strong CYP2D6/CYP3A4 inhibitors",
+          "monitoring": "Weight, BMI, waist circumference q3mo; fasting glucose, lipids q3-6mo; EPS/akathisia; prolactin baseline and PRN",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Risperidone (Risperdal)",
+          "route": "PO",
+          "indication": "Second-line; evidence from RCTs for tic reduction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg",
+                "orderSentence": "Risperidone (Risperdal) 0.25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.25 mg qHS; increase by 0.25-0.5 mg q1wk; target 1-3 mg/day; max 4 mg/day",
+            "orderSentence": "Risperidone (Risperdal) 0.25 mg PO"
+          },
+          "contraindications": "Hypersensitivity; caution in hepatic/renal impairment",
+          "monitoring": "Weight, BMI q3mo; fasting glucose, lipids q3-6mo; prolactin (gynecomastia risk); EPS; QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Haloperidol (Haldol)",
+          "route": "PO",
+          "indication": "FDA-approved for Tourette syndrome; potent D2 antagonist; high EPS risk limits use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg",
+                "orderSentence": "Haloperidol (Haldol) 0.25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.25 mg qHS; increase by 0.25-0.5 mg q1wk; target 1-4 mg/day; max 10 mg/day",
+            "orderSentence": "Haloperidol (Haldol) 0.25 mg PO"
+          },
+          "contraindications": "Parkinsonism; QTc prolongation; CNS depression; comatose states",
+          "monitoring": "ECG at baseline and after dose changes; QTc (must be <500 msec); EPS/TD (AIMS q3-6mo); sedation; weight",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pimozide (Orap)",
+          "route": "PO",
+          "indication": "FDA-approved for Tourette syndrome; reserved for refractory cases due to QTc risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Pimozide (Orap) 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.5 mg qHS; increase by 0.5-1 mg q1wk; target 2-4 mg/day; max 10 mg/day (0.2 mg/kg/day in children); CYP2D6 genotyping recommended at doses >4 mg",
+            "orderSentence": "Pimozide (Orap) 0.5 mg PO"
+          },
+          "contraindications": "QTc >440 msec (males) or >450 msec (females); congenital long QT; concurrent QTc-prolonging drugs; strong CYP3A4/CYP2D6 inhibitors; hypokalemia",
+          "monitoring": "ECG at baseline, each dose increase, and q6mo; QTc must remain <470 msec; EPS/TD (AIMS q3-6mo); CYP2D6 genotyping; weight; sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ziprasidone (Geodon)",
+          "route": "PO",
+          "indication": "Alternative atypical antipsychotic; lower weight gain but QTc risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Ziprasidone (Geodon) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; increase by 5-10 mg q1wk; target 5-40 mg/day; take with food (>500 kcal for absorption)",
+            "orderSentence": "Ziprasidone (Geodon) 5 mg PO"
+          },
+          "contraindications": "QTc prolongation; concurrent QTc-prolonging drugs; recent MI; uncompensated heart failure",
+          "monitoring": "ECG at baseline; QTc monitoring; weight, fasting glucose, lipids q3-6mo; EPS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Third-line Pharmacotherapy (VMAT2 Inhibitors and Others)": [
+        {
+          "item": "Tetrabenazine (Xenazine)",
+          "route": "PO",
+          "indication": "VMAT2 inhibitor; third-line for moderate-severe tics refractory to first/second-line agents",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg",
+                "orderSentence": "Tetrabenazine (Xenazine) 12.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 12.5 mg daily; increase by 12.5 mg q1wk; target 25-75 mg/day divided BID-TID; max 200 mg/day; CYP2D6 genotyping required at doses >50 mg/day",
+            "orderSentence": "Tetrabenazine (Xenazine) 12.5 mg PO"
+          },
+          "contraindications": "Depression/suicidality (Black Box); MAO-I use; hepatic impairment; reserpine use within 20 days",
+          "monitoring": "Depression screening (PHQ-9) at each visit; suicidality assessment; parkinsonism; akathisia; sedation; CYP2D6 genotyping",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Deutetrabenazine (Austedo)",
+          "route": "PO",
+          "indication": "VMAT2 inhibitor; better tolerated than tetrabenazine; longer half-life",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6 mg",
+                "orderSentence": "Deutetrabenazine (Austedo) 6 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 6 mg daily; increase by 6 mg/day weekly; target 12-48 mg/day divided BID; max 48 mg/day; take with food",
+            "orderSentence": "Deutetrabenazine (Austedo) 6 mg PO"
+          },
+          "contraindications": "Depression/suicidality (Black Box); MAO-I use; hepatic impairment; reserpine use within 20 days",
+          "monitoring": "Depression screening (PHQ-9) at each visit; suicidality assessment; parkinsonism; akathisia; QTc at baseline and dose changes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Valbenazine (Ingrezza)",
+          "route": "PO",
+          "indication": "VMAT2 inhibitor; once-daily dosing; off-label for refractory tics",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Valbenazine (Ingrezza) 40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 40 mg once daily; increase to 80 mg daily after 1 week if tolerated; max 80 mg/day",
+            "orderSentence": "Valbenazine (Ingrezza) 40 mg PO"
+          },
+          "contraindications": "Congenital long QT; strong CYP2D6 inhibitors at higher dose; severe hepatic impairment",
+          "monitoring": "QTc at baseline and after dose increase; somnolence; depression; parkinsonism",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topiramate (Topamax)",
+          "route": "PO",
+          "indication": "Adjunctive therapy; reduces tic severity; also treats comorbid migraine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Topiramate (Topamax) 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg qHS; increase by 25 mg q1-2wk; target 50-200 mg/day divided BID; max 200 mg/day",
+            "orderSentence": "Topiramate (Topamax) 25 mg PO"
+          },
+          "contraindications": "Metabolic acidosis; kidney stones; acute myopia/angle-closure glaucoma",
+          "monitoring": "Bicarbonate level; renal function; cognitive effects (word-finding difficulty); weight; kidney stones",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonazepam",
+          "route": "PO",
+          "indication": "Adjunct for tic suppression; also treats comorbid anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg",
+                "orderSentence": "Clonazepam 0.25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.25 mg qHS; increase by 0.25 mg q3-7d; target 0.5-2 mg/day divided BID; max 4 mg/day",
+            "orderSentence": "Clonazepam 0.25 mg PO"
+          },
+          "contraindications": "Severe respiratory depression; severe hepatic impairment; substance abuse history",
+          "monitoring": "Sedation; dependence risk; falls; taper slowly if discontinuing (do not stop abruptly)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Adjunct for tic suppression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; increase by 5 mg/dose q3-5d; target 30-60 mg/day divided TID; max 80 mg/day",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); abrupt withdrawal risk",
+          "monitoring": "Sedation; weakness; taper slowly if discontinuing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Targeted/Focal Therapy": [
+        {
+          "item": "OnabotulinumtoxinA (Botox) - cervical tics",
+          "route": "IM",
+          "indication": "Focal motor tics causing pain or disability (cervical, facial); phonic tics (vocal cord injection)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-100 units",
+                "orderSentence": "OnabotulinumtoxinA (Botox) - cervical tics 25-100 units IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Inject affected muscles; cervical tics 25-100 units divided; facial tics 5-25 units per site; repeat q12wk; EMG guidance for small muscles",
+            "orderSentence": "OnabotulinumtoxinA (Botox) - cervical tics 25-100 units IM"
+          },
+          "contraindications": "Infection at site; myasthenia gravis; ALS",
+          "monitoring": "Dysphagia (if neck muscles); local weakness; antibody formation with repeated use",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "OnabotulinumtoxinA (Botox) - phonic/vocal tics",
+          "route": "IM (laryngeal)",
+          "indication": "Disabling vocal tics (coprolalia, loud vocalizations); refractory to systemic therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1.25-2.5 units",
+                "orderSentence": "OnabotulinumtoxinA (Botox) - phonic/vocal tics 1.25-2.5 units IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "1.25-2.5 units per vocal cord via EMG-guided injection; repeat q12wk; specialist procedure",
+            "orderSentence": "OnabotulinumtoxinA (Botox) - phonic/vocal tics 1.25-2.5 units IM"
+          },
+          "contraindications": "Infection at site; myasthenia gravis; ALS; vocal cord paralysis",
+          "monitoring": "Breathy voice; dysphagia; periodic indirect laryngoscopy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Comorbidity-Specific Treatment": [
+        {
+          "item": "Methylphenidate (Ritalin, Concerta)",
+          "route": "PO",
+          "indication": "ADHD comorbidity; does NOT worsen tics (AAN Level A evidence)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Methylphenidate (Ritalin, Concerta) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg BID (IR) or 18 mg daily (ER); increase by 5-10 mg/wk; target 20-60 mg/day; max 72 mg/day (ER)",
+            "orderSentence": "Methylphenidate (Ritalin, Concerta) 5 mg PO"
+          },
+          "contraindications": "Concurrent MAO-I use; pheochromocytoma; severe anxiety; glaucoma",
+          "monitoring": "HR, BP; appetite/weight; sleep; tic severity (monitor but stimulants generally safe)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amphetamine/dextroamphetamine (Adderall)",
+          "route": "PO",
+          "indication": "ADHD comorbidity; alternative stimulant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Amphetamine/dextroamphetamine (Adderall) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily (IR) or 10 mg daily (XR); increase by 5-10 mg/wk; target 10-30 mg/day; max 40 mg/day",
+            "orderSentence": "Amphetamine/dextroamphetamine (Adderall) 5 mg PO"
+          },
+          "contraindications": "Concurrent MAO-I use; pheochromocytoma; severe cardiac disease; glaucoma",
+          "monitoring": "HR, BP; appetite/weight; sleep; tic severity; cardiac screening if risk factors",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Atomoxetine (Strattera)",
+          "route": "PO",
+          "indication": "ADHD comorbidity; non-stimulant; improves both ADHD and tics",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg/kg",
+                "orderSentence": "Atomoxetine (Strattera) 0.5 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.5 mg/kg/day; increase to 1.2 mg/kg/day after 3-7 days; max 1.4 mg/kg/day or 100 mg/day",
+            "orderSentence": "Atomoxetine (Strattera) 0.5 mg/kg PO"
+          },
+          "contraindications": "Concurrent MAO-I use; narrow-angle glaucoma; pheochromocytoma; severe cardiac disease",
+          "monitoring": "BP, HR; suicidality (Black Box in children); hepatotoxicity (rare); appetite/weight",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fluoxetine (Prozac)",
+          "route": "PO",
+          "indication": "OCD comorbidity (first-line SSRI for OCD in Tourette)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Fluoxetine (Prozac) 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg daily; increase by 10 mg q2-4wk; target 20-60 mg/day for OCD; max 80 mg/day",
+            "orderSentence": "Fluoxetine (Prozac) 10 mg PO"
+          },
+          "contraindications": "Concurrent MAO-I use; concurrent pimozide (QTc); concurrent thioridazine",
+          "monitoring": "Suicidality (Black Box in children); activation/mania; serotonin syndrome; OCD severity (Y-BOCS)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sertraline (Zoloft)",
+          "route": "PO",
+          "indication": "OCD comorbidity; alternative SSRI",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sertraline (Zoloft) 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; increase by 25-50 mg q1-2wk; target 50-200 mg/day for OCD; max 200 mg/day",
+            "orderSentence": "Sertraline (Zoloft) 25 mg PO"
+          },
+          "contraindications": "Concurrent MAO-I use; concurrent pimozide",
+          "monitoring": "Suicidality (Black Box in children); activation; GI side effects; serotonin syndrome",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cognitive Behavioral Therapy (CBT) with ERP",
+          "route": "In-person",
+          "indication": "OCD comorbidity; first-line behavioral intervention for OCD symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12-20 sessions",
+                "orderSentence": "Cognitive Behavioral Therapy (CBT) with ERP 12-20 sessions In-person"
+              }
+            ],
+            "route": "In-person",
+            "instructions": "Exposure and response prevention protocol targeting OCD symptoms; run concurrently with CBIT for tics",
+            "orderSentence": "Cognitive Behavioral Therapy (CBT) with ERP 12-20 sessions In-person"
+          },
+          "contraindications": "Active psychosis; severe cognitive impairment",
+          "monitoring": "Y-BOCS score at baseline and q4wk; functional improvement",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying/Surgical Therapy": [
+        {
+          "item": "Deep brain stimulation (GPi or CM-Pf thalamus)",
+          "route": "Surgical",
+          "indication": "Severe, medication-refractory Tourette syndrome causing significant disability; YGTSS total tic score >35 despite adequate trials",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Bilateral stimulation",
+                "orderSentence": "Deep brain stimulation (GPi or CM-Pf thalamus) Bilateral stimulation Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Bilateral electrode placement (GPi, centromedian-parafascicular complex of thalamus, or anterior limb of internal capsule); programming over months; full effect may take 3-12 months",
+            "orderSentence": "Deep brain stimulation (GPi or CM-Pf thalamus) Bilateral stimulation Surgical"
+          },
+          "pretreatment": "MRI; neuropsychological testing; multidisciplinary evaluation; psychiatric stability confirmed; age >18-25 (brain maturation); failed CBIT + adequate trials of 3+ medication classes",
+          "contraindications": "Active psychosis; coagulopathy; active infection; unrealistic expectations; age <18 (relative, emerging evidence); medically unstable",
+          "monitoring": "Programming optimization q1-3mo initially; YGTSS reassessment; battery replacement q3-5yr; psychiatric monitoring; speech/swallowing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Movement disorders neurology for diagnosis confirmation, YGTSS scoring, treatment planning, and medication management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Behavioral therapist experienced in CBIT/HRT for tic disorders (first-line treatment referral)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry for comorbid ADHD, OCD, anxiety, depression, or rage attacks; medication co-management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychological testing for formal ADHD assessment, learning disability evaluation, and cognitive baseline",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurosurgery consultation for DBS evaluation if medication-refractory (typically after failure of CBIT + 3 medication classes)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech therapy if vocal tics significantly impair communication or cause vocal cord strain",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "School liaison/504 plan or IEP coordination for academic accommodations (extended time, separate testing, tic breaks)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology if eye-blinking tics persist or visual symptoms present (rule out ophthalmologic causes)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychology/counseling for coping strategies, self-esteem, bullying management, and family psychoeducation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetics counseling if family history significant or rare genetic tic disorder suspected (SLITRK1, HDC)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Tics are involuntary; do not ask the patient to suppress tics or punish tic behaviors as this worsens anxiety and tics",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Tics naturally wax and wane; periods of increased tics do not necessarily mean treatment failure",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Many patients experience improvement in late adolescence/early adulthood; approximately one-third have significant tic reduction by adulthood",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "CBIT is the first-line treatment and should be tried before or alongside medications; it teaches skills to manage tics",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report new involuntary movements, stiffness, or tremor that could indicate medication side effects (EPS/parkinsonism)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report mood changes, depression, or suicidal thoughts especially if on VMAT2 inhibitors or antipsychotics",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED if sudden severe tic exacerbation with self-injurious behavior, breathing difficulty from vocal tics, or inability to eat/drink",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stimulant medications for ADHD are safe with tics and do not need to be discontinued; discuss with your neurologist before stopping",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep a tic diary noting triggers (stress, fatigue, excitement), premonitory urges, and response to treatment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Educate teachers, coaches, and family members about tic disorders to reduce stigma and promote supportive environments",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Stress management techniques (mindfulness, deep breathing, progressive muscle relaxation) as stress is the most common tic exacerbator",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Adequate sleep (age-appropriate: 8-10 hours for adolescents, 7-9 for adults) as fatigue worsens tics",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular aerobic exercise (30+ minutes most days) to reduce tic severity and improve comorbid ADHD/anxiety",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit caffeine and energy drinks which exacerbate tics, anxiety, and insomnia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Activities requiring focused attention (music, sports, art) reduce tics through directed concentration",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Peer support groups (Tourette Association of America, local support groups) for patients and families",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Anti-bullying strategies and school education programs; tic disorders are covered under Section 504 and IDEA",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Identify and avoid triggers where possible (certain situations, foods, sleep deprivation)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Moderate screen time; excessive screen time exacerbates tics in some patients",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Functional (psychogenic) tic disorder",
+      "features": "Sudden onset in adulthood; inconsistent; distractible; non-suppressible; no premonitory urge; atypical movements",
+      "tests": "Clinical observation; Berardelli criteria; psychiatric evaluation; resolution with distraction"
+    },
+    {
+      "diagnosis": "Myoclonus",
+      "features": "Brief shock-like jerks; no premonitory urge; not suppressible; may have cortical or subcortical origin",
+      "tests": "EEG (cortical myoclonus has time-locked EEG correlate); EMG (burst duration <100 ms vs. tics >100 ms)"
+    },
+    {
+      "diagnosis": "Chorea (Sydenham, Huntington, other)",
+      "features": "Continuous flow of random movements; dance-like; no premonitory urge; not suppressible",
+      "tests": "ASO titer (Sydenham); genetic testing (Huntington); MRI; clinical pattern"
+    },
+    {
+      "diagnosis": "Stereotypies",
+      "features": "Rhythmic, repetitive, patterned movements; onset before age 3; associated with ASD; not preceded by urge; pleasant/soothing",
+      "tests": "Clinical history (onset, pattern, context); ASD evaluation; no waxing/waning"
+    },
+    {
+      "diagnosis": "OCD-related compulsions",
+      "features": "Driven by anxiety rather than premonitory urge; purposeful complex behaviors; ego-dystonic",
+      "tests": "Clinical assessment; Y-BOCS; driven by specific obsessions rather than sensory urge"
+    },
+    {
+      "diagnosis": "Epileptic myoclonus or absence seizures",
+      "features": "Time-locked EEG correlate; no premonitory urge; no suppressibility; impaired awareness (absence)",
+      "tests": "EEG (epileptiform discharges); video-EEG monitoring"
+    },
+    {
+      "diagnosis": "Drug-induced movement disorder (akathisia, tardive)",
+      "features": "Temporal relationship with dopamine blockers or stimulants; akathisia = inner restlessness; tardive = choreiform",
+      "tests": "Medication history; AIMS assessment; resolution with drug withdrawal (akathisia)"
+    },
+    {
+      "diagnosis": "Wilson's disease",
+      "features": "Hepatic dysfunction; Kayser-Fleischer rings; onset age 5-40; multiple movement disorder types",
+      "tests": "Ceruloplasmin (low); slit lamp exam; 24h urine copper; ATP7B testing"
+    },
+    {
+      "diagnosis": "PANDAS/PANS",
+      "features": "Abrupt, dramatic onset of tics/OCD; prepubertal; temporal relationship to streptococcal infection; neuropsychiatric symptoms",
+      "tests": "ASO titer; anti-DNAse B; throat culture; clinical criteria (acute onset + neuropsychiatric symptoms)"
+    },
+    {
+      "diagnosis": "Dystonia",
+      "features": "Sustained or intermittent muscle contraction causing abnormal postures; no suppressibility; no premonitory urge",
+      "tests": "Clinical pattern (sustained vs. brief); EMG (co-contraction pattern); DaTscan if needed"
+    },
+    {
+      "diagnosis": "Hemifacial spasm",
+      "features": "Unilateral; synchronous contraction of facial muscles; persists in sleep; caused by vascular compression",
+      "tests": "MRI/MRA (vascular loop compressing CN VII); EMG (lateral spread response)"
+    },
+    {
+      "diagnosis": "Habit disorder / mannerism",
+      "features": "Purposeful repetitive behavior; fully voluntary; no urge; associated with boredom or anxiety",
+      "tests": "Clinical history; behavioral assessment; resolution with redirection"
+    },
+    {
+      "diagnosis": "Restless legs syndrome",
+      "features": "Urge to move legs (not face/neck); worse at rest/evening; relieved by movement; no vocalizations",
+      "tests": "Clinical criteria (IRLSSG); ferritin level; polysomnography"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "CBIT is first-line treatment for tics in children and adults",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Pringsheim T et al. Neurology 2019 (AAN Practice Guideline)](https://pubmed.ncbi.nlm.nih.gov/31061208/)"
+    },
+    {
+      "recommendation": "CBIT is effective and durable for tic reduction (CBIT randomized trial)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Piacentini J et al. JAMA 2010](https://pubmed.ncbi.nlm.nih.gov/20483969/)"
+    },
+    {
+      "recommendation": "Alpha-2 agonists (guanfacine, clonidine) recommended for tics, especially with comorbid ADHD",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Pringsheim T et al. Neurology 2019 (AAN Guideline)](https://pubmed.ncbi.nlm.nih.gov/31061208/)"
+    },
+    {
+      "recommendation": "Haloperidol and pimozide FDA-approved for Tourette syndrome tic suppression",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Shapiro AK et al. Arch Gen Psychiatry 1989](https://pubmed.ncbi.nlm.nih.gov/2650511/)"
+    },
+    {
+      "recommendation": "Aripiprazole effective for tic reduction in Tourette syndrome",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Yoo HK et al. JAMA 2013](https://pubmed.ncbi.nlm.nih.gov/24150465/)"
+    },
+    {
+      "recommendation": "Risperidone effective for tic reduction in randomized trials",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Dion Y et al. J Clin Psychopharmacol 2002](https://pubmed.ncbi.nlm.nih.gov/11813370/)"
+    },
+    {
+      "recommendation": "Fluphenazine effective for tic suppression",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Borison RL et al. J Clin Psychopharmacol 1983](https://pubmed.ncbi.nlm.nih.gov/6350498/)"
+    },
+    {
+      "recommendation": "Stimulant medications do not worsen tics in most patients",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Pringsheim T et al. Neurology 2019 (AAN Guideline)](https://pubmed.ncbi.nlm.nih.gov/31061208/)"
+    },
+    {
+      "recommendation": "YGTSS is the gold standard for tic severity assessment",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Leckman JF et al. J Am Acad Child Adolesc Psychiatry 1989](https://pubmed.ncbi.nlm.nih.gov/2768151/)"
+    },
+    {
+      "recommendation": "DBS (GPi/CM-Pf) for refractory Tourette syndrome",
+      "evidenceLevel": "Class II-III, Level C",
+      "source": "[Martinez-Ramirez D et al. Brain Stimul 2018](https://pubmed.ncbi.nlm.nih.gov/29191438/)"
+    },
+    {
+      "recommendation": "Botulinum toxin for focal motor and phonic tics",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Marras C et al. Mov Disord 2001](https://pubmed.ncbi.nlm.nih.gov/11748742/)"
+    },
+    {
+      "recommendation": "Tetrabenazine for hyperkinetic movement disorders including tics",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Jankovic J, Beach J. Neurology 1997](https://pubmed.ncbi.nlm.nih.gov/9109891/)"
+    },
+    {
+      "recommendation": "Topiramate for tic reduction",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Jankovic J et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/20335562/)"
+    },
+    {
+      "recommendation": "PANDAS/PANS clinical criteria and management",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Swedo SE et al. Pediatrics 1998](https://pubmed.ncbi.nlm.nih.gov/9651423/)"
+    },
+    {
+      "recommendation": "European guidelines on Tourette syndrome assessment and treatment",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Roessner V et al. Eur Child Adolesc Psychiatry 2011](https://pubmed.ncbi.nlm.nih.gov/21445723/)"
+    },
+    {
+      "recommendation": "AAN guideline on treatment of tics in people with Tourette syndrome and chronic tic disorders",
+      "evidenceLevel": "Expert consensus, Level A-C",
+      "source": "[Pringsheim T et al. Neurology 2019](https://pubmed.ncbi.nlm.nih.gov/31061208/)"
+    },
+    {
+      "recommendation": "Natural history of Tourette syndrome (waxing/waning, adolescent peak, adult improvement)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Bloch MH et al. Lancet 2006](https://pubmed.ncbi.nlm.nih.gov/16814544/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "YGTSS (Yale Global Tic Severity Scale) total score",
+      "frequency": "Baseline; q3mo on treatment; each medication change",
+      "action": "Adjust treatment; add CBIT if not started; escalate pharmacotherapy; refer for DBS if >35 despite treatment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Premonitory Urge for Tics Scale (PUTS)",
+      "frequency": "Baseline; q6mo",
+      "action": "Guide CBIT approach; if high urge-tic correlation, CBIT is more effective",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Comorbidity screening (ADHD, OCD, anxiety, depression)",
+      "frequency": "Each visit",
+      "action": "Adjust comorbidity treatment; add behavioral therapy; psychiatric referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight, BMI, waist circumference (on antipsychotics)",
+      "frequency": "Baseline, monthly x3mo, then q3mo",
+      "action": "Dietary counseling; switch to lower metabolic risk agent; metformin if needed",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Fasting glucose, HbA1c, lipid panel (on antipsychotics)",
+      "frequency": "Baseline, 3mo, then q6-12mo",
+      "action": "Switch agent; dietary modification; endocrine referral if diabetes develops",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ECG / QTc interval (on pimozide, haloperidol, ziprasidone)",
+      "frequency": "Baseline, each dose increase, q6-12mo",
+      "action": "Reduce dose; discontinue if >500 msec; electrolyte correction; switch agent",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "AIMS assessment (on antipsychotics)",
+      "frequency": "Baseline, then q6mo",
+      "action": "Reduce antipsychotic dose; switch to VMAT2 inhibitor; diagnose TD if score >2 in 2 areas",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Prolactin (on risperidone, haloperidol, pimozide)",
+      "frequency": "Baseline, 3mo, then PRN for symptoms",
+      "action": "Reduce dose; switch to prolactin-sparing agent (aripiprazole); endocrine referral if symptomatic",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Depression/suicidality screening (on VMAT2 inhibitors)",
+      "frequency": "Each visit",
+      "action": "Discontinue VMAT2 inhibitor; immediate psychiatric referral; safety planning",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "BP and HR (on alpha-2 agonists)",
+      "frequency": "Each visit; more frequently during titration",
+      "action": "Reduce dose; hold if symptomatic; do not stop abruptly (taper over 1-2 weeks)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "DBS parameters and battery (post-DBS)",
+      "frequency": "q1-3mo initially, then q6-12mo",
+      "action": "Reprogram; schedule battery replacement if needed",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Functional assessment (school/work performance, social participation, QoL)",
+      "frequency": "Each visit",
+      "action": "Adjust treatment; add CBIT; school accommodations; vocational support",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Mild-moderate tics without self-injury; diagnosis confirmed; treatment plan initiated; outpatient follow-up scheduled"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Severe self-injurious tics (tic-related head banging, neck injury); inability to eat or drink due to tics; severe tic exacerbation requiring medication adjustment under observation; new-onset malignant Tourette variant"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Respiratory compromise from vocal tics or cervical tics; rhabdomyolysis from severe motor tics; tic-related self-injurious behavior causing significant trauma; severe medication adverse effects (NMS, cardiac arrhythmia)"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "DBS programming issues requiring specialized movement disorders center; refractory malignant Tourette requiring tertiary center expertise"
+    },
+    {
+      "disposition": "Outpatient follow-up",
+      "criteria": "2-4 weeks after new medication started; q3mo when stable on medication; 2 weeks after CBIT initiation; 6-12 months when tics well-controlled; more frequent if comorbidities being actively managed"
+    }
+  ]
+}

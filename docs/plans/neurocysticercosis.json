@@ -1,0 +1,1597 @@
+{
+  "id": "neurocysticercosis",
+  "title": "Neurocysticercosis",
+  "version": "1.1",
+  "icd10": [
+    "** B69.0 (Cysticercosis of central nervous system)",
+    "B69.1 (Cysticercosis of eye)",
+    "B69.81 (Myositis in cysticercosis)",
+    "B69.89 (Cysticercosis of other sites)"
+  ],
+  "scope": "** Diagnosis, staging, antiparasitic treatment, corticosteroid management, antiseizure medication selection, and follow-up of neurocysticercosis in adults. Covers all anatomic forms: parenchymal (vesicular, colloidal vesicular, granular nodular, calcified), ventricular (intraventricular), subarachnoid (racemose/basilar), and spinal neurocysticercosis. Includes Del Brutto diagnostic criteria, staging-based treatment approach, albendazole and praziquantel combination therapy, corticosteroid protocols, and surgical indications for hydrocephalus and intraventricular cysts. Excludes ocular cysticercosis (ophthalmology management), isolated subcutaneous cysticercosis without CNS involvement, and pediatric neurocysticercosis (dosing differences).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Eosinophilia in 10-30% of NCC; baseline for monitoring corticosteroid and antiparasitic toxicity; leukocytosis indicates co-infection or cysticercal encephalitis",
+          "target": "Eosinophilia (peripheral) in minority; normal WBC does NOT exclude NCC"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hepatic function for albendazole metabolism (hepatotoxicity risk); renal function baseline; electrolytes for seizure management; glucose monitoring during corticosteroid use",
+          "target": "Normal; monitor LFTs during albendazole course"
+        },
+        {
+          "item": "CRP (C-reactive protein) (CPT 86140)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Assess inflammatory response to cyst degeneration; elevated during colloidal stage (active inflammation); monitor treatment-related inflammation",
+          "target": "Variable; elevated during colloidal vesicular stage; declining with treatment"
+        },
+        {
+          "item": "ESR (erythrocyte sedimentation rate) (CPT 85652)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Nonspecific inflammatory marker; mildly elevated; useful to distinguish from other infectious etiologies",
+          "target": "Normal or mildly elevated"
+        },
+        {
+          "item": "Serum cysticercosis antibody (EITB/immunoblot) (CPT 86682)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "**Preferred serologic test** — enzyme-linked immunoelectrotransfer blot (EITB) sensitivity 94-98% for >1 viable cyst, specificity ~100%; sensitivity drops to 50-70% for single calcified lesion; positive supports diagnosis per Del Brutto criteria",
+          "target": "Positive (reactive to >=1 of 7 glycoprotein antigens); negative does NOT exclude NCC with single lesion or calcified disease"
+        },
+        {
+          "item": "Serum cysticercosis ELISA (CPT 86682)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Screening test; sensitivity 65-87%; specificity 75-100%; less specific than EITB; cross-reacts with other cestodes; use as adjunct if EITB unavailable",
+          "target": "Positive supports diagnosis; confirm with EITB if available"
+        },
+        {
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy assessment before LP or surgical intervention",
+          "target": "Normal; correct if abnormal before procedures"
+        },
+        {
+          "item": "Blood glucose / HbA1c (CPT 82947+83036)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline before corticosteroid therapy; diabetes screening (steroid-induced hyperglycemia common)",
+          "target": "HbA1c <6.5%; glucose <180 mg/dL during steroid use"
+        },
+        {
+          "item": "Pregnancy test (urine/serum hCG) (CPT 81025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Albendazole is teratogenic (Category C); praziquantel is Category B; exclude pregnancy before initiating antiparasitic therapy",
+          "target": "Negative required before antiparasitic therapy"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "If sepsis or meningoencephalitis suspected; cysticercal encephalitis with systemic inflammatory response",
+          "target": "<2 mmol/L"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Serum antigen detection (Ag-ELISA) for T. solium (CPT 86682)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Detects circulating parasite antigen; positive indicates viable (living) cysts; useful for monitoring treatment response (declining antigen = cyst death); sensitivity 65-90% for multiple viable cysts",
+          "target": "Positive indicates viable cysts; declining titer monitors treatment response; negative in single cyst or calcified disease"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody (CPT 87389)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Immunocompromise assessment; HIV alters NCC presentation and treatment response; concurrent opportunistic infections complicate management",
+          "target": "Negative; if positive: obtain CD4 count; affects treatment duration"
+        },
+        {
+          "item": "Stool ova and parasites x3 (CPT 87177)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Identify intestinal Taenia solium carriage (taeniasis); present in 5-15% of NCC patients; treatment of intestinal tapeworm prevents ongoing autoinfection and community transmission",
+          "target": "Negative; if positive: treat with niclosamide or praziquantel (single dose) for intestinal tapeworm"
+        },
+        {
+          "item": "Taenia solium stool antigen (coproantigen) (CPT 87177)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "More sensitive than microscopic stool O&P for detecting intestinal Taenia solium; important for public health (household contacts)",
+          "target": "Negative; if positive: treat intestinal taeniasis"
+        },
+        {
+          "item": "Serum sodium (CPT 84295)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "SIADH assessment (intracranial pathology); hyponatremia from cerebral salt wasting; important with corticosteroid use and ICP management",
+          "target": "135-145 mEq/L"
+        },
+        {
+          "item": "Serum osmolality (CPT 83930)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "SIADH vs. cerebral salt wasting differentiation; relevant if on mannitol or hypertonic saline for elevated ICP",
+          "target": "280-295 mOsm/kg"
+        },
+        {
+          "item": "Strongyloides serology (CPT 86682)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen before high-dose corticosteroids; Strongyloides hyperinfection syndrome is fatal during immunosuppression; endemic area overlap with NCC",
+          "target": "Negative required before initiating prolonged corticosteroids; if positive: treat with ivermectin before steroids"
+        },
+        {
+          "item": "LFTs (ALT, AST, bilirubin, alkaline phosphatase) (CPT 80076)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Albendazole causes hepatotoxicity in 2-5%; monitor during and after treatment; praziquantel primarily hepatically metabolized",
+          "target": "Normal; if ALT/AST >3x ULN: hold albendazole"
+        },
+        {
+          "item": "Antiepileptic drug levels (CPT 80201-80299)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "If on concurrent AEDs; praziquantel levels reduced by 50-75% with enzyme-inducing AEDs (carbamazepine, phenytoin); albendazole sulfoxide levels reduced by dexamethasone co-administration",
+          "target": "Therapeutic range for specific AED"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CSF cysticercosis antibody (EITB) (CPT 86682)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Higher sensitivity than serum for subarachnoid/ventricular NCC; important when serum EITB negative but clinical suspicion high; CSF detects intrathecal antibody production",
+          "target": "Positive; intrathecal synthesis supports CNS NCC"
+        },
+        {
+          "item": "CSF cysticercus antigen (Ag-ELISA) (CPT 86682)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Detects viable cysts in CSF; especially useful in subarachnoid (racemose) and ventricular NCC where serum tests less reliable; monitor treatment response",
+          "target": "Positive indicates viable cysts in CSF space"
+        },
+        {
+          "item": "CSF Taenia solium PCR (CPT 87798)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "Molecular confirmation when serology equivocal; identifies species-specific DNA in CSF; limited availability",
+          "target": "Positive; confirms T. solium DNA"
+        },
+        {
+          "item": "Histopathology of excised cyst",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "**Gold standard** per Del Brutto absolute criteria; identifies scolex, cyst wall, hooklets; confirms T. solium species; from surgical excision or endoscopic removal",
+          "target": "Parasitic structures: scolex with rostellar hooklets, cyst wall with tegument and subtegumental cells"
+        },
+        {
+          "item": "Brain biopsy / cyst excision with pathology",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "When diagnosis uncertain despite imaging and serology; to differentiate from tumor, abscess, or other granulomatous disease",
+          "target": "Cysticercus larva identified; parasitic elements within cyst; surrounding inflammatory tissue"
+        },
+        {
+          "item": "QuantiFERON-TB Gold (CPT 86480)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Tuberculoma is key differential for ring-enhancing lesions in endemic areas with geographic overlap; rule out concurrent TB meningitis",
+          "target": "Negative"
+        },
+        {
+          "item": "Toxoplasma IgG antibody (CPT 86777)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Differential diagnosis in immunocompromised patients; ring-enhancing lesions; especially if HIV-positive",
+          "target": "Negative; if positive with HIV: evaluate for concurrent toxoplasmosis"
+        },
+        {
+          "item": "Serum galactomannan (CPT 87305)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "If immunocompromised with atypical enhancement pattern; fungal abscess in differential",
+          "target": "Negative (<0.5 index)"
+        },
+        {
+          "item": "Complement levels (CH50, C3, C4)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Subarachnoid NCC triggers complement-mediated vasculitis; monitor if vasculitis suspected",
+          "target": "Normal or decreased"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure (CPT 89050)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Elevated ICP common in ventricular and subarachnoid NCC; hydrocephalus assessment; baseline for monitoring",
+          "target": "Normal 10-20 cm H2O; elevated in 50% of NCC with active inflammation or hydrocephalus"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "CSF pleocytosis with lymphocytic/eosinophilic predominance; eosinophils (>5%) highly suggestive of parasitic infection; mononuclear predominance in chronic disease",
+          "target": "WBC 5-500; **CSF eosinophilia (>5%) strongly supports parasitic etiology**; lymphocytic predominance common; polymorphonuclear in acute cyst rupture"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Elevated in active inflammation and subarachnoid disease; markedly elevated in racemose NCC and arachnoiditis",
+          "target": "Mildly to moderately elevated (50-300 mg/dL); markedly elevated (>200) in subarachnoid/racemose NCC"
+        },
+        {
+          "item": "Glucose with paired serum (CPT 82945)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Low glucose indicates chronic meningitis (subarachnoid NCC, TB meningitis, fungal); usually normal in parenchymal NCC",
+          "target": "Normal in parenchymal NCC; low (CSF/serum ratio <0.5) in subarachnoid NCC and chronic cysticercal meningitis"
+        },
+        {
+          "item": "CSF cysticercosis antibody (EITB) (CPT 86682)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Higher sensitivity than serum for subarachnoid and ventricular NCC; intrathecal antibody synthesis",
+          "target": "Positive; supports active CNS cysticercosis"
+        },
+        {
+          "item": "CSF cysticercosis antigen (Ag-ELISA) (CPT 86682)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Detects viable cysts in CSF; serial monitoring of treatment response in extraparenchymal disease; declining antigen = successful treatment",
+          "target": "Positive indicates viable cysts; serial decline with treatment"
+        },
+        {
+          "item": "Gram stain and bacterial culture (CPT 87205+87070)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Rule out bacterial meningitis as concurrent or alternative diagnosis",
+          "target": "Negative"
+        },
+        {
+          "item": "AFB smear and culture (CPT 87116)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Rule out TB meningitis (key differential in endemic areas with overlapping epidemiology)",
+          "target": "Negative"
+        },
+        {
+          "item": "Fungal culture (CPT 87102)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Rule out fungal meningitis (Coccidioides, Histoplasma, Cryptococcus) if immunocompromised or endemic area",
+          "target": "Negative"
+        },
+        {
+          "item": "Cytology (CPT 88108)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Rule out leptomeningeal carcinomatosis if atypical presentation or subarachnoid enhancement",
+          "target": "No malignant cells"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Immediate; first-line in ED for seizure, headache; **best for detecting calcified lesions** which MRI misses",
+          "target": "**Calcified granulomas** (most common finding in endemic areas); single or multiple calcified nodules; perilesional edema around calcified lesion (seizure trigger); hydrocephalus; parenchymal cysts",
+          "contraindications": "Pregnancy (relative; benefit outweighs risk in acute setting)"
+        },
+        {
+          "item": "CT head with contrast (CPT 70460)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Immediate if non-contrast shows edema or cysts; **ring enhancement identifies colloidal/granular stage**",
+          "target": "Ring-enhancing lesion (colloidal vesicular stage); disc enhancement (granular nodular stage); calcified nodules with or without surrounding edema; **scolex** visible as eccentric hyperdense dot within cyst",
+          "contraindications": "Contrast allergy (pre-medicate); renal impairment"
+        },
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Within 24h if CT suspicious; **gold standard** for NCC staging, cyst counting, scolex visualization, and identifying ventricular/subarachnoid disease",
+          "target": "**Vesicular stage:** CSF-intensity cyst with scolex (bright dot on FLAIR); **Colloidal stage:** ring enhancement, perilesional edema, bright cyst fluid on FLAIR; **Granular nodular:** nodular/ring enhancement, decreasing edema; **Calcified:** T2 hypointense, perilesional edema possible; **Ventricular:** mobile cyst within ventricle; **Subarachnoid/racemose:** multilobulated grape-like cysts in cisterns",
+          "contraindications": "Pacemaker; metallic implants; claustrophobia (sedate)"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within first 24h if admitted",
+          "target": "Soft tissue calcifications (subcutaneous/muscular cysticerci, \"cigar-shaped\" calcifications); pulmonary findings; baseline",
+          "contraindications": "None significant"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI spine with and without contrast (CPT 72156)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If spinal symptoms (radiculopathy, myelopathy); within 48-72h",
+          "target": "Intradural extramedullary or intramedullary cysticercus; spinal leptomeningeal enhancement; arachnoiditis; subarachnoid cysts along spinal cord",
+          "contraindications": "Same as MRI brain"
+        },
+        {
+          "item": "CT cisternography (CPT 70450)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "If subarachnoid NCC suspected but standard imaging equivocal; enhances visualization of cisternal cysts",
+          "target": "Racemose cysts in basal cisterns; filling defects in subarachnoid space",
+          "contraindications": "Intrathecal contrast allergy; elevated ICP"
+        },
+        {
+          "item": "Plain radiographs of thighs and shoulders (CPT 73552+73030)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Screening for disseminated cysticercosis; confirm systemic disease",
+          "target": "**Cigar-shaped calcifications** in muscles (pathognomonic for disseminated cysticercosis); supports NCC diagnosis per Del Brutto minor criteria",
+          "contraindications": "None"
+        },
+        {
+          "item": "EEG (routine) (CPT 95816)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If seizure at presentation; baseline for patients starting AED therapy; evaluate for subclinical seizure activity",
+          "target": "Focal epileptiform discharges corresponding to cyst location; generalized abnormalities; background slowing",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Continuous EEG (cEEG) (CPT 95700)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If altered mental status; concern for cysticercal encephalitis with non-convulsive seizures; refractory seizures",
+          "target": "Seizure activity; non-convulsive status epilepticus",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Echocardiogram (TTE) (CPT 93306)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If cardiac cysticercosis suspected (rare); disseminated disease",
+          "target": "Intracardiac cysts (rare)",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "CT orbits (CPT 70480)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If visual symptoms or concern for ocular cysticercosis; **rule out ocular cysts before starting antiparasitic therapy** (treatment causes cyst inflammation that destroys vision)",
+          "target": "Intraocular or periorbital cysticercus; retinal cyst; subretinal cyst",
+          "contraindications": "Contrast allergy"
+        },
+        {
+          "item": "Ophthalmologic examination (fundoscopy)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**MANDATORY before starting antiparasitic treatment**; ocular cysticercosis is a contraindication to antiparasitic drugs; treatment-induced inflammation causes blindness",
+          "target": "Intraocular cyst (vitreous, retinal, subretinal); papilledema (elevated ICP)",
+          "contraindications": "None"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Baseline; QTc assessment before medications; cardiac cysticercosis screen in disseminated disease",
+          "target": "Normal; QTc prolongation risk with some AEDs",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "FIESTA/CISS MRI sequences (3D heavily T2-weighted)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "For intraventricular cyst visualization; superior to standard MRI for small ventricular and subarachnoid cysts",
+          "target": "Intraventricular cyst outline clearly delineated; scolex visible; cyst relationship to ventricular walls and foramina",
+          "contraindications": "Same as MRI brain"
+        },
+        {
+          "item": "Phase-contrast cine MRI",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "If mobile intraventricular cyst suspected (ball-valve hydrocephalus); demonstrates cyst mobility with CSF flow",
+          "target": "Mobile cyst causing intermittent foramen obstruction",
+          "contraindications": "Same as MRI brain"
+        },
+        {
+          "item": "PET-CT brain (CPT 78816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If diagnosis uncertain despite standard workup; differentiate from neoplasm",
+          "target": "Cysticercal lesion: minimal FDG uptake (peripheral inflammatory ring); neoplasm: diffuse uptake",
+          "contraindications": "Pregnancy; uncontrolled diabetes"
+        },
+        {
+          "item": "ICP monitoring (EVD)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Acute hydrocephalus from ventricular cyst obstruction; declining consciousness from cysticercal encephalitis",
+          "target": "ICP <22 mmHg; CPP >60 mmHg",
+          "contraindications": "Coagulopathy (correct first)"
+        },
+        {
+          "item": "Neuroendoscopy (diagnostic/therapeutic)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "Intraventricular cyst removal; direct visualization and excision; avoids open craniotomy",
+          "target": "Cyst visualized and excised intact; scolex identified; cyst-free ventricle post-procedure",
+          "contraindications": "Coagulopathy; inaccessible cyst location"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Dexamethasone (CPT 96374)",
+          "route": "IV",
+          "indication": "Pre-treatment corticosteroid BEFORE antiparasitic therapy; reduces treatment-induced inflammation from cyst degeneration; essential for cysticercal encephalitis; subarachnoid NCC with arachnoiditis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.15 mg/kg",
+                "orderSentence": "Dexamethasone (CPT 96374) 0.15 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.15 mg/kg IV q6h (typically 4-8 mg q6h); start 1-2 days BEFORE antiparasitic drugs; taper over 2-4 weeks based on clinical response; longer courses for subarachnoid NCC; dexamethasone increases albendazole sulfoxide levels by 50%",
+            "orderSentence": "Dexamethasone (CPT 96374) 0.15 mg/kg IV"
+          },
+          "contraindications": "Active untreated fungal/bacterial infection; uncontrolled diabetes (relative); GI bleed (relative)",
+          "monitoring": "Glucose q6h during IV therapy; GI prophylaxis; blood pressure; mood changes; taper schedule; infection signs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam (seizure management) (CPT 96374)",
+          "route": "IV/PO",
+          "indication": "First-line antiseizure medication for NCC-related seizures; no hepatic enzyme induction (avoids reducing praziquantel levels); seizures occur in 70-90% of parenchymal NCC",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Levetiracetam (seizure management) (CPT 96374) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV load, then 500-1000 mg IV/PO BID; titrate by 500 mg/day every 2 weeks to 1500 mg BID if seizures persist; max 3000 mg/day; does NOT interact with antiparasitic drugs",
+            "orderSentence": "Levetiracetam (seizure management) (CPT 96374) 1000 mg IV"
+          },
+          "contraindications": "Severe renal impairment (dose adjust CrCl <30); behavioral side effects",
+          "monitoring": "Renal function; behavioral/mood changes (irritability, depression); CBC",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mannitol 20% (CPT 96365)",
+          "route": "IV",
+          "indication": "Elevated ICP from cysticercal encephalitis, large perilesional edema, or obstructive hydrocephalus; bridge to definitive treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g/kg",
+                "orderSentence": "Mannitol 20% (CPT 96365) 1 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 g/kg IV bolus over 20 min; then 0.25-0.5 g/kg q4-6h PRN for ICP >22; hold if serum osm >320",
+            "orderSentence": "Mannitol 20% (CPT 96365) 1 g/kg IV"
+          },
+          "contraindications": "Anuria; severe dehydration; active intracranial bleeding",
+          "monitoring": "Serum osmolality (<320 mOsm/kg); osmolar gap; renal function; serum Na; I/O",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline 23.4%",
+          "route": "IV",
+          "indication": "Acute herniation from massive cerebral edema in cysticercal encephalitis; more sustained ICP reduction than mannitol",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mL via central line over 10-20 min; target Na 145-155 mEq/L; repeat PRN",
+            "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+          },
+          "contraindications": "No central access (causes tissue necrosis peripherally)",
+          "monitoring": "Serum Na q4-6h; osmolality; central line access confirmed",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam (seizure rescue)",
+          "route": "IV",
+          "indication": "Active seizure in NCC; breakthrough seizure during antiparasitic treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Lorazepam (seizure rescue) 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg) over 2 min; repeat x1 in 5 min if seizure continues; max 8 mg total",
+            "orderSentence": "Lorazepam (seizure rescue) 4 mg IV"
+          },
+          "contraindications": "Respiratory depression; severe hypotension",
+          "monitoring": "Respiratory rate; SpO2; blood pressure; airway equipment at bedside",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV normal saline",
+          "route": "IV",
+          "indication": "Maintenance fluids; avoid hypotonic solutions which worsen cerebral edema; euvolemia during corticosteroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.9% NaCl",
+                "orderSentence": "IV normal saline 0.9% NaCl IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Isotonic fluids only; avoid D5W and half-normal saline; maintain euvolemia",
+            "orderSentence": "IV normal saline 0.9% NaCl IV"
+          },
+          "contraindications": "Volume overload; CHF",
+          "monitoring": "I/O; electrolytes daily; serum Na",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO/IV",
+          "indication": "Headache management; fever control; avoid NSAIDs if concern for GI bleed during corticosteroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Acetaminophen 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO/IV q6h; max 4 g/day; IV route if unable to take PO",
+            "orderSentence": "Acetaminophen 1000 mg PO"
+          },
+          "contraindications": "Severe hepatic disease (caution with concurrent albendazole hepatotoxicity)",
+          "monitoring": "Temperature; LFTs (especially with concurrent albendazole)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV/PO",
+          "indication": "Nausea and vomiting (common with elevated ICP and antiparasitic therapy; albendazole commonly causes nausea)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV/PO q6h PRN nausea; max 16 mg/day",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation; severe hepatic impairment (max 8 mg/day)",
+          "monitoring": "QTc if risk factors; hepatic function",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pantoprazole",
+          "route": "IV/PO",
+          "indication": "GI prophylaxis during corticosteroid therapy; stress ulcer prevention in ICU; steroid-induced gastropathy prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole 40 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "40 mg IV/PO daily; discontinue when steroids stopped and no longer in ICU",
+            "orderSentence": "Pantoprazole 40 mg IV"
+          },
+          "contraindications": "Long-term use risks (C. diff, hypomagnesemia); only while on steroids",
+          "monitoring": "GI symptoms; discontinue when steroids tapered",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Enoxaparin",
+          "route": "SC",
+          "indication": "DVT prophylaxis; prolonged hospitalization and immobilization; steroid use increases VTE risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily; start 24h post-surgery if no active bleeding; hold if upcoming surgery",
+            "orderSentence": "Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active intracranial bleeding; recent craniotomy (<24h); coagulopathy; platelets <50K",
+          "monitoring": "Platelets q3 days (HIT monitoring); coagulation panel",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pneumatic compression devices",
+          "route": "Mechanical",
+          "indication": "DVT prophylaxis; apply on admission; use in conjunction with pharmacologic prophylaxis when safe",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Pneumatic compression devices N/A Mechanical"
+              }
+            ],
+            "route": "Mechanical",
+            "instructions": "Bilateral sequential compression devices; apply on admission; continue until fully ambulatory",
+            "orderSentence": "Pneumatic compression devices N/A Mechanical"
+          },
+          "contraindications": "Acute DVT in lower extremity; severe peripheral vascular disease",
+          "monitoring": "Skin integrity; proper fit; compliance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Fosphenytoin (seizure rescue second-line)",
+          "route": "IV",
+          "indication": "Refractory seizure not responding to levetiracetam; status epilepticus; **NOTE: phenytoin/fosphenytoin is enzyme-inducing and reduces praziquantel levels by 50%**",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg PE/kg",
+                "orderSentence": "Fosphenytoin (seizure rescue second-line) 20 mg PE/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "20 mg PE/kg IV at 150 mg PE/min; maintenance 100 mg PE q8h; target free phenytoin level 1-2 mcg/mL",
+            "orderSentence": "Fosphenytoin (seizure rescue second-line) 20 mg PE/kg IV"
+          },
+          "contraindications": "Bradycardia; second/third-degree heart block; hypotension; reduces praziquantel levels",
+          "monitoring": "Continuous telemetry during load; free phenytoin level; LFTs; drug interactions with antiparasitic agents",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lacosamide",
+          "route": "IV/PO",
+          "indication": "Second-line AED for NCC-related seizures; no enzyme induction (preferred over carbamazepine/phenytoin which reduce praziquantel levels)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Lacosamide 200 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "200 mg IV load, then 100-200 mg PO BID; max 400 mg/day; no significant drug interactions with antiparasitic agents",
+            "orderSentence": "Lacosamide 200 mg IV"
+          },
+          "contraindications": "PR prolongation; second/third-degree AV block; severe hepatic impairment",
+          "monitoring": "ECG (PR interval); LFTs; cardiac rhythm",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Second-line/Refractory — Antiparasitic Therapy": [
+        {
+          "item": "Albendazole",
+          "route": "PO",
+          "indication": "**First-line antiparasitic** for viable parenchymal NCC (vesicular and colloidal stages); 1-2 viable cysts: albendazole monotherapy x 7-14 days; >2 viable cysts: combine with praziquantel; subarachnoid/racemose NCC: prolonged courses (months); take with fatty meal (increases absorption 5-fold)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15 mg/kg/day",
+                "orderSentence": "Albendazole 15 mg/kg/day PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "15 mg/kg/day PO divided BID (standard max 400 mg BID = 800 mg/day; up to 600 mg BID = 1200 mg/day for subarachnoid NCC or heavy cyst burden per ID specialist guidance); take with fatty meal; duration: 7-14 days for 1-2 parenchymal cysts; 10-14 days for >2 cysts (with praziquantel); weeks to months for subarachnoid NCC",
+            "orderSentence": "Albendazole 15 mg/kg/day PO"
+          },
+          "contraindications": "**Ocular cysticercosis** (ABSOLUTE — causes vision loss); pregnancy (teratogenic); severe hepatic disease; cysticercal encephalitis with uncontrolled edema (treat edema first)",
+          "monitoring": "LFTs at baseline, day 7, day 14, then biweekly; CBC q2 weeks (leukopenia, thrombocytopenia); clinical response; repeat imaging at 3-6 months",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Praziquantel",
+          "route": "PO",
+          "indication": "**Combined with albendazole** for >2 viable parenchymal cysts (combination more effective than either alone per RCTs); single agent if albendazole intolerance; **NOTE: levels reduced 50-75% by enzyme-inducing AEDs (carbamazepine, phenytoin) and by dexamethasone — increase dose or use cimetidine to boost levels**",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg/kg/day",
+                "orderSentence": "Praziquantel 50 mg/kg/day PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg/kg/day PO divided TID; take with fatty meal; combine with albendazole for >2 viable cysts; duration 10-14 days for parenchymal NCC; if on enzyme-inducing AEDs: increase dose to 100 mg/kg/day or add cimetidine 400 mg TID to inhibit metabolism",
+            "orderSentence": "Praziquantel 50 mg/kg/day PO"
+          },
+          "contraindications": "**Ocular cysticercosis** (ABSOLUTE); pregnancy (Category B but avoid during treatment); concurrent rifampin (reduces levels markedly); cysticercal encephalitis with uncontrolled edema",
+          "monitoring": "LFTs; clinical response; drug interactions (enzyme-inducing AEDs reduce levels by 50-75%); repeat imaging at 3-6 months",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cimetidine (praziquantel booster)",
+          "route": "PO",
+          "indication": "Inhibits CYP3A4 metabolism of praziquantel; increases praziquantel bioavailability 2-fold; essential when enzyme-inducing AEDs cannot be avoided",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg",
+                "orderSentence": "Cimetidine (praziquantel booster) 400 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400 mg PO TID; start 1-2 days before praziquantel; continue throughout praziquantel course",
+            "orderSentence": "Cimetidine (praziquantel booster) 400 mg PO"
+          },
+          "contraindications": "Renal impairment (dose adjust); drug interactions (inhibits CYP3A4)",
+          "monitoring": "Drug interactions; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prednisone (oral steroid taper)",
+          "route": "PO",
+          "indication": "Transition from IV dexamethasone; prolonged steroid course for subarachnoid NCC; maintenance anti-inflammatory therapy during outpatient antiparasitic treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg/kg",
+                "orderSentence": "Prednisone (oral steroid taper) 1 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 mg/kg/day PO (max 60 mg) then taper over 2-4 weeks for parenchymal NCC; for subarachnoid/racemose NCC: prolonged taper over months (years for chronic arachnoiditis)",
+            "orderSentence": "Prednisone (oral steroid taper) 1 mg/kg PO"
+          },
+          "contraindications": "Active infections; uncontrolled diabetes; GI ulcer; osteoporosis (relative for prolonged use)",
+          "monitoring": "Glucose; blood pressure; weight; bone density if prolonged use (>3 months); mood changes; infection signs; adrenal suppression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methotrexate (steroid-sparing agent)",
+          "route": "PO",
+          "indication": "Steroid-sparing agent for subarachnoid/racemose NCC requiring prolonged anti-inflammatory therapy (months to years); allows corticosteroid taper while maintaining anti-inflammatory effect",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "7.5-20 mg",
+                "orderSentence": "Methotrexate (steroid-sparing agent) 7.5-20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 7.5 mg PO weekly; titrate to 15-20 mg weekly as tolerated; supplement with folic acid 1 mg daily (except on MTX day); onset of effect 4-6 weeks",
+            "orderSentence": "Methotrexate (steroid-sparing agent) 7.5-20 mg PO"
+          },
+          "contraindications": "Pregnancy (teratogenic); severe hepatic/renal impairment; immunodeficiency; bone marrow suppression; interstitial lung disease",
+          "monitoring": "CBC with differential monthly; LFTs monthly; renal function monthly; folic acid compliance; pulmonary symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Niclosamide",
+          "route": "PO",
+          "indication": "Treatment of intestinal Taenia solium (taeniasis) to eliminate tapeworm and prevent ongoing autoinfection and community transmission",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Niclosamide 2 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2 g PO as single dose (chew thoroughly then swallow with water); take on empty stomach; purge 2h after to expel worm segments",
+            "orderSentence": "Niclosamide 2 g PO"
+          },
+          "contraindications": "Allergy; none significant",
+          "monitoring": "Stool follow-up at 1 and 3 months post-treatment to confirm eradication; household contacts screened",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Surgical Management (Disease-Modifying)": [
+        {
+          "item": "Neuroendoscopic cyst removal",
+          "route": "Surgical",
+          "indication": "**Preferred approach** for intraventricular cysticercosis; direct visualization and excision of cyst; avoids open craniotomy; lateral and third ventricle cysts most amenable; fourth ventricle more challenging",
+          "dosing": {
+            "instructions": "Single procedure; cyst removed intact when possible; combined with ventriculostomy if hydrocephalus",
+            "orderSentence": "Neuroendoscopic cyst removal - Surgical - see dosing"
+          },
+          "pretreatment": "MRI with FIESTA/CISS sequences to localize cyst; coagulation panel (INR <1.5, platelets >100K); neurosurgery consultation; anesthesia clearance",
+          "contraindications": "Coagulopathy (correct first); inaccessible cyst location; severe inflammation precluding safe dissection",
+          "monitoring": "Post-procedure MRI within 24-48h; neurologic exam q1h x 6h then q2h; signs of hemorrhage; CSF leak; hydrocephalus resolution",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "VP shunt placement",
+          "route": "Surgical",
+          "indication": "Obstructive hydrocephalus from subarachnoid (racemose) NCC or chronic arachnoiditis; communicating hydrocephalus from chronic meningitis; when endoscopic cyst removal not feasible or hydrocephalus persists after cyst removal",
+          "dosing": {
+            "instructions": "Permanent CSF diversion; programmable valve preferred",
+            "orderSentence": "VP shunt placement - Surgical - see dosing"
+          },
+          "pretreatment": "CT/MRI confirming hydrocephalus; coagulation panel; neurosurgery consultation; assess for shunt infection risk",
+          "contraindications": "Active CNS infection (relative; requires simultaneous treatment); coagulopathy",
+          "monitoring": "Shunt function (clinical and imaging); shunt infection surveillance; ventricular size on follow-up imaging; signs of over-drainage or under-drainage",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Endoscopic third ventriculostomy (ETV)",
+          "route": "Surgical",
+          "indication": "Alternative to VP shunt for obstructive hydrocephalus; avoids shunt dependency; combine with endoscopic cyst removal when feasible",
+          "dosing": {
+            "instructions": "Single procedure; creates CSF pathway bypassing obstruction",
+            "orderSentence": "Endoscopic third ventriculostomy (ETV) - Surgical - see dosing"
+          },
+          "pretreatment": "MRI anatomy assessment; coagulation panel; neurosurgery",
+          "contraindications": "Communicating hydrocephalus (ETV less effective); basilar artery adherent to floor of third ventricle",
+          "monitoring": "Post-procedure imaging; neurologic exam; ICP monitoring if EVD placed",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Craniotomy with cyst excision",
+          "route": "Surgical",
+          "indication": "Large parenchymal cyst with significant mass effect not amenable to medical therapy; giant subarachnoid (racemose) cyst; fourth ventricle cyst not amenable to endoscopic removal; diagnostic uncertainty requiring tissue",
+          "dosing": {
+            "instructions": "Complete excision of cyst with capsule when feasible",
+            "orderSentence": "Craniotomy with cyst excision - Surgical - see dosing"
+          },
+          "pretreatment": "CT/MRI navigation imaging; coagulation panel; type and crossmatch; corticosteroid pre-treatment; neurosurgery and anesthesia",
+          "contraindications": "Multiple deep cysts; eloquent cortex (relative); severe comorbidities precluding general anesthesia",
+          "monitoring": "Post-operative neurologic exam q1h x 12h then q2h; CT at 24h; wound care; ICP if EVD; seizure monitoring",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "External ventricular drain (EVD)",
+          "route": "Surgical",
+          "indication": "Acute obstructive hydrocephalus from ventricular cyst; cysticercal encephalitis with elevated ICP; bridge to definitive treatment",
+          "dosing": {
+            "instructions": "Continuous or intermittent CSF drainage; target ICP <22 mmHg; target CPP >60 mmHg",
+            "orderSentence": "External ventricular drain (EVD) - Surgical - see dosing"
+          },
+          "pretreatment": "Coagulation panel; neurosurgery; CT confirming hydrocephalus",
+          "contraindications": "Severe coagulopathy (correct first)",
+          "monitoring": "ICP continuous; CSF output hourly; CSF culture daily; EVD site care; neurologic exam q1h",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Infectious disease consultation for antiparasitic regimen selection, dosing optimization, drug interactions, and treatment duration guidance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurosurgery consultation for ventricular cysts, hydrocephalus management (VP shunt, ETV, EVD), large cysts with mass effect, and diagnostic tissue sampling",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurology consultation for seizure management, AED selection (avoiding enzyme-inducing agents), EEG interpretation, and long-term epilepsy management",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ophthalmology consultation MANDATORY before initiating antiparasitic therapy to rule out ocular cysticercosis (treatment-induced inflammation causes blindness)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Critical care/ICU team for cysticercal encephalitis with diffuse cerebral edema, elevated ICP, herniation, or respiratory failure",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Gastroenterology consultation if intestinal taeniasis confirmed for treatment and surveillance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Endocrinology consultation for corticosteroid-induced diabetes management during prolonged steroid courses (especially subarachnoid NCC requiring months of therapy)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Public health notification and household contact screening for Taenia solium (stool examination of household members; identify tapeworm carrier to prevent ongoing transmission)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pharmacy consultation for drug interaction management (praziquantel interactions with enzyme-inducing AEDs; albendazole bioavailability optimization; cimetidine boosting)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for deconditioning prevention and rehabilitation if focal deficits present",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for discharge planning, medication access (albendazole availability), immigration/insurance barriers common in endemic populations",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychology referral if cognitive complaints persist after treatment (encephalitis, multiple cysts, or chronic hydrocephalus cause lasting cognitive impact)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately if worsening headache, new confusion, seizure, fever, new weakness, vision changes, or vomiting (indicates treatment-induced inflammation, hydrocephalus, or cysticercal encephalitis)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take albendazole WITH a fatty meal (increases drug absorption 5-fold; without fat, most of the drug is not absorbed and treatment fails)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT stop corticosteroids abruptly (adrenal crisis risk with sudden discontinuation; taper as directed by physician; risk increases after >2 weeks of use)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report any yellowing of skin/eyes, dark urine, or right upper abdominal pain (signs of albendazole hepatotoxicity requiring medication hold and evaluation)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take antiseizure medications as prescribed; do NOT stop abruptly (risk of breakthrough seizure; NCC is the leading cause of adult-onset epilepsy worldwide)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT drive until cleared by neurology due to seizure risk (state laws typically require 3-12 months seizure-free; NCC-related seizures recur even after cyst resolution)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow-up MRI scans are essential to confirm cyst resolution (typically at 3 and 6 months after treatment; some cysts take 12+ months to fully resolve or calcify)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report any vision changes immediately (indicates ocular cysticercosis or treatment-related intraocular inflammation)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Ensure household members are screened for intestinal Taenia solium by stool examination (identifying and treating the tapeworm carrier prevents ongoing transmission)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Practice strict hand hygiene and food safety: wash hands thoroughly before eating and after using the restroom; wash all fruits and vegetables; cook pork to internal temperature of >=145F (63C)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Bring all medications to every follow-up visit for medication reconciliation and compliance assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow-up with neurology in 4-6 weeks for seizure assessment, AED level monitoring, and imaging review",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow-up with infectious disease in 2-4 weeks for antiparasitic treatment response assessment and lab monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Food safety education: thoroughly cook all pork products to internal temperature >=145F (63C); avoid raw or undercooked pork (prevents intestinal tapeworm acquisition)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Hand hygiene education: wash hands with soap and water before preparing food, before eating, and after using the restroom (fecal-oral transmission of T. solium eggs causes cysticercosis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Water safety: drink boiled or filtered water in endemic areas; avoid consuming water potentially contaminated with human feces",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Seizure safety precautions: avoid heights, swimming alone, unsupervised bathing, and operating heavy machinery until seizure-free period established per neurology guidance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Glycemic control optimization during corticosteroid therapy (monitor glucose closely; initiate insulin or oral hypoglycemic agents during treatment as needed)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Bone health: calcium 1000-1200 mg/day and vitamin D 1000-2000 IU/day supplementation during prolonged corticosteroid use (>3 months); DEXA scan if prolonged steroid course anticipated",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Screen household contacts for T. solium tapeworm carriage with stool O&P and/or coproantigen testing (public health imperative to interrupt transmission cycle)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Travel counseling for patients returning to endemic areas: emphasize food and water hygiene, pork cooking practices, and sanitation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid alcohol during antiparasitic therapy (hepatotoxicity risk with albendazole potentiated by alcohol; impairs medication compliance)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stress management and mental health support (chronic disease management; immigration-related stressors common in endemic populations; seizure-related anxiety and depression)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Gradual return to work and daily activities with seizure precautions; driving restrictions per state law; employer notification if safety-sensitive occupation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Women of childbearing age: effective contraception MANDATORY during albendazole therapy and for 1 month after completion (albendazole is teratogenic)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow-up imaging schedule: MRI at 3 months, 6 months, 12 months, then annually until cyst resolution confirmed and seizure-free; longer follow-up for subarachnoid NCC",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Tuberculoma",
+      "features": "Endemic area overlap; ring-enhancing or solid nodular lesion; conglomerate lesions; basilar meningeal enhancement; no scolex; slower progression; constitutional symptoms",
+      "tests": "QuantiFERON-TB Gold; chest imaging; AFB culture; CSF TB PCR; biopsy with caseating granulomas; response to anti-TB therapy; NO scolex on imaging"
+    },
+    {
+      "diagnosis": "Brain abscess",
+      "features": "Ring-enhancing lesion with DWI restriction; fever; acute presentation; peripheral leukocytosis; thinner wall on ventricular side; no scolex",
+      "tests": "MRI DWI (restricted diffusion = abscess; NCC does NOT restrict); blood cultures; fever pattern; surgical aspiration with Gram stain and culture"
+    },
+    {
+      "diagnosis": "Brain metastasis",
+      "features": "Multiple ring-enhancing lesions at gray-white junction; known primary malignancy; progressive neurologic decline; no scolex; surrounded by vasogenic edema",
+      "tests": "CT chest/abdomen/pelvis for primary; no DWI restriction; no scolex; no calcifications; biopsy if uncertain"
+    },
+    {
+      "diagnosis": "High-grade glioma (GBM)",
+      "features": "Irregular thick ring enhancement; necrotic center without scolex; older age; progressive over weeks; mass effect disproportionate to size",
+      "tests": "MRI DWI (no restriction); MR spectroscopy (elevated choline); PET (hypermetabolic); biopsy"
+    },
+    {
+      "diagnosis": "Toxoplasmosis",
+      "features": "HIV/AIDS with CD4 <100; multiple ring-enhancing lesions in basal ganglia; no scolex; responds to empiric therapy within 2 weeks",
+      "tests": "Toxoplasma IgG (>95% positive); CD4 count; empiric treatment trial; no calcifications; serology"
+    },
+    {
+      "diagnosis": "Primary CNS lymphoma",
+      "features": "Periventricular homogeneous enhancement; immunocompromised or immunocompetent; no scolex; responds dramatically to steroids (ghost tumor)",
+      "tests": "MRI (homogeneous enhancement); CSF cytology; EBV PCR in CSF; avoid steroids before biopsy; no calcifications"
+    },
+    {
+      "diagnosis": "Meningioma",
+      "features": "Extra-axial dural-based mass; homogeneous enhancement with dural tail; no scolex; no calcification pattern of NCC",
+      "tests": "MRI (extra-axial, dural-based, dural tail); no DWI restriction; no ring enhancement; biopsy if uncertain"
+    },
+    {
+      "diagnosis": "Colloid cyst (third ventricle)",
+      "features": "Anterior third ventricle location; hyperdense on CT; no enhancement; intermittent hydrocephalus; positional headache",
+      "tests": "CT (hyperdense third ventricle cyst); MRI (variable signal but no scolex); no enhancement; no serologic markers"
+    },
+    {
+      "diagnosis": "Arachnoid cyst",
+      "features": "CSF-intensity cyst WITHOUT scolex; no enhancement; no perilesional edema; no calcification; congenital; asymptomatic or mass effect",
+      "tests": "MRI (CSF signal on ALL sequences, no scolex, no enhancement, no FLAIR signal); negative serology; stable on serial imaging"
+    },
+    {
+      "diagnosis": "Epidermoid cyst",
+      "features": "CSF-like cyst on T1/T2 but RESTRICTS on DWI (unlike arachnoid cyst); pearly white appearance; extra-axial; no scolex",
+      "tests": "MRI DWI (restricted diffusion unlike NCC cyst); no enhancement; no scolex; no calcification; no serology"
+    },
+    {
+      "diagnosis": "Cavernous malformation",
+      "features": "Popcorn-like lesion with hemosiderin rim; mixed signal on MRI; no enhancement (typically); seizures; no scolex; blooming on GRE/SWI",
+      "tests": "MRI GRE/SWI (prominent hemosiderin blooming); no enhancement; no scolex; gradient echo sequences diagnostic; negative serology"
+    },
+    {
+      "diagnosis": "Calcified AVM or old hemorrhage",
+      "features": "Calcification on CT; mimics calcified NCC; vascular flow voids on MRI; history of hemorrhage or incidental finding",
+      "tests": "CTA/MRA (vascular malformation); angiography (definitive); no scolex; negative serology; different calcification pattern"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Del Brutto diagnostic criteria for NCC",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Del Brutto et al. J Neurol Sci 2017](https://pubmed.ncbi.nlm.nih.gov/28320184/) — revised diagnostic criteria with absolute, major, minor, and epidemiologic criteria"
+    },
+    {
+      "recommendation": "Albendazole 15 mg/kg/day for parenchymal NCC",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Garcia et al. N Engl J Med 2004](https://pubmed.ncbi.nlm.nih.gov/15306668/) — randomized controlled trial demonstrating albendazole reduces seizure burden and promotes cyst resolution"
+    },
+    {
+      "recommendation": "Combination albendazole + praziquantel for >2 viable cysts",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Garcia et al. Lancet Infect Dis 2014](https://pubmed.ncbi.nlm.nih.gov/25444472/) — RCT showing combination therapy superior to albendazole alone for multiple cysts"
+    },
+    {
+      "recommendation": "Corticosteroids before and during antiparasitic therapy",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Garcia et al. N Engl J Med 2004](https://pubmed.ncbi.nlm.nih.gov/15306668/); [IDSA/ASTMH Guidelines — White et al. Clin Infect Dis 2018](https://pubmed.ncbi.nlm.nih.gov/29481580/)"
+    },
+    {
+      "recommendation": "IDSA/ASTMH Clinical Practice Guidelines for NCC",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[White et al. Clin Infect Dis 2018](https://pubmed.ncbi.nlm.nih.gov/29481580/) — comprehensive guidelines for diagnosis and treatment of NCC"
+    },
+    {
+      "recommendation": "No antiparasitic therapy for calcified NCC",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[White et al. Clin Infect Dis 2018](https://pubmed.ncbi.nlm.nih.gov/29481580/) — calcified lesions are dead parasites; antiparasitic therapy has no target; AEDs for seizures"
+    },
+    {
+      "recommendation": "EITB (immunoblot) as preferred serologic test",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Tsang et al. J Infect Dis 1989](https://pubmed.ncbi.nlm.nih.gov/2715568/) — EITB sensitivity 94-98% for >1 viable cyst; specificity ~100%"
+    },
+    {
+      "recommendation": "Enzyme-inducing AEDs reduce praziquantel levels by 50-75%",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Bittencourt et al. Neurology 1992](https://pubmed.ncbi.nlm.nih.gov/1549209/) — phenytoin and carbamazepine significantly reduce praziquantel bioavailability; prefer non-enzyme-inducing AEDs"
+    },
+    {
+      "recommendation": "Ophthalmologic exam mandatory before antiparasitic therapy",
+      "evidenceLevel": "Class I, Level C",
+      "source": "[White et al. Clin Infect Dis 2018](https://pubmed.ncbi.nlm.nih.gov/29481580/) — treatment-induced inflammation causes vision loss in ocular NCC; absolute contraindication"
+    },
+    {
+      "recommendation": "Neuroendoscopy preferred for intraventricular cyst removal",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Sinha & Sharma. Neurosurg Focus 2012](https://pubmed.ncbi.nlm.nih.gov/22537130/) — endoscopic approach offers direct visualization with lower morbidity than open surgery for ventricular cysts"
+    },
+    {
+      "recommendation": "VP shunt for chronic hydrocephalus in subarachnoid NCC",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[White et al. Clin Infect Dis 2018](https://pubmed.ncbi.nlm.nih.gov/29481580/) — chronic arachnoiditis causes communicating hydrocephalus requiring permanent CSF diversion"
+    },
+    {
+      "recommendation": "Prolonged antiparasitic therapy for subarachnoid NCC",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Proano et al. Ann Intern Med 2001](https://pubmed.ncbi.nlm.nih.gov/11293476/) — subarachnoid (racemose) NCC requires prolonged courses (months); monitor with CSF antigen"
+    },
+    {
+      "recommendation": "NCC is the leading cause of adult-onset epilepsy worldwide",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Ndimubanzi et al. PLoS Negl Trop Dis 2010](https://pubmed.ncbi.nlm.nih.gov/21152057/) — systematic review confirming NCC accounts for ~30% of epilepsy in endemic areas"
+    },
+    {
+      "recommendation": "Methotrexate as steroid-sparing agent for subarachnoid NCC",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "[Mitre et al. Clin Infect Dis 2007](https://pubmed.ncbi.nlm.nih.gov/17712753/) — case series supporting methotrexate for chronic arachnoiditis requiring prolonged immunosuppression"
+    },
+    {
+      "recommendation": "Albendazole bioavailability increased 5-fold with fatty meal",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Mottier et al. J Pharm Pharmacol 2006](https://pubmed.ncbi.nlm.nih.gov/16553415/) — pharmacokinetic studies demonstrating critical importance of fatty meal for drug absorption"
+    },
+    {
+      "recommendation": "Cysticercal encephalitis: no antiparasitic initially",
+      "evidenceLevel": "Class I, Level C",
+      "source": "[White et al. Clin Infect Dis 2018](https://pubmed.ncbi.nlm.nih.gov/29481580/) — antiparasitic drugs worsen cerebral edema in cysticercal encephalitis; control edema first with corticosteroids and ICP management"
+    },
+    {
+      "recommendation": "Dexamethasone increases albendazole sulfoxide levels by 50%",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Jung et al. J Clin Pharmacol 1990](https://pubmed.ncbi.nlm.nih.gov/2229455/) — pharmacokinetic synergy; concurrent dexamethasone enhances albendazole efficacy"
+    },
+    {
+      "recommendation": "Serial MRI for monitoring treatment response",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Expert consensus; [White et al. Clin Infect Dis 2018](https://pubmed.ncbi.nlm.nih.gov/29481580/) — imaging at 3 and 6 months; cyst resolution or calcification confirms successful treatment"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (GCS, pupils, motor, speech)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q2-4h inpatient; each OPD visit",
+      "action": "If declining: STAT CT; assess for treatment-induced inflammation, hydrocephalus; hold antiparasitic if worsening; increase corticosteroids"
+    },
+    {
+      "item": "Temperature",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q4h (q1h if febrile)",
+      "action": "If persistent high fever: evaluate for bacterial superinfection; cysticercal encephalitis; other etiology"
+    },
+    {
+      "item": "LFTs (ALT, AST, bilirubin)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "Baseline; day 7; day 14 of albendazole; then biweekly during treatment",
+      "action": "If ALT/AST >3x ULN: HOLD albendazole; recheck in 1 week; resume at lower dose if normalized or switch to praziquantel monotherapy"
+    },
+    {
+      "item": "CBC with differential",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Baseline; weekly during antiparasitic therapy; q2 weeks during prolonged courses",
+      "action": "If leukopenia or thrombocytopenia: hold albendazole; recheck in 1 week; dose reduction"
+    },
+    {
+      "item": "Blood glucose",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q6h during IV dexamethasone; daily during oral steroid taper; each OPD visit",
+      "action": "If persistently elevated: start insulin sliding scale or oral hypoglycemic; endocrine consultation for prolonged steroid courses"
+    },
+    {
+      "item": "Serum sodium",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Daily x 3 then twice weekly inpatient; each OPD visit during steroid taper",
+      "action": "If <130: SIADH workup; fluid restriction; if <120: 3% saline"
+    },
+    {
+      "item": "Antiepileptic drug levels",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "Once at steady state; after dose changes; if breakthrough seizures",
+      "action": "Adjust dosing; assess compliance; drug interaction review"
+    },
+    {
+      "item": "Serial MRI brain with contrast",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "At 3 months, 6 months, 12 months post-treatment; then annually until resolved",
+      "action": "If enlarging or new cysts: retreat with antiparasitic; if new edema around calcification: short steroid course; neurosurgery if hydrocephalus"
+    },
+    {
+      "item": "Seizure monitoring (clinical + EEG)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Clinical: continuous inpatient; EEG if altered consciousness; OPD: seizure diary",
+      "action": "If seizures: optimize AED levels; add second agent; continuous EEG in ICU; assess for new cyst inflammation"
+    },
+    {
+      "item": "CSF antigen levels (subarachnoid NCC)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Baseline; at 3 months; at 6 months; then q6 months until negative",
+      "action": "If rising or stable: treatment failure; extend antiparasitic course; reassess surgical options"
+    },
+    {
+      "item": "ICP (if EVD in place)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Continuous",
+      "action": "Tiered ICP management: CSF drainage, osmotherapy, sedation, surgical decompression"
+    },
+    {
+      "item": "Ophthalmologic exam",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Baseline before treatment; at 3 months; if new visual symptoms",
+      "action": "If new intraocular findings: HOLD antiparasitic; urgent ophthalmology"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home (with outpatient follow-up)",
+      "criteria": "Clinically stable; seizure-free >=48h on AEDs; tolerating oral medications (antiparasitic + steroids + AED); no signs of elevated ICP; no hydrocephalus on imaging; outpatient MRI and lab follow-up arranged; neurology and ID follow-up confirmed within 2-4 weeks; reliable medication access and compliance anticipated"
+    },
+    {
+      "disposition": "Admit to floor (monitored)",
+      "criteria": "New NCC diagnosis with active parenchymal cysts requiring initiation of antiparasitic therapy under observation; mild headache without signs of elevated ICP; GCS >=14; seizures controlled on medication; monitoring for treatment-induced inflammation during first 48-72h of antiparasitic + steroid initiation"
+    },
+    {
+      "disposition": "Admit to ICU / Neuro-ICU",
+      "criteria": "Cysticercal encephalitis (massive edema, diffuse viable cysts); acute hydrocephalus requiring EVD; GCS <13 or declining; herniation syndrome; refractory seizures or status epilepticus; post-operative monitoring after craniotomy or endoscopic cyst removal; need for ICP monitoring"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Need for neurosurgery not available at current facility (endoscopic cyst removal, VP shunt, craniotomy); need for neuro-ICU expertise; need for continuous EEG not available; need for specialized NCC serologic testing"
+    },
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Calcified NCC (inactive) with controlled seizures; known NCC on established AED regimen with seizure diary; follow-up imaging and serology monitoring; stable subarachnoid NCC on maintenance steroid/antiparasitic taper"
+    }
+  ]
+}

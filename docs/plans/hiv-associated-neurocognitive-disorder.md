@@ -25,7 +25,7 @@ tags:
 
 **ICD-10:** B20 (Human immunodeficiency virus [HIV] disease), F02.80 (Dementia in other diseases classified elsewhere without behavioral disturbance), F02.81 (Dementia in other diseases classified elsewhere with behavioral disturbance), R41.81 (Age-related cognitive decline), R41.840 (Attention and concentration deficit), R41.3 (Other amnesia), F06.8 (Other specified mental disorders due to known physiological condition)
 
-**CPT CODES:** 96116 (Neurobehavioral status exam), 96132 (Neuropsychological testing), 70553 (MRI brain with/without contrast), 70551 (MRI brain without contrast), 70450 (CT head without contrast), 85025 (CBC), 80053 (CMP), 86360 (CD4 count), 87536 (HIV viral load), 86689 (HTLV antibody), 89051 (CSF cell count), 84157 (CSF protein), 82945 (CSF glucose), 87536 (CSF HIV RNA), 86592 (RPR/VDRL), 87389 (HIV antigen/antibody), 84443 (TSH), 82607 (B12), 80307 (urine drug screen), 82746 (Folate), 83036 (HbA1c), 96127 (Brief emotional/behavioral assessment), 95816 (EEG), 78608 (PET brain)
+**CPT CODES:** 96116 (Neurobehavioral status exam), 96132 (Neuropsychological testing), 70553 (MRI brain with/without contrast), 70551 (MRI brain without contrast), 70450 (CT head without contrast), 85025 (CBC), 80053 (CMP), 86360 (CD4 count), 87536 (HIV viral load), 86689 (HTLV antibody), 89051 (CSF cell count), 84157 (CSF protein), 82945 (CSF glucose), 87536 (CSF HIV RNA), 86592 (RPR/VDRL), 87389 (HIV antigen/antibody), 84443 (TSH), 82607 (B12), 80307 (urine drug screen), 82746 (Folate), 83036 (HbA1c), 96127 (Brief emotional/behavioral assessment), 95816 (EEG), 78608 (PET brain), 62270 (Lumbar puncture, diagnostic), 80299 (Therapeutic drug level, NOS), 86711 (JC virus antibody), 87483 (Meningitis/encephalitis panel, multiplex PCR), 87798 (JC virus PCR), 87496 (CMV PCR, quantitative), 87116 (AFB culture), 87556 (TB amplified probe), 88104 (Cytopathology, fluids), 87799 (EBV PCR), 74177 (CT abdomen/pelvis with contrast), 86235 (Nuclear antigen antibody), 82390 (Ceruloplasmin), 86777 (Toxoplasma antibody), 86641 (Cryptococcal antigen), 86644 (CMV antibody), 83916 (Oligoclonal bands)
 
 **SYNONYMS:** HIV-associated neurocognitive disorder, HAND, HIV dementia, HIV-associated dementia, HAD, AIDS dementia complex, ADC, HIV encephalopathy, minor neurocognitive disorder due to HIV, MND, asymptomatic neurocognitive impairment, ANI, neuroAIDS, HIV cognitive impairment, HIV-related cognitive decline, HIV-associated mild neurocognitive disorder, HIV brain disease, subcortical dementia due to HIV
 
@@ -89,12 +89,12 @@ SECTION A: ACTION ITEMS
 
 | Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
 |------|-----------|----------------|:--:|:----:|:---:|:---:|
-| ART drug levels (therapeutic drug monitoring) | If CNS penetration or adherence concerns; especially for dolutegravir, darunavir CSF levels in suspected CNS escape | Therapeutic range | - | EXT | EXT | - |
+| ART drug levels (therapeutic drug monitoring) (CPT 80299) | If CNS penetration or adherence concerns; especially for dolutegravir, darunavir CSF levels in suspected CNS escape | Therapeutic range | - | EXT | EXT | - |
 | Serum ceruloplasmin/copper (CPT 82390) | Wilson disease if <50 years with movement disorder and cognitive decline | Normal | - | EXT | EXT | - |
 | ANA, dsDNA (CPT 86235) | Autoimmune process in differential; HIV can cause false-positive ANA | Negative | - | EXT | EXT | - |
-| Paraneoplastic panel | If subacute onset with concern for HIV-associated malignancy (lymphoma) | Negative | - | EXT | EXT | - |
-| JC virus antibody (serum) (CPT 86255) | PML risk stratification; positive serostatus with CD4 <200 increases PML risk | Document serostatus | - | ROUTINE | ROUTINE | - |
-| Autoimmune encephalitis panel (serum) | If subacute cognitive decline with psychiatric features, seizures; immune reconstitution may trigger autoimmune processes | Negative | - | EXT | EXT | - |
+| Paraneoplastic panel (CPT 86235) | If subacute onset with concern for HIV-associated malignancy (lymphoma) | Negative | - | EXT | EXT | - |
+| JC virus antibody (serum) (CPT 86711) | PML risk stratification; positive serostatus with CD4 <200 increases PML risk | Document serostatus | - | ROUTINE | ROUTINE | - |
+| Autoimmune encephalitis panel (serum) (CPT 86255) | If subacute cognitive decline with psychiatric features, seizures; immune reconstitution may trigger autoimmune processes | Negative | - | EXT | EXT | - |
 
 ---
 
@@ -113,7 +113,7 @@ SECTION A: ACTION ITEMS
 |-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
 | MRI spectroscopy (MRS) (CPT 76390) | Research/specialized centers; differentiating HAND from other dementias; monitoring treatment response | HAND: elevated choline/creatine (inflammation), reduced N-acetylaspartate/creatine (neuronal loss), elevated myoinositol (gliosis); pattern may precede structural changes | Same as MRI | - | EXT | EXT | - |
 | FDG-PET brain (CPT 78608) | Diagnostic uncertainty; differentiate HAND from AD or FTD; atypical presentations | HAND: subcortical hypometabolism (basal ganglia, thalamus); AD: temporoparietal; FTD: frontal | Per PET | - | - | EXT | - |
-| CT chest/abdomen/pelvis | If concern for systemic OI, lymphoma, or other HIV-associated malignancy as cause of CNS symptoms | Lymphadenopathy, masses, infections | Contrast allergy, renal disease | - | ROUTINE | - | - |
+| CT chest/abdomen/pelvis (CPT 74177) | If concern for systemic OI, lymphoma, or other HIV-associated malignancy as cause of CNS symptoms | Lymphadenopathy, masses, infections | Contrast allergy, renal disease | - | ROUTINE | - | - |
 | EEG (CPT 95816) | If seizures suspected, subclinical seizure activity, or NCSE in acute cognitive decline | HAND: generalized slowing; focal abnormalities indicate structural lesion; seizure activity requires treatment | None | - | ROUTINE | ROUTINE | - |
 
 ### 2C. Neuropsychological Testing
@@ -128,7 +128,7 @@ SECTION A: ACTION ITEMS
 
 ### LUMBAR PUNCTURE
 
-**Indication:** All patients with suspected HAND require LP for CSF HIV RNA quantification, exclusion of opportunistic infections, and biomarker assessment; mandatory for HAD evaluation; strongly recommended for MND; obtain for ANI if clinical concern warrants
+**Indication:** All patients with suspected HAND require LP (CPT 62270) for CSF HIV RNA quantification, exclusion of opportunistic infections, and biomarker assessment; mandatory for HAD evaluation; strongly recommended for MND; obtain for ANI if clinical concern warrants
 
 | Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
 |-------|-----------|----------------|:--:|:----:|:---:|:---:|
@@ -139,12 +139,12 @@ SECTION A: ACTION ITEMS
 | CSF HIV-1 RNA (quantitative) (CPT 87536) | CSF viral escape (detectable CSF HIV RNA with suppressed plasma viral load) is treatable cause of HAND; guides ART optimization for CNS penetration | Undetectable; if detectable with suppressed plasma VL, this indicates CSF viral escape requiring ART optimization for CNS penetration | URGENT | URGENT | ROUTINE | - |
 | CSF VDRL (CPT 86592) | Neurosyphilis; VDRL is only validated non-treponemal CSF test; high co-infection rate | Nonreactive | - | ROUTINE | ROUTINE | - |
 | Cryptococcal antigen (CSF) (CPT 86641) | Rule out cryptococcal meningitis if CD4 <200 or elevated opening pressure; can present with subacute cognitive decline | Negative; positive requires cryptococcal meningitis treatment | URGENT | URGENT | - | - |
-| CSF meningitis/encephalitis panel (PCR multiplex) | Rule out viral encephalitis (HSV, CMV, VZV, JC virus); especially if acute/subacute presentation | Negative; positive requires targeted treatment | URGENT | URGENT | - | - |
-| JC virus PCR (CSF) | PML if white matter lesions on MRI; CD4 <200; progressive multifocal symptoms | Negative; positive confirms PML diagnosis (sensitivity ~80%) | - | URGENT | ROUTINE | - |
-| CMV PCR (CSF) | CMV encephalitis if CD4 <50; periventricular enhancement on MRI | Negative; positive requires ganciclovir treatment | - | URGENT | - | - |
-| AFB smear and culture, TB PCR | Tuberculous meningitis if endemic area, low CD4, constitutional symptoms | Negative; positive requires TB treatment | - | URGENT | ROUTINE | - |
-| Cytology | CNS lymphoma if mass lesion, EBV+ in CSF; HIV increases lymphoma risk | Normal; abnormal requires oncology referral | - | ROUTINE | - | - |
-| EBV PCR (CSF) | Primary CNS lymphoma marker; elevated CSF EBV DNA with ring-enhancing lesion on MRI | Negative; positive with enhancing lesion requires biopsy or empiric treatment | - | URGENT | - | - |
+| CSF meningitis/encephalitis panel (PCR multiplex) (CPT 87483) | Rule out viral encephalitis (HSV, CMV, VZV, JC virus); especially if acute/subacute presentation | Negative; positive requires targeted treatment | URGENT | URGENT | - | - |
+| JC virus PCR (CSF) (CPT 87798) | PML if white matter lesions on MRI; CD4 <200; progressive multifocal symptoms | Negative; positive confirms PML diagnosis (sensitivity ~80%) | - | URGENT | ROUTINE | - |
+| CMV PCR (CSF) (CPT 87496) | CMV encephalitis if CD4 <50; periventricular enhancement on MRI | Negative; positive requires ganciclovir treatment | - | URGENT | - | - |
+| AFB smear and culture, TB PCR (CPT 87116, 87556) | Tuberculous meningitis if endemic area, low CD4, constitutional symptoms | Negative; positive requires TB treatment | - | URGENT | ROUTINE | - |
+| Cytology (CPT 88104) | CNS lymphoma if mass lesion, EBV+ in CSF; HIV increases lymphoma risk | Normal; abnormal requires oncology referral | - | ROUTINE | - | - |
+| EBV PCR (CSF) (CPT 87799) | Primary CNS lymphoma marker; elevated CSF EBV DNA with ring-enhancing lesion on MRI | Negative; positive with enhancing lesion requires biopsy or empiric treatment | - | URGENT | - | - |
 | CSF neurofilament light chain (NfL) | Marker of neuronal injury; elevated in active HAND; may track treatment response; research and specialized centers | Low/normal; elevated indicates active neuronal injury | - | EXT | EXT | - |
 | Oligoclonal bands / IgG index (CPT 83916) | Intrathecal immune activation; elevated in HAND but nonspecific; helps distinguish from MS or other inflammatory processes | May show intrathecal synthesis | - | ROUTINE | ROUTINE | - |
 

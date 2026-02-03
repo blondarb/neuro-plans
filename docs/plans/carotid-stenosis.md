@@ -1,7 +1,7 @@
 ---
 title: "Carotid Stenosis"
 description: "Clinical decision support for evaluation and management of extracranial carotid artery stenosis including symptomatic vs asymptomatic classification, medical optimization, revascularization indications, and long-term surveillance"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: approved
 tags:
@@ -15,7 +15,7 @@ tags:
 
 # Carotid Stenosis
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** February 2, 2026
 **REVISED:** February 2, 2026
 **STATUS:** Approved
@@ -146,11 +146,11 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Nicardipine drip | IV | Perioperative BP control for CEA/CAS; prevent hyperperfusion syndrome; maintain BP 100-150 systolic post-CEA; rapid onset and easy titration | 5 mg/hr :: IV :: continuous :: Start 5 mg/hr IV infusion; titrate by 2.5 mg/hr every 5-15 minutes; target SBP 100-150 (post-CEA) or per surgeon guidance; max 15 mg/hr; transition to oral antihypertensives when stable | Severe aortic stenosis; advanced heart failure | Continuous arterial line BP; HR; neuro checks q1h; transition to oral agents within 24-48h | - | STAT | - | STAT |
-| Labetalol | IV | Alternative perioperative BP control; combined alpha/beta blocker; useful when HR also elevated | 10 mg :: IV :: q10-15min PRN :: 10-20 mg IV push q10-15min; or infusion 1-2 mg/min; max 300 mg total; target SBP 100-150 post-CEA | Severe bradycardia; second/third degree heart block; decompensated HF; severe asthma/COPD; cardiogenic shock | HR; BP; bronchospasm; heart block | - | STAT | - | STAT |
-| Phenylephrine | IV | Post-CEA or post-CAS hypotension from baroreceptor stimulation; more common after CAS (carotid sinus manipulation); maintain cerebral perfusion | 40 mcg :: IV :: q1-2min PRN :: 40-100 mcg IV bolus q1-2min PRN; or infusion 10-200 mcg/min; titrate to SBP >100 or per clinical status; baroreceptor-mediated hypotension usually self-limited (24-72h) | Severe hypertension; peripheral vascular disease (digital ischemia); MAO inhibitor use | Continuous BP and HR via arterial line; I/O; end-organ perfusion; typically wean within 24-72h | - | STAT | - | STAT |
-| Atropine | IV | Post-CAS bradycardia from baroreceptor stimulation during stent deployment; prophylactic or reactive | 0.5 mg :: IV :: q3-5min PRN :: 0.5-1 mg IV push; may repeat q3-5min; max 3 mg; prophylactic 0.5 mg IV before CAS balloon inflation in some protocols | Glaucoma (relative); tachyarrhythmia; myocardial ischemia | HR; BP; urinary retention; rarely needed beyond procedural period | - | STAT | - | STAT |
-| Heparin (intraprocedural) | IV | Intraoperative anticoagulation during CEA (prevent clamp thrombosis) and CAS (prevent catheter/stent thrombosis); standard of care | 5000 units :: IV :: once :: 5000-10000 units IV bolus before carotid clamping (CEA) or before catheter advancement (CAS); target ACT >250; protamine reversal at surgeon discretion post-CEA | Active major hemorrhage; HIT (use bivalirudin alternative) | ACT intraoperatively; post-op drain output (CEA); bleeding from access site (CAS) | - | STAT | - | STAT |
+| Nicardipine drip (CPT 96365, 96366) | IV | Perioperative BP control for CEA/CAS; prevent hyperperfusion syndrome; maintain BP 100-150 systolic post-CEA; rapid onset and easy titration | 5 mg/hr :: IV :: continuous :: Start 5 mg/hr IV infusion; titrate by 2.5 mg/hr every 5-15 minutes; target SBP 100-150 (post-CEA) or per surgeon guidance; max 15 mg/hr; transition to oral antihypertensives when stable | Severe aortic stenosis; advanced heart failure | Continuous arterial line BP; HR; neuro checks q1h; transition to oral agents within 24-48h | - | STAT | - | STAT |
+| Labetalol (CPT 96374) | IV | Alternative perioperative BP control; combined alpha/beta blocker; useful when HR also elevated | 10 mg :: IV :: q10-15min PRN :: 10-20 mg IV push q10-15min; or infusion 1-2 mg/min; max 300 mg total; target SBP 100-150 post-CEA | Severe bradycardia; second/third degree heart block; decompensated HF; severe asthma/COPD; cardiogenic shock | HR; BP; bronchospasm; heart block | - | STAT | - | STAT |
+| Phenylephrine (CPT 96365, 96366) | IV | Post-CEA or post-CAS hypotension from baroreceptor stimulation; more common after CAS (carotid sinus manipulation); maintain cerebral perfusion | 40 mcg :: IV :: q1-2min PRN :: 40-100 mcg IV bolus q1-2min PRN; or infusion 10-200 mcg/min; titrate to SBP >100 or per clinical status; baroreceptor-mediated hypotension usually self-limited (24-72h) | Severe hypertension; peripheral vascular disease (digital ischemia); MAO inhibitor use | Continuous BP and HR via arterial line; I/O; end-organ perfusion; typically wean within 24-72h | - | STAT | - | STAT |
+| Atropine (CPT 96374) | IV | Post-CAS bradycardia from baroreceptor stimulation during stent deployment; prophylactic or reactive | 0.5 mg :: IV :: q3-5min PRN :: 0.5-1 mg IV push; may repeat q3-5min; max 3 mg; prophylactic 0.5 mg IV before CAS balloon inflation in some protocols | Glaucoma (relative); tachyarrhythmia; myocardial ischemia | HR; BP; urinary retention; rarely needed beyond procedural period | - | STAT | - | STAT |
+| Heparin (intraprocedural) (CPT 96374) | IV | Intraoperative anticoagulation during CEA (prevent clamp thrombosis) and CAS (prevent catheter/stent thrombosis); standard of care | 5000 units :: IV :: once :: 5000-10000 units IV bolus before carotid clamping (CEA) or before catheter advancement (CAS); target ACT >250; protamine reversal at surgeon discretion post-CEA | Active major hemorrhage; HIT (use bivalirudin alternative) | ACT intraoperatively; post-op drain output (CEA); bleeding from access site (CAS) | - | STAT | - | STAT |
 
 ---
 
@@ -251,20 +251,20 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | CEA for symptomatic carotid stenosis 70-99% reduces ipsilateral stroke risk (ARR 17% at 2 years; NNT 6) | Class I, Level A (RCT) | [NASCET Collaborators. NEJM 1991](https://pubmed.ncbi.nlm.nih.gov/1852179/) |
-| CEA benefit in symptomatic 50-69% stenosis is moderate (ARR 6.5% at 5 years) and greatest in men, recent events, and hemisphere symptoms | Class I, Level A (RCT) | [Barnett et al. NEJM 1998 (NASCET 50-69%)](https://pubmed.ncbi.nlm.nih.gov/9823822/) |
-| CEA for symptomatic stenosis confirmed in European trial with different measurement method | Class I, Level A (RCT) | [European Carotid Surgery Trial (ECST). Lancet 1998](https://pubmed.ncbi.nlm.nih.gov/9624043/) |
-| CEA for asymptomatic stenosis >=60% reduces 5-year stroke risk (ARR 5.9%; NNT 17); benefit requires perioperative risk <3% | Class I, Level A (RCT) | [ACAS Executive Committee. JAMA 1995](https://pubmed.ncbi.nlm.nih.gov/7869052/) |
+| CEA benefit in symptomatic 50-69% stenosis is moderate (ARR 6.5% at 5 years) and greatest in men, recent events, and hemisphere symptoms | Class I, Level A (RCT) | [Barnett et al. NEJM 1998 (NASCET 50-69%)](https://pubmed.ncbi.nlm.nih.gov/9811916/) |
+| CEA for symptomatic stenosis confirmed in European trial with different measurement method | Class I, Level A (RCT) | [European Carotid Surgery Trial (ECST). Lancet 1998](https://pubmed.ncbi.nlm.nih.gov/9593407/) |
+| CEA for asymptomatic stenosis >=60% reduces 5-year stroke risk (ARR 5.9%; NNT 17); benefit requires perioperative risk <3% | Class I, Level A (RCT) | [ACAS Executive Committee. JAMA 1995](https://pubmed.ncbi.nlm.nih.gov/7723155/) |
 | CEA for asymptomatic stenosis >=60% confirmed in larger European trial (ARR 5.4% at 5 years) | Class I, Level A (RCT) | [Halliday et al. Lancet 2004 (ACST)](https://pubmed.ncbi.nlm.nih.gov/15135594/) |
 | CAS non-inferior to CEA for symptomatic and asymptomatic stenosis at 4 years (composite endpoint); CAS higher periprocedural stroke, CEA higher periprocedural MI | Class I, Level A (RCT) | [Brott et al. NEJM 2010 (CREST)](https://pubmed.ncbi.nlm.nih.gov/20505173/) |
-| CREST long-term follow-up (10 years) showed equivalent outcomes between CEA and CAS for symptomatic patients; age interaction (younger patients do better with CAS, older with CEA) | Class I, Level A (RCT) | [Brott et al. NEJM 2016 (CREST 10-year)](https://pubmed.ncbi.nlm.nih.gov/26886418/) |
-| Maximum benefit of CEA occurs when performed within 2 weeks of symptomatic event; delay reduces benefit significantly | Class I, Level A (Pooled RCT analysis) | [Rothwell et al. Lancet 2004](https://pubmed.ncbi.nlm.nih.gov/15016487/) |
+| CREST long-term follow-up (10 years) showed equivalent outcomes between CEA and CAS for symptomatic patients; age interaction (younger patients do better with CAS, older with CEA) | Class I, Level A (RCT) | [Brott et al. NEJM 2016 (CREST 10-year)](https://pubmed.ncbi.nlm.nih.gov/26890472/) |
+| Maximum benefit of CEA occurs when performed within 2 weeks of symptomatic event; delay reduces benefit significantly | Class I, Level A (Pooled RCT analysis) | [Rothwell et al. Lancet 2004](https://pubmed.ncbi.nlm.nih.gov/15043958/) |
 | DAPT (aspirin + clopidogrel) x 21 days for minor stroke/high-risk TIA reduces recurrent stroke | Class I, Level A (RCTs) | [Wang et al. NEJM 2013 (CHANCE)](https://pubmed.ncbi.nlm.nih.gov/23803136/); [Johnston et al. NEJM 2018 (POINT)](https://pubmed.ncbi.nlm.nih.gov/29766750/) |
-| High-intensity statin with LDL <70 for secondary stroke prevention reduces recurrent vascular events | Class I, Level A (RCTs) | [Amarenco et al. NEJM 2006 (SPARCL)](https://pubmed.ncbi.nlm.nih.gov/16899775/); [Amarenco et al. NEJM 2020 (TST)](https://pubmed.ncbi.nlm.nih.gov/31738504/) |
+| High-intensity statin with LDL <70 for secondary stroke prevention reduces recurrent vascular events | Class I, Level A (RCTs) | [Amarenco et al. NEJM 2006 (SPARCL)](https://pubmed.ncbi.nlm.nih.gov/16899775/); [Amarenco et al. NEJM 2020 (TST)](https://pubmed.ncbi.nlm.nih.gov/31738483/) |
 | BP target <130/80 for secondary stroke prevention (symptomatic patients) | Class I, Level A | [AHA/ASA Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34024117/) |
 | AHA/ASA guideline for management of extracranial carotid and vertebral artery disease — comprehensive practice guideline | Class I-III, Levels A-C | [Brott et al. Stroke 2011 (ASA/ACCF/AHA guideline)](https://pubmed.ncbi.nlm.nih.gov/21282493/) |
-| Society for Vascular Surgery guidelines for management of extracranial carotid stenosis | Class I-III, Levels A-C | [Ricotta et al. J Vasc Surg 2011 (SVS guideline)](https://pubmed.ncbi.nlm.nih.gov/21839933/) |
-| Microembolic signals on TCD predict increased stroke risk in asymptomatic carotid stenosis | Class II, Level B | [Markus et al. Lancet Neurol 2010 (ACES)](https://pubmed.ncbi.nlm.nih.gov/20494734/) |
-| Intraplaque hemorrhage on MRI predicts ipsilateral cerebrovascular events in carotid stenosis | Class II, Level B | [Altaf et al. Stroke 2007](https://pubmed.ncbi.nlm.nih.gov/17138943/) |
+| Society for Vascular Surgery guidelines for management of extracranial carotid stenosis | Class I-III, Levels A-C | [Ricotta et al. J Vasc Surg 2011 (SVS guideline)](https://pubmed.ncbi.nlm.nih.gov/21889701/) |
+| Microembolic signals on TCD predict increased stroke risk in asymptomatic carotid stenosis | Class II, Level B | [Markus et al. Lancet Neurol 2010 (ACES)](https://pubmed.ncbi.nlm.nih.gov/20554250/) |
+| Intraplaque hemorrhage on MRI predicts ipsilateral cerebrovascular events in carotid stenosis | Class II, Level B | [Altaf et al. Stroke 2007](https://pubmed.ncbi.nlm.nih.gov/17379827/) |
 | CAS with embolic protection non-inferior to CEA in high-risk surgical patients | Class I, Level B (RCT) | [Yadav et al. NEJM 2004 (SAPPHIRE)](https://pubmed.ncbi.nlm.nih.gov/15470212/) |
 | Mediterranean diet reduces recurrent cardiovascular events | Class I, Level A (RCT) | [Estruch et al. NEJM 2018 (PREDIMED)](https://pubmed.ncbi.nlm.nih.gov/29897866/) |
 | PCSK9 inhibitor (evolocumab) reduces cardiovascular events in patients with atherosclerotic disease on statin therapy | Class I, Level A (RCT) | [Sabatine et al. NEJM 2017 (FOURIER)](https://pubmed.ncbi.nlm.nih.gov/28304224/) |

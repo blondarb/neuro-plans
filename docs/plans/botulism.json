@@ -1,0 +1,1644 @@
+{
+  "id": "botulism",
+  "title": "Botulism",
+  "version": "1.1",
+  "icd10": [
+    "** A05.1 (Botulism food poisoning — foodborne botulism)",
+    "T48.1X1A (Poisoning by skeletal muscle relaxants",
+    "accidental — iatrogenic botulism)",
+    "A48.51 (Infant botulism)",
+    "A48.52 (Wound botulism)",
+    "A48.59 (Other specified botulism — adult intestinal colonization",
+    "inhalational)"
+  ],
+  "scope": "** Diagnosis and management of all forms of botulism: foodborne (toxin ingestion), wound (toxin produced in infected wound), iatrogenic (therapeutic botulinum toxin overdose), infant botulism (intestinal colonization in infants), and adult intestinal colonization. Covers acute recognition of descending flaccid paralysis, respiratory monitoring (NIF/FVC), antitoxin administration (heptavalent equine antitoxin via CDC), electrophysiologic diagnosis, differentiation from GBS/MG/stroke, and supportive ICU care. Excludes cosmetic botulinum toxin use without adverse effect and bioterrorism-specific protocols (notify public health).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline; infection screen; wound botulism may show leukocytosis",
+          "target": "Normal; leukocytosis suggests wound infection"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolyte abnormalities; renal/hepatic function; baseline for prolonged ICU course",
+          "target": "Normal"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypomagnesemia worsens neuromuscular weakness; can compound paralysis",
+          "target": ">1.8 mg/dL"
+        },
+        {
+          "item": "Phosphorus (CPT 84100)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypophosphatemia can worsen respiratory muscle weakness",
+          "target": ">2.5 mg/dL"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Critical illness hyperglycemia management; autonomic dysfunction",
+          "target": "Normal"
+        },
+        {
+          "item": "Arterial blood gas (ABG) (CPT 82803)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Respiratory failure assessment; early CO2 retention precedes hypoxia",
+          "target": "Normal pH, pCO2 <45 mmHg; rising pCO2 indicates impending respiratory failure"
+        },
+        {
+          "item": "PT/INR (CPT 85610), aPTT (CPT 85730)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulation status before procedures; wound botulism may need surgical debridement",
+          "target": "Normal"
+        },
+        {
+          "item": "Blood cultures (aerobic/anaerobic) (CPT 87040)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Wound botulism — rule out secondary bacteremia; exclude sepsis",
+          "target": "No growth"
+        },
+        {
+          "item": "Urinalysis (CPT 81003)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline; UTI as complication in prolonged hospitalization",
+          "target": "Normal"
+        },
+        {
+          "item": "Pregnancy test (beta-hCG)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Antitoxin is equine-derived — pregnancy category C; imaging considerations",
+          "target": "Document result"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Assess tissue perfusion; distinguish from septic shock",
+          "target": "<2.0 mmol/L"
+        },
+        {
+          "item": "Type and screen (CPT 86900)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Potential need for surgical intervention (wound botulism); ICU procedures",
+          "target": "On file"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Serum botulinum toxin assay (mouse bioassay) (CPT 87900)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Definitive diagnostic test; contact CDC/state health department for testing; sensitivity 33-44% in serum",
+          "target": "Positive confirms diagnosis (negative does NOT exclude)"
+        },
+        {
+          "item": "Stool botulinum toxin assay and culture",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Higher sensitivity than serum (60%+ in foodborne); also identifies colonization (infant, adult intestinal)",
+          "target": "Positive toxin or culture of C. botulinum"
+        },
+        {
+          "item": "Wound culture (anaerobic)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Wound botulism — culture for C. botulinum; send tissue/exudate for anaerobic culture and toxin assay",
+          "target": "C. botulinum isolation"
+        },
+        {
+          "item": "Suspected food sample (for toxin testing)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Epidemiologic confirmation; send to state public health lab via CDC coordination",
+          "target": "Toxin identified in food"
+        },
+        {
+          "item": "Serum for toxin type identification (A-G)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Identifies toxin serotype to guide antitoxin selection; types A, B, E most common in humans",
+          "target": "Type identified"
+        },
+        {
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Inflammatory markers; elevated in wound botulism",
+          "target": "Normal in foodborne; elevated in wound botulism"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism can contribute to weakness (differential)",
+          "target": "Normal"
+        },
+        {
+          "item": "AChR antibody panel (binding, blocking, modulating)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude myasthenia gravis (key differential)",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-MuSK antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude MuSK-MG (bulbar-predominant MG mimic)",
+          "target": "Negative"
+        },
+        {
+          "item": "Creatine kinase (CK) (CPT 82550)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Elevated in some neuromuscular conditions; usually normal in botulism; rhabdomyolysis from prolonged immobility",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Anti-ganglioside antibodies (GM1, GD1a, GQ1b)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Exclude GBS variants if diagnostic uncertainty persists",
+          "target": "Negative"
+        },
+        {
+          "item": "Edrophonium (Tensilon) test",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Differentiates from MG (positive in MG, negative in botulism); rarely performed now",
+          "target": "No improvement (negative) in botulism"
+        },
+        {
+          "item": "Heavy metals (lead, arsenic, thallium)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Toxic neuropathy differential; environmental exposure",
+          "target": "Normal"
+        },
+        {
+          "item": "Tick paralysis assessment (physical exam)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Ascending paralysis mimic; search skin/scalp for embedded tick",
+          "target": "No tick found"
+        },
+        {
+          "item": "Organophosphate/carbamate level (cholinesterase)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "Cholinergic crisis differential (excess secretions + weakness); toxicology screen",
+          "target": "Normal cholinesterase levels"
+        },
+        {
+          "item": "CSF analysis (LP) — if diagnostic uncertainty",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "CSF normal in botulism; elevated protein with normal cells suggests GBS; pleocytosis suggests infection",
+          "target": "Normal in botulism (protein normal, WBC normal)"
+        },
+        {
+          "item": "Porphyrins (urine ALA, PBG)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Acute intermittent porphyria — motor neuropathy + autonomic dysfunction mimic",
+          "target": "Normal"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Rule out elevated ICP",
+          "target": "10-20 cm H2O (normal in botulism)"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4) (CPT 89051)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Normal WBC distinguishes from GBS (albuminocytologic dissociation) and meningitis",
+          "target": "WBC <5 cells/uL (NORMAL in botulism)"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Normal in botulism; elevated in GBS",
+          "target": "NORMAL (<45 mg/dL) — elevated protein favors GBS"
+        },
+        {
+          "item": "Glucose with serum glucose (CPT 82945)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Normal in botulism; low in bacterial meningitis",
+          "target": "Normal (>60% serum)"
+        },
+        {
+          "item": "Gram stain and culture",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Exclude bacterial meningitis",
+          "target": "No organisms"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Nerve conduction studies (NCS) (CPT 95907-95913) / EMG (CPT 95886) with repetitive nerve stimulation (RNS) (CPT 95937)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "As soon as available (ideally within 24-48h); diagnostic cornerstone",
+          "target": "Reduced CMAP amplitudes; normal sensory nerve action potentials (SNAPs); INCREMENTAL response (facilitation) at high-rate (20-50 Hz) repetitive stimulation (post-exercise facilitation); normal or mildly prolonged distal latencies; brief-duration, small-amplitude motor unit potentials (BSAPs) on needle EMG; fibrillation potentials in severe cases",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "On admission",
+          "target": "Aspiration pneumonia; atelectasis; baseline for ventilator management; mediastinal mass (differential)",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "On admission and PRN",
+          "target": "Sinus tachycardia; conduction abnormalities; autonomic effects on cardiac rhythm",
+          "contraindications": "None"
+        },
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "On admission if stroke in differential",
+          "target": "Normal (excludes stroke, mass lesion)",
+          "contraindications": "Contrast allergy (if contrast used)"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "timing": "If brainstem pathology suspected",
+          "target": "Normal in botulism; excludes brainstem stroke, demyelination, mass",
+          "contraindications": "Pacemaker, metallic implants"
+        },
+        {
+          "item": "MRI spine with and without contrast (CPT 72156)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If myelopathy in differential",
+          "target": "Normal in botulism; excludes spinal cord compression",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "CT chest with contrast (CPT 71260)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "timing": "If thymoma suspected (MG differential) or pulmonary complication",
+          "target": "No thymoma; assess for aspiration pneumonia",
+          "contraindications": "Contrast allergy, renal impairment"
+        },
+        {
+          "item": "CT abdomen/pelvis (wound botulism with IVDU)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "timing": "If deep abscess suspected as source of wound botulism",
+          "target": "Abscess identification for surgical drainage",
+          "contraindications": "Contrast allergy, renal impairment"
+        },
+        {
+          "item": "Repeat NCS/EMG",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "At 1-2 weeks if initial study non-diagnostic or to assess recovery",
+          "target": "Evolution of findings; improving CMAPs indicate recovery",
+          "contraindications": "Same as initial"
+        },
+        {
+          "item": "Echocardiogram (CPT 93306)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "If hemodynamic instability or autonomic dysfunction",
+          "target": "Cardiac function assessment",
+          "contraindications": "None significant"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Single-fiber EMG (CPT 95872)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If standard EMG non-diagnostic",
+          "target": "Increased jitter and blocking (present in botulism but non-specific — also seen in MG, LEMS)",
+          "contraindications": "Anticoagulation (relative)"
+        },
+        {
+          "item": "Pulmonary function testing (formal) (CPT 94010)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If borderline respiratory function during recovery",
+          "target": "Quantify restrictive defect; guide weaning",
+          "contraindications": "Unable to cooperate"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Heptavalent botulinum antitoxin (HBAT) (equine-derived, serotypes A-G) — obtained from CDC",
+          "route": "IV",
+          "indication": "All forms of botulism (foodborne, wound, adult intestinal colonization, inhalational); administer as early as possible — antitoxin neutralizes circulating toxin but does NOT reverse already-bound toxin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 vial",
+                "orderSentence": "Heptavalent botulinum antitoxin (HBAT) (equine-derived, serotypes A-G) — obtained from CDC 1 vial IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 vial (containing equine-derived antibodies to types A-G) IV; dilute 1:10 in 0.9% NS; infuse slowly over 15-30 min initially, increase rate per CDC protocol; contact CDC Emergency Operations Center 770-488-7100 (24/7) to obtain antitoxin; administer as soon as clinical suspicion is high — do NOT wait for lab confirmation",
+            "orderSentence": "Heptavalent botulinum antitoxin (HBAT) (equine-derived, serotypes A-G) — obtained from CDC 1 vial IV"
+          },
+          "contraindications": "History of equine protein hypersensitivity (perform skin test first per CDC protocol); serum sickness risk 5-10% (monitor for 10-21 days post-infusion)",
+          "monitoring": "Skin test before infusion if history of atopy or equine exposure; monitor VS q5min during infusion and q15min x 4h post; observe for anaphylaxis (epinephrine at bedside); delayed serum sickness (fever, rash, arthralgias at 10-21 days)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "BabyBIG (botulism immune globulin intravenous, human)",
+          "route": "IV",
+          "indication": "Infant botulism ONLY (age <1 year); FDA-approved for infant botulism types A and B",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg/kg",
+                "orderSentence": "BabyBIG (botulism immune globulin intravenous, human) 50 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "50 mg/kg (1 mL/kg) IV single dose; infuse at 0.5 mL/kg/h initially, increase to 1.0 mL/kg/h if tolerated; obtain from California Infant Botulism Treatment and Prevention Program (IBTPP) at 510-231-7600 (24/7)",
+            "orderSentence": "BabyBIG (botulism immune globulin intravenous, human) 50 mg/kg IV"
+          },
+          "contraindications": "IgA deficiency; prior severe reaction to human immunoglobulin",
+          "monitoring": "Vital signs q15min during infusion; watch for anaphylaxis; renal function",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Intubation and mechanical ventilation",
+          "route": "-",
+          "indication": "Respiratory failure — single most important cause of death in botulism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Intubation and mechanical ventilation N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Indications: FVC <15-20 mL/kg, NIF weaker than -30 cmH2O, >30% decline in FVC from baseline, rising pCO2, clinical respiratory distress, inability to protect airway due to bulbar weakness. Use non-depolarizing agents (rocuronium preferred). AVOID succinylcholine (risk of exaggerated response in denervated muscle). Anticipate PROLONGED ventilation (weeks to months)",
+            "orderSentence": "Intubation and mechanical ventilation N/A -"
+          },
+          "contraindications": "N/A (life-saving)",
+          "monitoring": "Ventilator settings per ICU protocol; daily assessment; plan for tracheostomy if ventilation expected >14 days",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Wound debridement and drainage (wound botulism)",
+          "route": "Surgical",
+          "indication": "Wound botulism — remove source of ongoing toxin production; perform AFTER antitoxin administration to avoid releasing more toxin into circulation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Wound debridement and drainage (wound botulism) N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Thorough surgical debridement of infected wound; drain abscess if present; obtain tissue for anaerobic culture; perform AFTER antitoxin has been given",
+            "orderSentence": "Wound debridement and drainage (wound botulism) N/A Surgical"
+          },
+          "contraindications": "Hemodynamic instability (stabilize first)",
+          "monitoring": "Wound site; CBC; signs of secondary infection",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Metronidazole (wound botulism)",
+          "route": "IV",
+          "indication": "Wound botulism — eradicate C. botulinum from wound; adjunct to debridement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Metronidazole (wound botulism) 500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500 mg IV q8h x 10-14 days; alternative to penicillin (avoids aminoglycoside interaction concern)",
+            "orderSentence": "Metronidazole (wound botulism) 500 mg IV"
+          },
+          "contraindications": "Severe hepatic impairment; disulfiram-like reaction with alcohol",
+          "monitoring": "LFTs; neuropathy (prolonged use); seizures (rare)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Penicillin G (wound botulism — alternative)",
+          "route": "IV",
+          "indication": "Wound botulism — alternative to metronidazole for C. botulinum eradication",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 million units",
+                "orderSentence": "Penicillin G (wound botulism — alternative) 3 million units IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "3 million units IV q4h x 10-14 days",
+            "orderSentence": "Penicillin G (wound botulism — alternative) 3 million units IV"
+          },
+          "contraindications": "Penicillin allergy; AVOID aminoglycosides concurrently (potentiate neuromuscular blockade)",
+          "monitoring": "Allergic reaction; renal function",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "DVT prophylaxis: Enoxaparin",
+          "route": "SC",
+          "indication": "Immobilized patients at high risk of VTE",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily; start on admission",
+            "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active bleeding, platelets <50K, CrCl <30 (use UFH)",
+          "monitoring": "Platelets q3 days; anti-Xa if renal impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "DVT prophylaxis: Heparin SC (alternative)",
+          "route": "SC",
+          "indication": "VTE prophylaxis if enoxaparin contraindicated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5000 units",
+                "orderSentence": "DVT prophylaxis: Heparin SC (alternative) 5000 units SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "5000 units SC q8-12h",
+            "orderSentence": "DVT prophylaxis: Heparin SC (alternative) 5000 units SC"
+          },
+          "contraindications": "Active bleeding, HIT",
+          "monitoring": "Platelets q3 days",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pneumatic compression devices",
+          "route": "-",
+          "indication": "All immobilized patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Pneumatic compression devices N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Apply bilaterally on admission; continue until ambulatory",
+            "orderSentence": "Pneumatic compression devices N/A -"
+          },
+          "contraindications": "Acute DVT, severe PVD",
+          "monitoring": "Skin checks daily",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV fluid resuscitation (0.9% NS)",
+          "route": "IV",
+          "indication": "Dehydration from GI prodrome (foodborne botulism — nausea, vomiting, diarrhea)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mL/kg",
+                "orderSentence": "IV fluid resuscitation (0.9% NS) 20 mL/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "20 mL/kg IV bolus, then maintenance; target euvolemia",
+            "orderSentence": "IV fluid resuscitation (0.9% NS) 20 mL/kg IV"
+          },
+          "contraindications": "Fluid overload, CHF",
+          "monitoring": "I/O, BMP, volume status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Atropine",
+          "route": "IV",
+          "indication": "Bradycardia from autonomic dysfunction; excessive secretions",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-1 mg",
+                "orderSentence": "Atropine 0.5-1 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5-1 mg IV PRN for symptomatic bradycardia; may repeat q3-5 min; max 3 mg",
+            "orderSentence": "Atropine 0.5-1 mg IV"
+          },
+          "contraindications": "Tachycardia, angle-closure glaucoma",
+          "monitoring": "HR, rhythm; urinary retention",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Glycopyrrolate",
+          "route": "IV/PO",
+          "indication": "Excessive oral secretions (antisialagogue); preferred over atropine for secretion management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.2 mg",
+                "orderSentence": "Glycopyrrolate 0.2 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.2 mg IV q4-6h PRN; or 1-2 mg PO TID",
+            "orderSentence": "Glycopyrrolate 0.2 mg IV"
+          },
+          "contraindications": "Ileus, urinary retention, angle-closure glaucoma",
+          "monitoring": "Secretion volume; HR; bowel function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO/IV",
+          "indication": "Pain, headache, fever",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO/IV q6h; max 4g/day (2g if hepatic impairment)",
+            "orderSentence": "Acetaminophen 650-1000 mg PO"
+          },
+          "contraindications": "Severe liver disease",
+          "monitoring": "LFTs if prolonged",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Metoclopramide",
+          "route": "IV",
+          "indication": "Gastroparesis, nausea, ileus (autonomic dysfunction common)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Metoclopramide 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV q6h PRN; max 40 mg/day; limit to <12 weeks",
+            "orderSentence": "Metoclopramide 10 mg IV"
+          },
+          "contraindications": "Seizure history, Parkinson disease, GI obstruction",
+          "monitoring": "Tardive dyskinesia with prolonged use",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV",
+          "indication": "Nausea and vomiting (foodborne botulism GI symptoms)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV q6-8h PRN",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation, severe hepatic impairment",
+          "monitoring": "ECG if QT concern",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Docusate sodium",
+          "route": "PO",
+          "indication": "Constipation (immobility + autonomic dysfunction)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Docusate sodium 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO BID",
+            "orderSentence": "Docusate sodium 100 mg PO"
+          },
+          "contraindications": "GI obstruction",
+          "monitoring": "Bowel function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Senna",
+          "route": "PO",
+          "indication": "Constipation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8.6-17.2 mg",
+                "orderSentence": "Senna 8.6-17.2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "8.6-17.2 mg PO qHS",
+            "orderSentence": "Senna 8.6-17.2 mg PO"
+          },
+          "contraindications": "GI obstruction",
+          "monitoring": "Bowel function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Polyethylene glycol (MiraLAX)",
+          "route": "PO",
+          "indication": "Constipation (if docusate insufficient)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "17 g",
+                "orderSentence": "Polyethylene glycol (MiraLAX) 17 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "17 g PO daily in 8 oz water",
+            "orderSentence": "Polyethylene glycol (MiraLAX) 17 g PO"
+          },
+          "contraindications": "GI obstruction",
+          "monitoring": "Bowel function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Artificial tears (methylcellulose)",
+          "route": "Ophthalmic",
+          "indication": "Dry eyes from impaired blinking (CN VII involvement, reduced lacrimation)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 drops",
+                "orderSentence": "Artificial tears (methylcellulose) 1-2 drops Ophthalmic"
+              }
+            ],
+            "route": "Ophthalmic",
+            "instructions": "1-2 drops each eye q2-4h while awake; lubricating ointment at night",
+            "orderSentence": "Artificial tears (methylcellulose) 1-2 drops Ophthalmic"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Corneal integrity; ophthalmology if corneal exposure",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Insomnia, ICU delirium prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3-5 mg",
+                "orderSentence": "Melatonin 3-5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-5 mg PO qHS",
+            "orderSentence": "Melatonin 3-5 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Sleep quality",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV",
+          "indication": "Anxiety, agitation in intubated patient",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-1 mg",
+                "orderSentence": "Lorazepam 0.5-1 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5-1 mg IV q6-8h PRN; use with caution — may worsen hypotonia",
+            "orderSentence": "Lorazepam 0.5-1 mg IV"
+          },
+          "contraindications": "Respiratory depression (extreme caution if not intubated)",
+          "monitoring": "RR, sedation scale; avoid in non-intubated patients",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Guanidine hydrochloride",
+          "route": "PO",
+          "indication": "Historical agent to enhance acetylcholine release at NMJ; limited efficacy; NOT standard of care; may provide modest improvement in chronic phase",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-35 mg/kg",
+                "orderSentence": "Guanidine hydrochloride 15-35 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "15-35 mg/kg/day divided TID-QID; start low and titrate; limited evidence for benefit",
+            "orderSentence": "Guanidine hydrochloride 15-35 mg/kg PO"
+          },
+          "contraindications": "Bone marrow suppression, renal impairment",
+          "monitoring": "CBC, BMP weekly; bone marrow toxicity (aplastic anemia reported)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "4-Aminopyridine (dalfampridine)",
+          "route": "PO",
+          "indication": "Potassium channel blocker to enhance neuromuscular transmission; off-label, limited evidence; may improve strength in recovery phase",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "4-Aminopyridine (dalfampridine) 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10 mg PO BID (extended-release); off-label use",
+            "orderSentence": "4-Aminopyridine (dalfampridine) 10 mg PO"
+          },
+          "contraindications": "Seizure history (lowers threshold), renal impairment (CrCl <50)",
+          "monitoring": "Seizures; renal function",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Tracheostomy",
+          "route": "Surgical",
+          "indication": "Prolonged mechanical ventilation (>14 days expected — common in botulism)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Tracheostomy N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Perform when ventilation anticipated >14 days; improves patient comfort, oral hygiene, weaning potential",
+            "orderSentence": "Tracheostomy N/A Surgical"
+          },
+          "contraindications": "Coagulopathy (correct first)",
+          "monitoring": "Stoma site; decannulation readiness in recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Percutaneous gastrostomy (PEG)",
+          "route": "Surgical",
+          "indication": "Prolonged inability to swallow safely; enteral nutrition access",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Percutaneous gastrostomy (PEG) N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Place when dysphagia expected to persist >2-3 weeks",
+            "orderSentence": "Percutaneous gastrostomy (PEG) N/A Surgical"
+          },
+          "contraindications": "Coagulopathy, abdominal pathology",
+          "monitoring": "Tube site; feeding tolerance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Recovery/Rehabilitation Therapies": [
+        {
+          "item": "Physical therapy (PT) (CPT 97110-97542)",
+          "route": "-",
+          "indication": "All botulism patients; early passive ROM to prevent contractures; progressive strengthening during recovery",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Physical therapy (PT) (CPT 97110-97542) N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Daily passive ROM while paralyzed; active-assisted exercises as strength returns; progressive strengthening and gait training in recovery",
+            "orderSentence": "Physical therapy (PT) (CPT 97110-97542) N/A -"
+          },
+          "contraindications": "Hemodynamic instability",
+          "monitoring": "Functional status; fall risk; fatigue",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Occupational therapy (OT)",
+          "route": "-",
+          "indication": "Upper extremity function, ADLs, adaptive equipment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Occupational therapy (OT) N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Daily OT for fine motor recovery, ADL training, adaptive equipment",
+            "orderSentence": "Occupational therapy (OT) N/A -"
+          },
+          "contraindications": "Hemodynamic instability",
+          "monitoring": "Functional independence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Speech-language pathology (SLP)",
+          "route": "-",
+          "indication": "Dysphagia evaluation and treatment; aspiration prevention; communication strategies if intubated/trached",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Speech-language pathology (SLP) N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Bedside swallow evaluation; instrumental assessment (FEES or MBS) before oral intake; speech/communication strategies",
+            "orderSentence": "Speech-language pathology (SLP) N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Aspiration risk; swallow function",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consultation — all suspected botulism; diagnostic confirmation; EMG/NCS interpretation; differentiation from GBS, MG, stroke",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Critical care / Pulmonology — respiratory monitoring and ventilator management; all patients with bulbar or respiratory weakness",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Infectious disease — confirm diagnosis; guide antibiotic therapy for wound botulism; coordinate public health notification",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Public health / CDC notification — MANDATORY: botulism is a nationally notifiable disease; contact state health department AND CDC Emergency Operations Center (770-488-7100) to obtain antitoxin and for epidemiologic investigation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Toxicology / Poison control — if foodborne: identify implicated food; coordinate with public health; differential diagnosis assistance",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Surgery (wound botulism) — wound debridement and drainage for wound botulism; abscess management in IVDU patients",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Speech-language pathology (SLP) — dysphagia evaluation; aspiration prevention; communication strategies",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy (PT) — early passive ROM; progressive mobilization; gait training in recovery",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Occupational therapy (OT) — upper extremity function; ADLs; adaptive equipment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Rehabilitation medicine (physiatry) — rehabilitation planning; disposition (inpatient rehab vs SNF vs home)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Respiratory therapy — bedside spirometry (FVC, NIF); pulmonary toilet; ventilator weaning protocols",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ophthalmology — if persistent diplopia, ptosis, or corneal exposure from impaired blinking",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nutrition / Dietitian — enteral/parenteral feeding plan if prolonged dysphagia; caloric needs during recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Social work — discharge planning; family support; financial resources for prolonged hospitalization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychology / Psychiatry — anxiety, depression, PTSD (common with prolonged ICU stay and ventilator dependence)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED / Call 911 if: increasing difficulty breathing, new swallowing difficulty, worsening double vision, progressive weakness, inability to hold up head, chest pain, or lightheadedness",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Botulism is a serious but treatable condition; early antitoxin administration improves outcomes",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Recovery is typically slow (weeks to months); full recovery is possible but may take up to a year",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT drive until vision (diplopia), strength, and reflexes have fully recovered and cleared by neurologist",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Comply with physical and occupational therapy exercises as prescribed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report any new difficulty breathing, swallowing, or worsening weakness immediately",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Foodborne botulism prevention: do not eat food from bulging or damaged cans; properly refrigerate foods; follow safe home canning practices (pressure canning for low-acid foods; boil home-canned foods for 10 min before eating)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Wound botulism (IVDU patients): avoid injection drug use; if continuing, use clean needles and do not skin-pop or muscle-pop; seek help for substance use disorder",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow-up with neurology in 1-2 weeks after discharge; NCS/EMG may be repeated at 3-6 months to document recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Inform future healthcare providers about botulism history (anesthesia precautions — prolonged paralysis risk with certain agents)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Fall prevention: use assistive devices as recommended during recovery; remove tripping hazards at home",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Monitor for signs of blood clots: leg swelling, redness, chest pain, shortness of breath",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Gradual return to activity as tolerated; avoid overexertion during recovery; fatigue is common for months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Safe food handling: proper canning techniques (pressure canning at 250F/121C for low-acid foods); refrigerate perishables; discard bulging, leaking, or damaged cans",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Boil home-canned foods for 10 minutes before eating (destroys botulinum toxin)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Honey should NOT be given to infants <1 year (infant botulism risk from Clostridium spores)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Wound care: keep wounds clean; seek medical attention for infected wounds especially in IVDU patients",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Substance use disorder treatment referral for IVDU patients with wound botulism",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Balanced nutrition for neuromuscular recovery (adequate protein, B vitamins)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Mental health support (prolonged ICU stay, ventilator dependence, slow recovery cause significant psychological stress)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Adequate sleep (promotes neurologic recovery)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation (impairs tissue healing and neuromuscular recovery)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Guillain-Barre syndrome (GBS)",
+      "features": "ASCENDING paralysis (starts distally, moves proximally — opposite of botulism); sensory symptoms common; areflexia; CSF shows elevated protein with normal WBC (albuminocytologic dissociation); no pupil involvement; no GI prodrome typical of botulism",
+      "tests": "NCS/EMG (demyelinating or axonal pattern; NO incremental response); LP (elevated protein); anti-ganglioside antibodies"
+    },
+    {
+      "diagnosis": "Myasthenia gravis (MG)",
+      "features": "Fatigable weakness; fluctuating symptoms; ptosis and diplopia (similar to botulism); intact pupillary reflexes; no GI prodrome; chronic course",
+      "tests": "AChR/MuSK antibodies; repetitive nerve stimulation shows DECREMENTAL response at LOW-rate (2-3 Hz) stimulation (vs. incremental at high-rate in botulism); edrophonium test positive"
+    },
+    {
+      "diagnosis": "Lambert-Eaton myasthenic syndrome (LEMS)",
+      "features": "Proximal weakness; hyporeflexia with post-exercise facilitation; autonomic dysfunction (dry mouth); associated with SCLC; chronic onset",
+      "tests": "NCS shows incremental response at high-rate RNS (SIMILAR to botulism); VGCC antibodies positive; CT chest for malignancy"
+    },
+    {
+      "diagnosis": "Brainstem stroke",
+      "features": "Acute onset; focal neurologic deficits; cranial nerve findings may overlap; crossed findings (ipsilateral face, contralateral body); no GI prodrome; no descending pattern",
+      "tests": "MRI brain with DWI (acute infarct); CTA/MRA (vascular occlusion); normal NCS/EMG"
+    },
+    {
+      "diagnosis": "Tick paralysis",
+      "features": "Ascending paralysis similar to GBS; rapid onset; tick found on exam; rapid reversal after tick removal; no sensory loss; normal CSF",
+      "tests": "Physical exam (search for tick — scalp, hairline, skin folds); NCS may show reduced CMAPs; CSF normal"
+    },
+    {
+      "diagnosis": "Organophosphate/nerve agent poisoning",
+      "features": "Cholinergic crisis: SLUDGE symptoms (salivation, lacrimation, urination, defecation, GI distress, emesis); miosis; muscle fasciculations then weakness; bradycardia",
+      "tests": "Cholinesterase levels (depressed); atropine challenge (improves symptoms); toxicology screen"
+    },
+    {
+      "diagnosis": "Diphtheria",
+      "features": "Pharyngeal membrane; palatal weakness early; sensorimotor neuropathy develops weeks after infection; myocarditis",
+      "tests": "Throat culture; diphtheria toxin assay; clinical history; travel/vaccination history"
+    },
+    {
+      "diagnosis": "Acute intermittent porphyria",
+      "features": "Abdominal pain (prominent); psychiatric symptoms; autonomic dysfunction; motor-predominant neuropathy; dark urine",
+      "tests": "Urine ALA and PBG (elevated during attack); genetic testing"
+    },
+    {
+      "diagnosis": "Poliomyelitis / West Nile virus",
+      "features": "Asymmetric flaccid paralysis; fever; anterior horn cell pattern; CSF pleocytosis",
+      "tests": "CSF (elevated WBC); viral PCR; MRI (anterior horn signal change)"
+    },
+    {
+      "diagnosis": "Myasthenic crisis",
+      "features": "Similar bulbar and respiratory failure; known MG history typically; rapid deterioration",
+      "tests": "AChR antibodies; history of MG; decremental response on RNS"
+    },
+    {
+      "diagnosis": "Eaton-Lambert crisis",
+      "features": "Acute exacerbation of LEMS; proximal weakness; autonomic symptoms",
+      "tests": "VGCC antibodies; malignancy screening; high-rate RNS"
+    },
+    {
+      "diagnosis": "Hypermagnesemia",
+      "features": "Iatrogenic (MgSO4 infusion); weakness; hyporeflexia; respiratory depression",
+      "tests": "Serum magnesium level (markedly elevated)"
+    },
+    {
+      "diagnosis": "Conversion disorder (FND)",
+      "features": "Non-physiologic weakness pattern; Hoover sign; give-way weakness; may mimic any neurologic presentation",
+      "tests": "Normal NCS/EMG; normal labs; clinical exam features inconsistent with organic disease"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Heptavalent botulinum antitoxin (HBAT) — early administration reduces mortality and duration of illness",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Arnon et al. JAMA 2006](https://pubmed.ncbi.nlm.nih.gov/16507803/); [Tacket et al. Am J Med 1984](https://pubmed.ncbi.nlm.nih.gov/6702902/)"
+    },
+    {
+      "recommendation": "BabyBIG (human botulism immune globulin) for infant botulism — reduces hospitalization by 3+ weeks",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Arnon et al. N Engl J Med 2006](https://pubmed.ncbi.nlm.nih.gov/16467544/)"
+    },
+    {
+      "recommendation": "EMG/NCS with repetitive nerve stimulation — incremental response at high-rate stimulation diagnostic",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Cherington M. J Neurol Neurosurg Psychiatry 1982](https://pubmed.ncbi.nlm.nih.gov/6278099/); [Gutierrez et al. Muscle Nerve 2000](https://pubmed.ncbi.nlm.nih.gov/10918203/)"
+    },
+    {
+      "recommendation": "Mouse bioassay — gold standard for botulinum toxin detection; serum sensitivity ~33-44%",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[CDC. MMWR Recomm Rep 1998](https://pubmed.ncbi.nlm.nih.gov/9639369/)"
+    },
+    {
+      "recommendation": "Respiratory monitoring (FVC/NIF) for intubation decisions in neuromuscular respiratory failure",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Lawn et al. Arch Neurol 2001](https://pubmed.ncbi.nlm.nih.gov/11405803/); [Wijdicks & Borel, Neurology 1998](https://pubmed.ncbi.nlm.nih.gov/9443451/)"
+    },
+    {
+      "recommendation": "Wound debridement AFTER antitoxin administration for wound botulism",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Werner et al. Clin Infect Dis 2000](https://pubmed.ncbi.nlm.nih.gov/10770748/); CDC guidelines"
+    },
+    {
+      "recommendation": "Avoid aminoglycosides — potentiate neuromuscular blockade in botulism",
+      "evidenceLevel": "Class III (Harm), Level C",
+      "source": "[Santos et al. Ann Intern Med 1981](https://pubmed.ncbi.nlm.nih.gov/6263133/)"
+    },
+    {
+      "recommendation": "Contact CDC Emergency Operations Center (770-488-7100) for antitoxin access",
+      "evidenceLevel": "Class I, Level C",
+      "source": "[CDC Botulism Treatment Guidelines](https://pubmed.ncbi.nlm.nih.gov/9639369/)"
+    },
+    {
+      "recommendation": "Botulism is a nationally notifiable disease — mandatory reporting",
+      "evidenceLevel": "Class I, Level C",
+      "source": "CDC nationally notifiable conditions; state public health law"
+    },
+    {
+      "recommendation": "Do not administer antibiotics in infant botulism (risk of toxin release from bacterial lysis)",
+      "evidenceLevel": "Class III (Harm), Level C",
+      "source": "[Arnon et al. N Engl J Med 2006](https://pubmed.ncbi.nlm.nih.gov/16467544/); IBTPP guidelines"
+    },
+    {
+      "recommendation": "Prolonged mechanical ventilation expected (median 58 days type A; 26 days type B)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Wilcox et al. Chest 1990](https://pubmed.ncbi.nlm.nih.gov/2340814/)"
+    },
+    {
+      "recommendation": "DVT prophylaxis for immobilized patients",
+      "evidenceLevel": "Class I, Level C",
+      "source": "Standard of care for immobilized patients"
+    },
+    {
+      "recommendation": "Early rehabilitation improves functional outcomes",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Standard of care in neuromuscular disease"
+    },
+    {
+      "recommendation": "Metronidazole preferred over aminoglycosides for wound botulism antibiotic therapy",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "Expert consensus; [Werner et al. Clin Infect Dis 2000](https://pubmed.ncbi.nlm.nih.gov/10770748/)"
+    },
+    {
+      "recommendation": "Succinylcholine avoidance in neuromuscular junction disorders",
+      "evidenceLevel": "Class III (Harm), Level C",
+      "source": "Risk of hyperkalemia and prolonged blockade"
+    },
+    {
+      "recommendation": "Antitoxin most effective when given within 24h of symptom onset; still beneficial up to 72h",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Tacket et al. Am J Med 1984](https://pubmed.ncbi.nlm.nih.gov/6702902/); retrospective data"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Forced Vital Capacity (FVC)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q2-4h in ED/ICU; q4-6h on floor; q1h if declining",
+      "action": "FVC <15-20 mL/kg or declining >30% from baseline -> elective intubation; transfer to ICU"
+    },
+    {
+      "item": "Negative Inspiratory Force (NIF/MIP)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q2-4h with FVC",
+      "action": "NIF weaker than -30 cmH2O -> prepare for intubation"
+    },
+    {
+      "item": "Peak Cough Flow",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE",
+      "frequency": "q4-6h with FVC",
+      "action": "Airway clearance interventions; suction; assisted cough"
+    },
+    {
+      "item": "Oxygen saturation (SpO2)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Continuous in ICU; q2-4h on floor",
+      "action": "LATE finding — do NOT rely on SpO2 alone; FVC and NIF are far more sensitive indicators of impending failure"
+    },
+    {
+      "item": "Arterial blood gas (pCO2)",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q4-6h; more frequently if declining FVC",
+      "action": "Rising pCO2 indicates hypoventilation and impending respiratory failure — intubate"
+    },
+    {
+      "item": "Blood pressure",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q4h on floor; continuous in ICU",
+      "action": "Hypotension: IV fluids, vasopressors if refractory; AVOID long-acting agents"
+    },
+    {
+      "item": "Heart rate and rhythm (telemetry)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Continuous in ICU; telemetry on floor",
+      "action": "Bradycardia: atropine; tachycardia: volume, pain control; arrhythmia: per ACLS"
+    },
+    {
+      "item": "Neurologic exam (cranial nerves, strength, reflexes)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q4-8h; focus on pupillary response, ptosis, bulbar function, proximal then distal strength",
+      "action": "Worsening (new cranial nerve palsies, progressing to limbs) -> reassess respiratory status STAT; ensure antitoxin given"
+    },
+    {
+      "item": "Pupillary examination",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q4h",
+      "action": "Fixed, dilated pupils (mydriasis) suggest botulism (distinguishes from GBS/MG); document progression"
+    },
+    {
+      "item": "Swallowing function",
+      "ED": "URGENT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Daily assessment; formal SLP if bulbar symptoms",
+      "action": "NPO if unsafe; NG tube or PEG for nutrition"
+    },
+    {
+      "item": "Gag reflex and cough strength",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q4-6h",
+      "action": "Absent gag -> NPO; aspiration precautions; suction at bedside"
+    },
+    {
+      "item": "Bowel function",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "Daily",
+      "action": "Ileus is common (autonomic dysfunction); bowel program; avoid opioids if possible"
+    },
+    {
+      "item": "Bladder function",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "I/O monitoring; post-void residual if needed",
+      "action": "Urinary retention (autonomic dysfunction) -> bladder scan; intermittent catheterization"
+    },
+    {
+      "item": "Renal function (BUN, Cr)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE",
+      "frequency": "Daily in acute phase; q48h when stable",
+      "action": "Adjust medications; hydration"
+    },
+    {
+      "item": "Wound inspection (wound botulism)",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "BID wound checks post-debridement",
+      "action": "Signs of infection -> repeat debridement; adjust antibiotics"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Extremely rare in acute botulism; only for VERY mild cases (minimal weakness, stable respiratory function, no bulbar symptoms); reliable outpatient follow-up; family/caregiver support; neurology follow-up within 1-2 weeks"
+    },
+    {
+      "disposition": "Admit to ICU (MOST patients)",
+      "criteria": "All suspected botulism should be admitted to ICU or monitored setting; respiratory monitoring (FVC/NIF) required; any bulbar weakness; any respiratory compromise; antitoxin administration and monitoring; autonomic instability"
+    },
+    {
+      "disposition": "Admit to floor (monitored bed)",
+      "criteria": "Mild cases after antitoxin with stable respiratory function (FVC >25 mL/kg and stable); no bulbar weakness; able to protect airway; continuous telemetry available; step-down from ICU when improving"
+    },
+    {
+      "disposition": "Transfer to higher level of care",
+      "criteria": "Need for ICU with neurology and critical care expertise; need for antitoxin (coordinate with CDC for transfer if antitoxin unavailable locally); ECMO capability if refractory respiratory failure"
+    },
+    {
+      "disposition": "Inpatient rehabilitation",
+      "criteria": "Significant residual motor deficits; able to participate in 3h/day therapy; medically stable; ventilator weaned or stable tracheostomy"
+    },
+    {
+      "disposition": "Skilled nursing facility",
+      "criteria": "Unable to tolerate intensive rehabilitation; requires ongoing nursing care; ventilator-dependent (long-term acute care facility — LTAC)"
+    },
+    {
+      "disposition": "Long-term acute care (LTAC)",
+      "criteria": "Prolonged ventilator dependence (common in botulism — weeks to months); requires weaning protocol; medically stable but not ready for rehab"
+    }
+  ]
+}

@@ -1,0 +1,2174 @@
+{
+  "id": "neuro-behcets-disease",
+  "title": "Neuro-Behcet's Disease",
+  "version": "1.1",
+  "icd10": [
+    "** M35.2 (Behcet's disease)",
+    "G09 (Sequelae of inflammatory diseases of central nervous system)",
+    "I67.89 (Other cerebrovascular disease)",
+    "I67.6 (Nonpyogenic thrombosis of intracranial venous system)",
+    "G04.81 (Other encephalitis and encephalomyelitis)"
+  ],
+  "scope": "** Diagnostic workup and management of suspected or confirmed Neuro-Behcet's disease across both parenchymal (brainstem predominant, hemispheric, spinal cord, optic nerve) and non-parenchymal (cerebral venous thrombosis, intracranial hypertension, meningitis) forms. Covers International Study Group (ISG) diagnostic criteria, International Criteria for Behcet's Disease (ICBD), HLA-B51 testing, pathergy test, acute immunotherapy, steroid-sparing agents, and biologic therapies (TNF inhibitors). Settings: ED, HOSP, OPD, ICU. For isolated mucocutaneous or ocular Behcet's disease without neurological involvement, defer to rheumatology/dermatology/ophthalmology. For other CNS vasculitides (e.g., PACNS, giant cell arteritis, neurosarcoidosis), use respective templates.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; infection screen; leukocytosis in active NBD; pre-immunotherapy",
+          "target": "Normal; neutrophilia common in active disease",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Metabolic screen; hepatic function for immunosuppressant dosing; renal function",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Inflammatory marker; typically elevated in active Behcet's; monitor disease activity",
+          "target": "Elevated in active disease",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory marker; correlates with disease activity; infection screen",
+          "target": "Elevated in active disease",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Pre-steroid baseline; monitor during high-dose corticosteroid therapy",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Glycemic status before high-dose steroids",
+          "target": "<5.7%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
+          "rationale": "Coagulation status for LP; CVT workup; baseline for anticoagulation",
+          "target": "Normal; prolonged aPTT prompts antiphospholipid screen",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "D-dimer (CPT 85379)",
+          "rationale": "Elevated in CVT (non-parenchymal NBD); limited sensitivity/specificity but useful if negative",
+          "target": "Normal (<0.5 mg/L); elevated supports CVT workup",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Procalcitonin (CPT 84145)",
+          "rationale": "Distinguish bacterial infection from autoimmune inflammation",
+          "target": "Normal (<0.1 ng/mL)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Blood cultures (x2 sets) (CPT 87040)",
+          "rationale": "Rule out infection (endocarditis, bacteremia) before immunosuppression",
+          "target": "No growth",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urinalysis with culture (CPT 81003+87086)",
+          "rationale": "Infection screen; renal involvement",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "rationale": "Seizure threshold; metabolic screen",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Phosphorus (CPT 84100)",
+          "rationale": "Metabolic screen",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid screen; autoimmune comorbidity",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "LDH (CPT 83615)",
+          "rationale": "General marker; lymphoma screening",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "HLA-B51 typing (CPT 86235)",
+          "rationale": "Present in 50-70% of Behcet's patients (especially along Silk Road populations); supports diagnosis but not diagnostic alone; negative does not exclude",
+          "target": "Positive supports diagnosis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pathergy test (skin prick)",
+          "rationale": "Positive in 40-60% of Behcet's (higher in Middle Eastern/Asian populations); needle prick causes papule/pustule >=2mm at 24-48h; part of ISG and ICBD criteria",
+          "target": "Positive (>=2mm papule/pustule at 24-48h)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "Lupus/vasculitis screen; SLE can mimic NBD",
+          "target": "Negative or low titer (typically negative in Behcet's)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Anti-dsDNA (CPT 86225)",
+          "rationale": "SLE exclusion if ANA positive; CNS lupus differential",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANCA (c-ANCA/PR3, p-ANCA/MPO) (CPT 86235)",
+          "rationale": "GPA/MPA exclusion; CNS vasculitis differential",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-SSA/SSB (Ro/La)",
+          "rationale": "Sjogren syndrome with CNS involvement exclusion",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Antiphospholipid antibody panel (lupus anticoagulant, anti-cardiolipin, anti-beta2 glycoprotein) (CPT 86235+86147+86146)",
+          "rationale": "Antiphospholipid syndrome as cause of CVT; thrombophilia screen for non-parenchymal NBD",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum ACE level (CPT 82164)",
+          "rationale": "Neurosarcoidosis exclusion (key differential for parenchymal CNS inflammation)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR/VDRL (CPT 86592)",
+          "rationale": "Neurosyphilis exclusion (CNS vasculitis mimic)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "QuantiFERON-TB Gold or PPD (CPT 86480)",
+          "rationale": "TB exclusion before immunosuppression; TB meningitis differential",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "HIV (CPT 87389)",
+          "rationale": "Immunocompromised screen; aphthous ulcers differential",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis B surface antigen + core antibody (CPT 80074)",
+          "rationale": "Reactivation risk before anti-TNF therapy or other immunosuppression",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis C antibody (CPT 80074)",
+          "rationale": "Screen before immunosuppression",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lyme serology (CPT 86618)",
+          "rationale": "Lyme neuroborreliosis as chronic meningitis/cranial neuropathy differential",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP) (CPT 86334)",
+          "rationale": "Polyclonal gammopathy; lymphoproliferative disorder screen",
+          "target": "Normal pattern",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quantitative immunoglobulins (IgG, IgA, IgM, IgD) (CPT 82784)",
+          "rationale": "Baseline before immunotherapy; IgD elevation reported in some Behcet's studies",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Thrombophilia panel (Factor V Leiden, prothrombin mutation, protein C/S, antithrombin III) (CPT 85306+85303+85300)",
+          "rationale": "Non-parenchymal NBD with CVT: evaluate additional thrombotic risk factors",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ferritin (CPT 82728)",
+          "rationale": "Inflammatory marker (acute phase reactant); iron status",
+          "target": "Normal or elevated (acute phase)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CSF neopterin",
+          "rationale": "Marker of intrathecal immune activation; correlates with NBD disease activity; research use",
+          "target": "Elevated supports active NBD",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF IL-6 level",
+          "rationale": "Elevated in active pNBD; more sensitive than routine CSF markers for disease activity monitoring",
+          "target": "Elevated in active parenchymal disease",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF S100B",
+          "rationale": "Marker of CNS tissue damage; predicts severity in acute pNBD",
+          "target": "Elevated in severe parenchymal disease",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-neuronal antibody panel",
+          "rationale": "Autoimmune encephalitis exclusion if atypical presentation with cognitive/behavioral features",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Aquaporin-4 (AQP4) antibody (CPT 86255)",
+          "rationale": "NMOSD exclusion if longitudinally extensive myelitis or optic neuritis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-MOG IgG",
+          "rationale": "MOGAD exclusion if optic neuritis or myelitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF metagenomics (next-generation sequencing)",
+          "rationale": "Occult CNS infection exclusion when standard testing negative and diagnosis uncertain",
+          "target": "No pathogens detected",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing (IL-10, IL-23R, ERAP1 variants)",
+          "rationale": "Behcet's susceptibility genes; research/refractory cases; guides therapy",
+          "target": "Informational",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF 14-3-3 / RT-QuIC",
+          "rationale": "Prion disease exclusion if rapidly progressive cognitive decline",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure (CPT 89050)",
+          "rationale": "Elevated ICP common in npNBD (CVT); also elevated in pNBD",
+          "target": "10-20 cm H2O normal; often elevated >25 in CVT-type NBD",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
+          "rationale": "**pNBD:** Pleocytosis with mixed cellularity (neutrophils early, then lymphocytes); **npNBD:** normal or mild pleocytosis",
+          "target": "pNBD: WBC 10-200 (early neutrophilic, then lymphocytic); npNBD: often normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Elevated in ~75% of pNBD; usually mildly elevated (50-150 mg/dL)",
+          "target": "Normal to elevated; pNBD: elevated (50-150 mg/dL); npNBD: normal or mildly elevated",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Glucose with paired serum glucose (CPT 82945)",
+          "rationale": "Usually normal in NBD (distinguishes from TB, fungal, bacterial meningitis); occasionally mildly low",
+          "target": "Normal (>40 mg/dL; >60% of serum); low glucose argues against NBD",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Oligoclonal bands (CSF AND paired serum) (CPT 83916)",
+          "rationale": "Intrathecal IgG synthesis; present in ~15-20% of NBD (less common than in MS); helps differentiate",
+          "target": "CSF-specific bands present (less common than MS)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IgG index (CPT 83787)",
+          "rationale": "Intrathecal antibody synthesis",
+          "target": "Mildly elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF IL-6",
+          "rationale": "Elevated in active pNBD; the most sensitive CSF marker for active NBD; correlates with disease activity and prognosis",
+          "target": "Elevated in active pNBD (>20 pg/mL suggests active disease)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gram stain and bacterial culture (CPT 87205+87070)",
+          "rationale": "Rule out bacterial meningitis",
+          "target": "No organisms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "AFB smear and culture (CPT 87116)",
+          "rationale": "TB meningitis exclusion (critical differential for chronic meningitis)",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Fungal culture (CPT 87102)",
+          "rationale": "Fungal meningitis exclusion",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cryptococcal antigen (CPT 87327)",
+          "rationale": "Cryptococcal meningitis exclusion",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CSF VDRL (CPT 86592)",
+          "rationale": "Neurosyphilis exclusion",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology (CPT 88104)",
+          "rationale": "CNS lymphoma/carcinomatous meningitis exclusion",
+          "target": "Negative for malignant cells",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Flow cytometry (CPT 88184)",
+          "rationale": "CNS lymphoma exclusion",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HSV PCR (CPT 87529)",
+          "rationale": "Viral encephalitis exclusion (brainstem encephalitis differential)",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TB PCR (GeneXpert)",
+          "rationale": "Rapid TB meningitis exclusion; critical differential",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF ACE level (CPT 82164)",
+          "rationale": "Neurosarcoidosis exclusion (important differential for pNBD)",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediate (ED triage)",
+          "target": "Rule out hemorrhage, mass, hydrocephalus; CVT shows hyperdense sinus sign",
+          "contraindications": "None significant",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain with and without gadolinium (CPT 70553)",
+          "timing": "Within 24h",
+          "target": "**Parenchymal NBD:** T2/FLAIR hyperintensities in brainstem (midbrain-pons junction extending to diencephalon -- \"brainstem-diencephalic\" pattern), basal ganglia, internal capsule, hemispheric white matter; enhancement variable; **Non-parenchymal NBD:** venous sinus thrombosis (absent flow void), dural enhancement",
+          "contraindications": "GFR <30; gadolinium allergy; pacemaker",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRV (MR venography) (CPT 70547)",
+          "timing": "Within 24h if non-parenchymal NBD or headache with papilledema",
+          "target": "Cerebral venous sinus thrombosis (superior sagittal, transverse, sigmoid sinuses); absent flow signal; partial or complete occlusion",
+          "contraindications": "MRI contraindications",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CTA head (CPT 70496)",
+          "timing": "Within 24h if CVT suspected and MRI unavailable",
+          "target": "Empty delta sign; venous filling defect",
+          "contraindications": "Contrast allergy; renal insufficiency",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CT venography (CPT 70496)",
+          "timing": "Alternative if MRV unavailable",
+          "target": "Venous sinus filling defects",
+          "contraindications": "Contrast allergy; renal insufficiency",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRI spine (cervical and thoracic) with and without contrast (CPT 72156+72157)",
+          "timing": "Within 24-48h if myelopathy suspected",
+          "target": "Intramedullary T2 hyperintensity; longitudinally extensive possible; cord enhancement; cervical and thoracic predominance",
+          "contraindications": "GFR <30; gadolinium allergy",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "timing": "Immediate",
+          "target": "Hilar adenopathy (sarcoidosis exclusion); pulmonary infiltrates; pulmonary artery aneurysm (Behcet's vascular involvement)",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "Immediate",
+          "target": "Baseline cardiac assessment; QTc before medications; cardiac Behcet's screening",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRA head and neck (CPT 70544+70549)",
+          "timing": "Within 48h",
+          "target": "Arterial stenosis/occlusion (rare in NBD but reported); aneurysm; arterial vasculitis assessment",
+          "contraindications": "MRI contraindications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CT chest with contrast (CPT 71260)",
+          "timing": "Within 48h",
+          "target": "Pulmonary artery aneurysm (pathognomonic for Behcet's -- Hughes-Stovin syndrome); mediastinal lymphadenopathy; sarcoidosis exclusion",
+          "contraindications": "Contrast allergy; renal insufficiency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmologic slit lamp examination",
+          "timing": "Within 24-48h",
+          "target": "Anterior uveitis; posterior uveitis (retinal vasculitis); hypopyon; optic disc edema; retinal vein occlusion; **Ocular involvement in 50-70% of BD**",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Fluorescein angiography (retinal)",
+          "timing": "Within 1-2 weeks",
+          "target": "Retinal vasculitis (both arteries and veins); capillary leakage; retinal ischemia; macular edema",
+          "contraindications": "Fluorescein allergy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "OCT (optical coherence tomography)",
+          "timing": "Within 1-2 weeks",
+          "target": "Retinal nerve fiber layer thinning; macular edema; monitor ocular disease activity",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EEG (CPT 95816)",
+          "timing": "Within 48h if seizures or encephalopathy",
+          "target": "Focal or generalized slowing; epileptiform discharges; subclinical seizures",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Doppler ultrasound of extremities",
+          "timing": "If DVT suspected",
+          "target": "Deep venous thrombosis (Behcet's has high thrombotic tendency); superficial thrombophlebitis",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CT abdomen with contrast",
+          "timing": "If abdominal vascular involvement suspected",
+          "target": "Hepatic vein thrombosis (Budd-Chiari); mesenteric vein thrombosis; IVC thrombosis; aneurysms",
+          "contraindications": "Contrast allergy; renal insufficiency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Echocardiogram (CPT 93306)",
+          "timing": "If cardiac symptoms",
+          "target": "Intracardiac thrombus; valvular disease; cardiac Behcet's",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "EMG/NCS (CPT 95907-95913)",
+          "timing": "Within 1-2 weeks if peripheral neuropathy suspected",
+          "target": "Axonal polyneuropathy; mononeuritis multiplex (rare in NBD)",
+          "contraindications": "Anticoagulation (relative for needle EMG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pulmonary function tests (PFTs) (CPT 94010)",
+          "timing": "If pulmonary symptoms",
+          "target": "Restrictive or obstructive pattern; pulmonary vascular disease assessment",
+          "contraindications": "Unable to cooperate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Cerebral angiography (DSA) (CPT 36224)",
+          "timing": "When arterial vasculitis suspected or diagnosis uncertain",
+          "target": "Arterial occlusion, stenosis, aneurysm (rare in NBD; more common in PAN, PACNS); normal in most NBD",
+          "contraindications": "Coagulopathy; contrast allergy; renal insufficiency",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Brain biopsy (stereotactic)",
+          "timing": "Last resort for atypical parenchymal lesions when diagnosis uncertain",
+          "target": "Perivascular lymphocytic infiltration; small vessel vasculitis; neutrophilic infiltration; no granulomas (distinguishes from sarcoidosis)",
+          "contraindications": "Coagulopathy; deep lesion location",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Meningeal biopsy",
+          "timing": "When chronic meningitis of uncertain etiology",
+          "target": "Lymphocytic meningeal infiltration; small vessel vasculitis",
+          "contraindications": "Coagulopathy; inaccessible location",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "FDG-PET/CT (whole body) (CPT 78816)",
+          "timing": "If occult malignancy or systemic vasculitis evaluation",
+          "target": "FDG-avid vascular inflammation; exclude lymphoma; assess disease extent",
+          "contraindications": "Uncontrolled diabetes; pregnancy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CT pulmonary angiography (CTPA)",
+          "timing": "If pulmonary artery aneurysm suspected (Hughes-Stovin syndrome)",
+          "target": "Pulmonary artery aneurysm; pulmonary embolism",
+          "contraindications": "Contrast allergy; renal insufficiency",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Skin biopsy (pathergy site or skin lesion)",
+          "timing": "When tissue confirmation needed",
+          "target": "Neutrophilic vasculitis; perivascular inflammatory infiltrate; supports Behcet's diagnosis",
+          "contraindications": "Coagulopathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Methylprednisolone",
+          "route": "IV",
+          "indication": "Acute parenchymal NBD (brainstem syndrome, myelopathy, encephalitis, optic neuropathy); acute severe exacerbation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily for 5-10 days; infuse over 1-2 hours; transition to oral prednisone taper",
+            "orderSentence": "Methylprednisolone 1000 mg IV"
+          },
+          "contraindications": "Active untreated infection (especially TB); uncontrolled diabetes; active GI bleeding; psychosis from steroids",
+          "monitoring": "Glucose q6h (target <180 mg/dL); BP; mood/sleep; I/O; GI prophylaxis; electrolytes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone",
+          "route": "IV",
+          "indication": "Cerebral edema from parenchymal mass-like lesion; acute elevated ICP",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Dexamethasone 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV loading dose, then 4 mg IV q6h; taper over days-weeks as clinically improving",
+            "orderSentence": "Dexamethasone 10 mg IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes",
+          "monitoring": "Glucose; BP; neurological status; GI prophylaxis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Heparin (unfractionated)",
+          "route": "IV",
+          "indication": "CVT (non-parenchymal NBD); therapeutic anticoagulation for cerebral venous thrombosis -- initiate even with hemorrhagic infarct",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "80 units/kg",
+                "orderSentence": "Heparin (unfractionated) 80 units/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "80 units/kg IV bolus, then 18 units/kg/hr continuous infusion; target aPTT 60-80 seconds (1.5-2.5x control)",
+            "orderSentence": "Heparin (unfractionated) 80 units/kg IV"
+          },
+          "contraindications": "Active major hemorrhage (relative in CVT with hemorrhagic infarction -- anticoagulation still indicated per guidelines); HIT; severe uncontrolled hypertension",
+          "monitoring": "aPTT q6h until therapeutic x 2, then q12-24h; platelet count (HIT screen); CBC; neurological status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Enoxaparin (LMWH)",
+          "route": "SC",
+          "indication": "CVT (alternative to UFH); stable non-parenchymal NBD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg/kg",
+                "orderSentence": "Enoxaparin (LMWH) 1 mg/kg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "1 mg/kg SC every 12 hours; renally adjust if CrCl <30",
+            "orderSentence": "Enoxaparin (LMWH) 1 mg/kg SC"
+          },
+          "contraindications": "Severe renal impairment (CrCl <30); active major hemorrhage; HIT",
+          "monitoring": "Anti-Xa level (target 0.5-1.0 IU/mL); CBC; renal function; platelet count",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Omeprazole",
+          "route": "PO",
+          "indication": "GI protection during high-dose corticosteroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Omeprazole 40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "40 mg PO daily during steroid course and oral taper; IV if NPO",
+            "orderSentence": "Omeprazole 40 mg PO"
+          },
+          "contraindications": "PPI allergy",
+          "monitoring": "None routine",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Insulin sliding scale",
+          "route": "SC",
+          "indication": "Steroid-induced hyperglycemia management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Insulin sliding scale Per protocol SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Per sliding scale if glucose >180 mg/dL; adjust per glucose trends",
+            "orderSentence": "Insulin sliding scale Per protocol SC"
+          },
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Glucose q6h; adjust per response",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV",
+          "indication": "Seizure secondary to cortical/parenchymal NBD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Lorazepam 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV push (max 4 mg/dose); repeat x1 in 5 minutes if seizure persists",
+            "orderSentence": "Lorazepam 4 mg IV"
+          },
+          "contraindications": "Respiratory depression; acute narrow-angle glaucoma",
+          "monitoring": "Respiratory status; sedation level; airway patency",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mannitol",
+          "route": "IV",
+          "indication": "Acute elevated ICP from large parenchymal lesion or CVT with impending herniation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g/kg",
+                "orderSentence": "Mannitol 1 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 g/kg IV bolus over 15-20 minutes; repeat 0.5 g/kg q6h; maintain serum osmolality <320 mOsm/kg",
+            "orderSentence": "Mannitol 1 g/kg IV"
+          },
+          "contraindications": "Anuria; severe dehydration; active intracranial hemorrhage",
+          "monitoring": "Serum osmolality q6h; electrolytes; renal function; I/O",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline 3%",
+          "route": "IV",
+          "indication": "Acute elevated ICP from CVT or mass-like parenchymal lesion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mL",
+                "orderSentence": "Hypertonic saline 3% 250 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "250 mL 3% NaCl IV over 15-30 minutes; repeat as needed; target sodium 145-155 mEq/L",
+            "orderSentence": "Hypertonic saline 3% 250 mL IV"
+          },
+          "contraindications": "Hypernatremia >155 mEq/L; severe CHF",
+          "monitoring": "Sodium q2-4h; serum osmolality; central line preferred for concentrations >3%",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acetazolamide",
+          "route": "PO",
+          "indication": "Elevated ICP from CVT (adjunct to anticoagulation); intracranial hypertension secondary to NBD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Acetazolamide 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg BID; increase to 500 mg BID as needed; max 2000 mg/day",
+            "orderSentence": "Acetazolamide 250 mg PO"
+          },
+          "contraindications": "Sulfa allergy; severe renal/hepatic failure; hypokalemia; metabolic acidosis",
+          "monitoring": "BMP (potassium, bicarbonate); renal function; paresthesias; kidney stones",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain; central pain from brainstem/spinal cord lesions",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q1-3d; target 900-1800 mg TID; max 3600 mg/day",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Sedation; dizziness; peripheral edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain; alternative to gabapentin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; increase q1wk; max 600 mg/day",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose); Class V controlled substance",
+          "monitoring": "Sedation; weight gain; peripheral edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levetiracetam",
+          "route": "IV/PO",
+          "indication": "Seizures secondary to cortical/parenchymal NBD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Levetiracetam 500 mg IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Start 500 mg BID (IV or PO); increase by 500 mg/day q1-2wk; max 3000 mg/day; transition to PO when tolerated",
+            "orderSentence": "Levetiracetam 500 mg IV/PO"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Behavioral changes (rage, irritability); suicidality; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lacosamide",
+          "route": "IV/PO",
+          "indication": "Seizures; second-line ASM or adjunctive therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Lacosamide 100 mg IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Start 100 mg BID (IV or PO); increase by 50 mg/dose q1wk; max 400 mg/day; transition to PO",
+            "orderSentence": "Lacosamide 100 mg IV/PO"
+          },
+          "contraindications": "Second/third degree AV block; severe hepatic impairment",
+          "monitoring": "ECG (PR prolongation); dizziness; cardiac monitoring during IV load",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Spasticity from myelopathy or brainstem involvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; increase by 5 mg/dose q3-5d; max 80 mg/day",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Renal impairment; seizure disorder (abrupt withdrawal lowers threshold)",
+          "monitoring": "Sedation; weakness; urinary retention; avoid abrupt discontinuation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Colchicine",
+          "route": "PO",
+          "indication": "Recurrent oral/genital ulcers; mucocutaneous Behcet's manifestations (adjunct to CNS treatment)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Colchicine 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.5 mg PO BID; adjust for renal/hepatic impairment",
+            "orderSentence": "Colchicine 0.5 mg PO"
+          },
+          "contraindications": "Severe renal impairment; concurrent strong CYP3A4 inhibitors; bone marrow suppression",
+          "monitoring": "CBC; LFTs; renal function; GI side effects (diarrhea)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Apremilast",
+          "route": "PO",
+          "indication": "Oral ulcers of Behcet's disease (FDA-approved for this indication); adjunct to systemic immunotherapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Apremilast 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Titrate over 6 days to 30 mg PO BID; start 10 mg daily day 1, increase per schedule",
+            "orderSentence": "Apremilast 30 mg PO"
+          },
+          "contraindications": "Severe renal impairment (CrCl <30: reduce dose to 30 mg daily); depression/suicidal ideation",
+          "monitoring": "Weight; depression screening; GI side effects (nausea, diarrhea)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Warfarin",
+          "route": "PO",
+          "indication": "Long-term anticoagulation for CVT in non-parenchymal NBD (transition from heparin)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Warfarin 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO daily; adjust per INR; overlap with heparin minimum 5 days and until INR 2-3 for 24h; duration 3-12 months (indefinite in Behcet's with recurrent thrombosis)",
+            "orderSentence": "Warfarin 5 mg PO"
+          },
+          "contraindications": "Active major bleeding; pregnancy; severe hepatic disease",
+          "monitoring": "INR q1-2 days initially; target INR 2.0-3.0; weekly then monthly once stable; drug interactions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium + Vitamin D (bone protection)",
+          "route": "PO",
+          "indication": "Bone protection during chronic corticosteroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Calcium + Vitamin D (bone protection) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 500-600 mg PO BID + Vitamin D 800-1000 IU daily",
+            "orderSentence": "Calcium + Vitamin D (bone protection) 500 mg PO"
+          },
+          "contraindications": "Hypercalcemia; nephrolithiasis",
+          "monitoring": "Serum calcium; 25-OH vitamin D; DEXA if steroids >3 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Neuropathic pain; comorbid depression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily x 1 week, then increase to 60 mg daily; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma",
+          "monitoring": "BP; hepatic function; serotonin syndrome risk; suicidality monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "Fatigue from brainstem/parenchymal NBD involvement; disease-related fatigue",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg PO every morning; increase to 200 mg daily after 1 week if needed; max 400 mg/day; take in morning to avoid insomnia",
+            "orderSentence": "Modafinil 100 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; arrhythmia; mitral valve prolapse with left ventricular hypertrophy",
+          "monitoring": "BP; heart rate; sleep quality; psychiatric symptoms; hepatic function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxybutynin",
+          "route": "PO",
+          "indication": "Neurogenic bladder (urgency, frequency) from myelopathic NBD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Oxybutynin 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO BID; increase to 5 mg TID as needed; max 20 mg/day; extended-release 5-30 mg daily available",
+            "orderSentence": "Oxybutynin 5 mg PO"
+          },
+          "contraindications": "Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction; myasthenia gravis",
+          "monitoring": "Anticholinergic effects (dry mouth, constipation, confusion); post-void residual; cognitive effects in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Steroid-Sparing": [
+        {
+          "item": "Prednisone",
+          "route": "PO",
+          "indication": "Transition from IV steroids; maintenance corticosteroid therapy for pNBD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Prednisone 60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg/kg/day (max 60 mg) after IV pulse; taper by 10 mg every 2 weeks to 20 mg, then by 5 mg every 2-4 weeks; goal <10 mg daily by 6 months; taper over 6-12+ months",
+            "orderSentence": "Prednisone 60 mg PO"
+          },
+          "contraindications": "Active infection; uncontrolled diabetes; avascular necrosis; psychosis from steroids",
+          "monitoring": "Glucose; BP; weight; mood; bone density (DEXA if >3 months); ophthalmology (cataracts, glaucoma); adrenal function on taper",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Azathioprine",
+          "route": "PO",
+          "indication": "**First-line steroid-sparing agent for NBD** (strongest evidence among conventional immunosuppressants); prevents relapse in parenchymal and non-parenchymal NBD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Azathioprine 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg PO daily; increase by 50 mg every 2 weeks to target 2.5 mg/kg/day; onset of action 2-3 months; continue minimum 2-3 years",
+            "orderSentence": "Azathioprine 50 mg PO"
+          },
+          "contraindications": "TPMT deficiency (check before starting); concurrent allopurinol (reduce dose 75%); pregnancy (relative -- category D but commonly used in Behcet's)",
+          "monitoring": "TPMT genotype/activity before starting; CBC q2 weeks x 2 months, then monthly; LFTs monthly; amylase if abdominal pain (pancreatitis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mycophenolate mofetil",
+          "route": "PO",
+          "indication": "Steroid-sparing agent; alternative to azathioprine; relapsing NBD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg PO BID; increase by 500 mg every 2 weeks; target 1000-1500 mg BID (2000-3000 mg/day total)",
+            "orderSentence": "Mycophenolate mofetil 500 mg PO"
+          },
+          "contraindications": "Pregnancy (Category D -- teratogenic); active infection; concurrent live vaccines",
+          "monitoring": "CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms (diarrhea, nausea); infection surveillance; pregnancy prevention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methotrexate",
+          "route": "PO",
+          "indication": "Steroid-sparing agent; refractory mucocutaneous and neurological disease; alternative to azathioprine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Methotrexate 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 7.5-10 mg PO once weekly; increase by 2.5-5 mg q2-4wk; target 15-25 mg weekly; co-prescribe folic acid 1 mg daily (except MTX day)",
+            "orderSentence": "Methotrexate 10 mg PO"
+          },
+          "contraindications": "Pregnancy (Category X); severe hepatic/renal disease; active infection; bone marrow suppression",
+          "monitoring": "CBC q2 weeks x 2 months, then monthly; LFTs monthly; renal function q3 months; pulmonary toxicity (cough, dyspnea)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cyclosporine",
+          "route": "PO",
+          "indication": "Refractory ocular and neurological Behcet's; often combined with azathioprine; effective for uveitis; **CAUTION: use with concurrent azathioprine only -- monotherapy worsens CNS disease**",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg/kg",
+                "orderSentence": "Cyclosporine 3 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 3-5 mg/kg/day in 2 divided doses; adjust per trough level (target 100-200 ng/mL)",
+            "orderSentence": "Cyclosporine 3 mg/kg PO"
+          },
+          "contraindications": "Uncontrolled hypertension; renal impairment; concurrent nephrotoxic drugs; active infection",
+          "monitoring": "Cyclosporine trough levels; renal function (Cr) q2 weeks; BP q visit; Mg; lipids; K; uric acid; gingival hyperplasia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cyclophosphamide",
+          "route": "IV",
+          "indication": "Severe/refractory parenchymal NBD with progressive neurological decline; brainstem syndrome not responding to steroids + azathioprine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "750 mg/m2",
+                "orderSentence": "Cyclophosphamide 750 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "750 mg/m2 IV monthly for 6 cycles; pre-hydrate with 1L NS; administer with MESNA for uroprotection; follow with azathioprine maintenance",
+            "orderSentence": "Cyclophosphamide 750 mg/m2 IV"
+          },
+          "contraindications": "Pregnancy (Category D); active infection; bone marrow failure; bladder outlet obstruction",
+          "monitoring": "CBC weekly x 4 weeks after each cycle (nadir day 10-14); urinalysis (hemorrhagic cystitis); BMP; LFTs; fertility preservation discussion; malignancy risk",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Disease-Modifying / Biologic Therapies (Refractory)": [
+        {
+          "item": "Infliximab",
+          "route": "IV",
+          "indication": "Refractory parenchymal or non-parenchymal NBD failing azathioprine/cyclophosphamide; progressive brainstem disease; severe myelopathy; refractory uveitis with CNS involvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/kg",
+                "orderSentence": "Infliximab 5 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg/kg IV at weeks 0, 2, and 6 (induction), then every 6-8 weeks (maintenance); increase to 10 mg/kg if inadequate response; infuse over 2 hours minimum; Pre-treatment: TB testing (QuantiFERON), Hepatitis B/C screening, CBC, LFTs, CMP, chest X-ray, age-appropriate cancer screening, heart failure assessment (NYHA class), pregnancy test",
+            "orderSentence": "Infliximab 5 mg/kg IV"
+          },
+          "contraindications": "Active or latent TB (treat first); active serious infection; decompensated CHF (NYHA III-IV); demyelinating disease; live vaccines within 4 weeks",
+          "monitoring": "CBC with differential q2-4 months; LFTs q3 months; ANA/anti-dsDNA annually (drug-induced lupus); infection surveillance; infusion reactions; skin cancer screening annually; heart failure symptoms",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Adalimumab",
+          "route": "SC",
+          "indication": "Refractory NBD; alternative to infliximab; preferred for outpatient self-administration; refractory uveitis (FDA-approved for non-infectious uveitis)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Adalimumab 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "80 mg SC at week 0, then 40 mg SC every other week; increase to 40 mg weekly if inadequate response; Pre-treatment: TB testing (QuantiFERON), Hepatitis B/C screening, CBC, LFTs, chest X-ray, pregnancy test",
+            "orderSentence": "Adalimumab 40 mg SC"
+          },
+          "contraindications": "Active or latent TB (treat first); active serious infection; decompensated CHF; demyelinating disease; live vaccines within 4 weeks",
+          "monitoring": "CBC q2-4 months; LFTs q3 months; ANA annually; infection surveillance; injection site reactions; skin cancer screening",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tocilizumab",
+          "route": "IV",
+          "indication": "Refractory NBD failing anti-TNF therapy; alternative biologic for severe parenchymal disease (targets IL-6 pathway -- critical in NBD pathogenesis)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8 mg/kg",
+                "orderSentence": "Tocilizumab 8 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "8 mg/kg IV every 4 weeks (max 800 mg/dose); infuse over 1 hour; Pre-treatment: TB testing, Hepatitis B/C screening, CBC, LFTs, lipids, GI perforation risk assessment",
+            "orderSentence": "Tocilizumab 8 mg/kg IV"
+          },
+          "contraindications": "Active infection; ANC <2000; platelets <100K; ALT/AST >1.5x ULN; diverticulitis (GI perforation risk); concurrent live vaccines",
+          "monitoring": "CBC q4-8 weeks; LFTs q4-8 weeks; lipid panel q12 weeks; watch for masking of infection (suppresses CRP/ESR); GI perforation symptoms",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Rituximab",
+          "route": "IV",
+          "indication": "Refractory NBD failing anti-TNF therapy; case reports of efficacy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Rituximab 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV x 2 doses (day 0 and day 14); re-dose based on CD19/CD20 repopulation or clinical relapse; premedicate with methylprednisolone 100 mg, acetaminophen, diphenhydramine; Pre-treatment: Hepatitis B serology, CBC, CMP, quantitative immunoglobulins, JCV antibody (PML risk), pregnancy test, vaccination update",
+            "orderSentence": "Rituximab 1000 mg IV"
+          },
+          "contraindications": "Active hepatitis B; severe active infection; live vaccines within 4 weeks; severe hypogammaglobulinemia",
+          "monitoring": "Hepatitis B surveillance; CBC q2-4 weeks initially; immunoglobulin levels q3 months; CD19/CD20 B-cell counts q3 months; infusion reactions; PML surveillance",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Interferon-alpha 2a",
+          "route": "SC",
+          "indication": "Refractory ocular and neurological Behcet's; particularly effective for refractory uveitis with CNS involvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 MIU",
+                "orderSentence": "Interferon-alpha 2a 3 MIU SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Start 3-6 million IU (MIU) SC three times weekly; increase to 6-9 MIU TIW as needed; taper to lowest effective dose once remission achieved; typically combined with azathioprine; Pre-treatment: CBC, LFTs, TSH, depression screening, ANA",
+            "orderSentence": "Interferon-alpha 2a 3 MIU SC"
+          },
+          "contraindications": "Depression/suicidal ideation; decompensated liver disease; autoimmune hepatitis; severe cytopenia; uncontrolled thyroid disease",
+          "monitoring": "CBC q2 weeks initially, then monthly; LFTs; TSH q3 months; depression screening; ANA; triglycerides; injection site reactions; flu-like symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology (neuroimmunology specialist) for diagnosis confirmation, immunotherapy guidance, and long-term management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Rheumatology for systemic Behcet's disease co-management, mucocutaneous disease control, and immunosuppression coordination",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ophthalmology for urgent slit lamp examination (uveitis screening), fluorescein angiography, OCT; **Ocular Behcet's occurs in 50-70% and causes blindness if untreated**",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Hematology if CVT (non-parenchymal NBD): anticoagulation management, thrombophilia evaluation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Dermatology for skin lesion biopsy (erythema nodosum, pseudofolliculitis, pathergy test interpretation) and mucocutaneous disease management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurosurgery for ICP management (EVD/VP shunt) if refractory intracranial hypertension from CVT; brain biopsy if diagnosis uncertain",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Vascular surgery/interventional radiology if pulmonary artery aneurysm (Hughes-Stovin syndrome) or large vessel vasculitis",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Oral medicine/dentistry for recurrent oral aphthous ulcer management; topical therapies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gastroenterology if GI Behcet's suspected (abdominal pain, GI bleeding, ulceration)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for gait training, balance assessment, and fall prevention given brainstem/spinal cord involvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Occupational therapy for ADL adaptation and functional rehabilitation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Speech-language pathology for swallowing evaluation if brainstem involvement (bulbar symptoms) and cognitive-linguistic rehabilitation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Neuropsychology for cognitive assessment and rehabilitation given parenchymal NBD cognitive impairment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for insurance navigation, disability resources, and psychosocial support",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Infusion center coordination for IV methylprednisolone, infliximab, tocilizumab, rituximab, or cyclophosphamide infusions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fertility specialist for reproductive counseling before initiating teratogenic immunosuppressants (methotrexate, mycophenolate, cyclophosphamide)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management for refractory headache or neuropathic pain not responding to first-line agents",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urology for neurogenic bladder evaluation and management if myelopathic NBD",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately for sudden vision loss, new weakness, difficulty walking, severe headache, seizures, difficulty breathing, or new oral/genital ulcers with neurological symptoms (indicates disease flare or complications)",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Neuro-Behcet's disease is a chronic, treatable condition -- improvement is gradual over weeks to months with appropriate immunotherapy; relapses are common and require prompt treatment",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Do NOT stop corticosteroids abruptly as this causes adrenal crisis and disease flare; taper under physician supervision only",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Report signs of infection immediately (fever >100.4F, cough, dysuria, rash, wound redness) as immunosuppressive therapy increases infection risk",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid live vaccines while on immunosuppressive therapy (inform all physicians and pharmacists of immunosuppression status)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Monitor blood sugars if diabetic or on corticosteroids -- steroids significantly elevate blood glucose",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Do not drive until cleared by neurology if visual impairment, seizures, or significant neurological deficits are present",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Keep a symptom diary tracking oral ulcers, genital ulcers, visual changes, headaches, weakness, numbness, and skin lesions to monitor disease activity and treatment response",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Take azathioprine with food to reduce GI side effects; report severe nausea, vomiting, or abdominal pain (indicates pancreatitis)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Take methotrexate on the same day each week; take folic acid daily EXCEPT on methotrexate day to reduce side effects",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "If on warfarin for CVT: attend all INR checks; report bleeding or bruising; avoid excess foods high in vitamin K; report any new medications",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid pregnancy during methotrexate, mycophenolate, or cyclophosphamide therapy; discuss contraception with neurology and OB/GYN",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Attend all follow-up appointments -- Neuro-Behcet's requires regular monitoring with MRI, labs, clinical assessments, and ophthalmologic exams",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Wear medical alert identification (bracelet/card) indicating Behcet's disease, immunosuppressive medications, and anticoagulation status if applicable",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Use sun protection while on immunosuppressive therapy due to increased skin cancer risk",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Smoking cessation to reduce vascular risk and improve treatment outcomes",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Alcohol avoidance or strict limitation while on methotrexate, azathioprine, or other hepatotoxic immunosuppressants",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Low-sodium diet to reduce fluid retention and hypertension from corticosteroid therapy",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Calcium-rich diet for bone protection during chronic steroid use",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Regular weight-bearing exercise as tolerated to prevent steroid-related osteoporosis and deconditioning",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Adequate hydration (2-3 L/day) especially if on methotrexate or if thrombotic risk present",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Fall prevention measures at home given brainstem/cerebellar involvement and balance impairment",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Stress management and adequate sleep (7-8 hours nightly) as stress exacerbates Behcet's disease activity",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Update all vaccinations before initiating immunosuppressive therapy (pneumococcal, influenza, hepatitis B, COVID-19); avoid live vaccines on immunosuppression",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Sun protection (SPF 50+, protective clothing) during immunosuppressive therapy due to increased skin cancer risk",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Dental hygiene with soft toothbrush and non-irritating toothpaste to minimize oral ulcer triggers",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Annual ophthalmologic examination even if asymptomatic due to risk of subclinical uveitis, retinal vasculitis, and steroid-related cataracts/glaucoma",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "Y"
+        },
+        {
+          "item": "Report any new venous thrombosis symptoms (leg swelling, chest pain, shortness of breath) immediately given systemic thrombotic tendency in Behcet's",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Multiple sclerosis",
+      "features": "Relapsing-remitting course; periventricular/juxtacortical/infratentorial/spinal cord lesions (Dawson fingers); oligoclonal bands more common; NO oral/genital ulcers; NO pathergy; predominantly female",
+      "tests": "MRI pattern (MS: periventricular, Dawson fingers vs. NBD: brainstem-diencephalic); CSF OCBs (common in MS, uncommon in NBD); HLA-B51 negative; no mucocutaneous features"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis",
+      "features": "Non-caseating granulomas; cranial neuropathies (especially CN VII); leptomeningeal enhancement; hilar lymphadenopathy; elevated serum ACE; no oral/genital ulcers",
+      "tests": "Chest CT (hilar adenopathy); serum ACE; biopsy (granulomas vs. vasculitis); CSF ACE; HLA-B51 negative; no pathergy"
+    },
+    {
+      "diagnosis": "CNS vasculitis (PACNS)",
+      "features": "Progressive headache; multifocal strokes; angiographic beading; no systemic mucocutaneous features; any age",
+      "tests": "Cerebral angiography (beading); brain/meningeal biopsy (transmural vasculitis); no oral/genital ulcers; no pathergy; HLA-B51 negative"
+    },
+    {
+      "diagnosis": "Neurosyphilis",
+      "features": "Cranial neuropathies; meningitis; Argyll Robertson pupils; cognitive decline; positive serology; sexual history",
+      "tests": "RPR/VDRL; CSF VDRL; FTA-ABS; no oral ulcers (chancre is different from aphthae); no pathergy"
+    },
+    {
+      "diagnosis": "Systemic lupus erythematosus (CNS)",
+      "features": "Female predominance; malar rash; arthritis; serositis; ANA/anti-dsDNA positive; cerebritis; strokes from antiphospholipid",
+      "tests": "ANA; anti-dsDNA; complement levels; anti-phospholipid antibodies; no pathergy; different rash pattern"
+    },
+    {
+      "diagnosis": "Cerebral venous thrombosis (non-Behcet's)",
+      "features": "No recurrent oral/genital ulcers; no systemic vasculitis features; often associated with prothrombotic states, OCP, pregnancy",
+      "tests": "Standard thrombophilia workup; no HLA-B51; no mucocutaneous features; no pathergy"
+    },
+    {
+      "diagnosis": "Tuberculous meningitis",
+      "features": "Subacute meningitis; basilar enhancement; CSF low glucose, high protein, elevated ADA; caseating granulomas; endemic areas",
+      "tests": "AFB culture/smear; CSF TB PCR; QuantiFERON-TB; biopsy (caseating granulomas); no oral/genital ulcers"
+    },
+    {
+      "diagnosis": "CNS lymphoma (primary)",
+      "features": "Progressive encephalopathy; periventricular enhancement; homogeneous enhancing mass; immunocompromised",
+      "tests": "CSF cytology/flow cytometry; brain biopsy; FDG-PET (intense uptake); no mucocutaneous features"
+    },
+    {
+      "diagnosis": "Sjogren syndrome with CNS involvement",
+      "features": "Dry eyes/mouth; anti-SSA/SSB positive; peripheral neuropathy more common than CNS; myelitis possible",
+      "tests": "Anti-SSA/SSB; Schirmer test; salivary gland biopsy; no oral ulcers (dry mouth instead); no pathergy"
+    },
+    {
+      "diagnosis": "IgG4-related disease",
+      "features": "Mass-forming lesions; pachymeningeal involvement; elevated serum IgG4; multi-organ fibrosis; orbital involvement",
+      "tests": "Serum IgG4; tissue biopsy (storiform fibrosis, IgG4+ plasma cells); no oral/genital ulcers; no pathergy"
+    },
+    {
+      "diagnosis": "Anti-NMDA receptor encephalitis",
+      "features": "Young women; psychiatric symptoms; seizures; movement disorder; ovarian teratoma",
+      "tests": "Anti-NMDA receptor antibody; ovarian imaging; no oral/genital ulcers; rapid onset"
+    },
+    {
+      "diagnosis": "Granulomatosis with polyangiitis (GPA)",
+      "features": "Sinusitis; pulmonary nodules/cavities; glomerulonephritis; pachymeningeal enhancement; c-ANCA positive",
+      "tests": "c-ANCA (PR3); biopsy (necrotizing granulomatous vasculitis); no aphthous ulcers; no pathergy"
+    },
+    {
+      "diagnosis": "Lyme neuroborreliosis",
+      "features": "Cranial neuropathy (CN VII bilateral); meningitis; radiculopathy; erythema migrans; endemic area",
+      "tests": "Lyme serology; CSF Lyme antibody index; travel history; no oral/genital ulcers"
+    },
+    {
+      "diagnosis": "Acute disseminated encephalomyelitis (ADEM)",
+      "features": "Monophasic; post-infectious; large multifocal demyelinating lesions; more common in children",
+      "tests": "Clinical context (post-viral/vaccine); no recurrent ulcers; no HLA-B51; typically monophasic vs. relapsing NBD"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "International Study Group (ISG) diagnostic criteria for Behcet's disease",
+      "evidenceLevel": "Expert Consensus",
+      "source": "International Study Group for Behcet's Disease. Lancet 1990;335:1078-1080. [PubMed](https://pubmed.ncbi.nlm.nih.gov/1970380/)"
+    },
+    {
+      "recommendation": "International Criteria for Behcet's Disease (ICBD, 2014 revision)",
+      "evidenceLevel": "Expert Consensus, Multicenter Validation",
+      "source": "International Team for the Revision of the ICBD. J Eur Acad Dermatol Venereol 2014;28:338-347. [PubMed](https://pubmed.ncbi.nlm.nih.gov/23441863/)"
+    },
+    {
+      "recommendation": "Consensus recommendations for management of Behcet's disease (EULAR)",
+      "evidenceLevel": "Expert Consensus, Systematic Review",
+      "source": "Hatemi G et al. Ann Rheum Dis 2018;77:808-818. [PubMed](https://pubmed.ncbi.nlm.nih.gov/29514754/)"
+    },
+    {
+      "recommendation": "Updated EULAR recommendations for Behcet's disease management",
+      "evidenceLevel": "Expert Consensus",
+      "source": "Hatemi G et al. Ann Rheum Dis 2024;83:25-32. [PubMed](https://pubmed.ncbi.nlm.nih.gov/37793908/)"
+    },
+    {
+      "recommendation": "Consensus statement on Neuro-Behcet's disease (International Neuro-Behcet Advisory Group)",
+      "evidenceLevel": "Expert Consensus",
+      "source": "Kalra S et al. J Neurol 2014;261:1662-1676. [PubMed](https://pubmed.ncbi.nlm.nih.gov/24366651/)"
+    },
+    {
+      "recommendation": "Parenchymal Neuro-Behcet's: clinical features, MRI, and prognosis",
+      "evidenceLevel": "Class II, Retrospective",
+      "source": "Al-Araji A, Kidd DP. Brain 2009;132:714-724. [PubMed](https://pubmed.ncbi.nlm.nih.gov/19168451/)"
+    },
+    {
+      "recommendation": "Azathioprine as first-line steroid-sparing agent in Behcet's (landmark RCT)",
+      "evidenceLevel": "Class I, RCT",
+      "source": "Yazici H et al. N Engl J Med 1990;322:281-285. [PubMed](https://pubmed.ncbi.nlm.nih.gov/2404204/)"
+    },
+    {
+      "recommendation": "Azathioprine long-term prevention of new Behcet's attacks",
+      "evidenceLevel": "Class II, Long-term Follow-up",
+      "source": "Hamuryudan V et al. Arthritis Rheum 1997;40:769-774. [PubMed](https://pubmed.ncbi.nlm.nih.gov/9125262/)"
+    },
+    {
+      "recommendation": "Infliximab for refractory Neuro-Behcet's disease",
+      "evidenceLevel": "Class III, Case Series",
+      "source": "Hirohata S et al. J Neurol 2015;262:338-344. [PubMed](https://pubmed.ncbi.nlm.nih.gov/25359262/)"
+    },
+    {
+      "recommendation": "Anti-TNF therapy for refractory Behcet's disease",
+      "evidenceLevel": "Class III, Retrospective",
+      "source": "Vallet H et al. Autoimmun Rev 2015;14:693-698. [PubMed](https://pubmed.ncbi.nlm.nih.gov/25869498/)"
+    },
+    {
+      "recommendation": "CSF IL-6 as biomarker in Neuro-Behcet's disease",
+      "evidenceLevel": "Class II, Prospective Cohort",
+      "source": "Hirohata S et al. Medicine (Baltimore) 2008;87:195-203. [PubMed](https://pubmed.ncbi.nlm.nih.gov/18626302/)"
+    },
+    {
+      "recommendation": "CSF findings in Neuro-Behcet's disease",
+      "evidenceLevel": "Class III, Retrospective",
+      "source": "Akman-Demir G et al. Brain 1999;122:2171-2182. [PubMed](https://pubmed.ncbi.nlm.nih.gov/10545401/)"
+    },
+    {
+      "recommendation": "HLA-B51 and Behcet's disease: meta-analysis",
+      "evidenceLevel": "Class I, Meta-analysis",
+      "source": "de Menthon M et al. Arthritis Rheum 2009;61:1287-1296. [PubMed](https://pubmed.ncbi.nlm.nih.gov/19790126/)"
+    },
+    {
+      "recommendation": "Pathergy test in Behcet's disease: systematic review",
+      "evidenceLevel": "Class II, Systematic Review",
+      "source": "Davatchi F et al. Adv Exp Med Biol 2003;528:51-56. [PubMed](https://pubmed.ncbi.nlm.nih.gov/12918685/)"
+    },
+    {
+      "recommendation": "Cyclosporine and neurological involvement in Behcet's disease",
+      "evidenceLevel": "Class III, Retrospective",
+      "source": "Kotter I et al. Rheumatology (Oxford) 2006;45:1461-1464. [PubMed](https://pubmed.ncbi.nlm.nih.gov/16998231/)"
+    },
+    {
+      "recommendation": "Cerebral venous thrombosis in Behcet's disease",
+      "evidenceLevel": "Class III, Retrospective",
+      "source": "Aguiar de Sousa D et al. Stroke 2011;42:1153-1155. [PubMed](https://pubmed.ncbi.nlm.nih.gov/21393595/)"
+    },
+    {
+      "recommendation": "MRI patterns in Neuro-Behcet's disease",
+      "evidenceLevel": "Class III, Retrospective",
+      "source": "Kocer N et al. Neuroradiology 1999;41:636-643. [PubMed](https://pubmed.ncbi.nlm.nih.gov/10525763/)"
+    },
+    {
+      "recommendation": "Tocilizumab for refractory Behcet's disease",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "Atienza-Mateo B et al. Semin Arthritis Rheum 2019;49:126-135. [PubMed](https://pubmed.ncbi.nlm.nih.gov/30655078/)"
+    },
+    {
+      "recommendation": "Adalimumab for non-infectious posterior uveitis (VISUAL-I trial)",
+      "evidenceLevel": "Class I, RCT",
+      "source": "Jaffe GJ et al. N Engl J Med 2016;375:932-943. [PubMed](https://pubmed.ncbi.nlm.nih.gov/27602665/)"
+    },
+    {
+      "recommendation": "Interferon-alpha for refractory Behcet's disease",
+      "evidenceLevel": "Class III, Prospective",
+      "source": "Kotter I et al. Arthritis Rheum 2004;50:3628-3636. [PubMed](https://pubmed.ncbi.nlm.nih.gov/15529353/)"
+    },
+    {
+      "recommendation": "Cyclophosphamide for severe Neuro-Behcet's disease",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "Kidd DP. J Neurol 2017;264:434-439. [PubMed](https://pubmed.ncbi.nlm.nih.gov/27757516/)"
+    },
+    {
+      "recommendation": "Prognosis and long-term outcomes of Neuro-Behcet's disease",
+      "evidenceLevel": "Class II, Retrospective Cohort",
+      "source": "Noel N et al. Medicine (Baltimore) 2014;93:e68. [PubMed](https://pubmed.ncbi.nlm.nih.gov/25171876/)"
+    },
+    {
+      "recommendation": "Hughes-Stovin syndrome: pulmonary artery aneurysm and thrombosis in Behcet's",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "Emad Y et al. Eur J Intern Med 2007;18:392-395. [PubMed](https://pubmed.ncbi.nlm.nih.gov/17693229/)"
+    },
+    {
+      "recommendation": "Apremilast for oral ulcers in Behcet's disease (RELIEF trial)",
+      "evidenceLevel": "Class I, RCT",
+      "source": "Hatemi G et al. N Engl J Med 2019;381:1918-1928. [PubMed](https://pubmed.ncbi.nlm.nih.gov/31722152/)"
+    },
+    {
+      "recommendation": "Rituximab for refractory Behcet's disease",
+      "evidenceLevel": "Class IV, Case Reports",
+      "source": "Zhao C et al. Orphanet J Rare Dis 2021;16:1-9. [PubMed](https://pubmed.ncbi.nlm.nih.gov/34407857/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic examination (brainstem signs, motor, sensory, gait, cognition, cranial nerves)",
+      "frequency": "Q4-6h (ICU); Q8-12h (floor)",
+      "action": "If worsening: urgent re-imaging; escalate immunotherapy; neurosurgery consult if ICP concerns",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Visual acuity testing",
+      "frequency": "Daily if ocular/optic nerve involvement",
+      "action": "Worsening: urgent ophthalmology; escalate steroids; add anti-TNF",
+      "ED": "URGENT",
+      "HOSP": "URGENT",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "Q6h during IV steroids",
+      "action": "Insulin sliding scale; endocrine consult if persistent >250 mg/dL",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Q1h (ICU); Q4h (floor)",
+      "action": "Antihypertensive therapy; steroid dose adjustment if severe",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "Q4h; continuous in ICU",
+      "action": "Rule out infection; blood cultures if febrile on immunosuppression",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "aPTT (if on heparin for CVT)",
+      "frequency": "Q6h until therapeutic x 2, then q12-24h",
+      "action": "Adjust heparin infusion per protocol; watch for HIT",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "INR (if transitioning to warfarin)",
+      "frequency": "Daily until target INR x 2 days",
+      "action": "Adjust warfarin dose; overlap heparin until INR therapeutic",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Renal function (BUN/Cr)",
+      "frequency": "Daily during acute treatment",
+      "action": "Adjust renally-dosed medications; hydration",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "ICP monitoring (if EVD)",
+      "frequency": "Continuous if EVD in place",
+      "action": "CSF drainage; escalate ICP management; repeat imaging",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Oral/genital ulcer assessment",
+      "frequency": "Daily",
+      "action": "Active new ulcers suggest systemic disease activity; escalate immunotherapy",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Stable or improving neurological exam; seizure-free (if applicable); oral medications tolerated; anticoagulation therapeutic and stable (if CVT); steroid taper plan established; follow-up with neurology and rheumatology within 1-2 weeks; outpatient labs and imaging scheduled; family/caregiver education completed"
+    },
+    {
+      "disposition": "**Admit to floor (neurology)**",
+      "criteria": "New-onset or worsening parenchymal NBD requiring IV methylprednisolone; new CVT requiring heparin anticoagulation; diagnostic workup requiring expedited imaging and LP; new seizures requiring medication optimization; progressive brainstem syndrome; new visual loss from ocular/optic nerve involvement"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "Severe brainstem syndrome with bulbar dysfunction or decreased consciousness; acute elevated ICP from CVT not responding to medical management; status epilepticus; severe myelopathy with respiratory compromise; rapid neurological decline; large hemorrhagic venous infarct; impending herniation"
+    },
+    {
+      "disposition": "**Transfer to higher level of care**",
+      "criteria": "Neurosurgery not available (ICP management, EVD, biopsy); neuroimmunology specialist not available; interventional radiology for endovascular CVT treatment; infusion center for biologic therapy not available"
+    },
+    {
+      "disposition": "**Inpatient rehabilitation**",
+      "criteria": "Significant functional deficits from brainstem syndrome, myelopathy, or hemispheric involvement; medically stable; expected to benefit from intensive PT/OT/ST; unable to safely return home"
+    },
+    {
+      "disposition": "**Outpatient follow-up**",
+      "criteria": "All discharged patients: neurology follow-up within 1-2 weeks; rheumatology within 2-4 weeks; ophthalmology within 1-2 weeks; hematology if on anticoagulation; labs per monitoring schedule; MRI per protocol"
+    },
+    {
+      "disposition": "**Readmission criteria**",
+      "criteria": "New or worsening neurological symptoms (vision loss, weakness, brainstem signs, seizures, severe headache); infection on immunosuppression; suspected disease relapse; uncontrolled oral/genital ulcers suggesting flare; new thrombotic event; severe steroid side effects"
+    }
+  ]
+}

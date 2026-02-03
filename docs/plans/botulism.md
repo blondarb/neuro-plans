@@ -25,7 +25,7 @@ tags:
 
 **ICD-10:** A05.1 (Botulism food poisoning — foodborne botulism), T48.1X1A (Poisoning by skeletal muscle relaxants, accidental — iatrogenic botulism), A48.51 (Infant botulism), A48.52 (Wound botulism), A48.59 (Other specified botulism — adult intestinal colonization, inhalational)
 
-**CPT CODES:** 95907-95913 (nerve conduction studies), 95886 (needle EMG), 95937 (repetitive nerve stimulation), 87900 (bacterial toxin assay — mouse bioassay, sent via public health), 80053 (CMP), 85025 (CBC), 71046 (chest X-ray), 93000 (ECG), 70553 (MRI brain), 72156 (MRI spine), 94010 (spirometry/PFTs), 94726 (FVC), 99291-99292 (critical care E/M), 31500 (intubation)
+**CPT CODES:** 95907-95913 (nerve conduction studies), 95886 (needle EMG), 95937 (repetitive nerve stimulation), 95872 (single-fiber EMG), 87900 (bacterial toxin assay — mouse bioassay, sent via public health), 87045 (stool culture), 87075 (anaerobic wound culture), 80053 (CMP), 85025 (CBC), 83735 (magnesium), 82803 (ABG), 62270 (lumbar puncture), 71046 (chest X-ray), 93000 (ECG), 70450 (CT head), 70553 (MRI brain), 72156 (MRI spine), 71260 (CT chest), 74178 (CT abdomen/pelvis), 94010 (spirometry/PFTs), 94726 (FVC), 86235 (AChR/antibody panel), 86255 (antibody assay), 99291-99292 (critical care E/M), 31500 (intubation), 97110-97542 (physical therapy)
 
 **SYNONYMS:** Botulism, botulinum toxin poisoning, Clostridium botulinum poisoning, food poisoning botulism, foodborne botulism, wound botulism, infant botulism, iatrogenic botulism, descending paralysis, botulinum intoxication, sausage poisoning, botulism food poisoning, adult intestinal toxemia botulism, inhalational botulism
 
@@ -54,7 +54,7 @@ SECTION A: ACTION ITEMS
 | PT/INR (CPT 85610), aPTT (CPT 85730) | STAT | ROUTINE | - | STAT | Coagulation status before procedures; wound botulism may need surgical debridement | Normal |
 | Blood cultures (aerobic/anaerobic) (CPT 87040) | STAT | ROUTINE | - | STAT | Wound botulism — rule out secondary bacteremia; exclude sepsis | No growth |
 | Urinalysis (CPT 81003) | STAT | ROUTINE | ROUTINE | STAT | Baseline; UTI as complication in prolonged hospitalization | Normal |
-| Pregnancy test (beta-hCG) | STAT | STAT | ROUTINE | STAT | Antitoxin is equine-derived — pregnancy category C; imaging considerations | Document result |
+| Pregnancy test (beta-hCG) (CPT 84703) | STAT | STAT | ROUTINE | STAT | Antitoxin is equine-derived — pregnancy category C; imaging considerations | Document result |
 | Lactate (CPT 83605) | STAT | STAT | - | STAT | Assess tissue perfusion; distinguish from septic shock | <2.0 mmol/L |
 | Type and screen (CPT 86900) | STAT | ROUTINE | - | STAT | Potential need for surgical intervention (wound botulism); ICU procedures | On file |
 
@@ -63,27 +63,27 @@ SECTION A: ACTION ITEMS
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | Serum botulinum toxin assay (mouse bioassay) (CPT 87900) | STAT | STAT | - | STAT | Definitive diagnostic test; contact CDC/state health department for testing; sensitivity 33-44% in serum | Positive confirms diagnosis (negative does NOT exclude) |
-| Stool botulinum toxin assay and culture | STAT | STAT | - | STAT | Higher sensitivity than serum (60%+ in foodborne); also identifies colonization (infant, adult intestinal) | Positive toxin or culture of C. botulinum |
-| Wound culture (anaerobic) | STAT | STAT | - | STAT | Wound botulism — culture for C. botulinum; send tissue/exudate for anaerobic culture and toxin assay | C. botulinum isolation |
+| Stool botulinum toxin assay and culture (CPT 87045) | STAT | STAT | - | STAT | Higher sensitivity than serum (60%+ in foodborne); also identifies colonization (infant, adult intestinal) | Positive toxin or culture of C. botulinum |
+| Wound culture (anaerobic) (CPT 87075) | STAT | STAT | - | STAT | Wound botulism — culture for C. botulinum; send tissue/exudate for anaerobic culture and toxin assay | C. botulinum isolation |
 | Suspected food sample (for toxin testing) | STAT | STAT | - | - | Epidemiologic confirmation; send to state public health lab via CDC coordination | Toxin identified in food |
 | Serum for toxin type identification (A-G) | - | ROUTINE | - | ROUTINE | Identifies toxin serotype to guide antitoxin selection; types A, B, E most common in humans | Type identified |
 | ESR (CPT 85652) / CRP (CPT 86140) | URGENT | ROUTINE | ROUTINE | ROUTINE | Inflammatory markers; elevated in wound botulism | Normal in foodborne; elevated in wound botulism |
 | TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Hypothyroidism can contribute to weakness (differential) | Normal |
-| AChR antibody panel (binding, blocking, modulating) | - | ROUTINE | ROUTINE | - | Exclude myasthenia gravis (key differential) | Negative |
-| Anti-MuSK antibody | - | ROUTINE | ROUTINE | - | Exclude MuSK-MG (bulbar-predominant MG mimic) | Negative |
+| AChR antibody panel (binding, blocking, modulating) (CPT 86235, 86255) | - | ROUTINE | ROUTINE | - | Exclude myasthenia gravis (key differential) | Negative |
+| Anti-MuSK antibody (CPT 86255) | - | ROUTINE | ROUTINE | - | Exclude MuSK-MG (bulbar-predominant MG mimic) | Negative |
 | Creatine kinase (CK) (CPT 82550) | STAT | ROUTINE | ROUTINE | STAT | Elevated in some neuromuscular conditions; usually normal in botulism; rhabdomyolysis from prolonged immobility | Normal |
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Anti-ganglioside antibodies (GM1, GD1a, GQ1b) | - | EXT | EXT | - | Exclude GBS variants if diagnostic uncertainty persists | Negative |
+| Anti-ganglioside antibodies (GM1, GD1a, GQ1b) (CPT 86255) | - | EXT | EXT | - | Exclude GBS variants if diagnostic uncertainty persists | Negative |
 | Edrophonium (Tensilon) test | - | EXT | EXT | - | Differentiates from MG (positive in MG, negative in botulism); rarely performed now | No improvement (negative) in botulism |
-| Heavy metals (lead, arsenic, thallium) | - | EXT | EXT | - | Toxic neuropathy differential; environmental exposure | Normal |
+| Heavy metals (lead, arsenic, thallium) (CPT 83655, 82175, 83015) | - | EXT | EXT | - | Toxic neuropathy differential; environmental exposure | Normal |
 | Tick paralysis assessment (physical exam) | STAT | STAT | - | STAT | Ascending paralysis mimic; search skin/scalp for embedded tick | No tick found |
-| Organophosphate/carbamate level (cholinesterase) | - | EXT | - | EXT | Cholinergic crisis differential (excess secretions + weakness); toxicology screen | Normal cholinesterase levels |
-| CSF analysis (LP) — if diagnostic uncertainty | - | EXT | EXT | - | CSF normal in botulism; elevated protein with normal cells suggests GBS; pleocytosis suggests infection | Normal in botulism (protein normal, WBC normal) |
-| Porphyrins (urine ALA, PBG) | - | EXT | EXT | - | Acute intermittent porphyria — motor neuropathy + autonomic dysfunction mimic | Normal |
+| Organophosphate/carbamate level (cholinesterase) (CPT 82480) | - | EXT | - | EXT | Cholinergic crisis differential (excess secretions + weakness); toxicology screen | Normal cholinesterase levels |
+| CSF analysis (LP) (CPT 62270) — if diagnostic uncertainty | - | EXT | EXT | - | CSF normal in botulism; elevated protein with normal cells suggests GBS; pleocytosis suggests infection | Normal in botulism (protein normal, WBC normal) |
+| Porphyrins (urine ALA, PBG) (CPT 82135, 84106) | - | EXT | EXT | - | Acute intermittent porphyria — motor neuropathy + autonomic dysfunction mimic | Normal |
 
 ---
 
@@ -105,7 +105,7 @@ SECTION A: ACTION ITEMS
 | MRI brain with and without contrast (CPT 70553) | - | ROUTINE | ROUTINE | ROUTINE | If brainstem pathology suspected | Normal in botulism; excludes brainstem stroke, demyelination, mass | Pacemaker, metallic implants |
 | MRI spine with and without contrast (CPT 72156) | - | ROUTINE | ROUTINE | - | If myelopathy in differential | Normal in botulism; excludes spinal cord compression | Same as MRI |
 | CT chest with contrast (CPT 71260) | - | EXT | - | EXT | If thymoma suspected (MG differential) or pulmonary complication | No thymoma; assess for aspiration pneumonia | Contrast allergy, renal impairment |
-| CT abdomen/pelvis (wound botulism with IVDU) | - | EXT | - | EXT | If deep abscess suspected as source of wound botulism | Abscess identification for surgical drainage | Contrast allergy, renal impairment |
+| CT abdomen/pelvis (wound botulism with IVDU) (CPT 74178) | - | EXT | - | EXT | If deep abscess suspected as source of wound botulism | Abscess identification for surgical drainage | Contrast allergy, renal impairment |
 | Repeat NCS/EMG | - | ROUTINE | ROUTINE | - | At 1-2 weeks if initial study non-diagnostic or to assess recovery | Evolution of findings; improving CMAPs indicate recovery | Same as initial |
 | Echocardiogram (CPT 93306) | - | EXT | - | ROUTINE | If hemodynamic instability or autonomic dysfunction | Cardiac function assessment | None significant |
 
@@ -130,7 +130,7 @@ SECTION A: ACTION ITEMS
 | Cell count (tubes 1 and 4) (CPT 89051) | URGENT | ROUTINE | - | Normal WBC distinguishes from GBS (albuminocytologic dissociation) and meningitis | WBC <5 cells/uL (NORMAL in botulism) |
 | Protein (CPT 84157) | URGENT | ROUTINE | - | Normal in botulism; elevated in GBS | NORMAL (<45 mg/dL) — elevated protein favors GBS |
 | Glucose with serum glucose (CPT 82945) | URGENT | ROUTINE | - | Normal in botulism; low in bacterial meningitis | Normal (>60% serum) |
-| Gram stain and culture | URGENT | ROUTINE | - | Exclude bacterial meningitis | No organisms |
+| Gram stain and culture (CPT 87205, 87070) | URGENT | ROUTINE | - | Exclude bacterial meningitis | No organisms |
 
 **Special Handling:** Standard processing. The KEY finding is a NORMAL CSF, which helps EXCLUDE GBS (where protein is typically elevated) and meningitis (where pleocytosis is present).
 

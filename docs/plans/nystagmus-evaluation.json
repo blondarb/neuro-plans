@@ -1,0 +1,1239 @@
+{
+  "id": "nystagmus-evaluation",
+  "title": "Nystagmus Evaluation",
+  "version": "1.1",
+  "icd10": [
+    "** H55.00 (Unspecified nystagmus)",
+    "H55.01 (Congenital nystagmus)",
+    "H55.02 (Latent nystagmus)",
+    "H55.09 (Other forms of nystagmus)",
+    "H55.89 (Other irregular eye movements)",
+    "H81.4 (Vertigo of central origin)",
+    "G45.0 (Vertebro-basilar artery syndrome)",
+    "R29.810 (Facial weakness)",
+    "G25.3 (Myoclonus)",
+    "G11.9 (Hereditary ataxia",
+    "unspecified)"
+  ],
+  "scope": "** Systematic evaluation and management of acquired nystagmus in adults. Covers classification (central vs. peripheral), bedside examination techniques (HINTS exam, gaze testing, positional maneuvers), differentiation of nystagmus subtypes (gaze-evoked, downbeat, upbeat, periodic alternating, see-saw, convergence-retraction, vestibular), VNG/ENG and advanced vestibular testing, neuroimaging indications, and targeted treatment of specific nystagmus types (4-aminopyridine for downbeat nystagmus, baclofen for periodic alternating nystagmus, gabapentin/memantine for acquired pendular nystagmus). Excludes congenital/infantile nystagmus (brief mention), physiologic endpoint nystagmus, and comprehensive vertigo/dizziness evaluation (see Vertigo/Dizziness Evaluation template).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection screening; anemia (exacerbates dizziness/oscillopsia); baseline before treatment",
+          "target": "Normal; infection markers; anemia correction"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolyte abnormalities (hyponatremia causes central nystagmus); hepatic/renal dysfunction affects drug metabolism; hypomagnesemia lowers threshold",
+          "target": "Normal; hyponatremia <130 — correct and reassess nystagmus; hepatic dysfunction — medication adjustment"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypoglycemia causes neurologic symptoms including nystagmus; Wernicke encephalopathy association",
+          "target": "70-180 mg/dL; hypoglycemia — correct; persistent low — evaluate further"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypomagnesemia causes nystagmus and cerebellar dysfunction; depleted by alcohol, diuretics, PPI use",
+          "target": ">2.0 mg/dL; low — replete IV/PO"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction affects vestibular and oculomotor function; hyperthyroidism causes tremor/jerky saccades",
+          "target": "Normal; abnormal — thyroid evaluation"
+        },
+        {
+          "item": "Thiamine (B1) level (CPT 84425)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Wernicke encephalopathy (nystagmus + ataxia + confusion); ALWAYS suspect in alcoholism, malnutrition, bariatric surgery, hyperemesis",
+          "target": "Normal; **DO NOT WAIT for level before treating** — empiric thiamine if suspected"
+        },
+        {
+          "item": "Anticonvulsant drug levels (if applicable) (CPT 80201-80299)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Phenytoin, carbamazepine, and lacosamide toxicity cause gaze-evoked nystagmus; lithium toxicity causes downbeat nystagmus",
+          "target": "Therapeutic range; supratherapeutic — dose reduction; toxic — hold medication"
+        },
+        {
+          "item": "Ethanol level (CPT 80307)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Acute alcohol intoxication causes gaze-evoked and positional nystagmus; chronic alcoholism — Wernicke/cerebellar degeneration",
+          "target": "Negative; positive — quantify; treat Wernicke empirically"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency causes subacute combined degeneration with ataxia and nystagmus",
+          "target": ">300 pg/mL; low — supplement and monitor"
+        },
+        {
+          "item": "Folate (CPT 82746)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Folate deficiency contributes to cerebellar dysfunction, especially in alcoholism",
+          "target": ">4 ng/mL; low — supplement"
+        },
+        {
+          "item": "Vitamin E level (CPT 82446)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Vitamin E deficiency causes spinocerebellar syndrome with nystagmus; malabsorption syndromes",
+          "target": "Normal; low — supplement and evaluate malabsorption"
+        },
+        {
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory/autoimmune processes (MS, neurosarcoidosis, vasculitis) causing central nystagmus",
+          "target": "Normal; elevated — autoimmune/inflammatory workup"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune conditions causing CNS inflammation (SLE cerebritis, neurosarcoidosis)",
+          "target": "Negative; positive — further autoimmune serologies"
+        },
+        {
+          "item": "ACE level (CPT 82164)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosarcoidosis causes brainstem/cerebellar lesions with nystagmus",
+          "target": "Normal; elevated — chest imaging, evaluate for neurosarcoidosis"
+        },
+        {
+          "item": "RPR/VDRL (CPT 86592)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis causes Argyll Robertson pupils and nystagmus; tabes dorsalis",
+          "target": "Negative; positive — FTA-ABS confirmation, CSF analysis"
+        },
+        {
+          "item": "Anti-GAD65 antibodies (CPT 86235)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "GAD65 autoimmunity causes cerebellar ataxia with downbeat nystagmus; progressive cerebellar syndrome",
+          "target": "Negative; positive — autoimmune cerebellar disease; initiate immunotherapy"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (anti-Yo, anti-Hu, anti-Tr/DNER, anti-CV2, anti-mGluR1)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Paraneoplastic cerebellar degeneration presents with nystagmus (often downbeat) + progressive ataxia",
+          "target": "Negative; positive — urgent malignancy search (CT chest/abdomen/pelvis, PET)"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Anti-CASPR2 / Anti-LGI1 antibodies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune encephalitis with oculomotor abnormalities; limbic encephalitis with nystagmus",
+          "target": "Negative; positive — autoimmune encephalitis workup, immunotherapy"
+        },
+        {
+          "item": "Anti-IgLON5 antibodies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Anti-IgLON5 disease causes oculomotor dysfunction including nystagmus, sleep disorder, gait ataxia",
+          "target": "Negative; positive — sleep study, tau pathology evaluation"
+        },
+        {
+          "item": "Genetic testing (SCA panel, episodic ataxia genes)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Spinocerebellar ataxias (SCA1, 2, 3, 6, 7); episodic ataxia type 2 (CACNA1A); Friedreich ataxia",
+          "target": "Specific mutations; SCA6 and EA2 both involve CACNA1A; SCA — progressive; EA2 — episodic with interictal nystagmus"
+        },
+        {
+          "item": "CSF analysis (see Lumbar Puncture section)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "MS (oligoclonal bands), neurosarcoidosis, leptomeningeal disease, CNS infection, autoimmune encephalitis",
+          "target": "Normal in degenerative; OCBs — MS; pleocytosis — infection/inflammation; cytology — malignancy"
+        },
+        {
+          "item": "Serum copper / ceruloplasmin (CPT 82525 / 82390)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Wilson disease causes wing-beating tremor and oculomotor dysfunction including nystagmus in young adults",
+          "target": "Normal ceruloplasmin >20 mg/dL; low — 24h urine copper, slit lamp for KF rings"
+        },
+        {
+          "item": "Tissue transglutaminase (tTG-IgA) (CPT 86364)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Celiac disease causes cerebellar ataxia with nystagmus (\"gluten ataxia\") even without GI symptoms",
+          "target": "Negative; positive — gluten-free diet, anti-gliadin antibodies"
+        },
+        {
+          "item": "Prion protein gene (PRNM) analysis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Gerstmann-Straussler-Scheinker syndrome; genetic CJD presents with cerebellar ataxia and nystagmus",
+          "target": "No pathogenic mutation; mutation — genetic counseling"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "LP — Selective indication",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Indicated if MS, neurosarcoidosis, autoimmune encephalitis, CNS infection, or leptomeningeal disease suspected; NOT routine for isolated nystagmus; perform after MRI",
+          "target": "Opening pressure normal (10-20 cm H2O); **MS:** oligoclonal bands, elevated IgG index; **Neurosarcoid:** pleocytosis, elevated protein, low glucose; **Infection:** per organism; **Autoimmune:** specific antibodies",
+          "contraindications": "Posterior fossa mass on imaging; elevated ICP without imaging; coagulopathy"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "**Bedside nystagmus characterization**",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "**CRITICAL first step**; systematic assessment: gaze in 9 cardinal positions, fixation removal (Frenzel goggles), head-shaking nystagmus, positional testing, HINTS exam if acute vestibular syndrome",
+          "target": "Nystagmus pattern classification (see Section 5 — Differential Diagnosis); direction, waveform, effect of fixation, positional component",
+          "contraindications": "None; requires trained examiner"
+        },
+        {
+          "item": "**HINTS exam (Head Impulse, Nystagmus, Test of Skew)**",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "**ONLY for acute vestibular syndrome** (continuous vertigo + nystagmus >24h); more sensitive than early MRI for posterior fossa stroke; trained examiner required",
+          "target": "**Peripheral:** Positive HIT + unidirectional nystagmus + no skew; **Central:** Normal HIT + direction-changing/vertical nystagmus + skew deviation — STAT MRI",
+          "contraindications": "Not valid for episodic or positional nystagmus; requires acute continuous nystagmus; examiner training required"
+        },
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "**Gold standard for central nystagmus evaluation**; includes DWI for stroke, FLAIR for demyelination, thin cuts through posterior fossa; MRI protocol includes craniocervical junction (downbeat nystagmus — Chiari malformation)",
+          "target": "Stroke (DWI restriction); MS plaques (brainstem/cerebellum); Chiari malformation (cerebellar tonsillar herniation >5 mm); tumor (vestibular schwannoma, brainstem glioma, cerebellar metastasis); cerebellar degeneration (atrophy)",
+          "contraindications": "MRI-incompatible implants; severe claustrophobia; renal impairment (for gadolinium)"
+        },
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "**NOT sensitive for posterior fossa pathology** (beam-hardening artifact); use only if MRI unavailable or for acute hemorrhage screening; does NOT rule out posterior circulation stroke or demyelination",
+          "target": "Hemorrhage; large mass; hydrocephalus; **NEGATIVE CT does NOT exclude posterior fossa pathology**",
+          "contraindications": "None for non-contrast"
+        },
+        {
+          "item": "MRA head and neck (CPT 70544, 70547) or CTA head/neck (CPT 70496, 70498)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "If central nystagmus with stroke concern; vertebral artery dissection; basilar artery stenosis/occlusion; vertebrobasilar insufficiency",
+          "target": "Vertebral/basilar artery dissection; stenosis; occlusion; dolichoectasia compressing brainstem",
+          "contraindications": "MRA: MRI contraindications; CTA: contrast allergy, renal impairment"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Videonystagmography (VNG) (CPT 92540-92547)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Comprehensive oculomotor and vestibular testing; spontaneous nystagmus, gaze testing, positional testing, Dix-Hallpike, caloric testing; quantifies nystagmus; documents central vs. peripheral patterns",
+          "target": "Gaze-evoked nystagmus (central); unilateral caloric weakness (peripheral); direction-changing positional nystagmus (central); fixation suppression failure (central)",
+          "contraindications": "Perforated TM (water calorics — use air); bilateral vestibular loss limits caloric utility"
+        },
+        {
+          "item": "Video head impulse test (vHIT) (CPT 92517)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Quantitative VOR assessment for all 6 semicircular canals; more sensitive than bedside HIT; differentiates peripheral from central vestibular lesions",
+          "target": "Reduced VOR gain (<0.8) with corrective saccades — peripheral lesion; normal gain with central nystagmus — central lesion; canal-specific identification",
+          "contraindications": "Specialized equipment required"
+        },
+        {
+          "item": "Audiometry (CPT 92557)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Hearing assessment when vestibular nystagmus present; identifies Meniere's disease, vestibular schwannoma, labyrinthitis; sudden sensorineural hearing loss is emergency",
+          "target": "Normal (isolated nystagmus); low-frequency SNHL — Meniere's; asymmetric SNHL — vestibular schwannoma; mixed hearing loss — SSCD",
+          "contraindications": "Patient cooperation"
+        },
+        {
+          "item": "MRI internal auditory canals (IAC protocol) (CPT 70553)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "High-resolution T2 (CISS/FIESTA) for vestibular schwannoma; vascular loop compression of CN VIII; when asymmetric hearing loss or unilateral vestibular nystagmus",
+          "target": "Vestibular schwannoma; vascular loop; arachnoid cyst",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "Dix-Hallpike maneuver (CPT 95992)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "When positional nystagmus suspected (BPPV); upbeat-torsional nystagmus with latency and limited duration = posterior canal BPPV",
+          "target": "**Positive:** Upbeating-torsional nystagmus, 2-20 sec latency, <60 sec duration, fatigable — posterior canal BPPV; **Atypical:** No latency, persistent, non-fatigable — central positional nystagmus",
+          "contraindications": "Cervical spine instability; severe carotid stenosis (modify technique)"
+        },
+        {
+          "item": "Visual evoked potential (VEP) (CPT 95930)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If MS suspected; optic nerve demyelination; confirms optic nerve involvement in clinically isolated syndrome",
+          "target": "Prolonged P100 latency — optic nerve demyelination (even subclinical); supports MS diagnosis",
+          "contraindications": "Patient cooperation; severe visual impairment"
+        },
+        {
+          "item": "EEG (CPT 95816/95819)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "timing": "If seizure-related nystagmus (oculogyric episodes) or epileptic nystagmus suspected; also if episodic nystagmus with altered awareness",
+          "target": "Normal; epileptiform discharges; seizure-related eye deviation",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Vestibular evoked myogenic potentials (VEMP) (CPT 92517)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Saccular (cVEMP) and utricular (oVEMP) function; superior semicircular canal dehiscence; Meniere's disease; vestibular schwannoma",
+          "target": "Abnormal in SSCD (enhanced cVEMP/oVEMP); reduced/absent in vestibular schwannoma; asymmetric in Meniere's",
+          "contraindications": "Conductive hearing loss affects testing"
+        },
+        {
+          "item": "Rotary chair testing (CPT 92546)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Quantitative VOR across frequencies; bilateral vestibular hypofunction; pharmaceutical ototoxicity monitoring",
+          "target": "Bilateral vestibular loss (reduced gain across frequencies); phase/gain abnormalities; asymmetric VOR",
+          "contraindications": "Specialized facility required"
+        },
+        {
+          "item": "High-resolution CT temporal bones (CPT 70480)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Superior semicircular canal dehiscence syndrome; cholesteatoma; temporal bone fracture; when sound/pressure-induced nystagmus",
+          "target": "Dehiscence of superior canal; bony erosion; fracture line",
+          "contraindications": "Radiation exposure"
+        },
+        {
+          "item": "Optical coherence tomography (OCT)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Retinal nerve fiber layer thinning in chronic MS, neurodegenerative conditions; baseline for monitoring",
+          "target": "RNFL thinning — chronic optic neuropathy; normal in acute",
+          "contraindications": "Patient cooperation; media opacity"
+        },
+        {
+          "item": "Saccadometry / Eye movement recording",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Quantitative analysis of saccades, smooth pursuit, optokinetic nystagmus; distinguish types of cerebellar oculomotor dysfunction",
+          "target": "Saccadic dysmetria; impaired pursuit; gaze-holding failure; specific patterns for cerebellar vs. brainstem lesions",
+          "contraindications": "Specialized equipment"
+        },
+        {
+          "item": "MRI cervical spine (CPT 72141/72156)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If downbeat nystagmus — evaluate craniocervical junction; Chiari malformation, craniocervical instability, foramen magnum lesion",
+          "target": "Chiari I malformation (tonsillar herniation >5 mm); foramen magnum tumor; basilar invagination; syrinx",
+          "contraindications": "MRI contraindications"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent Treatment": [
+        {
+          "item": "**Thiamine (empiric if Wernicke suspected)**",
+          "route": "IV",
+          "indication": "Wernicke encephalopathy (nystagmus + ataxia + confusion triad; may be incomplete)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "**Thiamine (empiric if Wernicke suspected)** 500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**Thiamine 500 mg IV TID x 3-5 days, then 250 mg IV daily x 3-5 days, then 100 mg PO daily indefinitely**; give BEFORE glucose; [Galvin et al. (2010)](https://pubmed.ncbi.nlm.nih.gov/20459462/)",
+            "orderSentence": "**Thiamine (empiric if Wernicke suspected)** 500 mg IV"
+          },
+          "contraindications": "None at therapeutic doses",
+          "monitoring": "Monitor clinical improvement in nystagmus, ataxia, confusion; improvement within hours to days supports diagnosis; anaphylaxis rare with IV thiamine",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Correct electrolyte abnormalities**",
+          "route": "IV",
+          "indication": "Hyponatremia, hypomagnesemia, hypocalcemia causing nystagmus",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per specific electrolyte",
+                "orderSentence": "**Correct electrolyte abnormalities** Per specific electrolyte IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**Hyponatremia:** Correct slowly (max 8-10 mEq/L per 24h to avoid osmotic demyelination); **Hypomagnesemia:** MgSO4 2-4 g IV over 30-60 min then maintenance; **Hypocalcemia:** Calcium gluconate 1-2 g IV",
+            "orderSentence": "**Correct electrolyte abnormalities** Per specific electrolyte IV"
+          },
+          "contraindications": "Overcorrection of sodium — osmotic demyelination syndrome",
+          "monitoring": "Electrolytes q4-6h during correction; neurologic reassessment after correction",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Discontinue/reduce offending medication**",
+          "route": "-",
+          "indication": "Drug-induced nystagmus (anticonvulsants, lithium, sedatives, aminoglycosides)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Hold or reduce dose",
+                "orderSentence": "**Discontinue/reduce offending medication** Hold or reduce dose -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Phenytoin toxicity:** Hold doses until level <20 mcg/mL; **Carbamazepine toxicity:** Hold until level <12 mcg/mL; **Lithium toxicity:** Hold; hydration; hemodialysis if severe; **Aminoglycosides:** Discontinue if vestibulotoxicity confirmed",
+            "orderSentence": "**Discontinue/reduce offending medication** Hold or reduce dose -"
+          },
+          "contraindications": "Clinical necessity of medication; consult prescribing specialist",
+          "monitoring": "Drug levels; nystagmus reassessment after dose adjustment; permanent vestibulotoxicity possible with aminoglycosides",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Rule out posterior circulation stroke**",
+          "route": "-",
+          "indication": "Acute-onset nystagmus with ANY central features (direction-changing, vertical, gaze-evoked without drug cause, skew deviation, normal HIT)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "HINTS exam",
+                "orderSentence": "**Rule out posterior circulation stroke** HINTS exam -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**If ANY central pattern on HINTS:** STAT MRI with DWI + MRA head/neck; neurology/stroke consultation; activate stroke protocol if within window; [Kattah et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/19762709/)",
+            "orderSentence": "**Rule out posterior circulation stroke** HINTS exam -"
+          },
+          "contraindications": "Do not delay for MRI if basilar artery occlusion suspected",
+          "monitoring": "HINTS more sensitive than early CT or MRI for posterior fossa stroke; negative CT does NOT exclude stroke",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Meclizine**",
+          "route": "PO",
+          "indication": "Acute peripheral vestibular nystagmus with oscillopsia, nausea, or vertigo; **SHORT-TERM ONLY (24-72h)**; avoid in central nystagmus until etiology established",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "**Meclizine** 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**Meclizine 25 mg PO q6-8h PRN**; limit to 48-72h maximum; taper as tolerated",
+            "orderSentence": "**Meclizine** 25 mg PO"
+          },
+          "contraindications": "Avoid in central nystagmus until etiology established; prolonged use delays vestibular compensation; anticholinergic effects in elderly; urinary retention; glaucoma",
+          "monitoring": "Limit to 72h; sedation; early vestibular rehabilitation once acute phase resolved",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Dimenhydrinate**",
+          "route": "PO/IV",
+          "indication": "Acute peripheral vestibular nystagmus with nausea and vertigo; **SHORT-TERM ONLY (24-72h)**; avoid in central nystagmus until etiology established",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "**Dimenhydrinate** 50 mg PO/IV"
+              }
+            ],
+            "route": "PO/IV",
+            "instructions": "**Dimenhydrinate 50 mg PO or IV q6h PRN**; limit to 48-72h maximum",
+            "orderSentence": "**Dimenhydrinate** 50 mg PO/IV"
+          },
+          "contraindications": "Avoid in central nystagmus until etiology established; prolonged use delays vestibular compensation; anticholinergic effects in elderly; sedation",
+          "monitoring": "Limit to 72h; sedation; anticholinergic side effects",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Diazepam**",
+          "route": "PO/IV",
+          "indication": "Acute vestibular nystagmus with severe vertigo; potent vestibular suppressant; **SHORT-TERM ONLY (24-72h)**",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "**Diazepam** 2 mg PO/IV"
+              }
+            ],
+            "route": "PO/IV",
+            "instructions": "**Diazepam 2-5 mg PO or IV q8h PRN**; limit to 48-72h maximum; taper rapidly",
+            "orderSentence": "**Diazepam** 2 mg PO/IV"
+          },
+          "contraindications": "Respiratory depression; CNS depression; avoid in elderly; avoid in hepatic impairment; dependency risk",
+          "monitoring": "Respiratory status; sedation level; fall risk; limit to 72h; avoid in suspected central cause until stroke excluded",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Ondansetron**",
+          "route": "IV/PO",
+          "indication": "Nausea and vomiting associated with acute vestibular nystagmus; antiemetic without vestibular suppressant effect",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "**Ondansetron** 4 mg IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "**Ondansetron 4-8 mg IV or PO q8h PRN for nausea**",
+            "orderSentence": "**Ondansetron** 4 mg IV/PO"
+          },
+          "contraindications": "QT prolongation; serotonin syndrome risk with serotonergic agents; hepatic impairment (max 8 mg/day)",
+          "monitoring": "QTc monitoring if prolonged use; constipation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Type-Specific Nystagmus Treatment": [
+        {
+          "item": "**4-Aminopyridine (4-AP, dalfampridine)**",
+          "route": "PO",
+          "indication": "First-line for symptomatic downbeat nystagmus; potassium channel blocker that improves Purkinje cell function",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "**4-Aminopyridine (4-AP, dalfampridine)** 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**4-Aminopyridine 5 mg PO BID (compounded)** or **Dalfampridine (Ampyra) 10 mg PO BID** (extended-release); [Strupp et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12847523/); [Claassen et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23460616/)",
+            "orderSentence": "**4-Aminopyridine (4-AP, dalfampridine)** 5 mg PO"
+          },
+          "contraindications": "**Seizure disorder** (lowers seizure threshold); renal impairment (CrCl <50 — dose adjustment); hepatic impairment; cardiac arrhythmia (prolongs QT at supratherapeutic doses)",
+          "monitoring": "Seizure risk; ECG at baseline; renal function; therapeutic response assessment at 2-4 weeks; visual acuity improvement",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**3,4-Diaminopyridine (3,4-DAP, amifampridine)**",
+          "route": "PO",
+          "indication": "Alternative to 4-AP for downbeat nystagmus; lower seizure risk than 4-AP",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "**3,4-Diaminopyridine (3,4-DAP, amifampridine)** 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**3,4-Diaminopyridine 10 mg PO TID, titrate to max 20 mg TID (80 mg/day)**; [Kalla et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/17928582/)",
+            "orderSentence": "**3,4-Diaminopyridine (3,4-DAP, amifampridine)** 10 mg PO"
+          },
+          "contraindications": "Seizure disorder (lower risk than 4-AP but still present); QT prolongation",
+          "monitoring": "Seizure monitoring; ECG; clinical response",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Clonazepam**",
+          "route": "PO",
+          "indication": "Second-line for downbeat nystagmus; GABAergic effect on vestibular nuclei",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "**Clonazepam** 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**Clonazepam 0.5 mg PO BID, titrate to max 1 mg TID**; improves oscillopsia; [Dieterich et al. (1991)](https://pubmed.ncbi.nlm.nih.gov/2052574/)",
+            "orderSentence": "**Clonazepam** 0.5 mg PO"
+          },
+          "contraindications": "Sedation; respiratory depression; falls in elderly; dependency with long-term use; cognitive impairment",
+          "monitoring": "Sedation; fall risk; respiratory status; avoid abrupt discontinuation; limit duration",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Baclofen**",
+          "route": "PO",
+          "indication": "Third-line for downbeat nystagmus; GABAergic mechanism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "**Baclofen** 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**Baclofen 5 mg PO TID, titrate to 10-20 mg TID**; less evidence than 4-AP",
+            "orderSentence": "**Baclofen** 5 mg PO"
+          },
+          "contraindications": "Renal impairment; sedation; withdrawal seizures if abruptly stopped",
+          "monitoring": "Sedation; muscle weakness; renal function; slow taper if discontinuing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Address underlying cause**",
+          "route": "-",
+          "indication": "Chiari malformation; craniocervical junction pathology; MS; cerebellar degeneration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per etiology",
+                "orderSentence": "**Address underlying cause** Per etiology -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Chiari malformation:** Neurosurgical referral for posterior fossa decompression if symptomatic; **MS:** Disease-modifying therapy; **Paraneoplastic:** Immunotherapy + malignancy treatment; **Nutritional:** Vitamin supplementation",
+            "orderSentence": "**Address underlying cause** Per etiology -"
+          },
+          "contraindications": "Per specific intervention",
+          "monitoring": "Nystagmus may improve or persist depending on degree of irreversible cerebellar damage",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Medications to AVOID or Use with Caution": [
+        {
+          "item": "**Vestibular suppressants (prolonged use >72h)**",
+          "route": "PO",
+          "indication": "Delays central compensation; masks underlying pathology; sedation; fall risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Avoid use beyond 72h",
+                "orderSentence": "**Vestibular suppressants (prolonged use >72h)** Avoid use beyond 72h -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Limit to 48-72h for acute peripheral vestibular nystagmus; NOT indicated for central nystagmus types",
+            "orderSentence": "**Vestibular suppressants (prolonged use >72h)** Avoid use beyond 72h -"
+          },
+          "contraindications": "-",
+          "monitoring": "Monitor duration of use; initiate vestibular rehabilitation early",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "**Aminoglycosides** (gentamicin, tobramycin, streptomycin)",
+          "route": "IV/IM",
+          "indication": "Vestibulotoxic — causes permanent bilateral vestibular hypofunction with oscillopsia; irreversible",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Avoid if possible",
+                "orderSentence": "**Aminoglycosides** (gentamicin, tobramycin, streptomycin) Avoid if possible IV/IM"
+              }
+            ],
+            "route": "IV/IM",
+            "instructions": "If aminoglycoside absolutely necessary, monitor peak/trough levels strictly; discontinue if vestibular symptoms develop",
+            "orderSentence": "**Aminoglycosides** (gentamicin, tobramycin, streptomycin) Avoid if possible IV/IM"
+          },
+          "contraindications": "Pre-existing vestibular dysfunction; concurrent ototoxic agents",
+          "monitoring": "Peak/trough levels; vestibular symptom assessment; audiometry if prolonged course",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Phenytoin (high-dose / supratherapeutic)**",
+          "route": "PO/IV",
+          "indication": "Nystagmus is dose-dependent toxicity sign; gaze-evoked nystagmus appears before ataxia; monitor levels",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Monitor levels",
+                "orderSentence": "**Phenytoin (high-dose / supratherapeutic)** Monitor levels PO/IV"
+              }
+            ],
+            "route": "PO/IV",
+            "instructions": "Free phenytoin level; nystagmus = early toxicity warning; reduce dose immediately if nystagmus develops",
+            "orderSentence": "**Phenytoin (high-dose / supratherapeutic)** Monitor levels PO/IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Free phenytoin level; nystagmus is early warning sign of toxicity",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Lithium (supratherapeutic)**",
+          "route": "PO",
+          "indication": "Downbeat nystagmus and cerebellar toxicity; may be irreversible (\"SILENT syndrome\" — syndrome of irreversible lithium-effectuated neurotoxicity)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Monitor levels",
+                "orderSentence": "**Lithium (supratherapeutic)** Monitor levels PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Lithium level STAT if nystagmus develops in lithium-treated patient; irreversible cerebellar damage possible",
+            "orderSentence": "**Lithium (supratherapeutic)** Monitor levels PO"
+          },
+          "contraindications": "-",
+          "monitoring": "Lithium level; nystagmus in lithium-treated patient — STAT level; monitor for SILENT syndrome",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Carbamazepine (supratherapeutic)**",
+          "route": "PO",
+          "indication": "Gaze-evoked nystagmus and ataxia at toxic levels; dose-dependent",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Monitor levels",
+                "orderSentence": "**Carbamazepine (supratherapeutic)** Monitor levels PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Drug level; reduce dose; autoinduction may alter levels unpredictably",
+            "orderSentence": "**Carbamazepine (supratherapeutic)** Monitor levels PO"
+          },
+          "contraindications": "-",
+          "monitoring": "Carbamazepine level; monitor for autoinduction; reduce dose if nystagmus develops",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Systematic nystagmus characterization: document direction, waveform (jerk vs. pendular), effect of gaze position, effect of fixation removal (Frenzel goggles), effect of convergence, effect of head position; this determines central vs. peripheral and guides workup",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Frenzel goggles / fixation removal: **Critical for evaluation**; peripheral vestibular nystagmus INCREASES with fixation removal; central nystagmus is NOT suppressed by fixation; if no Frenzel goggles — have patient close eyes and observe for deviation, or use ophthalmoscope on one eye",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurology consultation: all central nystagmus patterns; downbeat, upbeat, see-saw, convergence-retraction, direction-changing nystagmus; gaze-evoked nystagmus without drug cause; atypical positional nystagmus",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neuro-ophthalmology referral: persistent or unexplained nystagmus; oscillopsia affecting daily function; see-saw nystagmus; convergence-retraction nystagmus; complex oculomotor patterns; need for quantitative eye movement recording",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stroke consultation: if HINTS exam suggests central pattern in acute vestibular syndrome; any acute-onset central nystagmus pattern with vascular risk factors",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ENT / Neurotology referral: peripheral vestibular nystagmus with hearing loss; recurrent BPPV; suspected Meniere's; intratympanic therapy evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vestibular rehabilitation referral: all patients with persistent oscillopsia or vestibular nystagmus; gaze stabilization exercises; balance training; habituation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall precautions: nystagmus with oscillopsia causes gait instability; assist with ambulation; home safety assessment; walker if needed",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ophthalmology referral: visual acuity assessment; retinal evaluation; optic disc examination; OCT if optic neuropathy suspected",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Nystagmus explanation: your eyes are making involuntary movements that can cause blurred vision and a sensation that things are moving (oscillopsia); this is being evaluated to find and treat the cause",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Medication adherence: take all prescribed medications exactly as directed; do NOT stop baclofen or clonazepam abruptly — this can cause seizures or dangerous withdrawal; report side effects before stopping",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Oscillopsia coping strategies: use steady head positioning when reading; increase lighting and contrast; reduce screen time during acute symptoms; sit with back supported to reduce head movement; use large-print materials",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Driving restrictions: do NOT drive if experiencing oscillopsia or visual instability; notify your neurologist before resuming driving; formal visual acuity testing may be required for driving clearance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED immediately if: sudden new weakness, numbness, or difficulty speaking (stroke symptoms); sudden severe headache; sudden vision loss; worsening nystagmus with new neurologic symptoms; severe vomiting preventing medication intake; falls with head injury",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Activity modification: avoid heights, ladders, and heavy machinery until nystagmus stabilized; use caution on stairs (use handrails); avoid rapid head movements that worsen symptoms; ask for assistance with ambulation if unsteady",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Vestibular rehabilitation exercises: perform prescribed gaze stabilization exercises daily as instructed by physical therapy; exercises may initially worsen symptoms but improve compensation over time; report persistent worsening to provider",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol avoidance: alcohol worsens nystagmus and impairs vestibular compensation; avoid alcohol completely during active treatment and evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Home safety assessment: remove trip hazards (loose rugs, cords); install grab bars in bathroom; ensure adequate lighting throughout home; non-slip mats in shower/bathtub",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Visual environment optimization: use high-contrast materials for reading; avoid busy visual patterns (striped wallpaper, scrolling screens); use task lighting; matte finishes reduce glare-induced oscillopsia worsening",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Medication review: review all current medications with provider for vestibulotoxic or nystagmus-causing agents; avoid over-the-counter sedating antihistamines; report any new medications to neurologist",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Fall prevention program: balance exercises as prescribed by vestibular PT; wear supportive footwear; use assistive device (cane/walker) if recommended; avoid walking in dark or on uneven surfaces",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol and substance avoidance: alcohol worsens nystagmus and impairs cerebellar function; avoid recreational substances that affect vestibular function; chronic alcohol use causes permanent cerebellar degeneration",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Low vision support resources: contact local low vision rehabilitation services if oscillopsia affects reading, work, or daily activities; assistive technology (text-to-speech, magnification devices); occupational therapy referral",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Type",
+      "features": "Waveform",
+      "tests": "Description"
+    },
+    {
+      "diagnosis": "**Jerk nystagmus**",
+      "features": "Slow drift + fast corrective saccade",
+      "tests": "Defined by direction of fast phase; most common acquired type"
+    },
+    {
+      "diagnosis": "**Pendular nystagmus**",
+      "features": "Sinusoidal oscillation (equal velocity both directions)",
+      "tests": "No fast phase; often multidirectional or circular/elliptical"
+    },
+    {
+      "diagnosis": "**Mixed**",
+      "features": "Jerk in some positions, pendular in others",
+      "tests": "Character changes with gaze direction"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Guideline",
+      "evidenceLevel": "Source",
+      "source": "Year"
+    },
+    {
+      "recommendation": "Eye Movement Abnormalities in Clinical Diagnosis",
+      "evidenceLevel": "[Leigh & Zee, The Neurology of Eye Movements, 5th ed.](https://pubmed.ncbi.nlm.nih.gov/26160853/)",
+      "source": "2015"
+    },
+    {
+      "recommendation": "HINTS Exam",
+      "evidenceLevel": "[Kattah et al.](https://pubmed.ncbi.nlm.nih.gov/19762709/)",
+      "source": "2009"
+    },
+    {
+      "recommendation": "BPPV Practice Guideline",
+      "evidenceLevel": "[AAO-HNS (Bhattacharyya et al.)](https://pubmed.ncbi.nlm.nih.gov/28248609/)",
+      "source": "2017"
+    },
+    {
+      "recommendation": "Cerebellar Nystagmus Treatment",
+      "evidenceLevel": "[Strupp et al.](https://pubmed.ncbi.nlm.nih.gov/12847523/)",
+      "source": "2003"
+    },
+    {
+      "recommendation": "Periodic Alternating Nystagmus",
+      "evidenceLevel": "[Halmagyi et al.](https://pubmed.ncbi.nlm.nih.gov/7191854/)",
+      "source": "1980"
+    },
+    {
+      "recommendation": "Study",
+      "evidenceLevel": "Finding",
+      "source": "Impact"
+    },
+    {
+      "recommendation": "[Strupp et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12847523/)",
+      "evidenceLevel": "4-Aminopyridine (4-AP) reduced slow-phase velocity of downbeat nystagmus by ~50% and improved visual acuity in randomized crossover trial",
+      "source": "Established 4-AP as first-line treatment for downbeat nystagmus"
+    },
+    {
+      "recommendation": "[Claassen et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23460616/)",
+      "evidenceLevel": "4-AP 5 mg TID significantly reduced downbeat nystagmus intensity and oscillopsia vs. placebo in double-blind RCT",
+      "source": "Confirmed 4-AP efficacy; defined dosing regimen"
+    },
+    {
+      "recommendation": "[Kattah et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/19762709/)",
+      "evidenceLevel": "HINTS exam (Head Impulse, Nystagmus pattern, Test of Skew) was 100% sensitive and 96% specific for stroke in acute vestibular syndrome",
+      "source": "HINTS is standard for all acute vestibular syndrome; nystagmus pattern is key component"
+    },
+    {
+      "recommendation": "[Halmagyi et al. (1980)](https://pubmed.ncbi.nlm.nih.gov/7191854/)",
+      "evidenceLevel": "Baclofen abolished periodic alternating nystagmus in patients with craniocervical junction disease",
+      "source": "Baclofen became standard treatment for PAN"
+    },
+    {
+      "recommendation": "[Kalla et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/17928582/)",
+      "evidenceLevel": "3,4-Diaminopyridine improved downbeat nystagmus with potentially better safety profile than 4-AP",
+      "source": "Alternative aminopyridine option for downbeat nystagmus"
+    },
+    {
+      "recommendation": "[Tarnutzer et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21576300/)",
+      "evidenceLevel": "Meta-analysis: Individual HINTS components — normal head impulse test most predictive of central cause in acute vestibular syndrome",
+      "source": "Direction-changing nystagmus and normal HIT = \"dangerous\" signs requiring stroke workup"
+    },
+    {
+      "recommendation": "[Choi et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30341546/)",
+      "evidenceLevel": "12-20% of posterior fossa strokes missed on early MRI (<48h) but detected on repeat imaging",
+      "source": "If high clinical suspicion (central nystagmus pattern) and initial MRI negative, repeat MRI at 48-72h"
+    },
+    {
+      "recommendation": "[Wagner et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/34115410/)",
+      "evidenceLevel": "Systematic review of aminopyridine treatment for cerebellar and oculomotor disorders; confirmed efficacy for downbeat nystagmus and episodic ataxia type 2",
+      "source": "Supports aminopyridine use across cerebellar oculomotor disorders"
+    },
+    {
+      "recommendation": "[Dieterich et al. (1991)](https://pubmed.ncbi.nlm.nih.gov/2052574/)",
+      "evidenceLevel": "Clonazepam effective for downbeat nystagmus and other forms of central vestibular nystagmus",
+      "source": "Clonazepam as second-line option for downbeat nystagmus"
+    },
+    {
+      "recommendation": "[Starck et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/9109746/)",
+      "evidenceLevel": "Gabapentin and memantine both effective for acquired pendular nystagmus in MS patients",
+      "source": "Established pharmacotherapy for acquired pendular nystagmus"
+    },
+    {
+      "recommendation": "Nystagmus Type",
+      "evidenceLevel": "First-Line Treatment",
+      "source": "Level of Evidence"
+    },
+    {
+      "recommendation": "Downbeat nystagmus",
+      "evidenceLevel": "4-Aminopyridine",
+      "source": "RCT (Level I)"
+    },
+    {
+      "recommendation": "Periodic alternating nystagmus",
+      "evidenceLevel": "Baclofen",
+      "source": "Case series (Level III)"
+    },
+    {
+      "recommendation": "Upbeat nystagmus",
+      "evidenceLevel": "4-Aminopyridine (trial)",
+      "source": "Case reports (Level IV)"
+    },
+    {
+      "recommendation": "Gaze-evoked (drug-induced)",
+      "evidenceLevel": "Remove offending agent",
+      "source": "Expert consensus (Level V)"
+    },
+    {
+      "recommendation": "Acquired pendular (MS)",
+      "evidenceLevel": "Gabapentin or memantine",
+      "source": "RCT (Level I)"
+    },
+    {
+      "recommendation": "See-saw nystagmus",
+      "evidenceLevel": "Treat underlying cause",
+      "source": "Case reports (Level IV)"
+    },
+    {
+      "recommendation": "Convergence-retraction",
+      "evidenceLevel": "Treat underlying cause",
+      "source": "Expert consensus (Level V)"
+    },
+    {
+      "recommendation": "Vestibular (peripheral)",
+      "evidenceLevel": "Treat underlying disorder",
+      "source": "Per disorder"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Nystagmus characterization (direction, type, fixation effect)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "On presentation; after interventions",
+      "target": "Complete classification; central vs. peripheral determination",
+      "action": "Central features — STAT MRI; neurology/stroke consultation"
+    },
+    {
+      "item": "Neurologic exam (cranial nerves, cerebellar, motor, sensory)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "On presentation; q2h if central concern",
+      "target": "No focal deficits beyond nystagmus",
+      "action": "New deficits — stroke workup; expanding lesion"
+    },
+    {
+      "item": "Vital signs",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q1-2h",
+      "target": "Stable",
+      "action": "Hypertension — stroke concern; hypotension — volume depletion"
+    },
+    {
+      "item": "Drug levels (if applicable)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "On presentation",
+      "target": "Therapeutic range",
+      "action": "Supratherapeutic — hold/reduce medication"
+    },
+    {
+      "item": "Electrolytes (Na, Mg, Ca)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "On presentation; q6h if correcting",
+      "target": "Normal",
+      "action": "Ongoing correction per protocol"
+    },
+    {
+      "item": "Visual acuity",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "On presentation",
+      "target": "Baseline documentation",
+      "action": "Reduced VA with nystagmus — urgent neuro-ophthalmology"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Level of Care",
+      "criteria": "Criteria"
+    },
+    {
+      "disposition": "ICU / Stroke unit",
+      "criteria": "Posterior circulation stroke with acute nystagmus; basilar artery occlusion; cerebellar stroke with mass effect/hydrocephalus; altered consciousness with nystagmus"
+    },
+    {
+      "disposition": "General floor",
+      "criteria": "Acute central nystagmus requiring workup (MRI, vascular imaging); Wernicke encephalopathy requiring IV thiamine; intractable nausea/vomiting/oscillopsia; new neurologic deficits with nystagmus; medication toxicity requiring monitoring"
+    },
+    {
+      "disposition": "Observation",
+      "criteria": "Acute-onset nystagmus pending MRI; nystagmus with equivocal HINTS findings; serial neurologic exams needed"
+    }
+  ]
+}

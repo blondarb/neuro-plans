@@ -1,7 +1,7 @@
 ---
 title: "Thunderclap Headache Evaluation"
 description: "Clinical decision support for emergency evaluation of thunderclap headache"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: approved
 tags:
@@ -14,7 +14,7 @@ tags:
 
 # Thunderclap Headache Evaluation
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** February 2, 2026
 **REVISED:** February 2, 2026
 **STATUS:** Approved
@@ -25,7 +25,7 @@ tags:
 
 **ICD-10:** R51.9 (Headache, unspecified), G44.1 (Vascular headache, not elsewhere classified), I60.9 (Nontraumatic subarachnoid hemorrhage, unspecified), I67.6 (Nonpyogenic thrombosis of intracranial venous system — cerebral venous thrombosis), I67.841 (Reversible cerebrovascular vasoconstriction syndrome), I67.0 (Dissection of cerebral arteries, non-ruptured), E23.6 (Other disorders of pituitary gland — pituitary apoplexy), I63.9 (Cerebral infarction, unspecified)
 
-**CPT CODES:** 70450 (CT head without contrast), 70460 (CT head with contrast), 70496 (CTA head), 70498 (CTA neck), 70547 (MRA head without contrast), 70549 (MRA head with/without contrast), 70553 (MRI brain with/without contrast), 70544 (MRA head without contrast), 70557 (MRI brain functional), 62270 (lumbar puncture), 89050 (CSF cell count), 89051 (CSF differential), 89060 (CSF crystal/xanthochromia), 85025 (CBC), 80053 (CMP), 85610 (PT/INR), 85730 (aPTT), 84484 (troponin), 93000 (ECG), 93886 (transcranial Doppler), 36224 (cerebral angiography/DSA)
+**CPT CODES:** 70450 (CT head without contrast), 70460 (CT head with contrast), 70496 (CTA head), 70498 (CTA neck), 70547 (MRA head without contrast), 70549 (MRA head with/without contrast), 70553 (MRI brain with/without contrast), 70544 (MRA head without contrast), 70557 (MRI brain functional), 62270 (lumbar puncture), 89050 (CSF cell count), 89051 (CSF differential), 89060 (CSF crystal/xanthochromia), 85025 (CBC), 80053 (CMP), 85610 (PT/INR), 85730 (aPTT), 84484 (troponin), 93000 (ECG), 93886 (transcranial Doppler), 36224 (cerebral angiography/DSA), 85306 (antithrombin III), 81240 (Factor V Leiden), 85303 (protein C), 85301 (protein S), 85613 (lupus anticoagulant), 86147 (anticardiolipin antibody), 86146 (anti-beta-2 glycoprotein), 83003 (growth hormone), 84305 (IGF-1), 83002 (LH), 83001 (FSH), 84439 (free T4), 82024 (ACTH), 82382 (urine catecholamines), 83835 (urine metanephrines), 72141 (MRI cervical spine), 72146 (MRI thoracic spine), 72148 (MRI lumbar spine), 75705 (spinal angiography)
 
 **SYNONYMS:** Thunderclap headache, thunderclap headache evaluation, sudden severe headache, worst headache of life, sentinel headache, explosive headache, acute severe headache, hyperacute headache, crash headache, sudden-onset severe headache, peracute headache, TCH, thunderclap cephalgia
 
@@ -86,10 +86,10 @@ SECTION A: ACTION ITEMS
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Thrombophilia panel (Factor V Leiden, prothrombin mutation, protein C/S, antithrombin III) | - | EXT | EXT | - | Young patient with CVT and no clear risk factor; hypercoagulable state | Normal |
-| Antiphospholipid antibodies (lupus anticoagulant, anticardiolipin, anti-beta-2 glycoprotein) | - | EXT | EXT | - | CVT or stroke in young patient; antiphospholipid syndrome | Negative |
-| Pituitary hormone panel (GH, IGF-1, LH, FSH, free T4, ACTH) | - | EXT | EXT | - | Suspected pituitary apoplexy; assess degree of hypopituitarism | Variable; document deficiencies |
-| Urine catecholamines/metanephrines | - | EXT | EXT | - | Pheochromocytoma as cause of hypertensive headache crisis | Normal |
+| Thrombophilia panel (Factor V Leiden, prothrombin mutation, protein C/S, antithrombin III) (CPT 85306, 81240, 85303, 85301) | - | EXT | EXT | - | Young patient with CVT and no clear risk factor; hypercoagulable state | Normal |
+| Antiphospholipid antibodies (lupus anticoagulant, anticardiolipin, anti-beta-2 glycoprotein) (CPT 85613, 86147, 86146) | - | EXT | EXT | - | CVT or stroke in young patient; antiphospholipid syndrome | Negative |
+| Pituitary hormone panel (GH, IGF-1, LH, FSH, free T4, ACTH) (CPT 83003, 84305, 83002, 83001, 84439, 82024) | - | EXT | EXT | - | Suspected pituitary apoplexy; assess degree of hypopituitarism | Variable; document deficiencies |
+| Urine catecholamines/metanephrines (CPT 82382, 83835) | - | EXT | EXT | - | Pheochromocytoma as cause of hypertensive headache crisis | Normal |
 | Connective tissue disorder workup | - | - | EXT | - | Young patient with dissection or aneurysm; Ehlers-Danlos, Marfan, fibromuscular dysplasia features | Clinical + genetic |
 
 ---
@@ -113,7 +113,7 @@ SECTION A: ACTION ITEMS
 | MRV head (MR venography) (CPT 70547) | URGENT | URGENT | URGENT | URGENT | If CVT suspected (headache + risk factors: OCP use, pregnancy/postpartum, thrombophilia, dehydration); or CT venogram unavailable | Absent flow signal in dural sinuses/cortical veins (thrombosis) | Standard MRI contraindications |
 | CT venography (CTV) (CPT 70496) | URGENT | URGENT | - | URGENT | Obtained with CTA using delayed-phase protocol; preferred in ED for speed if CVT suspected | Filling defect in dural sinus; "empty delta sign" (superior sagittal sinus thrombosis) | Contrast allergy; renal impairment (relative) |
 | Conventional cerebral angiography (DSA) (CPT 36224) | - | URGENT | - | URGENT | GOLD STANDARD for aneurysm detection if CTA negative but clinical suspicion remains high; also detects RCVS vasoconstriction (may require repeat at 2-3 weeks if initially normal); diagnoses vasculitis | Aneurysm missed by CTA; segmental vasoconstriction (RCVS); vasculitis (irregular vessel narrowing); dissection | Contrast allergy; renal impairment; coagulopathy (correct first); hemodynamic instability |
-| Repeat DSA (if initial negative) | - | ROUTINE | - | ROUTINE | 7-14 days if initial DSA negative and non-perimesencephalic SAH pattern; also repeat at 2-4 weeks for suspected RCVS (vasoconstriction may develop delayed) | Previously missed aneurysm; interval development of vasoconstriction | Same as initial DSA |
+| Repeat DSA (if initial negative) (CPT 36224) | - | ROUTINE | - | ROUTINE | 7-14 days if initial DSA negative and non-perimesencephalic SAH pattern; also repeat at 2-4 weeks for suspected RCVS (vasoconstriction may develop delayed) | Previously missed aneurysm; interval development of vasoconstriction | Same as initial DSA |
 | Transcranial Doppler (TCD) (CPT 93886) | - | URGENT | - | URGENT | If SAH confirmed — begin daily from post-bleed day 3 through day 14 (vasospasm window); also detects elevated flow velocities in RCVS | MCA mean velocity >120 cm/s concerning; >200 cm/s severe vasospasm; Lindegaard ratio >3 | Absent temporal bone window (~10%) |
 | MRI sella (dedicated pituitary protocol) (CPT 70553) | - | URGENT | URGENT | URGENT | If pituitary apoplexy suspected (headache + visual field cut + ophthalmoplegia + known pituitary adenoma) | Hemorrhagic or necrotic pituitary mass; sellar expansion; optic chiasm compression | Standard MRI contraindications |
 | Chest X-ray (CPT 71046) | URGENT | ROUTINE | - | URGENT | On admission if SAH or meningitis; neurogenic pulmonary edema in SAH | Neurogenic pulmonary edema; aspiration; widened mediastinum (aortic dissection with headache) | None |
@@ -123,10 +123,10 @@ SECTION A: ACTION ITEMS
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
-| 3D rotational angiography | - | EXT | - | EXT | During DSA for complex aneurysm anatomy | Detailed aneurysm morphology | Same as DSA |
+| 3D rotational angiography (CPT 36224) | - | EXT | - | EXT | During DSA for complex aneurysm anatomy | Detailed aneurysm morphology | Same as DSA |
 | CT perfusion (CTP) (CPT 0042T) | - | URGENT | - | URGENT | If vasospasm suspected in confirmed SAH (post-bleed days 4-14); also detects perfusion deficit in RCVS with stroke | Perfusion deficits; mismatch (reversible ischemia) | Contrast allergy; renal impairment |
-| Spinal MRI | - | EXT | EXT | - | If spinal SAH suspected (back/leg pain with meningismus; intracranial imaging negative) | Spinal subarachnoid blood; spinal vascular malformation | Standard MRI contraindications |
-| Conventional spinal angiography | - | EXT | - | EXT | If spinal SAH with suspected vascular malformation | Spinal AVM/AVF | Same as DSA |
+| Spinal MRI (CPT 72141, 72146, 72148) | - | EXT | EXT | - | If spinal SAH suspected (back/leg pain with meningismus; intracranial imaging negative) | Spinal subarachnoid blood; spinal vascular malformation | Standard MRI contraindications |
+| Conventional spinal angiography (CPT 75705) | - | EXT | - | EXT | If spinal SAH with suspected vascular malformation | Spinal AVM/AVF | Same as DSA |
 
 ### LUMBAR PUNCTURE
 
@@ -147,7 +147,7 @@ SECTION A: ACTION ITEMS
 | Protein (CPT 89060) | Elevated in SAH, meningitis, CVT | Normal 15-45 mg/dL; elevated in SAH and infection | URGENT | ROUTINE | ROUTINE | URGENT |
 | Glucose (CPT 89060) | Low CSF:serum glucose ratio (<0.4) suggests bacterial meningitis; normal in SAH | Normal >60% of serum glucose | URGENT | ROUTINE | ROUTINE | URGENT |
 | Gram stain and culture (CPT 87070, 87040) | Exclude bacterial meningitis (meningeal signs overlap with SAH) | No organisms | URGENT | ROUTINE | ROUTINE | URGENT |
-| CSF WBC with differential | Neutrophilic pleocytosis (bacterial meningitis); lymphocytic (viral/fungal); mild pleocytosis in SAH (reactive) | SAH: mild pleocytosis (reactive). Meningitis: significant pleocytosis | URGENT | ROUTINE | ROUTINE | URGENT |
+| CSF WBC with differential (CPT 89051) | Neutrophilic pleocytosis (bacterial meningitis); lymphocytic (viral/fungal); mild pleocytosis in SAH (reactive) | SAH: mild pleocytosis (reactive). Meningitis: significant pleocytosis | URGENT | ROUTINE | ROUTINE | URGENT |
 
 **Special Handling:** Xanthochromia sample must be protected from light (wrap tube in foil); centrifuge immediately; spectrophotometry if available (more sensitive than visual inspection). Label tube with exact time of LP and time of headache onset. In ICU patients, LP may require lateral decubitus positioning or fluoroscopic guidance if patient is intubated or sedated.
 
@@ -308,8 +308,8 @@ SECTION B: REFERENCE (Expand as Needed)
 |----------------|----------------|--------|
 | CT head sensitivity ~98-100% within 6h for SAH | Class I, Level A | [Perry et al. (BMJ 2011)](https://pubmed.ncbi.nlm.nih.gov/21768192/) — Prospective cohort; 3132 patients; sensitivity 100% (95% CI 97-100%) for CT within 6h |
 | LP mandatory if CT negative but clinical suspicion for SAH persists | Class I, Level B | [AHA/ASA SAH Guidelines (Connolly et al. Stroke 2012)](https://pubmed.ncbi.nlm.nih.gov/22556195/) |
-| Xanthochromia by spectrophotometry is gold standard CSF test for SAH | Class I, Level B | [UK National SAH Guidelines (Edlow et al. Stroke 2016)](https://pubmed.ncbi.nlm.nih.gov/27217503/); sensitivity >95% at 12h-2 weeks |
-| CTA sensitivity 95-100% for aneurysms >3mm | Class I, Level A | [White PM et al. (Radiology 2003)](https://pubmed.ncbi.nlm.nih.gov/14500398/) — Meta-analysis of CTA for intracranial aneurysm detection; [Defined et al. (Stroke 2006)](https://pubmed.ncbi.nlm.nih.gov/16902176/) — requires full author verification |
+| Xanthochromia by spectrophotometry is gold standard CSF test for SAH | Class I, Level B | [Edlow JA et al. (Stroke 2016; AHA scientific statement)](https://pubmed.ncbi.nlm.nih.gov/27217503/); sensitivity >95% at 12h-2 weeks |
+| CTA sensitivity 95-100% for aneurysms >3mm | Class I, Level A | [White PM et al. (Radiology 2003)](https://pubmed.ncbi.nlm.nih.gov/14500398/) — Meta-analysis of CTA for intracranial aneurysm detection; [PMID 16902176 (Stroke 2006)](https://pubmed.ncbi.nlm.nih.gov/16902176/) — **PHYSICIAN REVIEW: author name unverified; confirm correct article** |
 | Anticoagulation for CVT even with hemorrhagic infarct | Class I, Level A | [EFNS Guidelines (Ferro et al. Eur J Neurol 2017)](https://pubmed.ncbi.nlm.nih.gov/28128773/); [AHA/ASA CVT Guidelines (Saposnik et al. Stroke 2011)](https://pubmed.ncbi.nlm.nih.gov/21293023/) |
 | Nimodipine 60 mg PO q4h x 21 days for SAH vasospasm prevention | Class I, Level A | [Pickard et al. (BMJ 1989)](https://pubmed.ncbi.nlm.nih.gov/2496789/) |
 | RCVS: calcium channel blockers (nimodipine/verapamil) for headache and vasoconstriction | Class IIa, Level C | [Ducros et al. (Brain 2007)](https://pubmed.ncbi.nlm.nih.gov/17468116/); [Singhal et al. (Neurology 2011)](https://pubmed.ncbi.nlm.nih.gov/21383328/) |
@@ -326,6 +326,17 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.2 (February 2, 2026) — Citation Verification & CPT Enrichment**
+- **Citation Verification:** Verified 16 of 17 PubMed citations; 15 confirmed correct, 1 flagged for physician review (PMID 16902176 — author name unverified)
+- **Citation Fix:** Corrected mislabeled "UK National SAH Guidelines (Edlow et al.)" to "Edlow JA et al. (Stroke 2016; AHA scientific statement)" — this is an American Heart Association publication, not a UK guideline
+- **Citation Fix:** Replaced placeholder "Defined et al." with "PMID 16902176" and flagged for physician review
+- **CPT Enrichment (Section 1C):** Added CPT codes for thrombophilia panel (85306, 81240, 85303, 85301), antiphospholipid antibodies (85613, 86147, 86146), pituitary hormone panel (83003, 84305, 83002, 83001, 84439, 82024), urine catecholamines/metanephrines (82382, 83835)
+- **CPT Enrichment (Section 2B):** Added CPT 36224 to Repeat DSA row
+- **CPT Enrichment (Section 2C):** Added CPT 36224 to 3D rotational angiography; added CPT 72141/72146/72148 to Spinal MRI; added CPT 75705 to conventional spinal angiography
+- **CPT Enrichment (LP section):** Added CPT 89051 to CSF WBC with differential
+- **CPT Header:** Added 18 new CPT codes to frontmatter CPT CODES line
+- Updated version to 1.2
 
 **v1.1 (February 2, 2026) — Checker/Rebuilder Pipeline**
 - Fixed placeholder "Defined et al." reference: corrected first CTA citation to White PM et al. (Radiology 2003, PMID 14500398); flagged second CTA citation (PMID 16902176) as requiring full author verification (C1/R1)

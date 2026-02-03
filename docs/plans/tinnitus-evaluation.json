@@ -1,0 +1,1057 @@
+{
+  "id": "tinnitus-evaluation",
+  "title": "Tinnitus Evaluation",
+  "version": "1.1",
+  "icd10": [
+    "** H93.19 (Tinnitus",
+    "unspecified ear)",
+    "H93.11 (Tinnitus",
+    "right ear)",
+    "H93.12 (Tinnitus",
+    "left ear)",
+    "H93.A9 (Pulsatile tinnitus",
+    "unspecified ear)",
+    "H93.A1 (Pulsatile tinnitus",
+    "right ear)",
+    "H93.A2 (Pulsatile tinnitus",
+    "left ear)",
+    "H93.A3 (Pulsatile tinnitus",
+    "bilateral)",
+    "H93.19 (Tinnitus",
+    "unspecified)",
+    "R42 (Dizziness and giddiness — when co-occurring)",
+    "H90.5 (Unspecified sensorineural hearing loss)",
+    "D33.3 (Benign neoplasm of cranial nerves — vestibular schwannoma)"
+  ],
+  "scope": "** Neurological evaluation and management of tinnitus in adults. Covers classification (pulsatile vs. non-pulsatile, subjective vs. objective), identification of red flags (unilateral tinnitus, pulsatile tinnitus, associated hearing loss, focal neurological deficits), evaluation for vascular causes (dural arteriovenous fistula, carotid stenosis/dissection, IIH, glomus tumors), cerebellopontine angle tumors (vestibular schwannoma/acoustic neuroma), audiometric evaluation, MRI/MRA indications, and management including CBT for tinnitus, sound therapy, and pharmacotherapy. Excludes primary otologic management of cerumen impaction, otitis media, otosclerosis, and cochlear implant evaluation (ENT-managed). Excludes tinnitus in pediatric populations.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Anemia can cause pulsatile tinnitus (high-output state); polycythemia (hyperviscosity); infection if otitis suspected",
+          "target": "Normal; anemia (Hgb <10) — correct and reassess; elevated WBC — infection"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Electrolyte abnormalities; renal dysfunction (uremia can cause tinnitus); baseline metabolic assessment",
+          "target": "Normal; BUN/Cr elevation — renal evaluation; hyponatremia"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hyperthyroidism causes pulsatile tinnitus (high-output state); hypothyroidism associated with sensorineural hearing loss",
+          "target": "Normal; hyperthyroidism — endocrine referral; hypothyroidism — treat and reassess hearing"
+        },
+        {
+          "item": "Blood glucose / HbA1c (CPT 82947 / 83036)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes is risk factor for sensorineural hearing loss and small vessel disease; diabetic neuropathy affecting cochlear nerve; relevant for sudden SNHL workup",
+          "target": "Fasting glucose 70-100; HbA1c <7.0%"
+        },
+        {
+          "item": "Lipid panel (CPT 80061)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Vascular risk factor assessment if pulsatile tinnitus or vascular cause suspected; dyslipidemia associated with sensorineural hearing loss",
+          "target": "LDL <100; total cholesterol <200; dyslipidemia — treatment"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Temporal arteritis (pulsatile tinnitus in elderly); vasculitis; autoimmune inner ear disease",
+          "target": "Normal; elevated — evaluate for GCA in >50 yo, autoimmune SNHL"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune inner ear disease (AIED); systemic lupus; vasculitis affecting cochlea",
+          "target": "Negative; positive — autoimmune workup"
+        },
+        {
+          "item": "RPR / VDRL (CPT 86592)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Otosyphilis can present as tinnitus and hearing loss; especially if bilateral asymmetric SNHL",
+          "target": "Negative; reactive — FTA-ABS confirmation, treatment"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency associated with tinnitus and sensorineural hearing loss",
+          "target": ">300 pg/mL; low — supplementation"
+        },
+        {
+          "item": "Ferritin / Iron studies (CPT 82728 / 83540)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Iron deficiency anemia is common cause of pulsatile tinnitus (high-output state); even without frank anemia",
+          "target": "Ferritin >50; iron-deficient — supplementation; pulsatile tinnitus may resolve"
+        },
+        {
+          "item": "Zinc level (CPT 84630)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Zinc deficiency has been associated with tinnitus in some studies; cochlear function",
+          "target": "Normal; low — supplementation trial"
+        },
+        {
+          "item": "Coagulation studies (PT/INR, PTT) (CPT 85610 / 85730)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "If cerebral venous sinus thrombosis suspected (pulsatile tinnitus, headache, papilledema)",
+          "target": "Normal; prolonged — evaluate coagulopathy"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "FTA-ABS (CPT 86780)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Confirmatory for syphilis if RPR positive; otosyphilis diagnosis",
+          "target": "Negative; positive — penicillin treatment"
+        },
+        {
+          "item": "Lyme serology (CPT 86618)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lyme neuroborreliosis can cause cranial neuropathies and hearing loss in endemic areas",
+          "target": "Negative; positive — Western blot confirmation"
+        },
+        {
+          "item": "Anti-cochlear antibodies / HSP-70 antibodies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune inner ear disease if bilateral progressive SNHL with tinnitus; responds to steroids",
+          "target": "Negative; positive — steroid trial for AIED"
+        },
+        {
+          "item": "Paraneoplastic antibody panel",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Rare; paraneoplastic cochlear/vestibular degeneration; anti-Hu, anti-CRMP5",
+          "target": "Negative; positive — malignancy search"
+        },
+        {
+          "item": "CSF analysis (CPT 89050, 89051)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If IIH suspected (opening pressure); infectious/inflammatory cause; leptomeningeal disease; neurosyphilis confirmation",
+          "target": "Opening pressure >25 cm H2O — IIH; pleocytosis — infection/inflammation; positive VDRL — neurosyphilis"
+        },
+        {
+          "item": "Hypercoagulability panel",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If cerebral venous thrombosis suspected as cause of pulsatile tinnitus",
+          "target": "Normal; abnormal — anticoagulation; CVT workup"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "LP with opening pressure (CPT 62270)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**Indicated if IIH suspected**: Pulsatile tinnitus + headache + papilledema (especially in young obese female); also if CSF infection or leptomeningeal disease suspected; **Measure opening pressure** in lateral decubitus position",
+          "target": "Opening pressure >25 cm H2O — IIH; normal CSF composition in IIH; pleocytosis — infection; positive cytology — leptomeningeal disease; elevated protein — inflammation",
+          "contraindications": "Mass lesion on imaging (perform MRI first); coagulopathy; anticoagulation; skin infection at LP site"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "**Comprehensive audiometry** (CPT 92557) with tympanometry (CPT 92550)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**First-line for ALL tinnitus patients**; pure tone audiometry, speech discrimination, tympanometry; identifies type and degree of hearing loss; essential for determining etiology",
+          "target": "Sensorineural hearing loss (SNHL) — cochlear vs. retrocochlear; conductive hearing loss (CHL) — middle ear pathology; asymmetric SNHL — MRI for vestibular schwannoma; normal — reassuring but does not exclude pathology",
+          "contraindications": "Patient cooperation required"
+        },
+        {
+          "item": "**MRI brain and IACs (internal auditory canals) with gadolinium** (CPT 70553)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**Essential if**: Unilateral or asymmetric tinnitus; unilateral or asymmetric SNHL; pulsatile tinnitus (to evaluate for vascular malformation or CPA mass); focal neurological deficits; **Gold standard** for vestibular schwannoma, CPA tumors, meningioma, demyelination",
+          "target": "Vestibular schwannoma (enhancing mass in IAC/CPA); meningioma; dural AVF; brainstem lesion; MS plaque; cholesteatoma; leptomeningeal disease",
+          "contraindications": "MRI-incompatible implants; severe claustrophobia; GFR <30 (gadolinium contraindication)"
+        },
+        {
+          "item": "**Otoscopic examination**",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**Bedside exam for ALL patients**; evaluate for cerumen impaction, tympanic membrane perforation, middle ear effusion, glomus tumor (visible as red/blue mass behind TM), cholesteatoma",
+          "target": "Cerumen impaction — removal; retrotympanic mass (glomus tumor, aberrant carotid, high jugular bulb); TM perforation; middle ear effusion",
+          "contraindications": "None"
+        },
+        {
+          "item": "**Auscultation of head, neck, periauricular region**",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**Critical for pulsatile tinnitus**; listen over mastoid, periauricular, orbits, and neck for bruit; detect objective tinnitus from vascular lesion (dural AVF, carotid stenosis, glomus tumor)",
+          "target": "Bruit present — vascular imaging (MRA/CTA); no bruit does NOT exclude vascular cause",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "**MRA head** (CPT 70544) **and neck** (CPT 70547)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**Pulsatile tinnitus workup**; evaluates for dural AVF, arterial stenosis/dissection, fibromuscular dysplasia, vertebral/carotid stenosis, aneurysm; use CTA if MRA not available",
+          "target": "Dural AVF (early venous filling); carotid stenosis; carotid/vertebral dissection; fibromuscular dysplasia; aneurysm; aberrant vasculature",
+          "contraindications": "MRA: same as MRI; CTA (CPT 70496/70498): contrast allergy, renal impairment"
+        },
+        {
+          "item": "**CT temporal bones** (CPT 70480) without contrast",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**Evaluate bony anatomy**; superior semicircular canal dehiscence (can cause pulsatile tinnitus); glomus jugulare/tympanicum; otosclerosis; cholesteatoma; aberrant carotid artery; high jugular bulb; tegmen defect",
+          "target": "Glomus tumor (permeative bone destruction); canal dehiscence; otosclerosis; temporal bone fracture; aberrant carotid",
+          "contraindications": "Radiation exposure (low)"
+        },
+        {
+          "item": "**CTA head and neck** (CPT 70496 / 70498)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Alternative or complement to MRA for pulsatile tinnitus; better spatial resolution for some vascular lesions; faster acquisition in ED; evaluates for dural AVF, carotid stenosis, dissection, glomus tumor",
+          "target": "Dural AVF; stenosis; dissection; glomus tumor vascularity; fibromuscular dysplasia",
+          "contraindications": "Contrast allergy; renal impairment; radiation"
+        },
+        {
+          "item": "**Carotid duplex ultrasound** (CPT 93880)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Non-invasive screening for carotid stenosis if pulsatile tinnitus; can detect FMD in some cases; identifies high-flow states",
+          "target": "Carotid stenosis; plaque; FMD (string of beads); flow abnormalities",
+          "contraindications": "None"
+        },
+        {
+          "item": "**Fundoscopic exam / OCT**",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**Evaluate for papilledema** if pulsatile tinnitus (IIH); bilateral papilledema in young obese female with pulsatile tinnitus — IIH until proven otherwise",
+          "target": "Papilledema — measure opening pressure (LP); IIH; venous sinus thrombosis",
+          "contraindications": "Pupillary dilation for detailed exam"
+        },
+        {
+          "item": "**MR venography (MRV)** (CPT 70547)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If IIH or cerebral venous sinus thrombosis suspected; evaluates venous sinus patency; transverse sinus stenosis (common in IIH and common cause of pulsatile tinnitus)",
+          "target": "Venous sinus thrombosis; transverse sinus stenosis (bilateral or unilateral); venous outflow obstruction",
+          "contraindications": "Same as MRI"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "**Cerebral angiography (DSA)** (CPT 36224)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**Gold standard for dural AVF**; obtain when MRA/CTA suggestive but inconclusive; preoperative planning for AVF embolization or glomus tumor; evaluates venous drainage patterns",
+          "target": "Dural AVF (early venous filling, fistula site, venous drainage pattern); glomus tumor blood supply; vascular anatomy for embolization planning",
+          "contraindications": "Invasive (stroke risk ~0.5%); contrast allergy; renal impairment; coagulopathy"
+        },
+        {
+          "item": "**Videonystagmography (VNG)** (CPT 92540)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If vestibular symptoms accompany tinnitus; evaluate vestibular function; caloric testing for unilateral vestibular hypofunction",
+          "target": "Unilateral weakness (peripheral vestibular lesion); central patterns",
+          "contraindications": "Perforated TM (water calorics)"
+        },
+        {
+          "item": "**Auditory brainstem response (ABR)** (CPT 92585)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If retrocochlear pathology suspected and MRI contraindicated; screening for vestibular schwannoma when MRI not possible; interaural latency differences",
+          "target": "Prolonged wave I-III or I-V interpeak latency (retrocochlear lesion); absent waves",
+          "contraindications": "Requires patient cooperation; less sensitive than MRI"
+        },
+        {
+          "item": "**VEMP (vestibular evoked myogenic potentials)** (CPT 92517)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If superior semicircular canal dehiscence suspected (pulsatile tinnitus, autophony, bone conduction hyperacusis); tests saccule/utricle",
+          "target": "Reduced threshold on cVEMP/oVEMP — canal dehiscence",
+          "contraindications": "Hearing loss affects testing"
+        },
+        {
+          "item": "**OAE (otoacoustic emissions)** (CPT 92587)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Assess outer hair cell function; normal OAEs with abnormal audiogram suggest retrocochlear pathology; helps differentiate cochlear vs. neural",
+          "target": "Present OAEs with abnormal ABR — auditory neuropathy/retrocochlear; absent OAEs — cochlear damage",
+          "contraindications": "Middle ear pathology affects results"
+        },
+        {
+          "item": "**Temporal bone CT angiography**",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Specialized for aberrant carotid artery, dehiscent jugular bulb, or persistent stapedial artery causing pulsatile tinnitus",
+          "target": "Aberrant vascular anatomy; dehiscent jugular bulb; persistent stapedial artery",
+          "contraindications": "Radiation; contrast"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent Treatment": [
+        {
+          "item": "**Treat underlying cause**",
+          "route": "-",
+          "indication": "All tinnitus with identifiable etiology",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "**Treat underlying cause** - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Priority is identifying and treating the underlying cause**: Cerumen removal (impaction); antibiotics for otitis; correct anemia; treat hyperthyroidism; discontinue ototoxic medications; manage IIH; refer for vascular intervention (dural AVF embolization, carotid endarterectomy)",
+            "orderSentence": "**Treat underlying cause** - -"
+          },
+          "contraindications": "-",
+          "monitoring": "Tinnitus is a symptom, not a diagnosis; treatment of underlying cause resolves tinnitus completely in many cases",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Discontinue/reduce ototoxic medications**",
+          "route": "-",
+          "indication": "All tinnitus patients on ototoxic drugs",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "**Discontinue/reduce ototoxic medications** - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Review medication list**: High-dose aspirin (>2g/day), aminoglycosides, loop diuretics (furosemide), cisplatin, quinine, vancomycin, erythromycin; reduce dose or substitute when possible",
+            "orderSentence": "**Discontinue/reduce ototoxic medications** - -"
+          },
+          "contraindications": "When medication is essential and no alternative exists",
+          "monitoring": "Ototoxic medications are a common reversible cause; [Cianfrone et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21590473/): medication review is first step",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**IV dexamethasone** (sudden SNHL with tinnitus)",
+          "route": "IV",
+          "indication": "Sudden sensorineural hearing loss with tinnitus",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "**IV dexamethasone** (sudden SNHL with tinnitus) 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "**Sudden SNHL is otologic emergency**: Dexamethasone 10 mg IV then transition to oral prednisone 1 mg/kg/day (max 60 mg) x 14 days with taper; OR methylprednisolone 48 mg daily x 14 days; start within 72 hours for best outcomes; ENT urgent referral",
+            "orderSentence": "**IV dexamethasone** (sudden SNHL with tinnitus) 10 mg IV"
+          },
+          "contraindications": "Active infection (relative); uncontrolled diabetes; GI bleed",
+          "monitoring": "Blood glucose monitoring every 6 hours while on steroids; [Chandrasekhar et al. (2019)](https://pubmed.ncbi.nlm.nih.gov/31369359/): AAO-HNS guideline recommends steroids within 2 weeks of sudden SNHL onset; earlier is better",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "-"
+        },
+        {
+          "item": "**Acetazolamide** (IIH-related pulsatile tinnitus)",
+          "route": "PO",
+          "indication": "Pulsatile tinnitus due to IIH",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "**Acetazolamide** (IIH-related pulsatile tinnitus) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Acetazolamide 250-500 mg PO BID, titrate up to 1g BID as tolerated; monitor electrolytes; reduces CSF production; can dramatically improve pulsatile tinnitus in IIH",
+            "orderSentence": "**Acetazolamide** (IIH-related pulsatile tinnitus) 500 mg PO"
+          },
+          "contraindications": "Sulfa allergy; hepatic insufficiency; hypokalemia; metabolic acidosis",
+          "monitoring": "Electrolytes (potassium, bicarbonate) weekly x 4 weeks, then monthly; renal function; paresthesias (common, benign); [NORDIC Idiopathic Intracranial Hypertension Study Group (2014)](https://pubmed.ncbi.nlm.nih.gov/24687293/): acetazolamide effective for IIH",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Specific Treatment": [
+        {
+          "item": "**Cognitive behavioral therapy (CBT) for tinnitus**",
+          "route": "-",
+          "indication": "Non-pulsatile tinnitus with distress, anxiety, insomnia, or functional impairment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "**Cognitive behavioral therapy (CBT) for tinnitus** - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**First-line evidence-based therapy**: 8-20 sessions of CBT adapted for tinnitus; addresses catastrophic thinking, hypervigilance, emotional response to tinnitus; reduces tinnitus distress, improves sleep and function; does NOT eliminate tinnitus but reduces impact",
+            "orderSentence": "**Cognitive behavioral therapy (CBT) for tinnitus** - -"
+          },
+          "contraindications": "None",
+          "monitoring": "Track TFI/THI scores every 4-6 sessions; [Cima et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22927685/): RCT demonstrated CBT significantly reduces tinnitus severity and improves quality of life; [Cochrane review (2020)](https://pubmed.ncbi.nlm.nih.gov/33264419/): CBT is most evidence-supported therapy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Sound therapy / masking**",
+          "route": "-",
+          "indication": "All bothersome non-pulsatile tinnitus",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "**Sound therapy / masking** - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Options**: Background sound enrichment (fan, white noise, nature sounds); ear-level sound generators; combination hearing aid + sound generator; Notch therapy (tailor-made notched music); smartphone apps (e.g., Oto, ReSound Relief); avoid silence",
+            "orderSentence": "**Sound therapy / masking** - -"
+          },
+          "contraindications": "None",
+          "monitoring": "Partial or complete masking reduces tinnitus perception; [Hobson et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/23152232/): Cochrane review — limited evidence but widely recommended as adjunct; safe and well tolerated",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Tinnitus retraining therapy (TRT)**",
+          "route": "-",
+          "indication": "Chronic bothersome non-pulsatile tinnitus",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "**Tinnitus retraining therapy (TRT)** - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Combined counseling + sound therapy**: Directive counseling (neurophysiological model) + low-level broadband sound generators worn 6-8h/day; goal is habituation (tinnitus perceived but not bothersome); requires 12-24 months",
+            "orderSentence": "**Tinnitus retraining therapy (TRT)** - -"
+          },
+          "contraindications": "Requires patient commitment and trained provider",
+          "monitoring": "Clinical improvement in 70-80%; [Jastreboff & Jastreboff (2000)](https://pubmed.ncbi.nlm.nih.gov/10768108/): established protocol; evidence is moderate",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Hearing aids**",
+          "route": "-",
+          "indication": "Tinnitus with coexisting hearing loss",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "**Hearing aids** - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**If hearing loss present**: Amplification reduces tinnitus perception by enriching auditory input; modern hearing aids include tinnitus masking programs; bilateral fitting preferred for bilateral loss; trial period recommended",
+            "orderSentence": "**Hearing aids** - -"
+          },
+          "contraindications": "Profound hearing loss (cochlear implant evaluation instead)",
+          "monitoring": "[Shekhawat et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/24045571/): hearing aids improve tinnitus in majority of patients with hearing loss; offer to all eligible patients",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Acceptance and commitment therapy (ACT)**",
+          "route": "-",
+          "indication": "Alternative to CBT; tinnitus-related distress",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "**Acceptance and commitment therapy (ACT)** - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Mindfulness-based approach; acceptance of tinnitus rather than control; values-driven action; emerging evidence supports efficacy",
+            "orderSentence": "**Acceptance and commitment therapy (ACT)** - -"
+          },
+          "contraindications": "None",
+          "monitoring": "Track TFI/THI scores; [Westin et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21849527/): ACT comparable to CBT for tinnitus distress reduction",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Medications to AVOID or Use with Caution": [
+        {
+          "item": "**Aminoglycosides** (gentamicin, tobramycin, amikacin)",
+          "route": "IV/IM",
+          "indication": "Ototoxic; dose-dependent cochlear and vestibular toxicity; can worsen tinnitus permanently",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "**Aminoglycosides** (gentamicin, tobramycin, amikacin) - IV/IM"
+              }
+            ],
+            "route": "IV/IM",
+            "instructions": "AVOID in tinnitus patients unless no alternative exists; if essential, use once-daily dosing to reduce ototoxicity",
+            "orderSentence": "**Aminoglycosides** (gentamicin, tobramycin, amikacin) - IV/IM"
+          },
+          "contraindications": "Tinnitus or pre-existing hearing loss (relative); renal impairment increases risk",
+          "monitoring": "Drug levels (trough <1 for gentamicin); serial audiometry if prolonged course",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**High-dose aspirin** (>2 g/day)",
+          "route": "PO",
+          "indication": "Dose-dependent tinnitus; reversible with dose reduction; salicylate toxicity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "**High-dose aspirin** (>2 g/day) - PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "AVOID doses >2 g/day; tinnitus usually resolves within 24-48h of dose reduction; low-dose aspirin (81-325 mg) is safe",
+            "orderSentence": "**High-dose aspirin** (>2 g/day) - PO"
+          },
+          "contraindications": "Pre-existing tinnitus at high doses",
+          "monitoring": "Salicylate level if toxicity suspected; reduce dose if tinnitus develops",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Loop diuretics** (furosemide, ethacrynic acid)",
+          "route": "IV/PO",
+          "indication": "Ototoxic, especially IV high-dose or in renal impairment; usually reversible",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "**Loop diuretics** (furosemide, ethacrynic acid) - IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Use lowest effective dose; avoid rapid IV bolus; ethacrynic acid more ototoxic than furosemide",
+            "orderSentence": "**Loop diuretics** (furosemide, ethacrynic acid) - IV/PO"
+          },
+          "contraindications": "Pre-existing hearing loss with high doses (relative)",
+          "monitoring": "Monitor hearing; use lowest effective dose; avoid IV bolus",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Cisplatin and carboplatin**",
+          "route": "IV",
+          "indication": "Dose-dependent irreversible cochlear toxicity; high-frequency SNHL and tinnitus",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "**Cisplatin and carboplatin** - IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Irreversible ototoxicity; no proven otoprotectant; cisplatin more ototoxic than carboplatin",
+            "orderSentence": "**Cisplatin and carboplatin** - IV"
+          },
+          "contraindications": "Pre-existing hearing loss (dose modification)",
+          "monitoring": "Baseline and serial audiometry during treatment; monitor cumulative dose",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Quinine and chloroquine**",
+          "route": "PO",
+          "indication": "Cinchonism (tinnitus, hearing loss, vertigo); usually reversible",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "**Quinine and chloroquine** - PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Reversible ototoxicity; reduce dose if tinnitus develops; hydroxychloroquine lower risk",
+            "orderSentence": "**Quinine and chloroquine** - PO"
+          },
+          "contraindications": "Pre-existing tinnitus at therapeutic doses",
+          "monitoring": "Monitor for tinnitus onset; reduce dose if symptoms develop",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Benzodiazepines (chronic use)**",
+          "route": "PO",
+          "indication": "Temporary relief but dependence risk; does not address underlying cause; rebound tinnitus on withdrawal",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "**Benzodiazepines (chronic use)** - PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Short-term use only if severe acute distress; transition to CBT/SSRI for long-term management; avoid chronic use",
+            "orderSentence": "**Benzodiazepines (chronic use)** - PO"
+          },
+          "contraindications": "Dependence risk; respiratory depression; elderly (fall risk)",
+          "monitoring": "Limit to 2-4 weeks; plan transition to non-benzodiazepine therapy",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Classify tinnitus type (pulsatile vs. non-pulsatile) at initial encounter; pulsatile tinnitus requires vascular workup; ask if pulse-synchronous (check radial pulse simultaneously)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Perform otoscopic exam on ALL patients; assess for cerumen impaction, TM abnormality, retrotympanic mass, cholesteatoma; low-cost, high-yield",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Audiology referral for comprehensive audiometry; ALL tinnitus patients require audiometry; asymmetric hearing loss triggers MRI",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Review ALL medications for ototoxicity; aspirin, NSAIDs, aminoglycosides, loop diuretics, chemotherapeutics; discontinue or substitute when possible",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology consultation if focal neurological deficits; pulsatile tinnitus with papilledema (IIH); suspected CPA mass; suspected dural AVF; diagnostic uncertainty",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ENT / Otolaryngology referral for ALL patients with unilateral tinnitus; hearing loss; failed initial management; hearing aid evaluation; intratympanic therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fundoscopic exam for pulsatile tinnitus to evaluate for papilledema; IIH presents with pulsatile tinnitus + headache + papilledema; tinnitus can be the presenting symptom",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mental health screening (PHQ-9, GAD-7) for ALL tinnitus patients; tinnitus strongly associated with anxiety, depression, insomnia; tinnitus distress correlates more with psychological state than tinnitus loudness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurovascular surgery consultation if dural AVF, glomus tumor, or high-grade carotid stenosis identified; multidisciplinary treatment planning",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Skull base surgery / neurotology referral if vestibular schwannoma identified; multidisciplinary discussion (observation vs. SRS vs. surgery)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "**Use sound enrichment at all times, especially at bedtime**: Use a fan, white noise machine, nature sounds, or smartphone app (Oto, ReSound Relief); avoid silence as it amplifies tinnitus perception",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "**Return to ED immediately** if sudden hearing loss in one or both ears, new weakness or numbness, severe new headache, vision changes, or worsening pulsatile tinnitus with headache — these require urgent evaluation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "**Protect hearing from noise exposure**: Wear earplugs or noise-cancelling headphones in loud environments (concerts, power tools, machinery); avoid prolonged headphone use at high volumes; noise exposure worsens tinnitus permanently",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "**Do NOT stop prescribed medications** (aspirin, acetazolamide, antidepressants) without consulting your neurologist; abrupt discontinuation can worsen symptoms or cause withdrawal effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "**Limit caffeine and alcohol** as both can temporarily worsen tinnitus perception; monitor personal triggers and adjust intake accordingly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "**Report new symptoms promptly**: New facial weakness or numbness, worsening hearing, new vertigo, or change in tinnitus character (non-pulsatile becoming pulsatile) warrants re-evaluation",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "**Engage with recommended therapy**: CBT for tinnitus requires 8-20 sessions for full benefit; attend all scheduled appointments; practice techniques between sessions for best outcomes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Noise protection: Wear hearing protection in all environments >85 dB; use decibel-monitoring smartphone apps; limit headphone use to 60% volume for no more than 60 minutes at a time (60/60 rule)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stress management: Chronic stress amplifies tinnitus perception; engage in regular mindfulness, meditation, or relaxation exercises; referral to psychologist or CBT therapist for tinnitus-specific coping strategies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Sleep hygiene: Maintain consistent sleep-wake schedule; use sound enrichment at bedtime (white noise, nature sounds); avoid screens 1 hour before bed; melatonin 3-5 mg if persistent insomnia; CBT-I referral for chronic insomnia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cardiovascular health: Regular moderate-intensity exercise (150 min/week); optimize blood pressure, lipids, glucose; vascular risk factors worsen both pulsatile and non-pulsatile tinnitus",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid ototoxic substances: Read medication labels; ask pharmacist about ototoxicity with new prescriptions; avoid prolonged NSAID use; report any new tinnitus to prescribing physician",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Type",
+      "features": "Description",
+      "tests": "Common Causes"
+    },
+    {
+      "diagnosis": "**Subjective non-pulsatile**",
+      "features": "Perceived by patient only; continuous or intermittent ringing, buzzing, hissing; most common type (~85% of tinnitus)",
+      "tests": "Noise-induced hearing loss, presbycusis, ototoxic medications, Meniere's disease, vestibular schwannoma, idiopathic"
+    },
+    {
+      "diagnosis": "**Subjective pulsatile**",
+      "features": "Perceived by patient only; rhythmic, pulse-synchronous (heartbeat-like); ~5% of tinnitus but HIGH yield for treatable pathology",
+      "tests": "IIH, dural AVF, carotid stenosis/dissection, transverse sinus stenosis, anemia, hyperthyroidism, glomus tumor"
+    },
+    {
+      "diagnosis": "**Objective pulsatile**",
+      "features": "Audible to examiner (stethoscope over ear/mastoid); vascular or mechanical source",
+      "tests": "Dural AVF, glomus tumor, carotid stenosis, aberrant carotid artery, venous hum, arteriovenous malformation"
+    },
+    {
+      "diagnosis": "**Objective non-pulsatile**",
+      "features": "Audible clicking/crackling; rare",
+      "tests": "Palatal myoclonus, stapedial muscle spasm, patulous Eustachian tube, TMJ crepitus"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Guideline",
+      "evidenceLevel": "Source",
+      "source": "Year"
+    },
+    {
+      "recommendation": "Clinical Practice Guideline: Tinnitus",
+      "evidenceLevel": "[AAO-HNS (Tunkel et al.)](https://pubmed.ncbi.nlm.nih.gov/25348604/)",
+      "source": "2014"
+    },
+    {
+      "recommendation": "Diagnostic Approach to Pulsatile Tinnitus",
+      "evidenceLevel": "[Defined diagnostic algorithm](https://pubmed.ncbi.nlm.nih.gov/23910692/)",
+      "source": "2013"
+    },
+    {
+      "recommendation": "Sudden Sensorineural Hearing Loss Practice Guideline",
+      "evidenceLevel": "[AAO-HNS (Chandrasekhar et al.)](https://pubmed.ncbi.nlm.nih.gov/31369359/)",
+      "source": "2019"
+    },
+    {
+      "recommendation": "European Guideline on Tinnitus",
+      "evidenceLevel": "[European Academy of Otology and Neurotology](https://pubmed.ncbi.nlm.nih.gov/30847727/)",
+      "source": "2019"
+    },
+    {
+      "recommendation": "Study",
+      "evidenceLevel": "Finding",
+      "source": "Impact"
+    },
+    {
+      "recommendation": "[Cima et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22927685/)",
+      "evidenceLevel": "Stepped-care CBT for tinnitus significantly reduced tinnitus-related distress, improved quality of life in randomized controlled trial (n=492)",
+      "source": "CBT is the most evidence-supported therapy for tinnitus; first-line for bothersome chronic tinnitus"
+    },
+    {
+      "recommendation": "[Langguth et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22363816/)",
+      "evidenceLevel": "Systematic review of rTMS for tinnitus; moderate short-term benefit on tinnitus severity; optimal stimulation parameters not established",
+      "source": "TMS is promising but not yet standard; reserved for refractory cases in research settings"
+    },
+    {
+      "recommendation": "[Mattox & Simmons (1977)](https://pubmed.ncbi.nlm.nih.gov/559939/)",
+      "evidenceLevel": "Natural history of vestibular schwannoma: tinnitus is presenting symptom in ~70% of patients; often precedes hearing loss",
+      "source": "Unilateral tinnitus warrants MRI to rule out vestibular schwannoma"
+    },
+    {
+      "recommendation": "[Sismanis (2003)](https://pubmed.ncbi.nlm.nih.gov/12544033/)",
+      "evidenceLevel": "Comprehensive review of pulsatile tinnitus etiologies; defined diagnostic algorithm; dural AVF is most common surgically treatable vascular cause",
+      "source": "Pulsatile tinnitus requires systematic vascular evaluation; high rate of identifiable and treatable pathology"
+    },
+    {
+      "recommendation": "[Bauer & Brozoski (2006)](https://pubmed.ncbi.nlm.nih.gov/16413413/)",
+      "evidenceLevel": "Gabapentin showed modest benefit for tinnitus related to acoustic trauma in RCT; no benefit in non-trauma tinnitus",
+      "source": "Gabapentin helps trauma-related tinnitus but is not effective for non-traumatic tinnitus"
+    },
+    {
+      "recommendation": "[Sullivan et al. (1993)](https://pubmed.ncbi.nlm.nih.gov/8437846/)",
+      "evidenceLevel": "Nortriptyline reduced tinnitus loudness and depression in patients with severe tinnitus and comorbid depression",
+      "source": "Tricyclic antidepressants benefit tinnitus patients with depression; treat comorbidity"
+    },
+    {
+      "recommendation": "[NORDIC IIH Study Group (2014)](https://pubmed.ncbi.nlm.nih.gov/24687293/)",
+      "evidenceLevel": "Acetazolamide with diet significantly improved papilledema, visual function, headache, pulsatile tinnitus, and quality of life in IIH (n=165)",
+      "source": "Acetazolamide is first-line medical therapy for IIH; pulsatile tinnitus improves with ICP reduction"
+    },
+    {
+      "recommendation": "[Chandrasekhar et al. (2019)](https://pubmed.ncbi.nlm.nih.gov/31369359/)",
+      "evidenceLevel": "AAO-HNS guideline for sudden SNHL: steroids recommended within 2 weeks; intratympanic salvage if systemic fails; MRI to rule out retrocochlear",
+      "source": "Standard of care for sudden hearing loss with tinnitus; early treatment improves outcomes"
+    },
+    {
+      "recommendation": "Tool",
+      "evidenceLevel": "Scoring",
+      "source": "Clinical Utility"
+    },
+    {
+      "recommendation": "Tinnitus Functional Index (TFI)",
+      "evidenceLevel": "0-100; <25 mild, 25-50 significant, >50 severe, >75 catastrophic",
+      "source": "Most sensitive to treatment change; validated; tracks longitudinal response"
+    },
+    {
+      "recommendation": "Tinnitus Handicap Inventory (THI)",
+      "evidenceLevel": "0-100; Grade 1 (0-16) to Grade 5 (78-100)",
+      "source": "Widely used; good test-retest reliability; validated in multiple languages"
+    },
+    {
+      "recommendation": "Visual Analogue Scale (VAS) for tinnitus",
+      "evidenceLevel": "0-10 for loudness and annoyance",
+      "source": "Quick; useful for serial tracking; less comprehensive"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (cranial nerves, fundoscopy, hearing)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "On presentation",
+      "target": "No focal deficits; no papilledema",
+      "action": "Papilledema — urgent MRI/MRV/LP; focal deficits — STAT MRI; cranial bruit — vascular imaging"
+    },
+    {
+      "item": "Vital signs",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "-",
+      "frequency": "q4h (if admitted); on presentation (ED)",
+      "target": "Stable; no hypertensive crisis",
+      "action": "Hypertension — manage per guidelines; tachycardia — evaluate thyroid, anemia"
+    },
+    {
+      "item": "Hearing assessment (bedside)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "On presentation",
+      "target": "Weber/Rinne normal or lateralizes appropriately",
+      "action": "Asymmetry — urgent audiometry; sudden SNHL — start steroids"
+    },
+    {
+      "item": "Tinnitus characterization",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "On presentation",
+      "target": "Document pulsatile vs. non-pulsatile; unilateral vs. bilateral; quality; duration; modulating factors",
+      "action": "Pulsatile — vascular imaging pathway; unilateral — MRI pathway"
+    },
+    {
+      "item": "Blood glucose (if on steroids)",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Every 6 hours while on steroids",
+      "target": "Glucose <200 mg/dL",
+      "action": "Glucose >200 — insulin per sliding scale; endocrine consultation if persistent"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Level of Care",
+      "criteria": "Criteria"
+    },
+    {
+      "disposition": "ICU",
+      "criteria": "Hemorrhagic complication of dural AVF (intracranial hemorrhage); acute stroke from carotid dissection; severe IIH with visual loss requiring emergent intervention"
+    },
+    {
+      "disposition": "General floor",
+      "criteria": "Sudden sensorineural hearing loss requiring IV steroids and monitoring; newly diagnosed cerebral venous sinus thrombosis requiring anticoagulation initiation; newly diagnosed dural AVF requiring observation and planning for intervention; IIH with significant papilledema requiring serial visual field assessments and LP"
+    },
+    {
+      "disposition": "Observation",
+      "criteria": "Diagnostic uncertainty requiring urgent imaging (MRI/MRA not available as outpatient in timely fashion); intractable symptoms requiring symptomatic management"
+    }
+  ]
+}

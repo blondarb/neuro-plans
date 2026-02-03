@@ -1,0 +1,2452 @@
+{
+  "id": "hashimotos-encephalopathy",
+  "title": "Hashimoto's Encephalopathy",
+  "version": "1.1",
+  "icd10": [
+    "** E06.3 (Autoimmune thyroiditis)",
+    "G93.49 (Other encephalopathy",
+    "not elsewhere classified)",
+    "E03.9 (Hypothyroidism",
+    "unspecified)"
+  ],
+  "scope": "** Diagnostic workup, acute treatment, and long-term management of suspected or confirmed Hashimoto's encephalopathy (SREAT). Covers initial presentation (acute diffuse progressive type and relapsing-remitting vasculitic type), anti-TPO and anti-thyroglobulin antibody evaluation, exclusion of alternative diagnoses, first-line corticosteroid therapy, second-line immunotherapy, seizure management, psychiatric symptom management, ICU considerations for status epilepticus or decreased consciousness, thyroid hormone optimization, and relapse prevention. This is a diagnosis of exclusion requiring elevated anti-thyroid antibodies in the setting of encephalopathy after all other etiologies have been excluded. For antibody-mediated autoimmune encephalitis (anti-NMDAR, LGI1, CASPR2), use \"Autoimmune Encephalitis\" template. For infectious encephalitis, use \"HSV Encephalitis\" template. For other metabolic encephalopathies, use appropriate specific template.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Anti-TPO antibodies (CPT 86376)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hallmark of Hashimoto's encephalopathy; elevated in >95% of cases; titers do not correlate with severity",
+          "target": "Elevated (>200 IU/mL strongly suggestive; any elevation significant in context)"
+        },
+        {
+          "item": "Anti-thyroglobulin antibodies (CPT 86800)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Elevated in ~70-80% of HE; may be only elevated antibody in some cases",
+          "target": "Elevated"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Thyroid function assessment; patients may be euthyroid, hypothyroid, or rarely hyperthyroid",
+          "target": "Variable; 25-30% subclinically hypothyroid; many euthyroid"
+        },
+        {
+          "item": "Free T4 (CPT 84439)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Thyroid function evaluation; rule out myxedema coma or thyrotoxicosis as cause of encephalopathy",
+          "target": "Normal or low"
+        },
+        {
+          "item": "Free T3 (CPT 84481)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Complete thyroid function assessment",
+          "target": "Normal or low"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline; infection screen; pre-immunotherapy assessment",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Metabolic encephalopathy screen; renal/hepatic baseline for immunotherapy; electrolytes",
+          "target": "Normal"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Inflammatory/vasculitis screen; often mildly elevated in HE",
+          "target": "Normal or mildly elevated"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Inflammatory marker; typically normal or mildly elevated",
+          "target": "Normal or mildly elevated"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Metabolic encephalopathy screen; pre-steroid baseline",
+          "target": "Normal"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Glycemic status before high-dose steroids",
+          "target": "<5.7%"
+        },
+        {
+          "item": "Ammonia (CPT 82140)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hepatic encephalopathy mimic",
+          "target": "Normal"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Sepsis screen; metabolic screen",
+          "target": "Normal (<2.0 mmol/L)"
+        },
+        {
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy screen pre-LP; DIC screen",
+          "target": "Normal"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Seizure threshold; metabolic screen",
+          "target": "Normal"
+        },
+        {
+          "item": "Phosphorus (CPT 84100)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Metabolic screen",
+          "target": "Normal"
+        },
+        {
+          "item": "Urinalysis with culture (CPT 81003+87086)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "UTI as encephalopathy trigger",
+          "target": "Negative"
+        },
+        {
+          "item": "Blood cultures (x2 sets) (CPT 87040)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Rule out septic encephalopathy",
+          "target": "No growth"
+        },
+        {
+          "item": "Procalcitonin (CPT 84145)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Distinguish bacterial vs autoimmune etiology",
+          "target": "Normal (<0.1 ng/mL)"
+        },
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Toxic/drug-induced encephalopathy mimic",
+          "target": "Negative"
+        },
+        {
+          "item": "Alcohol level (CPT 80320)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Alcohol-related encephalopathy",
+          "target": "Negative"
+        },
+        {
+          "item": "Pregnancy test (females of childbearing age) (CPT 81025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Eclampsia mimic; treatment planning (steroid/immunotherapy safety)",
+          "target": "As applicable"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency encephalopathy mimic",
+          "target": "Normal (>300 pg/mL)"
+        },
+        {
+          "item": "Folate (CPT 82746)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Nutritional deficiency screen",
+          "target": "Normal"
+        },
+        {
+          "item": "Cortisol (AM) (CPT 82533)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Adrenal insufficiency; baseline before exogenous steroids",
+          "target": "Normal"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "ANA (CPT 86235)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Lupus cerebritis screen; SLE can cause encephalopathy with thyroid antibodies",
+          "target": "Negative or low titer"
+        },
+        {
+          "item": "Anti-dsDNA",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If ANA positive; lupus evaluation",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-SSA/SSB (Ro/La)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Sjogren syndrome with CNS involvement",
+          "target": "Negative"
+        },
+        {
+          "item": "Complement C3, C4",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lupus; complement-mediated disease",
+          "target": "Normal"
+        },
+        {
+          "item": "ANCA (c-ANCA, p-ANCA)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "CNS vasculitis screen",
+          "target": "Negative"
+        },
+        {
+          "item": "ACE level (CPT 82164)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosarcoidosis screen",
+          "target": "Normal"
+        },
+        {
+          "item": "Anti-NMDAR antibody (serum AND CSF) (CPT 86255)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Rule out antibody-mediated autoimmune encephalitis (most important exclusion)",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-LGI1 antibody (serum AND CSF) (CPT 86235)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Rule out LGI1 encephalitis (limbic encephalitis mimic)",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-CASPR2 antibody (serum AND CSF) (CPT 86235)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Rule out CASPR2-associated encephalitis",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-GABA-B antibody (serum AND CSF)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Rule out GABA-B encephalitis (seizure-prominent mimic)",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-GAD65 antibody (serum AND CSF)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Rule out GAD65-associated encephalitis; stiff-person spectrum",
+          "target": "Negative or low titer"
+        },
+        {
+          "item": "Mayo Autoimmune Evaluation - Encephalopathy (serum)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Comprehensive panel to exclude defined antibody-mediated etiologies",
+          "target": "All negative"
+        },
+        {
+          "item": "Mayo Autoimmune Evaluation - Encephalopathy (CSF)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "CSF panel for antibody-mediated encephalitis",
+          "target": "All negative"
+        },
+        {
+          "item": "AQP4-IgG (NMO antibody)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "NMOSD overlap if concurrent myelitis or optic neuritis",
+          "target": "Negative"
+        },
+        {
+          "item": "Quantitative immunoglobulins (IgG, IgA, IgM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before immunotherapy; IgA deficiency (IVIG contraindication)",
+          "target": "Normal"
+        },
+        {
+          "item": "RPR/VDRL (CPT 86592)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Neurosyphilis screen",
+          "target": "Nonreactive"
+        },
+        {
+          "item": "HIV antibody (CPT 86703)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "HIV-associated encephalopathy",
+          "target": "Negative"
+        },
+        {
+          "item": "Lyme serology (CPT 86618)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If endemic area; Lyme encephalopathy",
+          "target": "Negative"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Anti-neuronal nuclear antibody type 1 (ANNA-1/anti-Hu)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraneoplastic encephalitis mimic",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-neuronal nuclear antibody type 2 (ANNA-2/anti-Ri)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraneoplastic screen",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-CV2/CRMP5",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraneoplastic encephalitis mimic",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-Ma2/Ta",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraneoplastic limbic encephalitis mimic",
+          "target": "Negative"
+        },
+        {
+          "item": "14-3-3 protein (CSF)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Prion disease exclusion in rapidly progressive cases",
+          "target": "Negative"
+        },
+        {
+          "item": "RT-QuIC (CSF)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Prion disease exclusion",
+          "target": "Negative"
+        },
+        {
+          "item": "CSF oligoclonal bands with paired serum (CPT 83916)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Intrathecal IgG synthesis; elevated in ~25% of HE",
+          "target": "May show CSF-specific bands"
+        },
+        {
+          "item": "CSF IgG index",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Intrathecal antibody synthesis",
+          "target": "May be elevated"
+        },
+        {
+          "item": "Anti-alpha-enolase antibodies (NAE)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Proposed biomarker in HE subset (attacks neuronal surface); research test",
+          "target": "Positive may support HE"
+        },
+        {
+          "item": "CSF anti-TPO antibodies",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Intrathecal production of anti-TPO; not widely validated",
+          "target": "Positive may support intrathecal production"
+        },
+        {
+          "item": "Next-generation sequencing (CSF metagenomics)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Occult infection exclusion when standard testing negative",
+          "target": "No pathogens detected"
+        },
+        {
+          "item": "Brain biopsy (last resort)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Perivascular lymphocytic infiltration; exclusion of other pathology",
+          "target": "Lymphocytic perivascular cuffing, no vasculitis"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Elevated ICP assessment",
+          "target": "10-20 cm H2O (usually normal)"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Mild pleocytosis in ~25% of HE",
+          "target": "WBC usually <50 (lymphocyte-predominant); many cases normal; RBC 0"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Elevated in ~75-80% of HE (most common CSF finding)",
+          "target": "Mildly to moderately elevated (typically 50-150 mg/dL)"
+        },
+        {
+          "item": "Glucose with paired serum glucose (CPT 82945)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Low in infection; typically normal in HE",
+          "target": "Normal (>60% of serum)"
+        },
+        {
+          "item": "Gram stain and bacterial culture (CPT 87205+87070)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Rule out bacterial meningitis",
+          "target": "No organisms"
+        },
+        {
+          "item": "HSV 1/2 PCR (CPT 87529)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Rule out HSV encephalitis (critical mimic)",
+          "target": "Negative"
+        },
+        {
+          "item": "VZV PCR",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Varicella encephalitis",
+          "target": "Negative"
+        },
+        {
+          "item": "EBV PCR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Viral encephalitis screen",
+          "target": "Negative"
+        },
+        {
+          "item": "Enterovirus PCR",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Viral meningitis/encephalitis",
+          "target": "Negative"
+        },
+        {
+          "item": "West Nile virus IgM/IgG",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Endemic areas",
+          "target": "Negative"
+        },
+        {
+          "item": "Cryptococcal antigen (CPT 87327)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Immunocompromised; chronic meningitis",
+          "target": "Negative"
+        },
+        {
+          "item": "VDRL (CSF) (CPT 86592)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis",
+          "target": "Negative"
+        },
+        {
+          "item": "Oligoclonal bands (CSF AND paired serum) (CPT 83916)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Intrathecal IgG synthesis; present in ~25% of HE",
+          "target": "May show CSF-specific bands"
+        },
+        {
+          "item": "IgG index",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Intrathecal antibody synthesis",
+          "target": "May be mildly elevated"
+        },
+        {
+          "item": "Cytology (CPT 88104)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Carcinomatous/lymphomatous meningitis exclusion",
+          "target": "Negative"
+        },
+        {
+          "item": "Flow cytometry",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "CNS lymphoma exclusion",
+          "target": "Normal"
+        },
+        {
+          "item": "**Autoimmune encephalitis antibody panel (CSF)**",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "NMDAR, LGI1, CASPR2, GABA-B, AMPA, DPPX -- to EXCLUDE defined autoimmune encephalitides",
+          "target": "All negative (REQUIRED for HE diagnosis)"
+        },
+        {
+          "item": "AFB culture and smear (CPT 87116)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "TB meningitis if risk factors",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Immediate (ED triage)",
+          "target": "Rule out mass, hemorrhage, hydrocephalus; usually normal in HE",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Within 24h",
+          "target": "Normal in ~50%; subcortical white matter T2/FLAIR hyperintensities; patchy enhancement; may mimic MS or vasculitis; rarely mesial temporal signal",
+          "contraindications": "GFR <30, gadolinium allergy, pacemaker"
+        },
+        {
+          "item": "EEG (routine or continuous) (CPT 95816)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Within 24h; continuous if ICU or altered consciousness",
+          "target": "Generalized or focal slowing (most common, ~90%); frontal intermittent rhythmic delta activity (FIRDA); triphasic waves; epileptiform discharges; rarely periodic lateralized discharges",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Immediate",
+          "target": "Bradycardia (hypothyroid); QTc prolongation (medication safety)",
+          "contraindications": "None"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Immediate",
+          "target": "Rule out pulmonary pathology; mediastinal mass",
+          "contraindications": "Pregnancy (relative)"
+        },
+        {
+          "item": "Thyroid ultrasound (CPT 76536)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within 48-72h",
+          "target": "Evaluate for Hashimoto thyroiditis (heterogeneous echotexture, diffuse hypoechogenicity, nodules); goiter assessment",
+          "contraindications": "None significant"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with epilepsy protocol",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If seizures recurrent",
+          "target": "Subtle cortical lesions; hippocampal sclerosis; exclude structural cause",
+          "contraindications": "Gadolinium contraindications"
+        },
+        {
+          "item": "MRA head and neck",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within 48-72h if vasculitis suspected",
+          "target": "Rule out CNS vasculitis; large vessel disease",
+          "contraindications": "Gadolinium contraindications"
+        },
+        {
+          "item": "CT chest/abdomen/pelvis with contrast (CPT 71260+74178)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within 48-72h",
+          "target": "Occult malignancy screen (paraneoplastic mimic); thyroid pathology",
+          "contraindications": "Contrast allergy, renal insufficiency"
+        },
+        {
+          "item": "FDG-PET brain (CPT 78816)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Within 1-2 weeks",
+          "target": "Cortical hypometabolism; differentiate from other encephalopathies",
+          "contraindications": "Uncontrolled diabetes, pregnancy"
+        },
+        {
+          "item": "Video-EEG monitoring (prolonged)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "As needed",
+          "target": "Characterize seizure semiology; detect subclinical seizures; distinguish epileptic from non-epileptic events",
+          "contraindications": "None"
+        },
+        {
+          "item": "Cerebral angiography (conventional)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "If CNS vasculitis strongly suspected",
+          "target": "Rule out primary CNS vasculitis (beading pattern)",
+          "contraindications": "Contrast allergy, renal insufficiency, coagulopathy"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "MRI spine (cervical and thoracic) with and without contrast",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If myelopathic signs present",
+          "target": "Concurrent myelitis; overlap syndromes (NMOSD, MOGAD)",
+          "contraindications": "GFR <30, gadolinium allergy"
+        },
+        {
+          "item": "SPECT brain",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If PET unavailable",
+          "target": "Regional hypoperfusion; frontal or temporal abnormalities",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Brain biopsy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "Last resort; diagnosis uncertain despite full workup",
+          "target": "Perivascular lymphocytic infiltration without vasculitis; exclusion of other pathology",
+          "contraindications": "Coagulopathy, inaccessible location"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Acyclovir IV (empiric until HSV ruled out)",
+          "route": "IV",
+          "indication": "Encephalopathy of unknown etiology pending HSV PCR",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg",
+                "orderSentence": "Acyclovir IV (empiric until HSV ruled out) 10 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg/kg IV q8h; continue until HSV PCR negative x2 (48h apart) or alternative diagnosis confirmed",
+            "orderSentence": "Acyclovir IV (empiric until HSV ruled out) 10 mg/kg IV"
+          },
+          "contraindications": "Renal impairment (adjust dose); adequate hydration required",
+          "monitoring": "Renal function daily; hydration status; crystal nephropathy prevention",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ceftriaxone (empiric if bacterial meningitis not excluded)",
+          "route": "IV",
+          "indication": "Pending CSF culture results; empiric bacterial meningitis coverage",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2g",
+                "orderSentence": "Ceftriaxone (empiric if bacterial meningitis not excluded) 2g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2g IV q12h; continue until CSF cultures negative at 48-72h",
+            "orderSentence": "Ceftriaxone (empiric if bacterial meningitis not excluded) 2g IV"
+          },
+          "contraindications": "Cephalosporin allergy; severe penicillin allergy (cross-reactivity)",
+          "monitoring": "Cultures; clinical response; CBC; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Vancomycin (empiric if bacterial meningitis not excluded)",
+          "route": "IV",
+          "indication": "Pending CSF culture results; covers resistant pneumococcus",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-20 mg/kg",
+                "orderSentence": "Vancomycin (empiric if bacterial meningitis not excluded) 15-20 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "15-20 mg/kg IV q8-12h (actual body weight); target trough AUC/MIC 400-600",
+            "orderSentence": "Vancomycin (empiric if bacterial meningitis not excluded) 15-20 mg/kg IV"
+          },
+          "contraindications": "Vancomycin allergy; red man syndrome (infuse over >1h)",
+          "monitoring": "Vancomycin trough or AUC; renal function daily; ototoxicity",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone (empiric meningitis dose)",
+          "route": "IV",
+          "indication": "Adjunctive with empiric antibiotics for suspected bacterial meningitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.15 mg/kg",
+                "orderSentence": "Dexamethasone (empiric meningitis dose) 0.15 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.15 mg/kg IV q6h x 4 days; give first dose BEFORE or WITH first antibiotic dose",
+            "orderSentence": "Dexamethasone (empiric meningitis dose) 0.15 mg/kg IV"
+          },
+          "contraindications": "Active fungal infection; known viral meningitis",
+          "monitoring": "Glucose; GI bleeding; clinical response",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam (acute seizure)",
+          "route": "IV",
+          "indication": "Active seizure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/kg",
+                "orderSentence": "Lorazepam (acute seizure) 0.1 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg/dose); repeat x1 in 5 minutes if seizure persists",
+            "orderSentence": "Lorazepam (acute seizure) 0.1 mg/kg IV"
+          },
+          "contraindications": "Respiratory depression; acute narrow-angle glaucoma",
+          "monitoring": "Respiratory status; sedation level; airway patency",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Midazolam (if no IV access)",
+          "route": "IM",
+          "indication": "Active seizure without IV access",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Midazolam (if no IV access) 10 mg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "10 mg IM (adults >40 kg) or 0.2 mg/kg intranasal",
+            "orderSentence": "Midazolam (if no IV access) 10 mg IM"
+          },
+          "contraindications": "Respiratory depression",
+          "monitoring": "Respiratory status; sedation level; airway patency",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levothyroxine (if hypothyroid)",
+          "route": "IV/PO",
+          "indication": "Hypothyroidism contributing to encephalopathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1.6 mcg/kg",
+                "orderSentence": "Levothyroxine (if hypothyroid) 1.6 mcg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1.6 mcg/kg/day PO (adjust for age/cardiac status); IV dose is 75% of oral dose if unable to take PO",
+            "orderSentence": "Levothyroxine (if hypothyroid) 1.6 mcg/kg PO"
+          },
+          "contraindications": "Untreated adrenal insufficiency (check cortisol first); acute MI (start low)",
+          "monitoring": "TSH, free T4 q4-6 weeks; cardiac monitoring in elderly/cardiac patients",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "First-Line Immunotherapy (Corticosteroids)": [
+        {
+          "item": "Methylprednisolone IV (CPT 96365)",
+          "route": "IV",
+          "indication": "First-line treatment; dramatic steroid response is hallmark of HE",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone IV (CPT 96365) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily x 3-5 days; infuse over 1-2 hours; most patients show improvement within 24-72 hours",
+            "orderSentence": "Methylprednisolone IV (CPT 96365) 1000 mg IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis from steroids",
+          "monitoring": "Glucose q6h (target <180); BP; mood/sleep; I/O; GI prophylaxis",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Omeprazole (GI prophylaxis during steroids)",
+          "route": "PO/IV",
+          "indication": "GI protection during high-dose steroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Omeprazole (GI prophylaxis during steroids) 40 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "40 mg IV/PO daily during steroid course and taper",
+            "orderSentence": "Omeprazole (GI prophylaxis during steroids) 40 mg IV"
+          },
+          "contraindications": "PPI allergy",
+          "monitoring": "None routine",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Insulin sliding scale",
+          "route": "SC",
+          "indication": "Steroid-induced hyperglycemia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Insulin sliding scale Per protocol SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Per protocol if glucose >180 mg/dL",
+            "orderSentence": "Insulin sliding scale Per protocol SC"
+          },
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Glucose q6h; adjust per response",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Oral prednisone taper (following IV methylprednisolone)",
+          "route": "PO",
+          "indication": "Maintenance after IV pulse; prevent relapse",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg/kg",
+                "orderSentence": "Oral prednisone taper (following IV methylprednisolone) 1 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 mg/kg/day (max 60-80 mg) x 2-4 weeks; taper by 10 mg every 1-2 weeks to 20 mg; then taper by 5 mg every 1-2 weeks; total taper over 3-6 months; SLOW taper critical (relapse rate 40-50% with rapid taper)",
+            "orderSentence": "Oral prednisone taper (following IV methylprednisolone) 1 mg/kg PO"
+          },
+          "contraindications": "Active infection; uncontrolled diabetes; avascular necrosis",
+          "monitoring": "Glucose; BP; bone density if prolonged; mood; weight; adrenal insufficiency on taper; relapse monitoring",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-Line Immunotherapy (Steroid-Sparing / Refractory)": [
+        {
+          "item": "IVIG (intravenous immunoglobulin) (CPT 96365)",
+          "route": "IV",
+          "indication": "Steroid-refractory HE; relapsing disease; steroid contraindications",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 0.4 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol; premedicate with acetaminophen, diphenhydramine",
+            "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 0.4 g/kg IV"
+          },
+          "contraindications": "IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure",
+          "monitoring": "Renal function daily; headache (aseptic meningitis); thrombosis; volume overload; check IgA level before first dose",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Plasmapheresis (PLEX)",
+          "route": "-",
+          "indication": "Steroid-refractory; rapidly progressive encephalopathy; severe presentation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-7 exchanges",
+                "orderSentence": "Plasmapheresis (PLEX) 5-7 exchanges -"
+              }
+            ],
+            "route": "-",
+            "instructions": "5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange; albumin replacement",
+            "orderSentence": "Plasmapheresis (PLEX) 5-7 exchanges -"
+          },
+          "contraindications": "Hemodynamic instability; sepsis; coagulopathy; poor vascular access",
+          "monitoring": "BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Azathioprine (Imuran)",
+          "route": "PO",
+          "indication": "Steroid-sparing maintenance; relapsing HE",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Azathioprine (Imuran) 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg PO daily; increase by 50 mg every 2 weeks to target 2-3 mg/kg/day",
+            "orderSentence": "Azathioprine (Imuran) 50 mg PO"
+          },
+          "contraindications": "TPMT deficiency (check before starting); pregnancy (relative)",
+          "monitoring": "TPMT genotype/activity before starting; CBC q2 weeks x 2 months, then monthly; LFTs; pancreatitis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mycophenolate mofetil (CellCept)",
+          "route": "PO",
+          "indication": "Steroid-sparing maintenance; relapsing HE",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil (CellCept) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg PO BID; increase to 1000 mg PO BID over 2-4 weeks (target 1500-3000 mg/day)",
+            "orderSentence": "Mycophenolate mofetil (CellCept) 500 mg PO"
+          },
+          "contraindications": "Pregnancy (Category D -- teratogenic); active infection",
+          "monitoring": "CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms; infection surveillance; pregnancy prevention",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rituximab",
+          "route": "IV",
+          "indication": "Refractory to steroids and other steroid-sparing agents; multiple relapses",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "375 mg/m2",
+                "orderSentence": "Rituximab 375 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0 and day 14); premedicate with methylprednisolone 100 mg, acetaminophen, diphenhydramine",
+            "orderSentence": "Rituximab 375 mg/m2 IV"
+          },
+          "contraindications": "Active hepatitis B; severe active infection; live vaccines within 4 weeks",
+          "monitoring": "Hepatitis B serology (before first dose); CBC with differential q2-4 weeks; immunoglobulin levels q3 months; CD19/CD20 B-cell counts; infusion reactions; PML surveillance",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cyclophosphamide",
+          "route": "IV",
+          "indication": "Severe refractory HE failing all other agents",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "750 mg/m2",
+                "orderSentence": "Cyclophosphamide 750 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "750 mg/m2 IV monthly x 6 cycles; pre-hydrate with 1L NS; administer with MESNA (uroprotection)",
+            "orderSentence": "Cyclophosphamide 750 mg/m2 IV"
+          },
+          "contraindications": "Pregnancy; active infection; bone marrow failure",
+          "monitoring": "CBC weekly x 4 weeks after each cycle (nadir day 10-14); urinalysis; BMP; LFTs; fertility counseling; hemorrhagic cystitis prevention",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Methotrexate",
+          "route": "PO",
+          "indication": "Steroid-sparing alternative; relapsing HE",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "7.5 mg",
+                "orderSentence": "Methotrexate 7.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 7.5 mg PO weekly; increase to 15-25 mg weekly over 4-8 weeks; supplement with folic acid 1 mg daily",
+            "orderSentence": "Methotrexate 7.5 mg PO"
+          },
+          "contraindications": "Pregnancy; hepatic disease; renal impairment; active infection; bone marrow suppression",
+          "monitoring": "CBC monthly; LFTs monthly; renal function; pulmonary symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Seizure Management": [
+        {
+          "item": "Levetiracetam (first-line ASM)",
+          "route": "IV/PO",
+          "indication": "Seizures associated with HE (occur in ~60-70% of cases)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1500 mg",
+                "orderSentence": "Levetiracetam (first-line ASM) 1000-1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Load: 1000-1500 mg IV; Maintenance: 500-1500 mg IV/PO BID (max 3000 mg/day)",
+            "orderSentence": "Levetiracetam (first-line ASM) 1000-1500 mg IV"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Behavioral changes (rage, irritability); suicidality; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lacosamide (second-line ASM)",
+          "route": "IV/PO",
+          "indication": "Second-line or adjunctive for focal seizures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200-400 mg",
+                "orderSentence": "Lacosamide (second-line ASM) 200-400 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Load: 200-400 mg IV; Maintenance: 100-200 mg IV/PO BID (max 400 mg/day)",
+            "orderSentence": "Lacosamide (second-line ASM) 200-400 mg IV"
+          },
+          "contraindications": "Second/third degree AV block; severe hepatic impairment",
+          "monitoring": "ECG (PR prolongation); dizziness; cardiac monitoring during load",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Valproic acid",
+          "route": "IV/PO",
+          "indication": "Generalized or focal seizures; dual benefit for mood stabilization",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-40 mg/kg",
+                "orderSentence": "Valproic acid 20-40 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Load: 20-40 mg/kg IV (max rate 6 mg/kg/min); Maintenance: 250-500 mg IV/PO q8h (target level 50-100 mcg/mL)",
+            "orderSentence": "Valproic acid 20-40 mg/kg IV"
+          },
+          "contraindications": "Pregnancy (teratogenic -- Category X); hepatic disease; urea cycle disorders; mitochondrial disease (POLG)",
+          "monitoring": "LFTs; ammonia; CBC (thrombocytopenia); drug level; pancreatitis",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Brivaracetam",
+          "route": "IV/PO",
+          "indication": "Alternative to levetiracetam (fewer behavioral side effects)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Brivaracetam 100 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Load: 100 mg IV; Maintenance: 50-100 mg IV/PO BID (max 200 mg/day)",
+            "orderSentence": "Brivaracetam 100 mg IV"
+          },
+          "contraindications": "Hepatic impairment (reduce dose)",
+          "monitoring": "Behavioral changes; sedation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Clobazam",
+          "route": "PO",
+          "indication": "Adjunctive for refractory seizures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Clobazam 5-10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5-10 mg BID; titrate to 20-40 mg/day in divided doses",
+            "orderSentence": "Clobazam 5-10 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; myasthenia gravis",
+          "monitoring": "Sedation; CYP2C19 poor metabolizers (reduce dose); tolerance; dependence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Phenytoin/fosphenytoin (acute refractory)",
+          "route": "IV",
+          "indication": "Acute seizure control if first-line agents insufficient",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg PE/kg",
+                "orderSentence": "Phenytoin/fosphenytoin (acute refractory) 20 mg PE/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Fosphenytoin: 20 mg PE/kg IV (max rate 150 mg PE/min); Maintenance: 5-7 mg/kg/day divided BID-TID (target level 10-20 mcg/mL)",
+            "orderSentence": "Phenytoin/fosphenytoin (acute refractory) 20 mg PE/kg IV"
+          },
+          "contraindications": "AV block; bradycardia",
+          "monitoring": "Continuous cardiac monitoring during load; drug level; purple glove syndrome (peripheral IV)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Midazolam infusion (refractory SE)",
+          "route": "IV",
+          "indication": "Refractory status epilepticus",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.2 mg/kg",
+                "orderSentence": "Midazolam infusion (refractory SE) 0.2 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Bolus: 0.2 mg/kg IV; Infusion: 0.1-2.0 mg/kg/hr; titrate to EEG burst suppression",
+            "orderSentence": "Midazolam infusion (refractory SE) 0.2 mg/kg IV"
+          },
+          "contraindications": "Unprotected airway (requires intubation)",
+          "monitoring": "Continuous EEG; respiratory status; hemodynamics; tachyphylaxis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Propofol infusion (refractory SE)",
+          "route": "IV",
+          "indication": "Refractory status epilepticus",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mg/kg",
+                "orderSentence": "Propofol infusion (refractory SE) 1-2 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Bolus: 1-2 mg/kg IV; Infusion: 20-80 mcg/kg/min (max 5 mg/kg/hr to avoid PRIS)",
+            "orderSentence": "Propofol infusion (refractory SE) 1-2 mg/kg IV"
+          },
+          "contraindications": "Propofol infusion syndrome risk (prolonged use >48h at high doses); egg/soy allergy",
+          "monitoring": "Continuous EEG; triglycerides q48h; CPK; lactate; hemodynamics; PRIS surveillance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Psychiatric Symptom Management": [
+        {
+          "item": "Haloperidol (acute agitation/psychosis)",
+          "route": "IV/IM",
+          "indication": "Acute psychosis or severe agitation (psychiatric symptoms in ~35-45% of HE)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-2 mg",
+                "orderSentence": "Haloperidol (acute agitation/psychosis) 0.5-2 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5-2 mg IV/IM q4-6h PRN (lowest effective dose); max 20 mg/day",
+            "orderSentence": "Haloperidol (acute agitation/psychosis) 0.5-2 mg IV"
+          },
+          "contraindications": "QTc >500 ms; Parkinson disease; prior NMS",
+          "monitoring": "ECG (QTc); EPS; NMS surveillance; temperature; CPK if NMS suspected",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Quetiapine (psychosis/insomnia)",
+          "route": "PO",
+          "indication": "Psychosis, agitation, sleep disruption",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg",
+                "orderSentence": "Quetiapine (psychosis/insomnia) 25-50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg qHS; titrate to 200-400 mg/day in divided doses",
+            "orderSentence": "Quetiapine (psychosis/insomnia) 25-50 mg PO"
+          },
+          "contraindications": "QTc prolongation; severe hepatic impairment",
+          "monitoring": "QTc; metabolic parameters; orthostatic BP; sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Olanzapine (agitation/psychosis)",
+          "route": "IM/PO",
+          "indication": "Moderate agitation or psychosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5-5 mg",
+                "orderSentence": "Olanzapine (agitation/psychosis) 2.5-5 mg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "2.5-5 mg PO/IM BID (start low); max 20 mg/day",
+            "orderSentence": "Olanzapine (agitation/psychosis) 2.5-5 mg IM"
+          },
+          "contraindications": "QTc prolongation; metabolic syndrome",
+          "monitoring": "Glucose; lipids; QTc; weight; sedation; EPS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Lorazepam (agitation/anxiety)",
+          "route": "IV/PO",
+          "indication": "Acute agitation, anxiety, insomnia; catatonia features",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mg",
+                "orderSentence": "Lorazepam (agitation/anxiety) 1-2 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2 mg IV/PO q4-6h PRN; for catatonia: escalate to 8-24 mg/day as needed",
+            "orderSentence": "Lorazepam (agitation/anxiety) 1-2 mg IV"
+          },
+          "contraindications": "Respiratory compromise (high doses)",
+          "monitoring": "Respiratory rate; sedation; airway",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Valproic acid (mood stabilization)",
+          "route": "PO",
+          "indication": "Mood lability, agitation; dual benefit for seizure control in HE",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250-500 mg",
+                "orderSentence": "Valproic acid (mood stabilization) 250-500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "250-500 mg PO BID; titrate to level 50-100 mcg/mL",
+            "orderSentence": "Valproic acid (mood stabilization) 250-500 mg PO"
+          },
+          "contraindications": "Pregnancy (teratogenic -- Category X); hepatic disease; urea cycle disorders; mitochondrial disease (POLG)",
+          "monitoring": "LFTs; ammonia; CBC (thrombocytopenia); drug level; pancreatitis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Melatonin (sleep-wake disturbance)",
+          "route": "PO",
+          "indication": "Sleep disruption (common in HE)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3-10 mg",
+                "orderSentence": "Melatonin (sleep-wake disturbance) 3-10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-10 mg PO qHS",
+            "orderSentence": "Melatonin (sleep-wake disturbance) 3-10 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Sleep quality; no significant drug interactions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Trazodone (insomnia)",
+          "route": "PO",
+          "indication": "Persistent insomnia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-100 mg",
+                "orderSentence": "Trazodone (insomnia) 25-100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-100 mg PO qHS",
+            "orderSentence": "Trazodone (insomnia) 25-100 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation",
+          "monitoring": "Orthostatic hypotension; priapism (rare); sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "ICU-Specific Treatments": [
+        {
+          "item": "Intubation and mechanical ventilation",
+          "route": "-",
+          "indication": "Status epilepticus requiring anesthetic infusions; severe decreased consciousness (GCS <8); inability to protect airway",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "RSI per protocol",
+                "orderSentence": "Intubation and mechanical ventilation RSI per protocol -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Avoid succinylcholine if hyperkalemia risk; maintain normocapnia; daily spontaneous breathing trials when appropriate",
+            "orderSentence": "Intubation and mechanical ventilation RSI per protocol -"
+          },
+          "contraindications": "As per standard airway management",
+          "monitoring": "Ventilator parameters; ABG; daily SBT assessment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "DVT prophylaxis (enoxaparin)",
+          "route": "SC",
+          "indication": "Immobilized patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "DVT prophylaxis (enoxaparin) 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily (adjust for renal function: 30 mg SC daily if CrCl <30)",
+            "orderSentence": "DVT prophylaxis (enoxaparin) 40 mg SC"
+          },
+          "contraindications": "Active bleeding; HIT; severe thrombocytopenia",
+          "monitoring": "Platelet count; anti-Xa if renal impairment; bleeding signs",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acetaminophen (antipyretic)",
+          "route": "IV/PO",
+          "indication": "Fever management in ICU; central fever or status epilepticus-related hyperthermia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1g",
+                "orderSentence": "Acetaminophen (antipyretic) 1g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1g IV/PO q6h PRN (max 4g/day); use as part of targeted temperature management (36-37C)",
+            "orderSentence": "Acetaminophen (antipyretic) 1g IV"
+          },
+          "contraindications": "Severe hepatic impairment; weight <50 kg (reduce dose)",
+          "monitoring": "Hepatic function; temperature response",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cooling measures (non-pharmacologic)",
+          "route": "-",
+          "indication": "Central fever or status epilepticus-related hyperthermia refractory to antipyretics",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Cooling measures (non-pharmacologic) - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Cooling blankets, ice packs, surface cooling devices; target temperature 36-37C",
+            "orderSentence": "Cooling measures (non-pharmacologic) - -"
+          },
+          "contraindications": "Avoid overcooling; coagulopathy risk with hypothermia",
+          "monitoring": "Continuous temperature monitoring; shivering assessment (Bedside Shivering Assessment Scale)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Labetalol IV (hypertensive emergency in encephalopathy)",
+          "route": "IV",
+          "indication": "Hypertensive crisis associated with encephalopathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg",
+                "orderSentence": "Labetalol IV (hypertensive emergency in encephalopathy) 10-20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10-20 mg IV q10-15min PRN; or infusion 0.5-2 mg/min; target SBP <180",
+            "orderSentence": "Labetalol IV (hypertensive emergency in encephalopathy) 10-20 mg IV"
+          },
+          "contraindications": "Severe bradycardia; AV block; decompensated CHF; asthma",
+          "monitoring": "Continuous BP; HR; I/O",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexmedetomidine (agitation in ICU)",
+          "route": "IV",
+          "indication": "ICU agitation requiring sedation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mcg/kg",
+                "orderSentence": "Dexmedetomidine (agitation in ICU) 1 mcg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Load: 1 mcg/kg IV over 10 min (optional); Infusion: 0.2-0.7 mcg/kg/hr (max 1.5 mcg/kg/hr)",
+            "orderSentence": "Dexmedetomidine (agitation in ICU) 1 mcg/kg IV"
+          },
+          "contraindications": "Severe bradycardia; advanced heart block",
+          "monitoring": "HR (bradycardia); BP (hypotension); sedation level (RASS)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Famotidine (stress ulcer prophylaxis)",
+          "route": "IV",
+          "indication": "ICU admission with steroid use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Famotidine (stress ulcer prophylaxis) 20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "20 mg IV q12h",
+            "orderSentence": "Famotidine (stress ulcer prophylaxis) 20 mg IV"
+          },
+          "contraindications": "GFR <50 (reduce dose)",
+          "monitoring": "GI bleeding signs",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Long-Term Maintenance & Relapse Prevention": [
+        {
+          "item": "Oral prednisone (low-dose maintenance)",
+          "route": "PO",
+          "indication": "Relapse prevention; some patients require long-term low-dose steroids",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Oral prednisone (low-dose maintenance) 5-10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5-10 mg PO daily; aim to taper off if on steroid-sparing agent; some patients require indefinite low-dose",
+            "orderSentence": "Oral prednisone (low-dose maintenance) 5-10 mg PO"
+          },
+          "contraindications": "Poorly controlled diabetes; active infection; avascular necrosis",
+          "monitoring": "Glucose; BP; bone density (DEXA if >3 months); weight; mood; cataracts; adrenal assessment on taper",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Azathioprine (maintenance)",
+          "route": "PO",
+          "indication": "Steroid-sparing maintenance; relapse prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-3 mg/kg",
+                "orderSentence": "Azathioprine (maintenance) 2-3 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2-3 mg/kg/day (target established during initial titration)",
+            "orderSentence": "Azathioprine (maintenance) 2-3 mg/kg PO"
+          },
+          "contraindications": "TPMT deficiency; pregnancy",
+          "monitoring": "CBC monthly; LFTs q3 months; infection surveillance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mycophenolate mofetil (maintenance)",
+          "route": "PO",
+          "indication": "Steroid-sparing maintenance; relapse prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Mycophenolate mofetil (maintenance) 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mg PO BID (established dose)",
+            "orderSentence": "Mycophenolate mofetil (maintenance) 1000 mg PO"
+          },
+          "contraindications": "Pregnancy; active infection",
+          "monitoring": "CBC monthly; LFTs q3 months; GI symptoms; pregnancy prevention",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levothyroxine (thyroid optimization)",
+          "route": "PO",
+          "indication": "Maintain euthyroid state; hypothyroidism present in 25-30%",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1.6 mcg/kg",
+                "orderSentence": "Levothyroxine (thyroid optimization) 1.6 mcg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1.6 mcg/kg/day PO; adjust to keep TSH 0.5-2.5 mIU/L",
+            "orderSentence": "Levothyroxine (thyroid optimization) 1.6 mcg/kg PO"
+          },
+          "contraindications": "Adrenal insufficiency (correct first); acute cardiac disease",
+          "monitoring": "TSH, free T4 q4-6 weeks until stable, then q3-6 months",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium + Vitamin D (bone protection with steroids)",
+          "route": "PO",
+          "indication": "All patients on steroids >3 months",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1200 mg/day",
+                "orderSentence": "Calcium + Vitamin D (bone protection with steroids) 1000-1200 mg/day PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 1000-1200 mg/day + Vitamin D 1000-2000 IU/day",
+            "orderSentence": "Calcium + Vitamin D (bone protection with steroids) 1000-1200 mg/day PO"
+          },
+          "contraindications": "Hypercalcemia; kidney stones",
+          "monitoring": "25-OH Vitamin D level; calcium; DEXA baseline if anticipated steroid use >3 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IVIG (maintenance)",
+          "route": "IV",
+          "indication": "Multiply-relapsing HE; steroid-dependent",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIG (maintenance) 0.4 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.4 g/kg IV every 4 weeks (adjust per response)",
+            "orderSentence": "IVIG (maintenance) 0.4 g/kg IV"
+          },
+          "contraindications": "IgA deficiency; thromboembolic history",
+          "monitoring": "Renal function; headache; IgG trough levels; infusion reactions",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology (autoimmune/neuroimmunology) -- all suspected HE cases; immunotherapy management; differential diagnosis; diagnosis of exclusion requires expert assessment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Endocrinology -- thyroid function optimization; Hashimoto thyroiditis management; steroid-induced diabetes management",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Epilepsy/EEG service -- seizure management; continuous EEG monitoring; EEG pattern interpretation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Psychiatry -- psychiatric manifestations (psychosis, depression, personality change); medication management",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Critical care/ICU -- status epilepticus; severe decreased consciousness; need for mechanical ventilation",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Rheumatology -- if concurrent systemic autoimmune disease suspected (SLE, Sjogren, vasculitis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hematology/apheresis -- PLEX coordination if steroid-refractory",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy -- motor rehabilitation; gait training; fall prevention; deconditioning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Occupational therapy -- ADL assessment; cognitive rehabilitation; adaptive strategies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Speech-language pathology -- swallowing evaluation if decreased consciousness; cognitive-linguistic therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Neuropsychology -- formal cognitive assessment; rehabilitation planning; serial monitoring of cognitive recovery",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work -- family support; insurance navigation; disability resources; long-term care planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rehabilitation medicine -- comprehensive inpatient or outpatient rehab program if significant functional deficits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately for new seizures, sudden confusion, behavioral changes, fever, difficulty breathing, or loss of consciousness",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Hashimoto's encephalopathy is a treatable condition -- most patients improve dramatically with steroids; recovery takes weeks to months",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Do NOT drive until seizure-free for state-mandated period AND cleared by neurology",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Keep seizure diary (date, time, type, duration, triggers) if seizures have occurred",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Do NOT stop steroid medications abruptly -- abrupt discontinuation causes adrenal crisis and disease relapse",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Report any signs of infection (fever >100.4F, cough, dysuria, rash) immediately while on immunotherapy",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid live vaccines while on immunosuppressive therapy (inform all physicians of immunosuppression status)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Steroid side effects to monitor: weight gain, mood changes, insomnia, elevated blood sugar, bone thinning -- report if severe",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "This condition relapses in 40-50% of patients -- follow-up appointments are critical for monitoring and adjusting treatment",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid alcohol (lowers seizure threshold, interacts with medications, worsens encephalopathy)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Discuss pregnancy with neurology and OB/GYN before conception (some immunotherapy medications are teratogenic)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Cognitive difficulties (memory, attention, processing speed) are common and often improve gradually with treatment",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Take thyroid medication at same time daily, on empty stomach, separated from calcium and iron by 4 hours",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Obtain medical alert bracelet (encephalopathy, seizure risk, immunosuppressed, steroid-dependent)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Bring all medications to every appointment; do not add over-the-counter medications without consulting neurology",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Autoimmune encephalitis (anti-NMDAR, LGI1, CASPR2, GABA-B)",
+      "features": "Specific antibody-mediated syndromes with defined clinical phenotypes; specific antibodies positive",
+      "tests": "Cell-based assay antibody panels (serum AND CSF); CSF NMDAR is most sensitive"
+    },
+    {
+      "diagnosis": "HSV encephalitis",
+      "features": "Acute fever, temporal lobe hemorrhagic necrosis, CSF pleocytosis with RBCs",
+      "tests": "HSV PCR (CSF); MRI temporal lobe changes; more acute onset"
+    },
+    {
+      "diagnosis": "Other viral encephalitis (EBV, CMV, HHV-6, enterovirus)",
+      "features": "Fever, CSF pleocytosis, specific exposure/season",
+      "tests": "Specific viral PCR/serology"
+    },
+    {
+      "diagnosis": "Bacterial meningitis/encephalitis",
+      "features": "Acute fever, meningismus, CSF neutrophilic pleocytosis, low glucose",
+      "tests": "CSF Gram stain, culture, procalcitonin"
+    },
+    {
+      "diagnosis": "Prion disease (CJD)",
+      "features": "Rapidly progressive dementia, myoclonus, akinetic mutism; cortical ribboning on MRI (DWI)",
+      "tests": "14-3-3 protein; RT-QuIC; MRI DWI cortical ribboning; EEG periodic discharges"
+    },
+    {
+      "diagnosis": "CNS vasculitis (PACNS)",
+      "features": "Headache, stroke-like episodes, multifocal infarcts, elevated ESR/CRP",
+      "tests": "Angiography; brain/leptomeningeal biopsy; ESR/CRP; vessel wall imaging"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis",
+      "features": "Cranial neuropathies, hypothalamic dysfunction, leptomeningeal enhancement",
+      "tests": "ACE level; chest CT (hilar adenopathy); biopsy"
+    },
+    {
+      "diagnosis": "CNS lymphoma",
+      "features": "Progressive encephalopathy, mass lesion, periventricular enhancement",
+      "tests": "CSF cytology/flow cytometry; FDG-PET; brain biopsy"
+    },
+    {
+      "diagnosis": "Metabolic encephalopathy (hepatic, uremic, thyroid)",
+      "features": "Metabolic derangement identified; resolves with correction",
+      "tests": "CMP; LFTs; ammonia; TSH; correct underlying metabolic cause"
+    },
+    {
+      "diagnosis": "Myxedema coma",
+      "features": "Severe hypothyroidism; hypothermia; bradycardia; obtundation; very low T4/elevated TSH",
+      "tests": "TSH markedly elevated; free T4 very low; responds to thyroid hormone replacement (HE does NOT)"
+    },
+    {
+      "diagnosis": "Neurosyphilis",
+      "features": "Cognitive decline, psychiatric symptoms, Argyll Robertson pupils",
+      "tests": "RPR/VDRL; CSF VDRL; FTA-ABS"
+    },
+    {
+      "diagnosis": "Drug/toxin-induced encephalopathy",
+      "features": "Temporal correlation with drug exposure; resolves with discontinuation",
+      "tests": "Urine drug screen; medication review; drug levels"
+    },
+    {
+      "diagnosis": "Psychiatric disorder (new-onset psychosis, depression)",
+      "features": "No CSF abnormalities; normal MRI/EEG; isolated psychiatric symptoms",
+      "tests": "LP mandatory to differentiate; EEG; MRI; anti-TPO alone insufficient"
+    },
+    {
+      "diagnosis": "ADEM (acute disseminated encephalomyelitis)",
+      "features": "Post-infectious/post-vaccination; multifocal large white matter lesions",
+      "tests": "MRI pattern; MOG-IgG; monophasic course"
+    },
+    {
+      "diagnosis": "Seizure-related encephalopathy (post-ictal/NCSE)",
+      "features": "Prolonged post-ictal confusion; non-convulsive status on EEG",
+      "tests": "Continuous EEG monitoring; resolves with ASM treatment"
+    },
+    {
+      "diagnosis": "Cerebral venous thrombosis",
+      "features": "Headache, seizures, focal deficits; venous sinus thrombosis on imaging",
+      "tests": "MRV or CT venogram; D-dimer"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Hashimoto's encephalopathy as steroid-responsive encephalopathy (SREAT)",
+      "evidenceLevel": "Class IV, Expert Consensus",
+      "source": "[Castillo P et al. Arch Neurol 2006;63:197-202](https://pubmed.ncbi.nlm.nih.gov/16476807/)"
+    },
+    {
+      "recommendation": "Anti-TPO antibodies in >95% of HE cases; diagnosis of exclusion",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "[Ferracci F et al. J Neurol Neurosurg Psychiatry 2004;75:1083-1086](https://pubmed.ncbi.nlm.nih.gov/15258206/)"
+    },
+    {
+      "recommendation": "SREAT terminology preferred; relationship to thyroid autoimmunity uncertain",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Graus F et al. Lancet Neurol 2016;15:391-404](https://pubmed.ncbi.nlm.nih.gov/26906964/)"
+    },
+    {
+      "recommendation": "Two clinical subtypes: diffuse progressive (type 1) and relapsing-remitting (type 2)",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "[Kothbauer-Margreiter I et al. J Neurol 1996;243:585-593](https://pubmed.ncbi.nlm.nih.gov/8865025/)"
+    },
+    {
+      "recommendation": "CSF protein elevation in 75-80%; pleocytosis in ~25%",
+      "evidenceLevel": "Class IV, Systematic Review",
+      "source": "[Chong JY et al. Arch Neurol 2003;60:164-171](https://pubmed.ncbi.nlm.nih.gov/12580699/)"
+    },
+    {
+      "recommendation": "EEG abnormalities in ~90% (generalized slowing, FIRDA, triphasic waves)",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "[Chong JY et al. Arch Neurol 2003;60:164-171](https://pubmed.ncbi.nlm.nih.gov/12580699/)"
+    },
+    {
+      "recommendation": "Seizures in ~60-70% of HE; status epilepticus in ~10-15%",
+      "evidenceLevel": "Class IV, Systematic Review",
+      "source": "[Laurent C et al. Medicine 2016;95:e4075](https://pubmed.ncbi.nlm.nih.gov/27583849/)"
+    },
+    {
+      "recommendation": "Dramatic steroid response (improvement within days)",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "[Brain L et al. Lancet 1966;2:512-514](https://pubmed.ncbi.nlm.nih.gov/4161638/)"
+    },
+    {
+      "recommendation": "High-dose IV methylprednisolone as first-line treatment",
+      "evidenceLevel": "Class IV, Expert Consensus",
+      "source": "[Castillo P et al. Arch Neurol 2006;63:197-202](https://pubmed.ncbi.nlm.nih.gov/16476807/)"
+    },
+    {
+      "recommendation": "Relapse rate ~40-50%; associated with rapid steroid taper",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "[Olmez I et al. J Neuropsychiatry Clin Neurosci 2013;25:13-19](https://pubmed.ncbi.nlm.nih.gov/23487188/)"
+    },
+    {
+      "recommendation": "IVIG effective in steroid-refractory cases",
+      "evidenceLevel": "Class IV, Case Reports",
+      "source": "[Jacob S & Bhatt M. J Neurol 2009;256:2005-2007](https://pubmed.ncbi.nlm.nih.gov/19655214/)"
+    },
+    {
+      "recommendation": "Plasmapheresis for acute refractory HE",
+      "evidenceLevel": "Class IV, Case Reports",
+      "source": "[Boers PM & Colebatch JG. Clin Neurol Neurosurg 2001;103:199-201](https://pubmed.ncbi.nlm.nih.gov/11532563/)"
+    },
+    {
+      "recommendation": "Azathioprine and mycophenolate as steroid-sparing agents",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "[Ferracci F et al. Thyroid 2006;16:37-42](https://pubmed.ncbi.nlm.nih.gov/16487011/)"
+    },
+    {
+      "recommendation": "Rituximab for refractory HE",
+      "evidenceLevel": "Class IV, Case Reports",
+      "source": "[Olmez I et al. J Neuropsychiatry Clin Neurosci 2013;25:13-19](https://pubmed.ncbi.nlm.nih.gov/23487188/)"
+    },
+    {
+      "recommendation": "Anti-TPO titers do not correlate with disease severity or activity",
+      "evidenceLevel": "Class IV",
+      "source": "[Chong JY et al. Arch Neurol 2003;60:164-171](https://pubmed.ncbi.nlm.nih.gov/12580699/)"
+    },
+    {
+      "recommendation": "Anti-TPO antibodies found in 10-13% of general population (low specificity)",
+      "evidenceLevel": "Class II, Epidemiologic",
+      "source": "[Hollowell JG et al. J Clin Endocrinol Metab 2002;87:489-499](https://pubmed.ncbi.nlm.nih.gov/11836274/)"
+    },
+    {
+      "recommendation": "Patients may be euthyroid, hypothyroid, or hyperthyroid at presentation",
+      "evidenceLevel": "Class IV, Systematic Review",
+      "source": "[Laurent C et al. Medicine 2016;95:e4075](https://pubmed.ncbi.nlm.nih.gov/27583849/)"
+    },
+    {
+      "recommendation": "MRI normal in ~50%; subcortical white matter changes in others",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "[Chong JY et al. Arch Neurol 2003;60:164-171](https://pubmed.ncbi.nlm.nih.gov/12580699/)"
+    },
+    {
+      "recommendation": "MRI patchy enhancement or stroke-like lesions in type 2",
+      "evidenceLevel": "Class IV",
+      "source": "[Kothbauer-Margreiter I et al. J Neurol 1996;243:585-593](https://pubmed.ncbi.nlm.nih.gov/8865025/)"
+    },
+    {
+      "recommendation": "CSF oligoclonal bands present in ~25% of HE",
+      "evidenceLevel": "Class IV",
+      "source": "[Ferracci F et al. J Neurol Neurosurg Psychiatry 2004;75:1083-1086](https://pubmed.ncbi.nlm.nih.gov/15258206/)"
+    },
+    {
+      "recommendation": "Anti-NAE (alpha-enolase) antibodies as proposed biomarker",
+      "evidenceLevel": "Class IV, Research",
+      "source": "[Fujii A et al. J Neuroimmunol 2005;162:130-136](https://pubmed.ncbi.nlm.nih.gov/15833368/)"
+    },
+    {
+      "recommendation": "Female predominance (4:1 female-to-male ratio)",
+      "evidenceLevel": "Class IV, Systematic Review",
+      "source": "[Laurent C et al. Medicine 2016;95:e4075](https://pubmed.ncbi.nlm.nih.gov/27583849/)"
+    },
+    {
+      "recommendation": "Mean age of onset 45-55 years; range 9-86 years",
+      "evidenceLevel": "Class IV, Systematic Review",
+      "source": "[Chong JY et al. Arch Neurol 2003;60:164-171](https://pubmed.ncbi.nlm.nih.gov/12580699/)"
+    },
+    {
+      "recommendation": "Levetiracetam as preferred ASM in autoimmune encephalopathy",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Britton J. Handb Clin Neurol 2016;133:219-245](https://pubmed.ncbi.nlm.nih.gov/27112680/)"
+    },
+    {
+      "recommendation": "Cognitive outcomes: majority improve but ~25% have persistent deficits",
+      "evidenceLevel": "Class IV",
+      "source": "[Castillo P et al. Arch Neurol 2006;63:197-202](https://pubmed.ncbi.nlm.nih.gov/16476807/)"
+    },
+    {
+      "recommendation": "Importance of excluding defined autoimmune encephalitides before HE diagnosis",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Graus F et al. Lancet Neurol 2016;15:391-404](https://pubmed.ncbi.nlm.nih.gov/26906964/)"
+    },
+    {
+      "recommendation": "Original description of Hashimoto's encephalopathy",
+      "evidenceLevel": "Class IV, Case Report",
+      "source": "[Brain L et al. Lancet 1966;2:512-514](https://pubmed.ncbi.nlm.nih.gov/4161638/)"
+    },
+    {
+      "recommendation": "Long-term immunosuppression for relapsing HE",
+      "evidenceLevel": "Class IV, Expert Practice",
+      "source": "[Olmez I et al. J Neuropsychiatry Clin Neurosci 2013](https://pubmed.ncbi.nlm.nih.gov/23487188/)"
+    },
+    {
+      "recommendation": "Thyroid hormone replacement does not treat the encephalopathy",
+      "evidenceLevel": "Class IV",
+      "source": "[Chong JY et al. Arch Neurol 2003](https://pubmed.ncbi.nlm.nih.gov/12580699/)"
+    },
+    {
+      "recommendation": "Psychiatric symptoms in 35-45% (psychosis, depression, hallucinations)",
+      "evidenceLevel": "Class IV, Systematic Review",
+      "source": "[Laurent C et al. Medicine 2016;95:e4075](https://pubmed.ncbi.nlm.nih.gov/27583849/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic examination (GCS, orientation, cognition, motor, reflexes)",
+      "frequency": "Q4-6h (ICU); Q8-12h (floor)",
+      "action": "If no improvement by day 3-5: reassess diagnosis; escalate to IVIG/PLEX",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Modified Rankin Scale (mRS)",
+      "frequency": "Baseline, then weekly",
+      "action": "Document trajectory; guide treatment decisions",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "Q6h during IV steroids",
+      "action": "Insulin sliding scale; endocrine consult if persistent >250",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Q1h (ICU); Q4h (floor)",
+      "action": "Antihypertensive if >180; fluid resuscitation if hypotensive",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Heart rate",
+      "frequency": "Q4h; continuous in ICU",
+      "action": "Evaluate for hypothyroid bradycardia; treat arrhythmia",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "Q4h; continuous in ICU",
+      "action": "Fever workup (infection vs central); antipyretics",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Seizure log",
+      "frequency": "Continuous",
+      "action": "If increasing: escalate ASMs; ensure adequate immunotherapy; continuous EEG",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "EEG (continuous if ICU)",
+      "frequency": "24-72h minimum; longer if seizures",
+      "action": "If persistent seizures: escalate per Section 3D",
+      "ED": "-",
+      "HOSP": "URGENT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "TSH, free T4",
+      "frequency": "Baseline; repeat if thyroid replacement started",
+      "action": "Adjust levothyroxine dose; endocrinology input",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Anti-TPO titer",
+      "frequency": "Baseline (treatment monitoring -- do not recheck acutely)",
+      "action": "Titers do NOT reliably correlate with disease activity; clinical response is primary guide",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Renal function (BUN/Cr)",
+      "frequency": "Daily during IVIG; q48h otherwise",
+      "action": "Hold IVIG if Cr rising; hydration",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "CBC with differential",
+      "frequency": "Q48h during immunotherapy",
+      "action": "Hold immunotherapy if critically low",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "LFTs",
+      "frequency": "Q48-72h during acute treatment",
+      "action": "Dose adjustment or hold hepatotoxic medications",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "I/O and daily weight",
+      "frequency": "Daily",
+      "action": "Adjust fluids",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Significant improvement on steroids; no active seizures for >24h; able to perform basic ADLs; tolerating oral medications (steroids, ASMs, levothyroxine); reliable follow-up within 1-2 weeks; family/caregiver education completed; no active psychiatric safety concerns"
+    },
+    {
+      "disposition": "**Admit to floor (medical/neurology)**",
+      "criteria": "New-onset encephalopathy requiring workup and immunotherapy initiation; seizures requiring medication adjustment; moderate behavioral symptoms manageable on floor; needs IV methylprednisolone pulse therapy; diagnostic uncertainty requiring expedited workup"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "Status epilepticus; severe decreased consciousness (GCS <12); need for continuous EEG monitoring; requirement for mechanical ventilation; concurrent myxedema coma; severe psychiatric agitation with safety risk"
+    },
+    {
+      "disposition": "**Transfer to higher level of care**",
+      "criteria": "PLEX or continuous EEG not available; neurology/neuroimmunology specialist not available; diagnosis uncertain and requires specialized evaluation"
+    },
+    {
+      "disposition": "**Inpatient rehabilitation**",
+      "criteria": "Medically stable; significant cognitive or functional deficits requiring intensive therapy; unable to safely return home; expected to benefit from structured rehabilitation program"
+    },
+    {
+      "disposition": "**Skilled nursing facility**",
+      "criteria": "Stable but unable to perform ADLs independently; requires ongoing nursing care; chronic cognitive disability"
+    },
+    {
+      "disposition": "**Outpatient follow-up**",
+      "criteria": "All discharged patients: neurology follow-up within 1-2 weeks; endocrinology for thyroid management; neuropsychology referral if cognitive deficits; steroid taper monitoring; relapse surveillance"
+    },
+    {
+      "disposition": "**Readmission criteria**",
+      "criteria": "New seizures after period of control; cognitive or behavioral regression; symptoms recurring during steroid taper (relapse); fever or signs of infection on immunotherapy; suspected relapse (any new neurologic or psychiatric symptoms)"
+    }
+  ]
+}

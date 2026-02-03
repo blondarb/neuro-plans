@@ -1,0 +1,1588 @@
+{
+  "id": "hiv-associated-neurocognitive-disorder",
+  "title": "HIV-Associated Neurocognitive Disorder",
+  "version": "1.1",
+  "icd10": [
+    "** B20 (Human immunodeficiency virus [HIV] disease)",
+    "F02.80 (Dementia in other diseases classified elsewhere without behavioral disturbance)",
+    "F02.81 (Dementia in other diseases classified elsewhere with behavioral disturbance)",
+    "R41.81 (Age-related cognitive decline)",
+    "R41.840 (Attention and concentration deficit)",
+    "R41.3 (Other amnesia)",
+    "F06.8 (Other specified mental disorders due to known physiological condition)"
+  ],
+  "scope": "** Evaluation and management of the HIV-associated neurocognitive disorder (HAND) spectrum including asymptomatic neurocognitive impairment (ANI), mild neurocognitive disorder (MND), and HIV-associated dementia (HAD) per Frascati criteria. Covers ART optimization with emphasis on CNS penetration effectiveness (CPE score), exclusion of opportunistic infections, neuropsychological testing, management of comorbid depression and substance use, and monitoring for disease progression. Settings: ED (acute presentations), HOSP (inpatient evaluation), OPD (outpatient longitudinal management). Excludes CNS opportunistic infections as primary diagnosis (see separate templates for PML, CMV encephalitis, toxoplasmosis, cryptococcal meningitis), acute HIV seroconversion encephalitis, and pediatric HIV neurocognitive impairment.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "HIV-1/2 antigen/antibody (4th generation) (CPT 87389)",
+          "rationale": "Confirm HIV diagnosis if not previously documented; baseline for new presentations",
+          "target": "Reactive; document",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CD4 count (CPT 86360)",
+          "rationale": "Immune status determines HAND risk stratification; CD4 <200 increases risk of HAD and opportunistic infections; CD4 nadir is strongest predictor of HAND",
+          "target": "CD4 >500 goal; document nadir",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV-1 RNA viral load (plasma) (CPT 87536)",
+          "rationale": "Plasma virologic control; detectable viral load associated with worse neurocognitive outcomes; assess ART adherence",
+          "target": "Undetectable (<20 copies/mL)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Anemia (ZDV), infection, hematologic abnormalities; macrocytosis may indicate medication effect or B12/folate deficiency",
+          "target": "Normal; document baseline",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Metabolic encephalopathy; hepatic dysfunction (hepatitis co-infection); renal function for ART dosing; electrolyte abnormalities",
+          "target": "Normal; document baseline",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR/VDRL (CPT 86592)",
+          "rationale": "Neurosyphilis co-infection common in HIV population; treatable cause of cognitive decline; higher rate of neurosyphilis in HIV+ patients",
+          "target": "Nonreactive; if reactive, obtain LP for neurosyphilis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Hypothyroidism is reversible cause of cognitive impairment; efavirenz and immune reconstitution can affect thyroid",
+          "target": "Normal (0.4-4.0 mIU/L)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "rationale": "B12 deficiency common in HIV; causes cognitive impairment and myelopathy; reversible",
+          "target": ">400 pg/mL",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Folate (CPT 82746)",
+          "rationale": "Folate deficiency contributes to cognitive decline; TMP-SMX prophylaxis may mask deficiency",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis B surface Ag/Ab/core Ab (CPT 87340)",
+          "rationale": "Co-infection screening; hepatitis affects ART selection; hepatic encephalopathy in differential",
+          "target": "Negative or immune",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis C antibody + RNA if positive (CPT 86803)",
+          "rationale": "HCV co-infection prevalence 25-30% in HIV; HCV independently causes neurocognitive impairment; treatable",
+          "target": "Negative; if positive, obtain HCV RNA and initiate treatment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urinalysis (CPT 81003)",
+          "rationale": "UTI as cause of acute cognitive worsening; tenofovir nephrotoxicity screening",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "rationale": "Substance use is major confounder and comorbidity in HAND evaluation; methamphetamine, cocaine, and opioids cause neurocognitive impairment; must be excluded before HAND diagnosis",
+          "target": "Negative; positive result requires addressing substance use before attributing deficits to HAND",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "HIV genotype/resistance testing (CPT 87901)",
+          "rationale": "If virologic failure suspected; resistance mutations affect ART optimization for CNS-penetrating regimen",
+          "target": "Wild-type preferred; document resistance mutations for CNS-penetrating ART selection",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Diabetes independently impairs cognition; metabolic syndrome common with ART (PIs); vascular risk factor",
+          "target": "<7%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lipid panel (CPT 80061)",
+          "rationale": "Cardiovascular risk factors contribute to vascular cognitive impairment; PI-associated dyslipidemia",
+          "target": "Per guidelines",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Testosterone (AM, total and free) (CPT 84403)",
+          "rationale": "Hypogonadism common in HIV; causes fatigue, depression, and cognitive symptoms; treatable",
+          "target": "Normal for age",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin D, 25-OH (CPT 82306)",
+          "rationale": "Deficiency common in HIV; associated with cognitive decline; TDF and efavirenz may worsen",
+          "target": ">30 ng/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Thiamine (Vitamin B1) (CPT 84425)",
+          "rationale": "Wernicke encephalopathy if alcohol use; nutritional deficiency common in HIV",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ammonia (CPT 82140)",
+          "rationale": "Hepatic encephalopathy if liver disease (HBV/HCV co-infection, cirrhosis)",
+          "target": "<35 micromol/L",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Toxoplasma IgG (CPT 86777)",
+          "rationale": "Baseline serostatus; if positive, at risk for reactivation with CD4 <100; mass lesion in differential",
+          "target": "Document serostatus; negative reduces toxoplasmosis risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cryptococcal antigen (serum) (CPT 86641)",
+          "rationale": "Screen if CD4 <100; cryptococcal meningitis causes cognitive impairment; may be subclinical",
+          "target": "Negative; positive requires LP and treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CMV IgG (CPT 86644)",
+          "rationale": "Baseline serostatus; CMV encephalitis risk if CD4 <50",
+          "target": "Document serostatus",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Depression screening (PHQ-9) (CPT 96127)",
+          "rationale": "Depression prevalence 20-40% in HIV; major confounder in cognitive assessment; treatable; must be addressed before HAND diagnosis",
+          "target": "PHQ-9 <5; >=10 requires treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "ART drug levels (therapeutic drug monitoring)",
+          "rationale": "If CNS penetration or adherence concerns; especially for dolutegravir, darunavir CSF levels in suspected CNS escape",
+          "target": "Therapeutic range",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum ceruloplasmin/copper (CPT 82390)",
+          "rationale": "Wilson disease if <50 years with movement disorder and cognitive decline",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA, dsDNA (CPT 86235)",
+          "rationale": "Autoimmune process in differential; HIV can cause false-positive ANA",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic panel",
+          "rationale": "If subacute onset with concern for HIV-associated malignancy (lymphoma)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "JC virus antibody (serum) (CPT 86255)",
+          "rationale": "PML risk stratification; positive serostatus with CD4 <200 increases PML risk",
+          "target": "Document serostatus",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (serum)",
+          "rationale": "If subacute cognitive decline with psychiatric features, seizures; immune reconstitution may trigger autoimmune processes",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure (CPT 89050)",
+          "rationale": "Elevated in cryptococcal meningitis, mass lesions; normal in uncomplicated HAND",
+          "target": "10-20 cm H2O; elevated requires evaluation for OI",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4) (CPT 89051)",
+          "rationale": "Mild CSF pleocytosis (5-20 WBC) can be seen in HIV alone; higher counts suggest OI or co-infection",
+          "target": "WBC <20 in HAND; WBC >20 requires aggressive OI investigation",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Mildly elevated (50-100 mg/dL) common in HAND; markedly elevated suggests OI or other pathology",
+          "target": "15-45 mg/dL normal; mild elevation expected in HAND",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glucose (CPT 82945)",
+          "rationale": "Low CSF glucose suggests bacterial/fungal/TB meningitis; normal in HAND",
+          "target": ">60% of serum glucose; low requires evaluation for OI",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF HIV-1 RNA (quantitative) (CPT 87536)",
+          "rationale": "CSF viral escape (detectable CSF HIV RNA with suppressed plasma viral load) is treatable cause of HAND; guides ART optimization for CNS penetration",
+          "target": "Undetectable; if detectable with suppressed plasma VL, this indicates CSF viral escape requiring ART optimization for CNS penetration",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF VDRL (CPT 86592)",
+          "rationale": "Neurosyphilis; VDRL is only validated non-treponemal CSF test; high co-infection rate",
+          "target": "Nonreactive",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cryptococcal antigen (CSF) (CPT 86641)",
+          "rationale": "Rule out cryptococcal meningitis if CD4 <200 or elevated opening pressure; can present with subacute cognitive decline",
+          "target": "Negative; positive requires cryptococcal meningitis treatment",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF meningitis/encephalitis panel (PCR multiplex)",
+          "rationale": "Rule out viral encephalitis (HSV, CMV, VZV, JC virus); especially if acute/subacute presentation",
+          "target": "Negative; positive requires targeted treatment",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "JC virus PCR (CSF)",
+          "rationale": "PML if white matter lesions on MRI; CD4 <200; progressive multifocal symptoms",
+          "target": "Negative; positive confirms PML diagnosis (sensitivity ~80%)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CMV PCR (CSF)",
+          "rationale": "CMV encephalitis if CD4 <50; periventricular enhancement on MRI",
+          "target": "Negative; positive requires ganciclovir treatment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "AFB smear and culture, TB PCR",
+          "rationale": "Tuberculous meningitis if endemic area, low CD4, constitutional symptoms",
+          "target": "Negative; positive requires TB treatment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology",
+          "rationale": "CNS lymphoma if mass lesion, EBV+ in CSF; HIV increases lymphoma risk",
+          "target": "Normal; abnormal requires oncology referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "EBV PCR (CSF)",
+          "rationale": "Primary CNS lymphoma marker; elevated CSF EBV DNA with ring-enhancing lesion on MRI",
+          "target": "Negative; positive with enhancing lesion requires biopsy or empiric treatment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF neurofilament light chain (NfL)",
+          "rationale": "Marker of neuronal injury; elevated in active HAND; may track treatment response; research and specialized centers",
+          "target": "Low/normal; elevated indicates active neuronal injury",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Oligoclonal bands / IgG index (CPT 83916)",
+          "rationale": "Intrathecal immune activation; elevated in HAND but nonspecific; helps distinguish from MS or other inflammatory processes",
+          "target": "May show intrathecal synthesis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "Initial evaluation of all suspected HAND; contrast to evaluate for OI, lymphoma, or other enhancing lesions",
+          "target": "HAND: cerebral atrophy (esp. caudate, basal ganglia), white matter hyperintensities, no enhancing lesions; ring-enhancing lesions indicate toxoplasmosis vs lymphoma; multifocal white matter lesions without enhancement indicate PML",
+          "contraindications": "Pacemaker, metal, severe renal disease (gadolinium)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Emergent evaluation if MRI unavailable; acute mental status change; mass effect evaluation before LP",
+          "target": "Mass lesion, hydrocephalus, hemorrhage; less sensitive than MRI for HAND-specific changes",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI spectroscopy (MRS) (CPT 76390)",
+          "timing": "Research/specialized centers; differentiating HAND from other dementias; monitoring treatment response",
+          "target": "HAND: elevated choline/creatine (inflammation), reduced N-acetylaspartate/creatine (neuronal loss), elevated myoinositol (gliosis); pattern may precede structural changes",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "FDG-PET brain (CPT 78608)",
+          "timing": "Diagnostic uncertainty; differentiate HAND from AD or FTD; atypical presentations",
+          "target": "HAND: subcortical hypometabolism (basal ganglia, thalamus); AD: temporoparietal; FTD: frontal",
+          "contraindications": "Per PET",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CT chest/abdomen/pelvis",
+          "timing": "If concern for systemic OI, lymphoma, or other HIV-associated malignancy as cause of CNS symptoms",
+          "target": "Lymphadenopathy, masses, infections",
+          "contraindications": "Contrast allergy, renal disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "EEG (CPT 95816)",
+          "timing": "If seizures suspected, subclinical seizure activity, or NCSE in acute cognitive decline",
+          "target": "HAND: generalized slowing; focal abnormalities indicate structural lesion; seizure activity requires treatment",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Bedside cognitive screen (MoCA or MMSE) (CPT 96116)",
+          "timing": "All patients at initial evaluation; MoCA preferred (more sensitive for subcortical deficits)",
+          "indication": "Screening; MoCA more sensitive than MMSE for HAND (subcortical pattern)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV Dementia Scale (HDS)",
+          "timing": "Rapid bedside screen validated for HIV; assesses psychomotor speed, memory, construction",
+          "indication": "Screening specific to HAND",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "International HIV Dementia Scale (IHDS)",
+          "timing": "Alternative bedside screen; culturally adapted; less education bias than HDS",
+          "indication": "Screening in diverse populations",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Formal neuropsychological testing (CPT 96132)",
+          "timing": "Gold standard for HAND diagnosis per Frascati criteria; must test >=5 cognitive domains; quantifies severity across domains",
+          "indication": "Definitive HAND classification; required for Frascati diagnosis; baseline for monitoring treatment response",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Functional assessment (IADL scale)",
+          "timing": "Required for Frascati classification; distinguishes ANI (no impairment) from MND (mild) and HAD (marked)",
+          "indication": "Determine functional impact of cognitive deficits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "ART Optimization for CNS Penetration": [
+        {
+          "item": "Dolutegravir (Tivicay)",
+          "route": "PO",
+          "indication": "First-line INSTI with high CPE score (CPE 4); excellent CNS penetration; backbone of CNS-optimized ART regimen",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Dolutegravir (Tivicay) 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg PO daily; increase to 50 mg BID if INSTI resistance suspected or with rifampin",
+            "orderSentence": "Dolutegravir (Tivicay) 50 mg PO"
+          },
+          "contraindications": "Hypersensitivity; concurrent dofetilide",
+          "monitoring": "Viral load q4-8 weeks until undetectable, then q3-6 months; CD4 q3-6 months; CMP; weight gain monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tenofovir alafenamide (TAF) / Emtricitabine (Descovy)",
+          "route": "PO",
+          "indication": "NRTI backbone; TAF with moderate CPE; preferred over TDF for renal/bone safety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25/200 mg",
+                "orderSentence": "Tenofovir alafenamide (TAF) / Emtricitabine (Descovy) 25/200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 tablet PO daily",
+            "orderSentence": "Tenofovir alafenamide (TAF) / Emtricitabine (Descovy) 25/200 mg PO"
+          },
+          "contraindications": "CrCl <30 (for combined formulation); concurrent use with other tenofovir products",
+          "monitoring": "Renal function; lipid panel; HBV status (flare risk if discontinued)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tenofovir disoproxil fumarate (TDF) / Emtricitabine (Truvada)",
+          "route": "PO",
+          "indication": "Alternative NRTI backbone; TDF has slightly higher CPE than TAF",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300/200 mg",
+                "orderSentence": "Tenofovir disoproxil fumarate (TDF) / Emtricitabine (Truvada) 300/200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 tablet PO daily; dose adjust for CrCl <50",
+            "orderSentence": "Tenofovir disoproxil fumarate (TDF) / Emtricitabine (Truvada) 300/200 mg PO"
+          },
+          "contraindications": "CrCl <60 (relative); osteoporosis",
+          "monitoring": "Renal function q3-6 months; DEXA if >50 or risk factors; phosphorus",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Abacavir (Ziagen)",
+          "route": "PO",
+          "indication": "NRTI with high CPE score (CPE 3); use in CNS-optimized regimens",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "600 mg",
+                "orderSentence": "Abacavir (Ziagen) 600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "600 mg PO daily or 300 mg BID",
+            "orderSentence": "Abacavir (Ziagen) 600 mg PO"
+          },
+          "contraindications": "**HLA-B*5701 positive** (fatal hypersensitivity reaction -- must test before prescribing); cardiovascular risk (controversial)",
+          "monitoring": "HLA-B*5701 mandatory before initiation; hypersensitivity reaction monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Zidovudine (AZT, Retrovir)",
+          "route": "PO",
+          "indication": "NRTI with highest CPE score (CPE 4); use in CNS-escape despite toxicity; historical backbone of HAND treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Zidovudine (AZT, Retrovir) 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "300 mg PO BID; dose adjust for renal impairment",
+            "orderSentence": "Zidovudine (AZT, Retrovir) 300 mg PO"
+          },
+          "contraindications": "Severe anemia (Hgb <7.5); neutropenia (ANC <750); myopathy",
+          "monitoring": "CBC q2-4 weeks initially (anemia, neutropenia); CK if myopathy symptoms; macrocytosis expected",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Darunavir/ritonavir (Prezista/Norvir)",
+          "route": "PO",
+          "indication": "PI with moderate CPE; boosted PI for resistant virus; use when INSTI resistance present",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "800/100 mg",
+                "orderSentence": "Darunavir/ritonavir (Prezista/Norvir) 800/100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "800 mg darunavir + 100 mg ritonavir PO daily with food; 600/100 mg BID if resistance",
+            "orderSentence": "Darunavir/ritonavir (Prezista/Norvir) 800/100 mg PO"
+          },
+          "contraindications": "Sulfonamide allergy (relative); concurrent drugs with CYP3A4 interactions",
+          "monitoring": "LFTs; lipid panel; glucose; drug interactions (extensive CYP3A4 inhibition); GI tolerance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Efavirenz (Sustiva)",
+          "route": "PO",
+          "indication": "NNRTI with high CPE score (CPE 3); historical use in HAND; CNS side effects limit utility due to neuropsychiatric toxicity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "600 mg",
+                "orderSentence": "Efavirenz (Sustiva) 600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "600 mg PO at bedtime on empty stomach",
+            "orderSentence": "Efavirenz (Sustiva) 600 mg PO"
+          },
+          "contraindications": "Pregnancy (first trimester -- teratogenic); severe psychiatric disease; concurrent CYP interactions",
+          "monitoring": "**Neuropsychiatric monitoring** (vivid dreams, depression, suicidality, psychosis -- especially first 2-4 weeks); LFTs; lipid panel",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Nevirapine (Viramune)",
+          "route": "PO",
+          "indication": "NNRTI with high CPE score (CPE 4); alternative for CNS optimization; hepatotoxicity and rash risk limit use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Nevirapine (Viramune) 200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "200 mg PO daily x 14 days lead-in, then 200 mg BID; extended release: 400 mg daily after lead-in",
+            "orderSentence": "Nevirapine (Viramune) 200 mg PO"
+          },
+          "contraindications": "CD4 >250 (women) or >400 (men) for treatment-naive (hepatotoxicity risk); severe hepatic impairment",
+          "monitoring": "LFTs at baseline, 2 wks, 4 wks, then q3 months; rash monitoring (SJS risk first 18 weeks); discontinue if LFTs >5x ULN",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Maraviroc (Selzentry)",
+          "route": "PO",
+          "indication": "CCR5 antagonist with high CPE score (CPE 3); requires tropism testing; unique anti-inflammatory CNS mechanism relevant to HAND",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Maraviroc (Selzentry) 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "300 mg PO BID (with CYP3A4 inhibitors: 150 mg BID; with inducers: 600 mg BID)",
+            "orderSentence": "Maraviroc (Selzentry) 300 mg PO"
+          },
+          "contraindications": "Non-CCR5-tropic virus (must confirm R5 tropism before use); hepatotoxicity risk",
+          "monitoring": "Tropism assay mandatory; LFTs; cough, URI symptoms; CYP3A4 interactions",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Treatment of CSF Viral Escape": [
+        {
+          "item": "ART regimen intensification (CNS-optimized)",
+          "route": "PO",
+          "indication": "CSF viral escape (detectable CSF HIV RNA with suppressed plasma viral load); neurologic deterioration despite plasma viral suppression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Individualized",
+                "orderSentence": "ART regimen intensification (CNS-optimized) Individualized PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Switch to regimen with highest total CPE score incorporating dolutegravir + 2 high-CPE NRTIs (e.g., DTG/ABC/3TC or DTG + ZDV/3TC); target total CPE >=7-8; guided by resistance profile",
+            "orderSentence": "ART regimen intensification (CNS-optimized) Individualized PO"
+          },
+          "contraindications": "Per individual drug contraindications",
+          "monitoring": "Repeat LP in 4-8 weeks to confirm CSF viral suppression; plasma VL q4 weeks; neuropsychological retesting at 6-12 months",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Enfuvirtide (Fuzeon) — salvage therapy",
+          "route": "SC",
+          "indication": "Multidrug-resistant CSF viral escape refractory to oral optimization; extensive NRTI/NNRTI/PI/INSTI resistance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "90 mg",
+                "orderSentence": "Enfuvirtide (Fuzeon) — salvage therapy 90 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "90 mg SC BID (injection site rotation)",
+            "orderSentence": "Enfuvirtide (Fuzeon) — salvage therapy 90 mg SC"
+          },
+          "contraindications": "Hypersensitivity; injection site reactions (nearly universal)",
+          "monitoring": "Injection site reactions; pneumonia risk; eosinophilia; CSF VL follow-up",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatment": [
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression comorbid with HAND (prevalence 20-40%); safe in HIV; minimal drug interactions with ART",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sertraline 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; increase by 25 mg q1-2 weeks; target 50-200 mg daily",
+            "orderSentence": "Sertraline 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; caution with ritonavir (increases sertraline levels)",
+          "monitoring": "Suicidality monitoring; serotonin syndrome; GI effects; hyponatremia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Escitalopram",
+          "route": "PO",
+          "indication": "Depression/anxiety comorbid with HAND; well tolerated; minimal CYP interactions",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Escitalopram 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5-10 mg daily; max 20 mg daily",
+            "orderSentence": "Escitalopram 5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QT prolongation",
+          "monitoring": "QTc if risk factors; suicidality monitoring; check interactions with PIs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mirtazapine",
+          "route": "PO",
+          "indication": "Depression with insomnia and weight loss (common in HIV); appetite stimulation; dual benefit in HIV wasting with depression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15 mg",
+                "orderSentence": "Mirtazapine 15 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 15 mg QHS; increase to 30-45 mg; lower dose more sedating",
+            "orderSentence": "Mirtazapine 15 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; caution with CYP3A4 inhibitors (PIs may increase levels)",
+          "monitoring": "Weight gain (desired in wasting); sedation; neutropenia (rare)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Bupropion",
+          "route": "PO",
+          "indication": "Depression with fatigue, psychomotor slowing; avoid in seizure risk; may assist with stimulant cessation in comorbid methamphetamine use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg",
+                "orderSentence": "Bupropion 150 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 150 mg XL daily; increase to 300 mg XL daily after 1 week if needed",
+            "orderSentence": "Bupropion 150 mg PO"
+          },
+          "contraindications": "Seizure disorder; eating disorders; concurrent MAOIs; abrupt alcohol/benzodiazepine withdrawal",
+          "monitoring": "Seizure risk; insomnia; anxiety; blood pressure",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylphenidate",
+          "route": "PO",
+          "indication": "Psychomotor slowing, apathy, and fatigue in HAND; evidence for improved attention and processing speed in HIV cognitive impairment; [Hinkin et al., J Clin Exp Neuropsychol 2001](https://pubmed.ncbi.nlm.nih.gov/11806849/)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Methylphenidate 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg BID (morning and noon); increase by 5-10 mg/week; target 20-40 mg/day in divided doses; avoid evening dosing",
+            "orderSentence": "Methylphenidate 5 mg PO"
+          },
+          "contraindications": "Uncontrolled hypertension; cardiac arrhythmias; glaucoma; concurrent MAOIs; active psychosis; substance abuse history (relative)",
+          "monitoring": "Heart rate; blood pressure; appetite; insomnia; psychiatric symptoms; abuse potential",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "Fatigue and excessive daytime sleepiness in HAND; alternative to methylphenidate with lower abuse potential",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg QAM; increase to 200 mg QAM after 1 week; max 200 mg daily",
+            "orderSentence": "Modafinil 100 mg PO"
+          },
+          "contraindications": "Hypersensitivity; cardiac arrhythmias; concurrent CYP3A4 concerns (may reduce PI levels -- monitor)",
+          "monitoring": "Blood pressure; interactions with PIs (may reduce darunavir levels); sleep quality; SJS risk (rare)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Memantine (Namenda)",
+          "route": "PO",
+          "indication": "NMDA receptor-mediated neurotoxicity in HIV; moderate-severe HAND; limited but emerging evidence for neuroprotection in HAND; [Schifitto et al., Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17485647/)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Memantine (Namenda) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; increase by 5 mg/week to 10 mg BID; max 20 mg/day",
+            "orderSentence": "Memantine (Namenda) 5 mg PO"
+          },
+          "contraindications": "Severe renal impairment (CrCl <30)",
+          "monitoring": "Confusion; dizziness; constipation; renal function",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Insomnia comorbid with HAND; sleep disruption common in HIV; alternative to benzodiazepines (avoid in HAND)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Trazodone 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg QHS; titrate to 50-100 mg QHS as needed; max 100 mg QHS for insomnia",
+            "orderSentence": "Trazodone 25 mg PO"
+          },
+          "contraindications": "Orthostatic hypotension; concurrent MAOIs; priapism risk",
+          "monitoring": "Sedation; orthostasis; falls risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quetiapine",
+          "route": "PO",
+          "indication": "Agitation, psychosis, or severe behavioral disturbance in HAD; lowest effective dose; use non-pharmacologic interventions first",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg",
+                "orderSentence": "Quetiapine 12.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 12.5-25 mg QHS; titrate slowly to lowest effective dose; max 100-200 mg for behavioral symptoms in dementia",
+            "orderSentence": "Quetiapine 12.5 mg PO"
+          },
+          "contraindications": "QT prolongation; metabolic syndrome; Parkinsonism",
+          "monitoring": "**Caution: metabolic effects compound ART metabolic toxicity**; QTc; glucose; lipids; weight; EPS monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Haloperidol",
+          "route": "IV/IM",
+          "indication": "Acute agitation or psychosis in ED/inpatient setting with HAD; short-term use only",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Haloperidol 2 mg IV/IM"
+              }
+            ],
+            "route": "IV/IM",
+            "instructions": "2-5 mg IV/IM PRN; may repeat q30min; max 20 mg/24h; switch to oral atypical ASAP",
+            "orderSentence": "Haloperidol 2 mg IV/IM"
+          },
+          "contraindications": "QT prolongation; Parkinsonism; NMS risk",
+          "monitoring": "QTc before and during use; EPS; NMS monitoring; avoid in DLB (not typical in HAND)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Substance Use Treatment (Common Comorbidity)": [
+        {
+          "item": "Buprenorphine/naloxone (Suboxone)",
+          "route": "SL",
+          "indication": "Opioid use disorder comorbid with HAND; improves ART adherence; minimal cognitive impairment vs. continued illicit use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2/0.5 mg",
+                "orderSentence": "Buprenorphine/naloxone (Suboxone) 2/0.5 mg SL"
+              }
+            ],
+            "route": "SL",
+            "instructions": "Induction: 2/0.5 mg SL; increase by 2/0.5-4/1 mg q1-2h to relief; target maintenance 8/2-16/4 mg daily",
+            "orderSentence": "Buprenorphine/naloxone (Suboxone) 2/0.5 mg SL"
+          },
+          "contraindications": "Concurrent full agonist opioids (precipitated withdrawal); severe hepatic impairment",
+          "monitoring": "LFTs; precipitated withdrawal; sedation; check interactions with PIs (buprenorphine levels may increase with ritonavir)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Naltrexone XR (Vivitrol)",
+          "route": "IM",
+          "indication": "Alcohol use disorder comorbid with HAND; alcohol worsens cognitive impairment and ART non-adherence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "380 mg",
+                "orderSentence": "Naltrexone XR (Vivitrol) 380 mg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "380 mg IM gluteal injection monthly; patient must be opioid-free >=7-10 days",
+            "orderSentence": "Naltrexone XR (Vivitrol) 380 mg IM"
+          },
+          "contraindications": "Acute opioid use; acute hepatitis; hepatic failure",
+          "monitoring": "LFTs; injection site reaction; depression screening; opioid-free confirmation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Contingency management referral",
+          "route": "-",
+          "indication": "Methamphetamine use disorder (most common stimulant in HIV-HAND population); no FDA-approved pharmacotherapy; CM has strongest evidence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Contingency management referral N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Refer to behavioral health program offering contingency management/motivational incentives; combine with cognitive behavioral therapy",
+            "orderSentence": "Contingency management referral N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Adherence; UDS; neurocognitive monitoring for improvement after abstinence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Prophylaxis Against Opportunistic Infections (Concurrent)": [
+        {
+          "item": "TMP-SMX (Bactrim DS)",
+          "route": "PO",
+          "indication": "PCP prophylaxis if CD4 <200; toxoplasmosis prophylaxis if CD4 <100 and Toxo IgG+; prevents OIs that worsen cognition",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 DS tablet",
+                "orderSentence": "TMP-SMX (Bactrim DS) 1 DS tablet PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 DS tablet (160/800 mg) PO daily; alternatives: dapsone, atovaquone if sulfa allergy",
+            "orderSentence": "TMP-SMX (Bactrim DS) 1 DS tablet PO"
+          },
+          "contraindications": "Sulfonamide allergy; severe renal impairment; folate deficiency (supplement)",
+          "monitoring": "CBC; CMP; rash (SJS rare); hyperkalemia; folate supplementation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fluconazole",
+          "route": "PO",
+          "indication": "Secondary prophylaxis if prior cryptococcal meningitis; maintenance until immune reconstitution (CD4 >200 x 6 months)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Fluconazole 200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "200 mg PO daily until CD4 >200 for >=6 months on suppressive ART",
+            "orderSentence": "Fluconazole 200 mg PO"
+          },
+          "contraindications": "Hepatic disease; QT prolongation; drug interactions (azoles + PIs)",
+          "monitoring": "LFTs; drug interactions with ART (especially ritonavir); QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Infectious disease/HIV specialist for ART optimization with focus on CNS-penetrating regimen and resistance management",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology consultation for HAND diagnosis confirmation, exclusion of other etiologies, and longitudinal cognitive monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychology for formal neuropsychological testing (mandatory for Frascati criteria diagnosis); minimum 5 cognitive domains assessed",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry for depression, anxiety, PTSD management (prevalence 20-40% in HIV); substance use disorder treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Addiction medicine / substance use treatment if active substance use; methamphetamine use is most potent modifier of HAND",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for medication adherence support, housing stability, insurance navigation, disability applications; social determinants profoundly affect HAND outcomes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Case management / HIV navigator for ART adherence programs (DOT, pill boxes, pharmacy sync); adherence is the single most modifiable factor in HAND treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment and compensatory strategies in MND/HAD; adaptive equipment; vocational rehabilitation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech therapy if language or swallowing difficulties in advanced HAD",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care for advanced HAD with poor prognosis despite optimized ART; goals of care discussions",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology if CD4 <100 for CMV retinitis screening; vision changes in HAND evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "ART adherence is the most important factor in preventing and treating HAND; undetectable viral load = healthiest brain; use pill organizers, alarms, and pharmacy reminders",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cognitive difficulties in HIV are treatable -- ART optimization often improves symptoms over months; do not stop medications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid alcohol and recreational drugs; substances worsen cognitive impairment independently and reduce ART adherence; methamphetamine is particularly neurotoxic",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report new or worsening memory problems, confusion, difficulty with daily tasks, personality changes, or depression to your HIV provider promptly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Establish healthcare proxy and advance directives, particularly if diagnosed with HAD; discuss preferences while able to participate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep all follow-up appointments; cognitive monitoring requires regular neuropsychological testing to track changes over time",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED if sudden confusion, severe headache, fever with cognitive changes, new weakness, seizures, or vision changes (may indicate OI, not just HAND)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Sleep hygiene: maintain consistent sleep schedule; insomnia worsens cognitive function and is treatable",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Exercise regularly (30 min moderate activity, 5 days/week); physical activity improves cognition in HIV; [Fazeli et al., J Assoc Nurses AIDS Care 2014](https://pubmed.ncbi.nlm.nih.gov/24513104/)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular aerobic exercise (30 min, 5 days/week) -- improves neurocognition, cardiovascular health, mood, and immune function in HIV",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cognitive stimulation activities (reading, puzzles, social engagement, learning new skills); preserves cognitive reserve",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Mediterranean or MIND diet; cardiovascular risk reduction contributes to brain health; nutritional optimization in HIV",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Cardiovascular risk factor management (BP <130/80, diabetes control, lipid management); vascular contributions to HAND increasingly recognized",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Tobacco cessation (smoking rate >40% in PLWH); smoking accelerates brain aging and vascular cognitive impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit alcohol to <=1 drink/day or abstain; alcohol is directly neurotoxic and worsens HIV-mediated neuroinflammation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid benzodiazepines and anticholinergics; these worsen cognitive impairment and must be minimized in HAND patients",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Social engagement and peer support groups (PLWH community); social isolation worsens depression and cognitive decline",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Screen for and treat obstructive sleep apnea; prevalence increased in HIV; untreated OSA worsens cognition",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "CNS opportunistic infection (toxoplasmosis, cryptococcal meningitis, PML, CMV encephalitis)",
+      "features": "Acute/subacute onset; focal deficits; fever; low CD4 (<200 typically); enhancing or white matter lesions on MRI",
+      "tests": "MRI with contrast; LP with OI panel; serum/CSF cryptococcal antigen; CSF JC virus PCR; toxoplasma serology"
+    },
+    {
+      "diagnosis": "Depression / Pseudodementia",
+      "features": "Depressed mood; \"I don't know\" responses; subjective complaints often exceed objective deficits; rapid onset; sleep/appetite changes; may not show >=2 domain deficits on testing",
+      "tests": "PHQ-9; psychiatric evaluation; neuropsychological testing (depression affects effort-dependent tasks but spares recognition); trial of antidepressant with cognitive reassessment"
+    },
+    {
+      "diagnosis": "Substance use effects (methamphetamine, cocaine, opioids, alcohol)",
+      "features": "Temporal correlation with substance use; positive UDS; may improve with sustained abstinence; methamphetamine causes similar subcortical deficits as HAND",
+      "tests": "UDS; history; reassess cognition after >=4 weeks abstinence; brain MRI (meth causes white matter changes similar to HAND)"
+    },
+    {
+      "diagnosis": "Neurosyphilis",
+      "features": "Co-infection common; Argyll Robertson pupils; may be indistinguishable from HAND clinically; posterior column signs in tabes",
+      "tests": "Serum RPR/VDRL; CSF VDRL; FTA-ABS; treat with IV penicillin and reassess"
+    },
+    {
+      "diagnosis": "Hepatic encephalopathy",
+      "features": "HBV/HCV co-infection; asterixis; elevated ammonia; fluctuating consciousness; cirrhosis on exam",
+      "tests": "Ammonia level; LFTs; hepatitis serologies; abdominal imaging"
+    },
+    {
+      "diagnosis": "CNS lymphoma (primary)",
+      "features": "Ring-enhancing periventricular lesion; progressive focal deficits; CD4 typically <50; EBV-associated",
+      "tests": "MRI with contrast; CSF EBV PCR; stereotactic biopsy; whole body PET"
+    },
+    {
+      "diagnosis": "Medication-induced cognitive impairment",
+      "features": "Temporal relation to drug initiation; efavirenz (neuropsychiatric), dolutegravir (insomnia), opioids, benzodiazepines, anticholinergics",
+      "tests": "Medication timeline; trial discontinuation; drug levels; symptoms reverse with discontinuation"
+    },
+    {
+      "diagnosis": "Alzheimer's disease",
+      "features": "Cortical pattern (aphasia, apraxia, agnosia); prominent episodic memory loss with poor recognition; older patient; amyloid biomarkers positive",
+      "tests": "Neuropsychological testing (cortical vs subcortical pattern); amyloid PET or CSF Abeta42/tau; MRI (hippocampal atrophy in AD vs caudate atrophy in HAND)"
+    },
+    {
+      "diagnosis": "Vascular cognitive impairment",
+      "features": "Stepwise decline; cardiovascular risk factors; strategic infarcts; white matter disease on MRI; may coexist with HAND",
+      "tests": "MRI (lacunar infarcts, extensive WMH); vascular risk factor assessment; HAND and VCI may be additive"
+    },
+    {
+      "diagnosis": "Metabolic encephalopathy (hyponatremia, uremia, hypoglycemia)",
+      "features": "Acute/fluctuating; electrolyte abnormalities; renal failure; medication-related",
+      "tests": "CMP; renal function; glucose; corrects with metabolic correction"
+    },
+    {
+      "diagnosis": "Immune reconstitution inflammatory syndrome (IRIS)",
+      "features": "Paradoxical worsening after ART initiation (typically 2-8 weeks); new or worsening neurological symptoms; enhancing lesions",
+      "tests": "Timing correlation with ART start; MRI with contrast; LP; distinguish from OI vs IRIS; may require corticosteroids"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Frascati criteria define HAND classification (ANI, MND, HAD) based on neuropsychological testing in >=5 domains",
+      "evidenceLevel": "Expert consensus (international)",
+      "source": "[Antinori et al. Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17914061/)"
+    },
+    {
+      "recommendation": "HAND prevalence remains 30-50% despite effective ART; ANI is most common form in ART era",
+      "evidenceLevel": "Class II evidence",
+      "source": "[Heaton et al. J Int Neuropsychol Soc 2011](https://pubmed.ncbi.nlm.nih.gov/21092312/)"
+    },
+    {
+      "recommendation": "CD4 nadir is strongest predictor of HAND regardless of current CD4",
+      "evidenceLevel": "Class II evidence",
+      "source": "[Ellis et al. Arch Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/21220651/)"
+    },
+    {
+      "recommendation": "CSF viral escape occurs in 5-10% of virologically suppressed patients; treatable with CNS-penetrating ART",
+      "evidenceLevel": "Class III evidence",
+      "source": "[Canestri et al. AIDS 2010](https://pubmed.ncbi.nlm.nih.gov/20453629/)"
+    },
+    {
+      "recommendation": "Higher CPE score ART regimens associated with better CSF viral suppression",
+      "evidenceLevel": "Class II evidence",
+      "source": "[Letendre et al. Arch Neurol 2008](https://pubmed.ncbi.nlm.nih.gov/18541782/)"
+    },
+    {
+      "recommendation": "CPE score does not consistently predict neurocognitive improvement (controversy exists)",
+      "evidenceLevel": "Class II evidence (conflicting results)",
+      "source": "[Marra et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19564582/)"
+    },
+    {
+      "recommendation": "Dolutegravir achieves therapeutic CSF concentrations and has high CPE score",
+      "evidenceLevel": "Class II evidence",
+      "source": "[Letendre et al. Antimicrob Agents Chemother 2014](https://pubmed.ncbi.nlm.nih.gov/24366744/)"
+    },
+    {
+      "recommendation": "ART initiation improves neurocognitive function in most patients; greatest benefit in first 6-12 months",
+      "evidenceLevel": "Class I evidence (SMART/START substudy)",
+      "source": "[Wright et al. AIDS 2010](https://pubmed.ncbi.nlm.nih.gov/20299958/)"
+    },
+    {
+      "recommendation": "Depression and substance use are major confounders in HAND diagnosis and must be addressed",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Mind Exchange Working Group. Clin Infect Dis 2013](https://pubmed.ncbi.nlm.nih.gov/23126480/)"
+    },
+    {
+      "recommendation": "Methamphetamine use compounds HIV neurotoxicity and accelerates HAND progression",
+      "evidenceLevel": "Class II evidence",
+      "source": "[Carey et al. Curr HIV/AIDS Rep 2006](https://pubmed.ncbi.nlm.nih.gov/16863270/)"
+    },
+    {
+      "recommendation": "Methylphenidate improves psychomotor speed and attention in HIV cognitive impairment",
+      "evidenceLevel": "Class II evidence (RCT)",
+      "source": "[Hinkin et al. J Clin Exp Neuropsychol 2001](https://pubmed.ncbi.nlm.nih.gov/11806849/)"
+    },
+    {
+      "recommendation": "Exercise improves neurocognitive outcomes in people living with HIV",
+      "evidenceLevel": "Class II evidence",
+      "source": "[Fazeli et al. J Assoc Nurses AIDS Care 2014](https://pubmed.ncbi.nlm.nih.gov/24513104/)"
+    },
+    {
+      "recommendation": "HCV co-infection independently worsens neurocognitive impairment in HIV",
+      "evidenceLevel": "Class II evidence",
+      "source": "[Clifford et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/15699371/)"
+    },
+    {
+      "recommendation": "AAN and EACS recommend neurocognitive screening for all PLWH",
+      "evidenceLevel": "Professional society guideline",
+      "source": "[EACS Guidelines 2023; AAN Practice Parameter](https://www.eacsociety.org/guidelines/)"
+    },
+    {
+      "recommendation": "Immune reconstitution inflammatory syndrome (IRIS) can cause paradoxical neurologic worsening after ART initiation",
+      "evidenceLevel": "Class III evidence",
+      "source": "[Johnson & Nath. Curr Treat Options Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/21484356/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "HIV viral load (plasma)",
+      "frequency": "q3-6 months on stable ART; q4 weeks during ART changes",
+      "action": "Detectable: perform adherence assessment, resistance testing, ART modification",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CD4 count",
+      "frequency": "q3-6 months until immune reconstitution (CD4 >500 x 2 years); then annually",
+      "action": "<200: initiate OI prophylaxis; <100: high risk for OIs affecting cognition",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CSF HIV RNA (if initial CSF escape)",
+      "frequency": "4-8 weeks after ART optimization; then q6-12 months if history of CSF escape",
+      "action": "Persistent CSF viral escape: perform further ART optimization; initiate salvage regimen; neurology/ID co-management",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Cognitive screening (MoCA or HDS)",
+      "frequency": "Every clinic visit or at minimum q6 months",
+      "action": "Decline >=2 points: obtain formal neuropsychological testing; evaluate for new confounders",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Formal neuropsychological testing",
+      "frequency": "Baseline; 6-12 months after ART optimization; annually in MND/HAD; q2 years in ANI",
+      "action": "Worsening: obtain CSF evaluation for viral escape; imaging; confounder assessment",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Depression screening (PHQ-9)",
+      "frequency": "Every visit",
+      "action": ">=10: initiate/adjust antidepressant; >=20: urgent psychiatric referral; suicidality assessment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Substance use screening",
+      "frequency": "Every visit",
+      "action": "Active use: initiate substance use treatment referral; reassess HAND diagnosis after abstinence",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ART adherence assessment",
+      "frequency": "Every visit",
+      "action": "Suboptimal: identify barriers; case management; DOT; simplify regimen; adherence counseling",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Functional status (IADL scale)",
+      "frequency": "q6-12 months",
+      "action": "Decline: increase support; OT referral; driving evaluation; reassess HAND severity",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MRI brain",
+      "frequency": "Baseline; repeat if clinical worsening, suspected OI, or CSF escape detected",
+      "action": "New enhancement: perform OI workup; progressive atrophy: evaluate treatment failure; WMH progression: initiate vascular management",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Metabolic panel (glucose, lipids, HbA1c)",
+      "frequency": "q6-12 months (ART metabolic effects)",
+      "action": "Metabolic syndrome: initiate cardiovascular risk reduction; address vascular contribution to cognitive impairment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Outpatient workup (most patients)",
+      "criteria": "Suspected ANI or MND; stable cognition; safe home environment; reliable follow-up; no acute OI concern; CD4 >200 with suppressed viral load"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "New HAD diagnosis with marked functional impairment; suspected CNS OI; acute cognitive decline requiring urgent LP and imaging; CSF viral escape requiring inpatient ART optimization; unsafe home environment; inability to manage medications independently"
+    },
+    {
+      "disposition": "Discharge from hospital",
+      "criteria": "OI ruled out or treated; ART optimized; stable or improving cognition; safe disposition; follow-up arranged with ID and neurology; medication adherence plan established"
+    },
+    {
+      "disposition": "Transfer to higher level of care",
+      "criteria": "Suspected CNS OI requiring subspecialty management not available at current facility; need for brain biopsy; refractory CSF viral escape requiring expert HIV management"
+    },
+    {
+      "disposition": "Assisted living / Supervised care",
+      "criteria": "Advanced HAD with inability to live independently; unable to manage ART adherence without supervision; safety concerns"
+    },
+    {
+      "disposition": "Long-term care / Skilled nursing",
+      "criteria": "End-stage HAD; 24-hour care needs; severe functional impairment despite ART optimization"
+    },
+    {
+      "disposition": "Palliative care / Hospice",
+      "criteria": "End-stage HAD unresponsive to ART optimization; goals of care focused on comfort; multiple concurrent OIs with poor prognosis"
+    }
+  ]
+}

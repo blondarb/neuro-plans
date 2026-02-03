@@ -1,0 +1,1223 @@
+{
+  "id": "carotid-stenosis",
+  "title": "Carotid Stenosis",
+  "version": "1.1",
+  "icd10": [
+    "** I65.29 (Occlusion and stenosis of unspecified carotid artery)",
+    "I65.21 (Occlusion and stenosis of right carotid artery)",
+    "I65.22 (Occlusion and stenosis of left carotid artery)",
+    "I65.23 (Occlusion and stenosis of bilateral carotid arteries)",
+    "I63.131 (Cerebral infarction due to embolism of right carotid artery)",
+    "I63.132 (Cerebral infarction due to embolism of left carotid artery)",
+    "I63.031 (Cerebral infarction due to thrombosis of right carotid artery)",
+    "I63.032 (Cerebral infarction due to thrombosis of left carotid artery)",
+    "G45.1 (Carotid artery syndrome — hemispheric)",
+    "G45.9 (Transient cerebral ischemic attack",
+    "unspecified)",
+    "Z86.73 (Personal history of TIA and cerebral infarction without residual deficits)"
+  ],
+  "scope": "** Evaluation and management of extracranial internal carotid artery stenosis, including symptomatic (TIA/stroke within 6 months) and asymptomatic classification, medical optimization (antiplatelet, statin, blood pressure management), risk stratification, indications for carotid endarterectomy (CEA) versus carotid artery stenting (CAS), perioperative management, and long-term surveillance. Covers NASCET, ACAS, ACST, CREST, and CREST-2 trial data. Excludes intracranial stenosis (see intracranial atherosclerosis template), vertebrobasilar stenosis, carotid dissection (see cervical artery dissection template), fibromuscular dysplasia, carotid body tumors, and radiation-induced carotid disease.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Fasting lipid panel (CPT 80061)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline for statin optimization; LDL target <70 mg/dL for secondary prevention in all carotid stenosis patients; reassess 6 weeks after statin initiation",
+          "target": "LDL <70 mg/dL; TC <200; TG <150; HDL >40 (M) / >50 (F)"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Diabetes is a major modifiable risk factor for carotid atherosclerosis progression; diabetes worsens perioperative outcomes for CEA/CAS",
+          "target": "<7% for most; <6.5% if newly diagnosed; >6.5% confirms diabetes"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline for antiplatelet therapy and surgical planning; anemia worsens cerebral ischemia; thrombocytosis increases thrombotic risk; preoperative requirement for CEA/CAS",
+          "target": "Normal; Hgb >10; plt >100K for anticoagulation; >50K for antiplatelet"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal function for contrast dye planning (CTA, angiography); electrolytes; hepatic function for statin safety; glucose; preoperative baseline for CEA/CAS",
+          "target": "Normal; creatinine for contrast risk; eGFR >30 for contrast; LFTs for statin safety"
+        },
+        {
+          "item": "PT/INR, aPTT (CPT 85610, 85730)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Coagulation baseline; preoperative requirement for CEA; concurrent anticoagulation assessment; hemorrhagic risk stratification",
+          "target": "INR <1.5 for surgery; therapeutic INR 2-3 if on warfarin for concurrent AF"
+        },
+        {
+          "item": "Fasting glucose (CPT 82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Diabetes screening and monitoring; hyperglycemia worsens ischemic outcomes; perioperative glucose management",
+          "target": "<126 fasting; perioperative target 140-180"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid disease contributes to atherosclerosis; hypothyroidism worsens hyperlipidemia; hyperthyroidism may cause atrial fibrillation (concurrent embolic source)",
+          "target": "Normal; abnormal TSH warrants further evaluation"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Lipoprotein(a) [Lp(a)] (CPT 83695)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Independent cardiovascular risk factor; elevated Lp(a) accelerates carotid atherosclerosis; if elevated, add PCSK9 inhibitor for intensified lipid lowering",
+          "target": "<50 nmol/L; elevated warrants intensified lipid therapy"
+        },
+        {
+          "item": "ApoB (CPT 82172)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Better predictor of residual cardiovascular risk than LDL alone; useful when LDL at goal but residual risk persists; reflects total atherogenic particle burden",
+          "target": "<70 mg/dL; elevated warrants intensified lipid therapy"
+        },
+        {
+          "item": "Homocysteine (CPT 83090)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hyperhomocysteinemia is an independent risk factor for carotid atherosclerosis; screen if young patient or accelerated disease without traditional risk factors",
+          "target": "<15 micromol/L; elevated warrants B12, folate, B6 supplementation"
+        },
+        {
+          "item": "hs-CRP (CPT 86141)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory biomarker; elevated hs-CRP in carotid stenosis patients indicates higher cardiovascular event risk; guides intensity of medical therapy; JUPITER trial supports statin use with elevated CRP",
+          "target": "<2 mg/L; elevated warrants aggressive medical optimization"
+        },
+        {
+          "item": "BNP or NT-proBNP (CPT 83880)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Heart failure screening; preoperative cardiac risk assessment for CEA/CAS; elevated in concurrent cardiac disease",
+          "target": "Normal for age; elevated warrants echocardiogram and cardiology evaluation"
+        },
+        {
+          "item": "Type and screen (CPT 86900/86901)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Preoperative requirement for CEA; blood availability in case of intraoperative hemorrhage or neck hematoma",
+          "target": "Type and antibody screen available; crossmatch if complex antibodies"
+        },
+        {
+          "item": "Troponin (CPT 84484)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Perioperative MI screening; concurrent coronary artery disease evaluation in symptomatic carotid patients; acute coronary syndrome exclusion",
+          "target": "Normal; elevated warrants cardiology evaluation and delays elective CEA/CAS"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Hypercoagulable panel (CPT 85300-85306, 86235, 86147)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Young patient (<50) with carotid stenosis and no traditional risk factors; recurrent events despite optimal medical therapy; protein C, protein S, antithrombin III, factor V Leiden, prothrombin G20210A",
+          "target": "Normal; positive warrants hematology referral and adjustment of antithrombotic therapy"
+        },
+        {
+          "item": "Antiphospholipid antibody panel (CPT 86235, 86147)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Young patient with carotid stenosis or thrombosis without typical atherosclerotic risk factors; lupus anticoagulant, anticardiolipin, anti-beta2-glycoprotein I (confirm at 12 weeks)",
+          "target": "Negative; positive (confirmed at 12 weeks) warrants anticoagulation per APS guidelines"
+        },
+        {
+          "item": "ESR (CPT 85652) and CRP (CPT 86140)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If vasculitis suspected (Takayasu arteritis, giant cell arteritis) as alternative etiology for carotid stenosis rather than atherosclerosis; atypical distribution or age",
+          "target": "Normal; elevated warrants vasculitis workup and temporal artery biopsy if applicable"
+        },
+        {
+          "item": "HbA1c with fructosamine (CPT 83036, 82985)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Fructosamine if HbA1c unreliable (hemoglobinopathy, recent transfusion, hemolytic anemia); reflects 2-3 week glucose average",
+          "target": "Fructosamine 200-285 micromol/L (normal); correlate with HbA1c"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Carotid duplex ultrasound (CPT 93880)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Initial screening and grading tool; within 24 hours if symptomatic (TIA/stroke); annual surveillance if known stenosis",
+          "target": "NASCET-method stenosis grading: <50% (medical only); 50-69% (consider CEA if symptomatic); 70-99% (CEA/CAS strongly recommended if symptomatic); PSV >125 cm/s = >50%; PSV >230 cm/s = >70%; ICA/CCA ratio >4.0 = >70%",
+          "contraindications": "None; operator-dependent; limited by calcification, high bifurcation, or body habitus"
+        },
+        {
+          "item": "MRI brain with DWI (CPT 70553)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "All symptomatic carotid stenosis patients; evaluate for acute/subacute infarction; silent infarcts on DWI increase stroke risk even in asymptomatic stenosis; pre-intervention baseline",
+          "target": "No acute infarct (asymptomatic); acute DWI-positive lesion ipsilateral to stenosis (symptomatic); chronic white matter disease",
+          "contraindications": "MRI-incompatible implants; severe claustrophobia; use CT head if MRI not available"
+        },
+        {
+          "item": "CTA head and neck (CPT 70496/70498)",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Confirmatory vascular imaging when duplex shows significant stenosis; better anatomic detail of plaque morphology, stenosis length, and aortic arch anatomy for surgical planning; circle of Willis and collateral assessment",
+          "target": "Degree and length of stenosis; ulcerated vs smooth plaque; calcification pattern; aortic arch type (I/II/III); bovine arch; tandem lesions; intracranial collaterals",
+          "contraindications": "Contrast allergy (premedicate); renal insufficiency (eGFR <30 relative; hydrate); pregnancy"
+        },
+        {
+          "item": "12-lead ECG (CPT 93000)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Atrial fibrillation detection (concurrent embolic source); baseline cardiac rhythm; preoperative requirement; MI screening in patients with concurrent coronary disease",
+          "target": "Normal sinus rhythm; AF warrants anticoagulation decision independent of carotid management; ST/T changes warrant cardiology evaluation",
+          "contraindications": "None"
+        },
+        {
+          "item": "Transthoracic echocardiogram (TTE) (CPT 93306)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Assess cardiac function preoperatively; identify concurrent embolic sources (LV thrombus, valvular disease, PFO); EF assessment for perioperative risk stratification",
+          "target": "Normal EF (>55%); no intracardiac thrombus; no significant valvular disease; EF <30% increases perioperative risk",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRA head and neck (CPT 70547/70549)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Alternative to CTA when contrast is contraindicated (renal insufficiency, contrast allergy); may overestimate stenosis degree by 10-15% compared to angiography; time-of-flight (TOF) or contrast-enhanced",
+          "target": "Stenosis degree (tends to overestimate); flow gaps suggest critical stenosis; intracranial collateral assessment",
+          "contraindications": "MRI-incompatible implants; claustrophobia; gadolinium contraindicated if eGFR <30 (nephrogenic systemic fibrosis)"
+        },
+        {
+          "item": "CT perfusion (CPT 70496)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If symptomatic stenosis with question of hemodynamic compromise; assess cerebrovascular reserve; guide urgency of intervention; identify misery perfusion",
+          "target": "Normal perfusion (adequate collaterals) vs decreased perfusion (hemodynamic compromise — increases urgency of revascularization); elevated Tmax; decreased CBF",
+          "contraindications": "Contrast allergy; renal insufficiency; radiation exposure"
+        },
+        {
+          "item": "Holter monitor 24-48h (CPT 93224)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Paroxysmal AF detection in symptomatic carotid stenosis patients; concurrent cardiac arrhythmia changes management from antiplatelet to anticoagulation",
+          "target": "Normal sinus rhythm; paroxysmal AF warrants anticoagulation",
+          "contraindications": "None"
+        },
+        {
+          "item": "Transcranial Doppler with microembolic signal detection (CPT 93886)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Identify active microemboli from carotid plaque (unstable plaque marker); assess intracranial collateral flow through circle of Willis; vasomotor reactivity testing for hemodynamic reserve; higher microembolic signals predict increased stroke risk",
+          "target": "No microembolic signals (stable plaque); HITS (high-intensity transient signals) indicate active embolization and unstable plaque; adequate collateral flow via ACA cross-flow",
+          "contraindications": "Inadequate temporal windows (10-15% of patients)"
+        },
+        {
+          "item": "Carotid plaque MRI (CPT 70549)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "High-resolution MRI to characterize plaque composition; identify vulnerable plaque features (lipid-rich necrotic core, intraplaque hemorrhage, thin/ruptured fibrous cap); guides intervention in moderate stenosis",
+          "target": "Stable fibrous plaque (lower risk); intraplaque hemorrhage or thin fibrous cap (high risk — favors intervention even at moderate stenosis)",
+          "contraindications": "MRI-incompatible implants; cost and availability"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Cerebral angiography (DSA) (CPT 36224)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Gold standard for stenosis measurement (NASCET method); when non-invasive imaging is discordant or inconclusive; pre-intervention planning for complex anatomy; evaluate tandem intracranial lesions",
+          "target": "Exact stenosis percentage (NASCET: distal ICA ratio); collateral flow; ulcerated plaque; string sign (near-occlusion); tandem lesions",
+          "contraindications": "Invasive; stroke risk 0.5-1%; contrast allergy; renal insufficiency; coagulopathy; groin complications"
+        },
+        {
+          "item": "PET/CT with FDG (CPT 78816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Research and emerging clinical tool for identifying metabolically active (inflamed) carotid plaque; identifies high-risk plaque beyond degree of stenosis; not yet standard of care",
+          "target": "Low FDG uptake (quiescent plaque) vs high uptake (inflamed, unstable plaque — higher stroke risk)",
+          "contraindications": "Radiation; cost; availability; not validated for clinical decision-making"
+        },
+        {
+          "item": "Oxygen extraction fraction PET (CPT 78608)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Evaluate cerebral hemodynamic compromise in chronic carotid occlusion; stage II hemodynamic failure (increased OEF) predicts higher ipsilateral stroke risk; guides bypass surgery consideration",
+          "target": "Normal OEF (adequate perfusion); elevated OEF (misery perfusion — hemodynamic compromise; evaluate for EC-IC bypass in select cases per COSS trial data)",
+          "contraindications": "PET availability; radiation; cost; not routine"
+        }
+      ]
+    },
+    "Treatment": {
+      "Medical Optimization (All Patients)": [
+        {
+          "item": "Aspirin",
+          "route": "PO",
+          "indication": "First-line antiplatelet for all carotid stenosis patients (symptomatic and asymptomatic); lifelong secondary prevention; reduces stroke risk 22% in symptomatic patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "81 mg",
+                "orderSentence": "Aspirin 81 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "81 mg PO daily (preferred long-term); 325 mg for first 3 months if symptomatic or perioperative; lifelong therapy",
+            "orderSentence": "Aspirin 81 mg PO"
+          },
+          "contraindications": "Active GI bleeding; aspirin allergy; thrombocytopenia <50K; concurrent full-dose anticoagulation (use one or other)",
+          "monitoring": "GI symptoms; bleeding signs; annual CBC; GI prophylaxis with PPI if high-risk",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Clopidogrel",
+          "route": "PO",
+          "indication": "Alternative to aspirin if aspirin-intolerant; component of DAPT for 21 days after minor stroke/TIA per CHANCE/POINT; perioperative use with CEA",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Clopidogrel 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "75 mg PO daily; 300 mg loading dose for acute minor stroke; monotherapy if aspirin-intolerant; lifelong antiplatelet required",
+            "orderSentence": "Clopidogrel 75 mg PO"
+          },
+          "contraindications": "Active bleeding; CYP2C19 poor metabolizer (reduced efficacy — use ticagrelor); thrombocytopenia; concurrent anticoagulation",
+          "monitoring": "Bleeding signs; CYP2C19 genotyping if available; platelet function testing rarely needed; hold 5-7 days before CEA if on DAPT",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Aspirin + Clopidogrel (DAPT — short-term)",
+          "route": "PO",
+          "indication": "Dual antiplatelet x 21 days for minor ischemic stroke (NIHSS <=3) or high-risk TIA (ABCD2 >=4) per CHANCE/POINT trials; periprocedural for CAS (30-day minimum DAPT required)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "81 mg + 75 mg",
+                "orderSentence": "Aspirin + Clopidogrel (DAPT — short-term) 81 mg + 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Aspirin 81 mg + clopidogrel 75 mg (with 300 mg clopidogrel load) x 21 days from symptom onset then monotherapy; for CAS: DAPT x 30 days minimum (some continue 3-6 months); DO NOT continue long-term DAPT beyond 90 days for stroke (increases bleeding)",
+            "orderSentence": "Aspirin + Clopidogrel (DAPT — short-term) 81 mg + 75 mg PO"
+          },
+          "contraindications": "Major bleeding; planned CEA within 5-7 days (hold clopidogrel); thrombocytopenia; high bleeding risk",
+          "monitoring": "Bleeding signs closely during DAPT period; GI prophylaxis with PPI if high GI risk; platelet count",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Atorvastatin",
+          "route": "PO",
+          "indication": "High-intensity statin for ALL carotid stenosis patients regardless of LDL; reduces cardiovascular events; plaque stabilization and possible regression; SPARCL trial supports LDL <70 for secondary prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Atorvastatin 40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 40-80 mg daily; target LDL <70 mg/dL; 80 mg preferred for symptomatic carotid stenosis; plaque regression observed with intensive statin therapy",
+            "orderSentence": "Atorvastatin 40 mg PO"
+          },
+          "contraindications": "Active liver disease; pregnancy; concurrent strong CYP3A4 inhibitors at high doses; unexplained persistent transaminase elevation",
+          "monitoring": "LFTs at baseline and 3 months; CK if myalgia; lipid panel q3-6 months until at goal then annually",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rosuvastatin",
+          "route": "PO",
+          "indication": "High-intensity statin alternative to atorvastatin; more potent LDL lowering per mg; non-CYP3A4 metabolism avoids drug interactions",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Rosuvastatin 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 20 mg daily; increase to 40 mg if needed; max 40 mg; preferred if CYP3A4 drug interactions a concern; target LDL <70 mg/dL",
+            "orderSentence": "Rosuvastatin 20 mg PO"
+          },
+          "contraindications": "Active liver disease; pregnancy; severe renal impairment (max 10 mg if CrCl <30)",
+          "monitoring": "LFTs at baseline and 3 months; CK if myalgia; lipid panel q3-6 months; Asian patients: start 5-10 mg (increased levels)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ezetimibe",
+          "route": "PO",
+          "indication": "Add-on to statin if LDL not at goal on maximum tolerated statin; IMPROVE-IT trial showed benefit in secondary prevention; contributes to plaque regression when combined with statin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Ezetimibe 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10 mg PO daily; add to any statin; no dose adjustment needed",
+            "orderSentence": "Ezetimibe 10 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment (when combined with statin); hypersensitivity",
+          "monitoring": "Lipid panel q3 months after starting until at goal; LFTs with statin combination",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Evolocumab (PCSK9 inhibitor)",
+          "route": "SC",
+          "indication": "Add-on if LDL not at goal (<70 mg/dL) despite maximum tolerated statin + ezetimibe; FOURIER trial showed cardiovascular event reduction; indicated for high-risk atherosclerotic disease including carotid stenosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "140 mg",
+                "orderSentence": "Evolocumab (PCSK9 inhibitor) 140 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "140 mg SC every 2 weeks or 420 mg SC monthly; significant additional LDL lowering (50-60%); use if LDL remains above 70 mg/dL on max statin + ezetimibe",
+            "orderSentence": "Evolocumab (PCSK9 inhibitor) 140 mg SC"
+          },
+          "contraindications": "Hypersensitivity to evolocumab",
+          "monitoring": "Lipid panel q4-12 weeks; injection site reactions; cost and insurance authorization",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lisinopril",
+          "route": "PO",
+          "indication": "First-line ACE inhibitor for BP management; target BP <130/80 for symptomatic carotid stenosis (secondary stroke prevention); use caution with severe bilateral carotid stenosis (cerebral perfusion risk if BP drops too low)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Lisinopril 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; increase by 5-10 mg q1-2wk; target BP <130/80 for symptomatic; <140/90 for asymptomatic (avoid aggressive lowering if bilateral severe stenosis); max 40 mg",
+            "orderSentence": "Lisinopril 5 mg PO"
+          },
+          "contraindications": "Bilateral renal artery stenosis; angioedema history; pregnancy; hyperkalemia; critical bilateral carotid stenosis with hemodynamic compromise (cautious titration)",
+          "monitoring": "BMP within 2 weeks (creatinine, potassium); BP; cough (switch to ARB if intolerable)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Losartan",
+          "route": "PO",
+          "indication": "ARB for BP management; alternative if ACE inhibitor not tolerated (cough); LIFE trial showed stroke reduction vs atenolol",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Losartan 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg daily; increase by 25-50 mg q2-4wk; target BP <130/80 (symptomatic) or <140/90 (asymptomatic); max 100 mg",
+            "orderSentence": "Losartan 25 mg PO"
+          },
+          "contraindications": "Bilateral renal artery stenosis; pregnancy; hyperkalemia",
+          "monitoring": "BMP within 2 weeks; BP; less cough than ACEi",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amlodipine",
+          "route": "PO",
+          "indication": "Calcium channel blocker for BP management; add-on to ACEi/ARB; well tolerated in elderly; evidence from ASCOT trial",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg",
+                "orderSentence": "Amlodipine 2.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5-5 mg daily; increase by 2.5-5 mg q1-2wk; max 10 mg; well tolerated in elderly",
+            "orderSentence": "Amlodipine 2.5 mg PO"
+          },
+          "contraindications": "Severe aortic stenosis; hypotension",
+          "monitoring": "BP; peripheral edema (common); HR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Revascularization (Symptomatic Carotid Stenosis)": [
+        {
+          "item": "Carotid endarterectomy (CEA)",
+          "route": "Surgical",
+          "indication": "Symptomatic carotid stenosis 70-99% (NASCET: ARR 17% over 2 years; NNT 6); symptomatic 50-69% (NASCET: ARR 6.5%; NNT 15); best benefit within 2 weeks of symptom onset; gold standard revascularization",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Carotid endarterectomy (CEA) N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Perform within 2 weeks of index event for maximal benefit (NASCET/ECST data); patch angioplasty closure preferred; conventional or eversion technique; perioperative aspirin; continue statin perioperatively",
+            "orderSentence": "Carotid endarterectomy (CEA) N/A Surgical"
+          },
+          "contraindications": "Perioperative stroke/death risk must be <6% for symptomatic (Class I); severe cardiac disease (recent MI <30 days, unstable angina, decompensated HF); contralateral carotid occlusion increases risk; prior radical neck dissection; radiation-induced stenosis (favor CAS)",
+          "monitoring": "Continuous neuro checks q1h x 24h post-op; BP monitoring (target 100-150 systolic to avoid hyperperfusion syndrome); carotid duplex within 30 days post-op; cranial nerve exam (CN VII, X, XII most common injuries)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Carotid artery stenting (CAS)",
+          "route": "Endovascular",
+          "indication": "Alternative to CEA for symptomatic stenosis >=70% when CEA high risk; CREST showed equivalent outcomes to CEA for symptomatic stenosis (higher periprocedural stroke risk but lower MI risk); preferred when: high surgical risk, prior neck radiation, surgically inaccessible lesion (high bifurcation), restenosis after prior CEA, contralateral CN palsy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Carotid artery stenting (CAS) N/A Endovascular"
+              }
+            ],
+            "route": "Endovascular",
+            "instructions": "DAPT required: aspirin 81-325 mg + clopidogrel 75 mg starting 5-7 days pre-procedure or with loading doses; distal embolic protection device mandatory; self-expanding stent preferred; post-dilation to residual <30% stenosis",
+            "orderSentence": "Carotid artery stenting (CAS) N/A Endovascular"
+          },
+          "contraindications": "Perioperative stroke/death risk must be <6% for symptomatic; large ischemic core (increased hemorrhagic conversion risk); heavy circumferential calcification (stent expansion may fail); extreme tortuosity of aortic arch/carotid; type III aortic arch; severely diseased aortic arch",
+          "monitoring": "DAPT compliance; BP monitoring (hypotension from baroreceptor stimulation — may need pressors); post-procedure carotid duplex at 1 month, 6 months, then annually; monitor for in-stent restenosis",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Urgent CEA (emergent revascularization)",
+          "route": "Surgical",
+          "indication": "Crescendo TIAs (recurrent TIAs despite medical therapy); fluctuating neurologic deficit with severe ipsilateral stenosis; stroke-in-evolution with accessible carotid lesion; timing within 48 hours if neurologically stable",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Urgent CEA (emergent revascularization) N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Urgent CEA within 48 hours of symptom onset in stable patients; no benefit if large completed infarct (>1/3 MCA territory — delay 4-6 weeks); perioperative BP control critical",
+            "orderSentence": "Urgent CEA (emergent revascularization) N/A Surgical"
+          },
+          "contraindications": "Large established infarct (hemorrhagic conversion risk); medically unstable (acute MI, severe HF); INR >1.5 (reverse first)",
+          "monitoring": "Continuous neuro monitoring; ICU post-op with arterial line; frequent neuro checks; BP target 100-150 systolic",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Revascularization (Asymptomatic Carotid Stenosis)": [
+        {
+          "item": "CEA for asymptomatic stenosis",
+          "route": "Surgical",
+          "indication": "Asymptomatic carotid stenosis 60-99% per ACAS/ACST criteria (ARR ~1%/year vs medical therapy); however CREST-2 and contemporary optimal medical therapy may narrow this benefit; strongest indication when: life expectancy >5 years, perioperative risk <3%, and features suggesting higher stroke risk (contralateral occlusion, silent infarcts on MRI, progressive stenosis, microemboli on TCD, ulcerated plaque)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "CEA for asymptomatic stenosis N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Elective; perioperative risk must be <3% for asymptomatic (Class I); aspirin continued perioperatively; patch angioplasty; risk-benefit discussion with patient",
+            "orderSentence": "CEA for asymptomatic stenosis N/A Surgical"
+          },
+          "contraindications": "Life expectancy <5 years; perioperative stroke/death risk >3%; severe cardiac or pulmonary comorbidity; patient preference for medical management after informed discussion",
+          "monitoring": "Carotid duplex at 1 month, 6 months, annually post-op; neuro checks post-op; cranial nerve exam; lifelong medical optimization continues",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CAS for asymptomatic stenosis",
+          "route": "Endovascular",
+          "indication": "Alternative to CEA for asymptomatic stenosis >=70% when high surgical risk; CREST-2 trial data comparing CAS+medical vs medical alone; SAPPHIRE trial showed non-inferiority to CEA in high-risk patients; indicated when: prior neck radiation, surgically inaccessible lesion, restenosis after prior CEA",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "CAS for asymptomatic stenosis N/A Endovascular"
+              }
+            ],
+            "route": "Endovascular",
+            "instructions": "DAPT required: aspirin 81-325 mg + clopidogrel 75 mg starting 5-7 days pre-procedure; distal embolic protection device; perioperative stroke/death risk must be <3% for asymptomatic",
+            "orderSentence": "CAS for asymptomatic stenosis N/A Endovascular"
+          },
+          "contraindications": "Perioperative risk >3%; heavy calcification; extreme tortuosity; type III arch; life expectancy <5 years",
+          "monitoring": "DAPT compliance; post-procedure duplex at 1 month, 6 months, annually; monitor for in-stent restenosis; lifelong medical optimization continues",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Intensive medical therapy alone (for asymptomatic stenosis)",
+          "route": "PO",
+          "indication": "Preferred initial management for most asymptomatic carotid stenosis given contemporary medical therapy effectiveness; annual stroke risk <1% with optimal medical therapy in modern era (vs 2%/year in ACAS era); CREST-2 comparing revascularization + medical vs medical alone",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Aspirin 81 mg + statin + antihypertensive",
+                "orderSentence": "Intensive medical therapy alone (for asymptomatic stenosis) Aspirin 81 mg + statin + antihypertensive PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Aspirin 81 mg daily + high-intensity statin (atorvastatin 40-80 mg or rosuvastatin 20-40 mg) + BP target <140/90; add clopidogrel if high-risk features; aggressive risk factor modification; annual surveillance imaging",
+            "orderSentence": "Intensive medical therapy alone (for asymptomatic stenosis) Aspirin 81 mg + statin + antihypertensive PO"
+          },
+          "contraindications": "None (this is baseline management for all patients)",
+          "monitoring": "Carotid duplex q6-12 months; lipid panel q3-6 months; BP monitoring; progression of stenosis warrants reassessment for intervention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Perioperative and Post-Procedural Management": [
+        {
+          "item": "Nicardipine drip",
+          "route": "IV",
+          "indication": "Perioperative BP control for CEA/CAS; prevent hyperperfusion syndrome; maintain BP 100-150 systolic post-CEA; rapid onset and easy titration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/hr",
+                "orderSentence": "Nicardipine drip 5 mg/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 5 mg/hr IV infusion; titrate by 2.5 mg/hr every 5-15 minutes; target SBP 100-150 (post-CEA) or per surgeon guidance; max 15 mg/hr; transition to oral antihypertensives when stable",
+            "orderSentence": "Nicardipine drip 5 mg/hr IV"
+          },
+          "contraindications": "Severe aortic stenosis; advanced heart failure",
+          "monitoring": "Continuous arterial line BP; HR; neuro checks q1h; transition to oral agents within 24-48h",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Labetalol",
+          "route": "IV",
+          "indication": "Alternative perioperative BP control; combined alpha/beta blocker; useful when HR also elevated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Labetalol 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10-20 mg IV push q10-15min; or infusion 1-2 mg/min; max 300 mg total; target SBP 100-150 post-CEA",
+            "orderSentence": "Labetalol 10 mg IV"
+          },
+          "contraindications": "Severe bradycardia; second/third degree heart block; decompensated HF; severe asthma/COPD; cardiogenic shock",
+          "monitoring": "HR; BP; bronchospasm; heart block",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Phenylephrine",
+          "route": "IV",
+          "indication": "Post-CEA or post-CAS hypotension from baroreceptor stimulation; more common after CAS (carotid sinus manipulation); maintain cerebral perfusion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mcg",
+                "orderSentence": "Phenylephrine 40 mcg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "40-100 mcg IV bolus q1-2min PRN; or infusion 10-200 mcg/min; titrate to SBP >100 or per clinical status; baroreceptor-mediated hypotension usually self-limited (24-72h)",
+            "orderSentence": "Phenylephrine 40 mcg IV"
+          },
+          "contraindications": "Severe hypertension; peripheral vascular disease (digital ischemia); MAO inhibitor use",
+          "monitoring": "Continuous BP and HR via arterial line; I/O; end-organ perfusion; typically wean within 24-72h",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Atropine",
+          "route": "IV",
+          "indication": "Post-CAS bradycardia from baroreceptor stimulation during stent deployment; prophylactic or reactive",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Atropine 0.5 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5-1 mg IV push; may repeat q3-5min; max 3 mg; prophylactic 0.5 mg IV before CAS balloon inflation in some protocols",
+            "orderSentence": "Atropine 0.5 mg IV"
+          },
+          "contraindications": "Glaucoma (relative); tachyarrhythmia; myocardial ischemia",
+          "monitoring": "HR; BP; urinary retention; rarely needed beyond procedural period",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Heparin (intraprocedural)",
+          "route": "IV",
+          "indication": "Intraoperative anticoagulation during CEA (prevent clamp thrombosis) and CAS (prevent catheter/stent thrombosis); standard of care",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5000 units",
+                "orderSentence": "Heparin (intraprocedural) 5000 units IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5000-10000 units IV bolus before carotid clamping (CEA) or before catheter advancement (CAS); target ACT >250; protamine reversal at surgeon discretion post-CEA",
+            "orderSentence": "Heparin (intraprocedural) 5000 units IV"
+          },
+          "contraindications": "Active major hemorrhage; HIT (use bivalirudin alternative)",
+          "monitoring": "ACT intraoperatively; post-op drain output (CEA); bleeding from access site (CAS)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Vascular surgery or vascular neurosurgery referral for CEA evaluation in all symptomatic carotid stenosis >=50% and asymptomatic stenosis >=60% with life expectancy >5 years",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neurointerventional surgery referral for CAS evaluation when CEA is high-risk (prior neck radiation, surgically inaccessible lesion, restenosis after prior CEA, contralateral CN palsy)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neurology follow-up in 1-2 weeks post-event for symptomatic carotid stenosis; medication optimization, imaging review, and secondary prevention management; then q3-6 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology referral for preoperative cardiac risk stratification before CEA/CAS; concurrent coronary artery disease evaluation; AF management if detected; EF assessment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anesthesiology preoperative evaluation for CEA surgical planning; regional vs general anesthesia discussion; cardiac risk assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for gait training and fall prevention if post-stroke residual deficits from symptomatic carotid stenosis event",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL retraining and upper extremity function if post-stroke deficits from symptomatic carotid stenosis event",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for aphasia, dysarthria, or swallow evaluation if post-stroke deficits from symptomatic carotid event",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Endocrinology referral for diabetes management optimization if HbA1c >8% despite standard therapy; aggressive glycemic control reduces atherosclerosis progression",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation program referral with pharmacotherapy support (varenicline, bupropion, or nicotine replacement); smoking is the single most modifiable risk factor for carotid atherosclerosis progression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Learn and recognize stroke warning signs (FAST: Face drooping, Arm weakness, Speech difficulty, Time to call 911); call 911 immediately if any symptom occurs — do not wait to see if symptoms resolve",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take all medications as prescribed including aspirin, statin, and blood pressure medications every day; DO NOT stop antiplatelet medication without consulting your neurologist or surgeon — stopping these medications significantly increases stroke risk",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "If scheduled for CEA or CAS, take aspirin the morning of surgery unless told otherwise; inform your surgeon of all blood thinners including over-the-counter medications and supplements",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "After CEA surgery, report immediately: new weakness, numbness, speech difficulty, vision changes, severe headache, neck swelling, or difficulty breathing (may indicate stroke, neck hematoma, or hyperperfusion syndrome)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "After CAS procedure, report immediately: new neurologic symptoms, groin swelling or bleeding at catheter site, chest pain, or severe headache",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Monitor blood pressure at home twice daily (morning and evening) using validated automatic cuff; keep a log and bring to all appointments; target <130/80 if symptomatic, <140/90 if asymptomatic",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Attend all scheduled follow-up carotid ultrasound appointments; surveillance imaging detects progression or restenosis early when intervention is most effective",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not drive until cleared by your neurologist if you have had a TIA or stroke; driving restrictions vary by state but typically require 3-6 months seizure-free and stable neurologically",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Smoking cessation is the single most important lifestyle modification for carotid stenosis; reduces progression of atherosclerosis and perioperative complications; offer nicotine replacement, varenicline, or bupropion; referral to cessation program",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Mediterranean-style or DASH diet: rich in fruits, vegetables, whole grains, fish, olive oil; limit sodium to <2300 mg/day (1500 mg if hypertensive); limit processed foods and red meat; dietary pattern reduces atherosclerosis progression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular aerobic exercise: 30 minutes of moderate-intensity exercise (brisk walking, swimming, cycling) at least 5 days per week; exercise improves endothelial function and reduces cardiovascular events by 20-25%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Limit alcohol to <=1 drink/day for women, <=2 drinks/day for men; heavy alcohol consumption increases blood pressure and stroke risk; complete abstinence preferred if poorly controlled hypertension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Weight management: target BMI 18.5-25; waist circumference <40 inches (men) / <35 inches (women); even modest weight loss (5-10%) improves blood pressure, lipids, and glucose control",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Diabetes management: target HbA1c <7% (individualize for elderly); strict glycemic control slows carotid intima-media thickness progression; regular glucose monitoring and medication adherence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stress management and adequate sleep (7-9 hours nightly); chronic stress and sleep deprivation contribute to hypertension and atherosclerosis; screen for obstructive sleep apnea (STOP-BANG questionnaire)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Intracranial atherosclerotic stenosis",
+      "features": "Stenosis of intracranial arteries (MCA, basilar, intracranial ICA); different treatment approach (SAMMPRIS showed medical > stenting for intracranial stenosis); may coexist with extracranial disease",
+      "tests": "CTA/MRA head (intracranial vessels); TCD with intracranial velocities; distinguish from extracranial disease on vascular imaging"
+    },
+    {
+      "diagnosis": "Carotid dissection",
+      "features": "Younger patients; history of trauma or neck manipulation; sudden headache or neck pain; Horner syndrome (ptosis, miosis, anhidrosis); mural hematoma on imaging; not atherosclerotic",
+      "tests": "CTA/MRA neck (intramural hematoma, string sign, dissection flap); fat-saturated T1 MRI neck (crescent sign); typically anticoagulate or antiplatelet rather than revascularize"
+    },
+    {
+      "diagnosis": "Fibromuscular dysplasia (FMD)",
+      "features": "Younger women; \"string of beads\" appearance on imaging; may affect renal arteries concurrently; non-atherosclerotic; higher dissection risk",
+      "tests": "CTA/MRA (beaded appearance); screen for renal FMD; genetic counseling; antiplatelet therapy; rarely requires surgical intervention"
+    },
+    {
+      "diagnosis": "Takayasu arteritis",
+      "features": "Young women (<40); large vessel vasculitis; systemic inflammation (elevated ESR/CRP); may cause carotid stenosis or occlusion; pulses absent or diminished",
+      "tests": "ESR, CRP (elevated); CTA/MRA (long-segment stenosis, wall thickening); PET/CT (active inflammation); treat with immunosuppression not surgical revascularization in active phase"
+    },
+    {
+      "diagnosis": "Giant cell arteritis (GCA)",
+      "features": "Age >50; headache; jaw claudication; PMR symptoms; elevated ESR/CRP; can cause extracranial carotid and vertebral stenosis",
+      "tests": "ESR (>50), CRP; temporal artery biopsy; CTA/MRA (long-segment smooth stenosis vs focal atherosclerotic plaque); treat with high-dose steroids"
+    },
+    {
+      "diagnosis": "Radiation-induced carotid stenosis",
+      "features": "History of prior head/neck radiation therapy; delayed stenosis years-decades after radiation; diffuse and often long-segment stenosis; higher restenosis rates; CAS often preferred over CEA",
+      "tests": "Clinical history of prior radiation; CTA/MRA (long-segment stenosis in radiation field); tissue fibrosis makes CEA technically difficult; CAS preferred"
+    },
+    {
+      "diagnosis": "Carotid web (intimal variant of FMD)",
+      "features": "Thin shelf-like intraluminal filling defect; typically at posterior wall of carotid bulb; young patient with cryptogenic stroke; not true atherosclerotic stenosis",
+      "tests": "CTA neck with thin cuts (shelf-like filling defect at posterior bulb); often missed on ultrasound; treatment: antiplatelet vs surgical web resection for recurrent events"
+    },
+    {
+      "diagnosis": "Carotid body tumor (paraganglioma)",
+      "features": "Pulsatile neck mass; splaying of ICA and ECA on imaging (\"lyre sign\"); may cause compression or displacement of carotid but not atherosclerotic stenosis",
+      "tests": "CTA/MRA (enhancing mass at carotid bifurcation with vessel splaying); plasma metanephrines; surgical excision if symptomatic"
+    },
+    {
+      "diagnosis": "Cardioembolic stroke (without significant carotid disease)",
+      "features": "AF or structural heart disease as primary stroke etiology; carotid imaging shows <50% stenosis; embolic infarct pattern on MRI; treatment is anticoagulation not CEA",
+      "tests": "ECG, Holter, echocardiogram (AF, LV thrombus, valvular vegetation); carotid duplex (<50% stenosis); management with anticoagulation rather than antiplatelet/revascularization"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "CEA for symptomatic carotid stenosis 70-99% reduces ipsilateral stroke risk (ARR 17% at 2 years; NNT 6)",
+      "evidenceLevel": "Class I, Level A (RCT)",
+      "source": "[NASCET Collaborators. NEJM 1991](https://pubmed.ncbi.nlm.nih.gov/1852179/)"
+    },
+    {
+      "recommendation": "CEA benefit in symptomatic 50-69% stenosis is moderate (ARR 6.5% at 5 years) and greatest in men, recent events, and hemisphere symptoms",
+      "evidenceLevel": "Class I, Level A (RCT)",
+      "source": "[Barnett et al. NEJM 1998 (NASCET 50-69%)](https://pubmed.ncbi.nlm.nih.gov/9823822/)"
+    },
+    {
+      "recommendation": "CEA for symptomatic stenosis confirmed in European trial with different measurement method",
+      "evidenceLevel": "Class I, Level A (RCT)",
+      "source": "[European Carotid Surgery Trial (ECST). Lancet 1998](https://pubmed.ncbi.nlm.nih.gov/9624043/)"
+    },
+    {
+      "recommendation": "CEA for asymptomatic stenosis >=60% reduces 5-year stroke risk (ARR 5.9%; NNT 17); benefit requires perioperative risk <3%",
+      "evidenceLevel": "Class I, Level A (RCT)",
+      "source": "[ACAS Executive Committee. JAMA 1995](https://pubmed.ncbi.nlm.nih.gov/7869052/)"
+    },
+    {
+      "recommendation": "CEA for asymptomatic stenosis >=60% confirmed in larger European trial (ARR 5.4% at 5 years)",
+      "evidenceLevel": "Class I, Level A (RCT)",
+      "source": "[Halliday et al. Lancet 2004 (ACST)](https://pubmed.ncbi.nlm.nih.gov/15135594/)"
+    },
+    {
+      "recommendation": "CAS non-inferior to CEA for symptomatic and asymptomatic stenosis at 4 years (composite endpoint); CAS higher periprocedural stroke, CEA higher periprocedural MI",
+      "evidenceLevel": "Class I, Level A (RCT)",
+      "source": "[Brott et al. NEJM 2010 (CREST)](https://pubmed.ncbi.nlm.nih.gov/20505173/)"
+    },
+    {
+      "recommendation": "CREST long-term follow-up (10 years) showed equivalent outcomes between CEA and CAS for symptomatic patients; age interaction (younger patients do better with CAS, older with CEA)",
+      "evidenceLevel": "Class I, Level A (RCT)",
+      "source": "[Brott et al. NEJM 2016 (CREST 10-year)](https://pubmed.ncbi.nlm.nih.gov/26886418/)"
+    },
+    {
+      "recommendation": "Maximum benefit of CEA occurs when performed within 2 weeks of symptomatic event; delay reduces benefit significantly",
+      "evidenceLevel": "Class I, Level A (Pooled RCT analysis)",
+      "source": "[Rothwell et al. Lancet 2004](https://pubmed.ncbi.nlm.nih.gov/15016487/)"
+    },
+    {
+      "recommendation": "DAPT (aspirin + clopidogrel) x 21 days for minor stroke/high-risk TIA reduces recurrent stroke",
+      "evidenceLevel": "Class I, Level A (RCTs)",
+      "source": "[Wang et al. NEJM 2013 (CHANCE)](https://pubmed.ncbi.nlm.nih.gov/23803136/); [Johnston et al. NEJM 2018 (POINT)](https://pubmed.ncbi.nlm.nih.gov/29766750/)"
+    },
+    {
+      "recommendation": "High-intensity statin with LDL <70 for secondary stroke prevention reduces recurrent vascular events",
+      "evidenceLevel": "Class I, Level A (RCTs)",
+      "source": "[Amarenco et al. NEJM 2006 (SPARCL)](https://pubmed.ncbi.nlm.nih.gov/16899775/); [Amarenco et al. NEJM 2020 (TST)](https://pubmed.ncbi.nlm.nih.gov/31738504/)"
+    },
+    {
+      "recommendation": "BP target <130/80 for secondary stroke prevention (symptomatic patients)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[AHA/ASA Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34024117/)"
+    },
+    {
+      "recommendation": "AHA/ASA guideline for management of extracranial carotid and vertebral artery disease — comprehensive practice guideline",
+      "evidenceLevel": "Class I-III, Levels A-C",
+      "source": "[Brott et al. Stroke 2011 (ASA/ACCF/AHA guideline)](https://pubmed.ncbi.nlm.nih.gov/21282493/)"
+    },
+    {
+      "recommendation": "Society for Vascular Surgery guidelines for management of extracranial carotid stenosis",
+      "evidenceLevel": "Class I-III, Levels A-C",
+      "source": "[Ricotta et al. J Vasc Surg 2011 (SVS guideline)](https://pubmed.ncbi.nlm.nih.gov/21839933/)"
+    },
+    {
+      "recommendation": "Microembolic signals on TCD predict increased stroke risk in asymptomatic carotid stenosis",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Markus et al. Lancet Neurol 2010 (ACES)](https://pubmed.ncbi.nlm.nih.gov/20494734/)"
+    },
+    {
+      "recommendation": "Intraplaque hemorrhage on MRI predicts ipsilateral cerebrovascular events in carotid stenosis",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Altaf et al. Stroke 2007](https://pubmed.ncbi.nlm.nih.gov/17138943/)"
+    },
+    {
+      "recommendation": "CAS with embolic protection non-inferior to CEA in high-risk surgical patients",
+      "evidenceLevel": "Class I, Level B (RCT)",
+      "source": "[Yadav et al. NEJM 2004 (SAPPHIRE)](https://pubmed.ncbi.nlm.nih.gov/15470212/)"
+    },
+    {
+      "recommendation": "Mediterranean diet reduces recurrent cardiovascular events",
+      "evidenceLevel": "Class I, Level A (RCT)",
+      "source": "[Estruch et al. NEJM 2018 (PREDIMED)](https://pubmed.ncbi.nlm.nih.gov/29897866/)"
+    },
+    {
+      "recommendation": "PCSK9 inhibitor (evolocumab) reduces cardiovascular events in patients with atherosclerotic disease on statin therapy",
+      "evidenceLevel": "Class I, Level A (RCT)",
+      "source": "[Sabatine et al. NEJM 2017 (FOURIER)](https://pubmed.ncbi.nlm.nih.gov/28304224/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Carotid duplex ultrasound (surveillance)",
+      "frequency": "1 month post-CEA/CAS, 6 months, then annually; q6-12 months if unoperated significant stenosis",
+      "action": "Progressive stenosis >80% or new symptoms warrants repeat intervention evaluation; in-stent restenosis >70% warrants angiography",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Home BID; each clinic visit; continuous post-CEA/CAS x 24h",
+      "action": "Add/increase antihypertensives; caution with bilateral stenosis (avoid excessive lowering); post-op: treat >160 aggressively (hyperperfusion risk); treat <90 with pressors (cerebral hypoperfusion)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "LDL cholesterol",
+      "frequency": "6 weeks after statin start; q3-6 months until goal; annually",
+      "action": "Intensify statin; add ezetimibe; add PCSK9 inhibitor if still above goal despite max statin + ezetimibe",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "HbA1c",
+      "frequency": "q3 months until <7%; then q6 months",
+      "action": "Intensify diabetes treatment; add second agent; endocrine referral if HbA1c >8%",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Neurologic exam",
+      "frequency": "Each clinic visit; q1h x 24h post-CEA/CAS; at any acute change",
+      "action": "New deficit post-op warrants emergent imaging (CT head + CTA neck) to evaluate for thrombosis, embolism, or hyperperfusion syndrome; if within 6h consider re-exploration",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Cranial nerve function (post-CEA)",
+      "frequency": "Immediately post-op; daily until discharge; each clinic visit x 3 months",
+      "action": "CN injury in 5-8% of CEA; most resolve in 6-12 weeks; persistent CN X palsy warrants ENT evaluation and swallow assessment; bilateral CN X injury is emergency",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Renal function (BMP)",
+      "frequency": "2 weeks after ACEi/ARB start; after contrast procedures; q6 months",
+      "action": "Cr rise >30% warrants evaluation; post-contrast AKI: hydration, hold metformin; K >5.5 warrants reduction of ACEi/ARB",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Post-CEA wound/neck exam",
+      "frequency": "Daily during hospitalization; 1-2 weeks post-op; any acute neck swelling",
+      "action": "Expanding neck hematoma warrants emergent surgical exploration (airway compromise risk); wound infection warrants antibiotics and possible drainage",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Weight / BMI",
+      "frequency": "Each clinic visit",
+      "action": "Nutritional counseling; exercise prescription; medication review for weight-gaining medications",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home from ED",
+      "criteria": "Asymptomatic carotid stenosis found incidentally; TIA with resolved symptoms AND completed urgent workup (duplex, MRI, labs) AND no high-grade stenosis requiring admission; established outpatient follow-up within 1-2 weeks arranged"
+    },
+    {
+      "disposition": "Admit to hospital floor",
+      "criteria": "Symptomatic carotid stenosis (TIA or stroke) with >=50% ipsilateral stenosis for expedited workup and revascularization planning; post-CEA/CAS routine recovery (typically 1-2 days); crescendo TIAs requiring urgent intervention"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Post-CEA/CAS with hemodynamic instability (refractory hypotension or hypertension); post-CEA neck hematoma requiring monitoring or re-exploration; hyperperfusion syndrome (severe headache, seizure, ICH post-revascularization); stroke-in-evolution with unstable neurologic exam"
+    },
+    {
+      "disposition": "Transfer to higher level of care",
+      "criteria": "Symptomatic high-grade carotid stenosis at facility without CEA/CAS capability; post-CEA complication requiring neurointerventional or neurosurgical expertise not available locally"
+    },
+    {
+      "disposition": "Discharge home post-CEA",
+      "criteria": "Neurologically stable for >24h; cranial nerves intact or documented and stable; BP controlled on oral medications; wound hemostatic; tolerating diet; follow-up arranged (1-2 weeks surgical, 4 weeks duplex)"
+    },
+    {
+      "disposition": "Discharge home post-CAS",
+      "criteria": "Neurologically stable; groin access site hemostatic and no pseudoaneurysm; BP stable; DAPT compliance confirmed and understood; follow-up arranged (1 month duplex, neurology/interventionalist follow-up in 2-4 weeks)"
+    },
+    {
+      "disposition": "Outpatient follow-up schedule",
+      "criteria": "Neurology/vascular surgery 1-2 weeks post-event or post-procedure; carotid duplex at 1 month, 6 months, then annually; PCP q1-3 months for risk factor management; lipid panel q3-6 months until at goal"
+    }
+  ]
+}

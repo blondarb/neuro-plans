@@ -1,0 +1,1929 @@
+{
+  "id": "susac-syndrome",
+  "title": "Susac Syndrome",
+  "version": "1.1",
+  "icd10": [
+    "** H35.89 (Other specified retinal disorders -- branch retinal artery occlusion component)",
+    "I67.89 (Other cerebrovascular disease -- cerebral endotheliopathy)",
+    "H93.09 (Unspecified degenerative and vascular disorders of ear -- sensorineural hearing loss component)"
+  ],
+  "scope": "** Diagnosis, immunotherapy, and long-term monitoring of Susac syndrome -- an autoimmune endotheliopathy affecting small vessels of the brain, retina, and cochlea. Covers the classic clinical triad (encephalopathy with corpus callosum lesions, branch retinal artery occlusion, sensorineural hearing loss), diagnostic workup including MRI with characteristic \"snowball\" corpus callosum lesions, fluorescein angiography, audiometry, CSF analysis, and immunotherapy (IVIG, high-dose corticosteroids, plasma exchange, and long-term immunosuppression with mycophenolate mofetil, azathioprine, or rituximab). Includes differentiation from multiple sclerosis, CNS vasculitis, ADEM, and other autoimmune encephalopathies. Not all patients present with the complete triad simultaneously; a high index of suspicion is required. For primary CNS vasculitis, use \"CNS Vasculitis (PACNS)\" template. For autoimmune encephalitis with antibody-mediated mechanisms, use \"Autoimmune Encephalitis\" template. For MS, use \"MS - New Diagnosis\" template.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; infection screen; thrombocytopenia or anemia may suggest alternative diagnoses (TTP, SLE); monitor before immunotherapy",
+          "target": "Normal; thrombocytopenia or schistocytes raise concern for TTP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Metabolic screen; renal function for contrast and IVIG dosing; hepatic function for immunosuppressant clearance; electrolyte derangement as encephalopathy cause",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Inflammatory marker; typically normal or mildly elevated in Susac syndrome; markedly elevated suggests systemic vasculitis or infection",
+          "target": "Normal to mildly elevated (ESR is often normal in Susac syndrome)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory marker; usually normal in Susac syndrome; elevated CRP favors systemic vasculitis, infection, or alternative diagnosis",
+          "target": "Normal to mildly elevated",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
+          "rationale": "Coagulopathy screen pre-LP; baseline before anticoagulation; antiphospholipid evaluation",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Pre-steroid baseline; metabolic encephalopathy screen",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Glycemic status before high-dose corticosteroids; diabetic retinopathy as differential for BRAO",
+          "target": "<5.7%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Troponin (CPT 84484)",
+          "rationale": "Cardiac involvement rare but reported in Susac syndrome; stress cardiomyopathy in acute presentation",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood cultures x2 (CPT 87040)",
+          "rationale": "Rule out endocarditis and bacteremia causing embolic retinal artery occlusion",
+          "target": "No growth",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urinalysis with microscopy (CPT 81003)",
+          "rationale": "Screen for renal involvement suggesting systemic vasculitis (SLE, ANCA vasculitis) rather than Susac syndrome",
+          "target": "Normal (abnormal suggests systemic disease)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Procalcitonin (CPT 84145)",
+          "rationale": "Distinguish infectious from autoimmune CNS process",
+          "target": "Normal (<0.1 ng/mL)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "rationale": "Sepsis screen; metabolic assessment",
+          "target": "Normal (<2.0 mmol/L)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "rationale": "Seizure threshold; Susac patients develop seizures from cortical involvement",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pregnancy test (females of childbearing age) (CPT 81025)",
+          "rationale": "Teratogenicity of immunosuppressants; imaging with contrast; treatment planning; Susac syndrome has female predominance",
+          "target": "As applicable",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Type and screen (CPT 86900)",
+          "rationale": "Potential plasma exchange; transfusion if needed",
+          "target": "On file",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "Screen for SLE and other connective tissue diseases; SLE can cause BRAO and CNS disease mimicking Susac",
+          "target": "Negative or low titer",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Anti-dsDNA antibodies",
+          "rationale": "SLE evaluation if ANA positive; lupus can cause retinal vasculitis and encephalopathy",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-SSA/SSB (Ro/La)",
+          "rationale": "Sjogren syndrome with CNS involvement and retinal vasculitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANCA panel (c-ANCA/PR3, p-ANCA/MPO) (CPT 86235+86200)",
+          "rationale": "Systemic vasculitis with retinal and CNS involvement (GPA, MPA)",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Complement C3, C4 (CPT 86160+86161)",
+          "rationale": "Low complement suggests SLE or other complement-mediated vasculopathy",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Antiphospholipid antibodies (anticardiolipin IgG/IgM, anti-beta2-glycoprotein I IgG/IgM, lupus anticoagulant)",
+          "rationale": "Antiphospholipid syndrome causing BRAO and cerebral infarcts mimicking Susac syndrome",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quantitative immunoglobulins (IgG, IgA, IgM) (CPT 82784)",
+          "rationale": "Baseline before IVIG; IgA deficiency (IVIG anaphylaxis risk); hypergammaglobulinemia in autoimmune disease",
+          "target": "Normal; check IgA level before first IVIG dose",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis B surface antigen, surface antibody, core antibody (CPT 87340+86706+86704)",
+          "rationale": "Required before rituximab; HBV reactivation risk during immunosuppression",
+          "target": "Negative or immune (vaccinated)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis C antibody (CPT 86803)",
+          "rationale": "HCV-associated vasculitis; pre-immunosuppression screen",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody (CPT 87389)",
+          "rationale": "HIV retinopathy and vasculopathy can mimic Susac; pre-immunosuppression screen",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR/VDRL with reflex FTA-ABS (CPT 86592)",
+          "rationale": "Syphilis can cause retinal vasculitis, hearing loss, and encephalopathy (mimics complete Susac triad)",
+          "target": "Non-reactive",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "QuantiFERON-TB Gold or T-SPOT (CPT 86480)",
+          "rationale": "Pre-immunosuppression screen; TB can cause CNS vasculitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid dysfunction in encephalopathy differential; Hashimoto encephalopathy",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-endothelial cell antibodies (AECA)",
+          "rationale": "Elevated in Susac syndrome (supports autoimmune endotheliopathy mechanism); not widely available; research biomarker",
+          "target": "May be positive (supports diagnosis but not required); not standardized",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Homocysteine",
+          "rationale": "Hyperhomocysteinemia as thrombotic risk factor; contributes to retinal artery occlusion",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "D-dimer (CPT 85379)",
+          "rationale": "Coagulopathy screen; thrombotic thrombocytopenic purpura evaluation",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ACE level (CPT 82164)",
+          "rationale": "Neurosarcoidosis can cause cranial neuropathies, retinal disease, and hearing loss",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lyme serology (IgG/IgM with reflex Western blot)",
+          "rationale": "Lyme neuroborreliosis can cause cranial neuropathy (CN VIII) and encephalopathy; endemic areas",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Anti-neuronal antibodies (NMDAR, LGI1, CASPR2)",
+          "rationale": "Autoimmune encephalitis coexistence or mimicry of the encephalopathic component of Susac syndrome",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Aquaporin-4 (AQP4) antibody",
+          "rationale": "NMOSD with brainstem involvement can cause hearing loss and visual symptoms",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "MOG-IgG antibody",
+          "rationale": "MOGAD can cause encephalopathy and optic pathway disease",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Von Willebrand factor antigen and ADAMTS13 activity",
+          "rationale": "Endothelial activation marker; ADAMTS13 deficiency (TTP) can cause multiorgan microangiopathy mimicking Susac",
+          "target": "VWF elevated (endothelial activation); ADAMTS13 >10% (excludes TTP)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Fibrinogen, haptoglobin, peripheral blood smear",
+          "rationale": "Thrombotic microangiopathy screen (TTP/HUS); schistocytes on smear",
+          "target": "Normal fibrinogen; normal haptoglobin; no schistocytes",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Interleukin-6 (serum and CSF)",
+          "rationale": "Elevated in active autoimmune endotheliopathy; guides treatment response",
+          "target": "Normal (<7 pg/mL)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-endothelial cell antibodies -- research panel",
+          "rationale": "Specialized testing at reference laboratories; identifies antibodies targeting endothelial antigens in Susac syndrome",
+          "target": "May be positive; research use only",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (ANNA-1/Hu, CV2/CRMP5)",
+          "rationale": "Paraneoplastic retinopathy and encephalopathy; rare overlap",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Cogan syndrome antibodies (anti-HSP70, anti-cochlear antibodies)",
+          "rationale": "Cogan syndrome causes interstitial keratitis + vestibuloacoustic dysfunction (audiometric overlap with Susac)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Elevated ICP assessment; mildly elevated in Susac syndrome",
+          "target": "10-20 cm H2O (may be mildly elevated)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
+          "rationale": "Mild lymphocytic pleocytosis or normal cell count; distinct from PACNS (higher pleocytosis)",
+          "target": "Normal to mild pleocytosis (WBC 0-30 cells/uL); lymphocyte-predominant if elevated; notably LESS than PACNS",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Elevated protein supports CNS endotheliopathy; protein is elevated in ~75% of Susac syndrome cases",
+          "target": "Mildly elevated (50-150 mg/dL typical); less elevated than PACNS or infectious causes",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Glucose with paired serum glucose (CPT 82945)",
+          "rationale": "Low glucose suggests infection or carcinomatous meningitis; typically normal in Susac syndrome",
+          "target": "Normal (>60% of serum glucose)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Gram stain and bacterial culture (CPT 87205+87070)",
+          "rationale": "Rule out bacterial meningitis",
+          "target": "No organisms",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Oligoclonal bands (CSF AND paired serum) (CPT 83916)",
+          "rationale": "Differentiate from MS; OCBs present in Susac syndrome but less frequently than MS",
+          "target": "Often negative; if positive, usually fewer bands than MS; CSF-restricted bands possible",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IgG index",
+          "rationale": "Intrathecal antibody production; helps differentiate from MS",
+          "target": "Mildly elevated; less prominent than MS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology (CPT 88104)",
+          "rationale": "Exclude CNS lymphoma and carcinomatous meningitis",
+          "target": "Negative for malignant cells",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Flow cytometry",
+          "rationale": "CNS lymphoma as differential for multifocal white matter lesions",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HSV 1/2 PCR (CPT 87529)",
+          "rationale": "HSV encephalitis in encephalopathy differential",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "VZV PCR",
+          "rationale": "VZV vasculopathy can cause retinal necrosis and encephalopathy",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "VDRL (CSF) (CPT 86592)",
+          "rationale": "Neurosyphilis can mimic complete Susac triad (encephalopathy + visual loss + hearing loss)",
+          "target": "Non-reactive",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "AFB smear and culture (CPT 87116)",
+          "rationale": "TB meningitis in endemic areas or immunocompromised",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "BioFire FilmArray ME Panel (CPT 87483)",
+          "rationale": "Rapid multiplex PCR for common infectious meningitis/encephalitis pathogens",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Myelin basic protein (CSF)",
+          "rationale": "Elevated reflecting white matter damage; nonspecific",
+          "target": "Mildly elevated",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediate (ED triage)",
+          "target": "Rule out hemorrhage, mass, hydrocephalus; CT is often normal early in Susac syndrome",
+          "contraindications": "None significant",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "Within 24 hours; STAT if available",
+          "target": "PATHOGNOMONIC: \"Snowball\" lesions in central fibers of corpus callosum (best seen on sagittal T2/FLAIR and DWI); multifocal white matter T2/FLAIR hyperintensities in deep gray matter, periventricular white matter, posterior fossa, and internal capsule; leptomeningeal enhancement; callosal lesions with central \"hole\" pattern (icicle lesions); DWI restriction in acute lesions",
+          "contraindications": "Pacemaker; metallic implants; GFR <30 for gadolinium",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Fluorescein angiography (FA) (CPT 92235)",
+          "timing": "Within 24-48 hours; essential for diagnosis",
+          "target": "DIAGNOSTIC: Branch retinal artery occlusion (BRAO); arteriolar wall hyperfluorescence (pathognomonic -- represents endothelial damage); non-filling of arteriolar segments; retinal capillary leakage; multiple arterial branch occlusions often bilateral; abnormal even without visual symptoms",
+          "contraindications": "Fluorescein allergy; severe renal impairment (relative); pregnancy (relative)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "-"
+        },
+        {
+          "item": "Comprehensive audiometry (CPT 92557)",
+          "timing": "Within 24-48 hours; essential for diagnosis",
+          "target": "Sensorineural hearing loss (SNHL) predominantly low and mid-frequency (unlike presbycusis which is high-frequency); unilateral or bilateral; fluctuating; progressive to severe/profound",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "-"
+        },
+        {
+          "item": "Fundoscopic examination (dilated)",
+          "timing": "Immediate if visual symptoms",
+          "target": "Cotton-wool spots; Hollenhorst plaques (rare); arteriolar wall changes; retinal whitening from BRAO; multiple branch artery territory infarcts",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "On admission",
+          "target": "Baseline; arrhythmia screen; cardiac source of emboli in differential",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "timing": "On admission",
+          "target": "Exclude pulmonary pathology; mediastinal lymphadenopathy (sarcoidosis differential)",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Echocardiogram (transthoracic) (CPT 93306)",
+          "timing": "Within 24-48 hours",
+          "target": "Exclude cardiac embolic source (vegetations, PFO, myxoma) as cause of BRAO; rare cardiac involvement reported in Susac syndrome",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with sagittal FLAIR and DWI (dedicated Susac protocol)",
+          "timing": "Within 48 hours",
+          "target": "Sagittal FLAIR is critical: central callosal \"snowball\" lesions (3-7 mm round lesions in central corpus callosum fibers); \"icicle\" or \"spoke\" lesions hanging from inferior surface of corpus callosum; leptomeningeal enhancement; deep gray matter lesions (thalamus, basal ganglia); cerebellar lesions; DWI restriction indicates acute/active disease",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Optical coherence tomography (OCT) (CPT 92134)",
+          "timing": "Within 48-72 hours",
+          "target": "Retinal nerve fiber layer thinning; inner retinal layer loss from ischemia; macular edema; arteriolar wall changes; serial OCT monitors for disease progression and treatment response",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Visual field testing (CPT 92083)",
+          "timing": "Within 72 hours",
+          "target": "Scotomas corresponding to BRAO territories; reveals subclinical retinal ischemia",
+          "contraindications": "Patient cooperation required",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Distortion product otoacoustic emissions (DPOAE) (CPT 92588)",
+          "timing": "Within 72 hours",
+          "target": "Absent or reduced emissions indicating outer hair cell damage; cochlear ischemia pattern; complements audiometry",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Auditory brainstem response (ABR) (CPT 92585)",
+          "timing": "Within 72 hours",
+          "target": "Prolonged latencies or absent waves; helps differentiate cochlear (Susac) from retrocochlear (acoustic neuroma) pathology",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRA head (CPT 70544)",
+          "timing": "With MRI brain",
+          "target": "Typically normal in Susac syndrome (small vessel disease below MRA resolution); helps exclude large vessel vasculitis or RCVS",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "EEG (routine or continuous) (CPT 95816)",
+          "timing": "If seizures or altered consciousness",
+          "target": "Focal or diffuse slowing; epileptiform discharges; subclinical seizures; encephalopathy pattern; seizures reported in 15-20% of Susac patients",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT chest/abdomen/pelvis with contrast (CPT 71260+74178)",
+          "timing": "Within 72 hours if systemic disease suspected",
+          "target": "Exclude sarcoidosis (hilar adenopathy); systemic vasculitis features; occult malignancy (paraneoplastic retinopathy differential)",
+          "contraindications": "Contrast allergy; renal insufficiency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Transesophageal echocardiogram (TEE) (CPT 93312)",
+          "timing": "If TTE non-diagnostic",
+          "target": "Vegetations; aortic arch atheroma; PFO with paradoxical embolism; improved sensitivity for small embolic sources",
+          "contraindications": "Esophageal pathology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Conventional cerebral angiography (DSA) (CPT 36224)",
+          "timing": "If large vessel vasculitis suspected",
+          "target": "Typically NORMAL in Susac syndrome (small vessel disease); small vessel irregularities in rare cases; helps exclude PACNS and RCVS",
+          "contraindications": "Contrast allergy; renal insufficiency; coagulopathy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Brain biopsy (CPT 61140)",
+          "timing": "Only if diagnosis remains uncertain after comprehensive non-invasive workup",
+          "target": "Arteriolar wall thickening; endothelial cell swelling; perivascular lymphocytic infiltrate WITHOUT transmural vasculitis (key distinction from PACNS); microinfarctions; complement deposition in vessel walls",
+          "contraindications": "Coagulopathy; inaccessible location; critical instability",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Muscle/skin biopsy (microvasculature)",
+          "timing": "If systemic endotheliopathy suspected",
+          "target": "Endothelial cell changes; microangiopathy in dermal arterioles; complement deposition",
+          "contraindications": "Coagulopathy; infection at biopsy site",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Indocyanine green angiography (ICG) (CPT 92240)",
+          "timing": "Adjunct to FA if equivocal findings",
+          "target": "Choroidal involvement; choroidal hypoperfusion not seen on FA; complements fluorescein findings",
+          "contraindications": "Iodine/shellfish allergy; hepatic impairment",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "FDG-PET brain (CPT 78816)",
+          "timing": "If standard imaging inconclusive",
+          "target": "Focal hypermetabolism at sites of active inflammation; not well-studied in Susac syndrome",
+          "contraindications": "Uncontrolled diabetes; pregnancy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Methylprednisolone IV (CPT 96365)",
+          "route": "IV",
+          "indication": "Acute immunosuppression for confirmed or strongly suspected Susac syndrome; reduces endothelial inflammation and prevents further ischemic injury to brain, retina, and cochlea",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg daily",
+                "orderSentence": "Methylprednisolone IV (CPT 96365) 1000 mg daily IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily for 3-5 days; infuse over 1-2 hours; begin upon strong clinical suspicion; cornerstone of acute management along with IVIG",
+            "orderSentence": "Methylprednisolone IV (CPT 96365) 1000 mg daily IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; active GI bleeding; psychosis from steroids",
+          "monitoring": "Glucose q6h (target <180 mg/dL); blood pressure; mood and sleep disturbance; GI prophylaxis; I/O",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IVIG (intravenous immunoglobulin) (CPT 96365)",
+          "route": "IV",
+          "indication": "FIRST-LINE therapy in Susac syndrome (along with corticosteroids); anti-endothelial cell antibody neutralization; immunomodulation; start early and aggressively",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg daily",
+                "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 0.4 g/kg daily IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.4 g/kg/day IV x 5 days (total 2 g/kg) for induction; infuse per weight-based protocol; premedicate with acetaminophen 650 mg PO and diphenhydramine 25-50 mg IV/PO; followed by maintenance IVIG (see Section 3D)",
+            "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 0.4 g/kg daily IV"
+          },
+          "contraindications": "IgA deficiency (anaphylaxis risk -- check IgA level before first dose); recent thromboembolic event; renal failure (adjust infusion rate); volume overload",
+          "monitoring": "Renal function daily; headache (aseptic meningitis in 5-10%); thrombosis risk; volume overload; vital signs q15min during first infusion then q30-60min; serum IgA level before initiation",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Omeprazole (GI prophylaxis)",
+          "route": "IV/PO",
+          "indication": "Prevention of steroid-induced GI bleeding during high-dose corticosteroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Omeprazole (GI prophylaxis) 40 mg daily IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "40 mg IV or PO daily during high-dose steroid course and subsequent oral taper",
+            "orderSentence": "Omeprazole (GI prophylaxis) 40 mg daily IV"
+          },
+          "contraindications": "PPI allergy",
+          "monitoring": "None routine",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Insulin sliding scale",
+          "route": "SC",
+          "indication": "Steroid-induced hyperglycemia management; high-dose methylprednisolone frequently causes glucose >200 mg/dL",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per institutional protocol",
+                "orderSentence": "Insulin sliding scale Per institutional protocol SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Per protocol if glucose >180 mg/dL; anticipate need on days 2-5 of pulse steroids",
+            "orderSentence": "Insulin sliding scale Per institutional protocol SC"
+          },
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Glucose q6h; adjust per response",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Heparin (DVT prophylaxis)",
+          "route": "SC",
+          "indication": "VTE prophylaxis during hospitalization with immobility and active CNS disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5000 units q8h",
+                "orderSentence": "Heparin (DVT prophylaxis) 5000 units q8h SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "5000 units SC q8h; use enoxaparin 40 mg SC daily if no contraindication",
+            "orderSentence": "Heparin (DVT prophylaxis) 5000 units q8h SC"
+          },
+          "contraindications": "Active hemorrhage; hemorrhagic transformation; thrombocytopenia",
+          "monitoring": "Platelet count; signs of bleeding",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Aspirin (low-dose antiplatelet)",
+          "route": "PO",
+          "indication": "Antiplatelet therapy for microvascular thrombosis prevention; adjunctive to immunotherapy; targets platelet-endothelial interaction in Susac syndrome",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "81 mg daily",
+                "orderSentence": "Aspirin (low-dose antiplatelet) 81 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "81 mg PO daily; start at diagnosis; continue long-term as adjunctive antiplatelet therapy",
+            "orderSentence": "Aspirin (low-dose antiplatelet) 81 mg daily PO"
+          },
+          "contraindications": "Active bleeding; platelet count <50K; concurrent anticoagulation (relative)",
+          "monitoring": "GI symptoms; bleeding; platelet count",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam (acute seizure)",
+          "route": "IV",
+          "indication": "Acute seizure management; seizures reported in 15-20% of Susac syndrome patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/kg IV",
+                "orderSentence": "Lorazepam (acute seizure) 0.1 mg/kg IV IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg/dose); repeat x1 in 5 minutes if needed; max 8 mg total",
+            "orderSentence": "Lorazepam (acute seizure) 0.1 mg/kg IV IV"
+          },
+          "contraindications": "Respiratory depression; acute narrow-angle glaucoma",
+          "monitoring": "Respiratory status; sedation level; airway patency",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam (seizure prophylaxis/treatment)",
+          "route": "IV/PO",
+          "indication": "Anti-seizure medication if seizures have occurred; prophylaxis if extensive cortical involvement on MRI",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg BID",
+                "orderSentence": "Levetiracetam (seizure prophylaxis/treatment) 1000 mg BID IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Load: 1000-1500 mg IV; Maintenance: 500-1500 mg IV/PO BID; max 3000 mg/day",
+            "orderSentence": "Levetiracetam (seizure prophylaxis/treatment) 1000 mg BID IV"
+          },
+          "contraindications": "Renal impairment (dose adjust per CrCl)",
+          "monitoring": "Behavioral changes; renal function; suicidality",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO/IV",
+          "indication": "Headache management; headache is common in Susac syndrome, often severe and diffuse",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650 mg q6h PRN",
+                "orderSentence": "Acetaminophen 650 mg q6h PRN PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO/IV q6h PRN; max 3g/day (2g/day if hepatic impairment)",
+            "orderSentence": "Acetaminophen 650 mg q6h PRN PO"
+          },
+          "contraindications": "Severe hepatic impairment; allergy",
+          "monitoring": "LFTs if prolonged use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Metoclopramide",
+          "route": "IV",
+          "indication": "Nausea associated with headache, IVIG infusion, or vestibular symptoms from cochlear involvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg q6h PRN",
+                "orderSentence": "Metoclopramide 10 mg q6h PRN IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV q6-8h PRN; max 30 mg/day",
+            "orderSentence": "Metoclopramide 10 mg q6h PRN IV"
+          },
+          "contraindications": "Parkinsonian features; bowel obstruction; seizure history (relative)",
+          "monitoring": "Extrapyramidal symptoms; tardive dyskinesia with prolonged use",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV",
+          "indication": "Nausea and vomiting management; particularly during IVIG or plasma exchange",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg q6h PRN",
+                "orderSentence": "Ondansetron 4 mg q6h PRN IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV q6-8h PRN; max 16 mg/day",
+            "orderSentence": "Ondansetron 4 mg q6h PRN IV"
+          },
+          "contraindications": "QTc >500 ms; congenital long QT syndrome",
+          "monitoring": "QTc if risk factors",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Calcium carbonate + Vitamin D",
+          "route": "PO",
+          "indication": "Bone protection during anticipated prolonged corticosteroid course (treatment duration typically 2+ years)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg calcium + 1000 IU vitamin D daily",
+                "orderSentence": "Calcium carbonate + Vitamin D 1000 mg calcium + 1000 IU vitamin D daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 500-600 mg PO BID + Vitamin D 1000-2000 IU PO daily; start with steroids",
+            "orderSentence": "Calcium carbonate + Vitamin D 1000 mg calcium + 1000 IU vitamin D daily PO"
+          },
+          "contraindications": "Hypercalcemia; renal stones",
+          "monitoring": "25-OH Vitamin D level; calcium; DEXA if steroids >3 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trimethoprim-sulfamethoxazole (PJP prophylaxis)",
+          "route": "PO",
+          "indication": "Pneumocystis jirovecii prophylaxis during combined immunosuppression (steroids + immunosuppressant)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 DS tablet 3x/week",
+                "orderSentence": "Trimethoprim-sulfamethoxazole (PJP prophylaxis) 1 DS tablet 3x/week PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 double-strength tablet (160/800 mg) PO three times weekly; continue throughout immunosuppression",
+            "orderSentence": "Trimethoprim-sulfamethoxazole (PJP prophylaxis) 1 DS tablet 3x/week PO"
+          },
+          "contraindications": "Sulfa allergy; severe renal impairment; hyperkalemia; megaloblastic anemia",
+          "monitoring": "CBC; renal function; potassium",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nimodipine",
+          "route": "PO",
+          "indication": "Cochlear and retinal vasodilation; calcium channel blocker improves microvascular perfusion; used empirically in Susac protocols for cochlear and retinal ischemia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg q8h",
+                "orderSentence": "Nimodipine 30 mg q8h PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "30 mg PO q8h; titrate based on blood pressure tolerance; increase to 60 mg q8h if tolerated",
+            "orderSentence": "Nimodipine 30 mg q8h PO"
+          },
+          "contraindications": "Hypotension (SBP <90); severe hepatic impairment",
+          "monitoring": "Blood pressure; heart rate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hearing aid fitting",
+          "route": "Device",
+          "indication": "Sensorineural hearing loss rehabilitation; early fitting improves quality of life and communication",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Hearing aid fitting N/A device"
+              }
+            ],
+            "route": "device",
+            "instructions": "Refer to audiology for bilateral hearing aid evaluation once hearing loss documented; obtain cochlear implant evaluation if severe/profound bilateral SNHL",
+            "orderSentence": "Hearing aid fitting N/A device"
+          },
+          "contraindications": "None",
+          "monitoring": "Audiometric follow-up; device adjustment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression and anxiety commonly associated with Susac syndrome given multi-organ impairment (visual loss, hearing loss, cognitive decline)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Sertraline 50 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg PO daily; increase by 50 mg q2-4 weeks; target 100-200 mg/day; max 200 mg/day",
+            "orderSentence": "Sertraline 50 mg daily PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation",
+          "monitoring": "Suicidality; serotonin syndrome; QTc if risk factors",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Insomnia related to high-dose corticosteroids; sleep-wake disruption during hospitalization",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg qHS",
+                "orderSentence": "Melatonin 3 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-5 mg PO at bedtime; up to 10 mg",
+            "orderSentence": "Melatonin 3 mg qHS PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Sleep quality",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Plasma exchange (plasmapheresis, PLEX) (CPT 36514)",
+          "route": "IV",
+          "indication": "Refractory Susac syndrome not responding to steroids + IVIG; acute deterioration; removal of circulating anti-endothelial cell antibodies and inflammatory mediators",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 exchanges over 10-14 days",
+                "orderSentence": "Plasma exchange (plasmapheresis, PLEX) (CPT 36514) 5 exchanges over 10-14 days IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 plasma volumes per exchange; albumin replacement; 5-7 sessions over 10-14 days; extend to 10 sessions in severe cases",
+            "orderSentence": "Plasma exchange (plasmapheresis, PLEX) (CPT 36514) 5 exchanges over 10-14 days IV"
+          },
+          "contraindications": "Hemodynamic instability; severe coagulopathy; central line complications; hypocalcemia risk",
+          "monitoring": "Hemodynamics during exchange; calcium (citrate-induced hypocalcemia); fibrinogen post-exchange; coagulation studies; electrolytes; line-site infection",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Rituximab",
+          "route": "IV",
+          "indication": "Refractory Susac syndrome failing IVIG + steroids + maintenance immunosuppression; relapsing disease; B-cell mediated endotheliopathy component",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "375 mg/m2 weekly x 4 doses",
+                "orderSentence": "Rituximab 375 mg/m2 weekly x 4 doses IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0, day 14); premedicate with methylprednisolone 100 mg IV, acetaminophen 650 mg PO, diphenhydramine 50 mg IV",
+            "orderSentence": "Rituximab 375 mg/m2 weekly x 4 doses IV"
+          },
+          "contraindications": "Active hepatitis B; severe active infection; live vaccines within 4 weeks; PML history",
+          "monitoring": "Hepatitis B serology before first dose; CBC q2-4 weeks; immunoglobulin levels q3 months; CD19/CD20 B-cell counts q3 months; infusion reactions; PML surveillance",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cyclophosphamide IV",
+          "route": "IV",
+          "indication": "Severe refractory Susac syndrome failing IVIG, steroids, and other immunosuppressants; fulminant disease with rapid progression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "750 mg/m2 monthly",
+                "orderSentence": "Cyclophosphamide IV 750 mg/m2 monthly IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "750 mg/m2 IV monthly x 3-6 months; pre-hydrate with 1L NS; administer with MESNA for uroprotection; used in severe/refractory cases only",
+            "orderSentence": "Cyclophosphamide IV 750 mg/m2 monthly IV"
+          },
+          "contraindications": "Pregnancy; active infection; bone marrow failure; hemorrhagic cystitis",
+          "monitoring": "CBC weekly x 4 weeks after each cycle (nadir day 10-14); urinalysis each cycle; BMP; LFTs; fertility assessment; MESNA + hydration for uroprotection",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Infliximab",
+          "route": "IV",
+          "indication": "Refractory Susac syndrome; TNF-alpha inhibitor targeting endothelial inflammation; limited case reports showing benefit",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/kg at weeks 0, 2, 6",
+                "orderSentence": "Infliximab 5 mg/kg at weeks 0, 2, 6 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg/kg IV at weeks 0, 2, 6; then every 8 weeks; premedicate",
+            "orderSentence": "Infliximab 5 mg/kg at weeks 0, 2, 6 IV"
+          },
+          "contraindications": "Active TB; decompensated heart failure (NYHA III/IV); demyelinating disease; active infection",
+          "monitoring": "TB screening before and annually; hepatitis B; CBC; LFTs; heart failure symptoms; infection surveillance",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Natalizumab",
+          "route": "IV",
+          "indication": "Emerging option for refractory Susac syndrome; anti-VLA4 antibody reduces lymphocyte trafficking across blood-brain barrier; case reports of efficacy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg IV q4 weeks",
+                "orderSentence": "Natalizumab 300 mg IV q4 weeks IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "300 mg IV every 4 weeks; JC virus antibody testing required before initiation",
+            "orderSentence": "Natalizumab 300 mg IV q4 weeks IV"
+          },
+          "contraindications": "JC virus antibody positive (PML risk); concurrent immunosuppression (PML risk); progressive multifocal leukoencephalopathy",
+          "monitoring": "JC virus antibody index q6 months; MRI brain q6-12 months for PML surveillance; LFTs; CBC",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying Therapies (Maintenance)": [
+        {
+          "item": "IVIG maintenance (CPT 96365)",
+          "route": "IV",
+          "indication": "Maintenance immunomodulation following acute induction; backbone of long-term Susac management; prevents relapse and further end-organ damage",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg monthly",
+                "orderSentence": "IVIG maintenance (CPT 96365) 0.4 g/kg monthly IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Maintenance: 0.4 g/kg IV monthly OR 2 g/kg IV divided over 2-5 days every 4 weeks; taper to q6-8 weeks after 12-24 months of stability; minimum 2 years of treatment recommended",
+            "orderSentence": "IVIG maintenance (CPT 96365) 0.4 g/kg monthly IV"
+          },
+          "pretreatment": "IgA level; renal function; CBC; coagulation studies",
+          "contraindications": "IgA deficiency; acute renal failure; recent thromboembolism; volume overload",
+          "monitoring": "Renal function before each infusion; headache (aseptic meningitis); thrombosis risk; IgG trough levels (target >800 mg/dL); skin reactions; anaphylaxis monitoring",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Prednisone (oral, following IV pulse)",
+          "route": "PO",
+          "indication": "Oral corticosteroid taper following IV methylprednisolone pulse; bridge to steroid-sparing maintenance therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg/kg daily",
+                "orderSentence": "Prednisone (oral, following IV pulse) 1 mg/kg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg/kg/day PO (max 80 mg) after IV pulse; taper by 10 mg every 2 weeks to 20 mg/day; then taper by 5 mg every 2 weeks to 10 mg/day; then 2.5 mg every 2-4 weeks; target off steroids by 6-12 months if on maintenance immunosuppressant",
+            "orderSentence": "Prednisone (oral, following IV pulse) 1 mg/kg daily PO"
+          },
+          "pretreatment": "Active untreated infection; uncontrolled diabetes; psychosis from steroids; avascular necrosis",
+          "contraindications": "Glucose; blood pressure; bone density (DEXA if >3 months); weight; mood; cataracts; adrenal assessment on taper; osteoporosis prevention",
+          "monitoring": "-",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Mycophenolate mofetil (CellCept)",
+          "route": "PO",
+          "indication": "Long-term steroid-sparing immunosuppression; maintenance agent in Susac syndrome; prevents relapse",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Mycophenolate mofetil (CellCept) 500 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg PO BID; increase to 1000 mg PO BID over 2-4 weeks; target 2000-3000 mg/day in divided doses; minimum 2 years; some patients require indefinite therapy",
+            "orderSentence": "Mycophenolate mofetil (CellCept) 500 mg BID PO"
+          },
+          "pretreatment": "CBC (ANC >1500, Plt >100K); LFTs; renal function; hepatitis B/C screen; pregnancy test",
+          "contraindications": "Pregnancy (Category D -- teratogenic); active infection; severe GI disease",
+          "monitoring": "CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms (diarrhea, nausea); infection surveillance; pregnancy prevention (two forms of contraception)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Azathioprine (Imuran)",
+          "route": "PO",
+          "indication": "Alternative maintenance immunosuppression; steroid-sparing agent; used when mycophenolate not tolerated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Azathioprine (Imuran) 50 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg PO daily; increase by 50 mg every 2 weeks to target 2-3 mg/kg/day; minimum 2 years",
+            "orderSentence": "Azathioprine (Imuran) 50 mg daily PO"
+          },
+          "pretreatment": "TPMT genotype/activity before starting (mandatory); CBC; LFTs; renal function; hepatitis B/C screen",
+          "contraindications": "TPMT deficiency (check genotype before starting); pregnancy (relative); active infection; concurrent allopurinol (reduce dose by 75%)",
+          "monitoring": "TPMT genotype/activity before starting (mandatory); CBC q2 weeks x 2 months, then monthly; LFTs monthly x 3 months, then q3 months; pancreatitis symptoms; infection surveillance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology (neuroimmunology specialist) for Susac syndrome diagnosis confirmation, immunotherapy initiation, and long-term management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ophthalmology (retinal specialist) for fluorescein angiography, fundoscopic examination, OCT, and serial retinal monitoring; essential for diagnosis and treatment monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Otolaryngology/Audiology for comprehensive audiometry, DPOAE, ABR, hearing aid fitting, and cochlear implant evaluation if severe/profound SNHL",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Rheumatology for exclusion of systemic autoimmune disease (SLE, antiphospholipid syndrome) and co-management of immunosuppressive therapy",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neuroradiology for MRI interpretation with Susac protocol (sagittal FLAIR corpus callosum lesion characterization) and serial imaging comparison",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Infectious disease for exclusion of infectious etiologies (syphilis, VZV, TB) mimicking Susac triad and infection management during immunosuppression",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Hematology if thrombotic microangiopathy suspected (TTP/HUS differential) or for plasma exchange management",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for motor rehabilitation, gait training, balance assessment, and fall prevention given potential cerebellar and deep gray matter involvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment, cognitive rehabilitation, and adaptive strategies for visual and hearing impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Speech-language pathology for communication strategies (hearing loss), swallowing evaluation if brainstem involvement, and cognitive-linguistic therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Neuropsychology for formal cognitive assessment given cognitive decline and encephalopathy as core features; serial monitoring to track treatment response",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for insurance navigation (IVIG is costly), disability resources, and family support during prolonged treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Endocrinology for steroid-induced diabetes management if persistent hyperglycemia during corticosteroid therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Low vision rehabilitation services for patients with permanent visual field deficits from BRAO",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cochlear implant evaluation (otology/neurotology) for severe bilateral sensorineural hearing loss not responding to treatment and not adequately aided",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately for new or worsening visual loss (scotomas, blurred vision, visual field cuts), sudden hearing loss, new headache, confusion, or weakness -- these indicate disease relapse with new BRAO or CNS lesion",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Do not stop corticosteroids abruptly -- abrupt cessation causes adrenal crisis and disease flare; taper must be supervised by neurology",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Report signs of infection promptly (fever >100.4F, cough, dysuria, rash, mouth sores) while on immunosuppressive therapy, as infection risk is significantly increased",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid live vaccines during immunosuppressive therapy (MMR, varicella, zoster live, yellow fever, intranasal influenza); inform all healthcare providers of immunosuppressed status",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Do not drive until cleared by neurology and ophthalmology due to risk of seizures, cognitive impairment, and visual field deficits from BRAO",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Expect prolonged treatment course (minimum 2 years, often longer); adherence to monthly IVIG and daily immunosuppressant is essential to prevent relapse and cumulative organ damage",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid pregnancy during mycophenolate therapy; discuss contraception with neurology and OB/GYN before starting treatment",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Wear medical alert bracelet identifying immunosuppressed status and Susac syndrome diagnosis",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Report any new visual symptoms (floaters, scotomas, field cuts), hearing changes (new loss, tinnitus, fullness), or cognitive difficulties between visits, as these indicate subclinical relapse",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Attend all scheduled follow-up appointments including MRI surveillance, fluorescein angiography, audiometry, and laboratory monitoring",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Use assistive devices for hearing loss (hearing aids, captioning, FM systems) and visual impairment (magnifiers, contrast enhancement) to maintain function and safety",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid excessive sun exposure while on immunosuppressive therapy due to increased skin cancer risk; use sunscreen SPF 30+",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Stop smoking to reduce microvascular disease risk and improve treatment response; smoking worsens endothelial dysfunction",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Blood pressure target <140/90 mmHg (lower if tolerated) to reduce microvascular risk and prevent further ischemic injury",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Low-sodium diet to manage steroid-induced fluid retention and hypertension",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Regular weight-bearing exercise as tolerated to maintain bone density during prolonged corticosteroid therapy; target 150 min/week of moderate activity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "Y"
+        },
+        {
+          "item": "Adequate hydration (minimum 2L/day) to reduce thrombotic risk and support renal function during IVIG therapy",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Pneumococcal (PCV20) and annual influenza vaccination (inactivated only) before or during immunosuppression when possible; avoid live vaccines",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Home safety evaluation to address fall hazards given potential visual field deficits, hearing loss, balance impairment, and cognitive dysfunction",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Cognitive stimulation activities (reading, puzzles, social engagement) to support cognitive recovery alongside formal rehabilitation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "Y"
+        },
+        {
+          "item": "Stress management and psychological support given multi-organ disease with significant functional impact on daily life; referral to support groups",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "Y"
+        },
+        {
+          "item": "Regular ophthalmologic monitoring even during remission to detect subclinical retinal artery occlusions before permanent visual loss occurs",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "Y"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Multiple sclerosis (MS)",
+      "features": "White matter lesions BUT: callosal lesions in MS are periventricular (Dawson fingers at calloso-septal interface) NOT central corpus callosum \"snowball\" lesions; no BRAO; no low-frequency SNHL; CSF shows prominent oligoclonal bands; typical MS relapsing pattern",
+      "tests": "MRI (Dawson fingers vs. central callosal snowballs); fluorescein angiography (normal in MS); audiometry (normal in MS); CSF OCBs (strong positive in MS, weak/absent in Susac)"
+    },
+    {
+      "diagnosis": "CNS vasculitis (PACNS)",
+      "features": "Subacute progressive course; multifocal infarcts in multiple vascular territories; CSF shows significant lymphocytic pleocytosis (WBC 10-150) with elevated protein; angiographic beading; no BRAO pattern; no characteristic low-frequency SNHL",
+      "tests": "CSF (higher pleocytosis in PACNS); conventional angiography (abnormal in PACNS, normal in Susac); fluorescein angiography (BRAO pattern in Susac, not PACNS); MRI (central callosal snowballs absent in PACNS); brain biopsy (transmural vasculitis in PACNS vs. endotheliopathy in Susac)"
+    },
+    {
+      "diagnosis": "Acute disseminated encephalomyelitis (ADEM)",
+      "features": "Monophasic course; often post-infectious or post-vaccination; large, poorly marginated white matter lesions; deep gray matter involvement; no BRAO; no SNHL; pediatric predominance",
+      "tests": "MRI (large fluffy lesions vs. small snowball callosal lesions); fluorescein angiography (normal in ADEM); audiometry (normal in ADEM); CSF (similar mild pleocytosis but no BRAO)"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis",
+      "features": "Cranial neuropathies (CN VII, VIII); basilar leptomeningeal enhancement; hypothalamic involvement; hilar lymphadenopathy; elevated ACE; granulomatous inflammation on biopsy",
+      "tests": "ACE level (serum and CSF); chest CT (bilateral hilar adenopathy); biopsy (non-caseating granulomas); FDG-PET; no central callosal snowball lesions; FA shows retinal periphlebitis (not arteriolar occlusion)"
+    },
+    {
+      "diagnosis": "Antiphospholipid syndrome",
+      "features": "Recurrent arterial/venous thrombosis; pregnancy losses; livedo reticularis; retinal vascular occlusion can occur BUT central retinal artery or vein, not typically branch arteriolar pattern; no central callosal snowball lesions",
+      "tests": "Anticardiolipin, anti-beta2-glycoprotein I, lupus anticoagulant (confirmed on repeat 12 weeks apart); MRI pattern differs; no characteristic low-frequency SNHL"
+    },
+    {
+      "diagnosis": "Cogan syndrome",
+      "features": "Interstitial keratitis (NOT retinal artery occlusion) + vestibuloacoustic dysfunction; systemic vasculitis (aortitis); no characteristic callosal lesions on MRI; audiovestibular symptoms more vestibular-predominant",
+      "tests": "Slit-lamp examination (interstitial keratitis in Cogan, absent in Susac); fluorescein angiography (BRAO in Susac, not Cogan); MRI (no callosal snowballs in Cogan); CT aorta (aortitis in Cogan)"
+    },
+    {
+      "diagnosis": "VZV vasculopathy",
+      "features": "History of zoster; retinal necrosis (NOT typical BRAO pattern); encephalopathy with vasculopathy; CSF pleocytosis with VZV antibodies; responds to acyclovir",
+      "tests": "CSF VZV PCR and VZV IgG (positive in VZV vasculopathy); MRI pattern (not central callosal snowballs); fluorescein angiography (retinal necrosis pattern vs. BRAO); response to acyclovir (no response in Susac)"
+    },
+    {
+      "diagnosis": "Neurosyphilis",
+      "features": "Meningovascular syphilis can cause encephalopathy, hearing loss, and retinal disease (mimics complete triad); Argyll Robertson pupils; positive syphilis serology",
+      "tests": "RPR/VDRL; CSF VDRL; FTA-ABS; MRI pattern differs (no central callosal snowballs); responds to IV penicillin"
+    },
+    {
+      "diagnosis": "Embolic retinal artery occlusion (cardiac source)",
+      "features": "Central or branch retinal artery occlusion from cardiac emboli (atrial fibrillation, endocarditis, PFO); no encephalopathy unless concurrent stroke; no SNHL; Hollenhorst plaques on fundoscopy",
+      "tests": "Echocardiogram (embolic source); cardiac monitoring (atrial fibrillation); FA (single territory vs. multifocal arteriolar occlusions in Susac); no callosal snowballs; no hearing loss"
+    },
+    {
+      "diagnosis": "Vogt-Koyanagi-Harada (VKH) disease",
+      "features": "Bilateral panuveitis with exudative retinal detachments; hearing loss; meningismus; vitiligo, poliosis; CSF pleocytosis; uveal (choroidal) not arteriolar disease",
+      "tests": "Fluorescein angiography (choroidal pattern in VKH vs. arteriolar occlusion in Susac); OCT (subretinal fluid in VKH); skin findings (vitiligo/poliosis in VKH); MRI (no callosal snowballs in VKH)"
+    },
+    {
+      "diagnosis": "Eales disease",
+      "features": "Retinal vasculitis with peripheral retinal ischemia; predominantly venous involvement (periphlebitis); vitreous hemorrhage; young males; no CNS involvement; no SNHL",
+      "tests": "Fluorescein angiography (periphlebitis and peripheral ischemia in Eales vs. arteriolar BRAO in Susac); MRI brain (normal in Eales); audiometry (normal in Eales); no encephalopathy"
+    },
+    {
+      "diagnosis": "CADASIL",
+      "features": "Recurrent subcortical strokes; migraine with aura; progressive cognitive decline; white matter disease; temporal pole and external capsule involvement; autosomal dominant; NOTCH3 mutation",
+      "tests": "Genetic testing (NOTCH3 mutation); MRI (anterior temporal and external capsule involvement characteristic of CADASIL); no BRAO; no SNHL; skin biopsy (GOM deposits); family history"
+    },
+    {
+      "diagnosis": "Behcet disease (neuro-Behcet)",
+      "features": "Oral and genital ulcers; uveitis (not BRAO); brainstem syndrome; venous sinus thrombosis; pathergy; HLA-B51 associated",
+      "tests": "HLA-B51; clinical criteria (oral ulcers, genital ulcers, pathergy); slit-lamp (uveitis not BRAO); MRI pattern (brainstem predilection in neuro-Behcet); no callosal snowballs"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Susac syndrome clinical characterization and natural history",
+      "evidenceLevel": "Class III, Retrospective",
+      "source": "[Dorr J et al. Nat Rev Neurol 2013;9:307-316](https://pubmed.ncbi.nlm.nih.gov/23628737/)"
+    },
+    {
+      "recommendation": "European Susac Consortium diagnostic criteria and treatment recommendations",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Kleffner I et al. Nat Rev Neurol 2016;12:313-324](https://pubmed.ncbi.nlm.nih.gov/27174240/)"
+    },
+    {
+      "recommendation": "MRI findings in Susac syndrome: snowball corpus callosum lesions as pathognomonic finding",
+      "evidenceLevel": "Class III, Retrospective",
+      "source": "[Susac JO et al. J Neurol Sci 2003;212:35-41](https://pubmed.ncbi.nlm.nih.gov/12809998/)"
+    },
+    {
+      "recommendation": "Corpus callosum lesion characteristics on MRI differentiate Susac from MS",
+      "evidenceLevel": "Class III",
+      "source": "[Wuerfel J et al. J Neurol 2012;259:1340-1350](https://pubmed.ncbi.nlm.nih.gov/22222935/)"
+    },
+    {
+      "recommendation": "Fluorescein angiography arteriolar wall hyperfluorescence as diagnostic hallmark",
+      "evidenceLevel": "Class III",
+      "source": "[Egan RA et al. Am J Ophthalmol 2005;140:919-921](https://pubmed.ncbi.nlm.nih.gov/16310474/)"
+    },
+    {
+      "recommendation": "IVIG as first-line treatment in Susac syndrome; early aggressive therapy prevents irreversible damage",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "[Rennebohm RM et al. Int J Pediatr Otorhinolaryngol 2006;70:1241-1248](https://pubmed.ncbi.nlm.nih.gov/16480781/)"
+    },
+    {
+      "recommendation": "Comprehensive treatment protocol: IVIG + steroids + mycophenolate as standard of care",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Rennebohm RM, Susac JO. Curr Treat Options Neurol 2007;9:67-71](https://pubmed.ncbi.nlm.nih.gov/17288892/)"
+    },
+    {
+      "recommendation": "Long-term outcome of Susac syndrome with aggressive immunotherapy",
+      "evidenceLevel": "Class III, Retrospective",
+      "source": "[Dorr J et al. J Neurol 2018;265:1684-1695](https://pubmed.ncbi.nlm.nih.gov/29808296/)"
+    },
+    {
+      "recommendation": "Anti-endothelial cell antibodies in Susac syndrome supporting autoimmune endotheliopathy mechanism",
+      "evidenceLevel": "Class III",
+      "source": "[Magro CM et al. J Am Acad Dermatol 2011;65:1205-1213](https://pubmed.ncbi.nlm.nih.gov/21920620/)"
+    },
+    {
+      "recommendation": "Plasma exchange for refractory Susac syndrome",
+      "evidenceLevel": "Class IV, Case Reports",
+      "source": "[Mateen FJ et al. J Neurol 2012;259:213-217](https://pubmed.ncbi.nlm.nih.gov/21748281/)"
+    },
+    {
+      "recommendation": "Rituximab for refractory Susac syndrome",
+      "evidenceLevel": "Class IV, Case Reports",
+      "source": "[Piccolo L et al. Neurol Neuroimmunol Neuroinflamm 2020;7:e817](https://pubmed.ncbi.nlm.nih.gov/32690653/)"
+    },
+    {
+      "recommendation": "Original description of Susac syndrome: retinocochleocerebral vasculopathy",
+      "evidenceLevel": "Class III",
+      "source": "[Susac JO et al. Neurology 1979;29:313-316](https://pubmed.ncbi.nlm.nih.gov/571975/)"
+    },
+    {
+      "recommendation": "Large cohort characterization (104 patients); clinical spectrum and outcomes",
+      "evidenceLevel": "Class III, Retrospective",
+      "source": "[Dorr J et al. Brain 2013;136:3281-3292](https://pubmed.ncbi.nlm.nih.gov/24142144/)"
+    },
+    {
+      "recommendation": "CSF findings in Susac syndrome; differentiation from MS and PACNS",
+      "evidenceLevel": "Class III",
+      "source": "[Kleffner I et al. J Neurol 2014;261:1407-1416](https://pubmed.ncbi.nlm.nih.gov/24793887/)"
+    },
+    {
+      "recommendation": "Sensorineural hearing loss patterns in Susac syndrome (low/mid-frequency predominance)",
+      "evidenceLevel": "Class III",
+      "source": "[Roeser MM et al. Otol Neurotol 2009;30:1120-1126](https://pubmed.ncbi.nlm.nih.gov/19834407/)"
+    },
+    {
+      "recommendation": "Cochlear implantation for severe hearing loss in Susac syndrome",
+      "evidenceLevel": "Class IV, Case Reports",
+      "source": "[Bittner AK et al. Otol Neurotol 2012;33:e81-e83](https://pubmed.ncbi.nlm.nih.gov/23095828/)"
+    },
+    {
+      "recommendation": "Pathology of Susac syndrome: endotheliopathy without true vasculitis",
+      "evidenceLevel": "Class III",
+      "source": "[Susac JO et al. J Neuroophthalmol 2007;27:258-264](https://pubmed.ncbi.nlm.nih.gov/18090556/)"
+    },
+    {
+      "recommendation": "Differentiation of Susac syndrome from MS by MRI patterns",
+      "evidenceLevel": "Class III",
+      "source": "[Raets I et al. Eur J Radiol 2014;83:1436-1445](https://pubmed.ncbi.nlm.nih.gov/24908593/)"
+    },
+    {
+      "recommendation": "Natalizumab as treatment option for refractory Susac syndrome",
+      "evidenceLevel": "Class IV, Case Reports",
+      "source": "[Mallam B et al. Lancet Neurol 2015;14:361-362](https://pubmed.ncbi.nlm.nih.gov/25748099/)"
+    },
+    {
+      "recommendation": "Aspirin as adjunctive antiplatelet therapy in Susac syndrome",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Rennebohm RM et al. Curr Treat Options Neurol 2007;9:67-71](https://pubmed.ncbi.nlm.nih.gov/17288892/)"
+    },
+    {
+      "recommendation": "Susac syndrome relapse risk and treatment duration recommendations",
+      "evidenceLevel": "Class III",
+      "source": "[Dorr J et al. J Neurol 2018;265:1684-1695](https://pubmed.ncbi.nlm.nih.gov/29808296/)"
+    },
+    {
+      "recommendation": "Bone protection during prolonged corticosteroid therapy",
+      "evidenceLevel": "Class I (guideline)",
+      "source": "[Buckley L et al. Arthritis Rheumatol 2017;69:1521-1537](https://pubmed.ncbi.nlm.nih.gov/28585373/)"
+    },
+    {
+      "recommendation": "PJP prophylaxis during combined immunosuppression",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Park JW et al. J Rheumatol 2018;45:135-142](https://pubmed.ncbi.nlm.nih.gov/29093160/)"
+    },
+    {
+      "recommendation": "OCT monitoring for retinal nerve fiber layer changes in Susac syndrome",
+      "evidenceLevel": "Class III",
+      "source": "[Brandt AU et al. J Neurol 2014;261:1175-1185](https://pubmed.ncbi.nlm.nih.gov/24719317/)"
+    },
+    {
+      "recommendation": "Proposed diagnostic criteria for Susac syndrome (definite, probable, possible)",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Kleffner I et al. Nat Rev Neurol 2016;12:313-324](https://pubmed.ncbi.nlm.nih.gov/27174240/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic examination (mental status, cranial nerves, motor, sensory, coordination)",
+      "frequency": "Q4-6h (ICU); Q8-12h (floor)",
+      "action": "If worsening: urgent MRI; escalate immunotherapy; initiate PLEX if on steroids + IVIG; ICU transfer",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Visual acuity and confrontational visual fields",
+      "frequency": "Daily; Q8h if actively declining",
+      "action": "New scotoma or acuity loss: urgent fluorescein angiography; escalate treatment; ophthalmology reassessment",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Hearing assessment (bedside; whispered voice, tuning fork)",
+      "frequency": "Daily",
+      "action": "New or worsening hearing loss: urgent audiometry; escalate treatment; audiology reassessment",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "Q6h during IV methylprednisolone; QID during oral prednisone",
+      "action": "Insulin sliding scale; endocrine consult if persistent >250 mg/dL",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Q1h (ICU); Q4h (floor)",
+      "action": "Treat hypertension; avoid excessive lowering in setting of CNS ischemia",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "Q4h; continuous in ICU",
+      "action": "Fever workup (blood/urine cultures); distinguish infection from IVIG reaction",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "CBC with differential",
+      "frequency": "Daily during acute phase; q48h after stabilization",
+      "action": "Hold immunosuppression if critically low; evaluate for alternative diagnosis if unexpected cytopenias",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "BMP (electrolytes, BUN, Cr)",
+      "frequency": "Daily; more frequently during IVIG and PLEX",
+      "action": "Adjust IVIG infusion rate; hold if Cr rising; electrolyte repletion",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "LFTs",
+      "frequency": "Q48-72h during acute treatment",
+      "action": "Dose adjustment or hold hepatotoxic medications",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Seizure monitoring",
+      "frequency": "Continuous observation; EEG if seizures or altered consciousness",
+      "action": "Escalate ASMs per Section 3A; continuous EEG if subclinical seizures suspected",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "IVIG infusion monitoring (vital signs)",
+      "frequency": "Q15min first hour; Q30-60min subsequent",
+      "action": "Slow or stop infusion for reaction; premedicate for subsequent infusions; switch IVIG product if recurrent reactions",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "I/O and daily weight",
+      "frequency": "Daily",
+      "action": "Adjust IV fluids; diuretics if fluid overload",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Stable or improving neurologic examination, visual acuity, and hearing; no new lesions on MRI; tolerating oral medications; oral prednisone taper established; outpatient IVIG infusions arranged; follow-up with neurology and ophthalmology within 1-2 weeks; caregiver education completed; no active seizures; adequate home support; assistive devices (hearing aids, magnifiers) addressed"
+    },
+    {
+      "disposition": "**Admit to floor (neurology/medicine)**",
+      "criteria": "New presentation with suspected Susac syndrome requiring urgent workup (MRI, FA, audiometry, LP); initiation of IV methylprednisolone + IVIG; new visual loss or hearing loss; new neurologic deficits; encephalopathy requiring monitoring; seizures requiring medication adjustment; diagnostic uncertainty requiring expedited evaluation"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "Severe encephalopathy (GCS <12); status epilepticus; rapid neurologic deterioration despite treatment; plasma exchange requiring hemodynamic monitoring; severe IVIG reactions; post-brain biopsy monitoring; acute clinical deterioration with multiorgan involvement; need for continuous EEG monitoring"
+    },
+    {
+      "disposition": "**Transfer to higher level of care**",
+      "criteria": "Fluorescein angiography or retinal specialist not available; neuroimmunology specialist not available; plasma exchange not available; MRI with dedicated Susac protocol not available; cochlear implant evaluation needed"
+    },
+    {
+      "disposition": "**Inpatient rehabilitation**",
+      "criteria": "Medically stable; significant functional deficits from encephalopathy, visual loss, hearing loss, or motor deficits requiring intensive therapy; unable to safely return home; expected to benefit from structured rehabilitation program incorporating cognitive, visual, and auditory rehabilitation"
+    },
+    {
+      "disposition": "**Outpatient follow-up**",
+      "criteria": "All patients: neurology follow-up within 1-2 weeks post-discharge; ophthalmology for serial FA and OCT; audiology for serial audiometry; IVIG infusion center arrangements; rheumatology co-management; neuropsychology referral; rehabilitation services; laboratory monitoring per protocol"
+    },
+    {
+      "disposition": "**Readmission criteria**",
+      "criteria": "New or worsening visual loss (new BRAO); new or worsening hearing loss; new neurologic deficits or cognitive decline; breakthrough seizures; signs of treatment complication (infection, IVIG reaction, renal dysfunction); suspected disease relapse on imaging"
+    }
+  ]
+}

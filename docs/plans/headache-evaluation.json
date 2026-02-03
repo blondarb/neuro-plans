@@ -1,0 +1,1430 @@
+{
+  "id": "headache-evaluation",
+  "title": "Headache Evaluation",
+  "version": "1.1",
+  "icd10": [
+    "** R51.9 (Headache",
+    "unspecified)",
+    "R51.0 (Headache with orthostatic component)",
+    "G44.1 (Vascular headache",
+    "not elsewhere classified)",
+    "G44.209 (Tension-type headache",
+    "unspecified",
+    "not intractable)",
+    "G44.89 (Other headache syndrome)",
+    "G44.52 (New daily persistent headache)",
+    "G43.909 (Migraine",
+    "unspecified",
+    "not intractable)",
+    "G44.009 (Cluster headache syndrome",
+    "unspecified)",
+    "G44.319 (Post-traumatic headache",
+    "unspecified",
+    "not intractable)",
+    "R51 (Headache)"
+  ],
+  "scope": "** Systematic evaluation and diagnostic workup of undifferentiated headache in adults. Covers red flag identification (SNOOP mnemonic), primary vs secondary headache classification, indications for neuroimaging and lumbar puncture, and initial symptomatic management during workup. This is a DIAGNOSTIC EVALUATION plan, not a treatment plan for a specific headache type. Once a specific diagnosis is established, transition to the appropriate condition-specific plan (migraine, cluster headache, SAH, meningitis, etc.).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC (CPT 85025)",
+          "rationale": "Rule out anemia, infection, thrombocytopenia; baseline before LP",
+          "target": "Normal WBC, Hgb, platelets",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "rationale": "Electrolyte abnormalities, renal function, hepatic function; metabolic causes of headache",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "hCG (women of childbearing age) (CPT 84703)",
+          "rationale": "Pregnancy status affects imaging choices (CT radiation) and treatment options",
+          "target": "Document status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Screen for giant cell arteritis if age >50, new headache, temporal tenderness",
+          "target": "<20 mm/hr (age-adjusted: age/2 for men; (age+10)/2 for women)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory marker; supports GCA evaluation; infection screen",
+          "target": "<3.0 mg/L",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Coagulation studies (PT/INR, PTT) (CPT 85610, 85730)",
+          "rationale": "Baseline before LP; assess bleeding risk in suspected hemorrhage",
+          "target": "Normal PT/INR, PTT",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid dysfunction can cause or exacerbate headache",
+          "target": "0.4-4.0 mIU/L",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "rationale": "Low magnesium associated with headache disorders; may guide supplementation",
+          "target": ">1.8 mg/dL",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Vitamin D, 25-hydroxy (CPT 82306)",
+          "rationale": "Deficiency associated with chronic headache disorders",
+          "target": ">30 ng/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Procalcitonin (CPT 84145)",
+          "rationale": "Differentiate bacterial vs viral etiology when meningitis suspected",
+          "target": "<0.5 ng/mL",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Blood cultures x2 (CPT 87040)",
+          "rationale": "If meningitis or systemic infection suspected; obtain before antibiotics",
+          "target": "No growth",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "rationale": "Sepsis screen if infectious etiology suspected",
+          "target": "<2.0 mmol/L",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Carboxyhemoglobin (CPT 82375)",
+          "rationale": "Carbon monoxide poisoning can present as headache; especially with multiple household members affected",
+          "target": "<3% (nonsmoker); <10% (smoker)",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "If vasculitis or autoimmune cause suspected",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "ANCA panel (CPT 86235, 86236)",
+          "rationale": "If CNS vasculitis suspected",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "ACE level (CPT 82164)",
+          "rationale": "If neurosarcoidosis suspected",
+          "target": "Normal (8-52 U/L)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Hypercoagulability panel (CPT 85306, 85300, 85613, 86147)",
+          "rationale": "If cerebral venous thrombosis suspected (young patient, risk factors)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Pheochromocytoma workup (plasma metanephrines) (CPT 83835)",
+          "rationale": "Paroxysmal headache with hypertension, diaphoresis, palpitations",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR/VDRL (CPT 86592)",
+          "rationale": "If neurosyphilis suspected (risk factors, cranial neuropathies)",
+          "target": "Nonreactive",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV (CPT 87389)",
+          "rationale": "If immunosuppression suspected; opportunistic CNS infections",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lyme antibodies (CPT 86618)",
+          "rationale": "If endemic area and cranial neuropathy, meningitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure (CPT 89050)",
+          "rationale": "Diagnose elevated ICP (IIH) or low pressure (CSF leak/spontaneous intracranial hypotension)",
+          "target": "10-20 cm H2O (elevated >25 suggests IIH; <6 suggests low-pressure headache)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4) (CPT 89051)",
+          "rationale": "Detect infection (WBC), hemorrhage (RBC); tube 1 vs 4 comparison for traumatic vs true hemorrhage",
+          "target": "WBC <5/uL; RBC 0; clearing RBC count (traumatic tap) vs stable (SAH)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Elevated in infection, inflammation, malignancy, GBS",
+          "target": "15-45 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Glucose with simultaneous serum glucose (CPT 82945)",
+          "rationale": "Low CSF/serum ratio in bacterial meningitis, TB meningitis, malignancy",
+          "target": "CSF glucose >60% of serum glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Xanthochromia (visual or spectrophotometric)",
+          "rationale": "Detect SAH when CT head negative; xanthochromia develops 2-12 hours after bleed",
+          "target": "Negative (clear, colorless CSF)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Gram stain and culture (CPT 87205, 87070)",
+          "rationale": "Identify bacterial pathogen in suspected meningitis",
+          "target": "No organisms; no growth",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CSF meningitis/encephalitis panel (BioFire) (CPT 87483)",
+          "rationale": "Rapid multiplex PCR for bacterial, viral, fungal pathogens",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cytology (CPT 88108)",
+          "rationale": "Suspected leptomeningeal carcinomatosis (progressive headache, cranial neuropathies, known malignancy)",
+          "target": "No malignant cells",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Oligoclonal bands (CPT 83916)",
+          "rationale": "Suspected MS or other demyelinating disease",
+          "target": "Absent (or matched to serum)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "VDRL CSF (CPT 86593)",
+          "rationale": "Suspected neurosyphilis",
+          "target": "Nonreactive",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "AFB culture (CPT 87116)",
+          "rationale": "Suspected TB meningitis (subacute headache, basilar meningitis, immunocompromised)",
+          "target": "No growth",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Fungal culture (CPT 87102) / Cryptococcal antigen (CPT 87899)",
+          "rationale": "Suspected fungal meningitis (immunocompromised, subacute course)",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "EXT",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediate if: thunderclap headache, worst headache of life, focal neurologic deficits, altered mental status, papilledema, anticoagulated patient, trauma, immunocompromised, fever with meningismus",
+          "target": "Rule out hemorrhage, mass, hydrocephalus, midline shift",
+          "contraindications": "None in emergency; pregnancy relative (discuss risk/benefit)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain without contrast (CPT 70551)",
+          "timing": "New headache pattern, progressive headache, persistent headache without clear primary diagnosis, abnormal neurologic exam without acute emergency",
+          "target": "Rule out mass, demyelination, Chiari, structural cause",
+          "contraindications": "Pacemaker, ferromagnetic implants, severe claustrophobia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "Suspected mass, infection, inflammation, leptomeningeal disease, pituitary pathology",
+          "target": "Rule out enhancing lesion, abscess, meningeal enhancement",
+          "contraindications": "Contrast allergy, GFR <30, pregnancy",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CTA head (CPT 70496)",
+          "timing": "Thunderclap headache with negative CT; suspected aneurysm, dissection, or vasculopathy",
+          "target": "Rule out aneurysm, dissection, vasospasm",
+          "contraindications": "Contrast allergy, renal insufficiency",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CTA neck (CPT 70498)",
+          "timing": "Suspected cervical artery dissection (neck pain, Horner syndrome, young stroke)",
+          "target": "Rule out dissection, stenosis",
+          "contraindications": "Contrast allergy, renal insufficiency",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRA head (CPT 70544)",
+          "timing": "Suspected vasculopathy, aneurysm, vasculitis (non-emergent or contrast contraindicated)",
+          "target": "Normal vasculature; no aneurysm, stenosis, or irregularity",
+          "contraindications": "Pacemaker, ferromagnetic implants",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRV (CPT 70546) or CT venogram (CPT 70496)",
+          "timing": "Suspected cerebral venous thrombosis (headache + papilledema, pregnancy/postpartum, hypercoagulable state, OCP use)",
+          "target": "Patent venous sinuses",
+          "contraindications": "Per modality",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRA neck (CPT 70547)",
+          "timing": "Suspected cervical artery dissection (when CTA contraindicated)",
+          "target": "Normal cervical vasculature",
+          "contraindications": "Pacemaker, ferromagnetic implants",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CT head with contrast (CPT 70460)",
+          "timing": "If MRI unavailable and mass or infection suspected",
+          "target": "Rule out enhancing lesion",
+          "contraindications": "Contrast allergy, renal insufficiency",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ECG (CPT 93000)",
+          "timing": "Before administering triptans, DHE, or antiemetics (QTc assessment)",
+          "target": "Normal sinus rhythm, QTc <470 ms",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Conventional cerebral angiography (CPT 36224)",
+          "timing": "Suspected CNS vasculitis with negative noninvasive imaging; confirmed aneurysm for intervention planning",
+          "target": "Vessel wall irregularity, beading (vasculitis); aneurysm morphology",
+          "contraindications": "Contrast allergy (premedicate), renal insufficiency, coagulopathy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "High-resolution vessel wall MRI",
+          "timing": "Suspected intracranial vasculitis, RCVS, or dissection when CTA/MRA inconclusive",
+          "target": "Concentric enhancement (vasculitis) vs non-enhancing (RCVS)",
+          "contraindications": "Standard MRI contraindications",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CT temporal bones (CPT 70480)",
+          "timing": "Headache with pulsatile tinnitus, suspected CSF leak, skull base pathology",
+          "target": "Rule out tegmen dehiscence, mastoid disease",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Fundoscopic exam / Optic nerve sheath ultrasound",
+          "timing": "Screen for papilledema when fundoscopy unavailable or pupil dilation contraindicated",
+          "target": "Optic nerve sheath diameter <5 mm (normal); >5.8 mm suggests elevated ICP",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute Symptomatic Treatment - First-Line": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO/IV",
+          "indication": "Mild-moderate headache pain during workup",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Acetaminophen 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mg PO/IV once; may repeat q6h; max 3000 mg/day",
+            "orderSentence": "Acetaminophen 1000 mg PO"
+          },
+          "contraindications": "Hepatic disease, chronic alcohol use (>3 drinks/day)",
+          "monitoring": "LFTs if frequent use",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "Mild-moderate headache pain during workup",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400-800 mg",
+                "orderSentence": "Ibuprofen 400-800 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-800 mg PO once; may repeat q6h; max 2400 mg/day",
+            "orderSentence": "Ibuprofen 400-800 mg PO"
+          },
+          "contraindications": "Renal disease, GI bleeding history, aspirin allergy, third trimester pregnancy",
+          "monitoring": "Renal function, GI symptoms",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ketorolac",
+          "route": "IV/IM",
+          "indication": "Moderate-severe headache pain during workup",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Ketorolac 30 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mg IV once (15 mg if >65y, CrCl <50, or weight <50 kg); max 2 doses in 24h",
+            "orderSentence": "Ketorolac 30 mg IV"
+          },
+          "contraindications": "Renal disease (CrCl <30), active GI bleeding, anticoagulation, third trimester pregnancy",
+          "monitoring": "Renal function, bleeding",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Naproxen sodium",
+          "route": "PO",
+          "indication": "Mild-moderate headache pain during workup",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-825 mg",
+                "orderSentence": "Naproxen sodium 500-825 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "500-825 mg PO once; may repeat 250-500 mg in 6-8h; max 1250 mg first day",
+            "orderSentence": "Naproxen sodium 500-825 mg PO"
+          },
+          "contraindications": "Renal disease, GI bleeding history, aspirin allergy, third trimester pregnancy",
+          "monitoring": "Renal function, GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Acute Symptomatic Treatment - Antiemetics / Headache Cocktail": [
+        {
+          "item": "Prochlorperazine (CPT 96374)",
+          "route": "IV",
+          "indication": "Moderate-severe headache with nausea; dopamine-mediated headache relief",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Prochlorperazine (CPT 96374) 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV slow push over 5-10 min; may repeat once in 30 min",
+            "orderSentence": "Prochlorperazine (CPT 96374) 10 mg IV"
+          },
+          "contraindications": "QT prolongation, Parkinson disease, history of dystonic reaction",
+          "monitoring": "QTc, akathisia, dystonic reaction",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Metoclopramide",
+          "route": "IV",
+          "indication": "Moderate-severe headache with nausea; alternative to prochlorperazine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg",
+                "orderSentence": "Metoclopramide 10-20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10-20 mg IV over 15-30 min; may repeat once in 30 min",
+            "orderSentence": "Metoclopramide 10-20 mg IV"
+          },
+          "contraindications": "QT prolongation, Parkinson disease, seizure disorder, bowel obstruction",
+          "monitoring": "QTc, akathisia, dystonic reaction",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Diphenhydramine",
+          "route": "IV",
+          "indication": "Prevention of akathisia/dystonia from dopamine antagonist antiemetics",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg",
+                "orderSentence": "Diphenhydramine 25-50 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "25-50 mg IV push (co-administer with prochlorperazine or metoclopramide)",
+            "orderSentence": "Diphenhydramine 25-50 mg IV"
+          },
+          "contraindications": "Glaucoma, urinary retention, elderly (increased sedation risk)",
+          "monitoring": "Sedation level",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV/PO",
+          "indication": "Nausea/vomiting when dopamine antagonists contraindicated (Parkinson, QTc prolongation)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4-8 mg",
+                "orderSentence": "Ondansetron 4-8 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4-8 mg IV/PO once; may repeat q8h",
+            "orderSentence": "Ondansetron 4-8 mg IV"
+          },
+          "contraindications": "QT prolongation (dose-dependent), serotonin syndrome risk with concurrent serotonergic drugs",
+          "monitoring": "QTc",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Dexamethasone",
+          "route": "IV",
+          "indication": "Reduce headache recurrence; anti-inflammatory effect for suspected inflammatory etiology",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Dexamethasone 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV once (reduces 24-72h headache recurrence)",
+            "orderSentence": "Dexamethasone 10 mg IV"
+          },
+          "contraindications": "Active untreated infection, uncontrolled diabetes (relative), psychosis (relative)",
+          "monitoring": "Glucose, blood pressure",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "IV Fluids and Supportive Care": [
+        {
+          "item": "IV normal saline",
+          "route": "IV",
+          "indication": "Dehydration contributing to headache; pre-procedure hydration (LP); NPO status",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mL",
+                "orderSentence": "IV normal saline 1000 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "NS 1L bolus over 1h, then 75-125 mL/hr maintenance",
+            "orderSentence": "IV normal saline 1000 mL IV"
+          },
+          "contraindications": "Decompensated heart failure, severe volume overload",
+          "monitoring": "Intake/output, daily weights if admitted",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Magnesium sulfate (CPT 96365)",
+          "route": "IV",
+          "indication": "Low magnesium; adjunctive headache treatment especially if migraine suspected",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Magnesium sulfate (CPT 96365) 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV in 100 mL NS over 20-30 min",
+            "orderSentence": "Magnesium sulfate (CPT 96365) 2 g IV"
+          },
+          "contraindications": "Renal failure (GFR <30), myasthenia gravis, heart block",
+          "monitoring": "Magnesium level, deep tendon reflexes, respiratory status",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Empiric Treatment When Secondary Cause Suspected": [
+        {
+          "item": "Ceftriaxone",
+          "route": "IV",
+          "indication": "Empiric meningitis coverage pending CSF results (give BEFORE LP if delay anticipated)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Ceftriaxone 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV q12h (meningitis dosing); give STAT if bacterial meningitis suspected",
+            "orderSentence": "Ceftriaxone 2 g IV"
+          },
+          "contraindications": "Cephalosporin allergy (severe); adjust if PCN allergy documented",
+          "monitoring": "Renal function, rash, C. difficile",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Vancomycin",
+          "route": "IV",
+          "indication": "Empiric meningitis coverage for resistant organisms (give with ceftriaxone)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-20 mg/kg",
+                "orderSentence": "Vancomycin 15-20 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "15-20 mg/kg IV q8-12h (target trough 15-20 mcg/mL); max 2 g/dose",
+            "orderSentence": "Vancomycin 15-20 mg/kg IV"
+          },
+          "contraindications": "Vancomycin allergy; red man syndrome (infuse over 1h minimum)",
+          "monitoring": "Trough levels, renal function, ototoxicity",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acyclovir",
+          "route": "IV",
+          "indication": "Empiric HSV encephalitis coverage if fever, altered mental status, temporal lobe abnormalities",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg",
+                "orderSentence": "Acyclovir 10 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg/kg IV q8h (based on ideal body weight); adjust for renal function",
+            "orderSentence": "Acyclovir 10 mg/kg IV"
+          },
+          "contraindications": "Renal insufficiency (dose adjust); ensure adequate hydration",
+          "monitoring": "Renal function q24h, urine output",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone (for meningitis)",
+          "route": "IV",
+          "indication": "Reduce inflammation and improve outcomes in bacterial meningitis (give BEFORE or with first antibiotic dose)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.15 mg/kg",
+                "orderSentence": "Dexamethasone (for meningitis) 0.15 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.15 mg/kg IV q6h x 4 days (typically 10 mg q6h); start before or with first antibiotic dose",
+            "orderSentence": "Dexamethasone (for meningitis) 0.15 mg/kg IV"
+          },
+          "contraindications": "Active fungal infection; defer if viral meningitis confirmed",
+          "monitoring": "Glucose, blood pressure",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Nimodipine",
+          "route": "PO",
+          "indication": "Suspected SAH with vasospasm; RCVS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Nimodipine 60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "60 mg PO q4h x 21 days; reduce to 30 mg q4h if hypotension",
+            "orderSentence": "Nimodipine 60 mg PO"
+          },
+          "contraindications": "Hypotension (SBP <90); do NOT give IV (severe hypotension risk)",
+          "monitoring": "Blood pressure q1h initially, then q4h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Heparin drip",
+          "route": "IV",
+          "indication": "Confirmed cerebral venous thrombosis (CVT)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "80 units/kg",
+                "orderSentence": "Heparin drip 80 units/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "80 units/kg bolus, then 18 units/kg/hr; target PTT 60-80 sec",
+            "orderSentence": "Heparin drip 80 units/kg IV"
+          },
+          "contraindications": "Active hemorrhagic infarction (relative; still often treated), uncontrolled bleeding",
+          "monitoring": "PTT q6h until stable, then q12h; platelet count",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mannitol",
+          "route": "IV",
+          "indication": "Emergent ICP reduction in suspected mass lesion with herniation signs",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 g/kg",
+                "orderSentence": "Mannitol 1-1.5 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 g/kg IV bolus over 15-20 min; may repeat 0.25-0.5 g/kg q6h",
+            "orderSentence": "Mannitol 1-1.5 g/kg IV"
+          },
+          "contraindications": "Anuria, severe dehydration, active intracranial hemorrhage (relative)",
+          "monitoring": "Serum osmolality (<320), electrolytes, urine output, neuro checks",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline (23.4%)",
+          "route": "IV",
+          "indication": "Emergent ICP reduction; alternative to mannitol",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Hypertonic saline (23.4%) 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mL of 23.4% NaCl IV over 15-20 min via central line",
+            "orderSentence": "Hypertonic saline (23.4%) 30 mL IV"
+          },
+          "contraindications": "Hypernatremia (Na >160)",
+          "monitoring": "Sodium q2-4h (target 145-155), osmolality",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Empiric Treatment When Primary Headache Suspected": [
+        {
+          "item": "Sumatriptan SC",
+          "route": "SC",
+          "indication": "Suspected migraine or cluster headache with moderate-severe pain (after secondary causes excluded)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6 mg",
+                "orderSentence": "Sumatriptan SC 6 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "6 mg SC once; may repeat in 2h; max 12 mg/24h",
+            "orderSentence": "Sumatriptan SC 6 mg SC"
+          },
+          "contraindications": "CAD, stroke/TIA, uncontrolled HTN, hemiplegic migraine, pregnancy, basilar migraine, within 24h of ergotamine",
+          "monitoring": "Chest tightness, BP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Sumatriptan PO",
+          "route": "PO",
+          "indication": "Suspected migraine after secondary causes excluded; milder attacks",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50-100 mg",
+                "orderSentence": "Sumatriptan PO 50-100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50-100 mg PO once; may repeat in 2h; max 200 mg/24h",
+            "orderSentence": "Sumatriptan PO 50-100 mg PO"
+          },
+          "contraindications": "CAD, stroke/TIA, uncontrolled HTN, hemiplegic migraine, pregnancy, basilar migraine, within 24h of ergotamine",
+          "monitoring": "Chest tightness, BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxygen (high-flow)",
+          "route": "INH",
+          "indication": "Suspected cluster headache (unilateral periorbital pain with autonomic features)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100%",
+                "orderSentence": "Oxygen (high-flow) 100% INH"
+              }
+            ],
+            "route": "INH",
+            "instructions": "100% O2 via non-rebreather mask at 12-15 L/min x 15-20 min",
+            "orderSentence": "Oxygen (high-flow) 100% INH"
+          },
+          "contraindications": "None",
+          "monitoring": "Oxygen saturation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Nerve block (greater occipital)",
+          "route": "Local",
+          "indication": "Refractory headache during evaluation; suspected occipital neuralgia; adjunctive for migraine/cluster",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-3 mL per side",
+                "orderSentence": "Nerve block (greater occipital) 2-3 mL per side local injection"
+              }
+            ],
+            "route": "local injection",
+            "instructions": "Lidocaine 1% or bupivacaine 0.25%, 2-3 mL per side at greater occipital nerve",
+            "orderSentence": "Nerve block (greater occipital) 2-3 mL per side local injection"
+          },
+          "contraindications": "Local anesthetic allergy, overlying skin infection, anticoagulation (relative)",
+          "monitoring": "Local reaction, vasovagal response",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consult for headache with focal neurologic deficits, abnormal imaging, or diagnostic uncertainty requiring urgent subspecialty input",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurosurgery consult for suspected SAH, acute hydrocephalus, or mass lesion with herniation risk requiring surgical evaluation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ophthalmology consult for papilledema, visual loss, or suspected IIH requiring fundoscopic evaluation and visual field testing",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Headache specialist referral for chronic or recurrent headache not responding to initial management within 4-6 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Infectious disease consult for suspected CNS infection with unusual organism profile or immunocompromised host",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Rheumatology consult for suspected CNS vasculitis or giant cell arteritis requiring temporal artery biopsy coordination",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management referral for chronic refractory headache not responding to first-line and second-line therapies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Behavioral health referral for comorbid anxiety or depression contributing to headache chronification",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ENT referral for headache with sinus symptoms, pulsatile tinnitus, or suspected CSF leak from skull base",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately if headache becomes the worst headache of your life, sudden thunderclap onset, or associated with fever, stiff neck, confusion, weakness, double vision, or seizure (these may indicate a life-threatening cause)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Keep a headache diary documenting frequency, severity (0-10), location, duration, associated symptoms, triggers, and medications taken with response (essential for diagnosis and management)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not drive or operate heavy machinery while headache is severe or if experiencing visual changes, dizziness, or sedation from medications",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid medication overuse: limit acute headache medications to no more than 2-3 days per week to prevent medication overuse headache",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow up with primary care or neurology within 1-2 weeks if headache is new or within 4-6 weeks if chronic, to review diagnostic results and establish ongoing management",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Bring a list of all medications (prescription and over-the-counter) to follow-up visits, including how often each headache medication is used per month",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Maintain regular sleep schedule (7-8 hours nightly at consistent times) as both sleep deprivation and oversleeping are common headache triggers",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stay well-hydrated (64+ oz water daily) as dehydration is a modifiable headache trigger",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular aerobic exercise (30 minutes, 5 days/week) to reduce headache frequency through endorphin release and stress reduction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress management techniques (progressive muscle relaxation, deep breathing, biofeedback, or cognitive behavioral therapy) to reduce stress-related headache triggers",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Limit caffeine to consistent moderate intake (<200 mg/day) and avoid abrupt caffeine withdrawal which can trigger rebound headache",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Screen for and address modifiable risk factors: obesity, poor sleep hygiene, excessive screen time, poor posture, jaw clenching/bruxism",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation to reduce vascular risk and improve overall headache outcomes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Migraine",
+      "features": "Unilateral, pulsating, 4-72h, nausea/vomiting, photo/phonophobia, aura in 25%, aggravated by activity",
+      "tests": "Clinical history (ICHD-3 criteria); diagnosis of exclusion; normal neuroimaging"
+    },
+    {
+      "diagnosis": "Tension-type headache",
+      "features": "Bilateral, pressing/tightening, mild-moderate, no nausea, no photo AND phonophobia together, not worsened by activity",
+      "tests": "Clinical history; no imaging needed if typical presentation"
+    },
+    {
+      "diagnosis": "Cluster headache",
+      "features": "Strictly unilateral periorbital, autonomic features (lacrimation, rhinorrhea, ptosis, miosis), 15-180 min attacks, circadian pattern, male predominance",
+      "tests": "Clinical pattern; MRI brain with pituitary views to rule out structural cause"
+    },
+    {
+      "diagnosis": "Subarachnoid hemorrhage",
+      "features": "Thunderclap onset (peak intensity <1 min), \"worst headache of life,\" neck stiffness, loss of consciousness, sentinel leak",
+      "tests": "CT head (>95% sensitivity within 6h); LP with xanthochromia if CT negative within 6-12h; CTA for aneurysm"
+    },
+    {
+      "diagnosis": "Bacterial meningitis",
+      "features": "Fever, neck stiffness, altered mental status (classic triad in <50%); headache, photophobia, Kernig/Brudzinski signs",
+      "tests": "LP with CSF pleocytosis, elevated protein, low glucose; blood cultures; CSF Gram stain and culture"
+    },
+    {
+      "diagnosis": "Viral meningitis/encephalitis",
+      "features": "Fever, headache, photophobia, neck stiffness; encephalitis adds confusion, seizures, focal deficits",
+      "tests": "LP with lymphocytic pleocytosis, normal glucose; CSF PCR panel; MRI (temporal lobe in HSV)"
+    },
+    {
+      "diagnosis": "Idiopathic intracranial hypertension (IIH)",
+      "features": "Papilledema, visual obscurations, pulsatile tinnitus, worse supine, typically young obese women",
+      "tests": "LP with elevated opening pressure (>25 cm H2O); MRI with empty sella, optic nerve sheath distension; MRV to exclude CVT"
+    },
+    {
+      "diagnosis": "Cerebral venous thrombosis",
+      "features": "Progressive headache, seizures, focal deficits; risk factors (OCP, pregnancy/postpartum, hypercoagulable state)",
+      "tests": "MRV or CT venogram (filling defect in venous sinus); D-dimer (negative may exclude)"
+    },
+    {
+      "diagnosis": "Giant cell arteritis",
+      "features": "Age >50, new headache, jaw claudication, scalp tenderness, visual symptoms, polymyalgia rheumatica",
+      "tests": "ESR/CRP markedly elevated; temporal artery biopsy (gold standard); temporal artery ultrasound (halo sign)"
+    },
+    {
+      "diagnosis": "Cervical artery dissection",
+      "features": "Unilateral head/neck/face pain, partial Horner syndrome, pulsatile tinnitus; history of trauma, chiropractic manipulation, or connective tissue disorder",
+      "tests": "CTA neck or MRA neck with fat-sat; intimal flap, pseudoaneurysm, or string sign"
+    },
+    {
+      "diagnosis": "RCVS (reversible cerebral vasoconstriction syndrome)",
+      "features": "Recurrent thunderclap headaches over 1-4 weeks, may have triggers (vasoactive drugs, postpartum, exertion, Valsalva)",
+      "tests": "CTA/MRA with segmental vasoconstriction (beading); resolves within 3 months; catheter angiography if noninvasive negative"
+    },
+    {
+      "diagnosis": "Brain tumor",
+      "features": "Progressive headache, worse in morning or with Valsalva, new focal deficits, weight loss, seizures",
+      "tests": "MRI brain with contrast; CT if MRI unavailable"
+    },
+    {
+      "diagnosis": "Spontaneous intracranial hypotension",
+      "features": "Orthostatic headache (worse upright, better supine), may have subdural collections, pachymeningeal enhancement",
+      "tests": "LP with low opening pressure (<6 cm H2O); MRI with diffuse pachymeningeal enhancement, brain sagging; CT myelogram to localize CSF leak"
+    },
+    {
+      "diagnosis": "Carbon monoxide poisoning",
+      "features": "Headache with nausea, dizziness, confusion; multiple household members affected; worse in winter (heating systems)",
+      "tests": "Carboxyhemoglobin level (>3% nonsmoker); ABG"
+    },
+    {
+      "diagnosis": "Medication overuse headache",
+      "features": "Chronic daily headache (>15 days/month) in patient with pre-existing headache disorder using acute medications >10-15 days/month for >3 months",
+      "tests": "Medication diary; improves with withdrawal of offending agent (within 2 months)"
+    },
+    {
+      "diagnosis": "Acute angle-closure glaucoma",
+      "features": "Severe eye pain, headache, nausea/vomiting, mid-dilated fixed pupil, red eye, visual halos, elevated intraocular pressure",
+      "tests": "Intraocular pressure measurement; slit-lamp exam; gonioscopy"
+    },
+    {
+      "diagnosis": "Hypertensive emergency",
+      "features": "Severe headache with SBP >180 and/or DBP >120 with end-organ damage (encephalopathy, visual changes, AKI)",
+      "tests": "Blood pressure measurement; fundoscopy (papilledema, hemorrhages); renal function; CT head to exclude hemorrhage"
+    },
+    {
+      "diagnosis": "Pituitary apoplexy",
+      "features": "Sudden severe headache, visual field deficits (bitemporal hemianopia), ophthalmoplegia, altered mental status; history of pituitary adenoma",
+      "tests": "MRI with pituitary protocol; hormonal panel (cortisol, TSH, prolactin, GH)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "CT head within 6 hours has >95% sensitivity for SAH",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Perry et al. BMJ 2011](https://pubmed.ncbi.nlm.nih.gov/21791490/)"
+    },
+    {
+      "recommendation": "LP required if CT negative and SAH suspected (within 6-12h for xanthochromia)",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Edlow et al. Acad Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18616449/)"
+    },
+    {
+      "recommendation": "Ottawa SAH Rule for thunderclap headache risk stratification",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Perry et al. JAMA 2013](https://pubmed.ncbi.nlm.nih.gov/24065011/)"
+    },
+    {
+      "recommendation": "SNOOP mnemonic for headache red flags",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Dodick. N Engl J Med 2006](https://pubmed.ncbi.nlm.nih.gov/16495396/); [Do et al. Lancet Neurol 2019](https://pubmed.ncbi.nlm.nih.gov/30497828/)"
+    },
+    {
+      "recommendation": "Prochlorperazine/metoclopramide effective for acute undifferentiated headache in ED",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Friedman et al. Ann Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18006188/); [Kelley and Tepper. Headache 2012](https://pubmed.ncbi.nlm.nih.gov/22946834/)"
+    },
+    {
+      "recommendation": "Dexamethasone reduces 24-72h headache recurrence",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Singh et al. Acad Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18976336/)"
+    },
+    {
+      "recommendation": "ACR Appropriateness Criteria for headache imaging",
+      "evidenceLevel": "Expert consensus, Class II",
+      "source": "[ACR Appropriateness Criteria: Headache 2019](https://pubmed.ncbi.nlm.nih.gov/31054741/)"
+    },
+    {
+      "recommendation": "AHS consensus statement: choosing wisely in headache medicine",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Loder et al. Headache 2013](https://pubmed.ncbi.nlm.nih.gov/23808661/)"
+    },
+    {
+      "recommendation": "Neuroimaging not indicated for stable migraine pattern without red flags",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Sandrini et al. Neurol Sci 2004](https://pubmed.ncbi.nlm.nih.gov/15549530/); [AAN Practice Parameter, Frishberg 2000](https://pubmed.ncbi.nlm.nih.gov/10993987/)"
+    },
+    {
+      "recommendation": "Dexamethasone before antibiotics in bacterial meningitis improves outcomes",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[de Gans and van de Beek. N Engl J Med 2002](https://pubmed.ncbi.nlm.nih.gov/12417547/)"
+    },
+    {
+      "recommendation": "ICHD-3 diagnostic criteria for primary headache disorders",
+      "evidenceLevel": "Expert consensus (Gold Standard)",
+      "source": "[ICHD-3. Cephalalgia 2018](https://pubmed.ncbi.nlm.nih.gov/29368949/)"
+    },
+    {
+      "recommendation": "High-flow oxygen effective for acute cluster headache",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Cohen et al. J Neurol Neurosurg Psychiatry 2009](https://pubmed.ncbi.nlm.nih.gov/19151014/)"
+    },
+    {
+      "recommendation": "ESR and CRP for GCA screening; sensitivity improves with combined testing",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Salvarani et al. N Engl J Med 2002](https://pubmed.ncbi.nlm.nih.gov/12140307/); [Costello et al. BMC Musculoskelet Disord 2020](https://pubmed.ncbi.nlm.nih.gov/32527251/)"
+    },
+    {
+      "recommendation": "CTA for aneurysm detection approaches sensitivity of conventional angiography",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[White et al. Radiology 2000](https://pubmed.ncbi.nlm.nih.gov/10657181/)"
+    },
+    {
+      "recommendation": "MRV or CTV for cerebral venous thrombosis diagnosis",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Saposnik et al. Stroke 2011](https://pubmed.ncbi.nlm.nih.gov/21293023/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Pain scale (0-10 NRS)",
+      "frequency": "Per assessment; q1-2h in ED; q4h inpatient; each visit OPD",
+      "action": "Escalate analgesic regimen; reassess for secondary cause if not improving",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Neurologic exam (mental status, cranial nerves, motor, sensory, coordination)",
+      "frequency": "At presentation and with any change; q4h if admitted; each visit OPD",
+      "action": "Urgent imaging and neurology consult if new deficit; reassess differential",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Vital signs (BP, HR, RR, T, SpO2)",
+      "frequency": "Per assessment; q1h in ED/ICU; q4h inpatient",
+      "action": "Address hypertensive urgency; fever workup if new; reassess for infection",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "GCS / level of consciousness",
+      "frequency": "At presentation and q1-2h if declining; q4h if stable inpatient",
+      "action": "Urgent imaging; ICU transfer if GCS declining; intubation if GCS <8",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Pupil size and reactivity",
+      "frequency": "At presentation and q2-4h if concern for elevated ICP",
+      "action": "Fixed dilated pupil = emergent imaging + neurosurgery; initiate herniation protocol",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Fundoscopic exam",
+      "frequency": "At presentation; repeat if clinical change",
+      "action": "If papilledema: urgent LP for opening pressure; MRV to exclude CVT; ophthalmology consult",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Headache diary (frequency, severity, triggers, medications)",
+      "frequency": "Each outpatient visit; daily inpatient",
+      "action": "Adjust treatment plan; reassess diagnosis if not improving at 4-6 weeks",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ECG (if using dopamine antagonists, triptans, or DHE)",
+      "frequency": "Before first dose; repeat if symptoms",
+      "action": "Hold QT-prolonging medications; cardiology consult if QTc >500 ms",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Pain controlled to tolerable level; able to tolerate PO; no red flags on history or exam; normal neurologic exam; CT head normal (if indicated); reliable patient with clear return precautions; follow-up arranged within 1-2 weeks"
+    },
+    {
+      "disposition": "Admit to hospital floor",
+      "criteria": "Headache unresponsive to ED treatment requiring IV medications; need for IV antibiotic therapy (suspected meningitis); diagnostic workup requiring inpatient monitoring (serial LPs, extended imaging); intractable nausea/vomiting with dehydration; new neurologic deficit under investigation"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Suspected SAH with hemodynamic instability or declining mental status; confirmed bacterial meningitis with sepsis or altered consciousness; elevated ICP with risk of herniation; cerebral venous thrombosis with hemorrhagic conversion; status requiring continuous neuro monitoring; hypertensive emergency with neurologic symptoms"
+    },
+    {
+      "disposition": "Transfer to higher level of care",
+      "criteria": "Need for neurosurgical intervention not available (aneurysm clipping/coiling, VP shunt, tumor resection); need for interventional neuroradiology (embolization, thrombectomy); need for continuous EEG monitoring not available locally"
+    },
+    {
+      "disposition": "Outpatient follow-up",
+      "criteria": "New headache without red flags: PCP or neurology within 1-2 weeks; Chronic headache: neurology/headache specialist within 4-6 weeks; After hospitalization: neurology follow-up within 2-4 weeks; After normal ED workup: PCP within 1-2 weeks to review results"
+    }
+  ]
+}
