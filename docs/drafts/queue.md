@@ -20,13 +20,27 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 ## Queue
 
-| Plan | File | Status | Session | Last Updated |
-|------|------|--------|---------|--------------|
-| Drug-Resistant Epilepsy | [`drug-resistant-epilepsy.md`](drug-resistant-epilepsy.md) | `completed` | Claude Opus 4.5 | 2026-01-31 |
-| Epilepsy - Chronic Management | [`epilepsy-chronic-management.md`](epilepsy-chronic-management.md) | `completed` | Claude Opus 4.5 | 2026-01-31 |
-| Eclampsia / Seizure in Pregnancy | [`eclampsia-seizure-pregnancy.md`](eclampsia-seizure-pregnancy.md) | `completed` | Claude Opus 4.5 | 2026-01-31 |
-| Moyamoya Disease | [`moyamoya-disease.md`](moyamoya-disease.md) | `completed` | Claude Opus 4.5 | 2026-01-31 |
-| Post-Stroke Management | [`post-stroke-management.md`](post-stroke-management.md) | `completed` | Claude Opus 4.5 | 2026-01-31 |
+### HIGH PRIORITY — Tier 11 (pending)
+
+| Plan | ICD-10 | File | Status | Session | Last Updated |
+|------|--------|------|--------|---------|--------------|
+| Carotid Stenosis | I65.29 | `carotid-stenosis.md` | `pending` | — | 2026-02-01 |
+| Headache Evaluation | R51.9 | `headache-evaluation.md` | `pending` | — | 2026-02-01 |
+| Thunderclap Headache Evaluation | R51.9 | `thunderclap-headache-evaluation.md` | `in_progress` | Claude | 2026-02-02 |
+| Botulism | A05.1 | `botulism.md` | `pending` | — | 2026-02-01 |
+| Peroneal Neuropathy | G57.30 | `peroneal-neuropathy.md` | `pending` | — | 2026-02-01 |
+| Plexopathy | G54.0 | `plexopathy.md` | `pending` | — | 2026-02-01 |
+| Tics / Tourette Syndrome | F95.2 | `tics-tourette-syndrome.md` | `pending` | — | 2026-02-01 |
+| Neurocysticercosis | B69.0 | `neurocysticercosis.md` | `pending` | — | 2026-02-01 |
+| HIV-Associated Neurocognitive Disorder | B20 | `hiv-associated-neurocognitive-disorder.md` | `pending` | — | 2026-02-01 |
+| Susac Syndrome | H35.89 | `susac-syndrome.md` | `pending` | — | 2026-02-01 |
+| Neuro-Behcet's Disease | M35.2 | `neuro-behcets-disease.md` | `pending` | — | 2026-02-01 |
+| Hashimoto's Encephalopathy | E06.3 | `hashimotos-encephalopathy.md` | `pending` | — | 2026-02-01 |
+| Nystagmus Evaluation | H55.00 | `nystagmus-evaluation.md` | `pending` | — | 2026-02-01 |
+| Tinnitus Evaluation | H93.19 | `tinnitus-evaluation.md` | `pending` | — | 2026-02-01 |
+| Paresthesia / Numbness / Tingling | R20.2 | `paresthesia-numbness-tingling.md` | `pending` | — | 2026-02-01 |
+| Headache, Unspecified | R51.9 | `headache-unspecified.md` | `pending` | — | 2026-02-01 |
+| Tremor, Unspecified | R25.1 | `tremor-unspecified.md` | `pending` | — | 2026-02-01 |
 
 ---
 
@@ -136,6 +150,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 100 | Ataxia Evaluation | [`ataxia-evaluation.md`](../plans/ataxia-evaluation.md) | 2026-01-31 | 90%+ |
 | 101 | Primary CNS Lymphoma | [`primary-cns-lymphoma.md`](../plans/primary-cns-lymphoma.md) | 2026-01-31 | 90%+ |
 | 102 | Cervical Spondylotic Myelopathy | [`cervical-myelopathy.md`](../plans/cervical-myelopathy.md) | 2026-01-31 | 90%+ |
+| 103 | Drug-Resistant Epilepsy | [`drug-resistant-epilepsy.md`](../plans/drug-resistant-epilepsy.md) | 2026-02-02 | 90%+ |
+| 104 | Epilepsy - Chronic Management | [`epilepsy-chronic-management.md`](../plans/epilepsy-chronic-management.md) | 2026-02-02 | 90%+ |
+| 105 | Eclampsia / Seizure in Pregnancy | [`eclampsia-seizure-pregnancy.md`](../plans/eclampsia-seizure-pregnancy.md) | 2026-02-02 | 90%+ |
+| 106 | Moyamoya Disease | [`moyamoya-disease.md`](../plans/moyamoya-disease.md) | 2026-02-02 | 90%+ |
+| 107 | Post-Stroke Management | [`post-stroke-management.md`](../plans/post-stroke-management.md) | 2026-02-02 | 90%+ |
 
 ---
 
@@ -152,8 +171,9 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-01-31. Total approved: 102 plans.
+- Queue updated 2026-02-02. Total approved: 107 plans.
 - **Tier 10 batch** (2026-01-31): 5 new drafts added — Drug-Resistant Epilepsy, Epilepsy Chronic Management, Eclampsia/Seizure in Pregnancy, Moyamoya Disease, Post-Stroke Management. Awaiting physician approval.
+- **Tier 11 HIGH PRIORITY batch** (2026-02-01): 17 plans queued as physician-prioritized. Includes vascular (Carotid Stenosis), headache workups (Headache Evaluation, Thunderclap, Headache Unspecified), rare/infectious (Botulism, Neurocysticercosis, HIV-HAND), autoimmune/inflammatory (Susac, Neuro-Behcet's, Hashimoto's Encephalopathy), peripheral (Peroneal Neuropathy, Plexopathy, Paresthesia), movement (Tics/Tourette, Tremor Unspecified), and symptom evaluations (Nystagmus, Tinnitus). Note: "Headache Evaluation" and "Headache, Unspecified" may overlap — physician to clarify scope.
 
 ---
 

@@ -1,0 +1,1272 @@
+{
+  "id": "eclampsia-seizure-pregnancy",
+  "title": "Eclampsia / Seizure in Pregnancy",
+  "version": "1.0",
+  "icd10": [
+    "** O15.0 (Eclampsia complicating pregnancy)",
+    "O15.1 (Eclampsia complicating labor)",
+    "O15.2 (Eclampsia complicating the puerperium)",
+    "O15.9 (Eclampsia",
+    "unspecified as to time period)",
+    "O14.10 (Severe pre-eclampsia",
+    "unspecified trimester)",
+    "O14.12 (Severe pre-eclampsia",
+    "second trimester)",
+    "O14.13 (Severe pre-eclampsia",
+    "third trimester)",
+    "O14.20 (HELLP syndrome",
+    "unspecified trimester)",
+    "G40.909 (Epilepsy in pregnancy — known epilepsy presenting during pregnancy)"
+  ],
+  "scope": "** Neurological evaluation and management of seizures occurring during pregnancy and the postpartum period. Covers eclamptic seizures, PRES overlap with eclampsia, management of known epilepsy during pregnancy, acute seizure treatment including magnesium sulfate protocol, blood pressure management, fetal considerations, and postpartum seizure management. Excludes isolated preeclampsia without seizure (obstetric management), non-pregnant seizure evaluation (see New Onset Seizure), and chronic epilepsy management (see Epilepsy Chronic Management).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential and platelets (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "HELLP syndrome screening (hemolysis, elevated liver enzymes, low platelets); DIC; infection; baseline for delivery planning",
+          "target": "Platelets >100K; <100K → HELLP; schistocytes → microangiopathic hemolysis"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hepatic transaminases (HELLP); renal function (preeclampsia with severe features); electrolytes; glucose; uric acid trend",
+          "target": "AST/ALT <70 IU/L; elevated → HELLP/severe preeclampsia; creatinine <0.9 mg/dL; elevated → renal involvement"
+        },
+        {
+          "item": "Uric acid (CPT 84550)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Elevated in preeclampsia; correlates with disease severity; useful trending parameter",
+          "target": "<5.5 mg/dL in pregnancy; >6.0 → severe preeclampsia; trend upward concerning"
+        },
+        {
+          "item": "LDH (CPT 82553)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hemolysis marker for HELLP; elevated LDH with low haptoglobin and schistocytes confirms hemolysis",
+          "target": "<600 IU/L; elevated → hemolysis component of HELLP"
+        },
+        {
+          "item": "PT/INR, PTT, fibrinogen (CPT 85610, 85730, 85384)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy screening; DIC in severe preeclampsia/HELLP; baseline before delivery",
+          "target": "Normal; fibrinogen <300 mg/dL concerning (normally elevated in pregnancy >400); DIC if fibrinogen <200 + elevated D-dimer"
+        },
+        {
+          "item": "Haptoglobin (CPT 83010)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hemolysis marker; absent or very low in HELLP",
+          "target": "Normal; <25 mg/dL → hemolysis"
+        },
+        {
+          "item": "Peripheral blood smear (CPT 85007)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Schistocytes confirm microangiopathic hemolysis (HELLP, TTP, HUS)",
+          "target": "No schistocytes; present → microangiopathic process"
+        },
+        {
+          "item": "Urinalysis with protein (CPT 81003)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Proteinuria confirms preeclampsia diagnosis; quantification needed",
+          "target": "<300 mg/24h; ≥300 mg → proteinuria (preeclampsia diagnostic criterion)"
+        },
+        {
+          "item": "Urine protein/creatinine ratio (CPT 84156/82570)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Rapid assessment of proteinuria; correlates with 24h collection; >0.3 diagnostic",
+          "target": "<0.3; ≥0.3 → significant proteinuria"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypoglycemia as seizure cause; gestational diabetes assessment",
+          "target": "60-180 mg/dL; low → treat immediately"
+        },
+        {
+          "item": "Magnesium level (CPT 83735)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline before MgSO4 therapy; monitor during infusion for toxicity; therapeutic range 4-7 mEq/L for seizure prophylaxis",
+          "target": "Baseline 1.5-2.5 mEq/L; therapeutic on MgSO4: 4-7 mEq/L; toxic >7 (loss of reflexes), >10 (respiratory depression), >12 (cardiac arrest)"
+        },
+        {
+          "item": "Calcium, ionized (CPT 82330)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hypocalcemia as seizure cause; MgSO4 can cause hypocalcemia",
+          "target": "Normal; low → replete"
+        },
+        {
+          "item": "Type and screen (CPT 86900/86901)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Preparation for potential emergent delivery; hemorrhage risk in HELLP/DIC",
+          "target": "Type and antibody screen available"
+        },
+        {
+          "item": "ASM levels (if on ASMs for epilepsy) (CPT 80201-80299)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Pregnancy alters ASM pharmacokinetics (increased clearance, volume distribution, decreased protein binding); levels often subtherapeutic",
+          "target": "Compare to pre-pregnancy baseline; lamotrigine drops 50-70%; levetiracetam drops ~60%; free levels preferred"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "D-dimer (CPT 85379)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "DIC screening; normally elevated in pregnancy but very high suggests DIC",
+          "target": "Mildly elevated (normal in pregnancy); markedly elevated → DIC"
+        },
+        {
+          "item": "Reticulocyte count (CPT 85044)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Elevated in hemolytic anemia (HELLP); marrow response to hemolysis",
+          "target": "Elevated → active hemolysis; low → marrow suppression"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid storm can cause seizures; postpartum thyroiditis",
+          "target": "Normal"
+        },
+        {
+          "item": "Ammonia (CPT 82140)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Acute fatty liver of pregnancy (AFLP) can cause seizures; valproate encephalopathy if on VPA",
+          "target": "<35 μmol/L; elevated → AFLP or VPA toxicity"
+        },
+        {
+          "item": "Lipase (CPT 83690)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Pancreatitis associated with HELLP; severe epigastric pain evaluation",
+          "target": "Normal; elevated → pancreatitis"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Postictal elevation; persistent elevation → hemodynamic compromise or hepatic dysfunction",
+          "target": "Mildly elevated postictal (resolves in 2h); persistent → concerning"
+        },
+        {
+          "item": "Cortisol, AM (CPT 82533)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Adrenal insufficiency (Sheehan syndrome in postpartum); normally elevated in pregnancy",
+          "target": "Normal for pregnancy (elevated baseline)"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "ADAMTS13 activity (CPT 85397)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Thrombotic thrombocytopenic purpura (TTP) can mimic HELLP/eclampsia; low ADAMTS13 (<10%) diagnostic",
+          "target": ">10% (normal); <10% → TTP; requires plasma exchange"
+        },
+        {
+          "item": "Antiphospholipid antibody panel (CPT 86235, 86147)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Antiphospholipid syndrome increases preeclampsia and stroke risk; lupus anticoagulant, anticardiolipin, anti-β2-glycoprotein I",
+          "target": "Negative; positive → anticoagulation; thrombophilia workup"
+        },
+        {
+          "item": "Complement levels (C3, C4) (CPT 86160, 86161)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Low in lupus nephritis, atypical HUS, complement-mediated TMA mimicking preeclampsia",
+          "target": "Normal; low → autoimmune or complement-mediated process"
+        },
+        {
+          "item": "Autoimmune encephalitis antibody panel",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If seizures refractory to MgSO4 and antihypertensives; atypical presentation; postpartum encephalitis",
+          "target": "Negative; positive → immunotherapy"
+        },
+        {
+          "item": "Toxicology screen (CPT 80307)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Cocaine, methamphetamine → hypertensive crisis and seizures in pregnancy; occult substance use",
+          "target": "Negative; positive → specific management"
+        },
+        {
+          "item": "Thrombophilia panel",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If early-onset severe preeclampsia (<34 weeks); recurrent preeclampsia; factor V Leiden, prothrombin mutation, protein C/S, antithrombin III",
+          "target": "Normal; positive → hematology referral for future pregnancy planning"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "First-line acute imaging if eclamptic seizure; rule out hemorrhage, edema, herniation; safe in pregnancy (low dose, shield abdomen)",
+          "target": "No hemorrhage; may show posterior cerebral edema (PRES pattern); mass effect",
+          "contraindications": "None (shield abdomen; benefit outweighs minimal fetal risk)"
+        },
+        {
+          "item": "MRI brain without contrast (CPT 70551)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Preferred imaging after initial CT; PRES evaluation (T2/FLAIR hyperintensity in posterior cerebral regions); no gadolinium in pregnancy unless absolutely necessary",
+          "target": "**PRES**: bilateral symmetric T2/FLAIR hyperintensity in parieto-occipital regions; may involve frontal, temporal, brainstem, cerebellum; DWI to differentiate vasogenic (PRES) from cytotoxic edema (stroke)",
+          "contraindications": "MRI-incompatible implants; avoid gadolinium if possible (crosses placenta)"
+        },
+        {
+          "item": "MRA head and neck (CPT 70544/70547)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If concern for cerebral venous thrombosis (CVT), arterial dissection, or vasospasm; CVT risk elevated in pregnancy/postpartum",
+          "target": "Normal; CVT (absent flow in sinuses); arterial narrowing → vasospasm (RCVS overlap); dissection",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Cardiac evaluation; arrhythmia; cardiomyopathy (peripartum); magnesium effects on conduction",
+          "target": "Normal; PR prolongation (Mg effect); arrhythmia → cardiology",
+          "contraindications": "None"
+        },
+        {
+          "item": "Fetal monitoring (non-stress test / CTG)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Fetal heart rate monitoring; assess for fetal distress during/after maternal seizure; placental abruption detection",
+          "target": "Reassuring FHR (reactive NST); non-reassuring → emergent delivery planning",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRV brain (CPT 70546)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Cerebral venous thrombosis (CVT); pregnancy/postpartum is major risk factor; headache + seizure + focal deficit → must exclude",
+          "target": "Normal venous sinuses; CVT → anticoagulation",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "EEG (routine) (CPT 95816)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If seizures recur despite MgSO4; diagnostic uncertainty (eclampsia vs epilepsy vs NCSE); persistent altered mental status",
+          "target": "Normal background or diffuse slowing (eclampsia); epileptiform discharges → epilepsy; NCSE patterns",
+          "contraindications": "None"
+        },
+        {
+          "item": "Continuous EEG (cEEG) (CPT 95700)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Persistent altered mental status after eclamptic seizure; concern for NCSE; refractory seizures",
+          "target": "Ictal patterns; NCSE; background assessment",
+          "contraindications": "None; resource-dependent"
+        },
+        {
+          "item": "Echocardiogram (CPT 93306)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Peripartum cardiomyopathy; pulmonary edema in severe preeclampsia; cardiac function assessment",
+          "target": "Normal EF (>55%); reduced EF → peripartum cardiomyopathy; pulmonary hypertension",
+          "contraindications": "None"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Pulmonary edema (common in severe preeclampsia); aspiration after seizure; ETT position",
+          "target": "Clear lungs; bilateral edema → fluid overload/preeclampsia; infiltrate → aspiration",
+          "contraindications": "Shield abdomen"
+        },
+        {
+          "item": "Obstetric ultrasound (CPT 76805)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Fetal viability and growth; placental abruption evaluation; amniotic fluid assessment",
+          "target": "Normal fetal growth; abruption → emergent delivery; oligohydramnios → uteroplacental insufficiency",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CT angiography head (CPT 70496)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If concern for vasospasm (RCVS), arterial dissection, or aneurysm; when MRA unavailable or inconclusive",
+          "target": "Vasospasm; dissection; aneurysm",
+          "contraindications": "Contrast risk to fetus (use only if MRA unavailable and diagnosis critical); iodinated contrast crosses placenta"
+        },
+        {
+          "item": "Conventional angiography (CPT 36224)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "timing": "Gold standard for cerebral vasospasm if imaging equivocal and clinical suspicion high",
+          "target": "Multifocal segmental vasoconstriction (RCVS pattern)",
+          "contraindications": "Invasive; radiation; contrast; reserve for equivocal cases"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Magnesium sulfate (MgSO4) — loading dose",
+          "route": "IV",
+          "indication": "**FIRST-LINE for eclamptic seizures and seizure prophylaxis in severe preeclampsia**; superior to phenytoin and diazepam for eclampsia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4-6 g IV over 15-20 min",
+                "orderSentence": "Magnesium sulfate (MgSO4) — loading dose 4-6 g IV over 15-20 min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4-6 g IV loading dose in 100 mL NS over 15-20 min; Zuspan regimen: 4 g IV load + 1 g/h maintenance; Pritchard regimen: 4 g IV + 10 g IM load (5 g each buttock) + 5 g IM q4h",
+            "orderSentence": "Magnesium sulfate (MgSO4) — loading dose 4-6 g IV over 15-20 min IV"
+          },
+          "contraindications": "Myasthenia gravis; severe renal failure (adjust dose); heart block",
+          "monitoring": "Magnesium level q4-6h (target 4-7 mEq/L); deep tendon reflexes q1h (FIRST SIGN of toxicity = loss of patellar reflex); respiratory rate q1h (>12/min); urine output q1h (>25 mL/h); have calcium gluconate at bedside",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Magnesium sulfate (MgSO4) — maintenance",
+          "route": "IV",
+          "indication": "Continued seizure prophylaxis after loading dose; continue for 24-48h postpartum (eclampsia risk persists postpartum)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 g/h continuous infusion",
+                "orderSentence": "Magnesium sulfate (MgSO4) — maintenance 1-2 g/h continuous infusion IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 g/h standard maintenance; increase to 2 g/h if seizure recurs or in severe preeclampsia; continue 24h postpartum (48h if persistent severe features); reduce to 0.5 g/h if CrCl <30",
+            "orderSentence": "Magnesium sulfate (MgSO4) — maintenance 1-2 g/h continuous infusion IV"
+          },
+          "contraindications": "Same as loading; monitor for toxicity",
+          "monitoring": "Same as loading; reduce dose if reflexes diminish or urine output drops",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Calcium gluconate (MgSO4 antidote)",
+          "route": "IV",
+          "indication": "**MAGNESIUM TOXICITY RESCUE**: Respiratory depression, loss of reflexes, cardiac arrest from Mg toxicity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g IV over 3 min",
+                "orderSentence": "Calcium gluconate (MgSO4 antidote) 1 g IV over 3 min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 g (10 mL of 10% solution) IV over 3 min; may repeat; MUST be at bedside whenever MgSO4 infusing",
+            "orderSentence": "Calcium gluconate (MgSO4 antidote) 1 g IV over 3 min IV"
+          },
+          "contraindications": "None in emergency",
+          "monitoring": "Cardiac monitoring; respiratory status; repeat Mg level",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Labetalol",
+          "route": "IV",
+          "indication": "First-line antihypertensive for acute severe hypertension in pregnancy (SBP ≥160 or DBP ≥110); prevents stroke",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg IV",
+                "orderSentence": "Labetalol 20 mg IV IV"
+              },
+              {
+                "text": "40 mg IV",
+                "orderSentence": "Labetalol 40 mg IV IV"
+              },
+              {
+                "text": "80 mg IV",
+                "orderSentence": "Labetalol 80 mg IV IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "20 mg IV push over 2 min; if BP not controlled in 10 min → 40 mg; then 80 mg; max 300 mg total; then start infusion 1-2 mg/min",
+            "orderSentence": "Labetalol 20 mg IV IV"
+          },
+          "contraindications": "Asthma; decompensated heart failure; second/third-degree heart block; heart rate <60",
+          "monitoring": "BP q5 min during IV bolus; heart rate; fetal monitoring (labetalol safe in pregnancy)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hydralazine",
+          "route": "IV",
+          "indication": "Second-line antihypertensive for acute severe hypertension in pregnancy; alternative when labetalol contraindicated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg IV",
+                "orderSentence": "Hydralazine 5 mg IV IV"
+              },
+              {
+                "text": "10 mg IV",
+                "orderSentence": "Hydralazine 10 mg IV IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg IV over 1-2 min; if BP not controlled in 20 min → repeat 5-10 mg; max 20 mg total; then reassess",
+            "orderSentence": "Hydralazine 5 mg IV IV"
+          },
+          "contraindications": "Coronary artery disease; mitral stenosis; tachycardia",
+          "monitoring": "BP q5 min; heart rate (reflex tachycardia common); fetal monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Nifedipine (immediate-release)",
+          "route": "PO",
+          "indication": "Oral antihypertensive for severe hypertension when IV access delayed or as transition from IV therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg PO",
+                "orderSentence": "Nifedipine (immediate-release) 10 mg PO PO"
+              },
+              {
+                "text": "20 mg PO",
+                "orderSentence": "Nifedipine (immediate-release) 20 mg PO PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10-20 mg PO; may repeat in 30 min if needed; max 30 mg in acute setting; transition to extended-release 30-60 mg daily",
+            "orderSentence": "Nifedipine (immediate-release) 10 mg PO PO"
+          },
+          "contraindications": "Concurrent MgSO4 (theoretical concern for potentiated hypotension — monitor closely but combination is used); severe aortic stenosis",
+          "monitoring": "BP q15 min after first dose; fetal monitoring; avoid sublingual route (unpredictable absorption)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV",
+          "indication": "Second-line for eclamptic seizure not responding to MgSO4; or while MgSO4 loading in progress",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg IV push",
+                "orderSentence": "Lorazepam 4 mg IV push IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV push over 2 min; may repeat x1 in 5 min; max 8 mg; benzodiazepines cross placenta — anticipate neonatal sedation",
+            "orderSentence": "Lorazepam 4 mg IV push IV"
+          },
+          "contraindications": "Severe respiratory depression; use only if MgSO4 inadequate; short-term use only",
+          "monitoring": "Respiratory rate; SpO2; neonatal assessment at delivery; have airway equipment ready",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam",
+          "route": "IV, PO",
+          "indication": "ASM for recurrent seizures after MgSO4 failure; preferred over phenytoin in pregnancy due to better safety profile; for known epilepsy patients needing IV loading",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg IV load",
+                "orderSentence": "Levetiracetam 1000 mg IV load IV"
+              },
+              {
+                "text": "500 mg IV q12h",
+                "orderSentence": "Levetiracetam 500 mg IV q12h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Load 1000-1500 mg IV over 15 min; maintenance 500-1000 mg IV/PO q12h; renal dosing if CrCl <50",
+            "orderSentence": "Levetiracetam 1000 mg IV load IV"
+          },
+          "contraindications": "Hypersensitivity",
+          "monitoring": "Renal function; psychiatric side effects; safe in pregnancy (low teratogenicity); safe in breastfeeding",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO, IV",
+          "indication": "Headache in eclampsia/preeclampsia; safe in pregnancy; first-line analgesic",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg q6h",
+                "orderSentence": "Acetaminophen 650-1000 mg q6h PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO/IV q6h; max 3000 mg/day in pregnancy; avoid in hepatic impairment (HELLP)",
+            "orderSentence": "Acetaminophen 650-1000 mg q6h PO"
+          },
+          "contraindications": "Severe hepatic impairment (HELLP with transaminases >5x ULN); allergy",
+          "monitoring": "LFTs if HELLP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV, PO",
+          "indication": "Nausea/vomiting in eclampsia/severe preeclampsia; safe in pregnancy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg IV",
+                "orderSentence": "Ondansetron 4 mg IV IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV/PO q8h PRN; max 16 mg/day",
+            "orderSentence": "Ondansetron 4 mg IV IV"
+          },
+          "contraindications": "QT prolongation; first trimester concern (some data, generally considered safe)",
+          "monitoring": "QTc if risk factors",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Labetalol (oral maintenance)",
+          "route": "PO",
+          "indication": "Transition from IV to oral BP control in preeclampsia; maintenance antihypertensive",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Labetalol (oral maintenance) 100 mg BID PO"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Labetalol (oral maintenance) 200 mg BID PO"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Labetalol (oral maintenance) 300 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg PO BID; increase by 100 mg q12h as needed; target BP <150/100 antepartum; max 2400 mg/day",
+            "orderSentence": "Labetalol (oral maintenance) 100 mg BID PO"
+          },
+          "contraindications": "Asthma; bradycardia; decompensated CHF",
+          "monitoring": "BP; heart rate; fetal monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nifedipine extended-release",
+          "route": "PO",
+          "indication": "Oral antihypertensive maintenance for preeclampsia; calcium channel blocker safe in pregnancy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg daily",
+                "orderSentence": "Nifedipine extended-release 30 mg daily PO"
+              },
+              {
+                "text": "60 mg daily",
+                "orderSentence": "Nifedipine extended-release 60 mg daily PO"
+              },
+              {
+                "text": "90 mg daily",
+                "orderSentence": "Nifedipine extended-release 90 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily; increase by 30 mg q3-7d; max 120 mg/day; swallow whole, do not crush",
+            "orderSentence": "Nifedipine extended-release 30 mg daily PO"
+          },
+          "contraindications": "Severe aortic stenosis; hypotension",
+          "monitoring": "BP; heart rate; peripheral edema; fetal monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Phenytoin (fosphenytoin)",
+          "route": "IV",
+          "indication": "Third-line for eclamptic seizures refractory to MgSO4 + lorazepam; historically used but INFERIOR to MgSO4 for eclampsia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg PE/kg IV",
+                "orderSentence": "Phenytoin (fosphenytoin) 20 mg PE/kg IV IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "20 mg phenytoin equivalents (PE)/kg IV at ≤150 mg PE/min; maintenance 5 mg PE/kg/day; check free phenytoin level (protein binding altered in pregnancy)",
+            "orderSentence": "Phenytoin (fosphenytoin) 20 mg PE/kg IV IV"
+          },
+          "contraindications": "Sinus bradycardia; second/third-degree AV block; Stokes-Adams syndrome; **TERATOGENIC** (fetal hydantoin syndrome) — use only if no alternative",
+          "monitoring": "Cardiac monitoring during infusion; free phenytoin level (not total); BP; fetal monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Nicardipine infusion",
+          "route": "IV",
+          "indication": "Refractory severe hypertension not controlled by labetalol + hydralazine; ICU setting",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/h titrated to 15 mg/h",
+                "orderSentence": "Nicardipine infusion 5 mg/h titrated to 15 mg/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 5 mg/h IV; increase by 2.5 mg/h q5-15min; max 15 mg/h; target SBP 140-155; reduce BP no more than 25% in first hour",
+            "orderSentence": "Nicardipine infusion 5 mg/h titrated to 15 mg/h IV"
+          },
+          "contraindications": "Severe aortic stenosis; compensatory hypertension",
+          "monitoring": "Arterial line; continuous BP; fetal monitoring",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Sodium nitroprusside",
+          "route": "IV",
+          "indication": "Life-threatening hypertensive emergency refractory to all other agents; LAST RESORT in pregnancy due to cyanide risk to fetus",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25-0.5 mcg/kg/min",
+                "orderSentence": "Sodium nitroprusside 0.25-0.5 mcg/kg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 0.25 mcg/kg/min; titrate by 0.5 mcg/kg/min q5min; max 2 mcg/kg/min; use for shortest duration possible; **CYANIDE TOXICITY risk to fetus — LAST RESORT**",
+            "orderSentence": "Sodium nitroprusside 0.25-0.5 mcg/kg/min IV"
+          },
+          "contraindications": "Compensatory hypertension; hepatic insufficiency; coarctation of aorta",
+          "monitoring": "Arterial line mandatory; thiocyanate levels if >24h; **FETAL MONITORING — cyanide crosses placenta**",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Delivery",
+          "route": "Surgical/vaginal",
+          "indication": "**DEFINITIVE TREATMENT for eclampsia**: Delivery of fetus and placenta cures eclampsia in most cases",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Delivery N/A Obstetric"
+              }
+            ],
+            "route": "Obstetric",
+            "instructions": "Plan delivery after maternal stabilization (seizure control + BP control); ≥34 weeks: delivery recommended; <34 weeks: consider steroids for fetal lung maturity if maternal condition allows 24-48h delay; emergent C-section if fetal distress",
+            "orderSentence": "Delivery N/A Obstetric"
+          },
+          "contraindications": "Maternal instability precluding anesthesia (stabilize first)",
+          "monitoring": "Continuous fetal monitoring; maternal hemodynamics; postpartum MgSO4 continuation 24-48h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "ASM Safety in Pregnancy / Postpartum": [
+        {
+          "item": "Lamotrigine",
+          "route": "PO",
+          "indication": "Preferred ASM in pregnancy for known epilepsy; lowest teratogenicity risk among effective broad-spectrum ASMs; requires dose monitoring",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Individualized per levels",
+                "orderSentence": "Lamotrigine Individualized per levels PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Monitor levels monthly during pregnancy (drops 50-70%); increase dose to maintain pre-pregnancy level; reduce dose by 25% within first 2 weeks postpartum then rapidly taper to pre-pregnancy dose over next 2 weeks",
+            "orderSentence": "Lamotrigine Individualized per levels PO"
+          },
+          "pretreatment": "Pre-pregnancy lamotrigine level as target",
+          "contraindications": "SJS/TEN with rapid dose changes; do not increase faster than 50 mg q2wk",
+          "monitoring": "Monthly lamotrigine levels; postpartum level within 1 week of delivery; toxicity symptoms (diplopia, ataxia) as levels rebound postpartum",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levetiracetam",
+          "route": "PO",
+          "indication": "Preferred ASM in pregnancy; low teratogenicity; safe in breastfeeding; renal elimination (no hepatic interactions)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Individualized per levels",
+                "orderSentence": "Levetiracetam Individualized per levels PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Monitor levels each trimester (decreases ~60%); increase dose to maintain seizure control; renal clearance increases in pregnancy; postpartum dose reduction needed",
+            "orderSentence": "Levetiracetam Individualized per levels PO"
+          },
+          "pretreatment": "Pre-pregnancy level as target",
+          "contraindications": "Hypersensitivity; dose adjust for renal function",
+          "monitoring": "Levels each trimester; psychiatric symptoms; renal function; postpartum reduction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Folic acid (high-dose preconception)",
+          "route": "PO",
+          "indication": "Neural tube defect prevention in women with epilepsy; ALL women on ASMs planning pregnancy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg daily",
+                "orderSentence": "Folic acid (high-dose preconception) 4 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "4 mg daily starting ≥3 months before conception; continue through first trimester; 1 mg daily maintenance after",
+            "orderSentence": "Folic acid (high-dose preconception) 4 mg daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Few",
+          "monitoring": "Serum folate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin K (neonatal)",
+          "route": "IM",
+          "indication": "All neonates born to mothers on enzyme-inducing ASMs; hemorrhagic disease of newborn prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg IM at birth",
+                "orderSentence": "Vitamin K (neonatal) 1 mg IM at birth IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "1 mg vitamin K IM to neonate at delivery; standard of care but especially critical with enzyme-inducing maternal ASMs",
+            "orderSentence": "Vitamin K (neonatal) 1 mg IM at birth IM"
+          },
+          "pretreatment": "None",
+          "contraindications": "None",
+          "monitoring": "Neonatal coagulation studies if clinically indicated",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "OB/GYN or Maternal-Fetal Medicine (MFM) STAT consultation for all eclamptic seizures for delivery planning and fetal assessment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurology consultation for eclamptic seizure evaluation; PRES vs CVT vs other neurological cause; ASM management in known epilepsy",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Anesthesiology consultation for delivery planning; epidural/spinal safety; airway assessment if intubated; magnesium-neuromuscular blocker interactions",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neonatology or pediatrics notification for delivery; assess neonatal effects of maternal seizure, magnesium, and ASMs",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Hematology consultation if HELLP with severe thrombocytopenia (<50K), suspected TTP (ADAMTS13 pending), or DIC",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Nephrology consultation if acute kidney injury (creatinine >1.1 mg/dL in pregnancy) or persistent proteinuria postpartum",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Postpartum neurology follow-up in 2-4 weeks for MRI review, ASM management, and recurrence risk counseling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Postpartum OB follow-up in 1-2 weeks for BP monitoring, proteinuria resolution, and future pregnancy counseling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately if new seizure, severe headache not responsive to acetaminophen, visual changes (blurring, scotomata, blindness), right upper quadrant pain, or sudden swelling of face/hands (preeclampsia warning signs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Continue magnesium sulfate monitoring in hospital for 24-48 hours after delivery; do not leave against medical advice during this critical window",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-"
+        },
+        {
+          "item": "Postpartum eclampsia can occur up to 6 weeks after delivery; any new seizure, severe headache, or visual changes in the postpartum period requires emergency evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "If on ASMs for epilepsy: do NOT stop medications during pregnancy; benefits of seizure prevention outweigh teratogenicity risk of most ASMs; discuss any changes with neurologist",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Breastfeeding is generally safe with most ASMs (lamotrigine, levetiracetam, valproate, carbamazepine); monitor infant for sedation; discuss with neurologist and pediatrician",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Monitor blood pressure at home daily for 6 weeks postpartum using validated automated cuff; record and bring to follow-up; seek care if SBP ≥150 or DBP ≥100",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Future pregnancies: preeclampsia recurrence risk is 15-25%; eclampsia recurrence ~2%; discuss timing and planning with MFM",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Low-dose aspirin 81 mg daily starting at 12-16 weeks in future pregnancies for preeclampsia prevention (recommended for women with prior preeclampsia/eclampsia)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Blood pressure optimization before future pregnancies; target <130/80; weight management and regular exercise reduce preeclampsia risk",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Calcium supplementation 1000-2000 mg daily in future pregnancies may reduce preeclampsia risk (especially if baseline dietary calcium is low)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Adequate sleep and stress management during pregnancy and postpartum to reduce seizure threshold and support recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation and alcohol avoidance throughout pregnancy and postpartum",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Eclampsia (primary diagnosis)",
+      "features": "New-onset seizure in pregnancy/postpartum with hypertension (≥140/90) and proteinuria; >20 weeks gestation; may occur without preceding preeclampsia diagnosis",
+      "tests": "BP, urinalysis, preeclampsia labs; clinical diagnosis"
+    },
+    {
+      "diagnosis": "PRES (posterior reversible encephalopathy syndrome)",
+      "features": "Overlaps heavily with eclampsia; posterior cerebral edema on MRI; may occur with or without eclampsia",
+      "tests": "MRI (T2/FLAIR posterior predominant edema); DWI (vasogenic not cytotoxic edema); clinical overlap — treat both"
+    },
+    {
+      "diagnosis": "Cerebral venous thrombosis (CVT)",
+      "features": "Headache, seizures, focal deficits; pregnancy/postpartum is major risk factor; may have hemorrhagic infarct",
+      "tests": "MRV (absent venous flow); D-dimer (very elevated); CT venogram"
+    },
+    {
+      "diagnosis": "Epilepsy (known, during pregnancy)",
+      "features": "Pre-existing seizure disorder; may have breakthrough due to decreased ASM levels; no hypertension/proteinuria",
+      "tests": "ASM levels (subtherapeutic); normal BP; no proteinuria; prior epilepsy history"
+    },
+    {
+      "diagnosis": "Ischemic stroke",
+      "features": "Sudden focal deficit; may have seizure at onset; pregnancy increases ischemic stroke risk 3-13x",
+      "tests": "MRI/DWI (restricted diffusion); CTA/MRA (occlusion); onset with focal deficit"
+    },
+    {
+      "diagnosis": "Intracerebral hemorrhage",
+      "features": "Severe headache; focal deficit; may have seizure; hypertension; coagulopathy (HELLP/DIC)",
+      "tests": "CT head (hyperdense lesion); coagulation studies; platelet count"
+    },
+    {
+      "diagnosis": "RCVS (reversible cerebral vasoconstriction syndrome)",
+      "features": "Thunderclap headache; seizures; focal deficits; angiography shows segmental vasoconstriction; overlaps with eclampsia/PRES",
+      "tests": "CTA/MRA (multifocal narrowing); serial imaging (resolves over weeks)"
+    },
+    {
+      "diagnosis": "Thrombotic thrombocytopenic purpura (TTP)",
+      "features": "Microangiopathic hemolytic anemia + thrombocytopenia; may mimic HELLP; seizures from TMA",
+      "tests": "ADAMTS13 <10%; schistocytes; severe thrombocytopenia"
+    },
+    {
+      "diagnosis": "Meningoencephalitis",
+      "features": "Fever, headache, altered mental status, seizures; may be viral (HSV) or bacterial",
+      "tests": "CSF analysis; MRI (temporal lobe enhancement in HSV); cultures"
+    },
+    {
+      "diagnosis": "Metabolic (hypoglycemia, hyponatremia, hypocalcemia)",
+      "features": "Correctable metabolic abnormalities; no hypertension/proteinuria",
+      "tests": "BMP; glucose; calcium; magnesium"
+    },
+    {
+      "diagnosis": "Acute fatty liver of pregnancy (AFLP)",
+      "features": "Third trimester; nausea, vomiting, abdominal pain, coagulopathy, hypoglycemia, hyperammonemia",
+      "tests": "Ammonia (elevated); glucose (low); fibrinogen (low); LFTs (elevated); imaging (fatty liver)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Magnesium sulfate superior to phenytoin and diazepam for eclampsia prevention and treatment",
+      "evidenceLevel": "Class I, Level A (large RCTs)",
+      "source": "[The Magpie Trial. Lancet 2002](https://pubmed.ncbi.nlm.nih.gov/12076175/)"
+    },
+    {
+      "recommendation": "MgSO4 reduces eclampsia risk by 58% compared to placebo in severe preeclampsia",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Altman et al. BJOG 2002 (Magpie follow-up)](https://pubmed.ncbi.nlm.nih.gov/12402601/)"
+    },
+    {
+      "recommendation": "Labetalol and nifedipine equally effective for acute severe hypertension in pregnancy",
+      "evidenceLevel": "Class I (RCT)",
+      "source": "[Shekhar et al. Pregnancy Hypertens 2016](https://pubmed.ncbi.nlm.nih.gov/26907777/)"
+    },
+    {
+      "recommendation": "PRES is the neuroimaging correlate of eclampsia in majority of cases",
+      "evidenceLevel": "Class III evidence (case series)",
+      "source": "[Brewer et al. AJNR 2013](https://pubmed.ncbi.nlm.nih.gov/22936094/)"
+    },
+    {
+      "recommendation": "Low-dose aspirin 81 mg from 12-16 weeks reduces preeclampsia risk in high-risk women",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Rolnik et al. NEJM 2017 (ASPRE trial)](https://pubmed.ncbi.nlm.nih.gov/28657417/)"
+    },
+    {
+      "recommendation": "Lamotrigine and levetiracetam preferred ASMs in pregnancy (lowest teratogenicity)",
+      "evidenceLevel": "Class II evidence; Registry data",
+      "source": "[Tomson et al. Lancet Neurol 2018 (EURAP)](https://pubmed.ncbi.nlm.nih.gov/29506874/)"
+    },
+    {
+      "recommendation": "Lamotrigine levels decrease 50-70% during pregnancy; monthly monitoring needed",
+      "evidenceLevel": "Class II evidence",
+      "source": "[Pennell et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18354078/)"
+    },
+    {
+      "recommendation": "Delivery is definitive treatment for eclampsia; timing depends on gestational age and maternal/fetal status",
+      "evidenceLevel": "Guideline",
+      "source": "[ACOG Practice Bulletin 222: Gestational Hypertension and Preeclampsia 2020](https://pubmed.ncbi.nlm.nih.gov/32443079/)"
+    },
+    {
+      "recommendation": "Postpartum eclampsia occurs in up to 26% of eclampsia cases; monitoring continues 48h post-delivery",
+      "evidenceLevel": "Class III evidence",
+      "source": "[Al-Safi et al. Am J Obstet Gynecol 2011](https://pubmed.ncbi.nlm.nih.gov/21282835/)"
+    },
+    {
+      "recommendation": "CVT risk is 12x higher in pregnancy/postpartum; must be excluded in seizures with headache",
+      "evidenceLevel": "Class III evidence",
+      "source": "[Ferro et al. Stroke 2004](https://pubmed.ncbi.nlm.nih.gov/14988574/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Blood pressure",
+      "frequency": "q5 min during acute treatment; q15 min x 2h; then q1h; q4h once stable",
+      "action": "Persistent ≥160/110 → IV antihypertensive; resistant → ICU",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Magnesium level",
+      "frequency": "q4-6h during infusion; q6h maintenance; PRN if toxicity signs",
+      "action": "<4 → increase rate; >7 → decrease rate/hold; >10 → stop + calcium gluconate",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Deep tendon reflexes (patellar)",
+      "frequency": "q1h during MgSO4 infusion",
+      "action": "Absent/diminished → check Mg level; hold MgSO4 if areflexic; have calcium gluconate ready",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Respiratory rate",
+      "frequency": "q1h during MgSO4",
+      "action": "<12 → hold MgSO4; administer calcium gluconate; prepare for intubation",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Urine output",
+      "frequency": "q1h (Foley catheter recommended)",
+      "action": "<25 mL/h → reduce MgSO4 (renal excretion); assess volume status; oliguria → fluid bolus vs renal failure",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Fetal heart rate",
+      "frequency": "Continuous during acute management",
+      "action": "Non-reassuring → OB assessment; emergent delivery if persistent fetal distress",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "CBC with platelets",
+      "frequency": "q6-12h if HELLP; daily if preeclampsia",
+      "action": "Falling platelets → worsening HELLP; Hgb drop → hemorrhage or hemolysis",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "LFTs (AST/ALT)",
+      "frequency": "q6-12h if HELLP; daily if preeclampsia",
+      "action": "Rising → worsening HELLP; peak usually 24-48h after delivery then improve",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "LDH and haptoglobin",
+      "frequency": "q12-24h if HELLP",
+      "action": "Worsening → ongoing hemolysis; not improving 48-72h → consider TTP/aHUS",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "ASM levels (if epilepsy)",
+      "frequency": "At admission; monthly during pregnancy; 1 week postpartum",
+      "action": "Subtherapeutic → increase dose; postpartum → reduce dose (levels rebound)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Postpartum BP monitoring",
+      "frequency": "Daily x 72h inpatient; home monitoring daily x 6 weeks",
+      "action": "Persistent hypertension → continue/escalate antihypertensives; new onset >48h → evaluate late postpartum preeclampsia",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Eclamptic seizure; refractory hypertension (≥160/110 despite 2 IV agents); HELLP with platelets <50K or DIC; pulmonary edema; renal failure; persistent altered mental status; intubation"
+    },
+    {
+      "disposition": "Admit to L&D / high-risk antepartum",
+      "criteria": "Severe preeclampsia with controlled BP; stable HELLP (platelets >50K); post-eclamptic seizure now stable; pending delivery planning"
+    },
+    {
+      "disposition": "Discharge home (postpartum)",
+      "criteria": "Seizure-free ≥24h after MgSO4 completion; BP consistently <150/100 on oral agents; normalizing labs; oral medications tolerated; reliable follow-up arranged; home BP cuff provided"
+    },
+    {
+      "disposition": "Outpatient follow-up",
+      "criteria": "Neurology 2-4 weeks (MRI review, recurrence risk); OB 1-2 weeks (BP, proteinuria); MFM before future pregnancy for risk counseling"
+    },
+    {
+      "disposition": "Transfer to tertiary center",
+      "criteria": "If facility lacks MFM, NICU, or neurocritical care capabilities; HELLP with DIC; refractory status epilepticus in pregnancy"
+    }
+  ]
+}

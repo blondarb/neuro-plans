@@ -1,0 +1,1847 @@
+{
+  "id": "drug-resistant-epilepsy",
+  "title": "Drug-Resistant Epilepsy",
+  "version": "1.0",
+  "icd10": [
+    "** G40.919 (Epilepsy",
+    "unspecified",
+    "intractable",
+    "without status epilepticus)",
+    "G40.911 (Epilepsy",
+    "unspecified",
+    "intractable",
+    "with status epilepticus)",
+    "G40.119 (Localization-related epilepsy",
+    "intractable)",
+    "G40.219 (Localization-related symptomatic epilepsy",
+    "intractable)",
+    "G40.319 (Generalized idiopathic epilepsy",
+    "intractable)",
+    "G40.A19 (Absence epileptic syndrome",
+    "intractable)",
+    "G40.B19 (Juvenile myoclonic epilepsy",
+    "intractable)"
+  ],
+  "scope": "** Management of drug-resistant epilepsy defined as failure of adequate trials of two or more appropriately chosen and tolerated antiseizure medications (ASMs) at adequate doses. Covers advanced pharmacotherapy, presurgical evaluation, surgical options, neuromodulation (VNS, RNS, DBS), dietary therapies, and special populations. Excludes initial seizure workup (see New Onset Seizure), acute breakthrough seizures in known epilepsy (see Breakthrough Seizure), and status epilepticus management (see Status Epilepticus template).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Antiseizure medication (ASM) levels (all current ASMs) (CPT 80201-80299)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Verify therapeutic levels and adherence; subtherapeutic levels are the most common correctable cause of apparent drug resistance",
+          "target": "Therapeutic ranges (see Appendix A); document steady-state trough levels"
+        },
+        {
+          "item": "Free (unbound) ASM levels (phenytoin, valproate) (CPT 80186, 80164)",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Protein-bound drugs require free levels in hypoalbuminemia, renal failure, pregnancy, polypharmacy; free fraction is pharmacologically active",
+          "target": "Free phenytoin 1-2 mcg/mL; free valproate 5-15 mcg/mL"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline for ASM hematologic effects; infection as seizure precipitant; monitor for bone marrow suppression (carbamazepine, felbamate)",
+          "target": "Normal; leukopenia <3000 → evaluate ASM cause; aplastic anemia screening for felbamate"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolyte abnormalities; hepatic function (ASM metabolism, toxicity); renal function (ASM dosing); hyponatremia (carbamazepine/oxcarbazepine)",
+          "target": "Normal; hyponatremia <130 → provokes seizures; elevated LFTs → ASM hepatotoxicity"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypomagnesemia lowers seizure threshold; chronic ASM use may deplete magnesium",
+          "target": ">2.0 mg/dL; low → replete"
+        },
+        {
+          "item": "Ionized calcium (CPT 82330)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypocalcemia can cause seizures; enzyme-inducing ASMs accelerate vitamin D metabolism",
+          "target": "Normal ionized Ca; low → check vitamin D, replete"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypoglycemia is reversible seizure cause; GLUT1 deficiency syndrome causes DRE with low CSF glucose",
+          "target": "70-180 mg/dL; persistent low → evaluate GLUT1 deficiency"
+        },
+        {
+          "item": "Urinalysis (CPT 81003)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "UTI as occult seizure precipitant; especially in elderly and institutionalized patients",
+          "target": "Normal; pyuria → treat infection"
+        },
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Illicit substances lower seizure threshold; assess adherence and drug interactions",
+          "target": "Negative; positive → evaluate contribution to seizure frequency"
+        },
+        {
+          "item": "Pregnancy test (β-hCG) (CPT 84703)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Pregnancy alters ASM levels; teratogenicity concerns with many ASMs used in DRE (valproate, topiramate, phenobarbital)",
+          "target": "Document result; positive → urgent ASM safety review"
+        },
+        {
+          "item": "Ammonia (CPT 82140)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Valproate-induced hyperammonemic encephalopathy; can occur with normal LFTs and therapeutic levels",
+          "target": "<35 μmol/L; elevated → consider valproate reduction or carnitine supplementation"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Vitamin D, 25-OH (CPT 82306)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Enzyme-inducing ASMs (phenytoin, carbamazepine, phenobarbital) accelerate vitamin D metabolism → osteoporosis; long-term DRE patients at high risk",
+          "target": ">30 ng/mL; deficient → supplement aggressively"
+        },
+        {
+          "item": "B12 (CPT 82607) / Folate (CPT 82746)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Phenytoin and carbamazepine deplete folate; B12 deficiency neuropathy; critical for women of childbearing potential",
+          "target": "Normal; low folate → supplement (5 mg/day with enzyme inducers)"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction affects seizure threshold; some ASMs affect thyroid function",
+          "target": "Normal; abnormal → treat and reassess seizure frequency"
+        },
+        {
+          "item": "Lipid panel (CPT 80061)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Enzyme-inducing ASMs increase lipid levels; cardiovascular risk in chronic DRE",
+          "target": "Normal; elevated → statin if indicated; consider non-enzyme-inducing ASM"
+        },
+        {
+          "item": "Carbamazepine-10,11-epoxide level (CPT 80156)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Active metabolite elevated by valproate co-therapy; toxicity with normal parent drug levels",
+          "target": "<9 mcg/mL; elevated → toxicity even with therapeutic carbamazepine level"
+        },
+        {
+          "item": "HLA-B*15:02 / HLA-A*31:01 (CPT 81374)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Pharmacogenomic testing before carbamazepine/oxcarbazepine in Asian populations (HLA-B*15:02 → SJS/TEN); HLA-A*31:01 in Europeans",
+          "target": "Negative for risk alleles; positive → avoid associated ASM"
+        },
+        {
+          "item": "Prolactin (CPT 84146)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Distinguish epileptic seizure from PNES if diagnostic uncertainty; must draw within 20 min of event",
+          "target": "2-3x baseline within 20 min of convulsive seizure; normal in PNES"
+        },
+        {
+          "item": "Cortisol, AM (CPT 82533)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Adrenal insufficiency; chronic ASM use may affect cortisol; consider if fatigue is prominent",
+          "target": "Normal"
+        },
+        {
+          "item": "DEXA scan referral (CPT 77080)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Bone mineral density screening for patients on long-term enzyme-inducing ASMs; fracture risk from seizures",
+          "target": "Normal T-score; osteopenia/osteoporosis → treat and modify ASM if possible"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Autoimmune encephalitis antibody panel (serum) (CPT 86255)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune epilepsy is treatable cause of apparent DRE; anti-LGI1, anti-CASPR2, anti-NMDAR, anti-GABA-B, anti-AMPA",
+          "target": "Negative; positive → immunotherapy trial"
+        },
+        {
+          "item": "Autoimmune encephalitis antibody panel (CSF)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "CSF more sensitive than serum for some antibodies (NMDAR); paired serum/CSF testing recommended",
+          "target": "Negative; positive → immunotherapy"
+        },
+        {
+          "item": "Genetic epilepsy panel / Whole exome sequencing (CPT 81415, 81419)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Genetic cause suspected if syndromic features, family history, or early onset DRE; may guide targeted therapy (e.g., SCN1A → avoid sodium channel blockers in Dravet)",
+          "target": "Pathogenic variants in epilepsy genes (SCN1A, SCN2A, KCNQ2, DEPDC5, TSC1/2, etc.)"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (CPT 86255)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "New-onset DRE in adults >40 with cognitive decline or other neurologic symptoms; anti-Hu, anti-CV2, anti-amphiphysin",
+          "target": "Negative; positive → malignancy workup"
+        },
+        {
+          "item": "CSF glucose with paired serum glucose (CPT 82950)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "GLUT1 deficiency syndrome: CSF glucose <40 mg/dL or CSF/serum glucose ratio <0.4; ketogenic diet is treatment of choice",
+          "target": "CSF/serum ratio >0.6; low ratio → GLUT1 deficiency → ketogenic diet"
+        },
+        {
+          "item": "Mitochondrial DNA testing (CPT 81401)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Mitochondrial epilepsy (MELAS, MERRF) if myoclonus, hearing loss, exercise intolerance, elevated lactate; avoid valproate",
+          "target": "Specific mutations (m.3243A>G for MELAS, m.8344A>G for MERRF)"
+        },
+        {
+          "item": "Ceruloplasmin / serum copper (CPT 82390)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Wilson disease with seizures (rare); treatable cause",
+          "target": "Ceruloplasmin >20 mg/dL; low → 24h urine copper, slit lamp exam"
+        },
+        {
+          "item": "Pyruvate dehydrogenase complex assay",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "PDC deficiency causes early-onset epilepsy responsive to ketogenic diet",
+          "target": "Normal activity; deficient → ketogenic diet"
+        },
+        {
+          "item": "SLC2A1 gene sequencing (GLUT1)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Confirmatory testing for GLUT1 deficiency if low CSF glucose",
+          "target": "No mutation; pathogenic variant → ketogenic diet definitive treatment"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Cell count (tubes 1 and 4)",
+          "rationale": "Infection or inflammation",
+          "target": "WBC <5, RBC 0",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Protein",
+          "rationale": "Elevated in infection, inflammation",
+          "target": "15-45 mg/dL; elevated → infection/inflammation",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Glucose with paired serum glucose",
+          "rationale": "GLUT1 deficiency (CSF/serum ratio <0.4); infection (low CSF glucose)",
+          "target": "Ratio >0.6; low → GLUT1 deficiency or infection",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Autoimmune encephalitis antibody panel (CSF)",
+          "rationale": "More sensitive than serum for NMDAR and some antibodies",
+          "target": "Negative; positive → immunotherapy trial",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Oligoclonal bands / IgG index",
+          "rationale": "CNS inflammation; MS overlap (rare)",
+          "target": "Negative; positive → inflammatory etiology",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology",
+          "rationale": "Leptomeningeal malignancy if progressive DRE with other neurologic symptoms",
+          "target": "Normal; abnormal → oncology referral",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain epilepsy protocol (3T preferred) (CPT 70553)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "All DRE patients require dedicated epilepsy protocol MRI if not already done; includes thin-cut coronal T2/FLAIR through temporal lobes, volumetric T1, T2*, post-contrast",
+          "target": "Mesial temporal sclerosis (hippocampal atrophy, T2 signal change); focal cortical dysplasia; cavernous malformation; tumor; tuberous sclerosis cortical tubers",
+          "contraindications": "MRI-incompatible implants; check VNS/RNS MRI compatibility"
+        },
+        {
+          "item": "EEG (routine) (CPT 95816)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If not done recently; awake + sleep recording preferred; may capture interictal discharges to guide localization",
+          "target": "Epileptiform discharges; focal vs generalized; specific syndrome features",
+          "contraindications": "None"
+        },
+        {
+          "item": "Continuous EEG (cEEG) monitoring (CPT 95700)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If frequent seizures, altered mental status, or concern for subclinical seizures; quantify seizure burden",
+          "target": "Ictal patterns; NCSE; seizure frequency and duration",
+          "contraindications": "None; resource-dependent"
+        },
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Acute presentation: head trauma during seizure, prolonged postictal state, new focal deficit, anticoagulated patient",
+          "target": "Acute hemorrhage; mass effect; herniation",
+          "contraindications": "None for non-contrast"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Cardiac arrhythmia vs seizure; QTc prolongation (lacosamide, rufinamide); baseline before ASM changes",
+          "target": "Normal; prolonged QTc → avoid QT-prolonging ASMs"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Video-EEG monitoring (EMU admission) (CPT 95711-95720)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**Core presurgical evaluation**: Capture habitual seizures with scalp EEG + video; confirm epileptic vs non-epileptic; localize seizure onset zone; typically 5-7 day admission",
+          "target": "Ictal onset zone; seizure semiology; concordance with MRI lesion; PNES identification",
+          "contraindications": "Requires specialized epilepsy monitoring unit"
+        },
+        {
+          "item": "FDG-PET brain (CPT 78816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**Presurgical localization**: Interictal hypometabolism at seizure focus; most useful when MRI is non-lesional; obtain during seizure-free interictal state",
+          "target": "Focal hypometabolism concordant with EEG focus; sensitivity 60-90% for temporal lobe epilepsy",
+          "contraindications": "Diabetes (may affect uptake); pregnancy"
+        },
+        {
+          "item": "Ictal SPECT (CPT 78607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "Injection during seizure onset (must have tracer ready at bedside); shows hyperperfusion at seizure focus; requires subtraction with interictal SPECT (SISCOM)",
+          "target": "Focal hyperperfusion at seizure onset zone",
+          "contraindications": "Requires in-unit injection within 30 sec of seizure onset"
+        },
+        {
+          "item": "Magnetoencephalography (MEG) (CPT 95965)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Non-invasive source localization of interictal discharges; complementary to EEG; most useful for non-lesional neocortical epilepsy",
+          "target": "Dipole cluster concordant with suspected focus",
+          "contraindications": "Metallic implants; limited availability"
+        },
+        {
+          "item": "Neuropsychological testing (CPT 96132-96133)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**Required presurgical evaluation**: Lateralize and localize cognitive function; predict postoperative cognitive outcome; baseline before surgery",
+          "target": "Memory lateralization; language dominance; cognitive profile consistent with seizure focus",
+          "contraindications": "Requires cooperation; active seizures may invalidate"
+        },
+        {
+          "item": "Functional MRI (fMRI) (CPT 70555)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Language and motor cortex mapping for presurgical planning; non-invasive alternative to Wada test for language lateralization",
+          "target": "Language dominance (left, right, bilateral); proximity of eloquent cortex to planned resection",
+          "contraindications": "Same as standard MRI"
+        },
+        {
+          "item": "Ambulatory EEG (24-72h) (CPT 95711)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Home monitoring to capture events; useful if EMU admission not yet feasible or for seizure frequency quantification",
+          "target": "Ictal events; interictal discharges; seizure frequency",
+          "contraindications": "Patient cooperation required"
+        },
+        {
+          "item": "MRI post-processing (morphometric analysis)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Computer-assisted detection of subtle cortical dysplasia not visible on visual MRI review; voxel-based morphometry",
+          "target": "Subtle FCD; gray-white junction blurring",
+          "contraindications": "Requires specialized software"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Aspiration pneumonia post-seizure; ETT position if intubated",
+          "target": "Infiltrate; aspiration",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Intracranial EEG / Stereo-EEG (SEEG) (CPT 61760, 95700)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "When non-invasive data is discordant or non-localizing; depth electrodes placed stereotactically to sample suspected epileptogenic zone; typically 1-3 weeks monitoring",
+          "target": "Precise ictal onset zone; propagation pathways; define resection margins",
+          "contraindications": "Neurosurgical risks (hemorrhage 1-2%, infection 1-3%)"
+        },
+        {
+          "item": "Wada test (intracarotid amobarbital) (CPT 95958)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "Presurgical memory and language lateralization; largely replaced by fMRI but still used when fMRI inconclusive or discordant; assesses risk of postoperative amnesia",
+          "target": "Language lateralization; memory adequacy of contralateral hemisphere",
+          "contraindications": "Contrast allergy; carotid stenosis; vascular anomalies"
+        },
+        {
+          "item": "High-density EEG (hdEEG, 256-channel) (CPT 95816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Improved source localization with dense array; electrical source imaging (ESI); research and specialized centers",
+          "target": "Refined dipole localization; source imaging concordant with other modalities",
+          "contraindications": "Limited availability"
+        },
+        {
+          "item": "MRI-guided LITT planning scan",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Pre-operative planning for laser interstitial thermal therapy; volumetric sequences to plan trajectory",
+          "target": "Target lesion (MTS, FCD, hypothalamic hamartoma) amenable to LITT",
+          "contraindications": "Same as standard MRI"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent (Rescue Medications)": [
+        {
+          "item": "Midazolam (Nayzilam)",
+          "route": "IN",
+          "indication": "Acute seizure clusters/rescue; first-line outpatient rescue for DRE patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg single spray",
+                "orderSentence": "Midazolam (Nayzilam) 5 mg single spray IN"
+              }
+            ],
+            "route": "IN",
+            "instructions": "5 mg intranasal single spray into one nostril; may repeat x1 in 10 min if seizure continues; max 10 mg per episode; max 5 episodes/month",
+            "orderSentence": "Midazolam (Nayzilam) 5 mg single spray IN"
+          },
+          "contraindications": "Acute narrow-angle glaucoma; severe respiratory depression",
+          "monitoring": "Respiratory status; sedation level; oxygen saturation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Diazepam rectal (Diastat)",
+          "route": "PR",
+          "indication": "Acute seizure clusters/rescue; alternative outpatient rescue",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg based on weight",
+                "orderSentence": "Diazepam rectal (Diastat) 10-20 mg based on weight PR"
+              }
+            ],
+            "route": "PR",
+            "instructions": "0.2 mg/kg PR rounded to available dose (10, 12.5, 15, 17.5, 20 mg); may repeat x1 in 4-12h; max 2 doses per episode; max 5 episodes/month",
+            "orderSentence": "Diazepam rectal (Diastat) 10-20 mg based on weight PR"
+          },
+          "contraindications": "Acute narrow-angle glaucoma; severe hepatic impairment",
+          "monitoring": "Respiratory status; sedation level",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Diazepam nasal (Valtoco)",
+          "route": "IN",
+          "indication": "Acute seizure clusters/rescue; nasal alternative to rectal",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-20 mg based on weight",
+                "orderSentence": "Diazepam nasal (Valtoco) 5-20 mg based on weight IN"
+              }
+            ],
+            "route": "IN",
+            "instructions": "5 mg, 10 mg, 15 mg, or 20 mg intranasal based on weight; may repeat x1 in 4-12h; max 2 doses per episode",
+            "orderSentence": "Diazepam nasal (Valtoco) 5-20 mg based on weight IN"
+          },
+          "contraindications": "Acute narrow-angle glaucoma",
+          "monitoring": "Respiratory status; sedation level",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV",
+          "indication": "Acute prolonged seizure or cluster in ED/hospital setting",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg IV push",
+                "orderSentence": "Lorazepam 4 mg IV push IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV push over 2 min; may repeat x1 in 5 min; max 8 mg; prepare for airway management",
+            "orderSentence": "Lorazepam 4 mg IV push IV"
+          },
+          "contraindications": "Severe respiratory depression without ventilatory support; acute narrow-angle glaucoma",
+          "monitoring": "Respiratory rate; BP; SpO2; sedation; have airway equipment ready",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Midazolam",
+          "route": "IM",
+          "indication": "Acute seizure when IV access unavailable",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg IM",
+                "orderSentence": "Midazolam 10 mg IM IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "10 mg IM single dose (RAMPART trial); faster onset than IV lorazepam when IV access delayed",
+            "orderSentence": "Midazolam 10 mg IM IM"
+          },
+          "contraindications": "Severe respiratory depression; acute narrow-angle glaucoma",
+          "monitoring": "Respiratory status; BP; SpO2",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression/anxiety comorbidity (occurs in 30-50% of DRE patients); does NOT lower seizure threshold",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Sertraline 25 mg daily PO"
+              },
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Sertraline 50 mg daily PO"
+              },
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Sertraline 100 mg daily PO"
+              },
+              {
+                "text": "200 mg daily",
+                "orderSentence": "Sertraline 200 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; increase by 25-50 mg q1-2wk; target 50-200 mg daily",
+            "orderSentence": "Sertraline 25 mg daily PO"
+          },
+          "contraindications": "Concurrent MAOIs; caution with serotonergic drugs",
+          "monitoring": "Suicidality monitoring first 4 weeks; serotonin syndrome symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Escitalopram",
+          "route": "PO",
+          "indication": "Depression/anxiety comorbidity; well-tolerated in epilepsy; does NOT lower seizure threshold",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Escitalopram 5 mg daily PO"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Escitalopram 10 mg daily PO"
+              },
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Escitalopram 20 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5-10 mg daily; increase to 20 mg after 1 week if needed; max 20 mg",
+            "orderSentence": "Escitalopram 5 mg daily PO"
+          },
+          "contraindications": "Concurrent MAOIs; QT prolongation",
+          "monitoring": "QTc if risk factors; suicidality monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Sleep disturbance (common in DRE); sleep deprivation is major seizure trigger; may have mild anticonvulsant properties",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg qHS",
+                "orderSentence": "Melatonin 3 mg qHS PO"
+              },
+              {
+                "text": "5 mg qHS",
+                "orderSentence": "Melatonin 5 mg qHS PO"
+              },
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Melatonin 10 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 3 mg 30 min before bedtime; may increase to 5-10 mg; use extended-release for sleep maintenance",
+            "orderSentence": "Melatonin 3 mg qHS PO"
+          },
+          "contraindications": "Few; caution with immunosuppressants",
+          "monitoring": "Daytime sedation; sleep quality",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium 600 mg + Vitamin D 400 IU",
+          "route": "PO",
+          "indication": "Bone health protection for chronic ASM use; enzyme-inducing ASMs accelerate vitamin D metabolism and increase fracture risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "600 mg calcium + 400 IU vitamin D BID",
+                "orderSentence": "Calcium 600 mg + Vitamin D 400 IU 600 mg calcium + 400 IU vitamin D BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "600 mg elemental calcium + 400-800 IU vitamin D3 twice daily with meals",
+            "orderSentence": "Calcium 600 mg + Vitamin D 400 IU 600 mg calcium + 400 IU vitamin D BID PO"
+          },
+          "contraindications": "Hypercalcemia; kidney stones; sarcoidosis",
+          "monitoring": "Serum calcium and vitamin D annually; DEXA every 2 years",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Folic acid",
+          "route": "PO",
+          "indication": "Folate depletion by enzyme-inducing ASMs; critical for women of childbearing potential (neural tube defect prevention)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg daily",
+                "orderSentence": "Folic acid 1 mg daily PO"
+              },
+              {
+                "text": "4 mg daily",
+                "orderSentence": "Folic acid 4 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 mg daily for all DRE patients on enzyme-inducing ASMs; 4 mg daily for women planning pregnancy",
+            "orderSentence": "Folic acid 1 mg daily PO"
+          },
+          "contraindications": "Few contraindications",
+          "monitoring": "Serum folate annually",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lorazepam (short-term oral)",
+          "route": "PO",
+          "indication": "Acute anxiety; seizure cluster prophylaxis during high-risk periods (illness, sleep deprivation)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg q8h PRN",
+                "orderSentence": "Lorazepam (short-term oral) 0.5 mg q8h PRN PO"
+              },
+              {
+                "text": "1 mg q8h PRN",
+                "orderSentence": "Lorazepam (short-term oral) 1 mg q8h PRN PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.5-1 mg PO q8h PRN for anxiety or cluster prophylaxis; limit to 2-4 weeks; chronic use increases tolerance and complicates epilepsy management",
+            "orderSentence": "Lorazepam (short-term oral) 0.5 mg q8h PRN PO"
+          },
+          "contraindications": "Respiratory depression; myasthenia gravis; severe hepatic impairment",
+          "monitoring": "Sedation; tolerance; dependence risk; respiratory status",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Advanced ASMs": [
+        {
+          "item": "Cenobamate (Xcopri)",
+          "route": "PO",
+          "indication": "DRE adjunctive therapy; novel mechanism (sodium channel + GABA-A positive allosteric modulator); demonstrated high responder rates in trials",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg daily",
+                "orderSentence": "Cenobamate (Xcopri) 12.5 mg daily PO"
+              },
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Cenobamate (Xcopri) 25 mg daily PO"
+              },
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Cenobamate (Xcopri) 100 mg daily PO"
+              },
+              {
+                "text": "200 mg daily",
+                "orderSentence": "Cenobamate (Xcopri) 200 mg daily PO"
+              },
+              {
+                "text": "400 mg daily",
+                "orderSentence": "Cenobamate (Xcopri) 400 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 12.5 mg daily x 2 weeks → 25 mg daily x 2 weeks → 50 mg daily x 2 weeks → 100 mg daily x 2 weeks → 150 mg daily x 2 weeks → 200 mg daily; max 400 mg daily; TITRATE SLOWLY (DRESS risk)",
+            "orderSentence": "Cenobamate (Xcopri) 12.5 mg daily PO"
+          },
+          "contraindications": "DRESS syndrome risk (mandatory slow titration); hypersensitivity; QT shortening with familial short QT",
+          "monitoring": "ECG at baseline and after reaching 200 mg; monitor for DRESS (rash, fever, lymphadenopathy, eosinophilia); ASM level interactions (reduce clobazam, phenytoin, phenobarbital)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Brivaracetam (Briviact)",
+          "route": "PO, IV",
+          "indication": "DRE adjunctive therapy; SV2A ligand with higher affinity than levetiracetam; may work when levetiracetam failed; less psychiatric side effects",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg BID",
+                "orderSentence": "Brivaracetam (Briviact) 25 mg BID PO"
+              },
+              {
+                "text": "50 mg BID",
+                "orderSentence": "Brivaracetam (Briviact) 50 mg BID PO"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Brivaracetam (Briviact) 100 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg BID; may increase to 100 mg BID; max 200 mg/day; no titration required; IV available for patients unable to take PO",
+            "orderSentence": "Brivaracetam (Briviact) 25 mg BID PO"
+          },
+          "contraindications": "Hypersensitivity to brivaracetam",
+          "monitoring": "Psychiatric symptoms (less common than levetiracetam); hepatic function with concurrent hepatotoxic drugs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clobazam (Onfi)",
+          "route": "PO",
+          "indication": "DRE adjunctive therapy; benzodiazepine with less sedation than clonazepam; approved for Lennox-Gastaut; effective across seizure types",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Clobazam (Onfi) 5 mg daily PO"
+              },
+              {
+                "text": "10 mg BID",
+                "orderSentence": "Clobazam (Onfi) 10 mg BID PO"
+              },
+              {
+                "text": "20 mg BID",
+                "orderSentence": "Clobazam (Onfi) 20 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; increase by 5 mg/week; target 20-40 mg/day in 2 divided doses; max 40 mg/day; CYP2C19 poor metabolizers need lower doses",
+            "orderSentence": "Clobazam (Onfi) 5 mg daily PO"
+          },
+          "contraindications": "Severe hepatic impairment; myasthenia gravis",
+          "monitoring": "Sedation; tolerance (less than other benzodiazepines); respiratory depression; CYP2C19 status if excessive sedation; reduce dose if taking cenobamate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lacosamide (Vimpat)",
+          "route": "PO, IV",
+          "indication": "DRE adjunctive therapy; sodium channel (slow inactivation); well tolerated; IV formulation for acute use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg BID",
+                "orderSentence": "Lacosamide (Vimpat) 50 mg BID PO"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Lacosamide (Vimpat) 100 mg BID PO"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Lacosamide (Vimpat) 150 mg BID PO"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Lacosamide (Vimpat) 200 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg BID; increase by 50 mg/dose weekly; target 100-200 mg BID; max 400 mg/day; IV loading 200 mg over 15-60 min if needed",
+            "orderSentence": "Lacosamide (Vimpat) 50 mg BID PO"
+          },
+          "contraindications": "Second/third-degree AV block without pacemaker; known cardiac conduction disorders",
+          "monitoring": "ECG at baseline and dose changes; PR interval (prolongation dose-related); dizziness; ataxia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Perampanel (Fycompa)",
+          "route": "PO",
+          "indication": "DRE adjunctive therapy; non-competitive AMPA receptor antagonist; unique mechanism for rational polytherapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg qHS",
+                "orderSentence": "Perampanel (Fycompa) 2 mg qHS PO"
+              },
+              {
+                "text": "4 mg qHS",
+                "orderSentence": "Perampanel (Fycompa) 4 mg qHS PO"
+              },
+              {
+                "text": "8 mg qHS",
+                "orderSentence": "Perampanel (Fycompa) 8 mg qHS PO"
+              },
+              {
+                "text": "12 mg qHS",
+                "orderSentence": "Perampanel (Fycompa) 12 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg qHS; increase by 2 mg every 1-2 weeks; target 4-8 mg qHS; max 12 mg qHS (8 mg with enzyme inducers); take at bedtime",
+            "orderSentence": "Perampanel (Fycompa) 2 mg qHS PO"
+          },
+          "contraindications": "Severe hepatic/renal impairment; concurrent enzyme inducers accelerate metabolism",
+          "monitoring": "**BLACK BOX: Serious psychiatric/behavioral reactions** (aggression, hostility, irritability, homicidal ideation); mood monitoring; dizziness; falls (especially elderly)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Zonisamide (Zonegran)",
+          "route": "PO",
+          "indication": "DRE adjunctive therapy; multiple mechanisms (sodium/calcium channels, carbonic anhydrase); broad-spectrum",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Zonisamide (Zonegran) 100 mg daily PO"
+              },
+              {
+                "text": "200 mg daily",
+                "orderSentence": "Zonisamide (Zonegran) 200 mg daily PO"
+              },
+              {
+                "text": "300 mg daily",
+                "orderSentence": "Zonisamide (Zonegran) 300 mg daily PO"
+              },
+              {
+                "text": "400 mg daily",
+                "orderSentence": "Zonisamide (Zonegran) 400 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg daily; increase by 100 mg q2wk; target 200-400 mg daily; max 600 mg/day",
+            "orderSentence": "Zonisamide (Zonegran) 100 mg daily PO"
+          },
+          "contraindications": "Sulfonamide allergy; severe hepatic/renal impairment",
+          "monitoring": "Renal function; bicarbonate (metabolic acidosis); kidney stones; heat intolerance (oligohidrosis); weight (often decreases)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Eslicarbazepine (Aptiom)",
+          "route": "PO",
+          "indication": "DRE adjunctive therapy; voltage-gated sodium channel blocker; once-daily dosing; may work when carbamazepine/oxcarbazepine failed",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg daily",
+                "orderSentence": "Eslicarbazepine (Aptiom) 400 mg daily PO"
+              },
+              {
+                "text": "800 mg daily",
+                "orderSentence": "Eslicarbazepine (Aptiom) 800 mg daily PO"
+              },
+              {
+                "text": "1200 mg daily",
+                "orderSentence": "Eslicarbazepine (Aptiom) 1200 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 400 mg daily x 1 week → 800 mg daily; may increase to 1200 mg daily after 1 week; max 1200 mg daily",
+            "orderSentence": "Eslicarbazepine (Aptiom) 400 mg daily PO"
+          },
+          "contraindications": "Third-degree AV block; known HLA-B*15:02 positive; oxcarbazepine hypersensitivity",
+          "monitoring": "Sodium (hyponatremia); LFTs; ECG; skin rash (cross-reactivity with carbamazepine/oxcarbazepine in ~25%)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fenfluramine (Fintepla)",
+          "route": "PO",
+          "indication": "DRE due to Dravet syndrome or Lennox-Gastaut syndrome; serotonin-releasing agent",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/kg BID",
+                "orderSentence": "Fenfluramine (Fintepla) 0.1 mg/kg BID PO"
+              },
+              {
+                "text": "0.2 mg/kg BID",
+                "orderSentence": "Fenfluramine (Fintepla) 0.2 mg/kg BID PO"
+              },
+              {
+                "text": "0.35 mg/kg BID",
+                "orderSentence": "Fenfluramine (Fintepla) 0.35 mg/kg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.1 mg/kg BID (0.2 mg/kg/day); increase after 7 days to 0.2 mg/kg BID; max 0.35 mg/kg BID (26 mg/day) without stiripentol; max 0.2 mg/kg BID with stiripentol",
+            "orderSentence": "Fenfluramine (Fintepla) 0.1 mg/kg BID PO"
+          },
+          "contraindications": "Pulmonary arterial hypertension; valvular heart disease; concurrent MAOIs or serotonergic drugs; aortic/mitral valve disease",
+          "monitoring": "**REMS PROGRAM REQUIRED**: Echocardiogram at baseline, 6 months, then annually; cardiac monitoring mandatory; serotonin syndrome risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cannabidiol (Epidiolex)",
+          "route": "PO",
+          "indication": "DRE due to Dravet syndrome, Lennox-Gastaut syndrome, or tuberous sclerosis complex; FDA-approved",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg/kg BID",
+                "orderSentence": "Cannabidiol (Epidiolex) 2.5 mg/kg BID PO"
+              },
+              {
+                "text": "5 mg/kg BID",
+                "orderSentence": "Cannabidiol (Epidiolex) 5 mg/kg BID PO"
+              },
+              {
+                "text": "10 mg/kg BID",
+                "orderSentence": "Cannabidiol (Epidiolex) 10 mg/kg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5 mg/kg BID; increase after 1 week to 5 mg/kg BID; max 10 mg/kg BID (20 mg/kg/day); take with high-fat meals for absorption",
+            "orderSentence": "Cannabidiol (Epidiolex) 2.5 mg/kg BID PO"
+          },
+          "contraindications": "Severe hepatic impairment; hypersensitivity",
+          "monitoring": "LFTs at baseline, 1, 3, 6 months then periodically (hepatotoxicity risk, especially with valproate); sedation (potentiated by clobazam — reduce clobazam dose); valproate interaction (hepatotoxicity)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vigabatrin (Sabril)",
+          "route": "PO",
+          "indication": "DRE refractory to other therapies; infantile spasms (first-line); tuberous sclerosis complex with epilepsy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Vigabatrin (Sabril) 500 mg BID PO"
+              },
+              {
+                "text": "1000 mg BID",
+                "orderSentence": "Vigabatrin (Sabril) 1000 mg BID PO"
+              },
+              {
+                "text": "1500 mg BID",
+                "orderSentence": "Vigabatrin (Sabril) 1500 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg BID; increase by 500 mg/week; target 1000-1500 mg BID; max 3000 mg/day",
+            "orderSentence": "Vigabatrin (Sabril) 500 mg BID PO"
+          },
+          "contraindications": "**IRREVERSIBLE VISUAL FIELD DEFECTS** (bilateral concentric constriction in 25-50%); retinal toxicity",
+          "monitoring": "**REMS PROGRAM REQUIRED**: Baseline ophthalmologic exam including perimetry; repeat q3 months; discontinue if no benefit by 3 months; OCT monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rufinamide (Banzel)",
+          "route": "PO",
+          "indication": "DRE due to Lennox-Gastaut syndrome; adjunctive therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Rufinamide (Banzel) 200 mg BID PO"
+              },
+              {
+                "text": "400 mg BID",
+                "orderSentence": "Rufinamide (Banzel) 400 mg BID PO"
+              },
+              {
+                "text": "800 mg BID",
+                "orderSentence": "Rufinamide (Banzel) 800 mg BID PO"
+              },
+              {
+                "text": "1600 mg BID",
+                "orderSentence": "Rufinamide (Banzel) 1600 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 200-400 mg/day in 2 divided doses; increase by 200-400 mg every 2 days; target 1600-3200 mg/day; max 3200 mg/day; take with food",
+            "orderSentence": "Rufinamide (Banzel) 200 mg BID PO"
+          },
+          "contraindications": "Familial short QT syndrome; severe hepatic impairment",
+          "monitoring": "ECG (QT shortening); multi-organ hypersensitivity; drowsiness; vomiting",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Felbamate (Felbatol)",
+          "route": "PO",
+          "indication": "DRE refractory to all other options; Lennox-Gastaut syndrome; last-resort due to serious risks",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg TID",
+                "orderSentence": "Felbamate (Felbatol) 400 mg TID PO"
+              },
+              {
+                "text": "600 mg TID",
+                "orderSentence": "Felbamate (Felbatol) 600 mg TID PO"
+              },
+              {
+                "text": "800 mg TID",
+                "orderSentence": "Felbamate (Felbatol) 800 mg TID PO"
+              },
+              {
+                "text": "1200 mg TID",
+                "orderSentence": "Felbamate (Felbatol) 1200 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 400 mg TID (1200 mg/day); increase by 600 mg every 2 weeks; target 2400-3600 mg/day; max 3600 mg/day",
+            "orderSentence": "Felbamate (Felbatol) 400 mg TID PO"
+          },
+          "contraindications": "**BLACK BOX: Aplastic anemia (1:3000-5000) and hepatic failure (1:18,500-25,000)**; prior hematologic or hepatic disease",
+          "monitoring": "**CBC with differential q2wk for first year; LFTs q1-2wk for first year**; reticulocyte count; informed consent REQUIRED documenting risk discussion",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying / Non-Pharmacologic Therapies": [
+        {
+          "item": "Anterior temporal lobectomy",
+          "route": "Surgical",
+          "indication": "Mesial temporal lobe epilepsy (MTS) with concordant data; 60-80% seizure-free rate; most evidence-based epilepsy surgery",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A — surgical procedure",
+                "orderSentence": "Anterior temporal lobectomy N/A — surgical procedure Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Resection of anterior temporal lobe including mesial structures; standard anterior temporal lobectomy or selective amygdalohippocampectomy",
+            "orderSentence": "Anterior temporal lobectomy N/A — surgical procedure Surgical"
+          },
+          "pretreatment": "Complete presurgical evaluation: video-EEG, epilepsy protocol MRI, neuropsych, fMRI/Wada; multidisciplinary epilepsy surgery conference",
+          "contraindications": "Bilateral independent seizure foci; eloquent cortex involvement; patient unable to tolerate craniotomy",
+          "monitoring": "Post-op MRI; EEG; neuropsych at 6 months; monitor for ASM withdrawal if seizure-free",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Focal cortical resection",
+          "route": "Surgical",
+          "indication": "Neocortical epilepsy with identifiable lesion (FCD, cavernoma, tumor) concordant with EEG",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A — surgical procedure",
+                "orderSentence": "Focal cortical resection N/A — surgical procedure Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Resection of epileptogenic zone with intraoperative monitoring; extent guided by intracranial EEG and functional mapping",
+            "orderSentence": "Focal cortical resection N/A — surgical procedure Surgical"
+          },
+          "pretreatment": "Same as ATL; may require SEEG for lesion delineation",
+          "contraindications": "Multifocal or generalized epilepsy; lesion in eloquent cortex without safe resection margins",
+          "monitoring": "Post-op MRI; EEG; neuropsych; monitor new deficits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Laser interstitial thermal therapy (LITT)",
+          "route": "Surgical",
+          "indication": "MTS, hypothalamic hamartoma, small FCD; minimally invasive MRI-guided thermal ablation; lower morbidity than open surgery",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A — MRI-guided percutaneous procedure",
+                "orderSentence": "Laser interstitial thermal therapy (LITT) N/A — MRI-guided percutaneous procedure Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Stereotactic placement of laser fiber; real-time MRI thermometry; ablation of target",
+            "orderSentence": "Laser interstitial thermal therapy (LITT) N/A — MRI-guided percutaneous procedure Surgical"
+          },
+          "pretreatment": "MRI with epilepsy protocol; concordant presurgical data; target amenable to ablation",
+          "contraindications": "Lesion too large or poorly defined; proximity to critical structures without safe thermal margins",
+          "monitoring": "Post-ablation MRI; EEG monitoring; neuropsych follow-up",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vagus nerve stimulation (VNS)",
+          "route": "Surgical implant",
+          "indication": "Palliative neuromodulation for DRE when surgery not feasible; reduces seizure frequency by ~50% in ~50% of patients; efficacy improves over years",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A — device implantation",
+                "orderSentence": "Vagus nerve stimulation (VNS) N/A — device implantation Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Generator implanted subcutaneously in left chest; lead wrapped around left vagus nerve; standard parameters: 30 sec on/5 min off; 0.25 mA titrated up over weeks",
+            "orderSentence": "Vagus nerve stimulation (VNS) N/A — device implantation Surgical"
+          },
+          "pretreatment": "MRI compatibility confirmed for specific VNS model; baseline voice evaluation; cardiac evaluation",
+          "contraindications": "Prior left vagotomy; caution with OSA; bradycardia/asystole during lead impedance testing",
+          "monitoring": "VNS interrogation q6 months; voice changes; dyspnea; magnet use training; battery life monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Responsive neurostimulation (RNS)",
+          "route": "Surgical implant",
+          "indication": "DRE with 1-2 identifiable seizure foci; closed-loop stimulation triggered by detected seizure activity; seizure reduction ~50-70% at 5 years",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A — device implantation",
+                "orderSentence": "Responsive neurostimulation (RNS) N/A — device implantation Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Cranial neurostimulator + cortical/depth leads at seizure focus; device detects abnormal ECoG patterns and delivers stimulation",
+            "orderSentence": "Responsive neurostimulation (RNS) N/A — device implantation Surgical"
+          },
+          "pretreatment": "Localized seizure focus (1-2 foci); completed presurgical evaluation; cognitive ability to manage device",
+          "contraindications": "Multifocal epilepsy >2 foci; poor surgical candidacy; MRI after implant restricted",
+          "monitoring": "Remote device interrogation; seizure diary correlation; electrocorticography data review; battery replacement ~8 years",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Deep brain stimulation (DBS) of anterior nucleus of thalamus",
+          "route": "Surgical implant",
+          "indication": "DRE with focal epilepsy when resection/RNS not feasible; SANTE trial showed ~69% seizure reduction at 5 years",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A — device implantation",
+                "orderSentence": "Deep brain stimulation (DBS) of anterior nucleus of thalamus N/A — device implantation Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Bilateral electrodes in anterior nucleus of thalamus; parameters optimized over months; typically cycling stimulation",
+            "orderSentence": "Deep brain stimulation (DBS) of anterior nucleus of thalamus N/A — device implantation Surgical"
+          },
+          "pretreatment": "MRI targeting of anterior thalamic nucleus; completed presurgical workup; confirmed DRE",
+          "contraindications": "Depression risk (15%); caution in patients with pre-existing psychiatric disorders; MRI restrictions post-implant",
+          "monitoring": "Device interrogation q3-6 months; psychiatric monitoring (depression, memory); stimulation parameter optimization; battery monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ketogenic diet (classic 4:1)",
+          "route": "Dietary",
+          "indication": "DRE, especially GLUT1 deficiency and PDC deficiency (first-line); 50% seizure reduction in ~50% of adults; mechanism involves ketone bodies as alternative fuel",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4:1 fat-to-carbohydrate+protein ratio",
+                "orderSentence": "Ketogenic diet (classic 4:1) 4:1 fat-to-carbohydrate+protein ratio Dietary"
+              }
+            ],
+            "route": "Dietary",
+            "instructions": "Initiate under dietitian supervision; 4:1 ratio (4g fat per 1g carb+protein); caloric restriction not required in adults; monitor ketosis with urine/serum ketones; 3-month trial minimum",
+            "orderSentence": "Ketogenic diet (classic 4:1) 4:1 fat-to-carbohydrate+protein ratio Dietary"
+          },
+          "pretreatment": "Baseline metabolic panel, lipids, urinalysis, renal ultrasound, carnitine level; dietitian consultation REQUIRED",
+          "contraindications": "Pyruvate carboxylase deficiency; fatty acid oxidation disorders; porphyria; severe liver disease",
+          "monitoring": "Serum ketones, lipids, CMP q3 months; growth parameters; kidney stones (supplement citrate); cardiac monitoring if prolonged",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modified Atkins diet",
+          "route": "Dietary",
+          "indication": "More tolerable alternative to classic ketogenic diet for adult DRE; 20 g/day net carb limit; less restrictive",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 g net carbs/day",
+                "orderSentence": "Modified Atkins diet 20 g net carbs/day Dietary"
+              }
+            ],
+            "route": "Dietary",
+            "instructions": "Limit net carbohydrates to 20 g/day; high-fat intake encouraged; no caloric restriction; no protein restriction; less dietitian oversight needed than classic KD",
+            "orderSentence": "Modified Atkins diet 20 g net carbs/day Dietary"
+          },
+          "pretreatment": "Same baseline labs as ketogenic diet; dietitian consultation recommended",
+          "contraindications": "Same as ketogenic diet",
+          "monitoring": "Same as ketogenic diet; better compliance and quality of life in adults",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Low glycemic index treatment (LGIT)",
+          "route": "Dietary",
+          "indication": "Least restrictive dietary therapy for DRE; glycemic index <50 for all carbohydrates; may be sufficient for some patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40-60 g low-GI carbs/day",
+                "orderSentence": "Low glycemic index treatment (LGIT) 40-60 g low-GI carbs/day Dietary"
+              }
+            ],
+            "route": "Dietary",
+            "instructions": "Restrict to 40-60 g carbohydrate/day; all carbs must have glycemic index <50; liberal fat and protein; most flexible dietary option",
+            "orderSentence": "Low glycemic index treatment (LGIT) 40-60 g low-GI carbs/day Dietary"
+          },
+          "pretreatment": "Same baseline labs as ketogenic diet",
+          "contraindications": "Same as ketogenic diet",
+          "monitoring": "Same as ketogenic diet; monitor glucose and lipids",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Comprehensive epilepsy center referral for presurgical evaluation if seizures persist despite two or more appropriately chosen ASMs (ILAE definition of DRE met)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Epileptologist consultation for ASM optimization, rational polytherapy, and candidacy assessment for surgery/neuromodulation",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neuropsychological testing for baseline cognitive assessment and presurgical lateralization of memory and language",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry referral for depression, anxiety, or psychiatric comorbidity management (affects 30-50% of DRE patients)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurosurgery consultation when presurgical workup supports surgical candidacy (concordant localization data)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Registered dietitian for ketogenic diet or modified Atkins diet initiation and monitoring if pharmacotherapy insufficient",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work referral for disability assistance, vocational rehabilitation, and community resources for patients with functional limitations from DRE",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Reproductive endocrinology or OB/GYN referral for women of childbearing potential for preconception planning, ASM teratogenicity counseling, and contraception optimization",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for fall prevention, injury management, and exercise program given recurrent seizure-related falls",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care or supportive care team for patients with severe refractory epilepsy significantly impacting quality of life",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Take all antiseizure medications exactly as prescribed; even one missed dose can trigger breakthrough seizures in DRE — use pill organizers and alarms",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Ensure rescue medication (nasal midazolam or rectal diazepam) is available at all times; train household members and caregivers on administration technique",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED immediately if seizure lasts >5 minutes, multiple seizures without recovery between them, seizure in water, significant head injury during seizure, or first seizure during pregnancy",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not drive until seizure-free for state-mandated period (varies by state, typically 3-12 months); discuss driving restrictions with neurologist at each visit",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid swimming alone or unsupervised bathing; use showers instead of baths; avoid heights and open water without supervision due to drowning risk (leading cause of seizure-related death)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep a seizure diary (paper or app such as Seizure Tracker, EpiFinder) documenting date, time, duration, type, triggers, and medications taken — bring to all neurology visits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Wear a medical alert bracelet or necklace identifying epilepsy diagnosis and current medications for emergency responders",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Inform prescribing physicians about all ASMs before starting any new medication; many common drugs (antibiotics, psychiatric medications) interact with ASMs and can lower seizure threshold or affect ASM levels",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Prioritize consistent sleep schedule with 7-9 hours nightly; sleep deprivation is the most potent modifiable seizure trigger — avoid shift work if possible",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid alcohol use; alcohol withdrawal lowers seizure threshold and alcohol interacts with ASMs; if unable to abstain, limit to ≤1 drink with food and never binge drink",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Implement stress reduction techniques (mindfulness, cognitive behavioral therapy) as chronic stress increases seizure frequency through cortisol-mediated excitotoxicity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "SUDEP risk reduction: optimize seizure control, ensure nocturnal supervision if possible, avoid prone sleeping position, consider seizure detection devices (watches, bed monitors)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Use reliable contraception for women of childbearing potential; enzyme-inducing ASMs (phenytoin, carbamazepine, phenobarbital) reduce efficacy of hormonal contraceptives — use IUD or barrier methods",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Home safety modifications: remove sharp furniture edges, install stove guards, use microwave instead of stovetop, shower instead of bath, avoid locked bathroom doors",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Consider protective headgear (SeizureGuard, Ribcap) for patients with frequent tonic or drop seizures to prevent head injury",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Pseudo-resistance (non-adherence)",
+      "features": "Subtherapeutic ASM levels; missed doses; inconsistent refills; social/financial barriers",
+      "tests": "ASM trough levels; pharmacy refill records; pill counts; direct questioning"
+    },
+    {
+      "diagnosis": "Pseudo-resistance (incorrect ASM for syndrome)",
+      "features": "Wrong ASM for epilepsy syndrome (e.g., sodium channel blocker worsening absence or myoclonic epilepsy); diagnostic re-evaluation needed",
+      "tests": "Detailed seizure semiology; EEG classification (focal vs generalized); syndrome-appropriate ASM selection"
+    },
+    {
+      "diagnosis": "Psychogenic non-epileptic seizures (PNES)",
+      "features": "Waxing/waning movements; eyes closed; pelvic thrusting; prolonged duration; out-of-phase limb movements; lack of postictal confusion",
+      "tests": "Video-EEG monitoring (gold standard); postictal prolactin (normal in PNES); PNES may coexist with epilepsy in 10-20%"
+    },
+    {
+      "diagnosis": "Autoimmune epilepsy",
+      "features": "New seizure onset or acceleration in previously controlled patient; cognitive decline; psychiatric symptoms; faciobrachial dystonic seizures (LGI1)",
+      "tests": "Autoimmune encephalitis antibody panel (serum + CSF); MRI (medial temporal T2/FLAIR signal); CSF pleocytosis"
+    },
+    {
+      "diagnosis": "Progressive structural lesion",
+      "features": "Gradual increase in seizure frequency; new neurologic deficits; papilledema",
+      "tests": "MRI with contrast; compare to prior imaging; consider tumor, vascular malformation, or progressive cortical dysplasia"
+    },
+    {
+      "diagnosis": "Mitochondrial epilepsy (MELAS, MERRF)",
+      "features": "Myoclonus; hearing loss; exercise intolerance; stroke-like episodes; elevated lactate; maternal inheritance",
+      "tests": "Serum/CSF lactate; genetic testing (m.3243A>G, m.8344A>G); muscle biopsy (ragged red fibers)"
+    },
+    {
+      "diagnosis": "Drug interactions reducing ASM efficacy",
+      "features": "New medication started (enzyme inducer/inhibitor); herbal supplements; grapefruit juice",
+      "tests": "Detailed medication reconciliation; ASM levels before and after new drug; pharmacokinetic interaction review"
+    },
+    {
+      "diagnosis": "Catamenial epilepsy",
+      "features": "Seizure clustering around menstruation (perimenstrual C1, periovulatory C2, luteal C3 patterns); may respond to hormonal therapy",
+      "tests": "Seizure diary with menstrual cycle mapping (3+ months); progesterone challenge; neurosteroid levels"
+    },
+    {
+      "diagnosis": "Neurodegenerative disease with seizures",
+      "features": "Progressive cognitive decline; parkinsonian features; seizures as late manifestation (Alzheimer's, frontotemporal dementia)",
+      "tests": "Neuropsychological testing; MRI volumetrics; FDG-PET; biomarkers (amyloid, tau)"
+    },
+    {
+      "diagnosis": "FIRES (Febrile Infection-Related Epilepsy Syndrome)",
+      "features": "Preceding febrile illness → explosive onset of refractory status epilepticus; typically in children/young adults; devastatingly refractory",
+      "tests": "EEG (super-refractory SE); MRI (initially normal, later hippocampal/cortical changes); extensive infectious/autoimmune workup negative"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Definition of DRE: failure of 2 appropriately chosen and tolerated ASMs",
+      "evidenceLevel": "ILAE Consensus Definition",
+      "source": "[Kwan et al. Epilepsia 2010](https://pubmed.ncbi.nlm.nih.gov/19817823/)"
+    },
+    {
+      "recommendation": "Only ~5% of patients failing 2 ASMs achieve seizure freedom with further medication trials",
+      "evidenceLevel": "Class II evidence",
+      "source": "[Kwan & Brodie. NEJM 2000](https://pubmed.ncbi.nlm.nih.gov/10681270/)"
+    },
+    {
+      "recommendation": "Temporal lobectomy superior to medical therapy for mesial TLE",
+      "evidenceLevel": "Class I, Level A (RCT)",
+      "source": "[Wiebe et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11519503/)"
+    },
+    {
+      "recommendation": "Delayed surgical referral worsens outcomes; early surgery recommended",
+      "evidenceLevel": "Class II evidence",
+      "source": "[Engel et al. JAMA 2012 (ERSET)](https://pubmed.ncbi.nlm.nih.gov/22399728/)"
+    },
+    {
+      "recommendation": "VNS reduces seizure frequency ~50% in responders; efficacy improves over years",
+      "evidenceLevel": "Class I evidence",
+      "source": "[Morris & Mueller. Epilepsy Behav 2017](https://pubmed.ncbi.nlm.nih.gov/10681269/)"
+    },
+    {
+      "recommendation": "RNS achieves median 53% seizure reduction at 2 years, improving over time (long-term data)",
+      "evidenceLevel": "Class I evidence (pivotal trial)",
+      "source": "[Nair et al. Epilepsia 2020](https://pubmed.ncbi.nlm.nih.gov/33190226/)"
+    },
+    {
+      "recommendation": "DBS of anterior nucleus of thalamus: 69% median seizure reduction at 5 years (SANTE trial)",
+      "evidenceLevel": "Class I evidence (RCT)",
+      "source": "[Fisher et al. Epilepsia 2010 (SANTE)](https://pubmed.ncbi.nlm.nih.gov/20067507/)"
+    },
+    {
+      "recommendation": "Cenobamate: high responder rate (21% seizure-free) in treatment-resistant focal epilepsy",
+      "evidenceLevel": "Class I evidence (RCT)",
+      "source": "[Krauss et al. Lancet Neurol 2020 (C017 study)](https://pubmed.ncbi.nlm.nih.gov/31521534/)"
+    },
+    {
+      "recommendation": "Ketogenic diet effective in adult DRE; ~50% achieve >50% seizure reduction",
+      "evidenceLevel": "Class II evidence (systematic review)",
+      "source": "[Liu et al. Seizure 2018](https://pubmed.ncbi.nlm.nih.gov/29290504/)"
+    },
+    {
+      "recommendation": "Cannabidiol (Epidiolex) reduces seizures in Dravet and LGS",
+      "evidenceLevel": "Class I evidence (RCTs)",
+      "source": "[Devinsky et al. NEJM 2017](https://pubmed.ncbi.nlm.nih.gov/28538134/)"
+    },
+    {
+      "recommendation": "SUDEP risk increases with DRE; risk reduction strategies recommended",
+      "evidenceLevel": "Professional society guideline",
+      "source": "[Harden et al. Neurology 2017 (AAN Practice Guideline)](https://pubmed.ncbi.nlm.nih.gov/28438841/)"
+    },
+    {
+      "recommendation": "Presurgical evaluation should be offered to all patients meeting DRE criteria",
+      "evidenceLevel": "AAN/AES Guideline",
+      "source": "[Engel et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/14504323/)"
+    },
+    {
+      "recommendation": "PNES coexists with epilepsy in 10-20% of DRE patients; video-EEG essential",
+      "evidenceLevel": "Class III evidence",
+      "source": "[LaFrance et al. Epilepsia 2013](https://pubmed.ncbi.nlm.nih.gov/23551090/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "ASM trough levels (all current ASMs)",
+      "frequency": "Each visit; 2 weeks after dose change; with breakthrough seizures",
+      "action": "Adjust dose; assess adherence; check interactions",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "CBC with differential",
+      "frequency": "Baseline; q3 months x 1 year for felbamate; q6 months for carbamazepine; annually otherwise",
+      "action": "WBC <3000 → consider ASM change; felbamate: any cytopenia → discontinue",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CMP (hepatic and renal function)",
+      "frequency": "Baseline; q3-6 months first year; annually thereafter",
+      "action": "Elevated LFTs >3x ULN → evaluate ASM hepatotoxicity; dose adjust for renal impairment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Sodium",
+      "frequency": "Baseline; q3 months for carbamazepine/oxcarbazepine/eslicarbazepine; with symptoms",
+      "action": "<130 → fluid restrict, consider ASM change; <125 → urgent correction",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Vitamin D, 25-OH",
+      "frequency": "Baseline; annually for enzyme-inducing ASMs",
+      "action": "Deficient → supplement 2000-5000 IU daily; recheck in 3 months",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "DEXA bone density scan",
+      "frequency": "Baseline if on enzyme-inducing ASMs >2 years; repeat q2 years",
+      "action": "Osteopenia → supplement calcium/D, weight-bearing exercise; osteoporosis → bisphosphonate, consider ASM change",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ECG",
+      "frequency": "Baseline; after lacosamide/rufinamide initiation; with dose changes",
+      "action": "PR >220 ms on lacosamide → dose reduce or discontinue; QT shortening on rufinamide → cardiology consult",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Seizure frequency (diary)",
+      "frequency": "Every visit",
+      "action": "No improvement after adequate trial → re-evaluate; consider surgical evaluation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Echocardiogram (fenfluramine patients)",
+      "frequency": "Baseline; 6 months; then annually",
+      "action": "New regurgitation → cardiology referral; consider fenfluramine discontinuation",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Visual field testing (vigabatrin patients)",
+      "frequency": "Baseline; q3 months while on vigabatrin",
+      "action": "Any field constriction → discontinue vigabatrin (irreversible)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Pregnancy test (women of childbearing potential)",
+      "frequency": "Annually; before ASM changes; if sexually active and menstrual irregularity",
+      "action": "Positive → immediate ASM safety review; high-risk OB referral; folic acid 4 mg/day",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Psychiatric screening (PHQ-9, GAD-7)",
+      "frequency": "Every visit",
+      "action": "Score ≥10 → psychiatric referral; adjust ASM if contributing (levetiracetam, perampanel, phenobarbital)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home from ED",
+      "criteria": "Single breakthrough seizure with return to baseline; identified precipitant corrected (non-adherence, illness); subtherapeutic level corrected with loading dose; rescue medication education provided; reliable follow-up with epileptologist"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Seizure cluster (≥3 seizures in 24h); prolonged postictal state (>1h); new neurologic deficit; medication change requiring monitoring; social concerns about safety"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Status epilepticus or refractory seizure activity; respiratory compromise; significant head injury during seizure; hemodynamic instability"
+    },
+    {
+      "disposition": "Admit to EMU",
+      "criteria": "Presurgical evaluation; seizure characterization (epileptic vs PNES); ASM taper for surgery"
+    },
+    {
+      "disposition": "Transfer to comprehensive epilepsy center",
+      "criteria": "Meets DRE criteria and has not been evaluated for surgical options; intracranial monitoring needed; complex neuromodulation candidacy assessment"
+    },
+    {
+      "disposition": "Outpatient follow-up",
+      "criteria": "Epileptologist q3 months (or more frequently during ASM changes); presurgical evaluation clinic if surgical candidate; dietitian if on dietary therapy"
+    }
+  ]
+}

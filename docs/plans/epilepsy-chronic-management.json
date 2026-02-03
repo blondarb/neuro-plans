@@ -1,0 +1,1373 @@
+{
+  "id": "epilepsy-chronic-management",
+  "title": "Epilepsy - Chronic Management",
+  "version": "1.0",
+  "icd10": [
+    "** G40.909 (Epilepsy",
+    "unspecified",
+    "not intractable",
+    "without status epilepticus)",
+    "G40.309 (Generalized idiopathic epilepsy",
+    "not intractable)",
+    "G40.209 (Localization-related epilepsy",
+    "not intractable)",
+    "G40.109 (Localization-related symptomatic epilepsy",
+    "not intractable)",
+    "G40.A09 (Absence epileptic syndrome",
+    "not intractable)",
+    "G40.B09 (Juvenile myoclonic epilepsy",
+    "not intractable)"
+  ],
+  "scope": "** Long-term outpatient management of adults with established epilepsy diagnosis on stable antiseizure medication (ASM) regimens. Covers routine monitoring, ASM optimization, comorbidity management (depression, anxiety, bone health), women's health and pregnancy planning, driving and employment considerations, ASM withdrawal in seizure-free patients, and bone health. Excludes initial seizure workup (see New Onset Seizure), acute breakthrough seizures (see Breakthrough Seizure), drug-resistant epilepsy requiring surgical evaluation (see Drug-Resistant Epilepsy), and status epilepticus (see SE template).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "ASM trough levels (all current ASMs) (CPT 80201-80299)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Routine monitoring of adherence and therapeutic dosing; obtain trough level (before morning dose); establish individual therapeutic level when seizure-free",
+          "target": "Within therapeutic range; document individual target level when well controlled"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Annual monitoring for ASM hematologic effects; carbamazepine (leukopenia, aplastic anemia rare); valproate (thrombocytopenia); felbamate (aplastic anemia)",
+          "target": "Normal; WBC <3500 or platelets <100K → evaluate ASM cause"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Annual monitoring of hepatic function (ASM metabolism, hepatotoxicity); renal function (ASM dosing); electrolytes (hyponatremia with carbamazepine/oxcarbazepine)",
+          "target": "Normal; hyponatremia → ASM-related SIADH; elevated LFTs → evaluate hepatotoxicity"
+        },
+        {
+          "item": "Sodium (CPT 84295)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Carbamazepine, oxcarbazepine, eslicarbazepine cause SIADH; routine monitoring q3-6 months for these agents",
+          "target": "135-145 mEq/L; <130 → consider ASM change"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Chronic ASM use may deplete magnesium; hypomagnesemia lowers seizure threshold",
+          "target": ">2.0 mg/dL; low → supplement"
+        },
+        {
+          "item": "Pregnancy test (β-hCG) (CPT 84703)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Annual screening for women of childbearing potential; before ASM changes; many ASMs are teratogenic",
+          "target": "Negative; positive → urgent ASM safety review and OB referral"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Vitamin D, 25-OH (CPT 82306)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Annual screening for ALL epilepsy patients; enzyme-inducing ASMs (phenytoin, carbamazepine, phenobarbital) and valproate accelerate vitamin D metabolism → osteoporosis and fractures",
+          "target": ">30 ng/mL; <20 → supplement 2000-5000 IU/day; recheck 3 months"
+        },
+        {
+          "item": "B12 (CPT 82607) / Folate (CPT 82746)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Phenytoin and carbamazepine deplete folate; B12 screening in elderly; folate critical for women of childbearing potential (neural tube defect prevention)",
+          "target": "Normal; low folate → supplement 1-4 mg/day"
+        },
+        {
+          "item": "Lipid panel (CPT 80061)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Enzyme-inducing ASMs increase total cholesterol and LDL; cardiovascular risk monitoring",
+          "target": "Normal; elevated → statin if indicated; consider switching to non-enzyme-inducing ASM"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Annual thyroid screening; valproate and carbamazepine can affect thyroid function; hypothyroidism increases seizure threshold (protective) but may cause fatigue",
+          "target": "Normal"
+        },
+        {
+          "item": "Free (unbound) ASM levels (CPT 80186, 80164)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "For protein-bound drugs (phenytoin, valproate) in pregnancy, hypoalbuminemia, renal failure, elderly",
+          "target": "Free phenytoin 1-2 mcg/mL; free valproate 5-15 mcg/mL"
+        },
+        {
+          "item": "Ammonia (CPT 82140)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Annual or PRN for patients on valproate; encephalopathy can occur with normal LFTs; also check if new confusion/lethargy",
+          "target": "<35 μmol/L; elevated → consider carnitine supplementation or valproate dose reduction"
+        },
+        {
+          "item": "DEXA bone density scan referral (CPT 77080)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline for patients on enzyme-inducing ASMs >2 years; all patients >50; seizure-related falls increase fracture risk",
+          "target": "Normal T-score (>-1.0); osteopenia/osteoporosis → treat"
+        },
+        {
+          "item": "Testosterone (total and free) (CPT 84403)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Enzyme-inducing ASMs increase sex hormone-binding globulin → low free testosterone; may cause sexual dysfunction, depression, fatigue in men",
+          "target": "Normal; low → endocrinology referral"
+        },
+        {
+          "item": "Cortisol, AM (CPT 82533)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Enzyme-inducing ASMs may affect cortisol; evaluate if fatigue is prominent",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "HLA-B*15:02 / HLA-A*31:01 (CPT 81374)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Before starting carbamazepine/oxcarbazepine in patients of Southeast Asian descent (HLA-B*15:02 → SJS/TEN); HLA-A*31:01 in Europeans",
+          "target": "Negative; positive → avoid carbamazepine/oxcarbazepine"
+        },
+        {
+          "item": "CYP2C19 genotyping (CPT 81225)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Poor metabolizers accumulate N-desmethylclobazam (active metabolite); excessive sedation on standard clobazam doses",
+          "target": "Normal metabolizer; poor → reduce clobazam dose 50%"
+        },
+        {
+          "item": "Carbamazepine-10,11-epoxide level (CPT 80156)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Active metabolite check when on carbamazepine + valproate (VPA inhibits epoxide hydrolase); toxicity with normal parent level",
+          "target": "<9 mcg/mL; elevated → clinical toxicity"
+        },
+        {
+          "item": "Anti-Mullerian hormone (AMH) (CPT 82397)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Ovarian reserve assessment for women with epilepsy planning pregnancy; valproate associated with polycystic ovarian syndrome (PCOS)",
+          "target": "Normal for age; low → fertility referral"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with epilepsy protocol (CPT 70553)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If never done or done without epilepsy protocol; all patients should have at least one high-quality MRI; repeat if seizure pattern changes",
+          "target": "Normal; mesial temporal sclerosis; cortical dysplasia; tumor; vascular malformation",
+          "contraindications": "MRI-incompatible implants"
+        },
+        {
+          "item": "EEG (routine) (CPT 95816)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Baseline if not done; repeat if seizure classification uncertain, new seizure type, or considering ASM withdrawal; includes awake + sleep",
+          "target": "Epileptiform discharges; focal vs generalized; EEG normalization (favorable for ASM withdrawal)",
+          "contraindications": "None"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Baseline for QTc-prolonging ASMs (lacosamide → PR prolongation; rufinamide → QT shortening); before ASM changes; annual for lacosamide",
+          "target": "Normal; prolonged PR → caution with lacosamide dose increases",
+          "contraindications": "None"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Ambulatory EEG (24-72h) (CPT 95711)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Capture events if diagnostic uncertainty; quantify interictal discharges; assess for ASM withdrawal candidacy",
+          "target": "Seizure activity; interictal discharge frequency",
+          "contraindications": "Patient cooperation"
+        },
+        {
+          "item": "DEXA bone density scan (CPT 77080)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "All patients on enzyme-inducing ASMs >2 years; all patients >50 years; any patient with fracture history",
+          "target": "Normal T-score; osteopenia/osteoporosis → treat and modify ASM if possible",
+          "contraindications": "None"
+        },
+        {
+          "item": "Pelvic ultrasound (CPT 76856)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Women on valproate with menstrual irregularity; screen for PCOS (valproate-associated)",
+          "target": "Normal; polycystic ovaries → endocrinology referral; consider VPA switch",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "MRI brain epilepsy protocol (3T) (CPT 70553)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If prior MRI was 1.5T or non-epilepsy protocol; considering surgical evaluation; unexplained worsening",
+          "target": "Subtle lesions missed on standard MRI (FCD, small tumors)",
+          "contraindications": "MRI-incompatible implants"
+        },
+        {
+          "item": "Neuropsychological testing (CPT 96132)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Cognitive complaints; baseline before ASM changes; evaluate ASM cognitive burden; employment/academic concerns",
+          "target": "Cognitive profile; identify ASM-related impairment vs baseline",
+          "contraindications": "Active seizures may invalidate"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent (Rescue Medications)": [
+        {
+          "item": "Midazolam (Nayzilam)",
+          "route": "IN",
+          "indication": "Seizure cluster rescue; all epilepsy patients should have rescue plan",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg single spray",
+                "orderSentence": "Midazolam (Nayzilam) 5 mg single spray IN"
+              }
+            ],
+            "route": "IN",
+            "instructions": "5 mg intranasal into one nostril; may repeat x1 in 10 min; max 10 mg/episode; max 5 episodes/month; prescribe for all patients with history of clusters",
+            "orderSentence": "Midazolam (Nayzilam) 5 mg single spray IN"
+          },
+          "contraindications": "Acute narrow-angle glaucoma; severe respiratory depression",
+          "monitoring": "Respiratory status; sedation; train caregivers on use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Diazepam rectal (Diastat)",
+          "route": "PR",
+          "indication": "Seizure cluster rescue; alternative to intranasal midazolam",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg based on weight",
+                "orderSentence": "Diazepam rectal (Diastat) 10-20 mg based on weight PR"
+              }
+            ],
+            "route": "PR",
+            "instructions": "0.2 mg/kg PR; may repeat x1 in 4-12h; max 2 doses/episode; max 5 episodes/month",
+            "orderSentence": "Diazepam rectal (Diastat) 10-20 mg based on weight PR"
+          },
+          "contraindications": "Acute narrow-angle glaucoma; severe hepatic impairment",
+          "monitoring": "Respiratory status; sedation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Diazepam nasal (Valtoco)",
+          "route": "IN",
+          "indication": "Seizure cluster rescue; nasal alternative",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-20 mg based on weight",
+                "orderSentence": "Diazepam nasal (Valtoco) 5-20 mg based on weight IN"
+              }
+            ],
+            "route": "IN",
+            "instructions": "5, 10, 15, or 20 mg intranasal based on weight; may repeat x1 in 4-12h; max 2 doses/episode",
+            "orderSentence": "Diazepam nasal (Valtoco) 5-20 mg based on weight IN"
+          },
+          "contraindications": "Acute narrow-angle glaucoma",
+          "monitoring": "Respiratory status; sedation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression comorbidity (30-50% of epilepsy patients); does NOT lower seizure threshold; first-line antidepressant in epilepsy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Sertraline 25 mg daily PO"
+              },
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Sertraline 50 mg daily PO"
+              },
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Sertraline 100 mg daily PO"
+              },
+              {
+                "text": "200 mg daily",
+                "orderSentence": "Sertraline 200 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; increase by 25-50 mg q1-2wk; target 50-200 mg daily; max 200 mg",
+            "orderSentence": "Sertraline 25 mg daily PO"
+          },
+          "contraindications": "Concurrent MAOIs",
+          "monitoring": "Suicidality monitoring first 4 weeks; serotonin syndrome",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Escitalopram",
+          "route": "PO",
+          "indication": "Depression/anxiety comorbidity; well tolerated in epilepsy; does NOT lower seizure threshold",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Escitalopram 5 mg daily PO"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Escitalopram 10 mg daily PO"
+              },
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Escitalopram 20 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5-10 mg daily; increase to 20 mg after 1 week if needed; max 20 mg",
+            "orderSentence": "Escitalopram 5 mg daily PO"
+          },
+          "contraindications": "Concurrent MAOIs; QT prolongation",
+          "monitoring": "QTc if risk factors; suicidality monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venlafaxine",
+          "route": "PO",
+          "indication": "Depression with comorbid pain syndromes; alternative when SSRIs insufficient; does NOT significantly lower seizure threshold at therapeutic doses",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg daily",
+                "orderSentence": "Venlafaxine 37.5 mg daily PO"
+              },
+              {
+                "text": "75 mg daily",
+                "orderSentence": "Venlafaxine 75 mg daily PO"
+              },
+              {
+                "text": "150 mg daily",
+                "orderSentence": "Venlafaxine 150 mg daily PO"
+              },
+              {
+                "text": "225 mg daily",
+                "orderSentence": "Venlafaxine 225 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg daily (XR); increase by 75 mg q1wk; target 75-225 mg daily; max 225 mg",
+            "orderSentence": "Venlafaxine 37.5 mg daily PO"
+          },
+          "contraindications": "Uncontrolled hypertension; concurrent MAOIs; abrupt discontinuation",
+          "monitoring": "Blood pressure; serotonin syndrome; discontinuation syndrome (taper slowly)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Sleep disturbance (sleep deprivation is major seizure trigger); mild anticonvulsant properties; safe in epilepsy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg qHS",
+                "orderSentence": "Melatonin 3 mg qHS PO"
+              },
+              {
+                "text": "5 mg qHS",
+                "orderSentence": "Melatonin 5 mg qHS PO"
+              },
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Melatonin 10 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 3 mg 30 min before bed; may increase to 5-10 mg; use extended-release for sleep maintenance",
+            "orderSentence": "Melatonin 3 mg qHS PO"
+          },
+          "contraindications": "Few contraindications",
+          "monitoring": "Daytime sedation; sleep quality",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium 600 mg + Vitamin D3 400-800 IU",
+          "route": "PO",
+          "indication": "Bone health for all chronic epilepsy patients; especially enzyme-inducing ASMs",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "600 mg calcium + 400 IU vitamin D3 BID",
+                "orderSentence": "Calcium 600 mg + Vitamin D3 400-800 IU 600 mg calcium + 400 IU vitamin D3 BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "600 mg elemental calcium + 400-800 IU vitamin D3 twice daily with meals; total daily calcium 1000-1200 mg",
+            "orderSentence": "Calcium 600 mg + Vitamin D3 400-800 IU 600 mg calcium + 400 IU vitamin D3 BID PO"
+          },
+          "contraindications": "Hypercalcemia; kidney stones",
+          "monitoring": "Serum calcium; vitamin D annually; DEXA q2 years",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Folic acid",
+          "route": "PO",
+          "indication": "All women of childbearing potential on ASMs; neural tube defect prevention; folate depletion by enzyme-inducing ASMs",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg daily",
+                "orderSentence": "Folic acid 1 mg daily PO"
+              },
+              {
+                "text": "4 mg daily",
+                "orderSentence": "Folic acid 4 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 mg daily for all women on ASMs; increase to 4 mg daily at least 3 months before planned conception; continue through first trimester",
+            "orderSentence": "Folic acid 1 mg daily PO"
+          },
+          "contraindications": "Few contraindications",
+          "monitoring": "Serum folate annually",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alendronate",
+          "route": "PO",
+          "indication": "Osteoporosis (T-score ≤-2.5) or osteopenia with fracture risk in chronic epilepsy patients on enzyme-inducing ASMs",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "70 mg weekly",
+                "orderSentence": "Alendronate 70 mg weekly PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "70 mg PO once weekly; take first thing in morning with full glass water; remain upright 30 min; take on empty stomach",
+            "orderSentence": "Alendronate 70 mg weekly PO"
+          },
+          "contraindications": "Esophageal abnormalities; inability to sit upright 30 min; hypocalcemia (correct first); CrCl <35",
+          "monitoring": "DEXA q2 years; serum calcium; dental exam (osteonecrosis risk with prolonged use); esophageal symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lamotrigine dose adjustment (pregnancy)",
+          "route": "PO",
+          "indication": "Lamotrigine levels drop 50-70% during pregnancy due to increased glucuronidation; dose increases typically needed to maintain seizure control",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Individualized per levels",
+                "orderSentence": "Lamotrigine dose adjustment (pregnancy) Individualized per levels PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Check lamotrigine level monthly during pregnancy; increase dose to maintain pre-pregnancy level; reduce dose over 2-3 weeks postpartum (levels rebound rapidly)",
+            "orderSentence": "Lamotrigine dose adjustment (pregnancy) Individualized per levels PO"
+          },
+          "contraindications": "Stevens-Johnson syndrome risk with rapid dose increases",
+          "monitoring": "Monthly lamotrigine levels during pregnancy; postpartum level within 2 weeks of delivery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "ASM Optimization (Major ASMs Individually Listed)": [
+        {
+          "item": "Levetiracetam (Keppra)",
+          "route": "PO, IV",
+          "indication": "Broad-spectrum ASM; first-line for focal and generalized epilepsy; no significant drug interactions; renal elimination",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg BID",
+                "orderSentence": "Levetiracetam (Keppra) 250 mg BID PO"
+              },
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Levetiracetam (Keppra) 500 mg BID PO"
+              },
+              {
+                "text": "750 mg BID",
+                "orderSentence": "Levetiracetam (Keppra) 750 mg BID PO"
+              },
+              {
+                "text": "1000 mg BID",
+                "orderSentence": "Levetiracetam (Keppra) 1000 mg BID PO"
+              },
+              {
+                "text": "1500 mg BID",
+                "orderSentence": "Levetiracetam (Keppra) 1500 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250-500 mg BID; increase by 500 mg/day q1-2wk; target 1000-1500 mg BID; max 3000 mg/day; adjust for renal impairment",
+            "orderSentence": "Levetiracetam (Keppra) 250 mg BID PO"
+          },
+          "contraindications": "Hypersensitivity; end-stage renal disease (dose adjust)",
+          "monitoring": "Psychiatric effects (irritability, depression, behavioral change in 10-15%); renal function; consider B6 supplementation for behavioral effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lamotrigine (Lamictal)",
+          "route": "PO",
+          "indication": "Broad-spectrum ASM; first-line for focal and generalized epilepsy; favorable cognitive and teratogenicity profile; preferred in women of childbearing potential",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Lamotrigine (Lamictal) 25 mg daily PO"
+              },
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Lamotrigine (Lamictal) 50 mg daily PO"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Lamotrigine (Lamictal) 100 mg BID PO"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Lamotrigine (Lamictal) 150 mg BID PO"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Lamotrigine (Lamictal) 200 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "WITHOUT valproate: Start 25 mg daily x 2wk → 50 mg daily x 2wk → increase by 50 mg/day q1-2wk; target 100-200 mg BID; WITH valproate: Start 25 mg QOD x 2wk → 25 mg daily x 2wk → slow titration (VPA doubles LTG level); max 400 mg/day (200 mg with VPA)",
+            "orderSentence": "Lamotrigine (Lamictal) 25 mg daily PO"
+          },
+          "contraindications": "Hypersensitivity; MUST titrate slowly (SJS/TEN risk with rapid titration)",
+          "monitoring": "**SJS/TEN risk**: rash in first 8 weeks → stop immediately and do not rechallenge; lamotrigine levels (especially in pregnancy); drug interactions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Valproate (Depakote)",
+          "route": "PO, IV",
+          "indication": "Broad-spectrum ASM; first-line for generalized epilepsy (JME, absence); effective for multiple seizure types",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg BID",
+                "orderSentence": "Valproate (Depakote) 250 mg BID PO"
+              },
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Valproate (Depakote) 500 mg BID PO"
+              },
+              {
+                "text": "750 mg BID",
+                "orderSentence": "Valproate (Depakote) 750 mg BID PO"
+              },
+              {
+                "text": "1000 mg BID",
+                "orderSentence": "Valproate (Depakote) 1000 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg BID (DR) or 500 mg ER daily; increase by 250-500 mg q1wk; target 500-1000 mg BID; max 60 mg/kg/day",
+            "orderSentence": "Valproate (Depakote) 250 mg BID PO"
+          },
+          "contraindications": "**TERATOGENIC — CONTRAINDICATED IN PREGNANCY** (neural tube defects 1-2%, neurodevelopmental effects); hepatic disease; urea cycle disorders; mitochondrial disease (POLG mutations)",
+          "monitoring": "LFTs, CBC with platelets q3-6 months; ammonia if encephalopathy; weight; hair loss; tremor; PCOS screening in women",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxcarbazepine (Trileptal)",
+          "route": "PO",
+          "indication": "Focal epilepsy; better tolerated than carbamazepine; fewer drug interactions",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Oxcarbazepine (Trileptal) 150 mg BID PO"
+              },
+              {
+                "text": "300 mg BID",
+                "orderSentence": "Oxcarbazepine (Trileptal) 300 mg BID PO"
+              },
+              {
+                "text": "600 mg BID",
+                "orderSentence": "Oxcarbazepine (Trileptal) 600 mg BID PO"
+              },
+              {
+                "text": "900 mg BID",
+                "orderSentence": "Oxcarbazepine (Trileptal) 900 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 150-300 mg BID; increase by 300 mg/day q1wk; target 600-1200 mg BID; max 2400 mg/day",
+            "orderSentence": "Oxcarbazepine (Trileptal) 150 mg BID PO"
+          },
+          "contraindications": "HLA-B*15:02 positive (SJS risk); hyponatremia",
+          "monitoring": "Sodium q1-3 months (SIADH in 2-3%); rash; MHD level if needed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lacosamide (Vimpat)",
+          "route": "PO, IV",
+          "indication": "Focal epilepsy adjunctive or monotherapy; well tolerated; sodium channel slow inactivation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg BID",
+                "orderSentence": "Lacosamide (Vimpat) 50 mg BID PO"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Lacosamide (Vimpat) 100 mg BID PO"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Lacosamide (Vimpat) 150 mg BID PO"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Lacosamide (Vimpat) 200 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg BID; increase by 50 mg/dose weekly; target 100-200 mg BID; max 400 mg/day",
+            "orderSentence": "Lacosamide (Vimpat) 50 mg BID PO"
+          },
+          "contraindications": "Second/third-degree AV block without pacemaker",
+          "monitoring": "ECG at baseline and dose changes; PR interval; dizziness; ataxia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topiramate (Topamax)",
+          "route": "PO",
+          "indication": "Focal and generalized epilepsy; migraine prophylaxis (dual benefit); weight loss effect",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg BID",
+                "orderSentence": "Topiramate (Topamax) 25 mg BID PO"
+              },
+              {
+                "text": "50 mg BID",
+                "orderSentence": "Topiramate (Topamax) 50 mg BID PO"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Topiramate (Topamax) 100 mg BID PO"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Topiramate (Topamax) 200 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; increase by 25-50 mg q1-2wk; target 100-200 mg BID; max 400 mg/day",
+            "orderSentence": "Topiramate (Topamax) 25 mg BID PO"
+          },
+          "contraindications": "Kidney stones; metabolic acidosis; acute narrow-angle glaucoma; **TERATOGENIC** (cleft lip/palate)",
+          "monitoring": "Bicarbonate (metabolic acidosis); cognitive effects (\"Dopamax\"); kidney stones; weight; word-finding difficulty; pregnancy test",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbamazepine (Tegretol)",
+          "route": "PO",
+          "indication": "Focal epilepsy; trigeminal neuralgia; effective but many drug interactions (enzyme inducer)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Carbamazepine (Tegretol) 100 mg BID PO"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Carbamazepine (Tegretol) 200 mg BID PO"
+              },
+              {
+                "text": "400 mg BID",
+                "orderSentence": "Carbamazepine (Tegretol) 400 mg BID PO"
+              },
+              {
+                "text": "600 mg BID",
+                "orderSentence": "Carbamazepine (Tegretol) 600 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100-200 mg BID; increase by 200 mg q1wk; target 400-600 mg BID; max 1600 mg/day; use extended-release",
+            "orderSentence": "Carbamazepine (Tegretol) 100 mg BID PO"
+          },
+          "contraindications": "HLA-B*15:02 positive; AV block; concurrent MAOIs; bone marrow depression",
+          "monitoring": "CBC q3-6 months; LFTs; sodium; carbamazepine level; epoxide level if on VPA; many drug interactions (enzyme inducer)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Brivaracetam (Briviact)",
+          "route": "PO, IV",
+          "indication": "Focal epilepsy; SV2A ligand; may work when levetiracetam failed; fewer psychiatric side effects than LEV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg BID",
+                "orderSentence": "Brivaracetam (Briviact) 25 mg BID PO"
+              },
+              {
+                "text": "50 mg BID",
+                "orderSentence": "Brivaracetam (Briviact) 50 mg BID PO"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Brivaracetam (Briviact) 100 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg BID; may increase to 100 mg BID; max 200 mg/day; no titration required",
+            "orderSentence": "Brivaracetam (Briviact) 25 mg BID PO"
+          },
+          "contraindications": "Hypersensitivity",
+          "monitoring": "Psychiatric symptoms (less frequent than LEV); hepatic function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cenobamate (Xcopri)",
+          "route": "PO",
+          "indication": "Focal epilepsy; high efficacy in drug-resistant cases; dual mechanism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg daily",
+                "orderSentence": "Cenobamate (Xcopri) 12.5 mg daily PO"
+              },
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Cenobamate (Xcopri) 100 mg daily PO"
+              },
+              {
+                "text": "200 mg daily",
+                "orderSentence": "Cenobamate (Xcopri) 200 mg daily PO"
+              },
+              {
+                "text": "400 mg daily",
+                "orderSentence": "Cenobamate (Xcopri) 400 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 12.5 mg daily; titrate per REMS schedule over 11+ weeks to target 200 mg daily; max 400 mg; SLOW TITRATION MANDATORY",
+            "orderSentence": "Cenobamate (Xcopri) 12.5 mg daily PO"
+          },
+          "contraindications": "DRESS risk; QT shortening with familial short QT",
+          "monitoring": "ECG; DRESS monitoring (rash, fever, eosinophilia); reduce clobazam, phenytoin, phenobarbital doses",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Women's Health / Pregnancy Planning": [
+        {
+          "item": "Folic acid (preconception)",
+          "route": "PO",
+          "indication": "Neural tube defect prevention for ALL women of childbearing potential on ASMs; start before conception",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg daily",
+                "orderSentence": "Folic acid (preconception) 4 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "4 mg daily starting at least 3 months before planned conception; continue through first trimester; 1 mg daily maintenance otherwise",
+            "orderSentence": "Folic acid (preconception) 4 mg daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Few",
+          "monitoring": "Serum folate; neural tube screening ultrasound",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levonorgestrel IUD (Mirena/Liletta)",
+          "route": "IUD",
+          "indication": "Reliable contraception for women on enzyme-inducing ASMs; NOT affected by enzyme induction (unlike oral contraceptives)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A — device placement",
+                "orderSentence": "Levonorgestrel IUD (Mirena/Liletta) N/A — device placement IUD"
+              }
+            ],
+            "route": "IUD",
+            "instructions": "Place levonorgestrel IUD for reliable contraception; efficacy NOT reduced by enzyme-inducing ASMs; preferred over oral contraceptives for women on phenytoin, carbamazepine, phenobarbital, topiramate >200 mg",
+            "orderSentence": "Levonorgestrel IUD (Mirena/Liletta) N/A — device placement IUD"
+          },
+          "pretreatment": "PID; uterine anomaly; pregnancy",
+          "contraindications": "Placement confirmation; string check annually",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Copper IUD (Paragard)",
+          "route": "IUD",
+          "indication": "Non-hormonal contraception; alternative when hormonal methods not desired; NOT affected by ASMs",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A — device placement",
+                "orderSentence": "Copper IUD (Paragard) N/A — device placement IUD"
+              }
+            ],
+            "route": "IUD",
+            "instructions": "Place copper IUD; completely unaffected by ASM interactions; non-hormonal option",
+            "orderSentence": "Copper IUD (Paragard) N/A — device placement IUD"
+          },
+          "pretreatment": "Same as hormonal IUD",
+          "contraindications": "Same as hormonal IUD; heavier menses",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Vitamin K (neonatal prophylaxis)",
+          "route": "IM",
+          "indication": "Neonates born to mothers on enzyme-inducing ASMs at increased risk of hemorrhagic disease of newborn",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg IM at birth",
+                "orderSentence": "Vitamin K (neonatal prophylaxis) 1 mg IM at birth IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "1 mg vitamin K IM to neonate at delivery; standard of care but especially critical with maternal enzyme-inducing ASMs",
+            "orderSentence": "Vitamin K (neonatal prophylaxis) 1 mg IM at birth IM"
+          },
+          "pretreatment": "None",
+          "contraindications": "None needed beyond standard neonatal care",
+          "monitoring": "-",
+          "ED": "ROUTINE",
+          "HOSP": "-",
+          "OPD": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology follow-up every 3-6 months for seizure-free patients; every 1-3 months during ASM changes or if not well controlled",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Comprehensive epilepsy center referral if seizures persist despite two or more appropriately chosen ASMs (meets ILAE definition of drug-resistant epilepsy)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry referral for depression or anxiety screening positive (PHQ-9 ≥10 or GAD-7 ≥10); psychiatric comorbidities affect seizure control and quality of life",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Reproductive endocrinology or OB/GYN referral for preconception counseling in women of childbearing potential; ASM teratogenicity review and optimization before pregnancy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychological testing referral for cognitive complaints potentially related to ASMs; baseline assessment before surgery evaluation or ASM changes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Endocrinology referral for metabolic bone disease (osteoporosis on DEXA); PCOS in women on valproate; testosterone deficiency in men on enzyme-inducing ASMs",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for disability documentation, vocational rehabilitation, insurance assistance, and community support services",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Driving evaluation by state DMV and neurology documentation of seizure-free interval per state requirements; commercial driving restrictions per federal DOT regulations",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology referral for patients on vigabatrin (visual field testing q3 months) or any patient with visual complaints",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Take ASMs at the same time every day; use pill organizers and phone alarms; missing even one dose increases seizure risk — contact neurologist if unable to afford or obtain medications",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Maintain consistent sleep schedule with 7-9 hours nightly; sleep deprivation is the strongest modifiable seizure trigger; avoid shift work if possible",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not stop ASMs abruptly; sudden discontinuation can trigger status epilepticus even in well-controlled patients — always taper under neurologist guidance",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED immediately if seizure lasts >5 minutes, multiple seizures without recovery, seizure in water, significant injury during seizure, or first seizure in pregnancy",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not drive until seizure-free for state-mandated period (typically 3-12 months); report seizures to neurologist for driving documentation; commercial driving has stricter federal requirements",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Women of childbearing potential: use reliable contraception (IUD preferred over oral contraceptives if on enzyme-inducing ASMs); notify neurologist BEFORE planning pregnancy for medication optimization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Inform all prescribing doctors and pharmacists about epilepsy and ASMs before starting new medications; many drugs interact with ASMs (antibiotics, antidepressants, pain medications)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid excessive alcohol (alcohol withdrawal and binge drinking lower seizure threshold); if consuming alcohol, limit to 1 drink maximum with food",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Carry medical alert identification (bracelet or app) with epilepsy diagnosis and medications listed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular aerobic exercise (30 minutes, 5 days/week) improves seizure control, mood, and cardiovascular health; no restriction on exercise type unless frequent tonic/drop seizures (avoid swimming alone, climbing)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stress reduction through regular exercise, mindfulness, cognitive behavioral therapy; chronic stress is an independent seizure trigger",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Weight management: topiramate and zonisamide may help with weight loss; valproate and pregabalin may cause weight gain — consider when selecting ASMs",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Bone health: weight-bearing exercise, calcium and vitamin D supplementation, DEXA screening, and bisphosphonate if osteoporotic — especially critical for patients on enzyme-inducing ASMs",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Home safety: shower instead of baths, avoid locked bathroom doors, use stove guards, microwave preferred over stovetop, carpeted floors reduce injury risk during falls",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "SUDEP awareness: discuss SUDEP risk openly; optimizing seizure control is the best prevention; nocturnal supervision and seizure detection devices reduce risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Psychogenic non-epileptic seizures (PNES)",
+      "features": "Waxing/waning; eyes closed; pelvic thrusting; asynchronous limb movements; duration >2 min; lack of postictal confusion; may coexist with epilepsy",
+      "tests": "Video-EEG monitoring; postictal prolactin (normal in PNES)"
+    },
+    {
+      "diagnosis": "Syncope (vasovagal, cardiac)",
+      "features": "Triggered by standing, heat, emotion; brief convulsive movements possible (convulsive syncope); rapid recovery",
+      "tests": "ECG; tilt table; Holter; echocardiogram"
+    },
+    {
+      "diagnosis": "Cardiac arrhythmia",
+      "features": "Sudden LOC without warning; palpitations; family history of sudden cardiac death",
+      "tests": "ECG; Holter; event monitor; cardiac MRI"
+    },
+    {
+      "diagnosis": "Sleep disorders (narcolepsy, parasomnia)",
+      "features": "Episodes during sleep; cataplexy; sleep paralysis; REM behavior disorder",
+      "tests": "Polysomnography; MSLT"
+    },
+    {
+      "diagnosis": "Panic attacks",
+      "features": "Anxiety; hyperventilation; palpitations; derealization; preserved consciousness; gradual onset",
+      "tests": "EEG (normal during events); psychiatric evaluation"
+    },
+    {
+      "diagnosis": "Transient ischemic attack",
+      "features": "Focal neurologic deficit; vascular risk factors; abrupt onset; negative symptoms (weakness, numbness) vs positive (seizure movements)",
+      "tests": "MRI/DWI; MRA; carotid imaging"
+    },
+    {
+      "diagnosis": "Migraine with aura",
+      "features": "Visual aura (positive phenomena spreading over minutes); headache follows; duration 5-60 min",
+      "tests": "Clinical history; EEG during episodes (normal)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Lamotrigine and levetiracetam first-line for focal epilepsy; valproate first-line for generalized",
+      "evidenceLevel": "Class I evidence (RCTs)",
+      "source": "[Marson et al. Lancet 2021 (SANAD II)](https://pubmed.ncbi.nlm.nih.gov/33838758/)"
+    },
+    {
+      "recommendation": "Valproate should be avoided in women of childbearing potential due to teratogenicity and neurodevelopmental effects",
+      "evidenceLevel": "Class I evidence; Regulatory guidance",
+      "source": "[Tomson et al. Lancet Neurol 2018 (EURAP)](https://pubmed.ncbi.nlm.nih.gov/29506874/)"
+    },
+    {
+      "recommendation": "ASM withdrawal after 2+ seizure-free years: ~35% recurrence risk; abnormal EEG and known etiology increase risk",
+      "evidenceLevel": "Class I evidence (systematic review)",
+      "source": "[Lamberink et al. Lancet Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/28389188/)"
+    },
+    {
+      "recommendation": "Depression and anxiety highly prevalent in epilepsy; SSRIs safe and do not worsen seizures",
+      "evidenceLevel": "Class II evidence; Guideline",
+      "source": "[Mula et al. Epilepsia 2017](https://pubmed.ncbi.nlm.nih.gov/28880995/)"
+    },
+    {
+      "recommendation": "SUDEP risk reduction: optimize seizure control, nocturnal supervision, avoid prone sleeping",
+      "evidenceLevel": "AAN Practice Guideline",
+      "source": "[Harden et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28438841/)"
+    },
+    {
+      "recommendation": "Enzyme-inducing ASMs reduce bone mineral density; screening and supplementation recommended",
+      "evidenceLevel": "Class II evidence",
+      "source": "[Vestergaard. Acta Neurol Scand 2005](https://pubmed.ncbi.nlm.nih.gov/16281865/)"
+    },
+    {
+      "recommendation": "Enzyme-inducing ASMs reduce oral contraceptive efficacy; IUDs recommended",
+      "evidenceLevel": "Class III evidence; Guideline",
+      "source": "[Reimers. Seizure 2015](https://pubmed.ncbi.nlm.nih.gov/26216689/)"
+    },
+    {
+      "recommendation": "Lamotrigine levels decrease 50-70% during pregnancy; monthly monitoring recommended",
+      "evidenceLevel": "Class II evidence",
+      "source": "[Pennell et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18354078/)"
+    },
+    {
+      "recommendation": "Refer drug-resistant epilepsy for surgical evaluation; surgery superior to continued medical therapy for mesial TLE",
+      "evidenceLevel": "Class I evidence (RCT)",
+      "source": "[Wiebe et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11519503/)"
+    },
+    {
+      "recommendation": "Seizure diary improves seizure reporting accuracy and patient engagement",
+      "evidenceLevel": "Expert consensus",
+      "source": "Expert consensus; standard clinical practice"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "ASM trough levels",
+      "frequency": "Each OPD visit; 2 weeks after dose change; with breakthrough seizures",
+      "action": "Adjust dose; assess adherence; check drug interactions",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CBC with differential",
+      "frequency": "Baseline; q6 months first year; annually",
+      "action": "Low counts → evaluate ASM cause; felbamate: any cytopenia → stop",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CMP (LFTs, renal function)",
+      "frequency": "Baseline; q6 months first year; annually",
+      "action": "LFTs >3x ULN → evaluate; adjust renally-cleared ASMs",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Sodium",
+      "frequency": "Baseline; q3 months for OXC/CBZ/ESL; annually otherwise",
+      "action": "<130 → fluid restrict; consider ASM change; <125 → urgent correction",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Vitamin D, 25-OH",
+      "frequency": "Annually",
+      "action": "Deficient → supplement 2000-5000 IU/day; recheck 3 months",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "DEXA bone density",
+      "frequency": "Baseline if >2 years on enzyme-inducing ASMs or >50; q2 years",
+      "action": "Osteopenia → supplement + exercise; osteoporosis → bisphosphonate",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Seizure frequency (diary)",
+      "frequency": "Every visit",
+      "action": "Persistent seizures → optimize ASM; refer for DRE evaluation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "PHQ-9 (depression screening)",
+      "frequency": "Every visit",
+      "action": "≥10 → psychiatry referral; evaluate ASM contribution",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Pregnancy test",
+      "frequency": "Annually for women of childbearing potential; before ASM changes",
+      "action": "Positive → urgent ASM safety review; OB referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ECG",
+      "frequency": "Baseline for lacosamide; annually if on QT-affecting ASMs",
+      "action": "PR >220 ms → reduce lacosamide; QT shortening → evaluate",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight",
+      "frequency": "Every visit",
+      "action": "Significant gain (VPA, pregabalin) → dietary counseling; consider ASM with weight-neutral or loss profile",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Lipid panel",
+      "frequency": "Annually for enzyme-inducing ASMs",
+      "action": "Elevated → statin; consider ASM switch",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Routine outpatient follow-up (q6 months)",
+      "criteria": "Well-controlled seizures (seizure-free >6 months); stable ASM doses; no side effects; labs stable"
+    },
+    {
+      "disposition": "More frequent follow-up (q1-3 months)",
+      "criteria": "Recent ASM change; not yet seizure-free; new comorbidity; pregnancy planning; first year of treatment"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "Breakthrough seizure cluster; ASM toxicity requiring monitoring; inability to take oral medications; seizure-related injury"
+    },
+    {
+      "disposition": "Admit to EMU",
+      "criteria": "Presurgical evaluation; diagnostic uncertainty (epileptic vs PNES); seizure classification needed"
+    },
+    {
+      "disposition": "Refer to comprehensive epilepsy center",
+      "criteria": "Meets DRE criteria (failed 2+ ASMs); candidate for surgical evaluation; complex ASM management"
+    },
+    {
+      "disposition": "ASM withdrawal consideration",
+      "criteria": "Seizure-free ≥2 years; normal EEG; MRI normal or stable; patient preference after risk-benefit discussion; recurrence risk ~35% overall (higher with abnormal EEG, known lesion, JME)"
+    }
+  ]
+}

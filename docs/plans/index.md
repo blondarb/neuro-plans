@@ -19,6 +19,9 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [New Onset Seizure](new-onset-seizure.md) | ED, HOSP, OPD | R56.9, G40.909 |
 | [Breakthrough Seizure](breakthrough-seizure.md) | ED, HOSP, OPD | G40.909, G40.919 |
 | [Alcohol Withdrawal Seizure](alcohol-withdrawal-seizure.md) | ED, HOSP, OPD, ICU | G40.509, F10.231, F10.239 |
+| [Drug-Resistant Epilepsy](drug-resistant-epilepsy.md) | ED, HOSP, OPD, ICU | G40.919, G40.911, G40.119 |
+| [Epilepsy - Chronic Management](epilepsy-chronic-management.md) | ED, HOSP, OPD | G40.909, G40.309, G40.209 |
+| [Eclampsia / Seizure in Pregnancy](eclampsia-seizure-pregnancy.md) | ED, HOSP, OPD, ICU | O15.0, O15.1, O15.2, O15.9 |
 
 ---
 
@@ -34,6 +37,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Cervical Artery Dissection](cervical-artery-dissection.md) | ED, HOSP, OPD, ICU | I77.71, I77.74, I67.0 |
 | [PRES](pres.md) | ED, HOSP, OPD, ICU | I67.83, I67.4 |
 | [RCVS](rcvs.md) | ED, HOSP, OPD, ICU | I67.841, I67.848 |
+| [Moyamoya Disease](moyamoya-disease.md) | ED, HOSP, OPD, ICU | I67.5, I63.9, I61.9 |
+| [Post-Stroke Management](post-stroke-management.md) | ED, HOSP, OPD | I69.30, I69.398, Z86.73 |
 
 ---
 

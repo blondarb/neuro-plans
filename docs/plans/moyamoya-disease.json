@@ -1,0 +1,1134 @@
+{
+  "id": "moyamoya-disease",
+  "title": "Moyamoya Disease",
+  "version": "1.0",
+  "icd10": [
+    "** I67.5 (Moyamoya disease)",
+    "I63.9 (Cerebral infarction",
+    "unspecified)",
+    "I61.9 (Nontraumatic intracerebral hemorrhage",
+    "unspecified)",
+    "I67.1 (Cerebral aneurysm",
+    "nonruptured)",
+    "I63.50 (Cerebral infarction due to unspecified occlusion or stenosis of unspecified cerebral artery)"
+  ],
+  "scope": "** Diagnosis and management of moyamoya disease and moyamoya syndrome in adults. Covers acute stroke management in moyamoya, diagnostic workup, medical management, surgical revascularization evaluation and options, and long-term monitoring. Distinguishes moyamoya disease (idiopathic, bilateral) from moyamoya syndrome (secondary to other conditions). Excludes pediatric moyamoya (different surgical considerations and natural history) and other causes of ischemic stroke covered in separate templates.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Polycythemia (compensatory in chronic ischemia); anemia (worsens ischemia); thrombocytosis (risk factor); baseline for surgery",
+          "target": "Normal; polycythemia → chronic cerebral ischemia; anemia → optimize Hgb"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolytes; glucose (hypo/hyperglycemia worsen ischemic injury); renal function (contrast planning); hepatic function",
+          "target": "Normal; glucose 80-180 (avoid hypoglycemia); optimize metabolic parameters"
+        },
+        {
+          "item": "Coagulation studies (PT/INR, PTT) (CPT 85610, 85730)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline coagulation; pre-surgical evaluation; hemorrhagic presentation; anticoagulation status",
+          "target": "Normal; prolonged → evaluate cause before antiplatelet/surgical therapy"
+        },
+        {
+          "item": "Lipid panel (CPT 80061)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Cardiovascular risk factor assessment; moyamoya syndrome workup (atherosclerotic component)",
+          "target": "LDL <70 (high vascular risk); optimize lipids"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes assessment; glycemic control affects stroke risk and outcomes",
+          "target": "<7%; elevated → optimize diabetes management"
+        },
+        {
+          "item": "ESR (CPT 85651) / CRP (CPT 86140)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Inflammatory markers; exclude vasculitis as cause of moyamoya syndrome; autoimmune conditions",
+          "target": "Normal; elevated → consider vasculitis, autoimmune, or infectious etiology"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid disease associated with moyamoya syndrome (especially Graves disease); autoimmune thyroiditis",
+          "target": "Normal; hyperthyroidism → Graves/moyamoya association"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "**CRITICAL**: Hypoglycemia worsens ischemic injury in moyamoya; hyperglycemia increases infarct volume",
+          "target": "80-180 mg/dL; AVOID hypoglycemia (<70); treat hyperglycemia >180"
+        },
+        {
+          "item": "Type and screen (CPT 86900/86901)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Preparation for potential surgical intervention; hemorrhagic presentation",
+          "target": "Available for cross-match"
+        },
+        {
+          "item": "Pregnancy test (β-hCG) (CPT 84703)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Pregnancy increases stroke risk in moyamoya; alters surgical and medical management",
+          "target": "Document; positive → high-risk OB involvement"
+        }
+      ],
+      "Extended Workup": [
+        {
+          "item": "Sickle cell screen (hemoglobin electrophoresis) (CPT 83020)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Sickle cell disease is most common cause of moyamoya syndrome in African Americans; may present as stroke",
+          "target": "Normal hemoglobin pattern; HbSS or HbSC → sickle cell-related moyamoya syndrome"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "SLE-associated moyamoya syndrome; autoimmune vasculopathy screening",
+          "target": "Negative; positive → further autoimmune workup"
+        },
+        {
+          "item": "Anti-dsDNA (CPT 86225)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "SLE confirmation if ANA positive",
+          "target": "Negative; positive → lupus workup"
+        },
+        {
+          "item": "Thyroid antibodies (anti-TPO, anti-thyroglobulin) (CPT 86376, 86800)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune thyroid disease (Graves, Hashimoto) associated with moyamoya",
+          "target": "Negative; positive → autoimmune thyroid-associated moyamoya syndrome"
+        },
+        {
+          "item": "Homocysteine (CPT 83090)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hyperhomocysteinemia as vascular risk factor; associated with moyamoya in some studies",
+          "target": "<15 μmol/L; elevated → folate/B12/B6 supplementation"
+        },
+        {
+          "item": "Antiphospholipid antibody panel (CPT 86235, 86147)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Antiphospholipid syndrome can cause progressive intracranial stenosis mimicking moyamoya",
+          "target": "Negative; positive → anticoagulation consideration"
+        },
+        {
+          "item": "Complement levels (C3, C4) (CPT 86160, 86161)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Low complement in active SLE or other complement-mediated vasculopathy",
+          "target": "Normal; low → active autoimmune process"
+        },
+        {
+          "item": "Protein C, Protein S, Antithrombin III (CPT 85303, 85306, 85300)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Thrombophilia workup in young patient with moyamoya and stroke",
+          "target": "Normal; deficiency → additional stroke risk factor"
+        },
+        {
+          "item": "Ferritin / Iron studies (CPT 82728, 83540)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Iron deficiency anemia can trigger TIA/stroke in moyamoya; maintain adequate iron stores",
+          "target": "Ferritin >50; iron deficiency → supplement before surgery"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "RNF213 gene testing (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Founder mutation for moyamoya in East Asian populations; p.R4810K variant; confirmed susceptibility gene; may guide family screening",
+          "target": "Wild-type; p.R4810K variant → confirmed genetic susceptibility; family screening indicated"
+        },
+        {
+          "item": "ACTA2 gene testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Smooth muscle actin mutations cause moyamoya syndrome with systemic vascular disease (aortic aneurysm, coronary disease)",
+          "target": "Normal; mutation → screen for systemic vascular involvement"
+        },
+        {
+          "item": "BRCC3/MTCP1 gene testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "X-linked moyamoya with short stature",
+          "target": "Normal; mutation → specific syndrome"
+        },
+        {
+          "item": "Neurofibromatosis type 1 screening (clinical + genetic)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "NF1 is associated with moyamoya syndrome; café-au-lait spots, neurofibromas, optic glioma",
+          "target": "No features; features present → NF1-associated moyamoya syndrome"
+        },
+        {
+          "item": "Down syndrome assessment (karyotype if not known)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Trisomy 21 associated with moyamoya syndrome; higher prevalence than general population",
+          "target": "Normal karyotype; trisomy 21 → known association"
+        },
+        {
+          "item": "CSF analysis",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "If CNS vasculitis or infection in differential; atypical presentation",
+          "target": "Normal; abnormal → alternate diagnosis"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Acute presentation: ischemic stroke vs hemorrhage; SAH screening; baseline",
+          "target": "Ischemic infarct (hypodensity); hemorrhage (hyperdensity); SAH",
+          "contraindications": "None"
+        },
+        {
+          "item": "CTA head and neck (CPT 70496/70498)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Rapid vascular assessment; bilateral ICA terminal/proximal MCA/ACA stenosis or occlusion; collateral network",
+          "target": "**Classic**: Bilateral terminal ICA stenosis/occlusion with \"puff of smoke\" basal collaterals; evaluate Circle of Willis; external carotid collaterals",
+          "contraindications": "Contrast allergy; renal insufficiency (hydrate)"
+        },
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Infarct characterization; ivy sign (leptomeningeal enhancement from slow flow); chronic changes; hemorrhage (GRE/SWI)",
+          "target": "Infarcts (often watershed distribution); **\"ivy sign\"** on post-contrast FLAIR (leptomeningeal collateral enhancement); SWI: microbleeds (hemorrhagic risk); flow voids in basal ganglia (moyamoya vessels)",
+          "contraindications": "MRI-incompatible implants"
+        },
+        {
+          "item": "MRA head (time-of-flight) (CPT 70544)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Non-invasive vascular assessment; bilateral ICA stenosis; MCA/ACA flow reduction; collateral visualization",
+          "target": "Bilateral terminal ICA stenosis/occlusion; diminished MCA/ACA flow; prominent moyamoya collaterals",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "MRA neck (CPT 70547)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Cervical ICA assessment; extracranial disease; distinguish from atherosclerotic stenosis",
+          "target": "Normal cervical ICAs (disease starts intracranially in true moyamoya); extracranial stenosis → atherosclerotic etiology",
+          "contraindications": "Same as MRI"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Conventional cerebral angiography (DSA) (CPT 36224)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "**GOLD STANDARD for diagnosis and Suzuki staging**; defines vascular anatomy for surgical planning; evaluates collateral pathways; may reveal aneurysms on collaterals",
+          "target": "Suzuki staging (I-VI); bilateral ICA terminal stenosis/occlusion; moyamoya collateral network; aneurysms on collaterals or posterior circulation; EC-IC collateral assessment",
+          "contraindications": "Invasive (stroke risk 0.5-1% in moyamoya — INCREASED risk due to fragile collaterals); contrast allergy; renal insufficiency"
+        },
+        {
+          "item": "CT perfusion (CPT 70496)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Acute hemodynamic assessment; identify penumbra; assess cerebrovascular reserve; helpful for surgical planning",
+          "target": "Prolonged MTT/TTP; decreased CBF with maintained CBV (misery perfusion); stage I-II hemodynamic failure",
+          "contraindications": "Contrast; radiation"
+        },
+        {
+          "item": "MR perfusion (ASL or DSC) (CPT 70553)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Non-invasive perfusion assessment; cerebrovascular reserve; serial monitoring without contrast (ASL); pre/post-surgical comparison",
+          "target": "Decreased perfusion in ICA territory; asymmetric CBF; improved perfusion post-surgery",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "Acetazolamide SPECT challenge (CPT 78607)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Cerebrovascular reserve testing; assesses autoregulatory capacity; identifies \"steal\" phenomenon; helps determine surgical candidacy",
+          "target": "Normal: >10% increase in CBF with acetazolamide; abnormal: failed augmentation or paradoxical decrease (steal) → surgery indicated",
+          "contraindications": "Sulfonamide allergy; severe hepatic disease; prior acetazolamide reaction"
+        },
+        {
+          "item": "Transcranial Doppler (TCD) (CPT 93886)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Non-invasive monitoring of MCA velocities; detect vasospasm; serial follow-up; screen for moyamoya in sickle cell",
+          "target": "Elevated MCA velocities (stenosis); absent flow (occlusion); postoperative bypass patency monitoring",
+          "contraindications": "Inadequate temporal windows"
+        },
+        {
+          "item": "EEG (routine) (CPT 95816)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "\"Re-buildup\" phenomenon (slow recovery of background activity after hyperventilation is pathognomonic); seizure evaluation; baseline for surgery",
+          "target": "**\"Re-buildup\" pattern**: slow waves persist >5 min after hyperventilation stops (reflects impaired cerebrovascular reserve); epileptiform activity if seizures",
+          "contraindications": "None; **avoid prolonged hyperventilation during EEG in moyamoya** (can trigger ischemia)"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Xenon CT (CPT 70450)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Quantitative CBF measurement with acetazolamide challenge; research and specialized centers",
+          "target": "Quantitative CBF maps; reserve assessment",
+          "contraindications": "Limited availability; xenon inhalation"
+        },
+        {
+          "item": "15O-PET (oxygen extraction fraction) (CPT 78816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Gold standard for cerebral hemodynamic assessment; OEF elevation indicates misery perfusion (stage II failure); strongest predictor of stroke risk",
+          "target": "Elevated OEF → stage II hemodynamic failure → surgical revascularization most beneficial",
+          "contraindications": "Limited availability; cyclotron required"
+        },
+        {
+          "item": "BOLD-fMRI with CO2 challenge",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Non-invasive cerebrovascular reactivity mapping; emerging technique; CO2-BOLD CVR correlates with stroke risk",
+          "target": "Impaired CVR in ICA territories; asymmetry; guides surgical planning",
+          "contraindications": "Same as MRI; patient cooperation"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Normal saline (0.9% NaCl)",
+          "route": "IV",
+          "indication": "**CRITICAL: Maintain euvolemia**; dehydration is major trigger for ischemic events in moyamoya; aggressive hydration during acute presentation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "125-250 mL/h",
+                "orderSentence": "Normal saline (0.9% NaCl) 125-250 mL/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "125-250 mL/h isotonic crystalloid; maintain euvolemia; target urine output >0.5 mL/kg/h; AVOID hypovolemia (reduces perfusion through collaterals)",
+            "orderSentence": "Normal saline (0.9% NaCl) 125-250 mL/h IV"
+          },
+          "contraindications": "Heart failure (reduce rate); pulmonary edema",
+          "monitoring": "Fluid balance; urine output; BMP q12h; avoid overhydration",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Aspirin",
+          "route": "PO",
+          "indication": "Antiplatelet therapy for ischemic moyamoya; reduces thrombus formation in stenotic vessels and fragile collaterals",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "81 mg daily",
+                "orderSentence": "Aspirin 81 mg daily PO"
+              },
+              {
+                "text": "325 mg daily",
+                "orderSentence": "Aspirin 325 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "81-325 mg PO daily; 81 mg preferred for long-term; 325 mg may be used acutely; continue indefinitely unless hemorrhagic presentation",
+            "orderSentence": "Aspirin 81 mg daily PO"
+          },
+          "contraindications": "Active hemorrhage; hemorrhagic moyamoya presentation; allergy; severe bleeding risk",
+          "monitoring": "Signs of bleeding; platelet function if concerns",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood pressure management — **AVOID HYPOTENSION**",
+          "route": "IV/PO",
+          "indication": "**CRITICAL: Permissive hypertension in acute ischemic moyamoya**; collateral-dependent flow is pressure-sensitive; hypotension → watershed infarction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Target BP varies",
+                "orderSentence": "Blood pressure management — **AVOID HYPOTENSION** Target BP varies IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Acute ischemic: allow SBP up to 180-200 (unless hemorrhage or post-tPA); AVOID aggressive BP lowering; chronic: target ~10-20% above patient's baseline; NO specific BP target — individualize",
+            "orderSentence": "Blood pressure management — **AVOID HYPOTENSION** Target BP varies IV/PO"
+          },
+          "contraindications": "Avoid antihypertensives acutely unless SBP >220 or hemorrhagic; **DO NOT use IV nitroglycerin or nitroprusside (steal phenomenon)**",
+          "monitoring": "Continuous BP monitoring; neuro checks q1h; avoid BP fluctuations",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Nicardipine (if BP too high with hemorrhage)",
+          "route": "IV",
+          "indication": "BP reduction ONLY if hemorrhagic presentation with SBP >180; or hypertensive emergency with end-organ damage",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/h titrated",
+                "orderSentence": "Nicardipine (if BP too high with hemorrhage) 5 mg/h titrated IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 5 mg/h; increase by 2.5 mg/h q5-15min; target SBP 140-160 for hemorrhagic moyamoya; AVOID dropping below 140",
+            "orderSentence": "Nicardipine (if BP too high with hemorrhage) 5 mg/h titrated IV"
+          },
+          "contraindications": "Severe aortic stenosis",
+          "monitoring": "Arterial line preferred; avoid over-lowering; neuro checks q1h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO, IV",
+          "indication": "Headache (common in moyamoya due to collateral dilation); safe first-line analgesic; avoid NSAIDs (bleeding risk)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg q6h",
+                "orderSentence": "Acetaminophen 650-1000 mg q6h PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO/IV q6h PRN; max 3000 mg/day; AVOID NSAIDs and aspirin combinations (GI bleed)",
+            "orderSentence": "Acetaminophen 650-1000 mg q6h PO"
+          },
+          "contraindications": "Severe hepatic impairment",
+          "monitoring": "LFTs if chronic use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam",
+          "route": "PO, IV",
+          "indication": "Seizure treatment/prophylaxis; seizures occur in 20-30% of moyamoya patients; broad-spectrum; no hepatic metabolism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Levetiracetam 500 mg BID PO"
+              },
+              {
+                "text": "750 mg BID",
+                "orderSentence": "Levetiracetam 750 mg BID PO"
+              },
+              {
+                "text": "1000 mg BID",
+                "orderSentence": "Levetiracetam 1000 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg BID; increase by 500 mg/day q1-2wk; max 3000 mg/day; IV loading 1000 mg over 15 min if needed",
+            "orderSentence": "Levetiracetam 500 mg BID PO"
+          },
+          "contraindications": "Hypersensitivity; renal dosing",
+          "monitoring": "Psychiatric effects; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Verapamil",
+          "route": "PO",
+          "indication": "Headache prevention in moyamoya (calcium channel blocker may improve collateral flow); migraine-like headache is common",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "80 mg TID",
+                "orderSentence": "Verapamil 80 mg TID PO"
+              },
+              {
+                "text": "120 mg TID",
+                "orderSentence": "Verapamil 120 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 80 mg TID; increase by 80 mg q1wk; target 120 mg TID; max 480 mg/day; extended-release preferred",
+            "orderSentence": "Verapamil 80 mg TID PO"
+          },
+          "contraindications": "Second/third-degree AV block; severe LV dysfunction; concurrent beta-blocker",
+          "monitoring": "HR; BP; ECG; constipation; avoid in hypotension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Iron supplementation (if deficient)",
+          "route": "PO",
+          "indication": "Iron deficiency anemia correction; anemia worsens cerebral ischemia in moyamoya; optimize before surgery",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "325 mg ferrous sulfate daily",
+                "orderSentence": "Iron supplementation (if deficient) 325 mg ferrous sulfate daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "325 mg (65 mg elemental iron) PO daily on empty stomach; may increase to BID if tolerated; target ferritin >50",
+            "orderSentence": "Iron supplementation (if deficient) 325 mg ferrous sulfate daily PO"
+          },
+          "contraindications": "Hemochromatosis; iron overload",
+          "monitoring": "Ferritin, iron studies q3 months until replete",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Medical Management (Long-term)": [
+        {
+          "item": "Aspirin (long-term antiplatelet)",
+          "route": "PO",
+          "indication": "Long-term antiplatelet therapy for all moyamoya patients with ischemic presentation; reduces ischemic events; continue post-surgery",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "81 mg daily",
+                "orderSentence": "Aspirin (long-term antiplatelet) 81 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "81 mg PO daily indefinitely; hold 7 days before surgery then resume 24-48h post-op per neurosurgical guidance",
+            "orderSentence": "Aspirin (long-term antiplatelet) 81 mg daily PO"
+          },
+          "contraindications": "Active hemorrhage; hemorrhagic moyamoya without ischemic history; allergy",
+          "monitoring": "GI bleeding; platelet function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Atorvastatin",
+          "route": "PO",
+          "indication": "Vascular risk factor optimization; pleiotropic effects (endothelial function, anti-inflammatory); may benefit even with non-atherosclerotic disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Atorvastatin 20 mg daily PO"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Atorvastatin 40 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 20-40 mg daily; target LDL <70 given high vascular risk; monitor LFTs",
+            "orderSentence": "Atorvastatin 20 mg daily PO"
+          },
+          "contraindications": "Active liver disease; pregnancy",
+          "monitoring": "LFTs at baseline and 3 months; CK if myalgia; lipid panel q6 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cilostazol",
+          "route": "PO",
+          "indication": "Antiplatelet with vasodilatory properties; may improve collateral development; studied in moyamoya as adjunct to aspirin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg BID",
+                "orderSentence": "Cilostazol 50 mg BID PO"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Cilostazol 100 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg BID; increase to 100 mg BID if tolerated; take 30 min before or 2h after meals",
+            "orderSentence": "Cilostazol 50 mg BID PO"
+          },
+          "contraindications": "Heart failure (PDE3 inhibitor); hemorrhagic moyamoya",
+          "monitoring": "Headache (common, usually transient); HR; bleeding signs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Surgical Revascularization": [
+        {
+          "item": "STA-MCA bypass (direct revascularization)",
+          "route": "Surgical",
+          "indication": "**Most effective surgical option**: Direct anastomosis of superficial temporal artery to middle cerebral artery branch; immediate flow augmentation; preferred in adults",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A — surgical procedure",
+                "orderSentence": "STA-MCA bypass (direct revascularization) N/A — surgical procedure Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Microsurgical anastomosis; STA donor to M4 cortical MCA branch; provides immediate blood flow augmentation; most evidence in adults",
+            "orderSentence": "STA-MCA bypass (direct revascularization) N/A — surgical procedure Surgical"
+          },
+          "pretreatment": "Complete presurgical workup: DSA, perfusion imaging, neuropsych; optimize Hgb >10; hold aspirin per surgeon; adequate STA caliber on CTA/ultrasound",
+          "contraindications": "Inadequate donor (STA) or recipient vessels; active infection; severe medical comorbidities precluding craniotomy; recent large infarct (<6 weeks)",
+          "monitoring": "Post-op: ICU 24-48h; BP strictly controlled (avoid hypo- and hypertension); TCD daily; CT if deficit; hydration; avoid hyperventilation; aspirin resume 24-48h",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "EDAS (encephaloduroarteriosynangiosis — indirect)",
+          "route": "Surgical",
+          "indication": "Indirect revascularization; STA laid on brain surface to promote neoangiogenesis over weeks-months; combined with direct bypass in adults; primary technique in pediatrics",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A — surgical procedure",
+                "orderSentence": "EDAS (encephaloduroarteriosynangiosis — indirect) N/A — surgical procedure Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Dissected STA branch sutured to dural edges overlying cortex; new collateral formation occurs over 3-6 months; may be combined with direct bypass (combined approach)",
+            "orderSentence": "EDAS (encephaloduroarteriosynangiosis — indirect) N/A — surgical procedure Surgical"
+          },
+          "pretreatment": "Same as STA-MCA bypass",
+          "contraindications": "Same as direct bypass; less technically demanding; longer time to full benefit",
+          "monitoring": "Same as direct bypass; follow-up angiography at 6-12 months to assess new collateral formation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "EMS (encephalomyosynangiosis — indirect)",
+          "route": "Surgical",
+          "indication": "Indirect revascularization using temporalis muscle; often combined with EDAS or direct bypass; additional blood supply source",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A — surgical procedure",
+                "orderSentence": "EMS (encephalomyosynangiosis — indirect) N/A — surgical procedure Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Temporalis muscle dissected and laid on cortical surface; promotes collateral growth; less effective alone than EDAS or direct bypass",
+            "orderSentence": "EMS (encephalomyosynangiosis — indirect) N/A — surgical procedure Surgical"
+          },
+          "pretreatment": "Same presurgical requirements",
+          "contraindications": "Same as EDAS",
+          "monitoring": "Same as EDAS; follow-up imaging",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Combined direct + indirect revascularization",
+          "route": "Surgical",
+          "indication": "**Preferred approach in adults**: Direct bypass (immediate flow) + indirect (EDAS/EMS for additional long-term collateral development); maximizes revascularization",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A — combined procedure",
+                "orderSentence": "Combined direct + indirect revascularization N/A — combined procedure Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "STA-MCA bypass + EDAS or EMS in same operative session; provides immediate + delayed revascularization; bilateral surgery staged 1-3 months apart",
+            "orderSentence": "Combined direct + indirect revascularization N/A — combined procedure Surgical"
+          },
+          "pretreatment": "Complete presurgical evaluation; bilateral procedures staged (contralateral side 1-3 months later after recovery)",
+          "contraindications": "Same as individual procedures; hemodynamic instability",
+          "monitoring": "ICU post-op; staged bilateral procedures; repeat perfusion imaging between stages",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Multiple burr holes (indirect)",
+          "route": "Surgical",
+          "indication": "Alternative indirect technique when STA inadequate or in regions not covered by standard bypass; promotes neoangiogenesis through dural openings",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A — surgical procedure",
+                "orderSentence": "Multiple burr holes (indirect) N/A — surgical procedure Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Multiple burr holes placed over ischemic territory; dura opened at each site; promotes collateral ingrowth; less invasive; may supplement other techniques",
+            "orderSentence": "Multiple burr holes (indirect) N/A — surgical procedure Surgical"
+          },
+          "pretreatment": "Less effective than direct bypass; used when other options limited",
+          "contraindications": "Same general surgical risks",
+          "monitoring": "Follow-up perfusion imaging at 6-12 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Cerebrovascular neurosurgery consultation with moyamoya expertise for all patients; early surgical referral improves outcomes",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neurology consultation for acute stroke management, medical optimization, and long-term monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neuropsychological testing baseline before surgery and at 6-12 months post-surgery to assess cognitive outcomes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anesthesiology pre-operative consultation with emphasis on: AVOID hyperventilation (reduces PaCO2 → vasoconstriction → ischemia); maintain normotension; avoid dehydration; ketamine caution",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hematology referral if sickle cell disease, thrombophilia, or polycythemia contributing to moyamoya syndrome",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetics counseling if bilateral moyamoya disease (familial screening recommended; RNF213 in East Asian populations; ACTA2 for systemic vascular moyamoya)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for stroke rehabilitation; occupational therapy for ADL adaptation; speech therapy if aphasia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology referral for retinal vascular assessment (moyamoya can affect retinal vessels)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "**STAY WELL HYDRATED at all times**; dehydration is the most dangerous trigger for ischemic events in moyamoya — drink at least 2-3 liters of fluid daily; increase during illness, exercise, or hot weather",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED immediately if new weakness, numbness, vision changes, speech difficulty, severe headache, or any new neurologic symptom — do not wait to see if it improves",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "**AVOID hyperventilation**: Do not blow up balloons, play wind instruments, blow-dry hair on hot settings prolonged, or perform breathing exercises that involve forced deep breathing — hyperventilation causes cerebral vasoconstriction and can trigger stroke",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid excessive crying in children; teach older patients to avoid Valsalva maneuvers (heavy straining, breath-holding) as these can reduce cerebral perfusion",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take aspirin daily as prescribed; do not stop without consulting neurologist; carry a medication list at all times",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid extreme temperature exposure (hot baths, saunas, cold exposure) which can trigger hemodynamic changes and ischemic events",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Inform all physicians and dentists about moyamoya diagnosis before any procedure; anesthesia requires special precautions; avoid vasoconstrictive medications (triptans, ergotamines, decongestants with pseudoephedrine)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Wear medical alert identification indicating moyamoya disease and \"avoid hyperventilation\"",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Maintain adequate hydration (2-3 L/day minimum); carry water bottle; increase fluids during illness or physical activity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular low-to-moderate intensity exercise encouraged for cardiovascular health; avoid competitive or extreme sports; avoid activities with significant dehydration risk",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Iron-rich diet or supplementation to maintain adequate hemoglobin; anemia worsens ischemic symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid smoking and secondhand smoke (vascular damage; reduces oxygen-carrying capacity)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Blood pressure management: avoid both hypertension AND hypotension; individualized BP targets; home BP monitoring twice daily",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Family screening with MRA recommended for first-degree relatives, especially in East Asian populations with bilateral disease (10-15% familial)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Intracranial atherosclerosis",
+      "features": "Older age; vascular risk factors (DM, HTN, smoking); unilateral preferred; no moyamoya collaterals; extracranial disease common",
+      "tests": "DSA (focal plaque vs progressive stenosis); CTA (calcification); risk factor profile; MRI (embolic pattern not watershed)"
+    },
+    {
+      "diagnosis": "CNS vasculitis (PACNS)",
+      "features": "Multifocal irregular narrowing of multiple vessel sizes; CSF pleocytosis/elevated protein; may respond to immunosuppression",
+      "tests": "CSF analysis (inflammatory); brain biopsy (gold standard); DSA (beading pattern); ESR/CRP; MRI (multifocal lesions)"
+    },
+    {
+      "diagnosis": "Radiation-induced vasculopathy",
+      "features": "History of cranial radiation (typically childhood); progressive stenosis years after treatment; unilateral more common",
+      "tests": "Radiation history; MRI (radiation changes); progressive stenosis in radiation field"
+    },
+    {
+      "diagnosis": "Fibromuscular dysplasia (FMD)",
+      "features": "Typically cervical/renal arteries; \"string of beads\" on angiography; not typically intracranial",
+      "tests": "CTA/MRA (\"string of beads\" in cervical ICA/renal arteries); spares intracranial vessels typically"
+    },
+    {
+      "diagnosis": "Sickle cell vasculopathy",
+      "features": "Known sickle cell disease; progressive ICA stenosis similar to moyamoya; moyamoya syndrome",
+      "tests": "Hemoglobin electrophoresis; sickle cell confirmed; management differs (chronic transfusion)"
+    },
+    {
+      "diagnosis": "NF1-associated vasculopathy",
+      "features": "Café-au-lait spots; neurofibromas; optic glioma; progressive intracranial stenosis",
+      "tests": "Clinical features of NF1; genetic testing; imaging of moyamoya pattern + NF1 features"
+    },
+    {
+      "diagnosis": "Down syndrome vasculopathy",
+      "features": "Trisomy 21; moyamoya pattern; may present with stroke in young patient",
+      "tests": "Karyotype; clinical features; imaging shows moyamoya pattern"
+    },
+    {
+      "diagnosis": "Takayasu arteritis",
+      "features": "Large vessel vasculitis; aorta and branches; may involve carotid → intracranial; systemic symptoms; elevated ESR",
+      "tests": "ESR/CRP markedly elevated; aortic arch imaging; systemic symptoms; younger women"
+    },
+    {
+      "diagnosis": "Antiphospholipid syndrome",
+      "features": "Recurrent thrombosis; pregnancy loss; livedo reticularis; progressive vascular occlusion can mimic moyamoya",
+      "tests": "aPL antibodies (lupus anticoagulant, anticardiolipin, anti-β2GP1); coagulation studies"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Guidelines for diagnosis and treatment of moyamoya disease (2012)",
+      "evidenceLevel": "Professional society guideline",
+      "source": "[Research Committee on Moyamoya Disease. Neurol Med Chir 2012](https://pubmed.ncbi.nlm.nih.gov/22870528/)"
+    },
+    {
+      "recommendation": "STA-MCA bypass effective in reducing stroke risk in adult moyamoya",
+      "evidenceLevel": "Class II evidence (prospective cohort)",
+      "source": "[Miyamoto et al. Stroke 2014 (JAM Trial)](https://pubmed.ncbi.nlm.nih.gov/24803589/)"
+    },
+    {
+      "recommendation": "RNF213 as susceptibility gene for moyamoya disease",
+      "evidenceLevel": "Class II evidence (GWAS)",
+      "source": "[Kamada et al. J Hum Genet 2011](https://pubmed.ncbi.nlm.nih.gov/21307864/)"
+    },
+    {
+      "recommendation": "Suzuki staging system for moyamoya angiographic progression",
+      "evidenceLevel": "Class III evidence (descriptive)",
+      "source": "[Suzuki & Takaku. Arch Neurol 1969](https://pubmed.ncbi.nlm.nih.gov/5775283/)"
+    },
+    {
+      "recommendation": "Direct bypass superior to indirect in adults; combined approach recommended",
+      "evidenceLevel": "Class II evidence (systematic review)",
+      "source": "[Jeon et al. J Neurosurg 2018](https://pubmed.ncbi.nlm.nih.gov/28777047/)"
+    },
+    {
+      "recommendation": "Hemorrhagic moyamoya management: surgical revascularization reduces rebleeding",
+      "evidenceLevel": "Class I evidence (RCT)",
+      "source": "[Miyamoto et al. Stroke 2014 (JAM Trial)](https://pubmed.ncbi.nlm.nih.gov/24803589/)"
+    },
+    {
+      "recommendation": "Hyperventilation avoidance critical in moyamoya (cerebrovascular reactivity impaired)",
+      "evidenceLevel": "Expert consensus; physiologic studies",
+      "source": "Expert consensus; cerebrovascular physiology literature"
+    },
+    {
+      "recommendation": "Dehydration is major stroke trigger in moyamoya; hydration maintenance essential",
+      "evidenceLevel": "Class III evidence; case series",
+      "source": "[Kim. J Korean Neurosurg Soc 2016](https://pubmed.ncbi.nlm.nih.gov/26962416/)"
+    },
+    {
+      "recommendation": "Cerebrovascular reserve testing (acetazolamide SPECT/PET) predicts surgical benefit",
+      "evidenceLevel": "Class II evidence",
+      "source": "[Kuroda et al. Neurology 2001](https://pubmed.ncbi.nlm.nih.gov/11706115/)"
+    },
+    {
+      "recommendation": "Family screening recommended for first-degree relatives; 10-15% familial incidence",
+      "evidenceLevel": "Class III evidence; cohort studies",
+      "source": "[Baba et al. J Neurosurg 2008](https://pubmed.ncbi.nlm.nih.gov/18518733/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Blood pressure",
+      "frequency": "q1h acute; q4h stable inpatient; BID at home",
+      "action": "Hypotension → fluid bolus, reduce antihypertensives; hypertension → cautious treatment (avoid over-lowering)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Neurologic exam",
+      "frequency": "q1h acute; q4h stable; each clinic visit",
+      "action": "New deficit → STAT imaging; OR evaluation if post-operative",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Hydration status (intake/output)",
+      "frequency": "q4h inpatient; daily awareness outpatient",
+      "action": "Dehydrated → aggressive IV/PO hydration; urine output low → bolus",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "CBC (hemoglobin)",
+      "frequency": "Admission; q6-12h post-op; q3-6 months outpatient",
+      "action": "Anemia → transfuse if <7 or symptomatic; iron supplementation",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "MRA head",
+      "frequency": "Baseline; 6-12 months post-surgery; annually",
+      "action": "Progressive stenosis → repeat perfusion; surgical revision consideration",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Perfusion imaging (MR or CT perfusion)",
+      "frequency": "Baseline; 6-12 months post-surgery; as indicated",
+      "action": "Worsening perfusion → re-evaluate for additional revascularization",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "TCD (transcranial Doppler)",
+      "frequency": "Post-op daily x 3 days; q6 months outpatient",
+      "action": "Increasing velocities → progressive stenosis; absent flow → occlusion; asymmetric → surgical hemisphere assessment",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "EEG (with hyperventilation)",
+      "frequency": "Baseline; annually; if new symptoms",
+      "action": "Re-buildup present → impaired reserve → consider surgical referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Acute stroke (ischemic or hemorrhagic); post-surgical revascularization (24-48h); refractory hypo/hypertension; seizures; large infarct with edema"
+    },
+    {
+      "disposition": "Admit to floor (neuroscience unit)",
+      "criteria": "TIA with new diagnosis; workup and surgical planning; stable post-ICU; medical optimization before surgery"
+    },
+    {
+      "disposition": "Discharge home",
+      "criteria": "Stable neurologic exam; adequate PO hydration demonstrated; BP at target; antiplatelet therapy started; follow-up arranged with cerebrovascular neurosurgery and neurology; patient/family educated on hydration and hyperventilation avoidance"
+    },
+    {
+      "disposition": "Transfer to moyamoya center",
+      "criteria": "Diagnosis confirmed but facility lacks cerebrovascular neurosurgery expertise for bypass surgery; complex bilateral disease"
+    },
+    {
+      "disposition": "Outpatient follow-up",
+      "criteria": "Neurology q3-6 months; neurosurgery per surgical timeline; MRA annually; perfusion imaging per protocol"
+    }
+  ]
+}
