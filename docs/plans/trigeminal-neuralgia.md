@@ -3,6 +3,13 @@ title: "Trigeminal Neuralgia"
 description: "Clinical decision support for trigeminal neuralgia diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - cerebrovascular
+  - headache
+  - neuromuscular
+  - neuro-oncology
+  - autoimmune
 ---
 
 # Trigeminal Neuralgia
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Trigeminal Neuralgia
 
 **ICD-10:** G50.0 (Trigeminal neuralgia), G50.1 (Atypical facial pain), G50.8 (Other disorders of trigeminal nerve), G44.847 (Trigeminal autonomic cephalalgia)
+
+**CPT CODES:** 85025 (CBC), 80053 (CMP), 85652 (ESR), 86235 (ANA), 62270 (CSF analysis), 82164 (ACE level), 70553 (MRI brain with dedicated trigeminal protocol), 70544 (MRA), 70450 (CT head), 95933 (Trigeminal reflex testing (blink reflex)), 96365 (Fosphenytoin (severe exacerbation)), 64400 (Peripheral nerve block (V2/V3))
 
 **SYNONYMS:** Trigeminal neuralgia, TN, tic douloureux, facial neuralgia, facial pain, CN V neuralgia, trigeminal neuropathy, classical trigeminal neuralgia, idiopathic trigeminal neuralgia, secondary trigeminal neuralgia, painful trigeminal neuropathy
 

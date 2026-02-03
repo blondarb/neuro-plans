@@ -17,6 +17,8 @@ tags:
 
 **DIAGNOSIS:** Normal Pressure Hydrocephalus (NPH)
 **ICD-10:** G91.2 (Normal pressure hydrocephalus); G91.0 (Communicating hydrocephalus); R41.0 (Disorientation, unspecified); R26.0 (Ataxic gait); R32 (Unspecified urinary incontinence)
+
+**CPT CODES:** 85025 (CBC with differential), 80048 (BMP), 85610 (Coagulation panel - PT/INR, PTT), 85730 (Coagulation panel - PT/INR, PTT), 84443 (TSH), 82607 (Vitamin B12), 81001 (Urinalysis with culture), 87086 (Urinalysis with culture), 83036 (Hemoglobin A1c), 82746 (Folate), 86592 (RPR or VDRL), 86701 (HIV antibody), 85652 (ESR, CRP), 86140 (ESR, CRP), 80076 (Hepatic panel), 84153 (PSA - males), 86255 (Paraneoplastic antibody panel), 86235 (Anti-neuronal antibodies - NMDA-R, LGI1, CASPR2), 81405 (Genetic testing for APP, PSEN1, PSEN2), 70551 (MRI Brain without contrast), 70450 (CT Head non-contrast), 70553 (MRI Brain with volumetric analysis), 76390 (MR spectroscopy), 78816 (FDG-PET Brain), 61210 (Intracranial pressure monitoring - continuous), 62270 (Infusion testing - CSF outflow resistance), 78630 (Radionuclide cisternography), 89051 (Cell count - tubes 1 and 4), 84157 (Protein), 82947 (Glucose with serum glucose), 83519 (CSF Abeta-42, total tau, p-tau)
 **SYNONYMS:** NPH, idiopathic NPH (iNPH), Hakim-Adams syndrome, communicating hydrocephalus, chronic hydrocephalus, occult hydrocephalus, adult-onset hydrocephalus, secondary NPH, low-pressure hydrocephalus
 **SCOPE:** Comprehensive evaluation of suspected NPH, diagnostic workup including high-volume lumbar puncture (tap test), prediction of shunt responsiveness, neurosurgical referral, and post-shunt monitoring. Covers idiopathic NPH (most common) and secondary NPH. Does not cover acute obstructive hydrocephalus or pediatric hydrocephalus.
 

@@ -3,19 +3,28 @@ title: "Rapidly Progressive Dementia"
 description: "Clinical decision support for rapidly progressive dementia (rpd) diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - neurodegenerative
+  - movement-disorders
 ---
 
 # Rapidly Progressive Dementia
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Rapidly Progressive Dementia (RPD)
 
 **ICD-10:** F03.90 (Unspecified dementia without behavioral disturbance), G31.9 (Degenerative disease of nervous system, unspecified), A81.00 (Creutzfeldt-Jakob disease, unspecified), G30.9 (Alzheimer's disease, unspecified), G31.09 (Other frontotemporal dementia)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP), 84443 (TSH), 82607 (B12), 82746 (Folate), 85652 (ESR), 86140 (CRP), 86592 (RPR or VDRL), 87389 (HIV 1/2 antigen/antibody), 81003 (Urinalysis), 82947 (Blood glucose), 86235 (ANA), 86334 (Serum protein electrophoresis (SPEP)), 84425 (Thiamine (B1) level), 82390 (Copper), 84630 (Zinc level), 82533 (Cortisol), 83655 (Heavy metals: lead), 83519 (14-3-3 protein (CSF)), 70553 (MRI brain with and without contrast), 95816 (EEG), 70450 (CT head without contrast), 72141 (MRI spine), 95700 (Continuous EEG (cEEG)), 78608 (FDG-PET brain), 78816 (PET-CT body), 89051 (Cell count with differential), 84157 (Protein), 82945 (Glucose with paired serum), 83916 (Oligoclonal bands), 96374 (Thiamine (B1) IV), 96365 (IV methylprednisolone)
 
 **SYNONYMS:** Rapidly progressive dementia, RPD, rapidly progressive cognitive decline, subacute dementia, prion disease evaluation, CJD workup, Creutzfeldt-Jakob disease, rapid onset dementia, fast progressing dementia, subacute encephalopathy, prion disease, fast dementia
 

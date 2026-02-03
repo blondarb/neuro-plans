@@ -15,6 +15,8 @@ tags:
 
 **DIAGNOSIS:** Tardive Dyskinesia
 **ICD-10:** G24.01 (Drug-induced tardive dyskinesia); G24.02 (Drug-induced acute dystonia); G24.09 (Drug-induced dystonia, unspecified)
+
+**CPT CODES:** 80053 (CMP), 85025 (CBC with differential), 84443 (TSH), 82525 (24-hour urine copper), 82550 (CK), 80299 (Antipsychotic drug level), 81401 (Huntington disease genetic testing, HTT CAG repeats), 85060 (Acanthocyte smear), 86255 (Paraneoplastic antibody panel), 81479 (SLC6A3 genetic testing), 96127 (AIMS — Abnormal Involuntary Movement Scale), 70553 (MRI Brain), 78607 (DaTscan, ioflupane I-123), 78816 (PET scan, FDG or dopamine receptor imaging), 92012 (Slit lamp examination), 95886 (EMG)
 **SYNONYMS:** TD, tardive syndrome, tardive movement disorder, persistent tardive syndrome
 **SCOPE:** Diagnosis confirmation, severity assessment using AIMS, identification of causative agents, risk factor evaluation, FDA-approved VMAT2 inhibitor therapy, antipsychotic management strategies, prevention, and psychiatric coordination. Covers classic orofacial-lingual TD, tardive dystonia, tardive akathisia, and tardive stereotypy.
 

@@ -3,6 +3,13 @@ title: "Diabetic Neuropathy"
 description: "Clinical decision support for diabetic neuropathy diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - movement-disorders
+  - demyelinating
+  - infectious
+  - neuromuscular
 ---
 
 # Diabetic Neuropathy
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Diabetic Neuropathy
 
 **ICD-10:** E11.40 (Type 2 diabetes with diabetic neuropathy, unspecified), E11.41 (Type 2 diabetes with diabetic mononeuropathy), E11.42 (Type 2 diabetes with diabetic polyneuropathy), E10.40-E10.42 (Type 1 equivalents), G63.2 (Diabetic polyneuropathy), G62.9 (Polyneuropathy, unspecified)
+
+**CPT CODES:** 83036 (HbA1c), 82947 (Fasting glucose), 80048 (BMP), 85025 (CBC), 82607 (Vitamin B12), 83921 (Methylmalonic acid (MMA)), 84443 (TSH), 80061 (Lipid panel), 80076 (Liver function tests), 87389 (HIV), 86592 (RPR/VDRL), 85652 (ESR), 86235 (ANA), 95907-95913 (Nerve conduction studies (NCS)), 95886 (Electromyography (EMG)), 95924 (Cardiovascular autonomic reflex tests), 11104 (Skin punch biopsy (IENFD)), 72148 (MRI lumbosacral plexus), 72141 (MRI spine), 96365 (IVIG (severe/refractory)), 96374 (Methylprednisolone)
 
 **SYNONYMS:** Diabetic peripheral neuropathy, DPN, diabetic polyneuropathy, diabetic sensorimotor neuropathy, diabetic autonomic neuropathy, painful diabetic neuropathy, PDN, diabetic amyotrophy, diabetic lumbosacral radiculoplexus neuropathy, DLRPN, proximal diabetic neuropathy, diabetic nerve damage
 

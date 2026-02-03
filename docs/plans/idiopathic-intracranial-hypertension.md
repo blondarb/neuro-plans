@@ -3,6 +3,13 @@ title: "Idiopathic Intracranial Hypertension (IIH)"
 description: "Clinical decision support for idiopathic intracranial hypertension diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - cerebrovascular
+  - headache
+  - neurodegenerative
+  - demyelinating
+  - infectious
 ---
 
 # Idiopathic Intracranial Hypertension (IIH)
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Idiopathic Intracranial Hypertension
 
 **ICD-10:** G93.2 (Benign intracranial hypertension), G93.5 (Compression of brain)
+
+**CPT CODES:** 85025 (CBC), 80053 (CMP), 84443 (TSH), 84703 (Pregnancy test), 89051 (CSF cell count), 84157 (CSF protein), 82945 (CSF glucose), 88104 (Cytology), 70553 (MRI brain with and without contrast + MRV), 70450 (CT head (if MRI unavailable)), 92134 (Optical coherence tomography (OCT)), 92250 (Fundus photography), 62272 (Large-volume LP), 96374 (High-dose IV acetazolamide), 96365 (IV steroids (controversial))
 
 **SYNONYMS:** Idiopathic intracranial hypertension, IIH, pseudotumor cerebri, PTC, benign intracranial hypertension, BIH, primary intracranial hypertension
 

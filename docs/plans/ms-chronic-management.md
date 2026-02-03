@@ -3,6 +3,13 @@ title: "Multiple Sclerosis - Chronic Management"
 description: "Clinical decision support for multiple sclerosis - chronic management diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - headache
+  - neurodegenerative
+  - movement-disorders
+  - demyelinating
 ---
 
 # Multiple Sclerosis - Chronic Management
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Multiple Sclerosis - Chronic Management
 
 **ICD-10:** G35 (Multiple sclerosis)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP), 80076 (LFTs (AST, ALT, bilirubin)), 84443 (TSH), 81003 (Urinalysis), 82306 (Vitamin D (25-OH)), 80074 (Hepatitis B/C serology), 87389 (HIV), 87798 (JC virus antibody (anti-JCV)), 84703 (Pregnancy test), 70553 (MRI brain with and without contrast), 72156 (MRI cervical spine with and without contrast), 72157 (MRI thoracic spine (if indicated)), 92134 (OCT (optical coherence tomography)), 95930 (Evoked potentials (VEP, SSEP)), 96365 (Methylprednisolone IV), 36514 (Plasma exchange (PLEX))
 
 **SYNONYMS:** Multiple sclerosis, MS, relapsing-remitting MS, RRMS, secondary progressive MS, SPMS, primary progressive MS, PPMS, demyelinating disease, chronic MS management, MS disease-modifying therapy, disseminated sclerosis, CNS demyelination
 

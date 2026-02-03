@@ -3,19 +3,28 @@ title: "Spinal Epidural Abscess"
 description: "Clinical decision support for spinal epidural abscess (sea) diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
+status: approved
+tags:
+  - cerebrovascular
+  - demyelinating
+  - infectious
+  - neuromuscular
+  - neuro-oncology
 ---
 
 # Spinal Epidural Abscess
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Spinal Epidural Abscess (SEA)
 
 **ICD-10:** G06.1 (Intraspinal abscess and granuloma), G06.2 (Extradural and subdural abscess, unspecified), M46.40 (Discitis, unspecified site), M46.46 (Discitis, lumbar region), M46.47 (Discitis, lumbosacral region), A41.9 (Sepsis, unspecified organism)
+
+**CPT CODES:** 87040 (Blood cultures (x2 sets, before antibiotics)), 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 85652 (ESR (erythrocyte sedimentation rate)), 86140 (CRP (C-reactive protein)), 84145 (Procalcitonin), 83605 (Lactate), 86900 (Type and screen), 87389 (HIV antibody/antigen), 85379 (D-dimer), 85384 (Fibrinogen), 87116 (Acid-fast bacilli (AFB) smear and culture), 87102 (Fungal cultures), 93306 (Transthoracic echocardiogram (TTE)), 71046 (Chest X-ray), 78816 (PET/CT (FDG)), 96365 (Empiric IV antibiotics (STAT))
 
 **SYNONYMS:** Spinal epidural abscess, SEA, epidural abscess, spinal abscess, epidural infection, vertebral osteomyelitis, discitis, spondylodiscitis, spinal infection, back pain with fever, paraspinal abscess
 

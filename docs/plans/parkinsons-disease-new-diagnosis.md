@@ -3,6 +3,13 @@ title: "Parkinson's Disease - New Diagnosis"
 description: "Clinical decision support for parkinson's disease - new diagnosis diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - neurodegenerative
+  - movement-disorders
+  - infectious
+  - neuromuscular
 ---
 
 # Parkinson's Disease - New Diagnosis
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Parkinson's Disease - New Diagnosis
 
 **ICD-10:** G20 (Parkinson's disease), G20.A1 (Parkinson's disease without dyskinesia, without motor fluctuations), G20.A2 (Parkinson's disease without dyskinesia, with motor fluctuations), G20.B1 (Parkinson's disease with dyskinesia, without motor fluctuations), G20.B2 (Parkinson's disease with dyskinesia, with motor fluctuations), G20.C (Parkinsonism, unspecified)
+
+**CPT CODES:** 85025 (CBC), 80053 (CMP), 84443 (TSH), 82607 (Vitamin B12), 86592 (RPR/VDRL), 82390 (Serum ceruloplasmin), 87389 (HIV), 70551 (MRI brain without contrast), 70552 (MRI brain with contrast), 78830 (DaTscan), 78608 (FDG-PET brain), 95810 (Polysomnography)
 
 **SYNONYMS:** Parkinson disease, PD, idiopathic parkinsonism, paralysis agitans, shaking palsy, primary parkinsonism, Parkinson's, parkinsonism, tremor-dominant PD, PIGD
 

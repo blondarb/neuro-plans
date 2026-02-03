@@ -15,6 +15,8 @@ tags:
 
 **DIAGNOSIS:** Mild Cognitive Impairment (MCI)
 **ICD-10:** G31.84 (Mild cognitive impairment), F06.7 (Mild neurocognitive disorder), R41.81 (Age-related cognitive decline)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP), 84443 (TSH), 82607 (Vitamin B12), 82746 (Folate), 83036 (HbA1c), 80061 (Fasting lipid panel), 82947 (Glucose, fasting), 86592 (RPR), 87389 (HIV-1/2 antigen/antibody), 82306 (Vitamin D, 25-OH), 83090 (Homocysteine), 85652 (ESR), 81003 (Urinalysis), 83921 (Methylmalonic acid), 83655 (Heavy metal panel: lead), 82525 (Copper), 86255 (Paraneoplastic antibody panel), 86235 (Anti-neuronal antibodies: NMDA-R, LGI1, CASPR2, GABA-B), 81401 (APOE genotyping), 81406 (Genetic testing: PSEN1, PSEN2, APP), 86618 (Lyme serology), 70551 (MRI Brain without contrast), 96116 (Mini-Mental State Examination), 70450 (CT Head non-contrast), 78816 (FDG-PET Brain), 78811 (Amyloid PET), 95810 (Sleep study, polysomnography), 95816 (EEG), 78607 (DaTscan), 83519 (CSF Amyloid-beta 1-42)
 **SYNONYMS:** MCI, amnestic MCI, non-amnestic MCI, pre-dementia, prodromal Alzheimer's, early cognitive decline, age-associated memory impairment (AAMI), cognitive impairment not dementia (CIND), mild neurocognitive disorder
 **SCOPE:** Outpatient-focused evaluation for MCI, identification of reversible causes, subtype classification (amnestic vs non-amnestic), risk factor modification, monitoring for progression, and symptomatic treatment. Includes guidance on disease-modifying therapy eligibility (anti-amyloid agents) and advance care planning.
 

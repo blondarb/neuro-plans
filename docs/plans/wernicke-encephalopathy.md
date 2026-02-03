@@ -3,6 +3,13 @@ title: "Wernicke Encephalopathy"
 description: "Clinical decision support for wernicke encephalopathy diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - neurodegenerative
+  - movement-disorders
+  - infectious
 ---
 
 # Wernicke Encephalopathy
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Wernicke Encephalopathy
 
 **ICD-10:** E51.2 (Wernicke encephalopathy), E51.11 (Dry beriberi), F10.96 (Alcohol use, unspecified with alcohol-induced persisting amnestic disorder)
+
+**CPT CODES:** 82962 (Fingerstick glucose), 80048 (BMP), 83735 (Magnesium), 84100 (Phosphorus), 85025 (CBC), 80076 (LFTs, albumin), 82140 (Ammonia), 83605 (Lactate), 80320 (Blood alcohol level), 84425 (Thiamine level (whole blood or RBC transketolase)), 84443 (TSH), 80307 (Urine drug screen), 85610 (Coagulation studies (PT/INR)), 70551 (MRI brain with FLAIR/DWI), 70450 (CT head), 95816 (EEG), 62270 (Lumbar puncture), 96374 (Thiamine IV (high-dose) - Suspected/Confirmed WE)
 
 **SYNONYMS:** Wernicke encephalopathy, WE, Wernicke syndrome, Wernicke-Korsakoff syndrome, WKS, thiamine deficiency encephalopathy, Wernicke-Korsakoff, acute thiamine deficiency, alcohol-related brain damage, nutritional encephalopathy
 

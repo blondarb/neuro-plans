@@ -3,19 +3,28 @@ title: "Breakthrough Seizure (Known Epilepsy)"
 description: "Clinical decision support for breakthrough seizure in known epilepsy diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - neurodegenerative
+  - movement-disorders
 ---
 
 # Breakthrough Seizure (Known Epilepsy)
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Breakthrough Seizure in Known Epilepsy
 
 **ICD-10:** G40.909 (Epilepsy, unspecified, not intractable, without status epilepticus), G40.901 (Epilepsy, unspecified, not intractable, with status epilepticus), G40.919 (Epilepsy, unspecified, intractable, without status epilepticus), G40.911 (Epilepsy, unspecified, intractable, with status epilepticus), R56.9 (Unspecified convulsions), G40.309 (Generalized idiopathic epilepsy, not intractable, without status epilepticus), G40.209 (Localization-related epilepsy, not intractable, without status epilepticus)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 82947 (Blood glucose), 84295 (Sodium), 82330 (Calcium, ionized), 83735 (Magnesium), 81003 (Urinalysis), 80307 (Urine drug screen (UDS)), 80320 (Alcohol level), 84703 (Pregnancy test (β-hCG)), 82140 (Ammonia), 83605 (Lactate), 84443 (TSH), 82533 (Cortisol (AM)), 82607 (B12), 82306 (Vitamin D, 25-OH), 70450 (CT head without contrast), 70553 (MRI brain with and without contrast), 93000 (ECG (12-lead)), 95816 (EEG (routine/outpatient)), 95700 (Continuous EEG (cEEG) monitoring), 71046 (Chest X-ray), 96374 (Benzodiazepine (if actively seizing))
 
 **SYNONYMS:** Breakthrough seizure, seizure in known epilepsy, recurrent seizure, uncontrolled seizure, epilepsy exacerbation, seizure on medications, drug-resistant epilepsy, refractory epilepsy, seizure despite treatment, BTS, non-adherence seizure, subtherapeutic seizure, epilepsy flare, seizure cluster, catamenial seizure, seizure recurrence, poorly controlled epilepsy, intractable epilepsy, pharmacoresistant epilepsy, DRE
 

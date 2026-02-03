@@ -3,19 +3,28 @@ title: "Transient Ischemic Attack (TIA)"
 description: "Clinical decision support for transient ischemic attack (tia) diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - movement-disorders
+  - demyelinating
 ---
 
 # Transient Ischemic Attack (TIA)
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Transient Ischemic Attack (TIA)
 
 **ICD-10:** G45.9 (Transient cerebral ischemic attack, unspecified), G45.0 (Vertebro-basilar artery syndrome), G45.1 (Carotid artery syndrome), G45.8 (Other transient cerebral ischemic attacks and related syndromes)
+
+**CPT CODES:** 82962 (Point-of-care glucose), 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 85610 (PT/INR), 80061 (Lipid panel (fasting or non-fasting)), 83036 (HbA1c), 84484 (Troponin), 82947 (Blood glucose (fasting)), 84443 (TSH), 85652 (ESR), 83090 (Homocysteine), 80307 (Urine drug screen), 86592 (RPR/VDRL), 87389 (HIV 1/2 antigen/antibody), 84703 (Pregnancy test (β-hCG)), 83735 (Magnesium), 86235 (ANA), 70553 (MRI brain with DWI), 70450 (CT head without contrast), 93000 (ECG (12-lead)), 93228 (Continuous cardiac monitoring (telemetry)), 93306 (Transthoracic echocardiogram (TTE)), 93312 (Transesophageal echocardiogram (TEE)), 93880 (Carotid duplex ultrasound), 93886 (Transcranial Doppler (TCD)), 36224 (Conventional cerebral angiography (DSA))
 
 **SYNONYMS:** Transient ischemic attack, TIA, mini-stroke, warning stroke, transient stroke, pre-stroke, temporary stroke symptoms, reversible ischemic neurological deficit
 

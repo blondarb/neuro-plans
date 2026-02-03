@@ -3,6 +3,13 @@ title: "Essential Tremor"
 description: "Clinical decision support for essential tremor diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - neurodegenerative
+  - movement-disorders
+  - neuromuscular
+  - autoimmune
+  - neuro-otology
 ---
 
 # Essential Tremor
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Essential Tremor
 
 **ICD-10:** G25.0 (Essential tremor), G25.1 (Drug-induced tremor), G25.2 (Other specified forms of tremor), G25.9 (Extrapyramidal and movement disorder, unspecified)
+
+**CPT CODES:** 84443 (TSH), 84439 (Free T4), 80053 (CMP), 82947 (Glucose), 82390 (Serum ceruloplasmin), 80076 (Liver function tests), 82607 (Vitamin B12), 70551 (MRI brain without contrast), 78830 (DaTscan), 95885 (EMG)
 
 **SYNONYMS:** Essential tremor, ET, benign essential tremor, familial tremor, hereditary tremor, action tremor, postural tremor, kinetic tremor, senile tremor, benign tremor
 

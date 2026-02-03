@@ -3,6 +3,13 @@ title: "Restless Legs Syndrome"
 description: "Clinical decision support for restless legs syndrome (rls) / willis-ekbom disease diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - movement-disorders
+  - neuromuscular
+  - autoimmune
+  - spine
+  - neuro-otology
 ---
 
 # Restless Legs Syndrome
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Restless Legs Syndrome (RLS) / Willis-Ekbom Disease
 
 **ICD-10:** G25.81 (Restless legs syndrome), G25.89 (Other specified extrapyramidal and movement disorders), G47.61 (Periodic limb movement disorder)
+
+**CPT CODES:** 82728 (Serum ferritin), 83540 (Serum iron), 83550 (TIBC), 84466 (Transferrin saturation), 85025 (CBC), 80053 (CMP), 84443 (TSH), 82947 (Glucose), 82607 (Vitamin B12), 82746 (Folate), 83735 (Magnesium), 95907-95913 (Nerve conduction studies), 86235 (ANA), 95810 (Polysomnography (PSG)), 72141 (MRI spine), 96365 (IV iron (ferric carboxymaltose))
 
 **SYNONYMS:** Restless legs syndrome, RLS, Willis-Ekbom disease, WED, restless leg syndrome, Ekbom syndrome, anxietas tibiarum, leg jitters, nocturnal leg cramps (often confused with), periodic limb movement disorder, PLMD, akathisia (related)
 

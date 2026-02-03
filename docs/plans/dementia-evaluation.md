@@ -3,6 +3,13 @@ title: "Dementia Evaluation"
 description: "Clinical decision support for dementia evaluation / cognitive impairment workup diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - neurodegenerative
+  - movement-disorders
 ---
 
 # Dementia Evaluation
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Dementia Evaluation / Cognitive Impairment Workup
 
 **ICD-10:** R41.81 (Age-related cognitive decline), F03.90 (Unspecified dementia without behavioral disturbance), G30.9 (Alzheimer's disease, unspecified), F01.50 (Vascular dementia without behavioral disturbance), G31.83 (Dementia with Lewy bodies), G31.09 (Other frontotemporal dementia), G31.84 (Mild cognitive impairment)
+
+**CPT CODES:** 85025 (CBC), 80053 (CMP), 84443 (TSH), 82607 (Vitamin B12), 82746 (Folate), 81003 (Urinalysis), 86592 (RPR/VDRL), 87389 (HIV), 84425 (Thiamine (Vitamin B1)), 82306 (Vitamin D), 83090 (Homocysteine), 83036 (HbA1c), 80061 (Lipid panel), 85652 (ESR), 86235 (ANA), 82390 (Serum ceruloplasmin), 83655 (Heavy metals: lead), 89051 (Cell count (tubes 1 and 4)), 84157 (Protein), 82945 (Glucose), 83519 (Aβ42, total tau, phospho-tau), 83916 (Oligoclonal bands), 70551 (MRI brain without contrast), 70450 (CT head without contrast), 70552 (MRI brain with contrast), 78608 (FDG-PET brain), 78811 (Amyloid PET), 78830 (DaTscan), 95816 (EEG), 95810 (Polysomnography), 96116 (Bedside cognitive screen (MoCA, MMSE)), 96132 (Formal neuropsychological testing), 96374 (Thiamine (Wernicke-Korsakoff)), 96365 (Lecanemab (Leqembi))
 
 **SYNONYMS:** Dementia, cognitive impairment, memory loss, cognitive decline, major neurocognitive disorder, mild neurocognitive disorder, senility, organic brain syndrome, dementia workup, neurodegenerative disease, Alzheimer's, AD
 

@@ -3,19 +3,28 @@ title: "Brain Metastases"
 description: "Clinical decision support for brain metastases diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - neurodegenerative
+  - demyelinating
 ---
 
 # Brain Metastases
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Brain Metastases
 
 **ICD-10:** C79.31 (Secondary malignant neoplasm of brain), C79.32 (Secondary malignant neoplasm of cerebral meninges), C79.49 (Secondary malignant neoplasm of other parts of nervous system), G93.6 (Cerebral edema due to neoplasm)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 82947 (Blood glucose), 84484 (Troponin), 84703 (Pregnancy test (β-hCG)), 83615 (LDH), 87389 (HIV, hepatitis B/C), 82533 (Cortisol (AM)), 88104 (CSF cytology / flow cytometry), 70450 (CT head without contrast), 70553 (MRI brain with and without contrast (gadolinium)), 93000 (ECG (12-lead)), 71046 (Chest X-ray), 78816 (PET/CT (FDG)), 70496 (CT angiography (head)), 62270 (LP), 96374 (Dexamethasone (vasogenic edema))
 
 **SYNONYMS:** Brain metastases, brain mets, cerebral metastases, brain metastasis, metastatic brain tumor, secondary brain tumor, secondary brain cancer, metastatic brain disease, brain tumor from cancer, metastatic disease to brain, brain lesions, CNS metastases
 

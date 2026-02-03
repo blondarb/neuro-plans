@@ -3,19 +3,28 @@ title: "HSV Encephalitis"
 description: "Clinical decision support for herpes simplex virus encephalitis diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - neurodegenerative
+  - movement-disorders
 ---
 
 # HSV Encephalitis
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Herpes Simplex Virus Encephalitis
 
 **ICD-10:** B00.4 (Herpesviral encephalitis), G05.1 (Encephalitis in diseases classified elsewhere)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 87040 (Blood cultures x2), 82947 (Blood glucose (paired with CSF)), 84145 (Procalcitonin), 86140 (CRP), 83930 (Serum osmolality), 86900 (Type and screen), 84443 (TSH), 82140 (Ammonia), 84484 (Troponin), 80307 (Toxicology screen (urine)), 80320 (Blood alcohol level), 86255 (Autoimmune encephalitis panel (serum) — NMDAR, LGI1, CASPR2), 70450 (CT head without contrast), 70553 (MRI brain with and without contrast), 95816 (EEG (routine or continuous)), 93000 (ECG (12-lead)), 95700 (Continuous EEG (cEEG) monitoring), 71046 (Chest X-ray), 78816 (PET-CT brain), 89051 (Cell count with differential (tubes 1 and 4)), 84157 (Protein), 82945 (Glucose with paired serum), 87529 (HSV-1/2 PCR (CSF)), 87483 (BioFire FilmArray ME Panel), 83916 (Oligoclonal bands, IgG index), 88104 (Cytology), 87116 (AFB smear and culture), 86592 (VDRL (CSF)), 96365 (Acyclovir IV)
 
 **SYNONYMS:** HSV encephalitis, HSE, herpes encephalitis, herpes simplex encephalitis, viral encephalitis, limbic encephalitis, temporal lobe encephalitis, brain infection, encephalitis
 

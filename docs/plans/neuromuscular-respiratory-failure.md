@@ -3,19 +3,28 @@ title: "Neuromuscular Respiratory Failure"
 description: "Clinical decision support for neuromuscular respiratory failure diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - demyelinating
+  - infectious
 ---
 
 # Neuromuscular Respiratory Failure
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Neuromuscular Respiratory Failure
 
 **ICD-10:** G70.00 (Myasthenia gravis without exacerbation), G70.01 (Myasthenia gravis with exacerbation), G61.0 (Guillain-Barré syndrome), J96.00 (Acute respiratory failure, unspecified hypoxia/hypercapnia), G71.0 (Muscular dystrophy), G12.21 (Amyotrophic lateral sclerosis)
+
+**CPT CODES:** 82803 (Arterial blood gas (ABG)), 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 83735 (Magnesium), 84100 (Phosphorus), 82330 (Calcium (ionized)), 86235 (Acetylcholine receptor (AChR) antibodies), 84443 (TSH), 84145 (Procalcitonin), 86255 (Anti-ganglioside antibodies (GM1, GD1a, GD1b, GQ1b)), 95937 (Repetitive nerve stimulation (RNS)), 95872 (Single-fiber EMG (SFEMG)), 95907-95913 (Nerve conduction studies), 71260 (CT chest (with contrast)), 71046 (Chest X-ray), 94010 (Bedside spirometry (FVC)), 94799 (Negative inspiratory force (NIF/MIP)), 93000 (ECG (12-lead)), 93306 (Echocardiogram), 78816 (PET/CT), 62270 (LP), 96365 (IVIG (Intravenous Immunoglobulin)), 36514 (Plasma exchange (PLEX))
 
 **SYNONYMS:** Neuromuscular respiratory failure, NMRF, respiratory failure from weakness, GBS respiratory failure, myasthenic respiratory failure, NIF less than 20, FVC less than 20, impending respiratory failure, neuromuscular ventilatory failure, ventilatory failure, diaphragmatic weakness
 

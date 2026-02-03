@@ -3,19 +3,28 @@ title: "Elevated Intracranial Pressure Management"
 description: "Clinical decision support for elevated intracranial pressure (icp) / intracranial hypertension diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - neurodegenerative
+  - infectious
 ---
 
 # Elevated Intracranial Pressure Management
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Elevated Intracranial Pressure (ICP) / Intracranial Hypertension
 
 **ICD-10:** G93.2 (Benign intracranial hypertension [IIH]), G93.5 (Compression of brain), G93.6 (Cerebral edema), G91.1 (Obstructive hydrocephalus), G91.2 (Normal pressure hydrocephalus), S06.1X (Traumatic cerebral edema)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 82947 (Blood glucose), 85610 (PT/INR), 83930 (Serum osmolality), 82803 (Arterial blood gas (ABG)), 83605 (Lactate), 86900 (Type and screen), 84484 (Troponin), 82533 (Cortisol (AM, random)), 84443 (TSH), 82140 (Ammonia), 80307 (Toxicology screen), 70450 (CT head without contrast), 70496 (CT angiography (CTA) head), 70553 (MRI brain with and without contrast), 71046 (Chest X-ray), 93886 (Transcranial Doppler (TCD)), 95700 (Continuous EEG monitoring), 62270 (LP with opening pressure)
 
 **SYNONYMS:** Elevated intracranial pressure, elevated ICP, intracranial hypertension, raised ICP, high ICP, cerebral edema, brain swelling, herniation syndrome, increased intracranial pressure, ICP crisis
 

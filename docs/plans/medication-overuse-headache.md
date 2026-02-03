@@ -3,6 +3,13 @@ title: "Medication Overuse Headache"
 description: "Clinical decision support for medication overuse headache (moh) diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - headache
+  - neurodegenerative
+  - neuromuscular
+  - neuro-oncology
+  - autoimmune
 ---
 
 # Medication Overuse Headache
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Medication Overuse Headache (MOH)
 
 **ICD-10:** G44.40 (Drug-induced headache, not elsewhere classified, not intractable), G44.41 (Drug-induced headache, not elsewhere classified, intractable)
+
+**CPT CODES:** 85025 (CBC), 80053 (CMP), 84443 (TSH), 80076 (LFTs), 82565 (BUN/Creatinine), 85652 (ESR), 80307 (Urine drug screen), 70551 (MRI brain without contrast), 70552 (MRI brain with contrast), 96365 (IV DHE protocol), 96374 (IV ketorolac), J0585 (OnabotulinumtoxinA)
 
 **SYNONYMS:** Medication overuse headache, MOH, rebound headache, analgesic overuse headache, drug-induced headache, medication-induced headache, chronic daily headache from medication overuse, transformed migraine, analgesic rebound headache, triptan overuse headache, opioid overuse headache, ergotamine overuse headache, butalbital overuse headache, painkiller headache, medication misuse headache, CDH, chronic daily headache
 

@@ -16,6 +16,8 @@ tags:
 
 **DIAGNOSIS:** Dementia with Lewy Bodies (DLB)
 **ICD-10:** G31.83 (Dementia with Lewy bodies); F02.80 (Dementia in DLB without behavioral disturbance); F02.81 (Dementia in DLB with behavioral disturbance)
+
+**CPT CODES:** 85025 (CBC with differential), 80048 (BMP), 84443 (TSH), 82607 (Vitamin B12), 82746 (Folate), 82947 (Glucose (fasting)), 80076 (Hepatic panel (LFTs)), 81001 (Urinalysis), 82306 (Vitamin D, 25-hydroxy), 83036 (Hemoglobin A1c), 80061 (Lipid panel), 86592 (RPR or VDRL), 87389 (HIV testing), 85651 (ESR), 82533 (Cortisol (AM)), 83519 (CSF alpha-synuclein seed amplification assay (SAA)), 88305 (Skin biopsy for phosphorylated alpha-synuclein), 81479 (Genetic testing (GBA, SNCA)), 86235 (Paraneoplastic antibody panel), 86255 (Anti-neuronal antibodies (NMDA-R, LGI1, CASPR2)), 70551 (MRI Brain without contrast), 70450 (CT Head non-contrast), 78607 (DaTscan (ioflupane I-123 SPECT)), 78452 (Cardiac MIBG scintigraphy), 78816 (FDG-PET Brain), 95810 (Polysomnography), 95819 (EEG), 95923 (Autonomic function testing), 70553 (MRI with SWI)
 **SYNONYMS:** DLB, Lewy body disease, diffuse Lewy body disease, cortical Lewy body disease, Lewy body dementia, LBD, dementia with Lewy bodies, Parkinson's disease dementia, PDD, Lewy body variant of Alzheimer's disease
 **SCOPE:** Diagnosis based on McKeith criteria (2017), biomarker-supported diagnosis (DaTscan, MIBG), symptomatic management of cognitive, motor, behavioral, and autonomic symptoms. Emphasizes neuroleptic sensitivity and safe treatment approaches. Covers both pure DLB and Parkinson's disease dementia (PDD) overlap.
 

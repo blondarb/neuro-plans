@@ -15,6 +15,8 @@ tags:
 
 **DIAGNOSIS:** Tension-Type Headache
 **ICD-10:** G44.209 (Tension-type headache, unspecified, not intractable); G44.219 (Episodic tension-type headache, not intractable); G44.221 (Chronic tension-type headache, not intractable)
+
+**CPT CODES:** 85025 (CBC), 80048 (BMP), 84443 (TSH), 82306 (Vitamin D), 82728 (Ferritin), 83735 (Magnesium, RBC), 86038 (ANA), 95811 (Sleep study), 86618 (Lyme serology), 70551 (MRI Brain without contrast), 70450 (CT Head non-contrast), 70553 (MRI Brain with contrast), 70546 (MRV Brain), 62270 (LP with opening pressure)
 **SYNONYMS:** TTH; Tension headache; Muscle contraction headache; Stress headache; Chronic tension-type headache; Episodic tension-type headache
 **SCOPE:** Episodic and chronic tension-type headache diagnosis, acute treatment, and preventive therapy. Excludes secondary headaches, medication overuse headache (separate protocol), and trigeminal autonomic cephalalgias.
 

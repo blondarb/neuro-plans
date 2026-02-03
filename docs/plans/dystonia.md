@@ -15,6 +15,8 @@ tags:
 
 **DIAGNOSIS:** Dystonia
 **ICD-10:** G24.9 (Dystonia, unspecified); G24.1 (Genetic torsion dystonia); G24.2 (Idiopathic nonfamilial dystonia); G24.3 (Spasmodic torticollis); G24.5 (Blepharospasm); G24.8 (Other dystonia)
+
+**CPT CODES:** 85025 (CBC with differential), 80048 (BMP), 80076 (Hepatic panel (AST, ALT, Alk Phos, bilirubin, albumin)), 82390 (Ceruloplasmin), 84443 (TSH), 82525 (24-hour urine copper), 82607 (Vitamin B12), 82728 (Ferritin), 84550 (Uric acid), 83605 (Lactate), 82310 (Calcium), 82550 (CK), 81479 (ATP7B gene sequencing), 83519 (CSF neurotransmitter metabolites (HVA, 5-HIAA, pterins)), 85060 (Acanthocyte smear), 82657 (Lysosomal enzyme panel), 86255 (Anti-neuronal antibodies (NMDAR, LGI1, CASPR2)), 86235 (Paraneoplastic antibody panel), 70553 (MRI Brain without and with contrast), 92012 (Slit lamp examination by ophthalmology), 95907-95913 (EMG with dystonia protocol), 78607 (DaTscan (ioflupane I-123)), 72156 (MRI Spine (cervical/thoracic)), 78816 (FDG-PET Brain)
 **SYNONYMS:** Torsion dystonia, spasmodic torticollis, cervical dystonia, blepharospasm, writer's cramp, Meige syndrome, DYT1 dystonia, dopa-responsive dystonia, Segawa disease, focal dystonia, generalized dystonia, segmental dystonia, hemidystonia, task-specific dystonia, musician's dystonia
 **SCOPE:** Diagnosis, classification, workup for secondary causes, and symptomatic management of dystonia. Covers focal (cervical, blepharospasm, writer's cramp), segmental, and generalized forms. Includes evaluation for Wilson's disease, dopa-responsive dystonia, and drug-induced dystonia.
 

@@ -24,6 +24,8 @@ tags:
 
 **ICD-10:** G56.00 (Carpal tunnel syndrome, unspecified upper limb); G56.01 (Carpal tunnel syndrome, right upper limb); G56.02 (Carpal tunnel syndrome, left upper limb); G56.03 (Carpal tunnel syndrome, bilateral upper limbs)
 
+**CPT CODES:** 82947 (Fasting glucose), 83036 (HbA1c), 84443 (TSH), 86431 (Rheumatoid factor), 86200 (Anti-CCP antibody), 85652 (ESR), 86140 (CRP), 84550 (Uric acid), 85025 (CBC), 82607 (Vitamin B12), 86335 (Serum protein electrophoresis (SPEP)), 83883 (Free light chains (kappa/lambda)), 81404 (TTR gene testing), 88305 (Fat pad biopsy), 95907-95909 (Nerve conduction studies (NCS)), 73110 (Wrist X-ray), 76882 (Wrist/carpal tunnel ultrasound), 73221 (MRI wrist without contrast), 72156 (MRI cervical spine with and without contrast), 73200 (CT wrist), 73222 (MRI with contrast)
+
 **CLINICAL SYNONYMS:** CTS, median neuropathy at wrist, median nerve compression, carpal tunnel entrapment, median nerve entrapment neuropathy, wrist compression syndrome, occupational hand numbness
 
 **SCOPE:** Evaluation and management of carpal tunnel syndrome from initial presentation through conservative treatment, injection therapy, and surgical referral. Covers clinical diagnosis, electrodiagnostic testing, severity grading, and treatment options. For acute median nerve injury or severe CTS with thenar atrophy, early surgical referral is indicated.

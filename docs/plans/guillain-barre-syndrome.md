@@ -3,19 +3,28 @@ title: "Guillain-Barré Syndrome (GBS)"
 description: "Clinical decision support for guillain-barré syndrome (gbs) diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - headache
+  - movement-disorders
+  - demyelinating
+  - infectious
 ---
 
 # Guillain-Barré Syndrome (GBS)
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Guillain-Barré Syndrome (GBS)
 
 **ICD-10:** G61.0 (Guillain-Barré syndrome)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 83735 (Magnesium), 84100 (Phosphorus), 85652 (ESR), 82947 (Blood glucose), 81003 (Urinalysis), 85610 (PT/INR), 86900 (Type and screen), 86255 (Anti-ganglioside antibodies (GM1, GD1a, GD1b, GQ1b)), 80074 (Hepatitis B surface antigen, anti-HBc), 87389 (HIV 1/2 antigen/antibody), 84443 (TSH), 82607 (B12), 86334 (Serum protein electrophoresis (SPEP) with immunofixation), 72156 (MRI spine with and without contrast (whole spine)), 95907-95913 (Nerve conduction studies), 71046 (Chest X-ray), 93000 (ECG (12-lead)), 70553 (MRI brain with and without contrast), 71260 (CT chest with contrast), 93306 (Echocardiogram), 94010 (Pulmonary function testing (formal)), 89051 (Cell count (tubes 1 and 4)), 84157 (Protein), 82945 (Glucose with serum glucose), 88104 (Cytology), 86592 (VDRL (CSF)), 83916 (Oligoclonal bands), 96365 (IVIG (intravenous immunoglobulin)), 36514 (Plasmapheresis (PLEX))
 
 **SYNONYMS:** Guillain-Barré syndrome, GBS, acute inflammatory demyelinating polyneuropathy, AIDP, acute motor axonal neuropathy, AMAN, acute motor-sensory axonal neuropathy, AMSAN, ascending paralysis, Landry's paralysis, post-infectious polyneuropathy
 

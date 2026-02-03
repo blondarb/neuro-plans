@@ -3,19 +3,28 @@ title: "Subarachnoid Hemorrhage"
 description: "Clinical decision support for subarachnoid hemorrhage (sah) diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - neurodegenerative
+  - infectious
 ---
 
 # Subarachnoid Hemorrhage
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Subarachnoid Hemorrhage (SAH)
 
 **ICD-10:** I60.9 (Nontraumatic subarachnoid hemorrhage, unspecified), I60.7 (SAH from unspecified intracranial artery), I60.0-I60.6 (SAH from specific arteries)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 85610 (PT/INR), 85384 (Fibrinogen), 86900 (Type and crossmatch), 84484 (Troponin), 83880 (BNP or NT-proBNP), 82947 (Blood glucose), 83735 (Magnesium), 82330 (Calcium, ionized), 84100 (Phosphorus), 83605 (Lactate), 84703 (Pregnancy test (β-hCG)), 83930 (Serum osmolality), 84443 (TSH), 82533 (Cortisol (AM)), 80061 (Lipid panel), 83036 (HbA1c), 87040 (Blood cultures), 84145 (Procalcitonin), 80307 (Toxicology (cocaine, amphetamines)), 70450 (CT head without contrast), 70496 (CT angiography (CTA) head), 93000 (ECG (12-lead)), 36224 (Conventional cerebral angiography (DSA)), 93886 (Transcranial Doppler (TCD)), 93306 (Echocardiogram (TTE)), 95700 (Continuous EEG (cEEG)), 71046 (Chest X-ray), 62270 (LUMBAR PUNCTURE Indication: CT-negative suspected SAH...), 96365 (Blood pressure control: Nicardipine IV), 96374 (Blood pressure control: Labetalol IV)
 
 **SYNONYMS:** Subarachnoid hemorrhage, SAH, ruptured aneurysm, aneurysmal SAH, aSAH, subarachnoid bleed, thunderclap headache, worst headache of life, brain aneurysm rupture, bleeding around brain
 

@@ -3,6 +3,13 @@ title: "Myasthenia Gravis - New Diagnosis"
 description: "Clinical decision support for myasthenia gravis - new diagnosis diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - movement-disorders
+  - demyelinating
 ---
 
 # Myasthenia Gravis - New Diagnosis
@@ -17,6 +24,8 @@ setting: "HOSP, OPD, ICU"
 **DIAGNOSIS:** Myasthenia Gravis - New Diagnosis
 
 **ICD-10:** G70.0 (Myasthenia gravis), G70.00 (MG without exacerbation), G70.01 (MG with exacerbation)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP), 84443 (TSH), 84439 (Free T4), 85652 (ESR), 86140 (CRP), 86235 (AChR binding antibody), 82947 (Blood glucose), 83036 (HbA1c), 81003 (Urinalysis), 83735 (Magnesium), 84100 (Phosphorus), 85610 (PT/INR), 80074 (Hepatitis B surface antigen), 82306 (Vitamin D (25-OH)), 87389 (HIV), 86334 (SPEP with immunofixation), 71260 (CT chest with contrast), 71046 (Chest X-ray (PA and lateral)), 95937 (Repetitive nerve stimulation (RNS)), 95872 (Single-fiber EMG (SFEMG)), 96365 (Methylprednisolone IV (pulse therapy)), 36514 (Plasmapheresis (PLEX) - rescue)
 
 **SYNONYMS:** Myasthenia gravis, MG, new MG diagnosis, ocular myasthenia, generalized myasthenia, anti-AChR MG, anti-MuSK MG, seronegative MG, autoimmune neuromuscular junction disorder, fatigable weakness
 

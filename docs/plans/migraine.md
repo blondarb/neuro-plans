@@ -3,6 +3,13 @@ title: "Migraine"
 description: "Clinical decision support for migraine / status migrainosus diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - neurodegenerative
+  - movement-disorders
 ---
 
 # Migraine
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Migraine / Status Migrainosus
 
 **ICD-10:** G43.909 (Migraine, unspecified, not intractable), G43.919 (Migraine, unspecified, intractable), G43.901 (Migraine, unspecified, not intractable, with status migrainosus), G43.911 (Migraine, unspecified, intractable, with status migrainosus), G43.109 (Migraine with aura, not intractable), G43.709 (Chronic migraine without aura, not intractable)
+
+**CPT CODES:** 85025 (CBC), 80053 (CMP), 84703 (hCG (women of childbearing age)), 84443 (TSH), 83735 (Magnesium), 85652 (ESR), 82306 (Vitamin D), 82728 (Ferritin), 83090 (Homocysteine), 86235 (Autoimmune panel (ANA), 70450 (CT head without contrast), 70551 (MRI brain without contrast), 70553 (MRI brain with and without contrast), 70544 (MRA head), 93000 (ECG), 62270 (LUMBAR PUNCTURE), 89051 (Cell count (tubes 1 and 4)), 84157 (Protein), 82945 (Glucose), 87483 (CSF meningitis panel), 96374 (Prochlorperazine IV), 96365 (Magnesium sulfate IV), J0585 (OnabotulinumtoxinA (Botox))
 
 **SYNONYMS:** Migraine headache, migraine with aura, migraine without aura, classic migraine, common migraine, status migrainosus, intractable migraine, refractory migraine, chronic migraine, menstrual migraine, vestibular migraine, hemiplegic migraine, retinal migraine, basilar migraine, migraine with brainstem aura, acephalgic migraine, silent migraine, ocular migraine, ophthalmic migraine, hormonal migraine, catamenial migraine, episodic migraine, transformed migraine, complicated migraine, severe headache, sick headache, vascular headache
 

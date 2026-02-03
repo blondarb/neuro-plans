@@ -24,6 +24,8 @@ tags:
 
 **ICD-10:** G43.901 (Migraine, unspecified, not intractable, with status migrainosus), G43.911 (Migraine, unspecified, intractable, with status migrainosus), G43.919 (Migraine, unspecified, intractable, without status migrainosus)
 
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP), 83735 (Magnesium), 84703 (Pregnancy test (hCG, women of childbearing age)), 84443 (TSH), 85652 (ESR), 82306 (Vitamin D), 82728 (Ferritin), 80076 (LFTs (AST, ALT, Alk Phos)), 82140 (Ammonia), 82803 (Blood gas (VBG)), 80307 (Urine drug screen), 87040 (Blood cultures), 86235 (Autoimmune panel (ANA), 83605 (Lactate), 83090 (Homocysteine), 70450 (CT head without contrast), 93000 (ECG), 70551 (MRI brain without contrast), 70553 (MRI brain with and without contrast), 70544 (MRA head), 62270 (LUMBAR PUNCTURE), 89051 (Cell count (tubes 1 and 4)), 84157 (Protein), 82945 (Glucose with serum glucose)
+
 **SYNONYMS:** Status migrainosus, intractable migraine, refractory migraine, prolonged migraine, migraine lasting more than 72 hours, severe intractable migraine, persistent migraine, unrelenting migraine, migraine emergency, debilitating migraine, migraine requiring hospitalization, migraine headache emergency, protracted migraine, treatment-resistant migraine attack, migraine not responding to treatment
 
 **SCOPE:** Evaluation and management of status migrainosus (debilitating migraine lasting >72 hours), including acute abortive therapy, rescue protocols, and prevention of recurrence. Excludes routine migraine management, chronic migraine prophylaxis initiation, cluster headache, and secondary headache disorders.

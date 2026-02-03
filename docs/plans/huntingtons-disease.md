@@ -16,6 +16,8 @@ tags:
 
 **DIAGNOSIS:** Huntington's Disease
 **ICD-10:** G10 (Huntington disease); F02.80 (Dementia in HD without behavioral disturbance); F02.81 (Dementia in HD with behavioral disturbance)
+
+**CPT CODES:** 81401 (Huntington gene test (HTT CAG repeat)), 85025 (CBC), 80048 (BMP), 80076 (Hepatic panel (LFTs)), 84443 (TSH), 82607 (Vitamin B12), 82306 (Vitamin D, 25-hydroxy), 83540 (Iron studies), 82390 (Ceruloplasmin), 81479 (ACTN3 gene test), 85060 (Acanthocyte screen (peripheral smear)), 80061 (Lipid panel), 84134 (Prealbumin), 83519 (CSF biomarkers (neurofilament light chain)), 82542 (Kynurenine pathway metabolites), 70551 (MRI Brain without contrast), 70553 (MRI Brain volumetric), 93000 (ECG), 95810 (Polysomnography), 78816 (PET imaging (FDG or specific tracers)), 96132 (Neuropsychological testing battery)
 **SYNONYMS:** Huntington's chorea, Huntington chorea, HD, hereditary chorea, chronic progressive chorea, Huntington disease, HTT-related disorder
 **SCOPE:** Diagnosis confirmation via genetic testing, chorea management, psychiatric symptom treatment, cognitive decline management, dysphagia assessment, genetic counseling, and end-of-life planning. Focuses primarily on outpatient management. Excludes Huntington disease-like syndromes (HDL1-4) and other chorea etiologies.
 

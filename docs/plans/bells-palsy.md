@@ -3,6 +3,13 @@ title: "Bell's Palsy"
 description: "Clinical decision support for bell's palsy / idiopathic facial paralysis diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - cerebrovascular
+  - demyelinating
+  - infectious
+  - neuromuscular
+  - neuro-oncology
 ---
 
 # Bell's Palsy
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Bell's Palsy / Idiopathic Facial Paralysis
 
 **ICD-10:** G51.0 (Bell's palsy), G51.8 (Other disorders of facial nerve), G51.9 (Disorder of facial nerve, unspecified), B02.21 (Postherpetic geniculate ganglionitis - Ramsay Hunt)
+
+**CPT CODES:** 85025 (CBC), 80053 (CMP), 82947 (Glucose), 86618 (Lyme serology), 85652 (ESR), 87389 (HIV), 86592 (RPR/VDRL), 86235 (ANA), 82164 (ACE level), 62270 (CSF analysis (LP)), 70553 (MRI brain with IAC protocol), 70552 (MRI with contrast), 70480 (CT temporal bone), 71046 (Chest X-ray), 95885 (Electrodiagnostic studies (ENoG, EMG)), 96374 (Methylprednisolone IV), 96365 (Acyclovir IV (severe Ramsay Hunt))
 
 **SYNONYMS:** Bell's palsy, Bell palsy, idiopathic facial paralysis, facial palsy, facial nerve palsy, acute peripheral facial palsy, seventh nerve palsy, CN VII palsy, facial weakness, facial droop, facial paralysis
 

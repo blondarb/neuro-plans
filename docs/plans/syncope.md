@@ -3,6 +3,13 @@ title: "Syncope Evaluation"
 description: "Clinical decision support for syncope diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - movement-disorders
+  - neuromuscular
+  - neuro-oncology
 ---
 
 # Syncope Evaluation
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Syncope
 
 **ICD-10:** R55 (Syncope and collapse), T67.1 (Heat syncope), G90.01 (Carotid sinus syncope), I95.1 (Orthostatic hypotension)
+
+**CPT CODES:** 82962 (Fingerstick glucose), 85025 (CBC), 80048 (BMP), 84484 (Troponin), 83880 (BNP or NT-proBNP), 84443 (TSH), 82533 (Cortisol), 85379 (D-dimer), 87040 (Blood cultures), 93000 (12-lead ECG), 93306 (Transthoracic echocardiogram), 93224 (Holter monitor), 93268 (Event recorder), 95924 (Tilt table test), 70450 (CT head), 70551 (MRI brain), 95816 (EEG)
 
 **SYNONYMS:** Syncope, fainting, loss of consciousness, LOC, passing out, blackout, vasovagal syncope, neurocardiogenic syncope, reflex syncope, orthostatic syncope, cardiac syncope, convulsive syncope, presyncope, near-syncope, near syncope, TLOC, transient loss of consciousness
 

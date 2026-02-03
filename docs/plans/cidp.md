@@ -3,6 +3,13 @@ title: "Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)"
 description: "Clinical decision support for chronic inflammatory demyelinating polyneuropathy (cidp) diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - headache
+  - demyelinating
+  - infectious
+  - neuromuscular
+  - neuro-oncology
 ---
 
 # Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)
 
 **ICD-10:** G61.81 (Chronic inflammatory demyelinating polyneuritis), G61.89 (Other inflammatory polyneuropathies), G61.9 (Inflammatory polyneuropathy, unspecified)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP), 83036 (HbA1c), 84443 (TSH), 82607 (Vitamin B12), 86334 (Serum protein electrophoresis (SPEP)), 87389 (HIV), 80074 (Hepatitis B/C), 86235 (ANA), 86255 (Anti-MAG antibody), 86335 (Urine protein electrophoresis (UPEP)), 89051 (Cell count (tubes 1 and 4)), 84157 (Protein), 82945 (Glucose), 88104 (Cytology), 83916 (Oligoclonal bands), 95907-95913 (Nerve conduction studies (NCS)), 95886 (Electromyography (EMG)), 78816 (PET-CT), 64795 (Nerve biopsy (sural)), 96365 (IVIG (Intravenous Immunoglobulin)), 36514 (Plasma exchange (PLEX))
 
 **SYNONYMS:** CIDP, chronic inflammatory demyelinating polyradiculoneuropathy, chronic relapsing polyneuropathy, chronic GBS, chronic acquired demyelinating polyneuropathy, immune-mediated neuropathy
 

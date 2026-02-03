@@ -3,6 +3,13 @@ title: "Cluster Headache"
 description: "Clinical decision support for cluster headache diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - cerebrovascular
+  - headache
+  - neurodegenerative
+  - neuromuscular
+  - neuro-oncology
 ---
 
 # Cluster Headache
@@ -10,13 +17,15 @@ setting: "HOSP, OPD, ICU"
 **VERSION:** 1.0
 **CREATED:** January 29, 2026
 **REVISED:** January 29, 2026
-**STATUS:** Complete
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Cluster Headache
 
 **ICD-10:** G44.009 (Cluster headache syndrome, unspecified, not intractable), G44.019 (Cluster headache syndrome, unspecified, intractable), G44.001 (Episodic cluster headache, not intractable), G44.011 (Episodic cluster headache, intractable), G44.021 (Chronic cluster headache, not intractable), G44.029 (Chronic cluster headache, not intractable, unspecified), G44.031 (Chronic cluster headache, intractable), G44.039 (Chronic cluster headache, intractable, unspecified)
+
+**CPT CODES:** 85025 (CBC), 80053 (CMP), 84443 (TSH), 85652 (ESR), 70544 (MRA head), 70450 (CT head), 93000 (ECG), 96365 (DHE protocol (inpatient))
 
 **SYNONYMS:** Cluster headache, CH, cluster headache syndrome, histamine headache, Horton's headache, Horton's neuralgia, alarm clock headache, suicide headache, trigeminal autonomic cephalalgia, TAC, episodic cluster headache, chronic cluster headache, cluster period, cluster bout, migrainous neuralgia, ciliary neuralgia, erythroprosopalgia, Sluder's neuralgia, sphenopalatine neuralgia, Bing-Horton syndrome, autonomic cephalalgia
 

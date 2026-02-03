@@ -3,6 +3,13 @@ title: "Autoimmune Encephalitis"
 description: "Clinical decision support for autoimmune encephalitis diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - neurodegenerative
+  - movement-disorders
 ---
 
 # Autoimmune Encephalitis
@@ -16,6 +23,8 @@ setting: "ED, HOSP, OPD, ICU"
 **DIAGNOSIS:** Autoimmune Encephalitis
 
 **ICD-10:** G04.81 (Other autoimmune encephalitis), G04.90 (Encephalitis and encephalomyelitis, unspecified)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 84443 (TSH), 85652 (ESR), 86140 (CRP), 87040 (Blood cultures (x2 sets)), 82947 (Blood glucose), 83036 (HbA1c), 82140 (Ammonia), 83605 (Lactate), 83735 (Magnesium), 84100 (Phosphorus), 84145 (Procalcitonin), 84484 (Troponin), 82550 (CPK), 80307 (Urine drug screen), 80320 (Alcohol level), 81025 (Pregnancy test (females of childbearing age)), 83615 (LDH), 86255 (Anti-NMDAR antibody (serum AND CSF)), 86235 (Anti-LGI1 antibody (serum AND CSF)), 70450 (CT head without contrast), 70553 (MRI brain with and without contrast), 95816 (EEG (routine or continuous)), 93000 (ECG (12-lead)), 71046 (Chest X-ray), 78816 (FDG-PET/CT (whole body)), 89051 (Cell count with differential (tubes 1 and 4)), 84157 (Protein), 82945 (Glucose with paired serum glucose), 87529 (HSV 1/2 PCR), 87327 (Cryptococcal antigen), 86592 (VDRL (CSF)), 83916 (Oligoclonal bands (CSF AND paired serum)), 88104 (Cytology), 87116 (AFB culture and smear), 87102 (Fungal culture), 96365 (Methylprednisolone IV)
 
 **SYNONYMS:** Autoimmune encephalitis, AE, anti-NMDA receptor encephalitis, anti-NMDAR encephalitis, limbic encephalitis, antibody-mediated encephalitis, paraneoplastic encephalitis, LGI1 encephalitis, CASPR2 encephalitis, rapid neurocognitive syndrome
 

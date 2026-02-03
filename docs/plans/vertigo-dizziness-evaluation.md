@@ -3,19 +3,28 @@ title: "Vertigo / Dizziness Evaluation"
 description: "Clinical decision support for vertigo / dizziness evaluation diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - neurodegenerative
+  - movement-disorders
 ---
 
 # Vertigo / Dizziness Evaluation
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Vertigo / Dizziness Evaluation
 
 **ICD-10:** R42 (Dizziness and giddiness), H81.10 (Benign paroxysmal positional vertigo, unspecified ear), H81.00 (Meniere's disease, unspecified ear), H81.30 (Other peripheral vertigo, unspecified ear), H81.390 (Other peripheral vertigo, unspecified ear), G45.0 (Vertebro-basilar artery syndrome), H81.4 (Vertigo of central origin), H83.09 (Labyrinthitis, unspecified ear)
+
+**CPT CODES:** 82947 (Blood glucose), 85025 (CBC), 80053 (CMP), 84443 (TSH), 93000 (ECG (12-lead)), 80061 (Lipid panel), 83036 (HbA1c), 86592 (RPR / VDRL), 82607 (Vitamin B12), 82728 (Ferritin), 86235 (ANA), 86618 (Lyme serology), 70450 (CT head without contrast), 70551 (MRI brain with DWI), 70544 (MRA head), 95992 (Dix-Hallpike maneuver), 92557 (Audiometry), 93306 (Echocardiogram (TTE)), 93224 (Holter), 93880 (Carotid ultrasound), 92540 (Videonystagmography (VNG)), 92517 (Vestibular evoked myogenic potentials (VEMP)), 70480 (High-resolution CT temporal bones), 95924 (Tilt table testing)
 
 **SYNONYMS:** Vertigo, dizziness, lightheadedness, light headedness, disequilibrium, presyncope, room spinning, BPPV, benign paroxysmal positional vertigo, vestibular neuritis, labyrinthitis, Meniere disease, Meniere's disease, imbalance, unsteadiness, giddiness, vestibular migraine
 

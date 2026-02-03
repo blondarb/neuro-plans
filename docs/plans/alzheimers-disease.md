@@ -23,6 +23,8 @@ tags:
 
 **DIAGNOSIS:** Alzheimer's Disease
 **ICD-10:** G30.9 (Alzheimer's disease, unspecified), G30.0 (Early-onset AD), G30.1 (Late-onset AD), F02.80 (Dementia in AD without behavioral disturbance), F02.81 (Dementia in AD with behavioral disturbance), G30.8 (Other Alzheimer's disease)
+
+**CPT CODES:** 85025 (CBC with differential), 80048 (BMP), 84443 (TSH), 82607 (Vitamin B12), 82746 (Folate), 80076 (Hepatic panel (AST, ALT, albumin)), 82310 (Calcium), 81003 (Urinalysis), 83036 (Hemoglobin A1c), 80061 (Lipid panel), 83090 (Homocysteine), 82306 (Vitamin D, 25-hydroxy), 86592 (RPR), 87389 (HIV testing), 85652 (ESR), 81401 (APOE genotyping), 81406 (Genetic panel (PSEN1, PSEN2, APP)), 82525 (Copper), 86255 (Paraneoplastic antibody panel), 70551 (MRI Brain without contrast), 70450 (CT Head non-contrast), 78816 (Amyloid PET), 95816 (EEG), 95810 (Sleep study (polysomnography)), 78607 (DaTscan (ioflupane I-123)), 89051 (Cell count, protein, glucose), 83519 (CSF Aβ42 (amyloid beta 1-42))
 **CLINICAL SYNONYMS:** Alzheimer's disease, Alzheimer disease, AD, senile dementia of Alzheimer type, SDAT, presenile dementia, Alzheimer's dementia, dementia of the Alzheimer type, DAT, early-onset Alzheimer's, late-onset Alzheimer's, EOAD, LOAD, amyloid-related dementia, Alzheimer's-type dementia
 **SCOPE:** Diagnosis confirmation using NIA-AA criteria, biomarker assessment, pharmacologic treatment with cholinesterase inhibitors and memantine, anti-amyloid disease-modifying therapies, BPSD management, safety planning, and caregiver support. Primarily outpatient-focused with coverage for ED and hospital presentations.
 

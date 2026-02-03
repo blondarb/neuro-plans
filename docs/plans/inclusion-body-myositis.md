@@ -24,6 +24,8 @@ tags:
 
 **ICD-10:** G72.41 (Inclusion body myositis)
 
+**CPT CODES:** 82550 (Creatine kinase (CK)), 80053 (CMP (BMP + LFTs)), 85025 (CBC with differential), 82085 (Aldolase), 85652 (ESR), 86140 (CRP), 83615 (LDH), 84443 (TSH), 82947 (Blood glucose), 83735 (Magnesium), 84100 (Phosphorus), 81001 (Urinalysis with microscopy), 85610 (PT/INR), 86235 (Myositis-specific antibody panel (comprehensive)), 86038 (ANA), 82607 (Vitamin B12), 82746 (Folate), 82306 (Vitamin D (25-OH)), 83036 (HbA1c), 80074 (Hepatitis B surface antigen, anti-HBc), 87389 (HIV 1/2 antigen/antibody), 86255 (Paraneoplastic antibody panel), 82657 (Acid alpha-glucosidase activity (dried blood spot)), 86334 (SPEP with immunofixation), 73721 (MRI thighs with and without contrast (bilateral)), 71046 (Chest X-ray (PA and lateral)), 74230 (Modified barium swallow study (MBSS)), 93000 (ECG (12-lead)), 76881 (Muscle ultrasound), 91010 (Esophageal manometry), 96365 (IVIG (intravenous immunoglobulin))
+
 **SYNONYMS:** Inclusion body myositis, IBM, sporadic inclusion body myositis, sIBM, inclusion body myopathy, inflammatory myopathy with rimmed vacuoles, s-IBM
 
 **SCOPE:** Evaluation and management of sporadic inclusion body myositis (sIBM), the most common acquired myopathy in adults over age 50. Includes diagnostic workup, differentiation from polymyositis and other myopathies, symptomatic management, trial of immunotherapy for dysphagia, fall prevention, and rehabilitation. Excludes hereditary inclusion body myopathy (hIBM/GNE myopathy), other inflammatory myopathies (dermatomyositis, polymyositis, IMNM -- see separate plans), and metabolic/toxic myopathies.

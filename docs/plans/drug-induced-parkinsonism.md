@@ -24,6 +24,8 @@ tags:
 
 **ICD-10:** G21.11 (Neuroleptic induced parkinsonism), G21.19 (Other drug induced secondary parkinsonism), G21.0 (Malignant neuroleptic syndrome); CPT: 99213-99215 (E&M outpatient), 99221-99223 (E&M inpatient), 78830 (DaTscan), 70553 (MRI brain with/without contrast)
 
+**CPT CODES:** 85025 (CBC), 80053 (CMP), 84443 (TSH), 82947 (Glucose), 82390 (Serum ceruloplasmin), 82607 (Vitamin B12), 86592 (RPR/VDRL), 87389 (HIV), 82550 (CK), 84439 (Free T4), 80164 (Valproic acid level), 80178 (Lithium level), 70551 (MRI brain without contrast), 78830 (DaTscan), 70553 (MRI brain with contrast), 78608 (FDG-PET brain), 95810 (Polysomnography)
+
 **SYNONYMS:** Drug-induced parkinsonism, DIP, neuroleptic-induced parkinsonism, medication-induced parkinsonism, secondary parkinsonism, antipsychotic-induced parkinsonism, drug-induced extrapyramidal symptoms, iatrogenic parkinsonism, medication-related parkinsonism, dopamine blocker parkinsonism, antidopaminergic parkinsonism, metoclopramide-induced parkinsonism, pseudoparkinsonism
 
 **SCOPE:** Diagnosis and management of parkinsonism (tremor, rigidity, bradykinesia, postural instability) caused by dopamine-blocking or dopamine-depleting medications. Covers identification of causative agents, differentiation from idiopathic Parkinson's disease, medication discontinuation/substitution strategies, symptomatic treatment, and psychiatric collaboration for patients requiring continued antipsychotic therapy. Excludes idiopathic Parkinson's disease (separate protocol), vascular parkinsonism, atypical parkinsonian syndromes (PSP, MSA, CBD, DLB), neuroleptic malignant syndrome (acute management), and tardive dyskinesia (separate protocol).

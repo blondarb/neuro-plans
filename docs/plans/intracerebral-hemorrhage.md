@@ -3,19 +3,28 @@ title: "Intracerebral Hemorrhage"
 description: "Clinical decision support for intracerebral hemorrhage (ich) diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - neurodegenerative
+  - infectious
 ---
 
 # Intracerebral Hemorrhage
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Intracerebral Hemorrhage (ICH)
 
 **ICD-10:** I61.9 (Nontraumatic intracerebral hemorrhage, unspecified), I61.0 (ICH in hemisphere, subcortical), I61.1 (ICH in hemisphere, cortical), I61.2 (ICH in hemisphere, unspecified), I61.3 (ICH in brain stem), I61.4 (ICH in cerebellum), I61.5 (ICH, intraventricular), I61.6 (ICH, multiple localized), I62.9 (Nontraumatic intracranial hemorrhage, unspecified)
+
+**CPT CODES:** 85025 (CBC with differential), 85610 (PT/INR), 85730 (aPTT), 85384 (Fibrinogen), 80053 (CMP (BMP + LFTs)), 82947 (Blood glucose), 86900 (Type and screen / crossmatch), 84484 (Troponin), 80320 (Blood alcohol level), 80307 (Urine drug screen), 84703 (Pregnancy test (β-hCG)), 80061 (Lipid panel), 83036 (HbA1c), 84443 (TSH), 85652 (ESR), 85379 (D-dimer), 83930 (Serum osmolality), 86235 (ANA), 70450 (CT head without contrast), 70496 (CT angiography (CTA) head), 93000 (ECG (12-lead)), 70553 (MRI brain with and without contrast), 36224 (Conventional cerebral angiography (DSA)), 93306 (Echocardiogram), 95700 (Continuous EEG (cEEG)), 71046 (Chest X-ray), 96365 (Blood pressure reduction: Nicardipine IV), 96374 (Blood pressure reduction: Labetalol IV)
 
 **SYNONYMS:** Intracerebral hemorrhage, ICH, hemorrhagic stroke, brain bleed, cerebral hemorrhage, intraparenchymal hemorrhage, hypertensive hemorrhage, spontaneous ICH, bleeding in the brain, intracerebral bleed, cerebral bleed, hemorrhagic CVA
 

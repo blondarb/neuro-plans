@@ -16,6 +16,8 @@ tags:
 
 **DIAGNOSIS:** Myasthenia Gravis - Outpatient Management
 **ICD-10:** G70.00 (Myasthenia gravis without exacerbation), G70.01 (Myasthenia gravis with exacerbation)
+
+**CPT CODES:** 86235 (AChR binding antibody), 86255 (Anti-striated muscle antibody), 84443 (TSH), 85025 (CBC with differential), 80053 (CMP), 81401 (TPMT genotype), 87340 (Hepatitis B surface antigen), 86803 (Hepatitis C antibody), 82784 (Quantitative immunoglobulins: IgG, IgA, IgM), 86701 (HIV antibody), 86480 (QuantiFERON-Gold), 82947 (Fasting glucose), 82306 (Vitamin D, 25-OH), 84439 (Free T4), 82533 (Cortisol, AM), 80400 (ACTH stimulation test), 82523 (Bone densitometry markers: CTX), 71260 (CT chest with contrast), 71250 (CT chest without contrast), 95937 (Repetitive nerve stimulation), 94010 (Pulmonary function tests: FVC), 95872 (Single-fiber EMG), 71551 (MRI chest), 78816 (PET-CT), 74230 (Video swallow study), 77080 (DEXA scan), 95857 (Edrophonium (Tensilon) test), 95810 (Sleep study, polysomnography), 75557 (Cardiac MRI)
 **SYNONYMS:** MG, myasthenia, autoimmune myasthenia gravis, ocular myasthenia, generalized myasthenia, AChR-positive MG, MuSK myasthenia, seronegative myasthenia, MG chronic management, MG maintenance therapy
 **SCOPE:** Outpatient diagnosis, management, and monitoring of myasthenia gravis in adults. Covers antibody-positive (AChR, MuSK, LRP4) and seronegative MG, ocular and generalized subtypes, pyridostigmine optimization, immunotherapy initiation and monitoring, thymectomy evaluation, and crisis prevention. Excludes myasthenic crisis (see "Myasthenia Gravis - Exacerbation/Crisis"), Lambert-Eaton myasthenic syndrome (LEMS), congenital myasthenic syndromes, and drug-induced myasthenia.
 

@@ -3,19 +3,28 @@ title: "Myasthenia Gravis - Exacerbation/Crisis"
 description: "Clinical decision support for myasthenia gravis - exacerbation/crisis diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
+status: approved
+tags:
+  - cerebrovascular
+  - headache
+  - demyelinating
+  - infectious
+  - neuromuscular
 ---
 
 # Myasthenia Gravis - Exacerbation/Crisis
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Myasthenia Gravis - Exacerbation/Crisis
 
 **ICD-10:** G70.01 (Myasthenia gravis with exacerbation)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 83735 (Magnesium), 84443 (TSH), 82947 (Blood glucose), 81003 (Urinalysis), 87040 (Blood cultures x2), 85610 (PT/INR), 82803 (ABG), 86235 (AChR binding antibody), 84145 (Procalcitonin), 71046 (Chest X-ray), 83605 (Lactate), 93000 (ECG (12-lead)), 94010 (Bedside spirometry (FVC and NIF)), 71260 (CT chest with contrast), 95937 (Repetitive nerve stimulation (RNS)), 95872 (Single-fiber EMG (SFEMG)), 70450 (CT head), 78816 (PET-CT), 93306 (Echocardiogram), 96365 (IVIG (intravenous immunoglobulin)), 36514 (Plasmapheresis (PLEX))
 
 **SYNONYMS:** Myasthenic crisis, MG crisis, MG exacerbation, myasthenia exacerbation, myasthenic respiratory failure, acute MG, worsening myasthenia, cholinergic crisis, myasthenia gravis crisis
 

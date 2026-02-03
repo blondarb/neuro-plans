@@ -3,19 +3,28 @@ title: "Acute Myelopathy Evaluation"
 description: "Clinical decision support for acute myelopathy evaluation diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - headache
+  - demyelinating
+  - infectious
+  - neuromuscular
 ---
 
 # Acute Myelopathy Evaluation
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Acute Myelopathy Evaluation
 
 **ICD-10:** G95.9 (Disease of spinal cord, unspecified), G95.89 (Other specified diseases of spinal cord), G37.3 (Acute transverse myelitis in demyelinating disease), G04.91 (Myelitis, unspecified)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 85652 (ESR), 86140 (CRP), 87040 (Blood cultures x2), 82947 (Blood glucose), 81003 (Urinalysis), 86900 (Type and screen), 84145 (Procalcitonin), 86255 (AQP4-IgG (aquaporin-4 antibody, serum) — cell-based assay), 82607 (B12, methylmalonic acid), 82390 (Copper and ceruloplasmin), 87389 (HIV 1/2 antigen/antibody), 86592 (RPR/VDRL), 86235 (Anti-SSA (Ro), anti-SSB (La)), 82164 (ACE level (serum)), 86334 (Serum protein electrophoresis (SPEP)), 70553 (MRI brain with and without contrast), 71046 (Chest X-ray), 78816 (PET-CT (whole body)), 95925 (Somatosensory evoked potentials (SSEPs)), 62270 (LUMBAR PUNCTURE), 89051 (Cell count with differential (tubes 1 and 4)), 84157 (Protein), 82945 (Glucose with paired serum), 83916 (Oligoclonal bands (paired with serum)), 86327 (IgG index), 88104 (Cytology), 96365 (IV methylprednisolone (empiric — inflammatory myelitis)), 36514 (Plasma exchange (PLEX))
 
 **SYNONYMS:** Acute myelopathy, transverse myelitis, TM, spinal cord inflammation, myelitis, NMOSD myelitis, spinal cord lesion, spinal cord syndrome, cord compression, spinal cord injury
 

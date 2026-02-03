@@ -14,6 +14,8 @@ tags:
 
 **DIAGNOSIS:** Parkinson's Disease
 **ICD-10:** G20 (Parkinson's disease), G20.A1 (Parkinson's disease without dyskinesia, without motor fluctuations), G20.A2 (Parkinson's disease without dyskinesia, with motor fluctuations), G20.B1 (Parkinson's disease with dyskinesia, without motor fluctuations), G20.B2 (Parkinson's disease with dyskinesia, with motor fluctuations), G20.C (Parkinsonism, unspecified)
+
+**CPT CODES:** 85025 (CBC), 80048 (BMP), 80076 (Hepatic panel (LFTs)), 84443 (TSH), 82607 (Vitamin B12), 82306 (Vitamin D, 25-hydroxy), 82390 (Ceruloplasmin), 82728 (Ferritin), 86592 (RPR or VDRL), 87389 (HIV testing), 70551 (MRI Brain without contrast), 78830 (DaTscan), 95810 (Sleep study (polysomnography)), 95924 (Autonomic function testing), 78608 (FDG-PET)
 **SYNONYMS:** Parkinson's disease, PD, parkinsonism, idiopathic Parkinson's disease, paralysis agitans, shaking palsy, Parkinson disease, dopamine deficiency syndrome, tremor-dominant PD, PIGD
 **SCOPE:** Diagnosis confirmation, dopaminergic therapy initiation and optimization, motor fluctuation management, and non-motor symptom treatment. Excludes Parkinson-plus syndromes (MSA, PSP, CBD, DLB - separate protocols).
 

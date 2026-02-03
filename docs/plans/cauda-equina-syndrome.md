@@ -3,19 +3,28 @@ title: "Cauda Equina Syndrome"
 description: "Clinical decision support for cauda equina syndrome (ces) diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
+status: approved
+tags:
+  - neurodegenerative
+  - demyelinating
+  - infectious
+  - neuromuscular
+  - neuro-oncology
 ---
 
 # Cauda Equina Syndrome
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Cauda Equina Syndrome (CES)
 
 **ICD-10:** G83.4 (Cauda equina syndrome), M48.06 (Spinal stenosis, lumbar region), M51.16 (Intervertebral disc disorders with radiculopathy, lumbar region), M51.17 (Intervertebral disc disorders with radiculopathy, lumbosacral region), G95.89 (Other specified diseases of spinal cord)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 87040 (Blood cultures (x2 sets)), 82947 (Blood glucose), 86900 (Type and screen), 81003 (Urinalysis), 84703 (Pregnancy test (β-hCG)), 84145 (Procalcitonin), 83036 (HbA1c), 86334 (SPEP / free light chains), 87389 (HIV), 72148 (MRI lumbar spine without contrast (emergent)), 72158 (MRI lumbar spine WITH contrast (gadolinium)), 72131 (CT lumbar spine without contrast), 72132 (CT myelogram), 78816 (PET/CT)
 
 **SYNONYMS:** Cauda equina syndrome, CES, cauda equina compression, saddle anesthesia, saddle anesthesia syndrome, urinary retention with back pain, bowel/bladder dysfunction, lower spine emergency, cauda equina
 

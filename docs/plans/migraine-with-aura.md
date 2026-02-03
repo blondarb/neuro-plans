@@ -16,6 +16,8 @@ tags:
 
 **DIAGNOSIS:** Migraine with Aura
 **ICD-10:** G43.109 (Migraine with aura, not intractable, without status migrainosus), G43.101 (with status migrainosus), G43.119 (intractable, without status migrainosus), G43.111 (intractable, with status migrainosus), G43.409 (Hemiplegic migraine, not intractable), G43.419 (Hemiplegic migraine, intractable)
+
+**CPT CODES:** 85025 (CBC), 80048 (BMP), 82947 (Glucose), 85610 (PT/INR), 83036 (HbA1c), 80061 (Lipid panel), 85652 (ESR), 84443 (TSH), 83735 (Magnesium, RBC), 83090 (Homocysteine), 82607 (Vitamin B12), 82306 (Vitamin D, 25-OH), 81241 (Factor V Leiden), 86038 (ANA), 81291 (MTHFR mutation), 81406 (Genetic testing: CACNA1A, ATP1A2, SCN1A), 70551 (MRI Brain without contrast), 70450 (CT Head non-contrast), 70544 (MRA Head), 70553 (MRI Brain with contrast), 70547 (MRA Neck), 93306 (TTE with bubble study), 93312 (TEE), 93886 (Transcranial Doppler with bubble), 95816 (EEG)
 **SYNONYMS:** Classic migraine, migraine with typical aura, hemiplegic migraine, familial hemiplegic migraine (FHM), sporadic hemiplegic migraine, visual migraine, ophthalmic migraine, acephalgic migraine, migraine aura without headache, scintillating scotoma, fortification spectra
 **SCOPE:** Diagnosis and management of migraine with typical aura (visual, sensory, language) and hemiplegic migraine. Focuses on outpatient management with acute care considerations. Covers differentiation from TIA/stroke, contraceptive counseling, and preventive therapy. Excludes migraine with brainstem aura (separate protocol) and retinal migraine.
 

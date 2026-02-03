@@ -24,6 +24,8 @@ tags:
 
 **ICD-10:** G47.411 (Narcolepsy with cataplexy), G47.419 (Narcolepsy with cataplexy, unspecified), G47.421 (Narcolepsy without cataplexy), G47.429 (Narcolepsy without cataplexy, unspecified)
 
+**CPT CODES:** 85025 (CBC), 80053 (CMP), 84443 (TSH), 82728 (Serum ferritin), 80307 (Urine drug screen), 81383 (HLA-DQB1*06:02 typing), 82607 (Vitamin B12), 83036 (HbA1c), 80076 (Hepatic function panel), 95810 (Polysomnography (PSG)), 95805 (Multiple Sleep Latency Test (MSLT)), 70553 (MRI brain with and without contrast), 95803 (Actigraphy (2 weeks))
+
 **SYNONYMS:** Narcolepsy, narcolepsy type 1, narcolepsy type 2, narcolepsy with cataplexy, narcolepsy without cataplexy, NT1, NT2, hypocretin deficiency syndrome, orexin deficiency syndrome, Gelineau syndrome, excessive daytime sleepiness with cataplexy, central disorder of hypersomnolence, sleep attack disorder
 
 **SCOPE:** Diagnosis and management of narcolepsy type 1 (with cataplexy/orexin deficiency) and type 2 (without cataplexy) in adults. Covers diagnostic workup including PSG/MSLT, CSF orexin, pharmacologic treatment of excessive daytime sleepiness and cataplexy, and long-term management. Excludes idiopathic hypersomnia as separate entity, Kleine-Levin syndrome, and secondary narcolepsy due to structural brain lesions.

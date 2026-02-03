@@ -3,19 +3,28 @@ title: "Spinal Cord Compression (Malignant)"
 description: "Clinical decision support for malignant spinal cord compression (mscc) / metastatic epidural spinal cord compression (mescc) diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
+tags:
+  - cerebrovascular
+  - demyelinating
+  - infectious
+  - neuromuscular
+  - neuro-oncology
 ---
 
 # Spinal Cord Compression (Malignant)
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Malignant Spinal Cord Compression (MSCC) / Metastatic Epidural Spinal Cord Compression (MESCC)
 
 **ICD-10:** G95.20 (Unspecified cord compression), C79.49 (Secondary malignant neoplasm of other parts of nervous system), C79.51 (Secondary malignant neoplasm of bone), M49.50 (Collapsed vertebra in diseases classified elsewhere), G82.20 (Paraplegia, unspecified)
+
+**CPT CODES:** 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 87040 (Blood cultures (x2 sets)), 82947 (Blood glucose), 86900 (Type and screen), 82310 (Calcium (ionized or corrected)), 81003 (Urinalysis), 86334 (SPEP / UPEP with immunofixation), 84100 (Phosphate), 84145 (Procalcitonin), 82306 (Vitamin D (25-OH)), 72132 (CT myelogram), 78816 (PET/CT (FDG)), 78300 (Bone scan (Tc-99m)), 70552 (MRI brain with contrast), 96374 (Dexamethasone (high-dose for MSCC))
 
 **SYNONYMS:** Malignant spinal cord compression, MSCC, metastatic epidural spinal cord compression, MESCC, cord compression, spinal metastases, spinal tumor compression, epidural metastases, cancer spine compression, vertebral metastases with cord compression
 

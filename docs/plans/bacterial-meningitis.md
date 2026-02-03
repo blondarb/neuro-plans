@@ -3,19 +3,28 @@ title: "Bacterial Meningitis"
 description: "Clinical decision support for bacterial meningitis diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
+status: approved
+tags:
+  - epilepsy
+  - cerebrovascular
+  - headache
+  - neurodegenerative
+  - infectious
 ---
 
 # Bacterial Meningitis
 
 **VERSION:** 1.0
 **CREATED:** January 27, 2026
-**STATUS:** Initial build
+**STATUS:** Approved
 
 ---
 
 **DIAGNOSIS:** Bacterial Meningitis
 
 **ICD-10:** G00.9 (Bacterial meningitis, unspecified), G00.0 (Hemophilus meningitis), G00.1 (Pneumococcal meningitis), G00.2 (Streptococcal meningitis), G00.3 (Staphylococcal meningitis), G00.8 (Other bacterial meningitis), G01 (Meningitis in bacterial diseases classified elsewhere), A39.0 (Meningococcal meningitis)
+
+**CPT CODES:** 87040 (Blood cultures x2 (different sites)), 85025 (CBC with differential), 80053 (CMP (BMP + LFTs)), 84145 (Procalcitonin), 86140 (CRP), 83605 (Lactate), 85379 (D-dimer), 82947 (Blood glucose (concurrent with LP)), 86900 (Type and screen), 82962 (Point-of-care glucose), 83930 (Serum osmolality), 82533 (Serum cortisol (random or AM)), 87389 (HIV 1/2 antigen/antibody), 84443 (TSH), 84484 (Troponin), 87327 (Cryptococcal antigen (serum)), 86592 (RPR/VDRL (serum)), 70450 (CT head without contrast), 71046 (Chest X-ray), 70553 (MRI brain with and without contrast), 70460 (CT head with contrast), 93306 (Echocardiogram), 95700 (Continuous EEG), 89051 (Cell count with differential (tubes 1 AND 4)), 84157 (Protein), 82945 (Glucose with paired serum glucose), 87205 (Gram stain), 87070 (Bacterial culture and sensitivity), 87483 (BioFire FilmArray Meningitis/Encephalitis Panel), 87529 (HSV 1/2 PCR), 87116 (AFB smear and culture), 88104 (Cytology), 96374 (Dexamethasone (adjunctive — give BEFORE or WITH first ant...), 96365 (Vancomycin IV)
 
 **SYNONYMS:** Bacterial meningitis, meningitis, acute meningitis, purulent meningitis, pyogenic meningitis, meningococcal meningitis, pneumococcal meningitis, CNS infection, brain infection, spinal meningitis
 
