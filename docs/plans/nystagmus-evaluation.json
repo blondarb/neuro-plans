@@ -731,6 +731,358 @@
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
           "ICU": "-"
+        },
+        {
+          "item": "**4-Aminopyridine (4-AP)**",
+          "route": "PO",
+          "indication": "Upbeat nystagmus (less evidence than for downbeat, but reasonable trial); improves oculomotor function",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "**4-Aminopyridine (4-AP)** 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**4-AP 5 mg PO BID**; trial for 2-4 weeks to assess benefit; [Glasauer et al. (2005)](https://pubmed.ncbi.nlm.nih.gov/15716550/)",
+            "orderSentence": "**4-Aminopyridine (4-AP)** 5 mg PO"
+          },
+          "contraindications": "Seizure disorder (lowers seizure threshold); renal impairment (CrCl <50 — dose adjustment); hepatic impairment; cardiac arrhythmia (QT prolongation at supratherapeutic doses)",
+          "monitoring": "Seizure risk; therapeutic response; ECG at baseline; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Baclofen**",
+          "route": "PO",
+          "indication": "Alternative for upbeat nystagmus; GABAergic modulation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "**Baclofen** 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**Baclofen 5-10 mg PO TID, titrate to 20 mg TID**",
+            "orderSentence": "**Baclofen** 5 mg PO"
+          },
+          "contraindications": "Renal impairment; sedation; withdrawal seizures/hallucinations if abruptly discontinued; concurrent CNS depressants",
+          "monitoring": "Sedation; muscle weakness; withdrawal risk; gradual taper required for discontinuation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Treat underlying etiology**",
+          "route": "-",
+          "indication": "Medullary lesion (most common); Wernicke encephalopathy; MS; brainstem tumor; meningitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per etiology",
+                "orderSentence": "**Treat underlying etiology** Per etiology -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Wernicke:** Thiamine 500 mg IV TID (see 3A); **MS:** IV methylprednisolone 1 g daily x 3-5 days for acute relapse + DMT; **Tumor:** Oncologic referral; **Stroke:** Stroke protocol",
+            "orderSentence": "**Treat underlying etiology** Per etiology -"
+          },
+          "contraindications": "Per specific treatment",
+          "monitoring": "Nystagmus may resolve with treatment of underlying cause, especially Wernicke and MS",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Baclofen**",
+          "route": "PO",
+          "indication": "**First-line for periodic alternating nystagmus**; GABA-B agonist disrupts the oscillatory brainstem velocity storage mechanism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "**Baclofen** 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**Baclofen 5 mg PO TID, titrate by 5 mg every 3 days to 10-20 mg TID (max 80 mg/day)**; highly effective for PAN; [Halmagyi et al. (1980)](https://pubmed.ncbi.nlm.nih.gov/7212648/); Leigh & Zee (2015)",
+            "orderSentence": "**Baclofen** 5 mg PO"
+          },
+          "contraindications": "Renal impairment; sedation; withdrawal seizures/hallucinations if abruptly discontinued; concurrent use of other CNS depressants",
+          "monitoring": "Sedation; muscle weakness; gradual taper required for discontinuation; monitor nystagmus response within 1-2 weeks",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**4-Aminopyridine (4-AP)**",
+          "route": "PO",
+          "indication": "Second-line for PAN if baclofen not tolerated or insufficient",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "**4-Aminopyridine (4-AP)** 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**4-AP 5 mg PO BID**; may combine with baclofen; [Strupp et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12874393/)",
+            "orderSentence": "**4-Aminopyridine (4-AP)** 5 mg PO"
+          },
+          "contraindications": "Seizure disorder (lowers seizure threshold); renal impairment (CrCl <50 — dose adjustment); cardiac arrhythmia (QT prolongation)",
+          "monitoring": "Seizure monitoring; ECG; clinical response",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Memantine**",
+          "route": "PO",
+          "indication": "Third-line for PAN; NMDA receptor antagonist affects velocity storage",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "**Memantine** 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**Memantine 5 mg PO daily, titrate by 5 mg weekly to 10 mg BID**; limited evidence but rational mechanism",
+            "orderSentence": "**Memantine** 5 mg PO"
+          },
+          "contraindications": "Renal impairment; seizure history",
+          "monitoring": "Renal function; confusion; dizziness",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Remove offending agent**",
+          "route": "-",
+          "indication": "Drug-induced gaze-evoked nystagmus (most common cause; anticonvulsants, sedatives, alcohol)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Reduce dose or discontinue",
+                "orderSentence": "**Remove offending agent** Reduce dose or discontinue -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Most common cause is medication toxicity**; phenytoin, carbamazepine, lacosamide, benzodiazepines, lithium, gabapentin at supratherapeutic doses; nystagmus resolves with dose reduction",
+            "orderSentence": "**Remove offending agent** Reduce dose or discontinue -"
+          },
+          "contraindications": "Clinical necessity of medication",
+          "monitoring": "Drug levels; clinical resolution typically within 24-48h of dose correction",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**4-Aminopyridine**",
+          "route": "PO",
+          "indication": "Gaze-evoked nystagmus from cerebellar pathology (not drug-induced); improves gaze-holding function",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "**4-Aminopyridine** 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**4-AP 5 mg PO BID**; helps with cerebellar integrator dysfunction",
+            "orderSentence": "**4-Aminopyridine** 5 mg PO"
+          },
+          "contraindications": "Seizure disorder (lowers seizure threshold); renal impairment (CrCl <50 — dose adjustment); cardiac arrhythmia (QT prolongation)",
+          "monitoring": "Clinical response; seizure monitoring; ECG at baseline",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Treat structural cause**",
+          "route": "-",
+          "indication": "Cerebellar lesion, brainstem lesion, MS, Chiari malformation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per etiology",
+                "orderSentence": "**Treat structural cause** Per etiology -"
+              }
+            ],
+            "route": "-",
+            "instructions": "MRI-guided management; neurosurgical referral for mass lesions; DMT for MS",
+            "orderSentence": "**Treat structural cause** Per etiology -"
+          },
+          "contraindications": "Per specific treatment",
+          "monitoring": "Gaze-evoked nystagmus from structural lesions may persist despite treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Treat underlying cause**",
+          "route": "-",
+          "indication": "Parasellar/diencephalic lesion (craniopharyngioma, pituitary macroadenoma, septo-optic dysplasia); rarely brainstem stroke",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per etiology",
+                "orderSentence": "**Treat underlying cause** Per etiology -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Parasellar mass:** Neurosurgical resection or debulking; endocrine evaluation; visual field assessment; **Stroke:** Standard stroke management",
+            "orderSentence": "**Treat underlying cause** Per etiology -"
+          },
+          "contraindications": "Per intervention",
+          "monitoring": "Visual acuity; visual fields; endocrine function; nystagmus may persist after tumor removal",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Clonazepam**",
+          "route": "PO",
+          "indication": "Symptomatic relief of oscillopsia from see-saw nystagmus; limited evidence; trial basis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "**Clonazepam** 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**Clonazepam 0.5 mg PO BID, titrate to max 1 mg TID**",
+            "orderSentence": "**Clonazepam** 0.5 mg PO"
+          },
+          "contraindications": "Sedation; respiratory depression; falls in elderly; dependency with long-term use; cognitive impairment",
+          "monitoring": "Sedation; fall risk; respiratory status; response assessment; avoid abrupt discontinuation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Baclofen**",
+          "route": "PO",
+          "indication": "Symptomatic relief of oscillopsia from see-saw nystagmus; limited evidence; trial basis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "**Baclofen** 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**Baclofen 10 mg PO TID, titrate to 20 mg TID**",
+            "orderSentence": "**Baclofen** 10 mg PO"
+          },
+          "contraindications": "Renal impairment; sedation; withdrawal seizures/hallucinations if abruptly discontinued; concurrent CNS depressants",
+          "monitoring": "Sedation; muscle weakness; response assessment; gradual taper required for discontinuation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Gabapentin**",
+          "route": "PO",
+          "indication": "First-line for acquired pendular nystagmus (MS-associated); reduces oscillopsia; [Starck et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/9007739/)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "**Gabapentin** 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**Gabapentin 300 mg PO TID; titrate by 300 mg/day every 3-5 days to 900-1200 mg TID (max 3600 mg/day)**",
+            "orderSentence": "**Gabapentin** 300 mg PO"
+          },
+          "contraindications": "Renal impairment (CrCl-based dose adjustment); sedation; respiratory depression when combined with CNS depressants",
+          "monitoring": "Sedation; dizziness; peripheral edema; renal function; clinical response at 2-4 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Memantine**",
+          "route": "PO",
+          "indication": "Alternative first-line for acquired pendular nystagmus (MS-associated); NMDA receptor antagonist; [Starck et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/9007739/)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "**Memantine** 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "**Memantine 5 mg PO daily, titrate by 5 mg weekly to 10 mg BID**",
+            "orderSentence": "**Memantine** 5 mg PO"
+          },
+          "contraindications": "Renal impairment (dose adjustment if CrCl <30); seizure history",
+          "monitoring": "Renal function; confusion; dizziness; clinical response at 2-4 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Treat underlying MS**",
+          "route": "-",
+          "indication": "MS-associated acquired pendular nystagmus; disease-modifying therapy and acute relapse management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per MS treatment protocol",
+                "orderSentence": "**Treat underlying MS** Per MS treatment protocol -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Acute relapse:** IV methylprednisolone 1 g daily x 3-5 days; **Chronic:** Disease-modifying therapy per MS guidelines",
+            "orderSentence": "**Treat underlying MS** Per MS treatment protocol -"
+          },
+          "contraindications": "Per specific DMT",
+          "monitoring": "MS disease activity; nystagmus severity; OCT for optic nerve monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "**Treat underlying cause (dorsal midbrain lesion)**",
+          "route": "-",
+          "indication": "Dorsal midbrain syndrome (Parinaud syndrome) from pineal tumor, hydrocephalus, MS, or brainstem stroke",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per etiology",
+                "orderSentence": "**Treat underlying cause (dorsal midbrain lesion)** Per etiology -"
+              }
+            ],
+            "route": "-",
+            "instructions": "**Pineal tumor:** Neurosurgical referral for resection/biopsy/shunt; oncology consultation; **Hydrocephalus:** CSF diversion (VP shunt or ETV); **MS:** DMT + IV steroids for acute relapse; **Stroke:** Standard stroke management",
+            "orderSentence": "**Treat underlying cause (dorsal midbrain lesion)** Per etiology -"
+          },
+          "contraindications": "Per specific intervention",
+          "monitoring": "Upgaze function; pupillary reactivity; convergence-retraction nystagmus resolution; ICP monitoring if hydrocephalus",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
         }
       ],
       "Medications to AVOID or Use with Caution": [
@@ -1004,11 +1356,6 @@
   },
   "differential": [
     {
-      "diagnosis": "Type",
-      "features": "Waveform",
-      "tests": "Description"
-    },
-    {
       "diagnosis": "**Jerk nystagmus**",
       "features": "Slow drift + fast corrective saccade",
       "tests": "Defined by direction of fast phase; most common acquired type"
@@ -1022,14 +1369,149 @@
       "diagnosis": "**Mixed**",
       "features": "Jerk in some positions, pendular in others",
       "tests": "Character changes with gaze direction"
+    },
+    {
+      "diagnosis": "**Direction**",
+      "features": "Unidirectional (horizontal +/- torsional); fast phase beats AWAY from lesion",
+      "tests": "Direction-changing, vertical (downbeat/upbeat), purely torsional, or any direction"
+    },
+    {
+      "diagnosis": "**Effect of fixation**",
+      "features": "**SUPPRESSED** by visual fixation (decreases with fixation)",
+      "tests": "**NOT suppressed** by fixation; may increase"
+    },
+    {
+      "diagnosis": "**Alexander's law**",
+      "features": "Follows Alexander's law (increases in direction of fast phase)",
+      "tests": "May not follow Alexander's law"
+    },
+    {
+      "diagnosis": "**Associated symptoms**",
+      "features": "Vertigo (often severe), nausea, hearing loss, tinnitus",
+      "tests": "Vertigo (variable), diplopia, dysarthria, dysphagia, ataxia, focal deficits"
+    },
+    {
+      "diagnosis": "**Head impulse test**",
+      "features": "Abnormal (corrective saccade)",
+      "tests": "Normal (no saccade)"
+    },
+    {
+      "diagnosis": "**Skew deviation**",
+      "features": "Absent",
+      "tests": "May be present"
+    },
+    {
+      "diagnosis": "**Duration**",
+      "features": "Resolves over days to weeks (compensation)",
+      "tests": "May persist or be chronic"
+    },
+    {
+      "diagnosis": "**Localizing value**",
+      "features": "Ipsilateral vestibular nerve or labyrinth",
+      "tests": "Brainstem, cerebellum, or central vestibular pathways"
+    },
+    {
+      "diagnosis": "**Downbeat nystagmus**",
+      "features": "Fast phase downward; worst in lateral downgaze",
+      "tests": "Craniocervical junction; cerebellar flocculus/paraflocculus"
+    },
+    {
+      "diagnosis": "**Upbeat nystagmus**",
+      "features": "Fast phase upward",
+      "tests": "Medulla (paramedian); midbrain; cerebellar vermis"
+    },
+    {
+      "diagnosis": "**Gaze-evoked nystagmus**",
+      "features": "Beats in direction of gaze (right-beating on right gaze, left-beating on left gaze)",
+      "tests": "Cerebellar flocculus (neural integrator); brainstem"
+    },
+    {
+      "diagnosis": "**Periodic alternating nystagmus (PAN)**",
+      "features": "Horizontal jerk that reverses direction every 90-120 seconds with null periods",
+      "tests": "Cerebellar nodulus/uvula"
+    },
+    {
+      "diagnosis": "**See-saw nystagmus**",
+      "features": "One eye rises + intorts while other falls + extorts, then reverses",
+      "tests": "Parasellar/diencephalic lesion; INC (interstitial nucleus of Cajal)"
+    },
+    {
+      "diagnosis": "**Convergence-retraction nystagmus**",
+      "features": "Eyes converge and retract into orbits on attempted upgaze",
+      "tests": "Dorsal midbrain (pretectum)"
+    },
+    {
+      "diagnosis": "**Torsional nystagmus**",
+      "features": "Purely rotatory (no horizontal/vertical component)",
+      "tests": "Medulla (lateral medullary syndrome); midbrain"
+    },
+    {
+      "diagnosis": "**Acquired pendular nystagmus**",
+      "features": "Sinusoidal, multidirectional or elliptical; no fast phase",
+      "tests": "Brainstem (pons/medulla)"
+    },
+    {
+      "diagnosis": "**Vestibular nystagmus (peripheral)**",
+      "features": "Horizontal-torsional, unidirectional",
+      "tests": "Peripheral vestibular apparatus or nerve"
+    },
+    {
+      "diagnosis": "**Positional nystagmus (BPPV)**",
+      "features": "Upbeat-torsional (posterior canal); horizontal (lateral canal)",
+      "tests": "Semicircular canals (otolith displacement)"
+    },
+    {
+      "diagnosis": "**Direction-changing** nystagmus on gaze",
+      "features": "Central vestibular or cerebellar lesion",
+      "tests": ""
+    },
+    {
+      "diagnosis": "**Vertical nystagmus** (downbeat or upbeat)",
+      "features": "Craniocervical junction, brainstem, or cerebellar pathology",
+      "tests": ""
+    },
+    {
+      "diagnosis": "**Purely torsional** nystagmus",
+      "features": "Brainstem lesion (ALWAYS central)",
+      "tests": ""
+    },
+    {
+      "diagnosis": "**Not suppressed** by visual fixation",
+      "features": "Central; peripheral nystagmus always suppresses with fixation",
+      "tests": ""
+    },
+    {
+      "diagnosis": "**Normal head impulse test** in acute vestibular syndrome",
+      "features": "Central cause (stroke) until proven otherwise",
+      "tests": ""
+    },
+    {
+      "diagnosis": "**Skew deviation** (vertical misalignment)",
+      "features": "Brainstem lesion",
+      "tests": ""
+    },
+    {
+      "diagnosis": "Associated neurologic deficits (diplopia, dysarthria, dysphagia, ataxia)",
+      "features": "Brainstem/cerebellar pathology",
+      "tests": ""
+    },
+    {
+      "diagnosis": "**No latency, non-fatigable** positional nystagmus",
+      "features": "Central positional nystagmus (vs. BPPV)",
+      "tests": ""
+    },
+    {
+      "diagnosis": "**Rebound nystagmus** (direction reversal on return to center from eccentric gaze)",
+      "features": "Cerebellar disease",
+      "tests": ""
+    },
+    {
+      "diagnosis": "**Convergence-retraction** pattern",
+      "features": "Dorsal midbrain lesion",
+      "tests": ""
     }
   ],
   "evidence": [
-    {
-      "recommendation": "Guideline",
-      "evidenceLevel": "Source",
-      "source": "Year"
-    },
     {
       "recommendation": "Eye Movement Abnormalities in Clinical Diagnosis",
       "evidenceLevel": "Leigh & Zee, The Neurology of Eye Movements, 5th ed. (Oxford University Press)",
@@ -1054,11 +1536,6 @@
       "recommendation": "Periodic Alternating Nystagmus",
       "evidenceLevel": "[Halmagyi et al.](https://pubmed.ncbi.nlm.nih.gov/7212648/)",
       "source": "1980"
-    },
-    {
-      "recommendation": "Study",
-      "evidenceLevel": "Finding",
-      "source": "Impact"
     },
     {
       "recommendation": "[Strupp et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12874393/)",
@@ -1109,11 +1586,6 @@
       "recommendation": "[Starck et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/9007739/)",
       "evidenceLevel": "Gabapentin and memantine both effective for acquired pendular nystagmus in MS patients",
       "source": "Established pharmacotherapy for acquired pendular nystagmus"
-    },
-    {
-      "recommendation": "Nystagmus Type",
-      "evidenceLevel": "First-Line Treatment",
-      "source": "Level of Evidence"
     },
     {
       "recommendation": "Downbeat nystagmus",
@@ -1216,13 +1688,119 @@
       "frequency": "On presentation",
       "target": "Baseline documentation",
       "action": "Reduced VA with nystagmus — urgent neuro-ophthalmology"
+    },
+    {
+      "item": "Nystagmus pattern reassessment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE",
+      "frequency": "Daily",
+      "target": "Improving or stable",
+      "action": "Worsening — repeat imaging; expanding lesion; new etiology"
+    },
+    {
+      "item": "Gait and balance assessment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Daily",
+      "target": "Safe ambulation",
+      "action": "Persistent imbalance — PT evaluation; fall precautions"
+    },
+    {
+      "item": "Treatment response (4-AP, baclofen, gabapentin, memantine)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Daily while titrating",
+      "target": "Reduced nystagmus intensity/oscillopsia",
+      "action": "No response at therapeutic dose — alternative medication; reassess etiology"
+    },
+    {
+      "item": "Side effects of treatment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Daily",
+      "target": "Tolerable",
+      "action": "Seizure (4-AP) — discontinue; sedation (baclofen/clonazepam) — reduce dose"
+    },
+    {
+      "item": "MRI findings correlation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "After imaging",
+      "target": "Explains nystagmus pattern",
+      "action": "Discordance between nystagmus and imaging — expand workup"
+    },
+    {
+      "item": "Nystagmus reassessment",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "2-4 weeks, then q3 months",
+      "target": "Stable or improving",
+      "action": "Progressive — repeat imaging; degenerative or autoimmune etiology"
+    },
+    {
+      "item": "Visual acuity and oscillopsia severity",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Each visit",
+      "target": "Stable or improved",
+      "action": "Worsening — medication adjustment; neuro-ophthalmology"
+    },
+    {
+      "item": "Treatment efficacy and tolerability",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "2-4 weeks after initiation; then q3 months",
+      "target": "Symptom benefit; tolerable side effects",
+      "action": "Adjust dose; switch agent; add combination therapy"
+    },
+    {
+      "item": "MRI (follow-up)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "3-6 months if structural lesion; PRN if new symptoms",
+      "target": "Stable or resolved",
+      "action": "Growth — neurosurgical referral; new lesions — MS, metastases"
+    },
+    {
+      "item": "VNG/ENG (follow-up)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "6-12 months or PRN",
+      "target": "Quantitative improvement or stability",
+      "action": "Progressive vestibular loss — reassess etiology"
+    },
+    {
+      "item": "Vestibular rehabilitation progress",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Monthly during active rehab",
+      "target": "Functional improvement in balance and oscillopsia",
+      "action": "Plateau — reassess; modify exercises; alternative approaches"
     }
   ],
   "disposition": [
-    {
-      "disposition": "Level of Care",
-      "criteria": "Criteria"
-    },
     {
       "disposition": "ICU / Stroke unit",
       "criteria": "Posterior circulation stroke with acute nystagmus; basilar artery occlusion; cerebellar stroke with mass effect/hydrocephalus; altered consciousness with nystagmus"
@@ -1234,6 +1812,58 @@
     {
       "disposition": "Observation",
       "criteria": "Acute-onset nystagmus pending MRI; nystagmus with equivocal HINTS findings; serial neurologic exams needed"
+    },
+    {
+      "disposition": "Etiology established or stroke excluded",
+      "criteria": "Clear peripheral cause (BPPV, vestibular neuritis); OR central cause identified with treatment plan initiated; OR MRI negative with appropriate outpatient follow-up"
+    },
+    {
+      "disposition": "Symptoms manageable",
+      "criteria": "Oscillopsia tolerable; nausea controlled; no significant visual impairment affecting safety"
+    },
+    {
+      "disposition": "Safe ambulation",
+      "criteria": "Walk safely (with or without assistance); low fall risk; adequate home support"
+    },
+    {
+      "disposition": "Treatment initiated",
+      "criteria": "Specific treatment started (4-AP for downbeat, baclofen for PAN, gabapentin for pendular, thiamine for Wernicke, etc.); or medication toxicity corrected"
+    },
+    {
+      "disposition": "Education provided",
+      "criteria": "Nystagmus type explained; treatment plan reviewed; when to return (worsening symptoms, new neurologic deficits, visual loss)"
+    },
+    {
+      "disposition": "Follow-up arranged",
+      "criteria": "Neurology within 1-2 weeks; neuro-ophthalmology if indicated; VNG/audiometry scheduled; vestibular PT if applicable"
+    },
+    {
+      "disposition": "4-Aminopyridine 5 mg (compounded) or Dalfampridine 10 mg",
+      "criteria": "Downbeat nystagmus"
+    },
+    {
+      "disposition": "Baclofen 5-10 mg",
+      "criteria": "PAN or symptomatic nystagmus"
+    },
+    {
+      "disposition": "Gabapentin 300 mg",
+      "criteria": "Acquired pendular nystagmus"
+    },
+    {
+      "disposition": "Meclizine 25 mg",
+      "criteria": "PRN for acute oscillopsia/vertigo (short-term)"
+    },
+    {
+      "disposition": "Ondansetron 4-8 mg ODT",
+      "criteria": "PRN nausea"
+    },
+    {
+      "disposition": "Thiamine 100 mg (oral)",
+      "criteria": "Maintenance after IV thiamine course for Wernicke"
+    },
+    {
+      "disposition": "Clonazepam 0.5 mg",
+      "criteria": "Refractory oscillopsia (specialist-initiated)"
     }
   ]
 }

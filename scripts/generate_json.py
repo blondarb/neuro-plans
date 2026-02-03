@@ -308,7 +308,7 @@ class MarkdownParser:
             # Extract the title from the actual markdown line
             title = self._extract_section_title(start_idx)
 
-            items = self._parse_table_section(start_key, end_key)
+            items = self._parse_table_section(start_key, end_key, multi_table=True)
             if items:
                 subsections.append({'title': title, 'items': items})
 
@@ -346,6 +346,17 @@ class MarkdownParser:
 
         return subsections
 
+    # Header words to skip in differential/disposition tables
+    DIFF_HEADER_WORDS = {
+        'alternative diagnosis', 'diagnosis', 'condition', 'category', 'type',
+        'nystagmus type', 'feature', 'red flag', 'criterion', 'letter',
+        'drug', 'medication', 'level of care', 'level', 'setting',
+        'step', 'procedure', 'test', 'study', 'treatment', 'parameter',
+        'disposition', 'criteria', 'recommendation', 'evidence level',
+        'source', 'features', 'tests', 'domain',
+        'guideline', 'tool', 'subtype',
+    }
+
     def _parse_differential_section(self) -> list:
         """Parse differential diagnosis section."""
         items = []
@@ -358,14 +369,19 @@ class MarkdownParser:
         if end_idx is None:
             end_idx = len(self.lines)
 
-        # Look for table rows
+        # Look for table rows (supports multiple sub-tables within the section)
         in_table = False
         for i in range(start_idx, end_idx):
             line = self.lines[i].strip()
 
             if line.startswith('|') and '---' not in line:
                 cells = [c.strip() for c in line.split('|')[1:-1]]
-                if len(cells) >= 2 and cells[0] and not cells[0].lower().startswith('alternative'):
+                first_cell = cells[0].lower().strip() if cells else ''
+                # Skip header rows
+                if first_cell in self.DIFF_HEADER_WORDS:
+                    in_table = True
+                    continue
+                if len(cells) >= 2 and cells[0]:
                     items.append({
                         'diagnosis': cells[0],
                         'features': cells[1] if len(cells) > 1 else '',
@@ -373,13 +389,13 @@ class MarkdownParser:
                     })
                 in_table = True
             elif in_table and not line.startswith('|'):
-                break
+                in_table = False  # Reset for potential next sub-table
 
         return items
 
     def _parse_monitoring_section(self) -> list:
         """Parse monitoring parameters section."""
-        return self._parse_table_section('monitoring', 'disposition')
+        return self._parse_table_section('monitoring', 'disposition', multi_table=True)
 
     def _parse_disposition_section(self) -> list:
         """Parse disposition criteria section."""
@@ -393,21 +409,26 @@ class MarkdownParser:
         if end_idx is None:
             end_idx = len(self.lines)
 
-        # Look for table rows
+        # Look for table rows (supports multiple sub-tables within the section)
         in_table = False
         for i in range(start_idx, end_idx):
             line = self.lines[i].strip()
 
             if line.startswith('|') and '---' not in line:
                 cells = [c.strip() for c in line.split('|')[1:-1]]
-                if len(cells) >= 2 and cells[0] and not cells[0].lower().startswith('disposition'):
+                first_cell = cells[0].lower().strip() if cells else ''
+                # Skip header rows
+                if first_cell in self.DIFF_HEADER_WORDS:
+                    in_table = True
+                    continue
+                if len(cells) >= 2 and cells[0]:
                     items.append({
                         'disposition': cells[0],
                         'criteria': cells[1] if len(cells) > 1 else ''
                     })
                 in_table = True
             elif in_table and not line.startswith('|'):
-                break
+                in_table = False  # Reset for potential next sub-table
 
         return items
 
@@ -430,18 +451,27 @@ class MarkdownParser:
                 end_idx = i
                 break
 
-        # Parse table rows
+        # Parse table rows (supports multiple sub-tables within evidence section)
+        in_table = False
         for i in range(start_idx, end_idx):
             line = self.lines[i].strip()
 
             if line.startswith('|') and '---' not in line:
                 cells = [c.strip() for c in line.split('|')[1:-1]]
-                if len(cells) >= 3 and cells[0] and not cells[0].lower().startswith('recommendation'):
+                first_cell = cells[0].lower().strip() if cells else ''
+                # Skip header rows using shared header-word detection
+                if first_cell in self.DIFF_HEADER_WORDS:
+                    in_table = True
+                    continue
+                if len(cells) >= 3 and cells[0]:
                     items.append({
                         'recommendation': cells[0],
                         'evidenceLevel': cells[1] if len(cells) > 1 else '',
                         'source': cells[2] if len(cells) > 2 else ''
                     })
+                in_table = True
+            elif in_table and not line.startswith('|'):
+                in_table = False  # Reset for potential next sub-table
 
         return items
 
@@ -474,8 +504,16 @@ class MarkdownParser:
 
         return None
 
-    def _parse_table_section(self, start_key: str, end_key: str = None) -> list:
-        """Parse a table section between two section markers."""
+    def _parse_table_section(self, start_key: str, end_key: str = None, multi_table: bool = False) -> list:
+        """Parse a table section between two section markers.
+
+        Args:
+            start_key: Section pattern key for the start boundary
+            end_key: Section pattern key for the end boundary
+            multi_table: If True, continue past non-table lines to find additional
+                         sub-tables within the section. If False (default), stop at
+                         the first non-table line after a table is found.
+        """
         items = []
         start_idx = self._find_section_start(start_key)
 
@@ -506,7 +544,11 @@ class MarkdownParser:
 
             if not line.startswith('|'):
                 if in_table:
-                    break
+                    if multi_table:
+                        in_table = False
+                        header_cols = []  # Reset for potential next sub-table
+                    else:
+                        break  # Single-table mode: stop at end of first table
                 continue
 
             cells = [c.strip() for c in line.split('|')[1:-1]]
@@ -574,6 +616,7 @@ class MarkdownParser:
             'drug': 'item',
             'recommendation': 'item',
             'parameter': 'item',
+            'subtype': 'item',
             'ed': 'ED',
             'hosp': 'HOSP',
             'opd': 'OPD',
@@ -597,7 +640,17 @@ class MarkdownParser:
             'pre-treatment': 'pretreatment',
         }
 
-        return mappings.get(header, None)
+        # Try exact match first
+        result = mappings.get(header)
+        if result:
+            return result
+
+        # Try matching base word before parenthetical, e.g. "test (cpt)" -> "test"
+        base = re.split(r'\s*[\(]', header)[0].strip()
+        if base != header:
+            return mappings.get(base)
+
+        return None
 
     def _parse_structured_dosing(self, dosing_text: str, item_name: str, route: str = None) -> dict:
         """Parse structured dosing format into separate fields.
@@ -743,9 +796,12 @@ class ParityChecker:
         # Patterns that indicate we should STOP counting (end of main content)
         stop_patterns = [
             r'##?\s*APPENDIX',
+            r'^\*\*APPENDIX',              # Bold-text appendix (used in 11+ plans)
             r'##?\s*NOTES\s*$',
             r'##?\s*CHANGE\s*LOG',
-            r'##?\s*---\s*$',  # Horizontal rule often separates sections
+            r'##?\s*CPT\s+CODE',           # CPT CODE QUICK REFERENCE sections
+            r'^═{3,}',                     # Section dividers
+            r'^---\s*$',                   # Bare horizontal rules
         ]
 
         # Patterns for subsection headers within NORSE that we should skip counting
@@ -829,10 +885,20 @@ class ParityChecker:
                 if cells and not all(set(c) <= {'-', ':', ' '} for c in cells):
                     # Skip rows where first cell is a header-like word
                     first_cell = cells[0].lower() if cells else ''
-                    header_words = ['test', 'study', 'treatment', 'medication', 'recommendation',
-                                   'parameter', 'disposition', 'alternative diagnosis', 'diagnosis',
-                                   'timing', 'intervention']  # Added timing/intervention for timeline tables
-                    if first_cell and first_cell not in header_words and not first_cell.startswith('---'):
+                    # Exact-match header words (too short/generic for prefix matching)
+                    exact_headers = {'test', 'study', 'treatment', 'medication', 'drug',
+                                    'recommendation', 'parameter', 'disposition', 'diagnosis',
+                                    'timing', 'intervention', 'guideline', 'type', 'feature',
+                                    'criterion', 'level', 'letter', 'step', 'procedure',
+                                    'condition', 'category', 'setting', 'domain', 'criteria',
+                                    'source', 'tool', 'subtype'}
+                    # Prefix-match header words (multi-word, specific enough)
+                    prefix_headers = ['alternative diagnosis', 'nystagmus type', 'red flag',
+                                     'level of care', 'evidence level', 'test (', 'study (',
+                                     'treatment (', 'medication (']
+                    is_header = (first_cell in exact_headers or
+                                any(first_cell.startswith(ph) for ph in prefix_headers))
+                    if first_cell and not is_header and not first_cell.startswith('---'):
                         # Additional check: skip timeline entries like "Day 0-3", "Day 7", etc.
                         if not re.match(r'\*?\*?day\s+\d', first_cell, re.IGNORECASE):
                             item_count += 1
@@ -964,8 +1030,11 @@ class ParityChecker:
             'core labs': 'core labs',
             'extended workup': 'extended workup',
             'extended workup (second-line)': 'extended workup',
+            'autoimmune & exclusion panel': 'extended workup',
             'rare/specialized': 'rare/specialized',
             'rare/specialized (refractory or atypical)': 'rare/specialized',
+            'rare/specialized (if red flags or refractory)': 'rare/specialized',
+            'rare/advanced': 'rare/specialized',
             'essential imaging': 'essential imaging',
             'essential/first-line': 'essential imaging',
             'extended imaging': 'extended imaging',
@@ -973,6 +1042,8 @@ class ParityChecker:
             'rare/specialized imaging': 'rare/specialized imaging',
             'rare/specialized labs': 'rare/specialized',
             'specialized': 'rare/specialized',
+            'specialized testing (selected patients)': 'rare/specialized',
+            'neuropsychological testing': 'rare/specialized',
             'lumbar puncture': 'lumbar puncture',
 
             # Treatment sections
@@ -985,10 +1056,13 @@ class ParityChecker:
             'referrals': 'referrals',
             'consults': 'referrals',
             'patient instructions': 'patient instructions',
+            'patient/family instructions': 'patient instructions',
+            'patient / family instructions': 'patient instructions',
             'education': 'patient instructions',
             'lifestyle & prevention': 'lifestyle',
             'lifestyle': 'lifestyle',
             'prevention': 'lifestyle',
+            "hashimoto's encephalopathy subtypes & clinical patterns": 'lifestyle',
 
             # Reference sections
             'differential diagnosis': 'differential',
